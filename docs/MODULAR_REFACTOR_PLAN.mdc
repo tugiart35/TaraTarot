@@ -1,0 +1,968 @@
+---
+alwaysApply: true
+---
+# Modüler Refactor Planı
+
+**Tarih:** 2025-01-27  
+**Proje:** Büşbüşkimki Tarot Uygulaması  
+**Hedef:** Feature-first, modüler ve sürdürülebilir kod tabanı  
+
+## Hedef Mimari
+
+### Feature-First Ağaç Yapısı
+```
+src/
+├── features/
+│   ├── auth/                    # Kullanıcı kimlik doğrulama
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── lib/
+│   │   └── index.ts
+│   ├── cards/                   # Kart yönetimi
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── lib/
+│   │   └── index.ts
+│   ├── readings/                # Okuma işlemleri
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── lib/
+│   │   └── index.ts
+│   ├── profile/                 # Kullanıcı profili
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── lib/
+│   │   └── index.ts
+│   └── shared/                  # Ortak bileşenler
+│       ├── ui/
+│       ├── layout/
+│       ├── icons/
+│       └── index.ts
+├── engine/                      # İş mantığı motoru
+│   ├── tarot/
+│   ├── numerology/
+│   └── index.ts
+├── lib/                         # Genel yardımcılar
+│   ├── config/
+│   ├── utils/
+│   └── constants/
+└── types/                       # Global tipler
+    ├── common.ts
+    ├── api.ts
+    └── index.ts
+```
+
+### Engine vs Components Ayrımı
+- **Engine:** Pure business logic, state management, data processing
+- **Components:** UI rendering, user interaction, presentation logic
+
+### Lib Sınırları
+- **lib/config:** App-wide configuration
+- **lib/utils:** Pure utility functions
+- **lib/constants:** Global constants (not feature-specific)
+
+## Önerilen Dizin Haritası
+
+### Final Ağaç Yapısı
+```
+src/
+├── app/                         # Next.js App Router
+│   ├── (main)/
+│   │   ├── a-tarot/
+│   │   └── legal/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── features/
+│   ├── auth/
+│   │   ├── components/
+│   │   │   ├── LoginForm.tsx
+│   │   │   ├── RegisterForm.tsx
+│   │   │   └── index.ts
+│   │   ├── hooks/
+│   │   │   ├── useAuth.ts
+│   │   │   └── index.ts
+│   │   ├── lib/
+│   │   │   ├── auth-service.ts
+│   │   │   └── index.ts
+│   │   └── index.ts
+│   ├── cards/
+│   │   ├── components/
+│   │   │   ├── CardGallery/
+│   │   │   ├── CardDetails/
+│   │   │   ├── CardRenderer/
+│   │   │   └── index.ts
+│   │   ├── hooks/
+│   │   │   ├── useCardSelection.ts
+│   │   │   └── index.ts
+│   │   ├── lib/
+│   │   │   ├── card-data.ts
+│   │   │   ├── card-utils.ts
+│   │   │   └── index.ts
+│   │   └── index.ts
+│   ├── readings/
+│   │   ├── components/
+│   │   │   ├── ReadingSelector/
+│   │   │   ├── ReadingRunner/
+│   │   │   ├── ReadingResults/
+│   │   │   └── index.ts
+│   │   ├── hooks/
+│   │   │   ├── useReading.ts
+│   │   │   ├── useReadingHistory.ts
+│   │   │   └── index.ts
+│   │   ├── lib/
+│   │   │   ├── reading-engine.ts
+│   │   │   ├── reading-service.ts
+│   │   │   └── index.ts
+│   │   └── index.ts
+│   ├── profile/
+│   │   ├── components/
+│   │   │   ├── ProfileForm/
+│   │   │   ├── ReadingHistory/
+│   │   │   └── index.ts
+│   │   ├── hooks/
+│   │   │   ├── useProfile.ts
+│   │   │   └── index.ts
+│   │   ├── lib/
+│   │   │   ├── profile-service.ts
+│   │   │   └── index.ts
+│   │   └── index.ts
+│   └── shared/
+│       ├── ui/
+│       │   ├── BaseCard/
+│       │   ├── BaseButton/
+│       │   ├── BaseModal/
+│       │   └── index.ts
+│       ├── layout/
+│       │   ├── Header/
+│       │   ├── Footer/
+│       │   ├── Navigation/
+│       │   └── index.ts
+│       ├── icons/
+│       │   ├── MysticalIcons.tsx
+│       │   └── index.ts
+│       └── index.ts
+├── engine/
+│   ├── tarot/
+│   │   ├── spreads/
+│   │   │   ├── love/
+│   │   │   ├── career/
+│   │   │   └── index.ts
+│   │   ├── interpretations/
+│   │   │   ├── love-meanings.ts
+│   │   │   ├── career-meanings.ts
+│   │   │   └── index.ts
+│   │   ├── deck/
+│   │   │   ├── full-deck.ts
+│   │   │   └── index.ts
+│   │   └── index.ts
+│   ├── numerology/
+│   │   ├── calculations/
+│   │   ├── interpretations/
+│   │   └── index.ts
+│   └── index.ts
+├── lib/
+│   ├── config/
+│   │   ├── app-config.ts
+│   │   ├── metadata.ts
+│   │   └── index.ts
+│   ├── utils/
+│   │   ├── validation.ts
+│   │   ├── formatting.ts
+│   │   └── index.ts
+│   └── constants/
+│       ├── app-constants.ts
+│       └── index.ts
+├── types/
+│   ├── common.ts
+│   ├── api.ts
+│   ├── features.ts
+│   └── index.ts
+└── hooks/
+    ├── useToast.ts
+    ├── useTouchScroll.ts
+    └── index.ts
+```
+
+### Klasör Amaçları
+- **features/auth:** Kullanıcı kimlik doğrulama ve yetkilendirme
+- **features/cards:** Tarot kartları yönetimi ve görüntüleme
+- **features/readings:** Okuma işlemleri ve sonuçları
+- **features/profile:** Kullanıcı profili ve geçmiş
+- **features/shared:** Tüm feature'lar arasında paylaşılan bileşenler
+- **engine:** Pure business logic, state management
+- **lib:** Genel yardımcılar ve konfigürasyon
+- **types:** Global tip tanımları
+
+## Modül API'leri
+
+### Her Feature İçin Public Surface
+
+#### features/auth
+```typescript
+// types
+export interface User { ... }
+export interface AuthState { ... }
+
+// hooks
+export { useAuth, useLogin, useLogout }
+
+// components
+export { LoginForm, RegisterForm, AuthGuard }
+
+// services
+export { authService }
+```
+
+#### features/cards
+```typescript
+// types
+export interface TarotCard { ... }
+export interface CardSelection { ... }
+
+// hooks
+export { useCardSelection, useCardData }
+
+// components
+export { CardGallery, CardDetails, CardRenderer }
+
+// services
+export { cardService }
+```
+
+#### features/readings
+```typescript
+// types
+export interface Reading { ... }
+export interface ReadingResult { ... }
+
+// hooks
+export { useReading, useReadingHistory }
+
+// components
+export { ReadingSelector, ReadingRunner, ReadingResults }
+
+// services
+export { readingService }
+```
+
+#### features/profile
+```typescript
+// types
+export interface Profile { ... }
+export interface ReadingHistory { ... }
+
+// hooks
+export { useProfile, useReadingHistory }
+
+// components
+export { ProfileForm, ReadingHistory }
+
+// services
+export { profileService }
+```
+
+#### features/shared
+```typescript
+// ui components
+export { BaseCard, BaseButton, BaseModal }
+
+// layout components
+export { Header, Footer, Navigation }
+
+// icons
+export { MysticalIcons }
+```
+
+#### engine
+```typescript
+// tarot engine
+export { TarotEngine, TarotSpread, TarotInterpretation }
+
+// numerology engine
+export { NumerologyEngine, NumerologyCalculation }
+```
+
+## Refactor Adımları (Numaralı)
+
+### 1. Tip Duplikasyonunu Gider
+**Dosyalar:** `src/types/tarot.ts`, `src/types/reading.types.ts`
+**Değişiklikler:**
+- `reading.types.ts`'deki duplicate TarotCard interface'ini kaldır
+- Tüm import'ları `@/types/tarot`'a yönlendir
+- Type exports'ları güncelle
+
+**Beklenen Etki:** Tip tutarlılığı, daha az kod tekrarı
+
+### 2. Constants'ları Feature'lara Taşı
+**Dosyalar:** `src/lib/constants/tarotSpreads.ts` → `src/features/readings/lib/constants/`
+**Değişiklikler:**
+- `tarotSpreads.ts`'i `features/readings/lib/constants/`'a taşı
+- Import path'lerini güncelle
+- `features/readings/index.ts`'de export et
+
+**Beklenen Etki:** Feature isolation, daha iyi organizasyon
+
+### 3. LoveTarot.tsx'i Böl
+**Dosyalar:** `src/features/tarot/components/Love-Spread/LoveTarot.tsx`
+**Değişiklikler:**
+- `LoveTarotContainer.tsx` - State management
+- `LoveTarotUI.tsx` - UI components
+- `LoveTarotLogic.tsx` - Business logic
+- `LoveTarot.tsx` - Main component (orchestration)
+
+**Beklenen Etki:** Daha küçük, yönetilebilir dosyalar
+
+### 4. Base Component'lerdeki Mixed Concerns'i Ayır
+**Dosyalar:** `BaseInterpretation.tsx`, `BaseReadingTypeSelector.tsx`
+**Değişiklikler:**
+- UI logic'i ayrı dosyalara taşı
+- Business logic'i engine'e taşı
+- Validation logic'i utils'e taşı
+
+**Beklenen Etki:** Single responsibility principle
+
+### 5. Engine Klasörünü Oluştur
+**Dosyalar:** Yeni `src/engine/` klasörü
+**Değişiklikler:**
+- `engine/tarot/` - Tarot business logic
+- `engine/numerology/` - Numerology business logic
+- Pure functions, no UI dependencies
+
+**Beklenen Etki:** Business logic separation
+
+### 6. Feature API'lerini Tanımla
+**Dosyalar:** Her feature'ın `index.ts` dosyası
+**Değişiklikler:**
+- Public API'leri tanımla
+- Internal implementation'ları gizle
+- Barrel exports'ları optimize et
+
+**Beklenen Etki:** Clean public interfaces
+
+### 7. Hooks'ları Feature'lara Taşı
+**Dosyalar:** `src/hooks/` → `src/features/*/hooks/`
+**Değişiklikler:**
+- `useTarotReading.ts` → `features/readings/hooks/`
+- `useTarotSpreadLogic.ts` → `features/readings/hooks/`
+- Global hooks'ları `src/hooks/`'da tut
+
+**Beklenen Etki:** Feature co-location
+
+### 8. Shared UI'ı Yeniden Düzenle
+**Dosyalar:** `src/features/shared/ui/`
+**Değişiklikler:**
+- Base component'leri kategorize et
+- Component-specific klasörler oluştur
+- Index.ts'leri optimize et
+
+**Beklenen Etki:** Daha iyi shared component organization
+
+## Kabul Kriterleri
+
+### Build ve TypeCheck
+- [ ] `pnpm build` başarılı
+- [ ] `pnpm typecheck` başarılı
+- [ ] Tüm import path'leri çalışıyor
+- [ ] No circular dependencies
+
+### Route Smoke Test
+- [ ] Ana sayfa yükleniyor
+- [ ] Tarot sayfası yükleniyor
+- [ ] Legal sayfalar yükleniyor
+- [ ] Navigation çalışıyor
+
+### Feature Isolation
+- [ ] Cross-feature imports sadece public API üzerinden
+- [ ] Internal implementation'lar gizli
+- [ ] Feature'lar bağımsız test edilebilir
+
+### Performance
+- [ ] Bundle size artmamış
+- [ ] Runtime performance korunmuş
+- [ ] Lazy loading çalışıyor
+
+## Migration Guide
+
+### Yeni Reading/Spread Ekleme (<5 Dakika)
+
+#### 1. Engine'de Spread Tanımla
+```typescript
+// engine/tarot/spreads/new-spread/index.ts
+export const newSpreadConfig = {
+  id: 'new-spread',
+  name: 'New Spread',
+  positions: [...],
+  component: 'NewSpreadComponent'
+};
+```
+
+#### 2. Feature'da Component Oluştur
+```typescript
+// features/readings/components/NewSpread/
+// - NewSpreadContainer.tsx
+// - NewSpreadUI.tsx
+// - NewSpreadLogic.tsx
+```
+
+#### 3. Public API'ye Ekle
+```typescript
+// features/readings/index.ts
+export { NewSpreadContainer as NewSpread } from './components/NewSpread';
+```
+
+#### 4. App'te Kullan
+```typescript
+// app/(main)/a-tarot/page.tsx
+import { NewSpread } from '@/features/readings';
+```
+
+### Yeni Feature Ekleme
+
+#### 1. Feature Klasörü Oluştur
+```
+src/features/new-feature/
+├── components/
+├── hooks/
+├── lib/
+└── index.ts
+```
+
+#### 2. Public API Tanımla
+```typescript
+// features/new-feature/index.ts
+export * from './components';
+export * from './hooks';
+export * from './lib';
+```
+
+#### 3. Types Ekle
+```typescript
+// types/features.ts
+export interface NewFeatureState { ... }
+```
+
+#### 4. Engine'e Ekle (gerekirse)
+```typescript
+// engine/new-feature/
+// - business logic
+// - data processing
+// - state management
+```
+
+## Risk Azaltma
+
+### Aşamalı Migration
+1. **Faz 1:** Tip duplikasyonu gider (1 gün)
+2. **Faz 2:** Constants taşı (1 gün)
+3. **Faz 3:** God files böl (2 gün)
+4. **Faz 4:** Engine oluştur (2 gün)
+5. **Faz 5:** Feature API'leri (1 gün)
+
+### Backward Compatibility
+- Eski import path'lerini geçici olarak koru
+- Feature flag'lerle yeni yapıyı aşamalı aktif et
+- Rollback planı hazırla
+
+### Testing Strategy
+- Her adımda smoke test
+- Critical path'leri test et
+- Performance regression test
+- User acceptance test
+
+## Sonuç
+
+Bu refactor planı, mevcut kod tabanını feature-first, modüler ve sürdürülebilir bir yapıya dönüştürecektir. Aşamalı yaklaşım sayesinde risk minimize edilirken, her adımda değer sağlanacaktır.
+
+**Beklenen Faydalar:**
+- Daha kolay yeni feature ekleme
+- Daha iyi kod organizasyonu
+- Daha az coupling
+- Daha iyi test edilebilirlik
+- Daha kolay maintenance
+
+**Timeline:** 7-10 gün (aşamalı)
+**Risk:** Orta (aşamalı yaklaşım ile minimize)
+**ROI:** Yüksek (uzun vadeli maintainability)# Modüler Refactor Planı
+
+**Tarih:** 2025-01-27  
+**Proje:** Büşbüşkimki Tarot Uygulaması  
+**Hedef:** Feature-first, modüler ve sürdürülebilir kod tabanı  
+
+## Hedef Mimari
+
+### Feature-First Ağaç Yapısı
+```
+src/
+├── features/
+│   ├── auth/                    # Kullanıcı kimlik doğrulama
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── lib/
+│   │   └── index.ts
+│   ├── cards/                   # Kart yönetimi
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── lib/
+│   │   └── index.ts
+│   ├── readings/                # Okuma işlemleri
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── lib/
+│   │   └── index.ts
+│   ├── profile/                 # Kullanıcı profili
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── lib/
+│   │   └── index.ts
+│   └── shared/                  # Ortak bileşenler
+│       ├── ui/
+│       ├── layout/
+│       ├── icons/
+│       └── index.ts
+├── engine/                      # İş mantığı motoru
+│   ├── tarot/
+│   ├── numerology/
+│   └── index.ts
+├── lib/                         # Genel yardımcılar
+│   ├── config/
+│   ├── utils/
+│   └── constants/
+└── types/                       # Global tipler
+    ├── common.ts
+    ├── api.ts
+    └── index.ts
+```
+
+### Engine vs Components Ayrımı
+- **Engine:** Pure business logic, state management, data processing
+- **Components:** UI rendering, user interaction, presentation logic
+
+### Lib Sınırları
+- **lib/config:** App-wide configuration
+- **lib/utils:** Pure utility functions
+- **lib/constants:** Global constants (not feature-specific)
+
+## Önerilen Dizin Haritası
+
+### Final Ağaç Yapısı
+```
+src/
+├── app/                         # Next.js App Router
+│   ├── (main)/
+│   │   ├── a-tarot/
+│   │   └── legal/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── features/
+│   ├── auth/
+│   │   ├── components/
+│   │   │   ├── LoginForm.tsx
+│   │   │   ├── RegisterForm.tsx
+│   │   │   └── index.ts
+│   │   ├── hooks/
+│   │   │   ├── useAuth.ts
+│   │   │   └── index.ts
+│   │   ├── lib/
+│   │   │   ├── auth-service.ts
+│   │   │   └── index.ts
+│   │   └── index.ts
+│   ├── cards/
+│   │   ├── components/
+│   │   │   ├── CardGallery/
+│   │   │   ├── CardDetails/
+│   │   │   ├── CardRenderer/
+│   │   │   └── index.ts
+│   │   ├── hooks/
+│   │   │   ├── useCardSelection.ts
+│   │   │   └── index.ts
+│   │   ├── lib/
+│   │   │   ├── card-data.ts
+│   │   │   ├── card-utils.ts
+│   │   │   └── index.ts
+│   │   └── index.ts
+│   ├── readings/
+│   │   ├── components/
+│   │   │   ├── ReadingSelector/
+│   │   │   ├── ReadingRunner/
+│   │   │   ├── ReadingResults/
+│   │   │   └── index.ts
+│   │   ├── hooks/
+│   │   │   ├── useReading.ts
+│   │   │   ├── useReadingHistory.ts
+│   │   │   └── index.ts
+│   │   ├── lib/
+│   │   │   ├── reading-engine.ts
+│   │   │   ├── reading-service.ts
+│   │   │   └── index.ts
+│   │   └── index.ts
+│   ├── profile/
+│   │   ├── components/
+│   │   │   ├── ProfileForm/
+│   │   │   ├── ReadingHistory/
+│   │   │   └── index.ts
+│   │   ├── hooks/
+│   │   │   ├── useProfile.ts
+│   │   │   └── index.ts
+│   │   ├── lib/
+│   │   │   ├── profile-service.ts
+│   │   │   └── index.ts
+│   │   └── index.ts
+│   └── shared/
+│       ├── ui/
+│       │   ├── BaseCard/
+│       │   ├── BaseButton/
+│       │   ├── BaseModal/
+│       │   └── index.ts
+│       ├── layout/
+│       │   ├── Header/
+│       │   ├── Footer/
+│       │   ├── Navigation/
+│       │   └── index.ts
+│       ├── icons/
+│       │   ├── MysticalIcons.tsx
+│       │   └── index.ts
+│       └── index.ts
+├── engine/
+│   ├── tarot/
+│   │   ├── spreads/
+│   │   │   ├── love/
+│   │   │   ├── career/
+│   │   │   └── index.ts
+│   │   ├── interpretations/
+│   │   │   ├── love-meanings.ts
+│   │   │   ├── career-meanings.ts
+│   │   │   └── index.ts
+│   │   ├── deck/
+│   │   │   ├── full-deck.ts
+│   │   │   └── index.ts
+│   │   └── index.ts
+│   ├── numerology/
+│   │   ├── calculations/
+│   │   ├── interpretations/
+│   │   └── index.ts
+│   └── index.ts
+├── lib/
+│   ├── config/
+│   │   ├── app-config.ts
+│   │   ├── metadata.ts
+│   │   └── index.ts
+│   ├── utils/
+│   │   ├── validation.ts
+│   │   ├── formatting.ts
+│   │   └── index.ts
+│   └── constants/
+│       ├── app-constants.ts
+│       └── index.ts
+├── types/
+│   ├── common.ts
+│   ├── api.ts
+│   ├── features.ts
+│   └── index.ts
+└── hooks/
+    ├── useToast.ts
+    ├── useTouchScroll.ts
+    └── index.ts
+```
+
+### Klasör Amaçları
+- **features/auth:** Kullanıcı kimlik doğrulama ve yetkilendirme
+- **features/cards:** Tarot kartları yönetimi ve görüntüleme
+- **features/readings:** Okuma işlemleri ve sonuçları
+- **features/profile:** Kullanıcı profili ve geçmiş
+- **features/shared:** Tüm feature'lar arasında paylaşılan bileşenler
+- **engine:** Pure business logic, state management
+- **lib:** Genel yardımcılar ve konfigürasyon
+- **types:** Global tip tanımları
+
+## Modül API'leri
+
+### Her Feature İçin Public Surface
+
+#### features/auth
+```typescript
+// types
+export interface User { ... }
+export interface AuthState { ... }
+
+// hooks
+export { useAuth, useLogin, useLogout }
+
+// components
+export { LoginForm, RegisterForm, AuthGuard }
+
+// services
+export { authService }
+```
+
+#### features/cards
+```typescript
+// types
+export interface TarotCard { ... }
+export interface CardSelection { ... }
+
+// hooks
+export { useCardSelection, useCardData }
+
+// components
+export { CardGallery, CardDetails, CardRenderer }
+
+// services
+export { cardService }
+```
+
+#### features/readings
+```typescript
+// types
+export interface Reading { ... }
+export interface ReadingResult { ... }
+
+// hooks
+export { useReading, useReadingHistory }
+
+// components
+export { ReadingSelector, ReadingRunner, ReadingResults }
+
+// services
+export { readingService }
+```
+
+#### features/profile
+```typescript
+// types
+export interface Profile { ... }
+export interface ReadingHistory { ... }
+
+// hooks
+export { useProfile, useReadingHistory }
+
+// components
+export { ProfileForm, ReadingHistory }
+
+// services
+export { profileService }
+```
+
+#### features/shared
+```typescript
+// ui components
+export { BaseCard, BaseButton, BaseModal }
+
+// layout components
+export { Header, Footer, Navigation }
+
+// icons
+export { MysticalIcons }
+```
+
+#### engine
+```typescript
+// tarot engine
+export { TarotEngine, TarotSpread, TarotInterpretation }
+
+// numerology engine
+export { NumerologyEngine, NumerologyCalculation }
+```
+
+## Refactor Adımları (Numaralı)
+
+### 1. Tip Duplikasyonunu Gider
+**Dosyalar:** `src/types/tarot.ts`, `src/types/reading.types.ts`
+**Değişiklikler:**
+- `reading.types.ts`'deki duplicate TarotCard interface'ini kaldır
+- Tüm import'ları `@/types/tarot`'a yönlendir
+- Type exports'ları güncelle
+
+**Beklenen Etki:** Tip tutarlılığı, daha az kod tekrarı
+
+### 2. Constants'ları Feature'lara Taşı
+**Dosyalar:** `src/lib/constants/tarotSpreads.ts` → `src/features/readings/lib/constants/`
+**Değişiklikler:**
+- `tarotSpreads.ts`'i `features/readings/lib/constants/`'a taşı
+- Import path'lerini güncelle
+- `features/readings/index.ts`'de export et
+
+**Beklenen Etki:** Feature isolation, daha iyi organizasyon
+
+### 3. LoveTarot.tsx'i Böl
+**Dosyalar:** `src/features/tarot/components/Love-Spread/LoveTarot.tsx`
+**Değişiklikler:**
+- `LoveTarotContainer.tsx` - State management
+- `LoveTarotUI.tsx` - UI components
+- `LoveTarotLogic.tsx` - Business logic
+- `LoveTarot.tsx` - Main component (orchestration)
+
+**Beklenen Etki:** Daha küçük, yönetilebilir dosyalar
+
+### 4. Base Component'lerdeki Mixed Concerns'i Ayır
+**Dosyalar:** `BaseInterpretation.tsx`, `BaseReadingTypeSelector.tsx`
+**Değişiklikler:**
+- UI logic'i ayrı dosyalara taşı
+- Business logic'i engine'e taşı
+- Validation logic'i utils'e taşı
+
+**Beklenen Etki:** Single responsibility principle
+
+### 5. Engine Klasörünü Oluştur
+**Dosyalar:** Yeni `src/engine/` klasörü
+**Değişiklikler:**
+- `engine/tarot/` - Tarot business logic
+- `engine/numerology/` - Numerology business logic
+- Pure functions, no UI dependencies
+
+**Beklenen Etki:** Business logic separation
+
+### 6. Feature API'lerini Tanımla
+**Dosyalar:** Her feature'ın `index.ts` dosyası
+**Değişiklikler:**
+- Public API'leri tanımla
+- Internal implementation'ları gizle
+- Barrel exports'ları optimize et
+
+**Beklenen Etki:** Clean public interfaces
+
+### 7. Hooks'ları Feature'lara Taşı
+**Dosyalar:** `src/hooks/` → `src/features/*/hooks/`
+**Değişiklikler:**
+- `useTarotReading.ts` → `features/readings/hooks/`
+- `useTarotSpreadLogic.ts` → `features/readings/hooks/`
+- Global hooks'ları `src/hooks/`'da tut
+
+**Beklenen Etki:** Feature co-location
+
+### 8. Shared UI'ı Yeniden Düzenle
+**Dosyalar:** `src/features/shared/ui/`
+**Değişiklikler:**
+- Base component'leri kategorize et
+- Component-specific klasörler oluştur
+- Index.ts'leri optimize et
+
+**Beklenen Etki:** Daha iyi shared component organization
+
+## Kabul Kriterleri
+
+### Build ve TypeCheck
+- [ ] `pnpm build` başarılı
+- [ ] `pnpm typecheck` başarılı
+- [ ] Tüm import path'leri çalışıyor
+- [ ] No circular dependencies
+
+### Route Smoke Test
+- [ ] Ana sayfa yükleniyor
+- [ ] Tarot sayfası yükleniyor
+- [ ] Legal sayfalar yükleniyor
+- [ ] Navigation çalışıyor
+
+### Feature Isolation
+- [ ] Cross-feature imports sadece public API üzerinden
+- [ ] Internal implementation'lar gizli
+- [ ] Feature'lar bağımsız test edilebilir
+
+### Performance
+- [ ] Bundle size artmamış
+- [ ] Runtime performance korunmuş
+- [ ] Lazy loading çalışıyor
+
+## Migration Guide
+
+### Yeni Reading/Spread Ekleme (<5 Dakika)
+
+#### 1. Engine'de Spread Tanımla
+```typescript
+// engine/tarot/spreads/new-spread/index.ts
+export const newSpreadConfig = {
+  id: 'new-spread',
+  name: 'New Spread',
+  positions: [...],
+  component: 'NewSpreadComponent'
+};
+```
+
+#### 2. Feature'da Component Oluştur
+```typescript
+// features/readings/components/NewSpread/
+// - NewSpreadContainer.tsx
+// - NewSpreadUI.tsx
+// - NewSpreadLogic.tsx
+```
+
+#### 3. Public API'ye Ekle
+```typescript
+// features/readings/index.ts
+export { NewSpreadContainer as NewSpread } from './components/NewSpread';
+```
+
+#### 4. App'te Kullan
+```typescript
+// app/(main)/a-tarot/page.tsx
+import { NewSpread } from '@/features/readings';
+```
+
+### Yeni Feature Ekleme
+
+#### 1. Feature Klasörü Oluştur
+```
+src/features/new-feature/
+├── components/
+├── hooks/
+├── lib/
+└── index.ts
+```
+
+#### 2. Public API Tanımla
+```typescript
+// features/new-feature/index.ts
+export * from './components';
+export * from './hooks';
+export * from './lib';
+```
+
+#### 3. Types Ekle
+```typescript
+// types/features.ts
+export interface NewFeatureState { ... }
+```
+
+#### 4. Engine'e Ekle (gerekirse)
+```typescript
+// engine/new-feature/
+// - business logic
+// - data processing
+// - state management
+```
+
+## Risk Azaltma
+
+### Aşamalı Migration
+1. **Faz 1:** Tip duplikasyonu gider (1 gün)
+2. **Faz 2:** Constants taşı (1 gün)
+3. **Faz 3:** God files böl (2 gün)
+4. **Faz 4:** Engine oluştur (2 gün)
+5. **Faz 5:** Feature API'leri (1 gün)
+
+### Backward Compatibility
+- Eski import path'lerini geçici olarak koru
+- Feature flag'lerle yeni yapıyı aşamalı aktif et
+- Rollback planı hazırla
+
+### Testing Strategy
+- Her adımda smoke test
+- Critical path'leri test et
+- Performance regression test
+- User acceptance test
+
+## Sonuç
+
+Bu refactor planı, mevcut kod tabanını feature-first, modüler ve sürdürülebilir bir yapıya dönüştürecektir. Aşamalı yaklaşım sayesinde risk minimize edilirken, her adımda değer sağlanacaktır.
+
+**Beklenen Faydalar:**
+- Daha kolay yeni feature ekleme
+- Daha iyi kod organizasyonu
+- Daha az coupling
+- Daha iyi test edilebilirlik
+- Daha kolay maintenance
+
+**Timeline:** 7-10 gün (aşamalı)
+**Risk:** Orta (aşamalı yaklaşım ile minimize)
+**ROI:** Yüksek (uzun vadeli maintainability)

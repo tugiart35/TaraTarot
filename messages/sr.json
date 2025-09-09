@@ -1,0 +1,1359 @@
+{
+  "common": {
+    "ok": "U redu",
+    "cancel": "Otkaži",
+    "save": "Sačuvaj",
+    "delete": "Obriši",
+    "loading": "Učitava...",
+    "error": "Greška",
+    "success": "Uspešno",
+    "warning": "Upozorenje",
+    "info": "Informacija",
+    "yes": "Da",
+    "no": "Ne",
+    "back": "Nazad",
+    "next": "Sledeće",
+    "previous": "Prethodno",
+    "close": "Zatvori",
+    "open": "Otvori",
+    "edit": "Uredi",
+    "view": "Prikaži",
+    "search": "Pretraži",
+    "filter": "Filtriraj",
+    "sort": "Sortiraj",
+    "refresh": "Osveži",
+    "copy": "Kopiraj",
+    "share": "Podeli",
+    "download": "Preuzmi",
+    "upload": "Otpremi",
+    "select": "Izaberi",
+    "selectAll": "Izaberi sve",
+    "progress": "Napredak",
+    "reversed": "Obrnuto",
+    "upright": "Uspravno",
+    "clear": "Očisti",
+    "reset": "Resetuj",
+    "submit": "Pošalji",
+    "confirm": "Potvrdi",
+    "continue": "Nastavi",
+    "finish": "Završi",
+    "start": "Počni",
+    "stop": "Zaustavi",
+    "pause": "Pauziraj",
+    "resume": "Nastavi"
+  },
+  "nav": {
+    "home": "Početna",
+    "dashboard": "Kontrolna tabla",
+    "profile": "Profil",
+    "settings": "Podešavanja",
+    "help": "Pomoć",
+    "about": "O nama",
+    "contact": "Kontakt",
+    "privacy": "Privatnost",
+    "terms": "Uslovi",
+    "logout": "Odjavi se",
+    "login": "Prijavi se",
+    "register": "Registruj se",
+    "menu": "Meni",
+    "breadcrumb": "Navigacija"
+  },
+  "auth": {
+    "signIn": {
+      "title": "Prijavi se",
+      "subtitle": "Prijavite se na svoj nalog",
+      "email": "Email",
+      "password": "Lozinka",
+      "rememberMe": "Zapamti me",
+      "forgotPassword": "Zaboravljena lozinka",
+      "signInButton": "Prijavi se",
+      "signUpLink": "Nemate nalog? Registrujte se",
+      "googleSignIn": "Prijavi se sa Google",
+      "facebookSignIn": "Prijavi se sa Facebook"
+    },
+    "signUp": {
+      "title": "Registruj se",
+      "subtitle": "Kreiraj novi nalog",
+      "email": "Email",
+      "password": "Lozinka",
+      "confirmPassword": "Potvrdi lozinku",
+      "firstName": "Ime",
+      "lastName": "Prezime",
+      "acceptTerms": "Prihvatam uslove",
+      "signUpButton": "Registruj se",
+      "signInLink": "Već imate nalog? Prijavite se",
+      "googleSignUp": "Registruj se sa Google",
+      "facebookSignUp": "Registruj se sa Facebook"
+    },
+    "errors": {
+      "invalidCredentials": "Neispravna email adresa ili lozinka",
+      "emailAlreadyExists": "Ova email adresa se već koristi",
+      "weakPassword": "Lozinka je previše slaba",
+      "emailRequired": "Email adresa je obavezna",
+      "passwordRequired": "Lozinka je obavezna",
+      "passwordsDoNotMatch": "Lozinke se ne poklapaju",
+      "invalidEmail": "Neispravna email adresa",
+      "accountLocked": "Nalog je zaključan",
+      "accountDisabled": "Nalog je onemogućen",
+      "sessionExpired": "Sesija je istekla",
+      "networkError": "Mrežna greška",
+      "serverError": "Greška servera",
+      "unknownError": "Nepoznata greška"
+    },
+    "notice": {
+      "checkEmail": "Proverite svoj email i potvrdite registraciju",
+      "emailConfirmed": "Vaš email je potvrđen! 100 kredita je poklonjeno.",
+      "passwordResetSent": "Link za resetovanje lozinke je poslat",
+      "accountCreated": "Nalog je uspešno kreiran",
+      "emailVerified": "Email adresa je potvrđena",
+      "passwordChanged": "Lozinka je uspešno promenjena",
+      "profileUpdated": "Profil je ažuriran",
+      "confirmationEmailSent": "Email za potvrdu je poslat",
+      "confirmationFailed": "Potvrda email adrese nije uspešna"
+    }
+  },
+  "validation": {
+    "required": "Ovo polje je obavezno",
+    "email": "Unesite ispravnu email adresu",
+    "minLength": "Mora imati najmanje {min} karaktera",
+    "maxLength": "Mora imati najviše {max} karaktera",
+    "pattern": "Neispravan format",
+    "password": {
+      "rules": "Lozinka mora imati najmanje 8 karaktera sa velikim slovom, malim slovom i brojem",
+      "tooShort": "Lozinka je previše kratka",
+      "noUppercase": "Potrebno je najmanje jedno veliko slovo",
+      "noLowercase": "Potrebno je najmanje jedno malo slovo",
+      "noNumber": "Potreban je najmanje jedan broj",
+      "noSpecialChar": "Potreban je najmanje jedan specijalni karakter"
+    },
+    "confirmPassword": "Lozinke se ne poklapaju",
+    "phone": "Unesite ispravan broj telefona",
+    "url": "Unesite ispravan URL",
+    "date": "Unesite ispravan datum",
+    "number": "Unesite ispravan broj",
+    "integer": "Unesite ceo broj",
+    "positive": "Unesite pozitivan broj",
+    "negative": "Unesite negativan broj",
+    "min": "Mora biti najmanje {min}",
+    "max": "Mora biti najviše {max}",
+    "between": "Mora biti između {min} i {max}"
+  },
+  "tarot": {
+    "title": "Tarot karte",
+    "subtitle": "Otkrijte svoju sudbinu",
+    "selectCards": "Izaberite karte",
+    "shuffle": "Promešaj",
+    "draw": "Izvuci",
+    "interpretation": "Tumačenje",
+    "reading": "Čitanje",
+    "spread": "Raspored",
+    "card": "Karta",
+    "cards": "Karte",
+    "deck": "Špil",
+    "position": "Pozicija",
+    "meaning": "Značenje",
+    "past": "Prošlost",
+    "present": "Sadašnjost",
+    "future": "Budućnost",
+    "love": "Ljubav",
+    "career": "Karijera",
+    "health": "Zdravlje",
+    "spirituality": "Duhovnost",
+    "guidance": "Vodič",
+    "advice": "Savet",
+    "warning": "Upozorenje",
+    "opportunity": "Prilika",
+    "challenge": "Izazov",
+    "outcome": "Rezultat",
+    "influence": "Uticaj",
+    "obstacle": "Prepreka",
+    "strength": "Snaga",
+    "weakness": "Slabost",
+    "hope": "Nada",
+    "fear": "Strah",
+    "action": "Akcija",
+    "inaction": "Nedelovanje",
+    "yes": "Da",
+    "no": "Ne",
+    "maybe": "Možda",
+    "uncertain": "Neizvesno"
+  },
+  "reading": {
+    "types": {
+      "simple": "Jednostavno",
+      "detailed": "Audio",
+      "written": "Pisano",
+      "simpleShort": "Jednostavno",
+      "detailedShort": "Audio",
+      "writtenShort": "Pisano",
+      "threeCard": "Tri karte",
+      "love": "Ljubav",
+      "career": "Karijera",
+      "daily": "Dnevno",
+      "weekly": "Nedeljno",
+      "monthly": "Mesečno",
+      "yearly": "Godišnje",
+      "custom": "Prilagođeno"
+    },
+    "positions": {
+      "past": "Prošlost",
+      "present": "Sadašnjost",
+      "future": "Budućnost",
+      "situation": "Situacija",
+      "action": "Akcija",
+      "outcome": "Rezultat",
+      "you": "Ti",
+      "partner": "Partner",
+      "relationship": "Veza",
+      "obstacle": "Prepreka",
+      "advice": "Savet"
+    },
+    "actions": {
+      "startReading": "Počni čitanje",
+      "shuffleCards": "Promešaj karte",
+      "selectCards": "Izaberite karte",
+      "revealCards": "Otkrij karte",
+      "interpretCards": "Tumači karte",
+      "saveReading": "Sačuvaj čitanje",
+      "shareReading": "Podeli čitanje",
+      "newReading": "Novo čitanje",
+      "continueReading": "Nastavi čitanje"
+    },
+    "messages": {
+      "noSelection": "Izaberite tip čitanja",
+      "simpleSelected": "Jednostavno čitanje izabrano",
+      "detailedSelected": "Audio čitanje izabrano",
+      "writtenSelected": "Pisano čitanje izabrano",
+      "detailedDescription": "Audio i detaljno tumačenje",
+      "writtenDescription": "Pisano i sveobuhvatno tumačenje"
+    }
+  },
+  "errors": {
+    "pageNotFound": "Stranica nije pronađena",
+    "serverError": "Greška servera",
+    "networkError": "Mrežna greška",
+    "unauthorized": "Neovlašćen pristup",
+    "forbidden": "Pristup zabranjen",
+    "timeout": "Isteklo vreme",
+    "maintenance": "Režim održavanja",
+    "tryAgain": "Pokušaj ponovo",
+    "goHome": "Idi na početnu",
+    "contactSupport": "Kontaktiraj podršku"
+  },
+  "home": {
+    "title": "Büşbüşkimki",
+    "subtitle": "Vaše Mističko Putovanje Počinje",
+    "tarotCard": {
+      "title": "Tarot Čitanje",
+      "description": "Krenite na putovanje u misteriozni svet karata. Pronađite mistične odgovore na vaša pitanja o ljubavi, karijeri i životu.",
+      "button": "Počni Čitanje →"
+    },
+    "footerText": "Putujte u dubine vašeg unutrašnjeg sveta u svetlosti mističkog znanja. Svako čitanje vam nudi novu perspektivu i savet."
+  },
+  "navigation": {
+    "tarot": "Tarot",
+    "numerology": "Numerologija",
+    "home": "Početna",
+    "auth": "Prijavite se",
+    "profile": "Profil",
+    "dashboard": "Kontrolna tabla"
+  },
+  "numerology": {
+    "title": "Numerologija",
+    "subtitle": "Otkrij vođstvo svog broja uz ime i datum rođenja.",
+    "calculators": {
+      "lifePath": "Životni Put",
+      "expressionDestiny": "Ekspresija/Sudbina",
+      "soulUrge": "Duševna Želja",
+      "personality": "Ličnost",
+      "birthdayNumber": "Broj Rođendana",
+      "maturity": "Zrelost",
+      "pinnaclesChallenges": "Vrhunci/Izazovi",
+      "personalCycles": "Lični Ciklusi",
+      "compatibility": "Analiza Kompatibilnosti"
+    },
+    "form": {
+      "name": "Ime i Prezime",
+      "birth": "Datum Rođenja (YYYY-MM-DD)",
+      "targetDate": "Ciljni Datum (YYYY-MM-DD)",
+      "personA": "1. Osoba",
+      "personB": "2. Osoba",
+      "calculate": "Izračunaj",
+      "invalidDate": "Unesite važeći datum.",
+      "required": "Obavezno polje."
+    },
+    "result": {
+      "title": "{type} Rezultat",
+      "cardTitle": "Tvoj {type} Broj",
+      "masterNumber": "Master Broj",
+      "calculationDetails": "Detalji Izračuna",
+      "lifeGuidance": "Životno Vođstvo",
+      "careerAdvice": "Saveti za Karijeru",
+      "relationshipAdvice": "Saveti za Veze",
+      "spiritualMessage": "Duhovna Poruka",
+      "positiveTraits": "Tvoje Snage",
+      "challenges": "Oblasti za Praćenje",
+      "pinnacles": "Vrhunci",
+      "personalYear": "Lična Godina",
+      "personalMonth": "Lični Mesec",
+      "personalDay": "Lični Dan",
+      "compatibilityScore": "Skor Kompatibilnosti",
+      "compatibilityNotes": "Napomene o Kompatibilnosti"
+    },
+    "birthdayMeanings": {
+      "1": "Ljudi rođeni 1. dolaze na svet sa jakim osećajem individualnosti. Od ranog detinjstva osećaju potrebu da kreiraju svoj put, donose nezavisne odluke i vode. Varnica koja gori u njima ih konstantno usmerava ka novim početcima i novim prilikama. Ovi pojedinci su hrabri, odlučni i često postaju primer onima oko sebe svojim pionirskim idejama.\n\nMeđutim, ova jaka liderška energija ponekad se može pretvoriti u previše sebičan ili autoritaran stav. Ljudi rođeni 1. rizikuju izolaciju ako ne nauče da sarađuju sa drugima. Kada su uravnoteženi, postaju svetlo koje vodi i u svojim životima i u životima drugih.",
+      "2": "Oni rođeni 2. dolaze na svet sa energijom izgrađenom na harmoniji, ravnoteži i odnosima. Oni su prirodni posrednici sa jedinstvenim sposobnostima u rešavanju konflikata, okupljanju različitih strana i stvaranju saradničkih okruženja. U svojim životima obično traže međusobno razumevanje, intimnost i emocionalnu dubinu.\n\nS druge strane, ova osetljivost ih može učiniti lako povredljivim. Želja za prekomernim prilagođavanjem može ih naterati da svoje želje stavljaju u pozadinu. Kada pronađu zdravu ravnotežu, postaju pouzdan i podržavajući vodič za druge.",
+      "3": "Ljudi rođeni 3. dolaze na pozornicu života sa kreativnim, energičnim i radosnim duhom. Njihova najjača strana je sposobnost izražavanja; mogu se predstaviti u umetnosti, pisanju, govoru ili dizajnu. Lako se ističu u društvenim odnosima i postaju svetlo koje inspiriše ljude.\n\nMeđutim, ponekad mogu pokazati tendencije da budu površni ili rasejani. Nedostatak discipline u njihovim životima može sprečiti da u potpunosti iskoriste svoje talente. Kada su fokusirani, oslobađaju ogromnu kreativnost i energiju koja donosi sreću ljudima.",
+      "4": "Oni rođeni 4. su ljudi koji donose red, disciplinu i strukturu. Oni su pouzdani, vredni i odgovorni pojedinci. Kada se suoče sa poteškoćama, napreduju strpljivo i sistematski. Žele da izgrade čvrstu osnovu za svoje živote i stvore stabilnost i za sebe i za svoje voljene.\n\nPonekad mogu biti kruti, tvrdoglavi ili previše kontrolišući. Ovo može otežati fleksibilnost u odnosima. Kada razviju fleksibilnost, postižu trajne uspehe gradeći čvrstu strukturu i u svojim životima i u svojoj okolini.",
+      "5": "Oni rođeni 5. su predstavnici slobode, avanture i promene. Konstantno traže nova iskustva i hrane se upoznavanjem različitih kultura i ljudi. Brzo uče i lako se prilagođavaju promenama koje život donosi. Dodaju uzbuđenje, novinu i vitalnost svojoj okolini.\n\nMeđutim, ova potreba za slobodom ponekad se može pretvoriti u nestrpljivost, nered ili strah od obaveza. Ne žele da se ograničavaju. Ali kada nauče da balansiraju slobodu sa odgovornošću, njihovi životi postaju inspirativno putovanje otkrića.",
+      "6": "Ljudi rođeni 6. nose energiju ljubavi, harmonije i odgovornosti. Osećaju duboku lojalnost prema svojim porodicama, prijateljima i zajednici. Njihova pomagačka priroda, estetsko razumevanje i želja da stvaraju lepotu čine ih pouzdanim utočištem za druge.\n\nPonekad mogu imati tendencije ka prekomernom samožrtvovanju, zanemarivanju sopstvenih potreba ili preuzimanju tuđih problema. Kada nauče da zaštite svoje granice, postaju isceljujuća sila i za sebe i za svoju okolinu.",
+      "7": "Oni rođeni 7. su istraživački, duboko misleći i intuitivni pojedinci. Imaju duh koji propituje život i traži misteriju iza istine. Zanimaju ih nauka, filozofija, misticizam ili duhovni predmeti. Njihov unutrašnji svet je jak, a samoća može biti hranljiva za njih.\n\nMeđutim, mogu imati tendencije ka prekomernoj introvertnosti, hladnoći ili distanciranju. Kada nauče da formiraju emocionalne veze sa drugima, postaju učitelj koji osvetljava druge svojom mudrošću.",
+      "8": "Ljudi rođeni 8. su predstavnici moći, upravljanja i materijalnog uspeha. Imaju prirodni talent u poslu, organizaciji i strategiji. Usmereni su ka ciljevima i mogu postići velike uspehe kroz odlučan rad.\n\nMeđutim, ambicija i težnja za moći ponekad ih može učiniti grubim ili autoritarnim. Kada nauče da balansiraju duhovnost sa materijalnošću, stvaraju obilje u svojim životima i postaju pravedni lideri za druge.",
+      "9": "Oni rođeni 9. su saosećajni, idealistički i umetnički duhoviti pojedinci. Stavljaju služenje čovečanstvu, deljenje dobra i lepote u centar svojih života. Sa svojim kreativnim aspektima mogu napraviti razliku u društvu i dodirnuti tuđe živote.\n\nPonekad mogu biti previše emocionalni, sanjarski ili samožrtvujući. Međutim, kada žive posmatrajući svoje granice i stvarnosti, postaju humanitarni lideri koji ostavljaju trajni trag u svetu.",
+      "11": "Oni rođeni 11. su intuitivni, vizionarski i duhovno jaki pojedinci. Njihova energija radi na visokoj frekvenciji i inspiriše one oko sebe. Sa svojom urođenom svešću, moguće je da osećaju božansko vođstvo u svojim životima.\n\nMeđutim, ova intenzivna energija ih može učiniti nemirnim, anksioznim ili neuravnoteženim. Kada se ukorene, postaju svetlo koje inspiriše i vodi one oko sebe.",
+      "22": "Oni rođeni 22. su graditelji velikih vizija. Imaju sposobnost da pretvore moćne snove u stvarnost. Zahvaljujući svojoj disciplinovanoj, praktičnoj i odlučnoj prirodi, mogu postići velike uspehe i u materijalnom i u duhovnom svetu.\n\nAli ova velika energija može stvoriti pritisak odgovornosti. Kada se ne zadovolje malim ciljevima, ostavljaju trajne tragove u svetu gradeći velike projekte.",
+      "33": "Oni rođeni 33. su nosioci bezuslovne ljubavi, saosećanja i isceljujuće energije. Oni su pojedinci koji žive za dobro drugih, osećajući duboku odgovornost i samožrtvovanje. Inspirišu ljude, omekšavaju srca i vode zajednice.\n\nMeđutim, ova visoka energija može stvoriti pritisak obaveze. Kada nauče da se izražavaju bez iscrpljivanja, ostavljaju trajni isceljujući trag u svetu i doprinose kolektivnom isceljenju."
+    },
+    "lifePathMeanings": {
+      "1": "Životni Put 1 pojedinci dolaze u život sa liderstvom, nezavisnošću i pionirskom energijom. Nose želju da kreiraju svoj put, generišu nove ideje i vode one oko sebe. Često imaju preduzetničku, hrabru i vizionarsku prirodu. U svojim životima često osećaju potrebu da dođu u prvi plan i snažno izraze svoj identitet.\n\nMeđutim, ova energija ponekad se može reflektovati kao sebičnost, nestrpljivost ili autoritarizam. Kada su otvoreni za saradnju i prepoznaju i tuđe liderstvo, postižu velike uspehe i inspirativne početke u svojim životima.",
+      "2": "Životni Put 2 pojedinci dolaze na svet sa harmonijom, diplomacijom i osetljivošću. Imaju jaku sposobnost u posredovanju, okupljanju različitih strana i održavanju mira. Opšte su percipirani kao blaga, saosećajna i podržavajuća energija u svojoj okolini. Odnosi su im veoma važni i obično zauzimaju centralno mesto u životu.\n\nMeđutim, prekomerna osetljivost ponekad se može pretvoriti u nedostatak samopouzdanja ili zavisnost od drugih. Kada uspostave ravnotežu, postaju pravi vodič koji donosi mir i razumevanje i sebi i drugima.",
+      "3": "Životni Put 3 pojedinci dolaze u život sa kreativnim, energičnim i radosnim duhom. Izražavanje, komunikacija i umetnost su im prirodne oblasti. Često inspirišu one oko sebe svojim razgovorima, pisanjem ili pozorišnim talentima. Vitalnost koju nose u sebi im omogućava da uživaju u životu i donose radost drugima.\n\nMeđutim, ova energija se takođe može manifestovati kao površnost, neorganizovanost ili rasipništvo. Kada se kombinuje sa disciplinom, 3 širi svetlost kreativnosti i radosti i u svom životu i u životima drugih.",
+      "4": "Životni Put 4 pojedinci žive sa energijom koja donosi red, disciplinu i strukturu. Oni su strpljivi, vredni i pouzdani pojedinci. Prave dugoročne planove, postavljaju čvrste temelje i igraju jaku ulogu u izgradnji trajnih uspeha. Zahvaljujući svojoj praktičnoj inteligenciji i stabilnom stavu, znaju kako da prevaziđu poteškoće.\n\nMeđutim, ova energija takođe može bacati senke kao kruta pravila, nedostatak fleksibilnosti ili tvrdoglavost. Kada se prilagode promenama, postižu trajne uspehe koji su i pouzdani i otvoreni za inovacije.",
+      "5": "Životni Put 5 pojedinci su predstavnici slobode, avanture i promene. Kreću se kroz život sa konstantnom potragom za otkrićem. Upoznavanje novih kultura, iskustava i ljudi hrani njihovu dušu. Pošto se lako prilagođavaju promenama, mogu biti pioniri u oživljavanju inovativnih ideja.\n\nMeđutim, nestrpljivost, neodlučnost i nestabilnost su njihovi senovni aspekti. Kada nauče da balansiraju slobodu sa odgovornošću, njihovi životi postaju uzbudljivo putovanje i za sebe i za svoju okolinu.",
+      "6": "Životni Put 6 pojedinci dolaze u život sa energijom odgovornosti, porodice i ljubavi. Imaju jaku želju da pomažu drugima, prilagođavaju se i stvaraju lepotu. Poznati su kao zaštitna, podržavajuća i pouzdana energija u svojoj okolini. Njihovo estetsko razumevanje i sposobnost stvaranja harmonije su jaki.\n\nMeđutim, mogu imati tendencije ka prekomernom samožrtvovanju ili preuzimanju tuđih problema. Kada nauče da takođe razmotre svoje potrebe, postaju isceljujuća sila i za sebe i za druge.",
+      "7": "Životni Put 7 pojedinci se hrane introspekcijom, istraživanjem i duhovnošću. Traže duboke smislove života, propituju nevidljivo i vode svojom intuicijom. Nauka, filozofija, duhovna polja ili dubine umetnosti ih privlače. Tišina i samoća su oblasti koje hrane njihovu unutrašnju mudrost.\n\nMeđutim, mogu postojati tendencije ka prekomernoj introvertnosti ili hladnom izgledu. Kada uspostave uravnotežene veze sa drugima, postaju vodič koji osvetljava svoju okolinu svojom mudrošću.",
+      "8": "Životni Put 8 pojedinci dolaze na svet sa energijom moći, uspeha i upravljanja. Imaju prirodnu veštinu u poslu, organizaciji i liderstvu. Napreduju odlučno ka svojim ciljevima i imaju visok potencijal za postizanje materijalnog uspeha. Kada se pravilno koristi, mogu stvoriti obilje i prosperitet.\n\nMeđutim, ambicija, želja za kontrolom ili autoritarni stav mogu biti senovni aspekti. Kada balansiraju materijalno i duhovno, postižu trajne uspehe kao pravedni i jaki lider.",
+      "9": "Životni Put 9 pojedinci se kreću sa saosećanjem, idealizmom i ljubavlju prema čovečanstvu. Žele da učine svet boljim mestom i doprinose društvu samožrtvovanjem. Njihovi umetnički aspekti mogu biti jaki i mogu kreirati projekte koji dodiruju tuđe živote.\n\nMeđutim, mogu imati tendencije ka tome da budu previše emocionalni, sanjarski ili prekomerno samožrtvujući. Kada zaštite svoje granice i kombinuju realnost sa idealizmom, postaju humanitarni lideri koji ostavljaju trajne tragove u svetu.",
+      "11": "Životni Put 11 pojedinci nose visoku intuiciju, viziju i energiju inspiracije. Imaju urođenu duhovnu svest i jaki su u inspiraciji onih oko sebe. Mogu voditi ljude svojim vizijama i doprinositi kolektivu svojim božanskim vođstvom.\n\nMeđutim, ova intenzivna energija može stvoriti anksioznost, nemir ili neuravnoteženost. Kada se uravnoteže, postaju i vodič koji sija svetlost i vizionar koji donosi isceljenje svojoj okolini.",
+      "22": "Životni Put 22 pojedinci su poznati kao majstori graditelji. Imaju moć da pretvore velike snove u stvarnost. Zahvaljujući svojoj praktičnoj, disciplinovanoj i vizionarskoj prirodi, mogu graditi trajne projekte u svetu. Imaju potencijal da istovremeno stvaraju i materijalni i duhovni uspeh.\n\nMeđutim, ova velika energija ponekad može stvoriti težak pritisak odgovornosti. Kada se ne zadovolje malim ciljevima, otkrivaju svoj potencijal da ostave trajno nasleđe u svetu.",
+      "33": "Životni Put 33 pojedinci nose bezuslovnu ljubav, saosećanje i energiju službe. Dolaze na svet sa duhom koji posreduje u isceljenju drugih i vodi društvo. Sa svojim nastavnim aspektima, saosećajnim stavovima i visokom energijom, osvetljava svoju okolinu.\n\nMeđutim, ova intenzivna energija ponekad može stvoriti prekomerno samožrtvovanje ili rizik sagorevanja. Kada zaštite svoje granice i izraze svoju ljubav na uravnotežen način, postaju moćna figura koja nudi isceljenje i vođstvo u svetu."
+    },
+    "expressionMeanings": {
+      "1": "Broj Izražavanja 1 pojedinci usmeravaju svoje živote sa jakom energijom liderstva i individualnosti. Generišu kreativne ideje, otvaraju svoje puteve i postaju primeri drugima. Zahvaljujući svojoj urođenoj odlučnosti i samopouzdanju, preduzimanje inicijativa, pokretanje novih projekata i preuzimanje rizika je prirodan proces za njih.\n\nMeđutim, ova jaka energija ponekad može pokazati svoju senovnu stranu kao sebičnost, nestrpljivost ili autoritarizam. Kada nauče saradnju i ceniti tuđe ideje, ostavljaju velike uspehe i trajne uticaje na svojim životnim putevima.",
+      "2": "Broj Izražavanja 2 pojedinci nose energiju harmonije, saradnje i diplomatije. Prirodno su talentovani za okupljanje različitih strana, rešavanje konflikata i stvaranje ravnoteže. Ističu se kao blaga, ljubazna i podržavajuća prisutnost u svojoj okolini.\n\nMeđutim, prekomerna želja za prilagođavanje ponekad može dovesti do toga da potisnu svoje potrebe. Kada nauče da postave svoje granice, postaju isceljujuća sila i u svojim odnosima i unutar zajednice.",
+      "3": "Broj Izražavanja 3 pojedinci sijaju energijom kreativnosti, komunikacije i radosti. Snažno se izražavaju u oblastima kao što su pisanje, govor, umetnost i dizajn. Lako se ističu u društvenim odnosima i postaju svetlo koje inspiriše ljude.\n\nMeđutim, neorganizovanost ili površnost može sprečiti da u potpunosti iskoriste svoj potencijal. Kada se kombinuje sa disciplinom, Broj Izražavanja 3 pojedinci postižu velike uspehe i postaju izvor sreće i inspiracije za svoju okolinu.",
+      "4": "Broj Izražavanja 4 pojedinci su poznati po energiji reda, stabilnosti i vrednog rada. Postavljaju čvrste temelje, ispunjavaju svoje odgovornosti i postižu trajne uspehe u dugoročnim projektima. Njihova okolina ih vidi kao pouzdane i disciplinovane ljude.\n\nMeđutim, previše krutost ili tvrdoglavost, otpor promenama može biti njihovi senovni aspekti. Kada steknu fleksibilnost, dodaju trajnu vrednost i sebi i drugima svojom jakom strukturirajućom energijom.",
+      "5": "Broj Izražavanja 5 pojedinci su predstavnici slobode, avanture i promene. Usmeravaju se sa velikom željom ka novim iskustvima, različitim kulturama i otkrićima. Brzo uče, prilagođavaju se različitim oblastima i dodaju vitalnost svojoj okolini.\n\nMeđutim, nestrpljivost ili nered može ih povući na slabo tlo. Kada balansiraju svoju želju za slobodom sa svešću odgovornosti, njihovi životi postaju inspirativno putovanje i za sebe i za druge.",
+      "6": "Broj Izražavanja 6 pojedinci nose energiju ljubavi, harmonije i odgovornosti. Osećaju jaku lojalnost prema svojim porodicama, društvu i okolini. Zahvaljujući svojoj pomagačkoj prirodi, estetskom razumevanju i želji da stvaraju lepotu, postaju pouzdane figure u svojoj okolini.\n\nMeđutim, mogu imati tendencije ka prekomernom samožrtvovanju ili preuzimanju tuđih problema. Kada zaštite svoje granice, postaju sila koja leči i svoje voljene i društvo.",
+      "7": "Broj Izražavanja 7 pojedinci imaju energiju znanja, istraživanja i duhovne dubine. Propituju smisao života, traže nevidljive istine i vode svojom intuicijom. Često su privučeni nauci, filozofiji ili duhovnim poljima.\n\nMeđutim, prekomerna introvertnost ili distanciran stav može stvoriti poteškoće u odnosima. Kada nauče da dele svoju unutrašnju mudrost sa drugima, postaju vredni vodiči koji osvetljavaju svoju okolinu.",
+      "8": "Broj Izražavanja 8 pojedinci žive sa energijom moći, uspeha i upravljanja. Imaju prirodne veštine u poslu, finansijskim oblastima i liderstvu. Zahvaljujući svojoj odlučnosti, imaju visok potencijal za postizanje velikih ciljeva.\n\nMeđutim, ambicija ili prekomerna želja za kontrolom mogu biti senovni aspekti. Kada balansiraju materijalni uspeh sa duhovnim vrednostima, ostavljaju velike tragove kao jaki i pravedni lideri.",
+      "9": "Broj Izražavanja 9 pojedinci se kreću sa idealizmom, saosećanjem i ljubavlju prema čovečanstvu. Ceniti služenje čovečanstvu, dodirivanje tuđih života i doprinos društvu kroz umetničke projekte. Poznati su kao pomagači i vizionari u svojoj okolini.\n\nMeđutim, prekomerno samožrtvovanje ili idealizam može ih istrošiti. Kada nauče da nude svoje saosećanje zadržavajući realnost, postaju humanitarni lideri koji ostavljaju trajne tragove u svetu.",
+      "11": "Broj Izražavanja 11 pojedinci nose vizionarsku, intuitivnu i inspirativnu energiju. Imaju visokofrekventnu svest i jaki su u osvetljavanju svoje okoline. Često se ističu u umetnosti, duhovnim poljima ili društvenom vođstvu.\n\nMeđutim, njihova intenzivna energija može stvoriti anksioznost, nemir ili neuravnoteženost. Kada se uravnoteže, postaju svetlo koje nudi inspiraciju i vođstvo svojoj okolini.",
+      "22": "Broj Izražavanja 22 pojedinci su poznati kao majstori graditelji. Imaju sposobnost da pretvore velike snove u konkretan uspeh. Zahvaljujući svojoj disciplinovanoj, vizionarskoj i praktičnoj prirodi, mogu potpisati velike projekte u društvu.\n\nMeđutim, ova velika energija može stvoriti pritisak odgovornosti. Kada se ne zadovolje malim ciljevima i ostvare svoje vizije, ostavljaju trajno nasleđe u svetu.",
+      "33": "Broj Izražavanja 33 pojedinci nose bezuslovnu ljubav, saosećanje i isceljujuću energiju. Oni su ljudi koji žive za dobro drugih, učitelji i vodiči. Postaju svetlo koje inspiriše, leči i vodi svoju okolinu.\n\nMeđutim, ova intenzivna energija može se pretvoriti u sagorevanje ili prekomerni osećaj odgovornosti. Kada ostanu uravnoteženi, postaju moćni vodiči koji donose trajnu ljubav i isceljenje društvu."
+    },
+    "personalityMeanings": {
+      "1": "Broj Ličnosti 1 pojedinci se doživljavaju kao odlučni, samouvereni i lideri duha spolja. Ljudi ih vide kao jake, samopouzdane i hrabre karaktere. Kada govore, zrače autoritetom i prirodno privlače pažnju u svojoj okolini.\n\nMeđutim, ova energija ponekad može biti doživljena kao autoritarna, arogantna ili previše sebična od strane drugih. Kada razviju mekši i deljeniji stav, postaju prirodni lideri koji inspirišu druge.",
+      "2": "Broj Ličnosti 2 pojedinci se spolja čine nežni, harmonični i osetljivi. Lako se povezuju sa drugima, zrače saosećajnom i razumevajućom energijom. U svojoj okolini obično predstavljaju toplu, pouzdanu i kooperativnu sliku.\n\nMeđutim, prekomerna potraga za harmonijom može dovesti do toga da ih drugi doživljavaju kao pasivne ili neodlučne. Kada jasno definišu svoje granice, imaju i nežan i jak stav.",
+      "3": "Broj Ličnosti 3 pojedinci se spolja čine energični, društveni i kreativni. Svojim veselim stavovima osvetljavaju svoju okolinu i dodaju radost svojoj okolini svojim duhovitim ličnostima. Ljudi ih poznaju kao jake komunikatore, zabavne i otvorene.\n\nMeđutim, ova energija ponekad može biti doživljena kao previše rasejana, površna ili nepažljiva. Kada se fokusiraju, postaju moćne figure koje donose radost i inspiraciju spoljašnjem svetu.",
+      "4": "Broj Ličnosti 4 pojedinci se spolja doživljavaju kao ozbiljni, disciplinovani i pouzdani. Ljudi ih poznaju kao čvrste, odlučne i vredne pojedince. U spoljašnjem svetu obično predstavljaju odgovornu, planiranu i organizovanu ličnost.\n\nMeđutim, ova energija ponekad može biti viđena kao kruta, tvrdoglava ili previše vezana za pravila. Kada postanu fleksibilniji i prilagodljiviji, postaju ličnosti koje su i pouzdane i sa kojima je lako komunicirati.",
+      "5": "Broj Ličnosti 5 pojedinci se spolja čine dinamični, slobodnog duha i energični. Nose inovativnu, pokretnu i avanturističku auru. Ljudi ih poznaju kao žive, otvorene za promene i pojedince koji vole otkrića.\n\nMeđutim, ova energija ponekad može biti doživljena kao neuravnotežena, nestrpljiva ili nepouzdana. Kada balansiraju svoju želju za slobodom sa svešću odgovornosti, postaju avanturistički duh koji inspiriše spoljašnji svet.",
+      "6": "Broj Ličnosti 6 pojedinci predstavljaju nežnu, elegantnu i podržavajuću sliku spolja. Poznati su kao ljubavni, visokog estetskog razumevanja i harmonični pojedinci. Ljudi ih doživljavaju kao pouzdane, saosećajne i uravnotežene figure.\n\nMeđutim, ova energija ponekad može se reflektovati kao previše mešajuća, samožrtvujuća ili kritična. Kada zaštite svoje granice, postaju jake ličnosti koje donose mir i poverenje drugima.",
+      "7": "Broj Ličnosti 7 pojedinci se spolja doživljavaju kao misteriozni, zamišljeni i duboki. Nose tihu, intuitivnu i intelektualnu auru. Ljudi ih vide kao mudre, istraživačke i duhovno jake pojedince.\n\nMeđutim, ova energija ponekad može biti doživljena kao distancirana, hladna ili introvertna. Kada otvore svoja srca, postaju ličnosti koje inspirišu svoju okolinu svojom mudrošću.",
+      "8": "Broj Ličnosti 8 pojedinci se spolja čine jaki, autoritativni i karizmatični. Predstavljaju impresivnu poziciju u poslu ili zajednicama. Ljudi ih doživljavaju kao disciplinovane, odlučne i moćne figure.\n\nMeđutim, ova energija ponekad može stvoriti previše opresivnu, ambicioznu ili distanciranu sliku. Kada balansiraju moć sa pravdom, postaju jaki lideri koji donose poverenje i inspiraciju svojoj okolini.",
+      "9": "Broj Ličnosti 9 pojedinci se spolja čine saosećajni, umetnički i idealistički. Nose energiju koja je spremna da pomaže ljudima, inspirišuća i osetljiva. U svojoj okolini obično su poznati kao humani, umetnički i vizionarski likovi.\n\nMeđutim, ova energija ponekad može biti doživljena kao previše sanjarska, emocionalna ili krhka. Kada kombinuju realnost sa idealizmom, postaju isceljujuće i inspirišuće ličnosti u spoljašnjem svetu.",
+      "11": "Broj Ličnosti 11 pojedinci se spolja čine karizmatični, intuitivni i inspirišući. Nose visoku energetsku frekvenciju i zrače svetlošću svojoj okolini. Ljudi ih doživljavaju sa vizionarskom, duhovnom i drugačijom aurom.\n\nMeđutim, ova energija ponekad može biti viđena kao teška za razumevanje, neuravnotežena ili previše osetljiva od strane drugih. Kada su uravnoteženi, nude jaku inspiraciju i vođstvo svojoj okolini.",
+      "22": "Broj Ličnosti 22 pojedinci se spolja doživljavaju kao vizionarski, odlučni i jaki graditelji. Nose disciplinovanu, praktičnu i impresivnu auru unutar zajednice. Ljudi ih vide kao pojedince koji grade čvrste projekte, pouzdani i imaju viziju.\n\nMeđutim, ova energija ponekad može biti doživljena kao teška, distancirana ili previše kontrolišuća od strane drugih. Kada su uravnoteženi, postaju moćne figure koje stvaraju trajne vrednosti u društvu.",
+      "33": "Broj Ličnosti 33 pojedinci predstavljaju saosećajnu, nastavnu i isceljujuću sliku spolja. Nose auru bezuslovne ljubavi, razumevanja i poverenja svojoj okolini. Ljudi ih vide kao vodiče, podršku i izvore mudrosti.\n\nMeđutim, ova energija ponekad može stvoriti sliku prekomernog samožrtvovanja, zanemarivanja sebe ili preuzimanja prekomernih odgovornosti. Kada ostanu uravnoteženi, postaju jake ličnosti koje i donose isceljenje svojoj okolini i inspirišu."
+    },
+    "maturityMeanings": {
+      "1": "Broj Zrelosti 1 pojedinci osećaju teme nezavisnosti, liderstva i crtanja sopstvenog puta jače u drugoj polovini života. Tokom ovog perioda, pronalaze velike prilike da izraze svoj potencijal, naprave nove početke i vode. Njihova unutrašnja snaga ih čini kapetanima sopstvenih života.\n\nMeđutim, ova energija ponekad može da se reflektuje kao samoća, autoritarizam ili nestrpljivost. Kada nauče da sarađuju sa drugima i balansiraju svoju individualnost sa harmonijom, postaju vizionarski lideri koji inspirišu društvo.",
+      "2": "Broj Zrelosti 2 pojedinci doživljavaju teme harmonije, ravnoteže i saradnje u svojim naprednim godinama. Tokom ovog perioda, diplomatija, partnerstva i emocionalne veze dolaze u prvi plan. Njihova srca se okreću ka stvaranju mira i razumevanja.\n\nMeđutim, prekomerna osetljivost ili zavisnost od drugih može biti senovna strana ovog procesa. Kada prepoznaju sopstvene vrednosti i zaštite svoje granice, postaju vodiči koji donose mir i ljubav svojoj okolini.",
+      "3": "Za Broj Zrelosti 3 pojedince, druga polovina života je period kreativnosti, izražavanja i inspiracije. Pojavljuje se želja da se više istaknu u umetnosti, pisanju, komunikaciji ili društvenim poljima. Ovi pojedinci biraju da žive svoje živote radosnije i energičnije.\n\nMeđutim, površnost ili neorganizovanost može biti senovna strana ovog procesa. Kada razviju disciplinu, postaju inspirativni pojedinci koji dodiruju srca drugih svojom snagom izražavanja.",
+      "4": "Broj Zrelosti 4 pojedinci doživljavaju teme discipline, reda i gradnje strukture u svojim naprednim godinama. Tokom ovog perioda, stvaranje stabilnosti, gradnja trajnih projekata i dokazivanje njihove pouzdanosti dolaze u prvi plan. Postižu trajne uspehe radeći strpljivo.\n\nMeđutim, prekomerna krutost, otpor promenama ili tendencije prekomernog kontrole mogu biti senovni aspekti. Kada razviju fleksibilnost, grade jaku strukturu koja daje poverenje i sebi i drugima.",
+      "5": "Za Broj Zrelosti 5 pojedince, druga polovina života je puna slobode, promena i otkrića. Tokom ovog perioda, nove kulture, nova iskustva i avanture ih čekaju. Zahvaljujući svojoj fleksibilnoj prirodi, lako prihvataju transformacije života.\n\nMeđutim, nestrpljivost ili nestabilnost može biti senovna strana ovog procesa. Kada balansiraju slobodu sa odgovornošću, njihovi životi postaju inspirativno putovanje i za sebe i za druge.",
+      "6": "Broj Zrelosti 6 pojedinci doživljavaju teme porodice, ljubavi i odgovornosti intenzivnije u drugoj polovini svojih života. Za njih, ovaj period je o provođenju više vremena sa voljenima, služenju društvu i stvaranju lepote. Estetika, harmonija i saosećanje su ključevi ovog perioda.\n\nMeđutim, prekomerno samožrtvovanje ili preuzimanje tuđih problema može ih umoriti. Kada nauče da takođe razmotre sopstvene potrebe, postaju sila koja leči i sebe i svoju okolinu.",
+      "7": "Za Broj Zrelosti 7 pojedince, napredne godine prolaze sa duhovnom dubinom, istraživanjem i traganjem za mudrošću. Tokom ovog perioda, više introspekcije, učenja i duhovnih otkrića dolazi u prvi plan. Samoća postaje ne teret već izvor mudrosti za njih.\n\nMeđutim, prekomerna introvertnost ili tendencije distanciranja mogu biti senovni aspekti. Kada podele svoju mudrost sa drugima, postaju vodiči koji osvetljavaju svoju okolinu.",
+      "8": "Broj Zrelosti 8 pojedinci se suočavaju sa temama moći, upravljanja i materijalnog uspeha u drugoj polovini svojih života. Tokom ovog perioda, mogu dostići uticajne pozicije u poslu ili zajednicama. Zahvaljujući svojoj odlučnosti, imaju potencijal da stvore obilje i prosperitet.\n\nMeđutim, prekomerna ambicija, želja za kontrolom ili autoritarizam može biti senovna strana ovog procesa. Kada balansiraju materijalni uspeh sa duhovnošću, postaju i jaki i pravedni lideri.",
+      "9": "Za Broj Zrelosti 9 pojedince, napredne godine su oblikovane temama saosećanja, idealizma i služenja čovečanstvu. Ceniti dodirivanje tuđih života, ostavljanje traga u svetu i doprinos kroz umetničke/humanitarne projekte.\n\nMeđutim, prekomerni idealizam ili samožrtvovanje mogu biti senovni aspekti. Kada kombinuju realnost sa svojim idealizmom, postaju inspirativne i isceljujuće figure u društvu.",
+      "11": "Broj Zrelosti 11 pojedinci osećaju teme intuicije, vizije i duhovnog vođstva intenzivnije u drugoj polovini svojih života. Ovaj period je pun inspirativnih projekata i prilika da osvetljavaju druge za njih.\n\nMeđutim, intenzivna energija može stvoriti anksioznost ili neuravnoteženost. Kada se uravnoteže, postaju moćne figure koje vode društvo i nude visoku viziju.",
+      "22": "Za Broj Zrelosti 22 pojedince, napredne godine postaju period stvaranja velikih projekata i trajnih nasleđa. Imaju potencijal da pretvore svoje snove u stvarnost i pruže konkretne doprinose društvu. Njihova disciplinovana i vizionarska priroda postaje još jača tokom ovog perioda.\n\nMeđutim, težak pritisak odgovornosti može biti senovni aspekt. Kada se ne zadovolje malim ciljevima, postaju nezaboravne figure gradeći trajna dela u svetu.",
+      "33": "Broj Zrelosti 33 pojedinci osećaju energiju bezuslovne ljubavi, saosećanja i isceljenja intenzivno u drugoj polovini svojih života. Ovaj period je pun prilika da inspirišu druge, uče i leče društvo.\n\nMeđutim, prekomerna odgovornost ili sagorevanje mogu biti senovni aspekti. Kada ostanu uravnoteženi, postaju moćni iscelitelji koji osvetljavaju i svoje voljene i društvo."
+    },
+    "pinnaclesMeanings": {
+      "1": "Vrhunac 1 pokazuje da se tema nezavisnosti i liderstva snažno ističe u životu osobe. Tokom ovog perioda, osoba pravi nove početke i preduzima hrabre korake da nacrta svoj put. Iskra unutar stvara prilike za individualna dostignuća i preduzetništvo.\n\nMeđutim, postoji rizik da se ponaša previše sebično ili autoritarno tokom ovog perioda. Učenje saradnje sa drugima, proširivanje vizije i balansiranje nezavisnosti sa harmonijom iznosi najbolji potencijal ovog vrhunca.",
+      "2": "Vrhunac 2 pokazuje da se prilike za harmoniju, partnerstva i saradnju povećavaju u životu osobe. Ovaj period je idealan za stvaranje dubokih veza u odnosima, osiguravanje mira i razvijanje diplomatskih veština.\n\nMeđutim, tokom ovog procesa mogu se javiti prekomerna osetljivost, neodlučnost ili tendencije zavisnosti. Kada se održavaju zdrave granice, osoba postiže velike uspehe sa drugima i postaje sila koja donosi mir svojoj okolini.",
+      "3": "Vrhunac 3 pokazuje da se kreativnost, izražavanje i društvena dostignuća ističu u životu osobe. Tokom ovog perioda, osoba se može istaknuti u umetnosti, komunikaciji, pisanju ili na sceni. To je period visoke energije, radosti i inspiracije.\n\nMeđutim, tokom ovog procesa površnost ili neorganizovanost mogu biti opstruktivni. Kada se fokusira, kreativnost se transformiše u i ličnu i društvenu svetlost.",
+      "4": "Vrhunac 4 pokazuje da se tema discipline, rada i reda ističe u životu osobe. Ovaj period može biti vreme za postavljanje čvrstih temelja, stvaranje trajnih projekata i preuzimanje odgovornosti.\n\nMeđutim, kruta pravila ili otpor promenama mogu biti senovna strana ovog procesa. Kada se razvije fleksibilnost, Vrhunac 4 postaje temelj velike stabilnosti i poverenja.",
+      "5": "Vrhunac 5 pokazuje da se energija slobode, promene i otkrića intenzivira u životu osobe. Ovaj period nudi jake prilike za sticanje novih iskustava, putovanje ili pravljenje radikalnih transformacija.\n\nMeđutim, nestrpljivost i nestabilnost su rizici ovog perioda. Balansiranje želje za slobodom sa svesnošću odgovornosti u potpunosti otkriva potencijal Vrhunca 5.",
+      "6": "Vrhunac 6 pokazuje da se tema porodice, odgovornosti i ljubavi ističe u životu osobe. Ovaj period može biti vreme za harmoniju u odnosima, stvaranje estetike i služenje društvu.\n\nMeđutim, prekomerno samožrtvovanje ili tendencija preuzimanja tuđih problema može biti iscrpljujuća. Održavanje ravnoteže razmatranjem sopstvenih potreba otkriva svetlost ovog perioda.",
+      "7": "Vrhunac 7 pokazuje da se tema duhovnosti, istraživanja i mudrosti jača u životu osobe. Tokom ovog perioda, osoba se više okreće svom unutrašnjem svetu, prati svoje intuicije i propituje smisao života.\n\nMeđutim, prekomerna introvertnost ili osećaji samoće mogu biti senovni aspekti. Deljenje mudrosti sa drugima transformiše ovaj vrhunac u svetao period.",
+      "8": "Vrhunac 8 pokazuje da se tema moći, uspeha i materijalnog prosperiteta ističe u životu osobe. Ovaj period može doneti napredovanje u karijeri, prilike za liderstvo i finansijski uspeh.\n\nMeđutim, prekomerna ambicija, želja za kontrolom ili autoritarni stavovi mogu biti senovna strana ovog procesa. Kada se balansira sa duhovnošću, Vrhunac 8 otvara vrata trajnim dostignućima.",
+      "9": "Vrhunac 9 intenzivno otkriva temu saosećanja, služenja i idealizma u životu osobe. Ovaj period može biti vreme za pomaganje drugima, bavljenje umetničkim radom i doprinos društvu.\n\nMeđutim, prekomerno samožrtvovanje ili idealizam mogu biti senovni aspekti. Kada se kombinuje sa realnošću, Vrhunac 9 donosi projekte koji ostavljaju trajne tragove u svetu.",
+      "11": "Vrhunac 11 otkriva temu inspiracije, intuicije i vizije u životu osobe. Ovaj period je vreme kada se povećava duhovna svest i ističu se inspirativni projekti.\n\nMeđutim, intenzivna energija može stvoriti anksioznost i nemir. Kada je uravnotežena, Vrhunac 11 se transformiše u period vođstva koji osvetljava okolinu.",
+      "22": "Vrhunac 22 donosi velike projekte, trajna nasleđa i društvene doprinose u prvi plan u životu osobe. Ovaj period je proces gde se vizije pretvaraju u stvarnost i postižu konkretna dostignuća.\n\nMeđutim, pritisak odgovornosti ili želja za kontrolom mogu biti senovni aspekti. Kada se ova energija koristi uravnoteženo, osoba ostavlja nezaboravne tragove u svetu.",
+      "33": "Vrhunac 33 pokazuje da se teme bezuslovne ljubavi, saosećanja i služenja intenziviraju u životu osobe. Ovaj period je jaka prilika za vođstvo društva, donošenje isceljenja i sjaj kroz podučavanje.\n\nMeđutim, mogu postojati rizici prekomerne odgovornosti ili sagorevanja. Kada je uravnotežen, Vrhunac 33 nudi moćan period isceljenja koji inspiriše društvo."
+    },
+    "challengesMeanings": {
+      "1": "Izazov 1 pokazuje da osoba treba da nauči da razvija svoj osećaj sebe. Tokom ovog procesa, lekcije kao što su nedostatak samopouzdanja, neodlučnost ili strah od nezavisnosti mogu doći u prvi plan.\n\nKada nauče da prisvoje svoj identitet i hrabro ga izraze, osoba pronalazi svoju unutrašnju snagu.",
+      "2": "Izazov 2 pokazuje da osoba treba da nauči da uspostavi ravnotežu i harmoniju u odnosima. Tokom ovog procesa, mogu se susresti sa lekcijama prekomerne osetljivosti, zavisnosti ili neodlučnosti.\n\nKada znaju sopstvenu vrednost i zaštite svoje granice, grade harmonične i ljubavne odnose.",
+      "3": "Izazov 3 pokazuje da osoba treba da nauči da razvija svoju slobodu izražavanja. Tokom ovog procesa, lekcije stida, skrivanja sebe ili površnosti mogu doći u prvi plan.\n\nKada predstave svoju kreativnost sa disciplinom, osoba sija na inspirativan način.",
+      "4": "Izazov 4 pokazuje da osoba treba da nauči disciplinu, strpljivost i red. Tokom ovog procesa, mogu se susresti sa lekcijama neorganizovanosti, lenjosti ili nestabilnosti.\n\nKada razviju marljivost i odgovornost, grade jak temelj.",
+      "5": "Izazov 5 pokazuje da osoba treba da nauči da balansira slobodu sa odgovornošću. Tokom ovog procesa, prekomerna potraga za slobodom, nestrpljivost ili strah od vezanosti mogu doći u prvi plan.\n\nKada svesno koriste svoju slobodu, njihov život postaje inspirativno putovanje.",
+      "6": "Izazov 6 pokazuje da osoba treba da nauči ravnotežu odgovornosti i ljubavi u odnosima. Tokom ovog procesa, lekcije prekomernog samožrtvovanja, mešanja ili kritičnosti mogu doći u prvi plan.\n\nKada razmotre sopstvene potrebe, postaju pravi izvor isceljenja i harmonije.",
+      "7": "Izazov 7 pokazuje da osoba treba da razvije svoju unutrašnju sigurnost i veru. Tokom ovog procesa, lekcije samoće, skepticizma ili odvojenosti mogu doći u prvi plan.\n\nKada nauče da veruju svojim intuicijama, osvetljavaju svoju okolinu svojom mudrošću.",
+      "8": "Izazov 8 pokazuje da osoba treba da nauči svoj odnos sa moći, autoritetom i novcem. Tokom ovog procesa, mogu se susresti sa lekcijama ambicije, kontrole ili materijalne zavisnosti.\n\nKada koriste moć sa pravdom, postaju pravi lider.",
+      "9": "Izazov 9 pokazuje da osoba treba da nauči da se odrekne i oprosti. Tokom ovog procesa, lekcije razočaranja, prekomernog samožrtvovanja ili držanja za prošlost mogu doći u prvi plan.\n\nKada nauče da se odreknu, napreduju na mudriji i slobodniji način."
+    },
+    "personalYearMeanings": {
+      "1": "Lična godina 1 je vreme novih početaka, sejanja semena i početka novog ciklusa života. Ove godine, osoba može hrabro da kroči u nove projekte, otkrije svoju individualnu snagu i iskoristi prilike da nacrta svoj put. Ovaj period je jak u pogledu liderstva, preduzetništva i individualnog izražavanja.\n\nMeđutim, nestrpljivost ili samoća mogu biti senovni aspekti ove godine. Kada se preduzimaju spori i svesni koraci, Lična godina 1 omogućava osobi da postavi čvrste temelje koji će oblikovati njenu budućnost.",
+      "2": "Lična godina 2 je poznata kao vreme strpljivosti, saradnje i harmonije. Ove godine, odnosi, partnerstva i emocionalne veze dolaze u prvi plan. Osoba prolazi kroz odgovarajući period da primi podršku i deluje zajedno sa drugima. Diplomatija, razumevanje i saosećanje se ističu.\n\nMeđutim, prekomerna osetljivost ili neodlučnost mogu biti senovni aspekti ove godine. Kada zaštite svoje granice i nastave sa strpljivošću, Lična godina 2 donosi trajnu harmoniju u odnosima.",
+      "3": "Lična godina 3 je period kada se kreativnost, izražavanje i radost ističu. Ove godine, osoba može da sija u društvenim odnosima i istakne se u umetnosti, pisanju ili komunikaciji. Postoji tok energije pun radosti, zabave i inspiracije.\n\nMeđutim, površnost ili neorganizovanost mogu biti senovni aspekti ove godine. Kada se kombinuje sa fokusom i disciplinom, ovaj period se može transformisati u kreativne projekte koji će doneti trajne uspehe u životu osobe.",
+      "4": "Lična godina 4 je godina rada, discipline i gradnje strukture. Tokom ovog perioda, osoba radi strpljivo, deluje planski i postavlja trajne temelje. Želja za stvaranjem stabilnosti i osiguravanjem bezbednosti je u prvom planu.\n\nMeđutim, prekomerna krutost ili otpor promenama mogu biti senovni aspekti ove godine. Kada se radi sa fleksibilnošću, Lična godina 4 formira temelje velikih dostignuća u budućnosti.",
+      "5": "Lična godina 5 je godina slobode, promene i otkrića. Tokom ovog perioda, osoba se otvara za nova iskustva, upoznaje različite ljude i dodaje uzbuđenje u svoj život. Putovanje, inovacija i radikalne transformacije su ključevi ove godine.\n\nMeđutim, nestrpljivost, nestabilnost ili strah od vezanosti mogu biti senovni aspekti ove godine. Kada se sloboda balansira sa odgovornošću, Lična godina 5 otvara vrata velikim prilikama.",
+      "6": "Lična godina 6 je period kada se teme porodice, odgovornosti i ljubavi ističu. Ove godine, osoba provodi više vremena sa svojim voljenima, njena želja da služi društvu se povećava, a želja za stvaranjem estetike se jača. Harmonija i saosećanje su ključevi ove godine.\n\nMeđutim, prekomerno samožrtvovanje ili tendencija preuzimanja tuđih problema mogu biti iscrpljujući. Kada se održava ravnoteža razmatranjem sopstvenih potreba, Lična godina 6 donosi i mir i harmoniju.",
+      "7": "Lična godina 7 je period unutrašnje dubine, istraživanja i duhovnog otkrića. Ove godine, osoba je u idealnom vremenu da se okrene unutra, sluša svoje intuicije i propituje smisao života. Meditacija, obrazovanje i istraživanje su podržani tokom ovog perioda.\n\nMeđutim, prekomerna samoća ili skepticizam mogu biti senovni aspekti ove godine. Kada se unutrašnja mudrost deli sa drugima, Lična godina 7 se transformiše u prosvetljujući period.",
+      "8": "Lična godina 8 je period kada se energija moći, uspeha i obilja ističe. Ove godine, osoba može da doživi napredovanje u karijeri, postigne finansijski uspeh i iskoristi prilike za liderstvo. Odlučnost i disciplina su temelj ovog perioda.\n\nMeđutim, prekomerna ambicija ili želja za kontrolom mogu biti senovni aspekti ove godine. Kada se materijalni uspeh balansira sa duhovnim vrednostima, Lična godina 8 donosi trajni prosperitet.",
+      "9": "Lična godina 9 je period završetka i odricanja. Ove godine, osoba može da reši veze iz prošlosti, napusti stare navike i napravi mesta za novi ciklus u svom životu. Saosećanje, idealizam i služenje čovečanstvu su ključevi ovog perioda.\n\nMeđutim, prekomerna emocionalnost ili zaglavljivanje u prošlosti mogu biti senovni aspekti ove godine. Kada nauče da se odreknu, Lična godina 9 donosi veliku transformaciju i unutrašnju slobodu."
+    },
+    "compatibilityMeanings": {
+      "1": "Kada jedna ili obe strane u odnosu imaju broj 1, dominira jaka energija liderstva i nezavisnosti. Ova veza sadrži strast, dinamiku i preduzetništvo. Dodaje vitalnost odnosu i par se može međusobno podržavati u novim počecima.\n\nMeđutim, konflikti mogu nastati kada su obe strane previše kontrolišuće ili tvrdoglave. Uzajamno poštovanje i saradnja su neophodni za balansiranje ove energije; tako se odnos transformiše u i jaku i inspirativnu putanju.",
+      "2": "Broj 2 u odnosu donosi harmoniju, ravnotežu i osetljivost. Emocionalna veza između para postaje jaka; strane su sklone da se međusobno razumeju, podržavaju i deluju zajedno. Ova energija povećava romantiku i intimnost.\n\nMeđutim, prekomerna osetljivost ili zavisnost mogu naštetiti odnosu. Kada strane zaštite svoje granice, energija 2 stvara ljubavnu i trajnu zajednicu.",
+      "3": "Broj 3 u odnosu donosi radost, komunikaciju i kreativnost. Par uspeva da se zabavlja zajedno, društveno se povezuje i čini život prijatnim. U njihovoj vezi postoji duhovita, pozitivna i umetnička energija.\n\nMeđutim, površnost ili prekomerna neorganizovanost mogu naštetiti odnosu. Kada se fokusiraju, energija 3 dodaje inspiraciju i sreću odnosu.",
+      "4": "Broj 4 u odnosu donosi stabilnost, poverenje i odgovornost. Par može zajedno da izgradi čvrst temelj, pravi dugoročne planove i uspostavlja siguran život. Ova energija jača posvećenost i izdržljivost.\n\nMeđutim, prekomerna krutost ili tvrdoglavost mogu stvoriti probleme. Kada se podržava fleksibilnošću, energija 4 donosi trajno poverenje i lojalnost odnosu.",
+      "5": "Broj 5 u odnosu donosi slobodu, uzbuđenje i avanturu. Par zajedno doživljava nova iskustva, putuje i dodaje boju svojim životima. Dinamika i pokret se ističu u odnosu.\n\nMeđutim, prekomerna želja za slobodom može dovesti do problema vezanosti. Kada se postigne ravnoteža sa svesnošću odgovornosti, energija 5 nosi inspiraciju i strast odnosu.",
+      "6": "Broj 6 u odnosu donosi ljubav, harmoniju i porodičnu energiju. Između para se formira saosećajna, odgovorna i uravnotežena veza. Ova energija povećava poverenje i posvećenost, jačajući želju za osnivanje porodice.\n\nMeđutim, prekomerno samožrtvovanje ili mešanje mogu stvoriti probleme. Sa ravnotežom koja takođe razmatra sopstvene potrebe, energija 6 nudi saosećajan i trajan odnos.",
+      "7": "Broj 7 u odnosu donosi dubinu, duhovnost i mudrost. Između para se formira intuitivna i intelektualna veza. Ova energija podržava intimne razgovore, unutrašnja otkrića i duhovnu bliskost u odnosu.\n\nMeđutim, prekomerna introvertnost ili distanca mogu stvoriti probleme. Kada se postigne emocionalna otvorenost, energija 7 stvara duhovno partnerstvo.",
+      "8": "Broj 8 u odnosu donosi energiju moći, uspeha i odlučnosti. Par može postati jaka ekipa za postizanje svojih ciljeva zajedno. Finansijski uspeh i društveni status mogu se istaknuti u ovoj vezi.\n\nMeđutim, prekomerna ambicija ili želja za kontrolom mogu dovesti do konflikata. Kada balansiraju moć sa pravdom, energija 8 stvara trajni uspeh i prosperitet u odnosu.",
+      "9": "Broj 9 u odnosu donosi energiju saosećanja, idealizma i samožrtvovanja. Par može želeti da zajedno radi korisne poslove za čovečanstvo ili učestvuje u umetničkim projektima. Ova energija povećava romantiku i osetljivost.\n\nMeđutim, prekomerno samožrtvovanje ili idealizam mogu biti problematični. Kada se kombinuje sa realnošću, energija 9 stvara ljubavan i inspirativan odnos.",
+      "11": "Broj 11 u odnosu donosi visoku intuiciju, viziju i duhovnu vezu. Između para može postojati duboko razumevanje, telepatski osećaj i jaka duhovna veza. Ova energija transformiše ljubav u duhovno iskustvo.\n\nMeđutim, intenzivna energija može stvoriti anksioznost ili neuravnoteženost. Kada su uravnoteženi, energija 11 transformiše ljubav u inspirativnu svetlost.",
+      "22": "Broj 22 u odnosu nosi energiju velikih vizija, trajnih projekata i jake saradnje. Par može zajedno da gradi trajne strukture u svojim životima, jačajući se i materijalno i duhovno.\n\nMeđutim, teška odgovornost ili prekomerna želja za kontrolom mogu biti problematični. Kada su uravnoteženi, energija 22 transformiše odnos u trajnu i jaku saradnju.",
+      "33": "Broj 33 u odnosu nosi energiju bezuslovne ljubavi, saosećanja i isceljenja. Par se međusobno približava sa dubokom posvećenošću i samožrtvovanjem. Ova veza može stvoriti nastavni, isceljujući i inspirativan odnos.\n\nMeđutim, postoji rizik prekomernog samožrtvovanja ili sagorevanja. Kada se održavaju zdrave granice, energija 33 transformiše ljubav u transformativno isceljenje."
+    }
+  },
+  "dashboard": {
+    "title": "Kontrolna tabla",
+    "welcome": "Dobrodošli",
+    "userInfo": "Informacije o korisniku",
+    "quickActions": "Brze akcije",
+    "quickAccess": "Brzi pristup",
+    "recentReadings": "Nedavna čitanja",
+    "recentTransactions": "Nedavne transakcije",
+    "creditBalance": "Stanje kredita",
+    "creditPackages": "Paketi kredita",
+    "accountSettings": "Podešavanja naloga",
+    "creditHistory": "Istorija kredita",
+    "readingHistory": "Istorija čitanja",
+    "statistics": "Statistike",
+    "totalReadings": "Ukupno čitanja",
+    "membershipDuration": "Trajanje članstva",
+    "userLevel": "Nivo korisnika",
+    "admin": "Administrator",
+    "user": "Korisnik",
+    "beginner": "Početnik",
+    "intermediate": "Srednji",
+    "expert": "Ekspert",
+    "readings": "Čitanja",
+    "readingsPage": {
+      "title": "Moja Čitanja",
+      "subtitle": "Sva vaša mistična iskustva",
+      "totalReadings": "Ukupno Čitanja",
+      "loveReadings": "Ljubavna Čitanja",
+      "generalReadings": "Opšta Čitanja",
+      "totalCredits": "Ukupno Kredita",
+      "allTypes": "Svi Tipovi",
+      "loveType": "Ljubavno Čitanje",
+      "generalType": "Opšte Čitanje",
+      "careerType": "Karijerno Čitanje",
+      "numerologyType": "Numerologija",
+      "allTime": "Sve Vreme",
+      "lastWeek": "Prošla Nedelja",
+      "lastMonth": "Prošli Mesec",
+      "lastYear": "Prošla Godina",
+      "clearFilters": "Obriši Filtere",
+      "noReadings": "Još Nema Čitanja",
+      "noReadingsDesc": "Spremni za svoje prvo mistično iskustvo?",
+      "startFirstReading": "Započni Prvo Čitanje",
+      "loadMore": "Učitaj Više",
+      "loading": "Učitavanje...",
+      "searchPlaceholder": "Pretraži čitanja...",
+      "view": "Pogledaj",
+      "download": "Preuzmi",
+      "credits": "kredita",
+      "detailModal": {
+        "readingDate": "Datum Čitanja",
+        "creditCost": "Cena Kredita",
+        "status": "Status",
+        "statusCompleted": "Završeno",
+        "statusReviewed": "Pregledano",
+        "statusPending": "Na Čekanju",
+        "yourQuestion": "Vaše Pitanje",
+        "drawnCards": "Izvučene Karte",
+        "interpretation": "Interpretacija",
+        "adminNotes": "Admin Napomene",
+        "close": "Zatvori",
+        "download": "Preuzmi"
+      }
+    },
+    "statistics": "Statistike",
+    "settings": "Podešavanja",
+    "profile": "Profil",
+    "signOut": "Odjavite se",
+    "editProfile": "Uredi profil",
+    "saveChanges": "Sačuvaj izmene",
+    "cancel": "Otkaži",
+    "displayName": "Ime za prikaz",
+    "email": "E-pošta",
+    "userId": "ID korisnika",
+    "role": "Uloga",
+    "memberSince": "Član od",
+    "creditAlert": "Nisko stanje kredita",
+    "creditAlertMessage": "Kupite kredite za više čitanja",
+    "buyCredits": "Kupite kredite",
+    "last30Days": "Poslednjih 30 dana",
+    "completedReadings": "čitanja završeno"
+  },
+  "tarotPage": {
+    "title": "Otkrijte Svoju Sudbinu",
+    "subtitle": "Otkrijte Svoju Sudbinu",
+    "lastReading": "Poslednje Čitanje",
+    "cardsDrawn": "karta izvučeno",
+    "loveSpread": {
+      "name": "Ljubavno Čitanje",
+      "description": "Specijalno 4-kartno čitanje za veze i emocionalne veze",
+      "summary": "Sažetak Ljubavnog Života",
+      "summaryText": "Ovo čitanje pokazuje dinamiku vaše veze sa osobom koju predstavlja karta {card1}. Nakon fizičke ({card2}) i emocionalne ({card3}) veze između vas, dugoročni potencijal vaše veze osvetljava karta {card4}.",
+      "detailedReading": {
+        "title": "💕 Ljubavno Tarot Čitanje - Detaljno Lično Čitanje 💕",
+        "concern": "💭 Vaša Zabrinutost",
+        "understanding": "🎯 Ono Što Želite Da Razumete",
+        "emotional": "💫 Vaše Emocionalno Stanje",
+        "generalMessage": "OPŠTA PORUKA ZA VAŠE LJUBAVNO PUTOVANJE",
+        "message": "Ove karte pokazuju sledeće u vašem ljubavnom putovanju: Nalazite se na važnoj prekretnici u dinamici vaše veze.\n\nKarta {card1} odražava energiju osobe koja vas zanima, dok {card2} pokazuje fizičku i seksualnu privlačnost između vas.\n\nKarta {card3} otkriva vašu emocionalnu vezu, a {card4} otkriva dugoročni potencijal vaše veze.",
+        "guideMessage": "Poruka vašeg ljubavnog vodiča: \"Najdublje veze se grade kroz međusobno razumevanje i otvorenu komunikaciju. Slušajte svoje srce.\"",
+        "dateMessage": "Ovo čitanje je posebno pripremljeno za vas {date}."
+      }
+    },
+    "positions": {
+      "personOfInterest": "Osoba od Interesa",
+      "physicalConnection": "Fizička/Seksualna Veza", 
+      "emotionalConnection": "Emocionalna/Duhovna Veza",
+      "longTermOutcome": "Dugoročni Ishod"
+    },
+    "positionDescriptions": {
+      "personOfInterest": "Osoba o kojoj pitate",
+      "physicalConnection": "Vaša fizička i seksualna veza",
+      "emotionalConnection": "Vaša emocionalna i duhovna veza", 
+      "longTermOutcome": "Dugoročni ishod veze"
+    }
+  },
+  "seo": {
+    "title": "Tarot čitanje - Otkrijte svoju sudbinu",
+    "description": "Profesionalna tarot usluga. Dobijte vodič za ljubav, karijeru, zdravlje i više.",
+    "keywords": "tarot, čitanje, sudbina, ljubav, karijera, zdravlje, vodič, karte",
+    "ogTitle": "Tarot čitanje - Otkrijte svoju sudbinu",
+    "ogDescription": "Otkrijte svoju sudbinu sa profesionalnom tarot uslugom.",
+    "ogImage": "/images/og-image.jpg"
+  },
+  "auth": {
+    "page": {
+      "mysticalEntry": "Uđite u Mistični Svet",
+      "journeyStart": "Počnite Vaše Putovanje",
+      "emailPlaceholder": "Vaša email adresa",
+      "passwordPlaceholder": "Vaša lozinka",
+      "confirmPasswordPlaceholder": "Potvrdite vašu lozinku",
+      "fullNamePlaceholder": "Ime i Prezime",
+      "birthDatePlaceholder": "Datum Rođenja",
+      "genderPlaceholder": "Izaberite Pol",
+      "genderMale": "Muški",
+      "genderFemale": "Ženski",
+      "genderOther": "Drugo",
+      "genderPreferNotToSay": "Ne želim da kažem",
+      "processing": "⏳ Obrađuje se...",
+      "signIn": "🔮 Prijavi se",
+      "signUp": "✨ Registruj se",
+      "successLogin": "Uspešna prijava! Preusmerava se...",
+      "successRegister": "Uspešna registracija! Molimo proverite vaš email.",
+      "errorOccurred": "Došlo je do greške",
+      "noAccount": "Nemate nalog? Registrujte se",
+      "hasAccount": "Već imate nalog? Prijavite se",
+      "emailRequired": "Email adresa je obavezna",
+      "emailInvalid": "Molimo unesite važeću email adresu",
+      "passwordRequired": "Lozinka je obavezna",
+      "passwordMinLength": "Lozinka mora imati najmanje 6 karaktera",
+      "confirmPasswordRequired": "Potvrda lozinke je obavezna",
+      "passwordsNotMatch": "Lozinke se ne poklapaju",
+      "fullNameRequired": "Ime i prezime je obavezno",
+      "fullNameMinLength": "Ime i prezime mora imati najmanje 2 karaktera",
+      "birthDateRequired": "Datum rođenja je obavezan",
+      "birthDateMinAge": "Korisnici mlađi od 13 godina ne mogu da se registruju",
+      "birthDateMaxAge": "Molimo unesite važeći datum rođenja",
+      "genderRequired": "Izbor pola je obavezan",
+      "invalidCredentials": "Nevažeći email ili lozinka",
+      "userAlreadyExists": "Ova email adresa je već registrovana"
+    },
+    "signIn": "Prijavi se",
+    "signOut": "Odjavi se"
+  },
+  "reading": {
+    "types": {
+      "simple": "Jednostavno Čitanje",
+      "detailed": "Audio Čitanje", 
+      "written": "Pisano Čitanje",
+      "simpleShort": "Jednostavno",
+      "detailedShort": "Audio",
+      "writtenShort": "Pisano"
+    },
+    "messages": {
+      "noSelection": "Molimo izaberite tip čitanja pre izbora karata",
+      "simpleSelected": "Jednostavno čitanje izabrano - možete početi da izvlačite karte",
+      "detailedSelected": "Audio Čitanje izabrano",
+      "writtenSelected": "Pisano Čitanje izabrano",
+      "adminRequired": "Nedovoljno kredita za Audio Čitanje",
+      "writtenRequired": "Nedovoljno kredita za Pisano Čitanje",
+      "simpleDescription": "Jednostavno pisano audio čitanje",
+      "detailedDescription": "Jednostavno pisano audio čitanje",
+      "writtenDescription": "Jednostavno pisano audio čitanje",
+      "cardsLocked": "Karte Zaključane",
+      "selectReadingTypeFirst": "Morate prvo izabrati tip čitanja da biste mogli da izaberete karte."
+    }
+  },
+  "cards": {
+    "reversed": "Obrnuto",
+    "upright": "Uspravno",
+    "reversedMeaning": "Obrnuto Značenje:",
+    "uprightMeaning": "Uspravno Značenje:",
+    "altText": "Tarot Karta"
+  },
+  "forms": {
+    "validation": {
+      "nameMinLength": "Ime mora imati najmanje 3 karaktera.",
+      "surnameMinLength": "Prezime mora imati najmanje 3 karaktera.",
+      "birthDateRequired": "Datum rođenja je obavezan.",
+      "emailInvalid": "Molimo unesite ispravnu email adresu.",
+      "concernMinLength": "Morate dati najmanje 10 karaktera za ovo pitanje.",
+      "understandingMinLength": "Morate dati najmanje 10 karaktera za ovo pitanje.",
+      "emotionalMinLength": "Morate dati najmanje 10 karaktera za ovo pitanje."
+    },
+    "confirmExit": "Forma je popunjena ali nije sačuvana. Da li ste sigurni da želite da izađete?"
+  },
+  "toast": {
+    "cardSelectionReady": "Možete nastaviti sa izborom karata.",
+    "simpleReadingComplete": "Jednostavno čitanje završeno!",
+    "readingSaveError": "Došlo je do greške prilikom čuvanja čitanja.",
+    "readingSaveErrorLog": "Greška čuvanja čitanja:"
+  },
+  "interpretation": {
+    "title": "Tarot Tumačenje",
+    "placeholder": "Napišite vaše pitanje...",
+    "badge": "TAROT",
+    "loveReading": "Ljubavno Čitanje",
+    "loveReadingDetailed": "Ljubavno Čitanje - Detaljno Lično Čitanje",
+    "dearClient": "Dragi klijente,",
+    "loveLifeSummary": "Sažetak Ljubavnog Života:",
+    "cannotGenerate": "Ne može se generisati tumačenje bez izbora svih karata.",
+    "context": "Kontekst:"
+  },
+  "gallery": {
+    "title": "Galerija Karata",
+    "emptyDeck": "Špil karata je prazan",
+    "nextPosition": "Sledeća pozicija:",
+    "allPositionsFull": "Sve pozicije su popunjene",
+    "scrollToSeeAll": "Skrolujte da vidite sve karte",
+    "shuffle": "Promešaj"
+  },
+  "language": {
+    "turkish": "Turski",
+    "english": "Engleski", 
+    "serbian": "Srpski"
+  },
+  "love": {
+    "positions": {
+      "position1": {
+        "title": "Osoba koja vas zanima",
+        "description": "Šta ta osoba misli o vama i kakav pristup ima?"
+      },
+      "position2": {
+        "title": "Fizička veza",
+        "description": "Kakva je fizička privlačnost i seksualna kompatibilnost između vas?"
+      },
+      "position3": {
+        "title": "Emotivna veza",
+        "description": "Kakva je vaša emotivna veza i srčana povezanost?"
+      },
+      "position4": {
+        "title": "Dugoročni proces",
+        "description": "Kakav je dugoročni potencijal i budućnost vaše veze?"
+      }
+    },
+    "form": {
+      "personalInfo": "Vaše Lične Informacije",
+      "firstName": "Ime",
+      "lastName": "Prezime",
+      "birthDate": "Datum Rođenja",
+      "email": "Email Adresa",
+      "questions": "✨ Pitanja za Ljubavno Čitanje ✨",
+      "concernQuestion": "Šta vas najviše brine u vašem ljubavnom životu?",
+      "understandingQuestion": "Šta želite da razumete iz ovog ljubavnog čitanja?",
+      "emotionalQuestion": "Kako se trenutno osećate emotivno?",
+      "saveAndOpen": "💕 Sačuvaj i Otvori Karte",
+      "saving": "Čuva se...",
+      "clearAll": "🔄 Obriši Sve"
+    },
+    "modals": {
+      "creditConfirm": "Potvrda Kredita",
+      "creditConfirmMessage": "Da li želite da nastavite sa ovim čitanjem?",
+      "confirm": "Da, Potvrđujem",
+      "cancel": "Otkaži",
+      "processing": "Obrađuje se...",
+      "successTitle": "Čitanje Uspešno Sačuvano!",
+      "successMessage": "Vaše ljubavno čitanje je detaljno sačuvano i analizirano. Rezultate možete videti iz korisničkog panela.",
+      "redirecting": "💝 Preusmerava se na početnu stranicu...",
+      "saveReading": "Sačuvaj Čitanje 💝",
+      "savingReading": "Čuva se..."
+    },
+    "cardGroups": {
+      "majorArcana": "Velika Arkana",
+      "cups": "Pehari",
+      "swords": "Mačevi",
+      "wands": "Štapovi",
+      "pentacles": "Pentakli"
+    },
+    "meanings": {
+      "theFool": {
+        "position1": {
+          "upright": "Osoba koja vas zanima puna je dečje radoznalosti i uzbuđenja o životu. Otvorena je za nove početke i ima avanturistički duh, ali to ponekad može da je učini neplaniranom i neorganizovanom. I veze pristupa ovim slobodnim duhom.",
+          "reversed": "Obrnuti Budala pokazuje da bi ta osoba mogla biti neoprezna, neodgovorna ili da se plaši da započne vezu. Možda ignoriše potencijalne opasnosti i izbegava obavezu.",
+          "keywords": ["novi počeci", "nevinost", "spontanost", "uzimanje rizika", "slobodan duh"],
+          "context": "Ova osoba je spremna da otvori novu stranicu u svom ljubavnom životu ili je avanturista koji se toga plaši."
+        }
+      }
+    }
+  },
+  "tarotCards": {
+    "majorArcana": {
+      "0": {
+        "name": "Budala",
+        "meaning": {
+          "upright": "Novi počeci, nevinost, spontanost",
+          "reversed": "Nepažnja, iskorišćavanje"
+        },
+        "keywords": ["novi počeci", "nevinost"]
+      },
+      "1": {
+        "name": "Mađioničar",
+        "meaning": {
+          "upright": "Manifestacija, snalažljivost, moć",
+          "reversed": "Manipulacija, loše planiranje"
+        },
+        "keywords": ["manifestacija", "moć"]
+      },
+      "2": {
+        "name": "Visoka Svestenica",
+        "meaning": {
+          "upright": "Intuicija, sveto znanje, božanska ženskost",
+          "reversed": "Tajne, odvojenost od intuicije"
+        },
+        "keywords": ["intuicija", "misterija"]
+      },
+      "3": {
+        "name": "Carica",
+        "meaning": {
+          "upright": "Ženskost, lepota, priroda, negovanje",
+          "reversed": "Kreativni blok, zavisnost"
+        },
+        "keywords": ["ženskost", "lepota"]
+      },
+      "4": {
+        "name": "Car",
+        "meaning": {
+          "upright": "Autoritet, uspostavljanje, struktura",
+          "reversed": "Dominacija, prekomerna kontrola"
+        },
+        "keywords": ["autoritet", "struktura"]
+      },
+      "5": {
+        "name": "Sveštenik",
+        "meaning": {
+          "upright": "Duhovna mudrost, verska uverenja",
+          "reversed": "Lična uverenja, sloboda"
+        },
+        "keywords": ["tradicija", "usaglašenost"]
+      },
+      "6": {
+        "name": "Ljubavnici",
+        "meaning": {
+          "upright": "Ljubav, harmonija, veze",
+          "reversed": "Samo-ljubav, neharmonija"
+        },
+        "keywords": ["ljubav", "harmonija"]
+      },
+      "7": {
+        "name": "Kola",
+        "meaning": {
+          "upright": "Kontrola, snaga volje, uspeh",
+          "reversed": "Samo-disciplina, opozicija"
+        },
+        "keywords": ["kontrola", "snaga volje"]
+      },
+      "8": {
+        "name": "Snaga",
+        "meaning": {
+          "upright": "Snaga, hrabrost, ubeđivanje",
+          "reversed": "Samo-sumlja, nedostatak samopouzdanja"
+        },
+        "keywords": ["snaga", "hrabrost"]
+      },
+      "9": {
+        "name": "Pustinjak",
+        "meaning": {
+          "upright": "Traganje za dušom, introspekcija",
+          "reversed": "Izolacija, usamljenost"
+        },
+        "keywords": ["introspekcija", "traganje"]
+      },
+      "10": {
+        "name": "Točak Sreće",
+        "meaning": {
+          "upright": "Dobra sreća, karma, životni ciklusi",
+          "reversed": "Loša sreća, nedostatak kontrole"
+        },
+        "keywords": ["sreća", "karma"]
+      },
+      "11": {
+        "name": "Pravda",
+        "meaning": {
+          "upright": "Pravda, pravednost, istina",
+          "reversed": "Nepravda, nedostatak odgovornosti"
+        },
+        "keywords": ["pravda", "pravednost"]
+      },
+      "12": {
+        "name": "Obeseni Čovek",
+        "meaning": {
+          "upright": "Predaja, puštanje, žrtvovanje",
+          "reversed": "Kašnjenja, otpor, odugovlačenje"
+        },
+        "keywords": ["predaja", "žrtvovanje"]
+      },
+      "13": {
+        "name": "Smrt",
+        "meaning": {
+          "upright": "Krajevi, transformacija, prelaz",
+          "reversed": "Otpornost na promene, unutrašnje čišćenje"
+        },
+        "keywords": ["transformacija", "krajevi"]
+      },
+      "14": {
+        "name": "Umerenost",
+        "meaning": {
+          "upright": "Ravnoteža, umerenost, strpljivost",
+          "reversed": "Neravnoteža, preterivanje, samo-isceljenje"
+        },
+        "keywords": ["ravnoteža", "umerenost"]
+      },
+      "15": {
+        "name": "Đavo",
+        "meaning": {
+          "upright": "Porobljavanje, zavisnost, materijalizam",
+          "reversed": "Oslobađanje ograničavajućih uverenja, odvajanje"
+        },
+        "keywords": ["porobljavanje", "materijalizam"]
+      },
+      "16": {
+        "name": "Kula",
+        "meaning": {
+          "upright": "Iznenadna promena, prevrat, haos",
+          "reversed": "Lična transformacija, strah od promene"
+        },
+        "keywords": ["iznenadna promena", "prevrat"]
+      },
+      "17": {
+        "name": "Zvezda",
+        "meaning": {
+          "upright": "Nada, vera, svrha, obnavljanje",
+          "reversed": "Nedostatak vere, očajanje, odvojenost"
+        },
+        "keywords": ["nada", "vera"]
+      },
+      "18": {
+        "name": "Mesec",
+        "meaning": {
+          "upright": "Iluzija, strah, anksioznost, podsvest",
+          "reversed": "Oslobađanje straha, potisnuta emocija"
+        },
+        "keywords": ["iluzija", "strah"]
+      },
+      "19": {
+        "name": "Sunce",
+        "meaning": {
+          "upright": "Pozitivnost, zabava, toplina, uspeh",
+          "reversed": "Unutrašnje dete, loše raspoloženje"
+        },
+        "keywords": ["pozitivnost", "zabava"]
+      },
+      "20": {
+        "name": "Sud",
+        "meaning": {
+          "upright": "Sud, ponovno rođenje, unutrašnji poziv",
+          "reversed": "Samo-sumlja, unutrašnji kritičar"
+        },
+        "keywords": ["sud", "ponovno rođenje"]
+      },
+      "21": {
+        "name": "Svet",
+        "meaning": {
+          "upright": "Završetak, integracija, postignuće",
+          "reversed": "Traganje za ličnim zatvaranjem, prečica"
+        },
+        "keywords": ["završetak", "integracija"]
+      }
+    },
+    "cups": {
+      "1": {
+        "name": "As Pehara",
+        "meaning": {
+          "upright": "Nove veze, saosećanje",
+          "reversed": "Samo-ljubav, potisnute emocije"
+        },
+        "keywords": ["ljubav", "emocije"]
+      },
+      "2": {
+        "name": "Dvojka Pehara",
+        "meaning": {
+          "upright": "Partnerstvo, uzajamna privlačnost",
+          "reversed": "Samo-ljubav, raskidi"
+        },
+        "keywords": ["partnerstvo", "ljubav"]
+      },
+      "3": {
+        "name": "Trojka Pehara",
+        "meaning": {
+          "upright": "Proslava, prijateljstvo",
+          "reversed": "Nezavisnost, kreativni blokovi"
+        },
+        "keywords": ["proslava", "prijateljstvo"]
+      },
+      "4": {
+        "name": "Četvorka Pehara",
+        "meaning": {
+          "upright": "Meditacija, kontemplacija",
+          "reversed": "Povlačenje, izolacija"
+        },
+        "keywords": ["meditacija", "kontemplacija"]
+      },
+      "5": {
+        "name": "Petica Pehara",
+        "meaning": {
+          "upright": "Žaljenje, razočaranje",
+          "reversed": "Samo-opraštanje, napredovanje"
+        },
+        "keywords": ["žaljenje", "razočaranje"]
+      },
+      "6": {
+        "name": "Šestica Pehara",
+        "meaning": {
+          "upright": "Sećanja iz detinjstva, nevinost",
+          "reversed": "Život u prošlosti, opraštanje"
+        },
+        "keywords": ["nostalgija", "detinjstvo"]
+      },
+      "7": {
+        "name": "Sedmica Pehara",
+        "meaning": {
+          "upright": "Mogućnosti, izbori",
+          "reversed": "Lične vrednosti, preopterećenost"
+        },
+        "keywords": ["mogućnosti", "izbori"]
+      },
+      "8": {
+        "name": "Osmica Pehara",
+        "meaning": {
+          "upright": "Razočaranje, napuštanje",
+          "reversed": "Pokušaj ponovo, neodlučnost"
+        },
+        "keywords": ["razočaranje", "napuštanje"]
+      },
+      "9": {
+        "name": "Devetka Pehara",
+        "meaning": {
+          "upright": "Zadovoljstvo, zadovoljstvo",
+          "reversed": "Unutrašnja sreća, nezadovoljstvo"
+        },
+        "keywords": ["zadovoljstvo", "zadovoljstvo"]
+      },
+      "10": {
+        "name": "Desetka Pehara",
+        "meaning": {
+          "upright": "Božanska ljubav, harmonija",
+          "reversed": "Odvojenost, teške veze"
+        },
+        "keywords": ["božanska ljubav", "harmonija"]
+      },
+      "page": {
+        "name": "Paž Pehara",
+        "meaning": {
+          "upright": "Kreativne mogućnosti, intuicija",
+          "reversed": "Nove ideje, sumlja u intuiciju"
+        },
+        "keywords": ["kreativnost", "intuicija"]
+      },
+      "knight": {
+        "name": "Vitez Pehara",
+        "meaning": {
+          "upright": "Romantika, šarm, mašta",
+          "reversed": "Nerealno, ljubomora"
+        },
+        "keywords": ["romantika", "šarm"]
+      },
+      "queen": {
+        "name": "Kraljica Pehara",
+        "meaning": {
+          "upright": "Saosećajna, emocionalno stabilna",
+          "reversed": "Unutrašnja osećanja, briga o sebi"
+        },
+        "keywords": ["saosećanje", "emocionalna stabilnost"]
+      },
+      "king": {
+        "name": "Kralj Pehara",
+        "meaning": {
+          "upright": "Emocionalno uravnotežen, diplomatski",
+          "reversed": "Samo-saosećanje, promenljivo raspoloženje"
+        },
+        "keywords": ["emocionalna ravnoteža", "diplomatija"]
+      }
+    },
+    "wands": {
+      "1": {
+        "name": "As Štapova",
+        "meaning": {
+          "upright": "Inspiracija, nove mogućnosti",
+          "reversed": "Nedostatak energije, dosada"
+        },
+        "keywords": ["inspiracija", "moć"]
+      },
+      "2": {
+        "name": "Dvojka Štapova",
+        "meaning": {
+          "upright": "Planiranje budućnosti, odluke",
+          "reversed": "Lični ciljevi, strah od nepoznatog"
+        },
+        "keywords": ["planiranje", "odluke"]
+      },
+      "3": {
+        "name": "Trojka Štapova",
+        "meaning": {
+          "upright": "Širenje, predviđanje",
+          "reversed": "Igra malo, kašnjenja"
+        },
+        "keywords": ["širenje", "predviđanje"]
+      },
+      "4": {
+        "name": "Četvorka Štapova",
+        "meaning": {
+          "upright": "Proslava, harmonija",
+          "reversed": "Lična proslava, konflikt"
+        },
+        "keywords": ["proslava", "harmonija"]
+      },
+      "5": {
+        "name": "Petica Štapova",
+        "meaning": {
+          "upright": "Konflikt, takmičenje",
+          "reversed": "Unutrašnji konflikt, izbegavanje"
+        },
+        "keywords": ["konflikt", "takmičenje"]
+      },
+      "6": {
+        "name": "Šestica Štapova",
+        "meaning": {
+          "upright": "Uspeh, prepoznavanje",
+          "reversed": "Privatno postignuće, pad iz milosti"
+        },
+        "keywords": ["uspeh", "prepoznavanje"]
+      },
+      "7": {
+        "name": "Sedmica Štapova",
+        "meaning": {
+          "upright": "Izazov, istrajnost",
+          "reversed": "Iscrpljenost, odustajanje"
+        },
+        "keywords": ["izazov", "istrajnost"]
+      },
+      "8": {
+        "name": "Osmica Štapova",
+        "meaning": {
+          "upright": "Brzina, napredak",
+          "reversed": "Kašnjenja, frustracija"
+        },
+        "keywords": ["brzina", "napredak"]
+      },
+      "9": {
+        "name": "Devetka Štapova",
+        "meaning": {
+          "upright": "Otpornost, hrabrost",
+          "reversed": "Unutrašnji resursi, borba"
+        },
+        "keywords": ["otpornost", "hrabrost"]
+      },
+      "10": {
+        "name": "Desetka Štapova",
+        "meaning": {
+          "upright": "Teret, odgovornost",
+          "reversed": "Raditi sve, delegiranje"
+        },
+        "keywords": ["teret", "odgovornost"]
+      },
+      "page": {
+        "name": "Paž Štapova",
+        "meaning": {
+          "upright": "Inspiracija, otkriće",
+          "reversed": "Nedostatak pravca, odlaganje"
+        },
+        "keywords": ["inspiracija", "otkriće"]
+      },
+      "knight": {
+        "name": "Vitez Štapova",
+        "meaning": {
+          "upright": "Energija, strast, avantura",
+          "reversed": "Žurba, rasuta energija"
+        },
+        "keywords": ["energija", "strast"]
+      },
+      "queen": {
+        "name": "Kraljica Štapova",
+        "meaning": {
+          "upright": "Hrabrost, nezavisnost",
+          "reversed": "Samo-poštovanje, introvertnost"
+        },
+        "keywords": ["hrabrost", "nezavisnost"]
+      },
+      "king": {
+        "name": "Kralj Štapova",
+        "meaning": {
+          "upright": "Vodstvo, vizija",
+          "reversed": "Impulsivnost, nemilosrdnost"
+        },
+        "keywords": ["vodstvo", "vizija"]
+      }
+    },
+    "swords": {
+      "1": {
+        "name": "As Mačeva",
+        "meaning": {
+          "upright": "Proboj, jasnoća",
+          "reversed": "Konfuzija, haos"
+        },
+        "keywords": ["jasnoća", "proboj"]
+      },
+      "2": {
+        "name": "Dvojka Mačeva",
+        "meaning": {
+          "upright": "Teške odluke, ćorsokak",
+          "reversed": "Neodlučnost, konfuzija"
+        },
+        "keywords": ["odluke", "ćorsokak"]
+      },
+      "3": {
+        "name": "Trojka Mačeva",
+        "meaning": {
+          "upright": "Slomljeno srce, tuga",
+          "reversed": "Oslobađanje bola, optimizam"
+        },
+        "keywords": ["slomljeno srce", "tuga"]
+      },
+      "4": {
+        "name": "Četvorka Mačeva",
+        "meaning": {
+          "upright": "Odmor, meditacija",
+          "reversed": "Iscrpljenost, sagorevanje"
+        },
+        "keywords": ["odmor", "meditacija"]
+      },
+      "5": {
+        "name": "Petica Mačeva",
+        "meaning": {
+          "upright": "Konflikt, poraz",
+          "reversed": "Pomirenje, prošla ogorčenost"
+        },
+        "keywords": ["konflikt", "poraz"]
+      },
+      "6": {
+        "name": "Šestica Mačeva",
+        "meaning": {
+          "upright": "Prelaz, promena",
+          "reversed": "Lični prelaz, otpor"
+        },
+        "keywords": ["prelaz", "promena"]
+      },
+      "7": {
+        "name": "Sedmica Mačeva",
+        "meaning": {
+          "upright": "Izdaja, obmana",
+          "reversed": "Sindrom prevaranta, tajne"
+        },
+        "keywords": ["izdaja", "obmana"]
+      },
+      "8": {
+        "name": "Osmica Mačeva",
+        "meaning": {
+          "upright": "Ograničavanje, zatvor",
+          "reversed": "Samo-ograničavajuća uverenja, unutrašnji kritičar"
+        },
+        "keywords": ["ograničavanje", "zatvor"]
+      },
+      "9": {
+        "name": "Devetka Mačeva",
+        "meaning": {
+          "upright": "Anksioznost, strah",
+          "reversed": "Unutrašnja previranja, oslobađanje anksioznosti"
+        },
+        "keywords": ["anksioznost", "strah"]
+      },
+      "10": {
+        "name": "Desetka Mačeva",
+        "meaning": {
+          "upright": "Bolni krajevi, izdaja",
+          "reversed": "Oporavak, otpor kraju"
+        },
+        "keywords": ["krajevi", "izdaja"]
+      },
+      "page": {
+        "name": "Paž Mačeva",
+        "meaning": {
+          "upright": "Nove ideje, radoznalost",
+          "reversed": "Samo-izražavanje, nema akcije"
+        },
+        "keywords": ["ideje", "radoznalost"]
+      },
+      "knight": {
+        "name": "Vitez Mačeva",
+        "meaning": {
+          "upright": "Ambiciozan, orijentisan na akciju",
+          "reversed": "Nemiran, impulsivan"
+        },
+        "keywords": ["ambicija", "akcija"]
+      },
+      "queen": {
+        "name": "Kraljica Mačeva",
+        "meaning": {
+          "upright": "Nezavisan, jasne granice",
+          "reversed": "Previše emocionalan, hladan"
+        },
+        "keywords": ["nezavisnost", "granice"]
+      },
+      "king": {
+        "name": "Kralj Mačeva",
+        "meaning": {
+          "upright": "Mentalna jasnoća, autoritet",
+          "reversed": "Tiha moć, zloupotreba moći"
+        },
+        "keywords": ["jasnoća", "autoritet"]
+      }
+    },
+    "pentacles": {
+      "1": {
+        "name": "As Pentakla",
+        "meaning": {
+          "upright": "Nova mogućnost, manifestacija",
+          "reversed": "Propuštena mogućnost, nedostatak planiranja"
+        },
+        "keywords": ["mogućnost", "manifestacija"]
+      },
+      "2": {
+        "name": "Dvojka Pentakla",
+        "meaning": {
+          "upright": "Više prioriteta, prilagodljivost",
+          "reversed": "Prekomitovanost, neorganizovanost"
+        },
+        "keywords": ["prioriteti", "prilagodljivost"]
+      },
+      "3": {
+        "name": "Trojka Pentakla",
+        "meaning": {
+          "upright": "Saradnja, učenje",
+          "reversed": "Neharmonija, rad sam"
+        },
+        "keywords": ["saradnja", "učenje"]
+      },
+      "4": {
+        "name": "Četvorka Pentakla",
+        "meaning": {
+          "upright": "Štednja novca, sigurnost",
+          "reversed": "Prekomerno trošenje, velikodušnost"
+        },
+        "keywords": ["štednja", "sigurnost"]
+      },
+      "5": {
+        "name": "Petica Pentakla",
+        "meaning": {
+          "upright": "Finansijski gubitak, izolacija",
+          "reversed": "Oporavak od gubitka, duhovno siromaštvo"
+        },
+        "keywords": ["gubitak", "izolacija"]
+      },
+      "6": {
+        "name": "Šestica Pentakla",
+        "meaning": {
+          "upright": "Davanje, deljenje bogatstva",
+          "reversed": "Briga o sebi, neplaćeni dugovi"
+        },
+        "keywords": ["davanje", "deljenje"]
+      },
+      "7": {
+        "name": "Sedmica Pentakla",
+        "meaning": {
+          "upright": "Istrajnost, investicija",
+          "reversed": "Nedostatak dugoročnog gledišta, nestrpljivost"
+        },
+        "keywords": ["istrajnost", "investicija"]
+      },
+      "8": {
+        "name": "Osmica Pentakla",
+        "meaning": {
+          "upright": "Majstorstvo, razvoj veština",
+          "reversed": "Perfekcionizam, nedostatak posvećenosti"
+        },
+        "keywords": ["majstorstvo", "veština"]
+      },
+      "9": {
+        "name": "Devetka Pentakla",
+        "meaning": {
+          "upright": "Obilje, finansijska nezavisnost",
+          "reversed": "Samo-vrednost, prekomerna investicija"
+        },
+        "keywords": ["obilje", "nezavisnost"]
+      },
+      "10": {
+        "name": "Desetka Pentakla",
+        "meaning": {
+          "upright": "Bogatstvo, porodica, dugoročni uspeh",
+          "reversed": "Finansijski neuspeh, mračna strana bogatstva"
+        },
+        "keywords": ["bogatstvo", "porodica"]
+      },
+      "page": {
+        "name": "Paž Pentakla",
+        "meaning": {
+          "upright": "Manifestacija, finansijska mogućnost",
+          "reversed": "Nedostatak napretka, odlaganje"
+        },
+        "keywords": ["manifestacija", "mogućnost"]
+      },
+      "knight": {
+        "name": "Vitez Pentakla",
+        "meaning": {
+          "upright": "Marljiv rad, rutina",
+          "reversed": "Samo-disciplina, osećaj zaglavljenosti"
+        },
+        "keywords": ["rad", "rutina"]
+      },
+      "queen": {
+        "name": "Kraljica Pentakla",
+        "meaning": {
+          "upright": "Negovanje, praktičnost",
+          "reversed": "Finansijska nezavisnost, konflikt posao-dom"
+        },
+        "keywords": ["negovanje", "praktičnost"]
+      },
+      "king": {
+        "name": "Kralj Pentakla",
+        "meaning": {
+          "upright": "Finansijski uspeh, poslovna pamet",
+          "reversed": "Finansijski savet, život iznad mogućnosti"
+        },
+        "keywords": ["uspeh", "posao"]
+      }
+    }
+  }
+}

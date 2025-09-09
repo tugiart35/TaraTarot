@@ -1,0 +1,1473 @@
+{
+  "common": {
+    "ok": "Tamam",
+    "cancel": "İptal",
+    "save": "Kaydet",
+    "delete": "Sil",
+    "loading": "Yükleniyor...",
+    "error": "Hata",
+    "success": "Başarılı",
+    "warning": "Uyarı",
+    "info": "Bilgi",
+    "yes": "Evet",
+    "no": "Hayır",
+    "back": "Geri",
+    "next": "İleri",
+    "previous": "Önceki",
+    "close": "Kapat",
+    "open": "Aç",
+    "edit": "Düzenle",
+    "view": "Görüntüle",
+    "search": "Ara",
+    "filter": "Filtrele",
+    "sort": "Sırala",
+    "refresh": "Yenile",
+    "copy": "Kopyala",
+    "share": "Paylaş",
+    "download": "İndir",
+    "upload": "Yükle",
+    "select": "Seç",
+    "selectAll": "Tümünü Seç",
+    "progress": "İlerleme",
+    "reversed": "Ters",
+    "upright": "Düz",
+    "clear": "Temizle",
+    "reset": "Sıfırla",
+    "submit": "Gönder",
+    "confirm": "Onayla",
+    "continue": "Devam Et",
+    "finish": "Bitir",
+    "start": "Başla",
+    "stop": "Durdur",
+    "pause": "Duraklat",
+    "resume": "Devam Et"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "dashboard": "Panel",
+    "profile": "Profil",
+    "settings": "Ayarlar",
+    "help": "Yardım",
+    "about": "Hakkında",
+    "contact": "İletişim",
+    "privacy": "Gizlilik",
+    "terms": "Şartlar",
+    "logout": "Çıkış",
+    "login": "Giriş",
+    "register": "Kayıt Ol",
+    "menu": "Menü",
+    "breadcrumb": "Yol"
+  },
+  "validation": {
+    "required": "Bu alan zorunludur",
+    "email": "Geçerli bir e-posta adresi girin",
+    "minLength": "En az {min} karakter olmalıdır",
+    "maxLength": "En fazla {max} karakter olmalıdır",
+    "pattern": "Geçersiz format",
+    "password": {
+      "rules": "Şifre en az 8 karakter, büyük harf, küçük harf ve rakam içermelidir",
+      "tooShort": "Şifre çok kısa",
+      "noUppercase": "En az bir büyük harf gerekli",
+      "noLowercase": "En az bir küçük harf gerekli",
+      "noNumber": "En az bir rakam gerekli",
+      "noSpecialChar": "En az bir özel karakter gerekli",
+      "strength": {
+        "weak": "Zayıf",
+        "medium": "Orta",
+        "strong": "Güçlü",
+        "veryStrong": "Çok Güçlü"
+      }
+    },
+    "confirmPassword": "Şifreler eşleşmiyor",
+    "phone": "Geçerli bir telefon numarası girin",
+    "url": "Geçerli bir URL girin",
+    "date": "Geçerli bir tarih girin",
+    "number": "Geçerli bir sayı girin",
+    "integer": "Tam sayı girin",
+    "positive": "Pozitif sayı girin",
+    "negative": "Negatif sayı girin",
+    "min": "En az {min} olmalıdır",
+    "max": "En fazla {max} olmalıdır",
+    "between": "{min} ile {max} arasında olmalıdır",
+    "realTime": {
+      "checking": "Kontrol ediliyor...",
+      "valid": "Geçerli",
+      "invalid": "Geçersiz"
+    }
+  },
+  "tarot": {
+    "title": "Tarot Kartları",
+    "subtitle": "Kaderinizi keşfedin",
+    "selectCards": "Kartları Seçin",
+    "shuffle": "Karıştır",
+    "draw": "Çek",
+    "interpretation": "Yorumlama",
+    "spread": "Açılım",
+    "card": "Kart",
+    "cards": "Kartlar",
+    "deck": "Destesi",
+    "position": "Pozisyon",
+    "meaning": "Anlam",
+    "past": "Geçmiş",
+    "present": "Şimdi",
+    "future": "Gelecek",
+    "love": "Aşk",
+    "career": "Kariyer",
+    "health": "Sağlık",
+    "spirituality": "Ruhsallık",
+    "guidance": "Rehberlik",
+    "advice": "Tavsiye",
+    "warning": "Uyarı",
+    "opportunity": "Fırsat",
+    "challenge": "Zorluk",
+    "outcome": "Sonuç",
+    "influence": "Etki",
+    "obstacle": "Engel",
+    "strength": "Güç",
+    "weakness": "Zayıflık",
+    "hope": "Umut",
+    "fear": "Korku",
+    "action": "Eylem",
+    "inaction": "Hareketsizlik",
+    "yes": "Evet",
+    "no": "Hayır",
+    "maybe": "Belki",
+    "uncertain": "Belirsiz"
+  },
+  "reading": {
+    "types": {
+      "simple": "Basit",
+      "detailed": "Sesli",
+      "written": "Yazılı",
+      "simpleShort": "Basit",
+      "detailedShort": "Sesli",
+      "writtenShort": "Yazılı",
+      "threeCard": "Üç Kart",
+      "love": "Aşk",
+      "career": "Kariyer",
+      "daily": "Günlük",
+      "weekly": "Haftalık",
+      "monthly": "Aylık",
+      "yearly": "Yıllık",
+      "custom": "Özel"
+    },
+    "positions": {
+      "past": "Geçmiş",
+      "present": "Şimdi",
+      "future": "Gelecek",
+      "situation": "Durum",
+      "action": "Eylem",
+      "outcome": "Sonuç",
+      "you": "Sen",
+      "partner": "Partner",
+      "relationship": "İlişki",
+      "obstacle": "Engel",
+      "advice": "Tavsiye"
+    },
+    "actions": {
+      "startReading": "Okuma Başlat",
+      "shuffleCards": "Kartları Karıştır",
+      "selectCards": "Kartları Seç",
+      "revealCards": "Kartları Aç",
+      "interpretCards": "Kartları Yorumla",
+      "saveReading": "Okumayı Kaydet",
+      "shareReading": "Okumayı Paylaş",
+      "newReading": "Yeni Okuma",
+      "continueReading": "Okumaya Devam Et"
+    },
+    "messages": {
+      "noSelection": "Bir okuma türü seçin",
+      "simpleSelected": "Basit okuma seçildi",
+      "detailedSelected": "Sesli okuma seçildi",
+      "writtenSelected": "Yazılı okuma seçildi",
+      "detailedDescription": "Sesli ve detaylı yorumlama",
+      "writtenDescription": "Yazılı ve kapsamlı yorumlama",
+      "insufficientCredits": "Yetersiz kredi",
+      "creditsRequired": "kredi gerekli",
+      "buyCredits": "Kredi Satın Al",
+      "goToCredits": "Kredi Sayfasına Git",
+      "cardsLocked": "Kartlar Kilitli",
+      "selectReadingTypeFirst": "Kartları seçmek için önce bir okuma tipi seçmelisiniz."
+    }
+  },
+  "errors": {
+    "pageNotFound": "Sayfa Bulunamadı",
+    "serverError": "Sunucu Hatası",
+    "networkError": "Ağ Hatası",
+    "unauthorized": "Yetkisiz Erişim",
+    "forbidden": "Erişim Engellendi",
+    "timeout": "Zaman Aşımı",
+    "maintenance": "Bakım Modu",
+    "tryAgain": "Tekrar Dene",
+    "goHome": "Ana Sayfaya Git",
+    "contactSupport": "Destek ile İletişime Geç"
+  },
+  "home": {
+    "title": "Büşbüşkimki",
+    "subtitle": "Mistik Yolculuğunuz Başlıyor",
+    "hero": {
+      "title": "Mistik Tarot & Numeroloji",
+      "subtitle": "Geleceğinizi Keşfedin, Kaderinizi Anlayın",
+      "description": "Kartların ve sayıların gizemli dünyasında yolculuğa çıkın. Profesyonel tarot okumaları ve numeroloji analizleri ile hayatınızın sırlarını keşfedin."
+    },
+    "services": {
+      "tarot": {
+        "title": "Tarot Okuması",
+        "description": "Kartların gizemli dünyasında yolculuğa çıkın. Geçmiş, şimdi ve geleceğinizi keşfedin.",
+        "button": "Tarot Okuması",
+        "features": ["Aşk Açılımı", "Kariyer Rehberliği", "Günlük Rehberlik", "Detaylı Yorumlama"]
+      },
+      "numerology": {
+        "title": "Numeroloji Analizi",
+        "description": "Sayıların sırlarını keşfedin. Yaşam yolunuzu, ifade sayınızı ve ruhsal arzunuzu öğrenin.",
+        "button": "Numeroloji Analizi",
+        "features": ["Yaşam Yolu", "İfade Sayısı", "Ruhsal Arzu", "Günlük Sayı"]
+      }
+    },
+    "features": {
+      "title": "Neden Bizi Seçmelisiniz?",
+      "authentic": {
+        "title": "Orijinal Rehberlik",
+        "description": "Geleneksel tarot ve numeroloji yöntemleri"
+      },
+      "personalized": {
+        "title": "Kişiselleştirilmiş",
+        "description": "Size özel detaylı analizler"
+      },
+      "secure": {
+        "title": "Güvenli",
+        "description": "Verileriniz tamamen güvende"
+      },
+      "multilingual": {
+        "title": "Çok Dilli",
+        "description": "Türkçe, İngilizce ve Sırpça destek"
+      }
+    },
+    "stats": {
+      "title": "Güvenilir Hizmet",
+      "users": "Aktif Kullanıcı",
+      "readings": "Tamamlanan Okuma",
+      "satisfaction": "Memnuniyet Oranı"
+    },
+    "cta": {
+      "title": "Hemen Başlayın",
+      "description": "Mistik yolculuğunuza bugün başlayın ve kaderinizin sırlarını keşfedin.",
+      "button": "Ücretsiz Deneyin"
+    },
+    "tarotCard": {
+      "title": "Tarot Açılımı",
+      "description": "Kartların gizemli dünyasında yolculuğa çıkın. Aşk, kariyer ve yaşam sorularınıza mistik cevaplar bulun.",
+      "button": "Açılım Yap →"
+    },
+    "footerText": "Mistik bilgilerin ışığında, iç dünyanızın derinliklerine yolculuk yapın. Her okuma, size yeni bir perspektif ve rehberlik sunar."
+  },
+  "navigation": {
+    "tarot": "Tarot",
+    "numerology": "Numeroloji",
+    "home": "Anasayfa",
+    "auth": "Giriş yap",
+    "profile": "Profil",
+    "dashboard": "Dashboard"
+  },
+  "numerology": {
+    "title": "Numeroloji",
+    "subtitle": "İsim ve doğum tarihin ile sayının rehberliğini keşfet.",
+    "calculators": {
+      "lifePath": "Yaşam Yolu",
+      "expressionDestiny": "İfade/Kader",
+      "soulUrge": "Ruh Arzusu",
+      "personality": "Kişilik",
+      "birthdayNumber": "Doğum Günü",
+      "maturity": "Olgunluk",
+      "pinnaclesChallenges": "Zirveler/Zorluklar",
+      "personalCycles": "Kişisel Döngüler",
+      "compatibility": "Uyum Analizi"
+    },
+    "form": {
+      "name": "Ad Soyad",
+      "birth": "Doğum Tarihi (YYYY-AA-GG)",
+      "targetDate": "Hedef Tarih (YYYY-AA-GG)",
+      "personA": "1. Kişi",
+      "personB": "2. Kişi",
+      "calculate": "Hesapla",
+      "invalidDate": "Lütfen geçerli bir tarih girin.",
+      "required": "Bu alan zorunludur."
+    },
+    "result": {
+      "title": "{type} sonucu",
+      "cardTitle": "{type} numaran",
+      "masterNumber": "Master Sayı",
+      "calculationDetails": "Hesaplama Detayları",
+      "lifeGuidance": "Yaşam Rehberliği",
+      "careerAdvice": "Kariyer Önerileri",
+      "relationshipAdvice": "İlişki Önerileri",
+      "spiritualMessage": "Ruhsal Mesaj",
+      "positiveTraits": "Güçlü Yönleriniz",
+      "challenges": "Dikkat Edilmesi Gerekenler",
+      "color": "Renk",
+      "element": "Element",
+      "planet": "Gezegen"
+    },
+    "birthdayMeanings": {
+      "1": "Doğum günü sayısı 1 olan kişiler güçlü bir bireysellik duygusuyla dünyaya gelirler. Hayatın erken dönemlerinden itibaren kendi yollarını çizme, bağımsız kararlar alma ve liderlik etme ihtiyacı duyarlar. İçlerinde yanan kıvılcım onları sürekli yeni başlangıçlara, yeni fırsatlara yönlendirir. Bu kişiler cesur, kararlı ve çoğu zaman öncü fikirleriyle çevrelerine örnek olurlar.\n\nAncak bu güçlü liderlik enerjisi bazen aşırı benmerkezci ya da otoriter bir tavra dönüşebilir. Doğum günü 1 olan kişiler, başkalarıyla işbirliği yapmayı öğrenmediklerinde yalnız kalma riski taşırlar. Dengeli olduklarında ise hem kendi hayatlarında hem de başkalarının hayatlarında yol açıcı bir ışık haline gelirler.",
+      "2": "Doğum günü sayısı 2 olanlar uyum, denge ve ilişkiler üzerine kurulu bir enerjiyle dünyaya gelirler. Onlar doğal arabuluculardır; çatışmaları çözmede, farklı tarafları bir araya getirmede ve işbirliği ortamı yaratmada eşsiz bir yetenekleri vardır. Hayatlarında genellikle karşılıklı anlayış, samimiyet ve duygusal derinlik ararlar.\n\nÖte yandan bu hassasiyet onları kolay incinebilir kılabilir. Fazla uyum sağlama isteği, kendi isteklerini geri plana atmalarına sebep olabilir. Sağlıklı dengeyi bulduklarında ise, başkaları için güvenilir ve destekleyici bir rehber haline gelirler.",
+      "3": "Doğum günü 3 olan kişiler hayatın sahnesine yaratıcı, enerjik ve neşeli bir ruhla gelirler. Onların en güçlü yanları ifade kabiliyetleridir; sanat, yazı, konuşma ya da tasarım alanında kendilerini ortaya koyabilirler. Sosyal ilişkilerde kolayca öne çıkar, insanlara ilham veren bir ışık olurlar.\n\nAncak bazen yüzeysel veya dağınık olma eğilimi gösterebilirler. Hayatlarında disiplin eksikliği, yeteneklerini tam anlamıyla değerlendirmelerine engel olabilir. Odaklandıklarında ise muazzam bir yaratıcılık ve insanlara mutluluk veren bir enerji açığa çıkar.",
+      "4": "Doğum günü sayısı 4 olanlar düzen, disiplin ve yapı getiren kişilerdir. Onlar güvenilir, çalışkan ve sorumluluk sahibi bireylerdir. Zorluklarla karşılaştıklarında sabırla ve planlı bir şekilde ilerlerler. Hayatlarına sağlam bir temel kurmak, hem kendileri hem de sevdikleri için istikrar yaratmak isterler.\n\nZaman zaman katı, inatçı ya da fazla kontrolcü olabilirler. Bu durum ilişkilerde esnekliği zorlaştırabilir. Esneklik geliştirdiklerinde, hem kendi hayatlarında hem de çevrelerinde sağlam bir yapı kurarak kalıcı başarılar elde ederler.",
+      "5": "Doğum günü sayısı 5 olanlar özgürlüğün, maceranın ve değişimin temsilcileridir. Onlar sürekli yeni deneyimler arar, farklı kültürler ve insanlar tanımaktan beslenirler. Hızlı öğrenirler ve hayatın getirdiği değişimlere kolayca uyum sağlarlar. Çevrelerinde heyecan, yenilik ve canlılık katarlar.\n\nAncak bu özgürlük ihtiyacı bazen sabırsızlığa, düzensizliğe veya bağlanma korkusuna dönüşebilir. Kendilerini sınırlamak istemezler. Fakat sorumlulukla özgürlüğü dengelemeyi öğrendiklerinde, hayatları ilham verici bir keşif yolculuğuna dönüşür.",
+      "6": "Doğum günü 6 olan kişiler sevgi, uyum ve sorumluluk enerjisi taşır. Onlar ailelerine, dostlarına ve topluma karşı derin bir bağlılık hissederler. Yardımseverlikleri, estetik anlayışları ve güzellik yaratma istekleri onları başkaları için güvenilir bir sığınak haline getirir.\n\nBazen aşırı fedakârlık, kendi ihtiyaçlarını ihmal etme ya da başkalarının sorunlarını üstlenme eğilimleri olabilir. Kendi sınırlarını korumayı öğrendiklerinde, hem kendileri hem de çevreleri için şifalandırıcı bir güç haline gelirler.",
+      "7": "Doğum günü 7 olanlar araştırmacı, derin düşünen ve sezgisel kişilerdir. Onlar hayatı sorgulayan, gerçeğin ardındaki gizemi arayan bir ruha sahiptir. Bilim, felsefe, mistisizm veya spiritüel konulara ilgi duyarlar. İçsel dünyaları güçlüdür ve yalnızlık onlar için besleyici olabilir.\n\nAncak aşırı içe kapanma, soğukluk ya da mesafe koyma eğilimleri olabilir. Başkalarıyla duygusal bağ kurmayı öğrendiklerinde, bilgeliğiyle başkalarına ışık tutan bir öğretmen haline gelirler.",
+      "8": "Doğum günü sayısı 8 olan kişiler gücün, yönetimin ve maddi başarının temsilcileridir. Onlar iş dünyasında, organizasyonda ve stratejide doğal bir yetenek taşırlar. Hedef odaklıdırlar ve azimle çalışarak büyük başarılara ulaşabilirler.\n\nAncak hırs ve güç arayışı onları zaman zaman sert ya da otoriter gösterebilir. Maneviyatla maddeyi dengelemeyi öğrendiklerinde, hem kendi hayatlarında bolluk yaratır hem de başkaları için adil bir lider olurlar.",
+      "9": "Doğum günü 9 olanlar şefkatli, idealist ve sanatsal ruhlu kişilerdir. Onlar insanlığa hizmet etmeyi, iyiliği ve güzelliği paylaşmayı yaşamlarının merkezine koyarlar. Yaratıcı yönleriyle toplumda fark yaratabilir, başkalarının hayatına dokunabilirler.\n\nBazen fazla duygusal, hayalci ya da fedakâr olabilirler. Ancak kendi sınırlarını ve gerçeklerini gözeterek yaşadıklarında, dünyada kalıcı bir iz bırakan insancıl liderler haline gelirler.",
+      "11": "Doğum günü sayısı 11 olanlar sezgisel, vizyoner ve ruhsal açıdan güçlü kişilerdir. Onların enerjisi yüksek frekansta çalışır ve çevrelerine ilham verir. Doğuştan gelen bir farkındalıkla, hayatlarında ilahi rehberliği hissetmeleri mümkündür.\n\nAncak bu yoğun enerji onları huzursuz, kaygılı veya dengesiz kılabilir. Kendilerini toprakladıklarında, çevrelerine ilham veren ve rehberlik eden bir ışık haline gelirler.",
+      "22": "Doğum günü 22 olanlar büyük vizyonların kurucusudur. Onlar güçlü hayalleri gerçeğe dönüştürme yeteneğine sahiptir. Disiplinli, pratik ve kararlı yapıları sayesinde hem maddi hem de manevi dünyada büyük başarılar elde edebilirler.\n\nFakat bu büyük enerji sorumluluk baskısı yaratabilir. Küçük hedeflerle yetinmediklerinde, büyük projeler inşa ederek dünyada kalıcı izler bırakırlar.",
+      "33": "Doğum günü 33 olanlar koşulsuz sevgi, şefkat ve şifa enerjisinin taşıyıcılarıdır. Onlar başkalarının iyiliği için yaşayan, derin bir sorumluluk ve fedakârlık duygusu hisseden kişilerdir. İnsanlara ilham verir, kalpleri yumuşatır ve topluluklara rehberlik ederler.\n\nAncak bu yüksek enerji yükümlülük baskısı yaratabilir. Kendilerini tükenmeden ifade etmeyi öğrendiklerinde, dünyada kalıcı bir şifa izi bırakırlar ve kolektifin iyileşmesine katkı sağlarlar."
+    },
+    "meanings": {
+      "1": {
+        "title": "Lider ve Öncü",
+        "description": "1 sayısı liderlik, bağımsızlık ve yeni başlangıçları temsil eder."
+      },
+      "2": {
+        "title": "Diplomat ve İşbirlikçi",
+        "description": "2 sayısı işbirliği, denge ve uyumu temsil eder."
+      },
+      "3": {
+        "title": "Yaratıcı ve İletişimci",
+        "description": "3 sayısı yaratıcılık, iletişim ve sosyalliği temsil eder."
+      },
+      "4": {
+        "title": "Pratik ve Güvenilir",
+        "description": "4 sayısı pratiklik, güvenilirlik ve stabiliteyi temsil eder."
+      },
+      "5": {
+        "title": "Özgür Ruh ve Maceracı",
+        "description": "5 sayısı özgürlük, macera ve değişimi temsil eder."
+      },
+      "6": {
+        "title": "Koruyucu ve Şefkatli",
+        "description": "6 sayısı şefkat, koruma ve sorumluluğu temsil eder."
+      },
+      "7": {
+        "title": "Bilge ve Ruhsal",
+        "description": "7 sayısı bilgelik, ruhsallık ve içe dönüklüğü temsil eder."
+      },
+      "8": {
+        "title": "Lider ve Organizatör",
+        "description": "8 sayısı liderlik, organizasyon ve maddi başarıyı temsil eder."
+      },
+      "9": {
+        "title": "Evrensel ve Cömert",
+        "description": "9 sayısı evrensellik, cömertlik ve spiritüaliteyi temsil eder."
+      },
+      "11": {
+        "title": "Ruhsal Öğretmen",
+        "description": "11 sayısı ruhsallık, sezgisel yetenekler ve öğretmenliği temsil eder."
+      },
+      "22": {
+        "title": "Usta İnşaatçı",
+        "description": "22 sayısı büyük hayalleri gerçeğe dönüştürme yeteneğini temsil eder."
+      },
+      "33": {
+        "title": "Usta Öğretmen",
+        "description": "33 sayısı en yüksek seviyede öğretmenlik ve evrensel hizmeti temsil eder."
+      }
+    },
+    "personalityMeanings": {
+      "1": "Kişilik sayısı 1 olan kişiler dışarıdan kararlı, kendinden emin ve lider ruhlu olarak algılanırlar. İnsanlar onları güçlü, özgüvenli ve cesur bir karakter olarak görür. Konuştuklarında otorite duygusu yayar, bulundukları ortamda doğal olarak dikkat çekerler.\n\nAncak bu enerji bazen başkaları tarafından otoriter, kibirli veya fazla benmerkezci olarak algılanabilir. Daha yumuşak ve paylaşımcı bir tavır geliştirdiklerinde, başkalarına ilham veren doğal bir lider haline gelirler.",
+      "2": "Kişilik sayısı 2 olan kişiler dışarıdan nazik, uyumlu ve duyarlı görünürler. Onlar başkalarıyla kolay bağ kurar, şefkatli ve anlayışlı bir enerji yayarlar. Çevrelerinde genellikle sıcak, güven veren ve işbirliğine açık bir imaj sergilerler.\n\nAncak fazla uyum arayışı, başkaları tarafından pasif ya da kararsız olarak algılanmalarına sebep olabilir. Sınırlarını net belirlediklerinde, hem nazik hem de güçlü bir duruşa sahip olurlar.",
+      "3": "Kişilik sayısı 3 olan kişiler dışarıdan enerjik, sosyal ve yaratıcı görünürler. Onlar neşeli tavırlarıyla bulundukları ortamı aydınlatır, esprili kişilikleriyle çevrelerine keyif katarlar. İnsanlar onları iletişimi güçlü, eğlenceli ve açık sözlü olarak tanır.\n\nAncak bu enerji bazen fazla dağınık, yüzeysel ya da dikkatsiz olarak algılanabilir. Odaklandıklarında, dış dünyaya neşe ve ilham getiren güçlü bir figür haline gelirler.",
+      "4": "Kişilik sayısı 4 olan kişiler dışarıdan ciddi, disiplinli ve güvenilir olarak algılanırlar. İnsanlar onları sağlam, kararlı ve çalışkan bireyler olarak tanır. Dış dünyada genellikle sorumluluk sahibi, planlı ve düzenli bir karakter sergilerler.\n\nAncak bu enerji bazen katı, inatçı veya fazla kuralcı olarak görülebilir. Daha esnek ve uyumlu olduklarında, hem güven veren hem de kolay iletişim kurulan bir kişilik haline gelirler.",
+      "5": "Kişilik sayısı 5 olan kişiler dışarıdan dinamik, özgür ruhlu ve enerjik görünürler. Onlar yenilikçi, hareketli ve maceracı bir aura taşır. İnsanlar onları canlı, değişime açık ve keşfetmeyi seven bireyler olarak tanır.\n\nAncak bu enerji bazen dengesiz, sabırsız ya da güvenilmez olarak algılanabilir. Sorumluluk bilinciyle özgürlük arzusunu dengelediklerinde, dış dünyaya ilham veren bir keşif ruhu haline gelirler.",
+      "6": "Kişilik sayısı 6 olan kişiler dışarıdan nazik, zarif ve destekleyici bir imaj sergilerler. Onlar sevgi dolu, estetik anlayışı yüksek ve uyumlu bireyler olarak tanınırlar. İnsanlar onları güven veren, şefkatli ve dengeli bir figür olarak algılar.\n\nAncak bu enerji bazen fazla müdahaleci, fedakâr ya da eleştirel olarak yansıyabilir. Kendi sınırlarını koruduklarında, başkalarına huzur ve güven veren güçlü bir kişilik haline gelirler.",
+      "7": "Kişilik sayısı 7 olan kişiler dışarıdan gizemli, düşünceli ve derin biri olarak algılanırlar. Onlar sessiz, sezgisel ve entelektüel bir aura taşır. İnsanlar onları bilge, araştırmacı ve ruhsal yönü güçlü bireyler olarak görür.\n\nAncak bu enerji bazen mesafeli, soğuk ya da içine kapanık olarak algılanabilir. Kalplerini açtıklarında, bilgelikleriyle çevrelerine ilham veren bir kişilik haline gelirler.",
+      "8": "Kişilik sayısı 8 olan kişiler dışarıdan güçlü, otoriter ve karizmatik görünürler. Onlar iş dünyasında ya da topluluklarda etkileyici bir duruş sergiler. İnsanlar onları disiplinli, kararlı ve yönetme gücüne sahip bir figür olarak algılar.\n\nAncak bu enerji bazen fazla baskıcı, hırslı veya mesafeli bir imaj yaratabilir. Gücü adaletle dengelediklerinde, çevrelerine güven ve ilham veren güçlü bir lider haline gelirler.",
+      "9": "Kişilik sayısı 9 olan kişiler dışarıdan şefkatli, sanatsal ve idealist görünürler. Onlar insanlara yardım etmeye istekli, ilham verici ve duyarlı bir enerji taşır. Çevrelerinde genellikle insancıl, sanatsal ve vizyoner bir figür olarak bilinirler.\n\nAncak bu enerji bazen fazla hayalci, duygusal ya da kırılgan olarak algılanabilir. Gerçekçilikle idealizmi birleştirdiklerinde, dış dünyada iyileştirici ve ilham verici bir kişilik haline gelirler.",
+      "11": "Kişilik sayısı 11 olan kişiler dışarıdan karizmatik, sezgisel ve ilham verici görünürler. Onlar yüksek bir enerji frekansı taşır ve çevrelerine ışık saçarlar. İnsanlar onları vizyoner, ruhsal ve farklı bir aura ile algılar.\n\nAncak bu enerji bazen başkaları tarafından anlaşılması zor, dengesiz veya fazla hassas olarak görülebilir. Dengede olduklarında, çevrelerine güçlü bir ilham ve rehberlik sunarlar.",
+      "22": "Kişilik sayısı 22 olan kişiler dışarıdan vizyoner, kararlı ve güçlü bir kurucu olarak algılanır. Onlar disiplinli, pratik ve topluluk içinde etkileyici bir aura taşırlar. İnsanlar onları sağlam projeler kuran, güvenilir ve vizyon sahibi bireyler olarak görür.\n\nAncak bu enerji bazen başkaları tarafından ağır, mesafeli veya fazla kontrolcü olarak algılanabilir. Dengeli olduklarında, toplumda kalıcı değerler yaratan güçlü bir figür haline gelirler.",
+      "33": "Kişilik sayısı 33 olan kişiler dışarıdan şefkatli, öğretici ve şifacı bir imaj sergilerler. Onlar çevrelerine koşulsuz sevgi, anlayış ve güven aurası taşırlar. İnsanlar onları rehber, destekleyici ve bilgelik kaynağı olarak görür.\n\nAncak bu enerji bazen fazla fedakâr, kendini ihmal eden ya da aşırı sorumluluk alan bir imaj yaratabilir. Dengede kaldıklarında, hem çevrelerine şifa getiren hem de ilham veren güçlü bir kişilik haline gelirler."
+    },
+    "maturityMeanings": {
+      "1": "Olgunluk sayısı 1 olan kişiler, yaşamlarının ikinci yarısında bağımsızlık, liderlik ve kendi yollarını çizme temasını daha güçlü hissederler. Bu dönemde kendi potansiyellerini ortaya koymak, yeni başlangıçlar yapmak ve önderlik etmek için büyük fırsatlar bulurlar. İçsel güçleri onları kendi hayatlarının kaptanı yapar.\n\nAncak bu enerji bazen yalnızlık, otoriterlik veya sabırsızlık olarak gölge yansıyabilir. Başkalarıyla işbirliğini öğrenip bireyselliklerini uyumla dengelediklerinde, topluma ilham veren vizyoner liderler haline gelirler.",
+      "2": "Olgunluk sayısı 2 olan kişiler, yaşamlarının ilerleyen yıllarında uyum, denge ve işbirliği temalarını deneyimler. Bu dönemde diplomasi, ortaklıklar ve duygusal bağlar ön plana çıkar. Onların kalbi, barış ve anlayış yaratmaya yönelir.\n\nAncak fazla hassasiyet veya başkalarına bağımlılık bu sürecin gölge yönü olabilir. Kendi değerlerini fark ettiklerinde ve sınırlarını koruduklarında, çevrelerine huzur ve sevgi getiren bir rehber haline gelirler.",
+      "3": "Olgunluk sayısı 3 olan kişiler için yaşamın ikinci yarısı yaratıcılık, ifade ve ilham dönemidir. Sanat, yazı, iletişim ya da sosyal alanlarda daha fazla öne çıkma arzusu doğar. Bu kişiler, hayatlarını daha neşeli ve enerjik bir şekilde yaşamayı seçerler.\n\nAncak yüzeysellik ya da dağınıklık bu sürecin gölge yönü olabilir. Disiplin geliştirdiklerinde, ifade güçleriyle başkalarının kalbine dokunan ilham verici bireyler olurlar.",
+      "4": "Olgunluk sayısı 4 olan kişiler, ilerleyen yıllarında disiplin, düzen ve yapı kurma temalarını deneyimlerler. Bu dönemde istikrar yaratmak, kalıcı projeler inşa etmek ve güvenilirliklerini kanıtlamak ön plana çıkar. Onlar sabırla çalışarak kalıcı başarılar elde ederler.\n\nAncak fazla katılık, değişime direnç veya aşırı kontrol eğilimi gölge yön olabilir. Esneklik geliştirdiklerinde, hem kendilerine hem de başkalarına güven veren güçlü bir yapı kurarlar.",
+      "5": "Olgunluk sayısı 5 olan kişiler için yaşamın ikinci yarısı özgürlük, değişim ve keşiflerle doludur. Bu dönemde yeni kültürler, yeni deneyimler ve maceralar onları bekler. Esnek yapıları sayesinde hayatın dönüşümlerini kolayca kucaklarlar.\n\nAncak sabırsızlık ya da istikrarsızlık bu sürecin gölge yönü olabilir. Özgürlüğü sorumlulukla dengelediklerinde, yaşamları hem kendileri hem de başkaları için ilham verici bir yolculuğa dönüşür.",
+      "6": "Olgunluk sayısı 6 olan kişiler, yaşamlarının ikinci yarısında aile, sevgi ve sorumluluk temalarını daha yoğun yaşarlar. Onlar için bu dönem, sevdiklerine daha çok zaman ayırma, topluma hizmet etme ve güzellik yaratma dönemidir. Estetik, uyum ve şefkat bu dönemin anahtarlarıdır.\n\nAncak fazla fedakârlık ya da başkalarının sorunlarını üstlenmek onları yorabilir. Kendi ihtiyaçlarını da gözetmeyi öğrendiklerinde, hem kendilerine hem de çevrelerine şifa veren bir güç haline gelirler.",
+      "7": "Olgunluk sayısı 7 olan kişiler için ilerleyen yıllar ruhsal derinlik, araştırma ve bilgelik arayışıyla geçer. Bu dönemde daha fazla içe dönüş, öğrenme ve spiritüel keşifler gündeme gelir. Yalnızlık onlar için bir yük değil, bilgelik kaynağı olur.\n\nAncak fazla içe kapanma ya da mesafe koyma eğilimi gölge yön olabilir. Bilgeliklerini başkalarıyla paylaştıklarında, çevrelerine ışık tutan rehberler haline gelirler.",
+      "8": "Olgunluk sayısı 8 olan kişiler, yaşamlarının ikinci yarısında güç, yönetim ve maddi başarı temalarıyla yüzleşir. Bu dönemde iş dünyasında veya topluluklarda etkili konumlara gelebilirler. Azimleri sayesinde bolluk ve refah yaratma potansiyeline sahiptirler.\n\nAncak fazla hırs, kontrol arzusu veya otoriterlik bu sürecin gölge yönü olabilir. Maddi başarıyı maneviyatla dengelediklerinde, hem güçlü hem de adil liderler olurlar.",
+      "9": "Olgunluk sayısı 9 olan kişiler için yaşamın ilerleyen yılları şefkat, idealizm ve insanlığa hizmet temalarıyla şekillenir. Onlar başkalarının hayatına dokunmayı, dünyada iz bırakmayı ve sanatsal/insancıl projelerle katkı sunmayı önemserler.\n\nAncak fazla hayalcilik ya da aşırı fedakârlık gölge yön olabilir. Gerçekçiliği idealizmleriyle birleştirdiklerinde, topluma ilham veren ve iyileştirici bir figür haline gelirler.",
+      "11": "Olgunluk sayısı 11 olan kişiler, yaşamlarının ikinci yarısında sezgi, vizyon ve spiritüel rehberlik temasını daha yoğun hissederler. Bu dönem onlar için ilham verici projeler ve başkalarına ışık tutma fırsatlarıyla doludur.\n\nAncak yoğun enerji kaygı veya dengesizlik yaratabilir. Kendilerini dengelediklerinde, topluma rehberlik eden ve yüksek bir vizyon sunan güçlü bir figür haline gelirler.",
+      "22": "Olgunluk sayısı 22 olan kişiler için ilerleyen yıllar büyük projeler ve kalıcı miraslar yaratma dönemi olur. Onlar hayallerini gerçeğe dönüştürme, topluma somut katkılar sağlama potansiyeline sahiptir. Disiplinli ve vizyoner yapıları bu dönemde daha da güçlenir.\n\nAncak ağır sorumluluk baskısı gölge yön olabilir. Küçük hedeflerle yetinmediklerinde, dünyada kalıcı eserler inşa ederek unutulmaz bir figür haline gelirler.",
+      "33": "Olgunluk sayısı 33 olan kişiler, yaşamlarının ikinci yarısında koşulsuz sevgi, şefkat ve şifa enerjisini yoğun biçimde hissederler. Bu dönem başkalarına ilham verme, öğreticilik yapma ve toplumu iyileştirme fırsatlarıyla doludur.\n\nAncak aşırı sorumluluk ya da tükenmişlik gölge yön olabilir. Dengeli kaldıklarında, hem sevdiklerine hem de topluma ışık tutan güçlü bir şifacı haline gelirler."
+    },
+    "pinnaclesMeanings": {
+      "1": "Zirve 1, kişinin hayatında bağımsızlık ve liderlik temasının güçlü şekilde öne çıktığını gösterir. Bu dönemde kişi yeni başlangıçlar yapar, kendi yolunu çizmek için cesur adımlar atar. İçinde yanan kıvılcım, bireysel başarılar ve girişimcilik için fırsatlar yaratır.\n\nAncak bu dönemde fazla benmerkezci veya otoriter davranma riski vardır. Başkalarıyla işbirliğini öğrenmek, vizyonu genişletmek ve bağımsızlıkla uyumu dengelemek, bu zirvenin potansiyelini en iyi şekilde ortaya çıkarır.",
+      "2": "Zirve 2, kişinin hayatında uyum, ortaklıklar ve işbirliği fırsatlarının arttığını gösterir. Bu dönem, ilişkilerde derin bağlar kurmak, barışı sağlamak ve diplomatik becerileri geliştirmek için ideal bir zamandır.\n\nAncak bu süreçte aşırı hassasiyet, kararsızlık ya da bağımlılık eğilimleri olabilir. Sağlıklı sınırlar korunduğunda, kişi başkalarıyla birlikte büyük başarılar elde eder ve çevresine huzur getiren bir güç haline gelir.",
+      "3": "Zirve 3, kişinin hayatında yaratıcılık, ifade ve sosyal başarıların ön plana çıktığını gösterir. Bu dönemde kişi sanat, iletişim, yazı veya sahne alanında öne çıkabilir. Enerjisi yüksek, neşeli ve ilham verici bir dönemdir.\n\nAncak bu süreçte yüzeysellik veya dağınıklık engelleyici olabilir. Odaklanıldığında, yaratıcılık hem kişisel hem de toplumsal bir ışığa dönüşür.",
+      "4": "Zirve 4, kişinin hayatında disiplin, çalışma ve düzen kurma temasının öne çıktığını gösterir. Bu dönem, sağlam temeller atma, kalıcı projeler oluşturma ve sorumluluk üstlenme zamanı olabilir.\n\nAncak katı kurallar veya değişime direnç, bu sürecin gölge yönü olabilir. Esneklik geliştirildiğinde, zirve 4 büyük istikrar ve güvenin temeli olur.",
+      "5": "Zirve 5, kişinin hayatında özgürlük, değişim ve keşif enerjisinin yoğunlaştığını gösterir. Bu dönem, yeni deneyimler kazanmak, seyahat etmek veya köklü dönüşümler yapmak için güçlü fırsatlar sunar.\n\nAncak sabırsızlık ve istikrarsızlık bu dönemin riskleridir. Sorumluluk bilinciyle özgürlük arzusunu dengelemek, zirve 5'in potansiyelini tam anlamıyla açığa çıkarır.",
+      "6": "Zirve 6, kişinin hayatında aile, sorumluluk ve sevgi temasının ön plana çıktığını gösterir. Bu dönem, ilişkilerde uyum, estetik yaratma ve topluma hizmet etme zamanı olabilir.\n\nAncak fazla fedakârlık veya başkalarının sorunlarını üstlenme eğilimi yorucu olabilir. Kendi ihtiyaçlarını gözeterek denge kurmak, bu dönemin ışığını açığa çıkarır.",
+      "7": "Zirve 7, kişinin hayatında ruhsallık, araştırma ve bilgelik temasının güçlendiğini gösterir. Bu dönemde kişi içsel dünyasına daha fazla döner, sezgilerini takip eder ve hayatın anlamını sorgular.\n\nAncak aşırı içe kapanma veya yalnızlık duygusu gölge yön olabilir. Bilgeliği başkalarıyla paylaşmak, bu zirveyi parlak bir döneme dönüştürür.",
+      "8": "Zirve 8, kişinin hayatında güç, başarı ve maddi refah temasının öne çıktığını gösterir. Bu dönem iş hayatında yükseliş, liderlik fırsatları ve finansal başarı getirebilir.\n\nAncak aşırı hırs, kontrol arzusu veya otoriter tavırlar bu sürecin gölge yönü olabilir. Maneviyatla dengelendiğinde, zirve 8 kalıcı başarıların kapısını aralar.",
+      "9": "Zirve 9, kişinin hayatında şefkat, hizmet ve idealizm temasını yoğun şekilde ortaya çıkarır. Bu dönem, başkalarına yardım etme, sanatsal çalışmalar ve topluma katkı sağlama zamanı olabilir.\n\nAncak aşırı fedakârlık ya da hayalcilik gölge yön olabilir. Gerçekçilikle birleştiğinde, zirve 9 dünyaya kalıcı iz bırakan projeler getirir.",
+      "11": "Zirve 11, kişinin hayatında ilham, sezgi ve vizyon temasını ortaya çıkarır. Bu dönem ruhsal farkındalığın arttığı, ilham verici projelerin gündeme geldiği bir zaman dilimidir.\n\nAncak yoğun enerji kaygı ve huzursuzluk yaratabilir. Dengede kaldığında, zirve 11 çevresine ışık tutan bir rehberlik dönemine dönüşür.",
+      "22": "Zirve 22, kişinin hayatında büyük projeler, kalıcı miraslar ve toplumsal katkılar öne çıkar. Bu dönem vizyonların gerçeğe dönüştüğü, somut başarıların elde edildiği bir süreçtir.\n\nAncak sorumluluk baskısı veya kontrol arzusu gölge yön olabilir. Bu enerjiyi dengeli kullandığında, kişi dünyada unutulmaz izler bırakır.",
+      "33": "Zirve 33, kişinin hayatında koşulsuz sevgi, şefkat ve hizmet temalarının yoğunlaştığını gösterir. Bu dönem, topluma rehberlik etme, şifa getirme ve öğreticilikle parlamak için güçlü bir fırsattır.\n\nAncak fazla sorumluluk ya da tükenmişlik riski olabilir. Dengeli olduğunda, zirve 33 topluma ilham veren güçlü bir şifalandırma dönemi sunar."
+    },
+    "challengesMeanings": {
+      "1": "Zorluk 1, kişinin benlik duygusunu geliştirmeyi öğrenmesi gerektiğini gösterir. Bu süreçte özgüven eksikliği, kararsızlık veya bağımsızlık korkusu gibi dersler gündeme gelebilir.\n\nKendi kimliğini sahiplenmeyi ve cesaretle ifade etmeyi öğrendiğinde, kişi içsel gücünü bulur.",
+      "2": "Zorluk 2, kişinin ilişkilerde denge ve uyum kurmayı öğrenmesi gerektiğini gösterir. Bu süreçte aşırı hassasiyet, bağımlılık veya kararsızlık dersleriyle karşılaşabilir.\n\nKendi değerini bilip sınırlarını koruduğunda, uyumlu ve sevgi dolu ilişkiler kurar.",
+      "3": "Zorluk 3, kişinin ifade özgürlüğünü geliştirmeyi öğrenmesi gerektiğini gösterir. Bu süreçte utanma, kendini saklama veya yüzeysellik dersleri öne çıkabilir.\n\nYaratıcılığını disiplinle ortaya koyduğunda, kişi ilham verici bir şekilde parlar.",
+      "4": "Zorluk 4, kişinin disiplin, sabır ve düzen kurmayı öğrenmesi gerektiğini gösterir. Bu süreçte dağınıklık, tembellik veya istikrarsızlık dersleriyle karşılaşabilir.\n\nÇalışkanlık ve sorumluluk geliştirdiğinde, güçlü bir temel kurar.",
+      "5": "Zorluk 5, kişinin özgürlüğü sorumlulukla dengelemeyi öğrenmesi gerektiğini gösterir. Bu süreçte aşırı özgürlük arayışı, sabırsızlık veya bağlanma korkusu gündeme gelebilir.\n\nÖzgürlüğünü bilinçli bir şekilde kullandığında, hayatı ilham verici bir yolculuğa dönüşür.",
+      "6": "Zorluk 6, kişinin ilişkilerde sorumluluk ve sevgi dengesini öğrenmesi gerektiğini gösterir. Bu süreçte aşırı fedakârlık, müdahalecilik veya eleştirellik dersleri öne çıkabilir.\n\nKendi ihtiyaçlarını gözettiğinde, gerçek bir şifa ve uyum kaynağı olur.",
+      "7": "Zorluk 7, kişinin içsel güvenini ve inancını geliştirmesi gerektiğini gösterir. Bu süreçte yalnızlık, şüphecilik veya kopukluk dersleri gündeme gelebilir.\n\nSezgilerine güvenmeyi öğrendiğinde, bilgeliğiyle çevresine ışık tutar.",
+      "8": "Zorluk 8, kişinin güç, otorite ve para ile ilişkisini öğrenmesi gerektiğini gösterir. Bu süreçte hırs, kontrol veya maddi bağımlılık dersleriyle karşılaşabilir.\n\nGücü adaletle kullandığında, gerçek bir lider olur.",
+      "9": "Zorluk 9, kişinin bırakmayı ve affetmeyi öğrenmesi gerektiğini gösterir. Bu süreçte hayal kırıklıkları, aşırı fedakârlık veya geçmişe tutunma dersleri öne çıkabilir.\n\nBırakmayı öğrendiğinde, daha bilge ve özgür bir şekilde ilerler."
+    },
+    "personalYearMeanings": {
+      "1": "Kişisel yıl 1, yeni başlangıçların, tohumların ekildiği ve hayatın yeni bir döngüsünün başladığı zamandır. Bu yıl kişi cesaretle yeni projelere adım atabilir, bireysel gücünü keşfeder ve kendi yolunu çizmek için fırsatlar yakalar. Bu dönem, liderlik, girişimcilik ve bireysel ifade açısından güçlüdür.\n\nAncak sabırsızlık ya da yalnızlık bu yılın gölge yönleri olabilir. Yavaş ve bilinçli adımlar atıldığında, kişisel yıl 1 kişinin geleceğini şekillendirecek sağlam temeller atmasını sağlar.",
+      "2": "Kişisel yıl 2, sabır, işbirliği ve uyumun zamanı olarak bilinir. Bu yıl ilişkiler, ortaklıklar ve duygusal bağlar ön plana çıkar. Kişi, destek almak ve başkalarıyla birlikte hareket etmek için uygun bir dönemden geçer. Diplomasi, anlayış ve şefkat öne çıkar.\n\nAncak aşırı hassasiyet veya kararsızlık bu yılın gölge yönü olabilir. Kendi sınırlarını koruduğunda ve sabırla ilerlediğinde, kişisel yıl 2 ilişkilerde kalıcı uyum getirir.",
+      "3": "Kişisel yıl 3, yaratıcılık, ifade ve neşenin öne çıktığı bir dönemdir. Bu yıl kişi sosyal ilişkilerde parlayabilir, sanat, yazı veya iletişim alanında öne çıkabilir. Neşe, eğlence ve ilham dolu bir enerji akışı vardır.\n\nAncak yüzeysellik ya da dağınıklık bu yılın gölge yönü olabilir. Odaklanma ve disiplinle birlikte bu dönem, kişinin hayatında kalıcı başarılar getirecek yaratıcı projelere dönüşebilir.",
+      "4": "Kişisel yıl 4, çalışma, disiplin ve yapı kurma yılıdır. Bu dönemde kişi sabırla çalışır, planlı hareket eder ve kalıcı temeller atar. İstikrar yaratma ve güvenlik sağlama isteği ön plandadır.\n\nAncak aşırı katılık ya da değişime direnç bu yılın gölge yönü olabilir. Esneklikle birlikte çalışıldığında, kişisel yıl 4 gelecekte büyük başarıların temellerini oluşturur.",
+      "5": "Kişisel yıl 5, özgürlük, değişim ve keşif yılıdır. Bu dönemde kişi yeni deneyimlere açılır, farklı insanlarla tanışır ve hayatına heyecan katar. Seyahat, yenilik ve köklü dönüşümler bu yılın anahtarlarıdır.\n\nAncak sabırsızlık, dengesizlik ya da bağlanma korkusu bu yılın gölge yönü olabilir. Sorumlulukla özgürlüğü dengelediğinde, kişisel yıl 5 büyük fırsatların kapısını aralar.",
+      "6": "Kişisel yıl 6, aile, sorumluluk ve sevgi temalarının öne çıktığı bir dönemdir. Bu yıl kişi sevdikleriyle daha fazla vakit geçirir, topluma hizmet etme isteği artar ve estetik yaratma arzusu güçlenir. Uyum ve şefkat bu yılın anahtarıdır.\n\nAncak aşırı fedakârlık ya da başkalarının sorunlarını üstlenme eğilimi yorucu olabilir. Kendi ihtiyaçlarını gözeterek denge kurulduğunda, kişisel yıl 6 hem huzur hem de uyum getirir.",
+      "7": "Kişisel yıl 7, içsel derinlik, araştırma ve ruhsal keşif dönemidir. Bu yıl kişi kendine dönmek, sezgilerini dinlemek ve hayatın anlamını sorgulamak için ideal bir zamandadır. Meditasyon, eğitim ve araştırma bu dönemde desteklenir.\n\nAncak aşırı yalnızlık ya da şüphecilik bu yılın gölge yönü olabilir. İçsel bilgelik başkalarıyla paylaşıldığında, kişisel yıl 7 aydınlatıcı bir döneme dönüşür.",
+      "8": "Kişisel yıl 8, güç, başarı ve bolluk enerjisinin öne çıktığı bir dönemdir. Bu yıl kişi iş hayatında yükseliş yaşayabilir, finansal başarılar elde edebilir ve liderlik fırsatları yakalayabilir. Kararlılık ve disiplin bu dönemin temelidir.\n\nAncak aşırı hırs ya da kontrol arzusu bu yılın gölge yönü olabilir. Maddi başarıyı manevi değerlerle dengelediğinde, kişisel yıl 8 kalıcı refah getirir.",
+      "9": "Kişisel yıl 9, tamamlanma ve bırakma dönemidir. Bu yıl kişi geçmişten gelen bağları çözebilir, eski alışkanlıkları bırakabilir ve hayatında yeni bir döngüye yer açabilir. Şefkat, idealizm ve insanlığa hizmet bu dönemin anahtarlarıdır.\n\nAncak aşırı duygusallık ya da geçmişe takılma bu yılın gölge yönü olabilir. Bırakmayı öğrendiğinde, kişisel yıl 9 büyük bir dönüşüm ve içsel özgürlük getirir."
+    },
+    "compatibilityMeanings": {
+      "1": "İlişkide bir tarafın ya da her iki tarafın sayısı 1 olduğunda, güçlü bir liderlik ve bağımsızlık enerjisi hakim olur. Bu bağda tutku, hareketlilik ve girişimcilik vardır. İlişkiye canlılık katar ve çift, yeni başlangıçlarda birbirine destek olabilir.\n\nAncak iki taraf da fazla kontrolcü ya da inatçı olduğunda çatışmalar doğabilir. Bu enerjiyi dengelemek için karşılıklı saygı ve işbirliği şarttır; böylece ilişki hem güçlü hem de ilham verici bir yolculuğa dönüşür.",
+      "2": "İlişkide 2 sayısı, uyum, denge ve hassasiyet getirir. Çift arasında duygusal bağ kuvvetli olur; taraflar birbirini anlamaya, desteklemeye ve birlikte hareket etmeye yatkındır. Bu enerji, romantizmi ve samimiyeti artırır.\n\nAncak fazla hassasiyet veya bağımlılık ilişkiye zarar verebilir. Taraflar kendi sınırlarını koruduğunda, 2 enerjisi sevgi dolu ve uzun ömürlü bir birliktelik yaratır.",
+      "3": "İlişkide 3 sayısı, neşe, iletişim ve yaratıcılık getirir. Çift birlikte eğlenmeyi, sosyalleşmeyi ve hayatı keyifli hale getirmeyi başarır. Aralarındaki bağda esprili, pozitif ve sanatsal bir enerji vardır.\n\nAncak yüzeysellik ya da aşırı dağınıklık ilişkiye zarar verebilir. Odaklandıklarında, 3 enerjisi ilişkiye ilham ve mutluluk katar.",
+      "4": "İlişkide 4 sayısı, istikrar, güven ve sorumluluk getirir. Çift, birlikte sağlam bir temel oluşturabilir, uzun vadeli planlar yapabilir ve güvenli bir hayat kurabilir. Bu enerji bağlılık ve dayanıklılığı güçlendirir.\n\nAncak fazla katılık ya da inatçılık sorun yaratabilir. Esneklikle desteklendiğinde, 4 enerjisi ilişkiye kalıcı güven ve sadakat kazandırır.",
+      "5": "İlişkide 5 sayısı, özgürlük, heyecan ve macera getirir. Çift birlikte yeni deneyimler yaşar, seyahat eder ve hayatlarına renk katar. İlişkide hareketlilik ve dinamizm öne çıkar.\n\nAncak fazla özgürlük isteği bağlanma sorunlarına yol açabilir. Sorumluluk bilinciyle denge sağlandığında, 5 enerjisi ilişkiye ilham ve tutkuyu taşır.",
+      "6": "İlişkide 6 sayısı, sevgi, uyum ve aile enerjisi getirir. Çift arasında şefkatli, sorumluluk sahibi ve dengeli bir bağ oluşur. Bu enerji güven ve bağlılığı artırır, aile kurma isteğini güçlendirir.\n\nAncak fazla fedakârlık veya müdahalecilik sorun yaratabilir. Kendi ihtiyaçlarını da gözeten bir dengeyle 6 enerjisi şefkatli ve kalıcı bir ilişki sunar.",
+      "7": "İlişkide 7 sayısı, derinlik, ruhsallık ve bilgelik getirir. Çift arasında sezgisel ve entelektüel bir bağ oluşur. Bu enerji ilişkide samimi sohbetleri, içsel keşifleri ve manevi yakınlığı destekler.\n\nAncak fazla içe kapanıklık ya da mesafe sorun yaratabilir. Duygusal açıklık sağlandığında, 7 enerjisi ruhsal bir ortaklık yaratır.",
+      "8": "İlişkide 8 sayısı, güç, başarı ve kararlılık enerjisi getirir. Çift birlikte hedeflerine ulaşmak için güçlü bir ekip olabilir. Finansal başarı ve toplumsal statü bu bağda öne çıkabilir.\n\nAncak fazla hırs ya da kontrol arzusu çatışmalara yol açabilir. Gücü adaletle dengelediklerinde, 8 enerjisi ilişkide kalıcı başarı ve refah yaratır.",
+      "9": "İlişkide 9 sayısı, şefkat, idealizm ve fedakârlık enerjisi getirir. Çift, birlikte insanlığa faydalı işler yapmak veya sanatsal projelerde yer almak isteyebilir. Bu enerji romantizm ve duyarlılığı artırır.\n\nAncak aşırı fedakârlık veya hayalcilik sorun olabilir. Gerçekçilikle birleştiğinde, 9 enerjisi sevgi dolu ve ilham verici bir ilişki yaratır.",
+      "11": "İlişkide 11 sayısı, yüksek sezgi, vizyon ve ruhsal bağ getirir. Çift arasında derin bir anlayış, telepatik hissediş ve güçlü bir manevi bağ olabilir. Bu enerji, aşkı ruhsal bir deneyime dönüştürür.\n\nAncak yoğun enerji kaygı veya dengesizlik yaratabilir. Dengede olduklarında, 11 enerjisi aşkı ilham verici bir ışık haline getirir.",
+      "22": "İlişkide 22 sayısı, büyük vizyonların, kalıcı projelerin ve güçlü bir ortaklığın enerjisini taşır. Çift birlikte hayatlarında kalıcı yapılar inşa edebilir, hem maddi hem manevi açıdan güçlenebilir.\n\nAncak ağır sorumluluk ya da fazla kontrol arzusu sorun olabilir. Dengeli olduğunda, 22 enerjisi ilişkiyi kalıcı ve güçlü bir ortaklığa dönüştürür.",
+      "33": "İlişkide 33 sayısı, koşulsuz sevgi, şefkat ve şifa enerjisini taşır. Çift, birbirine derin bir bağlılık ve fedakârlıkla yaklaşır. Bu bağ öğretici, şifalandırıcı ve ilham verici bir ilişki yaratabilir.\n\nAncak fazla fedakârlık ya da tükenmişlik riski vardır. Sağlıklı sınırlar korunduğunda, 33 enerjisi aşkı dönüştürücü bir şifaya dönüştürür."
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Hoş geldiniz",
+    "userInfo": "Kullanıcı Bilgileri",
+    "quickActions": "Hızlı İşlemler",
+    "quickAccess": "Hızlı Erişim",
+    "recentReadings": "Son Okumalar",
+    "recentTransactions": "Son İşlemler",
+    "creditBalance": "Kredi Bakiyesi",
+    "creditPackages": "Kredi Paketleri",
+    "accountSettings": "Hesap Ayarları",
+    "creditHistory": "Kredi Geçmişi",
+    "readingHistory": "Okuma Geçmişi",
+    "statistics": "İstatistikler",
+    "totalReadings": "Toplam Okuma",
+    "membershipDuration": "Üyelik Süresi",
+    "userLevel": "Kullanıcı Seviyesi",
+    "admin": "Admin",
+    "user": "Kullanıcı",
+    "beginner": "Başlangıç",
+    "intermediate": "Orta",
+    "expert": "Uzman",
+    "readings": "Okumalar",
+    "readingsPage": {
+      "title": "Okumalarım",
+      "subtitle": "Tüm mistik deneyimleriniz",
+      "totalReadings": "Toplam Okuma",
+      "loveReadings": "Aşk Okumaları",
+      "generalReadings": "Genel Okumalar",
+      "totalCredits": "Toplam Kredi",
+      "allTypes": "Tüm Türler",
+      "loveType": "Aşk Okuması",
+      "generalType": "Genel Okuma",
+      "careerType": "Kariyer Okuması",
+      "numerologyType": "Numeroloji",
+      "allTime": "Tüm Zamanlar",
+      "lastWeek": "Son 1 Hafta",
+      "lastMonth": "Son 1 Ay",
+      "lastYear": "Son 1 Yıl",
+      "clearFilters": "Filtreleri Temizle",
+      "noReadings": "Henüz Okuma Yok",
+      "noReadingsDesc": "İlk mistik deneyiminizi yaşamaya hazır mısınız?",
+      "startFirstReading": "İlk Okumayı Başlat",
+      "loadMore": "Daha Fazla Yükle",
+      "loading": "Yükleniyor...",
+      "searchPlaceholder": "Okuma ara...",
+      "view": "Görüntüle",
+      "download": "İndir",
+      "credits": "kredi",
+      "detailModal": {
+        "readingDate": "Okuma Tarihi",
+        "creditCost": "Kredi Maliyeti",
+        "status": "Durum",
+        "statusCompleted": "Tamamlandı",
+        "statusReviewed": "İncelendi",
+        "statusPending": "Beklemede",
+        "yourQuestion": "Sorunuz",
+        "drawnCards": "Çekilen Kartlar",
+        "interpretation": "Yorumlama",
+        "adminNotes": "Admin Notları",
+        "close": "Kapat",
+        "download": "İndir"
+      }
+    },
+    "statistics": "İstatistikler",
+    "settings": "Ayarlar",
+    "profile": "Profil",
+    "signOut": "Çıkış Yap",
+    "editProfile": "Profili Düzenle",
+    "saveChanges": "Değişiklikleri Kaydet",
+    "cancel": "İptal",
+    "displayName": "Görünen Ad",
+    "email": "E-posta",
+    "userId": "Kullanıcı ID",
+    "role": "Rol",
+    "memberSince": "Üye Olma Tarihi",
+    "creditAlert": "Düşük Kredi Bakiyesi",
+    "creditAlertMessage": "Daha fazla okuma yapmak için kredi satın alın",
+    "buyCredits": "Kredi Satın Al",
+    "last30Days": "Son 30 gün",
+    "completedReadings": "okuma tamamlandı"
+  },
+  "tarotPage": {
+    "title": "Kaderinizi Keşfedin",
+    "lastReading": "Son Okuma",
+    "cardsDrawn": "kart çekildi",
+    "loveSpread": {
+      "name": "Aşk Açılımı",
+      "description": "İlişkiler ve duygusal bağlar için 4 kartlık özel açılım",
+      "summary": "Aşk Hayatı Özeti",
+      "summaryText": "Bu açılım, {card1} kartının temsil ettiği kişiyle olan ilişkinizin dinamiklerini gösteriyor. Aranızdaki fiziksel ({card2}) ve duygusal ({card3}) bağların ardından, ilişkinizin uzun vadeli potansiyeli {card4} kartıyla aydınlanıyor.",
+      "detailedReading": {
+        "title": "💕 Aşk Tarot Açılımı - Detaylı Kişisel Okuma 💕",
+        "concern": "💭 Endişeniz",
+        "understanding": "🎯 Anlamak İstedikleriniz",
+        "emotional": "💫 Duygusal Durumunuz",
+        "generalMessage": "AŞK YOLCULUĞUNUZ İÇİN GENEL MESAJ",
+        "message": "Bu kartlar, aşk yolculuğunuzda şunu gösteriyor: İlişki dinamiklerinizde önemli bir dönüm noktadasınız.\n\n{card1} kartı, ilgilendiğiniz kişinin enerjisini yansıtırken, {card2} aranızdaki fiziksel ve cinsel çekimi gösteriyor.\n\n{card3} kartı duygusal bağınızı, {card4} ise ilişkinizin uzun vadeli potansiyelini ortaya koyuyor.",
+        "guideMessage": "Aşk rehberinizin mesajı: \"En derin bağlar, karşılıklı anlayış ve açık iletişimle kurulur. Kalbinizin sesini dinleyin.\"",
+        "dateMessage": "Bu okuma {date} tarihinde size özel olarak hazırlanmıştır."
+      }
+    },
+    "positions": {
+      "personOfInterest": "İlgi Duyduğun Kişi",
+      "physicalConnection": "Fiziksel/Cinsel Bağlantı", 
+      "emotionalConnection": "Duygusal/Ruhsal Bağlantı",
+      "longTermOutcome": "Uzun Vadeli Sonuç"
+    },
+    "positionDescriptions": {
+      "personOfInterest": "Hakkında soru sorduğun kişi",
+      "physicalConnection": "Fiziksel ve cinsel bağlantınız",
+      "emotionalConnection": "Duygusal ve ruhsal bağlantınız", 
+      "longTermOutcome": "İlişkinin uzun vadeli sonucu"
+    }
+  },
+  "seo": {
+    "title": "Tarot Okuması - Kaderinizi Keşfedin",
+    "description": "Profesyonel tarot okuması hizmeti. Aşk, kariyer, sağlık ve daha fazlası için rehberlik alın.",
+    "keywords": "tarot, okuma, kader, aşk, kariyer, sağlık, rehberlik, kartlar",
+    "ogTitle": "Tarot Okuması - Kaderinizi Keşfedin",
+    "ogDescription": "Profesyonel tarot okuması hizmeti ile kaderinizi keşfedin.",
+    "ogImage": "/images/og-image.jpg"
+  },
+  "auth": {
+    "page": {
+      "mysticalEntry": "Mistik Dünyaya Giriş",
+      "journeyStart": "Yolculuğa Başla",
+      "emailPlaceholder": "E-posta adresiniz",
+      "passwordPlaceholder": "Şifreniz",
+      "confirmPasswordPlaceholder": "Şifrenizi tekrar girin",
+      "fullNamePlaceholder": "Ad Soyad",
+      "birthDatePlaceholder": "Doğum Tarihi",
+      "genderPlaceholder": "Cinsiyet seçin",
+      "genderMale": "Erkek",
+      "genderFemale": "Kadın",
+      "genderOther": "Diğer",
+      "genderPreferNotToSay": "Belirtmek istemiyorum",
+      "processing": "⏳ İşleniyor...",
+      "signIn": "🔮 Giriş Yap",
+      "signUp": "✨ Kayıt Ol",
+      "loggingIn": "🔐 Giriş yapılıyor...",
+      "registering": "📝 Kayıt oluşturuluyor...",
+      "checkingEmail": "📧 E-posta kontrol ediliyor...",
+      "checkingAuth": "🔍 Giriş durumu kontrol ediliyor...",
+      "validating": "✅ Doğrulanıyor...",
+      "successLogin": "Giriş başarılı! Yönlendiriliyorsunuz...",
+      "successRegister": "Kayıt başarılı! E-postanızı kontrol edin.",
+      "errorOccurred": "Bir hata oluştu",
+      "noAccount": "Hesabınız yok mu? Kayıt olun",
+      "hasAccount": "Zaten hesabınız var mı? Giriş yapın",
+      "emailRequired": "E-posta adresi gerekli",
+      "emailInvalid": "Geçerli bir e-posta adresi girin",
+      "passwordRequired": "Şifre gerekli",
+      "passwordMinLength": "Şifre en az 6 karakter olmalı",
+      "confirmPasswordRequired": "Şifre onayı gerekli",
+      "passwordsNotMatch": "Şifreler eşleşmiyor",
+      "fullNameRequired": "Ad soyad gerekli",
+      "fullNameMinLength": "Ad soyad en az 2 karakter olmalı",
+      "birthDateRequired": "Doğum tarihi gerekli",
+      "birthDateMinAge": "13 yaşından küçük kullanıcılar kayıt olamaz",
+      "birthDateMaxAge": "Geçerli bir doğum tarihi girin",
+      "genderRequired": "Cinsiyet seçimi gerekli",
+      "invalidCredentials": "Geçersiz e-posta veya şifre",
+      "userAlreadyExists": "Bu e-posta adresi zaten kayıtlı",
+      "rememberMe": "Beni hatırla",
+      "forgotPassword": "Şifremi unuttum",
+      "resetPassword": "Şifre Sıfırla",
+      "resetPasswordTitle": "Şifre Sıfırlama",
+      "resetPasswordSubtitle": "E-posta adresinizi girin, size şifre sıfırlama bağlantısı gönderelim",
+      "resetPasswordEmailSent": "Şifre sıfırlama bağlantısı e-posta adresinize gönderildi",
+      "resetPasswordError": "Şifre sıfırlama bağlantısı gönderilemedi",
+      "backToLogin": "Giriş sayfasına dön",
+      "orContinueWith": "veya şununla devam edin",
+      "googleSignIn": "Google ile Giriş Yap",
+      "facebookSignIn": "Facebook ile Giriş Yap",
+      "googleSignUp": "Google ile Kayıt Ol",
+      "facebookSignUp": "Facebook ile Kayıt Ol",
+      "socialLoginError": "Sosyal medya girişi başarısız oldu"
+    },
+    "notice": {
+      "checkEmail": "E-posta adresinizi kontrol edin ve üyeliğinizi onaylayın",
+      "emailConfirmed": "E-posta adresiniz onaylandı! 100 kredi hediye edildi.",
+      "passwordResetSent": "Şifre sıfırlama bağlantısı gönderildi",
+      "accountCreated": "Hesap başarıyla oluşturuldu",
+      "emailVerified": "E-posta adresi doğrulandı",
+      "passwordChanged": "Şifre başarıyla değiştirildi",
+      "profileUpdated": "Profil güncellendi",
+      "confirmationEmailSent": "Onay e-postası gönderildi",
+      "confirmationFailed": "E-posta onayı başarısız oldu",
+      "openGmail": "Gmail'de Aç",
+      "openOutlook": "Outlook'ta Aç",
+      "openYahoo": "Yahoo Mail'de Aç",
+      "openEmailApp": "E-posta Uygulamasını Aç"
+    },
+    "security": {
+      "sessionExpired": "Oturumunuzun süresi doldu. Lütfen tekrar giriş yapın.",
+      "rateLimitExceeded": "Çok fazla deneme yapıldı. Lütfen daha sonra tekrar deneyin.",
+      "accountLocked": "Hesabınız geçici olarak kilitlendi. Lütfen daha sonra tekrar deneyin.",
+      "suspiciousActivity": "Şüpheli aktivite tespit edildi. Hesabınız güvenlik için kilitlendi.",
+      "twoFactorRequired": "İki faktörlü kimlik doğrulama gerekli",
+      "twoFactorCode": "Doğrulama kodu",
+      "twoFactorCodePlaceholder": "6 haneli doğrulama kodunu girin",
+      "twoFactorCodeSent": "Doğrulama kodu e-posta adresinize gönderildi",
+      "twoFactorCodeInvalid": "Geçersiz doğrulama kodu",
+      "twoFactorCodeExpired": "Doğrulama kodunun süresi doldu",
+      "biometricAuth": "Biyometrik Kimlik Doğrulama",
+      "fingerprintAuth": "Parmak İzi ile Giriş",
+      "faceIdAuth": "Face ID ile Giriş",
+      "biometricNotAvailable": "Biyometrik kimlik doğrulama mevcut değil",
+      "biometricFailed": "Biyometrik kimlik doğrulama başarısız oldu"
+    },
+    "pwa": {
+      "installPrompt": "Uygulamayı Ana Ekrana Ekle",
+      "installDescription": "Daha hızlı erişim için uygulamayı ana ekranınıza ekleyin",
+      "installButton": "Yükle",
+      "installLater": "Daha Sonra",
+      "offlineMode": "Çevrimdışı Mod",
+      "offlineMessage": "İnternet bağlantınız yok. Bazı özellikler sınırlı olabilir.",
+      "syncWhenOnline": "Çevrimiçi olduğunuzda senkronize edilecek",
+      "backgroundSync": "Arka Plan Senkronizasyonu",
+      "pushNotifications": "Bildirimler",
+      "enableNotifications": "Bildirimleri Etkinleştir",
+      "notificationPermission": "Bildirim izni gerekli",
+      "notificationDenied": "Bildirim izni reddedildi"
+    },
+    "payment": {
+      "subscriptionRequired": "Bu özellik için abonelik gerekli",
+      "upgradeRequired": "Bu özelliği kullanmak için hesabınızı yükseltin",
+      "paymentFailed": "Ödeme başarısız oldu",
+      "paymentSuccess": "Ödeme başarılı",
+      "subscriptionActive": "Aboneliğiniz aktif",
+      "subscriptionExpired": "Aboneliğinizin süresi doldu",
+      "subscriptionCanceled": "Aboneliğiniz iptal edildi",
+      "trialEnding": "Deneme süreniz yakında sona eriyor",
+      "billingInfo": "Faturalama Bilgileri",
+      "paymentMethods": "Ödeme Yöntemleri",
+      "addPaymentMethod": "Ödeme Yöntemi Ekle",
+      "removePaymentMethod": "Ödeme Yöntemini Kaldır",
+      "defaultPaymentMethod": "Varsayılan Ödeme Yöntemi",
+      "invoiceHistory": "Fatura Geçmişi",
+      "downloadInvoice": "Faturayı İndir",
+      "requestRefund": "İade Talep Et",
+      "refundRequested": "İade talebi gönderildi",
+      "refundProcessed": "İade işlendi"
+    },
+    "roles": {
+      "admin": "Yönetici",
+      "premium": "Premium Üye",
+      "user": "Kullanıcı",
+      "guest": "Misafir",
+      "accessDenied": "Bu sayfaya erişim yetkiniz yok",
+      "insufficientPermissions": "Bu işlem için yeterli yetkiniz yok",
+      "upgradeAccount": "Hesabınızı yükseltin",
+      "contactAdmin": "Yönetici ile iletişime geçin"
+    },
+    "audit": {
+      "loginSuccess": "Başarılı giriş",
+      "loginFailed": "Başarısız giriş denemesi",
+      "logout": "Çıkış yapıldı",
+      "passwordChanged": "Şifre değiştirildi",
+      "profileUpdated": "Profil güncellendi",
+      "subscriptionCreated": "Abonelik oluşturuldu",
+      "subscriptionCanceled": "Abonelik iptal edildi",
+      "paymentMethodAdded": "Ödeme yöntemi eklendi",
+      "paymentMethodRemoved": "Ödeme yöntemi kaldırıldı",
+      "suspiciousActivity": "Şüpheli aktivite tespit edildi",
+      "securityAlert": "Güvenlik uyarısı"
+    },
+    "signIn": "Giriş Yap",
+    "signOut": "Çıkış Yap"
+  },
+  "cards": {
+    "reversed": "Ters",
+    "upright": "Düz",
+    "reversedMeaning": "Ters Anlam:",
+    "uprightMeaning": "Düz Anlam:",
+    "altText": "Tarot Kartı"
+  },
+  "forms": {
+    "validation": {
+      "nameMinLength": "Ad en az 3 karakter olmalıdır.",
+      "surnameMinLength": "Soyad en az 3 karakter olmalıdır.",
+      "birthDateRequired": "Doğum tarihi zorunludur.",
+      "emailInvalid": "Geçerli bir e-posta adresi giriniz.",
+      "concernMinLength": "Bu soruya en az 10 karakterlik yanıt vermelisiniz.",
+      "understandingMinLength": "Bu soruya en az 10 karakterlik yanıt vermelisiniz.",
+      "emotionalMinLength": "Bu soruya en az 10 karakterlik yanıt vermelisiniz."
+    },
+    "confirmExit": "Form dolduruldu ancak kaydedilmedi. Çıkmak istediğinize emin misiniz?"
+  },
+  "toast": {
+    "cardSelectionReady": "Kart seçimine geçebilirsiniz.",
+    "simpleReadingComplete": "Basit okuma tamamlandı!",
+    "readingSaveError": "Okuma kaydedilirken bir hata oluştu.",
+    "readingSaveErrorLog": "Okuma kaydetme hatası:"
+  },
+  "interpretation": {
+    "title": "Tarot Yorumu",
+    "placeholder": "Sorunuzu yazın...",
+    "badge": "TAROT",
+    "loveReading": "Aşk Açılımı",
+    "loveReadingDetailed": "Aşk Açılımı - Detaylı Kişisel Okuma",
+    "dearClient": "Sevgili danışan,",
+    "loveLifeSummary": "Aşk Hayatı Özeti:",
+    "cannotGenerate": "Tüm kartları seçmeden yorum oluşturulamaz.",
+    "context": "Bağlam:"
+  },
+  "gallery": {
+    "title": "Kart Galerisi",
+    "emptyDeck": "Kart destesi boş",
+    "nextPosition": "Sıradaki pozisyon:",
+    "allPositionsFull": "Tüm pozisyonlar dolu",
+    "scrollToSeeAll": "Kaydırarak tüm kartları görün",
+    "shuffle": "Karıştır"
+  },
+  "language": {
+    "turkish": "Türkçe",
+    "english": "English", 
+    "serbian": "Srpski"
+  },
+  "love": {
+    "positions": {
+      "position1": {
+        "title": "İlgi Duyduğun Kişi",
+        "description": "Bu kişi hakkında ne düşünüyor ve nasıl bir yaklaşım sergiliyor?"
+      },
+      "position2": {
+        "title": "Fiziksel Bağlantı",
+        "description": "Aranızdaki fiziksel çekim ve cinsel uyum nasıl?"
+      },
+      "position3": {
+        "title": "Duygusal Bağlantı",
+        "description": "Duygusal bağınız ve kalp bağlantınız nasıl?"
+      },
+      "position4": {
+        "title": "Uzun Vadeli Süreç",
+        "description": "İlişkinizin uzun vadeli potansiyeli ve geleceği nasıl?"
+      }
+    },
+    "form": {
+      "personalInfo": "Kişisel Bilgileriniz",
+      "firstName": "Adınız",
+      "lastName": "Soyadınız",
+      "birthDate": "Doğum Tarihi",
+      "email": "E-posta Adresiniz",
+      "questions": "✨ Aşk Açılımı Soruları ✨",
+      "concernQuestion": "Aşk hayatınızda sizi en çok endişelendiren konu nedir?",
+      "understandingQuestion": "Bu aşk açılımı ile neyi anlamak istiyorsunuz?",
+      "emotionalQuestion": "Şu anda duygusal olarak nasıl hissediyorsunuz?",
+      "saveAndOpen": "💕 Kaydet ve Kartları Aç",
+      "saving": "Kaydediliyor...",
+      "clearAll": "🔄 Tümünü Temizle"
+    },
+    "modals": {
+      "creditConfirm": "Kredi Onayı",
+      "creditConfirmMessage": "Bu okuma için devam etmek istiyor musunuz?",
+      "confirm": "Evet, Onaylıyorum",
+      "cancel": "Vazgeç",
+      "processing": "İşleniyor...",
+      "successTitle": "Okuma Başarıyla Kaydedildi!",
+      "successMessage": "Aşk açılımınız detaylı olarak kaydedildi ve analiz edildi. Sonuçlarınızı kullanıcı panelinden görüntüleyebilirsiniz.",
+      "redirecting": "💝 Ana sayfaya yönlendiriliyorsunuz...",
+      "saveReading": "Okumayı Kaydet 💝",
+      "savingReading": "Kaydediliyor..."
+    },
+    "cardGroups": {
+      "majorArcana": "Majör Arkana",
+      "cups": "Kupalar",
+      "swords": "Kılıçlar",
+      "wands": "Asalar",
+      "pentacles": "Tılsımlar"
+    },
+    "meanings": {
+      "theFool": {
+        "position1": {
+          "upright": "İlgi duyduğun kişi, hayata karşı çocuksu bir merak ve heyecanla dolu. Yeni başlangıçlara açık, maceracı bir ruha sahip ancak bu durum bazen plansız ve programsız olmasına neden olabilir. İlişkilere de bu özgür ruhla yaklaşır.",
+          "reversed": "Ters Fool, bu kişinin pervasız, sorumsuz veya bir ilişkiye başlamaktan korkan biri olabileceğini gösterir. Potansiyel tehlikeleri görmezden geliyor ve bağlanmaktan kaçınıyor olabilir.",
+          "keywords": ["yeni başlangıçlar", "masumiyet", "spontanlık", "risk almak", "özgür ruh"],
+          "context": "Bu kişi, aşk hayatında yeni bir sayfa açmaya hazır veya bundan korkan bir maceracı."
+        }
+      }
+    }
+  },
+  "tarotCards": {
+    "majorArcana": {
+      "0": {
+        "name": "Deli",
+        "meaning": {
+          "upright": "Yeni başlangıçlar, masumiyet, spontanlık",
+          "reversed": "Dikkatsizlik, istismar edilme"
+        },
+        "keywords": ["yeni başlangıçlar", "masumiyet"]
+      },
+      "1": {
+        "name": "Büyücü",
+        "meaning": {
+          "upright": "Tezahür, beceriklilik, güç",
+          "reversed": "Manipülasyon, kötü planlama"
+        },
+        "keywords": ["tezahür", "güç"]
+      },
+      "2": {
+        "name": "Yüksek Rahibe",
+        "meaning": {
+          "upright": "Sezgi, kutsal bilgi, ilahi dişilik",
+          "reversed": "Sırlar, sezgiden kopukluk"
+        },
+        "keywords": ["sezgi", "gizem"]
+      },
+      "3": {
+        "name": "İmparatoriçe",
+        "meaning": {
+          "upright": "Kadınsılık, güzellik, doğa",
+          "reversed": "Yaratıcı blok, bağımlılık"
+        },
+        "keywords": ["kadınsılık", "güzellik"]
+      },
+      "4": {
+        "name": "İmparator",
+        "meaning": {
+          "upright": "Otorite, kurumsallık, yapı",
+          "reversed": "Tahakküm, aşırı kontrol"
+        },
+        "keywords": ["otorite", "yapı"]
+      },
+      "5": {
+        "name": "Aziz",
+        "meaning": {
+          "upright": "Ruhsal bilgelik, dini inançlar",
+          "reversed": "Kişisel inançlar, özgürlük"
+        },
+        "keywords": ["gelenek", "uyum"]
+      },
+      "6": {
+        "name": "Aşıklar",
+        "meaning": {
+          "upright": "Aşk, uyum, ilişkiler",
+          "reversed": "Öz sevgi, uyumsuzluk"
+        },
+        "keywords": ["aşk", "uyum"]
+      },
+      "7": {
+        "name": "Savaş Arabası",
+        "meaning": {
+          "upright": "Kontrol, irade gücü, başarı",
+          "reversed": "Öz disiplin, karşıtlık"
+        },
+        "keywords": ["kontrol", "irade"]
+      },
+      "8": {
+        "name": "Güç",
+        "meaning": {
+          "upright": "Güç, cesaret, ikna",
+          "reversed": "Öz şüphe, güven eksikliği"
+        },
+        "keywords": ["güç", "cesaret"]
+      },
+      "9": {
+        "name": "Münzevi",
+        "meaning": {
+          "upright": "Ruh arayışı, iç gözlem",
+          "reversed": "İzolasyon, yalnızlık"
+        },
+        "keywords": ["iç gözlem", "arayış"]
+      },
+      "10": {
+        "name": "Kader Çarkı",
+        "meaning": {
+          "upright": "İyi şans, karma, yaşam döngüleri",
+          "reversed": "Kötü şans, kontrol eksikliği"
+        },
+        "keywords": ["şans", "karma"]
+      },
+      "11": {
+        "name": "Adalet",
+        "meaning": {
+          "upright": "Adalet, hakkaniyet, gerçek",
+          "reversed": "Haksızlık, hesap verememe"
+        },
+        "keywords": ["adalet", "hakkaniyet"]
+      },
+      "12": {
+        "name": "Asılan Adam",
+        "meaning": {
+          "upright": "Teslim olma, bırakma, fedakarlık",
+          "reversed": "Gecikmeler, direnç, oyalama"
+        },
+        "keywords": ["teslim olma", "fedakarlık"]
+      },
+      "13": {
+        "name": "Ölüm",
+        "meaning": {
+          "upright": "Sonlar, dönüşüm, geçiş",
+          "reversed": "Değişime direnç, içsel arınma"
+        },
+        "keywords": ["dönüşüm", "sonlar"]
+      },
+      "14": {
+        "name": "Ölçülülük",
+        "meaning": {
+          "upright": "Denge, ölçülülük, sabır",
+          "reversed": "Dengesizlik, aşırılık, öz şifa"
+        },
+        "keywords": ["denge", "ölçülülük"]
+      },
+      "15": {
+        "name": "Şeytan",
+        "meaning": {
+          "upright": "Bağımlılık, tutku, materyalizm",
+          "reversed": "Sınırlayıcı inançları bırakma, ayrılma"
+        },
+        "keywords": ["bağımlılık", "materyalizm"]
+      },
+      "16": {
+        "name": "Kule",
+        "meaning": {
+          "upright": "Ani değişim, karışıklık, kaos",
+          "reversed": "Kişisel dönüşüm, değişim korkusu"
+        },
+        "keywords": ["ani değişim", "karışıklık"]
+      },
+      "17": {
+        "name": "Yıldız",
+        "meaning": {
+          "upright": "Umut, inanç, amaç, yenilenme",
+          "reversed": "İnanç eksikliği, umutsuzluk, kopukluk"
+        },
+        "keywords": ["umut", "inanç"]
+      },
+      "18": {
+        "name": "Ay",
+        "meaning": {
+          "upright": "İllüzyon, korku, kaygı, bilinçaltı",
+          "reversed": "Korkunun bırakılması, bastırılmış duygu"
+        },
+        "keywords": ["illüzyon", "korku"]
+      },
+      "19": {
+        "name": "Güneş",
+        "meaning": {
+          "upright": "Pozitiflik, eğlence, sıcaklık, başarı",
+          "reversed": "İç çocuk, moralsizlik"
+        },
+        "keywords": ["pozitiflik", "eğlence"]
+      },
+      "20": {
+        "name": "Mahkeme",
+        "meaning": {
+          "upright": "Yargı, yeniden doğuş, içsel çağrı",
+          "reversed": "Öz şüphe, içsel eleştirmen"
+        },
+        "keywords": ["yargı", "yeniden doğuş"]
+      },
+      "21": {
+        "name": "Dünya",
+        "meaning": {
+          "upright": "Tamamlanma, bütünleşme, başarı",
+          "reversed": "Kişisel kapanış arayışı, kısa yol"
+        },
+        "keywords": ["tamamlanma", "bütünleşme"]
+      }
+    },
+    "cups": {
+      "1": {
+        "name": "Kadehler Ası",
+        "meaning": {
+          "upright": "Yeni ilişkiler, merhamet",
+          "reversed": "Öz sevgi, bastırılmış duygular"
+        },
+        "keywords": ["aşk", "duygular"]
+      },
+      "2": {
+        "name": "Kadehler İkilisi",
+        "meaning": {
+          "upright": "Ortaklık, karşılıklı çekim",
+          "reversed": "Öz sevgi, ayrılıklar"
+        },
+        "keywords": ["ortaklık", "aşk"]
+      },
+      "3": {
+        "name": "Kadehler Üçlüsü",
+        "meaning": {
+          "upright": "Kutlama, dostluk",
+          "reversed": "Bağımsızlık, yaratıcı bloklar"
+        },
+        "keywords": ["kutlama", "dostluk"]
+      },
+      "4": {
+        "name": "Kadehler Dörtlüsü",
+        "meaning": {
+          "upright": "Meditasyon, düşünce",
+          "reversed": "Geri çekilme, içe kapanma"
+        },
+        "keywords": ["meditasyon", "düşünce"]
+      },
+      "5": {
+        "name": "Kadehler Beşlisi",
+        "meaning": {
+          "upright": "Pişmanlık, hayal kırıklığı",
+          "reversed": "Kendini bağışlama, ilerleme"
+        },
+        "keywords": ["pişmanlık", "hayal kırıklığı"]
+      },
+      "6": {
+        "name": "Kadehler Altılısı",
+        "meaning": {
+          "upright": "Çocukluk anıları, masumiyet",
+          "reversed": "Geçmişte yaşama, bağışlama"
+        },
+        "keywords": ["nostalji", "çocukluk"]
+      },
+      "7": {
+        "name": "Kadehler Yedilisi",
+        "meaning": {
+          "upright": "Fırsatlar, seçimler",
+          "reversed": "Kişisel değerler, bunalma"
+        },
+        "keywords": ["fırsatlar", "seçimler"]
+      },
+      "8": {
+        "name": "Kadehler Sekizlisi",
+        "meaning": {
+          "upright": "Hayal kırıklığı, terk etme",
+          "reversed": "Tekrar deneme, kararsızlık"
+        },
+        "keywords": ["hayal kırıklığı", "terk etme"]
+      },
+      "9": {
+        "name": "Kadehler Dokuzlusu",
+        "meaning": {
+          "upright": "Memnuniyet, tatmin",
+          "reversed": "İç mutluluk, memnuniyetsizlik"
+        },
+        "keywords": ["memnuniyet", "tatmin"]
+      },
+      "10": {
+        "name": "Kadehler Onlusu",
+        "meaning": {
+          "upright": "İlahi aşk, uyum",
+          "reversed": "Kopukluk, zorlu ilişkiler"
+        },
+        "keywords": ["ilahi aşk", "uyum"]
+      },
+      "page": {
+        "name": "Kadehler Prensi",
+        "meaning": {
+          "upright": "Yaratıcı fırsatlar, sezgi",
+          "reversed": "Yeni fikirler, sezgiyi şüphe"
+        },
+        "keywords": ["yaratıcılık", "sezgi"]
+      },
+      "knight": {
+        "name": "Kadehler Şövalyesi",
+        "meaning": {
+          "upright": "Romantizm, cazibe, hayal gücü",
+          "reversed": "Gerçekçi olmayan, kıskançlık"
+        },
+        "keywords": ["romantizm", "cazibe"]
+      },
+      "queen": {
+        "name": "Kadehler Kraliçesi",
+        "meaning": {
+          "upright": "Merhametli, duygusal kararlı",
+          "reversed": "İç duygular, öz bakım"
+        },
+        "keywords": ["merhamet", "duygusal kararlılık"]
+      },
+      "king": {
+        "name": "Kadehler Kralı",
+        "meaning": {
+          "upright": "Duygusal dengeli, diplomatik",
+          "reversed": "Öz merhamet, huysuzluk"
+        },
+        "keywords": ["duygusal denge", "diplomasi"]
+      }
+    },
+    "wands": {
+      "1": {
+        "name": "Asalar Ası",
+        "meaning": {
+          "upright": "İlham, yeni fırsatlar",
+          "reversed": "Enerji eksikliği, can sıkıntısı"
+        },
+        "keywords": ["ilham", "güç"]
+      },
+      "2": {
+        "name": "Asalar İkilisi",
+        "meaning": {
+          "upright": "Gelecek planlama, kararlar",
+          "reversed": "Kişisel hedefler, bilinmezlik korkusu"
+        },
+        "keywords": ["planlama", "kararlar"]
+      },
+      "3": {
+        "name": "Asalar Üçlüsü",
+        "meaning": {
+          "upright": "Genişleme, öngörü",
+          "reversed": "Küçük oynama, gecikmeler"
+        },
+        "keywords": ["genişleme", "öngörü"]
+      },
+      "4": {
+        "name": "Asalar Dörtlüsü",
+        "meaning": {
+          "upright": "Kutlama, uyum",
+          "reversed": "Kişisel kutlama, çatışma"
+        },
+        "keywords": ["kutlama", "uyum"]
+      },
+      "5": {
+        "name": "Asalar Beşlisi",
+        "meaning": {
+          "upright": "Çatışma, rekabet",
+          "reversed": "İç çatışma, kaçınma"
+        },
+        "keywords": ["çatışma", "rekabet"]
+      },
+      "6": {
+        "name": "Asalar Altılısı",
+        "meaning": {
+          "upright": "Başarı, tanınma",
+          "reversed": "Özel başarı, lütuftan düşme"
+        },
+        "keywords": ["başarı", "tanınma"]
+      },
+      "7": {
+        "name": "Asalar Yedilisi",
+        "meaning": {
+          "upright": "Meydan okuma, sebat",
+          "reversed": "Tükenmişlik, pes etme"
+        },
+        "keywords": ["meydan okuma", "sebat"]
+      },
+      "8": {
+        "name": "Asalar Sekizlisi",
+        "meaning": {
+          "upright": "Hız, ilerleme",
+          "reversed": "Gecikmeler, hayal kırıklığı"
+        },
+        "keywords": ["hız", "ilerleme"]
+      },
+      "9": {
+        "name": "Asalar Dokuzlusu",
+        "meaning": {
+          "upright": "Dayanıklılık, cesaret",
+          "reversed": "İç kaynaklar, mücadele"
+        },
+        "keywords": ["dayanıklılık", "cesaret"]
+      },
+      "10": {
+        "name": "Asalar Onlusu",
+        "meaning": {
+          "upright": "Yük, sorumluluk",
+          "reversed": "Hepsini yapma, yetki devri"
+        },
+        "keywords": ["yük", "sorumluluk"]
+      },
+      "page": {
+        "name": "Asalar Prensi",
+        "meaning": {
+          "upright": "İlham, keşif",
+          "reversed": "Yön eksikliği, erteleme"
+        },
+        "keywords": ["ilham", "keşif"]
+      },
+      "knight": {
+        "name": "Asalar Şövalyesi",
+        "meaning": {
+          "upright": "Enerji, tutku, macera",
+          "reversed": "Acele, dağınık enerji"
+        },
+        "keywords": ["enerji", "tutku"]
+      },
+      "queen": {
+        "name": "Asalar Kraliçesi",
+        "meaning": {
+          "upright": "Cesaret, bağımsızlık",
+          "reversed": "Öz saygı, içe dönük"
+        },
+        "keywords": ["cesaret", "bağımsızlık"]
+      },
+      "king": {
+        "name": "Asalar Kralı",
+        "meaning": {
+          "upright": "Liderlik, vizyon",
+          "reversed": "Dürtüsellik, acımasız"
+        },
+        "keywords": ["liderlik", "vizyon"]
+      }
+    },
+    "swords": {
+      "1": {
+        "name": "Kılıçlar Ası",
+        "meaning": {
+          "upright": "Atılım, berraklık",
+          "reversed": "Karışıklık, kaos"
+        },
+        "keywords": ["berraklık", "atılım"]
+      },
+      "2": {
+        "name": "Kılıçlar İkilisi",
+        "meaning": {
+          "upright": "Zor kararlar, çıkmaz",
+          "reversed": "Kararsızlık, karışıklık"
+        },
+        "keywords": ["kararlar", "çıkmaz"]
+      },
+      "3": {
+        "name": "Kılıçlar Üçlüsü",
+        "meaning": {
+          "upright": "Kalp kırıklığı, keder",
+          "reversed": "Acıyı serbest bırakma, iyimserlik"
+        },
+        "keywords": ["kalp kırıklığı", "keder"]
+      },
+      "4": {
+        "name": "Kılıçlar Dörtlüsü",
+        "meaning": {
+          "upright": "Dinlenme, meditasyon",
+          "reversed": "Tükenmişlik, yanma"
+        },
+        "keywords": ["dinlenme", "meditasyon"]
+      },
+      "5": {
+        "name": "Kılıçlar Beşlisi",
+        "meaning": {
+          "upright": "Çatışma, yenilgi",
+          "reversed": "Uzlaşma, geçmiş kırgınlık"
+        },
+        "keywords": ["çatışma", "yenilgi"]
+      },
+      "6": {
+        "name": "Kılıçlar Altılısı",
+        "meaning": {
+          "upright": "Geçiş, değişim",
+          "reversed": "Kişisel geçiş, direnç"
+        },
+        "keywords": ["geçiş", "değişim"]
+      },
+      "7": {
+        "name": "Kılıçlar Yedilisi",
+        "meaning": {
+          "upright": "İhanet, aldatma",
+          "reversed": "Sahtekar sendromu, sırlar"
+        },
+        "keywords": ["ihanet", "aldatma"]
+      },
+      "8": {
+        "name": "Kılıçlar Sekizlisi",
+        "meaning": {
+          "upright": "Kısıtlama, hapis",
+          "reversed": "Kendini sınırlayan inançlar, iç eleştirmen"
+        },
+        "keywords": ["kısıtlama", "hapis"]
+      },
+      "9": {
+        "name": "Kılıçlar Dokuzlusu",
+        "meaning": {
+          "upright": "Kaygı, korku",
+          "reversed": "İç karmaşa, kaygıyı serbest bırakma"
+        },
+        "keywords": ["kaygı", "korku"]
+      },
+      "10": {
+        "name": "Kılıçlar Onlusu",
+        "meaning": {
+          "upright": "Acılı sonlar, ihanet",
+          "reversed": "İyileşme, sona direnme"
+        },
+        "keywords": ["sonlar", "ihanet"]
+      },
+      "page": {
+        "name": "Kılıçlar Prensi",
+        "meaning": {
+          "upright": "Yeni fikirler, merak",
+          "reversed": "Kendini ifade etme, eylem yok"
+        },
+        "keywords": ["fikirler", "merak"]
+      },
+      "knight": {
+        "name": "Kılıçlar Şövalyesi",
+        "meaning": {
+          "upright": "Hırslı, eylem odaklı",
+          "reversed": "Huzursuz, dürtüsel"
+        },
+        "keywords": ["hırs", "eylem"]
+      },
+      "queen": {
+        "name": "Kılıçlar Kraliçesi",
+        "meaning": {
+          "upright": "Bağımsız, net sınırlar",
+          "reversed": "Aşırı duygusal, soğuk kalpli"
+        },
+        "keywords": ["bağımsızlık", "sınırlar"]
+      },
+      "king": {
+        "name": "Kılıçlar Kralı",
+        "meaning": {
+          "upright": "Zihinsel berraklık, otorite",
+          "reversed": "Sessiz güç, gücün kötüye kullanımı"
+        },
+        "keywords": ["berraklık", "otorite"]
+      }
+    },
+    "pentacles": {
+      "1": {
+        "name": "Altınlar Ası",
+        "meaning": {
+          "upright": "Yeni fırsat, tezahür",
+          "reversed": "Kaçırılan fırsat, planlama eksikliği"
+        },
+        "keywords": ["fırsat", "tezahür"]
+      },
+      "2": {
+        "name": "Altınlar İkilisi",
+        "meaning": {
+          "upright": "Çoklu öncelikler, uyum",
+          "reversed": "Aşırı taahhüt, düzensizlik"
+        },
+        "keywords": ["öncelikler", "uyum"]
+      },
+      "3": {
+        "name": "Altınlar Üçlüsü",
+        "meaning": {
+          "upright": "İşbirliği, öğrenme",
+          "reversed": "Uyumsuzluk, tek başına çalışma"
+        },
+        "keywords": ["işbirliği", "öğrenme"]
+      },
+      "4": {
+        "name": "Altınlar Dörtlüsü",
+        "meaning": {
+          "upright": "Para biriktirme, güvenlik",
+          "reversed": "Aşırı harcama, cömertlik"
+        },
+        "keywords": ["biriktirme", "güvenlik"]
+      },
+      "5": {
+        "name": "Altınlar Beşlisi",
+        "meaning": {
+          "upright": "Mali kayıp, izolasyon",
+          "reversed": "Kayıptan kurtulma, ruhsal yoksulluk"
+        },
+        "keywords": ["kayıp", "izolasyon"]
+      },
+      "6": {
+        "name": "Altınlar Altılısı",
+        "meaning": {
+          "upright": "Verme, zenginlik paylaşımı",
+          "reversed": "Kendine bakım, ödenmemiş borçlar"
+        },
+        "keywords": ["verme", "paylaşım"]
+      },
+      "7": {
+        "name": "Altınlar Yedilisi",
+        "meaning": {
+          "upright": "Sebat, yatırım",
+          "reversed": "Uzun vadeli görüş eksikliği, sabırsızlık"
+        },
+        "keywords": ["sebat", "yatırım"]
+      },
+      "8": {
+        "name": "Altınlar Sekizlisi",
+        "meaning": {
+          "upright": "Ustalık, beceri geliştirme",
+          "reversed": "Mükemmeliyetçilik, bağlılık eksikliği"
+        },
+        "keywords": ["ustalık", "beceri"]
+      },
+      "9": {
+        "name": "Altınlar Dokuzlusu",
+        "meaning": {
+          "upright": "Bolluk, mali bağımsızlık",
+          "reversed": "Öz değer, aşırı yatırım"
+        },
+        "keywords": ["bolluk", "bağımsızlık"]
+      },
+      "10": {
+        "name": "Altınlar Onlusu",
+        "meaning": {
+          "upright": "Zenginlik, aile, uzun vadeli başarı",
+          "reversed": "Mali başarısızlık, zenginliğin karanlık tarafı"
+        },
+        "keywords": ["zenginlik", "aile"]
+      },
+      "page": {
+        "name": "Altınlar Prensi",
+        "meaning": {
+          "upright": "Tezahür, mali fırsat",
+          "reversed": "İlerleme eksikliği, erteleme"
+        },
+        "keywords": ["tezahür", "fırsat"]
+      },
+      "knight": {
+        "name": "Altınlar Şövalyesi",
+        "meaning": {
+          "upright": "Sıkı çalışma, rutin",
+          "reversed": "Öz disiplin, sıkışmış hissetme"
+        },
+        "keywords": ["çalışma", "rutin"]
+      },
+      "queen": {
+        "name": "Altınlar Kraliçesi",
+        "meaning": {
+          "upright": "Besleyici, pratik",
+          "reversed": "Mali bağımsızlık, iş-ev çatışması"
+        },
+        "keywords": ["besleyici", "pratik"]
+      },
+      "king": {
+        "name": "Altınlar Kralı",
+        "meaning": {
+          "upright": "Mali başarı, iş zekası",
+          "reversed": "Mali tavsiye, gücünün üstünde yaşama"
+        },
+        "keywords": ["başarı", "iş"]
+      }
+    }
+  }
+}

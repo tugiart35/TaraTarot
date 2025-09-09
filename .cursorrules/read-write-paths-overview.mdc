@@ -1,0 +1,25 @@
+---
+alwaysApply: true
+---
+# Firebase Read/Write Paths Overview
+
+**Goal:**  
+Document all current Firebase collections, document paths, and what data is stored/read in each.
+
+---
+
+## Main Paths
+
+| Collection/Document Path        | Purpose                  | Example Fields         |
+| ------------------------------ | ------------------------ | --------------------- |
+| /users/{uid}                   | User profile info        | email, name, credits  |
+| /tarot_readings/{readingId}    | Tarot reading results    | userId, cards, result |
+| /numerology_reports/{reportId} | Numerology reports       | userId, results       |
+| /credits/{uid}                 | Credit balance/history   | balance, transactions |
+
+---
+
+## Rules
+
+- All new data flows must be added here before implementation.
+- No schema/path changes should break current user flows or UI.

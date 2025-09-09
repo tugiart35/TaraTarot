@@ -1,0 +1,651 @@
+/*
+  Enhanced Global CSS - Mystical Tarot & Numerology Theme
+  Following golden ratio design principles with mystical aesthetics
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar styles */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Enhanced mystical font imports */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* CSS Variables for theme switching */
+:root {
+  /* Light theme variables */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --accent-primary: #a855f7;
+  --accent-secondary: #f59e0b;
+  
+  /* Mystical effect variables */
+  --mystical-glow: 0 0 30px rgba(168, 85, 247, 0.3);
+  --golden-glow: 0 0 25px rgba(245, 158, 11, 0.4);
+  --ethereal-mist: linear-gradient(45deg, rgba(168, 85, 247, 0.1), rgba(245, 158, 11, 0.1));
+}
+
+[data-theme="dark"] {
+  /* Dark theme variables */
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent-primary: #a855f7;
+  --accent-secondary: #f59e0b;
+}
+
+/* Özel Kart Animasyonları - Custom Card Animations */
+@keyframes cardFlyOut {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-50px) rotate(5deg) scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-200px) rotate(15deg) scale(0.9);
+    opacity: 0;
+  }
+}
+
+@keyframes cardReveal {
+  0% {
+    transform: rotateY(180deg) scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: rotateY(90deg) scale(0.9);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotateY(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+.card-fly-out {
+  animation: cardFlyOut 0.6s ease-in-out forwards;
+}
+
+.card-reveal {
+  animation: cardReveal 0.8s ease-in-out forwards;
+}
+
+/* Yavaş dönme animasyonu */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 3s linear infinite;
+}
+
+/* Scrollbar gizleme */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Mobil dokunmatik kaydırma optimizasyonları */
+.mobile-scroll {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  overscroll-behavior: contain;
+  touch-action: pan-x pan-y;
+}
+
+/* Yatay kaydırma için mobil optimizasyon */
+.horizontal-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  touch-action: pan-x;
+  overscroll-behavior-x: contain;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Dikey kaydırma için mobil optimizasyon */
+.vertical-scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: y proximity;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  touch-action: pan-y;
+  overscroll-behavior-y: contain;
+}
+
+.vertical-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Mobil dokunmatik kaydırma için momentum */
+.momentum-scroll {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+/* Mobil için scroll snap noktaları */
+.scroll-snap-x {
+  scroll-snap-type: x mandatory;
+}
+
+.scroll-snap-y {
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-snap-start {
+  scroll-snap-align: start;
+}
+
+.scroll-snap-center {
+  scroll-snap-align: center;
+}
+
+.scroll-snap-end {
+  scroll-snap-align: end;
+}
+
+/* Mobil dokunmatik kaydırma için ek optimizasyonlar */
+.touch-scroll {
+  touch-action: manipulation;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* iOS Safari için momentum scrolling */
+@supports (-webkit-touch-callout: none) {
+  .mobile-scroll {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .horizontal-scroll {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .vertical-scroll {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Özel font import - mistik görünüm için */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* Dashboard specific styles */
+.card-mystic {
+  @apply bg-gradient-to-br from-purple-900/20 to-indigo-900/20 backdrop-blur-sm border border-purple-500/20 rounded-xl;
+}
+
+.mystic-glow {
+  box-shadow: 0 0 20px rgba(167, 139, 250, 0.1);
+}
+
+.text-heading-1 {
+  @apply text-3xl font-bold;
+}
+
+.text-heading-2 {
+  @apply text-2xl font-semibold;
+}
+
+.text-heading-3 {
+  @apply text-xl font-semibold;
+}
+
+.text-body-large {
+  @apply text-lg;
+}
+
+/* Dashboard color system */
+.bg-cosmic-black {
+  @apply bg-mystical-950;
+}
+
+.bg-cosmic-fog {
+  @apply bg-mystical-800/50;
+}
+
+.text-text-celestial {
+  @apply text-ethereal-blue;
+}
+
+.text-text-mystic {
+  @apply text-cosmic-300;
+}
+
+.text-text-muted {
+  @apply text-mystical-400;
+}
+
+.text-text-dim {
+  @apply text-mystical-500;
+}
+
+.text-gold {
+  @apply text-golden-400;
+}
+
+.border-gold {
+  @apply border-golden-400;
+}
+
+.bg-gold {
+  @apply bg-golden-400;
+}
+
+.bg-gradient-mystic {
+  @apply bg-gradient-to-br from-purple-500 to-indigo-600;
+}
+
+/* Dashboard components */
+.card {
+  @apply bg-mystical-900/50 backdrop-blur-sm border border-mystical-700/50 rounded-xl;
+}
+
+.hover-lift {
+  @apply transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20;
+}
+
+.admin-sidebar {
+  @apply bg-mystical-900/95 backdrop-blur-md border-r border-mystical-700/50;
+}
+
+/* Button styles */
+.btn {
+  @apply px-4 py-2 rounded-lg font-medium transition-all duration-300;
+}
+
+.btn-primary {
+  @apply bg-gradient-to-r from-purple-600 to-indigo-600 text-white hover:from-purple-700 hover:to-indigo-700 hover:shadow-lg hover:shadow-purple-500/30;
+}
+
+.btn-secondary {
+  @apply bg-mystical-800 text-mystical-200 border border-mystical-600 hover:bg-mystical-700 hover:border-mystical-500;
+}
+
+/* Form styles */
+.form-input {
+  @apply w-full px-3 py-2 bg-mystical-800 border border-mystical-600 rounded-lg text-mystical-100 placeholder-mystical-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent;
+}
+
+/* Status colors */
+.bg-success {
+  @apply bg-green-500;
+}
+
+.text-success {
+  @apply text-green-400;
+}
+
+.bg-warning {
+  @apply bg-yellow-500;
+}
+
+.text-warning {
+  @apply text-yellow-400;
+}
+
+.bg-danger {
+  @apply bg-red-500;
+}
+
+.text-danger {
+  @apply text-red-400;
+}
+
+.bg-info {
+  @apply bg-blue-500;
+}
+
+.text-info {
+  @apply text-blue-400;
+}
+
+.bg-purple {
+  @apply bg-purple-500;
+}
+
+.text-purple {
+  @apply text-purple-400;
+}
+
+.bg-mystic {
+  @apply bg-purple-600;
+}
+
+.text-mystic {
+  @apply text-purple-300;
+}
+
+/* Enhanced base styles */
+@layer base {
+  * {
+    @apply border-gray-200 dark:border-gray-800;
+  }
+  
+  html {
+    @apply overflow-x-hidden scroll-smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    @apply bg-mystical-950 text-cosmic-100 font-body antialiased;
+    background-image: 
+      radial-gradient(circle at 20% 80%, rgba(168, 85, 247, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, rgba(99, 102, 241, 0.05) 0%, transparent 50%);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+
+  /* Enhanced typography hierarchy */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-mystical font-semibold tracking-wide;
+  }
+
+  h1 {
+    @apply text-4xl md:text-6xl lg:text-7xl text-transparent bg-gradient-to-r from-golden-400 via-ethereal-blue to-cosmic-400 bg-clip-text;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl text-golden-300;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl text-cosmic-300;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl text-ethereal-blue;
+  }
+
+  p {
+    @apply leading-relaxed text-cosmic-200;
+  }
+
+  /* Enhanced link styles */
+  a {
+    @apply transition-all duration-300 hover:text-golden-400;
+  }
+}
+
+/* Özel animasyonlar */
+@layer utilities {
+  .mystical-glow {
+    @apply shadow-lg shadow-purple-500/25;
+    animation: mystical-pulse 3s ease-in-out infinite;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400 bg-clip-text text-transparent;
+  }
+
+  .mystical-border {
+    @apply border border-purple-500/30 rounded-lg backdrop-blur-sm;
+  }
+}
+
+/* Animasyon tanımları */
+@keyframes mystical-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+  }
+  50% {
+    box-shadow:
+      0 0 30px rgba(168, 85, 247, 0.6),
+      0 0 40px rgba(168, 85, 247, 0.3);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.floating {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Scrollbar özelleştirme */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-purple-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-purple-500;
+}
+
+/* Kart döndürme animasyonu */
+@keyframes flipCard {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(-90deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+.flip-card {
+  animation: flipCard 0.6s ease-in-out;
+}
+
+/* Pulse animasyonu */
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Date picker stilleri - Dark theme için */
+input[type='date'] {
+  color-scheme: dark;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+input[type='date']::-webkit-inner-spin-button,
+input[type='date']::-webkit-clear-button {
+  display: none;
+}
+
+/* Date picker için custom style */
+input[type='date']::-webkit-datetime-edit {
+  color: white;
+  padding: 0;
+}
+
+input[type='date']::-webkit-datetime-edit-text {
+  color: rgb(156, 163, 175); /* gray-400 */
+}
+
+input[type='date']::-webkit-datetime-edit-month-field,
+input[type='date']::-webkit-datetime-edit-day-field,
+input[type='date']::-webkit-datetime-edit-year-field {
+  color: white;
+}
+
+/* Glow animasyonu - route group'tan taşındı */
+@keyframes glow {
+  0% {
+    opacity: 0.7;
+    filter: blur(8px);
+    box-shadow:
+      0 0 8px 2px #fef08a,
+      0 0 16px 4px #c4b5fd;
+  }
+  50% {
+    opacity: 1;
+    filter: blur(12px);
+    box-shadow:
+      0 0 24px 8px #fef08a,
+      0 0 32px 12px #c4b5fd;
+  }
+  100% {
+    opacity: 0.7;
+    filter: blur(8px);
+    box-shadow:
+      0 0 8px 2px #fef08a,
+      0 0 16px 4px #c4b5fd;
+  }
+}
+
+.animate-glow {
+  animation: glow 2.2s ease-in-out infinite;
+}
+
+/* Admin Dashboard Tema Sınıfları */
+.admin-bg {
+  @apply bg-mystical-950;
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(168, 85, 247, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(99, 102, 241, 0.05) 0%, transparent 50%);
+  background-attachment: fixed;
+}
+
+.admin-card {
+  @apply bg-mystical-900/50 backdrop-blur-sm border border-mystical-700/50 rounded-xl;
+}
+
+.admin-hover-lift {
+  @apply transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20;
+}
+
+.admin-btn-primary {
+  @apply bg-gradient-to-r from-purple-600 to-indigo-600 text-white hover:from-purple-700 hover:to-indigo-700 hover:shadow-lg hover:shadow-purple-500/30 px-4 py-2 rounded-lg font-medium transition-all duration-300;
+}
+
+.admin-text {
+  @apply text-cosmic-100;
+}
+
+.admin-text-muted {
+  @apply text-mystical-400;
+}
+
+.admin-accent {
+  @apply text-purple-400;
+}
+
+.admin-purple {
+  @apply text-purple-400;
+}
+
+.admin-cyan {
+  @apply text-cyan-400;
+}
+
+.admin-green {
+  @apply text-green-400;
+}
+
+.admin-border {
+  @apply border-mystical-700/50;
+}
+
+.admin-dark {
+  @apply bg-mystical-800;
+}
+
+.admin-pulse {
+  @apply animate-pulse;
+}
+
+.admin-text-shimmer {
+  @apply bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400 bg-clip-text text-transparent;
+}
+
+/* Topbar Navigation Styles */
+.topbar-nav {
+  @apply bg-mystical-900/95 backdrop-blur-md border-b border-mystical-700/50;
+}
+
+.topbar-nav-item {
+  @apply flex items-center space-x-2 px-4 py-2 text-text-mystic hover:text-text-celestial hover:bg-crystal-clear rounded-t-lg transition-all duration-300;
+}
+
+.topbar-nav-item.active {
+  @apply text-gold bg-crystal-clear border-b-2 border-gold;
+}
+
+.topbar-nav-item:hover {
+  @apply transform translate-y-0.5;
+}
+
+/* Mobile Navigation Styles */
+.mobile-nav {
+  @apply md:hidden border-t border-mystical-700/50 bg-mystical-900/95 backdrop-blur-md;
+}
+
+.mobile-nav-item {
+  @apply flex items-center space-x-3 px-4 py-3 text-text-mystic hover:text-text-celestial hover:bg-crystal-clear rounded-lg transition-all duration-300;
+}
+
+.mobile-nav-item.active {
+  @apply text-gold bg-crystal-clear border-l-4 border-gold;
+}

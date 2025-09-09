@@ -1,0 +1,22 @@
+# i18n (Internationalization) Roadmap
+
+**Goal:**  
+Implement and maintain multi-language support without disrupting current UI or app logic.
+
+---
+
+## Plan
+
+- [ ] List all user-facing strings/components.
+- [ ] Migrate hard-coded text to i18n JSONs (`lib/i18n/locales/{lang}/`).
+- [ ] Keep JSON keys organized by module/feature (auth, tarot, numerology, etc.).
+- [ ] Test each language switch for UI/UX consistency.
+- [ ] Avoid breaking any layout or workflow during migration.
+
+---
+
+> All i18n changes must be invisible to the user unless a new language is selected.---
+description:
+globs:
+alwaysApply: false
+---

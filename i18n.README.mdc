@@ -1,0 +1,312 @@
+# i18n (Uluslararasılaştırma) Rehberi
+
+Bu dokümantasyon, projenin çok dilli (i18n) yapılandırması ve kullanımı hakkında detaylı bilgi sağlar.
+
+## 🌍 Desteklenen Diller
+
+- **TR (Türkçe)** - Varsayılan dil
+- **EN (English)** - İngilizce
+- **SR (Serbian Latin)** - Sırpça (Latin alfabesi)
+
+## 📁 Proje Yapısı
+
+```
+src/
+├── lib/i18n/
+│   ├── config.ts          # i18n yapılandırması
+│   ├── validation.ts      # Validation mesajları
+│   └── paths.ts          # Path helper fonksiyonları
+├── providers/
+│   └── IntlProvider.tsx  # i18n provider bileşeni
+├── middleware.ts         # Locale routing middleware
+└── app/
+    ├── layout.tsx        # Ana layout
+    └── [locale]/         # Locale segment routing
+        ├── layout.tsx    # Locale layout
+        └── (main)/       # Ana sayfalar
+
+messages/
+├── tr.json              # Türkçe çeviriler
+├── en.json              # İngilizce çeviriler
+└── sr.json              # Sırpça çeviriler
+
+tests/i18n/
+├── messages-parity.test.ts    # Çeviri eşitliği testleri
+└── locale-routing.spec.ts     # Routing testleri
+
+scripts/
+└── check-hardcoded-ui-strings.mjs  # Hardcoded string kontrolü
+```
+
+## 🚀 Kullanım
+
+### Temel Kullanım
+
+```tsx
+import { useTranslations } from 'next-intl';
+
+function MyComponent() {
+  const t = useTranslations('common');
+  
+  return (
+    <div>
+      <h1>{t('title')}</h1>
+      <button>{t('save')}</button>
+    </div>
+  );
+}
+```
+
+### Namespace Kullanımı
+
+```tsx
+import { useTranslations } from 'next-intl';
+
+function AuthForm() {
+  const t = useTranslations('auth.signIn');
+  
+  return (
+    <form>
+      <label>{t('email')}</label>
+      <input type="email" />
+      <label>{t('password')}</label>
+      <input type="password" />
+      <button>{t('signInButton')}</button>
+    </form>
+  );
+}
+```
+
+### Server Component'lerde
+
+```tsx
+import { getTranslations } from 'next-intl/server';
+
+async function ServerComponent() {
+  const t = await getTranslations('seo');
+  
+  return (
+    <head>
+      <title>{t('title')}</title>
+      <meta name="description" content={t('description')} />
+    </head>
+  );
+}
+```
+
+## 🔧 Yeni Çeviri Ekleme
+
+### 1. Dil Dosyasına Ekleme
+
+`messages/tr.json` dosyasına yeni anahtar ekleyin:
+
+```json
+{
+  "common": {
+    "newKey": "Yeni metin"
+  }
+}
+```
+
+### 2. Diğer Dillere Çeviri
+
+`messages/en.json` ve `messages/sr.json` dosyalarına da aynı anahtarı ekleyin:
+
+```json
+// messages/en.json
+{
+  "common": {
+    "newKey": "New text"
+  }
+}
+
+// messages/sr.json
+{
+  "common": {
+    "newKey": "Novi tekst"
+  }
+}
+```
+
+### 3. Bileşende Kullanma
+
+```tsx
+const t = useTranslations('common');
+return <span>{t('newKey')}</span>;
+```
+
+## 🌐 Yeni Dil Ekleme
+
+### 1. Yapılandırma Güncelleme
+
+`src/lib/i18n/config.ts` dosyasını güncelleyin:
+
+```typescript
+export const locales = ['tr', 'en', 'sr', 'fr'] as const;
+export type Locale = (typeof locales)[number];
+
+export const localeConfig = {
+  // ... mevcut diller
+  fr: {
+    name: 'French',
+    nativeName: 'Français',
+    timezone: 'Europe/Paris',
+  },
+} as const;
+```
+
+### 2. Dil Dosyası Oluşturma
+
+`messages/fr.json` dosyasını oluşturun ve tüm anahtarları çevirin.
+
+### 3. Test Güncelleme
+
+`tests/i18n/messages-parity.test.ts` dosyasında yeni dili ekleyin.
+
+## 🛠️ Validation Mesajları
+
+### Zod ile Entegrasyon
+
+```typescript
+import { z } from 'zod';
+import { getValidationMessages } from '@/lib/i18n/validation';
+
+const schema = z.object({
+  email: z.string().email(),
+  password: z.string().min(8),
+});
+
+// Server-side validation
+const messages = await getValidationMessages(locale);
+const result = schema.safeParse(data);
+
+if (!result.success) {
+  // Hata mesajlarını çevir
+  const errors = result.error.errors.map(error => ({
+    field: error.path.join('.'),
+    message: messages[error.code] || error.message,
+  }));
+}
+```
+
+## 🧪 Test Etme
+
+### Unit Testler
+
+```bash
+npm test tests/i18n/
+```
+
+### Hardcoded String Kontrolü
+
+```bash
+node scripts/check-hardcoded-ui-strings.mjs
+```
+
+### E2E Testler
+
+```bash
+npm run test:e2e
+```
+
+## 🔍 Troubleshooting
+
+### Yaygın Sorunlar
+
+1. **Çeviri bulunamadı hatası**
+   - Anahtarın tüm dil dosyalarında mevcut olduğundan emin olun
+   - Namespace'in doğru olduğunu kontrol edin
+
+2. **Locale routing çalışmıyor**
+   - Middleware'in doğru yapılandırıldığını kontrol edin
+   - `next.config.js` dosyasında next-intl plugin'inin aktif olduğundan emin olun
+
+3. **Server component'lerde çeviri çalışmıyor**
+   - `getTranslations` kullanın, `useTranslations` değil
+   - Async/await kullanın
+
+### Debug Modu
+
+```typescript
+// Development modunda çeviri anahtarlarını göster
+const t = useTranslations('common');
+console.log('Translation key:', t.raw('save'));
+```
+
+## 📋 Best Practices
+
+### 1. Anahtar Adlandırma
+
+```json
+{
+  "auth": {
+    "signIn": {
+      "title": "Giriş Yap",
+      "email": "E-posta",
+      "password": "Şifre"
+    }
+  }
+}
+```
+
+### 2. Namespace Organizasyonu
+
+- `common`: Genel kullanım
+- `nav`: Navigasyon
+- `auth`: Kimlik doğrulama
+- `validation`: Form validasyonu
+- `tarot`: Tarot özel içerik
+- `errors`: Hata mesajları
+
+### 3. Çeviri Kalitesi
+
+- Kısa ve net ifadeler kullanın
+- Kültürel bağlamı göz önünde bulundurun
+- Teknik terimleri tutarlı kullanın
+
+### 4. Performance
+
+- Sadece gerekli namespace'leri yükleyin
+- Lazy loading kullanın
+- Cache stratejilerini uygulayın
+
+## 🔄 CI/CD Entegrasyonu
+
+### GitHub Actions
+
+```yaml
+- name: Check hardcoded strings
+  run: node scripts/check-hardcoded-ui-strings.mjs
+
+- name: Run i18n tests
+  run: npm test tests/i18n/
+```
+
+### Pre-commit Hook
+
+```json
+{
+  "husky": {
+    "hooks": {
+      "pre-commit": "node scripts/check-hardcoded-ui-strings.mjs"
+    }
+  }
+}
+```
+
+## 📚 Kaynaklar
+
+- [next-intl Dokümantasyonu](https://next-intl-docs.vercel.app/)
+- [React i18n Best Practices](https://react.i18next.com/)
+- [Unicode CLDR](https://cldr.unicode.org/)
+
+## 🤝 Katkıda Bulunma
+
+1. Yeni çeviri eklerken tüm dilleri güncelleyin
+2. Test dosyalarını çalıştırın
+3. Hardcoded string kontrolünü yapın
+4. Dokümantasyonu güncelleyin
+
+---
+
+**Not**: Bu rehber projenin i18n ihtiyaçlarına göre sürekli güncellenmektedir. Sorularınız için lütfen proje ekibi ile iletişime geçin.

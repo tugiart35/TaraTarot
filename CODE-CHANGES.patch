@@ -1,0 +1,616 @@
+# 🔧 CODE CHANGES PATCH - Busbuskimki Tarot Uygulaması
+
+**Patch Tarihi:** 20 Ocak 2025  
+**Versiyon:** 1.0.0  
+**Kapsam:** Kritik sorunların düzeltilmesi için kod değişiklikleri
+
+---
+
+## 📋 PATCH OVERVIEW
+
+Bu patch dosyası, PROJECT-AUDIT.md'de tespit edilen kritik sorunların düzeltilmesi için gerekli kod değişikliklerini içerir.
+
+### Düzeltilen Sorunlar
+1. **Type duplikasyonu** - TarotCard interface birleştirildi
+2. **Console.log temizliği** - Production için console.log'lar kaldırıldı
+3. **Environment variables** - Eksik değişkenler eklendi
+4. **Security improvements** - Rate limiting ve XSS koruması
+5. **Performance optimizations** - Bundle size azaltma
+6. **Code cleanup** - Kullanılmayan import'lar ve kodlar
+
+---
+
+## 🔄 UNIFIED DIFFS
+
+### 1. Type Duplikasyonu Düzeltmesi
+
+```diff
+--- a/src/types/reading.types.ts
++++ b/src/types/reading.types.ts
+@@ -45,11 +45,7 @@
+  * Tarot ve Numeroloji okumalarıyla ilgili tip tanımlamaları
+  */
+ 
+-export interface TarotCard {
+-  id: number
+-  name: string
+-  nameTr: string
+-  suit: 'major' | 'cups' | 'wands' | 'swords' | 'pentacles'
+-  number?: number | string
+-  meaning: {
+-    upright: string
+-    reversed: string
+-  }
+-  meaningTr: {
+-    upright: string
+-    reversed: string
+-  }
+-  keywords: string[]
+-  keywordsTr: string[]
+-  image: string
+-  element?: string
+-}
++// TarotCard interface'i @/types/tarot.ts'den import ediliyor
++import type { TarotCard } from '@/types/tarot';
+```
+
+### 2. Console.log Temizliği
+
+```diff
+--- a/src/features/tarot/lib/love/position-meanings-index.ts
++++ b/src/features/tarot/lib/love/position-meanings-index.ts
+@@ -290,20 +290,6 @@ export const getMeaningByCardAndPosition = (
+   cardName: string,
+   position: number
+ ): LovePositionMeaning | undefined => {
+-  console.log('🔍 getMeaningByCardAndPosition called:', { cardName, position });
+-  
+-  // Kart ismini mapping ile dönüştür
+-  const mappedCardName = cardNameMapping[cardName] || cardName;
+-  console.log('🔄 Mapped card name:', mappedCardName, 'from original:', cardName);
+-  
+-  const positionMeanings = getMeaningsByPosition(position);
+-  console.log(`📊 Position ${position} meanings:`, positionMeanings.length, 'meanings available');
+-  
+-  // İlk 5 kart ismini göster
+-  const sampleCards = positionMeanings.slice(0, 5).map(m => m.card);
+-  console.log('📋 Sample cards in position', position, ':', sampleCards);
+-  
+-  // Önce mapped isimle ara
+-  let found = positionMeanings.find(meaning => meaning.card === mappedCardName);
+-  console.log('🔎 Search with mapped name result:', found ? 'FOUND' : 'NOT FOUND');
+-  
+-  // Bulunamazsa orijinal isimle ara
+-  if (!found) {
+-    found = positionMeanings.find(meaning => meaning.card === cardName);
+-    console.log('🔎 Search with original name result:', found ? 'FOUND' : 'NOT FOUND');
+-  }
+-  
+-  console.log('✅ Final result:', found ? 'SUCCESS' : 'FAILED');
++  // Kart ismini mapping ile dönüştür
++  const mappedCardName = cardNameMapping[cardName] || cardName;
++  
++  const positionMeanings = getMeaningsByPosition(position);
++  
++  // Önce mapped isimle ara
++  let found = positionMeanings.find(meaning => meaning.card === mappedCardName);
++  
++  // Bulunamazsa orijinal isimle ara
++  if (!found) {
++    found = positionMeanings.find(meaning => meaning.card === cardName);
++  }
+   
+   return found;
+ };
+```
+
+### 3. Environment Variables Ekleme
+
+```diff
+--- a/.env.local.example
++++ b/.env.local.example
+@@ -1,2 +1,7 @@
+ NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
++NEXT_PUBLIC_SITE_URL=https://your-domain.com
++NEXT_PUBLIC_CONTACT_PHONE=+90 (555) 123 45 67
++NEXT_PUBLIC_APP_NAME=TarotNumeroloji
++NEXT_PUBLIC_APP_VERSION=1.0.0
++NODE_ENV=development
+```
+
+### 4. Middleware Security Improvements
+
+```diff
+--- a/src/middleware.ts
++++ b/src/middleware.ts
+@@ -35,7 +35,7 @@ import type { UserRole } from '@/types/auth.types';
+ 
+ // Rate limiting kaldırıldı - development için
++// Rate limiting configuration
++const RATE_LIMIT_CONFIG = {
++  windowMs: 15 * 60 * 1000, // 15 minutes
++  max: 100, // limit each IP to 100 requests per windowMs
++  message: 'Too many requests from this IP, please try again later.',
++};
+ 
+ // Security headers configuration
+ const securityHeaders = {
+@@ -63,7 +63,7 @@ const securityHeaders = {
+   ].join('; '),
+ };
+ 
+-// Rate limiting kaldırıldı - development için
++// Rate limiting implementation
++const rateLimitMap = new Map();
+ 
+ // Bot detection kaldırıldı - development için
++// Bot detection implementation
++const isBot = (userAgent: string): boolean => {
++  const botPatterns = [
++    /bot/i, /crawler/i, /spider/i, /scraper/i,
++    /facebookexternalhit/i, /twitterbot/i, /linkedinbot/i
++  ];
++  return botPatterns.some(pattern => pattern.test(userAgent));
++};
+ 
+ export async function middleware(request: NextRequest) {
+   const pathname = request.nextUrl.pathname;
+   
+-  // Bot detection kaldırıldı - development için
++  // Bot detection
++  const userAgent = request.headers.get('user-agent') || '';
++  if (isBot(userAgent)) {
++     return new NextResponse('Bot detected', { status: 403 });
++  }
+ 
+-  // Rate limiting kaldırıldı - development için
++  // Rate limiting
++  const ip = request.ip || request.headers.get('x-forwarded-for') || 'unknown';
++  const now = Date.now();
++  const windowStart = now - RATE_LIMIT_CONFIG.windowMs;
++  
++  if (rateLimitMap.has(ip)) {
++     const requests = rateLimitMap.get(ip).filter((time: number) => time > windowStart);
++     if (requests.length >= RATE_LIMIT_CONFIG.max) {
++       return new NextResponse(RATE_LIMIT_CONFIG.message, { status: 429 });
++     }
++     requests.push(now);
++     rateLimitMap.set(ip, requests);
++   } else {
++     rateLimitMap.set(ip, [now]);
++   }
+```
+
+### 5. Supabase Client Type Safety
+
+```diff
+--- a/src/lib/supabase/client.ts
++++ b/src/lib/supabase/client.ts
+@@ -14,6 +14,7 @@
+ 
+ import { createClient } from '@supabase/supabase-js';
++import type { Database } from './types';
+ 
+ const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+ const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+@@ -33,7 +34,7 @@ if (!supabaseUrl || !supabaseAnonKey) {
+   throw new Error('Missing Supabase environment variables');
+ }
+ 
+-export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
++export const supabase = createClient<Database>(supabaseUrl, supabaseAnonKey, {
+   auth: {
+     autoRefreshToken: true,
+     persistSession: true,
+@@ -41,7 +42,7 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
+   },
+ });
+ 
+-// Database types için tip tanımları
++// Database types artık ayrı dosyada
+ export interface Database {
+   public: {
+     Tables: {
+```
+
+### 6. XSS Protection Ekleme
+
+```diff
+--- a/src/app/[locale]/auth/page.tsx
++++ b/src/app/[locale]/auth/page.tsx
+@@ -1,3 +1,4 @@
++import DOMPurify from 'dompurify';
+ import { useState, useEffect } from 'react';
+ import { useRouter } from 'next/navigation';
+ import { supabase } from '@/lib/supabase/client';
+@@ -160,6 +161,12 @@ export default function AuthPage() {
+   // Form validasyonu
+   const validateForm = () => {
+     const newErrors: {
+@@ -300,6 +307,9 @@ export default function AuthPage() {
+     // Email validasyonu
+     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+     if (!email) {
+       newErrors.email = t('auth.page.emailRequired');
+     } else if (!emailRegex.test(email)) {
+       newErrors.email = t('auth.page.emailInvalid');
++    } else {
++      // XSS protection - email sanitization
++      const sanitizedEmail = DOMPurify.sanitize(email);
++      if (sanitizedEmail !== email) {
++        newErrors.email = t('auth.page.emailInvalid');
++      }
+     }
+```
+
+### 7. Performance Optimization - Lazy Loading
+
+```diff
+--- a/src/features/tarot/components/Love-Spread/LoveTarot.tsx
++++ b/src/features/tarot/components/Love-Spread/LoveTarot.tsx
+@@ -1,3 +1,4 @@
++import { lazy, Suspense } from 'react';
+ import { getMeaningByCardAndPosition } from '@/features/tarot/lib/love/position-meanings-index';
+ import { useState, useEffect } from 'react';
+ import { useRouter } from 'next/navigation';
+@@ -15,6 +16,10 @@ import { findSpreadById } from '@/lib/constants/tarotSpreads';
+ import { LOVE_POSITIONS_INFO, LOVE_POSITIONS_LAYOUT } from './love-config';
+ import { CardDetails } from '@/features/shared/ui';
+ import LoveCardRenderer from './LoveCardRenderer'; // Açılıma özel renderer
+-import LoveInterpretation from './LoveInterpretation';
++// Lazy load heavy components
++const LoveInterpretation = lazy(() => import('./LoveInterpretation'));
++const LoveCardRenderer = lazy(() => import('./LoveCardRenderer'));
+ 
+ // ============================================================================
+ // BÖLÜM 1: SABITLER VE KONFIGÜRASYONLAR
+@@ -200,6 +205,12 @@ export default function LoveReading({
+     }
+   };
+ 
++  // Loading component for lazy loaded components
++  const LoadingFallback = () => (
++    <div className="flex items-center justify-center p-8">
++      <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gold"></div>
++    </div>
++  );
++
+   return (
+     <div className="min-h-screen bg-night">
+       {/* Header */}
+@@ -250,7 +261,9 @@ export default function LoveReading({
+           )}
+ 
+           {/* Interpretation Section */}
+-          {currentStep === 'interpretation' && (
++          {currentStep === 'interpretation' && (
++            <Suspense fallback={<LoadingFallback />}>
+               <LoveInterpretation
+                 cards={selectedCards}
+                 question={question}
+@@ -258,6 +271,7 @@ export default function LoveReading({
+                 onComplete={handleReadingComplete}
+               />
++            </Suspense>
+           )}
+         </div>
+       </div>
+```
+
+### 8. Unused Imports Cleanup
+
+```diff
+--- a/src/features/shared/ui/tarot/GenericTarotSpread.tsx
++++ b/src/features/shared/ui/tarot/GenericTarotSpread.tsx
+@@ -9,7 +9,6 @@
+ 'use client';
+ 
+ import { useState, useEffect } from 'react';
+-import { useToast } from '@/hooks/useToast';
+ import { useAuth } from '@/hooks/useAuth';
+ import { useReadingCredits } from '@/hooks/useReadingCredits';
+ // import { useRouter } from 'next/navigation'; // Kullanılmıyor - kaldırıldı
+@@ -17,7 +16,6 @@ import { useTarotReading } from '@/hooks/useTarotReading';
+ import {
+   BaseCardPosition,
+   BaseCardGallery,
+-  BaseReadingTypeSelector,
+   CardDetails,
+ } from '@/features/shared/ui';
+ // ReadingInfoModal kullanılmıyor - kaldırıldı
+```
+
+### 9. Next.js Configuration Improvements
+
+```diff
+--- a/next.config.js
++++ b/next.config.js
+@@ -1,18 +1,25 @@
+ /** @type {import('next').NextConfig} */
+ const nextConfig = {
++  // Production optimizations
++  swcMinify: true,
++  compress: true,
++  
+   // Image optimization
+   images: {
+-    domains: ['localhost'],
+-    unoptimized: true, // Geliştirme için görsel optimizasyonunu kapat
++    domains: ['localhost', 'pootnkllsznjbaozpfss.supabase.co'],
++    unoptimized: false, // Production'da optimize et
++    formats: ['image/webp', 'image/avif'],
+   },
++  
+   // TypeScript configuration
+   typescript: {
+     ignoreBuildErrors: false,
+   },
++  
+   // ESLint configuration
+   eslint: {
+-    ignoreDuringBuilds: true,
++    ignoreDuringBuilds: false, // Production'da ESLint hatalarını kontrol et
+   },
++  
++  // Performance optimizations
++  experimental: {
++    optimizeCss: true,
++  },
+ }
+ 
+ module.exports = nextConfig
+```
+
+### 10. Package.json Dependencies
+
+```diff
+--- a/package.json
++++ b/package.json
+@@ -19,6 +19,7 @@
+   "dependencies": {
+     "@heroicons/react": "^2.2.0",
+     "@supabase/auth-helpers-nextjs": "^0.8.7",
++    "dompurify": "^3.0.5",
+     "@supabase/supabase-js": "^2.57.2",
+     "clsx": "^2.1.1",
+     "framer-motion": "^12.23.0",
+@@ -36,6 +37,7 @@
+   "devDependencies": {
+     "@types/node": "^20",
+     "@types/react": "^18",
++    "@types/dompurify": "^3.0.5",
+     "@types/react-dom": "^18",
+     "autoprefixer": "^10.0.1",
+     "eslint": "^8",
+```
+
+---
+
+## 🗑️ FILES TO DELETE
+
+### Unused Files
+```bash
+# Bu dosyalar kullanılmıyor ve silinebilir
+rm src/features/shared/ui/tarot/TarotSpreadWrapper.tsx
+rm src/hooks/useTarotSpreadLogic.ts
+rm src/features/shared/icons/MysticalIcons.tsx
+rm src/features/shared/icons/index.ts
+rm public/cards/CardBack\ \(1\).jpg
+```
+
+### Unused Assets
+```bash
+# Bu görseller kullanılmıyor
+rm public/images/Ekran\ Resmi\ 2025-06-20\ 21.08.09.png
+rm public/images/Ekran\ Resmi\ 2025-06-30\ 02.06.28.png
+rm public/images/freepik__enchanted-future-prediction-setup-crystal-ball-ast__6398.png
+rm public/images/freepik__enchanted-future-prediction-setup-crystal-ball-ast__6399.jpeg
+rm public/images/geneltarot.png
+rm public/images/selfreflection.png
+```
+
+---
+
+## 📦 NEW FILES TO CREATE
+
+### 1. Environment Variables Template
+```bash
+# .env.local.example
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+NEXT_PUBLIC_SITE_URL=https://your-domain.com
+NEXT_PUBLIC_CONTACT_PHONE=+90 (555) 123 45 67
+NEXT_PUBLIC_APP_NAME=TarotNumeroloji
+NEXT_PUBLIC_APP_VERSION=1.0.0
+NODE_ENV=development
+```
+
+### 2. Database Types File
+```typescript
+// src/lib/supabase/types.ts
+export interface Database {
+  public: {
+    Tables: {
+      profiles: {
+        Row: {
+          id: string;
+          user_id: string;
+          full_name?: string;
+          display_name?: string;
+          avatar_url?: string;
+          credit_balance: number;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          user_id: string;
+          full_name?: string;
+          display_name?: string;
+          avatar_url?: string;
+          credit_balance?: number;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: string;
+          user_id?: string;
+          full_name?: string;
+          display_name?: string;
+          avatar_url?: string;
+          credit_balance?: number;
+          created_at?: string;
+          updated_at?: string;
+        };
+      };
+      // ... diğer tablolar
+    };
+  };
+}
+```
+
+---
+
+## 🧪 TESTING ADDITIONS
+
+### 1. Unit Tests
+```typescript
+// src/__tests__/utils/profile-utils.test.ts
+import { generateDisplayName, createOrUpdateProfile } from '@/lib/utils/profile-utils';
+
+describe('Profile Utils', () => {
+  test('generateDisplayName should return fullName when provided', () => {
+    const result = generateDisplayName('John Doe', 'john@example.com');
+    expect(result).toBe('John Doe');
+  });
+
+  test('generateDisplayName should return email username when fullName not provided', () => {
+    const result = generateDisplayName(undefined, 'john@example.com');
+    expect(result).toBe('john');
+  });
+});
+```
+
+### 2. Integration Tests
+```typescript
+// src/__tests__/integration/auth.test.ts
+import { render, screen } from '@testing-library/react';
+import AuthPage from '@/app/[locale]/auth/page';
+
+describe('Auth Page Integration', () => {
+  test('should render login form', () => {
+    render(<AuthPage />);
+    expect(screen.getByPlaceholderText(/email/i)).toBeInTheDocument();
+    expect(screen.getByPlaceholderText(/password/i)).toBeInTheDocument();
+  });
+});
+```
+
+---
+
+## 📊 PERFORMANCE IMPROVEMENTS
+
+### 1. Bundle Analysis
+```bash
+# Bundle analyzer ekle
+npm install --save-dev @next/bundle-analyzer
+```
+
+### 2. Code Splitting
+```typescript
+// Lazy loading için dynamic imports
+const HeavyComponent = dynamic(() => import('./HeavyComponent'), {
+  loading: () => <LoadingSpinner />,
+  ssr: false
+});
+```
+
+### 3. Image Optimization
+```typescript
+// Next.js Image component kullanımı
+import Image from 'next/image';
+
+<Image
+  src="/cards/rws/0.jpg"
+  alt="Tarot Card"
+  width={200}
+  height={300}
+  priority={false}
+  placeholder="blur"
+  blurDataURL="data:image/jpeg;base64,..."
+/>
+```
+
+---
+
+## 🔒 SECURITY ENHANCEMENTS
+
+### 1. Content Security Policy
+```typescript
+// next.config.js'e ekle
+const securityHeaders = [
+  {
+    key: 'Content-Security-Policy',
+    value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self' https://*.supabase.co;"
+  }
+];
+```
+
+### 2. Rate Limiting
+```typescript
+// API routes için rate limiting
+import rateLimit from 'express-rate-limit';
+
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // limit each IP to 100 requests per windowMs
+  message: 'Too many requests from this IP, please try again later.'
+});
+```
+
+---
+
+## 📋 IMPLEMENTATION CHECKLIST
+
+### Phase 1: Critical Fixes (1-2 gün)
+- [ ] Type duplikasyonunu gider
+- [ ] Console.log'ları temizle
+- [ ] Environment variables ekle
+- [ ] Kullanılmayan dosyaları sil
+- [ ] XSS protection ekle
+
+### Phase 2: Security & Performance (1 hafta)
+- [ ] Rate limiting aktif et
+- [ ] Bundle size optimize et
+- [ ] Lazy loading ekle
+- [ ] Image optimization
+- [ ] Security headers
+
+### Phase 3: Architecture (1 ay)
+- [ ] God files'ları böl
+- [ ] Modülerleştirme
+- [ ] Test coverage
+- [ ] Documentation
+
+---
+
+## 🚀 DEPLOYMENT NOTES
+
+### Pre-deployment Checklist
+1. **Environment variables** - Tüm değişkenler tanımlı
+2. **Console.log'lar** - Production'da temizlenmiş
+3. **Type errors** - Tüm TypeScript hataları düzeltilmiş
+4. **Security** - Rate limiting ve XSS koruması aktif
+5. **Performance** - Bundle size optimize edilmiş
+
+### Post-deployment Monitoring
+1. **Error tracking** - Sentry veya benzeri
+2. **Performance monitoring** - Web Vitals
+3. **Security monitoring** - Rate limiting logs
+4. **User analytics** - Usage patterns
+
+---
+
+**Patch Tamamlandı:** 20 Ocak 2025  
+**Sonraki Adım:** REFACTOR-PLAN.md dosyası oluşturulacak

@@ -1,0 +1,824 @@
+{
+  "metadata": {
+    "generated": "2025-01-27",
+    "project": "Büşbüşkimki Tarot Uygulaması",
+    "totalFiles": 50,
+    "totalImports": 106,
+    "totalExports": 169
+  },
+  "nodes": [
+    {
+      "id": "src/features/tarot/components/Love-Spread/LoveTarot.tsx",
+      "type": "component",
+      "size": 1014,
+      "imports": 15,
+      "exports": 2,
+      "complexity": "high"
+    },
+    {
+      "id": "src/features/shared/ui/BaseInterpretation.tsx",
+      "type": "component",
+      "size": 509,
+      "imports": 8,
+      "exports": 4,
+      "complexity": "high"
+    },
+    {
+      "id": "src/features/shared/ui/BaseReadingTypeSelector.tsx",
+      "type": "component",
+      "size": 367,
+      "imports": 5,
+      "exports": 1,
+      "complexity": "medium"
+    },
+    {
+      "id": "src/features/tarot/lib/a-tarot-helpers.ts",
+      "type": "utility",
+      "size": 70,
+      "imports": 2,
+      "exports": 5,
+      "complexity": "low"
+    },
+    {
+      "id": "src/lib/constants/tarotSpreads.ts",
+      "type": "constants",
+      "size": 150,
+      "imports": 1,
+      "exports": 8,
+      "complexity": "low"
+    },
+    {
+      "id": "src/features/tarot/lib/full-tarot-deck.ts",
+      "type": "data",
+      "size": 2000,
+      "imports": 1,
+      "exports": 2,
+      "complexity": "low"
+    },
+    {
+      "id": "src/types/tarot.ts",
+      "type": "types",
+      "size": 200,
+      "imports": 0,
+      "exports": 15,
+      "complexity": "low"
+    },
+    {
+      "id": "src/types/reading.types.ts",
+      "type": "types",
+      "size": 158,
+      "imports": 0,
+      "exports": 8,
+      "complexity": "low"
+    },
+    {
+      "id": "src/features/shared/ui/BaseCardRenderer.tsx",
+      "type": "component",
+      "size": 200,
+      "imports": 3,
+      "exports": 3,
+      "complexity": "medium"
+    },
+    {
+      "id": "src/features/shared/ui/BaseCardGallery.tsx",
+      "type": "component",
+      "size": 180,
+      "imports": 4,
+      "exports": 1,
+      "complexity": "medium"
+    },
+    {
+      "id": "src/features/shared/ui/BaseCardDetails.tsx",
+      "type": "component",
+      "size": 120,
+      "imports": 3,
+      "exports": 2,
+      "complexity": "low"
+    },
+    {
+      "id": "src/features/shared/ui/BaseCardPosition.tsx",
+      "type": "component",
+      "size": 150,
+      "imports": 3,
+      "exports": 1,
+      "complexity": "medium"
+    },
+    {
+      "id": "src/features/tarot/components/Love-Spread/LoveCardRenderer.tsx",
+      "type": "component",
+      "size": 100,
+      "imports": 2,
+      "exports": 1,
+      "complexity": "low"
+    },
+    {
+      "id": "src/features/tarot/components/Love-Spread/LoveInterpretation.tsx",
+      "type": "component",
+      "size": 200,
+      "imports": 3,
+      "exports": 1,
+      "complexity": "medium"
+    },
+    {
+      "id": "src/features/tarot/components/Love-Spread/LoveGuidanceDetail.tsx",
+      "type": "component",
+      "size": 300,
+      "imports": 8,
+      "exports": 1,
+      "complexity": "high"
+    },
+    {
+      "id": "src/features/shared/ui/CardDetails.tsx",
+      "type": "component",
+      "size": 177,
+      "imports": 4,
+      "exports": 1,
+      "complexity": "medium"
+    },
+    {
+      "id": "src/features/shared/ui/ErrorBoundary.tsx",
+      "type": "component",
+      "size": 150,
+      "imports": 1,
+      "exports": 3,
+      "complexity": "low"
+    },
+    {
+      "id": "src/features/shared/ui/ErrorDisplay.tsx",
+      "type": "component",
+      "size": 197,
+      "imports": 1,
+      "exports": 2,
+      "complexity": "low"
+    },
+    {
+      "id": "src/features/shared/ui/LoadingSpinner.tsx",
+      "type": "component",
+      "size": 350,
+      "imports": 1,
+      "exports": 4,
+      "complexity": "medium"
+    },
+    {
+      "id": "src/features/shared/ui/MobileScrollWrapper.tsx",
+      "type": "component",
+      "size": 50,
+      "imports": 2,
+      "exports": 1,
+      "complexity": "low"
+    },
+    {
+      "id": "src/features/shared/ui/ReadingInfoModal.tsx",
+      "type": "component",
+      "size": 100,
+      "imports": 1,
+      "exports": 1,
+      "complexity": "low"
+    },
+    {
+      "id": "src/features/shared/ui/Toast.tsx",
+      "type": "component",
+      "size": 80,
+      "imports": 1,
+      "exports": 2,
+      "complexity": "low"
+    },
+    {
+      "id": "src/features/shared/ui/tarot/GenericTarotSpread.tsx",
+      "type": "component",
+      "size": 358,
+      "imports": 4,
+      "exports": 1,
+      "complexity": "high"
+    },
+    {
+      "id": "src/features/shared/ui/tarot/TarotSpreadWrapper.tsx",
+      "type": "component",
+      "size": 25,
+      "imports": 2,
+      "exports": 1,
+      "complexity": "low"
+    },
+    {
+      "id": "src/features/shared/layout/BottomNavigation.tsx",
+      "type": "layout",
+      "size": 150,
+      "imports": 2,
+      "exports": 1,
+      "complexity": "low"
+    },
+    {
+      "id": "src/features/shared/layout/Footer.tsx",
+      "type": "layout",
+      "size": 213,
+      "imports": 1,
+      "exports": 1,
+      "complexity": "low"
+    },
+    {
+      "id": "src/features/shared/layout/HeadTags.tsx",
+      "type": "layout",
+      "size": 100,
+      "imports": 2,
+      "exports": 1,
+      "complexity": "low"
+    },
+    {
+      "id": "src/features/shared/layout/RootLayout.tsx",
+      "type": "layout",
+      "size": 80,
+      "imports": 3,
+      "exports": 1,
+      "complexity": "low"
+    },
+    {
+      "id": "src/features/shared/icons/MysticalIcons.tsx",
+      "type": "icons",
+      "size": 500,
+      "imports": 1,
+      "exports": 6,
+      "complexity": "low"
+    },
+    {
+      "id": "src/features/tarot/components/standard/LastReadingSummary.tsx",
+      "type": "component",
+      "size": 120,
+      "imports": 2,
+      "exports": 1,
+      "complexity": "low"
+    },
+    {
+      "id": "src/features/tarot/components/standard/TarotSpreadSelector.tsx",
+      "type": "component",
+      "size": 100,
+      "imports": 1,
+      "exports": 1,
+      "complexity": "low"
+    },
+    {
+      "id": "src/features/tarot/lib/love/position-meanings-index.ts",
+      "type": "data",
+      "size": 200,
+      "imports": 4,
+      "exports": 10,
+      "complexity": "medium"
+    },
+    {
+      "id": "src/features/tarot/lib/love/position-1-ilgi-duydugun-kisi.ts",
+      "type": "data",
+      "size": 50,
+      "imports": 0,
+      "exports": 2,
+      "complexity": "low"
+    },
+    {
+      "id": "src/features/tarot/lib/love/position-2-fiziksel.ts",
+      "type": "data",
+      "size": 50,
+      "imports": 0,
+      "exports": 2,
+      "complexity": "low"
+    },
+    {
+      "id": "src/features/tarot/lib/love/position-3-baglanti.ts",
+      "type": "data",
+      "size": 50,
+      "imports": 0,
+      "exports": 2,
+      "complexity": "low"
+    },
+    {
+      "id": "src/features/tarot/lib/love/position-4-uzun-vadeli-surec.ts",
+      "type": "data",
+      "size": 50,
+      "imports": 0,
+      "exports": 2,
+      "complexity": "low"
+    },
+    {
+      "id": "src/features/tarot/components/Love-Spread/love-config.ts",
+      "type": "config",
+      "size": 100,
+      "imports": 1,
+      "exports": 3,
+      "complexity": "low"
+    },
+    {
+      "id": "src/hooks/useTarotReading.ts",
+      "type": "hook",
+      "size": 150,
+      "imports": 3,
+      "exports": 2,
+      "complexity": "medium"
+    },
+    {
+      "id": "src/hooks/useTarotSpreadLogic.ts",
+      "type": "hook",
+      "size": 200,
+      "imports": 3,
+      "exports": 2,
+      "complexity": "medium"
+    },
+    {
+      "id": "src/hooks/useToast.ts",
+      "type": "hook",
+      "size": 50,
+      "imports": 1,
+      "exports": 1,
+      "complexity": "low"
+    },
+    {
+      "id": "src/hooks/useTouchScroll.ts",
+      "type": "hook",
+      "size": 80,
+      "imports": 1,
+      "exports": 1,
+      "complexity": "low"
+    },
+    {
+      "id": "src/lib/config/app-config.ts",
+      "type": "config",
+      "size": 100,
+      "imports": 0,
+      "exports": 2,
+      "complexity": "low"
+    },
+    {
+      "id": "src/lib/config/metadata.ts",
+      "type": "config",
+      "size": 80,
+      "imports": 1,
+      "exports": 4,
+      "complexity": "low"
+    },
+    {
+      "id": "src/lib/constants/reading-credits.ts",
+      "type": "constants",
+      "size": 50,
+      "imports": 0,
+      "exports": 3,
+      "complexity": "low"
+    },
+    {
+      "id": "src/app/layout.tsx",
+      "type": "page",
+      "size": 62,
+      "imports": 4,
+      "exports": 3,
+      "complexity": "low"
+    },
+    {
+      "id": "src/app/page.tsx",
+      "type": "page",
+      "size": 73,
+      "imports": 2,
+      "exports": 1,
+      "complexity": "low"
+    },
+    {
+      "id": "src/app/(main)/a-tarot/page.tsx",
+      "type": "page",
+      "size": 200,
+      "imports": 4,
+      "exports": 1,
+      "complexity": "medium"
+    }
+  ],
+  "edges": [
+    {
+      "from": "src/features/tarot/components/Love-Spread/LoveTarot.tsx",
+      "to": "src/features/tarot/lib/a-tarot-helpers.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/tarot/components/Love-Spread/LoveTarot.tsx",
+      "to": "src/features/tarot/lib/full-tarot-deck.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/tarot/components/Love-Spread/LoveTarot.tsx",
+      "to": "src/lib/constants/tarotSpreads.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/tarot/components/Love-Spread/LoveTarot.tsx",
+      "to": "src/features/shared/ui/BaseCardRenderer.tsx",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/tarot/components/Love-Spread/LoveTarot.tsx",
+      "to": "src/features/tarot/components/Love-Spread/LoveCardRenderer.tsx",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/tarot/components/Love-Spread/LoveTarot.tsx",
+      "to": "src/features/tarot/components/Love-Spread/LoveInterpretation.tsx",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/tarot/components/Love-Spread/LoveTarot.tsx",
+      "to": "src/types/tarot.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/shared/ui/BaseInterpretation.tsx",
+      "to": "src/features/tarot/lib/a-tarot-helpers.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/shared/ui/BaseReadingTypeSelector.tsx",
+      "to": "src/lib/constants/reading-credits.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/tarot/lib/a-tarot-helpers.ts",
+      "to": "src/types/tarot.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/tarot/lib/a-tarot-helpers.ts",
+      "to": "src/features/tarot/lib/full-tarot-deck.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/tarot/lib/full-tarot-deck.ts",
+      "to": "src/features/tarot/lib/a-tarot-helpers.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/shared/ui/BaseCardRenderer.tsx",
+      "to": "src/features/tarot/lib/a-tarot-helpers.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/shared/ui/BaseCardGallery.tsx",
+      "to": "src/features/tarot/lib/a-tarot-helpers.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/shared/ui/BaseCardDetails.tsx",
+      "to": "src/features/tarot/lib/a-tarot-helpers.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/shared/ui/BaseCardPosition.tsx",
+      "to": "src/features/tarot/lib/a-tarot-helpers.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/tarot/components/Love-Spread/LoveCardRenderer.tsx",
+      "to": "src/features/shared/ui/BaseCardRenderer.tsx",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/tarot/components/Love-Spread/LoveInterpretation.tsx",
+      "to": "src/features/tarot/lib/a-tarot-helpers.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/tarot/components/Love-Spread/LoveInterpretation.tsx",
+      "to": "src/features/tarot/components/Love-Spread/love-config.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/tarot/components/Love-Spread/LoveGuidanceDetail.tsx",
+      "to": "src/features/tarot/lib/full-tarot-deck.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/tarot/components/Love-Spread/LoveGuidanceDetail.tsx",
+      "to": "src/features/tarot/components/Love-Spread/love-config.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/tarot/components/Love-Spread/LoveGuidanceDetail.tsx",
+      "to": "src/features/tarot/components/Love-Spread/LoveCardRenderer.tsx",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/tarot/components/Love-Spread/LoveGuidanceDetail.tsx",
+      "to": "src/features/tarot/components/Love-Spread/LoveInterpretation.tsx",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/shared/ui/CardDetails.tsx",
+      "to": "src/features/tarot/lib/a-tarot-helpers.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/shared/ui/CardDetails.tsx",
+      "to": "src/features/shared/ui/BaseCardDetails.tsx",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/shared/ui/CardDetails.tsx",
+      "to": "src/features/tarot/lib/love/position-meanings-index.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/shared/ui/tarot/GenericTarotSpread.tsx",
+      "to": "src/hooks/useTarotReading.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/shared/ui/tarot/GenericTarotSpread.tsx",
+      "to": "src/hooks/useToast.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/shared/ui/tarot/TarotSpreadWrapper.tsx",
+      "to": "src/lib/constants/tarotSpreads.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/shared/ui/tarot/TarotSpreadWrapper.tsx",
+      "to": "src/features/shared/ui/tarot/GenericTarotSpread.tsx",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/shared/layout/BottomNavigation.tsx",
+      "to": "next/navigation",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/shared/layout/Footer.tsx",
+      "to": "react-icons/fa",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/shared/layout/HeadTags.tsx",
+      "to": "src/lib/config/app-config.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/shared/layout/HeadTags.tsx",
+      "to": "src/lib/config/metadata.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/shared/layout/RootLayout.tsx",
+      "to": "src/lib/config/app-config.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/shared/layout/RootLayout.tsx",
+      "to": "src/features/shared/layout/HeadTags.tsx",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/shared/layout/RootLayout.tsx",
+      "to": "src/features/shared/layout/Footer.tsx",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/tarot/components/standard/LastReadingSummary.tsx",
+      "to": "src/features/tarot/lib/a-tarot-helpers.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/tarot/components/standard/TarotSpreadSelector.tsx",
+      "to": "src/lib/constants/tarotSpreads.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/tarot/lib/love/position-meanings-index.ts",
+      "to": "src/features/tarot/lib/love/position-1-ilgi-duydugun-kisi.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/tarot/lib/love/position-meanings-index.ts",
+      "to": "src/features/tarot/lib/love/position-2-fiziksel.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/tarot/lib/love/position-meanings-index.ts",
+      "to": "src/features/tarot/lib/love/position-3-baglanti.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/tarot/lib/love/position-meanings-index.ts",
+      "to": "src/features/tarot/lib/love/position-4-uzun-vadeli-surec.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/features/tarot/components/Love-Spread/love-config.ts",
+      "to": "src/types/tarot.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/hooks/useTarotReading.ts",
+      "to": "src/features/tarot/lib/full-tarot-deck.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/hooks/useTarotReading.ts",
+      "to": "src/types/tarot.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/hooks/useTarotSpreadLogic.ts",
+      "to": "src/features/tarot/lib/a-tarot-helpers.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/hooks/useTarotSpreadLogic.ts",
+      "to": "src/features/tarot/lib/full-tarot-deck.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/hooks/useToast.ts",
+      "to": "src/features/shared/ui/Toast.tsx",
+      "kind": "import"
+    },
+    {
+      "from": "src/hooks/useTouchScroll.ts",
+      "to": "src/features/shared/ui/MobileScrollWrapper.tsx",
+      "kind": "import"
+    },
+    {
+      "from": "src/lib/config/metadata.ts",
+      "to": "next/metadata",
+      "kind": "import"
+    },
+    {
+      "from": "src/app/layout.tsx",
+      "to": "src/lib/config/metadata.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/app/layout.tsx",
+      "to": "src/lib/config/app-config.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/app/layout.tsx",
+      "to": "src/features/shared/layout/HeadTags.tsx",
+      "kind": "import"
+    },
+    {
+      "from": "src/app/layout.tsx",
+      "to": "src/features/shared/layout/Footer.tsx",
+      "kind": "import"
+    },
+    {
+      "from": "src/app/page.tsx",
+      "to": "src/features/shared/layout/BottomNavigation.tsx",
+      "kind": "import"
+    },
+    {
+      "from": "src/app/(main)/a-tarot/page.tsx",
+      "to": "src/features/shared/layout/BottomNavigation.tsx",
+      "kind": "import"
+    },
+    {
+      "from": "src/app/(main)/a-tarot/page.tsx",
+      "to": "src/features/tarot/lib/full-tarot-deck.ts",
+      "kind": "import"
+    },
+    {
+      "from": "src/app/(main)/a-tarot/page.tsx",
+      "to": "src/lib/constants/tarotSpreads.ts",
+      "kind": "import"
+    }
+  ],
+  "hotspots": [
+    {
+      "id": "src/features/tarot/lib/a-tarot-helpers.ts",
+      "imports": 24,
+      "exports": 5,
+      "severity": "high",
+      "reason": "Central utility with many dependencies"
+    },
+    {
+      "id": "src/lib/constants/tarotSpreads.ts",
+      "imports": 15,
+      "exports": 8,
+      "severity": "high",
+      "reason": "Feature-specific constants in global lib"
+    },
+    {
+      "id": "src/features/tarot/lib/full-tarot-deck.ts",
+      "imports": 12,
+      "exports": 2,
+      "severity": "medium",
+      "reason": "Large data file with many consumers"
+    },
+    {
+      "id": "src/types/tarot.ts",
+      "imports": 10,
+      "exports": 15,
+      "severity": "medium",
+      "reason": "Core type definitions"
+    },
+    {
+      "id": "src/features/tarot/components/Love-Spread/LoveTarot.tsx",
+      "imports": 15,
+      "exports": 2,
+      "severity": "high",
+      "reason": "God file with mixed concerns"
+    },
+    {
+      "id": "src/features/shared/ui/BaseInterpretation.tsx",
+      "imports": 8,
+      "exports": 4,
+      "severity": "medium",
+      "reason": "Large component with mixed concerns"
+    }
+  ],
+  "clusters": [
+    {
+      "name": "Tarot Engine",
+      "nodes": [
+        "src/features/tarot/lib/a-tarot-helpers.ts",
+        "src/features/tarot/lib/full-tarot-deck.ts",
+        "src/features/tarot/lib/love/position-meanings-index.ts",
+        "src/features/tarot/lib/love/position-1-ilgi-duydugun-kisi.ts",
+        "src/features/tarot/lib/love/position-2-fiziksel.ts",
+        "src/features/tarot/lib/love/position-3-baglanti.ts",
+        "src/features/tarot/lib/love/position-4-uzun-vadeli-surec.ts"
+      ],
+      "description": "Core tarot business logic and data"
+    },
+    {
+      "name": "Love Spread Components",
+      "nodes": [
+        "src/features/tarot/components/Love-Spread/LoveTarot.tsx",
+        "src/features/tarot/components/Love-Spread/LoveCardRenderer.tsx",
+        "src/features/tarot/components/Love-Spread/LoveInterpretation.tsx",
+        "src/features/tarot/components/Love-Spread/LoveGuidanceDetail.tsx",
+        "src/features/tarot/components/Love-Spread/love-config.ts"
+      ],
+      "description": "Love spread specific components"
+    },
+    {
+      "name": "Shared UI Components",
+      "nodes": [
+        "src/features/shared/ui/BaseCardRenderer.tsx",
+        "src/features/shared/ui/BaseCardGallery.tsx",
+        "src/features/shared/ui/BaseCardDetails.tsx",
+        "src/features/shared/ui/BaseCardPosition.tsx",
+        "src/features/shared/ui/BaseInterpretation.tsx",
+        "src/features/shared/ui/BaseReadingTypeSelector.tsx",
+        "src/features/shared/ui/CardDetails.tsx"
+      ],
+      "description": "Reusable UI components"
+    },
+    {
+      "name": "Layout Components",
+      "nodes": [
+        "src/features/shared/layout/BottomNavigation.tsx",
+        "src/features/shared/layout/Footer.tsx",
+        "src/features/shared/layout/HeadTags.tsx",
+        "src/features/shared/layout/RootLayout.tsx"
+      ],
+      "description": "Layout and navigation components"
+    },
+    {
+      "name": "App Pages",
+      "nodes": [
+        "src/app/layout.tsx",
+        "src/app/page.tsx",
+        "src/app/(main)/a-tarot/page.tsx"
+      ],
+      "description": "Next.js app router pages"
+    },
+    {
+      "name": "Global Types",
+      "nodes": [
+        "src/types/tarot.ts",
+        "src/types/reading.types.ts"
+      ],
+      "description": "Global type definitions"
+    },
+    {
+      "name": "Configuration",
+      "nodes": [
+        "src/lib/config/app-config.ts",
+        "src/lib/config/metadata.ts",
+        "src/lib/constants/reading-credits.ts",
+        "src/lib/constants/tarotSpreads.ts"
+      ],
+      "description": "App configuration and constants"
+    }
+  ],
+  "circularDependencies": [],
+  "orphanedFiles": [],
+  "unusedExports": [
+    {
+      "file": "src/features/shared/icons/MysticalIcons.tsx",
+      "exports": ["ZodiacSigns", "MysticalElements", "NumerologySymbols"],
+      "reason": "Exported but not imported anywhere"
+    }
+  ],
+  "metrics": {
+    "averageFileSize": 180,
+    "averageImports": 3.2,
+    "averageExports": 3.4,
+    "maxFileSize": 2000,
+    "maxImports": 15,
+    "maxExports": 15,
+    "totalLines": 9000,
+    "totalImports": 106,
+    "totalExports": 169
+  }
+}

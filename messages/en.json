@@ -1,0 +1,1359 @@
+{
+  "common": {
+    "ok": "OK",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "warning": "Warning",
+    "info": "Info",
+    "yes": "Yes",
+    "no": "No",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "open": "Open",
+    "edit": "Edit",
+    "view": "View",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "refresh": "Refresh",
+    "copy": "Copy",
+    "share": "Share",
+    "download": "Download",
+    "upload": "Upload",
+    "select": "Select",
+    "selectAll": "Select All",
+    "progress": "Progress",
+    "reversed": "Reversed",
+    "upright": "Upright",
+    "clear": "Clear",
+    "reset": "Reset",
+    "submit": "Submit",
+    "confirm": "Confirm",
+    "continue": "Continue",
+    "finish": "Finish",
+    "start": "Start",
+    "stop": "Stop",
+    "pause": "Pause",
+    "resume": "Resume"
+  },
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "profile": "Profile",
+    "settings": "Settings",
+    "help": "Help",
+    "about": "About",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Register",
+    "menu": "Menu",
+    "breadcrumb": "Breadcrumb"
+  },
+  "auth": {
+    "signIn": {
+      "title": "Sign In",
+      "subtitle": "Sign in to your account",
+      "email": "Email",
+      "password": "Password",
+      "rememberMe": "Remember Me",
+      "forgotPassword": "Forgot Password",
+      "signInButton": "Sign In",
+      "signUpLink": "Don't have an account? Sign up",
+      "googleSignIn": "Sign in with Google",
+      "facebookSignIn": "Sign in with Facebook"
+    },
+    "signUp": {
+      "title": "Sign Up",
+      "subtitle": "Create a new account",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "acceptTerms": "I accept the terms",
+      "signUpButton": "Sign Up",
+      "signInLink": "Already have an account? Sign in",
+      "googleSignUp": "Sign up with Google",
+      "facebookSignUp": "Sign up with Facebook"
+    },
+    "errors": {
+      "invalidCredentials": "Invalid email or password",
+      "emailAlreadyExists": "This email address is already in use",
+      "weakPassword": "Password is too weak",
+      "emailRequired": "Email address is required",
+      "passwordRequired": "Password is required",
+      "passwordsDoNotMatch": "Passwords do not match",
+      "invalidEmail": "Invalid email address",
+      "accountLocked": "Account is locked",
+      "accountDisabled": "Account is disabled",
+      "sessionExpired": "Session has expired",
+      "networkError": "Network error",
+      "serverError": "Server error",
+      "unknownError": "Unknown error"
+    },
+    "notice": {
+      "checkEmail": "Check your email and confirm your registration",
+      "emailConfirmed": "Your email has been confirmed! 100 credits have been gifted.",
+      "passwordResetSent": "Password reset link sent",
+      "accountCreated": "Account created successfully",
+      "emailVerified": "Email address verified",
+      "passwordChanged": "Password changed successfully",
+      "profileUpdated": "Profile updated",
+      "confirmationEmailSent": "Confirmation email sent",
+      "confirmationFailed": "Email confirmation failed"
+    }
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Please enter a valid email address",
+    "minLength": "Must be at least {min} characters",
+    "maxLength": "Must be at most {max} characters",
+    "pattern": "Invalid format",
+    "password": {
+      "rules": "Password must be at least 8 characters with uppercase, lowercase and number",
+      "tooShort": "Password is too short",
+      "noUppercase": "At least one uppercase letter required",
+      "noLowercase": "At least one lowercase letter required",
+      "noNumber": "At least one number required",
+      "noSpecialChar": "At least one special character required"
+    },
+    "confirmPassword": "Passwords do not match",
+    "phone": "Please enter a valid phone number",
+    "url": "Please enter a valid URL",
+    "date": "Please enter a valid date",
+    "number": "Please enter a valid number",
+    "integer": "Please enter an integer",
+    "positive": "Please enter a positive number",
+    "negative": "Please enter a negative number",
+    "min": "Must be at least {min}",
+    "max": "Must be at most {max}",
+    "between": "Must be between {min} and {max}"
+  },
+  "tarot": {
+    "title": "Tarot Cards",
+    "subtitle": "Discover your destiny",
+    "selectCards": "Select Cards",
+    "shuffle": "Shuffle",
+    "draw": "Draw",
+    "interpretation": "Interpretation",
+    "reading": "Reading",
+    "spread": "Spread",
+    "card": "Card",
+    "cards": "Cards",
+    "deck": "Deck",
+    "position": "Position",
+    "meaning": "Meaning",
+    "past": "Past",
+    "present": "Present",
+    "future": "Future",
+    "love": "Love",
+    "career": "Career",
+    "health": "Health",
+    "spirituality": "Spirituality",
+    "guidance": "Guidance",
+    "advice": "Advice",
+    "warning": "Warning",
+    "opportunity": "Opportunity",
+    "challenge": "Challenge",
+    "outcome": "Outcome",
+    "influence": "Influence",
+    "obstacle": "Obstacle",
+    "strength": "Strength",
+    "weakness": "Weakness",
+    "hope": "Hope",
+    "fear": "Fear",
+    "action": "Action",
+    "inaction": "Inaction",
+    "yes": "Yes",
+    "no": "No",
+    "maybe": "Maybe",
+    "uncertain": "Uncertain"
+  },
+  "reading": {
+    "types": {
+      "simple": "Simple",
+      "detailed": "Detailed",
+      "written": "Written",
+      "simpleShort": "Simple",
+      "detailedShort": "Detailed",
+      "writtenShort": "Written",
+      "threeCard": "Three Card",
+      "love": "Love",
+      "career": "Career",
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "custom": "Custom"
+    },
+    "positions": {
+      "past": "Past",
+      "present": "Present",
+      "future": "Future",
+      "situation": "Situation",
+      "action": "Action",
+      "outcome": "Outcome",
+      "you": "You",
+      "partner": "Partner",
+      "relationship": "Relationship",
+      "obstacle": "Obstacle",
+      "advice": "Advice"
+    },
+    "actions": {
+      "startReading": "Start Reading",
+      "shuffleCards": "Shuffle Cards",
+      "selectCards": "Select Cards",
+      "revealCards": "Reveal Cards",
+      "interpretCards": "Interpret Cards",
+      "saveReading": "Save Reading",
+      "shareReading": "Share Reading",
+      "newReading": "New Reading",
+      "continueReading": "Continue Reading"
+    },
+    "messages": {
+      "noSelection": "Select a reading type",
+      "simpleSelected": "Simple reading selected",
+      "detailedSelected": "Audio reading selected",
+      "writtenSelected": "Written reading selected",
+      "detailedDescription": "Audio and detailed interpretation",
+      "writtenDescription": "Written and comprehensive interpretation"
+    }
+  },
+  "errors": {
+    "pageNotFound": "Page Not Found",
+    "serverError": "Server Error",
+    "networkError": "Network Error",
+    "unauthorized": "Unauthorized Access",
+    "forbidden": "Access Forbidden",
+    "timeout": "Timeout",
+    "maintenance": "Maintenance Mode",
+    "tryAgain": "Try Again",
+    "goHome": "Go Home",
+    "contactSupport": "Contact Support"
+  },
+  "home": {
+    "title": "Büşbüşkimki",
+    "subtitle": "Your Mystical Journey Begins",
+    "tarotCard": {
+      "title": "Tarot Reading",
+      "description": "Embark on a journey into the mysterious world of cards. Find mystical answers to your questions about love, career and life.",
+      "button": "Start Reading →"
+    },
+    "footerText": "Journey into the depths of your inner world in the light of mystical knowledge. Every reading offers you a new perspective and guidance."
+  },
+  "navigation": {
+    "tarot": "Tarot",
+    "numerology": "Numerology",
+    "home": "Home",
+    "auth": "Sign In",
+    "profile": "Profile",
+    "dashboard": "Dashboard"
+  },
+  "numerology": {
+    "title": "Numerology",
+    "subtitle": "Discover your number's guidance with your name and birth date.",
+    "calculators": {
+      "lifePath": "Life Path",
+      "expressionDestiny": "Expression/Destiny",
+      "soulUrge": "Soul Urge",
+      "personality": "Personality",
+      "birthdayNumber": "Birthday Number",
+      "maturity": "Maturity",
+      "pinnaclesChallenges": "Pinnacles/Challenges",
+      "personalCycles": "Personal Cycles",
+      "compatibility": "Compatibility Analysis"
+    },
+    "form": {
+      "name": "Full Name",
+      "birth": "Birth Date (YYYY-MM-DD)",
+      "targetDate": "Target Date (YYYY-MM-DD)",
+      "personA": "Person 1",
+      "personB": "Person 2",
+      "calculate": "Calculate",
+      "invalidDate": "Please enter a valid date.",
+      "required": "This field is required."
+    },
+    "result": {
+      "title": "{type} Result",
+      "cardTitle": "Your {type} Number",
+      "masterNumber": "Master Number",
+      "calculationDetails": "Calculation Details",
+      "lifeGuidance": "Life Guidance",
+      "careerAdvice": "Career Advice",
+      "relationshipAdvice": "Relationship Advice",
+      "spiritualMessage": "Spiritual Message",
+      "positiveTraits": "Your Strengths",
+      "challenges": "Areas to Watch",
+      "pinnacles": "Pinnacles",
+      "personalYear": "Personal Year",
+      "personalMonth": "Personal Month",
+      "personalDay": "Personal Day",
+      "compatibilityScore": "Compatibility Score",
+      "compatibilityNotes": "Compatibility Notes"
+    },
+    "birthdayMeanings": {
+      "1": "People born on the 1st come into the world with a strong sense of individuality. From early in life, they feel the need to chart their own path, make independent decisions, and lead. The spark burning within them constantly guides them toward new beginnings and new opportunities. These individuals are courageous, determined, and often become examples to those around them with their pioneering ideas.\n\nHowever, this strong leadership energy can sometimes turn into an overly self-centered or authoritarian attitude. People born on the 1st risk isolation if they don't learn to collaborate with others. When balanced, they become a guiding light in both their own lives and the lives of others.",
+      "2": "Those born on the 2nd come into the world with energy built on harmony, balance, and relationships. They are natural mediators with unique abilities in resolving conflicts, bringing different parties together, and creating collaborative environments. In their lives, they typically seek mutual understanding, intimacy, and emotional depth.\n\nOn the other hand, this sensitivity can make them easily hurt. The desire to over-accommodate can cause them to put their own desires in the background. When they find healthy balance, they become a reliable and supportive guide for others.",
+      "3": "People born on the 3rd come to life's stage with a creative, energetic, and joyful spirit. Their strongest aspect is their ability to express themselves; they can showcase themselves in art, writing, speaking, or design. They easily stand out in social relationships and become a light that inspires people.\n\nHowever, they may sometimes show tendencies to be superficial or scattered. Lack of discipline in their lives can prevent them from fully utilizing their talents. When focused, they release tremendous creativity and energy that brings happiness to people.",
+      "4": "Those born on the 4th are people who bring order, discipline, and structure. They are reliable, hardworking, and responsible individuals. When faced with difficulties, they progress patiently and systematically. They want to build a solid foundation for their lives and create stability for both themselves and their loved ones.\n\nAt times, they can be rigid, stubborn, or overly controlling. This can make flexibility difficult in relationships. When they develop flexibility, they achieve lasting success by building a solid structure in both their own lives and their surroundings.",
+      "5": "Those born on the 5th are representatives of freedom, adventure, and change. They constantly seek new experiences and are nourished by meeting different cultures and people. They learn quickly and easily adapt to the changes life brings. They add excitement, novelty, and vitality to their surroundings.\n\nHowever, this need for freedom can sometimes turn into impatience, disorder, or fear of commitment. They don't want to limit themselves. But when they learn to balance freedom with responsibility, their lives become an inspiring journey of discovery.",
+      "6": "People born on the 6th carry love, harmony, and responsibility energy. They feel deep loyalty to their families, friends, and community. Their helpfulness, aesthetic understanding, and desire to create beauty make them a reliable haven for others.\n\nSometimes they may have tendencies toward excessive self-sacrifice, neglecting their own needs, or taking on others' problems. When they learn to protect their own boundaries, they become a healing force for both themselves and their environment.",
+      "7": "Those born on the 7th are investigative, deep-thinking, and intuitive individuals. They have a spirit that questions life and seeks the mystery behind truth. They are interested in science, philosophy, mysticism, or spiritual subjects. Their inner world is strong, and solitude can be nourishing for them.\n\nHowever, they may have tendencies toward excessive introversion, coldness, or distancing. When they learn to form emotional bonds with others, they become a teacher who illuminates others with their wisdom.",
+      "8": "People born on the 8th are representatives of power, management, and material success. They have a natural talent in business, organization, and strategy. They are goal-oriented and can achieve great success through determined work.\n\nHowever, ambition and the pursuit of power can sometimes make them appear harsh or authoritarian. When they learn to balance spirituality with materiality, they create abundance in their own lives and become fair leaders for others.",
+      "9": "Those born on the 9th are compassionate, idealistic, and artistic-spirited individuals. They place serving humanity, sharing goodness and beauty at the center of their lives. With their creative aspects, they can make a difference in society and touch others' lives.\n\nSometimes they can be overly emotional, dreamy, or self-sacrificing. However, when they live by observing their own boundaries and realities, they become humanitarian leaders who leave a lasting mark on the world.",
+      "11": "Those born on the 11th are intuitive, visionary, and spiritually strong individuals. Their energy operates at high frequency and inspires those around them. With their innate awareness, it's possible for them to feel divine guidance in their lives.\n\nHowever, this intense energy can make them restless, anxious, or unbalanced. When they ground themselves, they become a light that inspires and guides those around them.",
+      "22": "Those born on the 22nd are builders of great visions. They have the ability to transform powerful dreams into reality. Thanks to their disciplined, practical, and determined nature, they can achieve great success in both material and spiritual worlds.\n\nBut this great energy can create pressure of responsibility. When they don't settle for small goals, they leave lasting marks on the world by building great projects.",
+      "33": "Those born on the 33rd are carriers of unconditional love, compassion, and healing energy. They are individuals who live for the good of others, feeling deep responsibility and self-sacrifice. They inspire people, soften hearts, and guide communities.\n\nHowever, this high energy can create pressure of obligation. When they learn to express themselves without exhausting themselves, they leave a lasting healing mark on the world and contribute to the collective healing."
+    },
+    "lifePathMeanings": {
+      "1": "Life Path 1 individuals come into life with leadership, independence, and pioneering energy. They carry the desire to chart their own course, generate new ideas, and guide those around them. They often have an entrepreneurial, courageous, and visionary nature. In their lives, they frequently feel the need to come to the forefront and strongly express their own identity.\n\nHowever, this energy can sometimes reflect as selfishness, impatience, or authoritarianism. When they are open to collaboration and recognize others' leadership as well, they achieve great success and inspiring beginnings in their lives.",
+      "2": "Life Path 2 individuals come into the world with harmony, diplomacy, and sensitivity. They have a strong ability in mediation, bringing different parties together, and maintaining peace. They are generally perceived as gentle, compassionate, and supportive energy in their environment. Relationships are very important to them and usually take center stage in life.\n\nHowever, excessive sensitivity can sometimes turn into lack of self-confidence or dependence on others. When they establish balance, they become a true guide who brings peace and understanding to both themselves and others.",
+      "3": "Life Path 3 individuals come to life with a creative, energetic, and joyful spirit. Expression, communication, and art are natural areas for them. They often inspire those around them with their conversations, writings, or stage talents. The vitality they carry within allows them to enjoy life and bring joy to others.\n\nHowever, this energy can also manifest as superficiality, disorganization, or wastefulness. When combined with discipline, 3 spreads the light of creativity and joy in both their own life and the lives of others.",
+      "4": "Life Path 4 individuals live with energy that brings order, discipline, and structure. They are patient, hardworking, and reliable individuals. They make long-term plans, lay solid foundations, and play a strong role in building lasting successes. Thanks to their practical intelligence and stable attitude, they know how to overcome difficulties.\n\nHowever, this energy can also cast shadows as rigid rules, lack of flexibility, or stubbornness. When they adapt to change, they achieve lasting success that is both reliable and open to innovation.",
+      "5": "Life Path 5 individuals are representatives of freedom, adventure, and change. They move through life with a constant quest for discovery. Meeting new cultures, experiences, and people nourishes their soul. Since they easily adapt to change, they can be pioneers in bringing innovative ideas to life.\n\nHowever, impatience, indecision, and instability are their shadow aspects. When they learn to balance freedom with responsibility, their lives become an exciting journey for both themselves and their environment.",
+      "6": "Life Path 6 individuals come to life with responsibility, family, and love energy. They have a strong desire to help others, adapt, and create beauty. They are known as protective, supportive, and reliable energy in their environment. Their aesthetic understanding and ability to create harmony are strong.\n\nHowever, they may have tendencies toward excessive self-sacrifice or taking on others' problems. When they learn to also consider their own needs, they become a healing force for both themselves and others.",
+      "7": "Life Path 7 individuals are nourished by introspection, research, and spirituality. They seek the deep meanings of life, question the unseen, and guide with their intuition. Science, philosophy, spiritual fields, or the depths of art attract them. Silence and solitude are areas that nourish their inner wisdom.\n\nHowever, there may be tendencies toward excessive introversion or appearing cold. When they establish balanced connections with others, they become a guide who illuminates their environment with their wisdom.",
+      "8": "Life Path 8 individuals come into the world with power, success, and management energy. They have a natural skill in business, organization, and leadership. They progress determinedly toward their goals and have high potential for achieving material success. When used correctly, they can create abundance and prosperity.\n\nHowever, ambition, desire for control, or authoritarian attitude can be shadow aspects. When they balance material and spiritual, they achieve lasting success as a fair and strong leader.",
+      "9": "Life Path 9 individuals move with compassion, idealism, and love for humanity. They want to make the world a better place and contribute to society with self-sacrifice. Their artistic aspects can be strong and they can create projects that touch others' lives.\n\nHowever, they may have tendencies toward being overly emotional, dreamy, or excessively self-sacrificing. When they protect their own boundaries and combine realism with idealism, they become humanitarian leaders who leave lasting marks on the world.",
+      "11": "Life Path 11 individuals carry high intuition, vision, and inspiration energy. They have an innate spiritual awareness and are strong in inspiring those around them. They can guide people with their visions and contribute to the collective with their divine guidance.\n\nHowever, this intense energy can create anxiety, restlessness, or imbalance. When they balance themselves, they become both a light-shining guide and a visionary who brings healing to their environment.",
+      "22": "Life Path 22 individuals are known as master builders. They have the power to transform great dreams into reality. Thanks to their practical, disciplined, and visionary nature, they can build lasting projects in the world. They have the potential to create both material and spiritual success simultaneously.\n\nHowever, this great energy can sometimes create heavy responsibility pressure. When they don't settle for small goals, they reveal their potential to leave a lasting legacy in the world.",
+      "33": "Life Path 33 individuals carry unconditional love, compassion, and service energy. They come into the world with a spirit that mediates others' healing and guides society. With their teaching aspects, compassionate attitudes, and high energy, they illuminate their environment.\n\nHowever, this intense energy can sometimes create excessive self-sacrifice or burnout risk. When they protect their own boundaries and express their love in a balanced way, they become a powerful figure who offers healing and guidance in the world."
+    },
+    "expressionMeanings": {
+      "1": "Expression Number 1 individuals direct their lives with strong leadership and individuality energy. They generate creative ideas, open their own paths, and become examples to others. Thanks to their innate determination and self-confidence, taking initiatives, starting new projects, and taking risks is a natural process for them.\n\nHowever, this strong energy can sometimes show its shadow side as selfishness, impatience, or authoritarianism. When they learn cooperation and value others' ideas, they leave great successes and lasting impacts on their life paths.",
+      "2": "Expression Number 2 individuals carry harmony, cooperation, and diplomacy energy. They are naturally talented in bringing different parties together, resolving conflicts, and creating balance. They stand out as gentle, kind, and supportive presences in their environment.\n\nHowever, excessive desire to accommodate can sometimes lead them to suppress their own needs. When they learn to set their own boundaries, they become a healing force both in their relationships and within the community.",
+      "3": "Expression Number 3 individuals shine with creativity, communication, and joy energy. They express themselves strongly in areas such as writing, speaking, art, and design. They easily stand out in social relationships and become a light that inspires people.\n\nHowever, disorganization or superficiality can prevent them from fully using their potential. When combined with discipline, Expression Number 3 individuals achieve great success and become a source of happiness and inspiration for their environment.",
+      "4": "Expression Number 4 individuals are known for order, stability, and hard work energy. They lay solid foundations, fulfill their responsibilities, and achieve lasting success in long-term projects. Their environment sees them as reliable and disciplined people.\n\nHowever, being too rigid or stubborn, resisting change can be their shadow aspects. When they gain flexibility, they add lasting value to both themselves and others with their strong structuring energy.",
+      "5": "Expression Number 5 individuals are representatives of freedom, adventure, and change. They direct themselves with great desire toward new experiences, different cultures, and discoveries. They learn quickly, adapt to different areas, and add vitality to their environment.\n\nHowever, impatience or disorder can pull them to weak ground. When they balance their desire for freedom with responsibility consciousness, their lives become an inspiring journey for both themselves and others.",
+      "6": "Expression Number 6 individuals carry love, harmony, and responsibility energy. They feel strong loyalty to their families, society, and environment. Thanks to their helpfulness, aesthetic understanding, and desire to create beauty, they become reliable figures in their environment.\n\nHowever, they may have tendencies toward excessive self-sacrifice or taking on others' problems. When they protect their own boundaries, they become a power that heals both their loved ones and society.",
+      "7": "Expression Number 7 individuals have knowledge, research, and spiritual depth energy. They question the meaning of life, seek invisible truths, and guide with their intuition. They are often drawn to science, philosophy, or spiritual fields.\n\nHowever, excessive introversion or distant stance can create difficulties in relationships. When they learn to share their inner wisdom with others, they become valuable guides who illuminate their environment.",
+      "8": "Expression Number 8 individuals live with power, success, and management energy. They have natural skills in business, financial fields, and leadership. Thanks to their determination, they have high potential for achieving great goals.\n\nHowever, ambition or excessive desire for control can be shadow aspects. When they balance material success with spiritual values, they leave great marks as strong and fair leaders.",
+      "9": "Expression Number 9 individuals move with idealism, compassion, and love for humanity. They value serving humanity, touching others' lives, and contributing to society through artistic projects. They are known as helpful and visionary in their environment.\n\nHowever, excessive self-sacrifice or idealism can wear them out. When they learn to offer their compassion while maintaining realism, they become humanitarian leaders who leave lasting marks in the world.",
+      "11": "Expression Number 11 individuals carry visionary, intuitive, and inspiring energy. They have high-frequency consciousness and are strong in illuminating their environment. They often stand out in art, spiritual fields, or social guidance.\n\nHowever, their intense energy can create anxiety, restlessness, or imbalance. When they balance themselves, they become a light that offers inspiration and guidance to their environment.",
+      "22": "Expression Number 22 individuals are known as master builders. They have the ability to transform great dreams into concrete success. Thanks to their disciplined, visionary, and practical nature, they can sign great projects in society.\n\nHowever, this great energy can create responsibility pressure. When they don't settle for small goals and realize their visions, they leave lasting legacies in the world.",
+      "33": "Expression Number 33 individuals carry unconditional love, compassion, and healing energy. They are people who live for the good of others, are teachers and guides. They become a light that inspires, heals, and guides their environment.\n\nHowever, this intense energy can turn into burnout or excessive sense of responsibility. When they remain balanced, they become powerful guides who bring lasting love and healing to society."
+    },
+    "personalityMeanings": {
+      "1": "Personality Number 1 individuals are perceived as determined, confident, and leader-spirited from the outside. People see them as strong, self-assured, and courageous characters. They radiate authority when they speak and naturally draw attention in their environment.\n\nHowever, this energy can sometimes be perceived as authoritarian, arrogant, or overly self-centered by others. When they develop a softer and more sharing attitude, they become natural leaders who inspire others.",
+      "2": "Personality Number 2 individuals appear gentle, harmonious, and sensitive from the outside. They easily connect with others, radiate compassionate and understanding energy. They generally present a warm, trustworthy, and cooperative image in their environment.\n\nHowever, excessive search for harmony can cause them to be perceived as passive or indecisive by others. When they clearly define their boundaries, they have both a gentle and strong stance.",
+      "3": "Personality Number 3 individuals appear energetic, social, and creative from the outside. They illuminate their environment with their cheerful attitudes and add joy to their surroundings with their humorous personalities. People know them as strong communicators, fun, and outspoken.\n\nHowever, this energy can sometimes be perceived as too scattered, superficial, or careless. When they focus, they become powerful figures who bring joy and inspiration to the outside world.",
+      "4": "Personality Number 4 individuals are perceived as serious, disciplined, and reliable from the outside. People know them as solid, determined, and hardworking individuals. In the outside world, they generally present a responsible, planned, and organized character.\n\nHowever, this energy can sometimes be seen as rigid, stubborn, or overly rule-bound. When they become more flexible and adaptable, they become personalities that are both trustworthy and easy to communicate with.",
+      "5": "Personality Number 5 individuals appear dynamic, free-spirited, and energetic from the outside. They carry an innovative, mobile, and adventurous aura. People know them as lively, open to change, and discovery-loving individuals.\n\nHowever, this energy can sometimes be perceived as unbalanced, impatient, or unreliable. When they balance their desire for freedom with responsibility consciousness, they become an adventurous spirit that inspires the outside world.",
+      "6": "Personality Number 6 individuals present a gentle, elegant, and supportive image from the outside. They are known as loving, high aesthetic understanding, and harmonious individuals. People perceive them as trustworthy, compassionate, and balanced figures.\n\nHowever, this energy can sometimes reflect as overly interfering, self-sacrificing, or critical. When they protect their own boundaries, they become strong personalities who bring peace and trust to others.",
+      "7": "Personality Number 7 individuals are perceived as mysterious, thoughtful, and deep from the outside. They carry a quiet, intuitive, and intellectual aura. People see them as wise, research-oriented, and spiritually strong individuals.\n\nHowever, this energy can sometimes be perceived as distant, cold, or introverted. When they open their hearts, they become personalities who inspire their environment with their wisdom.",
+      "8": "Personality Number 8 individuals appear strong, authoritative, and charismatic from the outside. They present an impressive stance in business or communities. People perceive them as disciplined, determined, and powerful figures.\n\nHowever, this energy can sometimes create an overly oppressive, ambitious, or distant image. When they balance power with justice, they become strong leaders who bring trust and inspiration to their environment.",
+      "9": "Personality Number 9 individuals appear compassionate, artistic, and idealistic from the outside. They carry energy that is willing to help people, inspiring, and sensitive. They are generally known as humane, artistic, and visionary figures in their environment.\n\nHowever, this energy can sometimes be perceived as too dreamy, emotional, or fragile. When they combine realism with idealism, they become healing and inspiring personalities in the outside world.",
+      "11": "Personality Number 11 individuals appear charismatic, intuitive, and inspiring from the outside. They carry a high energy frequency and radiate light to their environment. People perceive them with a visionary, spiritual, and different aura.\n\nHowever, this energy can sometimes be seen as difficult to understand, unbalanced, or overly sensitive by others. When they are balanced, they offer strong inspiration and guidance to their environment.",
+      "22": "Personality Number 22 individuals are perceived as visionary, determined, and strong builders from the outside. They carry a disciplined, practical, and impressive aura within the community. People see them as individuals who build solid projects, are trustworthy, and have vision.\n\nHowever, this energy can sometimes be perceived as heavy, distant, or overly controlling by others. When they are balanced, they become powerful figures who create lasting values in society.",
+      "33": "Personality Number 33 individuals present a compassionate, teaching, and healing image from the outside. They carry an aura of unconditional love, understanding, and trust to their environment. People see them as guides, supporters, and sources of wisdom.\n\nHowever, this energy can sometimes create an image of being overly self-sacrificing, self-neglecting, or taking excessive responsibility. When they remain balanced, they become strong personalities who both bring healing to their environment and inspire."
+    },
+    "maturityMeanings": {
+      "1": "Maturity Number 1 individuals feel the themes of independence, leadership, and charting their own path more strongly in the second half of their lives. During this period, they find great opportunities to express their potential, make new beginnings, and lead. Their inner strength makes them the captain of their own lives.\n\nHowever, this energy can sometimes reflect as loneliness, authoritarianism, or impatience. When they learn to cooperate with others and balance their individuality with harmony, they become visionary leaders who inspire society.",
+      "2": "Maturity Number 2 individuals experience themes of harmony, balance, and cooperation in their advancing years. During this period, diplomacy, partnerships, and emotional bonds come to the fore. Their hearts turn toward creating peace and understanding.\n\nHowever, excessive sensitivity or dependence on others can be the shadow side of this process. When they recognize their own values and protect their boundaries, they become guides who bring peace and love to their environment.",
+      "3": "For Maturity Number 3 individuals, the second half of life is a period of creativity, expression, and inspiration. The desire to stand out more in art, writing, communication, or social fields emerges. These individuals choose to live their lives more joyfully and energetically.\n\nHowever, superficiality or disorganization can be the shadow side of this process. When they develop discipline, they become inspiring individuals who touch others' hearts with their expressive power.",
+      "4": "Maturity Number 4 individuals experience themes of discipline, order, and structure building in their advancing years. During this period, creating stability, building lasting projects, and proving their reliability come to the fore. They achieve lasting success by working patiently.\n\nHowever, excessive rigidity, resistance to change, or over-control tendencies can be shadow aspects. When they develop flexibility, they build a strong structure that gives confidence to both themselves and others.",
+      "5": "For Maturity Number 5 individuals, the second half of life is full of freedom, change, and discoveries. During this period, new cultures, new experiences, and adventures await them. Thanks to their flexible nature, they easily embrace life's transformations.\n\nHowever, impatience or instability can be the shadow side of this process. When they balance freedom with responsibility, their lives become an inspiring journey for both themselves and others.",
+      "6": "Maturity Number 6 individuals experience themes of family, love, and responsibility more intensely in the second half of their lives. For them, this period is about spending more time with loved ones, serving society, and creating beauty. Aesthetics, harmony, and compassion are the keys to this period.\n\nHowever, excessive self-sacrifice or taking on others' problems can tire them. When they learn to also consider their own needs, they become a power that heals both themselves and their environment.",
+      "7": "For Maturity Number 7 individuals, advancing years pass with spiritual depth, research, and wisdom seeking. During this period, more introspection, learning, and spiritual discoveries come to the fore. Solitude becomes not a burden but a source of wisdom for them.\n\nHowever, excessive introversion or distancing tendencies can be shadow aspects. When they share their wisdom with others, they become guides who illuminate their environment.",
+      "8": "Maturity Number 8 individuals face themes of power, management, and material success in the second half of their lives. During this period, they can reach influential positions in business or communities. Thanks to their determination, they have the potential to create abundance and prosperity.\n\nHowever, excessive ambition, desire for control, or authoritarianism can be the shadow side of this process. When they balance material success with spirituality, they become both strong and fair leaders.",
+      "9": "For Maturity Number 9 individuals, advancing years are shaped by themes of compassion, idealism, and service to humanity. They value touching others' lives, leaving a mark in the world, and contributing through artistic/humanitarian projects.\n\nHowever, excessive idealism or self-sacrifice can be shadow aspects. When they combine realism with their idealism, they become inspiring and healing figures in society.",
+      "11": "Maturity Number 11 individuals feel the themes of intuition, vision, and spiritual guidance more intensely in the second half of their lives. This period is full of inspiring projects and opportunities to illuminate others for them.\n\nHowever, intense energy can create anxiety or imbalance. When they balance themselves, they become powerful figures who guide society and offer a high vision.",
+      "22": "For Maturity Number 22 individuals, advancing years become a period of creating great projects and lasting legacies. They have the potential to transform their dreams into reality and provide concrete contributions to society. Their disciplined and visionary nature becomes even stronger during this period.\n\nHowever, heavy responsibility pressure can be a shadow aspect. When they don't settle for small goals, they become unforgettable figures by building lasting works in the world.",
+      "33": "Maturity Number 33 individuals feel the energy of unconditional love, compassion, and healing intensely in the second half of their lives. This period is full of opportunities to inspire others, teach, and heal society.\n\nHowever, excessive responsibility or burnout can be shadow aspects. When they remain balanced, they become powerful healers who illuminate both their loved ones and society."
+    },
+    "pinnaclesMeanings": {
+      "1": "Pinnacle 1 shows that the theme of independence and leadership strongly emerges in a person's life. During this period, the person makes new beginnings and takes bold steps to chart their own path. The spark within creates opportunities for individual achievements and entrepreneurship.\n\nHowever, there is a risk of being too self-centered or authoritarian during this period. Learning to cooperate with others, expanding vision, and balancing independence with harmony brings out the best potential of this pinnacle.",
+      "2": "Pinnacle 2 shows that opportunities for harmony, partnerships, and cooperation increase in a person's life. This period is ideal for building deep bonds in relationships, ensuring peace, and developing diplomatic skills.\n\nHowever, excessive sensitivity, indecision, or dependency tendencies may occur during this process. When healthy boundaries are maintained, the person achieves great success with others and becomes a force that brings peace to their environment.",
+      "3": "Pinnacle 3 shows that creativity, expression, and social achievements come to the fore in a person's life. During this period, the person can stand out in art, communication, writing, or stage. It is a period of high energy, joy, and inspiration.\n\nHowever, superficiality or disorganization can be obstructive during this process. When focused, creativity transforms into both personal and social light.",
+      "4": "Pinnacle 4 shows that the theme of discipline, work, and order comes to the fore in a person's life. This period can be a time to lay solid foundations, create lasting projects, and take responsibility.\n\nHowever, rigid rules or resistance to change can be the shadow side of this process. When flexibility is developed, Pinnacle 4 becomes the foundation of great stability and trust.",
+      "5": "Pinnacle 5 shows that the energy of freedom, change, and discovery intensifies in a person's life. This period offers strong opportunities to gain new experiences, travel, or make radical transformations.\n\nHowever, impatience and instability are the risks of this period. Balancing the desire for freedom with responsibility consciousness fully reveals the potential of Pinnacle 5.",
+      "6": "Pinnacle 6 shows that the theme of family, responsibility, and love comes to the fore in a person's life. This period can be a time for harmony in relationships, creating aesthetics, and serving society.\n\nHowever, excessive self-sacrifice or the tendency to take on others' problems can be exhausting. Maintaining balance by considering one's own needs reveals the light of this period.",
+      "7": "Pinnacle 7 shows that the theme of spirituality, research, and wisdom strengthens in a person's life. During this period, the person turns more to their inner world, follows their intuitions, and questions the meaning of life.\n\nHowever, excessive introversion or feelings of loneliness can be shadow aspects. Sharing wisdom with others transforms this pinnacle into a bright period.",
+      "8": "Pinnacle 8 shows that the theme of power, success, and material prosperity comes to the fore in a person's life. This period can bring career advancement, leadership opportunities, and financial success.\n\nHowever, excessive ambition, desire for control, or authoritarian attitudes can be the shadow side of this process. When balanced with spirituality, Pinnacle 8 opens the door to lasting achievements.",
+      "9": "Pinnacle 9 intensely reveals the theme of compassion, service, and idealism in a person's life. This period can be a time to help others, engage in artistic work, and contribute to society.\n\nHowever, excessive self-sacrifice or idealism can be shadow aspects. When combined with realism, Pinnacle 9 brings projects that leave lasting marks on the world.",
+      "11": "Pinnacle 11 reveals the theme of inspiration, intuition, and vision in a person's life. This period is a time when spiritual awareness increases and inspiring projects come to the fore.\n\nHowever, intense energy can create anxiety and restlessness. When balanced, Pinnacle 11 transforms into a guidance period that illuminates the environment.",
+      "22": "Pinnacle 22 brings great projects, lasting legacies, and social contributions to the fore in a person's life. This period is a process where visions become reality and concrete achievements are made.\n\nHowever, responsibility pressure or desire for control can be shadow aspects. When this energy is used in balance, the person leaves unforgettable marks in the world.",
+      "33": "Pinnacle 33 shows that the themes of unconditional love, compassion, and service intensify in a person's life. This period is a strong opportunity to guide society, bring healing, and shine through teaching.\n\nHowever, there may be risks of excessive responsibility or burnout. When balanced, Pinnacle 33 offers a powerful healing period that inspires society."
+    },
+    "challengesMeanings": {
+      "1": "Challenge 1 shows that a person needs to learn to develop their sense of self. During this process, lessons such as lack of self-confidence, indecision, or fear of independence may come to the fore.\n\nWhen they learn to own their identity and express it courageously, the person finds their inner strength.",
+      "2": "Challenge 2 shows that a person needs to learn to establish balance and harmony in relationships. During this process, they may encounter lessons of excessive sensitivity, dependency, or indecision.\n\nWhen they know their own worth and protect their boundaries, they build harmonious and loving relationships.",
+      "3": "Challenge 3 shows that a person needs to learn to develop their freedom of expression. During this process, lessons of shame, hiding oneself, or superficiality may come to the fore.\n\nWhen they present their creativity with discipline, the person shines in an inspiring way.",
+      "4": "Challenge 4 shows that a person needs to learn discipline, patience, and order. During this process, they may encounter lessons of disorganization, laziness, or instability.\n\nWhen they develop diligence and responsibility, they build a strong foundation.",
+      "5": "Challenge 5 shows that a person needs to learn to balance freedom with responsibility. During this process, excessive freedom seeking, impatience, or fear of attachment may come to the fore.\n\nWhen they use their freedom consciously, their life becomes an inspiring journey.",
+      "6": "Challenge 6 shows that a person needs to learn the balance of responsibility and love in relationships. During this process, lessons of excessive self-sacrifice, interference, or criticism may come to the fore.\n\nWhen they consider their own needs, they become a true source of healing and harmony.",
+      "7": "Challenge 7 shows that a person needs to develop their inner confidence and faith. During this process, lessons of loneliness, skepticism, or disconnection may come to the fore.\n\nWhen they learn to trust their intuitions, they illuminate their environment with their wisdom.",
+      "8": "Challenge 8 shows that a person needs to learn their relationship with power, authority, and money. During this process, they may encounter lessons of ambition, control, or material dependency.\n\nWhen they use power with justice, they become a true leader.",
+      "9": "Challenge 9 shows that a person needs to learn to let go and forgive. During this process, lessons of disappointments, excessive self-sacrifice, or holding onto the past may come to the fore.\n\nWhen they learn to let go, they move forward in a wiser and freer way."
+    },
+    "personalYearMeanings": {
+      "1": "Personal Year 1 is a time of new beginnings, planting seeds, and starting a new cycle of life. This year, the person can courageously step into new projects, discover their individual power, and seize opportunities to chart their own path. This period is strong in terms of leadership, entrepreneurship, and individual expression.\n\nHowever, impatience or loneliness can be the shadow aspects of this year. When slow and conscious steps are taken, Personal Year 1 enables the person to lay solid foundations that will shape their future.",
+      "2": "Personal Year 2 is known as a time of patience, cooperation, and harmony. This year, relationships, partnerships, and emotional bonds come to the fore. The person goes through an appropriate period to receive support and act together with others. Diplomacy, understanding, and compassion stand out.\n\nHowever, excessive sensitivity or indecision can be the shadow aspect of this year. When they protect their own boundaries and proceed with patience, Personal Year 2 brings lasting harmony in relationships.",
+      "3": "Personal Year 3 is a period when creativity, expression, and joy come to the fore. This year, the person can shine in social relationships and stand out in art, writing, or communication. There is a flow of energy full of joy, fun, and inspiration.\n\nHowever, superficiality or disorganization can be the shadow aspect of this year. When combined with focus and discipline, this period can transform into creative projects that will bring lasting success to the person's life.",
+      "4": "Personal Year 4 is a year of work, discipline, and structure building. During this period, the person works patiently, acts in a planned manner, and lays lasting foundations. The desire to create stability and ensure security is in the foreground.\n\nHowever, excessive rigidity or resistance to change can be the shadow aspect of this year. When worked with flexibility, Personal Year 4 forms the foundations of great achievements in the future.",
+      "5": "Personal Year 5 is a year of freedom, change, and discovery. During this period, the person opens up to new experiences, meets different people, and adds excitement to their life. Travel, innovation, and radical transformations are the keys to this year.\n\nHowever, impatience, instability, or fear of attachment can be the shadow aspects of this year. When freedom is balanced with responsibility, Personal Year 5 opens the door to great opportunities.",
+      "6": "Personal Year 6 is a period when themes of family, responsibility, and love come to the fore. This year, the person spends more time with their loved ones, their desire to serve society increases, and their desire to create aesthetics strengthens. Harmony and compassion are the keys to this year.\n\nHowever, excessive self-sacrifice or the tendency to take on others' problems can be exhausting. When balance is maintained by considering one's own needs, Personal Year 6 brings both peace and harmony.",
+      "7": "Personal Year 7 is a period of inner depth, research, and spiritual discovery. This year, the person is in an ideal time to turn inward, listen to their intuitions, and question the meaning of life. Meditation, education, and research are supported during this period.\n\nHowever, excessive loneliness or skepticism can be the shadow aspects of this year. When inner wisdom is shared with others, Personal Year 7 transforms into an enlightening period.",
+      "8": "Personal Year 8 is a period when the energy of power, success, and abundance comes to the fore. This year, the person can experience career advancement, achieve financial success, and seize leadership opportunities. Determination and discipline are the foundation of this period.\n\nHowever, excessive ambition or desire for control can be the shadow aspects of this year. When material success is balanced with spiritual values, Personal Year 8 brings lasting prosperity.",
+      "9": "Personal Year 9 is a period of completion and letting go. This year, the person can resolve bonds from the past, leave old habits, and make room for a new cycle in their life. Compassion, idealism, and service to humanity are the keys to this period.\n\nHowever, excessive emotionality or getting stuck in the past can be the shadow aspects of this year. When they learn to let go, Personal Year 9 brings great transformation and inner freedom."
+    },
+    "compatibilityMeanings": {
+      "1": "When one or both parties in a relationship have the number 1, a strong leadership and independence energy dominates. This bond contains passion, dynamism, and entrepreneurship. It adds vitality to the relationship and the couple can support each other in new beginnings.\n\nHowever, conflicts can arise when both parties are too controlling or stubborn. Mutual respect and cooperation are essential to balance this energy; thus, the relationship transforms into both a strong and inspiring journey.",
+      "2": "The number 2 in a relationship brings harmony, balance, and sensitivity. The emotional bond between the couple becomes strong; the parties are inclined to understand, support, and act together. This energy increases romance and intimacy.\n\nHowever, excessive sensitivity or dependency can harm the relationship. When the parties protect their own boundaries, the 2 energy creates a loving and lasting union.",
+      "3": "The number 3 in a relationship brings joy, communication, and creativity. The couple succeeds in having fun together, socializing, and making life enjoyable. There is a humorous, positive, and artistic energy in their bond.\n\nHowever, superficiality or excessive disorganization can harm the relationship. When they focus, the 3 energy adds inspiration and happiness to the relationship.",
+      "4": "The number 4 in a relationship brings stability, trust, and responsibility. The couple can build a solid foundation together, make long-term plans, and establish a secure life. This energy strengthens commitment and durability.\n\nHowever, excessive rigidity or stubbornness can create problems. When supported with flexibility, the 4 energy brings lasting trust and loyalty to the relationship.",
+      "5": "The number 5 in a relationship brings freedom, excitement, and adventure. The couple experiences new experiences together, travels, and adds color to their lives. Dynamism and movement stand out in the relationship.\n\nHowever, excessive desire for freedom can lead to attachment issues. When balance is achieved with responsibility consciousness, the 5 energy carries inspiration and passion to the relationship.",
+      "6": "The number 6 in a relationship brings love, harmony, and family energy. A compassionate, responsible, and balanced bond forms between the couple. This energy increases trust and commitment, strengthening the desire to start a family.\n\nHowever, excessive self-sacrifice or interference can create problems. With a balance that also considers one's own needs, the 6 energy offers a compassionate and lasting relationship.",
+      "7": "The number 7 in a relationship brings depth, spirituality, and wisdom. An intuitive and intellectual bond forms between the couple. This energy supports intimate conversations, inner discoveries, and spiritual closeness in the relationship.\n\nHowever, excessive introversion or distance can create problems. When emotional openness is achieved, the 7 energy creates a spiritual partnership.",
+      "8": "The number 8 in a relationship brings power, success, and determination energy. The couple can become a strong team to achieve their goals together. Financial success and social status can stand out in this bond.\n\nHowever, excessive ambition or desire for control can lead to conflicts. When they balance power with justice, the 8 energy creates lasting success and prosperity in the relationship.",
+      "9": "The number 9 in a relationship brings compassion, idealism, and self-sacrifice energy. The couple may want to do beneficial work for humanity together or participate in artistic projects. This energy increases romance and sensitivity.\n\nHowever, excessive self-sacrifice or idealism can be problematic. When combined with realism, the 9 energy creates a loving and inspiring relationship.",
+      "11": "The number 11 in a relationship brings high intuition, vision, and spiritual connection. There can be deep understanding, telepathic feeling, and a strong spiritual bond between the couple. This energy transforms love into a spiritual experience.\n\nHowever, intense energy can create anxiety or imbalance. When they are balanced, the 11 energy transforms love into an inspiring light.",
+      "22": "The number 22 in a relationship carries the energy of great visions, lasting projects, and a strong partnership. The couple can build lasting structures in their lives together, strengthening both materially and spiritually.\n\nHowever, heavy responsibility or excessive desire for control can be problematic. When balanced, the 22 energy transforms the relationship into a lasting and powerful partnership.",
+      "33": "The number 33 in a relationship carries unconditional love, compassion, and healing energy. The couple approaches each other with deep commitment and self-sacrifice. This bond can create a teaching, healing, and inspiring relationship.\n\nHowever, there is a risk of excessive self-sacrifice or burnout. When healthy boundaries are maintained, the 33 energy transforms love into a transformative healing."
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome",
+    "userInfo": "User Information",
+    "quickActions": "Quick Actions",
+    "quickAccess": "Quick Access",
+    "recentReadings": "Recent Readings",
+    "recentTransactions": "Recent Transactions",
+    "creditBalance": "Credit Balance",
+    "creditPackages": "Credit Packages",
+    "accountSettings": "Account Settings",
+    "creditHistory": "Credit History",
+    "readingHistory": "Reading History",
+    "statistics": "Statistics",
+    "totalReadings": "Total Readings",
+    "membershipDuration": "Membership Duration",
+    "userLevel": "User Level",
+    "admin": "Admin",
+    "user": "User",
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "expert": "Expert",
+    "readings": "Readings",
+    "readingsPage": {
+      "title": "My Readings",
+      "subtitle": "All your mystical experiences",
+      "totalReadings": "Total Readings",
+      "loveReadings": "Love Readings",
+      "generalReadings": "General Readings",
+      "totalCredits": "Total Credits",
+      "allTypes": "All Types",
+      "loveType": "Love Reading",
+      "generalType": "General Reading",
+      "careerType": "Career Reading",
+      "numerologyType": "Numerology",
+      "allTime": "All Time",
+      "lastWeek": "Last Week",
+      "lastMonth": "Last Month",
+      "lastYear": "Last Year",
+      "clearFilters": "Clear Filters",
+      "noReadings": "No Readings Yet",
+      "noReadingsDesc": "Ready to experience your first mystical journey?",
+      "startFirstReading": "Start First Reading",
+      "loadMore": "Load More",
+      "loading": "Loading...",
+      "searchPlaceholder": "Search readings...",
+      "view": "View",
+      "download": "Download",
+      "credits": "credits",
+      "detailModal": {
+        "readingDate": "Reading Date",
+        "creditCost": "Credit Cost",
+        "status": "Status",
+        "statusCompleted": "Completed",
+        "statusReviewed": "Reviewed",
+        "statusPending": "Pending",
+        "yourQuestion": "Your Question",
+        "drawnCards": "Drawn Cards",
+        "interpretation": "Interpretation",
+        "adminNotes": "Admin Notes",
+        "close": "Close",
+        "download": "Download"
+      }
+    },
+    "statistics": "Statistics",
+    "settings": "Settings",
+    "profile": "Profile",
+    "signOut": "Sign Out",
+    "editProfile": "Edit Profile",
+    "saveChanges": "Save Changes",
+    "cancel": "Cancel",
+    "displayName": "Display Name",
+    "email": "Email",
+    "userId": "User ID",
+    "role": "Role",
+    "memberSince": "Member Since",
+    "creditAlert": "Low Credit Balance",
+    "creditAlertMessage": "Buy credits to make more readings",
+    "buyCredits": "Buy Credits",
+    "last30Days": "Last 30 days",
+    "completedReadings": "readings completed"
+  },
+  "tarotPage": {
+    "title": "Discover Your Destiny",
+    "subtitle": "Discover Your Destiny",
+    "lastReading": "Last Reading",
+    "cardsDrawn": "cards drawn",
+    "loveSpread": {
+      "name": "Love Spread",
+      "description": "Special 4-card spread for relationships and emotional bonds",
+      "summary": "Love Life Summary",
+      "summaryText": "This spread shows the dynamics of your relationship with the person represented by the {card1} card. After the physical ({card2}) and emotional ({card3}) bonds between you, the long-term potential of your relationship is illuminated by the {card4} card.",
+      "detailedReading": {
+        "title": "💕 Love Tarot Spread - Detailed Personal Reading 💕",
+        "concern": "💭 Your Concern",
+        "understanding": "🎯 What You Want to Understand",
+        "emotional": "💫 Your Emotional State",
+        "generalMessage": "GENERAL MESSAGE FOR YOUR LOVE JOURNEY",
+        "message": "These cards show the following in your love journey: You are at an important turning point in your relationship dynamics.\n\nThe {card1} card reflects the energy of the person you're interested in, while {card2} shows the physical and sexual attraction between you.\n\nThe {card3} card reveals your emotional bond, and {card4} reveals the long-term potential of your relationship.",
+        "guideMessage": "Your love guide's message: \"The deepest bonds are built through mutual understanding and open communication. Listen to your heart.\"",
+        "dateMessage": "This reading was specially prepared for you on {date}."
+      }
+    },
+    "positions": {
+      "personOfInterest": "Person of Interest",
+      "physicalConnection": "Physical/Sexual Connection", 
+      "emotionalConnection": "Emotional/Spiritual Connection",
+      "longTermOutcome": "Long-term Outcome"
+    },
+    "positionDescriptions": {
+      "personOfInterest": "The person you're asking about",
+      "physicalConnection": "Your physical and sexual connection",
+      "emotionalConnection": "Your emotional and spiritual connection", 
+      "longTermOutcome": "The long-term outcome of the relationship"
+    }
+  },
+  "seo": {
+    "title": "Tarot Reading - Discover Your Destiny",
+    "description": "Professional tarot reading service. Get guidance for love, career, health and more.",
+    "keywords": "tarot, reading, destiny, love, career, health, guidance, cards",
+    "ogTitle": "Tarot Reading - Discover Your Destiny",
+    "ogDescription": "Discover your destiny with professional tarot reading service.",
+    "ogImage": "/images/og-image.jpg"
+  },
+  "auth": {
+    "page": {
+      "mysticalEntry": "Enter the Mystical World",
+      "journeyStart": "Start Your Journey",
+      "emailPlaceholder": "Your email address",
+      "passwordPlaceholder": "Your password",
+      "confirmPasswordPlaceholder": "Confirm your password",
+      "fullNamePlaceholder": "Full Name",
+      "birthDatePlaceholder": "Birth Date",
+      "genderPlaceholder": "Select Gender",
+      "genderMale": "Male",
+      "genderFemale": "Female",
+      "genderOther": "Other",
+      "genderPreferNotToSay": "Prefer not to say",
+      "processing": "⏳ Processing...",
+      "signIn": "🔮 Sign In",
+      "signUp": "✨ Sign Up",
+      "successLogin": "Login successful! Redirecting...",
+      "successRegister": "Registration successful! Please check your email.",
+      "errorOccurred": "An error occurred",
+      "noAccount": "Don't have an account? Sign up",
+      "hasAccount": "Already have an account? Sign in",
+      "emailRequired": "Email address is required",
+      "emailInvalid": "Please enter a valid email address",
+      "passwordRequired": "Password is required",
+      "passwordMinLength": "Password must be at least 6 characters",
+      "confirmPasswordRequired": "Password confirmation is required",
+      "passwordsNotMatch": "Passwords do not match",
+      "fullNameRequired": "Full name is required",
+      "fullNameMinLength": "Full name must be at least 2 characters",
+      "birthDateRequired": "Birth date is required",
+      "birthDateMinAge": "Users under 13 cannot register",
+      "birthDateMaxAge": "Please enter a valid birth date",
+      "genderRequired": "Gender selection is required",
+      "invalidCredentials": "Invalid email or password",
+      "userAlreadyExists": "This email address is already registered"
+    },
+    "signIn": "Sign In",
+    "signOut": "Sign Out"
+  },
+  "reading": {
+    "types": {
+      "simple": "Simple Reading",
+      "detailed": "Audio Reading", 
+      "written": "Written Reading",
+      "simpleShort": "Simple",
+      "detailedShort": "Audio",
+      "writtenShort": "Written"
+    },
+    "messages": {
+      "noSelection": "Please select a reading type before selecting cards",
+      "simpleSelected": "Simple reading selected - you can start drawing cards",
+      "detailedSelected": "Audio Reading selected",
+      "writtenSelected": "Written Reading selected",
+      "adminRequired": "Insufficient credits for Audio Reading",
+      "writtenRequired": "Insufficient credits for Written Reading",
+      "simpleDescription": "Simple written audio reading",
+      "detailedDescription": "Simple written audio reading",
+      "writtenDescription": "Simple written audio reading",
+      "cardsLocked": "Cards Locked",
+      "selectReadingTypeFirst": "You must choose a reading type first to select cards."
+    }
+  },
+  "cards": {
+    "reversed": "Reversed",
+    "upright": "Upright",
+    "reversedMeaning": "Reversed Meaning:",
+    "uprightMeaning": "Upright Meaning:",
+    "altText": "Tarot Card"
+  },
+  "forms": {
+    "validation": {
+      "nameMinLength": "Name must be at least 3 characters.",
+      "surnameMinLength": "Surname must be at least 3 characters.",
+      "birthDateRequired": "Birth date is required.",
+      "emailInvalid": "Please enter a valid email address.",
+      "concernMinLength": "You must provide at least 10 characters for this question.",
+      "understandingMinLength": "You must provide at least 10 characters for this question.",
+      "emotionalMinLength": "You must provide at least 10 characters for this question."
+    },
+    "confirmExit": "Form filled but not saved. Are you sure you want to exit?"
+  },
+  "toast": {
+    "cardSelectionReady": "You can proceed to card selection.",
+    "simpleReadingComplete": "Simple reading completed!",
+    "readingSaveError": "An error occurred while saving the reading.",
+    "readingSaveErrorLog": "Reading save error:"
+  },
+  "interpretation": {
+    "title": "Tarot Interpretation",
+    "placeholder": "Write your question...",
+    "badge": "TAROT",
+    "loveReading": "Love Reading",
+    "loveReadingDetailed": "Love Reading - Detailed Personal Reading",
+    "dearClient": "Dear client,",
+    "loveLifeSummary": "Love Life Summary:",
+    "cannotGenerate": "Cannot generate interpretation without selecting all cards.",
+    "context": "Context:"
+  },
+  "gallery": {
+    "title": "Card Gallery",
+    "emptyDeck": "Card deck is empty",
+    "nextPosition": "Next position:",
+    "allPositionsFull": "All positions are full",
+    "scrollToSeeAll": "Scroll to see all cards",
+    "shuffle": "Shuffle"
+  },
+  "language": {
+    "turkish": "Turkish",
+    "english": "English", 
+    "serbian": "Serbian"
+  },
+  "love": {
+    "positions": {
+      "position1": {
+        "title": "Person You're Interested In",
+        "description": "What does this person think about you and what approach do they take?"
+      },
+      "position2": {
+        "title": "Physical Connection",
+        "description": "How is the physical attraction and sexual compatibility between you?"
+      },
+      "position3": {
+        "title": "Emotional Connection",
+        "description": "How is your emotional bond and heart connection?"
+      },
+      "position4": {
+        "title": "Long-term Process",
+        "description": "What is the long-term potential and future of your relationship?"
+      }
+    },
+    "form": {
+      "personalInfo": "Your Personal Information",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "birthDate": "Birth Date",
+      "email": "Email Address",
+      "questions": "✨ Love Reading Questions ✨",
+      "concernQuestion": "What concerns you most about your love life?",
+      "understandingQuestion": "What do you want to understand from this love reading?",
+      "emotionalQuestion": "How are you feeling emotionally right now?",
+      "saveAndOpen": "💕 Save and Open Cards",
+      "saving": "Saving...",
+      "clearAll": "🔄 Clear All"
+    },
+    "modals": {
+      "creditConfirm": "Credit Confirmation",
+      "creditConfirmMessage": "Do you want to continue with this reading?",
+      "confirm": "Yes, I Confirm",
+      "cancel": "Cancel",
+      "processing": "Processing...",
+      "successTitle": "Reading Successfully Saved!",
+      "successMessage": "Your love reading has been saved in detail and analyzed. You can view your results from the user panel.",
+      "redirecting": "💝 Redirecting to home page...",
+      "saveReading": "Save Reading 💝",
+      "savingReading": "Saving..."
+    },
+    "cardGroups": {
+      "majorArcana": "Major Arcana",
+      "cups": "Cups",
+      "swords": "Swords",
+      "wands": "Wands",
+      "pentacles": "Pentacles"
+    },
+    "meanings": {
+      "theFool": {
+        "position1": {
+          "upright": "The person you're interested in is full of childlike curiosity and excitement about life. They are open to new beginnings and have an adventurous spirit, but this can sometimes make them unplanned and disorganized. They approach relationships with this free spirit as well.",
+          "reversed": "Reversed Fool shows that this person might be reckless, irresponsible, or afraid to start a relationship. They may be ignoring potential dangers and avoiding commitment.",
+          "keywords": ["new beginnings", "innocence", "spontaneity", "taking risks", "free spirit"],
+          "context": "This person is ready to open a new page in their love life or is an adventurer who fears it."
+        }
+      }
+    }
+  },
+  "tarotCards": {
+    "majorArcana": {
+      "0": {
+        "name": "The Fool",
+        "meaning": {
+          "upright": "New beginnings, innocence, spontaneity",
+          "reversed": "Recklessness, taken advantage of"
+        },
+        "keywords": ["new beginnings", "innocence"]
+      },
+      "1": {
+        "name": "The Magician",
+        "meaning": {
+          "upright": "Manifestation, resourcefulness, power",
+          "reversed": "Manipulation, poor planning"
+        },
+        "keywords": ["manifestation", "power"]
+      },
+      "2": {
+        "name": "The High Priestess",
+        "meaning": {
+          "upright": "Intuition, sacred knowledge, divine feminine",
+          "reversed": "Secrets, disconnected from intuition"
+        },
+        "keywords": ["intuition", "mystery"]
+      },
+      "3": {
+        "name": "The Empress",
+        "meaning": {
+          "upright": "Femininity, beauty, nature, nurturing",
+          "reversed": "Creative block, dependence"
+        },
+        "keywords": ["femininity", "beauty"]
+      },
+      "4": {
+        "name": "The Emperor",
+        "meaning": {
+          "upright": "Authority, establishment, structure",
+          "reversed": "Domination, excessive control"
+        },
+        "keywords": ["authority", "structure"]
+      },
+      "5": {
+        "name": "The Hierophant",
+        "meaning": {
+          "upright": "Spiritual wisdom, religious beliefs",
+          "reversed": "Personal beliefs, freedom"
+        },
+        "keywords": ["tradition", "conformity"]
+      },
+      "6": {
+        "name": "The Lovers",
+        "meaning": {
+          "upright": "Love, harmony, relationships",
+          "reversed": "Self-love, disharmony"
+        },
+        "keywords": ["love", "harmony"]
+      },
+      "7": {
+        "name": "The Chariot",
+        "meaning": {
+          "upright": "Control, willpower, success",
+          "reversed": "Self-discipline, opposition"
+        },
+        "keywords": ["control", "willpower"]
+      },
+      "8": {
+        "name": "Strength",
+        "meaning": {
+          "upright": "Strength, courage, persuasion",
+          "reversed": "Self doubt, lack of confidence"
+        },
+        "keywords": ["strength", "courage"]
+      },
+      "9": {
+        "name": "The Hermit",
+        "meaning": {
+          "upright": "Soul searching, introspection",
+          "reversed": "Isolation, loneliness"
+        },
+        "keywords": ["introspection", "searching"]
+      },
+      "10": {
+        "name": "Wheel of Fortune",
+        "meaning": {
+          "upright": "Good luck, karma, life cycles",
+          "reversed": "Bad luck, lack of control"
+        },
+        "keywords": ["luck", "karma"]
+      },
+      "11": {
+        "name": "Justice",
+        "meaning": {
+          "upright": "Justice, fairness, truth",
+          "reversed": "Unfairness, lack of accountability"
+        },
+        "keywords": ["justice", "fairness"]
+      },
+      "12": {
+        "name": "The Hanged Man",
+        "meaning": {
+          "upright": "Surrender, letting go, sacrifice",
+          "reversed": "Delays, resistance, stalling"
+        },
+        "keywords": ["surrender", "sacrifice"]
+      },
+      "13": {
+        "name": "Death",
+        "meaning": {
+          "upright": "Endings, transformation, transition",
+          "reversed": "Resistance to change, inner purging"
+        },
+        "keywords": ["transformation", "endings"]
+      },
+      "14": {
+        "name": "Temperance",
+        "meaning": {
+          "upright": "Balance, moderation, patience",
+          "reversed": "Imbalance, excess, self-healing"
+        },
+        "keywords": ["balance", "moderation"]
+      },
+      "15": {
+        "name": "The Devil",
+        "meaning": {
+          "upright": "Bondage, addiction, materialism",
+          "reversed": "Releasing limiting beliefs, detachment"
+        },
+        "keywords": ["bondage", "materialism"]
+      },
+      "16": {
+        "name": "The Tower",
+        "meaning": {
+          "upright": "Sudden change, upheaval, chaos",
+          "reversed": "Personal transformation, fear of change"
+        },
+        "keywords": ["sudden change", "upheaval"]
+      },
+      "17": {
+        "name": "The Star",
+        "meaning": {
+          "upright": "Hope, faith, purpose, renewal",
+          "reversed": "Lack of faith, despair, disconnection"
+        },
+        "keywords": ["hope", "faith"]
+      },
+      "18": {
+        "name": "The Moon",
+        "meaning": {
+          "upright": "Illusion, fear, anxiety, subconscious",
+          "reversed": "Release of fear, repressed emotion"
+        },
+        "keywords": ["illusion", "fear"]
+      },
+      "19": {
+        "name": "The Sun",
+        "meaning": {
+          "upright": "Positivity, fun, warmth, success",
+          "reversed": "Inner child, feeling down"
+        },
+        "keywords": ["positivity", "fun"]
+      },
+      "20": {
+        "name": "Judgement",
+        "meaning": {
+          "upright": "Judgement, rebirth, inner calling",
+          "reversed": "Self-doubt, inner critic"
+        },
+        "keywords": ["judgement", "rebirth"]
+      },
+      "21": {
+        "name": "The World",
+        "meaning": {
+          "upright": "Completion, integration, accomplishment",
+          "reversed": "Seeking personal closure, short-cut"
+        },
+        "keywords": ["completion", "integration"]
+      }
+    },
+    "cups": {
+      "1": {
+        "name": "Ace of Cups",
+        "meaning": {
+          "upright": "New relationships, compassion",
+          "reversed": "Self-love, repressed emotions"
+        },
+        "keywords": ["love", "emotions"]
+      },
+      "2": {
+        "name": "Two of Cups",
+        "meaning": {
+          "upright": "Partnership, mutual attraction",
+          "reversed": "Self-love, break-ups"
+        },
+        "keywords": ["partnership", "love"]
+      },
+      "3": {
+        "name": "Three of Cups",
+        "meaning": {
+          "upright": "Celebration, friendship",
+          "reversed": "Independence, creative blocks"
+        },
+        "keywords": ["celebration", "friendship"]
+      },
+      "4": {
+        "name": "Four of Cups",
+        "meaning": {
+          "upright": "Meditation, contemplation",
+          "reversed": "Retreat, withdrawal"
+        },
+        "keywords": ["meditation", "contemplation"]
+      },
+      "5": {
+        "name": "Five of Cups",
+        "meaning": {
+          "upright": "Regret, disappointment",
+          "reversed": "Self-forgiveness, moving on"
+        },
+        "keywords": ["regret", "disappointment"]
+      },
+      "6": {
+        "name": "Six of Cups",
+        "meaning": {
+          "upright": "Childhood memories, innocence",
+          "reversed": "Living in past, forgiveness"
+        },
+        "keywords": ["nostalgia", "childhood"]
+      },
+      "7": {
+        "name": "Seven of Cups",
+        "meaning": {
+          "upright": "Opportunities, choices",
+          "reversed": "Personal values, overwhelmed"
+        },
+        "keywords": ["opportunities", "choices"]
+      },
+      "8": {
+        "name": "Eight of Cups",
+        "meaning": {
+          "upright": "Disappointment, abandonment",
+          "reversed": "Trying again, indecision"
+        },
+        "keywords": ["disappointment", "abandonment"]
+      },
+      "9": {
+        "name": "Nine of Cups",
+        "meaning": {
+          "upright": "Contentment, satisfaction",
+          "reversed": "Inner happiness, dissatisfaction"
+        },
+        "keywords": ["contentment", "satisfaction"]
+      },
+      "10": {
+        "name": "Ten of Cups",
+        "meaning": {
+          "upright": "Divine love, harmony",
+          "reversed": "Disconnection, struggling relationships"
+        },
+        "keywords": ["divine love", "harmony"]
+      },
+      "page": {
+        "name": "Page of Cups",
+        "meaning": {
+          "upright": "Creative opportunities, intuition",
+          "reversed": "New ideas, doubting intuition"
+        },
+        "keywords": ["creativity", "intuition"]
+      },
+      "knight": {
+        "name": "Knight of Cups",
+        "meaning": {
+          "upright": "Romance, charm, imagination",
+          "reversed": "Unrealistic, jealousy"
+        },
+        "keywords": ["romance", "charm"]
+      },
+      "queen": {
+        "name": "Queen of Cups",
+        "meaning": {
+          "upright": "Compassionate, emotionally stable",
+          "reversed": "Inner feelings, self-care"
+        },
+        "keywords": ["compassion", "emotional stability"]
+      },
+      "king": {
+        "name": "King of Cups",
+        "meaning": {
+          "upright": "Emotionally balanced, diplomatic",
+          "reversed": "Self-compassion, moodiness"
+        },
+        "keywords": ["emotional balance", "diplomacy"]
+      }
+    },
+    "wands": {
+      "1": {
+        "name": "Ace of Wands",
+        "meaning": {
+          "upright": "Inspiration, new opportunities",
+          "reversed": "Lack of energy, boredom"
+        },
+        "keywords": ["inspiration", "power"]
+      },
+      "2": {
+        "name": "Two of Wands",
+        "meaning": {
+          "upright": "Future planning, decisions",
+          "reversed": "Personal goals, fear of unknown"
+        },
+        "keywords": ["planning", "decisions"]
+      },
+      "3": {
+        "name": "Three of Wands",
+        "meaning": {
+          "upright": "Expansion, foresight",
+          "reversed": "Playing small, delays"
+        },
+        "keywords": ["expansion", "foresight"]
+      },
+      "4": {
+        "name": "Four of Wands",
+        "meaning": {
+          "upright": "Celebration, harmony",
+          "reversed": "Personal celebration, conflict"
+        },
+        "keywords": ["celebration", "harmony"]
+      },
+      "5": {
+        "name": "Five of Wands",
+        "meaning": {
+          "upright": "Conflict, competition",
+          "reversed": "Inner conflict, avoidance"
+        },
+        "keywords": ["conflict", "competition"]
+      },
+      "6": {
+        "name": "Six of Wands",
+        "meaning": {
+          "upright": "Success, recognition",
+          "reversed": "Private achievement, fall from grace"
+        },
+        "keywords": ["success", "recognition"]
+      },
+      "7": {
+        "name": "Seven of Wands",
+        "meaning": {
+          "upright": "Challenge, perseverance",
+          "reversed": "Exhaustion, giving up"
+        },
+        "keywords": ["challenge", "perseverance"]
+      },
+      "8": {
+        "name": "Eight of Wands",
+        "meaning": {
+          "upright": "Speed, progress",
+          "reversed": "Delays, frustration"
+        },
+        "keywords": ["speed", "progress"]
+      },
+      "9": {
+        "name": "Nine of Wands",
+        "meaning": {
+          "upright": "Resilience, courage",
+          "reversed": "Inner resources, struggle"
+        },
+        "keywords": ["resilience", "courage"]
+      },
+      "10": {
+        "name": "Ten of Wands",
+        "meaning": {
+          "upright": "Burden, responsibility",
+          "reversed": "Doing it all, delegation"
+        },
+        "keywords": ["burden", "responsibility"]
+      },
+      "page": {
+        "name": "Page of Wands",
+        "meaning": {
+          "upright": "Inspiration, discovery",
+          "reversed": "Lack of direction, procrastination"
+        },
+        "keywords": ["inspiration", "discovery"]
+      },
+      "knight": {
+        "name": "Knight of Wands",
+        "meaning": {
+          "upright": "Energy, passion, adventure",
+          "reversed": "Haste, scattered energy"
+        },
+        "keywords": ["energy", "passion"]
+      },
+      "queen": {
+        "name": "Queen of Wands",
+        "meaning": {
+          "upright": "Courage, independence",
+          "reversed": "Self-respect, introverted"
+        },
+        "keywords": ["courage", "independence"]
+      },
+      "king": {
+        "name": "King of Wands",
+        "meaning": {
+          "upright": "Leadership, vision",
+          "reversed": "Impulsiveness, ruthless"
+        },
+        "keywords": ["leadership", "vision"]
+      }
+    },
+    "swords": {
+      "1": {
+        "name": "Ace of Swords",
+        "meaning": {
+          "upright": "Breakthrough, clarity",
+          "reversed": "Confusion, chaos"
+        },
+        "keywords": ["clarity", "breakthrough"]
+      },
+      "2": {
+        "name": "Two of Swords",
+        "meaning": {
+          "upright": "Difficult decisions, impasse",
+          "reversed": "Indecision, confusion"
+        },
+        "keywords": ["decisions", "impasse"]
+      },
+      "3": {
+        "name": "Three of Swords",
+        "meaning": {
+          "upright": "Heartbreak, sorrow",
+          "reversed": "Releasing pain, optimism"
+        },
+        "keywords": ["heartbreak", "sorrow"]
+      },
+      "4": {
+        "name": "Four of Swords",
+        "meaning": {
+          "upright": "Rest, meditation",
+          "reversed": "Exhaustion, burn-out"
+        },
+        "keywords": ["rest", "meditation"]
+      },
+      "5": {
+        "name": "Five of Swords",
+        "meaning": {
+          "upright": "Conflict, defeat",
+          "reversed": "Reconciliation, past resentment"
+        },
+        "keywords": ["conflict", "defeat"]
+      },
+      "6": {
+        "name": "Six of Swords",
+        "meaning": {
+          "upright": "Transition, change",
+          "reversed": "Personal transition, resistance"
+        },
+        "keywords": ["transition", "change"]
+      },
+      "7": {
+        "name": "Seven of Swords",
+        "meaning": {
+          "upright": "Betrayal, deception",
+          "reversed": "Imposter syndrome, secrets"
+        },
+        "keywords": ["betrayal", "deception"]
+      },
+      "8": {
+        "name": "Eight of Swords",
+        "meaning": {
+          "upright": "Restriction, imprisonment",
+          "reversed": "Self-limiting beliefs, inner critic"
+        },
+        "keywords": ["restriction", "imprisonment"]
+      },
+      "9": {
+        "name": "Nine of Swords",
+        "meaning": {
+          "upright": "Anxiety, fear",
+          "reversed": "Inner turmoil, releasing anxiety"
+        },
+        "keywords": ["anxiety", "fear"]
+      },
+      "10": {
+        "name": "Ten of Swords",
+        "meaning": {
+          "upright": "Painful endings, betrayal",
+          "reversed": "Recovery, resisting end"
+        },
+        "keywords": ["endings", "betrayal"]
+      },
+      "page": {
+        "name": "Page of Swords",
+        "meaning": {
+          "upright": "New ideas, curiosity",
+          "reversed": "Self-expression, no action"
+        },
+        "keywords": ["ideas", "curiosity"]
+      },
+      "knight": {
+        "name": "Knight of Swords",
+        "meaning": {
+          "upright": "Ambitious, action-oriented",
+          "reversed": "Restless, impulsive"
+        },
+        "keywords": ["ambition", "action"]
+      },
+      "queen": {
+        "name": "Queen of Swords",
+        "meaning": {
+          "upright": "Independent, clear boundaries",
+          "reversed": "Overly-emotional, cold-hearted"
+        },
+        "keywords": ["independence", "boundaries"]
+      },
+      "king": {
+        "name": "King of Swords",
+        "meaning": {
+          "upright": "Mental clarity, authority",
+          "reversed": "Quiet power, misuse of power"
+        },
+        "keywords": ["clarity", "authority"]
+      }
+    },
+    "pentacles": {
+      "1": {
+        "name": "Ace of Pentacles",
+        "meaning": {
+          "upright": "New opportunity, manifestation",
+          "reversed": "Lost opportunity, lack of planning"
+        },
+        "keywords": ["opportunity", "manifestation"]
+      },
+      "2": {
+        "name": "Two of Pentacles",
+        "meaning": {
+          "upright": "Multiple priorities, adaptability",
+          "reversed": "Over-committed, disorganisation"
+        },
+        "keywords": ["priorities", "adaptability"]
+      },
+      "3": {
+        "name": "Three of Pentacles",
+        "meaning": {
+          "upright": "Collaboration, learning",
+          "reversed": "Disharmony, working alone"
+        },
+        "keywords": ["collaboration", "learning"]
+      },
+      "4": {
+        "name": "Four of Pentacles",
+        "meaning": {
+          "upright": "Saving money, security",
+          "reversed": "Over-spending, generosity"
+        },
+        "keywords": ["saving", "security"]
+      },
+      "5": {
+        "name": "Five of Pentacles",
+        "meaning": {
+          "upright": "Financial loss, isolation",
+          "reversed": "Recovery from loss, spiritual poverty"
+        },
+        "keywords": ["loss", "isolation"]
+      },
+      "6": {
+        "name": "Six of Pentacles",
+        "meaning": {
+          "upright": "Giving, sharing wealth",
+          "reversed": "Self-care, unpaid debts"
+        },
+        "keywords": ["giving", "sharing"]
+      },
+      "7": {
+        "name": "Seven of Pentacles",
+        "meaning": {
+          "upright": "Perseverance, investment",
+          "reversed": "Lack of long-term view, impatience"
+        },
+        "keywords": ["perseverance", "investment"]
+      },
+      "8": {
+        "name": "Eight of Pentacles",
+        "meaning": {
+          "upright": "Mastery, skill development",
+          "reversed": "Perfectionism, lack of commitment"
+        },
+        "keywords": ["mastery", "skill"]
+      },
+      "9": {
+        "name": "Nine of Pentacles",
+        "meaning": {
+          "upright": "Abundance, financial independence",
+          "reversed": "Self-worth, over-investment"
+        },
+        "keywords": ["abundance", "independence"]
+      },
+      "10": {
+        "name": "Ten of Pentacles",
+        "meaning": {
+          "upright": "Wealth, family, long-term success",
+          "reversed": "Financial failure, dark side of wealth"
+        },
+        "keywords": ["wealth", "family"]
+      },
+      "page": {
+        "name": "Page of Pentacles",
+        "meaning": {
+          "upright": "Manifestation, financial opportunity",
+          "reversed": "Lack of progress, procrastination"
+        },
+        "keywords": ["manifestation", "opportunity"]
+      },
+      "knight": {
+        "name": "Knight of Pentacles",
+        "meaning": {
+          "upright": "Hard work, routine",
+          "reversed": "Self-discipline, feeling stuck"
+        },
+        "keywords": ["work", "routine"]
+      },
+      "queen": {
+        "name": "Queen of Pentacles",
+        "meaning": {
+          "upright": "Nurturing, practical",
+          "reversed": "Financial independence, work-home conflict"
+        },
+        "keywords": ["nurturing", "practical"]
+      },
+      "king": {
+        "name": "King of Pentacles",
+        "meaning": {
+          "upright": "Financial success, business acumen",
+          "reversed": "Financial advice, living beyond means"
+        },
+        "keywords": ["success", "business"]
+      }
+    }
+  }
+}

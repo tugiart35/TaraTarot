@@ -1,0 +1,37 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Directory & Refactor Plan
+
+**Goal:**  
+Reorganize the project structure and refactor code for maximum modularity and maintainability, without breaking any existing features or designs.
+
+---
+
+## Step-by-Step Plan
+
+1. **Directory Review:**  
+   - List all files and their roles.
+   - Identify redundant, unused, or duplicate files/components.
+
+2. **Naming Consistency:**  
+   - Propose clear, descriptive names for all files/folders.
+   - Document confusing or misleading names.
+
+3. **Refactor Suggestions:**  
+   - Note functions/components that should be merged, split, or moved.
+   - Highlight code that can be modularized.
+
+4. **Proposed New Structure:**  
+   - Draft a modular folder/component structure.
+   - Map current files to new locations.
+
+5. **Migration Checklist:**  
+   - Only update files that are not critical to current operation at first.
+   - Always test in a staging branch before merging changes.
+
+---
+
+> **Visual design, UI, and existing logic must remain unchanged during the restructure.**

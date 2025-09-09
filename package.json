@@ -1,0 +1,53 @@
+{
+  "name": "mobil-tarot-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3111",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "code-quality": "npm run lint && npm run format:check",
+    "code-quality:fix": "npm run lint:fix && npm run format",
+    "i18n:check": "node scripts/check-hardcoded-ui-strings.mjs",
+    "i18n:test": "npm test tests/i18n/",
+    "i18n:validate": "npm run i18n:check && npm run i18n:test"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@hookform/resolvers": "^5.2.1",
+    "@supabase/auth-helpers-nextjs": "^0.8.7",
+    "@supabase/auth-helpers-shared": "^0.7.0",
+    "@supabase/supabase-js": "^2.57.2",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.0",
+    "lucide-react": "^0.294.0",
+    "next": "^15.4.4",
+    "next-intl": "^4.3.6",
+    "next-pwa": "^5.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.62.0",
+    "react-icons": "^5.5.0",
+    "recharts": "^3.1.2",
+    "tailwind-merge": "^3.3.1",
+    "zod": "^4.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "^15.4.4",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.0",
+    "postcss": "^8",
+    "prettier": "^3.6.0",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}

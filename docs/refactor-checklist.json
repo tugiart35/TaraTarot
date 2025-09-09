@@ -1,0 +1,283 @@
+{
+  "metadata": {
+    "generated": "2025-01-27",
+    "project": "Büşbüşkimki Tarot Uygulaması",
+    "totalSteps": 8,
+    "estimatedDays": 7,
+    "riskLevel": "medium"
+  },
+  "steps": [
+    {
+      "id": 1,
+      "title": "Tip Duplikasyonunu Gider",
+      "description": "TarotCard interface'inin duplicate versiyonunu kaldır ve tek tip kullan",
+      "changes": [
+        "src/types/reading.types.ts'deki TarotCard interface'ini kaldır",
+        "Tüm import'ları @/types/tarot'a yönlendir",
+        "Type exports'ları güncelle"
+      ],
+      "files": [
+        "src/types/reading.types.ts",
+        "src/features/tarot/lib/a-tarot-helpers.ts",
+        "src/features/tarot/lib/full-tarot-deck.ts"
+      ],
+      "risk": "low",
+      "estimatedTime": "2 hours",
+      "dependencies": [],
+      "acceptanceCriteria": [
+        "pnpm typecheck başarılı",
+        "Tüm TarotCard referansları tek tip kullanıyor",
+        "Build hatası yok"
+      ],
+      "rollbackPlan": "Git revert ile eski tip tanımlarını geri yükle"
+    },
+    {
+      "id": 2,
+      "title": "Constants'ları Feature'lara Taşı",
+      "description": "Feature-specific constants'ları global lib'den feature'lara taşı",
+      "changes": [
+        "src/lib/constants/tarotSpreads.ts'i src/features/readings/lib/constants/'a taşı",
+        "Import path'lerini güncelle",
+        "features/readings/index.ts'de export et"
+      ],
+      "files": [
+        "src/lib/constants/tarotSpreads.ts",
+        "src/features/readings/lib/constants/tarotSpreads.ts",
+        "src/features/readings/index.ts",
+        "src/features/tarot/components/Love-Spread/LoveTarot.tsx",
+        "src/features/shared/ui/tarot/TarotSpreadWrapper.tsx",
+        "src/features/tarot/components/standard/TarotSpreadSelector.tsx",
+        "src/app/(main)/a-tarot/page.tsx"
+      ],
+      "risk": "medium",
+      "estimatedTime": "4 hours",
+      "dependencies": [1],
+      "acceptanceCriteria": [
+        "pnpm build başarılı",
+        "Tüm import path'leri güncellenmiş",
+        "Tarot spreads çalışıyor"
+      ],
+      "rollbackPlan": "Dosyayı eski konumuna geri taşı ve import'ları eski haline getir"
+    },
+    {
+      "id": 3,
+      "title": "LoveTarot.tsx'i Böl",
+      "description": "1000+ satırlık god file'ı daha küçük, yönetilebilir parçalara böl",
+      "changes": [
+        "LoveTarotContainer.tsx oluştur (state management)",
+        "LoveTarotUI.tsx oluştur (UI components)",
+        "LoveTarotLogic.tsx oluştur (business logic)",
+        "LoveTarot.tsx'i orchestration component'e dönüştür"
+      ],
+      "files": [
+        "src/features/tarot/components/Love-Spread/LoveTarot.tsx",
+        "src/features/tarot/components/Love-Spread/LoveTarotContainer.tsx",
+        "src/features/tarot/components/Love-Spread/LoveTarotUI.tsx",
+        "src/features/tarot/components/Love-Spread/LoveTarotLogic.tsx"
+      ],
+      "risk": "high",
+      "estimatedTime": "8 hours",
+      "dependencies": [1, 2],
+      "acceptanceCriteria": [
+        "Her dosya 300 satırdan az",
+        "State management ayrılmış",
+        "UI logic ayrılmış",
+        "Business logic ayrılmış",
+        "Love spread çalışıyor"
+      ],
+      "rollbackPlan": "Eski LoveTarot.tsx'i geri yükle ve yeni dosyaları sil"
+    },
+    {
+      "id": 4,
+      "title": "Base Component'lerdeki Mixed Concerns'i Ayır",
+      "description": "Base component'lerdeki UI+data+state karışımını temizle",
+      "changes": [
+        "BaseInterpretation.tsx'deki validation logic'i utils'e taşı",
+        "BaseReadingTypeSelector.tsx'deki business logic'i engine'e taşı",
+        "UI logic'i ayrı dosyalara taşı"
+      ],
+      "files": [
+        "src/features/shared/ui/BaseInterpretation.tsx",
+        "src/features/shared/ui/BaseReadingTypeSelector.tsx",
+        "src/lib/utils/validation.ts",
+        "src/engine/tarot/reading-logic.ts"
+      ],
+      "risk": "medium",
+      "estimatedTime": "6 hours",
+      "dependencies": [3],
+      "acceptanceCriteria": [
+        "Base component'ler sadece UI logic içeriyor",
+        "Business logic engine'de",
+        "Validation logic utils'de",
+        "Component'ler çalışıyor"
+      ],
+      "rollbackPlan": "Eski component'leri geri yükle"
+    },
+    {
+      "id": 5,
+      "title": "Engine Klasörünü Oluştur",
+      "description": "Pure business logic için engine klasörü oluştur",
+      "changes": [
+        "src/engine/ klasörü oluştur",
+        "src/engine/tarot/ - Tarot business logic",
+        "src/engine/numerology/ - Numerology business logic",
+        "Pure functions, no UI dependencies"
+      ],
+      "files": [
+        "src/engine/tarot/index.ts",
+        "src/engine/tarot/spreads/index.ts",
+        "src/engine/tarot/interpretations/index.ts",
+        "src/engine/tarot/deck/index.ts",
+        "src/engine/numerology/index.ts",
+        "src/engine/index.ts"
+      ],
+      "risk": "low",
+      "estimatedTime": "4 hours",
+      "dependencies": [4],
+      "acceptanceCriteria": [
+        "Engine klasörü oluşturulmuş",
+        "Pure functions, no UI imports",
+        "Business logic ayrılmış",
+        "Engine exports çalışıyor"
+      ],
+      "rollbackPlan": "Engine klasörünü sil"
+    },
+    {
+      "id": 6,
+      "title": "Feature API'lerini Tanımla",
+      "description": "Her feature için clean public API tanımla",
+      "changes": [
+        "Her feature'ın index.ts'de public API tanımla",
+        "Internal implementation'ları gizle",
+        "Barrel exports'ları optimize et"
+      ],
+      "files": [
+        "src/features/auth/index.ts",
+        "src/features/cards/index.ts",
+        "src/features/readings/index.ts",
+        "src/features/profile/index.ts",
+        "src/features/shared/index.ts"
+      ],
+      "risk": "low",
+      "estimatedTime": "3 hours",
+      "dependencies": [5],
+      "acceptanceCriteria": [
+        "Her feature'ın clean public API'si var",
+        "Internal implementation'lar gizli",
+        "Barrel exports optimize edilmiş",
+        "Import'lar çalışıyor"
+      ],
+      "rollbackPlan": "Eski index.ts'leri geri yükle"
+    },
+    {
+      "id": 7,
+      "title": "Hooks'ları Feature'lara Taşı",
+      "description": "Feature-specific hooks'ları ilgili feature'lara taşı",
+      "changes": [
+        "useTarotReading.ts'i features/readings/hooks/'a taşı",
+        "useTarotSpreadLogic.ts'i features/readings/hooks/'a taşı",
+        "Global hooks'ları src/hooks/'da tut"
+      ],
+      "files": [
+        "src/hooks/useTarotReading.ts",
+        "src/features/readings/hooks/useTarotReading.ts",
+        "src/hooks/useTarotSpreadLogic.ts",
+        "src/features/readings/hooks/useTarotSpreadLogic.ts",
+        "src/features/readings/hooks/index.ts"
+      ],
+      "risk": "medium",
+      "estimatedTime": "4 hours",
+      "dependencies": [6],
+      "acceptanceCriteria": [
+        "Feature-specific hooks feature'larda",
+        "Global hooks global'de",
+        "Import path'leri güncellenmiş",
+        "Hooks çalışıyor"
+      ],
+      "rollbackPlan": "Hooks'ları eski konumlarına geri taşı"
+    },
+    {
+      "id": 8,
+      "title": "Shared UI'ı Yeniden Düzenle",
+      "description": "Shared UI component'lerini daha iyi organize et",
+      "changes": [
+        "Base component'leri kategorize et",
+        "Component-specific klasörler oluştur",
+        "Index.ts'leri optimize et"
+      ],
+      "files": [
+        "src/features/shared/ui/BaseCard/",
+        "src/features/shared/ui/BaseButton/",
+        "src/features/shared/ui/BaseModal/",
+        "src/features/shared/ui/index.ts"
+      ],
+      "risk": "low",
+      "estimatedTime": "3 hours",
+      "dependencies": [7],
+      "acceptanceCriteria": [
+        "Component'ler kategorize edilmiş",
+        "Klasör yapısı temiz",
+        "Index.ts'ler optimize edilmiş",
+        "Shared UI çalışıyor"
+      ],
+      "rollbackPlan": "Eski klasör yapısını geri yükle"
+    }
+  ],
+  "acceptance": [
+    "pnpm build",
+    "pnpm typecheck",
+    "pnpm lint",
+    "Ana sayfa yükleniyor",
+    "Tarot sayfası yükleniyor",
+    "Love spread çalışıyor",
+    "Navigation çalışıyor",
+    "Legal sayfalar yükleniyor"
+  ],
+  "testing": [
+    "Smoke test - tüm sayfalar yükleniyor",
+    "Functional test - tarot spread çalışıyor",
+    "Performance test - bundle size artmamış",
+    "Type test - tüm tipler çalışıyor",
+    "Import test - tüm import'lar çalışıyor"
+  ],
+  "rollback": {
+    "strategy": "Git-based rollback",
+    "checkpoints": [
+      "Her adım öncesi git commit",
+      "Her adım sonrası git tag",
+      "Rollback için git reset --hard <tag>"
+    ],
+    "validation": [
+      "Rollback sonrası build çalışıyor",
+      "Rollback sonrası test'ler geçiyor",
+      "Rollback sonrası functionality korunmuş"
+    ]
+  },
+  "monitoring": {
+    "metrics": [
+      "Build time",
+      "Bundle size",
+      "Type check time",
+      "Test coverage",
+      "Import count"
+    ],
+    "alerts": [
+      "Build failure",
+      "Type check failure",
+      "Test failure",
+      "Performance regression"
+    ]
+  },
+  "documentation": [
+    "Her adım için README güncelle",
+    "API documentation güncelle",
+    "Migration guide güncelle",
+    "Architecture decision record (ADR) oluştur"
+  ],
+  "communication": [
+    "Her adım öncesi team'e bilgi ver",
+    "Her adım sonrası sonuçları paylaş",
+    "Blocking issue'lar için hemen bildir",
+    "Rollback durumunda team'i bilgilendir"
+  ]
+}
