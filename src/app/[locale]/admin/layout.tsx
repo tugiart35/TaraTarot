@@ -93,7 +93,7 @@ export default function AdminLayout({
     role?: string;
     lastLogin?: string;
   } | null>(null);
-  const [notifications, setNotifications] = useState(3);
+  const [notifications] = useState(3);
   const pathname = usePathname();
   
   // Session management
@@ -127,8 +127,7 @@ export default function AdminLayout({
       console.log('🔧 Geliştirme modu: Admin kontrolü devre dışı');
     } catch (error) {
       logError('Admin authentication check failed', error, {
-        action: 'checkAdminStatus',
-        component: 'AdminLayout'
+        action: 'checkAdminStatus'
       });
       // Geliştirme aşamasında hata durumunda da admin olarak devam et
       setAdminInfo({

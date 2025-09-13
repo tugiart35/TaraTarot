@@ -11,13 +11,11 @@ import {
   Search,
   Grid,
   List,
-  Download,
   Eye,
   Heart,
   ArrowLeft,
 } from 'lucide-react';
 import ReadingDetailModal from '@/features/shared/ui/ReadingDetailModal';
-import { READING_CREDIT_CONFIGS } from '@/lib/constants/reading-credits';
 
 interface Reading {
   id: string;
@@ -25,7 +23,7 @@ interface Reading {
   reading_type: string;
   cards: string;
   interpretation: string;
-  question: string;
+  questions: any; // JSONB - yeni veri yapısı
   status: 'pending' | 'reviewed' | 'completed';
   created_at: string;
   updated_at?: string;
@@ -47,10 +45,6 @@ export default function ReadingsPage() {
   const { user, isAuthenticated, loading: authLoading } = useAuth();
   const router = useRouter();
   
-  // Geçici olarak çeviri fonksiyonunu devre dışı bırak
-  const translate = (key: string, fallback: string) => {
-    return fallback;
-  };
   const [readings, setReadings] = useState<Reading[]>([]);
   const [loading, setLoading] = useState(true);
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
@@ -59,9 +53,8 @@ export default function ReadingsPage() {
     dateRange: 'all',
     search: ''
   });
-  const [currentPage, setCurrentPage] = useState(1);
+  const [cursor, setCursor] = useState<string | null>(null); // created_at cursor
   const [hasMore, setHasMore] = useState(true);
-  const [totalCount, setTotalCount] = useState(0);
   const [selectedReading, setSelectedReading] = useState<Reading | null>(null);
   const [showModal, setShowModal] = useState(false);
 
@@ -74,7 +67,7 @@ export default function ReadingsPage() {
       }
       fetchReadings();
     }
-  }, [authLoading, isAuthenticated, filters, currentPage, router]);
+  }, [authLoading, isAuthenticated, filters, cursor, router]);
 
   const fetchReadings = async () => {
     if (!user) return;
@@ -83,24 +76,36 @@ export default function ReadingsPage() {
       setLoading(true);
       
       let query = supabase
-        .from('tarot_readings')
+        .from('readings')
         .select(`
           id,
           user_id,
           reading_type,
           cards,
           interpretation,
-          question,
+          questions,
           status,
           created_at,
           updated_at,
-          admin_notes
+          title,
+          cost_credits,
+          spread_name
         `, { count: 'exact' })
         .eq('user_id', user.id); // Sadece kullanıcının kendi okumalarını çek
 
       // Type filter
       if (filters.type !== 'all') {
-        query = query.eq('reading_type', filters.type);
+        const typeMapping: Record<string, string[]> = {
+          'love': ['LOVE_SPREAD_DETAILED', 'LOVE_SPREAD_WRITTEN'],
+          'general': ['GENERAL_SPREAD', 'THREE_CARD_SPREAD'],
+          'career': ['CAREER_SPREAD'],
+          'numerology': ['NUMEROLOGY_READING']
+        };
+        
+        const types = typeMapping[filters.type];
+        if (types) {
+          query = query.in('reading_type', types);
+        }
       }
 
       // Date range filter
@@ -125,50 +130,66 @@ export default function ReadingsPage() {
 
       // Search filter
       if (filters.search) {
-        query = query.or(`interpretation.ilike.%${filters.search}%,admin_notes.ilike.%${filters.search}%`);
+        query = query.or(`interpretation.ilike.%${filters.search}%,title.ilike.%${filters.search}%`);
       }
 
-      // Pagination
+      // Keyset pagination
       const limit = 20;
-      const offset = (currentPage - 1) * limit;
-      
-      const { data, error, count } = await query
+      if (cursor) {
+        query = query.lt('created_at', cursor);
+      }
+      const { data, error } = await query
         .order('created_at', { ascending: false })
-        .range(offset, offset + limit - 1);
+        .limit(limit);
 
       if (error) throw error;
 
       if (data) {
         const processedReadings: Reading[] = data.map((reading) => {
           // Okuma türüne göre başlık oluştur
-          const title = reading.reading_type === 'love' ? 'Aşk Okuması' : 
-                       reading.reading_type === 'general' ? 'Genel Okuma' : 
-                       reading.reading_type === 'career' ? 'Kariyer Okuması' : 
-                       'Mistik Okuma';
+          const getReadingTitle = (readingType: string): string => {
+            switch (readingType) {
+              case 'LOVE_SPREAD_DETAILED':
+              case 'LOVE_SPREAD_WRITTEN':
+                return 'Aşk Okuması';
+              case 'GENERAL_SPREAD':
+              case 'THREE_CARD_SPREAD':
+                return 'Genel Okuma';
+              case 'CAREER_SPREAD':
+                return 'Kariyer Okuması';
+              case 'NUMEROLOGY_READING':
+                return 'Numeroloji Okuması';
+              default:
+                return reading.title || 'Mistik Okuma';
+            }
+          };
           
           // Özet oluştur (interpretation'dan ilk 100 karakter)
           const summary = reading.interpretation.length > 100 ? 
                          reading.interpretation.substring(0, 100) + '...' : 
                          reading.interpretation;
           
-          // Kredi maliyeti hesapla (okuma türüne göre) - sadece gerekli olanlar
-          const getCreditCost = (readingType: string): number => {
+          // Kredi maliyeti - veritabanından gelen değeri kullan
+          const cost_credits = reading.cost_credits || 50;
+          
+          // Spread adı - veritabanından gelen değeri kullan veya varsayılan oluştur
+          const getSpreadName = (readingType: string): string => {
             switch (readingType) {
               case 'LOVE_SPREAD_DETAILED':
-                return READING_CREDIT_CONFIGS.LOVE_SPREAD_DETAILED.cost;
               case 'LOVE_SPREAD_WRITTEN':
-                return READING_CREDIT_CONFIGS.LOVE_SPREAD_WRITTEN.cost;
+                return 'Aşk Yayılımı';
+              case 'GENERAL_SPREAD':
+                return 'Genel Yayılım';
+              case 'THREE_CARD_SPREAD':
+                return '3 Kart Yayılımı';
+              case 'CAREER_SPREAD':
+                return 'Kariyer Yayılımı';
+              case 'NUMEROLOGY_READING':
+                return 'Numeroloji Analizi';
               default:
-                return reading.cost_credits || 50; // Fallback - yazılı okuma varsayılan
+                return reading.spread_name || 'Mistik Yayılım';
             }
           };
-          const cost_credits = getCreditCost(reading.reading_type);
-          
-          // Spread adı oluştur
-          const spread_name = reading.reading_type === 'love' ? 'Aşk Yayılımı' : 
-                             reading.reading_type === 'general' ? '3 Kart Yayılımı' : 
-                             reading.reading_type === 'career' ? 'Kariyer Yayılımı' : 
-                             'Genel Yayılım';
           
           return {
             id: reading.id,
@@ -176,26 +197,26 @@ export default function ReadingsPage() {
             reading_type: reading.reading_type,
             cards: reading.cards,
             interpretation: reading.interpretation,
-            question: reading.question,
+            questions: reading.questions,
             status: reading.status,
             created_at: reading.created_at,
             updated_at: reading.updated_at,
-            admin_notes: reading.admin_notes,
-            title,
+            title: getReadingTitle(reading.reading_type),
             summary,
             cost_credits,
-            spread_name
+            spread_name: getSpreadName(reading.reading_type)
           };
         });
 
-        if (currentPage === 1) {
+        if (!cursor) {
           setReadings(processedReadings);
         } else {
           setReadings(prev => [...prev, ...processedReadings]);
         }
-
-        setTotalCount(count || 0);
-        setHasMore((count || 0) > offset + limit);
+        // Update cursor and hasMore (keyset)
+        const hasNext = processedReadings.length === limit;
+        setHasMore(hasNext);
+        setCursor(hasNext ? processedReadings[processedReadings.length - 1]?.created_at ?? null : null);
       }
     } catch (error) {
       console.error('Error fetching readings:', error);
@@ -206,13 +227,14 @@ export default function ReadingsPage() {
 
   const handleFilterChange = (key: keyof ReadingFilters, value: string) => {
     setFilters(prev => ({ ...prev, [key]: value }));
-    setCurrentPage(1);
+    setCursor(null);
     setReadings([]);
   };
 
   const loadMore = () => {
     if (!loading && hasMore) {
-      setCurrentPage(prev => prev + 1);
+      // Trigger next page fetch; cursor is updated after fetch
+      setCursor(prev => prev ?? new Date().toISOString());
     }
   };
 
@@ -236,171 +258,170 @@ export default function ReadingsPage() {
     });
   };
 
-  const getTypeIcon = (type: string) => {
-    switch(type) {
-      case 'love': return '💕';
-      case 'general': return '🔮';
-      case 'career': return '💼';
-      case 'numerology': return '🔢';
-      default: return '🔮';
-    }
-  };
-
-  const getTypeColor = (type: string) => {
-    switch(type) {
-      case 'love': return 'bg-pink-500/20 text-pink-300 border-pink-500/30';
-      case 'general': return 'bg-purple-500/20 text-purple-300 border-purple-500/30';
-      case 'career': return 'bg-blue-500/20 text-blue-300 border-blue-500/30';
-      case 'numerology': return 'bg-cyan-500/20 text-cyan-300 border-cyan-500/30';
-      default: return 'bg-purple-500/20 text-purple-300 border-purple-500/30';
-    }
-  };
-
-  if (authLoading || (loading && currentPage === 1)) {
+  if (authLoading || (loading && readings.length === 0)) {
     return (
-      <div className="min-h-screen admin-bg p-6">
-        <div className="admin-card rounded-2xl p-8 text-center">
-          <div className="admin-pulse mb-4">
-            <Star className="h-12 w-12 text-admin-accent mx-auto" />
+      <div className="min-h-screen bg-gradient-to-br from-night via-purple-900/20 to-night text-white relative overflow-hidden">
+        {/* Background Effects */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/30 via-transparent to-transparent"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%239C92AC%22%20fill-opacity%3D%220.05%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%221%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40"></div>
+        
+        <div className="relative flex items-center justify-center min-h-screen p-6">
+          <div className="bg-gradient-to-br from-lavender/10 to-purple-500/10 backdrop-blur-sm rounded-2xl p-12 border border-lavender/20 text-center">
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-gold to-yellow-500 rounded-full mb-6 animate-pulse">
+              <Star className="h-10 w-10 text-night" />
+            </div>
+            <div className="text-2xl font-bold bg-gradient-to-r from-gold to-yellow-400 bg-clip-text text-transparent mb-2">
+              Okumalar Yükleniyor
+            </div>
+            <div className="text-lavender/80">
+              Mistik deneyimleriniz hazırlanıyor...
+            </div>
           </div>
-          <div className="admin-text-shimmer text-xl font-semibold">{translate('dashboard.readingsPage.loading', 'Yükleniyor...')}</div>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen admin-bg p-6">
-      {/* Header */}
-      <div className="mb-8">
-        <div className="flex items-center justify-between mb-6">
-          <div className="flex items-center space-x-4">
-            <a href="/dashboard" className="admin-card rounded-lg p-2 admin-hover-lift">
-              <ArrowLeft className="h-5 w-5 text-admin-text" />
-            </a>
-            <div>
-              <h1 className="text-3xl font-bold text-admin-text">{translate('dashboard.readingsPage.title', 'Okumalarım')}</h1>
-              <p className="text-admin-text-muted">{translate('dashboard.readingsPage.subtitle', 'Tüm mistik deneyimleriniz')}</p>
+    <div className="min-h-screen bg-gradient-to-br from-night via-purple-900/20 to-night text-white relative overflow-hidden">
+      {/* Background Effects */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/30 via-transparent to-transparent"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%239C92AC%22%20fill-opacity%3D%220.05%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%221%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40"></div>
+      
+      <div className="relative container mx-auto px-6 py-8">
+        {/* Header */}
+        <div className="mb-12">
+          <div className="flex items-center justify-between mb-8">
+            <div className="flex items-center space-x-4">
+              <a href="/dashboard" className="p-3 bg-gradient-to-br from-lavender/10 to-purple-500/10 backdrop-blur-sm rounded-xl border border-lavender/20 hover:border-lavender/40 transition-all duration-300 hover:scale-105">
+                <ArrowLeft className="h-5 w-5 text-lavender" />
+              </a>
+              <div>
+                <h1 className="text-4xl font-bold bg-gradient-to-r from-gold via-yellow-400 to-gold bg-clip-text text-transparent">
+                  Okumalarım
+                </h1>
+                <p className="text-lavender/90 text-lg">Tüm mistik deneyimleriniz</p>
+              </div>
             </div>
-          </div>
           
-          <div className="flex items-center space-x-3">
-            <button
-              onClick={() => setViewMode('grid')}
-              className={`p-2 rounded-lg transition-colors ${
-                viewMode === 'grid' 
-                  ? 'bg-admin-accent text-white' 
-                  : 'admin-card text-admin-text-muted hover:text-admin-text'
-              }`}
-            >
-              <Grid className="h-5 w-5" />
-            </button>
-            <button
-              onClick={() => setViewMode('list')}
-              className={`p-2 rounded-lg transition-colors ${
-                viewMode === 'list' 
-                  ? 'bg-admin-accent text-white' 
-                  : 'admin-card text-admin-text-muted hover:text-admin-text'
-              }`}
-            >
-              <List className="h-5 w-5" />
-            </button>
+            <div className="flex items-center space-x-2 bg-gradient-to-r from-lavender/10 to-purple-500/10 backdrop-blur-sm rounded-xl p-1 border border-lavender/20">
+              <button
+                onClick={() => setViewMode('grid')}
+                className={`p-3 rounded-lg transition-all duration-300 ${
+                  viewMode === 'grid' 
+                    ? 'bg-gradient-to-r from-gold to-yellow-500 text-night shadow-lg transform scale-105' 
+                    : 'text-lavender hover:text-gold hover:bg-lavender/10'
+                }`}
+              >
+                <Grid className="h-5 w-5" />
+              </button>
+              <button
+                onClick={() => setViewMode('list')}
+                className={`p-3 rounded-lg transition-all duration-300 ${
+                  viewMode === 'list' 
+                    ? 'bg-gradient-to-r from-gold to-yellow-500 text-night shadow-lg transform scale-105' 
+                    : 'text-lavender hover:text-gold hover:bg-lavender/10'
+                }`}
+              >
+                <List className="h-5 w-5" />
+              </button>
+            </div>
           </div>
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
-          <div className="admin-card rounded-xl p-4 admin-hover-lift">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="group bg-gradient-to-br from-purple-500/10 to-blue-500/10 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl hover:shadow-purple-500/20">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-admin-text-muted">{translate('dashboard.readingsPage.totalReadings', 'Toplam Okuma')}</p>
-                <p className="text-2xl font-bold text-admin-text">{totalCount}</p>
+                <p className="text-sm font-semibold text-lavender mb-2">Toplam Okuma</p>
+                <p className="text-3xl font-black bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">{readings.length}</p>
               </div>
-              <div className="p-2 bg-admin-accent/20 rounded-lg">
-                <Star className="h-6 w-6 text-admin-accent" />
+              <div className="p-3 bg-gradient-to-br from-purple-500 to-blue-500 rounded-xl group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <Star className="h-6 w-6 text-white" />
               </div>
             </div>
           </div>
           
-          <div className="admin-card rounded-xl p-4 admin-hover-lift">
+          <div className="group bg-gradient-to-br from-pink-500/10 to-rose-500/10 backdrop-blur-sm rounded-2xl p-6 border border-pink-500/20 hover:border-pink-500/40 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl hover:shadow-pink-500/20">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-admin-text-muted">{translate('dashboard.readingsPage.loveReadings', 'Aşk Okumaları')}</p>
-                <p className="text-2xl font-bold text-admin-text">
-                  {readings.filter(r => r.reading_type === 'love').length}
+                <p className="text-sm font-semibold text-lavender mb-2">Aşk Okumaları</p>
+                <p className="text-3xl font-black bg-gradient-to-r from-pink-400 to-rose-400 bg-clip-text text-transparent">
+                  {readings.filter(r => r.reading_type.includes('LOVE')).length}
                 </p>
               </div>
-              <div className="p-2 bg-pink-500/20 rounded-lg">
-                <Heart className="h-6 w-6 text-pink-400" />
+              <div className="p-3 bg-gradient-to-br from-pink-500 to-rose-500 rounded-xl group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <Heart className="h-6 w-6 text-white" />
               </div>
             </div>
           </div>
           
-          <div className="admin-card rounded-xl p-4 admin-hover-lift">
+          <div className="group bg-gradient-to-br from-blue-500/10 to-cyan-500/10 backdrop-blur-sm rounded-2xl p-6 border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-admin-text-muted">{translate('dashboard.readingsPage.generalReadings', 'Genel Okumalar')}</p>
-                <p className="text-2xl font-bold text-admin-text">
-                  {readings.filter(r => r.reading_type === 'general').length}
+                <p className="text-sm font-semibold text-lavender mb-2">Genel Okumalar</p>
+                <p className="text-3xl font-black bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                  {readings.filter(r => r.reading_type.includes('GENERAL') || r.reading_type.includes('THREE_CARD')).length}
                 </p>
               </div>
-              <div className="p-2 bg-admin-purple/20 rounded-lg">
-                <Star className="h-6 w-6 text-admin-purple" />
+              <div className="p-3 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <Star className="h-6 w-6 text-white" />
               </div>
             </div>
           </div>
           
-          <div className="admin-card rounded-xl p-4 admin-hover-lift">
+          <div className="group bg-gradient-to-br from-gold/10 to-yellow-500/10 backdrop-blur-sm rounded-2xl p-6 border border-gold/20 hover:border-gold/40 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl hover:shadow-gold/20">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-admin-text-muted">{translate('dashboard.readingsPage.totalCredits', 'Toplam Kredi')}</p>
-                <p className="text-2xl font-bold text-admin-text">
+                <p className="text-sm font-semibold text-lavender mb-2">Toplam Kredi</p>
+                <p className="text-3xl font-black bg-gradient-to-r from-gold to-yellow-400 bg-clip-text text-transparent">
                   {readings.reduce((sum, r) => sum + r.cost_credits, 0)}
                 </p>
               </div>
-              <div className="p-2 bg-admin-green/20 rounded-lg">
-                <Calendar className="h-6 w-6 text-admin-green" />
+              <div className="p-3 bg-gradient-to-br from-gold to-yellow-500 rounded-xl group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <Calendar className="h-6 w-6 text-night" />
               </div>
             </div>
           </div>
         </div>
 
         {/* Filters */}
-        <div className="admin-card rounded-xl p-6 mb-6">
+        <div className="bg-gradient-to-r from-lavender/10 to-purple-500/10 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-lavender/20">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between space-y-4 lg:space-y-0 lg:space-x-4">
-            <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
+            <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
               <div className="relative">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-admin-text-muted" />
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-lavender/70" />
                 <input
                   type="text"
-                  placeholder={translate('dashboard.readingsPage.searchPlaceholder', 'Okuma ara...')}
+                  placeholder="Okuma ara..."
                   value={filters.search}
                   onChange={(e) => handleFilterChange('search', e.target.value)}
-                  className="pl-10 pr-4 py-2 border border-admin-border rounded-lg bg-admin-dark text-admin-text focus:ring-2 focus:ring-admin-accent focus:border-transparent"
+                  className="pl-12 pr-4 py-3 border border-lavender/20 rounded-xl bg-white/5 text-white placeholder-lavender/60 focus:ring-2 focus:ring-gold/50 focus:border-gold/50 focus:bg-white/10 transition-all duration-300 backdrop-blur-sm"
                 />
               </div>
               
               <select
                 value={filters.type}
                 onChange={(e) => handleFilterChange('type', e.target.value)}
-                className="px-4 py-2 border border-admin-border rounded-lg bg-admin-dark text-admin-text focus:ring-2 focus:ring-admin-accent focus:border-transparent"
+                className="px-4 py-3 border border-lavender/20 rounded-xl bg-white/5 text-white focus:ring-2 focus:ring-gold/50 focus:border-gold/50 focus:bg-white/10 transition-all duration-300 backdrop-blur-sm"
               >
-                <option value="all">{translate('dashboard.readingsPage.allTypes', 'Tüm Türler')}</option>
-                <option value="love">{translate('dashboard.readingsPage.loveType', 'Aşk Okuması')}</option>
-                <option value="general">{translate('dashboard.readingsPage.generalType', 'Genel Okuma')}</option>
-                <option value="career">{translate('dashboard.readingsPage.careerType', 'Kariyer Okuması')}</option>
-                <option value="numerology">{translate('dashboard.readingsPage.numerologyType', 'Numeroloji')}</option>
+                <option value="all">Tüm Türler</option>
+                <option value="love">Aşk Okuması</option>
+                <option value="general">Genel Okuma</option>
+                <option value="career">Kariyer Okuması</option>
+                <option value="numerology">Numeroloji</option>
               </select>
               
               <select
                 value={filters.dateRange}
                 onChange={(e) => handleFilterChange('dateRange', e.target.value)}
-                className="px-4 py-2 border border-admin-border rounded-lg bg-admin-dark text-admin-text focus:ring-2 focus:ring-admin-accent focus:border-transparent"
+                className="px-4 py-3 border border-lavender/20 rounded-xl bg-white/5 text-white focus:ring-2 focus:ring-gold/50 focus:border-gold/50 focus:bg-white/10 transition-all duration-300 backdrop-blur-sm"
               >
-                <option value="all">{translate('dashboard.readingsPage.allTime', 'Tüm Zamanlar')}</option>
-                <option value="week">{translate('dashboard.readingsPage.lastWeek', 'Son 1 Hafta')}</option>
-                <option value="month">{translate('dashboard.readingsPage.lastMonth', 'Son 1 Ay')}</option>
-                <option value="year">{translate('dashboard.readingsPage.lastYear', 'Son 1 Yıl')}</option>
+                <option value="all">Tüm Zamanlar</option>
+                <option value="week">Son 1 Hafta</option>
+                <option value="month">Son 1 Ay</option>
+                <option value="year">Son 1 Yıl</option>
               </select>
             </div>
             
@@ -411,149 +432,149 @@ export default function ReadingsPage() {
                   dateRange: 'all',
                   search: ''
                 });
-                setCurrentPage(1);
+                setCursor(null);
                 setReadings([]);
               }}
-              className="admin-btn-primary px-4 py-2 rounded-lg"
+              className="px-6 py-3 bg-gradient-to-r from-gold to-yellow-500 hover:from-gold/80 hover:to-yellow-500/80 text-night font-semibold rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gold/20"
             >
-              {translate('dashboard.readingsPage.clearFilters', 'Filtreleri Temizle')}
+              Filtreleri Temizle
             </button>
           </div>
         </div>
-      </div>
 
-      {/* Content */}
-      {readings.length > 0 ? (
-        <div>
-          {viewMode === 'grid' ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              {readings.map((reading) => (
-                <div key={reading.id} className="admin-card rounded-xl p-6 admin-hover-lift">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className={`p-2 rounded-lg ${
-                      reading.reading_type === 'love' || reading.reading_type === 'general' || reading.reading_type === 'career' ? 'bg-admin-purple/20' : 'bg-admin-cyan/20'
-                    }`}>
-                      {reading.reading_type === 'love' || reading.reading_type === 'general' || reading.reading_type === 'career' ? (
-                        <Star className="h-5 w-5 text-admin-purple" />
-                      ) : (
-                        <Hash className="h-5 w-5 text-admin-cyan" />
-                      )}
-                    </div>
-                    <span className={`text-xs px-2 py-1 rounded-full ${
-                      reading.reading_type === 'love' || reading.reading_type === 'general' || reading.reading_type === 'career' ? 'bg-admin-purple/20 text-admin-purple' : 'bg-admin-cyan/20 text-admin-cyan'
-                    }`}>
-                      {reading.cost_credits} {translate('dashboard.readingsPage.credits', 'kredi')}
-                    </span>
-                  </div>
-                  
-                  <h3 className="font-semibold text-admin-text mb-2 line-clamp-2">{reading.title}</h3>
-                  <p className="text-sm text-admin-text-muted mb-4 line-clamp-3">{reading.summary}</p>
-                  
-                  <div className="flex items-center justify-between text-xs text-admin-text-muted mb-4">
-                    <span>{formatDate(reading.created_at)}</span>
-                    <span>{reading.spread_name || 'Genel Okuma'}</span>
-                  </div>
-                  
-                  <div className="flex items-center space-x-2">
-                    <button 
-                      onClick={() => handleViewReading(reading)}
-                      className="flex-1 admin-btn-primary py-2 rounded-lg text-sm"
-                    >
-                      <Eye className="h-4 w-4 mr-2" />
-                      {translate('dashboard.readingsPage.view', 'Görüntüle')}
-                    </button>
-                    <button className="p-2 admin-card rounded-lg text-admin-text-muted hover:text-admin-text">
-                      <Download className="h-4 w-4" />
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div className="space-y-4">
-              {readings.map((reading) => (
-                <div key={reading.id} className="admin-card rounded-xl p-6 admin-hover-lift">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center space-x-4">
-                      <div className={`p-3 rounded-lg ${
-                        reading.reading_type === 'love' || reading.reading_type === 'general' || reading.reading_type === 'career' ? 'bg-admin-purple/20' : 'bg-admin-cyan/20'
-                      }`}>
-                        {reading.reading_type === 'love' || reading.reading_type === 'general' || reading.reading_type === 'career' ? (
-                          <Star className="h-5 w-5 text-admin-purple" />
+        {/* Content */}
+        {readings.length > 0 ? (
+          <div>
+            {viewMode === 'grid' ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                {readings.map((reading) => (
+                  <div key={reading.id} className="group bg-gradient-to-br from-lavender/10 to-purple-500/10 backdrop-blur-sm rounded-2xl p-6 border border-lavender/20 hover:border-lavender/40 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl hover:shadow-purple-500/20">
+                    <div className="flex items-center justify-between mb-6">
+                      <div className={`p-3 rounded-xl ${
+                        reading.reading_type.includes('LOVE') ? 'bg-gradient-to-br from-pink-500 to-rose-500' :
+                        reading.reading_type.includes('GENERAL') || reading.reading_type.includes('THREE_CARD') ? 'bg-gradient-to-br from-blue-500 to-cyan-500' :
+                        reading.reading_type.includes('CAREER') ? 'bg-gradient-to-br from-emerald-500 to-teal-500' :
+                        'bg-gradient-to-br from-purple-500 to-indigo-500'
+                      } group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                        {reading.reading_type.includes('LOVE') ? (
+                          <Heart className="h-6 w-6 text-white" />
+                        ) : reading.reading_type.includes('NUMEROLOGY') ? (
+                          <Hash className="h-6 w-6 text-white" />
                         ) : (
-                          <Hash className="h-5 w-5 text-admin-cyan" />
+                          <Star className="h-6 w-6 text-white" />
                         )}
                       </div>
-                      
-                      <div className="flex-1">
-                        <h3 className="font-semibold text-admin-text mb-1">{reading.title}</h3>
-                        <p className="text-sm text-admin-text-muted mb-2 line-clamp-2">{reading.summary}</p>
-                        
-                        <div className="flex items-center space-x-4 text-xs text-admin-text-muted">
-                          <span>{formatDate(reading.created_at)}</span>
-                          <span>{reading.spread_name || 'Genel Okuma'}</span>
-                          <span className={`px-2 py-1 rounded-full ${
-                            reading.reading_type === 'love' || reading.reading_type === 'general' || reading.reading_type === 'career' ? 'bg-admin-purple/20 text-admin-purple' : 'bg-admin-cyan/20 text-admin-cyan'
-                          }`}>
-                            {reading.cost_credits} {translate('dashboard.readingsPage.credits', 'kredi')}
-                          </span>
-                        </div>
-                      </div>
+                      <span className="text-xs px-3 py-1 rounded-full bg-gold/20 text-gold border border-gold/30 font-semibold">
+                        {reading.cost_credits} kredi
+                      </span>
                     </div>
                     
-                    <div className="flex items-center space-x-2">
+                    <h3 className="font-bold text-white mb-3 line-clamp-2 text-lg">{reading.title}</h3>
+                    <p className="text-sm text-lavender/80 mb-4 line-clamp-3 leading-relaxed">{reading.summary}</p>
+                    
+                    <div className="flex items-center justify-between text-xs text-lavender/70 mb-6">
+                      <span>{formatDate(reading.created_at)}</span>
+                      <span>{reading.spread_name || 'Genel Okuma'}</span>
+                    </div>
+                    
+                    <button 
+                      onClick={() => handleViewReading(reading)}
+                      className="w-full bg-gradient-to-r from-gold to-yellow-500 hover:from-gold/80 hover:to-yellow-500/80 text-night font-semibold py-3 rounded-xl text-sm transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gold/20 flex items-center justify-center"
+                    >
+                      <Eye className="h-4 w-4 mr-2" />
+                      Görüntüle
+                    </button>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="space-y-6">
+                {readings.map((reading) => (
+                  <div key={reading.id} className="group bg-gradient-to-r from-lavender/10 to-purple-500/10 backdrop-blur-sm rounded-2xl p-6 border border-lavender/20 hover:border-lavender/40 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/20">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center space-x-6">
+                        <div className={`p-4 rounded-xl ${
+                          reading.reading_type.includes('LOVE') ? 'bg-gradient-to-br from-pink-500 to-rose-500' :
+                          reading.reading_type.includes('GENERAL') || reading.reading_type.includes('THREE_CARD') ? 'bg-gradient-to-br from-blue-500 to-cyan-500' :
+                          reading.reading_type.includes('CAREER') ? 'bg-gradient-to-br from-emerald-500 to-teal-500' :
+                          'bg-gradient-to-br from-purple-500 to-indigo-500'
+                        } group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                          {reading.reading_type.includes('LOVE') ? (
+                            <Heart className="h-6 w-6 text-white" />
+                          ) : reading.reading_type.includes('NUMEROLOGY') ? (
+                            <Hash className="h-6 w-6 text-white" />
+                          ) : (
+                            <Star className="h-6 w-6 text-white" />
+                          )}
+                        </div>
+                        
+                        <div className="flex-1">
+                          <h3 className="font-bold text-white mb-2 text-lg">{reading.title}</h3>
+                          <p className="text-sm text-lavender/80 mb-3 line-clamp-2 leading-relaxed">{reading.summary}</p>
+                          
+                          <div className="flex items-center space-x-4 text-xs text-lavender/70">
+                            <span>{formatDate(reading.created_at)}</span>
+                            <span>{reading.spread_name || 'Genel Okuma'}</span>
+                            <span className="px-3 py-1 rounded-full bg-gold/20 text-gold border border-gold/30 font-semibold">
+                              {reading.cost_credits} kredi
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      
                       <button 
                         onClick={() => handleViewReading(reading)}
-                        className="admin-btn-primary px-4 py-2 rounded-lg text-sm"
+                        className="bg-gradient-to-r from-gold to-yellow-500 hover:from-gold/80 hover:to-yellow-500/80 text-night font-semibold px-6 py-3 rounded-xl text-sm transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gold/20 flex items-center"
                       >
                         <Eye className="h-4 w-4 mr-2" />
-                        {translate('dashboard.readingsPage.view', 'Görüntüle')}
-                      </button>
-                      <button className="p-2 admin-card rounded-lg text-admin-text-muted hover:text-admin-text">
-                        <Download className="h-4 w-4" />
+                        Görüntüle
                       </button>
                     </div>
                   </div>
-                </div>
-              ))}
-            </div>
-          )}
+                ))}
+              </div>
+            )}
 
-          {/* Load More */}
-          {hasMore && (
-            <div className="text-center mt-8">
-              <button
-                onClick={loadMore}
-                disabled={loading}
-                className="admin-btn-primary px-6 py-3 rounded-lg disabled:opacity-50"
-              >
-                {loading ? translate('dashboard.readingsPage.loading', 'Yükleniyor...') : translate('dashboard.readingsPage.loadMore', 'Daha Fazla Yükle')}
-              </button>
+            {/* Load More */}
+            {hasMore && (
+              <div className="text-center mt-12">
+                <button
+                  onClick={loadMore}
+                  disabled={loading}
+                  className="px-8 py-4 bg-gradient-to-r from-gold to-yellow-500 hover:from-gold/80 hover:to-yellow-500/80 text-night font-semibold rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gold/20 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                >
+                  {loading ? 'Yükleniyor...' : 'Daha Fazla Yükle'}
+                </button>
+              </div>
+            )}
+          </div>
+        ) : (
+          <div className="bg-gradient-to-br from-lavender/10 to-purple-500/10 backdrop-blur-sm rounded-2xl p-16 border border-lavender/20 text-center">
+            <div className="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-br from-lavender/20 to-purple-500/20 rounded-full mb-8">
+              <Star className="h-12 w-12 text-lavender/70" />
             </div>
-          )}
-        </div>
-      ) : (
-        <div className="admin-card rounded-xl p-12 text-center">
-          <Star className="h-16 w-16 text-admin-text-muted mx-auto mb-4" />
-          <h3 className="text-xl font-semibold text-admin-text mb-2">{translate('dashboard.readingsPage.noReadings', 'Henüz Okuma Yok')}</h3>
-          <p className="text-admin-text-muted mb-6">
-            {translate('dashboard.readingsPage.noReadingsDesc', 'İlk mistik deneyiminizi yaşamaya hazır mısınız?')}
-          </p>
-          <a 
-            href="/tarot" 
-            className="admin-btn-primary px-6 py-3 rounded-lg inline-block"
-          >
-            {translate('dashboard.readingsPage.startFirstReading', 'İlk Okumayı Başlat')}
-          </a>
-        </div>
-      )}
+            <h3 className="text-3xl font-bold text-white mb-4">Henüz Okuma Yok</h3>
+            <p className="text-lavender/90 mb-8 max-w-md mx-auto leading-relaxed text-lg">
+              İlk mistik deneyiminizi yaşamaya hazır mısınız? 
+              Tarot kartları sizi bekliyor...
+            </p>
+            <a 
+              href="/tarot" 
+              className="inline-flex items-center space-x-2 bg-gradient-to-r from-gold to-yellow-500 hover:from-gold/80 hover:to-yellow-500/80 text-night font-semibold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gold/20"
+            >
+              <Star className="h-5 w-5" />
+              <span>İlk Okumayı Başlat</span>
+            </a>
+          </div>
+        )}
 
-      {/* Okuma Detay Modal */}
-      <ReadingDetailModal
-        reading={selectedReading}
-        isOpen={showModal}
-        onClose={closeModal}
-      />
+        {/* Okuma Detay Modal */}
+        <ReadingDetailModal
+          reading={selectedReading}
+          isOpen={showModal}
+          onClose={closeModal}
+        />
+      </div>
     </div>
   );
 }

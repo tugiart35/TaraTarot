@@ -1,8 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { supabase } from '@/lib/supabase/client';
-import { TestTube, Play, Pause, BarChart3, Users, TrendingUp, Eye, Edit, Trash, Plus, Target } from 'lucide-react';
+import { TestTube, Play, Pause, BarChart3, Users, Eye, Plus, Target } from 'lucide-react';
 
 interface ABTest {
   id: string;

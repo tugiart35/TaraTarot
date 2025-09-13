@@ -15,7 +15,6 @@ CHECKLIST (Her adım tamamlandıkça 'COMPLETED' olarak işaretlenecek):
 
 import { useState, useEffect } from 'react';
 import { TarotCard } from '@/features/tarot/lib/full-tarot-deck';
-import { useTranslations } from '@/hooks/useTranslations';
 import { useReadingCredits } from '@/hooks/useReadingCredits';
 import { useAuth } from '@/hooks/useAuth';
 import { supabase } from '@/lib/supabase/client';
@@ -39,16 +38,25 @@ interface ReadingState {
     email: string;
   };
   questions: {
-    concern: string;
-    understanding: string;
-    emotional: string;
+    concern: {
+      question: string;
+      answer: string;
+    };
+    understanding: {
+      question: string;
+      answer: string;
+    };
+    emotional: {
+      question: string;
+      answer: string;
+    };
   };
   selectedCards: (TarotCard | null)[];
   cardStates: boolean[];
   isReversed: boolean[];
   usedCardIds: Set<number>;
   deck: TarotCard[];
-  currentStep: 'questions' | 'reading' | 'interpretation' | 'submitted';
+  currentStep: 'info' | 'questions' | 'credit' | 'reading' | 'interpretation' | 'submitted';
   isSubmitted: boolean;
   detailedInterpretation: string;
   startTime?: number; // Duration tracking için
@@ -62,7 +70,6 @@ export default function LoveGuidanceDetail({
   readingCode = 'demo-access-123',
 }: LoveGuidanceDetailProps) {
   const router = useRouter();
-  const { t } = useTranslations();
   const { user } = useAuth();
   
   // Kredi yönetimi - sesli ve yazılı okumalar için
@@ -75,14 +82,12 @@ export default function LoveGuidanceDetail({
     }
     return 'LOVE_SPREAD';
   };
-  const readingType = getReadingType(readingCode);
+  // readingType kaldırıldı - kullanılmıyor
 
   // useReadingCredits kaldırıldı - login sistemi kaldırıldı
 
   // Tüm hook'lar en başta, koşulsuz:
-  const [currentStep, setCurrentStep] = useState<
-    'info' | 'questions' | 'credit' | 'reading' | 'interpretation' | 'submitted'
-  >('info');
+  // currentStep kaldırıldı - readingState.currentStep kullanılacak
   const [readingState, setReadingState] = useState<ReadingState>({
     personalInfo: {
       fullName: '',
@@ -90,16 +95,25 @@ export default function LoveGuidanceDetail({
       email: '',
     },
     questions: {
-      concern: '',
-      understanding: '',
-      emotional: '',
+      concern: {
+        question: 'Aşk hayatınızda sizi en çok endişelendiren konu nedir?',
+        answer: ''
+      },
+      understanding: {
+        question: 'Bu aşk açılımı ile neyi anlamak istiyorsunuz?',
+        answer: ''
+      },
+      emotional: {
+        question: 'Şu anda duygusal olarak nasıl hissediyorsunuz?',
+        answer: ''
+      },
     },
     selectedCards: new Array(4).fill(null),
     cardStates: new Array(4).fill(false),
     isReversed: new Array(4).fill(false),
     usedCardIds: new Set<number>(),
     deck: [],
-    currentStep: 'questions',
+    currentStep: 'info',
     isSubmitted: false,
     detailedInterpretation: '',
     startTime: Date.now(), // Duration tracking için başlangıç zamanı
@@ -131,6 +145,7 @@ export default function LoveGuidanceDetail({
       const timer = setTimeout(() => setToast(null), 3500);
       return () => clearTimeout(timer);
     }
+    return undefined;
   }, [toast]);
 
   const validateReadingCode = (code: string): boolean => {
@@ -211,7 +226,13 @@ export default function LoveGuidanceDetail({
   ) => {
     setReadingState(prev => ({
       ...prev,
-      questions: { ...prev.questions, [field]: value },
+      questions: { 
+        ...prev.questions, 
+        [field]: { 
+          ...prev.questions[field], 
+          answer: value 
+        } 
+      },
     }));
     setFormErrors(errors => ({ ...errors, [field]: '', general: '' }));
   };
@@ -236,19 +257,19 @@ export default function LoveGuidanceDetail({
       errors.email = 'Geçerli bir e-posta adresi giriniz.';
       hasError = true;
     }
-    if (!questions.concern.trim() || questions.concern.trim().length < 10) {
+    if (!questions.concern.answer.trim() || questions.concern.answer.trim().length < 10) {
       errors.concern = 'Bu soruya en az 10 karakterlik yanıt vermelisiniz.';
       hasError = true;
     }
     if (
-      !questions.understanding.trim() ||
-      questions.understanding.trim().length < 10
+      !questions.understanding.answer.trim() ||
+      questions.understanding.answer.trim().length < 10
     ) {
       errors.understanding =
         'Bu soruya en az 10 karakterlik yanıt vermelisiniz.';
       hasError = true;
     }
-    if (!questions.emotional.trim() || questions.emotional.trim().length < 10) {
+    if (!questions.emotional.answer.trim() || questions.emotional.answer.trim().length < 10) {
       errors.emotional = 'Bu soruya en az 10 karakterlik yanıt vermelisiniz.';
       hasError = true;
     }
@@ -279,50 +300,10 @@ export default function LoveGuidanceDetail({
 
     setIsSaving(true);
     try {
-      // Okuma tipini belirle
-      const readingType = getReadingType(readingCode);
-      
-      // Sadece kredi kesintisi yap
-      let deductResult = false;
-      
-      if (readingType === 'LOVE_SPREAD_DETAILED') {
-        // Sesli okuma için kredi kesintisi
-        deductResult = await detailedCredits.deductCredits();
-        if (!deductResult) {
-          setToast({
-            type: 'error',
-            message: 'Kredi kesintisi yapılamadı. Yetersiz kredi.',
-          });
-          setShowCreditConfirm(false);
-          setIsSaving(false);
-          return;
-        }
-      } else if (readingType === 'LOVE_SPREAD_WRITTEN') {
-        // Yazılı okuma için kredi kesintisi
-        deductResult = await writtenCredits.deductCredits();
-        if (!deductResult) {
-          setToast({
-            type: 'error',
-            message: 'Kredi kesintisi yapılamadı. Yetersiz kredi.',
-          });
-          setShowCreditConfirm(false);
-          setIsSaving(false);
-          return;
-        }
-      }
-
-      // Kredi kesintisi başarılı - kart seçimine geç
-      setToast({
-        type: 'success',
-        message: 'Kredi kesildi. Kart seçimine geçiliyor.',
-      });
-      setCurrentStep('reading');
+      // Kredi ön kesinti kaldırıldı. Kredi yeterliliği UI seviyesinde kontrol edilir,
+      // asıl kesinti RPC ile kaydetme sırasında yapılacak.
+      setReadingState(prev => ({ ...prev, currentStep: 'reading' }));
       setShowCreditConfirm(false);
-    } catch (error) {
-      setToast({
-        type: 'error',
-        message: 'Kredi kesintisi sırasında bir hata oluştu.',
-      });
     } finally {
       setIsSaving(false);
     }
@@ -432,75 +413,63 @@ export default function LoveGuidanceDetail({
         hasQuestions: !!readingData.questions
       });
       
-      // 1. Ana okuma verilerini tarot_readings tablosuna kaydet (form + kartlar)
-      const { data: readingResult, error: readingError } = await supabase
-        .from('tarot_readings')
-        .insert({
-          user_id: user.id,
-          reading_type: readingData.readingType,
-          cards: readingData.cards.selectedCards, // Seçilen kartlar
-          interpretation: readingData.interpretation,
-          question: readingData.questions, // Form verileri
-          status: 'completed',
-          admin_notes: `Reading Code: ${readingData.readingCode}, Hash: ${readingData.readingHash}`
-        })
-        .select('id')
-        .single();
+      // RPC: Kredi düş + okuma oluştur (atomik)
+      const readingType = getReadingType(readingCode);
+      const cost = readingType === 'LOVE_SPREAD_DETAILED'
+        ? detailedCredits.creditStatus.requiredCredits
+        : readingType === 'LOVE_SPREAD_WRITTEN'
+          ? writtenCredits.creditStatus.requiredCredits
+          : 0;
 
-      if (readingError) {
-        console.error('Tarot reading kayıt hatası:', readingError);
-        throw readingError;
-      }
-
-      // 2. Detaylı form verilerini detailed_questions tablosuna kaydet
-      const { error: questionsError } = await supabase
-        .from('detailed_questions')
-        .insert({
-          user_id: user.id,
-          full_name: `${readingData.questions.personalInfo.name} ${readingData.questions.personalInfo.surname}`,
-          birth_date: readingData.questions.personalInfo.birthDate,
-          email: readingData.questions.personalInfo.email,
-          concern: readingData.questions.concern || '',
-          understanding: readingData.questions.understanding || '',
-          emotional: readingData.questions.emotional || '',
-          reading_type: readingData.readingType
-        });
-
-      if (questionsError) {
-        console.error('Detailed questions kayıt hatası:', questionsError);
-        // Bu hata kritik değil, devam et
-      }
-
-      // 3. Kullanıcı sorularını user_questions tablosuna kaydet
-      const { error: userQuestionsError } = await supabase
-        .from('user_questions')
-        .insert([
-          {
-            user_id: userId,
-            question: readingData.questions.concern,
-            reading_type: readingData.readingType
-          },
-          {
-            user_id: userId,
-            question: readingData.questions.understanding,
-            reading_type: readingData.readingType
-          },
-          {
-            user_id: userId,
-            question: readingData.questions.emotional,
-            reading_type: readingData.readingType
+      const { data: rpcResult, error: rpcError } = await supabase.rpc('fn_create_reading_with_debit', {
+        p_user_id: user.id,
+        p_reading_type: readingData.readingType,
+        p_spread_name: 'Aşk Yayılımı',
+        p_title: readingData.title || 'Aşk Açılımı',
+        p_interpretation: readingData.interpretation,
+        p_cards: readingData.cards.selectedCards,
+        p_questions: {
+          personalInfo: readingData.questions.personalInfo,
+          userQuestions: {
+            concern: {
+              question: readingData.questions.userQuestions.concern.question,
+              answer: readingData.questions.userQuestions.concern.answer
+            },
+            understanding: {
+              question: readingData.questions.userQuestions.understanding.question,
+              answer: readingData.questions.userQuestions.understanding.answer
+            },
+            emotional: {
+              question: readingData.questions.userQuestions.emotional.question,
+              answer: readingData.questions.userQuestions.emotional.answer
+            }
           }
-        ]);
+        },
+        p_cost_credits: cost,
+        p_metadata: {
+          readingCode: readingData.readingCode,
+          readingHash: readingData.readingHash,
+          platform: 'web'
+        },
+        p_idempotency_key: `reading_${user.id}_${readingData.readingHash}`
+      });
 
-      if (userQuestionsError) {
-        console.error('User questions kayıt hatası:', userQuestionsError);
-        // Bu hata kritik değil, devam et
+      if (rpcError) {
+        console.error('RPC okuma kayıt hatası:', rpcError);
+        throw rpcError;
       }
 
-      console.log('Okuma başarıyla kaydedildi:', readingResult.id);
+      console.log('Okuma başarıyla kaydedildi:', rpcResult?.id);
+      
+      // Email gönderimi (asenkron, hata durumunda okuma kaydını etkilemez)
+      // Server-side API endpoint'e istek gönder
+      triggerEmailSending(rpcResult?.id, readingData).catch(error => {
+        console.error('Email gönderimi başarısız:', error);
+      });
+      
       return { 
         success: true, 
-        id: readingResult.id,
+        id: rpcResult?.id,
         userId: user.id
       };
     } catch (error) {
@@ -513,9 +482,10 @@ export default function LoveGuidanceDetail({
   };
 
   const generateDetailedInterpretation = async () => {
-    const cards = readingState.selectedCards as TarotCard[];
     const { concern, understanding, emotional } = readingState.questions;
-    return `${t('tarotPage.loveSpread.detailedReading.title')}\n\n${t('tarotPage.loveSpread.detailedReading.concern')}: "${concern}"\n${t('tarotPage.loveSpread.detailedReading.understanding')}: "${understanding}"\n${t('tarotPage.loveSpread.detailedReading.emotional')}: "${emotional}"\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🏮 ${LOVE_POSITIONS_INFO[0].title}: ${cards[0]?.nameTr} ${readingState.isReversed[0] ? t('common.reversed') : t('common.upright')}\n${LOVE_POSITIONS_INFO[0].desc}\n\n${readingState.isReversed[0] ? cards[0]?.meaningTr.reversed : cards[0]?.meaningTr.upright}\n\n🎯 ${LOVE_POSITIONS_INFO[1].title}: ${cards[1]?.nameTr} ${readingState.isReversed[1] ? t('common.reversed') : t('common.upright')}\n${LOVE_POSITIONS_INFO[1].desc}\n\n${readingState.isReversed[1] ? cards[1]?.meaningTr.reversed : cards[1]?.meaningTr.upright}\n\n💡 ${LOVE_POSITIONS_INFO[2].title}: ${cards[2]?.nameTr} ${readingState.isReversed[2] ? t('common.reversed') : t('common.upright')}\n${LOVE_POSITIONS_INFO[2].desc}\n\n${readingState.isReversed[2] ? cards[2]?.meaningTr.reversed : cards[2]?.meaningTr.upright}\n\n🌟 ${LOVE_POSITIONS_INFO[3].title}: ${cards[3]?.nameTr} ${readingState.isReversed[3] ? t('common.reversed') : t('common.upright')}\n${LOVE_POSITIONS_INFO[3].desc}\n\n${readingState.isReversed[3] ? cards[3]?.meaningTr.reversed : cards[3]?.meaningTr.upright}\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n💝 ${t('tarotPage.loveSpread.detailedReading.generalMessage')}:\n\n${t('tarotPage.loveSpread.detailedReading.message')}\n\n${t('tarotPage.loveSpread.detailedReading.guideMessage')}\n\n✨ ${t('tarotPage.loveSpread.detailedReading.dateMessage')}`;
+    
+    // Basit bir yorum oluştur
+    return `Aşk Açılımı Yorumu\n\nSoru: "${concern}"\nAnlayış: "${understanding}"\nDuygusal: "${emotional}"\n\nKartlar seçildi ve yorum hazırlandı.`;
   };
 
   const prepareReadingData = (
@@ -571,7 +541,7 @@ export default function LoveGuidanceDetail({
     return `${email}__${questions.concern}__${questions.understanding}__${questions.emotional}__${cardIds}`;
   };
 
-  const checkReadingExists = async (readingHash: string) => {
+  const checkReadingExists = async (_readingHash: string) => {
     // User authentication removed - simplified flow
     return false;
   };
@@ -654,17 +624,17 @@ export default function LoveGuidanceDetail({
   // const [currentStep, setCurrentStep] = useState<'info' | 'questions' | 'credit' | 'reading' | 'interpretation' | 'submitted'>('info');
 
   // 2. ReadingInfoModal açılışı
-  if (currentStep === 'info') {
+  if (readingState.currentStep === 'info') {
     return (
       <ReadingInfoModal
         isOpen={true}
-        onClose={() => setCurrentStep('questions')}
+        onClose={() => setReadingState(prev => ({ ...prev, currentStep: 'questions' }))}
       />
     );
   }
 
   // 3. Kişisel bilgi ve soru adımı (questions)
-  if (currentStep === 'questions') {
+  if (readingState.currentStep === 'questions') {
     return (
       <>
         {toast && (
@@ -786,11 +756,11 @@ export default function LoveGuidanceDetail({
           <div className='space-y-6'>
             <div className='bg-slate-800/50 border border-pink-500/30 rounded-xl p-6'>
               <label className='block text-pink-400 font-semibold mb-3'>
-                1. Aşk hayatınızda sizi en çok endişelendiren konu nedir?
+                1. {readingState.questions.concern.question}
               </label>
               <textarea
                 id='concern'
-                value={readingState.questions.concern}
+                value={readingState.questions.concern.answer}
                 onChange={e => updateQuestion('concern', e.target.value)}
                 placeholder='Örnek: İlgilendiğim kişinin bana karşı hisleri konusunda emin değilim...'
                 className={`w-full bg-slate-700/50 border ${formErrors.concern ? 'border-red-500' : 'border-slate-600'} rounded-lg p-4 text-white placeholder-gray-400 focus:border-pink-400 focus:outline-none resize-none`}
@@ -804,11 +774,11 @@ export default function LoveGuidanceDetail({
             </div>
             <div className='bg-slate-800/50 border border-red-500/30 rounded-xl p-6'>
               <label className='block text-red-400 font-semibold mb-3'>
-                2. Bu aşk açılımı ile neyi anlamak istiyorsunuz?
+                2. {readingState.questions.understanding.question}
               </label>
               <textarea
                 id='understanding'
-                value={readingState.questions.understanding}
+                value={readingState.questions.understanding.answer}
                 onChange={e => updateQuestion('understanding', e.target.value)}
                 placeholder='Örnek: İlişkimizin geleceği hakkında daha net bir fikir edinmek istiyorum...'
                 className={`w-full bg-slate-700/50 border ${formErrors.understanding ? 'border-red-500' : 'border-slate-600'} rounded-lg p-4 text-white placeholder-gray-400 focus:border-red-400 focus:outline-none resize-none`}
@@ -822,11 +792,11 @@ export default function LoveGuidanceDetail({
             </div>
             <div className='bg-slate-800/50 border border-purple-500/30 rounded-xl p-6'>
               <label className='block text-purple-400 font-semibold mb-3'>
-                3. Şu anda duygusal olarak nasıl hissediyorsunuz?
+                3. {readingState.questions.emotional.question}
               </label>
               <textarea
                 id='emotional'
-                value={readingState.questions.emotional}
+                value={readingState.questions.emotional.answer}
                 onChange={e => updateQuestion('emotional', e.target.value)}
                 placeholder='Örnek: Karışık duygular içindeyim, hem umutlu hem tedirginim...'
                 className={`w-full bg-slate-700/50 border ${formErrors.emotional ? 'border-red-500' : 'border-slate-600'} rounded-lg p-4 text-white placeholder-gray-400 focus:border-purple-400 focus:outline-none resize-none`}
@@ -887,7 +857,7 @@ export default function LoveGuidanceDetail({
   }
 
   // 4. Kredi onay modalı (credit)
-  if (currentStep === 'credit') {
+  if (readingState.currentStep === 'credit') {
     return (
       <div className='fixed inset-0 z-50 bg-black/60 flex items-center justify-center'>
         <div className='bg-slate-900 border border-pink-500/40 rounded-2xl shadow-2xl p-8 max-w-sm w-full mx-4'>
@@ -906,7 +876,7 @@ export default function LoveGuidanceDetail({
               {isSaving ? 'İşleniyor...' : 'Evet, Onaylıyorum'}
             </button>
             <button
-              onClick={() => setCurrentStep('questions')}
+              onClick={() => setReadingState(prev => ({ ...prev, currentStep: 'questions' }))}
               disabled={isSaving}
               className='bg-slate-700 border border-slate-600 text-gray-300 font-semibold py-2 px-6 rounded-lg transition-colors hover:bg-slate-800 disabled:opacity-60'
             >
@@ -919,7 +889,7 @@ export default function LoveGuidanceDetail({
   }
 
   // 5. Kart seçimi (reading)
-  if (currentStep === 'reading') {
+  if (readingState.currentStep === 'reading') {
     const allCardsSelected = readingState.selectedCards.every(
       card => card !== null
     );
@@ -960,11 +930,11 @@ export default function LoveGuidanceDetail({
                 <BaseCardPosition
                   key={position.id}
                   position={position}
-                  card={readingState.selectedCards[position.id - 1]}
+                  card={readingState.selectedCards[position.id - 1] || null}
                   isOpen={
-                    isInterpretation || readingState.cardStates[position.id - 1]
+                    isInterpretation || readingState.cardStates[position.id - 1] || false
                   }
-                  isReversed={readingState.isReversed[position.id - 1]}
+                  isReversed={readingState.isReversed[position.id - 1] || false}
                   isNextPosition={
                     !isInterpretation && getNextEmptyPosition() === position.id
                   }
@@ -972,7 +942,7 @@ export default function LoveGuidanceDetail({
                     !isInterpretation && toggleCardState(position.id)
                   }
                   onCardDetails={handleCardDetails}
-                  positionInfo={LOVE_POSITIONS_INFO[idx]}
+                  positionInfo={LOVE_POSITIONS_INFO[idx] || { title: `Pozisyon ${position.id}`, desc: 'Kart pozisyonu' }}
                   renderCard={(card, props) => (
                     <LoveCardRenderer card={card} {...props} />
                   )}
@@ -987,10 +957,10 @@ export default function LoveGuidanceDetail({
             <div className='bg-gradient-to-r from-pink-600/20 via-red-500/30 to-purple-500/20 border border-pink-500/50 rounded-2xl px-6 py-3 shadow-lg animate-pulse'>
               <div className='text-center'>
                 <div className='text-pink-200 font-bold text-lg'>
-                  {LOVE_POSITIONS_INFO[getNextEmptyPosition()! - 1].title}
+                  {LOVE_POSITIONS_INFO[getNextEmptyPosition()! - 1]?.title || `Pozisyon ${getNextEmptyPosition()}`}
                 </div>
                 <div className='text-gray-300 text-xs'>
-                  {LOVE_POSITIONS_INFO[getNextEmptyPosition()! - 1].desc}
+                  {LOVE_POSITIONS_INFO[getNextEmptyPosition()! - 1]?.desc || 'Kart pozisyonu'}
                 </div>
               </div>
             </div>
@@ -1019,9 +989,6 @@ export default function LoveGuidanceDetail({
           <LoveInterpretation
             cards={readingState.selectedCards.filter(Boolean) as TarotCard[]}
             isReversed={readingState.isReversed}
-            _userQuestion={`${readingState.questions.concern} / ${readingState.questions.understanding} / ${readingState.questions.emotional}`}
-            _interpretation={readingState.detailedInterpretation}
-            _onSetUserQuestion={() => {}}
           />
         )}
 
@@ -1055,13 +1022,13 @@ export default function LoveGuidanceDetail({
               card={showCardDetails.card as TarotCard}
               isReversed={
                 showCardDetails.position > 0
-                  ? readingState.isReversed[showCardDetails.position - 1]
+                  ? readingState.isReversed[showCardDetails.position - 1] || false
                   : false
               }
               position={showCardDetails.position}
               onClose={() => setShowCardDetails(null)}
               spreadType='love'
-              positionInfo={LOVE_POSITIONS_INFO[showCardDetails.position - 1]}
+              positionInfo={LOVE_POSITIONS_INFO[showCardDetails.position - 1] || { title: 'Kart Detayları', desc: 'Kart pozisyonu' }}
             />
           </div>
         )}
@@ -1070,7 +1037,7 @@ export default function LoveGuidanceDetail({
   }
 
   // 6. Yorum ve gönderim (interpretation)
-  if (currentStep === 'interpretation') {
+  if (readingState.currentStep === 'interpretation') {
     return (
       <div className='min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center p-4'>
         <div className='bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border border-slate-700/50 rounded-2xl p-4 sm:p-6 md:p-8 w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto'>
@@ -1115,4 +1082,40 @@ export default function LoveGuidanceDetail({
   }
 
   return null;
+}
+
+/**
+ * Email gönderimi için API endpoint'e istek gönder
+ */
+async function triggerEmailSending(readingId: string | undefined, _readingData: any): Promise<void> {
+  if (!readingId) {
+    console.error('❌ Reading ID bulunamadı, email gönderilemedi');
+    return;
+  }
+
+  try {
+    console.log('🔮 Email gönderimi API endpoint\'e istek gönderiliyor...', { readingId });
+    
+    // Server-side API endpoint'e sadece readingId gönder
+    // API kendi Supabase'den gerçek veriyi çekecek
+    const response = await fetch('/api/send-reading-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        readingId
+      })
+    });
+
+    if (response.ok) {
+      const result = await response.json();
+      console.log('✅ Email gönderimi başarılı:', result);
+    } else {
+      const error = await response.text();
+      console.error('❌ Email gönderimi başarısız:', error);
+    }
+  } catch (error) {
+    console.error('❌ Email gönderimi API hatası:', error);
+  }
 }

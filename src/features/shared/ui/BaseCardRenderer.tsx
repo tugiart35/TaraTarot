@@ -67,7 +67,6 @@ export interface BaseCardRendererProps {
   // Görünüm modu
   mode: CardMode;
   // Durum bilgileri
-  _isOpen?: boolean;
   isUsed?: boolean;
   isSelected?: boolean;
   canSelect?: boolean;
@@ -84,7 +83,6 @@ export default function BaseCardRenderer({
   card,
   isReversed = false,
   mode,
-  _isOpen = false,
   isUsed = false,
   isSelected = false,
   canSelect = true,

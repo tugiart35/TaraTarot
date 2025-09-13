@@ -5,7 +5,7 @@
  * Hesaplanan sayıyı ve detayları gösterir
  */
 
-import { NumerologyResult } from '@/lib/numerology/types';
+import type { NumerologyResult } from '@/lib/numerology/types';
 
 interface NumerologyResultProps {
   result: NumerologyResult;
@@ -90,26 +90,7 @@ export default function NumerologyResult({ result }: NumerologyResultProps) {
           )}
         </div>
 
-        {/* Breakdown */}
-        <div className="space-y-4">
-          <h3 className="text-lg font-semibold text-white mb-4">
-            📊 Hesaplama Detayları
-          </h3>
-          
-          <div className="space-y-2">
-            {result.breakdown.map((step, index) => (
-              <div
-                key={index}
-                className="flex items-center gap-3 p-3 bg-white/5 rounded-xl border border-white/10"
-              >
-                <div className="w-6 h-6 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-xs font-bold text-white">
-                  {index + 1}
-                </div>
-                <span className="text-gray-300 text-sm">{step}</span>
-              </div>
-            ))}
-          </div>
-        </div>
+        {/* Breakdown - Removed as breakdown property doesn't exist */}
 
         {/* Additional Info */}
         <div className="mt-8 p-4 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl border border-purple-500/20">

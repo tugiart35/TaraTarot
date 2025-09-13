@@ -4,18 +4,19 @@
 
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import BottomNavigation from '@/features/shared/layout/BottomNavigation';
 import { calculateNumerology } from '@/lib/numerology/calculators';
 import { NumerologyType, NumerologyResult } from '@/lib/numerology/types';
 
 interface NumerologyPageProps {
-  params: {
+  params: Promise<{
     locale: string;
-  };
+  }>;
 }
 
 export default function NumerologyPage({ params }: NumerologyPageProps) {
+  const [resolvedParams, setResolvedParams] = useState<{locale: string} | null>(null);
   const [activeTab, setActiveTab] = useState<'life-path' | 'expression-destiny' | 'soul-urge' | 'personality' | 'birthday-number' | 'maturity' | 'pinnacles-challenges' | 'personal-cycles' | 'compatibility'>('life-path');
   const [formData, setFormData] = useState({
     fullName: '',
@@ -29,6 +30,25 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
   const [result, setResult] = useState<NumerologyResult | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const resolveParams = async () => {
+      const resolvedParamsData = await params;
+      setResolvedParams(resolvedParamsData);
+    };
+    resolveParams();
+  }, [params]);
+
+  if (!resolvedParams) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white flex items-center justify-center">
+        <div className="text-center">
+          <div className="w-16 h-16 border-4 border-purple-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+          <p className="text-gray-300">Yükleniyor...</p>
+        </div>
+      </div>
+    );
+  }
 
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
@@ -52,24 +72,36 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
       if (activeTab === 'life-path' && formData.birthDate) {
         input.birthDate = formData.birthDate;
       } else if ((activeTab === 'expression-destiny' || activeTab === 'soul-urge' || activeTab === 'personality') && formData.fullName) {
-        input.fullName = formData.fullName;
+        // fullName'i firstName ve lastName'e böl
+        const nameParts = formData.fullName.trim().split(' ');
+        input.firstName = nameParts[0] || '';
+        input.lastName = nameParts.slice(1).join(' ') || '';
       } else if (activeTab === 'birthday-number' && formData.birthDate) {
         input.birthDate = formData.birthDate;
       } else if (activeTab === 'maturity' && formData.birthDate && formData.fullName) {
         input.birthDate = formData.birthDate;
-        input.fullName = formData.fullName;
+        // fullName'i firstName ve lastName'e böl
+        const nameParts = formData.fullName.trim().split(' ');
+        input.firstName = nameParts[0] || '';
+        input.lastName = nameParts.slice(1).join(' ') || '';
       } else if (activeTab === 'pinnacles-challenges' && formData.birthDate) {
         input.birthDate = formData.birthDate;
       } else if (activeTab === 'personal-cycles' && formData.birthDate && formData.targetDate) {
         input.birthDate = formData.birthDate;
         input.targetDate = formData.targetDate;
       } else if (activeTab === 'compatibility' && formData.personA.fullName && formData.personA.birthDate && formData.personB.fullName && formData.personB.birthDate) {
+        // PersonA için fullName'i firstName ve lastName'e böl
+        const personANameParts = formData.personA.fullName.trim().split(' ');
+        const personBNameParts = formData.personB.fullName.trim().split(' ');
+        
         input.personA = {
-          fullName: formData.personA.fullName,
+          firstName: personANameParts[0] || '',
+          lastName: personANameParts.slice(1).join(' ') || '',
           birthDate: formData.personA.birthDate
         };
         input.personB = {
-          fullName: formData.personB.fullName,
+          firstName: personBNameParts[0] || '',
+          lastName: personBNameParts.slice(1).join(' ') || '',
           birthDate: formData.personB.birthDate
         };
       } else {
@@ -79,7 +111,7 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
       }
 
       // Hesaplama yap
-      const calculatedResult = calculateNumerology(activeTab as NumerologyType, input, params.locale);
+      const calculatedResult = calculateNumerology(activeTab as NumerologyType, input, resolvedParams.locale);
       setResult(calculatedResult);
       setShowModal(true);
     } catch (err) {
@@ -500,8 +532,6 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
                     {result.description}
                   </p>
                 </div>
-
-
                 {/* Special Results */}
                 {result.pinnacles && (
                   <div className="bg-gray-800 rounded-lg p-4">

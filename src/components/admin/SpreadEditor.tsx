@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { supabase } from '@/lib/supabase/client';
 import { X, Plus, Trash, Save, Eye } from 'lucide-react';
-import type { SpreadConfig } from '../../types/spread';
+// import type { SpreadConfig } from '../../types/spread';
 
 interface SpreadPosition {
   id: number;
@@ -28,13 +28,7 @@ interface Spread {
   created_at?: string;
 }
 
-// SpreadConfig tipini kullan
-type SpreadFormData = Omit<SpreadConfig, 'id' | 'theme' | 'readingTypes' | 'interpretationConfig'> & {
-  id?: number;
-  cost_credits: number;
-  active: boolean;
-  created_at?: string;
-};
+// SpreadFormData type removed as it was unused
 
 interface SpreadEditorProps {
   spread?: Spread;
@@ -139,8 +133,11 @@ export default function SpreadEditor({ spread, onClose, onSave, isEdit = false }
 
   const updatePosition = (index: number, field: string, value: string | number) => {
     const updatedPositions = [...formData.positions];
-    updatedPositions[index] = { ...updatedPositions[index], [field]: value };
-    setFormData({ ...formData, positions: updatedPositions });
+    const currentPosition = updatedPositions[index];
+    if (currentPosition) {
+      updatedPositions[index] = { ...currentPosition, [field]: value };
+      setFormData({ ...formData, positions: updatedPositions });
+    }
   };
 
   const removePosition = (index: number) => {

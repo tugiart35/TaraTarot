@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { supabase } from '@/lib/supabase/client';
-import { Eye, Calendar, Clock, Star, Users, TrendingUp, Filter } from 'lucide-react';
+import { Eye, Calendar, Clock, Star, TrendingUp, Filter } from 'lucide-react';
 
 interface Reading {
   id: string;
@@ -26,7 +26,7 @@ export default function ReadingHistory({ userId, limit = 20 }: ReadingHistoryPro
   const [readings, setReadings] = useState<Reading[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedReading, setSelectedReading] = useState<Reading | null>(null);
-  const [filter, setFilter] = useState<'all' | 'tarot' | 'numerology'>('all');
+  const [filter, setFilter] = useState<'all' | 'tarot' | 'numerology' | 'ai'>('all');
 
   useEffect(() => {
     fetchReadings();

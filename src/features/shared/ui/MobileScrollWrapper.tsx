@@ -26,8 +26,8 @@ export default function MobileScrollWrapper({
     direction,
     momentum,
     snapToGrid,
-    onScroll,
-    onScrollEnd,
+    ...(onScroll && { onScroll }),
+    ...(onScrollEnd && { onScrollEnd }),
   });
 
   const getScrollClasses = () => {

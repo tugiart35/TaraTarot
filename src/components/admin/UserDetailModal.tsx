@@ -69,7 +69,7 @@ export default function UserDetailModal({ user, onClose, onEditCredit, onStatusC
             <div className="flex items-center space-x-4">
               <div className="h-16 w-16 admin-gradient-accent rounded-2xl flex items-center justify-center admin-hover-lift">
                 <span className="text-white text-2xl font-bold">
-                  {user.display_name?.[0] || user.email[0].toUpperCase()}
+                  {user.display_name?.[0] || user.email?.[0]?.toUpperCase() || '?'}
                 </span>
               </div>
               <div>

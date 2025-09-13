@@ -103,7 +103,6 @@ export const createShopierPayment = async (
     
     // Test modunda mock response döndür
     if (config.testMode || paymentRequest.orderId.startsWith('TEST_')) {
-      console.log('Test modu: Mock Shopier ödeme response');
       
       // Test için başarılı response simüle et
       return {
@@ -170,7 +169,6 @@ export const createShopierPayment = async (
     }
 
   } catch (error) {
-    console.error('Shopier payment creation error:', error);
     return {
       success: false,
       error: error instanceof Error ? error.message : 'Bilinmeyen hata',
@@ -205,7 +203,6 @@ export const verifyShopierWebhook = (data: ShopierWebhookData, signature: string
     
     return signature === expectedSignature;
   } catch (error) {
-    console.error('Webhook signature verification error:', error);
     return false;
   }
 };

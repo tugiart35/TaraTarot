@@ -37,14 +37,11 @@ import type {
   PaymentFormData,
   PaymentPermissions,
   UsePaymentReturn,
-  UserRole,
-  SubscriptionType,
-  PaymentProvider,
-  PaymentStatus,
 } from '@/lib/payment/payment-types';
 
 // Role-based payment permissions
-const PAYMENT_PERMISSIONS: Record<UserRole, PaymentPermissions> = {
+type UserRoleLocal = 'admin' | 'premium' | 'user' | 'guest';
+const PAYMENT_PERMISSIONS: Record<UserRoleLocal, PaymentPermissions> = {
   admin: {
     can_view_pricing: true,
     can_subscribe: true,
@@ -175,7 +172,7 @@ const DEFAULT_PRICING_TIERS: PricingTier[] = [
 ];
 
 export function usePayment(): UsePaymentReturn {
-  const { user, isAuthenticated, checkPermission, auditLog } = useAuth();
+  const { user, isAuthenticated } = useAuth();
   const [subscription, setSubscription] = useState<PaymentSubscription | null>(null);
   const [paymentMethods, setPaymentMethods] = useState<PaymentMethodData[]>([]);
   const [transactions, setTransactions] = useState<PaymentTransaction[]>([]);
@@ -184,7 +181,7 @@ export function usePayment(): UsePaymentReturn {
   const [error, setError] = useState<string | null>(null);
 
   // Get user role
-  const userRole: UserRole = (user?.user_metadata?.role as UserRole) || 'guest';
+  const userRole: UserRoleLocal = (user?.user_metadata?.role as UserRoleLocal) || 'guest';
 
   // Get payment permissions
   const getPaymentPermissions = useCallback((): PaymentPermissions => {
@@ -279,7 +276,6 @@ export function usePayment(): UsePaymentReturn {
 
       if (pricingError) {
         // Use default pricing if database error
-        console.warn('Failed to load pricing tiers, using defaults:', pricingError);
       } else {
         setPricingTiers(pricingData || DEFAULT_PRICING_TIERS);
       }
@@ -287,11 +283,10 @@ export function usePayment(): UsePaymentReturn {
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Payment data yüklenemedi';
       setError(errorMessage);
-      await auditLog('payment_data_load_error', { error: errorMessage });
     } finally {
       setLoading(false);
     }
-  }, [isAuthenticated, user, auditLog]);
+  }, [isAuthenticated, user]);
 
   // Create subscription
   const createSubscription = useCallback(async (tierId: string, paymentData: PaymentFormData): Promise<boolean> => {
@@ -332,24 +327,16 @@ export function usePayment(): UsePaymentReturn {
       // Update local state
       setSubscription(result.subscription);
       
-      await auditLog('subscription_created', { 
-        tier_id: tierId, 
-        subscription_id: result.subscription.id 
-      });
 
       return true;
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Subscription oluşturulamadı';
       setError(errorMessage);
-      await auditLog('subscription_creation_error', { 
-        tier_id: tierId, 
-        error: errorMessage 
-      });
       return false;
     } finally {
       setLoading(false);
     }
-  }, [isAuthenticated, user, pricingTiers, auditLog]);
+  }, [isAuthenticated, user, pricingTiers]);
 
   // Update subscription
   const updateSubscription = useCallback(async (subscriptionId: string, updates: Partial<PaymentSubscription>): Promise<boolean> => {
@@ -383,22 +370,14 @@ export function usePayment(): UsePaymentReturn {
       // Update local state
       setSubscription(result.subscription);
       
-      await auditLog('subscription_updated', { 
-        subscription_id: subscriptionId, 
-        updates 
-      });
 
       return true;
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Subscription güncellenemedi';
       setError(errorMessage);
-      await auditLog('subscription_update_error', { 
-        subscription_id: subscriptionId, 
-        error: errorMessage 
-      });
       return false;
     }
-  }, [isAuthenticated, user, auditLog]);
+  }, [isAuthenticated, user]);
 
   // Cancel subscription
   const cancelSubscription = useCallback(async (subscriptionId: string): Promise<boolean> => {
@@ -431,21 +410,14 @@ export function usePayment(): UsePaymentReturn {
       // Update local state
       setSubscription(result.subscription);
       
-      await auditLog('subscription_canceled', { 
-        subscription_id: subscriptionId 
-      });
 
       return true;
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Subscription iptal edilemedi';
       setError(errorMessage);
-      await auditLog('subscription_cancellation_error', { 
-        subscription_id: subscriptionId, 
-        error: errorMessage 
-      });
       return false;
     }
-  }, [isAuthenticated, user, auditLog]);
+  }, [isAuthenticated, user]);
 
   // Add payment method
   const addPaymentMethod = useCallback(async (paymentData: PaymentFormData): Promise<boolean> => {
@@ -479,20 +451,14 @@ export function usePayment(): UsePaymentReturn {
       // Update local state
       setPaymentMethods(prev => [result.payment_method, ...prev]);
       
-      await auditLog('payment_method_added', { 
-        payment_method_id: result.payment_method.id 
-      });
 
       return true;
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Payment method eklenemedi';
       setError(errorMessage);
-      await auditLog('payment_method_creation_error', { 
-        error: errorMessage 
-      });
       return false;
     }
-  }, [isAuthenticated, user, auditLog]);
+  }, [isAuthenticated, user]);
 
   // Remove payment method
   const removePaymentMethod = useCallback(async (paymentMethodId: string): Promise<boolean> => {
@@ -523,21 +489,14 @@ export function usePayment(): UsePaymentReturn {
       // Update local state
       setPaymentMethods(prev => prev.filter(pm => pm.id !== paymentMethodId));
       
-      await auditLog('payment_method_removed', { 
-        payment_method_id: paymentMethodId 
-      });
 
       return true;
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Payment method silinemedi';
       setError(errorMessage);
-      await auditLog('payment_method_removal_error', { 
-        payment_method_id: paymentMethodId, 
-        error: errorMessage 
-      });
       return false;
     }
-  }, [isAuthenticated, user, auditLog]);
+  }, [isAuthenticated, user]);
 
   // Set default payment method
   const setDefaultPaymentMethod = useCallback(async (paymentMethodId: string): Promise<boolean> => {
@@ -572,22 +531,13 @@ export function usePayment(): UsePaymentReturn {
           is_default: pm.id === paymentMethodId,
         }))
       );
-      
-      await auditLog('default_payment_method_updated', { 
-        payment_method_id: paymentMethodId 
-      });
-
       return true;
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Default payment method güncellenemedi';
       setError(errorMessage);
-      await auditLog('default_payment_method_update_error', { 
-        payment_method_id: paymentMethodId, 
-        error: errorMessage 
-      });
       return false;
     }
-  }, [isAuthenticated, user, auditLog]);
+  }, [isAuthenticated, user]);
 
   // Refresh payment data
   const refreshPaymentData = useCallback(async (): Promise<void> => {

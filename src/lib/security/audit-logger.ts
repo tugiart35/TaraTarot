@@ -191,7 +191,6 @@ export class AuditLogger {
         await this.processBatch();
       }
     } catch (error) {
-      console.error('Audit logging failed:', error);
     }
   }
 
@@ -525,7 +524,6 @@ export class AuditLogger {
         }),
       });
     } catch (error) {
-      console.error('Security alert failed:', error);
     }
   }
 
@@ -555,7 +553,6 @@ export class AuditLogger {
         body: JSON.stringify({ logs: batch }),
       });
     } catch (error) {
-      console.error('Batch audit logging failed:', error);
       // Re-add failed logs to pending
       this.pendingLogs.unshift(...batch);
     }

@@ -36,7 +36,7 @@ export default async function LocaleLayout({
   children,
   params,
 }: LocaleLayoutProps) {
-  const { locale } = await params;
+  await params;
   
   return (
     <div>

@@ -67,7 +67,6 @@ export const useReadingCredits = (readingType: ReadingType) => {
         });
       } catch (err) {
         setError('Kredi bilgisi alınamadı');
-        console.error('Kredi kontrolü hatası:', err);
       } finally {
         setIsLoading(false);
       }
@@ -107,7 +106,6 @@ export const useReadingCredits = (readingType: ReadingType) => {
       });
     } catch (err) {
       setError('Kredi bilgisi alınamadı');
-      console.error('Kredi kontrolü hatası:', err);
     } finally {
       setIsLoading(false);
     }
@@ -170,7 +168,6 @@ export const useReadingCredits = (readingType: ReadingType) => {
         });
 
       if (transactionError) {
-        console.warn('Transaction log oluşturulamadı:', transactionError);
         // Transaction log hatası kritik değil, devam et
       }
 
@@ -184,7 +181,6 @@ export const useReadingCredits = (readingType: ReadingType) => {
       return true;
     } catch (err) {
       setError('Kredi kesintisi yapılamadı');
-      console.error('Kredi kesintisi hatası:', err);
       return false;
     } finally {
       setIsLoading(false);

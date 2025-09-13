@@ -61,6 +61,7 @@ export const CREDIT_CONSTANTS = {
   },
   DEFAULT_CREDITS: 100,
   MIN_CREDITS_FOR_READING: 20,
+  EMAIL_CONFIRMATION_CREDITS: 10,
 } as const;
 
 // Kredi gerektiren okuma türleri

@@ -100,7 +100,6 @@ export function PWAAuthProvider({ children }: PWAAuthProviderProps) {
     const handleAppInstalled = () => {
       setCanInstall(false);
       setInstallPrompt(null);
-      console.log('PWA installed successfully');
     };
 
     window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
@@ -120,15 +119,7 @@ export function PWAAuthProvider({ children }: PWAAuthProviderProps) {
 
     try {
       const result = await installPrompt.prompt();
-      console.log('Install prompt result:', result);
-      
-      if (result.outcome === 'accepted') {
-        console.log('PWA installation accepted');
-      } else {
-        console.log('PWA installation dismissed');
-      }
     } catch (error) {
-      console.error('PWA installation failed:', error);
       throw error;
     } finally {
       setInstallPrompt(null);
@@ -173,7 +164,6 @@ export function PWAAuthProvider({ children }: PWAAuthProviderProps) {
         });
       }
     } catch (error) {
-      console.error('Service worker sync failed:', error);
       throw error;
     }
   }, [auth.user]);
@@ -188,7 +178,6 @@ export function PWAAuthProvider({ children }: PWAAuthProviderProps) {
       const permission = await Notification.requestPermission();
       return permission === 'granted';
     } catch (error) {
-      console.error('Notification permission request failed:', error);
       return false;
     }
   }, [isNotificationSupported]);
@@ -196,7 +185,7 @@ export function PWAAuthProvider({ children }: PWAAuthProviderProps) {
   // Sync auth state with service worker when user changes
   useEffect(() => {
     if (auth.user && isPWA) {
-      syncWithServiceWorker().catch(console.error);
+      syncWithServiceWorker().catch(() => {});
     }
   }, [auth.user, isPWA, syncWithServiceWorker]);
 
@@ -211,9 +200,6 @@ export function PWAAuthProvider({ children }: PWAAuthProviderProps) {
         const registration = await navigator.serviceWorker.register('/sw-auth.js', {
           scope: '/',
         });
-
-        console.log('Auth Service Worker registered:', registration);
-
         // Handle service worker updates
         registration.addEventListener('updatefound', () => {
           const newWorker = registration.installing;
@@ -221,7 +207,6 @@ export function PWAAuthProvider({ children }: PWAAuthProviderProps) {
             newWorker.addEventListener('statechange', () => {
               if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
                 // New service worker is available
-                console.log('New auth service worker available');
                 // You can show a notification to the user here
               }
             });
@@ -235,21 +220,17 @@ export function PWAAuthProvider({ children }: PWAAuthProviderProps) {
           switch (type) {
             case 'AUTH_UPDATE':
               // Handle auth updates from service worker
-              console.log('Auth update from service worker:', data);
               break;
               
             case 'OFFLINE_AUTH':
               // Handle offline auth state
-              console.log('Offline auth state:', data);
               break;
               
             default:
-              console.log('Unknown message from service worker:', type);
           }
         });
 
       } catch (error) {
-        console.error('Service worker registration failed:', error);
       }
     };
 
@@ -314,7 +295,6 @@ export function PWAInstallButton() {
       setIsInstalling(true);
       await installPWA();
     } catch (error) {
-      console.error('PWA installation failed:', error);
     } finally {
       setIsInstalling(false);
     }

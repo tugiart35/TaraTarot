@@ -69,10 +69,15 @@ export async function GET(request: NextRequest) {
           // Kredi hediye etme hatası kritik değil, devam et
         }
         
-        // Başarılı onay sonrası ana sayfaya yönlendir
-        return NextResponse.redirect(new URL(next, request.url));
+        // Başarılı onay sonrası dashboard'a yönlendir (kullanıcı giriş yapmış olacak)
+        return NextResponse.redirect(new URL('/tr/dashboard', request.url));
       } else {
         console.error('Email confirmation error:', error);
+        
+        // Token süresi dolmuşsa özel hata mesajı
+        if (error.message.includes('expired') || error.message.includes('invalid')) {
+          return NextResponse.redirect(new URL('/tr/auth?error=token_expired', request.url));
+        }
       }
     } catch (error) {
       console.error('Email confirmation exception:', error);
@@ -81,7 +86,7 @@ export async function GET(request: NextRequest) {
 
   // Hata durumunda hata sayfasına yönlendir
   console.log('Redirecting to auth error page');
-  return NextResponse.redirect(new URL('/auth?error=confirmation_failed', request.url));
+  return NextResponse.redirect(new URL('/tr/auth?error=confirmation_failed', request.url));
 }
 
 /**
@@ -96,47 +101,20 @@ async function giveEmailConfirmationCredits() {
       throw new Error('Kullanıcı bulunamadı');
     }
 
-    // Kullanıcının mevcut kredi bakiyesini al
-    const { data: profile, error: profileError } = await supabase
-      .from('profiles')
-      .select('credit_balance')
-      .eq('id', user.id)
-      .single();
+    // RPC ile atomik bonus kredi yükle (+ transaction log)
+    const { error: rpcError } = await supabase.rpc('fn_award_bonus_credits', {
+      p_user_id: user.id,
+      p_delta: CREDIT_CONSTANTS.EMAIL_CONFIRMATION_CREDITS,
+      p_reason: 'E-posta onayı hediye kredisi',
+      p_ref_type: 'email_confirmation_bonus',
+      p_ref_id: 'email_confirmation'
+    });
 
-    if (profileError) {
-      throw new Error('Profil bulunamadı');
+    if (rpcError) {
+      throw rpcError;
     }
 
-    const currentBalance = profile?.credit_balance || 0;
-    const newBalance = currentBalance + CREDIT_CONSTANTS.EMAIL_CONFIRMATION_CREDITS;
-
-    // Kredi bakiyesini güncelle
-    const { error: updateError } = await supabase
-      .from('profiles')
-      .update({ credit_balance: newBalance })
-      .eq('id', user.id);
-
-    if (updateError) {
-      throw updateError;
-    }
-
-    // Transaction log oluştur
-    const { error: transactionError } = await supabase
-      .from('transactions')
-      .insert({
-        user_id: user.id,
-        delta_credits: CREDIT_CONSTANTS.EMAIL_CONFIRMATION_CREDITS,
-        reason: 'E-posta onayı hediye kredisi',
-        ref_type: 'email_confirmation_bonus',
-        ref_id: 'email_confirmation'
-      });
-
-    if (transactionError) {
-      console.warn('Transaction log oluşturulamadı:', transactionError);
-      // Transaction log hatası kritik değil
-    }
-
-    console.log(`Email confirmation credits given: ${CREDIT_CONSTANTS.EMAIL_CONFIRMATION_CREDITS} credits to user ${user.id}`);
+    console.log(`Email confirmation credits given via RPC: ${CREDIT_CONSTANTS.EMAIL_CONFIRMATION_CREDITS} to user ${user.id}`);
     
   } catch (error) {
     console.error('Email confirmation credit gift failed:', error);

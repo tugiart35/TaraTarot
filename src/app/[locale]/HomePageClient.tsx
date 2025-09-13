@@ -35,6 +35,7 @@ Kullanım durumu:
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { BottomNavigation } from '@/features/shared/layout';
 import { useTranslations } from '@/hooks/useTranslations';
 import { useAuth } from '@/hooks/useAuth';
@@ -46,9 +47,13 @@ interface HomePageClientProps {
 
 export function HomePageClient({ locale }: HomePageClientProps) {
   const { t } = useTranslations();
-  const { user, isAuthenticated, signOut } = useAuth();
+  const { user, isAuthenticated, loading: authLoading } = useAuth();
+  const router = useRouter();
   const [totalReadings, setTotalReadings] = useState<number>(0);
   const [loadingStats, setLoadingStats] = useState(true);
+
+  // Ana sayfada otomatik yönlendirme kaldırıldı
+  // Kullanıcı ana sayfayı görebilir ve isterse dashboard'a gidebilir
   
   // Fallback çeviri fonksiyonu
   const translate = (key: string, fallback: string) => {
@@ -168,12 +173,6 @@ export function HomePageClient({ locale }: HomePageClientProps) {
                 <div className='text-sm text-cosmic-300'>
                   {user?.email}
                 </div>
-                <button
-                  onClick={signOut}
-                  className='px-4 py-2 bg-red-600/20 hover:bg-red-600/30 text-red-300 rounded-lg border border-red-500/30 transition-all duration-300 text-sm'
-                >
-                  {translate('auth.signOut', 'Çıkış Yap')}
-                </button>
               </div>
             ) : (
               <Link
@@ -337,8 +336,6 @@ export function HomePageClient({ locale }: HomePageClientProps) {
               </div>
             </div>
           </section>
-
-
           {/* SEO Content */}
           <footer className='mt-16 text-center animate-slideUp'>
             <div className='text-cosmic-500 text-xs max-w-4xl mx-auto leading-relaxed'>

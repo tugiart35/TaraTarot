@@ -1,7 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { supabase } from '@/lib/supabase/client';
+import { useState } from 'react';
 import { 
   Key,
   CreditCard,
@@ -9,9 +8,7 @@ import {
   Shield,
   Users,
   Database,
-  AlertTriangle,
   Check,
-  X,
   Save,
   Eye,
   EyeOff,
@@ -20,8 +17,6 @@ import {
   Edit,
   TestTube,
   Settings,
-  Lock,
-  Server
 } from 'lucide-react';
 import ABTestManager from '@/components/admin/ABTestManager';
 import FraudDetection from '@/components/admin/FraudDetection';
@@ -66,7 +61,7 @@ export default function SettingsPage() {
   ]);
 
   // Admin Users state
-  const [adminUsers, setAdminUsers] = useState<AdminUser[]>([
+  const [adminUsers] = useState<AdminUser[]>([
     { user_id: '1', email: 'admin@busbuskimki.com', display_name: 'Super Admin', role: 'super_admin', created_at: new Date().toISOString() }
   ]);
 

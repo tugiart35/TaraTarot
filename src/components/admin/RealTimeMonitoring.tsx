@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { supabase } from '@/lib/supabase/client';
-import { Activity, Users, CreditCard, TrendingUp, AlertTriangle, CheckCircle, Clock } from 'lucide-react';
+import { Activity, Users, CreditCard, TrendingUp, AlertTriangle, CheckCircle } from 'lucide-react';
 
 interface RealTimeStats {
   activeUsers: number;

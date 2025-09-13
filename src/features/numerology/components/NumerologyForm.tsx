@@ -31,10 +31,8 @@ export default function NumerologyForm({ locale }: NumerologyFormProps) {
     
     if (activeTab === 'life-path' && formData.birthDate) {
       params.set('birthDate', formData.birthDate);
-    } else if ((activeTab === 'expression' || activeTab === 'soul-urge') && formData.fullName) {
+    } else if ((activeTab === 'expression-destiny' || activeTab === 'soul-urge') && formData.fullName) {
       params.set('fullName', formData.fullName);
-    } else if (activeTab === 'daily-number' && formData.date) {
-      params.set('date', formData.date);
     }
 
     if (params.toString()) {
@@ -44,9 +42,9 @@ export default function NumerologyForm({ locale }: NumerologyFormProps) {
 
   const tabs = [
     { id: 'life-path' as const, label: 'Yaşam Yolu', icon: '🛤️' },
-    { id: 'expression' as const, label: 'İfade', icon: '💫' },
+    { id: 'expression-destiny' as const, label: 'İfade', icon: '💫' },
     { id: 'soul-urge' as const, label: 'Ruh Arzusu', icon: '💖' },
-    { id: 'daily-number' as const, label: 'Günün Sayısı', icon: '📅' }
+    { id: 'birthday-number' as const, label: 'Günün Sayısı', icon: '📅' }
   ];
 
   return (
@@ -89,7 +87,7 @@ export default function NumerologyForm({ locale }: NumerologyFormProps) {
           )}
 
           {/* Expression & Soul Urge - Full Name */}
-          {(activeTab === 'expression' || activeTab === 'soul-urge') && (
+          {(activeTab === 'expression-destiny' || activeTab === 'soul-urge') && (
             <div>
               <label className="block text-sm font-semibold mb-3 text-gray-200">
                 👤 Ad Soyad
@@ -105,8 +103,8 @@ export default function NumerologyForm({ locale }: NumerologyFormProps) {
             </div>
           )}
 
-          {/* Daily Number - Date */}
-          {activeTab === 'daily-number' && (
+          {/* Birthday Number - Date */}
+          {activeTab === 'birthday-number' && (
             <div>
               <label className="block text-sm font-semibold mb-3 text-gray-200">
                 📅 Tarih

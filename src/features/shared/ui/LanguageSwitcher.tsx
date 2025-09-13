@@ -26,7 +26,7 @@ Kullanım durumu:
 
 'use client';
 
-import { useLocale, useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
 import { useRouter, usePathname } from 'next/navigation';
 import { getLanguageSwitcherPaths } from '@/lib/i18n/paths';
 import { useState } from 'react';
@@ -35,7 +35,6 @@ export function LanguageSwitcher() {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
-  const t = useTranslations('common');
   const [isOpen, setIsOpen] = useState(false);
 
   const languagePaths = getLanguageSwitcherPaths(pathname);

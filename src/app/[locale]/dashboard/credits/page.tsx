@@ -92,13 +92,10 @@ export default function CreditsPage() {
 
       const { data, error } = await query;
       
-      console.log('Credits sayfası - user.id:', user.id);
-      console.log('Credits sayfası - query sonucu:', { data, error });
       
       if (error) {
         // Eğer transactions tablosu yoksa boş liste göster
         if (error.code === 'PGRST204' || error.message.includes('transactions')) {
-          console.warn('Transactions tablosu bulunamadı:', error);
           setTransactions([]);
           setStats({
             totalPurchased: 0,
@@ -114,11 +111,9 @@ export default function CreditsPage() {
       }
 
       if (data && data.length > 0) {
-        console.log('Credits sayfası - gerçek veri bulundu:', data.length, 'işlem');
         setTransactions(data);
         calculateStats(data);
       } else {
-        console.log('Credits sayfası - veri yok');
         // Veri yoksa boş liste göster
         setTransactions([]);
         setStats({
@@ -147,8 +142,6 @@ export default function CreditsPage() {
       setLoading(false);
     }
   };
-
-
   const calculateStats = (transactions: Transaction[]) => {
     const totalPurchased = transactions
       .filter(t => t.delta_credits > 0 && !t.reason.toLowerCase().includes('bonus'))
@@ -297,31 +290,6 @@ export default function CreditsPage() {
           )}
         </div>
 
-        {/* Debug Section */}
-        <div className="mb-8">
-          <h2 className="text-heading-2 text-gold mb-4">🔧 Debug Bilgileri</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div className="card p-4">
-              <h3 className="text-sm font-medium text-gold mb-2">👤 Kullanıcı Bilgileri</h3>
-              <p className="text-xs text-text-muted">ID: {user?.id?.substring(0, 8)}...</p>
-              <p className="text-xs text-text-muted">Email: {user?.email || 'Yok'}</p>
-            </div>
-            
-            <div className="card p-4">
-              <h3 className="text-sm font-medium text-gold mb-2">📊 İşlem Verileri</h3>
-              <p className="text-xs text-text-muted">Toplam İşlem: {transactions.length}</p>
-              <p className="text-xs text-text-muted">Filtre: {filter}</p>
-              <p className="text-xs text-text-muted">Tarih Aralığı: {dateRange}</p>
-            </div>
-            
-            <div className="card p-4">
-              <h3 className="text-sm font-medium text-gold mb-2">💰 İstatistikler</h3>
-              <p className="text-xs text-text-muted">Satın Alınan: {stats?.totalPurchased || 0}</p>
-              <p className="text-xs text-text-muted">Kullanılan: {stats?.totalUsed || 0}</p>
-              <p className="text-xs text-text-muted">Bakiye: {stats?.currentBalance || 0}</p>
-            </div>
-          </div>
-        </div>
 
         {/* Statistics Cards */}
         {stats && (

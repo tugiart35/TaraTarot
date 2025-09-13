@@ -38,8 +38,10 @@ export function useTouchScroll({
   // Touch start handler
   const handleTouchStart = useCallback((e: TouchEvent) => {
     const touch = e.touches[0];
-    startPos.current = { x: touch.clientX, y: touch.clientY };
-    currentPos.current = { x: touch.clientX, y: touch.clientY };
+    if (touch) {
+      startPos.current = { x: touch.clientX, y: touch.clientY };
+      currentPos.current = { x: touch.clientX, y: touch.clientY };
+    }
     lastTime.current = Date.now();
     velocity.current = { x: 0, y: 0 };
 
@@ -60,24 +62,30 @@ export function useTouchScroll({
       e.preventDefault();
 
       const touch = e.touches[0];
-      const deltaX = touch.clientX - currentPos.current.x;
-      const deltaY = touch.clientY - currentPos.current.y;
-      const deltaTime = Date.now() - lastTime.current;
+      if (touch) {
+        const deltaX = touch.clientX - currentPos.current.x;
+        const deltaY = touch.clientY - currentPos.current.y;
+        const deltaTime = Date.now() - lastTime.current;
 
-      // Calculate velocity
-      if (deltaTime > 0) {
-        velocity.current.x = deltaX / deltaTime;
-        velocity.current.y = deltaY / deltaTime;
+        // Calculate velocity
+        if (deltaTime > 0) {
+          velocity.current.x = deltaX / deltaTime;
+          velocity.current.y = deltaY / deltaTime;
+        }
+
+        currentPos.current = { x: touch.clientX, y: touch.clientY };
       }
-
-      currentPos.current = { x: touch.clientX, y: touch.clientY };
       lastTime.current = Date.now();
 
       // Apply scroll
-      if (direction === 'horizontal') {
-        scrollRef.current.scrollLeft -= deltaX;
-      } else {
-        scrollRef.current.scrollTop -= deltaY;
+      if (touch) {
+        const deltaX = touch.clientX - currentPos.current.x;
+        const deltaY = touch.clientY - currentPos.current.y;
+        if (direction === 'horizontal') {
+          scrollRef.current.scrollLeft -= deltaX;
+        } else {
+          scrollRef.current.scrollTop -= deltaY;
+        }
       }
 
       // Call onScroll callback

@@ -26,7 +26,9 @@ import type { User } from '@supabase/supabase-js';
 // Profil oluşturma için gerekli veri türü
 export interface CreateProfileData {
   userId: string;
-  fullName?: string;
+  firstName?: string;
+  lastName?: string;
+  fullName?: string; // Geriye uyumluluk için
   email?: string | undefined;
   birthDate?: string;
   gender?: string;
@@ -68,11 +70,18 @@ export function generateDisplayName(
  * Profil oluşturma verilerini hazırlar
  */
 export function prepareProfileData(data: CreateProfileData) {
-  const displayName = generateDisplayName(data.fullName, data.email);
+  // firstName ve lastName varsa birleştir, yoksa fullName kullan
+  const fullName = data.firstName && data.lastName 
+    ? `${data.firstName} ${data.lastName}`
+    : data.fullName;
+  
+  const displayName = generateDisplayName(fullName, data.email);
   
   return {
     id: data.userId,
-    full_name: data.fullName || displayName,
+    first_name: data.firstName || null,
+    last_name: data.lastName || null,
+    full_name: fullName || displayName,
     display_name: displayName,
     credit_balance: 0, // Kredi ataması kaldırıldı
     birth_date: data.birthDate || null,
@@ -101,7 +110,6 @@ export async function createOrUpdateProfile(
       .single();
 
     if (error) {
-      console.error('Profile creation/update error:', error);
       return {
         success: false,
         error: error.message,
@@ -113,7 +121,6 @@ export async function createOrUpdateProfile(
       profile,
     };
   } catch (error) {
-    console.error('Profile creation/update failed:', error);
     return {
       success: false,
       error: error instanceof Error ? error.message : 'Bilinmeyen hata',
@@ -137,7 +144,9 @@ export async function ensureProfileExists(user: User): Promise<CreateProfileResu
       // Profil yoksa oluştur
       const createData: CreateProfileData = {
         userId: user.id,
-        fullName: user.user_metadata?.full_name,
+        firstName: user.user_metadata?.first_name,
+        lastName: user.user_metadata?.last_name,
+        fullName: user.user_metadata?.full_name, // Geriye uyumluluk
         email: user.email || undefined,
         birthDate: user.user_metadata?.birth_date,
         gender: user.user_metadata?.gender,
@@ -160,7 +169,6 @@ export async function ensureProfileExists(user: User): Promise<CreateProfileResu
       profile: existingProfile,
     };
   } catch (error) {
-    console.error('Profile check failed:', error);
     return {
       success: false,
       error: error instanceof Error ? error.message : 'Bilinmeyen hata',

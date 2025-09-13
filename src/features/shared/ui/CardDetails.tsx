@@ -202,7 +202,7 @@ const CardDetails: React.FC<CardDetailsProps> = ({
       theme={themeSettings[spreadType].theme}
       maxWidth={themeSettings[spreadType].maxWidth}
       positionInfo={positionInfo || undefined}
-      title={title}
+      title={title || 'Kart Detayları'}
       spreadType={spreadType}
     />
   );

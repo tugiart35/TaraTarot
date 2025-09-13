@@ -1,8 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { supabase } from '@/lib/supabase/client';
-import { Shield, AlertTriangle, Eye, Ban, CheckCircle, Clock, TrendingUp, Users, CreditCard, Flag } from 'lucide-react';
+import { Shield, AlertTriangle, Eye, Ban, Clock, TrendingUp, Users, CreditCard, Flag } from 'lucide-react';
 
 interface FraudAlert {
   id: string;
@@ -48,7 +47,6 @@ export default function FraudDetection() {
     detection_rate: 0
   });
   const [selectedAlert, setSelectedAlert] = useState<FraudAlert | null>(null);
-  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     loadFraudData();
@@ -181,22 +179,21 @@ export default function FraudDetection() {
   };
 
   const updateAlertStatus = async (alertId: string, status: FraudAlert['status']) => {
-    setLoading(true);
     try {
       setAlerts(prev => prev.map(alert => 
         alert.id === alertId 
           ? { 
               ...alert, 
-              status, 
-              resolved_at: status !== 'pending' ? new Date().toISOString() : undefined,
-              resolved_by: status !== 'pending' ? 'admin' : undefined
+              status,
+              ...(status !== 'pending' && {
+                resolved_at: new Date().toISOString(),
+                resolved_by: 'admin'
+              })
             } 
           : alert
       ));
     } catch (error) {
       console.error('Error updating alert status:', error);
-    } finally {
-      setLoading(false);
     }
   };
 

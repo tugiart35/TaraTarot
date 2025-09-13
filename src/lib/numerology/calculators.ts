@@ -49,7 +49,9 @@ export function calculateLifePath(birthDate: string, locale: string = 'tr'): Num
  * İfade/Kader sayısını hesaplar
  * İsmin tüm harflerinin değerlerini toplar
  */
-export function calculateExpressionDestiny(fullName: string, locale: string = 'tr'): NumerologyResult {
+export function calculateExpressionDestiny(firstName: string, lastName: string, locale: string = 'tr'): NumerologyResult {
+  // İsim ve soyisimi birleştir
+  const fullName = `${firstName} ${lastName}`.trim();
   const sum = sumNameValues(fullName);
   const number = reduceToSingleDigit(sum);
   const isMasterNumber = MASTER_NUMBERS.includes(number as any);
@@ -77,7 +79,9 @@ export function calculateExpressionDestiny(fullName: string, locale: string = 't
  * Ruh Arzusu sayısını hesaplar
  * İsmin sesli harflerinin değerlerini toplar
  */
-export function calculateSoulUrge(fullName: string): NumerologyResult {
+export function calculateSoulUrge(firstName: string, lastName: string): NumerologyResult {
+  // İsim ve soyisimi birleştir
+  const fullName = `${firstName} ${lastName}`.trim();
   const sum = sumVowelValues(fullName);
   const number = reduceToSingleDigit(sum);
   const isMasterNumber = MASTER_NUMBERS.includes(number as any);
@@ -97,7 +101,9 @@ export function calculateSoulUrge(fullName: string): NumerologyResult {
  * Kişilik sayısını hesaplar
  * İsmin ünsüz harflerinin değerlerini toplar
  */
-export function calculatePersonality(fullName: string, locale: string = 'tr'): NumerologyResult {
+export function calculatePersonality(firstName: string, lastName: string, locale: string = 'tr'): NumerologyResult {
+  // İsim ve soyisimi birleştir
+  const fullName = `${firstName} ${lastName}`.trim();
   const sum = sumConsonantValues(fullName);
   const number = reduceToSingleDigit(sum);
   const isMasterNumber = MASTER_NUMBERS.includes(number as any);
@@ -333,20 +339,20 @@ export function calculatePersonalCycles(birthDate: string, targetDate: string, l
  * İki kişinin uyumunu değerlendirir
  */
 export function calculateCompatibility(
-  personA: { birthDate: string; fullName: string },
-  personB: { birthDate: string; fullName: string },
+  personA: { birthDate: string; firstName: string; lastName: string },
+  personB: { birthDate: string; firstName: string; lastName: string },
   locale: string = 'tr'
 ): NumerologyResult {
   // Her kişi için ana sayıları hesapla
   const lifePathA = calculateLifePath(personA.birthDate);
-  const expressionA = calculateExpressionDestiny(personA.fullName);
-  const soulUrgeA = calculateSoulUrge(personA.fullName);
-  const personalityA = calculatePersonality(personA.fullName);
+  const expressionA = calculateExpressionDestiny(personA.firstName, personA.lastName);
+  const soulUrgeA = calculateSoulUrge(personA.firstName, personA.lastName);
+  const personalityA = calculatePersonality(personA.firstName, personA.lastName);
   
   const lifePathB = calculateLifePath(personB.birthDate);
-  const expressionB = calculateExpressionDestiny(personB.fullName);
-  const soulUrgeB = calculateSoulUrge(personB.fullName);
-  const personalityB = calculatePersonality(personB.fullName);
+  const expressionB = calculateExpressionDestiny(personB.firstName, personB.lastName);
+  const soulUrgeB = calculateSoulUrge(personB.firstName, personB.lastName);
+  const personalityB = calculatePersonality(personB.firstName, personB.lastName);
   
   // Uyum skorunu hesapla
   let score = 0;
@@ -437,11 +443,13 @@ export function calculateNumerology(
   type: NumerologyType, 
   input: { 
     fullName?: string; 
+    firstName?: string;
+    lastName?: string;
     birthDate?: string; 
     date?: string;
     targetDate?: string;
-    personA?: { birthDate: string; fullName: string };
-    personB?: { birthDate: string; fullName: string };
+    personA?: { birthDate: string; firstName: string; lastName: string };
+    personB?: { birthDate: string; firstName: string; lastName: string };
   },
   locale: string = 'tr'
 ): NumerologyResult {
@@ -451,25 +459,25 @@ export function calculateNumerology(
       return calculateLifePath(input.birthDate, locale);
     
     case 'expression-destiny':
-      if (!input.fullName) throw new Error('İsim gerekli');
-      return calculateExpressionDestiny(input.fullName, locale);
+      if (!input.firstName || !input.lastName) throw new Error('İsim ve soyisim gerekli');
+      return calculateExpressionDestiny(input.firstName, input.lastName, locale);
     
     case 'soul-urge':
-      if (!input.fullName) throw new Error('İsim gerekli');
-      return calculateSoulUrge(input.fullName);
+      if (!input.firstName || !input.lastName) throw new Error('İsim ve soyisim gerekli');
+      return calculateSoulUrge(input.firstName, input.lastName);
     
     case 'personality':
-      if (!input.fullName) throw new Error('İsim gerekli');
-      return calculatePersonality(input.fullName, locale);
+      if (!input.firstName || !input.lastName) throw new Error('İsim ve soyisim gerekli');
+      return calculatePersonality(input.firstName, input.lastName, locale);
     
     case 'birthday-number':
       if (!input.birthDate) throw new Error('Doğum tarihi gerekli');
       return calculateBirthdayNumber(input.birthDate, locale);
     
     case 'maturity':
-      if (!input.birthDate || !input.fullName) throw new Error('Doğum tarihi ve isim gerekli');
+      if (!input.birthDate || !input.firstName || !input.lastName) throw new Error('Doğum tarihi, isim ve soyisim gerekli');
       const lifePath = calculateLifePath(input.birthDate);
-      const expression = calculateExpressionDestiny(input.fullName);
+      const expression = calculateExpressionDestiny(input.firstName, input.lastName);
       return calculateMaturity(lifePath.number, expression.number, locale);
     
     case 'pinnacles-challenges':

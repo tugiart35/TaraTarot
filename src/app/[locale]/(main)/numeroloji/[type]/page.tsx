@@ -13,11 +13,11 @@ import { NumberMeaning } from '@/features/numerology/components/NumberMeaning';
 import BottomNavigation from '@/features/shared/layout/BottomNavigation';
 
 interface NumerologyResultPageProps {
-  params: {
+  params: Promise<{
     locale: string;
     type: string;
-  };
-  searchParams: {
+  }>;
+  searchParams: Promise<{
     fullName?: string;
     birthDate?: string;
     date?: string;
@@ -26,14 +26,38 @@ interface NumerologyResultPageProps {
     personA_birthDate?: string;
     personB_fullName?: string;
     personB_birthDate?: string;
-  };
+  }>;
 }
 
 export default function NumerologyResultPage({ 
   params, 
   searchParams 
 }: NumerologyResultPageProps) {
-  const { type, locale } = params;
+  const [resolvedParams, setResolvedParams] = useState<{type: string, locale: string} | null>(null);
+  const [resolvedSearchParams, setResolvedSearchParams] = useState<any>(null);
+
+  useEffect(() => {
+    const resolveParams = async () => {
+      const resolvedParamsData = await params;
+      const resolvedSearchParamsData = await searchParams;
+      setResolvedParams(resolvedParamsData);
+      setResolvedSearchParams(resolvedSearchParamsData);
+    };
+    resolveParams();
+  }, [params, searchParams]);
+
+  if (!resolvedParams || !resolvedSearchParams) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white flex items-center justify-center">
+        <div className="text-center">
+          <div className="w-16 h-16 border-4 border-purple-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+          <p className="text-gray-300">Yükleniyor...</p>
+        </div>
+      </div>
+    );
+  }
+
+  const { type, locale } = resolvedParams;
   const { 
     fullName, 
     birthDate, 
@@ -43,7 +67,7 @@ export default function NumerologyResultPage({
     personA_birthDate,
     personB_fullName,
     personB_birthDate
-  } = searchParams;
+  } = resolvedSearchParams;
   const [result, setResult] = useState<NumerologyResult | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -124,7 +148,7 @@ export default function NumerologyResultPage({
     };
 
     calculateResult();
-  }, [type, fullName, birthDate, date, targetDate, personA_fullName, personA_birthDate, personB_fullName, personB_birthDate, searchParams]);
+  }, [type, fullName, birthDate, date, targetDate, personA_fullName, personA_birthDate, personB_fullName, personB_birthDate, resolvedSearchParams]);
 
   if (loading) {
     return (
@@ -329,19 +353,6 @@ export default function NumerologyResultPage({
               📊 Hesaplama Detayları
             </h3>
             
-            <div className="space-y-4">
-              {result.breakdown.map((step, index) => (
-                <div
-                  key={index}
-                  className="flex items-center gap-4 p-4 bg-white/5 rounded-xl border border-white/10"
-                >
-                  <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-sm font-bold text-white">
-                    {index + 1}
-                  </div>
-                  <span className="text-gray-300">{step}</span>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
 

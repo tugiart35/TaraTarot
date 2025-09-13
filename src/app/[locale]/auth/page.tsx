@@ -37,25 +37,30 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import { supabase } from '@/lib/supabase/client';
 import { Moon } from 'lucide-react';
 import { useTranslations } from '@/hooks/useTranslations';
 import { useToast } from '@/hooks/useToast';
 import { useAuth } from '@/hooks/useAuth';
 import Toast from '@/features/shared/ui/Toast';
-import { createOrUpdateProfile } from '@/lib/utils/profile-utils';
+import BottomNavigation from '@/features/shared/layout/BottomNavigation';
 
 export default function AuthPage() {
   const { t } = useTranslations();
   const { toast, showToast, hideToast } = useToast();
   const { user, loading: authLoading, isAuthenticated } = useAuth();
   const router = useRouter();
+  const pathname = usePathname();
+  
+  // Pathname'den locale'i çıkar (/tr/auth -> tr)
+  const currentLocale = pathname.split('/')[1] || 'tr';
   const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-  const [fullName, setFullName] = useState('');
+  const [name, setName] = useState('');
+  const [surname, setSurname] = useState('');
   const [birthDate, setBirthDate] = useState('');
   const [gender, setGender] = useState('');
   const [loading, setLoading] = useState(false);
@@ -68,7 +73,8 @@ export default function AuthPage() {
     email?: string;
     password?: string;
     confirmPassword?: string;
-    fullName?: string;
+    name?: string;
+    surname?: string;
     birthDate?: string;
     gender?: string;
   }>({});
@@ -77,7 +83,8 @@ export default function AuthPage() {
     email?: 'valid' | 'invalid' | 'checking';
     password?: 'valid' | 'invalid' | 'checking';
     confirmPassword?: 'valid' | 'invalid' | 'checking' | undefined;
-    fullName?: 'valid' | 'invalid' | 'checking';
+    name?: 'valid' | 'invalid' | 'checking';
+    surname?: 'valid' | 'invalid' | 'checking';
     birthDate?: 'valid' | 'invalid' | 'checking';
   }>({});
 
@@ -86,6 +93,22 @@ export default function AuthPage() {
     label: string;
     color: string;
   }>({ score: 0, label: '', color: '' });
+
+  // URL'den hata parametresini kontrol et
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const error = urlParams.get('error');
+    
+    if (error === 'confirmation_failed') {
+      setMessage('E-posta onay linki geçersiz veya süresi dolmuş. Lütfen yeni bir onay e-postası isteyin.');
+      // URL'den error parametresini temizle
+      window.history.replaceState({}, document.title, window.location.pathname);
+    } else if (error === 'token_expired') {
+      setMessage('E-posta onay linkinin süresi dolmuş. Lütfen yeni bir onay e-postası isteyin.');
+      // URL'den error parametresini temizle
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  }, [showToast]);
 
   // Kullanıcı giriş yapmışsa dashboard'a yönlendir
   useEffect(() => {
@@ -136,7 +159,7 @@ export default function AuthPage() {
     try {
       setLoadingStep('Şifre sıfırlama e-postası gönderiliyor...');
       const { error } = await supabase.auth.resetPasswordForEmail(resetEmail, {
-        redirectTo: `${window.location.origin}/auth/reset-password`,
+        redirectTo: `${window.location.origin}/${currentLocale}/auth/reset-password`,
       });
 
       if (error) {
@@ -210,6 +233,37 @@ export default function AuthPage() {
         errorMessage = error.message;
       }
       showToast(errorMessage, 'error');
+      setLoading(false);
+      setLoadingStep('');
+    }
+  };
+
+  // Yeni onay e-postası gönderme fonksiyonu
+  const resendConfirmationEmail = async (email: string) => {
+    try {
+      setLoading(true);
+      setLoadingStep('Yeni onay e-postası gönderiliyor...');
+      
+      const { error } = await supabase.auth.resend({
+        type: 'signup',
+        email: email,
+        options: {
+          emailRedirectTo: `${window.location.origin}/tr/auth/confirm`,
+        },
+      });
+
+      if (error) {
+        throw error;
+      }
+
+      setMessage('Yeni onay e-postası gönderildi. Lütfen e-posta kutunuzu kontrol edin.');
+    } catch (error: unknown) {
+      let errorMessage = 'Onay e-postası gönderilemedi. Lütfen tekrar kayıt olmayı deneyin.';
+      if (error instanceof Error) {
+        errorMessage = error.message;
+      }
+      setMessage(errorMessage);
+    } finally {
       setLoading(false);
       setLoadingStep('');
     }
@@ -291,7 +345,8 @@ export default function AuthPage() {
       email?: string;
       password?: string;
       confirmPassword?: string;
-      fullName?: string;
+      name?: string;
+      surname?: string;
       birthDate?: string;
       gender?: string;
     } = {};
@@ -320,11 +375,18 @@ export default function AuthPage() {
         newErrors.confirmPassword = t('auth.page.passwordsNotMatch');
       }
 
-      // Ad/Soyad validasyonu
-      if (!fullName.trim()) {
-        newErrors.fullName = t('auth.page.fullNameRequired');
-      } else if (fullName.trim().length < 2) {
-        newErrors.fullName = t('auth.page.fullNameMinLength');
+      // Ad validasyonu
+      if (!name.trim()) {
+        newErrors.name = t('auth.page.nameRequired');
+      } else if (name.trim().length < 2) {
+        newErrors.name = t('auth.page.nameMinLength');
+      }
+
+      // Soyad validasyonu
+      if (!surname.trim()) {
+        newErrors.surname = t('auth.page.surnameRequired');
+      } else if (surname.trim().length < 2) {
+        newErrors.surname = t('auth.page.surnameMinLength');
       }
 
       // Doğum tarihi validasyonu
@@ -356,14 +418,6 @@ export default function AuthPage() {
     setLoading(true);
     setMessage('');
     setErrors({});
-
-    // Debug: Environment variables kontrolü
-    console.log('Supabase URL:', process.env.NEXT_PUBLIC_SUPABASE_URL);
-    console.log(
-      'Supabase Key exists:',
-      !!process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
-    );
-
     // Form validasyonu
     setLoadingStep(t('auth.page.validating'));
     if (!validateForm()) {
@@ -394,61 +448,24 @@ export default function AuthPage() {
       } else {
         // Kayıt işlemi
         setLoadingStep(t('auth.page.registering'));
-        console.log('Signup attempt for email:', email);
         const { data, error } = await supabase.auth.signUp({
           email,
           password,
           options: {
             data: {
-              full_name: fullName,
+              first_name: name,
+              last_name: surname,
               birth_date: birthDate,
               gender: gender,
             },
           },
         });
-
-        console.log('Signup response:', { data, error });
-
         if (error) {
-          console.error('Signup error details:', error);
-          console.error('Error message:', error.message);
-          console.error('Error status:', error.status);
-          console.error('Full error object:', JSON.stringify(error, null, 2));
-          console.error('Error name:', error.name);
-          console.error('Error details:', error);
           throw error;
         }
 
-        // Kullanıcı başarıyla oluşturulduysa profil oluştur
+        // Profil otomatik olarak trigger ile oluşturuluyor
         if (data.user) {
-          try {
-            setLoadingStep('Profil oluşturuluyor...');
-
-            const profileResult = await createOrUpdateProfile({
-              userId: data.user.id,
-              fullName: fullName,
-              email: data.user.email || '',
-              birthDate: birthDate,
-              gender: gender,
-            });
-
-            if (profileResult.success) {
-              console.log(
-                'Profile created successfully for user:',
-                data.user.id
-              );
-            } else {
-              console.error('Profile creation error:', profileResult.error);
-              console.warn(
-                'Profil oluşturulamadı, ancak kullanıcı kaydı başarılı'
-              );
-            }
-          } catch (profileError) {
-            console.error('Profile creation failed:', profileError);
-            console.warn(
-              'Profil oluşturulamadı, ancak kullanıcı kaydı başarılı'
-            );
-          }
         }
 
         // E-posta onayı gerekiyorsa kullanıcıya bilgi ver
@@ -464,7 +481,8 @@ export default function AuthPage() {
           setEmail('');
           setPassword('');
           setConfirmPassword('');
-          setFullName('');
+          setName('');
+          setSurname('');
           setBirthDate('');
           setGender('');
           setMessage('');
@@ -474,11 +492,6 @@ export default function AuthPage() {
       let errorMessage = t('auth.page.errorOccurred');
 
       if (error instanceof Error) {
-        console.error('Auth error details:', {
-          name: error.name,
-          message: error.message,
-          stack: error.stack,
-        });
 
         // Supabase hata mesajlarını Türkçe'ye çevir
         if (error.message.includes('Invalid login credentials')) {
@@ -519,7 +532,7 @@ export default function AuthPage() {
   // Auth durumu yüklenirken loading göster
   if (authLoading) {
     return (
-      <div className='min-h-screen bg-night flex items-center justify-center p-4'>
+      <div className='min-h-screen bg-night flex items-center justify-center p-4 pb-20'>
         <div className='max-w-md w-full bg-lavender/10 backdrop-blur-sm rounded-lg p-8 border border-lavender/20 text-center'>
           <Moon className='h-12 w-12 text-gold mx-auto mb-4 animate-pulse' />
           <div className='text-white text-lg mb-4'>
@@ -527,12 +540,13 @@ export default function AuthPage() {
           </div>
           <div className='animate-spin w-8 h-8 border-2 border-lavender/30 border-t-gold rounded-full mx-auto'></div>
         </div>
+        <BottomNavigation />
       </div>
     );
   }
 
   return (
-    <div className='min-h-screen bg-night flex items-center justify-center p-4'>
+    <div className='min-h-screen bg-night flex items-center justify-center p-4 pb-20'>
       <div className='max-w-md w-full bg-lavender/10 backdrop-blur-sm rounded-lg p-8 border border-lavender/20'>
         <div className='text-center mb-8'>
           <Moon className='h-12 w-12 text-gold mx-auto mb-4' />
@@ -592,22 +606,42 @@ export default function AuthPage() {
             )}
           </div>
 
-          {/* Ad/Soyad - Sadece kayıt modunda göster */}
+          {/* Ad - Sadece kayıt modunda göster */}
           {!isLogin && (
             <div>
               <input
                 type='text'
-                placeholder={t('auth.page.fullNamePlaceholder')}
-                value={fullName}
-                onChange={e => setFullName(e.target.value)}
+                placeholder={t('auth.page.namePlaceholder')}
+                value={name}
+                onChange={e => setName(e.target.value)}
                 className={`w-full p-3 rounded bg-night/50 border text-white placeholder-lavender/70 focus:outline-none ${
-                  errors.fullName
+                  errors.name
                     ? 'border-red-500'
                     : 'border-lavender/30 focus:border-gold'
                 }`}
               />
-              {errors.fullName && (
-                <p className='text-red-400 text-sm mt-1'>{errors.fullName}</p>
+              {errors.name && (
+                <p className='text-red-400 text-sm mt-1'>{errors.name}</p>
+              )}
+            </div>
+          )}
+
+          {/* Soyad - Sadece kayıt modunda göster */}
+          {!isLogin && (
+            <div>
+              <input
+                type='text'
+                placeholder={t('auth.page.surnamePlaceholder')}
+                value={surname}
+                onChange={e => setSurname(e.target.value)}
+                className={`w-full p-3 rounded bg-night/50 border text-white placeholder-lavender/70 focus:outline-none ${
+                  errors.surname
+                    ? 'border-red-500'
+                    : 'border-lavender/30 focus:border-gold'
+                }`}
+              />
+              {errors.surname && (
+                <p className='text-red-400 text-sm mt-1'>{errors.surname}</p>
               )}
             </div>
           )}
@@ -997,6 +1031,37 @@ export default function AuthPage() {
                   </button>
                 </div>
               )}
+
+            {/* E-posta onay hatası mesajı ise yeni onay e-postası gönderme butonu göster */}
+            {(message.includes('E-posta onay linki geçersiz') || message.includes('süresi dolmuş')) && email && (
+              <div className='flex justify-center gap-2 mt-3'>
+                <button
+                  type='button'
+                  onClick={() => resendConfirmationEmail(email)}
+                  disabled={loading}
+                  className='px-4 py-2 bg-blue-500/20 text-blue-300 rounded text-sm hover:bg-blue-500/30 transition-colors disabled:opacity-50'
+                >
+                  {loading ? 'Gönderiliyor...' : 'Yeni Onay E-postası Gönder'}
+                </button>
+                <button
+                  type='button'
+                  onClick={() => {
+                    setMessage('');
+                    setIsLogin(false);
+                    setEmail('');
+                    setPassword('');
+                    setConfirmPassword('');
+                    setName('');
+                    setSurname('');
+                    setBirthDate('');
+                    setGender('');
+                  }}
+                  className='px-4 py-2 bg-green-500/20 text-green-300 rounded text-sm hover:bg-green-500/30 transition-colors'
+                >
+                  Tekrar Kayıt Ol
+                </button>
+              </div>
+            )}
           </div>
         )}
 
@@ -1010,7 +1075,8 @@ export default function AuthPage() {
               setEmail('');
               setPassword('');
               setConfirmPassword('');
-              setFullName('');
+              setName('');
+              setSurname('');
               setBirthDate('');
               setGender('');
               setValidationStates({});
@@ -1031,6 +1097,9 @@ export default function AuthPage() {
       {toast && (
         <Toast message={toast.message} type={toast.type} onClose={hideToast} />
       )}
+
+      {/* Bottom Navigation */}
+      <BottomNavigation />
     </div>
   );
 }

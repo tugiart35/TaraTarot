@@ -25,8 +25,6 @@ Dağıtımdan Önce Mutlaka Düzeltilmesi Gerekenler (Checklist):
 Sonuç:
 - Dosya genel olarak iyi yapılandırılmış, okunabilir ve modüler. Küçük iyileştirmeler ve refaktörlerle tamamen üretime hazır hale getirildi.
 ---
-
-
 1. Kart Pozisyonları ve Açılım Bilgileri
 Her iki dosyada da LOVE_POSITIONS_INFO ve LOVE_POSITIONS_LAYOUT sabitleri kullanılıyor. Bu sabitler, kart pozisyonlarının başlıklarını, açıklamalarını ve ekranda nerede gösterileceğini tanımlıyor.
 Eğer bu sabitler iki dosyada ayrı ayrı tanımlanıyorsa, tek bir dosyada (örn. constants/ veya ortak bir helper dosyası) tanımlanıp iki dosyada da import edilmesi daha iyi olur.
@@ -109,8 +107,9 @@ export default function LoveReading({
   const { user } = useAuth();
   const loveSpread = findSpreadById('love-spread');
   
-  // Kredi yönetimi - sesli okuma için
+  // Kredi yönetimi
   const detailedCredits = useReadingCredits('LOVE_SPREAD_DETAILED');
+  const writtenCredits = useReadingCredits('LOVE_SPREAD_WRITTEN');
 
   // useTarotReading hook'unu kullan
   const {
@@ -137,10 +136,10 @@ export default function LoveReading({
       cardCount: LOVE_CARD_COUNT,
       positionsInfo: LOVE_POSITIONS_INFO,
     },
-    onComplete: (cards, interpretation) => {
+    onComplete: (_cards, _interpretation) => {
       // Aşk açılımı tamamlandı
     },
-    onPositionChange: title => {
+    onPositionChange: _title => {
       // Pozisyon değişti
     },
   });
@@ -149,7 +148,7 @@ export default function LoveReading({
   // const [simpleQuestion, setSimpleQuestion] = useState(''); // Kaldırıldı - basit okuma için soru kaydet ekranı yok
   // const [simpleQuestionSaved, setSimpleQuestionSaved] = useState(false); // Kaldırıldı - basit okuma için soru kaydet ekranı yok
   const { toast, showToast, hideToast } = useToast();
-  const [error, setError] = useState<string | null>(null); // Form hataları için kalabilir
+  // const [error, setError] = useState<string | null>(null); // Kullanılmıyor
   const [startTime] = useState<number>(Date.now()); // Duration tracking için
 
   // DETAILED/WRITTEN için ek state'ler (LoveGuidanceDetail.tsx'den alınanlar)
@@ -292,21 +291,10 @@ export default function LoveReading({
 
     setIsSaving(true);
     try {
-      // Kredi düşme işlemi - sesli okuma için
-      const deductResult = await detailedCredits.deductCredits();
-      if (!deductResult) {
-        showToast('Kredi kesintisi yapılamadı. Yetersiz kredi.', 'error');
-        setShowCreditConfirm(false);
-        setIsSaving(false);
-        return;
-      }
-
-      // Kredi kesintisi başarılı - kart seçimine geç
-      showToast('Kredi kesildi. Kart seçimine geçiliyor.', 'success');
+      // Kredi ön kesinti kaldırıldı. Kredi yeterliliği UI seviyesinde kontrol ediliyor,
+      // asıl kesinti RPC ile kaydetme sırasında yapılacak.
       setDetailedFormSaved(true);
       setShowCreditConfirm(false);
-    } catch (error) {
-      showToast('Kredi kesintisi sırasında bir hata oluştu.', 'error');
     } finally {
       setIsSaving(false);
     }
@@ -332,32 +320,44 @@ export default function LoveReading({
         hasQuestions: !!readingData.questions
       });
       
-      // Ana okuma verilerini tarot_readings tablosuna kaydet
-      const { data: readingResult, error: readingError } = await supabase
-        .from('tarot_readings')
-        .insert({
-          user_id: user.id,
-          reading_type: readingData.readingType,
-          cards: readingData.cards.selectedCards,
-          interpretation: readingData.interpretation,
-          question: readingData.questions,
-          status: 'completed',
-          title: readingData.title || 'Aşk Açılımı',
-          cost_credits: 2,
-          admin_notes: `Duration: ${readingData.metadata.duration}ms, Platform: ${readingData.metadata.platform}`
-        })
-        .select('id')
-        .single();
+      // Kredi düş + okuma kaydet (atomik) — RPC
+      const costCredits = selectedReadingType === READING_TYPES.DETAILED
+        ? detailedCredits.creditStatus.requiredCredits
+        : selectedReadingType === READING_TYPES.WRITTEN
+          ? writtenCredits.creditStatus.requiredCredits
+          : 0;
 
-      if (readingError) {
-        console.error('Tarot reading kayıt hatası:', readingError);
-        throw readingError;
+      const { data: rpcResult, error: rpcError } = await supabase.rpc('fn_create_reading_with_debit', {
+        p_user_id: user.id,
+        p_reading_type: readingData.readingType,
+        p_spread_name: 'Aşk Yayılımı',
+        p_title: readingData.title || 'Aşk Açılımı',
+        p_interpretation: readingData.interpretation,
+        p_cards: readingData.cards.selectedCards,
+        p_questions: readingData.questions,
+        p_cost_credits: costCredits,
+        p_metadata: {
+          duration: readingData.metadata.duration,
+          platform: readingData.metadata.platform
+        },
+        p_idempotency_key: `reading_${user.id}_${readingData.timestamp}`
+      });
+      if (rpcError) {
+        console.error('RPC okuma kayıt hatası:', rpcError);
+        throw rpcError;
       }
 
-      console.log('Okuma başarıyla kaydedildi:', readingResult.id);
+      console.log('Okuma başarıyla kaydedildi:', rpcResult?.id);
+      
+      // Email gönderimi (asenkron, hata durumunda okuma kaydını etkilemez)
+      // Server-side API endpoint'e istek gönder
+      triggerEmailSending(rpcResult?.id, readingData).catch(error => {
+        console.error('Email gönderimi başarısız:', error);
+      });
+      
       return { 
         success: true, 
-        id: readingResult.id,
+        id: rpcResult?.id,
         userId: user.id
       };
     } catch (error) {
@@ -521,7 +521,7 @@ export default function LoveReading({
     }
     LOVE_POSITIONS_INFO.forEach((posInfo, index) => {
       const card = cards[index];
-      const reversed = isReversed[index];
+      const reversed = !!isReversed[index];
       if (card) {
         interpretation += `**${posInfo.id}. ${posInfo.title}: ${card.nameTr}** (${reversed ? 'Ters' : 'Düz'})\n*${posInfo.desc}*\n${getLoveCardMeaning(card, posInfo.id, reversed)}\n\n`;
       }
@@ -936,13 +936,18 @@ export default function LoveReading({
               <BaseCardPosition
                 key={position.id}
                 position={position}
-                card={selectedCards[position.id - 1]}
-                isOpen={cardStates[position.id - 1]}
-                isReversed={isReversed[position.id - 1]}
+                card={selectedCards[position.id - 1] ?? null}
+                isOpen={!!cardStates[position.id - 1]}
+                isReversed={!!isReversed[position.id - 1]}
                 isNextPosition={currentPosition === position.id}
                 onToggleCard={() => toggleCardState(position.id)}
                 onCardDetails={handleCardDetails}
-                positionInfo={LOVE_POSITIONS_INFO[idx]}
+                positionInfo={
+                  LOVE_POSITIONS_INFO[idx] ?? {
+                    title: `Pozisyon ${position.id}`,
+                    desc: 'Kart pozisyonu',
+                  }
+                }
                 renderCard={(card, props) => (
                   <LoveCardRenderer card={card} {...props} />
                 )}
@@ -978,10 +983,10 @@ export default function LoveReading({
                 </div>
                 <div className='text-center'>
                   <div className='text-red-200 font-bold text-lg'>
-                    {LOVE_POSITIONS_INFO[currentPosition - 1].title}
+                    {LOVE_POSITIONS_INFO[currentPosition - 1]?.title ?? ''}
                   </div>
                   <div className='text-gray-300 text-xs'>
-                    {LOVE_POSITIONS_INFO[currentPosition - 1].desc}
+                    {LOVE_POSITIONS_INFO[currentPosition - 1]?.desc ?? ''}
                   </div>
                 </div>
               </div>
@@ -1038,27 +1043,27 @@ export default function LoveReading({
       {showCardDetails && (
         <CardDetails
           card={showCardDetails}
-          isReversed={
-            isReversed[
-              selectedCards.findIndex(
-                (c: TarotCard | null) => c && c.id === showCardDetails.id
-              )
-            ]
-          }
-          position={
-            selectedCards.findIndex(
+          isReversed={(() => {
+            const idx = selectedCards.findIndex(
               (c: TarotCard | null) => c && c.id === showCardDetails.id
-            ) + 1
-          }
+            );
+            return !!isReversed[idx >= 0 ? idx : 0];
+          })()}
+          position={(() => {
+            const idx = selectedCards.findIndex(
+              (c: TarotCard | null) => c && c.id === showCardDetails.id
+            );
+            return (idx >= 0 ? idx : 0) + 1;
+          })()}
           onClose={() => setShowCardDetails(null)}
           spreadType='love'
-          positionInfo={
-            LOVE_POSITIONS_INFO[
-              selectedCards.findIndex(
-                (c: TarotCard | null) => c && c.id === showCardDetails.id
-              )
-            ]
-          }
+          positionInfo={(() => {
+            const idx = selectedCards.findIndex(
+              (c: TarotCard | null) => c && c.id === showCardDetails.id
+            );
+            const p = LOVE_POSITIONS_INFO[idx];
+            return p ? { title: p.title, desc: p.desc } : { title: `Pozisyon ${idx + 1}`, desc: 'Kart pozisyonu' };
+          })()}
         />
       )}
 
@@ -1068,9 +1073,6 @@ export default function LoveReading({
             <LoveInterpretation
               cards={selectedCards}
               isReversed={isReversed}
-              _userQuestion={userQuestion}
-              _interpretation={generateBasicInterpretation()}
-              _onSetUserQuestion={() => {}}
             />
 
             {/* Okumayı Kaydet Butonu - Sadece DETAILED/WRITTEN için */}
@@ -1124,4 +1126,40 @@ export default function LoveReading({
       )}
     </div>
   );
+}
+
+/**
+ * Email gönderimi için API endpoint'e istek gönder
+ */
+async function triggerEmailSending(readingId: string | undefined, _readingData: any): Promise<void> {
+  if (!readingId) {
+    console.error('❌ Reading ID bulunamadı, email gönderilemedi');
+    return;
+  }
+
+  try {
+    console.log('🔮 Email gönderimi API endpoint\'e istek gönderiliyor...', { readingId });
+    
+    // Server-side API endpoint'e sadece readingId gönder
+    // API kendi Supabase'den gerçek veriyi çekecek
+    const response = await fetch('/api/send-reading-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        readingId
+      })
+    });
+
+    if (response.ok) {
+      const result = await response.json();
+      console.log('✅ Email gönderimi başarılı:', result);
+    } else {
+      const error = await response.text();
+      console.error('❌ Email gönderimi başarısız:', error);
+    }
+  } catch (error) {
+    console.error('❌ Email gönderimi API hatası:', error);
+  }
 }

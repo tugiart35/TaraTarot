@@ -5,13 +5,13 @@
  * Hesaplanan sayının detaylı açılımını gösterir
  */
 
-import { NumberMeaning } from '@/lib/numerology/meanings';
+import type { NumberMeaning } from '@/lib/numerology/meanings';
 
 interface NumberMeaningProps {
   meaning: NumberMeaning;
 }
 
-export default function NumberMeaning({ meaning }: NumberMeaningProps) {
+export function NumberMeaning({ meaning }: NumberMeaningProps) {
   const getColorClasses = (color: string) => {
     const colorMap: Record<string, string> = {
       'Kırmızı': 'from-red-500 to-red-600',

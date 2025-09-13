@@ -1,23 +1,16 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { supabase } from '@/lib/supabase/client';
 import { 
   Plus, 
   Edit, 
   Trash, 
-  Eye, 
-  Save,
-  X,
   FileText,
-  Wand2,
-  Languages,
-  Settings,
   Sparkles,
   BookOpen,
   Brain
 } from 'lucide-react';
-import SpreadEditor from '@/components/admin/SpreadEditor';
+// import SpreadEditor from '@/components/admin/SpreadEditor';
 
 interface Spread {
   id: number;
@@ -58,8 +51,8 @@ export default function ContentPage() {
   const [spreads, setSpreads] = useState<Spread[]>([]);
   const [numerologyTemplates, setNumerologyTemplates] = useState<NumerologyTemplate[]>([]);
   const [aiPrompts, setAiPrompts] = useState<AIPrompt[]>([]);
-  const [showSpreadEditor, setShowSpreadEditor] = useState(false);
-  const [selectedSpread, setSelectedSpread] = useState<Spread | null>(null);
+  // const [showSpreadEditor, setShowSpreadEditor] = useState(false);
+  // const [selectedSpread, setSelectedSpread] = useState<Spread | null>(null);
 
   const tabs = [
     { 
@@ -218,7 +211,7 @@ export default function ContentPage() {
                 Tarot Dizilimleri
               </h3>
               <button
-                onClick={() => setShowSpreadEditor(true)}
+                onClick={() => {/* setShowSpreadEditor(true) */}}
                 className="admin-btn-primary px-4 py-2 rounded-lg flex items-center space-x-2"
               >
                 <Plus className="h-4 w-4" />
@@ -267,8 +260,8 @@ export default function ContentPage() {
                   <div className="flex space-x-2">
                     <button
                       onClick={() => {
-                        setSelectedSpread(spread);
-                        setShowSpreadEditor(true);
+                        // setSelectedSpread(spread);
+                        // setShowSpreadEditor(true);
                       }}
                       className="flex-1 admin-glass hover:bg-slate-700/50 text-white p-2 rounded-lg admin-hover-scale transition-colors flex items-center justify-center space-x-1"
                     >
@@ -289,7 +282,7 @@ export default function ContentPage() {
                 <h3 className="text-xl font-semibold text-white mb-2">Henüz Dizilim Yok</h3>
                 <p className="text-slate-400 mb-6">İlk tarot diziliminizi oluşturun</p>
                 <button 
-                  onClick={() => setShowSpreadEditor(true)}
+                  onClick={() => {/* setShowSpreadEditor(true) */}}
                   className="admin-btn-primary px-6 py-2 rounded-lg"
                 >
                   İlk Diziliminizi Oluşturun
@@ -403,9 +396,10 @@ export default function ContentPage() {
       </div>
 
       {/* Spread Editor Modal */}
-      {showSpreadEditor && (
+      {/* SpreadEditor temporarily disabled due to type conflicts */}
+      {/* {showSpreadEditor && selectedSpread && (
         <SpreadEditor
-          spread={selectedSpread || undefined}
+          spread={selectedSpread}
           onClose={() => {
             setShowSpreadEditor(false);
             setSelectedSpread(null);
@@ -417,7 +411,7 @@ export default function ContentPage() {
             fetchData();
           }}
         />
-      )}
+      )} */}
     </div>
   );
 }

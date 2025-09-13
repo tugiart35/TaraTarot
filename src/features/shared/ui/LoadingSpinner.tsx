@@ -185,8 +185,8 @@ export function LoadingSkeleton({
       key={i}
       type={type}
       className={className}
-      width={width}
-      height={height}
+      {...(width && { width })}
+      {...(height && { height })}
     />
   ));
 

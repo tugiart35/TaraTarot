@@ -48,17 +48,14 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { supabase } from '@/lib/supabase/client';
 import { useAuth } from '@/hooks/useAuth';
-import { useTranslations } from '@/hooks/useTranslations';
 import { 
   Coins, 
   Star, 
-  Zap, 
   Crown, 
   Check, 
   ShoppingCart,
   CreditCard,
   Gift,
-  TrendingUp,
   Shield,
   Clock,
   ArrowLeft
@@ -89,79 +86,117 @@ interface UserProfile {
 export default function PackagesPage() {
   const { user, isAuthenticated, loading: authLoading } = useAuth();
   const router = useRouter();
-  const { t } = useTranslations();
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [loading, setLoading] = useState(true);
   const [purchasing, setPurchasing] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
 
-  // Kredi paketleri tanımları
-  const creditPackages: CreditPackage[] = [
-    {
-      id: 'starter',
-      name: 'Başlangıç Paketi',
-      credits: 100,
-      price: 29.99,
-      currency: 'TRY',
-      description: 'Temel okumalar için ideal',
-      features: [
-        '1-2 detaylı tarot okuması',
-        'Numeroloji analizi',
-        'Aşk açılımı',
-        '7 gün geçerlilik'
-      ],
-      icon: <Coins className="h-8 w-8" />,
-      color: 'text-blue-400',
-      bgColor: 'bg-blue-500/10',
-      borderColor: 'border-blue-500/30'
-    },
-    {
-      id: 'popular',
-      name: 'Popüler Paket',
-      credits: 300,
-      price: 79.99,
-      currency: 'TRY',
-      description: 'En çok tercih edilen paket',
-      features: [
-        '5-6 detaylı tarot okuması',
-        'Numeroloji analizi',
-        'Aşk açılımı',
-        'Kariyer okuması',
-        '30 gün geçerlilik',
-        '%10 bonus kredi'
-      ],
-      popular: true,
-      icon: <Star className="h-8 w-8" />,
-      color: 'text-gold',
-      bgColor: 'bg-gold/10',
-      borderColor: 'border-gold/30'
-    },
-    {
-      id: 'premium',
-      name: 'Premium Paket',
-      credits: 500,
-      price: 119.99,
-      currency: 'TRY',
-      description: 'Sınırsız okuma deneyimi',
-      features: [
+  // Supabase'den kredi paketlerini çek
+  const [creditPackages, setCreditPackages] = useState<CreditPackage[]>([]);
+  const [packagesLoading, setPackagesLoading] = useState(true);
+
+  // Supabase'den paketleri çek
+  const fetchPackages = async () => {
+    try {
+      setPackagesLoading(true);
+      const { data, error } = await supabase
+        .from('packages')
+        .select('*')
+        .eq('active', true)
+        .order('credits', { ascending: true });
+
+      if (error) {
+        console.error('Paketler yüklenirken hata:', error);
+        return;
+      }
+
+      // Supabase verilerini CreditPackage formatına dönüştür
+      const formattedPackages: CreditPackage[] = (data || []).map((pkg, index) => {
+        const isPopular = index === 1; // İkinci paket popüler olsun
+        
+        return {
+          id: pkg.id.toString(),
+          name: pkg.name,
+          credits: pkg.credits,
+          price: parseFloat(pkg.price_try), // TRY fiyatını kullan
+          currency: 'TRY',
+          description: pkg.description || '',
+          features: generateFeatures(pkg.credits),
+          popular: isPopular,
+          icon: getPackageIcon(pkg.credits),
+          color: getPackageColor(pkg.credits),
+          bgColor: getPackageBgColor(pkg.credits),
+          borderColor: getPackageBorderColor(pkg.credits)
+        };
+      });
+
+      setCreditPackages(formattedPackages);
+    } catch (error) {
+      console.error('Paketler yüklenirken hata:', error);
+    } finally {
+      setPackagesLoading(false);
+    }
+  };
+
+  // Kredi miktarına göre özellikler oluştur
+  const generateFeatures = (credits: number): string[] => {
+    const baseFeatures = ['Numeroloji analizi', 'Aşk açılımı'];
+    
+    if (credits >= 1000) {
+      return [
+        ...baseFeatures,
         '10+ detaylı tarot okuması',
-        'Numeroloji analizi',
-        'Aşk açılımı',
         'Kariyer okuması',
         'Genel okuma',
         '60 gün geçerlilik',
         '%20 bonus kredi',
         'Öncelikli destek'
-      ],
-      icon: <Crown className="h-8 w-8" />,
-      color: 'text-purple-400',
-      bgColor: 'bg-purple-500/10',
-      borderColor: 'border-purple-500/30'
+      ];
+    } else if (credits >= 500) {
+      return [
+        ...baseFeatures,
+        '5-6 detaylı tarot okuması',
+        'Kariyer okuması',
+        '30 gün geçerlilik',
+        '%10 bonus kredi'
+      ];
+    } else {
+      return [
+        ...baseFeatures,
+        '1-2 detaylı tarot okuması',
+        '7 gün geçerlilik'
+      ];
     }
-  ];
+  };
 
-  // Auth kontrolü
+  // Kredi miktarına göre ikon belirle
+  const getPackageIcon = (credits: number) => {
+    if (credits >= 1000) return <Crown className="h-8 w-8" />;
+    if (credits >= 500) return <Star className="h-8 w-8" />;
+    return <Coins className="h-8 w-8" />;
+  };
+
+  // Kredi miktarına göre renk belirle
+  const getPackageColor = (credits: number) => {
+    if (credits >= 1000) return 'text-purple-400';
+    if (credits >= 500) return 'text-gold';
+    return 'text-blue-400';
+  };
+
+  const getPackageBgColor = (credits: number) => {
+    if (credits >= 1000) return 'bg-purple-500/10';
+    if (credits >= 500) return 'bg-gold/10';
+    return 'bg-blue-500/10';
+  };
+
+  const getPackageBorderColor = (credits: number) => {
+    if (credits >= 1000) return 'border-purple-500/30';
+    if (credits >= 500) return 'border-gold/30';
+    return 'border-blue-500/30';
+  };
+
+  // Auth kontrolü ve paketleri çek
   useEffect(() => {
     if (!authLoading) {
       if (!isAuthenticated) {
@@ -169,6 +204,7 @@ export default function PackagesPage() {
         return;
       }
       fetchUserProfile();
+      fetchPackages(); // Supabase'den paketleri çek
     }
   }, [authLoading, isAuthenticated, router]);
 
@@ -213,9 +249,9 @@ export default function PackagesPage() {
       setError(null);
       setSuccess(null);
 
-      // Bonus kredi hesapla
-      const bonusCredits = selectedPackage.id === 'popular' ? 30 : 
-                          selectedPackage.id === 'premium' ? 100 : 0;
+      // Bonus kredi hesapla (kredi miktarına göre)
+      const bonusCredits = selectedPackage.credits >= 1000 ? 200 : 
+                          selectedPackage.credits >= 500 ? 50 : 0;
       const totalCredits = selectedPackage.credits + bonusCredits;
 
       // Kredi bakiyesini güncelle
@@ -269,7 +305,7 @@ export default function PackagesPage() {
   };
 
   // Loading state
-  if (authLoading || loading) {
+  if (authLoading || loading || packagesLoading) {
     return (
       <div className="min-h-screen bg-cosmic-black flex items-center justify-center">
         <div className="text-center">
@@ -339,7 +375,7 @@ export default function PackagesPage() {
 
         {/* Packages Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {creditPackages.map((pkg) => (
+          {creditPackages.length > 0 ? creditPackages.map((pkg) => (
             <div
               key={pkg.id}
               className={`relative card hover-lift p-8 ${
@@ -429,7 +465,13 @@ export default function PackagesPage() {
                 )}
               </button>
             </div>
-          ))}
+          )) : (
+            <div className="col-span-full text-center py-12">
+              <div className="text-text-mystic text-lg">
+                Henüz aktif paket bulunmuyor. Lütfen daha sonra tekrar kontrol edin.
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Additional Info */}

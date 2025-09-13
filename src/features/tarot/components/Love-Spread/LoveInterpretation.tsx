@@ -68,7 +68,7 @@ const LoveInterpretation = forwardRef<HTMLDivElement, LoveInterpretationProps>(
     // Anlam metnini alır (pozisyon bazlı veya fallback)
     const getMeaningText = (
       meaning: CardMeaningData | null,
-      card: TarotCard,
+      _card: TarotCard,
       isReversed: boolean
     ): string => {
       if (meaning) {
@@ -78,10 +78,7 @@ const LoveInterpretation = forwardRef<HTMLDivElement, LoveInterpretationProps>(
       return '';
     };
 
-    // Bağlam metnini alır
-    const getContextText = (meaning: CardMeaningData | null): string => {
-      return meaning?.context ? `Bağlam: ${meaning.context}` : '';
-    };
+    // getContextText kaldırıldı - kullanılmıyor
 
     // Anahtar kelimeleri alır (en fazla 3)
     const getKeywords = (meaning: CardMeaningData | null): string[] => {
@@ -105,13 +102,11 @@ const LoveInterpretation = forwardRef<HTMLDivElement, LoveInterpretationProps>(
         theme='pink'
         title='Aşk Analizi'
         icon='❤️'
-        _placeholder='Örn: Yeni bir aşk, ilişkimin geleceği, uyum sorunları...'
         badgeText='AŞK ODAKLI'
         badgeColor='bg-red-500/20 text-red-400'
         positionsInfo={LOVE_POSITIONS_INFO}
         getCardMeaning={getCardMeaningWrapper}
         getMeaningText={getMeaningText}
-        getContextText={getContextText}
         getKeywords={getKeywords}
       />
     );

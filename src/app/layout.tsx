@@ -26,7 +26,7 @@ import './globals.css';
 import { defaultMetadata, viewport } from '@/lib/config/metadata';
 import { APP_CONFIG } from '@/lib/config/app-config';
 import { HeadTags, Footer } from '@/features/shared/layout';
-import { locales, defaultLocale } from '@/lib/i18n/config';
+import { defaultLocale } from '@/lib/i18n/config';
 
 // Next.js için metadata export'u
 export const metadata = defaultMetadata;

@@ -75,18 +75,7 @@ export function useTarotReading({
 
   const handleCardSelect = useCallback(
     (card: TarotCard) => {
-      console.log(
-        'handleCardSelect called:',
-        card.name,
-        'Current position:',
-        currentPosition,
-        'Card count:',
-        cardCount,
-        'Used card IDs:',
-        Array.from(usedCardIds)
-      );
       if (usedCardIds.has(card.id) || currentPosition > cardCount) {
-        console.log('Card selection blocked - used or position exceeded');
         return;
       }
       const newSelected = [...selectedCards];

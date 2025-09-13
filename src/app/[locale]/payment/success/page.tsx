@@ -63,7 +63,6 @@ export default function PaymentSuccessPage() {
   const checkPaymentStatus = async () => {
     try {
       const orderId = searchParams.get('order_id');
-      const transactionId = searchParams.get('transaction_id');
 
       if (!orderId) {
         setPaymentStatus('error');

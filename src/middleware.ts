@@ -119,7 +119,6 @@ export async function middleware(request: NextRequest) {
     } = await supabase.auth.getSession();
 
     if (sessionError) {
-      console.error('Session error:', sessionError);
       // Continue without session for public routes
     }
 
@@ -173,7 +172,6 @@ export async function middleware(request: NextRequest) {
     return response;
 
   } catch (error) {
-    console.error('Middleware error:', error);
     
     // Fallback: continue with basic routing
     const pathnameIsMissingLocale = ['tr', 'en', 'sr'].every(

@@ -58,8 +58,8 @@ export default function GenericTarotSpread({
   const { user } = useAuth();
   
   // Kredi yönetimi - sesli ve yazılı okumalar için
-  const detailedCredits = useReadingCredits('DETAILED');
-  const writtenCredits = useReadingCredits('WRITTEN');
+  const detailedCredits = useReadingCredits('LOVE_SPREAD_DETAILED');
+  const writtenCredits = useReadingCredits('LOVE_SPREAD_WRITTEN');
   const [spreadConfig, setSpreadConfig] = useState<TarotSpreadConfig | null>(
     externalConfig || null
   );
@@ -92,7 +92,7 @@ export default function GenericTarotSpread({
     handleClearAll,
     shuffleDeck,
     interpretationRef,
-    userQuestion,
+    // userQuestion, // Kullanılmıyor - kaldırıldı
     // setUserQuestion, // Kullanılmıyor - kaldırıldı
     selectedReadingType,
     setSelectedReadingType,
@@ -101,18 +101,16 @@ export default function GenericTarotSpread({
       cardCount: 4,
       positionsInfo: [],
     },
-    onComplete: (cards, interpretation) => {
+    onComplete: (_cards, _interpretation) => {
       // Tarot açılımı tamamlandı - backend'e kaydet
     },
-    onPositionChange: title => {
+    onPositionChange: _title => {
       // Pozisyon değişti
     },
   });
 
   // const [simpleQuestion, setSimpleQuestion] = useState(''); // Kaldırıldı - basit okuma için soru kaydet ekranı yok
   // const [simpleQuestionSaved, setSimpleQuestionSaved] = useState(false); // Kaldırıldı - basit okuma için soru kaydet ekranı yok
-  const { showToast } = useToast();
-  const [error, setError] = useState<string | null>(null);
 
   // Basit okuma için soru kaydetme fonksiyonu kaldırıldı - artık soru kaydet ekranı yok
 
@@ -134,36 +132,7 @@ export default function GenericTarotSpread({
     );
   }
 
-  const generateBasicInterpretation = (): string => {
-    const cards = selectedCards as TarotCard[];
-    if (
-      selectedCards.length !== spreadConfig.cardCount ||
-      selectedCards.some(c => !c)
-    ) {
-      return 'Tüm kartları seçmeden yorum oluşturulamaz.';
-    }
-    let interpretation = `**${spreadConfig.name}**\\n\\n`;
-    if (userQuestion.trim()) {
-      interpretation += `**Sevgili danışan,** sorunuz \"${userQuestion}\" için özel hazırlanmış analiz:\\n\\n`;
-    }
-    spreadConfig.positionsInfo.forEach((posInfo, index) => {
-      const card = cards[index];
-      const reversed = isReversed[index];
-      if (card) {
-        const meaning = reversed
-          ? card.meaningTr.reversed
-          : card.meaningTr.upright;
-        interpretation += `**${posInfo.id}. ${posInfo.title}: ${card.nameTr}** (${reversed ? 'Ters' : 'Düz'})\\n*${posInfo.desc}*\\n${meaning}\\n\\n`;
-      }
-    });
-
-    // Spread'e özel summary fonksiyonu varsa kullan
-    if (spreadConfig.interpretationSummary) {
-      interpretation += spreadConfig.interpretationSummary(cards);
-    }
-
-    return interpretation;
-  };
+  // generateBasicInterpretation fonksiyonu kaldırıldı - kullanılmıyor
 
   const handleReadingTypeSelect = (type: ReadingType | string) => {
     if (!user) {
@@ -204,9 +173,6 @@ export default function GenericTarotSpread({
       <LoveInterpretation
         cards={selectedCards}
         isReversed={isReversed}
-        _userQuestion={userQuestion}
-        _interpretation={generateBasicInterpretation()}
-        _onSetUserQuestion={() => {}}
       />
     );
   };
@@ -239,13 +205,13 @@ export default function GenericTarotSpread({
               <BaseCardPosition
                 key={position.id}
                 position={position}
-                card={selectedCards[position.id - 1]}
-                isOpen={cardStates[position.id - 1]}
-                isReversed={isReversed[position.id - 1]}
+                card={selectedCards[position.id - 1] || null}
+                isOpen={cardStates[position.id - 1] || false}
+                isReversed={isReversed[position.id - 1] || false}
                 isNextPosition={currentPosition === position.id}
                 onToggleCard={() => toggleCardState(position.id)}
                 onCardDetails={handleCardDetails}
-                positionInfo={spreadConfig.positionsInfo[idx]}
+                positionInfo={spreadConfig.positionsInfo[idx] || { title: `Pozisyon ${position.id}`, desc: 'Kart pozisyonu' }}
                 renderCard={renderCard}
                 colorScheme={spreadConfig.theme as any}
               />
@@ -275,10 +241,10 @@ export default function GenericTarotSpread({
             <div className='bg-slate-800/70 border border-slate-600 rounded-2xl px-6 py-3 shadow-lg animate-pulse'>
               <div className='text-center'>
                 <div className='text-white font-bold text-lg'>
-                  {spreadConfig.positionsInfo[currentPosition - 1].title}
+                  {spreadConfig.positionsInfo[currentPosition - 1]?.title || `Pozisyon ${currentPosition}`}
                 </div>
                 <div className='text-gray-300 text-xs'>
-                  {spreadConfig.positionsInfo[currentPosition - 1].desc}
+                  {spreadConfig.positionsInfo[currentPosition - 1]?.desc || 'Kart pozisyonu'}
                 </div>
               </div>
             </div>
@@ -322,7 +288,7 @@ export default function GenericTarotSpread({
               selectedCards.findIndex(
                 (c: TarotCard | null) => c && c.id === showCardDetails.id
               )
-            ]
+            ] || false
           }
           position={
             selectedCards.findIndex(
@@ -336,7 +302,7 @@ export default function GenericTarotSpread({
               selectedCards.findIndex(
                 (c: TarotCard | null) => c && c.id === showCardDetails.id
               )
-            ]
+            ] || { title: 'Kart Detayları', desc: 'Kart pozisyonu' }
           }
         />
       )}

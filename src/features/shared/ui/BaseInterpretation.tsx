@@ -46,15 +46,11 @@ export interface CardMeaningData {
 export interface BaseInterpretationProps {
   cards: (TarotCard | null)[];
   isReversed: boolean[];
-  _interpretation: string;
-  _userQuestion: string;
-  _onSetUserQuestion: (question: string) => void;
 
   // Tema ve görsel özelleştirme
   theme?: Theme;
   title?: string;
   icon?: string;
-  _placeholder?: string;
   badgeText?: string;
   badgeColor?: string;
 
@@ -66,7 +62,6 @@ export interface BaseInterpretationProps {
     _card: TarotCard,
     _isReversed: boolean
   ) => string;
-  getContextText?: (_meaning: CardMeaningData | null) => string;
   getKeywords?: (_meaning: CardMeaningData | null, _card: TarotCard) => string[];
 
   // POZİSYON ÖZEL YORUM FONKSİYONU
@@ -274,19 +269,14 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
     {
       cards,
       isReversed,
-        _interpretation,
-  _userQuestion,
-  _onSetUserQuestion,
       theme = 'default',
       title,
       icon = '📜',
-      _placeholder,
       badgeText,
       badgeColor = 'bg-blue-500/20 text-blue-400',
       positionsInfo,
       getCardMeaning,
       getMeaningText,
-      getContextText,
       getKeywords,
       getPositionSpecificInterpretation,
     },
@@ -297,90 +287,9 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
     
     // Varsayılan değerleri i18n'den al
     const defaultTitle = title || 'Tarot Yorumu';
-    const defaultPlaceholder = _placeholder || 'Sorunuzu yazın...';
     const defaultBadgeText = badgeText || 'TAROT';
 
-    // Varsayılan anlam alma fonksiyonu
-    const defaultGetMeaningText = (
-      meaning: CardMeaningData | null,
-      card: TarotCard,
-      isReversed: boolean
-    ): string => {
-      if (meaning) {
-        if (meaning.upcontent && meaning.reversedcontent) {
-          return isReversed ? meaning.reversedcontent : meaning.upcontent;
-        }
-        if (meaning.upright && meaning.reversed) {
-          return isReversed ? meaning.reversed : meaning.upright;
-        }
-        if (meaning.careerMeaning) {
-          return isReversed
-            ? meaning.careerMeaning.reversed
-            : meaning.careerMeaning.upright;
-        }
-      }
-
-      // Fallback: genel kart anlamı
-      return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
-    };
-
-    // Varsayılan bağlam metni alma fonksiyonu
-    const defaultGetContextText = (meaning: CardMeaningData | null): string => {
-      if (meaning) {
-        if (meaning.context) {
-          return meaning.context;
-        }
-        if (meaning.upright) {
-          return meaning.upright;
-        }
-        if (meaning.upcontent) {
-          return meaning.upcontent;
-        }
-        if (meaning.careerMeaning?.upright) {
-          return meaning.careerMeaning.upright;
-        }
-      }
-      return '';
-    };
-
-    // Varsayılan anahtar kelime alma fonksiyonu
-    const defaultGetKeywords = (
-      meaning: CardMeaningData | null,
-      card: TarotCard
-    ): string[] => {
-      if (meaning?.keywords && meaning.keywords.length > 0) {
-        return meaning.keywords.slice(0, 3);
-      }
-      return card.keywords?.slice(0, 3) || [];
-    };
-
-    // POZİSYON ÖZEL YORUM FONKSİYONU
-    const defaultGetPositionSpecificInterpretation = (
-      card: TarotCard,
-      position: number,
-      isReversed: boolean
-    ): string => {
-      const meaning = getCardMeaning?.(card);
-      if (meaning) {
-        const meaningText = getMeaningText?.(meaning, card, isReversed) || '';
-        const positionInfo = positionsInfo.find(p => p.id === position);
-        const positionTitle = positionInfo?.title || `Pozisyon ${position}`;
-        return `**${positionTitle}:** ${meaningText}`;
-      }
-
-      // Fallback: genel kart anlamı
-      const meaningText = isReversed
-        ? card.meaningTr.reversed
-        : card.meaningTr.upright;
-      const positionInfo = positionsInfo.find(p => p.id === position);
-      const positionTitle = positionInfo?.title || `Pozisyon ${position}`;
-      return `**${positionTitle}:** ${meaningText}`;
-    };
-
-    // Pozisyon özel yorum fonksiyonunu kullan
-    const getPositionInterpretation =
-      getPositionSpecificInterpretation ||
-      defaultGetPositionSpecificInterpretation;
+    // Varsayılan fonksiyonlar kaldırıldı - kullanılmıyor
 
     return (
       <div
@@ -422,16 +331,13 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
               ? getPositionSpecificInterpretation(
                   card,
                   idx + 1,
-                  isReversed[idx]
+                  isReversed[idx] || false
                 )
-              : getMeaningText?.(cardMeaning, card, isReversed[idx]) ||
-                (isReversed[idx]
+              : getMeaningText?.(cardMeaning, card, isReversed[idx] || false) ||
+                ((isReversed[idx] || false)
                   ? card.meaningTr.reversed
                   : card.meaningTr.upright);
 
-            const contextText = getContextText
-              ? getContextText(cardMeaning)
-              : '';
             const keywords = getKeywords ? getKeywords(cardMeaning, card) : [];
 
             return (

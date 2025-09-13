@@ -275,23 +275,5 @@ export const sortPackages = (
   });
 };
 
-// Export tüm tipler ve fonksiyonlar
-export type {
-  CreditPackage,
-  PackageType,
-  Currency
-};
-
-export {
-  CREDIT_PACKAGES,
-  calculateBonus,
-  calculateTotalCredits,
-  calculatePricePerCredit,
-  recommendPackage,
-  comparePackages,
-  isPackageValid,
-  getPackageFeatures,
-  getPackageStats,
-  searchPackages,
-  sortPackages
-};
+// Not: Bu dosya içindeki tüm öğeler zaten tanımlanırken export edildi.
+// Aşağıdaki toplu export blokları duplicate export hatasına yol açtığı için kaldırıldı.

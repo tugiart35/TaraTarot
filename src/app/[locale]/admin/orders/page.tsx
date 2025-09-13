@@ -10,15 +10,9 @@ import {
   RefreshCw, 
   CheckCircle, 
   XCircle, 
-  Clock, 
   AlertCircle,
   CreditCard,
   Package,
-  User,
-  Calendar,
-  Euro,
-  Filter,
-  TrendingUp,
   DollarSign,
   Download
 } from 'lucide-react';
@@ -38,6 +32,7 @@ interface Order {
   user_email?: string;
   package_name?: string;
   package_credits?: number;
+  status?: string;
 }
 
 export default function OrdersPage() {
@@ -76,7 +71,7 @@ export default function OrdersPage() {
       const purchases = transactions.filter(t => t.type === 'purchase');
       const bonuses = transactions.filter(t => t.type === 'bonus');
       const deductions = transactions.filter(t => t.type === 'deduction');
-      const refunds = transactions.filter(t => t.type === 'refund');
+      // const refunds = transactions.filter(t => t.type === 'refund');
       // Sadece Shopier'den gelen gelirleri hesapla
       const shopierRevenue = purchases
         .filter(t => t.ref_type === 'shopier_payment')
@@ -509,9 +504,9 @@ export default function OrdersPage() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-400">Durum:</span>
-                      <div className={`inline-flex items-center px-2 py-1 rounded text-xs font-medium ${getStatusColor(selectedOrder.status)}`}>
-                        {getStatusIcon(selectedOrder.status)}
-                        <span className="ml-1">{getStatusText(selectedOrder.status)}</span>
+                      <div className={`inline-flex items-center px-2 py-1 rounded text-xs font-medium ${getStatusColor(selectedOrder.status || 'pending')}`}>
+                        {getStatusIcon(selectedOrder.status || 'pending')}
+                        <span className="ml-1">{getStatusText(selectedOrder.status || 'pending')}</span>
                       </div>
                     </div>
                     <div className="flex justify-between">

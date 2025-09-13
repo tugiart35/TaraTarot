@@ -23,9 +23,9 @@
 
 import { useState, useEffect } from 'react';
 import { supabase } from '@/lib/supabase/client';
-import { logError, logSupabaseError, logAdminAction } from '@/lib/logger';
+import { logAdminAction } from '@/lib/logger';
 import { logAdminAction as auditLogAdminAction } from '@/lib/audit-logger';
-import { ErrorHandler, handleAsyncError } from '@/lib/error-handler';
+import { ErrorHandler } from '@/lib/error-handler';
 import { rateLimiter, useRateLimit } from '@/lib/rate-limiter';
 import { 
   Search, 
@@ -37,17 +37,12 @@ import {
   UserCheck, 
   X,
   Users,
-  Filter,
-  SortAsc,
-  SortDesc,
   UserPlus,
   Coins,
   Calendar,
-  Mail,
-  Crown
+  Mail
 } from 'lucide-react';
 import CreditManagementModal from '@/components/admin/CreditManagementModal';
-import TransactionHistory from '@/components/admin/TransactionHistory';
 import UserDetailModal from '@/components/admin/UserDetailModal';
 
 interface User {
@@ -221,16 +216,6 @@ export default function UsersPage() {
       fetchUsers();
     }
   };
-
-  const handleSort = (field: 'created_at' | 'credit_balance' | 'display_name') => {
-    if (sortBy === field) {
-      setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
-    } else {
-      setSortBy(field);
-      setSortOrder('desc');
-    }
-  };
-
   const totalPages = Math.ceil(totalCount / usersPerPage);
 
   const formatDate = (dateString: string) => {
@@ -544,7 +529,7 @@ export default function UsersPage() {
               <div className="flex items-center space-x-3 md:space-x-4 min-w-0 flex-1">
                 <div className="admin-gradient-accent p-3 md:p-4 rounded-xl flex-shrink-0 group-hover:scale-110 transition-transform">
                   <span className="text-white font-bold text-base md:text-xl">
-                    {user.display_name?.[0] || user.email[0].toUpperCase()}
+                    {user.display_name?.[0] || user.email?.[0]?.toUpperCase() || '?'}
                   </span>
                 </div>
                 <div className="min-w-0 flex-1">
@@ -714,6 +699,9 @@ export default function UsersPage() {
             setSelectedUser(null);
             fetchUsers(); // Refresh users after credit change
           }}
+          onUpdate={() => {
+            fetchUsers();
+          }}
         />
       )}
 
@@ -727,6 +715,9 @@ export default function UsersPage() {
           onEditCredit={() => {
             setShowUserModal(false);
             setShowCreditModal(true);
+          }}
+          onStatusChange={(userId, status) => {
+            handleStatusChange(userId, status);
           }}
         />
       )}

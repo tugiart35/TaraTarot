@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { supabase } from '@/lib/supabase/client';
 import AutoReporting from '@/components/admin/AutoReporting';
 import { 
   Calendar,
@@ -355,7 +354,7 @@ export default function AnalyticsPage() {
                 innerRadius={60}
                 outerRadius={120}
                 dataKey="value"
-                label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+                label={({ name, percent }) => `${name} ${((percent || 0) * 100).toFixed(0)}%`}
               >
                 {analytics.packageSales.map((entry, index) => (
                   <Cell key={`cell-${index}`} fill={entry.color} />
@@ -397,7 +396,7 @@ export default function AnalyticsPage() {
                 innerRadius={60}
                 outerRadius={120}
                 dataKey="value"
-                label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+                label={({ name, percent }) => `${name} ${((percent || 0) * 100).toFixed(0)}%`}
               >
                 {analytics.featureUsage.map((entry, index) => (
                   <Cell key={`cell-${index}`} fill={entry.color} />

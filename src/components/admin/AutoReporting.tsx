@@ -1,8 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { supabase } from '@/lib/supabase/client';
-import { Calendar, Download, Mail, Clock, FileText, TrendingUp, Settings, Play, Pause, Plus, Users } from 'lucide-react';
+import { Calendar, Download, Mail, Clock, FileText, TrendingUp, Settings, Play, Pause, Users } from 'lucide-react';
 
 interface ReportSchedule {
   id: string;
@@ -29,7 +28,6 @@ export default function AutoReporting() {
   const [schedules, setSchedules] = useState<ReportSchedule[]>([]);
   const [recentReports, setRecentReports] = useState<GeneratedReport[]>([]);
   const [loading, setLoading] = useState(false);
-  const [showNewSchedule, setShowNewSchedule] = useState(false);
 
   useEffect(() => {
     loadSchedules();
@@ -181,13 +179,6 @@ export default function AutoReporting() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <h3 className="text-lg font-semibold text-gold">Otomatik Raporlama</h3>
-        <button
-          onClick={() => setShowNewSchedule(true)}
-          className="px-4 py-2 bg-gold hover:bg-gold/90 text-night rounded font-medium flex items-center"
-        >
-          <Plus className="h-4 w-4 mr-2" />
-          Yeni Zamanlama
-        </button>
       </div>
 
       {/* Manual Report Generation */}

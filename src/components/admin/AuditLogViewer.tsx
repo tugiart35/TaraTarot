@@ -13,7 +13,6 @@ import {
   AlertTriangle,
   Activity,
   Search,
-  Calendar,
   RefreshCw
 } from 'lucide-react';
 
@@ -235,9 +234,13 @@ export default function AuditLogViewer({ className = '', limit = 50 }: AuditLogV
             <input
               type="date"
               value={filters.dateFrom?.toISOString().split('T')[0] || ''}
-              onChange={(e) => handleFilterChange({ 
-                dateFrom: e.target.value ? new Date(e.target.value) : undefined 
-              })}
+              onChange={(e) => {
+                const newFilters: Partial<FilterOptions> = {};
+                if (e.target.value) {
+                  newFilters.dateFrom = new Date(e.target.value);
+                }
+                handleFilterChange(newFilters);
+              }}
               className="bg-slate-800 border border-slate-600 rounded-lg px-4 py-2 text-white focus:border-blue-500 focus:outline-none"
             />
           </div>

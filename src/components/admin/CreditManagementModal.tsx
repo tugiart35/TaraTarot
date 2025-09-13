@@ -117,7 +117,7 @@ export default function CreditManagementModal({ user, onClose, onUpdate }: Credi
           <div className="flex items-center mb-3">
             <div className="h-12 w-12 bg-gold rounded-full flex items-center justify-center">
               <span className="text-night font-bold text-lg">
-                {user.display_name?.[0] || user.email[0].toUpperCase()}
+                {user.display_name?.[0] || user.email?.[0]?.toUpperCase() || '?'}
               </span>
             </div>
             <div className="ml-3">

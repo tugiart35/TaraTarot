@@ -290,30 +290,18 @@ export const getMeaningByCardAndPosition = (
   cardName: string,
   position: number
 ): LovePositionMeaning | undefined => {
-  console.log('🔍 getMeaningByCardAndPosition called:', { cardName, position });
-  
   // Kart ismini mapping ile dönüştür
   const mappedCardName = cardNameMapping[cardName] || cardName;
-  console.log('🔄 Mapped card name:', mappedCardName, 'from original:', cardName);
   
   const positionMeanings = getMeaningsByPosition(position);
-  console.log(`📊 Position ${position} meanings:`, positionMeanings.length, 'meanings available');
-  
-  // İlk 5 kart ismini göster
-  const sampleCards = positionMeanings.slice(0, 5).map(m => m.card);
-  console.log('📋 Sample cards in position', position, ':', sampleCards);
   
   // Önce mapped isimle ara
   let found = positionMeanings.find(meaning => meaning.card === mappedCardName);
-  console.log('🔎 Search with mapped name result:', found ? 'FOUND' : 'NOT FOUND');
   
   // Bulunamazsa orijinal isimle ara
   if (!found) {
     found = positionMeanings.find(meaning => meaning.card === cardName);
-    console.log('🔎 Search with original name result:', found ? 'FOUND' : 'NOT FOUND');
   }
-  
-  console.log('✅ Final result:', found ? 'SUCCESS' : 'FAILED');
   
   return found;
 };
