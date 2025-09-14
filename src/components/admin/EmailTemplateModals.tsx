@@ -94,10 +94,12 @@ export function AddEmailTemplateModal({ onClose, onSuccess }: { onClose: () => v
 
   const processTemplate = (template: string) => {
     let processed = template;
-    Object.entries(formData.variables).forEach(([key, value]) => {
+    if (formData.variables) {
+      Object.entries(formData.variables).forEach(([key, value]) => {
       const regex = new RegExp(`{{${key}}}`, 'g');
       processed = processed.replace(regex, String(value));
     });
+    }
     return processed;
   };
 
@@ -215,7 +217,7 @@ export function AddEmailTemplateModal({ onClose, onSuccess }: { onClose: () => v
               </label>
               <div className="admin-glass rounded-lg p-4">
                 <div className="space-y-3">
-                  {Object.entries(formData.variables).map(([key, value]) => (
+                  {formData.variables && Object.entries(formData.variables).map(([key, value]) => (
                     <div key={key} className="flex items-center space-x-2">
                       <span className="text-slate-400 font-mono text-sm">{key}:</span>
                       <span className="text-white text-sm">{value}</span>
@@ -368,10 +370,12 @@ export function EditEmailTemplateModal({
 
   const processTemplate = (template: string) => {
     let processed = template;
-    Object.entries(formData.variables).forEach(([key, value]) => {
+    if (formData.variables) {
+      Object.entries(formData.variables).forEach(([key, value]) => {
       const regex = new RegExp(`{{${key}}}`, 'g');
       processed = processed.replace(regex, String(value));
     });
+    }
     return processed;
   };
 
@@ -486,7 +490,7 @@ export function EditEmailTemplateModal({
               </label>
               <div className="admin-glass rounded-lg p-4">
                 <div className="space-y-3">
-                  {Object.entries(formData.variables).map(([key, value]) => (
+                  {formData.variables && Object.entries(formData.variables).map(([key, value]) => (
                     <div key={key} className="flex items-center space-x-2">
                       <span className="text-slate-400 font-mono text-sm">{key}:</span>
                       <span className="text-white text-sm">{value}</span>

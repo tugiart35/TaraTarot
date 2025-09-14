@@ -107,7 +107,6 @@ export default function ResetPasswordPage() {
       const { error } = await supabase.auth.verifyOtp({
         token_hash: token,
         type: type as any,
-        password: password,
       });
 
       if (error) {

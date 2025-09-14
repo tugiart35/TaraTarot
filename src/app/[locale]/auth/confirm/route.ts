@@ -48,6 +48,11 @@ export async function GET(request: NextRequest) {
   const type = searchParams.get('type') as EmailOtpType | null;
   const next = searchParams.get('next') ?? '/tr'; // Varsayılan olarak Türkçe ana sayfa
 
+  // URL'den locale'i çıkar
+  const url = new URL(request.url);
+  const pathSegments = url.pathname.split('/');
+  const locale = pathSegments[1] || 'tr';
+
   console.log('Email confirmation callback:', { token_hash, type, next });
 
   if (token_hash && type) {
@@ -72,10 +77,7 @@ export async function GET(request: NextRequest) {
           // Kredi hediye etme hatası kritik değil, devam et
         }
 
-        // URL'den locale'i çıkar
-        const url = new URL(request.url);
-        const pathSegments = url.pathname.split('/');
-        const locale = pathSegments[1] || 'tr';
+        // Locale already declared at top
 
         // Başarılı onay sonrası dashboard'a yönlendir (kullanıcı giriş yapmış olacak)
         return NextResponse.redirect(
@@ -101,10 +103,7 @@ export async function GET(request: NextRequest) {
 
   // Hata durumunda hata sayfasına yönlendir
   console.log('Redirecting to auth error page');
-  // URL'den locale'i çıkar
-  const url = new URL(request.url);
-  const pathSegments = url.pathname.split('/');
-  const locale = pathSegments[1] || 'tr';
+  // Locale already declared at top
 
   return NextResponse.redirect(
     new URL(`/${locale}/auth?error=confirmation_failed`, request.url)

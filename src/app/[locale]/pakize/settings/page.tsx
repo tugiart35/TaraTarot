@@ -93,7 +93,7 @@ export default function SettingsPage() {
   const [maintenanceStatus, setMaintenanceStatus] = useState<MaintenanceStatus | null>(null);
   const [maintenanceLoading, setMaintenanceLoading] = useState(true);
   const [maintenanceMessage, setMaintenanceMessage] = useState('');
-  const [allowedIPs, setAllowedIPs] = useState<string[]>([]);
+  const [allowedIPs] = useState<string[]>([]);
 
   // Shopier state
   const [shopierSettings, setShopierSettings] = useState<ShopierSettings | null>(null);

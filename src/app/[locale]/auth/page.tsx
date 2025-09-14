@@ -163,7 +163,7 @@ export default function AuthPage() {
     try {
       setLoadingStep('Şifre sıfırlama e-postası gönderiliyor...');
       const { error } = await supabase.auth.resetPasswordForEmail(resetEmail, {
-        redirectTo: `${window.location.origin}/${currentLocale}/auth/reset-password`,
+        redirectTo: `${window.location.origin}/${locale}/auth/reset-password`,
       });
 
       if (error) {

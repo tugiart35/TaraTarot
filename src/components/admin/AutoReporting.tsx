@@ -176,7 +176,7 @@ export default function AutoReporting() {
         revenueGrowth: 0,
         creditsSold,
         creditUsage,
-        dailyRevenue: [],
+        // dailyRevenue: [], // Not in ReportData type
         userRegistrations: [],
         packageSales: packages?.map((pkg: any, index: number) => ({
           name: pkg.name || 'Bilinmeyen Paket',
