@@ -172,9 +172,11 @@ export class MaintenanceSystemManager {
         enabled ? 'settings_update' as AuditAction : 'settings_update' as AuditAction,
         'system' as ResourceType,
         {
-          maintenanceMode: enabled,
-          message: message || 'Default message',
-          timestamp: now
+          metadata: {
+            maintenanceMode: enabled,
+            message: message || 'Default message',
+            timestamp: now
+          }
         }
       );
 
@@ -210,8 +212,10 @@ export class MaintenanceSystemManager {
 
       // Audit log
       await logAdminAction('settings_update' as AuditAction, 'system' as ResourceType, {
-        maintenanceMessage: message,
-        timestamp: new Date().toISOString()
+        metadata: {
+          maintenanceMessage: message,
+          timestamp: new Date().toISOString()
+        }
       });
 
       return true;
@@ -246,8 +250,10 @@ export class MaintenanceSystemManager {
 
       // Audit log
       await logAdminAction('settings_update' as AuditAction, 'system' as ResourceType, {
-        allowedIPs: ips,
-        timestamp: new Date().toISOString()
+        metadata: {
+          allowedIPs: ips,
+          timestamp: new Date().toISOString()
+        }
       });
 
       return true;
@@ -299,11 +305,13 @@ export class MaintenanceSystemManager {
 
       // Audit log
       await logAdminAction('settings_update' as AuditAction, 'system' as ResourceType, {
-        scheduledMaintenance: true,
-        startTime,
-        endTime,
-        message: message || 'Scheduled maintenance',
-        timestamp: new Date().toISOString()
+        metadata: {
+          scheduledMaintenance: true,
+          startTime,
+          endTime,
+          message: message || 'Scheduled maintenance',
+          timestamp: new Date().toISOString()
+        }
       });
 
       return true;

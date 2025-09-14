@@ -258,14 +258,23 @@ class AuditLogger {
       order_refund: 'high',
       settings_update: 'high',
       admin_user_create: 'critical',
+      admin_user_created: 'critical',
+      admin_user_updated: 'critical',
       admin_user_delete: 'critical',
+      admin_user_deleted: 'critical',
       data_export: 'high',
       bulk_operation: 'high',
       security_event: 'critical',
       email_settings_updated: 'medium',
       email_template_created: 'medium',
       email_template_updated: 'medium',
-      email_template_deleted: 'high'
+      email_template_deleted: 'high',
+      api_key_created: 'high',
+      api_key_updated: 'high',
+      api_key_deleted: 'high',
+      user_deleted: 'critical',
+      user_banned: 'critical',
+      user_unbanned: 'high'
     };
 
     return severityMap[action] || 'medium';

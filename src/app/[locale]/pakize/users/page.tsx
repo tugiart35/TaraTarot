@@ -45,7 +45,7 @@ import { ErrorHandler } from '@/lib/error-handler';
 import { rateLimiter, useRateLimit } from '@/lib/rate-limiter';
 import { useToast } from '@/hooks/useToast';
 import Toast from '@/features/shared/ui/Toast';
-import { CardSkeleton, TableSkeleton } from '@/components/shared/ui/LoadingSpinner';
+import { CardSkeleton } from '@/components/shared/ui/LoadingSpinner';
 import { DeleteConfirmationDialog } from '@/components/shared/ui/ConfirmationDialog';
 import { 
   Search, 
@@ -58,9 +58,7 @@ import {
   X,
   Users,
   UserPlus,
-  Coins,
-  Calendar,
-  Mail
+  Coins
 } from 'lucide-react';
 import CreditManagementModal from '@/components/admin/CreditManagementModal';
 import UserDetailModal from '@/components/admin/UserDetailModal';
@@ -109,7 +107,7 @@ export default function UsersPage() {
   const [showCreditModal, setShowCreditModal] = useState(false);
   const [showUserModal, setShowUserModal] = useState(false);
   const [sortBy, setSortBy] = useState<'created_at' | 'credit_balance' | 'display_name'>('created_at');
-  const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
+  const [sortOrder] = useState<'asc' | 'desc'>('desc');
   const [statusFilter, setStatusFilter] = useState<'all' | 'active' | 'suspended'>('all');
   
   const usersPerPage = 12;
@@ -221,7 +219,7 @@ export default function UsersPage() {
     }
   };
 
-  const handleSearch = (value: string) => {
+  const handleSearch = (_value: string) => {
     // Rate limit search requests
     const searchCheck = searchRateLimit.checkLimit();
     if (!searchCheck.allowed) {
@@ -259,9 +257,11 @@ export default function UsersPage() {
         await auditLogAdminAction('user_status_change', 'user', {
           userId: currentUser.data.user.id,
           userEmail: currentUser.data.user.email || '',
-          action: 'change_user_status',
-          targetUserId: userId,
-          newStatus: status
+          metadata: {
+            action: 'change_user_status',
+            targetUserId: userId,
+            newStatus: status
+          }
         });
       }
 

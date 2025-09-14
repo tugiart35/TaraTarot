@@ -123,13 +123,15 @@ export class ShopierSystemManager {
 
       // Audit log
       await logAdminAction('settings_update' as AuditAction, 'system' as ResourceType, {
-        shopierSettings: {
-          merchantId: settings.merchantId,
-          testMode: settings.testMode,
-          callbackUrl: settings.callbackUrl,
-          webhookUrl: settings.webhookUrl
-        },
-        timestamp: new Date().toISOString()
+        metadata: {
+          shopierSettings: {
+            merchantId: settings.merchantId,
+            testMode: settings.testMode,
+            callbackUrl: settings.callbackUrl,
+            webhookUrl: settings.webhookUrl
+          },
+          timestamp: new Date().toISOString()
+        }
       });
 
       return true;

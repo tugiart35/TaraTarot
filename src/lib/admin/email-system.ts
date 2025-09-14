@@ -154,9 +154,11 @@ export class EmailSystemManager {
 
       // Audit log
       await logAdminAction('email_settings_updated' as AuditAction, 'email_settings' as ResourceType, {
-        smtpHost: settingsData.smtp_host,
-        smtpPort: settingsData.smtp_port,
-        fromEmail: settingsData.from_email
+        metadata: {
+          smtpHost: settingsData.smtp_host,
+          smtpPort: settingsData.smtp_port,
+          fromEmail: settingsData.from_email
+        }
       });
 
       return data;
@@ -318,8 +320,10 @@ export class EmailSystemManager {
 
       // Audit log
       await logAdminAction('email_template_created' as AuditAction, 'email_templates' as ResourceType, {
-        templateName: templateData.name,
-        templateType: templateData.template_type
+        metadata: {
+          templateName: templateData.name,
+          templateType: templateData.template_type
+        }
       });
 
       return data;
@@ -355,8 +359,10 @@ export class EmailSystemManager {
 
       // Audit log
       await logAdminAction('email_template_updated' as AuditAction, 'email_templates' as ResourceType, {
-        templateId: id,
-        updatedFields: Object.keys(templateData)
+        metadata: {
+          templateId: id,
+          updatedFields: Object.keys(templateData)
+        }
       });
 
       return data;
@@ -394,9 +400,11 @@ export class EmailSystemManager {
 
       // Audit log
       await logAdminAction('email_template_deleted' as AuditAction, 'email_templates' as ResourceType, {
-        templateId: id,
-        templateName: templateData?.name,
-        templateType: templateData?.template_type
+        metadata: {
+          templateId: id,
+          templateName: templateData?.name,
+          templateType: templateData?.template_type
+        }
       });
 
       return true;
