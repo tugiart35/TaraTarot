@@ -275,12 +275,13 @@ export class RateLimiter {
     const remaining = Math.max(0, rule.maxRequests - data.count);
     const retryAfter = allowed ? undefined : Math.ceil((data.resetTime - Date.now()) / 1000);
 
-    return {
+    const result: { allowed: boolean; remaining: number; resetTime: number; retryAfter?: number } = {
       allowed,
       remaining,
-      resetTime: data.resetTime,
-      retryAfter: retryAfter,
+      resetTime: data.resetTime
     };
+    if (retryAfter !== undefined) result.retryAfter = retryAfter;
+    return result;
   }
 
   // Check rate limit for request

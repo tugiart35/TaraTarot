@@ -297,8 +297,10 @@ export default function UsersPage() {
 
       // Log admin action
       await auditLogAdminAction('user_deleted', 'user', {
-        userId,
-        action: 'delete_user'
+        resourceId: userId,
+        metadata: {
+          action: 'delete_user'
+        }
       });
 
       // Delete user from profiles table
@@ -333,8 +335,10 @@ export default function UsersPage() {
 
       // Log admin action
       await auditLogAdminAction('user_banned', 'user', {
-        userId,
-        action: 'ban_user'
+        resourceId: userId,
+        metadata: {
+          action: 'ban_user'
+        }
       });
 
       // Update user status to suspended
@@ -369,8 +373,10 @@ export default function UsersPage() {
 
       // Log admin action
       await auditLogAdminAction('user_unbanned', 'user', {
-        userId,
-        action: 'unban_user'
+        resourceId: userId,
+        metadata: {
+          action: 'unban_user'
+        }
       });
 
       // Update user status to active

@@ -172,10 +172,11 @@ if (typeof window !== 'undefined') {
       const resetTime = check.resetTime;
       const minutes = resetTime ? Math.ceil((resetTime - Date.now()) / 60000) : 1;
       
-      return {
-        error: `Çok fazla deneme. ${minutes} dakika sonra tekrar deneyin.`,
-        resetTime: resetTime
+      const result: { error: string; resetTime?: number } = {
+        error: `Çok fazla deneme. ${minutes} dakika sonra tekrar deneyin.`
       };
+      if (resetTime !== undefined) result.resetTime = resetTime;
+      return result;
     }
 
     return fn(...args);
@@ -198,10 +199,11 @@ if (typeof window !== 'undefined') {
       const resetTime = check.resetTime;
       const minutes = resetTime ? Math.ceil((resetTime - Date.now()) / 60000) : 1;
       
-      return {
-        error: `Çok fazla deneme. ${minutes} dakika sonra tekrar deneyin.`,
-        resetTime: resetTime
+      const result: { error: string; resetTime?: number } = {
+        error: `Çok fazla deneme. ${minutes} dakika sonra tekrar deneyin.`
       };
+      if (resetTime !== undefined) result.resetTime = resetTime;
+      return result;
     }
 
     return await fn(...args);

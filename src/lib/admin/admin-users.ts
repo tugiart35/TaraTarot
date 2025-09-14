@@ -175,9 +175,14 @@ export class AdminUserManager {
 
       // Audit log
       await logAdminAction('admin_user_created', 'admin_users', {
-        targetUserId: userData.user_id,
-        role: userData.role,
-        permissions: permissions
+        resourceId: userData.user_id,
+        newValues: {
+          role: userData.role,
+          permissions: permissions
+        },
+        metadata: {
+          targetUserId: userData.user_id
+        }
       });
 
       return data;
@@ -236,8 +241,12 @@ export class AdminUserManager {
 
       // Audit log
       await logAdminAction('admin_user_updated', 'admin_users', {
-        targetUserId: userId,
-        updatedFields: Object.keys(updateData)
+        resourceId: userId,
+        newValues: updateData,
+        metadata: {
+          targetUserId: userId,
+          updatedFields: Object.keys(updateData)
+        }
       });
 
       return data;
@@ -285,9 +294,16 @@ export class AdminUserManager {
 
       // Audit log
       await logAdminAction('admin_user_deleted', 'admin_users', {
-        targetUserId: userId,
-        targetUserEmail: userData.email,
-        targetUserRole: userData.role
+        resourceId: userId,
+        oldValues: {
+          email: userData.email,
+          role: userData.role
+        },
+        metadata: {
+          targetUserId: userId,
+          targetUserEmail: userData.email,
+          targetUserRole: userData.role
+        }
       });
 
       return true;

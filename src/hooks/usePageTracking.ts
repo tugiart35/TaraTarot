@@ -60,11 +60,11 @@ export const usePageTracking = () => {
         const pageViewData: PageViewData = {
           page_path: pathname,
           page_title: document.title,
-          referrer: document.referrer || undefined,
           user_agent: navigator.userAgent,
           session_id: sessionIdRef.current,
           view_duration: viewDuration
         };
+        if (document.referrer) pageViewData.referrer = document.referrer;
 
         // Supabase'e kaydet
         const { error } = await supabase
@@ -100,12 +100,12 @@ export const usePageTracking = () => {
       const pageViewData: PageViewData = {
         page_path: pathname,
         page_title: document.title,
-        referrer: document.referrer || undefined,
         user_agent: navigator.userAgent,
         session_id: sessionIdRef.current,
         view_duration: Math.round((Date.now() - startTimeRef.current) / 1000),
         ...customData
       };
+      if (document.referrer) pageViewData.referrer = document.referrer;
 
       const { error } = await supabase
         .from('page_views')

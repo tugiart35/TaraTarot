@@ -134,9 +134,16 @@ export class APIKeyManager {
 
       // Audit log
       await logAdminAction('api_key_created', 'api_keys', {
-        keyId: data.id,
-        keyName: data.name,
-        serviceType: data.service_type
+        resourceId: data.id,
+        newValues: {
+          name: data.name,
+          service_type: data.service_type
+        },
+        metadata: {
+          keyId: data.id,
+          keyName: data.name,
+          serviceType: data.service_type
+        }
       });
 
       return data;
@@ -183,8 +190,12 @@ export class APIKeyManager {
 
       // Audit log
       await logAdminAction('api_key_updated', 'api_keys', {
-        keyId: id,
-        updatedFields: Object.keys(updateData)
+        resourceId: id,
+        newValues: updateData,
+        metadata: {
+          keyId: id,
+          updatedFields: Object.keys(updateData)
+        }
       });
 
       return data;
@@ -221,9 +232,16 @@ export class APIKeyManager {
 
       // Audit log
       await logAdminAction('api_key_deleted', 'api_keys', {
-        keyId: id,
-        keyName: keyData.name,
-        serviceType: keyData.service_type
+        resourceId: id,
+        oldValues: {
+          name: keyData.name,
+          service_type: keyData.service_type
+        },
+        metadata: {
+          keyId: id,
+          keyName: keyData.name,
+          serviceType: keyData.service_type
+        }
       });
 
       return true;
