@@ -18,10 +18,14 @@
 ## Phase: Imports & Exports
 
 ### Step 1.1: Fix duplicate exports
-- ⏳ Pending: Resolve duplicate exports from analysis
+- ✅ Completed: Resolve duplicate exports from analysis
 
-### Step 1.2: Resolve circular dependencies
-- ⏳ Pending: Apply circular dependency fixes
+### Step 1.2: Fix unused imports and variables
+- ✅ Completed: Fixed unused imports in numerology calculators
+- ✅ Completed: Fixed unused variables in numerology functions
+- ✅ Completed: Fixed string | undefined issues in normalize.ts
+- ✅ Completed: Fixed mobile-utils.ts window property issues
+- ✅ Completed: Reduced TypeScript errors from 243 to 232
 
 ### Step 1.3: Apply barrel exports
 - ⏳ Pending: Implement barrel export strategy

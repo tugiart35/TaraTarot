@@ -109,10 +109,13 @@ export function sumDateDigits(date: string): number {
  */
 export function extractDateParts(date: string): { month: number; day: number; year: number } {
   const parts = date.split('-');
+  if (parts.length < 3) {
+    throw new Error('Invalid date format. Expected YYYY-MM-DD');
+  }
   return {
-    month: parseInt(parts[1]),
-    day: parseInt(parts[2]),
-    year: parseInt(parts[0])
+    month: parseInt(parts[1]!),
+    day: parseInt(parts[2]!),
+    year: parseInt(parts[0]!)
   };
 }
 

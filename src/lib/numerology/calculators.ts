@@ -11,12 +11,9 @@ import {
   sumConsonantValues,
   sumDateDigits, 
   reduceToSingleDigit,
-  normalizeName,
-  normalizeDate,
   extractDateParts,
   getBirthdayNumber,
-  getAbsoluteDifference,
-  getLetterValue
+  getAbsoluteDifference
 } from './normalize';
 
 /**
@@ -58,7 +55,7 @@ export function calculateExpressionDestiny(firstName: string, lastName: string, 
   
   const expressionMeaning = getExpressionNumberMeaning(number);
   
-  const normalizedName = normalizeName(fullName);
+  // Name normalization not needed for this calculation
 
   // Fallback açıklama
   const fallbackDescription = locale === 'en' 
@@ -86,8 +83,8 @@ export function calculateSoulUrge(firstName: string, lastName: string): Numerolo
   const number = reduceToSingleDigit(sum);
   const isMasterNumber = MASTER_NUMBERS.includes(number as any);
   
-  const normalizedName = normalizeName(fullName);
-  const vowels = normalizedName.split('').filter(letter => ['A', 'E', 'I', 'O', 'U', 'Y'].includes(letter));
+  // Name normalization not needed for this calculation
+  // Vowel calculation not needed for this function
   
   return {
     number,
@@ -108,8 +105,8 @@ export function calculatePersonality(firstName: string, lastName: string, locale
   const number = reduceToSingleDigit(sum);
   const isMasterNumber = MASTER_NUMBERS.includes(number as any);
   
-  const normalizedName = normalizeName(fullName);
-  const consonants = normalizedName.split('').filter(letter => !['A', 'E', 'I', 'O', 'U'].includes(letter));
+  // Name normalization not needed for this calculation
+  // Consonant calculation not needed for this function
   
   // Kişilik sayısı anlamını al
   const personalityMeaning = getPersonalityNumberMeaning(number);
@@ -295,7 +292,7 @@ export function calculatePinnaclesChallenges(birthDate: string, locale: string =
  */
 export function calculatePersonalCycles(birthDate: string, targetDate: string, locale: string = 'tr'): NumerologyResult {
   const { month: birthMonth, day: birthDay } = extractDateParts(birthDate);
-  const { month: targetMonth, day: targetDay, year: targetYear } = extractDateParts(targetDate);
+  const { month: targetMonth, day: targetDay } = extractDateParts(targetDate);
   
   // Kişisel yıl
   const personalYear = reduceToSingleDigit(birthMonth + birthDay + sumDateDigits(targetDate));

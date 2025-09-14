@@ -95,7 +95,7 @@ export const getMobileBrowserInfo = (): MobileBrowserInfo => {
 
   // Extract version number
   const versionMatch = userAgent.match(/(\d+\.\d+)/);
-  const version = versionMatch ? versionMatch[1] : '';
+  const version = versionMatch ? versionMatch[1]! : '';
 
   return {
     isMobile: isMobile(),
@@ -219,7 +219,7 @@ export const getBiometricAuthInfo = async (): Promise<BiometricAuthInfo> => {
     }
 
     // Check for iOS Touch ID / Face ID
-    if (isIOS() && window.TouchID) {
+    if (isIOS() && (window as any).TouchID) {
       return {
         isSupported: true,
         type: 'fingerprint',
@@ -228,7 +228,7 @@ export const getBiometricAuthInfo = async (): Promise<BiometricAuthInfo> => {
     }
 
     // Check for Android fingerprint
-    if (isAndroid() && window.fingerprint) {
+    if (isAndroid() && (window as any).fingerprint) {
       return {
         isSupported: true,
         type: 'fingerprint',
