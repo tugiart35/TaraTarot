@@ -24,18 +24,11 @@
  * - SCALABLE: Enterprise-ready
  */
 
-import type { AuditLogEntry } from '@/types/auth.types';
 import type {
   AuditLogLevel,
   AuditLogCategory,
   EnhancedAuditLogEntry,
-  AuditLogContext,
-  AuditLogFilter,
-  AuditLogAggregation,
-  AuditLogExport,
-  AuditLogRetentionPolicy,
-  AuditLogAlert,
-  AuditLogDashboard
+  AuditLogFilter
 } from './audit-types';
 
 // Re-export types for backward compatibility
@@ -43,13 +36,7 @@ export type {
   AuditLogLevel,
   AuditLogCategory,
   EnhancedAuditLogEntry,
-  AuditLogContext,
-  AuditLogFilter,
-  AuditLogAggregation,
-  AuditLogExport,
-  AuditLogRetentionPolicy,
-  AuditLogAlert,
-  AuditLogDashboard
+  AuditLogFilter
 } from './audit-types';
 
 // Audit log statistics

@@ -107,6 +107,7 @@ export interface AuditLogFilter {
   category?: AuditLogCategory;
   level?: AuditLogLevel;
   source?: string;
+  action?: string;
   startDate?: string;
   endDate?: string;
   tags?: string[];
