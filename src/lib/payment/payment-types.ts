@@ -22,7 +22,7 @@
  * - GENİŞLETİLEBİLİR: Yeni payment provider'lar için
  */
 
-import type { UserRole, SubscriptionType, SubscriptionStatus } from '@/types/auth.types';
+import type { SubscriptionType, SubscriptionStatus } from '@/types/auth.types';
 
 // Payment providers
 export type PaymentProvider = 'stripe' | 'paypal' | 'apple_pay' | 'google_pay' | 'shopier';

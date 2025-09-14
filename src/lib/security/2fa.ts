@@ -448,7 +448,7 @@ export class TwoFactorManager {
       return {
         success: isValid,
         backupCodeUsed,
-        error: isValid ? undefined : 'Invalid 2FA code',
+        ...(isValid ? {} : { error: 'Invalid 2FA code' }),
       };
     } catch (error) {
       return {

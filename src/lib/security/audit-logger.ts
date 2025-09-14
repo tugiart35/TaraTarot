@@ -24,8 +24,7 @@
  * - SCALABLE: Enterprise-ready
  */
 
-import { supabase } from '@/lib/supabase/client';
-import type { AuditLogEntry, UserRole } from '@/types/auth.types';
+import type { AuditLogEntry } from '@/types/auth.types';
 
 // Audit log levels
 export type AuditLogLevel = 'info' | 'warning' | 'error' | 'critical';
@@ -291,7 +290,7 @@ export class AuditLogger {
       level,
       category: 'security',
       source: 'web',
-      details,
+      details: details ?? {},
     });
   }
 

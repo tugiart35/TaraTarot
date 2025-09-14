@@ -7,9 +7,11 @@
 - ✅ Tagged: `refactor-step-0`
 
 ### Step 0.2: tsconfig + eslint/prettier normalization
-- 🔄 In progress: Normalize path aliases
-- 🔄 In progress: Update lint/prettier configs minimally
-- ⏳ Pending: No code moves yet
+- ✅ Completed: Normalize path aliases
+- ✅ Completed: Update lint/prettier configs minimally
+- ✅ Completed: Fixed duplicate exports in multiple files
+- ✅ Completed: Fixed exactOptionalPropertyTypes issues
+- ✅ Completed: Reduced TypeScript errors from 259 to 243
 
 ---
 

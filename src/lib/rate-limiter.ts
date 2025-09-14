@@ -174,7 +174,7 @@ if (typeof window !== 'undefined') {
       
       return {
         error: `Çok fazla deneme. ${minutes} dakika sonra tekrar deneyin.`,
-        resetTime
+        resetTime: resetTime ?? undefined
       };
     }
 
@@ -200,7 +200,7 @@ if (typeof window !== 'undefined') {
       
       return {
         error: `Çok fazla deneme. ${minutes} dakika sonra tekrar deneyin.`,
-        resetTime
+        resetTime: resetTime ?? undefined
       };
     }
 

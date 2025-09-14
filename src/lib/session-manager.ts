@@ -118,7 +118,7 @@ class SessionManager {
       isAuthenticated: true,
       user: session.user,
       expiresAt: session.expires_at ? session.expires_at * 1000 : null,
-      refreshToken: session.refresh_token,
+      refreshToken: session.refresh_token ?? null,
       lastRefresh: Date.now()
     };
 

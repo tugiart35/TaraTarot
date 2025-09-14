@@ -24,7 +24,7 @@
  * - SCALABLE: Enterprise-ready
  */
 
-import type { RateLimitConfig } from '@/types/auth.types';
+// RateLimitConfig type is defined inline below
 
 // Rate limit store interface
 interface RateLimitStore {
@@ -279,7 +279,7 @@ export class RateLimiter {
       allowed,
       remaining,
       resetTime: data.resetTime,
-      retryAfter,
+      retryAfter: retryAfter ?? undefined,
     };
   }
 
