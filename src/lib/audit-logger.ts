@@ -38,7 +38,11 @@ export type AuditAction =
   | 'admin_user_delete'
   | 'data_export'
   | 'bulk_operation'
-  | 'security_event';
+  | 'security_event'
+  | 'email_settings_updated'
+  | 'email_template_created'
+  | 'email_template_updated'
+  | 'email_template_deleted';
 
 export type ResourceType = 
   | 'user'
@@ -47,11 +51,15 @@ export type ResourceType =
   | 'order'
   | 'transaction'
   | 'settings'
-  | 'system';
+  | 'system'
+  | 'email_settings'
+  | 'email_templates';
 
 class AuditLogger {
   private queue: AuditLogEntry[] = [];
   private isFlushingQueue = false;
+  private retryCount = 0;
+  private maxRetries = 3;
 
   /**
    * Log an admin action
@@ -70,31 +78,47 @@ class AuditLogger {
       status?: 'success' | 'failure' | 'pending';
     }
   ): Promise<void> {
-    const entry: AuditLogEntry = {
-      user_id: data.userId,
-      user_email: data.userEmail,
-      action,
-      resource_type: resourceType,
-      resource_id: data.resourceId,
-      old_values: data.oldValues,
-      new_values: data.newValues,
-      ip_address: await this.getClientIP(),
-      user_agent: this.getUserAgent(),
-      metadata: data.metadata,
-      timestamp: new Date().toISOString(),
-      severity: data.severity || this.getSeverityForAction(action),
-      status: data.status || 'success'
-    };
+    try {
+      const entry: AuditLogEntry = {
+        user_id: data.userId,
+        user_email: data.userEmail,
+        action,
+        resource_type: resourceType,
+        resource_id: data.resourceId,
+        old_values: data.oldValues,
+        new_values: data.newValues,
+        ip_address: await this.getClientIP(),
+        user_agent: this.getUserAgent(),
+        metadata: data.metadata,
+        timestamp: new Date().toISOString(),
+        severity: data.severity || this.getSeverityForAction(action),
+        status: data.status || 'success'
+      };
 
-    // Store in client-side queue
-    this.queue.push(entry);
+      // Store in client-side queue
+      this.queue.push(entry);
 
-    if (process.env.NODE_ENV === 'development') {
-      console.log('🔍 [AUDIT]', entry);
+      if (process.env.NODE_ENV === 'development') {
+        console.log('🔍 [AUDIT]', entry);
+      }
+
+      // Flush queue to Supabase (async, don't wait)
+      this.flushQueue().catch(error => {
+        // Fallback: Store in localStorage if Supabase fails
+        this.storeInLocalStorage(entry);
+        logError('Audit log fallback to localStorage', error, {
+          action,
+          resourceType,
+          userId: data.userId
+        });
+      });
+    } catch (error) {
+      logError('Failed to create audit log entry', error, {
+        action,
+        resourceType,
+        userId: data.userId
+      });
     }
-
-    // Flush queue to Supabase
-    this.flushQueue();
   }
 
   /**
@@ -269,6 +293,71 @@ class AuditLogger {
   }
 
   /**
+   * Validate UUID format
+   */
+  private isValidUUID(uuid: string): boolean {
+    const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+    return uuidRegex.test(uuid);
+  }
+
+  /**
+   * Store audit log in localStorage as fallback
+   */
+  private storeInLocalStorage(entry: AuditLogEntry): void {
+    try {
+      if (typeof window !== 'undefined' && window.localStorage) {
+        const key = `audit_log_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+        const existingLogs = this.getLocalStorageLogs();
+        existingLogs.push(entry);
+        
+        // Keep only last 50 logs to prevent localStorage overflow
+        if (existingLogs.length > 50) {
+          existingLogs.splice(0, existingLogs.length - 50);
+        }
+        
+        localStorage.setItem('audit_logs_fallback', JSON.stringify(existingLogs));
+        
+        if (process.env.NODE_ENV === 'development') {
+          console.warn('📦 [AUDIT] Stored in localStorage fallback:', entry);
+        }
+      }
+    } catch (error) {
+      logError('Failed to store audit log in localStorage', error);
+    }
+  }
+
+  /**
+   * Get audit logs from localStorage
+   */
+  private getLocalStorageLogs(): AuditLogEntry[] {
+    try {
+      if (typeof window !== 'undefined' && window.localStorage) {
+        const logs = localStorage.getItem('audit_logs_fallback');
+        return logs ? JSON.parse(logs) : [];
+      }
+    } catch (error) {
+      logError('Failed to get audit logs from localStorage', error);
+    }
+    return [];
+  }
+
+  /**
+   * Clear localStorage audit logs
+   */
+  public clearLocalStorageLogs(): void {
+    try {
+      if (typeof window !== 'undefined' && window.localStorage) {
+        localStorage.removeItem('audit_logs_fallback');
+        if (process.env.NODE_ENV === 'development') {
+          console.log('🧹 [AUDIT] Cleared localStorage fallback logs');
+        }
+      }
+    } catch (error) {
+      logError('Failed to clear localStorage audit logs', error);
+    }
+  }
+
+  /**
    * Flush the audit log queue to Supabase
    */
   private async flushQueue(): Promise<void> {
@@ -280,10 +369,32 @@ class AuditLogger {
       // Supabase'e audit log'ları gönder
       await this.persistToSupabase(this.queue);
       
-      // Başarılı olduktan sonra queue'yu temizle
+      // Başarılı olduktan sonra queue'yu temizle ve retry count'u sıfırla
       this.queue = [];
+      this.retryCount = 0;
     } catch (error) {
-      logError('Failed to flush audit log queue to Supabase', error);
+      // Hata durumunda queue'yu temizleme, tekrar deneme için sakla
+      logError('Failed to flush audit log queue to Supabase', error, {
+        queueLength: this.queue.length,
+        retryCount: this.retryCount,
+        action: 'audit_log_flush'
+      });
+      
+      this.retryCount++;
+      
+      // Çok fazla hata varsa queue'yu temizle (sonsuz döngüyü önle)
+      if (this.queue.length > 100 || this.retryCount > this.maxRetries) {
+        console.warn('Audit log queue too large or max retries exceeded, clearing to prevent memory issues');
+        this.queue = [];
+        this.retryCount = 0;
+      } else {
+        // Retry için kısa bir süre bekle
+        setTimeout(() => {
+          if (this.queue.length > 0) {
+            this.flushQueue();
+          }
+        }, 5000 * this.retryCount); // Exponential backoff
+      }
     } finally {
       this.isFlushingQueue = false;
     }
@@ -294,29 +405,44 @@ class AuditLogger {
    */
   private async persistToSupabase(logs: AuditLogEntry[]): Promise<void> {
     try {
+      // Log'ları temizle ve doğrula
+      const cleanedLogs = logs.map(log => ({
+        user_id: this.isValidUUID(log.user_id) ? log.user_id : '00000000-0000-0000-0000-000000000000',
+        user_email: log.user_email || null,
+        action: log.action || 'unknown',
+        resource_type: log.resource_type || 'system',
+        resource_id: log.resource_id || null,
+        old_values: log.old_values || null,
+        new_values: log.new_values || null,
+        ip_address: log.ip_address || 'unknown',
+        user_agent: log.user_agent || 'unknown',
+        metadata: log.metadata || {},
+        timestamp: log.timestamp || new Date().toISOString(),
+        severity: log.severity || 'low',
+        status: log.status || 'success'
+      }));
+
       const { error } = await supabase
         .from('audit_logs')
-        .insert(logs.map(log => ({
-          user_id: log.user_id,
-          user_email: log.user_email,
-          action: log.action,
-          resource_type: log.resource_type,
-          resource_id: log.resource_id,
-          old_values: log.old_values,
-          new_values: log.new_values,
-          ip_address: log.ip_address,
-          user_agent: log.user_agent,
-          metadata: log.metadata,
-          timestamp: log.timestamp,
-          severity: log.severity,
-          status: log.status
-        })));
+        .insert(cleanedLogs);
 
       if (error) {
+        logError('Supabase audit log insert error', error, {
+          logCount: logs.length,
+          errorCode: error.code,
+          errorMessage: error.message
+        });
         throw error;
       }
+
+      if (process.env.NODE_ENV === 'development') {
+        console.log(`✅ [AUDIT] Successfully persisted ${logs.length} audit logs`);
+      }
     } catch (error) {
-      logError('Failed to persist audit logs to Supabase', error);
+      logError('Failed to persist audit logs to Supabase', error, {
+        logCount: logs.length,
+        action: 'audit_log_persist'
+      });
       throw error;
     }
   }

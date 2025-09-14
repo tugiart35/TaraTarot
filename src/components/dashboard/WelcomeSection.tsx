@@ -2,6 +2,7 @@
 
 import { UserProfile } from '@/types/dashboard.types';
 import { formatDate, getMemberSince } from '@/utils/dashboard-utils';
+import { useTranslations } from '@/hooks/useTranslations';
 
 interface WelcomeSectionProps {
   profile: UserProfile | null;
@@ -11,6 +12,7 @@ interface WelcomeSectionProps {
 
 // Hoş geldin bölümü bileşeni
 export default function WelcomeSection({ profile, user, isAdmin }: WelcomeSectionProps) {
+  const { t } = useTranslations();
   return (
     <div className="mb-8">
       <div className="card-mystic p-8 text-text-celestial mystic-glow">
@@ -25,11 +27,11 @@ export default function WelcomeSection({ profile, user, isAdmin }: WelcomeSectio
           <div className="flex-1 w-full">
             {/* Hoş geldin mesajı */}
             <h1 className="text-heading-1 text-gold mb-3">
-              Hoş geldiniz, {profile?.display_name || user?.email?.split('@')[0] || 'Mistik Kullanıcı'} ✨
+              {t('dashboard.welcome', 'Hoş geldiniz')}, {profile?.display_name || user?.email?.split('@')[0] || t('dashboard.user', 'Mistik Kullanıcı')} ✨
             </h1>
             {/* Üyelik süresi */}
             <p className="text-text-mystic text-body-large mb-4">
-              Mistik yolculuğunuz {profile?.created_at ? getMemberSince(profile.created_at) : 'yeni'} süredir devam ediyor
+              {t('dashboard.membershipDuration', 'Mistik yolculuğunuz')} {profile?.created_at ? getMemberSince(profile.created_at) : t('common.new', 'yeni')} süredir devam ediyor
             </p>
             {/* E-posta adresi */}
             {user?.email && (
@@ -41,14 +43,14 @@ export default function WelcomeSection({ profile, user, isAdmin }: WelcomeSectio
             {isAdmin && (
               <div className="mb-3">
                 <span className="bg-red-500/20 text-red-400 px-3 py-1 rounded-full text-sm border border-red-500/30">
-                  👑 Admin
+                  👑 {t('dashboard.admin', 'Admin')}
                 </span>
               </div>
             )}
             {/* Üyelik tarihi */}
             <div className="flex flex-wrap items-center gap-3">
               <span className="bg-crystal-clear px-3 py-1 rounded-full text-sm border border-gold/30">
-                {profile?.created_at ? formatDate(profile.created_at) : 'Yeni üye'}
+                {profile?.created_at ? formatDate(profile.created_at) : t('common.new', 'Yeni üye')}
               </span>
             </div>
           </div>

@@ -26,6 +26,7 @@ Kullanım durumu:
 */
 
 import { ReactNode } from 'react';
+import { PageTrackingProvider } from '@/components/PageTrackingProvider';
 
 interface LocaleLayoutProps {
   children: ReactNode;
@@ -39,9 +40,9 @@ export default async function LocaleLayout({
   await params;
   
   return (
-    <div>
+    <PageTrackingProvider>
       {children}
-    </div>
+    </PageTrackingProvider>
   );
 }
 

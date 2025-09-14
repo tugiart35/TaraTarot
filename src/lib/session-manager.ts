@@ -238,7 +238,7 @@ class SessionManager {
     this.clearSession();
     
     // Redirect to auth page if we're in admin area
-    if (typeof window !== 'undefined' && window.location.pathname.startsWith('/admin')) {
+    if (typeof window !== 'undefined' && window.location.pathname.startsWith('/pakize')) {
       window.location.href = '/auth?expired=true';
     }
   }

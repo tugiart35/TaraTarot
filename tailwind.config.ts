@@ -17,6 +17,19 @@ const config: Config = {
   darkMode: 'class', // Enable dark mode support
   theme: {
     extend: {
+      // Mobile optimization utilities
+      spacing: {
+        'safe-top': 'env(safe-area-inset-top)',
+        'safe-bottom': 'env(safe-area-inset-bottom)',
+        'safe-left': 'env(safe-area-inset-left)',
+        'safe-right': 'env(safe-area-inset-right)',
+      },
+      minHeight: {
+        'touch-target': '44px', // Minimum touch target size
+      },
+      minWidth: {
+        'touch-target': '44px',
+      },
       // Enhanced mystical color system
       colors: {
         // Primary mystical colors - dark navy blue base

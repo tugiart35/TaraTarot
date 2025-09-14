@@ -27,7 +27,7 @@ export default function CreditPackages({
           href="/dashboard/packages" 
           className="text-gold hover:text-gold/80 transition-colors text-sm flex items-center space-x-1"
         >
-          <span>Tümünü Gör</span>
+          <span>{translate('common.viewAll', 'Tümünü Gör')}</span>
           <span>→</span>
         </a>
       </div>
@@ -48,7 +48,7 @@ export default function CreditPackages({
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
                   <div className="bg-gold text-cosmic-black px-3 py-1 rounded-full text-xs font-bold flex items-center space-x-1">
                     <Star className="h-3 w-3" />
-                    <span>Popüler</span>
+                    <span>{translate('common.popular', 'Popüler')}</span>
                   </div>
                 </div>
               )}
@@ -82,7 +82,7 @@ export default function CreditPackages({
                   disabled={paymentLoading} // Ödeme yüklenirken devre dışı
                   className={`w-full ${style.buttonClass} text-center block ${paymentLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
                 >
-                  {paymentLoading ? 'Yönlendiriliyor...' : 'Satın Al'}
+                  {paymentLoading ? translate('common.processing', 'Yönlendiriliyor...') : translate('common.buy', 'Satın Al')}
                 </button>
               </div>
             </div>

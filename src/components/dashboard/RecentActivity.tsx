@@ -3,6 +3,7 @@
 import { Reading } from '@/types/dashboard.types';
 import { formatDate, downloadReading } from '@/utils/dashboard-utils';
 import { Star, BookOpen, Hash, Eye, Download, Heart, Sparkles, TrendingUp, Clock, Target } from 'lucide-react';
+import { useTranslations } from '@/hooks/useTranslations';
 
 interface RecentActivityProps {
   recentReadings: Reading[];
@@ -13,6 +14,7 @@ interface RecentActivityProps {
 
 // Son aktiviteler bileşeni
 export default function RecentActivity({ recentReadings, setSelectedReading, totalReadings = 0, isAdmin = false }: RecentActivityProps) {
+  const { t } = useTranslations();
   // Hesaplanan değerler
   const todayReadings = recentReadings.filter(reading => {
     const today = new Date().toDateString();
@@ -46,14 +48,14 @@ export default function RecentActivity({ recentReadings, setSelectedReading, tot
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <BookOpen className="h-5 w-5 text-gold" />
-              <h3 className="text-heading-3 text-gold">Son Okumalar</h3>
+              <h3 className="text-heading-3 text-gold">{t('dashboard.recentReadings', 'Son Okumalar')}</h3>
               <span className="bg-gold/20 text-gold px-2 py-1 rounded-full text-xs font-medium">
                 {recentReadings.length}
               </span>
             </div>
             {/* Tüm okumaları gör linki */}
             <a href="/dashboard/readings" className="text-gold hover:text-gold/80 text-sm font-medium transition-colors duration-200 hover:bg-gold/10 px-3 py-1 rounded-lg">
-              Tümünü Gör →
+              {t('common.viewAll', 'Tümünü Gör')} →
             </a>
           </div>
         </div>
@@ -145,7 +147,7 @@ export default function RecentActivity({ recentReadings, setSelectedReading, tot
         <div className="p-6 border-b border-cosmic-fog">
           <div className="flex items-center space-x-2">
             <TrendingUp className="h-5 w-5 text-gold" />
-            <h3 className="text-heading-3 text-gold">Hızlı İstatistikler</h3>
+            <h3 className="text-heading-3 text-gold">{t('dashboard.statistics', 'Hızlı İstatistikler')}</h3>
           </div>
         </div>
         

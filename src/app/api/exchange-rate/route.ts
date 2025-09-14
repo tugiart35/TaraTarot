@@ -1,7 +1,7 @@
 /*
 info:
 Bağlantılı dosyalar:
-- app/[locale]/admin/packages/page.tsx: Admin paket yönetimi (gerekli)
+- app/[locale]/pakize/packages/page.tsx: Pakize paket yönetimi (gerekli)
 - lib/utils/currency-utils.ts: Para birimi yardımcı fonksiyonları (gerekli)
 
 Dosyanın amacı:

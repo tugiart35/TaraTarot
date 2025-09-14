@@ -33,6 +33,7 @@ import { X, Download, Calendar, Star, Heart, Hash, Eye, MessageSquare, BookOpen,
 import Image from 'next/image';
 import { getCardImagePath } from '@/features/tarot/lib/a-tarot-helpers';
 import type { TarotCard } from '@/types/tarot';
+import { useTranslations } from '@/hooks/useTranslations';
 
 interface Reading {
   id: string;
@@ -58,10 +59,13 @@ interface ReadingDetailModalProps {
 }
 
 export default function ReadingDetailModal({ reading, isOpen, onClose }: ReadingDetailModalProps) {
+  const { t } = useTranslations();
+  
   if (!isOpen || !reading) return null;
 
   const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString('tr-TR', {
+    const locale = t('common.locale', 'tr-TR');
+    return new Date(dateString).toLocaleDateString(locale, {
       day: 'numeric',
       month: 'long',
       year: 'numeric',
@@ -90,19 +94,19 @@ export default function ReadingDetailModal({ reading, isOpen, onClose }: Reading
     switch(status) {
       case 'completed': 
         return { 
-          text: 'Tamamlandı', 
+          text: t('readingModal.completed', 'Tamamlandı'), 
           color: 'bg-green-500/20 text-green-400 border-green-500/30',
           icon: '✅'
         };
       case 'reviewed': 
         return { 
-          text: 'İncelendi', 
+          text: t('readingModal.reviewed', 'İncelendi'), 
           color: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30',
           icon: '👁️'
         };
       case 'pending': 
         return { 
-          text: 'Beklemede', 
+          text: t('readingModal.pending', 'Beklemede'), 
           color: 'bg-blue-500/20 text-blue-400 border-blue-500/30',
           icon: '⏳'
         };
@@ -279,7 +283,7 @@ export default function ReadingDetailModal({ reading, isOpen, onClose }: Reading
       pdf.addImage(imgData, 'JPEG', x, y, imgWidth, imgHeight, undefined, 'FAST');
 
       // PDF'i indir
-      const fileName = `tarot-okuma-${reading.id.slice(0, 8)}-${new Date().toISOString().split('T')[0]}.pdf`;
+      const fileName = `${t('readingModal.filePrefix', 'tarot-okuma')}-${reading.id.slice(0, 8)}-${new Date().toISOString().split('T')[0]}.pdf`;
       pdf.save(fileName);
 
       // Stilleri temizle
@@ -291,7 +295,7 @@ export default function ReadingDetailModal({ reading, isOpen, onClose }: Reading
 
     } catch (error) {
       console.error('PDF oluşturma hatası:', error);
-      alert('PDF oluşturulurken bir hata oluştu. Lütfen tekrar deneyin.');
+      alert(t('readingModal.pdfError', 'PDF oluşturulurken bir hata oluştu. Lütfen tekrar deneyin.'));
       
       // Hata durumunda da stilleri temizle
       const modalContent = document.querySelector('[data-modal-content]') as HTMLElement;
@@ -461,7 +465,7 @@ export default function ReadingDetailModal({ reading, isOpen, onClose }: Reading
                 <span className="text-2xl">❤️</span>
               </div>
               <h2 className="text-2xl font-bold bg-gradient-to-r from-pink-400 to-red-400 bg-clip-text text-transparent">
-                Aşk Açılımı
+                {t('readingModal.loveSpread', 'Aşk Açılımı')}
               </h2>
             </div>
           )}
@@ -480,12 +484,12 @@ export default function ReadingDetailModal({ reading, isOpen, onClose }: Reading
 
                 // Pozisyon başlıklarını al
                 const positionTitles = [
-                  'İlgi Duyduğun Kişi',
-                  'Fiziksel/Cinsel Bağlantı', 
-                  'Duygusal/Ruhsal Bağlantı',
-                  'Uzun Vadeli Sonuç'
+                  t('readingModal.position1', 'İlgi Duyduğun Kişi'),
+                  t('readingModal.position2', 'Fiziksel/Cinsel Bağlantı'), 
+                  t('readingModal.position3', 'Duygusal/Ruhsal Bağlantı'),
+                  t('readingModal.position4', 'Uzun Vadeli Sonuç')
                 ];
-                const positionTitle = positionTitles[index] || `Pozisyon ${index + 1}`;
+                const positionTitle = positionTitles[index] || `${t('readingModal.position', 'Pozisyon')} ${index + 1}`;
 
 
                 // Yorum metnini bul
@@ -527,7 +531,7 @@ export default function ReadingDetailModal({ reading, isOpen, onClose }: Reading
                         </div>
                         {isReversed && (
                           <div className="absolute top-1 right-1 bg-red-500/90 text-white text-xs px-1.5 py-0.5 rounded-full font-semibold">
-                      Ters
+                      {t('readingModal.reversed', 'Ters')}
                     </div>
                   )}
                 </div>
@@ -538,7 +542,7 @@ export default function ReadingDetailModal({ reading, isOpen, onClose }: Reading
                           {positionTitle}
                         </h4>
                         <p className="text-gold font-semibold text-sm">
-                          {cardName} {isReversed ? '(Ters)' : '(Düz)'}
+                          {cardName} {isReversed ? `(${t('readingModal.reversed', 'Ters')})` : `(${t('readingModal.upright', 'Düz')})`}
                         </p>
                       </div>
                     </div>
@@ -599,9 +603,9 @@ export default function ReadingDetailModal({ reading, isOpen, onClose }: Reading
       } else {
         // Eski yapı: sadece cevaplar
         const questionMap = {
-          concern: 'Aşk hayatınızda sizi en çok endişelendiren konu nedir?',
-          understanding: 'Bu aşk açılımı ile neyi anlamak istiyorsunuz?',
-          emotional: 'Şu anda duygusal olarak nasıl hissediyorsunuz?'
+          concern: t('readingModal.question1', 'Aşk hayatınızda sizi en çok endişelendiren konu nedir?'),
+          understanding: t('readingModal.question2', 'Bu aşk açılımı ile neyi anlamak istiyorsunuz?'),
+          emotional: t('readingModal.question3', 'Şu anda duygusal olarak nasıl hissediyorsunuz?')
         };
 
         Object.entries(questions.userQuestions).forEach(([key, answer]) => {
@@ -616,9 +620,9 @@ export default function ReadingDetailModal({ reading, isOpen, onClose }: Reading
     } else {
       // En eski yapı: direkt questions içinde
       const questionMap = {
-        concern: 'Aşk hayatınızda sizi en çok endişelendiren konu nedir?',
-        understanding: 'Bu aşk açılımı ile neyi anlamak istiyorsunuz?',
-        emotional: 'Şu anda duygusal olarak nasıl hissediyorsunuz?'
+        concern: t('readingModal.question1', 'Aşk hayatınızda sizi en çok endişelendiren konu nedir?'),
+        understanding: t('readingModal.question2', 'Bu aşk açılımı ile neyi anlamak istiyorsunuz?'),
+        emotional: t('readingModal.question3', 'Şu anda duygusal olarak nasıl hissediyorsunuz?')
       };
 
       Object.entries(questions).forEach(([key, answer]) => {
@@ -662,9 +666,9 @@ export default function ReadingDetailModal({ reading, isOpen, onClose }: Reading
             </div>
             <div>
                 <h2 className="text-2xl font-bold bg-gradient-to-r from-gold to-yellow-400 bg-clip-text text-transparent">
-                  {reading.title || 'Mistik Okuma'}
+                  {reading.title || t('readingModal.mysticReading', 'Mistik Okuma')}
                 </h2>
-                <p className="text-lavender/90">{reading.spread_name || 'Genel Yayılım'}</p>
+                <p className="text-lavender/90">{reading.spread_name || t('readingModal.generalSpread', 'Genel Yayılım')}</p>
               </div>
           </div>
           <button
@@ -686,7 +690,7 @@ export default function ReadingDetailModal({ reading, isOpen, onClose }: Reading
                   <Calendar className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-lavender mb-1">Okuma Tarihi</p>
+                  <p className="text-sm font-semibold text-lavender mb-1">{t('readingModal.readingDate', 'Okuma Tarihi')}</p>
                   <p className="font-bold text-white">{formatDate(reading.created_at)}</p>
                 </div>
               </div>
@@ -698,8 +702,8 @@ export default function ReadingDetailModal({ reading, isOpen, onClose }: Reading
                   <Star className="h-6 w-6 text-night" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-lavender mb-1">Kredi Maliyeti</p>
-                  <p className="font-bold text-white">{reading.cost_credits || 50} kredi</p>
+                  <p className="text-sm font-semibold text-lavender mb-1">{t('readingModal.creditCost', 'Kredi Maliyeti')}</p>
+                  <p className="font-bold text-white">{reading.cost_credits || 50} {t('common.credits', 'kredi')}</p>
                 </div>
               </div>
             </div>
@@ -710,7 +714,7 @@ export default function ReadingDetailModal({ reading, isOpen, onClose }: Reading
                   <Eye className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-lavender mb-1">Durum</p>
+                  <p className="text-sm font-semibold text-lavender mb-1">{t('readingModal.status', 'Durum')}</p>
                   <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold border ${statusInfo.color}`}>
                     <span className="mr-1">{statusInfo.icon}</span>
                     {statusInfo.text}
@@ -728,8 +732,8 @@ export default function ReadingDetailModal({ reading, isOpen, onClose }: Reading
                   <MessageSquare className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white">Sorular ve Cevaplar</h3>
-                  <p className="text-lavender/80">Mistik rehberliğiniz için sorularınız</p>
+                  <h3 className="text-xl font-bold text-white">{t('readingModal.questionsAnswers', 'Sorular ve Cevaplar')}</h3>
+                  <p className="text-lavender/80">{t('readingModal.questionsDesc', 'Mistik rehberliğiniz için sorularınız')}</p>
                 </div>
               </div>
               <div className="bg-gradient-to-r from-lavender/5 to-purple-500/5 backdrop-blur-sm rounded-xl p-6 border border-lavender/20">
@@ -747,8 +751,8 @@ export default function ReadingDetailModal({ reading, isOpen, onClose }: Reading
                 <BookOpen className="h-6 w-6 text-night" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white">Mistik Yorumlama</h3>
-                <p className="text-lavender/80">Tarot kartlarının anlamı ve rehberliği</p>
+                <h3 className="text-xl font-bold text-white">{t('readingModal.interpretation', 'Mistik Yorumlama')}</h3>
+                <p className="text-lavender/80">{t('readingModal.interpretationDesc', 'Tarot kartlarının anlamı ve rehberliği')}</p>
               </div>
             </div>
             
@@ -762,7 +766,7 @@ export default function ReadingDetailModal({ reading, isOpen, onClose }: Reading
                 <div className="p-3 bg-gradient-to-br from-gold to-yellow-500 rounded-xl shadow-lg">
                   <Star className="h-6 w-6 text-night" />
                 </div>
-                <h3 className="text-xl font-bold text-white">Mistik Notlar</h3>
+                <h3 className="text-xl font-bold text-white">{t('readingModal.mysticNotes', 'Mistik Notlar')}</h3>
               </div>
               <div className="bg-gradient-to-r from-gold/5 to-yellow-500/5 backdrop-blur-sm rounded-xl p-4 border border-gold/20">
                 <p className="text-lavender/90 leading-relaxed">
@@ -779,14 +783,14 @@ export default function ReadingDetailModal({ reading, isOpen, onClose }: Reading
             onClick={onClose}
             className="px-6 py-3 bg-gradient-to-r from-lavender/20 to-purple-500/20 hover:from-lavender/30 hover:to-purple-500/30 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 border border-lavender/30"
           >
-            Kapat
+            {t('readingModal.close', 'Kapat')}
           </button>
           <button 
             onClick={handleDownload}
             className="px-6 py-3 bg-gradient-to-r from-gold to-yellow-500 hover:from-gold/80 hover:to-yellow-500/80 text-night font-semibold rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gold/20 flex items-center space-x-2"
           >
             <Download className="h-4 w-4" />
-            <span>PDF İndir</span>
+            <span>{t('readingModal.downloadPdf', 'PDF İndir')}</span>
           </button>
         </div>
       </div>

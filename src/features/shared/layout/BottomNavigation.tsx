@@ -120,19 +120,23 @@ function LanguageSelector() {
         pathWithoutLocale = '/';
       }
 
-      // Yeni path oluştur
+      // Yeni path oluştur - mevcut sayfayı koru
       const newPath =
         pathWithoutLocale === '/'
-          ? `/${locale}`
+          ? `/${locale}/tarotokumasi`
           : `/${locale}${pathWithoutLocale}`;
 
       // Dropdown'ı kapat
       setIsOpen(false);
 
+      // Cookie'yi güncelle - dil tercihini kaydet
+      document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=31536000; SameSite=Lax`;
+
       // Doğrudan window.location ile yönlendirme
       window.location.href = newPath;
     } catch (error) {
       // Dil değiştirme hatası sessizce işlenir
+      console.error('Language change error:', error);
     }
   };
 
@@ -209,7 +213,11 @@ export default function BottomNavigation() {
   };
 
   // t fonksiyonunun doğru şekilde çalıştığından emin ol
-  const navigationItems = getNavigationItems(currentLocale, isAuthenticated, translate);
+  const navigationItems = getNavigationItems(
+    currentLocale,
+    isAuthenticated,
+    translate
+  );
 
   return (
     <nav className='fixed bottom-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-md border-t border-slate-700'>

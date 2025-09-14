@@ -1,21 +1,21 @@
 /*
  * DOSYA ANALİZİ - MIDDLEWARE (PRODUCTION-READY)
- * 
+ *
  * BAĞLANTILI DOSYALAR:
  * - src/i18n/config.ts (i18n konfigürasyonu)
  * - src/lib/i18n/paths.ts (dil yolları)
  * - messages/tr.json, en.json, sr.json (çeviri dosyaları)
  * - @/types/auth.types.ts (Auth types)
- * 
+ *
  * DOSYA AMACI:
  * Production-ready Next.js middleware with enhanced security features.
  * URL routing, locale yönlendirmeleri, auth kontrolü, rate limiting ve güvenlik.
- * 
+ *
  * SUPABASE DEĞİŞKENLERİ VE TABLOLARI:
  * - supabase.auth.getSession() - Session kontrolü
  * - auth.users tablosu (otomatik Supabase tablosu)
  * - user_metadata.role - Role-based access control
- * 
+ *
  * GÜVENLİK ÖZELLİKLERİ:
  * - Rate limiting
  * - CSRF protection
@@ -23,7 +23,7 @@
  * - Bot detection
  * - Auth route protection
  * - Session validation
- * 
+ *
  * KULLANIM DURUMU:
  * - GEREKLİ: Ana routing middleware
  * - GÜVENLİ: Production-ready with security enhancements
@@ -33,6 +33,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createMiddlewareClient } from '@supabase/auth-helpers-nextjs';
 import type { UserRole } from '@/types/auth.types';
+import { checkMaintenanceMode } from './middleware/maintenance';
 
 // Rate limiting kaldırıldı - development için
 
@@ -56,7 +57,7 @@ const securityHeaders = {
     "base-uri 'self'",
     "form-action 'self'",
     "frame-ancestors 'none'",
-    "upgrade-insecure-requests"
+    'upgrade-insecure-requests',
   ].join('; '),
 };
 
@@ -66,7 +67,7 @@ const securityHeaders = {
 
 // Role-based access control - development modunda devre dışı
 // const ROLE_PERMISSIONS: Record<string, string[]> = {
-//   admin: ['/admin', '/dashboard', '/profile', '/settings', '/analytics'],
+//   admin: ['/pakize', '/dashboard', '/profile', '/settings', '/analytics'],
 //   premium: ['/dashboard', '/profile', '/settings', '/premium'],
 //   user: ['/dashboard', '/profile', '/settings'],
 //   guest: [],
@@ -74,7 +75,13 @@ const securityHeaders = {
 
 export async function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
-  
+
+  // Bakım modu kontrolü
+  const maintenanceResponse = await checkMaintenanceMode(request);
+  if (maintenanceResponse) {
+    return maintenanceResponse;
+  }
+
   // Bot detection kaldırıldı - development için
 
   // Rate limiting kaldırıldı - development için
@@ -106,8 +113,12 @@ export async function middleware(request: NextRequest) {
   const supabase = createMiddlewareClient({ req: request, res: response });
 
   // Auth sayfası için özel kontrol - locale ile birlikte
-  if (pathname === '/auth' || pathname.startsWith('/auth/') || 
-      pathname.match(/^\/[a-z]{2}\/auth/) || pathname.match(/^\/[a-z]{2}\/auth\//)) {
+  if (
+    pathname === '/auth' ||
+    pathname.startsWith('/auth/') ||
+    pathname.match(/^\/[a-z]{2}\/auth/) ||
+    pathname.match(/^\/[a-z]{2}\/auth\//)
+  ) {
     return response;
   }
 
@@ -126,8 +137,8 @@ export async function middleware(request: NextRequest) {
     const userRole = (user?.user_metadata?.role as UserRole) || 'guest';
 
     // Korumalı sayfalar kontrolü - development modunda devre dışı
-    // const protectedPaths = ['/dashboard', '/profile', '/settings', '/admin', '/premium'];
-    // const isProtectedPath = protectedPaths.some(path => 
+    // const protectedPaths = ['/dashboard', '/profile', '/settings', '/pakize', '/premium'];
+    // const isProtectedPath = protectedPaths.some(path =>
     //   pathname.includes(path) || pathname.endsWith(path)
     // );
 
@@ -142,7 +153,7 @@ export async function middleware(request: NextRequest) {
     //   // Role-based access control
     //   const allowedPaths = ROLE_PERMISSIONS[userRole] || [];
     //   const hasAccess = allowedPaths.some(path => pathname.startsWith(path));
-      
+
     //   if (!hasAccess) {
     //     return NextResponse.redirect(new URL('/tr', request.url));
     //   }
@@ -150,17 +161,27 @@ export async function middleware(request: NextRequest) {
 
     // Locale kontrolü
     const pathnameIsMissingLocale = ['tr', 'en', 'sr'].every(
-      (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
+      locale => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
     );
+
+    // Kullanıcının dil tercihini cookie'den al
+    const preferredLocale = request.cookies.get('NEXT_LOCALE')?.value || 'tr';
+    const validLocale = ['tr', 'en', 'sr'].includes(preferredLocale)
+      ? preferredLocale
+      : 'tr';
 
     // Root path'i tarot sayfasına yönlendir
     if (pathname === '/') {
-      return NextResponse.redirect(new URL('/tr/tarotokumasi', request.url));
+      return NextResponse.redirect(
+        new URL(`/${validLocale}/tarotokumasi`, request.url)
+      );
     }
 
     // Locale yoksa varsayılan dile yönlendir
     if (pathnameIsMissingLocale) {
-      return NextResponse.redirect(new URL(`/tr${pathname}`, request.url));
+      return NextResponse.redirect(
+        new URL(`/${validLocale}${pathname}`, request.url)
+      );
     }
 
     // Add user info to headers for client-side use
@@ -170,20 +191,28 @@ export async function middleware(request: NextRequest) {
     }
 
     return response;
-
   } catch (error) {
-    
     // Fallback: continue with basic routing
     const pathnameIsMissingLocale = ['tr', 'en', 'sr'].every(
-      (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
+      locale => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
     );
 
+    // Kullanıcının dil tercihini cookie'den al
+    const preferredLocale = request.cookies.get('NEXT_LOCALE')?.value || 'tr';
+    const validLocale = ['tr', 'en', 'sr'].includes(preferredLocale)
+      ? preferredLocale
+      : 'tr';
+
     if (pathname === '/') {
-      return NextResponse.redirect(new URL('/tr/tarotokumasi', request.url));
+      return NextResponse.redirect(
+        new URL(`/${validLocale}/tarotokumasi`, request.url)
+      );
     }
 
     if (pathnameIsMissingLocale) {
-      return NextResponse.redirect(new URL(`/tr${pathname}`, request.url));
+      return NextResponse.redirect(
+        new URL(`/${validLocale}${pathname}`, request.url)
+      );
     }
 
     return response;
@@ -191,7 +220,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: [
-    '/((?!api|_next|_vercel|.*\\..*).*)',
-  ],
+  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)'],
 };

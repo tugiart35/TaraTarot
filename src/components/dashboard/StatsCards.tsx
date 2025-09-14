@@ -38,7 +38,7 @@ export default function StatsCards({
               <Coins className="h-6 w-6 text-gold" />
             </div>
             <div className="ml-4">
-              <p className="text-sm font-medium text-text-muted">Kredi Bakiyesi</p>
+              <p className="text-sm font-medium text-text-muted">{translate('dashboard.creditBalance', 'Kredi Bakiyesi')}</p>
               <p className="text-2xl font-bold text-text-celestial">{profile?.credit_balance || 0}</p>
             </div>
           </div>
@@ -46,7 +46,7 @@ export default function StatsCards({
           <button
             onClick={refreshCreditBalance} // Kredi bakiyesini yenile
             className="p-2 hover:bg-gold/10 rounded-lg transition-colors"
-            title="Kredi bakiyesini yenile"
+            title={translate('common.refresh', 'Kredi bakiyesini yenile')}
           >
             <RefreshCw className="h-4 w-4 text-gold" />
           </button>
@@ -62,7 +62,7 @@ export default function StatsCards({
           <div className="ml-4">
           <p className="text-sm text-admin-text-muted">{translate('dashboard.readingsPage.totalReadings', 'Toplam Okuma')}</p>
           <p className="text-2xl font-bold text-admin-text">{totalCount}</p>
-            <p className="text-xs text-text-muted">Son 30 gün</p>
+            <p className="text-xs text-text-muted">{translate('dashboard.last30Days', 'Son 30 gün')}</p>
           </div>
         </div>
       </div>
@@ -74,12 +74,12 @@ export default function StatsCards({
             <Calendar className="h-6 w-6 text-purple" />
           </div>
           <div className="ml-4">
-            <p className="text-sm font-medium text-text-muted">Üyelik Süresi</p>
+            <p className="text-sm font-medium text-text-muted">{translate('dashboard.membershipDuration', 'Üyelik Süresi')}</p>
             <p className="text-2xl font-bold text-text-celestial">
-              {profile?.created_at ? getMemberSince(profile.created_at) : 'Yeni'}
+              {profile?.created_at ? getMemberSince(profile.created_at) : translate('common.new', 'Yeni')}
             </p>
             <p className="text-xs text-text-muted">
-              {profile?.created_at ? formatDate(profile.created_at) : 'Bugün'}
+              {profile?.created_at ? formatDate(profile.created_at) : translate('common.today', 'Bugün')}
             </p>
           </div>
         </div>
@@ -92,9 +92,9 @@ export default function StatsCards({
             <Award className="h-6 w-6 text-warning" />
           </div>
           <div className="ml-4">
-            <p className="text-sm font-medium text-text-muted">Kullanıcı Seviyesi</p>
+            <p className="text-sm font-medium text-text-muted">{translate('dashboard.userLevel', 'Kullanıcı Seviyesi')}</p>
             <p className="text-2xl font-bold text-text-celestial">
-              {isAdmin ? 'Admin' : recentReadings.length > 30 ? 'Uzman' : recentReadings.length > 13 ? 'Orta' : 'Başlangıç'} {/* Okuma sayısına göre seviye */}
+              {isAdmin ? translate('dashboard.admin', 'Admin') : recentReadings.length > 30 ? translate('dashboard.expert', 'Uzman') : recentReadings.length > 13 ? translate('dashboard.intermediate', 'Orta') : translate('dashboard.beginner', 'Başlangıç')} {/* Okuma sayısına göre seviye */}
             </p>
           </div>
         </div>

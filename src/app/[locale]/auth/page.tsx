@@ -52,9 +52,9 @@ export default function AuthPage() {
   const { user, loading: authLoading, isAuthenticated } = useAuth();
   const router = useRouter();
   const pathname = usePathname();
-  
+
   // Pathname'den locale'i çıkar (/tr/auth -> tr)
-  const currentLocale = pathname.split('/')[1] || 'tr';
+  const locale = pathname.split('/')[1] || 'tr';
   const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -98,13 +98,17 @@ export default function AuthPage() {
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const error = urlParams.get('error');
-    
+
     if (error === 'confirmation_failed') {
-      setMessage('E-posta onay linki geçersiz veya süresi dolmuş. Lütfen yeni bir onay e-postası isteyin.');
+      setMessage(
+        'E-posta onay linki geçersiz veya süresi dolmuş. Lütfen yeni bir onay e-postası isteyin.'
+      );
       // URL'den error parametresini temizle
       window.history.replaceState({}, document.title, window.location.pathname);
     } else if (error === 'token_expired') {
-      setMessage('E-posta onay linkinin süresi dolmuş. Lütfen yeni bir onay e-postası isteyin.');
+      setMessage(
+        'E-posta onay linkinin süresi dolmuş. Lütfen yeni bir onay e-postası isteyin.'
+      );
       // URL'den error parametresini temizle
       window.history.replaceState({}, document.title, window.location.pathname);
     }
@@ -116,10 +120,10 @@ export default function AuthPage() {
       // Mevcut pathname'i kontrol et, sadece auth sayfasındaysa yönlendir
       const currentPath = window.location.pathname;
       if (currentPath.includes('/auth')) {
-        router.replace('/tr/dashboard');
+        router.replace(`/${locale}/dashboard`);
       }
     }
-  }, [authLoading, isAuthenticated, user, router]);
+  }, [authLoading, isAuthenticated, user, router, locale]);
 
   // localStorage'dan kayıtlı bilgileri yükle
   useEffect(() => {
@@ -243,12 +247,12 @@ export default function AuthPage() {
     try {
       setLoading(true);
       setLoadingStep('Yeni onay e-postası gönderiliyor...');
-      
+
       const { error } = await supabase.auth.resend({
         type: 'signup',
         email: email,
         options: {
-          emailRedirectTo: `${window.location.origin}/tr/auth/confirm`,
+          emailRedirectTo: `${window.location.origin}/${locale}/auth/confirm`,
         },
       });
 
@@ -256,9 +260,12 @@ export default function AuthPage() {
         throw error;
       }
 
-      setMessage('Yeni onay e-postası gönderildi. Lütfen e-posta kutunuzu kontrol edin.');
+      setMessage(
+        'Yeni onay e-postası gönderildi. Lütfen e-posta kutunuzu kontrol edin.'
+      );
     } catch (error: unknown) {
-      let errorMessage = 'Onay e-postası gönderilemedi. Lütfen tekrar kayıt olmayı deneyin.';
+      let errorMessage =
+        'Onay e-postası gönderilemedi. Lütfen tekrar kayıt olmayı deneyin.';
       if (error instanceof Error) {
         errorMessage = error.message;
       }
@@ -492,7 +499,6 @@ export default function AuthPage() {
       let errorMessage = t('auth.page.errorOccurred');
 
       if (error instanceof Error) {
-
         // Supabase hata mesajlarını Türkçe'ye çevir
         if (error.message.includes('Invalid login credentials')) {
           errorMessage = t('auth.page.invalidCredentials');
@@ -1033,35 +1039,37 @@ export default function AuthPage() {
               )}
 
             {/* E-posta onay hatası mesajı ise yeni onay e-postası gönderme butonu göster */}
-            {(message.includes('E-posta onay linki geçersiz') || message.includes('süresi dolmuş')) && email && (
-              <div className='flex justify-center gap-2 mt-3'>
-                <button
-                  type='button'
-                  onClick={() => resendConfirmationEmail(email)}
-                  disabled={loading}
-                  className='px-4 py-2 bg-blue-500/20 text-blue-300 rounded text-sm hover:bg-blue-500/30 transition-colors disabled:opacity-50'
-                >
-                  {loading ? 'Gönderiliyor...' : 'Yeni Onay E-postası Gönder'}
-                </button>
-                <button
-                  type='button'
-                  onClick={() => {
-                    setMessage('');
-                    setIsLogin(false);
-                    setEmail('');
-                    setPassword('');
-                    setConfirmPassword('');
-                    setName('');
-                    setSurname('');
-                    setBirthDate('');
-                    setGender('');
-                  }}
-                  className='px-4 py-2 bg-green-500/20 text-green-300 rounded text-sm hover:bg-green-500/30 transition-colors'
-                >
-                  Tekrar Kayıt Ol
-                </button>
-              </div>
-            )}
+            {(message.includes('E-posta onay linki geçersiz') ||
+              message.includes('süresi dolmuş')) &&
+              email && (
+                <div className='flex justify-center gap-2 mt-3'>
+                  <button
+                    type='button'
+                    onClick={() => resendConfirmationEmail(email)}
+                    disabled={loading}
+                    className='px-4 py-2 bg-blue-500/20 text-blue-300 rounded text-sm hover:bg-blue-500/30 transition-colors disabled:opacity-50'
+                  >
+                    {loading ? 'Gönderiliyor...' : 'Yeni Onay E-postası Gönder'}
+                  </button>
+                  <button
+                    type='button'
+                    onClick={() => {
+                      setMessage('');
+                      setIsLogin(false);
+                      setEmail('');
+                      setPassword('');
+                      setConfirmPassword('');
+                      setName('');
+                      setSurname('');
+                      setBirthDate('');
+                      setGender('');
+                    }}
+                    className='px-4 py-2 bg-green-500/20 text-green-300 rounded text-sm hover:bg-green-500/30 transition-colors'
+                  >
+                    Tekrar Kayıt Ol
+                  </button>
+                </div>
+              )}
           </div>
         )}
 

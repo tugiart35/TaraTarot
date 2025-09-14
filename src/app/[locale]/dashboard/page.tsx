@@ -64,9 +64,14 @@ import BottomNavigation from '@/features/shared/layout/BottomNavigation';
 import ReadingDetailModal from '@/features/shared/ui/ReadingDetailModal';
 // Profil düzenleme modal bileşeni
 import ProfileModal from '@/features/dashboard/components/shared/ProfileModal';
+// i18n hook'u
+import { useTranslations } from '@/hooks/useTranslations';
 
 // Ana Dashboard sayfası bileşeni - Modüler yapı
 export default function DashboardPage() {
+  // i18n hook'u
+  const { t } = useTranslations();
+  
   // Dashboard veri yönetimi hook'u
   const {
     profile,
@@ -111,7 +116,7 @@ export default function DashboardPage() {
         <div className="text-center">
           {/* Spinner - dönen loading animasyonu */}
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gold mx-auto mb-4"></div>
-          <div className="text-text-celestial text-lg">Yükleniyor...</div>
+          <div className="text-text-celestial text-lg">{t('common.loading', 'Yükleniyor...')}</div>
         </div>
       </div>
     );
