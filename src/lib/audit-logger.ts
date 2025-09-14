@@ -35,7 +35,16 @@ export type AuditAction =
   | 'order_refund'
   | 'settings_update'
   | 'admin_user_create'
+  | 'admin_user_created'
+  | 'admin_user_updated'
   | 'admin_user_delete'
+  | 'admin_user_deleted'
+  | 'api_key_created'
+  | 'api_key_updated'
+  | 'api_key_deleted'
+  | 'user_deleted'
+  | 'user_banned'
+  | 'user_unbanned'
   | 'data_export'
   | 'bulk_operation'
   | 'security_event'
@@ -47,6 +56,8 @@ export type AuditAction =
 export type ResourceType = 
   | 'user'
   | 'admin'
+  | 'admin_users'
+  | 'api_keys'
   | 'package'
   | 'order'
   | 'transaction'
@@ -68,7 +79,7 @@ class AuditLogger {
     action: AuditAction,
     resourceType: ResourceType,
     data: {
-      userId: string;
+      userId?: string;
       userEmail?: string;
       resourceId?: string;
       oldValues?: Record<string, any>;
@@ -80,13 +91,13 @@ class AuditLogger {
   ): Promise<void> {
     try {
       const entry: AuditLogEntry = {
-        user_id: data.userId,
+        user_id: data.userId ?? 'system',
         user_email: data.userEmail ?? undefined,
         action,
         resource_type: resourceType,
-        resource_id: data.resourceId ?? undefined,
-        old_values: data.oldValues ?? undefined,
-        new_values: data.newValues ?? undefined,
+        resource_id: data.resourceId,
+        old_values: data.oldValues,
+        new_values: data.newValues,
         ip_address: await this.getClientIP(),
         user_agent: this.getUserAgent(),
         metadata: data.metadata,
@@ -107,15 +118,15 @@ class AuditLogger {
         // Fallback: Store in localStorage if Supabase fails
         this.storeInLocalStorage(entry);
         logError('Audit log fallback to localStorage', error, {
-          action,
-          resource: resourceType,
+          action: action.toString(),
+          resource: resourceType.toString(),
           userId: data.userId
         });
       });
     } catch (error) {
         logError('Failed to create audit log entry', error, {
-          action,
-          resource: resourceType,
+          action: action.toString(),
+          resource: resourceType.toString(),
           userId: data.userId
         });
     }
@@ -319,6 +330,7 @@ class AuditLogger {
   private storeInLocalStorage(entry: AuditLogEntry): void {
     try {
       if (typeof window !== 'undefined' && window.localStorage) {
+        // Generate unique key for localStorage (not used but kept for future use)
         const _key = `audit_log_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
         const existingLogs = this.getLocalStorageLogs();
         existingLogs.push(entry);
@@ -388,8 +400,8 @@ class AuditLogger {
     } catch (error) {
       // Hata durumunda queue'yu temizleme, tekrar deneme için sakla
       logError('Failed to flush audit log queue to Supabase', error, {
-        retryCount: this.retryCount,
-        action: 'audit_log_flush'
+        action: 'audit_log_flush',
+        metadata: { retryCount: this.retryCount }
       });
       
       this.retryCount++;
@@ -440,8 +452,11 @@ class AuditLogger {
 
       if (error) {
         logError('Supabase audit log insert error', error, {
-          errorCode: error.code,
-          errorMessage: error.message
+          action: 'audit_log_insert',
+          metadata: { 
+            errorCode: error.code,
+            errorMessage: error.message 
+          }
         });
         throw error;
       }

@@ -33,9 +33,10 @@ import { createClient } from '@/lib/supabase/server';
 import nodemailer from 'nodemailer';
 
 export async function POST(request: NextRequest) {
+  let requestBody: any = null;
   try {
-    const body = await request.json();
-    const { to, subject, body: emailBody, smtpSettings } = body;
+    requestBody = await request.json();
+    const { to, subject, body: emailBody, smtpSettings } = requestBody;
 
     // Input validation
     if (!to || !subject || !emailBody) {
@@ -63,7 +64,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Create transporter
-    const transporter = nodemailer.createTransporter({
+    const transporter = nodemailer.createTransport({
       host: smtpSettings.smtp_host,
       port: smtpSettings.smtp_port || 587,
       secure: smtpSettings.smtp_secure || false,
@@ -120,8 +121,8 @@ export async function POST(request: NextRequest) {
       await supabase
         .from('email_logs')
         .insert({
-          to_email: body.to || 'unknown',
-          subject: body.subject || 'unknown',
+          to_email: requestBody?.to || 'unknown',
+          subject: requestBody?.subject || 'unknown',
           status: 'failed',
           error_message: (error as Error).message,
           created_at: new Date().toISOString()

@@ -58,7 +58,7 @@ import {
   X,
   Users,
   UserPlus,
-  Coins
+  // Coins
 } from 'lucide-react';
 import CreditManagementModal from '@/components/admin/CreditManagementModal';
 import UserDetailModal from '@/components/admin/UserDetailModal';
