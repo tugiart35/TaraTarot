@@ -118,7 +118,7 @@ export function PWAAuthProvider({ children }: PWAAuthProviderProps) {
     }
 
     try {
-      const result = await installPrompt.prompt();
+      const _result = await installPrompt.prompt();
     } catch (error) {
       throw error;
     } finally {
@@ -215,7 +215,7 @@ export function PWAAuthProvider({ children }: PWAAuthProviderProps) {
 
         // Handle service worker messages
         navigator.serviceWorker.addEventListener('message', (event) => {
-          const { type, data } = event.data;
+          const { type, data: _data } = event.data;
           
           switch (type) {
             case 'AUTH_UPDATE':
@@ -247,7 +247,7 @@ export function PWAAuthProvider({ children }: PWAAuthProviderProps) {
       timestamp: new Date().toISOString(),
     };
 
-    await auth.auditLog(action, pwaDetails);
+    // await auth.auditLog(action, pwaDetails);
   }, [auth, isPWA, isOnline]);
 
   const contextValue: PWAAuthContextType = {

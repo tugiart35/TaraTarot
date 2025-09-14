@@ -31,7 +31,7 @@ Kullanım durumu:
 
 import { supabase } from '@/lib/supabase/client';
 import { logAdminAction, AuditAction, ResourceType } from '@/lib/audit-logger';
-import { getShopierConfig, createShopierPayment, createTestPayment } from '@/lib/payment/shopier-config';
+import { createShopierPayment, createTestPayment } from '@/lib/payment/shopier-config';
 
 export interface ShopierSettings {
   merchantId: string;

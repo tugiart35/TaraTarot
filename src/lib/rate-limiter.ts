@@ -134,7 +134,7 @@ class ClientRateLimiter {
     const now = Date.now();
     for (const [key, entry] of this.limits.entries()) {
       const action = key.split(':')[0];
-      const config = this.configs.get(action);
+      const config = this.configs.get(action!);
       
       if (!config) continue;
 
@@ -174,7 +174,7 @@ if (typeof window !== 'undefined') {
       
       return {
         error: `Çok fazla deneme. ${minutes} dakika sonra tekrar deneyin.`,
-        resetTime: resetTime ?? undefined
+        resetTime: resetTime
       };
     }
 
@@ -200,7 +200,7 @@ if (typeof window !== 'undefined') {
       
       return {
         error: `Çok fazla deneme. ${minutes} dakika sonra tekrar deneyin.`,
-        resetTime: resetTime ?? undefined
+        resetTime: resetTime
       };
     }
 

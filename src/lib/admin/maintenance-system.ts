@@ -340,7 +340,7 @@ export class MaintenanceSystemManager {
 
       return {
         canAccess,
-        message: canAccess ? undefined : status.message
+        ...(canAccess ? {} : { message: status.message })
       };
     } catch (error) {
       console.error('MaintenanceSystemManager.checkMaintenanceAccess error:', error);

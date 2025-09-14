@@ -45,7 +45,7 @@ export class ValidationError extends AppError {
     super(message, 'VALIDATION_ERROR', 400);
     this.name = 'ValidationError';
     if (field) {
-      this.metadata = { field };
+      (this as any).metadata = { field };
     }
   }
 }
@@ -99,21 +99,21 @@ export class ErrorHandler {
     const fullContext = { ...context, operation };
     logSupabaseError(operation, error, fullContext);
 
-    if (error?.code === 'PGRST116') {
+    if ((error as any)?.code === 'PGRST116') {
       return {
         userMessage: 'Kayıt bulunamadı.',
         shouldRetry: false
       };
     }
 
-    if (error?.code === 'PGRST301') {
+    if ((error as any)?.code === 'PGRST301') {
       return {
         userMessage: 'Bu işlem için yetkiniz bulunmuyor.',
         shouldRetry: false
       };
     }
 
-    if (error?.message?.includes('JWT')) {
+    if ((error as any)?.message?.includes('JWT')) {
       return {
         userMessage: 'Oturum süresi dolmuş. Lütfen tekrar giriş yapın.',
         shouldRetry: false
@@ -133,16 +133,16 @@ export class ErrorHandler {
     userMessage: string;
     shouldRedirect: string;
   } {
-    logError('Authentication error', error, { operation: 'auth' });
+    logError('Authentication error', error, { action: 'auth' });
 
-    if (error?.message?.includes('Invalid login credentials')) {
+    if ((error as any)?.message?.includes('Invalid login credentials')) {
       return {
         userMessage: 'E-posta veya şifre hatalı.',
         shouldRedirect: '/auth'
       };
     }
 
-    if (error?.message?.includes('Email not confirmed')) {
+    if ((error as any)?.message?.includes('Email not confirmed')) {
       return {
         userMessage: 'E-posta adresinizi onaylayın.',
         shouldRedirect: '/auth'
@@ -172,7 +172,7 @@ export class ErrorHandler {
       return {
         type: 'supabase',
         message: errorObj.message || 'Database error',
-        code: errorObj.code
+        code: errorObj.code ?? undefined
       };
     }
 
@@ -201,7 +201,7 @@ export class ErrorHandler {
    */
   private static getUserResponse(
     errorInfo: { type: string; message: string; code?: string },
-    context: ErrorContext
+    _context: ErrorContext
   ): {
     userMessage: string;
     shouldRetry: boolean;

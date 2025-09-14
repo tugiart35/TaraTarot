@@ -49,7 +49,7 @@ export async function getValidationMessages(locale: string) {
 }
 
 // Zod validation şemaları
-export function createValidationSchema(locale: string) {
+export function createValidationSchema(_locale: string) {
   return {
     email: z.string().email(),
     password: z.string().min(8),

@@ -92,7 +92,7 @@ function getClientIP(request: NextRequest): string {
   // X-Forwarded-For header'ından IP al
   const forwarded = request.headers.get('x-forwarded-for');
   if (forwarded) {
-    return forwarded.split(',')[0].trim();
+    return forwarded.split(',')[0]!.trim();
   }
 
   // X-Real-IP header'ından IP al

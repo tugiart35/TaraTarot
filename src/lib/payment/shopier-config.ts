@@ -136,7 +136,7 @@ export const createShopierPayment = async (
 
     // Signature oluştur
     const signature = generateShopierSignature(paymentParams, config.apiSecret);
-    paymentParams['signature'] = signature;
+    (paymentParams as any)['signature'] = signature;
 
     // API isteği gönder
     const response = await fetch(config.apiUrl, {
@@ -211,7 +211,7 @@ export const verifyShopierWebhook = (data: ShopierWebhookData, signature: string
 const extractPaymentUrl = (responseData: string): string => {
   // Shopier response'dan payment URL'i çıkar
   const urlMatch = responseData.match(/payment_url["\s]*[:=]["\s]*([^"'\s]+)/i);
-  return urlMatch ? urlMatch[1] : '';
+  return urlMatch ? urlMatch[1]! : '';
 };
 
 // Test ödeme verisi

@@ -96,7 +96,7 @@ class SecureLogger {
   supabaseError(operation: string, error: unknown, context?: LogContext) {
     const sanitized = this.sanitizeSupabaseError(error);
     this.error(`Supabase ${operation} failed`, sanitized, {
-      operation,
+      action: operation,
       ...context
     });
   }
@@ -114,9 +114,9 @@ class SecureLogger {
       name?: string;
       details?: unknown;
     } = {
-      message: errorObj.message,
-      code: errorObj.code,
-      name: errorObj.name
+      message: errorObj.message ?? undefined,
+      code: errorObj.code ?? undefined,
+      name: errorObj.name ?? undefined
     };
 
     // Remove sensitive fields

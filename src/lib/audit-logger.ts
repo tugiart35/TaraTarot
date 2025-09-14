@@ -81,12 +81,12 @@ class AuditLogger {
     try {
       const entry: AuditLogEntry = {
         user_id: data.userId,
-        user_email: data.userEmail,
+        user_email: data.userEmail ?? undefined,
         action,
         resource_type: resourceType,
-        resource_id: data.resourceId,
-        old_values: data.oldValues,
-        new_values: data.newValues,
+        resource_id: data.resourceId ?? undefined,
+        old_values: data.oldValues ?? undefined,
+        new_values: data.newValues ?? undefined,
         ip_address: await this.getClientIP(),
         user_agent: this.getUserAgent(),
         metadata: data.metadata,
@@ -108,16 +108,16 @@ class AuditLogger {
         this.storeInLocalStorage(entry);
         logError('Audit log fallback to localStorage', error, {
           action,
-          resourceType,
+          resource: resourceType,
           userId: data.userId
         });
       });
     } catch (error) {
-      logError('Failed to create audit log entry', error, {
-        action,
-        resourceType,
-        userId: data.userId
-      });
+        logError('Failed to create audit log entry', error, {
+          action,
+          resource: resourceType,
+          userId: data.userId
+        });
     }
   }
 
@@ -140,7 +140,7 @@ class AuditLogger {
       severity: 'high',
       metadata: {
         ...data.metadata,
-        error: typeof data.error === 'string' ? data.error : data.error?.message
+        error: typeof data.error === 'string' ? data.error : (data.error as any)?.message
       }
     });
   }
@@ -261,7 +261,11 @@ class AuditLogger {
       admin_user_delete: 'critical',
       data_export: 'high',
       bulk_operation: 'high',
-      security_event: 'critical'
+      security_event: 'critical',
+      email_settings_updated: 'medium',
+      email_template_created: 'medium',
+      email_template_updated: 'medium',
+      email_template_deleted: 'high'
     };
 
     return severityMap[action] || 'medium';
@@ -306,7 +310,7 @@ class AuditLogger {
   private storeInLocalStorage(entry: AuditLogEntry): void {
     try {
       if (typeof window !== 'undefined' && window.localStorage) {
-        const key = `audit_log_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+        const _key = `audit_log_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
         const existingLogs = this.getLocalStorageLogs();
         existingLogs.push(entry);
         
@@ -375,7 +379,6 @@ class AuditLogger {
     } catch (error) {
       // Hata durumunda queue'yu temizleme, tekrar deneme için sakla
       logError('Failed to flush audit log queue to Supabase', error, {
-        queueLength: this.queue.length,
         retryCount: this.retryCount,
         action: 'audit_log_flush'
       });
@@ -428,7 +431,6 @@ class AuditLogger {
 
       if (error) {
         logError('Supabase audit log insert error', error, {
-          logCount: logs.length,
           errorCode: error.code,
           errorMessage: error.message
         });
@@ -440,7 +442,6 @@ class AuditLogger {
       }
     } catch (error) {
       logError('Failed to persist audit logs to Supabase', error, {
-        logCount: logs.length,
         action: 'audit_log_persist'
       });
       throw error;

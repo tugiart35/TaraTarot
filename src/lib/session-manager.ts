@@ -226,7 +226,7 @@ class SessionManager {
    */
   private async handleSessionExpiry(): Promise<void> {
     logSecurityEvent('session_expired', {
-      userId: this.sessionState.user?.id,
+      userId: this.sessionState.user?.id ?? undefined,
       severity: 'medium',
       metadata: {
         lastRefresh: new Date(this.sessionState.lastRefresh).toISOString(),

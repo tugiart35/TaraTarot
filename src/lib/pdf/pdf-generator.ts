@@ -27,7 +27,7 @@
  * - GÜVENLİ: Production-ready
  */
 
-import { JSDOM } from 'jsdom';
+// JSDOM not used in this file
 import { 
   calculateLifePath, 
   calculateExpressionDestiny, 
@@ -64,7 +64,7 @@ class PDFGeneratorService {
       
       // Browser başlat
       const browser = await puppeteer.default.launch({
-        headless: 'new',
+        headless: true,
         args: ['--no-sandbox', '--disable-setuid-sandbox']
       });
       
@@ -94,7 +94,7 @@ class PDFGeneratorService {
       
       await browser.close();
       
-      return pdfBuffer;
+      return Buffer.from(pdfBuffer);
 
     } catch (error) {
       console.error('PDF generation failed:', error);
@@ -130,12 +130,7 @@ class PDFGeneratorService {
       }
     };
 
-    const getCardImageUrl = (cardId: number, isReversed: boolean) => {
-      // Kart fotoğrafı URL'si oluştur
-      const cardNumber = cardId.toString().padStart(2, '0');
-      const baseUrl = 'https://pootnkllsznjbaozpfss.supabase.co/storage/v1/object/public/cards/rws';
-      return `${baseUrl}/${cardNumber}.jpg`;
-    };
+    // Card image URL generation moved to private method
 
     const statusInfo = getStatusInfo(readingData.status);
 
@@ -473,7 +468,7 @@ class PDFGeneratorService {
       }).join('');
   }
 
-  private getCardImageUrl(cardId: number, isReversed: boolean): string {
+  private getCardImageUrl(cardId: number, _isReversed: boolean): string {
     // Kart fotoğrafı URL'si oluştur
     const cardNumber = cardId.toString().padStart(2, '0');
     const baseUrl = 'https://pootnkllsznjbaozpfss.supabase.co/storage/v1/object/public/cards/rws';
@@ -487,7 +482,7 @@ class PDFGeneratorService {
       
       // Browser başlat
       const browser = await puppeteer.default.launch({
-        headless: 'new',
+        headless: true,
         args: ['--no-sandbox', '--disable-setuid-sandbox']
       });
       
@@ -520,7 +515,7 @@ class PDFGeneratorService {
       
       await browser.close();
       
-      return pdfBuffer;
+      return Buffer.from(pdfBuffer);
 
     } catch (error) {
       console.error('Numerology PDF generation failed:', error);
@@ -538,8 +533,12 @@ class PDFGeneratorService {
       soulUrge: calculateSoulUrge(fullName, 'tr'),
       personality: calculatePersonality(fullName, 'tr'),
       birthday: calculateBirthdayNumber(birthDate, 'tr'),
-      maturity: calculateMaturity(fullName, birthDate, 'tr'),
-      pinnacles: calculatePinnaclesChallenges(fullName, birthDate, 'tr'),
+      maturity: calculateMaturity(
+        calculateLifePath(birthDate, 'tr').number,
+        calculateExpressionDestiny(fullName, 'tr').number,
+        'tr'
+      ),
+      pinnacles: calculatePinnaclesChallenges(birthDate, 'tr'),
       personalCycles: calculatePersonalCycles(birthDate, 'tr')
     };
   }
@@ -902,7 +901,7 @@ class PDFGeneratorService {
         ${numerologyData.pinnacles.pinnacles ? `
         <div class="pinnacles-section">
           <h3>💎 Yaşam Zirveleri</h3>
-          ${numerologyData.pinnacles.pinnacles.map((pinnacle: any, index: number) => `
+          ${numerologyData.pinnacles.pinnacles.map((pinnacle: any, _index: number) => `
             <div class="pinnacle-item">
               <span class="pinnacle-period">${pinnacle.period}</span>
               <span class="pinnacle-number">${pinnacle.number}</span>

@@ -109,7 +109,7 @@ export const exportToPDF = async (
 // Excel Export Fonksiyonu
 export const exportToExcel = async (
   data: ReportData, 
-  options: ExportOptions
+  _options: ExportOptions
 ): Promise<Blob> => {
   const workbook = XLSX.utils.book_new();
 
@@ -164,7 +164,7 @@ export const exportToExcel = async (
 };
 
 // Yardımcı fonksiyonlar
-const addRevenueSection = (doc: jsPDF, data: ReportData, yPos: number, pageWidth: number): number => {
+const addRevenueSection = (doc: jsPDF, data: ReportData, yPos: number, _pageWidth: number): number => {
   doc.setFontSize(16);
   doc.setFont('helvetica', 'bold');
   doc.text('Gelir Analizi', 20, yPos);
@@ -184,7 +184,7 @@ const addRevenueSection = (doc: jsPDF, data: ReportData, yPos: number, pageWidth
   return yPos;
 };
 
-const addUsersSection = (doc: jsPDF, data: ReportData, yPos: number, pageWidth: number): number => {
+const addUsersSection = (doc: jsPDF, data: ReportData, yPos: number, _pageWidth: number): number => {
   doc.setFontSize(16);
   doc.setFont('helvetica', 'bold');
   doc.text('Kullanıcı Analizi', 20, yPos);
@@ -215,7 +215,7 @@ const addUsersSection = (doc: jsPDF, data: ReportData, yPos: number, pageWidth: 
   return yPos + 10;
 };
 
-const addTransactionsSection = (doc: jsPDF, data: ReportData, yPos: number, pageWidth: number): number => {
+const addTransactionsSection = (doc: jsPDF, data: ReportData, yPos: number, _pageWidth: number): number => {
   doc.setFontSize(16);
   doc.setFont('helvetica', 'bold');
   doc.text('İşlem Analizi', 20, yPos);

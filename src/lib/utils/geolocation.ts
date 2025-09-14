@@ -57,7 +57,7 @@ function cleanIPAddress(ip: string): string {
   
   // X-Forwarded-For header'ından ilk IP'yi al
   if (ip.includes(',')) {
-    return ip.split(',')[0].trim();
+    return ip.split(',')[0]!.trim();
   }
   
   return ip;
@@ -185,7 +185,7 @@ export async function getClientGeolocation(): Promise<GeolocationData | null> {
             resolve(null);
           }
         },
-        (error) => {
+        (_error) => {
           resolve(null);
         },
         {
@@ -205,7 +205,7 @@ export function getClientIP(request: NextRequest): string {
   // Vercel'de x-forwarded-for header'ı kullan
   const forwarded = request.headers.get('x-forwarded-for');
   if (forwarded) {
-    return forwarded.split(',')[0].trim();
+    return forwarded.split(',')[0]!.trim();
   }
   
   // Cloudflare'de cf-connecting-ip header'ı kullan
@@ -221,7 +221,7 @@ export function getClientIP(request: NextRequest): string {
   }
   
   // Fallback: request.ip
-  return request.ip || '127.0.0.1';
+  return (request as any).ip || '127.0.0.1';
 }
 
 // Cache temizleme fonksiyonu

@@ -16,15 +16,17 @@
 // import { render, screen } from '@testing-library/react';
 // import { createServerClient } from '@/lib/supabase/server';
 
+// TEMPORARILY DISABLED FOR REFACTOR - WILL BE IMPLEMENTED IN PHASE 9
+/*
 describe('Smoke and Routing Tests - PLACEHOLDER PLAN', () => {
   
   // ============================================================================
   // 🔥 CRITICAL PATH SMOKE TESTS
   // ============================================================================
   
-  describe('Critical Path Smoke Tests', () => {
+  // describe('Critical Path Smoke Tests', () => {
     
-    test('GET / → 200', async () => {
+    // test('GET / → 200', async () => {
       // TODO: Implement in Prompt 3
       // Test that home page loads successfully
       // Expected: HTTP 200 OK

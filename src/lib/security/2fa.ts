@@ -58,7 +58,7 @@ export class TOTPManager {
   private static readonly PERIOD = 30;
 
   // Generate TOTP secret
-  static generateSecret(userId: string): string {
+  static generateSecret(_userId: string): string {
     // Burada backend'e bağlanılacak - TOTP secret generation
     const secret = this.generateRandomSecret();
     return secret;
