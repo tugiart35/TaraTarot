@@ -1,0 +1,346 @@
+[
+  {
+    "phase": "FASE-1",
+    "reason": "TypeScript duplicate export conflicts",
+    "action": "RENAME",
+    "from": "src/lib/security/2fa.ts",
+    "to": "src/lib/security/two-factor-auth.ts",
+    "notes": "TOTPManager, SMS2FAManager, Email2FAManager export conflicts resolved. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-1",
+    "reason": "TypeScript duplicate export conflicts",
+    "action": "RENAME",
+    "from": "src/lib/payment/payment-types.ts",
+    "to": "src/lib/payment/types.ts",
+    "notes": "PaymentProvider, PaymentMethod, Currency export conflicts resolved. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-1",
+    "reason": "TypeScript duplicate export conflicts",
+    "action": "RENAME",
+    "from": "src/lib/mobile/mobile-utils.ts",
+    "to": "src/lib/mobile/utils.ts",
+    "notes": "MobileSecureStorage, MobileSessionManager export conflicts resolved. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-1",
+    "reason": "Circular dependency resolution",
+    "action": "SPLIT",
+    "from": "src/lib/security/audit-logger.ts",
+    "to": "src/lib/security/audit-logger.ts + src/lib/security/audit-types.ts",
+    "notes": "Circular dependency with supabase client resolved. Types separated into audit-types.ts. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-2",
+    "reason": "RSC violation - client hook in server component",
+    "action": "SPLIT",
+    "from": "src/app/[locale]/auth/page.tsx",
+    "to": "src/app/[locale]/auth/page.tsx + src/app/[locale]/auth/AuthForm.tsx",
+    "notes": "Server component'te client hook kullanımı. AuthForm client component'e dönüştürüldü. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-2",
+    "reason": "RSC violation - useState in server component",
+    "action": "SPLIT",
+    "from": "src/app/[locale]/dashboard/page.tsx",
+    "to": "src/app/[locale]/dashboard/page.tsx + src/app/[locale]/dashboard/DashboardClient.tsx",
+    "notes": "Server component'te useState kullanımı. DashboardClient wrapper component oluşturuldu. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-2",
+    "reason": "RSC violation - useEffect in server component",
+    "action": "SPLIT",
+    "from": "src/app/[locale]/dashboard/credits/page.tsx",
+    "to": "src/app/[locale]/dashboard/credits/page.tsx + src/app/[locale]/dashboard/credits/CreditsClient.tsx",
+    "notes": "Server component'te useEffect kullanımı. CreditsClient wrapper component oluşturuldu. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-2",
+    "reason": "RSC violation - client state in server component",
+    "action": "MOVE",
+    "from": "src/features/tarot/LoveTarot.tsx",
+    "to": "src/features/tarot/components/LoveTarot.tsx",
+    "notes": "Client state kullanımı nedeniyle client component'e dönüştürüldü. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-2",
+    "reason": "RSC violation - form state in server component",
+    "action": "MOVE",
+    "from": "src/features/numerology/NumerologyForm.tsx",
+    "to": "src/features/numerology/components/NumerologyForm.tsx",
+    "notes": "Form state kullanımı nedeniyle client component'e dönüştürüldü. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-2",
+    "reason": "RSC violation - client hooks in server component",
+    "action": "SPLIT",
+    "from": "src/features/dashboard/DashboardPage.tsx",
+    "to": "src/features/dashboard/DashboardPage.tsx + src/features/dashboard/components/DashboardClient.tsx",
+    "notes": "Client hooks kullanımı nedeniyle wrapper component oluşturuldu. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-3",
+    "reason": "Build error - module resolution issue",
+    "action": "MOVE",
+    "from": "src/app/api/test-improved-numerology/route.ts",
+    "to": "src/app/api/numerology/improved/route.ts",
+    "notes": "Module resolution hatası düzeltildi. API endpoint yeniden yapılandırıldı. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-3",
+    "reason": "API route organization",
+    "action": "MOVE",
+    "from": "src/app/api/send-reading-email/route.ts",
+    "to": "src/app/api/email/reading/route.ts",
+    "notes": "Email API routes'ları organize edildi. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-3",
+    "reason": "API route organization",
+    "action": "MOVE",
+    "from": "src/app/api/test-email/route.ts",
+    "to": "src/app/api/email/test/route.ts",
+    "notes": "Email API routes'ları organize edildi. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-3",
+    "reason": "API route organization",
+    "action": "MOVE",
+    "from": "src/app/api/test-enhanced-email/route.ts",
+    "to": "src/app/api/email/enhanced/route.ts",
+    "notes": "Email API routes'ları organize edildi. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-3",
+    "reason": "API route organization",
+    "action": "MOVE",
+    "from": "src/app/api/send-email/route.ts",
+    "to": "src/app/api/email/send/route.ts",
+    "notes": "Email API routes'ları organize edildi. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-4",
+    "reason": "Form schema separation",
+    "action": "INTRODUCE_ADAPTER",
+    "from": "src/features/auth/components/LoginForm.tsx",
+    "to": "src/features/auth/schemas/login.ts + src/features/auth/components/LoginForm.tsx",
+    "notes": "RHF + Zod schema ayrımı. Schema dosyası oluşturuldu. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-4",
+    "reason": "Form schema separation",
+    "action": "INTRODUCE_ADAPTER",
+    "from": "src/features/auth/components/SignupForm.tsx",
+    "to": "src/features/auth/schemas/signup.ts + src/features/auth/components/SignupForm.tsx",
+    "notes": "RHF + Zod schema ayrımı. Schema dosyası oluşturuldu. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-4",
+    "reason": "Form schema separation",
+    "action": "INTRODUCE_ADAPTER",
+    "from": "src/features/numerology/components/NumerologyForm.tsx",
+    "to": "src/features/numerology/schemas/form.ts + src/features/numerology/components/NumerologyForm.tsx",
+    "notes": "RHF + Zod schema ayrımı. Schema dosyası oluşturuldu. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-4",
+    "reason": "i18n message key organization",
+    "action": "INTRODUCE_ADAPTER",
+    "from": "messages/tr.json",
+    "to": "messages/tr.json + messages/validation/tr.json",
+    "notes": "Validation message keys ayrıldı. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-4",
+    "reason": "i18n message key organization",
+    "action": "INTRODUCE_ADAPTER",
+    "from": "messages/en.json",
+    "to": "messages/en.json + messages/validation/en.json",
+    "notes": "Validation message keys ayrıldı. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-4",
+    "reason": "i18n message key organization",
+    "action": "INTRODUCE_ADAPTER",
+    "from": "messages/sr.json",
+    "to": "messages/sr.json + messages/validation/sr.json",
+    "notes": "Validation message keys ayrıldı. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-5",
+    "reason": "Code quality - unused imports cleanup",
+    "action": "SPLIT",
+    "from": "src/lib/numerology/calculators.ts",
+    "to": "src/lib/numerology/calculators.ts + src/lib/numerology/unused-utils.ts",
+    "notes": "Unused imports temizlendi. Kullanılmayan fonksiyonlar ayrı dosyaya taşındı. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-5",
+    "reason": "Code quality - unused imports cleanup",
+    "action": "SPLIT",
+    "from": "src/lib/pdf/pdf-generator.ts",
+    "to": "src/lib/pdf/pdf-generator.ts + src/lib/pdf/unused-utils.ts",
+    "notes": "Unused imports temizlendi. Kullanılmayan fonksiyonlar ayrı dosyaya taşındı. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-5",
+    "reason": "Code quality - unused imports cleanup",
+    "action": "SPLIT",
+    "from": "src/lib/security/audit-logger.ts",
+    "to": "src/lib/security/audit-logger.ts + src/lib/security/unused-utils.ts",
+    "notes": "Unused imports temizlendi. Kullanılmayan fonksiyonlar ayrı dosyaya taşındı. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-5",
+    "reason": "Monitoring integration",
+    "action": "INTRODUCE_ADAPTER",
+    "from": "src/lib/error-handler.ts",
+    "to": "src/lib/error-handler.ts + src/lib/monitoring/sentry.ts",
+    "notes": "Sentry monitoring entegrasyonu. Error handler'a monitoring eklendi. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-6",
+    "reason": "Dead weight removal - unused files",
+    "action": "MOVE",
+    "from": "src/middleware.ts.bak",
+    "to": "archive/middleware.ts.bak",
+    "notes": "Backup dosyası arşive taşındı. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-6",
+    "reason": "Dead weight removal - unused files",
+    "action": "MOVE",
+    "from": "numerolgy.json",
+    "to": "archive/numerolgy.json",
+    "notes": "Typo'lu dosya arşive taşındı. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-6",
+    "reason": "Dead weight removal - unused files",
+    "action": "MOVE",
+    "from": "numerology.module.json",
+    "to": "archive/numerology.module.json",
+    "notes": "Kullanılmayan dosya arşive taşındı. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-6",
+    "reason": "Dead weight removal - unused components",
+    "action": "MOVE",
+    "from": "src/features/shared/ui/tarot/GenericTarotSpread.tsx",
+    "to": "archive/components/GenericTarotSpread.tsx",
+    "notes": "Kullanılmayan component arşive taşındı. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-6",
+    "reason": "Dead weight removal - unused components",
+    "action": "MOVE",
+    "from": "src/features/shared/ui/MobileScrollWrapper.tsx",
+    "to": "archive/components/MobileScrollWrapper.tsx",
+    "notes": "Kullanılmayan component arşive taşındı. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-6",
+    "reason": "Dead weight removal - unused components",
+    "action": "MOVE",
+    "from": "src/features/shared/ui/CreditInfoModal.tsx",
+    "to": "archive/components/CreditInfoModal.tsx",
+    "notes": "Kullanılmayan component arşive taşındı. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-6",
+    "reason": "Dead weight removal - unused components",
+    "action": "MOVE",
+    "from": "src/features/shared/ui/ErrorDisplay.tsx",
+    "to": "archive/components/ErrorDisplay.tsx",
+    "notes": "Kullanılmayan component arşive taşındı. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-6",
+    "reason": "Dead weight removal - unused components",
+    "action": "MOVE",
+    "from": "src/features/shared/ui/ReadingInfoModal.tsx",
+    "to": "archive/components/ReadingInfoModal.tsx",
+    "notes": "Kullanılmayan component arşive taşındı. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-6",
+    "reason": "Dead weight removal - unused components",
+    "action": "MOVE",
+    "from": "src/components/admin/ABTestManager.tsx",
+    "to": "archive/components/ABTestManager.tsx",
+    "notes": "Kullanılmayan component arşive taşındı. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-6",
+    "reason": "Dead weight removal - unused components",
+    "action": "MOVE",
+    "from": "src/components/admin/FraudDetection.tsx",
+    "to": "archive/components/FraudDetection.tsx",
+    "notes": "Kullanılmayan component arşive taşındı. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-6",
+    "reason": "Dead weight removal - unused components",
+    "action": "MOVE",
+    "from": "src/components/admin/RealTimeMonitoring.tsx",
+    "to": "archive/components/RealTimeMonitoring.tsx",
+    "notes": "Kullanılmayan component arşive taşındı. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-6",
+    "reason": "Dead weight removal - unused components",
+    "action": "MOVE",
+    "from": "src/components/GeolocationDetector.tsx",
+    "to": "archive/components/GeolocationDetector.tsx",
+    "notes": "Kullanılmayan component arşive taşındı. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-6",
+    "reason": "Dead weight removal - duplicate utils",
+    "action": "SPLIT",
+    "from": "src/lib/utils/index.ts",
+    "to": "src/lib/utils/index.ts + src/lib/utils/duplicates.ts",
+    "notes": "Duplicate utility functions ayrıldı. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-6",
+    "reason": "Dead weight removal - duplicate utils",
+    "action": "SPLIT",
+    "from": "src/lib/utils/profile-utils.ts",
+    "to": "src/lib/utils/profile-utils.ts + src/lib/utils/duplicates.ts",
+    "notes": "Duplicate utility functions ayrıldı. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-6",
+    "reason": "Dead weight removal - duplicate utils",
+    "action": "SPLIT",
+    "from": "src/lib/reporting/export-utils.ts",
+    "to": "src/lib/reporting/export-utils.ts + src/lib/reporting/duplicates.ts",
+    "notes": "Duplicate utility functions ayrıldı. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-7",
+    "reason": "Test infrastructure setup",
+    "action": "INTRODUCE_ADAPTER",
+    "from": "tests/",
+    "to": "tests/ + tests/unit/ + tests/integration/ + tests/e2e/",
+    "notes": "Test infrastructure organize edildi. Unit, integration ve E2E testler ayrıldı. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-7",
+    "reason": "Test infrastructure setup",
+    "action": "INTRODUCE_ADAPTER",
+    "from": "tests/i18n/locale-routing.spec.ts",
+    "to": "tests/integration/i18n/locale-routing.spec.ts",
+    "notes": "Integration test olarak yeniden kategorize edildi. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  },
+  {
+    "phase": "FASE-7",
+    "reason": "Test infrastructure setup",
+    "action": "INTRODUCE_ADAPTER",
+    "from": "tests/i18n/messages-parity.test.ts",
+    "to": "tests/unit/i18n/messages-parity.test.ts",
+    "notes": "Unit test olarak yeniden kategorize edildi. Public API korunacak; eski importlar geçici adapter üzerinden beslenecek."
+  }
+]

@@ -488,12 +488,4 @@ export class TwoFactorManager {
   }
 }
 
-// Export all classes
-export {
-  TOTPManager,
-  SMS2FAManager,
-  Email2FAManager,
-  Biometric2FAManager,
-  BackupCodesManager,
-  TwoFactorManager,
-};
+// All classes are already exported inline above

@@ -1,0 +1,849 @@
+# 📋 Auth Basic Module TODO - Tarot Web Application
+
+**Module Scope:** Authentication & Authorization  
+**Framework:** Next.js 15.4.4 + TypeScript + Supabase  
+**Priority:** High (Critical for production)  
+**Estimated Time:** 2-3 weeks  
+**Last Updated:** $(date)
+
+---
+
+## 🎯 Module Overview
+
+Bu modül, Tarot Web uygulamasının authentication ve authorization sistemini yönetir. Supabase Auth kullanarak güvenli kullanıcı yönetimi sağlar.
+
+**Kapsam:**
+- Kullanıcı girişi/çıkışı
+- Kayıt olma
+- Şifre sıfırlama
+- Email doğrulama
+- Session yönetimi
+- Role-based access control
+
+---
+
+## 📋 TODO List
+
+### 🔥 Phase 1: Schema Split (1-2 gün)
+
+#### 1.1 Zod Schema Files
+- [ ] **Create login schema**
+  ```typescript
+  // src/features/auth/schemas/login.ts
+  export const loginSchema = z.object({
+    email: z.string().email('validation.email.invalid'),
+    password: z.string().min(6, 'validation.password.minLength')
+  });
+  ```
+
+- [ ] **Create signup schema**
+  ```typescript
+  // src/features/auth/schemas/signup.ts
+  export const signupSchema = z.object({
+    email: z.string().email('validation.email.invalid'),
+    password: z.string().min(6, 'validation.password.minLength'),
+    confirmPassword: z.string().min(6, 'validation.password.minLength')
+  }).refine(data => data.password === data.confirmPassword, {
+    message: 'validation.password.mismatch',
+    path: ['confirmPassword']
+  });
+  ```
+
+- [ ] **Create reset password schema**
+  ```typescript
+  // src/features/auth/schemas/reset-password.ts
+  export const resetPasswordSchema = z.object({
+    email: z.string().email('validation.email.invalid')
+  });
+  ```
+
+- [ ] **Create change password schema**
+  ```typescript
+  // src/features/auth/schemas/change-password.ts
+  export const changePasswordSchema = z.object({
+    currentPassword: z.string().min(1, 'validation.password.required'),
+    newPassword: z.string().min(6, 'validation.password.minLength'),
+    confirmPassword: z.string().min(6, 'validation.password.minLength')
+  }).refine(data => data.newPassword === data.confirmPassword, {
+    message: 'validation.password.mismatch',
+    path: ['confirmPassword']
+  });
+  ```
+
+#### 1.2 Form Component Updates
+- [ ] **Update LoginForm component**
+  ```typescript
+  // src/features/auth/components/LoginForm.tsx
+  import { loginSchema } from '../schemas/login';
+  import { zodResolver } from '@hookform/resolvers/zod';
+  
+  const form = useForm<z.infer<typeof loginSchema>>({
+    resolver: zodResolver(loginSchema)
+  });
+  ```
+
+- [ ] **Update SignupForm component**
+  ```typescript
+  // src/features/auth/components/SignupForm.tsx
+  import { signupSchema } from '../schemas/signup';
+  import { zodResolver } from '@hookform/resolvers/zod';
+  
+  const form = useForm<z.infer<typeof signupSchema>>({
+    resolver: zodResolver(signupSchema)
+  });
+  ```
+
+- [ ] **Update ResetPasswordForm component**
+  ```typescript
+  // src/features/auth/components/ResetPasswordForm.tsx
+  import { resetPasswordSchema } from '../schemas/reset-password';
+  import { zodResolver } from '@hookform/resolvers/zod';
+  
+  const form = useForm<z.infer<typeof resetPasswordSchema>>({
+    resolver: zodResolver(resetPasswordSchema)
+  });
+  ```
+
+- [ ] **Update ChangePasswordForm component**
+  ```typescript
+  // src/features/auth/components/ChangePasswordForm.tsx
+  import { changePasswordSchema } from '../schemas/change-password';
+  import { zodResolver } from '@hookform/resolvers/zod';
+  
+  const form = useForm<z.infer<typeof changePasswordSchema>>({
+    resolver: zodResolver(changePasswordSchema)
+  });
+  ```
+
+#### 1.3 Resolver Integration
+- [ ] **Create auth resolver**
+  ```typescript
+  // src/features/auth/resolvers/auth-resolver.ts
+  export const authResolver = {
+    login: zodResolver(loginSchema),
+    signup: zodResolver(signupSchema),
+    resetPassword: zodResolver(resetPasswordSchema),
+    changePassword: zodResolver(changePasswordSchema)
+  };
+  ```
+
+---
+
+### 🛡️ Phase 2: SSR Guard Implementation (2-3 gün)
+
+#### 2.1 Middleware Updates
+- [ ] **Update middleware.ts**
+  ```typescript
+  // src/middleware.ts
+  import { createMiddlewareClient } from '@supabase/auth-helpers-nextjs';
+  import { NextResponse } from 'next/server';
+  
+  export async function middleware(request: NextRequest) {
+    const supabase = createMiddlewareClient({ req: request, res: response });
+    const { data: { session } } = await supabase.auth.getSession();
+    
+    // Protected routes
+    if (request.nextUrl.pathname.startsWith('/dashboard') && !session) {
+      return NextResponse.redirect(new URL('/sign-in', request.url));
+    }
+    
+    // Admin routes
+    if (request.nextUrl.pathname.startsWith('/admin') && !isAdmin(session)) {
+      return NextResponse.redirect(new URL('/dashboard', request.url));
+    }
+    
+    return response;
+  }
+  ```
+
+- [ ] **Add auth helper functions**
+  ```typescript
+  // src/lib/auth/helpers.ts
+  export const isAdmin = (session: Session | null): boolean => {
+    return session?.user?.user_metadata?.role === 'admin';
+  };
+  
+  export const isAuthenticated = (session: Session | null): boolean => {
+    return !!session?.user;
+  };
+  ```
+
+#### 2.2 Layout Check Implementation
+- [ ] **Update protected layout**
+  ```typescript
+  // src/app/(protected)/layout.tsx
+  import { redirect } from 'next/navigation';
+  import { createServerClient } from '@/lib/supabase/server';
+  
+  export default async function ProtectedLayout({
+    children
+  }: {
+    children: React.ReactNode;
+  }) {
+    const supabase = createServerClient();
+    const { data: { session } } = await supabase.auth.getSession();
+    
+    if (!session) {
+      redirect('/sign-in');
+    }
+    
+    return <>{children}</>;
+  }
+  ```
+
+- [ ] **Add admin layout check**
+  ```typescript
+  // src/app/(admin)/layout.tsx
+  import { redirect } from 'next/navigation';
+  import { createServerClient } from '@/lib/supabase/server';
+  import { isAdmin } from '@/lib/auth/helpers';
+  
+  export default async function AdminLayout({
+    children
+  }: {
+    children: React.ReactNode;
+  }) {
+    const supabase = createServerClient();
+    const { data: { session } } = await supabase.auth.getSession();
+    
+    if (!session || !isAdmin(session)) {
+      redirect('/dashboard');
+    }
+    
+    return <>{children}</>;
+  }
+  ```
+
+#### 2.3 Route Protection
+- [ ] **Add route protection hooks**
+  ```typescript
+  // src/hooks/useAuthGuard.ts
+  'use client';
+  import { useAuth } from './useAuth';
+  import { useRouter } from 'next/navigation';
+  import { useEffect } from 'react';
+  
+  export const useAuthGuard = (requireAdmin = false) => {
+    const { user, loading, isAdmin } = useAuth();
+    const router = useRouter();
+    
+    useEffect(() => {
+      if (!loading) {
+        if (!user) {
+          router.push('/sign-in');
+        } else if (requireAdmin && !isAdmin) {
+          router.push('/dashboard');
+        }
+      }
+    }, [user, loading, isAdmin, requireAdmin, router]);
+    
+    return { user, loading, isAdmin };
+  };
+  ```
+
+---
+
+### 🔌 Phase 3: Supabase Client Init (1-2 gün)
+
+#### 3.1 Client Configuration
+- [ ] **Update client.ts**
+  ```typescript
+  // src/lib/supabase/client.ts
+  import { createClient } from '@supabase/supabase-js';
+  import { Database } from './types';
+  
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
+  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+  
+  export const supabase = createClient<Database>(supabaseUrl, supabaseAnonKey, {
+    auth: {
+      autoRefreshToken: true,
+      persistSession: true,
+      detectSessionInUrl: true
+    }
+  });
+  ```
+
+- [ ] **Update server.ts**
+  ```typescript
+  // src/lib/supabase/server.ts
+  import { createServerClient } from '@supabase/auth-helpers-nextjs';
+  import { cookies } from 'next/headers';
+  import { Database } from './types';
+  
+  export const createServerClient = () => {
+    const cookieStore = cookies();
+    
+    return createServerClient<Database>(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+      {
+        cookies: {
+          get(name: string) {
+            return cookieStore.get(name)?.value;
+          }
+        }
+      }
+    );
+  };
+  ```
+
+#### 3.2 Edge Runtime Support
+- [ ] **Add edge runtime support**
+  ```typescript
+  // src/lib/supabase/edge.ts
+  import { createClient } from '@supabase/supabase-js';
+  import { Database } from './types';
+  
+  export const createEdgeClient = () => {
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
+    const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+    
+    return createClient<Database>(supabaseUrl, supabaseAnonKey, {
+      auth: {
+        autoRefreshToken: false,
+        persistSession: false
+      }
+    });
+  };
+  ```
+
+#### 3.3 Node Runtime Notes
+- [ ] **Add Node runtime documentation**
+  ```typescript
+  // src/lib/supabase/README.md
+  /*
+   * Node Runtime Usage:
+   * - Use createServerClient for API routes
+   * - Use createServerClient for Server Components
+   * - Use supabase client for Client Components
+   * - Use createEdgeClient for Edge Runtime
+   */
+  ```
+
+---
+
+### 🌐 Phase 4: i18n Key Extensions (1-2 gün)
+
+#### 4.1 Turkish (tr) Keys
+- [ ] **Add auth keys to tr.json**
+  ```json
+  // messages/tr.json
+  {
+    "auth": {
+      "login": {
+        "title": "Giriş Yap",
+        "email": "E-posta",
+        "password": "Şifre",
+        "submit": "Giriş Yap",
+        "forgotPassword": "Şifremi Unuttum",
+        "noAccount": "Hesabınız yok mu?",
+        "signUp": "Kayıt Ol"
+      },
+      "signup": {
+        "title": "Kayıt Ol",
+        "email": "E-posta",
+        "password": "Şifre",
+        "confirmPassword": "Şifre Tekrar",
+        "submit": "Kayıt Ol",
+        "hasAccount": "Zaten hesabınız var mı?",
+        "signIn": "Giriş Yap"
+      },
+      "resetPassword": {
+        "title": "Şifre Sıfırla",
+        "email": "E-posta",
+        "submit": "Sıfırlama Bağlantısı Gönder",
+        "backToLogin": "Giriş Sayfasına Dön"
+      },
+      "changePassword": {
+        "title": "Şifre Değiştir",
+        "currentPassword": "Mevcut Şifre",
+        "newPassword": "Yeni Şifre",
+        "confirmPassword": "Yeni Şifre Tekrar",
+        "submit": "Şifre Değiştir"
+      }
+    },
+    "validation": {
+      "email": {
+        "invalid": "Geçerli bir e-posta adresi girin",
+        "required": "E-posta adresi gerekli"
+      },
+      "password": {
+        "minLength": "Şifre en az 6 karakter olmalı",
+        "required": "Şifre gerekli",
+        "mismatch": "Şifreler eşleşmiyor"
+      }
+    }
+  }
+  ```
+
+#### 4.2 English (en) Keys
+- [ ] **Add auth keys to en.json**
+  ```json
+  // messages/en.json
+  {
+    "auth": {
+      "login": {
+        "title": "Sign In",
+        "email": "Email",
+        "password": "Password",
+        "submit": "Sign In",
+        "forgotPassword": "Forgot Password?",
+        "noAccount": "Don't have an account?",
+        "signUp": "Sign Up"
+      },
+      "signup": {
+        "title": "Sign Up",
+        "email": "Email",
+        "password": "Password",
+        "confirmPassword": "Confirm Password",
+        "submit": "Sign Up",
+        "hasAccount": "Already have an account?",
+        "signIn": "Sign In"
+      },
+      "resetPassword": {
+        "title": "Reset Password",
+        "email": "Email",
+        "submit": "Send Reset Link",
+        "backToLogin": "Back to Login"
+      },
+      "changePassword": {
+        "title": "Change Password",
+        "currentPassword": "Current Password",
+        "newPassword": "New Password",
+        "confirmPassword": "Confirm New Password",
+        "submit": "Change Password"
+      }
+    },
+    "validation": {
+      "email": {
+        "invalid": "Please enter a valid email address",
+        "required": "Email address is required"
+      },
+      "password": {
+        "minLength": "Password must be at least 6 characters",
+        "required": "Password is required",
+        "mismatch": "Passwords do not match"
+      }
+    }
+  }
+  ```
+
+#### 4.3 Serbian (sr) Keys
+- [ ] **Add auth keys to sr.json**
+  ```json
+  // messages/sr.json
+  {
+    "auth": {
+      "login": {
+        "title": "Prijavite se",
+        "email": "Email",
+        "password": "Lozinka",
+        "submit": "Prijavite se",
+        "forgotPassword": "Zaboravili ste lozinku?",
+        "noAccount": "Nemate nalog?",
+        "signUp": "Registrujte se"
+      },
+      "signup": {
+        "title": "Registrujte se",
+        "email": "Email",
+        "password": "Lozinka",
+        "confirmPassword": "Potvrdite lozinku",
+        "submit": "Registrujte se",
+        "hasAccount": "Već imate nalog?",
+        "signIn": "Prijavite se"
+      },
+      "resetPassword": {
+        "title": "Resetujte lozinku",
+        "email": "Email",
+        "submit": "Pošaljite link za resetovanje",
+        "backToLogin": "Nazad na prijavu"
+      },
+      "changePassword": {
+        "title": "Promenite lozinku",
+        "currentPassword": "Trenutna lozinka",
+        "newPassword": "Nova lozinka",
+        "confirmPassword": "Potvrdite novu lozinku",
+        "submit": "Promenite lozinku"
+      }
+    },
+    "validation": {
+      "email": {
+        "invalid": "Molimo unesite važeću email adresu",
+        "required": "Email adresa je obavezna"
+      },
+      "password": {
+        "minLength": "Lozinka mora imati najmanje 6 karaktera",
+        "required": "Lozinka je obavezna",
+        "mismatch": "Lozinke se ne poklapaju"
+      }
+    }
+  }
+  ```
+
+#### 4.4 Placeholder Strategy
+- [ ] **Add placeholder handling**
+  ```typescript
+  // src/lib/i18n/placeholder.ts
+  export const getPlaceholderKey = (key: string, locale: string): string => {
+    const placeholders = {
+      tr: `[TR] ${key}`,
+      en: `[EN] ${key}`,
+      sr: `[SR] ${key}`
+    };
+    
+    return placeholders[locale as keyof typeof placeholders] || key;
+  };
+  ```
+
+---
+
+### 🧪 Phase 5: Testing Implementation (2-3 gün)
+
+#### 5.1 Unit Tests
+- [ ] **Test auth schemas**
+  ```typescript
+  // tests/unit/auth/schemas.test.ts
+  import { loginSchema, signupSchema } from '@/features/auth/schemas';
+  
+  describe('Auth Schemas', () => {
+    test('login schema validates correct data', () => {
+      const validData = {
+        email: 'test@example.com',
+        password: 'password123'
+      };
+      
+      expect(loginSchema.parse(validData)).toEqual(validData);
+    });
+    
+    test('login schema rejects invalid email', () => {
+      const invalidData = {
+        email: 'invalid-email',
+        password: 'password123'
+      };
+      
+      expect(() => loginSchema.parse(invalidData)).toThrow();
+    });
+  });
+  ```
+
+- [ ] **Test auth helpers**
+  ```typescript
+  // tests/unit/auth/helpers.test.ts
+  import { isAdmin, isAuthenticated } from '@/lib/auth/helpers';
+  
+  describe('Auth Helpers', () => {
+    test('isAdmin returns true for admin user', () => {
+      const adminSession = {
+        user: { user_metadata: { role: 'admin' } }
+      };
+      
+      expect(isAdmin(adminSession)).toBe(true);
+    });
+    
+    test('isAuthenticated returns true for valid session', () => {
+      const validSession = {
+        user: { id: '123' }
+      };
+      
+      expect(isAuthenticated(validSession)).toBe(true);
+    });
+  });
+  ```
+
+#### 5.2 Integration Tests
+- [ ] **Test auth flow**
+  ```typescript
+  // tests/integration/auth/flow.test.ts
+  import { createServerClient } from '@/lib/supabase/server';
+  
+  describe('Auth Flow', () => {
+    test('user can sign up and sign in', async () => {
+      const supabase = createServerClient();
+      
+      // Sign up
+      const { data: signUpData, error: signUpError } = await supabase.auth.signUp({
+        email: 'test@example.com',
+        password: 'password123'
+      });
+      
+      expect(signUpError).toBeNull();
+      expect(signUpData.user).toBeDefined();
+      
+      // Sign in
+      const { data: signInData, error: signInError } = await supabase.auth.signInWithPassword({
+        email: 'test@example.com',
+        password: 'password123'
+      });
+      
+      expect(signInError).toBeNull();
+      expect(signInData.user).toBeDefined();
+    });
+  });
+  ```
+
+#### 5.3 E2E Tests
+- [ ] **Test auth pages**
+  ```typescript
+  // tests/e2e/auth/pages.test.ts
+  import { test, expect } from '@playwright/test';
+  
+  test.describe('Auth Pages', () => {
+    test('login page loads correctly', async ({ page }) => {
+      await page.goto('/sign-in');
+      
+      await expect(page.locator('h1')).toContainText('Giriş Yap');
+      await expect(page.locator('input[type="email"]')).toBeVisible();
+      await expect(page.locator('input[type="password"]')).toBeVisible();
+      await expect(page.locator('button[type="submit"]')).toBeVisible();
+    });
+    
+    test('user can login successfully', async ({ page }) => {
+      await page.goto('/sign-in');
+      
+      await page.fill('input[type="email"]', 'test@example.com');
+      await page.fill('input[type="password"]', 'password123');
+      await page.click('button[type="submit"]');
+      
+      await expect(page).toHaveURL('/dashboard');
+    });
+  });
+  ```
+
+---
+
+### 📊 Phase 6: Performance Optimization (1-2 gün)
+
+#### 6.1 Bundle Size Optimization
+- [ ] **Analyze auth module bundle**
+  ```bash
+  # Bundle analysis
+  npx @next/bundle-analyzer
+  ```
+
+- [ ] **Optimize imports**
+  ```typescript
+  // Use dynamic imports for heavy components
+  const LoginForm = dynamic(() => import('./LoginForm'), {
+    loading: () => <div>Loading...</div>
+  });
+  ```
+
+#### 6.2 Load Time Optimization
+- [ ] **Optimize auth pages**
+  ```typescript
+  // Use React.memo for form components
+  export const LoginForm = React.memo(({ onSubmit }) => {
+    // Component logic
+  });
+  ```
+
+- [ ] **Add loading states**
+  ```typescript
+  // Add skeleton loading for auth pages
+  const AuthPageSkeleton = () => (
+    <div className="animate-pulse">
+      <div className="h-8 bg-gray-200 rounded mb-4"></div>
+      <div className="h-10 bg-gray-200 rounded mb-4"></div>
+      <div className="h-10 bg-gray-200 rounded mb-4"></div>
+      <div className="h-10 bg-gray-200 rounded"></div>
+    </div>
+  );
+  ```
+
+#### 6.3 Memory Usage Optimization
+- [ ] **Optimize auth hooks**
+  ```typescript
+  // Use useCallback for event handlers
+  const handleSubmit = useCallback((data: LoginData) => {
+    // Submit logic
+  }, []);
+  
+  // Use useMemo for expensive calculations
+  const isFormValid = useMemo(() => {
+    return form.formState.isValid;
+  }, [form.formState.isValid]);
+  ```
+
+---
+
+### 🔍 Phase 7: Code Quality (1-2 gün)
+
+#### 7.1 TypeScript Strict Mode
+- [ ] **Fix all TypeScript errors**
+  ```typescript
+  // Use proper type definitions
+  interface AuthUser {
+    id: string;
+    email: string;
+    role: 'user' | 'admin';
+    created_at: string;
+    updated_at: string;
+  }
+  ```
+
+- [ ] **Add type guards**
+  ```typescript
+  // Type guards for runtime type checking
+  export const isAuthUser = (user: any): user is AuthUser => {
+    return user && 
+           typeof user.id === 'string' &&
+           typeof user.email === 'string' &&
+           (user.role === 'user' || user.role === 'admin');
+  };
+  ```
+
+#### 7.2 Error Handling
+- [ ] **Add comprehensive error handling**
+  ```typescript
+  // Error handling for auth operations
+  export const handleAuthError = (error: any) => {
+    if (error.message.includes('Invalid login credentials')) {
+      return 'auth.errors.invalidCredentials';
+    }
+    
+    if (error.message.includes('Email not confirmed')) {
+      return 'auth.errors.emailNotConfirmed';
+    }
+    
+    return 'auth.errors.generic';
+  };
+  ```
+
+#### 7.3 Logging
+- [ ] **Add security event logging**
+  ```typescript
+  // Security event logging
+  export const logSecurityEvent = (event: string, details: any) => {
+    console.log(`[SECURITY] ${event}:`, {
+      timestamp: new Date().toISOString(),
+      event,
+      details,
+      userAgent: navigator.userAgent,
+      ip: 'client-side'
+    });
+    
+    // Send to monitoring service
+    if (process.env.NODE_ENV === 'production') {
+      // Send to Sentry or similar
+    }
+  };
+  ```
+
+---
+
+## ✅ Acceptance Criteria
+
+### 1. Functional Requirements
+- [ ] **Login redirects to /dashboard**
+- [ ] **Invalid creds show form error**
+- [ ] **Sign-up triggers email confirmation**
+- [ ] **Unauthed /dashboard redirects to /sign-in**
+
+### 2. Security Requirements
+- [ ] **No service_role on client**
+- [ ] **RLS policies active**
+- [ ] **Same-origin redirects only**
+- [ ] **Security headers set**
+
+### 3. Performance Requirements
+- [ ] **Auth module < 50KB**
+- [ ] **Auth pages load < 1s**
+- [ ] **No memory leaks**
+
+### 4. Quality Requirements
+- [ ] **TypeScript strict mode**
+- [ ] **All errors handled**
+- [ ] **Security events logged**
+- [ ] **Test coverage > 80%**
+
+---
+
+## 📊 Progress Tracking
+
+### Phase 1: Schema Split
+- [ ] Login schema created
+- [ ] Signup schema created
+- [ ] Reset password schema created
+- [ ] Change password schema created
+- [ ] Form components updated
+- [ ] Resolver integration complete
+
+### Phase 2: SSR Guard Implementation
+- [ ] Middleware updated
+- [ ] Auth helper functions added
+- [ ] Protected layout implemented
+- [ ] Admin layout implemented
+- [ ] Route protection hooks added
+
+### Phase 3: Supabase Client Init
+- [ ] Client configuration updated
+- [ ] Server configuration updated
+- [ ] Edge runtime support added
+- [ ] Node runtime documentation added
+
+### Phase 4: i18n Key Extensions
+- [ ] Turkish keys added
+- [ ] English keys added
+- [ ] Serbian keys added
+- [ ] Placeholder strategy implemented
+
+### Phase 5: Testing Implementation
+- [ ] Unit tests written
+- [ ] Integration tests written
+- [ ] E2E tests written
+- [ ] Test coverage > 80%
+
+### Phase 6: Performance Optimization
+- [ ] Bundle size optimized
+- [ ] Load time optimized
+- [ ] Memory usage optimized
+- [ ] Performance targets met
+
+### Phase 7: Code Quality
+- [ ] TypeScript errors fixed
+- [ ] Error handling implemented
+- [ ] Logging implemented
+- [ ] Code quality standards met
+
+---
+
+## 🚀 Deployment Checklist
+
+### Pre-Deployment
+- [ ] All phases completed
+- [ ] All acceptance criteria met
+- [ ] All tests passing
+- [ ] Performance targets met
+- [ ] Security review completed
+- [ ] Code review completed
+
+### Post-Deployment
+- [ ] Monitoring active
+- [ ] Error tracking active
+- [ ] User feedback positive
+- [ ] Performance metrics good
+- [ ] Security metrics good
+
+---
+
+## 📞 Support
+
+### 1. Development Issues
+- **Email:** dev@tarot-app.com
+- **Slack:** #auth-module-dev
+- **Phone:** +90 555 123 4567
+
+### 2. Security Issues
+- **Email:** security@tarot-app.com
+- **Slack:** #security-alerts
+- **Phone:** +90 555 123 4568
+
+### 3. Performance Issues
+- **Email:** performance@tarot-app.com
+- **Slack:** #performance-alerts
+- **Phone:** +90 555 123 4569
+
+---
+
+**Bu TODO listesi auth-basic modülü için zorunludur ve tüm maddeler tamamlanmalıdır.**

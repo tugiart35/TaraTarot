@@ -298,27 +298,4 @@ export interface UsePaymentReturn extends PaymentContextType {
   calculatePrice: (tierId: string, couponCode?: string) => Promise<number>;
 }
 
-// Export all types
-export type {
-  PaymentProvider,
-  PaymentMethod,
-  Currency,
-  PaymentStatus,
-  BillingInterval,
-  PaymentIntentType,
-  PaymentSubscription,
-  PaymentMethodData,
-  PaymentTransaction,
-  PricingTier,
-  PaymentFormData,
-  PaymentFormErrors,
-  StripeConfig,
-  PayPalConfig,
-  PaymentConfig,
-  WebhookEventType,
-  WebhookEvent,
-  PaymentAnalytics,
-  PaymentPermissions,
-  PaymentContextType,
-  UsePaymentReturn,
-};
+// All types are already exported inline above

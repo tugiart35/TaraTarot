@@ -90,9 +90,9 @@ export type Permission =
   | 'analytics:view';
 
 // Role permissions mapping
-export interface RolePermissions {
+export type RolePermissions = {
   [key in UserRole]: Permission[];
-}
+};
 
 // Audit log entry
 export interface AuditLogEntry {
@@ -173,26 +173,4 @@ export interface SessionStorage {
   lastActivity: number;
 }
 
-// Export all types for easy importing
-export type {
-  User,
-  UserRole,
-  SubscriptionType,
-  SubscriptionStatus,
-  AuthState,
-  SessionConfig,
-  EnhancedUser,
-  AuthContextType,
-  Permission,
-  RolePermissions,
-  AuditLogEntry,
-  RateLimitConfig,
-  SecurityHeaders,
-  PWAAuthConfig,
-  AuthError,
-  AuthFormData,
-  AuthFormErrors,
-  SocialProvider,
-  OAuthConfig,
-  SessionStorage,
-};
+// All types are already exported inline above

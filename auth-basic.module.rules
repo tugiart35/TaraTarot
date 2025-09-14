@@ -1,0 +1,427 @@
+# 🔐 Auth Basic Module Rules - Tarot Web Application
+
+**Module Scope:** Authentication & Authorization  
+**Framework:** Next.js 15.4.4 + TypeScript + Supabase  
+**Security Level:** Production-Ready  
+**Last Updated:** $(date)
+
+---
+
+## 📁 Allowed Paths
+
+### ✅ Core Auth Paths
+```
+src/app/(auth)/**                    # Auth pages (sign-in, sign-up)
+src/app/auth/callback/**            # Auth callback handlers
+src/app/(protected)/dashboard/page.tsx  # Protected dashboard
+src/lib/supabase/**                 # Supabase client configuration
+src/middleware.ts                   # Auth middleware
+tests/auth/**                       # Auth-specific tests
+prisma/**                          # Database schema (profiles + RLS only)
+```
+
+### ❌ Restricted Paths
+```
+src/app/api/auth/**                 # API routes (handled separately)
+src/lib/admin/**                    # Admin functionality (separate module)
+src/features/dashboard/**           # Dashboard features (separate module)
+src/lib/payment/**                  # Payment system (separate module)
+```
+
+---
+
+## 🔒 Security Rules
+
+### 1. Environment Variables
+- [ ] **NEXT_PUBLIC_* Only Public Values**
+  ```typescript
+  // ✅ Allowed
+  NEXT_PUBLIC_SUPABASE_URL=https://...
+  NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJ...
+  
+  // ❌ Forbidden
+  NEXT_PUBLIC_SUPABASE_SERVICE_ROLE_KEY=eyJ...
+  NEXT_PUBLIC_DATABASE_PASSWORD=secret
+  ```
+
+### 2. Service Role Protection
+- [ ] **NEVER use service_role on client/edge**
+  ```typescript
+  // ✅ Allowed - Client-side
+  import { supabase } from '@/lib/supabase/client';
+  
+  // ❌ Forbidden - Client-side
+  import { createClient } from '@supabase/supabase-js';
+  const supabase = createClient(url, serviceRoleKey); // ❌
+  ```
+
+### 3. RLS (Row Level Security)
+- [ ] **RLS ON for all tables**
+  ```sql
+  -- ✅ Required
+  ALTER TABLE profiles ENABLE ROW LEVEL SECURITY;
+  ALTER TABLE readings ENABLE ROW LEVEL SECURITY;
+  ALTER TABLE transactions ENABLE ROW LEVEL SECURITY;
+  ```
+
+### 4. Same-Origin Redirect
+- [ ] **"next" parameter same-origin only**
+  ```typescript
+  // ✅ Allowed
+  const redirectTo = '/dashboard';
+  const isSameOrigin = redirectTo.startsWith('/');
+  
+  // ❌ Forbidden
+  const redirectTo = 'https://evil.com/steal';
+  ```
+
+---
+
+## 📝 Form Rules
+
+### 1. RHF + Zod Zorunluluğu
+- [ ] **All forms MUST use React Hook Form + Zod**
+  ```typescript
+  // ✅ Required pattern
+  import { useForm } from 'react-hook-form';
+  import { zodResolver } from '@hookform/resolvers/zod';
+  import { z } from 'zod';
+  
+  const schema = z.object({
+    email: z.string().email(),
+    password: z.string().min(6)
+  });
+  
+  const form = useForm<z.infer<typeof schema>>({
+    resolver: zodResolver(schema)
+  });
+  ```
+
+### 2. Schema Separation
+- [ ] **Schemas MUST be in separate files**
+  ```
+  src/features/auth/schemas/
+  ├── login.ts
+  ├── signup.ts
+  └── reset-password.ts
+  ```
+
+### 3. Error Handling
+- [ ] **Form errors MUST be i18n keys**
+  ```typescript
+  // ✅ Required
+  const schema = z.object({
+    email: z.string().email('validation.email.invalid'),
+    password: z.string().min(6, 'validation.password.minLength')
+  });
+  ```
+
+---
+
+## 🛡️ Middleware Rules
+
+### 1. Auth Protection
+- [ ] **Protected routes MUST check authentication**
+  ```typescript
+  // ✅ Required
+  if (pathname.startsWith('/dashboard') && !session) {
+    return NextResponse.redirect(new URL('/sign-in', request.url));
+  }
+  ```
+
+### 2. Role-Based Access
+- [ ] **Admin routes MUST check admin role**
+  ```typescript
+  // ✅ Required
+  if (pathname.startsWith('/admin') && !isAdmin) {
+    return NextResponse.redirect(new URL('/dashboard', request.url));
+  }
+  ```
+
+### 3. Security Headers
+- [ ] **Security headers MUST be set**
+  ```typescript
+  // ✅ Required
+  const securityHeaders = {
+    'X-Frame-Options': 'DENY',
+    'X-Content-Type-Options': 'nosniff',
+    'Referrer-Policy': 'strict-origin-when-cross-origin',
+    'Content-Security-Policy': "default-src 'self'"
+  };
+  ```
+
+---
+
+## 🔄 Supabase Client Rules
+
+### 1. Client Initialization
+- [ ] **Client MUST be properly initialized**
+  ```typescript
+  // ✅ Required
+  import { createClient } from '@supabase/supabase-js';
+  
+  const supabase = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  );
+  ```
+
+### 2. Edge Runtime Support
+- [ ] **Edge runtime MUST be supported**
+  ```typescript
+  // ✅ Required
+  export const runtime = 'edge';
+  
+  // ❌ Forbidden in edge
+  import { createServerClient } from '@/lib/supabase/server';
+  ```
+
+### 3. Session Management
+- [ ] **Session MUST be properly managed**
+  ```typescript
+  // ✅ Required
+  const { data: { session }, error } = await supabase.auth.getSession();
+  
+  if (error) {
+    throw new Error('Session error');
+  }
+  ```
+
+---
+
+## 🧪 Test Rules
+
+### 1. Auth Test Coverage
+- [ ] **MUST test all auth flows**
+  - Login success/failure
+  - Signup success/failure
+  - Password reset
+  - Email confirmation
+  - Logout
+
+### 2. Security Test Coverage
+- [ ] **MUST test security scenarios**
+  - Unauthorized access attempts
+  - Invalid token handling
+  - RLS policy enforcement
+  - XSS protection
+  - CSRF protection
+
+### 3. Integration Test Coverage
+- [ ] **MUST test Supabase integration**
+  - Database queries
+  - Auth state changes
+  - Real-time subscriptions
+  - Error handling
+
+---
+
+## 📊 Performance Rules
+
+### 1. Bundle Size
+- [ ] **Auth module MUST be < 50KB**
+  ```bash
+  # ✅ Required
+  npx @next/bundle-analyzer
+  # Auth module: < 50KB
+  ```
+
+### 2. Load Time
+- [ ] **Auth pages MUST load < 1s**
+  ```bash
+  # ✅ Required
+  lighthouse --only-categories=performance
+  # First Contentful Paint: < 1s
+  ```
+
+### 3. Memory Usage
+- [ ] **Auth hooks MUST not leak memory**
+  ```typescript
+  // ✅ Required
+  useEffect(() => {
+    const subscription = supabase.auth.onAuthStateChange(callback);
+    return () => subscription.data.subscription.unsubscribe();
+  }, []);
+  ```
+
+---
+
+## 🔍 Code Quality Rules
+
+### 1. TypeScript
+- [ ] **MUST use strict TypeScript**
+  ```typescript
+  // ✅ Required
+  interface AuthUser {
+    id: string;
+    email: string;
+    role: 'user' | 'admin';
+  }
+  ```
+
+### 2. Error Handling
+- [ ] **MUST handle all errors gracefully**
+  ```typescript
+  // ✅ Required
+  try {
+    const { data, error } = await supabase.auth.signIn(credentials);
+    if (error) throw error;
+    return data;
+  } catch (error) {
+    console.error('Auth error:', error);
+    throw new Error('Authentication failed');
+  }
+  ```
+
+### 3. Logging
+- [ ] **MUST log security events**
+  ```typescript
+  // ✅ Required
+  const logSecurityEvent = (event: string, details: any) => {
+    console.log(`[SECURITY] ${event}:`, details);
+    // Send to monitoring service
+  };
+  ```
+
+---
+
+## 🚀 Deployment Rules
+
+### 1. Environment Setup
+- [ ] **MUST have proper environment variables**
+  ```bash
+  # ✅ Required
+  NEXT_PUBLIC_SUPABASE_URL=https://...
+  NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJ...
+  SUPABASE_SERVICE_ROLE_KEY=eyJ...  # Server-side only
+  ```
+
+### 2. Database Setup
+- [ ] **MUST have RLS policies**
+  ```sql
+  -- ✅ Required
+  CREATE POLICY "Users can view own profile" ON profiles
+    FOR SELECT USING (auth.uid() = id);
+  ```
+
+### 3. Monitoring
+- [ ] **MUST have error monitoring**
+  ```typescript
+  // ✅ Required
+  import * as Sentry from '@sentry/nextjs';
+  
+  Sentry.captureException(error);
+  ```
+
+---
+
+## ✅ Acceptance Criteria
+
+### 1. Functional Requirements
+- [ ] **Login redirects to /dashboard**
+- [ ] **Invalid creds show form error**
+- [ ] **Sign-up triggers email confirmation**
+- [ ] **Unauthed /dashboard redirects to /sign-in**
+
+### 2. Security Requirements
+- [ ] **No service_role on client**
+- [ ] **RLS policies active**
+- [ ] **Same-origin redirects only**
+- [ ] **Security headers set**
+
+### 3. Performance Requirements
+- [ ] **Auth module < 50KB**
+- [ ] **Auth pages load < 1s**
+- [ ] **No memory leaks**
+
+### 4. Quality Requirements
+- [ ] **TypeScript strict mode**
+- [ ] **All errors handled**
+- [ ] **Security events logged**
+- [ ] **Test coverage > 80%**
+
+---
+
+## 🚫 Violation Consequences
+
+### 1. Security Violations
+- **Service role on client:** Immediate rollback
+- **RLS disabled:** Immediate rollback
+- **XSS vulnerability:** Immediate rollback
+
+### 2. Performance Violations
+- **Bundle size > 50KB:** Warning + optimization required
+- **Load time > 1s:** Warning + optimization required
+- **Memory leak:** Warning + fix required
+
+### 3. Quality Violations
+- **TypeScript errors:** Build failure
+- **Missing error handling:** Warning + fix required
+- **Test coverage < 80%:** Warning + tests required
+
+---
+
+## 📋 Compliance Checklist
+
+### Pre-Deployment
+- [ ] All security rules followed
+- [ ] All form rules followed
+- [ ] All middleware rules followed
+- [ ] All Supabase rules followed
+- [ ] All test rules followed
+- [ ] All performance rules followed
+- [ ] All code quality rules followed
+- [ ] All deployment rules followed
+
+### Post-Deployment
+- [ ] All acceptance criteria met
+- [ ] No security violations
+- [ ] No performance violations
+- [ ] No quality violations
+- [ ] Monitoring active
+- [ ] Error tracking active
+- [ ] User feedback positive
+
+---
+
+## 🔄 Review Process
+
+### 1. Code Review
+- [ ] Security expert review
+- [ ] Performance expert review
+- [ ] Quality expert review
+
+### 2. Testing
+- [ ] Unit tests pass
+- [ ] Integration tests pass
+- [ ] E2E tests pass
+- [ ] Security tests pass
+
+### 3. Deployment
+- [ ] Staging deployment
+- [ ] Production deployment
+- [ ] Monitoring verification
+- [ ] User acceptance testing
+
+---
+
+## 📞 Support
+
+### 1. Security Issues
+- **Email:** security@tarot-app.com
+- **Slack:** #security-alerts
+- **Phone:** +90 555 123 4567
+
+### 2. Performance Issues
+- **Email:** performance@tarot-app.com
+- **Slack:** #performance-alerts
+- **Phone:** +90 555 123 4568
+
+### 3. Quality Issues
+- **Email:** quality@tarot-app.com
+- **Slack:** #quality-alerts
+- **Phone:** +90 555 123 4569
+
+---
+
+**Bu kurallar auth-basic modülü için zorunludur ve ihlal edilmesi durumunda deployment engellenir.**

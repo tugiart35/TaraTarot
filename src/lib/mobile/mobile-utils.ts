@@ -462,9 +462,4 @@ export const initializeMobileSupport = (): void => {
   });
 };
 
-// Export all utilities
-export {
-  MobileSecureStorage,
-  MobileSessionManager,
-  initializeMobileSupport,
-};
+// All utilities are already exported inline above

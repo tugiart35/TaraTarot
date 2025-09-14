@@ -574,8 +574,4 @@ export class AuditLogger {
 // Create audit logger instance
 export const auditLogger = AuditLogger.getInstance();
 
-// Export all classes and functions
-export {
-  AuditLogger,
-  SECURITY_EVENT_PATTERNS,
-};
+// All classes and functions are already exported inline above

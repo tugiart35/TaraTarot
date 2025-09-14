@@ -23,6 +23,13 @@ const config: Config = {
         'safe-bottom': 'env(safe-area-inset-bottom)',
         'safe-left': 'env(safe-area-inset-left)',
         'safe-right': 'env(safe-area-inset-right)',
+        '18': '4.5rem',
+        '88': '22rem',
+        '128': '32rem',
+        'golden-sm': '0.618rem',
+        'golden-md': '1.618rem',
+        'golden-lg': '2.618rem',
+        'golden-xl': '4.236rem',
       },
       minHeight: {
         'touch-target': '44px', // Minimum touch target size
@@ -110,17 +117,6 @@ const config: Config = {
         'mystic': ['Cinzel', 'serif'], // Dashboard specific font
         body: ['Inter', 'system-ui', 'sans-serif'], // For body text
         mono: ['JetBrains Mono', 'monospace'], // For code/technical elements
-      },
-      
-      // Enhanced spacing following golden ratio
-      spacing: {
-        '18': '4.5rem',
-        '88': '22rem',
-        '128': '32rem',
-        'golden-sm': '0.618rem',
-        'golden-md': '1.618rem',
-        'golden-lg': '2.618rem',
-        'golden-xl': '4.236rem',
       },
       
       // Enhanced mystical animations
