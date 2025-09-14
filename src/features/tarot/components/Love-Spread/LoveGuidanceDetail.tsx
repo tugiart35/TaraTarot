@@ -23,7 +23,7 @@ import {
   BaseCardPosition,
   BaseCardGallery,
   CardDetails,
-  ReadingInfoModal,
+  // ReadingInfoModal, // Archived
 } from '@/features/shared/ui';
 import LoveCardRenderer from './LoveCardRenderer';
 import LoveInterpretation from './LoveInterpretation';
@@ -134,7 +134,7 @@ export default function LoveGuidanceDetail({
   const [isSaving, setIsSaving] = useState(false);
   const [isGenerating, setIsGenerating] = useState(false);
   const [showCreditConfirm, setShowCreditConfirm] = useState(false);
-  const [showInfoModal, setShowInfoModal] = useState(true);
+  // const [showInfoModal, setShowInfoModal] = useState(true); // Archived with ReadingInfoModal
   const [toast, setToast] = useState<{
     type: 'success' | 'error' | 'info';
     message: string;
@@ -623,15 +623,15 @@ export default function LoveGuidanceDetail({
   // 1. currentStep state'i ile akış yönetimi
   // const [currentStep, setCurrentStep] = useState<'info' | 'questions' | 'credit' | 'reading' | 'interpretation' | 'submitted'>('info');
 
-  // 2. ReadingInfoModal açılışı
-  if (readingState.currentStep === 'info') {
-    return (
-      <ReadingInfoModal
-        isOpen={true}
-        onClose={() => setReadingState(prev => ({ ...prev, currentStep: 'questions' }))}
-      />
-    );
-  }
+  // 2. ReadingInfoModal açılışı - Archived
+  // if (readingState.currentStep === 'info') {
+  //   return (
+  //     <ReadingInfoModal
+  //       isOpen={true}
+  //       onClose={() => setReadingState(prev => ({ ...prev, currentStep: 'questions' }))}
+  //     />
+  //   );
+  // }
 
   // 3. Kişisel bilgi ve soru adımı (questions)
   if (readingState.currentStep === 'questions') {
@@ -644,15 +644,15 @@ export default function LoveGuidanceDetail({
             {toast.message}
           </div>
         )}
-        <ReadingInfoModal
+        {/* <ReadingInfoModal Archived
           isOpen={showInfoModal}
           onClose={() => setShowInfoModal(false)}
-        />
+        /> */}
         <div
           className='w-full max-w-2xl mx-auto p-6'
           style={{
-            filter: showInfoModal ? 'blur(2px)' : 'none',
-            pointerEvents: showInfoModal ? 'none' : 'auto',
+            filter: false ? 'blur(2px)' : 'none', // showInfoModal archived
+            pointerEvents: false ? 'none' : 'auto', // showInfoModal archived
           }}
         >
           <div className='text-center mb-8'>

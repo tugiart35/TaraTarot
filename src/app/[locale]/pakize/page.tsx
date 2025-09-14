@@ -39,7 +39,7 @@ import {
   ArrowUpRight,
   ArrowDownRight,
 } from 'lucide-react';
-import RealTimeMonitoring from '@/components/admin/RealTimeMonitoring';
+// import RealTimeMonitoring from '@/components/admin/RealTimeMonitoring'; // Archived
 
 interface AdminStats {
   totalUsers: number;
@@ -530,7 +530,7 @@ export default function AdminDashboard() {
 
       {/* Real-time Monitoring */}
       <div className='admin-card rounded-2xl p-6 admin-hover-lift'>
-        <RealTimeMonitoring />
+        {/* <RealTimeMonitoring /> Archived */}
       </div>
 
       {/* System Status Footer */}

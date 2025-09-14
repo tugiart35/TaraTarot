@@ -22,8 +22,8 @@ import {
   RefreshCw,
   // Bell
 } from 'lucide-react';
-import ABTestManager from '@/components/admin/ABTestManager';
-import FraudDetection from '@/components/admin/FraudDetection';
+// import ABTestManager from '@/components/admin/ABTestManager'; // Archived
+// import FraudDetection from '@/components/admin/FraudDetection'; // Archived
 import { APIKeyManager, APIKey } from '@/lib/admin/api-keys';
 import { AdminUserManager, AdminUser } from '@/lib/admin/admin-users';
 import { AddAdminUserModal, EditAdminUserModal } from '@/components/admin/AdminUserModals';
@@ -1068,7 +1068,7 @@ export default function SettingsPage() {
                 </div>
               </div>
 
-              <FraudDetection />
+              {/* <FraudDetection /> Archived */}
             </div>
           </div>
         )}
@@ -1210,7 +1210,7 @@ export default function SettingsPage() {
               A/B Test Yönetimi
             </h3>
             
-            <ABTestManager />
+            {/* <ABTestManager /> Archived */}
           </div>
         )}
 

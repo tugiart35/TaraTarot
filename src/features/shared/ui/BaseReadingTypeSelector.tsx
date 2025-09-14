@@ -50,12 +50,12 @@ Yapılan değişiklikler:
 
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { CreditStatus } from '@/lib/constants/reading-credits';
 import { useTranslations } from '@/hooks/useTranslations';
 import { useAuth } from '@/hooks/useAuth';
 import { useReadingCredits } from '@/hooks/useReadingCredits';
-import CreditInfoModal from './CreditInfoModal';
+// import CreditInfoModal from './CreditInfoModal'; // Archived
 
 interface BaseReadingTypeSelectorProps {
   selectedType: string | null;
@@ -123,8 +123,8 @@ export default function BaseReadingTypeSelector({
   const writtenCredits = useReadingCredits('LOVE_SPREAD_WRITTEN');
 
   // Modal state'leri
-  const [showCreditInfoModal, setShowCreditInfoModal] = useState(false);
-  const [pendingReadingType, setPendingReadingType] = useState<string | null>(null);
+  // const [showCreditInfoModal, setShowCreditInfoModal] = useState(false); // Archived with CreditInfoModal
+  // const [pendingReadingType, setPendingReadingType] = useState<string | null>(null); // Archived with CreditInfoModal
 
   // Varsayılan değerleri i18n'den al
   const defaultSimpleText = simpleText || t('reading.types.simple');
@@ -145,19 +145,19 @@ export default function BaseReadingTypeSelector({
   // Kredi kontrolü kaldırıldı - basit yazılı sesli butonlar için
 
   // Modal onay fonksiyonu
-  const handleModalConfirm = () => {
-    setShowCreditInfoModal(false);
-    if (pendingReadingType) {
-      onTypeSelect(pendingReadingType);
-      setPendingReadingType(null);
-    }
-  };
+  // const handleModalConfirm = () => { // Archived with CreditInfoModal
+  //   setShowCreditInfoModal(false);
+  //   if (pendingReadingType) {
+  //     onTypeSelect(pendingReadingType);
+  //     setPendingReadingType(null);
+  //   }
+  // };
 
-  // Modal iptal fonksiyonu
-  const handleModalCancel = () => {
-    setShowCreditInfoModal(false);
-    setPendingReadingType(null);
-  };
+  // // Modal iptal fonksiyonu
+  // const handleModalCancel = () => { // Archived with CreditInfoModal
+  //   setShowCreditInfoModal(false);
+  //   setPendingReadingType(null);
+  // };
 
   // Sesli/yazılı okuma seçildiğinde çağrılacak fonksiyon
   const handleReadingTypeClick = (type: string) => {
@@ -191,8 +191,8 @@ export default function BaseReadingTypeSelector({
       }
 
       // Kredi yeterli - bilgilendirme modalını aç
-      setPendingReadingType(type);
-      setShowCreditInfoModal(true);
+      // setPendingReadingType(type); // Archived with CreditInfoModal
+      // setShowCreditInfoModal(true); // Archived with CreditInfoModal
     } else {
       // Basit okuma için direkt seç
       onTypeSelect(type);
@@ -485,8 +485,8 @@ export default function BaseReadingTypeSelector({
           )}
       </div>
 
-      {/* CreditInfoModal - kredi bilgilendirmesi için */}
-      {showCreditInfoModal && pendingReadingType && (
+      {/* CreditInfoModal - kredi bilgilendirmesi için - Archived */}
+      {/* {showCreditInfoModal && pendingReadingType && (
         <CreditInfoModal
           isOpen={showCreditInfoModal}
           onClose={handleModalCancel}
@@ -498,7 +498,7 @@ export default function BaseReadingTypeSelector({
           }
           theme={theme}
         />
-      )}
+      )} */}
     </div>
   );
 }
