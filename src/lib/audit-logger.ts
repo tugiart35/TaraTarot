@@ -120,14 +120,14 @@ class AuditLogger {
         logError('Audit log fallback to localStorage', error, {
           action: action.toString(),
           resource: resourceType.toString(),
-          userId: data.userId
+          userId: data.userId ?? undefined
         });
       });
     } catch (error) {
         logError('Failed to create audit log entry', error, {
           action: action.toString(),
           resource: resourceType.toString(),
-          userId: data.userId
+          userId: data.userId ?? undefined
         });
     }
   }
@@ -331,7 +331,7 @@ class AuditLogger {
     try {
       if (typeof window !== 'undefined' && window.localStorage) {
         // Generate unique key for localStorage (not used but kept for future use)
-        const _key = `audit_log_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+        // const _key = `audit_log_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
         const existingLogs = this.getLocalStorageLogs();
         existingLogs.push(entry);
         

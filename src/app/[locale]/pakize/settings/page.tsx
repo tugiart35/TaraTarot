@@ -43,15 +43,15 @@ import Toast from '@/features/shared/ui/Toast';
 
 
 export default function SettingsPage() {
-  const [activeTab] = useState<'api' | 'payment' | 'email' | 'security' | 'admins' | 'maintenance' | 'testing' | 'shopier'>('api');
-  const [loading] = useState(false);
-  const [savedMessage] = useState('');
+  const [activeTab, setActiveTab] = useState<'api' | 'payment' | 'email' | 'security' | 'admins' | 'maintenance' | 'testing' | 'shopier'>('api');
+  const [loading, setLoading] = useState(false);
+  const [savedMessage, setSavedMessage] = useState('');
   
   // Toast system
-  const { toast } = useToast();
+  const { toast, showToast, hideToast } = useToast();
   
   // Confirmation dialog state
-  const [confirmDialog] = useState<{
+  const [confirmDialog, setConfirmDialog] = useState<{
     isOpen: boolean;
     type: 'delete' | 'warning' | 'info';
     title: string;
@@ -67,38 +67,38 @@ export default function SettingsPage() {
   });
   
   // API Keys state
-  const [apiKeys] = useState<APIKey[]>([]);
-  const [apiKeysLoading] = useState(true);
-  const [showAddAPIKeyModal] = useState(false);
-  const [editingAPIKey] = useState<APIKey | null>(null);
+  const [apiKeys, setApiKeys] = useState<APIKey[]>([]);
+  const [apiKeysLoading, setApiKeysLoading] = useState(true);
+  const [showAddAPIKeyModal, setShowAddAPIKeyModal] = useState(false);
+  const [editingAPIKey, setEditingAPIKey] = useState<APIKey | null>(null);
 
   // Admin Users state
-  const [adminUsers] = useState<AdminUser[]>([]);
-  const [adminUsersLoading] = useState(true);
-  const [showAddAdminModal] = useState(false);
-  const [editingAdminUser] = useState<AdminUser | null>(null);
+  const [adminUsers, setAdminUsers] = useState<AdminUser[]>([]);
+  const [adminUsersLoading, setAdminUsersLoading] = useState(true);
+  const [showAddAdminModal, setShowAddAdminModal] = useState(false);
+  const [editingAdminUser, setEditingAdminUser] = useState<AdminUser | null>(null);
 
   // Email Settings state
-  const [emailSettings] = useState<EmailSettings | null>(null);
-  const [emailSettingsLoading] = useState(true);
-  const [showEmailSettingsModal] = useState(false);
+  const [emailSettings, setEmailSettings] = useState<EmailSettings | null>(null);
+  const [emailSettingsLoading, setEmailSettingsLoading] = useState(true);
+  const [showEmailSettingsModal, setShowEmailSettingsModal] = useState(false);
 
   // Email Templates state
-  const [emailTemplates] = useState<EmailTemplate[]>([]);
-  const [emailTemplatesLoading] = useState(true);
-  const [showAddTemplateModal] = useState(false);
-  const [editingTemplate] = useState<EmailTemplate | null>(null);
+  const [emailTemplates, setEmailTemplates] = useState<EmailTemplate[]>([]);
+  const [emailTemplatesLoading, setEmailTemplatesLoading] = useState(true);
+  const [showAddTemplateModal, setShowAddTemplateModal] = useState(false);
+  const [editingTemplate, setEditingTemplate] = useState<EmailTemplate | null>(null);
 
   // Maintenance state
-  const [maintenanceStatus] = useState<MaintenanceStatus | null>(null);
-  const [maintenanceLoading] = useState(true);
-  const [maintenanceMessage] = useState('');
-  const [allowedIPs] = useState<string[]>([]);
+  const [maintenanceStatus, setMaintenanceStatus] = useState<MaintenanceStatus | null>(null);
+  const [maintenanceLoading, setMaintenanceLoading] = useState(true);
+  const [maintenanceMessage, setMaintenanceMessage] = useState('');
+  const [allowedIPs, setAllowedIPs] = useState<string[]>([]);
 
   // Shopier state
-  const [shopierSettings] = useState<ShopierSettings | null>(null);
-  const [shopierLoading] = useState(true);
-  const [shopierTestResult] = useState<ShopierTestResult | null>(null);
+  const [shopierSettings, setShopierSettings] = useState<ShopierSettings | null>(null);
+  const [shopierLoading, setShopierLoading] = useState(true);
+  const [shopierTestResult, setShopierTestResult] = useState<ShopierTestResult | null>(null);
 
 
   const tabs = [
@@ -446,15 +446,15 @@ export default function SettingsPage() {
     });
   };
 
-  const showWarningConfirmation = (title: string, message: string, onConfirm: () => void) => {
-    setConfirmDialog({
-      isOpen: true,
-      type: 'warning',
-      title,
-      message,
-      onConfirm
-    });
-  };
+  // const showWarningConfirmation = (title: string, message: string, onConfirm: () => void) => {
+  //   setConfirmDialog({
+  //     isOpen: true,
+  //     type: 'warning',
+  //     title,
+  //     message,
+  //     onConfirm
+  //   });
+  // };
 
   const closeConfirmationDialog = () => {
     setConfirmDialog(prev => ({ ...prev, isOpen: false }));
@@ -1629,7 +1629,7 @@ export default function SettingsPage() {
         <Toast
           message={toast.message}
           type={toast.type}
-          onClose={() => {}}
+          onClose={hideToast}
         />
       )}
 

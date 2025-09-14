@@ -172,7 +172,7 @@ export class ErrorHandler {
       return {
         type: 'supabase',
         message: errorObj.message || 'Database error',
-        code: errorObj.code ?? undefined
+        code: errorObj.code
       };
     }
 

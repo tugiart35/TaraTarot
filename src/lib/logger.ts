@@ -114,9 +114,9 @@ class SecureLogger {
       name?: string;
       details?: unknown;
     } = {
-      message: errorObj.message ?? undefined,
-      code: errorObj.code ?? undefined,
-      name: errorObj.name ?? undefined
+      message: errorObj.message,
+      code: errorObj.code,
+      name: errorObj.name
     };
 
     // Remove sensitive fields
