@@ -35,7 +35,7 @@ Kullanım durumu:
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
+// import { useRouter } from 'next/navigation';
 import { BottomNavigation } from '@/features/shared/layout';
 import { useTranslations } from '@/hooks/useTranslations';
 import { useAuth } from '@/hooks/useAuth';
@@ -47,8 +47,8 @@ interface HomePageClientProps {
 
 export function HomePageClient({ locale }: HomePageClientProps) {
   const { t } = useTranslations();
-  const { user, isAuthenticated, loading: authLoading } = useAuth();
-  const router = useRouter();
+  const { user, isAuthenticated } = useAuth();
+  // const router = useRouter();
   const [totalReadings, setTotalReadings] = useState<number>(0);
   const [loadingStats, setLoadingStats] = useState(true);
 

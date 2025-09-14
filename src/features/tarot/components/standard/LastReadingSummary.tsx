@@ -73,7 +73,7 @@ export default function LastReadingSummary({
           </div>
         </div>
         <div className='flex space-x-2'>
-          {lastReading.cards.map((card, index) => (
+          {lastReading.cards.map((card) => (
             <div key={card.id} className='text-center'>
               <div className='w-8 h-10 bg-amber-500/20 border border-amber-500/40 rounded text-xs flex items-center justify-center mb-1'>
                 🃏

@@ -35,7 +35,7 @@ import { Wrench, Clock, RefreshCw, Home, Mail } from 'lucide-react';
 
 export default function MaintenancePage() {
   const searchParams = useSearchParams();
-  const [countdown] = useState<number | null>(null);
+  // const [countdown] = useState<number | null>(null);
   const [currentTime, setCurrentTime] = useState(new Date());
   
   const message = searchParams.get('message') || 'Sistem bakımda. Lütfen daha sonra tekrar deneyin.';

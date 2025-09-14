@@ -113,11 +113,11 @@ class SecureLogger {
       code?: string;
       name?: string;
       details?: unknown;
-    } = {
-      message: errorObj.message,
-      code: errorObj.code,
-      name: errorObj.name
-    };
+    } = {};
+    
+    if (errorObj.message !== undefined) sanitized.message = errorObj.message;
+    if (errorObj.code !== undefined) sanitized.code = errorObj.code;
+    if (errorObj.name !== undefined) sanitized.name = errorObj.name;
 
     // Remove sensitive fields
     if (errorObj.details && !this.containsSensitiveData(errorObj.details)) {

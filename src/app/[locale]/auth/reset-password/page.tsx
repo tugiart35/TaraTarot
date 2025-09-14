@@ -34,11 +34,11 @@ Kullanım durumu:
 import { useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { supabase } from '@/lib/supabase/client';
-import { useTranslations } from '@/hooks/useTranslations';
+// import { useTranslations } from '@/hooks/useTranslations';
 import { Eye, EyeOff, Lock, CheckCircle, AlertCircle } from 'lucide-react';
 
 export default function ResetPasswordPage() {
-  const { t } = useTranslations();
+  // const { t } = useTranslations();
   const router = useRouter();
   const searchParams = useSearchParams();
 

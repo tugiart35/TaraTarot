@@ -7,7 +7,7 @@ import { useAuth } from '@/hooks/useAuth';
 import { useTranslations } from '@/hooks/useTranslations';
 import { useShopier } from '@/hooks/useShopier';
 import { ensureProfileExists } from '@/lib/utils/profile-utils';
-import { DashboardState, UserProfile, Reading, Package } from '@/types/dashboard.types';
+import { UserProfile, Reading, Package } from '@/types/dashboard.types';
 import { getReadingTitle, getReadingSummary, getCreditCost, getFallbackPackages } from '@/utils/dashboard-utils';
 
 // Dashboard veri yönetimi için custom hook
@@ -17,7 +17,7 @@ export const useDashboardData = () => {
   // useTranslations hook'undan çeviri fonksiyonunu al
   const { t: translate } = useTranslations();
   // useShopier hook'undan ödeme fonksiyonlarını al
-  const { initiatePayment, loading: paymentLoading } = useShopier();
+  const { loading: paymentLoading } = useShopier();
   // Mevcut sayfa URL'ini al
   const pathname = usePathname();
   // Programatik sayfa yönlendirme için router

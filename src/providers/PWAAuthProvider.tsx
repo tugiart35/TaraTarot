@@ -118,7 +118,7 @@ export function PWAAuthProvider({ children }: PWAAuthProviderProps) {
     }
 
     try {
-      const _result = await installPrompt.prompt();
+      // const _result = await installPrompt.prompt();
     } catch (error) {
       throw error;
     } finally {
@@ -238,14 +238,14 @@ export function PWAAuthProvider({ children }: PWAAuthProviderProps) {
   }, []);
 
   // Enhanced audit log with PWA context
-  const enhancedAuditLog = useCallback(async (action: string, details?: Record<string, unknown>) => {
-    const pwaDetails = {
-      ...details,
-      isPWA,
-      isOnline,
-      userAgent: navigator.userAgent,
-      timestamp: new Date().toISOString(),
-    };
+  const enhancedAuditLog = useCallback(async (_action: string, _details?: Record<string, unknown>) => {
+    // const pwaDetails = {
+    //   ...details,
+    //   isPWA,
+    //   isOnline,
+    //   userAgent: navigator.userAgent,
+    //   timestamp: new Date().toISOString(),
+    // };
 
     // await auth.auditLog(action, pwaDetails);
   }, [auth, isPWA, isOnline]);

@@ -28,8 +28,8 @@ Kullanım durumu:
 - ✅ Production-ready: Güvenli ve test edilmiş
 */
 
-import { useState, useEffect } from 'react';
-import { X, Save, Eye, Code, Mail, Plus, Trash2, Edit } from 'lucide-react';
+import { useState } from 'react';
+import { X, Save, Eye, Plus, Trash2, Edit } from 'lucide-react';
 import { EmailSystemManager, EmailTemplate, CreateEmailTemplateData } from '@/lib/admin/email-system';
 
 // Add Email Template Modal

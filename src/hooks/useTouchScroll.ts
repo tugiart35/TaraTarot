@@ -20,8 +20,8 @@ interface UseTouchScrollReturn {
 
 export function useTouchScroll({
   direction = 'horizontal',
-  snapToGrid = false,
-  snapThreshold = 50,
+  // snapToGrid = false,
+  // snapThreshold = 50,
   momentum = true,
   onScroll,
   onScrollEnd,

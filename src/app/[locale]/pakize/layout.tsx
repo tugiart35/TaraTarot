@@ -25,7 +25,7 @@ import {
   Sparkles,
   TrendingUp,
   Clock,
-  Shield,
+  // Shield,
 } from 'lucide-react';
 
 // Navigation items - locale dinamik olarak eklenecek

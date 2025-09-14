@@ -250,7 +250,7 @@ export class TarotReadingSaver {
   /**
    * Email gönderimi için API endpoint'e istek gönder
    */
-  private static async triggerEmailSending(readingId: string | undefined, readingData: ReadingData): Promise<void> {
+  private static async triggerEmailSending(readingId: string | undefined, _readingData: ReadingData): Promise<void> {
     if (!readingId) {
       console.error('❌ Reading ID bulunamadı, email gönderilemedi');
       return;

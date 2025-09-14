@@ -117,18 +117,20 @@ class AuditLogger {
       this.flushQueue().catch(error => {
         // Fallback: Store in localStorage if Supabase fails
         this.storeInLocalStorage(entry);
-        logError('Audit log fallback to localStorage', error, {
+        const logContext: { action: string; resource: string; userId?: string } = {
           action: action.toString(),
-          resource: resourceType.toString(),
-          userId: data.userId ?? undefined
-        });
+          resource: resourceType.toString()
+        };
+        if (data.userId !== undefined) logContext.userId = data.userId;
+        logError('Audit log fallback to localStorage', error, logContext);
       });
     } catch (error) {
-        logError('Failed to create audit log entry', error, {
+        const logContext2: { action: string; resource: string; userId?: string } = {
           action: action.toString(),
-          resource: resourceType.toString(),
-          userId: data.userId ?? undefined
-        });
+          resource: resourceType.toString()
+        };
+        if (data.userId !== undefined) logContext2.userId = data.userId;
+        logError('Failed to create audit log entry', error, logContext2);
     }
   }
 

@@ -169,11 +169,12 @@ export class ErrorHandler {
 
     if (typeof error === 'object' && error !== null && 'code' in error) {
       const errorObj = error as { message?: string; code?: string };
-      return {
+      const result: { type: 'supabase'; message: string; code?: string } = {
         type: 'supabase',
-        message: errorObj.message || 'Database error',
-        code: errorObj.code
+        message: errorObj.message || 'Database error'
       };
+      if (errorObj.code !== undefined) result.code = errorObj.code;
+      return result;
     }
 
     if (error instanceof Error) {
