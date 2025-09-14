@@ -92,19 +92,34 @@ class AuditLogger {
     try {
       const entry: AuditLogEntry = {
         user_id: data.userId ?? 'system',
-        user_email: data.userEmail ?? undefined,
         action,
         resource_type: resourceType,
-        resource_id: data.resourceId,
-        old_values: data.oldValues,
-        new_values: data.newValues,
         ip_address: await this.getClientIP(),
         user_agent: this.getUserAgent(),
-        metadata: data.metadata,
         timestamp: new Date().toISOString(),
         severity: data.severity || this.getSeverityForAction(action),
         status: data.status || 'success'
       };
+      
+      if (data.userEmail !== undefined) {
+        entry.user_email = data.userEmail;
+      }
+      
+      if (data.resourceId !== undefined) {
+        entry.resource_id = data.resourceId;
+      }
+      
+      if (data.oldValues !== undefined) {
+        entry.old_values = data.oldValues;
+      }
+      
+      if (data.newValues !== undefined) {
+        entry.new_values = data.newValues;
+      }
+      
+      if (data.metadata !== undefined) {
+        entry.metadata = data.metadata;
+      }
 
       // Store in client-side queue
       this.queue.push(entry);

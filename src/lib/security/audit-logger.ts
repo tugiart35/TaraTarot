@@ -25,56 +25,32 @@
  */
 
 import type { AuditLogEntry } from '@/types/auth.types';
+import type {
+  AuditLogLevel,
+  AuditLogCategory,
+  EnhancedAuditLogEntry,
+  AuditLogContext,
+  AuditLogFilter,
+  AuditLogAggregation,
+  AuditLogExport,
+  AuditLogRetentionPolicy,
+  AuditLogAlert,
+  AuditLogDashboard
+} from './audit-types';
 
-// Audit log levels
-export type AuditLogLevel = 'info' | 'warning' | 'error' | 'critical';
-
-// Audit log categories
-export type AuditLogCategory = 
-  | 'authentication'
-  | 'authorization'
-  | 'data_access'
-  | 'data_modification'
-  | 'system'
-  | 'security'
-  | 'payment'
-  | 'user_management';
-
-// Enhanced audit log entry
-export interface EnhancedAuditLogEntry extends Omit<AuditLogEntry, 'id'> {
-  level: AuditLogLevel;
-  category: AuditLogCategory;
-  source: string; // 'web', 'mobile', 'api', 'admin'
-  session_id?: string;
-  request_id?: string;
-  user_agent?: string;
-  ip_address?: string;
-  location?: {
-    country?: string;
-    city?: string;
-    region?: string;
-  };
-  device_info?: {
-    type: 'desktop' | 'mobile' | 'tablet';
-    os?: string;
-    browser?: string;
-  };
-  risk_score?: number; // 0-100
-  tags?: string[];
-}
-
-// Audit log filter
-export interface AuditLogFilter {
-  userId?: string;
-  category?: AuditLogCategory;
-  level?: AuditLogLevel;
-  startDate?: string;
-  endDate?: string;
-  source?: string;
-  action?: string;
-  limit?: number;
-  offset?: number;
-}
+// Re-export types for backward compatibility
+export type {
+  AuditLogLevel,
+  AuditLogCategory,
+  EnhancedAuditLogEntry,
+  AuditLogContext,
+  AuditLogFilter,
+  AuditLogAggregation,
+  AuditLogExport,
+  AuditLogRetentionPolicy,
+  AuditLogAlert,
+  AuditLogDashboard
+} from './audit-types';
 
 // Audit log statistics
 export interface AuditLogStats {

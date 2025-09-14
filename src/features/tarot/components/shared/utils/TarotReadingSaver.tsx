@@ -27,8 +27,8 @@ Kullanım Durumu:
 
 import { supabase } from '@/lib/supabase/client';
 import { TarotCard } from '@/types/tarot';
-import { emailService } from '@/lib/email/email-service';
-import { pdfGeneratorService } from '@/lib/pdf/pdf-generator';
+// import { emailService } from '@/lib/email/email-service';
+// import { pdfGeneratorService } from '@/lib/pdf/pdf-generator';
 
 // Okuma veri tipleri
 export interface ReadingData {

@@ -893,7 +893,7 @@ export default function LoveGuidanceDetail({
     const allCardsSelected = readingState.selectedCards.every(
       card => card !== null
     );
-    const isInterpretation = readingState.currentStep === 'interpretation';
+    const isInterpretation = false; // Currently in reading step, not interpretation
 
     return (
       <div className='w-full space-y-6 md:space-y-8'>

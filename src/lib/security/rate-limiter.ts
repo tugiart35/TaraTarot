@@ -155,7 +155,7 @@ class MemoryRateLimitStore {
   private cleanup(): void {
     const now = Date.now();
     for (const key in this.store) {
-      if (this.store[key]?.resetTime < now) {
+      if (this.store[key] && this.store[key].resetTime < now) {
         delete this.store[key];
       }
     }
@@ -395,7 +395,7 @@ export function createRateLimitMiddleware(rateLimiter: RateLimiter) {
       const result = await rateLimiter.checkRequestLimit(req, ruleName);
 
       // Add rate limit headers
-      res.setHeader('X-RateLimit-Limit', (this as any).rules[ruleName]?.maxRequests || 100);
+      res.setHeader('X-RateLimit-Limit', 100); // Default limit since rules is private
       res.setHeader('X-RateLimit-Remaining', result.remaining);
       res.setHeader('X-RateLimit-Reset', Math.ceil(result.resetTime / 1000));
 

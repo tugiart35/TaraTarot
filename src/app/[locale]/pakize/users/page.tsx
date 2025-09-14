@@ -67,7 +67,7 @@ interface User {
   id: string;
   email: string;
   display_name: string | null;
-  credit_balance: number | null;
+  credit_balance: number;
   created_at: string;
   last_sign_in_at: string | null;
   status?: string;
@@ -683,7 +683,7 @@ export default function UsersPage() {
             setShowCreditModal(false);
             setSelectedUser(null);
           }}
-          onCreditUpdate={() => {
+          onUpdate={() => {
             fetchUsers();
           }}
         />
@@ -695,6 +695,9 @@ export default function UsersPage() {
           onClose={() => {
             setShowUserModal(false);
             setSelectedUser(null);
+          }}
+          onEditCredit={() => {
+            setShowCreditModal(true);
           }}
           onStatusChange={(userId, status) => {
             handleStatusChange(userId, status);
@@ -714,12 +717,10 @@ export default function UsersPage() {
       {/* Confirmation Dialog */}
       <DeleteConfirmationDialog
         isOpen={confirmDialog.isOpen}
-        title={confirmDialog.title}
-        message={confirmDialog.message}
-        type={confirmDialog.type}
+        onClose={confirmDialog.onCancel}
         onConfirm={confirmDialog.onConfirm}
-        onCancel={confirmDialog.onCancel}
-        loading={confirmDialog.loading}
+        itemName={confirmDialog.title}
+        loading={confirmDialog.loading || false}
       />
     </div>
   );

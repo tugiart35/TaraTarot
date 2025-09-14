@@ -81,7 +81,7 @@ export default function SettingsPage() {
   // Email Settings state
   const [emailSettings, setEmailSettings] = useState<EmailSettings | null>(null);
   const [emailSettingsLoading, setEmailSettingsLoading] = useState(true);
-  const [showEmailSettingsModal, setShowEmailSettingsModal] = useState(false);
+  const [, setShowEmailSettingsModal] = useState(false);
 
   // Email Templates state
   const [emailTemplates, setEmailTemplates] = useState<EmailTemplate[]>([]);
@@ -93,7 +93,7 @@ export default function SettingsPage() {
   const [maintenanceStatus, setMaintenanceStatus] = useState<MaintenanceStatus | null>(null);
   const [maintenanceLoading, setMaintenanceLoading] = useState(true);
   const [maintenanceMessage, setMaintenanceMessage] = useState('');
-  const [allowedIPs] = useState<string[]>([]);
+  const [, setAllowedIPs] = useState<string[]>([]);
 
   // Shopier state
   const [shopierSettings, setShopierSettings] = useState<ShopierSettings | null>(null);
