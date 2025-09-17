@@ -76,11 +76,11 @@ const securityHeaders = {
 export async function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  // Bakım modu kontrolü
-  const maintenanceResponse = await checkMaintenanceMode(request);
-  if (maintenanceResponse) {
-    return maintenanceResponse;
-  }
+  // Bakım modu kontrolü - geçici olarak devre dışı
+  // const maintenanceResponse = await checkMaintenanceMode(request);
+  // if (maintenanceResponse) {
+  //   return maintenanceResponse;
+  // }
 
   // Bot detection kaldırıldı - development için
 
