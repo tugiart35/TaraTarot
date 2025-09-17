@@ -28,7 +28,6 @@
 import React, { createContext, useContext, useEffect, useState, useCallback } from 'react';
 import { useAuth } from '@/hooks/useAuth';
 import type { AuthContextType, SessionStorage } from '@/types/auth.types';
-import { supabase } from '@/lib/supabase/client';
 
 interface PWAAuthContextType extends AuthContextType {
   isOnline: boolean;
@@ -262,33 +261,6 @@ export function PWAAuthProvider({ children }: PWAAuthProviderProps) {
     requestNotificationPermission,
     isNotificationSupported,
     auditLog: enhancedAuditLog,
-    // Provide default values for missing properties
-    error: null,
-    isPremium: false,
-    sessionConfig: {
-      timeout: 30 * 60 * 1000, // 30 minutes
-      refreshThreshold: 5 * 60 * 1000, // 5 minutes
-      maxRetries: 3
-    },
-    signOut: async () => {
-      await supabase.auth.signOut();
-    },
-    resetPassword: async (email: string) => {
-      const { error } = await supabase.auth.resetPasswordForEmail(email);
-      return !error;
-    },
-    updateProfile: async (_updates: any) => {
-      // Placeholder implementation
-      return true;
-    },
-    refreshSession: async () => {
-      const { error } = await supabase.auth.refreshSession();
-      return !error;
-    },
-    checkPermission: (_permission: string) => {
-      // Placeholder implementation
-      return auth.isAdmin;
-    },
   };
 
   return (
