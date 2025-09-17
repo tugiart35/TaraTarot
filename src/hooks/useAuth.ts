@@ -21,49 +21,74 @@ export function useAuth() {
       if (error) {
         console.error('Admin status check error:', error);
         setIsAdmin(false);
-        return;
+        return false;
       }
 
       setIsAdmin(profile?.is_admin || false);
+      return true;
     } catch (error) {
       console.error('Admin status check error:', error);
       setIsAdmin(false);
+      return false;
     }
   };
 
   useEffect(() => {
+    console.log('🔍 useAuth: Hook başlatılıyor...');
+    
+    // Basit timeout ile loading'i false yap
+    const timeout = setTimeout(() => {
+      console.log('⏰ useAuth: Timeout - loading false yapılıyor');
+      setLoading(false);
+    }, 2000);
+
     // Mevcut oturumu al
     const getSession = async () => {
-      const { data: { session } } = await supabase.auth.getSession();
-      setUser(session?.user ?? null);
-      
-      if (session?.user) {
-        await checkAdminStatus(session.user.id);
-      } else {
+      try {
+        console.log('🔍 useAuth: Session alınıyor...');
+        const { data: { session }, error } = await supabase.auth.getSession();
+        
+        if (error) {
+          console.error('❌ useAuth: Session get error:', error);
+          setUser(null);
+          setIsAdmin(false);
+          setLoading(false);
+          return;
+        }
+        
+        console.log('✅ useAuth: Session alındı:', !!session?.user);
+        setUser(session?.user ?? null);
         setIsAdmin(false);
+        setLoading(false);
+      } catch (error) {
+        console.error('❌ useAuth: Session get catch error:', error);
+        setUser(null);
+        setIsAdmin(false);
+        setLoading(false);
       }
-      
-      setLoading(false);
     };
 
     getSession();
 
     // Auth state değişikliklerini dinle
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(
-      async (_event, session) => {
-        setUser(session?.user ?? null);
-        
-        if (session?.user) {
-          await checkAdminStatus(session.user.id);
-        } else {
+    try {
+      const { data: { subscription } } = supabase.auth.onAuthStateChange(
+        async (_event, session) => {
+          console.log('🔄 useAuth: Auth state değişti:', _event);
+          setUser(session?.user ?? null);
           setIsAdmin(false);
+          setLoading(false);
         }
-        
-        setLoading(false);
-      }
-    );
+      );
 
-    return () => subscription.unsubscribe();
+      return () => {
+        clearTimeout(timeout);
+        subscription.unsubscribe();
+      };
+    } catch (error) {
+      console.error('❌ useAuth: Auth listener setup error:', error);
+      setLoading(false);
+    }
   }, []);
 
   return {

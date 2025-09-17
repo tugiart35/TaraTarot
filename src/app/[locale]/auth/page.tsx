@@ -535,21 +535,21 @@ export default function AuthPage() {
     }
   };
 
-  // Auth durumu yüklenirken loading göster
-  if (authLoading) {
-    return (
-      <div className='min-h-screen bg-night flex items-center justify-center p-4 pb-20'>
-        <div className='max-w-md w-full bg-lavender/10 backdrop-blur-sm rounded-lg p-8 border border-lavender/20 text-center'>
-          <Moon className='h-12 w-12 text-gold mx-auto mb-4 animate-pulse' />
-          <div className='text-white text-lg mb-4'>
-            {t('auth.page.checkingAuth')}
-          </div>
-          <div className='animate-spin w-8 h-8 border-2 border-lavender/30 border-t-gold rounded-full mx-auto'></div>
-        </div>
-        <BottomNavigation />
-      </div>
-    );
-  }
+  // Auth durumu yüklenirken loading göster - geçici olarak devre dışı
+  // if (authLoading) {
+  //   return (
+  //     <div className='min-h-screen bg-night flex items-center justify-center p-4 pb-20'>
+  //       <div className='max-w-md w-full bg-lavender/10 backdrop-blur-sm rounded-lg p-8 border border-lavender/20 text-center'>
+  //         <Moon className='h-12 w-12 text-gold mx-auto mb-4 animate-pulse' />
+  //         <div className='text-white text-lg mb-4'>
+  //           {t('auth.page.checkingAuth')}
+  //         </div>
+  //         <div className='animate-spin w-8 h-8 border-2 border-lavender/30 border-t-gold rounded-full mx-auto'></div>
+  //       </div>
+  //       <BottomNavigation />
+  //     </div>
+  //   );
+  // }
 
   return (
     <div className='min-h-screen bg-night flex items-center justify-center p-4 pb-20'>
