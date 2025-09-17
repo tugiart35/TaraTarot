@@ -47,14 +47,14 @@ import { useToast } from '@/hooks/useToast';
 import Toast from '@/features/shared/ui/Toast';
 import { CardSkeleton } from '@/components/shared/ui/LoadingSpinner';
 import { DeleteConfirmationDialog } from '@/components/shared/ui/ConfirmationDialog';
-import { 
-  Search, 
-  ChevronLeft, 
-  ChevronRight, 
-  CreditCard, 
-  Eye, 
-  UserX, 
-  UserCheck, 
+import {
+  Search,
+  ChevronLeft,
+  ChevronRight,
+  CreditCard,
+  Eye,
+  UserX,
+  UserCheck,
   X,
   Users,
   UserPlus,
@@ -79,7 +79,7 @@ export default function UsersPage() {
   const [error, setError] = useState<string>('');
   const { toast, showToast, hideToast } = useToast();
   const [searchTerm, setSearchTerm] = useState('');
-  
+
   // Confirmation dialog state
   const [confirmDialog, setConfirmDialog] = useState<{
     isOpen: boolean;
@@ -95,9 +95,9 @@ export default function UsersPage() {
     message: '',
     type: 'delete',
     onConfirm: () => {},
-    onCancel: () => {}
+    onCancel: () => {},
   });
-  
+
   // Rate limiting hooks
   const searchRateLimit = useRateLimit('search');
   const adminActionLimit = useRateLimit('admin_action');
@@ -106,10 +106,14 @@ export default function UsersPage() {
   const [selectedUser, setSelectedUser] = useState<User | null>(null);
   const [showCreditModal, setShowCreditModal] = useState(false);
   const [showUserModal, setShowUserModal] = useState(false);
-  const [sortBy, setSortBy] = useState<'created_at' | 'credit_balance' | 'display_name'>('created_at');
+  const [sortBy, setSortBy] = useState<
+    'created_at' | 'credit_balance' | 'display_name'
+  >('created_at');
   const [sortOrder] = useState<'asc' | 'desc'>('desc');
-  const [statusFilter, setStatusFilter] = useState<'all' | 'active' | 'suspended'>('all');
-  
+  const [statusFilter, setStatusFilter] = useState<
+    'all' | 'active' | 'suspended'
+  >('all');
+
   const usersPerPage = 12;
 
   useEffect(() => {
@@ -124,7 +128,7 @@ export default function UsersPage() {
       message: `${user.display_name || user.email} kullanıcısını kalıcı olarak silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.`,
       type: 'danger',
       onConfirm: () => handleDeleteUser(user.id),
-      onCancel: closeConfirmationDialog
+      onCancel: closeConfirmationDialog,
     });
   };
 
@@ -135,7 +139,7 @@ export default function UsersPage() {
       message: `${user.display_name || user.email} kullanıcısını yasaklamak istediğinizden emin misiniz?`,
       type: 'warning',
       onConfirm: () => handleBanUser(user.id),
-      onCancel: closeConfirmationDialog
+      onCancel: closeConfirmationDialog,
     });
   };
 
@@ -146,7 +150,7 @@ export default function UsersPage() {
       message: `${user.display_name || user.email} kullanıcısının yasağını kaldırmak istediğinizden emin misiniz?`,
       type: 'info',
       onConfirm: () => handleUnbanUser(user.id),
-      onCancel: closeConfirmationDialog
+      onCancel: closeConfirmationDialog,
     });
   };
 
@@ -156,7 +160,7 @@ export default function UsersPage() {
 
   const fetchUsers = async () => {
     setLoading(true);
-    
+
     // Rate limit check for data fetching
     const rateLimitCheck = rateLimiter.isAllowed('data_fetch');
     if (!rateLimitCheck.allowed) {
@@ -164,18 +168,26 @@ export default function UsersPage() {
       setLoading(false);
       return;
     }
-    
+
     try {
       // Profiles tablosundan veri çek (artık email kolonu var)
       let query = supabase
         .from('profiles')
-        .select('id, email, display_name, credit_balance, created_at, last_login, status', { count: 'exact' })
+        .select(
+          'id, email, display_name, credit_balance, created_at, last_login, status',
+          { count: 'exact' }
+        )
         .order(sortBy, { ascending: sortOrder === 'asc' })
-        .range((currentPage - 1) * usersPerPage, currentPage * usersPerPage - 1);
+        .range(
+          (currentPage - 1) * usersPerPage,
+          currentPage * usersPerPage - 1
+        );
 
       // Search filter
       if (searchTerm) {
-        query = query.or(`email.ilike.%${searchTerm}%,display_name.ilike.%${searchTerm}%`);
+        query = query.or(
+          `email.ilike.%${searchTerm}%,display_name.ilike.%${searchTerm}%`
+        );
       }
 
       // Status filter
@@ -186,13 +198,15 @@ export default function UsersPage() {
       const { data, error, count } = await query;
 
       if (error) {
-        const handled = ErrorHandler.handleSupabase(error, 'users fetch', { component: 'UsersPage' });
+        const handled = ErrorHandler.handleSupabase(error, 'users fetch', {
+          component: 'UsersPage',
+        });
         setUsers([]);
         setError(handled.userMessage);
         setTotalCount(0);
         return;
       }
-      
+
       // Format the data safely
       const formattedUsers = (data || []).map(user => ({
         id: user.id || 'unknown',
@@ -201,15 +215,15 @@ export default function UsersPage() {
         credit_balance: user.credit_balance || 0,
         created_at: user.created_at || new Date().toISOString(),
         last_sign_in_at: user.last_login || null, // last_login kolonunu kullan
-        status: user.status || 'active'
+        status: user.status || 'active',
       }));
-      
+
       setUsers(formattedUsers);
       setTotalCount(count || 0);
     } catch (error) {
       const handled = ErrorHandler.handle(error, {
         operation: 'fetchUsers',
-        component: 'UsersPage'
+        component: 'UsersPage',
       });
       setUsers([]);
       setTotalCount(0);
@@ -226,7 +240,7 @@ export default function UsersPage() {
       setError('Çok fazla arama isteği. Lütfen bekleyin.');
       return;
     }
-    
+
     setCurrentPage(1);
     fetchUsers();
   };
@@ -243,12 +257,12 @@ export default function UsersPage() {
       setError('Çok fazla admin işlemi. Lütfen bekleyin.');
       return;
     }
-    
+
     try {
       logAdminAction('user_status_change', {
         userId,
         action: 'change_user_status',
-        metadata: { newStatus: status }
+        metadata: { newStatus: status },
       });
 
       // Audit log the action
@@ -260,8 +274,8 @@ export default function UsersPage() {
           metadata: {
             action: 'change_user_status',
             targetUserId: userId,
-            newStatus: status
-          }
+            newStatus: status,
+          },
         });
       }
 
@@ -269,16 +283,16 @@ export default function UsersPage() {
         .from('profiles')
         .update({ status })
         .eq('id', userId);
-      
+
       if (error) throw error;
       fetchUsers();
     } catch (error) {
       const handled = ErrorHandler.handleSupabase(error, 'user status update', {
         component: 'UsersPage',
-        userId
+        userId,
       });
       setError(handled.userMessage);
-      
+
       // Revert the optimistic update
       fetchUsers();
     }
@@ -286,7 +300,7 @@ export default function UsersPage() {
 
   const handleDeleteUser = async (userId: string) => {
     setConfirmDialog(prev => ({ ...prev, loading: true }));
-    
+
     try {
       // Rate limit check
       const actionCheck = adminActionLimit.checkLimit();
@@ -299,8 +313,8 @@ export default function UsersPage() {
       await auditLogAdminAction('user_deleted', 'user', {
         resourceId: userId,
         metadata: {
-          action: 'delete_user'
-        }
+          action: 'delete_user',
+        },
       });
 
       // Delete user from profiles table
@@ -308,7 +322,7 @@ export default function UsersPage() {
         .from('profiles')
         .delete()
         .eq('id', userId);
-      
+
       if (error) throw error;
 
       showToast('Kullanıcı başarıyla silindi', 'success');
@@ -324,7 +338,7 @@ export default function UsersPage() {
 
   const handleBanUser = async (userId: string) => {
     setConfirmDialog(prev => ({ ...prev, loading: true }));
-    
+
     try {
       // Rate limit check
       const actionCheck = adminActionLimit.checkLimit();
@@ -337,8 +351,8 @@ export default function UsersPage() {
       await auditLogAdminAction('user_banned', 'user', {
         resourceId: userId,
         metadata: {
-          action: 'ban_user'
-        }
+          action: 'ban_user',
+        },
       });
 
       // Update user status to suspended
@@ -346,7 +360,7 @@ export default function UsersPage() {
         .from('profiles')
         .update({ status: 'suspended' })
         .eq('id', userId);
-      
+
       if (error) throw error;
 
       showToast('Kullanıcı başarıyla yasaklandı', 'success');
@@ -362,7 +376,7 @@ export default function UsersPage() {
 
   const handleUnbanUser = async (userId: string) => {
     setConfirmDialog(prev => ({ ...prev, loading: true }));
-    
+
     try {
       // Rate limit check
       const actionCheck = adminActionLimit.checkLimit();
@@ -375,8 +389,8 @@ export default function UsersPage() {
       await auditLogAdminAction('user_unbanned', 'user', {
         resourceId: userId,
         metadata: {
-          action: 'unban_user'
-        }
+          action: 'unban_user',
+        },
       });
 
       // Update user status to active
@@ -384,7 +398,7 @@ export default function UsersPage() {
         .from('profiles')
         .update({ status: 'active' })
         .eq('id', userId);
-      
+
       if (error) throw error;
 
       showToast('Kullanıcı yasağı başarıyla kaldırıldı', 'success');
@@ -404,24 +418,24 @@ export default function UsersPage() {
     return new Date(dateString).toLocaleDateString('tr-TR', {
       day: '2-digit',
       month: '2-digit',
-      year: 'numeric'
+      year: 'numeric',
     });
   };
 
   if (loading) {
     return (
-      <div className="space-y-6">
-        <div className="admin-card rounded-2xl p-6">
-          <div className="animate-pulse">
-            <div className="h-6 bg-slate-700 rounded w-1/3 mb-4"></div>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div className='space-y-6'>
+        <div className='admin-card rounded-2xl p-6'>
+          <div className='animate-pulse'>
+            <div className='h-6 bg-slate-700 rounded w-1/3 mb-4'></div>
+            <div className='grid grid-cols-1 md:grid-cols-4 gap-4'>
               {Array.from({ length: 4 }).map((_, i) => (
                 <CardSkeleton key={i} />
               ))}
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
           {Array.from({ length: 6 }).map((_, i) => (
             <CardSkeleton key={i} />
           ))}
@@ -433,20 +447,22 @@ export default function UsersPage() {
   // Error state
   if (error) {
     return (
-      <div className="space-y-6">
-        <div className="admin-card rounded-2xl p-6">
-          <div className="text-center">
-            <div className="p-4 bg-red-500/20 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-              <X className="h-8 w-8 text-red-400" />
+      <div className='space-y-6'>
+        <div className='admin-card rounded-2xl p-6'>
+          <div className='text-center'>
+            <div className='p-4 bg-red-500/20 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center'>
+              <X className='h-8 w-8 text-red-400' />
             </div>
-            <h3 className="text-red-400 font-semibold text-lg mb-2">Veri Yükleme Hatası</h3>
-            <p className="text-slate-300 mb-4">{error}</p>
-            <button 
+            <h3 className='text-red-400 font-semibold text-lg mb-2'>
+              Veri Yükleme Hatası
+            </h3>
+            <p className='text-slate-300 mb-4'>{error}</p>
+            <button
               onClick={() => {
                 setError('');
                 fetchUsers();
               }}
-              className="admin-btn-primary px-4 py-2 rounded-lg text-sm"
+              className='admin-btn-primary px-4 py-2 rounded-lg text-sm'
             >
               Tekrar Dene
             </button>
@@ -457,72 +473,87 @@ export default function UsersPage() {
   }
 
   return (
-    <div className="space-y-6">
+    <div className='space-y-6'>
       {/* Header */}
-      <div className="admin-card rounded-2xl mobile-compact admin-hover-lift">
-        <div className="flex flex-col space-y-6 mb-6">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4 min-w-0 flex-1">
-              <div className="admin-gradient-primary p-4 rounded-2xl flex-shrink-0">
-                <Users className="h-6 w-6 md:h-8 md:w-8 text-white" />
+      <div className='admin-card rounded-2xl mobile-compact admin-hover-lift'>
+        <div className='flex flex-col space-y-6 mb-6'>
+          <div className='flex items-center justify-between'>
+            <div className='flex items-center space-x-4 min-w-0 flex-1'>
+              <div className='admin-gradient-primary p-4 rounded-2xl flex-shrink-0'>
+                <Users className='h-6 w-6 md:h-8 md:w-8 text-white' />
               </div>
-              <div className="min-w-0 flex-1">
-                <h1 className="text-2xl md:text-3xl font-bold text-white truncate flex items-center">
+              <div className='min-w-0 flex-1'>
+                <h1 className='text-2xl md:text-3xl font-bold text-white truncate flex items-center'>
                   Kullanıcı Yönetimi
-                  <span className="ml-3 text-lg text-slate-400">👥</span>
+                  <span className='ml-3 text-lg text-slate-400'>👥</span>
                 </h1>
-                <p className="text-slate-300 text-sm md:text-base hidden sm:block mt-1">
+                <p className='text-slate-300 text-sm md:text-base hidden sm:block mt-1'>
                   Kullanıcıları yönetin ve kredi işlemlerini takip edin
                 </p>
               </div>
             </div>
-            
-            <div className="flex items-center space-x-3 flex-shrink-0">
-              <div className="admin-glass rounded-xl px-4 py-3 text-center min-w-[80px]">
-                <div className="text-xs text-slate-400 mb-1">Toplam</div>
-                <div className="text-xl font-bold text-white">{totalCount.toLocaleString()}</div>
-                <div className="text-xs text-green-400 mt-1">Kullanıcı</div>
+
+            <div className='flex items-center space-x-3 flex-shrink-0'>
+              <div className='admin-glass rounded-xl px-4 py-3 text-center min-w-[80px]'>
+                <div className='text-xs text-slate-400 mb-1'>Toplam</div>
+                <div className='text-xl font-bold text-white'>
+                  {totalCount.toLocaleString()}
+                </div>
+                <div className='text-xs text-green-400 mt-1'>Kullanıcı</div>
               </div>
-              <button className="admin-btn-primary p-3 md:px-5 md:py-3 rounded-xl flex items-center space-x-2 touch-target admin-hover-scale">
-                <UserPlus className="h-4 w-4" />
-                <span className="text-sm font-medium hidden sm:inline">Yeni Kullanıcı</span>
-                <span className="text-sm font-medium sm:hidden">+</span>
+              <button className='admin-btn-primary p-3 md:px-5 md:py-3 rounded-xl flex items-center space-x-2 touch-target admin-hover-scale'>
+                <UserPlus className='h-4 w-4' />
+                <span className='text-sm font-medium hidden sm:inline'>
+                  Yeni Kullanıcı
+                </span>
+                <span className='text-sm font-medium sm:hidden'>+</span>
               </button>
             </div>
           </div>
-          
+
           {/* Search and Filter Controls */}
-          <div className="flex flex-col sm:flex-row gap-4">
-            <div className="relative flex-1">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 h-4 w-4" />
+          <div className='flex flex-col sm:flex-row gap-4'>
+            <div className='relative flex-1'>
+              <Search className='absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 h-4 w-4' />
               <input
-                type="text"
-                placeholder="Kullanıcı ara..."
+                type='text'
+                placeholder='Kullanıcı ara...'
                 value={searchTerm}
-                onChange={(e) => handleSearch(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 admin-glass rounded-xl border-0 text-white placeholder-slate-400 focus:ring-2 focus:ring-cyan-500/50 focus:outline-none"
+                onChange={e => handleSearch(e.target.value)}
+                className='w-full pl-10 pr-4 py-3 admin-glass rounded-xl border-0 text-white placeholder-slate-400 focus:ring-2 focus:ring-cyan-500/50 focus:outline-none'
               />
             </div>
-            
-            <div className="flex gap-3">
-              <select 
+
+            <div className='flex gap-3'>
+              <select
                 value={statusFilter}
-                onChange={(e) => setStatusFilter(e.target.value as 'all' | 'active' | 'suspended')}
-                className="admin-glass rounded-xl px-4 py-3 text-white border-0 focus:ring-2 focus:ring-cyan-500/50 focus:outline-none"
+                onChange={e =>
+                  setStatusFilter(
+                    e.target.value as 'all' | 'active' | 'suspended'
+                  )
+                }
+                className='admin-glass rounded-xl px-4 py-3 text-white border-0 focus:ring-2 focus:ring-cyan-500/50 focus:outline-none'
               >
-                <option value="all">Tüm Kullanıcılar</option>
-                <option value="active">Aktif</option>
-                <option value="suspended">Askıya Alınmış</option>
+                <option value='all'>Tüm Kullanıcılar</option>
+                <option value='active'>Aktif</option>
+                <option value='suspended'>Askıya Alınmış</option>
               </select>
-              
-              <select 
+
+              <select
                 value={sortBy}
-                onChange={(e) => setSortBy(e.target.value as 'created_at' | 'credit_balance' | 'display_name')}
-                className="admin-glass rounded-xl px-4 py-3 text-white border-0 focus:ring-2 focus:ring-cyan-500/50 focus:outline-none"
+                onChange={e =>
+                  setSortBy(
+                    e.target.value as
+                      | 'created_at'
+                      | 'credit_balance'
+                      | 'display_name'
+                  )
+                }
+                className='admin-glass rounded-xl px-4 py-3 text-white border-0 focus:ring-2 focus:ring-cyan-500/50 focus:outline-none'
               >
-                <option value="created_at">Kayıt Tarihi</option>
-                <option value="credit_balance">Kredi Bakiyesi</option>
-                <option value="display_name">İsim</option>
+                <option value='created_at'>Kayıt Tarihi</option>
+                <option value='credit_balance'>Kredi Bakiyesi</option>
+                <option value='display_name'>İsim</option>
               </select>
             </div>
           </div>
@@ -530,90 +561,106 @@ export default function UsersPage() {
       </div>
 
       {/* Users Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-        {users.map((user) => (
-          <div key={user.id} className="admin-card rounded-2xl p-6 admin-hover-lift">
-            <div className="flex items-center space-x-4 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6'>
+        {users.map(user => (
+          <div
+            key={user.id}
+            className='admin-card rounded-2xl p-6 admin-hover-lift'
+          >
+            <div className='flex items-center space-x-4 mb-4'>
+              <div className='w-12 h-12 bg-gradient-to-br from-cyan-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg'>
                 {(user.display_name || user.email).charAt(0).toUpperCase()}
               </div>
-              <div className="flex-1 min-w-0">
-                <h3 className="text-white font-semibold truncate">
+              <div className='flex-1 min-w-0'>
+                <h3 className='text-white font-semibold truncate'>
                   {user.display_name || 'İsimsiz Kullanıcı'}
                 </h3>
-                <p className="text-slate-400 text-sm truncate">{user.email}</p>
+                <p className='text-slate-400 text-sm truncate'>{user.email}</p>
               </div>
             </div>
-            
-            <div className="space-y-3 mb-4">
-              <div className="flex justify-between items-center">
-                <span className="text-slate-400 text-sm">Kredi Bakiyesi</span>
-                <span className="text-cyan-400 font-semibold">
+
+            <div className='space-y-3 mb-4'>
+              <div className='flex justify-between items-center'>
+                <span className='text-slate-400 text-sm'>Kredi Bakiyesi</span>
+                <span className='text-cyan-400 font-semibold'>
                   {user.credit_balance?.toLocaleString() || 0}
                 </span>
               </div>
-              <div className="flex justify-between items-center">
-                <span className="text-slate-400 text-sm">Kayıt Tarihi</span>
-                <span className="text-slate-300 text-sm">
+              <div className='flex justify-between items-center'>
+                <span className='text-slate-400 text-sm'>Kayıt Tarihi</span>
+                <span className='text-slate-300 text-sm'>
                   {formatDate(user.created_at)}
                 </span>
               </div>
-              <div className="flex justify-between items-center">
-                <span className="text-slate-400 text-sm">Durum</span>
-                <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                  user.status === 'suspended' 
-                    ? 'bg-red-500/20 text-red-400' 
-                    : 'bg-green-500/20 text-green-400'
-                }`}>
+              <div className='flex justify-between items-center'>
+                <span className='text-slate-400 text-sm'>Durum</span>
+                <span
+                  className={`px-2 py-1 rounded-full text-xs font-medium ${
+                    user.status === 'suspended'
+                      ? 'bg-red-500/20 text-red-400'
+                      : 'bg-green-500/20 text-green-400'
+                  }`}
+                >
                   {user.status === 'suspended' ? 'Askıya Alınmış' : 'Aktif'}
                 </span>
               </div>
             </div>
-            
-            <div className="flex justify-between items-center pt-4 border-t border-slate-700">
+
+            <div className='flex justify-between items-center pt-4 border-t border-slate-700'>
               <button
                 onClick={() => handleUserModal(user)}
-                className="p-2 admin-glass rounded-lg admin-hover-scale transition-all touch-target"
-                title="Detayları Görüntüle"
+                className='p-2 admin-glass rounded-lg admin-hover-scale transition-all touch-target'
+                title='Detayları Görüntüle'
               >
-                <Eye className="h-4 w-4 text-slate-400" />
+                <Eye className='h-4 w-4 text-slate-400' />
               </button>
-              
-              <div className="flex space-x-2">
+
+              <div className='flex space-x-2'>
                 <button
                   onClick={() => {
                     setSelectedUser(user);
                     setShowCreditModal(true);
                   }}
-                  className="p-3 rounded-xl admin-hover-scale transition-all touch-target flex-shrink-0 group/btn admin-gradient-primary text-white"
-                  title="Kredi Yönetimi"
+                  className='p-3 rounded-xl admin-hover-scale transition-all touch-target flex-shrink-0 group/btn admin-gradient-primary text-white'
+                  title='Kredi Yönetimi'
                 >
-                  <CreditCard className="h-4 w-4 group-hover/btn:scale-110 transition-transform" />
-                  <span className="text-sm font-medium hidden sm:inline">Kredi</span>
-                  <span className="text-sm font-medium sm:hidden">₺</span>
+                  <CreditCard className='h-4 w-4 group-hover/btn:scale-110 transition-transform' />
+                  <span className='text-sm font-medium hidden sm:inline'>
+                    Kredi
+                  </span>
+                  <span className='text-sm font-medium sm:hidden'>₺</span>
                 </button>
-                
+
                 <button
-                  onClick={() => user.status === 'suspended' ? showUnbanConfirmation(user) : showBanConfirmation(user)}
+                  onClick={() =>
+                    user.status === 'suspended'
+                      ? showUnbanConfirmation(user)
+                      : showBanConfirmation(user)
+                  }
                   className={`p-3 rounded-xl admin-hover-scale transition-all touch-target flex-shrink-0 group/btn ${
                     user.status === 'suspended'
                       ? 'admin-gradient-success text-white'
                       : 'admin-gradient-danger text-white'
                   }`}
-                  title={user.status === 'suspended' ? 'Kullanıcıyı Aktif Et' : 'Kullanıcıyı Askıya Al'}
-                >
-                  {user.status === 'suspended' ? 
-                    <UserCheck className="h-4 w-4 group-hover/btn:scale-110 transition-transform" /> : 
-                    <UserX className="h-4 w-4 group-hover/btn:scale-110 transition-transform" />
+                  title={
+                    user.status === 'suspended'
+                      ? 'Kullanıcıyı Aktif Et'
+                      : 'Kullanıcıyı Askıya Al'
                   }
+                >
+                  {user.status === 'suspended' ? (
+                    <UserCheck className='h-4 w-4 group-hover/btn:scale-110 transition-transform' />
+                  ) : (
+                    <UserX className='h-4 w-4 group-hover/btn:scale-110 transition-transform' />
+                  )}
                 </button>
-                
+
                 <button
                   onClick={() => showDeleteConfirmation(user)}
-                  className="p-3 rounded-xl admin-hover-scale transition-all touch-target flex-shrink-0 group/btn bg-red-500/20 text-red-400 border border-red-500/30 hover:bg-red-500/30"
-                  title="Kullanıcıyı Sil"
+                  className='p-3 rounded-xl admin-hover-scale transition-all touch-target flex-shrink-0 group/btn bg-red-500/20 text-red-400 border border-red-500/30 hover:bg-red-500/30'
+                  title='Kullanıcıyı Sil'
                 >
-                  <X className="h-4 w-4 group-hover/btn:scale-110 transition-transform" />
+                  <X className='h-4 w-4 group-hover/btn:scale-110 transition-transform' />
                 </button>
               </div>
             </div>
@@ -623,18 +670,22 @@ export default function UsersPage() {
 
       {/* Empty State */}
       {users.length === 0 && !loading && (
-        <div className="admin-card rounded-2xl p-12 text-center">
-          <div className="p-4 bg-slate-700/50 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-            <Users className="h-8 w-8 text-slate-400" />
+        <div className='admin-card rounded-2xl p-12 text-center'>
+          <div className='p-4 bg-slate-700/50 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center'>
+            <Users className='h-8 w-8 text-slate-400' />
           </div>
-          <h3 className="text-slate-300 font-semibold text-lg mb-2">Kullanıcı Bulunamadı</h3>
-          <p className="text-slate-400 mb-4">
-            {searchTerm ? 'Arama kriterlerinize uygun kullanıcı bulunamadı.' : 'Henüz hiç kullanıcı kaydı yok.'}
+          <h3 className='text-slate-300 font-semibold text-lg mb-2'>
+            Kullanıcı Bulunamadı
+          </h3>
+          <p className='text-slate-400 mb-4'>
+            {searchTerm
+              ? 'Arama kriterlerinize uygun kullanıcı bulunamadı.'
+              : 'Henüz hiç kullanıcı kaydı yok.'}
           </p>
           {searchTerm && (
             <button
               onClick={() => setSearchTerm('')}
-              className="admin-btn-primary px-4 py-2 rounded-lg text-sm"
+              className='admin-btn-primary px-4 py-2 rounded-lg text-sm'
             >
               Aramayı Temizle
             </button>
@@ -644,31 +695,33 @@ export default function UsersPage() {
 
       {/* Pagination */}
       {totalPages > 1 && (
-        <div className="admin-card rounded-2xl p-6">
-          <div className="flex items-center justify-between">
-            <div className="text-slate-400 text-sm">
+        <div className='admin-card rounded-2xl p-6'>
+          <div className='flex items-center justify-between'>
+            <div className='text-slate-400 text-sm'>
               Sayfa {currentPage} / {totalPages} - Toplam {totalCount} kullanıcı
             </div>
-            
-            <div className="flex items-center space-x-2">
+
+            <div className='flex items-center space-x-2'>
               <button
                 onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
                 disabled={currentPage === 1}
-                className="p-2 admin-glass rounded-lg admin-hover-scale disabled:opacity-50 disabled:cursor-not-allowed touch-target"
+                className='p-2 admin-glass rounded-lg admin-hover-scale disabled:opacity-50 disabled:cursor-not-allowed touch-target'
               >
-                <ChevronLeft className="h-4 w-4" />
+                <ChevronLeft className='h-4 w-4' />
               </button>
-              
-              <span className="px-3 sm:px-4 py-2 admin-gradient-primary rounded-lg text-white font-medium text-sm">
+
+              <span className='px-3 sm:px-4 py-2 admin-gradient-primary rounded-lg text-white font-medium text-sm'>
                 {currentPage} / {totalPages}
               </span>
-              
+
               <button
-                onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))}
+                onClick={() =>
+                  setCurrentPage(Math.min(totalPages, currentPage + 1))
+                }
                 disabled={currentPage === totalPages}
-                className="p-2 admin-glass rounded-lg admin-hover-scale disabled:opacity-50 disabled:cursor-not-allowed touch-target"
+                className='p-2 admin-glass rounded-lg admin-hover-scale disabled:opacity-50 disabled:cursor-not-allowed touch-target'
               >
-                <ChevronRight className="h-4 w-4" />
+                <ChevronRight className='h-4 w-4' />
               </button>
             </div>
           </div>
@@ -707,11 +760,7 @@ export default function UsersPage() {
 
       {/* Toast Notification */}
       {toast && (
-        <Toast
-          message={toast.message}
-          type={toast.type}
-          onClose={hideToast}
-        />
+        <Toast message={toast.message} type={toast.type} onClose={hideToast} />
       )}
 
       {/* Confirmation Dialog */}

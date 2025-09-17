@@ -47,7 +47,6 @@ Gereklilik ve Kullanım Durumu:
 
 'use client';
 
-import Image from 'next/image';
 import type { TarotCard } from '@/features/tarot/lib/a-tarot-helpers';
 
 export type CardTheme =
@@ -158,17 +157,20 @@ export default function BaseCardRenderer({
 
   const currentTheme = themes[theme];
 
-  // Boyut sınıflarını belirle
+  // Boyut sınıfları (desteklenen Tailwind breakpoints + ölçüler)
   const getSizeClasses = (): string => {
     switch (size) {
       case 'small':
-        return 'w-12 h-18 xs:w-14 xs:h-20 sm:w-32 sm:h-56';
+        // base: 64x96px, sm: 80x128px, md: 96x144px
+        return 'w-16 h-24 sm:w-20 sm:h-32 md:w-24 md:h-36';
       case 'medium':
-        return 'w-16 h-24 xs:w-18 xs:h-28 sm:w-20 sm:h-32 md:w-32 md:h-56';
+        // base: 80x128px, sm: 96x144px, md: 112x160px, lg: 128x192px
+        return 'w-20 h-32 sm:w-24 sm:h-36 md:w-28 md:h-40 lg:w-32 lg:h-48';
       case 'large':
-        return 'w-24 h-36 xs:w-28 xs:h-42 sm:w-32 sm:h-48 md:w-36 md:h-56';
+        // base: 96x144px, sm: 112x160px, md: 128x192px, lg: 144x224px
+        return 'w-24 h-36 sm:w-28 sm:h-40 md:w-32 md:h-48 lg:w-36 lg:h-56';
       default:
-        return 'w-16 h-24 xs:w-18 xs:h-28 sm:w-20 sm:h-32 md:w-24 md:h-56';
+        return 'w-20 h-32 sm:w-24 sm:h-36 md:w-28 md:h-40 lg:w-32 lg:h-48';
     }
   };
 
@@ -213,26 +215,28 @@ export default function BaseCardRenderer({
   };
 
   // Kart bileşeni
-  const CardImage = () => (
-    <div className='relative w-full h-full'>
-      <Image
-        src={getImageSrc()}
-        alt={card?.nameTr || 'Tarot Kartı'}
-        fill
-        sizes='(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw'
-        priority={mode === 'position'}
-        className={`object-cover transition-transform duration-500 ${
-          isReversed ? 'rotate-180' : ''
-        }`}
-        unoptimized={true}
-        onError={(e) => {
-          console.error('Image load error:', getImageSrc());
-          // Fallback olarak arka plan rengi göster
-          e.currentTarget.style.display = 'none';
-        }}
-      />
-    </div>
-  );
+  const CardImage = () => {
+    const imageSrc = getImageSrc();
+    return (
+      <div className='relative w-full h-full'>
+        <img
+          src={imageSrc}
+          alt={card?.nameTr || 'Tarot Kartı'}
+          className={`w-full h-full object-cover transition-transform duration-500 ${
+            isReversed ? 'rotate-180' : ''
+          }`}
+          onError={e => {
+            console.error('Image load error:', imageSrc);
+            // Fallback olarak arka plan rengi göster
+            e.currentTarget.style.display = 'none';
+          }}
+          onLoad={() => {
+            console.log('Image loaded successfully:', imageSrc);
+          }}
+        />
+      </div>
+    );
+  };
 
   // Kart alt metnini belirle
   const getCardText = () => {
@@ -271,6 +275,7 @@ export default function BaseCardRenderer({
         ${getStatusClasses()}
         ${className}
         ${!canSelect ? 'opacity-50' : ''}
+        flex-shrink-0
       `}
     >
       <CardImage />

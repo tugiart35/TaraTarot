@@ -1,36 +1,36 @@
 /*
  * Supabase Server Client
- * 
+ *
  * Bağlı dosyalar:
  * - src/app/api/analytics/route.ts (API endpoint)
  * - src/lib/supabase/client.ts (client-side client)
- * 
+ *
  * Dosya amacı:
  * Server-side API route'ları için Supabase client'ı
  * Admin işlemleri ve güvenli veri erişimi için
- * 
+ *
  * Supabase değişkenleri ve tablolar:
  * - profiles: kullanıcı bilgileri
  * - transactions: gelir ve kredi işlemleri
  * - readings: okuma istatistikleri
  * - packages: paket satış verileri
  * - audit_logs: sistem logları
- * 
+ *
  * Geliştirme önerileri:
  * - Service role key kullanımı
  * - Admin yetkileri ile veri erişimi
  * - Güvenli server-side işlemler
- * 
+ *
  * Tespit edilen hatalar:
  * - Environment variable kontrolü
  * - Error handling
- * 
+ *
  * Kullanım durumları:
  * - Gerekli: API route'ları için
  * - Gereksiz: Client-side kullanım
  * - Silinebilir: Yok
  * - Birleştirilebilir: Client ile ortak yapılandırma
- * 
+ *
  * Deployment durumu: Hazır
  */
 

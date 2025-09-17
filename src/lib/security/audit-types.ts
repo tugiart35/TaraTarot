@@ -21,7 +21,7 @@ import type { AuditLogEntry } from '@/types/auth.types';
 export type AuditLogLevel = 'info' | 'warning' | 'error' | 'critical';
 
 // Audit log categories
-export type AuditLogCategory = 
+export type AuditLogCategory =
   | 'authentication'
   | 'authorization'
   | 'data_access'

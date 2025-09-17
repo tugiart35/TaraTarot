@@ -34,7 +34,10 @@ import { useAuth } from '@/hooks/useAuth';
 import { useTarotReading } from '@/hooks/useTarotReading';
 import { useToast } from '@/hooks/useToast';
 import { findSpreadById } from '@/lib/constants/tarotSpreads';
-import { LOVE_POSITIONS_INFO, LOVE_POSITIONS_LAYOUT } from '../../Love-Spread/love-config';
+import {
+  LOVE_POSITIONS_INFO,
+  LOVE_POSITIONS_LAYOUT,
+} from '../../Love-Spread/love-config';
 import { READING_TYPES, ReadingType, TarotCard } from '@/types/tarot';
 import { READING_CREDIT_CONFIGS } from '@/lib/constants/reading-credits';
 import {
@@ -115,7 +118,7 @@ export default function LoveReadingRefactored({
   const { user } = useAuth();
   const { toast, showToast, hideToast } = useToast();
   const loveSpread = findSpreadById('love-spread');
-  
+
   // Kredi yönetimi
   // const detailedCredits = useReadingCredits('LOVE_SPREAD_DETAILED');
 
@@ -146,7 +149,7 @@ export default function LoveReadingRefactored({
     onComplete: (_cards, _interpretation) => {
       // Aşk açılımı tamamlandı
     },
-    onPositionChange: (_title) => {
+    onPositionChange: _title => {
       // Pozisyon değişti
     },
   });
@@ -183,7 +186,10 @@ export default function LoveReadingRefactored({
   }, [selectedReadingType, detailedFormSaved, setSelectedReadingType]);
 
   // Form kaydetme
-  const handleFormSave = async (_personalInfo: PersonalInfo, _questions: UserQuestions) => {
+  const handleFormSave = async (
+    _personalInfo: PersonalInfo,
+    _questions: UserQuestions
+  ) => {
     if (!user) {
       showToast('Okuma için giriş yapmalısınız.', 'error');
       return;
@@ -193,7 +199,9 @@ export default function LoveReadingRefactored({
     try {
       // Kredi ön kesinti kaldırıldı. Kredi yeterliliği UI'da kontrol ediliyor,
       // asıl kesinti RPC çağrısı ile kaydetme anında yapılacak.
-      console.log('✅ LoveReadingRefactored - Form kaydedildi, detailedFormSaved true yapılıyor');
+      console.log(
+        '✅ LoveReadingRefactored - Form kaydedildi, detailedFormSaved true yapılıyor'
+      );
       setDetailedFormSaved(true);
       setShowFormModal(false);
     } finally {
@@ -204,16 +212,24 @@ export default function LoveReadingRefactored({
   // Seçilen okuma tipine göre kredi miktarını hesapla
   const getCreditAmount = () => {
     if (!selectedReadingType) return 0;
-    
-    const readingTypeKey = selectedReadingType === READING_TYPES.DETAILED 
-      ? 'LOVE_SPREAD_DETAILED' 
-      : selectedReadingType === READING_TYPES.WRITTEN 
-        ? 'LOVE_SPREAD_WRITTEN' 
-        : 'LOVE_SPREAD_DETAILED'; // fallback
-    
+
+    const readingTypeKey =
+      selectedReadingType === READING_TYPES.DETAILED
+        ? 'LOVE_SPREAD_DETAILED'
+        : selectedReadingType === READING_TYPES.WRITTEN
+          ? 'LOVE_SPREAD_WRITTEN'
+          : 'LOVE_SPREAD_DETAILED'; // fallback
+
     const config = READING_CREDIT_CONFIGS[readingTypeKey];
-    console.log('🎯 getCreditAmount - selectedReadingType:', selectedReadingType, 'readingTypeKey:', readingTypeKey, 'config:', config);
-    
+    console.log(
+      '🎯 getCreditAmount - selectedReadingType:',
+      selectedReadingType,
+      'readingTypeKey:',
+      readingTypeKey,
+      'config:',
+      config
+    );
+
     return config?.cost || 0;
   };
 
@@ -286,10 +302,7 @@ export default function LoveReadingRefactored({
   // Basit yorum oluştur
   const generateBasicInterpretation = (): string => {
     const cards = selectedCards as TarotCard[];
-    if (
-      selectedCards.length !== 4 ||
-      selectedCards.some(c => !c)
-    ) {
+    if (selectedCards.length !== 4 || selectedCards.some(c => !c)) {
       return 'Tüm kartları seçmeden yorum oluşturulamaz.';
     }
     let interpretation = `❤️ **Aşk Açılımı**\n\n`;
@@ -311,7 +324,10 @@ export default function LoveReadingRefactored({
   const handleReadingTypeSelect = async (type: ReadingType | string) => {
     console.log('🎯 handleReadingTypeSelect çağrıldı:', type);
     if (type === READING_TYPES.DETAILED || type === READING_TYPES.WRITTEN) {
-      console.log('💳 DETAILED/WRITTEN seçildi, selectedReadingType set ediliyor:', type);
+      console.log(
+        '💳 DETAILED/WRITTEN seçildi, selectedReadingType set ediliyor:',
+        type
+      );
       setSelectedReadingType(type as ReadingType); // Önce tip set et
       setShowCreditConfirm(true);
       return;
@@ -378,7 +394,10 @@ export default function LoveReadingRefactored({
             onCardDetails={handleCardDetails}
             positionInfo={
               LOVE_POSITIONS_INFO[idx]
-                ? { title: LOVE_POSITIONS_INFO[idx].title, desc: LOVE_POSITIONS_INFO[idx].desc }
+                ? {
+                    title: LOVE_POSITIONS_INFO[idx].title,
+                    desc: LOVE_POSITIONS_INFO[idx].desc,
+                  }
                 : { title: `Pozisyon ${position.id}`, desc: 'Kart pozisyonu' }
             }
             renderCard={(card, props) => (
@@ -403,27 +422,25 @@ export default function LoveReadingRefactored({
         </div>
       )}
 
-      {selectedReadingType &&
-        currentPosition &&
-        currentPosition <= 4 && (
-          <div className='flex justify-center mb-4'>
-            <div className='bg-gradient-to-r from-pink-600/20 via-red-500/30 to-purple-500/20 border border-pink-500/50 rounded-2xl px-6 py-3 shadow-lg animate-pulse'>
-              <div className='flex items-center space-x-3'>
-                <div className='w-6 h-6 bg-red-400/20 rounded-full flex items-center justify-center'>
-                  <span className='text-red-300 text-sm'>❤️</span>
+      {selectedReadingType && currentPosition && currentPosition <= 4 && (
+        <div className='flex justify-center mb-4'>
+          <div className='bg-gradient-to-r from-pink-600/20 via-red-500/30 to-purple-500/20 border border-pink-500/50 rounded-2xl px-6 py-3 shadow-lg animate-pulse'>
+            <div className='flex items-center space-x-3'>
+              <div className='w-6 h-6 bg-red-400/20 rounded-full flex items-center justify-center'>
+                <span className='text-red-300 text-sm'>❤️</span>
+              </div>
+              <div className='text-center'>
+                <div className='text-red-200 font-bold text-lg'>
+                  {LOVE_POSITIONS_INFO[currentPosition - 1]?.title ?? ''}
                 </div>
-                <div className='text-center'>
-                  <div className='text-red-200 font-bold text-lg'>
-                    {LOVE_POSITIONS_INFO[currentPosition - 1]?.title ?? ''}
-                  </div>
-                  <div className='text-gray-300 text-xs'>
-                    {LOVE_POSITIONS_INFO[currentPosition - 1]?.desc ?? ''}
-                  </div>
+                <div className='text-gray-300 text-xs'>
+                  {LOVE_POSITIONS_INFO[currentPosition - 1]?.desc ?? ''}
                 </div>
               </div>
             </div>
           </div>
-        )}
+        </div>
+      )}
 
       <BaseCardGallery
         deck={deck}
@@ -438,11 +455,19 @@ export default function LoveReadingRefactored({
         }
         onShuffleDeck={shuffleDeck}
         canSelectCards={(() => {
-          const canSelect = selectedReadingType === READING_TYPES.SIMPLE ||
+          const canSelect =
+            selectedReadingType === READING_TYPES.SIMPLE ||
             ((selectedReadingType === READING_TYPES.DETAILED ||
               selectedReadingType === READING_TYPES.WRITTEN) &&
               detailedFormSaved);
-          console.log('🔓 LoveReadingRefactored canSelectCards:', canSelect, 'selectedReadingType:', selectedReadingType, 'detailedFormSaved:', detailedFormSaved);
+          console.log(
+            '🔓 LoveReadingRefactored canSelectCards:',
+            canSelect,
+            'selectedReadingType:',
+            selectedReadingType,
+            'detailedFormSaved:',
+            detailedFormSaved
+          );
           return canSelect;
         })()}
         renderCard={(card, isUsed, canSelect) => (
@@ -495,7 +520,9 @@ export default function LoveReadingRefactored({
               (c: TarotCard | null) => c && c.id === showCardDetails.id
             );
             const p = LOVE_POSITIONS_INFO[idx];
-            return p ? { title: p.title, desc: p.desc } : { title: `Pozisyon ${idx + 1}`, desc: 'Kart pozisyonu' };
+            return p
+              ? { title: p.title, desc: p.desc }
+              : { title: `Pozisyon ${idx + 1}`, desc: 'Kart pozisyonu' };
           })()}
         />
       )}
@@ -503,10 +530,7 @@ export default function LoveReadingRefactored({
       {selectedCards.filter(c => c !== null).length === 4 &&
         selectedReadingType && (
           <div ref={interpretationRef} className='space-y-6'>
-            <LoveInterpretation
-              cards={selectedCards}
-              isReversed={isReversed}
-            />
+            <LoveInterpretation cards={selectedCards} isReversed={isReversed} />
 
             {(selectedReadingType === READING_TYPES.DETAILED ||
               selectedReadingType === READING_TYPES.WRITTEN) && (
@@ -516,7 +540,9 @@ export default function LoveReadingRefactored({
                   disabled={isSavingReading}
                   className='px-8 py-4 bg-gradient-to-r from-pink-600 to-red-500 hover:from-pink-700 hover:to-red-600 text-white font-semibold rounded-2xl transition-all disabled:opacity-60 disabled:cursor-not-allowed shadow-lg'
                 >
-                  {isSavingReading ? t('love.modals.savingReading') : t('love.modals.saveReading')}
+                  {isSavingReading
+                    ? t('love.modals.savingReading')
+                    : t('love.modals.saveReading')}
                 </button>
               </div>
             )}
@@ -540,7 +566,9 @@ export default function LoveReadingRefactored({
       <CreditConfirmModal
         isOpen={showCreditConfirm}
         onClose={() => {
-          console.log('🚫 Kredi onay modalı vazgeç ile kapatıldı, state\'ler sıfırlanıyor');
+          console.log(
+            "🚫 Kredi onay modalı vazgeç ile kapatıldı, state'ler sıfırlanıyor"
+          );
           setShowCreditConfirm(false);
           setSelectedReadingType(null);
           setDetailedFormSaved(false);

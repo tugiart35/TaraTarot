@@ -43,7 +43,7 @@ const messages = {
 
 // Desteklenen diller
 const supportedLocales = ['tr', 'en', 'sr'] as const;
-type Locale = typeof supportedLocales[number];
+type Locale = (typeof supportedLocales)[number];
 
 // Nested key'leri çözmek için helper fonksiyon
 function getNestedValue(obj: any, path: string): string {
@@ -54,7 +54,7 @@ function getNestedValue(obj: any, path: string): string {
 
 export function useTranslations() {
   const pathname = usePathname();
-  
+
   // Mevcut locale'i pathname'den çıkar
   const currentLocale = useMemo(() => {
     if (!pathname) return 'tr';
@@ -68,33 +68,36 @@ export function useTranslations() {
   }, [currentLocale]);
 
   // Çeviri fonksiyonu - stable referans için useCallback kullan
-  const t = useCallback((key: string, fallback?: string): string => {
-    try {
-      if (!currentMessages) {
+  const t = useCallback(
+    (key: string, fallback?: string): string => {
+      try {
+        if (!currentMessages) {
+          return fallback || key;
+        }
+
+        const message = getNestedValue(currentMessages, key);
+
+        if (message && typeof message === 'string') {
+          return message;
+        }
+
+        // Fallback olarak Türkçe'yi dene
+        if (currentLocale !== 'tr') {
+          const fallbackMessage = getNestedValue(messages.tr, key);
+          if (fallbackMessage && typeof fallbackMessage === 'string') {
+            return fallbackMessage;
+          }
+        }
+
+        // Son çare olarak verilen fallback'i kullan
+        return fallback || key;
+      } catch (error) {
+        console.error('Translation error:', error);
         return fallback || key;
       }
-      
-      const message = getNestedValue(currentMessages, key);
-      
-      if (message && typeof message === 'string') {
-        return message;
-      }
-      
-      // Fallback olarak Türkçe'yi dene
-      if (currentLocale !== 'tr') {
-        const fallbackMessage = getNestedValue(messages.tr, key);
-        if (fallbackMessage && typeof fallbackMessage === 'string') {
-          return fallbackMessage;
-        }
-      }
-      
-      // Son çare olarak verilen fallback'i kullan
-      return fallback || key;
-    } catch (error) {
-      console.error('Translation error:', error);
-      return fallback || key;
-    }
-  }, [currentLocale, currentMessages]);
+    },
+    [currentLocale, currentMessages]
+  );
 
   return { t };
 }

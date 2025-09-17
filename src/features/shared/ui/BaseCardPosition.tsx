@@ -182,13 +182,16 @@ export default function BaseCardPosition({
 
   const colors = colorSchemes[colorScheme];
 
-  // Kart boyutlarını tanımla
+  // Kart boyutlarını tanımla (geçerli Tailwind ölçüleriyle)
   const cardSizes = {
-    small: 'w-12 h-18 xs:w-14 xs:h-20 sm:w-16 sm:h-24 md:w-18 md:h-28',
+    // base: 48x72px, sm: 64x96px, md: 80x128px
+    small: 'w-12 h-18 sm:w-16 sm:h-24 md:w-20 md:h-32',
+    // base: 64x96px, sm: 80x128px, md: 96x144px, lg: 112x160px, xl: 128x192px
     medium:
-      'w-16 h-24 xs:w-18 xs:h-28 sm:w-20 sm:h-32 md:w-24 md:h-36 lg:w-28 lg:h-40 xl:w-32 xl:h-56',
+      'w-16 h-24 sm:w-20 sm:h-32 md:w-24 md:h-36 lg:w-28 lg:h-40 xl:w-32 xl:h-48',
+    // base: 80x128px, sm: 96x144px, md: 112x160px, lg: 128x192px, xl: 144x224px
     large:
-      'w-20 h-32 xs:w-24 xs:h-36 sm:w-28 sm:h-42 md:w-32 md:h-48 lg:w-36 lg:h-54 xl:w-40 xl:h-60',
+      'w-20 h-32 sm:w-24 sm:h-36 md:w-28 md:h-40 lg:w-32 lg:h-48 xl:w-36 xl:h-56',
   };
 
   return (

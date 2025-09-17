@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Workspace root ayarı - birden fazla lockfile uyarısını önler
+  outputFileTracingRoot: __dirname,
   // Image optimization
   images: {
     domains: ['localhost'],

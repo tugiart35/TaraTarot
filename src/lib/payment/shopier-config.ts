@@ -84,13 +84,21 @@ export interface ShopierWebhookData {
 // Shopier konfigürasyonu
 export const getShopierConfig = (): ShopierConfig => {
   return {
-    apiUrl: process.env.NEXT_PUBLIC_SHOPIER_API_URL || 'https://www.shopier.com/ShowProduct/api_pay4.php',
+    apiUrl:
+      process.env.NEXT_PUBLIC_SHOPIER_API_URL ||
+      'https://www.shopier.com/ShowProduct/api_pay4.php',
     merchantId: process.env.SHOPIER_MERCHANT_ID || '',
     apiKey: process.env.SHOPIER_API_KEY || '',
     apiSecret: process.env.SHOPIER_API_SECRET || '',
-    callbackUrl: process.env.NEXT_PUBLIC_SHOPIER_CALLBACK_URL || `${process.env.NEXT_PUBLIC_SITE_URL}/payment/callback`,
-    webhookUrl: process.env.NEXT_PUBLIC_SHOPIER_WEBHOOK_URL || `${process.env.NEXT_PUBLIC_SITE_URL}/api/webhook/shopier`,
-    testMode: process.env.NODE_ENV === 'development' || process.env.SHOPIER_TEST_MODE === 'true'
+    callbackUrl:
+      process.env.NEXT_PUBLIC_SHOPIER_CALLBACK_URL ||
+      `${process.env.NEXT_PUBLIC_SITE_URL}/payment/callback`,
+    webhookUrl:
+      process.env.NEXT_PUBLIC_SHOPIER_WEBHOOK_URL ||
+      `${process.env.NEXT_PUBLIC_SITE_URL}/api/webhook/shopier`,
+    testMode:
+      process.env.NODE_ENV === 'development' ||
+      process.env.SHOPIER_TEST_MODE === 'true',
   };
 };
 
@@ -100,18 +108,17 @@ export const createShopierPayment = async (
 ): Promise<ShopierPaymentResponse> => {
   try {
     const config = getShopierConfig();
-    
+
     // Test modunda mock response döndür
     if (config.testMode || paymentRequest.orderId.startsWith('TEST_')) {
-      
       // Test için başarılı response simüle et
       return {
         success: true,
         paymentUrl: `${paymentRequest.returnUrl}?order_id=${paymentRequest.orderId}&transaction_id=TEST_${Date.now()}`,
-        orderId: paymentRequest.orderId
+        orderId: paymentRequest.orderId,
       };
     }
-    
+
     // Gerçek Shopier API çağrısı
     const paymentParams = {
       platform_order_id: paymentRequest.orderId,
@@ -131,7 +138,7 @@ export const createShopierPayment = async (
       test_mode: config.testMode ? '1' : '0',
       package_id: paymentRequest.packageId,
       credits: paymentRequest.credits.toString(),
-      bonus_credits: paymentRequest.bonusCredits.toString()
+      bonus_credits: paymentRequest.bonusCredits.toString(),
     };
 
     // Signature oluştur
@@ -144,7 +151,7 @@ export const createShopierPayment = async (
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
-      body: new URLSearchParams(paymentParams).toString()
+      body: new URLSearchParams(paymentParams).toString(),
     });
 
     if (!response.ok) {
@@ -152,55 +159,63 @@ export const createShopierPayment = async (
     }
 
     const data = await response.text();
-    
+
     // Başarılı response kontrolü
     if (data.includes('payment_url') || data.includes('success')) {
       return {
         success: true,
         paymentUrl: extractPaymentUrl(data),
-        orderId: paymentRequest.orderId
+        orderId: paymentRequest.orderId,
       };
     } else {
       return {
         success: false,
         error: 'Ödeme formu oluşturulamadı',
-        errorCode: 'PAYMENT_FORM_ERROR'
+        errorCode: 'PAYMENT_FORM_ERROR',
       };
     }
-
   } catch (error) {
     return {
       success: false,
       error: error instanceof Error ? error.message : 'Bilinmeyen hata',
-      errorCode: 'PAYMENT_CREATION_ERROR'
+      errorCode: 'PAYMENT_CREATION_ERROR',
     };
   }
 };
 
 // Shopier signature oluşturma
-export const generateShopierSignature = (params: Record<string, string>, secret: string): string => {
+export const generateShopierSignature = (
+  params: Record<string, string>,
+  secret: string
+): string => {
   // Shopier signature algoritması
   const sortedParams = Object.keys(params)
     .sort()
     .map(key => `${key}=${params[key]}`)
     .join('&');
-  
+
   return btoa(sortedParams + secret);
 };
 
 // Webhook signature doğrulama
-export const verifyShopierWebhook = (data: ShopierWebhookData, signature: string): boolean => {
+export const verifyShopierWebhook = (
+  data: ShopierWebhookData,
+  signature: string
+): boolean => {
   try {
     const config = getShopierConfig();
-    const expectedSignature = generateShopierSignature({
-      orderId: data.orderId,
-      status: data.status,
-      amount: data.amount.toString(),
-      currency: data.currency,
-      transactionId: data.transactionId,
-      timestamp: data.timestamp
-    }, config.apiSecret);
-    
+    const expectedSignature = generateShopierSignature(
+      {
+        orderId: data.orderId,
+        status: data.status,
+        amount: data.amount.toString(),
+        currency: data.currency,
+        transactionId: data.transactionId,
+        timestamp: data.timestamp,
+      },
+      config.apiSecret
+    );
+
     return signature === expectedSignature;
   } catch (error) {
     return false;
@@ -215,10 +230,13 @@ const extractPaymentUrl = (responseData: string): string => {
 };
 
 // Test ödeme verisi
-export const createTestPayment = (packageId: string, userId: string): ShopierPaymentRequest => {
+export const createTestPayment = (
+  packageId: string,
+  userId: string
+): ShopierPaymentRequest => {
   return {
     orderId: `TEST_${Date.now()}_${userId}`,
-    amount: 1.00, // Test için 1 TL
+    amount: 1.0, // Test için 1 TL
     currency: 'TRY',
     description: 'Test ödeme',
     customerEmail: 'test@example.com',
@@ -228,6 +246,6 @@ export const createTestPayment = (packageId: string, userId: string): ShopierPay
     packageId,
     packageName: 'Test Paketi',
     credits: 100,
-    bonusCredits: 0
+    bonusCredits: 0,
   };
 };

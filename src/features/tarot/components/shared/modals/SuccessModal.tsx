@@ -81,7 +81,7 @@ export default function SuccessModal({
 
     const interval = setInterval(() => {
       setProgress(prev => {
-        const newProgress = prev + (100 / (redirectDelay / 100));
+        const newProgress = prev + 100 / (redirectDelay / 100);
         if (newProgress >= 100) {
           clearInterval(interval);
           onClose();
@@ -105,9 +105,13 @@ export default function SuccessModal({
 
   return (
     <div className='fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4'>
-      <div className={`bg-gradient-to-br from-${theme.background} to-${theme.secondary}-900/95 border border-${theme.border} rounded-3xl shadow-2xl max-w-md w-full p-8 text-center`}>
+      <div
+        className={`bg-gradient-to-br from-${theme.background} to-${theme.secondary}-900/95 border border-${theme.border} rounded-3xl shadow-2xl max-w-md w-full p-8 text-center`}
+      >
         {/* Başarı İkonu */}
-        <div className={`w-20 h-20 bg-gradient-to-br from-${theme.success}-400 to-${theme.success}-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg`}>
+        <div
+          className={`w-20 h-20 bg-gradient-to-br from-${theme.success}-400 to-${theme.success}-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg`}
+        >
           <span className='text-3xl'>{icon}</span>
         </div>
 
@@ -123,17 +127,19 @@ export default function SuccessModal({
 
         {/* Bilgi */}
         {info && (
-          <div className={`bg-${theme.primary}-800/30 border border-${theme.primary}-500/20 rounded-xl p-4 mb-6`}>
-            <p className={`text-${theme.primary}-300 text-sm`}>
-              {info}
-            </p>
+          <div
+            className={`bg-${theme.primary}-800/30 border border-${theme.primary}-500/20 rounded-xl p-4 mb-6`}
+          >
+            <p className={`text-${theme.primary}-300 text-sm`}>{info}</p>
           </div>
         )}
 
         {/* Progress Bar */}
         {showProgress && (
-          <div className={`w-full bg-${theme.primary}-800/30 rounded-full h-2 mb-4`}>
-            <div 
+          <div
+            className={`w-full bg-${theme.primary}-800/30 rounded-full h-2 mb-4`}
+          >
+            <div
               className={`bg-gradient-to-r from-${theme.success}-400 to-${theme.success}-600 h-2 rounded-full transition-all duration-100 ease-linear`}
               style={{ width: `${progress}%` }}
             ></div>

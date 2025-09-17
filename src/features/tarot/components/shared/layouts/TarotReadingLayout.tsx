@@ -77,11 +77,14 @@ export default function TarotReadingLayout({
   return (
     <div className={`w-full space-y-6 md:space-y-8 ${className}`}>
       {/* Ana Açılım Sahnesi */}
-      <div className={`w-full relative overflow-hidden rounded-2xl shadow-2xl bg-gradient-to-br from-${theme.background} via-${theme.secondary}-900/80 to-${theme.accent}-800/80 border border-${theme.border}`}>
-        
+      <div
+        className={`w-full relative overflow-hidden rounded-2xl shadow-2xl bg-gradient-to-br from-${theme.background} via-${theme.secondary}-900/80 to-${theme.accent}-800/80 border border-${theme.border}`}
+      >
         {/* Overlay Content */}
         {showOverlay && overlayContent && (
-          <div className={`absolute inset-0 z-30 flex flex-col items-center justify-center bg-${theme.overlay} backdrop-blur-[2px] rounded-2xl`}>
+          <div
+            className={`absolute inset-0 z-30 flex flex-col items-center justify-center bg-${theme.overlay} backdrop-blur-[2px] rounded-2xl`}
+          >
             {overlayContent}
           </div>
         )}
@@ -98,13 +101,13 @@ export default function TarotReadingLayout({
               style={{ zIndex: 0 }}
             />
           )}
-          
+
           {/* Gradient Overlay 1 */}
           <div
             className={`absolute inset-0 bg-gradient-to-br from-${theme.primary}-900/10 via-${theme.secondary}-900/60 to-${theme.accent}-900/20 backdrop-blur-[2px]`}
             style={{ zIndex: 1 }}
           />
-          
+
           {/* Gradient Overlay 2 */}
           <div
             className={`absolute inset-0 bg-gradient-to-br from-${theme.primary}-900/80 via-${theme.secondary}-900/10 to-${theme.accent}-900/80`}
@@ -124,17 +127,23 @@ export default function TarotReadingLayout({
           {(title || subtitle) && (
             <div className='text-center mb-6'>
               {icon && (
-                <div className={`w-16 h-16 flex items-center justify-center bg-${theme.primary}-800/70 rounded-full mb-4 mx-auto shadow-lg`}>
+                <div
+                  className={`w-16 h-16 flex items-center justify-center bg-${theme.primary}-800/70 rounded-full mb-4 mx-auto shadow-lg`}
+                >
                   <span className='text-3xl'>{icon}</span>
                 </div>
               )}
               {title && (
-                <h1 className={`text-${theme.text} text-2xl md:text-3xl font-bold mb-2`}>
+                <h1
+                  className={`text-${theme.text} text-2xl md:text-3xl font-bold mb-2`}
+                >
                   {title}
                 </h1>
               )}
               {subtitle && (
-                <p className={`text-${theme.text}/80 text-sm md:text-base max-w-md mx-auto`}>
+                <p
+                  className={`text-${theme.text}/80 text-sm md:text-base max-w-md mx-auto`}
+                >
                   {subtitle}
                 </p>
               )}

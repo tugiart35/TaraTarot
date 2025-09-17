@@ -245,7 +245,9 @@ export const cardNameMapping: { [key: string]: string } = {
 };
 
 // Lazy loading için async fonksiyon
-export const getCardNameMapping = async (): Promise<{ [key: string]: string }> => {
+export const getCardNameMapping = async (): Promise<{
+  [key: string]: string;
+}> => {
   return cardNameMapping;
 };
 

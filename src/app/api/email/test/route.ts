@@ -1,23 +1,23 @@
 /*
  * DOSYA ANALİZİ - TEST EMAIL API ENDPOINT (PRODUCTION-READY)
- * 
+ *
  * BAĞLANTILI DOSYALAR:
  * - src/lib/email/email-service.ts (email gönderme servisi)
  * - .env (SMTP konfigürasyonu)
- * 
+ *
  * DOSYA AMACI:
  * SMTP ayarlarını test etmek için email gönderme endpoint'i
  * Geliştirme ve production ortamında email servisini doğrulama
- * 
+ *
  * SUPABASE DEĞİŞKENLERİ VE TABLOLARI:
  * - Yok (sadece email test)
- * 
+ *
  * GÜVENLİK ÖZELLİKLERİ:
  * - Rate limiting
  * - Input validation
  * - Error handling
  * - CORS headers
- * 
+ *
  * KULLANIM DURUMU:
  * - GEREKLİ: SMTP ayarlarını test etmek için
  * - GÜVENLİ: Production-ready with security
@@ -37,16 +37,16 @@ function checkRateLimit(ip: string): boolean {
   const now = Date.now();
   const key = `test-email:${ip}`;
   const entry = requestCounts.get(key);
-  
+
   if (!entry || now > entry.resetTime) {
     requestCounts.set(key, { count: 1, resetTime: now + RATE_WINDOW });
     return true;
   }
-  
+
   if (entry.count >= RATE_LIMIT) {
     return false;
   }
-  
+
   entry.count++;
   return true;
 }
@@ -55,15 +55,15 @@ function checkRateLimit(ip: string): boolean {
 function getClientIP(request: NextRequest): string {
   const forwarded = request.headers.get('x-forwarded-for');
   const realIP = request.headers.get('x-real-ip');
-  
+
   if (forwarded) {
     return forwarded.split(',')[0]?.trim() || '';
   }
-  
+
   if (realIP) {
     return realIP;
   }
-  
+
   return 'unknown';
 }
 
@@ -71,24 +71,24 @@ function getClientIP(request: NextRequest): string {
 export async function POST(request: NextRequest) {
   try {
     const ip = getClientIP(request);
-    
+
     // Rate limiting kontrolü
     if (!checkRateLimit(ip)) {
       return NextResponse.json(
         { error: 'Rate limit exceeded. Maximum 3 test emails per minute.' },
-        { 
+        {
           status: 429,
           headers: {
             'Retry-After': '60',
             'X-RateLimit-Limit': RATE_LIMIT.toString(),
-            'X-RateLimit-Remaining': '0'
-          }
+            'X-RateLimit-Remaining': '0',
+          },
         }
       );
     }
-    
+
     const body = await request.json();
-    
+
     // Input validation
     if (!body.email || !body.email.includes('@')) {
       return NextResponse.json(
@@ -96,7 +96,7 @@ export async function POST(request: NextRequest) {
         { status: 400 }
       );
     }
-    
+
     // Test email içeriği
     const testEmailData = {
       to: body.email,
@@ -143,18 +143,18 @@ export async function POST(request: NextRequest) {
           </div>
         </body>
         </html>
-      `
+      `,
     };
-    
+
     // Email gönder
     const success = await emailService.sendEmail(testEmailData);
-    
+
     if (success) {
       return NextResponse.json({
         success: true,
         message: 'Test email başarıyla gönderildi!',
         timestamp: new Date().toISOString(),
-        recipient: body.email
+        recipient: body.email,
       });
     } else {
       return NextResponse.json(
@@ -162,10 +162,9 @@ export async function POST(request: NextRequest) {
         { status: 500 }
       );
     }
-    
   } catch (error) {
     console.error('Test email API error:', error);
-    
+
     return NextResponse.json(
       { error: 'Internal server error' },
       { status: 500 }
@@ -177,40 +176,39 @@ export async function POST(request: NextRequest) {
 export async function GET(request: NextRequest) {
   try {
     const ip = getClientIP(request);
-    
+
     // Rate limiting kontrolü
     if (!checkRateLimit(ip)) {
       return NextResponse.json(
         { error: 'Rate limit exceeded' },
-        { 
+        {
           status: 429,
           headers: {
             'Retry-After': '60',
             'X-RateLimit-Limit': RATE_LIMIT.toString(),
-            'X-RateLimit-Remaining': '0'
-          }
+            'X-RateLimit-Remaining': '0',
+          },
         }
       );
     }
-    
+
     // SMTP ayarlarını kontrol et (şifre hariç)
     const smtpConfig = {
       host: process.env.SMTP_HOST || 'smtp.gmail.com',
       port: process.env.SMTP_PORT || '587',
       secure: process.env.SMTP_SECURE === 'true',
       user: process.env.SMTP_USER || '',
-      hasPassword: !!process.env.SMTP_PASS
+      hasPassword: !!process.env.SMTP_PASS,
     };
-    
+
     return NextResponse.json({
       success: true,
       smtp: smtpConfig,
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
-    
   } catch (error) {
     console.error('SMTP status API error:', error);
-    
+
     return NextResponse.json(
       { error: 'Internal server error' },
       { status: 500 }
@@ -221,12 +219,12 @@ export async function GET(request: NextRequest) {
 // OPTIONS endpoint - CORS preflight
 export async function OPTIONS(_request: NextRequest) {
   const response = new NextResponse(null, { status: 200 });
-  
+
   response.headers.set('Access-Control-Allow-Origin', '*');
   response.headers.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   response.headers.set('Access-Control-Allow-Headers', 'Content-Type');
   response.headers.set('Access-Control-Max-Age', '86400');
-  
+
   return response;
 }
 

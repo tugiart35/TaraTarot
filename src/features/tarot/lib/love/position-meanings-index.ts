@@ -15,10 +15,26 @@ Dosyanın amacı:
 // Bu dosya, Aşk açılımında tüm pozisyonlar için kart anlamlarını birleştirir.
 // Her pozisyon (1-4) için özel kart anlamlarını içerir ve kolay erişim sağlar.
 
-import { position1Meanings, useI18nPosition1Meanings, getI18nPosition1Meaning } from './position-1-ilgi-duydugun-kisi';
-import { position2Meanings, useI18nPosition2Meanings, getI18nPosition2Meaning } from './position-2-fiziksel';
-import { position3Meanings, useI18nPosition3Meanings, getI18nPosition3Meaning } from './position-3-baglanti';
-import { position4Meanings, useI18nPosition4Meanings, getI18nPosition4Meaning } from './position-4-uzun-vadeli-surec';
+import {
+  position1Meanings,
+  useI18nPosition1Meanings,
+  getI18nPosition1Meaning,
+} from './position-1-ilgi-duydugun-kisi';
+import {
+  position2Meanings,
+  useI18nPosition2Meanings,
+  getI18nPosition2Meaning,
+} from './position-2-fiziksel';
+import {
+  position3Meanings,
+  useI18nPosition3Meanings,
+  getI18nPosition3Meaning,
+} from './position-3-baglanti';
+import {
+  position4Meanings,
+  useI18nPosition4Meanings,
+  getI18nPosition4Meaning,
+} from './position-4-uzun-vadeli-surec';
 import { useLoveTranslations } from './i18n-helper';
 
 export interface LovePositionMeaning {
@@ -61,58 +77,57 @@ export const getMeaningsByPosition = (
 // Kart isimlerini eşleştiren mapping - Tüm dilleri kapsar (TR, EN, SR)
 const cardNameMapping: { [key: string]: string } = {
   // Major Arcana - Türkçe
-  'Deli': 'The Fool',
-  'Büyücü': 'The Magician',
+  Deli: 'The Fool',
+  Büyücü: 'The Magician',
   'Yüksek Rahibe': 'The High Priestess',
-  'İmparatoriçe': 'The Empress',
-  'İmparator': 'The Emperor',
-  'Hierophant': 'The Hierophant',
-  'Aziz': 'The Hierophant',
-  'Aşıklar': 'The Lovers',
+  İmparatoriçe: 'The Empress',
+  İmparator: 'The Emperor',
+  Hierophant: 'The Hierophant',
+  Aziz: 'The Hierophant',
+  Aşıklar: 'The Lovers',
   'Savaş Arabası': 'The Chariot',
-  'Güç': 'Strength',
-  'Ermiş': 'The Hermit',
-  'Münzevi': 'The Hermit',
+  Güç: 'Strength',
+  Ermiş: 'The Hermit',
+  Münzevi: 'The Hermit',
   'Kader Çarkı': 'The Wheel of Fortune',
-  'Adalet': 'Justice',
+  Adalet: 'Justice',
   'Asılı Adam': 'The Hanged Man',
-  'Ölüm': 'Death',
-  'Ölçü': 'Temperance',
-  'Ölçülülük': 'Temperance',
-  'Şeytan': 'The Devil',
-  'Kule': 'The Tower',
-  'Yıldız': 'The Star',
-  'Ay': 'The Moon',
-  'Güneş': 'The Sun',
-  'Yargı': 'Judgement',
-  'Mahkeme': 'Judgement',
-  'Dünya': 'The World',
-  
-  
+  Ölüm: 'Death',
+  Ölçü: 'Temperance',
+  Ölçülülük: 'Temperance',
+  Şeytan: 'The Devil',
+  Kule: 'The Tower',
+  Yıldız: 'The Star',
+  Ay: 'The Moon',
+  Güneş: 'The Sun',
+  Yargı: 'Judgement',
+  Mahkeme: 'Judgement',
+  Dünya: 'The World',
+
   // Major Arcana - Sırpça
-  'Budala': 'The Fool',
-  'Mađioničar': 'The Magician',
+  Budala: 'The Fool',
+  Mađioničar: 'The Magician',
   'Visoka Svestenica': 'The High Priestess',
-  'Carica': 'The Empress',
-  'Car': 'The Emperor',
-  'Sveštenik': 'The Hierophant',
-  'Ljubavnici': 'The Lovers',
-  'Kola': 'The Chariot',
-  'Snaga': 'Strength',
-  'Pustinjak': 'The Hermit',
+  Carica: 'The Empress',
+  Car: 'The Emperor',
+  Sveštenik: 'The Hierophant',
+  Ljubavnici: 'The Lovers',
+  Kola: 'The Chariot',
+  Snaga: 'Strength',
+  Pustinjak: 'The Hermit',
   'Točak Sreće': 'The Wheel of Fortune',
-  'Pravda': 'Justice',
+  Pravda: 'Justice',
   'Obeseni Čovek': 'The Hanged Man',
-  'Smrt': 'Death',
-  'Umerenost': 'Temperance',
-  'Đavo': 'The Devil',
-  'Kula': 'The Tower',
-  'Zvezda': 'The Star',
-  'Mesec': 'The Moon',
-  'Sunce': 'The Sun',
-  'Sud': 'Judgement',
-  'Svet': 'The World',
-  
+  Smrt: 'Death',
+  Umerenost: 'Temperance',
+  Đavo: 'The Devil',
+  Kula: 'The Tower',
+  Zvezda: 'The Star',
+  Mesec: 'The Moon',
+  Sunce: 'The Sun',
+  Sud: 'Judgement',
+  Svet: 'The World',
+
   // Minor Arcana - Kupalar (Türkçe)
   'Kupalar Ası': 'Ace of Cups',
   'Kupalar İkilisi': 'Two of Cups',
@@ -129,7 +144,7 @@ const cardNameMapping: { [key: string]: string } = {
   'Kupalar Şövalyesi': 'Knight of Cups',
   'Kupalar Kraliçesi': 'Queen of Cups',
   'Kupalar Kralı': 'King of Cups',
-  
+
   // Minor Arcana - Kadehler (Türkçe - Alternatif isimler)
   'Kadehler Ası': 'Ace of Cups',
   'Kadehler İkilisi': 'Two of Cups',
@@ -146,8 +161,7 @@ const cardNameMapping: { [key: string]: string } = {
   'Kadehler Şövalyesi': 'Knight of Cups',
   'Kadehler Kraliçesi': 'Queen of Cups',
   'Kadehler Kralı': 'King of Cups',
-  
-  
+
   // Minor Arcana - Kupalar (Sırpça)
   'As Pehara': 'Ace of Cups',
   'Dvojka Pehara': 'Two of Cups',
@@ -163,7 +177,7 @@ const cardNameMapping: { [key: string]: string } = {
   'Vitez Pehara': 'Knight of Cups',
   'Kraljica Pehara': 'Queen of Cups',
   'Kralj Pehara': 'King of Cups',
-  
+
   // Minor Arcana - Kılıçlar (Türkçe)
   'Kılıçlar Ası': 'Ace of Swords',
   'Kılıçlar İkilisi': 'Two of Swords',
@@ -180,8 +194,7 @@ const cardNameMapping: { [key: string]: string } = {
   'Kılıçlar Şövalyesi': 'Knight of Swords',
   'Kılıçlar Kraliçesi': 'Queen of Swords',
   'Kılıçlar Kralı': 'King of Swords',
-  
-  
+
   // Minor Arcana - Kılıçlar (Sırpça)
   'As Mačeva': 'Ace of Swords',
   'Dvojka Mačeva': 'Two of Swords',
@@ -197,7 +210,7 @@ const cardNameMapping: { [key: string]: string } = {
   'Vitez Mačeva': 'Knight of Swords',
   'Kraljica Mačeva': 'Queen of Swords',
   'Kralj Mačeva': 'King of Swords',
-  
+
   // Minor Arcana - Asalar (Türkçe)
   'Asalar Ası': 'Ace of Wands',
   'Asalar İkilisi': 'Two of Wands',
@@ -214,8 +227,7 @@ const cardNameMapping: { [key: string]: string } = {
   'Asalar Şövalyesi': 'Knight of Wands',
   'Asalar Kraliçesi': 'Queen of Wands',
   'Asalar Kralı': 'King of Wands',
-  
-  
+
   // Minor Arcana - Asalar (Sırpça)
   'As Štapova': 'Ace of Wands',
   'Dvojka Štapova': 'Two of Wands',
@@ -231,7 +243,7 @@ const cardNameMapping: { [key: string]: string } = {
   'Vitez Štapova': 'Knight of Wands',
   'Kraljica Štapova': 'Queen of Wands',
   'Kralj Štapova': 'King of Wands',
-  
+
   // Minor Arcana - Tılsımlar (Türkçe)
   'Tılsımlar Ası': 'Ace of Pentacles',
   'Tılsımlar İkilisi': 'Two of Pentacles',
@@ -248,7 +260,7 @@ const cardNameMapping: { [key: string]: string } = {
   'Tılsımlar Şövalyesi': 'Knight of Pentacles',
   'Tılsımlar Kraliçesi': 'Queen of Pentacles',
   'Tılsımlar Kralı': 'King of Pentacles',
-  
+
   // Minor Arcana - Altınlar (Türkçe - Alternatif isimler)
   'Altınlar Ası': 'Ace of Pentacles',
   'Altınlar İkilisi': 'Two of Pentacles',
@@ -265,8 +277,7 @@ const cardNameMapping: { [key: string]: string } = {
   'Altınlar Şövalyesi': 'Knight of Pentacles',
   'Altınlar Kraliçesi': 'Queen of Pentacles',
   'Altınlar Kralı': 'King of Pentacles',
-  
-  
+
   // Minor Arcana - Tılsımlar (Sırpça)
   'As Pentakla': 'Ace of Pentacles',
   'Dvojka Pentakla': 'Two of Pentacles',
@@ -282,7 +293,6 @@ const cardNameMapping: { [key: string]: string } = {
   'Vitez Pentakla': 'Knight of Pentacles',
   'Kraljica Pentakla': 'Queen of Pentacles',
   'Kralj Pentakla': 'King of Pentacles',
-  
 };
 
 // Kart adına ve pozisyona göre anlam bulma fonksiyonu
@@ -292,17 +302,17 @@ export const getMeaningByCardAndPosition = (
 ): LovePositionMeaning | undefined => {
   // Kart ismini mapping ile dönüştür
   const mappedCardName = cardNameMapping[cardName] || cardName;
-  
+
   const positionMeanings = getMeaningsByPosition(position);
-  
+
   // Önce mapped isimle ara
   let found = positionMeanings.find(meaning => meaning.card === mappedCardName);
-  
+
   // Bulunamazsa orijinal isimle ara
   if (!found) {
     found = positionMeanings.find(meaning => meaning.card === cardName);
   }
-  
+
   return found;
 };
 
@@ -314,7 +324,7 @@ export const getMeaningById = (id: string): LovePositionMeaning | undefined => {
 // Pozisyon başlıkları ve açıklamaları (i18n destekli)
 export const useI18nLovePositions = () => {
   const { getPositionTitle, getPositionDescription } = useLoveTranslations();
-  
+
   return {
     1: {
       title: getPositionTitle(1),
@@ -444,7 +454,7 @@ export const useI18nAllLovePositionMeanings = () => {
   const position2Meanings = useI18nPosition2Meanings();
   const position3Meanings = useI18nPosition3Meanings();
   const position4Meanings = useI18nPosition4Meanings();
-  
+
   return [
     ...position1Meanings,
     ...position2Meanings,

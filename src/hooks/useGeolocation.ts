@@ -1,23 +1,23 @@
 /*
  * DOSYA ANALİZİ - GEOLOCATION HOOK (PRODUCTION-READY)
- * 
+ *
  * BAĞLANTILI DOSYALAR:
  * - src/lib/utils/geolocation.ts (geolocation utility fonksiyonları)
  * - src/app/api/geolocation/route.ts (API endpoint)
  * - src/lib/i18n/config.ts (desteklenen diller)
- * 
+ *
  * DOSYA AMACI:
  * Client-side coğrafi konum tespiti ve dil belirleme
  * Browser geolocation API ve IP tabanlı fallback
- * 
+ *
  * SUPABASE DEĞİŞKENLERİ VE TABLOLARI:
  * - Yok (client-side hook)
- * 
+ *
  * GÜVENLİK ÖZELLİKLERİ:
  * - Permission handling
  * - Error handling
  * - Timeout management
- * 
+ *
  * KULLANIM DURUMU:
  * - GEREKLİ: Client-side coğrafi konum tespiti için
  * - GÜVENLİ: Production-ready with error handling
@@ -55,16 +55,16 @@ function getCachedGeolocation(): GeolocationData | null {
   try {
     const cached = localStorage.getItem(GEOLOCATION_CACHE_KEY);
     if (!cached) return null;
-    
+
     const parsed: GeolocationCache = JSON.parse(cached);
     const now = Date.now();
-    
+
     // Cache süresi dolmuş mu kontrol et
     if (now - parsed.timestamp > CACHE_DURATION) {
       localStorage.removeItem(GEOLOCATION_CACHE_KEY);
       return null;
     }
-    
+
     return parsed.data;
   } catch (error) {
     console.error('Cache read error:', error);
@@ -77,7 +77,7 @@ function setCachedGeolocation(data: GeolocationData): void {
   try {
     const cache: GeolocationCache = {
       data,
-      timestamp: Date.now()
+      timestamp: Date.now(),
     };
     localStorage.setItem(GEOLOCATION_CACHE_KEY, JSON.stringify(cache));
   } catch (error) {
@@ -94,17 +94,17 @@ async function getIPBasedGeolocation(): Promise<GeolocationData | null> {
         'Content-Type': 'application/json',
       },
     });
-    
+
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-    
+
     const result = await response.json();
-    
+
     if (!result.success) {
       throw new Error(result.error || 'Unknown error');
     }
-    
+
     return result.data;
   } catch (error) {
     console.error('IP-based geolocation error:', error);
@@ -114,14 +114,14 @@ async function getIPBasedGeolocation(): Promise<GeolocationData | null> {
 
 // Browser geolocation API ile coğrafi konum tespiti
 async function getBrowserGeolocation(): Promise<GeolocationData | null> {
-  return new Promise((resolve) => {
+  return new Promise(resolve => {
     if (!navigator.geolocation) {
       resolve(null);
       return;
     }
-    
+
     navigator.geolocation.getCurrentPosition(
-      async (position) => {
+      async position => {
         try {
           const response = await fetch('/api/geolocation', {
             method: 'POST',
@@ -133,24 +133,24 @@ async function getBrowserGeolocation(): Promise<GeolocationData | null> {
               longitude: position.coords.longitude,
             }),
           });
-          
+
           if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
           }
-          
+
           const result = await response.json();
-          
+
           if (!result.success) {
             throw new Error(result.error || 'Unknown error');
           }
-          
+
           resolve(result.data);
         } catch (error) {
           console.error('Browser geolocation API error:', error);
           resolve(null);
         }
       },
-      (error) => {
+      error => {
         console.warn('Browser geolocation error:', error);
         resolve(null);
       },
@@ -169,8 +169,10 @@ async function checkPermission(): Promise<PermissionState | null> {
     if (!navigator.permissions) {
       return null;
     }
-    
-    const permission = await navigator.permissions.query({ name: 'geolocation' as PermissionName });
+
+    const permission = await navigator.permissions.query({
+      name: 'geolocation' as PermissionName,
+    });
     return permission.state;
   } catch (error) {
     console.warn('Permission check error:', error);
@@ -185,7 +187,7 @@ export function useGeolocation(): GeolocationHookReturn {
     error: null,
     permission: null,
   });
-  
+
   // Cache'den veri yükle
   useEffect(() => {
     const cached = getCachedGeolocation();
@@ -196,7 +198,7 @@ export function useGeolocation(): GeolocationHookReturn {
         loading: false,
       }));
     }
-    
+
     // Permission durumunu kontrol et
     checkPermission().then(permission => {
       setState(prev => ({
@@ -205,7 +207,7 @@ export function useGeolocation(): GeolocationHookReturn {
       }));
     });
   }, []);
-  
+
   // Coğrafi konum iste
   const requestLocation = useCallback(async () => {
     setState(prev => ({
@@ -213,24 +215,24 @@ export function useGeolocation(): GeolocationHookReturn {
       loading: true,
       error: null,
     }));
-    
+
     try {
       let geolocationData: GeolocationData | null = null;
-      
+
       // Önce browser geolocation API'sini dene
       if (navigator.geolocation && state.permission !== 'denied') {
         geolocationData = await getBrowserGeolocation();
       }
-      
+
       // Browser geolocation başarısız olursa IP tabanlı tespiti dene
       if (!geolocationData) {
         geolocationData = await getIPBasedGeolocation();
       }
-      
+
       if (geolocationData) {
         // Cache'e kaydet
         setCachedGeolocation(geolocationData);
-        
+
         setState(prev => ({
           ...prev,
           data: geolocationData,
@@ -253,7 +255,7 @@ export function useGeolocation(): GeolocationHookReturn {
       }));
     }
   }, [state.permission]);
-  
+
   // Hata temizle
   const clearError = useCallback(() => {
     setState(prev => ({
@@ -261,12 +263,12 @@ export function useGeolocation(): GeolocationHookReturn {
       error: null,
     }));
   }, []);
-  
+
   // Dil belirle
   const getLocale = useCallback((): SupportedLocale => {
     return state.data?.locale || 'en';
   }, [state.data]);
-  
+
   return {
     ...state,
     requestLocation,
@@ -283,11 +285,11 @@ export function useLocaleFromGeolocation(): {
   requestLocale: () => Promise<void>;
 } {
   const { data, loading, error, requestLocation } = useGeolocation();
-  
+
   const requestLocale = useCallback(async () => {
     await requestLocation();
   }, [requestLocation]);
-  
+
   return {
     locale: data?.locale || 'en',
     loading,

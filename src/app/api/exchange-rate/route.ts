@@ -50,16 +50,16 @@ const rateLimitStore = new Map<string, { count: number; resetTime: number }>();
 function checkRateLimit(ip: string): boolean {
   const now = Date.now();
   const userLimit = rateLimitStore.get(ip);
-  
+
   if (!userLimit || now > userLimit.resetTime) {
     rateLimitStore.set(ip, { count: 1, resetTime: now + RATE_LIMIT_DURATION });
     return true;
   }
-  
+
   if (userLimit.count >= MAX_REQUESTS_PER_HOUR) {
     return false;
   }
-  
+
   userLimit.count++;
   return true;
 }
@@ -68,15 +68,15 @@ function checkRateLimit(ip: string): boolean {
 function getClientIP(request: NextRequest): string {
   const forwarded = request.headers.get('x-forwarded-for');
   const realIP = request.headers.get('x-real-ip');
-  
+
   if (forwarded) {
     return forwarded.split(',')[0]?.trim() || '';
   }
-  
+
   if (realIP) {
     return realIP;
   }
-  
+
   return 'unknown';
 }
 
@@ -87,9 +87,9 @@ async function fetchTCMBExchangeRate(): Promise<number> {
       method: 'GET',
       headers: {
         'User-Agent': 'TarotApp/1.0',
-        'Accept': 'application/xml, text/xml, */*'
+        Accept: 'application/xml, text/xml, */*',
       },
-      signal: AbortSignal.timeout(10000) // 10 saniye timeout
+      signal: AbortSignal.timeout(10000), // 10 saniye timeout
     });
 
     if (!response.ok) {
@@ -97,16 +97,18 @@ async function fetchTCMBExchangeRate(): Promise<number> {
     }
 
     const xmlText = await response.text();
-    
+
     // XML parsing - EUR kuru için regex
-    const eurMatch = xmlText.match(/<Currency CurrencyCode="EUR"[^>]*>[\s\S]*?<ForexSelling>([0-9.]+)<\/ForexSelling>/);
-    
+    const eurMatch = xmlText.match(
+      /<Currency CurrencyCode="EUR"[^>]*>[\s\S]*?<ForexSelling>([0-9.]+)<\/ForexSelling>/
+    );
+
     if (!eurMatch || !eurMatch[1]) {
       throw new Error('EUR kuru bulunamadı');
     }
 
     const rate = parseFloat(eurMatch[1]);
-    
+
     if (isNaN(rate) || rate <= 0) {
       throw new Error('Geçersiz EUR kuru');
     }
@@ -127,29 +129,30 @@ function getFallbackExchangeRate(): number {
 // Cache kontrolü
 function isCacheValid(): boolean {
   if (!exchangeRateCache) return false;
-  
+
   const now = Date.now();
-  return (now - exchangeRateCache.timestamp) < CACHE_DURATION;
+  return now - exchangeRateCache.timestamp < CACHE_DURATION;
 }
 
 export async function GET(request: NextRequest) {
   try {
     const ip = getClientIP(request);
-    
+
     // Rate limiting kontrolü
     if (!checkRateLimit(ip)) {
       return NextResponse.json(
-        { 
+        {
           error: 'Rate limit exceeded',
-          message: 'Çok fazla istek gönderildi. Lütfen 1 saat sonra tekrar deneyin.'
+          message:
+            'Çok fazla istek gönderildi. Lütfen 1 saat sonra tekrar deneyin.',
         },
-        { 
+        {
           status: 429,
           headers: {
             'Retry-After': '3600',
             'X-RateLimit-Limit': MAX_REQUESTS_PER_HOUR.toString(),
-            'X-RateLimit-Remaining': '0'
-          }
+            'X-RateLimit-Remaining': '0',
+          },
         }
       );
     }
@@ -162,14 +165,14 @@ export async function GET(request: NextRequest) {
         source: exchangeRateCache.source,
         cached: true,
         timestamp: exchangeRateCache.timestamp,
-        message: 'Cache\'den alındı'
+        message: "Cache'den alındı",
       });
     }
 
     // TCMB'den güncel kuru çek
     let rate: number;
     let source = 'TCMB';
-    
+
     try {
       rate = await fetchTCMBExchangeRate();
     } catch (error) {
@@ -182,7 +185,7 @@ export async function GET(request: NextRequest) {
     exchangeRateCache = {
       rate,
       timestamp: Date.now(),
-      source
+      source,
     };
 
     return NextResponse.json({
@@ -191,17 +194,16 @@ export async function GET(request: NextRequest) {
       source,
       cached: false,
       timestamp: exchangeRateCache.timestamp,
-      message: `${source} API'sinden alındı`
+      message: `${source} API'sinden alındı`,
     });
-
   } catch (error) {
     console.error('Exchange rate API hatası:', error);
-    
+
     return NextResponse.json(
-      { 
+      {
         error: 'Internal server error',
         message: 'Döviz kuru alınırken hata oluştu',
-        fallback: getFallbackExchangeRate()
+        fallback: getFallbackExchangeRate(),
       },
       { status: 500 }
     );
@@ -212,27 +214,28 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   try {
     const ip = getClientIP(request);
-    
+
     // Rate limiting kontrolü
     if (!checkRateLimit(ip)) {
       return NextResponse.json(
-        { 
+        {
           error: 'Rate limit exceeded',
-          message: 'Çok fazla istek gönderildi. Lütfen 1 saat sonra tekrar deneyin.'
+          message:
+            'Çok fazla istek gönderildi. Lütfen 1 saat sonra tekrar deneyin.',
         },
-        { 
+        {
           status: 429,
           headers: {
             'Retry-After': '3600',
             'X-RateLimit-Limit': MAX_REQUESTS_PER_HOUR.toString(),
-            'X-RateLimit-Remaining': '0'
-          }
+            'X-RateLimit-Remaining': '0',
+          },
         }
       );
     }
 
     const body = await request.json();
-    
+
     // Input validation
     if (typeof body.amount !== 'number' || body.amount <= 0) {
       return NextResponse.json(
@@ -246,7 +249,7 @@ export async function POST(request: NextRequest) {
       // TCMB'den güncel kuru çek
       let rate: number;
       let source = 'TCMB';
-      
+
       try {
         rate = await fetchTCMBExchangeRate();
       } catch (error) {
@@ -259,28 +262,27 @@ export async function POST(request: NextRequest) {
       exchangeRateCache = {
         rate,
         timestamp: Date.now(),
-        source
+        source,
       };
     }
 
     const eurAmount = body.amount / exchangeRateCache!.rate;
-    
+
     return NextResponse.json({
       success: true,
       tryAmount: body.amount,
       eurAmount: Math.round(eurAmount * 100) / 100, // 2 ondalık basamak
       rate: exchangeRateCache!.rate,
       source: exchangeRateCache!.source,
-      timestamp: exchangeRateCache!.timestamp
+      timestamp: exchangeRateCache!.timestamp,
     });
-
   } catch (error) {
     console.error('Currency conversion hatası:', error);
-    
+
     return NextResponse.json(
-      { 
+      {
         error: 'Internal server error',
-        message: 'Para birimi dönüşümünde hata oluştu'
+        message: 'Para birimi dönüşümünde hata oluştu',
       },
       { status: 500 }
     );

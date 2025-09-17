@@ -44,15 +44,17 @@ interface ReadingFilters {
   search: string;
 }
 
-export default function ReadingsPage() {
+interface ReadingsPageProps {
+  params: Promise<{ locale: string }>;
+}
+
+export default function ReadingsPage({ params }: ReadingsPageProps) {
   const { user, isAuthenticated, loading: authLoading } = useAuth();
   const { t } = useTranslations();
   const router = useRouter();
-
-  // Pathname'den locale'i çıkar
-  const pathname = window.location.pathname;
-  const locale = pathname.split('/')[1] || 'tr';
-
+  const [resolvedParams, setResolvedParams] = useState<{ locale: string } | null>(null);
+  
+  // Tüm hook'ları koşullu return'den önce tanımla
   const [readings, setReadings] = useState<Reading[]>([]);
   const [loading, setLoading] = useState(true);
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
@@ -240,6 +242,18 @@ export default function ReadingsPage() {
     }
   }, [user, filters, cursor, t]);
 
+  // Params'ı resolve et
+  useEffect(() => {
+    const resolveParams = async () => {
+      const resolvedParamsData = await params;
+      setResolvedParams(resolvedParamsData);
+    };
+    resolveParams();
+  }, [params]);
+
+  // Locale'i güvenli şekilde al
+  const locale = resolvedParams?.locale || 'tr';
+
   // Auth kontrolü
   useEffect(() => {
     if (!authLoading) {
@@ -284,6 +298,18 @@ export default function ReadingsPage() {
       minute: '2-digit',
     });
   };
+
+  // Params yüklenene kadar bekle
+  if (!resolvedParams) {
+    return (
+      <div className='min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white flex items-center justify-center'>
+        <div className='text-center'>
+          <div className='w-16 h-16 border-4 border-purple-500 border-t-transparent rounded-full animate-spin mx-auto mb-4'></div>
+          <p className='text-gray-300'>Yükleniyor...</p>
+        </div>
+      </div>
+    );
+  }
 
   if (authLoading || (loading && readings.length === 0)) {
     return (

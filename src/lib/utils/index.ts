@@ -29,10 +29,10 @@ import { twMerge } from 'tailwind-merge';
 /**
  * Tailwind CSS class'larını birleştirmek için utility fonksiyonu
  * clsx ve tailwind-merge kullanarak class çakışmalarını önler
- * 
+ *
  * @param inputs - Birleştirilecek class değerleri
  * @returns Birleştirilmiş class string'i
- * 
+ *
  * @example
  * cn('px-2 py-1', 'bg-red-500', { 'text-white': isActive })
  * // 'px-2 py-1 bg-red-500 text-white' (eğer isActive true ise)
@@ -44,11 +44,12 @@ export function cn(...inputs: ClassValue[]) {
 /**
  * Basit string birleştirme fonksiyonu (fallback)
  * clsx ve tailwind-merge yoksa kullanılır
- * 
+ *
  * @param classes - Birleştirilecek class string'leri
  * @returns Birleştirilmiş class string'i
  */
-export function simpleCn(...classes: (string | undefined | null | false)[]): string {
+export function simpleCn(
+  ...classes: (string | undefined | null | false)[]
+): string {
   return classes.filter(Boolean).join(' ');
 }
-

@@ -107,13 +107,18 @@ class MemoryRateLimitStore {
 
   constructor() {
     // Clean up expired entries every 5 minutes
-    this.cleanupInterval = setInterval(() => {
-      this.cleanup();
-    }, 5 * 60 * 1000);
+    this.cleanupInterval = setInterval(
+      () => {
+        this.cleanup();
+      },
+      5 * 60 * 1000
+    );
   }
 
   // Get rate limit data
-  get(key: string): { count: number; resetTime: number; windowStart: number } | null {
+  get(
+    key: string
+  ): { count: number; resetTime: number; windowStart: number } | null {
     const data = this.store[key];
     if (!data) return null;
 
@@ -127,12 +132,18 @@ class MemoryRateLimitStore {
   }
 
   // Set rate limit data
-  set(key: string, data: { count: number; resetTime: number; windowStart: number }): void {
+  set(
+    key: string,
+    data: { count: number; resetTime: number; windowStart: number }
+  ): void {
     this.store[key] = data;
   }
 
   // Increment counter
-  increment(key: string, windowMs: number): { count: number; resetTime: number; windowStart: number } {
+  increment(
+    key: string,
+    windowMs: number
+  ): { count: number; resetTime: number; windowStart: number } {
     const now = Date.now();
     const existing = this.get(key);
 
@@ -179,13 +190,15 @@ class RedisRateLimitStore {
   }
 
   // Get rate limit data
-  async get(key: string): Promise<{ count: number; resetTime: number; windowStart: number } | null> {
+  async get(
+    key: string
+  ): Promise<{ count: number; resetTime: number; windowStart: number } | null> {
     try {
       const data = await this.redis.get(key);
       if (!data) return null;
 
       const parsed = JSON.parse(data);
-      
+
       // Check if window has expired
       if (Date.now() > parsed.resetTime) {
         await this.redis.del(key);
@@ -199,7 +212,10 @@ class RedisRateLimitStore {
   }
 
   // Set rate limit data
-  async set(key: string, data: { count: number; resetTime: number; windowStart: number }): Promise<void> {
+  async set(
+    key: string,
+    data: { count: number; resetTime: number; windowStart: number }
+  ): Promise<void> {
     try {
       const ttl = Math.ceil((data.resetTime - Date.now()) / 1000);
       await this.redis.setex(key, ttl, JSON.stringify(data));
@@ -209,7 +225,10 @@ class RedisRateLimitStore {
   }
 
   // Increment counter
-  async increment(key: string, windowMs: number): Promise<{ count: number; resetTime: number; windowStart: number }> {
+  async increment(
+    key: string,
+    windowMs: number
+  ): Promise<{ count: number; resetTime: number; windowStart: number }> {
     try {
       const now = Date.now();
       const existing = await this.get(key);
@@ -244,7 +263,9 @@ export class RateLimiter {
   private rules: Record<string, RateLimitRule>;
 
   constructor(redisClient?: any) {
-    this.store = redisClient ? new RedisRateLimitStore(redisClient) : new MemoryRateLimitStore();
+    this.store = redisClient
+      ? new RedisRateLimitStore(redisClient)
+      : new MemoryRateLimitStore();
     this.rules = DEFAULT_RATE_LIMIT_RULES;
   }
 
@@ -273,12 +294,19 @@ export class RateLimiter {
 
     const allowed = data.count <= rule.maxRequests;
     const remaining = Math.max(0, rule.maxRequests - data.count);
-    const retryAfter = allowed ? undefined : Math.ceil((data.resetTime - Date.now()) / 1000);
+    const retryAfter = allowed
+      ? undefined
+      : Math.ceil((data.resetTime - Date.now()) / 1000);
 
-    const result: { allowed: boolean; remaining: number; resetTime: number; retryAfter?: number } = {
+    const result: {
+      allowed: boolean;
+      remaining: number;
+      resetTime: number;
+      retryAfter?: number;
+    } = {
       allowed,
       remaining,
-      resetTime: data.resetTime
+      resetTime: data.resetTime,
     };
     if (retryAfter !== undefined) result.retryAfter = retryAfter;
     return result;
@@ -300,8 +328,10 @@ export class RateLimiter {
     }
 
     // Generate identifier
-    const identifier = rule.keyGenerator ? rule.keyGenerator(req) : this.generateIdentifier(req);
-    
+    const identifier = rule.keyGenerator
+      ? rule.keyGenerator(req)
+      : this.generateIdentifier(req);
+
     return this.checkLimit(identifier, ruleName, customRule);
   }
 
@@ -313,18 +343,25 @@ export class RateLimiter {
     }
 
     // Fall back to IP address
-    const ip = req.ip || req.connection?.remoteAddress || req.headers['x-forwarded-for'] || 'unknown';
+    const ip =
+      req.ip ||
+      req.connection?.remoteAddress ||
+      req.headers['x-forwarded-for'] ||
+      'unknown';
     return `ip:${ip}`;
   }
 
   // Get rate limit info
-  async getRateLimitInfo(identifier: string, ruleName: string): Promise<RateLimitResult | null> {
+  async getRateLimitInfo(
+    identifier: string,
+    ruleName: string
+  ): Promise<RateLimitResult | null> {
     const rule = this.rules[ruleName];
     if (!rule) return null;
 
     const key = `${ruleName}:${identifier}`;
     const data = await this.store.get(key);
-    
+
     if (!data) {
       return {
         allowed: true,

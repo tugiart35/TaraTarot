@@ -37,17 +37,56 @@ import { createClient } from '@supabase/supabase-js';
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
-if (!supabaseUrl || !supabaseAnonKey) {
-  throw new Error('Missing Supabase environment variables');
-}
-
-export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
-  auth: {
-    autoRefreshToken: true,
-    persistSession: true,
-    detectSessionInUrl: true,
-  },
+console.log('🔍 Supabase Client: Environment kontrolü:', {
+  hasUrl: !!supabaseUrl,
+  hasKey: !!supabaseAnonKey,
+  urlLength: supabaseUrl?.length,
+  keyLength: supabaseAnonKey?.length
 });
+
+// Environment değişkenleri eksikse dummy client oluştur
+const createDummyClient = () => {
+  console.warn('⚠️ Supabase Client: Environment değişkenleri eksik, dummy client oluşturuluyor');
+  
+  return {
+    auth: {
+      getSession: () => Promise.resolve({ data: { session: null }, error: new Error('Environment variables missing') }),
+      onAuthStateChange: () => ({ data: { subscription: { unsubscribe: () => {} } } }),
+      signInWithPassword: () => Promise.resolve({ data: null, error: new Error('Environment variables missing') }),
+      signUp: () => Promise.resolve({ data: null, error: new Error('Environment variables missing') }),
+      signOut: () => Promise.resolve({ error: new Error('Environment variables missing') }),
+      resetPasswordForEmail: () => Promise.resolve({ error: new Error('Environment variables missing') }),
+      resend: () => Promise.resolve({ error: new Error('Environment variables missing') })
+    },
+    from: () => ({
+      select: () => ({
+        eq: () => ({
+          single: () => Promise.resolve({ data: null, error: new Error('Environment variables missing') }),
+          order: () => ({
+            limit: () => Promise.resolve({ data: [], error: new Error('Environment variables missing') })
+          })
+        }),
+        order: () => ({
+          limit: () => Promise.resolve({ data: [], error: new Error('Environment variables missing') })
+        })
+      }),
+      insert: () => Promise.resolve({ data: null, error: new Error('Environment variables missing') }),
+      update: () => Promise.resolve({ data: null, error: new Error('Environment variables missing') }),
+      delete: () => Promise.resolve({ data: null, error: new Error('Environment variables missing') })
+    })
+  };
+};
+
+// Supabase client'ı oluştur
+export const supabase = (!supabaseUrl || !supabaseAnonKey) 
+  ? createDummyClient() as any
+  : createClient(supabaseUrl, supabaseAnonKey, {
+      auth: {
+        autoRefreshToken: true,
+        persistSession: true,
+        detectSessionInUrl: true,
+      },
+    });
 
 // Database types için tip tanımları - Yeni optimize edilmiş şema
 export interface Database {

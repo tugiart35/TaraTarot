@@ -28,11 +28,11 @@ import { locales, defaultLocale, type Locale } from './config';
 export function getLocaleFromPath(pathname: string): Locale {
   const segments = pathname.split('/');
   const firstSegment = segments[1];
-  
+
   if (locales.includes(firstSegment as Locale)) {
     return firstSegment as Locale;
   }
-  
+
   return defaultLocale;
 }
 
@@ -40,33 +40,35 @@ export function getLocaleFromPath(pathname: string): Locale {
 export function removeLocaleFromPath(pathname: string): string {
   const segments = pathname.split('/');
   const firstSegment = segments[1];
-  
+
   if (locales.includes(firstSegment as Locale)) {
     return '/' + segments.slice(2).join('/');
   }
-  
+
   return pathname;
 }
 
 // Locale ile path oluşturma
 export function createLocalizedPath(pathname: string, locale: Locale): string {
   const cleanPath = removeLocaleFromPath(pathname);
-  
+
   if (locale === defaultLocale) {
     return cleanPath === '/' ? '/' : cleanPath;
   }
-  
+
   return `/${locale}${cleanPath === '/' ? '' : cleanPath}`;
 }
 
 // Tüm diller için path'ler oluşturma
-export function createAllLocalizedPaths(pathname: string): Record<Locale, string> {
+export function createAllLocalizedPaths(
+  pathname: string
+): Record<Locale, string> {
   const result = {} as Record<Locale, string>;
-  
-  locales.forEach((locale) => {
+
+  locales.forEach(locale => {
     result[locale] = createLocalizedPath(pathname, locale);
   });
-  
+
   return result;
 }
 
@@ -78,11 +80,21 @@ export function getLanguageSwitcherPaths(currentPath: string): Array<{
   nativeName: string;
 }> {
   const allPaths = createAllLocalizedPaths(currentPath);
-  
-  return locales.map((locale) => ({
+
+  return locales.map(locale => ({
     locale,
     path: allPaths[locale],
-    name: locale === 'tr' ? 'Türkçe' : locale === 'en' ? 'English' : 'Serbian (Latin)',
-    nativeName: locale === 'tr' ? 'Türkçe' : locale === 'en' ? 'English' : 'Srpski (Latinica)',
+    name:
+      locale === 'tr'
+        ? 'Türkçe'
+        : locale === 'en'
+          ? 'English'
+          : 'Serbian (Latin)',
+    nativeName:
+      locale === 'tr'
+        ? 'Türkçe'
+        : locale === 'en'
+          ? 'English'
+          : 'Srpski (Latinica)',
   }));
 }

@@ -71,13 +71,16 @@ export class ErrorHandler {
   /**
    * Handle any error with proper logging and user feedback
    */
-  static handle(error: unknown, context: ErrorContext): {
+  static handle(
+    error: unknown,
+    context: ErrorContext
+  ): {
     userMessage: string;
     shouldRetry: boolean;
     shouldRedirect?: string;
   } {
     const errorInfo = this.parseError(error);
-    
+
     // Log the error
     if (errorInfo.type === 'supabase') {
       logSupabaseError(context.operation || 'unknown', error, context);
@@ -92,7 +95,11 @@ export class ErrorHandler {
   /**
    * Handle Supabase errors specifically
    */
-  static handleSupabase(error: unknown, operation: string, context?: ErrorContext): {
+  static handleSupabase(
+    error: unknown,
+    operation: string,
+    context?: ErrorContext
+  ): {
     userMessage: string;
     shouldRetry: boolean;
   } {
@@ -102,27 +109,27 @@ export class ErrorHandler {
     if ((error as any)?.code === 'PGRST116') {
       return {
         userMessage: 'Kayıt bulunamadı.',
-        shouldRetry: false
+        shouldRetry: false,
       };
     }
 
     if ((error as any)?.code === 'PGRST301') {
       return {
         userMessage: 'Bu işlem için yetkiniz bulunmuyor.',
-        shouldRetry: false
+        shouldRetry: false,
       };
     }
 
     if ((error as any)?.message?.includes('JWT')) {
       return {
         userMessage: 'Oturum süresi dolmuş. Lütfen tekrar giriş yapın.',
-        shouldRetry: false
+        shouldRetry: false,
       };
     }
 
     return {
       userMessage: 'Veritabanı hatası oluştu. Lütfen tekrar deneyin.',
-      shouldRetry: true
+      shouldRetry: true,
     };
   }
 
@@ -138,20 +145,20 @@ export class ErrorHandler {
     if ((error as any)?.message?.includes('Invalid login credentials')) {
       return {
         userMessage: 'E-posta veya şifre hatalı.',
-        shouldRedirect: '/auth'
+        shouldRedirect: '/auth',
       };
     }
 
     if ((error as any)?.message?.includes('Email not confirmed')) {
       return {
         userMessage: 'E-posta adresinizi onaylayın.',
-        shouldRedirect: '/auth'
+        shouldRedirect: '/auth',
       };
     }
 
     return {
       userMessage: 'Giriş yapılamadı. Lütfen tekrar deneyin.',
-      shouldRedirect: '/auth'
+      shouldRedirect: '/auth',
     };
   }
 
@@ -171,7 +178,7 @@ export class ErrorHandler {
       const errorObj = error as { message?: string; code?: string };
       const result: { type: 'supabase'; message: string; code?: string } = {
         type: 'supabase',
-        message: errorObj.message || 'Database error'
+        message: errorObj.message || 'Database error',
       };
       if (errorObj.code !== undefined) result.code = errorObj.code;
       return result;
@@ -181,19 +188,19 @@ export class ErrorHandler {
       if (error.name === 'NetworkError' || error.message.includes('fetch')) {
         return {
           type: 'network',
-          message: error.message
+          message: error.message,
         };
       }
 
       return {
         type: 'unknown',
-        message: error.message
+        message: error.message,
       };
     }
 
     return {
       type: 'unknown',
-      message: String(error)
+      message: String(error),
     };
   }
 
@@ -211,23 +218,23 @@ export class ErrorHandler {
     switch (errorInfo.type) {
       case 'supabase':
         return this.getSupabaseUserMessage(errorInfo.code);
-      
+
       case 'network':
         return {
           userMessage: 'Bağlantı hatası. İnternet bağlantınızı kontrol edin.',
-          shouldRetry: true
+          shouldRetry: true,
         };
-      
+
       case 'validation':
         return {
           userMessage: errorInfo.message || 'Girilen bilgiler geçersiz.',
-          shouldRetry: false
+          shouldRetry: false,
         };
-      
+
       default:
         return {
           userMessage: 'Beklenmeyen bir hata oluştu. Lütfen tekrar deneyin.',
-          shouldRetry: true
+          shouldRetry: true,
         };
     }
   }
@@ -244,26 +251,26 @@ export class ErrorHandler {
       case 'PGRST116':
         return {
           userMessage: 'Kayıt bulunamadı.',
-          shouldRetry: false
+          shouldRetry: false,
         };
-      
+
       case 'PGRST301':
         return {
           userMessage: 'Bu işlem için yetkiniz bulunmuyor.',
           shouldRetry: false,
-          shouldRedirect: '/dashboard'
+          shouldRedirect: '/dashboard',
         };
-      
+
       case '23505':
         return {
           userMessage: 'Bu kayıt zaten mevcut.',
-          shouldRetry: false
+          shouldRetry: false,
         };
-      
+
       default:
         return {
           userMessage: 'Veritabanı hatası oluştu. Lütfen tekrar deneyin.',
-          shouldRetry: true
+          shouldRetry: true,
         };
     }
   }

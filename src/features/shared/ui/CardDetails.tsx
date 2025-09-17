@@ -36,13 +36,17 @@ import React from 'react';
 import type { TarotCard } from '@/features/tarot/lib/a-tarot-helpers';
 import BaseCardDetails from './BaseCardDetails';
 import { getMeaningByCardAndPosition as getLoveMeaningByCardAndPosition } from '@/features/tarot/lib/love/position-meanings-index';
+import { getRelationshipAnalysisMeaningByCardAndPosition } from '@/features/tarot/lib/relationship-analysis/position-meanings-index';
+import { getRelationshipProblemsMeaningByCardAndPosition } from '@/features/tarot/lib/relationship-problems/position-meanings-index';
+import { getMarriageMeaningByCardAndPosition } from '@/features/tarot/lib/marriage/position-meanings-index';
+import { getNewLoverCardMeaning } from '@/features/tarot/lib/new-lover/position-meanings-index';
 
 interface CardDetailsProps {
   card: TarotCard;
   isReversed: boolean;
   position: number | null;
   onClose: () => void;
-  spreadType: 'love';
+  spreadType: 'love' | 'career' | 'problem-solving' | 'situation-analysis' | 'relationship-analysis' | 'relationship-problems' | 'marriage' | 'new-lover';
   positionInfo?: {
     title: string;
     desc: string;
@@ -69,6 +73,13 @@ const CardDetails: React.FC<CardDetailsProps> = ({
 
   const themeSettings = {
     love: { theme: 'pink', maxWidth: 'lg' },
+    career: { theme: 'blue', maxWidth: 'lg' },
+    'problem-solving': { theme: 'purple', maxWidth: 'lg' },
+    'situation-analysis': { theme: 'green', maxWidth: 'lg' },
+    'relationship-analysis': { theme: 'blue', maxWidth: 'lg' },
+    'relationship-problems': { theme: 'yellow', maxWidth: 'lg' },
+    marriage: { theme: 'pink', maxWidth: 'lg' },
+    'new-lover': { theme: 'pink', maxWidth: 'lg' },
   } as const;
 
   const renderCardImage = (card: TarotCard, isReversed: boolean) => (
@@ -115,6 +126,58 @@ const CardDetails: React.FC<CardDetailsProps> = ({
         }
       }
 
+      if (spreadType === 'relationship-analysis' && positionParam) {
+        // İlişki analizi için pozisyon bazlı anlamı al
+        const posMeaning = getRelationshipAnalysisMeaningByCardAndPosition(
+          cardParam,
+          positionParam,
+          isReversedParam
+        );
+
+        if (posMeaning) {
+          return posMeaning.meaning;
+        }
+      }
+
+      if (spreadType === 'relationship-problems' && positionParam) {
+        // İlişki sorunları için pozisyon bazlı anlamı al
+        const posMeaning = getRelationshipProblemsMeaningByCardAndPosition(
+          cardParam,
+          positionParam,
+          isReversedParam
+        );
+
+        if (posMeaning) {
+          return posMeaning.meaning;
+        }
+      }
+
+      if (spreadType === 'marriage' && positionParam) {
+        // Evlilik açılımı için pozisyon bazlı anlamı al
+        const posMeaning = getMarriageMeaningByCardAndPosition(
+          cardParam,
+          positionParam,
+          isReversedParam
+        );
+
+        if (posMeaning) {
+          return posMeaning.meaning;
+        }
+      }
+
+      if (spreadType === 'new-lover' && positionParam) {
+        // Yeni Bir Sevgili açılımı için pozisyon bazlı anlamı al
+        const posMeaning = getNewLoverCardMeaning(
+          cardParam,
+          positionParam,
+          isReversedParam
+        );
+
+        if (posMeaning) {
+          return posMeaning;
+        }
+      }
+
       // Fallback: Pozisyon bazlı anlam bulunamazsa kartın genel anlamını göster
       const fallbackMeaning = isReversedParam
         ? cardParam.meaningTr?.reversed
@@ -142,6 +205,45 @@ const CardDetails: React.FC<CardDetailsProps> = ({
               .map((k: any) => k.trim());
             return keywords;
           }
+        }
+      }
+
+      if (spreadType === 'relationship-analysis' && positionParam) {
+        // İlişki analizi için pozisyon bazlı anahtar kelimeleri al
+        const posMeaning = getRelationshipAnalysisMeaningByCardAndPosition(
+          cardParam,
+          positionParam,
+          isReversedParam
+        );
+
+        if (posMeaning && posMeaning.keywords) {
+          return posMeaning.keywords;
+        }
+      }
+
+      if (spreadType === 'relationship-problems' && positionParam) {
+        // İlişki sorunları için pozisyon bazlı anahtar kelimeleri al
+        const posMeaning = getRelationshipProblemsMeaningByCardAndPosition(
+          cardParam,
+          positionParam,
+          isReversedParam
+        );
+
+        if (posMeaning && posMeaning.keywords) {
+          return posMeaning.keywords;
+        }
+      }
+
+      if (spreadType === 'marriage' && positionParam) {
+        // Evlilik açılımı için pozisyon bazlı anahtar kelimeleri al
+        const posMeaning = getMarriageMeaningByCardAndPosition(
+          cardParam,
+          positionParam,
+          isReversedParam
+        );
+
+        if (posMeaning && posMeaning.keywords) {
+          return posMeaning.keywords;
         }
       }
 

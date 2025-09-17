@@ -1,18 +1,18 @@
 /*
  * Email Servisi - Tarot Okuma PDF'leri için
- * 
+ *
  * Bu dosya email gönderme işlevselliğini içerir.
  * Tarot okuma PDF'lerini otomatik olarak gönderir.
- * 
+ *
  * Bağlı dosyalar:
  * - Nodemailer (email gönderme)
  * - PDF generator servisi
- * 
+ *
  * Geliştirme önerileri:
  * - Email template sistemi
  * - Attachment desteği
  * - Error handling
- * 
+ *
  * Kullanım durumları:
  * - Gerekli: Otomatik PDF gönderimi
  * - Modern: Template tabanlı email
@@ -57,8 +57,8 @@ class EmailService {
         secure: process.env.SMTP_SECURE === 'true',
         auth: {
           user: process.env.SMTP_USER || '',
-          pass: process.env.SMTP_PASS || ''
-        }
+          pass: process.env.SMTP_PASS || '',
+        },
       };
 
       console.log('SMTP Config:', {
@@ -66,7 +66,7 @@ class EmailService {
         port: config.port,
         secure: config.secure,
         user: config.auth.user,
-        hasPassword: !!config.auth.pass
+        hasPassword: !!config.auth.pass,
       });
 
       this.transporter = nodemailer.createTransport(config);
@@ -88,7 +88,7 @@ class EmailService {
         to: emailData.to,
         subject: emailData.subject,
         html: emailData.html,
-        attachments: emailData.attachments
+        attachments: emailData.attachments,
       };
 
       console.log('Sending email to:', emailData.to);
@@ -97,7 +97,7 @@ class EmailService {
         to: mailOptions.to,
         subject: mailOptions.subject,
         hasHtml: !!mailOptions.html,
-        hasAttachments: !!mailOptions.attachments
+        hasAttachments: !!mailOptions.attachments,
       });
 
       const result = await this.transporter.sendMail(mailOptions);
@@ -116,38 +116,41 @@ class EmailService {
     fileName: string
   ): Promise<boolean> {
     const htmlTemplate = this.generateEmailTemplate(readingData, userEmail);
-    
+
     // Numeroloji PDF'i de oluştur
     let attachments = [
       {
         filename: fileName,
         content: pdfBuffer,
-        contentType: 'application/pdf'
-      }
+        contentType: 'application/pdf',
+      },
     ];
 
     // Kullanıcı bilgileri varsa numeroloji PDF'i de ekle
     if (readingData.questions?.personalInfo) {
       try {
         const { pdfGeneratorService } = await import('@/lib/pdf/pdf-generator');
-        const numerologyPdfBuffer = await pdfGeneratorService.generateNumerologyPDF(readingData.questions.personalInfo);
+        const numerologyPdfBuffer =
+          await pdfGeneratorService.generateNumerologyPDF(
+            readingData.questions.personalInfo
+          );
         const numerologyFileName = `numeroloji-analizi-${new Date().toISOString().split('T')[0]}.pdf`;
-        
+
         attachments.push({
           filename: numerologyFileName,
           content: numerologyPdfBuffer,
-          contentType: 'application/pdf'
+          contentType: 'application/pdf',
         });
       } catch (error) {
         console.error('Numeroloji PDF oluşturulamadı:', error);
       }
     }
-    
+
     const emailData: EmailData = {
       to: 'busbuskimkionline@gmail.com', // Sadece admin'e gönder
       subject: `📊 Yeni Tarot Okuma - ${readingData.title || 'Mistik Okuma'}`,
       html: htmlTemplate,
-      attachments: attachments
+      attachments: attachments,
     };
 
     return await this.sendEmail(emailData);
@@ -159,33 +162,47 @@ class EmailService {
     const userName = personalInfo.name || 'Bilinmiyor';
     const userSurname = personalInfo.surname || 'Bilinmiyor';
     const birthDate = personalInfo.birthDate || 'Bilinmiyor';
-    
+
     // Okuma tarihini formatla
-    const readingDate = new Date(readingData.created_at).toLocaleDateString('tr-TR', {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric',
-      hour: '2-digit',
-      minute: '2-digit'
-    });
-    
+    const readingDate = new Date(readingData.created_at).toLocaleDateString(
+      'tr-TR',
+      {
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+      }
+    );
+
     // Okuma türünü Türkçe'ye çevir
     const getReadingTypeText = (type: string) => {
-      switch(type) {
-        case 'love': return 'Aşk Açılımı';
-        case 'general': return 'Genel Okuma';
-        case 'three_card': return 'Üç Kart Açılımı';
-        case 'career': return 'Kariyer Okuması';
-        case 'numerology': return 'Numeroloji';
-        default: return type;
+      switch (type) {
+        case 'love':
+          return 'Aşk Açılımı';
+        case 'general':
+          return 'Genel Okuma';
+        case 'three_card':
+          return 'Üç Kart Açılımı';
+        case 'career':
+          return 'Kariyer Okuması';
+        case 'numerology':
+          return 'Numeroloji';
+        default:
+          return type;
       }
     };
-    
+
     // Seçilen kartları listele
-    const selectedCards = Array.isArray(readingData.cards) ? readingData.cards : [];
-    const cardsList = selectedCards.map((card: any, index: number) => 
-      `${index + 1}. ${card.nameTr || card.name} ${card.isReversed ? '(Ters)' : '(Düz)'}`
-    ).join('<br>');
+    const selectedCards = Array.isArray(readingData.cards)
+      ? readingData.cards
+      : [];
+    const cardsList = selectedCards
+      .map(
+        (card: any, index: number) =>
+          `${index + 1}. ${card.nameTr || card.name} ${card.isReversed ? '(Ters)' : '(Düz)'}`
+      )
+      .join('<br>');
 
     return `
       <!DOCTYPE html>

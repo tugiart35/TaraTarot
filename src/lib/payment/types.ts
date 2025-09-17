@@ -25,7 +25,12 @@
 import type { SubscriptionType, SubscriptionStatus } from '@/types/auth.types';
 
 // Payment providers
-export type PaymentProvider = 'stripe' | 'paypal' | 'apple_pay' | 'google_pay' | 'shopier';
+export type PaymentProvider =
+  | 'stripe'
+  | 'paypal'
+  | 'apple_pay'
+  | 'google_pay'
+  | 'shopier';
 
 // Payment methods
 export type PaymentMethod = 'card' | 'bank_transfer' | 'wallet' | 'crypto';
@@ -34,7 +39,7 @@ export type PaymentMethod = 'card' | 'bank_transfer' | 'wallet' | 'crypto';
 export type Currency = 'USD' | 'EUR' | 'TRY' | 'GBP' | 'JPY';
 
 // Payment status
-export type PaymentStatus = 
+export type PaymentStatus =
   | 'pending'
   | 'processing'
   | 'succeeded'
@@ -207,7 +212,7 @@ export interface PaymentConfig {
 }
 
 // Webhook event types
-export type WebhookEventType = 
+export type WebhookEventType =
   | 'payment.succeeded'
   | 'payment.failed'
   | 'subscription.created'
@@ -268,23 +273,29 @@ export interface PaymentContextType {
   subscription: PaymentSubscription | null;
   paymentMethods: PaymentMethodData[];
   transactions: PaymentTransaction[];
-  
+
   // Pricing data
   pricingTiers: PricingTier[];
-  
+
   // Payment operations
-  createSubscription: (tierId: string, paymentData: PaymentFormData) => Promise<boolean>;
-  updateSubscription: (subscriptionId: string, updates: Partial<PaymentSubscription>) => Promise<boolean>;
+  createSubscription: (
+    tierId: string,
+    paymentData: PaymentFormData
+  ) => Promise<boolean>;
+  updateSubscription: (
+    subscriptionId: string,
+    updates: Partial<PaymentSubscription>
+  ) => Promise<boolean>;
   cancelSubscription: (subscriptionId: string) => Promise<boolean>;
   addPaymentMethod: (paymentData: PaymentFormData) => Promise<boolean>;
   removePaymentMethod: (paymentMethodId: string) => Promise<boolean>;
   setDefaultPaymentMethod: (paymentMethodId: string) => Promise<boolean>;
-  
+
   // Utility functions
   getPaymentPermissions: () => PaymentPermissions;
   canAccessFeature: (feature: string) => boolean;
   getRemainingUsage: (feature: string) => number;
-  
+
   // Loading states
   loading: boolean;
   error: string | null;
@@ -294,7 +305,9 @@ export interface PaymentContextType {
 export interface UsePaymentReturn extends PaymentContextType {
   // Additional hook-specific methods
   refreshPaymentData: () => Promise<void>;
-  validateCoupon: (code: string) => Promise<{ valid: boolean; discount?: number }>;
+  validateCoupon: (
+    code: string
+  ) => Promise<{ valid: boolean; discount?: number }>;
   calculatePrice: (tierId: string, couponCode?: string) => Promise<number>;
 }
 

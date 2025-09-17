@@ -49,8 +49,11 @@ export function reduceToSingleDigit(num: number): number {
 
   // Tek haneye indir
   while (num > 9) {
-    num = num.toString().split('').reduce((sum, digit) => sum + parseInt(digit), 0);
-    
+    num = num
+      .toString()
+      .split('')
+      .reduce((sum, digit) => sum + parseInt(digit), 0);
+
     // Tekrar master sayı kontrolü
     if (num === 11 || num === 22 || num === 33) {
       return num;
@@ -75,7 +78,7 @@ export function sumNameValues(name: string): number {
  */
 export function sumVowelValues(name: string): number {
   const normalizedName = normalizeName(name);
-  
+
   return normalizedName
     .split('')
     .filter(letter => VOWELS.includes(letter as any))
@@ -87,7 +90,7 @@ export function sumVowelValues(name: string): number {
  */
 export function sumConsonantValues(name: string): number {
   const normalizedName = normalizeName(name);
-  
+
   return normalizedName
     .split('')
     .filter(letter => !VOWELS.includes(letter as any))
@@ -107,7 +110,11 @@ export function sumDateDigits(date: string): number {
 /**
  * Tarihten ay, gün, yıl değerlerini çıkarır
  */
-export function extractDateParts(date: string): { month: number; day: number; year: number } {
+export function extractDateParts(date: string): {
+  month: number;
+  day: number;
+  year: number;
+} {
   const parts = date.split('-');
   if (parts.length < 3) {
     throw new Error('Invalid date format. Expected YYYY-MM-DD');
@@ -115,7 +122,7 @@ export function extractDateParts(date: string): { month: number; day: number; ye
   return {
     month: parseInt(parts[1]!),
     day: parseInt(parts[2]!),
-    year: parseInt(parts[0]!)
+    year: parseInt(parts[0]!),
   };
 }
 

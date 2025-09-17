@@ -68,7 +68,7 @@ export class TOTPManager {
   static generateQRCodeURL(user: EnhancedUser, secret: string): string {
     const accountName = user.email || user.id;
     const issuer = this.ISSUER;
-    
+
     return `otpauth://totp/${encodeURIComponent(issuer)}:${encodeURIComponent(accountName)}?secret=${secret}&issuer=${encodeURIComponent(issuer)}&algorithm=${this.ALGORITHM}&digits=${this.DIGITS}&period=${this.PERIOD}`;
   }
 
@@ -99,11 +99,11 @@ export class TOTPManager {
   private static generateRandomSecret(): string {
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';
     let secret = '';
-    
+
     for (let i = 0; i < 32; i++) {
       secret += chars.charAt(Math.floor(Math.random() * chars.length));
     }
-    
+
     return secret;
   }
 }
@@ -129,7 +129,10 @@ export class SMS2FAManager {
   }
 
   // Verify SMS code
-  static async verifySMSCode(phoneNumber: string, code: string): Promise<boolean> {
+  static async verifySMSCode(
+    phoneNumber: string,
+    code: string
+  ): Promise<boolean> {
     try {
       // Burada backend'e bağlanılacak - SMS verification
       const response = await fetch('/api/auth/verify-sms-code', {
@@ -229,19 +232,22 @@ export class Biometric2FAManager {
       if (!response.ok) return false;
 
       const options = await response.json();
-      
+
       const credential = await navigator.credentials.create({
         publicKey: options,
       });
 
       // Send credential to server
-      const verifyResponse = await fetch('/api/auth/verify-biometric-registration', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ credential }),
-      });
+      const verifyResponse = await fetch(
+        '/api/auth/verify-biometric-registration',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ credential }),
+        }
+      );
 
       return verifyResponse.ok;
     } catch {
@@ -266,19 +272,22 @@ export class Biometric2FAManager {
       if (!response.ok) return false;
 
       const options = await response.json();
-      
+
       const credential = await navigator.credentials.get({
         publicKey: options,
       });
 
       // Send credential to server
-      const verifyResponse = await fetch('/api/auth/verify-biometric-credential', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ credential }),
-      });
+      const verifyResponse = await fetch(
+        '/api/auth/verify-biometric-credential',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ credential }),
+        }
+      );
 
       return verifyResponse.ok;
     } catch {
@@ -292,17 +301,20 @@ export class BackupCodesManager {
   // Generate backup codes
   static generateBackupCodes(count: number = 10): string[] {
     const codes: string[] = [];
-    
+
     for (let i = 0; i < count; i++) {
       const code = this.generateRandomCode();
       codes.push(code);
     }
-    
+
     return codes;
   }
 
   // Verify backup code
-  static async verifyBackupCode(userId: string, code: string): Promise<boolean> {
+  static async verifyBackupCode(
+    userId: string,
+    code: string
+  ): Promise<boolean> {
     try {
       // Burada backend'e bağlanılacak - Backup code verification
       const response = await fetch('/api/auth/verify-backup-code', {
@@ -326,11 +338,11 @@ export class BackupCodesManager {
   private static generateRandomCode(): string {
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
     let code = '';
-    
+
     for (let i = 0; i < 8; i++) {
       code += chars.charAt(Math.floor(Math.random() * chars.length));
     }
-    
+
     return code;
   }
 }
@@ -339,8 +351,8 @@ export class BackupCodesManager {
 export class TwoFactorManager {
   // Enable 2FA
   static async enable2FA(
-    userId: string, 
-    method: TwoFactorMethod, 
+    userId: string,
+    method: TwoFactorMethod,
     config: Partial<TwoFactorConfig>
   ): Promise<boolean> {
     try {
@@ -360,7 +372,10 @@ export class TwoFactorManager {
   }
 
   // Disable 2FA
-  static async disable2FA(userId: string, method: TwoFactorMethod): Promise<boolean> {
+  static async disable2FA(
+    userId: string,
+    method: TwoFactorMethod
+  ): Promise<boolean> {
     try {
       // Burada backend'e bağlanılacak - 2FA disable
       const response = await fetch('/api/auth/disable-2fa', {
@@ -420,7 +435,9 @@ export class TwoFactorManager {
         case 'sms':
           // Get user's phone number
           const smsConfig = await this.get2FAStatus(userId);
-          const phoneNumber = smsConfig.find(c => c.method === 'sms')?.phoneNumber;
+          const phoneNumber = smsConfig.find(
+            c => c.method === 'sms'
+          )?.phoneNumber;
           if (phoneNumber) {
             isValid = await SMS2FAManager.verifySMSCode(phoneNumber, code);
           }
@@ -430,7 +447,10 @@ export class TwoFactorManager {
           // Get user's email
           const user = await supabase.auth.getUser();
           if (user.data.user?.email) {
-            isValid = await Email2FAManager.verifyEmailCode(user.data.user.email, code);
+            isValid = await Email2FAManager.verifyEmailCode(
+              user.data.user.email,
+              code
+            );
           }
           break;
 
@@ -453,18 +473,24 @@ export class TwoFactorManager {
     } catch (error) {
       return {
         success: false,
-        error: error instanceof Error ? error.message : '2FA verification failed',
+        error:
+          error instanceof Error ? error.message : '2FA verification failed',
       };
     }
   }
 
   // Send 2FA code
-  static async send2FACode(userId: string, method: TwoFactorMethod): Promise<boolean> {
+  static async send2FACode(
+    userId: string,
+    method: TwoFactorMethod
+  ): Promise<boolean> {
     try {
       switch (method) {
         case 'sms':
           const smsConfig = await this.get2FAStatus(userId);
-          const phoneNumber = smsConfig.find(c => c.method === 'sms')?.phoneNumber;
+          const phoneNumber = smsConfig.find(
+            c => c.method === 'sms'
+          )?.phoneNumber;
           if (phoneNumber) {
             return await SMS2FAManager.sendSMSCode(phoneNumber);
           }

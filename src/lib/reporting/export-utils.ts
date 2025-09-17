@@ -58,7 +58,7 @@ export interface ExportOptions {
 
 // PDF Export Fonksiyonu
 export const exportToPDF = async (
-  data: ReportData, 
+  data: ReportData,
   options: ExportOptions
 ): Promise<Blob> => {
   const doc = new jsPDF();
@@ -101,14 +101,18 @@ export const exportToPDF = async (
   doc.setFontSize(8);
   doc.setFont('helvetica', 'italic');
   doc.text('Bu rapor otomatik olarak oluşturulmuştur.', 20, pageHeight - 20);
-  doc.text(`Oluşturulma Tarihi: ${new Date().toLocaleString('tr-TR')}`, 20, pageHeight - 15);
+  doc.text(
+    `Oluşturulma Tarihi: ${new Date().toLocaleString('tr-TR')}`,
+    20,
+    pageHeight - 15
+  );
 
   return doc.output('blob');
 };
 
 // Excel Export Fonksiyonu
 export const exportToExcel = async (
-  data: ReportData, 
+  data: ReportData,
   _options: ExportOptions
 ): Promise<Blob> => {
   const workbook = XLSX.utils.book_new();
@@ -122,7 +126,7 @@ export const exportToExcel = async (
     ['Toplam Gelir (€)', data.totalRevenue],
     ['Gelir Büyümesi (%)', data.revenueGrowth],
     ['Satılan Krediler', data.creditsSold],
-    ['Kullanılan Krediler', data.creditUsage]
+    ['Kullanılan Krediler', data.creditUsage],
   ];
 
   const summarySheet = XLSX.utils.aoa_to_sheet(summaryData);
@@ -131,7 +135,7 @@ export const exportToExcel = async (
   // Kullanıcı kayıtları
   const userRegData = [
     ['Gün', 'Kayıt Sayısı'],
-    ...data.userRegistrations.map(item => [item.name, item.value])
+    ...data.userRegistrations.map(item => [item.name, item.value]),
   ];
   const userRegSheet = XLSX.utils.aoa_to_sheet(userRegData);
   XLSX.utils.book_append_sheet(workbook, userRegSheet, 'Kullanıcı Kayıtları');
@@ -139,7 +143,7 @@ export const exportToExcel = async (
   // Paket satışları
   const packageData = [
     ['Paket Adı', 'Satış Sayısı'],
-    ...data.packageSales.map(item => [item.name, item.value])
+    ...data.packageSales.map(item => [item.name, item.value]),
   ];
   const packageSheet = XLSX.utils.aoa_to_sheet(packageData);
   XLSX.utils.book_append_sheet(workbook, packageSheet, 'Paket Satışları');
@@ -147,7 +151,7 @@ export const exportToExcel = async (
   // Özellik kullanımı
   const featureData = [
     ['Özellik', 'Kullanım Sayısı'],
-    ...data.featureUsage.map(item => [item.name, item.value])
+    ...data.featureUsage.map(item => [item.name, item.value]),
   ];
   const featureSheet = XLSX.utils.aoa_to_sheet(featureData);
   XLSX.utils.book_append_sheet(workbook, featureSheet, 'Özellik Kullanımı');
@@ -155,7 +159,7 @@ export const exportToExcel = async (
   // Gelir verileri
   const revenueData = [
     ['Tarih', 'Gelir (€)'],
-    ...data.revenueData.map(item => [item.date, item.revenue])
+    ...data.revenueData.map(item => [item.date, item.revenue]),
   ];
   const revenueSheet = XLSX.utils.aoa_to_sheet(revenueData);
   XLSX.utils.book_append_sheet(workbook, revenueSheet, 'Gelir Verileri');
@@ -164,7 +168,12 @@ export const exportToExcel = async (
 };
 
 // Yardımcı fonksiyonlar
-const addRevenueSection = (doc: jsPDF, data: ReportData, yPos: number, _pageWidth: number): number => {
+const addRevenueSection = (
+  doc: jsPDF,
+  data: ReportData,
+  yPos: number,
+  _pageWidth: number
+): number => {
   doc.setFontSize(16);
   doc.setFont('helvetica', 'bold');
   doc.text('Gelir Analizi', 20, yPos);
@@ -178,13 +187,22 @@ const addRevenueSection = (doc: jsPDF, data: ReportData, yPos: number, _pageWidt
   yPos += 10;
   doc.text(`Satılan Krediler: ${data.creditsSold.toLocaleString()}`, 20, yPos);
   yPos += 10;
-  doc.text(`Kullanılan Krediler: ${data.creditUsage.toLocaleString()}`, 20, yPos);
+  doc.text(
+    `Kullanılan Krediler: ${data.creditUsage.toLocaleString()}`,
+    20,
+    yPos
+  );
   yPos += 20;
 
   return yPos;
 };
 
-const addUsersSection = (doc: jsPDF, data: ReportData, yPos: number, _pageWidth: number): number => {
+const addUsersSection = (
+  doc: jsPDF,
+  data: ReportData,
+  yPos: number,
+  _pageWidth: number
+): number => {
   doc.setFontSize(16);
   doc.setFont('helvetica', 'bold');
   doc.text('Kullanıcı Analizi', 20, yPos);
@@ -215,7 +233,12 @@ const addUsersSection = (doc: jsPDF, data: ReportData, yPos: number, _pageWidth:
   return yPos + 10;
 };
 
-const addTransactionsSection = (doc: jsPDF, data: ReportData, yPos: number, _pageWidth: number): number => {
+const addTransactionsSection = (
+  doc: jsPDF,
+  data: ReportData,
+  yPos: number,
+  _pageWidth: number
+): number => {
   doc.setFontSize(16);
   doc.setFont('helvetica', 'bold');
   doc.text('İşlem Analizi', 20, yPos);
@@ -227,18 +250,27 @@ const addTransactionsSection = (doc: jsPDF, data: ReportData, yPos: number, _pag
   yPos += 10;
   doc.text(`Satılan Krediler: ${data.creditsSold.toLocaleString()}`, 20, yPos);
   yPos += 10;
-  doc.text(`Kullanılan Krediler: ${data.creditUsage.toLocaleString()}`, 20, yPos);
+  doc.text(
+    `Kullanılan Krediler: ${data.creditUsage.toLocaleString()}`,
+    20,
+    yPos
+  );
   yPos += 20;
 
   return yPos;
 };
 
-const addComprehensiveSection = (doc: jsPDF, data: ReportData, yPos: number, pageWidth: number): number => {
+const addComprehensiveSection = (
+  doc: jsPDF,
+  data: ReportData,
+  yPos: number,
+  pageWidth: number
+): number => {
   // Tüm bölümleri ekle
   yPos = addRevenueSection(doc, data, yPos, pageWidth);
   yPos = addUsersSection(doc, data, yPos, pageWidth);
   yPos = addTransactionsSection(doc, data, yPos, pageWidth);
-  
+
   return yPos;
 };
 
@@ -253,4 +285,3 @@ export const downloadFile = (blob: Blob, filename: string) => {
   document.body.removeChild(link);
   URL.revokeObjectURL(url);
 };
-

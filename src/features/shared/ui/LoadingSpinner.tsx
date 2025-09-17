@@ -72,7 +72,11 @@ export default function LoadingSpinner({
   );
 
   return fullScreen ? (
-    <div className={wrapperClass} role='dialog' aria-label={t('common.loading')}>
+    <div
+      className={wrapperClass}
+      role='dialog'
+      aria-label={t('common.loading')}
+    >
       {content}
     </div>
   ) : (

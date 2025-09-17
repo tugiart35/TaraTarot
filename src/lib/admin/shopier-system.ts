@@ -31,7 +31,10 @@ Kullanım durumu:
 
 import { supabase } from '@/lib/supabase/client';
 import { logAdminAction, AuditAction, ResourceType } from '@/lib/audit-logger';
-import { createShopierPayment, createTestPayment } from '@/lib/payment/shopier-config';
+import {
+  createShopierPayment,
+  createTestPayment,
+} from '@/lib/payment/shopier-config';
 
 export interface ShopierSettings {
   merchantId: string;
@@ -65,20 +68,29 @@ export class ShopierSystemManager {
         return null;
       }
 
-      const shopierData = settings.reduce((acc, setting) => {
-        acc[setting.key] = setting.value;
-        return acc;
-      }, {} as Record<string, any>);
+      const shopierData = settings.reduce(
+        (acc, setting) => {
+          acc[setting.key] = setting.value;
+          return acc;
+        },
+        {} as Record<string, any>
+      );
 
       return {
         merchantId: shopierData.merchant_id || '',
         apiKey: shopierData.api_key || '',
         apiSecret: shopierData.api_secret || '',
-        testMode: shopierData.test_mode === true || shopierData.test_mode === 'true',
-        callbackUrl: shopierData.callback_url || 'http://localhost:3111/payment/callback',
-        webhookUrl: shopierData.webhook_url || 'http://localhost:3111/api/webhook/shopier',
-        successUrl: shopierData.success_url || 'http://localhost:3111/payment/success',
-        cancelUrl: shopierData.cancel_url || 'http://localhost:3111/payment/cancel'
+        testMode:
+          shopierData.test_mode === true || shopierData.test_mode === 'true',
+        callbackUrl:
+          shopierData.callback_url || 'http://localhost:3111/payment/callback',
+        webhookUrl:
+          shopierData.webhook_url ||
+          'http://localhost:3111/api/webhook/shopier',
+        successUrl:
+          shopierData.success_url || 'http://localhost:3111/payment/success',
+        cancelUrl:
+          shopierData.cancel_url || 'http://localhost:3111/payment/cancel',
       };
     } catch (error) {
       console.error('ShopierSystemManager.getShopierSettings error:', error);
@@ -87,10 +99,14 @@ export class ShopierSystemManager {
   }
 
   // Shopier ayarlarını kaydet
-  static async saveShopierSettings(settings: ShopierSettings): Promise<boolean> {
+  static async saveShopierSettings(
+    settings: ShopierSettings
+  ): Promise<boolean> {
     try {
       // Mevcut kullanıcıyı al
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (!user) {
         throw new Error('User not authenticated');
       }
@@ -100,20 +116,22 @@ export class ShopierSystemManager {
         { category: 'shopier', key: 'api_key', value: settings.apiKey },
         { category: 'shopier', key: 'api_secret', value: settings.apiSecret },
         { category: 'shopier', key: 'test_mode', value: settings.testMode },
-        { category: 'shopier', key: 'callback_url', value: settings.callbackUrl },
+        {
+          category: 'shopier',
+          key: 'callback_url',
+          value: settings.callbackUrl,
+        },
         { category: 'shopier', key: 'webhook_url', value: settings.webhookUrl },
         { category: 'shopier', key: 'success_url', value: settings.successUrl },
-        { category: 'shopier', key: 'cancel_url', value: settings.cancelUrl }
+        { category: 'shopier', key: 'cancel_url', value: settings.cancelUrl },
       ];
 
       // Ayarları kaydet
       for (const setting of settingsToSave) {
-        const { error } = await supabase
-          .from('system_settings')
-          .upsert({
-            ...setting,
-            updated_by: user.id
-          });
+        const { error } = await supabase.from('system_settings').upsert({
+          ...setting,
+          updated_by: user.id,
+        });
 
         if (error) {
           console.error('Error saving shopier setting:', error);
@@ -122,17 +140,21 @@ export class ShopierSystemManager {
       }
 
       // Audit log
-      await logAdminAction('settings_update' as AuditAction, 'system' as ResourceType, {
-        metadata: {
-          shopierSettings: {
-            merchantId: settings.merchantId,
-            testMode: settings.testMode,
-            callbackUrl: settings.callbackUrl,
-            webhookUrl: settings.webhookUrl
+      await logAdminAction(
+        'settings_update' as AuditAction,
+        'system' as ResourceType,
+        {
+          metadata: {
+            shopierSettings: {
+              merchantId: settings.merchantId,
+              testMode: settings.testMode,
+              callbackUrl: settings.callbackUrl,
+              webhookUrl: settings.webhookUrl,
+            },
+            timestamp: new Date().toISOString(),
           },
-          timestamp: new Date().toISOString()
         }
-      });
+      );
 
       return true;
     } catch (error) {
@@ -142,11 +164,13 @@ export class ShopierSystemManager {
   }
 
   // Shopier API bağlantısını test et
-  static async testShopierConnection(settings: ShopierSettings): Promise<ShopierTestResult> {
+  static async testShopierConnection(
+    settings: ShopierSettings
+  ): Promise<ShopierTestResult> {
     try {
       // Test ödeme oluştur
       const testPayment = createTestPayment('test_package', 'test_user');
-      
+
       // Test modunda mock response döndür
       if (settings.testMode) {
         return {
@@ -155,14 +179,14 @@ export class ShopierSystemManager {
           details: {
             testMode: true,
             merchantId: settings.merchantId,
-            testPayment: testPayment
-          }
+            testPayment: testPayment,
+          },
         };
       }
 
       // Gerçek API testi (test modu kapalıysa)
       const paymentResponse = await createShopierPayment(testPayment);
-      
+
       if (paymentResponse.success) {
         return {
           success: true,
@@ -170,8 +194,8 @@ export class ShopierSystemManager {
           details: {
             testMode: false,
             merchantId: settings.merchantId,
-            paymentUrl: paymentResponse.paymentUrl
-          }
+            paymentUrl: paymentResponse.paymentUrl,
+          },
         };
       } else {
         return {
@@ -180,8 +204,8 @@ export class ShopierSystemManager {
           details: {
             testMode: false,
             error: paymentResponse.error,
-            errorCode: paymentResponse.errorCode
-          }
+            errorCode: paymentResponse.errorCode,
+          },
         };
       }
     } catch (error) {
@@ -190,14 +214,16 @@ export class ShopierSystemManager {
         success: false,
         message: `Test hatası: ${(error as Error).message}`,
         details: {
-          error: (error as Error).message
-        }
+          error: (error as Error).message,
+        },
       };
     }
   }
 
   // Webhook endpoint'ini test et
-  static async testWebhookEndpoint(webhookUrl: string): Promise<ShopierTestResult> {
+  static async testWebhookEndpoint(
+    webhookUrl: string
+  ): Promise<ShopierTestResult> {
     try {
       // Test webhook verisi
       const testWebhookData = {
@@ -209,7 +235,7 @@ export class ShopierSystemManager {
         signature: 'test_signature',
         timestamp: new Date().toISOString(),
         package_id: 'test_package',
-        user_id: 'test_user'
+        user_id: 'test_user',
       };
 
       // Webhook endpoint'ini test et
@@ -218,7 +244,7 @@ export class ShopierSystemManager {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(testWebhookData)
+        body: JSON.stringify(testWebhookData),
       });
 
       if (response.ok) {
@@ -227,8 +253,8 @@ export class ShopierSystemManager {
           message: 'Webhook endpoint erişilebilir',
           details: {
             status: response.status,
-            statusText: response.statusText
-          }
+            statusText: response.statusText,
+          },
         };
       } else {
         return {
@@ -236,8 +262,8 @@ export class ShopierSystemManager {
           message: `Webhook endpoint hatası: ${response.status} ${response.statusText}`,
           details: {
             status: response.status,
-            statusText: response.statusText
-          }
+            statusText: response.statusText,
+          },
         };
       }
     } catch (error) {
@@ -246,14 +272,17 @@ export class ShopierSystemManager {
         success: false,
         message: `Webhook test hatası: ${(error as Error).message}`,
         details: {
-          error: (error as Error).message
-        }
+          error: (error as Error).message,
+        },
       };
     }
   }
 
   // Shopier ayarlarını doğrula
-  static validateShopierSettings(settings: ShopierSettings): { isValid: boolean; errors: string[] } {
+  static validateShopierSettings(settings: ShopierSettings): {
+    isValid: boolean;
+    errors: string[];
+  } {
     const errors: string[] = [];
 
     if (!settings.merchantId.trim()) {
@@ -304,7 +333,7 @@ export class ShopierSystemManager {
 
     return {
       isValid: errors.length === 0,
-      errors
+      errors,
     };
   }
 
@@ -318,7 +347,7 @@ export class ShopierSystemManager {
       callbackUrl: 'http://localhost:3111/payment/callback',
       webhookUrl: 'http://localhost:3111/api/webhook/shopier',
       successUrl: 'http://localhost:3111/payment/success',
-      cancelUrl: 'http://localhost:3111/payment/cancel'
+      cancelUrl: 'http://localhost:3111/payment/cancel',
     };
   }
 
@@ -345,4 +374,3 @@ export class ShopierSystemManager {
     }
   }
 }
-

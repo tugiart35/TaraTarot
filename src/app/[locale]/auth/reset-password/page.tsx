@@ -103,24 +103,35 @@ export default function ResetPasswordPage() {
     }
 
     try {
-      // Supabase ile şifre sıfırlama
-      const { error } = await supabase.auth.verifyOtp({
+      // Önce token'ı doğrula
+      const { error: verifyError } = await supabase.auth.verifyOtp({
         token_hash: token,
-        type: type as any,
+        type: type as 'recovery',
       });
 
-      if (error) {
-        console.error('Şifre sıfırlama hatası:', error);
+      if (verifyError) {
+        console.error('Token doğrulama hatası:', verifyError);
         if (
-          error.message.includes('expired') ||
-          error.message.includes('invalid')
+          verifyError.message.includes('expired') ||
+          verifyError.message.includes('invalid')
         ) {
           setError(
             'Şifre sıfırlama linki süresi dolmuş veya geçersiz. Lütfen yeni bir şifre sıfırlama talebi oluşturun.'
           );
         } else {
-          setError('Şifre sıfırlama işlemi başarısız. Lütfen tekrar deneyin.');
+          setError('Token doğrulama başarısız. Lütfen tekrar deneyin.');
         }
+        return;
+      }
+
+      // Token doğrulandıktan sonra şifreyi güncelle
+      const { error: updateError } = await supabase.auth.updateUser({
+        password: password,
+      });
+
+      if (updateError) {
+        console.error('Şifre güncelleme hatası:', updateError);
+        setError('Şifre güncelleme başarısız. Lütfen tekrar deneyin.');
       } else {
         setSuccess(true);
         // 3 saniye sonra giriş sayfasına yönlendir

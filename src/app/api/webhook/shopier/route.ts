@@ -36,19 +36,23 @@ Kodun okunabilirliği, optimizasyonu, yeniden kullanılabilirliği ve güvenliğ
 
 import { NextRequest, NextResponse } from 'next/server';
 import { supabase } from '@/lib/supabase/client';
-import { verifyShopierWebhook, ShopierWebhookData } from '@/lib/payment/shopier-config';
+import {
+  verifyShopierWebhook,
+  ShopierWebhookData,
+} from '@/lib/payment/shopier-config';
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
     console.log('Shopier webhook: Received body:', body);
-    
-    
+
     const signature = request.headers.get('x-shopier-signature');
-    
+
     // Test modunda signature kontrolünü atla
-    const isTestMode = process.env.NODE_ENV === 'development' || body.platform_order_id?.startsWith('TEST_');
-    
+    const isTestMode =
+      process.env.NODE_ENV === 'development' ||
+      body.platform_order_id?.startsWith('TEST_');
+
     if (!signature && !isTestMode) {
       console.error('Shopier webhook: Missing signature');
       return NextResponse.json({ error: 'Missing signature' }, { status: 400 });
@@ -64,19 +68,29 @@ export async function POST(request: NextRequest) {
       signature: signature || '',
       timestamp: body.timestamp || new Date().toISOString(),
       packageId: body.package_id,
-      userId: body.user_id
+      userId: body.user_id,
     };
 
     // Signature doğrulama (test modunda atla)
-    if (!isTestMode && signature && !verifyShopierWebhook(webhookData, signature)) {
+    if (
+      !isTestMode &&
+      signature &&
+      !verifyShopierWebhook(webhookData, signature)
+    ) {
       console.error('Shopier webhook: Invalid signature');
       return NextResponse.json({ error: 'Invalid signature' }, { status: 401 });
     }
 
     // Ödeme başarılı mı kontrol et
     if (webhookData.status !== 'success') {
-      console.log('Shopier webhook: Payment not successful', webhookData.status);
-      return NextResponse.json({ message: 'Payment not successful' }, { status: 200 });
+      console.log(
+        'Shopier webhook: Payment not successful',
+        webhookData.status
+      );
+      return NextResponse.json(
+        { message: 'Payment not successful' },
+        { status: 200 }
+      );
     }
 
     // Duplicate payment kontrolü
@@ -88,25 +102,44 @@ export async function POST(request: NextRequest) {
       .single();
 
     if (existingTransaction) {
-      console.log('Shopier webhook: Duplicate payment detected', webhookData.orderId);
-      return NextResponse.json({ message: 'Payment already processed' }, { status: 200 });
+      console.log(
+        'Shopier webhook: Duplicate payment detected',
+        webhookData.orderId
+      );
+      return NextResponse.json(
+        { message: 'Payment already processed' },
+        { status: 200 }
+      );
     }
 
     // Kullanıcı ID'sini order ID'den çıkar
-    const userId = webhookData.userId || extractUserIdFromOrderId(webhookData.orderId);
+    const userId =
+      webhookData.userId || extractUserIdFromOrderId(webhookData.orderId);
     if (!userId) {
       console.error('Shopier webhook: User ID not found');
       return NextResponse.json({ error: 'User ID not found' }, { status: 400 });
     }
 
     // Paket bilgilerini al
-    const packageId = webhookData.packageId || extractPackageIdFromOrderId(webhookData.orderId);
-    console.log('Shopier webhook: Package ID:', packageId, 'Type:', typeof packageId);
-    console.log('Shopier webhook: webhookData.packageId:', webhookData.packageId);
+    const packageId =
+      webhookData.packageId || extractPackageIdFromOrderId(webhookData.orderId);
+    console.log(
+      'Shopier webhook: Package ID:',
+      packageId,
+      'Type:',
+      typeof packageId
+    );
+    console.log(
+      'Shopier webhook: webhookData.packageId:',
+      webhookData.packageId
+    );
     console.log('Shopier webhook: body.package_id:', body.package_id);
     if (!packageId) {
       console.error('Shopier webhook: Package ID not found');
-      return NextResponse.json({ error: 'Package ID not found' }, { status: 400 });
+      return NextResponse.json(
+        { error: 'Package ID not found' },
+        { status: 400 }
+      );
     }
 
     // Test için basit response - gerçek işlem yapalım
@@ -114,14 +147,14 @@ export async function POST(request: NextRequest) {
       id: 1,
       name: 'Başlangıç Paketi',
       credits: 100,
-      price_try: 50.00
+      price_try: 50.0,
     };
 
     console.log('Shopier webhook: Using test package data:', packageData);
 
     // Bonus kredi hesapla
-    const bonusCredits = packageData.credits >= 500 ? 100 : 
-                        packageData.credits >= 300 ? 30 : 0;
+    const bonusCredits =
+      packageData.credits >= 500 ? 100 : packageData.credits >= 300 ? 30 : 0;
     const totalCredits = packageData.credits + bonusCredits;
 
     // Kullanıcının mevcut kredi bakiyesini al
@@ -133,22 +166,31 @@ export async function POST(request: NextRequest) {
 
     if (profileError || !profile) {
       console.error('Shopier webhook: User profile not found', userId);
-      return NextResponse.json({ error: 'User profile not found' }, { status: 400 });
+      return NextResponse.json(
+        { error: 'User profile not found' },
+        { status: 400 }
+      );
     }
 
     // Kredi bakiyesini güncelle
     const newBalance = (profile.credit_balance || 0) + totalCredits;
-    
+
     const { error: updateError } = await supabase
       .from('profiles')
-      .update({ 
-        credit_balance: newBalance 
+      .update({
+        credit_balance: newBalance,
       })
       .eq('id', userId);
 
     if (updateError) {
-      console.error('Shopier webhook: Failed to update credit balance', updateError);
-      return NextResponse.json({ error: 'Failed to update credit balance' }, { status: 500 });
+      console.error(
+        'Shopier webhook: Failed to update credit balance',
+        updateError
+      );
+      return NextResponse.json(
+        { error: 'Failed to update credit balance' },
+        { status: 500 }
+      );
     }
 
     // Transaction log oluştur
@@ -162,11 +204,14 @@ export async function POST(request: NextRequest) {
         reason: `${packageData.name} satın alındı (${packageData.credits} kredi${bonusCredits > 0 ? ` + ${bonusCredits} bonus` : ''})`,
         ref_type: 'shopier_payment',
         ref_id: webhookData.orderId,
-        description: `${packageData.name} - ${totalCredits} kredi - Shopier`
+        description: `${packageData.name} - ${totalCredits} kredi - Shopier`,
       });
 
     if (transactionError) {
-      console.error('Shopier webhook: Failed to create transaction log', transactionError);
+      console.error(
+        'Shopier webhook: Failed to create transaction log',
+        transactionError
+      );
       // Transaction log hatası kritik değil, devam et
     }
 
@@ -175,18 +220,23 @@ export async function POST(request: NextRequest) {
       userId,
       packageId,
       totalCredits,
-      newBalance
+      newBalance,
     });
 
-    return NextResponse.json({ 
-      message: 'Payment processed successfully',
-      orderId: webhookData.orderId,
-      credits: totalCredits
-    }, { status: 200 });
-
+    return NextResponse.json(
+      {
+        message: 'Payment processed successfully',
+        orderId: webhookData.orderId,
+        credits: totalCredits,
+      },
+      { status: 200 }
+    );
   } catch (error) {
     console.error('Shopier webhook error:', error);
-    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
+    return NextResponse.json(
+      { error: 'Internal server error' },
+      { status: 500 }
+    );
   }
 }
 

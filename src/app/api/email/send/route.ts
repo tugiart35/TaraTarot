@@ -70,8 +70,8 @@ export async function POST(request: NextRequest) {
       secure: smtpSettings.smtp_secure || false,
       auth: {
         user: smtpSettings.smtp_user,
-        pass: smtpSettings.smtp_password
-      }
+        pass: smtpSettings.smtp_password,
+      },
     });
 
     // Verify connection
@@ -90,52 +90,47 @@ export async function POST(request: NextRequest) {
       from: `"${smtpSettings.from_name}" <${smtpSettings.from_email}>`,
       to: to,
       subject: subject,
-      html: emailBody
+      html: emailBody,
     };
 
     const info = await transporter.sendMail(mailOptions);
 
     // Log email
     const supabase = createClient();
-    await supabase
-      .from('email_logs')
-      .insert({
-        to_email: to,
-        subject: subject,
-        status: 'sent',
-        sent_at: new Date().toISOString()
-      });
+    await supabase.from('email_logs').insert({
+      to_email: to,
+      subject: subject,
+      status: 'sent',
+      sent_at: new Date().toISOString(),
+    });
 
     return NextResponse.json({
       success: true,
       message: 'Email sent successfully',
-      messageId: info.messageId
+      messageId: info.messageId,
     });
-
   } catch (error) {
     console.error('Email sending error:', error);
-    
+
     // Log error
     try {
       const supabase = createClient();
-      await supabase
-        .from('email_logs')
-        .insert({
-          to_email: requestBody?.to || 'unknown',
-          subject: requestBody?.subject || 'unknown',
-          status: 'failed',
-          error_message: (error as Error).message,
-          created_at: new Date().toISOString()
-        });
+      await supabase.from('email_logs').insert({
+        to_email: requestBody?.to || 'unknown',
+        subject: requestBody?.subject || 'unknown',
+        status: 'failed',
+        error_message: (error as Error).message,
+        created_at: new Date().toISOString(),
+      });
     } catch (logError) {
       console.error('Error logging email failure:', logError);
     }
 
     return NextResponse.json(
-      { 
-        success: false, 
+      {
+        success: false,
         message: 'Email sending failed',
-        error: (error as Error).message
+        error: (error as Error).message,
       },
       { status: 500 }
     );

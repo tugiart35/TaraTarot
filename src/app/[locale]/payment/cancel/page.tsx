@@ -55,33 +55,34 @@ export default function PaymentCancelPage() {
   };
 
   return (
-    <div className="min-h-screen bg-cosmic-black flex items-center justify-center p-4">
-      <div className="max-w-md w-full">
-        <div className="card p-8 text-center">
-          <div className="mb-6">
-            <XCircle className="h-16 w-16 text-orange-400 mx-auto mb-4" />
-            <h1 className="text-2xl font-bold text-text-celestial mb-2">
+    <div className='min-h-screen bg-cosmic-black flex items-center justify-center p-4'>
+      <div className='max-w-md w-full'>
+        <div className='card p-8 text-center'>
+          <div className='mb-6'>
+            <XCircle className='h-16 w-16 text-orange-400 mx-auto mb-4' />
+            <h1 className='text-2xl font-bold text-text-celestial mb-2'>
               Ödeme İptal Edildi
             </h1>
-            <p className="text-text-mystic mb-4">
-              Ödeme işlemi iptal edildi. Kredi paketinizi tekrar satın alabilirsiniz.
+            <p className='text-text-mystic mb-4'>
+              Ödeme işlemi iptal edildi. Kredi paketinizi tekrar satın
+              alabilirsiniz.
             </p>
           </div>
 
-          <div className="space-y-3">
+          <div className='space-y-3'>
             <button
               onClick={handleGoToPackages}
-              className="w-full btn btn-primary flex items-center justify-center space-x-2"
+              className='w-full btn btn-primary flex items-center justify-center space-x-2'
             >
-              <CreditCard className="h-4 w-4" />
+              <CreditCard className='h-4 w-4' />
               <span>Kredi Paketleri</span>
             </button>
 
             <button
               onClick={handleGoToDashboard}
-              className="w-full btn btn-secondary flex items-center justify-center space-x-2"
+              className='w-full btn btn-secondary flex items-center justify-center space-x-2'
             >
-              <ArrowLeft className="h-4 w-4" />
+              <ArrowLeft className='h-4 w-4' />
               <span>Dashboard'a Dön</span>
             </button>
           </div>

@@ -65,7 +65,7 @@ export async function validateWithMessages<T>(
 ): Promise<{ success: boolean; data?: T; errors?: Record<string, string> }> {
   try {
     const result = schema.safeParse(data);
-    
+
     if (result.success) {
       return { success: true, data: result.data };
     }
@@ -73,9 +73,10 @@ export async function validateWithMessages<T>(
     const messages = await getValidationMessages(locale);
     const errors: Record<string, string> = {};
 
-    result.error.issues.forEach((error) => {
+    result.error.issues.forEach(error => {
       const path = error.path.join('.');
-      errors[path] = messages[error.code as keyof typeof messages] || error.message;
+      errors[path] =
+        messages[error.code as keyof typeof messages] || error.message;
     });
 
     return { success: false, errors };

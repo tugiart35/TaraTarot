@@ -14,38 +14,38 @@ Kullanım Durumu:
 
 // Form bileşenleri
 export { default as TarotFormModal } from './forms/TarotFormModal';
-export type { 
-  PersonalInfo, 
-  UserQuestions, 
-  FormErrors, 
-  FormTheme, 
-  TarotFormModalProps 
+export type {
+  PersonalInfo,
+  UserQuestions,
+  FormErrors,
+  FormTheme,
+  TarotFormModalProps,
 } from './forms/TarotFormModal';
 
 // Modal bileşenleri
 export { default as CreditConfirmModal } from './modals/CreditConfirmModal';
-export type { 
-  ModalTheme, 
-  CreditConfirmModalProps 
+export type {
+  ModalTheme,
+  CreditConfirmModalProps,
 } from './modals/CreditConfirmModal';
 
 export { default as SuccessModal } from './modals/SuccessModal';
-export type { 
-  SuccessModalTheme, 
-  SuccessModalProps 
+export type {
+  SuccessModalTheme,
+  SuccessModalProps,
 } from './modals/SuccessModal';
 
 // Layout bileşenleri
 export { default as TarotReadingLayout } from './layouts/TarotReadingLayout';
-export type { 
-  LayoutTheme, 
-  TarotReadingLayoutProps 
+export type {
+  LayoutTheme,
+  TarotReadingLayoutProps,
 } from './layouts/TarotReadingLayout';
 
 // Utility bileşenleri
 export { TarotReadingSaver } from './utils/TarotReadingSaver';
-export type { 
-  ReadingData, 
-  SaveResult, 
-  SaveReadingParams 
+export type {
+  ReadingData,
+  SaveResult,
+  SaveReadingParams,
 } from './utils/TarotReadingSaver';

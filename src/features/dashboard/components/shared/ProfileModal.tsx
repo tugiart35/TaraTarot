@@ -91,7 +91,7 @@ export default function ProfileModal({
   onCancelEdit,
   onSave,
   onFormChange: _onFormChange,
-  currentLocale
+  currentLocale,
 }: ProfileModalProps) {
   const { t: translate } = useTranslations();
 
@@ -106,7 +106,7 @@ export default function ProfileModal({
       iconColor: 'text-success',
       bgColor: 'bg-success/20',
       label: translate('dashboard.accountSettings', 'Hesap Ayarları'),
-      arrowColor: 'text-success'
+      arrowColor: 'text-success',
     },
     {
       href: `/${currentLocale}/dashboard/packages`,
@@ -114,7 +114,7 @@ export default function ProfileModal({
       iconColor: 'text-gold',
       bgColor: 'bg-gold/20',
       label: translate('dashboard.creditPackages', 'Kredi Paketleri'),
-      arrowColor: 'text-gold'
+      arrowColor: 'text-gold',
     },
     {
       href: `/${currentLocale}/dashboard/credits`,
@@ -122,7 +122,7 @@ export default function ProfileModal({
       iconColor: 'text-info',
       bgColor: 'bg-info/20',
       label: translate('dashboard.creditHistory', 'Kredi Geçmişi'),
-      arrowColor: 'text-info'
+      arrowColor: 'text-info',
     },
     {
       href: `/${currentLocale}/dashboard/readings`,
@@ -130,7 +130,7 @@ export default function ProfileModal({
       iconColor: 'text-purple',
       bgColor: 'bg-purple/20',
       label: translate('dashboard.readingHistory', 'Okuma Geçmişi'),
-      arrowColor: 'text-purple'
+      arrowColor: 'text-purple',
     },
     {
       href: `/${currentLocale}/dashboard/statistics`,
@@ -138,131 +138,164 @@ export default function ProfileModal({
       iconColor: 'text-warning',
       bgColor: 'bg-warning/20',
       label: translate('dashboard.statistics', 'İstatistikler'),
-      arrowColor: 'text-warning'
-    }
+      arrowColor: 'text-warning',
+    },
   ];
 
   return (
-    <div className="fixed inset-0 z-50 bg-cosmic-black/80 flex items-center justify-center p-4">
-      <div className="card w-full max-w-2xl max-h-[90vh] overflow-y-auto">
+    <div className='fixed inset-0 z-50 bg-cosmic-black/80 flex items-center justify-center p-4'>
+      <div className='card w-full max-w-2xl max-h-[90vh] overflow-y-auto'>
         {/* Modal Header */}
-        <div className="p-6 border-b border-cosmic-fog">
-          <div className="flex items-center justify-between">
-            <h2 className="text-heading-2 text-gold">Profil Düzenle</h2>
+        <div className='p-6 border-b border-cosmic-fog'>
+          <div className='flex items-center justify-between'>
+            <h2 className='text-heading-2 text-gold'>Profil Düzenle</h2>
             <button
               onClick={onClose}
-              className="p-2 text-text-muted hover:text-text-celestial hover:bg-crystal-clear rounded-lg transition-colors"
-              aria-label="Modalı kapat"
+              className='p-2 text-text-muted hover:text-text-celestial hover:bg-crystal-clear rounded-lg transition-colors'
+              aria-label='Modalı kapat'
             >
-              <X className="h-5 w-5" />
+              <X className='h-5 w-5' />
             </button>
           </div>
         </div>
 
         {/* Modal Content */}
-        <div className="p-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className='p-6'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
             {/* Personal Information */}
             <div>
-              <h3 className="text-heading-3 text-gold mb-4">Kişisel Bilgiler</h3>
-              <div className="space-y-4">
+              <h3 className='text-heading-3 text-gold mb-4'>
+                Kişisel Bilgiler
+              </h3>
+              <div className='space-y-4'>
                 {/* Ad ve Soyad Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
                   <div>
-                    <label className="block text-sm font-medium text-text-mystic mb-2">Ad *</label>
+                    <label className='block text-sm font-medium text-text-mystic mb-2'>
+                      Ad *
+                    </label>
                     {editing ? (
                       <input
-                        type="text"
+                        type='text'
                         value={editForm.name || editForm.first_name || ''}
-                        onChange={(e) => _onFormChange('name', e.target.value)}
-                        className="form-input w-full"
-                        placeholder="Adınız"
+                        onChange={e => _onFormChange('name', e.target.value)}
+                        className='form-input w-full'
+                        placeholder='Adınız'
                         required
                       />
                     ) : (
-                      <p className="text-text-celestial">{profile?.name || profile?.first_name || profile?.display_name || 'Belirtilmemiş'}</p>
+                      <p className='text-text-celestial'>
+                        {profile?.name ||
+                          profile?.first_name ||
+                          profile?.display_name ||
+                          'Belirtilmemiş'}
+                      </p>
                     )}
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-text-mystic mb-2">Soyad</label>
+                    <label className='block text-sm font-medium text-text-mystic mb-2'>
+                      Soyad
+                    </label>
                     {editing ? (
                       <input
-                        type="text"
+                        type='text'
                         value={editForm.surname || editForm.last_name || ''}
-                        onChange={(e) => _onFormChange('surname', e.target.value)}
-                        className="form-input w-full"
-                        placeholder="Soyadınız"
+                        onChange={e => _onFormChange('surname', e.target.value)}
+                        className='form-input w-full'
+                        placeholder='Soyadınız'
                       />
                     ) : (
-                      <p className="text-text-celestial">{profile?.surname || profile?.last_name || 'Belirtilmemiş'}</p>
+                      <p className='text-text-celestial'>
+                        {profile?.surname ||
+                          profile?.last_name ||
+                          'Belirtilmemiş'}
+                      </p>
                     )}
                   </div>
                 </div>
 
                 {/* Tam Ad */}
                 <div>
-                  <label className="block text-sm font-medium text-text-mystic mb-2">Tam Ad</label>
+                  <label className='block text-sm font-medium text-text-mystic mb-2'>
+                    Tam Ad
+                  </label>
                   {editing ? (
                     <input
-                      type="text"
+                      type='text'
                       value={editForm.full_name || ''}
-                      onChange={(e) => _onFormChange('full_name', e.target.value)}
-                      className="form-input w-full"
-                      placeholder="Tam adınız"
+                      onChange={e => _onFormChange('full_name', e.target.value)}
+                      className='form-input w-full'
+                      placeholder='Tam adınız'
                     />
                   ) : (
-                    <p className="text-text-celestial">{profile?.full_name || 'Belirtilmemiş'}</p>
+                    <p className='text-text-celestial'>
+                      {profile?.full_name || 'Belirtilmemiş'}
+                    </p>
                   )}
                 </div>
 
                 {/* Doğum Tarihi */}
                 <div>
-                  <label className="block text-sm font-medium text-text-mystic mb-2">
-                    <Calendar className="inline h-4 w-4 mr-1" />
+                  <label className='block text-sm font-medium text-text-mystic mb-2'>
+                    <Calendar className='inline h-4 w-4 mr-1' />
                     Doğum Tarihi
                   </label>
                   {editing ? (
                     <input
-                      type="date"
+                      type='date'
                       value={editForm.birth_date || ''}
-                      onChange={(e) => _onFormChange('birth_date', e.target.value)}
-                      className="form-input w-full"
+                      onChange={e =>
+                        _onFormChange('birth_date', e.target.value)
+                      }
+                      className='form-input w-full'
                     />
                   ) : (
-                    <p className="text-text-celestial">
-                      {profile?.birth_date ? new Date(profile.birth_date).toLocaleDateString('tr-TR') : 'Belirtilmemiş'}
+                    <p className='text-text-celestial'>
+                      {profile?.birth_date
+                        ? new Date(profile.birth_date).toLocaleDateString(
+                            'tr-TR'
+                          )
+                        : 'Belirtilmemiş'}
                     </p>
                   )}
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-text-mystic mb-2">E-posta</label>
-                  <p className="text-text-celestial">{user?.email || profile?.email || 'Belirtilmemiş'}</p>
-                  <p className="text-text-muted text-xs mt-1">E-posta adresi değiştirilemez</p>
+                  <label className='block text-sm font-medium text-text-mystic mb-2'>
+                    E-posta
+                  </label>
+                  <p className='text-text-celestial'>
+                    {user?.email || profile?.email || 'Belirtilmemiş'}
+                  </p>
+                  <p className='text-text-muted text-xs mt-1'>
+                    E-posta adresi değiştirilemez
+                  </p>
                 </div>
               </div>
             </div>
 
             {/* Quick Actions */}
             <div>
-              <h3 className="text-heading-3 text-gold mb-4">
+              <h3 className='text-heading-3 text-gold mb-4'>
                 {translate('dashboard.quickAccess', 'Hızlı Erişim')}
               </h3>
-              <div className="space-y-3">
+              <div className='space-y-3'>
                 {quickActions.map((action, index) => {
                   const IconComponent = action.icon;
-                  
+
                   return (
-                    <a 
+                    <a
                       key={index}
-                      href={action.href} 
-                      className="flex items-center justify-between p-3 bg-crystal-clear rounded-lg hover:bg-crystal-clear/80 transition-colors"
+                      href={action.href}
+                      className='flex items-center justify-between p-3 bg-crystal-clear rounded-lg hover:bg-crystal-clear/80 transition-colors'
                     >
-                      <div className="flex items-center space-x-3">
+                      <div className='flex items-center space-x-3'>
                         <div className={`p-2 ${action.bgColor} rounded-lg`}>
-                          <IconComponent className={`h-4 w-4 ${action.iconColor}`} />
+                          <IconComponent
+                            className={`h-4 w-4 ${action.iconColor}`}
+                          />
                         </div>
-                        <span className="text-text-celestial font-medium">
+                        <span className='text-text-celestial font-medium'>
                           {action.label}
                         </span>
                       </div>
@@ -276,20 +309,20 @@ export default function ProfileModal({
         </div>
 
         {/* Modal Footer */}
-        <div className="p-6 border-t border-cosmic-fog">
-          <div className="flex items-center justify-between">
+        <div className='p-6 border-t border-cosmic-fog'>
+          <div className='flex items-center justify-between'>
             {editing ? (
               <>
                 <button
                   onClick={onCancelEdit}
-                  className="px-4 py-2 text-text-muted hover:text-text-celestial hover:bg-crystal-clear rounded-lg transition-colors"
+                  className='px-4 py-2 text-text-muted hover:text-text-celestial hover:bg-crystal-clear rounded-lg transition-colors'
                 >
                   İptal
                 </button>
                 <button
                   onClick={onSave}
                   disabled={saving}
-                  className="btn btn-primary disabled:opacity-50"
+                  className='btn btn-primary disabled:opacity-50'
                 >
                   {saving ? 'Kaydediliyor...' : 'Kaydet'}
                 </button>
@@ -298,14 +331,11 @@ export default function ProfileModal({
               <>
                 <button
                   onClick={onClose}
-                  className="px-4 py-2 text-text-muted hover:text-text-celestial hover:bg-crystal-clear rounded-lg transition-colors"
+                  className='px-4 py-2 text-text-muted hover:text-text-celestial hover:bg-crystal-clear rounded-lg transition-colors'
                 >
                   Kapat
                 </button>
-                <button
-                  onClick={onEdit}
-                  className="btn btn-primary"
-                >
+                <button onClick={onEdit} className='btn btn-primary'>
                   Düzenle
                 </button>
               </>

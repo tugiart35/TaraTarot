@@ -3,15 +3,15 @@
  * Pythagorean numeroloji sistemi için gerekli tipler
  */
 
-export type NumerologyType = 
-  | 'life-path' 
-  | 'expression-destiny' 
-  | 'soul-urge' 
-  | 'personality' 
-  | 'birthday-number' 
-  | 'maturity' 
-  | 'pinnacles-challenges' 
-  | 'personal-cycles' 
+export type NumerologyType =
+  | 'life-path'
+  | 'expression-destiny'
+  | 'soul-urge'
+  | 'personality'
+  | 'birthday-number'
+  | 'maturity'
+  | 'pinnacles-challenges'
+  | 'personal-cycles'
   | 'compatibility';
 
 export interface NumerologyInput {
@@ -52,15 +52,48 @@ export const MASTER_NUMBERS = [11, 22, 33] as const;
 
 // Harf değerleri - Pythagoras sistemi (A=1, B=2, ..., I=9, J=1, ..., R=9, S=1, ..., Z=8)
 export const LETTER_VALUES: Record<string, number> = {
-  'A': 1, 'B': 2, 'C': 3, 'D': 4, 'E': 5, 'F': 6, 'G': 7, 'H': 8, 'I': 9,
-  'J': 1, 'K': 2, 'L': 3, 'M': 4, 'N': 5, 'O': 6, 'P': 7, 'Q': 8, 'R': 9,
-  'S': 1, 'T': 2, 'U': 3, 'V': 4, 'W': 5, 'X': 6, 'Y': 7, 'Z': 8
+  A: 1,
+  B: 2,
+  C: 3,
+  D: 4,
+  E: 5,
+  F: 6,
+  G: 7,
+  H: 8,
+  I: 9,
+  J: 1,
+  K: 2,
+  L: 3,
+  M: 4,
+  N: 5,
+  O: 6,
+  P: 7,
+  Q: 8,
+  R: 9,
+  S: 1,
+  T: 2,
+  U: 3,
+  V: 4,
+  W: 5,
+  X: 6,
+  Y: 7,
+  Z: 8,
 };
 
 // Türkçe karakter normalizasyonu
 export const TURKISH_NORMALIZATION: Record<string, string> = {
-  'Ç': 'C', 'Ş': 'S', 'Ğ': 'G', 'Ö': 'O', 'Ü': 'U', 'İ': 'I', 'ı': 'I',
-  'â': 'A', 'ê': 'E', 'î': 'I', 'ô': 'O', 'û': 'U'
+  Ç: 'C',
+  Ş: 'S',
+  Ğ: 'G',
+  Ö: 'O',
+  Ü: 'U',
+  İ: 'I',
+  ı: 'I',
+  â: 'A',
+  ê: 'E',
+  î: 'I',
+  ô: 'O',
+  û: 'U',
 };
 
 // Sesli harfler (Soul Urge hesaplaması için) - Y her zaman ünsüz kabul edilir

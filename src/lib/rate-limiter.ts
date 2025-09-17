@@ -21,7 +21,11 @@ class ClientRateLimiter {
 
   constructor() {
     // Default configurations
-    this.addConfig('login', { maxAttempts: 5, windowMs: 15 * 60 * 1000, blockDurationMs: 30 * 60 * 1000 }); // 5 attempts per 15min
+    this.addConfig('login', {
+      maxAttempts: 5,
+      windowMs: 15 * 60 * 1000,
+      blockDurationMs: 30 * 60 * 1000,
+    }); // 5 attempts per 15min
     this.addConfig('search', { maxAttempts: 30, windowMs: 60 * 1000 }); // 30 searches per minute
     this.addConfig('admin_action', { maxAttempts: 10, windowMs: 60 * 1000 }); // 10 admin actions per minute
     this.addConfig('credit_update', { maxAttempts: 3, windowMs: 60 * 1000 }); // 3 credit updates per minute
@@ -39,14 +43,17 @@ class ClientRateLimiter {
   /**
    * Check if action is allowed
    */
-  isAllowed(action: string, identifier: string = 'default'): {
+  isAllowed(
+    action: string,
+    identifier: string = 'default'
+  ): {
     allowed: boolean;
     resetTime?: number;
     remainingAttempts?: number;
   } {
     const key = `${action}:${identifier}`;
     const config = this.configs.get(action);
-    
+
     if (!config) {
       return { allowed: true };
     }
@@ -58,19 +65,19 @@ class ClientRateLimiter {
     if (entry?.blockedUntil && entry.blockedUntil > now) {
       return {
         allowed: false,
-        resetTime: entry.blockedUntil
+        resetTime: entry.blockedUntil,
       };
     }
 
     // Initialize or reset if window expired
-    if (!entry || (now - entry.windowStart) > config.windowMs) {
+    if (!entry || now - entry.windowStart > config.windowMs) {
       this.limits.set(key, {
         attempts: 1,
-        windowStart: now
+        windowStart: now,
       });
       return {
         allowed: true,
-        remainingAttempts: config.maxAttempts - 1
+        remainingAttempts: config.maxAttempts - 1,
       };
     }
 
@@ -79,7 +86,7 @@ class ClientRateLimiter {
       entry.attempts++;
       return {
         allowed: true,
-        remainingAttempts: config.maxAttempts - entry.attempts
+        remainingAttempts: config.maxAttempts - entry.attempts,
       };
     }
 
@@ -90,7 +97,7 @@ class ClientRateLimiter {
 
     return {
       allowed: false,
-      resetTime: entry.windowStart + config.windowMs
+      resetTime: entry.windowStart + config.windowMs,
     };
   }
 
@@ -124,7 +131,7 @@ class ClientRateLimiter {
       return Math.max(0, entry.blockedUntil - Date.now());
     }
 
-    return Math.max(0, (entry.windowStart + config.windowMs) - Date.now());
+    return Math.max(0, entry.windowStart + config.windowMs - Date.now());
   }
 
   /**
@@ -135,12 +142,12 @@ class ClientRateLimiter {
     for (const [key, entry] of this.limits.entries()) {
       const action = key.split(':')[0];
       const config = this.configs.get(action!);
-      
+
       if (!config) continue;
 
-      const expired = (now - entry.windowStart) > config.windowMs;
+      const expired = now - entry.windowStart > config.windowMs;
       const unblocked = !entry.blockedUntil || entry.blockedUntil < now;
-      
+
       if (expired && unblocked) {
         this.limits.delete(key);
       }
@@ -156,24 +163,26 @@ if (typeof window !== 'undefined') {
   setInterval(() => rateLimiter.cleanup(), 5 * 60 * 1000);
 }
 
-  /**
-   * Rate limit decorator for functions
-   */
-  export function withRateLimit<T extends unknown[], R>(
-    action: string,
-    fn: (...args: T) => R,
-    getIdentifier?: (...args: T) => string
-  ) {
+/**
+ * Rate limit decorator for functions
+ */
+export function withRateLimit<T extends unknown[], R>(
+  action: string,
+  fn: (...args: T) => R,
+  getIdentifier?: (...args: T) => string
+) {
   return (...args: T): R | { error: string; resetTime?: number } => {
     const identifier = getIdentifier ? getIdentifier(...args) : 'default';
     const check = rateLimiter.isAllowed(action, identifier);
 
     if (!check.allowed) {
       const resetTime = check.resetTime;
-      const minutes = resetTime ? Math.ceil((resetTime - Date.now()) / 60000) : 1;
-      
+      const minutes = resetTime
+        ? Math.ceil((resetTime - Date.now()) / 60000)
+        : 1;
+
       const result: { error: string; resetTime?: number } = {
-        error: `Çok fazla deneme. ${minutes} dakika sonra tekrar deneyin.`
+        error: `Çok fazla deneme. ${minutes} dakika sonra tekrar deneyin.`,
       };
       if (resetTime !== undefined) result.resetTime = resetTime;
       return result;
@@ -183,24 +192,28 @@ if (typeof window !== 'undefined') {
   };
 }
 
-  /**
-   * Rate limit for async functions
-   */
-  export function withAsyncRateLimit<T extends unknown[], R>(
-    action: string,
-    fn: (...args: T) => Promise<R>,
-    getIdentifier?: (...args: T) => string
-  ) {
-  return async (...args: T): Promise<R | { error: string; resetTime?: number }> => {
+/**
+ * Rate limit for async functions
+ */
+export function withAsyncRateLimit<T extends unknown[], R>(
+  action: string,
+  fn: (...args: T) => Promise<R>,
+  getIdentifier?: (...args: T) => string
+) {
+  return async (
+    ...args: T
+  ): Promise<R | { error: string; resetTime?: number }> => {
     const identifier = getIdentifier ? getIdentifier(...args) : 'default';
     const check = rateLimiter.isAllowed(action, identifier);
 
     if (!check.allowed) {
       const resetTime = check.resetTime;
-      const minutes = resetTime ? Math.ceil((resetTime - Date.now()) / 60000) : 1;
-      
+      const minutes = resetTime
+        ? Math.ceil((resetTime - Date.now()) / 60000)
+        : 1;
+
       const result: { error: string; resetTime?: number } = {
-        error: `Çok fazla deneme. ${minutes} dakika sonra tekrar deneyin.`
+        error: `Çok fazla deneme. ${minutes} dakika sonra tekrar deneyin.`,
       };
       if (resetTime !== undefined) result.resetTime = resetTime;
       return result;
@@ -222,7 +235,7 @@ export function useRateLimit(action: string, identifier: string = 'default') {
     checkLimit,
     resetLimit,
     getResetTime,
-    isAllowed: checkLimit().allowed
+    isAllowed: checkLimit().allowed,
   };
 }
 
@@ -231,12 +244,12 @@ export function useRateLimit(action: string, identifier: string = 'default') {
  */
 export function formatResetTime(resetTimeMs: number): string {
   if (resetTimeMs <= 0) return 'Şimdi';
-  
+
   const minutes = Math.ceil(resetTimeMs / 60000);
   if (minutes < 60) {
     return `${minutes} dakika`;
   }
-  
+
   const hours = Math.ceil(minutes / 60);
   return `${hours} saat`;
 }

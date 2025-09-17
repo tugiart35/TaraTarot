@@ -28,13 +28,7 @@ Gereklilik ve Kullanım Durumu:
 
 'use client';
 
-import {
-  Settings,
-  Coins,
-  BookOpen,
-  TrendingUp,
-  History,
-} from 'lucide-react';
+import { Settings, Coins, BookOpen, TrendingUp, History } from 'lucide-react';
 import { useTranslations } from '@/hooks/useTranslations';
 
 interface QuickActionsProps {
@@ -89,24 +83,24 @@ export default function QuickActions({ currentLocale }: QuickActionsProps) {
 
   return (
     <div>
-      <h3 className="text-heading-3 text-gold mb-4">
+      <h3 className='text-heading-3 text-gold mb-4'>
         {translate('dashboard.quickAccess', 'Hızlı Erişim')}
       </h3>
-      <div className="space-y-3">
+      <div className='space-y-3'>
         {quickActions.map((action, index) => {
           const IconComponent = action.icon;
-          
+
           return (
-            <a 
+            <a
               key={index}
-              href={action.href} 
-              className="flex items-center justify-between p-3 bg-crystal-clear rounded-lg hover:bg-crystal-clear/80 transition-colors"
+              href={action.href}
+              className='flex items-center justify-between p-3 bg-crystal-clear rounded-lg hover:bg-crystal-clear/80 transition-colors'
             >
-              <div className="flex items-center space-x-3">
+              <div className='flex items-center space-x-3'>
                 <div className={`p-2 ${action.bgColor} rounded-lg`}>
                   <IconComponent className={`h-4 w-4 ${action.iconColor}`} />
                 </div>
-                <span className="text-text-celestial font-medium">
+                <span className='text-text-celestial font-medium'>
                   {action.label}
                 </span>
               </div>

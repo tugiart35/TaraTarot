@@ -40,10 +40,12 @@ import type { Metadata, Viewport } from 'next';
 
 // Ana uygulama metadata'sı - SEO Optimized
 export const defaultMetadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3111'),
   title: 'Büşbüşkimki - Profesyonel Tarot Okuması ve Numeroloji Analizi',
   description:
     'Profesyonel tarot okuması ve numeroloji analizi ile geleceğinizi keşfedin. Aşk, kariyer ve yaşam sorularınıza mistik cevaplar bulun. Güvenilir mistik rehberlik hizmetleri.',
-  keywords: 'tarot okuması, numeroloji, mistik rehberlik, aşk rehberliği, kariyer rehberliği, günlük rehberlik, ruhani danışmanlık, tarot kartları, sayıların sırrı, gelecek tahmini, kader analizi',
+  keywords:
+    'tarot okuması, numeroloji, mistik rehberlik, aşk rehberliği, kariyer rehberliği, günlük rehberlik, ruhani danışmanlık, tarot kartları, sayıların sırrı, gelecek tahmini, kader analizi',
   authors: [{ name: 'Büşbüşkimki - Mistik Rehberlik' }],
   creator: 'Büşbüşkimki',
   publisher: 'Büşbüşkimki',
@@ -64,7 +66,8 @@ export const defaultMetadata: Metadata = {
     url: 'https://busbuskimki.com',
     siteName: 'Büşbüşkimki - Mistik Rehberlik',
     title: 'Büşbüşkimki - Profesyonel Tarot Okuması ve Numeroloji Analizi',
-    description: 'Profesyonel tarot okuması ve numeroloji analizi ile geleceğinizi keşfedin. Aşk, kariyer ve yaşam sorularınıza mistik cevaplar bulun.',
+    description:
+      'Profesyonel tarot okuması ve numeroloji analizi ile geleceğinizi keşfedin. Aşk, kariyer ve yaşam sorularınıza mistik cevaplar bulun.',
     images: [
       {
         url: '/images/og-image.jpg',
@@ -77,7 +80,8 @@ export const defaultMetadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Büşbüşkimki - Profesyonel Tarot Okuması ve Numeroloji Analizi',
-    description: 'Profesyonel tarot okuması ve numeroloji analizi ile geleceğinizi keşfedin.',
+    description:
+      'Profesyonel tarot okuması ve numeroloji analizi ile geleceğinizi keşfedin.',
     images: ['/images/twitter-card.jpg'],
   },
   alternates: {

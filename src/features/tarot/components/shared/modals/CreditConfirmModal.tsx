@@ -91,7 +91,9 @@ export default function CreditConfirmModal({
 
   return (
     <div className='fixed inset-0 z-50 bg-black/60 flex items-center justify-center'>
-      <div className={`bg-${theme.background} border border-${theme.border} rounded-2xl shadow-2xl p-8 max-w-sm w-full mx-4`}>
+      <div
+        className={`bg-${theme.background} border border-${theme.border} rounded-2xl shadow-2xl p-8 max-w-sm w-full mx-4`}
+      >
         {/* Başlık */}
         <h2 className={`text-xl font-bold text-${theme.text} mb-4 text-center`}>
           {title || t('love.modals.creditConfirm')}
@@ -104,8 +106,12 @@ export default function CreditConfirmModal({
 
         {/* Kredi Miktarı Gösterimi */}
         {creditAmount > 0 && (
-          <div className={`bg-${theme.primary}-800/30 border border-${theme.primary}-500/20 rounded-xl p-4 mb-6 text-center`}>
-            <div className={`text-${theme.primary}-300 text-sm font-medium mb-1`}>
+          <div
+            className={`bg-${theme.primary}-800/30 border border-${theme.primary}-500/20 rounded-xl p-4 mb-6 text-center`}
+          >
+            <div
+              className={`text-${theme.primary}-300 text-sm font-medium mb-1`}
+            >
               Kredi Miktarı
             </div>
             <div className={`text-${theme.primary}-200 text-2xl font-bold`}>
@@ -130,7 +136,7 @@ export default function CreditConfirmModal({
               t('love.modals.confirm')
             )}
           </button>
-          
+
           <button
             onClick={onClose}
             disabled={isLoading}

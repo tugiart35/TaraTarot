@@ -1,0 +1,577 @@
+/*
+info:
+---
+Dosya Amacı:
+- Durum Analizi tarot açılımı ana bileşeni
+- 7 kartlık özel düzen ile durum analizi
+- Kullanıcı kart seçer, pozisyonları yönetir, yorum alır
+
+Bağlı Dosyalar:
+- situation-analysis-config.ts (konfigürasyon)
+- position-meanings-index.ts (pozisyon anlamları)
+- messages/tr.json (çeviriler)
+
+Üretime Hazır mı?:
+- Evet, temel yapı hazır, detaylı özellikler eklenebilir
+---
+
+*/
+
+'use client';
+
+import { getSituationAnalysisMeaningByCardAndPosition } from '@/features/tarot/lib/situation-analysis/position-meanings-index';
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { useToast } from '@/hooks/useToast';
+import { supabase } from '@/lib/supabase/client';
+import {
+  Toast,
+  BaseCardPosition,
+  BaseCardGallery,
+  BaseReadingTypeSelector,
+  CardDetails,
+  BaseCardRenderer,
+  BaseInterpretation,
+} from '@/features/shared/ui';
+import {
+  TarotFormModal,
+  CreditConfirmModal,
+  SuccessModal,
+  TarotReadingLayout,
+  type PersonalInfo,
+  type UserQuestions,
+  type FormTheme,
+  type ModalTheme,
+  type SuccessModalTheme,
+  type LayoutTheme,
+} from '@/features/tarot/components/shared';
+import { useTarotReading } from '@/hooks/useTarotReading';
+import { useTranslations } from '@/hooks/useTranslations';
+import { useReadingCredits } from '@/hooks/useReadingCredits';
+import { useAuth } from '@/hooks/useAuth';
+import { findSpreadById } from '@/lib/constants/tarotSpreads';
+import {
+  SITUATION_ANALYSIS_POSITIONS_INFO,
+  SITUATION_ANALYSIS_POSITIONS_LAYOUT,
+  SITUATION_ANALYSIS_CARD_COUNT,
+} from './situation-analysis-config';
+
+// Okuma tipleri
+import { READING_TYPES, ReadingType, TarotCard } from '@/types/tarot';
+
+// Ana bileşenin props'ları
+interface SituationAnalysisReadingProps {
+  onComplete?: (_cards: TarotCard[], _interpretation: string) => void;
+  onPositionChange?: (_title: string) => void;
+}
+
+// Ana Durum Analizi Açılımı bileşeni
+export default function SituationAnalysisReading({
+  onComplete: _onComplete,
+  onPositionChange: _onPositionChange,
+}: SituationAnalysisReadingProps) {
+  const router = useRouter();
+  const { t } = useTranslations();
+  const { user } = useAuth();
+  const situationAnalysisSpread = findSpreadById('situation-analysis-spread');
+
+  // Kredi yönetimi
+  const detailedCredits = useReadingCredits('SITUATION_ANALYSIS_DETAILED');
+  const writtenCredits = useReadingCredits('SITUATION_ANALYSIS_WRITTEN');
+
+  // DETAILED/WRITTEN için ek state'ler
+  const [personalInfo, setPersonalInfo] = useState<PersonalInfo>({
+    name: '',
+    surname: '',
+    birthDate: '',
+    email: '',
+  });
+  const [questions, setQuestions] = useState<UserQuestions>({
+    concern: { question: '', answer: '' },
+    understanding: { question: '', answer: '' },
+    emotional: { question: '', answer: '' },
+  });
+  const [formErrors, setFormErrors] = useState({
+    name: '',
+    surname: '',
+    birthDate: '',
+    email: '',
+    concern: '',
+    understanding: '',
+    emotional: '',
+    general: '',
+  });
+  const [isSaving] = useState(false);
+  const [showCreditConfirm, setShowCreditConfirm] = useState(false);
+  const [showInfoModal, setShowInfoModal] = useState(false);
+  const [isSavingReading, setIsSavingReading] = useState(false);
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+
+  // useTarotReading hook'unu kullan
+  const {
+    selectedCards,
+    showCardDetails,
+    isReversed,
+    deck,
+    currentPosition,
+    handleCardSelect,
+    handleCardDetails,
+    setShowCardDetails,
+    shuffleDeck,
+    interpretationRef,
+    userQuestion,
+    selectedReadingType,
+    setSelectedReadingType,
+  } = useTarotReading({
+    config: {
+      cardCount: SITUATION_ANALYSIS_CARD_COUNT,
+      positionsInfo: SITUATION_ANALYSIS_POSITIONS_INFO,
+    },
+    onComplete: (_cards, _interpretation) => {
+      // Durum analizi açılımı tamamlandı
+    },
+    onPositionChange: _title => {
+      // Pozisyon değişti
+    },
+  });
+
+  // State'ler
+  const { toast, showToast, hideToast } = useToast();
+  const [startTime] = useState<number>(Date.now());
+
+  // Pozisyona özel kart anlamını al
+  const getSituationAnalysisCardMeaning = (
+    card: TarotCard | null,
+    position: number,
+    isReversed: boolean
+  ): string => {
+    if (!card) {
+      return '';
+    }
+    const meaning = getSituationAnalysisMeaningByCardAndPosition(card, position.toString(), isReversed);
+    if (!meaning) {
+      return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
+    }
+    return meaning.meaning;
+  };
+
+  // Basit yorum oluştur
+  const generateBasicInterpretation = (): string => {
+    const cards = selectedCards as TarotCard[];
+    if (
+      selectedCards.length !== SITUATION_ANALYSIS_CARD_COUNT ||
+      selectedCards.some(c => !c)
+    ) {
+      return 'Tüm kartları seçmeden yorum oluşturulamaz.';
+    }
+    let interpretation = `🔍 **Durum Analizi Açılımı**\n\n`;
+    if (userQuestion.trim()) {
+      interpretation += `**Sevgili danışan,** durum analizi "${userQuestion}" için özel hazırlanmış analiz:\n\n`;
+    }
+    SITUATION_ANALYSIS_POSITIONS_INFO.forEach((posInfo, index) => {
+      const card = cards[index];
+      const reversed = !!isReversed[index];
+      if (card) {
+        interpretation += `**${posInfo.id}. ${posInfo.title}: ${card.nameTr}** (${reversed ? 'Ters' : 'Düz'})\n*${posInfo.desc}*\n${getSituationAnalysisCardMeaning(card, posInfo.id, reversed)}\n\n`;
+      }
+    });
+    interpretation += `💫 **${t('tarotPage.situationAnalysisSpread.summary')}:**\n"${t('tarotPage.situationAnalysisSpread.summaryText')}"`;
+    return interpretation;
+  };
+
+  // Okuma tipi seçildiğinde çalışacak fonksiyon
+  const handleReadingTypeSelect = async (type: ReadingType | string) => {
+    if (type === READING_TYPES.DETAILED || type === READING_TYPES.WRITTEN) {
+      setSelectedReadingType(type as ReadingType);
+      setShowInfoModal(true); // Bilgilendirme modal'ını göster
+      return;
+    }
+    setSelectedReadingType(type as ReadingType);
+  };
+
+  // Okumayı kaydetme fonksiyonu
+  const handleSaveReading = async () => {
+    setIsSavingReading(true);
+    try {
+      // Basit okuma için sadece sayaç kaydı
+      if (selectedReadingType === READING_TYPES.SIMPLE) {
+        // Basit okuma sayacı için minimal kayıt
+        const simpleReadingData = {
+          userId: 'anonymous-user',
+          readingType: 'simple',
+          cards: { selectedCards: [] }, // Boş kart listesi
+          interpretation: 'Basit okuma - sadece sayaç',
+          question: { type: 'simple' },
+          status: 'completed',
+          title: 'Basit Okuma',
+          cost_credits: 0, // Ücretsiz
+          admin_notes: 'Simple reading counter',
+        };
+
+        // Database'e kaydet
+        const saveResult = await saveReadingToSupabase(simpleReadingData);
+        if (saveResult.success) {
+          console.log('Basit okuma sayacı kaydedildi:', saveResult.id);
+        }
+
+        showToast('Basit okuma tamamlandı!', 'success');
+        router.push('/');
+        return;
+      }
+
+      // DETAILED/WRITTEN için backend optimizasyon şemasına uygun kaydetme
+      if (
+        selectedReadingType === READING_TYPES.DETAILED ||
+        selectedReadingType === READING_TYPES.WRITTEN
+      ) {
+        const duration = Date.now() - startTime;
+
+        // Standardize edilmiş veri yapısı
+        const readingData = {
+          userId: user?.id || 'anonymous-user',
+          readingType: 'situation-analysis',
+          status: 'completed',
+          title: 'Durum Analizi Açılımı - Detaylı Kişisel Okuma',
+          interpretation: generateBasicInterpretation(),
+          cards: {
+            selectedCards: selectedCards.map(card => ({
+              id: card?.id,
+              name: card?.name,
+              nameTr: card?.nameTr,
+              isReversed: isReversed[selectedCards.indexOf(card)],
+            })),
+          },
+          questions: {
+            type: selectedReadingType,
+            concern: questions.concern,
+            understanding: questions.understanding,
+            emotional: questions.emotional,
+          },
+          metadata: {
+            duration,
+            platform: 'web',
+          },
+          timestamp: Date.now(),
+        };
+
+        // Database'e kaydet
+        const saveResult = await saveReadingToSupabase(readingData);
+        if (saveResult.success) {
+          console.log('Durum analizi okuması kaydedildi:', saveResult.id);
+          
+          // Email gönderimi
+          try {
+            const emailResponse = await fetch('/api/send-reading-email', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                readingId: saveResult.id,
+              }),
+            });
+
+            if (emailResponse.ok) {
+              console.log('✅ Email gönderimi başarılı');
+            } else {
+              console.error('❌ Email gönderimi başarısız');
+            }
+          } catch (error) {
+            console.error('❌ Email gönderimi hatası:', error);
+          }
+
+          showToast('Okumanız başarıyla kaydedildi!', 'success');
+        } else {
+          console.error('Okuma kaydetme hatası:', saveResult.error);
+          showToast('Okuma kaydedilirken bir hata oluştu.', 'error');
+        }
+
+        // Başarı modal'ını göster
+        setShowSuccessModal(true);
+
+        // 3 saniye sonra modal'ı kapat ve ana sayfaya yönlendir
+        setTimeout(() => {
+          setShowSuccessModal(false);
+          router.push('/');
+        }, 3000);
+        return;
+      }
+    } catch (error) {
+      console.error('Okuma kaydetme hatası:', error);
+      showToast('Okuma kaydedilirken bir hata oluştu.', 'error');
+    } finally {
+      setIsSavingReading(false);
+    }
+  };
+
+  // Supabase'e okuma kaydetme fonksiyonu
+  const saveReadingToSupabase = async (readingData: any) => {
+    try {
+      // Sadece giriş yapmış kullanıcılar için veri sakla
+      if (!user?.id) {
+        console.log('Guest kullanıcı - veri saklanmayacak');
+        return {
+          success: true,
+          id: 'guest-session',
+          userId: 'guest',
+          message: 'Guest kullanıcı için veri saklanmadı',
+        };
+      }
+
+      console.log('Okuma verileri Supabase e kaydediliyor:', {
+        userId: user.id,
+        readingType: readingData.readingType,
+        cardsCount: readingData.cards.selectedCards.length,
+        hasQuestions: !!readingData.questions,
+      });
+
+      // Kredi düş + okuma kaydet (atomik) — RPC
+      const costCredits =
+        selectedReadingType === READING_TYPES.DETAILED
+          ? detailedCredits.creditStatus.requiredCredits
+          : selectedReadingType === READING_TYPES.WRITTEN
+            ? writtenCredits.creditStatus.requiredCredits
+            : 0;
+
+      const { data: rpcResult, error: rpcError } = await supabase.rpc(
+        'fn_create_reading_with_debit',
+        {
+          p_user_id: user.id,
+          p_reading_type: readingData.readingType,
+          p_spread_name: 'Durum Analizi Yayılımı',
+          p_title: readingData.title || 'Durum Analizi Açılımı',
+          p_interpretation: readingData.interpretation,
+          p_cards: readingData.cards.selectedCards,
+          p_questions: readingData.questions,
+          p_cost_credits: costCredits,
+          p_metadata: {
+            duration: readingData.metadata.duration,
+            platform: readingData.metadata.platform,
+          },
+          p_idempotency_key: `reading_${user.id}_${readingData.timestamp}`,
+        }
+      );
+
+      if (rpcError) {
+        console.error('RPC okuma kayıt hatası:', rpcError);
+        return { success: false, error: rpcError };
+      }
+
+      console.log('Okuma başarıyla kaydedildi:', rpcResult?.id);
+      return { success: true, id: rpcResult?.id };
+    } catch (error) {
+      console.error('Okuma kaydetme hatası:', error);
+      return {
+        success: false,
+        error: error instanceof Error ? error.message : 'Bilinmeyen hata',
+      };
+    }
+  };
+
+  if (!situationAnalysisSpread) {
+    return (
+      <div className='text-red-500'>
+        Durum Analizi Açılımı konfigürasyonu bulunamadı. Lütfen tarotSpreads.ts dosyasını
+        kontrol edin.
+      </div>
+    );
+  }
+
+  // Tema tanımları
+  const formTheme: FormTheme = 'green' as FormTheme;
+  const modalTheme: ModalTheme = 'green' as ModalTheme;
+  const successModalTheme: SuccessModalTheme = 'green' as SuccessModalTheme;
+  const layoutTheme: LayoutTheme = 'green' as LayoutTheme;
+
+  return (
+    <TarotReadingLayout theme={layoutTheme}>
+      {toast && (
+        <Toast message={toast.message} type={toast.type} onClose={hideToast} />
+      )}
+      
+      {/* Okuma Tipi Seçici */}
+      <BaseReadingTypeSelector
+        onTypeSelect={handleReadingTypeSelect}
+        selectedType={selectedReadingType}
+        readingTypes={READING_TYPES}
+        readingType='SITUATION_ANALYSIS_DETAILED'
+        theme='green'
+      />
+
+      {/* Kart Seçimi */}
+      {selectedReadingType && (
+        <div className='space-y-6'>
+          {/* Kart Galerisi */}
+          <BaseCardGallery
+            deck={deck}
+            selectedCards={selectedCards}
+            onCardSelect={handleCardSelect}
+            nextPosition={currentPosition}
+            onShuffleDeck={shuffleDeck}
+            canSelectCards={true}
+            theme='green'
+            translations={{
+              nextPosition: t('tarotPage.nextPosition'),
+              allPositionsFull: t('tarotPage.allPositionsFull'),
+              shuffle: t('tarotPage.shuffle'),
+              scrollToSeeAll: t('tarotPage.scrollToSeeAll'),
+              emptyDeck: t('tarotPage.emptyDeck'),
+            }}
+            renderCard={(card, props) => (
+              <BaseCardRenderer
+                card={card}
+                theme='green'
+                size='large'
+                mode='gallery'
+                {...props}
+              />
+            )}
+          />
+
+          {/* Kart Pozisyonları */}
+          <div className='relative w-full h-full min-h-[400px]'>
+            {SITUATION_ANALYSIS_POSITIONS_LAYOUT.map((position, idx) => (
+              <BaseCardPosition
+                key={position.id}
+                position={{
+                  id: idx,
+                  className: position.className,
+                }}
+                card={selectedCards[idx] || null}
+                isReversed={isReversed[idx] || false}
+                onCardClick={() => handleCardDetails(selectedCards[idx])}
+                positionInfo={
+                  SITUATION_ANALYSIS_POSITIONS_INFO[idx] ?? {
+                    title: `Pozisyon ${position.id}`,
+                    desc: 'Kart pozisyonu',
+                  }
+                }
+                renderCard={(card, props) => (
+                  <BaseCardRenderer
+                    card={card}
+                    theme='green'
+                    size='large'
+                    mode='position'
+                    {...props}
+                  />
+                )}
+                colorScheme='green'
+              />
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Yorum */}
+      {selectedCards.filter(c => c !== null).length === SITUATION_ANALYSIS_CARD_COUNT &&
+        selectedReadingType && (
+          <div ref={interpretationRef} className='space-y-6'>
+            <BaseInterpretation
+              cards={selectedCards}
+              isReversed={isReversed}
+              theme='green'
+              title='Durum Analizi Açılımı Yorumu'
+              icon='🔍'
+              badgeText='DURUM ANALİZİ'
+              badgeColor='bg-green-500/20 text-green-400'
+              positionsInfo={SITUATION_ANALYSIS_POSITIONS_INFO.map((pos, idx) => ({
+                id: idx,
+                title: pos.title,
+                description: pos.desc,
+              }))}
+              getPositionSpecificInterpretation={(card, position, isReversed) =>
+                getSituationAnalysisCardMeaning(card, position, isReversed)
+              }
+            />
+
+            {/* Okumayı Kaydet Butonu - Sadece DETAILED/WRITTEN için */}
+            {(selectedReadingType === READING_TYPES.DETAILED ||
+              selectedReadingType === READING_TYPES.WRITTEN) && (
+              <div className='flex justify-center mt-8'>
+                <button
+                  onClick={handleSaveReading}
+                  disabled={isSavingReading}
+                  className='px-8 py-4 bg-gradient-to-r from-green-600 to-emerald-500 hover:from-green-700 hover:to-emerald-600 text-white font-semibold rounded-2xl transition-all disabled:opacity-60 disabled:cursor-not-allowed shadow-lg'
+                >
+                  {isSavingReading
+                    ? t('situationAnalysis.modals.savingReading')
+                    : t('situationAnalysis.modals.saveReading')}
+                </button>
+              </div>
+            )}
+          </div>
+        )}
+
+      {/* Shared Modal'lar */}
+      <SuccessModal
+        isOpen={showSuccessModal}
+        onClose={() => setShowSuccessModal(false)}
+        theme={successModalTheme}
+        title={t('situationAnalysis.modals.successTitle')}
+        message={t('situationAnalysis.modals.successMessage')}
+      />
+
+      <TarotFormModal
+        isOpen={showInfoModal}
+        onClose={() => {
+          setShowInfoModal(false);
+          setSelectedReadingType(null);
+        }}
+        onSave={async () => setShowInfoModal(false)}
+        theme={formTheme}
+        personalInfo={personalInfo}
+        setPersonalInfo={setPersonalInfo}
+        questions={questions}
+        setQuestions={setQuestions}
+        formErrors={formErrors}
+        setFormErrors={setFormErrors}
+        isSaving={isSaving}
+        readingType={selectedReadingType || 'SIMPLE'}
+        spreadInfo={{
+          title: t('situationAnalysis.modals.infoTitle'),
+          aboutSpread: t('situationAnalysis.modals.aboutSpread'),
+          aboutSpreadText: t('situationAnalysis.modals.aboutSpreadText'),
+          cardCount: t('situationAnalysis.modals.cardCount'),
+          cardCountText: t('situationAnalysis.modals.cardCountText'),
+          process: t('situationAnalysis.modals.process'),
+          steps: [
+            t('situationAnalysis.modals.step1'),
+            t('situationAnalysis.modals.step2'),
+            t('situationAnalysis.modals.step3'),
+            t('situationAnalysis.modals.step4'),
+          ],
+        }}
+      />
+
+      <CreditConfirmModal
+        isOpen={showCreditConfirm}
+        onClose={() => setShowCreditConfirm(false)}
+        onConfirm={async () => {
+          setShowCreditConfirm(false);
+        }}
+        theme={modalTheme}
+        title={t('situationAnalysis.modals.creditConfirm')}
+        message={t('situationAnalysis.modals.creditConfirmMessage')}
+        isProcessing={isSaving}
+        confirmText={t('situationAnalysis.modals.confirm')}
+        cancelText={t('situationAnalysis.modals.cancel')}
+        processingText={t('situationAnalysis.modals.processing')}
+      />
+
+        {/* Kart Detayları Modal'ı */}
+        {showCardDetails && (
+          <CardDetails
+          card={showCardDetails}
+          isReversed={false}
+            spreadType='situation-analysis'
+          position={0}
+              positionInfo={{
+            title: 'Kart Detayı',
+            desc: 'Seçilen kartın detayları',
+          }}
+          onClose={() => setShowCardDetails(null)}
+        />
+      )}
+    </TarotReadingLayout>
+  );
+}

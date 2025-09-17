@@ -1,14 +1,14 @@
 /*
  * DOSYA ANALİZİ - ENHANCED EMAIL TEST ENDPOINT
- * 
+ *
  * BAĞLANTILI DOSYALAR:
  * - src/lib/email/email-service.ts (email gönderme servisi)
  * - src/lib/pdf/pdf-generator.ts (PDF oluşturma servisi)
- * 
+ *
  * DOSYA AMACI:
  * Enhanced email test - Kullanıcı bilgileri ve detaylı bilgilerle
  * Geliştirme ve test amaçlı kullanım
- * 
+ *
  * KULLANIM DURUMU:
  * - TEST: Enhanced email oluşturma ve gönderimi
  * - GÜVENLİ: Production-ready with security
@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
     const { userEmail } = body;
-    
+
     // Test okuma verisi (Enhanced tarzında)
     const readingData = {
       id: 'enhanced-test-reading-123',
@@ -31,10 +31,20 @@ export async function POST(request: NextRequest) {
       title: 'Aşk Açılımı - Detaylı Kişisel Okuma',
       spread_name: 'Aşk Yayılımı',
       cards: [
-        { id: 51, name: 'Kılıçlar İkilisi', nameTr: 'Kılıçlar İkilisi', isReversed: false },
+        {
+          id: 51,
+          name: 'Kılıçlar İkilisi',
+          nameTr: 'Kılıçlar İkilisi',
+          isReversed: false,
+        },
         { id: 13, name: 'Ölüm', nameTr: 'Ölüm', isReversed: false },
-        { id: 27, name: 'Kadehler Altılısı', nameTr: 'Kadehler Altılısı', isReversed: false },
-        { id: 5, name: 'Aziz', nameTr: 'Aziz', isReversed: true }
+        {
+          id: 27,
+          name: 'Kadehler Altılısı',
+          nameTr: 'Kadehler Altılısı',
+          isReversed: false,
+        },
+        { id: 5, name: 'Aziz', nameTr: 'Aziz', isReversed: true },
       ],
       interpretation: `❤️ **Aşk Açılımı**
 
@@ -61,36 +71,39 @@ Bu açılım, Kılıçlar İkilisi kartının temsil ettiği kişiyle olan iliş
           name: 'Ahmet',
           email: userEmail || 'test@example.com',
           surname: 'Yılmaz',
-          birthDate: '1993-11-11'
+          birthDate: '1993-11-11',
         },
         userQuestions: {
           concern: {
             question: 'Aşk hayatınızda sizi en çok endişelendiren konu nedir?',
-            answer: 'Gelecekteki ilişkimin nasıl olacağı konusunda endişeliyim.'
+            answer:
+              'Gelecekteki ilişkimin nasıl olacağı konusunda endişeliyim.',
           },
           understanding: {
             question: 'Bu aşk açılımı ile neyi anlamak istiyorsunuz?',
-            answer: 'Mevcut ilişkimin potansiyelini ve geleceğini öğrenmek istiyorum.'
+            answer:
+              'Mevcut ilişkimin potansiyelini ve geleceğini öğrenmek istiyorum.',
           },
           emotional: {
             question: 'Şu anda duygusal olarak nasıl hissediyorsunuz?',
-            answer: 'Karışık duygular içindeyim, hem umutlu hem de endişeliyim.'
-          }
-        }
+            answer:
+              'Karışık duygular içindeyim, hem umutlu hem de endişeliyim.',
+          },
+        },
       },
       status: 'completed',
       created_at: new Date().toISOString(),
       cost_credits: 50,
-      admin_notes: 'Test okuma - Enhanced email oluşturma'
+      admin_notes: 'Test okuma - Enhanced email oluşturma',
     };
 
     console.log('Enhanced email ile PDF oluşturuluyor...');
-    
+
     // PDF oluştur
     const pdfBuffer = await pdfGeneratorService.generateReadingPDF(readingData);
-    
+
     console.log('PDF oluşturuldu, enhanced email gönderiliyor...');
-    
+
     // Enhanced email gönder
     const fileName = `enhanced-tarot-okuma-${new Date().toISOString().split('T')[0]}.pdf`;
     const success = await emailService.sendTarotReadingPDF(
@@ -113,8 +126,8 @@ Bu açılım, Kılıçlar İkilisi kartının temsil ettiği kişiyle olan iliş
           'Seçilen kartlar listesi',
           'Modern email tasarımı',
           'PDF eki ile birlikte',
-          'Renkli bilgi kutuları'
-        ]
+          'Renkli bilgi kutuları',
+        ],
       });
     } else {
       return NextResponse.json(
@@ -122,12 +135,14 @@ Bu açılım, Kılıçlar İkilisi kartının temsil ettiği kişiyle olan iliş
         { status: 500 }
       );
     }
-    
   } catch (error) {
     console.error('Enhanced email test API error:', error);
-    
+
     return NextResponse.json(
-      { error: 'Internal server error', details: error instanceof Error ? error.message : 'Bilinmeyen hata' },
+      {
+        error: 'Internal server error',
+        details: error instanceof Error ? error.message : 'Bilinmeyen hata',
+      },
       { status: 500 }
     );
   }
@@ -136,12 +151,12 @@ Bu açılım, Kılıçlar İkilisi kartının temsil ettiği kişiyle olan iliş
 // OPTIONS endpoint - CORS preflight
 export async function OPTIONS(_request: NextRequest) {
   const response = new NextResponse(null, { status: 200 });
-  
+
   response.headers.set('Access-Control-Allow-Origin', '*');
   response.headers.set('Access-Control-Allow-Methods', 'POST, OPTIONS');
   response.headers.set('Access-Control-Allow-Headers', 'Content-Type');
   response.headers.set('Access-Control-Max-Age', '86400');
-  
+
   return response;
 }
 

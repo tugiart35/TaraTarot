@@ -28,12 +28,12 @@ class SecureLogger {
    */
   error(message: string, error?: unknown, context?: LogContext) {
     const sanitizedError = this.sanitizeError(error);
-    
+
     if (this.isDevelopment) {
       console.error(`❌ [ERROR] ${message}`, {
         error: sanitizedError,
         context,
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
       });
     } else {
       // Production: Log to external service (future)
@@ -41,7 +41,7 @@ class SecureLogger {
         message: sanitizedError?.message || 'Unknown error',
         code: sanitizedError?.code,
         timestamp: new Date().toISOString(),
-        ...context
+        ...context,
       });
     }
   }
@@ -55,7 +55,7 @@ class SecureLogger {
     } else {
       console.warn(`WARN: ${message}`, {
         timestamp: new Date().toISOString(),
-        ...context
+        ...context,
       });
     }
   }
@@ -77,7 +77,7 @@ class SecureLogger {
     const logData = {
       action,
       timestamp: new Date().toISOString(),
-      ...context
+      ...context,
     };
 
     if (this.isDevelopment) {
@@ -97,7 +97,7 @@ class SecureLogger {
     const sanitized = this.sanitizeSupabaseError(error);
     this.error(`Supabase ${operation} failed`, sanitized, {
       action: operation,
-      ...context
+      ...context,
     });
   }
 
@@ -107,14 +107,19 @@ class SecureLogger {
   private sanitizeError(error: unknown) {
     if (!error) return null;
 
-    const errorObj = error as { message?: string; code?: string; name?: string; details?: unknown };
+    const errorObj = error as {
+      message?: string;
+      code?: string;
+      name?: string;
+      details?: unknown;
+    };
     const sanitized: {
       message?: string;
       code?: string;
       name?: string;
       details?: unknown;
     } = {};
-    
+
     if (errorObj.message !== undefined) sanitized.message = errorObj.message;
     if (errorObj.code !== undefined) sanitized.code = errorObj.code;
     if (errorObj.name !== undefined) sanitized.name = errorObj.name;
@@ -133,12 +138,17 @@ class SecureLogger {
   private sanitizeSupabaseError(error: unknown) {
     if (!error) return null;
 
-    const errorObj = error as { message?: string; code?: string; hint?: string; status?: number };
+    const errorObj = error as {
+      message?: string;
+      code?: string;
+      hint?: string;
+      status?: number;
+    };
     return {
       message: errorObj.message,
       code: errorObj.code,
       hint: errorObj.hint,
-      status: errorObj.status
+      status: errorObj.status,
     };
   }
 
@@ -147,8 +157,15 @@ class SecureLogger {
    */
   private containsSensitiveData(data: unknown): boolean {
     const sensitiveKeys = [
-      'password', 'token', 'secret', 'key', 'auth',
-      'credential', 'session', 'jwt', 'private'
+      'password',
+      'token',
+      'secret',
+      'key',
+      'auth',
+      'credential',
+      'session',
+      'jwt',
+      'private',
     ];
 
     const dataStr = JSON.stringify(data).toLowerCase();
@@ -159,14 +176,20 @@ class SecureLogger {
 export const logger = new SecureLogger();
 
 // Convenience functions
-export const logError = (message: string, error?: unknown, context?: LogContext) => 
-  logger.error(message, error, context);
+export const logError = (
+  message: string,
+  error?: unknown,
+  context?: LogContext
+) => logger.error(message, error, context);
 
-export const logDebug = (message: string, data?: unknown) => 
+export const logDebug = (message: string, data?: unknown) =>
   logger.debug(message, data);
 
-export const logAdminAction = (action: string, context: LogContext) => 
+export const logAdminAction = (action: string, context: LogContext) =>
   logger.adminAction(action, context);
 
-export const logSupabaseError = (operation: string, error: unknown, context?: LogContext) => 
-  logger.supabaseError(operation, error, context);
+export const logSupabaseError = (
+  operation: string,
+  error: unknown,
+  context?: LogContext
+) => logger.supabaseError(operation, error, context);

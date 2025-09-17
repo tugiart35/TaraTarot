@@ -95,18 +95,20 @@ import { READING_TYPES, ReadingType, TarotCard } from '@/types/tarot';
 interface LoveReadingProps {
   onComplete?: (_cards: TarotCard[], _interpretation: string) => void;
   onPositionChange?: (_title: string) => void;
+  onReadingTypeSelected?: () => void; // Okuma tipi seçildiğinde çağrılacak callback
 }
 
 // Ana Aşk Açılımı bileşeni
 export default function LoveReading({
   onComplete: _onComplete,
   onPositionChange: _onPositionChange,
+  onReadingTypeSelected,
 }: LoveReadingProps) {
   const router = useRouter();
   const { t } = useTranslations();
   const { user } = useAuth();
   const loveSpread = findSpreadById('love-spread');
-  
+
   // Kredi yönetimi
   const detailedCredits = useReadingCredits('LOVE_SPREAD_DETAILED');
   const writtenCredits = useReadingCredits('LOVE_SPREAD_WRITTEN');
@@ -176,6 +178,7 @@ export default function LoveReading({
   const [isSaving, setIsSaving] = useState(false);
   const [showCreditConfirm, setShowCreditConfirm] = useState(false);
   const [detailedFormSaved, setDetailedFormSaved] = useState(false);
+  const [showInfoModal, setShowInfoModal] = useState(false);
   const [isSavingReading, setIsSavingReading] = useState(false);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
 
@@ -305,66 +308,70 @@ export default function LoveReading({
       // Sadece giriş yapmış kullanıcılar için veri sakla
       if (!user?.id) {
         console.log('Guest kullanıcı - veri saklanmayacak');
-        return { 
-          success: true, 
+        return {
+          success: true,
           id: 'guest-session',
           userId: 'guest',
-          message: 'Guest kullanıcı için veri saklanmadı'
+          message: 'Guest kullanıcı için veri saklanmadı',
         };
       }
-      
+
       console.log('Okuma verileri Supabase e kaydediliyor:', {
         userId: user.id,
         readingType: readingData.readingType,
         cardsCount: readingData.cards.selectedCards.length,
-        hasQuestions: !!readingData.questions
+        hasQuestions: !!readingData.questions,
       });
-      
-      // Kredi düş + okuma kaydet (atomik) — RPC
-      const costCredits = selectedReadingType === READING_TYPES.DETAILED
-        ? detailedCredits.creditStatus.requiredCredits
-        : selectedReadingType === READING_TYPES.WRITTEN
-          ? writtenCredits.creditStatus.requiredCredits
-          : 0;
 
-      const { data: rpcResult, error: rpcError } = await supabase.rpc('fn_create_reading_with_debit', {
-        p_user_id: user.id,
-        p_reading_type: readingData.readingType,
-        p_spread_name: 'Aşk Yayılımı',
-        p_title: readingData.title || 'Aşk Açılımı',
-        p_interpretation: readingData.interpretation,
-        p_cards: readingData.cards.selectedCards,
-        p_questions: readingData.questions,
-        p_cost_credits: costCredits,
-        p_metadata: {
-          duration: readingData.metadata.duration,
-          platform: readingData.metadata.platform
-        },
-        p_idempotency_key: `reading_${user.id}_${readingData.timestamp}`
-      });
+      // Kredi düş + okuma kaydet (atomik) — RPC
+      const costCredits =
+        selectedReadingType === READING_TYPES.DETAILED
+          ? detailedCredits.creditStatus.requiredCredits
+          : selectedReadingType === READING_TYPES.WRITTEN
+            ? writtenCredits.creditStatus.requiredCredits
+            : 0;
+
+      const { data: rpcResult, error: rpcError } = await supabase.rpc(
+        'fn_create_reading_with_debit',
+        {
+          p_user_id: user.id,
+          p_reading_type: readingData.readingType,
+          p_spread_name: 'Aşk Yayılımı',
+          p_title: readingData.title || 'Aşk Açılımı',
+          p_interpretation: readingData.interpretation,
+          p_cards: readingData.cards.selectedCards,
+          p_questions: readingData.questions,
+          p_cost_credits: costCredits,
+          p_metadata: {
+            duration: readingData.metadata.duration,
+            platform: readingData.metadata.platform,
+          },
+          p_idempotency_key: `reading_${user.id}_${readingData.timestamp}`,
+        }
+      );
       if (rpcError) {
         console.error('RPC okuma kayıt hatası:', rpcError);
         throw rpcError;
       }
 
       console.log('Okuma başarıyla kaydedildi:', rpcResult?.id);
-      
+
       // Email gönderimi (asenkron, hata durumunda okuma kaydını etkilemez)
       // Server-side API endpoint'e istek gönder
       triggerEmailSending(rpcResult?.id, readingData).catch(error => {
         console.error('Email gönderimi başarısız:', error);
       });
-      
-      return { 
-        success: true, 
+
+      return {
+        success: true,
         id: rpcResult?.id,
-        userId: user.id
+        userId: user.id,
       };
     } catch (error) {
       console.error('Okuma kaydetme hatası:', error);
-      return { 
-        success: false, 
-        error: error instanceof Error ? error.message : 'Bilinmeyen hata'
+      return {
+        success: false,
+        error: error instanceof Error ? error.message : 'Bilinmeyen hata',
       };
     }
   };
@@ -387,7 +394,7 @@ export default function LoveReading({
           status: 'completed',
           title: 'Basit Okuma',
           cost_credits: 0, // Ücretsiz
-          admin_notes: 'Simple reading counter'
+          admin_notes: 'Simple reading counter',
         };
 
         // Database'e kaydet
@@ -395,7 +402,7 @@ export default function LoveReading({
         if (saveResult.success) {
           console.log('Basit okuma sayacı kaydedildi:', saveResult.id);
         }
-        
+
         showToast('Basit okuma tamamlandı!', 'success');
         router.push('/');
         return;
@@ -455,7 +462,7 @@ export default function LoveReading({
 
         // Okuma verisini Supabase'e kaydet
         const saveResult = await saveReadingToSupabase(readingData);
-        
+
         if (saveResult.success) {
           showToast('Okumanız başarıyla kaydedildi!', 'success');
         } else {
@@ -533,9 +540,8 @@ export default function LoveReading({
   // Okuma tipi seçildiğinde çalışacak fonksiyon
   const handleReadingTypeSelect = async (type: ReadingType | string) => {
     if (type === READING_TYPES.DETAILED || type === READING_TYPES.WRITTEN) {
-      // Kredi kontrolü BaseReadingTypeSelector'da yapılıyor
-      // Burada sadece tip seçimi yapılıyor
       setSelectedReadingType(type as ReadingType);
+      setShowInfoModal(true); // Bilgilendirme modal'ını göster
       return;
     }
     setSelectedReadingType(type as ReadingType);
@@ -579,10 +585,153 @@ export default function LoveReading({
           </div>
         )}
         {/* BASİT OKUMA SEÇİLDİYSE SORU FORMU KALDIRILDI - Direkt kart seçimi */}
+        {/* BİLGİLENDİRME MODAL'ı - DETAILED/WRITTEN SEÇİLDİĞİNDE */}
+        {showInfoModal && (
+          <div
+            className='fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4'
+            onClick={e => {
+              if (e.target === e.currentTarget) {
+                setShowInfoModal(false);
+                setSelectedReadingType(null);
+              }
+            }}
+          >
+            <div className='bg-slate-900/95 border border-pink-500/30 rounded-2xl shadow-2xl w-full max-w-lg max-h-[90vh] flex flex-col'>
+              {/* Modal Header */}
+              <div className='flex items-center justify-between p-6 border-b border-pink-500/20 flex-shrink-0'>
+                <div className='flex items-center'>
+                  <div className='w-12 h-12 flex items-center justify-center bg-pink-800/70 rounded-full mr-3 shadow-lg'>
+                    <span className='text-xl text-pink-200'>💝</span>
+                  </div>
+                  <h2 className='text-pink-200 text-lg font-semibold'>
+                    {t('love.modals.infoTitle')}
+                  </h2>
+                </div>
+                <button
+                  onClick={() => {
+                    setShowInfoModal(false);
+                    setSelectedReadingType(null);
+                  }}
+                  className='text-gray-400 hover:text-pink-300 transition-colors p-2 rounded-lg hover:bg-pink-500/10'
+                  title='Kapat'
+                >
+                  <svg
+                    className='w-5 h-5'
+                    fill='none'
+                    stroke='currentColor'
+                    viewBox='0 0 24 24'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth='2'
+                      d='M6 18L18 6M6 6l12 12'
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              {/* Scrollable Content */}
+              <div className='flex-1 overflow-y-auto px-6 py-4'>
+                <div className='space-y-4'>
+                  {/* Açılım Hakkında */}
+                  <div className='bg-pink-800/20 border border-pink-500/30 rounded-xl p-4'>
+                    <h3 className='text-pink-200 font-semibold mb-2'>
+                      {t('love.modals.aboutSpread')}
+                    </h3>
+                    <p className='text-gray-300 text-sm leading-relaxed'>
+                      {t('love.modals.aboutSpreadText')}
+                    </p>
+                  </div>
+ {/* Okuma Türü */}
+ <div className='bg-pink-800/20 border border-pink-500/30 rounded-xl p-4'>
+                    <h3 className='text-pink-200 font-semibold mb-2'>
+                      {selectedReadingType === READING_TYPES.DETAILED
+                        ? t('love.modals.detailedReading')
+                        : t('love.modals.writtenReading')}
+                    </h3>
+                    <p className='text-gray-300 text-sm leading-relaxed'>
+                      {selectedReadingType === READING_TYPES.DETAILED
+                        ? t('love.modals.detailedReadingText')
+                        : t('love.modals.writtenReadingText')}
+                    </p>
+                  </div>
+                  {/* Kart Sayısı */}
+                  <div className='bg-red-800/20 border border-red-500/30 rounded-xl p-4'>
+                    <h3 className='text-red-200 font-semibold mb-2'>
+                      {t('love.modals.LoveAttention1')}
+                    </h3>
+                    <p className='text-gray-300 text-sm leading-relaxed'>
+                      {t('love.modals.loveAttention')}
+                    </p>
+                  </div>
+
+                 
+
+                  {/* Süreç */}
+                  <div className='bg-red-800/20 border border-red-500/30 rounded-xl p-4'>
+                    <h3 className='text-red-200 font-semibold mb-2'>
+                      {t('love.modals.process')}
+                    </h3>
+                    <div className='space-y-2'>
+                      <div className='flex items-center text-gray-300 text-sm'>
+                        <span className='w-6 h-6 bg-pink-600 rounded-full flex items-center justify-center text-xs font-bold mr-3'>
+                          1
+                        </span>
+                        {t('love.modals.step1')}
+                      </div>
+                      <div className='flex items-center text-gray-300 text-sm'>
+                        <span className='w-6 h-6 bg-pink-600 rounded-full flex items-center justify-center text-xs font-bold mr-3'>
+                          2
+                        </span>
+                        {t('love.modals.step2')}
+                      </div>
+                      <div className='flex items-center text-gray-300 text-sm'>
+                        <span className='w-6 h-6 bg-pink-600 rounded-full flex items-center justify-center text-xs font-bold mr-3'>
+                          3
+                        </span>
+                        {t('love.modals.step3')}
+                      </div>
+                      <div className='flex items-center text-gray-300 text-sm'>
+                        <span className='w-6 h-6 bg-pink-600 rounded-full flex items-center justify-center text-xs font-bold mr-3'>
+                          4
+                        </span>
+                        {t('love.modals.step4')}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Modal Footer */}
+              <div className='border-t border-pink-500/20 p-6 flex-shrink-0'>
+                <div className='flex gap-3'>
+                  <button
+                    onClick={() => {
+                      setShowInfoModal(false);
+                      setSelectedReadingType(null);
+                    }}
+                    className='flex-1 bg-slate-700 border border-slate-600 text-gray-300 font-semibold py-3 px-6 rounded-xl transition-colors hover:bg-slate-800'
+                  >
+                    {t('love.modals.cancel')}
+                  </button>
+                  <button
+                    onClick={() => setShowInfoModal(false)}
+                    className='flex-1 bg-gradient-to-r from-pink-600 to-red-500 hover:from-pink-700 hover:to-red-600 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg'
+                  >
+                    {t('love.modals.continue')}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* DETAILED/WRITTEN SEÇİLDİYSE KİŞİSEL BİLGİ + 3 SORU FORMU - MOBİL RESPONSIVE */}
         {(selectedReadingType === READING_TYPES.DETAILED ||
           selectedReadingType === READING_TYPES.WRITTEN) &&
-          !detailedFormSaved && (
+          !detailedFormSaved &&
+          !showInfoModal && (
             <div
               className='fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4'
               onClick={e => {
@@ -887,7 +1036,9 @@ export default function LoveReading({
                   disabled={isSaving}
                   className='bg-gradient-to-r from-pink-600 to-red-500 hover:from-pink-700 hover:to-red-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors disabled:opacity-60'
                 >
-                  {isSaving ? t('love.modals.processing') : t('love.modals.confirm')}
+                  {isSaving
+                    ? t('love.modals.processing')
+                    : t('love.modals.confirm')}
                 </button>
                 <button
                   onClick={() => setShowCreditConfirm(false)}
@@ -964,6 +1115,7 @@ export default function LoveReading({
             selectedType={selectedReadingType}
             onTypeSelect={handleReadingTypeSelect}
             onCreditInfoClick={() => router.push('/dashboard/credits')}
+            {...(onReadingTypeSelected && { onReadingTypeSelected })}
             readingTypes={READING_TYPES}
             readingType='LOVE_SPREAD'
             theme='pink'
@@ -1012,6 +1164,7 @@ export default function LoveReading({
             selectedReadingType === READING_TYPES.WRITTEN) &&
             detailedFormSaved)
         }
+        theme='pink'
         renderCard={(card, isUsed, canSelect) => (
           <LoveCardRenderer
             card={card}
@@ -1062,7 +1215,9 @@ export default function LoveReading({
               (c: TarotCard | null) => c && c.id === showCardDetails.id
             );
             const p = LOVE_POSITIONS_INFO[idx];
-            return p ? { title: p.title, desc: p.desc } : { title: `Pozisyon ${idx + 1}`, desc: 'Kart pozisyonu' };
+            return p
+              ? { title: p.title, desc: p.desc }
+              : { title: `Pozisyon ${idx + 1}`, desc: 'Kart pozisyonu' };
           })()}
         />
       )}
@@ -1070,10 +1225,7 @@ export default function LoveReading({
       {selectedCards.filter(c => c !== null).length === LOVE_CARD_COUNT &&
         selectedReadingType && (
           <div ref={interpretationRef} className='space-y-6'>
-            <LoveInterpretation
-              cards={selectedCards}
-              isReversed={isReversed}
-            />
+            <LoveInterpretation cards={selectedCards} isReversed={isReversed} />
 
             {/* Okumayı Kaydet Butonu - Sadece DETAILED/WRITTEN için */}
             {(selectedReadingType === READING_TYPES.DETAILED ||
@@ -1084,7 +1236,9 @@ export default function LoveReading({
                   disabled={isSavingReading}
                   className='px-8 py-4 bg-gradient-to-r from-pink-600 to-red-500 hover:from-pink-700 hover:to-red-600 text-white font-semibold rounded-2xl transition-all disabled:opacity-60 disabled:cursor-not-allowed shadow-lg'
                 >
-                  {isSavingReading ? t('love.modals.savingReading') : t('love.modals.saveReading')}
+                  {isSavingReading
+                    ? t('love.modals.savingReading')
+                    : t('love.modals.saveReading')}
                 </button>
               </div>
             )}
@@ -1131,15 +1285,20 @@ export default function LoveReading({
 /**
  * Email gönderimi için API endpoint'e istek gönder
  */
-async function triggerEmailSending(readingId: string | undefined, _readingData: any): Promise<void> {
+async function triggerEmailSending(
+  readingId: string | undefined,
+  _readingData: any
+): Promise<void> {
   if (!readingId) {
     console.error('❌ Reading ID bulunamadı, email gönderilemedi');
     return;
   }
 
   try {
-    console.log('🔮 Email gönderimi API endpoint\'e istek gönderiliyor...', { readingId });
-    
+    console.log("🔮 Email gönderimi API endpoint'e istek gönderiliyor...", {
+      readingId,
+    });
+
     // Server-side API endpoint'e sadece readingId gönder
     // API kendi Supabase'den gerçek veriyi çekecek
     const response = await fetch('/api/send-reading-email', {
@@ -1148,8 +1307,8 @@ async function triggerEmailSending(readingId: string | undefined, _readingData: 
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        readingId
-      })
+        readingId,
+      }),
     });
 
     if (response.ok) {

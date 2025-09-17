@@ -34,7 +34,7 @@ const toastConfig = {
 };
 
 export default function Toast({ message, type, onClose }: ToastProps) {
-  const config = toastConfig[type];
+  const config = toastConfig[type] || toastConfig.info; // Fallback için
   const [progress, setProgress] = useState(100);
 
   useEffect(() => {
@@ -74,10 +74,10 @@ export default function Toast({ message, type, onClose }: ToastProps) {
           Kapat
         </button>
       </div>
-      
+
       {/* Progress Bar */}
       <div className='mt-2 w-full bg-white/20 rounded-full h-1'>
-        <div 
+        <div
           className='bg-white/60 h-1 rounded-full transition-all duration-75 ease-linear'
           style={{ width: `${progress}%` }}
         ></div>

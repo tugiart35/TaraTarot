@@ -1398,8 +1398,9 @@ export const position4Meanings: LovePositionMeaning[] = [
 
 // i18n destekli fonksiyonlar
 export const useI18nPosition4Meanings = (): I18nLovePositionMeaning[] => {
-  const { getCardMeaning, getCardKeywords, getCardContext, getCardGroup } = useLoveTranslations();
-  
+  const { getCardMeaning, getCardKeywords, getCardContext, getCardGroup } =
+    useLoveTranslations();
+
   return position4Meanings.map(meaning => {
     // i18n'den çevirileri al
     const i18nUpright = getCardMeaning(meaning.card, 4, 'upright');
@@ -1407,7 +1408,7 @@ export const useI18nPosition4Meanings = (): I18nLovePositionMeaning[] => {
     const i18nKeywords = getCardKeywords(meaning.card, 4);
     const i18nContext = getCardContext(meaning.card, 4);
     const i18nGroup = getCardGroup(meaning.group);
-    
+
     return {
       id: meaning.id,
       card: meaning.card,

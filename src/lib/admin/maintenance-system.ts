@@ -65,22 +65,33 @@ export class MaintenanceSystemManager {
           isMaintenanceMode: false,
           message: 'Sistem bakımda. Lütfen daha sonra tekrar deneyin.',
           allowedIPs: [],
-          canAccess: true
+          canAccess: true,
         };
       }
 
-      const maintenanceData = settings.reduce((acc, setting) => {
-        acc[setting.key] = setting.value;
-        return acc;
-      }, {} as Record<string, any>);
+      const maintenanceData = settings.reduce(
+        (acc, setting) => {
+          acc[setting.key] = setting.value;
+          return acc;
+        },
+        {} as Record<string, any>
+      );
 
-      const isMaintenanceMode = maintenanceData.enabled === true || maintenanceData.enabled === 'true';
-      const message = maintenanceData.message || 'Sistem bakımda. Lütfen daha sonra tekrar deneyin.';
-      const allowedIPs = Array.isArray(maintenanceData.allowed_ips) ? maintenanceData.allowed_ips : [];
-      
+      const isMaintenanceMode =
+        maintenanceData.enabled === true || maintenanceData.enabled === 'true';
+      const message =
+        maintenanceData.message ||
+        'Sistem bakımda. Lütfen daha sonra tekrar deneyin.';
+      const allowedIPs = Array.isArray(maintenanceData.allowed_ips)
+        ? maintenanceData.allowed_ips
+        : [];
+
       // Kullanıcının IP'sini al (client-side'da)
       const userIP = await this.getUserIP();
-      const canAccess = !isMaintenanceMode || allowedIPs.includes(userIP) || allowedIPs.includes('*');
+      const canAccess =
+        !isMaintenanceMode ||
+        allowedIPs.includes(userIP) ||
+        allowedIPs.includes('*');
 
       return {
         isMaintenanceMode,
@@ -89,24 +100,32 @@ export class MaintenanceSystemManager {
         endTime: maintenanceData.end_time,
         allowedIPs,
         canAccess,
-        userIP
+        userIP,
       };
     } catch (error) {
-      console.error('MaintenanceSystemManager.getMaintenanceStatus error:', error);
+      console.error(
+        'MaintenanceSystemManager.getMaintenanceStatus error:',
+        error
+      );
       return {
         isMaintenanceMode: false,
         message: 'Sistem bakımda. Lütfen daha sonra tekrar deneyin.',
         allowedIPs: [],
-        canAccess: true
+        canAccess: true,
       };
     }
   }
 
   // Bakım modunu aç/kapat
-  static async toggleMaintenanceMode(enabled: boolean, message?: string): Promise<boolean> {
+  static async toggleMaintenanceMode(
+    enabled: boolean,
+    message?: string
+  ): Promise<boolean> {
     try {
       // Mevcut kullanıcıyı al
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (!user) {
         throw new Error('User not authenticated');
       }
@@ -118,7 +137,7 @@ export class MaintenanceSystemManager {
           category: 'maintenance',
           key: 'enabled',
           value: enabled,
-          updated_by: user.id
+          updated_by: user.id,
         });
 
       if (enabledError) {
@@ -134,7 +153,7 @@ export class MaintenanceSystemManager {
             category: 'maintenance',
             key: 'message',
             value: message,
-            updated_by: user.id
+            updated_by: user.id,
           });
 
         if (messageError) {
@@ -147,42 +166,43 @@ export class MaintenanceSystemManager {
       const now = new Date().toISOString();
       if (enabled) {
         // Bakım modu açılıyorsa başlangıç zamanını kaydet
-        await supabase
-          .from('system_settings')
-          .upsert({
-            category: 'maintenance',
-            key: 'start_time',
-            value: now,
-            updated_by: user.id
-          });
+        await supabase.from('system_settings').upsert({
+          category: 'maintenance',
+          key: 'start_time',
+          value: now,
+          updated_by: user.id,
+        });
       } else {
         // Bakım modu kapatılıyorsa bitiş zamanını kaydet
-        await supabase
-          .from('system_settings')
-          .upsert({
-            category: 'maintenance',
-            key: 'end_time',
-            value: now,
-            updated_by: user.id
-          });
+        await supabase.from('system_settings').upsert({
+          category: 'maintenance',
+          key: 'end_time',
+          value: now,
+          updated_by: user.id,
+        });
       }
 
       // Audit log
       await logAdminAction(
-        enabled ? 'settings_update' as AuditAction : 'settings_update' as AuditAction,
+        enabled
+          ? ('settings_update' as AuditAction)
+          : ('settings_update' as AuditAction),
         'system' as ResourceType,
         {
           metadata: {
             maintenanceMode: enabled,
             message: message || 'Default message',
-            timestamp: now
-          }
+            timestamp: now,
+          },
         }
       );
 
       return true;
     } catch (error) {
-      console.error('MaintenanceSystemManager.toggleMaintenanceMode error:', error);
+      console.error(
+        'MaintenanceSystemManager.toggleMaintenanceMode error:',
+        error
+      );
       throw error;
     }
   }
@@ -191,19 +211,19 @@ export class MaintenanceSystemManager {
   static async updateMaintenanceMessage(message: string): Promise<boolean> {
     try {
       // Mevcut kullanıcıyı al
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (!user) {
         throw new Error('User not authenticated');
       }
 
-      const { error } = await supabase
-        .from('system_settings')
-        .upsert({
-          category: 'maintenance',
-          key: 'message',
-          value: message,
-          updated_by: user.id
-        });
+      const { error } = await supabase.from('system_settings').upsert({
+        category: 'maintenance',
+        key: 'message',
+        value: message,
+        updated_by: user.id,
+      });
 
       if (error) {
         console.error('Error updating maintenance message:', error);
@@ -211,16 +231,23 @@ export class MaintenanceSystemManager {
       }
 
       // Audit log
-      await logAdminAction('settings_update' as AuditAction, 'system' as ResourceType, {
-        metadata: {
-          maintenanceMessage: message,
-          timestamp: new Date().toISOString()
+      await logAdminAction(
+        'settings_update' as AuditAction,
+        'system' as ResourceType,
+        {
+          metadata: {
+            maintenanceMessage: message,
+            timestamp: new Date().toISOString(),
+          },
         }
-      });
+      );
 
       return true;
     } catch (error) {
-      console.error('MaintenanceSystemManager.updateMaintenanceMessage error:', error);
+      console.error(
+        'MaintenanceSystemManager.updateMaintenanceMessage error:',
+        error
+      );
       throw error;
     }
   }
@@ -229,19 +256,19 @@ export class MaintenanceSystemManager {
   static async updateAllowedIPs(ips: string[]): Promise<boolean> {
     try {
       // Mevcut kullanıcıyı al
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (!user) {
         throw new Error('User not authenticated');
       }
 
-      const { error } = await supabase
-        .from('system_settings')
-        .upsert({
-          category: 'maintenance',
-          key: 'allowed_ips',
-          value: ips,
-          updated_by: user.id
-        });
+      const { error } = await supabase.from('system_settings').upsert({
+        category: 'maintenance',
+        key: 'allowed_ips',
+        value: ips,
+        updated_by: user.id,
+      });
 
       if (error) {
         console.error('Error updating allowed IPs:', error);
@@ -249,12 +276,16 @@ export class MaintenanceSystemManager {
       }
 
       // Audit log
-      await logAdminAction('settings_update' as AuditAction, 'system' as ResourceType, {
-        metadata: {
-          allowedIPs: ips,
-          timestamp: new Date().toISOString()
+      await logAdminAction(
+        'settings_update' as AuditAction,
+        'system' as ResourceType,
+        {
+          metadata: {
+            allowedIPs: ips,
+            timestamp: new Date().toISOString(),
+          },
         }
-      });
+      );
 
       return true;
     } catch (error) {
@@ -264,59 +295,66 @@ export class MaintenanceSystemManager {
   }
 
   // Zamanlanmış bakım modu
-  static async scheduleMaintenance(startTime: string, endTime: string, message?: string): Promise<boolean> {
+  static async scheduleMaintenance(
+    startTime: string,
+    endTime: string,
+    message?: string
+  ): Promise<boolean> {
     try {
       // Mevcut kullanıcıyı al
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (!user) {
         throw new Error('User not authenticated');
       }
 
       // Zamanlama bilgilerini kaydet
-      await supabase
-        .from('system_settings')
-        .upsert({
-          category: 'maintenance',
-          key: 'start_time',
-          value: startTime,
-          updated_by: user.id
-        });
+      await supabase.from('system_settings').upsert({
+        category: 'maintenance',
+        key: 'start_time',
+        value: startTime,
+        updated_by: user.id,
+      });
 
-      await supabase
-        .from('system_settings')
-        .upsert({
-          category: 'maintenance',
-          key: 'end_time',
-          value: endTime,
-          updated_by: user.id
-        });
+      await supabase.from('system_settings').upsert({
+        category: 'maintenance',
+        key: 'end_time',
+        value: endTime,
+        updated_by: user.id,
+      });
 
       // Mesaj varsa kaydet
       if (message) {
-        await supabase
-          .from('system_settings')
-          .upsert({
-            category: 'maintenance',
-            key: 'message',
-            value: message,
-            updated_by: user.id
-          });
+        await supabase.from('system_settings').upsert({
+          category: 'maintenance',
+          key: 'message',
+          value: message,
+          updated_by: user.id,
+        });
       }
 
       // Audit log
-      await logAdminAction('settings_update' as AuditAction, 'system' as ResourceType, {
-        metadata: {
-          scheduledMaintenance: true,
-          startTime,
-          endTime,
-          message: message || 'Scheduled maintenance',
-          timestamp: new Date().toISOString()
+      await logAdminAction(
+        'settings_update' as AuditAction,
+        'system' as ResourceType,
+        {
+          metadata: {
+            scheduledMaintenance: true,
+            startTime,
+            endTime,
+            message: message || 'Scheduled maintenance',
+            timestamp: new Date().toISOString(),
+          },
         }
-      });
+      );
 
       return true;
     } catch (error) {
-      console.error('MaintenanceSystemManager.scheduleMaintenance error:', error);
+      console.error(
+        'MaintenanceSystemManager.scheduleMaintenance error:',
+        error
+      );
       throw error;
     }
   }
@@ -334,24 +372,30 @@ export class MaintenanceSystemManager {
   }
 
   // Bakım modu kontrolü (middleware için)
-  static async checkMaintenanceAccess(userIP?: string): Promise<{ canAccess: boolean; message?: string }> {
+  static async checkMaintenanceAccess(
+    userIP?: string
+  ): Promise<{ canAccess: boolean; message?: string }> {
     try {
       const status = await this.getMaintenanceStatus();
-      
+
       if (!status.isMaintenanceMode) {
         return { canAccess: true };
       }
 
       // IP kontrolü
       const ip = userIP || status.userIP || 'unknown';
-      const canAccess = status.allowedIPs.includes(ip) || status.allowedIPs.includes('*');
+      const canAccess =
+        status.allowedIPs.includes(ip) || status.allowedIPs.includes('*');
 
       return {
         canAccess,
-        ...(canAccess ? {} : { message: status.message })
+        ...(canAccess ? {} : { message: status.message }),
       };
     } catch (error) {
-      console.error('MaintenanceSystemManager.checkMaintenanceAccess error:', error);
+      console.error(
+        'MaintenanceSystemManager.checkMaintenanceAccess error:',
+        error
+      );
       return { canAccess: true }; // Hata durumunda erişime izin ver
     }
   }
@@ -374,7 +418,10 @@ export class MaintenanceSystemManager {
 
       return data || [];
     } catch (error) {
-      console.error('MaintenanceSystemManager.getMaintenanceHistory error:', error);
+      console.error(
+        'MaintenanceSystemManager.getMaintenanceHistory error:',
+        error
+      );
       return [];
     }
   }
@@ -384,25 +431,26 @@ export class MaintenanceSystemManager {
     return [
       {
         key: 'general',
-        message: 'Sistem bakımda. Lütfen daha sonra tekrar deneyin.'
+        message: 'Sistem bakımda. Lütfen daha sonra tekrar deneyin.',
       },
       {
         key: 'scheduled',
-        message: 'Planlı sistem bakımı yapılmaktadır. Tahmini süre: 2 saat.'
+        message: 'Planlı sistem bakımı yapılmaktadır. Tahmini süre: 2 saat.',
       },
       {
         key: 'emergency',
-        message: 'Acil sistem bakımı yapılmaktadır. En kısa sürede hizmete döneceğiz.'
+        message:
+          'Acil sistem bakımı yapılmaktadır. En kısa sürede hizmete döneceğiz.',
       },
       {
         key: 'update',
-        message: 'Sistem güncellemesi yapılmaktadır. Yeni özelliklerle yakında karşınızdayız!'
+        message:
+          'Sistem güncellemesi yapılmaktadır. Yeni özelliklerle yakında karşınızdayız!',
       },
       {
         key: 'custom',
-        message: 'Özel bakım mesajınızı buraya yazabilirsiniz.'
-      }
+        message: 'Özel bakım mesajınızı buraya yazabilirsiniz.',
+      },
     ];
   }
 }
-

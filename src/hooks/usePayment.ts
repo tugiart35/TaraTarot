@@ -173,15 +173,20 @@ const DEFAULT_PRICING_TIERS: PricingTier[] = [
 
 export function usePayment(): UsePaymentReturn {
   const { user, isAuthenticated } = useAuth();
-  const [subscription, setSubscription] = useState<PaymentSubscription | null>(null);
+  const [subscription, setSubscription] = useState<PaymentSubscription | null>(
+    null
+  );
   const [paymentMethods, setPaymentMethods] = useState<PaymentMethodData[]>([]);
   const [transactions, setTransactions] = useState<PaymentTransaction[]>([]);
-  const [pricingTiers, setPricingTiers] = useState<PricingTier[]>(DEFAULT_PRICING_TIERS);
+  const [pricingTiers, setPricingTiers] = useState<PricingTier[]>(
+    DEFAULT_PRICING_TIERS
+  );
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   // Get user role
-  const userRole: UserRoleLocal = (user?.user_metadata?.role as UserRoleLocal) || 'guest';
+  const userRole: UserRoleLocal =
+    (user?.user_metadata?.role as UserRoleLocal) || 'guest';
 
   // Get payment permissions
   const getPaymentPermissions = useCallback((): PaymentPermissions => {
@@ -189,31 +194,37 @@ export function usePayment(): UsePaymentReturn {
   }, [userRole]);
 
   // Check if user can access a feature
-  const canAccessFeature = useCallback((feature: string): boolean => {
-    if (!subscription) return false;
-    
-    const tier = pricingTiers.find(t => t.id === subscription.type);
-    if (!tier) return false;
-    
-    return tier.limits[feature as keyof typeof tier.limits] === true;
-  }, [subscription, pricingTiers]);
+  const canAccessFeature = useCallback(
+    (feature: string): boolean => {
+      if (!subscription) return false;
+
+      const tier = pricingTiers.find(t => t.id === subscription.type);
+      if (!tier) return false;
+
+      return tier.limits[feature as keyof typeof tier.limits] === true;
+    },
+    [subscription, pricingTiers]
+  );
 
   // Get remaining usage for a feature
-  const getRemainingUsage = useCallback((feature: string): number => {
-    if (!subscription) return 0;
-    
-    const tier = pricingTiers.find(t => t.id === subscription.type);
-    if (!tier) return 0;
-    
-    const limit = tier.limits[feature as keyof typeof tier.limits];
-    if (typeof limit === 'number') {
-      if (limit === -1) return Infinity; // Unlimited
-      // Burada backend'den kullanım bilgisini alacak
-      return limit;
-    }
-    
-    return 0;
-  }, [subscription, pricingTiers]);
+  const getRemainingUsage = useCallback(
+    (feature: string): number => {
+      if (!subscription) return 0;
+
+      const tier = pricingTiers.find(t => t.id === subscription.type);
+      if (!tier) return 0;
+
+      const limit = tier.limits[feature as keyof typeof tier.limits];
+      if (typeof limit === 'number') {
+        if (limit === -1) return Infinity; // Unlimited
+        // Burada backend'den kullanım bilgisini alacak
+        return limit;
+      }
+
+      return 0;
+    },
+    [subscription, pricingTiers]
+  );
 
   // Load payment data
   const loadPaymentData = useCallback(async () => {
@@ -279,9 +290,9 @@ export function usePayment(): UsePaymentReturn {
       } else {
         setPricingTiers(pricingData || DEFAULT_PRICING_TIERS);
       }
-
     } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'Payment data yüklenemedi';
+      const errorMessage =
+        err instanceof Error ? err.message : 'Payment data yüklenemedi';
       setError(errorMessage);
     } finally {
       setLoading(false);
@@ -289,255 +300,288 @@ export function usePayment(): UsePaymentReturn {
   }, [isAuthenticated, user]);
 
   // Create subscription
-  const createSubscription = useCallback(async (tierId: string, paymentData: PaymentFormData): Promise<boolean> => {
-    if (!isAuthenticated || !user) {
-      throw new Error('User not authenticated');
-    }
-
-    try {
-      setError(null);
-      setLoading(true);
-
-      const tier = pricingTiers.find(t => t.id === tierId);
-      if (!tier) {
-        throw new Error('Invalid pricing tier');
+  const createSubscription = useCallback(
+    async (tierId: string, paymentData: PaymentFormData): Promise<boolean> => {
+      if (!isAuthenticated || !user) {
+        throw new Error('User not authenticated');
       }
 
-      // Burada backend'e bağlanılacak - payment provider integration
-      const response = await fetch('/api/payment/create-subscription', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${user.id}`,
-        },
-        body: JSON.stringify({
-          tier_id: tierId,
-          payment_data: paymentData,
-          user_id: user.id,
-        }),
-      });
+      try {
+        setError(null);
+        setLoading(true);
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.message || 'Subscription creation failed');
+        const tier = pricingTiers.find(t => t.id === tierId);
+        if (!tier) {
+          throw new Error('Invalid pricing tier');
+        }
+
+        // Burada backend'e bağlanılacak - payment provider integration
+        const response = await fetch('/api/payment/create-subscription', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${user.id}`,
+          },
+          body: JSON.stringify({
+            tier_id: tierId,
+            payment_data: paymentData,
+            user_id: user.id,
+          }),
+        });
+
+        if (!response.ok) {
+          const errorData = await response.json();
+          throw new Error(errorData.message || 'Subscription creation failed');
+        }
+
+        const result = await response.json();
+
+        // Update local state
+        setSubscription(result.subscription);
+
+        return true;
+      } catch (err) {
+        const errorMessage =
+          err instanceof Error ? err.message : 'Subscription oluşturulamadı';
+        setError(errorMessage);
+        return false;
+      } finally {
+        setLoading(false);
       }
-
-      const result = await response.json();
-      
-      // Update local state
-      setSubscription(result.subscription);
-      
-
-      return true;
-    } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'Subscription oluşturulamadı';
-      setError(errorMessage);
-      return false;
-    } finally {
-      setLoading(false);
-    }
-  }, [isAuthenticated, user, pricingTiers]);
+    },
+    [isAuthenticated, user, pricingTiers]
+  );
 
   // Update subscription
-  const updateSubscription = useCallback(async (subscriptionId: string, updates: Partial<PaymentSubscription>): Promise<boolean> => {
-    if (!isAuthenticated || !user) {
-      throw new Error('User not authenticated');
-    }
-
-    try {
-      setError(null);
-
-      // Burada backend'e bağlanılacak - subscription update
-      const response = await fetch('/api/payment/update-subscription', {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${user.id}`,
-        },
-        body: JSON.stringify({
-          subscription_id: subscriptionId,
-          updates,
-        }),
-      });
-
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.message || 'Subscription update failed');
+  const updateSubscription = useCallback(
+    async (
+      subscriptionId: string,
+      updates: Partial<PaymentSubscription>
+    ): Promise<boolean> => {
+      if (!isAuthenticated || !user) {
+        throw new Error('User not authenticated');
       }
 
-      const result = await response.json();
-      
-      // Update local state
-      setSubscription(result.subscription);
-      
+      try {
+        setError(null);
 
-      return true;
-    } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'Subscription güncellenemedi';
-      setError(errorMessage);
-      return false;
-    }
-  }, [isAuthenticated, user]);
+        // Burada backend'e bağlanılacak - subscription update
+        const response = await fetch('/api/payment/update-subscription', {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${user.id}`,
+          },
+          body: JSON.stringify({
+            subscription_id: subscriptionId,
+            updates,
+          }),
+        });
+
+        if (!response.ok) {
+          const errorData = await response.json();
+          throw new Error(errorData.message || 'Subscription update failed');
+        }
+
+        const result = await response.json();
+
+        // Update local state
+        setSubscription(result.subscription);
+
+        return true;
+      } catch (err) {
+        const errorMessage =
+          err instanceof Error ? err.message : 'Subscription güncellenemedi';
+        setError(errorMessage);
+        return false;
+      }
+    },
+    [isAuthenticated, user]
+  );
 
   // Cancel subscription
-  const cancelSubscription = useCallback(async (subscriptionId: string): Promise<boolean> => {
-    if (!isAuthenticated || !user) {
-      throw new Error('User not authenticated');
-    }
-
-    try {
-      setError(null);
-
-      // Burada backend'e bağlanılacak - subscription cancellation
-      const response = await fetch('/api/payment/cancel-subscription', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${user.id}`,
-        },
-        body: JSON.stringify({
-          subscription_id: subscriptionId,
-        }),
-      });
-
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.message || 'Subscription cancellation failed');
+  const cancelSubscription = useCallback(
+    async (subscriptionId: string): Promise<boolean> => {
+      if (!isAuthenticated || !user) {
+        throw new Error('User not authenticated');
       }
 
-      const result = await response.json();
-      
-      // Update local state
-      setSubscription(result.subscription);
-      
+      try {
+        setError(null);
 
-      return true;
-    } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'Subscription iptal edilemedi';
-      setError(errorMessage);
-      return false;
-    }
-  }, [isAuthenticated, user]);
+        // Burada backend'e bağlanılacak - subscription cancellation
+        const response = await fetch('/api/payment/cancel-subscription', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${user.id}`,
+          },
+          body: JSON.stringify({
+            subscription_id: subscriptionId,
+          }),
+        });
+
+        if (!response.ok) {
+          const errorData = await response.json();
+          throw new Error(
+            errorData.message || 'Subscription cancellation failed'
+          );
+        }
+
+        const result = await response.json();
+
+        // Update local state
+        setSubscription(result.subscription);
+
+        return true;
+      } catch (err) {
+        const errorMessage =
+          err instanceof Error ? err.message : 'Subscription iptal edilemedi';
+        setError(errorMessage);
+        return false;
+      }
+    },
+    [isAuthenticated, user]
+  );
 
   // Add payment method
-  const addPaymentMethod = useCallback(async (paymentData: PaymentFormData): Promise<boolean> => {
-    if (!isAuthenticated || !user) {
-      throw new Error('User not authenticated');
-    }
-
-    try {
-      setError(null);
-
-      // Burada backend'e bağlanılacak - payment method creation
-      const response = await fetch('/api/payment/add-payment-method', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${user.id}`,
-        },
-        body: JSON.stringify({
-          payment_data: paymentData,
-          user_id: user.id,
-        }),
-      });
-
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.message || 'Payment method creation failed');
+  const addPaymentMethod = useCallback(
+    async (paymentData: PaymentFormData): Promise<boolean> => {
+      if (!isAuthenticated || !user) {
+        throw new Error('User not authenticated');
       }
 
-      const result = await response.json();
-      
-      // Update local state
-      setPaymentMethods(prev => [result.payment_method, ...prev]);
-      
+      try {
+        setError(null);
 
-      return true;
-    } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'Payment method eklenemedi';
-      setError(errorMessage);
-      return false;
-    }
-  }, [isAuthenticated, user]);
+        // Burada backend'e bağlanılacak - payment method creation
+        const response = await fetch('/api/payment/add-payment-method', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${user.id}`,
+          },
+          body: JSON.stringify({
+            payment_data: paymentData,
+            user_id: user.id,
+          }),
+        });
+
+        if (!response.ok) {
+          const errorData = await response.json();
+          throw new Error(
+            errorData.message || 'Payment method creation failed'
+          );
+        }
+
+        const result = await response.json();
+
+        // Update local state
+        setPaymentMethods(prev => [result.payment_method, ...prev]);
+
+        return true;
+      } catch (err) {
+        const errorMessage =
+          err instanceof Error ? err.message : 'Payment method eklenemedi';
+        setError(errorMessage);
+        return false;
+      }
+    },
+    [isAuthenticated, user]
+  );
 
   // Remove payment method
-  const removePaymentMethod = useCallback(async (paymentMethodId: string): Promise<boolean> => {
-    if (!isAuthenticated || !user) {
-      throw new Error('User not authenticated');
-    }
-
-    try {
-      setError(null);
-
-      // Burada backend'e bağlanılacak - payment method removal
-      const response = await fetch('/api/payment/remove-payment-method', {
-        method: 'DELETE',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${user.id}`,
-        },
-        body: JSON.stringify({
-          payment_method_id: paymentMethodId,
-        }),
-      });
-
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.message || 'Payment method removal failed');
+  const removePaymentMethod = useCallback(
+    async (paymentMethodId: string): Promise<boolean> => {
+      if (!isAuthenticated || !user) {
+        throw new Error('User not authenticated');
       }
 
-      // Update local state
-      setPaymentMethods(prev => prev.filter(pm => pm.id !== paymentMethodId));
-      
+      try {
+        setError(null);
 
-      return true;
-    } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'Payment method silinemedi';
-      setError(errorMessage);
-      return false;
-    }
-  }, [isAuthenticated, user]);
+        // Burada backend'e bağlanılacak - payment method removal
+        const response = await fetch('/api/payment/remove-payment-method', {
+          method: 'DELETE',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${user.id}`,
+          },
+          body: JSON.stringify({
+            payment_method_id: paymentMethodId,
+          }),
+        });
+
+        if (!response.ok) {
+          const errorData = await response.json();
+          throw new Error(errorData.message || 'Payment method removal failed');
+        }
+
+        // Update local state
+        setPaymentMethods(prev => prev.filter(pm => pm.id !== paymentMethodId));
+
+        return true;
+      } catch (err) {
+        const errorMessage =
+          err instanceof Error ? err.message : 'Payment method silinemedi';
+        setError(errorMessage);
+        return false;
+      }
+    },
+    [isAuthenticated, user]
+  );
 
   // Set default payment method
-  const setDefaultPaymentMethod = useCallback(async (paymentMethodId: string): Promise<boolean> => {
-    if (!isAuthenticated || !user) {
-      throw new Error('User not authenticated');
-    }
-
-    try {
-      setError(null);
-
-      // Burada backend'e bağlanılacak - default payment method update
-      const response = await fetch('/api/payment/set-default-payment-method', {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${user.id}`,
-        },
-        body: JSON.stringify({
-          payment_method_id: paymentMethodId,
-        }),
-      });
-
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.message || 'Default payment method update failed');
+  const setDefaultPaymentMethod = useCallback(
+    async (paymentMethodId: string): Promise<boolean> => {
+      if (!isAuthenticated || !user) {
+        throw new Error('User not authenticated');
       }
 
-      // Update local state
-      setPaymentMethods(prev => 
-        prev.map(pm => ({
-          ...pm,
-          is_default: pm.id === paymentMethodId,
-        }))
-      );
-      return true;
-    } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'Default payment method güncellenemedi';
-      setError(errorMessage);
-      return false;
-    }
-  }, [isAuthenticated, user]);
+      try {
+        setError(null);
+
+        // Burada backend'e bağlanılacak - default payment method update
+        const response = await fetch(
+          '/api/payment/set-default-payment-method',
+          {
+            method: 'PUT',
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${user.id}`,
+            },
+            body: JSON.stringify({
+              payment_method_id: paymentMethodId,
+            }),
+          }
+        );
+
+        if (!response.ok) {
+          const errorData = await response.json();
+          throw new Error(
+            errorData.message || 'Default payment method update failed'
+          );
+        }
+
+        // Update local state
+        setPaymentMethods(prev =>
+          prev.map(pm => ({
+            ...pm,
+            is_default: pm.id === paymentMethodId,
+          }))
+        );
+        return true;
+      } catch (err) {
+        const errorMessage =
+          err instanceof Error
+            ? err.message
+            : 'Default payment method güncellenemedi';
+        setError(errorMessage);
+        return false;
+      }
+    },
+    [isAuthenticated, user]
+  );
 
   // Refresh payment data
   const refreshPaymentData = useCallback(async (): Promise<void> => {
@@ -545,43 +589,49 @@ export function usePayment(): UsePaymentReturn {
   }, [loadPaymentData]);
 
   // Validate coupon
-  const validateCoupon = useCallback(async (code: string): Promise<{ valid: boolean; discount?: number }> => {
-    try {
-      const response = await fetch('/api/payment/validate-coupon', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ code }),
-      });
+  const validateCoupon = useCallback(
+    async (code: string): Promise<{ valid: boolean; discount?: number }> => {
+      try {
+        const response = await fetch('/api/payment/validate-coupon', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ code }),
+        });
 
-      if (!response.ok) {
+        if (!response.ok) {
+          return { valid: false };
+        }
+
+        const result = await response.json();
+        return { valid: true, discount: result.discount };
+      } catch {
         return { valid: false };
       }
-
-      const result = await response.json();
-      return { valid: true, discount: result.discount };
-    } catch {
-      return { valid: false };
-    }
-  }, []);
+    },
+    []
+  );
 
   // Calculate price
-  const calculatePrice = useCallback(async (tierId: string, couponCode?: string): Promise<number> => {
-    const tier = pricingTiers.find(t => t.id === tierId);
-    if (!tier) return 0;
+  const calculatePrice = useCallback(
+    async (tierId: string, couponCode?: string): Promise<number> => {
+      const tier = pricingTiers.find(t => t.id === tierId);
+      if (!tier) return 0;
 
-    let price = tier.price;
+      let price = tier.price;
 
-    if (couponCode) {
-      const coupon = await validateCoupon(couponCode);
-      if (coupon.valid && coupon.discount) {
-        price = Math.max(0, price - coupon.discount);
+      if (couponCode) {
+        const coupon = await validateCoupon(couponCode);
+        if (coupon.valid && coupon.discount) {
+          price = Math.max(0, price - coupon.discount);
+        }
       }
-    }
 
-    return price;
-  }, [pricingTiers, validateCoupon]);
+      return price;
+    },
+    [pricingTiers, validateCoupon]
+  );
 
   // Load payment data on mount and when user changes
   useEffect(() => {
@@ -594,7 +644,7 @@ export function usePayment(): UsePaymentReturn {
     paymentMethods,
     transactions,
     pricingTiers,
-    
+
     // Operations
     createSubscription,
     updateSubscription,
@@ -602,7 +652,7 @@ export function usePayment(): UsePaymentReturn {
     addPaymentMethod,
     removePaymentMethod,
     setDefaultPaymentMethod,
-    
+
     // Utility functions
     getPaymentPermissions,
     canAccessFeature,
@@ -610,7 +660,7 @@ export function usePayment(): UsePaymentReturn {
     refreshPaymentData,
     validateCoupon,
     calculatePrice,
-    
+
     // Loading states
     loading,
     error,

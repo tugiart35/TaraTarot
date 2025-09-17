@@ -2,13 +2,7 @@
 
 import { UserProfile } from '@/types/dashboard.types';
 import { formatDate, getMemberSince } from '@/utils/dashboard-utils';
-import {
-  Coins,
-  BookOpen,
-  Calendar,
-  Award,
-  RefreshCw
-} from 'lucide-react';
+import { Coins, BookOpen, Calendar, Award, RefreshCw } from 'lucide-react';
 
 interface StatsCardsProps {
   profile: UserProfile | null;
@@ -26,75 +20,101 @@ export default function StatsCards({
   isAdmin,
   recentReadings,
   refreshCreditBalance,
-  translate
+  translate,
 }: StatsCardsProps) {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8">
+    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8'>
       {/* Kredi bakiyesi kartı */}
-      <div className="card hover-lift p-6">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center">
-            <div className="p-2 bg-gold/20 rounded-lg">
-              <Coins className="h-6 w-6 text-gold" />
+      <div className='card hover-lift p-6'>
+        <div className='flex items-center justify-between'>
+          <div className='flex items-center'>
+            <div className='p-2 bg-gold/20 rounded-lg'>
+              <Coins className='h-6 w-6 text-gold' />
             </div>
-            <div className="ml-4">
-              <p className="text-sm font-medium text-text-muted">{translate('dashboard.creditBalance', 'Kredi Bakiyesi')}</p>
-              <p className="text-2xl font-bold text-text-celestial">{profile?.credit_balance || 0}</p>
+            <div className='ml-4'>
+              <p className='text-sm font-medium text-text-muted'>
+                {translate('dashboard.creditBalance', 'Kredi Bakiyesi')}
+              </p>
+              <p className='text-2xl font-bold text-text-celestial'>
+                {profile?.credit_balance || 0}
+              </p>
             </div>
           </div>
           {/* Yenile butonu */}
           <button
             onClick={refreshCreditBalance} // Kredi bakiyesini yenile
-            className="p-2 hover:bg-gold/10 rounded-lg transition-colors"
+            className='p-2 hover:bg-gold/10 rounded-lg transition-colors'
             title={translate('common.refresh', 'Kredi bakiyesini yenile')}
           >
-            <RefreshCw className="h-4 w-4 text-gold" />
+            <RefreshCw className='h-4 w-4 text-gold' />
           </button>
         </div>
       </div>
-      
+
       {/* Toplam okuma sayısı kartı */}
-      <div className="card hover-lift p-6">
-        <div className="flex items-center">
-          <div className="p-2 bg-success/20 rounded-lg">
-            <BookOpen className="h-6 w-6 text-success" />
+      <div className='card hover-lift p-6'>
+        <div className='flex items-center'>
+          <div className='p-2 bg-success/20 rounded-lg'>
+            <BookOpen className='h-6 w-6 text-success' />
           </div>
-          <div className="ml-4">
-          <p className="text-sm text-admin-text-muted">{translate('dashboard.readingsPage.totalReadings', 'Toplam Okuma')}</p>
-          <p className="text-2xl font-bold text-admin-text">{totalCount}</p>
-            <p className="text-xs text-text-muted">{translate('dashboard.last30Days', 'Son 30 gün')}</p>
+          <div className='ml-4'>
+            <p className='text-sm text-admin-text-muted'>
+              {translate(
+                'dashboard.readingsPage.totalReadings',
+                'Toplam Okuma'
+              )}
+            </p>
+            <p className='text-2xl font-bold text-admin-text'>{totalCount}</p>
+            <p className='text-xs text-text-muted'>
+              {translate('dashboard.last30Days', 'Son 30 gün')}
+            </p>
           </div>
         </div>
       </div>
-      
+
       {/* Üyelik süresi kartı */}
-      <div className="card hover-lift p-6">
-        <div className="flex items-center">
-          <div className="p-2 bg-purple/20 rounded-lg">
-            <Calendar className="h-6 w-6 text-purple" />
+      <div className='card hover-lift p-6'>
+        <div className='flex items-center'>
+          <div className='p-2 bg-purple/20 rounded-lg'>
+            <Calendar className='h-6 w-6 text-purple' />
           </div>
-          <div className="ml-4">
-            <p className="text-sm font-medium text-text-muted">{translate('dashboard.membershipDuration', 'Üyelik Süresi')}</p>
-            <p className="text-2xl font-bold text-text-celestial">
-              {profile?.created_at ? getMemberSince(profile.created_at) : translate('common.new', 'Yeni')}
+          <div className='ml-4'>
+            <p className='text-sm font-medium text-text-muted'>
+              {translate('dashboard.membershipDuration', 'Üyelik Süresi')}
             </p>
-            <p className="text-xs text-text-muted">
-              {profile?.created_at ? formatDate(profile.created_at) : translate('common.today', 'Bugün')}
+            <p className='text-2xl font-bold text-text-celestial'>
+              {profile?.created_at
+                ? getMemberSince(profile.created_at)
+                : translate('common.new', 'Yeni')}
+            </p>
+            <p className='text-xs text-text-muted'>
+              {profile?.created_at
+                ? formatDate(profile.created_at)
+                : translate('common.today', 'Bugün')}
             </p>
           </div>
         </div>
       </div>
-      
+
       {/* Kullanıcı seviyesi kartı */}
-      <div className="card hover-lift p-6">
-        <div className="flex items-center">
-          <div className="p-2 bg-warning/20 rounded-lg">
-            <Award className="h-6 w-6 text-warning" />
+      <div className='card hover-lift p-6'>
+        <div className='flex items-center'>
+          <div className='p-2 bg-warning/20 rounded-lg'>
+            <Award className='h-6 w-6 text-warning' />
           </div>
-          <div className="ml-4">
-            <p className="text-sm font-medium text-text-muted">{translate('dashboard.userLevel', 'Kullanıcı Seviyesi')}</p>
-            <p className="text-2xl font-bold text-text-celestial">
-              {isAdmin ? translate('dashboard.admin', 'Admin') : recentReadings.length > 30 ? translate('dashboard.expert', 'Uzman') : recentReadings.length > 13 ? translate('dashboard.intermediate', 'Orta') : translate('dashboard.beginner', 'Başlangıç')} {/* Okuma sayısına göre seviye */}
+          <div className='ml-4'>
+            <p className='text-sm font-medium text-text-muted'>
+              {translate('dashboard.userLevel', 'Kullanıcı Seviyesi')}
+            </p>
+            <p className='text-2xl font-bold text-text-celestial'>
+              {isAdmin
+                ? translate('dashboard.admin', 'Admin')
+                : recentReadings.length > 30
+                  ? translate('dashboard.expert', 'Uzman')
+                  : recentReadings.length > 13
+                    ? translate('dashboard.intermediate', 'Orta')
+                    : translate('dashboard.beginner', 'Başlangıç')}{' '}
+              {/* Okuma sayısına göre seviye */}
             </p>
           </div>
         </div>

@@ -18,7 +18,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import { supabase } from '@/lib/supabase/client';
 import { logError, logSupabaseError } from '@/lib/logger';
 import { useAuth } from '@/hooks/useAuth';
@@ -67,9 +67,9 @@ interface StatCard {
 
 export default function AdminDashboard() {
   const router = useRouter();
+  const pathname = usePathname();
 
   // Pathname'den locale'i çıkar
-  const pathname = window.location.pathname;
   const locale = pathname.split('/')[1] || 'tr';
 
   const { user, isAdmin, loading: authLoading } = useAuth();
@@ -86,14 +86,18 @@ export default function AdminDashboard() {
 
   // Admin kontrolü - sadece bir kez çalıştır
   useEffect(() => {
-    if (!authLoading && !user && !isRedirecting) {
-      setIsRedirecting(true);
-      router.push(`/${locale}/pakize/auth`);
-    } else if (!authLoading && user && !isAdmin && !isRedirecting) {
-      setIsRedirecting(true);
-      router.push(`/${locale}/pakize/auth`);
+    if (!authLoading && !isRedirecting) {
+      if (!user) {
+        // Kullanıcı giriş yapmamış
+        setIsRedirecting(true);
+        router.push(`/${locale}/pakize/auth`);
+      } else if (!isAdmin) {
+        // Kullanıcı giriş yapmış ama admin değil
+        setIsRedirecting(true);
+        router.push(`/${locale}/pakize/auth`);
+      }
     }
-  }, [authLoading, user, isAdmin, isRedirecting, router, locale]); // Router dependency eklendi
+  }, [authLoading, user, isAdmin, isRedirecting, router, locale]);
 
   useEffect(() => {
     // Sadece admin kullanıcı için stats yükle
@@ -288,8 +292,16 @@ export default function AdminDashboard() {
     },
   ];
 
-  // Auth loading veya stats loading durumunda loading göster
-  if (authLoading || (loading && user && isAdmin)) {
+  // Debug bilgileri
+  console.log('Pakize Page Debug:', {
+    authLoading,
+    user: user?.email,
+    isAdmin,
+    isRedirecting
+  });
+
+  // Auth loading durumunda loading göster
+  if (authLoading) {
     return (
       <div className='flex items-center justify-center h-96'>
         <div className='admin-card rounded-2xl p-8 text-center'>
@@ -297,9 +309,23 @@ export default function AdminDashboard() {
             <Activity className='h-12 w-12 text-blue-500 mx-auto' />
           </div>
           <div className='admin-text-shimmer text-xl font-semibold'>
-            {authLoading
-              ? 'Yetkilendirme kontrol ediliyor...'
-              : 'Dashboard yükleniyor...'}
+            Yetkilendirme kontrol ediliyor... (Debug: {authLoading ? 'true' : 'false'})
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Yönlendirme yapılıyorsa loading göster
+  if (isRedirecting) {
+    return (
+      <div className='flex items-center justify-center h-96'>
+        <div className='admin-card rounded-2xl p-8 text-center'>
+          <div className='admin-pulse mb-4'>
+            <Activity className='h-12 w-12 text-blue-500 mx-auto' />
+          </div>
+          <div className='admin-text-shimmer text-xl font-semibold'>
+            Yönlendiriliyor...
           </div>
         </div>
       </div>
@@ -309,6 +335,22 @@ export default function AdminDashboard() {
   // Admin değilse veya kullanıcı yoksa hiçbir şey gösterme (redirect olacak)
   if (!user || !isAdmin) {
     return null;
+  }
+
+  // Stats loading durumunda loading göster
+  if (loading) {
+    return (
+      <div className='flex items-center justify-center h-96'>
+        <div className='admin-card rounded-2xl p-8 text-center'>
+          <div className='admin-pulse mb-4'>
+            <Activity className='h-12 w-12 text-blue-500 mx-auto' />
+          </div>
+          <div className='admin-text-shimmer text-xl font-semibold'>
+            Dashboard yükleniyor...
+          </div>
+        </div>
+      </div>
+    );
   }
 
   return (

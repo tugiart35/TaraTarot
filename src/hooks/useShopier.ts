@@ -40,11 +40,11 @@ Kodun okunabilirliği, optimizasyonu, yeniden kullanılabilirliği ve güvenliğ
 
 import { useState, useCallback } from 'react';
 import { useAuth } from './useAuth';
-import { 
-  createShopierPayment, 
-  ShopierPaymentRequest, 
+import {
+  createShopierPayment,
+  ShopierPaymentRequest,
   ShopierPaymentResponse,
-  createTestPayment 
+  createTestPayment,
 } from '@/lib/payment/shopier-config';
 import { supabase } from '@/lib/supabase/client';
 
@@ -63,82 +63,93 @@ export const useShopier = (): UseShopierReturn => {
   const [success, setSuccess] = useState<string | null>(null);
   const [paymentUrl, setPaymentUrl] = useState<string | null>(null);
 
-  const initiatePayment = useCallback(async (packageId: string, packageData: any) => {
-    if (!user) {
-      setError('Lütfen giriş yapın');
-      return;
-    }
-
-    setLoading(true);
-    setError(null);
-    setSuccess(null);
-    setPaymentUrl(null);
-
-    try {
-      // Kullanıcı profil bilgilerini al
-      const { data: profile, error: profileError } = await supabase
-        .from('profiles')
-        .select('full_name, email')
-        .eq('id', user.id)
-        .single();
-
-      if (profileError || !profile) {
-        throw new Error('Kullanıcı profili bulunamadı');
+  const initiatePayment = useCallback(
+    async (packageId: string, packageData: any) => {
+      if (!user) {
+        setError('Lütfen giriş yapın');
+        return;
       }
 
-      // Bonus kredi hesapla
-      const bonusCredits = packageData.credits >= 500 ? 100 : 
-                          packageData.credits >= 300 ? 30 : 0;
-      const totalCredits = packageData.credits + bonusCredits;
+      setLoading(true);
+      setError(null);
+      setSuccess(null);
+      setPaymentUrl(null);
 
-      // Ödeme isteği oluştur
-      const paymentRequest: ShopierPaymentRequest = {
-        orderId: `ORDER_${Date.now()}_${user.id}`,
-        amount: packageData.price_try,
-        currency: 'TRY',
-        description: `${packageData.name} - ${totalCredits} kredi`,
-        customerEmail: profile.email || user.email || '',
-        customerName: profile.full_name || 'Kullanıcı',
-        returnUrl: `${window.location.origin}/payment/success`,
-        cancelUrl: `${window.location.origin}/payment/cancel`,
-        packageId: packageId,
-        packageName: packageData.name,
-        credits: packageData.credits,
-        bonusCredits: bonusCredits
-      };
+      try {
+        // Kullanıcı profil bilgilerini al
+        const { data: profile, error: profileError } = await supabase
+          .from('profiles')
+          .select('full_name, email')
+          .eq('id', user.id)
+          .single();
 
-      // Test modunda test ödeme kullan
-      const isTestMode = true; // Test için her zaman test modu
-      const finalPaymentRequest = isTestMode 
-        ? createTestPayment(packageId, user.id)
-        : paymentRequest;
+        if (profileError || !profile) {
+          throw new Error('Kullanıcı profili bulunamadı');
+        }
 
-      // Shopier ödeme formu oluştur
-      const paymentResponse: ShopierPaymentResponse = await createShopierPayment(finalPaymentRequest);
+        // Bonus kredi hesapla
+        const bonusCredits =
+          packageData.credits >= 500
+            ? 100
+            : packageData.credits >= 300
+              ? 30
+              : 0;
+        const totalCredits = packageData.credits + bonusCredits;
 
-      if (paymentResponse.success && paymentResponse.paymentUrl) {
-        setPaymentUrl(paymentResponse.paymentUrl);
-        setSuccess('Ödeme sayfasına yönlendiriliyorsunuz...');
-        
-        // Ödeme sayfasına yönlendir
-        window.location.href = paymentResponse.paymentUrl;
-      } else {
-        throw new Error(paymentResponse.error || 'Ödeme formu oluşturulamadı');
+        // Ödeme isteği oluştur
+        const paymentRequest: ShopierPaymentRequest = {
+          orderId: `ORDER_${Date.now()}_${user.id}`,
+          amount: packageData.price_try,
+          currency: 'TRY',
+          description: `${packageData.name} - ${totalCredits} kredi`,
+          customerEmail: profile.email || user.email || '',
+          customerName: profile.full_name || 'Kullanıcı',
+          returnUrl: `${window.location.origin}/payment/success`,
+          cancelUrl: `${window.location.origin}/payment/cancel`,
+          packageId: packageId,
+          packageName: packageData.name,
+          credits: packageData.credits,
+          bonusCredits: bonusCredits,
+        };
+
+        // Test modunda test ödeme kullan
+        const isTestMode = true; // Test için her zaman test modu
+        const finalPaymentRequest = isTestMode
+          ? createTestPayment(packageId, user.id)
+          : paymentRequest;
+
+        // Shopier ödeme formu oluştur
+        const paymentResponse: ShopierPaymentResponse =
+          await createShopierPayment(finalPaymentRequest);
+
+        if (paymentResponse.success && paymentResponse.paymentUrl) {
+          setPaymentUrl(paymentResponse.paymentUrl);
+          setSuccess('Ödeme sayfasına yönlendiriliyorsunuz...');
+
+          // Ödeme sayfasına yönlendir
+          window.location.href = paymentResponse.paymentUrl;
+        } else {
+          throw new Error(
+            paymentResponse.error || 'Ödeme formu oluşturulamadı'
+          );
+        }
+      } catch (err) {
+        console.error('Shopier payment initiation error:', err);
+        setError(
+          err instanceof Error ? err.message : 'Ödeme işlemi başlatılamadı'
+        );
+      } finally {
+        setLoading(false);
       }
-
-    } catch (err) {
-      console.error('Shopier payment initiation error:', err);
-      setError(err instanceof Error ? err.message : 'Ödeme işlemi başlatılamadı');
-    } finally {
-      setLoading(false);
-    }
-  }, [user]);
+    },
+    [user]
+  );
 
   return {
     initiatePayment,
     loading,
     error,
     success,
-    paymentUrl
+    paymentUrl,
   };
 };

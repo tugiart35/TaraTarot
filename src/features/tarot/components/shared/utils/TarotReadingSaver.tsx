@@ -120,7 +120,7 @@ export interface SaveReadingParams {
   startTime: number;
   user?: any;
   costCredits?: number; // optional credit cost to charge atomically
-  spreadName?: string;  // optional spread name for metadata
+  spreadName?: string; // optional spread name for metadata
 }
 
 export class TarotReadingSaver {
@@ -129,15 +129,25 @@ export class TarotReadingSaver {
    */
   static async saveReading(params: SaveReadingParams): Promise<SaveResult> {
     try {
-      const { user, selectedCards, isReversed, interpretation, personalInfo, questions, positionsInfo, readingType, startTime } = params;
+      const {
+        user,
+        selectedCards,
+        isReversed,
+        interpretation,
+        personalInfo,
+        questions,
+        positionsInfo,
+        readingType,
+        startTime,
+      } = params;
 
       // Guest kullanıcı kontrolü
       if (!user?.id) {
-        return { 
-          success: true, 
+        return {
+          success: true,
           id: 'guest-session',
           userId: 'guest',
-          message: 'Guest kullanıcı için veri saklanmadı'
+          message: 'Guest kullanıcı için veri saklanmadı',
         };
       }
 
@@ -167,24 +177,26 @@ export class TarotReadingSaver {
           personalInfo,
           userQuestions: {
             concern: {
-              question: 'Aşk hayatınızda sizi en çok endişelendiren konu nedir?',
-              answer: questions.concern
+              question:
+                'Aşk hayatınızda sizi en çok endişelendiren konu nedir?',
+              answer: questions.concern,
             },
             understanding: {
               question: 'Bu aşk açılımı ile neyi anlamak istiyorsunuz?',
-              answer: questions.understanding
+              answer: questions.understanding,
             },
             emotional: {
               question: 'Şu anda duygusal olarak nasıl hissediyorsunuz?',
-              answer: questions.emotional
-            }
+              answer: questions.emotional,
+            },
           },
         },
         metadata: {
           duration: Date.now() - startTime,
           platform: 'web',
           ipHash: 'hashed_ip_address', // Güvenlik için IP hash
-          userAgent: typeof navigator !== 'undefined' ? navigator.userAgent : '',
+          userAgent:
+            typeof navigator !== 'undefined' ? navigator.userAgent : '',
         },
         timestamp: new Date().toISOString(),
         createdAt: new Date(),
@@ -192,23 +204,26 @@ export class TarotReadingSaver {
       };
 
       // RPC ile atomik kredi düş + okuma oluştur
-      const { data: rpcResult, error: rpcError } = await supabase.rpc('fn_create_reading_with_debit', {
-        p_user_id: user.id,
-        p_reading_type: readingData.readingType,
-        p_spread_name: params.spreadName || 'Aşk Yayılımı',
-        p_title: readingData.title,
-        p_interpretation: readingData.interpretation,
-        p_cards: readingData.cards.selectedCards,
-        p_questions: readingData.questions,
-        p_cost_credits: params.costCredits ?? 0,
-        p_metadata: {
-          duration: readingData.metadata.duration,
-          platform: readingData.metadata.platform,
-          ipHash: readingData.metadata.ipHash,
-          userAgent: readingData.metadata.userAgent
-        },
-        p_idempotency_key: `reading_${user.id}_${readingData.timestamp}`
-      });
+      const { data: rpcResult, error: rpcError } = await supabase.rpc(
+        'fn_create_reading_with_debit',
+        {
+          p_user_id: user.id,
+          p_reading_type: readingData.readingType,
+          p_spread_name: params.spreadName || 'Aşk Yayılımı',
+          p_title: readingData.title,
+          p_interpretation: readingData.interpretation,
+          p_cards: readingData.cards.selectedCards,
+          p_questions: readingData.questions,
+          p_cost_credits: params.costCredits ?? 0,
+          p_metadata: {
+            duration: readingData.metadata.duration,
+            platform: readingData.metadata.platform,
+            ipHash: readingData.metadata.ipHash,
+            userAgent: readingData.metadata.userAgent,
+          },
+          p_idempotency_key: `reading_${user.id}_${readingData.timestamp}`,
+        }
+      );
 
       if (rpcError) {
         console.error('RPC okuma oluşturma hatası:', rpcError);
@@ -216,7 +231,9 @@ export class TarotReadingSaver {
       }
 
       // Yeni şemada tüm veriler readings tablosunda questions JSONB alanında saklanıyor
-      console.log('Form verileri readings tablosunda questions alanında saklandı');
+      console.log(
+        'Form verileri readings tablosunda questions alanında saklandı'
+      );
 
       // Email gönderimi (asenkron, hata durumunda okuma kaydını etkilemez)
       // Server-side API endpoint'e istek gönder
@@ -224,17 +241,16 @@ export class TarotReadingSaver {
         console.error('Email gönderimi başarısız:', error);
       });
 
-      return { 
-        success: true, 
+      return {
+        success: true,
         id: rpcResult?.id,
-        userId: user.id
+        userId: user.id,
       };
-
     } catch (error) {
       console.error('Okuma kaydetme hatası:', error);
-      return { 
-        success: false, 
-        error: error instanceof Error ? error.message : 'Bilinmeyen hata'
+      return {
+        success: false,
+        error: error instanceof Error ? error.message : 'Bilinmeyen hata',
       };
     }
   }
@@ -250,15 +266,20 @@ export class TarotReadingSaver {
   /**
    * Email gönderimi için API endpoint'e istek gönder
    */
-  private static async triggerEmailSending(readingId: string | undefined, _readingData: ReadingData): Promise<void> {
+  private static async triggerEmailSending(
+    readingId: string | undefined,
+    _readingData: ReadingData
+  ): Promise<void> {
     if (!readingId) {
       console.error('❌ Reading ID bulunamadı, email gönderilemedi');
       return;
     }
 
     try {
-      console.log('🔮 Email gönderimi API endpoint\'e istek gönderiliyor...', { readingId });
-      
+      console.log("🔮 Email gönderimi API endpoint'e istek gönderiliyor...", {
+        readingId,
+      });
+
       // Server-side API endpoint'e sadece readingId gönder
       // API kendi Supabase'den gerçek veriyi çekecek
       const response = await fetch('/api/send-reading-email', {
@@ -267,8 +288,8 @@ export class TarotReadingSaver {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          readingId
-        })
+          readingId,
+        }),
       });
 
       if (response.ok) {
@@ -283,11 +304,13 @@ export class TarotReadingSaver {
     }
   }
 
-
   /**
    * Veri validasyonu
    */
-  static validateReadingData(data: Partial<ReadingData>): { isValid: boolean; errors: string[] } {
+  static validateReadingData(data: Partial<ReadingData>): {
+    isValid: boolean;
+    errors: string[];
+  } {
     const errors: string[] = [];
 
     if (!data.userId) {
@@ -308,7 +331,7 @@ export class TarotReadingSaver {
 
     return {
       isValid: errors.length === 0,
-      errors
+      errors,
     };
   }
 }

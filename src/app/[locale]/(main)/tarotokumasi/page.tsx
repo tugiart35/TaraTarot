@@ -72,6 +72,7 @@ import {
 
 export default function TarotPage() {
   const [selectedSpread, setSelectedSpread] = useState('love-spread');
+  const [showDescription, setShowDescription] = useState(true); // Açıklama gösterilsin mi?
   const [lastReading, setLastReading] = useState<{
     cards: TarotCard[];
     interpretation: string;
@@ -95,6 +96,12 @@ export default function TarotPage() {
   const handleSpreadSelect = (spreadId: string) => {
     setSelectedSpread(spreadId);
     setLastReading(null);
+    setShowDescription(true); // Yeni açılım seçildiğinde açıklamayı göster
+  };
+
+  // Okuma tipi seçildiğinde açıklamayı gizle
+  const handleReadingTypeSelected = () => {
+    setShowDescription(false);
   };
 
   return (
@@ -104,10 +111,14 @@ export default function TarotPage() {
           spreads={tarotSpreads}
           selectedSpread={selectedSpread}
           onSpreadSelect={handleSpreadSelect}
+          showDescription={showDescription}
         />
         <div className='mb-8'>
           {CurrentComponent ? (
-            <CurrentComponent onComplete={handleReadingComplete} />
+            <CurrentComponent 
+              onComplete={handleReadingComplete} 
+              onReadingTypeSelected={handleReadingTypeSelected}
+            />
           ) : null}
         </div>
         <LastReadingSummary

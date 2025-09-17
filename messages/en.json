@@ -67,58 +67,48 @@
     "breadcrumb": "Breadcrumb"
   },
   "auth": {
-    "signIn": {
-      "title": "Sign In",
-      "subtitle": "Sign in to your account",
-      "email": "Email",
-      "password": "Password",
-      "rememberMe": "Remember Me",
-      "forgotPassword": "Forgot Password",
-      "signInButton": "Sign In",
-      "signUpLink": "Don't have an account? Sign up",
-      "googleSignIn": "Sign in with Google",
-      "facebookSignIn": "Sign in with Facebook"
-    },
-    "signUp": {
-      "title": "Sign Up",
-      "subtitle": "Create a new account",
-      "email": "Email",
-      "password": "Password",
-      "confirmPassword": "Confirm Password",
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "acceptTerms": "I accept the terms",
-      "signUpButton": "Sign Up",
-      "signInLink": "Already have an account? Sign in",
-      "googleSignUp": "Sign up with Google",
-      "facebookSignUp": "Sign up with Facebook"
-    },
-    "errors": {
-      "invalidCredentials": "Invalid email or password",
-      "emailAlreadyExists": "This email address is already in use",
-      "weakPassword": "Password is too weak",
+    "page": {
+      "mysticalEntry": "Enter the Mystical World",
+      "journeyStart": "Start Your Journey",
+      "emailPlaceholder": "Your email address",
+      "passwordPlaceholder": "Your password",
+      "confirmPasswordPlaceholder": "Confirm your password",
+      "namePlaceholder": "First Name",
+      "surnamePlaceholder": "Last Name",
+      "birthDatePlaceholder": "Birth Date",
+      "genderPlaceholder": "Select Gender",
+      "genderMale": "Male",
+      "genderFemale": "Female",
+      "genderOther": "Other",
+      "genderPreferNotToSay": "Prefer not to say",
+      "processing": "⏳ Processing...",
+      "signIn": "🔮 Sign In",
+      "signUp": "✨ Sign Up",
+      "successLogin": "Login successful! Redirecting...",
+      "successRegister": "Registration successful! Please check your email.",
+      "errorOccurred": "An error occurred",
+      "noAccount": "Don't have an account? Sign up",
+      "hasAccount": "Already have an account? Sign in",
       "emailRequired": "Email address is required",
+      "emailInvalid": "Please enter a valid email address",
       "passwordRequired": "Password is required",
-      "passwordsDoNotMatch": "Passwords do not match",
-      "invalidEmail": "Invalid email address",
-      "accountLocked": "Account is locked",
-      "accountDisabled": "Account is disabled",
-      "sessionExpired": "Session has expired",
-      "networkError": "Network error",
-      "serverError": "Server error",
-      "unknownError": "Unknown error"
+      "passwordMinLength": "Password must be at least 6 characters",
+      "confirmPasswordRequired": "Password confirmation is required",
+      "passwordsNotMatch": "Passwords do not match",
+      "nameRequired": "First name is required",
+      "nameMinLength": "First name must be at least 2 characters",
+      "surnameRequired": "Last name is required",
+      "surnameMinLength": "Last name must be at least 2 characters",
+      "birthDateRequired": "Birth date is required",
+      "birthDateMinAge": "Users under 13 cannot register",
+      "birthDateMaxAge": "Please enter a valid birth date",
+      "genderRequired": "Gender selection is required",
+      "invalidCredentials": "Invalid email or password",
+      "userAlreadyExists": "This email address is already registered",
+      "redirecting": ""
     },
-    "notice": {
-      "checkEmail": "Check your email and confirm your registration",
-      "emailConfirmed": "Your email has been confirmed! 100 credits have been gifted.",
-      "passwordResetSent": "Password reset link sent",
-      "accountCreated": "Account created successfully",
-      "emailVerified": "Email address verified",
-      "passwordChanged": "Password changed successfully",
-      "profileUpdated": "Profile updated",
-      "confirmationEmailSent": "Confirmation email sent",
-      "confirmationFailed": "Email confirmation failed"
-    }
+    "signIn": "Sign In",
+    "signOut": "Sign Out"
   },
   "validation": {
     "required": "This field is required",
@@ -188,52 +178,25 @@
   },
   "reading": {
     "types": {
-      "simple": "Simple",
-      "detailed": "Detailed",
-      "written": "Written",
+      "simple": "Simple Reading",
+      "detailed": "Audio Reading",
+      "written": "Written Reading",
       "simpleShort": "Simple",
-      "detailedShort": "Detailed",
-      "writtenShort": "Written",
-      "threeCard": "Three Card",
-      "love": "Love",
-      "career": "Career",
-      "daily": "Daily",
-      "weekly": "Weekly",
-      "monthly": "Monthly",
-      "yearly": "Yearly",
-      "custom": "Custom"
-    },
-    "positions": {
-      "past": "Past",
-      "present": "Present",
-      "future": "Future",
-      "situation": "Situation",
-      "action": "Action",
-      "outcome": "Outcome",
-      "you": "You",
-      "partner": "Partner",
-      "relationship": "Relationship",
-      "obstacle": "Obstacle",
-      "advice": "Advice"
-    },
-    "actions": {
-      "startReading": "Start Reading",
-      "shuffleCards": "Shuffle Cards",
-      "selectCards": "Select Cards",
-      "revealCards": "Reveal Cards",
-      "interpretCards": "Interpret Cards",
-      "saveReading": "Save Reading",
-      "shareReading": "Share Reading",
-      "newReading": "New Reading",
-      "continueReading": "Continue Reading"
+      "detailedShort": "Audio",
+      "writtenShort": "Written"
     },
     "messages": {
-      "noSelection": "Select a reading type",
-      "simpleSelected": "Simple reading selected",
-      "detailedSelected": "Audio reading selected",
-      "writtenSelected": "Written reading selected",
-      "detailedDescription": "Audio and detailed interpretation",
-      "writtenDescription": "Written and comprehensive interpretation"
+      "noSelection": "Please select a reading type before selecting cards",
+      "simpleSelected": "Simple reading selected - you can start drawing cards",
+      "detailedSelected": "Audio Reading selected",
+      "writtenSelected": "Written Reading selected",
+      "adminRequired": "Insufficient credits for Audio Reading",
+      "writtenRequired": "Insufficient credits for Written Reading",
+      "simpleDescription": "Simple written audio reading",
+      "detailedDescription": "Simple written audio reading",
+      "writtenDescription": "Simple written audio reading",
+      "cardsLocked": "Cards Locked",
+      "selectReadingTypeFirst": "You must choose a reading type first to select cards."
     }
   },
   "errors": {
@@ -440,19 +403,6 @@
     "creditBalance": "Credit Balance",
     "creditPackages": "Credit Packages",
     "accountSettings": "Account Settings",
-    "creditHistory": "Credit History",
-    "readingHistory": "Reading History",
-    "statistics": "Statistics",
-    "totalReadings": "Total Readings",
-    "membershipDuration": "Membership Duration",
-    "userLevel": "User Level",
-    "admin": "Admin",
-    "user": "User",
-    "beginner": "Beginner",
-    "intermediate": "Intermediate",
-    "expert": "Expert",
-    "readings": "Readings",
-    "backToDashboard": "Back to Dashboard",
     "creditHistory": {
       "title": "Credit History",
       "description": "Track your credit purchases, usage, and transaction history",
@@ -486,6 +436,18 @@
       "csvAmount": "Amount",
       "csvDescription": "Description"
     },
+    "readingHistory": "Reading History",
+    "statistics": "Statistics",
+    "totalReadings": "Total Readings",
+    "membershipDuration": "Membership Duration",
+    "userLevel": "User Level",
+    "admin": "Admin",
+    "user": "User",
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "expert": "Expert",
+    "readings": "Readings",
+    "backToDashboard": "Back to Dashboard",
     "packages": {
       "title": "Credit Packages",
       "pageTitle": "Credit Packages",
@@ -532,61 +494,6 @@
       "purchaseError": "An error occurred while purchasing the package. Please try again.",
       "profileError": "Profile information could not be loaded"
     },
-    "statistics": {
-      "title": "Statistics & Insights",
-      "subtitle": "Track your progress on your mystical journey",
-      "calculating": "Calculating statistics...",
-      "refresh": "Refresh",
-      "backToDashboard": "Back to Dashboard",
-      "insightsTitle": "Your Mystical Insights",
-      "insightsDesc": "In-depth analysis of your numerological guidance and reading habits",
-      "overview": "Overview",
-      "numerology": "Numerology",
-      "patterns": "Patterns",
-      "totalReadings": "Total Readings",
-      "thisMonth": "This month",
-      "vsLastMonth": "vs last month",
-      "totalCreditsSpent": "Total Credits Spent",
-      "average": "Average",
-      "perReading": "reading",
-      "dailyStreak": "Daily Streak",
-      "longest": "Longest",
-      "days": "days",
-      "activeStreak": "Active streak",
-      "mostExpensiveReading": "Most Expensive Reading",
-      "creditCost": "Credit cost",
-      "premiumReading": "Premium reading",
-      "readingHabits": "Reading Habits",
-      "trendAnalysis": "Trend Analysis",
-      "readingTypes": "Reading Types",
-      "monthlyTrend": "Monthly Trend (Last 6 Months)",
-      "weeklyActivity": "Weekly Activity (Last 7 Days)",
-      "personalCycles": "Personal Cycles",
-      "lifePinnacles": "Life Pinnacles",
-      "lifeChallenges": "Life Challenges",
-      "activityPatterns": "Activity Patterns",
-      "achievementsGoals": "Achievements & Goals",
-      "readingTypesDistribution": "Reading Types Distribution",
-      "personalInsights": "Personal Insights & Recommendations",
-      "numerologyProfile": "Numerology Profile",
-      "name": "Name",
-      "surname": "Surname",
-      "notSpecified": "Not specified",
-      "birthDate": "Birth Date",
-      "fullNameRecommended": "Full name and surname are recommended for numerology calculations",
-      "lifePath": "Life Path",
-      "expressionDestiny": "Expression/Destiny",
-      "soulUrge": "Soul Urge",
-      "personality": "Personality",
-      "birthdayNumber": "Birthday Number",
-      "maturity": "Maturity",
-      "masterNumber": "Master Number",
-      "personalYear": "Personal Year",
-      "personalMonth": "Personal Month",
-      "personalDay": "Personal Day",
-      "analysis": "Analysis",
-      "recommendations": "Recommendations"
-    },
     "readingsPage": {
       "title": "My Readings",
       "subtitle": "All your mystical experiences",
@@ -628,7 +535,6 @@
         "download": "Download"
       }
     },
-    "statistics": "Statistics",
     "settings": "Settings",
     "profile": "Profile",
     "signOut": "Sign Out",
@@ -645,7 +551,6 @@
     "buyCredits": "Buy Credits",
     "last30Days": "Last 30 days",
     "completedReadings": "readings completed",
-    "accountSettings": "Account Settings",
     "viewAll": "View All",
     "popular": "Popular",
     "processing": "Processing...",
@@ -835,17 +740,41 @@
         "dateMessage": "This reading was specially prepared for you on {date}."
       }
     },
+    "careerSpread": {
+      "name": "Career Spread",
+      "description": "Special 4-card spread for career and professional life",
+      "summary": "Career Life Summary",
+      "summaryText": "This spread shows your current career situation ({card1}) and the obstacles you face ({card2}). The opportunities ahead ({card3}) and your future goals ({card4}) map out your career journey.",
+      "detailedReading": {
+        "title": "💼 Career Tarot Spread - Detailed Personal Reading 💼",
+        "concern": "💭 Your Career Concern",
+        "understanding": "🎯 What You Want to Understand",
+        "emotional": "💫 Your Professional State",
+        "generalMessage": "GENERAL MESSAGE FOR YOUR CAREER JOURNEY",
+        "message": "These cards show the following in your career journey: You are at an important turning point in your professional development.\n\nThe {card1} card reflects your current career situation, while {card2} shows the obstacles you face.\n\nThe {card3} card reveals the opportunities ahead, and {card4} reveals your career goals.",
+        "guideMessage": "Your career guide's message: \"The greatest successes come through patience, determination, and seizing the right opportunities. Focus on your goals.\"",
+        "dateMessage": "This reading was specially prepared for you on {date}."
+      }
+    },
     "positions": {
       "personOfInterest": "Person of Interest",
-      "physicalConnection": "Physical/Sexual Connection", 
+      "physicalConnection": "Physical/Sexual Connection",
       "emotionalConnection": "Emotional/Spiritual Connection",
-      "longTermOutcome": "Long-term Outcome"
+      "longTermOutcome": "Long-term Outcome",
+      "currentSituation": "Your Current Situation",
+      "obstacles": "Obstacles and Challenges",
+      "opportunities": "Opportunities and Potential",
+      "futureGoals": "Future and Goals"
     },
     "positionDescriptions": {
       "personOfInterest": "The person you're asking about",
       "physicalConnection": "Your physical and sexual connection",
-      "emotionalConnection": "Your emotional and spiritual connection", 
-      "longTermOutcome": "The long-term outcome of the relationship"
+      "emotionalConnection": "Your emotional and spiritual connection",
+      "longTermOutcome": "The long-term outcome of the relationship",
+      "currentSituation": "Your current career situation and position in work life",
+      "obstacles": "Obstacles and challenges you face in your career",
+      "opportunities": "Opportunities ahead and potential development areas in your career",
+      "futureGoals": "Your career goals and long-term future plans"
     }
   },
   "seo": {
@@ -855,72 +784,6 @@
     "ogTitle": "Tarot Reading - Discover Your Destiny",
     "ogDescription": "Discover your destiny with professional tarot reading service.",
     "ogImage": "/images/og-image.jpg"
-  },
-  "auth": {
-    "page": {
-      "mysticalEntry": "Enter the Mystical World",
-      "journeyStart": "Start Your Journey",
-      "emailPlaceholder": "Your email address",
-      "passwordPlaceholder": "Your password",
-      "confirmPasswordPlaceholder": "Confirm your password",
-      "namePlaceholder": "First Name",
-      "surnamePlaceholder": "Last Name",
-      "birthDatePlaceholder": "Birth Date",
-      "genderPlaceholder": "Select Gender",
-      "genderMale": "Male",
-      "genderFemale": "Female",
-      "genderOther": "Other",
-      "genderPreferNotToSay": "Prefer not to say",
-      "processing": "⏳ Processing...",
-      "signIn": "🔮 Sign In",
-      "signUp": "✨ Sign Up",
-      "successLogin": "Login successful! Redirecting...",
-      "successRegister": "Registration successful! Please check your email.",
-      "errorOccurred": "An error occurred",
-      "noAccount": "Don't have an account? Sign up",
-      "hasAccount": "Already have an account? Sign in",
-      "emailRequired": "Email address is required",
-      "emailInvalid": "Please enter a valid email address",
-      "passwordRequired": "Password is required",
-      "passwordMinLength": "Password must be at least 6 characters",
-      "confirmPasswordRequired": "Password confirmation is required",
-      "passwordsNotMatch": "Passwords do not match",
-      "nameRequired": "First name is required",
-      "nameMinLength": "First name must be at least 2 characters",
-      "surnameRequired": "Last name is required",
-      "surnameMinLength": "Last name must be at least 2 characters",
-      "birthDateRequired": "Birth date is required",
-      "birthDateMinAge": "Users under 13 cannot register",
-      "birthDateMaxAge": "Please enter a valid birth date",
-      "genderRequired": "Gender selection is required",
-      "invalidCredentials": "Invalid email or password",
-      "userAlreadyExists": "This email address is already registered"
-    },
-    "signIn": "Sign In",
-    "signOut": "Sign Out"
-  },
-  "reading": {
-    "types": {
-      "simple": "Simple Reading",
-      "detailed": "Audio Reading", 
-      "written": "Written Reading",
-      "simpleShort": "Simple",
-      "detailedShort": "Audio",
-      "writtenShort": "Written"
-    },
-    "messages": {
-      "noSelection": "Please select a reading type before selecting cards",
-      "simpleSelected": "Simple reading selected - you can start drawing cards",
-      "detailedSelected": "Audio Reading selected",
-      "writtenSelected": "Written Reading selected",
-      "adminRequired": "Insufficient credits for Audio Reading",
-      "writtenRequired": "Insufficient credits for Written Reading",
-      "simpleDescription": "Simple written audio reading",
-      "detailedDescription": "Simple written audio reading",
-      "writtenDescription": "Simple written audio reading",
-      "cardsLocked": "Cards Locked",
-      "selectReadingTypeFirst": "You must choose a reading type first to select cards."
-    }
   },
   "cards": {
     "reversed": "Reversed",
@@ -968,7 +831,7 @@
   },
   "language": {
     "turkish": "Turkish",
-    "english": "English", 
+    "english": "English",
     "serbian": "Serbian"
   },
   "love": {
@@ -1028,7 +891,13 @@
         "position1": {
           "upright": "The person you're interested in is full of childlike curiosity and excitement about life. They are open to new beginnings and have an adventurous spirit, but this can sometimes make them unplanned and disorganized. They approach relationships with this free spirit as well.",
           "reversed": "Reversed Fool shows that this person might be reckless, irresponsible, or afraid to start a relationship. They may be ignoring potential dangers and avoiding commitment.",
-          "keywords": ["new beginnings", "innocence", "spontaneity", "taking risks", "free spirit"],
+          "keywords": [
+            "new beginnings",
+            "innocence",
+            "spontaneity",
+            "taking risks",
+            "free spirit"
+          ],
           "context": "This person is ready to open a new page in their love life or is an adventurer who fears it."
         }
       }
@@ -1042,7 +911,10 @@
           "upright": "New beginnings, innocence, spontaneity",
           "reversed": "Recklessness, taken advantage of"
         },
-        "keywords": ["new beginnings", "innocence"]
+        "keywords": [
+          "new beginnings",
+          "innocence"
+        ]
       },
       "1": {
         "name": "The Magician",
@@ -1050,7 +922,10 @@
           "upright": "Manifestation, resourcefulness, power",
           "reversed": "Manipulation, poor planning"
         },
-        "keywords": ["manifestation", "power"]
+        "keywords": [
+          "manifestation",
+          "power"
+        ]
       },
       "2": {
         "name": "The High Priestess",
@@ -1058,7 +933,10 @@
           "upright": "Intuition, sacred knowledge, divine feminine",
           "reversed": "Secrets, disconnected from intuition"
         },
-        "keywords": ["intuition", "mystery"]
+        "keywords": [
+          "intuition",
+          "mystery"
+        ]
       },
       "3": {
         "name": "The Empress",
@@ -1066,7 +944,10 @@
           "upright": "Femininity, beauty, nature, nurturing",
           "reversed": "Creative block, dependence"
         },
-        "keywords": ["femininity", "beauty"]
+        "keywords": [
+          "femininity",
+          "beauty"
+        ]
       },
       "4": {
         "name": "The Emperor",
@@ -1074,7 +955,10 @@
           "upright": "Authority, establishment, structure",
           "reversed": "Domination, excessive control"
         },
-        "keywords": ["authority", "structure"]
+        "keywords": [
+          "authority",
+          "structure"
+        ]
       },
       "5": {
         "name": "The Hierophant",
@@ -1082,7 +966,10 @@
           "upright": "Spiritual wisdom, religious beliefs",
           "reversed": "Personal beliefs, freedom"
         },
-        "keywords": ["tradition", "conformity"]
+        "keywords": [
+          "tradition",
+          "conformity"
+        ]
       },
       "6": {
         "name": "The Lovers",
@@ -1090,7 +977,10 @@
           "upright": "Love, harmony, relationships",
           "reversed": "Self-love, disharmony"
         },
-        "keywords": ["love", "harmony"]
+        "keywords": [
+          "love",
+          "harmony"
+        ]
       },
       "7": {
         "name": "The Chariot",
@@ -1098,7 +988,10 @@
           "upright": "Control, willpower, success",
           "reversed": "Self-discipline, opposition"
         },
-        "keywords": ["control", "willpower"]
+        "keywords": [
+          "control",
+          "willpower"
+        ]
       },
       "8": {
         "name": "Strength",
@@ -1106,7 +999,10 @@
           "upright": "Strength, courage, persuasion",
           "reversed": "Self doubt, lack of confidence"
         },
-        "keywords": ["strength", "courage"]
+        "keywords": [
+          "strength",
+          "courage"
+        ]
       },
       "9": {
         "name": "The Hermit",
@@ -1114,7 +1010,10 @@
           "upright": "Soul searching, introspection",
           "reversed": "Isolation, loneliness"
         },
-        "keywords": ["introspection", "searching"]
+        "keywords": [
+          "introspection",
+          "searching"
+        ]
       },
       "10": {
         "name": "Wheel of Fortune",
@@ -1122,7 +1021,10 @@
           "upright": "Good luck, karma, life cycles",
           "reversed": "Bad luck, lack of control"
         },
-        "keywords": ["luck", "karma"]
+        "keywords": [
+          "luck",
+          "karma"
+        ]
       },
       "11": {
         "name": "Justice",
@@ -1130,7 +1032,10 @@
           "upright": "Justice, fairness, truth",
           "reversed": "Unfairness, lack of accountability"
         },
-        "keywords": ["justice", "fairness"]
+        "keywords": [
+          "justice",
+          "fairness"
+        ]
       },
       "12": {
         "name": "The Hanged Man",
@@ -1138,7 +1043,10 @@
           "upright": "Surrender, letting go, sacrifice",
           "reversed": "Delays, resistance, stalling"
         },
-        "keywords": ["surrender", "sacrifice"]
+        "keywords": [
+          "surrender",
+          "sacrifice"
+        ]
       },
       "13": {
         "name": "Death",
@@ -1146,7 +1054,10 @@
           "upright": "Endings, transformation, transition",
           "reversed": "Resistance to change, inner purging"
         },
-        "keywords": ["transformation", "endings"]
+        "keywords": [
+          "transformation",
+          "endings"
+        ]
       },
       "14": {
         "name": "Temperance",
@@ -1154,7 +1065,10 @@
           "upright": "Balance, moderation, patience",
           "reversed": "Imbalance, excess, self-healing"
         },
-        "keywords": ["balance", "moderation"]
+        "keywords": [
+          "balance",
+          "moderation"
+        ]
       },
       "15": {
         "name": "The Devil",
@@ -1162,7 +1076,10 @@
           "upright": "Bondage, addiction, materialism",
           "reversed": "Releasing limiting beliefs, detachment"
         },
-        "keywords": ["bondage", "materialism"]
+        "keywords": [
+          "bondage",
+          "materialism"
+        ]
       },
       "16": {
         "name": "The Tower",
@@ -1170,7 +1087,10 @@
           "upright": "Sudden change, upheaval, chaos",
           "reversed": "Personal transformation, fear of change"
         },
-        "keywords": ["sudden change", "upheaval"]
+        "keywords": [
+          "sudden change",
+          "upheaval"
+        ]
       },
       "17": {
         "name": "The Star",
@@ -1178,7 +1098,10 @@
           "upright": "Hope, faith, purpose, renewal",
           "reversed": "Lack of faith, despair, disconnection"
         },
-        "keywords": ["hope", "faith"]
+        "keywords": [
+          "hope",
+          "faith"
+        ]
       },
       "18": {
         "name": "The Moon",
@@ -1186,7 +1109,10 @@
           "upright": "Illusion, fear, anxiety, subconscious",
           "reversed": "Release of fear, repressed emotion"
         },
-        "keywords": ["illusion", "fear"]
+        "keywords": [
+          "illusion",
+          "fear"
+        ]
       },
       "19": {
         "name": "The Sun",
@@ -1194,7 +1120,10 @@
           "upright": "Positivity, fun, warmth, success",
           "reversed": "Inner child, feeling down"
         },
-        "keywords": ["positivity", "fun"]
+        "keywords": [
+          "positivity",
+          "fun"
+        ]
       },
       "20": {
         "name": "Judgement",
@@ -1202,7 +1131,10 @@
           "upright": "Judgement, rebirth, inner calling",
           "reversed": "Self-doubt, inner critic"
         },
-        "keywords": ["judgement", "rebirth"]
+        "keywords": [
+          "judgement",
+          "rebirth"
+        ]
       },
       "21": {
         "name": "The World",
@@ -1210,7 +1142,10 @@
           "upright": "Completion, integration, accomplishment",
           "reversed": "Seeking personal closure, short-cut"
         },
-        "keywords": ["completion", "integration"]
+        "keywords": [
+          "completion",
+          "integration"
+        ]
       }
     },
     "cups": {
@@ -1220,7 +1155,10 @@
           "upright": "New relationships, compassion",
           "reversed": "Self-love, repressed emotions"
         },
-        "keywords": ["love", "emotions"]
+        "keywords": [
+          "love",
+          "emotions"
+        ]
       },
       "2": {
         "name": "Two of Cups",
@@ -1228,7 +1166,10 @@
           "upright": "Partnership, mutual attraction",
           "reversed": "Self-love, break-ups"
         },
-        "keywords": ["partnership", "love"]
+        "keywords": [
+          "partnership",
+          "love"
+        ]
       },
       "3": {
         "name": "Three of Cups",
@@ -1236,7 +1177,10 @@
           "upright": "Celebration, friendship",
           "reversed": "Independence, creative blocks"
         },
-        "keywords": ["celebration", "friendship"]
+        "keywords": [
+          "celebration",
+          "friendship"
+        ]
       },
       "4": {
         "name": "Four of Cups",
@@ -1244,7 +1188,10 @@
           "upright": "Meditation, contemplation",
           "reversed": "Retreat, withdrawal"
         },
-        "keywords": ["meditation", "contemplation"]
+        "keywords": [
+          "meditation",
+          "contemplation"
+        ]
       },
       "5": {
         "name": "Five of Cups",
@@ -1252,7 +1199,10 @@
           "upright": "Regret, disappointment",
           "reversed": "Self-forgiveness, moving on"
         },
-        "keywords": ["regret", "disappointment"]
+        "keywords": [
+          "regret",
+          "disappointment"
+        ]
       },
       "6": {
         "name": "Six of Cups",
@@ -1260,7 +1210,10 @@
           "upright": "Childhood memories, innocence",
           "reversed": "Living in past, forgiveness"
         },
-        "keywords": ["nostalgia", "childhood"]
+        "keywords": [
+          "nostalgia",
+          "childhood"
+        ]
       },
       "7": {
         "name": "Seven of Cups",
@@ -1268,7 +1221,10 @@
           "upright": "Opportunities, choices",
           "reversed": "Personal values, overwhelmed"
         },
-        "keywords": ["opportunities", "choices"]
+        "keywords": [
+          "opportunities",
+          "choices"
+        ]
       },
       "8": {
         "name": "Eight of Cups",
@@ -1276,7 +1232,10 @@
           "upright": "Disappointment, abandonment",
           "reversed": "Trying again, indecision"
         },
-        "keywords": ["disappointment", "abandonment"]
+        "keywords": [
+          "disappointment",
+          "abandonment"
+        ]
       },
       "9": {
         "name": "Nine of Cups",
@@ -1284,7 +1243,10 @@
           "upright": "Contentment, satisfaction",
           "reversed": "Inner happiness, dissatisfaction"
         },
-        "keywords": ["contentment", "satisfaction"]
+        "keywords": [
+          "contentment",
+          "satisfaction"
+        ]
       },
       "10": {
         "name": "Ten of Cups",
@@ -1292,7 +1254,10 @@
           "upright": "Divine love, harmony",
           "reversed": "Disconnection, struggling relationships"
         },
-        "keywords": ["divine love", "harmony"]
+        "keywords": [
+          "divine love",
+          "harmony"
+        ]
       },
       "page": {
         "name": "Page of Cups",
@@ -1300,7 +1265,10 @@
           "upright": "Creative opportunities, intuition",
           "reversed": "New ideas, doubting intuition"
         },
-        "keywords": ["creativity", "intuition"]
+        "keywords": [
+          "creativity",
+          "intuition"
+        ]
       },
       "knight": {
         "name": "Knight of Cups",
@@ -1308,7 +1276,10 @@
           "upright": "Romance, charm, imagination",
           "reversed": "Unrealistic, jealousy"
         },
-        "keywords": ["romance", "charm"]
+        "keywords": [
+          "romance",
+          "charm"
+        ]
       },
       "queen": {
         "name": "Queen of Cups",
@@ -1316,7 +1287,10 @@
           "upright": "Compassionate, emotionally stable",
           "reversed": "Inner feelings, self-care"
         },
-        "keywords": ["compassion", "emotional stability"]
+        "keywords": [
+          "compassion",
+          "emotional stability"
+        ]
       },
       "king": {
         "name": "King of Cups",
@@ -1324,7 +1298,10 @@
           "upright": "Emotionally balanced, diplomatic",
           "reversed": "Self-compassion, moodiness"
         },
-        "keywords": ["emotional balance", "diplomacy"]
+        "keywords": [
+          "emotional balance",
+          "diplomacy"
+        ]
       }
     },
     "wands": {
@@ -1334,7 +1311,10 @@
           "upright": "Inspiration, new opportunities",
           "reversed": "Lack of energy, boredom"
         },
-        "keywords": ["inspiration", "power"]
+        "keywords": [
+          "inspiration",
+          "power"
+        ]
       },
       "2": {
         "name": "Two of Wands",
@@ -1342,7 +1322,10 @@
           "upright": "Future planning, decisions",
           "reversed": "Personal goals, fear of unknown"
         },
-        "keywords": ["planning", "decisions"]
+        "keywords": [
+          "planning",
+          "decisions"
+        ]
       },
       "3": {
         "name": "Three of Wands",
@@ -1350,7 +1333,10 @@
           "upright": "Expansion, foresight",
           "reversed": "Playing small, delays"
         },
-        "keywords": ["expansion", "foresight"]
+        "keywords": [
+          "expansion",
+          "foresight"
+        ]
       },
       "4": {
         "name": "Four of Wands",
@@ -1358,7 +1344,10 @@
           "upright": "Celebration, harmony",
           "reversed": "Personal celebration, conflict"
         },
-        "keywords": ["celebration", "harmony"]
+        "keywords": [
+          "celebration",
+          "harmony"
+        ]
       },
       "5": {
         "name": "Five of Wands",
@@ -1366,7 +1355,10 @@
           "upright": "Conflict, competition",
           "reversed": "Inner conflict, avoidance"
         },
-        "keywords": ["conflict", "competition"]
+        "keywords": [
+          "conflict",
+          "competition"
+        ]
       },
       "6": {
         "name": "Six of Wands",
@@ -1374,7 +1366,10 @@
           "upright": "Success, recognition",
           "reversed": "Private achievement, fall from grace"
         },
-        "keywords": ["success", "recognition"]
+        "keywords": [
+          "success",
+          "recognition"
+        ]
       },
       "7": {
         "name": "Seven of Wands",
@@ -1382,7 +1377,10 @@
           "upright": "Challenge, perseverance",
           "reversed": "Exhaustion, giving up"
         },
-        "keywords": ["challenge", "perseverance"]
+        "keywords": [
+          "challenge",
+          "perseverance"
+        ]
       },
       "8": {
         "name": "Eight of Wands",
@@ -1390,7 +1388,10 @@
           "upright": "Speed, progress",
           "reversed": "Delays, frustration"
         },
-        "keywords": ["speed", "progress"]
+        "keywords": [
+          "speed",
+          "progress"
+        ]
       },
       "9": {
         "name": "Nine of Wands",
@@ -1398,7 +1399,10 @@
           "upright": "Resilience, courage",
           "reversed": "Inner resources, struggle"
         },
-        "keywords": ["resilience", "courage"]
+        "keywords": [
+          "resilience",
+          "courage"
+        ]
       },
       "10": {
         "name": "Ten of Wands",
@@ -1406,7 +1410,10 @@
           "upright": "Burden, responsibility",
           "reversed": "Doing it all, delegation"
         },
-        "keywords": ["burden", "responsibility"]
+        "keywords": [
+          "burden",
+          "responsibility"
+        ]
       },
       "page": {
         "name": "Page of Wands",
@@ -1414,7 +1421,10 @@
           "upright": "Inspiration, discovery",
           "reversed": "Lack of direction, procrastination"
         },
-        "keywords": ["inspiration", "discovery"]
+        "keywords": [
+          "inspiration",
+          "discovery"
+        ]
       },
       "knight": {
         "name": "Knight of Wands",
@@ -1422,7 +1432,10 @@
           "upright": "Energy, passion, adventure",
           "reversed": "Haste, scattered energy"
         },
-        "keywords": ["energy", "passion"]
+        "keywords": [
+          "energy",
+          "passion"
+        ]
       },
       "queen": {
         "name": "Queen of Wands",
@@ -1430,7 +1443,10 @@
           "upright": "Courage, independence",
           "reversed": "Self-respect, introverted"
         },
-        "keywords": ["courage", "independence"]
+        "keywords": [
+          "courage",
+          "independence"
+        ]
       },
       "king": {
         "name": "King of Wands",
@@ -1438,7 +1454,10 @@
           "upright": "Leadership, vision",
           "reversed": "Impulsiveness, ruthless"
         },
-        "keywords": ["leadership", "vision"]
+        "keywords": [
+          "leadership",
+          "vision"
+        ]
       }
     },
     "swords": {
@@ -1448,7 +1467,10 @@
           "upright": "Breakthrough, clarity",
           "reversed": "Confusion, chaos"
         },
-        "keywords": ["clarity", "breakthrough"]
+        "keywords": [
+          "clarity",
+          "breakthrough"
+        ]
       },
       "2": {
         "name": "Two of Swords",
@@ -1456,7 +1478,10 @@
           "upright": "Difficult decisions, impasse",
           "reversed": "Indecision, confusion"
         },
-        "keywords": ["decisions", "impasse"]
+        "keywords": [
+          "decisions",
+          "impasse"
+        ]
       },
       "3": {
         "name": "Three of Swords",
@@ -1464,7 +1489,10 @@
           "upright": "Heartbreak, sorrow",
           "reversed": "Releasing pain, optimism"
         },
-        "keywords": ["heartbreak", "sorrow"]
+        "keywords": [
+          "heartbreak",
+          "sorrow"
+        ]
       },
       "4": {
         "name": "Four of Swords",
@@ -1472,7 +1500,10 @@
           "upright": "Rest, meditation",
           "reversed": "Exhaustion, burn-out"
         },
-        "keywords": ["rest", "meditation"]
+        "keywords": [
+          "rest",
+          "meditation"
+        ]
       },
       "5": {
         "name": "Five of Swords",
@@ -1480,7 +1511,10 @@
           "upright": "Conflict, defeat",
           "reversed": "Reconciliation, past resentment"
         },
-        "keywords": ["conflict", "defeat"]
+        "keywords": [
+          "conflict",
+          "defeat"
+        ]
       },
       "6": {
         "name": "Six of Swords",
@@ -1488,7 +1522,10 @@
           "upright": "Transition, change",
           "reversed": "Personal transition, resistance"
         },
-        "keywords": ["transition", "change"]
+        "keywords": [
+          "transition",
+          "change"
+        ]
       },
       "7": {
         "name": "Seven of Swords",
@@ -1496,7 +1533,10 @@
           "upright": "Betrayal, deception",
           "reversed": "Imposter syndrome, secrets"
         },
-        "keywords": ["betrayal", "deception"]
+        "keywords": [
+          "betrayal",
+          "deception"
+        ]
       },
       "8": {
         "name": "Eight of Swords",
@@ -1504,7 +1544,10 @@
           "upright": "Restriction, imprisonment",
           "reversed": "Self-limiting beliefs, inner critic"
         },
-        "keywords": ["restriction", "imprisonment"]
+        "keywords": [
+          "restriction",
+          "imprisonment"
+        ]
       },
       "9": {
         "name": "Nine of Swords",
@@ -1512,7 +1555,10 @@
           "upright": "Anxiety, fear",
           "reversed": "Inner turmoil, releasing anxiety"
         },
-        "keywords": ["anxiety", "fear"]
+        "keywords": [
+          "anxiety",
+          "fear"
+        ]
       },
       "10": {
         "name": "Ten of Swords",
@@ -1520,7 +1566,10 @@
           "upright": "Painful endings, betrayal",
           "reversed": "Recovery, resisting end"
         },
-        "keywords": ["endings", "betrayal"]
+        "keywords": [
+          "endings",
+          "betrayal"
+        ]
       },
       "page": {
         "name": "Page of Swords",
@@ -1528,7 +1577,10 @@
           "upright": "New ideas, curiosity",
           "reversed": "Self-expression, no action"
         },
-        "keywords": ["ideas", "curiosity"]
+        "keywords": [
+          "ideas",
+          "curiosity"
+        ]
       },
       "knight": {
         "name": "Knight of Swords",
@@ -1536,7 +1588,10 @@
           "upright": "Ambitious, action-oriented",
           "reversed": "Restless, impulsive"
         },
-        "keywords": ["ambition", "action"]
+        "keywords": [
+          "ambition",
+          "action"
+        ]
       },
       "queen": {
         "name": "Queen of Swords",
@@ -1544,7 +1599,10 @@
           "upright": "Independent, clear boundaries",
           "reversed": "Overly-emotional, cold-hearted"
         },
-        "keywords": ["independence", "boundaries"]
+        "keywords": [
+          "independence",
+          "boundaries"
+        ]
       },
       "king": {
         "name": "King of Swords",
@@ -1552,7 +1610,10 @@
           "upright": "Mental clarity, authority",
           "reversed": "Quiet power, misuse of power"
         },
-        "keywords": ["clarity", "authority"]
+        "keywords": [
+          "clarity",
+          "authority"
+        ]
       }
     },
     "pentacles": {
@@ -1562,7 +1623,10 @@
           "upright": "New opportunity, manifestation",
           "reversed": "Lost opportunity, lack of planning"
         },
-        "keywords": ["opportunity", "manifestation"]
+        "keywords": [
+          "opportunity",
+          "manifestation"
+        ]
       },
       "2": {
         "name": "Two of Pentacles",
@@ -1570,7 +1634,10 @@
           "upright": "Multiple priorities, adaptability",
           "reversed": "Over-committed, disorganisation"
         },
-        "keywords": ["priorities", "adaptability"]
+        "keywords": [
+          "priorities",
+          "adaptability"
+        ]
       },
       "3": {
         "name": "Three of Pentacles",
@@ -1578,7 +1645,10 @@
           "upright": "Collaboration, learning",
           "reversed": "Disharmony, working alone"
         },
-        "keywords": ["collaboration", "learning"]
+        "keywords": [
+          "collaboration",
+          "learning"
+        ]
       },
       "4": {
         "name": "Four of Pentacles",
@@ -1586,7 +1656,10 @@
           "upright": "Saving money, security",
           "reversed": "Over-spending, generosity"
         },
-        "keywords": ["saving", "security"]
+        "keywords": [
+          "saving",
+          "security"
+        ]
       },
       "5": {
         "name": "Five of Pentacles",
@@ -1594,7 +1667,10 @@
           "upright": "Financial loss, isolation",
           "reversed": "Recovery from loss, spiritual poverty"
         },
-        "keywords": ["loss", "isolation"]
+        "keywords": [
+          "loss",
+          "isolation"
+        ]
       },
       "6": {
         "name": "Six of Pentacles",
@@ -1602,7 +1678,10 @@
           "upright": "Giving, sharing wealth",
           "reversed": "Self-care, unpaid debts"
         },
-        "keywords": ["giving", "sharing"]
+        "keywords": [
+          "giving",
+          "sharing"
+        ]
       },
       "7": {
         "name": "Seven of Pentacles",
@@ -1610,7 +1689,10 @@
           "upright": "Perseverance, investment",
           "reversed": "Lack of long-term view, impatience"
         },
-        "keywords": ["perseverance", "investment"]
+        "keywords": [
+          "perseverance",
+          "investment"
+        ]
       },
       "8": {
         "name": "Eight of Pentacles",
@@ -1618,7 +1700,10 @@
           "upright": "Mastery, skill development",
           "reversed": "Perfectionism, lack of commitment"
         },
-        "keywords": ["mastery", "skill"]
+        "keywords": [
+          "mastery",
+          "skill"
+        ]
       },
       "9": {
         "name": "Nine of Pentacles",
@@ -1626,7 +1711,10 @@
           "upright": "Abundance, financial independence",
           "reversed": "Self-worth, over-investment"
         },
-        "keywords": ["abundance", "independence"]
+        "keywords": [
+          "abundance",
+          "independence"
+        ]
       },
       "10": {
         "name": "Ten of Pentacles",
@@ -1634,7 +1722,10 @@
           "upright": "Wealth, family, long-term success",
           "reversed": "Financial failure, dark side of wealth"
         },
-        "keywords": ["wealth", "family"]
+        "keywords": [
+          "wealth",
+          "family"
+        ]
       },
       "page": {
         "name": "Page of Pentacles",
@@ -1642,7 +1733,10 @@
           "upright": "Manifestation, financial opportunity",
           "reversed": "Lack of progress, procrastination"
         },
-        "keywords": ["manifestation", "opportunity"]
+        "keywords": [
+          "manifestation",
+          "opportunity"
+        ]
       },
       "knight": {
         "name": "Knight of Pentacles",
@@ -1650,7 +1744,10 @@
           "upright": "Hard work, routine",
           "reversed": "Self-discipline, feeling stuck"
         },
-        "keywords": ["work", "routine"]
+        "keywords": [
+          "work",
+          "routine"
+        ]
       },
       "queen": {
         "name": "Queen of Pentacles",
@@ -1658,7 +1755,10 @@
           "upright": "Nurturing, practical",
           "reversed": "Financial independence, work-home conflict"
         },
-        "keywords": ["nurturing", "practical"]
+        "keywords": [
+          "nurturing",
+          "practical"
+        ]
       },
       "king": {
         "name": "King of Pentacles",
@@ -1666,7 +1766,10 @@
           "upright": "Financial success, business acumen",
           "reversed": "Financial advice, living beyond means"
         },
-        "keywords": ["success", "business"]
+        "keywords": [
+          "success",
+          "business"
+        ]
       }
     }
   }

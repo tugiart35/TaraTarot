@@ -67,58 +67,50 @@
     "breadcrumb": "Navigacija"
   },
   "auth": {
-    "signIn": {
-      "title": "Prijavi se",
-      "subtitle": "Prijavite se na svoj nalog",
-      "email": "Email",
-      "password": "Lozinka",
-      "rememberMe": "Zapamti me",
-      "forgotPassword": "Zaboravljena lozinka",
-      "signInButton": "Prijavi se",
-      "signUpLink": "Nemate nalog? Registrujte se",
-      "googleSignIn": "Prijavi se sa Google",
-      "facebookSignIn": "Prijavi se sa Facebook"
-    },
-    "signUp": {
-      "title": "Registruj se",
-      "subtitle": "Kreiraj novi nalog",
-      "email": "Email",
-      "password": "Lozinka",
-      "confirmPassword": "Potvrdi lozinku",
-      "firstName": "Ime",
-      "lastName": "Prezime",
-      "acceptTerms": "Prihvatam uslove",
-      "signUpButton": "Registruj se",
-      "signInLink": "Već imate nalog? Prijavite se",
-      "googleSignUp": "Registruj se sa Google",
-      "facebookSignUp": "Registruj se sa Facebook"
-    },
-    "errors": {
-      "invalidCredentials": "Neispravna email adresa ili lozinka",
-      "emailAlreadyExists": "Ova email adresa se već koristi",
-      "weakPassword": "Lozinka je previše slaba",
+    "page": {
+      "mysticalEntry": "Uđite u Mistični Svet",
+      "journeyStart": "Počnite Vaše Putovanje",
+      "emailPlaceholder": "Vaša email adresa",
+      "passwordPlaceholder": "Vaša lozinka",
+      "confirmPasswordPlaceholder": "Potvrdite vašu lozinku",
+      "namePlaceholder": "Ime",
+      "surnamePlaceholder": "Prezime",
+      "birthDatePlaceholder": "Datum Rođenja",
+      "genderPlaceholder": "Izaberite Pol",
+      "genderMale": "Muški",
+      "genderFemale": "Ženski",
+      "genderOther": "Drugo",
+      "genderPreferNotToSay": "Ne želim da kažem",
+      "processing": "⏳ Obrađuje se...",
+      "signIn": "🔮 Prijavi se",
+      "signUp": "✨ Registruj se",
+      "successLogin": "Uspešna prijava! Preusmerava se...",
+      "successRegister": "Uspešna registracija! Molimo proverite vaš email.",
+      "errorOccurred": "Došlo je do greške",
+      "noAccount": "Nemate nalog? Registrujte se",
+      "hasAccount": "Već imate nalog? Prijavite se",
       "emailRequired": "Email adresa je obavezna",
+      "emailInvalid": "Molimo unesite važeću email adresu",
       "passwordRequired": "Lozinka je obavezna",
-      "passwordsDoNotMatch": "Lozinke se ne poklapaju",
-      "invalidEmail": "Neispravna email adresa",
-      "accountLocked": "Nalog je zaključan",
-      "accountDisabled": "Nalog je onemogućen",
-      "sessionExpired": "Sesija je istekla",
-      "networkError": "Mrežna greška",
-      "serverError": "Greška servera",
-      "unknownError": "Nepoznata greška"
+      "passwordMinLength": "Lozinka mora imati najmanje 6 karaktera",
+      "confirmPasswordRequired": "Potvrda lozinke je obavezna",
+      "passwordsNotMatch": "Lozinke se ne poklapaju",
+      "nameRequired": "Ime je obavezno",
+      "nameMinLength": "Ime mora imati najmanje 2 karaktera",
+      "surnameRequired": "Prezime je obavezno",
+      "surnameMinLength": "Prezime mora imati najmanje 2 karaktera",
+      "birthDateRequired": "Datum rođenja je obavezan",
+      "birthDateMinAge": "Korisnici mlađi od 13 godina ne mogu da se registruju",
+      "birthDateMaxAge": "Molimo unesite važeći datum rođenja",
+      "genderRequired": "Izbor pola je obavezan",
+      "invalidCredentials": "Nevažeći email ili lozinka",
+      "userAlreadyExists": "Ova email adresa je već registrovana",
+      "redirecting": "",
+      "validating": "",
+      "loggingIn": ""
     },
-    "notice": {
-      "checkEmail": "Proverite svoj email i potvrdite registraciju",
-      "emailConfirmed": "Vaš email je potvrđen! 100 kredita je poklonjeno.",
-      "passwordResetSent": "Link za resetovanje lozinke je poslat",
-      "accountCreated": "Nalog je uspešno kreiran",
-      "emailVerified": "Email adresa je potvrđena",
-      "passwordChanged": "Lozinka je uspešno promenjena",
-      "profileUpdated": "Profil je ažuriran",
-      "confirmationEmailSent": "Email za potvrdu je poslat",
-      "confirmationFailed": "Potvrda email adrese nije uspešna"
-    }
+    "signIn": "Prijavi se",
+    "signOut": "Odjavi se"
   },
   "validation": {
     "required": "Ovo polje je obavezno",
@@ -188,52 +180,25 @@
   },
   "reading": {
     "types": {
-      "simple": "Jednostavno",
-      "detailed": "Audio",
-      "written": "Pisano",
+      "simple": "Jednostavno Čitanje",
+      "detailed": "Audio Čitanje",
+      "written": "Pisano Čitanje",
       "simpleShort": "Jednostavno",
       "detailedShort": "Audio",
-      "writtenShort": "Pisano",
-      "threeCard": "Tri karte",
-      "love": "Ljubav",
-      "career": "Karijera",
-      "daily": "Dnevno",
-      "weekly": "Nedeljno",
-      "monthly": "Mesečno",
-      "yearly": "Godišnje",
-      "custom": "Prilagođeno"
-    },
-    "positions": {
-      "past": "Prošlost",
-      "present": "Sadašnjost",
-      "future": "Budućnost",
-      "situation": "Situacija",
-      "action": "Akcija",
-      "outcome": "Rezultat",
-      "you": "Ti",
-      "partner": "Partner",
-      "relationship": "Veza",
-      "obstacle": "Prepreka",
-      "advice": "Savet"
-    },
-    "actions": {
-      "startReading": "Počni čitanje",
-      "shuffleCards": "Promešaj karte",
-      "selectCards": "Izaberite karte",
-      "revealCards": "Otkrij karte",
-      "interpretCards": "Tumači karte",
-      "saveReading": "Sačuvaj čitanje",
-      "shareReading": "Podeli čitanje",
-      "newReading": "Novo čitanje",
-      "continueReading": "Nastavi čitanje"
+      "writtenShort": "Pisano"
     },
     "messages": {
-      "noSelection": "Izaberite tip čitanja",
-      "simpleSelected": "Jednostavno čitanje izabrano",
-      "detailedSelected": "Audio čitanje izabrano",
-      "writtenSelected": "Pisano čitanje izabrano",
-      "detailedDescription": "Audio i detaljno tumačenje",
-      "writtenDescription": "Pisano i sveobuhvatno tumačenje"
+      "noSelection": "Molimo izaberite tip čitanja pre izbora karata",
+      "simpleSelected": "Jednostavno čitanje izabrano - možete početi da izvlačite karte",
+      "detailedSelected": "Audio Čitanje izabrano",
+      "writtenSelected": "Pisano Čitanje izabrano",
+      "adminRequired": "Nedovoljno kredita za Audio Čitanje",
+      "writtenRequired": "Nedovoljno kredita za Pisano Čitanje",
+      "simpleDescription": "Jednostavno pisano audio čitanje",
+      "detailedDescription": "Jednostavno pisano audio čitanje",
+      "writtenDescription": "Jednostavno pisano audio čitanje",
+      "cardsLocked": "Karte Zaključane",
+      "selectReadingTypeFirst": "Morate prvo izabrati tip čitanja da biste mogli da izaberete karte."
     }
   },
   "errors": {
@@ -439,87 +404,7 @@
     "recentTransactions": "Nedavne transakcije",
     "creditBalance": "Stanje kredita",
     "creditPackages": "Paketi kredita",
-    "accountSettings": "Podešavanja naloga",
-    "creditHistory": "Istorija kredita",
-    "readingHistory": "Istorija čitanja",
-    "statistics": "Statistike",
-    "totalReadings": "Ukupno čitanja",
-    "membershipDuration": "Trajanje članstva",
-    "userLevel": "Nivo korisnika",
-    "admin": "Administrator",
-    "user": "Korisnik",
-    "beginner": "Početnik",
-    "intermediate": "Srednji",
-    "expert": "Ekspert",
-    "readings": "Čitanja",
-    "readingsPage": {
-      "title": "Moja Čitanja",
-      "subtitle": "Sva vaša mistična iskustva",
-      "totalReadings": "Ukupno Čitanja",
-      "loveReadings": "Ljubavna Čitanja",
-      "generalReadings": "Opšta Čitanja",
-      "totalCredits": "Ukupno Kredita",
-      "allTypes": "Svi Tipovi",
-      "loveType": "Ljubavno Čitanje",
-      "generalType": "Opšte Čitanje",
-      "careerType": "Karijerno Čitanje",
-      "numerologyType": "Numerologija",
-      "allTime": "Sve Vreme",
-      "lastWeek": "Prošla Nedelja",
-      "lastMonth": "Prošli Mesec",
-      "lastYear": "Prošla Godina",
-      "clearFilters": "Obriši Filtere",
-      "noReadings": "Još Nema Čitanja",
-      "noReadingsDesc": "Spremni za svoje prvo mistično iskustvo?",
-      "startFirstReading": "Započni Prvo Čitanje",
-      "loadMore": "Učitaj Više",
-      "loading": "Učitavanje...",
-      "searchPlaceholder": "Pretraži čitanja...",
-      "view": "Pogledaj",
-      "download": "Preuzmi",
-      "credits": "kredita",
-      "detailModal": {
-        "readingDate": "Datum Čitanja",
-        "creditCost": "Cena Kredita",
-        "status": "Status",
-        "statusCompleted": "Završeno",
-        "statusReviewed": "Pregledano",
-        "statusPending": "Na Čekanju",
-        "yourQuestion": "Vaše Pitanje",
-        "drawnCards": "Izvučene Karte",
-        "interpretation": "Interpretacija",
-        "adminNotes": "Admin Napomene",
-        "close": "Zatvori",
-        "download": "Preuzmi"
-      }
-    },
-    "statistics": "Statistike",
-    "settings": "Podešavanja",
-    "profile": "Profil",
-    "signOut": "Odjavite se",
-    "editProfile": "Uredi profil",
-    "saveChanges": "Sačuvaj izmene",
-    "cancel": "Otkaži",
-    "displayName": "Ime za prikaz",
-    "email": "E-pošta",
-    "userId": "ID korisnika",
-    "role": "Uloga",
-    "memberSince": "Član od",
-    "creditAlert": "Nisko stanje kredita",
-    "creditAlertMessage": "Kupite kredite za više čitanja",
-    "buyCredits": "Kupite kredite",
-    "last30Days": "Poslednjih 30 dana",
-    "completedReadings": "čitanja završeno",
     "accountSettings": "Podešavanja Naloga",
-    "viewAll": "Vidi Sve",
-    "popular": "Popularno",
-    "processing": "Obrađuje se...",
-    "buy": "Kupi",
-    "free": "Besplatno",
-    "immediateAccess": "Odmah dostupno",
-    "today": "Danas",
-    "new": "Novo",
-    "backToDashboard": "Nazad na Dashboard",
     "creditHistory": {
       "title": "Istorija Kredita",
       "description": "Pratite svoju istoriju kupovine, korišćenja i transakcija kredita",
@@ -553,52 +438,7 @@
       "csvAmount": "Količina",
       "csvDescription": "Opis"
     },
-    "packages": {
-      "title": "Paketi Kredita",
-      "pageTitle": "Paketi Kredita",
-      "description": "Kupite kredite koji su vam potrebni za vaša tarot čitanja",
-      "loading": "🔮 Učitavaju se paketi kredita...",
-      "currentBalance": "Trenutno Stanje",
-      "credits": "kredita",
-      "mostPopular": "Najpopularniji",
-      "processing": "Obrađuje se...",
-      "buyNow": "Kupi Sada",
-      "noPackages": "Još uvek nema aktivnih paketa. Molimo proverite kasnije.",
-      "securePayment": "Sigurna Plaćanja",
-      "securePaymentDesc": "Sva plaćanja su zaštićena SSL enkripcijom",
-      "instantActivation": "Trenutna Aktivacija",
-      "instantActivationDesc": "Vaši krediti se odmah dodaju na vaš nalog",
-      "bonusCredits": "Bonus Krediti",
-      "bonusCreditsDesc": "Zaradite dodatne kredite sa većim paketima",
-      "faq": "Često Postavljana Pitanja",
-      "faq1Question": "Koliko dugo su krediti važeći?",
-      "faq1Answer": "Vaši krediti su važeći 1 godinu od datuma kupovine.",
-      "faq2Question": "Kakva je politika povraćaja?",
-      "faq2Answer": "Možete dobiti povraćaj za nekorišćene kredite u roku od 7 dana.",
-      "faq3Question": "Koje načine plaćanja prihvatate?",
-      "faq3Answer": "Prihvatamo kreditne kartice, debitne kartice i digitalne novčanike.",
-      "faq4Question": "Kako se računaju bonus krediti?",
-      "faq4Answer": "Popularni paket dobija 10%, Premium paket dobija 20% bonus kredita.",
-      "featureNumerology": "Numerološka analiza",
-      "featureLove": "Ljubavni raspored",
-      "feature10Readings": "10+ detaljnih tarot čitanja",
-      "feature5Readings": "5-6 detaljnih tarot čitanja",
-      "feature2Readings": "1-2 detaljna tarot čitanja",
-      "featureCareer": "Karijerno čitanje",
-      "featureGeneral": "Opšte čitanje",
-      "feature60Days": "60 dana važenja",
-      "feature30Days": "30 dana važenja",
-      "feature7Days": "7 dana važenja",
-      "feature20Bonus": "20% bonus kredita",
-      "feature10Bonus": "10% bonus kredita",
-      "featurePriority": "Prioritetna podrška",
-      "purchased": "kupljeno",
-      "bonus": "bonus",
-      "purchaseSuccess": "uspešno kupljeno!",
-      "addedToAccount": "dodato na vaš nalog.",
-      "purchaseError": "Došlo je do greške prilikom kupovine paketa. Molimo pokušajte ponovo.",
-      "profileError": "Informacije o profilu nisu mogle biti učitane"
-    },
+    "readingHistory": "Istorija čitanja",
     "statistics": {
       "title": "Statistike & Uvid",
       "subtitle": "Pratite svoj napredak na mističnom putovanju",
@@ -653,6 +493,127 @@
       "personalDay": "Lični Dan",
       "analysis": "Analiza",
       "recommendations": "Preporuke"
+    },
+    "totalReadings": "Ukupno čitanja",
+    "membershipDuration": "Trajanje članstva",
+    "userLevel": "Nivo korisnika",
+    "admin": "Administrator",
+    "user": "Korisnik",
+    "beginner": "Početnik",
+    "intermediate": "Srednji",
+    "expert": "Ekspert",
+    "readings": "Čitanja",
+    "readingsPage": {
+      "title": "Moja Čitanja",
+      "subtitle": "Sva vaša mistična iskustva",
+      "totalReadings": "Ukupno Čitanja",
+      "loveReadings": "Ljubavna Čitanja",
+      "generalReadings": "Opšta Čitanja",
+      "totalCredits": "Ukupno Kredita",
+      "allTypes": "Svi Tipovi",
+      "loveType": "Ljubavno Čitanje",
+      "generalType": "Opšte Čitanje",
+      "careerType": "Karijerno Čitanje",
+      "numerologyType": "Numerologija",
+      "allTime": "Sve Vreme",
+      "lastWeek": "Prošla Nedelja",
+      "lastMonth": "Prošli Mesec",
+      "lastYear": "Prošla Godina",
+      "clearFilters": "Obriši Filtere",
+      "noReadings": "Još Nema Čitanja",
+      "noReadingsDesc": "Spremni za svoje prvo mistično iskustvo?",
+      "startFirstReading": "Započni Prvo Čitanje",
+      "loadMore": "Učitaj Više",
+      "loading": "Učitavanje...",
+      "searchPlaceholder": "Pretraži čitanja...",
+      "view": "Pogledaj",
+      "download": "Preuzmi",
+      "credits": "kredita",
+      "detailModal": {
+        "readingDate": "Datum Čitanja",
+        "creditCost": "Cena Kredita",
+        "status": "Status",
+        "statusCompleted": "Završeno",
+        "statusReviewed": "Pregledano",
+        "statusPending": "Na Čekanju",
+        "yourQuestion": "Vaše Pitanje",
+        "drawnCards": "Izvučene Karte",
+        "interpretation": "Interpretacija",
+        "adminNotes": "Admin Napomene",
+        "close": "Zatvori",
+        "download": "Preuzmi"
+      }
+    },
+    "settings": "Podešavanja",
+    "profile": "Profil",
+    "signOut": "Odjavite se",
+    "editProfile": "Uredi profil",
+    "saveChanges": "Sačuvaj izmene",
+    "cancel": "Otkaži",
+    "displayName": "Ime za prikaz",
+    "email": "E-pošta",
+    "userId": "ID korisnika",
+    "role": "Uloga",
+    "memberSince": "Član od",
+    "creditAlert": "Nisko stanje kredita",
+    "creditAlertMessage": "Kupite kredite za više čitanja",
+    "buyCredits": "Kupite kredite",
+    "last30Days": "Poslednjih 30 dana",
+    "completedReadings": "čitanja završeno",
+    "viewAll": "Vidi Sve",
+    "popular": "Popularno",
+    "processing": "Obrađuje se...",
+    "buy": "Kupi",
+    "free": "Besplatno",
+    "immediateAccess": "Odmah dostupno",
+    "today": "Danas",
+    "new": "Novo",
+    "backToDashboard": "Nazad na Dashboard",
+    "packages": {
+      "title": "Paketi Kredita",
+      "pageTitle": "Paketi Kredita",
+      "description": "Kupite kredite koji su vam potrebni za vaša tarot čitanja",
+      "loading": "🔮 Učitavaju se paketi kredita...",
+      "currentBalance": "Trenutno Stanje",
+      "credits": "kredita",
+      "mostPopular": "Najpopularniji",
+      "processing": "Obrađuje se...",
+      "buyNow": "Kupi Sada",
+      "noPackages": "Još uvek nema aktivnih paketa. Molimo proverite kasnije.",
+      "securePayment": "Sigurna Plaćanja",
+      "securePaymentDesc": "Sva plaćanja su zaštićena SSL enkripcijom",
+      "instantActivation": "Trenutna Aktivacija",
+      "instantActivationDesc": "Vaši krediti se odmah dodaju na vaš nalog",
+      "bonusCredits": "Bonus Krediti",
+      "bonusCreditsDesc": "Zaradite dodatne kredite sa većim paketima",
+      "faq": "Često Postavljana Pitanja",
+      "faq1Question": "Koliko dugo su krediti važeći?",
+      "faq1Answer": "Vaši krediti su važeći 1 godinu od datuma kupovine.",
+      "faq2Question": "Kakva je politika povraćaja?",
+      "faq2Answer": "Možete dobiti povraćaj za nekorišćene kredite u roku od 7 dana.",
+      "faq3Question": "Koje načine plaćanja prihvatate?",
+      "faq3Answer": "Prihvatamo kreditne kartice, debitne kartice i digitalne novčanike.",
+      "faq4Question": "Kako se računaju bonus krediti?",
+      "faq4Answer": "Popularni paket dobija 10%, Premium paket dobija 20% bonus kredita.",
+      "featureNumerology": "Numerološka analiza",
+      "featureLove": "Ljubavni raspored",
+      "feature10Readings": "10+ detaljnih tarot čitanja",
+      "feature5Readings": "5-6 detaljnih tarot čitanja",
+      "feature2Readings": "1-2 detaljna tarot čitanja",
+      "featureCareer": "Karijerno čitanje",
+      "featureGeneral": "Opšte čitanje",
+      "feature60Days": "60 dana važenja",
+      "feature30Days": "30 dana važenja",
+      "feature7Days": "7 dana važenja",
+      "feature20Bonus": "20% bonus kredita",
+      "feature10Bonus": "10% bonus kredita",
+      "featurePriority": "Prioritetna podrška",
+      "purchased": "kupljeno",
+      "bonus": "bonus",
+      "purchaseSuccess": "uspešno kupljeno!",
+      "addedToAccount": "dodato na vaš nalog.",
+      "purchaseError": "Došlo je do greške prilikom kupovine paketa. Molimo pokušajte ponovo.",
+      "profileError": "Informacije o profilu nisu mogle biti učitane"
     }
   },
   "readings": {
@@ -837,14 +798,14 @@
     },
     "positions": {
       "personOfInterest": "Osoba od Interesa",
-      "physicalConnection": "Fizička/Seksualna Veza", 
+      "physicalConnection": "Fizička/Seksualna Veza",
       "emotionalConnection": "Emocionalna/Duhovna Veza",
       "longTermOutcome": "Dugoročni Ishod"
     },
     "positionDescriptions": {
       "personOfInterest": "Osoba o kojoj pitate",
       "physicalConnection": "Vaša fizička i seksualna veza",
-      "emotionalConnection": "Vaša emocionalna i duhovna veza", 
+      "emotionalConnection": "Vaša emocionalna i duhovna veza",
       "longTermOutcome": "Dugoročni ishod veze"
     }
   },
@@ -855,72 +816,6 @@
     "ogTitle": "Tarot čitanje - Otkrijte svoju sudbinu",
     "ogDescription": "Otkrijte svoju sudbinu sa profesionalnom tarot uslugom.",
     "ogImage": "/images/og-image.jpg"
-  },
-  "auth": {
-    "page": {
-      "mysticalEntry": "Uđite u Mistični Svet",
-      "journeyStart": "Počnite Vaše Putovanje",
-      "emailPlaceholder": "Vaša email adresa",
-      "passwordPlaceholder": "Vaša lozinka",
-      "confirmPasswordPlaceholder": "Potvrdite vašu lozinku",
-      "namePlaceholder": "Ime",
-      "surnamePlaceholder": "Prezime",
-      "birthDatePlaceholder": "Datum Rođenja",
-      "genderPlaceholder": "Izaberite Pol",
-      "genderMale": "Muški",
-      "genderFemale": "Ženski",
-      "genderOther": "Drugo",
-      "genderPreferNotToSay": "Ne želim da kažem",
-      "processing": "⏳ Obrađuje se...",
-      "signIn": "🔮 Prijavi se",
-      "signUp": "✨ Registruj se",
-      "successLogin": "Uspešna prijava! Preusmerava se...",
-      "successRegister": "Uspešna registracija! Molimo proverite vaš email.",
-      "errorOccurred": "Došlo je do greške",
-      "noAccount": "Nemate nalog? Registrujte se",
-      "hasAccount": "Već imate nalog? Prijavite se",
-      "emailRequired": "Email adresa je obavezna",
-      "emailInvalid": "Molimo unesite važeću email adresu",
-      "passwordRequired": "Lozinka je obavezna",
-      "passwordMinLength": "Lozinka mora imati najmanje 6 karaktera",
-      "confirmPasswordRequired": "Potvrda lozinke je obavezna",
-      "passwordsNotMatch": "Lozinke se ne poklapaju",
-      "nameRequired": "Ime je obavezno",
-      "nameMinLength": "Ime mora imati najmanje 2 karaktera",
-      "surnameRequired": "Prezime je obavezno",
-      "surnameMinLength": "Prezime mora imati najmanje 2 karaktera",
-      "birthDateRequired": "Datum rođenja je obavezan",
-      "birthDateMinAge": "Korisnici mlađi od 13 godina ne mogu da se registruju",
-      "birthDateMaxAge": "Molimo unesite važeći datum rođenja",
-      "genderRequired": "Izbor pola je obavezan",
-      "invalidCredentials": "Nevažeći email ili lozinka",
-      "userAlreadyExists": "Ova email adresa je već registrovana"
-    },
-    "signIn": "Prijavi se",
-    "signOut": "Odjavi se"
-  },
-  "reading": {
-    "types": {
-      "simple": "Jednostavno Čitanje",
-      "detailed": "Audio Čitanje", 
-      "written": "Pisano Čitanje",
-      "simpleShort": "Jednostavno",
-      "detailedShort": "Audio",
-      "writtenShort": "Pisano"
-    },
-    "messages": {
-      "noSelection": "Molimo izaberite tip čitanja pre izbora karata",
-      "simpleSelected": "Jednostavno čitanje izabrano - možete početi da izvlačite karte",
-      "detailedSelected": "Audio Čitanje izabrano",
-      "writtenSelected": "Pisano Čitanje izabrano",
-      "adminRequired": "Nedovoljno kredita za Audio Čitanje",
-      "writtenRequired": "Nedovoljno kredita za Pisano Čitanje",
-      "simpleDescription": "Jednostavno pisano audio čitanje",
-      "detailedDescription": "Jednostavno pisano audio čitanje",
-      "writtenDescription": "Jednostavno pisano audio čitanje",
-      "cardsLocked": "Karte Zaključane",
-      "selectReadingTypeFirst": "Morate prvo izabrati tip čitanja da biste mogli da izaberete karte."
-    }
   },
   "cards": {
     "reversed": "Obrnuto",
@@ -968,7 +863,7 @@
   },
   "language": {
     "turkish": "Turski",
-    "english": "Engleski", 
+    "english": "Engleski",
     "serbian": "Srpski"
   },
   "love": {
@@ -1028,7 +923,13 @@
         "position1": {
           "upright": "Osoba koja vas zanima puna je dečje radoznalosti i uzbuđenja o životu. Otvorena je za nove početke i ima avanturistički duh, ali to ponekad može da je učini neplaniranom i neorganizovanom. I veze pristupa ovim slobodnim duhom.",
           "reversed": "Obrnuti Budala pokazuje da bi ta osoba mogla biti neoprezna, neodgovorna ili da se plaši da započne vezu. Možda ignoriše potencijalne opasnosti i izbegava obavezu.",
-          "keywords": ["novi počeci", "nevinost", "spontanost", "uzimanje rizika", "slobodan duh"],
+          "keywords": [
+            "novi počeci",
+            "nevinost",
+            "spontanost",
+            "uzimanje rizika",
+            "slobodan duh"
+          ],
           "context": "Ova osoba je spremna da otvori novu stranicu u svom ljubavnom životu ili je avanturista koji se toga plaši."
         }
       }
@@ -1042,7 +943,10 @@
           "upright": "Novi počeci, nevinost, spontanost",
           "reversed": "Nepažnja, iskorišćavanje"
         },
-        "keywords": ["novi počeci", "nevinost"]
+        "keywords": [
+          "novi počeci",
+          "nevinost"
+        ]
       },
       "1": {
         "name": "Mađioničar",
@@ -1050,7 +954,10 @@
           "upright": "Manifestacija, snalažljivost, moć",
           "reversed": "Manipulacija, loše planiranje"
         },
-        "keywords": ["manifestacija", "moć"]
+        "keywords": [
+          "manifestacija",
+          "moć"
+        ]
       },
       "2": {
         "name": "Visoka Svestenica",
@@ -1058,7 +965,10 @@
           "upright": "Intuicija, sveto znanje, božanska ženskost",
           "reversed": "Tajne, odvojenost od intuicije"
         },
-        "keywords": ["intuicija", "misterija"]
+        "keywords": [
+          "intuicija",
+          "misterija"
+        ]
       },
       "3": {
         "name": "Carica",
@@ -1066,7 +976,10 @@
           "upright": "Ženskost, lepota, priroda, negovanje",
           "reversed": "Kreativni blok, zavisnost"
         },
-        "keywords": ["ženskost", "lepota"]
+        "keywords": [
+          "ženskost",
+          "lepota"
+        ]
       },
       "4": {
         "name": "Car",
@@ -1074,7 +987,10 @@
           "upright": "Autoritet, uspostavljanje, struktura",
           "reversed": "Dominacija, prekomerna kontrola"
         },
-        "keywords": ["autoritet", "struktura"]
+        "keywords": [
+          "autoritet",
+          "struktura"
+        ]
       },
       "5": {
         "name": "Sveštenik",
@@ -1082,7 +998,10 @@
           "upright": "Duhovna mudrost, verska uverenja",
           "reversed": "Lična uverenja, sloboda"
         },
-        "keywords": ["tradicija", "usaglašenost"]
+        "keywords": [
+          "tradicija",
+          "usaglašenost"
+        ]
       },
       "6": {
         "name": "Ljubavnici",
@@ -1090,7 +1009,10 @@
           "upright": "Ljubav, harmonija, veze",
           "reversed": "Samo-ljubav, neharmonija"
         },
-        "keywords": ["ljubav", "harmonija"]
+        "keywords": [
+          "ljubav",
+          "harmonija"
+        ]
       },
       "7": {
         "name": "Kola",
@@ -1098,7 +1020,10 @@
           "upright": "Kontrola, snaga volje, uspeh",
           "reversed": "Samo-disciplina, opozicija"
         },
-        "keywords": ["kontrola", "snaga volje"]
+        "keywords": [
+          "kontrola",
+          "snaga volje"
+        ]
       },
       "8": {
         "name": "Snaga",
@@ -1106,7 +1031,10 @@
           "upright": "Snaga, hrabrost, ubeđivanje",
           "reversed": "Samo-sumlja, nedostatak samopouzdanja"
         },
-        "keywords": ["snaga", "hrabrost"]
+        "keywords": [
+          "snaga",
+          "hrabrost"
+        ]
       },
       "9": {
         "name": "Pustinjak",
@@ -1114,7 +1042,10 @@
           "upright": "Traganje za dušom, introspekcija",
           "reversed": "Izolacija, usamljenost"
         },
-        "keywords": ["introspekcija", "traganje"]
+        "keywords": [
+          "introspekcija",
+          "traganje"
+        ]
       },
       "10": {
         "name": "Točak Sreće",
@@ -1122,7 +1053,10 @@
           "upright": "Dobra sreća, karma, životni ciklusi",
           "reversed": "Loša sreća, nedostatak kontrole"
         },
-        "keywords": ["sreća", "karma"]
+        "keywords": [
+          "sreća",
+          "karma"
+        ]
       },
       "11": {
         "name": "Pravda",
@@ -1130,7 +1064,10 @@
           "upright": "Pravda, pravednost, istina",
           "reversed": "Nepravda, nedostatak odgovornosti"
         },
-        "keywords": ["pravda", "pravednost"]
+        "keywords": [
+          "pravda",
+          "pravednost"
+        ]
       },
       "12": {
         "name": "Obeseni Čovek",
@@ -1138,7 +1075,10 @@
           "upright": "Predaja, puštanje, žrtvovanje",
           "reversed": "Kašnjenja, otpor, odugovlačenje"
         },
-        "keywords": ["predaja", "žrtvovanje"]
+        "keywords": [
+          "predaja",
+          "žrtvovanje"
+        ]
       },
       "13": {
         "name": "Smrt",
@@ -1146,7 +1086,10 @@
           "upright": "Krajevi, transformacija, prelaz",
           "reversed": "Otpornost na promene, unutrašnje čišćenje"
         },
-        "keywords": ["transformacija", "krajevi"]
+        "keywords": [
+          "transformacija",
+          "krajevi"
+        ]
       },
       "14": {
         "name": "Umerenost",
@@ -1154,7 +1097,10 @@
           "upright": "Ravnoteža, umerenost, strpljivost",
           "reversed": "Neravnoteža, preterivanje, samo-isceljenje"
         },
-        "keywords": ["ravnoteža", "umerenost"]
+        "keywords": [
+          "ravnoteža",
+          "umerenost"
+        ]
       },
       "15": {
         "name": "Đavo",
@@ -1162,7 +1108,10 @@
           "upright": "Porobljavanje, zavisnost, materijalizam",
           "reversed": "Oslobađanje ograničavajućih uverenja, odvajanje"
         },
-        "keywords": ["porobljavanje", "materijalizam"]
+        "keywords": [
+          "porobljavanje",
+          "materijalizam"
+        ]
       },
       "16": {
         "name": "Kula",
@@ -1170,7 +1119,10 @@
           "upright": "Iznenadna promena, prevrat, haos",
           "reversed": "Lična transformacija, strah od promene"
         },
-        "keywords": ["iznenadna promena", "prevrat"]
+        "keywords": [
+          "iznenadna promena",
+          "prevrat"
+        ]
       },
       "17": {
         "name": "Zvezda",
@@ -1178,7 +1130,10 @@
           "upright": "Nada, vera, svrha, obnavljanje",
           "reversed": "Nedostatak vere, očajanje, odvojenost"
         },
-        "keywords": ["nada", "vera"]
+        "keywords": [
+          "nada",
+          "vera"
+        ]
       },
       "18": {
         "name": "Mesec",
@@ -1186,7 +1141,10 @@
           "upright": "Iluzija, strah, anksioznost, podsvest",
           "reversed": "Oslobađanje straha, potisnuta emocija"
         },
-        "keywords": ["iluzija", "strah"]
+        "keywords": [
+          "iluzija",
+          "strah"
+        ]
       },
       "19": {
         "name": "Sunce",
@@ -1194,7 +1152,10 @@
           "upright": "Pozitivnost, zabava, toplina, uspeh",
           "reversed": "Unutrašnje dete, loše raspoloženje"
         },
-        "keywords": ["pozitivnost", "zabava"]
+        "keywords": [
+          "pozitivnost",
+          "zabava"
+        ]
       },
       "20": {
         "name": "Sud",
@@ -1202,7 +1163,10 @@
           "upright": "Sud, ponovno rođenje, unutrašnji poziv",
           "reversed": "Samo-sumlja, unutrašnji kritičar"
         },
-        "keywords": ["sud", "ponovno rođenje"]
+        "keywords": [
+          "sud",
+          "ponovno rođenje"
+        ]
       },
       "21": {
         "name": "Svet",
@@ -1210,7 +1174,10 @@
           "upright": "Završetak, integracija, postignuće",
           "reversed": "Traganje za ličnim zatvaranjem, prečica"
         },
-        "keywords": ["završetak", "integracija"]
+        "keywords": [
+          "završetak",
+          "integracija"
+        ]
       }
     },
     "cups": {
@@ -1220,7 +1187,10 @@
           "upright": "Nove veze, saosećanje",
           "reversed": "Samo-ljubav, potisnute emocije"
         },
-        "keywords": ["ljubav", "emocije"]
+        "keywords": [
+          "ljubav",
+          "emocije"
+        ]
       },
       "2": {
         "name": "Dvojka Pehara",
@@ -1228,7 +1198,10 @@
           "upright": "Partnerstvo, uzajamna privlačnost",
           "reversed": "Samo-ljubav, raskidi"
         },
-        "keywords": ["partnerstvo", "ljubav"]
+        "keywords": [
+          "partnerstvo",
+          "ljubav"
+        ]
       },
       "3": {
         "name": "Trojka Pehara",
@@ -1236,7 +1209,10 @@
           "upright": "Proslava, prijateljstvo",
           "reversed": "Nezavisnost, kreativni blokovi"
         },
-        "keywords": ["proslava", "prijateljstvo"]
+        "keywords": [
+          "proslava",
+          "prijateljstvo"
+        ]
       },
       "4": {
         "name": "Četvorka Pehara",
@@ -1244,7 +1220,10 @@
           "upright": "Meditacija, kontemplacija",
           "reversed": "Povlačenje, izolacija"
         },
-        "keywords": ["meditacija", "kontemplacija"]
+        "keywords": [
+          "meditacija",
+          "kontemplacija"
+        ]
       },
       "5": {
         "name": "Petica Pehara",
@@ -1252,7 +1231,10 @@
           "upright": "Žaljenje, razočaranje",
           "reversed": "Samo-opraštanje, napredovanje"
         },
-        "keywords": ["žaljenje", "razočaranje"]
+        "keywords": [
+          "žaljenje",
+          "razočaranje"
+        ]
       },
       "6": {
         "name": "Šestica Pehara",
@@ -1260,7 +1242,10 @@
           "upright": "Sećanja iz detinjstva, nevinost",
           "reversed": "Život u prošlosti, opraštanje"
         },
-        "keywords": ["nostalgija", "detinjstvo"]
+        "keywords": [
+          "nostalgija",
+          "detinjstvo"
+        ]
       },
       "7": {
         "name": "Sedmica Pehara",
@@ -1268,7 +1253,10 @@
           "upright": "Mogućnosti, izbori",
           "reversed": "Lične vrednosti, preopterećenost"
         },
-        "keywords": ["mogućnosti", "izbori"]
+        "keywords": [
+          "mogućnosti",
+          "izbori"
+        ]
       },
       "8": {
         "name": "Osmica Pehara",
@@ -1276,7 +1264,10 @@
           "upright": "Razočaranje, napuštanje",
           "reversed": "Pokušaj ponovo, neodlučnost"
         },
-        "keywords": ["razočaranje", "napuštanje"]
+        "keywords": [
+          "razočaranje",
+          "napuštanje"
+        ]
       },
       "9": {
         "name": "Devetka Pehara",
@@ -1284,7 +1275,10 @@
           "upright": "Zadovoljstvo, zadovoljstvo",
           "reversed": "Unutrašnja sreća, nezadovoljstvo"
         },
-        "keywords": ["zadovoljstvo", "zadovoljstvo"]
+        "keywords": [
+          "zadovoljstvo",
+          "zadovoljstvo"
+        ]
       },
       "10": {
         "name": "Desetka Pehara",
@@ -1292,7 +1286,10 @@
           "upright": "Božanska ljubav, harmonija",
           "reversed": "Odvojenost, teške veze"
         },
-        "keywords": ["božanska ljubav", "harmonija"]
+        "keywords": [
+          "božanska ljubav",
+          "harmonija"
+        ]
       },
       "page": {
         "name": "Paž Pehara",
@@ -1300,7 +1297,10 @@
           "upright": "Kreativne mogućnosti, intuicija",
           "reversed": "Nove ideje, sumlja u intuiciju"
         },
-        "keywords": ["kreativnost", "intuicija"]
+        "keywords": [
+          "kreativnost",
+          "intuicija"
+        ]
       },
       "knight": {
         "name": "Vitez Pehara",
@@ -1308,7 +1308,10 @@
           "upright": "Romantika, šarm, mašta",
           "reversed": "Nerealno, ljubomora"
         },
-        "keywords": ["romantika", "šarm"]
+        "keywords": [
+          "romantika",
+          "šarm"
+        ]
       },
       "queen": {
         "name": "Kraljica Pehara",
@@ -1316,7 +1319,10 @@
           "upright": "Saosećajna, emocionalno stabilna",
           "reversed": "Unutrašnja osećanja, briga o sebi"
         },
-        "keywords": ["saosećanje", "emocionalna stabilnost"]
+        "keywords": [
+          "saosećanje",
+          "emocionalna stabilnost"
+        ]
       },
       "king": {
         "name": "Kralj Pehara",
@@ -1324,7 +1330,10 @@
           "upright": "Emocionalno uravnotežen, diplomatski",
           "reversed": "Samo-saosećanje, promenljivo raspoloženje"
         },
-        "keywords": ["emocionalna ravnoteža", "diplomatija"]
+        "keywords": [
+          "emocionalna ravnoteža",
+          "diplomatija"
+        ]
       }
     },
     "wands": {
@@ -1334,7 +1343,10 @@
           "upright": "Inspiracija, nove mogućnosti",
           "reversed": "Nedostatak energije, dosada"
         },
-        "keywords": ["inspiracija", "moć"]
+        "keywords": [
+          "inspiracija",
+          "moć"
+        ]
       },
       "2": {
         "name": "Dvojka Štapova",
@@ -1342,7 +1354,10 @@
           "upright": "Planiranje budućnosti, odluke",
           "reversed": "Lični ciljevi, strah od nepoznatog"
         },
-        "keywords": ["planiranje", "odluke"]
+        "keywords": [
+          "planiranje",
+          "odluke"
+        ]
       },
       "3": {
         "name": "Trojka Štapova",
@@ -1350,7 +1365,10 @@
           "upright": "Širenje, predviđanje",
           "reversed": "Igra malo, kašnjenja"
         },
-        "keywords": ["širenje", "predviđanje"]
+        "keywords": [
+          "širenje",
+          "predviđanje"
+        ]
       },
       "4": {
         "name": "Četvorka Štapova",
@@ -1358,7 +1376,10 @@
           "upright": "Proslava, harmonija",
           "reversed": "Lična proslava, konflikt"
         },
-        "keywords": ["proslava", "harmonija"]
+        "keywords": [
+          "proslava",
+          "harmonija"
+        ]
       },
       "5": {
         "name": "Petica Štapova",
@@ -1366,7 +1387,10 @@
           "upright": "Konflikt, takmičenje",
           "reversed": "Unutrašnji konflikt, izbegavanje"
         },
-        "keywords": ["konflikt", "takmičenje"]
+        "keywords": [
+          "konflikt",
+          "takmičenje"
+        ]
       },
       "6": {
         "name": "Šestica Štapova",
@@ -1374,7 +1398,10 @@
           "upright": "Uspeh, prepoznavanje",
           "reversed": "Privatno postignuće, pad iz milosti"
         },
-        "keywords": ["uspeh", "prepoznavanje"]
+        "keywords": [
+          "uspeh",
+          "prepoznavanje"
+        ]
       },
       "7": {
         "name": "Sedmica Štapova",
@@ -1382,7 +1409,10 @@
           "upright": "Izazov, istrajnost",
           "reversed": "Iscrpljenost, odustajanje"
         },
-        "keywords": ["izazov", "istrajnost"]
+        "keywords": [
+          "izazov",
+          "istrajnost"
+        ]
       },
       "8": {
         "name": "Osmica Štapova",
@@ -1390,7 +1420,10 @@
           "upright": "Brzina, napredak",
           "reversed": "Kašnjenja, frustracija"
         },
-        "keywords": ["brzina", "napredak"]
+        "keywords": [
+          "brzina",
+          "napredak"
+        ]
       },
       "9": {
         "name": "Devetka Štapova",
@@ -1398,7 +1431,10 @@
           "upright": "Otpornost, hrabrost",
           "reversed": "Unutrašnji resursi, borba"
         },
-        "keywords": ["otpornost", "hrabrost"]
+        "keywords": [
+          "otpornost",
+          "hrabrost"
+        ]
       },
       "10": {
         "name": "Desetka Štapova",
@@ -1406,7 +1442,10 @@
           "upright": "Teret, odgovornost",
           "reversed": "Raditi sve, delegiranje"
         },
-        "keywords": ["teret", "odgovornost"]
+        "keywords": [
+          "teret",
+          "odgovornost"
+        ]
       },
       "page": {
         "name": "Paž Štapova",
@@ -1414,7 +1453,10 @@
           "upright": "Inspiracija, otkriće",
           "reversed": "Nedostatak pravca, odlaganje"
         },
-        "keywords": ["inspiracija", "otkriće"]
+        "keywords": [
+          "inspiracija",
+          "otkriće"
+        ]
       },
       "knight": {
         "name": "Vitez Štapova",
@@ -1422,7 +1464,10 @@
           "upright": "Energija, strast, avantura",
           "reversed": "Žurba, rasuta energija"
         },
-        "keywords": ["energija", "strast"]
+        "keywords": [
+          "energija",
+          "strast"
+        ]
       },
       "queen": {
         "name": "Kraljica Štapova",
@@ -1430,7 +1475,10 @@
           "upright": "Hrabrost, nezavisnost",
           "reversed": "Samo-poštovanje, introvertnost"
         },
-        "keywords": ["hrabrost", "nezavisnost"]
+        "keywords": [
+          "hrabrost",
+          "nezavisnost"
+        ]
       },
       "king": {
         "name": "Kralj Štapova",
@@ -1438,7 +1486,10 @@
           "upright": "Vodstvo, vizija",
           "reversed": "Impulsivnost, nemilosrdnost"
         },
-        "keywords": ["vodstvo", "vizija"]
+        "keywords": [
+          "vodstvo",
+          "vizija"
+        ]
       }
     },
     "swords": {
@@ -1448,7 +1499,10 @@
           "upright": "Proboj, jasnoća",
           "reversed": "Konfuzija, haos"
         },
-        "keywords": ["jasnoća", "proboj"]
+        "keywords": [
+          "jasnoća",
+          "proboj"
+        ]
       },
       "2": {
         "name": "Dvojka Mačeva",
@@ -1456,7 +1510,10 @@
           "upright": "Teške odluke, ćorsokak",
           "reversed": "Neodlučnost, konfuzija"
         },
-        "keywords": ["odluke", "ćorsokak"]
+        "keywords": [
+          "odluke",
+          "ćorsokak"
+        ]
       },
       "3": {
         "name": "Trojka Mačeva",
@@ -1464,7 +1521,10 @@
           "upright": "Slomljeno srce, tuga",
           "reversed": "Oslobađanje bola, optimizam"
         },
-        "keywords": ["slomljeno srce", "tuga"]
+        "keywords": [
+          "slomljeno srce",
+          "tuga"
+        ]
       },
       "4": {
         "name": "Četvorka Mačeva",
@@ -1472,7 +1532,10 @@
           "upright": "Odmor, meditacija",
           "reversed": "Iscrpljenost, sagorevanje"
         },
-        "keywords": ["odmor", "meditacija"]
+        "keywords": [
+          "odmor",
+          "meditacija"
+        ]
       },
       "5": {
         "name": "Petica Mačeva",
@@ -1480,7 +1543,10 @@
           "upright": "Konflikt, poraz",
           "reversed": "Pomirenje, prošla ogorčenost"
         },
-        "keywords": ["konflikt", "poraz"]
+        "keywords": [
+          "konflikt",
+          "poraz"
+        ]
       },
       "6": {
         "name": "Šestica Mačeva",
@@ -1488,7 +1554,10 @@
           "upright": "Prelaz, promena",
           "reversed": "Lični prelaz, otpor"
         },
-        "keywords": ["prelaz", "promena"]
+        "keywords": [
+          "prelaz",
+          "promena"
+        ]
       },
       "7": {
         "name": "Sedmica Mačeva",
@@ -1496,7 +1565,10 @@
           "upright": "Izdaja, obmana",
           "reversed": "Sindrom prevaranta, tajne"
         },
-        "keywords": ["izdaja", "obmana"]
+        "keywords": [
+          "izdaja",
+          "obmana"
+        ]
       },
       "8": {
         "name": "Osmica Mačeva",
@@ -1504,7 +1576,10 @@
           "upright": "Ograničavanje, zatvor",
           "reversed": "Samo-ograničavajuća uverenja, unutrašnji kritičar"
         },
-        "keywords": ["ograničavanje", "zatvor"]
+        "keywords": [
+          "ograničavanje",
+          "zatvor"
+        ]
       },
       "9": {
         "name": "Devetka Mačeva",
@@ -1512,7 +1587,10 @@
           "upright": "Anksioznost, strah",
           "reversed": "Unutrašnja previranja, oslobađanje anksioznosti"
         },
-        "keywords": ["anksioznost", "strah"]
+        "keywords": [
+          "anksioznost",
+          "strah"
+        ]
       },
       "10": {
         "name": "Desetka Mačeva",
@@ -1520,7 +1598,10 @@
           "upright": "Bolni krajevi, izdaja",
           "reversed": "Oporavak, otpor kraju"
         },
-        "keywords": ["krajevi", "izdaja"]
+        "keywords": [
+          "krajevi",
+          "izdaja"
+        ]
       },
       "page": {
         "name": "Paž Mačeva",
@@ -1528,7 +1609,10 @@
           "upright": "Nove ideje, radoznalost",
           "reversed": "Samo-izražavanje, nema akcije"
         },
-        "keywords": ["ideje", "radoznalost"]
+        "keywords": [
+          "ideje",
+          "radoznalost"
+        ]
       },
       "knight": {
         "name": "Vitez Mačeva",
@@ -1536,7 +1620,10 @@
           "upright": "Ambiciozan, orijentisan na akciju",
           "reversed": "Nemiran, impulsivan"
         },
-        "keywords": ["ambicija", "akcija"]
+        "keywords": [
+          "ambicija",
+          "akcija"
+        ]
       },
       "queen": {
         "name": "Kraljica Mačeva",
@@ -1544,7 +1631,10 @@
           "upright": "Nezavisan, jasne granice",
           "reversed": "Previše emocionalan, hladan"
         },
-        "keywords": ["nezavisnost", "granice"]
+        "keywords": [
+          "nezavisnost",
+          "granice"
+        ]
       },
       "king": {
         "name": "Kralj Mačeva",
@@ -1552,7 +1642,10 @@
           "upright": "Mentalna jasnoća, autoritet",
           "reversed": "Tiha moć, zloupotreba moći"
         },
-        "keywords": ["jasnoća", "autoritet"]
+        "keywords": [
+          "jasnoća",
+          "autoritet"
+        ]
       }
     },
     "pentacles": {
@@ -1562,7 +1655,10 @@
           "upright": "Nova mogućnost, manifestacija",
           "reversed": "Propuštena mogućnost, nedostatak planiranja"
         },
-        "keywords": ["mogućnost", "manifestacija"]
+        "keywords": [
+          "mogućnost",
+          "manifestacija"
+        ]
       },
       "2": {
         "name": "Dvojka Pentakla",
@@ -1570,7 +1666,10 @@
           "upright": "Više prioriteta, prilagodljivost",
           "reversed": "Prekomitovanost, neorganizovanost"
         },
-        "keywords": ["prioriteti", "prilagodljivost"]
+        "keywords": [
+          "prioriteti",
+          "prilagodljivost"
+        ]
       },
       "3": {
         "name": "Trojka Pentakla",
@@ -1578,7 +1677,10 @@
           "upright": "Saradnja, učenje",
           "reversed": "Neharmonija, rad sam"
         },
-        "keywords": ["saradnja", "učenje"]
+        "keywords": [
+          "saradnja",
+          "učenje"
+        ]
       },
       "4": {
         "name": "Četvorka Pentakla",
@@ -1586,7 +1688,10 @@
           "upright": "Štednja novca, sigurnost",
           "reversed": "Prekomerno trošenje, velikodušnost"
         },
-        "keywords": ["štednja", "sigurnost"]
+        "keywords": [
+          "štednja",
+          "sigurnost"
+        ]
       },
       "5": {
         "name": "Petica Pentakla",
@@ -1594,7 +1699,10 @@
           "upright": "Finansijski gubitak, izolacija",
           "reversed": "Oporavak od gubitka, duhovno siromaštvo"
         },
-        "keywords": ["gubitak", "izolacija"]
+        "keywords": [
+          "gubitak",
+          "izolacija"
+        ]
       },
       "6": {
         "name": "Šestica Pentakla",
@@ -1602,7 +1710,10 @@
           "upright": "Davanje, deljenje bogatstva",
           "reversed": "Briga o sebi, neplaćeni dugovi"
         },
-        "keywords": ["davanje", "deljenje"]
+        "keywords": [
+          "davanje",
+          "deljenje"
+        ]
       },
       "7": {
         "name": "Sedmica Pentakla",
@@ -1610,7 +1721,10 @@
           "upright": "Istrajnost, investicija",
           "reversed": "Nedostatak dugoročnog gledišta, nestrpljivost"
         },
-        "keywords": ["istrajnost", "investicija"]
+        "keywords": [
+          "istrajnost",
+          "investicija"
+        ]
       },
       "8": {
         "name": "Osmica Pentakla",
@@ -1618,7 +1732,10 @@
           "upright": "Majstorstvo, razvoj veština",
           "reversed": "Perfekcionizam, nedostatak posvećenosti"
         },
-        "keywords": ["majstorstvo", "veština"]
+        "keywords": [
+          "majstorstvo",
+          "veština"
+        ]
       },
       "9": {
         "name": "Devetka Pentakla",
@@ -1626,7 +1743,10 @@
           "upright": "Obilje, finansijska nezavisnost",
           "reversed": "Samo-vrednost, prekomerna investicija"
         },
-        "keywords": ["obilje", "nezavisnost"]
+        "keywords": [
+          "obilje",
+          "nezavisnost"
+        ]
       },
       "10": {
         "name": "Desetka Pentakla",
@@ -1634,7 +1754,10 @@
           "upright": "Bogatstvo, porodica, dugoročni uspeh",
           "reversed": "Finansijski neuspeh, mračna strana bogatstva"
         },
-        "keywords": ["bogatstvo", "porodica"]
+        "keywords": [
+          "bogatstvo",
+          "porodica"
+        ]
       },
       "page": {
         "name": "Paž Pentakla",
@@ -1642,7 +1765,10 @@
           "upright": "Manifestacija, finansijska mogućnost",
           "reversed": "Nedostatak napretka, odlaganje"
         },
-        "keywords": ["manifestacija", "mogućnost"]
+        "keywords": [
+          "manifestacija",
+          "mogućnost"
+        ]
       },
       "knight": {
         "name": "Vitez Pentakla",
@@ -1650,7 +1776,10 @@
           "upright": "Marljiv rad, rutina",
           "reversed": "Samo-disciplina, osećaj zaglavljenosti"
         },
-        "keywords": ["rad", "rutina"]
+        "keywords": [
+          "rad",
+          "rutina"
+        ]
       },
       "queen": {
         "name": "Kraljica Pentakla",
@@ -1658,7 +1787,10 @@
           "upright": "Negovanje, praktičnost",
           "reversed": "Finansijska nezavisnost, konflikt posao-dom"
         },
-        "keywords": ["negovanje", "praktičnost"]
+        "keywords": [
+          "negovanje",
+          "praktičnost"
+        ]
       },
       "king": {
         "name": "Kralj Pentakla",
@@ -1666,7 +1798,10 @@
           "upright": "Finansijski uspeh, poslovna pamet",
           "reversed": "Finansijski savet, život iznad mogućnosti"
         },
-        "keywords": ["uspeh", "posao"]
+        "keywords": [
+          "uspeh",
+          "posao"
+        ]
       }
     }
   }

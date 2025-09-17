@@ -9,7 +9,7 @@
  * DOSYA AMACI:
  * Profil oluşturma ve yönetimi için ortak utility fonksiyonları.
  * Tutarlı profil yönetimi sağlar.
- * 
+ *
  * ÖNEMLİ DEĞİŞİKLİK:
  * - Kredi ataması kaldırıldı (credit_balance: 0)
  * - Yeni kullanıcılar artık 0 kredi ile başlar
@@ -55,14 +55,14 @@ export function generateDisplayName(
   if (fullName && fullName.trim()) {
     return fullName.trim();
   }
-  
+
   if (email) {
     const username = email.split('@')[0];
     if (username && username.length > 0) {
       return username;
     }
   }
-  
+
   return fallback;
 }
 
@@ -71,12 +71,13 @@ export function generateDisplayName(
  */
 export function prepareProfileData(data: CreateProfileData) {
   // firstName ve lastName varsa birleştir, yoksa fullName kullan
-  const fullName = data.firstName && data.lastName 
-    ? `${data.firstName} ${data.lastName}`
-    : data.fullName;
-  
+  const fullName =
+    data.firstName && data.lastName
+      ? `${data.firstName} ${data.lastName}`
+      : data.fullName;
+
   const displayName = generateDisplayName(fullName, data.email);
-  
+
   return {
     id: data.userId,
     first_name: data.firstName || null,
@@ -100,7 +101,7 @@ export async function createOrUpdateProfile(
 ): Promise<CreateProfileResult> {
   try {
     const profileData = prepareProfileData(data);
-    
+
     const { data: profile, error } = await supabase
       .from('profiles')
       .upsert(profileData, {
@@ -131,7 +132,9 @@ export async function createOrUpdateProfile(
 /**
  * Mevcut profili kontrol eder ve yoksa oluşturur
  */
-export async function ensureProfileExists(user: User): Promise<CreateProfileResult> {
+export async function ensureProfileExists(
+  user: User
+): Promise<CreateProfileResult> {
   try {
     // Önce mevcut profili kontrol et
     const { data: existingProfile, error: fetchError } = await supabase

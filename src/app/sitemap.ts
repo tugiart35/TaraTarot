@@ -41,7 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   // Locale sayfaları
-  const localePages = locales.flatMap((locale) => [
+  const localePages = locales.flatMap(locale => [
     {
       url: `${baseUrl}/${locale}`,
       lastModified: currentDate,

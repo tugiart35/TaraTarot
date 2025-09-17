@@ -40,4 +40,3 @@ export function PageTrackingProvider({ children }: PageTrackingProviderProps) {
 
   return <>{children}</>;
 }
-

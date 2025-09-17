@@ -1,42 +1,42 @@
 /*
  * DOSYA ANALİZİ - PDF GENERATOR SERVICE
- * 
+ *
  * BAĞLANTILI DOSYALAR:
  * - src/lib/email/email-service.ts (email gönderme servisi)
  * - src/features/shared/ui/ReadingDetailModal.tsx (modal tasarımı)
- * 
+ *
  * DOSYA AMACI:
  * ReadingDetailModal tarzında PDF oluşturma servisi
  * Puppeteer ile yüksek kaliteli PDF üretimi
- * 
+ *
  * SUPABASE DEĞİŞKENLERİ:
  * - readings tablosu (okuma verileri)
  * - cards tablosu (kart bilgileri)
- * 
+ *
  * GELİŞTİRME ÖNERİLERİ:
  * - Kart fotoğrafları eklendi
  * - Tek sayfa PDF formatı
  * - Modern gradient tasarım
- * 
+ *
  * HATA DURUMLARI:
  * - Puppeteer başlatma hatası
  * - HTML render hatası
- * 
+ *
  * KULLANIM DURUMU:
  * - AKTİF: Email PDF oluşturma
  * - GÜVENLİ: Production-ready
  */
 
 // JSDOM not used in this file
-import { 
-  calculateLifePath, 
-  calculateExpressionDestiny, 
-  calculateSoulUrge, 
+import {
+  calculateLifePath,
+  calculateExpressionDestiny,
+  calculateSoulUrge,
   calculatePersonality,
   calculateBirthdayNumber,
   calculateMaturity,
   calculatePinnaclesChallenges,
-  calculatePersonalCycles
+  calculatePersonalCycles,
 } from '@/lib/numerology/calculators';
 
 export interface ReadingData {
@@ -61,21 +61,21 @@ class PDFGeneratorService {
     try {
       // Puppeteer import'u
       const puppeteer = await import('puppeteer');
-      
+
       // Browser başlat
       const browser = await puppeteer.default.launch({
         headless: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox']
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
       });
-      
+
       const page = await browser.newPage();
-      
+
       // ReadingDetailModal tarzında HTML oluştur
       const htmlContent = this.generateModalStyleHTML(readingData);
-      
+
       // HTML'i sayfaya yükle
       await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
-      
+
       // PDF oluştur - Tek sayfa, kart fotoğrafları ile
       const pdfBuffer = await page.pdf({
         format: 'A4',
@@ -84,18 +84,17 @@ class PDFGeneratorService {
           top: '10mm',
           right: '10mm',
           bottom: '10mm',
-          left: '10mm'
+          left: '10mm',
         },
         displayHeaderFooter: false,
         preferCSSPageSize: false,
         width: '210mm',
-        height: '297mm'
+        height: '297mm',
       });
-      
-      await browser.close();
-      
-      return Buffer.from(pdfBuffer);
 
+      await browser.close();
+
+      return Buffer.from(pdfBuffer);
     } catch (error) {
       console.error('PDF generation failed:', error);
       throw new Error('PDF oluşturulamadı');
@@ -109,7 +108,7 @@ class PDFGeneratorService {
         month: 'long',
         year: 'numeric',
         hour: '2-digit',
-        minute: '2-digit'
+        minute: '2-digit',
       });
     };
 
@@ -122,11 +121,15 @@ class PDFGeneratorService {
     };
 
     const getStatusInfo = (status: string) => {
-      switch(status) {
-        case 'completed': return { text: 'Tamamlandı', icon: '✅' };
-        case 'reviewed': return { text: 'İncelendi', icon: '👁️' };
-        case 'pending': return { text: 'Beklemede', icon: '⏳' };
-        default: return { text: status, icon: '❓' };
+      switch (status) {
+        case 'completed':
+          return { text: 'Tamamlandı', icon: '✅' };
+        case 'reviewed':
+          return { text: 'İncelendi', icon: '👁️' };
+        case 'pending':
+          return { text: 'Beklemede', icon: '⏳' };
+        default:
+          return { text: status, icon: '❓' };
       }
     };
 
@@ -403,12 +406,15 @@ class PDFGeneratorService {
 
     const questions = Object.entries(readingData.questions.userQuestions)
       .filter(([_, qa]: [string, any]) => qa.question && qa.answer)
-      .map(([_, qa]: [string, any]) => `
+      .map(
+        ([_, qa]: [string, any]) => `
         <div class="question-item">
           <h4>✨ ${qa.question}</h4>
           <p>${qa.answer}</p>
         </div>
-      `).join('');
+      `
+      )
+      .join('');
 
     if (!questions) return '';
 
@@ -422,35 +428,45 @@ class PDFGeneratorService {
 
   private generateCardsHTML(readingData: ReadingData): string {
     const cardsData = Array.isArray(readingData.cards) ? readingData.cards : [];
-      const positionTitles = [
-        'İlgi Duyduğun Kişi',
-        'Fiziksel/Cinsel Bağlantı', 
-        'Duygusal/Ruhsal Bağlantı',
-        'Uzun Vadeli Sonuç'
-      ];
+    const positionTitles = [
+      'İlgi Duyduğun Kişi',
+      'Fiziksel/Cinsel Bağlantı',
+      'Duygusal/Ruhsal Bağlantı',
+      'Uzun Vadeli Sonuç',
+    ];
 
-      return cardsData.map((card: any, index: number) => {
+    return cardsData
+      .map((card: any, index: number) => {
         const positionTitle = positionTitles[index] || `Pozisyon ${index + 1}`;
-      const cardImageUrl = this.getCardImageUrl(card.id, card.isReversed);
+        const cardImageUrl = this.getCardImageUrl(card.id, card.isReversed);
 
         // Yorum metnini bul
-      const interpretation = readingData.interpretation || '';
-      const lines = interpretation.split('\n');
-      const cardSection = lines.find(line => line.includes(`${index + 1}.`) && line.includes(card.nameTr || card.name));
-      
-      let meaning = '';
-      if (cardSection) {
-        const sectionIndex = lines.findIndex(line => line === cardSection);
-        const meaningLines = [];
-        for (let i = sectionIndex + 2; i < lines.length; i++) {
-          const currentLine = lines[i];
-          if (!currentLine || currentLine.trim() === '' || currentLine.match(/^\*\*\d+\./) || currentLine.includes('**Aşk Hayatı Özeti**')) {
-            break;
+        const interpretation = readingData.interpretation || '';
+        const lines = interpretation.split('\n');
+        const cardSection = lines.find(
+          line =>
+            line.includes(`${index + 1}.`) &&
+            line.includes(card.nameTr || card.name)
+        );
+
+        let meaning = '';
+        if (cardSection) {
+          const sectionIndex = lines.findIndex(line => line === cardSection);
+          const meaningLines = [];
+          for (let i = sectionIndex + 2; i < lines.length; i++) {
+            const currentLine = lines[i];
+            if (
+              !currentLine ||
+              currentLine.trim() === '' ||
+              currentLine.match(/^\*\*\d+\./) ||
+              currentLine.includes('**Aşk Hayatı Özeti**')
+            ) {
+              break;
+            }
+            meaningLines.push(currentLine.trim());
           }
-          meaningLines.push(currentLine.trim());
+          meaning = meaningLines.join(' ').trim();
         }
-        meaning = meaningLines.join(' ').trim();
-      }
 
         return `
         <div class="card-item">
@@ -465,13 +481,15 @@ class PDFGeneratorService {
           </div>
           </div>
         `;
-      }).join('');
+      })
+      .join('');
   }
 
   private getCardImageUrl(cardId: number, _isReversed: boolean): string {
     // Kart fotoğrafı URL'si oluştur
     const cardNumber = cardId.toString().padStart(2, '0');
-    const baseUrl = 'https://pootnkllsznjbaozpfss.supabase.co/storage/v1/object/public/cards/rws';
+    const baseUrl =
+      'https://pootnkllsznjbaozpfss.supabase.co/storage/v1/object/public/cards/rws';
     return `${baseUrl}/${cardNumber}.jpg`;
   }
 
@@ -479,24 +497,24 @@ class PDFGeneratorService {
     try {
       // Puppeteer import'u
       const puppeteer = await import('puppeteer');
-      
+
       // Browser başlat
       const browser = await puppeteer.default.launch({
         headless: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox']
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
       });
-      
+
       const page = await browser.newPage();
-      
+
       // Numeroloji hesaplamaları yap
       const numerologyData = this.calculateNumerologyData(userData);
-      
+
       // Numeroloji HTML oluştur
       const htmlContent = this.generateNumerologyHTML(numerologyData, userData);
-      
+
       // HTML'i sayfaya yükle
       await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
-      
+
       // PDF oluştur
       const pdfBuffer = await page.pdf({
         format: 'A4',
@@ -505,18 +523,17 @@ class PDFGeneratorService {
           top: '10mm',
           right: '10mm',
           bottom: '10mm',
-          left: '10mm'
+          left: '10mm',
         },
         displayHeaderFooter: false,
         preferCSSPageSize: false,
         width: '210mm',
-        height: '297mm'
+        height: '297mm',
       });
-      
-      await browser.close();
-      
-      return Buffer.from(pdfBuffer);
 
+      await browser.close();
+
+      return Buffer.from(pdfBuffer);
     } catch (error) {
       console.error('Numerology PDF generation failed:', error);
       throw new Error('Numeroloji PDF oluşturulamadı');
@@ -526,7 +543,7 @@ class PDFGeneratorService {
   private calculateNumerologyData(userData: any) {
     const fullName = `${userData.name || ''} ${userData.surname || ''}`.trim();
     const birthDate = userData.birthDate || userData.birth_date || '';
-    
+
     return {
       lifePath: calculateLifePath(birthDate, 'tr'),
       expression: calculateExpressionDestiny(fullName, 'tr'),
@@ -539,14 +556,14 @@ class PDFGeneratorService {
         'tr'
       ),
       pinnacles: calculatePinnaclesChallenges(birthDate, 'tr'),
-      personalCycles: calculatePersonalCycles(birthDate, 'tr')
+      personalCycles: calculatePersonalCycles(birthDate, 'tr'),
     };
   }
 
   private generateNumerologyHTML(numerologyData: any, userData: any): string {
     const fullName = `${userData.name || ''} ${userData.surname || ''}`.trim();
     const birthDate = userData.birthDate || userData.birth_date || '';
-    
+
     return `
       <!DOCTYPE html>
       <html>
@@ -898,17 +915,25 @@ class PDFGeneratorService {
           </p>
         </div>
         
-        ${numerologyData.pinnacles.pinnacles ? `
+        ${
+          numerologyData.pinnacles.pinnacles
+            ? `
         <div class="pinnacles-section">
           <h3>💎 Yaşam Zirveleri</h3>
-          ${numerologyData.pinnacles.pinnacles.map((pinnacle: any, _index: number) => `
+          ${numerologyData.pinnacles.pinnacles
+            .map(
+              (pinnacle: any, _index: number) => `
             <div class="pinnacle-item">
               <span class="pinnacle-period">${pinnacle.period}</span>
               <span class="pinnacle-number">${pinnacle.number}</span>
             </div>
-          `).join('')}
+          `
+            )
+            .join('')}
         </div>
-        ` : ''}
+        `
+            : ''
+        }
         
         <div class="footer">
           <p>Busbuskimki Tarot - Mistik Rehberlik Sistemi</p>

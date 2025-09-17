@@ -62,7 +62,10 @@ export interface BaseInterpretationProps {
     _card: TarotCard,
     _isReversed: boolean
   ) => string;
-  getKeywords?: (_meaning: CardMeaningData | null, _card: TarotCard) => string[];
+  getKeywords?: (
+    _meaning: CardMeaningData | null,
+    _card: TarotCard
+  ) => string[];
 
   // POZİSYON ÖZEL YORUM FONKSİYONU
   getPositionSpecificInterpretation?: (
@@ -284,7 +287,7 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
   ) => {
     const colors = getThemeColors(theme);
     // useAuth kaldırıldı - login sistemi kaldırıldı
-    
+
     // Varsayılan değerleri i18n'den al
     const defaultTitle = title || 'Tarot Yorumu';
     const defaultBadgeText = badgeText || 'TAROT';
@@ -304,7 +307,9 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
             <span className={`${colors.iconText} text-xl`}>{icon}</span>
           </div>
           <div>
-            <h3 className={`${colors.titleText} font-bold text-xl`}>{defaultTitle}</h3>
+            <h3 className={`${colors.titleText} font-bold text-xl`}>
+              {defaultTitle}
+            </h3>
             <span className={`text-xs ${badgeColor} px-2 py-1 rounded`}>
               {defaultBadgeText}
             </span>
@@ -334,7 +339,7 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
                   isReversed[idx] || false
                 )
               : getMeaningText?.(cardMeaning, card, isReversed[idx] || false) ||
-                ((isReversed[idx] || false)
+                (isReversed[idx] || false
                   ? card.meaningTr.reversed
                   : card.meaningTr.upright);
 

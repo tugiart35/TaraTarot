@@ -107,7 +107,9 @@ export class APIKeyManager {
   static async createAPIKey(keyData: CreateAPIKeyData): Promise<APIKey | null> {
     try {
       // Mevcut kullanıcıyı al
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (!user) {
         throw new Error('User not authenticated');
       }
@@ -122,7 +124,7 @@ export class APIKeyManager {
           service_type: keyData.service_type,
           key_value: encryptedKey,
           active: keyData.active ?? true,
-          created_by: user.id
+          created_by: user.id,
         })
         .select()
         .single();
@@ -137,13 +139,13 @@ export class APIKeyManager {
         resourceId: data.id,
         newValues: {
           name: data.name,
-          service_type: data.service_type
+          service_type: data.service_type,
         },
         metadata: {
           keyId: data.id,
           keyName: data.name,
-          serviceType: data.service_type
-        }
+          serviceType: data.service_type,
+        },
       });
 
       return data;
@@ -154,23 +156,30 @@ export class APIKeyManager {
   }
 
   // API key güncelle
-  static async updateAPIKey(id: string, updateData: UpdateAPIKeyData): Promise<APIKey | null> {
+  static async updateAPIKey(
+    id: string,
+    updateData: UpdateAPIKeyData
+  ): Promise<APIKey | null> {
     try {
       // Mevcut kullanıcıyı al
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (!user) {
         throw new Error('User not authenticated');
       }
 
       const updatePayload: any = {
-        updated_at: new Date().toISOString()
+        updated_at: new Date().toISOString(),
       };
 
       // Sadece sağlanan alanları güncelle
       if (updateData.name !== undefined) updatePayload.name = updateData.name;
-      if (updateData.service_type !== undefined) updatePayload.service_type = updateData.service_type;
-      if (updateData.active !== undefined) updatePayload.active = updateData.active;
-      
+      if (updateData.service_type !== undefined)
+        updatePayload.service_type = updateData.service_type;
+      if (updateData.active !== undefined)
+        updatePayload.active = updateData.active;
+
       // Key value güncelleniyorsa şifrele
       if (updateData.key_value !== undefined) {
         updatePayload.key_value = await this.encryptKey(updateData.key_value);
@@ -194,8 +203,8 @@ export class APIKeyManager {
         newValues: updateData,
         metadata: {
           keyId: id,
-          updatedFields: Object.keys(updateData)
-        }
+          updatedFields: Object.keys(updateData),
+        },
       });
 
       return data;
@@ -209,7 +218,9 @@ export class APIKeyManager {
   static async deleteAPIKey(id: string): Promise<boolean> {
     try {
       // Mevcut kullanıcıyı al
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (!user) {
         throw new Error('User not authenticated');
       }
@@ -220,10 +231,7 @@ export class APIKeyManager {
         throw new Error('API key not found');
       }
 
-      const { error } = await supabase
-        .from('api_keys')
-        .delete()
-        .eq('id', id);
+      const { error } = await supabase.from('api_keys').delete().eq('id', id);
 
       if (error) {
         console.error('Error deleting API key:', error);
@@ -235,13 +243,13 @@ export class APIKeyManager {
         resourceId: id,
         oldValues: {
           name: keyData.name,
-          service_type: keyData.service_type
+          service_type: keyData.service_type,
         },
         metadata: {
           keyId: id,
           keyName: keyData.name,
-          serviceType: keyData.service_type
-        }
+          serviceType: keyData.service_type,
+        },
       });
 
       return true;
@@ -252,7 +260,9 @@ export class APIKeyManager {
   }
 
   // API key'i test et
-  static async testAPIKey(id: string): Promise<{ success: boolean; message: string }> {
+  static async testAPIKey(
+    id: string
+  ): Promise<{ success: boolean; message: string }> {
     try {
       const keyData = await this.getAPIKeyById(id);
       if (!keyData) {
@@ -275,7 +285,10 @@ export class APIKeyManager {
       }
     } catch (error) {
       console.error('APIKeyManager.testAPIKey error:', error);
-      return { success: false, message: 'Test failed: ' + (error as Error).message };
+      return {
+        success: false,
+        message: 'Test failed: ' + (error as Error).message,
+      };
     }
   }
 
@@ -301,19 +314,24 @@ export class APIKeyManager {
   }
 
   // Groq API test
-  private static async testGroqAPI(apiKey: string): Promise<{ success: boolean; message: string }> {
+  private static async testGroqAPI(
+    apiKey: string
+  ): Promise<{ success: boolean; message: string }> {
     try {
       const response = await fetch('https://api.groq.com/openai/v1/models', {
         headers: {
-          'Authorization': `Bearer ${apiKey}`,
-          'Content-Type': 'application/json'
-        }
+          Authorization: `Bearer ${apiKey}`,
+          'Content-Type': 'application/json',
+        },
       });
 
       if (response.ok) {
         return { success: true, message: 'Groq API connection successful' };
       } else {
-        return { success: false, message: `Groq API error: ${response.status}` };
+        return {
+          success: false,
+          message: `Groq API error: ${response.status}`,
+        };
       }
     } catch (error) {
       return { success: false, message: 'Groq API test failed' };
@@ -321,19 +339,24 @@ export class APIKeyManager {
   }
 
   // OpenAI API test
-  private static async testOpenAIAPI(apiKey: string): Promise<{ success: boolean; message: string }> {
+  private static async testOpenAIAPI(
+    apiKey: string
+  ): Promise<{ success: boolean; message: string }> {
     try {
       const response = await fetch('https://api.openai.com/v1/models', {
         headers: {
-          'Authorization': `Bearer ${apiKey}`,
-          'Content-Type': 'application/json'
-        }
+          Authorization: `Bearer ${apiKey}`,
+          'Content-Type': 'application/json',
+        },
       });
 
       if (response.ok) {
         return { success: true, message: 'OpenAI API connection successful' };
       } else {
-        return { success: false, message: `OpenAI API error: ${response.status}` };
+        return {
+          success: false,
+          message: `OpenAI API error: ${response.status}`,
+        };
       }
     } catch (error) {
       return { success: false, message: 'OpenAI API test failed' };
@@ -341,23 +364,27 @@ export class APIKeyManager {
   }
 
   // Stripe API test
-  private static async testStripeAPI(apiKey: string): Promise<{ success: boolean; message: string }> {
+  private static async testStripeAPI(
+    apiKey: string
+  ): Promise<{ success: boolean; message: string }> {
     try {
       const response = await fetch('https://api.stripe.com/v1/balance', {
         headers: {
-          'Authorization': `Bearer ${apiKey}`,
-          'Content-Type': 'application/x-www-form-urlencoded'
-        }
+          Authorization: `Bearer ${apiKey}`,
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
       });
 
       if (response.ok) {
         return { success: true, message: 'Stripe API connection successful' };
       } else {
-        return { success: false, message: `Stripe API error: ${response.status}` };
+        return {
+          success: false,
+          message: `Stripe API error: ${response.status}`,
+        };
       }
     } catch (error) {
       return { success: false, message: 'Stripe API test failed' };
     }
   }
 }
-

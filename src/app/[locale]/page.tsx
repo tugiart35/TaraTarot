@@ -12,6 +12,6 @@ interface HomePageProps {
 
 export default async function HomePage({ params }: HomePageProps) {
   const { locale } = await params;
-  
+
   return <HomePageClient locale={locale} />;
 }

@@ -30,21 +30,25 @@ Kullanım durumu:
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
 
-export async function checkMaintenanceMode(request: NextRequest): Promise<NextResponse | null> {
+export async function checkMaintenanceMode(
+  request: NextRequest
+): Promise<NextResponse | null> {
   try {
     // Admin sayfaları ve API endpoint'leri için bakım modunu atla
     const pathname = request.nextUrl.pathname;
-    const isAdminRoute = pathname.startsWith('/pakize') || pathname.startsWith('/api/pakize');
-    const isAuthRoute = pathname.startsWith('/auth') || pathname.startsWith('/api/auth');
+    const isAdminRoute =
+      pathname.startsWith('/pakize') || pathname.startsWith('/api/pakize');
+    const isAuthRoute =
+      pathname.startsWith('/auth') || pathname.startsWith('/api/auth');
     const isMaintenanceRoute = pathname === '/maintenance';
-    
+
     if (isAdminRoute || isAuthRoute || isMaintenanceRoute) {
       return null; // Bakım modunu atla
     }
 
     // Supabase client oluştur
     const supabase = createClient();
-    
+
     // Bakım modu ayarlarını al
     const { data: settings, error } = await supabase
       .from('system_settings')
@@ -56,20 +60,26 @@ export async function checkMaintenanceMode(request: NextRequest): Promise<NextRe
       return null; // Hata durumunda devam et
     }
 
-    const maintenanceData = settings.reduce((acc, setting) => {
-      acc[setting.key] = setting.value;
-      return acc;
-    }, {} as Record<string, any>);
+    const maintenanceData = settings.reduce(
+      (acc, setting) => {
+        acc[setting.key] = setting.value;
+        return acc;
+      },
+      {} as Record<string, any>
+    );
 
-    const isMaintenanceMode = maintenanceData.enabled === true || maintenanceData.enabled === 'true';
-    
+    const isMaintenanceMode =
+      maintenanceData.enabled === true || maintenanceData.enabled === 'true';
+
     if (!isMaintenanceMode) {
       return null; // Bakım modu kapalı
     }
 
     // IP kontrolü
     const userIP = getClientIP(request);
-    const allowedIPs = Array.isArray(maintenanceData.allowed_ips) ? maintenanceData.allowed_ips : [];
+    const allowedIPs = Array.isArray(maintenanceData.allowed_ips)
+      ? maintenanceData.allowed_ips
+      : [];
     const canAccess = allowedIPs.includes(userIP) || allowedIPs.includes('*');
 
     if (canAccess) {
@@ -78,8 +88,11 @@ export async function checkMaintenanceMode(request: NextRequest): Promise<NextRe
 
     // Bakım sayfasına yönlendir
     const maintenanceUrl = new URL('/maintenance', request.url);
-    maintenanceUrl.searchParams.set('message', maintenanceData.message || 'Sistem bakımda');
-    
+    maintenanceUrl.searchParams.set(
+      'message',
+      maintenanceData.message || 'Sistem bakımda'
+    );
+
     return NextResponse.redirect(maintenanceUrl);
   } catch (error) {
     console.error('Maintenance middleware error:', error);

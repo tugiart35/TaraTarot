@@ -28,14 +28,16 @@ Kullanım Durumu:
 import { Suspense, lazy, Component, ReactNode } from 'react';
 
 // Lazy load the main component
-const LoveReadingRefactored = lazy(() => import('../spreads/love/LoveReadingRefactored'));
+const LoveReadingRefactored = lazy(
+  () => import('../spreads/love/LoveReadingRefactored')
+);
 
 // Loading component
 const LoadingSpinner = () => (
-  <div className="flex items-center justify-center min-h-screen bg-cosmic-black">
-    <div className="text-center">
-      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gold mx-auto mb-4"></div>
-      <p className="text-text-celestial">Aşk açılımı yükleniyor...</p>
+  <div className='flex items-center justify-center min-h-screen bg-cosmic-black'>
+    <div className='text-center'>
+      <div className='animate-spin rounded-full h-12 w-12 border-b-2 border-gold mx-auto mb-4'></div>
+      <p className='text-text-celestial'>Aşk açılımı yükleniyor...</p>
     </div>
   </div>
 );
@@ -61,16 +63,16 @@ class SimpleErrorBoundary extends Component<
   render() {
     if (this.state.hasError) {
       return (
-        <div className="flex items-center justify-center min-h-screen bg-cosmic-black">
-          <div className="text-center max-w-md mx-auto p-6">
-            <div className="text-red-500 text-6xl mb-4">⚠️</div>
-            <h2 className="text-heading-2 text-gold mb-4">Bir Hata Oluştu</h2>
-            <p className="text-text-muted mb-6">
+        <div className='flex items-center justify-center min-h-screen bg-cosmic-black'>
+          <div className='text-center max-w-md mx-auto p-6'>
+            <div className='text-red-500 text-6xl mb-4'>⚠️</div>
+            <h2 className='text-heading-2 text-gold mb-4'>Bir Hata Oluştu</h2>
+            <p className='text-text-muted mb-6'>
               Aşk açılımı yüklenirken bir hata oluştu. Lütfen sayfayı yenileyin.
             </p>
             <button
               onClick={() => window.location.reload()}
-              className="btn btn-primary"
+              className='btn btn-primary'
             >
               Tekrar Dene
             </button>

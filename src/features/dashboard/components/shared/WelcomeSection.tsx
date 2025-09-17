@@ -92,7 +92,7 @@ export default function WelcomeSection({
           <div className='flex-1 w-full'>
             <h1 className='text-heading-1 text-gold mb-3'>
               Hoş geldiniz,{' '}
-              {profile?.display_name || 
+              {profile?.display_name ||
                 user?.email?.split('@')[0] ||
                 'Mistik Kullanıcı'}{' '}
               ✨
@@ -104,27 +104,27 @@ export default function WelcomeSection({
                 : 'yeni'}{' '}
               süredir devam ediyor
             </p>
-            
+
             {/* Email Bilgisi */}
             {user?.email && (
-              <p className="text-text-muted text-sm mb-3">
-                📧 {user.email}
-              </p>
+              <p className='text-text-muted text-sm mb-3'>📧 {user.email}</p>
             )}
-            
+
             {/* Admin Badge */}
             {isAdmin && (
-              <div className="mb-3">
-                <span className="bg-red-500/20 text-red-400 px-3 py-1 rounded-full text-sm border border-red-500/30">
+              <div className='mb-3'>
+                <span className='bg-red-500/20 text-red-400 px-3 py-1 rounded-full text-sm border border-red-500/30'>
                   👑 Admin
                 </span>
               </div>
             )}
-            
+
             {/* Üyelik Tarihi */}
-            <div className="flex flex-wrap items-center gap-3">
-              <span className="bg-crystal-clear px-3 py-1 rounded-full text-sm border border-gold/30">
-                {profile?.created_at ? formatDate(profile.created_at) : 'Yeni üye'}
+            <div className='flex flex-wrap items-center gap-3'>
+              <span className='bg-crystal-clear px-3 py-1 rounded-full text-sm border border-gold/30'>
+                {profile?.created_at
+                  ? formatDate(profile.created_at)
+                  : 'Yeni üye'}
               </span>
             </div>
           </div>

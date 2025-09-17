@@ -26,7 +26,7 @@ class SessionManager {
     user: null,
     expiresAt: null,
     refreshToken: null,
-    lastRefresh: 0
+    lastRefresh: 0,
   };
 
   private refreshTimer: NodeJS.Timeout | null = null;
@@ -44,8 +44,11 @@ class SessionManager {
    */
   private async initializeSession(): Promise<void> {
     try {
-      const { data: { session }, error } = await supabase.auth.getSession();
-      
+      const {
+        data: { session },
+        error,
+      } = await supabase.auth.getSession();
+
       if (error) {
         logError('Failed to get initial session', error);
         return;
@@ -53,8 +56,8 @@ class SessionManager {
 
       if (session) {
         this.updateSessionState(session);
-        logDebug('Session initialized', { 
-          expiresAt: new Date(session.expires_at! * 1000).toISOString() 
+        logDebug('Session initialized', {
+          expiresAt: new Date(session.expires_at! * 1000).toISOString(),
         });
       }
     } catch (error) {
@@ -76,7 +79,7 @@ class SessionManager {
             logSecurityEvent('user_signed_in', {
               userId: session.user.id,
               severity: 'low',
-              metadata: { email: session.user.email }
+              metadata: { email: session.user.email },
             });
           }
           break;
@@ -85,7 +88,7 @@ class SessionManager {
           this.clearSession();
           logSecurityEvent('user_signed_out', {
             severity: 'low',
-            metadata: { signOutTime: new Date().toISOString() }
+            metadata: { signOutTime: new Date().toISOString() },
           });
           break;
 
@@ -119,7 +122,7 @@ class SessionManager {
       user: session.user,
       expiresAt: session.expires_at ? session.expires_at * 1000 : null,
       refreshToken: session.refresh_token ?? null,
-      lastRefresh: Date.now()
+      lastRefresh: Date.now(),
     };
 
     this.scheduleRefresh();
@@ -140,7 +143,7 @@ class SessionManager {
       user: null,
       expiresAt: null,
       refreshToken: null,
-      lastRefresh: 0
+      lastRefresh: 0,
     };
 
     this.notifyListeners();
@@ -171,7 +174,7 @@ class SessionManager {
 
     logDebug('Scheduling token refresh', {
       refreshIn: Math.round(timeUntilRefresh / 1000),
-      refreshAt: new Date(refreshAt).toISOString()
+      refreshAt: new Date(refreshAt).toISOString(),
     });
 
     this.refreshTimer = setTimeout(() => {
@@ -184,7 +187,7 @@ class SessionManager {
    */
   public async refreshSession(): Promise<boolean> {
     const now = Date.now();
-    
+
     // Prevent too frequent refresh attempts
     if (now - this.sessionState.lastRefresh < this.MIN_REFRESH_INTERVAL) {
       logDebug('Refresh throttled');
@@ -193,18 +196,23 @@ class SessionManager {
 
     try {
       logDebug('Refreshing session token');
-      
-      const { data: { session }, error } = await supabase.auth.refreshSession();
-      
+
+      const {
+        data: { session },
+        error,
+      } = await supabase.auth.refreshSession();
+
       if (error) {
         logError('Session refresh failed', error);
-        
+
         // If refresh fails, the session might be invalid
-        if (error.message?.includes('refresh_token_not_found') || 
-            error.message?.includes('invalid_grant')) {
+        if (
+          error.message?.includes('refresh_token_not_found') ||
+          error.message?.includes('invalid_grant')
+        ) {
           await this.handleSessionExpiry();
         }
-        
+
         return false;
       }
 
@@ -225,21 +233,30 @@ class SessionManager {
    * Handle session expiry
    */
   private async handleSessionExpiry(): Promise<void> {
-    const logData: { severity: 'medium'; metadata: Record<string, unknown>; userId?: string } = {
+    const logData: {
+      severity: 'medium';
+      metadata: Record<string, unknown>;
+      userId?: string;
+    } = {
       severity: 'medium',
       metadata: {
         lastRefresh: new Date(this.sessionState.lastRefresh).toISOString(),
-        expiresAt: this.sessionState.expiresAt ? 
-          new Date(this.sessionState.expiresAt).toISOString() : null
-      }
+        expiresAt: this.sessionState.expiresAt
+          ? new Date(this.sessionState.expiresAt).toISOString()
+          : null,
+      },
     };
-    if (this.sessionState.user?.id !== undefined) logData.userId = this.sessionState.user.id;
+    if (this.sessionState.user?.id !== undefined)
+      logData.userId = this.sessionState.user.id;
     logSecurityEvent('session_expired', logData);
 
     this.clearSession();
-    
+
     // Redirect to auth page if we're in admin area
-    if (typeof window !== 'undefined' && window.location.pathname.startsWith('/pakize')) {
+    if (
+      typeof window !== 'undefined' &&
+      window.location.pathname.startsWith('/pakize')
+    ) {
       window.location.href = '/auth?expired=true';
     }
   }
@@ -290,7 +307,7 @@ class SessionManager {
    */
   public onSessionChange(listener: (state: SessionState) => void): () => void {
     this.listeners.push(listener);
-    
+
     // Return unsubscribe function
     return () => {
       const index = this.listeners.indexOf(listener);
@@ -332,8 +349,11 @@ class SessionManager {
    */
   public async validateSession(): Promise<boolean> {
     try {
-      const { data: { user }, error } = await supabase.auth.getUser();
-      
+      const {
+        data: { user },
+        error,
+      } = await supabase.auth.getUser();
+
       if (error) {
         logError('Session validation failed', error);
         return false;
@@ -368,7 +388,9 @@ export const sessionManager = new SessionManager();
 
 // React hook for session state
 export function useSession() {
-  const [sessionState, setSessionState] = React.useState(sessionManager.getSessionState());
+  const [sessionState, setSessionState] = React.useState(
+    sessionManager.getSessionState()
+  );
 
   React.useEffect(() => {
     const unsubscribe = sessionManager.onSessionChange(setSessionState);
@@ -382,7 +404,7 @@ export function useSession() {
     needsRefreshSoon: sessionManager.needsRefreshSoon(),
     refreshSession: () => sessionManager.refreshSession(),
     signOut: () => sessionManager.signOut(),
-    validateSession: () => sessionManager.validateSession()
+    validateSession: () => sessionManager.validateSession(),
   };
 }
 

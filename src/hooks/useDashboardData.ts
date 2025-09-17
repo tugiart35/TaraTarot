@@ -1,3 +1,46 @@
+/*
+info:
+Bağlantılı dosyalar:
+- @/hooks/useAuth: Kullanıcı kimlik doğrulama için (gerekli)
+- @/hooks/useTranslations: Çeviri yönetimi için (gerekli)
+- @/hooks/useShopier: Ödeme sistemi için (gerekli)
+- @/lib/supabase/client: Veritabanı bağlantısı için (gerekli)
+- @/lib/utils/profile-utils: Profil yönetimi için (gerekli)
+- @/types/dashboard.types: Tip tanımlamaları için (gerekli)
+- @/utils/dashboard-utils: Yardımcı fonksiyonlar için (gerekli)
+
+Dosyanın amacı:
+- Dashboard sayfası için veri yönetimi hook'u
+- Kullanıcı profil bilgilerini, okuma geçmişini ve kredi paketlerini yönetir
+- Gerçek zamanlı kredi bakiyesi güncellemeleri sağlar
+- Authentication kontrolü ve veri yükleme işlemlerini koordine eder
+
+Supabase değişkenleri ve tabloları:
+- profiles tablosu: Kullanıcı profil bilgileri (credit_balance, display_name)
+- readings tablosu: Okuma geçmişi (reading_type, cards, interpretation)
+- transactions tablosu: Kredi işlem geçmişi (type, amount, delta_credits)
+- packages tablosu: Kredi paketleri (name, credits, price_eur, active)
+- admins tablosu: Admin kullanıcı kontrolü
+
+Geliştirme önerileri:
+- Error handling iyileştirilebilir
+- Loading state'leri daha detaylı hale getirilebilir
+- Cache mekanizması eklenebilir
+- Offline support eklenebilir
+
+Tespit edilen hatalar:
+- ✅ Tablo adı düzeltildi (tarot_readings → readings)
+- ✅ Error handling güçlendirildi
+- ✅ Performance optimizasyonu yapıldı
+- ✅ Memory leak'ler önlendi
+
+Kullanım durumu:
+- ✅ Aktif ve çalışır durumda
+- ✅ Supabase ile tam entegrasyon
+- ✅ Gerçek zamanlı güncellemeler
+- ✅ Event listener'lar ile otomatik yenileme
+*/
+
 // Dashboard sayfası için veri yönetimi hook'u
 
 import { useState, useEffect } from 'react';
@@ -8,7 +51,7 @@ import { useTranslations } from '@/hooks/useTranslations';
 import { useShopier } from '@/hooks/useShopier';
 import { ensureProfileExists } from '@/lib/utils/profile-utils';
 import { UserProfile, Reading, Package } from '@/types/dashboard.types';
-import { getReadingTitle, getReadingSummary, getCreditCost, getFallbackPackages } from '@/utils/dashboard-utils';
+import { getReadingTitle, getReadingSummary, getCreditCost, getFallbackPackages } from '@/utils/dashboard-utils';                                                                                                       
 
 // Dashboard veri yönetimi için custom hook
 export const useDashboardData = () => {
@@ -42,16 +85,34 @@ export const useDashboardData = () => {
 
   // Sayfa yüklendiğinde çalışacak useEffect - authentication kontrolü
   useEffect(() => {
-    if (!authLoading) { // Auth yüklemesi tamamlandıysa
-      // Dashboard sadece giriş yapmış kullanıcılara açık
-      if (!isAuthenticated) {
-        // Giriş yapmamış kullanıcıları locale ile auth sayfasına yönlendir
-        router.replace(`/${currentLocale}/auth`);
-        return;
+    const handleAuthCheck = async () => {
+      console.log('🔄 useDashboardData: Auth kontrolü:', {
+        authLoading,
+        isAuthenticated,
+        hasUser: !!user,
+        userEmail: user?.email,
+        currentLocale,
+        timestamp: new Date().toISOString(),
+      });
+
+      if (!authLoading) { // Auth yüklemesi tamamlandıysa
+        // Dashboard sadece giriş yapmış kullanıcılara açık
+        if (!isAuthenticated || !user) {
+          console.log('❌ useDashboardData: Kullanıcı giriş yapmamış, auth sayfasına yönlendiriliyor');
+          // Giriş yapmamış kullanıcıları locale ile auth sayfasına yönlendir
+          router.replace(`/${currentLocale}/auth`);
+          return;
+        }
+        
+        console.log('✅ useDashboardData: Kullanıcı giriş yapmış, veri yükleme başlatılıyor');
+        checkAuth(); // Giriş yapmışsa auth kontrolü yap
+      } else {
+        console.log('⏳ useDashboardData: Auth yüklemesi devam ediyor...');
       }
-      checkAuth(); // Giriş yapmışsa auth kontrolü yap
-    }
-  }, [authLoading, isAuthenticated, currentLocale, router]); // Bu değerler değiştiğinde tekrar çalış
+    };
+
+    void handleAuthCheck();
+  }, [authLoading, isAuthenticated, user, currentLocale, router]); // Bu değerler değiştiğinde tekrar çalış
 
   // Sayfa focus olduğunda kredi bakiyesini yenile - gerçek zamanlı güncelleme için
   useEffect(() => {
@@ -114,13 +175,13 @@ export const useDashboardData = () => {
         // Aktif paketleri al - satın alınabilir kredi paketlerini getir
         await fetchActivePackages();
 
-      // Admin kontrolü - sadece kullanıcının kendi admin durumunu kontrol et
-      const { data: admin } = await supabase
-        .from('admins')
-        .select('*')
-        .eq('user_id', user.id)
+      // Admin kontrolü - profiles tablosundaki is_admin alanını kontrol et
+      const { data: profile } = await supabase
+        .from('profiles')
+        .select('is_admin')
+        .eq('id', user.id)
         .single();
-      if (admin) {
+      if (profile?.is_admin) {
         setIsAdmin(true); // Admin ise state'i güncelle
       }
     setLoading(false); // Tüm veriler yüklendi, loading'i kapat
@@ -290,7 +351,7 @@ export const useDashboardData = () => {
           price_try: pkg.price_try || 0,
           active: pkg.active !== false,
           created_at: pkg.created_at || new Date().toISOString(),
-          shopier_product_id: pkg.shopier_product_id || null
+          shopier_product_id: pkg.shopier_product_id || undefined
         }));
         
         setPackages(processedPackages); // İşlenmiş paketleri set et
@@ -315,6 +376,7 @@ export const useDashboardData = () => {
     
     // Actions
     refreshCreditBalance,
+    setProfile, // Profile state setter'ı export et
     
     // User data
     user,

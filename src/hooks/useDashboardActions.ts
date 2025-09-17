@@ -18,7 +18,7 @@ export const useDashboardActions = (
   const { initiatePayment, loading: paymentLoading } = useShopier();
   // Programatik sayfa yönlendirme için router
   const router = useRouter();
-  
+
   // Modal state'leri
   const [profileModalOpen, setProfileModalOpen] = useState(false);
   const [editing, setEditing] = useState(false);
@@ -66,7 +66,7 @@ export const useDashboardActions = (
   // Profil modal'ını aç ve güncel verileri yükle
   const openProfileModal = async () => {
     if (!user) return; // Kullanıcı yoksa çık
-    
+
     try {
       // Supabase'den güncel profil verilerini çek
       const { data: profileData, error } = await supabase
@@ -86,17 +86,16 @@ export const useDashboardActions = (
     } catch (error) {
       setEditForm(profile || {}); // Hata durumunda mevcut profili kullan
     }
-    
+
     setProfileModalOpen(true); // Modal'ı aç
   };
 
   // Profil kaydetme işlemini yönet - Supabase'e güncelleme gönder
   const handleSaveProfile = async () => {
     if (!user) return; // Kullanıcı yoksa çık
-    
+
     setSaving(true); // Kaydetme durumunu başlat
     try {
-      
       // Supabase'de profil güncelleme işlemi
       const { data, error } = await supabase
         .from('profiles')
@@ -109,16 +108,17 @@ export const useDashboardActions = (
         throw error; // Hata varsa fırlat
       }
 
-      
       // State'i güncelle - başarılı güncelleme sonrası
       setProfile(data); // Profil state'ini güncelle
       setEditing(false); // Düzenleme modunu kapat
       setProfileModalOpen(false); // Modal'ı kapat
-      
+
       // Başarı mesajı göster
       alert('Profil başarıyla güncellendi!');
     } catch (error) {
-      alert('Profil güncellenirken bir hata oluştu: ' + (error as Error).message);
+      alert(
+        'Profil güncellenirken bir hata oluştu: ' + (error as Error).message
+      );
     } finally {
       setSaving(false); // Kaydetme durumunu sonlandır
     }
@@ -132,18 +132,18 @@ export const useDashboardActions = (
     saving,
     selectedReading,
     paymentLoading,
-    
+
     // Actions
     handlePackagePurchase,
     handleLogout,
     openProfileModal,
     handleSaveProfile,
     downloadReading,
-    
+
     // Setters
     setProfileModalOpen,
     setEditing,
     setEditForm,
-    setSelectedReading
+    setSelectedReading,
   };
 };

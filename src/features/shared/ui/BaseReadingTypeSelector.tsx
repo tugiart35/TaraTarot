@@ -61,6 +61,7 @@ interface BaseReadingTypeSelectorProps {
   selectedType: string | null;
   onTypeSelect: (_type: string) => void;
   onCreditInfoClick?: () => void; // Kredi yetersizken tıklama eylemi
+  onReadingTypeSelected?: () => void; // Okuma tipi seçildiğinde çağrılacak callback
   readingTypes: {
     SIMPLE: string;
     DETAILED: string;
@@ -89,13 +90,14 @@ interface BaseReadingTypeSelectorProps {
   writtenSelectedMessage?: string;
   adminRequiredMessage?: string;
   writtenRequiredMessage?: string;
-  readingType: 'LOVE_SPREAD' | 'LOVE_SPREAD_DETAILED' | 'LOVE_SPREAD_WRITTEN';
+  readingType: 'LOVE_SPREAD' | 'LOVE_SPREAD_DETAILED' | 'LOVE_SPREAD_WRITTEN' | 'CAREER_SPREAD_DETAILED' | 'CAREER_SPREAD_WRITTEN' | 'PROBLEM_SOLVING_DETAILED' | 'PROBLEM_SOLVING_WRITTEN' | 'SITUATION_ANALYSIS_DETAILED' | 'SITUATION_ANALYSIS_WRITTEN' | 'RELATIONSHIP_ANALYSIS_DETAILED' | 'RELATIONSHIP_ANALYSIS_WRITTEN' | 'RELATIONSHIP_PROBLEMS_DETAILED' | 'RELATIONSHIP_PROBLEMS_WRITTEN' | 'MARRIAGE_DETAILED' | 'MARRIAGE_WRITTEN' | 'NEW_LOVER_DETAILED' | 'NEW_LOVER_WRITTEN' | 'MONEY_SPREAD' | 'MONEY_SPREAD_DETAILED' | 'MONEY_SPREAD_WRITTEN';
 }
 
 export default function BaseReadingTypeSelector({
   selectedType,
   onTypeSelect,
   onCreditInfoClick: _onCreditInfoClick,
+  onReadingTypeSelected,
   readingTypes,
   creditStatus: _creditStatus, // Prop olarak kullan
   theme = 'default',
@@ -113,14 +115,50 @@ export default function BaseReadingTypeSelector({
   writtenSelectedMessage,
   adminRequiredMessage: _adminRequiredMessage,
   writtenRequiredMessage: _writtenRequiredMessage,
-  readingType: _readingType,
+  readingType,
 }: BaseReadingTypeSelectorProps) {
   const { t } = useTranslations();
   const { isAuthenticated } = useAuth(); // Kullanıcı giriş durumunu kontrol et
 
   // Kredi kontrolü - sesli ve yazılı okumalar için
-  const detailedCredits = useReadingCredits('LOVE_SPREAD_DETAILED');
-  const writtenCredits = useReadingCredits('LOVE_SPREAD_WRITTEN');
+  const detailedReadingType = readingType === 'PROBLEM_SOLVING_DETAILED' 
+    ? 'PROBLEM_SOLVING_DETAILED' 
+    : readingType === 'CAREER_SPREAD_DETAILED'
+    ? 'CAREER_SPREAD_DETAILED'
+    : readingType === 'SITUATION_ANALYSIS_DETAILED'
+    ? 'SITUATION_ANALYSIS_DETAILED'
+    : readingType === 'RELATIONSHIP_ANALYSIS_DETAILED'
+    ? 'RELATIONSHIP_ANALYSIS_DETAILED'
+    : readingType === 'RELATIONSHIP_PROBLEMS_DETAILED'
+    ? 'RELATIONSHIP_PROBLEMS_DETAILED'
+    : readingType === 'MARRIAGE_DETAILED'
+    ? 'MARRIAGE_DETAILED'
+    : readingType === 'NEW_LOVER_DETAILED'
+    ? 'NEW_LOVER_DETAILED'
+    : 'LOVE_SPREAD_DETAILED';
+    
+  const writtenReadingType = readingType === 'PROBLEM_SOLVING_DETAILED' 
+    ? 'PROBLEM_SOLVING_WRITTEN' 
+    : readingType === 'CAREER_SPREAD_DETAILED'
+    ? 'CAREER_SPREAD_WRITTEN'
+    : readingType === 'SITUATION_ANALYSIS_DETAILED'
+    ? 'SITUATION_ANALYSIS_WRITTEN'
+    : readingType === 'RELATIONSHIP_ANALYSIS_DETAILED'
+    ? 'RELATIONSHIP_ANALYSIS_WRITTEN'
+    : readingType === 'RELATIONSHIP_PROBLEMS_DETAILED'
+    ? 'RELATIONSHIP_PROBLEMS_WRITTEN'
+    : readingType === 'MARRIAGE_DETAILED'
+    ? 'MARRIAGE_WRITTEN'
+    : readingType === 'NEW_LOVER_DETAILED'
+    ? 'NEW_LOVER_WRITTEN'
+    : 'LOVE_SPREAD_WRITTEN';
+
+  console.log('BaseReadingTypeSelector - readingType:', readingType);
+  console.log('BaseReadingTypeSelector - detailedReadingType:', detailedReadingType);
+  console.log('BaseReadingTypeSelector - writtenReadingType:', writtenReadingType);
+
+  const detailedCredits = useReadingCredits(detailedReadingType);
+  const writtenCredits = useReadingCredits(writtenReadingType);
 
   // Modal state'leri
   // const [showCreditInfoModal, setShowCreditInfoModal] = useState(false); // Archived with CreditInfoModal
@@ -190,12 +228,19 @@ export default function BaseReadingTypeSelector({
         return;
       }
 
-      // Kredi yeterli - bilgilendirme modalını aç
-      // setPendingReadingType(type); // Archived with CreditInfoModal
-      // setShowCreditInfoModal(true); // Archived with CreditInfoModal
+      // Kredi yeterli - okuma türünü seç ve akışa devam et
+      onTypeSelect(type);
+      // Okuma tipi seçildiğinde parent bileşene bildir
+      if (onReadingTypeSelected) {
+        onReadingTypeSelected();
+      }
     } else {
       // Basit okuma için direkt seç
       onTypeSelect(type);
+      // Okuma tipi seçildiğinde parent bileşene bildir
+      if (onReadingTypeSelected) {
+        onReadingTypeSelected();
+      }
     }
   };
 
@@ -355,7 +400,13 @@ export default function BaseReadingTypeSelector({
       >
         {/* Basit Okuma - Her zaman açık */}
         <button
-          onClick={() => onTypeSelect(readingTypes.SIMPLE)}
+          onClick={() => {
+            onTypeSelect(readingTypes.SIMPLE);
+            // Okuma tipi seçildiğinde parent bileşene bildir
+            if (onReadingTypeSelected) {
+              onReadingTypeSelected();
+            }
+          }}
           disabled={disabled}
           className={`px-2 sm:px-4 py-2 rounded-lg font-semibold text-xs sm:text-sm transition-all duration-150 focus:outline-none focus:ring-2 ${currentTheme.simpleButton.focus} disabled:opacity-50 disabled:cursor-not-allowed
             ${
@@ -385,7 +436,7 @@ export default function BaseReadingTypeSelector({
                 ? currentTheme.detailedButton.selected
                 : !isAuthenticated ||
                     !detailedCredits.creditStatus.hasEnoughCredits
-                    ? currentTheme.detailedButton.disabled
+                  ? currentTheme.detailedButton.disabled
                   : currentTheme.detailedButton.unselected
             }`}
           title={
@@ -424,7 +475,7 @@ export default function BaseReadingTypeSelector({
                 ? currentTheme.detailedButton.selected
                 : !isAuthenticated ||
                     !writtenCredits.creditStatus.hasEnoughCredits
-                    ? currentTheme.detailedButton.disabled
+                  ? currentTheme.detailedButton.disabled
                   : currentTheme.detailedButton.unselected
             }`}
           title={

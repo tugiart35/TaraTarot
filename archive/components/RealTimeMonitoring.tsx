@@ -185,7 +185,7 @@ export default function RealTimeMonitoring() {
       const activeUsers = activeUsersResult.data?.length || 0;
       const todaySignups = todaySignupsResult.data?.length || 0;
       const recentTransactions = recentTransactionsResult.data?.length || 0;
-      const todayRevenue = (todayCreditsResult.data || []).reduce((sum, t) => sum + t.delta_credits, 0);
+      const todayRevenue = (todayCreditsResult.data || []).reduce((sum: number, t: any) => sum + t.delta_credits, 0);
       const totalUsers = totalUsersResult.count || 0;
       const totalReadings = totalReadingsResult.count || 0;
       const pageViews = pageViewsResult.data?.length || 0;

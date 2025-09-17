@@ -12,10 +12,7 @@ Dosyanın amacı:
 */
 
 import { useState, useEffect, useCallback } from 'react';
-import {
-  READING_CREDITS,
-  ReadingType,
-} from '@/lib/constants/reading-credits';
+import { READING_CREDITS, ReadingType } from '@/lib/constants/reading-credits';
 import { useAuth } from '@/hooks/useAuth';
 import { supabase } from '@/lib/supabase/client';
 
@@ -86,17 +83,17 @@ export const useReadingCredits = (readingType: ReadingType) => {
 
     try {
       // Supabase'den kullanıcı kredilerini al
-              const { data: userData, error: userError } = await supabase
-          .from('profiles')
-          .select('credit_balance')
-          .eq('id', user.id)
-          .single();
+      const { data: userData, error: userError } = await supabase
+        .from('profiles')
+        .select('credit_balance')
+        .eq('id', user.id)
+        .single();
 
       if (userError) {
         throw userError;
       }
 
-              const currentCredits = userData?.credit_balance || 0;
+      const currentCredits = userData?.credit_balance || 0;
       const requiredCredits = READING_CREDITS[readingType] || 0;
 
       setCreditStatus({
@@ -123,30 +120,30 @@ export const useReadingCredits = (readingType: ReadingType) => {
     try {
       const requiredCredits = READING_CREDITS[readingType] || 0;
 
-              // Önce mevcut krediyi kontrol et
-        const { data: currentUser, error: checkError } = await supabase
-          .from('profiles')
-          .select('credit_balance')
-          .eq('id', user.id)
-          .single();
+      // Önce mevcut krediyi kontrol et
+      const { data: currentUser, error: checkError } = await supabase
+        .from('profiles')
+        .select('credit_balance')
+        .eq('id', user.id)
+        .single();
 
-        if (checkError || !currentUser) {
-          throw new Error('Kullanıcı bulunamadı');
-        }
+      if (checkError || !currentUser) {
+        throw new Error('Kullanıcı bulunamadı');
+      }
 
-        if (currentUser.credit_balance < requiredCredits) {
-          throw new Error('Yetersiz kredi');
-        }
+      if (currentUser.credit_balance < requiredCredits) {
+        throw new Error('Yetersiz kredi');
+      }
 
-        // Kredi kesintisi yap
-        const { data, error: updateError } = await supabase
-          .from('profiles')
-          .update({ 
-            credit_balance: currentUser.credit_balance - requiredCredits
-          })
-          .eq('id', user.id)
-          .select('credit_balance')
-          .single();
+      // Kredi kesintisi yap
+      const { data, error: updateError } = await supabase
+        .from('profiles')
+        .update({
+          credit_balance: currentUser.credit_balance - requiredCredits,
+        })
+        .eq('id', user.id)
+        .select('credit_balance')
+        .single();
 
       if (updateError) {
         throw updateError;
@@ -164,7 +161,7 @@ export const useReadingCredits = (readingType: ReadingType) => {
           delta_credits: -requiredCredits,
           reason: `Tarot okuması: ${readingType}`,
           ref_type: 'reading_usage',
-          ref_id: null
+          ref_id: null,
         });
 
       if (transactionError) {

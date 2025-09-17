@@ -30,10 +30,10 @@ import { useTranslations } from '@/hooks/useTranslations';
 export const getCardGroupKey = (group: string): string => {
   const groupMap: Record<string, string> = {
     'Majör Arkana': 'love.cardGroups.majorArcana',
-    'Kupalar': 'love.cardGroups.cups',
-    'Kılıçlar': 'love.cardGroups.swords',
-    'Asalar': 'love.cardGroups.wands',
-    'Tılsımlar': 'love.cardGroups.pentacles',
+    Kupalar: 'love.cardGroups.cups',
+    Kılıçlar: 'love.cardGroups.swords',
+    Asalar: 'love.cardGroups.wands',
+    Tılsımlar: 'love.cardGroups.pentacles',
   };
   return groupMap[group] || group;
 };
@@ -61,21 +61,40 @@ export const getPositionDescriptionKey = (position: number): string => {
 };
 
 // Kart anlamları için i18n anahtarları
-export const getCardMeaningKey = (cardName: string, position: number, type: 'upright' | 'reversed'): string => {
+export const getCardMeaningKey = (
+  cardName: string,
+  position: number,
+  type: 'upright' | 'reversed'
+): string => {
   // Kart adını i18n anahtarına dönüştür
-  const cardKey = cardName.toLowerCase().replace(/\s+/g, '').replace(/[^a-z0-9]/g, '');
+  const cardKey = cardName
+    .toLowerCase()
+    .replace(/\s+/g, '')
+    .replace(/[^a-z0-9]/g, '');
   return `love.meanings.${cardKey}.position${position}.${type}`;
 };
 
 // Kart anahtar kelimeleri için i18n anahtarları
-export const getCardKeywordsKey = (cardName: string, position: number): string => {
-  const cardKey = cardName.toLowerCase().replace(/\s+/g, '').replace(/[^a-z0-9]/g, '');
+export const getCardKeywordsKey = (
+  cardName: string,
+  position: number
+): string => {
+  const cardKey = cardName
+    .toLowerCase()
+    .replace(/\s+/g, '')
+    .replace(/[^a-z0-9]/g, '');
   return `love.meanings.${cardKey}.position${position}.keywords`;
 };
 
 // Kart bağlamı için i18n anahtarları
-export const getCardContextKey = (cardName: string, position: number): string => {
-  const cardKey = cardName.toLowerCase().replace(/\s+/g, '').replace(/[^a-z0-9]/g, '');
+export const getCardContextKey = (
+  cardName: string,
+  position: number
+): string => {
+  const cardKey = cardName
+    .toLowerCase()
+    .replace(/\s+/g, '')
+    .replace(/[^a-z0-9]/g, '');
   return `love.meanings.${cardKey}.position${position}.context`;
 };
 
@@ -88,56 +107,60 @@ export const useLoveTranslations = () => {
     getPositionTitle: (position: number): string => {
       return t(getPositionTitleKey(position));
     },
-    
+
     // Pozisyon açıklaması al
     getPositionDescription: (position: number): string => {
       return t(getPositionDescriptionKey(position));
     },
-    
+
     // Kart grubu al
     getCardGroup: (group: string): string => {
       return t(getCardGroupKey(group));
     },
-    
+
     // Kart anlamı al
-    getCardMeaning: (cardName: string, position: number, type: 'upright' | 'reversed'): string => {
+    getCardMeaning: (
+      cardName: string,
+      position: number,
+      type: 'upright' | 'reversed'
+    ): string => {
       const key = getCardMeaningKey(cardName, position, type);
       const translation = t(key);
-      
+
       // Eğer çeviri bulunamazsa, fallback olarak orijinal metni döndür
       if (translation === key) {
         // Bu durumda orijinal dosyalardan alınacak
         return '';
       }
-      
+
       return translation;
     },
-    
+
     // Kart anahtar kelimeleri al
     getCardKeywords: (cardName: string, position: number): string[] => {
       const key = getCardKeywordsKey(cardName, position);
       const translation = t(key);
-      
+
       if (translation === key) {
         return [];
       }
-      
+
       try {
         return JSON.parse(translation);
       } catch {
         return [];
       }
     },
-    
+
     // Kart bağlamı al
     getCardContext: (cardName: string, position: number): string => {
       const key = getCardContextKey(cardName, position);
       const translation = t(key);
-      
+
       if (translation === key) {
         return '';
       }
-      
+
       return translation;
     },
   };

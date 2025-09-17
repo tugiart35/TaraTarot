@@ -1,6 +1,6 @@
 /**
  * User ID Utility Functions
- * 
+ *
  * Bu dosya projede tutarlı user ID formatları sağlar.
  * Tüm user ID'ler UUID formatında olmalıdır.
  * Guest kullanıcılar için veri saklanmaz.
@@ -14,14 +14,14 @@ export const generateTestUserId = (baseUuid?: string): string => {
   if (baseUuid) {
     return `test-${baseUuid}`;
   }
-  
+
   // Yeni test UUID oluştur
   const random1 = Math.random().toString(16).substr(2, 8);
   const random2 = Math.random().toString(16).substr(2, 4);
   const random3 = Math.random().toString(16).substr(2, 4);
   const random4 = Math.random().toString(16).substr(2, 4);
   const random5 = Math.random().toString(16).substr(2, 12);
-  
+
   return `test-${random1}-${random2}-${random3}-${random4}-${random5}`;
 };
 
@@ -30,11 +30,13 @@ export const generateTestUserId = (baseUuid?: string): string => {
  */
 export const isValidUserId = (userId: string): boolean => {
   // UUID format kontrolü (gerçek kullanıcılar)
-  const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
-  
+  const uuidRegex =
+    /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
   // Test kullanıcı format kontrolü
-  const testRegex = /^test-[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
-  
+  const testRegex =
+    /^test-[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
   return uuidRegex.test(userId) || testRegex.test(userId);
 };
 
@@ -45,11 +47,11 @@ export const getUserType = (userId: string): 'real' | 'test' | 'invalid' => {
   if (!isValidUserId(userId)) {
     return 'invalid';
   }
-  
+
   if (userId.startsWith('test-')) {
     return 'test';
   }
-  
+
   return 'real';
 };
 
@@ -60,7 +62,7 @@ export const getCleanUserId = (userId: string): string => {
   if (userId.startsWith('test-')) {
     return userId.replace('test-', '');
   }
-  
+
   return userId;
 };
 

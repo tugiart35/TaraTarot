@@ -77,7 +77,10 @@ export interface FormTheme {
 export interface TarotFormModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onSave: (personalInfo: PersonalInfo, questions: UserQuestions) => Promise<void>;
+  onSave: (
+    personalInfo: PersonalInfo,
+    questions: UserQuestions
+  ) => Promise<void>;
   theme: FormTheme;
   isLoading?: boolean;
   title?: string;
@@ -121,15 +124,15 @@ export default function TarotFormModal({
   const [questions, setQuestions] = useState<UserQuestions>({
     concern: {
       question: t('love.form.concernQuestion'),
-      answer: ''
+      answer: '',
     },
     understanding: {
       question: t('love.form.understandingQuestion'),
-      answer: ''
+      answer: '',
     },
     emotional: {
       question: t('love.form.emotionalQuestion'),
-      answer: ''
+      answer: '',
     },
   });
 
@@ -162,21 +165,18 @@ export default function TarotFormModal({
   }, [isOpen]);
 
   // Form alanlarını güncelleme
-  const updatePersonalInfo = (
-    field: keyof PersonalInfo,
-    value: string
-  ) => {
+  const updatePersonalInfo = (field: keyof PersonalInfo, value: string) => {
     setPersonalInfo(prev => ({ ...prev, [field]: value }));
     setFormErrors(errors => ({ ...errors, [field]: '', general: '' }));
   };
 
   const updateQuestion = (field: keyof UserQuestions, value: string) => {
-    setQuestions(prev => ({ 
-      ...prev, 
-      [field]: { 
-        ...prev[field], 
-        answer: value 
-      } 
+    setQuestions(prev => ({
+      ...prev,
+      [field]: {
+        ...prev[field],
+        answer: value,
+      },
     }));
     setFormErrors(errors => ({ ...errors, [field]: '', general: '' }));
   };
@@ -192,7 +192,10 @@ export default function TarotFormModal({
       hasError = true;
     }
 
-    if (!personalInfo.surname.trim() || personalInfo.surname.trim().length < 3) {
+    if (
+      !personalInfo.surname.trim() ||
+      personalInfo.surname.trim().length < 3
+    ) {
       errors.surname = 'Soyad en az 3 karakter olmalıdır.';
       hasError = true;
     }
@@ -208,17 +211,27 @@ export default function TarotFormModal({
     }
 
     // Soru validasyonu
-    if (!questions.concern.answer.trim() || questions.concern.answer.trim().length < 10) {
+    if (
+      !questions.concern.answer.trim() ||
+      questions.concern.answer.trim().length < 10
+    ) {
       errors.concern = 'Bu soruya en az 10 karakterlik yanıt vermelisiniz.';
       hasError = true;
     }
 
-    if (!questions.understanding.answer.trim() || questions.understanding.answer.trim().length < 10) {
-      errors.understanding = 'Bu soruya en az 10 karakterlik yanıt vermelisiniz.';
+    if (
+      !questions.understanding.answer.trim() ||
+      questions.understanding.answer.trim().length < 10
+    ) {
+      errors.understanding =
+        'Bu soruya en az 10 karakterlik yanıt vermelisiniz.';
       hasError = true;
     }
 
-    if (!questions.emotional.answer.trim() || questions.emotional.answer.trim().length < 10) {
+    if (
+      !questions.emotional.answer.trim() ||
+      questions.emotional.answer.trim().length < 10
+    ) {
       errors.emotional = 'Bu soruya en az 10 karakterlik yanıt vermelisiniz.';
       hasError = true;
     }
@@ -238,7 +251,7 @@ export default function TarotFormModal({
       if (userId && readingType) {
         await saveFormToSupabase();
       }
-      
+
       await onSave(personalInfo, questions);
     } catch (error) {
       setFormErrors(prev => ({
@@ -257,17 +270,18 @@ export default function TarotFormModal({
 
     try {
       // Yeni şemada form verileri readings tablosunda questions JSONB alanında saklanacak
-      console.log('Form verileri readings tablosunda questions alanında saklanacak');
+      console.log(
+        'Form verileri readings tablosunda questions alanında saklanacak'
+      );
 
-      console.log('✅ Form verileri başarıyla Supabase\'e kaydedildi');
-      console.log('📊 Dashboard\'da görüntülenecek veriler:', {
+      console.log("✅ Form verileri başarıyla Supabase'e kaydedildi");
+      console.log("📊 Dashboard'da görüntülenecek veriler:", {
         userId,
         readingType,
         fullName: `${personalInfo.name} ${personalInfo.surname}`,
         email: personalInfo.email,
         questionsCount: 3,
       });
-
     } catch (error) {
       console.error('Form Supabase kayıt hatası:', error);
       throw error;
@@ -305,11 +319,17 @@ export default function TarotFormModal({
         }
       }}
     >
-      <div className={`bg-${theme.background} border border-${theme.border} rounded-2xl shadow-2xl w-full max-w-md max-h-[90vh] flex flex-col`}>
+      <div
+        className={`bg-${theme.background} border border-${theme.border} rounded-2xl shadow-2xl w-full max-w-md max-h-[90vh] flex flex-col`}
+      >
         {/* Modal Header */}
-        <div className={`flex items-center justify-between p-6 border-b border-${theme.border} flex-shrink-0`}>
+        <div
+          className={`flex items-center justify-between p-6 border-b border-${theme.border} flex-shrink-0`}
+        >
           <div className='flex items-center'>
-            <div className={`w-12 h-12 flex items-center justify-center bg-${theme.primary}-800/70 rounded-full mr-3 shadow-lg`}>
+            <div
+              className={`w-12 h-12 flex items-center justify-center bg-${theme.primary}-800/70 rounded-full mr-3 shadow-lg`}
+            >
               <span className='text-xl text-${theme.text}'>{icon}</span>
             </div>
             <h2 className={`text-${theme.text} text-lg font-semibold`}>
@@ -343,7 +363,9 @@ export default function TarotFormModal({
             {/* Ad Soyad Grid */}
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
               <div>
-                <label className={`block text-sm font-medium text-${theme.text} mb-2`}>
+                <label
+                  className={`block text-sm font-medium text-${theme.text} mb-2`}
+                >
                   {t('love.form.firstName')} *
                 </label>
                 <input
@@ -359,14 +381,14 @@ export default function TarotFormModal({
                   autoComplete='given-name'
                 />
                 {formErrors.name && (
-                  <p className='text-xs text-red-400 mt-1'>
-                    {formErrors.name}
-                  </p>
+                  <p className='text-xs text-red-400 mt-1'>{formErrors.name}</p>
                 )}
               </div>
 
               <div>
-                <label className={`block text-sm font-medium text-${theme.text} mb-2`}>
+                <label
+                  className={`block text-sm font-medium text-${theme.text} mb-2`}
+                >
                   {t('love.form.lastName')} *
                 </label>
                 <input
@@ -391,7 +413,9 @@ export default function TarotFormModal({
 
             {/* Doğum Tarihi */}
             <div>
-              <label className={`block text-sm font-medium text-${theme.text} mb-2`}>
+              <label
+                className={`block text-sm font-medium text-${theme.text} mb-2`}
+              >
                 {t('love.form.birthDate')} *
               </label>
               <input
@@ -413,7 +437,9 @@ export default function TarotFormModal({
 
             {/* E-posta */}
             <div>
-              <label className={`block text-sm font-medium text-${theme.text} mb-2`}>
+              <label
+                className={`block text-sm font-medium text-${theme.text} mb-2`}
+              >
                 {t('love.form.email')} *
               </label>
               <input
@@ -429,9 +455,7 @@ export default function TarotFormModal({
                 autoComplete='email'
               />
               {formErrors.email && (
-                <p className='text-xs text-red-400 mt-1'>
-                  {formErrors.email}
-                </p>
+                <p className='text-xs text-red-400 mt-1'>{formErrors.email}</p>
               )}
             </div>
 
@@ -443,7 +467,9 @@ export default function TarotFormModal({
 
               <div className='space-y-4'>
                 <div>
-                  <label className={`block text-sm font-medium text-${theme.text} mb-2`}>
+                  <label
+                    className={`block text-sm font-medium text-${theme.text} mb-2`}
+                  >
                     {questions.concern.question}
                   </label>
                   <textarea
@@ -465,12 +491,16 @@ export default function TarotFormModal({
                 </div>
 
                 <div>
-                  <label className={`block text-sm font-medium text-${theme.text} mb-2`}>
+                  <label
+                    className={`block text-sm font-medium text-${theme.text} mb-2`}
+                  >
                     {questions.understanding.question}
                   </label>
                   <textarea
                     value={questions.understanding.answer}
-                    onChange={e => updateQuestion('understanding', e.target.value)}
+                    onChange={e =>
+                      updateQuestion('understanding', e.target.value)
+                    }
                     placeholder='Öğrenmek istediğiniz konuları belirtin...'
                     className={`w-full px-4 py-3 bg-slate-800/80 border ${
                       formErrors.understanding
@@ -487,7 +517,9 @@ export default function TarotFormModal({
                 </div>
 
                 <div>
-                  <label className={`block text-sm font-medium text-${theme.text} mb-2`}>
+                  <label
+                    className={`block text-sm font-medium text-${theme.text} mb-2`}
+                  >
                     {questions.emotional.question}
                   </label>
                   <textarea
@@ -519,7 +551,9 @@ export default function TarotFormModal({
         </div>
 
         {/* Modal Footer */}
-        <div className={`p-6 border-t border-${theme.primary}-500/20 flex-shrink-0`}>
+        <div
+          className={`p-6 border-t border-${theme.primary}-500/20 flex-shrink-0`}
+        >
           <button
             onClick={handleSave}
             disabled={isLoading}

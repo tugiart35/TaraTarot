@@ -35,21 +35,117 @@ Gereklilik ve Kullanım Durumu:
 
 export const READING_CREDITS = {
   LOVE_SPREAD: 80,
-  LOVE_SPREAD_DETAILED: 60,
-  LOVE_SPREAD_WRITTEN: 50,
+  LOVE_SPREAD_DETAILED: 80,
+  LOVE_SPREAD_WRITTEN: 70,
+  CAREER_SPREAD_DETAILED: 90,
+  CAREER_SPREAD_WRITTEN: 80,
+  PROBLEM_SOLVING_DETAILED: 130,
+  PROBLEM_SOLVING_WRITTEN: 120,
+  SITUATION_ANALYSIS_DETAILED: 100,
+  SITUATION_ANALYSIS_WRITTEN: 90,
+  RELATIONSHIP_ANALYSIS_DETAILED: 110,
+  RELATIONSHIP_ANALYSIS_WRITTEN: 100,
+  RELATIONSHIP_PROBLEMS_DETAILED: 120,
+  RELATIONSHIP_PROBLEMS_WRITTEN: 110,
+  MARRIAGE_DETAILED: 140,
+  MARRIAGE_WRITTEN: 130,
+  NEW_LOVER_DETAILED: 100,
+  NEW_LOVER_WRITTEN: 90,
+  MONEY_SPREAD_DETAILED: 110,
+  MONEY_SPREAD_WRITTEN: 100,
 } as const;
 
 // Dashboard için gerekli kredi konfigürasyonları
 export const READING_CREDIT_CONFIGS = {
   LOVE_SPREAD_DETAILED: {
-    cost: 60,
+    cost: 80,
     name: 'Aşk Açılımı (Detaylı)',
     description: '4 kartlık detaylı aşk açılımı',
   },
   LOVE_SPREAD_WRITTEN: {
-    cost: 50,
+    cost: 70,
     name: 'Aşk Açılımı (Yazılı)',
     description: '4 kartlık yazılı aşk açılımı',
+  },
+  CAREER_SPREAD_DETAILED: {
+    cost: 90,
+    name: 'Kariyer Açılımı (Detaylı)',
+    description: '4 kartlık detaylı kariyer açılımı',
+  },
+  CAREER_SPREAD_WRITTEN: {
+    cost: 80,
+    name: 'Kariyer Açılımı (Yazılı)',
+    description: '4 kartlık yazılı kariyer açılımı',
+  },
+  PROBLEM_SOLVING_DETAILED: {
+    cost: 130,
+    name: 'Problem Çözme Açılımı (Detaylı)',
+    description: '10 kartlık detaylı problem çözme açılımı',
+  },
+  PROBLEM_SOLVING_WRITTEN: {
+    cost: 120,
+    name: 'Problem Çözme Açılımı (Yazılı)',
+    description: '10 kartlık yazılı problem çözme açılımı',
+  },
+  SITUATION_ANALYSIS_DETAILED: {
+    cost: 100,
+    name: 'Durum Analizi Açılımı (Detaylı)',
+    description: '7 kartlık detaylı durum analizi açılımı',
+  },
+  SITUATION_ANALYSIS_WRITTEN: {
+    cost: 90,
+    name: 'Durum Analizi Açılımı (Yazılı)',
+    description: '7 kartlık yazılı durum analizi açılımı',
+  },
+  RELATIONSHIP_ANALYSIS_DETAILED: {
+    cost: 110,
+    name: 'İlişki Analizi Açılımı (Detaylı)',
+    description: '7 kartlık detaylı ilişki analizi açılımı',
+  },
+  RELATIONSHIP_ANALYSIS_WRITTEN: {
+    cost: 100,
+    name: 'İlişki Analizi Açılımı (Yazılı)',
+    description: '7 kartlık yazılı ilişki analizi açılımı',
+  },
+  RELATIONSHIP_PROBLEMS_DETAILED: {
+    cost: 120,
+    name: 'İlişki Sorunları Açılımı (Detaylı)',
+    description: '9 kartlık detaylı ilişki sorunları açılımı',
+  },
+  RELATIONSHIP_PROBLEMS_WRITTEN: {
+    cost: 110,
+    name: 'İlişki Sorunları Açılımı (Yazılı)',
+    description: '9 kartlık yazılı ilişki sorunları açılımı',
+  },
+  MARRIAGE_DETAILED: {
+    cost: 140,
+    name: 'Evlilik Açılımı (Detaylı)',
+    description: '10 kartlık detaylı evlilik açılımı',
+  },
+  MARRIAGE_WRITTEN: {
+    cost: 130,
+    name: 'Evlilik Açılımı (Yazılı)',
+    description: '10 kartlık yazılı evlilik açılımı',
+  },
+  NEW_LOVER_DETAILED: {
+    cost: 100,
+    name: 'Yeni Bir Sevgili Açılımı (Detaylı)',
+    description: '6 kartlık detaylı yeni sevgili açılımı',
+  },
+  NEW_LOVER_WRITTEN: {
+    cost: 90,
+    name: 'Yeni Bir Sevgili Açılımı (Yazılı)',
+    description: '6 kartlık yazılı yeni sevgili açılımı',
+  },
+  MONEY_SPREAD_DETAILED: {
+    cost: 110,
+    name: 'Para Açılımı (Detaylı)',
+    description: '6 kartlık detaylı para açılımı',
+  },
+  MONEY_SPREAD_WRITTEN: {
+    cost: 100,
+    name: 'Para Açılımı (Yazılı)',
+    description: '6 kartlık yazılı para açılımı',
   },
 } as const;
 

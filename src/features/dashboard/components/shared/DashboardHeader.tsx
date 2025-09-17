@@ -84,41 +84,41 @@ export default function DashboardHeader({
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-1">
-          <a 
-            href={`/${currentLocale}/dashboard`} 
-            className="flex items-center space-x-2 px-4 py-2 text-gold bg-crystal-clear border-b-2 border-gold rounded-t-lg transition-colors"
+        <nav className='hidden md:flex items-center space-x-1'>
+          <a
+            href={`/${currentLocale}/dashboard`}
+            className='flex items-center space-x-2 px-4 py-2 text-gold bg-crystal-clear border-b-2 border-gold rounded-t-lg transition-colors'
           >
-            <BarChart3 className="h-4 w-4" />
-            <span className="font-medium">Dashboard</span>
+            <BarChart3 className='h-4 w-4' />
+            <span className='font-medium'>Dashboard</span>
           </a>
-          <a 
-            href={`/${currentLocale}/dashboard/readings`} 
-            className="flex items-center space-x-2 px-4 py-2 text-text-mystic hover:text-text-celestial hover:bg-crystal-clear rounded-t-lg transition-colors"
+          <a
+            href={`/${currentLocale}/dashboard/readings`}
+            className='flex items-center space-x-2 px-4 py-2 text-text-mystic hover:text-text-celestial hover:bg-crystal-clear rounded-t-lg transition-colors'
           >
-            <BookOpen className="h-4 w-4" />
+            <BookOpen className='h-4 w-4' />
             <span>Okumalar</span>
           </a>
-          <a 
-            href={`/${currentLocale}/dashboard/statistics`} 
-            className="flex items-center space-x-2 px-4 py-2 text-text-mystic hover:text-text-celestial hover:bg-crystal-clear rounded-t-lg transition-colors"
+          <a
+            href={`/${currentLocale}/dashboard/statistics`}
+            className='flex items-center space-x-2 px-4 py-2 text-text-mystic hover:text-text-celestial hover:bg-crystal-clear rounded-t-lg transition-colors'
           >
-            <TrendingUp className="h-4 w-4" />
+            <TrendingUp className='h-4 w-4' />
             <span>İstatistikler</span>
           </a>
-          <a 
-            href={`/${currentLocale}/dashboard/settings`} 
-            className="flex items-center space-x-2 px-4 py-2 text-text-mystic hover:text-text-celestial hover:bg-crystal-clear rounded-t-lg transition-colors"
+          <a
+            href={`/${currentLocale}/dashboard/settings`}
+            className='flex items-center space-x-2 px-4 py-2 text-text-mystic hover:text-text-celestial hover:bg-crystal-clear rounded-t-lg transition-colors'
           >
-            <Settings className="h-4 w-4" />
+            <Settings className='h-4 w-4' />
             <span>Ayarlar</span>
           </a>
-          <button 
+          <button
             onClick={handleLogout}
-            className="flex items-center space-x-2 px-4 py-2 text-red-400 hover:text-red-300 hover:bg-red-900/20 rounded-t-lg transition-colors"
-            title="Çıkış Yap"
+            className='flex items-center space-x-2 px-4 py-2 text-red-400 hover:text-red-300 hover:bg-red-900/20 rounded-t-lg transition-colors'
+            title='Çıkış Yap'
           >
-            <LogOut className="h-4 w-4" />
+            <LogOut className='h-4 w-4' />
             <span>Çıkış</span>
           </button>
         </nav>
@@ -126,57 +126,61 @@ export default function DashboardHeader({
         {/* Mobile Menu Button */}
         <button
           onClick={() => setSidebarOpen(!sidebarOpen)}
-          className="md:hidden p-2 rounded-md text-text-muted hover:text-text-celestial hover:bg-crystal-clear"
-          aria-label="Toggle mobile menu"
+          className='md:hidden p-2 rounded-md text-text-muted hover:text-text-celestial hover:bg-crystal-clear'
+          aria-label='Toggle mobile menu'
         >
-          {sidebarOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          {sidebarOpen ? (
+            <X className='h-5 w-5' />
+          ) : (
+            <Menu className='h-5 w-5' />
+          )}
         </button>
       </div>
 
       {/* Mobile Navigation */}
       {sidebarOpen && (
-        <div className="md:hidden border-t border-mystical-700/50">
-          <nav className="px-4 py-2 space-y-1">
-            <a 
-              href={`/${currentLocale}/dashboard`} 
-              className="flex items-center space-x-3 px-4 py-3 text-gold bg-crystal-clear border-l-4 border-gold rounded-lg"
+        <div className='md:hidden border-t border-mystical-700/50'>
+          <nav className='px-4 py-2 space-y-1'>
+            <a
+              href={`/${currentLocale}/dashboard`}
+              className='flex items-center space-x-3 px-4 py-3 text-gold bg-crystal-clear border-l-4 border-gold rounded-lg'
               onClick={() => setSidebarOpen(false)}
             >
-              <BarChart3 className="h-5 w-5" />
-              <span className="font-medium">Dashboard</span>
+              <BarChart3 className='h-5 w-5' />
+              <span className='font-medium'>Dashboard</span>
             </a>
-            <a 
-              href={`/${currentLocale}/dashboard/readings`} 
-              className="flex items-center space-x-3 px-4 py-3 text-text-mystic hover:text-text-celestial hover:bg-crystal-clear rounded-lg transition-colors"
+            <a
+              href={`/${currentLocale}/dashboard/readings`}
+              className='flex items-center space-x-3 px-4 py-3 text-text-mystic hover:text-text-celestial hover:bg-crystal-clear rounded-lg transition-colors'
               onClick={() => setSidebarOpen(false)}
             >
-              <BookOpen className="h-5 w-5" />
+              <BookOpen className='h-5 w-5' />
               <span>Okumalar</span>
             </a>
-            <a 
-              href={`/${currentLocale}/dashboard/statistics`} 
-              className="flex items-center space-x-3 px-4 py-3 text-text-mystic hover:text-text-celestial hover:bg-crystal-clear rounded-lg transition-colors"
+            <a
+              href={`/${currentLocale}/dashboard/statistics`}
+              className='flex items-center space-x-3 px-4 py-3 text-text-mystic hover:text-text-celestial hover:bg-crystal-clear rounded-lg transition-colors'
               onClick={() => setSidebarOpen(false)}
             >
-              <TrendingUp className="h-5 w-5" />
+              <TrendingUp className='h-5 w-5' />
               <span>İstatistikler</span>
             </a>
-            <a 
-              href={`/${currentLocale}/dashboard/settings`} 
-              className="flex items-center space-x-3 px-4 py-3 text-text-mystic hover:text-text-celestial hover:bg-crystal-clear rounded-lg transition-colors"
+            <a
+              href={`/${currentLocale}/dashboard/settings`}
+              className='flex items-center space-x-3 px-4 py-3 text-text-mystic hover:text-text-celestial hover:bg-crystal-clear rounded-lg transition-colors'
               onClick={() => setSidebarOpen(false)}
             >
-              <Settings className="h-5 w-5" />
+              <Settings className='h-5 w-5' />
               <span>Ayarlar</span>
             </a>
-            <button 
+            <button
               onClick={() => {
                 handleLogout();
                 setSidebarOpen(false);
               }}
-              className="flex items-center space-x-3 px-4 py-3 text-red-400 hover:text-red-300 hover:bg-red-900/20 rounded-lg transition-colors w-full text-left"
+              className='flex items-center space-x-3 px-4 py-3 text-red-400 hover:text-red-300 hover:bg-red-900/20 rounded-lg transition-colors w-full text-left'
             >
-              <LogOut className="h-5 w-5" />
+              <LogOut className='h-5 w-5' />
               <span>Çıkış Yap</span>
             </button>
           </nav>

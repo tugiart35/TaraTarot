@@ -38,60 +38,164 @@ import { TarotSpread } from '@/lib/constants/tarotSpreads';
 interface TarotSpreadSelectorProps {
   spreads: TarotSpread[];
   selectedSpread: string;
-  onSpreadSelect: (spreadId: string) => void;
+  onSpreadSelect: (_spreadId: string) => void;
+  showDescription?: boolean; // Açıklama gösterilsin mi?
 }
 
 export default function TarotSpreadSelector({
   spreads,
   selectedSpread,
   onSpreadSelect,
+  showDescription = true, // Varsayılan olarak açıklama göster
 }: TarotSpreadSelectorProps) {
   return (
     <div className='mb-8'>
-      <div className='mb-6 text-center'>
-        <div className='text-4xl mb-2 opacity-60'>🔮</div>
-        <h2 className='text-xl font-light text-slate-300 mb-1'>
-          Kaderinizi Keşfedin
-        </h2>
-        <div className='w-16 h-px bg-gradient-to-r from-transparent via-purple-400 to-transparent mx-auto'></div>
-      </div>
-
-      <div className='flex justify-center gap-6'>
-        {spreads.map(spread => (
-          <button
-            key={spread.id}
-            onClick={() => onSpreadSelect(spread.id)}
-            className={`
-              group relative w-20 h-20 rounded-full border transition-all duration-500
-              ${
+      {/* Enhanced Tab Navigation */}
+      <div className='mb-1'>
+        {/* Desktop Tab Navigation */}
+        <div className='hidden md:flex flex-wrap gap-3 justify-center'>
+          {spreads.map(spread => (
+            <button
+              key={spread.id}
+              onClick={() => onSpreadSelect(spread.id)}
+              className={`group relative flex items-center gap-3 px-4 py-2 rounded-2xl font-medium transition-all duration-500 transform hover:scale-105 ${
                 selectedSpread === spread.id
-                  ? 'border-purple-400 bg-purple-400/10 shadow-lg shadow-purple-400/20 scale-110'
-                  : 'border-slate-600 bg-slate-900/30 hover:border-purple-500/50 hover:bg-purple-500/5 hover:scale-105'
-              }
-            `}
-          >
-            <div className='absolute inset-0 rounded-full bg-gradient-to-br from-purple-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
-            <div className='relative flex flex-col items-center justify-center h-full'>
-              <div className='text-2xl mb-1 opacity-80'>{spread.icon}</div>
-              <div className='text-xs text-slate-400 font-light'>
+                  ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-2xl shadow-purple-500/25'
+                  : 'bg-white/10 text-gray-300 hover:bg-white/20 hover:shadow-lg'
+              }`}
+            >
+              <span className='text-xl transition-transform duration-300 group-hover:scale-110'>
+                {spread.icon}
+              </span>
+              <span className='text-sm font-semibold'>{spread.name}</span>
+              <span className='text-xs bg-white/20 px-2 py-1 rounded-full'>
                 {spread.cardCount}
+              </span>
+              {selectedSpread === spread.id && (
+                <div className='absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur-sm opacity-50 -z-10'></div>
+              )}
+            </button>
+          ))}
+        </div>
+
+        {/* Mobile Tab Navigation - Horizontal Scroll */}
+        <div className='md:hidden'>
+          {/* Scroll indicator - shows there are more items */}
+          {spreads.length > 2 && (
+            <div className='flex justify-center mb-3'>
+              <div className='flex items-center gap-2 text-gray-400 text-xs'>
+                <span>Kaydırarak daha fazla açılım görün</span>
+                <div className='flex gap-1'>
+                  <div className='w-1 h-1 bg-purple-400 rounded-full animate-pulse'></div>
+                  <div
+                    className='w-1 h-1 bg-purple-400 rounded-full animate-pulse'
+                    style={{ animationDelay: '0.2s' }}
+                  ></div>
+                  <div
+                    className='w-1 h-1 bg-purple-400 rounded-full animate-pulse'
+                    style={{ animationDelay: '0.4s' }}
+                  ></div>
+                </div>
               </div>
+            </div>
+          )}
+
+          <div className='relative'>
+            {/* Fade effect on right edge to indicate scrollable content */}
+            {spreads.length > 2 && (
+              <div className='absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-gray-900 to-transparent z-10 pointer-events-none'></div>
+            )}
+
+            <div className='flex gap-3 overflow-x-auto pb-2 scrollbar-hide scroll-smooth'>
+              {spreads.map(spread => (
+                <button
+                  key={spread.id}
+                  onClick={() => onSpreadSelect(spread.id)}
+                  className={`flex-shrink-0 flex items-center gap-2 px-4 py-3 rounded-xl font-medium transition-all duration-300 ${
+                    selectedSpread === spread.id
+                      ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg'
+                      : 'bg-white/10 text-gray-300 hover:bg-white/20'
+                  }`}
+                >
+                  <span className='text-lg'>{spread.icon}</span>
+                  <span className='text-sm whitespace-nowrap'>
+                    {spread.name}
+                  </span>
+                  <span className='text-xs bg-white/20 px-2 py-1 rounded-full'>
+                    {spread.cardCount}
+                  </span>
+                </button>
+              ))}
             </div>
 
-            {/* Tooltip */}
-            <div className='absolute -bottom-12 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none'>
-              <div className='bg-slate-800/90 backdrop-blur-sm border border-slate-600 rounded-lg px-3 py-2 text-xs text-slate-200 whitespace-nowrap'>
-                {spread.name}
+            {/* Scroll dots indicator */}
+            {spreads.length > 2 && (
+              <div className='flex justify-center mt-3 gap-1'>
+                {Array.from(
+                  { length: Math.ceil(spreads.length / 2) },
+                  (_, i) => (
+                    <div
+                      key={i}
+                      className='w-2 h-2 rounded-full bg-gray-600 opacity-50'
+                    ></div>
+                  )
+                )}
               </div>
-            </div>
-          </button>
-        ))}
+            )}
+          </div>
+        </div>
       </div>
 
-      {selectedSpread && (
-        <div className='mt-4 text-center'>
-          <div className='text-sm text-purple-300 font-light'>
-            {spreads.find(s => s.id === selectedSpread)?.name}
+      {/* Enhanced Selected Spread Info */}
+      {selectedSpread && showDescription && (
+        <div className='text-center'>
+          <br />
+
+          {/* Açılım Açıklaması */}
+          <div className='max-w-4xl mx-auto mb-6'>
+            <div className='bg-gradient-to-r from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-6'>
+              <h3 className='text-lg font-semibold text-purple-300 mb-3 flex items-center justify-center gap-2'>
+                <span className='text-2xl'>🔮</span>
+                Bu Açılımın Anlamı
+              </h3>
+              <p className='text-gray-200 leading-relaxed text-base'>
+                {spreads.find(s => s.id === selectedSpread)?.description}
+              </p>
+
+              {/* Açılım Pozisyonları */}
+              <div className='mt-4 pt-4 border-t border-purple-500/20'>
+                <h4 className='text-sm font-medium text-purple-300 mb-3'>
+                  📋 Açılım Pozisyonları:
+                </h4>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-2 text-sm'>
+                  {spreads
+                    .find(s => s.id === selectedSpread)
+                    ?.positions.slice(0, 4)
+                    .map((position, index) => (
+                      <div
+                        key={position.id}
+                        className='flex items-start gap-2 text-gray-300'
+                      >
+                        <span className='text-purple-400 font-medium min-w-[20px]'>
+                          {index + 1}.
+                        </span>
+                        <span className='text-xs'>{position.title}</span>
+                      </div>
+                    ))}
+                  {spreads.find(s => s.id === selectedSpread)?.positions
+                    .length &&
+                    spreads.find(s => s.id === selectedSpread)!.positions
+                      .length > 4 && (
+                      <div className='text-xs text-purple-400 col-span-full text-center mt-2'>
+                        +
+                        {spreads.find(s => s.id === selectedSpread)!.positions
+                          .length - 4}{' '}
+                        pozisyon daha...
+                      </div>
+                    )}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       )}

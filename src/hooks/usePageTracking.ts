@@ -55,14 +55,16 @@ export const usePageTracking = () => {
     // Sayfa görüntüleme kaydı
     const trackPageView = async () => {
       try {
-        const viewDuration = Math.round((Date.now() - startTimeRef.current) / 1000);
-        
+        const viewDuration = Math.round(
+          (Date.now() - startTimeRef.current) / 1000
+        );
+
         const pageViewData: PageViewData = {
           page_path: pathname,
           page_title: document.title,
           user_agent: navigator.userAgent,
           session_id: sessionIdRef.current,
-          view_duration: viewDuration
+          view_duration: viewDuration,
         };
         if (document.referrer) pageViewData.referrer = document.referrer;
 
@@ -86,7 +88,9 @@ export const usePageTracking = () => {
 
     // Sayfa değiştiğinde önceki sayfa süresini kaydet
     return () => {
-      const viewDuration = Math.round((Date.now() - startTimeRef.current) / 1000);
+      const viewDuration = Math.round(
+        (Date.now() - startTimeRef.current) / 1000
+      );
       if (viewDuration > 0) {
         // Önceki sayfa süresini güncelle (opsiyonel)
         // Bu durumda yeni sayfa zaten kaydedilecek
@@ -103,7 +107,7 @@ export const usePageTracking = () => {
         user_agent: navigator.userAgent,
         session_id: sessionIdRef.current,
         view_duration: Math.round((Date.now() - startTimeRef.current) / 1000),
-        ...customData
+        ...customData,
       };
       if (document.referrer) pageViewData.referrer = document.referrer;
 
@@ -129,7 +133,6 @@ export const usePageTracking = () => {
 
   return {
     trackCustomPageView,
-    sessionId: sessionIdRef.current
+    sessionId: sessionIdRef.current,
   };
 };
-

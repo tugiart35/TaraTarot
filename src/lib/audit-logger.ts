@@ -23,7 +23,7 @@ export interface AuditLogEntry {
   status: 'success' | 'failure' | 'pending';
 }
 
-export type AuditAction = 
+export type AuditAction =
   | 'admin_login'
   | 'admin_logout'
   | 'user_status_change'
@@ -53,7 +53,7 @@ export type AuditAction =
   | 'email_template_updated'
   | 'email_template_deleted';
 
-export type ResourceType = 
+export type ResourceType =
   | 'user'
   | 'admin'
   | 'admin_users'
@@ -98,25 +98,25 @@ class AuditLogger {
         user_agent: this.getUserAgent(),
         timestamp: new Date().toISOString(),
         severity: data.severity || this.getSeverityForAction(action),
-        status: data.status || 'success'
+        status: data.status || 'success',
       };
-      
+
       if (data.userEmail !== undefined) {
         entry.user_email = data.userEmail;
       }
-      
+
       if (data.resourceId !== undefined) {
         entry.resource_id = data.resourceId;
       }
-      
+
       if (data.oldValues !== undefined) {
         entry.old_values = data.oldValues;
       }
-      
+
       if (data.newValues !== undefined) {
         entry.new_values = data.newValues;
       }
-      
+
       if (data.metadata !== undefined) {
         entry.metadata = data.metadata;
       }
@@ -132,20 +132,25 @@ class AuditLogger {
       this.flushQueue().catch(error => {
         // Fallback: Store in localStorage if Supabase fails
         this.storeInLocalStorage(entry);
-        const logContext: { action: string; resource: string; userId?: string } = {
+        const logContext: {
+          action: string;
+          resource: string;
+          userId?: string;
+        } = {
           action: action.toString(),
-          resource: resourceType.toString()
+          resource: resourceType.toString(),
         };
         if (data.userId !== undefined) logContext.userId = data.userId;
         logError('Audit log fallback to localStorage', error, logContext);
       });
     } catch (error) {
-        const logContext2: { action: string; resource: string; userId?: string } = {
+      const logContext2: { action: string; resource: string; userId?: string } =
+        {
           action: action.toString(),
-          resource: resourceType.toString()
+          resource: resourceType.toString(),
         };
-        if (data.userId !== undefined) logContext2.userId = data.userId;
-        logError('Failed to create audit log entry', error, logContext2);
+      if (data.userId !== undefined) logContext2.userId = data.userId;
+      logError('Failed to create audit log entry', error, logContext2);
     }
   }
 
@@ -168,8 +173,11 @@ class AuditLogger {
       severity: 'high',
       metadata: {
         ...data.metadata,
-        error: typeof data.error === 'string' ? data.error : (data.error as any)?.message
-      }
+        error:
+          typeof data.error === 'string'
+            ? data.error
+            : (data.error as any)?.message,
+      },
     });
   }
 
@@ -189,8 +197,8 @@ class AuditLogger {
       severity: data.severity,
       metadata: {
         event,
-        ...data.metadata
-      }
+        ...data.metadata,
+      },
     });
   }
 
@@ -273,8 +281,13 @@ class AuditLogger {
   /**
    * Get severity level for action
    */
-  private getSeverityForAction(action: AuditAction): 'low' | 'medium' | 'high' | 'critical' {
-    const severityMap: Record<AuditAction, 'low' | 'medium' | 'high' | 'critical'> = {
+  private getSeverityForAction(
+    action: AuditAction
+  ): 'low' | 'medium' | 'high' | 'critical' {
+    const severityMap: Record<
+      AuditAction,
+      'low' | 'medium' | 'high' | 'critical'
+    > = {
       admin_login: 'medium',
       admin_logout: 'low',
       user_status_change: 'high',
@@ -302,7 +315,7 @@ class AuditLogger {
       api_key_deleted: 'high',
       user_deleted: 'critical',
       user_banned: 'critical',
-      user_unbanned: 'high'
+      user_unbanned: 'high',
     };
 
     return severityMap[action] || 'medium';
@@ -337,7 +350,8 @@ class AuditLogger {
    * Validate UUID format
    */
   private isValidUUID(uuid: string): boolean {
-    const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+    const uuidRegex =
+      /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
     return uuidRegex.test(uuid);
   }
 
@@ -351,14 +365,17 @@ class AuditLogger {
         // const _key = `audit_log_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
         const existingLogs = this.getLocalStorageLogs();
         existingLogs.push(entry);
-        
+
         // Keep only last 50 logs to prevent localStorage overflow
         if (existingLogs.length > 50) {
           existingLogs.splice(0, existingLogs.length - 50);
         }
-        
-        localStorage.setItem('audit_logs_fallback', JSON.stringify(existingLogs));
-        
+
+        localStorage.setItem(
+          'audit_logs_fallback',
+          JSON.stringify(existingLogs)
+        );
+
         if (process.env.NODE_ENV === 'development') {
           console.warn('📦 [AUDIT] Stored in localStorage fallback:', entry);
         }
@@ -404,13 +421,13 @@ class AuditLogger {
    */
   private async flushQueue(): Promise<void> {
     if (this.isFlushingQueue || this.queue.length === 0) return;
-    
+
     this.isFlushingQueue = true;
 
     try {
       // Supabase'e audit log'ları gönder
       await this.persistToSupabase(this.queue);
-      
+
       // Başarılı olduktan sonra queue'yu temizle ve retry count'u sıfırla
       this.queue = [];
       this.retryCount = 0;
@@ -418,14 +435,16 @@ class AuditLogger {
       // Hata durumunda queue'yu temizleme, tekrar deneme için sakla
       logError('Failed to flush audit log queue to Supabase', error, {
         action: 'audit_log_flush',
-        metadata: { retryCount: this.retryCount }
+        metadata: { retryCount: this.retryCount },
       });
-      
+
       this.retryCount++;
-      
+
       // Çok fazla hata varsa queue'yu temizle (sonsuz döngüyü önle)
       if (this.queue.length > 100 || this.retryCount > this.maxRetries) {
-        console.warn('Audit log queue too large or max retries exceeded, clearing to prevent memory issues');
+        console.warn(
+          'Audit log queue too large or max retries exceeded, clearing to prevent memory issues'
+        );
         this.queue = [];
         this.retryCount = 0;
       } else {
@@ -448,7 +467,9 @@ class AuditLogger {
     try {
       // Log'ları temizle ve doğrula
       const cleanedLogs = logs.map(log => ({
-        user_id: this.isValidUUID(log.user_id) ? log.user_id : '00000000-0000-0000-0000-000000000000',
+        user_id: this.isValidUUID(log.user_id)
+          ? log.user_id
+          : '00000000-0000-0000-0000-000000000000',
         user_email: log.user_email || null,
         action: log.action || 'unknown',
         resource_type: log.resource_type || 'system',
@@ -460,30 +481,30 @@ class AuditLogger {
         metadata: log.metadata || {},
         timestamp: log.timestamp || new Date().toISOString(),
         severity: log.severity || 'low',
-        status: log.status || 'success'
+        status: log.status || 'success',
       }));
 
-      const { error } = await supabase
-        .from('audit_logs')
-        .insert(cleanedLogs);
+      const { error } = await supabase.from('audit_logs').insert(cleanedLogs);
 
       if (error) {
         logError('Supabase audit log insert error', error, {
           action: 'audit_log_insert',
-          metadata: { 
+          metadata: {
             errorCode: error.code,
-            errorMessage: error.message 
-          }
+            errorMessage: error.message,
+          },
         });
         throw error;
       }
 
       if (process.env.NODE_ENV === 'development') {
-        console.log(`✅ [AUDIT] Successfully persisted ${logs.length} audit logs`);
+        console.log(
+          `✅ [AUDIT] Successfully persisted ${logs.length} audit logs`
+        );
       }
     } catch (error) {
       logError('Failed to persist audit logs to Supabase', error, {
-        action: 'audit_log_persist'
+        action: 'audit_log_persist',
       });
       throw error;
     }
@@ -492,17 +513,32 @@ class AuditLogger {
   /**
    * Export logs for compliance from Supabase
    */
-  async exportLogs(format: 'json' | 'csv' = 'json', limit: number = 1000): Promise<string> {
+  async exportLogs(
+    format: 'json' | 'csv' = 'json',
+    limit: number = 1000
+  ): Promise<string> {
     try {
       const logs = await this.getRecentLogs(limit);
 
       if (format === 'csv') {
-        const headers = ['timestamp', 'user_id', 'action', 'resource_type', 'resource_id', 'severity', 'status'];
+        const headers = [
+          'timestamp',
+          'user_id',
+          'action',
+          'resource_type',
+          'resource_id',
+          'severity',
+          'status',
+        ];
         const csvData = [
           headers.join(','),
-          ...logs.map(log => 
-            headers.map(header => JSON.stringify(log[header as keyof AuditLogEntry] || '')).join(',')
-          )
+          ...logs.map(log =>
+            headers
+              .map(header =>
+                JSON.stringify(log[header as keyof AuditLogEntry] || '')
+              )
+              .join(',')
+          ),
         ].join('\n');
         return csvData;
       }
@@ -510,14 +546,20 @@ class AuditLogger {
       return JSON.stringify(logs, null, 2);
     } catch (error) {
       logError('Failed to export audit logs', error);
-      return format === 'csv' ? 'timestamp,error\n' + new Date().toISOString() + ',Failed to export logs' : '[]';
+      return format === 'csv'
+        ? 'timestamp,error\n' +
+            new Date().toISOString() +
+            ',Failed to export logs'
+        : '[]';
     }
   }
 
   /**
    * Clear old audit logs (for maintenance)
    */
-  async clearOldLogs(daysOld: number = 90): Promise<{ success: boolean; deletedCount?: number }> {
+  async clearOldLogs(
+    daysOld: number = 90
+  ): Promise<{ success: boolean; deletedCount?: number }> {
     try {
       const cutoffDate = new Date();
       cutoffDate.setDate(cutoffDate.getDate() - daysOld);

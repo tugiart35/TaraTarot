@@ -69,13 +69,15 @@ export class AdminUserManager {
     try {
       const { data, error } = await supabase
         .from('admin_users')
-        .select(`
+        .select(
+          `
           *,
           auth_user:user_id (
             email,
             user_metadata
           )
-        `)
+        `
+        )
         .order('created_at', { ascending: false });
 
       if (error) {
@@ -87,12 +89,13 @@ export class AdminUserManager {
       const adminUsers = (data || []).map(adminUser => ({
         ...adminUser,
         email: adminUser.auth_user?.email || 'Bilinmeyen',
-        display_name: adminUser.auth_user?.user_metadata?.display_name || 
-                     adminUser.auth_user?.user_metadata?.full_name || 
-                     'Bilinmeyen Kullanıcı',
+        display_name:
+          adminUser.auth_user?.user_metadata?.display_name ||
+          adminUser.auth_user?.user_metadata?.full_name ||
+          'Bilinmeyen Kullanıcı',
         full_name: adminUser.auth_user?.user_metadata?.full_name,
         first_name: adminUser.auth_user?.user_metadata?.first_name,
-        last_name: adminUser.auth_user?.user_metadata?.last_name
+        last_name: adminUser.auth_user?.user_metadata?.last_name,
       }));
 
       return adminUsers;
@@ -107,13 +110,15 @@ export class AdminUserManager {
     try {
       const { data, error } = await supabase
         .from('admin_users')
-        .select(`
+        .select(
+          `
           *,
           auth_user:user_id (
             email,
             user_metadata
           )
-        `)
+        `
+        )
         .eq('user_id', userId)
         .single();
 
@@ -125,12 +130,13 @@ export class AdminUserManager {
       return {
         ...data,
         email: data.auth_user?.email || 'Bilinmeyen',
-        display_name: data.auth_user?.user_metadata?.display_name || 
-                     data.auth_user?.user_metadata?.full_name || 
-                     'Bilinmeyen Kullanıcı',
+        display_name:
+          data.auth_user?.user_metadata?.display_name ||
+          data.auth_user?.user_metadata?.full_name ||
+          'Bilinmeyen Kullanıcı',
         full_name: data.auth_user?.user_metadata?.full_name,
         first_name: data.auth_user?.user_metadata?.first_name,
-        last_name: data.auth_user?.user_metadata?.last_name
+        last_name: data.auth_user?.user_metadata?.last_name,
       };
     } catch (error) {
       console.error('AdminUserManager.getAdminUserById error:', error);
@@ -139,10 +145,14 @@ export class AdminUserManager {
   }
 
   // Yeni admin user oluştur
-  static async createAdminUser(userData: CreateAdminUserData): Promise<AdminUser | null> {
+  static async createAdminUser(
+    userData: CreateAdminUserData
+  ): Promise<AdminUser | null> {
     try {
       // Mevcut kullanıcıyı al
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (!user) {
         throw new Error('User not authenticated');
       }
@@ -163,7 +173,7 @@ export class AdminUserManager {
           user_id: userData.user_id,
           role: userData.role,
           permissions: permissions,
-          created_by: user.id
+          created_by: user.id,
         })
         .select()
         .single();
@@ -178,11 +188,11 @@ export class AdminUserManager {
         resourceId: userData.user_id,
         newValues: {
           role: userData.role,
-          permissions: permissions
+          permissions: permissions,
         },
         metadata: {
-          targetUserId: userData.user_id
-        }
+          targetUserId: userData.user_id,
+        },
       });
 
       return data;
@@ -193,10 +203,15 @@ export class AdminUserManager {
   }
 
   // Admin user güncelle
-  static async updateAdminUser(userId: string, updateData: UpdateAdminUserData): Promise<AdminUser | null> {
+  static async updateAdminUser(
+    userId: string,
+    updateData: UpdateAdminUserData
+  ): Promise<AdminUser | null> {
     try {
       // Mevcut kullanıcıyı al
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (!user) {
         throw new Error('User not authenticated');
       }
@@ -213,7 +228,7 @@ export class AdminUserManager {
       }
 
       const updatePayload: any = {
-        updated_at: new Date().toISOString()
+        updated_at: new Date().toISOString(),
       };
 
       // Sadece sağlanan alanları güncelle
@@ -222,7 +237,7 @@ export class AdminUserManager {
         // Role değişirse permissions'ı da güncelle
         updatePayload.permissions = this.getDefaultPermissions(updateData.role);
       }
-      
+
       if (updateData.permissions !== undefined) {
         updatePayload.permissions = updateData.permissions;
       }
@@ -245,8 +260,8 @@ export class AdminUserManager {
         newValues: updateData,
         metadata: {
           targetUserId: userId,
-          updatedFields: Object.keys(updateData)
-        }
+          updatedFields: Object.keys(updateData),
+        },
       });
 
       return data;
@@ -260,7 +275,9 @@ export class AdminUserManager {
   static async deleteAdminUser(userId: string): Promise<boolean> {
     try {
       // Mevcut kullanıcıyı al
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (!user) {
         throw new Error('User not authenticated');
       }
@@ -297,13 +314,13 @@ export class AdminUserManager {
         resourceId: userId,
         oldValues: {
           email: userData.email,
-          role: userData.role
+          role: userData.role,
         },
         metadata: {
           targetUserId: userId,
           targetUserEmail: userData.email,
-          targetUserRole: userData.role
-        }
+          targetUserRole: userData.role,
+        },
       });
 
       return true;
@@ -318,7 +335,9 @@ export class AdminUserManager {
     try {
       const { data, error } = await supabase
         .from('profiles')
-        .select('user_id, email, display_name, full_name, first_name, last_name')
+        .select(
+          'user_id, email, display_name, full_name, first_name, last_name'
+        )
         .ilike('email', `%${email}%`)
         .limit(10);
 
@@ -349,7 +368,7 @@ export class AdminUserManager {
         permissions['view_orders'] = true;
         permissions['manage_content'] = true;
         break;
-      
+
       case 'admin':
         permissions['manage_api_keys'] = true;
         permissions['view_analytics'] = true;
@@ -358,7 +377,7 @@ export class AdminUserManager {
         permissions['view_orders'] = true;
         permissions['manage_content'] = true;
         break;
-      
+
       case 'moderator':
         permissions['view_analytics'] = true;
         permissions['manage_users'] = true;
@@ -372,7 +391,9 @@ export class AdminUserManager {
   // Permission kontrolü
   static async hasPermission(permission: string): Promise<boolean> {
     try {
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (!user) return false;
 
       const adminUser = await this.getAdminUserById(user.id);
@@ -388,7 +409,9 @@ export class AdminUserManager {
   // Role kontrolü
   static async hasRole(role: string): Promise<boolean> {
     try {
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (!user) return false;
 
       const adminUser = await this.getAdminUserById(user.id);
@@ -404,7 +427,9 @@ export class AdminUserManager {
   // Mevcut kullanıcının admin bilgilerini getir
   static async getCurrentAdminUser(): Promise<AdminUser | null> {
     try {
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (!user) return null;
 
       return await this.getAdminUserById(user.id);
@@ -414,4 +439,3 @@ export class AdminUserManager {
     }
   }
 }
-

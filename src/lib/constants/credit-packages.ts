@@ -78,7 +78,7 @@ export const CREDIT_PACKAGES: Record<PackageType, CreditPackage> = {
       '1-2 detaylı tarot okuması',
       'Numeroloji analizi',
       'Aşk açılımı',
-      '7 gün geçerlilik'
+      '7 gün geçerlilik',
     ],
     icon: 'Coins',
     color: 'text-blue-400',
@@ -86,7 +86,7 @@ export const CREDIT_PACKAGES: Record<PackageType, CreditPackage> = {
     borderColor: 'border-blue-500/30',
     validityDays: 7,
     minCredits: 50,
-    maxCredits: 150
+    maxCredits: 150,
   },
   popular: {
     id: 'popular',
@@ -101,7 +101,7 @@ export const CREDIT_PACKAGES: Record<PackageType, CreditPackage> = {
       'Aşk açılımı',
       'Kariyer okuması',
       '30 gün geçerlilik',
-      '%10 bonus kredi'
+      '%10 bonus kredi',
     ],
     popular: true,
     icon: 'Star',
@@ -111,7 +111,7 @@ export const CREDIT_PACKAGES: Record<PackageType, CreditPackage> = {
     bonusPercentage: 10,
     validityDays: 30,
     minCredits: 250,
-    maxCredits: 400
+    maxCredits: 400,
   },
   premium: {
     id: 'premium',
@@ -128,7 +128,7 @@ export const CREDIT_PACKAGES: Record<PackageType, CreditPackage> = {
       'Genel okuma',
       '60 gün geçerlilik',
       '%20 bonus kredi',
-      'Öncelikli destek'
+      'Öncelikli destek',
     ],
     icon: 'Crown',
     color: 'text-purple-400',
@@ -137,15 +137,15 @@ export const CREDIT_PACKAGES: Record<PackageType, CreditPackage> = {
     bonusPercentage: 20,
     validityDays: 60,
     minCredits: 400,
-    maxCredits: 700
-  }
+    maxCredits: 700,
+  },
 };
 
 // Bonus kredi hesaplama fonksiyonu
 export const calculateBonus = (packageType: PackageType): number => {
   const pkg = CREDIT_PACKAGES[packageType];
   if (!pkg.bonusPercentage) return 0;
-  
+
   return Math.round((pkg.credits * pkg.bonusPercentage) / 100);
 };
 
@@ -169,48 +169,62 @@ export const recommendPackage = (requiredCredits: number): PackageType => {
 };
 
 // Paket karşılaştırma
-export const comparePackages = (package1: PackageType, package2: PackageType) => {
+export const comparePackages = (
+  package1: PackageType,
+  package2: PackageType
+) => {
   const pkg1 = CREDIT_PACKAGES[package1];
   const pkg2 = CREDIT_PACKAGES[package2];
-  
+
   return {
     priceDifference: pkg2.price - pkg1.price,
     creditDifference: pkg2.credits - pkg1.credits,
-    valueRatio: (pkg2.credits / pkg2.price) / (pkg1.credits / pkg1.price),
-    betterValue: (pkg2.credits / pkg2.price) > (pkg1.credits / pkg1.price) ? package2 : package1
+    valueRatio: pkg2.credits / pkg2.price / (pkg1.credits / pkg1.price),
+    betterValue:
+      pkg2.credits / pkg2.price > pkg1.credits / pkg1.price
+        ? package2
+        : package1,
   };
 };
 
 // Paket geçerlilik kontrolü
-export const isPackageValid = (packageType: PackageType, purchaseDate: Date): boolean => {
+export const isPackageValid = (
+  packageType: PackageType,
+  purchaseDate: Date
+): boolean => {
   const pkg = CREDIT_PACKAGES[packageType];
   const expiryDate = new Date(purchaseDate);
   expiryDate.setDate(expiryDate.getDate() + pkg.validityDays);
-  
+
   return new Date() <= expiryDate;
 };
 
 // Paket özellikleri filtreleme
-export const getPackageFeatures = (packageType: PackageType, category?: string): string[] => {
+export const getPackageFeatures = (
+  packageType: PackageType,
+  category?: string
+): string[] => {
   const pkg = CREDIT_PACKAGES[packageType];
-  
+
   if (!category) return pkg.features;
-  
+
   // Kategoriye göre filtreleme (gelecekte genişletilebilir)
   switch (category) {
     case 'tarot':
-      return pkg.features.filter(feature => 
-        feature.toLowerCase().includes('tarot') || 
-        feature.toLowerCase().includes('açılım')
+      return pkg.features.filter(
+        feature =>
+          feature.toLowerCase().includes('tarot') ||
+          feature.toLowerCase().includes('açılım')
       );
     case 'numerology':
-      return pkg.features.filter(feature => 
+      return pkg.features.filter(feature =>
         feature.toLowerCase().includes('numeroloji')
       );
     case 'support':
-      return pkg.features.filter(feature => 
-        feature.toLowerCase().includes('destek') ||
-        feature.toLowerCase().includes('geçerlilik')
+      return pkg.features.filter(
+        feature =>
+          feature.toLowerCase().includes('destek') ||
+          feature.toLowerCase().includes('geçerlilik')
       );
     default:
       return pkg.features;
@@ -220,51 +234,56 @@ export const getPackageFeatures = (packageType: PackageType, category?: string):
 // Paket istatistikleri
 export const getPackageStats = () => {
   const packages = Object.values(CREDIT_PACKAGES);
-  
+
   return {
     totalPackages: packages.length,
-    averagePrice: packages.reduce((sum, pkg) => sum + pkg.price, 0) / packages.length,
-    averageCredits: packages.reduce((sum, pkg) => sum + pkg.credits, 0) / packages.length,
+    averagePrice:
+      packages.reduce((sum, pkg) => sum + pkg.price, 0) / packages.length,
+    averageCredits:
+      packages.reduce((sum, pkg) => sum + pkg.credits, 0) / packages.length,
     totalCredits: packages.reduce((sum, pkg) => sum + pkg.credits, 0),
     totalPrice: packages.reduce((sum, pkg) => sum + pkg.price, 0),
-    bestValue: packages.reduce((best, current) => 
-      (current.credits / current.price) > (best.credits / best.price) ? current : best
+    bestValue: packages.reduce((best, current) =>
+      current.credits / current.price > best.credits / best.price
+        ? current
+        : best
     ),
-    mostPopular: packages.find(pkg => pkg.popular) || packages[0]
+    mostPopular: packages.find(pkg => pkg.popular) || packages[0],
   };
 };
 
 // Paket arama ve filtreleme
 export const searchPackages = (query: string): PackageType[] => {
   const packages = Object.entries(CREDIT_PACKAGES);
-  
+
   return packages
-    .filter(([_, pkg]) => 
-      pkg.name.toLowerCase().includes(query.toLowerCase()) ||
-      pkg.description.toLowerCase().includes(query.toLowerCase()) ||
-      pkg.features.some(feature => 
-        feature.toLowerCase().includes(query.toLowerCase())
-      )
+    .filter(
+      ([_, pkg]) =>
+        pkg.name.toLowerCase().includes(query.toLowerCase()) ||
+        pkg.description.toLowerCase().includes(query.toLowerCase()) ||
+        pkg.features.some(feature =>
+          feature.toLowerCase().includes(query.toLowerCase())
+        )
     )
     .map(([type, _]) => type as PackageType);
 };
 
 // Paket sıralama
 export const sortPackages = (
-  packages: PackageType[], 
+  packages: PackageType[],
   sortBy: 'price' | 'credits' | 'value' | 'popularity' = 'price'
 ): PackageType[] => {
   return [...packages].sort((a, b) => {
     const pkgA = CREDIT_PACKAGES[a];
     const pkgB = CREDIT_PACKAGES[b];
-    
+
     switch (sortBy) {
       case 'price':
         return pkgA.price - pkgB.price;
       case 'credits':
         return pkgA.credits - pkgB.credits;
       case 'value':
-        return (pkgB.credits / pkgB.price) - (pkgA.credits / pkgA.price);
+        return pkgB.credits / pkgB.price - pkgA.credits / pkgA.price;
       case 'popularity':
         if (pkgA.popular && !pkgB.popular) return -1;
         if (!pkgA.popular && pkgB.popular) return 1;

@@ -25,17 +25,18 @@
 // Mobile browser detection
 export const isMobile = (): boolean => {
   if (typeof window === 'undefined') return false;
-  
+
   const userAgent = window.navigator.userAgent;
-  const mobileRegex = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
-  
+  const mobileRegex =
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+
   return mobileRegex.test(userAgent);
 };
 
 // iOS detection
 export const isIOS = (): boolean => {
   if (typeof window === 'undefined') return false;
-  
+
   const userAgent = window.navigator.userAgent;
   return /iPad|iPhone|iPod/.test(userAgent);
 };
@@ -43,7 +44,7 @@ export const isIOS = (): boolean => {
 // Android detection
 export const isAndroid = (): boolean => {
   if (typeof window === 'undefined') return false;
-  
+
   const userAgent = window.navigator.userAgent;
   return /Android/.test(userAgent);
 };
@@ -51,7 +52,7 @@ export const isAndroid = (): boolean => {
 // Safari detection
 export const isSafari = (): boolean => {
   if (typeof window === 'undefined') return false;
-  
+
   const userAgent = window.navigator.userAgent;
   return /Safari/.test(userAgent) && !/Chrome/.test(userAgent);
 };
@@ -59,7 +60,7 @@ export const isSafari = (): boolean => {
 // Chrome detection
 export const isChrome = (): boolean => {
   if (typeof window === 'undefined') return false;
-  
+
   const userAgent = window.navigator.userAgent;
   return /Chrome/.test(userAgent) && !/Edge/.test(userAgent);
 };
@@ -158,7 +159,7 @@ export class MobileSecureStorage {
     try {
       const encodedValue = this.storage.getItem(key);
       if (!encodedValue) return null;
-      
+
       return decodeURIComponent(atob(encodedValue));
     } catch {
       return null;
@@ -210,7 +211,8 @@ export const getBiometricAuthInfo = async (): Promise<BiometricAuthInfo> => {
   try {
     // Check for WebAuthn support
     if (window.PublicKeyCredential) {
-      const available = await PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable();
+      const available =
+        await PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable();
       return {
         isSupported: true,
         type: available ? 'fingerprint' : 'none',
@@ -247,7 +249,7 @@ export const addTouchSupport = (element: HTMLElement): void => {
   if (!isMobile()) return;
 
   // Prevent double-tap zoom
-  element.addEventListener('touchend', (e) => {
+  element.addEventListener('touchend', e => {
     e.preventDefault();
   });
 
@@ -283,11 +285,11 @@ export const handleMobileKeyboard = (): void => {
   if (typeof window === 'undefined' || !isMobile()) return;
 
   const originalHeight = window.innerHeight;
-  
+
   window.addEventListener('resize', () => {
     const currentHeight = window.innerHeight;
     const heightDifference = originalHeight - currentHeight;
-    
+
     // If height decreased significantly, keyboard is likely open
     if (heightDifference > 150) {
       document.body.classList.add('keyboard-open');
@@ -306,7 +308,7 @@ export const handleMobileScroll = (): void => {
 
   const updateScrollDirection = () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
+
     if (scrollTop > lastScrollTop && scrollTop > 100) {
       // Scrolling down
       document.body.classList.add('scroll-down');
@@ -316,7 +318,7 @@ export const handleMobileScroll = (): void => {
       document.body.classList.add('scroll-up');
       document.body.classList.remove('scroll-down');
     }
-    
+
     lastScrollTop = scrollTop;
     ticking = false;
   };
@@ -347,7 +349,7 @@ export class MobileSessionManager {
         timestamp: Date.now(),
         browserInfo: getMobileBrowserInfo(),
       };
-      
+
       return this.storage.setItem(this.sessionKey, JSON.stringify(session));
     } catch {
       return false;
@@ -361,12 +363,12 @@ export class MobileSessionManager {
       if (!sessionData) return null;
 
       const session = JSON.parse(sessionData);
-      
+
       // Check if session is expired (24 hours)
       const now = Date.now();
       const sessionAge = now - session.timestamp;
       const maxAge = 24 * 60 * 60 * 1000; // 24 hours
-      
+
       if (sessionAge > maxAge) {
         this.clearSession();
         return null;
@@ -384,7 +386,7 @@ export class MobileSessionManager {
       clearInterval(this.heartbeatInterval);
       this.heartbeatInterval = null;
     }
-    
+
     return this.storage.removeItem(this.sessionKey);
   }
 
@@ -392,14 +394,17 @@ export class MobileSessionManager {
   startHeartbeat(): void {
     if (this.heartbeatInterval) return;
 
-    this.heartbeatInterval = setInterval(() => {
-      const session = this.loadSession();
-      if (session) {
-        // Update timestamp
-        session.timestamp = Date.now();
-        this.saveSession(session);
-      }
-    }, 5 * 60 * 1000); // Every 5 minutes
+    this.heartbeatInterval = setInterval(
+      () => {
+        const session = this.loadSession();
+        if (session) {
+          // Update timestamp
+          session.timestamp = Date.now();
+          this.saveSession(session);
+        }
+      },
+      5 * 60 * 1000
+    ); // Every 5 minutes
   }
 
   // Stop session heartbeat
@@ -456,8 +461,10 @@ export const initializeMobileSupport = (): void => {
   handleMobileScroll();
 
   // Add touch support to interactive elements
-  const interactiveElements = document.querySelectorAll('button, a, input, select, textarea');
-  interactiveElements.forEach((element) => {
+  const interactiveElements = document.querySelectorAll(
+    'button, a, input, select, textarea'
+  );
+  interactiveElements.forEach(element => {
     addTouchSupport(element as HTMLElement);
   });
 };

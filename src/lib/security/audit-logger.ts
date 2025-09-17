@@ -28,7 +28,7 @@ import type {
   AuditLogLevel,
   AuditLogCategory,
   EnhancedAuditLogEntry,
-  AuditLogFilter
+  AuditLogFilter,
 } from './audit-types';
 
 // Re-export types for backward compatibility
@@ -36,7 +36,7 @@ export type {
   AuditLogLevel,
   AuditLogCategory,
   EnhancedAuditLogEntry,
-  AuditLogFilter
+  AuditLogFilter,
 } from './audit-types';
 
 // Audit log statistics
@@ -126,7 +126,9 @@ export class AuditLogger {
   }
 
   // Log audit event
-  async log(entry: Omit<EnhancedAuditLogEntry, 'timestamp' | 'success'>): Promise<void> {
+  async log(
+    entry: Omit<EnhancedAuditLogEntry, 'timestamp' | 'success'>
+  ): Promise<void> {
     try {
       const enhancedEntry: EnhancedAuditLogEntry = {
         ...entry,
@@ -152,8 +154,7 @@ export class AuditLogger {
       if (this.pendingLogs.length >= this.batchSize) {
         await this.processBatch();
       }
-    } catch (error) {
-    }
+    } catch (error) {}
   }
 
   // Log authentication event
@@ -291,7 +292,9 @@ export class AuditLogger {
     }
 
     if (filter.category) {
-      filteredLogs = filteredLogs.filter(log => log.category === filter.category);
+      filteredLogs = filteredLogs.filter(
+        log => log.category === filter.category
+      );
     }
 
     if (filter.level) {
@@ -299,11 +302,15 @@ export class AuditLogger {
     }
 
     if (filter.startDate) {
-      filteredLogs = filteredLogs.filter(log => log.timestamp >= filter.startDate!);
+      filteredLogs = filteredLogs.filter(
+        log => log.timestamp >= filter.startDate!
+      );
     }
 
     if (filter.endDate) {
-      filteredLogs = filteredLogs.filter(log => log.timestamp <= filter.endDate!);
+      filteredLogs = filteredLogs.filter(
+        log => log.timestamp <= filter.endDate!
+      );
     }
 
     if (filter.source) {
@@ -311,7 +318,9 @@ export class AuditLogger {
     }
 
     if (filter.action) {
-      filteredLogs = filteredLogs.filter(log => log.action.includes(filter.action!));
+      filteredLogs = filteredLogs.filter(log =>
+        log.action.includes(filter.action!)
+      );
     }
 
     // Apply pagination
@@ -336,9 +345,11 @@ export class AuditLogger {
 
     // Count by category
     logs.forEach(log => {
-      stats.logsByCategory[log.category] = (stats.logsByCategory[log.category] || 0) + 1;
+      stats.logsByCategory[log.category] =
+        (stats.logsByCategory[log.category] || 0) + 1;
       stats.logsByLevel[log.level] = (stats.logsByLevel[log.level] || 0) + 1;
-      stats.logsBySource[log.source] = (stats.logsBySource[log.source] || 0) + 1;
+      stats.logsBySource[log.source] =
+        (stats.logsBySource[log.source] || 0) + 1;
     });
 
     // Top actions
@@ -369,7 +380,9 @@ export class AuditLogger {
   }
 
   // Calculate risk score
-  private calculateRiskScore(entry: Omit<EnhancedAuditLogEntry, 'timestamp' | 'success'>): number {
+  private calculateRiskScore(
+    entry: Omit<EnhancedAuditLogEntry, 'timestamp' | 'success'>
+  ): number {
     let score = 0;
 
     // Base score by level
@@ -405,7 +418,10 @@ export class AuditLogger {
     }
 
     // Adjust by action
-    if (entry.action.includes('failed') || entry.action.includes('unauthorized')) {
+    if (
+      entry.action.includes('failed') ||
+      entry.action.includes('unauthorized')
+    ) {
       score += 20;
     }
 
@@ -417,7 +433,9 @@ export class AuditLogger {
   }
 
   // Generate tags
-  private generateTags(entry: Omit<EnhancedAuditLogEntry, 'timestamp' | 'success'>): string[] {
+  private generateTags(
+    entry: Omit<EnhancedAuditLogEntry, 'timestamp' | 'success'>
+  ): string[] {
     const tags: string[] = [];
 
     tags.push(entry.level);
@@ -485,8 +503,7 @@ export class AuditLogger {
           timestamp: entry.timestamp,
         }),
       });
-    } catch (error) {
-    }
+    } catch (error) {}
   }
 
   // Start batch processing
@@ -525,7 +542,7 @@ export class AuditLogger {
     if (this.batchTimer) {
       clearInterval(this.batchTimer);
     }
-    
+
     // Process remaining logs
     if (this.pendingLogs.length > 0) {
       this.processBatch();

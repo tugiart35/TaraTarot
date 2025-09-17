@@ -1,7 +1,7 @@
 /*
 info:
 Bağlantılı dosyalar:
-- @/hooks/useDashboardData: Dashboard veri yönetimi için (gerekli)
+- @/hooks/useDashboardData: Dashboard veri yönetimi için (gerekli) - GitHub'dan geri yüklendi
 - @/hooks/useDashboardActions: Dashboard aksiyonları için (gerekli)
 - @/components/dashboard/*: Dashboard UI bileşenleri (gerekli)
 - @/types/dashboard.types: Dashboard tip tanımlamaları (gerekli)
@@ -38,9 +38,11 @@ Kodun okunabilirliği, optimizasyonu, yeniden kullanılabilirliği ve güvenliğ
 
 Gereklilik ve Kullanım Durumu:
 - DashboardPage: Gerekli, kullanıcı dashboard'u için ana bileşen
-- useDashboardData: Gerekli, veri yönetimi için
+- useDashboardData: Gerekli, veri yönetimi için - GitHub'dan geri yüklendi
 - useDashboardActions: Gerekli, aksiyon fonksiyonları için
 - Dashboard bileşenleri: Gerekli, UI organizasyonu için
+
+Deploy Durumu: Hazır - useDashboardData hook'u geri yüklendi ve entegrasyon tamamlandı
 */
 
 'use client'; // Bu dosya client-side'da çalışacak (tarayıcıda)
@@ -71,7 +73,7 @@ import { useTranslations } from '@/hooks/useTranslations';
 export default function DashboardPage() {
   // i18n hook'u
   const { t } = useTranslations();
-  
+
   // Dashboard veri yönetimi hook'u
   const {
     profile,
@@ -82,9 +84,10 @@ export default function DashboardPage() {
     totalCount,
     currentLocale,
     refreshCreditBalance,
+    setProfile,
     user,
     paymentLoading,
-    translate
+    translate,
   } = useDashboardData();
 
   // Dashboard aksiyonları hook'u
@@ -101,10 +104,8 @@ export default function DashboardPage() {
     setProfileModalOpen,
     setEditing,
     setEditForm,
-    setSelectedReading
-  } = useDashboardActions(profile, user, currentLocale, () => {
-    // Profile state setter - useDashboardData'dan gelen setProfile'i kullan
-  });
+    setSelectedReading,
+  } = useDashboardActions(profile, user, currentLocale, setProfile);
 
   // Mobil sidebar state'i
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -112,11 +113,13 @@ export default function DashboardPage() {
   // Loading durumunda gösterilecek ekran - auth veya veri yükleme sırasında
   if (loading) {
     return (
-      <div className="min-h-screen bg-cosmic-black flex items-center justify-center">
-        <div className="text-center">
+      <div className='min-h-screen bg-cosmic-black flex items-center justify-center'>
+        <div className='text-center'>
           {/* Spinner - dönen loading animasyonu */}
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gold mx-auto mb-4"></div>
-          <div className="text-text-celestial text-lg">{t('common.loading', 'Yükleniyor...')}</div>
+          <div className='animate-spin rounded-full h-12 w-12 border-b-2 border-gold mx-auto mb-4'></div>
+          <div className='text-text-celestial text-lg'>
+            {t('common.loading', 'Yükleniyor...')}
+          </div>
         </div>
       </div>
     );
@@ -124,7 +127,7 @@ export default function DashboardPage() {
 
   // Ana dashboard sayfası JSX'i - Modüler yapı
   return (
-    <div className="min-h-screen bg-cosmic-black">
+    <div className='min-h-screen bg-cosmic-black'>
       {/* Navigation Header - Üst navigasyon bileşeni */}
       <NavigationHeader
         currentLocale={currentLocale}
@@ -134,15 +137,13 @@ export default function DashboardPage() {
       />
 
       {/* Main Content - Ana içerik alanı */}
-      <div className="pt-16"> {/* Üst navigasyon için padding */}
+      <div className='pt-16'>
+        {' '}
+        {/* Üst navigasyon için padding */}
         {/* Dashboard Content - Dashboard içeriği */}
-        <main className="p-4 md:p-6 pb-24 min-h-screen">
+        <main className='p-4 md:p-6 pb-24 min-h-screen'>
           {/* Welcome Section - Hoş geldin bölümü */}
-          <WelcomeSection
-            profile={profile}
-            user={user}
-            isAdmin={isAdmin}
-          />
+          <WelcomeSection profile={profile} user={user} isAdmin={isAdmin} />
 
           {/* Stats Cards - İstatistik kartları */}
           <StatsCards
@@ -163,9 +164,7 @@ export default function DashboardPage() {
           />
 
           {/* Profile Management - Profil yönetimi bölümü */}
-          <ProfileManagement
-            openProfileModal={openProfileModal}
-          />
+          <ProfileManagement openProfileModal={openProfileModal} />
 
           {/* Recent Activity - Son aktiviteler bölümü */}
           <RecentActivity
@@ -179,8 +178,8 @@ export default function DashboardPage() {
 
       {/* Mobile Overlay - Mobil overlay (sidebar arka planı) */}
       {sidebarOpen && (
-        <div 
-          className="fixed inset-0 z-40 bg-cosmic-black/80 md:hidden"
+        <div
+          className='fixed inset-0 z-40 bg-cosmic-black/80 md:hidden'
           onClick={() => setSidebarOpen(false)} // Overlay'e tıklayınca sidebar'ı kapat
         />
       )}
@@ -206,7 +205,9 @@ export default function DashboardPage() {
         onEdit={() => setEditing(true)} // Düzenleme modunu aç
         onCancelEdit={() => setEditing(false)} // Düzenleme modunu kapat
         onSave={handleSaveProfile} // Profil kaydetme işlemi
-        onFormChange={(field, value) => setEditForm(prev => ({ ...prev, [field]: value }))} // Form değişikliklerini işle
+        onFormChange={(field, value) =>
+          setEditForm(prev => ({ ...prev, [field]: value }))
+        } // Form değişikliklerini işle
         currentLocale={currentLocale}
       />
 

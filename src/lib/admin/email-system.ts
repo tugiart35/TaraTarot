@@ -122,10 +122,14 @@ export class EmailSystemManager {
   }
 
   // SMTP ayarlarını kaydet
-  static async saveEmailSettings(settingsData: CreateEmailSettingsData): Promise<EmailSettings | null> {
+  static async saveEmailSettings(
+    settingsData: CreateEmailSettingsData
+  ): Promise<EmailSettings | null> {
     try {
       // Mevcut kullanıcıyı al
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (!user) {
         throw new Error('User not authenticated');
       }
@@ -142,7 +146,7 @@ export class EmailSystemManager {
         .insert({
           ...settingsData,
           active: settingsData.active ?? true,
-          created_by: user.id
+          created_by: user.id,
         })
         .select()
         .single();
@@ -153,13 +157,17 @@ export class EmailSystemManager {
       }
 
       // Audit log
-      await logAdminAction('email_settings_updated' as AuditAction, 'email_settings' as ResourceType, {
-        metadata: {
-          smtpHost: settingsData.smtp_host,
-          smtpPort: settingsData.smtp_port,
-          fromEmail: settingsData.from_email
+      await logAdminAction(
+        'email_settings_updated' as AuditAction,
+        'email_settings' as ResourceType,
+        {
+          metadata: {
+            smtpHost: settingsData.smtp_host,
+            smtpPort: settingsData.smtp_port,
+            fromEmail: settingsData.from_email,
+          },
         }
-      });
+      );
 
       return data;
     } catch (error) {
@@ -169,36 +177,42 @@ export class EmailSystemManager {
   }
 
   // SMTP bağlantısını test et
-  static async testSMTPConnection(settingsData: CreateEmailSettingsData): Promise<{ success: boolean; message: string }> {
+  static async testSMTPConnection(
+    settingsData: CreateEmailSettingsData
+  ): Promise<{ success: boolean; message: string }> {
     try {
       // Test email gönder
       const testResult = await this.sendTestEmail(settingsData);
-      
+
       if (testResult.success) {
-        return { 
-          success: true, 
-          message: 'SMTP bağlantısı başarılı! Test email gönderildi.' 
+        return {
+          success: true,
+          message: 'SMTP bağlantısı başarılı! Test email gönderildi.',
         };
       } else {
-        return { 
-          success: false, 
-          message: `SMTP test başarısız: ${testResult.message}` 
+        return {
+          success: false,
+          message: `SMTP test başarısız: ${testResult.message}`,
         };
       }
     } catch (error) {
       console.error('EmailSystemManager.testSMTPConnection error:', error);
-      return { 
-        success: false, 
-        message: `SMTP test hatası: ${(error as Error).message}` 
+      return {
+        success: false,
+        message: `SMTP test hatası: ${(error as Error).message}`,
       };
     }
   }
 
   // Test email gönder
-  private static async sendTestEmail(settingsData: CreateEmailSettingsData): Promise<{ success: boolean; message: string }> {
+  private static async sendTestEmail(
+    settingsData: CreateEmailSettingsData
+  ): Promise<{ success: boolean; message: string }> {
     try {
       // Mevcut kullanıcıyı al
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (!user) {
         throw new Error('User not authenticated');
       }
@@ -229,7 +243,7 @@ export class EmailSystemManager {
               </div>
             </body>
           </html>
-        `
+        `,
       };
 
       // Email gönderim Edge Function'ını çağır
@@ -240,8 +254,8 @@ export class EmailSystemManager {
         },
         body: JSON.stringify({
           ...testEmail,
-          smtpSettings: settingsData
-        })
+          smtpSettings: settingsData,
+        }),
       });
 
       if (!response.ok) {
@@ -249,17 +263,15 @@ export class EmailSystemManager {
       }
 
       const result = await response.json();
-      
+
       if (result.success) {
         // Email log kaydet
-        await supabase
-          .from('email_logs')
-          .insert({
-            to_email: testEmail.to,
-            subject: testEmail.subject,
-            status: 'sent',
-            sent_at: new Date().toISOString()
-          });
+        await supabase.from('email_logs').insert({
+          to_email: testEmail.to,
+          subject: testEmail.subject,
+          status: 'sent',
+          sent_at: new Date().toISOString(),
+        });
 
         return { success: true, message: 'Test email başarıyla gönderildi!' };
       } else {
@@ -267,9 +279,9 @@ export class EmailSystemManager {
       }
     } catch (error) {
       console.error('EmailSystemManager.sendTestEmail error:', error);
-      return { 
-        success: false, 
-        message: `Test email gönderim hatası: ${(error as Error).message}` 
+      return {
+        success: false,
+        message: `Test email gönderim hatası: ${(error as Error).message}`,
       };
     }
   }
@@ -295,10 +307,14 @@ export class EmailSystemManager {
   }
 
   // Email template oluştur
-  static async createEmailTemplate(templateData: CreateEmailTemplateData): Promise<EmailTemplate | null> {
+  static async createEmailTemplate(
+    templateData: CreateEmailTemplateData
+  ): Promise<EmailTemplate | null> {
     try {
       // Mevcut kullanıcıyı al
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (!user) {
         throw new Error('User not authenticated');
       }
@@ -308,7 +324,7 @@ export class EmailSystemManager {
         .insert({
           ...templateData,
           active: templateData.active ?? true,
-          created_by: user.id
+          created_by: user.id,
         })
         .select()
         .single();
@@ -319,12 +335,16 @@ export class EmailSystemManager {
       }
 
       // Audit log
-      await logAdminAction('email_template_created' as AuditAction, 'email_templates' as ResourceType, {
-        metadata: {
-          templateName: templateData.name,
-          templateType: templateData.template_type
+      await logAdminAction(
+        'email_template_created' as AuditAction,
+        'email_templates' as ResourceType,
+        {
+          metadata: {
+            templateName: templateData.name,
+            templateType: templateData.template_type,
+          },
         }
-      });
+      );
 
       return data;
     } catch (error) {
@@ -334,10 +354,15 @@ export class EmailSystemManager {
   }
 
   // Email template güncelle
-  static async updateEmailTemplate(id: string, templateData: Partial<CreateEmailTemplateData>): Promise<EmailTemplate | null> {
+  static async updateEmailTemplate(
+    id: string,
+    templateData: Partial<CreateEmailTemplateData>
+  ): Promise<EmailTemplate | null> {
     try {
       // Mevcut kullanıcıyı al
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (!user) {
         throw new Error('User not authenticated');
       }
@@ -346,7 +371,7 @@ export class EmailSystemManager {
         .from('email_templates')
         .update({
           ...templateData,
-          updated_at: new Date().toISOString()
+          updated_at: new Date().toISOString(),
         })
         .eq('id', id)
         .select()
@@ -358,12 +383,16 @@ export class EmailSystemManager {
       }
 
       // Audit log
-      await logAdminAction('email_template_updated' as AuditAction, 'email_templates' as ResourceType, {
-        metadata: {
-          templateId: id,
-          updatedFields: Object.keys(templateData)
+      await logAdminAction(
+        'email_template_updated' as AuditAction,
+        'email_templates' as ResourceType,
+        {
+          metadata: {
+            templateId: id,
+            updatedFields: Object.keys(templateData),
+          },
         }
-      });
+      );
 
       return data;
     } catch (error) {
@@ -376,7 +405,9 @@ export class EmailSystemManager {
   static async deleteEmailTemplate(id: string): Promise<boolean> {
     try {
       // Mevcut kullanıcıyı al
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (!user) {
         throw new Error('User not authenticated');
       }
@@ -399,13 +430,17 @@ export class EmailSystemManager {
       }
 
       // Audit log
-      await logAdminAction('email_template_deleted' as AuditAction, 'email_templates' as ResourceType, {
-        metadata: {
-          templateId: id,
-          templateName: templateData?.name,
-          templateType: templateData?.template_type
+      await logAdminAction(
+        'email_template_deleted' as AuditAction,
+        'email_templates' as ResourceType,
+        {
+          metadata: {
+            templateId: id,
+            templateName: templateData?.name,
+            templateType: templateData?.template_type,
+          },
         }
-      });
+      );
 
       return true;
     } catch (error) {
@@ -436,9 +471,12 @@ export class EmailSystemManager {
   }
 
   // Template değişkenlerini işle
-  static processTemplateVariables(template: string, variables: Record<string, any>): string {
+  static processTemplateVariables(
+    template: string,
+    variables: Record<string, any>
+  ): string {
     let processedTemplate = template;
-    
+
     // {{variable}} formatındaki değişkenleri işle
     Object.entries(variables).forEach(([key, value]) => {
       const regex = new RegExp(`{{${key}}}`, 'g');
@@ -454,7 +492,7 @@ export class EmailSystemManager {
       const defaultTemplates = [
         {
           name: 'Hoş Geldin Emaili',
-          subject: 'Busbuskimki Tarot\'a Hoş Geldiniz!',
+          subject: "Busbuskimki Tarot'a Hoş Geldiniz!",
           body: `
             <html>
               <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
@@ -474,7 +512,7 @@ export class EmailSystemManager {
             </html>
           `,
           template_type: 'welcome',
-          variables: { userName: 'Kullanıcı Adı' }
+          variables: { userName: 'Kullanıcı Adı' },
         },
         {
           name: 'Bakım Modu Bildirimi',
@@ -502,14 +540,14 @@ export class EmailSystemManager {
             </html>
           `,
           template_type: 'maintenance',
-          variables: { 
+          variables: {
             userName: 'Kullanıcı Adı',
             maintenanceDate: 'Bakım Tarihi',
             startTime: 'Başlangıç Saati',
             endTime: 'Bitiş Saati',
-            duration: 'Süre'
-          }
-        }
+            duration: 'Süre',
+          },
+        },
       ];
 
       for (const template of defaultTemplates) {

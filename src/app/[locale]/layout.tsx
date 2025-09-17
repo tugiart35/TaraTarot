@@ -38,12 +38,8 @@ export default async function LocaleLayout({
   params,
 }: LocaleLayoutProps) {
   await params;
-  
-  return (
-    <PageTrackingProvider>
-      {children}
-    </PageTrackingProvider>
-  );
+
+  return <PageTrackingProvider>{children}</PageTrackingProvider>;
 }
 
 // Metadata generation
@@ -53,7 +49,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  
+
   return {
     title: {
       template: '%s | Tarot App',

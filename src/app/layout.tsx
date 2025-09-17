@@ -37,7 +37,7 @@ export { viewport };
 // Ana layout fonksiyonu
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang={defaultLocale} className='h-full'>
+    <html lang={defaultLocale} className='h-full' data-scroll-behavior="smooth">
       <head>
         <HeadTags />
         {/* Google Analytics - G-Y2HESMXJXD */}

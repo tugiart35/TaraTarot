@@ -215,13 +215,23 @@
         "title": "Tarot Okuması",
         "description": "Kartların gizemli dünyasında yolculuğa çıkın. Geçmiş, şimdi ve geleceğinizi keşfedin.",
         "button": "Tarot Okuması",
-        "features": ["Aşk Açılımı", "Kariyer Rehberliği", "Günlük Rehberlik", "Detaylı Yorumlama"]
+        "features": [
+          "Aşk Açılımı",
+          "Kariyer Rehberliği",
+          "Günlük Rehberlik",
+          "Detaylı Yorumlama"
+        ]
       },
       "numerology": {
         "title": "Numeroloji Analizi",
         "description": "Sayıların sırlarını keşfedin. Yaşam yolunuzu, ifade sayınızı ve ruhsal arzunuzu öğrenin.",
         "button": "Numeroloji Analizi",
-        "features": ["Yaşam Yolu", "İfade Sayısı", "Ruhsal Arzu", "Günlük Sayı"]
+        "features": [
+          "Yaşam Yolu",
+          "İfade Sayısı",
+          "Ruhsal Arzu",
+          "Günlük Sayı"
+        ]
       }
     },
     "features": {
@@ -462,19 +472,6 @@
     "creditBalance": "Kredi Bakiyesi",
     "creditPackages": "Kredi Paketleri",
     "accountSettings": "Hesap Ayarları",
-    "creditHistory": "Kredi Geçmişi",
-    "readingHistory": "Okuma Geçmişi",
-    "statistics": "İstatistikler",
-    "totalReadings": "Toplam Okuma",
-    "membershipDuration": "Üyelik Süresi",
-    "userLevel": "Kullanıcı Seviyesi",
-    "admin": "Admin",
-    "user": "Kullanıcı",
-    "beginner": "Başlangıç",
-    "intermediate": "Orta",
-    "expert": "Uzman",
-    "readings": "Okumalar",
-    "backToDashboard": "Dashboard'a Dön",
     "creditHistory": {
       "title": "Kredi Geçmişi",
       "description": "Kredi alım, kullanım ve işlem geçmişinizi takip edin",
@@ -508,6 +505,18 @@
       "csvAmount": "Miktar",
       "csvDescription": "Açıklama"
     },
+    "readingHistory": "Okuma Geçmişi",
+    "statistics": "İstatistikler",
+    "totalReadings": "Toplam Okuma",
+    "membershipDuration": "Üyelik Süresi",
+    "userLevel": "Kullanıcı Seviyesi",
+    "admin": "Admin",
+    "user": "Kullanıcı",
+    "beginner": "Başlangıç",
+    "intermediate": "Orta",
+    "expert": "Uzman",
+    "readings": "Okumalar",
+    "backToDashboard": "Dashboard'a Dön",
     "packages": {
       "title": "Kredi Paketleri",
       "pageTitle": "Kredi Paketleri",
@@ -554,61 +563,6 @@
       "purchaseError": "Paket satın alınırken bir hata oluştu. Lütfen tekrar deneyin.",
       "profileError": "Profil bilgileri yüklenemedi"
     },
-    "statistics": {
-      "title": "İstatistikler & İçgörüler",
-      "subtitle": "Mistik yolculuğunuzda ilerlemenizi takip edin",
-      "calculating": "İstatistikler hesaplanıyor...",
-      "refresh": "Yenile",
-      "backToDashboard": "Dashboard'a Dön",
-      "insightsTitle": "Mistik İçgörüleriniz",
-      "insightsDesc": "Numerolojik rehberliğiniz ve okuma alışkanlıklarınızla ilgili derinlemesine analiz",
-      "overview": "Genel Bakış",
-      "numerology": "Numeroloji",
-      "patterns": "Desenler",
-      "totalReadings": "Toplam Okuma",
-      "thisMonth": "Bu ay",
-      "vsLastMonth": "vs geçen ay",
-      "totalCreditsSpent": "Toplam Harcanan Kredi",
-      "average": "Ortalama",
-      "perReading": "okuma",
-      "dailyStreak": "Günlük Seri",
-      "longest": "En uzun",
-      "days": "gün",
-      "activeStreak": "Aktif seri",
-      "mostExpensiveReading": "En Pahalı Okuma",
-      "creditCost": "Kredi maliyeti",
-      "premiumReading": "Premium okuma",
-      "readingHabits": "Okuma Alışkanlıkları",
-      "trendAnalysis": "Trend Analizi",
-      "readingTypes": "Okuma Türleri",
-      "monthlyTrend": "Aylık Trend (Son 6 Ay)",
-      "weeklyActivity": "Haftalık Aktivite (Son 7 Gün)",
-      "personalCycles": "Kişisel Döngüler",
-      "lifePinnacles": "Yaşam Zirveleri",
-      "lifeChallenges": "Yaşam Zorlukları",
-      "activityPatterns": "Aktivite Desenleri",
-      "achievementsGoals": "Başarılar & Hedefler",
-      "readingTypesDistribution": "Okuma Türleri Dağılımı",
-      "personalInsights": "Kişisel İçgörüler & Öneriler",
-      "numerologyProfile": "Numeroloji Profili",
-      "name": "İsim",
-      "surname": "Soyisim",
-      "notSpecified": "Belirtilmemiş",
-      "birthDate": "Doğum Tarihi",
-      "fullNameRecommended": "Numeroloji hesaplamaları için tam isim soyisim önerilir",
-      "lifePath": "Yaşam Yolu",
-      "expressionDestiny": "İfade/Kader",
-      "soulUrge": "Ruh Arzusu",
-      "personality": "Kişilik",
-      "birthdayNumber": "Doğum Günü",
-      "maturity": "Olgunluk",
-      "masterNumber": "Master Sayı",
-      "personalYear": "Kişisel Yıl",
-      "personalMonth": "Kişisel Ay",
-      "personalDay": "Kişisel Gün",
-      "analysis": "Analiz",
-      "recommendations": "Öneriler"
-    },
     "readingsPage": {
       "title": "Okumalarım",
       "subtitle": "Tüm mistik deneyimleriniz",
@@ -650,7 +604,6 @@
         "download": "İndir"
       }
     },
-    "statistics": "İstatistikler",
     "settings": "Ayarlar",
     "profile": "Profil",
     "signOut": "Çıkış Yap",
@@ -828,36 +781,133 @@
     "accountDeleteError": "Hesap silinirken hata oluştu."
   },
   "tarotPage": {
-    "title": "Kaderinizi Keşfedin",
-    "lastReading": "Son Okuma",
-    "cardsDrawn": "kart çekildi",
     "loveSpread": {
       "name": "Aşk Açılımı",
-      "description": "İlişkiler ve duygusal bağlar için 4 kartlık özel açılım",
-      "summary": "Aşk Hayatı Özeti",
-      "summaryText": "Bu açılım, {card1} kartının temsil ettiği kişiyle olan ilişkinizin dinamiklerini gösteriyor. Aranızdaki fiziksel ({card2}) ve duygusal ({card3}) bağların ardından, ilişkinizin uzun vadeli potansiyeli {card4} kartıyla aydınlanıyor.",
+      "description": "Aşk ve ilişkiler için 3 kartlık özel açılım",
+      "summary": "Aşk Açılımı Özeti",
+      "summaryText": "Bu açılım, geçmişinizi ({card1}), şimdinizi ({card2}) ve geleceğinizi ({card3}) gösteriyor.",
       "detailedReading": {
         "title": "💕 Aşk Tarot Açılımı - Detaylı Kişisel Okuma 💕",
-        "concern": "💭 Endişeniz",
+        "concern": "💭 Aşk Endişeniz",
         "understanding": "🎯 Anlamak İstedikleriniz",
-        "emotional": "💫 Duygusal Durumunuz",
+        "emotional": "💫 Mevcut Aşk Durumunuz",
         "generalMessage": "AŞK YOLCULUĞUNUZ İÇİN GENEL MESAJ",
-        "message": "Bu kartlar, aşk yolculuğunuzda şunu gösteriyor: İlişki dinamiklerinizde önemli bir dönüm noktadasınız.\n\n{card1} kartı, ilgilendiğiniz kişinin enerjisini yansıtırken, {card2} aranızdaki fiziksel ve cinsel çekimi gösteriyor.\n\n{card3} kartı duygusal bağınızı, {card4} ise ilişkinizin uzun vadeli potansiyelini ortaya koyuyor.",
-        "guideMessage": "Aşk rehberinizin mesajı: \"En derin bağlar, karşılıklı anlayış ve açık iletişimle kurulur. Kalbinizin sesini dinleyin.\"",
+        "message": "Bu kartlar, aşk yolculuğunuzda şunu gösteriyor: Kalbinizde önemli bir dönüm noktasındasınız.\n\n{card1} kartı, geçmişinizi yansıtırken, {card2} şimdinizi gösteriyor.\n\n{card3} kartı ise geleceğinizdeki aşk potansiyelini ortaya koyuyor.",
+        "guideMessage": "Aşk rehberinizin mesajı: \"En güzel aşklar, sabır ve anlayışla büyür. Kalbinizin sesini dinleyin.\"",
         "dateMessage": "Bu okuma {date} tarihinde size özel olarak hazırlanmıştır."
       }
     },
-    "positions": {
-      "personOfInterest": "İlgi Duyduğun Kişi",
-      "physicalConnection": "Fiziksel/Cinsel Bağlantı", 
-      "emotionalConnection": "Duygusal/Ruhsal Bağlantı",
-      "longTermOutcome": "Uzun Vadeli Sonuç"
+    "careerSpread": {
+      "name": "Kariyer Açılımı",
+      "description": "Kariyer ve iş hayatı için 4 kartlık özel açılım",
+      "summary": "Kariyer Açılımı Özeti",
+      "summaryText": "Bu açılım, mevcut durumunuzu ({card1}), fırsatlarınızı ({card2}), engellerinizi ({card3}) ve tavsiyelerinizi ({card4}) gösteriyor.",
+      "detailedReading": {
+        "title": "💼 Kariyer Tarot Açılımı - Detaylı Kişisel Okuma 💼",
+        "concern": "💭 Kariyer Endişeniz",
+        "understanding": "🎯 Anlamak İstedikleriniz",
+        "emotional": "💫 Mevcut Kariyer Durumunuz",
+        "generalMessage": "KARİYER YOLCULUĞUNUZ İÇİN GENEL MESAJ",
+        "message": "Bu kartlar, kariyer yolculuğunuzda şunu gösteriyor: Profesyonel hayatınızda önemli bir dönüm noktasındasınız.\n\n{card1} kartı, mevcut durumunuzu yansıtırken, {card2} fırsatlarınızı gösteriyor.\n\n{card3} kartı engellerinizi, {card4} kartı ise tavsiyelerinizi ortaya koyuyor.",
+        "guideMessage": "Kariyer rehberinizin mesajı: \"Başarı, hazırlık ve fırsatın buluştuğu yerde doğar. Hedeflerinize odaklanın.\"",
+        "dateMessage": "Bu okuma {date} tarihinde size özel olarak hazırlanmıştır."
+      }
     },
-    "positionDescriptions": {
-      "personOfInterest": "Hakkında soru sorduğun kişi",
-      "physicalConnection": "Fiziksel ve cinsel bağlantınız",
-      "emotionalConnection": "Duygusal ve ruhsal bağlantınız", 
-      "longTermOutcome": "İlişkinin uzun vadeli sonucu"
+    "problemSolvingSpread": {
+      "name": "Problem Çözme Açılımı",
+      "description": "Problem analizi ve çözüm için 10 kartlık detaylı açılım",
+      "summary": "Problem Çözme Özeti",
+      "summaryText": "Bu açılım, probleminizi ({card1}), çözüm yollarınızı ({card2}), engellerinizi ({card3}) ve sonucunuzu ({card4}) gösteriyor.",
+      "detailedReading": {
+        "title": "🔍 Problem Çözme Tarot Açılımı - Detaylı Kişisel Okuma 🔍",
+        "concern": "💭 Problem Endişeniz",
+        "understanding": "🎯 Anlamak İstedikleriniz",
+        "emotional": "💫 Mevcut Problem Durumunuz",
+        "generalMessage": "PROBLEM ÇÖZME YOLCULUĞUNUZ İÇİN GENEL MESAJ",
+        "message": "Bu kartlar, problem çözme yolculuğunuzda şunu gösteriyor: Zorlukların üstesinden gelme konusunda önemli bir dönüm noktasındasınız.\n\n{card1} kartı, probleminizi yansıtırken, {card2} çözüm yollarınızı gösteriyor.\n\n{card3} kartı engellerinizi, {card4} kartı ise sonucunuzu ortaya koyuyor.",
+        "guideMessage": "Problem çözme rehberinizin mesajı: \"Her problem, çözümü içinde barındırır. Sabır ve akıllıca hareket edin.\"",
+        "dateMessage": "Bu okuma {date} tarihinde size özel olarak hazırlanmıştır."
+      }
+    },
+    "situationAnalysisSpread": {
+      "name": "Durum Analizi Açılımı",
+      "description": "Durum analizi ve değerlendirme için 7 kartlık özel açılım",
+      "summary": "Durum Analizi Özeti",
+      "summaryText": "Bu açılım, mevcut durumunuzu ({card1}), geçmişinizi ({card2}), geleceğinizi ({card3}), tavsiyelerinizi ({card4}), etkilerinizi ({card5}), engellerinizi ({card6}) ve sonucunuzu ({card7}) gösteriyor.",
+      "detailedReading": {
+        "title": "🔍 Durum Analizi Tarot Açılımı - Detaylı Kişisel Okuma 🔍",
+        "concern": "💭 Durum Analizi Endişeniz",
+        "understanding": "🎯 Anlamak İstedikleriniz",
+        "emotional": "💫 Mevcut Durum Analizi Durumunuz",
+        "generalMessage": "DURUM ANALİZİ YOLCULUĞUNUZ İÇİN GENEL MESAJ",
+        "message": "Bu kartlar, durum analizi yolculuğunuzda şunu gösteriyor: Mevcut durumunuzu anlama ve değerlendirme sürecinde önemli bir dönüm noktasındasınız.\n\n{card1} kartı, mevcut durumunuzu yansıtırken, {card2} geçmişinizi gösteriyor.\n\n{card3} kartı geleceğinizi, {card4} tavsiyelerinizi, {card5} etkilerinizi, {card6} engellerinizi, {card7} ise sonucunuzu ortaya koyuyor.",
+        "guideMessage": "Durum analizi rehberinizin mesajı: \"Mevcut durumu objektif bir şekilde değerlendirmek, doğru kararlar almanın ilk adımıdır.\"",
+        "dateMessage": "Bu okuma {date} tarihinde size özel olarak hazırlanmıştır."
+      }
+    },
+    "relationshipAnalysisSpread": {
+      "name": "İlişki Analizi Açılımı",
+      "description": "İlişki analizi ve değerlendirme için 7 kartlık özel açılım",
+      "summary": "İlişki Analizi Özeti",
+      "summaryText": "Bu açılım, ilişkinizin mevcut durumunu ({card1}) ve sizin hislerinizi ({card2}) analiz ediyor. Sizin beklentileriniz ({card3}), tavsiyeler ({card4}) ve yol haritası ({card5}) ile partnerinizin beklentileri ({card6}) ve hisleri ({card7}) sunarak kapsamlı bir ilişki değerlendirmesi yapıyor.",
+      "detailedReading": {
+        "title": "💕 İlişki Analizi Tarot Açılımı - Detaylı Kişisel Okuma 💕",
+        "concern": "💭 İlişki Analizi Endişeniz",
+        "understanding": "🎯 Anlamak İstedikleriniz",
+        "emotional": "💫 Mevcut İlişki Durumunuz",
+        "generalMessage": "İLİŞKİ ANALİZİ YOLCULUĞUNUZ İÇİN GENEL MESAJ",
+        "message": "Bu kartlar, ilişki analizi yolculuğunuzda şunu gösteriyor: İlişkinizi anlama ve değerlendirme sürecinde önemli bir dönüm noktasındasınız.\n\n{card1} kartı, mevcut durumu yansıtırken, {card2} sizin hislerinizi gösteriyor.\n\n{card3} kartı sizin beklentilerinizi, {card4} tavsiyeleri, {card5} yol haritasını, {card6} partnerinizin beklentilerini, {card7} ise partnerinizin hislerini ortaya koyuyor.",
+        "guideMessage": "İlişki analizi rehberinizin mesajı: \"En güçlü ilişkiler, karşılıklı anlayış, açık iletişim ve sevgi ile kurulur. Kalbinizin sesini dinleyin.\"",
+        "dateMessage": "Bu okuma {date} tarihinde size özel olarak hazırlanmıştır."
+      }
+    },
+    "relationshipProblemsSpread": {
+      "name": "İlişki Sorunları Açılımı",
+      "description": "İlişki sorunları analizi ve çözüm için 9 kartlık özel açılım",
+      "summary": "İlişki Sorunları Özeti",
+      "summaryText": "Bu açılım, ilişkinizdeki ana sorunu ({card1}), çelişkileri ({card2}), kişisel sorumluluğunuzu ({card3}), kendini sorgulamanızı ({card4}), geçmiş deneyimlerinizi ({card5}), karşılıklı etkileşiminizi ({card6}), dış etkenleri ({card7}), maddi faktörleri ({card8}) ve gelecek öngörünüzü ({card9}) analiz ediyor.",
+      "detailedReading": {
+        "title": "💔 İlişki Sorunları Tarot Açılımı - Detaylı Kişisel Okuma 💔",
+        "concern": "💭 İlişki Sorunları Endişeniz",
+        "understanding": "🎯 Anlamak İstedikleriniz",
+        "emotional": "💫 Mevcut İlişki Sorunları Durumunuz",
+        "generalMessage": "İLİŞKİ SORUNLARI YOLCULUĞUNUZ İÇİN GENEL MESAJ",
+        "message": "Bu kartlar, ilişki sorunları yolculuğunuzda şunu gösteriyor: İlişkinizdeki sorunları anlama ve çözme sürecinde önemli bir dönüm noktasındasınız.\n\n{card1} kartı, ana sorunu yansıtırken, {card2} çelişkileri gösteriyor.\n\n{card3} kartı kişisel sorumluluğunuzu, {card4} kendini sorgulamanızı, {card5} geçmiş deneyimlerinizi, {card6} karşılıklı etkileşiminizi, {card7} dış etkenleri, {card8} maddi faktörleri, {card9} ise gelecek öngörünüzü ortaya koyuyor.",
+        "guideMessage": "İlişki sorunları rehberinizin mesajı: \"Sorunlar, çözümlerin tohumudur. Sabır, anlayış ve karşılıklı saygı ile her sorun çözülebilir.\"",
+        "dateMessage": "Bu okuma {date} tarihinde size özel olarak hazırlanmıştır."
+      }
+    },
+    "marriageSpread": {
+      "name": "Evlilik Açılımı",
+      "description": "Evlilik ve eş bulma için 10 kartlık özel açılım",
+      "summary": "Evlilik Açılımı Özeti",
+      "summaryText": "Bu açılım, evlilik potansiyelinizi ({card1}), ideal eşinizi ({card2}), anlaşma durumunuzu ({card3}), tanışma yollarınızı ({card4}), aile onayını ({card5}), benzerliklerinizi ({card6}), bağlanma isteğinizi ({card7}), mali uyumunuzu ({card8}), bekleme sürecinizi ({card9}) ve sonucunuzu ({card10}) gösteriyor.",
+      "detailedReading": {
+        "title": "💒 Evlilik Tarot Açılımı - Detaylı Kişisel Okuma 💒",
+        "concern": "💭 Evlilik Endişeniz",
+        "understanding": "🎯 Anlamak İstedikleriniz",
+        "emotional": "💫 Mevcut Evlilik Durumunuz",
+        "generalMessage": "EVLİLİK YOLCULUĞUNUZ İÇİN GENEL MESAJ",
+        "message": "Bu kartlar, evlilik yolculuğunuzda şunu gösteriyor: Doğru kişiyi bulma ve evlilik sürecinde önemli bir dönüm noktasındasınız.\n\n{card1} kartı, evlilik potansiyelinizi yansıtırken, {card2} ideal eşinizi gösteriyor.\n\n{card3} kartı anlaşma durumunuzu, {card4} tanışma yollarınızı, {card5} aile onayını, {card6} benzerliklerinizi, {card7} bağlanma isteğinizi, {card8} mali uyumunuzu, {card9} bekleme sürecinizi, {card10} ise sonucunuzu ortaya koyuyor.",
+        "guideMessage": "Evlilik rehberinizin mesajı: \"Doğru kişi, doğru zamanda karşınıza çıkacak. Sabırlı olun ve kendinizi geliştirin.\"",
+        "dateMessage": "Bu okuma {date} tarihinde size özel olarak hazırlanmıştır."
+      }
+    },
+    "newLoverSpread": {
+      "name": "Yeni Bir Sevgili Açılımı",
+      "description": "Yeni bir aşk ilişkisi için 6 kartlık özel açılım",
+      "summary": "Yeni Bir Sevgili Açılımı Özeti",
+      "summaryText": "Bu açılım, yeni bir ilişki potansiyelinizi ({card1}), gelecekteki partnerinizin burç özelliklerini ({card2}), uyumunuzu ({card3}), ilişkinizin sürekliliğini ({card4}), ruh eşi potansiyelinizi ({card5}) ve dileğinizin gerçekleşme olasılığını ({card6}) gösteriyor.",
+      "detailedReading": {
+        "title": "💕 Yeni Bir Sevgili Tarot Açılımı - Detaylı Kişisel Okuma 💕",
+        "concern": "💭 Aşk Endişeniz",
+        "understanding": "🎯 Anlamak İstedikleriniz",
+        "emotional": "💫 Mevcut Duygusal Durumunuz",
+        "generalMessage": "YENİ BİR SEVGİLİ YOLCULUĞUNUZ İÇİN GENEL MESAJ",
+        "message": "Bu kartlar, yeni bir aşk yolculuğunuzda şunu gösteriyor: Gelecekteki aşk ilişkinizde önemli bir dönüm noktasındasınız.\n\n{card1} kartı, yeni bir ilişki potansiyelinizi yansıtırken, {card2} gelecekteki partnerinizin burç özelliklerini gösteriyor.\n\n{card3} kartı uyumunuzu, {card4} ilişkinizin sürekliliğini, {card5} ruh eşi potansiyelinizi, {card6} ise dileğinizin gerçekleşme olasılığını ortaya koyuyor.",
+        "guideMessage": "Aşk rehberinizin mesajı: \"Doğru kişi, doğru zamanda karşınıza çıkacak. Kalbinizi açık tutun ve aşkın büyüsüne inanın.\"",
+        "dateMessage": "Bu okuma {date} tarihinde size özel olarak hazırlanmıştır."
+      }
     }
   },
   "seo": {
@@ -889,6 +939,49 @@
       "loggingIn": "🔐 Giriş yapılıyor...",
       "registering": "📝 Kayıt oluşturuluyor...",
       "checkingEmail": "📧 E-posta kontrol ediliyor...",
+      "loginTitle": "Giriş Yap",
+      "registerTitle": "Kayıt Ol",
+      "loginSubtitle": "Hesabınıza giriş yapın",
+      "registerSubtitle": "Yeni hesap oluşturun",
+      "email": "E-posta",
+      "password": "Şifre",
+      "confirmPassword": "Şifre Onayı",
+      "firstName": "Ad",
+      "lastName": "Soyad",
+      "birthDate": "Doğum Tarihi",
+      "gender": "Cinsiyet",
+      "selectGender": "Cinsiyet seçin",
+      "male": "Erkek",
+      "female": "Kadın",
+      "other": "Diğer",
+      "rememberMe": "Beni hatırla",
+      "forgotPassword": "Şifremi unuttum",
+      "login": "Giriş Yap",
+      "register": "Kayıt Ol",
+      "noAccount": "Hesabınız yok mu? Kayıt olun",
+      "hasAccount": "Zaten hesabınız var mı? Giriş yapın",
+      "resetPassword": "Şifre Sıfırla",
+      "cancel": "İptal",
+      "sendResetEmail": "Sıfırlama E-postası Gönder",
+      "validating": "Doğrulanıyor...",
+      "redirecting": "Yönlendiriliyor...",
+      "successLogin": "Başarıyla giriş yapıldı!",
+      "successRegister": "Hesap başarıyla oluşturuldu!",
+      "errorOccurred": "Bir hata oluştu",
+      "emailRequired": "E-posta adresi gerekli",
+      "emailInvalid": "Geçersiz e-posta adresi",
+      "passwordRequired": "Şifre gerekli",
+      "passwordMinLength": "Şifre en az 6 karakter olmalı",
+      "passwordMismatch": "Şifreler eşleşmiyor",
+      "nameRequired": "Ad gerekli",
+      "surnameRequired": "Soyad gerekli",
+      "birthDateRequired": "Doğum tarihi gerekli",
+      "genderRequired": "Cinsiyet seçimi gerekli",
+      "invalidCredentials": "Geçersiz giriş bilgileri",
+      "userAlreadyExists": "Bu e-posta adresi zaten kayıtlı",
+      "databaseError": "Veritabanı hatası oluştu",
+      "emailNotConfirmed": "E-posta adresi onaylanmamış",
+      "tooManyRequests": "Çok fazla deneme yapıldı",
       "checkingAuth": "🔍 Giriş durumu kontrol ediliyor...",
       "validating": "✅ Doğrulanıyor...",
       "successLogin": "Giriş başarılı! Yönlendiriliyorsunuz...",
@@ -925,7 +1018,8 @@
       "facebookSignIn": "Facebook ile Giriş Yap",
       "googleSignUp": "Google ile Kayıt Ol",
       "facebookSignUp": "Facebook ile Kayıt Ol",
-      "socialLoginError": "Sosyal medya girişi başarısız oldu"
+      "socialLoginError": "Sosyal medya girişi başarısız oldu",
+      "redirecting": ""
     },
     "notice": {
       "checkEmail": "E-posta adresinizi kontrol edin ve üyeliğinizi onaylayın",
@@ -1065,7 +1159,7 @@
   },
   "language": {
     "turkish": "Türkçe",
-    "english": "English", 
+    "english": "English",
     "serbian": "Srpski"
   },
   "love": {
@@ -1102,6 +1196,22 @@
       "clearAll": "🔄 Tümünü Temizle"
     },
     "modals": {
+      "infoTitle": "Aşk Açılımı Hakkında",
+      "aboutSpread": "Açılım Hakkında",
+      "aboutSpreadText": "Bu 4 kartlık açılım, aşk hayatındaki en önemli sorulara ışık tutar. İlk kart aklındaki kişiyi, ikinci kart fiziksel ve cinsel bağınızı, üçüncü kart duygusal ve ruhsal uyumunuzu gösterir. Dördüncü kart ise ilişkinizin uzun vadeli sonucunu ortaya koyar. Böylece aşk yolculuğunuzun hem bugünü hem de geleceği hakkında bütüncül bir rehberlik sunar.",
+      "aboutSpreadText2": "İlk kart aklındaki kişiyi, ikinci kart fiziksel ve cinsel bağınızı, üçüncü kart duygusal ve ruhsal uyumunuzu gösterir. Dördüncü kart ise ilişkinizin uzun vadeli sonucunu ortaya koyar.",
+      "LoveAttention1": "ÖNEMLİ",
+      "loveAttention": "Okumayı kaydet dedikten sonra 24 saat içinde mail adresinize detaylı okumanızı iletiyor olacağım. Kart anlamları sadece bilgilendirme amaçlıdır.",
+      "detailedReading": "Sesli Okuma",
+      "detailedReadingText": "Sesli okuma ile aşk analizinizi detaylı bir ses kaydı halinde alabilirsiniz. Bu ses kaydını indirebilir ve daha sonra tekrar dinleyebilirsiniz.",
+      "writtenReading": "Yazılı Okuma",
+      "writtenReadingText": "Yazılı okuma ile aşk analizinizi detaylı bir rapor halinde alabilirsiniz. Bu raporu kaydedebilir ve daha sonra tekrar okuyabilirsiniz.",
+      "process": "Süreç",
+      "step1": "Kişisel bilgilerinizi girin",
+      "step2": "Aşk hakkında soruları yanıtlayın",
+      "step3": "4 kartı seçin ve yorumları görün",
+      "step4": "Okumayı kaydedin ve e-posta alın",
+      "continue": "Devam Et",
       "creditConfirm": "Kredi Onayı",
       "creditConfirmMessage": "Bu okuma için devam etmek istiyor musunuz?",
       "confirm": "Evet, Onaylıyorum",
@@ -1112,22 +1222,156 @@
       "redirecting": "💝 Ana sayfaya yönlendiriliyorsunuz...",
       "saveReading": "Okumayı Kaydet 💝",
       "savingReading": "Kaydediliyor..."
+    }
+  },
+  "problemSolving": {
+    "form": {
+      "personalInfo": "Kişisel Bilgileriniz",
+      "firstName": "Adınız",
+      "lastName": "Soyadınız",
+      "birthDate": "Doğum Tarihi",
+      "email": "E-posta Adresiniz",
+      "questions": "✨ Problem Çözme Açılımı Soruları ✨",
+      "concernQuestion": "Hangi konuda problem yaşıyorsunuz ve çözüm arıyorsunuz?",
+      "understandingQuestion": "Bu problem çözme açılımı ile neyi anlamak istiyorsunuz?",
+      "emotionalQuestion": "Bu problem karşısında şu anda nasıl hissediyorsunuz?",
+      "saveAndOpen": "🔍 Kaydet ve Kartları Aç",
+      "saving": "Kaydediliyor...",
+      "clearAll": "🔄 Tümünü Temizle"
     },
-    "cardGroups": {
-      "majorArcana": "Majör Arkana",
-      "cups": "Kupalar",
-      "swords": "Kılıçlar",
-      "wands": "Asalar",
-      "pentacles": "Tılsımlar"
+    "modals": {
+      "infoTitle": "Problem Çözme Açılımı Hakkında",
+      "aboutSpread": "Açılım Hakkında",
+      "aboutSpreadText": "Bu 10 kartlık açılım, yaşadığınız problemleri analiz etmek ve çözüm yolları bulmak için tasarlanmıştır. Her kart farklı bir açıdan probleminizi ele alır.",
+      "cardCount": "Kart Sayısı",
+      "cardCountText": "Bu açılımda 10 adet tarot kartı kullanılır. Her kart problemin farklı bir yönünü temsil eder.",
+      "detailedReading": "Sesli Okuma",
+      "detailedReadingText": "Kartların detaylı yorumları ve pozisyon anlamları ile birlikte kapsamlı bir analiz sunar.",
+      "writtenReading": "Yazılı Okuma",
+      "writtenReadingText": "Okuma sonuçları PDF formatında e-posta adresinize gönderilir.",
+      "process": "Süreç",
+      "step1": "Kişisel bilgilerinizi girin",
+      "step2": "Problem hakkında soruları yanıtlayın",
+      "step3": "10 kartı seçin ve yorumları görün",
+      "step4": "Okumayı kaydedin ve e-posta alın",
+      "continue": "Devam Et",
+      "creditConfirm": "Kredi Onayı",
+      "creditConfirmMessage": "Bu okuma için devam etmek istiyor musunuz?",
+      "confirm": "Evet, Onaylıyorum",
+      "cancel": "Vazgeç",
+      "processing": "İşleniyor...",
+      "successTitle": "Okuma Başarıyla Kaydedildi!",
+      "successMessage": "Problem çözme açılımınız detaylı olarak kaydedildi ve analiz edildi. Sonuçlarınızı kullanıcı panelinden görüntüleyebilirsiniz.",
+      "redirecting": "🔍 Ana sayfaya yönlendiriliyorsunuz...",
+      "saveReading": "Okumayı Kaydet 🔍",
+      "savingReading": "Kaydediliyor..."
+    }
+  },
+  "situationAnalysis": {
+    "form": {
+      "personalInfo": "Kişisel Bilgileriniz",
+      "firstName": "Adınız",
+      "lastName": "Soyadınız",
+      "birthDate": "Doğum Tarihi",
+      "email": "E-posta Adresiniz",
+      "questions": "✨ Durum Analizi Açılımı Soruları ✨",
+      "concernQuestion": "Hangi durumu analiz etmek istiyorsunuz?",
+      "understandingQuestion": "Bu durum analizi ile neyi anlamak istiyorsunuz?",
+      "emotionalQuestion": "Bu durum karşısında şu anda nasıl hissediyorsunuz?",
+      "saveAndOpen": "🔍 Kaydet ve Kartları Aç",
+      "saving": "Kaydediliyor...",
+      "clearAll": "🔄 Tümünü Temizle"
     },
-    "meanings": {
-      "theFool": {
-        "position1": {
-          "upright": "İlgi duyduğun kişi, hayata karşı çocuksu bir merak ve heyecanla dolu. Yeni başlangıçlara açık, maceracı bir ruha sahip ancak bu durum bazen plansız ve programsız olmasına neden olabilir. İlişkilere de bu özgür ruhla yaklaşır.",
-          "reversed": "Ters Fool, bu kişinin pervasız, sorumsuz veya bir ilişkiye başlamaktan korkan biri olabileceğini gösterir. Potansiyel tehlikeleri görmezden geliyor ve bağlanmaktan kaçınıyor olabilir.",
-          "keywords": ["yeni başlangıçlar", "masumiyet", "spontanlık", "risk almak", "özgür ruh"],
-          "context": "Bu kişi, aşk hayatında yeni bir sayfa açmaya hazır veya bundan korkan bir maceracı."
-        }
+    "modals": {
+      "infoTitle": "Durum Analizi Açılımı Hakkında",
+      "aboutSpread": "Açılım Hakkında",
+      "aboutSpreadText": "Bu 7 kartlık açılım, yaşadığınız durumu derinlemesine analiz etmek için tasarlanmıştır. Geçmiş, şimdi, gizli etkenler ve gelecek hakkında kapsamlı bilgi sunar.",
+      "cardCount": "Kart Sayısı",
+      "cardCountText": "Bu açılımda 7 adet tarot kartı kullanılır. Her kart durumun farklı bir yönünü temsil eder.",
+      "detailedReading": "Sesli Okuma",
+      "detailedReadingText": "Kartların detaylı yorumları ve pozisyon anlamları ile birlikte kapsamlı bir analiz sunar.",
+      "writtenReading": "Yazılı Okuma",
+      "writtenReadingText": "Okuma sonuçları PDF formatında e-posta adresinize gönderilir.",
+      "process": "Süreç",
+      "step1": "Kişisel bilgilerinizi girin",
+      "step2": "Durum hakkında soruları yanıtlayın",
+      "step3": "7 kartı seçin ve yorumları görün",
+      "step4": "Okumayı kaydedin ve e-posta alın",
+      "continue": "Devam Et",
+      "creditConfirm": "Kredi Onayı",
+      "creditConfirmMessage": "Bu okuma için devam etmek istiyor musunuz?",
+      "confirm": "Evet, Onaylıyorum",
+      "cancel": "Vazgeç",
+      "processing": "İşleniyor...",
+      "successTitle": "Okuma Başarıyla Kaydedildi!",
+      "successMessage": "Durum analizi açılımınız detaylı olarak kaydedildi ve analiz edildi. Sonuçlarınızı kullanıcı panelinden görüntüleyebilirsiniz.",
+      "redirecting": "🔍 Ana sayfaya yönlendiriliyorsunuz...",
+      "saveReading": "Okumayı Kaydet 🔍",
+      "savingReading": "Kaydediliyor..."
+    }
+  },
+  "relationshipAnalysis": {
+    "form": {
+      "personalInfo": "Kişisel Bilgileriniz",
+      "firstName": "Adınız",
+      "lastName": "Soyadınız",
+      "birthDate": "Doğum Tarihi",
+      "email": "E-posta Adresiniz",
+      "questions": "💕 İlişki Analizi Açılımı Soruları 💕",
+      "concernQuestion": "Hangi ilişki durumunu analiz etmek istiyorsunuz?",
+      "understandingQuestion": "Bu ilişki analizi ile neyi anlamak istiyorsunuz?",
+      "emotionalQuestion": "Bu ilişki karşısında şu anda nasıl hissediyorsunuz?",
+      "saveAndOpen": "💕 Kaydet ve Kartları Aç",
+      "saving": "Kaydediliyor...",
+      "clearAll": "🔄 Tümünü Temizle"
+    },
+    "modals": {
+      "infoTitle": "İlişki Analizi Açılımı Hakkında",
+      "aboutSpread": "Açılım Hakkında",
+      "aboutSpreadText": "Bu 7 kartlık açılım, ilişkinizi derinlemesine analiz etmek için tasarlanmıştır. Mevcut durum, sizin ve partnerinizin hisleri, beklentiler ve tavsiyeler hakkında kapsamlı bilgi sunar.",
+      "cardCount": "Kart Sayısı",
+      "cardCountText": "Bu açılımda 7 adet tarot kartı kullanılır. Her kart ilişkinin farklı bir yönünü temsil eder.",
+      "detailedReading": "Sesli Okuma",
+      "detailedReadingText": "Sesli okuma ile ilişkinizin tüm yönlerini derinlemesine analiz edebilirsiniz. Kişisel bilgileriniz ve özel sorularınız ile daha kişiselleştirilmiş bir yorum alırsınız.",
+      "writtenReading": "Yazılı Okuma",
+      "writtenReadingText": "Yazılı okuma ile ilişki analizinizi detaylı bir rapor halinde alabilirsiniz. Bu raporu kaydedebilir ve daha sonra tekrar okuyabilirsiniz.",
+      "process": "Süreç",
+      "step1": "Kişisel bilgilerinizi ve sorularınızı doldurun",
+      "step2": "7 kartı sırayla seçin",
+      "step3": "Kartların anlamlarını okuyun",
+      "step4": "Okumanızı kaydedin ve email ile alın",
+      "creditConfirm": "Kredi Onayı",
+      "creditConfirmMessage": "Bu okuma için devam etmek istiyor musunuz?",
+      "confirm": "Evet, Onaylıyorum",
+      "cancel": "Vazgeç",
+      "processing": "İşleniyor...",
+      "successTitle": "Okuma Başarıyla Kaydedildi!",
+      "successMessage": "İlişki analizi açılımınız detaylı olarak kaydedildi ve analiz edildi. Sonuçlarınızı kullanıcı panelinden görüntüleyebilirsiniz.",
+      "redirecting": "💕 Ana sayfaya yönlendiriliyorsunuz...",
+      "saveReading": "Okumayı Kaydet 💕",
+      "savingReading": "Kaydediliyor..."
+    }
+  },
+  "cardGroups": {
+    "majorArcana": "Majör Arkana",
+    "cups": "Kupalar",
+    "swords": "Kılıçlar",
+    "wands": "Asalar",
+    "pentacles": "Tılsımlar"
+  },
+  "meanings": {
+    "theFool": {
+      "position1": {
+        "upright": "İlgi duyduğun kişi, hayata karşı çocuksu bir merak ve heyecanla dolu. Yeni başlangıçlara açık, maceracı bir ruha sahip ancak bu durum bazen plansız ve programsız olmasına neden olabilir. İlişkilere de bu özgür ruhla yaklaşır.",
+        "reversed": "Ters Fool, bu kişinin pervasız, sorumsuz veya bir ilişkiye başlamaktan korkan biri olabileceğini gösterir. Potansiyel tehlikeleri görmezden geliyor ve bağlanmaktan kaçınıyor olabilir.",
+        "keywords": [
+          "yeni başlangıçlar",
+          "masumiyet",
+          "spontanlık",
+          "risk almak",
+          "özgür ruh"
+        ],
+        "context": "Bu kişi, aşk hayatında yeni bir sayfa açmaya hazır veya bundan korkan bir maceracı."
       }
     }
   },
@@ -1139,7 +1383,10 @@
           "upright": "Yeni başlangıçlar, masumiyet, spontanlık",
           "reversed": "Dikkatsizlik, istismar edilme"
         },
-        "keywords": ["yeni başlangıçlar", "masumiyet"]
+        "keywords": [
+          "yeni başlangıçlar",
+          "masumiyet"
+        ]
       },
       "1": {
         "name": "Büyücü",
@@ -1147,7 +1394,10 @@
           "upright": "Tezahür, beceriklilik, güç",
           "reversed": "Manipülasyon, kötü planlama"
         },
-        "keywords": ["tezahür", "güç"]
+        "keywords": [
+          "tezahür",
+          "güç"
+        ]
       },
       "2": {
         "name": "Yüksek Rahibe",
@@ -1155,7 +1405,10 @@
           "upright": "Sezgi, kutsal bilgi, ilahi dişilik",
           "reversed": "Sırlar, sezgiden kopukluk"
         },
-        "keywords": ["sezgi", "gizem"]
+        "keywords": [
+          "sezgi",
+          "gizem"
+        ]
       },
       "3": {
         "name": "İmparatoriçe",
@@ -1163,7 +1416,10 @@
           "upright": "Kadınsılık, güzellik, doğa",
           "reversed": "Yaratıcı blok, bağımlılık"
         },
-        "keywords": ["kadınsılık", "güzellik"]
+        "keywords": [
+          "kadınsılık",
+          "güzellik"
+        ]
       },
       "4": {
         "name": "İmparator",
@@ -1171,7 +1427,10 @@
           "upright": "Otorite, kurumsallık, yapı",
           "reversed": "Tahakküm, aşırı kontrol"
         },
-        "keywords": ["otorite", "yapı"]
+        "keywords": [
+          "otorite",
+          "yapı"
+        ]
       },
       "5": {
         "name": "Aziz",
@@ -1179,7 +1438,10 @@
           "upright": "Ruhsal bilgelik, dini inançlar",
           "reversed": "Kişisel inançlar, özgürlük"
         },
-        "keywords": ["gelenek", "uyum"]
+        "keywords": [
+          "gelenek",
+          "uyum"
+        ]
       },
       "6": {
         "name": "Aşıklar",
@@ -1187,7 +1449,10 @@
           "upright": "Aşk, uyum, ilişkiler",
           "reversed": "Öz sevgi, uyumsuzluk"
         },
-        "keywords": ["aşk", "uyum"]
+        "keywords": [
+          "aşk",
+          "uyum"
+        ]
       },
       "7": {
         "name": "Savaş Arabası",
@@ -1195,7 +1460,10 @@
           "upright": "Kontrol, irade gücü, başarı",
           "reversed": "Öz disiplin, karşıtlık"
         },
-        "keywords": ["kontrol", "irade"]
+        "keywords": [
+          "kontrol",
+          "irade"
+        ]
       },
       "8": {
         "name": "Güç",
@@ -1203,7 +1471,10 @@
           "upright": "Güç, cesaret, ikna",
           "reversed": "Öz şüphe, güven eksikliği"
         },
-        "keywords": ["güç", "cesaret"]
+        "keywords": [
+          "güç",
+          "cesaret"
+        ]
       },
       "9": {
         "name": "Münzevi",
@@ -1211,7 +1482,10 @@
           "upright": "Ruh arayışı, iç gözlem",
           "reversed": "İzolasyon, yalnızlık"
         },
-        "keywords": ["iç gözlem", "arayış"]
+        "keywords": [
+          "iç gözlem",
+          "arayış"
+        ]
       },
       "10": {
         "name": "Kader Çarkı",
@@ -1219,7 +1493,10 @@
           "upright": "İyi şans, karma, yaşam döngüleri",
           "reversed": "Kötü şans, kontrol eksikliği"
         },
-        "keywords": ["şans", "karma"]
+        "keywords": [
+          "şans",
+          "karma"
+        ]
       },
       "11": {
         "name": "Adalet",
@@ -1227,7 +1504,10 @@
           "upright": "Adalet, hakkaniyet, gerçek",
           "reversed": "Haksızlık, hesap verememe"
         },
-        "keywords": ["adalet", "hakkaniyet"]
+        "keywords": [
+          "adalet",
+          "hakkaniyet"
+        ]
       },
       "12": {
         "name": "Asılan Adam",
@@ -1235,7 +1515,10 @@
           "upright": "Teslim olma, bırakma, fedakarlık",
           "reversed": "Gecikmeler, direnç, oyalama"
         },
-        "keywords": ["teslim olma", "fedakarlık"]
+        "keywords": [
+          "teslim olma",
+          "fedakarlık"
+        ]
       },
       "13": {
         "name": "Ölüm",
@@ -1243,7 +1526,10 @@
           "upright": "Sonlar, dönüşüm, geçiş",
           "reversed": "Değişime direnç, içsel arınma"
         },
-        "keywords": ["dönüşüm", "sonlar"]
+        "keywords": [
+          "dönüşüm",
+          "sonlar"
+        ]
       },
       "14": {
         "name": "Ölçülülük",
@@ -1251,7 +1537,10 @@
           "upright": "Denge, ölçülülük, sabır",
           "reversed": "Dengesizlik, aşırılık, öz şifa"
         },
-        "keywords": ["denge", "ölçülülük"]
+        "keywords": [
+          "denge",
+          "ölçülülük"
+        ]
       },
       "15": {
         "name": "Şeytan",
@@ -1259,7 +1548,10 @@
           "upright": "Bağımlılık, tutku, materyalizm",
           "reversed": "Sınırlayıcı inançları bırakma, ayrılma"
         },
-        "keywords": ["bağımlılık", "materyalizm"]
+        "keywords": [
+          "bağımlılık",
+          "materyalizm"
+        ]
       },
       "16": {
         "name": "Kule",
@@ -1267,7 +1559,10 @@
           "upright": "Ani değişim, karışıklık, kaos",
           "reversed": "Kişisel dönüşüm, değişim korkusu"
         },
-        "keywords": ["ani değişim", "karışıklık"]
+        "keywords": [
+          "ani değişim",
+          "karışıklık"
+        ]
       },
       "17": {
         "name": "Yıldız",
@@ -1275,7 +1570,10 @@
           "upright": "Umut, inanç, amaç, yenilenme",
           "reversed": "İnanç eksikliği, umutsuzluk, kopukluk"
         },
-        "keywords": ["umut", "inanç"]
+        "keywords": [
+          "umut",
+          "inanç"
+        ]
       },
       "18": {
         "name": "Ay",
@@ -1283,7 +1581,10 @@
           "upright": "İllüzyon, korku, kaygı, bilinçaltı",
           "reversed": "Korkunun bırakılması, bastırılmış duygu"
         },
-        "keywords": ["illüzyon", "korku"]
+        "keywords": [
+          "illüzyon",
+          "korku"
+        ]
       },
       "19": {
         "name": "Güneş",
@@ -1291,7 +1592,10 @@
           "upright": "Pozitiflik, eğlence, sıcaklık, başarı",
           "reversed": "İç çocuk, moralsizlik"
         },
-        "keywords": ["pozitiflik", "eğlence"]
+        "keywords": [
+          "pozitiflik",
+          "eğlence"
+        ]
       },
       "20": {
         "name": "Mahkeme",
@@ -1299,7 +1603,10 @@
           "upright": "Yargı, yeniden doğuş, içsel çağrı",
           "reversed": "Öz şüphe, içsel eleştirmen"
         },
-        "keywords": ["yargı", "yeniden doğuş"]
+        "keywords": [
+          "yargı",
+          "yeniden doğuş"
+        ]
       },
       "21": {
         "name": "Dünya",
@@ -1307,7 +1614,10 @@
           "upright": "Tamamlanma, bütünleşme, başarı",
           "reversed": "Kişisel kapanış arayışı, kısa yol"
         },
-        "keywords": ["tamamlanma", "bütünleşme"]
+        "keywords": [
+          "tamamlanma",
+          "bütünleşme"
+        ]
       }
     },
     "cups": {
@@ -1317,7 +1627,10 @@
           "upright": "Yeni ilişkiler, merhamet",
           "reversed": "Öz sevgi, bastırılmış duygular"
         },
-        "keywords": ["aşk", "duygular"]
+        "keywords": [
+          "aşk",
+          "duygular"
+        ]
       },
       "2": {
         "name": "Kadehler İkilisi",
@@ -1325,7 +1638,10 @@
           "upright": "Ortaklık, karşılıklı çekim",
           "reversed": "Öz sevgi, ayrılıklar"
         },
-        "keywords": ["ortaklık", "aşk"]
+        "keywords": [
+          "ortaklık",
+          "aşk"
+        ]
       },
       "3": {
         "name": "Kadehler Üçlüsü",
@@ -1333,7 +1649,10 @@
           "upright": "Kutlama, dostluk",
           "reversed": "Bağımsızlık, yaratıcı bloklar"
         },
-        "keywords": ["kutlama", "dostluk"]
+        "keywords": [
+          "kutlama",
+          "dostluk"
+        ]
       },
       "4": {
         "name": "Kadehler Dörtlüsü",
@@ -1341,7 +1660,10 @@
           "upright": "Meditasyon, düşünce",
           "reversed": "Geri çekilme, içe kapanma"
         },
-        "keywords": ["meditasyon", "düşünce"]
+        "keywords": [
+          "meditasyon",
+          "düşünce"
+        ]
       },
       "5": {
         "name": "Kadehler Beşlisi",
@@ -1349,7 +1671,10 @@
           "upright": "Pişmanlık, hayal kırıklığı",
           "reversed": "Kendini bağışlama, ilerleme"
         },
-        "keywords": ["pişmanlık", "hayal kırıklığı"]
+        "keywords": [
+          "pişmanlık",
+          "hayal kırıklığı"
+        ]
       },
       "6": {
         "name": "Kadehler Altılısı",
@@ -1357,7 +1682,10 @@
           "upright": "Çocukluk anıları, masumiyet",
           "reversed": "Geçmişte yaşama, bağışlama"
         },
-        "keywords": ["nostalji", "çocukluk"]
+        "keywords": [
+          "nostalji",
+          "çocukluk"
+        ]
       },
       "7": {
         "name": "Kadehler Yedilisi",
@@ -1365,7 +1693,10 @@
           "upright": "Fırsatlar, seçimler",
           "reversed": "Kişisel değerler, bunalma"
         },
-        "keywords": ["fırsatlar", "seçimler"]
+        "keywords": [
+          "fırsatlar",
+          "seçimler"
+        ]
       },
       "8": {
         "name": "Kadehler Sekizlisi",
@@ -1373,7 +1704,10 @@
           "upright": "Hayal kırıklığı, terk etme",
           "reversed": "Tekrar deneme, kararsızlık"
         },
-        "keywords": ["hayal kırıklığı", "terk etme"]
+        "keywords": [
+          "hayal kırıklığı",
+          "terk etme"
+        ]
       },
       "9": {
         "name": "Kadehler Dokuzlusu",
@@ -1381,7 +1715,10 @@
           "upright": "Memnuniyet, tatmin",
           "reversed": "İç mutluluk, memnuniyetsizlik"
         },
-        "keywords": ["memnuniyet", "tatmin"]
+        "keywords": [
+          "memnuniyet",
+          "tatmin"
+        ]
       },
       "10": {
         "name": "Kadehler Onlusu",
@@ -1389,7 +1726,10 @@
           "upright": "İlahi aşk, uyum",
           "reversed": "Kopukluk, zorlu ilişkiler"
         },
-        "keywords": ["ilahi aşk", "uyum"]
+        "keywords": [
+          "ilahi aşk",
+          "uyum"
+        ]
       },
       "page": {
         "name": "Kadehler Prensi",
@@ -1397,7 +1737,10 @@
           "upright": "Yaratıcı fırsatlar, sezgi",
           "reversed": "Yeni fikirler, sezgiyi şüphe"
         },
-        "keywords": ["yaratıcılık", "sezgi"]
+        "keywords": [
+          "yaratıcılık",
+          "sezgi"
+        ]
       },
       "knight": {
         "name": "Kadehler Şövalyesi",
@@ -1405,7 +1748,10 @@
           "upright": "Romantizm, cazibe, hayal gücü",
           "reversed": "Gerçekçi olmayan, kıskançlık"
         },
-        "keywords": ["romantizm", "cazibe"]
+        "keywords": [
+          "romantizm",
+          "cazibe"
+        ]
       },
       "queen": {
         "name": "Kadehler Kraliçesi",
@@ -1413,7 +1759,10 @@
           "upright": "Merhametli, duygusal kararlı",
           "reversed": "İç duygular, öz bakım"
         },
-        "keywords": ["merhamet", "duygusal kararlılık"]
+        "keywords": [
+          "merhamet",
+          "duygusal kararlılık"
+        ]
       },
       "king": {
         "name": "Kadehler Kralı",
@@ -1421,7 +1770,10 @@
           "upright": "Duygusal dengeli, diplomatik",
           "reversed": "Öz merhamet, huysuzluk"
         },
-        "keywords": ["duygusal denge", "diplomasi"]
+        "keywords": [
+          "duygusal denge",
+          "diplomasi"
+        ]
       }
     },
     "wands": {
@@ -1431,7 +1783,10 @@
           "upright": "İlham, yeni fırsatlar",
           "reversed": "Enerji eksikliği, can sıkıntısı"
         },
-        "keywords": ["ilham", "güç"]
+        "keywords": [
+          "ilham",
+          "güç"
+        ]
       },
       "2": {
         "name": "Asalar İkilisi",
@@ -1439,7 +1794,10 @@
           "upright": "Gelecek planlama, kararlar",
           "reversed": "Kişisel hedefler, bilinmezlik korkusu"
         },
-        "keywords": ["planlama", "kararlar"]
+        "keywords": [
+          "planlama",
+          "kararlar"
+        ]
       },
       "3": {
         "name": "Asalar Üçlüsü",
@@ -1447,7 +1805,10 @@
           "upright": "Genişleme, öngörü",
           "reversed": "Küçük oynama, gecikmeler"
         },
-        "keywords": ["genişleme", "öngörü"]
+        "keywords": [
+          "genişleme",
+          "öngörü"
+        ]
       },
       "4": {
         "name": "Asalar Dörtlüsü",
@@ -1455,7 +1816,10 @@
           "upright": "Kutlama, uyum",
           "reversed": "Kişisel kutlama, çatışma"
         },
-        "keywords": ["kutlama", "uyum"]
+        "keywords": [
+          "kutlama",
+          "uyum"
+        ]
       },
       "5": {
         "name": "Asalar Beşlisi",
@@ -1463,7 +1827,10 @@
           "upright": "Çatışma, rekabet",
           "reversed": "İç çatışma, kaçınma"
         },
-        "keywords": ["çatışma", "rekabet"]
+        "keywords": [
+          "çatışma",
+          "rekabet"
+        ]
       },
       "6": {
         "name": "Asalar Altılısı",
@@ -1471,7 +1838,10 @@
           "upright": "Başarı, tanınma",
           "reversed": "Özel başarı, lütuftan düşme"
         },
-        "keywords": ["başarı", "tanınma"]
+        "keywords": [
+          "başarı",
+          "tanınma"
+        ]
       },
       "7": {
         "name": "Asalar Yedilisi",
@@ -1479,7 +1849,10 @@
           "upright": "Meydan okuma, sebat",
           "reversed": "Tükenmişlik, pes etme"
         },
-        "keywords": ["meydan okuma", "sebat"]
+        "keywords": [
+          "meydan okuma",
+          "sebat"
+        ]
       },
       "8": {
         "name": "Asalar Sekizlisi",
@@ -1487,7 +1860,10 @@
           "upright": "Hız, ilerleme",
           "reversed": "Gecikmeler, hayal kırıklığı"
         },
-        "keywords": ["hız", "ilerleme"]
+        "keywords": [
+          "hız",
+          "ilerleme"
+        ]
       },
       "9": {
         "name": "Asalar Dokuzlusu",
@@ -1495,7 +1871,10 @@
           "upright": "Dayanıklılık, cesaret",
           "reversed": "İç kaynaklar, mücadele"
         },
-        "keywords": ["dayanıklılık", "cesaret"]
+        "keywords": [
+          "dayanıklılık",
+          "cesaret"
+        ]
       },
       "10": {
         "name": "Asalar Onlusu",
@@ -1503,7 +1882,10 @@
           "upright": "Yük, sorumluluk",
           "reversed": "Hepsini yapma, yetki devri"
         },
-        "keywords": ["yük", "sorumluluk"]
+        "keywords": [
+          "yük",
+          "sorumluluk"
+        ]
       },
       "page": {
         "name": "Asalar Prensi",
@@ -1511,7 +1893,10 @@
           "upright": "İlham, keşif",
           "reversed": "Yön eksikliği, erteleme"
         },
-        "keywords": ["ilham", "keşif"]
+        "keywords": [
+          "ilham",
+          "keşif"
+        ]
       },
       "knight": {
         "name": "Asalar Şövalyesi",
@@ -1519,7 +1904,10 @@
           "upright": "Enerji, tutku, macera",
           "reversed": "Acele, dağınık enerji"
         },
-        "keywords": ["enerji", "tutku"]
+        "keywords": [
+          "enerji",
+          "tutku"
+        ]
       },
       "queen": {
         "name": "Asalar Kraliçesi",
@@ -1527,7 +1915,10 @@
           "upright": "Cesaret, bağımsızlık",
           "reversed": "Öz saygı, içe dönük"
         },
-        "keywords": ["cesaret", "bağımsızlık"]
+        "keywords": [
+          "cesaret",
+          "bağımsızlık"
+        ]
       },
       "king": {
         "name": "Asalar Kralı",
@@ -1535,7 +1926,10 @@
           "upright": "Liderlik, vizyon",
           "reversed": "Dürtüsellik, acımasız"
         },
-        "keywords": ["liderlik", "vizyon"]
+        "keywords": [
+          "liderlik",
+          "vizyon"
+        ]
       }
     },
     "swords": {
@@ -1545,7 +1939,10 @@
           "upright": "Atılım, berraklık",
           "reversed": "Karışıklık, kaos"
         },
-        "keywords": ["berraklık", "atılım"]
+        "keywords": [
+          "berraklık",
+          "atılım"
+        ]
       },
       "2": {
         "name": "Kılıçlar İkilisi",
@@ -1553,7 +1950,10 @@
           "upright": "Zor kararlar, çıkmaz",
           "reversed": "Kararsızlık, karışıklık"
         },
-        "keywords": ["kararlar", "çıkmaz"]
+        "keywords": [
+          "kararlar",
+          "çıkmaz"
+        ]
       },
       "3": {
         "name": "Kılıçlar Üçlüsü",
@@ -1561,7 +1961,10 @@
           "upright": "Kalp kırıklığı, keder",
           "reversed": "Acıyı serbest bırakma, iyimserlik"
         },
-        "keywords": ["kalp kırıklığı", "keder"]
+        "keywords": [
+          "kalp kırıklığı",
+          "keder"
+        ]
       },
       "4": {
         "name": "Kılıçlar Dörtlüsü",
@@ -1569,7 +1972,10 @@
           "upright": "Dinlenme, meditasyon",
           "reversed": "Tükenmişlik, yanma"
         },
-        "keywords": ["dinlenme", "meditasyon"]
+        "keywords": [
+          "dinlenme",
+          "meditasyon"
+        ]
       },
       "5": {
         "name": "Kılıçlar Beşlisi",
@@ -1577,7 +1983,10 @@
           "upright": "Çatışma, yenilgi",
           "reversed": "Uzlaşma, geçmiş kırgınlık"
         },
-        "keywords": ["çatışma", "yenilgi"]
+        "keywords": [
+          "çatışma",
+          "yenilgi"
+        ]
       },
       "6": {
         "name": "Kılıçlar Altılısı",
@@ -1585,7 +1994,10 @@
           "upright": "Geçiş, değişim",
           "reversed": "Kişisel geçiş, direnç"
         },
-        "keywords": ["geçiş", "değişim"]
+        "keywords": [
+          "geçiş",
+          "değişim"
+        ]
       },
       "7": {
         "name": "Kılıçlar Yedilisi",
@@ -1593,7 +2005,10 @@
           "upright": "İhanet, aldatma",
           "reversed": "Sahtekar sendromu, sırlar"
         },
-        "keywords": ["ihanet", "aldatma"]
+        "keywords": [
+          "ihanet",
+          "aldatma"
+        ]
       },
       "8": {
         "name": "Kılıçlar Sekizlisi",
@@ -1601,7 +2016,10 @@
           "upright": "Kısıtlama, hapis",
           "reversed": "Kendini sınırlayan inançlar, iç eleştirmen"
         },
-        "keywords": ["kısıtlama", "hapis"]
+        "keywords": [
+          "kısıtlama",
+          "hapis"
+        ]
       },
       "9": {
         "name": "Kılıçlar Dokuzlusu",
@@ -1609,7 +2027,10 @@
           "upright": "Kaygı, korku",
           "reversed": "İç karmaşa, kaygıyı serbest bırakma"
         },
-        "keywords": ["kaygı", "korku"]
+        "keywords": [
+          "kaygı",
+          "korku"
+        ]
       },
       "10": {
         "name": "Kılıçlar Onlusu",
@@ -1617,7 +2038,10 @@
           "upright": "Acılı sonlar, ihanet",
           "reversed": "İyileşme, sona direnme"
         },
-        "keywords": ["sonlar", "ihanet"]
+        "keywords": [
+          "sonlar",
+          "ihanet"
+        ]
       },
       "page": {
         "name": "Kılıçlar Prensi",
@@ -1625,7 +2049,10 @@
           "upright": "Yeni fikirler, merak",
           "reversed": "Kendini ifade etme, eylem yok"
         },
-        "keywords": ["fikirler", "merak"]
+        "keywords": [
+          "fikirler",
+          "merak"
+        ]
       },
       "knight": {
         "name": "Kılıçlar Şövalyesi",
@@ -1633,7 +2060,10 @@
           "upright": "Hırslı, eylem odaklı",
           "reversed": "Huzursuz, dürtüsel"
         },
-        "keywords": ["hırs", "eylem"]
+        "keywords": [
+          "hırs",
+          "eylem"
+        ]
       },
       "queen": {
         "name": "Kılıçlar Kraliçesi",
@@ -1641,7 +2071,10 @@
           "upright": "Bağımsız, net sınırlar",
           "reversed": "Aşırı duygusal, soğuk kalpli"
         },
-        "keywords": ["bağımsızlık", "sınırlar"]
+        "keywords": [
+          "bağımsızlık",
+          "sınırlar"
+        ]
       },
       "king": {
         "name": "Kılıçlar Kralı",
@@ -1649,7 +2082,10 @@
           "upright": "Zihinsel berraklık, otorite",
           "reversed": "Sessiz güç, gücün kötüye kullanımı"
         },
-        "keywords": ["berraklık", "otorite"]
+        "keywords": [
+          "berraklık",
+          "otorite"
+        ]
       }
     },
     "pentacles": {
@@ -1659,7 +2095,10 @@
           "upright": "Yeni fırsat, tezahür",
           "reversed": "Kaçırılan fırsat, planlama eksikliği"
         },
-        "keywords": ["fırsat", "tezahür"]
+        "keywords": [
+          "fırsat",
+          "tezahür"
+        ]
       },
       "2": {
         "name": "Altınlar İkilisi",
@@ -1667,7 +2106,10 @@
           "upright": "Çoklu öncelikler, uyum",
           "reversed": "Aşırı taahhüt, düzensizlik"
         },
-        "keywords": ["öncelikler", "uyum"]
+        "keywords": [
+          "öncelikler",
+          "uyum"
+        ]
       },
       "3": {
         "name": "Altınlar Üçlüsü",
@@ -1675,7 +2117,10 @@
           "upright": "İşbirliği, öğrenme",
           "reversed": "Uyumsuzluk, tek başına çalışma"
         },
-        "keywords": ["işbirliği", "öğrenme"]
+        "keywords": [
+          "işbirliği",
+          "öğrenme"
+        ]
       },
       "4": {
         "name": "Altınlar Dörtlüsü",
@@ -1683,7 +2128,10 @@
           "upright": "Para biriktirme, güvenlik",
           "reversed": "Aşırı harcama, cömertlik"
         },
-        "keywords": ["biriktirme", "güvenlik"]
+        "keywords": [
+          "biriktirme",
+          "güvenlik"
+        ]
       },
       "5": {
         "name": "Altınlar Beşlisi",
@@ -1691,7 +2139,10 @@
           "upright": "Mali kayıp, izolasyon",
           "reversed": "Kayıptan kurtulma, ruhsal yoksulluk"
         },
-        "keywords": ["kayıp", "izolasyon"]
+        "keywords": [
+          "kayıp",
+          "izolasyon"
+        ]
       },
       "6": {
         "name": "Altınlar Altılısı",
@@ -1699,7 +2150,10 @@
           "upright": "Verme, zenginlik paylaşımı",
           "reversed": "Kendine bakım, ödenmemiş borçlar"
         },
-        "keywords": ["verme", "paylaşım"]
+        "keywords": [
+          "verme",
+          "paylaşım"
+        ]
       },
       "7": {
         "name": "Altınlar Yedilisi",
@@ -1707,7 +2161,10 @@
           "upright": "Sebat, yatırım",
           "reversed": "Uzun vadeli görüş eksikliği, sabırsızlık"
         },
-        "keywords": ["sebat", "yatırım"]
+        "keywords": [
+          "sebat",
+          "yatırım"
+        ]
       },
       "8": {
         "name": "Altınlar Sekizlisi",
@@ -1715,7 +2172,10 @@
           "upright": "Ustalık, beceri geliştirme",
           "reversed": "Mükemmeliyetçilik, bağlılık eksikliği"
         },
-        "keywords": ["ustalık", "beceri"]
+        "keywords": [
+          "ustalık",
+          "beceri"
+        ]
       },
       "9": {
         "name": "Altınlar Dokuzlusu",
@@ -1723,7 +2183,10 @@
           "upright": "Bolluk, mali bağımsızlık",
           "reversed": "Öz değer, aşırı yatırım"
         },
-        "keywords": ["bolluk", "bağımsızlık"]
+        "keywords": [
+          "bolluk",
+          "bağımsızlık"
+        ]
       },
       "10": {
         "name": "Altınlar Onlusu",
@@ -1731,7 +2194,10 @@
           "upright": "Zenginlik, aile, uzun vadeli başarı",
           "reversed": "Mali başarısızlık, zenginliğin karanlık tarafı"
         },
-        "keywords": ["zenginlik", "aile"]
+        "keywords": [
+          "zenginlik",
+          "aile"
+        ]
       },
       "page": {
         "name": "Altınlar Prensi",
@@ -1739,7 +2205,10 @@
           "upright": "Tezahür, mali fırsat",
           "reversed": "İlerleme eksikliği, erteleme"
         },
-        "keywords": ["tezahür", "fırsat"]
+        "keywords": [
+          "tezahür",
+          "fırsat"
+        ]
       },
       "knight": {
         "name": "Altınlar Şövalyesi",
@@ -1747,7 +2216,10 @@
           "upright": "Sıkı çalışma, rutin",
           "reversed": "Öz disiplin, sıkışmış hissetme"
         },
-        "keywords": ["çalışma", "rutin"]
+        "keywords": [
+          "çalışma",
+          "rutin"
+        ]
       },
       "queen": {
         "name": "Altınlar Kraliçesi",
@@ -1755,7 +2227,10 @@
           "upright": "Besleyici, pratik",
           "reversed": "Mali bağımsızlık, iş-ev çatışması"
         },
-        "keywords": ["besleyici", "pratik"]
+        "keywords": [
+          "besleyici",
+          "pratik"
+        ]
       },
       "king": {
         "name": "Altınlar Kralı",
@@ -1763,8 +2238,188 @@
           "upright": "Mali başarı, iş zekası",
           "reversed": "Mali tavsiye, gücünün üstünde yaşama"
         },
-        "keywords": ["başarı", "iş"]
+        "keywords": [
+          "başarı",
+          "iş"
+        ]
       }
+    }
+  },
+  "relationshipProblems": {
+    "form": {
+      "personalInfo": "Kişisel Bilgileriniz",
+      "firstName": "Adınız",
+      "lastName": "Soyadınız",
+      "birthDate": "Doğum Tarihi",
+      "email": "E-posta Adresiniz",
+      "questions": "💔 İlişki Sorunları Açılımı Soruları 💔",
+      "concernQuestion": "Hangi ilişki sorununu analiz etmek istiyorsunuz?",
+      "understandingQuestion": "Bu ilişki sorunları analizi ile neyi anlamak istiyorsunuz?",
+      "emotionalQuestion": "Bu ilişki sorunları karşısında şu anda nasıl hissediyorsunuz?",
+      "saveAndOpen": "💔 Kaydet ve Kartları Aç",
+      "saving": "Kaydediliyor...",
+      "clearAll": "🔄 Tümünü Temizle"
+    },
+    "modals": {
+      "infoTitle": "İlişki Sorunları Açılımı Hakkında",
+      "aboutSpread": "Açılım Hakkında",
+      "aboutSpreadText": "Bu 9 kartlık açılım, ilişkinizdeki sorunları derinlemesine analiz etmek için tasarlanmıştır. Sorunların kaynağı, çözüm yolları ve gelecek öngörüleri hakkında kapsamlı bilgi sunar.",
+      "cardCount": "Kart Sayısı",
+      "cardCountText": "Bu açılımda 9 adet tarot kartı kullanılır. Her kart ilişkinizin farklı bir sorun yönünü temsil eder.",
+      "detailedReading": "Sesli Okuma",
+      "detailedReadingText": "Sesli okuma ile ilişkinizdeki sorunları derinlemesine analiz edebilirsiniz. Kişisel bilgileriniz ve özel sorularınız ile daha kişiselleştirilmiş bir yorum alırsınız.",
+      "writtenReading": "Yazılı Okuma",
+      "writtenReadingText": "Yazılı okuma ile ilişki sorunları analizinizi detaylı bir rapor halinde alabilirsiniz. Bu raporu kaydedebilir ve daha sonra tekrar okuyabilirsiniz.",
+      "process": "Süreç",
+      "step1": "Kişisel bilgilerinizi ve sorularınızı doldurun",
+      "step2": "9 kartı sırayla seçin",
+      "step3": "Kartların anlamlarını okuyun",
+      "step4": "Okumanızı kaydedin ve email ile alın",
+      "creditConfirm": "Kredi Onayı",
+      "creditConfirmMessage": "Bu okuma için devam etmek istiyor musunuz?",
+      "confirm": "Evet, Onaylıyorum",
+      "cancel": "Vazgeç",
+      "continue": "Devam Et",
+      "processing": "İşleniyor...",
+      "successTitle": "Okuma Başarıyla Kaydedildi!",
+      "successMessage": "İlişki sorunları açılımınız detaylı olarak kaydedildi ve analiz edildi. Sonuçlarınızı kullanıcı panelinden görüntüleyebilirsiniz.",
+      "redirecting": "💔 Ana sayfaya yönlendiriliyorsunuz...",
+      "saveReading": "Okumayı Kaydet 💔",
+      "savingReading": "Kaydediliyor..."
+    }
+  },
+  "marriage": {
+    "title": "Evlilik Açılımı",
+    "description": "Evlilik ve eş bulma yolculuğunuz için özel 10 kartlık açılım",
+    "info": {
+      "title": "Evlilik Açılımı Hakkında",
+      "description": "Bu açılım, evlilik potansiyelinizi, ideal eşinizi ve evlilik yolculuğunuzun nasıl ilerleyeceğini gösterir. Sylvia Abraha'nın kitabından uyarlanmış özel bir açılımdır.",
+      "howToUse": "Nasıl Kullanılır:",
+      "step1": "Her pozisyon için bir kart seçin",
+      "step2": "Kartları sırayla yerleştirin",
+      "step3": "Yorumunuzu okuyun",
+      "step4": "Okumanızı kaydedin",
+      "close": "Kapat"
+    },
+    "form": {
+      "title": "Evlilik Açılımı Bilgileri",
+      "name": "Adınız",
+      "surname": "Soyadınız",
+      "birthDate": "Doğum Tarihiniz",
+      "email": "E-posta Adresiniz",
+      "concern": "Evlilik Endişeniz",
+      "understanding": "Anlamak İstedikleriniz",
+      "emotional": "Mevcut Evlilik Durumunuz",
+      "saveReading": "Okumayı Kaydet",
+      "clearAll": "Tümünü Temizle",
+      "cancel": "İptal",
+      "continue": "Devam Et",
+      "nameRequired": "Ad gerekli",
+      "surnameRequired": "Soyad gerekli",
+      "birthDateRequired": "Doğum tarihi gerekli",
+      "emailRequired": "E-posta gerekli",
+      "concernRequired": "Endişe gerekli",
+      "understandingRequired": "Anlama gerekli",
+      "emotionalRequired": "Duygusal durum gerekli",
+      "selectAllCards": "Lütfen tüm kartları seçin",
+      "loginRequired": "Okuma kaydetmek için giriş yapmalısınız",
+      "saved": "Okuma başarıyla kaydedildi",
+      "saveError": "Okuma kaydedilirken hata oluştu"
+    },
+    "credit": {
+      "title": "Kredi Onayı",
+      "description": "Bu okumayı kaydetmek için kredi kullanılacak. Devam etmek istiyor musunuz?",
+      "cancel": "İptal",
+      "confirm": "Onayla",
+      "saving": "Kaydediliyor..."
+    },
+    "interpretation": {
+      "title": "Evlilik Açılımı Yorumu",
+      "intro": "Bu açılım, evlilik yolculuğunuz hakkında önemli bilgiler sunar. Her kart, farklı bir açıdan evlilik sürecinizi aydınlatır.",
+      "conclusion": "Bu yorum, evlilik yolculuğunuzda size rehberlik edecek. Sabırlı olun ve doğru kişinin karşınıza çıkacağına güvenin."
+    }
+  },
+  "newLover": {
+    "title": "Yeni Bir Sevgili Açılımı",
+    "description": "Yeni bir aşk ilişkisi için 6 kartlık özel açılım",
+    "form": {
+      "title": "Yeni Bir Sevgili Açılımı Bilgileri",
+      "name": "Adınız",
+      "surname": "Soyadınız",
+      "birthDate": "Doğum Tarihiniz",
+      "email": "E-posta Adresiniz",
+      "concern": "Aşk Endişeniz",
+      "understanding": "Anlamak İstedikleriniz",
+      "emotional": "Mevcut Duygusal Durumunuz",
+      "saveReading": "Okumayı Kaydet",
+      "clearAll": "Tümünü Temizle",
+      "cancel": "İptal",
+      "continue": "Devam Et",
+      "nameRequired": "Ad gerekli",
+      "surnameRequired": "Soyad gerekli",
+      "birthDateRequired": "Doğum tarihi gerekli",
+      "emailRequired": "E-posta gerekli",
+      "concernRequired": "Endişe gerekli",
+      "understandingRequired": "Anlama gerekli",
+      "emotionalRequired": "Duygusal durum gerekli",
+      "selectAllCards": "Lütfen tüm kartları seçin",
+      "loginRequired": "Okuma kaydetmek için giriş yapmalısınız",
+      "saved": "Okuma başarıyla kaydedildi",
+      "saveError": "Okuma kaydedilirken hata oluştu"
+    },
+    "credit": {
+      "title": "Kredi Onayı",
+      "description": "Bu okumayı kaydetmek için kredi kullanılacak. Devam etmek istiyor musunuz?",
+      "cancel": "İptal",
+      "confirm": "Onayla",
+      "saving": "Kaydediliyor..."
+    },
+    "interpretation": {
+      "title": "Yeni Bir Sevgili Açılımı Yorumu",
+      "intro": "Bu açılım, gelecekteki aşk ilişkiniz hakkında önemli bilgiler sunar. Her kart, farklı bir açıdan aşk yolculuğunuzu aydınlatır.",
+      "conclusion": "Bu yorum, aşk yolculuğunuzda size rehberlik edecek. Sabırlı olun ve doğru kişinin karşınıza çıkacağına güvenin."
+    }
+  },
+  "money": {
+    "form": {
+      "clearAll": "Tümünü Temizle",
+      "firstName": "Ad",
+      "lastName": "Soyad",
+      "birthDate": "Doğum Tarihi",
+      "email": "E-posta",
+      "questions": "Sorular",
+      "concernQuestion": "Hangi finansal durumu analiz etmek istiyorsunuz?",
+      "understandingQuestion": "Bu para açılımı ile neyi anlamak istiyorsunuz?",
+      "emotionalQuestion": "Para konusunda şu anda nasıl hissediyorsunuz?",
+      "saveAndOpen": "Kaydet ve Aç",
+      "saving": "Kaydediliyor..."
+    },
+    "modals": {
+      "successTitle": "Para Açılımı Tamamlandı!",
+      "successMessage": "Para açılımınız başarıyla kaydedildi ve e-posta adresinize gönderildi.",
+      "redirecting": "Ana sayfaya yönlendiriliyorsunuz...",
+      "savingReading": "Okuma Kaydediliyor...",
+      "saveReading": "Okumayı Kaydet",
+      "infoTitle": "Para Açılımı Hakkında",
+      "aboutSpread": "Açılım Hakkında",
+      "aboutSpreadText": "Para açılımı, finansal durumunuzu ve para konusundaki fırsatlarınızı analiz eder.",
+      "cardCount": "Kart Sayısı",
+      "cardCountText": "Bu açılım 6 kart kullanır ve finansal durumunuzu kapsamlı bir şekilde analiz eder.",
+      "detailedReading": "Sesli Okuma",
+      "detailedReadingText": "Kişisel bilgileriniz ve özel sorularınızla detaylı bir para analizi.",
+      "writtenReading": "Yazılı Okuma",
+      "writtenReadingText": "Kişisel bilgileriniz ve özel sorularınızla yazılı bir para analizi.",
+      "process": "Süreç",
+      "step1": "Kişisel bilgilerinizi girin",
+      "step2": "Para konusundaki sorularınızı yanıtlayın",
+      "step3": "6 kartı seçin",
+      "step4": "Detaylı yorumunuzu alın",
+      "cancel": "İptal",
+      "continue": "Devam Et",
+      "creditConfirm": "Kredi Onayı",
+      "creditConfirmMessage": "Bu okuma için kredi kullanılacak. Devam etmek istediğinize emin misiniz?",
+      "processing": "İşleniyor...",
+      "confirm": "Onayla"
     }
   }
 }

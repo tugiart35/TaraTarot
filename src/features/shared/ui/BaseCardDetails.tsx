@@ -59,10 +59,12 @@ export interface BaseCardDetailsProps {
   title?: string;
   maxWidth?: 'sm' | 'md' | 'lg' | 'xl' | '2xl';
   spreadType?: 'love';
-  positionInfo?: {
-    title: string;
-    desc: string;
-  } | undefined;
+  positionInfo?:
+    | {
+        title: string;
+        desc: string;
+      }
+    | undefined;
 }
 
 export default function BaseCardDetails({

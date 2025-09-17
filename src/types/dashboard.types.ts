@@ -54,7 +54,7 @@ export interface Package {
   active: boolean; // Paketin aktif olup olmadığı
   created_at: string; // Paket oluşturulma tarihi
   description?: string; // Paket açıklaması (opsiyonel)
-  shopier_product_id?: string; // Shopier ürün ID'si (opsiyonel)
+  shopier_product_id?: string | undefined; // Shopier ürün ID'si (opsiyonel)
 }
 
 // Dashboard state interface'i

@@ -68,6 +68,7 @@ interface BaseCardGalleryProps {
   galleryTitle?: string;
   emptyMessage?: string;
   canSelectCards?: boolean;
+  theme?: 'pink' | 'blue' | 'purple' | 'green';
   translations?: {
     nextPosition: string;
     allPositionsFull: string;
@@ -87,6 +88,7 @@ export default function BaseCardGallery({
   galleryTitle: _galleryTitle,
   emptyMessage,
   canSelectCards = true,
+  theme = 'purple',
   translations,
 }: BaseCardGalleryProps) {
   // Varsayılan çeviriler (fallback)
@@ -97,22 +99,81 @@ export default function BaseCardGallery({
     scrollToSeeAll: 'Kaydırarak tüm kartları görün',
     emptyDeck: 'Kart destesi boş',
   };
-  
+
   const t = translations || defaultTranslations;
+
+  // Theme'e göre renkleri belirle
+  const getThemeColors = (theme: string) => {
+    switch (theme) {
+      case 'pink':
+        return {
+          icon: 'text-pink-400',
+          iconBg: 'bg-pink-500/20',
+          border: 'border-pink-500/50',
+          button:
+            'bg-pink-500/20 border-pink-500/50 text-pink-400 hover:bg-pink-500/30',
+          scrollbar: 'scrollbar-thumb-pink-500 hover:scrollbar-thumb-pink-400',
+          scrollbarColor: '#ec4899 transparent',
+        };
+      case 'blue':
+        return {
+          icon: 'text-blue-400',
+          iconBg: 'bg-blue-500/20',
+          border: 'border-blue-500/50',
+          button:
+            'bg-blue-500/20 border-blue-500/50 text-blue-400 hover:bg-blue-500/30',
+          scrollbar: 'scrollbar-thumb-blue-500 hover:scrollbar-thumb-blue-400',
+          scrollbarColor: '#3b82f6 transparent',
+        };
+      case 'green':
+        return {
+          icon: 'text-green-400',
+          iconBg: 'bg-green-500/20',
+          border: 'border-green-500/50',
+          button:
+            'bg-green-500/20 border-green-500/50 text-green-400 hover:bg-green-500/30',
+          scrollbar:
+            'scrollbar-thumb-green-500 hover:scrollbar-thumb-green-400',
+          scrollbarColor: '#10b981 transparent',
+        };
+      default: // purple
+        return {
+          icon: 'text-purple-400',
+          iconBg: 'bg-purple-500/20',
+          border: 'border-purple-500/50',
+          button:
+            'bg-purple-500/20 border-purple-500/50 text-purple-400 hover:bg-purple-500/30',
+          scrollbar:
+            'scrollbar-thumb-purple-500 hover:scrollbar-thumb-purple-400',
+          scrollbarColor: '#8b5cf6 transparent',
+        };
+    }
+  };
+
+  const colors = getThemeColors(theme);
+
   if (deck.length === 0) {
     return (
-      <div className='bg-slate-900/80 border border-slate-700 rounded-2xl p-4 shadow-lg'>
-        <div className='text-center text-gray-400'>{emptyMessage || t.emptyDeck}</div>
+      <div
+        className={`bg-slate-900/80 border ${colors.border} rounded-2xl p-4 shadow-lg`}
+      >
+        <div className='text-center text-gray-400'>
+          {emptyMessage || t.emptyDeck}
+        </div>
       </div>
     );
   }
 
   return (
-    <div className='bg-slate-900/80 border border-slate-700 rounded-2xl p-4 shadow-lg'>
+    <div
+      className={`bg-slate-900/80 border ${colors.border} rounded-2xl p-4 shadow-lg`}
+    >
       <div className='flex items-center justify-between mb-4'>
         <div className='flex items-center space-x-3'>
-          <div className='w-8 h-8 bg-purple-500/20 rounded-full flex items-center justify-center shadow-md'>
-            <span className='text-purple-400 text-lg'>🃏</span>
+          <div
+            className={`w-8 h-8 ${colors.iconBg} rounded-full flex items-center justify-center shadow-md`}
+          >
+            <span className={`${colors.icon} text-lg`}>🃏</span>
           </div>
           <div>
             <p className='text-gray-400 text-xs'>
@@ -127,7 +188,7 @@ export default function BaseCardGallery({
         {onShuffleDeck && (
           <button
             onClick={onShuffleDeck}
-            className='px-3 py-1 bg-purple-500/20 border border-purple-500/50 rounded-lg text-purple-400 hover:bg-purple-500/30 transition-all duration-200 text-xs'
+            className={`px-3 py-1 ${colors.button} transition-all duration-200 text-xs`}
           >
             🔄 {t.shuffle}
           </button>
@@ -135,14 +196,14 @@ export default function BaseCardGallery({
       </div>
 
       <div
-        className='overflow-x-auto overflow-y-hidden pb-2 scroll-smooth scrollbar-thin scrollbar-track-transparent scrollbar-thumb-purple-500 hover:scrollbar-thumb-purple-400'
+        className={`horizontal-scroll mobile-scroll touch-scroll pb-2 ${colors.scrollbar}`}
         style={{
           scrollbarWidth: 'thin',
-          scrollbarColor: '#8b5cf6 transparent',
+          scrollbarColor: colors.scrollbarColor,
         }}
       >
         <div
-          className='flex space-x-2 md:space-x-3 pb-2'
+          className='flex space-x-2 md:space-x-3 pb-2 scroll-snap-x'
           style={{ width: 'max-content' }}
         >
           {deck.map(card => {
@@ -153,33 +214,18 @@ export default function BaseCardGallery({
             return (
               <div
                 key={card.id}
-                className='flex-shrink-0'
+                className='flex-shrink-0 scroll-snap-start'
                 data-card-clickable='true'
                 style={{
                   cursor: canSelect ? 'pointer' : 'default',
                 }}
                 onClick={e => {
                   // Web ve mobil için click olayı
-                  console.log(
-                    'Card clicked:',
-                    card.name,
-                    'canSelect:',
-                    canSelect,
-                    'canSelectCards:',
-                    canSelectCards,
-                    'isUsed:',
-                    isUsed,
-                    'nextPosition:',
-                    nextPosition
-                  );
                   e.stopPropagation();
                   e.preventDefault();
 
                   if (canSelect) {
-                    console.log('Calling onCardSelect for:', card.name);
                     onCardSelect(card);
-                  } else {
-                    console.log('Card selection blocked - canSelect is false');
                   }
                 }}
               >
