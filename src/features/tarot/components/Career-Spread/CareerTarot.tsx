@@ -371,7 +371,7 @@ export default function CareerReading({
         // Basit okuma sayacı için minimal kayıt
         const simpleReadingData = {
           userId: 'anonymous-user',
-          readingType: 'simple',
+          readingType: 'career', // Veritabanındaki enum değeri ile uyumlu
           cards: { selectedCards: [] }, // Boş kart listesi
           interpretation: 'Basit okuma - sadece sayaç',
           question: { type: 'simple' },
@@ -403,7 +403,7 @@ export default function CareerReading({
         // Standardize edilmiş veri yapısı
         const readingData = {
           userId: 'anonymous-user', // User ID kaldırıldı - login sistemi kaldırıldı
-          readingType: selectedReadingType || 'simple',
+          readingType: 'career', // Veritabanındaki enum değeri ile uyumlu
           status: 'completed',
           // creditCost kaldırıldı
           title: 'Kariyer ve Para Açılımı - Detaylı Kişisel Okuma',
@@ -438,6 +438,9 @@ export default function CareerReading({
             ipHash: 'hashed_ip_address', // Güvenlik için IP hash
             userAgent:
               typeof navigator !== 'undefined' ? navigator.userAgent : '',
+            readingFormat: selectedReadingType, // Sesli/yazılı bilgisi
+            readingFormatTr: selectedReadingType === READING_TYPES.DETAILED ? 'Sesli' : 
+                            selectedReadingType === READING_TYPES.WRITTEN ? 'Yazılı' : 'Basit',
           },
           timestamp: new Date().toISOString(),
           createdAt: new Date(),
@@ -495,6 +498,23 @@ export default function CareerReading({
       return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
     }
     return isReversed ? meaning.reversed : meaning.upright;
+  };
+
+  // Context bilgilerini al
+  const getCardMeaning = (card: TarotCard) => {
+    const position = selectedCards.findIndex(c => c?.id === card.id) + 1;
+    if (position === 0) return null;
+    
+    // Pozisyona özel kart anlamını al
+    const meaning = getCareerMeaningByCardAndPosition(card, position);
+    if (!meaning) return null;
+
+    return {
+      card: card.id,
+      name: card.nameTr,
+      context: meaning.context, // Kartın pozisyonuna özel context bilgisini kullan
+      keywords: meaning.keywords,
+    };
   };
 
   // Basit yorum oluştur (kartlar eksikse uyarı ver)
@@ -1222,9 +1242,11 @@ export default function CareerReading({
               badgeText='KARİYER'
               badgeColor='bg-blue-500/20 text-blue-400'
               positionsInfo={CAREER_POSITIONS_INFO}
+              getCardMeaning={getCardMeaning}
               getPositionSpecificInterpretation={(card, position, isReversed) =>
                 getCareerCardMeaning(card, position, isReversed)
               }
+              showContext={true}
             />
 
             {/* Okumayı Kaydet Butonu - Sadece DETAILED/WRITTEN için */}

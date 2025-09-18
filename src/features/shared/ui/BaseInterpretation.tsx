@@ -73,6 +73,9 @@ export interface BaseInterpretationProps {
     _position: number,
     _isReversed: boolean
   ) => string;
+  
+  // CONTEXT GÖSTERİMİ İÇİN (Problem çözme açılımı için)
+  showContext?: boolean;
 }
 
 // Tema renklerini döndüren yardımcı fonksiyon
@@ -282,6 +285,7 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
       getMeaningText,
       getKeywords,
       getPositionSpecificInterpretation,
+      showContext = false,
     },
     ref
   ) => {
@@ -344,6 +348,9 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
                   : card.meaningTr.upright);
 
             const keywords = getKeywords ? getKeywords(cardMeaning, card) : [];
+            
+            // Context'i al (problem çözme açılımı için)
+            const context = cardMeaning?.context || '';
 
             return (
               <div
@@ -396,6 +403,18 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
                   <div className='text-gray-200 text-sm leading-relaxed'>
                     {positionInterpretation}
                   </div>
+
+                  {/* Context - Anlam altında göster */}
+                  {context && (
+                    <div className='mt-2'>
+                      <div className={`text-xs ${colors.contextText} font-medium mb-1`}>
+                        Bağlam:
+                      </div>
+                      <div className={`text-xs ${colors.contextText} italic`}>
+                        {context}
+                      </div>
+                    </div>
+                  )}
 
                   {/* Anahtar Kelimeler */}
                   {keywords.length > 0 && (

@@ -36,17 +36,28 @@ import React from 'react';
 import type { TarotCard } from '@/features/tarot/lib/a-tarot-helpers';
 import BaseCardDetails from './BaseCardDetails';
 import { getMeaningByCardAndPosition as getLoveMeaningByCardAndPosition } from '@/features/tarot/lib/love/position-meanings-index';
+import { getCareerMeaningByCardAndPosition } from '@/features/tarot/lib/career/position-meanings-index';
+import { getProblemSolvingMeaningByCardAndPosition } from '@/features/tarot/lib/problem-solving/position-meanings-index';
 import { getRelationshipAnalysisMeaningByCardAndPosition } from '@/features/tarot/lib/relationship-analysis/position-meanings-index';
 import { getRelationshipProblemsMeaningByCardAndPosition } from '@/features/tarot/lib/relationship-problems/position-meanings-index';
 import { getMarriageMeaningByCardAndPosition } from '@/features/tarot/lib/marriage/position-meanings-index';
 import { getNewLoverCardMeaning } from '@/features/tarot/lib/new-lover/position-meanings-index';
+import { getSituationAnalysisMeaningByCardAndPosition } from '@/features/tarot/lib/situation-analysis/position-meanings-index';
 
 interface CardDetailsProps {
   card: TarotCard;
   isReversed: boolean;
   position: number | null;
   onClose: () => void;
-  spreadType: 'love' | 'career' | 'problem-solving' | 'situation-analysis' | 'relationship-analysis' | 'relationship-problems' | 'marriage' | 'new-lover';
+  spreadType:
+    | 'love'
+    | 'career'
+    | 'problem-solving'
+    | 'situation-analysis'
+    | 'relationship-analysis'
+    | 'relationship-problems'
+    | 'marriage'
+    | 'new-lover';
   positionInfo?: {
     title: string;
     desc: string;
@@ -126,6 +137,54 @@ const CardDetails: React.FC<CardDetailsProps> = ({
         }
       }
 
+      if (spreadType === 'career' && positionParam) {
+        // Kariyer açılımı için pozisyon bazlı anlamı al
+        const posMeaning = getCareerMeaningByCardAndPosition(
+          cardParam,
+          positionParam,
+          isReversedParam
+        );
+
+        if (posMeaning) {
+          const meaning = isReversedParam
+            ? posMeaning.reversed
+            : posMeaning.upright;
+          return meaning;
+        }
+      }
+
+      if (spreadType === 'problem-solving' && positionParam) {
+        // Problem çözme açılımı için pozisyon bazlı anlamı al
+        const posMeaning = getProblemSolvingMeaningByCardAndPosition(
+          cardParam,
+          positionParam,
+          isReversedParam
+        );
+
+        if (posMeaning) {
+          const meaning = isReversedParam
+            ? posMeaning.reversed
+            : posMeaning.upright;
+          return meaning;
+        }
+      }
+
+      if (spreadType === 'situation-analysis' && positionParam) {
+        // Durum analizi açılımı için pozisyon bazlı anlamı al
+        const posMeaning = getSituationAnalysisMeaningByCardAndPosition(
+          cardParam,
+          positionParam,
+          isReversedParam
+        );
+
+        if (posMeaning) {
+          const meaning = isReversedParam
+            ? posMeaning.reversed
+            : posMeaning.upright;
+          return meaning;
+        }
+      }
+
       if (spreadType === 'relationship-analysis' && positionParam) {
         // İlişki analizi için pozisyon bazlı anlamı al
         const posMeaning = getRelationshipAnalysisMeaningByCardAndPosition(
@@ -185,72 +244,7 @@ const CardDetails: React.FC<CardDetailsProps> = ({
       return fallbackMeaning || 'Bu kart için anlam bulunamadı.';
     };
 
-    const getKeywordsByTypeWithParams = () => {
-      if (spreadType === 'love' && positionParam) {
-        // Doğrudan pozisyon bazlı anahtar kelimeleri al
-        const posMeaning = getLoveMeaningByCardAndPosition(
-          cardParam.name,
-          positionParam
-        );
-
-        if (posMeaning) {
-          if (Array.isArray(posMeaning.keywords)) {
-            return posMeaning.keywords;
-          } else if (
-            typeof posMeaning.keywords === 'string' &&
-            posMeaning.keywords
-          ) {
-            const keywords = (posMeaning.keywords as string)
-              .split(',')
-              .map((k: any) => k.trim());
-            return keywords;
-          }
-        }
-      }
-
-      if (spreadType === 'relationship-analysis' && positionParam) {
-        // İlişki analizi için pozisyon bazlı anahtar kelimeleri al
-        const posMeaning = getRelationshipAnalysisMeaningByCardAndPosition(
-          cardParam,
-          positionParam,
-          isReversedParam
-        );
-
-        if (posMeaning && posMeaning.keywords) {
-          return posMeaning.keywords;
-        }
-      }
-
-      if (spreadType === 'relationship-problems' && positionParam) {
-        // İlişki sorunları için pozisyon bazlı anahtar kelimeleri al
-        const posMeaning = getRelationshipProblemsMeaningByCardAndPosition(
-          cardParam,
-          positionParam,
-          isReversedParam
-        );
-
-        if (posMeaning && posMeaning.keywords) {
-          return posMeaning.keywords;
-        }
-      }
-
-      if (spreadType === 'marriage' && positionParam) {
-        // Evlilik açılımı için pozisyon bazlı anahtar kelimeleri al
-        const posMeaning = getMarriageMeaningByCardAndPosition(
-          cardParam,
-          positionParam,
-          isReversedParam
-        );
-
-        if (posMeaning && posMeaning.keywords) {
-          return posMeaning.keywords;
-        }
-      }
-
-      // Fallback: Pozisyon bazlı anahtar kelimeler bulunamazsa kartın genel anahtar kelimelerini göster
-      const fallbackKeywords = cardParam.keywordsTr || cardParam.keywords || [];
-      return Array.isArray(fallbackKeywords) ? fallbackKeywords : [];
-    };
+    // getKeywordsByTypeWithParams fonksiyonu kaldırıldı - artık context kullanılıyor
 
     return (
       <div className='w-full space-y-4'>
@@ -260,33 +254,104 @@ const CardDetails: React.FC<CardDetailsProps> = ({
             className={`font-semibold text-xl text-${themeSettings[spreadType].theme}-300 mb-2 border-b-2 border-${themeSettings[spreadType].theme}-500/50 pb-1`}
           >
             {positionParam
-              ? `Pozisyon ${positionParam} - Aşk Anlamı`
+              ? `Pozisyon ${positionParam} - ${
+                  spreadType === 'career'
+                    ? 'Kariyer Anlamı'
+                    : spreadType === 'problem-solving'
+                      ? 'Problem Çözme Anlamı'
+                      : spreadType === 'situation-analysis'
+                        ? 'Durum Analizi Anlamı'
+                        : spreadType === 'marriage'
+                          ? 'Evlilik Anlamı'
+                          : spreadType === 'new-lover'
+                            ? 'Yeni Sevgili Anlamı'
+                            : spreadType === 'relationship-analysis'
+                              ? 'İlişki Analizi Anlamı'
+                              : spreadType === 'relationship-problems'
+                                ? 'İlişki Sorunları Anlamı'
+                                : 'Aşk Anlamı'
+                }`
               : 'Kart Anlamı'}
           </h3>
           <p className='text-gray-200 leading-relaxed'>
             {getMeaningByTypeWithParams()}
           </p>
         </div>
-        {/* Anahtar Kelimeler */}
+        {/* Bağlam */}
         <div>
           <h3
             className={`font-semibold text-xl text-${themeSettings[spreadType].theme}-300 mb-2 border-b-2 border-${themeSettings[spreadType].theme}-500/50 pb-1`}
           >
             {positionParam
-              ? `Pozisyon ${positionParam} - Anahtar Kelimeler`
-              : 'Anahtar Kelimeler'}
+              ? `Pozisyon ${positionParam} - Bağlam`
+              : 'Bağlam'}
           </h3>
-          <div className='flex flex-wrap gap-2'>
-            {getKeywordsByTypeWithParams().map(
-              (keyword: string, index: number) => (
-                <span
-                  key={index}
-                  className={`bg-${themeSettings[spreadType].theme}-500/20 text-${themeSettings[spreadType].theme}-200 px-3 py-1 rounded-full text-sm`}
-                >
-                  {keyword}
-                </span>
-              )
-            )}
+          <div className={`text-${themeSettings[spreadType].theme}-200 text-sm leading-relaxed italic`}>
+            {(() => {
+              // Tüm açılımlar için context'i al
+              if (positionParam) {
+                if (spreadType === 'problem-solving') {
+                  const posMeaning = getProblemSolvingMeaningByCardAndPosition(
+                    cardParam,
+                    positionParam,
+                    isReversedParam
+                  );
+                  return posMeaning?.context || 'Bağlam bilgisi bulunamadı.';
+                }
+                
+                if (spreadType === 'love') {
+                  const posMeaning = getLoveMeaningByCardAndPosition(
+                    cardParam.name,
+                    positionParam
+                  );
+                  return posMeaning?.context || 'Bağlam bilgisi bulunamadı.';
+                }
+                
+                if (spreadType === 'career') {
+                  const posMeaning = getCareerMeaningByCardAndPosition(
+                    cardParam,
+                    positionParam,
+                    isReversedParam
+                  );
+                  return posMeaning?.context || 'Bağlam bilgisi bulunamadı.';
+                }
+                
+                if (spreadType === 'situation-analysis') {
+                  const posMeaning = getSituationAnalysisMeaningByCardAndPosition(
+                    cardParam,
+                    positionParam,
+                    isReversedParam
+                  );
+                  return posMeaning?.context || 'Bağlam bilgisi bulunamadı.';
+                }
+                
+                if (spreadType === 'relationship-analysis') {
+                  const posMeaning = getRelationshipAnalysisMeaningByCardAndPosition(
+                    cardParam,
+                    positionParam,
+                    isReversedParam
+                  );
+                  // Relationship analysis'te context yok, advice kullan
+                  return posMeaning?.advice || 'Bu pozisyon için özel bağlam bilgisi bulunmuyor.';
+                }
+                
+                if (spreadType === 'relationship-problems') {
+                  // Relationship problems'te context yok
+                  return 'Bu pozisyon için özel bağlam bilgisi bulunmuyor.';
+                }
+                
+                if (spreadType === 'marriage') {
+                  // Marriage'te context yok
+                  return 'Bu pozisyon için özel bağlam bilgisi bulunmuyor.';
+                }
+                
+                if (spreadType === 'new-lover') {
+                  // New lover'da context yok
+                  return 'Bu pozisyon için özel bağlam bilgisi bulunmuyor.';
+                }
+              }
+              return 'Bağlam bilgisi bulunamadı.';
+            })()}
           </div>
         </div>
       </div>

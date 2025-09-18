@@ -364,6 +364,9 @@ export default function NewLoverReading({
           metadata: {
             duration,
             platform: 'web',
+            readingFormat: selectedReadingType, // Sesli/yazılı bilgisi
+            readingFormatTr: selectedReadingType === READING_TYPES.DETAILED ? 'Sesli' : 
+                            selectedReadingType === READING_TYPES.WRITTEN ? 'Yazılı' : 'Basit',
           },
           timestamp: Date.now(),
         };

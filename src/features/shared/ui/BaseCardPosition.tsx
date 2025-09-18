@@ -44,6 +44,7 @@ Gereklilik ve Kullanım Durumu:
 'use client';
 
 import type { TarotCard } from '@/features/tarot/lib/a-tarot-helpers';
+import { useTranslations } from '@/hooks/useTranslations';
 import { ReactElement } from 'react';
 
 interface CardRendererProps {
@@ -97,6 +98,7 @@ export default function BaseCardPosition({
   cardSize = 'medium',
   colorScheme = 'default',
 }: BaseCardPositionProps) {
+  const { t } = useTranslations();
   const hasCard = _card !== null;
 
   // Renk şemalarını tanımla
@@ -276,9 +278,12 @@ export default function BaseCardPosition({
                   🃏
                 </span>
                 <div className='text-[10px] md:text-xs text-gray-400 leading-tight break-words hyphens-auto'>
-                  {positionInfo.title.length > 8
-                    ? positionInfo.title.substring(0, 8) + '...'
-                    : positionInfo.title}
+                  {(() => {
+                    const translatedTitle = t(positionInfo.title);
+                    return translatedTitle.length > 8
+                      ? translatedTitle.substring(0, 8) + '...'
+                      : translatedTitle;
+                  })()}
                 </div>
               </>
             )}

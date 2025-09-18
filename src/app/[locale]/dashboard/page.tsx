@@ -66,13 +66,13 @@ import BottomNavigation from '@/features/shared/layout/BottomNavigation';
 import ReadingDetailModal from '@/features/shared/ui/ReadingDetailModal';
 // Profil düzenleme modal bileşeni
 import ProfileModal from '@/features/dashboard/components/shared/ProfileModal';
-// i18n hook'u
-import { useTranslations } from '@/hooks/useTranslations';
+// i18n hook'u - şu an kullanılmıyor
+// import { useTranslations } from '@/hooks/useTranslations';
 
 // Ana Dashboard sayfası bileşeni - Modüler yapı
 export default function DashboardPage() {
-  // i18n hook'u
-  const { t } = useTranslations();
+  // i18n hook'u - şu an kullanılmıyor
+  // const { t } = useTranslations();
 
   // Dashboard veri yönetimi hook'u
   const {

@@ -455,6 +455,9 @@ export default function LoveReading({
             ipHash: 'hashed_ip_address', // Güvenlik için IP hash
             userAgent:
               typeof navigator !== 'undefined' ? navigator.userAgent : '',
+            readingFormat: selectedReadingType, // Sesli/yazılı bilgisi
+            readingFormatTr: selectedReadingType === READING_TYPES.DETAILED ? 'Sesli' : 
+                            selectedReadingType === READING_TYPES.WRITTEN ? 'Yazılı' : 'Basit',
           },
           timestamp: new Date().toISOString(),
           createdAt: new Date(),

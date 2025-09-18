@@ -378,7 +378,7 @@ export default function MoneyReading({
         // Standardize edilmiş veri yapısı
         const readingData = {
           userId: 'anonymous-user', // User ID kaldırıldı - login sistemi kaldırıldı
-          readingType: 'money',
+          readingType: 'money-spread',
           status: 'completed',
           // creditCost kaldırıldı
           title: 'Para Açılımı - Detaylı Kişisel Okuma',
@@ -413,6 +413,9 @@ export default function MoneyReading({
             ipHash: 'hashed_ip_address', // Güvenlik için IP hash
             userAgent:
               typeof navigator !== 'undefined' ? navigator.userAgent : '',
+            readingFormat: selectedReadingType, // Sesli/yazılı bilgisi
+            readingFormatTr: selectedReadingType === READING_TYPES.DETAILED ? 'Sesli' : 
+                            selectedReadingType === READING_TYPES.WRITTEN ? 'Yazılı' : 'Basit',
           },
           timestamp: new Date().toISOString(),
           createdAt: new Date(),
@@ -423,20 +426,21 @@ export default function MoneyReading({
         const saveResult = await saveReadingToSupabase(readingData);
 
         if (saveResult.success) {
+          // Başarı toast'ını hemen göster
           showToast('Okumanız başarıyla kaydedildi!', 'success');
+          
+          // Başarı modal'ını göster
+          setShowSuccessModal(true);
+
+          // Kısa süre sonra ana sayfaya yönlendir
+          setTimeout(() => {
+            setShowSuccessModal(false);
+            router.push('/');
+          }, 1500); // 3 saniyeden 1.5 saniyeye düşürüldü
         } else {
           // Okuma kaydetme hatası
           showToast('Okuma kaydedilirken bir hata oluştu.', 'error');
         }
-
-        // Başarı modal'ını göster
-        setShowSuccessModal(true);
-
-        // 3 saniye sonra modal'ı kapat ve ana sayfaya yönlendir
-        setTimeout(() => {
-          setShowSuccessModal(false);
-          router.push('/');
-        }, 3000);
         return;
       }
     } catch (error) {

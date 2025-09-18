@@ -38,6 +38,7 @@ import { useTarotReading } from '@/hooks/useTarotReading';
 import { useTranslations } from '@/hooks/useTranslations';
 import { useAuth } from '@/hooks/useAuth';
 import { useReadingCredits } from '@/hooks/useReadingCredits';
+import { useToast } from '@/hooks/useToast';
 import { findSpreadById } from '@/lib/constants/tarotSpreads';
 import {
   SITUATION_ANALYSIS_POSITIONS_INFO,
@@ -63,6 +64,12 @@ export default function SituationAnalysisReading({
   const { t } = useTranslations();
   const { user } = useAuth();
   const situationAnalysisSpread = findSpreadById('situation-analysis-spread');
+  
+  console.log('🔍 SituationAnalysisReading component loaded:', {
+    spread: situationAnalysisSpread,
+    user: user?.id,
+    translations: !!t
+  });
 
   // Kredi yönetimi
   const detailedCredits = useReadingCredits('SITUATION_ANALYSIS_DETAILED');
@@ -159,7 +166,7 @@ export default function SituationAnalysisReading({
     if (!meaning) {
       return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
     }
-    return meaning.meaning;
+    return isReversed ? meaning.reversed : meaning.upright;
   };
 
   // Basit yorum oluştur
@@ -259,6 +266,9 @@ export default function SituationAnalysisReading({
           metadata: {
             duration,
             platform: 'web',
+            readingFormat: selectedReadingType, // Sesli/yazılı bilgisi
+            readingFormatTr: selectedReadingType === READING_TYPES.DETAILED ? 'Sesli' : 
+                            selectedReadingType === READING_TYPES.WRITTEN ? 'Yazılı' : 'Basit',
           },
           timestamp: Date.now(),
         };
@@ -266,42 +276,42 @@ export default function SituationAnalysisReading({
         // Database'e kaydet
         const saveResult = await saveReadingToSupabase(readingData);
         if (saveResult.success) {
-          // Durum analizi okuması kaydedildi
+          console.log('Durum analizi okuması kaydedildi:', saveResult.id);
           
-          // Email gönderimi
-          try {
-            const emailResponse = await fetch('/api/send-reading-email', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({
-                readingId: saveResult.id,
-              }),
-            });
-
-            if (emailResponse.ok) {
-              // Email gönderimi başarılı
-            } else {
-              // Email gönderimi başarısız
-            }
-          } catch (error) {
-            // Email gönderimi hatası
-          }
-
+          // Başarı toast'ını hemen göster
           showToast('Okumanız başarıyla kaydedildi!', 'success');
+          
+          // Başarı modal'ını göster
+          setShowSuccessModal(true);
+
+          // Email gönderimi arka planda (asenkron)
+          fetch('/api/send-reading-email', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              readingId: saveResult.id,
+            }),
+          }).then(response => {
+            if (response.ok) {
+              console.log('✅ Email gönderimi başarılı');
+            } else {
+              console.error('❌ Email gönderimi başarısız');
+            }
+          }).catch(error => {
+            console.error('❌ Email gönderimi hatası:', error);
+          });
+
+          // Kısa süre sonra ana sayfaya yönlendir
+          setTimeout(() => {
+            setShowSuccessModal(false);
+            router.push('/');
+          }, 1500); // 3 saniyeden 1.5 saniyeye düşürüldü
         } else {
+          console.error('Okuma kaydetme hatası:', saveResult.error);
           showToast('Okuma kaydedilirken bir hata oluştu.', 'error');
         }
-
-        // Başarı modal'ını göster
-        setShowSuccessModal(true);
-
-        // 3 saniye sonra modal'ı kapat ve ana sayfaya yönlendir
-        setTimeout(() => {
-          setShowSuccessModal(false);
-          router.push('/');
-        }, 3000);
         return;
       }
     } catch (error) {
@@ -346,6 +356,8 @@ export default function SituationAnalysisReading({
           p_metadata: {
             duration: readingData.metadata.duration,
             platform: readingData.metadata.platform,
+            readingFormat: readingData.metadata.readingFormat,
+            readingFormatTr: readingData.metadata.readingFormatTr,
           },
           p_idempotency_key: `reading_${user.id}_${readingData.timestamp}`,
         }
@@ -548,6 +560,18 @@ export default function SituationAnalysisReading({
               getPositionSpecificInterpretation={(card, position, isReversed) =>
                 getSituationAnalysisCardMeaning(card, position, isReversed)
               }
+              getCardMeaning={(card) => {
+                const position = selectedCards.findIndex(c => c?.id === card.id) + 1;
+                const cardIsReversed = isReversed[position - 1] || false;
+                const meaning = getSituationAnalysisMeaningByCardAndPosition(card, position, cardIsReversed);
+                return meaning ? {
+                  context: meaning.context,
+                  keywords: meaning.keywords,
+                  upright: meaning.upright,
+                  reversed: meaning.reversed
+                } : null;
+              }}
+              showContext={true}
             />
 
             {/* Okumayı Kaydet Butonu - Sadece DETAILED/WRITTEN için */}
@@ -560,7 +584,7 @@ export default function SituationAnalysisReading({
                   className='px-8 py-4 bg-gradient-to-r from-green-600 to-emerald-500 hover:from-green-700 hover:to-emerald-600 text-white font-semibold rounded-2xl transition-all disabled:opacity-60 disabled:cursor-not-allowed shadow-lg'
                 >
                   {isSavingReading
-                    ? t('situationAnalysis.modals.savingReading')
+                    ? '📝 Okuma kaydediliyor...'
                     : t('situationAnalysis.modals.saveReading')}
                 </button>
               </div>
@@ -598,6 +622,11 @@ export default function SituationAnalysisReading({
             <div className='w-full bg-green-800/30 rounded-full h-2 mb-4'>
               <div className='bg-gradient-to-r from-green-400 to-green-600 h-2 rounded-full animate-pulse'></div>
             </div>
+            Problem buldum! readingType: 'situation-analysis' kullanılıyor ama bu enum değeri mevcut değil. Daha önce kontrol ettiğimiz enum değerleri: 'tarot', 'numerology', 'love', 'career', 'general'.            
+            {/* Hızlı yönlendirme bilgisi */}
+            <p className='text-green-300 text-xs'>
+              Ana sayfaya yönlendiriliyorsunuz...
+            </p>
           </div>
         </div>
       )}

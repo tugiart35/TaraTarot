@@ -56,6 +56,7 @@ import { useTarotReading } from '@/hooks/useTarotReading';
 import { useTranslations } from '@/hooks/useTranslations';
 import { useAuth } from '@/hooks/useAuth';
 import { useReadingCredits } from '@/hooks/useReadingCredits';
+import { useToast } from '@/hooks/useToast';
 import { findSpreadById } from '@/lib/constants/tarotSpreads';
 import {
   RELATIONSHIP_PROBLEMS_POSITIONS_INFO,
@@ -372,7 +373,7 @@ export default function RelationshipProblemsReading({
         // Standardize edilmiş veri yapısı
         const readingData = {
           userId: user?.id || 'anonymous-user',
-          readingType: 'relationship-analysis',
+          readingType: 'relationship-problems',
           status: 'completed',
           title: 'İlişki Analizi Açılımı - Detaylı Kişisel Okuma',
           interpretation: generateBasicInterpretation(),
@@ -395,6 +396,9 @@ export default function RelationshipProblemsReading({
           metadata: {
             duration,
             platform: 'web',
+            readingFormat: selectedReadingType, // Sesli/yazılı bilgisi
+            readingFormatTr: selectedReadingType === READING_TYPES.DETAILED ? 'Sesli' : 
+                            selectedReadingType === READING_TYPES.WRITTEN ? 'Yazılı' : 'Basit',
           },
           timestamp: Date.now(),
         };

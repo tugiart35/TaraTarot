@@ -604,6 +604,8 @@
     "position2": "Physical/Sexual Connection",
     "position3": "Emotional/Spiritual Connection",
     "position4": "Long-term Outcome",
+    "cardspreadmeaning2": "A special 4-card spread for relationships and emotional bonds",
+    "loveSpreadName": "Love Spread",
     "position": "Position",
     "reversed": "Reversed",
     "upright": "Upright",
@@ -1772,5 +1774,12 @@
         ]
       }
     }
+  },
+  "tarotSpreadSelector": {
+    "scrollHint": "Scroll to see more spreads",
+    "spreadMeaning": "Meaning of This Spread",
+    "spreadPositions": "Spread Positions:",
+    "morePositions": "more positions...",
+    "showLess": "Show less"
   }
 }

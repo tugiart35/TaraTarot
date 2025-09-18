@@ -55,6 +55,7 @@ import { useTarotReading } from '@/hooks/useTarotReading';
 import { useTranslations } from '@/hooks/useTranslations';
 import { useAuth } from '@/hooks/useAuth';
 import { useReadingCredits } from '@/hooks/useReadingCredits';
+import { useToast } from '@/hooks/useToast';
 import { findSpreadById } from '@/lib/constants/tarotSpreads';
 import {
   RELATIONSHIP_ANALYSIS_POSITIONS_INFO,
@@ -394,6 +395,9 @@ export default function RelationshipAnalysisReading({
           metadata: {
             duration,
             platform: 'web',
+            readingFormat: selectedReadingType, // Sesli/yazılı bilgisi
+            readingFormatTr: selectedReadingType === READING_TYPES.DETAILED ? 'Sesli' : 
+                            selectedReadingType === READING_TYPES.WRITTEN ? 'Yazılı' : 'Basit',
           },
           timestamp: Date.now(),
         };

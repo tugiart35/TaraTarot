@@ -660,6 +660,8 @@
     "position2": "Fizička/Seksualna Veza",
     "position3": "Emocionalna/Duhovna Veza",
     "position4": "Dugoročan Ishod",
+    "cardspreadmeaning2": "Posebno 4-kartno širenje za veze i emocionalne veze",
+    "loveSpreadName": "Ljubavni Raspor",
     "position": "Pozicija",
     "reversed": "Obrnuto",
     "upright": "Uspravno",
@@ -1804,5 +1806,12 @@
         ]
       }
     }
+  },
+  "tarotSpreadSelector": {
+    "scrollHint": "Skrolujte da vidite više rasporeda",
+    "spreadMeaning": "Značenje Ovog Rasporeda",
+    "spreadPositions": "Pozicije Rasporeda:",
+    "morePositions": "pozicija više...",
+    "showLess": "Prikaži manje"
   }
 }

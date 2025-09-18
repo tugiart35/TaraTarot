@@ -125,7 +125,7 @@ export interface TarotSpread {
 const lovePositions: TarotCardPosition[] = [
   {
     id: 1,
-    title: 'İlgi Duyduğun Kişi',
+    title: 'readingModal.position1',
     description: 'Hakkında soru sorduğun kişi',
     className:
       'absolute top-[25%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-20',
@@ -134,7 +134,7 @@ const lovePositions: TarotCardPosition[] = [
   },
   {
     id: 2,
-    title: 'Fiziksel/Cinsel Bağlantı',
+    title: 'readingModal.position2',
     description: 'Fiziksel ve cinsel bağlantınız',
     className:
       'absolute top-1/2 left-[25%] -translate-x-1/2 -translate-y-1/2 z-20',
@@ -143,7 +143,7 @@ const lovePositions: TarotCardPosition[] = [
   },
   {
     id: 3,
-    title: 'Duygusal/Ruhsal Bağlantı',
+    title: 'readingModal.position3',
     description: 'Duygusal ve ruhsal bağlantınız',
     className:
       'absolute top-1/2 left-[75%] -translate-x-1/2 -translate-y-1/2 z-20',
@@ -152,7 +152,7 @@ const lovePositions: TarotCardPosition[] = [
   },
   {
     id: 4,
-    title: 'Uzun Vadeli Sonuç',
+    title: 'readingModal.position4',
     description: 'İlişkinin uzun vadeli sonucu',
     className:
       'absolute top-[75%] left-[37.5%] -translate-x-1/2 -translate-y-1/2 z-20',
@@ -165,42 +165,49 @@ const lovePositions: TarotCardPosition[] = [
 const careerPositions: TarotCardPosition[] = [
   {
     id: 1,
-    title: 'Mevcut Durumunuz',
+    title: 'Gerçekten istediğim kariyer bu mu?',
+    desc: 'Kariyer tercihlerinizi sorgulayın',
     description:
-      'Şu anki kariyer durumunuz ve iş hayatınızdaki mevcut konumunuz',
-    className:
-      'absolute top-1/2 left-[15%] -translate-x-1/2 -translate-y-1/2 z-20',
-    x: 15,
-    y: 50,
+      'Mevcut kariyerinizin gerçekten istediğiniz kariyer olup olmadığını değerlendirin',
   },
   {
     id: 2,
-    title: 'Engeller ve Zorluklar',
-    description:
-      'Kariyerinizde karşılaştığınız engeller ve aşmanız gereken zorluklar',
-    className:
-      'absolute top-1/2 left-[38%] -translate-x-1/2 -translate-y-1/2 z-20',
-    x: 38,
-    y: 50,
+    title: 'Kariyerimi geliştirmek için hangi adımları atabilirim?',
+    desc: 'Kariyer gelişim adımları',
+    description: 'Kariyerinizi ilerletmek için atabileceğiniz somut adımlar',
   },
   {
     id: 3,
-    title: 'Fırsatlar ve Potansiyel',
+    title: 'Kariyerimde değiştiremediğim taraflar var mı?',
+    desc: 'Değiştirilemeyen faktörler',
     description:
-      'Kariyerinizde önünüzdeki fırsatlar ve potansiyel gelişim alanları',
-    className:
-      'absolute top-1/2 left-[62%] -translate-x-1/2 -translate-y-1/2 z-20',
-    x: 62,
-    y: 50,
+      'Kariyerinizde kontrol edemediğiniz veya değiştiremediğiniz unsurlar',
   },
   {
     id: 4,
-    title: 'Gelecek ve Hedefler',
-    description: 'Kariyer hedefleriniz ve uzun vadeli gelecek planlarınız',
-    className:
-      'absolute top-1/2 left-[85%] -translate-x-1/2 -translate-y-1/2 z-20',
-    x: 85,
-    y: 50,
+    title: 'Kariyerimde elimden gelenin en iyisini yapıyor muyum?',
+    desc: 'Mevcut performans değerlendirmesi',
+    description:
+      'Şu anki kariyerinizde gösterdiğiniz performans ve çaba seviyesi',
+  },
+  {
+    id: 5,
+    title: 'Kariyerime yardımcı olacak ne gibi değişiklikler yapabilirim?',
+    desc: 'Yapılabilecek değişiklikler',
+    description:
+      'Kariyerinize olumlu katkı sağlayacak değişiklikler ve iyileştirmeler',
+  },
+  {
+    id: 6,
+    title: 'Geçmişimdeki hangi engeller şimdiki kariyerimi etkiliyor?',
+    desc: 'Geçmişten gelen engeller',
+    description: 'Geçmiş deneyimlerinizin mevcut kariyerinizi nasıl etkilediği',
+  },
+  {
+    id: 7,
+    title: 'Sonuç ne olacak?',
+    desc: 'Genel sonuç ve öngörü',
+    description: 'Kariyer yolculuğunuzun genel sonucu ve gelecekteki öngörüler',
   },
 ];
 
@@ -772,8 +779,8 @@ export const moneyPositions: TarotCardPosition[] = [
 export const tarotSpreads: TarotSpread[] = [
   {
     id: 'love-spread',
-    name: 'Aşk Açılımı',
-    description: 'İlişkiler ve duygusal bağlar için 4 kartlık özel açılım',
+    name: 'readingModal.loveSpreadName',
+    description: 'readingModal.cardspreadmeaning2',
     cardCount: 4,
     component: LoveReading,
     icon: '💝',
@@ -792,8 +799,8 @@ export const tarotSpreads: TarotSpread[] = [
   {
     id: 'career-spread',
     name: 'Kariyer Açılımı',
-    description: 'Kariyer ve iş hayatı için 4 kartlık özel açılım',
-    cardCount: 4,
+    description: 'Kariyer ve iş hayatı için 7 kartlık özel açılım',
+    cardCount: 7,
     component: CareerReading,
     icon: '💼',
     color: 'blue',
@@ -929,7 +936,8 @@ export const tarotSpreads: TarotSpread[] = [
   {
     id: 'money-spread',
     name: 'Para Açılımı',
-    description: 'Finansal durum ve para konuları için 8 kartlık piramit açılım',
+    description:
+      'Finansal durum ve para konuları için 8 kartlık piramit açılım',
     cardCount: 8,
     component: MoneyReading,
     icon: '💰',

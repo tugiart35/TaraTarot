@@ -3,7 +3,7 @@ info:
 ---
 Dosya Amacı:
 - Kariyer açılımı için her kartın her pozisyondaki özel anlamlarını tanımlar
-- 78 tarot kartının 4 farklı kariyer pozisyonundaki yorumlarını içerir
+- 78 tarot kartının 7 farklı kariyer pozisyonundaki yorumlarını içerir
 - Kariyer odaklı yorumlar ve rehberlik sağlar
 
 Üretime Hazır mı?:
@@ -16,9 +16,42 @@ Kullanım:
 - Kart seçimi sonrası pozisyon bazlı yorumlar için kullanılır
 - Kariyer rehberliği ve önerileri sağlar
 ---
+
+Bağlı Dosyalar:
+- position-1-gercekten-istedigim-kariyer-bumu copy.ts
+- position-2-kariyer-gelistirmek-icin-hangi-adımlar-atabilirim.ts
+- position-3-kariyerimde-degisteremediğim-taraflar.ts
+- position-4-kariyerimde-elimden-gelenin-en-iyisi-yapıyormuyum copy.ts
+- position-5-kariyerimde-yardimci-olacak-ne-gibi-degisikler copy.ts
+- position-6-gecmisimdeki-hangi-engeller.ts.ts
+- position-7-sonuc-ne-olacak.ts
+
+Supabase Değişkenleri:
+- Bu dosya sadece statik veri içerir, Supabase bağlantısı yoktur
+
+Geliştirme Önerileri:
+- Tüm pozisyonlar için i18n desteği eklenebilir
+- Kart anlamları daha detaylandırılabilir
+- Pozisyon bazlı filtreleme fonksiyonları eklenebilir
+
+Hata Durumları:
+- Pozisyon bulunamadığında null döner
+- Kart bulunamadığında null döner
+
+Kullanım Durumları:
+- getCareerMeaningByCardAndPosition: Belirli kart ve pozisyon için anlam al
+- CAREER_POSITION_MEANINGS: Tüm pozisyon anlamlarına erişim
 */
 
 import type { TarotCard } from '@/types/tarot';
+import { getCardNameMappingSync } from '@/features/tarot/lib/love/card-name-mapping';
+import { position1Meanings } from './position-1-gercekten-istedigim-kariyer-bumu';
+import { position2Meanings } from './position-2-kariyer-gelistirmek-icin-hangi-adımlar-atabilirim';
+import { position3Meanings } from './position-3-kariyerimde-degisteremediğim-taraflar';
+import { position4Meanings } from './position-4-kariyerimde-elimden-gelenin-en-iyisi-yapıyormuyum';
+import { position5Meanings } from './position-5-kariyerimde-yardimci-olacak-ne-gibi-degisikler';
+import { position6Meanings } from './position-6-gecmisimdeki-hangi-engeller';
+import { position7Meanings } from './position-7-sonuc-ne-olacak';
 
 // Kariyer pozisyon anlamları interface'i
 export interface CareerPositionMeaning {
@@ -32,137 +65,139 @@ export interface CareerPositionMeaning {
   group: 'Majör Arkana' | 'Kupalar' | 'Kılıçlar' | 'Asalar' | 'Tılsımlar';
 }
 
-// Kariyer açılımı pozisyon anlamları
-export const CAREER_POSITION_MEANINGS: Record<number, CareerPositionMeaning[]> = {
-  1: [
-    // Mevcut Durumunuz - Pozisyon 1
-    {
-      id: 'fool-1',
-      card: 'The Fool',
-      position: 1,
-      upright: 'Yeni bir kariyer yolculuğuna başlıyorsunuz. Cesur adımlar atma zamanı. Yaratıcılığınızı ve potansiyelinizi keşfetme fırsatı.',
-      reversed: 'Kariyer kararlarında dikkatsizlik veya acelecilik. Planlama eksikliği nedeniyle zorluklar yaşayabilirsiniz.',
-      keywords: ['yeni başlangıç', 'cesaret', 'yaratıcılık', 'potansiyel'],
-      context: 'Mevcut kariyer durumunuzda yeni fırsatlar ve başlangıçlar',
-      group: 'Majör Arkana'
-    },
-    {
-      id: 'magician-1',
-      card: 'The Magician',
-      position: 1,
-      upright: 'Kariyerinizde güçlü bir konumdasınız. Yeteneklerinizi etkili şekilde kullanıyorsunuz. Hedeflerinize ulaşma gücünüz var.',
-      reversed: 'Potansiyelinizi tam kullanamıyorsunuz. Kendinize güven eksikliği veya kaynakları yanlış kullanma.',
-      keywords: ['güç', 'yetenek', 'hedef', 'başarı'],
-      context: 'Mevcut kariyer durumunuzda güçlü konum ve yetenekler',
-      group: 'Majör Arkana'
-    },
-    {
-      id: 'high-priestess-1',
-      card: 'The High Priestess',
-      position: 1,
-      upright: 'Sezgileriniz kariyerinizde size rehberlik ediyor. Gizli bilgiler veya fırsatlar keşfedebilirsiniz. İç bilgeliğinize güvenin.',
-      reversed: 'Sezgilerinizi görmezden geliyorsunuz. Gizli bilgileri kaçırıyor veya yanlış kararlar veriyor olabilirsiniz.',
-      keywords: ['sezgi', 'bilgelik', 'gizli bilgi', 'iç ses'],
-      context: 'Mevcut kariyer durumunuzda sezgisel rehberlik',
-      group: 'Majör Arkana'
-    },
-    // Daha fazla kart eklenebilir...
-  ],
-  2: [
-    // Engeller ve Zorluklar - Pozisyon 2
-    {
-      id: 'tower-2',
-      card: 'The Tower',
-      position: 2,
-      upright: 'Kariyerinizde beklenmedik değişiklikler veya krizler yaşayabilirsiniz. Eski yapıların yıkılması yeni fırsatlar yaratabilir.',
-      reversed: 'Değişimden kaçınmaya çalışıyorsunuz. Eski yapıları korumak sizi sınırlayabilir.',
-      keywords: ['değişim', 'kriz', 'yıkım', 'yeniden yapılanma'],
-      context: 'Kariyerinizde karşılaştığınız engeller ve zorluklar',
-      group: 'Majör Arkana'
-    },
-    {
-      id: 'devil-2',
-      card: 'The Devil',
-      position: 2,
-      upright: 'Kendinizi kariyerinizde sınırlayan düşünce kalıpları veya bağımlılıklar var. Özgürlüğünüzü kısıtlayan faktörler.',
-      reversed: 'Sınırlamaları aşmaya başlıyorsunuz. Özgürlüğünüze kavuşma sürecindesiniz.',
-      keywords: ['sınırlama', 'bağımlılık', 'özgürlük', 'kurtuluş'],
-      context: 'Kariyerinizde karşılaştığınız engeller ve zorluklar',
-      group: 'Majör Arkana'
-    },
-    // Daha fazla kart eklenebilir...
-  ],
-  3: [
-    // Fırsatlar ve Potansiyel - Pozisyon 3
-    {
-      id: 'star-3',
-      card: 'The Star',
-      position: 3,
-      upright: 'Kariyerinizde umut verici fırsatlar var. Yaratıcılığınız ve ilhamınız size yeni yollar açacak. Gelecek parlak.',
-      reversed: 'Umutlarınızı kaybetmiş olabilirsiniz. Yaratıcılığınızı yeniden keşfetme zamanı.',
-      keywords: ['umut', 'ilham', 'yaratıcılık', 'gelecek'],
-      context: 'Kariyerinizde önünüzdeki fırsatlar ve potansiyel',
-      group: 'Majör Arkana'
-    },
-    {
-      id: 'sun-3',
-      card: 'The Sun',
-      position: 3,
-      upright: 'Kariyerinizde büyük başarı ve tanınma fırsatları var. Yaratıcı projeler ve liderlik rolleri önünüzde.',
-      reversed: 'Başarıya ulaşmak için daha fazla çaba gerekebilir. Sabırlı olun ve hedeflerinize odaklanın.',
-      keywords: ['başarı', 'tanınma', 'liderlik', 'yaratıcılık'],
-      context: 'Kariyerinizde önünüzdeki fırsatlar ve potansiyel',
-      group: 'Majör Arkana'
-    },
-    // Daha fazla kart eklenebilir...
-  ],
-  4: [
-    // Gelecek ve Hedefler - Pozisyon 4
-    {
-      id: 'world-4',
-      card: 'The World',
-      position: 4,
-      upright: 'Kariyer hedeflerinize ulaşacaksınız. Tamamlanma ve başarı dönemi. Yeni döngüler başlayacak.',
-      reversed: 'Hedeflerinize ulaşmak için daha fazla zaman gerekebilir. Sabırlı olun ve çalışmaya devam edin.',
-      keywords: ['tamamlanma', 'başarı', 'hedef', 'döngü'],
-      context: 'Kariyer hedefleriniz ve uzun vadeli gelecek',
-      group: 'Majör Arkana'
-    },
-    {
-      id: 'ace-wands-4',
-      card: 'Ace of Wands',
-      position: 4,
-      upright: 'Kariyerinizde yeni projeler ve girişimler başlayacak. Yaratıcı enerji ve motivasyon yüksek olacak.',
-      reversed: 'Yeni projelerde gecikmeler olabilir. Enerjinizi doğru yöne kanalize etmeye odaklanın.',
-      keywords: ['yeni proje', 'girişim', 'yaratıcılık', 'motivasyon'],
-      context: 'Kariyer hedefleriniz ve uzun vadeli gelecek',
-      group: 'Asalar'
-    },
-    // Daha fazla kart eklenebilir...
-  ]
-};
+// Kariyer açılımı pozisyon anlamları - 7 pozisyonlu sistem
+export const CAREER_POSITION_MEANINGS: Record<number, CareerPositionMeaning[]> =
+  {
+    1: position1Meanings, // Gerçekten istediğim kariyer bu mu?
+    2: position2Meanings, // Kariyer geliştirmek için hangi adımlar atabilirim?
+    3: position3Meanings, // Kariyerimde değiştiremediğim taraflar
+    4: position4Meanings, // Kariyerimde elimden gelenin en iyisini yapıyor muyum?
+    5: position5Meanings, // Kariyerimde yardımcı olacak ne gibi değişikler
+    6: position6Meanings, // Geçmişimdeki hangi engeller
+    7: position7Meanings, // Sonuç ne olacak
+  };
 
 /**
  * Belirli bir kart ve pozisyon için kariyer anlamını getirir
+ * @param card - Tarot kartı
+ * @param position - Pozisyon numarası (1-7)
+ * @param isReversed - Kart ters mi?
+ * @returns Kariyer pozisyon anlamı veya null
  */
 export function getCareerMeaningByCardAndPosition(
   card: TarotCard,
   position: number,
   isReversed: boolean = false
 ): CareerPositionMeaning | null {
-  const positionMeanings = CAREER_POSITION_MEANINGS[position];
-  if (!positionMeanings) return null;
+  // Pozisyon 1-7 arasında olmalı
+  if (position < 1 || position > 7) {
+    return null;
+  }
 
-  const meaning = positionMeanings.find(m => 
-    m.card === card.name || m.card === card.nameTr
+  const positionMeanings = CAREER_POSITION_MEANINGS[position];
+  if (!positionMeanings) {
+    return null;
+  }
+
+  // Kart ismi eşleştirmesi için mapping kullan
+  const cardNameMapping = getCardNameMappingSync();
+
+  // Kartın İngilizce ismini bul
+  const englishCardName = cardNameMapping[card.nameTr] || card.name;
+
+  const meaning = positionMeanings.find(
+    m =>
+      m.card === card.name ||
+      m.card === card.nameTr ||
+      m.card === englishCardName
   );
 
-  if (!meaning) return null;
+  if (!meaning) {
+    return null;
+  }
 
+  // isReversed parametresine göre anlamları döndür
   return {
     ...meaning,
     upright: isReversed ? meaning.reversed : meaning.upright,
-    reversed: isReversed ? meaning.upright : meaning.reversed
+    reversed: isReversed ? meaning.upright : meaning.reversed,
   };
 }
 
+/**
+ * Belirli bir pozisyon için tüm kart anlamlarını getirir
+ * @param position - Pozisyon numarası (1-7)
+ * @returns Pozisyon anlamları array'i veya null
+ */
+export function getCareerMeaningsByPosition(
+  position: number
+): CareerPositionMeaning[] | null {
+  if (position < 1 || position > 7) {
+    return null;
+  }
+
+  return CAREER_POSITION_MEANINGS[position] || null;
+}
+
+/**
+ * Belirli bir kart için tüm pozisyon anlamlarını getirir
+ * @param card - Tarot kartı
+ * @returns Kart anlamları array'i
+ */
+export function getCareerMeaningsByCard(
+  card: TarotCard
+): CareerPositionMeaning[] {
+  const meanings: CareerPositionMeaning[] = [];
+  const cardNameMapping = getCardNameMappingSync();
+  const englishCardName = cardNameMapping[card.nameTr] || card.name;
+
+  for (let position = 1; position <= 7; position++) {
+    const positionMeanings = CAREER_POSITION_MEANINGS[position];
+    if (positionMeanings) {
+      const meaning = positionMeanings.find(
+        m =>
+          m.card === card.name ||
+          m.card === card.nameTr ||
+          m.card === englishCardName
+      );
+      if (meaning) {
+        meanings.push(meaning);
+      }
+    }
+  }
+
+  return meanings;
+}
+
+/**
+ * Tüm pozisyon anlamlarını getirir
+ * @returns Tüm pozisyon anlamları
+ */
+export function getAllCareerMeanings(): Record<
+  number,
+  CareerPositionMeaning[]
+> {
+  return CAREER_POSITION_MEANINGS;
+}
+
+// Pozisyon açıklamaları
+export const CAREER_POSITION_DESCRIPTIONS = {
+  1: 'Gerçekten istediğim kariyer bu mu?',
+  2: 'Kariyer geliştirmek için hangi adımlar atabilirim?',
+  3: 'Kariyerimde değiştiremediğim taraflar',
+  4: 'Kariyerimde elimden gelenin en iyisini yapıyor muyum?',
+  5: 'Kariyerimde yardımcı olacak ne gibi değişikler',
+  6: 'Geçmişimdeki hangi engeller',
+  7: 'Sonuç ne olacak',
+} as const;
+
+// Export edilen pozisyon arrayleri
+export {
+  position1Meanings,
+  position2Meanings,
+  position3Meanings,
+  position4Meanings,
+  position5Meanings,
+  position6Meanings,
+  position7Meanings,
+};

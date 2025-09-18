@@ -34,6 +34,8 @@ Kullanım durumu:
 'use client';
 
 import { TarotSpread } from '@/lib/constants/tarotSpreads';
+import { useTranslations } from '@/hooks/useTranslations';
+import { useState } from 'react';
 
 interface TarotSpreadSelectorProps {
   spreads: TarotSpread[];
@@ -48,6 +50,8 @@ export default function TarotSpreadSelector({
   onSpreadSelect,
   showDescription = true, // Varsayılan olarak açıklama göster
 }: TarotSpreadSelectorProps) {
+  const { t } = useTranslations();
+  const [showAllPositions, setShowAllPositions] = useState(false);
   return (
     <div className='mb-8'>
       {/* Enhanced Tab Navigation */}
@@ -67,7 +71,7 @@ export default function TarotSpreadSelector({
               <span className='text-xl transition-transform duration-300 group-hover:scale-110'>
                 {spread.icon}
               </span>
-              <span className='text-sm font-semibold'>{spread.name}</span>
+              <span className='text-sm font-semibold'>{t(spread.name)}</span>
               <span className='text-xs bg-white/20 px-2 py-1 rounded-full'>
                 {spread.cardCount}
               </span>
@@ -84,7 +88,7 @@ export default function TarotSpreadSelector({
           {spreads.length > 2 && (
             <div className='flex justify-center mb-3'>
               <div className='flex items-center gap-2 text-gray-400 text-xs'>
-                <span>Kaydırarak daha fazla açılım görün</span>
+                <span>{t('tarotSpreadSelector.scrollHint')}</span>
                 <div className='flex gap-1'>
                   <div className='w-1 h-1 bg-purple-400 rounded-full animate-pulse'></div>
                   <div
@@ -119,7 +123,7 @@ export default function TarotSpreadSelector({
                 >
                   <span className='text-lg'>{spread.icon}</span>
                   <span className='text-sm whitespace-nowrap'>
-                    {spread.name}
+                    {t(spread.name)}
                   </span>
                   <span className='text-xs bg-white/20 px-2 py-1 rounded-full'>
                     {spread.cardCount}
@@ -156,21 +160,23 @@ export default function TarotSpreadSelector({
             <div className='bg-gradient-to-r from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-6'>
               <h3 className='text-lg font-semibold text-purple-300 mb-3 flex items-center justify-center gap-2'>
                 <span className='text-2xl'>🔮</span>
-                Bu Açılımın Anlamı
+                {t('tarotSpreadSelector.spreadMeaning')}
               </h3>
               <p className='text-gray-200 leading-relaxed text-base'>
-                {spreads.find(s => s.id === selectedSpread)?.description}
+                {t(
+                  spreads.find(s => s.id === selectedSpread)?.description || ''
+                )}
               </p>
 
               {/* Açılım Pozisyonları */}
               <div className='mt-4 pt-4 border-t border-purple-500/20'>
                 <h4 className='text-sm font-medium text-purple-300 mb-3'>
-                  📋 Açılım Pozisyonları:
+                  📋 {t('tarotSpreadSelector.spreadPositions')}
                 </h4>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-2 text-sm'>
                   {spreads
                     .find(s => s.id === selectedSpread)
-                    ?.positions.slice(0, 4)
+                    ?.positions.slice(0, showAllPositions ? undefined : 4)
                     .map((position, index) => (
                       <div
                         key={position.id}
@@ -179,19 +185,24 @@ export default function TarotSpreadSelector({
                         <span className='text-purple-400 font-medium min-w-[20px]'>
                           {index + 1}.
                         </span>
-                        <span className='text-xs'>{position.title}</span>
+                        <span className='text-xs'>{t(position.title)}</span>
                       </div>
                     ))}
                   {spreads.find(s => s.id === selectedSpread)?.positions
                     .length &&
                     spreads.find(s => s.id === selectedSpread)!.positions
                       .length > 4 && (
-                      <div className='text-xs text-purple-400 col-span-full text-center mt-2'>
-                        +
-                        {spreads.find(s => s.id === selectedSpread)!.positions
-                          .length - 4}{' '}
-                        pozisyon daha...
-                      </div>
+                      <button
+                        onClick={() => setShowAllPositions(!showAllPositions)}
+                        className='text-xs text-purple-400 hover:text-purple-300 col-span-full text-center mt-2 transition-colors duration-200 cursor-pointer underline decoration-dotted underline-offset-2'
+                      >
+                        {showAllPositions
+                          ? t('tarotSpreadSelector.showLess')
+                          : `+${
+                              spreads.find(s => s.id === selectedSpread)!
+                                .positions.length - 4
+                            } ${t('tarotSpreadSelector.morePositions')}`}
+                      </button>
                     )}
                 </div>
               </div>

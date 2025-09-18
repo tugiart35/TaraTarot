@@ -544,6 +544,8 @@ export default function LoveGuidanceDetail({
         platform: 'web',
         ipHash: 'hashed_ip_address', // Güvenlik için IP hash
         userAgent: typeof navigator !== 'undefined' ? navigator.userAgent : '',
+        readingFormat: readingCode?.includes('written') ? 'written' : 'detailed', // Sesli/yazılı bilgisi
+        readingFormatTr: readingCode?.includes('written') ? 'Yazılı' : 'Sesli',
       },
       readingCode,
       timestamp: new Date().toISOString(),

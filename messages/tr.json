@@ -656,6 +656,8 @@
     "startFirstReading": "İlk Okumayı Başlat"
   },
   "readingModal": {
+    "cardspreadmeaning2":"İlişkiler ve duygusal bağlar için 4 kartlık özel açılım",
+    "loveSpreadName":"Aşk Açılımı",
     "completed": "Tamamlandı",
     "reviewed": "İncelendi",
     "pending": "Beklemede",
@@ -908,7 +910,8 @@
         "guideMessage": "Aşk rehberinizin mesajı: \"Doğru kişi, doğru zamanda karşınıza çıkacak. Kalbinizi açık tutun ve aşkın büyüsüne inanın.\"",
         "dateMessage": "Bu okuma {date} tarihinde size özel olarak hazırlanmıştır."
       }
-    }
+    },
+    "title": "Kaderinizi Keşfedin"
   },
   "seo": {
     "title": "Tarot Okuması - Kaderinizi Keşfedin",
@@ -963,13 +966,13 @@
       "resetPassword": "Şifre Sıfırla",
       "cancel": "İptal",
       "sendResetEmail": "Sıfırlama E-postası Gönder",
-      "validating": "Doğrulanıyor...",
-      "redirecting": "Yönlendiriliyor...",
-      "successLogin": "Başarıyla giriş yapıldı!",
-      "successRegister": "Hesap başarıyla oluşturuldu!",
+      "validating": "✅ Doğrulanıyor...",
+      "redirecting": "",
+      "successLogin": "Giriş başarılı! Yönlendiriliyorsunuz...",
+      "successRegister": "Kayıt başarılı! E-postanızı kontrol edin.",
       "errorOccurred": "Bir hata oluştu",
       "emailRequired": "E-posta adresi gerekli",
-      "emailInvalid": "Geçersiz e-posta adresi",
+      "emailInvalid": "Geçerli bir e-posta adresi girin",
       "passwordRequired": "Şifre gerekli",
       "passwordMinLength": "Şifre en az 6 karakter olmalı",
       "passwordMismatch": "Şifreler eşleşmiyor",
@@ -977,37 +980,18 @@
       "surnameRequired": "Soyad gerekli",
       "birthDateRequired": "Doğum tarihi gerekli",
       "genderRequired": "Cinsiyet seçimi gerekli",
-      "invalidCredentials": "Geçersiz giriş bilgileri",
+      "invalidCredentials": "Geçersiz e-posta veya şifre",
       "userAlreadyExists": "Bu e-posta adresi zaten kayıtlı",
       "databaseError": "Veritabanı hatası oluştu",
       "emailNotConfirmed": "E-posta adresi onaylanmamış",
       "tooManyRequests": "Çok fazla deneme yapıldı",
       "checkingAuth": "🔍 Giriş durumu kontrol ediliyor...",
-      "validating": "✅ Doğrulanıyor...",
-      "successLogin": "Giriş başarılı! Yönlendiriliyorsunuz...",
-      "successRegister": "Kayıt başarılı! E-postanızı kontrol edin.",
-      "errorOccurred": "Bir hata oluştu",
-      "noAccount": "Hesabınız yok mu? Kayıt olun",
-      "hasAccount": "Zaten hesabınız var mı? Giriş yapın",
-      "emailRequired": "E-posta adresi gerekli",
-      "emailInvalid": "Geçerli bir e-posta adresi girin",
-      "passwordRequired": "Şifre gerekli",
-      "passwordMinLength": "Şifre en az 6 karakter olmalı",
       "confirmPasswordRequired": "Şifre onayı gerekli",
       "passwordsNotMatch": "Şifreler eşleşmiyor",
-      "nameRequired": "Ad gerekli",
       "nameMinLength": "Ad en az 2 karakter olmalı",
-      "surnameRequired": "Soyad gerekli",
       "surnameMinLength": "Soyad en az 2 karakter olmalı",
-      "birthDateRequired": "Doğum tarihi gerekli",
       "birthDateMinAge": "13 yaşından küçük kullanıcılar kayıt olamaz",
       "birthDateMaxAge": "Geçerli bir doğum tarihi girin",
-      "genderRequired": "Cinsiyet seçimi gerekli",
-      "invalidCredentials": "Geçersiz e-posta veya şifre",
-      "userAlreadyExists": "Bu e-posta adresi zaten kayıtlı",
-      "rememberMe": "Beni hatırla",
-      "forgotPassword": "Şifremi unuttum",
-      "resetPassword": "Şifre Sıfırla",
       "resetPasswordTitle": "Şifre Sıfırlama",
       "resetPasswordSubtitle": "E-posta adresinizi girin, size şifre sıfırlama bağlantısı gönderelim",
       "resetPasswordEmailSent": "Şifre sıfırlama bağlantısı e-posta adresinize gönderildi",
@@ -1018,8 +1002,7 @@
       "facebookSignIn": "Facebook ile Giriş Yap",
       "googleSignUp": "Google ile Kayıt Ol",
       "facebookSignUp": "Facebook ile Kayıt Ol",
-      "socialLoginError": "Sosyal medya girişi başarısız oldu",
-      "redirecting": ""
+      "socialLoginError": "Sosyal medya girişi başarısız oldu"
     },
     "notice": {
       "checkEmail": "E-posta adresinizi kontrol edin ve üyeliğinizi onaylayın",
@@ -2421,5 +2404,12 @@
       "processing": "İşleniyor...",
       "confirm": "Onayla"
     }
+  },
+  "tarotSpreadSelector": {
+    "scrollHint": "Kaydırarak daha fazla açılım görün",
+    "spreadMeaning": "Bu Açılımın Anlamı",
+    "spreadPositions": "Açılım Pozisyonları:",
+    "morePositions": "pozisyon daha...",
+    "showLess": "Daha az göster"
   }
 }

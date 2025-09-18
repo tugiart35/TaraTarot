@@ -1,17 +1,120 @@
-/**
- * Situation Analysis (Durum Analizi) Açılımı Pozisyon Anlamları
- * Her kartın pozisyonuna göre özel anlamları
- */
+/*
+info:
+Bağlantılı dosyalar:
+- '@/lib/types/tarot': Tarot kartı tipi tanımları
+- '@/lib/constants/tarotSpreads': Tarot açılım konfigürasyonları
 
-import { TarotCard } from '@/lib/types/tarot';
+Dosyanın amacı:
+- Durum Analizi (Situation Analysis) Tarot açılımında her pozisyon için kart anlamlarını yönetir
+- Pozisyona, karta, anahtar kelimeye göre anlam arama ve filtreleme fonksiyonları sunar
+- Pozisyon başlıkları, açıklamaları ve ilgili meta verileri içerir
+- i18n desteği ile çoklu dil desteği sağlar
+
+Supabase değişkenleri ve tablolar:
+- Bu dosya sadece frontend tarafında kullanılır, doğrudan Supabase bağlantısı yok
+
+Geliştirme önerileri:
+- i18n desteği eklenebilir
+- Kart ismi mapping sistemi genişletilebilir
+- Arama ve filtreleme fonksiyonları geliştirilebilir
+
+Tespit edilen hatalar:
+- Yok
+
+Kullanım durumları:
+- getSituationAnalysisMeaningByCardAndPosition: gerekli
+- getSituationAnalysisPositions: gerekli
+- getSituationAnalysisStatistics: gerekli
+*/
+
+import { TarotCard } from '@/types/tarot';
+import { getCardNameMappingSync } from '@/features/tarot/lib/love/card-name-mapping';
+import {
+  position1Meanings,
+  getSituationAnalysisPosition1Meaning,
+  getSituationAnalysisPosition1MeaningByCardName,
+} from './position-1-gecmis-sebepler';
+import {
+  position2Meanings,
+  getSituationAnalysisPosition2Meaning,
+  getSituationAnalysisPosition2MeaningByCardName,
+} from './position-2-suanki-durum';
+import {
+  position3Meanings,
+  getSituationAnalysisPosition3Meaning,
+  getSituationAnalysisPosition3MeaningByCardName,
+} from './position-3-gizli-etkenler';
+import {
+  position4Meanings,
+  getSituationAnalysisPosition4Meaning,
+  getSituationAnalysisPosition4MeaningByCardName,
+} from './position-4-merkez-kart';
+import {
+  position5Meanings,
+  getSituationAnalysisPosition5Meaning,
+  getSituationAnalysisPosition5MeaningByCardName,
+} from './position-5-dis-etkenler';
+import {
+  position6Meanings,
+  getSituationAnalysisPosition6Meaning,
+  getSituationAnalysisPosition6MeaningByCardName,
+} from './position-6-tavsiye';
+import {
+  position7Meanings,
+  getSituationAnalysisPosition7Meaning,
+  getSituationAnalysisPosition7MeaningByCardName,
+} from './position-7-olasi-gelecek-sonuc';
 
 export interface SituationAnalysisPositionMeaning {
-  position: string;
+  id: string;
+  position: number;
+  card: string;
   cardName: string;
   isReversed: boolean;
-  meaning: string;
+  upright: string;
+  reversed: string;
   keywords: string[];
   advice?: string;
+  context: string;
+  group: 'Majör Arkana' | 'Kupalar' | 'Kılıçlar' | 'Asalar' | 'Tılsımlar';
+}
+
+// Kart grubunu belirleme fonksiyonu
+function getCardGroup(card: TarotCard | string): 'Majör Arkana' | 'Kupalar' | 'Kılıçlar' | 'Asalar' | 'Tılsımlar' {
+  if (typeof card === 'object') {
+    // TarotCard objesi ise
+    if (card.suit === 'major') {
+      return 'Majör Arkana';
+    }
+    if (card.suit === 'cups') {
+      return 'Kupalar';
+    }
+    if (card.suit === 'swords') {
+      return 'Kılıçlar';
+    }
+    if (card.suit === 'wands') {
+      return 'Asalar';
+    }
+    if (card.suit === 'pentacles') {
+      return 'Tılsımlar';
+    }
+    return 'Majör Arkana'; // fallback
+  } else {
+    // String ise
+    const name = card.toLowerCase();
+    
+    if (name.includes('kupalar') || name.includes('kadehler') || name.includes('pehara')) {
+      return 'Kupalar';
+    } else if (name.includes('kılıçlar') || name.includes('mačeva')) {
+      return 'Kılıçlar';
+    } else if (name.includes('asalar') || name.includes('štapova')) {
+      return 'Asalar';
+    } else if (name.includes('tılsımlar') || name.includes('altınlar') || name.includes('pentakla')) {
+      return 'Tılsımlar';
+    } else {
+      return 'Majör Arkana';
+    }
+  }
 }
 
 /**
@@ -22,89 +125,361 @@ export function getSituationAnalysisMeaningByCardAndPosition(
   position: number,
   isReversed: boolean = false
 ): SituationAnalysisPositionMeaning {
-  const baseMeaning = isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
-  const baseKeywords = card.keywords || [];
+  // Debug için console.log ekle
+  console.log('🔍 getSituationAnalysisMeaningByCardAndPosition called:', {
+    cardName: card.name,
+    cardNameTr: card.nameTr,
+    position,
+    isReversed
+  });
 
-  // Pozisyona göre özel anlamlar
+  // Pozisyon 1-7 arasında olmalı
+  if (position < 1 || position > 7) {
+    console.log('❌ Invalid position:', position);
+    return {
+      id: `situation-analysis-${position}-${card.id}-${isReversed ? 'reversed' : 'upright'}`,
+      position: 0,
+      card: card.name,
+      cardName: card.nameTr,
+      isReversed,
+      upright: card.meaningTr.upright,
+      reversed: card.meaningTr.reversed,
+      keywords: card.keywordsTr || card.keywords || [],
+      advice: 'Bu pozisyon için özel bir anlam tanımlanmamış.',
+      context: 'Tanımlanmamış pozisyon',
+      group: getCardGroup(card)
+    };
+  }
+
+  // Kart ismi mapping'ini al
+  const cardNameMapping = getCardNameMappingSync();
+  
+  // Kart ismini İngilizce'ye çevir - önce nameTr'yi dene, sonra name'i
+  const englishCardName = cardNameMapping[card.nameTr] || cardNameMapping[card.name] || card.name;
+  console.log('🔄 Card name mapping:', {
+    original: card.nameTr,
+    originalName: card.name,
+    mapped: englishCardName
+  });
+
+  // Pozisyon özel anlamları kontrol et
+  let positionMeaning = null;
+
   switch (position) {
     case 1:
-      return {
-        position: 'Geçmiş ya da Sebepler',
-        cardName: card.nameTr,
-        isReversed,
-        meaning: `${baseMeaning} Bu kart, mevcut durumunuzun geçmişteki kökenlerini ve sebeplerini gösteriyor. Yaşadığınız durumun temelinde yatan faktörleri anlamanıza yardımcı olur.`,
-        keywords: [...baseKeywords, 'geçmiş', 'sebepler', 'köken'],
-        advice: 'Geçmişi anlayın ama ona takılı kalmayın. Önemli olan şu anki durumunuzu iyileştirmektir.'
-      };
-
+      positionMeaning = getSituationAnalysisPosition1MeaningByCardName(englishCardName);
+      break;
     case 2:
-      return {
-        position: 'Şu Anki Durum',
-        cardName: card.nameTr,
-        isReversed,
-        meaning: `${baseMeaning} Bu kart, şu anda yaşadığınız durumu ve mevcut koşulları yansıtıyor. Gündemdeki konular ve anlık durumunuz hakkında bilgi verir.`,
-        keywords: [...baseKeywords, 'şimdi', 'mevcut durum', 'gündem'],
-        advice: 'Şu anki durumunuzu objektif olarak değerlendirin ve gerçekçi adımlar atın.'
-      };
-
+      positionMeaning = getSituationAnalysisPosition2MeaningByCardName(englishCardName);
+      break;
     case 3:
-      return {
-        position: 'Gizli Etkenler',
-        cardName: card.nameTr,
-        isReversed,
-        meaning: `${baseMeaning} Bu kart, bilinçaltınızda veya fark etmediğiniz alanlarda işleyen gizli faktörleri gösteriyor. Farkında olmadığınız etkileri ortaya çıkarır.`,
-        keywords: [...baseKeywords, 'gizli', 'bilinçaltı', 'fark edilmeyen'],
-        advice: 'Gizli faktörleri keşfetmek için iç gözlem yapın ve sezgilerinize güvenin.'
-      };
-
+      positionMeaning = getSituationAnalysisPosition3MeaningByCardName(englishCardName);
+      break;
     case 4:
-      return {
-        position: 'Merkez Kart',
-        cardName: card.nameTr,
-        isReversed,
-        meaning: `${baseMeaning} Bu kart, durumunuzun merkezini ve en önemli unsurlarını temsil ediyor. Hayatınızdaki en merkezi alanı veya kişiyi gösterir.`,
-        keywords: [...baseKeywords, 'merkez', 'odak', 'ana unsur'],
-        advice: 'Merkezi konulara odaklanın ve enerjinizi doğru yerlere yönlendirin.'
-      };
-
+      positionMeaning = getSituationAnalysisPosition4MeaningByCardName(englishCardName);
+      break;
     case 5:
-      return {
-        position: 'Dış Etkenler',
-        cardName: card.nameTr,
-        isReversed,
-        meaning: `${baseMeaning} Bu kart, dış dünyadan gelen etkileri ve farklı kaynaklardan gelecek bilgileri gösteriyor. Çevresel faktörleri yansıtır.`,
-        keywords: [...baseKeywords, 'dış etkenler', 'çevre', 'dış dünya'],
-        advice: 'Dış etkenleri göz önünde bulundurun ama kontrol edemeyeceğiniz şeylere odaklanmayın.'
-      };
-
+      positionMeaning = getSituationAnalysisPosition5MeaningByCardName(englishCardName);
+      break;
     case 6:
-      return {
-        position: 'Tavsiye',
-        cardName: card.nameTr,
-        isReversed,
-        meaning: `${baseMeaning} Bu kart, mevcut durumunuz için en uygun tavsiyeleri ve hareket tarzlarını sunuyor. Çözüm yollarını gösterir.`,
-        keywords: [...baseKeywords, 'tavsiye', 'çözüm', 'hareket tarzı'],
-        advice: 'Bu tavsiyeleri dikkate alın ve uygulanabilir adımlar atın.'
-      };
-
+      positionMeaning = getSituationAnalysisPosition6MeaningByCardName(englishCardName);
+      break;
     case 7:
-      return {
-        position: 'Olası Gelecek - Sonuç',
-        cardName: card.nameTr,
-        isReversed,
-        meaning: `${baseMeaning} Bu kart, mevcut gidişatın nereye varacağını ve olası sonuçları gösteriyor. Gelecekteki potansiyel durumu yansıtır.`,
-        keywords: [...baseKeywords, 'gelecek', 'sonuç', 'potansiyel'],
-        advice: 'Geleceği şekillendirmek için şimdi doğru kararlar alın ve harekete geçin.'
-      };
+      positionMeaning = getSituationAnalysisPosition7MeaningByCardName(englishCardName);
+      break;
+  }
 
+  console.log('🎯 Position meaning found:', positionMeaning ? 'YES' : 'NO');
+
+  if (positionMeaning) {
+    const result = {
+      ...positionMeaning,
+      cardName: card.nameTr, // cardName alanını ekle
+      upright: isReversed ? positionMeaning.reversed : positionMeaning.upright,
+      reversed: isReversed ? positionMeaning.upright : positionMeaning.reversed,
+    };
+    console.log('✅ Returning position-specific meaning:', result.upright.substring(0, 50) + '...');
+    return result;
+  }
+
+  // Fallback: Genel kart anlamlarını döndür
+  const baseMeaning: SituationAnalysisPositionMeaning = {
+    id: `situation-analysis-${position}-${card.id}-${isReversed ? 'reversed' : 'upright'}`,
+    position: position,
+    card: card.name,
+    cardName: card.nameTr,
+    isReversed,
+    upright: card.meaningTr.upright,
+    reversed: card.meaningTr.reversed,
+    keywords: card.keywordsTr || card.keywords || [],
+    context: `Durum analizi açılımında ${position}. pozisyon (${situationAnalysisPositions[position as keyof typeof situationAnalysisPositions]?.title}) için ${card.nameTr} kartının anlamı`,
+    group: getCardGroup(card),
+  };
+
+  const fallbackResult = {
+    ...baseMeaning,
+    upright: isReversed ? baseMeaning.reversed : baseMeaning.upright,
+    reversed: isReversed ? baseMeaning.upright : baseMeaning.reversed,
+  };
+  
+  console.log('⚠️ Returning fallback meaning:', fallbackResult.upright.substring(0, 50) + '...');
+  return fallbackResult;
+}
+
+// Pozisyon bilgileri ve açıklamaları
+export const situationAnalysisPositions = {
+  1: {
+    title: 'Geçmiş ya da Sebepler',
+    description: 'Mevcut durumun geçmişteki kökenleri',
+    question: 'Bu durumun geçmişteki sebepleri nelerdir?',
+  },
+  2: {
+    title: 'Şu Anki Durum',
+    description: 'Mevcut durum ve koşullar',
+    question: 'Şu anda yaşadığınız durum nasıl?',
+  },
+  3: {
+    title: 'Gizli Etkenler',
+    description: 'Bilinçaltı ve gizli faktörler',
+    question: 'Fark etmediğiniz hangi faktörler etkili?',
+  },
+  4: {
+    title: 'Merkez Kart',
+    description: 'Durumun merkezi ve odak noktası',
+    question: 'Bu durumun en önemli unsuru nedir?',
+  },
+  5: {
+    title: 'Dış Etkenler',
+    description: 'Dış dünyadan gelen etkiler',
+    question: 'Dış faktörler nasıl etkiliyor?',
+  },
+  6: {
+    title: 'Tavsiye',
+    description: 'Önerilen hareket tarzı',
+    question: 'Bu durumda ne yapmalısınız?',
+  },
+  7: {
+    title: 'Olası Gelecek - Sonuç',
+    description: 'Gelecekteki potansiyel sonuç',
+    question: 'Bu durum nereye gidiyor?',
+  },
+};
+
+// Pozisyon bilgilerini alma fonksiyonu
+export const getSituationAnalysisPositionInfo = (position: number) => {
+  return situationAnalysisPositions[position as keyof typeof situationAnalysisPositions];
+};
+
+// Tüm pozisyonları alma fonksiyonu
+export const getAllSituationAnalysisPositions = () => {
+  return Object.entries(situationAnalysisPositions).map(([position, info]) => ({
+    position: parseInt(position),
+    ...info,
+  }));
+};
+
+// Kart adına ve pozisyona göre anlam bulma fonksiyonu
+export const getSituationAnalysisMeaningByCardNameAndPosition = (
+  cardName: string,
+  position: number,
+  isReversed: boolean = false
+): SituationAnalysisPositionMeaning | undefined => {
+  // Bu fonksiyon TarotCard objesi gerektirir, bu yüzden mock bir obje oluşturuyoruz
+  const mockCard: TarotCard = {
+    id: 0,
+    name: cardName,
+    nameTr: cardName,
+    suit: 'major', // Varsayılan
+    number: 0,
+    meaning: {
+      upright: 'Temel anlam',
+      reversed: 'Ters anlam'
+    },
+    meaningTr: {
+      upright: 'Temel anlam',
+      reversed: 'Ters anlam'
+    },
+    keywords: [],
+    keywordsTr: [],
+    image: ''
+  };
+
+  return getSituationAnalysisMeaningByCardAndPosition(mockCard, position, isReversed);
+};
+
+// Tüm pozisyon anlamlarını birleştiren ana array
+export const allSituationAnalysisPositionMeanings: SituationAnalysisPositionMeaning[] = [
+  ...position1Meanings,
+  ...position2Meanings,
+  ...position3Meanings,
+  ...position4Meanings,
+  ...position5Meanings,
+  ...position6Meanings,
+  ...position7Meanings,
+];
+
+// Pozisyon bazlı anlam alma fonksiyonları
+export function getSituationAnalysisMeaningsByPosition(
+  position: number
+): SituationAnalysisPositionMeaning[] | null {
+  if (position < 1 || position > 7) {
+    return null;
+  }
+
+  switch (position) {
+    case 1:
+      return position1Meanings;
+    case 2:
+      return position2Meanings;
+    case 3:
+      return position3Meanings;
+    case 4:
+      return position4Meanings;
+    case 5:
+      return position5Meanings;
+    case 6:
+      return position6Meanings;
+    case 7:
+      return position7Meanings;
     default:
-      return {
-        position: 'Bilinmeyen Pozisyon',
-        cardName: card.nameTr,
-        isReversed,
-        meaning: baseMeaning,
-        keywords: baseKeywords,
-        advice: 'Bu pozisyon için özel bir anlam tanımlanmamış.'
-      };
+      return [];
   }
 }
+
+// Kart bazlı anlam alma fonksiyonu
+export function getSituationAnalysisMeaningsByCard(
+  card: TarotCard
+): SituationAnalysisPositionMeaning[] {
+  const meanings: SituationAnalysisPositionMeaning[] = [];
+
+  for (let position = 1; position <= 7; position++) {
+    const meaning = getSituationAnalysisMeaningByCardAndPosition(card, position);
+    if (meaning) {
+      meanings.push(meaning);
+    }
+  }
+
+  return meanings;
+}
+
+// Tüm anlamları alma fonksiyonu
+export function getAllSituationAnalysisMeanings(): Record<
+  number,
+  SituationAnalysisPositionMeaning[]
+> {
+  const allMeanings: Record<number, SituationAnalysisPositionMeaning[]> = {};
+
+  for (let position = 1; position <= 7; position++) {
+    allMeanings[position] = getSituationAnalysisMeaningsByPosition(position) || [];
+  }
+
+  return allMeanings;
+}
+
+// Kart gruplarına göre filtreleme fonksiyonu
+export const getSituationAnalysisMeaningsByGroup = (
+  group: 'Majör Arkana' | 'Kupalar' | 'Kılıçlar' | 'Asalar' | 'Tılsımlar'
+): SituationAnalysisPositionMeaning[] => {
+  return allSituationAnalysisPositionMeanings.filter(meaning => meaning.group === group);
+};
+
+// Pozisyon ve gruba göre filtreleme fonksiyonu
+export const getSituationAnalysisMeaningsByPositionAndGroup = (
+  position: number,
+  group: 'Majör Arkana' | 'Kupalar' | 'Kılıçlar' | 'Asalar' | 'Tılsımlar'
+): SituationAnalysisPositionMeaning[] => {
+  return allSituationAnalysisPositionMeanings.filter(
+    meaning => meaning.position === position && meaning.group === group
+  );
+};
+
+// Arama fonksiyonu (kart adına göre)
+export const searchSituationAnalysisMeaningsByCardName = (
+  cardName: string
+): SituationAnalysisPositionMeaning[] => {
+  return allSituationAnalysisPositionMeanings.filter(meaning =>
+    meaning.cardName.toLowerCase().includes(cardName.toLowerCase()) ||
+    meaning.card.toLowerCase().includes(cardName.toLowerCase())
+  );
+};
+
+// Anahtar kelimeye göre arama fonksiyonu
+export const searchSituationAnalysisMeaningsByKeyword = (
+  keyword: string
+): SituationAnalysisPositionMeaning[] => {
+  return allSituationAnalysisPositionMeanings.filter(meaning =>
+    meaning.keywords.some(kw =>
+      kw.toLowerCase().includes(keyword.toLowerCase())
+    )
+  );
+};
+
+// İstatistik fonksiyonları
+export const getSituationAnalysisStatistics = () => {
+  const totalCards = allSituationAnalysisPositionMeanings.length;
+  const totalPositions = 7;
+  const cardsPerPosition = totalCards > 0 ? totalCards / totalPositions : 0;
+
+  const groupStats = {
+    'Majör Arkana': allSituationAnalysisPositionMeanings.filter(
+      m => m.group === 'Majör Arkana'
+    ).length,
+    Kupalar: allSituationAnalysisPositionMeanings.filter(m => m.group === 'Kupalar').length,
+    Kılıçlar: allSituationAnalysisPositionMeanings.filter(m => m.group === 'Kılıçlar')
+      .length,
+    Asalar: allSituationAnalysisPositionMeanings.filter(m => m.group === 'Asalar').length,
+    Tılsımlar: allSituationAnalysisPositionMeanings.filter(m => m.group === 'Tılsımlar')
+      .length,
+  };
+
+  return {
+    totalCards,
+    totalPositions,
+    cardsPerPosition,
+    groupStats,
+    positions: Object.keys(situationAnalysisPositions).length,
+    groups: ['Majör Arkana', 'Kupalar', 'Kılıçlar', 'Asalar', 'Tılsımlar'],
+  };
+};
+
+// Varsayılan export
+const situationAnalysisExports = {
+  getSituationAnalysisMeaningByCardAndPosition,
+  getSituationAnalysisMeaningByCardNameAndPosition,
+  getSituationAnalysisMeaningsByPosition,
+  getSituationAnalysisMeaningsByCard,
+  getAllSituationAnalysisMeanings,
+  allSituationAnalysisPositionMeanings,
+  situationAnalysisPositions,
+  getSituationAnalysisPositionInfo,
+  getAllSituationAnalysisPositions,
+  getSituationAnalysisMeaningsByGroup,
+  getSituationAnalysisMeaningsByPositionAndGroup,
+  searchSituationAnalysisMeaningsByCardName,
+  searchSituationAnalysisMeaningsByKeyword,
+  getSituationAnalysisStatistics,
+  // Tüm pozisyon özel fonksiyonları
+  getSituationAnalysisPosition1Meaning,
+  getSituationAnalysisPosition1MeaningByCardName,
+  position1Meanings,
+  getSituationAnalysisPosition2Meaning,
+  getSituationAnalysisPosition2MeaningByCardName,
+  position2Meanings,
+  getSituationAnalysisPosition3Meaning,
+  getSituationAnalysisPosition3MeaningByCardName,
+  position3Meanings,
+  getSituationAnalysisPosition4Meaning,
+  getSituationAnalysisPosition4MeaningByCardName,
+  position4Meanings,
+  getSituationAnalysisPosition5Meaning,
+  getSituationAnalysisPosition5MeaningByCardName,
+  position5Meanings,
+  getSituationAnalysisPosition6Meaning,
+  getSituationAnalysisPosition6MeaningByCardName,
+  position6Meanings,
+  getSituationAnalysisPosition7Meaning,
+  getSituationAnalysisPosition7MeaningByCardName,
+  position7Meanings,
+};
+
+export default situationAnalysisExports;

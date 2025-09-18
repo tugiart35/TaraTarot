@@ -37,6 +37,7 @@ import { useTarotReading } from '@/hooks/useTarotReading';
 import { useTranslations } from '@/hooks/useTranslations';
 import { useAuth } from '@/hooks/useAuth';
 import { useReadingCredits } from '@/hooks/useReadingCredits';
+import { useToast } from '@/hooks/useToast';
 import { findSpreadById } from '@/lib/constants/tarotSpreads';
 import {
   PROBLEM_SOLVING_POSITIONS_INFO,
@@ -266,11 +267,28 @@ export default function ProblemSolvingReading({
     if (!card) {
       return '';
     }
-    const meaning = getProblemSolvingMeaningByCardAndPosition(card, position);
+    const meaning = getProblemSolvingMeaningByCardAndPosition(card, position, isReversed);
     if (!meaning) {
       return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
     }
     return isReversed ? meaning.reversed : meaning.upright;
+  };
+
+  // Context bilgilerini al
+  const getCardMeaning = (card: TarotCard) => {
+    const position = selectedCards.findIndex(c => c?.id === card.id) + 1;
+    if (position === 0) return null;
+    
+    // Pozisyona özel kart anlamını al
+    const meaning = getProblemSolvingMeaningByCardAndPosition(card, position, false);
+    if (!meaning) return null;
+
+    return {
+      card: card.id,
+      name: card.nameTr,
+      context: meaning.context, // Kartın pozisyonuna özel context bilgisini kullan
+      keywords: meaning.keywords,
+    };
   };
 
   // Basit yorum oluştur
@@ -368,6 +386,9 @@ export default function ProblemSolvingReading({
           metadata: {
             duration,
             platform: 'web',
+            readingFormat: selectedReadingType, // Sesli/yazılı bilgisi
+            readingFormatTr: selectedReadingType === READING_TYPES.DETAILED ? 'Sesli' : 
+                            selectedReadingType === READING_TYPES.WRITTEN ? 'Yazılı' : 'Basit',
           },
           timestamp: Date.now(),
         };
@@ -377,41 +398,40 @@ export default function ProblemSolvingReading({
         if (saveResult.success) {
           console.log('Problem çözme okuması kaydedildi:', saveResult.id);
           
-          // Email gönderimi
-          try {
-            const emailResponse = await fetch('/api/send-reading-email', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({
-                readingId: saveResult.id,
-              }),
-            });
+          // Başarı toast'ını hemen göster
+          showToast('Okumanız başarıyla kaydedildi!', 'success');
+          
+          // Başarı modal'ını göster
+          setShowSuccessModal(true);
 
-            if (emailResponse.ok) {
+          // Email gönderimi arka planda (asenkron)
+          fetch('/api/send-reading-email', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              readingId: saveResult.id,
+            }),
+          }).then(response => {
+            if (response.ok) {
               console.log('✅ Email gönderimi başarılı');
             } else {
               console.error('❌ Email gönderimi başarısız');
             }
-          } catch (error) {
+          }).catch(error => {
             console.error('❌ Email gönderimi hatası:', error);
-          }
+          });
 
-          showToast('Okumanız başarıyla kaydedildi!', 'success');
+          // Kısa süre sonra ana sayfaya yönlendir
+          setTimeout(() => {
+            setShowSuccessModal(false);
+            router.push('/');
+          }, 1500); // 3 saniyeden 1.5 saniyeye düşürüldü
         } else {
           console.error('Okuma kaydetme hatası:', saveResult.error);
           showToast('Okuma kaydedilirken bir hata oluştu.', 'error');
         }
-
-        // Başarı modal'ını göster
-        setShowSuccessModal(true);
-
-        // 3 saniye sonra modal'ı kapat ve ana sayfaya yönlendir
-        setTimeout(() => {
-          setShowSuccessModal(false);
-          router.push('/');
-        }, 3000);
         return;
       }
     } catch (error) {
@@ -465,6 +485,8 @@ export default function ProblemSolvingReading({
           p_metadata: {
             duration: readingData.metadata.duration,
             platform: readingData.metadata.platform,
+            readingFormat: readingData.metadata.readingFormat,
+            readingFormatTr: readingData.metadata.readingFormatTr,
           },
           p_idempotency_key: `reading_${user.id}_${readingData.timestamp}`,
         }
@@ -695,9 +717,11 @@ export default function ProblemSolvingReading({
               badgeText='PROBLEM ÇÖZME'
               badgeColor='bg-purple-500/20 text-purple-400'
               positionsInfo={PROBLEM_SOLVING_POSITIONS_INFO}
+              getCardMeaning={getCardMeaning}
               getPositionSpecificInterpretation={(card, position, isReversed) =>
                 getProblemSolvingCardMeaning(card, position, isReversed)
               }
+              showContext={true}
             />
 
             {/* Okumayı Kaydet Butonu - Sadece DETAILED/WRITTEN için */}
@@ -710,7 +734,7 @@ export default function ProblemSolvingReading({
                   className='px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-700 hover:to-indigo-600 text-white font-semibold rounded-2xl transition-all disabled:opacity-60 disabled:cursor-not-allowed shadow-lg'
                 >
                   {isSavingReading
-                    ? t('problemSolving.modals.savingReading')
+                    ? '📝 Okuma kaydediliyor...'
                     : t('problemSolving.modals.saveReading')}
                 </button>
               </div>
@@ -748,6 +772,11 @@ export default function ProblemSolvingReading({
               <div className='w-full bg-purple-800/30 rounded-full h-2 mb-4'>
                 <div className='bg-gradient-to-r from-green-400 to-green-600 h-2 rounded-full animate-pulse'></div>
               </div>
+              
+              {/* Hızlı yönlendirme bilgisi */}
+              <p className='text-purple-300 text-xs'>
+                Ana sayfaya yönlendiriliyorsunuz...
+              </p>
             </div>
           </div>
         )}
