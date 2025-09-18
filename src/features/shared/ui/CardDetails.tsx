@@ -75,9 +75,9 @@ const CardDetails: React.FC<CardDetailsProps> = ({
     love: { theme: 'pink', maxWidth: 'lg' },
     career: { theme: 'blue', maxWidth: 'lg' },
     'problem-solving': { theme: 'purple', maxWidth: 'lg' },
-    'situation-analysis': { theme: 'green', maxWidth: 'lg' },
+    'situation-analysis': { theme: 'blue', maxWidth: 'lg' },
     'relationship-analysis': { theme: 'blue', maxWidth: 'lg' },
-    'relationship-problems': { theme: 'yellow', maxWidth: 'lg' },
+    'relationship-problems': { theme: 'amber', maxWidth: 'lg' },
     marriage: { theme: 'pink', maxWidth: 'lg' },
     'new-lover': { theme: 'pink', maxWidth: 'lg' },
   } as const;

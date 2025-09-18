@@ -93,6 +93,8 @@ export interface SaveResult {
   userId?: string;
   message?: string;
   error?: string;
+  originalError?: string; // Teknik hata detayı için
+  errorCode?: string; // Hata kodu için
 }
 
 // Kaydetme parametreleri
@@ -203,6 +205,16 @@ export class TarotReadingSaver {
         updatedAt: new Date(),
       };
 
+      // Veri validasyonu
+      const validation = this.validateReadingData(readingData);
+      if (!validation.isValid) {
+        console.error('Veri validasyon hatası:', validation.errors);
+        return {
+          success: false,
+          error: `Veri hatası: ${validation.errors.join(', ')}`,
+        };
+      }
+
       // RPC ile atomik kredi düş + okuma oluştur
       const { data: rpcResult, error: rpcError } = await supabase.rpc(
         'fn_create_reading_with_debit',
@@ -227,7 +239,30 @@ export class TarotReadingSaver {
 
       if (rpcError) {
         console.error('RPC okuma oluşturma hatası:', rpcError);
-        throw rpcError;
+        // Hata türüne göre kullanıcı dostu mesaj
+        let errorMessage = 'Okuma kaydedilirken bir hata oluştu.';
+        
+        if (rpcError.message?.includes('insufficient_credits')) {
+          errorMessage = 'Yetersiz kredi bakiyesi. Lütfen kredi satın alın.';
+        } else if (rpcError.message?.includes('profile not found')) {
+          errorMessage = 'Kullanıcı profili bulunamadı. Lütfen tekrar giriş yapın.';
+        } else if (rpcError.message?.includes('duplicate key')) {
+          errorMessage = 'Bu okuma zaten kaydedilmiş.';
+        }
+        
+        return {
+          success: false,
+          error: errorMessage,
+          originalError: rpcError.message,
+        };
+      }
+
+      if (!rpcResult) {
+        console.error('RPC sonucu boş döndü');
+        return {
+          success: false,
+          error: 'Okuma kaydedilirken beklenmeyen bir hata oluştu.',
+        };
       }
 
       // Yeni şemada tüm veriler readings tablosunda questions JSONB alanında saklanıyor
@@ -248,9 +283,31 @@ export class TarotReadingSaver {
       };
     } catch (error) {
       console.error('Okuma kaydetme hatası:', error);
+      
+      // Hata türüne göre detaylı mesaj
+      let errorMessage = 'Okuma kaydedilirken bir hata oluştu.';
+      let errorCode = 'UNKNOWN_ERROR';
+      
+      if (error instanceof Error) {
+        if (error.message.includes('Failed to fetch')) {
+          errorMessage = 'İnternet bağlantısı hatası. Lütfen bağlantınızı kontrol edin.';
+          errorCode = 'NETWORK_ERROR';
+        } else if (error.message.includes('timeout')) {
+          errorMessage = 'İşlem zaman aşımına uğradı. Lütfen tekrar deneyin.';
+          errorCode = 'TIMEOUT_ERROR';
+        } else if (error.message.includes('unauthorized')) {
+          errorMessage = 'Oturum süreniz dolmuş. Lütfen tekrar giriş yapın.';
+          errorCode = 'AUTH_ERROR';
+        } else {
+          errorMessage = error.message;
+        }
+      }
+      
       return {
         success: false,
-        error: error instanceof Error ? error.message : 'Bilinmeyen hata',
+        error: errorMessage,
+        originalError: error instanceof Error ? error.message : String(error),
+        errorCode,
       };
     }
   }
@@ -333,5 +390,58 @@ export class TarotReadingSaver {
       isValid: errors.length === 0,
       errors,
     };
+  }
+
+  /**
+   * Test okuma kaydetme işlemi
+   */
+  static async testReadingSave(userId: string): Promise<SaveResult> {
+    try {
+      const testParams: SaveReadingParams = {
+        selectedCards: [
+          {
+            id: 1,
+            name: 'The Fool',
+            nameTr: 'Budala',
+            suit: 'major',
+            value: 0,
+          },
+        ],
+        isReversed: [false],
+        interpretation: 'Test okuma yorumu',
+        personalInfo: {
+          name: 'Test',
+          surname: 'Kullanıcı',
+          birthDate: '1990-01-01',
+          email: 'test@example.com',
+        },
+        questions: {
+          concern: 'Test endişe',
+          understanding: 'Test anlama',
+          emotional: 'Test duygusal',
+        },
+        positionsInfo: [
+          {
+            id: 1,
+            title: 'Geçmiş',
+            desc: 'Geçmiş durum',
+          },
+        ],
+        readingType: 'love',
+        startTime: Date.now(),
+        user: { id: userId },
+        costCredits: 0,
+        spreadName: 'Test Yayılımı',
+      };
+
+      return await this.saveReading(testParams);
+    } catch (error) {
+      console.error('Test okuma kaydetme hatası:', error);
+      return {
+        success: false,
+        error: 'Test okuma kaydedilemedi',
+        originalError: error instanceof Error ? error.message : String(error),
+      };
+    }
   }
 }

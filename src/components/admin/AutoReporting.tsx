@@ -100,7 +100,7 @@ export default function AutoReporting() {
       }
 
       const formattedSchedules: ReportSchedule[] =
-        data?.map(schedule => ({
+        data?.map((schedule: any) => ({
           id: schedule.id,
           name: schedule.name,
           frequency: schedule.frequency,
@@ -132,7 +132,7 @@ export default function AutoReporting() {
       }
 
       const formattedReports: GeneratedReport[] =
-        data?.map(report => ({
+        data?.map((report: any) => ({
           id: report.id,
           name: report.name,
           type: report.report_type,

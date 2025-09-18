@@ -489,7 +489,7 @@ class PDFGeneratorService {
     // Kart fotoğrafı URL'si oluştur
     const cardNumber = cardId.toString().padStart(2, '0');
     const baseUrl =
-      'https://pootnkllsznjbaozpfss.supabase.co/storage/v1/object/public/cards/rws';
+      'https://qtlokdkcerjrbrtphlrh.supabase.co/storage/v1/object/public/cards/rws';
     return `${baseUrl}/${cardNumber}.jpg`;
   }
 

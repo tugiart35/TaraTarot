@@ -32,7 +32,7 @@ Kullanım durumu:
 - ✅ Production-ready: Yeni şemaya uygun
 */
 
-import { createClient } from '@supabase/supabase-js';
+import { createBrowserClient } from '@supabase/ssr';
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
@@ -73,20 +73,15 @@ const createDummyClient = () => {
       insert: () => Promise.resolve({ data: null, error: new Error('Environment variables missing') }),
       update: () => Promise.resolve({ data: null, error: new Error('Environment variables missing') }),
       delete: () => Promise.resolve({ data: null, error: new Error('Environment variables missing') })
-    })
+    }),
+    rpc: () => Promise.resolve({ data: null, error: new Error('Environment variables missing') })
   };
 };
 
-// Supabase client'ı oluştur
+// Supabase browser client'ı oluştur
 export const supabase = (!supabaseUrl || !supabaseAnonKey) 
   ? createDummyClient() as any
-  : createClient(supabaseUrl, supabaseAnonKey, {
-      auth: {
-        autoRefreshToken: true,
-        persistSession: true,
-        detectSessionInUrl: true,
-      },
-    });
+  : createBrowserClient<Database>(supabaseUrl, supabaseAnonKey);
 
 // Database types için tip tanımları - Yeni optimize edilmiş şema
 export interface Database {
@@ -327,6 +322,37 @@ export interface Database {
           target_id?: string;
           details?: any;
           created_at?: string;
+        };
+      };
+    };
+    Functions: {
+      fn_create_reading_with_debit: {
+        Args: {
+          p_user_id: string;
+          p_reading_type: 'tarot' | 'numerology' | 'love' | 'career' | 'general';
+          p_spread_name: string;
+          p_title: string;
+          p_interpretation: string;
+          p_cards: any;
+          p_questions: any;
+          p_cost_credits: number;
+          p_metadata?: any;
+          p_idempotency_key?: string;
+        };
+        Returns: {
+          id: string;
+          user_id: string;
+          reading_type: 'tarot' | 'numerology' | 'love' | 'career' | 'general';
+          spread_name: string;
+          title: string;
+          interpretation: string;
+          cards?: any;
+          questions?: any;
+          cost_credits: number;
+          status: 'pending' | 'completed' | 'failed';
+          metadata?: any;
+          created_at: string;
+          updated_at: string;
         };
       };
     };

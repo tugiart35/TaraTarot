@@ -65,7 +65,7 @@ export default function PaymentHistory({
       }
 
       // Veriyi formatla
-      const formattedPayments = (data || []).map(transaction => ({
+      const formattedPayments = (data || []).map((transaction: any) => ({
         id: transaction.id,
         user_id: transaction.user_id,
         amount: Math.abs(transaction.amount) / 100, // Cent'ten Euro'ya çevir
@@ -83,7 +83,7 @@ export default function PaymentHistory({
       let filteredPayments = formattedPayments;
       if (filter !== 'all') {
         filteredPayments = formattedPayments.filter(
-          payment => payment.status === filter
+          (payment: any) => payment.status === filter
         );
       }
 

@@ -54,7 +54,7 @@ Kartların ekranda pozisyonlara göre gösterilmesi, arka plan görselleri, over
 import { getMeaningByCardAndPosition } from '@/features/tarot/lib/love/position-meanings-index';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { useToast } from '@/hooks/useToast';
+
 import { supabase } from '@/lib/supabase/client';
 import {
   Toast,
@@ -64,8 +64,9 @@ import {
 } from '@/features/shared/ui';
 import { useTarotReading } from '@/hooks/useTarotReading';
 import { useTranslations } from '@/hooks/useTranslations';
-import { useReadingCredits } from '@/hooks/useReadingCredits';
 import { useAuth } from '@/hooks/useAuth';
+import { useReadingCredits } from '@/hooks/useReadingCredits';
+import { useToast } from '@/hooks/useToast';
 import { findSpreadById } from '@/lib/constants/tarotSpreads';
 import { LOVE_POSITIONS_INFO, LOVE_POSITIONS_LAYOUT } from './love-config';
 import { CardDetails } from '@/features/shared/ui';

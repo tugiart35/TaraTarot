@@ -27,6 +27,7 @@ Kullanım durumu:
 
 import { ReactNode } from 'react';
 import { PageTrackingProvider } from '@/components/PageTrackingProvider';
+import { MinimalAuthProvider } from '@/providers/MinimalAuthProvider';
 
 interface LocaleLayoutProps {
   children: ReactNode;
@@ -39,7 +40,11 @@ export default async function LocaleLayout({
 }: LocaleLayoutProps) {
   await params;
 
-  return <PageTrackingProvider>{children}</PageTrackingProvider>;
+  return (
+    <MinimalAuthProvider>
+      <PageTrackingProvider>{children}</PageTrackingProvider>
+    </MinimalAuthProvider>
+  );
 }
 
 // Metadata generation

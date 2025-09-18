@@ -32,7 +32,8 @@ import { useRouter } from 'next/navigation';
 import { useTranslations } from '@/hooks/useTranslations';
 import { useAuth } from '@/hooks/useAuth';
 import { useTarotReading } from '@/hooks/useTarotReading';
-import { useToast } from '@/hooks/useToast';
+import { useReadingCredits } from '@/hooks/useReadingCredits';
+
 import { findSpreadById } from '@/lib/constants/tarotSpreads';
 import {
   LOVE_POSITIONS_INFO,

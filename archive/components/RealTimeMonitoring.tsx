@@ -258,7 +258,7 @@ export default function RealTimeMonitoring() {
           fetchRealTimeData();
         }
       )
-      .subscribe((status) => {
+      .subscribe((status: string) => {
         if (status === 'SUBSCRIBED') {
           setRealtimeConnected(true);
         } else if (status === 'CHANNEL_ERROR' || status === 'TIMED_OUT') {

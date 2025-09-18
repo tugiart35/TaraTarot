@@ -68,7 +68,9 @@ export const usePageTracking = () => {
         };
         if (document.referrer) pageViewData.referrer = document.referrer;
 
-        // Supabase'e kaydet
+        // Supabase'e kaydet - page_views tablosu henüz oluşturulmamış
+        // TODO: page_views tablosu oluşturulduğunda aktif et
+        /*
         const { error } = await supabase
           .from('page_views')
           .insert([pageViewData]);
@@ -77,6 +79,12 @@ export const usePageTracking = () => {
           console.error('Error tracking page view:', error);
         } else if (process.env.NODE_ENV === 'development') {
           console.log('📊 [PAGE TRACKING]', pageViewData);
+        }
+        */
+        
+        // Geçici olarak sadece development modunda log
+        if (process.env.NODE_ENV === 'development') {
+          console.log('📊 [PAGE TRACKING - DISABLED]', pageViewData);
         }
       } catch (error) {
         console.error('Error in page tracking:', error);
@@ -111,6 +119,9 @@ export const usePageTracking = () => {
       };
       if (document.referrer) pageViewData.referrer = document.referrer;
 
+      // Supabase'e kaydet - page_views tablosu henüz oluşturulmamış
+      // TODO: page_views tablosu oluşturulduğunda aktif et
+      /*
       const { error } = await supabase
         .from('page_views')
         .insert([pageViewData]);
@@ -119,9 +130,10 @@ export const usePageTracking = () => {
         console.error('Error tracking custom page view:', error);
         return false;
       }
+      */
 
       if (process.env.NODE_ENV === 'development') {
-        console.log('📊 [CUSTOM PAGE TRACKING]', pageViewData);
+        console.log('📊 [CUSTOM PAGE TRACKING - DISABLED]', pageViewData);
       }
 
       return true;

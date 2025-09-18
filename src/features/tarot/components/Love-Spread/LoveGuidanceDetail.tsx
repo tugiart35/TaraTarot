@@ -15,8 +15,8 @@ CHECKLIST (Her adım tamamlandıkça 'COMPLETED' olarak işaretlenecek):
 
 import { useState, useEffect } from 'react';
 import { TarotCard } from '@/features/tarot/lib/full-tarot-deck';
-import { useReadingCredits } from '@/hooks/useReadingCredits';
 import { useAuth } from '@/hooks/useAuth';
+import { useReadingCredits } from '@/hooks/useReadingCredits';
 import { supabase } from '@/lib/supabase/client';
 import { LOVE_POSITIONS_INFO, LOVE_POSITIONS_LAYOUT } from './love-config';
 import {

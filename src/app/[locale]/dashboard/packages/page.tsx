@@ -121,7 +121,7 @@ export default function PackagesPage() {
 
       // Supabase verilerini CreditPackage formatına dönüştür
       const formattedPackages: CreditPackage[] = (data || []).map(
-        (pkg, index) => {
+        (pkg: any, index: number) => {
           const isPopular = index === 1; // İkinci paket popüler olsun
 
           return {

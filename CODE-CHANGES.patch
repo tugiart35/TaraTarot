@@ -337,7 +337,7 @@ Bu patch dosyası, PROJECT-AUDIT.md'de tespit edilen kritik sorunların düzelti
    images: {
 -    domains: ['localhost'],
 -    unoptimized: true, // Geliştirme için görsel optimizasyonunu kapat
-+    domains: ['localhost', 'pootnkllsznjbaozpfss.supabase.co'],
++    domains: ['localhost', 'qtlokdkcerjrbrtphlrh.supabase.co'],
 +    unoptimized: false, // Production'da optimize et
 +    formats: ['image/webp', 'image/avif'],
    },

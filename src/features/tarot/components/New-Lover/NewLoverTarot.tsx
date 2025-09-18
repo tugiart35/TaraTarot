@@ -35,7 +35,7 @@ Eklenen Özellikler:
 import { getNewLoverCardMeaning } from '@/features/tarot/lib/new-lover/position-meanings-index';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { useToast } from '@/hooks/useToast';
+
 import { supabase } from '@/lib/supabase/client';
 import {
   Toast,
@@ -48,8 +48,9 @@ import {
 } from '@/features/shared/ui';
 import { useTarotReading } from '@/hooks/useTarotReading';
 import { useTranslations } from '@/hooks/useTranslations';
-import { useReadingCredits } from '@/hooks/useReadingCredits';
 import { useAuth } from '@/hooks/useAuth';
+import { useToast } from '@/hooks/useToast';
+import { useReadingCredits } from '@/hooks/useReadingCredits';
 import { findSpreadById } from '@/lib/constants/tarotSpreads';
 import {
   NEW_LOVER_POSITIONS_INFO,
@@ -1009,7 +1010,7 @@ export default function NewLoverReading({
                   }
                 }
                 renderCard={(card, props) => (
-                  <BaseCardRenderer card={card} theme='pink' size='large' {...props} />
+                  <BaseCardRenderer card={card} theme='pink' {...props} />
                 )}
                 colorScheme='pink'
               />

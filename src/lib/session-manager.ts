@@ -44,21 +44,35 @@ class SessionManager {
    */
   private async initializeSession(): Promise<void> {
     try {
+      // Client-side için getUser() kullan
       const {
-        data: { session },
+        data: { user },
         error,
-      } = await supabase.auth.getSession();
+      } = await supabase.auth.getUser();
 
       if (error) {
-        logError('Failed to get initial session', error);
+        logError('Failed to get initial user', error);
         return;
       }
 
-      if (session) {
-        this.updateSessionState(session);
-        logDebug('Session initialized', {
-          expiresAt: new Date(session.expires_at! * 1000).toISOString(),
-        });
+      if (user) {
+        // User varsa session'ı da al
+        const {
+          data: { session },
+          error: sessionError,
+        } = await supabase.auth.getSession();
+
+        if (sessionError) {
+          logError('Failed to get session', sessionError);
+          return;
+        }
+
+        if (session) {
+          this.updateSessionState(session);
+          logDebug('Session initialized', {
+            expiresAt: new Date(session.expires_at! * 1000).toISOString(),
+          });
+        }
       }
     } catch (error) {
       logError('Session initialization failed', error);

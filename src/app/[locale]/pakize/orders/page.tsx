@@ -172,15 +172,15 @@ export default function OrdersPage() {
       }
 
       const transactions = data || [];
-      const purchases = transactions.filter(t => t.type === 'purchase');
-      const bonuses = transactions.filter(t => t.type === 'bonus');
-      const deductions = transactions.filter(t => t.type === 'deduction');
-      const readings = transactions.filter(t => t.type === 'reading');
+      const purchases = transactions.filter((t: any) => t.type === 'purchase');
+      const bonuses = transactions.filter((t: any) => t.type === 'bonus');
+      const deductions = transactions.filter((t: any) => t.type === 'deduction');
+      const readings = transactions.filter((t: any) => t.type === 'reading');
       // const refunds = transactions.filter(t => t.type === 'refund');
       // Sadece Shopier'den gelen gelirleri hesapla
       const shopierRevenue = purchases
-        .filter(t => t.ref_type === 'shopier_payment')
-        .reduce((sum, t) => sum + (t.amount || 0), 0);
+        .filter((t: any) => t.ref_type === 'shopier_payment')
+        .reduce((sum: number, t: any) => sum + (t.amount || 0), 0);
 
       setStats({
         total: transactions.length,
@@ -282,7 +282,7 @@ export default function OrdersPage() {
       }
 
       // Format transactions safely with user data
-      const formattedOrders = (data || []).map(transaction => ({
+      const formattedOrders = (data || []).map((transaction: any) => ({
         id: transaction.id || 'unknown',
         user_id: transaction.user_id || 'unknown',
         type: transaction.type || 'unknown',
@@ -328,10 +328,10 @@ export default function OrdersPage() {
 
       // Reading transaction'ları için reading bilgilerini ayrı query ile çek
       const readingTransactions = formattedOrders.filter(
-        order => order.type === 'reading' && order.ref_id
+        (order: any) => order.type === 'reading' && order.ref_id
       );
       if (readingTransactions.length > 0) {
-        const readingIds = readingTransactions.map(order => order.ref_id);
+        const readingIds = readingTransactions.map((order: any) => order.ref_id);
         const { data: readingsData, error: readingsError } = await supabase
           .from('readings')
           .select(
@@ -341,10 +341,10 @@ export default function OrdersPage() {
 
         if (!readingsError && readingsData) {
           // Reading bilgilerini transaction'lara ekle
-          formattedOrders.forEach(order => {
+          formattedOrders.forEach((order: any) => {
             if (order.type === 'reading' && order.ref_id) {
               const readingData = readingsData.find(
-                reading => reading.id === order.ref_id
+                (reading: any) => reading.id === order.ref_id
               );
               if (readingData) {
                 order.reading_id = readingData.id;
@@ -476,7 +476,7 @@ export default function OrdersPage() {
       }
 
       // CSV formatında export
-      const csvData = (data || []).map(transaction => ({
+      const csvData = (data || []).map((transaction: any) => ({
         'Transaction ID': transaction.id,
         Kullanıcı:
           transaction.profiles?.display_name ||
@@ -503,9 +503,9 @@ export default function OrdersPage() {
       // CSV oluştur
       const csvContent = [
         Object.keys(csvData[0] || {}).join(','),
-        ...csvData.map(row =>
+        ...csvData.map((row: any) =>
           Object.values(row)
-            .map(val => `"${val}"`)
+            .map((val: any) => `"${val}"`)
             .join(',')
         ),
       ].join('\n');

@@ -22,7 +22,7 @@ Bağlı Dosyalar:
 import { getProblemSolvingMeaningByCardAndPosition } from '@/features/tarot/lib/problem-solving/position-meanings-index';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { useToast } from '@/hooks/useToast';
+
 import { supabase } from '@/lib/supabase/client';
 import {
   Toast,
@@ -35,8 +35,8 @@ import {
 } from '@/features/shared/ui';
 import { useTarotReading } from '@/hooks/useTarotReading';
 import { useTranslations } from '@/hooks/useTranslations';
-import { useReadingCredits } from '@/hooks/useReadingCredits';
 import { useAuth } from '@/hooks/useAuth';
+import { useReadingCredits } from '@/hooks/useReadingCredits';
 import { findSpreadById } from '@/lib/constants/tarotSpreads';
 import {
   PROBLEM_SOLVING_POSITIONS_INFO,
@@ -89,7 +89,7 @@ export default function ProblemSolvingReading({
   } = useTarotReading({
     config: {
       cardCount: PROBLEM_SOLVING_CARD_COUNT,
-      positionsInfo: PROBLEM_SOLVING_POSITIONS_INFO,
+      positionsInfo: PROBLEM_SOLVING_POSITIONS_INFO as any,
     },
     onComplete: (_cards, _interpretation) => {
       // Problem çözme açılımı tamamlandı

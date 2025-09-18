@@ -137,15 +137,15 @@ export default function ReadingHistory({
       console.log('🔍 All readings sample:', allReadings?.slice(0, 3));
       
       // Veritabanında hangi user_id'ler var kontrol et
-      const uniqueUserIds = [...new Set(allReadings?.map(r => r.user_id) || [])];
-      const uniqueStatuses = [...new Set(allReadings?.map(r => r.status) || [])];
+      const uniqueUserIds = [...new Set(allReadings?.map((r: any) => r.user_id) || [])];
+      const uniqueStatuses = [...new Set(allReadings?.map((r: any) => r.status) || [])];
       console.log('🔍 Unique user IDs in readings:', uniqueUserIds);
       console.log('🔍 Unique statuses in readings:', uniqueStatuses);
       console.log('🔍 Target user ID:', userId);
       console.log('🔍 Is target user ID in database?', uniqueUserIds.includes(userId));
       
       // Şimdi belirli kullanıcı için filtrele
-      const userReadings = allReadings?.filter(reading => reading.user_id === userId) || [];
+      const userReadings = allReadings?.filter((reading: any) => reading.user_id === userId) || [];
       console.log('🔍 User specific readings:', userReadings.length);
       console.log('🔍 User readings sample:', userReadings.slice(0, 3));
       
@@ -166,7 +166,7 @@ export default function ReadingHistory({
       console.log('Raw readings data:', data);
 
       // Veriyi formatla
-      const formattedReadings = (data || []).map(reading => {
+      const formattedReadings = (data || []).map((reading: any) => {
         console.log('Processing reading:', reading);
         
         // Cards verisi JSONB olarak geliyor, doğru şekilde parse et
@@ -213,8 +213,8 @@ export default function ReadingHistory({
           cards_drawn,
           interpretation: reading.interpretation || 'Yorum bulunamadı',
           cost_credits: reading.cost_credits || 0,
-          rating: metadata?.rating,
-          feedback: metadata?.feedback,
+          rating: (metadata as any)?.rating,
+          feedback: (metadata as any)?.feedback,
           created_at: reading.created_at,
         };
       });
@@ -223,12 +223,12 @@ export default function ReadingHistory({
 
       // Filter readings based on user and type
       let filteredReadings = formattedReadings.filter(
-        reading => reading.user_id === userId
+        (reading: any) => reading.user_id === userId
       );
       
       if (filter !== 'all') {
         filteredReadings = filteredReadings.filter(
-          reading => reading.spread_type === filter
+          (reading: any) => reading.spread_type === filter
         );
       }
 

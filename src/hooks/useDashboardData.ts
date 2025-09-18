@@ -83,36 +83,44 @@ export const useDashboardData = () => {
   // Toplam okuma sayısı - hesaplanan değer
   const totalCount = recentReadings.length;
 
-  // Sayfa yüklendiğinde çalışacak useEffect - authentication kontrolü
+  // Veri yükleme - auth kontrolü yok, herkese açık
   useEffect(() => {
-    const handleAuthCheck = async () => {
-      console.log('🔄 useDashboardData: Auth kontrolü:', {
-        authLoading,
-        isAuthenticated,
-        hasUser: !!user,
-        userEmail: user?.email,
-        currentLocale,
-        timestamp: new Date().toISOString(),
-      });
+    const loadData = async () => {
+      console.log('✅ useDashboardData: Dashboard veri yükleme başlatılıyor');
+      
+      try {
+        // Eğer kullanıcı giriş yapmışsa profil bilgilerini al
+        if (isAuthenticated && user?.id) {
+          const { data: existingProfile, error: fetchError } = await supabase
+            .from('profiles')
+            .select('*')
+            .eq('id', user.id)
+            .single();
 
-      if (!authLoading) { // Auth yüklemesi tamamlandıysa
-        // Dashboard sadece giriş yapmış kullanıcılara açık
-        if (!isAuthenticated || !user) {
-          console.log('❌ useDashboardData: Kullanıcı giriş yapmamış, auth sayfasına yönlendiriliyor');
-          // Giriş yapmamış kullanıcıları locale ile auth sayfasına yönlendir
-          router.replace(`/${currentLocale}/auth`);
-          return;
+          if (!fetchError && existingProfile) {
+            setProfile(existingProfile);
+          }
+
+          // Son okumaları al
+          await fetchRecentReadings(user.id);
+          
+          // Son işlemleri al
+          await fetchRecentTransactions(user.id);
         }
-        
-        console.log('✅ useDashboardData: Kullanıcı giriş yapmış, veri yükleme başlatılıyor');
-        checkAuth(); // Giriş yapmışsa auth kontrolü yap
-      } else {
-        console.log('⏳ useDashboardData: Auth yüklemesi devam ediyor...');
+
+        // Aktif paketleri al (herkes için)
+        await fetchActivePackages();
+
+      } catch (error) {
+        console.error('Data loading error:', error);
       }
+      
+      setLoading(false);
     };
 
-    void handleAuthCheck();
-  }, [authLoading, isAuthenticated, user, currentLocale, router]); // Bu değerler değiştiğinde tekrar çalış
+    loadData();
+  }, [isAuthenticated, user]); // Auth loading kontrolü kaldırıldı
+
 
   // Sayfa focus olduğunda kredi bakiyesini yenile - gerçek zamanlı güncelleme için
   useEffect(() => {
@@ -150,42 +158,6 @@ export const useDashboardData = () => {
     };
   }, [isAuthenticated, user]); // Bu değerler değiştiğinde tekrar çalış
 
-  // Kullanıcı authentication kontrolü ve veri yükleme fonksiyonu
-  const checkAuth = async () => {
-    // Sadece giriş yapmış kullanıcılar için profil bilgilerini al
-    if (!user?.id) {
-      setLoading(false); // Loading'i kapat
-      return;
-    }
-      // Profile bilgilerini al veya oluştur - utility fonksiyonu ile
-      const profileResult = await ensureProfileExists(user);
-      
-      if (profileResult.success) {
-        setProfile(profileResult.profile); // Profil bilgilerini state'e set et
-      } else {
-        // Hata durumunda da devam et, sadece profil bilgileri olmayacak
-      }
-
-      // Son okumaları al - kullanıcının son okumalarını getir
-      await fetchRecentReadings(user.id);
-      
-        // Son işlemleri al - kullanıcının kredi işlemlerini getir
-        await fetchRecentTransactions(user.id);
-
-        // Aktif paketleri al - satın alınabilir kredi paketlerini getir
-        await fetchActivePackages();
-
-      // Admin kontrolü - profiles tablosundaki is_admin alanını kontrol et
-      const { data: profile } = await supabase
-        .from('profiles')
-        .select('is_admin')
-        .eq('id', user.id)
-        .single();
-      if (profile?.is_admin) {
-        setIsAdmin(true); // Admin ise state'i güncelle
-      }
-    setLoading(false); // Tüm veriler yüklendi, loading'i kapat
-  };
 
   // Kredi bakiyesini yenile - gerçek zamanlı güncelleme için
   const refreshCreditBalance = async () => {
@@ -369,7 +341,7 @@ export const useDashboardData = () => {
     profile,
     recentReadings,
     packages,
-    loading: authLoading || loading,
+    loading: loading, // Auth loading kontrolü kaldırıldı
     isAdmin,
     totalCount,
     currentLocale,

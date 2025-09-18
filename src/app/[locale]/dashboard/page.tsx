@@ -110,20 +110,7 @@ export default function DashboardPage() {
   // Mobil sidebar state'i
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  // Loading durumunda gösterilecek ekran - auth veya veri yükleme sırasında
-  if (loading) {
-    return (
-      <div className='min-h-screen bg-cosmic-black flex items-center justify-center'>
-        <div className='text-center'>
-          {/* Spinner - dönen loading animasyonu */}
-          <div className='animate-spin rounded-full h-12 w-12 border-b-2 border-gold mx-auto mb-4'></div>
-          <div className='text-text-celestial text-lg'>
-            {t('common.loading', 'Yükleniyor...')}
-          </div>
-        </div>
-      </div>
-    );
-  }
+  // Auth kontrolü yok - dashboard herkese açık
 
   // Ana dashboard sayfası JSX'i - Modüler yapı
   return (

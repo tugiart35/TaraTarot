@@ -39,7 +39,7 @@ Gereklilik ve Kullanım Durumu:
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { useAuth } from '@/hooks/useAuth';
 import { useTranslations } from '@/hooks/useTranslations';
@@ -198,6 +198,7 @@ function LanguageSelector() {
 
 export default function BottomNavigation() {
   const pathname = usePathname();
+  const router = useRouter();
   const { isAuthenticated } = useAuth();
   const { t } = useTranslations();
   const currentLocale = pathname.split('/')[1] || 'tr';
@@ -209,6 +210,20 @@ export default function BottomNavigation() {
     } catch (error) {
       console.error('Translation error:', error);
       return fallback;
+    }
+  };
+
+  // Profil ikonuna tıklama işlemi - programatik yönlendirme
+  const handleProfileClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    if (isAuthenticated) {
+      // Dashboard sayfasına programatik yönlendirme
+      router.push(`/${currentLocale}/dashboard`);
+    } else {
+      // Auth sayfasına yönlendirme
+      router.push(`/${currentLocale}/auth`);
     }
   };
 
@@ -227,6 +242,29 @@ export default function BottomNavigation() {
             pathname === item.href ||
             (item.href === '/' && pathname === '') ||
             (item.href !== '/' && pathname?.startsWith(item.href));
+
+          // Profil/Auth sekmesi için özel tıklama işlemi
+          const isProfileOrAuth = item.name === translate('navigation.profile', 'Profil') || 
+                                 item.name === translate('navigation.auth', 'Giriş Yap');
+
+          if (isProfileOrAuth) {
+            return (
+              <button
+                key={item.name}
+                onClick={handleProfileClick}
+                className={`
+                  flex flex-col items-center justify-center px-2 py-2 rounded-lg
+                  transition-all duration-300 min-w-0 flex-1
+                  ${isActive ? 'text-amber-400' : 'text-gray-500 hover:text-gray-300'}
+                `}
+              >
+                <span className='text-lg mb-1'>
+                  {isActive ? item.activeIcon : item.icon}
+                </span>
+                <span className='text-xs font-medium truncate'>{item.name}</span>
+              </button>
+            );
+          }
 
           return (
             <Link

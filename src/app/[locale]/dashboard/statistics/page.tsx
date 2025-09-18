@@ -200,11 +200,11 @@ export default function StatisticsPage() {
 
       // Bu ayki okuma sayısı
       const thisMonth = allReadings.filter(
-        reading => new Date(reading.created_at) >= startOfMonth
+        (reading: any) => new Date(reading.created_at) >= startOfMonth
       ).length;
 
       // Geçen ayki okuma sayısı
-      const lastMonth = allReadings.filter(reading => {
+      const lastMonth = allReadings.filter((reading: any) => {
         const readingDate = new Date(reading.created_at);
         return readingDate >= startOfLastMonth && readingDate < startOfMonth;
       }).length;
@@ -230,7 +230,7 @@ export default function StatisticsPage() {
       const readingTypes: Record<string, number> = {};
       const spreadCounts: Record<string, number> = {};
 
-      allReadings.forEach(reading => {
+      allReadings.forEach((reading: any) => {
         const readingType = reading.reading_type || 'Bilinmeyen';
         const spreadName =
           reading.spread_name || reading.reading_type || 'Bilinmeyen';
@@ -245,7 +245,7 @@ export default function StatisticsPage() {
 
       // En aktif gün
       const dayCounts: Record<string, number> = {};
-      allReadings.forEach(reading => {
+      allReadings.forEach((reading: any) => {
         const day = new Date(reading.created_at).toLocaleDateString('tr-TR', {
           weekday: 'long',
         });
@@ -258,26 +258,26 @@ export default function StatisticsPage() {
 
       // Kredi hesaplamaları
       const totalCreditsSpent = allReadings.reduce(
-        (sum, reading) =>
+        (sum: number, reading: any) =>
           sum + getCreditCost(reading.reading_type, reading.cost_credits),
         0
       );
 
       const thisMonthSpent = allReadings
-        .filter(reading => new Date(reading.created_at) >= startOfMonth)
+        .filter((reading: any) => new Date(reading.created_at) >= startOfMonth)
         .reduce(
-          (sum, reading) =>
+          (sum: number, reading: any) =>
             sum + getCreditCost(reading.reading_type, reading.cost_credits),
           0
         );
 
       const lastMonthSpent = allReadings
-        .filter(reading => {
+        .filter((reading: any) => {
           const readingDate = new Date(reading.created_at);
           return readingDate >= startOfLastMonth && readingDate < startOfMonth;
         })
         .reduce(
-          (sum, reading) =>
+          (sum: number, reading: any) =>
             sum + getCreditCost(reading.reading_type, reading.cost_credits),
           0
         );
@@ -286,7 +286,7 @@ export default function StatisticsPage() {
         ? totalCreditsSpent / totalReadings
         : 0;
       const mostExpensiveReading = allReadings.reduce(
-        (max, reading) =>
+        (max: number, reading: any) =>
           Math.max(
             max,
             getCreditCost(reading.reading_type, reading.cost_credits)
@@ -305,13 +305,13 @@ export default function StatisticsPage() {
         const monthEnd = new Date(monthStart);
         monthEnd.setMonth(monthEnd.getMonth() + 1);
 
-        const monthReadings = allReadings.filter(reading => {
+        const monthReadings = allReadings.filter((reading: any) => {
           const readingDate = new Date(reading.created_at);
           return readingDate >= monthStart && readingDate < monthEnd;
         });
 
         const monthCredits = monthReadings.reduce(
-          (sum, reading) =>
+          (sum: number, reading: any) =>
             sum + getCreditCost(reading.reading_type, reading.cost_credits),
           0
         );
@@ -346,7 +346,7 @@ export default function StatisticsPage() {
         const dayEnd = new Date(dayStart);
         dayEnd.setDate(dayEnd.getDate() + 1);
 
-        const dayReadings = allReadings.filter(reading => {
+        const dayReadings = allReadings.filter((reading: any) => {
           const readingDate = new Date(reading.created_at);
           return readingDate >= dayStart && readingDate < dayEnd;
         });
@@ -370,7 +370,7 @@ export default function StatisticsPage() {
         const checkDate = new Date(today);
         checkDate.setDate(checkDate.getDate() - i);
 
-        const hasReading = allReadings.some(reading => {
+        const hasReading = allReadings.some((reading: any) => {
           const readingDate = new Date(reading.created_at);
           readingDate.setHours(0, 0, 0, 0);
           return readingDate.getTime() === checkDate.getTime();

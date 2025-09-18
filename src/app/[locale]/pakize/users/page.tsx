@@ -208,7 +208,7 @@ export default function UsersPage() {
       }
 
       // Format the data safely
-      const formattedUsers = (data || []).map(user => ({
+      const formattedUsers = (data || []).map((user: any) => ({
         id: user.id || 'unknown',
         email: user.email || 'unknown@example.com',
         display_name: user.display_name || null,

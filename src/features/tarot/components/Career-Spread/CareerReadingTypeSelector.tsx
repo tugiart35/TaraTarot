@@ -37,13 +37,13 @@ export default function CareerReadingTypeSelector({
 }: CareerReadingTypeSelectorProps) {
   // Kariyer açılımı için kredi hook'ları
   const detailedCredits = useReadingCredits('CAREER_SPREAD_DETAILED');
-  const writtenCredits = useReadingCredits('CAREER_SPREAD_WRITTEN');
+  // const writtenCredits = useReadingCredits('CAREER_SPREAD_WRITTEN'); // Şu an kullanılmıyor
 
   return (
     <BaseReadingTypeSelector
       selectedType={selectedType}
       onTypeSelect={onTypeChange}
-      onCreditInfoClick={onCreditInfoClick}
+      onCreditInfoClick={onCreditInfoClick || (() => {})}
       readingTypes={{
         SIMPLE: 'simple',
         DETAILED: 'detailed',

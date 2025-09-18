@@ -15,6 +15,11 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  // Experimental features for Next.js 15
+  experimental: {
+    // RSC payload fetch hatalarını önlemek için
+    serverComponentsExternalPackages: ['@supabase/supabase-js'],
+  },
 }
 
 module.exports = nextConfig

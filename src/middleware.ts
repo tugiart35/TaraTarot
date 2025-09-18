@@ -31,9 +31,9 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { createMiddlewareClient } from '@supabase/auth-helpers-nextjs';
+import { createServerClient } from '@supabase/ssr';
 import type { UserRole } from '@/types/auth.types';
-import { checkMaintenanceMode } from './middleware/maintenance';
+// import { checkMaintenanceMode } from './middleware/maintenance';
 
 // Rate limiting kaldırıldı - development için
 
@@ -44,7 +44,10 @@ const securityHeaders = {
   'Referrer-Policy': 'strict-origin-when-cross-origin',
   'Permissions-Policy': 'camera=(), microphone=(), geolocation=()',
   'X-XSS-Protection': '1; mode=block',
-  'Strict-Transport-Security': 'max-age=31536000; includeSubDomains',
+  // Strict-Transport-Security sadece production'da aktif
+  ...(process.env.NODE_ENV === 'production' && {
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains',
+  }),
   'Content-Security-Policy': [
     "default-src 'self'",
     "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com",
@@ -65,13 +68,13 @@ const securityHeaders = {
 
 // Bot detection kaldırıldı - development için
 
-// Role-based access control - development modunda devre dışı
-// const ROLE_PERMISSIONS: Record<string, string[]> = {
-//   admin: ['/pakize', '/dashboard', '/profile', '/settings', '/analytics'],
-//   premium: ['/dashboard', '/profile', '/settings', '/premium'],
-//   user: ['/dashboard', '/profile', '/settings'],
-//   guest: [],
-// };
+// Role-based access control - Dashboard herkese açık
+const ROLE_PERMISSIONS: Record<string, string[]> = {
+  admin: ['/pakize', '/dashboard', '/profile', '/settings', '/analytics'],
+  premium: ['/dashboard', '/profile', '/settings', '/premium'],
+  user: ['/dashboard', '/profile', '/settings'],
+  guest: ['/dashboard'], // Dashboard guest'lere açık
+};
 
 export async function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
@@ -110,54 +113,76 @@ export async function middleware(request: NextRequest) {
   });
 
   // Supabase client oluştur
-  const supabase = createMiddlewareClient({ req: request, res: response });
+  const supabase = createServerClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    {
+      cookies: {
+        getAll() {
+          return request.cookies.getAll();
+        },
+        setAll(
+          cookiesToSet: Array<{ name: string; value: string; options?: any }>
+        ) {
+          cookiesToSet.forEach(({ name, value, options }) => {
+            response.cookies.set(name, value, options);
+          });
+        },
+      },
+    }
+  );
 
-  // Auth sayfası için özel kontrol - locale ile birlikte
-  if (
-    pathname === '/auth' ||
-    pathname.startsWith('/auth/') ||
+  // Public paths - auth sayfası ve callback'ler
+  const publicPaths = ['/auth', '/auth/', '/auth/callback', '/auth/callback/'];
+
+  const isPublicPath =
+    publicPaths.some(path => pathname === path || pathname.startsWith(path)) ||
     pathname.match(/^\/[a-z]{2}\/auth/) ||
-    pathname.match(/^\/[a-z]{2}\/auth\//)
-  ) {
+    pathname.match(/^\/[a-z]{2}\/auth\//);
+
+  if (isPublicPath) {
     return response;
   }
 
   try {
-    // Kullanıcı oturumunu kontrol et
+    // Güvenli user kontrolü için getUser() kullan
     const {
-      data: { session },
-      error: sessionError,
-    } = await supabase.auth.getSession();
+      data: { user },
+      error: userError,
+    } = await supabase.auth.getUser();
 
-    if (sessionError) {
-      // Continue without session for public routes
+    if (userError) {
+      // Continue without user for public routes
     }
 
-    const user = session?.user;
+    // User varsa session'ı true olarak kabul et
+    const session = user ? { user } : null;
     const userRole = (user?.user_metadata?.role as UserRole) || 'guest';
 
-    // Korumalı sayfalar kontrolü - development modunda devre dışı
-    // const protectedPaths = ['/dashboard', '/profile', '/settings', '/pakize', '/premium'];
-    // const isProtectedPath = protectedPaths.some(path =>
-    //   pathname.includes(path) || pathname.endsWith(path)
-    // );
+    // ✅ KORUMALI SAYFALAR KONTROLÜ - Dashboard korumalı değil
+    const protectedPaths = ['/profile', '/settings', '/pakize', '/premium'];
+    const isProtectedPath = protectedPaths.some(
+      path => pathname.includes(path) || pathname.endsWith(path)
+    );
 
-    // // Korumalı sayfaya erişim kontrolü
-    // if (isProtectedPath) {
-    //   if (!session) {
-    //     // Locale'i koruyarak auth sayfasına yönlendir
-    //     const currentLocale = pathname.split('/')[1] || 'tr';
-    //     return NextResponse.redirect(new URL(`/${currentLocale}/auth`, request.url));
-    //   }
+    // Korumalı sayfaya erişim kontrolü
+    if (isProtectedPath) {
+      if (!session) {
+        // Locale'i koruyarak auth sayfasına yönlendir
+        const currentLocale = pathname.split('/')[1] || 'tr';
+        return NextResponse.redirect(
+          new URL(`/${currentLocale}/auth`, request.url)
+        );
+      }
 
-    //   // Role-based access control
-    //   const allowedPaths = ROLE_PERMISSIONS[userRole] || [];
-    //   const hasAccess = allowedPaths.some(path => pathname.startsWith(path));
+      // Role-based access control
+      const allowedPaths = ROLE_PERMISSIONS[userRole] || [];
+      const hasAccess = allowedPaths.some(path => pathname.startsWith(path));
 
-    //   if (!hasAccess) {
-    //     return NextResponse.redirect(new URL('/tr', request.url));
-    //   }
-    // }
+      if (!hasAccess) {
+        return NextResponse.redirect(new URL('/tr', request.url));
+      }
+    }
 
     // Locale kontrolü
     const pathnameIsMissingLocale = ['tr', 'en', 'sr'].every(

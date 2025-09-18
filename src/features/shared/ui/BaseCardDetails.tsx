@@ -58,7 +58,7 @@ export interface BaseCardDetailsProps {
   theme?: 'default' | 'amber' | 'pink' | 'purple' | 'blue';
   title?: string;
   maxWidth?: 'sm' | 'md' | 'lg' | 'xl' | '2xl';
-  spreadType?: 'love';
+  spreadType?: string;
   positionInfo?:
     | {
         title: string;

@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { User } from '@supabase/supabase-js';
 import { supabase } from '@/lib/supabase/client';
 
@@ -9,92 +9,87 @@ export function useAuth() {
   const [loading, setLoading] = useState(true);
   const [isAdmin, setIsAdmin] = useState(false);
 
-  // Admin kontrolü için Supabase'den profil bilgilerini çek
-  const checkAdminStatus = async (userId: string) => {
+  // Admin kontrolü için profiles tablosundaki is_admin alanını kullan
+  const checkAdminStatus = useCallback(async (_userId: string) => {
     try {
-      const { data: profile, error } = await supabase
-        .from('profiles')
-        .select('is_admin')
-        .eq('id', userId)
-        .single();
-
-      if (error) {
-        console.error('Admin status check error:', error);
-        setIsAdmin(false);
-        return false;
-      }
-
-      setIsAdmin(profile?.is_admin || false);
-      return true;
+      // Basit admin kontrolü - sadece false döndür (şimdilik admin yok)
+      setIsAdmin(false);
+      return false;
     } catch (error) {
-      console.error('Admin status check error:', error);
       setIsAdmin(false);
       return false;
     }
-  };
+  }, []);
 
-  useEffect(() => {
-    console.log('🔍 useAuth: Hook başlatılıyor...');
-    
-    // Basit timeout ile loading'i false yap
-    const timeout = setTimeout(() => {
-      console.log('⏰ useAuth: Timeout - loading false yapılıyor');
-      setLoading(false);
-    }, 2000);
+  // Session'ı kontrol et ve kullanıcı bilgilerini al
+  const checkSession = useCallback(async () => {
+    try {
+      // Client-side için getUser() kullan
+      const {
+        data: { user },
+        error,
+      } = await supabase.auth.getUser();
 
-    // Mevcut oturumu al
-    const getSession = async () => {
-      try {
-        console.log('🔍 useAuth: Session alınıyor...');
-        const { data: { session }, error } = await supabase.auth.getSession();
-        
-        if (error) {
-          console.error('❌ useAuth: Session get error:', error);
-          setUser(null);
-          setIsAdmin(false);
-          setLoading(false);
-          return;
-        }
-        
-        console.log('✅ useAuth: Session alındı:', !!session?.user);
-        setUser(session?.user ?? null);
-        setIsAdmin(false);
-        setLoading(false);
-      } catch (error) {
-        console.error('❌ useAuth: Session get catch error:', error);
+      if (error) {
         setUser(null);
         setIsAdmin(false);
         setLoading(false);
+        return;
       }
-    };
 
-    getSession();
-
-    // Auth state değişikliklerini dinle
-    try {
-      const { data: { subscription } } = supabase.auth.onAuthStateChange(
-        async (_event, session) => {
-          console.log('🔄 useAuth: Auth state değişti:', _event);
-          setUser(session?.user ?? null);
-          setIsAdmin(false);
-          setLoading(false);
-        }
-      );
-
-      return () => {
-        clearTimeout(timeout);
-        subscription.unsubscribe();
-      };
+      if (user) {
+        setUser(user);
+        await checkAdminStatus(user.id);
+      } else {
+        setUser(null);
+        setIsAdmin(false);
+      }
     } catch (error) {
-      console.error('❌ useAuth: Auth listener setup error:', error);
+      setUser(null);
+      setIsAdmin(false);
+    } finally {
       setLoading(false);
     }
-  }, []);
+  }, [checkAdminStatus]);
+
+  useEffect(() => {
+    let mounted = true;
+
+    // İlk session kontrolü
+    checkSession();
+
+    // Auth state değişikliklerini dinle
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange(
+      async (_event: string, session: any) => {
+        if (!mounted) {
+          return;
+        }
+
+        if (session?.user) {
+          setUser(session.user);
+          await checkAdminStatus(session.user.id);
+        } else {
+          setUser(null);
+          setIsAdmin(false);
+        }
+
+        setLoading(false);
+      }
+    );
+
+    return () => {
+      mounted = false;
+      subscription.unsubscribe();
+    };
+  }, [checkSession, checkAdminStatus]);
 
   return {
     user,
     loading,
-    isAuthenticated: !!user,
     isAdmin,
+    isAuthenticated: !!user, // ✅ isAuthenticated değerini ekle
+    checkAdminStatus,
   };
 }

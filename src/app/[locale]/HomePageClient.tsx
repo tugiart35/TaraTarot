@@ -70,7 +70,7 @@ export function HomePageClient({ locale }: HomePageClientProps) {
     try {
       setLoadingStats(true);
       const { count, error } = await supabase
-        .from('tarot_readings')
+        .from('readings')
         .select('*', { count: 'exact', head: true })
         .eq('status', 'completed');
 

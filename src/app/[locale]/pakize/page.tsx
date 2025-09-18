@@ -127,7 +127,7 @@ export default function AdminDashboard() {
       }
 
       const totalCredits = (allProfiles || []).reduce(
-        (sum, profile) => sum + (profile.credit_balance || 0),
+        (sum: number, profile: any) => sum + (profile.credit_balance || 0),
         0
       );
 
@@ -156,7 +156,7 @@ export default function AdminDashboard() {
       }
 
       const dailyCreditUsage = (dailyTransactions || []).reduce(
-        (sum, transaction) => sum + Math.abs(transaction.delta_credits),
+        (sum: number, transaction: any) => sum + Math.abs(transaction.delta_credits),
         0
       );
 
@@ -175,12 +175,12 @@ export default function AdminDashboard() {
       }
 
       const dailyRevenue = (dailyRevenueData || []).reduce(
-        (sum, transaction) => sum + (transaction.amount || 0),
+        (sum: number, transaction: any) => sum + (transaction.amount || 0),
         0
       );
 
       // Format users safely
-      const formattedUsers = (profiles || []).map(user => ({
+      const formattedUsers = (profiles || []).map((user: any) => ({
         id: user.id,
         display_name: user.display_name || 'İsimsiz Kullanıcı',
         created_at: user.created_at || new Date().toISOString(),

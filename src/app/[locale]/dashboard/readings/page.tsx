@@ -151,7 +151,7 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
       if (error) throw error;
 
       if (data) {
-        const processedReadings: Reading[] = data.map(reading => {
+        const processedReadings: Reading[] = data.map((reading: any) => {
           // Okuma türüne göre başlık oluştur
           const getReadingTitle = (readingType: string): string => {
             switch (readingType) {

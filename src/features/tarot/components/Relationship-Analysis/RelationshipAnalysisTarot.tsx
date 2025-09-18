@@ -40,7 +40,7 @@ import { getRelationshipAnalysisMeaningByCardAndPosition } from '@/features/taro
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-import { useToast } from '@/hooks/useToast';
+
 import { supabase } from '@/lib/supabase/client';
 import {
   Toast,
@@ -53,8 +53,8 @@ import {
 } from '@/features/shared/ui';
 import { useTarotReading } from '@/hooks/useTarotReading';
 import { useTranslations } from '@/hooks/useTranslations';
-import { useReadingCredits } from '@/hooks/useReadingCredits';
 import { useAuth } from '@/hooks/useAuth';
+import { useReadingCredits } from '@/hooks/useReadingCredits';
 import { findSpreadById } from '@/lib/constants/tarotSpreads';
 import {
   RELATIONSHIP_ANALYSIS_POSITIONS_INFO,
