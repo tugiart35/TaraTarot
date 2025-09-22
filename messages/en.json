@@ -105,7 +105,7 @@
       "genderRequired": "Gender selection is required",
       "invalidCredentials": "Invalid email or password",
       "userAlreadyExists": "This email address is already registered",
-      "redirecting": ""
+      "redirecting": "Redirecting to the login page...\n"
     },
     "signIn": "Sign In",
     "signOut": "Sign Out"
@@ -722,61 +722,17 @@
     "accountDeleteError": "Error occurred while deleting account."
   },
   "tarotPage": {
-    "title": "Discover Your Destiny",
-    "subtitle": "Discover Your Destiny",
-    "lastReading": "Last Reading",
-    "cardsDrawn": "cards drawn",
-    "loveSpread": {
-      "name": "Love Spread",
-      "description": "Special 4-card spread for relationships and emotional bonds",
-      "summary": "Love Life Summary",
-      "summaryText": "This spread shows the dynamics of your relationship with the person represented by the {card1} card. After the physical ({card2}) and emotional ({card3}) bonds between you, the long-term potential of your relationship is illuminated by the {card4} card.",
-      "detailedReading": {
-        "title": "💕 Love Tarot Spread - Detailed Personal Reading 💕",
-        "concern": "💭 Your Concern",
-        "understanding": "🎯 What You Want to Understand",
-        "emotional": "💫 Your Emotional State",
-        "generalMessage": "GENERAL MESSAGE FOR YOUR LOVE JOURNEY",
-        "message": "These cards show the following in your love journey: You are at an important turning point in your relationship dynamics.\n\nThe {card1} card reflects the energy of the person you're interested in, while {card2} shows the physical and sexual attraction between you.\n\nThe {card3} card reveals your emotional bond, and {card4} reveals the long-term potential of your relationship.",
-        "guideMessage": "Your love guide's message: \"The deepest bonds are built through mutual understanding and open communication. Listen to your heart.\"",
-        "dateMessage": "This reading was specially prepared for you on {date}."
-      }
-    },
     "careerSpread": {
-      "name": "Career Spread",
-      "description": "Special 4-card spread for career and professional life",
-      "summary": "Career Life Summary",
-      "summaryText": "This spread shows your current career situation ({card1}) and the obstacles you face ({card2}). The opportunities ahead ({card3}) and your future goals ({card4}) map out your career journey.",
-      "detailedReading": {
-        "title": "💼 Career Tarot Spread - Detailed Personal Reading 💼",
-        "concern": "💭 Your Career Concern",
-        "understanding": "🎯 What You Want to Understand",
-        "emotional": "💫 Your Professional State",
-        "generalMessage": "GENERAL MESSAGE FOR YOUR CAREER JOURNEY",
-        "message": "These cards show the following in your career journey: You are at an important turning point in your professional development.\n\nThe {card1} card reflects your current career situation, while {card2} shows the obstacles you face.\n\nThe {card3} card reveals the opportunities ahead, and {card4} reveals your career goals.",
-        "guideMessage": "Your career guide's message: \"The greatest successes come through patience, determination, and seizing the right opportunities. Focus on your goals.\"",
-        "dateMessage": "This reading was specially prepared for you on {date}."
-      }
+      "summary": "Overall Assessment",
+      "summaryText": "With the guidance of the cards, evaluate the opportunities you encounter in your career journey and take the necessary steps to overcome obstacles."
     },
-    "positions": {
-      "personOfInterest": "Person of Interest",
-      "physicalConnection": "Physical/Sexual Connection",
-      "emotionalConnection": "Emotional/Spiritual Connection",
-      "longTermOutcome": "Long-term Outcome",
-      "currentSituation": "Your Current Situation",
-      "obstacles": "Obstacles and Challenges",
-      "opportunities": "Opportunities and Potential",
-      "futureGoals": "Future and Goals"
+    "situationAnalysisSpread": {
+      "summary": "Overall Assessment",
+      "summaryText": "With the guidance of the cards, analyze your current situation and plan your future steps."
     },
-    "positionDescriptions": {
-      "personOfInterest": "The person you're asking about",
-      "physicalConnection": "Your physical and sexual connection",
-      "emotionalConnection": "Your emotional and spiritual connection",
-      "longTermOutcome": "The long-term outcome of the relationship",
-      "currentSituation": "Your current career situation and position in work life",
-      "obstacles": "Obstacles and challenges you face in your career",
-      "opportunities": "Opportunities ahead and potential development areas in your career",
-      "futureGoals": "Your career goals and long-term future plans"
+    "problemSolvingSpread": {
+      "summary": "Overall Assessment",
+      "summaryText": "With the guidance of the cards, analyze your problems and discover solution paths."
     }
   },
   "seo": {
@@ -1781,5 +1737,872 @@
     "spreadPositions": "Spread Positions:",
     "morePositions": "more positions...",
     "showLess": "Show less"
+  },
+  "career": {
+    "modals": {
+      "infoTitle": "Career Spread",
+      "aboutSpread": "About the Career Spread",
+      "aboutSpreadText": "The career spread is designed to clarify uncertainties in your work and career journey, and to make your strengths, obstacles, and opportunities visible. Before you start, set your intention, choose the cards with your intuition, and read each card's interpretation according to its position; this way you can turn insights into concrete actions.",
+      "cardCount": "Number of Cards",
+      "cardCountText": "This spread is done with 7 cards. Each card represents a different area of career and provides you with personalized guidance.",
+      "detailedReading": "Audio Reading",
+      "detailedReadingText": "With audio reading, you can listen to the meanings of the cards and get more detailed interpretations.",
+      "writtenReading": "Written Reading",
+      "writtenReadingText": "With written reading, you can read the meanings of the cards and get more comprehensive analyses.",
+      "process": "Process",
+      "step1": "Fill in your personal information and questions",
+      "step2": "Select 7 cards with your intuition",
+      "step3": "Read the interpretations according to the positions of the cards",
+      "step4": "Save your reading and get the results",
+      "cancel": "Cancel",
+      "continue": "Continue",
+      "creditConfirm": "Credit Confirmation",
+      "creditConfirmMessage": "Credits will be used for this reading. Are you sure you want to continue?",
+      "processing": "Processing...",
+      "confirm": "Confirm",
+      "savingReading": "Saving Reading...",
+      "saveReading": "Save Reading",
+      "successTitle": "Reading Completed!",
+      "successMessage": "Your career spread has been successfully completed and saved. You can review your personalized interpretations.",
+      "redirecting": "Redirecting to home page..."
+    },
+    "form": {
+      "personalInfo": "Personal Information",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "birthDate": "Birth Date",
+      "email": "Email",
+      "questions": "Your Career Questions",
+      "concernQuestion": "What concerns you most about your career?",
+      "understandingQuestion": "What areas of your career would you like to understand better?",
+      "emotionalQuestion": "What emotional obstacles are you experiencing regarding your career?",
+      "saving": "Saving...",
+      "saveAndOpen": "Save and Open Cards",
+      "clearAll": "Clear All Cards",
+      "placeholders": {
+        "firstName": "Your first name",
+        "lastName": "Your last name",
+        "email": "example@email.com",
+        "concernQuestion": "Does my job make me happy, am I on the right path?...",
+        "understandingQuestion": "A more creative job, working abroad, starting my own business...",
+        "emotionalQuestion": "Fear of failure, feeling not good enough..."
+      }
+    },
+    "messages": {
+      "loginRequired": "You must log in to perform a reading.",
+      "simpleReadingCompleted": "Simple reading completed!",
+      "readingSavedSuccess": "Your reading has been successfully saved!",
+      "readingSaveError": "An error occurred while saving the reading.",
+      "selectReadingTypeFirst": "Please select a reading type first.",
+      "formUnsavedWarning": "Form has been filled but not saved. Are you sure you want to exit?",
+      "interpretationTitle": "Career and Money Spread",
+      "interpretationGreeting": "Dear client, specially prepared analysis for your career and money question \"{question}\":",
+      "allCardsRequired": "Cannot create interpretation without selecting all cards.",
+      "configurationNotFound": "Career Spread configuration not found. Please check tarotSpreads.ts file."
+    },
+    "validation": {
+      "nameMinLength": "Name must be at least 3 characters.",
+      "surnameMinLength": "Surname must be at least 3 characters.",
+      "birthDateRequired": "Birth date is required.",
+      "emailInvalid": "Please enter a valid email address.",
+      "questionMinLength": "You must provide at least 10 characters for this question."
+    },
+    "data": {
+      "spreadName": "Career and Money Spread",
+      "spreadTitle": "Career and Money Spread",
+      "detailedTitle": "Career and Money Spread - Detailed Personal Reading",
+      "simpleInterpretation": "Simple reading - counter only",
+      "simpleTitle": "Simple Reading",
+      "interpretationTitle": "Career and Money Spread Interpretation",
+      "badgeText": "CAREER",
+      "cardDirections": {
+        "reversed": "Reversed",
+        "upright": "Upright"
+      },
+      "readingFormats": {
+        "detailed": "Audio",
+        "written": "Written",
+        "simple": "Simple"
+      }
+    }
+  },
+  "problemSolving": {
+    "errors": {
+      "configNotFound": "Problem Solving Spread configuration not found. Please check tarotSpreads.ts file.",
+      "allCardsRequired": "Cannot generate interpretation without selecting all cards."
+    },
+    "messages": {
+      "simpleReadingCompleted": "Simple reading completed!",
+      "readingSavedSuccessfully": "Your reading has been saved successfully!",
+      "readingSaveError": "An error occurred while saving the reading.",
+      "selectReadingTypeFirst": "Please select a reading type first.",
+      "savingReading": "📝 Saving reading...",
+      "redirectingToHome": "Redirecting to home page...",
+      "formNotSavedConfirm": "Form has been filled but not saved. Are you sure you want to exit?",
+      "configurationNotFound": "Problem Solving Spread configuration not found. Please check tarotSpreads.ts file.",
+      "loginRequired": "You need to log in for this operation."
+    },
+    "data": {
+      "interpretationTitle": "Problem Solving Spread",
+      "dearClient": "Dear client,",
+      "reversed": "Reversed",
+      "upright": "Upright",
+      "simpleReadingCounter": "Simple reading - counter only",
+      "detailedReadingTitle": "Problem Solving Spread - Detailed Personal Reading",
+      "spreadName": "Problem Solving Spread",
+      "defaultTitle": "Problem Solving Spread"
+    },
+    "validation": {
+      "formUnsavedWarning": "Form has been filled but not saved. Are you sure you want to exit?",
+      "nameMinLength": "Name must be at least 3 characters",
+      "surnameMinLength": "Surname must be at least 3 characters",
+      "birthDateRequired": "Birth date is required",
+      "emailInvalid": "Please enter a valid email address",
+      "concernMinLength": "Concern must be at least 10 characters",
+      "understandingMinLength": "Understanding must be at least 10 characters",
+      "emotionalMinLength": "Emotional state must be at least 10 characters"
+    },
+    "form": {
+      "personalInfo": "Personal Information",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "birthDate": "Birth Date",
+      "email": "Email Address",
+      "questions": "✨ Problem Solving Spread Questions ✨",
+      "concernQuestion": "What problem are you experiencing and looking for a solution?",
+      "understandingQuestion": "What do you want to understand with this problem solving spread?",
+      "emotionalQuestion": "How do you feel right now in the face of this problem?",
+      "clearAll": "Clear All",
+      "close": "Close",
+      "closeForm": "Close form (ESC)",
+      "saving": "Saving...",
+      "saveAndOpen": "Save and Open",
+      "placeholders": {
+        "firstName": "Your first name",
+        "lastName": "Your last name",
+        "email": "example@email.com",
+        "concernQuestion": "What problem are you experiencing and looking for a solution?",
+        "understandingQuestion": "What do you want to understand with this problem solving spread?",
+        "emotionalQuestion": "How do you feel right now in the face of this problem?"
+      }
+    },
+    "modals": {
+      "saveReading": "Save Reading 🔍",
+      "successTitle": "Reading Successfully Saved!",
+      "successMessage": "Your problem solving spread has been successfully saved and sent to your email address.",
+      "redirecting": "🔍 Redirecting to home page...",
+      "infoTitle": "About Problem Solving Spread",
+      "aboutSpread": "About the Spread",
+      "aboutSpreadText": "Problem Solving Spread is a special 10-card spread designed to analyze the problems you face and find solution paths.",
+      "cardCount": "Card Count",
+      "cardCountText": "This spread uses 10 cards and each card represents a different analysis stage.",
+      "detailedReading": "Detailed Reading",
+      "detailedReadingText": "Audio recorded, personalized detailed interpretation.",
+      "writtenReading": "Written Reading",
+      "writtenReadingText": "Written, personalized detailed interpretation.",
+      "process": "Process",
+      "step1": "Enter your personal information",
+      "step2": "Answer questions about the problem",
+      "step3": "Select 10 cards and determine their positions",
+      "step4": "Receive your detailed interpretation",
+      "cancel": "Cancel",
+      "continue": "Continue",
+      "creditConfirm": "Credit Confirmation",
+      "creditConfirmMessage": "Credits will be deducted for this reading. Are you sure you want to continue?",
+      "processing": "Processing...",
+      "confirm": "Confirm"
+    }
+  },
+  "spreads": {
+    "problemSolving": {
+      "name": "Problem Solving Spread",
+      "description": "10-card detailed spread for problem analysis and solution",
+      "positions": {
+        "1": {
+          "title": "Question Asked",
+          "description": "The main question or topic that forms the basis of the spread"
+        },
+        "2": {
+          "title": "Obstacle of the Problem",
+          "description": "The main obstacle or difficulty in front of the problem"
+        },
+        "3": {
+          "title": "Subconscious Issue History",
+          "description": "The subconscious origins or past influences of the topic"
+        },
+        "4": {
+          "title": "Best Potential",
+          "description": "The best situation we can achieve for ourselves in this matter"
+        },
+        "5": {
+          "title": "Near Past",
+          "description": "Events or influences related to the topic in the near past"
+        },
+        "6": {
+          "title": "Near Future",
+          "description": "Possible developments related to the topic in the near future"
+        },
+        "7": {
+          "title": "Current Situation",
+          "description": "Our current state, our current condition regarding the topic"
+        },
+        "8": {
+          "title": "External Influences",
+          "description": "External factors affecting the topic, environmental conditions"
+        },
+        "9": {
+          "title": "Fears and Worries",
+          "description": "Our internal fears and concerns related to the topic"
+        },
+        "10": {
+          "title": "Outcome of the Event",
+          "description": "The final outcome of the topic or event, possible solution"
+        }
+      }
+    },
+    "love": {
+      "name": "Love Spread",
+      "description": "Special 4-card spread for love and relationship topics",
+      "positions": {
+        "1": {
+          "title": "The person you're asking about",
+          "description": "The person you're asking about"
+        },
+        "2": {
+          "title": "Your physical and sexual connection",
+          "description": "Your physical and sexual connection"
+        },
+        "3": {
+          "title": "Your emotional and spiritual connection",
+          "description": "Your emotional and spiritual connection"
+        },
+        "4": {
+          "title": "Long-term outcome of the relationship",
+          "description": "Long-term outcome of the relationship"
+        }
+      }
+    },
+    "career": {
+      "name": "Career Spread",
+      "description": "Special 7-card spread for career and work life",
+      "positions": {
+        "1": {
+          "title": "Is this really the career I want?",
+          "description": "Evaluate whether your current career is really the career you want"
+        },
+        "2": {
+          "title": "What steps can I take to develop my career?",
+          "description": "Concrete steps you can take to advance your career"
+        },
+        "3": {
+          "title": "Are there aspects of my career that I cannot change?",
+          "description": "Elements in your career that you cannot control or change"
+        },
+        "4": {
+          "title": "Am I doing my best in my career?",
+          "description": "The level of performance and effort you show in your current career"
+        },
+        "5": {
+          "title": "What changes can I make to help my career?",
+          "description": "Changes and improvements that will contribute positively to your career"
+        },
+        "6": {
+          "title": "What obstacles from my past are affecting my current career?",
+          "description": "How your past experiences affect your current career"
+        },
+        "7": {
+          "title": "What will be the outcome?",
+          "description": "The general outcome of your career journey and future predictions"
+        }
+      }
+    },
+    "situationAnalysis": {
+      "name": "Situation Analysis Spread",
+      "description": "Special 7-card spread for situation analysis and evaluation",
+      "positions": {
+        "1": {
+          "title": "Past or Causes",
+          "description": "The causes of the situation experienced, why such a situation is currently being experienced and all the mistakes made are indicated in this card."
+        },
+        "2": {
+          "title": "Current Situation",
+          "description": "What is currently happening, current agenda topics and how the past affects today is indicated."
+        },
+        "3": {
+          "title": "Hidden Factors",
+          "description": "Events developing outside the person's knowledge, those talking behind, secret affairs and unknown truths are hidden in this card."
+        },
+        "4": {
+          "title": "Center Card",
+          "description": "Represents the center of the spread. It expresses the person at the center of the situation or the most central area in your life."
+        },
+        "5": {
+          "title": "External Factors",
+          "description": "Provides information from different sources and perspectives for the future. It can also point to external attacks and possible intrigues."
+        },
+        "6": {
+          "title": "Advice",
+          "description": "Provides information about what the most appropriate actions are regarding the experienced situation. It is stated that it may offer a solution or way out."
+        },
+        "7": {
+          "title": "Possible Future - Result",
+          "description": "Shows where the current course will lead, possible obstacles or surprises. It is stated that the future can change depending on the decisions to be made."
+        }
+      }
+    },
+    "relationshipAnalysis": {
+      "name": "Relationship Analysis Spread",
+      "description": "Special 7-card spread for relationship analysis and evaluation",
+      "positions": {
+        "1": {
+          "title": "Current Situation",
+          "description": "Provides information about the current conditions of the relationship, the situation it is in and the atmosphere created by any problems."
+        },
+        "2": {
+          "title": "Your Feelings",
+          "description": "Shows your feelings, thoughts and your perspective on your partner. It reflects your emotional state in the relationship."
+        },
+        "3": {
+          "title": "Your Expectations",
+          "description": "Shows your concerns, expectations and dreams about your relationship or the situation you are in."
+        },
+        "4": {
+          "title": "Advice",
+          "description": "Contains advice regarding the attitude you will display regarding the course of your relationship. It shows how you should behave."
+        },
+        "5": {
+          "title": "Road Map",
+          "description": "Guides you regarding the attitude you should take in this relationship or in the face of existing problems and what kind of path you should follow."
+        },
+        "6": {
+          "title": "Your Partner's Expectations",
+          "description": "Shows your partner's concerns, expectations and dreams about your relationship or the situation you are in."
+        },
+        "7": {
+          "title": "Your Partner's Feelings",
+          "description": "Shows your partner's feelings, thoughts and perspective on you. It reflects their emotional state in the relationship."
+        }
+      }
+    },
+    "relationshipProblems": {
+      "name": "Relationship Problems Spread",
+      "description": "Special 9-card spread for relationship problems analysis and solution",
+      "positions": {
+        "1": {
+          "title": "What is the contradiction?",
+          "description": "Shows the internal contradictions and conflicts in your relationship. It helps you understand what topics you disagree on and why you experience contradiction."
+        },
+        "2": {
+          "title": "What is the problem?",
+          "description": "Reveals the main problem and basic issue in your relationship. It shows which topic creates the biggest difficulty."
+        },
+        "3": {
+          "title": "Did I create the problem?",
+          "description": "Shows your share and responsibility at the source of the problem. It helps you understand how your own behavior contributed to the problem."
+        },
+        "4": {
+          "title": "Am I ignoring my share in this problem?",
+          "description": "Shows your situation regarding accepting your own responsibility. It reveals whether you ignore your own mistakes."
+        },
+        "5": {
+          "title": "My past experiences with the person I'm with",
+          "description": "Shows how the past experiences you had with your partner affect current problems. It helps you understand how the past reflects on today."
+        },
+        "6": {
+          "title": "Are we abusing each other?",
+          "description": "Shows the state of mutual respect and healthy boundaries in your relationship. It reveals how you affect each other and whether you harm each other."
+        },
+        "7": {
+          "title": "Are there other people interfering with our problem?",
+          "description": "Shows external factors and third parties affecting your relationship. It helps you understand how family, friends or other people affect your problem."
+        },
+        "8": {
+          "title": "Are there material problems affecting our relationship?",
+          "description": "Shows the effect of factors such as money, work, financial situation on your relationship. It reveals how economic problems affect your relationship."
+        },
+        "9": {
+          "title": "Will this relationship continue?",
+          "description": "Provides insight into the future of your relationship. It provides information about whether current problems will be resolved and whether the relationship will continue."
+        }
+      }
+    },
+    "marriage": {
+      "name": "Marriage Spread",
+      "description": "Special 10-card spread for marriage and finding a spouse",
+      "positions": {
+        "1": {
+          "title": "What will be the outcome?",
+          "description": "Shows the general outcome of your marriage process and how it will progress."
+        },
+        "2": {
+          "title": "What should I do while waiting for my spouse?",
+          "description": "Shows how you should develop yourself until you find the right person."
+        },
+        "3": {
+          "title": "Will we share our financial resources with each other?",
+          "description": "Shows your harmony and sharing in financial matters in marriage."
+        },
+        "4": {
+          "title": "Will both of us want to commit?",
+          "description": "Shows whether both parties are ready for marriage and the desire to commit."
+        },
+        "5": {
+          "title": "Will we have similarities?",
+          "description": "Shows your common values, similarities and harmony."
+        },
+        "6": {
+          "title": "Will this person's family accept me?",
+          "description": "Shows how family approval and family relationships will be."
+        },
+        "7": {
+          "title": "How will we find each other?",
+          "description": "Shows how you will meet and find the right person."
+        },
+        "8": {
+          "title": "Will we be able to get along?",
+          "description": "Shows your communication harmony and capacity to understand each other."
+        },
+        "9": {
+          "title": "What kind of spouse is suitable for me?",
+          "description": "Shows the characteristics of your ideal spouse and the person who will be compatible with you."
+        },
+        "10": {
+          "title": "Will I be able to get married?",
+          "description": "Shows your marriage potential and chances of getting married."
+        }
+      }
+    },
+    "newLover": {
+      "name": "New Lover Spread",
+      "description": "Special 6-card spread for a new love relationship",
+      "positions": {
+        "1": {
+          "title": "Will I experience a new relationship soon?",
+          "description": "Shows your future relationship potential"
+        },
+        "2": {
+          "title": "What zodiac sign will this person be?",
+          "description": "Shows the astrological characteristics of your future partner"
+        },
+        "3": {
+          "title": "Will we be compatible with each other?",
+          "description": "Shows harmony and disharmony in your relationship"
+        },
+        "4": {
+          "title": "Will it be a long-term relationship?",
+          "description": "Shows the continuity and depth of your relationship"
+        },
+        "5": {
+          "title": "Could this person be my soulmate?",
+          "description": "Shows spiritual connection and deep love potential"
+        },
+        "6": {
+          "title": "Will my wish come true?",
+          "description": "Shows the probability of your love wish coming true"
+        }
+      }
+    },
+    "money": {
+      "name": "Money Spread",
+      "description": "Pyramid spread with 8 cards for financial situation and money matters",
+      "positions": {
+        "1": {
+          "title": "Money-Related Concerns",
+          "description": "Is there any concern about money?"
+        },
+        "2": {
+          "title": "Desire for Financial Security",
+          "description": "The desire for financial security"
+        },
+        "3": {
+          "title": "Money Usage",
+          "description": "How can I use money in a way that will make me happy?"
+        },
+        "4": {
+          "title": "Past Money Attitude",
+          "description": "My past attitude towards money"
+        },
+        "5": {
+          "title": "Financial Responsibilities",
+          "description": "What are my responsibilities for a good life financially?"
+        },
+        "6": {
+          "title": "New Financial Plans",
+          "description": "My new plans regarding my financial investments or savings"
+        },
+        "7": {
+          "title": "Future Money Plans",
+          "description": "My future plans regarding money"
+        },
+        "8": {
+          "title": "Money-Making Abilities",
+          "description": "What special talents do I have for making money?"
+        }
+      }
+    }
+  },
+  "situationAnalysis": {
+    "errors": {
+      "configNotFound": "Situation Analysis Spread configuration not found. Please check tarotSpreads.ts file.",
+      "allCardsRequired": "Cannot generate interpretation without selecting all cards."
+    },
+    "messages": {
+      "simpleReadingCompleted": "Simple reading completed!",
+      "readingSavedSuccessfully": "Your reading has been saved successfully!",
+      "readingSaveError": "An error occurred while saving the reading.",
+      "selectReadingTypeFirst": "Please select a reading type first.",
+      "savingReading": "📝 Saving reading...",
+      "redirectingToHome": "Redirecting to home page...",
+      "formNotSavedConfirm": "Form has been filled but not saved. Are you sure you want to exit?"
+    },
+    "interpretation": {
+      "title": "Situation Analysis Spread",
+      "dearClient": "Dear client,",
+      "personalAnalysis": "situation analysis \"{question}\" specially prepared analysis:"
+    },
+    "data": {
+      "interpretationTitle": "Situation Analysis Spread Interpretation",
+      "badgeText": "SITUATION ANALYSIS",
+      "spreadName": "Situation Analysis Spread",
+      "defaultTitle": "Situation Analysis Spread",
+      "detailedReadingTitle": "Situation Analysis Spread - Detailed Personal Reading"
+    },
+    "form": {
+      "personalInfo": "Your Personal Information",
+      "firstName": "Your First Name",
+      "lastName": "Your Last Name",
+      "birthDate": "Birth Date",
+      "email": "Your Email Address",
+      "questions": "✨ Situation Analysis Spread Questions ✨",
+      "concernQuestion": "What situation do you want to analyze?",
+      "understandingQuestion": "What do you want to understand with this situation analysis?",
+      "emotionalQuestion": "How are you feeling right now about this situation?",
+      "saveAndOpen": "🔍 Save and Open Cards",
+      "saving": "Saving...",
+      "clearAll": "🔄 Clear All"
+    },
+    "modals": {
+      "infoTitle": "About Situation Analysis Spread",
+      "aboutSpread": "About the Spread",
+      "aboutSpreadText": "This 7-card spread is designed to deeply analyze the situation you are experiencing. It provides comprehensive information about the past, present, hidden factors and future.",
+      "cardCount": "Card Count",
+      "cardCountText": "This spread uses 7 tarot cards. Each card represents a different aspect of the situation.",
+      "detailedReading": "Audio Reading",
+      "detailedReadingText": "Provides comprehensive analysis with detailed interpretations of cards and position meanings.",
+      "writtenReading": "Written Reading",
+      "writtenReadingText": "Reading results are sent to your email address in PDF format.",
+      "process": "Process",
+      "step1": "Enter your personal information",
+      "step2": "Answer questions about the situation",
+      "step3": "Select 7 cards and view interpretations",
+      "step4": "Save reading and receive email",
+      "continue": "Continue",
+      "creditConfirm": "Credit Confirmation",
+      "creditConfirmMessage": "Do you want to continue with this reading?",
+      "confirm": "Yes, I Agree",
+      "cancel": "Cancel",
+      "processing": "Processing...",
+      "successTitle": "Reading Successfully Saved!",
+      "successMessage": "Your situation analysis spread has been saved and analyzed in detail. You can view your results from the user panel.",
+      "redirecting": "🔍 Redirecting to home page...",
+      "saveReading": "Save Reading 🔍",
+      "savingReading": "Saving..."
+    }
+  },
+  "meanings": {
+    "theMagician": {
+      "position1": {
+        "upright": "The person you're interested in is attractive, talented, and has the power to achieve what they want. They have high communication skills and know how to turn events in their favor. They may be creating a conscious attraction towards you.",
+        "reversed": "Reversed Magician indicates that this person might be manipulative, deceptive, or not using their potential. Their words and actions may not be consistent, or they may be suffering from lack of self-confidence.",
+        "keywords": [
+          "willpower",
+          "creativity",
+          "skill",
+          "attractiveness",
+          "manifestation"
+        ],
+        "context": "This person is a creator sitting in the director's chair of their life and relationships."
+      }
+    },
+    "theHighPriestess": {
+      "position1": {
+        "upright": "This person has a mysterious, intuitive nature and doesn't immediately reveal their emotions. Their inner world is rich and it may take time to understand them. They may be keeping their feelings for you like a secret.",
+        "reversed": "Reversed High Priestess shows that this person might be secretive, disconnected from their intuition, or not sincere with you. They may be having trouble connecting with their inner world or with you.",
+        "keywords": [
+          "intuition",
+          "mystery",
+          "subconscious",
+          "hidden emotions",
+          "insight"
+        ],
+        "context": "This person is a mysterious soul who lives their emotions not on the surface, but in the depths."
+      }
+    },
+    "theEmpress": {
+      "position1": {
+        "upright": "The person you're interested in is nurturing, compassionate, warm-hearted, and loves the pleasures of life. They spread beauty and abundance around them. In relationships, they may have a maternal or paternal attitude that provides security.",
+        "reversed": "Reversed Empress shows that this person might be overly possessive, lazy, or not taking care of themselves. They may have blockages in expressing their creativity or love.",
+        "keywords": [
+          "abundance",
+          "motherhood",
+          "naturalness",
+          "compassion",
+          "beauty"
+        ],
+        "context": "This person is a life-filled heart that nourishes with love and compassion."
+      }
+    },
+    "theEmperor": {
+      "position1": {
+        "upright": "This person has an organized, disciplined, protective, and leadership-oriented nature. They seek stability and control in their life. In relationships, they can offer a reliable shoulder and a solid foundation.",
+        "reversed": "Reversed Emperor indicates that this person might be overly controlling, rigid, dominant, or have problems with authority. They may have difficulty showing their emotions.",
+        "keywords": [
+          "authority",
+          "stability",
+          "leadership",
+          "protection",
+          "discipline"
+        ],
+        "context": "This person is a leader who wants to build their life and relationships on solid foundations."
+      }
+    },
+    "theHierophant": {
+      "position1": {
+        "upright": "The person you're interested in is traditional, has high moral values, and values social rules. They may be seeking seriousness, loyalty, and a traditional path in relationships.",
+        "reversed": "Reversed Hierophant shows that this person might be rebellious against rules, dogmatic, or narrow-minded. They may be feeling social pressure or rejecting traditional paths.",
+        "keywords": [
+          "tradition",
+          "belief systems",
+          "rules",
+          "loyalty",
+          "spirituality"
+        ],
+        "context": "This person lives love and life with a specific belief or value system."
+      }
+    },
+    "theLovers": {
+      "position1": {
+        "upright": "This person is at an important turning point regarding relationships and partnerships. They are someone who acts with their heart, is full of love, and is open to forming a deep bond with a partner. They may feel a strong spiritual attraction to you.",
+        "reversed": "Reversed Lovers shows that this person is experiencing indecision in relationships, making wrong choices, or is in conflict between their heart and mind. There may be discord and communication problems.",
+        "keywords": [
+          "love",
+          "choice",
+          "harmony",
+          "partnership",
+          "spiritual bond"
+        ],
+        "context": "This person is seeking their heart's path and is on the verge of making an important relationship decision."
+      }
+    },
+    "theChariot": {
+      "position1": {
+        "upright": "The person you're interested in is ambitious, willful, and focused on their goals. They have taken control of their life and are moving forward rapidly. If they want a relationship, they will direct themselves to this goal with determination.",
+        "reversed": "Reversed Chariot shows that this person has uncontrolled, aimless, or aggressive energy. They may have lost the steering wheel of their life or given up in the face of obstacles.",
+        "keywords": [
+          "willpower",
+          "victory",
+          "control",
+          "ambition",
+          "movement"
+        ],
+        "context": "This person is a warrior who drives the car of their life determinedly toward their goals."
+      }
+    },
+    "strength": {
+      "position1": {
+        "upright": "This person has inner strength, courage, and patience. Instead of brute force, they overcome difficulties with compassion and understanding. They are a character who can control their wild impulses, gentle but strong.",
+        "reversed": "Reversed Strength shows that this person is insecure, cowardly, or governed by their inner impulses. They may be using their strength incorrectly or feeling weak.",
+        "keywords": [
+          "inner strength",
+          "courage",
+          "compassion",
+          "patience",
+          "control"
+        ],
+        "context": "This person is a brave heart who knows that true strength lies in kindness and patience."
+      }
+    },
+    "theHermit": {
+      "position1": {
+        "upright": "The person you're interested in is introverted, in spiritual search, and needs solitude. They may be distant from relationships right now and seeking their inner guidance.",
+        "reversed": "Reversed Hermit shows that this person has forcibly isolated themselves from society, fears loneliness, or refuses to listen to others' advice. They may be lost in isolation.",
+        "keywords": [
+          "inner search",
+          "loneliness",
+          "wisdom",
+          "guidance",
+          "introversion"
+        ],
+        "context": "This person is a wise traveler who seeks answers not outside, but within themselves."
+      }
+    },
+    "wheelOfFortune": {
+      "position1": {
+        "upright": "This person is in an important turning point and cycle of change in their life. The winds of fate are blowing for them. Sudden and unexpected developments may occur in their relationship life as well.",
+        "reversed": "Reversed Wheel of Fortune shows that this person is going through an unlucky period, resisting change, or feeling they have lost control of their life. Things may be going wrong for them.",
+        "keywords": [
+          "fate",
+          "cycles",
+          "change",
+          "luck",
+          "turning point"
+        ],
+        "context": "This person is in the middle of life's ups and downs, at a point where the wheel of fate is turning."
+      }
+    },
+    "justice": {
+      "position1": {
+        "upright": "The person you're interested in is fair, honest, logical, and balanced. They seek truth and transparency in their life and relationships. They may be facing the consequences of their past actions.",
+        "reversed": "Reversed Justice shows that this person is acting unfairly, avoiding responsibility, or being prejudiced. There may be an imbalance or injustice in their life.",
+        "keywords": [
+          "justice",
+          "balance",
+          "truth",
+          "cause-effect",
+          "decision"
+        ],
+        "context": "This person is a soul who believes that life and love should sit in a fair balance."
+      }
+    },
+    "theHangedMan": {
+      "position1": {
+        "upright": "This person is in a pause period to gain a different perspective on events. They may be making a sacrifice or waiting on a matter. They prefer to observe rather than act right now.",
+        "reversed": "Reversed Hanged Man shows that this person is making useless sacrifices, stuck in a situation, or resisting change. They may be wasting their time and energy.",
+        "keywords": [
+          "different perspective",
+          "sacrifice",
+          "pause",
+          "surrender",
+          "waiting"
+        ],
+        "context": "This person is someone who needs to stop and look at the world with different eyes to move forward."
+      }
+    },
+    "death": {
+      "position1": {
+        "upright": "This person is going through a great transformation and ending process in their life. They are preparing to leave the old behind and make a new beginning. This could be the end of a relationship or a personal transformation.",
+        "reversed": "Reversed Death shows that this person is resisting change, stuck in the past, or delaying a necessary ending. This situation is preventing their progress.",
+        "keywords": [
+          "transformation",
+          "endings",
+          "new beginnings",
+          "change",
+          "ending"
+        ],
+        "context": "This person is a phoenix who leaves an old self behind to be reborn from the ashes."
+      }
+    },
+    "temperance": {
+      "position1": {
+        "upright": "This person has found balance, harmony, and moderation in their life. They create a peaceful synthesis by bringing different elements together. In relationships, they have a patient, calm, and conciliatory attitude.",
+        "reversed": "Reversed Temperance shows that this person is experiencing imbalance, excess, or conflict in their life. They may be acting impatiently and have lost their inner peace.",
+        "keywords": [
+          "balance",
+          "harmony",
+          "moderation",
+          "patience",
+          "synthesis"
+        ],
+        "context": "This person is an alchemist who creates their own melody of peace by combining the different notes of life."
+      }
+    },
+    "theDevil": {
+      "position1": {
+        "upright": "This person may be tightly bound to materialistic pleasures, addictions, or unhealthy relationship dynamics. Although they have intense passion, this situation can become restrictive or toxic.",
+        "reversed": "Reversed Devil shows that this person has freed themselves from an addiction, broken their chains, or realized a trap. They are taking an important step on the path to liberation.",
+        "keywords": [
+          "addiction",
+          "restriction",
+          "materialism",
+          "passion",
+          "shadow self"
+        ],
+        "context": "This person is either a prisoner of a cage they created or found themselves in, or someone trying to escape that cage."
+      }
+    },
+    "theTower": {
+      "position1": {
+        "upright": "This person is experiencing sudden, shocking, and unexpected destruction in their life. The foundations they believed in are shaking, and they are seeing the truth with sudden enlightenment. Although this process is painful, it is liberating.",
+        "reversed": "Reversed Tower shows that this person is avoiding a necessary destruction, trying to prevent a disaster, or the crisis is prolonging because they are resisting change. They are living in fear of destruction.",
+        "keywords": [
+          "sudden destruction",
+          "shocking change",
+          "enlightenment",
+          "liberation",
+          "chaos"
+        ],
+        "context": "This person is someone facing truths while the tower they thought was solid in their life is collapsing."
+      }
+    },
+    "theStar": {
+      "position1": {
+        "upright": "This person is full of hope, inspiration, and faith after a difficult period. They look positively to the future and are in a process of spiritual healing. Their heart is open and optimistic towards relationships.",
+        "reversed": "Reversed Star shows that this person has lost hope, is pessimistic, or disconnected from their sources of inspiration. They have lost faith in the future and feel lost.",
+        "keywords": [
+          "hope",
+          "faith",
+          "inspiration",
+          "healing",
+          "peace"
+        ],
+        "context": "This person is a guiding star of hope that shines after a dark night."
+      }
+    },
+    "theMoon": {
+      "position1": {
+        "upright": "This person is going through a period full of uncertainties, fears, and illusions. Although their intuitions are strong, they may have difficulty distinguishing between what is real and what is fantasy. They have an emotionally confusing energy.",
+        "reversed": "Reversed Moon shows that this person is facing their fears, a deception has been revealed, or the confusion has ended. Secrets are coming out and clarity is being gained.",
+        "keywords": [
+          "fears",
+          "illusions",
+          "intuition",
+          "uncertainty",
+          "subconscious"
+        ],
+        "context": "This person is an intuitive but anxious soul trying to find their way in their own inner darkness."
+      }
+    },
+    "theSun": {
+      "position1": {
+        "upright": "This person is full of joy, vitality, success, and positive energy. They enjoy their life, have confidence in themselves, and spread light around them. In relationships, they are open, honest, and warm-hearted.",
+        "reversed": "Reversed Sun indicates that this person is experiencing temporary unhappiness, their energy is low, or they cannot fully show their potential. They may have difficulty seeing success and joy.",
+        "keywords": [
+          "joy",
+          "success",
+          "vitality",
+          "optimism",
+          "clarity"
+        ],
+        "context": "This person is a shining sun that spreads warmth and happiness around them."
+      }
+    },
+    "judgement": {
+      "position1": {
+        "upright": "This person is in an important accounting and rebirth period in their life. They are evaluating the past, forgiving themselves, and awakening to a higher purpose. In relationships, there may be a second chance or an important decision.",
+        "reversed": "Reversed Judgement shows that this person is judging themselves or others, not learning from past mistakes, or avoiding an important decision. They may be overly critical of themselves.",
+        "keywords": [
+          "reckoning",
+          "rebirth",
+          "awakening",
+          "forgiveness",
+          "decision"
+        ],
+        "context": "This person is someone who hears a call to face their past and open a new page in their life."
+      }
+    },
+    "theWorld": {
+      "position1": {
+        "upright": "This person has successfully completed a cycle in their life and reached wholeness. They are at peace with themselves, satisfied, and ready to move to a new stage. In relationships, they also seek a sense of completion and satisfaction.",
+        "reversed": "Reversed World shows that this person cannot complete a project or cycle, cannot reach their goals, and feels that something is missing. They may not be able to make closure.",
+        "keywords": [
+          "completion",
+          "wholeness",
+          "success",
+          "satisfaction",
+          "journey"
+        ],
+        "context": "This person has successfully completed an important stage in their life journey and feels at the peak of the world."
+      }
+    }
   }
 }

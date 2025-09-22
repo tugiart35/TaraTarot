@@ -19,6 +19,10 @@ Düzeltilen Hatalar:
 - Form modal'ında renk tutarsızlığı düzeltildi (yellow/amber -> blue)
 - Form input'ları düzeltildi (updatePersonalInfo, updateQuestion kullanımı)
 - Form footer ve kredi onay butonları düzeltildi
+- BaseInterpretation kullanımındaki hatalar düzeltildi (meaning.meaning -> isReversed kontrolü)
+- getCardMeaning fonksiyonu eklendi
+- Tema renkleri düzeltildi (blue -> amber)
+- showContext özelliği eklendi
 
 Eklenen Özellikler:
 - Form validasyon fonksiyonları eklendi
@@ -220,7 +224,26 @@ export default function RelationshipProblemsReading({
     if (!meaning) {
       return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
     }
-    return meaning.meaning;
+    // ✅ DÜZELTME: meaning.meaning yerine isReversed kontrolü
+    return isReversed ? meaning.reversed : meaning.upright;
+  };
+
+  // ✅ EKLE: BaseInterpretation için getCardMeaning fonksiyonu
+  const getCardMeaning = (card: TarotCard) => {
+    const position = selectedCards.findIndex(c => c?.id === card.id) + 1;
+    if (position === 0) return null;
+    
+    const meaning = getRelationshipProblemsMeaningByCardAndPosition(card, position);
+    if (!meaning) return null;
+
+    return {
+      card: card.id.toString(),
+      name: card.nameTr,
+      upright: meaning.upright,
+      reversed: meaning.reversed,
+      context: meaning.context,
+      keywords: meaning.keywords,
+    };
   };
 
   // Basit yorum oluştur
@@ -679,11 +702,11 @@ export default function RelationshipProblemsReading({
             <BaseInterpretation
               cards={selectedCards}
               isReversed={isReversed}
-              theme='blue'
+              theme='amber'
               title='İlişki Sorunları Açılımı Yorumu'
               icon='💔'
               badgeText='İLİŞKİ SORUNLARI'
-              badgeColor='bg-blue-500/20 text-blue-400'
+              badgeColor='bg-amber-500/20 text-amber-400'
               positionsInfo={RELATIONSHIP_PROBLEMS_POSITIONS_INFO.map(
                 (pos, idx) => ({
                   id: idx,
@@ -691,9 +714,11 @@ export default function RelationshipProblemsReading({
                   desc: pos.desc,
                 })
               )}
+              getCardMeaning={getCardMeaning}
               getPositionSpecificInterpretation={(card, position, isReversed) =>
                 getRelationshipProblemsCardMeaning(card, position, isReversed)
               }
+              showContext={true}
             />
 
             {/* Okumayı Kaydet Butonu - Sadece DETAILED/WRITTEN için */}

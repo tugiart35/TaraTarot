@@ -986,18 +986,16 @@ export const getPosition4Meaning = (
 
 // Ana index dosyası için uyumluluk fonksiyonu
 export const getSituationAnalysisPosition4Meaning = (
-  cardName: string,
-  isReversed: boolean = false
+  cardName: string
 ): SituationAnalysisPositionMeaning | undefined => {
-  return getPosition4Meaning(cardName, isReversed);
+  return getPosition4Meaning(cardName);
 };
 
 // Kart adına göre pozisyon 4 anlamını bulma fonksiyonu (ana index için)
 export const getSituationAnalysisPosition4MeaningByCardName = (
-  cardName: string,
-  isReversed: boolean = false
+  cardName: string
 ): SituationAnalysisPositionMeaning | undefined => {
-  const meaning = getPosition4Meaning(cardName, isReversed);
+  const meaning = getPosition4Meaning(cardName);
   if (meaning) {
     return {
       ...meaning,

@@ -32,7 +32,7 @@ import { useRouter } from 'next/navigation';
 import { useTranslations } from '@/hooks/useTranslations';
 import { useAuth } from '@/hooks/useAuth';
 import { useTarotReading } from '@/hooks/useTarotReading';
-import { useReadingCredits } from '@/hooks/useReadingCredits';
+import { useToast } from '@/hooks/useToast';
 
 import { findSpreadById } from '@/lib/constants/tarotSpreads';
 import {

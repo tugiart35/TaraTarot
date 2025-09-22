@@ -79,7 +79,6 @@ export default function DashboardPage() {
     profile,
     recentReadings,
     packages,
-    loading,
     isAdmin,
     totalCount,
     currentLocale,

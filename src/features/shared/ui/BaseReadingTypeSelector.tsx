@@ -135,6 +135,8 @@ export default function BaseReadingTypeSelector({
     ? 'MARRIAGE_DETAILED'
     : readingType === 'NEW_LOVER_DETAILED'
     ? 'NEW_LOVER_DETAILED'
+    : readingType === 'MONEY_SPREAD' || readingType === 'MONEY_SPREAD_DETAILED'
+    ? 'MONEY_SPREAD_DETAILED'
     : 'LOVE_SPREAD_DETAILED';
     
   const writtenReadingType = readingType === 'PROBLEM_SOLVING_DETAILED' 
@@ -151,6 +153,8 @@ export default function BaseReadingTypeSelector({
     ? 'MARRIAGE_WRITTEN'
     : readingType === 'NEW_LOVER_DETAILED'
     ? 'NEW_LOVER_WRITTEN'
+    : readingType === 'MONEY_SPREAD' || readingType === 'MONEY_SPREAD_WRITTEN'
+    ? 'MONEY_SPREAD_WRITTEN'
     : 'LOVE_SPREAD_WRITTEN';
 
   console.log('BaseReadingTypeSelector - readingType:', readingType);

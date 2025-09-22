@@ -32,7 +32,8 @@ Eklenen Özellikler:
 
 'use client';
 
-import { getNewLoverCardMeaning } from '@/features/tarot/lib/new-lover/position-meanings-index';
+import newLoverExports from '@/features/tarot/lib/new-lover/position-meanings-index';
+const { getNewLoverCardMeaning, getNewLoverMeaningByCardAndPosition } = newLoverExports;
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
@@ -1132,6 +1133,27 @@ export default function NewLoverReading({
               ? { title: p.title, desc: p.desc }
               : { title: `Pozisyon ${idx + 1}`, desc: 'Kart pozisyonu' };
           })()}
+          // BaseInterpretation.tsx'deki gibi getCardMeaning prop'unu ekle
+          getCardMeaning={(card) => {
+            const position = selectedCards.findIndex(c => c?.id === card.id) + 1;
+            const cardIsReversed = isReversed[position - 1] || false;
+            const meaning = getNewLoverMeaningByCardAndPosition(card, position, cardIsReversed);
+            return meaning ? {
+              context: meaning.context,
+              keywords: meaning.keywords,
+              upright: meaning.upright,
+              reversed: meaning.reversed,
+              // New-lover açılımı için özel alan ekle (BaseInterpretation.tsx'deki gibi)
+              newLoverMeaning: {
+                upright: meaning.upright,
+                reversed: meaning.reversed
+              }
+            } : null;
+          }}
+          getPositionSpecificInterpretation={(card, position, isReversed) =>
+            getNewLoverCardMeaning(card, position, isReversed)
+          }
+          showContext={true}
         />
       )}
 
@@ -1147,9 +1169,26 @@ export default function NewLoverReading({
               badgeText='YENİ BİR SEVGİLİ'
               badgeColor='bg-pink-500/20 text-pink-400'
               positionsInfo={NEW_LOVER_POSITIONS_INFO}
+              getCardMeaning={(card) => {
+                const position = selectedCards.findIndex(c => c?.id === card.id) + 1;
+                const cardIsReversed = isReversed[position - 1] || false;
+                const meaning = getNewLoverMeaningByCardAndPosition(card, position, cardIsReversed);
+                return meaning ? {
+                  context: meaning.context,
+                  keywords: meaning.keywords,
+                  upright: meaning.upright,
+                  reversed: meaning.reversed,
+                  // New-lover açılımı için özel alan ekle
+                  newLoverMeaning: {
+                    upright: meaning.upright,
+                    reversed: meaning.reversed
+                  }
+                } : null;
+              }}
               getPositionSpecificInterpretation={(card, position, isReversed) =>
                 getNewLoverCardMeaning(card, position, isReversed)
               }
+              showContext={true}
             />
 
             {/* Okumayı Kaydet Butonu - Sadece DETAILED/WRITTEN için */}

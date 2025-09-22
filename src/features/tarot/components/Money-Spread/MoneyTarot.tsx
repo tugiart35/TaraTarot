@@ -18,7 +18,7 @@ Bağlı Dosyalar:
 
 // useAuth kaldırıldı - login sistemi kaldırıldı
 // TarotCard tipi @/types/tarot'a taşındı.
-import { getMoneyCardMeaning } from '@/features/tarot/lib/money/position-meanings-index';
+import { getMoneyMeaningByCardAndPosition } from '@/features/tarot/lib/money/position-meanings-index';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
@@ -469,7 +469,11 @@ export default function MoneyReading({
     if (!card) {
       return '';
     }
-    return getMoneyCardMeaning(card, position, isReversed);
+    const meaning = getMoneyMeaningByCardAndPosition(card, position, isReversed);
+    if (!meaning) {
+      return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
+    }
+    return isReversed ? meaning.reversed : meaning.upright;
   };
 
   // Basit yorum oluştur (kartlar eksikse uyarı ver)
@@ -1156,7 +1160,7 @@ export default function MoneyReading({
             return (idx >= 0 ? idx : 0) + 1;
           })()}
           onClose={() => setShowCardDetails(null)}
-          spreadType='love'
+          spreadType='money'
           positionInfo={(() => {
             const idx = selectedCards.findIndex(
               (c: TarotCard | null) => c && c.id === showCardDetails.id
@@ -1166,6 +1170,26 @@ export default function MoneyReading({
               ? { title: p.title, desc: p.desc }
               : { title: `Pozisyon ${idx + 1}`, desc: 'Kart pozisyonu' };
           })()}
+          // BaseInterpretation.tsx'deki gibi getCardMeaning prop'unu ekle
+          getCardMeaning={(card) => {
+            const position = selectedCards.findIndex(c => c?.id === card.id) + 1;
+            const cardIsReversed = isReversed[position - 1] || false;
+            const meaning = getMoneyMeaningByCardAndPosition(card, position, cardIsReversed);
+            return meaning ? {
+              context: meaning.context,
+              keywords: meaning.keywords,
+              upright: meaning.upright,
+              reversed: meaning.reversed,
+              moneyMeaning: {
+                upright: meaning.upright,
+                reversed: meaning.reversed
+              }
+            } : null;
+          }}
+          getPositionSpecificInterpretation={(card, position, isReversed) =>
+            getMoneyCardMeaningLocal(card, position, isReversed)
+          }
+          showContext={true}
         />
       )}
 
@@ -1181,9 +1205,26 @@ export default function MoneyReading({
               badgeText='PARA AÇILIMI'
               badgeColor='bg-blue-500/20 text-blue-400'
               positionsInfo={MONEY_POSITIONS_INFO}
+              getCardMeaning={(card) => {
+                const position = selectedCards.findIndex(c => c?.id === card.id) + 1;
+                const cardIsReversed = isReversed[position - 1] || false;
+                const meaning = getMoneyMeaningByCardAndPosition(card, position, cardIsReversed);
+                return meaning ? {
+                  context: meaning.context,
+                  keywords: meaning.keywords,
+                  upright: meaning.upright,
+                  reversed: meaning.reversed,
+                  // BaseInterpretation.tsx'deki gibi moneyMeaning alanını da ekle
+                  moneyMeaning: {
+                    upright: meaning.upright,
+                    reversed: meaning.reversed
+                  }
+                } : null;
+              }}
               getPositionSpecificInterpretation={(card, position, isReversed) =>
                 getMoneyCardMeaningLocal(card, position, isReversed)
               }
+              showContext={true}
             />
 
             {/* Okumayı Kaydet Butonu - Sadece DETAILED/WRITTEN için */}

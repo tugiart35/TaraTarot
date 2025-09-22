@@ -34,9 +34,9 @@ Gereklilik ve Kullanım Durumu:
 // Her açılım türü için sabit kredi değerleri burada tutulur
 
 export const READING_CREDITS = {
-  LOVE_SPREAD: 80,
-  LOVE_SPREAD_DETAILED: 80,
-  LOVE_SPREAD_WRITTEN: 70,
+  LOVE_SPREAD: 70,
+  LOVE_SPREAD_DETAILED: 70,
+  LOVE_SPREAD_WRITTEN: 60,
   CAREER_SPREAD_DETAILED: 90,
   CAREER_SPREAD_WRITTEN: 80,
   PROBLEM_SOLVING_DETAILED: 130,
@@ -47,12 +47,12 @@ export const READING_CREDITS = {
   RELATIONSHIP_ANALYSIS_WRITTEN: 100,
   RELATIONSHIP_PROBLEMS_DETAILED: 120,
   RELATIONSHIP_PROBLEMS_WRITTEN: 110,
-  MARRIAGE_DETAILED: 140,
-  MARRIAGE_WRITTEN: 130,
+  MARRIAGE_DETAILED: 120,
+  MARRIAGE_WRITTEN: 110,
   NEW_LOVER_DETAILED: 100,
   NEW_LOVER_WRITTEN: 90,
-  MONEY_SPREAD_DETAILED: 110,
-  MONEY_SPREAD_WRITTEN: 100,
+  MONEY_SPREAD_DETAILED: 90,
+  MONEY_SPREAD_WRITTEN: 80,
 } as const;
 
 // Dashboard için gerekli kredi konfigürasyonları
@@ -138,12 +138,12 @@ export const READING_CREDIT_CONFIGS = {
     description: '6 kartlık yazılı yeni sevgili açılımı',
   },
   MONEY_SPREAD_DETAILED: {
-    cost: 110,
+    cost: 90,
     name: 'Para Açılımı (Detaylı)',
     description: '6 kartlık detaylı para açılımı',
   },
   MONEY_SPREAD_WRITTEN: {
-    cost: 100,
+    cost: 80,
     name: 'Para Açılımı (Yazılı)',
     description: '6 kartlık yazılı para açılımı',
   },

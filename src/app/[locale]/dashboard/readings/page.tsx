@@ -36,6 +36,7 @@ interface Reading {
   summary: string;
   cost_credits: number;
   spread_name: string;
+  format?: 'audio' | 'written' | 'simple'; // Okuma formatı
 }
 
 interface ReadingFilters {
@@ -217,6 +218,7 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
             summary,
             cost_credits,
             spread_name: getSpreadName(reading.reading_type),
+            format: getReadingFormat(cost_credits),
           };
         });
 
@@ -297,6 +299,60 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
       hour: '2-digit',
       minute: '2-digit',
     });
+  };
+
+  // Okuma formatını belirle (sesli/yazılı/basit)
+  const getReadingFormat = (costCredits: number): 'audio' | 'written' | 'simple' => {
+    // Kredi miktarına göre okuma türünü belirle
+    // Detaylı okumalar (sesli): 80-140 kredi arası
+    if (costCredits >= 80 && costCredits <= 140) {
+      return 'audio';
+    } 
+    // Yazılı okumalar: 70-130 kredi arası
+    else if (costCredits >= 70 && costCredits <= 130) {
+      return 'written';
+    } 
+    // Basit okumalar: 70'den az
+    else if (costCredits < 70) {
+      return 'simple';
+    }
+    
+    // Varsayılan olarak sesli kabul et
+    return 'audio';
+  };
+
+  // Okuma formatı için etiket ve ikon
+  const getFormatInfo = (format: 'audio' | 'written' | 'simple') => {
+    switch (format) {
+      case 'audio':
+        return { 
+          label: 'Sesli', 
+          icon: '🎵', 
+          color: 'bg-blue-500/20 text-blue-400 border-blue-500/30',
+          iconComponent: '🔊'
+        };
+      case 'written':
+        return { 
+          label: 'Yazılı', 
+          icon: '📝', 
+          color: 'bg-green-500/20 text-green-400 border-green-500/30',
+          iconComponent: '📄'
+        };
+      case 'simple':
+        return { 
+          label: 'Basit', 
+          icon: '⚡', 
+          color: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30',
+          iconComponent: '⚡'
+        };
+      default:
+        return { 
+          label: 'Bilinmiyor', 
+          icon: '❓', 
+          color: 'bg-gray-500/20 text-gray-400 border-gray-500/30',
+          iconComponent: '❓'
+        };
+    }
   };
 
   // Params yüklenene kadar bekle
@@ -568,9 +624,16 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
                           <Star className='h-6 w-6 text-white' />
                         )}
                       </div>
-                      <span className='text-xs px-3 py-1 rounded-full bg-gold/20 text-gold border border-gold/30 font-semibold'>
-                        {reading.cost_credits} {t('readings.credits', 'kredi')}
-                      </span>
+                      <div className='flex flex-col gap-2'>
+                        <span className='text-xs px-3 py-1 rounded-full bg-gold/20 text-gold border border-gold/30 font-semibold'>
+                          {reading.cost_credits} {t('readings.credits', 'kredi')}
+                        </span>
+                        {reading.format && (
+                          <span className={`text-xs px-3 py-1 rounded-full border font-semibold ${getFormatInfo(reading.format).color}`}>
+                            {getFormatInfo(reading.format).iconComponent} {getFormatInfo(reading.format).label}
+                          </span>
+                        )}
+                      </div>
                     </div>
 
                     <h3 className='font-bold text-white mb-3 line-clamp-2 text-lg'>
@@ -646,6 +709,11 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
                               {reading.cost_credits}{' '}
                               {t('readings.credits', 'kredi')}
                             </span>
+                            {reading.format && (
+                              <span className={`px-3 py-1 rounded-full border font-semibold ${getFormatInfo(reading.format).color}`}>
+                                {getFormatInfo(reading.format).iconComponent} {getFormatInfo(reading.format).label}
+                              </span>
+                            )}
                           </div>
                         </div>
                       </div>

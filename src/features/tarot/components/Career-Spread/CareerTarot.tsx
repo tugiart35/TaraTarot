@@ -183,7 +183,7 @@ export default function CareerReading({
           questions.concern
         ) {
           const shouldClose = window.confirm(
-            'Form dolduruldu ancak kaydedilmedi. Çıkmak istediğinize emin misiniz?'
+            t('career.messages.formUnsavedWarning')
           );
           if (shouldClose) {
             setSelectedReadingType(null);
@@ -224,26 +224,26 @@ export default function CareerReading({
     const errors: { [key: string]: string } = {};
     let hasError = false;
     if (!personalInfo.name.trim() || personalInfo.name.trim().length < 3) {
-      errors.name = 'Ad en az 3 karakter olmalıdır.';
+      errors.name = t('career.validation.nameMinLength');
       hasError = true;
     }
     if (
       !personalInfo.surname.trim() ||
       personalInfo.surname.trim().length < 3
     ) {
-      errors.surname = 'Soyad en az 3 karakter olmalıdır.';
+      errors.surname = t('career.validation.surnameMinLength');
       hasError = true;
     }
     if (!personalInfo.birthDate) {
-      errors.birthDate = 'Doğum tarihi zorunludur.';
+      errors.birthDate = t('career.validation.birthDateRequired');
       hasError = true;
     }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(personalInfo.email)) {
-      errors.email = 'Geçerli bir e-posta adresi giriniz.';
+      errors.email = t('career.validation.emailInvalid');
       hasError = true;
     }
     if (!questions.concern.trim() || questions.concern.trim().length < 10) {
-      errors.concern = 'Bu soruya en az 10 karakterlik yanıt vermelisiniz.';
+      errors.concern = t('career.validation.questionMinLength');
       hasError = true;
     }
     if (
@@ -251,11 +251,11 @@ export default function CareerReading({
       questions.understanding.trim().length < 10
     ) {
       errors.understanding =
-        'Bu soruya en az 10 karakterlik yanıt vermelisiniz.';
+        t('career.validation.questionMinLength');
       hasError = true;
     }
     if (!questions.emotional.trim() || questions.emotional.trim().length < 10) {
-      errors.emotional = 'Bu soruya en az 10 karakterlik yanıt vermelisiniz.';
+      errors.emotional = t('career.validation.questionMinLength');
       hasError = true;
     }
     setFormErrors(prev => ({ ...prev, ...errors }));
@@ -270,7 +270,7 @@ export default function CareerReading({
   };
   const saveDetailedForm = async () => {
     if (!user) {
-      showToast('Okuma için giriş yapmalısınız.', 'error');
+      showToast(t('career.messages.loginRequired'), 'error');
       setShowCreditConfirm(false);
       setIsSaving(false);
       return;
@@ -320,8 +320,8 @@ export default function CareerReading({
         {
           p_user_id: user.id,
           p_reading_type: readingData.readingType,
-          p_spread_name: 'Kariyer ve Para Yayılımı',
-          p_title: readingData.title || 'Kariyer ve Para Açılımı',
+          p_spread_name: t('career.data.spreadName'),
+          p_title: readingData.title || t('career.data.spreadTitle'),
           p_interpretation: readingData.interpretation,
           p_cards: readingData.cards.selectedCards,
           p_questions: readingData.questions,
@@ -373,10 +373,10 @@ export default function CareerReading({
           userId: 'anonymous-user',
           readingType: 'career', // Veritabanındaki enum değeri ile uyumlu
           cards: { selectedCards: [] }, // Boş kart listesi
-          interpretation: 'Basit okuma - sadece sayaç',
+          interpretation: t('career.data.simpleInterpretation'),
           question: { type: 'simple' },
           status: 'completed',
-          title: 'Basit Okuma',
+          title: t('career.data.simpleTitle'),
           cost_credits: 0, // Ücretsiz
           admin_notes: 'Simple reading counter',
         };
@@ -387,7 +387,7 @@ export default function CareerReading({
           console.log('Basit okuma sayacı kaydedildi:', saveResult.id);
         }
 
-        showToast('Basit okuma tamamlandı!', 'success');
+        showToast(t('career.messages.simpleReadingCompleted'), 'success');
         router.push('/');
         return;
       }
@@ -406,7 +406,7 @@ export default function CareerReading({
           readingType: 'career', // Veritabanındaki enum değeri ile uyumlu
           status: 'completed',
           // creditCost kaldırıldı
-          title: 'Kariyer ve Para Açılımı - Detaylı Kişisel Okuma',
+          title: t('career.data.detailedTitle'),
           interpretation: generateBasicInterpretation(),
           cards: {
             selectedCards: selectedCards
@@ -439,8 +439,8 @@ export default function CareerReading({
             userAgent:
               typeof navigator !== 'undefined' ? navigator.userAgent : '',
             readingFormat: selectedReadingType, // Sesli/yazılı bilgisi
-            readingFormatTr: selectedReadingType === READING_TYPES.DETAILED ? 'Sesli' : 
-                            selectedReadingType === READING_TYPES.WRITTEN ? 'Yazılı' : 'Basit',
+            readingFormatTr: selectedReadingType === READING_TYPES.DETAILED ? t('career.data.readingFormats.detailed') : 
+                            selectedReadingType === READING_TYPES.WRITTEN ? t('career.data.readingFormats.written') : t('career.data.readingFormats.simple'),
           },
           timestamp: new Date().toISOString(),
           createdAt: new Date(),
@@ -451,10 +451,10 @@ export default function CareerReading({
         const saveResult = await saveReadingToSupabase(readingData);
 
         if (saveResult.success) {
-          showToast('Okumanız başarıyla kaydedildi!', 'success');
+          showToast(t('career.messages.readingSavedSuccess'), 'success');
         } else {
           console.error('Okuma kaydetme hatası:', saveResult.error);
-          showToast('Okuma kaydedilirken bir hata oluştu.', 'error');
+          showToast(t('career.messages.readingSaveError'), 'error');
         }
 
         // Başarı modal'ını göster
@@ -469,7 +469,7 @@ export default function CareerReading({
       }
     } catch (error) {
       console.error('Okuma kaydetme hatası:', error);
-      showToast('Okuma kaydedilirken bir hata oluştu.', 'error');
+      showToast(t('career.messages.readingSaveError'), 'error');
     } finally {
       setIsSavingReading(false);
     }
@@ -478,8 +478,7 @@ export default function CareerReading({
   if (!careerSpread) {
     return (
       <div className='text-red-500'>
-        Kariyer Açılımı konfigürasyonu bulunamadı. Lütfen tarotSpreads.ts dosyasını
-        kontrol edin.
+        {t('career.messages.configurationNotFound')}
       </div>
     );
   }
@@ -510,7 +509,7 @@ export default function CareerReading({
     if (!meaning) return null;
 
     return {
-      card: card.id,
+      card: card.name,
       name: card.nameTr,
       context: meaning.context, // Kartın pozisyonuna özel context bilgisini kullan
       keywords: meaning.keywords,
@@ -524,17 +523,17 @@ export default function CareerReading({
       selectedCards.length !== CAREER_CARD_COUNT ||
       selectedCards.some(c => !c)
     ) {
-      return 'Tüm kartları seçmeden yorum oluşturulamaz.';
+      return t('career.messages.allCardsRequired');
     }
-    let interpretation = `💼 **Kariyer ve Para Açılımı**\n\n`;
+    let interpretation = `💼 **${t('career.messages.interpretationTitle')}**\n\n`;
     if (userQuestion.trim()) {
-      interpretation += `**Sevgili danışan,** kariyer ve para sorunuz "${userQuestion}" için özel hazırlanmış analiz:\n\n`;
+      interpretation += `**${t('career.messages.interpretationGreeting').replace('{question}', userQuestion)}**\n\n`;
     }
     CAREER_POSITIONS_INFO.forEach((posInfo, index) => {
       const card = cards[index];
       const reversed = !!isReversed[index];
       if (card) {
-        interpretation += `**${posInfo.id}. ${posInfo.title}: ${card.nameTr}** (${reversed ? 'Ters' : 'Düz'})\n*${posInfo.desc}*\n${getCareerCardMeaning(card, posInfo.id, reversed)}\n\n`;
+        interpretation += `**${posInfo.id}. ${posInfo.title}: ${card.nameTr}** (${reversed ? t('career.data.cardDirections.reversed') : t('career.data.cardDirections.upright')})\n*${posInfo.desc}*\n${getCareerCardMeaning(card, posInfo.id, reversed)}\n\n`;
       }
     });
     interpretation += `💫 **${t('tarotPage.careerSpread.summary')}:**\n"${t('tarotPage.careerSpread.summaryText')}"`;
@@ -748,7 +747,7 @@ export default function CareerReading({
                     questions.concern
                   ) {
                     const shouldClose = window.confirm(
-                      'Form dolduruldu ancak kaydedilmedi. Çıkmak istediğinize emin misiniz?'
+                      t('career.messages.formUnsavedWarning')
                     );
                     if (shouldClose) {
                       setSelectedReadingType(null);
@@ -780,7 +779,7 @@ export default function CareerReading({
                         questions.concern
                       ) {
                         const shouldClose = window.confirm(
-                          'Form dolduruldu ancak kaydedilmedi. Çıkmak istediğinize emin misiniz?'
+                          t('career.messages.formUnsavedWarning')
                         );
                         if (shouldClose) {
                           setSelectedReadingType(null);
@@ -823,7 +822,7 @@ export default function CareerReading({
                           onChange={e =>
                             updatePersonalInfo('name', e.target.value)
                           }
-                          placeholder='Adınız'
+                          placeholder={t('career.form.placeholders.firstName')}
                           className={`w-full px-4 py-3 bg-slate-800/80 border ${
                             formErrors.name
                               ? 'border-red-500'
@@ -848,7 +847,7 @@ export default function CareerReading({
                           onChange={e =>
                             updatePersonalInfo('surname', e.target.value)
                           }
-                          placeholder='Soyadınız'
+                          placeholder={t('career.form.placeholders.lastName')}
                           className={`w-full px-4 py-3 bg-slate-800/80 border ${
                             formErrors.surname
                               ? 'border-red-500'
@@ -899,7 +898,7 @@ export default function CareerReading({
                         onChange={e =>
                           updatePersonalInfo('email', e.target.value)
                         }
-                        placeholder='ornek@email.com'
+                        placeholder={t('career.form.placeholders.email')}
                         className={`w-full px-4 py-3 bg-slate-800/80 border ${
                           formErrors.email
                             ? 'border-red-500'
@@ -930,7 +929,7 @@ export default function CareerReading({
                             onChange={e =>
                               updateQuestion('concern', e.target.value)
                             }
-                            placeholder='Kariyer endişelerinizi detaylı bir şekilde açıklayın...'
+                            placeholder={t('career.form.placeholders.concernQuestion')}
                             className={`w-full px-4 py-3 bg-slate-800/80 border ${
                               formErrors.concern
                                 ? 'border-red-500'
@@ -954,7 +953,7 @@ export default function CareerReading({
                             onChange={e =>
                               updateQuestion('understanding', e.target.value)
                             }
-                            placeholder='Kariyerinizde öğrenmek istediğiniz konuları belirtin...'
+                            placeholder={t('career.form.placeholders.understandingQuestion')}
                             className={`w-full px-4 py-3 bg-slate-800/80 border ${
                               formErrors.understanding
                                 ? 'border-red-500'
@@ -978,7 +977,7 @@ export default function CareerReading({
                             onChange={e =>
                               updateQuestion('emotional', e.target.value)
                             }
-                            placeholder='Mevcut kariyer durumunuzu açıklayın...'
+                            placeholder={t('career.form.placeholders.emotionalQuestion')}
                             className={`w-full px-4 py-3 bg-slate-800/80 border ${
                               formErrors.emotional
                                 ? 'border-red-500'
@@ -1161,7 +1160,7 @@ export default function CareerReading({
           selectedReadingType
             ? handleCardSelect
             : () => {
-                showToast('Lütfen önce bir okuma tipi seçin.', 'info');
+                showToast(t('career.messages.selectReadingTypeFirst'), 'info');
               }
         }
         onShuffleDeck={shuffleDeck}
@@ -1237,9 +1236,9 @@ export default function CareerReading({
               cards={selectedCards}
               isReversed={isReversed}
               theme='blue'
-              title='Kariyer ve Para Açılımı Yorumu'
+              title={t('career.data.interpretationTitle')}
               icon='💼'
-              badgeText='KARİYER'
+              badgeText={t('career.data.badgeText')}
               badgeColor='bg-blue-500/20 text-blue-400'
               positionsInfo={CAREER_POSITIONS_INFO}
               getCardMeaning={getCardMeaning}

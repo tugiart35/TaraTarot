@@ -151,17 +151,8 @@ export function getProblemSolvingMeaningByCardAndPosition(
   position: number,
   isReversed: boolean = false
 ): ProblemSolvingPositionMeaning | null {
-  // Debug için console.log ekle
-  console.log('🔍 getProblemSolvingMeaningByCardAndPosition called:', {
-    cardName: card.name,
-    cardNameTr: card.nameTr,
-    position,
-    isReversed
-  });
-
   // Pozisyon 1-10 arasında olmalı
   if (position < 1 || position > 10) {
-    console.log('❌ Invalid position:', position);
     return null;
   }
 
@@ -211,15 +202,14 @@ export function getProblemSolvingMeaningByCardAndPosition(
       break;
   }
 
-  console.log('🎯 Position meaning found:', positionMeaning ? 'YES' : 'NO');
 
   if (positionMeaning) {
     const result = {
       ...positionMeaning,
-      upright: isReversed ? positionMeaning.reversed : positionMeaning.upright,
-      reversed: isReversed ? positionMeaning.upright : positionMeaning.reversed,
+      // upright ve reversed alanlarını orijinal haliyle koru
+      upright: positionMeaning.upright,
+      reversed: positionMeaning.reversed,
     };
-    console.log('✅ Returning position-specific meaning:', result.upright.substring(0, 50) + '...');
     return result;
   }
 

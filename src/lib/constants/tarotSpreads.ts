@@ -125,8 +125,8 @@ export interface TarotSpread {
 const lovePositions: TarotCardPosition[] = [
   {
     id: 1,
-    title: 'readingModal.position1',
-    description: 'Hakkında soru sorduğun kişi',
+    title: 'spreads.love.positions.1.title',
+    description: 'spreads.love.positions.1.description',
     className:
       'absolute top-[25%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-20',
     x: 50,
@@ -134,8 +134,8 @@ const lovePositions: TarotCardPosition[] = [
   },
   {
     id: 2,
-    title: 'readingModal.position2',
-    description: 'Fiziksel ve cinsel bağlantınız',
+    title: 'spreads.love.positions.2.title',
+    description: 'spreads.love.positions.2.description',
     className:
       'absolute top-1/2 left-[25%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 25,
@@ -143,8 +143,8 @@ const lovePositions: TarotCardPosition[] = [
   },
   {
     id: 3,
-    title: 'readingModal.position3',
-    description: 'Duygusal ve ruhsal bağlantınız',
+    title: 'spreads.love.positions.3.title',
+    description: 'spreads.love.positions.3.description',
     className:
       'absolute top-1/2 left-[75%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 75,
@@ -152,8 +152,8 @@ const lovePositions: TarotCardPosition[] = [
   },
   {
     id: 4,
-    title: 'readingModal.position4',
-    description: 'İlişkinin uzun vadeli sonucu',
+    title: 'spreads.love.positions.4.title',
+    description: 'spreads.love.positions.4.description',
     className:
       'absolute top-[75%] left-[37.5%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 37.5,
@@ -165,49 +165,38 @@ const lovePositions: TarotCardPosition[] = [
 const careerPositions: TarotCardPosition[] = [
   {
     id: 1,
-    title: 'Gerçekten istediğim kariyer bu mu?',
-    desc: 'Kariyer tercihlerinizi sorgulayın',
-    description:
-      'Mevcut kariyerinizin gerçekten istediğiniz kariyer olup olmadığını değerlendirin',
+    title: 'spreads.career.positions.1.title',
+    description: 'spreads.career.positions.1.description',
   },
   {
     id: 2,
-    title: 'Kariyerimi geliştirmek için hangi adımları atabilirim?',
-    desc: 'Kariyer gelişim adımları',
-    description: 'Kariyerinizi ilerletmek için atabileceğiniz somut adımlar',
+    title: 'spreads.career.positions.2.title',
+    description: 'spreads.career.positions.2.description',
   },
   {
     id: 3,
-    title: 'Kariyerimde değiştiremediğim taraflar var mı?',
-    desc: 'Değiştirilemeyen faktörler',
-    description:
-      'Kariyerinizde kontrol edemediğiniz veya değiştiremediğiniz unsurlar',
+    title: 'spreads.career.positions.3.title',
+    description: 'spreads.career.positions.3.description',
   },
   {
     id: 4,
-    title: 'Kariyerimde elimden gelenin en iyisini yapıyor muyum?',
-    desc: 'Mevcut performans değerlendirmesi',
-    description:
-      'Şu anki kariyerinizde gösterdiğiniz performans ve çaba seviyesi',
+    title: 'spreads.career.positions.4.title',
+    description: 'spreads.career.positions.4.description',
   },
   {
     id: 5,
-    title: 'Kariyerime yardımcı olacak ne gibi değişiklikler yapabilirim?',
-    desc: 'Yapılabilecek değişiklikler',
-    description:
-      'Kariyerinize olumlu katkı sağlayacak değişiklikler ve iyileştirmeler',
+    title: 'spreads.career.positions.5.title',
+    description: 'spreads.career.positions.5.description',
   },
   {
     id: 6,
-    title: 'Geçmişimdeki hangi engeller şimdiki kariyerimi etkiliyor?',
-    desc: 'Geçmişten gelen engeller',
-    description: 'Geçmiş deneyimlerinizin mevcut kariyerinizi nasıl etkilediği',
+    title: 'spreads.career.positions.6.title',
+    description: 'spreads.career.positions.6.description',
   },
   {
     id: 7,
-    title: 'Sonuç ne olacak?',
-    desc: 'Genel sonuç ve öngörü',
-    description: 'Kariyer yolculuğunuzun genel sonucu ve gelecekteki öngörüler',
+    title: 'spreads.career.positions.7.title',
+    description: 'spreads.career.positions.7.description',
   },
 ];
 
@@ -215,8 +204,8 @@ const careerPositions: TarotCardPosition[] = [
 const problemSolvingPositions: TarotCardPosition[] = [
   {
     id: 1,
-    title: 'Sorulan Soru',
-    description: 'Açılımın temelini oluşturan ana soru veya konu',
+    title: 'spreads.problemSolving.positions.1.title',
+    description: 'spreads.problemSolving.positions.1.description',
     className:
       'absolute top-[5%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-20',
     x: 50,
@@ -224,8 +213,8 @@ const problemSolvingPositions: TarotCardPosition[] = [
   },
   {
     id: 2,
-    title: 'Sorunun Engeli',
-    description: 'Sorunun önündeki temel engel veya zorluk',
+    title: 'spreads.problemSolving.positions.2.title',
+    description: 'spreads.problemSolving.positions.2.description',
     className:
       'absolute top-[25%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-20',
     x: 50,
@@ -233,8 +222,8 @@ const problemSolvingPositions: TarotCardPosition[] = [
   },
   {
     id: 3,
-    title: 'Şuur Altı Konu Geçmişi',
-    description: 'Konunun bilinçaltındaki kökenleri veya geçmiş etkileri',
+    title: 'spreads.problemSolving.positions.3.title',
+    description: 'spreads.problemSolving.positions.3.description',
     className:
       'absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-20',
     x: 50,
@@ -242,8 +231,8 @@ const problemSolvingPositions: TarotCardPosition[] = [
   },
   {
     id: 4,
-    title: 'En İyi Potansiyel',
-    description: 'Bu konuda kendimiz için ulaşabileceğimiz en iyi durum',
+    title: 'spreads.problemSolving.positions.4.title',
+    description: 'spreads.problemSolving.positions.4.description',
     className:
       'absolute top-[15%] left-[15%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 15,
@@ -251,8 +240,8 @@ const problemSolvingPositions: TarotCardPosition[] = [
   },
   {
     id: 5,
-    title: 'Yakın Geçmiş',
-    description: 'Konuyla ilgili yakın geçmişteki olaylar veya etkiler',
+    title: 'spreads.problemSolving.positions.5.title',
+    description: 'spreads.problemSolving.positions.5.description',
     className:
       'absolute top-[15%] right-[15%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 85,
@@ -260,8 +249,8 @@ const problemSolvingPositions: TarotCardPosition[] = [
   },
   {
     id: 6,
-    title: 'Yakın Gelecek',
-    description: 'Konuyla ilgili yakın gelecekteki olası gelişmeler',
+    title: 'spreads.problemSolving.positions.6.title',
+    description: 'spreads.problemSolving.positions.6.description',
     className:
       'absolute top-[35%] left-[15%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 15,
@@ -269,8 +258,8 @@ const problemSolvingPositions: TarotCardPosition[] = [
   },
   {
     id: 7,
-    title: 'Mevcut Durum',
-    description: 'Şu anki durumumuz, konuya dair mevcut halimiz',
+    title: 'spreads.problemSolving.positions.7.title',
+    description: 'spreads.problemSolving.positions.7.description',
     className:
       'absolute top-[35%] right-[15%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 85,
@@ -278,8 +267,8 @@ const problemSolvingPositions: TarotCardPosition[] = [
   },
   {
     id: 8,
-    title: 'Dış Etkiler',
-    description: 'Konuyu etkileyen dış faktörler, çevresel koşullar',
+    title: 'spreads.problemSolving.positions.8.title',
+    description: 'spreads.problemSolving.positions.8.description',
     className:
       'absolute bottom-[15%] left-[20%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 20,
@@ -287,8 +276,8 @@ const problemSolvingPositions: TarotCardPosition[] = [
   },
   {
     id: 9,
-    title: 'Korkular ve Endişeler',
-    description: 'Konuyla ilgili içsel korkularımız ve endişelerimiz',
+    title: 'spreads.problemSolving.positions.9.title',
+    description: 'spreads.problemSolving.positions.9.description',
     className:
       'absolute bottom-[15%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-20',
     x: 50,
@@ -296,8 +285,8 @@ const problemSolvingPositions: TarotCardPosition[] = [
   },
   {
     id: 10,
-    title: 'Olayın Sonucu',
-    description: 'Konunun veya olayın nihai sonucu, olası çözümü',
+    title: 'spreads.problemSolving.positions.10.title',
+    description: 'spreads.problemSolving.positions.10.description',
     className:
       'absolute bottom-[15%] right-[20%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 80,
@@ -309,63 +298,56 @@ const problemSolvingPositions: TarotCardPosition[] = [
 const situationAnalysisPositions: TarotCardPosition[] = [
   {
     id: 1,
-    title: 'Geçmiş ya da Sebepler',
-    description:
-      'Yaşanan durumun sebepleri, neden şu anda böyle bir durumun yaşandığı ve yapılan tüm hatalar bu kartta belirtilir.',
+    title: 'spreads.situationAnalysis.positions.1.title',
+    description: 'spreads.situationAnalysis.positions.1.description',
     className: 'absolute bottom-0 left-0 w-20 h-32 sm:w-24 sm:h-36',
     x: 0,
     y: 100,
   },
   {
     id: 2,
-    title: 'Şu Anki Durum',
-    description:
-      'Şu anda neler yaşandığı, gündemdeki konular ve geçmişin bugüne göre nasıl bir etkisi olduğu belirtilir.',
+    title: 'spreads.situationAnalysis.positions.2.title',
+    description: 'spreads.situationAnalysis.positions.2.description',
     className: 'absolute left-0 w-20 h-32 sm:w-24 sm:h-36',
     x: 0,
     y: 60,
   },
   {
     id: 3,
-    title: 'Gizli Etkenler',
-    description:
-      'Kişinin bilgisi dışında gelişen olaylar, arkasından konuşanlar, gizli işler ve bilinmeyen gerçekler bu kartta gizlidir.',
+    title: 'spreads.situationAnalysis.positions.3.title',
+    description: 'spreads.situationAnalysis.positions.3.description',
     className: 'absolute left-0 top-0 w-20 h-32 sm:w-24 sm:h-36',
     x: 0,
     y: 0,
   },
   {
     id: 4,
-    title: 'Merkez Kart',
-    description:
-      'Açılımın merkezini temsil eder. Durumun merkezindeki kişiyi veya hayatınızdaki en merkezi alanı ifade eder.',
+    title: 'spreads.situationAnalysis.positions.4.title',
+    description: 'spreads.situationAnalysis.positions.4.description',
     className: 'absolute top-0 w-20 h-32 sm:w-24 sm:h-36',
     x: 50,
     y: 0,
   },
   {
     id: 5,
-    title: 'Dış Etkenler',
-    description:
-      'Farklı kaynaklardan gelecek bilgiler ve geleceğe dair açılar sunar. Dış saldırılar ve olası entrikalara da işaret edebilir.',
+    title: 'spreads.situationAnalysis.positions.5.title',
+    description: 'spreads.situationAnalysis.positions.5.description',
     className: 'absolute right-0 w-20 h-32 sm:w-24 sm:h-36',
     x: 100,
     y: 60,
   },
   {
     id: 6,
-    title: 'Tavsiye',
-    description:
-      'Yaşanan durumla ilgili en uygun hareketlerin ne olduğu hakkında bilgi verir. Çözüm veya çıkış yolu sunabileceği belirtilir.',
+    title: 'spreads.situationAnalysis.positions.6.title',
+    description: 'spreads.situationAnalysis.positions.6.description',
     className: 'absolute bottom-0 right-0 w-20 h-32 sm:w-24 sm:h-36',
     x: 100,
     y: 100,
   },
   {
     id: 7,
-    title: 'Olası Gelecek - Sonuç',
-    description:
-      'Mevcut gidişatın nereye varacağını, olası engelleri veya sürprizleri gösterir. Geleceğin, alınacak kararlara bağlı olarak değişebileceği belirtilir.',
+    title: 'spreads.situationAnalysis.positions.7.title',
+    description: 'spreads.situationAnalysis.positions.7.description',
     className: 'absolute bottom-0 w-20 h-32 sm:w-24 sm:h-36',
     x: 50,
     y: 100,
@@ -376,9 +358,8 @@ const situationAnalysisPositions: TarotCardPosition[] = [
 const relationshipAnalysisPositions: TarotCardPosition[] = [
   {
     id: 1,
-    title: 'Mevcut Durum',
-    description:
-      'İlişkinin mevcut şartları, içinde bulunduğu durum ve varsa problemlerin yarattığı atmosfer hakkında bilgi verir.',
+    title: 'spreads.relationshipAnalysis.positions.1.title',
+    description: 'spreads.relationshipAnalysis.positions.1.description',
     className:
       'absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-30',
     x: 50,
@@ -386,9 +367,8 @@ const relationshipAnalysisPositions: TarotCardPosition[] = [
   },
   {
     id: 2,
-    title: 'Sizin Hissleriniz',
-    description:
-      'Sizin hisleriniz, düşünceleriniz ve partnerinize bakış açınızı gösterir. İlişkideki duygusal durumunuzu yansıtır.',
+    title: 'spreads.relationshipAnalysis.positions.2.title',
+    description: 'spreads.relationshipAnalysis.positions.2.description',
     className:
       'absolute top-[20%] left-[70%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 70,
@@ -396,9 +376,8 @@ const relationshipAnalysisPositions: TarotCardPosition[] = [
   },
   {
     id: 3,
-    title: 'Sizin Beklentileriniz',
-    description:
-      'Sizin ilişkiniz ya da içinde bulunduğunuz durum hakkında endişelerinizi, beklentilerinizi ve hayallerinizi gösterir.',
+    title: 'spreads.relationshipAnalysis.positions.3.title',
+    description: 'spreads.relationshipAnalysis.positions.3.description',
     className:
       'absolute top-[50%] left-[75%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 75,
@@ -406,9 +385,8 @@ const relationshipAnalysisPositions: TarotCardPosition[] = [
   },
   {
     id: 4,
-    title: 'Tavsiyeler',
-    description:
-      'İlişkinizin gidişatı ile ilgili sergileyeceğiniz tutum ile ilgili tavsiyeleri içerir. Nasıl davranmanız gerektiğini gösterir.',
+    title: 'spreads.relationshipAnalysis.positions.4.title',
+    description: 'spreads.relationshipAnalysis.positions.4.description',
     className:
       'absolute top-[80%] left-[70%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 70,
@@ -416,9 +394,8 @@ const relationshipAnalysisPositions: TarotCardPosition[] = [
   },
   {
     id: 5,
-    title: 'Yol Haritası',
-    description:
-      'Bu ilişkide ya da var olan sorun karşısında takınmanız gereken tavır ve nasıl bir yol izlemeniz konusunda size yol gösterir.',
+    title: 'spreads.relationshipAnalysis.positions.5.title',
+    description: 'spreads.relationshipAnalysis.positions.5.description',
     className:
       'absolute top-[80%] left-[30%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 30,
@@ -426,9 +403,8 @@ const relationshipAnalysisPositions: TarotCardPosition[] = [
   },
   {
     id: 6,
-    title: 'Partnerinizin Beklentileri',
-    description:
-      'Partnerinizin ilişkiniz ya da içinde bulunduğunuz durum hakkında endişelerini, beklentilerini ve hayallerini gösterir.',
+    title: 'spreads.relationshipAnalysis.positions.6.title',
+    description: 'spreads.relationshipAnalysis.positions.6.description',
     className:
       'absolute top-[50%] left-[25%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 25,
@@ -436,9 +412,8 @@ const relationshipAnalysisPositions: TarotCardPosition[] = [
   },
   {
     id: 7,
-    title: 'Partnerinizin Hissleri',
-    description:
-      'Partnerinizin hislerini, düşüncelerini ve size bakış açısını gösterir. İlişkideki duygusal durumunu yansıtır.',
+    title: 'spreads.relationshipAnalysis.positions.7.title',
+    description: 'spreads.relationshipAnalysis.positions.7.description',
     className:
       'absolute top-[20%] left-[30%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 30,
@@ -450,9 +425,8 @@ const relationshipAnalysisPositions: TarotCardPosition[] = [
 const relationshipProblemsPositions: TarotCardPosition[] = [
   {
     id: 1,
-    title: 'Çelişki nedir?',
-    description:
-      'İlişkinizdeki iç çelişkileri ve çatışmaları gösterir. Hangi konularda anlaşamadığınızı ve neden çelişki yaşadığınızı anlamanıza yardımcı olur.',
+    title: 'spreads.relationshipProblems.positions.1.title',
+    description: 'spreads.relationshipProblems.positions.1.description',
     className:
       'absolute top-[45%] left-[75%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 75,
@@ -460,9 +434,8 @@ const relationshipProblemsPositions: TarotCardPosition[] = [
   },
   {
     id: 2,
-    title: 'Sorun nedir?',
-    description:
-      'İlişkinizdeki ana problemi ve temel sorunu ortaya koyar. Hangi konunun en büyük zorluk yarattığını gösterir.',
+    title: 'spreads.relationshipProblems.positions.2.title',
+    description: 'spreads.relationshipProblems.positions.2.description',
     className:
       'absolute top-[25%] left-[75%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 75,
@@ -470,9 +443,8 @@ const relationshipProblemsPositions: TarotCardPosition[] = [
   },
   {
     id: 3,
-    title: 'Sorunu ben mi yarattım?',
-    description:
-      'Sorunun kaynağında sizin payınızı ve sorumluluğunuzu gösterir. Kendi davranışlarınızın soruna nasıl katkıda bulunduğunu anlamanıza yardımcı olur.',
+    title: 'spreads.relationshipProblems.positions.3.title',
+    description: 'spreads.relationshipProblems.positions.3.description',
     className:
       'absolute top-[45%] left-[25%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 25,
@@ -480,9 +452,8 @@ const relationshipProblemsPositions: TarotCardPosition[] = [
   },
   {
     id: 4,
-    title: 'Bu sorundaki payımı görmezden mi geliyorum?',
-    description:
-      'Kendi sorumluluğunuzu kabul etme konusundaki durumunuzu gösterir. Kendi hatalarınızı görmezden gelip gelmediğinizi ortaya koyar.',
+    title: 'spreads.relationshipProblems.positions.4.title',
+    description: 'spreads.relationshipProblems.positions.4.description',
     className:
       'absolute top-[25%] left-[25%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 25,
@@ -490,9 +461,8 @@ const relationshipProblemsPositions: TarotCardPosition[] = [
   },
   {
     id: 5,
-    title: 'Birlikte olduğum kişiyle geçmişteki deneyimlerim',
-    description:
-      'Partnerinizle yaşadığınız geçmiş deneyimlerin mevcut sorunlara etkisini gösterir. Geçmişin bugüne nasıl yansıdığını anlamanıza yardımcı olur.',
+    title: 'spreads.relationshipProblems.positions.5.title',
+    description: 'spreads.relationshipProblems.positions.5.description',
     className:
       'absolute top-[45%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-30',
     x: 50,
@@ -500,9 +470,8 @@ const relationshipProblemsPositions: TarotCardPosition[] = [
   },
   {
     id: 6,
-    title: 'Birbirimizi suistimal mi ediyoruz?',
-    description:
-      'İlişkinizde karşılıklı saygı ve sağlıklı sınırların durumunu gösterir. Birbirinizi nasıl etkilediğinizi ve zarar verip vermediğinizi ortaya koyar.',
+    title: 'spreads.relationshipProblems.positions.6.title',
+    description: 'spreads.relationshipProblems.positions.6.description',
     className:
       'absolute top-[25%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-30',
     x: 50,
@@ -510,9 +479,8 @@ const relationshipProblemsPositions: TarotCardPosition[] = [
   },
   {
     id: 7,
-    title: 'Sorunumuza karışan başka insanlar var mı?',
-    description:
-      'İlişkinizi etkileyen dış faktörleri ve üçüncü kişileri gösterir. Aile, arkadaşlar veya diğer insanların sorununuza nasıl etki ettiğini anlamanıza yardımcı olur.',
+    title: 'spreads.relationshipProblems.positions.7.title',
+    description: 'spreads.relationshipProblems.positions.7.description',
     className:
       'absolute top-[8%] left-[15%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 15,
@@ -520,9 +488,8 @@ const relationshipProblemsPositions: TarotCardPosition[] = [
   },
   {
     id: 8,
-    title: 'İlişkimizi etkileyen maddi sorunlar var mı?',
-    description:
-      'Para, iş, maddi durum gibi faktörlerin ilişkinize etkisini gösterir. Ekonomik sorunların ilişkinizi nasıl etkilediğini ortaya koyar.',
+    title: 'spreads.relationshipProblems.positions.8.title',
+    description: 'spreads.relationshipProblems.positions.8.description',
     className:
       'absolute top-[8%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 50,
@@ -530,9 +497,8 @@ const relationshipProblemsPositions: TarotCardPosition[] = [
   },
   {
     id: 9,
-    title: 'Bu ilişki sürecek mi?',
-    description:
-      'İlişkinizin geleceği hakkında öngörü sunar. Mevcut sorunların çözülüp çözülmeyeceği ve ilişkinin devam edip etmeyeceği konusunda bilgi verir.',
+    title: 'spreads.relationshipProblems.positions.9.title',
+    description: 'spreads.relationshipProblems.positions.9.description',
     className:
       'absolute top-[8%] left-[85%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 85,
@@ -544,9 +510,8 @@ const relationshipProblemsPositions: TarotCardPosition[] = [
 export const marriagePositions: TarotCardPosition[] = [
   {
     id: 1,
-    title: 'Sonuç ne olacak?',
-    description:
-      'Evlilik sürecinizin genel sonucunu ve nasıl ilerleyeceğini gösterir.',
+    title: 'spreads.marriage.positions.1.title',
+    description: 'spreads.marriage.positions.1.description',
     className:
       'absolute top-[85%] left-[85%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 85,
@@ -554,9 +519,8 @@ export const marriagePositions: TarotCardPosition[] = [
   },
   {
     id: 2,
-    title: 'Eşimi beklerken benim ne yapmam gerekiyor?',
-    description:
-      'Doğru kişiyi bulana kadar kendinizi nasıl geliştirmeniz gerektiğini gösterir.',
+    title: 'spreads.marriage.positions.2.title',
+    description: 'spreads.marriage.positions.2.description',
     className:
       'absolute top-[85%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 50,
@@ -564,9 +528,8 @@ export const marriagePositions: TarotCardPosition[] = [
   },
   {
     id: 3,
-    title: 'Mali kaynaklarımızı birbirimizle paylaşacak mıyız?',
-    description:
-      'Evlilikte mali konularda uyumunuzu ve paylaşımınızı gösterir.',
+    title: 'spreads.marriage.positions.3.title',
+    description: 'spreads.marriage.positions.3.description',
     className:
       'absolute top-[85%] left-[15%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 15,
@@ -574,9 +537,8 @@ export const marriagePositions: TarotCardPosition[] = [
   },
   {
     id: 4,
-    title: 'Her ikimiz de bağlanmak isteyecek miyiz?',
-    description:
-      'Her iki tarafın da evliliğe hazır olup olmadığını ve bağlanma isteğini gösterir.',
+    title: 'spreads.marriage.positions.4.title',
+    description: 'spreads.marriage.positions.4.description',
     className:
       'absolute top-[55%] left-[75%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 75,
@@ -584,8 +546,8 @@ export const marriagePositions: TarotCardPosition[] = [
   },
   {
     id: 5,
-    title: 'Benzer yanlarımız olacak mı?',
-    description: 'Ortak değerleriniz, benzerlikleriniz ve uyumunuzu gösterir.',
+    title: 'spreads.marriage.positions.5.title',
+    description: 'spreads.marriage.positions.5.description',
     className:
       'absolute top-[35%] left-[75%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 75,
@@ -593,8 +555,8 @@ export const marriagePositions: TarotCardPosition[] = [
   },
   {
     id: 6,
-    title: 'Bu kişinin ailesi beni kabul edecek mi?',
-    description: 'Aile onayı ve aile ilişkilerinizin nasıl olacağını gösterir.',
+    title: 'spreads.marriage.positions.6.title',
+    description: 'spreads.marriage.positions.6.description',
     className:
       'absolute top-[55%] left-[25%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 25,
@@ -602,9 +564,8 @@ export const marriagePositions: TarotCardPosition[] = [
   },
   {
     id: 7,
-    title: 'Birbirimizi nasıl bulacağız?',
-    description:
-      'Doğru kişiyle nasıl tanışacağınızı ve buluşacağınızı gösterir.',
+    title: 'spreads.marriage.positions.7.title',
+    description: 'spreads.marriage.positions.7.description',
     className:
       'absolute top-[35%] left-[25%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 25,
@@ -612,9 +573,8 @@ export const marriagePositions: TarotCardPosition[] = [
   },
   {
     id: 8,
-    title: 'Anlaşabilecek miyiz?',
-    description:
-      'İletişim uyumunuzu ve birbirinizi anlama kapasitenizi gösterir.',
+    title: 'spreads.marriage.positions.8.title',
+    description: 'spreads.marriage.positions.8.description',
     className:
       'absolute top-[8%] left-[85%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 85,
@@ -622,9 +582,8 @@ export const marriagePositions: TarotCardPosition[] = [
   },
   {
     id: 9,
-    title: 'Benim için nasıl bir eş uygundur?',
-    description:
-      'İdeal eşinizin özelliklerini ve sizinle uyumlu olacak kişiyi gösterir.',
+    title: 'spreads.marriage.positions.9.title',
+    description: 'spreads.marriage.positions.9.description',
     className:
       'absolute top-[8%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 50,
@@ -632,8 +591,8 @@ export const marriagePositions: TarotCardPosition[] = [
   },
   {
     id: 10,
-    title: 'Evlenebilecek miyim?',
-    description: 'Evlilik potansiyelinizi ve evlenme şansınızı gösterir.',
+    title: 'spreads.marriage.positions.10.title',
+    description: 'spreads.marriage.positions.10.description',
     className:
       'absolute top-[8%] left-[15%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 15,
@@ -645,8 +604,8 @@ export const marriagePositions: TarotCardPosition[] = [
 export const newLoverPositions: TarotCardPosition[] = [
   {
     id: 1,
-    title: 'Yakında yeni bir ilişki yaşayacak mıyım?',
-    description: 'Gelecekteki ilişki potansiyelinizi gösterir',
+    title: 'spreads.newLover.positions.1.title',
+    description: 'spreads.newLover.positions.1.description',
     className:
       'absolute top-[85%] left-[75%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 75,
@@ -654,8 +613,8 @@ export const newLoverPositions: TarotCardPosition[] = [
   },
   {
     id: 2,
-    title: 'Bu kişi hangi burçtan olacak?',
-    description: 'Gelecekteki partnerinizin astrolojik özelliklerini gösterir',
+    title: 'spreads.newLover.positions.2.title',
+    description: 'spreads.newLover.positions.2.description',
     className:
       'absolute top-[85%] left-[25%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 25,
@@ -663,8 +622,8 @@ export const newLoverPositions: TarotCardPosition[] = [
   },
   {
     id: 3,
-    title: 'Birbirimizle uyumlu olacak mıyız?',
-    description: 'İlişkinizdeki uyum ve uyumsuzlukları gösterir',
+    title: 'spreads.newLover.positions.3.title',
+    description: 'spreads.newLover.positions.3.description',
     className:
       'absolute top-[50%] left-[15%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 15,
@@ -672,8 +631,8 @@ export const newLoverPositions: TarotCardPosition[] = [
   },
   {
     id: 4,
-    title: 'Uzun süreli bir ilişki olacak mı?',
-    description: 'İlişkinizin sürekliliğini ve derinliğini gösterir',
+    title: 'spreads.newLover.positions.4.title',
+    description: 'spreads.newLover.positions.4.description',
     className:
       'absolute top-[15%] left-[25%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 25,
@@ -681,8 +640,8 @@ export const newLoverPositions: TarotCardPosition[] = [
   },
   {
     id: 5,
-    title: 'Bu kişi benim ruh eşim olabilir mi?',
-    description: 'Ruhsal bağlantı ve derin aşk potansiyelini gösterir',
+    title: 'spreads.newLover.positions.5.title',
+    description: 'spreads.newLover.positions.5.description',
     className:
       'absolute top-[15%] left-[75%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 75,
@@ -690,8 +649,8 @@ export const newLoverPositions: TarotCardPosition[] = [
   },
   {
     id: 6,
-    title: 'Dileğim gerçekleşecek mi?',
-    description: 'Aşk dileğinizin gerçekleşme olasılığını gösterir',
+    title: 'spreads.newLover.positions.6.title',
+    description: 'spreads.newLover.positions.6.description',
     className:
       'absolute top-[50%] left-[85%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 85,
@@ -703,8 +662,8 @@ export const newLoverPositions: TarotCardPosition[] = [
 export const moneyPositions: TarotCardPosition[] = [
   {
     id: 1,
-    title: 'Parayla İlgili Kaygı',
-    description: 'Parayla ilgili kaygı var mı?',
+    title: 'spreads.money.positions.1.title',
+    description: 'spreads.money.positions.1.description',
     className:
       'absolute top-[85%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 50,
@@ -712,8 +671,8 @@ export const moneyPositions: TarotCardPosition[] = [
   },
   {
     id: 2,
-    title: 'Finansal Güvenlik Arzusu',
-    description: 'Finansal güvenliğe duyulan arzu',
+    title: 'spreads.money.positions.2.title',
+    description: 'spreads.money.positions.2.description',
     className:
       'absolute top-[70%] left-[75%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 75,
@@ -721,8 +680,8 @@ export const moneyPositions: TarotCardPosition[] = [
   },
   {
     id: 3,
-    title: 'Para Kullanımı',
-    description: 'Parayı beni mutlu edecek şekilde nasıl kullanabilirim?',
+    title: 'spreads.money.positions.3.title',
+    description: 'spreads.money.positions.3.description',
     className:
       'absolute top-[70%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 50,
@@ -730,8 +689,8 @@ export const moneyPositions: TarotCardPosition[] = [
   },
   {
     id: 4,
-    title: 'Geçmişteki Para Tutumu',
-    description: 'Parayla ilgili geçmişteki tutumum',
+    title: 'spreads.money.positions.4.title',
+    description: 'spreads.money.positions.4.description',
     className:
       'absolute top-[70%] left-[25%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 25,
@@ -739,8 +698,8 @@ export const moneyPositions: TarotCardPosition[] = [
   },
   {
     id: 5,
-    title: 'Mali Sorumluluklar',
-    description: 'Mali açıdan iyi bir yaşam için sorumluluklarım nedir?',
+    title: 'spreads.money.positions.5.title',
+    description: 'spreads.money.positions.5.description',
     className:
       'absolute top-[45%] left-[75%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 75,
@@ -748,8 +707,8 @@ export const moneyPositions: TarotCardPosition[] = [
   },
   {
     id: 6,
-    title: 'Yeni Mali Planlar',
-    description: 'Mali yatırımlarım veya birikimlerimle ilgili yeni planlarım',
+    title: 'spreads.money.positions.6.title',
+    description: 'spreads.money.positions.6.description',
     className:
       'absolute top-[45%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 50,
@@ -757,8 +716,8 @@ export const moneyPositions: TarotCardPosition[] = [
   },
   {
     id: 7,
-    title: 'Gelecek Para Planları',
-    description: 'Parayla ilgili gelecek planlarım',
+    title: 'spreads.money.positions.7.title',
+    description: 'spreads.money.positions.7.description',
     className:
       'absolute top-[45%] left-[25%] -translate-x-1/2 -translate-y-1/2 z-20',
     x: 25,
@@ -766,8 +725,8 @@ export const moneyPositions: TarotCardPosition[] = [
   },
   {
     id: 8,
-    title: 'Para Kazanma Yetenekleri',
-    description: 'Para kazanmak için ne gibi özel yeteneklerim var?',
+    title: 'spreads.money.positions.8.title',
+    description: 'spreads.money.positions.8.description',
     className:
       'absolute top-[20%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-30',
     x: 50,
@@ -779,8 +738,8 @@ export const moneyPositions: TarotCardPosition[] = [
 export const tarotSpreads: TarotSpread[] = [
   {
     id: 'love-spread',
-    name: 'readingModal.loveSpreadName',
-    description: 'readingModal.cardspreadmeaning2',
+    name: 'spreads.love.name',
+    description: 'spreads.love.description',
     cardCount: 4,
     component: LoveReading,
     icon: '💝',
@@ -798,8 +757,8 @@ export const tarotSpreads: TarotSpread[] = [
   },
   {
     id: 'career-spread',
-    name: 'Kariyer Açılımı',
-    description: 'Kariyer ve iş hayatı için 7 kartlık özel açılım',
+    name: 'spreads.career.name',
+    description: 'spreads.career.description',
     cardCount: 7,
     component: CareerReading,
     icon: '💼',
@@ -817,8 +776,8 @@ export const tarotSpreads: TarotSpread[] = [
   },
   {
     id: 'problem-solving-spread',
-    name: 'Problem Çözme Açılımı',
-    description: 'Problem analizi ve çözüm için 10 kartlık detaylı açılım',
+    name: 'spreads.problemSolving.name',
+    description: 'spreads.problemSolving.description',
     cardCount: 10,
     component: ProblemSolvingReading,
     icon: '🔍',
@@ -837,8 +796,8 @@ export const tarotSpreads: TarotSpread[] = [
   },
   {
     id: 'situation-analysis-spread',
-    name: 'Durum Analizi Açılımı',
-    description: 'Durum analizi ve değerlendirme için 7 kartlık özel açılım',
+    name: 'spreads.situationAnalysis.name',
+    description: 'spreads.situationAnalysis.description',
     cardCount: 7,
     component: SituationAnalysisReading,
     icon: '🔍',
@@ -857,8 +816,8 @@ export const tarotSpreads: TarotSpread[] = [
   },
   {
     id: 'relationship-analysis-spread',
-    name: 'İlişki Analizi Açılımı',
-    description: 'İlişki analizi ve değerlendirme için 7 kartlık özel açılım',
+    name: 'spreads.relationshipAnalysis.name',
+    description: 'spreads.relationshipAnalysis.description',
     cardCount: 7,
     component: RelationshipAnalysisReading,
     icon: '💕',
@@ -877,8 +836,8 @@ export const tarotSpreads: TarotSpread[] = [
   },
   {
     id: 'relationship-problems-spread',
-    name: 'İlişki Sorunları Açılımı',
-    description: 'İlişki sorunları analizi ve çözüm için 9 kartlık özel açılım',
+    name: 'spreads.relationshipProblems.name',
+    description: 'spreads.relationshipProblems.description',
     cardCount: 9,
     component: RelationshipProblemsReading,
     icon: '💔',
@@ -897,8 +856,8 @@ export const tarotSpreads: TarotSpread[] = [
   },
   {
     id: 'marriage-spread',
-    name: 'Evlilik Açılımı',
-    description: 'Evlilik ve eş bulma için 10 kartlık özel açılım',
+    name: 'spreads.marriage.name',
+    description: 'spreads.marriage.description',
     cardCount: 10,
     component: MarriageReading,
     icon: '💒',
@@ -916,8 +875,8 @@ export const tarotSpreads: TarotSpread[] = [
   },
   {
     id: 'new-lover-spread',
-    name: 'Yeni Bir Sevgili Açılımı',
-    description: 'Yeni bir aşk ilişkisi için 6 kartlık özel açılım',
+    name: 'spreads.newLover.name',
+    description: 'spreads.newLover.description',
     cardCount: 6,
     component: NewLoverReading,
     icon: '💕',
@@ -935,9 +894,8 @@ export const tarotSpreads: TarotSpread[] = [
   },
   {
     id: 'money-spread',
-    name: 'Para Açılımı',
-    description:
-      'Finansal durum ve para konuları için 8 kartlık piramit açılım',
+    name: 'spreads.money.name',
+    description: 'spreads.money.description',
     cardCount: 8,
     component: MoneyReading,
     icon: '💰',

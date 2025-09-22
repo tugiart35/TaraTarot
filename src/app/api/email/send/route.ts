@@ -29,7 +29,6 @@ Kullanım durumu:
 */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient } from '@/lib/supabase/server';
 import nodemailer from 'nodemailer';
 
 export async function POST(request: NextRequest) {
@@ -96,13 +95,13 @@ export async function POST(request: NextRequest) {
     const info = await transporter.sendMail(mailOptions);
 
     // Log email
-    const supabase = createClient();
-    await supabase.from('email_logs').insert({
-      to_email: to,
-      subject: subject,
-      status: 'sent',
-      sent_at: new Date().toISOString(),
-    });
+    // const supabase = createClient();
+    // await supabase.from('email_logs').insert({
+    //   to_email: to,
+    //   subject: subject,
+    //   status: 'sent',
+    //   sent_at: new Date().toISOString(),
+    // });
 
     return NextResponse.json({
       success: true,
@@ -113,18 +112,18 @@ export async function POST(request: NextRequest) {
     console.error('Email sending error:', error);
 
     // Log error
-    try {
-      const supabase = createClient();
-      await supabase.from('email_logs').insert({
-        to_email: requestBody?.to || 'unknown',
-        subject: requestBody?.subject || 'unknown',
-        status: 'failed',
-        error_message: (error as Error).message,
-        created_at: new Date().toISOString(),
-      });
-    } catch (logError) {
-      console.error('Error logging email failure:', logError);
-    }
+    // try {
+    //   const supabase = createClient();
+    //   await supabase.from('email_logs').insert({
+    //     to_email: requestBody?.to || 'unknown',
+    //     subject: requestBody?.subject || 'unknown',
+    //     status: 'failed',
+    //     error_message: (error as Error).message,
+    //     created_at: new Date().toISOString(),
+    //   });
+    // } catch (logError) {
+    //   console.error('Error logging email failure:', logError);
+    // }
 
     return NextResponse.json(
       {

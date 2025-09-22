@@ -38,7 +38,7 @@ export const cardNameMapping: { [key: string]: string } = {
   Güç: 'Strength',
   Ermiş: 'The Hermit',
   Münzevi: 'The Hermit',
-  'Kader Çarkı': 'The Wheel of Fortune',
+  'Kader Çarkı': 'Wheel of Fortune',
   'Kader Çarkı (Wheel)': 'Wheel of Fortune',
   Adalet: 'Justice',
   'Asılı Adam': 'The Hanged Man',

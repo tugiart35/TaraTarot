@@ -1,5 +1,36 @@
 /*
-Bu dosyada, açılımı kaydet butonu ve manuel kayıt state'leri kaldırıldı. AI yorumu alındığında açılım otomatik kaydedildiği için kullanıcıya ayrıca 'Açılımı Kaydet' butonu ve mesajı gösterilmiyor.
+info:
+---
+Dosya Amacı:
+- Tarot açılımları için ortak yorum bileşeni (BaseInterpretation)
+- Tüm açılım türleri için tek bir bileşen kullanarak kod tekrarını önler
+- Pozisyon bazlı özel yorumları, anahtar kelimeleri ve context bilgilerini gösterir
+
+Bağlı Dosyalar:
+- LoveInterpretation.tsx (aşk açılımı için wrapper)
+- CareerTarot.tsx (kariyer açılımı)
+- RelationshipAnalysisTarot.tsx (ilişki analizi açılımı)
+
+Önemli Özellikler:
+- Pozisyon özel yorum fonksiyonu desteği (getPositionSpecificInterpretation)
+- İlişki analizi, kariyer ve genel anlam desteği
+- Context gösterimi (problem çözme açılımı için)
+- Tema sistemi (7 farklı tema)
+
+Anlam Seçimi Öncelik Sırası:
+1. getPositionSpecificInterpretation (en yüksek öncelik)
+2. getMeaningText fonksiyonu
+3. relationshipAnalysisMeaning (ilişki analizi)
+4. careerMeaning (kariyer açılımı)
+5. moneyMeaning (para açılımı)
+6. newLoverMeaning (yeni sevgili açılımı)
+7. marriageMeaning (evlilik açılımı)
+8. Genel kart anlamı (fallback)
+
+Üretime Hazır mı?:
+- Evet, tüm açılım türleri için test edilmiş ve çalışır durumda
+- İlişki analizi açılımı düzeltildi ve doğru çıktılar sağlıyor
+---
 */
 
 'use client';
@@ -35,6 +66,22 @@ export interface CardMeaningData {
   upcontent?: string;
   reversedcontent?: string;
   careerMeaning?: {
+    upright: string;
+    reversed: string;
+  };
+  relationshipAnalysisMeaning?: {
+    upright: string;
+    reversed: string;
+  };
+  moneyMeaning?: {
+    upright: string;
+    reversed: string;
+  };
+  newLoverMeaning?: {
+    upright: string;
+    reversed: string;
+  };
+  marriageMeaning?: {
     upright: string;
     reversed: string;
   };
@@ -336,16 +383,58 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
             const cardMeaning: CardMeaningData | null = getCardMeaning
               ? getCardMeaning(card)
               : null;
-            const positionInterpretation = getPositionSpecificInterpretation
-              ? getPositionSpecificInterpretation(
-                  card,
-                  idx + 1,
-                  isReversed[idx] || false
-                )
-              : getMeaningText?.(cardMeaning, card, isReversed[idx] || false) ||
-                (isReversed[idx] || false
-                  ? card.meaningTr.reversed
-                  : card.meaningTr.upright);
+            // CardDetails.tsx'deki mantığı kullan - pozisyon özel yorum fonksiyonu öncelikli
+            let positionInterpretation = '';
+            
+            // 1. Önce props'tan gelen getPositionSpecificInterpretation fonksiyonunu kullan
+            if (getPositionSpecificInterpretation) {
+              positionInterpretation = getPositionSpecificInterpretation(
+                card,
+                idx + 1,
+                isReversed[idx] || false
+              );
+            }
+            
+            // 2. Eğer positionInterpretation boşsa, getMeaningText fonksiyonunu dene
+            if (!positionInterpretation && getMeaningText) {
+              positionInterpretation = getMeaningText(cardMeaning, card, isReversed[idx] || false);
+            }
+            
+            // 3. Hala boşsa, CardMeaningData'dan anlamı al
+            if (!positionInterpretation && cardMeaning) {
+              if (cardMeaning.relationshipAnalysisMeaning) {
+                positionInterpretation = isReversed[idx] || false
+                  ? cardMeaning.relationshipAnalysisMeaning.reversed
+                  : cardMeaning.relationshipAnalysisMeaning.upright;
+              } else if (cardMeaning.careerMeaning) {
+                positionInterpretation = isReversed[idx] || false
+                  ? cardMeaning.careerMeaning.reversed
+                  : cardMeaning.careerMeaning.upright;
+              } else if (cardMeaning.moneyMeaning) {
+                positionInterpretation = isReversed[idx] || false
+                  ? cardMeaning.moneyMeaning.reversed
+                  : cardMeaning.moneyMeaning.upright;
+              } else if (cardMeaning.newLoverMeaning) {
+                positionInterpretation = isReversed[idx] || false
+                  ? cardMeaning.newLoverMeaning.reversed
+                  : cardMeaning.newLoverMeaning.upright;
+              } else if (cardMeaning.marriageMeaning) {
+                positionInterpretation = isReversed[idx] || false
+                  ? cardMeaning.marriageMeaning.reversed
+                  : cardMeaning.marriageMeaning.upright;
+              } else if (cardMeaning.upright || cardMeaning.reversed) {
+                positionInterpretation = isReversed[idx] || false
+                  ? cardMeaning.reversed || cardMeaning.upright || ''
+                  : cardMeaning.upright || '';
+              }
+            }
+            
+            // 4. Son fallback: Kartın genel anlamını kullan
+            if (!positionInterpretation) {
+              positionInterpretation = isReversed[idx] || false
+                ? card.meaningTr.reversed
+                : card.meaningTr.upright;
+            }
 
             const keywords = getKeywords ? getKeywords(cardMeaning, card) : [];
             
@@ -405,7 +494,7 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
                   </div>
 
                   {/* Context - Anlam altında göster */}
-                  {context && (
+                  {showContext && context && (
                     <div className='mt-2'>
                       <div className={`text-xs ${colors.contextText} font-medium mb-1`}>
                         Bağlam:

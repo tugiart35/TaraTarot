@@ -32,9 +32,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 import { supabase } from '@/lib/supabase/client';
-import { useTranslations } from '@/hooks/useTranslations';
 import { useToast } from '@/hooks/useToast';
 import Toast from '@/features/shared/ui/Toast';
 import BottomNavigation from '@/features/shared/layout/BottomNavigation';
@@ -46,9 +44,7 @@ interface SignInFormProps {
 }
 
 export default function SignInForm({ locale, initialError, next }: SignInFormProps) {
-  const { t } = useTranslations();
   const { toast, showToast, hideToast } = useToast();
-  const router = useRouter();
 
   const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState('');

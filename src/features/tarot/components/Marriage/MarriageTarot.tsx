@@ -216,7 +216,7 @@ export default function MarriageReading({
     if (!meaning) {
       return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
     }
-    return meaning.meaning;
+    return isReversed ? meaning.reversed : meaning.upright;
   };
 
   // Basit yorum oluştur
@@ -672,9 +672,25 @@ export default function MarriageReading({
               badgeText='EVLİLİK'
               badgeColor='bg-pink-500/20 text-pink-400'
               positionsInfo={MARRIAGE_POSITIONS_INFO}
+              getCardMeaning={(card) => {
+                const position = selectedCards.findIndex(c => c?.id === card.id) + 1;
+                const cardIsReversed = isReversed[position - 1] || false;
+                const meaning = getMarriageMeaningByCardAndPosition(card, position, cardIsReversed);
+                return meaning ? {
+                  context: meaning.context,
+                  keywords: meaning.keywords,
+                  upright: meaning.upright,
+                  reversed: meaning.reversed,
+                  marriageMeaning: {
+                    upright: meaning.upright,
+                    reversed: meaning.reversed
+                  }
+                } : null;
+              }}
               getPositionSpecificInterpretation={(card, position, isReversed) =>
                 getMarriageCardMeaning(card, position, isReversed)
               }
+              showContext={true}
             />
 
             {/* Okumayı Kaydet Butonu - Sadece DETAILED/WRITTEN için */}
@@ -1186,6 +1202,25 @@ export default function MarriageReading({
               ? { title: p.title, desc: p.desc }
               : { title: `Pozisyon ${idx + 1}`, desc: 'Kart pozisyonu' };
           })()}
+          getCardMeaning={(card) => {
+            const position = selectedCards.findIndex(c => c?.id === card.id) + 1;
+            const cardIsReversed = isReversed[position - 1] || false;
+            const meaning = getMarriageMeaningByCardAndPosition(card, position, cardIsReversed);
+            return meaning ? {
+              context: meaning.context,
+              keywords: meaning.keywords,
+              upright: meaning.upright,
+              reversed: meaning.reversed,
+              marriageMeaning: {
+                upright: meaning.upright,
+                reversed: meaning.reversed
+              }
+            } : null;
+          }}
+          getPositionSpecificInterpretation={(card, position, isReversed) =>
+            getMarriageCardMeaning(card, position, isReversed)
+          }
+          showContext={true}
         />
       )}
 

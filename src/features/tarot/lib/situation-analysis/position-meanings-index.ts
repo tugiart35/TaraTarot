@@ -69,8 +69,8 @@ export interface SituationAnalysisPositionMeaning {
   id: string;
   position: number;
   card: string;
-  cardName: string;
-  isReversed: boolean;
+  cardName?: string;
+  isReversed?: boolean;
   upright: string;
   reversed: string;
   keywords: string[];
@@ -125,17 +125,8 @@ export function getSituationAnalysisMeaningByCardAndPosition(
   position: number,
   isReversed: boolean = false
 ): SituationAnalysisPositionMeaning {
-  // Debug için console.log ekle
-  console.log('🔍 getSituationAnalysisMeaningByCardAndPosition called:', {
-    cardName: card.name,
-    cardNameTr: card.nameTr,
-    position,
-    isReversed
-  });
-
   // Pozisyon 1-7 arasında olmalı
   if (position < 1 || position > 7) {
-    console.log('❌ Invalid position:', position);
     return {
       id: `situation-analysis-${position}-${card.id}-${isReversed ? 'reversed' : 'upright'}`,
       position: 0,
@@ -189,16 +180,15 @@ export function getSituationAnalysisMeaningByCardAndPosition(
       break;
   }
 
-  console.log('🎯 Position meaning found:', positionMeaning ? 'YES' : 'NO');
 
   if (positionMeaning) {
     const result = {
       ...positionMeaning,
       cardName: card.nameTr, // cardName alanını ekle
-      upright: isReversed ? positionMeaning.reversed : positionMeaning.upright,
-      reversed: isReversed ? positionMeaning.upright : positionMeaning.reversed,
+      // upright ve reversed alanlarını orijinal haliyle koru
+      upright: positionMeaning.upright,
+      reversed: positionMeaning.reversed,
     };
-    console.log('✅ Returning position-specific meaning:', result.upright.substring(0, 50) + '...');
     return result;
   }
 

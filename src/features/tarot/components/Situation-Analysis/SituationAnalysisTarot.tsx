@@ -140,14 +140,13 @@ export default function SituationAnalysisReading({
   const [isSavingReading, setIsSavingReading] = useState(false);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
 
-  if (!situationAnalysisSpread) {
-    return (
-      <div className='text-red-500'>
-        Durum Analizi Açılımı konfigürasyonu bulunamadı. Lütfen tarotSpreads.ts dosyasını
-        kontrol edin.
-      </div>
-    );
-  }
+    if (!situationAnalysisSpread) {
+      return (
+        <div className='text-red-500'>
+          {t('situationAnalysis.errors.configNotFound')}
+        </div>
+      );
+    }
 
   // Pozisyona özel kart anlamını al
   const getSituationAnalysisCardMeaning = (
@@ -176,17 +175,17 @@ export default function SituationAnalysisReading({
       selectedCards.length !== SITUATION_ANALYSIS_CARD_COUNT ||
       selectedCards.some(c => !c)
     ) {
-      return 'Tüm kartları seçmeden yorum oluşturulamaz.';
+      return t('situationAnalysis.errors.allCardsRequired');
     }
-    let interpretation = `🔍 **Durum Analizi Açılımı**\n\n`;
+    let interpretation = `🔍 **${t('situationAnalysis.interpretation.title')}**\n\n`;
     if (userQuestion.trim()) {
-      interpretation += `**Sevgili danışan,** durum analizi "${userQuestion}" için özel hazırlanmış analiz:\n\n`;
+      interpretation += `**${t('situationAnalysis.interpretation.dearClient')}** ${t('situationAnalysis.interpretation.personalAnalysis').replace('{question}', userQuestion)}\n\n`;
     }
     SITUATION_ANALYSIS_POSITIONS_INFO.forEach((posInfo, index) => {
       const card = cards[index];
       const reversed = !!isReversed[index];
       if (card) {
-        interpretation += `**${posInfo.id}. ${posInfo.title}: ${card.nameTr}** (${reversed ? 'Ters' : 'Düz'})\n*${posInfo.desc}*\n${getSituationAnalysisCardMeaning(card, posInfo.id, reversed)}\n\n`;
+        interpretation += `**${posInfo.id}. ${posInfo.title}: ${card.nameTr}** (${reversed ? t('common.reversed') : t('common.upright')})\n*${posInfo.desc}*\n${getSituationAnalysisCardMeaning(card, posInfo.id, reversed)}\n\n`;
       }
     });
     interpretation += `💫 **${t('tarotPage.situationAnalysisSpread.summary')}:**\n"${t('tarotPage.situationAnalysisSpread.summaryText')}"`;
@@ -228,7 +227,7 @@ export default function SituationAnalysisReading({
           // Basit okuma sayacı kaydedildi
         }
 
-        showToast('Basit okuma tamamlandı!', 'success');
+        showToast(t('situationAnalysis.messages.simpleReadingCompleted'), 'success');
         router.push('/');
         return;
       }
@@ -245,7 +244,7 @@ export default function SituationAnalysisReading({
           userId: user?.id || 'anonymous-user',
           readingType: 'situation-analysis',
           status: 'completed',
-          title: 'Durum Analizi Açılımı - Detaylı Kişisel Okuma',
+          title: t('situationAnalysis.data.detailedReadingTitle'),
           interpretation: generateBasicInterpretation(),
           cards: {
             selectedCards: selectedCards
@@ -279,7 +278,7 @@ export default function SituationAnalysisReading({
           console.log('Durum analizi okuması kaydedildi:', saveResult.id);
           
           // Başarı toast'ını hemen göster
-          showToast('Okumanız başarıyla kaydedildi!', 'success');
+          showToast(t('situationAnalysis.messages.readingSavedSuccessfully'), 'success');
           
           // Başarı modal'ını göster
           setShowSuccessModal(true);
@@ -310,12 +309,12 @@ export default function SituationAnalysisReading({
           }, 1500); // 3 saniyeden 1.5 saniyeye düşürüldü
         } else {
           console.error('Okuma kaydetme hatası:', saveResult.error);
-          showToast('Okuma kaydedilirken bir hata oluştu.', 'error');
+          showToast(t('situationAnalysis.messages.readingSaveError'), 'error');
         }
         return;
       }
     } catch (error) {
-      showToast('Okuma kaydedilirken bir hata oluştu.', 'error');
+      showToast(t('situationAnalysis.messages.readingSaveError'), 'error');
     } finally {
       setIsSavingReading(false);
     }
@@ -347,8 +346,8 @@ export default function SituationAnalysisReading({
         {
           p_user_id: user.id,
           p_reading_type: readingData.readingType,
-          p_spread_name: 'Durum Analizi Yayılımı',
-          p_title: readingData.title || 'Durum Analizi Açılımı',
+          p_spread_name: t('situationAnalysis.data.spreadName'),
+          p_title: readingData.title || t('situationAnalysis.data.defaultTitle'),
           p_interpretation: readingData.interpretation,
           p_cards: readingData.cards.selectedCards,
           p_questions: readingData.questions,
@@ -505,7 +504,7 @@ export default function SituationAnalysisReading({
           selectedReadingType
             ? handleCardSelect
             : () => {
-                showToast('Lütfen önce bir okuma tipi seçin.', 'info');
+                showToast(t('situationAnalysis.messages.selectReadingTypeFirst'), 'info');
               }
         }
         onShuffleDeck={shuffleDeck}
@@ -548,9 +547,9 @@ export default function SituationAnalysisReading({
               cards={selectedCards}
               isReversed={isReversed}
               theme='green'
-              title='Durum Analizi Açılımı Yorumu'
+              title={t('situationAnalysis.data.interpretationTitle')}
               icon='🔍'
-              badgeText='DURUM ANALİZİ'
+              badgeText={t('situationAnalysis.data.badgeText')}
               badgeColor='bg-green-500/20 text-green-400'
               positionsInfo={SITUATION_ANALYSIS_POSITIONS_INFO.map((pos, idx) => ({
                 id: idx,
@@ -584,7 +583,7 @@ export default function SituationAnalysisReading({
                   className='px-8 py-4 bg-gradient-to-r from-green-600 to-emerald-500 hover:from-green-700 hover:to-emerald-600 text-white font-semibold rounded-2xl transition-all disabled:opacity-60 disabled:cursor-not-allowed shadow-lg'
                 >
                   {isSavingReading
-                    ? '📝 Okuma kaydediliyor...'
+                    ? t('situationAnalysis.messages.savingReading')
                     : t('situationAnalysis.modals.saveReading')}
                 </button>
               </div>
@@ -622,10 +621,9 @@ export default function SituationAnalysisReading({
             <div className='w-full bg-green-800/30 rounded-full h-2 mb-4'>
               <div className='bg-gradient-to-r from-green-400 to-green-600 h-2 rounded-full animate-pulse'></div>
             </div>
-            Problem buldum! readingType: 'situation-analysis' kullanılıyor ama bu enum değeri mevcut değil. Daha önce kontrol ettiğimiz enum değerleri: 'tarot', 'numerology', 'love', 'career', 'general'.            
             {/* Hızlı yönlendirme bilgisi */}
             <p className='text-green-300 text-xs'>
-              Ana sayfaya yönlendiriliyorsunuz...
+              {t('situationAnalysis.messages.redirectingToHome')}
             </p>
           </div>
         </div>
@@ -790,7 +788,7 @@ export default function SituationAnalysisReading({
                   questions.concern
                 ) {
                   const shouldClose = window.confirm(
-                    'Form dolduruldu ancak kaydedilmedi. Çıkmak istediğinize emin misiniz?'
+                    t('situationAnalysis.messages.formNotSavedConfirm')
                   );
                   if (shouldClose) {
                     setSelectedReadingType(null);
@@ -822,7 +820,7 @@ export default function SituationAnalysisReading({
                       questions.concern
                     ) {
                       const shouldClose = window.confirm(
-                        'Form dolduruldu ancak kaydedilmedi. Çıkmak istediğinize emin misiniz?'
+                        t('situationAnalysis.messages.formNotSavedConfirm')
                       );
                       if (shouldClose) {
                         setSelectedReadingType(null);
@@ -865,7 +863,7 @@ export default function SituationAnalysisReading({
                         onChange={e =>
                           setPersonalInfo(prev => ({ ...prev, name: e.target.value }))
                         }
-                        placeholder='Adınız'
+                        placeholder={t('situationAnalysis.form.firstName')}
                         className={`w-full px-4 py-3 bg-slate-800/80 border ${
                           formErrors.name
                             ? 'border-red-500'
@@ -887,7 +885,7 @@ export default function SituationAnalysisReading({
                         onChange={e =>
                           setPersonalInfo(prev => ({ ...prev, surname: e.target.value }))
                         }
-                        placeholder='Soyadınız'
+                        placeholder={t('situationAnalysis.form.lastName')}
                         className={`w-full px-4 py-3 bg-slate-800/80 border ${
                           formErrors.surname
                             ? 'border-red-500'
@@ -934,7 +932,7 @@ export default function SituationAnalysisReading({
                       onChange={e =>
                         setPersonalInfo(prev => ({ ...prev, email: e.target.value }))
                       }
-                      placeholder='ornek@email.com'
+                      placeholder={t('situationAnalysis.form.email')}
                       className={`w-full px-4 py-3 bg-slate-800/80 border ${
                         formErrors.email
                           ? 'border-red-500'
@@ -963,7 +961,7 @@ export default function SituationAnalysisReading({
                         onChange={e =>
                           setQuestions(prev => ({ ...prev, concern: e.target.value }))
                         }
-                        placeholder='Hangi durumu analiz etmek istiyorsunuz?'
+                        placeholder={t('situationAnalysis.form.concernQuestion')}
                         rows={3}
                         className={`w-full px-4 py-3 bg-slate-800/80 border ${
                           formErrors.concern
@@ -986,7 +984,7 @@ export default function SituationAnalysisReading({
                         onChange={e =>
                           setQuestions(prev => ({ ...prev, understanding: e.target.value }))
                         }
-                        placeholder='Bu durum analizi ile neyi anlamak istiyorsunuz?'
+                        placeholder={t('situationAnalysis.form.understandingQuestion')}
                         rows={3}
                         className={`w-full px-4 py-3 bg-slate-800/80 border ${
                           formErrors.understanding
@@ -1009,7 +1007,7 @@ export default function SituationAnalysisReading({
                         onChange={e =>
                           setQuestions(prev => ({ ...prev, emotional: e.target.value }))
                         }
-                        placeholder='Bu durum karşısında şu anda nasıl hissediyorsunuz?'
+                        placeholder={t('situationAnalysis.form.emotionalQuestion')}
                         rows={3}
                         className={`w-full px-4 py-3 bg-slate-800/80 border ${
                           formErrors.emotional

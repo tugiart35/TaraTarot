@@ -150,7 +150,7 @@ export default function ProblemSolvingReading({
           questions.concern
         ) {
           const shouldClose = window.confirm(
-            'Form dolduruldu ancak kaydedilmedi. Çıkmak istediğinize emin misiniz?'
+            t('problemSolving.validation.formUnsavedWarning')
           );
           if (shouldClose) {
             setSelectedReadingType(null);
@@ -189,38 +189,37 @@ export default function ProblemSolvingReading({
     const errors: { [key: string]: string } = {};
     let hasError = false;
     if (!personalInfo.name.trim() || personalInfo.name.trim().length < 3) {
-      errors.name = 'Ad en az 3 karakter olmalıdır.';
+      errors.name = t('problemSolving.validation.nameMinLength');
       hasError = true;
     }
     if (
       !personalInfo.surname.trim() ||
       personalInfo.surname.trim().length < 3
     ) {
-      errors.surname = 'Soyad en az 3 karakter olmalıdır.';
+      errors.surname = t('problemSolving.validation.surnameMinLength');
       hasError = true;
     }
     if (!personalInfo.birthDate) {
-      errors.birthDate = 'Doğum tarihi zorunludur.';
+      errors.birthDate = t('problemSolving.validation.birthDateRequired');
       hasError = true;
     }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(personalInfo.email)) {
-      errors.email = 'Geçerli bir e-posta adresi giriniz.';
+      errors.email = t('problemSolving.validation.emailInvalid');
       hasError = true;
     }
     if (!questions.concern.trim() || questions.concern.trim().length < 10) {
-      errors.concern = 'Bu soruya en az 10 karakterlik yanıt vermelisiniz.';
+      errors.concern = t('problemSolving.validation.concernMinLength');
       hasError = true;
     }
     if (
       !questions.understanding.trim() ||
       questions.understanding.trim().length < 10
     ) {
-      errors.understanding =
-        'Bu soruya en az 10 karakterlik yanıt vermelisiniz.';
+      errors.understanding = t('problemSolving.validation.understandingMinLength');
       hasError = true;
     }
     if (!questions.emotional.trim() || questions.emotional.trim().length < 10) {
-      errors.emotional = 'Bu soruya en az 10 karakterlik yanıt vermelisiniz.';
+      errors.emotional = t('problemSolving.validation.emotionalMinLength');
       hasError = true;
     }
     setFormErrors(prev => ({ ...prev, ...errors }));
@@ -234,7 +233,7 @@ export default function ProblemSolvingReading({
   };
   const saveDetailedForm = async () => {
     if (!user) {
-      showToast('Okuma için giriş yapmalısınız.', 'error');
+      showToast(t('problemSolving.messages.loginRequired'), 'error');
       setShowCreditConfirm(false);
       setIsSaving(false);
       return;
@@ -252,8 +251,7 @@ export default function ProblemSolvingReading({
   if (!problemSolvingSpread) {
     return (
       <div className='text-red-500'>
-        Problem Çözme Açılımı konfigürasyonu bulunamadı. Lütfen tarotSpreads.ts dosyasını
-        kontrol edin.
+        {t('problemSolving.messages.configurationNotFound')}
       </div>
     );
   }
@@ -284,7 +282,7 @@ export default function ProblemSolvingReading({
     if (!meaning) return null;
 
     return {
-      card: card.id,
+      card: card.name,
       name: card.nameTr,
       context: meaning.context, // Kartın pozisyonuna özel context bilgisini kullan
       keywords: meaning.keywords,
@@ -298,17 +296,17 @@ export default function ProblemSolvingReading({
       selectedCards.length !== PROBLEM_SOLVING_CARD_COUNT ||
       selectedCards.some(c => !c)
     ) {
-      return 'Tüm kartları seçmeden yorum oluşturulamaz.';
+      return t('problemSolving.messages.allCardsRequired');
     }
-    let interpretation = `🔍 **Problem Çözme Açılımı**\n\n`;
+    let interpretation = `🔍 **${t('problemSolving.data.interpretationTitle')}**\n\n`;
     if (userQuestion.trim()) {
-      interpretation += `**Sevgili danışan,** problem analizi "${userQuestion}" için özel hazırlanmış analiz:\n\n`;
+      interpretation += `**${t('problemSolving.data.dearClient')}** problem analizi "${userQuestion}" için özel hazırlanmış analiz:\n\n`;
     }
     PROBLEM_SOLVING_POSITIONS_INFO.forEach((posInfo, index) => {
       const card = cards[index];
       const reversed = !!isReversed[index];
       if (card) {
-        interpretation += `**${posInfo.id}. ${posInfo.title}: ${card.nameTr}** (${reversed ? 'Ters' : 'Düz'})\n*${posInfo.desc}*\n${getProblemSolvingCardMeaning(card, posInfo.id, reversed)}\n\n`;
+        interpretation += `**${posInfo.id}. ${posInfo.title}: ${card.nameTr}** (${reversed ? t('problemSolving.data.reversed') : t('problemSolving.data.upright')})\n*${posInfo.desc}*\n${getProblemSolvingCardMeaning(card, posInfo.id, reversed)}\n\n`;
       }
     });
     interpretation += `💫 **${t('tarotPage.problemSolvingSpread.summary')}:**\n"${t('tarotPage.problemSolvingSpread.summaryText')}"`;
@@ -336,7 +334,7 @@ export default function ProblemSolvingReading({
           userId: 'anonymous-user',
           readingType: 'simple',
           cards: { selectedCards: [] }, // Boş kart listesi
-          interpretation: 'Basit okuma - sadece sayaç',
+          interpretation: t('problemSolving.data.simpleReadingCounter'),
           question: { type: 'simple' },
           status: 'completed',
           title: 'Basit Okuma',
@@ -350,7 +348,7 @@ export default function ProblemSolvingReading({
           console.log('Basit okuma sayacı kaydedildi:', saveResult.id);
         }
 
-        showToast('Basit okuma tamamlandı!', 'success');
+        showToast(t('problemSolving.messages.simpleReadingCompleted'), 'success');
         router.push('/');
         return;
       }
@@ -367,7 +365,7 @@ export default function ProblemSolvingReading({
           userId: user?.id || 'anonymous-user',
           readingType: 'problem-solving',
           status: 'completed',
-          title: 'Problem Çözme Açılımı - Detaylı Kişisel Okuma',
+          title: t('problemSolving.data.detailedReadingTitle'),
           interpretation: generateBasicInterpretation(),
           cards: {
             selectedCards: selectedCards.map(card => ({
@@ -399,7 +397,7 @@ export default function ProblemSolvingReading({
           console.log('Problem çözme okuması kaydedildi:', saveResult.id);
           
           // Başarı toast'ını hemen göster
-          showToast('Okumanız başarıyla kaydedildi!', 'success');
+          showToast(t('problemSolving.messages.readingSavedSuccessfully'), 'success');
           
           // Başarı modal'ını göster
           setShowSuccessModal(true);
@@ -430,13 +428,13 @@ export default function ProblemSolvingReading({
           }, 1500); // 3 saniyeden 1.5 saniyeye düşürüldü
         } else {
           console.error('Okuma kaydetme hatası:', saveResult.error);
-          showToast('Okuma kaydedilirken bir hata oluştu.', 'error');
+          showToast(t('problemSolving.messages.readingSaveError'), 'error');
         }
         return;
       }
     } catch (error) {
       console.error('Okuma kaydetme hatası:', error);
-      showToast('Okuma kaydedilirken bir hata oluştu.', 'error');
+      showToast(t('problemSolving.messages.readingSaveError'), 'error');
     } finally {
       setIsSavingReading(false);
     }
@@ -476,8 +474,8 @@ export default function ProblemSolvingReading({
         {
           p_user_id: user.id,
           p_reading_type: readingData.readingType,
-          p_spread_name: 'Problem Çözme Yayılımı',
-          p_title: readingData.title || 'Problem Çözme Açılımı',
+          p_spread_name: t('problemSolving.data.spreadName'),
+          p_title: readingData.title || t('problemSolving.data.defaultTitle'),
           p_interpretation: readingData.interpretation,
           p_cards: readingData.cards.selectedCards,
           p_questions: readingData.questions,
@@ -583,7 +581,7 @@ export default function ProblemSolvingReading({
                   }
                 }
                 renderCard={(card, props) => (
-                  <BaseCardRenderer card={card} theme='purple' size='large' {...props} />
+                  <BaseCardRenderer card={card} theme='purple' {...props} />
                 )}
                 colorScheme='purple'
               />
@@ -636,7 +634,7 @@ export default function ProblemSolvingReading({
           selectedReadingType
             ? handleCardSelect
             : () => {
-                showToast('Lütfen önce bir okuma tipi seçin.', 'info');
+                showToast(t('problemSolving.messages.selectReadingTypeFirst'), 'info');
               }
         }
         onShuffleDeck={shuffleDeck}
@@ -712,7 +710,7 @@ export default function ProblemSolvingReading({
               cards={selectedCards}
               isReversed={isReversed}
               theme='purple'
-              title='Problem Çözme Açılımı Yorumu'
+              title={t('problemSolving.data.interpretationTitle')}
               icon='🔍'
               badgeText='PROBLEM ÇÖZME'
               badgeColor='bg-purple-500/20 text-purple-400'
@@ -734,7 +732,7 @@ export default function ProblemSolvingReading({
                   className='px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-700 hover:to-indigo-600 text-white font-semibold rounded-2xl transition-all disabled:opacity-60 disabled:cursor-not-allowed shadow-lg'
                 >
                   {isSavingReading
-                    ? '📝 Okuma kaydediliyor...'
+                    ? t('problemSolving.messages.savingReading')
                     : t('problemSolving.modals.saveReading')}
                 </button>
               </div>
@@ -775,7 +773,7 @@ export default function ProblemSolvingReading({
               
               {/* Hızlı yönlendirme bilgisi */}
               <p className='text-purple-300 text-xs'>
-                Ana sayfaya yönlendiriliyorsunuz...
+                {t('problemSolving.messages.redirectingToHome')}
               </p>
             </div>
           </div>
@@ -809,7 +807,7 @@ export default function ProblemSolvingReading({
                     setSelectedReadingType(null);
                   }}
                   className='text-gray-400 hover:text-purple-300 transition-colors p-2 rounded-lg hover:bg-purple-500/10'
-                  title='Kapat'
+                  title={t('problemSolving.form.close')}
                 >
                   <svg
                     className='w-5 h-5'
@@ -931,7 +929,7 @@ export default function ProblemSolvingReading({
                     questions.concern
                   ) {
                     const shouldClose = window.confirm(
-                      'Form dolduruldu ancak kaydedilmedi. Çıkmak istediğinize emin misiniz?'
+                      t('problemSolving.validation.formUnsavedWarning')
                     );
                     if (shouldClose) {
                       setSelectedReadingType(null);
@@ -963,7 +961,7 @@ export default function ProblemSolvingReading({
                         questions.concern
                       ) {
                         const shouldClose = window.confirm(
-                          'Form dolduruldu ancak kaydedilmedi. Çıkmak istediğinize emin misiniz?'
+                          t('problemSolving.validation.formUnsavedWarning')
                         );
                         if (shouldClose) {
                           setSelectedReadingType(null);
@@ -973,7 +971,7 @@ export default function ProblemSolvingReading({
                       }
                     }}
                     className='text-gray-400 hover:text-purple-300 transition-colors p-2 rounded-lg hover:bg-purple-500/10'
-                    title='Formu kapat (ESC)'
+                    title={t('problemSolving.form.closeForm')}
                   >
                     <svg
                       className='w-5 h-5'
@@ -1006,7 +1004,7 @@ export default function ProblemSolvingReading({
                           onChange={e =>
                             updatePersonalInfo('name', e.target.value)
                           }
-                          placeholder='Adınız'
+                          placeholder={t('problemSolving.form.placeholders.firstName')}
                           className={`w-full px-4 py-3 bg-slate-800/80 border ${
                             formErrors.name
                               ? 'border-red-500'
@@ -1028,7 +1026,7 @@ export default function ProblemSolvingReading({
                           onChange={e =>
                             updatePersonalInfo('surname', e.target.value)
                           }
-                          placeholder='Soyadınız'
+                          placeholder={t('problemSolving.form.placeholders.lastName')}
                           className={`w-full px-4 py-3 bg-slate-800/80 border ${
                             formErrors.surname
                               ? 'border-red-500'
@@ -1075,7 +1073,7 @@ export default function ProblemSolvingReading({
                         onChange={e =>
                           updatePersonalInfo('email', e.target.value)
                         }
-                        placeholder='ornek@email.com'
+                        placeholder={t('problemSolving.form.placeholders.email')}
                         className={`w-full px-4 py-3 bg-slate-800/80 border ${
                           formErrors.email
                             ? 'border-red-500'
@@ -1104,7 +1102,7 @@ export default function ProblemSolvingReading({
                           onChange={e =>
                             updateQuestion('concern', e.target.value)
                           }
-                          placeholder='Hangi konuda problem yaşıyorsunuz ve çözüm arıyorsunuz?'
+                          placeholder={t('problemSolving.form.placeholders.concernQuestion')}
                           rows={3}
                           className={`w-full px-4 py-3 bg-slate-800/80 border ${
                             formErrors.concern
@@ -1127,7 +1125,7 @@ export default function ProblemSolvingReading({
                           onChange={e =>
                             updateQuestion('understanding', e.target.value)
                           }
-                          placeholder='Bu problem çözme açılımı ile neyi anlamak istiyorsunuz?'
+                          placeholder={t('problemSolving.form.placeholders.understandingQuestion')}
                           rows={3}
                           className={`w-full px-4 py-3 bg-slate-800/80 border ${
                             formErrors.understanding
@@ -1150,7 +1148,7 @@ export default function ProblemSolvingReading({
                           onChange={e =>
                             updateQuestion('emotional', e.target.value)
                           }
-                          placeholder='Bu problem karşısında şu anda nasıl hissediyorsunuz?'
+                          placeholder={t('problemSolving.form.placeholders.emotionalQuestion')}
                           rows={3}
                           className={`w-full px-4 py-3 bg-slate-800/80 border ${
                             formErrors.emotional

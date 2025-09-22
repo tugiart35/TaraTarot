@@ -87,7 +87,7 @@ export const CAREER_POSITION_MEANINGS: Record<number, CareerPositionMeaning[]> =
 export function getCareerMeaningByCardAndPosition(
   card: TarotCard,
   position: number,
-  isReversed: boolean = false
+  _isReversed: boolean = false
 ): CareerPositionMeaning | null {
   // Pozisyon 1-7 arasında olmalı
   if (position < 1 || position > 7) {
@@ -119,8 +119,9 @@ export function getCareerMeaningByCardAndPosition(
   // isReversed parametresine göre anlamları döndür
   return {
     ...meaning,
-    upright: isReversed ? meaning.reversed : meaning.upright,
-    reversed: isReversed ? meaning.upright : meaning.reversed,
+    // upright ve reversed alanlarını orijinal haliyle koru
+    upright: meaning.upright,
+    reversed: meaning.reversed,
   };
 }
 

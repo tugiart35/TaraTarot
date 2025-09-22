@@ -105,12 +105,15 @@
       "genderRequired": "Izbor pola je obavezan",
       "invalidCredentials": "Nevažeći email ili lozinka",
       "userAlreadyExists": "Ova email adresa je već registrovana",
-      "redirecting": "",
+      "redirecting": "Преусмеравање на страницу за пријаву ...",
       "validating": "",
       "loggingIn": ""
     },
     "signIn": "Prijavi se",
-    "signOut": "Odjavi se"
+    "signOut": "Odjavi se",
+    "audit": {
+      "loginSuccess": ""
+    }
   },
   "validation": {
     "required": "Ovo polje je obavezno",
@@ -778,37 +781,17 @@
     "accountDeleteError": "Došlo je do greške prilikom brisanja naloga."
   },
   "tarotPage": {
-    "title": "Otkrijte Svoju Sudbinu",
-    "subtitle": "Otkrijte Svoju Sudbinu",
-    "lastReading": "Poslednje Čitanje",
-    "cardsDrawn": "karta izvučeno",
-    "loveSpread": {
-      "name": "Ljubavno Čitanje",
-      "description": "Specijalno 4-kartno čitanje za veze i emocionalne veze",
-      "summary": "Sažetak Ljubavnog Života",
-      "summaryText": "Ovo čitanje pokazuje dinamiku vaše veze sa osobom koju predstavlja karta {card1}. Nakon fizičke ({card2}) i emocionalne ({card3}) veze između vas, dugoročni potencijal vaše veze osvetljava karta {card4}.",
-      "detailedReading": {
-        "title": "💕 Ljubavno Tarot Čitanje - Detaljno Lično Čitanje 💕",
-        "concern": "💭 Vaša Zabrinutost",
-        "understanding": "🎯 Ono Što Želite Da Razumete",
-        "emotional": "💫 Vaše Emocionalno Stanje",
-        "generalMessage": "OPŠTA PORUKA ZA VAŠE LJUBAVNO PUTOVANJE",
-        "message": "Ove karte pokazuju sledeće u vašem ljubavnom putovanju: Nalazite se na važnoj prekretnici u dinamici vaše veze.\n\nKarta {card1} odražava energiju osobe koja vas zanima, dok {card2} pokazuje fizičku i seksualnu privlačnost između vas.\n\nKarta {card3} otkriva vašu emocionalnu vezu, a {card4} otkriva dugoročni potencijal vaše veze.",
-        "guideMessage": "Poruka vašeg ljubavnog vodiča: \"Najdublje veze se grade kroz međusobno razumevanje i otvorenu komunikaciju. Slušajte svoje srce.\"",
-        "dateMessage": "Ovo čitanje je posebno pripremljeno za vas {date}."
-      }
+    "careerSpread": {
+      "summary": "Opšta Procena",
+      "summaryText": "Uz vođstvo karata, proceni prilike koje susrećeš u svojoj karijernoj karijeri i preduzmi potrebne korake da prevaziđeš prepreke."
     },
-    "positions": {
-      "personOfInterest": "Osoba od Interesa",
-      "physicalConnection": "Fizička/Seksualna Veza",
-      "emotionalConnection": "Emocionalna/Duhovna Veza",
-      "longTermOutcome": "Dugoročni Ishod"
+    "situationAnalysisSpread": {
+      "summary": "Opšta Procena",
+      "summaryText": "Uz vođstvo karata, analiziraj svoju trenutnu situaciju i planiraj svoje buduće korake."
     },
-    "positionDescriptions": {
-      "personOfInterest": "Osoba o kojoj pitate",
-      "physicalConnection": "Vaša fizička i seksualna veza",
-      "emotionalConnection": "Vaša emocionalna i duhovna veza",
-      "longTermOutcome": "Dugoročni ishod veze"
+    "problemSolvingSpread": {
+      "summary": "Opšta Procena",
+      "summaryText": "Uz vođstvo karata, analiziraj svoje probleme i otkrij puteve rešenja."
     }
   },
   "seo": {
@@ -1813,5 +1796,700 @@
     "spreadPositions": "Pozicije Rasporeda:",
     "morePositions": "pozicija više...",
     "showLess": "Prikaži manje"
+  },
+  "career": {
+    "modals": {
+      "infoTitle": "Karijerno Otvaranje",
+      "aboutSpread": "O karijernom otvaranju",
+      "aboutSpreadText": "Karijerno otvaranje je osmišljeno da razjasni neizvesnosti na tvom putu rada i karijere i da učini vidljivim tvoje snage, prepreke i prilike. Pre nego što počneš, postavi nameru, izaberi karte oslanjajući se na intuiciju i čitaj tumačenje svake karte prema njenoj poziciji; tako možeš uvide da pretočiš u konkretne korake.",
+      "cardCount": "Broj Karata",
+      "cardCountText": "Ovo otvaranje se radi sa 7 karata. Svaka karta predstavlja različit aspekt karijere i pruža ti personalizovano vođstvo.",
+      "detailedReading": "Audio Čitanje",
+      "detailedReadingText": "Sa audio čitanjem možeš da slušaš značenja karata i dobijaš detaljnija tumačenja.",
+      "writtenReading": "Pisano Čitanje",
+      "writtenReadingText": "Sa pisanim čitanjem možeš da čitaš značenja karata i dobijaš sveobuhvatnije analize.",
+      "process": "Proces",
+      "step1": "Popuni svoje lične informacije i pitanja",
+      "step2": "Izaberi 7 karata svojom intuicijom",
+      "step3": "Čitaj tumačenja prema pozicijama karata",
+      "step4": "Sačuvaj svoje čitanje i dobij rezultate",
+      "cancel": "Otkaži",
+      "continue": "Nastavi",
+      "creditConfirm": "Potvrda Kredita",
+      "creditConfirmMessage": "Krediti će biti korišćeni za ovo čitanje. Da li si siguran da želiš da nastaviš?",
+      "processing": "Obrađuje se...",
+      "confirm": "Potvrdi",
+      "savingReading": "Čuvanje Čitanja...",
+      "saveReading": "Sačuvaj Čitanje",
+      "successTitle": "Čitanje Završeno!",
+      "successMessage": "Tvoje karijerno otvaranje je uspešno završeno i sačuvano. Možeš da pregledaš svoja personalizovana tumačenja.",
+      "redirecting": "Preusmerava se na početnu stranicu..."
+    },
+    "form": {
+      "personalInfo": "Lične Informacije",
+      "firstName": "Ime",
+      "lastName": "Prezime",
+      "birthDate": "Datum Rođenja",
+      "email": "E-pošta",
+      "questions": "Tvoja Karijerna Pitanja",
+      "concernQuestion": "Šta te najviše brine u vezi sa karijerom?",
+      "understandingQuestion": "Koje aspekte svoje karijere bi voleo da bolje razumeš?",
+      "emotionalQuestion": "Koje emocionalne prepreke doživljavaš u vezi sa karijerom?",
+      "saving": "Čuva se...",
+      "saveAndOpen": "Sačuvaj i Otvori Karte",
+      "clearAll": "Obriši Sve Karte",
+      "placeholders": {
+        "firstName": "Tvoje ime",
+        "lastName": "Tvoje prezime",
+        "email": "primer@email.com",
+        "concernQuestion": "Da li me moj posao čini srećnim, da li sam na pravom putu?...",
+        "understandingQuestion": "Kreativniji posao, rad u inostranstvu, pokretanje sopstvenog biznisa...",
+        "emotionalQuestion": "Strah od neuspeha, osećaj da nisam dovoljno dobar..."
+      }
+    },
+    "messages": {
+      "loginRequired": "Moraš da se uloguješ da bi obavio čitanje.",
+      "simpleReadingCompleted": "Jednostavno čitanje završeno!",
+      "readingSavedSuccess": "Tvoje čitanje je uspešno sačuvano!",
+      "readingSaveError": "Došlo je do greške prilikom čuvanja čitanja.",
+      "selectReadingTypeFirst": "Molimo te prvo izaberi tip čitanja.",
+      "formUnsavedWarning": "Forma je popunjena ali nije sačuvana. Da li si siguran da želiš da izađeš?",
+      "interpretationTitle": "Karijerno i Novčano Otvaranje",
+      "interpretationGreeting": "Dragi klijente, posebno pripremljena analiza za tvoje karijerno i novčano pitanje \"{question}\":",
+      "allCardsRequired": "Ne može se kreirati tumačenje bez izbora svih karata.",
+      "configurationNotFound": "Konfiguracija karijernog otvaranja nije pronađena. Molimo proveri tarotSpreads.ts fajl."
+    },
+    "validation": {
+      "nameMinLength": "Ime mora da ima najmanje 3 karaktera.",
+      "surnameMinLength": "Prezime mora da ima najmanje 3 karaktera.",
+      "birthDateRequired": "Datum rođenja je obavezan.",
+      "emailInvalid": "Molimo unesite važeću e-mail adresu.",
+      "questionMinLength": "Za ovo pitanje moraš da daš najmanje 10 karaktera."
+    },
+    "data": {
+      "spreadName": "Karijerno i Novčano Otvaranje",
+      "spreadTitle": "Karijerno i Novčano Otvaranje",
+      "detailedTitle": "Karijerno i Novčano Otvaranje - Detaljno Lično Čitanje",
+      "simpleInterpretation": "Jednostavno čitanje - samo brojač",
+      "simpleTitle": "Jednostavno Čitanje",
+      "interpretationTitle": "Tumačenje Karijernog i Novčanog Otvaranja",
+      "badgeText": "KARIJERA",
+      "cardDirections": {
+        "reversed": "Obrnuto",
+        "upright": "Uspravno"
+      },
+      "readingFormats": {
+        "detailed": "Audio",
+        "written": "Pisano",
+        "simple": "Jednostavno"
+      }
+    }
+  },
+  "problemSolving": {
+    "errors": {
+      "configNotFound": "Konfiguracija za Otvaranje Rešavanja Problema nije pronađena. Molimo proverite tarotSpreads.ts fajl.",
+      "allCardsRequired": "Ne možete kreirati tumačenje bez odabira svih karata."
+    },
+    "messages": {
+      "simpleReadingCompleted": "Jednostavno čitanje završeno!",
+      "readingSavedSuccessfully": "Vaše čitanje je uspešno sačuvano!",
+      "readingSaveError": "Došlo je do greške prilikom čuvanja čitanja.",
+      "selectReadingTypeFirst": "Molimo prvo izaberite tip čitanja.",
+      "savingReading": "📝 Čuvanje čitanja...",
+      "redirectingToHome": "Preusmeravanje na početnu stranicu...",
+      "formNotSavedConfirm": "Forma je popunjena ali nije sačuvana. Da li ste sigurni da želite da izađete?",
+      "configurationNotFound": "Konfiguracija za Otvaranje Rešavanja Problema nije pronađena. Molimo proverite tarotSpreads.ts fajl.",
+      "loginRequired": "Potrebno je da se prijavite za ovu operaciju."
+    },
+    "data": {
+      "interpretationTitle": "Otvaranje za Rešavanje Problema",
+      "dearClient": "Dragi klijente,",
+      "reversed": "Obrnuto",
+      "upright": "Uspravno",
+      "simpleReadingCounter": "Jednostavno čitanje - samo brojač",
+      "detailedReadingTitle": "Otvaranje za Rešavanje Problema - Detaljno Lično Čitanje",
+      "spreadName": "Otvaranje za Rešavanje Problema",
+      "defaultTitle": "Otvaranje za Rešavanje Problema"
+    },
+    "validation": {
+      "formUnsavedWarning": "Forma je popunjena ali nije sačuvana. Da li ste sigurni da želite da izađete?",
+      "nameMinLength": "Ime mora imati najmanje 3 karaktera",
+      "surnameMinLength": "Prezime mora imati najmanje 3 karaktera",
+      "birthDateRequired": "Datum rođenja je obavezan",
+      "emailInvalid": "Molimo unesite važeću email adresu",
+      "concernMinLength": "Zabrinutost mora imati najmanje 10 karaktera",
+      "understandingMinLength": "Razumevanje mora imati najmanje 10 karaktera",
+      "emotionalMinLength": "Emocionalno stanje mora imati najmanje 10 karaktera"
+    },
+    "form": {
+      "personalInfo": "Lične Informacije",
+      "firstName": "Ime",
+      "lastName": "Prezime",
+      "birthDate": "Datum Rođenja",
+      "email": "E-pošta",
+      "questions": "✨ Pitanja za Otvaranje Rešavanja Problema ✨",
+      "concernQuestion": "Sa kojim problemom se suočavate i tražite rešenje?",
+      "understandingQuestion": "Šta želite da razumete ovim otvaranjem za rešavanje problema?",
+      "emotionalQuestion": "Kako se trenutno osećate u lice ovog problema?",
+      "clearAll": "Očisti Sve",
+      "close": "Zatvori",
+      "closeForm": "Zatvori formu (ESC)",
+      "saving": "Čuva se...",
+      "saveAndOpen": "Sačuvaj i Otvori",
+      "placeholders": {
+        "firstName": "Vaše ime",
+        "lastName": "Vaše prezime",
+        "email": "primer@email.com",
+        "concernQuestion": "Sa kojim problemom se suočavate i tražite rešenje?",
+        "understandingQuestion": "Šta želite da razumete ovim otvaranjem za rešavanje problema?",
+        "emotionalQuestion": "Kako se trenutno osećate u lice ovog problema?"
+      }
+    },
+    "modals": {
+      "saveReading": "Sačuvaj Čitanje 🔍",
+      "successTitle": "Čitanje Uspešno Sačuvano!",
+      "successMessage": "Vaše otvaranje za rešavanje problema je uspešno sačuvano i poslato na vašu email adresu.",
+      "redirecting": "🔍 Preusmeravanje na početnu stranicu...",
+      "infoTitle": "O Otvaranju za Rešavanje Problema",
+      "aboutSpread": "O Otvaranju",
+      "aboutSpreadText": "Otvaranje za Rešavanje Problema je posebno otvaranje sa 10 karata dizajnirano da analizira probleme sa kojima se suočavate i pronađe puteve rešenja.",
+      "cardCount": "Broj Karata",
+      "cardCountText": "Ovo otvaranje koristi 10 karata i svaka karta predstavlja različit stadijum analize.",
+      "detailedReading": "Detaljno Čitanje",
+      "detailedReadingText": "Audio snimljeno, personalizovano detaljno tumačenje.",
+      "writtenReading": "Pisano Čitanje",
+      "writtenReadingText": "Pisano, personalizovano detaljno tumačenje.",
+      "process": "Proces",
+      "step1": "Unesite vaše lične informacije",
+      "step2": "Odgovorite na pitanja o problemu",
+      "step3": "Izaberite 10 karata i odredite njihove pozicije",
+      "step4": "Primite vaše detaljno tumačenje",
+      "cancel": "Otkaži",
+      "continue": "Nastavi",
+      "creditConfirm": "Potvrda Kredita",
+      "creditConfirmMessage": "Krediti će biti odbijeni za ovo čitanje. Da li ste sigurni da želite da nastavite?",
+      "processing": "Obrađuje se...",
+      "confirm": "Potvrdi"
+    }
+  },
+  "spreads": {
+    "problemSolving": {
+      "name": "Otvaranje za Rešavanje Problema",
+      "description": "Detaljno otvaranje sa 10 karata za analizu i rešavanje problema",
+      "positions": {
+        "1": {
+          "title": "Postavljeno Pitanje",
+          "description": "Glavno pitanje ili tema koja čini osnovu otvaranja"
+        },
+        "2": {
+          "title": "Prepreka Problema",
+          "description": "Glavna prepreka ili poteškoća pred problemom"
+        },
+        "3": {
+          "title": "Istorija Nesvesnog Problema",
+          "description": "Nesvesni koreni ili prošli uticaji teme"
+        },
+        "4": {
+          "title": "Najbolji Potencijal",
+          "description": "Najbolja situacija koju možemo postići za sebe u ovoj stvari"
+        },
+        "5": {
+          "title": "Bliska Prošlost",
+          "description": "Događaji ili uticaji povezani sa temom u bliskoj prošlosti"
+        },
+        "6": {
+          "title": "Bliska Budućnost",
+          "description": "Mogući razvoji povezani sa temom u bliskoj budućnosti"
+        },
+        "7": {
+          "title": "Trenutna Situacija",
+          "description": "Naše trenutno stanje, naše trenutno stanje u vezi sa temom"
+        },
+        "8": {
+          "title": "Spoljašnji Uticaji",
+          "description": "Spoljašnji faktori koji utiču na temu, okolinski uslovi"
+        },
+        "9": {
+          "title": "Strahovi i Zabrinutosti",
+          "description": "Naši unutrašnji strahovi i zabrinutosti povezani sa temom"
+        },
+        "10": {
+          "title": "Ishod Događaja",
+          "description": "Konačni ishod teme ili događaja, moguće rešenje"
+        }
+      }
+    },
+    "love": {
+      "name": "Ljubavno Otvaranje",
+      "description": "Posebno otvaranje sa 4 karte za ljubavne i veze teme",
+      "positions": {
+        "1": {
+          "title": "Osoba o kojoj pitaš",
+          "description": "Osoba o kojoj pitaš"
+        },
+        "2": {
+          "title": "Vaša fizička i seksualna veza",
+          "description": "Vaša fizička i seksualna veza"
+        },
+        "3": {
+          "title": "Vaša emocionalna i duhovna veza",
+          "description": "Vaša emocionalna i duhovna veza"
+        },
+        "4": {
+          "title": "Dugoročni ishod veze",
+          "description": "Dugoročni ishod veze"
+        }
+      }
+    },
+    "career": {
+      "name": "Karijerno Otvaranje",
+      "description": "Posebno otvaranje sa 7 karata za karijeru i radni život",
+      "positions": {
+        "1": {
+          "title": "Da li je ovo stvarno karijera koju želim?",
+          "description": "Proceni da li je tvoja trenutna karijera stvarno karijera koju želiš"
+        },
+        "2": {
+          "title": "Koje korake mogu da preduzmem da razvijem svoju karijeru?",
+          "description": "Konkretni koraci koje možeš da preduzmeš da napreduješ u karijeri"
+        },
+        "3": {
+          "title": "Da li postoje aspekti moje karijere koje ne mogu da promenim?",
+          "description": "Elementi u tvojoj karijeri koje ne možeš da kontrolišeš ili promeniš"
+        },
+        "4": {
+          "title": "Da li dajem sve od sebe u svojoj karijeri?",
+          "description": "Nivo performansi i truda koji pokazuješ u svojoj trenutnoj karijeri"
+        },
+        "5": {
+          "title": "Kakve promene mogu da napravim da pomognem svojoj karijeri?",
+          "description": "Promene i poboljšanja koja će pozitivno doprineti tvojoj karijeri"
+        },
+        "6": {
+          "title": "Koje prepreke iz moje prošlosti utiču na moju trenutnu karijeru?",
+          "description": "Kako tvoja prošla iskustva utiču na tvoju trenutnu karijeru"
+        },
+        "7": {
+          "title": "Kakav će biti ishod?",
+          "description": "Opšti ishod tvog karijernog putovanja i buduća predviđanja"
+        }
+      }
+    },
+    "situationAnalysis": {
+      "name": "Otvaranje za Analizu Situacije",
+      "description": "Posebno otvaranje sa 7 karata za analizu i evaluaciju situacije",
+      "positions": {
+        "1": {
+          "title": "Trenutna situacija",
+          "description": "Kako se trenutno osećaš u vezi sa ovom situacijom?"
+        },
+        "2": {
+          "title": "Skriveni uticaji",
+          "description": "Koji skriveni faktori utiču na tvoju situaciju?"
+        },
+        "questions": "Pitanja",
+        "concernQuestion": "Sa kojim problemom se suočavaš?",
+        "understandingQuestion": "Šta želiš da razumeš ovim otvaranjem?",
+        "emotionalQuestion": "Kako se trenutno osećaš?",
+        "clearAll": "Obriši sve",
+        "saveAndOpen": "Sačuvaj i pokreni otvaranje",
+        "saving": "Čuva se...",
+        "close": "Zatvori",
+        "closeForm": "Zatvori formu (ESC)"
+      },
+      "validation": {
+        "nameMinLength": "Ime mora imati najmanje 3 karaktera.",
+        "surnameMinLength": "Prezime mora imati najmanje 3 karaktera.",
+        "birthDateRequired": "Datum rođenja je obavezan.",
+        "emailInvalid": "Molimo unesite validnu email adresu.",
+        "concernMinLength": "Za ovo pitanje morate dati najmanje 10 karaktera.",
+        "understandingMinLength": "Za ovo pitanje morate dati najmanje 10 karaktera.",
+        "emotionalMinLength": "Za ovo pitanje morate dati najmanje 10 karaktera.",
+        "formUnsavedWarning": "Forma je popunjena ali nije sačuvana. Da li ste sigurni da želite da napustite?"
+      },
+      "data": {
+        "interpretationTitle": "Otvaranje za Rešavanje Problema",
+        "badgeText": "REŠAVANJE PROBLEMA",
+        "spreadName": "Otvaranje za Rešavanje Problema",
+        "defaultTitle": "Otvaranje za Rešavanje Problema",
+        "detailedReadingTitle": "Otvaranje za Rešavanje Problema - Detaljno lično čitanje",
+        "simpleReadingCounter": "Jednostavno čitanje - samo brojač",
+        "reversed": "Obrnuto",
+        "upright": "Uspravno"
+      },
+      "messages": {
+        "configurationNotFound": "Konfiguracija za Otvaranje za Rešavanje Problema nije pronađena. Molimo proverite tarotSpreads.ts fajl.",
+        "allCardsRequired": "Ne može se generisati interpretacija bez selekcije svih karata.",
+        "simpleReadingCompleted": "Jednostavno čitanje završeno!",
+        "readingSavedSuccessfully": "Vaše čitanje je uspešno sačuvano!",
+        "loginRequired": "Morate se prijaviti da biste izvršili čitanje.",
+        "selectReadingTypeFirst": "Molimo prvo odaberite tip čitanja.",
+        "redirectingToHome": "Preusmeravam na početnu stranicu..."
+      },
+      "modals": {
+        "infoTitle": "O Otvaranju za Rešavanje Problema",
+        "aboutSpread": "O otvaranju",
+        "aboutSpreadText": "Otvaranje za Rešavanje Problema je posebno otvaranje sa 10 karata dizajnirano za duboku analizu bilo kog problema sa kojim se suočavate. Ovo otvaranje pruža sveobuhvatno vođstvo od porekla problema do predloga rešenja.",
+        "cardCount": "Broj karata",
+        "cardCountText": "Ovo otvaranje koristi 10 karata. Svaka karta predstavlja različitu fazu analize i otkriva različite aspekte problema.",
+        "detailedReading": "Detaljno čitanje",
+        "detailedReadingText": "Detaljno čitanje pruža potpuno personalizovanu analizu zajedno sa vašim ličnim informacijama i posebnim pitanjima.",
+        "writtenReading": "Pisano čitanje",
+        "writtenReadingText": "Pisano čitanje je sveobuhvatna analiza gde ćete primiti detaljne odgovore na vaša pitanja putem email-a.",
+        "process": "Proces",
+        "step1": "Popunite vaše lične informacije i pitanja",
+        "step2": "Odaberite 10 karata redom",
+        "step3": "Pregledajte interpretacije karata",
+        "step4": "Primite detaljnu analizu na vaš email",
+        "continue": "Nastavi",
+        "cancel": "Otkaži",
+        "saveReading": "Sačuvaj čitanje",
+        "successTitle": "Uspešno!",
+        "successMessage": "Vaše Otvaranje za Rešavanje Problema je uspešno završeno i sačuvano.",
+        "redirecting": "Vaša detaljna analiza će biti poslata na vašu email adresu.",
+        "creditConfirm": "Potvrda kredita",
+        "creditConfirmMessage": "Krediti će biti potrošeni za ovo čitanje. Da li ste sigurni da želite da nastavite?",
+        "confirm": "Potvrdi",
+        "processing": "Obrađuje se..."
+      },
+      "placeholders": {
+        "firstName": "Vaše ime",
+        "lastName": "Vaše prezime",
+        "email": "primer@email.com",
+        "concernQuestion": "Sa kojim problemom se suočavaš i tražiš rešenje?",
+        "understandingQuestion": "Šta želiš da razumeš ovim otvaranjem za rešavanje problema?",
+        "emotionalQuestion": "Kako se trenutno osećaš u lice ovog problema?"
+      }
+    },
+    "relationshipAnalysis": {
+      "name": "Otvaranje za Analizu Veze",
+      "description": "Posebno otvaranje sa 7 karata za analizu i procenu veze",
+      "positions": {
+        "1": {
+          "title": "Trenutno Stanje",
+          "description": "Pruža informacije o trenutnim uslovima veze, situaciji u kojoj se nalazi i atmosferi koju stvaraju problemi ako postoje."
+        },
+        "2": {
+          "title": "Tvoji Osećaji",
+          "description": "Pokazuje tvoje osećaje, misli i tvoju perspektivu na partnera. Odražava tvoje emocionalno stanje u vezi."
+        },
+        "3": {
+          "title": "Tvoja Očekivanja",
+          "description": "Pokazuje tvoje zabrinutosti, očekivanja i snove o tvojoj vezi ili situaciji u kojoj se nalaziš."
+        },
+        "4": {
+          "title": "Saveti",
+          "description": "Sadrži savete u vezi sa stavom koji ćeš pokazati u vezi sa tokom tvoje veze. Pokazuje kako bi trebalo da se ponašaš."
+        },
+        "5": {
+          "title": "Putokaz",
+          "description": "Vodi te u vezi sa stavom koji treba da zauzmeš u ovoj vezi ili u lice postojećih problema i kakav put da pratiš."
+        },
+        "6": {
+          "title": "Očekivanja Tvog Partnera",
+          "description": "Pokazuje zabrinutosti, očekivanja i snove tvog partnera o tvojoj vezi ili situaciji u kojoj se nalaziš."
+        },
+        "7": {
+          "title": "Osećaji Tvog Partnera",
+          "description": "Pokazuje osećaje, misli i perspektivu tvog partnera na tebe. Odražava njihovo emocionalno stanje u vezi."
+        }
+      }
+    },
+    "relationshipProblems": {
+      "name": "Otvaranje za Probleme u Vezi",
+      "description": "Posebno otvaranje sa 9 karata za analizu i rešenje problema u vezi",
+      "positions": {
+        "1": {
+          "title": "Šta je protivrečnost?",
+          "description": "Pokazuje unutrašnje protivrečnosti i konflikte u tvojoj vezi. Pomaže ti da razumeš u kojim temama se ne slažeš i zašto doživljavaš protivrečnost."
+        },
+        "2": {
+          "title": "Šta je problem?",
+          "description": "Otkriva glavni problem i osnovnu temu u tvojoj vezi. Pokazuje koja tema stvara najveću teškoću."
+        },
+        "3": {
+          "title": "Da li sam ja stvorio problem?",
+          "description": "Pokazuje tvoj udeo i odgovornost u korenu problema. Pomaže ti da razumeš kako je tvoje ponašanje doprinelo problemu."
+        },
+        "4": {
+          "title": "Da li ignorišem svoj udeo u ovom problemu?",
+          "description": "Pokazuje tvoju situaciju u vezi sa prihvatanjem sopstvene odgovornosti. Otkriva da li ignorišeš sopstvene greške."
+        },
+        "5": {
+          "title": "Moja prošla iskustva sa osobom sa kojom sam",
+          "description": "Pokazuje kako prošla iskustva koja si imao sa partnerom utiču na trenutne probleme. Pomaže ti da razumeš kako se prošlost odražava na danas."
+        },
+        "6": {
+          "title": "Da li se zloupotrebljavamo?",
+          "description": "Pokazuje stanje uzajamnog poštovanja i zdravih granica u tvojoj vezi. Otkriva kako utičete jedan na drugog i da li štete jedan drugom."
+        },
+        "7": {
+          "title": "Da li postoje druge osobe koje se mešaju u naš problem?",
+          "description": "Pokazuje spoljašnje faktore i treće osobe koje utiču na tvoju vezu. Pomaže ti da razumeš kako porodica, prijatelji ili druge osobe utiču na tvoj problem."
+        },
+        "8": {
+          "title": "Da li postoje materijalni problemi koji utiču na našu vezu?",
+          "description": "Pokazuje uticaj faktora kao što su novac, posao, materijalna situacija na tvoju vezu. Otkriva kako ekonomski problemi utiču na tvoju vezu."
+        },
+        "9": {
+          "title": "Da li će ova veza trajati?",
+          "description": "Pruža uvid u budućnost tvoje veze. Pruža informacije o tome da li će trenutni problemi biti rešeni i da li će veza nastaviti."
+        }
+      }
+    },
+    "marriage": {
+      "name": "Otvaranje za Brak",
+      "description": "Posebno otvaranje sa 10 karata za brak i pronalaženje supružnika",
+      "positions": {
+        "1": {
+          "title": "Kakav će biti ishod?",
+          "description": "Pokazuje opšti ishod tvog bračnog procesa i kako će napredovati."
+        },
+        "2": {
+          "title": "Šta treba da radim dok čekam supružnika?",
+          "description": "Pokazuje kako treba da se razvijaš dok ne nađeš pravu osobu."
+        },
+        "3": {
+          "title": "Da li ćemo podeliti naše finansijske resurse?",
+          "description": "Pokazuje vašu harmoniju i podelu u finansijskim pitanjima u braku."
+        },
+        "4": {
+          "title": "Da li ćemo oboje hteti da se obavežemo?",
+          "description": "Pokazuje da li su obe strane spremne za brak i želju za obavešćenjem."
+        },
+        "5": {
+          "title": "Da li ćemo imati sličnosti?",
+          "description": "Pokazuje vaše zajedničke vrednosti, sličnosti i harmoniju."
+        },
+        "6": {
+          "title": "Da li će me porodica ove osobe prihvatiti?",
+          "description": "Pokazuje kako će biti porodično odobravanje i porodični odnosi."
+        },
+        "7": {
+          "title": "Kako ćemo se pronaći?",
+          "description": "Pokazuje kako ćeš upoznati i pronaći pravu osobu."
+        },
+        "8": {
+          "title": "Da li ćemo moći da se razumemo?",
+          "description": "Pokazuje vašu komunikacijsku harmoniju i kapacitet da razumete jedan drugog."
+        },
+        "9": {
+          "title": "Kakav supružnik je prikladan za mene?",
+          "description": "Pokazuje karakteristike tvog idealnog supružnika i osobu koja će biti kompatibilna sa tobom."
+        },
+        "10": {
+          "title": "Da li ću moći da se oženim/udam?",
+          "description": "Pokazuje tvoj bračni potencijal i šanse za venčanje."
+        }
+      }
+    },
+    "newLover": {
+      "name": "Otvaranje za Novu Ljubav",
+      "description": "Posebno otvaranje sa 6 karata za novu ljubavnu vezu",
+      "positions": {
+        "1": {
+          "title": "Da li ću uskoro doživeti novu vezu?",
+          "description": "Pokazuje tvoj budući potencijal za vezu"
+        },
+        "2": {
+          "title": "Koji horoskopski znak će biti ova osoba?",
+          "description": "Pokazuje astrološke karakteristike tvog budućeg partnera"
+        },
+        "3": {
+          "title": "Da li ćemo biti kompatibilni?",
+          "description": "Pokazuje harmoniju i disharmoniju u tvojoj vezi"
+        },
+        "4": {
+          "title": "Da li će biti dugotrajna veza?",
+          "description": "Pokazuje kontinuitet i dubinu tvoje veze"
+        },
+        "5": {
+          "title": "Da li bi ova osoba mogla biti moja srodna duša?",
+          "description": "Pokazuje duhovnu vezu i dubok ljubavni potencijal"
+        },
+        "6": {
+          "title": "Da li će se moja želja ostvariti?",
+          "description": "Pokazuje verovatnoću da se tvoja ljubavna želja ostvari"
+        }
+      }
+    },
+    "money": {
+      "name": "Otvaranje za Novac",
+      "description": "Piramida otvaranje sa 8 karata za finansijsku situaciju i novčana pitanja",
+      "positions": {
+        "1": {
+          "title": "Zabrinutosti vezane za novac",
+          "description": "Da li postoje zabrinutosti vezane za novac?"
+        },
+        "2": {
+          "title": "Želja za finansijskom sigurnošću",
+          "description": "Želja za finansijskom sigurnošću"
+        },
+        "3": {
+          "title": "Korišćenje novca",
+          "description": "Kako mogu da koristim novac na način koji će me učiniti srećnim?"
+        },
+        "4": {
+          "title": "Prošli stav prema novcu",
+          "description": "Moj prošli stav prema novcu"
+        },
+        "5": {
+          "title": "Finansijske odgovornosti",
+          "description": "Koje su moje odgovornosti za dobar život finansijski?"
+        },
+        "6": {
+          "title": "Novi finansijski planovi",
+          "description": "Moji novi planovi u vezi sa finansijskim investicijama ili štednjom"
+        },
+        "7": {
+          "title": "Budući planovi za novac",
+          "description": "Moji budući planovi u vezi sa novcem"
+        },
+        "8": {
+          "title": "Sposobnosti za zarađivanje novca",
+          "description": "Kakve posebne talente imam za zarađivanje novca?"
+        }
+      }
+    }
+  },
+  "situationAnalysis": {
+    "errors": {
+      "configNotFound": "Konfiguracija za Otvaranje Analize Situacije nije pronađena. Molimo proverite tarotSpreads.ts fajl.",
+      "allCardsRequired": "Ne možete kreirati tumačenje bez odabira svih karata."
+    },
+    "messages": {
+      "simpleReadingCompleted": "Jednostavno čitanje završeno!",
+      "readingSavedSuccessfully": "Vaše čitanje je uspešno sačuvano!",
+      "readingSaveError": "Došlo je do greške prilikom čuvanja čitanja.",
+      "selectReadingTypeFirst": "Molimo prvo izaberite tip čitanja.",
+      "savingReading": "📝 Čuvanje čitanja...",
+      "redirectingToHome": "Preusmeravanje na početnu stranicu...",
+      "formNotSavedConfirm": "Forma je popunjena ali nije sačuvana. Da li ste sigurni da želite da izađete?"
+    },
+    "interpretation": {
+      "title": "Otvaranje za Analizu Situacije",
+      "dearClient": "Dragi klijente,",
+      "personalAnalysis": "analiza situacije \"{question}\" posebno pripremljena analiza:"
+    },
+    "data": {
+      "interpretationTitle": "Tumačenje Otvaranja za Analizu Situacije",
+      "badgeText": "ANALIZA SITUACIJE",
+      "spreadName": "Otvaranje za Analizu Situacije",
+      "defaultTitle": "Otvaranje za Analizu Situacije",
+      "detailedReadingTitle": "Otvaranje za Analizu Situacije - Detaljno Lično Čitanje"
+    },
+    "form": {
+      "personalInfo": "Vaše Lične Informacije",
+      "firstName": "Vaše Ime",
+      "lastName": "Vaše Prezime",
+      "birthDate": "Datum Rođenja",
+      "email": "Vaša Email Adresa",
+      "questions": "✨ Pitanja za Otvaranje Analize Situacije ✨",
+      "concernQuestion": "Koju situaciju želite da analizirate?",
+      "understandingQuestion": "Šta želite da razumete ovom analizom situacije?",
+      "emotionalQuestion": "Kako se trenutno osećate u vezi sa ovom situacijom?",
+      "saveAndOpen": "🔍 Sačuvaj i Otvori Karte",
+      "saving": "Čuva se...",
+      "clearAll": "🔄 Obriši Sve"
+    },
+    "modals": {
+      "infoTitle": "O Otvaranju za Analizu Situacije",
+      "aboutSpread": "O Otvaranju",
+      "aboutSpreadText": "Ovo otvaranje sa 7 karata je dizajnirano da duboko analizira situaciju koju doživljavate. Pruža sveobuhvatne informacije o prošlosti, sadašnjosti, skrivenim faktorima i budućnosti.",
+      "cardCount": "Broj Karata",
+      "cardCountText": "Ovo otvaranje koristi 7 tarot karata. Svaka karta predstavlja različit aspekt situacije.",
+      "detailedReading": "Zvučno Čitanje",
+      "detailedReadingText": "Pruža sveobuhvatnu analizu sa detaljnim tumačenjima karata i značenjima pozicija.",
+      "writtenReading": "Pisano Čitanje",
+      "writtenReadingText": "Rezultati čitanja se šalju na vašu email adresu u PDF formatu.",
+      "process": "Proces",
+      "step1": "Unesite vaše lične informacije",
+      "step2": "Odgovorite na pitanja o situaciji",
+      "step3": "Izaberite 7 karata i pogledajte tumačenja",
+      "step4": "Sačuvajte čitanje i primite email",
+      "continue": "Nastavi",
+      "creditConfirm": "Potvrda Kredita",
+      "creditConfirmMessage": "Da li želite da nastavite sa ovim čitanjem?",
+      "confirm": "Da, odobravam",
+      "cancel": "Otkaži",
+      "processing": "Obrada...",
+      "successTitle": "Čitanje Uspešno Sačuvano!",
+      "successMessage": "Vaše otvaranje za analizu situacije je detaljno sačuvano i analizirano. Možete pogledati vaše rezultate iz korisničkog panela.",
+      "redirecting": "🔍 Preusmeravanje na početnu stranicu...",
+      "saveReading": "Sačuvaj Čitanje 🔍",
+      "savingReading": "Čuva se..."
+    }
+  },
+  "meanings": {
+    "theFool": {
+      "position1": {
+        "upright": "Osoba koja vas zanima puna je dečje radoznalosti i uzbuđenja o životu. Otvorena je za nove početke i ima avanturistički duh, ali to ponekad može da je učini neplaniranom i neorganizovanom. I veze pristupa ovim slobodnim duhom.",
+        "reversed": "Obrnuti Budala pokazuje da bi ta osoba mogla biti neoprezna, neodgovorna ili da se plaši da započne vezu. Možda ignoriše potencijalne opasnosti i izbegava obavezu.",
+        "keywords": [
+          "novi počeci",
+          "nevinost",
+          "spontanost",
+          "preuzimanje rizika",
+          "slobodni duh"
+        ],
+        "context": "Ova osoba je spremna da otvori novu stranicu u svom ljubavnom životu ili je avanturista koji se toga plaši."
+      }
+    },
+    "theMagician": {
+      "position1": {
+        "upright": "Osoba koja vas zanima je privlačna, talentovana i ima moć da postigne ono što želi. Ima visoke komunikacijske veštine i zna kako da okrene događaje u svoju korist. Možda stvara svesnu privlačnost prema vama.",
+        "reversed": "Obrnuti Mađioničar ukazuje na to da bi ta osoba mogla biti manipulativna, obmanjujuća ili ne koristiti svoj potencijal. Njene reči i dela možda nisu konzistentni ili možda pati od nedostatka samopouzdanja.",
+        "keywords": [
+          "volja",
+          "kreativnost",
+          "veština",
+          "privlačnost",
+          "manifestacija"
+        ],
+        "context": "Ova osoba je kreator koji sedi u rediteljskoj stolici svog života i veza."
+      }
+    },
+    "theHighPriestess": {
+      "position1": {
+        "upright": "Ova osoba ima misterioznu, intuitivnu prirodu i ne otkriva odmah svoje emocije. Njen unutrašnji svet je bogat i možda će biti potrebno vreme da je razumete. Možda čuva svoja osećanja prema vama kao tajnu.",
+        "reversed": "Obrnuta Visoka Svestenica pokazuje da bi ta osoba mogla biti tajnovita, odvojena od svoje intuicije ili nesincera sa vama. Možda ima problema sa povezivanjem sa svojim unutrašnjim svetom ili sa vama.",
+        "keywords": [
+          "intuicija",
+          "misterija",
+          "podsvest",
+          "skrivene emocije",
+          "uvid"
+        ],
+        "context": "Ova osoba je misteriozna duša koja živi svoje emocije ne na površini, već u dubinama."
+      }
+    },
+    "theEmpress": {
+      "position1": {
+        "upright": "Osoba koja vas zanima je negujuća, saosećajna, toplog srca i voli uživanja života. Širi lepotu i obilje oko sebe. U vezama možda ima majčinski ili očinski stav koji pruža sigurnost.",
+        "reversed": "Obrnuta Carica pokazuje da bi ta osoba mogla biti preterano posesivna, lenja ili ne brinuti o sebi. Možda ima blokade u izražavanju svoje kreativnosti ili ljubavi.",
+        "keywords": [
+          "obilje",
+          "majčinstvo",
+          "prirodnost",
+          "saosećanje",
+          "lepota"
+        ],
+        "context": "Ova osoba je srce puno života koje neguje ljubavlju i saosećanjem."
+      }
+    },
+    "theEmperor": {
+      "position1": {
+        "upright": "Ova osoba ima organizovanu, disciplinovanu, zaštitničku i liderstvu orijentisanu prirodu. Traži stabilnost i kontrolu u svom životu. U vezama može ponuditi pouzdano rame i čvrstu osnovu.",
+        "reversed": "Obrnuti Car ukazuje na to da bi ta osoba mogla biti preterano kontrolišeća, kruta, dominantna ili imati probleme sa autoritetom. Možda ima poteškoća sa prikazivanjem svojih emocija.",
+        "keywords": [
+          "autoritet",
+          "stabilnost",
+          "liderstvo",
+          "zaštitništvo",
+          "disciplina"
+        ],
+        "context": "Ova osoba je lider koji želi da izgradi svoj život i veze na čvrstim temeljima."
+      }
+    }
   }
 }

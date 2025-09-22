@@ -219,10 +219,10 @@ export default function RelationshipAnalysisReading({
     if (!meaning) {
       return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
     }
-    return meaning.meaning;
+    return isReversed ? meaning.reversed : meaning.upright;
   };
 
-  // Basit yorum oluştur
+  // Basit yorum oluştur - performans optimizasyonu
   const generateBasicInterpretation = (): string => {
     const cards = selectedCards as TarotCard[];
     if (
@@ -231,19 +231,27 @@ export default function RelationshipAnalysisReading({
     ) {
       return 'Tüm kartları seçmeden yorum oluşturulamaz.';
     }
-    let interpretation = `💕 **İlişki Analizi Açılımı**\n\n`;
+    
+    // Performans optimizasyonu: string concatenation yerine array join kullan
+    const interpretationParts = [
+      `💕 **İlişki Analizi Açılımı**\n\n`
+    ];
+    
     if (userQuestion.trim()) {
-      interpretation += `**Sevgili danışan,** ilişki analizi "${userQuestion}" için özel hazırlanmış analiz:\n\n`;
+      interpretationParts.push(`**Sevgili danışan,** ilişki analizi "${userQuestion}" için özel hazırlanmış analiz:\n\n`);
     }
+    
     RELATIONSHIP_ANALYSIS_POSITIONS_INFO.forEach((posInfo, index) => {
       const card = cards[index];
       const reversed = !!isReversed[index];
       if (card) {
-        interpretation += `**${posInfo.id}. ${posInfo.title}: ${card.nameTr}** (${reversed ? 'Ters' : 'Düz'})\n*${posInfo.desc}*\n${getRelationshipAnalysisCardMeaning(card, posInfo.id, reversed)}\n\n`;
+        interpretationParts.push(`**${posInfo.id}. ${posInfo.title}: ${card.nameTr}** (${reversed ? 'Ters' : 'Düz'})\n*${posInfo.desc}*\n${getRelationshipAnalysisCardMeaning(card, posInfo.id, reversed)}\n\n`);
       }
     });
-    interpretation += `💫 **${t('tarotPage.relationshipAnalysisSpread.summary')}:**\n"${t('tarotPage.relationshipAnalysisSpread.summaryText')}"`;
-    return interpretation;
+    
+    interpretationParts.push(`💫 **${t('tarotPage.relationshipAnalysisSpread.summary')}:**\n"${t('tarotPage.relationshipAnalysisSpread.summaryText')}"`);
+    
+    return interpretationParts.join('');
   };
 
   // Okuma tipi seçildiğinde çalışacak fonksiyon
@@ -406,29 +414,10 @@ export default function RelationshipAnalysisReading({
         const saveResult = await saveReadingToSupabase(readingData);
         if (saveResult.success) {
           // İlişki analizi okuması kaydedildi
-
-          // Email gönderimi
-          try {
-            const emailResponse = await fetch('/api/send-reading-email', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({
-                readingId: saveResult.id,
-              }),
-            });
-
-            if (emailResponse.ok) {
-              // Email gönderimi başarılı
-            } else {
-              // Email gönderimi başarısız
-            }
-          } catch (error) {
-            // Email gönderimi hatası
-          }
-
           showToast('Okumanız başarıyla kaydedildi!', 'success');
+
+          // Email gönderimini asenkron olarak başlat (kullanıcıyı bekletmez)
+          triggerAsyncEmailSending(saveResult.id);
         } else {
           showToast('Okuma kaydedilirken bir hata oluştu.', 'error');
         }
@@ -448,6 +437,26 @@ export default function RelationshipAnalysisReading({
     } finally {
       setIsSavingReading(false);
     }
+  };
+
+  // Asenkron email gönderimi fonksiyonu
+  const triggerAsyncEmailSending = (readingId: string) => {
+    // Email gönderimini arka planda başlat, kullanıcıyı bekletmez
+    fetch('/api/send-reading-email', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ readingId }),
+    })
+      .then(response => {
+        if (response.ok) {
+          console.log('✅ Email arka planda başarıyla gönderildi');
+        } else {
+          console.warn('⚠️ Email gönderimi başarısız, ancak okuma kaydedildi');
+        }
+      })
+      .catch(error => {
+        console.warn('⚠️ Email gönderimi hatası:', error);
+      });
   };
 
   // Supabase'e okuma kaydetme fonksiyonu
@@ -471,9 +480,9 @@ export default function RelationshipAnalysisReading({
             ? writtenCredits.creditStatus.requiredCredits
             : 0;
 
-      const { data: rpcResult, error: rpcError } = await supabase.rpc(
-        'fn_create_reading_with_debit',
-        {
+      // Performans optimizasyonu: timeout ekle
+      const { data: rpcResult, error: rpcError } = await Promise.race([
+        supabase.rpc('fn_create_reading_with_debit', {
           p_user_id: user.id,
           p_reading_type: readingData.readingType,
           p_spread_name: 'İlişki Analizi Yayılımı',
@@ -487,8 +496,11 @@ export default function RelationshipAnalysisReading({
             platform: readingData.metadata.platform,
           },
           p_idempotency_key: `reading_${user.id}_${readingData.timestamp}`,
-        }
-      );
+        }),
+        new Promise((_, reject) => 
+          setTimeout(() => reject(new Error('Database timeout')), 10000)
+        )
+      ]);
 
       if (rpcError) {
         return { success: false, error: rpcError };
@@ -690,9 +702,23 @@ export default function RelationshipAnalysisReading({
                   desc: pos.desc,
                 })
               )}
+              getCardMeaning={(card) => {
+                const position = selectedCards.findIndex(c => c?.id === card.id) + 1;
+                const cardIsReversed = isReversed[position - 1] || false;
+                const meaning = getRelationshipAnalysisMeaningByCardAndPosition(card, position, cardIsReversed);
+                return meaning ? {
+                  relationshipAnalysisMeaning: {
+                    upright: meaning.upright,
+                    reversed: meaning.reversed
+                  },
+                  keywords: meaning.keywords,
+                  context: meaning.context
+                } : null;
+              }}
               getPositionSpecificInterpretation={(card, position, isReversed) =>
                 getRelationshipAnalysisCardMeaning(card, position, isReversed)
               }
+              showContext={true}
             />
 
             {/* Okumayı Kaydet Butonu - Sadece DETAILED/WRITTEN için */}
@@ -702,11 +728,19 @@ export default function RelationshipAnalysisReading({
                 <button
                   onClick={handleSaveReading}
                   disabled={isSavingReading}
-                  className='px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white font-semibold rounded-2xl transition-all disabled:opacity-60 disabled:cursor-not-allowed shadow-lg'
+                  className='px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white font-semibold rounded-2xl transition-all disabled:opacity-60 disabled:cursor-not-allowed shadow-lg flex items-center gap-2'
                 >
-                  {isSavingReading
-                    ? t('relationshipAnalysis.modals.savingReading')
-                    : t('relationshipAnalysis.modals.saveReading')}
+                  {isSavingReading ? (
+                    <>
+                      <div className='w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin'></div>
+                      {t('relationshipAnalysis.modals.savingReading')}
+                    </>
+                  ) : (
+                    <>
+                      <span>💾</span>
+                      {t('relationshipAnalysis.modals.saveReading')}
+                    </>
+                  )}
                 </button>
               </div>
             )}
@@ -731,6 +765,19 @@ export default function RelationshipAnalysisReading({
             <p className='text-blue-200 mb-6 leading-relaxed'>
               {t('relationshipAnalysis.modals.successMessage')}
             </p>
+
+            {/* Email Bilgisi */}
+            <div className='bg-blue-800/30 border border-blue-500/20 rounded-xl p-4 mb-6'>
+              <div className='flex items-center gap-2 mb-2'>
+                <span className='text-green-400'>📧</span>
+                <p className='text-blue-300 text-sm font-medium'>
+                  Email Gönderimi
+                </p>
+              </div>
+              <p className='text-blue-300 text-sm'>
+                Detaylı okumanız email adresinize gönderiliyor. Bu işlem arka planda devam ediyor.
+              </p>
+            </div>
 
             {/* Bilgi */}
             <div className='bg-blue-800/30 border border-blue-500/20 rounded-xl p-4 mb-6'>
