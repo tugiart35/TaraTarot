@@ -31,8 +31,8 @@ class SecureLogger {
 
     if (this.isDevelopment) {
       console.error(`❌ [ERROR] ${message}`, {
-        error: sanitizedError,
-        context,
+        error: sanitizedError || 'No error details available',
+        context: context || 'No context provided',
         timestamp: new Date().toISOString(),
       });
     } else {

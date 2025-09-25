@@ -3,6 +3,10 @@
   Following golden ratio design principles with mystical aesthetics
 */
 
+/* Font imports must be at the top */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -64,8 +68,7 @@
   padding-right: env(safe-area-inset-right);
 }
 
-/* Enhanced mystical font imports */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+/* Enhanced mystical font imports - moved to top */
 
 /* CSS Variables for theme switching */
 :root {
@@ -249,8 +252,7 @@
   }
 }
 
-/* Özel font import - mistik görünüm için */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+/* Özel font import - mistik görünüm için - moved to top */
 
 /* Dashboard specific styles */
 .card-mystic {

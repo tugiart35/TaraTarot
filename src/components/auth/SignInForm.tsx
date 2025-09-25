@@ -205,15 +205,14 @@ export default function SignInForm({ locale, initialError, next }: SignInFormPro
           throw error;
         }
 
-        console.log('🔐 Giriş başarılı, yönlendiriliyor...');
+        console.log('🔐 Giriş başarılı!');
         showToast('Başarıyla giriş yapıldı!', 'success');
         setLoadingStep('Yönlendiriliyor...');
 
-        // Başarılı giriş sonrası yönlendirme
+        // Basit yönlendirme - admin kontrolü yok
         setTimeout(() => {
           const redirectPath = next ? `/${locale}${next}` : `/${locale}/dashboard`;
-          console.log('🔐 Yönlendirme:', redirectPath);
-          // Router.push yerine window.location.href kullan - daha güvenli
+          console.log('🔐 SignInForm: Yönlendirme:', redirectPath);
           window.location.href = redirectPath;
         }, 1000);
       } else {

@@ -79,7 +79,7 @@ export const useShopier = (): UseShopierReturn => {
         // Kullanıcı profil bilgilerini al
         const { data: profile, error: profileError } = await supabase
           .from('profiles')
-          .select('full_name, email')
+          .select('display_name, email')
           .eq('id', user.id)
           .single();
 
@@ -103,7 +103,7 @@ export const useShopier = (): UseShopierReturn => {
           currency: 'TRY',
           description: `${packageData.name} - ${totalCredits} kredi`,
           customerEmail: profile.email || user.email || '',
-          customerName: profile.full_name || 'Kullanıcı',
+          customerName: profile.display_name || 'Kullanıcı',
           returnUrl: `${window.location.origin}/payment/success`,
           cancelUrl: `${window.location.origin}/payment/cancel`,
           packageId: packageId,

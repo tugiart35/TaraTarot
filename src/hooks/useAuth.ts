@@ -7,19 +7,6 @@ import { supabase } from '@/lib/supabase/client';
 export function useAuth() {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
-  const [isAdmin, setIsAdmin] = useState(false);
-
-  // Admin kontrolü için profiles tablosundaki is_admin alanını kullan
-  const checkAdminStatus = useCallback(async (_userId: string) => {
-    try {
-      // Basit admin kontrolü - sadece false döndür (şimdilik admin yok)
-      setIsAdmin(false);
-      return false;
-    } catch (error) {
-      setIsAdmin(false);
-      return false;
-    }
-  }, []);
 
   // Session'ı kontrol et ve kullanıcı bilgilerini al
   const checkSession = useCallback(async () => {
@@ -32,25 +19,21 @@ export function useAuth() {
 
       if (error) {
         setUser(null);
-        setIsAdmin(false);
         setLoading(false);
         return;
       }
 
       if (user) {
         setUser(user);
-        await checkAdminStatus(user.id);
       } else {
         setUser(null);
-        setIsAdmin(false);
       }
     } catch (error) {
       setUser(null);
-      setIsAdmin(false);
     } finally {
       setLoading(false);
     }
-  }, [checkAdminStatus]);
+  }, []);
 
   useEffect(() => {
     let mounted = true;
@@ -69,10 +52,8 @@ export function useAuth() {
 
         if (session?.user) {
           setUser(session.user);
-          await checkAdminStatus(session.user.id);
         } else {
           setUser(null);
-          setIsAdmin(false);
         }
 
         setLoading(false);
@@ -83,13 +64,11 @@ export function useAuth() {
       mounted = false;
       subscription.unsubscribe();
     };
-  }, [checkSession, checkAdminStatus]);
+  }, [checkSession]);
 
   return {
     user,
     loading,
-    isAdmin,
-    isAuthenticated: !!user, // ✅ isAuthenticated değerini ekle
-    checkAdminStatus,
+    isAuthenticated: !!user,
   };
 }

@@ -42,9 +42,11 @@ import {
   BookOpen,
   TrendingUp,
   Calendar,
+  Crown,
 } from 'lucide-react';
 import { useTranslations } from '@/hooks/useTranslations';
 import { User as SupabaseUser } from '@supabase/supabase-js';
+import { useAuth } from '@/hooks/useAuth';
 
 // UserProfile type defined locally - genişletilmiş
 interface UserProfile {
@@ -94,12 +96,22 @@ export default function ProfileModal({
   currentLocale,
 }: ProfileModalProps) {
   const { t: translate } = useTranslations();
+  const { isAdmin } = useAuth();
 
   if (!isOpen) {
     return null;
   }
 
   const quickActions = [
+    // Admin kullanıcıları için Pakize erişimi
+    ...(isAdmin ? [{
+      href: `/${currentLocale}/pakize`,
+      icon: Crown,
+      iconColor: 'text-red-400',
+      bgColor: 'bg-red-500/20',
+      label: '👑 Pakize Admin Panel',
+      arrowColor: 'text-red-400',
+    }] : []),
     {
       href: `/${currentLocale}/dashboard/settings`,
       icon: Settings,

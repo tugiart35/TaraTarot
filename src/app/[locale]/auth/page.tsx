@@ -47,13 +47,13 @@ export default async function AuthPage({ params, searchParams }: AuthPageProps) 
   const { locale } = await params;
   const { error, next } = await searchParams;
 
-  // Server-side session kontrolü
-  const session = await getServerSession();
+  // Server-side session kontrolü - otomatik yönlendirme kaldırıldı
+  // const session = await getServerSession();
 
-  // Eğer kullanıcı giriş yapmışsa dashboard'a yönlendir
-  if (session?.user) {
-    redirect(`/${locale}/dashboard`);
-  }
+  // Otomatik yönlendirme kaldırıldı - kullanıcı auth sayfasında kalabilir
+  // if (session?.user) {
+  //   redirect(`/${locale}/dashboard`);
+  // }
 
   // Client Component'e handoff
   return (

@@ -52,12 +52,14 @@ import { READING_TYPES, ReadingType, TarotCard } from '@/types/tarot';
 interface ProblemSolvingReadingProps {
   onComplete?: (_cards: TarotCard[], _interpretation: string) => void;
   onPositionChange?: (_title: string) => void;
+  onReadingTypeSelected?: () => void;
 }
 
 // Ana Problem Çözme Açılımı bileşeni
 export default function ProblemSolvingReading({
   onComplete: _onComplete,
   onPositionChange: _onPositionChange,
+  onReadingTypeSelected,
 }: ProblemSolvingReadingProps) {
   const router = useRouter();
   const { t } = useTranslations();
@@ -319,6 +321,11 @@ export default function ProblemSolvingReading({
       setSelectedReadingType(type as ReadingType);
       setShowInfoModal(true); // Bilgilendirme modal'ını göster
       return;
+    }
+    
+    // Okuma tipi seçildiğinde parent bileşene bildir
+    if (onReadingTypeSelected) {
+      onReadingTypeSelected();
     }
     setSelectedReadingType(type as ReadingType);
   };

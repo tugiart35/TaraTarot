@@ -63,16 +63,53 @@ export async function GET(request: NextRequest) {
       const { error } = await supabase.auth.exchangeCodeForSession(code);
       
       if (!error) {
-        // Başarılı giriş - dashboard'a yönlendir
-        const forwardedHost = request.headers.get('x-forwarded-host');
-        const isLocalEnv = process.env.NODE_ENV === 'development';
+        // Kullanıcı bilgilerini al
+        const { data: { user } } = await supabase.auth.getUser();
         
-        if (isLocalEnv) {
-          return NextResponse.redirect(`${origin}/${locale}/dashboard`);
-        } else if (forwardedHost) {
-          return NextResponse.redirect(`https://${forwardedHost}/${locale}/dashboard`);
+        if (user) {
+          // Admin kontrolü yap
+          const { data: profile } = await supabase
+            .from('profiles')
+            .select('is_admin')
+            .eq('id', user.id)
+            .single();
+          
+          const isUserAdmin = profile?.is_admin || false;
+          console.log('Auth callback admin kontrolü:', { isUserAdmin, userId: user.id });
+          
+          // Yönlendirme kararı
+          let redirectPath;
+          if (isUserAdmin) {
+            redirectPath = `/${locale}/pakize`;
+            console.log('Auth callback: Admin kullanıcı, pakize paneline yönlendiriliyor');
+          } else {
+            redirectPath = `/${locale}/dashboard`;
+            console.log('Auth callback: Normal kullanıcı, dashboard\'a yönlendiriliyor');
+          }
+          
+          // Başarılı giriş - admin durumuna göre yönlendir
+          const forwardedHost = request.headers.get('x-forwarded-host');
+          const isLocalEnv = process.env.NODE_ENV === 'development';
+          
+          if (isLocalEnv) {
+            return NextResponse.redirect(`${origin}${redirectPath}`);
+          } else if (forwardedHost) {
+            return NextResponse.redirect(`https://${forwardedHost}${redirectPath}`);
+          } else {
+            return NextResponse.redirect(`${origin}${redirectPath}`);
+          }
         } else {
-          return NextResponse.redirect(`${origin}/${locale}/dashboard`);
+          // User yoksa normal dashboard'a yönlendir
+          const forwardedHost = request.headers.get('x-forwarded-host');
+          const isLocalEnv = process.env.NODE_ENV === 'development';
+          
+          if (isLocalEnv) {
+            return NextResponse.redirect(`${origin}/${locale}/dashboard`);
+          } else if (forwardedHost) {
+            return NextResponse.redirect(`https://${forwardedHost}/${locale}/dashboard`);
+          } else {
+            return NextResponse.redirect(`${origin}/${locale}/dashboard`);
+          }
         }
       }
     } catch (error) {

@@ -8,6 +8,7 @@ Bağlantılı dosyalar:
 Dosyanın amacı:
 - Mobil cihazlarda alt kısımda sabit duran navigasyon çubuğu oluşturur.
 - Giriş yapmış kullanıcılar için "Dashboard" sekmesi, giriş yapmamış kullanıcılar için "Giriş Yap" sekmesi gösterir.
+- Admin kullanıcılar için "Pakize" sekmesi gösterir.
 
 Backend bağlantısı:
 - useAuth hook'u üzerinden Supabase auth durumu kontrol edilir.
@@ -42,7 +43,6 @@ import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { useAuth } from '@/hooks/useAuth';
-import { useTranslations } from '@/hooks/useTranslations';
 
 // Dil seçenekleri
 const languages = [
@@ -55,40 +55,50 @@ const languages = [
 const getNavigationItems = (
   currentLocale: string,
   isAuthenticated: boolean,
-  t: (key: string, fallback: string) => string
+  isAdmin: boolean
 ) => {
   const baseItems = [
     {
-      name: t('navigation.tarot', 'Tarot'),
+      name: 'Tarot',
       href: `/${currentLocale}/tarotokumasi`,
       icon: '⭐',
       activeIcon: '⭐',
     },
     {
-      name: t('navigation.numerology', 'Numeroloji'),
+      name: 'Numeroloji',
       href: `/${currentLocale}/numeroloji`,
       icon: '🔢',
       activeIcon: '🔢',
     },
     {
-      name: t('navigation.home', 'Ana Sayfa'),
+      name: 'Ana Sayfa',
       href: `/${currentLocale}`,
       icon: '💛',
       activeIcon: '💛',
     },
   ];
 
+  // Admin kontrolü - admin ise Pakize sekmesi ekle
+  if (isAuthenticated && isAdmin) {
+    baseItems.push({
+      name: 'Pakize',
+      href: `/${currentLocale}/pakize`,
+      icon: '👑',
+      activeIcon: '👑',
+    });
+  }
+
   // Auth durumuna göre giriş/profil sekmesi ekle
   if (isAuthenticated) {
     baseItems.push({
-      name: t('navigation.profile', 'Profil'),
+      name: 'Profil',
       href: `/${currentLocale}/dashboard`,
       icon: '👤',
       activeIcon: '👤',
     });
   } else {
     baseItems.push({
-      name: t('navigation.auth', 'Giriş Yap'),
+      name: 'Giriş Yap',
       href: `/${currentLocale}/auth`,
       icon: '🔑',
       activeIcon: '🔑',
@@ -199,19 +209,8 @@ function LanguageSelector() {
 export default function BottomNavigation() {
   const pathname = usePathname();
   const router = useRouter();
-  const { isAuthenticated } = useAuth();
-  const { t } = useTranslations();
+  const { isAuthenticated, isAdmin } = useAuth();
   const currentLocale = pathname.split('/')[1] || 'tr';
-
-  // Fallback çeviri fonksiyonu
-  const translate = (key: string, fallback: string) => {
-    try {
-      return t ? t(key, fallback) : fallback;
-    } catch (error) {
-      console.error('Translation error:', error);
-      return fallback;
-    }
-  };
 
   // Profil ikonuna tıklama işlemi - programatik yönlendirme
   const handleProfileClick = (e: React.MouseEvent) => {
@@ -227,11 +226,27 @@ export default function BottomNavigation() {
     }
   };
 
-  // t fonksiyonunun doğru şekilde çalıştığından emin ol
+  // Pakize sekmesi tıklama işlemi - programatik yönlendirme
+  const handlePakizeClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    console.log('👑 Pakize sekmesi tıklandı:', { isAuthenticated, isAdmin, currentLocale });
+    
+    if (isAuthenticated && isAdmin) {
+      console.log('👑 Pakize sayfasına yönlendiriliyor:', `/${currentLocale}/pakize`);
+      // Pakize sayfasına programatik yönlendirme - window.location kullan
+      window.location.href = `/${currentLocale}/pakize`;
+    } else {
+      console.log('👑 Pakize erişim hatası:', { isAuthenticated, isAdmin });
+    }
+  };
+
+  // Navigation items oluştur
   const navigationItems = getNavigationItems(
     currentLocale,
     isAuthenticated,
-    translate
+    isAdmin
   );
 
   return (
@@ -243,15 +258,34 @@ export default function BottomNavigation() {
             (item.href === '/' && pathname === '') ||
             (item.href !== '/' && pathname?.startsWith(item.href));
 
-          // Profil/Auth sekmesi için özel tıklama işlemi
-          const isProfileOrAuth = item.name === translate('navigation.profile', 'Profil') || 
-                                 item.name === translate('navigation.auth', 'Giriş Yap');
+          // Profil/Auth/Pakize sekmesi için özel tıklama işlemi
+          const isProfileOrAuth = item.name === 'Profil' || item.name === 'Giriş Yap';
+          const isPakize = item.name === 'Pakize';
 
           if (isProfileOrAuth) {
             return (
               <button
                 key={item.name}
                 onClick={handleProfileClick}
+                className={`
+                  flex flex-col items-center justify-center px-2 py-2 rounded-lg
+                  transition-all duration-300 min-w-0 flex-1
+                  ${isActive ? 'text-amber-400' : 'text-gray-500 hover:text-gray-300'}
+                `}
+              >
+                <span className='text-lg mb-1'>
+                  {isActive ? item.activeIcon : item.icon}
+                </span>
+                <span className='text-xs font-medium truncate'>{item.name}</span>
+              </button>
+            );
+          }
+
+          if (isPakize) {
+            return (
+              <button
+                key={item.name}
+                onClick={handlePakizeClick}
                 className={`
                   flex flex-col items-center justify-center px-2 py-2 rounded-lg
                   transition-all duration-300 min-w-0 flex-1

@@ -75,12 +75,14 @@ import { READING_TYPES, ReadingType, TarotCard } from '@/types/tarot';
 interface RelationshipProblemsReadingProps {
   onComplete?: (_cards: TarotCard[], _interpretation: string) => void;
   onPositionChange?: (_title: string) => void;
+  onReadingTypeSelected?: () => void;
 }
 
 // Ana İlişki Sorunları Açılımı bileşeni
 export default function RelationshipProblemsReading({
   onComplete: _onComplete,
   onPositionChange: _onPositionChange,
+  onReadingTypeSelected,
 }: RelationshipProblemsReadingProps) {
   const router = useRouter();
   const { t } = useTranslations();
@@ -276,6 +278,11 @@ export default function RelationshipProblemsReading({
       setSelectedReadingType(type as ReadingType);
       setShowInfoModal(true); // Bilgilendirme modal'ını göster
       return;
+    }
+    
+    // Okuma tipi seçildiğinde parent bileşene bildir
+    if (onReadingTypeSelected) {
+      onReadingTypeSelected();
     }
     setSelectedReadingType(type as ReadingType);
   };

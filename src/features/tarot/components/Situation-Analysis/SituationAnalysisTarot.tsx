@@ -53,12 +53,14 @@ import { READING_TYPES, ReadingType, TarotCard } from '@/types/tarot';
 interface SituationAnalysisReadingProps {
   onComplete?: (_cards: TarotCard[], _interpretation: string) => void;
   onPositionChange?: (_title: string) => void;
+  onReadingTypeSelected?: () => void;
 }
 
 // Ana Durum Analizi Açılımı bileşeni
 export default function SituationAnalysisReading({
   onComplete: _onComplete,
   onPositionChange: _onPositionChange,
+  onReadingTypeSelected,
 }: SituationAnalysisReadingProps) {
   const router = useRouter();
   const { t } = useTranslations();
@@ -198,6 +200,11 @@ export default function SituationAnalysisReading({
       setSelectedReadingType(type as ReadingType);
       setShowInfoModal(true); // Bilgilendirme modal'ını göster
       return;
+    }
+    
+    // Okuma tipi seçildiğinde parent bileşene bildir
+    if (onReadingTypeSelected) {
+      onReadingTypeSelected();
     }
     setSelectedReadingType(type as ReadingType);
   };

@@ -15,10 +15,44 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // Experimental features for Next.js 15
-  experimental: {
-    // RSC payload fetch hatalarını önlemek için
-    serverComponentsExternalPackages: ['@supabase/supabase-js'],
+  // External packages for server components
+  serverExternalPackages: ['@supabase/supabase-js'],
+  // Development server configuration
+  // Force HTTP in development
+  async rewrites() {
+    return [
+      {
+        source: '/:path*',
+        destination: '/:path*',
+      },
+    ];
+  },
+  // Content Security Policy headers
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'Content-Security-Policy',
+            value: [
+              "default-src 'self'",
+              "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.google-analytics.com https://www.googletagmanager.com",
+              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+              "font-src 'self' https://fonts.gstatic.com",
+              "img-src 'self' data: https: blob:",
+              "connect-src 'self' https://*.supabase.co https://www.google-analytics.com https://www.googletagmanager.com",
+              "frame-src 'self'",
+              "object-src 'none'",
+              "base-uri 'self'",
+              "form-action 'self'",
+              "frame-ancestors 'none'",
+              "upgrade-insecure-requests"
+            ].join('; ')
+          }
+        ]
+      }
+    ];
   },
 }
 

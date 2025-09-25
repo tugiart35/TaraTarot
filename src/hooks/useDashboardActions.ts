@@ -47,19 +47,53 @@ export const useDashboardActions = (
     }
   };
 
-  // Çıkış yap fonksiyonu - Supabase auth ile logout
+  // Çıkış yap fonksiyonu - Basitleştirilmiş logout
   const handleLogout = async () => {
+    console.log('🚪 Çıkış yapma işlemi başlatılıyor...');
+    
     try {
-      // Supabase auth ile çıkış yap
+      // Direkt Supabase signOut çağrısı - session kontrolü yapmadan
+      console.log('🔐 Supabase signOut çağrılıyor...');
       const { error } = await supabase.auth.signOut();
-      if (error) {
-        alert('Çıkış yapılırken bir hata oluştu. Lütfen tekrar deneyin.');
-      } else {
-        // Başarılı çıkış sonrası ana sayfaya yönlendir
-        router.push(`/${currentLocale}`); // Locale ile ana sayfaya git
-      }
+      
+      console.log('🔍 SignOut sonucu:', { hasError: !!error, errorMessage: error?.message });
+      
+      // Her durumda temizlik yap
+      console.log('🧹 Veriler temizleniyor...');
+      localStorage.clear();
+      sessionStorage.clear();
+      
+      // Cookie'leri temizle
+      document.cookie.split(";").forEach((c) => {
+        const eqPos = c.indexOf("=");
+        const name = eqPos > -1 ? c.substr(0, eqPos) : c;
+        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+      });
+      
+      console.log('✅ Temizlik tamamlandı, yönlendiriliyor...');
+      
+      // Kısa bir bekleme sonrası yönlendir
+      setTimeout(() => {
+        console.log('🔄 Yönlendirme:', `/${currentLocale}`);
+        window.location.href = `/${currentLocale}`;
+      }, 100);
+      
     } catch (error) {
-      alert('Çıkış yapılırken bir hata oluştu. Lütfen tekrar deneyin.');
+      console.error('❌ Çıkış yapma hatası:', error);
+      
+      // Hata durumunda da temizlik yap
+      localStorage.clear();
+      sessionStorage.clear();
+      
+      // Cookie'leri temizle
+      document.cookie.split(";").forEach((c) => {
+        const eqPos = c.indexOf("=");
+        const name = eqPos > -1 ? c.substr(0, eqPos) : c;
+        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+      });
+      
+      console.log('🔄 Hata durumunda yönlendiriliyor...');
+      window.location.href = `/${currentLocale}`;
     }
   };
 

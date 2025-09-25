@@ -417,6 +417,44 @@ class AuditLogger {
   }
 
   /**
+   * Retry failed logs from localStorage to Supabase
+   */
+  public async retryLocalStorageLogs(): Promise<{ success: boolean; retriedCount: number }> {
+    try {
+      const failedLogs = this.getLocalStorageLogs();
+      if (failedLogs.length === 0) {
+        return { success: true, retriedCount: 0 };
+      }
+
+      // Supabase bağlantısını kontrol et
+      const isConnected = await this.checkSupabaseConnection();
+      if (!isConnected) {
+        return { success: false, retriedCount: 0 };
+      }
+
+      // localStorage log'larını Supabase'e gönder
+      await this.persistToSupabase(failedLogs);
+      
+      // Başarılı olursa localStorage'ı temizle
+      this.clearLocalStorageLogs();
+      
+      if (process.env.NODE_ENV === 'development') {
+        console.log(`✅ [AUDIT] Successfully retried ${failedLogs.length} logs from localStorage`);
+      }
+      
+      return { success: true, retriedCount: failedLogs.length };
+    } catch (error) {
+      logError('Failed to retry localStorage audit logs', error, {
+        action: 'audit_log_retry',
+        metadata: {
+          failedLogsCount: this.getLocalStorageLogs().length,
+        },
+      });
+      return { success: false, retriedCount: 0 };
+    }
+  }
+
+  /**
    * Flush the audit log queue to Supabase
    */
   private async flushQueue(): Promise<void> {
@@ -435,16 +473,26 @@ class AuditLogger {
       // Hata durumunda queue'yu temizleme, tekrar deneme için sakla
       logError('Failed to flush audit log queue to Supabase', error, {
         action: 'audit_log_flush',
-        metadata: { retryCount: this.retryCount },
+        metadata: { 
+          retryCount: this.retryCount,
+          queueLength: this.queue.length,
+          errorType: error instanceof Error ? error.constructor.name : typeof error,
+        },
       });
 
       this.retryCount++;
 
-      // Çok fazla hata varsa queue'yu temizle (sonsuz döngüyü önle)
+      // Çok fazla hata varsa queue'yu localStorage'a kaydet ve temizle
       if (this.queue.length > 100 || this.retryCount > this.maxRetries) {
         console.warn(
-          'Audit log queue too large or max retries exceeded, clearing to prevent memory issues'
+          'Audit log queue too large or max retries exceeded, saving to localStorage fallback'
         );
+        
+        // Queue'daki log'ları localStorage'a kaydet
+        this.queue.forEach(log => {
+          this.storeInLocalStorage(log);
+        });
+        
         this.queue = [];
         this.retryCount = 0;
       } else {
@@ -461,10 +509,27 @@ class AuditLogger {
   }
 
   /**
+   * Check Supabase connection status
+   */
+  private async checkSupabaseConnection(): Promise<boolean> {
+    try {
+      const { error } = await supabase.from('audit_logs').select('id').limit(1);
+      return !error;
+    } catch {
+      return false;
+    }
+  }
+
+  /**
    * Persist logs to Supabase
    */
   private async persistToSupabase(logs: AuditLogEntry[]): Promise<void> {
     try {
+      // Supabase bağlantısını kontrol et
+      const isConnected = await this.checkSupabaseConnection();
+      if (!isConnected) {
+        throw new Error('Supabase connection not available');
+      }
       // Log'ları temizle ve doğrula
       const cleanedLogs = logs.map(log => ({
         user_id: this.isValidUUID(log.user_id)
@@ -484,6 +549,10 @@ class AuditLogger {
         status: log.status || 'success',
       }));
 
+      if (process.env.NODE_ENV === 'development') {
+        console.log(`🔍 [AUDIT] Attempting to insert ${cleanedLogs.length} logs to Supabase`);
+      }
+
       const { error } = await supabase.from('audit_logs').insert(cleanedLogs);
 
       if (error) {
@@ -492,6 +561,8 @@ class AuditLogger {
           metadata: {
             errorCode: error.code,
             errorMessage: error.message,
+            errorHint: error.hint,
+            errorDetails: error.details,
           },
         });
         throw error;
@@ -505,6 +576,10 @@ class AuditLogger {
     } catch (error) {
       logError('Failed to persist audit logs to Supabase', error, {
         action: 'audit_log_persist',
+        metadata: {
+          logsCount: logs.length,
+          errorType: error instanceof Error ? error.constructor.name : typeof error,
+        },
       });
       throw error;
     }

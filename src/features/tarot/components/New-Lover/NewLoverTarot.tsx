@@ -66,12 +66,14 @@ import { READING_TYPES, ReadingType, TarotCard } from '@/types/tarot';
 interface NewLoverReadingProps {
   onComplete?: (_cards: TarotCard[], _interpretation: string) => void;
   onPositionChange?: (_title: string) => void;
+  onReadingTypeSelected?: () => void;
 }
 
 // Ana Yeni Bir Sevgili Açılımı bileşeni
 export default function NewLoverReading({
   onComplete: _onComplete,
   onPositionChange: _onPositionChange,
+  onReadingTypeSelected,
 }: NewLoverReadingProps) {
   const router = useRouter();
   const { t } = useTranslations();
@@ -303,6 +305,11 @@ export default function NewLoverReading({
       setSelectedReadingType(type as ReadingType);
       setShowInfoModal(true); // Bilgilendirme modal'ını göster
       return;
+    }
+    
+    // Okuma tipi seçildiğinde parent bileşene bildir
+    if (onReadingTypeSelected) {
+      onReadingTypeSelected();
     }
     setSelectedReadingType(type as ReadingType);
   };

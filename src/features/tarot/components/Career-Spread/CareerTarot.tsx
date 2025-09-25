@@ -81,12 +81,14 @@ import { READING_TYPES, ReadingType, TarotCard } from '@/types/tarot';
 interface CareerReadingProps {
   onComplete?: (_cards: TarotCard[], _interpretation: string) => void;
   onPositionChange?: (_title: string) => void;
+  onReadingTypeSelected?: () => void;
 }
 
 // Ana Kariyer Açılımı bileşeni
 export default function CareerReading({
   onComplete: _onComplete,
   onPositionChange: _onPositionChange,
+  onReadingTypeSelected,
 }: CareerReadingProps) {
   const router = useRouter();
   const { t } = useTranslations();
@@ -546,6 +548,11 @@ export default function CareerReading({
       setSelectedReadingType(type as ReadingType);
       setShowInfoModal(true); // Bilgilendirme modal'ını göster
       return;
+    }
+    
+    // Okuma tipi seçildiğinde parent bileşene bildir
+    if (onReadingTypeSelected) {
+      onReadingTypeSelected();
     }
     setSelectedReadingType(type as ReadingType);
   };

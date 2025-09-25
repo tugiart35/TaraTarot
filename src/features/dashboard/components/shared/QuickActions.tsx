@@ -28,8 +28,9 @@ Gereklilik ve Kullanım Durumu:
 
 'use client';
 
-import { Settings, Coins, BookOpen, TrendingUp, History } from 'lucide-react';
+import { Settings, Coins, BookOpen, TrendingUp, History, Crown } from 'lucide-react';
 import { useTranslations } from '@/hooks/useTranslations';
+import { useAuth } from '@/hooks/useAuth';
 
 interface QuickActionsProps {
   currentLocale: string;
@@ -37,8 +38,18 @@ interface QuickActionsProps {
 
 export default function QuickActions({ currentLocale }: QuickActionsProps) {
   const { t: translate } = useTranslations();
+  const { isAdmin } = useAuth();
 
   const quickActions = [
+    // Admin kullanıcıları için Pakize erişimi
+    ...(isAdmin ? [{
+      href: `/${currentLocale}/pakize`,
+      icon: Crown,
+      iconColor: 'text-red-400',
+      bgColor: 'bg-red-500/20',
+      label: '👑 Pakize Admin Panel',
+      arrowColor: 'text-red-400',
+    }] : []),
     {
       href: `/${currentLocale}/dashboard/settings`,
       icon: Settings,

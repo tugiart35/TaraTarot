@@ -59,14 +59,52 @@ export default function DashboardHeader({
 }: DashboardHeaderProps) {
   const { t: _translate } = useTranslations();
 
-  // Çıkış yap fonksiyonu
+  // Çıkış yap fonksiyonu - Basitleştirilmiş
   const handleLogout = async () => {
+    console.log('🚪 DashboardHeader: Çıkış yapma işlemi başlatılıyor...');
+    
     try {
-      await supabase.auth.signOut();
-      // Çıkış yapıldıktan sonra ana sayfaya yönlendir
-      window.location.href = `/${currentLocale}`;
+      console.log('🔐 DashboardHeader: Supabase signOut çağrılıyor...');
+      const { error } = await supabase.auth.signOut();
+      
+      console.log('🔍 DashboardHeader: SignOut sonucu:', { hasError: !!error, errorMessage: error?.message });
+      
+      // Her durumda temizlik yap
+      console.log('🧹 DashboardHeader: Veriler temizleniyor...');
+      localStorage.clear();
+      sessionStorage.clear();
+      
+      // Cookie'leri temizle
+      document.cookie.split(";").forEach((c) => {
+        const eqPos = c.indexOf("=");
+        const name = eqPos > -1 ? c.substr(0, eqPos) : c;
+        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+      });
+      
+      console.log('✅ DashboardHeader: Temizlik tamamlandı, yönlendiriliyor...');
+      
+      // Kısa bir bekleme sonrası yönlendir
+      setTimeout(() => {
+        console.log('🔄 DashboardHeader: Yönlendirme:', `/${currentLocale}`);
+        window.location.href = `/${currentLocale}`;
+      }, 100);
+      
     } catch (error) {
-      console.error('Çıkış yapma hatası:', error);
+      console.error('❌ DashboardHeader: Çıkış yapma hatası:', error);
+      
+      // Hata durumunda da temizlik yap
+      localStorage.clear();
+      sessionStorage.clear();
+      
+      // Cookie'leri temizle
+      document.cookie.split(";").forEach((c) => {
+        const eqPos = c.indexOf("=");
+        const name = eqPos > -1 ? c.substr(0, eqPos) : c;
+        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+      });
+      
+      console.log('🔄 DashboardHeader: Hata durumunda yönlendiriliyor...');
+      window.location.href = `/${currentLocale}`;
     }
   };
 
