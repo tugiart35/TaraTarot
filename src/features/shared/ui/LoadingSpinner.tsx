@@ -15,9 +15,7 @@ Kullanım Örnekleri:
 
 import React from 'react';
 import { useTranslations } from '@/hooks/useTranslations';
-
-export type LoadingVariant = 'spinner' | 'pulse' | 'dots' | 'bars';
-export type SkeletonType = 'text' | 'avatar' | 'card' | 'button';
+import type { LoadingVariant, SkeletonType } from '@/types/ui';
 
 interface LoadingSpinnerProps {
   size?: number | 'sm' | 'md' | 'lg' | 'xl';

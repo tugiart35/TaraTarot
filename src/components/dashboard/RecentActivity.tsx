@@ -2,8 +2,9 @@
 
 import { Reading } from '@/types/dashboard.types';
 import { formatDate, downloadReading } from '@/utils/dashboard-utils';
+import { calculateUserLevel } from '@/utils/dashboard/user-level-utils';
+import { getDashboardRoutes } from '@/utils/dashboard/routing-utils';
 import {
-  Star,
   BookOpen,
   Hash,
   Eye,
@@ -13,6 +14,7 @@ import {
   TrendingUp,
   Clock,
   Target,
+  StarIcon,
 } from 'lucide-react';
 import { useTranslations } from '@/hooks/useTranslations';
 
@@ -21,6 +23,7 @@ interface RecentActivityProps {
   setSelectedReading: (reading: Reading | null) => void;
   totalReadings?: number;
   isAdmin?: boolean;
+  currentLocale?: string;
 }
 
 // Son aktiviteler bileşeni
@@ -29,8 +32,10 @@ export default function RecentActivity({
   setSelectedReading,
   totalReadings = 0,
   isAdmin = false,
+  currentLocale = 'tr',
 }: RecentActivityProps) {
   const { t } = useTranslations();
+  const routes = getDashboardRoutes(currentLocale);
   // Hesaplanan değerler
   const todayReadings = recentReadings.filter(reading => {
     const today = new Date().toDateString();
@@ -45,46 +50,7 @@ export default function RecentActivity({
   }).length;
 
   // Kullanıcı seviyesi hesaplama
-  const getUserLevel = () => {
-    if (isAdmin)
-      return {
-        level: 'Admin',
-        icon: Sparkles,
-        color: 'text-purple-400',
-        progress: 100,
-      };
-    if (totalReadings > 50)
-      return { level: 'Usta', icon: Star, color: 'text-gold', progress: 100 };
-    if (totalReadings > 20)
-      return {
-        level: 'Uzman',
-        icon: TrendingUp,
-        color: 'text-blue-400',
-        progress: 80,
-      };
-    if (totalReadings > 10)
-      return {
-        level: 'Orta',
-        icon: Target,
-        color: 'text-green-400',
-        progress: 60,
-      };
-    if (totalReadings > 5)
-      return {
-        level: 'Gelişen',
-        icon: Heart,
-        color: 'text-pink-400',
-        progress: 40,
-      };
-    return {
-      level: 'Başlangıç',
-      icon: BookOpen,
-      color: 'text-gray-400',
-      progress: 20,
-    };
-  };
-
-  const userLevel = getUserLevel();
+  const userLevel = calculateUserLevel(totalReadings, isAdmin, recentReadings);
   const LevelIcon = userLevel.icon;
   return (
     <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
@@ -103,7 +69,7 @@ export default function RecentActivity({
             </div>
             {/* Tüm okumaları gör linki */}
             <a
-              href='/dashboard/readings'
+              href={routes.readings}
               className='text-gold hover:text-gold/80 text-sm font-medium transition-colors duration-200 hover:bg-gold/10 px-3 py-1 rounded-lg'
             >
               {t('common.viewAll', 'Tümünü Gör')} →
@@ -177,7 +143,7 @@ export default function RecentActivity({
                     +{recentReadings.length - 5} okuma daha var
                   </p>
                   <a
-                    href='/dashboard/readings'
+                    href={routes.readings}
                     className='text-gold hover:text-gold/80 text-sm font-medium'
                   >
                     Tüm okumaları görüntüle →
@@ -305,7 +271,7 @@ export default function RecentActivity({
 
             {totalReadings >= 10 && (
               <div className='bg-purple/10 border border-purple/20 rounded-lg p-4 text-center'>
-                <Star className='h-6 w-6 text-purple mx-auto mb-2' />
+                <StarIcon className='h-6 w-6 text-purple mx-auto mb-2' />
                 <p className='text-sm text-purple font-medium'>
                   ✨ Mistik yolculuğunuzda ilerliyorsunuz!
                 </p>
@@ -314,7 +280,7 @@ export default function RecentActivity({
 
             {/* Detaylı istatistikler linki */}
             <a
-              href='/dashboard/statistics'
+              href={routes.statistics}
               className='btn btn-primary w-full hover:scale-105 transition-transform duration-200'
             >
               📊 Detaylı İstatistikler

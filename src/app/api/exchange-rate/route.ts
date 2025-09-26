@@ -31,6 +31,7 @@ Kullanım durumu:
 */
 
 import { NextRequest, NextResponse } from 'next/server';
+import { getClientIP } from '@/lib/utils/ip-utils';
 
 // Cache için global değişkenler
 let exchangeRateCache: {
@@ -65,20 +66,7 @@ function checkRateLimit(ip: string): boolean {
 }
 
 // Client IP alma
-function getClientIP(request: NextRequest): string {
-  const forwarded = request.headers.get('x-forwarded-for');
-  const realIP = request.headers.get('x-real-ip');
-
-  if (forwarded) {
-    return forwarded.split(',')[0]?.trim() || '';
-  }
-
-  if (realIP) {
-    return realIP;
-  }
-
-  return 'unknown';
-}
+// getClientIP artık ip-utils'den import ediliyor
 
 // TCMB XML'den EUR kuru çekme
 async function fetchTCMBExchangeRate(): Promise<number> {

@@ -54,7 +54,7 @@ const securityHeaders = {
     "style-src 'self' 'unsafe-inline'",
     "img-src 'self' data: https:",
     "font-src 'self'",
-    "connect-src 'self' https://*.supabase.co wss://*.supabase.co",
+    "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://www.googletagmanager.com",
     "frame-src 'none'",
     "object-src 'none'",
     "base-uri 'self'",
@@ -131,6 +131,13 @@ export async function middleware(request: NextRequest) {
       },
     }
   );
+
+  // Login redirect - /login -> /auth
+  if (pathname === '/login' || pathname.startsWith('/login')) {
+    const url = request.nextUrl.clone();
+    url.pathname = url.pathname.replace('/login', '/auth');
+    return NextResponse.redirect(url);
+  }
 
   // Public paths - auth sayfası ve callback'ler
   const publicPaths = ['/auth', '/auth/', '/auth/callback', '/auth/callback/'];

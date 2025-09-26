@@ -37,57 +37,9 @@ Anlam Seçimi Öncelik Sırası:
 
 import { forwardRef } from 'react';
 import type { TarotCard } from '@/features/tarot/lib/a-tarot-helpers';
+import type { Theme, PositionInfo, CardMeaningData } from '@/types/ui';
 // useAuth kaldırıldı - login sistemi kaldırıldı
 // import { saveTarotReading } from '@/lib/services/reading-service'; // Service kaldırıldı
-
-// Tema tanımları
-export type Theme =
-  | 'default'
-  | 'blue'
-  | 'pink'
-  | 'amber'
-  | 'purple'
-  | 'green'
-  | 'emerald';
-
-// Pozisyon bilgisi tipi
-export interface PositionInfo {
-  readonly title: string;
-  readonly desc: string;
-  readonly id?: number;
-}
-
-// Kart anlamı tipi (genel)
-export interface CardMeaningData {
-  card?: string;
-  name?: string;
-  upright?: string;
-  reversed?: string;
-  upcontent?: string;
-  reversedcontent?: string;
-  careerMeaning?: {
-    upright: string;
-    reversed: string;
-  };
-  relationshipAnalysisMeaning?: {
-    upright: string;
-    reversed: string;
-  };
-  moneyMeaning?: {
-    upright: string;
-    reversed: string;
-  };
-  newLoverMeaning?: {
-    upright: string;
-    reversed: string;
-  };
-  marriageMeaning?: {
-    upright: string;
-    reversed: string;
-  };
-  keywords?: string[];
-  context?: string;
-}
 
 // Ana props interface
 export interface BaseInterpretationProps {

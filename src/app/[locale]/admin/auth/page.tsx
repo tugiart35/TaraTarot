@@ -7,8 +7,7 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { supabase } from '@/lib/supabase/client';
-import { useAuth } from '@/hooks/useAuth';
+import { useAuthAdmin } from '@/hooks/useAuthAdmin';
 import {
   Crown,
   Eye,
@@ -33,7 +32,7 @@ export default function PakizeAuthPage() {
   const pathname = window.location.pathname;
   const locale = pathname.split('/')[1] || 'tr';
 
-  const { user, isAdmin, loading: authLoading } = useAuth();
+  const { admin, loading: authLoading, loginAdmin, isAuthenticated } = useAuthAdmin();
 
   // Auth sayfasında admin kontrolü yapmıyoruz - döngüyü önlemek için
 
@@ -44,46 +43,15 @@ export default function PakizeAuthPage() {
     setSuccess('');
 
     try {
-      // Supabase ile giriş yap
-      const { data, error } = await supabase.auth.signInWithPassword({
-        email,
-        password,
-      });
-
-      if (error) {
-        setError(error.message);
-        return;
-      }
-
-      if (data.user) {
-        // Admin kontrolü yap
-        const { data: profile, error: profileError } = await supabase
-          .from('profiles')
-          .select('is_admin')
-          .eq('id', data.user.id)
-          .single();
-
-        if (profileError || !profile?.is_admin) {
-          setError('Bu hesap admin yetkisine sahip değil.');
-          await supabase.auth.signOut();
-          return;
-        }
-
-        setSuccess('Giriş başarılı! Admin paneline yönlendiriliyorsunuz...');
-
-        // Simple admin auth için sessionStorage'a kaydet
-        sessionStorage.setItem('admin_authenticated', 'true');
-        sessionStorage.setItem('admin_email', email);
-        sessionStorage.setItem('admin_login_time', new Date().toISOString());
-
-        // 1 saniye bekle ve admin dashboard'a yönlendir
-        setTimeout(() => {
-          router.push(`/${locale}/admin`);
-        }, 1000);
-      }
-    } catch (error) {
-      console.error('Login error:', error);
-      setError('Giriş sırasında bir hata oluştu.');
+      await loginAdmin(email, password);
+      setSuccess('Giriş başarılı! Admin paneline yönlendiriliyorsunuz...');
+      
+      // 1 saniye bekle ve admin dashboard'a yönlendir
+      setTimeout(() => {
+        router.push(`/${locale}/admin`);
+      }, 1000);
+    } catch (error: any) {
+      setError(error.message || 'Giriş sırasında bir hata oluştu.');
     } finally {
       setLoading(false);
     }
@@ -93,15 +61,10 @@ export default function PakizeAuthPage() {
 
   // Eğer zaten admin kullanıcı ise dashboard'a yönlendir
   useEffect(() => {
-    if (!authLoading && user && isAdmin) {
-      // Simple admin auth için sessionStorage'a kaydet
-      sessionStorage.setItem('admin_authenticated', 'true');
-      sessionStorage.setItem('admin_email', user.email || '');
-      sessionStorage.setItem('admin_login_time', new Date().toISOString());
-      
+    if (!authLoading && isAuthenticated && admin) {
       router.push(`/${locale}/admin`);
     }
-  }, [authLoading, user, isAdmin, router, locale]);
+  }, [authLoading, isAuthenticated, admin, router, locale]);
 
   // Auth loading kontrolünü kaldırdık - direkt formu göster
 

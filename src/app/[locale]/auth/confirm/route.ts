@@ -41,6 +41,7 @@ import { type EmailOtpType } from '@supabase/supabase-js';
 import { type NextRequest, NextResponse } from 'next/server';
 import { supabase } from '@/lib/supabase/client';
 import { CREDIT_CONSTANTS } from '@/lib/constants/reading-credits';
+import { logger } from '@/lib/logger';
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
@@ -53,7 +54,7 @@ export async function GET(request: NextRequest) {
   const pathSegments = url.pathname.split('/');
   const locale = pathSegments[1] || 'tr';
 
-  console.log('Email confirmation callback:', { token_hash, type, next });
+  logger.info('Email confirmation callback', { token_hash, type, next } as any);
 
   if (token_hash && type) {
     try {
@@ -63,15 +64,15 @@ export async function GET(request: NextRequest) {
       });
 
       if (!error) {
-        console.log('Email confirmation successful');
+        logger.info('Email confirmation successful');
 
         // E-posta onayından sonra 100 kredi hediye et
         try {
           await giveEmailConfirmationCredits();
-          console.log('Email confirmation credits given successfully');
+          logger.info('Email confirmation credits given successfully');
         } catch (creditError) {
-          console.error(
-            'Failed to give email confirmation credits:',
+          logger.error(
+            'Failed to give email confirmation credits',
             creditError
           );
           // Kredi hediye etme hatası kritik değil, devam et
@@ -84,7 +85,7 @@ export async function GET(request: NextRequest) {
           new URL(`/${locale}/dashboard`, request.url)
         );
       } else {
-        console.error('Email confirmation error:', error);
+        logger.error('Email confirmation error', error);
 
         // Token süresi dolmuşsa özel hata mesajı
         if (
@@ -97,12 +98,12 @@ export async function GET(request: NextRequest) {
         }
       }
     } catch (error) {
-      console.error('Email confirmation exception:', error);
+      logger.error('Email confirmation exception', error);
     }
   }
 
   // Hata durumunda hata sayfasına yönlendir
-  console.log('Redirecting to auth error page');
+  logger.info('Redirecting to auth error page');
   // Locale already declared at top
 
   return NextResponse.redirect(
@@ -138,11 +139,11 @@ async function giveEmailConfirmationCredits() {
       throw rpcError;
     }
 
-    console.log(
+    logger.info(
       `Email confirmation credits given via RPC: ${CREDIT_CONSTANTS.EMAIL_CONFIRMATION_CREDITS} to user ${user.id}`
     );
   } catch (error) {
-    console.error('Email confirmation credit gift failed:', error);
+    logger.error('Email confirmation credit gift failed', error);
     throw error;
   }
 }

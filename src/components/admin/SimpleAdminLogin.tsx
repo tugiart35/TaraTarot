@@ -23,23 +23,17 @@ export default function SimpleAdminLogin({ locale }: SimpleAdminLoginProps) {
     setIsLoading(true);
     setError('');
 
-    console.log('Giriş denemesi:', { email, password });
-
     try {
       const result = await loginAdmin(email, password);
       
       if (result.success) {
-        console.log('Admin girişi başarılı, yönlendiriliyor...');
-        
         // Admin sayfasına yönlendir
         router.push(`/${locale}/admin`);
         router.refresh(); // Sayfayı yenile
       } else {
-        console.log('Geçersiz giriş bilgileri');
         setError(result.error || 'Geçersiz email veya şifre');
       }
     } catch (error) {
-      console.error('Login error:', error);
       setError('Giriş sırasında bir hata oluştu');
     }
     

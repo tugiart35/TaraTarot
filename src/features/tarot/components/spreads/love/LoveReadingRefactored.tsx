@@ -30,7 +30,7 @@ Kullanım Durumu:
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useTranslations } from '@/hooks/useTranslations';
-import { useAuth } from '@/hooks/useAuth';
+import { useAuth } from '@/hooks/auth/useAuth';
 import { useTarotReading } from '@/hooks/useTarotReading';
 import { useToast } from '@/hooks/useToast';
 

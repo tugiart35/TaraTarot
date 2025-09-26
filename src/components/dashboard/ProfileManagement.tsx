@@ -2,16 +2,20 @@
 
 import { User, Settings, Coins, Clock } from 'lucide-react';
 import { useTranslations } from '@/hooks/useTranslations';
+import { getDashboardRoutes } from '@/utils/dashboard/routing-utils';
 
 interface ProfileManagementProps {
   openProfileModal: () => Promise<void>;
+  currentLocale?: string;
 }
 
 // Profil yönetimi bileşeni
 export default function ProfileManagement({
   openProfileModal,
+  currentLocale = 'tr',
 }: ProfileManagementProps) {
   const { t } = useTranslations();
+  const routes = getDashboardRoutes(currentLocale);
   return (
     <div className='mb-8'>
       <h2 className='text-heading-2 text-gold mb-4'>
@@ -44,7 +48,7 @@ export default function ProfileManagement({
         </button>
 
         {/* Hesap ayarları kartı */}
-        <a href='/dashboard/settings' className='card hover-lift p-6 group'>
+        <a href={routes.settings} className='card hover-lift p-6 group'>
           <div className='flex items-center justify-between mb-4'>
             <div className='p-3 bg-success/20 rounded-lg group-hover:bg-success/30 transition-colors'>
               <Settings className='h-6 w-6 text-success' />
@@ -66,7 +70,7 @@ export default function ProfileManagement({
         </a>
 
         {/* Kredi geçmişi kartı */}
-        <a href='/dashboard/credits' className='card hover-lift p-6 group'>
+        <a href={routes.credits} className='card hover-lift p-6 group'>
           <div className='flex items-center justify-between mb-4'>
             <div className='p-3 bg-warning/20 rounded-lg group-hover:bg-warning/30 transition-colors'>
               <Coins className='h-6 w-6 text-warning' />

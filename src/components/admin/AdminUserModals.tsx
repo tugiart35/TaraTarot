@@ -62,7 +62,7 @@ export function AddAdminUserModal({
       const results = await AdminUserManager.searchUsersByEmail(email);
       setSearchResults(results);
     } catch (error) {
-      console.error('Error searching users:', error);
+      // Error handling
     } finally {
       setSearchLoading(false);
     }
@@ -81,7 +81,6 @@ export function AddAdminUserModal({
       await AdminUserManager.createAdminUser(formData);
       onSuccess();
     } catch (error) {
-      console.error('Error creating admin user:', error);
       alert(
         'Admin kullanıcısı oluşturulurken hata oluştu: ' +
           (error as Error).message

@@ -38,7 +38,7 @@ import { useEffect, useState } from 'react';
 // import { useRouter } from 'next/navigation';
 import { BottomNavigation } from '@/features/shared/layout';
 import { useTranslations } from '@/hooks/useTranslations';
-import { useAuth } from '@/hooks/useAuth';
+import { useAuth } from '@/hooks/auth/useAuth';
 import { supabase } from '@/lib/supabase/client';
 
 interface HomePageClientProps {
@@ -47,7 +47,8 @@ interface HomePageClientProps {
 
 export function HomePageClient({ locale }: HomePageClientProps) {
   const { t } = useTranslations();
-  const { user, isAuthenticated } = useAuth();
+  const { user } = useAuth();
+  const isAuthenticated = !!user;
   // const router = useRouter();
   const [totalReadings, setTotalReadings] = useState<number>(0);
   const [loadingStats, setLoadingStats] = useState(true);

@@ -6,6 +6,7 @@
  */
 
 import type { NumberMeaning } from '@/lib/numerology/meanings';
+import { NumerologyErrorBoundary } from '@/components/numerology/NumerologyErrorBoundary';
 
 interface NumberMeaningProps {
   meaning: NumberMeaning;
@@ -31,8 +32,9 @@ export function NumberMeaning({ meaning }: NumberMeaningProps) {
   };
 
   return (
-    <div className='max-w-4xl mx-auto'>
-      <div className='bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20 shadow-2xl'>
+    <NumerologyErrorBoundary>
+      <div className='max-w-4xl mx-auto'>
+        <div className='bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20 shadow-2xl'>
         {/* Header */}
         <div className='text-center mb-8'>
           <div className='relative inline-block mb-4'>
@@ -171,7 +173,8 @@ export function NumberMeaning({ meaning }: NumberMeaningProps) {
             <div className='font-semibold text-white'>{meaning.planet}</div>
           </div>
         </div>
+        </div>
       </div>
-    </div>
+    </NumerologyErrorBoundary>
   );
 }

@@ -28,13 +28,17 @@
  */
 
 import { createServerClient } from '@supabase/ssr';
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest } from 'next/server';
 import { cookies } from 'next/headers';
+import { RedirectUtils } from '@/lib/utils/redirect-utils';
+import { extractLocaleFromRequest } from '@/lib/utils/locale-utils';
+import { AdminDetectionService } from '@/lib/services/admin-detection-service';
+import { AuthErrorService } from '@/lib/services/auth-error-service';
 
 export async function GET(request: NextRequest) {
-  const { searchParams, origin } = new URL(request.url);
+  const { searchParams } = new URL(request.url);
   const code = searchParams.get('code');
-  const locale = searchParams.get('locale') ?? 'tr';
+  const locale = extractLocaleFromRequest(request);
 
   if (code) {
     const cookieStore = await cookies();
@@ -68,55 +72,24 @@ export async function GET(request: NextRequest) {
         
         if (user) {
           // Admin kontrolü yap
-          const { data: profile } = await supabase
-            .from('profiles')
-            .select('is_admin')
-            .eq('id', user.id)
-            .single();
-          
-          const isUserAdmin = profile?.is_admin || false;
-          console.log('Auth callback admin kontrolü:', { isUserAdmin, userId: user.id });
+          const isUserAdmin = await AdminDetectionService.isUserAdmin(user.id);
+          AdminDetectionService.logAdminAccess(user.id, isUserAdmin);
           
           // Yönlendirme kararı
-          let redirectPath;
-          if (isUserAdmin) {
-            redirectPath = `/${locale}/pakize`;
-            console.log('Auth callback: Admin kullanıcı, pakize paneline yönlendiriliyor');
-          } else {
-            redirectPath = `/${locale}/dashboard`;
-            console.log('Auth callback: Normal kullanıcı, dashboard\'a yönlendiriliyor');
-          }
+          const redirectPath = AdminDetectionService.getRedirectPath(isUserAdmin, locale);
           
           // Başarılı giriş - admin durumuna göre yönlendir
-          const forwardedHost = request.headers.get('x-forwarded-host');
-          const isLocalEnv = process.env.NODE_ENV === 'development';
-          
-          if (isLocalEnv) {
-            return NextResponse.redirect(`${origin}${redirectPath}`);
-          } else if (forwardedHost) {
-            return NextResponse.redirect(`https://${forwardedHost}${redirectPath}`);
-          } else {
-            return NextResponse.redirect(`${origin}${redirectPath}`);
-          }
+          return RedirectUtils.createRedirectResponse(request, redirectPath);
         } else {
           // User yoksa normal dashboard'a yönlendir
-          const forwardedHost = request.headers.get('x-forwarded-host');
-          const isLocalEnv = process.env.NODE_ENV === 'development';
-          
-          if (isLocalEnv) {
-            return NextResponse.redirect(`${origin}/${locale}/dashboard`);
-          } else if (forwardedHost) {
-            return NextResponse.redirect(`https://${forwardedHost}/${locale}/dashboard`);
-          } else {
-            return NextResponse.redirect(`${origin}/${locale}/dashboard`);
-          }
+          return RedirectUtils.createDashboardRedirect(request, locale);
         }
       }
     } catch (error) {
-      console.error('Auth callback error:', error);
+      return AuthErrorService.handleCallbackError(error, locale);
     }
   }
 
   // Hata durumunda auth sayfasına yönlendir
-  return NextResponse.redirect(`${origin}/${locale}/auth?error=callback_failed`);
+  return AuthErrorService.handleCallbackError(new Error('No code provided'), locale);
 }

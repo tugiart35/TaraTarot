@@ -51,13 +51,11 @@ import {
   AlertCircle,
   Clock,
   Star,
-  Download,
   BookOpen,
   Sparkles,
   Heart,
   Briefcase,
   Target,
-  Filter,
   Mic,
   FileText,
   User,
@@ -122,10 +120,10 @@ export default function ReadingsPage() {
       }
       
       const readingsData = data || [];
-      const completed = readingsData.filter(r => r.status === 'completed').length;
-      const pending = readingsData.filter(r => r.status === 'pending').length;
-      const failed = readingsData.filter(r => r.status === 'failed').length;
-      const totalCredits = readingsData.reduce((sum, r) => sum + (r.cost_credits || 0), 0);
+      const completed = readingsData.filter((r: any) => r.status === 'completed').length;
+      const pending = readingsData.filter((r: any) => r.status === 'pending').length;
+      const failed = readingsData.filter((r: any) => r.status === 'failed').length;
+      const totalCredits = readingsData.reduce((sum: number, r: any) => sum + (r.cost_credits || 0), 0);
       
       setStats({
         total: readingsData.length,
@@ -202,7 +200,7 @@ export default function ReadingsPage() {
       }
       
       // Format readings safely with user data
-      const formattedReadings = (data || []).map(reading => ({
+      const formattedReadings = (data || []).map((reading: any) => ({
         id: reading.id || 'unknown',
         user_id: reading.user_id || 'unknown',
         reading_type: reading.reading_type || 'unknown',

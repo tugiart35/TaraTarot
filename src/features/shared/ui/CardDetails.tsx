@@ -42,6 +42,7 @@ Gereklilik ve Kullanım Durumu:
 
 import React from 'react';
 import type { TarotCard } from '@/features/tarot/lib/a-tarot-helpers';
+import type { CardMeaningData } from '@/types/ui';
 import BaseCardDetails from './BaseCardDetails';
 import { getMeaningByCardAndPosition as getLoveMeaningByCardAndPosition } from '@/features/tarot/lib/love/position-meanings-index';
 import { getCareerMeaningByCardAndPosition } from '@/features/tarot/lib/career/position-meanings-index';
@@ -55,33 +56,7 @@ import newLoverExports from '@/features/tarot/lib/new-lover/position-meanings-in
 const { getNewLoverCardMeaning } = newLoverExports;
 import { getMoneyMeaningByCardAndPosition } from '@/features/tarot/lib/money/position-meanings-index';
 
-// BaseInterpretation.tsx'den alınan CardMeaningData interface'i
-export interface CardMeaningData {
-  card?: string;
-  name?: string;
-  upright?: string;
-  reversed?: string;
-  upcontent?: string;
-  reversedcontent?: string;
-  careerMeaning?: {
-    upright: string;
-    reversed: string;
-  };
-  relationshipAnalysisMeaning?: {
-    upright: string;
-    reversed: string;
-  };
-  moneyMeaning?: {
-    upright: string;
-    reversed: string;
-  };
-  newLoverMeaning?: {
-    upright: string;
-    reversed: string;
-  };
-  keywords?: string[];
-  context?: string;
-}
+// CardMeaningData artık @/types/ui'dan import ediliyor
 
 interface CardDetailsProps {
   card: TarotCard;

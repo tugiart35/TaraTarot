@@ -17,6 +17,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { emailService } from '@/lib/email/email-service';
 import { pdfGeneratorService } from '@/lib/pdf/pdf-generator';
+import { ErrorResponse } from '@/lib/api/error-responses';
+import { EmailCORS } from '@/lib/api/email-cors';
 
 // POST endpoint - Enhanced email test
 export async function POST(request: NextRequest) {
@@ -114,50 +116,41 @@ Bu açılım, Kılıçlar İkilisi kartının temsil ettiği kişiyle olan iliş
     );
 
     if (success) {
-      return NextResponse.json({
-        success: true,
-        message: 'Enhanced email başarıyla oluşturuldu ve gönderildi!',
-        timestamp: new Date().toISOString(),
-        recipient: 'busbuskimkionline@gmail.com',
-        fileName: fileName,
-        features: [
-          'Kullanıcı bilgileri (Ad, Soyad, Doğum Tarihi)',
-          'Okuma detayları (Tür, Başlık, Yayılım, Tarih)',
-          'Seçilen kartlar listesi',
-          'Modern email tasarımı',
-          'PDF eki ile birlikte',
-          'Renkli bilgi kutuları',
-        ],
-      });
+      return EmailCORS.wrapResponse(
+        NextResponse.json({
+          success: true,
+          message: 'Enhanced email başarıyla oluşturuldu ve gönderildi!',
+          timestamp: new Date().toISOString(),
+          recipient: 'busbuskimkionline@gmail.com',
+          fileName: fileName,
+          features: [
+            'Kullanıcı bilgileri (Ad, Soyad, Doğum Tarihi)',
+            'Okuma detayları (Tür, Başlık, Yayılım, Tarih)',
+            'Seçilen kartlar listesi',
+            'Modern email tasarımı',
+            'PDF eki ile birlikte',
+            'Renkli bilgi kutuları',
+          ],
+        })
+      );
     } else {
-      return NextResponse.json(
-        { error: 'Enhanced email gönderilemedi' },
-        { status: 500 }
+      return EmailCORS.wrapResponse(
+        ErrorResponse.smtpConnectionError('Enhanced email gönderilemedi')
       );
     }
   } catch (error) {
     console.error('Enhanced email test API error:', error);
-
-    return NextResponse.json(
-      {
-        error: 'Internal server error',
-        details: error instanceof Error ? error.message : 'Bilinmeyen hata',
-      },
-      { status: 500 }
+    return EmailCORS.wrapResponse(
+      ErrorResponse.internalServerError(
+        error instanceof Error ? error.message : 'Bilinmeyen hata'
+      )
     );
   }
 }
 
 // OPTIONS endpoint - CORS preflight
 export async function OPTIONS(_request: NextRequest) {
-  const response = new NextResponse(null, { status: 200 });
-
-  response.headers.set('Access-Control-Allow-Origin', '*');
-  response.headers.set('Access-Control-Allow-Methods', 'POST, OPTIONS');
-  response.headers.set('Access-Control-Allow-Headers', 'Content-Type');
-  response.headers.set('Access-Control-Max-Age', '86400');
-
-  return response;
+  return EmailCORS.handlePreflightRequest();
 }
 
 export const runtime = 'nodejs';

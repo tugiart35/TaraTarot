@@ -21,7 +21,7 @@ import { useEffect, useState } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { supabase } from '@/lib/supabase/client';
 import { logError, logSupabaseError } from '@/lib/logger';
-import { useAuth } from '@/hooks/useAuth';
+import { useAuth } from '@/hooks/auth/useAuth';
 import {
   Users,
   Package,

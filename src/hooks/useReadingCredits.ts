@@ -13,7 +13,7 @@ Dosyanın amacı:
 
 import { useState, useEffect, useCallback } from 'react';
 import { READING_CREDITS, ReadingType } from '@/lib/constants/reading-credits';
-import { useAuth } from '@/hooks/useAuth';
+import { useAuth } from '@/hooks/auth/useAuth';
 import { supabase } from '@/lib/supabase/client';
 
 interface CreditStatus {

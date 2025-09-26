@@ -4,7 +4,7 @@ import { useEffect, useState, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { supabase } from '@/lib/supabase/client';
-import { useAuth } from '@/hooks/useAuth';
+import { useAuth } from '@/hooks/auth/useAuth';
 import { useTranslations } from '@/hooks/useTranslations';
 import {
   Star,
@@ -50,7 +50,7 @@ interface ReadingsPageProps {
 }
 
 export default function ReadingsPage({ params }: ReadingsPageProps) {
-  const { user, isAuthenticated, loading: authLoading } = useAuth();
+  const { user, loading: authLoading } = useAuth();
   const { t } = useTranslations();
   const router = useRouter();
   const [resolvedParams, setResolvedParams] = useState<{ locale: string } | null>(null);
@@ -259,13 +259,13 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
   // Auth kontrolü
   useEffect(() => {
     if (!authLoading) {
-      if (!isAuthenticated) {
+      if (!user) {
         router.replace(`/${locale}/auth`);
         return;
       }
       fetchReadings();
     }
-  }, [authLoading, isAuthenticated, router, locale, fetchReadings]);
+  }, [authLoading, user, router, locale, fetchReadings]);
 
   const handleFilterChange = (key: keyof ReadingFilters, value: string) => {
     setFilters(prev => ({ ...prev, [key]: value }));

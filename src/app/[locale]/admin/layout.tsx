@@ -2,9 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
-import { supabase } from '@/lib/supabase/client';
-import { logError, logAdminAction } from '@/lib/logger';
+import { usePathname } from 'next/navigation';
+import { logAdminAction } from '@/lib/logger';
 import { logAdminAction as auditLogAdminAction } from '@/lib/audit-logger';
 import { useSession } from '@/lib/session-manager';
 import { useSimpleAdmin } from '@/hooks/useSimpleAdmin';
@@ -90,13 +89,13 @@ export default function AdminLayout({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [notifications] = useState(3);
   const pathname = usePathname();
-  const router = useRouter();
 
   // Pathname'den locale'i çıkar
   const locale = pathname.split('/')[1] || 'tr';
 
   // Simple admin auth
   const { admin, loading, isAuthenticated, logout } = useSimpleAdmin();
+  const session = useSession();
   const [showSessionWarning, setShowSessionWarning] = useState(false);
 
   // Monitor session expiry
@@ -197,11 +196,10 @@ export default function AdminLayout({
           <div className='flex items-center justify-center space-x-3'>
             <Clock className='h-5 w-5' />
             <span className='text-sm font-medium'>
-              Oturum süresi yaklaşıyor.{' '}
-              {Math.ceil(session.timeUntilExpiry / 60000)} dakika kaldı.
+              Oturum süresi yaklaşıyor. Lütfen işlemlerinizi tamamlayın.
             </span>
             <button
-              onClick={() => session.refreshSession()}
+              onClick={() => session?.refreshSession?.() || window.location.reload()}
               className='ml-4 px-3 py-1 bg-white/20 rounded-lg text-xs hover:bg-white/30 transition-colors'
             >
               Yenile

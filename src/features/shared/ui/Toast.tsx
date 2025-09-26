@@ -1,8 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-
-export type ToastType = 'success' | 'error' | 'info' | 'warning';
+import type { ToastType } from '@/types/ui';
 
 interface ToastProps {
   message: string;

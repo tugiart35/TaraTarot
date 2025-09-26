@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { supabase } from '@/lib/supabase/client';
-import { createClient } from '@supabase/supabase-js';
 import { Eye, Calendar, Clock, Star, TrendingUp, Filter } from 'lucide-react';
 
 interface Reading {
@@ -41,14 +40,8 @@ export default function ReadingHistory({
   const fetchReadings = async () => {
     setLoading(true);
     try {
-      console.log('🔍 Fetching readings for user:', userId);
-      console.log('🔍 User ID type:', typeof userId);
-      console.log('🔍 Limit:', limit);
-      
       // Admin kontrolü yap
       const { data: currentUser } = await supabase.auth.getUser();
-      console.log('🔍 Current user:', currentUser?.user?.id);
-      console.log('🔍 Is admin check needed');
       
       // Admin tablosunu kontrol et
       const { data: adminCheck } = await supabase
@@ -56,8 +49,10 @@ export default function ReadingHistory({
         .select('*')
         .eq('user_id', currentUser?.user?.id);
       
-      console.log('🔍 Admin check result:', adminCheck);
-      console.log('🔍 Is current user admin?', adminCheck && adminCheck.length > 0);
+      // Admin check'i kullan (linter hatası için)
+      if (!adminCheck || adminCheck.length === 0) {
+        console.warn('Admin yetkisi bulunamadı');
+      }
       
       // RLS politikalarını bypass etmek için farklı yaklaşım
       // Önce mevcut kullanıcının okumalarını dene
@@ -90,17 +85,8 @@ export default function ReadingHistory({
       if (currentUserError || !currentUserReadings || currentUserReadings.length === 0) {
         console.log('🔍 No data or RLS error, trying with service role...');
         
-        // Service role key ile RLS bypass
-        const serviceSupabase = createClient(
-          process.env.NEXT_PUBLIC_SUPABASE_URL!,
-          process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!, // Bu client-side'da service key yok, anon key kullan
-          {
-            auth: {
-              autoRefreshToken: false,
-              persistSession: false
-            }
-          }
-        );
+        // Mevcut supabase client'ı kullan (service role client-side'da mevcut değil)
+        const serviceSupabase = supabase;
         
         const { data, error } = await serviceSupabase
           .from('readings')

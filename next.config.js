@@ -17,6 +17,18 @@ const nextConfig = {
   },
   // External packages for server components
   serverExternalPackages: ['@supabase/supabase-js'],
+  // Bundle optimization
+  experimental: {
+    optimizePackageImports: ['lucide-react', 'html2canvas', 'jspdf', 'framer-motion'],
+    turbo: {
+      rules: {
+        '*.svg': {
+          loaders: ['@svgr/webpack'],
+          as: '*.js',
+        },
+      },
+    },
+  },
   // Development server configuration
   // Force HTTP in development
   async rewrites() {
@@ -41,7 +53,7 @@ const nextConfig = {
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
               "font-src 'self' https://fonts.gstatic.com",
               "img-src 'self' data: https: blob:",
-              "connect-src 'self' https://*.supabase.co https://www.google-analytics.com https://www.googletagmanager.com",
+              "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://www.googletagmanager.com",
               "frame-src 'self'",
               "object-src 'none'",
               "base-uri 'self'",

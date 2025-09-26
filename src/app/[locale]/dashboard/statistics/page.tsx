@@ -42,7 +42,7 @@ Kullanım durumu:
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { supabase } from '@/lib/supabase/client';
-import { useAuth } from '@/hooks/useAuth';
+import { useAuth } from '@/hooks/auth/useAuth';
 import { useTranslations } from '@/hooks/useTranslations';
 import { BottomNavigation } from '@/features/shared/layout';
 import {
@@ -117,7 +117,8 @@ interface NumerologyInsights {
 }
 
 export default function StatisticsPage() {
-  const { user, isAuthenticated, loading: authLoading } = useAuth();
+  const { user, loading: authLoading } = useAuth();
+  const isAuthenticated = !!user;
   const { t } = useTranslations();
   const router = useRouter();
 

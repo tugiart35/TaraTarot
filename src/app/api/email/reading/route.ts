@@ -19,6 +19,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { emailService } from '@/lib/email/email-service';
 import { pdfGeneratorService } from '@/lib/pdf/pdf-generator';
 import { createClient } from '@supabase/supabase-js';
+import { ErrorResponse } from '@/lib/api/error-responses';
+import { EmailCORS } from '@/lib/api/email-cors';
 
 // POST endpoint - Send reading email
 export async function POST(request: NextRequest) {
@@ -31,9 +33,8 @@ export async function POST(request: NextRequest) {
     });
 
     if (!readingId) {
-      return NextResponse.json(
-        { error: 'Reading ID gerekli' },
-        { status: 400 }
+      return EmailCORS.wrapResponse(
+        ErrorResponse.missingFieldsError(['readingId'])
       );
     }
 
@@ -59,9 +60,8 @@ export async function POST(request: NextRequest) {
 
     if (readingError || !readingData) {
       console.error('❌ Okuma verisi bulunamadı:', readingError);
-      return NextResponse.json(
-        { error: 'Okuma verisi bulunamadı' },
-        { status: 404 }
+      return EmailCORS.wrapResponse(
+        ErrorResponse.notFoundError('Okuma verisi')
       );
     }
 
@@ -76,9 +76,8 @@ export async function POST(request: NextRequest) {
       await supabaseAdmin.auth.admin.getUserById(readingData.user_id);
     if (userError || !userData.user?.email) {
       console.error('❌ Kullanıcı email adresi alınamadı:', userError);
-      return NextResponse.json(
-        { error: 'Kullanıcı email adresi alınamadı' },
-        { status: 400 }
+      return EmailCORS.wrapResponse(
+        ErrorResponse.notFoundError('Kullanıcı email adresi')
       );
     }
 
@@ -123,43 +122,34 @@ export async function POST(request: NextRequest) {
 
     if (success) {
       console.log("✅ Okuma PDF'i başarıyla email ile gönderildi:", userEmail);
-      return NextResponse.json({
-        success: true,
-        message: 'Email başarıyla gönderildi',
-        timestamp: new Date().toISOString(),
-        recipient: userEmail,
-        fileName: fileName,
-      });
+      return EmailCORS.wrapResponse(
+        NextResponse.json({
+          success: true,
+          message: 'Email başarıyla gönderildi',
+          timestamp: new Date().toISOString(),
+          recipient: userEmail,
+          fileName: fileName,
+        })
+      );
     } else {
       console.error('❌ Email gönderimi başarısız');
-      return NextResponse.json(
-        { error: 'Email gönderimi başarısız' },
-        { status: 500 }
+      return EmailCORS.wrapResponse(
+        ErrorResponse.smtpConnectionError('Email gönderimi başarısız')
       );
     }
   } catch (error) {
     console.error('❌ Server-side email gönderimi hatası:', error);
-
-    return NextResponse.json(
-      {
-        error: 'Internal server error',
-        details: error instanceof Error ? error.message : 'Bilinmeyen hata',
-      },
-      { status: 500 }
+    return EmailCORS.wrapResponse(
+      ErrorResponse.internalServerError(
+        error instanceof Error ? error.message : 'Bilinmeyen hata'
+      )
     );
   }
 }
 
 // OPTIONS endpoint - CORS preflight
 export async function OPTIONS(_request: NextRequest) {
-  const response = new NextResponse(null, { status: 200 });
-
-  response.headers.set('Access-Control-Allow-Origin', '*');
-  response.headers.set('Access-Control-Allow-Methods', 'POST, OPTIONS');
-  response.headers.set('Access-Control-Allow-Headers', 'Content-Type');
-  response.headers.set('Access-Control-Max-Age', '86400');
-
-  return response;
+  return EmailCORS.handlePreflightRequest();
 }
 
 export const runtime = 'nodejs';

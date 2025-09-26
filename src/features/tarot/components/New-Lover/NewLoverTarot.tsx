@@ -49,7 +49,7 @@ import {
 } from '@/features/shared/ui';
 import { useTarotReading } from '@/hooks/useTarotReading';
 import { useTranslations } from '@/hooks/useTranslations';
-import { useAuth } from '@/hooks/useAuth';
+import { useAuth } from '@/hooks/auth/useAuth';
 import { useToast } from '@/hooks/useToast';
 import { useReadingCredits } from '@/hooks/useReadingCredits';
 import { findSpreadById } from '@/lib/constants/tarotSpreads';

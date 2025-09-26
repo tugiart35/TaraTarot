@@ -65,7 +65,7 @@ import BottomNavigation from '@/features/shared/layout/BottomNavigation';
 // Okuma detay modal bileşeni
 import ReadingDetailModal from '@/features/shared/ui/ReadingDetailModal';
 // Profil düzenleme modal bileşeni
-import ProfileModal from '@/features/dashboard/components/shared/ProfileModal';
+import ProfileModal from '@/components/dashboard/ProfileModal';
 // i18n hook'u - şu an kullanılmıyor
 // import { useTranslations } from '@/hooks/useTranslations';
 
@@ -87,29 +87,34 @@ export default function DashboardPage() {
     user,
     paymentLoading,
     translate,
+    loading,
   } = useDashboardData();
 
   // Dashboard aksiyonları hook'u
   const {
     profileModalOpen,
-    editing,
-    editForm,
-    saving,
     selectedReading,
     handlePackagePurchase,
     handleLogout,
     openProfileModal,
-    handleSaveProfile,
     setProfileModalOpen,
-    setEditing,
-    setEditForm,
     setSelectedReading,
   } = useDashboardActions(profile, user, currentLocale, setProfile);
 
   // Mobil sidebar state'i
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  // Auth kontrolü yok - dashboard herkese açık
+  // Loading state kontrolü
+  if (loading) {
+    return (
+      <div className='min-h-screen bg-cosmic-black flex items-center justify-center'>
+        <div className='text-center'>
+          <div className='animate-spin rounded-full h-12 w-12 border-b-2 border-gold mx-auto mb-4'></div>
+          <p className='text-cosmic-300'>Dashboard yükleniyor...</p>
+        </div>
+      </div>
+    );
+  }
 
   // Ana dashboard sayfası JSX'i - Modüler yapı
   return (
@@ -182,19 +187,10 @@ export default function DashboardPage() {
       {/* Profile Modal - Profil düzenleme modal'ı */}
       <ProfileModal
         isOpen={profileModalOpen}
-        onClose={() => setProfileModalOpen(false)} // Modal'ı kapat
+        onClose={() => setProfileModalOpen(false)}
         profile={profile}
         user={user}
-        editing={editing}
-        editForm={editForm}
-        saving={saving}
-        onEdit={() => setEditing(true)} // Düzenleme modunu aç
-        onCancelEdit={() => setEditing(false)} // Düzenleme modunu kapat
-        onSave={handleSaveProfile} // Profil kaydetme işlemi
-        onFormChange={(field, value) =>
-          setEditForm(prev => ({ ...prev, [field]: value }))
-        } // Form değişikliklerini işle
-        currentLocale={currentLocale}
+        onProfileUpdate={setProfile}
       />
 
       {/* Bottom Navigation - Alt navigasyon */}

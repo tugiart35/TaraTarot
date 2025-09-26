@@ -40,114 +40,22 @@ Gereklilik ve Kullanım Durumu:
 'use client';
 
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import { useAuth } from '@/hooks/useAuth';
+import { LayoutErrorBoundary } from '@/components/layout/LayoutErrorBoundary';
+import { useNavigation } from '@/hooks/useNavigation';
+import { usePerformanceMonitoring } from '@/hooks/usePerformanceMonitoring';
 
-// Dil seçenekleri
-const languages = [
-  { code: 'tr', name: 'Türkçe', flag: '🇹🇷' },
-  { code: 'en', name: 'English', flag: '🇺🇸' },
-  { code: 'sr', name: 'Srpski', flag: '🇷🇸' },
-];
-
-// Navigasyon öğelerini oluştur - auth durumuna göre dinamik
-const getNavigationItems = (
-  currentLocale: string,
-  isAuthenticated: boolean,
-  isAdmin: boolean
-) => {
-  const baseItems = [
-    {
-      name: 'Tarot',
-      href: `/${currentLocale}/tarotokumasi`,
-      icon: '⭐',
-      activeIcon: '⭐',
-    },
-    {
-      name: 'Numeroloji',
-      href: `/${currentLocale}/numeroloji`,
-      icon: '🔢',
-      activeIcon: '🔢',
-    },
-    {
-      name: 'Ana Sayfa',
-      href: `/${currentLocale}`,
-      icon: '💛',
-      activeIcon: '💛',
-    },
-  ];
-
-  // Admin kontrolü - admin ise Pakize sekmesi ekle
-  if (isAuthenticated && isAdmin) {
-    baseItems.push({
-      name: 'Pakize',
-      href: `/${currentLocale}/pakize`,
-      icon: '👑',
-      activeIcon: '👑',
-    });
-  }
-
-  // Auth durumuna göre giriş/profil sekmesi ekle
-  if (isAuthenticated) {
-    baseItems.push({
-      name: 'Profil',
-      href: `/${currentLocale}/dashboard`,
-      icon: '👤',
-      activeIcon: '👤',
-    });
-  } else {
-    baseItems.push({
-      name: 'Giriş Yap',
-      href: `/${currentLocale}/auth`,
-      icon: '🔑',
-      activeIcon: '🔑',
-    });
-  }
-
-  return baseItems;
-};
+// Navigation logic moved to useNavigation hook
 
 // Dil seçici bileşeni
 function LanguageSelector() {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname();
+  const { currentLanguage, languages, handleLanguageChange } = useNavigation();
 
-  // Mevcut dili pathname'den çıkar
-  const currentLocale = pathname.split('/')[1] || 'tr';
-  const currentLanguage =
-    languages.find(lang => lang.code === currentLocale) || languages[0];
-
-  const handleLanguageChange = (locale: string) => {
-    try {
-      // Mevcut path'i locale olmadan al - daha güvenli yöntem
-      let pathWithoutLocale = pathname;
-
-      // Eğer pathname locale ile başlıyorsa, onu kaldır
-      if (pathname.startsWith(`/${currentLocale}/`)) {
-        pathWithoutLocale = pathname.substring(`/${currentLocale}`.length);
-      } else if (pathname === `/${currentLocale}`) {
-        pathWithoutLocale = '/';
-      }
-
-      // Yeni path oluştur - mevcut sayfayı koru
-      const newPath =
-        pathWithoutLocale === '/'
-          ? `/${locale}/tarotokumasi`
-          : `/${locale}${pathWithoutLocale}`;
-
-      // Dropdown'ı kapat
-      setIsOpen(false);
-
-      // Cookie'yi güncelle - dil tercihini kaydet
-      document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=31536000; SameSite=Lax`;
-
-      // Doğrudan window.location ile yönlendirme
-      window.location.href = newPath;
-    } catch (error) {
-      // Dil değiştirme hatası sessizce işlenir
-      console.error('Language change error:', error);
-    }
+  const handleLanguageSelect = (locale: string) => {
+    setIsOpen(false);
+    handleLanguageChange(locale);
   };
 
   return (
@@ -155,6 +63,10 @@ function LanguageSelector() {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className='flex flex-col items-center justify-center px-2 py-2 rounded-lg transition-all duration-300 min-w-0 flex-1 text-gray-500 hover:text-gray-300'
+        aria-label="Dil seçici menüsünü aç"
+        aria-expanded={isOpen}
+        aria-haspopup="menu"
+        role="button"
       >
         <span className='text-lg mb-1'>{currentLanguage?.flag}</span>
         <span className='text-xs font-medium truncate'>
@@ -172,21 +84,28 @@ function LanguageSelector() {
           />
 
           {/* Dropup menü */}
-          <div className='absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 z-50 bg-slate-800/95 backdrop-blur-md border border-slate-600 rounded-lg shadow-xl min-w-[140px]'>
+          <div 
+            className='absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 z-50 bg-slate-800/95 backdrop-blur-md border border-slate-600 rounded-lg shadow-xl min-w-[140px]'
+            role="menu"
+            aria-label="Dil seçenekleri"
+          >
             {languages.map((language, index) => (
               <button
                 key={language.code}
-                onClick={() => handleLanguageChange(language.code)}
+                onClick={() => handleLanguageSelect(language.code)}
                 className={`
                   w-full px-4 py-3 text-left hover:bg-slate-700/50 transition-colors duration-200
                   ${index === 0 ? 'rounded-t-lg' : ''}
                   ${index === languages.length - 1 ? 'rounded-b-lg' : ''}
                   ${
-                    currentLocale === language.code
+                    currentLanguage?.code === language.code
                       ? 'bg-slate-700/50 text-amber-400'
                       : 'text-gray-300'
                   }
                 `}
+                role="menuitem"
+                aria-label={`${language.name} dilini seç`}
+                aria-current={currentLanguage?.code === language.code ? 'true' : 'false'}
               >
                 <div className='flex items-center space-x-3'>
                   <span className='text-lg'>{language.flag}</span>
@@ -208,21 +127,18 @@ function LanguageSelector() {
 
 export default function BottomNavigation() {
   const pathname = usePathname();
-  const router = useRouter();
-  const { isAuthenticated, isAdmin } = useAuth();
-  const currentLocale = pathname.split('/')[1] || 'tr';
+  const { navigationItems, handleNavigationClick } = useNavigation();
+  const { trackUserInteraction } = usePerformanceMonitoring();
 
   // Profil ikonuna tıklama işlemi - programatik yönlendirme
   const handleProfileClick = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
     
-    if (isAuthenticated) {
-      // Dashboard sayfasına programatik yönlendirme
-      router.push(`/${currentLocale}/dashboard`);
-    } else {
-      // Auth sayfasına yönlendirme
-      router.push(`/${currentLocale}/auth`);
+    const profileItem = navigationItems.find(item => item.name === 'Profil' || item.name === 'Giriş Yap');
+    if (profileItem) {
+      trackUserInteraction(profileItem.name, 'click');
+      handleNavigationClick(profileItem);
     }
   };
 
@@ -231,26 +147,20 @@ export default function BottomNavigation() {
     e.preventDefault();
     e.stopPropagation();
     
-    console.log('👑 Pakize sekmesi tıklandı:', { isAuthenticated, isAdmin, currentLocale });
-    
-    if (isAuthenticated && isAdmin) {
-      console.log('👑 Pakize sayfasına yönlendiriliyor:', `/${currentLocale}/pakize`);
-      // Pakize sayfasına programatik yönlendirme - window.location kullan
-      window.location.href = `/${currentLocale}/pakize`;
-    } else {
-      console.log('👑 Pakize erişim hatası:', { isAuthenticated, isAdmin });
+    const pakizeItem = navigationItems.find(item => item.name === 'Pakize');
+    if (pakizeItem) {
+      trackUserInteraction(pakizeItem.name, 'click');
+      handleNavigationClick(pakizeItem);
     }
   };
 
-  // Navigation items oluştur
-  const navigationItems = getNavigationItems(
-    currentLocale,
-    isAuthenticated,
-    isAdmin
-  );
-
   return (
-    <nav className='fixed bottom-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-md border-t border-slate-700'>
+    <LayoutErrorBoundary>
+      <nav 
+        className='fixed bottom-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-md border-t border-slate-700'
+        role="navigation"
+        aria-label="Ana navigasyon menüsü"
+      >
       <div className='flex items-center justify-around h-16 px-1'>
         {navigationItems.map(item => {
           const isActive =
@@ -272,6 +182,9 @@ export default function BottomNavigation() {
                   transition-all duration-300 min-w-0 flex-1
                   ${isActive ? 'text-amber-400' : 'text-gray-500 hover:text-gray-300'}
                 `}
+                aria-label={`${item.name} sayfasına git`}
+                aria-current={isActive ? 'page' : undefined}
+                role="menuitem"
               >
                 <span className='text-lg mb-1'>
                   {isActive ? item.activeIcon : item.icon}
@@ -291,6 +204,9 @@ export default function BottomNavigation() {
                   transition-all duration-300 min-w-0 flex-1
                   ${isActive ? 'text-amber-400' : 'text-gray-500 hover:text-gray-300'}
                 `}
+                aria-label={`${item.name} sayfasına git`}
+                aria-current={isActive ? 'page' : undefined}
+                role="menuitem"
               >
                 <span className='text-lg mb-1'>
                   {isActive ? item.activeIcon : item.icon}
@@ -309,6 +225,9 @@ export default function BottomNavigation() {
                 transition-all duration-300 min-w-0 flex-1
                 ${isActive ? 'text-amber-400' : 'text-gray-500 hover:text-gray-300'}
               `}
+              aria-label={`${item.name} sayfasına git`}
+              aria-current={isActive ? 'page' : undefined}
+              role="menuitem"
             >
               <span className='text-lg mb-1'>
                 {isActive ? item.activeIcon : item.icon}
@@ -322,5 +241,6 @@ export default function BottomNavigation() {
         <LanguageSelector />
       </div>
     </nav>
+    </LayoutErrorBoundary>
   );
 }

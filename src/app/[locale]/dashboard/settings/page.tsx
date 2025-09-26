@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { supabase } from '@/lib/supabase/client';
-import { useAuth } from '@/hooks/useAuth';
+import { useAuth } from '@/hooks/auth/useAuth';
 import { useTranslations } from '@/hooks/useTranslations';
 import { BottomNavigation } from '@/features/shared/layout';
 import { Settings, Bell, Shield, Download, Trash2, Lock } from 'lucide-react';
@@ -23,7 +23,7 @@ interface PrivacySettings {
 }
 
 export default function SettingsPage() {
-  const { user, isAuthenticated, loading: authLoading } = useAuth();
+  const { user, loading: authLoading } = useAuth();
   const { t } = useTranslations();
   const router = useRouter();
 
@@ -61,13 +61,13 @@ export default function SettingsPage() {
   // Auth kontrolü
   useEffect(() => {
     if (!authLoading) {
-      if (!isAuthenticated) {
+      if (!user) {
         router.replace(`/${locale}/auth`);
         return;
       }
       fetchUserSettings();
     }
-  }, [authLoading, isAuthenticated, router, locale]);
+  }, [authLoading, user, router, locale]);
 
   const fetchUserSettings = async () => {
     if (!user) return;

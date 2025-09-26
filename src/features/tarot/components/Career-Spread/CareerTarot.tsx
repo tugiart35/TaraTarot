@@ -51,7 +51,7 @@ import {
 import { useTarotReading } from '@/hooks/useTarotReading';
 import { useTranslations } from '@/hooks/useTranslations';
 import { useReadingCredits } from '@/hooks/useReadingCredits';
-import { useAuth } from '@/hooks/useAuth';
+import { useAuth } from '@/hooks/auth/useAuth';
 import { findSpreadById } from '@/lib/constants/tarotSpreads';
 import {
   CAREER_POSITIONS_INFO,

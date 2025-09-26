@@ -2,6 +2,7 @@
 
 import { UserProfile } from '@/types/dashboard.types';
 import { formatDate, getMemberSince } from '@/utils/dashboard-utils';
+import { getUserLevelString } from '@/utils/dashboard/user-level-utils';
 import { Coins, BookOpen, Calendar, Award, RefreshCw } from 'lucide-react';
 
 interface StatsCardsProps {
@@ -107,14 +108,10 @@ export default function StatsCards({
               {translate('dashboard.userLevel', 'Kullanıcı Seviyesi')}
             </p>
             <p className='text-2xl font-bold text-text-celestial'>
-              {isAdmin
-                ? translate('dashboard.admin', 'Admin')
-                : recentReadings.length > 30
-                  ? translate('dashboard.expert', 'Uzman')
-                  : recentReadings.length > 13
-                    ? translate('dashboard.intermediate', 'Orta')
-                    : translate('dashboard.beginner', 'Başlangıç')}{' '}
-              {/* Okuma sayısına göre seviye */}
+              {translate(
+                `dashboard.${getUserLevelString(totalCount, isAdmin, recentReadings).toLowerCase()}`,
+                getUserLevelString(totalCount, isAdmin, recentReadings)
+              )}
             </p>
           </div>
         </div>

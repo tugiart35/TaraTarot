@@ -46,10 +46,12 @@ const supportedLocales = ['tr', 'en', 'sr'] as const;
 type Locale = (typeof supportedLocales)[number];
 
 // Nested key'leri çözmek için helper fonksiyon
-function getNestedValue(obj: any, path: string): string {
-  return path.split('.').reduce((current, key) => {
-    return current && current[key] !== undefined ? current[key] : null;
-  }, obj);
+function getNestedValue(obj: Record<string, unknown>, path: string): string {
+  return path.split('.').reduce((current: unknown, key: string) => {
+    return current && typeof current === 'object' && current !== null && key in current 
+      ? (current as Record<string, unknown>)[key] 
+      : null;
+  }, obj) as string;
 }
 
 export function useTranslations() {

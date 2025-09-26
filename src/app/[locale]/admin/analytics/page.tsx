@@ -280,7 +280,7 @@ export default function AnalyticsPage() {
         })),
         revenueData,
         userGrowthData,
-        pageViews: Object.entries(pageViewsStats).map(([page, stats]) => ({
+        pageViews: Object.entries(pageViewsStats).map(([page, stats]: [string, any]) => ({
           page,
           views: stats.views,
           avgDuration: Math.round(stats.totalDuration / stats.views)

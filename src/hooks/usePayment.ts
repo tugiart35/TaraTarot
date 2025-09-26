@@ -27,7 +27,7 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import { useAuth } from '@/hooks/useAuth';
+import { useAuth } from '@/hooks/auth/useAuth';
 import { supabase } from '@/lib/supabase/client';
 import type {
   PaymentSubscription,

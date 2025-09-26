@@ -178,7 +178,7 @@ export default function PackagesPage() {
       }
       
       // Format packages safely
-      const formattedPackages = (data || []).map(pkg => ({
+      const formattedPackages = (data || []).map((pkg: any) => ({
         id: pkg.id || Date.now(),
         name: pkg.name || 'Unnamed Package',
         description: pkg.description || '',

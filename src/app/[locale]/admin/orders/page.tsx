@@ -105,14 +105,14 @@ export default function OrdersPage() {
       if (error) return;
       
       const transactions = data || [];
-      const purchases = transactions.filter(t => t.type === 'purchase');
-      const bonuses = transactions.filter(t => t.type === 'bonus');
-      const deductions = transactions.filter(t => t.type === 'deduction');
+      const purchases = transactions.filter((t: any) => t.type === 'purchase');
+      const bonuses = transactions.filter((t: any) => t.type === 'bonus');
+      const deductions = transactions.filter((t: any) => t.type === 'deduction');
       // const refunds = transactions.filter(t => t.type === 'refund');
       // Sadece Shopier'den gelen gelirleri hesapla
       const shopierRevenue = purchases
-        .filter(t => t.ref_type === 'shopier_payment')
-        .reduce((sum, t) => sum + (t.amount || 0), 0);
+        .filter((t: any) => t.ref_type === 'shopier_payment')
+        .reduce((sum: number, t: any) => sum + (t.amount || 0), 0);
       
       setStats({
         total: transactions.length,
@@ -179,7 +179,7 @@ export default function OrdersPage() {
       }
       
       // Format transactions safely with user data
-      const formattedOrders = (data || []).map(transaction => ({
+      const formattedOrders = (data || []).map((transaction: any) => ({
         id: transaction.id || 'unknown',
         user_id: transaction.user_id || 'unknown',
         type: transaction.type || 'unknown',
@@ -253,7 +253,7 @@ export default function OrdersPage() {
       }
       
       // CSV formatında export
-      const csvData = (data || []).map(transaction => ({
+      const csvData = (data || []).map((transaction: any) => ({
         'Transaction ID': transaction.id,
         'Kullanıcı': transaction.profiles?.display_name || 'Bilinmeyen',
         'Email': transaction.profiles?.email || 'Bilinmeyen',
@@ -270,7 +270,7 @@ export default function OrdersPage() {
       // CSV oluştur
       const csvContent = [
         Object.keys(csvData[0] || {}).join(','),
-        ...csvData.map(row => Object.values(row).map(val => `"${val}"`).join(','))
+        ...csvData.map((row: any) => Object.values(row).map((val: any) => `"${val}"`).join(','))
       ].join('\n');
       
       // Dosyayı indir

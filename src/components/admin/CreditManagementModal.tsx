@@ -3,18 +3,13 @@
 import { useState } from 'react';
 import { supabase } from '@/lib/supabase/client';
 import { X, Coins, TrendingUp, TrendingDown } from 'lucide-react';
-
-interface User {
-  id: string;
-  email: string;
-  display_name: string | null;
-  credit_balance: number;
-}
+import { AdminUser } from '@/types/admin.types';
+import { AdminErrorService } from '@/lib/admin/admin-error-service';
 
 interface CreditManagementModalProps {
-  user: User;
+  user: AdminUser;
   onClose: () => void;
-  onUpdate: (user: User) => void;
+  onUpdate: (user: AdminUser) => void;
 }
 
 export default function CreditManagementModal({
@@ -84,8 +79,8 @@ export default function CreditManagementModal({
         credit_balance: newBalance,
       });
     } catch (error) {
-      console.error('Error updating credits:', error);
-      setError('Kredi güncellenirken bir hata oluştu. Lütfen tekrar deneyin.');
+      const errorMessage = AdminErrorService.handleError(error, 'credit update');
+      setError(errorMessage);
     } finally {
       setLoading(false);
     }

@@ -11,6 +11,7 @@ import {
   X,
 } from 'lucide-react';
 import { useTranslations } from '@/hooks/useTranslations';
+import { getDashboardRoutes } from '@/utils/dashboard/routing-utils';
 
 interface NavigationHeaderProps {
   currentLocale: string;
@@ -27,6 +28,7 @@ export default function NavigationHeader({
   handleLogout,
 }: NavigationHeaderProps) {
   const { t } = useTranslations();
+  const routes = getDashboardRoutes(currentLocale);
   return (
     <header className='fixed top-0 left-0 right-0 z-50 admin-sidebar border-b border-mystical-700/50'>
       <div className='flex items-center justify-between h-16 px-4 md:px-6'>
@@ -44,7 +46,7 @@ export default function NavigationHeader({
         <nav className='hidden md:flex items-center space-x-1'>
           {/* Dashboard linki - aktif sayfa */}
           <a
-            href={`/${currentLocale}/dashboard`}
+            href={routes.main}
             className='flex items-center space-x-2 px-4 py-2 text-gold bg-crystal-clear border-b-2 border-gold rounded-t-lg transition-colors'
           >
             <BarChart3 className='h-4 w-4' />
@@ -54,7 +56,7 @@ export default function NavigationHeader({
           </a>
           {/* Okumalar sayfası linki */}
           <a
-            href={`/${currentLocale}/dashboard/readings`}
+            href={routes.readings}
             className='flex items-center space-x-2 px-4 py-2 text-text-mystic hover:text-text-celestial hover:bg-crystal-clear rounded-t-lg transition-colors'
           >
             <BookOpen className='h-4 w-4' />
@@ -62,7 +64,7 @@ export default function NavigationHeader({
           </a>
           {/* İstatistikler sayfası linki */}
           <a
-            href={`/${currentLocale}/dashboard/statistics`}
+            href={routes.statistics}
             className='flex items-center space-x-2 px-4 py-2 text-text-mystic hover:text-text-celestial hover:bg-crystal-clear rounded-t-lg transition-colors'
           >
             <TrendingUp className='h-4 w-4' />
@@ -70,7 +72,7 @@ export default function NavigationHeader({
           </a>
           {/* Ayarlar sayfası linki */}
           <a
-            href={`/${currentLocale}/dashboard/settings`}
+            href={routes.settings}
             className='flex items-center space-x-2 px-4 py-2 text-text-mystic hover:text-text-celestial hover:bg-crystal-clear rounded-t-lg transition-colors'
           >
             <Settings className='h-4 w-4' />
@@ -106,7 +108,7 @@ export default function NavigationHeader({
           <nav className='px-4 py-2 space-y-1'>
             {/* Dashboard linki - mobil */}
             <a
-              href={`/${currentLocale}/dashboard`}
+              href={routes.main}
               className='flex items-center space-x-3 px-4 py-3 text-gold bg-crystal-clear border-l-4 border-gold rounded-lg'
               onClick={() => setSidebarOpen(false)} // Linke tıklayınca menüyü kapat
             >
@@ -117,7 +119,7 @@ export default function NavigationHeader({
             </a>
             {/* Okumalar linki - mobil */}
             <a
-              href={`/${currentLocale}/dashboard/readings`}
+              href={routes.readings}
               className='flex items-center space-x-3 px-4 py-3 text-text-mystic hover:text-text-celestial hover:bg-crystal-clear rounded-lg transition-colors'
               onClick={() => setSidebarOpen(false)} // Linke tıklayınca menüyü kapat
             >
@@ -126,7 +128,7 @@ export default function NavigationHeader({
             </a>
             {/* İstatistikler linki - mobil */}
             <a
-              href={`/${currentLocale}/dashboard/statistics`}
+              href={routes.statistics}
               className='flex items-center space-x-3 px-4 py-3 text-text-mystic hover:text-text-celestial hover:bg-crystal-clear rounded-lg transition-colors'
               onClick={() => setSidebarOpen(false)} // Linke tıklayınca menüyü kapat
             >
@@ -135,7 +137,7 @@ export default function NavigationHeader({
             </a>
             {/* Ayarlar linki - mobil */}
             <a
-              href={`/${currentLocale}/dashboard/settings`}
+              href={routes.settings}
               className='flex items-center space-x-3 px-4 py-3 text-text-mystic hover:text-text-celestial hover:bg-crystal-clear rounded-lg transition-colors'
               onClick={() => setSidebarOpen(false)} // Linke tıklayınca menüyü kapat
             >

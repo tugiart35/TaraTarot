@@ -30,6 +30,8 @@ Kullanım durumu:
 
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import { ErrorResponse } from '@/lib/api/error-responses';
+import { EmailCORS } from '@/lib/api/email-cors';
 
 export async function POST(request: NextRequest) {
   let requestBody: any = null;
@@ -39,27 +41,18 @@ export async function POST(request: NextRequest) {
 
     // Input validation
     if (!to || !subject || !emailBody) {
-      return NextResponse.json(
-        { success: false, message: 'Missing required fields' },
-        { status: 400 }
-      );
+      return ErrorResponse.missingFieldsError(['to', 'subject', 'body']);
     }
 
     // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(to)) {
-      return NextResponse.json(
-        { success: false, message: 'Invalid email address' },
-        { status: 400 }
-      );
+      return ErrorResponse.emailValidationError();
     }
 
     // SMTP settings validation
     if (!smtpSettings || !smtpSettings.smtp_host || !smtpSettings.smtp_user) {
-      return NextResponse.json(
-        { success: false, message: 'SMTP settings required' },
-        { status: 400 }
-      );
+      return ErrorResponse.missingFieldsError(['smtp_host', 'smtp_user']);
     }
 
     // Create transporter
@@ -78,10 +71,7 @@ export async function POST(request: NextRequest) {
       await transporter.verify();
     } catch (error) {
       console.error('SMTP connection verification failed:', error);
-      return NextResponse.json(
-        { success: false, message: 'SMTP connection failed' },
-        { status: 500 }
-      );
+      return ErrorResponse.smtpConnectionError();
     }
 
     // Send email
@@ -94,57 +84,23 @@ export async function POST(request: NextRequest) {
 
     const info = await transporter.sendMail(mailOptions);
 
-    // Log email
-    // const supabase = createClient();
-    // await supabase.from('email_logs').insert({
-    //   to_email: to,
-    //   subject: subject,
-    //   status: 'sent',
-    //   sent_at: new Date().toISOString(),
-    // });
-
-    return NextResponse.json({
-      success: true,
-      message: 'Email sent successfully',
-      messageId: info.messageId,
-    });
+    return EmailCORS.wrapResponse(
+      NextResponse.json({
+        success: true,
+        message: 'Email sent successfully',
+        messageId: info.messageId,
+      })
+    );
   } catch (error) {
     console.error('Email sending error:', error);
-
-    // Log error
-    // try {
-    //   const supabase = createClient();
-    //   await supabase.from('email_logs').insert({
-    //     to_email: requestBody?.to || 'unknown',
-    //     subject: requestBody?.subject || 'unknown',
-    //     status: 'failed',
-    //     error_message: (error as Error).message,
-    //     created_at: new Date().toISOString(),
-    //   });
-    // } catch (logError) {
-    //   console.error('Error logging email failure:', logError);
-    // }
-
-    return NextResponse.json(
-      {
-        success: false,
-        message: 'Email sending failed',
-        error: (error as Error).message,
-      },
-      { status: 500 }
+    return EmailCORS.wrapResponse(
+      ErrorResponse.internalServerError((error as Error).message)
     );
   }
 }
 
 export async function OPTIONS() {
-  return new NextResponse(null, {
-    status: 200,
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'POST, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-    },
-  });
+  return EmailCORS.handlePreflightRequest();
 }
 
 export const runtime = 'nodejs';

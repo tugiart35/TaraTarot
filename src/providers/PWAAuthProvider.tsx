@@ -26,7 +26,7 @@
 'use client';
 
 import React, { createContext, useContext, useEffect, useState, useCallback } from 'react';
-import { useAuth } from '@/hooks/useAuth';
+import { useAuth } from '@/hooks/auth/useAuth';
 import type { AuthContextType, SessionStorage } from '@/types/auth.types';
 
 interface PWAAuthContextType extends AuthContextType {

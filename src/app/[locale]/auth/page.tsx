@@ -3,7 +3,7 @@
  *
  * Bağlı dosyalar:
  * - src/lib/supabase/server.ts (server client)
- * - src/components/auth/SignInForm.tsx (client component)
+ * - src/components/auth/AuthForm.tsx (client component)
  * - src/middleware.ts (auth middleware)
  *
  * Dosya amacı:
@@ -29,9 +29,8 @@
  * - ✅ Production-ready: Next.js 14 App Router uyumlu
  */
 
-import { redirect } from 'next/navigation';
-import { getServerSession } from '@/lib/supabase/server';
-import SignInForm from '@/components/auth/SignInForm';
+import AuthForm from '@/components/auth/AuthForm';
+import AuthAccessibilityWrapper from '@/components/auth/AuthAccessibilityWrapper';
 
 interface AuthPageProps {
   params: Promise<{
@@ -55,25 +54,17 @@ export default async function AuthPage({ params, searchParams }: AuthPageProps) 
   //   redirect(`/${locale}/dashboard`);
   // }
 
-  // Client Component'e handoff
+  // Client Component'e handoff with accessibility wrapper
   return (
-    <div className="min-h-screen bg-night flex items-center justify-center p-4 pb-20">
-      <div className="max-w-md w-full bg-lavender/10 backdrop-blur-sm rounded-lg p-8 border border-lavender/20">
-        <div className="text-center mb-8">
-          <div className="h-12 w-12 text-gold mx-auto mb-4 flex items-center justify-center">
-            🌙
-          </div>
-          <h1 className="text-2xl font-bold text-white">
-            Mistik Giriş
-          </h1>
-        </div>
-        
-        <SignInForm 
-          locale={locale}
-          initialError={error || null}
-          next={next || null}
-        />
-      </div>
-    </div>
+    <AuthAccessibilityWrapper 
+      title="Mistik Giriş"
+      description="Güvenli giriş yapın veya yeni hesap oluşturun"
+    >
+      <AuthForm 
+        locale={locale}
+        initialError={error || null}
+        next={next || null}
+      />
+    </AuthAccessibilityWrapper>
   );
 }

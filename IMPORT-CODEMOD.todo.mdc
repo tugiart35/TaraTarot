@@ -1,0 +1,425 @@
+---
+alwaysApply: true
+---
+
+# 🔄 Import Güncelleme Codemod - Modül Konsolidasyonu
+
+**Tarih:** 2025-01-27  
+**Amaç:** Import path'lerini otomatik olarak yeni modül yapısına güncelleme  
+**Durum:** Planlama Tamamlandı ✅
+
+---
+
+## 🎯 Codemod Stratejisi
+
+### 1. Aşamalı Güncelleme
+- **Aşama 1:** Admin modülü import'ları
+- **Aşama 2:** Auth modülü import'ları  
+- **Aşama 3:** Shared modülü import'ları
+- **Aşama 4:** Tarot modülü import'ları
+
+### 2. Güvenli Güncelleme
+- Her aşamada test edilir
+- Rollback planı hazır
+- Incremental deployment
+
+---
+
+## 📋 Import Güncelleme Haritası
+
+### Admin Modülü Import'ları
+
+#### Eski → Yeni Path Mapping
+```typescript
+// Service imports
+'@/lib/admin/admin-users' → '@/modules/admin/services/admin-users'
+'@/lib/admin/api-keys' → '@/modules/admin/services/api-keys'
+'@/lib/admin/email-system' → '@/modules/admin/services/email-system'
+'@/lib/admin/maintenance-system' → '@/modules/admin/services/maintenance-system'
+'@/lib/admin/shopier-system' → '@/modules/admin/services/shopier-system'
+'@/lib/admin/admin-performance' → '@/modules/admin/services/admin-performance'
+'@/lib/admin/admin-error-service' → '@/modules/admin/services/admin-error-service'
+
+// Component imports
+'@/components/admin/UserDetailModal' → '@/modules/admin/components/UserDetailModal'
+'@/components/admin/CreditManagementModal' → '@/modules/admin/components/CreditManagementModal'
+'@/components/admin/AdminUserModals' → '@/modules/admin/components/AdminUserModals'
+
+// Hook imports
+'@/hooks/admin/useAdminData' → '@/modules/admin/hooks/useAdminData'
+'@/hooks/admin/useAdminFilter' → '@/modules/admin/hooks/useAdminFilter'
+
+// Type imports
+'@/types/admin.types' → '@/modules/admin/types/admin.types'
+```
+
+#### Sed Komutları
+```bash
+# Admin service imports
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/lib/admin/admin-users|@/modules/admin/services/admin-users|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/lib/admin/api-keys|@/modules/admin/services/api-keys|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/lib/admin/email-system|@/modules/admin/services/email-system|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/lib/admin/maintenance-system|@/modules/admin/services/maintenance-system|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/lib/admin/shopier-system|@/modules/admin/services/shopier-system|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/lib/admin/admin-performance|@/modules/admin/services/admin-performance|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/lib/admin/admin-error-service|@/modules/admin/services/admin-error-service|g'
+
+# Admin component imports
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/components/admin/UserDetailModal|@/modules/admin/components/UserDetailModal|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/components/admin/CreditManagementModal|@/modules/admin/components/CreditManagementModal|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/components/admin/AdminUserModals|@/modules/admin/components/AdminUserModals|g'
+
+# Admin hook imports
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/hooks/admin/useAdminData|@/modules/admin/hooks/useAdminData|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/hooks/admin/useAdminFilter|@/modules/admin/hooks/useAdminFilter|g'
+
+# Admin type imports
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/types/admin.types|@/modules/admin/types/admin.types|g'
+```
+
+### Auth Modülü Import'ları
+
+#### Eski → Yeni Path Mapping
+```typescript
+// Service imports
+'@/lib/auth/auth-service' → '@/modules/auth/services/auth-service'
+'@/lib/auth/auth-validation' → '@/modules/auth/services/auth-validation'
+'@/lib/auth/auth-error-messages' → '@/modules/auth/services/auth-error-messages'
+
+// Component imports
+'@/components/auth/AuthForm' → '@/modules/auth/components/AuthForm'
+'@/components/auth/AuthAccessibilityWrapper' → '@/modules/auth/components/AuthAccessibilityWrapper'
+
+// Hook imports
+'@/hooks/auth/useAuth' → '@/modules/auth/hooks/useAuth'
+'@/hooks/auth/useRememberMe' → '@/modules/auth/hooks/useRememberMe'
+
+// Type imports
+'@/types/auth.types' → '@/modules/auth/types/auth.types'
+```
+
+#### Sed Komutları
+```bash
+# Auth service imports
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/lib/auth/auth-service|@/modules/auth/services/auth-service|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/lib/auth/auth-validation|@/modules/auth/services/auth-validation|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/lib/auth/auth-error-messages|@/modules/auth/services/auth-error-messages|g'
+
+# Auth component imports
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/components/auth/AuthForm|@/modules/auth/components/AuthForm|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/components/auth/AuthAccessibilityWrapper|@/modules/auth/components/AuthAccessibilityWrapper|g'
+
+# Auth hook imports
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/hooks/auth/useAuth|@/modules/auth/hooks/useAuth|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/hooks/auth/useRememberMe|@/modules/auth/hooks/useRememberMe|g'
+
+# Auth type imports
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/types/auth.types|@/modules/auth/types/auth.types|g'
+```
+
+### Shared Modülü Import'ları
+
+#### Eski → Yeni Path Mapping
+```typescript
+// UI component imports
+'@/features/shared/ui/BaseCardRenderer' → '@/modules/shared/ui/BaseCardRenderer'
+'@/features/shared/ui/BaseInterpretation' → '@/modules/shared/ui/BaseInterpretation'
+'@/features/shared/ui/Toast' → '@/modules/shared/ui/Toast'
+'@/features/shared/ui/LoadingSpinner' → '@/modules/shared/ui/LoadingSpinner'
+
+// Layout component imports
+'@/features/shared/layout/BottomNavigation' → '@/modules/shared/layout/BottomNavigation'
+'@/features/shared/layout/Footer' → '@/modules/shared/layout/Footer'
+'@/features/shared/layout/HeadTags' → '@/modules/shared/layout/HeadTags'
+
+// Legacy component imports
+'@/components/shared/ui/LoadingSpinner' → '@/modules/shared/components/LoadingSpinner'
+'@/components/shared/ui/ConfirmationDialog' → '@/modules/shared/components/ConfirmationDialog'
+```
+
+#### Sed Komutları
+```bash
+# Shared UI imports
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/features/shared/ui/BaseCardRenderer|@/modules/shared/ui/BaseCardRenderer|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/features/shared/ui/BaseInterpretation|@/modules/shared/ui/BaseInterpretation|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/features/shared/ui/Toast|@/modules/shared/ui/Toast|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/features/shared/ui/LoadingSpinner|@/modules/shared/ui/LoadingSpinner|g'
+
+# Shared layout imports
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/features/shared/layout/BottomNavigation|@/modules/shared/layout/BottomNavigation|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/features/shared/layout/Footer|@/modules/shared/layout/Footer|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/features/shared/layout/HeadTags|@/modules/shared/layout/HeadTags|g'
+
+# Legacy shared component imports
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/components/shared/ui/LoadingSpinner|@/modules/shared/components/LoadingSpinner|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/components/shared/ui/ConfirmationDialog|@/modules/shared/components/ConfirmationDialog|g'
+```
+
+### Tarot Modülü Import'ları
+
+#### Eski → Yeni Path Mapping
+```typescript
+// Component imports
+'@/features/tarot/components/Love-Spread/LoveTarot' → '@/modules/tarot/components/Love-Spread/LoveTarot'
+'@/features/tarot/components/Career-Spread/CareerTarot' → '@/modules/tarot/components/Career-Spread/CareerTarot'
+'@/features/tarot/components/Money-Spread/MoneyTarot' → '@/modules/tarot/components/Money-Spread/MoneyTarot'
+
+// Lib imports
+'@/features/tarot/lib/a-tarot-helpers' → '@/modules/tarot/lib/a-tarot-helpers'
+'@/features/tarot/lib/full-tarot-deck' → '@/modules/tarot/lib/full-tarot-deck'
+
+// Constants imports
+'@/lib/constants/tarotSpreads' → '@/modules/tarot/constants/tarotSpreads'
+
+// Type imports
+'@/types/tarot' → '@/modules/tarot/types/tarot'
+```
+
+#### Sed Komutları
+```bash
+# Tarot component imports
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/features/tarot/components/Love-Spread/LoveTarot|@/modules/tarot/components/Love-Spread/LoveTarot|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/features/tarot/components/Career-Spread/CareerTarot|@/modules/tarot/components/Career-Spread/CareerTarot|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/features/tarot/components/Money-Spread/MoneyTarot|@/modules/tarot/components/Money-Spread/MoneyTarot|g'
+
+# Tarot lib imports
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/features/tarot/lib/a-tarot-helpers|@/modules/tarot/lib/a-tarot-helpers|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/features/tarot/lib/full-tarot-deck|@/modules/tarot/lib/full-tarot-deck|g'
+
+# Tarot constants imports
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/lib/constants/tarotSpreads|@/modules/tarot/constants/tarotSpreads|g'
+
+# Tarot type imports
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/types/tarot|@/modules/tarot/types/tarot|g'
+```
+
+---
+
+## 🔧 Gelişmiş Codemod Araçları
+
+### 1. TypeScript Codemod (jscodeshift)
+```javascript
+// codemods/admin-imports.js
+const { execSync } = require('child_process');
+
+module.exports = function transformer(fileInfo, api) {
+  const j = api.jscodeshift;
+  const source = j(fileInfo.source);
+  
+  // Admin service imports
+  source.find(j.ImportDeclaration)
+    .filter(path => path.value.source.value.startsWith('@/lib/admin/'))
+    .replaceWith(path => {
+      const oldPath = path.value.source.value;
+      const newPath = oldPath.replace('@/lib/admin/', '@/modules/admin/services/');
+      return j.importDeclaration(
+        path.value.specifiers,
+        j.literal(newPath)
+      );
+    });
+  
+  return source.toSource();
+};
+```
+
+### 2. Regex-based Codemod
+```bash
+#!/bin/bash
+# update-imports.sh
+
+echo "🔄 Updating Admin imports..."
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/lib/admin/|@/modules/admin/services/|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/components/admin/|@/modules/admin/components/|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/hooks/admin/|@/modules/admin/hooks/|g'
+
+echo "🔄 Updating Auth imports..."
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/lib/auth/|@/modules/auth/services/|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/components/auth/|@/modules/auth/components/|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/hooks/auth/|@/modules/auth/hooks/|g'
+
+echo "🔄 Updating Shared imports..."
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/features/shared/|@/modules/shared/|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/components/shared/|@/modules/shared/components/|g'
+
+echo "🔄 Updating Tarot imports..."
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/features/tarot/|@/modules/tarot/|g'
+find src -name "*.ts" -o -name "*.tsx" | xargs sed -i 's|@/lib/constants/tarotSpreads|@/modules/tarot/constants/tarotSpreads|g'
+
+echo "✅ Import updates completed!"
+```
+
+### 3. Node.js Codemod Script
+```javascript
+// scripts/update-imports.js
+const fs = require('fs');
+const path = require('path');
+const glob = require('glob');
+
+const importMappings = {
+  // Admin mappings
+  '@/lib/admin/admin-users': '@/modules/admin/services/admin-users',
+  '@/lib/admin/api-keys': '@/modules/admin/services/api-keys',
+  '@/components/admin/UserDetailModal': '@/modules/admin/components/UserDetailModal',
+  '@/hooks/admin/useAdminData': '@/modules/admin/hooks/useAdminData',
+  
+  // Auth mappings
+  '@/lib/auth/auth-service': '@/modules/auth/services/auth-service',
+  '@/components/auth/AuthForm': '@/modules/auth/components/AuthForm',
+  '@/hooks/auth/useAuth': '@/modules/auth/hooks/useAuth',
+  
+  // Shared mappings
+  '@/features/shared/ui/Toast': '@/modules/shared/ui/Toast',
+  '@/features/shared/layout/BottomNavigation': '@/modules/shared/layout/BottomNavigation',
+  
+  // Tarot mappings
+  '@/features/tarot/components/Love-Spread/LoveTarot': '@/modules/tarot/components/Love-Spread/LoveTarot',
+  '@/lib/constants/tarotSpreads': '@/modules/tarot/constants/tarotSpreads'
+};
+
+function updateImports(filePath) {
+  let content = fs.readFileSync(filePath, 'utf8');
+  let updated = false;
+  
+  Object.entries(importMappings).forEach(([oldPath, newPath]) => {
+    const regex = new RegExp(oldPath.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g');
+    if (content.includes(oldPath)) {
+      content = content.replace(regex, newPath);
+      updated = true;
+    }
+  });
+  
+  if (updated) {
+    fs.writeFileSync(filePath, content);
+    console.log(`✅ Updated: ${filePath}`);
+  }
+}
+
+// Find all TypeScript files
+const files = glob.sync('src/**/*.{ts,tsx}');
+files.forEach(updateImports);
+
+console.log(`🎉 Updated ${files.length} files`);
+```
+
+---
+
+## 🧪 Codemod Test Stratejisi
+
+### 1. Pre-Codemod Backup
+```bash
+# Create backup before codemod
+git add -A
+git commit -m "Pre-codemod backup"
+git tag pre-codemod-backup
+```
+
+### 2. Incremental Testing
+```bash
+# Test after each module update
+pnpm typecheck
+pnpm lint
+pnpm build
+pnpm test
+```
+
+### 3. Rollback Plan
+```bash
+# Rollback if issues occur
+git reset --hard pre-codemod-backup
+```
+
+### 4. Validation Script
+```bash
+#!/bin/bash
+# validate-imports.sh
+
+echo "🔍 Validating import updates..."
+
+# Check for remaining old imports
+echo "Checking for old admin imports..."
+grep -r "@/lib/admin/" src/ && echo "❌ Old admin imports found" || echo "✅ No old admin imports"
+
+echo "Checking for old auth imports..."
+grep -r "@/lib/auth/" src/ && echo "❌ Old auth imports found" || echo "✅ No old auth imports"
+
+echo "Checking for old shared imports..."
+grep -r "@/features/shared/" src/ && echo "❌ Old shared imports found" || echo "✅ No old shared imports"
+
+echo "Checking for old tarot imports..."
+grep -r "@/features/tarot/" src/ && echo "❌ Old tarot imports found" || echo "✅ No old tarot imports"
+
+# Check for new imports
+echo "Checking for new module imports..."
+grep -r "@/modules/" src/ | wc -l | xargs echo "New module imports:"
+
+echo "✅ Import validation completed!"
+```
+
+---
+
+## 📊 Codemod İstatistikleri
+
+| Modül | Dosya Sayısı | Import Sayısı | Tahmini Süre |
+|-------|--------------|---------------|---------------|
+| Admin | 25+ | 50+ | 30 dakika |
+| Auth | 40+ | 80+ | 45 dakika |
+| Shared | 50+ | 100+ | 60 dakika |
+| Tarot | 100+ | 200+ | 90 dakika |
+| **Toplam** | **215+** | **430+** | **3.75 saat** |
+
+---
+
+## ⚠️ Codemod Riskleri ve Önlemler
+
+### Yüksek Risk
+- **Import path kırılması** → Backup + rollback planı
+- **TypeScript type errors** → Type check after each module
+- **Build failures** → Incremental testing
+
+### Orta Risk
+- **Regex false positives** → Manual review of changes
+- **Import order changes** → ESLint auto-fix
+- **Unused imports** → ESLint cleanup
+
+### Düşük Risk
+- **File encoding issues** → UTF-8 validation
+- **Git history pollution** → Clean commits
+
+---
+
+## 🚀 Codemod Uygulama Sırası
+
+### Hafta 1: Admin Codemod
+- [ ] Admin import'ları güncelle
+- [ ] Test ve doğrula
+- [ ] Commit changes
+
+### Hafta 2: Auth Codemod
+- [ ] Auth import'ları güncelle
+- [ ] Test ve doğrula
+- [ ] Commit changes
+
+### Hafta 3: Shared Codemod
+- [ ] Shared import'ları güncelle
+- [ ] Test ve doğrula
+- [ ] Commit changes
+
+### Hafta 4-5: Tarot Codemod
+- [ ] Tarot import'ları güncelle
+- [ ] Test ve doğrula
+- [ ] Commit changes
+
+### Hafta 6: Final Cleanup
+- [ ] Unused imports temizle
+- [ ] ESLint auto-fix
+- [ ] Final validation
+
+---
+
+## 📝 Codemod Notları
+
+- Her modül için ayrı ayrı codemod uygula
+- Her codemod sonrası test et
+- Backup al ve rollback planı hazırla
+- Manual review yap
+- Clean commit'ler oluştur

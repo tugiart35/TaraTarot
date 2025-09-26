@@ -29,6 +29,11 @@ interface EmailConfig {
     user: string;
     pass: string;
   };
+  // Connection pooling ayarları
+  pool?: boolean;
+  maxConnections?: number;
+  maxMessages?: number;
+  rateLimit?: number;
 }
 
 interface EmailData {
@@ -43,13 +48,26 @@ interface EmailData {
 }
 
 class EmailService {
+  private static instance: EmailService;
   private transporter: nodemailer.Transporter | null = null;
+  private isInitialized: boolean = false;
 
-  constructor() {
+  private constructor() {
     this.initializeTransporter();
   }
 
+  static getInstance(): EmailService {
+    if (!EmailService.instance) {
+      EmailService.instance = new EmailService();
+    }
+    return EmailService.instance;
+  }
+
   private initializeTransporter() {
+    if (this.isInitialized) {
+      return;
+    }
+
     try {
       const config: EmailConfig = {
         host: process.env.SMTP_HOST || 'smtp.gmail.com',
@@ -59,6 +77,11 @@ class EmailService {
           user: process.env.SMTP_USER || '',
           pass: process.env.SMTP_PASS || '',
         },
+        // Connection pooling ayarları
+        pool: true,
+        maxConnections: 5,
+        maxMessages: 100,
+        rateLimit: 10, // 10 emails per second
       };
 
       console.log('SMTP Config:', {
@@ -70,7 +93,8 @@ class EmailService {
       });
 
       this.transporter = nodemailer.createTransport(config);
-      console.log('Email transporter initialized successfully');
+      this.isInitialized = true;
+      console.log('Email transporter initialized successfully with connection pooling');
     } catch (error) {
       console.error('Email transporter initialization failed:', error);
     }
@@ -296,5 +320,5 @@ class EmailService {
   }
 }
 
-export const emailService = new EmailService();
+export const emailService = EmailService.getInstance();
 export default EmailService;

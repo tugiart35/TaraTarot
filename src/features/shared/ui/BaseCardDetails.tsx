@@ -43,6 +43,7 @@ Gereklilik ve Kullanım Durumu:
 
 import type { TarotCard } from '@/features/tarot/lib/a-tarot-helpers';
 import { ReactElement } from 'react';
+import { useFocusTrap } from '@/hooks/useFocusTrap';
 
 export interface BaseCardDetailsProps {
   card: TarotCard | null;
@@ -56,9 +57,7 @@ export interface BaseCardDetailsProps {
     _position: number | null
   ) => ReactElement;
   theme?: 'default' | 'amber' | 'pink' | 'purple' | 'blue';
-  title?: string;
   maxWidth?: 'sm' | 'md' | 'lg' | 'xl' | '2xl';
-  spreadType?: string;
   positionInfo?:
     | {
         title: string;
@@ -75,11 +74,11 @@ export default function BaseCardDetails({
   renderCardImage,
   renderContent,
   theme = 'default',
-  title: _title,
   maxWidth = 'lg',
-  spreadType: _spreadType,
   positionInfo: _positionInfo,
 }: BaseCardDetailsProps) {
+  const focusTrapRef = useFocusTrap(true);
+
   if (!card) {
     return null;
   }
@@ -145,14 +144,19 @@ export default function BaseCardDetails({
       onClick={onClose}
     >
       <div
+        ref={focusTrapRef}
         className={`${currentTheme.container} rounded-3xl p-6 md:p-8 ${maxWidthClasses[maxWidth]} w-full border shadow-2xl relative max-h-[90vh] overflow-y-auto animate-slide-in-up`}
         onClick={e => e.stopPropagation()}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
       >
         {/* Kapatma Butonu */}
         <button
           onClick={onClose}
           className={`absolute top-4 right-4 ${currentTheme.closeButton} transition-colors text-2xl font-bold z-10`}
           aria-label='Kapat'
+          data-close-modal
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'

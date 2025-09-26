@@ -48,7 +48,7 @@ import { useEffect, useState, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { supabase } from '@/lib/supabase/client';
-import { useAuth } from '@/hooks/useAuth';
+import { useAuth } from '@/hooks/auth/useAuth';
 import { useTranslations } from '@/hooks/useTranslations';
 import { BottomNavigation } from '@/features/shared/layout';
 import {
@@ -87,7 +87,7 @@ interface UserProfile {
 }
 
 export default function PackagesPage() {
-  const { user, isAuthenticated, loading: authLoading } = useAuth();
+  const { user, loading: authLoading } = useAuth();
   const { t } = useTranslations();
   const router = useRouter();
 
@@ -267,7 +267,7 @@ export default function PackagesPage() {
   // Auth kontrolü ve paketleri çek
   useEffect(() => {
     if (!authLoading) {
-      if (!isAuthenticated) {
+      if (!user) {
         router.replace(`/${locale}/auth`);
         return;
       }
@@ -276,7 +276,7 @@ export default function PackagesPage() {
     }
   }, [
     authLoading,
-    isAuthenticated,
+    user,
     router,
     locale,
     fetchPackages,

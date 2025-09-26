@@ -1,0 +1,367 @@
+---
+alwaysApply: true
+---
+
+# 🔄 Re-export Shim Dosyaları - Modül Konsolidasyonu
+
+**Tarih:** 2025-01-27  
+**Amaç:** Eski import yollarını koruyarak kırılmasız geçiş sağlama  
+**Durum:** Planlama Tamamlandı ✅
+
+---
+
+## 📋 Shim Dosyaları Listesi
+
+### 1. Admin Modülü Shim'leri
+
+#### `src/lib/admin/index.ts`
+```typescript
+// Admin services barrel export (shim)
+export * from '@/modules/admin/services';
+export * from '@/modules/admin/types';
+```
+
+#### `src/components/admin/index.ts`
+```typescript
+// Admin components barrel export (shim)
+export * from '@/modules/admin/components';
+```
+
+#### `src/hooks/admin/index.ts`
+```typescript
+// Admin hooks barrel export (shim)
+export * from '@/modules/admin/hooks';
+```
+
+### 2. Auth Modülü Shim'leri
+
+#### `src/lib/auth/index.ts`
+```typescript
+// Auth services barrel export (shim)
+export * from '@/modules/auth/services';
+export * from '@/modules/auth/types';
+```
+
+#### `src/components/auth/index.ts`
+```typescript
+// Auth components barrel export (shim)
+export * from '@/modules/auth/components';
+```
+
+#### `src/hooks/auth/index.ts`
+```typescript
+// Auth hooks barrel export (shim)
+export * from '@/modules/auth/hooks';
+```
+
+### 3. Shared Modülü Shim'leri
+
+#### `src/features/shared/index.ts`
+```typescript
+// Shared components barrel export (shim)
+export * from '@/modules/shared/ui';
+export * from '@/modules/shared/layout';
+export * from '@/modules/shared/components';
+```
+
+#### `src/components/shared/index.ts`
+```typescript
+// Legacy shared components barrel export (shim)
+export * from '@/modules/shared/components';
+```
+
+### 4. Tarot Modülü Shim'leri
+
+#### `src/features/tarot/index.ts`
+```typescript
+// Tarot feature barrel export (shim)
+export * from '@/modules/tarot/components';
+export * from '@/modules/tarot/lib';
+export * from '@/modules/tarot/constants';
+export * from '@/modules/tarot/types';
+```
+
+#### `src/lib/constants/tarotSpreads.ts`
+```typescript
+// Tarot constants barrel export (shim)
+export * from '@/modules/tarot/constants/tarotSpreads';
+```
+
+---
+
+## 🎯 Shim İçerik Şablonları
+
+### Admin Service Shim
+```typescript
+/*
+ * Admin Service Shim
+ * 
+ * Bu dosya geçici bir shim'dir ve modül konsolidasyonu tamamlandıktan sonra silinecektir.
+ * 
+ * Eski import: import { AdminUser } from '@/lib/admin/admin-users'
+ * Yeni import: import { AdminUser } from '@/modules/admin'
+ * 
+ * DEPRECATED: Bu shim dosyası kullanımdan kaldırılacaktır.
+ */
+
+export * from '@/modules/admin/services';
+export * from '@/modules/admin/types';
+
+// Deprecation warning (development only)
+if (process.env.NODE_ENV === 'development') {
+  console.warn(
+    'DEPRECATED: @/lib/admin imports are deprecated. Use @/modules/admin instead.'
+  );
+}
+```
+
+### Auth Component Shim
+```typescript
+/*
+ * Auth Component Shim
+ * 
+ * Bu dosya geçici bir shim'dir ve modül konsolidasyonu tamamlandıktan sonra silinecektir.
+ * 
+ * Eski import: import { AuthForm } from '@/components/auth/AuthForm'
+ * Yeni import: import { AuthForm } from '@/modules/auth/components'
+ * 
+ * DEPRECATED: Bu shim dosyası kullanımdan kaldırılacaktır.
+ */
+
+export * from '@/modules/auth/components';
+
+// Deprecation warning (development only)
+if (process.env.NODE_ENV === 'development') {
+  console.warn(
+    'DEPRECATED: @/components/auth imports are deprecated. Use @/modules/auth/components instead.'
+  );
+}
+```
+
+### Shared UI Shim
+```typescript
+/*
+ * Shared UI Shim
+ * 
+ * Bu dosya geçici bir shim'dir ve modül konsolidasyonu tamamlandıktan sonra silinecektir.
+ * 
+ * Eski import: import { Toast } from '@/features/shared/ui/Toast'
+ * Yeni import: import { Toast } from '@/modules/shared/ui'
+ * 
+ * DEPRECATED: Bu shim dosyası kullanımdan kaldırılacaktır.
+ */
+
+export * from '@/modules/shared/ui';
+export * from '@/modules/shared/layout';
+export * from '@/modules/shared/components';
+
+// Deprecation warning (development only)
+if (process.env.NODE_ENV === 'development') {
+  console.warn(
+    'DEPRECATED: @/features/shared imports are deprecated. Use @/modules/shared instead.'
+  );
+}
+```
+
+### Tarot Constants Shim
+```typescript
+/*
+ * Tarot Constants Shim
+ * 
+ * Bu dosya geçici bir shim'dir ve modül konsolidasyonu tamamlandıktan sonra silinecektir.
+ * 
+ * Eski import: import { tarotSpreads } from '@/lib/constants/tarotSpreads'
+ * Yeni import: import { tarotSpreads } from '@/modules/tarot/constants'
+ * 
+ * DEPRECATED: Bu shim dosyası kullanımdan kaldırılacaktır.
+ */
+
+export * from '@/modules/tarot/constants/tarotSpreads';
+
+// Deprecation warning (development only)
+if (process.env.NODE_ENV === 'development') {
+  console.warn(
+    'DEPRECATED: @/lib/constants/tarotSpreads imports are deprecated. Use @/modules/tarot/constants instead.'
+  );
+}
+```
+
+---
+
+## 🔧 Shim Oluşturma Komutları
+
+### 1. Admin Shim'leri Oluştur
+```bash
+# Admin service shim
+mkdir -p src/lib/admin
+cat > src/lib/admin/index.ts << 'EOF'
+export * from '@/modules/admin/services';
+export * from '@/modules/admin/types';
+EOF
+
+# Admin component shim
+mkdir -p src/components/admin
+cat > src/components/admin/index.ts << 'EOF'
+export * from '@/modules/admin/components';
+EOF
+
+# Admin hook shim
+mkdir -p src/hooks/admin
+cat > src/hooks/admin/index.ts << 'EOF'
+export * from '@/modules/admin/hooks';
+EOF
+```
+
+### 2. Auth Shim'leri Oluştur
+```bash
+# Auth service shim
+mkdir -p src/lib/auth
+cat > src/lib/auth/index.ts << 'EOF'
+export * from '@/modules/auth/services';
+export * from '@/modules/auth/types';
+EOF
+
+# Auth component shim
+mkdir -p src/components/auth
+cat > src/components/auth/index.ts << 'EOF'
+export * from '@/modules/auth/components';
+EOF
+
+# Auth hook shim
+mkdir -p src/hooks/auth
+cat > src/hooks/auth/index.ts << 'EOF'
+export * from '@/modules/auth/hooks';
+EOF
+```
+
+### 3. Shared Shim'leri Oluştur
+```bash
+# Shared feature shim
+cat > src/features/shared/index.ts << 'EOF'
+export * from '@/modules/shared/ui';
+export * from '@/modules/shared/layout';
+export * from '@/modules/shared/components';
+EOF
+
+# Shared component shim
+mkdir -p src/components/shared
+cat > src/components/shared/index.ts << 'EOF'
+export * from '@/modules/shared/components';
+EOF
+```
+
+### 4. Tarot Shim'leri Oluştur
+```bash
+# Tarot feature shim
+cat > src/features/tarot/index.ts << 'EOF'
+export * from '@/modules/tarot/components';
+export * from '@/modules/tarot/lib';
+export * from '@/modules/tarot/constants';
+export * from '@/modules/tarot/types';
+EOF
+
+# Tarot constants shim
+cat > src/lib/constants/tarotSpreads.ts << 'EOF'
+export * from '@/modules/tarot/constants/tarotSpreads';
+EOF
+```
+
+---
+
+## ⚠️ Shim Yönetimi Kuralları
+
+### 1. Shim Yaşam Döngüsü
+1. **Oluşturma:** Modül konsolidasyonu sırasında
+2. **Kullanım:** Geçiş döneminde (2-4 hafta)
+3. **Kaldırma:** Tüm import'lar güncellendikten sonra
+
+### 2. Shim İçerik Kuralları
+- ✅ Sadece re-export yap
+- ✅ Deprecation warning ekle (development only)
+- ❌ Business logic ekleme
+- ❌ State management ekleme
+- ❌ Side effect'ler ekleme
+
+### 3. Shim Test Kuralları
+- [ ] Eski import yolları çalışıyor
+- [ ] Yeni import yolları çalışıyor
+- [ ] TypeScript type checking geçiyor
+- [ ] Build process başarılı
+- [ ] Runtime hata yok
+
+### 4. Shim Kaldırma Kuralları
+- [ ] Tüm import'lar yeni yollara güncellenmiş
+- [ ] Test suite geçiyor
+- [ ] Build process başarılı
+- [ ] Production deployment başarılı
+
+---
+
+## 📊 Shim İstatistikleri
+
+| Modül | Shim Sayısı | Etkilenen Dosya | Tahmini Süre |
+|-------|--------------|-----------------|---------------|
+| Admin | 3 | 25+ | 1 hafta |
+| Auth | 3 | 40+ | 1 hafta |
+| Shared | 2 | 50+ | 1 hafta |
+| Tarot | 2 | 100+ | 2 hafta |
+| **Toplam** | **10** | **215+** | **5 hafta** |
+
+---
+
+## 🚀 Shim Uygulama Sırası
+
+### Hafta 1: Admin Shim'leri
+- [ ] Admin service shim oluştur
+- [ ] Admin component shim oluştur
+- [ ] Admin hook shim oluştur
+- [ ] Test ve doğrula
+
+### Hafta 2: Auth Shim'leri
+- [ ] Auth service shim oluştur
+- [ ] Auth component shim oluştur
+- [ ] Auth hook shim oluştur
+- [ ] Test ve doğrula
+
+### Hafta 3: Shared Shim'leri
+- [ ] Shared feature shim oluştur
+- [ ] Shared component shim oluştur
+- [ ] Test ve doğrula
+
+### Hafta 4-5: Tarot Shim'leri
+- [ ] Tarot feature shim oluştur
+- [ ] Tarot constants shim oluştur
+- [ ] Test ve doğrula
+
+### Hafta 6: Shim Temizliği
+- [ ] Tüm import'ları güncelle
+- [ ] Shim'leri kaldır
+- [ ] Final test
+
+---
+
+## 🔍 Shim Doğrulama Checklist
+
+### Her Shim İçin
+- [ ] Export'lar doğru çalışıyor
+- [ ] TypeScript type checking geçiyor
+- [ ] Import path'leri çözülüyor
+- [ ] Runtime hata yok
+- [ ] Deprecation warning görünüyor (dev mode)
+
+### Genel Kontrol
+- [ ] Build process başarılı
+- [ ] Test suite geçiyor
+- [ ] Lint hataları yok
+- [ ] Type check hataları yok
+- [ ] Production build başarılı
+
+---
+
+## 📝 Notlar
+
+- Shim'ler geçici çözümlerdir, kalıcı değildir
+- Her shim için deprecation warning eklenmelidir
+- Shim'ler sadece re-export yapmalıdır
+- Business logic shim'lere eklenmemelidir
+- Shim'ler test edilmeli ve doğrulanmalıdır

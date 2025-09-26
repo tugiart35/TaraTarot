@@ -140,16 +140,6 @@ export default function UsersPage() {
     });
   };
 
-  const showUnbanConfirmation = (user: User) => {
-    setConfirmDialog({
-      isOpen: true,
-      title: 'Kullanıcı Yasağını Kaldır',
-      message: `${user.display_name || user.email} kullanıcısının yasağını kaldırmak istediğinizden emin misiniz?`,
-      type: 'info',
-      onConfirm: () => handleUnbanUser(user.id),
-      onCancel: closeConfirmationDialog
-    });
-  };
 
   const closeConfirmationDialog = () => {
     setConfirmDialog(prev => ({ ...prev, isOpen: false }));
@@ -199,7 +189,7 @@ export default function UsersPage() {
       }
       
       // Format the data safely
-      const formattedUsers = (data || []).map(user => ({
+      const formattedUsers = (data || []).map((user: any) => ({
         id: user.id || 'unknown',
         email: user.email || 'unknown@example.com',
         display_name: user.display_name || null,
@@ -365,43 +355,6 @@ export default function UsersPage() {
     }
   };
 
-  const handleUnbanUser = async (userId: string) => {
-    setConfirmDialog(prev => ({ ...prev, loading: true }));
-    
-    try {
-      // Rate limit check
-      const actionCheck = adminActionLimit.checkLimit();
-      if (!actionCheck.allowed) {
-        showToast('Çok fazla admin işlemi. Lütfen bekleyin.', 'error');
-        return;
-      }
-
-      // Log admin action
-      await auditLogAdminAction('user_unbanned', 'user', {
-        resourceId: userId,
-        metadata: {
-          action: 'unban_user'
-        }
-      });
-
-      // Update user status to active
-      const { error } = await supabase
-        .from('profiles')
-        .update({ status: 'active' })
-        .eq('id', userId);
-      
-      if (error) throw error;
-
-      showToast('Kullanıcı yasağı başarıyla kaldırıldı', 'success');
-      fetchUsers();
-      closeConfirmationDialog();
-    } catch (error) {
-      console.error('Error unbanning user:', error);
-      showToast('Kullanıcı yasağı kaldırılırken hata oluştu', 'error');
-    } finally {
-      setConfirmDialog(prev => ({ ...prev, loading: false }));
-    }
-  };
 
   const totalPages = Math.ceil(totalCount / usersPerPage);
 

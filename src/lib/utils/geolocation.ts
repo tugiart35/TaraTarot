@@ -25,9 +25,8 @@
  */
 
 import { NextRequest } from 'next/server';
-
-// Desteklenen diller
-export type SupportedLocale = 'tr' | 'en' | 'sr';
+import { getClientIP, cleanIPAddress } from './ip-utils';
+import { determineLocale, type SupportedLocale } from './locale-utils';
 
 // Coğrafi konum bilgisi
 export interface GeolocationData {
@@ -45,26 +44,39 @@ const geolocationCache = new Map<
   { data: GeolocationData; timestamp: number }
 >();
 const CACHE_DURATION = 24 * 60 * 60 * 1000; // 24 saat
+const MAX_CACHE_SIZE = 1000; // Maximum cache entries
+const CACHE_CLEANUP_INTERVAL = 24 * 60 * 60 * 1000; // 24 saat
 
-// IP adresini temizle ve doğrula
-function cleanIPAddress(ip: string): string {
-  // IPv6 localhost
-  if (ip === '::1' || ip === '::ffff:127.0.0.1') {
-    return '127.0.0.1';
+// Cache temizleme fonksiyonu
+function cleanupExpiredEntries(): void {
+  const now = Date.now();
+  for (const [key, entry] of geolocationCache) {
+    if (now - entry.timestamp > CACHE_DURATION) {
+      geolocationCache.delete(key);
+    }
   }
-
-  // IPv4 localhost
-  if (ip === '127.0.0.1') {
-    return '127.0.0.1';
-  }
-
-  // X-Forwarded-For header'ından ilk IP'yi al
-  if (ip.includes(',')) {
-    return ip.split(',')[0]!.trim();
-  }
-
-  return ip;
 }
+
+// Cache size kontrolü
+function cleanupOldestEntries(): void {
+  if (geolocationCache.size <= MAX_CACHE_SIZE) {
+    return;
+  }
+
+  const entries = Array.from(geolocationCache.entries());
+  entries.sort((a, b) => a[1].timestamp - b[1].timestamp);
+  
+  const toDelete = entries.slice(0, entries.length - MAX_CACHE_SIZE);
+  for (const [key] of toDelete) {
+    geolocationCache.delete(key);
+  }
+}
+
+// Otomatik cache temizleme
+setInterval(() => {
+  cleanupExpiredEntries();
+  cleanupOldestEntries();
+}, CACHE_CLEANUP_INTERVAL);
 
 // IP adresinden coğrafi konum bilgisi al
 export async function getGeolocationFromIP(
@@ -115,17 +127,7 @@ export async function getGeolocationFromIP(
     }
 
     // Dil belirleme
-    let locale: SupportedLocale = 'en'; // Varsayılan İngilizce
-
-    if (data.countryCode === 'TR') {
-      locale = 'tr';
-    } else if (
-      data.countryCode === 'RS' ||
-      data.countryCode === 'BA' ||
-      data.countryCode === 'ME'
-    ) {
-      locale = 'sr';
-    }
+    const locale = determineLocale(data.countryCode);
 
     const geolocationData: GeolocationData = {
       country: data.country || 'Unknown',
@@ -215,29 +217,8 @@ export async function getClientGeolocation(): Promise<GeolocationData | null> {
   }
 }
 
-// Request'ten IP adresi al
-export function getClientIP(request: NextRequest): string {
-  // Vercel'de x-forwarded-for header'ı kullan
-  const forwarded = request.headers.get('x-forwarded-for');
-  if (forwarded) {
-    return forwarded.split(',')[0]!.trim();
-  }
-
-  // Cloudflare'de cf-connecting-ip header'ı kullan
-  const cfIP = request.headers.get('cf-connecting-ip');
-  if (cfIP) {
-    return cfIP;
-  }
-
-  // Vercel'de x-vercel-forwarded-for header'ı kullan
-  const vercelIP = request.headers.get('x-vercel-forwarded-for');
-  if (vercelIP) {
-    return vercelIP;
-  }
-
-  // Fallback: request.ip
-  return (request as any).ip || '127.0.0.1';
-}
+// Request'ten IP adresi al (re-export from ip-utils)
+export { getClientIP } from './ip-utils';
 
 // Cache temizleme fonksiyonu
 export function clearGeolocationCache(): void {

@@ -39,19 +39,11 @@ import {
 import TransactionHistory from './TransactionHistory';
 import ReadingHistory from './ReadingHistory';
 import PaymentHistory from './PaymentHistory';
-
-interface User {
-  id: string;
-  email: string;
-  display_name: string | null;
-  credit_balance: number;
-  created_at: string;
-  last_sign_in_at: string | null;
-  status?: string;
-}
+import { AdminUser } from '@/types/admin.types';
+// import { AdminErrorService } from '@/lib/admin/admin-error-service';
 
 interface UserDetailModalProps {
-  user: User;
+  user: AdminUser;
   onClose: () => void;
   onEditCredit: () => void;
   onStatusChange: (userId: string, status: string) => void;
@@ -78,7 +70,13 @@ export default function UserDetailModal({
   };
 
   return (
-    <div className='fixed inset-0 bg-black/70 backdrop-blur-lg flex items-center justify-center z-50 p-4'>
+    <div 
+      className='fixed inset-0 bg-black/70 backdrop-blur-lg flex items-center justify-center z-50 p-4'
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="user-detail-title"
+      aria-describedby="user-detail-description"
+    >
       <div className='admin-card rounded-2xl p-6 w-full max-w-5xl max-h-[90vh] overflow-hidden flex flex-col admin-hover-scale'>
         {/* Header */}
         <div className='admin-gradient-primary rounded-xl p-6 mb-6 -m-6'>
@@ -92,10 +90,18 @@ export default function UserDetailModal({
                 </span>
               </div>
               <div>
-                <h3 className='text-2xl font-bold text-white mb-1'>
+                <h3 
+                  id="user-detail-title"
+                  className='text-2xl font-bold text-white mb-1'
+                >
                   {user.display_name || 'İsimsiz Kullanıcı'}
                 </h3>
-                <p className='text-slate-200 mb-2'>{user.email}</p>
+                <p 
+                  id="user-detail-description"
+                  className='text-slate-200 mb-2'
+                >
+                  {user.email}
+                </p>
                 <div className='flex items-center space-x-3'>
                   <div
                     className={`px-3 py-1 rounded-lg text-xs font-medium border ${
@@ -119,6 +125,8 @@ export default function UserDetailModal({
             <button
               onClick={onClose}
               className='p-2 admin-glass rounded-lg admin-hover-scale text-slate-300 hover:text-white'
+              aria-label="Modal'ı kapat"
+              title="Modal'ı kapat"
             >
               <X className='h-6 w-6' />
             </button>
@@ -127,7 +135,11 @@ export default function UserDetailModal({
 
         {/* Tab Navigation */}
         <div className='admin-glass rounded-xl p-2 mb-6'>
-          <nav className='flex space-x-2'>
+          <nav 
+            className='flex space-x-2'
+            role="tablist"
+            aria-label="Kullanıcı detay sekmeleri"
+          >
             <button
               onClick={() => setActiveTab('overview')}
               className={`px-4 py-2 rounded-lg font-medium text-sm transition-all admin-hover-scale ${
@@ -135,6 +147,10 @@ export default function UserDetailModal({
                   ? 'admin-gradient-accent text-white'
                   : 'text-slate-400 hover:text-white hover:bg-slate-700/30'
               }`}
+              role="tab"
+              aria-selected={activeTab === 'overview'}
+              aria-controls="overview-panel"
+              id="overview-tab"
             >
               📊 Genel Bakış
             </button>

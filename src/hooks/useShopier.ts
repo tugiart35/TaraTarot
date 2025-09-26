@@ -39,7 +39,7 @@ Kodun okunabilirliği, optimizasyonu, yeniden kullanılabilirliği ve güvenliğ
 'use client';
 
 import { useState, useCallback } from 'react';
-import { useAuth } from './useAuth';
+import { useAuth } from './auth/useAuth';
 import {
   createShopierPayment,
   ShopierPaymentRequest,
@@ -48,8 +48,15 @@ import {
 } from '@/lib/payment/shopier-config';
 import { supabase } from '@/lib/supabase/client';
 
+interface PackageData {
+  name: string;
+  credits: number;
+  price: number;
+  currency: string;
+}
+
 export interface UseShopierReturn {
-  initiatePayment: (packageId: string, packageData: any) => Promise<void>;
+  initiatePayment: (packageId: string, packageData: PackageData) => Promise<void>;
   loading: boolean;
   error: string | null;
   success: string | null;
@@ -64,7 +71,7 @@ export const useShopier = (): UseShopierReturn => {
   const [paymentUrl, setPaymentUrl] = useState<string | null>(null);
 
   const initiatePayment = useCallback(
-    async (packageId: string, packageData: any) => {
+    async (packageId: string, packageData: PackageData) => {
       if (!user) {
         setError('Lütfen giriş yapın');
         return;

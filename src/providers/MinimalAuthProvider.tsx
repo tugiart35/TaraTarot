@@ -23,7 +23,7 @@
 'use client';
 
 import React, { createContext, useContext } from 'react';
-import { useAuth } from '@/hooks/useAuth';
+import { useAuth } from '@/hooks/auth/useAuth';
 
 // Minimal auth context type (useAuth hook'unun döndürdüğü değerler)
 interface MinimalAuthContextType {

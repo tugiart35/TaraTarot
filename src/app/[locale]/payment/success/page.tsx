@@ -1,46 +1,13 @@
-/*
-info:
-Bağlantılı dosyalar:
-- @/hooks/useAuth: Kullanıcı bilgileri için (gerekli)
-- @/lib/supabase/client: Veritabanı işlemleri için (gerekli)
-
-Dosyanın amacı:
-- Shopier ödeme başarı sayfası
-- Ödeme onayı ve kredi yükleme durumu
-- Kullanıcı bilgilendirme
-- Dashboard'a yönlendirme
-
-Backend bağlantısı:
-- Ödeme durumu kontrolü
-- Kredi bakiyesi güncelleme
-- Burada backend'e bağlanılacak - ödeme işlemleri
-
-Geliştirme ve öneriler:
-- Ödeme durumu polling
-- Real-time kredi güncelleme
-- User feedback sistemi
-- Error handling
-
-Hatalar / Geliştirmeye Açık Noktalar:
-- Ödeme durumu timeout
-- Network error handling
-- Retry mekanizması
-- Comprehensive logging
-
-Kodun okunabilirliği, optimizasyonu, yeniden kullanılabilirliği ve güvenliği:
-- Okunabilirlik: Temiz success page
-- Optimizasyon: Efficient status checking
-- Yeniden Kullanılabilirlik: Reusable payment pages
-- Güvenlik: Secure payment verification
-*/
+// Payment success page - handles Shopier payment completion
 
 'use client';
 
 import { useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { useAuth } from '@/hooks/useAuth';
+import { useAuth } from '@/hooks/auth/useAuth';
 import { supabase } from '@/lib/supabase/client';
 import { CheckCircle, ArrowRight, CreditCard } from 'lucide-react';
+import { PaymentErrorBoundary } from '@/components/payment/PaymentErrorBoundary';
 
 export default function PaymentSuccessPage() {
   const { user } = useAuth();
@@ -62,11 +29,17 @@ export default function PaymentSuccessPage() {
     checkPaymentStatus();
   }, [user, router]);
 
+  // Input validation for order_id
+  const validateOrderId = (orderId: string | null): boolean => {
+    return orderId !== null && /^[a-zA-Z0-9-_]+$/.test(orderId);
+  };
+
   const checkPaymentStatus = async () => {
     try {
       const orderId = searchParams.get('order_id');
 
-      if (!orderId) {
+      if (!orderId || !validateOrderId(orderId)) {
+        console.error('Invalid order_id parameter:', orderId);
         setPaymentStatus('error');
         setLoading(false);
         return;
@@ -119,9 +92,10 @@ export default function PaymentSuccessPage() {
   }
 
   return (
-    <div className='min-h-screen bg-cosmic-black flex items-center justify-center p-4'>
-      <div className='max-w-md w-full'>
-        <div className='card p-8 text-center'>
+    <PaymentErrorBoundary>
+      <div className='min-h-screen bg-cosmic-black flex items-center justify-center p-4'>
+        <div className='max-w-md w-full'>
+          <div className='card p-8 text-center'>
           {paymentStatus === 'success' ? (
             <>
               <div className='mb-6'>
@@ -176,8 +150,9 @@ export default function PaymentSuccessPage() {
               </button>
             </>
           )}
+          </div>
         </div>
       </div>
-    </div>
+    </PaymentErrorBoundary>
   );
 }

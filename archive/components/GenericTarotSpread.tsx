@@ -8,7 +8,7 @@
 
 import { useState, useEffect } from 'react';
 import { useToast } from '@/hooks/useToast';
-import { useAuth } from '@/hooks/useAuth';
+import { useAuth } from '@/hooks/auth/useAuth';
 import { useReadingCredits } from '@/hooks/useReadingCredits';
 // import { useRouter } from 'next/navigation'; // Kullanılmıyor - kaldırıldı
 // Backend servisleri kaldırıldı

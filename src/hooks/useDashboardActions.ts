@@ -8,9 +8,14 @@ import { UserProfile, Reading, Package } from '@/types/dashboard.types';
 import { downloadReading } from '@/utils/dashboard-utils';
 
 // Dashboard aksiyonları için custom hook
+interface User {
+  id: string;
+  email?: string;
+}
+
 export const useDashboardActions = (
   profile: UserProfile | null,
-  user: any,
+  user: User | null,
   currentLocale: string,
   setProfile: (profile: UserProfile | null) => void
 ) => {

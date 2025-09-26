@@ -31,7 +31,6 @@
 
 import {
   X,
-  Download,
   Calendar,
   Star,
   Heart,
@@ -46,6 +45,12 @@ import { getCardImagePath } from '@/features/tarot/lib/a-tarot-helpers';
 import type { TarotCard } from '@/types/tarot';
 import { useTranslations } from '@/hooks/useTranslations';
 import { position4Meanings } from '@/features/tarot/lib/love/position-4-uzun-vadeli-surec';
+import { lazy, Suspense } from 'react';
+import { LazyLoadingFallback } from './LazyComponents';
+import { sanitizeHtml } from '@/utils/security';
+
+// PDF Export'u lazy loading ile yükle
+const PDFExport = lazy(() => import('./PDFExport'));
 
 interface Reading {
   id: string;
@@ -114,13 +119,6 @@ export default function ReadingDetailModal({
     // Türkçe adı varsa İngilizce'ye çevir
     const englishCardName = cardNameMap[normalizedCardName] || normalizedCardName;
 
-    // Debug için - burada backend'e bağlanılacak
-    console.log('4. kart için arama:', { 
-      cardName, 
-      normalizedCardName, 
-      englishCardName, 
-      isReversed 
-    });
 
     // Position-4 verilerinden kartı bul
     const position4Card = position4Meanings.find(meaning => {
@@ -135,11 +133,8 @@ export default function ReadingDetailModal({
     });
 
     if (position4Card) {
-      console.log('4. kart bulundu:', position4Card.card);
       return isReversed ? position4Card.reversed : position4Card.upright;
     }
-
-    console.log('4. kart bulunamadı, mevcut kartlar:', position4Meanings.slice(0, 5).map(m => m.card));
     return null;
   };
 
@@ -229,6 +224,10 @@ export default function ReadingDetailModal({
         // Modal content not found - burada backend'e bağlanılacak
         return;
       }
+
+      // HTML sanitization before PDF generation
+      const sanitizedHtml = sanitizeHtml(modalContent.innerHTML);
+      modalContent.innerHTML = sanitizedHtml;
 
       // PDF export için özel stil ekle
       const originalClass = modalContent.className;
@@ -1057,13 +1056,9 @@ export default function ReadingDetailModal({
           >
             {t('readingModal.close', 'Kapat')}
           </button>
-          <button
-            onClick={handleDownload}
-            className='px-6 py-3 bg-gradient-to-r from-gold to-yellow-500 hover:from-gold/80 hover:to-yellow-500/80 text-night font-semibold rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gold/20 flex items-center space-x-2'
-          >
-            <Download className='h-4 w-4' />
-            <span>{t('readingModal.downloadPdf', 'PDF İndir')}</span>
-          </button>
+          <Suspense fallback={<LazyLoadingFallback />}>
+            <PDFExport onDownload={handleDownload} />
+          </Suspense>
         </div>
       </div>
     </div>

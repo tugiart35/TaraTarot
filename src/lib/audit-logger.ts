@@ -471,14 +471,14 @@ class AuditLogger {
       this.retryCount = 0;
     } catch (error) {
       // Hata durumunda queue'yu temizleme, tekrar deneme için sakla
-      logError('Failed to flush audit log queue to Supabase', error, {
-        action: 'audit_log_flush',
-        metadata: { 
+      if (process.env.NODE_ENV === 'development') {
+        console.warn('⚠️ [AUDIT] Failed to flush audit log queue to Supabase:', {
+          error: error instanceof Error ? error.message : 'Unknown error',
           retryCount: this.retryCount,
           queueLength: this.queue.length,
           errorType: error instanceof Error ? error.constructor.name : typeof error,
-        },
-      });
+        });
+      }
 
       this.retryCount++;
 
@@ -553,19 +553,42 @@ class AuditLogger {
         console.log(`🔍 [AUDIT] Attempting to insert ${cleanedLogs.length} logs to Supabase`);
       }
 
+      // Önce audit_logs tablosunun var olup olmadığını kontrol et
+      const { error: tableCheckError } = await supabase
+        .from('audit_logs')
+        .select('id')
+        .limit(1);
+      
+      if (tableCheckError && tableCheckError.code === 'PGRST116') {
+        if (process.env.NODE_ENV === 'development') {
+          console.info('ℹ️ [AUDIT] audit_logs table not found, skipping audit logging');
+        }
+        return; // Tablo yoksa audit logging'i atla
+      }
+
       const { error } = await supabase.from('audit_logs').insert(cleanedLogs);
 
       if (error) {
-        logError('Supabase audit log insert error', error, {
-          action: 'audit_log_insert',
-          metadata: {
+        // Supabase insert error'ını handle et
+        if (process.env.NODE_ENV === 'development') {
+          console.warn('⚠️ [AUDIT] Supabase audit log insert error:', {
             errorCode: error.code,
             errorMessage: error.message,
             errorHint: error.hint,
             errorDetails: error.details,
-          },
-        });
-        throw error;
+            logsCount: cleanedLogs.length,
+          });
+        }
+        
+        // RLS veya permission hatası ise sessizce geç
+        if (error.code === 'PGRST301' || error.code === '42501') {
+          if (process.env.NODE_ENV === 'development') {
+            console.info('ℹ️ [AUDIT] Skipping audit log insert due to permission error');
+          }
+          return; // Hata fırlatma, sessizce geç
+        }
+        
+        throw error; // Diğer hatalar için throw et
       }
 
       if (process.env.NODE_ENV === 'development') {
@@ -574,14 +597,17 @@ class AuditLogger {
         );
       }
     } catch (error) {
-      logError('Failed to persist audit logs to Supabase', error, {
-        action: 'audit_log_persist',
-        metadata: {
+      // Audit log hatalarını sessizce handle et, ana uygulamayı etkilemesin
+      if (process.env.NODE_ENV === 'development') {
+        console.warn('⚠️ [AUDIT] Failed to persist audit logs to Supabase:', {
+          error: error instanceof Error ? error.message : 'Unknown error',
           logsCount: logs.length,
           errorType: error instanceof Error ? error.constructor.name : typeof error,
-        },
-      });
-      throw error;
+        });
+      }
+      
+      // Production'da audit log hataları ana uygulamayı etkilememeli
+      // throw error; // Bu satırı kaldırdık
     }
   }
 

@@ -34,6 +34,8 @@ Kullanım durumu:
 import { useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { supabase } from '@/lib/supabase/client';
+import { logger } from '@/lib/logger';
+import { getAuthErrorMessage } from '@/lib/auth/auth-error-messages';
 // import { useTranslations } from '@/hooks/useTranslations';
 import { Eye, EyeOff, Lock, CheckCircle, AlertCircle } from 'lucide-react';
 
@@ -66,7 +68,7 @@ export default function ResetPasswordPage() {
       setType(typeParam);
     } else {
       setError(
-        'Geçersiz şifre sıfırlama linki. Lütfen yeni bir şifre sıfırlama talebi oluşturun.'
+        getAuthErrorMessage(new Error('Invalid reset link'), locale)
       );
     }
   }, [searchParams]);
@@ -110,17 +112,9 @@ export default function ResetPasswordPage() {
       });
 
       if (verifyError) {
-        console.error('Token doğrulama hatası:', verifyError);
-        if (
-          verifyError.message.includes('expired') ||
-          verifyError.message.includes('invalid')
-        ) {
-          setError(
-            'Şifre sıfırlama linki süresi dolmuş veya geçersiz. Lütfen yeni bir şifre sıfırlama talebi oluşturun.'
-          );
-        } else {
-          setError('Token doğrulama başarısız. Lütfen tekrar deneyin.');
-        }
+        logger.error('Token doğrulama hatası', verifyError);
+        const errorMessage = getAuthErrorMessage(verifyError, locale);
+        setError(errorMessage);
         return;
       }
 
@@ -130,8 +124,9 @@ export default function ResetPasswordPage() {
       });
 
       if (updateError) {
-        console.error('Şifre güncelleme hatası:', updateError);
-        setError('Şifre güncelleme başarısız. Lütfen tekrar deneyin.');
+        logger.error('Şifre güncelleme hatası', updateError);
+        const errorMessage = getAuthErrorMessage(updateError, locale);
+        setError(errorMessage);
       } else {
         setSuccess(true);
         // 3 saniye sonra giriş sayfasına yönlendir
@@ -140,8 +135,9 @@ export default function ResetPasswordPage() {
         }, 3000);
       }
     } catch (error) {
-      console.error('Şifre sıfırlama hatası:', error);
-      setError('Beklenmeyen bir hata oluştu. Lütfen tekrar deneyin.');
+      logger.error('Şifre sıfırlama hatası', error);
+      const errorMessage = getAuthErrorMessage(error as Error, locale);
+      setError(errorMessage);
     } finally {
       setLoading(false);
     }

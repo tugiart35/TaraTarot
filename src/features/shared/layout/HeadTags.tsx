@@ -38,6 +38,7 @@ Okunabilirlik, Optimizasyon, Yeniden Kullanılabilirlik ve Güvenlik:
 
 import { APP_CONFIG, APP_INFO } from '@/lib/config/app-config';
 import { pwaMetadata, viewport } from '@/lib/config/metadata';
+import StructuredData from '@/components/seo/StructuredData';
 
 export default function HeadTags() {
   return (
@@ -70,6 +71,46 @@ export default function HeadTags() {
         content={viewport.themeColor as string}
       />
       <meta name='msapplication-tap-highlight' content='no' />
+
+      {/* SEO Meta Tags */}
+      <meta name="description" content="Tarot okumaları, numeroloji hesaplamaları ve kişisel gelişim rehberliği. Uzman falcılar ile online tarot kartları ve numeroloji analizi." />
+      <meta name="keywords" content="tarot, numeroloji, fal, kart okuma, kişisel gelişim, online tarot, tarot kartları, numeroloji hesaplama" />
+      <meta name="author" content="Busbuskimki Tarot" />
+      <meta name="robots" content="index, follow" />
+      <meta name="language" content="Turkish" />
+      <meta name="revisit-after" content="7 days" />
+      
+      {/* Open Graph Meta Tags */}
+      <meta property="og:title" content="Busbuskimki Tarot - Online Tarot ve Numeroloji" />
+      <meta property="og:description" content="Profesyonel tarot okumaları ve numeroloji hesaplamaları. Uzman falcılar ile kişisel rehberlik." />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://busbuskimki.com" />
+      <meta property="og:image" content="https://busbuskimki.com/images/og-image.jpg" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:site_name" content="Busbuskimki Tarot" />
+      <meta property="og:locale" content="tr_TR" />
+      
+      {/* Twitter Card Meta Tags */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Busbuskimki Tarot - Online Tarot ve Numeroloji" />
+      <meta name="twitter:description" content="Profesyonel tarot okumaları ve numeroloji hesaplamaları. Uzman falcılar ile kişisel rehberlik." />
+      <meta name="twitter:image" content="https://busbuskimki.com/images/twitter-card.jpg" />
+      
+      {/* Canonical URL */}
+      <link rel="canonical" href="https://busbuskimki.com" />
+      
+      {/* Structured Data */}
+      <StructuredData type="website" />
+      <StructuredData type="organization" />
+      <StructuredData type="navigation" />
+      
+      {/* Security Headers */}
+      <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://www.googletagmanager.com; frame-ancestors 'none';" />
+      <meta httpEquiv="X-Frame-Options" content="DENY" />
+      <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
+      <meta httpEquiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+      <meta httpEquiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), interest-cohort=()" />
     </>
   );
 }

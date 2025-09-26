@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { supabase } from '@/lib/supabase/client';
-import { useAuth } from '@/hooks/useAuth';
+import { useAuth } from '@/hooks/auth/useAuth';
 import {
   Coins,
   TrendingUp,
@@ -34,7 +34,7 @@ interface CreditStats {
 }
 
 export default function CreditsPage() {
-  const { user, isAuthenticated, loading: authLoading } = useAuth();
+  const { user, loading: authLoading } = useAuth();
   const router = useRouter();
 
   // Pathname'den locale'i çıkar
@@ -54,13 +54,13 @@ export default function CreditsPage() {
   // Auth kontrolü
   useEffect(() => {
     if (!authLoading) {
-      if (!isAuthenticated) {
+      if (!user) {
         router.replace(`/${locale}/auth`);
         return;
       }
       fetchTransactions();
     }
-  }, [authLoading, isAuthenticated, filter, dateRange, router, locale]);
+  }, [authLoading, user, filter, dateRange, router, locale]);
 
   const fetchTransactions = async () => {
     if (!user) return;

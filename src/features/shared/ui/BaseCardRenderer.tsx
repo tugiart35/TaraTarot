@@ -47,17 +47,10 @@ Gereklilik ve Kullanım Durumu:
 
 'use client';
 
+import React, { memo } from 'react';
 import type { TarotCard } from '@/features/tarot/lib/a-tarot-helpers';
-
-export type CardTheme =
-  | 'default'
-  | 'amber'
-  | 'pink'
-  | 'purple'
-  | 'blue'
-  | 'green';
-export type CardMode = 'gallery' | 'position' | 'detail';
-export type CardSize = 'small' | 'medium' | 'large';
+import type { CardTheme, CardMode, CardSize } from '@/types/ui';
+import { validateImageSrc } from '@/utils/security';
 
 export interface BaseCardRendererProps {
   // Kart bilgileri
@@ -78,7 +71,7 @@ export interface BaseCardRendererProps {
   className?: string;
 }
 
-export default function BaseCardRenderer({
+const BaseCardRenderer = memo(function BaseCardRenderer({
   card,
   isReversed = false,
   mode,
@@ -217,6 +210,16 @@ export default function BaseCardRenderer({
   // Kart bileşeni
   const CardImage = () => {
     const imageSrc = getImageSrc();
+    
+    // Image source validation
+    if (!validateImageSrc(imageSrc)) {
+      return (
+        <div className='w-full h-full bg-gray-200 rounded-lg flex items-center justify-center'>
+          <span className='text-gray-500 text-sm'>Güvenli olmayan resim</span>
+        </div>
+      );
+    }
+
     return (
       <div className='relative w-full h-full'>
         <img
@@ -226,12 +229,8 @@ export default function BaseCardRenderer({
             isReversed ? 'rotate-180' : ''
           }`}
           onError={e => {
-            console.error('Image load error:', imageSrc);
             // Fallback olarak arka plan rengi göster
             e.currentTarget.style.display = 'none';
-          }}
-          onLoad={() => {
-            console.log('Image loaded successfully:', imageSrc);
           }}
         />
       </div>
@@ -282,4 +281,6 @@ export default function BaseCardRenderer({
       {getCardText()}
     </div>
   );
-}
+});
+
+export default BaseCardRenderer;
