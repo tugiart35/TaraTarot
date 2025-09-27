@@ -9,7 +9,7 @@ export {
 export {
   default as BaseInterpretation,
   type BaseInterpretationProps,
-  type CardMeaningData,
+  // type CardMeaningData,
 } from './BaseInterpretation';
 export { default as BaseReadingTypeSelector } from './BaseReadingTypeSelector';
 export { default as CardDetails } from './CardDetails';

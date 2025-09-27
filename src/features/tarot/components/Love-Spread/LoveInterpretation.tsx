@@ -20,7 +20,7 @@ import { forwardRef } from 'react';
 import {
   BaseInterpretation,
   BaseInterpretationProps,
-  CardMeaningData,
+  // CardMeaningData,
 } from '@/features/shared/ui';
 import type { TarotCard } from '@/features/tarot/lib/a-tarot-helpers';
 import { LOVE_POSITIONS_INFO } from './love-config';
@@ -46,7 +46,7 @@ const LoveInterpretation = forwardRef<HTMLDivElement, LoveInterpretationProps>(
     const getCardMeaning = (
       card: TarotCard,
       position: number
-    ): CardMeaningData | null => {
+    ): any | null => {
       if (!card || !position) {
         return null;
       }
@@ -67,7 +67,7 @@ const LoveInterpretation = forwardRef<HTMLDivElement, LoveInterpretationProps>(
 
     // Anlam metnini alır (pozisyon bazlı veya fallback)
     const getMeaningText = (
-      meaning: CardMeaningData | null,
+      meaning: any | null,
       _card: TarotCard,
       isReversed: boolean
     ): string => {
@@ -81,7 +81,7 @@ const LoveInterpretation = forwardRef<HTMLDivElement, LoveInterpretationProps>(
     // getContextText kaldırıldı - kullanılmıyor
 
     // Anahtar kelimeleri alır (en fazla 3)
-    const getKeywords = (meaning: CardMeaningData | null): string[] => {
+    const getKeywords = (meaning: any | null): string[] => {
       if (meaning?.keywords && meaning.keywords.length > 0) {
         return meaning.keywords.slice(0, 3);
       }

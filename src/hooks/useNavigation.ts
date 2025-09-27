@@ -29,6 +29,7 @@ Geliştirme ve öneriler:
 import { useMemo } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { useAuth } from '@/hooks/auth/useAuth';
+import { useValidation, ValidationUtils } from '@/hooks/shared/useValidation';
 
 // Navigation item interface
 export interface NavigationItem {

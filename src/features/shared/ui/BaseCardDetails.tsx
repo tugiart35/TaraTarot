@@ -56,6 +56,8 @@ export interface BaseCardDetailsProps {
     _isReversed: boolean,
     _position: number | null
   ) => ReactElement;
+  title?: string;
+  spreadType?: 'love' | 'money' | 'career' | 'problem-solving' | 'situation-analysis' | 'relationship-analysis' | 'relationship-problems' | 'marriage' | 'new-lover';
   theme?: 'default' | 'amber' | 'pink' | 'purple' | 'blue';
   maxWidth?: 'sm' | 'md' | 'lg' | 'xl' | '2xl';
   positionInfo?:
@@ -144,7 +146,7 @@ export default function BaseCardDetails({
       onClick={onClose}
     >
       <div
-        ref={focusTrapRef}
+        ref={focusTrapRef as React.RefObject<HTMLDivElement>}
         className={`${currentTheme.container} rounded-3xl p-6 md:p-8 ${maxWidthClasses[maxWidth]} w-full border shadow-2xl relative max-h-[90vh] overflow-y-auto animate-slide-in-up`}
         onClick={e => e.stopPropagation()}
         role="dialog"

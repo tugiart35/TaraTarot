@@ -62,6 +62,7 @@ import { useAuth } from '@/hooks/auth/useAuth';
 import { useReadingCredits } from '@/hooks/useReadingCredits';
 import { useToast } from '@/hooks/useToast';
 import { findSpreadById } from '@/lib/constants/tarotSpreads';
+// import { useBaseTarotComponent } from '@/features/tarot/components/shared/BaseTarotComponent';
 import {
   RELATIONSHIP_PROBLEMS_POSITIONS_INFO,
   RELATIONSHIP_PROBLEMS_POSITIONS_LAYOUT,
@@ -126,6 +127,40 @@ export default function RelationshipProblemsReading({
       // Pozisyon değişti
     },
   });
+
+  // Base tarot component hook'u kullan - şimdilik comment out
+  // const {
+  //   selectedCards,
+  //   currentStep,
+  //   readingType,
+  //   isModalOpen,
+  //   isCreditModalOpen,
+  //   formData,
+  //   handleCardSelect,
+  //   handleCardRemove,
+  //   updatePersonalInfo,
+  //   updateQuestion,
+  //   goToNextStep,
+  //   goToPreviousStep,
+  //   handleCreditDeduction,
+  //   handleReadingComplete,
+  //   openModal,
+  //   closeModal,
+  //   openCreditModal,
+  //   closeCreditModal,
+  //   setSelectedCards,
+  //   setCurrentStep,
+  //   setReadingType,
+  //   setFormData
+  // } = useBaseTarotComponent({
+  //   spreadId: 'relationship-problems',
+  //   cardCount: RELATIONSHIP_PROBLEMS_CARD_COUNT,
+  //   positionsInfo: RELATIONSHIP_PROBLEMS_POSITIONS_INFO,
+  //   positionsLayout: RELATIONSHIP_PROBLEMS_POSITIONS_LAYOUT,
+  //   onReadingComplete: (reading) => {
+  //     _onComplete?.(selectedCards, reading.interpretation);
+  //   }
+  // });
 
   // State'ler
   const { toast, showToast, hideToast } = useToast();

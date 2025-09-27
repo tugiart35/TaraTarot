@@ -35,6 +35,7 @@ import { RateLimiter } from '@/lib/utils/rate-limiting';
 import { determineLocale } from '@/lib/utils/locale-utils';
 import { GeolocationCORS } from '@/lib/api/geolocation-cors';
 import { GeolocationErrorResponse } from '@/lib/api/geolocation-responses';
+import { ApiBase } from '@/lib/api/shared/api-base';
 
 // Rate limiting constants
 const RATE_LIMIT = 10; // Dakikada 10 istek
@@ -42,13 +43,15 @@ const RATE_WINDOW = 60 * 1000; // 1 dakika
 
 // GET endpoint - IP tabanlı coğrafi konum tespiti
 export async function GET(request: NextRequest) {
-  try {
-    const ip = getClientIP(request);
+  // Rate limiting kontrolü using ApiBase
+  const rateLimitResponse = ApiBase.checkRateLimit(request, RATE_LIMIT, RATE_WINDOW);
+  if (rateLimitResponse) return rateLimitResponse;
 
-    // Rate limiting kontrolü
-    if (!RateLimiter.checkLimit('geolocation', ip, RATE_LIMIT, RATE_WINDOW)) {
-      return RateLimiter.createRateLimitResponse(RATE_LIMIT, RATE_WINDOW);
-    }
+  // Request logging
+  ApiBase.logRequest(request, 'Geolocation API');
+
+  try {
+    const ip = ApiBase.getClientIP(request);
 
     // IP tabanlı coğrafi konum tespiti
     const geolocation = await getGeolocationFromIP(ip);

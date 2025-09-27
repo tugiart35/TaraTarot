@@ -32,6 +32,7 @@ Kullanım durumu:
 
 import { NextRequest, NextResponse } from 'next/server';
 import { getClientIP } from '@/lib/utils/ip-utils';
+// import { ApiBase } from '@/lib/api/shared/api-base';
 
 // Cache için global değişkenler
 let exchangeRateCache: {

@@ -52,30 +52,18 @@ export const useDashboardActions = (
     }
   };
 
-  // Çıkış yap fonksiyonu - Basitleştirilmiş logout
+  // Çıkış yap fonksiyonu - Supabase ile entegre
   const handleLogout = async () => {
     console.log('🚪 Çıkış yapma işlemi başlatılıyor...');
     
     try {
-      // Direkt Supabase signOut çağrısı - session kontrolü yapmadan
+      // Supabase signOut çağrısı
       console.log('🔐 Supabase signOut çağrılıyor...');
       const { error } = await supabase.auth.signOut();
       
       console.log('🔍 SignOut sonucu:', { hasError: !!error, errorMessage: error?.message });
       
-      // Her durumda temizlik yap
-      console.log('🧹 Veriler temizleniyor...');
-      localStorage.clear();
-      sessionStorage.clear();
-      
-      // Cookie'leri temizle
-      document.cookie.split(";").forEach((c) => {
-        const eqPos = c.indexOf("=");
-        const name = eqPos > -1 ? c.substr(0, eqPos) : c;
-        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
-      });
-      
-      console.log('✅ Temizlik tamamlandı, yönlendiriliyor...');
+      console.log('✅ Çıkış tamamlandı, yönlendiriliyor...');
       
       // Kısa bir bekleme sonrası yönlendir
       setTimeout(() => {
@@ -85,17 +73,6 @@ export const useDashboardActions = (
       
     } catch (error) {
       console.error('❌ Çıkış yapma hatası:', error);
-      
-      // Hata durumunda da temizlik yap
-      localStorage.clear();
-      sessionStorage.clear();
-      
-      // Cookie'leri temizle
-      document.cookie.split(";").forEach((c) => {
-        const eqPos = c.indexOf("=");
-        const name = eqPos > -1 ? c.substr(0, eqPos) : c;
-        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
-      });
       
       console.log('🔄 Hata durumunda yönlendiriliyor...');
       window.location.href = `/${currentLocale}`;

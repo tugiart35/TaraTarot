@@ -1,149 +1,128 @@
 /*
- * DOSYA ANALİZİ - EMAIL CONFIRMATION CALLBACK
+ * EMAIL CONFIRMATION ROUTE - Locale-specific
  *
  * BAĞLANTILI DOSYALAR:
  * - @/lib/supabase/client.ts (Supabase bağlantısı)
- * - src/app/auth/page.tsx (Kayıt sayfası)
+ * - src/app/auth/callback/route.ts (Ana callback logic)
  *
  * DOSYA AMACI:
- * E-posta onay linklerini işleyen callback endpoint'i.
- * Kullanıcılar e-posta onay linkine tıkladığında bu endpoint'e yönlendirilir.
- * Token doğrulaması yapar, 100 kredi hediye eder ve kullanıcıyı uygun sayfaya yönlendirir.
+ * Supabase e-posta template'inden gelen locale-specific confirmation linklerini işler.
+ * Template: {{ .SiteURL }}/tr/auth/confirm?token_hash={{ .TokenHash }}&type=signup
  *
  * SUPABASE DEĞİŞKENLERİ VE TABLOLARI:
  * - supabase.auth.verifyOtp() - E-posta onay token'ını doğrular
  * - supabase.auth.getUser() - Mevcut kullanıcıyı alır
- * - profiles tablosu - Kredi bakiyesi güncelleme
- * - transactions tablosu - Kredi hediye işlemi loglama
- * - auth.users tablosu (otomatik Supabase tablosu)
- *
- * YENİ ÖZELLİKLER:
- * - E-posta onayından sonra 100 kredi hediye etme
- * - Transaction log ile kredi hediye işlemini kaydetme
- * - Hata durumunda graceful handling
- *
- * GELİŞTİRME ÖNERİLERİ:
- * - Error handling daha detaylı olabilir
- * - Logging sistemi eklenebilir
- * - Rate limiting eklenebilir
- * - Kredi hediye miktarı konfigürasyon dosyasından alınabilir
- *
- * TESPİT EDİLEN HATALAR:
- * - Şu anda hata yok
+ * - profiles tablosu - Kullanıcı profilleri
  *
  * KULLANIM DURUMU:
- * - GEREKLİ: E-posta onay sistemi için kritik
- * - GÜVENLİ: Production'a hazır
- * - İYİLEŞTİRİLEBİLİR: Error handling ve logging
+ * - GEREKLİ: Supabase e-posta template'i için
+ * - GÜVENLİ: Production-ready
  */
 
 import { type EmailOtpType } from '@supabase/supabase-js';
 import { type NextRequest, NextResponse } from 'next/server';
-import { supabase } from '@/lib/supabase/client';
-import { CREDIT_CONSTANTS } from '@/lib/constants/reading-credits';
+import { createServerClient } from '@supabase/ssr';
+import { cookies } from 'next/headers';
+import { RedirectUtils } from '@/lib/utils/redirect-utils';
+import { extractLocaleFromRequest } from '@/lib/utils/locale-utils';
+import { AdminDetectionService } from '@/lib/services/admin-detection-service';
+import { AuthErrorService } from '@/lib/services/auth-error-service';
 import { logger } from '@/lib/logger';
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
   const token_hash = searchParams.get('token_hash');
   const type = searchParams.get('type') as EmailOtpType | null;
-  const next = searchParams.get('next') ?? '/tr'; // Varsayılan olarak Türkçe ana sayfa
+  const locale = extractLocaleFromRequest(request);
 
-  // URL'den locale'i çıkar
-  const url = new URL(request.url);
-  const pathSegments = url.pathname.split('/');
-  const locale = pathSegments[1] || 'tr';
-
-  logger.info('Email confirmation callback', { token_hash, type, next } as any);
+  logger.info('Email confirmation callback', { token_hash, type, locale } as any);
 
   if (token_hash && type) {
+    const cookieStore = await cookies();
+    const supabase = createServerClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+      {
+        cookies: {
+          getAll() {
+            return cookieStore.getAll();
+          },
+          setAll(cookiesToSet: Array<{ name: string; value: string; options?: any }>) {
+            try {
+              cookiesToSet.forEach(({ name, value, options }) =>
+                cookieStore.set(name, value, options)
+              );
+            } catch {
+              // Server Component'ten çağrıldığında ignore edilebilir
+            }
+          },
+        },
+      }
+    );
+
     try {
-      const { error } = await supabase.auth.verifyOtp({
+      // PKCE flow - email confirmation için
+      const result = await supabase.auth.verifyOtp({
         type,
         token_hash,
       });
 
-      if (!error) {
+      if (!result.error) {
         logger.info('Email confirmation successful');
 
-        // E-posta onayından sonra 100 kredi hediye et
-        try {
-          await giveEmailConfirmationCredits();
-          logger.info('Email confirmation credits given successfully');
-        } catch (creditError) {
-          logger.error(
-            'Failed to give email confirmation credits',
-            creditError
-          );
-          // Kredi hediye etme hatası kritik değil, devam et
+        // Kullanıcı bilgilerini al
+        const { data: { user } } = await supabase.auth.getUser();
+        
+        if (user) {
+          // Profile kontrolü ve oluşturma
+          try {
+            const { ensureProfileExists } = await import('@/lib/utils/profile-utils');
+            const profileResult = await ensureProfileExists(user);
+            
+            if (!profileResult.success) {
+              console.warn('Profile kontrolü başarısız:', profileResult.error);
+              // Profile sorunu giriş işlemini etkilemez
+            }
+          } catch (profileError) {
+            console.warn('Profile kontrol hatası:', profileError);
+            // Profile hatası giriş işlemini etkilemez
+          }
+          
+          // Admin kontrolü yap
+          const isUserAdmin = await AdminDetectionService.isUserAdmin(user.id);
+          AdminDetectionService.logAdminAccess(user.id, isUserAdmin);
+          
+          // Yönlendirme kararı
+          const redirectPath = AdminDetectionService.getRedirectPath(isUserAdmin, locale);
+          
+          // Başarılı giriş - admin durumuna göre yönlendir
+          return RedirectUtils.createRedirectResponse(request, redirectPath);
+        } else {
+          // User yoksa normal dashboard'a yönlendir
+          return RedirectUtils.createDashboardRedirect(request, locale);
         }
-
-        // Locale already declared at top
-
-        // Başarılı onay sonrası dashboard'a yönlendir (kullanıcı giriş yapmış olacak)
-        return NextResponse.redirect(
-          new URL(`/${locale}/dashboard`, request.url)
-        );
       } else {
-        logger.error('Email confirmation error', error);
+        logger.error('Email confirmation error', result.error);
 
         // Token süresi dolmuşsa özel hata mesajı
         if (
-          error.message.includes('expired') ||
-          error.message.includes('invalid')
+          result.error.message.includes('expired') ||
+          result.error.message.includes('invalid')
         ) {
-          return NextResponse.redirect(
-            new URL(`/${locale}/auth?error=token_expired`, request.url)
-          );
+          return AuthErrorService.handleConfirmationError(result.error, locale);
+        } else {
+          return AuthErrorService.handleConfirmationError(result.error, locale);
         }
       }
     } catch (error) {
       logger.error('Email confirmation exception', error);
+      return AuthErrorService.handleConfirmationError(error, locale);
     }
   }
 
-  // Hata durumunda hata sayfasına yönlendir
-  logger.info('Redirecting to auth error page');
-  // Locale already declared at top
-
+  // Hata durumunda auth sayfasına yönlendir
+  logger.info('Redirecting to auth error page - missing parameters');
   return NextResponse.redirect(
     new URL(`/${locale}/auth?error=confirmation_failed`, request.url)
   );
-}
-
-/**
- * E-posta onayından sonra kullanıcıya 100 kredi hediye eder
- */
-async function giveEmailConfirmationCredits() {
-  try {
-    // Mevcut kullanıcıyı al
-    const {
-      data: { user },
-      error: userError,
-    } = await supabase.auth.getUser();
-
-    if (userError || !user) {
-      throw new Error('Kullanıcı bulunamadı');
-    }
-
-    // RPC ile atomik bonus kredi yükle (+ transaction log)
-    const { error: rpcError } = await supabase.rpc('fn_award_bonus_credits', {
-      p_user_id: user.id,
-      p_delta: CREDIT_CONSTANTS.EMAIL_CONFIRMATION_CREDITS,
-      p_reason: 'E-posta onayı hediye kredisi',
-      p_ref_type: 'email_confirmation_bonus',
-      p_ref_id: 'email_confirmation',
-    });
-
-    if (rpcError) {
-      throw rpcError;
-    }
-
-    logger.info(
-      `Email confirmation credits given via RPC: ${CREDIT_CONSTANTS.EMAIL_CONFIRMATION_CREDITS} to user ${user.id}`
-    );
-  } catch (error) {
-    logger.error('Email confirmation credit gift failed', error);
-    throw error;
-  }
 }

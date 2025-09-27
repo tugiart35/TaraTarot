@@ -505,15 +505,24 @@
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-slate-900;
+  @apply bg-night;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-purple-600 rounded-full;
+  @apply bg-lavender/30 rounded-full;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-purple-500;
+  @apply bg-lavender/50;
+}
+
+/* Auth sayfası için scrollbar gizleme */
+.auth-page {
+  overflow-x: hidden;
+}
+
+.auth-page::-webkit-scrollbar {
+  display: none;
 }
 
 /* Kart döndürme animasyonu */

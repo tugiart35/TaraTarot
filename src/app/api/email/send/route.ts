@@ -28,26 +28,38 @@ Kullanım durumu:
 - ✅ Production-ready: Güvenli ve test edilmiş
 */
 
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest } from 'next/server';
 import nodemailer from 'nodemailer';
 import { ErrorResponse } from '@/lib/api/error-responses';
 import { EmailCORS } from '@/lib/api/email-cors';
+import { ApiBase } from '@/lib/api/shared/api-base';
 
 export async function POST(request: NextRequest) {
+  // Rate limiting kontrolü
+  const rateLimitResponse = ApiBase.checkRateLimit(request);
+  if (rateLimitResponse) return rateLimitResponse;
+
+  // Request logging
+  ApiBase.logRequest(request, 'Email Send API');
+
   let requestBody: any = null;
   try {
     requestBody = await request.json();
     const { to, subject, body: emailBody, smtpSettings } = requestBody;
 
-    // Input validation
-    if (!to || !subject || !emailBody) {
-      return ErrorResponse.missingFieldsError(['to', 'subject', 'body']);
+    // Input validation using ApiBase
+    const requiredFields = ['to', 'subject', 'body'];
+    const validationResult = ApiBase.validateRequiredFields(requestBody, requiredFields);
+    if (!validationResult.success) {
+      return validationResult.error;
     }
 
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(to)) {
-      return ErrorResponse.emailValidationError();
+    // Email validation using ApiBase
+    if (!ApiBase.validateEmail(to)) {
+      return ApiBase.error({
+        code: 'INVALID_EMAIL',
+        message: 'Geçerli bir email adresi girin'
+      }, 400);
     }
 
     // SMTP settings validation
@@ -85,16 +97,20 @@ export async function POST(request: NextRequest) {
     const info = await transporter.sendMail(mailOptions);
 
     return EmailCORS.wrapResponse(
-      NextResponse.json({
-        success: true,
-        message: 'Email sent successfully',
+      ApiBase.success({
         messageId: info.messageId,
-      })
+        to: to,
+        subject: subject
+      }, 'Email başarıyla gönderildi')
     );
   } catch (error) {
-    console.error('Email sending error:', error);
+    ApiBase.logError(error, 'Email Send API');
     return EmailCORS.wrapResponse(
-      ErrorResponse.internalServerError((error as Error).message)
+      ApiBase.error({
+        code: 'EMAIL_SEND_FAILED',
+        message: 'Email gönderilemedi',
+        details: error
+      }, 500)
     );
   }
 }

@@ -4,6 +4,7 @@ import { UserProfile } from '@/types/dashboard.types';
 import { formatDate, getMemberSince } from '@/utils/dashboard-utils';
 import { getUserLevelString } from '@/utils/dashboard/user-level-utils';
 import { Coins, BookOpen, Calendar, Award, RefreshCw } from 'lucide-react';
+import { DashboardUtils } from '@/components/dashboard/shared/DashboardBaseComponent';
 
 interface StatsCardsProps {
   profile: UserProfile | null;
@@ -37,7 +38,7 @@ export default function StatsCards({
                 {translate('dashboard.creditBalance', 'Kredi Bakiyesi')}
               </p>
               <p className='text-2xl font-bold text-text-celestial'>
-                {profile?.credit_balance || 0}
+                {DashboardUtils.formatCreditBalance(profile?.credit_balance || 0)}
               </p>
             </div>
           </div>

@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 import { useTranslations } from '@/hooks/useTranslations';
 import { getDashboardRoutes } from '@/utils/dashboard/routing-utils';
+// import { DashboardUtils } from '@/components/dashboard/shared/DashboardBaseComponent';
 
 interface NavigationHeaderProps {
   currentLocale: string;

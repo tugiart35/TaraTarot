@@ -80,6 +80,7 @@ export function prepareProfileData(data: CreateProfileData) {
 
   return {
     id: data.userId,
+    email: data.email || null,
     first_name: data.firstName || null,
     last_name: data.lastName || null,
     full_name: fullName || displayName,
@@ -88,8 +89,9 @@ export function prepareProfileData(data: CreateProfileData) {
     birth_date: data.birthDate || null,
     gender: data.gender || null,
     bio: data.bio || null,
-    timezone: data.timezone || null,
+    timezone: data.timezone || 'Europe/Istanbul',
     created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
   };
 }
 
@@ -102,26 +104,64 @@ export async function createOrUpdateProfile(
   try {
     const profileData = prepareProfileData(data);
 
-    const { data: profile, error } = await supabase
+    // Önce mevcut profile'ı kontrol et
+    const { data: existingProfile, error: fetchError } = await supabase
       .from('profiles')
-      .upsert(profileData, {
-        onConflict: 'id',
-      })
-      .select()
+      .select('id')
+      .eq('id', data.userId)
       .single();
 
-    if (error) {
+    if (fetchError && fetchError.code !== 'PGRST116') {
+      // PGRST116 = no rows found, bu normal
       return {
         success: false,
-        error: error.message,
+        error: `Profile kontrol hatası: ${fetchError.message}`,
+      };
+    }
+
+    let result;
+    if (existingProfile) {
+      // Mevcut profile'ı güncelle
+      result = await supabase
+        .from('profiles')
+        .update({
+          email: profileData.email,
+          first_name: profileData.first_name,
+          last_name: profileData.last_name,
+          full_name: profileData.full_name,
+          display_name: profileData.display_name,
+          birth_date: profileData.birth_date,
+          gender: profileData.gender,
+          bio: profileData.bio,
+          timezone: profileData.timezone,
+          updated_at: new Date().toISOString(),
+        })
+        .eq('id', data.userId)
+        .select()
+        .single();
+    } else {
+      // Yeni profile oluştur
+      result = await supabase
+        .from('profiles')
+        .insert(profileData)
+        .select()
+        .single();
+    }
+
+    if (result.error) {
+      console.error('Profile işlemi hatası:', result.error);
+      return {
+        success: false,
+        error: `Database hatası: ${result.error.message}`,
       };
     }
 
     return {
       success: true,
-      profile,
+      profile: result.data,
     };
   } catch (error) {
+    console.error('Profile oluşturma/güncelleme hatası:', error);
     return {
       success: false,
       error: error instanceof Error ? error.message : 'Bilinmeyen hata',

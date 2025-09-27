@@ -53,6 +53,7 @@ import { useAuth } from '@/hooks/auth/useAuth';
 import { useToast } from '@/hooks/useToast';
 import { useReadingCredits } from '@/hooks/useReadingCredits';
 import { findSpreadById } from '@/lib/constants/tarotSpreads';
+// import { useBaseTarotComponent } from '@/features/tarot/components/shared/BaseTarotComponent';
 import {
   NEW_LOVER_POSITIONS_INFO,
   NEW_LOVER_POSITIONS_LAYOUT,
@@ -115,6 +116,40 @@ export default function NewLoverReading({
       // Pozisyon değişti
     },
   });
+
+  // Base tarot component hook'u kullan - şimdilik comment out
+  // const {
+  //   selectedCards,
+  //   currentStep,
+  //   readingType,
+  //   isModalOpen,
+  //   isCreditModalOpen,
+  //   formData,
+  //   handleCardSelect,
+  //   handleCardRemove,
+  //   updatePersonalInfo,
+  //   updateQuestion,
+  //   goToNextStep,
+  //   goToPreviousStep,
+  //   handleCreditDeduction,
+  //   handleReadingComplete,
+  //   openModal,
+  //   closeModal,
+  //   openCreditModal,
+  //   closeCreditModal,
+  //   setSelectedCards,
+  //   setCurrentStep,
+  //   setReadingType,
+  //   setFormData
+  // } = useBaseTarotComponent({
+  //   spreadId: 'new-lover',
+  //   cardCount: NEW_LOVER_CARD_COUNT,
+  //   positionsInfo: NEW_LOVER_POSITIONS_INFO,
+  //   positionsLayout: NEW_LOVER_POSITIONS_LAYOUT,
+  //   onReadingComplete: (reading) => {
+  //     _onComplete?.(selectedCards, reading.interpretation);
+  //   }
+  // });
 
   // State'ler
   const { toast, showToast, hideToast } = useToast();

@@ -48,21 +48,15 @@ export default function WelcomeSection({
     <div className='mb-8'>
       <div className='card-mystic p-8 text-text-celestial mystic-glow'>
         <div className='flex flex-col lg:flex-row items-start lg:items-center space-y-4 lg:space-y-0 lg:space-x-6'>
-          {/* Profil avatar - kullanıcı baş harfi */}
-          <div className='w-20 h-20 bg-crystal-clear rounded-full flex items-center justify-center border-2 border-gold flex-shrink-0'>
-            <span className='text-3xl font-bold text-gold'>
-              {profile?.display_name?.charAt(0)?.toUpperCase() || 'U'}{' '}
-              {/* İsim baş harfi */}
-            </span>
-          </div>
           {/* Kullanıcı bilgileri */}
           <div className='flex-1 w-full'>
             {/* Hoş geldin mesajı */}
             <h1 className='text-heading-1 text-gold mb-3'>
               {t('dashboard.welcome', 'Hoş geldiniz')},{' '}
-              {profile?.display_name ||
-                user?.email?.split('@')[0] ||
-                t('dashboard.user', 'Mistik Kullanıcı')}{' '}
+              {profile?.first_name && profile?.last_name 
+                ? `${profile.first_name} ${profile.last_name}`
+                : user?.email?.split('@')[0] ||
+                  t('dashboard.user', 'Mistik Kullanıcı')}{' '}
               ✨
             </h1>
             {/* Üyelik süresi */}

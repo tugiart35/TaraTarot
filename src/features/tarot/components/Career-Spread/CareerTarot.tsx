@@ -48,6 +48,7 @@ import {
   BaseCardRenderer,
   BaseInterpretation,
 } from '@/features/shared/ui';
+// import { useBaseTarotComponent } from '@/features/tarot/components/shared/BaseTarotComponent';
 import { useTarotReading } from '@/hooks/useTarotReading';
 import { useTranslations } from '@/hooks/useTranslations';
 import { useReadingCredits } from '@/hooks/useReadingCredits';
@@ -138,6 +139,40 @@ export default function CareerReading({
   const { toast, showToast, hideToast } = useToast();
   // const [error, setError] = useState<string | null>(null); // Kullanılmıyor
   const [startTime] = useState<number>(Date.now()); // Duration tracking için
+
+  // Base tarot component hook'u kullan - şimdilik comment out
+  // const {
+  //   selectedCards,
+  //   currentStep,
+  //   readingType,
+  //   isModalOpen,
+  //   isCreditModalOpen,
+  //   formData,
+  //   handleCardSelect,
+  //   handleCardRemove,
+  //   updatePersonalInfo,
+  //   updateQuestion,
+  //   goToNextStep,
+  //   goToPreviousStep,
+  //   handleCreditDeduction,
+  //   handleReadingComplete,
+  //   openModal,
+  //   closeModal,
+  //   openCreditModal,
+  //   closeCreditModal,
+  //   setSelectedCards,
+  //   setCurrentStep,
+  //   setReadingType,
+  //   setFormData
+  // } = useBaseTarotComponent({
+  //   spreadId: 'career',
+  //   cardCount: CAREER_CARD_COUNT,
+  //   positionsInfo: CAREER_POSITIONS_INFO,
+  //   positionsLayout: CAREER_POSITIONS_LAYOUT,
+  //   onReadingComplete: (reading) => {
+  //     _onComplete?.(selectedCards, reading.interpretation);
+  //   }
+  // });
 
   // DETAILED/WRITTEN için ek state'ler (LoveGuidanceDetail.tsx'den alınanlar)
   const [personalInfo, setPersonalInfo] = useState({

@@ -19,6 +19,7 @@ import { emailService } from '@/lib/email/email-service';
 import { pdfGeneratorService } from '@/lib/pdf/pdf-generator';
 import { ErrorResponse } from '@/lib/api/error-responses';
 import { EmailCORS } from '@/lib/api/email-cors';
+// import { ApiBase } from '@/lib/api/shared/api-base';
 
 // POST endpoint - Enhanced email test
 export async function POST(request: NextRequest) {

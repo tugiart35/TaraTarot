@@ -72,6 +72,7 @@ import { LOVE_POSITIONS_INFO, LOVE_POSITIONS_LAYOUT } from './love-config';
 import { CardDetails } from '@/features/shared/ui';
 import LoveCardRenderer from './LoveCardRenderer'; // Açılıma özel renderer
 import LoveInterpretation from './LoveInterpretation';
+import { useBaseTarotComponent } from '@/features/tarot/components/shared/BaseTarotComponent';
 
 // ============================================================================
 // BÖLÜM 1: SABITLER VE KONFIGÜRASYONLAR
@@ -114,16 +115,48 @@ export default function LoveReading({
   const detailedCredits = useReadingCredits('LOVE_SPREAD_DETAILED');
   const writtenCredits = useReadingCredits('LOVE_SPREAD_WRITTEN');
 
-  // useTarotReading hook'unu kullan
+  // Base tarot component hook'u kullan
   const {
     selectedCards,
+    // currentStep,
+    // readingType,
+    // isModalOpen,
+    // isCreditModalOpen,
+    // formData,
+    handleCardSelect: baseHandleCardSelect,
+    // handleCardRemove,
+    updatePersonalInfo,
+    // updateQuestion,
+    // goToNextStep,
+    // goToPreviousStep,
+    // handleCreditDeduction,
+    // handleReadingComplete,
+    // openModal,
+    // closeModal,
+    // openCreditModal,
+    // closeCreditModal,
+    // setSelectedCards,
+    // setCurrentStep,
+    // setReadingType,
+    // setFormData
+  } = useBaseTarotComponent({
+    spreadId: 'love',
+    cardCount: LOVE_CARD_COUNT,
+    positionsInfo: LOVE_POSITIONS_INFO as any,
+    positionsLayout: LOVE_POSITIONS_LAYOUT as any,
+    onReadingComplete: (reading) => {
+      _onComplete?.(selectedCards, reading.interpretation);
+    }
+  });
+
+  // useTarotReading hook'unu kullan
+  const {
     usedCardIds,
     showCardDetails,
     cardStates,
     isReversed,
     deck,
     currentPosition,
-    handleCardSelect,
     handleCardDetails,
     setShowCardDetails,
     toggleCardState,
@@ -131,13 +164,12 @@ export default function LoveReading({
     shuffleDeck,
     interpretationRef,
     userQuestion,
-    // setUserQuestion, // Kullanılmıyor - kaldırıldı
     selectedReadingType,
     setSelectedReadingType,
   } = useTarotReading({
     config: {
       cardCount: LOVE_CARD_COUNT,
-      positionsInfo: LOVE_POSITIONS_INFO,
+      positionsInfo: LOVE_POSITIONS_INFO as any,
     },
     onComplete: (_cards, _interpretation) => {
       // Aşk açılımı tamamlandı
@@ -155,7 +187,7 @@ export default function LoveReading({
   const [startTime] = useState<number>(Date.now()); // Duration tracking için
 
   // DETAILED/WRITTEN için ek state'ler (LoveGuidanceDetail.tsx'den alınanlar)
-  const [personalInfo, setPersonalInfo] = useState({
+  const [personalInfo] = useState({
     name: '', // İsim - user kaldırıldı
     surname: '', // Soyisim - user kaldırıldı
     birthDate: '',
@@ -226,14 +258,10 @@ export default function LoveReading({
   // Basit okuma için soru kaydetme fonksiyonu kaldırıldı - artık soru kaydet ekranı yok
 
   // DETAILED/WRITTEN için validasyon fonksiyonları (LoveGuidanceDetail.tsx'den alınan mantık)
-  const updatePersonalInfo = (
-    field: 'name' | 'surname' | 'birthDate' | 'email',
-    value: string
-  ) => {
-    setPersonalInfo(prev => ({ ...prev, [field]: value }));
-    setFormErrors(errors => ({ ...errors, [field]: '', general: '' }));
-  };
-  const updateQuestion = (field: keyof typeof questions, value: string) => {
+  // updatePersonalInfo fonksiyonu useBaseTarotComponent'ten geliyor, burada tekrar tanımlamaya gerek yok
+  // updateQuestion fonksiyonu da useBaseTarotComponent'ten geliyor
+  // Ancak burada özel question field'ları için ayrı bir fonksiyon gerekebilir
+  const updateDetailedQuestion = (field: keyof typeof questions, value: string) => {
     setQuestions(prev => ({ ...prev, [field]: value }));
     setFormErrors(errors => ({ ...errors, [field]: '', general: '' }));
   };
@@ -928,7 +956,7 @@ export default function LoveReading({
                           <textarea
                             value={questions.concern}
                             onChange={e =>
-                              updateQuestion('concern', e.target.value)
+                              updateDetailedQuestion('concern', e.target.value)
                             }
                             placeholder='Endişelerinizi detaylı bir şekilde açıklayın...'
                             className={`w-full px-4 py-3 bg-slate-800/80 border ${
@@ -952,7 +980,7 @@ export default function LoveReading({
                           <textarea
                             value={questions.understanding}
                             onChange={e =>
-                              updateQuestion('understanding', e.target.value)
+                              updateDetailedQuestion('understanding', e.target.value)
                             }
                             placeholder='Öğrenmek istediğiniz konuları belirtin...'
                             className={`w-full px-4 py-3 bg-slate-800/80 border ${
@@ -976,7 +1004,7 @@ export default function LoveReading({
                           <textarea
                             value={questions.emotional}
                             onChange={e =>
-                              updateQuestion('emotional', e.target.value)
+                              updateDetailedQuestion('emotional', e.target.value)
                             }
                             placeholder='Mevcut duygusal durumunuzu açıklayın...'
                             className={`w-full px-4 py-3 bg-slate-800/80 border ${
@@ -1156,7 +1184,7 @@ export default function LoveReading({
         nextPosition={selectedReadingType ? currentPosition : null}
         onCardSelect={
           selectedReadingType
-            ? handleCardSelect
+            ? baseHandleCardSelect
             : () => {
                 showToast('Lütfen önce bir okuma tipi seçin.', 'info');
               }

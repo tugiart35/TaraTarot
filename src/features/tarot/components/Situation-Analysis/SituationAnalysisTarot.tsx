@@ -34,6 +34,7 @@ import {
   BaseCardRenderer,
   BaseInterpretation,
 } from '@/features/shared/ui';
+// import { useBaseTarotComponent } from '@/features/tarot/components/shared/BaseTarotComponent';
 import { useTarotReading } from '@/hooks/useTarotReading';
 import { useTranslations } from '@/hooks/useTranslations';
 import { useAuth } from '@/hooks/auth/useAuth';
@@ -108,6 +109,40 @@ export default function SituationAnalysisReading({
       // Pozisyon değişti
     },
   });
+
+  // Base tarot component hook'u kullan - şimdilik comment out
+  // const {
+  //   selectedCards,
+  //   currentStep,
+  //   readingType,
+  //   isModalOpen,
+  //   isCreditModalOpen,
+  //   formData,
+  //   handleCardSelect,
+  //   handleCardRemove,
+  //   updatePersonalInfo,
+  //   updateQuestion,
+  //   goToNextStep,
+  //   goToPreviousStep,
+  //   handleCreditDeduction,
+  //   handleReadingComplete,
+  //   openModal,
+  //   closeModal,
+  //   openCreditModal,
+  //   closeCreditModal,
+  //   setSelectedCards,
+  //   setCurrentStep,
+  //   setReadingType,
+  //   setFormData
+  // } = useBaseTarotComponent({
+  //   spreadId: 'situation-analysis',
+  //   cardCount: SITUATION_ANALYSIS_CARD_COUNT,
+  //   positionsInfo: SITUATION_ANALYSIS_POSITIONS_INFO,
+  //   positionsLayout: SITUATION_ANALYSIS_POSITIONS_LAYOUT,
+  //   onReadingComplete: (reading) => {
+  //     _onComplete?.(selectedCards, reading.interpretation);
+  //   }
+  // });
 
   // State'ler
   const { toast, showToast, hideToast } = useToast();

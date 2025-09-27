@@ -1,20 +1,24 @@
 /*
  * Storage Utility
  * 
- * Bu dosya localStorage işlemleri için güvenli utility fonksiyonları içerir.
- * Error handling ve SSR uyumluluğu sağlar.
+ * Bu dosya Supabase ile entegre çalışan güvenli storage utility fonksiyonları içerir.
+ * localStorage yerine Supabase session kullanır.
  */
+
+import { supabase } from '@/lib/supabase/client';
 
 export class Storage {
   /**
-   * localStorage'dan veri okuma
+   * Supabase session'dan veri okuma
    */
-  static get<T>(key: string): T | null {
-    if (typeof window === 'undefined') return null;
-    
+  static async get<T>(key: string): Promise<T | null> {
     try {
-      const item = localStorage.getItem(key);
-      return item ? JSON.parse(item) : null;
+      const { data: { session } } = await supabase.auth.getSession();
+      if (session?.user) {
+        // User metadata'dan veri al
+        return session.user.user_metadata?.[key] || null;
+      }
+      return null;
     } catch (error) {
       console.error(`Storage get error for key ${key}:`, error);
       return null;
@@ -22,135 +26,128 @@ export class Storage {
   }
 
   /**
-   * localStorage'a veri yazma
+   * Supabase session'a veri yazma
    */
-  static set<T>(key: string, value: T): void {
-    if (typeof window === 'undefined') return;
-    
+  static async set<T>(key: string, value: T): Promise<void> {
     try {
-      localStorage.setItem(key, JSON.stringify(value));
+      const { data: { user } } = await supabase.auth.getUser();
+      if (user) {
+        // User metadata'yı güncelle
+        const { error } = await supabase.auth.updateUser({
+          data: { ...user.user_metadata, [key]: value }
+        });
+        
+        if (error) {
+          console.error(`Storage set error for key ${key}:`, error);
+        }
+      }
     } catch (error) {
       console.error(`Storage set error for key ${key}:`, error);
     }
   }
 
   /**
-   * localStorage'dan veri silme
+   * Supabase session'dan veri silme
    */
-  static remove(key: string): void {
-    if (typeof window === 'undefined') return;
-    
+  static async remove(key: string): Promise<void> {
     try {
-      localStorage.removeItem(key);
+      const { data: { user } } = await supabase.auth.getUser();
+      if (user) {
+        const updatedMetadata = { ...user.user_metadata };
+        delete updatedMetadata[key];
+        
+        const { error } = await supabase.auth.updateUser({
+          data: updatedMetadata
+        });
+        
+        if (error) {
+          console.error(`Storage remove error for key ${key}:`, error);
+        }
+      }
     } catch (error) {
       console.error(`Storage remove error for key ${key}:`, error);
     }
   }
 
   /**
-   * localStorage'ı temizleme
+   * Supabase session'ı temizleme
    */
-  static clear(): void {
-    if (typeof window === 'undefined') return;
-    
+  static async clear(): Promise<void> {
     try {
-      localStorage.clear();
+      await supabase.auth.signOut();
     } catch (error) {
       console.error('Storage clear error:', error);
     }
   }
 
   /**
-   * localStorage key'inin var olup olmadığını kontrol etme
+   * Supabase session key'inin var olup olmadığını kontrol etme
    */
-  static has(key: string): boolean {
-    if (typeof window === 'undefined') return false;
-    
+  static async has(key: string): Promise<boolean> {
     try {
-      return localStorage.getItem(key) !== null;
+      const { data: { session } } = await supabase.auth.getSession();
+      return session?.user?.user_metadata?.[key] !== undefined;
     } catch (error) {
       console.error(`Storage has error for key ${key}:`, error);
       return false;
     }
   }
-
-  /**
-   * localStorage boyutunu kontrol etme
-   */
-  static getSize(): number {
-    if (typeof window === 'undefined') return 0;
-    
-    try {
-      let total = 0;
-      for (const key in localStorage) {
-        if (localStorage.hasOwnProperty(key)) {
-          total += localStorage[key].length + key.length;
-        }
-      }
-      return total;
-    } catch (error) {
-      console.error('Storage size calculation error:', error);
-      return 0;
-    }
-  }
 }
 
-// Auth-specific storage helpers
+// Auth-specific storage helpers - Supabase ile entegre
 export class AuthStorage {
-  private static readonly REMEMBER_ME_KEY = 'auth_remember';
-  private static readonly SESSION_KEY = 'auth_session';
-
   /**
    * Remember me bilgilerini kaydetme
    */
-  static setRememberMe(email: string, rememberMe: boolean): void {
+  static async setRememberMe(email: string, rememberMe: boolean): Promise<void> {
     if (rememberMe && email) {
-      Storage.set(AuthStorage.REMEMBER_ME_KEY, { email, rememberMe });
+      await Storage.set('rememberMe', { email, rememberMe });
     } else {
-      Storage.remove(AuthStorage.REMEMBER_ME_KEY);
+      await Storage.remove('rememberMe');
     }
   }
 
   /**
    * Remember me bilgilerini alma
    */
-  static getRememberMe(): { email: string; rememberMe: boolean } | null {
-    return Storage.get(AuthStorage.REMEMBER_ME_KEY);
+  static async getRememberMe(): Promise<{ email: string; rememberMe: boolean } | null> {
+    return await Storage.get('rememberMe');
   }
 
   /**
    * Remember me bilgilerini temizleme
    */
-  static clearRememberMe(): void {
-    Storage.remove(AuthStorage.REMEMBER_ME_KEY);
+  static async clearRememberMe(): Promise<void> {
+    await Storage.remove('rememberMe');
   }
 
   /**
    * Session bilgilerini kaydetme
    */
-  static setSession(sessionData: any): void {
-    Storage.set(AuthStorage.SESSION_KEY, sessionData);
+  static async setSession(sessionData: any): Promise<void> {
+    await Storage.set('session', sessionData);
   }
 
   /**
    * Session bilgilerini alma
    */
-  static getSession(): any {
-    return Storage.get(AuthStorage.SESSION_KEY);
+  static async getSession(): Promise<any> {
+    return await Storage.get('session');
   }
 
   /**
    * Session bilgilerini temizleme
    */
-  static clearSession(): void {
-    Storage.remove(AuthStorage.SESSION_KEY);
+  static async clearSession(): Promise<void> {
+    await Storage.remove('session');
   }
 
   /**
    * Tüm auth bilgilerini temizleme
    */
-  static clearAll(): void {
-    AuthStorage.clearRememberMe();
-    AuthStorage.clearSession();
+  static async clearAll(): Promise<void> {
+    await AuthStorage.clearRememberMe();
+    await AuthStorage.clearSession();
+    await Storage.clear();
   }
 }

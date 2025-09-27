@@ -1,36 +1,34 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
+import { useAuthBase, type AuthUser } from '@/hooks/shared/useAuthBase';
 
-interface AdminUser {
+interface AdminUser extends AuthUser {
   email: string;
   isAuthenticated: boolean;
   loginTime: string;
 }
 
 export function useSimpleAdmin() {
+  const { user, loading, error, isAuthenticated, clearError } = useAuthBase<AdminUser>();
   const [admin, setAdmin] = useState<AdminUser | null>(null);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     checkAdminAuth();
-  }, []);
+  }, [user]);
 
-  const checkAdminAuth = () => {
+  const checkAdminAuth = useCallback(() => {
     try {
-      const isAuthenticated = sessionStorage.getItem('admin_authenticated') === 'true';
-      const email = sessionStorage.getItem('admin_email');
-      const loginTime = sessionStorage.getItem('admin_login_time');
-
-      console.log('Admin auth kontrolü:', { isAuthenticated, email, loginTime });
-
-      if (isAuthenticated && email) {
-        setAdmin({
-          email,
+      if (user && user.email) {
+        const adminUser: AdminUser = {
+          ...user,
+          email: user.email,
           isAuthenticated: true,
-          loginTime: loginTime || new Date().toISOString(),
-        });
-        console.log('Admin girişi onaylandı:', email);
+          loginTime: new Date().toISOString(),
+        };
+        
+        setAdmin(adminUser);
+        console.log('Admin girişi onaylandı:', user.email);
       } else {
         setAdmin(null);
         console.log('Admin girişi bulunamadı');
@@ -38,21 +36,16 @@ export function useSimpleAdmin() {
     } catch (error) {
       console.error('Admin auth check failed:', error);
       setAdmin(null);
-    } finally {
-      setLoading(false);
     }
-  };
+  }, [user]);
 
-  const logout = () => {
+  const logout = useCallback(() => {
     try {
-      sessionStorage.removeItem('admin_authenticated');
-      sessionStorage.removeItem('admin_email');
-      sessionStorage.removeItem('admin_login_time');
       setAdmin(null);
     } catch (error) {
       console.error('Admin logout failed:', error);
     }
-  };
+  }, []);
 
   return {
     admin,

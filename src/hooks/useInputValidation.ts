@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useCallback, useMemo } from 'react';
+import { useValidation, ValidationRules, ValidationUtils } from '@/hooks/shared/useValidation';
 
 interface ValidationRule {
   required?: boolean;
@@ -30,13 +31,9 @@ interface UseInputValidationReturn {
 export function useInputValidation(): UseInputValidationReturn {
   const [validationCache, setValidationCache] = useState<Map<string, ValidationResult>>(new Map());
 
-  // Sanitize input to prevent XSS attacks
+  // Sanitize input to prevent XSS attacks using ValidationUtils
   const sanitizeInput = useCallback((input: string): string => {
-    return input
-      .replace(/[<>]/g, '') // Remove potential HTML tags
-      .replace(/javascript:/gi, '') // Remove javascript: protocol
-      .replace(/on\w+=/gi, '') // Remove event handlers
-      .trim();
+    return ValidationUtils.sanitizeInput(input);
   }, []);
 
   // Validate email format

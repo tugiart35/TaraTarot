@@ -40,6 +40,7 @@ import { useToast } from '@/hooks/useToast';
 import { useReadingCredits } from '@/hooks/useReadingCredits';
 import { findSpreadById } from '@/lib/constants/tarotSpreads';
 import { MONEY_POSITIONS_INFO, MONEY_POSITIONS_LAYOUT } from './money-config';
+// import { useBaseTarotComponent } from '@/features/tarot/components/shared/BaseTarotComponent';
 
 // ============================================================================
 // BÖLÜM 1: SABITLER VE KONFIGÜRASYONLAR
@@ -118,6 +119,40 @@ export default function MoneyReading({
   const { toast, showToast, hideToast } = useToast();
   // const [error, setError] = useState<string | null>(null); // Kullanılmıyor
   const [startTime] = useState<number>(Date.now()); // Duration tracking için
+
+  // Base tarot component hook'u kullan - şimdilik comment out
+  // const {
+  //   selectedCards,
+  //   currentStep,
+  //   readingType,
+  //   isModalOpen,
+  //   isCreditModalOpen,
+  //   formData,
+  //   handleCardSelect,
+  //   handleCardRemove,
+  //   updatePersonalInfo,
+  //   updateQuestion,
+  //   goToNextStep,
+  //   goToPreviousStep,
+  //   handleCreditDeduction,
+  //   handleReadingComplete,
+  //   openModal,
+  //   closeModal,
+  //   openCreditModal,
+  //   closeCreditModal,
+  //   setSelectedCards,
+  //   setCurrentStep,
+  //   setReadingType,
+  //   setFormData
+  // } = useBaseTarotComponent({
+  //   spreadId: 'money',
+  //   cardCount: MONEY_CARD_COUNT,
+  //   positionsInfo: MONEY_POSITIONS_INFO,
+  //   positionsLayout: MONEY_POSITIONS_LAYOUT,
+  //   onReadingComplete: (reading) => {
+  //     _onComplete?.(selectedCards, reading.interpretation);
+  //   }
+  // });
 
   // DETAILED/WRITTEN için ek state'ler (LoveGuidanceDetail.tsx'den alınanlar)
   const [personalInfo, setPersonalInfo] = useState({
