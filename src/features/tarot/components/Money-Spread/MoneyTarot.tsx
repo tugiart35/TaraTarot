@@ -400,7 +400,7 @@ export default function MoneyReading({
         }
 
         showToast('Basit okuma tamamlandı!', 'success');
-        router.push('/');
+        router.push('/dashboard');
         return;
       }
 
@@ -472,8 +472,8 @@ export default function MoneyReading({
           // Kısa süre sonra ana sayfaya yönlendir
           setTimeout(() => {
             setShowSuccessModal(false);
-            router.push('/');
-          }, 1500); // 3 saniyeden 1.5 saniyeye düşürüldü
+            router.push('/dashboard');
+          }, 1500);
         } else {
           // Okuma kaydetme hatası
           showToast('Okuma kaydedilirken bir hata oluştu.', 'error');

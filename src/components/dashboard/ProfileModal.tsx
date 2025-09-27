@@ -42,17 +42,17 @@ import {
   Crown,
 } from 'lucide-react';
 import { useTranslations } from '@/hooks/useTranslations';
-import { User as SupabaseUser } from '@supabase/supabase-js';
 import { useAuth } from '@/hooks/auth/useAuth';
 import { useState, useEffect } from 'react';
 import { supabase } from '@/lib/supabase/client';
 import { UserProfile } from '@/types/dashboard.types';
+import type { AuthUser } from '@/hooks/shared/useAuthBase';
 
 interface ProfileModalProps {
   isOpen: boolean;
   onClose: () => void;
   profile: UserProfile | null;
-  user: SupabaseUser | null;
+  user: AuthUser | null;
   onProfileUpdate: (updatedProfile: UserProfile) => void;
 }
 

@@ -29,7 +29,7 @@ import { Suspense, lazy, Component, ReactNode } from 'react';
 
 // Lazy load the main component
 const LoveReadingRefactored = lazy(
-  () => import('../spreads/love/LoveReadingRefactored')
+  () => import('./LoveTarot')
 );
 
 // Loading component

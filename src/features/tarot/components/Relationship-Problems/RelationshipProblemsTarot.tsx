@@ -424,7 +424,7 @@ export default function RelationshipProblemsReading({
         }
 
         showToast('Basit okuma tamamlandı!', 'success');
-        router.push('/');
+        router.push('/dashboard');
         return;
       }
 
@@ -505,8 +505,8 @@ export default function RelationshipProblemsReading({
         // 3 saniye sonra modal'ı kapat ve ana sayfaya yönlendir
         setTimeout(() => {
           setShowSuccessModal(false);
-          router.push('/');
-        }, 3000);
+          router.push('/dashboard');
+        }, 1500);
         return;
       }
     } catch (error) {

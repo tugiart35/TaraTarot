@@ -391,7 +391,7 @@ export default function ProblemSolvingReading({
         }
 
         showToast(t('problemSolving.messages.simpleReadingCompleted'), 'success');
-        router.push('/');
+        router.push('/dashboard');
         return;
       }
 
@@ -463,11 +463,11 @@ export default function ProblemSolvingReading({
             console.error('❌ Email gönderimi hatası:', error);
           });
 
-          // Kısa süre sonra ana sayfaya yönlendir
+          // Kısa süre sonra profile yönlendir
           setTimeout(() => {
             setShowSuccessModal(false);
-            router.push('/');
-          }, 1500); // 3 saniyeden 1.5 saniyeye düşürüldü
+            router.push('/dashboard');
+          }, 1500);
         } else {
           console.error('Okuma kaydetme hatası:', saveResult.error);
           showToast(t('problemSolving.messages.readingSaveError'), 'error');

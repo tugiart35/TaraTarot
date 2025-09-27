@@ -61,6 +61,8 @@ import {
   BaseCardPosition,
   BaseCardGallery,
   BaseReadingTypeSelector,
+  BaseInterpretation,
+  BaseCardRenderer,
 } from '@/features/shared/ui';
 import { useTarotReading } from '@/hooks/useTarotReading';
 import { useTranslations } from '@/hooks/useTranslations';
@@ -70,9 +72,6 @@ import { useToast } from '@/hooks/useToast';
 import { findSpreadById } from '@/lib/constants/tarotSpreads';
 import { LOVE_POSITIONS_INFO, LOVE_POSITIONS_LAYOUT } from './love-config';
 import { CardDetails } from '@/features/shared/ui';
-import LoveCardRenderer from './LoveCardRenderer'; // Açılıma özel renderer
-import LoveInterpretation from './LoveInterpretation';
-import { useBaseTarotComponent } from '@/features/tarot/components/shared/BaseTarotComponent';
 
 // ============================================================================
 // BÖLÜM 1: SABITLER VE KONFIGÜRASYONLAR
@@ -115,48 +114,16 @@ export default function LoveReading({
   const detailedCredits = useReadingCredits('LOVE_SPREAD_DETAILED');
   const writtenCredits = useReadingCredits('LOVE_SPREAD_WRITTEN');
 
-  // Base tarot component hook'u kullan
-  const {
-    selectedCards,
-    // currentStep,
-    // readingType,
-    // isModalOpen,
-    // isCreditModalOpen,
-    // formData,
-    handleCardSelect: baseHandleCardSelect,
-    // handleCardRemove,
-    updatePersonalInfo,
-    // updateQuestion,
-    // goToNextStep,
-    // goToPreviousStep,
-    // handleCreditDeduction,
-    // handleReadingComplete,
-    // openModal,
-    // closeModal,
-    // openCreditModal,
-    // closeCreditModal,
-    // setSelectedCards,
-    // setCurrentStep,
-    // setReadingType,
-    // setFormData
-  } = useBaseTarotComponent({
-    spreadId: 'love',
-    cardCount: LOVE_CARD_COUNT,
-    positionsInfo: LOVE_POSITIONS_INFO as any,
-    positionsLayout: LOVE_POSITIONS_LAYOUT as any,
-    onReadingComplete: (reading) => {
-      _onComplete?.(selectedCards, reading.interpretation);
-    }
-  });
-
   // useTarotReading hook'unu kullan
   const {
+    selectedCards,
     usedCardIds,
     showCardDetails,
     cardStates,
     isReversed,
     deck,
     currentPosition,
+    handleCardSelect,
     handleCardDetails,
     setShowCardDetails,
     toggleCardState,
@@ -187,7 +154,7 @@ export default function LoveReading({
   const [startTime] = useState<number>(Date.now()); // Duration tracking için
 
   // DETAILED/WRITTEN için ek state'ler (LoveGuidanceDetail.tsx'den alınanlar)
-  const [personalInfo] = useState({
+  const [personalInfo, setPersonalInfo] = useState({
     name: '', // İsim - user kaldırıldı
     surname: '', // Soyisim - user kaldırıldı
     birthDate: '',
@@ -257,11 +224,15 @@ export default function LoveReading({
 
   // Basit okuma için soru kaydetme fonksiyonu kaldırıldı - artık soru kaydet ekranı yok
 
-  // DETAILED/WRITTEN için validasyon fonksiyonları (LoveGuidanceDetail.tsx'den alınan mantık)
-  // updatePersonalInfo fonksiyonu useBaseTarotComponent'ten geliyor, burada tekrar tanımlamaya gerek yok
-  // updateQuestion fonksiyonu da useBaseTarotComponent'ten geliyor
-  // Ancak burada özel question field'ları için ayrı bir fonksiyon gerekebilir
-  const updateDetailedQuestion = (field: keyof typeof questions, value: string) => {
+  // DETAILED/WRITTEN için validasyon fonksiyonları
+  const updatePersonalInfo = (
+    field: 'name' | 'surname' | 'birthDate' | 'email',
+    value: string
+  ) => {
+    setPersonalInfo(prev => ({ ...prev, [field]: value }));
+    setFormErrors(errors => ({ ...errors, [field]: '', general: '' }));
+  };
+  const updateQuestion = (field: keyof typeof questions, value: string) => {
     setQuestions(prev => ({ ...prev, [field]: value }));
     setFormErrors(errors => ({ ...errors, [field]: '', general: '' }));
   };
@@ -433,7 +404,7 @@ export default function LoveReading({
         }
 
         showToast('Basit okuma tamamlandı!', 'success');
-        router.push('/');
+        router.push('/dashboard');
         return;
       }
 
@@ -508,8 +479,8 @@ export default function LoveReading({
         // 3 saniye sonra modal'ı kapat ve ana sayfaya yönlendir
         setTimeout(() => {
           setShowSuccessModal(false);
-          router.push('/');
-        }, 3000);
+          router.push('/dashboard');
+        }, 1500);
         return;
       }
     } catch (error) {
@@ -543,6 +514,23 @@ export default function LoveReading({
       return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
     }
     return isReversed ? meaning.reversed : meaning.upright;
+  };
+
+  // Context bilgilerini al
+  const getCardMeaning = (card: TarotCard) => {
+    const position = selectedCards.findIndex(c => c?.id === card.id) + 1;
+    if (position === 0) return null;
+    
+    // Pozisyona özel kart anlamını al
+    const meaning = getMeaningByCardAndPosition(card.name, position);
+    if (!meaning) return null;
+
+    return {
+      card: card.name,
+      name: card.nameTr,
+      context: meaning.context, // Kartın pozisyonuna özel context bilgisini kullan
+      keywords: meaning.keywords,
+    };
   };
 
   // Basit yorum oluştur (kartlar eksikse uyarı ver)
@@ -956,7 +944,7 @@ export default function LoveReading({
                           <textarea
                             value={questions.concern}
                             onChange={e =>
-                              updateDetailedQuestion('concern', e.target.value)
+                              updateQuestion('concern', e.target.value)
                             }
                             placeholder='Endişelerinizi detaylı bir şekilde açıklayın...'
                             className={`w-full px-4 py-3 bg-slate-800/80 border ${
@@ -980,7 +968,7 @@ export default function LoveReading({
                           <textarea
                             value={questions.understanding}
                             onChange={e =>
-                              updateDetailedQuestion('understanding', e.target.value)
+                              updateQuestion('understanding', e.target.value)
                             }
                             placeholder='Öğrenmek istediğiniz konuları belirtin...'
                             className={`w-full px-4 py-3 bg-slate-800/80 border ${
@@ -1004,7 +992,7 @@ export default function LoveReading({
                           <textarea
                             value={questions.emotional}
                             onChange={e =>
-                              updateDetailedQuestion('emotional', e.target.value)
+                              updateQuestion('emotional', e.target.value)
                             }
                             placeholder='Mevcut duygusal durumunuzu açıklayın...'
                             className={`w-full px-4 py-3 bg-slate-800/80 border ${
@@ -1132,7 +1120,7 @@ export default function LoveReading({
                   }
                 }
                 renderCard={(card, props) => (
-                  <LoveCardRenderer card={card} {...props} />
+                  <BaseCardRenderer card={card} theme='pink' {...props} />
                 )}
                 colorScheme='pink'
               />
@@ -1184,7 +1172,7 @@ export default function LoveReading({
         nextPosition={selectedReadingType ? currentPosition : null}
         onCardSelect={
           selectedReadingType
-            ? baseHandleCardSelect
+            ? handleCardSelect
             : () => {
                 showToast('Lütfen önce bir okuma tipi seçin.', 'info');
               }
@@ -1198,11 +1186,13 @@ export default function LoveReading({
         }
         theme='pink'
         renderCard={(card, isUsed, canSelect) => (
-          <LoveCardRenderer
+          <BaseCardRenderer
             card={card}
             isUsed={isUsed}
             canSelect={canSelect}
             mode='gallery'
+            theme='pink'
+            isReversed={false}
           />
         )}
         translations={{
@@ -1257,7 +1247,21 @@ export default function LoveReading({
       {selectedCards.filter(c => c !== null).length === LOVE_CARD_COUNT &&
         selectedReadingType && (
           <div ref={interpretationRef} className='space-y-6'>
-            <LoveInterpretation cards={selectedCards} isReversed={isReversed} />
+            <BaseInterpretation
+              cards={selectedCards}
+              isReversed={isReversed}
+              theme='pink'
+              title='Aşk Açılımı Yorumu'
+              icon='💕'
+              badgeText='AŞK AÇILIMI'
+              badgeColor='bg-pink-500/20 text-pink-400'
+              positionsInfo={LOVE_POSITIONS_INFO}
+              getCardMeaning={getCardMeaning}
+              getPositionSpecificInterpretation={(card, position, isReversed) =>
+                getLoveCardMeaning(card, position, isReversed)
+              }
+              showContext={true}
+            />
 
             {/* Okumayı Kaydet Butonu - Sadece DETAILED/WRITTEN için */}
             {(selectedReadingType === READING_TYPES.DETAILED ||

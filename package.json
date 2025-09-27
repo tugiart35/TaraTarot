@@ -15,7 +15,8 @@
     "code-quality:fix": "npm run lint:fix && npm run format",
     "i18n:check": "node scripts/check-hardcoded-ui-strings.mjs",
     "i18n:test": "npm test tests/i18n/",
-    "i18n:validate": "npm run i18n:check && npm run i18n:test"
+    "i18n:validate": "npm run i18n:check && npm run i18n:test",
+    "clean:macos": "find . -name '._*' -delete && find . -name '.DS_Store' -delete"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",

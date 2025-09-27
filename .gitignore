@@ -5,7 +5,9 @@
 /.pnp
 .pnp.js
 .yarn/install-state.gz
-
+# macOS AppleDouble files
+._*
+.DS_Store
 # testing
 /coverage
 

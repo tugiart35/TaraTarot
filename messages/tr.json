@@ -1087,81 +1087,81 @@
     "positions": {
       "position1": {
         "title": "İlgi Duyduğun Kişi",
-        "description": "Bu kişi hakkında ne düşünüyor ve nasıl bir yaklaşım sergiliyor?"
+        "description": "Bu kişi sizinle ilgili ne düşünüyor? Yaklaşımı ve niyeti nasıl?"
       },
       "position2": {
         "title": "Fiziksel Bağlantı",
-        "description": "Aranızdaki fiziksel çekim ve cinsel uyum nasıl?"
+        "description": "Aranızdaki fiziksel çekim ve cinsel uyumun seviyesi."
       },
       "position3": {
         "title": "Duygusal Bağlantı",
-        "description": "Duygusal bağınız ve kalp bağlantınız nasıl?"
+        "description": "Duygusal bağınız ve kalpten kalbe uyumunuz."
       },
       "position4": {
         "title": "Uzun Vadeli Süreç",
-        "description": "İlişkinizin uzun vadeli potansiyeli ve geleceği nasıl?"
+        "description": "İlişkinizin uzun vadeli potansiyeli ve muhtemel gidişatı."
       }
     },
     "form": {
-      "personalInfo": "Kişisel Bilgileriniz",
+      "personalInfo": "Kişisel Bilgiler",
       "firstName": "Adınız",
       "lastName": "Soyadınız",
       "birthDate": "Doğum Tarihi",
       "email": "E-posta Adresiniz",
       "questions": "✨ Aşk Açılımı Soruları ✨",
-      "concernQuestion": "Aşk hayatınızda sizi en çok endişelendiren konu nedir?",
-      "understandingQuestion": "Bu aşk açılımı ile neyi anlamak istiyorsunuz?",
+      "concernQuestion": "Aşk hayatınızda sizi en çok düşündüren konu nedir?",
+      "understandingQuestion": "Bu açılımdan neyi anlamak istiyorsunuz?",
       "emotionalQuestion": "Şu anda duygusal olarak nasıl hissediyorsunuz?",
-      "saveAndOpen": "💕 Kaydet ve Kartları Aç",
+      "saveAndOpen": "Okumayı Kaydet ve Kartları Aç 💕",
       "saving": "Kaydediliyor...",
       "clearAll": "🔄 Tümünü Temizle"
     },
     "modals": {
       "infoTitle": "Aşk Açılımı Hakkında",
       "aboutSpread": "Açılım Hakkında",
-      "aboutSpreadText": "Bu 4 kartlık açılım, aşk hayatındaki en önemli sorulara ışık tutar. İlk kart aklındaki kişiyi, ikinci kart fiziksel ve cinsel bağınızı, üçüncü kart duygusal ve ruhsal uyumunuzu gösterir. Dördüncü kart ise ilişkinizin uzun vadeli sonucunu ortaya koyar. Böylece aşk yolculuğunuzun hem bugünü hem de geleceği hakkında bütüncül bir rehberlik sunar.",
-      "aboutSpreadText2": "İlk kart aklındaki kişiyi, ikinci kart fiziksel ve cinsel bağınızı, üçüncü kart duygusal ve ruhsal uyumunuzu gösterir. Dördüncü kart ise ilişkinizin uzun vadeli sonucunu ortaya koyar.",
-      "LoveAttention1": "ÖNEMLİ",
-      "loveAttention": "Okumayı kaydet dedikten sonra 2-4 saat içinde mail adresinize detaylı okumanızı iletiyor olacağım. Kart anlamları sadece bilgilendirme amaçlıdır.",
+      "aboutSpreadText": "Bu 4 kart; aklınızdaki kişi, aranızdaki çekim, duygusal-ruhsal uyum ve ilişkinin uzun vadeli yönünü aydınlatır-bugünle yarın arasına şefkatli bir köprü kurar.",
+      "aboutSpreadText2": "İlk kart aklınızdaki kişiyi, ikinci kart fiziksel ve cinsel bağınızı, üçüncü kart duygusal ve ruhsal uyumunuzu, dördüncü kart ise ilişkinizin uzun vadeli yönünü gösterir.",
+      "LoveAttention1": "Nazik Bir Not",
+      "loveAttention": "Okumayı kaydettikten sonra en geç 2-4 saat içinde size özel, detaylı yorumunuzu e-posta ile paylaşacağım. Bu yorumlar rehberlik ve farkındalık amaçlıdır; nihai seçimler size aittir.",
       "detailedReading": "Sesli Okuma",
-      "detailedReadingText": "Sesli okuma ile aşk analizinizi detaylı bir ses kaydı halinde alabilirsiniz. Bu ses kaydını indirebilir ve daha sonra tekrar dinleyebilirsiniz.",
+      "detailedReadingText": "Yorumunuzu sevgi dolu bir ses kaydı olarak alabilirsiniz. Kayıt size özel bir dille hazırlanır; indirip dilediğiniz an tekrar dinleyebilirsiniz.",
       "writtenReading": "Yazılı Okuma",
-      "writtenReadingText": "Yazılı okuma ile aşk analizinizi detaylı bir rapor halinde alabilirsiniz. Bu raporu kaydedebilir ve daha sonra tekrar okuyabilirsiniz.",
+      "writtenReadingText": "Yorumunuzu detaylı bir rapor olarak alabilirsiniz. Dilediğiniz zaman kaydedip yeniden okuyabilirsiniz.",
       "process": "Süreç",
       "step1": "Kişisel bilgilerinizi girin",
-      "step2": "Aşk hakkında soruları yanıtlayın",
-      "step3": "4 kartı seçin ve yorumları görün",
-      "step4": "Okumayı kaydedin ve e-posta alın",
+      "step2": "Aşk ile ilgili soruları yanıtlayın",
+      "step3": "4 kartı seçin, ön izleyin",
+      "step4": "Okumayı kaydedin; sonuç e-postanıza gelsin",
       "continue": "Devam Et",
       "creditConfirm": "Kredi Onayı",
-      "creditConfirmMessage": "Bu okuma için devam etmek istiyor musunuz?",
+      "creditConfirmMessage": "Bu okuma için devam etmek istediğinize emin misiniz?",
       "confirm": "Evet, Onaylıyorum",
       "cancel": "Vazgeç",
       "processing": "İşleniyor...",
-      "successTitle": "Okuma Başarıyla Kaydedildi!",
-      "successMessage": "Aşk açılımınız detaylı olarak kaydedildi ve analiz edildi. Sonuçlarınızı kullanıcı panelinden görüntüleyebilirsiniz.",
+      "successTitle": "Okuma Başarıyla Kaydedildi",
+      "successMessage": "Aşk açılımınız kaydedildi ve analiz edildi. Sonuçlarınızı kullanıcı panelinizden görüntüleyebilirsiniz.",
       "redirecting": "💝 Ana sayfaya yönlendiriliyorsunuz...",
       "saveReading": "Okumayı Kaydet 💝",
       "savingReading": "Kaydediliyor..."
     },
     "cardGroups": {
-      "cups": "Fincan",
-      "majorArcana": "Büyük arcana",
-      "pentacles": "Pentacles",
-      "swords": "Kılıç",
-      "wands": "Çubuklar"
+      "cups": "Kupalar",
+      "majorArcana": "Majör Arkana",
+      "pentacles": "Tılsımlar",
+      "swords": "Kılıçlar",
+      "wands": "Asalar"
     },
     "meanings": {
       "theFool": {
         "position1": {
-          "context": "Bu kişi aşk hayatında yeni bir sayfa açmaya hazırdır veya bundan korkan bir maceracıdır.",
-          "keywords[0]": "Yeni Başlangıçlar",
+          "context": "Bu kişi aşkında yeni bir sayfaya hazır; bazen de bu adımı atmaktan çekinen bir maceracı olabilir.",
+          "keywords[0]": "yeni başlangıçlar",
           "keywords[1]": "masumiyet",
           "keywords[2]": "kendiliğindenlik",
           "keywords[3]": "risk almak",
           "keywords[4]": "özgür ruh",
-          "reversed": "Tersine Alınan Aptal, bu kişinin pervasız, sorumsuz olabileceğini veya bir ilişkiye başlamaktan korkabileceğini gösterir. \nPotansiyel tehlikeleri görmezden geliyor ve bağlılıktan kaçınıyor olabilirler.",
-          "upright": "İlgilendiğiniz kişi çocuksu merak ve yaşam hakkındaki heyecanla doludur. \nYeni başlangıçlara açıklar ve maceracı bir ruha sahipler, ancak bu bazen onları planlanmamış ve düzensiz hale getirebilir. \nBu özgür ruhla da ilişkilere yaklaşıyorlar."
+          "reversed": "Ters Joker, kişinin pervasız ya da sorumluluktan kaçan bir tutumda olabileceğine ve ilişkiye başlamaktan çekinebileceğine işaret eder.\nPotansiyel riskleri görmezden gelebilir ve bağlanmaktan uzak durabilir.",
+          "upright": "İlgilendiğiniz kişi çocuksu merak ve yaşam coşkusuyla hareket ediyor.\nYeni başlangıçlara açık, maceracı bir ruha sahip; bu da bazen plansız ve dağınık görünmesine yol açabilir.\nİlişkilere de özgür bir zihinle, keşfetmeye hazır yaklaşır."
         }
       }
     }

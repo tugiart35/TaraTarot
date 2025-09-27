@@ -188,9 +188,9 @@ const BaseCardRenderer = memo(function BaseCardRenderer({
 
   // Kart görseli kaynak URL'si
   const getImageSrc = (): string => {
-    // Galeri modunda arka yüzü göster
+    // Galeri modunda kart seçilmişse ön yüzünü göster, değilse arka yüzü
     if (mode === 'gallery') {
-      return '/cards/CardBack.jpg';
+      return isUsed && card ? (card.image || '/cards/CardBack.jpg') : '/cards/CardBack.jpg';
     }
 
     // Pozisyon modunda kart seçilmişse ön yüzünü göster

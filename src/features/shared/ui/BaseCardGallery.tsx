@@ -63,7 +63,8 @@ interface BaseCardGalleryProps {
   renderCard: (
     _card: TarotCard,
     _isUsed: boolean,
-    _canSelect: boolean
+    _canSelect: boolean,
+    _isReversed?: boolean
   ) => ReactElement;
   galleryTitle?: string;
   emptyMessage?: string;
@@ -229,7 +230,7 @@ export default function BaseCardGallery({
                   }
                 }}
               >
-                {renderCard(card, isUsed, canSelect)}
+                {renderCard(card, isUsed, canSelect, false)}
               </div>
             );
           })}

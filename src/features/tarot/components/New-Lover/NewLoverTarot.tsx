@@ -373,7 +373,7 @@ export default function NewLoverReading({
         }
 
         showToast('Basit okuma tamamlandı!', 'success');
-        router.push('/');
+        router.push('/dashboard');
         return;
       }
 
@@ -449,8 +449,8 @@ export default function NewLoverReading({
 
         setTimeout(() => {
           setShowSuccessModal(false);
-          router.push('/');
-        }, 3000);
+          router.push('/dashboard');
+        }, 1500);
         return;
       }
     } catch (error) {

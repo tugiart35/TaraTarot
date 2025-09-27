@@ -425,7 +425,7 @@ export default function CareerReading({
         }
 
         showToast(t('career.messages.simpleReadingCompleted'), 'success');
-        router.push('/');
+        router.push('/dashboard');
         return;
       }
 
@@ -497,11 +497,11 @@ export default function CareerReading({
         // Başarı modal'ını göster
         setShowSuccessModal(true);
 
-        // 3 saniye sonra modal'ı kapat ve ana sayfaya yönlendir
+        // 1.5 saniye sonra modal'ı kapat ve profile yönlendir
         setTimeout(() => {
           setShowSuccessModal(false);
-          router.push('/');
-        }, 3000);
+          router.push('/dashboard');
+        }, 1500);
         return;
       }
     } catch (error) {

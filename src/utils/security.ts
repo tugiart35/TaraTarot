@@ -8,6 +8,16 @@
  * Sadece güvenli domain'lerden gelen resimlere izin verir
  */
 export function validateImageSrc(src: string): boolean {
+  // Yerel dosya yollarına izin ver (public klasöründeki dosyalar)
+  if (src.startsWith('/') && !src.startsWith('//')) {
+    return true;
+  }
+
+  // Data URL'lere izin ver (base64 encoded images)
+  if (src.startsWith('data:')) {
+    return true;
+  }
+
   const allowedDomains = [
     'localhost',
     'supabase.co',

@@ -165,7 +165,7 @@ export class TarotPositionMeaningGenerator implements PositionMeaningGenerator {
     const baseMeaning = cardData.upright;
     const positionContext = this.getPositionContext(spreadType, context);
     
-    return `${positionContext} ${baseMeaning.toLowerCase()}. ${this.getPositionSpecificGuidance(cardName, context, spreadType)}`;
+    return `${positionContext} ${baseMeaning.toLowerCase()}. ${this.getPositionSpecificGuidance(cardName, spreadType)}`;
   }
 
   private generateReversedMeaning(
@@ -177,7 +177,7 @@ export class TarotPositionMeaningGenerator implements PositionMeaningGenerator {
     const baseMeaning = cardData.reversed;
     const positionContext = this.getPositionContext(spreadType, context);
     
-    return `${positionContext} ${baseMeaning.toLowerCase()}. ${this.getPositionSpecificGuidance(cardName, context, spreadType, true)}`;
+    return `${positionContext} ${baseMeaning.toLowerCase()}. ${this.getPositionSpecificGuidance(cardName, spreadType, true)}`;
   }
 
   private generateContext(cardName: string, context: string, spreadType: string): string {
