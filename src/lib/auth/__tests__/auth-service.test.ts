@@ -1,6 +1,6 @@
 /*
  * Auth Service Tests
- * 
+ *
  * Bu dosya AuthService için unit testleri içerir.
  * Jest ve React Testing Library kullanır.
  */
@@ -42,7 +42,10 @@ describe('AuthService', () => {
         error: null,
       });
 
-      const result = await AuthService.signIn('test@example.com', 'password123');
+      const result = await AuthService.signIn(
+        'test@example.com',
+        'password123'
+      );
 
       expect(mockSupabase.auth.signInWithPassword).toHaveBeenCalledWith({
         email: 'test@example.com',
@@ -59,7 +62,9 @@ describe('AuthService', () => {
         error: mockError,
       });
 
-      await expect(AuthService.signIn('test@example.com', 'wrongpassword')).rejects.toThrow();
+      await expect(
+        AuthService.signIn('test@example.com', 'wrongpassword')
+      ).rejects.toThrow();
     });
   });
 
@@ -141,7 +146,9 @@ describe('AuthService', () => {
         error: mockError,
       });
 
-      await expect(AuthService.resetPassword('invalid-email', 'tr')).rejects.toThrow();
+      await expect(
+        AuthService.resetPassword('invalid-email', 'tr')
+      ).rejects.toThrow();
     });
   });
 
@@ -208,7 +215,9 @@ describe('AuthService', () => {
 
       const result = AuthService.onAuthStateChange(mockCallback);
 
-      expect(mockSupabase.auth.onAuthStateChange).toHaveBeenCalledWith(mockCallback);
+      expect(mockSupabase.auth.onAuthStateChange).toHaveBeenCalledWith(
+        mockCallback
+      );
       expect(result).toBeDefined();
     });
   });

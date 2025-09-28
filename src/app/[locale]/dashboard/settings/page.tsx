@@ -70,7 +70,9 @@ export default function SettingsPage() {
   }, [authLoading, user, router, locale]);
 
   const fetchUserSettings = async () => {
-    if (!user) return;
+    if (!user) {
+      return;
+    }
 
     try {
       // Fetch notification preferences (from user_preferences table if exists)
@@ -109,7 +111,9 @@ export default function SettingsPage() {
         password: passwordData.newPassword,
       });
 
-      if (error) throw error;
+      if (error) {
+        throw error;
+      }
 
       alert(
         t('settings.passwordUpdatedSuccess', 'Şifre başarıyla güncellendi!')
@@ -135,7 +139,9 @@ export default function SettingsPage() {
       const {
         data: { user },
       } = await supabase.auth.getUser();
-      if (!user) return;
+      if (!user) {
+        return;
+      }
 
       // Export user data
       const data = {
@@ -185,7 +191,9 @@ export default function SettingsPage() {
       const {
         data: { user },
       } = await supabase.auth.getUser();
-      if (!user) return;
+      if (!user) {
+        return;
+      }
 
       // Delete user data
       await supabase.from('readings').delete().eq('user_id', user.id);
@@ -193,7 +201,9 @@ export default function SettingsPage() {
 
       // Delete user account
       const { error } = await supabase.auth.admin.deleteUser(user.id);
-      if (error) throw error;
+      if (error) {
+        throw error;
+      }
 
       alert(
         t('settings.accountDeletedSuccess', 'Hesabınız başarıyla silindi.')

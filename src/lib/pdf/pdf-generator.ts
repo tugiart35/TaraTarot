@@ -113,10 +113,18 @@ class PDFGeneratorService {
     };
 
     const getReadingIcon = (type: string) => {
-      if (type.includes('LOVE')) return '❤️';
-      if (type.includes('GENERAL') || type.includes('THREE_CARD')) return '⭐';
-      if (type.includes('CAREER')) return '📅';
-      if (type.includes('NUMEROLOGY')) return '#️⃣';
+      if (type.includes('LOVE')) {
+        return '❤️';
+      }
+      if (type.includes('GENERAL') || type.includes('THREE_CARD')) {
+        return '⭐';
+      }
+      if (type.includes('CAREER')) {
+        return '📅';
+      }
+      if (type.includes('NUMEROLOGY')) {
+        return '#️⃣';
+      }
       return '⭐';
     };
 
@@ -416,7 +424,9 @@ class PDFGeneratorService {
       )
       .join('');
 
-    if (!questions) return '';
+    if (!questions) {
+      return '';
+    }
 
     return `
       <div class="questions-section">
@@ -556,7 +566,11 @@ class PDFGeneratorService {
         'tr'
       ),
       pinnacles: calculatePinnaclesChallenges(birthDate, 'tr'),
-      personalCycles: calculatePersonalCycles(birthDate, new Date().toISOString().split('T')[0], 'tr'),
+      personalCycles: calculatePersonalCycles(
+        birthDate,
+        new Date().toISOString().split('T')[0],
+        'tr'
+      ),
     };
   }
 

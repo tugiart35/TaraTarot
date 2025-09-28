@@ -43,7 +43,14 @@ export interface PositionInfo {
 }
 
 // Tema tipi
-export type Theme = 'default' | 'amber' | 'pink' | 'purple' | 'blue' | 'green' | 'emerald';
+export type Theme =
+  | 'default'
+  | 'amber'
+  | 'pink'
+  | 'purple'
+  | 'blue'
+  | 'green'
+  | 'emerald';
 
 // Toast tipi
 export type ToastType = 'success' | 'error' | 'info' | 'warning';
@@ -53,6 +60,12 @@ export type LoadingVariant = 'spinner' | 'pulse' | 'dots' | 'bars';
 export type SkeletonType = 'text' | 'avatar' | 'card' | 'button';
 
 // Card renderer tipleri
-export type CardTheme = 'default' | 'amber' | 'pink' | 'purple' | 'blue' | 'green';
+export type CardTheme =
+  | 'default'
+  | 'amber'
+  | 'pink'
+  | 'purple'
+  | 'blue'
+  | 'green';
 export type CardMode = 'gallery' | 'position' | 'detail';
 export type CardSize = 'small' | 'medium' | 'large';

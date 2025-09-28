@@ -60,7 +60,7 @@ export async function getServerClient() {
 
 export async function getServerSession() {
   const supabase = await getServerClient();
-  
+
   try {
     // Güvenli user kontrolü için getUser() kullan
     const {
@@ -99,18 +99,14 @@ export const createClient = () => {
   }
 
   // Server-side client with service role key for admin operations
-  return createServerClient<Database>(
-    supabaseUrl,
-    supabaseServiceKey,
-    {
-      cookies: {
-        getAll() {
-          return [];
-        },
-        setAll() {
-          // No-op for service role client
-        },
+  return createServerClient<Database>(supabaseUrl, supabaseServiceKey, {
+    cookies: {
+      getAll() {
+        return [];
       },
-    }
-  );
+      setAll() {
+        // No-op for service role client
+      },
+    },
+  });
 };

@@ -52,7 +52,8 @@ export const position1Meanings: NewLoverPosition1Meaning[] = [
     reversed:
       'Ters Deli, dikkatsizce atılan adımların kısa süreli bir ilişkiye yol açabileceğini gösterir. Yeniye açılırken sabırlı olmalısın.',
     keywords: ['başlangıç', 'sürpriz', 'özgürlük', 'deneyim'],
-    context: 'Yeni bir ilişki olasılığı çok yüksek ama dikkat ve denge gerekli.',
+    context:
+      'Yeni bir ilişki olasılığı çok yüksek ama dikkat ve denge gerekli.',
     group: 'Majör Arkana',
   },
   {
@@ -165,7 +166,7 @@ export const position1Meanings: NewLoverPosition1Meaning[] = [
   },
   {
     id: 'wheel_of_fortune_na_pos1',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 1,
     upright:
       'Kader Çarkı, sürpriz bir şekilde yeni bir ilişkinin kapında olacağını söyler.',
@@ -205,8 +206,7 @@ export const position1Meanings: NewLoverPosition1Meaning[] = [
     position: 1,
     upright:
       'Ölüm, eski bağların bitişiyle yeni bir ilişki başlayabilir. Alan açıldığında aşk gelecektir.',
-    reversed:
-      'Ters Ölüm, geçmişe tutunmak yeni ilişkiye engel olabilir.',
+    reversed: 'Ters Ölüm, geçmişe tutunmak yeni ilişkiye engel olabilir.',
     keywords: ['bitiş', 'yenilenme', 'dönüşüm', 'başlangıç'],
     context: 'Yeni ilişki için geçmişin bırakılması şart.',
     group: 'Majör Arkana',
@@ -253,8 +253,7 @@ export const position1Meanings: NewLoverPosition1Meaning[] = [
     position: 1,
     upright:
       'Yıldız, umut ve yenilenme getirir. Yakında huzurlu ve ilham verici bir ilişki başlayabilir.',
-    reversed:
-      'Ters Yıldız, umutsuzluğun yeni ilişkiyi geciktireceğini söyler.',
+    reversed: 'Ters Yıldız, umutsuzluğun yeni ilişkiyi geciktireceğini söyler.',
     keywords: ['umut', 'ilham', 'şifa', 'başlangıç'],
     context: 'Yeni ilişki olasılığı yüksek, umut canlı tutulmalı.',
     group: 'Majör Arkana',
@@ -488,7 +487,8 @@ export const position1Meanings: NewLoverPosition1Meaning[] = [
     reversed:
       'Ters Kılıç Ası, belirsiz mesajlar ve yarım doğruların fırsatı bulandırabileceğini anlatır. Yeni ilişki potansiyeli var ama netlik sağlanmazsa başlangıç gecikebilir.',
     keywords: ['netlik', 'gerçek', 'doğrudanlık', 'başlangıç'],
-    context: 'Açık söz ve net niyet yeni ilişkiyi çağırıyor; belirsiz dil geciktirir.',
+    context:
+      'Açık söz ve net niyet yeni ilişkiyi çağırıyor; belirsiz dil geciktirir.',
     group: 'Kılıçlar',
   },
   {
@@ -512,7 +512,8 @@ export const position1Meanings: NewLoverPosition1Meaning[] = [
     reversed:
       'Ters Üç Kılıç, şifanın başladığını ve kalbin yeniden sevmeye hazırlandığını söyler. Yakında, duygusal açıklıkla beslenen bir tanışma gündeme gelebilir.',
     keywords: ['kırgınlık', 'iyileşme', 'onarım', 'açıklık'],
-    context: 'Acıyı onarmak yeni ilişkiye zemin hazırlar; şifa süreci hızlanıyor.',
+    context:
+      'Acıyı onarmak yeni ilişkiye zemin hazırlar; şifa süreci hızlanıyor.',
     group: 'Kılıçlar',
   },
   {
@@ -524,7 +525,8 @@ export const position1Meanings: NewLoverPosition1Meaning[] = [
     reversed:
       'Ters Dört Kılıç, gerektiği kadar dinlenmeden koşmanın kalbi yorduğunu söyler. Ritmi düşürdüğünde yeni ilişki ihtimali kendini gösterir.',
     keywords: ['dinlenme', 'toparlanma', 'sükunet', 'yenilenme'],
-    context: 'Mola ve zihinsel temizlik, yeni ilişkinin sağlıklı doğuşunu destekler.',
+    context:
+      'Mola ve zihinsel temizlik, yeni ilişkinin sağlıklı doğuşunu destekler.',
     group: 'Kılıçlar',
   },
   {
@@ -818,175 +820,176 @@ export const position1Meanings: NewLoverPosition1Meaning[] = [
     group: 'Asalar',
   },
 
-    //--- Tılsımlar Serisi ---
-    {
-      id: 'ace_of_pentacles_na_pos1',
-      card: 'Ace of Pentacles',
-      position: 1,
-      upright:
-        'Tılsım Ası, somut ve güvenilir bir başlangıcın kapıda olduğunu gösterir. Bu yeni ilişki toprak gibi sağlam ve uzun vadeli olabilir.',
-      reversed:
-        'Ters Tılsım Ası, fırsatı görememe ya da güvenlik kaygısı sebebiyle gecikmeleri işaret eder. Dikkatle bakıldığında değerli bir başlangıç hâlâ mümkündür.',
-      keywords: ['fırsat', 'başlangıç', 'güven', 'istikrar'],
-      context: 'Yakında sağlam temelli bir ilişki fırsatı doğuyor; dikkatli olun.',
-      group: 'Tılsımlar',
-    },
-    {
-      id: 'two_of_pentacles_na_pos1',
-      card: 'Two of Pentacles',
-      position: 1,
-      upright:
-        'İki Tılsım, hayatındaki yoğunluk içinde denge kurma ihtiyacını vurgular. Yeni ilişki fırsatı gelecek ama önceliklerini düzenlemen gerekiyor.',
-      reversed:
-        'Ters İki Tılsım, kaotik bir dönemde olduğun için yeni başlangıcın zorlanabileceğini söyler. Küçük ayarlamalarla ilişki için alan açabilirsin.',
-      keywords: ['denge', 'esneklik', 'öncelik', 'akış'],
-      context: 'Dengeni bulduğunda yeni ilişki şansı netleşir.',
-      group: 'Tılsımlar',
-    },
-    {
-      id: 'three_of_pentacles_na_pos1',
-      card: 'Three of Pentacles',
-      position: 1,
-      upright:
-        'Üç Tılsım, işbirliği ve ortak çabanın bir ilişkiye vesile olacağını anlatır. Ortak proje, çevre ya da iş alanında tanışma ihtimali yüksek.',
-      reversed:
-        'Ters Üç Tılsım, rol karışıklığı ya da yanlış anlaşılmaların yakın fırsatı gölgeleyebileceğini işaret eder. Açık iletişimle şans hâlâ senin yanında.',
-      keywords: ['işbirliği', 'ortaklık', 'tanışma', 'çaba'],
-      context: 'Ortak ortam veya proje yeni ilişkiyi başlatabilir.',
-      group: 'Tılsımlar',
-    },
-    {
-      id: 'four_of_pentacles_na_pos1',
-      card: 'Four of Pentacles',
-      position: 1,
-      upright:
-        'Dört Tılsım, güvenli alanı koruma isteğinin kalbini kapattığını gösterir. Açıldığında yeni bir ilişki hızla kapına gelebilir.',
-      reversed:
-        'Ters Dört Tılsım, bırakma ve esneme sürecinin başladığını müjdeler. Bu rahatlama, yeni ilişkinin doğuşunu kolaylaştırır.',
-      keywords: ['güvenlik', 'kontrol', 'açılma', 'esneklik'],
-      context: 'Kapanan kalp açıldığında ilişki fırsatı kendini gösterir.',
-      group: 'Tılsımlar',
-    },
-    {
-      id: 'five_of_pentacles_na_pos1',
-      card: 'Five of Pentacles',
-      position: 1,
-      upright:
-        'Beş Tılsım, yalnızlık ve dışarıda kalma duygusunu yansıtır. Ancak bu kırılganlık içinde sana ışık olacak bir eşleşme yakında gelebilir.',
-      reversed:
-        'Ters Beş Tılsım, toparlanma ve destek bulma sürecini gösterir. Bu yükselişle yeni bir ilişki kapıya dayanabilir.',
-      keywords: ['yalnızlık', 'destek', 'umut', 'kırılganlık'],
-      context: 'Karanlık dönemin ardından yeni ilişki ihtimali doğuyor.',
-      group: 'Tılsımlar',
-    },
-    {
-      id: 'six_of_pentacles_na_pos1',
-      card: 'Six of Pentacles',
-      position: 1,
-      upright:
-        'Altı Tılsım, karşılıklı destek ve adil alışverişin bir ilişkiyi başlatabileceğini söyler. Dengeli bir bağ seni bekliyor olabilir.',
-      reversed:
-        'Ters Altı Tılsım, dengesiz verme–alma alışkanlıklarının yeni ilişkiyi gölgeleyebileceğini işaret eder. Eşitlik sağlandığında yol açılır.',
-      keywords: ['denge', 'paylaşım', 'eşitlik', 'destek'],
-      context: 'Adil bir alışveriş yeni bir aşkın kapısını aralayabilir.',
-      group: 'Tılsımlar',
-    },
-    {
-      id: 'seven_of_pentacles_na_pos1',
-      card: 'Seven of Pentacles',
-      position: 1,
-      upright:
-        'Yedi Tılsım, sabırlı bekleyişin ve emeklerin karşılığını vereceğini anlatır. Yakında meyve verecek bir ilişki potansiyeli var.',
-      reversed:
-        'Ters Yedi Tılsım, sabırsızlık ya da yanlış yatırımın fırsatı erteleyebileceğini söyler. Sükunet ve ölçü yeni aşkı hızlandırır.',
-      keywords: ['sabır', 'bekleyiş', 'yatırım', 'ödül'],
-      context: 'Sabırla kurduğun temel yeni ilişkiyi getiriyor.',
-      group: 'Tılsımlar',
-    },
-    {
-      id: 'eight_of_pentacles_na_pos1',
-      card: 'Eight of Pentacles',
-      position: 1,
-      upright:
-        'Sekiz Tılsım, düzenli emek ve öğrenme sürecinin seni ilişkiye hazır hale getirdiğini gösterir. Yakında bu disiplin karşılığını verecek.',
-      reversed:
-        'Ters Sekiz Tılsım, özensizlik veya aşırı rutinin kalbine ağırlık verdiğini anlatır. Yenilenme sağlandığında ilişki fırsatı doğar.',
-      keywords: ['emek', 'disiplin', 'hazırlık', 'ilerleme'],
-      context: 'Çabanın ve hazırlığın karşılığı yeni bir aşk olabilir.',
-      group: 'Tılsımlar',
-    },
-    {
-      id: 'nine_of_pentacles_na_pos1',
-      card: 'Nine of Pentacles',
-      position: 1,
-      upright:
-        'Dokuz Tılsım, bağımsızlığın ve öz değerinin güçlü bir çekim yarattığını söyler. Yakında kendi gücünü gören biriyle yeni bir ilişki doğabilir.',
-      reversed:
-        'Ters Dokuz Tılsım, aşırı bağımlılık eğiliminin yeni ilişkiyi zorlayabileceğini işaret eder. Kendi bağımsızlığını onurlandırdığında doğru eşleşme gelir.',
-      keywords: ['bağımsızlık', 'öz değer', 'çekim', 'özgüven'],
-      context: 'Öz değerini koruman yeni aşkı çekecek.',
-      group: 'Tılsımlar',
-    },
-    {
-      id: 'ten_of_pentacles_na_pos1',
-      card: 'Ten of Pentacles',
-      position: 1,
-      upright:
-        'On Tılsım, uzun vadeli ve kalıcı bir ilişkinin ufukta olduğunu gösterir. Bu yeni bağ, aile ve istikrar enerjisi taşıyabilir.',
-      reversed:
-        'Ters On Tılsım, geçmişten gelen aile veya güvenlik temalarının başlangıcı zorlayabileceğini anlatır. Bu konular çözüldüğünde yeni ilişki güçlenir.',
-      keywords: ['istikrar', 'aile', 'uzun vade', 'güven'],
-      context: 'Yakında kalıcı temelli bir ilişki ihtimali var.',
-      group: 'Tılsımlar',
-    },
-    {
-      id: 'page_of_pentacles_na_pos1',
-      card: 'Page of Pentacles',
-      position: 1,
-      upright:
-        'Tılsım Prensi, merak ve yeni öğrenme hevesiyle gelen bir tanışmayı işaret eder. Somut küçük adımlar yeni bir aşk başlatabilir.',
-      reversed:
-        'Ters Tılsım Prensi, erteleme ve dağınık odağın fırsatı kaçırabileceğini söyler. Net hedef koymak yeni ilişkiye yol açar.',
-      keywords: ['başlangıç', 'öğrenme', 'somut adım', 'heves'],
-      context: 'Küçük ama kararlı adım yeni ilişkiyi getirir.',
-      group: 'Tılsımlar',
-    },
-    {
-      id: 'knight_of_pentacles_na_pos1',
-      card: 'Knight of Pentacles',
-      position: 1,
-      upright:
-        'Tılsım Şövalyesi, sabırlı ve istikrarlı bir adayın yakında hayatına gireceğini müjdeler. Bu kişi uzun vadede güvenilir bir partner olabilir.',
-      reversed:
-        'Ters Tılsım Şövalyesi, durağanlık ve aşırı temkinin yeni ilişkiyi yavaşlatabileceğini söyler. Ufak cesaretler süreci hızlandırır.',
-      keywords: ['istikrar', 'sabır', 'güvenilirlik', 'devamlılık'],
-      context: 'Yavaş ama emin adımlarla ilişki ihtimali doğuyor.',
-      group: 'Tılsımlar',
-    },
-    {
-      id: 'queen_of_pentacles_na_pos1',
-      card: 'Queen of Pentacles',
-      position: 1,
-      upright:
-        'Tılsım Kraliçesi, şefkatli ve pratik enerjisiyle besleyici bir ilişkiye işaret eder. Yakında öz-bakım ve destek alanında güçlü bir eşleşme olabilir.',
-      reversed:
-        'Ters Tılsım Kraliçesi, aşırı yüklenmenin yeni ilişkiye yer bırakmadığını söyler. Alan açıldığında fırsat hızla doğar.',
-      keywords: ['şefkat', 'pratiklik', 'besleyicilik', 'denge'],
-      context: 'Besleyici enerjin yeni ilişkiyi çekecek.',
-      group: 'Tılsımlar',
-    },
-    {
-      id: 'king_of_pentacles_na_pos1',
-      card: 'King of Pentacles',
-      position: 1,
-      upright:
-        'Tılsım Kralı, olgun ve güven veren bir partnerin yakında çıkacağını gösterir. Bu ilişki maddi ve manevi istikrar taşıyabilir.',
-      reversed:
-        'Ters Tılsım Kralı, aşırı kontrol ya da statü odaklılığın yeni başlangıcı gölgeleyebileceğini uyarır. Esneklikle aşk kendini gösterir.',
-      keywords: ['olgunluk', 'istikrar', 'güven', 'sağlamlık'],
-      context: 'Olgun ve güvenilir bir partner yeni bir aşk getirebilir.',
-      group: 'Tılsımlar',
-    },
+  //--- Tılsımlar Serisi ---
+  {
+    id: 'ace_of_pentacles_na_pos1',
+    card: 'Ace of Pentacles',
+    position: 1,
+    upright:
+      'Tılsım Ası, somut ve güvenilir bir başlangıcın kapıda olduğunu gösterir. Bu yeni ilişki toprak gibi sağlam ve uzun vadeli olabilir.',
+    reversed:
+      'Ters Tılsım Ası, fırsatı görememe ya da güvenlik kaygısı sebebiyle gecikmeleri işaret eder. Dikkatle bakıldığında değerli bir başlangıç hâlâ mümkündür.',
+    keywords: ['fırsat', 'başlangıç', 'güven', 'istikrar'],
+    context:
+      'Yakında sağlam temelli bir ilişki fırsatı doğuyor; dikkatli olun.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'two_of_pentacles_na_pos1',
+    card: 'Two of Pentacles',
+    position: 1,
+    upright:
+      'İki Tılsım, hayatındaki yoğunluk içinde denge kurma ihtiyacını vurgular. Yeni ilişki fırsatı gelecek ama önceliklerini düzenlemen gerekiyor.',
+    reversed:
+      'Ters İki Tılsım, kaotik bir dönemde olduğun için yeni başlangıcın zorlanabileceğini söyler. Küçük ayarlamalarla ilişki için alan açabilirsin.',
+    keywords: ['denge', 'esneklik', 'öncelik', 'akış'],
+    context: 'Dengeni bulduğunda yeni ilişki şansı netleşir.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'three_of_pentacles_na_pos1',
+    card: 'Three of Pentacles',
+    position: 1,
+    upright:
+      'Üç Tılsım, işbirliği ve ortak çabanın bir ilişkiye vesile olacağını anlatır. Ortak proje, çevre ya da iş alanında tanışma ihtimali yüksek.',
+    reversed:
+      'Ters Üç Tılsım, rol karışıklığı ya da yanlış anlaşılmaların yakın fırsatı gölgeleyebileceğini işaret eder. Açık iletişimle şans hâlâ senin yanında.',
+    keywords: ['işbirliği', 'ortaklık', 'tanışma', 'çaba'],
+    context: 'Ortak ortam veya proje yeni ilişkiyi başlatabilir.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'four_of_pentacles_na_pos1',
+    card: 'Four of Pentacles',
+    position: 1,
+    upright:
+      'Dört Tılsım, güvenli alanı koruma isteğinin kalbini kapattığını gösterir. Açıldığında yeni bir ilişki hızla kapına gelebilir.',
+    reversed:
+      'Ters Dört Tılsım, bırakma ve esneme sürecinin başladığını müjdeler. Bu rahatlama, yeni ilişkinin doğuşunu kolaylaştırır.',
+    keywords: ['güvenlik', 'kontrol', 'açılma', 'esneklik'],
+    context: 'Kapanan kalp açıldığında ilişki fırsatı kendini gösterir.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'five_of_pentacles_na_pos1',
+    card: 'Five of Pentacles',
+    position: 1,
+    upright:
+      'Beş Tılsım, yalnızlık ve dışarıda kalma duygusunu yansıtır. Ancak bu kırılganlık içinde sana ışık olacak bir eşleşme yakında gelebilir.',
+    reversed:
+      'Ters Beş Tılsım, toparlanma ve destek bulma sürecini gösterir. Bu yükselişle yeni bir ilişki kapıya dayanabilir.',
+    keywords: ['yalnızlık', 'destek', 'umut', 'kırılganlık'],
+    context: 'Karanlık dönemin ardından yeni ilişki ihtimali doğuyor.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'six_of_pentacles_na_pos1',
+    card: 'Six of Pentacles',
+    position: 1,
+    upright:
+      'Altı Tılsım, karşılıklı destek ve adil alışverişin bir ilişkiyi başlatabileceğini söyler. Dengeli bir bağ seni bekliyor olabilir.',
+    reversed:
+      'Ters Altı Tılsım, dengesiz verme–alma alışkanlıklarının yeni ilişkiyi gölgeleyebileceğini işaret eder. Eşitlik sağlandığında yol açılır.',
+    keywords: ['denge', 'paylaşım', 'eşitlik', 'destek'],
+    context: 'Adil bir alışveriş yeni bir aşkın kapısını aralayabilir.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'seven_of_pentacles_na_pos1',
+    card: 'Seven of Pentacles',
+    position: 1,
+    upright:
+      'Yedi Tılsım, sabırlı bekleyişin ve emeklerin karşılığını vereceğini anlatır. Yakında meyve verecek bir ilişki potansiyeli var.',
+    reversed:
+      'Ters Yedi Tılsım, sabırsızlık ya da yanlış yatırımın fırsatı erteleyebileceğini söyler. Sükunet ve ölçü yeni aşkı hızlandırır.',
+    keywords: ['sabır', 'bekleyiş', 'yatırım', 'ödül'],
+    context: 'Sabırla kurduğun temel yeni ilişkiyi getiriyor.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'eight_of_pentacles_na_pos1',
+    card: 'Eight of Pentacles',
+    position: 1,
+    upright:
+      'Sekiz Tılsım, düzenli emek ve öğrenme sürecinin seni ilişkiye hazır hale getirdiğini gösterir. Yakında bu disiplin karşılığını verecek.',
+    reversed:
+      'Ters Sekiz Tılsım, özensizlik veya aşırı rutinin kalbine ağırlık verdiğini anlatır. Yenilenme sağlandığında ilişki fırsatı doğar.',
+    keywords: ['emek', 'disiplin', 'hazırlık', 'ilerleme'],
+    context: 'Çabanın ve hazırlığın karşılığı yeni bir aşk olabilir.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'nine_of_pentacles_na_pos1',
+    card: 'Nine of Pentacles',
+    position: 1,
+    upright:
+      'Dokuz Tılsım, bağımsızlığın ve öz değerinin güçlü bir çekim yarattığını söyler. Yakında kendi gücünü gören biriyle yeni bir ilişki doğabilir.',
+    reversed:
+      'Ters Dokuz Tılsım, aşırı bağımlılık eğiliminin yeni ilişkiyi zorlayabileceğini işaret eder. Kendi bağımsızlığını onurlandırdığında doğru eşleşme gelir.',
+    keywords: ['bağımsızlık', 'öz değer', 'çekim', 'özgüven'],
+    context: 'Öz değerini koruman yeni aşkı çekecek.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'ten_of_pentacles_na_pos1',
+    card: 'Ten of Pentacles',
+    position: 1,
+    upright:
+      'On Tılsım, uzun vadeli ve kalıcı bir ilişkinin ufukta olduğunu gösterir. Bu yeni bağ, aile ve istikrar enerjisi taşıyabilir.',
+    reversed:
+      'Ters On Tılsım, geçmişten gelen aile veya güvenlik temalarının başlangıcı zorlayabileceğini anlatır. Bu konular çözüldüğünde yeni ilişki güçlenir.',
+    keywords: ['istikrar', 'aile', 'uzun vade', 'güven'],
+    context: 'Yakında kalıcı temelli bir ilişki ihtimali var.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'page_of_pentacles_na_pos1',
+    card: 'Page of Pentacles',
+    position: 1,
+    upright:
+      'Tılsım Prensi, merak ve yeni öğrenme hevesiyle gelen bir tanışmayı işaret eder. Somut küçük adımlar yeni bir aşk başlatabilir.',
+    reversed:
+      'Ters Tılsım Prensi, erteleme ve dağınık odağın fırsatı kaçırabileceğini söyler. Net hedef koymak yeni ilişkiye yol açar.',
+    keywords: ['başlangıç', 'öğrenme', 'somut adım', 'heves'],
+    context: 'Küçük ama kararlı adım yeni ilişkiyi getirir.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'knight_of_pentacles_na_pos1',
+    card: 'Knight of Pentacles',
+    position: 1,
+    upright:
+      'Tılsım Şövalyesi, sabırlı ve istikrarlı bir adayın yakında hayatına gireceğini müjdeler. Bu kişi uzun vadede güvenilir bir partner olabilir.',
+    reversed:
+      'Ters Tılsım Şövalyesi, durağanlık ve aşırı temkinin yeni ilişkiyi yavaşlatabileceğini söyler. Ufak cesaretler süreci hızlandırır.',
+    keywords: ['istikrar', 'sabır', 'güvenilirlik', 'devamlılık'],
+    context: 'Yavaş ama emin adımlarla ilişki ihtimali doğuyor.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'queen_of_pentacles_na_pos1',
+    card: 'Queen of Pentacles',
+    position: 1,
+    upright:
+      'Tılsım Kraliçesi, şefkatli ve pratik enerjisiyle besleyici bir ilişkiye işaret eder. Yakında öz-bakım ve destek alanında güçlü bir eşleşme olabilir.',
+    reversed:
+      'Ters Tılsım Kraliçesi, aşırı yüklenmenin yeni ilişkiye yer bırakmadığını söyler. Alan açıldığında fırsat hızla doğar.',
+    keywords: ['şefkat', 'pratiklik', 'besleyicilik', 'denge'],
+    context: 'Besleyici enerjin yeni ilişkiyi çekecek.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'king_of_pentacles_na_pos1',
+    card: 'King of Pentacles',
+    position: 1,
+    upright:
+      'Tılsım Kralı, olgun ve güven veren bir partnerin yakında çıkacağını gösterir. Bu ilişki maddi ve manevi istikrar taşıyabilir.',
+    reversed:
+      'Ters Tılsım Kralı, aşırı kontrol ya da statü odaklılığın yeni başlangıcı gölgeleyebileceğini uyarır. Esneklikle aşk kendini gösterir.',
+    keywords: ['olgunluk', 'istikrar', 'güven', 'sağlamlık'],
+    context: 'Olgun ve güvenilir bir partner yeni bir aşk getirebilir.',
+    group: 'Tılsımlar',
+  },
 ];
 
 /**
@@ -994,59 +997,60 @@ export const position1Meanings: NewLoverPosition1Meaning[] = [
  * @param card - Tarot kartı
  * @returns Pozisyon 1 anlamı veya null
  */
-  export function getNewLoverPosition1Meaning(
+export function getNewLoverPosition1Meaning(
   card: TarotCard
 ): NewLoverPosition1Meaning | null {
   // Kart ismi eşleştirmesi için hem İngilizce hem Türkçe isimleri kontrol et
   // Önce doğrudan eşleşme ara
-  let meaning = position1Meanings.find(m => 
-    m.card === card.name || 
-    m.card === card.nameTr ||
-    card.name === m.card ||
-    card.nameTr === m.card
+  let meaning = position1Meanings.find(
+    m =>
+      m.card === card.name ||
+      m.card === card.nameTr ||
+      card.name === m.card ||
+      card.nameTr === m.card
   );
-  
+
   if (meaning) {
     return meaning;
   }
-  
+
   // Kart ismi mapping'i kullanarak eşleştirme yap
   const cardNameMapping: { [key: string]: string } = {
     // Major Arcana - Türkçe
-    'Deli': 'The Fool',
-    'Büyücü': 'The Magician',
+    Deli: 'The Fool',
+    Büyücü: 'The Magician',
     'Yüksek Rahibe': 'The High Priestess',
-    'İmparatoriçe': 'The Empress',
-    'İmparator': 'The Emperor',
-    'Hierophant': 'The Hierophant',
-    'Aziz': 'The Hierophant',
-    'Aşıklar': 'The Lovers',
+    İmparatoriçe: 'The Empress',
+    İmparator: 'The Emperor',
+    Hierophant: 'The Hierophant',
+    Aziz: 'The Hierophant',
+    Aşıklar: 'The Lovers',
     'Savaş Arabası': 'The Chariot',
-    'Güç': 'Strength',
-    'Ermiş': 'The Hermit',
-    'Münzevi': 'The Hermit',
-    'Kader Çarkı': 'The Wheel of Fortune',
-    'Adalet': 'Justice',
+    Güç: 'Strength',
+    Ermiş: 'The Hermit',
+    Münzevi: 'The Hermit',
+    'Kader Çarkı': 'The The Wheel of Fortune',
+    Adalet: 'Justice',
     'Asılı Adam': 'The Hanged Man',
-    'Ölüm': 'Death',
-    'Ölçü': 'Temperance',
-    'Ölçülülük': 'Temperance',
-    'Şeytan': 'The Devil',
-    'Kule': 'The Tower',
-    'Yıldız': 'The Star',
-    'Ay': 'The Moon',
-    'Güneş': 'The Sun',
-    'Yargı': 'Judgement',
-    'Mahkeme': 'Judgement',
-    'Dünya': 'The World',
+    Ölüm: 'Death',
+    Ölçü: 'Temperance',
+    Ölçülülük: 'Temperance',
+    Şeytan: 'The Devil',
+    Kule: 'The Tower',
+    Yıldız: 'The Star',
+    Ay: 'The Moon',
+    Güneş: 'The Sun',
+    Yargı: 'Judgement',
+    Mahkeme: 'Judgement',
+    Dünya: 'The World',
   };
-  
+
   // Türkçe ismi İngilizce'ye çevir
   const englishName = cardNameMapping[card.nameTr] || card.nameTr;
-  
+
   // İngilizce isimle tekrar ara
   meaning = position1Meanings.find(m => m.card === englishName);
-  
+
   return meaning || null;
 }
 
@@ -1123,18 +1127,10 @@ export const getI18nPosition1Meaning = (
     .toLowerCase()
     .replace(/\s+/g, '')
     .replace(/[^a-z0-9]/g, '');
-  const i18nUpright = t(
-    `new-lover.meanings.${cardKey}.position1.upright`
-  );
-  const i18nReversed = t(
-    `new-lover.meanings.${cardKey}.position1.reversed`
-  );
-  const i18nKeywords = t(
-    `new-lover.meanings.${cardKey}.position1.keywords`
-  );
-  const i18nContext = t(
-    `new-lover.meanings.${cardKey}.position1.context`
-  );
+  const i18nUpright = t(`new-lover.meanings.${cardKey}.position1.upright`);
+  const i18nReversed = t(`new-lover.meanings.${cardKey}.position1.reversed`);
+  const i18nKeywords = t(`new-lover.meanings.${cardKey}.position1.keywords`);
+  const i18nContext = t(`new-lover.meanings.${cardKey}.position1.context`);
   const i18nGroup = t(
     `new-lover.cardGroups.${originalMeaning.group.toLowerCase().replace(/\s+/g, '')}`
   );

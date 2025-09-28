@@ -140,7 +140,9 @@ class AuditLogger {
           action: action.toString(),
           resource: resourceType.toString(),
         };
-        if (data.userId !== undefined) logContext.userId = data.userId;
+        if (data.userId !== undefined) {
+          logContext.userId = data.userId;
+        }
         logError('Audit log fallback to localStorage', error, logContext);
       });
     } catch (error) {
@@ -149,7 +151,9 @@ class AuditLogger {
           action: action.toString(),
           resource: resourceType.toString(),
         };
-      if (data.userId !== undefined) logContext2.userId = data.userId;
+      if (data.userId !== undefined) {
+        logContext2.userId = data.userId;
+      }
       logError('Failed to create audit log entry', error, logContext2);
     }
   }
@@ -419,7 +423,10 @@ class AuditLogger {
   /**
    * Retry failed logs from localStorage to Supabase
    */
-  public async retryLocalStorageLogs(): Promise<{ success: boolean; retriedCount: number }> {
+  public async retryLocalStorageLogs(): Promise<{
+    success: boolean;
+    retriedCount: number;
+  }> {
     try {
       const failedLogs = this.getLocalStorageLogs();
       if (failedLogs.length === 0) {
@@ -434,14 +441,16 @@ class AuditLogger {
 
       // localStorage log'larını Supabase'e gönder
       await this.persistToSupabase(failedLogs);
-      
+
       // Başarılı olursa localStorage'ı temizle
       this.clearLocalStorageLogs();
-      
+
       if (process.env.NODE_ENV === 'development') {
-        console.log(`✅ [AUDIT] Successfully retried ${failedLogs.length} logs from localStorage`);
+        console.log(
+          `✅ [AUDIT] Successfully retried ${failedLogs.length} logs from localStorage`
+        );
       }
-      
+
       return { success: true, retriedCount: failedLogs.length };
     } catch (error) {
       logError('Failed to retry localStorage audit logs', error, {
@@ -458,7 +467,9 @@ class AuditLogger {
    * Flush the audit log queue to Supabase
    */
   private async flushQueue(): Promise<void> {
-    if (this.isFlushingQueue || this.queue.length === 0) return;
+    if (this.isFlushingQueue || this.queue.length === 0) {
+      return;
+    }
 
     this.isFlushingQueue = true;
 
@@ -472,12 +483,16 @@ class AuditLogger {
     } catch (error) {
       // Hata durumunda queue'yu temizleme, tekrar deneme için sakla
       if (process.env.NODE_ENV === 'development') {
-        console.warn('⚠️ [AUDIT] Failed to flush audit log queue to Supabase:', {
-          error: error instanceof Error ? error.message : 'Unknown error',
-          retryCount: this.retryCount,
-          queueLength: this.queue.length,
-          errorType: error instanceof Error ? error.constructor.name : typeof error,
-        });
+        console.warn(
+          '⚠️ [AUDIT] Failed to flush audit log queue to Supabase:',
+          {
+            error: error instanceof Error ? error.message : 'Unknown error',
+            retryCount: this.retryCount,
+            queueLength: this.queue.length,
+            errorType:
+              error instanceof Error ? error.constructor.name : typeof error,
+          }
+        );
       }
 
       this.retryCount++;
@@ -487,12 +502,12 @@ class AuditLogger {
         console.warn(
           'Audit log queue too large or max retries exceeded, saving to localStorage fallback'
         );
-        
+
         // Queue'daki log'ları localStorage'a kaydet
         this.queue.forEach(log => {
           this.storeInLocalStorage(log);
         });
-        
+
         this.queue = [];
         this.retryCount = 0;
       } else {
@@ -550,7 +565,9 @@ class AuditLogger {
       }));
 
       if (process.env.NODE_ENV === 'development') {
-        console.log(`🔍 [AUDIT] Attempting to insert ${cleanedLogs.length} logs to Supabase`);
+        console.log(
+          `🔍 [AUDIT] Attempting to insert ${cleanedLogs.length} logs to Supabase`
+        );
       }
 
       // Önce audit_logs tablosunun var olup olmadığını kontrol et
@@ -558,10 +575,12 @@ class AuditLogger {
         .from('audit_logs')
         .select('id')
         .limit(1);
-      
+
       if (tableCheckError && tableCheckError.code === 'PGRST116') {
         if (process.env.NODE_ENV === 'development') {
-          console.info('ℹ️ [AUDIT] audit_logs table not found, skipping audit logging');
+          console.info(
+            'ℹ️ [AUDIT] audit_logs table not found, skipping audit logging'
+          );
         }
         return; // Tablo yoksa audit logging'i atla
       }
@@ -579,15 +598,17 @@ class AuditLogger {
             logsCount: cleanedLogs.length,
           });
         }
-        
+
         // RLS veya permission hatası ise sessizce geç
         if (error.code === 'PGRST301' || error.code === '42501') {
           if (process.env.NODE_ENV === 'development') {
-            console.info('ℹ️ [AUDIT] Skipping audit log insert due to permission error');
+            console.info(
+              'ℹ️ [AUDIT] Skipping audit log insert due to permission error'
+            );
           }
           return; // Hata fırlatma, sessizce geç
         }
-        
+
         throw error; // Diğer hatalar için throw et
       }
 
@@ -602,10 +623,11 @@ class AuditLogger {
         console.warn('⚠️ [AUDIT] Failed to persist audit logs to Supabase:', {
           error: error instanceof Error ? error.message : 'Unknown error',
           logsCount: logs.length,
-          errorType: error instanceof Error ? error.constructor.name : typeof error,
+          errorType:
+            error instanceof Error ? error.constructor.name : typeof error,
         });
       }
-      
+
       // Production'da audit log hataları ana uygulamayı etkilememeli
       // throw error; // Bu satırı kaldırdık
     }

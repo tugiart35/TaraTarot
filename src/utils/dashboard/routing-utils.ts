@@ -23,7 +23,10 @@ export type DashboardRouteKey = keyof typeof DASHBOARD_ROUTES;
  * @param locale Locale bilgisi
  * @returns Oluşturulan route string'i
  */
-export const getDashboardRoute = (routeKey: DashboardRouteKey, locale: string): string => {
+export const getDashboardRoute = (
+  routeKey: DashboardRouteKey,
+  locale: string
+): string => {
   return DASHBOARD_ROUTES[routeKey](locale);
 };
 

@@ -29,7 +29,7 @@ Kullanım durumu:
 - ✅ Production-ready: Supabase Edge Functions ile
 */
 
-import "jsr:@supabase/functions-js/edge-runtime.d.ts";
+import 'jsr:@supabase/functions-js/edge-runtime.d.ts';
 import { createClient } from 'jsr:@supabase/supabase-js@2';
 
 interface ReportSchedule {
@@ -52,7 +52,8 @@ Deno.serve(async (req: Request) => {
         status: 200,
         headers: {
           'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
+          'Access-Control-Allow-Headers':
+            'authorization, x-client-info, apikey, content-type',
           'Access-Control-Allow-Methods': 'POST, OPTIONS',
         },
       });
@@ -83,77 +84,84 @@ Deno.serve(async (req: Request) => {
     }
 
     if (!schedules || schedules.length === 0) {
-      return new Response(JSON.stringify({ 
-        success: true, 
-        message: 'No reports to process',
-        processed: 0 
-      }), {
-        status: 200,
-        headers: { 'Content-Type': 'application/json' },
-      });
+      return new Response(
+        JSON.stringify({
+          success: true,
+          message: 'No reports to process',
+          processed: 0,
+        }),
+        {
+          status: 200,
+          headers: { 'Content-Type': 'application/json' },
+        }
+      );
     }
 
     const results = [];
-    
+
     // Her zamanlanmış rapor için işlem yap
     for (const schedule of schedules) {
       try {
         const result = await processScheduledReport(supabase, schedule);
         results.push(result);
-        
+
         // Sonraki çalışma zamanını hesapla
         const nextRun = calculateNextRun(schedule.frequency, new Date());
-        
+
         // Zamanlamayı güncelle
         await supabase
           .from('report_schedules')
           .update({
             last_run: now,
-            next_run: nextRun.toISOString()
+            next_run: nextRun.toISOString(),
           })
           .eq('id', schedule.id);
-          
       } catch (error) {
         console.error(`Error processing schedule ${schedule.id}:`, error);
         results.push({
           scheduleId: schedule.id,
           success: false,
-          error: error.message
+          error: error.message,
         });
       }
     }
 
-    return new Response(JSON.stringify({ 
-      success: true, 
-      message: `Processed ${results.length} reports`,
-      results 
-    }), {
-      status: 200,
-      headers: { 
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
-      },
-    });
-
+    return new Response(
+      JSON.stringify({
+        success: true,
+        message: `Processed ${results.length} reports`,
+        results,
+      }),
+      {
+        status: 200,
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+        },
+      }
+    );
   } catch (error) {
     console.error('Error in scheduled reports:', error);
-    return new Response(JSON.stringify({ 
-      error: 'Internal server error',
-      details: error.message 
-    }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    return new Response(
+      JSON.stringify({
+        error: 'Internal server error',
+        details: error.message,
+      }),
+      {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      }
+    );
   }
 });
 
 // Zamanlanmış raporu işle
 async function processScheduledReport(supabase: any, schedule: ReportSchedule) {
   console.log(`Processing schedule: ${schedule.name}`);
-  
+
   // Analytics verilerini çek
   const analyticsData = await fetchAnalyticsData(supabase);
-  
+
   // Rapor kaydını oluştur
   const reportName = `${schedule.name} - ${new Date().toLocaleDateString('tr-TR')}`;
   const { data: reportRecord, error: reportError } = await supabase
@@ -169,8 +177,8 @@ async function processScheduledReport(supabase: any, schedule: ReportSchedule) {
         scheduleName: schedule.name,
         frequency: schedule.frequency,
         format: schedule.format,
-        analyticsData: analyticsData
-      }
+        analyticsData: analyticsData,
+      },
     })
     .select()
     .single();
@@ -187,7 +195,7 @@ async function processScheduledReport(supabase: any, schedule: ReportSchedule) {
       reportType: schedule.report_type,
       format: 'pdf', // Email için varsayılan PDF
       subject: reportName,
-      message: generateEmailTemplate(schedule.report_type, analyticsData)
+      message: generateEmailTemplate(schedule.report_type, analyticsData),
     });
 
     return {
@@ -195,7 +203,7 @@ async function processScheduledReport(supabase: any, schedule: ReportSchedule) {
       reportId: reportRecord.id,
       success: true,
       action: 'email_sent',
-      emailResult
+      emailResult,
     };
   }
 
@@ -204,7 +212,7 @@ async function processScheduledReport(supabase: any, schedule: ReportSchedule) {
     reportId: reportRecord.id,
     reportType: schedule.report_type,
     format: schedule.format,
-    analyticsData
+    analyticsData,
   });
 
   return {
@@ -212,7 +220,7 @@ async function processScheduledReport(supabase: any, schedule: ReportSchedule) {
     reportId: reportRecord.id,
     success: true,
     action: 'file_generated',
-    fileResult
+    fileResult,
   };
 }
 
@@ -225,33 +233,47 @@ async function fetchAnalyticsData(supabase: any) {
 
   const totalUsers = userStats?.length || 0;
   const today = new Date().toISOString().split('T')[0];
-  const dailyUsers = userStats?.filter((user: any) => 
-    user.created_at?.startsWith(today)
-  ).length || 0;
+  const dailyUsers =
+    userStats?.filter((user: any) => user.created_at?.startsWith(today))
+      .length || 0;
 
   // İşlem istatistikleri
   const { data: transactions } = await supabase
     .from('transactions')
     .select('type, amount, delta_credits, created_at');
 
-  const totalRevenue = transactions?.filter((t: any) => t.type === 'purchase')
-    .reduce((sum: number, t: any) => sum + (parseFloat(t.amount || '0')), 0) || 0;
+  const totalRevenue =
+    transactions
+      ?.filter((t: any) => t.type === 'purchase')
+      .reduce((sum: number, t: any) => sum + parseFloat(t.amount || '0'), 0) ||
+    0;
 
-  const creditsSold = transactions?.filter((t: any) => t.type === 'purchase')
-    .reduce((sum: number, t: any) => sum + (t.delta_credits || 0), 0) || 0;
+  const creditsSold =
+    transactions
+      ?.filter((t: any) => t.type === 'purchase')
+      .reduce((sum: number, t: any) => sum + (t.delta_credits || 0), 0) || 0;
 
-  const creditUsage = transactions?.filter((t: any) => t.type === 'reading')
-    .reduce((sum: number, t: any) => sum + Math.abs(t.delta_credits || 0), 0) || 0;
+  const creditUsage =
+    transactions
+      ?.filter((t: any) => t.type === 'reading')
+      .reduce(
+        (sum: number, t: any) => sum + Math.abs(t.delta_credits || 0),
+        0
+      ) || 0;
 
   // Okuma türleri
   const { data: readings } = await supabase
     .from('readings')
     .select('reading_type');
 
-  const readingTypes = readings?.reduce((acc: Record<string, number>, reading: any) => {
-    acc[reading.reading_type] = (acc[reading.reading_type] || 0) + 1;
-    return acc;
-  }, {} as Record<string, number>) || {};
+  const readingTypes =
+    readings?.reduce(
+      (acc: Record<string, number>, reading: any) => {
+        acc[reading.reading_type] = (acc[reading.reading_type] || 0) + 1;
+        return acc;
+      },
+      {} as Record<string, number>
+    ) || {};
 
   // Paket bilgileri
   const { data: packages } = await supabase
@@ -269,25 +291,28 @@ async function fetchAnalyticsData(supabase: any) {
     creditUsage,
     dailyRevenue: [],
     userRegistrations: [],
-    packageSales: packages?.map((pkg: any, index: number) => ({
-      name: pkg.name || 'Bilinmeyen Paket',
-      value: Math.floor(Math.random() * 50) + 10,
-      color: ['#3B82F6', '#8B5CF6', '#06B6D4', '#F59E0B'][index % 4] || '#3B82F6'
-    })) || [],
+    packageSales:
+      packages?.map((pkg: any, index: number) => ({
+        name: pkg.name || 'Bilinmeyen Paket',
+        value: Math.floor(Math.random() * 50) + 10,
+        color:
+          ['#3B82F6', '#8B5CF6', '#06B6D4', '#F59E0B'][index % 4] || '#3B82F6',
+      })) || [],
     featureUsage: Object.entries(readingTypes).map(([type, count], index) => ({
-      name: type === 'love' ? 'Aşk Falı' : type === 'general' ? 'Genel Fal' : type,
+      name:
+        type === 'love' ? 'Aşk Falı' : type === 'general' ? 'Genel Fal' : type,
       value: count as number,
-      color: ['#10B981', '#F59E0B', '#EF4444'][index % 3] || '#10B981'
+      color: ['#10B981', '#F59E0B', '#EF4444'][index % 3] || '#10B981',
     })),
     revenueData: [],
-    userGrowthData: []
+    userGrowthData: [],
   };
 }
 
 // Sonraki çalışma zamanını hesapla
 function calculateNextRun(frequency: string, currentDate: Date): Date {
   const nextRun = new Date(currentDate);
-  
+
   switch (frequency) {
     case 'daily':
       nextRun.setDate(nextRun.getDate() + 1);
@@ -305,29 +330,32 @@ function calculateNextRun(frequency: string, currentDate: Date): Date {
     default:
       nextRun.setDate(nextRun.getDate() + 1);
   }
-  
+
   return nextRun;
 }
 
 // Rapor email gönder
-async function sendReportEmail(supabase: any, params: {
-  reportId: string;
-  recipients: string[];
-  reportType: string;
-  format: string;
-  subject: string;
-  message: string;
-}) {
+async function sendReportEmail(
+  supabase: any,
+  params: {
+    reportId: string;
+    recipients: string[];
+    reportType: string;
+    format: string;
+    subject: string;
+    message: string;
+  }
+) {
   // Email gönderim Edge Function'ını çağır
   const emailFunctionUrl = `${Deno.env.get('SUPABASE_URL')}/functions/v1/send-report-email`;
-  
+
   const response = await fetch(emailFunctionUrl, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': `Bearer ${Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')}`,
+      Authorization: `Bearer ${Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')}`,
     },
-    body: JSON.stringify(params)
+    body: JSON.stringify(params),
   });
 
   if (!response.ok) {
@@ -338,18 +366,21 @@ async function sendReportEmail(supabase: any, params: {
 }
 
 // Rapor dosyası oluştur ve kaydet
-async function generateAndSaveReport(supabase: any, params: {
-  reportId: string;
-  reportType: string;
-  format: string;
-  analyticsData: any;
-}) {
+async function generateAndSaveReport(
+  supabase: any,
+  params: {
+    reportId: string;
+    reportType: string;
+    format: string;
+    analyticsData: any;
+  }
+) {
   // Bu fonksiyon client-side'da çalışacak
   // Edge Function'da doğrudan PDF/Excel oluşturamayız
   // Bu yüzden metadata'da veri saklayıp client'tan işleme alacağız
-  
+
   const filePath = `reports/${params.reportId}.${params.format}`;
-  
+
   // Rapor kaydını güncelle
   await supabase
     .from('generated_reports')
@@ -359,14 +390,14 @@ async function generateAndSaveReport(supabase: any, params: {
       metadata: {
         ...params.analyticsData,
         format: params.format,
-        status: 'pending_generation'
-      }
+        status: 'pending_generation',
+      },
     })
     .eq('id', params.reportId);
 
   return {
     filePath,
-    status: 'pending_generation'
+    status: 'pending_generation',
   };
 }
 
@@ -376,7 +407,7 @@ function generateEmailTemplate(reportType: string, data: any): string {
     revenue: 'Gelir Raporu',
     users: 'Kullanıcı Raporu',
     transactions: 'İşlem Raporu',
-    comprehensive: 'Kapsamlı Rapor'
+    comprehensive: 'Kapsamlı Rapor',
   };
 
   return `
@@ -416,4 +447,3 @@ function generateEmailTemplate(reportType: string, data: any): string {
     </html>
   `;
 }
-

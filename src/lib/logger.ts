@@ -105,7 +105,9 @@ class SecureLogger {
    * Remove sensitive data from errors
    */
   private sanitizeError(error: unknown) {
-    if (!error) return null;
+    if (!error) {
+      return null;
+    }
 
     const errorObj = error as {
       message?: string;
@@ -120,9 +122,15 @@ class SecureLogger {
       details?: unknown;
     } = {};
 
-    if (errorObj.message !== undefined) sanitized.message = errorObj.message;
-    if (errorObj.code !== undefined) sanitized.code = errorObj.code;
-    if (errorObj.name !== undefined) sanitized.name = errorObj.name;
+    if (errorObj.message !== undefined) {
+      sanitized.message = errorObj.message;
+    }
+    if (errorObj.code !== undefined) {
+      sanitized.code = errorObj.code;
+    }
+    if (errorObj.name !== undefined) {
+      sanitized.name = errorObj.name;
+    }
 
     // Remove sensitive fields
     if (errorObj.details && !this.containsSensitiveData(errorObj.details)) {
@@ -136,7 +144,9 @@ class SecureLogger {
    * Sanitize Supabase specific errors
    */
   private sanitizeSupabaseError(error: unknown) {
-    if (!error) return null;
+    if (!error) {
+      return null;
+    }
 
     const errorObj = error as {
       message?: string;

@@ -775,19 +775,12 @@
     },
     {
       "name": "App Pages",
-      "nodes": [
-        "src/app/layout.tsx",
-        "src/app/page.tsx",
-        "src/app/(main)/a-tarot/page.tsx"
-      ],
+      "nodes": ["src/app/layout.tsx", "src/app/page.tsx", "src/app/(main)/a-tarot/page.tsx"],
       "description": "Next.js app router pages"
     },
     {
       "name": "Global Types",
-      "nodes": [
-        "src/types/tarot.ts",
-        "src/types/reading.types.ts"
-      ],
+      "nodes": ["src/types/tarot.ts", "src/types/reading.types.ts"],
       "description": "Global type definitions"
     },
     {

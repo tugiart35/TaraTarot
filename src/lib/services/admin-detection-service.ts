@@ -1,6 +1,6 @@
 /*
  * Admin Detection Service
- * 
+ *
  * Bu dosya admin kullanıcı tespiti için ortak service fonksiyonları sağlar.
  * DRY principle uygulayarak tekrarlanan admin detection kodlarını önler.
  */
@@ -35,20 +35,20 @@ export class AdminDetectionService {
           },
         }
       );
-      
+
       const { data: profile } = await supabase
         .from('profiles')
         .select('is_admin')
         .eq('id', userId)
         .single();
-      
+
       return profile?.is_admin || false;
     } catch (error) {
       console.error('Admin detection error:', error);
       return false;
     }
   }
-  
+
   /**
    * Admin durumuna göre redirect path belirle
    */
@@ -59,16 +59,16 @@ export class AdminDetectionService {
       return `/${locale}/dashboard`;
     }
   }
-  
+
   /**
    * Admin kullanıcı için özel log mesajı
    */
   static logAdminAccess(userId: string, isAdmin: boolean): void {
     if (process.env.NODE_ENV === 'development') {
-      console.log('Admin detection:', { 
-        userId, 
-        isAdmin, 
-        timestamp: new Date().toISOString() 
+      console.log('Admin detection:', {
+        userId,
+        isAdmin,
+        timestamp: new Date().toISOString(),
       });
     }
   }

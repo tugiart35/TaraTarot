@@ -1,6 +1,6 @@
 /*
  * UserDetailModal Component Tests
- * 
+ *
  * Bu dosya UserDetailModal component'i için unit testleri içerir.
  * Jest ve React Testing Library kullanır.
  */
@@ -37,7 +37,7 @@ describe('UserDetailModal', () => {
   describe('Rendering', () => {
     it('should render user information correctly', () => {
       render(<UserDetailModal {...mockProps} />);
-      
+
       expect(screen.getByText('Test User')).toBeInTheDocument();
       expect(screen.getByText('test@example.com')).toBeInTheDocument();
       expect(screen.getByText('100')).toBeInTheDocument(); // credit balance
@@ -45,19 +45,25 @@ describe('UserDetailModal', () => {
 
     it('should render accessibility attributes', () => {
       render(<UserDetailModal {...mockProps} />);
-      
+
       const modal = screen.getByRole('dialog');
       expect(modal).toHaveAttribute('aria-modal', 'true');
       expect(modal).toHaveAttribute('aria-labelledby', 'user-detail-title');
-      expect(modal).toHaveAttribute('aria-describedby', 'user-detail-description');
+      expect(modal).toHaveAttribute(
+        'aria-describedby',
+        'user-detail-description'
+      );
     });
 
     it('should render tab navigation with proper ARIA attributes', () => {
       render(<UserDetailModal {...mockProps} />);
-      
+
       const tablist = screen.getByRole('tablist');
-      expect(tablist).toHaveAttribute('aria-label', 'Kullanıcı detay sekmeleri');
-      
+      expect(tablist).toHaveAttribute(
+        'aria-label',
+        'Kullanıcı detay sekmeleri'
+      );
+
       const overviewTab = screen.getByRole('tab', { name: /genel bakış/i });
       expect(overviewTab).toHaveAttribute('aria-selected', 'true');
       expect(overviewTab).toHaveAttribute('aria-controls', 'overview-panel');
@@ -65,7 +71,7 @@ describe('UserDetailModal', () => {
 
     it('should render close button with accessibility attributes', () => {
       render(<UserDetailModal {...mockProps} />);
-      
+
       const closeButton = screen.getByLabelText("Modal'ı kapat");
       expect(closeButton).toHaveAttribute('title', "Modal'ı kapat");
     });
@@ -74,25 +80,27 @@ describe('UserDetailModal', () => {
   describe('User Interaction', () => {
     it('should call onClose when close button is clicked', () => {
       render(<UserDetailModal {...mockProps} />);
-      
+
       const closeButton = screen.getByLabelText("Modal'ı kapat");
       fireEvent.click(closeButton);
-      
+
       expect(mockProps.onClose).toHaveBeenCalledTimes(1);
     });
 
     it('should switch tabs when tab buttons are clicked', () => {
       render(<UserDetailModal {...mockProps} />);
-      
-      const transactionsTab = screen.getByRole('tab', { name: /işlem geçmişi/i });
+
+      const transactionsTab = screen.getByRole('tab', {
+        name: /işlem geçmişi/i,
+      });
       fireEvent.click(transactionsTab);
-      
+
       expect(transactionsTab).toHaveAttribute('aria-selected', 'true');
     });
 
     it('should close modal when backdrop is clicked', () => {
       render(<UserDetailModal {...mockProps} />);
-      
+
       const backdrop = document.querySelector('.fixed.inset-0.bg-black\\/70');
       if (backdrop) {
         fireEvent.click(backdrop);
@@ -123,7 +131,7 @@ describe('UserDetailModal', () => {
   describe('Date Formatting', () => {
     it('should format dates correctly', () => {
       render(<UserDetailModal {...mockProps} />);
-      
+
       // Check if formatted date appears in the document
       const createdAtElement = screen.getByText(/01\.01\.2024/);
       expect(createdAtElement).toBeInTheDocument();
@@ -133,14 +141,14 @@ describe('UserDetailModal', () => {
   describe('Modal Visibility', () => {
     it('should not render when isOpen is false', () => {
       render(<UserDetailModal {...mockProps} isOpen={false} />);
-      
+
       const modal = screen.queryByRole('dialog');
       expect(modal).not.toBeInTheDocument();
     });
 
     it('should render when isOpen is true', () => {
       render(<UserDetailModal {...mockProps} isOpen={true} />);
-      
+
       const modal = screen.getByRole('dialog');
       expect(modal).toBeInTheDocument();
     });

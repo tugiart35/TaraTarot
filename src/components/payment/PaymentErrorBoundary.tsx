@@ -47,7 +47,8 @@ export class PaymentErrorBoundary extends Component<Props, State> {
                   Bir Hata Oluştu
                 </h1>
                 <p className='text-text-mystic mb-4'>
-                  Ödeme sayfasında beklenmeyen bir hata oluştu. Lütfen tekrar deneyin.
+                  Ödeme sayfasında beklenmeyen bir hata oluştu. Lütfen tekrar
+                  deneyin.
                 </p>
               </div>
 
@@ -61,7 +62,7 @@ export class PaymentErrorBoundary extends Component<Props, State> {
                 </button>
 
                 <button
-                  onClick={() => window.location.href = '/dashboard'}
+                  onClick={() => (window.location.href = '/dashboard')}
                   className='w-full btn btn-secondary'
                 >
                   Dashboard'a Dön

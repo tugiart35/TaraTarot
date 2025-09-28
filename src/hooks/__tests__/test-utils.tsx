@@ -28,7 +28,7 @@ const customRender = (
   options?: Omit<RenderOptions, 'wrapper'>
 ) => {
   const Wrapper = ({ children }: { children: React.ReactNode }) => (
-    <NextIntlClientProvider locale="en" messages={mockMessages}>
+    <NextIntlClientProvider locale='en' messages={mockMessages}>
       {children}
     </NextIntlClientProvider>
   );
@@ -77,8 +77,12 @@ export const mockSupabaseClient = {
     })),
   })),
   auth: {
-    getUser: jest.fn(() => Promise.resolve({ data: { user: null }, error: null })),
-    signIn: jest.fn(() => Promise.resolve({ data: { user: null }, error: null })),
+    getUser: jest.fn(() =>
+      Promise.resolve({ data: { user: null }, error: null })
+    ),
+    signIn: jest.fn(() =>
+      Promise.resolve({ data: { user: null }, error: null })
+    ),
     signOut: jest.fn(() => Promise.resolve({ error: null })),
   },
   channel: jest.fn(() => ({
@@ -168,7 +172,8 @@ export const createMockPackage = (overrides = {}) => ({
 });
 
 // Utility functions for testing
-export const waitForAsync = () => new Promise(resolve => setTimeout(resolve, 0));
+export const waitForAsync = () =>
+  new Promise(resolve => setTimeout(resolve, 0));
 
 export const createMockError = (message = 'Test error') => new Error(message);
 

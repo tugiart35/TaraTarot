@@ -59,9 +59,12 @@ export function useErrorBoundary(): UseErrorBoundaryReturn {
 export function useAsyncError() {
   const { captureError } = useErrorBoundary();
 
-  const handleAsyncError = useCallback((error: Error) => {
-    captureError(error, 'Async operation failed');
-  }, [captureError]);
+  const handleAsyncError = useCallback(
+    (error: Error) => {
+      captureError(error, 'Async operation failed');
+    },
+    [captureError]
+  );
 
   return { handleAsyncError };
 }

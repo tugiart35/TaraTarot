@@ -81,8 +81,8 @@ export interface PositionLayout {
   id: number;
   className: string;
   // x ve y koordinatları bazı özel yerleşimler için gerekebilir.
-  x?: number;
-  y?: number;
+  x?: number | undefined;
+  y?: number | undefined;
 }
 
 // ============================================================================
@@ -155,4 +155,13 @@ export interface SpreadRegistryEntry {
   config: TarotSpreadConfig;
   meanings: SpreadMeanings;
   lazyComponent: () => Promise<any>;
+}
+
+/**
+ * Tüm tarot açılımı bileşenleri için ortak props interface'i
+ */
+export interface TarotReadingProps {
+  onComplete?: (_cards: TarotCard[], _interpretation: string) => void;
+  onPositionChange?: (_title: string) => void;
+  onReadingTypeSelected?: () => void;
 }

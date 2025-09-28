@@ -249,7 +249,9 @@ export default function AutoReporting() {
   const toggleSchedule = async (scheduleId: string) => {
     try {
       const schedule = schedules.find(s => s.id === scheduleId);
-      if (!schedule) return;
+      if (!schedule) {
+        return;
+      }
 
       const { error } = await supabase
         .from('report_schedules')

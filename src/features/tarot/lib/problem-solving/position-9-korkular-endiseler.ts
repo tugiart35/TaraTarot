@@ -14,7 +14,7 @@ Bağlı Dosyalar:
 - Evet, detaylı anlamlar mevcut
 ---
 
-*/  
+*/
 
 import { TarotCard } from '@/types/tarot';
 
@@ -91,8 +91,7 @@ export const position9Meanings: ProblemSolvingPosition9Meaning[] = [
     reversed:
       'Ters İmparatoriçe, bağımlı hale gelme, üretkenliğini kaybetme ya da duygusal yetersizlik korkusu seni etkileyebilir.',
     keywords: ['bolluk', 'üretkenlik', 'destek', 'bereket', 'kaygı'],
-    context:
-      'Korkuların, bereketi kaybetmek ya da bağımlı olmakla ilgili.',
+    context: 'Korkuların, bereketi kaybetmek ya da bağımlı olmakla ilgili.',
     group: 'Majör Arkana',
   },
   {
@@ -104,8 +103,7 @@ export const position9Meanings: ProblemSolvingPosition9Meaning[] = [
     reversed:
       'Ters İmparator, baskı altında ezilme, gücün suistimali ya da otoriteyle çatışma endişesi yaşayabilirsin.',
     keywords: ['otorite', 'düzen', 'kontrol', 'güç', 'endişe'],
-    context:
-      'Korkuların, otorite figürleri ya da kontrol kaybıyla bağlantılı.',
+    context: 'Korkuların, otorite figürleri ya da kontrol kaybıyla bağlantılı.',
     group: 'Majör Arkana',
   },
   {
@@ -117,8 +115,7 @@ export const position9Meanings: ProblemSolvingPosition9Meaning[] = [
     reversed:
       'Ters Aziz, sahte otoriteler, yanlış öğretiler ya da özgürlüğünü kaybetme endişesi seni etkileyebilir.',
     keywords: ['öğreti', 'otorite', 'rehberlik', 'gelenek', 'kaygı'],
-    context:
-      'Korkuların, yanlış yönlendirilme ya da kabul görmemekle ilgili.',
+    context: 'Korkuların, yanlış yönlendirilme ya da kabul görmemekle ilgili.',
     group: 'Majör Arkana',
   },
   {
@@ -130,8 +127,7 @@ export const position9Meanings: ProblemSolvingPosition9Meaning[] = [
     reversed:
       'Ters Aşıklar, ayrılık, uyumsuzluk ya da yanlış karar verme korkusu seni etkileyebilir.',
     keywords: ['ilişki', 'seçim', 'uyum', 'bağ', 'endişe'],
-    context:
-      'Korkuların, yanlış seçim ya da uyumsuz ilişkilerle bağlantılı.',
+    context: 'Korkuların, yanlış seçim ya da uyumsuz ilişkilerle bağlantılı.',
     group: 'Majör Arkana',
   },
   {
@@ -143,8 +139,7 @@ export const position9Meanings: ProblemSolvingPosition9Meaning[] = [
     reversed:
       'Ters Savaş Arabası, başarısızlık, motivasyon kaybı ya da yönsüzlük endişesi yaratabilir.',
     keywords: ['kontrol', 'ilerleme', 'yön', 'başarı', 'endişe'],
-    context:
-      'Korkuların, kontrolü kaybetmek ya da ilerleyememekle ilgili.',
+    context: 'Korkuların, kontrolü kaybetmek ya da ilerleyememekle ilgili.',
     group: 'Majör Arkana',
   },
   {
@@ -175,7 +170,7 @@ export const position9Meanings: ProblemSolvingPosition9Meaning[] = [
   },
   {
     id: 'wheel_of_fortune_ps_pos9',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 9,
     upright:
       'Kader Çarkı, şanssızlık, kontrol dışı olaylar ya da talihin tersine dönmesi korkusu taşıyabilirsin.',
@@ -208,8 +203,7 @@ export const position9Meanings: ProblemSolvingPosition9Meaning[] = [
     reversed:
       'Ters Asılan Adam, hareketsizlik, isteksizlik ya da yanlış fedakarlık korkusu yaratabilir.',
     keywords: ['fedakarlık', 'bekleme', 'teslimiyet', 'belirsizlik', 'endişe'],
-    context:
-      'Korkuların, beklemek ya da teslim olmak üzerine yoğunlaşıyor.',
+    context: 'Korkuların, beklemek ya da teslim olmak üzerine yoğunlaşıyor.',
     group: 'Majör Arkana',
   },
   {
@@ -260,8 +254,7 @@ export const position9Meanings: ProblemSolvingPosition9Meaning[] = [
     reversed:
       'Ters Kule, sarsıcı olayları görmezden gelme, değişimden kaçma ya da beklenmedik krizlerden korkma eğilimi olabilir.',
     keywords: ['kriz', 'değişim', 'yıkım', 'şok', 'endişe'],
-    context:
-      'Korkuların, krizler ya da ani değişimler üzerine yoğunlaşıyor.',
+    context: 'Korkuların, krizler ya da ani değişimler üzerine yoğunlaşıyor.',
     group: 'Majör Arkana',
   },
   {
@@ -273,8 +266,7 @@ export const position9Meanings: ProblemSolvingPosition9Meaning[] = [
     reversed:
       'Ters Yıldız, umutsuzluk, inanç kaybı ya da karamsarlık endişesi seni etkileyebilir.',
     keywords: ['umut', 'ilham', 'güven', 'gelecek', 'kaygı'],
-    context:
-      'Korkuların, umut kaybı ya da karamsarlık üzerine yoğunlaşıyor.',
+    context: 'Korkuların, umut kaybı ya da karamsarlık üzerine yoğunlaşıyor.',
     group: 'Majör Arkana',
   },
   {
@@ -286,8 +278,7 @@ export const position9Meanings: ProblemSolvingPosition9Meaning[] = [
     reversed:
       'Ters Ay, sırların açığa çıkması, yanlış algılar ya da içsel korkuların büyümesi endişesi yaratabilir.',
     keywords: ['belirsizlik', 'korku', 'yanılsama', 'sezgi', 'kaygı'],
-    context:
-      'Korkuların, belirsizlik ve yanılsamalar üzerine yoğunlaşıyor.',
+    context: 'Korkuların, belirsizlik ve yanılsamalar üzerine yoğunlaşıyor.',
     group: 'Majör Arkana',
   },
   {
@@ -430,8 +421,7 @@ export const position9Meanings: ProblemSolvingPosition9Meaning[] = [
     reversed:
       'Ters Sekiz Kupa, geri dönme, kararsızlık ya da ilerleyememe endişesini gösteriyor.',
     keywords: ['bırakış', 'kaçış', 'tatminsizlik', 'karar', 'endişe'],
-    context:
-      'Korkuların, ilerleyememek ya da bırakmamak üzerine yoğunlaşıyor.',
+    context: 'Korkuların, ilerleyememek ya da bırakmamak üzerine yoğunlaşıyor.',
     group: 'Kupalar',
   },
   {
@@ -495,8 +485,7 @@ export const position9Meanings: ProblemSolvingPosition9Meaning[] = [
     reversed:
       'Ters Kupa Kraliçesi, duygusal istismar, aşırı hassasiyet ya da bağımlılık korkusu gösterebilir.',
     keywords: ['şefkat', 'hassasiyet', 'incinme', 'bağımlılık', 'endişe'],
-    context:
-      'Korkuların, aşırı hassasiyet ya da bağımlılıkla ilgili.',
+    context: 'Korkuların, aşırı hassasiyet ya da bağımlılıkla ilgili.',
     group: 'Kupalar',
   },
   {
@@ -561,8 +550,7 @@ export const position9Meanings: ProblemSolvingPosition9Meaning[] = [
     reversed:
       'Ters Dört Kılıç, tükenmişlik, zorunlu dinlenme ya da hastalık korkusu gösterebilir.',
     keywords: ['dinlenme', 'toparlanma', 'huzur', 'iyileşme', 'endişe'],
-    context:
-      'Korkuların, dinlenememek ya da tükenmişlikle ilgili.',
+    context: 'Korkuların, dinlenememek ya da tükenmişlikle ilgili.',
     group: 'Kılıçlar',
   },
   {
@@ -626,8 +614,7 @@ export const position9Meanings: ProblemSolvingPosition9Meaning[] = [
     reversed:
       'Ters Dokuz Kılıç, kabuslar, endişelerin büyümesi ya da akıl sağlığını kaybetme korkusu gösterebilir.',
     keywords: ['kaygı', 'stres', 'kabus', 'uykusuzluk', 'endişe'],
-    context:
-      'Korkuların, zihinsel baskı ve kaygılar üzerine yoğunlaşıyor.',
+    context: 'Korkuların, zihinsel baskı ve kaygılar üzerine yoğunlaşıyor.',
     group: 'Kılıçlar',
   },
   {
@@ -861,8 +848,7 @@ export const position9Meanings: ProblemSolvingPosition9Meaning[] = [
     reversed:
       'Ters Tılsım Kraliçesi, öz bakım eksikliği, bağımlılık ya da savurganlık korkusunu gösterebilir.',
     keywords: ['güvenlik', 'destek', 'öz bakım', 'sorumluluk', 'endişe'],
-    context:
-      'Korkuların, güven kaybı ya da bağımlılık üzerine yoğunlaşıyor.',
+    context: 'Korkuların, güven kaybı ya da bağımlılık üzerine yoğunlaşıyor.',
     group: 'Tılsımlar',
   },
   {
@@ -914,8 +900,7 @@ export const position9Meanings: ProblemSolvingPosition9Meaning[] = [
     reversed:
       'Ters Üç Değnek, gecikmeler, başarısız girişimler ya da hayal kırıklığı korkusunu gösterebilir.',
     keywords: ['ilerleme', 'fırsat', 'vizyon', 'bekleyiş', 'endişe'],
-    context:
-      'Korkuların, gecikmeler ya da vizyon kaybı üzerine yoğunlaşıyor.',
+    context: 'Korkuların, gecikmeler ya da vizyon kaybı üzerine yoğunlaşıyor.',
     group: 'Asalar',
   },
   {
@@ -927,8 +912,7 @@ export const position9Meanings: ProblemSolvingPosition9Meaning[] = [
     reversed:
       'Ters Dört Değnek, uyumsuzluk, ailevi sorunlar ya da taşınma/yerleşim endişesi gösterebilir.',
     keywords: ['aidiyet', 'kutlama', 'uyum', 'temel', 'endişe'],
-    context:
-      'Korkuların, aidiyet kaybı ya da uyumsuzluk üzerine yoğunlaşıyor.',
+    context: 'Korkuların, aidiyet kaybı ya da uyumsuzluk üzerine yoğunlaşıyor.',
     group: 'Asalar',
   },
   {
@@ -940,8 +924,7 @@ export const position9Meanings: ProblemSolvingPosition9Meaning[] = [
     reversed:
       'Ters Beş Değnek, gereksiz çatışmalar, uyumsuzluk ya da sürekli sürtüşme korkusunu gösterebilir.',
     keywords: ['rekabet', 'çatışma', 'mücadele', 'uyumsuzluk', 'endişe'],
-    context:
-      'Korkuların, rekabet ya da tartışmalar üzerine yoğunlaşıyor.',
+    context: 'Korkuların, rekabet ya da tartışmalar üzerine yoğunlaşıyor.',
     group: 'Asalar',
   },
   {
@@ -1031,8 +1014,7 @@ export const position9Meanings: ProblemSolvingPosition9Meaning[] = [
     reversed:
       'Ters Değnek Şövalyesi, dengesizlik, savrukluk ya da yönsüz davranma korkusunu gösterebilir.',
     keywords: ['acele', 'risk', 'hareket', 'denge', 'endişe'],
-    context:
-      'Korkuların, acelecilik ya da yönsüzlük üzerine yoğunlaşıyor.',
+    context: 'Korkuların, acelecilik ya da yönsüzlük üzerine yoğunlaşıyor.',
     group: 'Asalar',
   },
   {
@@ -1073,54 +1055,55 @@ export function getProblemSolvingPosition9Meaning(
 ): ProblemSolvingPosition9Meaning | null {
   // Kart ismi eşleştirmesi için hem İngilizce hem Türkçe isimleri kontrol et
   // Önce doğrudan eşleşme ara
-  let meaning = position9Meanings.find(m => 
-    m.card === card.name || 
-    m.card === card.nameTr ||
-    card.name === m.card ||
-    card.nameTr === m.card
+  let meaning = position9Meanings.find(
+    m =>
+      m.card === card.name ||
+      m.card === card.nameTr ||
+      card.name === m.card ||
+      card.nameTr === m.card
   );
-  
+
   if (meaning) {
     return meaning;
   }
-  
+
   // Kart ismi mapping'i kullanarak eşleştirme yap
   const cardNameMapping: { [key: string]: string } = {
     // Major Arcana - Türkçe
-    'Deli': 'The Fool',
-    'Büyücü': 'The Magician',
+    Deli: 'The Fool',
+    Büyücü: 'The Magician',
     'Yüksek Rahibe': 'The High Priestess',
-    'İmparatoriçe': 'The Empress',
-    'İmparator': 'The Emperor',
-    'Hierophant': 'The Hierophant',
-    'Aziz': 'The Hierophant',
-    'Aşıklar': 'The Lovers',
+    İmparatoriçe: 'The Empress',
+    İmparator: 'The Emperor',
+    Hierophant: 'The Hierophant',
+    Aziz: 'The Hierophant',
+    Aşıklar: 'The Lovers',
     'Savaş Arabası': 'The Chariot',
-    'Güç': 'Strength',
-    'Ermiş': 'The Hermit',
-    'Münzevi': 'The Hermit',
-    'Kader Çarkı': 'The Wheel of Fortune',
-    'Adalet': 'Justice',
+    Güç: 'Strength',
+    Ermiş: 'The Hermit',
+    Münzevi: 'The Hermit',
+    'Kader Çarkı': 'The The Wheel of Fortune',
+    Adalet: 'Justice',
     'Asılı Adam': 'The Hanged Man',
-    'Ölüm': 'Death',
-    'Ölçü': 'Temperance',
-    'Ölçülülük': 'Temperance',
-    'Şeytan': 'The Devil',
-    'Kule': 'The Tower',
-    'Yıldız': 'The Star',
-    'Ay': 'The Moon',
-    'Güneş': 'The Sun',
-    'Yargı': 'Judgement',
-    'Mahkeme': 'Judgement',
-    'Dünya': 'The World',
+    Ölüm: 'Death',
+    Ölçü: 'Temperance',
+    Ölçülülük: 'Temperance',
+    Şeytan: 'The Devil',
+    Kule: 'The Tower',
+    Yıldız: 'The Star',
+    Ay: 'The Moon',
+    Güneş: 'The Sun',
+    Yargı: 'Judgement',
+    Mahkeme: 'Judgement',
+    Dünya: 'The World',
   };
-  
+
   // Türkçe ismi İngilizce'ye çevir
   const englishName = cardNameMapping[card.nameTr] || card.nameTr;
-  
+
   // İngilizce isimle tekrar ara
   meaning = position9Meanings.find(m => m.card === englishName);
-  
+
   return meaning || null;
 }
 
@@ -1183,7 +1166,7 @@ export const useI18nposition9Meanings = (): I18nProblemSolvingPosition9Meaning[]
 */
 
 // Belirli bir kart için i18n destekli anlam al (hook kullanmadan)
-      export const getI18nPosition9Meaning = (
+export const getI18nPosition9Meaning = (
   cardName: string,
   t: (_key: string) => string
 ): I18nProblemSolvingPosition9Meaning | null => {

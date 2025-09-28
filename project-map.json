@@ -71,7 +71,7 @@
     "appRouter": {
       "localeRoutes": {
         "tr": "Turkish (default)",
-        "en": "English", 
+        "en": "English",
         "sr": "Serbian (Latin)"
       },
       "mainRoutes": {
@@ -121,11 +121,7 @@
         "NEXT_PUBLIC_SHOPIER_API_URL",
         "NEXT_PUBLIC_CONTACT_PHONE"
       ],
-      "private": [
-        "SUPABASE_SERVICE_ROLE_KEY",
-        "SHOPIER_SECRET_KEY",
-        "EMAIL_PASSWORD"
-      ]
+      "private": ["SUPABASE_SERVICE_ROLE_KEY", "SHOPIER_SECRET_KEY", "EMAIL_PASSWORD"]
     },
     "securityFeatures": {
       "csp": "Content Security Policy active",
@@ -165,7 +161,7 @@
   },
   "buildStatus": {
     "typescript": "Failed (235 errors)",
-    "linting": "Failed (500+ errors)", 
+    "linting": "Failed (500+ errors)",
     "build": "Failed (module resolution error)",
     "test": "Partial (i18n tests only)"
   },
@@ -180,30 +176,11 @@
       "Security features disabled in development",
       "Missing error handling"
     ],
-    "medium": [
-      "Code quality issues",
-      "Performance optimization needed",
-      "Test coverage insufficient"
-    ]
+    "medium": ["Code quality issues", "Performance optimization needed", "Test coverage insufficient"]
   },
   "recommendations": {
-    "immediate": [
-      "Fix TypeScript errors",
-      "Resolve build issues", 
-      "Clean duplicate exports",
-      "Fix RSC violations"
-    ],
-    "shortTerm": [
-      "Enable security features",
-      "Improve code quality",
-      "Add unit tests",
-      "Optimize performance"
-    ],
-    "longTerm": [
-      "Implement CI/CD",
-      "Add monitoring",
-      "Improve documentation",
-      "Database optimization"
-    ]
+    "immediate": ["Fix TypeScript errors", "Resolve build issues", "Clean duplicate exports", "Fix RSC violations"],
+    "shortTerm": ["Enable security features", "Improve code quality", "Add unit tests", "Optimize performance"],
+    "longTerm": ["Implement CI/CD", "Add monitoring", "Improve documentation", "Database optimization"]
   }
 }

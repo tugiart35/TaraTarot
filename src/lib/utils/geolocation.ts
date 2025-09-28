@@ -65,7 +65,7 @@ function cleanupOldestEntries(): void {
 
   const entries = Array.from(geolocationCache.entries());
   entries.sort((a, b) => a[1].timestamp - b[1].timestamp);
-  
+
   const toDelete = entries.slice(0, entries.length - MAX_CACHE_SIZE);
   for (const [key] of toDelete) {
     geolocationCache.delete(key);

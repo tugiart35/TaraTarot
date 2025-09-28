@@ -1,6 +1,6 @@
 /*
  * Environment Utility Functions
- * 
+ *
  * Bu dosya environment detection işlemleri için ortak utility fonksiyonları sağlar.
  * DRY principle uygulayarak tekrarlanan environment kodlarını önler.
  */
@@ -14,28 +14,28 @@ export class EnvironmentUtils {
   static isDevelopment(): boolean {
     return process.env.NODE_ENV === 'development';
   }
-  
+
   /**
    * Production environment kontrolü
    */
   static isProduction(): boolean {
     return process.env.NODE_ENV === 'production';
   }
-  
+
   /**
    * Test environment kontrolü
    */
   static isTest(): boolean {
     return process.env.NODE_ENV === 'test';
   }
-  
+
   /**
    * Request'ten base URL oluştur
    */
   static getBaseUrl(request: NextRequest): string {
     const forwardedHost = request.headers.get('x-forwarded-host');
     const origin = new URL(request.url).origin;
-    
+
     if (this.isDevelopment()) {
       return origin;
     } else if (forwardedHost) {
@@ -44,14 +44,14 @@ export class EnvironmentUtils {
       return origin;
     }
   }
-  
+
   /**
    * Forwarded host kontrolü
    */
   static getForwardedHost(request: NextRequest): string | null {
     return request.headers.get('x-forwarded-host');
   }
-  
+
   /**
    * Environment-specific security headers
    */
@@ -63,7 +63,7 @@ export class EnvironmentUtils {
       'Permissions-Policy': 'camera=(), microphone=(), geolocation=()',
       'X-XSS-Protection': '1; mode=block',
     };
-    
+
     // Production'da ek security headers
     if (this.isProduction()) {
       return {
@@ -71,15 +71,16 @@ export class EnvironmentUtils {
         'Strict-Transport-Security': 'max-age=31536000; includeSubDomains',
       };
     }
-    
+
     return baseHeaders;
   }
-  
+
   /**
    * Debug mode kontrolü
    */
   static isDebugMode(): boolean {
-    return process.env.NODE_ENV === 'development' || 
-           process.env.DEBUG === 'true';
+    return (
+      process.env.NODE_ENV === 'development' || process.env.DEBUG === 'true'
+    );
   }
 }

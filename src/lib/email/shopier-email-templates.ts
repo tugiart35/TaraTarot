@@ -1,6 +1,6 @@
 /*
  * Shopier Email Templates
- * 
+ *
  * Bu dosya Shopier ödeme işlemleri için email template'lerini sağlar.
  * DRY principle uygulayarak email template duplication'ını önler.
  */
@@ -117,7 +117,7 @@ export class ShopierEmailTemplates {
    */
   static generatePaymentFailureEmail(data: PaymentFailureData): string {
     const statusText = this.getStatusText(data.status);
-    
+
     return `
     <!DOCTYPE html>
     <html>

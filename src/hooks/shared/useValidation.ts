@@ -1,6 +1,6 @@
 /*
  * useValidation Hook - Ortak Validation Logic'i
- * 
+ *
  * Bu hook tüm form validation işlemleri için ortak logic sağlar.
  * DRY principle uygulayarak tekrarlanan validation kodlarını önler.
  */
@@ -34,70 +34,80 @@ export function useValidation<T extends Record<string, any>>(
   const [isDirty, setIsDirty] = useState(false);
 
   // Validation logic
-  const validateField = useCallback((field: keyof T, value: any): string | null => {
-    const rule = rules[field];
-    if (!rule) return null;
+  const validateField = useCallback(
+    (field: keyof T, value: any): string | null => {
+      const rule = rules[field];
+      if (!rule) {
+        return null;
+      }
 
-    // Required validation
-    if (rule.required && (!value || value.toString().trim() === '')) {
-      return `${String(field)} is required`;
-    }
+      // Required validation
+      if (rule.required && (!value || value.toString().trim() === '')) {
+        return `${String(field)} is required`;
+      }
 
-    // Skip other validations if value is empty and not required
-    if (!value || value.toString().trim() === '') return null;
+      // Skip other validations if value is empty and not required
+      if (!value || value.toString().trim() === '') {
+        return null;
+      }
 
-    // Min length validation
-    if (rule.minLength && value.toString().length < rule.minLength) {
-      return `${String(field)} must be at least ${rule.minLength} characters`;
-    }
+      // Min length validation
+      if (rule.minLength && value.toString().length < rule.minLength) {
+        return `${String(field)} must be at least ${rule.minLength} characters`;
+      }
 
-    // Max length validation
-    if (rule.maxLength && value.toString().length > rule.maxLength) {
-      return `${String(field)} must be at most ${rule.maxLength} characters`;
-    }
+      // Max length validation
+      if (rule.maxLength && value.toString().length > rule.maxLength) {
+        return `${String(field)} must be at most ${rule.maxLength} characters`;
+      }
 
-    // Pattern validation
-    if (rule.pattern && !rule.pattern.test(value.toString())) {
-      return `${String(field)} format is invalid`;
-    }
+      // Pattern validation
+      if (rule.pattern && !rule.pattern.test(value.toString())) {
+        return `${String(field)} format is invalid`;
+      }
 
-    // Custom validation
-    if (rule.custom) {
-      return rule.custom(value);
-    }
+      // Custom validation
+      if (rule.custom) {
+        return rule.custom(value);
+      }
 
-    return null;
-  }, [rules]);
+      return null;
+    },
+    [rules]
+  );
 
   // Validate all fields
   const validateAll = useCallback((): ValidationErrors => {
     const newErrors: ValidationErrors = {};
-    
+
     for (const field in rules) {
       const error = validateField(field, data[field]);
       if (error) {
         newErrors[field] = error;
       }
     }
-    
+
     setErrors(newErrors);
     return newErrors;
   }, [data, validateField, rules]);
 
   // Update field value
-  const updateField = useCallback((field: keyof T, value: any) => {
-    setData(prev => ({ ...prev, [field]: value }));
-    setIsDirty(true);
-    
-    // Clear error when user starts typing
-    if (errors[field as string]) {
-      setErrors(prev => {
-        const newErrors = { ...prev };
-        delete newErrors[field as string];
-        return newErrors;
-      });
-    }
-  }, [errors]);
+  const updateField = useCallback(
+    (field: keyof T, value: any) => {
+      setData(prev => ({ ...prev, [field]: value }));
+      setIsDirty(true);
+
+      // Clear error when user starts typing
+      if (errors[field as string]) {
+        setErrors(prev => {
+          const newErrors = { ...prev };
+          delete newErrors[field as string];
+          return newErrors;
+        });
+      }
+    },
+    [errors]
+  );
 
   // Update multiple fields
   const updateFields = useCallback((updates: Partial<T>) => {
@@ -123,14 +133,20 @@ export function useValidation<T extends Record<string, any>>(
   }, [validateAll]);
 
   // Get field error
-  const getFieldError = useCallback((field: keyof T): string | null => {
-    return errors[field as string] || null;
-  }, [errors]);
+  const getFieldError = useCallback(
+    (field: keyof T): string | null => {
+      return errors[field as string] || null;
+    },
+    [errors]
+  );
 
   // Check if field has error
-  const hasFieldError = useCallback((field: keyof T): boolean => {
-    return !!errors[field as string];
-  }, [errors]);
+  const hasFieldError = useCallback(
+    (field: keyof T): boolean => {
+      return !!errors[field as string];
+    },
+    [errors]
+  );
 
   return {
     data,
@@ -144,7 +160,7 @@ export function useValidation<T extends Record<string, any>>(
     validateField,
     validateAll,
     getFieldError,
-    hasFieldError
+    hasFieldError,
   };
 }
 
@@ -154,19 +170,23 @@ export const ValidationRules = {
     required: true,
     pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
     custom: (value: string) => {
-      if (!value) return null;
+      if (!value) {
+        return null;
+      }
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
         return 'Geçerli bir email adresi girin';
       }
       return null;
-    }
+    },
   },
 
   password: {
     required: true,
     minLength: 8,
     custom: (value: string) => {
-      if (!value) return null;
+      if (!value) {
+        return null;
+      }
       if (value.length < 8) {
         return 'Şifre en az 8 karakter olmalı';
       }
@@ -180,7 +200,7 @@ export const ValidationRules = {
         return 'Şifre en az bir rakam içermeli';
       }
       return null;
-    }
+    },
   },
 
   name: {
@@ -188,7 +208,9 @@ export const ValidationRules = {
     minLength: 2,
     maxLength: 50,
     custom: (value: string) => {
-      if (!value) return null;
+      if (!value) {
+        return null;
+      }
       if (value.length < 2) {
         return 'İsim en az 2 karakter olmalı';
       }
@@ -199,29 +221,33 @@ export const ValidationRules = {
         return 'İsim sadece harf içerebilir';
       }
       return null;
-    }
+    },
   },
 
   phone: {
     required: false,
     pattern: /^(\+90|0)?[5][0-9]{9}$/,
     custom: (value: string) => {
-      if (!value) return null;
+      if (!value) {
+        return null;
+      }
       if (!/^(\+90|0)?[5][0-9]{9}$/.test(value)) {
         return 'Geçerli bir telefon numarası girin';
       }
       return null;
-    }
+    },
   },
 
   birthDate: {
     required: false,
     custom: (value: string) => {
-      if (!value) return null;
+      if (!value) {
+        return null;
+      }
       const date = new Date(value);
       const now = new Date();
       const age = now.getFullYear() - date.getFullYear();
-      
+
       if (isNaN(date.getTime())) {
         return 'Geçerli bir tarih girin';
       }
@@ -232,7 +258,7 @@ export const ValidationRules = {
         return 'Geçerli bir yaş girin';
       }
       return null;
-    }
+    },
   },
 
   question: {
@@ -240,7 +266,9 @@ export const ValidationRules = {
     minLength: 10,
     maxLength: 500,
     custom: (value: string) => {
-      if (!value) return null;
+      if (!value) {
+        return null;
+      }
       if (value.length < 10) {
         return 'Soru en az 10 karakter olmalı';
       }
@@ -248,8 +276,8 @@ export const ValidationRules = {
         return 'Soru en fazla 500 karakter olabilir';
       }
       return null;
-    }
-  }
+    },
+  },
 };
 
 // Export utility functions
@@ -263,13 +291,15 @@ export const ValidationUtils = {
   },
 
   isStrongPassword: (password: string): boolean => {
-    return password.length >= 8 && 
-           /(?=.*[a-z])/.test(password) && 
-           /(?=.*[A-Z])/.test(password) && 
-           /(?=.*\d)/.test(password);
+    return (
+      password.length >= 8 &&
+      /(?=.*[a-z])/.test(password) &&
+      /(?=.*[A-Z])/.test(password) &&
+      /(?=.*\d)/.test(password)
+    );
   },
 
   sanitizeInput: (input: string): string => {
     return input.trim().replace(/[<>]/g, '');
-  }
+  },
 };

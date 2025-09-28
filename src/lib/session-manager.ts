@@ -260,8 +260,9 @@ class SessionManager {
           : null,
       },
     };
-    if (this.sessionState.user?.id !== undefined)
+    if (this.sessionState.user?.id !== undefined) {
       logData.userId = this.sessionState.user.id;
+    }
     logSecurityEvent('session_expired', logData);
 
     this.clearSession();

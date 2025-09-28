@@ -14,7 +14,7 @@ Bağlı Dosyalar:
 - Evet, detaylı anlamlar mevcut
 ---
 
-*/  
+*/
 
 import { TarotCard } from '@/types/tarot';
 
@@ -78,8 +78,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Başrahibe, dış etkiler gizlenmiş gerçekler, sırlar ya da yanlış sezgilerle seni yanıltabilir.',
     keywords: ['sezgi', 'bilgi', 'sır', 'bilgelik', 'rehberlik'],
-    context:
-      'Dış etkiler, sezgi ve gizli bilgiler üzerinden seni etkiliyor.',
+    context: 'Dış etkiler, sezgi ve gizli bilgiler üzerinden seni etkiliyor.',
     group: 'Majör Arkana',
   },
   {
@@ -91,8 +90,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters İmparatoriçe, dış etkiler bağımlılık, aşırı korumacılık ya da üretkenlikte tıkanıklık yaratabilir.',
     keywords: ['bolluk', 'destek', 'üretkenlik', 'şefkat', 'yaratıcılık'],
-    context:
-      'Dış etkiler, üretkenlik ya da bağımlılıkla seni etkiliyor.',
+    context: 'Dış etkiler, üretkenlik ya da bağımlılıkla seni etkiliyor.',
     group: 'Majör Arkana',
   },
   {
@@ -104,8 +102,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters İmparator, dış etkiler baskıcı figürler, katı kurallar ya da otoriteyle çatışmalar getirebilir.',
     keywords: ['otorite', 'düzen', 'güç', 'kontrol', 'koruma'],
-    context:
-      'Dış etkiler, düzen kurabilir ya da baskı yaratabilir.',
+    context: 'Dış etkiler, düzen kurabilir ya da baskı yaratabilir.',
     group: 'Majör Arkana',
   },
   {
@@ -117,8 +114,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Aziz, dış etkiler kurallara karşı çıkmanı, geleneklerden kopmanı ya da yanlış rehberlik almanı tetikleyebilir.',
     keywords: ['gelenek', 'öğreti', 'rehberlik', 'otorite', 'maneviyat'],
-    context:
-      'Dış etkiler, geleneksel ya da asi yollarla seni etkiliyor.',
+    context: 'Dış etkiler, geleneksel ya da asi yollarla seni etkiliyor.',
     group: 'Majör Arkana',
   },
   {
@@ -130,8 +126,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Aşıklar, dış etkiler uyumsuzluk, yanlış seçimler ya da kararsızlık enerjisi getirebilir.',
     keywords: ['ilişki', 'ortaklık', 'seçim', 'uyum', 'karar'],
-    context:
-      'Dış etkiler, seçimler ya da ilişkiler üzerinden seni etkiliyor.',
+    context: 'Dış etkiler, seçimler ya da ilişkiler üzerinden seni etkiliyor.',
     group: 'Majör Arkana',
   },
   {
@@ -143,8 +138,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Savaş Arabası, dış etkiler dağınıklık, yönsüzlük ya da kontrol kaybı enerjisi taşıyabilir.',
     keywords: ['ilerleme', 'hedef', 'irade', 'kontrol', 'başarı'],
-    context:
-      'Dış etkiler, ilerlemeni destekleyebilir ya da yavaşlatabilir.',
+    context: 'Dış etkiler, ilerlemeni destekleyebilir ya da yavaşlatabilir.',
     group: 'Majör Arkana',
   },
   {
@@ -156,8 +150,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Güç, dış etkiler güvensizlik, öfke ya da sabırsızlık enerjisi getirebilir.',
     keywords: ['cesaret', 'sabır', 'dayanıklılık', 'denge', 'güven'],
-    context:
-      'Dış etkiler, cesaret ya da güvensizlik üzerinden seni etkiliyor.',
+    context: 'Dış etkiler, cesaret ya da güvensizlik üzerinden seni etkiliyor.',
     group: 'Majör Arkana',
   },
   {
@@ -169,13 +162,12 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Ermiş, dış etkiler aşırı yalnızlaşma, izolasyon ya da yanlış rehberlik getirebilir.',
     keywords: ['bilgelik', 'arayış', 'yalnızlık', 'rehberlik', 'içe dönüş'],
-    context:
-      'Dış etkiler, bilgelik ya da yalnızlık yoluyla seni etkiliyor.',
+    context: 'Dış etkiler, bilgelik ya da yalnızlık yoluyla seni etkiliyor.',
     group: 'Majör Arkana',
   },
   {
     id: 'wheel_of_fortune_ps_pos8',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 8,
     upright:
       'Kader Çarkı, dış etkiler hayatına beklenmedik şanslar, fırsatlar ya da döngüsel değişimler getirebilir.',
@@ -207,9 +199,14 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
       'Asılan Adam, dış etkiler seni beklemeye, farklı bir bakış açısı kazanmaya ya da fedakarlık yapmaya teşvik ediyor olabilir.',
     reversed:
       'Ters Asılan Adam, dış etkiler seni inatçılık, direnç ya da teslimiyet eksikliğiyle zorlayabilir.',
-    keywords: ['bakış açısı', 'bekleme', 'fedakarlık', 'teslimiyet', 'farkındalık'],
-    context:
-      'Dış etkiler, yeni bir bakış açısı ya da dirençle seni etkiliyor.',
+    keywords: [
+      'bakış açısı',
+      'bekleme',
+      'fedakarlık',
+      'teslimiyet',
+      'farkındalık',
+    ],
+    context: 'Dış etkiler, yeni bir bakış açısı ya da dirençle seni etkiliyor.',
     group: 'Majör Arkana',
   },
   {
@@ -221,8 +218,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Ölüm, dış etkiler seni değişime direnişe, kapanmayan döngülere ya da eskiyi bırakmamaya sürükleyebilir.',
     keywords: ['dönüşüm', 'bitiş', 'yenilenme', 'değişim', 'cesaret'],
-    context:
-      'Dış etkiler, dönüşüm ya da dirençle seni etkiliyor.',
+    context: 'Dış etkiler, dönüşüm ya da dirençle seni etkiliyor.',
     group: 'Majör Arkana',
   },
   {
@@ -234,8 +230,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Denge, dış etkiler aşırılık, uyumsuzluk ya da sabırsızlık yaratabilir.',
     keywords: ['denge', 'uyum', 'sabır', 'ölçülülük', 'dengeleyici'],
-    context:
-      'Dış etkiler, uyum ya da uyumsuzluk yoluyla seni etkiliyor.',
+    context: 'Dış etkiler, uyum ya da uyumsuzluk yoluyla seni etkiliyor.',
     group: 'Majör Arkana',
   },
   {
@@ -273,8 +268,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Yıldız, dış etkiler umutsuzluk, güven kaybı ya da ilham eksikliği yaratabilir.',
     keywords: ['umut', 'ilham', 'yenilenme', 'güven', 'ışık'],
-    context:
-      'Dış etkiler, umut ya da umutsuzluk yoluyla seni etkiliyor.',
+    context: 'Dış etkiler, umut ya da umutsuzluk yoluyla seni etkiliyor.',
     group: 'Majör Arkana',
   },
   {
@@ -286,8 +280,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Ay, dış etkiler sırların açığa çıkması, netlik kazanma ya da aldatmacaların çözülmesi yoluyla seni etkileyebilir.',
     keywords: ['belirsizlik', 'yanılsama', 'korku', 'sezgi', 'giz'],
-    context:
-      'Dış etkiler, belirsizlik ya da netlik yoluyla seni etkiliyor.',
+    context: 'Dış etkiler, belirsizlik ya da netlik yoluyla seni etkiliyor.',
     group: 'Majör Arkana',
   },
   {
@@ -299,8 +292,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Güneş, dış etkiler özgüven eksikliği, karamsarlık ya da başarıların gecikmesiyle seni zorlayabilir.',
     keywords: ['mutluluk', 'başarı', 'aydınlanma', 'özgüven', 'neşe'],
-    context:
-      'Dış etkiler, mutluluk ya da karamsarlık yoluyla seni etkiliyor.',
+    context: 'Dış etkiler, mutluluk ya da karamsarlık yoluyla seni etkiliyor.',
     group: 'Majör Arkana',
   },
   {
@@ -312,8 +304,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Mahkeme, dış etkiler fırsatları kaçırmana, geçmişi reddetmene ya da sorumluluklardan kaçmana sebep olabilir.',
     keywords: ['farkındalık', 'karar', 'geçmiş', 'çağrı', 'yenilenme'],
-    context:
-      'Dış etkiler, farkındalık ya da kaçış yoluyla seni etkiliyor.',
+    context: 'Dış etkiler, farkındalık ya da kaçış yoluyla seni etkiliyor.',
     group: 'Majör Arkana',
   },
   {
@@ -365,8 +356,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Üç Kupa, dış etkiler samimiyetsizlik, yanlış dostluklar ya da sosyal kopukluk yaratabilir.',
     keywords: ['kutlama', 'dostluk', 'topluluk', 'paylaşım', 'mutluluk'],
-    context:
-      'Dış etkiler, dostluklar ya da sosyal sorunlarla seni etkiliyor.',
+    context: 'Dış etkiler, dostluklar ya da sosyal sorunlarla seni etkiliyor.',
     group: 'Kupalar',
   },
   {
@@ -391,8 +381,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Beş Kupa, dış etkiler seni şifalanmaya, geçmişi geride bırakmaya ve kalan güzelliklere odaklanmaya yöneltebilir.',
     keywords: ['kayıp', 'pişmanlık', 'üzüntü', 'şifa', 'farkındalık'],
-    context:
-      'Dış etkiler, kayıp ya da şifalanma yoluyla seni etkiliyor.',
+    context: 'Dış etkiler, kayıp ya da şifalanma yoluyla seni etkiliyor.',
     group: 'Kupalar',
   },
   {
@@ -417,8 +406,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Yedi Kupa, dış etkiler seni netlik kazanmaya, gerçekçi seçimler yapmaya ve kafa karışıklığını gidermeye yönlendirebilir.',
     keywords: ['seçenek', 'hayal', 'fırsat', 'netlik', 'karar'],
-    context:
-      'Dış etkiler, kafa karışıklığı ya da netlikle seni etkiliyor.',
+    context: 'Dış etkiler, kafa karışıklığı ya da netlikle seni etkiliyor.',
     group: 'Kupalar',
   },
   {
@@ -430,8 +418,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Sekiz Kupa, dış etkiler seni geçmişe döndürmeye ya da kararsızlık içinde kalmana sebep olabilir.',
     keywords: ['bırakış', 'arayış', 'kaçış', 'tatminsizlik', 'karar'],
-    context:
-      'Dış etkiler, bırakış ya da geri dönüş üzerinden seni etkiliyor.',
+    context: 'Dış etkiler, bırakış ya da geri dönüş üzerinden seni etkiliyor.',
     group: 'Kupalar',
   },
   {
@@ -456,8 +443,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters On Kupa, dış etkiler ailevi sorunlar, uyumsuzluk ya da duygusal hayal kırıklıkları yaratabilir.',
     keywords: ['aile', 'mutluluk', 'uyum', 'huzur', 'bağ'],
-    context:
-      'Dış etkiler, huzur ya da uyumsuzluk yoluyla seni etkiliyor.',
+    context: 'Dış etkiler, huzur ya da uyumsuzluk yoluyla seni etkiliyor.',
     group: 'Kupalar',
   },
   {
@@ -469,8 +455,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Kupa Prensi, dış etkiler seni hayalcilik, yüzeysellik ya da duygusal olgunluk eksikliğiyle etkileyebilir.',
     keywords: ['romantizm', 'ilham', 'yaratıcılık', 'teklif', 'hayal'],
-    context:
-      'Dış etkiler, romantizm ya da yüzeysellik yoluyla seni etkiliyor.',
+    context: 'Dış etkiler, romantizm ya da yüzeysellik yoluyla seni etkiliyor.',
     group: 'Kupalar',
   },
   {
@@ -482,8 +467,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Kupa Şövalyesi, dış etkiler boş vaatler, tutarsızlık ya da aşırı hayalcilik yaratabilir.',
     keywords: ['romantizm', 'teklif', 'ilham', 'hayal', 'destek'],
-    context:
-      'Dış etkiler, ilham ya da tutarsızlık yoluyla seni etkiliyor.',
+    context: 'Dış etkiler, ilham ya da tutarsızlık yoluyla seni etkiliyor.',
     group: 'Kupalar',
   },
   {
@@ -508,8 +492,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Kupa Kralı, dış etkiler seni duygusal manipülasyon, kontrol kaybı ya da dengesizlikle etkileyebilir.',
     keywords: ['bilgelik', 'olgunluk', 'denge', 'destek', 'rehberlik'],
-    context:
-      'Dış etkiler, bilgelik ya da manipülasyon yoluyla seni etkiliyor.',
+    context: 'Dış etkiler, bilgelik ya da manipülasyon yoluyla seni etkiliyor.',
     group: 'Kupalar',
   },
 
@@ -549,8 +532,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Üç Kılıç, dış etkiler şifalanma, barışma ya da acının azalmasına yardım edebilir.',
     keywords: ['kalp kırıklığı', 'acı', 'ayrılık', 'şifa', 'anlaşmazlık'],
-    context:
-      'Dış etkiler, acı ya da şifa yoluyla seni etkiliyor.',
+    context: 'Dış etkiler, acı ya da şifa yoluyla seni etkiliyor.',
     group: 'Kılıçlar',
   },
   {
@@ -562,8 +544,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Dört Kılıç, dış etkiler seni tükenmişlik, dinlenememe ya da stres altında kalmaya itebilir.',
     keywords: ['dinlenme', 'yenilenme', 'huzur', 'toparlanma', 'rahatlama'],
-    context:
-      'Dış etkiler, huzur ya da tükenmişlik yoluyla seni etkiliyor.',
+    context: 'Dış etkiler, huzur ya da tükenmişlik yoluyla seni etkiliyor.',
     group: 'Kılıçlar',
   },
   {
@@ -575,8 +556,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Beş Kılıç, dış etkiler seni barışa, anlaşmazlıkların çözümüne ve uzlaşmaya yönlendirebilir.',
     keywords: ['çatışma', 'tartışma', 'uzlaşma', 'gurur', 'fikir ayrılığı'],
-    context:
-      'Dış etkiler, çatışma ya da uzlaşma yoluyla seni etkiliyor.',
+    context: 'Dış etkiler, çatışma ya da uzlaşma yoluyla seni etkiliyor.',
     group: 'Kılıçlar',
   },
   {
@@ -601,8 +581,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Yedi Kılıç, dış etkiler seni dürüstlükle yüzleştirebilir ya da saklı planların açığa çıkmasına sebep olabilir.',
     keywords: ['strateji', 'hile', 'gizlilik', 'plan', 'sırlar'],
-    context:
-      'Dış etkiler, gizlilik ya da dürüstlük yoluyla seni etkiliyor.',
+    context: 'Dış etkiler, gizlilik ya da dürüstlük yoluyla seni etkiliyor.',
     group: 'Kılıçlar',
   },
   {
@@ -614,8 +593,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Sekiz Kılıç, dış etkiler seni özgürleştirebilir, engellerin kalkmasına yardım edebilir.',
     keywords: ['sınırlama', 'özgürlük', 'baskı', 'engeller', 'zihin'],
-    context:
-      'Dış etkiler, seni kısıtlayabilir ya da özgürleştirebilir.',
+    context: 'Dış etkiler, seni kısıtlayabilir ya da özgürleştirebilir.',
     group: 'Kılıçlar',
   },
   {
@@ -627,8 +605,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Dokuz Kılıç, dış etkiler seni bu kaygılardan arındırabilir, destek ve rahatlama getirebilir.',
     keywords: ['kaygı', 'stres', 'endişe', 'rahatlama', 'kabus'],
-    context:
-      'Dış etkiler, kaygı ya da şifa yoluyla seni etkiliyor.',
+    context: 'Dış etkiler, kaygı ya da şifa yoluyla seni etkiliyor.',
     group: 'Kılıçlar',
   },
   {
@@ -640,8 +617,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters On Kılıç, dış etkiler seni toparlanmaya, yeniden doğuşa ve zor dönemleri geride bırakmaya yönlendirebilir.',
     keywords: ['bitiş', 'ihanet', 'yeniden doğuş', 'acı', 'travma'],
-    context:
-      'Dış etkiler, bitiş ya da yeniden doğuş yoluyla seni etkiliyor.',
+    context: 'Dış etkiler, bitiş ya da yeniden doğuş yoluyla seni etkiliyor.',
     group: 'Kılıçlar',
   },
   {
@@ -679,8 +655,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Kılıç Kraliçesi, dış etkiler seni soğukluk, aşırı eleştiri ya da anlayışsızlıkla zorlayabilir.',
     keywords: ['mantık', 'bilgelik', 'bağımsızlık', 'soğukluk', 'karar'],
-    context:
-      'Dış etkiler, bilgelik ya da soğukluk yoluyla seni etkiliyor.',
+    context: 'Dış etkiler, bilgelik ya da soğukluk yoluyla seni etkiliyor.',
     group: 'Kılıçlar',
   },
   {
@@ -692,8 +667,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Kılıç Kralı, dış etkiler baskı, adaletsizlik ya da soğuk bir otorite figürü yoluyla seni zorlayabilir.',
     keywords: ['adalet', 'otorite', 'bilgelik', 'mantık', 'karar'],
-    context:
-      'Dış etkiler, adalet ya da baskı yoluyla seni etkiliyor.',
+    context: 'Dış etkiler, adalet ya da baskı yoluyla seni etkiliyor.',
     group: 'Kılıçlar',
   },
   // --- Tılsımlar Serisi ---
@@ -719,8 +693,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters İki Tılsım, dış etkiler dengeyi bozabilir, aşırı yüklenme veya kararsızlık yaratabilir.',
     keywords: ['denge', 'sorumluluk', 'esneklik', 'karar', 'öncelik'],
-    context:
-      'Dış etkiler, dengeyi kurmanı kolaylaştırabilir ya da bozabilir.',
+    context: 'Dış etkiler, dengeyi kurmanı kolaylaştırabilir ya da bozabilir.',
     group: 'Tılsımlar',
   },
   {
@@ -732,8 +705,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Üç Tılsım, dış etkiler uyumsuzluk, destek eksikliği veya iletişim sorunları yaratabilir.',
     keywords: ['işbirliği', 'ekip', 'başarı', 'paylaşım', 'uyum'],
-    context:
-      'Dış etkiler, işbirliği ya da uyumsuzluk yoluyla seni etkiliyor.',
+    context: 'Dış etkiler, işbirliği ya da uyumsuzluk yoluyla seni etkiliyor.',
     group: 'Tılsımlar',
   },
   {
@@ -745,8 +717,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Dört Tılsım, dış etkiler aşırı kontrol, cimrilik ya da kaybetme korkusunu tetikleyebilir.',
     keywords: ['güvenlik', 'istikrar', 'koruma', 'kontrol', 'korku'],
-    context:
-      'Dış etkiler, güven hissi ya da kaygı yoluyla seni etkiliyor.',
+    context: 'Dış etkiler, güven hissi ya da kaygı yoluyla seni etkiliyor.',
     group: 'Tılsımlar',
   },
   {
@@ -771,8 +742,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Altı Tılsım, dış etkiler eşitsizlik, tek taraflı ilişkiler veya dengesizlik yaratabilir.',
     keywords: ['yardım', 'paylaşım', 'denge', 'adalet', 'destek'],
-    context:
-      'Dış etkiler, dengeyi kurabilir ya da bozabilir.',
+    context: 'Dış etkiler, dengeyi kurabilir ya da bozabilir.',
     group: 'Tılsımlar',
   },
   {
@@ -797,8 +767,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Sekiz Tılsım, dış etkiler özensizlik, motivasyon kaybı veya tekrar eden hatalar yaratabilir.',
     keywords: ['çalışma', 'öğrenme', 'ustalık', 'emek', 'disiplin'],
-    context:
-      'Dış etkiler, çalışmaya teşvik edebilir ya da gevşetebilir.',
+    context: 'Dış etkiler, çalışmaya teşvik edebilir ya da gevşetebilir.',
     group: 'Tılsımlar',
   },
   {
@@ -823,8 +792,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters On Tılsım, dış etkiler ailevi huzursuzluk, miras anlaşmazlıkları veya istikrarsızlık yaratabilir.',
     keywords: ['aile', 'istikrar', 'miras', 'gelenek', 'bolluk'],
-    context:
-      'Dış etkiler, istikrar sağlayabilir ya da bozabilir.',
+    context: 'Dış etkiler, istikrar sağlayabilir ya da bozabilir.',
     group: 'Tılsımlar',
   },
   {
@@ -849,8 +817,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Tılsım Şövalyesi, dış etkiler durağanlık, tembellik veya yavaş ilerleme yaratabilir.',
     keywords: ['sabır', 'istikrar', 'çalışma', 'disiplin', 'azim'],
-    context:
-      'Dış etkiler, istikrar sağlayabilir ya da tembelliğe itebilir.',
+    context: 'Dış etkiler, istikrar sağlayabilir ya da tembelliğe itebilir.',
     group: 'Tılsımlar',
   },
   {
@@ -862,8 +829,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Tılsım Kraliçesi, dış etkiler öz bakım eksikliği, savurganlık veya aşırı bağımlılık yaratabilir.',
     keywords: ['şefkat', 'bolluk', 'pratik destek', 'denge', 'kaynak'],
-    context:
-      'Dış etkiler, bolluk getirebilir ya da dengesizlik yaratabilir.',
+    context: 'Dış etkiler, bolluk getirebilir ya da dengesizlik yaratabilir.',
     group: 'Tılsımlar',
   },
   {
@@ -875,8 +841,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Tılsım Kralı, dış etkiler baskıcı figürler, hırs veya aşırı kontrol eğilimi getirebilir.',
     keywords: ['liderlik', 'başarı', 'istikrar', 'bolluk', 'güven'],
-    context:
-      'Dış etkiler, güven verebilir ya da baskı yaratabilir.',
+    context: 'Dış etkiler, güven verebilir ya da baskı yaratabilir.',
     group: 'Tılsımlar',
   },
   // --- Asalar Serisi ---
@@ -889,8 +854,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Değnek Ası, dış etkiler ilham tıkanıklığı, ertelenen projeler ya da motivasyonu düşüren koşullar yaratabilir.',
     keywords: ['ilham', 'başlangıç', 'hareket', 'yaratıcılık', 'fırsat'],
-    context:
-      'Dış etkiler, kıvılcım yakabilir ya da alevi kısabilir.',
+    context: 'Dış etkiler, kıvılcım yakabilir ya da alevi kısabilir.',
     group: 'Asalar',
   },
   {
@@ -902,8 +866,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters İki Değnek, dış etkiler risk almaktan caydırabilir, dar bakış açısı ya da belirsizlik yaratabilir.',
     keywords: ['vizyon', 'plan', 'seçenek', 'ufuk', 'cesaret'],
-    context:
-      'Dış etkiler, plan yapmayı teşvik edebilir ya da erteletebilir.',
+    context: 'Dış etkiler, plan yapmayı teşvik edebilir ya da erteletebilir.',
     group: 'Asalar',
   },
   {
@@ -915,8 +878,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Üç Değnek, dış etkiler gecikmeler, tedarik/iletişim aksaklıkları ve vizyon daralması yaratabilir.',
     keywords: ['genişleme', 'fırsat', 'ilerleme', 'bekleyiş', 'işbirliği'],
-    context:
-      'Dış etmenler, ufuk açabilir ya da yolunu daraltabilir.',
+    context: 'Dış etmenler, ufuk açabilir ya da yolunu daraltabilir.',
     group: 'Asalar',
   },
   {
@@ -928,8 +890,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Dört Değnek, dış etkiler uyumsuzluk, taşınma/yerleşim sorunları veya aidiyet duygusunu zedeleyen durumlar yaratabilir.',
     keywords: ['kutlama', 'temel', 'uyum', 'destek', 'aidiyet'],
-    context:
-      'Dış etkiler, yuvayı kurabilir ya da sallayabilir.',
+    context: 'Dış etkiler, yuvayı kurabilir ya da sallayabilir.',
     group: 'Asalar',
   },
   {
@@ -941,8 +902,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Beş Değnek, dış etmenler gereksiz sürtüşme, kaos ya da pasif-agresif çekişmeler yaratabilir.',
     keywords: ['rekabet', 'çatışma', 'mücadele', 'enerji', 'gelişim'],
-    context:
-      'Dış etkiler, seni bileyleyebilir ya da yıpratabilir.',
+    context: 'Dış etkiler, seni bileyleyebilir ya da yıpratabilir.',
     group: 'Asalar',
   },
   {
@@ -954,8 +914,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Altı Değnek, dış etkiler kıskançlık, alkışın gecikmesi ya da emeğinin küçümsenmesi şeklinde görünebilir.',
     keywords: ['takdir', 'başarı', 'zafer', 'görünürlük', 'itibar'],
-    context:
-      'Dış etkiler, seni yüceltebilir ya da gölgeleyebilir.',
+    context: 'Dış etkiler, seni yüceltebilir ya da gölgeleyebilir.',
     group: 'Asalar',
   },
   {
@@ -967,8 +926,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Yedi Değnek, dış etmenler yıldırma, geri çekilmeye zorlama ya da savunma hattını zayıflatma eğiliminde olabilir.',
     keywords: ['savunma', 'baskı', 'kararlılık', 'sınır', 'direniş'],
-    context:
-      'Dış etkiler, seni sıkıştırabilir ya da güçlendirebilir.',
+    context: 'Dış etkiler, seni sıkıştırabilir ya da güçlendirebilir.',
     group: 'Asalar',
   },
   {
@@ -980,8 +938,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Sekiz Değnek, dış etmenler gecikme, yanlış iletişim ya da yönsüz koşturmaca yaratabilir.',
     keywords: ['hız', 'haber', 'ivme', 'akış', 'ilerleme'],
-    context:
-      'Dış etkiler, hız kazandırabilir ya da frenleyebilir.',
+    context: 'Dış etkiler, hız kazandırabilir ya da frenleyebilir.',
     group: 'Asalar',
   },
   {
@@ -993,8 +950,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Dokuz Değnek, dış etmenler yorgunluğu artırabilir, şüphe ve geri çekilme eğilimini tetikleyebilir.',
     keywords: ['dayanıklılık', 'tekrar sınav', 'korunma', 'sabır', 'temkin'],
-    context:
-      'Dış etkiler, seni sınayabilir ya da yıldırabilir.',
+    context: 'Dış etkiler, seni sınayabilir ya da yıldırabilir.',
     group: 'Asalar',
   },
   {
@@ -1006,8 +962,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters On Değnek, dış etmenler yetki devrini zorlaştırabilir ya da gereksiz yükleri üstüne yıkabilir.',
     keywords: ['yük', 'sorumluluk', 'yoğunluk', 'bitirme', 'delege'],
-    context:
-      'Dış etkiler, yükünü artırabilir ya da hafifletebilir.',
+    context: 'Dış etkiler, yükünü artırabilir ya da hafifletebilir.',
     group: 'Asalar',
   },
   {
@@ -1019,8 +974,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Değnek Prensi, dış etmenler dağınık mesajlar, boş hevesler ya da dikkati dağıtan öneriler sunabilir.',
     keywords: ['keşif', 'haber', 'deneme', 'merak', 'kıvılcım'],
-    context:
-      'Dış etkiler, denemeye cesaretlendirebilir ya da oyalayabilir.',
+    context: 'Dış etkiler, denemeye cesaretlendirebilir ya da oyalayabilir.',
     group: 'Asalar',
   },
   {
@@ -1032,8 +986,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Değnek Şövalyesi, dış etmenler acelecilik, savrukluk ya da yönsüz bir koşturma yaratabilir.',
     keywords: ['cesaret', 'hareket', 'atılım', 'macera', 'enerji'],
-    context:
-      'Dış etkiler, hızla ilerletebilir ya da savurabilir.',
+    context: 'Dış etkiler, hızla ilerletebilir ya da savurabilir.',
     group: 'Asalar',
   },
   {
@@ -1045,8 +998,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Değnek Kraliçesi, dış etkiler kıskançlık, pasif saldırgan tavırlar ya da güveni sarsan durumlar doğurabilir.',
     keywords: ['özgüven', 'karizma', 'destek', 'ilham', 'çekim'],
-    context:
-      'Dış etkiler, ışığını parlatabilir ya da gölge düşürebilir.',
+    context: 'Dış etkiler, ışığını parlatabilir ya da gölge düşürebilir.',
     group: 'Asalar',
   },
   {
@@ -1058,8 +1010,7 @@ export const position8Meanings: ProblemSolvingPosition8Meaning[] = [
     reversed:
       'Ters Değnek Kralı, dış etmenler otoriter baskı, kontrol arzusu ya da vizyonsuz yönlendirmeler getirebilir.',
     keywords: ['liderlik', 'vizyon', 'etki', 'strateji', 'inşa'],
-    context:
-      'Dış etkiler, vizyonu büyütebilir ya da baskıyla daraltabilir.',
+    context: 'Dış etkiler, vizyonu büyütebilir ya da baskıyla daraltabilir.',
     group: 'Asalar',
   },
 ];
@@ -1074,54 +1025,55 @@ export function getProblemSolvingPosition8Meaning(
 ): ProblemSolvingPosition8Meaning | null {
   // Kart ismi eşleştirmesi için hem İngilizce hem Türkçe isimleri kontrol et
   // Önce doğrudan eşleşme ara
-  let meaning = position8Meanings.find(m => 
-    m.card === card.name || 
-    m.card === card.nameTr ||
-    card.name === m.card ||
-    card.nameTr === m.card
+  let meaning = position8Meanings.find(
+    m =>
+      m.card === card.name ||
+      m.card === card.nameTr ||
+      card.name === m.card ||
+      card.nameTr === m.card
   );
-  
+
   if (meaning) {
     return meaning;
   }
-  
+
   // Kart ismi mapping'i kullanarak eşleştirme yap
   const cardNameMapping: { [key: string]: string } = {
     // Major Arcana - Türkçe
-    'Deli': 'The Fool',
-    'Büyücü': 'The Magician',
+    Deli: 'The Fool',
+    Büyücü: 'The Magician',
     'Yüksek Rahibe': 'The High Priestess',
-    'İmparatoriçe': 'The Empress',
-    'İmparator': 'The Emperor',
-    'Hierophant': 'The Hierophant',
-    'Aziz': 'The Hierophant',
-    'Aşıklar': 'The Lovers',
+    İmparatoriçe: 'The Empress',
+    İmparator: 'The Emperor',
+    Hierophant: 'The Hierophant',
+    Aziz: 'The Hierophant',
+    Aşıklar: 'The Lovers',
     'Savaş Arabası': 'The Chariot',
-    'Güç': 'Strength',
-    'Ermiş': 'The Hermit',
-    'Münzevi': 'The Hermit',
-    'Kader Çarkı': 'The Wheel of Fortune',
-    'Adalet': 'Justice',
+    Güç: 'Strength',
+    Ermiş: 'The Hermit',
+    Münzevi: 'The Hermit',
+    'Kader Çarkı': 'The The Wheel of Fortune',
+    Adalet: 'Justice',
     'Asılı Adam': 'The Hanged Man',
-    'Ölüm': 'Death',
-    'Ölçü': 'Temperance',
-    'Ölçülülük': 'Temperance',
-    'Şeytan': 'The Devil',
-    'Kule': 'The Tower',
-    'Yıldız': 'The Star',
-    'Ay': 'The Moon',
-    'Güneş': 'The Sun',
-    'Yargı': 'Judgement',
-    'Mahkeme': 'Judgement',
-    'Dünya': 'The World',
+    Ölüm: 'Death',
+    Ölçü: 'Temperance',
+    Ölçülülük: 'Temperance',
+    Şeytan: 'The Devil',
+    Kule: 'The Tower',
+    Yıldız: 'The Star',
+    Ay: 'The Moon',
+    Güneş: 'The Sun',
+    Yargı: 'Judgement',
+    Mahkeme: 'Judgement',
+    Dünya: 'The World',
   };
-  
+
   // Türkçe ismi İngilizce'ye çevir
   const englishName = cardNameMapping[card.nameTr] || card.nameTr;
-  
+
   // İngilizce isimle tekrar ara
   meaning = position8Meanings.find(m => m.card === englishName);
-  
+
   return meaning || null;
 }
 
@@ -1184,7 +1136,7 @@ export const useI18nposition8Meanings = (): I18nProblemSolvingPosition8Meaning[]
 */
 
 // Belirli bir kart için i18n destekli anlam al (hook kullanmadan)
-      export const getI18nPosition8Meaning = (
+export const getI18nPosition8Meaning = (
   cardName: string,
   t: (_key: string) => string
 ): I18nProblemSolvingPosition8Meaning | null => {

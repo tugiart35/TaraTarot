@@ -44,7 +44,7 @@ export default function ResetPasswordPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const params = useParams();
-  
+
   // Locale'i params'dan al
   const locale = (params.locale as string) || 'tr';
 
@@ -61,20 +61,22 @@ export default function ResetPasswordPage() {
   // URL parametrelerini al - Sadece güvenli yeni sistem
   useEffect(() => {
     const codeParam = searchParams.get('code');
-    
+
     // Error parametrelerini kontrol et
     const errorParam = searchParams.get('error');
     const errorCode = searchParams.get('error_code');
 
     if (errorParam) {
       let errorMessage = 'Şifre sıfırlama linki geçersiz veya süresi dolmuş.';
-      
+
       if (errorCode === 'otp_expired') {
-        errorMessage = 'Şifre sıfırlama linki süresi dolmuş. Lütfen yeni bir şifre sıfırlama talebinde bulunun.';
+        errorMessage =
+          'Şifre sıfırlama linki süresi dolmuş. Lütfen yeni bir şifre sıfırlama talebinde bulunun.';
       } else if (errorCode === 'access_denied') {
-        errorMessage = 'Şifre sıfırlama linki geçersiz. Lütfen yeni bir şifre sıfırlama talebinde bulunun.';
+        errorMessage =
+          'Şifre sıfırlama linki geçersiz. Lütfen yeni bir şifre sıfırlama talebinde bulunun.';
       }
-      
+
       setError(errorMessage);
       return;
     }
@@ -84,7 +86,9 @@ export default function ResetPasswordPage() {
       setToken(codeParam);
       setType('recovery');
     } else {
-      setError('Geçersiz şifre sıfırlama linki. Lütfen yeni bir şifre sıfırlama talebinde bulunun.');
+      setError(
+        'Geçersiz şifre sıfırlama linki. Lütfen yeni bir şifre sıfırlama talebinde bulunun.'
+      );
     }
   }, [searchParams]);
 
@@ -128,12 +132,16 @@ export default function ResetPasswordPage() {
 
       if (updateError) {
         logger.error('Şifre güncelleme hatası', updateError);
-        
+
         // Özel hata mesajları
         if (updateError.message.includes('session')) {
-          setError('Oturum süresi dolmuş. Lütfen yeni bir şifre sıfırlama talebinde bulunun.');
+          setError(
+            'Oturum süresi dolmuş. Lütfen yeni bir şifre sıfırlama talebinde bulunun.'
+          );
         } else if (updateError.message.includes('password')) {
-          setError('Şifre güvenlik gereksinimlerini karşılamıyor. Lütfen daha güçlü bir şifre seçin.');
+          setError(
+            'Şifre güvenlik gereksinimlerini karşılamıyor. Lütfen daha güçlü bir şifre seçin.'
+          );
         } else {
           const errorMessage = getAuthErrorMessage(updateError, locale);
           setError(errorMessage);
@@ -157,39 +165,37 @@ export default function ResetPasswordPage() {
   // Hata durumunda gösterilecek UI
   if (error && !token) {
     return (
-      <div 
+      <div
         className='min-h-screen flex items-center justify-center p-4 relative overflow-hidden'
         style={{
           background: `
             radial-gradient(ellipse at top, rgba(139, 69, 19, 0.1) 0%, transparent 50%),
             radial-gradient(ellipse at bottom, rgba(75, 0, 130, 0.15) 0%, transparent 50%),
             linear-gradient(135deg, #0a0a0f 0%, #1a0b2e 50%, #16213e 100%)
-          `
+          `,
         }}
       >
         {/* Mystical background elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-red-400 rounded-full animate-pulse"></div>
-          <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-orange-400 rounded-full animate-pulse delay-1000"></div>
-          <div className="absolute bottom-1/3 left-1/3 w-2 h-2 bg-red-300 rounded-full animate-pulse delay-2000"></div>
+        <div className='absolute inset-0 overflow-hidden pointer-events-none'>
+          <div className='absolute top-1/4 left-1/4 w-2 h-2 bg-red-400 rounded-full animate-pulse'></div>
+          <div className='absolute top-1/3 right-1/3 w-1 h-1 bg-orange-400 rounded-full animate-pulse delay-1000'></div>
+          <div className='absolute bottom-1/3 left-1/3 w-2 h-2 bg-red-300 rounded-full animate-pulse delay-2000'></div>
         </div>
 
         <div className='relative bg-gradient-to-br from-slate-900/90 via-red-900/20 to-slate-800/90 backdrop-blur-xl rounded-2xl p-8 max-w-md w-full text-center border border-red-400/20 shadow-2xl'>
           {/* Error mystical symbol */}
-          <div className="relative mb-6">
-            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 border-2 border-red-400/30 rounded-full animate-spin-slow"></div>
-            <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 border border-red-400/40 rounded-full animate-pulse"></div>
+          <div className='relative mb-6'>
+            <div className='absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 border-2 border-red-400/30 rounded-full animate-spin-slow'></div>
+            <div className='absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 border border-red-400/40 rounded-full animate-pulse'></div>
             <AlertCircle className='h-16 w-16 text-red-400 mx-auto mb-4 relative z-10' />
           </div>
-          
+
           <h1 className='text-2xl font-bold bg-gradient-to-r from-red-400 via-orange-400 to-red-400 bg-clip-text text-transparent mb-4'>
             Link Geçersiz
           </h1>
-          
-          <p className='text-gray-300 mb-6 leading-relaxed'>
-            {error}
-          </p>
-          
+
+          <p className='text-gray-300 mb-6 leading-relaxed'>{error}</p>
+
           <div className='space-y-4'>
             <button
               onClick={() => router.push(`/${locale}/auth`)}
@@ -197,7 +203,7 @@ export default function ResetPasswordPage() {
             >
               Yeni Şifre Sıfırlama Talebi
             </button>
-            
+
             <button
               onClick={() => router.push(`/${locale}/auth`)}
               className='w-full bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-gray-800 text-white py-3 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95'
@@ -212,31 +218,31 @@ export default function ResetPasswordPage() {
 
   if (success) {
     return (
-      <div 
+      <div
         className='min-h-screen flex items-center justify-center p-4 relative overflow-hidden'
         style={{
           background: `
             radial-gradient(ellipse at top, rgba(139, 69, 19, 0.1) 0%, transparent 50%),
             radial-gradient(ellipse at bottom, rgba(75, 0, 130, 0.15) 0%, transparent 50%),
             linear-gradient(135deg, #0a0a0f 0%, #1a0b2e 50%, #16213e 100%)
-          `
+          `,
         }}
       >
         {/* Mystical background elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-gold rounded-full animate-pulse"></div>
-          <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-lavender rounded-full animate-pulse delay-1000"></div>
-          <div className="absolute bottom-1/3 left-1/3 w-2 h-2 bg-purple-300 rounded-full animate-pulse delay-2000"></div>
+        <div className='absolute inset-0 overflow-hidden pointer-events-none'>
+          <div className='absolute top-1/4 left-1/4 w-2 h-2 bg-gold rounded-full animate-pulse'></div>
+          <div className='absolute top-1/3 right-1/3 w-1 h-1 bg-lavender rounded-full animate-pulse delay-1000'></div>
+          <div className='absolute bottom-1/3 left-1/3 w-2 h-2 bg-purple-300 rounded-full animate-pulse delay-2000'></div>
         </div>
 
         <div className='relative bg-gradient-to-br from-slate-900/90 via-purple-900/20 to-slate-800/90 backdrop-blur-xl rounded-2xl p-8 max-w-md w-full text-center border border-lavender/20 shadow-2xl'>
           {/* Success mystical symbol */}
-          <div className="relative mb-6">
-            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 border-2 border-green-400/30 rounded-full animate-spin-slow"></div>
-            <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 border border-green-400/40 rounded-full animate-pulse"></div>
+          <div className='relative mb-6'>
+            <div className='absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 border-2 border-green-400/30 rounded-full animate-spin-slow'></div>
+            <div className='absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 border border-green-400/40 rounded-full animate-pulse'></div>
             <CheckCircle className='h-16 w-16 text-green-400 mx-auto mb-4 relative z-10' />
           </div>
-          
+
           <h1 className='text-2xl font-bold bg-gradient-to-r from-green-400 via-gold to-green-400 bg-clip-text text-transparent mb-4'>
             🔮 Şifre Başarıyla Sıfırlandı! ✨
           </h1>
@@ -256,30 +262,30 @@ export default function ResetPasswordPage() {
   }
 
   return (
-    <div 
+    <div
       className='min-h-screen flex items-center justify-center p-4 relative overflow-hidden'
       style={{
         background: `
           radial-gradient(ellipse at top, rgba(139, 69, 19, 0.1) 0%, transparent 50%),
           radial-gradient(ellipse at bottom, rgba(75, 0, 130, 0.15) 0%, transparent 50%),
           linear-gradient(135deg, #0a0a0f 0%, #1a0b2e 50%, #16213e 100%)
-        `
+        `,
       }}
     >
       {/* Mystical background elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-gold rounded-full animate-pulse"></div>
-        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-lavender rounded-full animate-pulse delay-1000"></div>
-        <div className="absolute bottom-1/3 left-1/3 w-2 h-2 bg-purple-300 rounded-full animate-pulse delay-2000"></div>
-        <div className="absolute top-1/2 left-1/6 w-1 h-1 bg-blue-300 rounded-full animate-pulse delay-4000"></div>
-        <div className="absolute top-2/3 right-1/6 w-2 h-2 bg-lavender rounded-full animate-pulse delay-5000"></div>
+      <div className='absolute inset-0 overflow-hidden pointer-events-none'>
+        <div className='absolute top-1/4 left-1/4 w-2 h-2 bg-gold rounded-full animate-pulse'></div>
+        <div className='absolute top-1/3 right-1/3 w-1 h-1 bg-lavender rounded-full animate-pulse delay-1000'></div>
+        <div className='absolute bottom-1/3 left-1/3 w-2 h-2 bg-purple-300 rounded-full animate-pulse delay-2000'></div>
+        <div className='absolute top-1/2 left-1/6 w-1 h-1 bg-blue-300 rounded-full animate-pulse delay-4000'></div>
+        <div className='absolute top-2/3 right-1/6 w-2 h-2 bg-lavender rounded-full animate-pulse delay-5000'></div>
       </div>
 
       <div className='relative bg-gradient-to-br from-slate-900/90 via-purple-900/20 to-slate-800/90 backdrop-blur-xl rounded-2xl p-8 max-w-md w-full border border-lavender/20 shadow-2xl'>
         <div className='text-center mb-8'>
-          <div className="relative mb-6">
-            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 border-2 border-gold/30 rounded-full animate-spin-slow"></div>
-            <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 border border-lavender/40 rounded-full animate-pulse"></div>
+          <div className='relative mb-6'>
+            <div className='absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 border-2 border-gold/30 rounded-full animate-spin-slow'></div>
+            <div className='absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 border border-lavender/40 rounded-full animate-pulse'></div>
             <Lock className='h-12 w-12 text-gold mx-auto mb-4 relative z-10' />
           </div>
           <h1 className='text-2xl font-bold bg-gradient-to-r from-gold via-lavender to-purple-400 bg-clip-text text-transparent mb-2'>

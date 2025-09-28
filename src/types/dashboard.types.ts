@@ -39,6 +39,13 @@ export interface Reading {
   title?: string; // Okuma başlığı (opsiyonel)
   cost_credits?: number; // Okuma maliyeti (opsiyonel)
   spread_name?: string; // Kart yayılımı adı (opsiyonel)
+  format?: 'audio' | 'written' | 'simple'; // Okuma formatı (opsiyonel)
+  formatInfo?: { // Format bilgileri (opsiyonel)
+    label: string;
+    icon: string;
+    color: string;
+    iconComponent: string;
+  };
   // Eski uyumluluk için - geriye dönük uyumluluk
   type?: 'tarot' | 'numerology' | 'love' | 'simple' | 'general' | 'career';
   summary?: string; // Okuma özeti (opsiyonel)

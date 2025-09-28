@@ -27,7 +27,7 @@ Kullanım durumu:
 - ✅ Production-ready: Supabase Edge Functions ile
 */
 
-import "jsr:@supabase/functions-js/edge-runtime.d.ts";
+import 'jsr:@supabase/functions-js/edge-runtime.d.ts';
 import { createClient } from 'jsr:@supabase/supabase-js@2';
 
 interface EmailReportRequest {
@@ -62,7 +62,8 @@ Deno.serve(async (req: Request) => {
         status: 200,
         headers: {
           'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
+          'Access-Control-Allow-Headers':
+            'authorization, x-client-info, apikey, content-type',
           'Access-Control-Allow-Methods': 'POST, OPTIONS',
         },
       });
@@ -75,13 +76,28 @@ Deno.serve(async (req: Request) => {
       });
     }
 
-    const { reportId, recipients, reportType, format, subject, message }: EmailReportRequest = await req.json();
+    const {
+      reportId,
+      recipients,
+      reportType,
+      format,
+      subject,
+      message,
+    }: EmailReportRequest = await req.json();
 
-    if (!reportId || !recipients || !Array.isArray(recipients) || recipients.length === 0) {
-      return new Response(JSON.stringify({ error: 'Missing required fields' }), {
-        status: 400,
-        headers: { 'Content-Type': 'application/json' },
-      });
+    if (
+      !reportId ||
+      !recipients ||
+      !Array.isArray(recipients) ||
+      recipients.length === 0
+    ) {
+      return new Response(
+        JSON.stringify({ error: 'Missing required fields' }),
+        {
+          status: 400,
+          headers: { 'Content-Type': 'application/json' },
+        }
+      );
     }
 
     // Supabase client
@@ -107,18 +123,27 @@ Deno.serve(async (req: Request) => {
     const analyticsData = await fetchAnalyticsData(supabase);
 
     // Rapor dosyasını oluştur
-    const reportBlob = await generateReportFile(analyticsData, reportType, format);
+    const reportBlob = await generateReportFile(
+      analyticsData,
+      reportType,
+      format
+    );
 
     // Email gönder
     const emailResult = await sendEmail({
       recipients,
-      subject: subject || `${reportType} Raporu - ${new Date().toLocaleDateString('tr-TR')}`,
+      subject:
+        subject ||
+        `${reportType} Raporu - ${new Date().toLocaleDateString('tr-TR')}`,
       message: message || generateEmailTemplate(reportType, analyticsData),
       attachment: {
         filename: `rapor_${reportType}_${new Date().toISOString().split('T')[0]}.${format}`,
         content: reportBlob,
-        contentType: format === 'pdf' ? 'application/pdf' : 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
-      }
+        contentType:
+          format === 'pdf'
+            ? 'application/pdf'
+            : 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+      },
     });
 
     // Rapor gönderim kaydını güncelle
@@ -129,32 +154,37 @@ Deno.serve(async (req: Request) => {
           ...reportData.metadata,
           emailSent: true,
           emailSentAt: new Date().toISOString(),
-          recipients: recipients
-        }
+          recipients: recipients,
+        },
       })
       .eq('id', reportId);
 
-    return new Response(JSON.stringify({ 
-      success: true, 
-      message: 'Email sent successfully',
-      emailResult 
-    }), {
-      status: 200,
-      headers: { 
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
-      },
-    });
-
+    return new Response(
+      JSON.stringify({
+        success: true,
+        message: 'Email sent successfully',
+        emailResult,
+      }),
+      {
+        status: 200,
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+        },
+      }
+    );
   } catch (error) {
     console.error('Error sending report email:', error);
-    return new Response(JSON.stringify({ 
-      error: 'Internal server error',
-      details: error.message 
-    }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    return new Response(
+      JSON.stringify({
+        error: 'Internal server error',
+        details: error.message,
+      }),
+      {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      }
+    );
   }
 });
 
@@ -167,33 +197,47 @@ async function fetchAnalyticsData(supabase: any): Promise<ReportData> {
 
   const totalUsers = userStats?.length || 0;
   const today = new Date().toISOString().split('T')[0];
-  const dailyUsers = userStats?.filter((user: any) => 
-    user.created_at?.startsWith(today)
-  ).length || 0;
+  const dailyUsers =
+    userStats?.filter((user: any) => user.created_at?.startsWith(today))
+      .length || 0;
 
   // İşlem istatistikleri
   const { data: transactions } = await supabase
     .from('transactions')
     .select('type, amount, delta_credits, created_at');
 
-  const totalRevenue = transactions?.filter((t: any) => t.type === 'purchase')
-    .reduce((sum: number, t: any) => sum + (parseFloat(t.amount || '0')), 0) || 0;
+  const totalRevenue =
+    transactions
+      ?.filter((t: any) => t.type === 'purchase')
+      .reduce((sum: number, t: any) => sum + parseFloat(t.amount || '0'), 0) ||
+    0;
 
-  const creditsSold = transactions?.filter((t: any) => t.type === 'purchase')
-    .reduce((sum: number, t: any) => sum + (t.delta_credits || 0), 0) || 0;
+  const creditsSold =
+    transactions
+      ?.filter((t: any) => t.type === 'purchase')
+      .reduce((sum: number, t: any) => sum + (t.delta_credits || 0), 0) || 0;
 
-  const creditUsage = transactions?.filter((t: any) => t.type === 'reading')
-    .reduce((sum: number, t: any) => sum + Math.abs(t.delta_credits || 0), 0) || 0;
+  const creditUsage =
+    transactions
+      ?.filter((t: any) => t.type === 'reading')
+      .reduce(
+        (sum: number, t: any) => sum + Math.abs(t.delta_credits || 0),
+        0
+      ) || 0;
 
   // Okuma türleri
   const { data: readings } = await supabase
     .from('readings')
     .select('reading_type');
 
-  const readingTypes = readings?.reduce((acc: Record<string, number>, reading: any) => {
-    acc[reading.reading_type] = (acc[reading.reading_type] || 0) + 1;
-    return acc;
-  }, {} as Record<string, number>) || {};
+  const readingTypes =
+    readings?.reduce(
+      (acc: Record<string, number>, reading: any) => {
+        acc[reading.reading_type] = (acc[reading.reading_type] || 0) + 1;
+        return acc;
+      },
+      {} as Record<string, number>
+    ) || {};
 
   // Paket bilgileri
   const { data: packages } = await supabase
@@ -211,23 +255,30 @@ async function fetchAnalyticsData(supabase: any): Promise<ReportData> {
     creditUsage,
     dailyRevenue: [],
     userRegistrations: [],
-    packageSales: packages?.map((pkg: any, index: number) => ({
-      name: pkg.name || 'Bilinmeyen Paket',
-      value: Math.floor(Math.random() * 50) + 10,
-      color: ['#3B82F6', '#8B5CF6', '#06B6D4', '#F59E0B'][index % 4] || '#3B82F6'
-    })) || [],
+    packageSales:
+      packages?.map((pkg: any, index: number) => ({
+        name: pkg.name || 'Bilinmeyen Paket',
+        value: Math.floor(Math.random() * 50) + 10,
+        color:
+          ['#3B82F6', '#8B5CF6', '#06B6D4', '#F59E0B'][index % 4] || '#3B82F6',
+      })) || [],
     featureUsage: Object.entries(readingTypes).map(([type, count], index) => ({
-      name: type === 'love' ? 'Aşk Falı' : type === 'general' ? 'Genel Fal' : type,
+      name:
+        type === 'love' ? 'Aşk Falı' : type === 'general' ? 'Genel Fal' : type,
       value: count as number,
-      color: ['#10B981', '#F59E0B', '#EF4444'][index % 3] || '#10B981'
+      color: ['#10B981', '#F59E0B', '#EF4444'][index % 3] || '#10B981',
     })),
     revenueData: [],
-    userGrowthData: []
+    userGrowthData: [],
   };
 }
 
 // Rapor dosyası oluştur
-async function generateReportFile(data: ReportData, type: string, format: string): Promise<Blob> {
+async function generateReportFile(
+  data: ReportData,
+  type: string,
+  format: string
+): Promise<Blob> {
   // Bu fonksiyon client-side export-utils.ts'den çağrılacak
   // Edge Function'da doğrudan PDF/Excel oluşturamayız, bu yüzden
   // Client'tan gelen blob'u kullanacağız
@@ -262,11 +313,15 @@ async function sendEmail(params: {
     to: params.recipients.join(', '),
     subject: params.subject,
     html: params.message,
-    attachments: params.attachment ? [{
-      filename: params.attachment.filename,
-      content: params.attachment.content,
-      contentType: params.attachment.contentType,
-    }] : [],
+    attachments: params.attachment
+      ? [
+          {
+            filename: params.attachment.filename,
+            content: params.attachment.content,
+            contentType: params.attachment.contentType,
+          },
+        ]
+      : [],
   };
 
   // Burada gerçek SMTP gönderim kodu olacak
@@ -274,7 +329,7 @@ async function sendEmail(params: {
   return {
     success: true,
     messageId: `mock-${Date.now()}`,
-    recipients: params.recipients.length
+    recipients: params.recipients.length,
   };
 }
 
@@ -284,7 +339,7 @@ function generateEmailTemplate(reportType: string, data: ReportData): string {
     revenue: 'Gelir Raporu',
     users: 'Kullanıcı Raporu',
     transactions: 'İşlem Raporu',
-    comprehensive: 'Kapsamlı Rapor'
+    comprehensive: 'Kapsamlı Rapor',
   };
 
   return `
@@ -324,4 +379,3 @@ function generateEmailTemplate(reportType: string, data: ReportData): string {
     </html>
   `;
 }
-

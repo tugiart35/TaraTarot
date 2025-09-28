@@ -1,14 +1,14 @@
 /*
  * HOŞ GELDİN BÖLÜMÜ BİLEŞENİ
- * 
+ *
  * Dosya Amacı: Dashboard ana sayfasında kullanıcıyı karşılayan hoş geldin bölümü
- * 
+ *
  * Bağlı Dosyalar:
  * - src/utils/dashboard-utils.ts (formatDate, getMemberSince fonksiyonları)
  * - src/types/dashboard.types.ts (UserProfile tipi)
  * - src/hooks/useTranslations.ts (çeviri hook'u)
  * - src/app/[locale]/dashboard/page.tsx (dashboard ana sayfası)
- * 
+ *
  * Özellikler:
  * - Kullanıcı profil avatarı (baş harf)
  * - Kişiselleştirilmiş hoş geldin mesajı
@@ -16,9 +16,9 @@
  * - E-posta adresi gösterimi
  * - Admin etiketi (admin kullanıcılar için)
  * - Üyelik tarihi gösterimi
- * 
+ *
  * Durum: Aktif kullanımda, hata düzeltildi
- * 
+ *
  * Geliştirme Önerileri:
  * - Avatar için profil resmi desteği eklenebilir
  * - Kullanıcı istatistikleri gösterilebilir
@@ -53,7 +53,7 @@ export default function WelcomeSection({
             {/* Hoş geldin mesajı */}
             <h1 className='text-heading-1 text-gold mb-3'>
               {t('dashboard.welcome', 'Hoş geldiniz')},{' '}
-              {profile?.first_name && profile?.last_name 
+              {profile?.first_name && profile?.last_name
                 ? `${profile.first_name} ${profile.last_name}`
                 : user?.email?.split('@')[0] ||
                   t('dashboard.user', 'Mistik Kullanıcı')}{' '}

@@ -175,7 +175,7 @@ export const position1Meanings: RelationshipAnalysisPosition1Meaning[] = [
   },
   {
     id: 'wheel_of_fortune_ra_pos1',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 1,
     upright:
       'Kader Çarkı, ilişkinin mevcut durumda döngüler ve şans kapılarıyla hareket ettiğini söyler. Rastlantılar yön belirliyor. İpucu: Zamanlamaya dikkat edin.',
@@ -376,7 +376,13 @@ export const position1Meanings: RelationshipAnalysisPosition1Meaning[] = [
       'Kupa Dörtlüsü, ilişkinin mevcut durumda duygusal durgunluk ve tatminsizlik hissiyle sınandığını söyler. İlgisizlik enerjisi var. İpucu: Önünüze geleni fark edin.',
     reversed:
       'Ters Kupa Dörtlüsü, mevcut durumda yeni fırsatlara açılma arzusunu ama aynı zamanda tereddütü gösterir. Belirti: Kararsızlık, dalgınlık.',
-    keywords: ['durgunluk', 'tatminsizlik', 'ilgisizlik', 'fırsat', 'yenilenme'],
+    keywords: [
+      'durgunluk',
+      'tatminsizlik',
+      'ilgisizlik',
+      'fırsat',
+      'yenilenme',
+    ],
     context:
       'Mevcut durumda monotonluk öne çıkıyor. Yeni duygusal fırsatlar fark edilmeli. Aksi halde bağ yavaşlar.',
     group: 'Kupalar',
@@ -876,7 +882,7 @@ export const position1Meanings: RelationshipAnalysisPosition1Meaning[] = [
     group: 'Kılıçlar',
   },
   // RELATIONSHIP ANALYSIS (ra) – POSITION 1: "Mevcut Durum"
-// Set: Asalar (14 kart)
+  // Set: Asalar (14 kart)
 
   {
     id: 'ace_of_wands_ra_pos1',
@@ -990,7 +996,13 @@ export const position1Meanings: RelationshipAnalysisPosition1Meaning[] = [
       'Dokuz Değnek, mevcut durumda yorgun ama kararlı bir direnç olduğunu gösterir. Bağ hala ayakta. İpucu: Dayanıklılığınızı yumuşaklıkla birleştirin.',
     reversed:
       'Ters Dokuz Değnek, geçmiş yaraların şimdiye taşınarak savunmayı sertleştirdiğini söyler. Belirti: Aşırı tetikte olma.',
-    keywords: ['dayanıklılık', 'tetikte olma', 'savunma', 'yorgunluk', 'direnç'],
+    keywords: [
+      'dayanıklılık',
+      'tetikte olma',
+      'savunma',
+      'yorgunluk',
+      'direnç',
+    ],
     context:
       'Mevcut durumda bağ sınavlardan geçmiş ama ayakta. Yumuşak savunma şifa getirecek.',
     group: 'Asalar',
@@ -1072,54 +1084,55 @@ export function getRelationshipAnalysisPosition1Meaning(
 ): RelationshipAnalysisPosition1Meaning | null {
   // Kart ismi eşleştirmesi için hem İngilizce hem Türkçe isimleri kontrol et
   // Önce doğrudan eşleşme ara
-  let meaning = position1Meanings.find(m => 
-    m.card === card.name || 
-    m.card === card.nameTr ||
-    card.name === m.card ||
-    card.nameTr === m.card
+  let meaning = position1Meanings.find(
+    m =>
+      m.card === card.name ||
+      m.card === card.nameTr ||
+      card.name === m.card ||
+      card.nameTr === m.card
   );
-  
+
   if (meaning) {
     return meaning;
   }
-  
+
   // Kart ismi mapping'i kullanarak eşleştirme yap
   const cardNameMapping: { [key: string]: string } = {
     // Major Arcana - Türkçe
-    'Deli': 'The Fool',
-    'Büyücü': 'The Magician',
+    Deli: 'The Fool',
+    Büyücü: 'The Magician',
     'Yüksek Rahibe': 'The High Priestess',
-    'İmparatoriçe': 'The Empress',
-    'İmparator': 'The Emperor',
-    'Hierophant': 'The Hierophant',
-    'Aziz': 'The Hierophant',
-    'Aşıklar': 'The Lovers',
+    İmparatoriçe: 'The Empress',
+    İmparator: 'The Emperor',
+    Hierophant: 'The Hierophant',
+    Aziz: 'The Hierophant',
+    Aşıklar: 'The Lovers',
     'Savaş Arabası': 'The Chariot',
-    'Güç': 'Strength',
-    'Ermiş': 'The Hermit',
-    'Münzevi': 'The Hermit',
-    'Kader Çarkı': 'The Wheel of Fortune',
-    'Adalet': 'Justice',
+    Güç: 'Strength',
+    Ermiş: 'The Hermit',
+    Münzevi: 'The Hermit',
+    'Kader Çarkı': 'The The Wheel of Fortune',
+    Adalet: 'Justice',
     'Asılı Adam': 'The Hanged Man',
-    'Ölüm': 'Death',
-    'Ölçü': 'Temperance',
-    'Ölçülülük': 'Temperance',
-    'Şeytan': 'The Devil',
-    'Kule': 'The Tower',
-    'Yıldız': 'The Star',
-    'Ay': 'The Moon',
-    'Güneş': 'The Sun',
-    'Yargı': 'Judgement',
-    'Mahkeme': 'Judgement',
-    'Dünya': 'The World',
+    Ölüm: 'Death',
+    Ölçü: 'Temperance',
+    Ölçülülük: 'Temperance',
+    Şeytan: 'The Devil',
+    Kule: 'The Tower',
+    Yıldız: 'The Star',
+    Ay: 'The Moon',
+    Güneş: 'The Sun',
+    Yargı: 'Judgement',
+    Mahkeme: 'Judgement',
+    Dünya: 'The World',
   };
-  
+
   // Türkçe ismi İngilizce'ye çevir
   const englishName = cardNameMapping[card.nameTr] || card.nameTr;
-  
+
   // İngilizce isimle tekrar ara
   meaning = position1Meanings.find(m => m.card === englishName);
-  
+
   return meaning || null;
 }
 

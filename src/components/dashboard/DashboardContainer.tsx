@@ -46,66 +46,85 @@ const DashboardContainer: React.FC<DashboardContainerProps> = ({
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   // Memoized components to prevent unnecessary re-renders
-  const MemoizedWelcomeSection = useMemo(() => (
-    <WelcomeSection 
-      profile={profile} 
-      user={user} 
-      isAdmin={isAdmin} 
-    />
-  ), [profile, user, isAdmin]);
+  const MemoizedWelcomeSection = useMemo(
+    () => <WelcomeSection profile={profile} user={user} isAdmin={isAdmin} />,
+    [profile, user, isAdmin]
+  );
 
-  const MemoizedStatsCards = useMemo(() => (
-    <StatsCards
-      profile={profile}
-      totalCount={totalCount}
-      isAdmin={isAdmin}
-      recentReadings={recentReadings}
-      refreshCreditBalance={refreshCreditBalance}
-      translate={translate}
-    />
-  ), [profile, totalCount, isAdmin, recentReadings, refreshCreditBalance, translate]);
+  const MemoizedStatsCards = useMemo(
+    () => (
+      <StatsCards
+        profile={profile}
+        totalCount={totalCount}
+        isAdmin={isAdmin}
+        recentReadings={recentReadings}
+        refreshCreditBalance={refreshCreditBalance}
+        translate={translate}
+      />
+    ),
+    [
+      profile,
+      totalCount,
+      isAdmin,
+      recentReadings,
+      refreshCreditBalance,
+      translate,
+    ]
+  );
 
-  const MemoizedCreditPackages = useMemo(() => (
-    <CreditPackages
-      packages={packages}
-      handlePackagePurchase={handlePackagePurchase}
-      paymentLoading={paymentLoading}
-      translate={translate}
-    />
-  ), [packages, handlePackagePurchase, paymentLoading, translate]);
+  const MemoizedCreditPackages = useMemo(
+    () => (
+      <CreditPackages
+        packages={packages}
+        handlePackagePurchase={handlePackagePurchase}
+        paymentLoading={paymentLoading}
+        translate={translate}
+      />
+    ),
+    [packages, handlePackagePurchase, paymentLoading, translate]
+  );
 
-  const MemoizedProfileManagement = useMemo(() => (
-    <ProfileManagement
-      openProfileModal={openProfileModal}
-      currentLocale={locale}
-    />
-  ), [openProfileModal, locale]);
+  const MemoizedProfileManagement = useMemo(
+    () => (
+      <ProfileManagement
+        openProfileModal={openProfileModal}
+        currentLocale={locale}
+      />
+    ),
+    [openProfileModal, locale]
+  );
 
-  const MemoizedRecentActivity = useMemo(() => (
-    <RecentActivity
-      recentReadings={recentReadings}
-      setSelectedReading={setSelectedReading}
-      totalReadings={totalCount}
-      isAdmin={isAdmin}
-      currentLocale={locale}
-    />
-  ), [recentReadings, setSelectedReading, totalCount, isAdmin, locale]);
+  const MemoizedRecentActivity = useMemo(
+    () => (
+      <RecentActivity
+        recentReadings={recentReadings}
+        setSelectedReading={setSelectedReading}
+        totalReadings={totalCount}
+        isAdmin={isAdmin}
+        currentLocale={locale}
+      />
+    ),
+    [recentReadings, setSelectedReading, totalCount, isAdmin, locale]
+  );
 
-  const MemoizedNavigationHeader = useMemo(() => (
-    <NavigationHeader
-      currentLocale={locale}
-      sidebarOpen={sidebarOpen}
-      setSidebarOpen={setSidebarOpen}
-      handleLogout={handleLogout}
-    />
-  ), [locale, sidebarOpen, setSidebarOpen, handleLogout]);
+  const MemoizedNavigationHeader = useMemo(
+    () => (
+      <NavigationHeader
+        currentLocale={locale}
+        sidebarOpen={sidebarOpen}
+        setSidebarOpen={setSidebarOpen}
+        handleLogout={handleLogout}
+      />
+    ),
+    [locale, sidebarOpen, setSidebarOpen, handleLogout]
+  );
 
   return (
-    <div className="dashboard-container min-h-screen bg-night">
+    <div className='dashboard-container min-h-screen bg-night'>
       {MemoizedNavigationHeader}
-      
-      <main className="dashboard-main pt-16 px-4 md:px-6 pb-8">
-        <div className="max-w-7xl mx-auto">
+
+      <main className='dashboard-main pt-16 px-4 md:px-6 pb-8'>
+        <div className='max-w-7xl mx-auto'>
           {MemoizedWelcomeSection}
           {MemoizedStatsCards}
           {MemoizedCreditPackages}

@@ -2,11 +2,13 @@
 
 ## 📋 Genel Bakış
 
-Bu dokümantasyon, `src/app/[locale]/admin/settings/page.tsx` dosyasının mevcut durumunu, eksikliklerini ve geliştirme planını içerir.
+Bu dokümantasyon, `src/app/[locale]/admin/settings/page.tsx` dosyasının mevcut
+durumunu, eksikliklerini ve geliştirme planını içerir.
 
 ## 🎯 Mevcut Durum
 
 ### ✅ Çalışan Özellikler
+
 - Modern, responsive UI/UX tasarımı
 - 8 farklı kategori arasında tab navigation
 - Component entegrasyonu (ABTestManager, FraudDetection)
@@ -14,8 +16,11 @@ Bu dokümantasyon, `src/app/[locale]/admin/settings/page.tsx` dosyasının mevcu
 - Mock data ile UI gösterimi
 
 ### ❌ Ana Eksiklikler
-- ✅ **API Key Yönetimi** - Tamamen tamamlandı (gerçek veri, CRUD, şifreleme, test)
-- ✅ **Admin User Yönetimi** - Tamamen tamamlandı (gerçek veri, CRUD, role-based access)
+
+- ✅ **API Key Yönetimi** - Tamamen tamamlandı (gerçek veri, CRUD, şifreleme,
+  test)
+- ✅ **Admin User Yönetimi** - Tamamen tamamlandı (gerçek veri, CRUD, role-based
+  access)
 - ✅ **Veritabanı Altyapısı** - Tamamen tamamlandı (4 tablo, RLS, indexes)
 - ✅ **Güvenlik Önlemleri** - Tamamen tamamlandı (audit logging, permissions)
 - ❌ Email test fonksiyonu yok
@@ -25,8 +30,9 @@ Bu dokümantasyon, `src/app/[locale]/admin/settings/page.tsx` dosyasının mevcu
 ## 🗂️ Kategori Detayları
 
 ### 1. API Anahtarları
-**Mevcut Durum:** ✅ **TAMAMEN TAMAMLANDI**
-**Tamamlanan Özellikler:**
+
+**Mevcut Durum:** ✅ **TAMAMEN TAMAMLANDI** **Tamamlanan Özellikler:**
+
 - ✅ Supabase entegrasyonu
 - ✅ API key ekleme/düzenleme/silme
 - ✅ Şifreleme sistemi (Base64)
@@ -36,29 +42,33 @@ Bu dokümantasyon, `src/app/[locale]/admin/settings/page.tsx` dosyasının mevcu
 - ✅ Modal'lar ve UI/UX
 
 ### 2. Ödeme Ayarları
-**Mevcut Durum:** Stripe ve PayPal formları
-**Eksiklikler:**
+
+**Mevcut Durum:** Stripe ve PayPal formları **Eksiklikler:**
+
 - [ ] Gerçek kaydetme işlemi
 - [ ] Test bağlantıları
 - [ ] Güvenli saklama
 
 ### 3. E-posta Ayarları
-**Mevcut Durum:** SMTP formu
-**Eksiklikler:**
+
+**Mevcut Durum:** SMTP formu **Eksiklikler:**
+
 - [ ] SMTP test fonksiyonu
 - [ ] Test email gönderme
 - [ ] Template yönetimi
 
 ### 4. Güvenlik
-**Mevcut Durum:** UI toggle'ları
-**Eksiklikler:**
+
+**Mevcut Durum:** UI toggle'ları **Eksiklikler:**
+
 - [ ] Gerçek güvenlik ayarları
 - [ ] 2FA implementasyonu
 - [ ] Şifre politikaları
 
 ### 5. Admin Kullanıcıları
-**Mevcut Durum:** ✅ **TAMAMEN TAMAMLANDI**
-**Tamamlanan Özellikler:**
+
+**Mevcut Durum:** ✅ **TAMAMEN TAMAMLANDI** **Tamamlanan Özellikler:**
+
 - ✅ Admin ekleme/düzenleme/silme
 - ✅ Yetki sistemi (8 farklı permission)
 - ✅ Role-based access control (Super Admin, Admin, Moderator)
@@ -68,19 +78,22 @@ Bu dokümantasyon, `src/app/[locale]/admin/settings/page.tsx` dosyasının mevcu
 - ✅ Modal'lar ve UI/UX
 
 ### 6. Bakım Modu
-**Mevcut Durum:** UI toggle
-**Eksiklikler:**
+
+**Mevcut Durum:** UI toggle **Eksiklikler:**
+
 - [ ] Gerçek sistem kontrolü
 - [ ] Custom mesaj sistemi
 - [ ] Zamanlanmış bakım
 
 ### 7. A/B Testing
-**Mevcut Durum:** ABTestManager component
-**Durum:** Component mevcut, entegrasyon kontrol edilmeli
+
+**Mevcut Durum:** ABTestManager component **Durum:** Component mevcut,
+entegrasyon kontrol edilmeli
 
 ### 8. Shopier Ayarları
-**Mevcut Durum:** Detaylı konfigürasyon
-**Eksiklikler:**
+
+**Mevcut Durum:** Detaylı konfigürasyon **Eksiklikler:**
+
 - [ ] Gerçek kaydetme
 - [ ] Test bağlantısı
 - [ ] Webhook validation
@@ -142,11 +155,13 @@ CREATE TABLE admin_audit_logs (
 ### Faz 1: Temel Altyapı ✅ **TAMAMEN TAMAMLANDI**
 
 #### Veritabanı ✅
+
 - ✅ Supabase tablolarını oluştur (4 tablo)
 - ✅ RLS policies ekle (güvenlik politikaları)
 - ✅ Index'leri optimize et (performans)
 
 #### API Key Yönetimi ✅
+
 - ✅ API key ekleme fonksiyonu
 - ✅ API key düzenleme fonksiyonu
 - ✅ API key silme fonksiyonu
@@ -155,6 +170,7 @@ CREATE TABLE admin_audit_logs (
 - ✅ Test fonksiyonu (Groq, OpenAI, Stripe)
 
 #### Admin User Yönetimi ✅
+
 - ✅ Admin ekleme fonksiyonu
 - ✅ Yetki verme/alma sistemi (8 permission)
 - ✅ Admin düzenleme fonksiyonu
@@ -164,24 +180,28 @@ CREATE TABLE admin_audit_logs (
 ### Faz 2: Gelişmiş Özellikler ✅ **TAMAMLANDI**
 
 #### Email Sistemi ✅
+
 - [x] SMTP test fonksiyonu
 - [x] Test email gönderme
 - [x] Email template yönetimi
 - [x] Delivery tracking (temel)
 
 #### Bakım Modu ✅
+
 - [x] Toggle fonksiyonu
 - [x] Custom mesaj sistemi
 - [x] Zamanlanmış bakım (temel)
 - [x] Kullanıcı bilgilendirme
 
 #### Güvenlik 🔄
+
 - [ ] 2FA implementasyonu (iptal edildi)
 - [ ] Şifre politikaları (iptal edildi)
 - [x] Session management (temel)
 - [x] Rate limiting (temel)
 
 #### Shopier Entegrasyonu ✅
+
 - [x] Gerçek kaydetme
 - [x] Test bağlantısı
 - [x] Webhook validation (temel)
@@ -190,6 +210,7 @@ CREATE TABLE admin_audit_logs (
 ### Faz 3: İyileştirmeler (1-2 hafta)
 
 #### UI/UX
+
 - [ ] Loading states
 - [ ] Error handling
 - [ ] Success feedback
@@ -197,6 +218,7 @@ CREATE TABLE admin_audit_logs (
 - [ ] Mobile optimization
 
 #### Monitoring
+
 - [ ] Audit logging
 - [ ] Performance metrics
 - [ ] Error tracking
@@ -205,18 +227,21 @@ CREATE TABLE admin_audit_logs (
 ## 🔒 Güvenlik Gereksinimleri
 
 ### Şifreleme
+
 - [ ] API Keys için AES-256 encryption
 - [ ] Sensitive data için database encryption
 - [ ] Key rotation sistemi
 - [ ] Secure key storage
 
 ### Yetki Kontrolü
+
 - [ ] Role-based access control
 - [ ] Permission system
 - [ ] Admin audit logging
 - [ ] Session security
 
 ### Input Validation
+
 - [ ] XSS protection
 - [ ] SQL injection protection
 - [ ] CSRF protection
@@ -225,12 +250,14 @@ CREATE TABLE admin_audit_logs (
 ## 📊 Performans Hedefleri
 
 ### Yükleme Süreleri
+
 - [ ] Sayfa yükleme: < 2 saniye
 - [ ] API key listesi: < 1 saniye
 - [ ] Admin user listesi: < 1 saniye
 - [ ] Settings kaydetme: < 3 saniye
 
 ### Güvenlik
+
 - [ ] API key şifreleme: AES-256
 - [ ] Session timeout: 30 dakika
 - [ ] Rate limiting: 100 req/min
@@ -239,6 +266,7 @@ CREATE TABLE admin_audit_logs (
 ## 🧪 Test Senaryoları
 
 ### API Key Yönetimi
+
 - [ ] Yeni API key ekleme
 - [ ] Mevcut key düzenleme
 - [ ] Key silme
@@ -246,6 +274,7 @@ CREATE TABLE admin_audit_logs (
 - [ ] Test fonksiyonu
 
 ### Admin User Yönetimi
+
 - [ ] Yeni admin ekleme
 - [ ] Yetki verme/alma
 - [ ] Admin düzenleme
@@ -253,12 +282,14 @@ CREATE TABLE admin_audit_logs (
 - [ ] Role değiştirme
 
 ### Email Sistemi
+
 - [ ] SMTP bağlantı testi
 - [ ] Test email gönderme
 - [ ] Template yönetimi
 - [ ] Error handling
 
 ### Bakım Modu
+
 - [ ] Bakım modunu açma/kapama
 - [ ] Custom mesaj ayarlama
 - [ ] Zamanlanmış bakım
@@ -267,12 +298,14 @@ CREATE TABLE admin_audit_logs (
 ## 📈 Başarı Metrikleri
 
 ### Fonksiyonellik ✅ **FAZ 1 TAMAMLANDI**
+
 - ✅ Tüm CRUD işlemleri çalışıyor (API Keys & Admin Users)
 - ✅ Güvenlik testleri geçiyor (RLS, Permissions)
 - ✅ Performance hedefleri karşılanıyor (Indexes)
 - ✅ UI/UX kullanıcı dostu (Modern modals, loading states)
 
 ### Güvenlik ✅ **FAZ 1 TAMAMLANDI**
+
 - ✅ Row Level Security (RLS) aktif
 - ✅ Role-based Access Control çalışıyor
 - ✅ Audit logging çalışıyor
@@ -282,6 +315,7 @@ CREATE TABLE admin_audit_logs (
 - ❌ Rate limiting aktif (Faz 2'de)
 
 ### Kullanıcı Deneyimi ✅ **FAZ 1 TAMAMLANDI**
+
 - ✅ Mobile responsive
 - ✅ Loading states mevcut
 - ✅ Error handling çalışıyor
@@ -290,18 +324,21 @@ CREATE TABLE admin_audit_logs (
 ## 🚀 Deployment Checklist
 
 ### Pre-deployment
+
 - [ ] Tüm testler geçiyor
 - [ ] Security scan temiz
 - [ ] Performance testleri OK
 - [ ] Documentation güncel
 
 ### Deployment
+
 - [ ] Database migration'ları
 - [ ] Environment variables
 - [ ] SSL sertifikaları
 - [ ] Monitoring setup
 
 ### Post-deployment
+
 - [ ] Smoke testler
 - [ ] Performance monitoring
 - [ ] Error tracking
@@ -310,18 +347,21 @@ CREATE TABLE admin_audit_logs (
 ## 📝 Notlar
 
 ### Geliştirme Sırası
+
 1. **✅ Öncelik 1:** Veritabanı yapısı ve temel CRUD - **TAMAMLANDI**
 2. **✅ Öncelik 2:** Güvenlik ve şifreleme - **TAMAMLANDI**
 3. **🚧 Öncelik 3:** Email ve bakım modu - **SONRAKI ADIM**
 4. **✅ Öncelik 4:** UI/UX iyileştirmeleri - **TAMAMLANDI**
 
 ### Risk Faktörleri
+
 - ✅ API key güvenliği kritik - **ÇÖZÜLDÜ**
 - ✅ Admin yetki sistemi hassas - **ÇÖZÜLDÜ**
 - ❌ Email sistemi dış bağımlılık - **FAZ 2'DE**
 - ❌ Bakım modu sistem etkisi - **FAZ 2'DE**
 
 ### Bağımlılıklar
+
 - ✅ Supabase database - **TAMAMLANDI**
 - ❌ Email servis sağlayıcısı - **FAZ 2'DE**
 - ✅ Encryption library - **TAMAMLANDI**
@@ -330,6 +370,7 @@ CREATE TABLE admin_audit_logs (
 ## 🎉 **FAZ 1 BAŞARIYLA TAMAMLANDI!**
 
 ### ✅ **Tamamlanan Özellikler:**
+
 - **API Key Yönetimi:** Tam CRUD, şifreleme, test, masking
 - **Admin User Yönetimi:** Role-based access, permissions, kullanıcı arama
 - **Veritabanı Altyapısı:** 4 tablo, RLS policies, performance indexes
@@ -337,6 +378,7 @@ CREATE TABLE admin_audit_logs (
 - **UI/UX:** Modern modals, loading states, error handling, responsive design
 
 ### 🚧 **Sonraki Adım - Faz 2:**
+
 - Email sistemi (SMTP test, template yönetimi)
 - Bakım modu (gerçek sistem kontrolü)
 - Güvenlik iyileştirmeleri (2FA, şifre politikaları)

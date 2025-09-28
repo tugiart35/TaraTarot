@@ -151,7 +151,8 @@ export default function AdminDashboard() {
       }
 
       const dailyCreditUsage = (dailyTransactions || []).reduce(
-        (sum: number, transaction: any) => sum + Math.abs(transaction.delta_credits),
+        (sum: number, transaction: any) =>
+          sum + Math.abs(transaction.delta_credits),
         0
       );
 

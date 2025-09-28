@@ -73,7 +73,13 @@ export const position3Meanings: SituationAnalysisPositionMeaning[] = [
       'İmparatoriçe, gizli etkide beslenme ihtiyacı, konfor arayışı ve yaratıcılık açlığı bulunur. İçerideki şefkat enerjisi üretkenliği çağırıyor.',
     reversed:
       'Ters İmparatoriçe, öz-bakım eksikliği, onay bağımlılığı ya da rahat alana yapışma eğilimini gösterir. Duygusal doyum arayışı gizliden kararları etkiliyor olabilir.',
-    keywords: ['beslenme', 'yaratıcılık', 'konfor', 'öz-bakım', 'gizli ihtiyaç'],
+    keywords: [
+      'beslenme',
+      'yaratıcılık',
+      'konfor',
+      'öz-bakım',
+      'gizli ihtiyaç',
+    ],
     context: 'Bilinçaltı ve gizli faktörler',
     group: 'Majör Arkana',
   },
@@ -151,7 +157,7 @@ export const position3Meanings: SituationAnalysisPositionMeaning[] = [
   },
   {
     id: 'wheel_of_fortune_sa_pos3',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 3,
     upright:
       'Kader Çarkı, döngüler ve zamanlama inançlarının görünmez etkisini vurgular. “Zamanı gelince” fikri sabrı ve stratejiyi şekillendirir.',
@@ -289,7 +295,13 @@ export const position3Meanings: SituationAnalysisPositionMeaning[] = [
       'Dünya, tamamlanma arzusu ve bütünlenme ihtiyacının görünmez motivasyon sağladığını söyler. Döngüyü zarafetle kapatma isteği içten büyür.',
     reversed:
       'Ters Dünya, kapanmamış işler, kapanış korkusu ve eksik entegrasyon kalıplarını işaret eder. Bitirmeden yeniye geçmek içte huzursuzluk yaratır.',
-    keywords: ['tamamlanma', 'bütünlük', 'entegrasyon', 'kapanış', 'gizli tema'],
+    keywords: [
+      'tamamlanma',
+      'bütünlük',
+      'entegrasyon',
+      'kapanış',
+      'gizli tema',
+    ],
     context: 'Bilinçaltı ve gizli faktörler',
     group: 'Majör Arkana',
   },
@@ -458,7 +470,13 @@ export const position3Meanings: SituationAnalysisPositionMeaning[] = [
       'Kupa Kralı, duygusal olgunluk, sükûnet ve bilgece dengelemenin içeride bir çıpa olduğunu gösterir. Fırtınada bile merkezde kalma arzusu yön veriyor olabilir.',
     reversed:
       'Ters Kupa Kralı, duyguları bastırma, pasif-agresyon ya da kontrol ihtiyacının gizli etkisini anlatır. İfade edilmeyen hisler, dolaylı yollardan dışarı sızabilir.',
-    keywords: ['olgunluk', 'duygu yönetimi', 'bastırma', 'pasif-agresyon', 'gizli'],
+    keywords: [
+      'olgunluk',
+      'duygu yönetimi',
+      'bastırma',
+      'pasif-agresyon',
+      'gizli',
+    ],
     context: 'Bilinçaltı ve gizli faktörler',
     group: 'Kupalar',
   },
@@ -906,7 +924,13 @@ export const position3Meanings: SituationAnalysisPositionMeaning[] = [
       'Dokuz Kılıç, gece kaygısı, felaketleştirme ve “ya…” senaryolarının perde arkasında zihni kemirdiğini gösterir. Uykusuz düşünceler, gündüz işlevini gölgeleyebilir.\n\nBu kart, kaygıyı dışsallaştırmanın (yazmak/konuşmak) gücünü hatırlatır.',
     reversed:
       'Ters Dokuz Kılıç, kabusun sabahında gerçekliğin daha az korkutucu olduğunun fark edilmeye başlandığını söyler. Yine de zihinsel döngüler ara sıra geri dönebilir.\n\nBu kart, kanıt temelli çürütmeler ve bedenle regülasyonun döngüyü zayıflattığını vurgular.',
-    keywords: ['kaygı', 'uykusuzluk', 'felaketleştirme', 'çözülme', 'regülasyon'],
+    keywords: [
+      'kaygı',
+      'uykusuzluk',
+      'felaketleştirme',
+      'çözülme',
+      'regülasyon',
+    ],
     context: 'Gizli kaygı döngüsü ve gerçeklik testi ihtiyacı.',
     group: 'Kılıçlar',
   },
@@ -976,9 +1000,7 @@ export const position3Meanings: SituationAnalysisPositionMeaning[] = [
 export const getPosition3Meaning = (
   cardName: string
 ): SituationAnalysisPositionMeaning | undefined => {
-  return position3Meanings.find(
-    meaning => meaning.card === cardName
-  );
+  return position3Meanings.find(meaning => meaning.card === cardName);
 };
 
 // Ana index dosyası için uyumluluk fonksiyonu
@@ -1003,9 +1025,10 @@ export const getSituationAnalysisPosition3MeaningByCardName = (
 };
 
 // Tüm pozisyon 3 anlamlarını alma fonksiyonu
-export const getAllPosition3Meanings = (): SituationAnalysisPositionMeaning[] => {
-  return position3Meanings;
-};
+export const getAllPosition3Meanings =
+  (): SituationAnalysisPositionMeaning[] => {
+    return position3Meanings;
+  };
 
 // Pozisyon 3 anlamlarını filtreleme fonksiyonu
 export const getPosition3MeaningsByGroup = (

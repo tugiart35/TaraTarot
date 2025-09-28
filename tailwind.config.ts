@@ -19,11 +19,11 @@ const config: Config = {
     extend: {
       // Custom breakpoints for mobile optimization
       screens: {
-        'xs': '475px',
-        'sm': '640px',
-        'md': '768px',
-        'lg': '1024px',
-        'xl': '1280px',
+        xs: '475px',
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
         '2xl': '1536px',
       },
       // Mobile optimization utilities
@@ -119,24 +119,24 @@ const config: Config = {
         'text-celestial': '#e0e7ff',
         'text-mystic': '#c4b5fd',
       },
-      
+
       // Enhanced typography with mystical fonts
       fontFamily: {
         mystical: ['Playfair Display', 'serif'], // For headings and mystical elements
-        'mystic': ['Cinzel', 'serif'], // Dashboard specific font
+        mystic: ['Cinzel', 'serif'], // Dashboard specific font
         body: ['Inter', 'system-ui', 'sans-serif'], // For body text
         mono: ['JetBrains Mono', 'monospace'], // For code/technical elements
       },
-      
+
       // Enhanced mystical animations
       animation: {
         'mystical-pulse': 'mystical-pulse 3s ease-in-out infinite',
-        'float': 'float 6s ease-in-out infinite',
-        'glow': 'glow 2s ease-in-out infinite alternate',
-        'shimmer': 'shimmer 2s ease-in-out infinite',
-        'fadeIn': 'fadeIn 0.5s ease-out',
-        'slideUp': 'slideUp 0.6s ease-out',
-        'scaleIn': 'scaleIn 0.4s ease-out',
+        float: 'float 6s ease-in-out infinite',
+        glow: 'glow 2s ease-in-out infinite alternate',
+        shimmer: 'shimmer 2s ease-in-out infinite',
+        fadeIn: 'fadeIn 0.5s ease-out',
+        slideUp: 'slideUp 0.6s ease-out',
+        scaleIn: 'scaleIn 0.4s ease-out',
         'spin-slow': 'spin 20s linear infinite',
         'star-pop': 'starPop 0.5s cubic-bezier(0.4,0,0.2,1)',
         'ethereal-drift': 'etherealDrift 8s ease-in-out infinite',
@@ -145,48 +145,56 @@ const config: Config = {
         'card-flip': 'cardFlip 0.8s ease-in-out',
         'mystical-entrance': 'mysticalEntrance 1s ease-out',
       },
-      
+
       // Enhanced keyframes for mystical effects
       keyframes: {
         'mystical-pulse': {
           '0%, 100%': {
-            boxShadow: '0 0 20px rgba(168, 85, 247, 0.4), 0 0 40px rgba(251, 191, 36, 0.2)',
+            boxShadow:
+              '0 0 20px rgba(168, 85, 247, 0.4), 0 0 40px rgba(251, 191, 36, 0.2)',
           },
           '50%': {
-            boxShadow: '0 0 30px rgba(168, 85, 247, 0.6), 0 0 60px rgba(251, 191, 36, 0.4)',
+            boxShadow:
+              '0 0 30px rgba(168, 85, 247, 0.6), 0 0 60px rgba(251, 191, 36, 0.4)',
           },
         },
-        'etherealDrift': {
+        etherealDrift: {
           '0%, 100%': { transform: 'translateY(0) translateX(0) rotate(0deg)' },
-          '25%': { transform: 'translateY(-10px) translateX(5px) rotate(1deg)' },
-          '50%': { transform: 'translateY(-5px) translateX(-5px) rotate(-1deg)' },
-          '75%': { transform: 'translateY(-15px) translateX(3px) rotate(0.5deg)' },
+          '25%': {
+            transform: 'translateY(-10px) translateX(5px) rotate(1deg)',
+          },
+          '50%': {
+            transform: 'translateY(-5px) translateX(-5px) rotate(-1deg)',
+          },
+          '75%': {
+            transform: 'translateY(-15px) translateX(3px) rotate(0.5deg)',
+          },
         },
-        'crystalRotate': {
+        crystalRotate: {
           '0%': { transform: 'rotate(0deg) scale(1)' },
           '50%': { transform: 'rotate(180deg) scale(1.05)' },
           '100%': { transform: 'rotate(360deg) scale(1)' },
         },
-        'moonPhase': {
+        moonPhase: {
           '0%': { opacity: '0.6', transform: 'scale(1)' },
           '50%': { opacity: '1', transform: 'scale(1.1)' },
           '100%': { opacity: '0.6', transform: 'scale(1)' },
         },
-        'cardFlip': {
+        cardFlip: {
           '0%': { transform: 'rotateY(0deg)' },
           '50%': { transform: 'rotateY(-90deg) scale(1.05)' },
           '100%': { transform: 'rotateY(0deg)' },
         },
-        'mysticalEntrance': {
-          '0%': { 
-            opacity: '0', 
+        mysticalEntrance: {
+          '0%': {
+            opacity: '0',
             transform: 'translateY(30px) scale(0.9)',
-            filter: 'blur(10px)'
+            filter: 'blur(10px)',
           },
-          '100%': { 
-            opacity: '1', 
+          '100%': {
+            opacity: '1',
             transform: 'translateY(0) scale(1)',
-            filter: 'blur(0px)'
+            filter: 'blur(0px)',
           },
         },
         float: {
@@ -220,35 +228,41 @@ const config: Config = {
           '100%': { transform: 'scale(1)' },
         },
       },
-      
+
       // Enhanced background images and patterns
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'mystical-pattern': 'radial-gradient(circle at 1px 1px, rgba(168, 85, 247, 0.15) 1px, transparent 0)',
-        'star-field': 'radial-gradient(2px 2px at 20px 30px, #fbbf24, transparent), radial-gradient(2px 2px at 40px 70px, #a855f7, transparent)',
-        'ethereal-mist': 'linear-gradient(45deg, rgba(168, 85, 247, 0.1), rgba(251, 191, 36, 0.1))',
+        'gradient-conic':
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'mystical-pattern':
+          'radial-gradient(circle at 1px 1px, rgba(168, 85, 247, 0.15) 1px, transparent 0)',
+        'star-field':
+          'radial-gradient(2px 2px at 20px 30px, #fbbf24, transparent), radial-gradient(2px 2px at 40px 70px, #a855f7, transparent)',
+        'ethereal-mist':
+          'linear-gradient(45deg, rgba(168, 85, 247, 0.1), rgba(251, 191, 36, 0.1))',
       },
-      
+
       // Enhanced box shadows for mystical effects
       boxShadow: {
-        'mystical': '0 0 30px rgba(168, 85, 247, 0.3), 0 0 60px rgba(251, 191, 36, 0.1)',
-        'ethereal': '0 10px 40px rgba(168, 85, 247, 0.2), 0 0 20px rgba(251, 191, 36, 0.1)',
-        'golden': '0 0 20px rgba(251, 191, 36, 0.4)',
-        'cosmic': '0 0 25px rgba(168, 85, 247, 0.4)',
-        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+        mystical:
+          '0 0 30px rgba(168, 85, 247, 0.3), 0 0 60px rgba(251, 191, 36, 0.1)',
+        ethereal:
+          '0 10px 40px rgba(168, 85, 247, 0.2), 0 0 20px rgba(251, 191, 36, 0.1)',
+        golden: '0 0 20px rgba(251, 191, 36, 0.4)',
+        cosmic: '0 0 25px rgba(168, 85, 247, 0.4)',
+        glass: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
       },
-      
+
       // Enhanced border radius for organic feel
       borderRadius: {
-        'mystical': '1.618rem', // Golden ratio
-        'organic': '60% 40% 40% 20% / 70% 50% 30% 25%',
+        mystical: '1.618rem', // Golden ratio
+        organic: '60% 40% 40% 20% / 70% 50% 30% 25%',
       },
-      
+
       // Enhanced backdrop blur
       backdropBlur: {
-        'mystical': '16px',
-        'ethereal': '24px',
+        mystical: '16px',
+        ethereal: '24px',
       },
     },
   },

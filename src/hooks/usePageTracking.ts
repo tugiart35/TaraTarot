@@ -66,7 +66,9 @@ export const usePageTracking = () => {
           session_id: sessionIdRef.current,
           view_duration: viewDuration,
         };
-        if (document.referrer) pageViewData.referrer = document.referrer;
+        if (document.referrer) {
+          pageViewData.referrer = document.referrer;
+        }
 
         // Supabase'e kaydet - page_views tablosu henüz oluşturulmamış
         // TODO: page_views tablosu oluşturulduğunda aktif et
@@ -81,7 +83,7 @@ export const usePageTracking = () => {
           console.log('📊 [PAGE TRACKING]', pageViewData);
         }
         */
-        
+
         // Geçici olarak sadece development modunda log
         if (process.env.NODE_ENV === 'development') {
           console.log('📊 [PAGE TRACKING - DISABLED]', pageViewData);
@@ -117,7 +119,9 @@ export const usePageTracking = () => {
         view_duration: Math.round((Date.now() - startTimeRef.current) / 1000),
         ...customData,
       };
-      if (document.referrer) pageViewData.referrer = document.referrer;
+      if (document.referrer) {
+        pageViewData.referrer = document.referrer;
+      }
 
       // Supabase'e kaydet - page_views tablosu henüz oluşturulmamış
       // TODO: page_views tablosu oluşturulduğunda aktif et

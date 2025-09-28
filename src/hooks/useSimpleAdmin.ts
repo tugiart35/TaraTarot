@@ -10,7 +10,8 @@ interface AdminUser extends AuthUser {
 }
 
 export function useSimpleAdmin() {
-  const { user, loading, error, isAuthenticated, clearError } = useAuthBase<AdminUser>();
+  const { user, loading, error, isAuthenticated, clearError } =
+    useAuthBase<AdminUser>();
   const [admin, setAdmin] = useState<AdminUser | null>(null);
 
   useEffect(() => {
@@ -26,7 +27,7 @@ export function useSimpleAdmin() {
           isAuthenticated: true,
           loginTime: new Date().toISOString(),
         };
-        
+
         setAdmin(adminUser);
         console.log('Admin girişi onaylandı:', user.email);
       } else {

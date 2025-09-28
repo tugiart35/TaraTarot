@@ -1,6 +1,6 @@
 /*
  * useRememberMe Hook
- * 
+ *
  * Bu hook "Beni hatırla" işlevselliğini yönetir.
  * Supabase session ile entegre çalışır.
  */
@@ -16,7 +16,9 @@ export function useRememberMe() {
     // Load saved remember me data from Supabase session
     const loadRememberMeData = async () => {
       try {
-        const { data: { session } } = await supabase.auth.getSession();
+        const {
+          data: { session },
+        } = await supabase.auth.getSession();
         if (session?.user?.email) {
           setRememberMe(true);
           setSavedEmail(session.user.email);
@@ -32,7 +34,7 @@ export function useRememberMe() {
   const updateRememberMe = useCallback((email: string, remember: boolean) => {
     setRememberMe(remember);
     setSavedEmail(email);
-    
+
     // Supabase session zaten email'i saklıyor, ekstra storage gerekmez
     if (!remember) {
       // Eğer remember me false ise, session'ı temizle
@@ -43,14 +45,16 @@ export function useRememberMe() {
   const clearRememberMe = useCallback(async () => {
     setRememberMe(false);
     setSavedEmail('');
-    
+
     // Supabase session'ı temizle
     await supabase.auth.signOut();
   }, []);
 
   const loadSavedEmail = useCallback(async () => {
     try {
-      const { data: { session } } = await supabase.auth.getSession();
+      const {
+        data: { session },
+      } = await supabase.auth.getSession();
       if (session?.user?.email) {
         setRememberMe(true);
         setSavedEmail(session.user.email);

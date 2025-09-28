@@ -1,6 +1,6 @@
 /*
  * Rate Limiting Utility
- * 
+ *
  * Bu dosya API endpoint'leri için ortak rate limiting utility sağlar.
  * DRY principle uygulayarak tekrarlanan rate limiting kodlarını önler.
  */
@@ -26,7 +26,7 @@ export class RateLimiter {
   ): boolean {
     const now = Date.now();
     const key = `${endpoint}:${ip}`;
-    
+
     // Store'u al veya oluştur
     let store = this.stores.get(endpoint);
     if (!store) {
@@ -52,13 +52,17 @@ export class RateLimiter {
   /**
    * Rate limit headers oluştur
    */
-  static getHeaders(limit: number, remaining: number, resetTime: number): Headers {
+  static getHeaders(
+    limit: number,
+    remaining: number,
+    resetTime: number
+  ): Headers {
     const headers = new Headers();
-    
+
     headers.set('X-RateLimit-Limit', limit.toString());
     headers.set('X-RateLimit-Remaining', remaining.toString());
     headers.set('X-RateLimit-Reset', new Date(resetTime).toISOString());
-    
+
     if (remaining === 0) {
       const retryAfter = Math.ceil((resetTime - Date.now()) / 1000);
       headers.set('Retry-After', retryAfter.toString());
@@ -77,12 +81,14 @@ export class RateLimiter {
   ): NextResponse {
     const retryAfter = Math.ceil(windowMs / 1000);
     const resetTime = Date.now() + windowMs;
-    
+
     return NextResponse.json(
       {
         success: false,
         error: 'RATE_LIMIT_EXCEEDED',
-        message: customMessage || `Çok fazla istek. ${limit} istek/${retryAfter} saniye limiti aşıldı.`,
+        message:
+          customMessage ||
+          `Çok fazla istek. ${limit} istek/${retryAfter} saniye limiti aşıldı.`,
         retryAfter: retryAfter,
       },
       {
@@ -97,14 +103,14 @@ export class RateLimiter {
    */
   static cleanupExpiredEntries(): void {
     const now = Date.now();
-    
+
     for (const [endpoint, store] of this.stores) {
       for (const [key, entry] of store) {
         if (now > entry.resetTime) {
           store.delete(key);
         }
       }
-      
+
       // Boş store'ları kaldır
       if (store.size === 0) {
         this.stores.delete(endpoint);
@@ -115,25 +121,29 @@ export class RateLimiter {
   /**
    * Store istatistikleri
    */
-  static getStats(): { [endpoint: string]: { totalEntries: number; activeEntries: number } } {
-    const stats: { [endpoint: string]: { totalEntries: number; activeEntries: number } } = {};
+  static getStats(): {
+    [endpoint: string]: { totalEntries: number; activeEntries: number };
+  } {
+    const stats: {
+      [endpoint: string]: { totalEntries: number; activeEntries: number };
+    } = {};
     const now = Date.now();
-    
+
     for (const [endpoint, store] of this.stores) {
       let activeEntries = 0;
-      
+
       for (const [_, entry] of store) {
         if (now <= entry.resetTime) {
           activeEntries++;
         }
       }
-      
+
       stats[endpoint] = {
         totalEntries: store.size,
         activeEntries,
       };
     }
-    
+
     return stats;
   }
 
@@ -147,7 +157,10 @@ export class RateLimiter {
 
 // Otomatik cleanup (production'da dikkatli kullan)
 if (process.env.NODE_ENV === 'development') {
-  setInterval(() => {
-    RateLimiter.cleanupExpiredEntries();
-  }, 5 * 60 * 1000); // 5 dakikada bir temizle
+  setInterval(
+    () => {
+      RateLimiter.cleanupExpiredEntries();
+    },
+    5 * 60 * 1000
+  ); // 5 dakikada bir temizle
 }

@@ -158,12 +158,12 @@ export function getProblemSolvingMeaningByCardAndPosition(
 
   // Kart ismi mapping'ini al
   const cardNameMapping = getCardNameMappingSync();
-  
+
   // Kart ismini İngilizce'ye çevir
   const englishCardName = cardNameMapping[card.nameTr] || card.nameTr;
   console.log('🔄 Card name mapping:', {
     original: card.nameTr,
-    mapped: englishCardName
+    mapped: englishCardName,
   });
 
   // Pozisyon özel anlamları kontrol et
@@ -171,37 +171,46 @@ export function getProblemSolvingMeaningByCardAndPosition(
 
   switch (position) {
     case 1:
-      positionMeaning = getProblemSolvingPosition1MeaningByCardName(englishCardName);
+      positionMeaning =
+        getProblemSolvingPosition1MeaningByCardName(englishCardName);
       break;
     case 2:
-      positionMeaning = getProblemSolvingPosition2MeaningByCardName(englishCardName);
+      positionMeaning =
+        getProblemSolvingPosition2MeaningByCardName(englishCardName);
       break;
     case 3:
-      positionMeaning = getProblemSolvingPosition3MeaningByCardName(englishCardName);
+      positionMeaning =
+        getProblemSolvingPosition3MeaningByCardName(englishCardName);
       break;
     case 4:
-      positionMeaning = getProblemSolvingPosition4MeaningByCardName(englishCardName);
+      positionMeaning =
+        getProblemSolvingPosition4MeaningByCardName(englishCardName);
       break;
     case 5:
-      positionMeaning = getProblemSolvingPosition5MeaningByCardName(englishCardName);
+      positionMeaning =
+        getProblemSolvingPosition5MeaningByCardName(englishCardName);
       break;
     case 6:
-      positionMeaning = getProblemSolvingPosition6MeaningByCardName(englishCardName);
+      positionMeaning =
+        getProblemSolvingPosition6MeaningByCardName(englishCardName);
       break;
     case 7:
-      positionMeaning = getProblemSolvingPosition7MeaningByCardName(englishCardName);
+      positionMeaning =
+        getProblemSolvingPosition7MeaningByCardName(englishCardName);
       break;
     case 8:
-      positionMeaning = getProblemSolvingPosition8MeaningByCardName(englishCardName);
+      positionMeaning =
+        getProblemSolvingPosition8MeaningByCardName(englishCardName);
       break;
     case 9:
-      positionMeaning = getProblemSolvingPosition9MeaningByCardName(englishCardName);
+      positionMeaning =
+        getProblemSolvingPosition9MeaningByCardName(englishCardName);
       break;
     case 10:
-      positionMeaning = getProblemSolvingPosition10MeaningByCardName(englishCardName);
+      positionMeaning =
+        getProblemSolvingPosition10MeaningByCardName(englishCardName);
       break;
   }
-
 
   if (positionMeaning) {
     const result = {
@@ -230,8 +239,11 @@ export function getProblemSolvingMeaningByCardAndPosition(
     upright: isReversed ? baseMeaning.reversed : baseMeaning.upright,
     reversed: isReversed ? baseMeaning.upright : baseMeaning.reversed,
   };
-  
-  console.log('⚠️ Returning fallback meaning:', fallbackResult.upright.substring(0, 50) + '...');
+
+  console.log(
+    '⚠️ Returning fallback meaning:',
+    fallbackResult.upright.substring(0, 50) + '...'
+  );
   return fallbackResult;
 }
 

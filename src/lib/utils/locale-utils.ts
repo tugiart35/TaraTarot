@@ -1,6 +1,6 @@
 /*
  * Locale Utility Functions
- * 
+ *
  * Bu dosya dil belirleme işlemleri için ortak utility fonksiyonları sağlar.
  * DRY principle uygulayarak tekrarlanan locale belirleme kodlarını önler.
  */
@@ -79,27 +79,29 @@ export function getLocalLanguageName(locale: SupportedLocale): string {
 /**
  * Request'ten locale çıkar (search params, path, cookie)
  */
-export function extractLocaleFromRequest(request: NextRequest): SupportedLocale {
+export function extractLocaleFromRequest(
+  request: NextRequest
+): SupportedLocale {
   // Search params'den locale al
   const searchParams = new URL(request.url).searchParams;
   const paramLocale = searchParams.get('locale');
   if (paramLocale && isSupportedLocale(paramLocale)) {
     return paramLocale;
   }
-  
+
   // Path'den locale çıkar
   const pathSegments = request.nextUrl.pathname.split('/');
   const pathLocale = pathSegments[1];
   if (pathLocale && isSupportedLocale(pathLocale)) {
     return pathLocale;
   }
-  
+
   // Cookie'den locale al
   const cookieLocale = request.cookies.get('NEXT_LOCALE')?.value;
   if (cookieLocale && isSupportedLocale(cookieLocale)) {
     return cookieLocale;
   }
-  
+
   return 'tr'; // default
 }
 
@@ -109,11 +111,11 @@ export function extractLocaleFromRequest(request: NextRequest): SupportedLocale 
 export function extractLocaleFromPathname(pathname: string): SupportedLocale {
   const pathSegments = pathname.split('/');
   const locale = pathSegments[1];
-  
+
   if (locale && isSupportedLocale(locale)) {
     return locale;
   }
-  
+
   return 'tr'; // default
 }
 
@@ -122,10 +124,10 @@ export function extractLocaleFromPathname(pathname: string): SupportedLocale {
  */
 export function getLocaleFromCookie(request: NextRequest): SupportedLocale {
   const cookieLocale = request.cookies.get('NEXT_LOCALE')?.value;
-  
+
   if (cookieLocale && isSupportedLocale(cookieLocale)) {
     return cookieLocale;
   }
-  
+
   return 'tr'; // default
 }

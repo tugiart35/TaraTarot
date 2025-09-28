@@ -38,7 +38,8 @@ export const position4Meanings: MarriagePositionMeaning[] = [
     reversed:
       'Ters Deli, bağlanma konusunda kararsızlık ve hazır olmama halini işaret eder. Taraflardan biri sorumluluk almaktan çekiniyorsa, bağlanma süreci ertelenebilir ya da yüzeyde kalabilir.',
     keywords: ['özgürlük', 'başlangıç', 'cesaret', 'sorumluluk'],
-    context: 'Bağ kurma isteği cesaretle doğar, fakat sorumluluk bilinciyle dengelenmeli.',
+    context:
+      'Bağ kurma isteği cesaretle doğar, fakat sorumluluk bilinciyle dengelenmeli.',
     group: 'Majör Arkana',
   },
   {
@@ -151,14 +152,15 @@ export const position4Meanings: MarriagePositionMeaning[] = [
   },
   {
     id: 'wheel_of_fortune_ma_pos4',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 4,
     upright:
       'Kader Çarkı, bağlanma isteğinin dönemin koşullarına göre şekilleneceğini işaret eder. Uyum ve doğru zamanlama ile bağ, kendiliğinden güçlenir.',
     reversed:
       'Ters Çark, bağlanma isteğinin belirsizlik ya da kontrolsüz değişimlerle zorlanabileceğini gösterir. Taraflardan biri zamana güvenmekte zorlanabilir.',
     keywords: ['dönüşüm', 'zamanlama', 'uyum', 'kader'],
-    context: 'Bağlanma, doğru zaman ve koşullar bir araya geldiğinde gerçekleşir.',
+    context:
+      'Bağlanma, doğru zaman ve koşullar bir araya geldiğinde gerçekleşir.',
     group: 'Majör Arkana',
   },
   {
@@ -293,703 +295,713 @@ export const position4Meanings: MarriagePositionMeaning[] = [
     context: 'Bağlanma, tamamlanmış bir döngüyle kalıcı olur.',
     group: 'Majör Arkana',
   },
-      // =========================
-      // CUPS — KUPALAR (14)
-      // =========================
-      {
-        id: 'ace_of_cups_ma_pos4',
-        card: 'Ace of Cups',
-        position: 4,
-        upright:
-          'Yeni bir duygusal başlangıç, kalplerin açılması ve birbirine bağlanma isteği güçlüdür. İlişkiyi saf bir sevgi ve duygusal akış besler. Bağlanma için uygun zemin doğuyor.',
-        reversed:
-          'Duygular bastırıldığında ya da korkular öne çıktığında bağlanma gecikebilir. Taraflardan biri hislerini saklarsa, bağ derinleşmeden yüzeyde kalır.',
-        keywords: ['açılım', 'sevgi', 'bağ', 'duygu', 'yeni başlangıç'],
-        context: 'Bağlanma arzusu taze ve güçlü, ama duyguların saklanmaması gerekiyor.',
-        group: 'Kupalar',
-      },
-      {
-        id: 'two_of_cups_ma_pos4',
-        card: 'Two of Cups',
-        position: 4,
-        upright:
-          'Karşılıklı sevgi ve denge öne çıkar. İki tarafın da bağlanmaya gönüllü olması, ilişkiye güçlü bir ortaklık enerjisi katar.',
-        reversed:
-          'Taraflardan biri mesafe koyabilir ya da beklentilerde uyumsuzluk oluşabilir. Bu durumda bağlanma niyeti olsa da eşleşme dengesiz kalır.',
-        keywords: ['karşılıklılık', 'uyum', 'ilişki', 'bağ', 'denge'],
-        context: 'Bağlanma isteği karşılıklı olabilir, ama uyumu sürekli korumak şarttır.',
-        group: 'Kupalar',
-      },
-      {
-        id: 'three_of_cups_ma_pos4',
-        card: 'Three of Cups',
-        position: 4,
-        upright:
-          'Paylaşım ve kutlama enerjisi bağlanmaya alan açar. Sosyal destek ve dostça ortam, ilişkinin bağını güçlendirir.',
-        reversed:
-          'Dış etkiler ya da üçüncü kişilerin müdahalesi bağlanmayı zorlaştırabilir. Tarafların kendi bağına odaklanması gerekir.',
-        keywords: ['kutlama', 'paylaşım', 'topluluk', 'bağ', 'neşe'],
-        context: 'Bağlanma isteği neşeyle besleniyor, ama üçüncü kişilere dikkat edilmeli.',
-        group: 'Kupalar',
-      },
-      {
-        id: 'four_of_cups_ma_pos4',
-        card: 'Four of Cups',
-        position: 4,
-        upright:
-          'Biri duygusal olarak kapalı ya da ilgisiz görünebilir. Bağlanma isteği olsa da fark edilmesi gereken bir fırsat vardır.',
-        reversed:
-          'Kapanma hali çözülürse, yeni bir duygusal uyanış bağlanmaya zemin hazırlar. İçsel tatminsizlikten çıkış önemlidir.',
-        keywords: ['ilgisizlik', 'tatminsizlik', 'içe dönüş', 'bağlanma', 'uyanış'],
-        context: 'Bağlanma arzusu görünmez olabilir, farkındalıkla güçlenebilir.',
-        group: 'Kupalar',
-      },
-      {
-        id: 'five_of_cups_ma_pos4',
-        card: 'Five of Cups',
-        position: 4,
-        upright:
-          'Geçmiş kayıplar ve hayal kırıklıkları bağlanmaya gölge düşürebilir. Ancak elde olan bağa odaklanmak dengeyi getirir.',
-        reversed:
-          'Yas süreci geride bırakıldığında bağlanma için umut yeniden doğar. Olumsuz duygulardan iyileşme önemlidir.',
-        keywords: ['kayıp', 'üzüntü', 'bağlanma', 'şifa', 'umut'],
-        context: 'Bağlanma isteği geçmiş yaraları onarmakla güçlenebilir.',
-        group: 'Kupalar',
-      },
-      {
-        id: 'six_of_cups_ma_pos4',
-        card: 'Six of Cups',
-        position: 4,
-        upright:
-          'Saf, çocukça bir samimiyetle bağlanma mümkündür. Geçmişten gelen güven duygusu bağı besler.',
-        reversed:
-          'Geçmişe aşırı tutunma bağlanmayı engelleyebilir. İlişkinin bugüne odaklanması gerekir.',
-        keywords: ['nostalji', 'samimiyet', 'güven', 'çocukluk', 'bağ'],
-        context: 'Bağlanma isteği saf ve samimi, ama geçmişte kalmamak gerekir.',
-        group: 'Kupalar',
-      },
-      {
-        id: 'seven_of_cups_ma_pos4',
-        card: 'Seven of Cups',
-        position: 4,
-        upright:
-          'Hayaller ve seçenekler bağlanmayı zorlaştırabilir. Karar netleşirse bağ güçlenir.',
-        reversed:
-          'Netlik sağlandığında, bağlanma isteği dağılmadan somut hale gelir. Hayalden gerçeğe geçiş önemlidir.',
-        keywords: ['seçenek', 'hayal', 'belirsizlik', 'bağlanma', 'karar'],
-        context: 'Bağlanma için netlik ve gerçekçilik şarttır.',
-        group: 'Kupalar',
-      },
-      {
-        id: 'eight_of_cups_ma_pos4',
-        card: 'Eight of Cups',
-        position: 4,
-        upright:
-          'Taraflardan biri mevcut duygusal tatminsizlik nedeniyle bağlanmaktan uzaklaşabilir. Daha derin bir anlam arayışı öne çıkar.',
-        reversed:
-          'Gitme eğilimi yerini kalma isteğine bırakabilir. Bağlanma için yeni bir sebep bulunabilir.',
-        keywords: ['ayrılış', 'tatminsizlik', 'anlam arayışı', 'kalma', 'bağ'],
-        context: 'Bağlanma arzusu sorgulanabilir, ama yeniden şekillenebilir.',
-        group: 'Kupalar',
-      },
-      {
-        id: 'nine_of_cups_ma_pos4',
-        card: 'Nine of Cups',
-        position: 4,
-        upright:
-          'Duygusal tatmin ve mutluluk bağlanmaya güç verir. İki taraf da kendini hazır hissedebilir.',
-        reversed:
-          'Aşırı beklenti ya da bencillik bağlanmayı zorlaştırır. Paylaşımcı bir tavır gerekir.',
-        keywords: ['tatmin', 'mutluluk', 'haz', 'paylaşım', 'bağ'],
-        context: 'Bağlanma isteği yüksek, ama bencillikten kaçınmak önemli.',
-        group: 'Kupalar',
-      },
-      {
-        id: 'ten_of_cups_ma_pos4',
-        card: 'Ten of Cups',
-        position: 4,
-        upright:
-          'Aile, birlik ve kalıcı mutluluk öne çıkar. Karşılıklı bağlanma isteği en güçlü seviyededir.',
-        reversed:
-          'Hayal edilen uyum ile gerçekler arasında fark olabilir. İdeal beklentiler bağlanmayı zorlayabilir.',
-        keywords: ['aile', 'mutluluk', 'uyum', 'bağ', 'huzur'],
-        context: 'Bağlanma isteği yüksek, ama gerçekçi olmak gerekiyor.',
-        group: 'Kupalar',
-      },
-      {
-        id: 'page_of_cups_ma_pos4',
-        card: 'Page of Cups',
-        position: 4,
-        upright:
-          'Saf bir merak ve romantik yaklaşım bağlanmaya kapı aralar. Küçük jestler ilişkiyi tatlılaştırır.',
-        reversed:
-          'Aşırı duygusallık ya da olgunlaşmamış tavırlar bağlanmayı zorlaştırabilir. Denge şarttır.',
-        keywords: ['romantizm', 'merak', 'duygu', 'hayal', 'bağ'],
-        context: 'Bağlanma arzusu saf ve samimi, ama olgunluk gerekir.',
-        group: 'Kupalar',
-      },
-      {
-        id: 'knight_of_cups_ma_pos4',
-        card: 'Knight of Cups',
-        position: 4,
-        upright:
-          'Romantik teklifler ve duygusal açıklık bağlanmayı kolaylaştırır. İlişkiye zarafet ve samimiyet hakim olur.',
-        reversed:
-          'Tutarsızlık ya da aşırı idealizm bağlanmayı zayıflatır. Süreklilik sağlanmalıdır.',
-        keywords: ['romantizm', 'teklif', 'samimiyet', 'idealler', 'bağ'],
-        context: 'Bağlanma arzusu romantizmle güçleniyor, ama tutarlılık gerekir.',
-        group: 'Kupalar',
-      },
-      {
-        id: 'queen_of_cups_ma_pos4',
-        card: 'Queen of Cups',
-        position: 4,
-        upright:
-          'Empati, şefkat ve duygusal güven bağlanma isteğini güçlendirir. İlişki sıcak bir yuvaya dönüşür.',
-        reversed:
-          'Aşırı duygusal bağımlılık bağlanmayı zorlaştırabilir. Duygusal denge şarttır.',
-        keywords: ['empati', 'şefkat', 'güven', 'duygu', 'bağ'],
-        context: 'Bağlanma arzusu güçlü, ama bağımlılıktan kaçınılmalı.',
-        group: 'Kupalar',
-      },
-      {
-        id: 'king_of_cups_ma_pos4',
-        card: 'King of Cups',
-        position: 4,
-        upright:
-          'Olgun bir duygusal denge, bağlanma isteğini destekler. Taraflar güven ve huzur içinde hareket edebilir.',
-        reversed:
-          'Bastırılmış duygular ya da pasif agresif tavırlar bağlanmayı gölgeleyebilir.',
-        keywords: ['olgunluk', 'denge', 'huzur', 'güven', 'bağ'],
-        context: 'Bağlanma arzusu olgunlukla güçleniyor, ama açıklık şarttır.',
-        group: 'Kupalar',
-      },
-    
-    
-      // =========================
-      // SWORDS — KILIÇLAR (14)
-      // =========================
-      {
-        id: 'ace_of_swords_ma_pos4',
-        card: 'Ace of Swords',
-        position: 4,
-        upright:
-          'Netlik ve dürüstlükle bağlanma sağlanabilir. İki tarafın da açık ve doğrudan iletişim kurması bağın temelini güçlendirir.',
-        reversed:
-          'Yanlış anlamalar veya saklanan gerçekler bağlanma sürecini zorlaştırabilir. İletişim eksikliği mesafe yaratır.',
-        keywords: ['netlik', 'hakikat', 'iletişim', 'doğruluk', 'bağ'],
-        context: 'Bağlanma isteği açık sözlülükle güçlenir, ama iletişim koparsa zayıflar.',
-        group: 'Kılıçlar',
-      },
-      {
-        id: 'two_of_swords_ma_pos4',
-        card: 'Two of Swords',
-        position: 4,
-        upright:
-          'Kararsızlık bağlanmayı erteleyebilir. Taraflardan biri hislerini dengelemekte zorlanıyorsa, net bir adım atmak gecikebilir.',
-        reversed:
-          'Görmezden gelinen gerçekler açığa çıkar ve seçim yapılır. Bu noktada bağlanma ya güçlenir ya da kopar.',
-        keywords: ['kararsızlık', 'seçim', 'denge', 'çatışma', 'bağ'],
-        context: 'Bağlanma arzusu var ama karar gecikebilir, açıklık önemlidir.',
-        group: 'Kılıçlar',
-      },
-      {
-        id: 'three_of_swords_ma_pos4',
-        card: 'Three of Swords',
-        position: 4,
-        upright:
-          'Kalp kırıklıkları ve geçmiş acılar bağlanmayı zorlaştırabilir. Üçüncü kişiler ya da güven sorunları bağın önünde engel olabilir.',
-        reversed:
-          'Acılar geride bırakıldığında bağlanma için şifa doğar. Affetme süreci ilişkiye alan açar.',
-        keywords: ['kalp kırıklığı', 'acı', 'engeller', 'şifa', 'bağ'],
-        context: 'Bağlanma için geçmiş yaraların onarılması gerekir.',
-        group: 'Kılıçlar',
-      },
-      {
-        id: 'four_of_swords_ma_pos4',
-        card: 'Four of Swords',
-        position: 4,
-        upright:
-          'Dinlenme, mesafe ve sakinleşme ihtiyacı bağlanmayı yavaşlatabilir. Taraflardan biri geri çekilip düşünmek isteyebilir.',
-        reversed:
-          'Uzun süren suskunluk bağın kopmasına yol açabilir. Yeniden harekete geçmek gerekir.',
-        keywords: ['dinlenme', 'mesafe', 'sükunet', 'geri çekilme', 'bağ'],
-        context: 'Bağlanma isteği vardır ama zamanlama dinlenme ihtiyacına bağlıdır.',
-        group: 'Kılıçlar',
-      },
-      {
-        id: 'five_of_swords_ma_pos4',
-        card: 'Five of Swords',
-        position: 4,
-        upright:
-          'Kazanma hırsı ve egolar bağlanmayı zorlaştırır. Kavgalar ve tartışmalar bağ isteğini gölgeleyebilir.',
-        reversed:
-          'Çatışmadan sonra barışma isteği doğabilir. Ego bırakılırsa bağ güçlenebilir.',
-        keywords: ['çatışma', 'ego', 'kazanma', 'barışma', 'bağ'],
-        context: 'Bağlanma isteği vardır ama çatışmalar dengelenmelidir.',
-        group: 'Kılıçlar',
-      },
-      {
-        id: 'six_of_swords_ma_pos4',
-        card: 'Six of Swords',
-        position: 4,
-        upright:
-          'Geçmiş sorunlardan uzaklaşmak için bağlanma sakin bir şekilde inşa edilebilir. İlişki daha huzurlu bir döneme girebilir.',
-        reversed:
-          'Geçmiş yükler bırakılmadığında bağlanma gecikir. İleriye bakmak yerine eskiye takılı kalınabilir.',
-        keywords: ['geçiş', 'huzur', 'ilerleme', 'bırakma', 'bağ'],
-        context: 'Bağlanma isteği var, geçmişi geride bırakmak şart.',
-        group: 'Kılıçlar',
-      },
-      {
-        id: 'seven_of_swords_ma_pos4',
-        card: 'Seven of Swords',
-        position: 4,
-        upright:
-          'Gizlilik veya dürüst olmayan tavırlar bağlanmayı zorlaştırır. Taraflardan biri gerçeği saklıyorsa bağ güvene oturmaz.',
-        reversed:
-          'Açıklık sağlandığında bağ güvenle güçlenebilir. Gizli saklı durumlar biterse bağlanma mümkündür.',
-        keywords: ['gizlilik', 'dürüstlük', 'strateji', 'güven', 'bağ'],
-        context: 'Bağlanma isteği güvenin kurulmasına bağlıdır.',
-        group: 'Kılıçlar',
-      },
-      {
-        id: 'eight_of_swords_ma_pos4',
-        card: 'Eight of Swords',
-        position: 4,
-        upright:
-          'Taraflardan biri kendi korkuları ve sınırlamaları nedeniyle bağlanmaktan çekinebilir. Zihinsel engeller bağ isteğini baskılar.',
-        reversed:
-          'Korkuların çözülmesiyle bağlanma yolu açılır. Özgürleşme, bağ kurmayı mümkün kılar.',
-        keywords: ['kısıtlama', 'korku', 'özgürlük', 'engel', 'bağ'],
-        context: 'Bağlanma isteği vardır, ama korkular aşılmalıdır.',
-        group: 'Kılıçlar',
-      },
-      {
-        id: 'nine_of_swords_ma_pos4',
-        card: 'Nine of Swords',
-        position: 4,
-        upright:
-          'Kaygı, uykusuzluk ve endişeler bağlanmayı zorlaştırabilir. Taraflardan biri geleceğe dair korkular taşıyabilir.',
-        reversed:
-          'Kaygıların azalmasıyla bağlanma kolaylaşır. Kötü senaryoların yerini umut alabilir.',
-        keywords: ['kaygı', 'endişe', 'korku', 'umut', 'bağ'],
-        context: 'Bağlanma isteği vardır, ama kaygılar çözülmelidir.',
-        group: 'Kılıçlar',
-      },
-      {
-        id: 'ten_of_swords_ma_pos4',
-        card: 'Ten of Swords',
-        position: 4,
-        upright:
-          'Biten bir döngü bağlanmayı zorlaştırabilir. İhanet ya da ağır bir bitişten sonra yeni bir bağ kurmak zaman alır.',
-        reversed:
-          'Acıların ardından toparlanma süreci başlar. Bu durumda bağlanma yeniden doğabilir.',
-        keywords: ['bitiş', 'ihanet', 'acı', 'yeniden doğuş', 'bağ'],
-        context: 'Bağlanma isteği vardır ama geçmiş yaralar kapanmalıdır.',
-        group: 'Kılıçlar',
-      },
-      {
-        id: 'page_of_swords_ma_pos4',
-        card: 'Page of Swords',
-        position: 4,
-        upright:
-          'Merak ve gözlem bağlanmayı artırabilir. Taraflardan biri öğrenmeye ve anlamaya çalışıyorsa bağ kuvvetlenir.',
-        reversed:
-          'Aşırı sorgulama ya da dedikodu bağlanmayı zayıflatır. Şüphe güveni sarsabilir.',
-        keywords: ['merak', 'öğrenme', 'sorgu', 'güven', 'bağ'],
-        context: 'Bağlanma isteği vardır, ama aşırı sorgu engel olabilir.',
-        group: 'Kılıçlar',
-      },
-      {
-        id: 'knight_of_swords_ma_pos4',
-        card: 'Knight of Swords',
-        position: 4,
-        upright:
-          'Hızlı ve kararlı adımlar bağlanmayı destekler. Cesaretle atılan adımlar ilişkiye yön verir.',
-        reversed:
-          'Aceleci davranışlar ya da öfke bağlanmayı gölgeleyebilir. Daha sakin ilerlemek gerekir.',
-        keywords: ['hız', 'karar', 'cesaret', 'acelecilik', 'bağ'],
-        context: 'Bağlanma isteği vardır ama hız dengelenmelidir.',
-        group: 'Kılıçlar',
-      },
-      {
-        id: 'queen_of_swords_ma_pos4',
-        card: 'Queen of Swords',
-        position: 4,
-        upright:
-          'Mantık ve objektiflik bağlanmayı güçlendirebilir. Açık ve adil bir tutum güven verir.',
-        reversed:
-          'Soğukluk ya da aşırı eleştirellik bağ isteğini zayıflatır. Duygulara alan açmak gerekir.',
-        keywords: ['mantık', 'adalet', 'soğukluk', 'netlik', 'bağ'],
-        context: 'Bağlanma isteği vardır ama duygusuzluk gölge olabilir.',
-        group: 'Kılıçlar',
-      },
-      {
-        id: 'king_of_swords_ma_pos4',
-        card: 'King of Swords',
-        position: 4,
-        upright:
-          'Düşünülmüş kararlar ve mantıklı bir yaklaşım bağlanmayı güçlendirir. Otoriter ama adil bir tavır güven yaratır.',
-        reversed:
-          'Katı kurallar veya duygu eksikliği bağlanmayı engelleyebilir. Empati önemlidir.',
-        keywords: ['otorite', 'mantık', 'adalet', 'soğukluk', 'bağ'],
-        context: 'Bağlanma isteği vardır ama katılıktan kaçınmak gerekir.',
-        group: 'Kılıçlar',
-      },
-    
-      // =========================
-      // PENTACLES — TILSIMLAR (14)
-      // =========================
-      {
-        id: 'ace_of_pentacles_ma_pos4',
-        card: 'Ace of Pentacles',
-        position: 4,
-        upright:
-          'Somut bir başlangıç, güven ve istikrar arzusu bağlanmayı güçlendirir. İki taraf da ortak bir temele yatırım koymaya istekli olduğunda ilişki kök salar.',
-        reversed:
-          'Maddi endişeler veya güvence eksikliği bağlanmayı erteleyebilir. Somut planlar netleşmeden kalpler “evet” demekte çekingen kalır.',
-        keywords: ['başlangıç', 'güvence', 'somutluk', 'yatırım', 'istikrar'],
-        context: 'Bağlanma, somut adımlar ve güvenceyle kolaylaşır; belirsizlik geciktirebilir.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'two_of_pentacles_ma_pos4',
-        card: 'Two of Pentacles',
-        position: 4,
-        upright:
-          'Zaman, enerji ve kaynakları dengelemek bağlanmayı mümkün kılar. Esnek bir ritim kurulduğunda ilişki yük olmadan ilerler.',
-        reversed:
-          'Aşırı koşturma ve öncelik karmaşası bağlanma kararını zorlaştırabilir. Programlar uyumlanmadıkça gönüller aynı anda “evet” diyemez.',
-        keywords: ['denge', 'esneklik', 'zamanlama', 'uyum', 'öncelik'],
-        context: 'Bağlanma için ritim ve öncelikler uyumlanmalı; dağınıklık engel olur.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'three_of_pentacles_ma_pos4',
-        card: 'Three of Pentacles',
-        position: 4,
-        upright:
-          'İşbirliği, rol netliği ve ortak emeğin görünür olması bağlanmayı güçlendirir. “Bir ekip” gibi hareket etmek uzun vadeli söze zemin hazırlar.',
-        reversed:
-          'Rol belirsizliği ve görünmeyen emek kırgınlık yaratır. Takdir ve görev paylaşımı netleşmeden bağlanma askıda kalabilir.',
-        keywords: ['işbirliği', 'rol', 'takdir', 'süreç', 'kalite'],
-        context: 'Bağlanma, net görevler ve adil takdirle büyür; belirsizlik yıpratır.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'four_of_pentacles_ma_pos4',
-        card: 'Four of Pentacles',
-        position: 4,
-        upright:
-          'Güvenliği koruma ihtiyacı yüksektir ve bu, bağlanmayı temkinli ama sağlam kılar. Paylaşım dengeli olduğunda bağ uzun ömürlü olur.',
-        reversed:
-          'Aşırı tutma, kıskançlık veya kontrol eğilimi yakınlığı kısıtlayabilir. Esnemeden bağ kurmak zorlaşır.',
-        keywords: ['güvenlik', 'kontrol', 'paylaşım', 'tutma', 'sınır'],
-        context: 'Bağlanma için güvenlik duygusu şart; aşırı kontrol akışı keser.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'five_of_pentacles_ma_pos4',
-        card: 'Five of Pentacles',
-        position: 4,
-        upright:
-          'Yoksunluk hissi veya dışlanmışlık, “evet” demeyi zorlaştırabilir. Ancak birlikte dayanışma gösterildiğinde bağ derinleşir.',
-        reversed:
-          'Toparlanma kapısı aralanır; destek istendiğinde yalnızlık azalır. İyileşme boyunca şeffaf kalmak bağlanmayı mümkün kılar.',
-        keywords: ['yoksunluk', 'destek', 'yalnızlık', 'şifa', 'dayanışma'],
-        context: 'Bağlanma, zor günlerde omuz omuza verildiğinde güçlenir.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'six_of_pentacles_ma_pos4',
-        card: 'Six of Pentacles',
-        position: 4,
-        upright:
-          'Adil verme–alma dengesi bağlanma isteğini artırır. Şeffaf koşullar ve karşılıklılık güven inşa eder.',
-        reversed:
-          'Koşullu yardım, borçluluk hissi veya güç asimetrisi bağı zedeler. Eşitlik hissi kurulmadan kalıcı söz zorlaşır.',
-        keywords: ['adalet', 'paylaşım', 'eşitlik', 'güven', 'karşılıklılık'],
-        context: 'Bağlanma, adil değiş tokuşla yeşerir; güç dengesizliği engeldir.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'seven_of_pentacles_ma_pos4',
-        card: 'Seven of Pentacles',
-        position: 4,
-        upright:
-          'Sabır ve değerlendirme dönemi, “evet”in olgunlaşmasını sağlar. Küçük iyileştirmelerle bağın verimi artar.',
-        reversed:
-          'Batık maliyet inadı ya da sabırsızlık, yanlış kararlara itebilir. Kriterler netleşmeden bağlanma aceleye gelmemelidir.',
-        keywords: ['sabır', 'değerlendirme', 'verim', 'zamanlama', 'ölçüm'],
-        context: 'Bağlanma, olgunlaşmış karar ve sabırla kalıcı olur.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'eight_of_pentacles_ma_pos4',
-        card: 'Eight of Pentacles',
-        position: 4,
-        upright:
-          'Düzenli emek, öğrenme ve kalite standardı bağlanmayı destekler. Alışkanlıklar uyumlandıkça güven artar.',
-        reversed:
-          'Özensizlik, yüzeysellik veya “hemen olsun” isteği bağı gevşetir. Disiplin olmadan kalıcı söz zorlanır.',
-        keywords: ['emek', 'disiplin', 'öğrenme', 'kalite', 'alışkanlık'],
-        context: 'Bağlanma, düzenli emek ve kaliteyle sağlamlaşır.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'nine_of_pentacles_ma_pos4',
-        card: 'Nine of Pentacles',
-        position: 4,
-        upright:
-          'Sağlıklı bağımsızlık ve özdeğer, yetişkin bir “evet” için zemin hazırlar. Kendi ayakları üzerinde duran iki kişi daha dengeli bağ kurar.',
-        reversed:
-          'Aşırı bağımsızlık ya da konfora düşkünlük ortak hayatı zorlaştırabilir. “Biz” alanını küçültmek bağlanmayı geciktirir.',
-        keywords: ['özdeğer', 'bağımsızlık', 'konfor', 'olgunluk', 'sınır'],
-        context: 'Bağlanma, sağlıklı bireysellikten doğan “biz” ile güçlenir.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'ten_of_pentacles_ma_pos4',
-        card: 'Ten of Pentacles',
-        position: 4,
-        upright:
-          'Aile, miras ve uzun vadeli güvence temaları bağlanmayı güçleştirir. Ortak sistem ve düzen kurma niyeti yüksektir.',
-        reversed:
-          'Aile baskısı, mal–mülk tartışmaları veya sistem çatışması bağlanmayı zorlayabilir. Kurallar netleşmeden kalıcı söz kırılgan kalır.',
-        keywords: ['aile', 'güvence', 'sistem', 'uzun vade', 'düzen'],
-        context: 'Bağlanma, ortak düzen ve aile entegrasyonuyla kalıcı olur.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'page_of_pentacles_ma_pos4',
-        card: 'Page of Pentacles',
-        position: 4,
-        upright:
-          'Somut bir hedefe odaklanma ve öğrenme iştahı, bağlanmaya hazırlık getirir. Küçük adımlar ileride büyük bir sözün temeli olur.',
-        reversed:
-          'Erteleme, dağınık odak veya motivasyon düşüklüğü süreci uzatır. Taahhüt için disiplinli plan gerekir.',
-        keywords: ['hedef', 'öğrenme', 'başlangıç', 'pratik', 'somut adım'],
-        context: 'Bağlanma, küçük ama kararlı adımlarla yaklaşır.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'knight_of_pentacles_ma_pos4',
-        card: 'Knight of Pentacles',
-        position: 4,
-        upright:
-          'Yavaş ama tutarlı ilerleyiş güven verir. Rutin ve istikrar, bağlanma kararını doğal biçimde olgunlaştırır.',
-        reversed:
-          'Aşırı durağanlık veya esneklik eksikliği ilişkiyi monotonlaştırabilir. Küçük yenilikler olmadan “evet” isteği sönük kalır.',
-        keywords: ['istikrar', 'tutarlılık', 'rutin', 'güven', 'sabır'],
-        context: 'Bağlanma, emin adımlarla ve istikrarla büyür; durağanlıkta zorlanır.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'queen_of_pentacles_ma_pos4',
-        card: 'Queen of Pentacles',
-        position: 4,
-        upright:
-          'Besleyen pratiklik, ev kurma enerjisi ve kaynak yönetimi bağlanmayı güçlendirir. Güvenli, sıcak bir zemin oluşur.',
-        reversed:
-          'Aşırı yüklenme ve özbakım eksikliği ilişkiyi yorar. Paylaşılmayan yükler “evet” demeyi erteletebilir.',
-        keywords: ['bakım', 'pratiklik', 'ev', 'kaynak', 'güven'],
-        context: 'Bağlanma, besleyen düzen ve özbakımla kalıcılaşır.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'king_of_pentacles_ma_pos4',
-        card: 'King of Pentacles',
-        position: 4,
-        upright:
-          'Stratejik sağlamlık, cömertlik ve uzun vade vizyonu bağlanmayı destekler. Koruyucu ama paylaşan bir tutum “evet”i kolaylaştırır.',
-        reversed:
-          'Aşırı kontrol, statü odağı veya katı kurallar yakınlığı soğutabilir. Gücün paylaşılmadığı yerde kalıcı söz zorlaşır.',
-        keywords: ['sağlamlık', 'vizyon', 'paylaşım', 'koruma', 'güvence'],
-        context: 'Bağlanma, paylaşılan güç ve uzun vade vizyonuyla güçlenir.',
-        group: 'Tılsımlar',
-      },
-    
-      // =========================
-      // WANDS — ASALAR (14)
-      // =========================
-      {
-        id: 'ace_of_pentacles_ma_pos4',
-        card: 'Ace of Pentacles',
-        position: 4,
-        upright:
-          'Somut bir başlangıç, güven ve istikrar arzusu bağlanmayı güçlendirir. İki taraf da ortak bir temele yatırım koymaya istekli olduğunda ilişki kök salar.',
-        reversed:
-          'Maddi endişeler veya güvence eksikliği bağlanmayı erteleyebilir. Somut planlar netleşmeden kalpler “evet” demekte çekingen kalır.',
-        keywords: ['başlangıç', 'güvence', 'somutluk', 'yatırım', 'istikrar'],
-        context: 'Bağlanma, somut adımlar ve güvenceyle kolaylaşır; belirsizlik geciktirebilir.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'two_of_pentacles_ma_pos4',
-        card: 'Two of Pentacles',
-        position: 4,
-        upright:
-          'Zaman, enerji ve kaynakları dengelemek bağlanmayı mümkün kılar. Esnek bir ritim kurulduğunda ilişki yük olmadan ilerler.',
-        reversed:
-          'Aşırı koşturma ve öncelik karmaşası bağlanma kararını zorlaştırabilir. Programlar uyumlanmadıkça gönüller aynı anda “evet” diyemez.',
-        keywords: ['denge', 'esneklik', 'zamanlama', 'uyum', 'öncelik'],
-        context: 'Bağlanma için ritim ve öncelikler uyumlanmalı; dağınıklık engel olur.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'three_of_pentacles_ma_pos4',
-        card: 'Three of Pentacles',
-        position: 4,
-        upright:
-          'İşbirliği, rol netliği ve ortak emeğin görünür olması bağlanmayı güçlendirir. “Bir ekip” gibi hareket etmek uzun vadeli söze zemin hazırlar.',
-        reversed:
-          'Rol belirsizliği ve görünmeyen emek kırgınlık yaratır. Takdir ve görev paylaşımı netleşmeden bağlanma askıda kalabilir.',
-        keywords: ['işbirliği', 'rol', 'takdir', 'süreç', 'kalite'],
-        context: 'Bağlanma, net görevler ve adil takdirle büyür; belirsizlik yıpratır.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'four_of_pentacles_ma_pos4',
-        card: 'Four of Pentacles',
-        position: 4,
-        upright:
-          'Güvenliği koruma ihtiyacı yüksektir ve bu, bağlanmayı temkinli ama sağlam kılar. Paylaşım dengeli olduğunda bağ uzun ömürlü olur.',
-        reversed:
-          'Aşırı tutma, kıskançlık veya kontrol eğilimi yakınlığı kısıtlayabilir. Esnemeden bağ kurmak zorlaşır.',
-        keywords: ['güvenlik', 'kontrol', 'paylaşım', 'tutma', 'sınır'],
-        context: 'Bağlanma için güvenlik duygusu şart; aşırı kontrol akışı keser.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'five_of_pentacles_ma_pos4',
-        card: 'Five of Pentacles',
-        position: 4,
-        upright:
-          'Yoksunluk hissi veya dışlanmışlık, “evet” demeyi zorlaştırabilir. Ancak birlikte dayanışma gösterildiğinde bağ derinleşir.',
-        reversed:
-          'Toparlanma kapısı aralanır; destek istendiğinde yalnızlık azalır. İyileşme boyunca şeffaf kalmak bağlanmayı mümkün kılar.',
-        keywords: ['yoksunluk', 'destek', 'yalnızlık', 'şifa', 'dayanışma'],
-        context: 'Bağlanma, zor günlerde omuz omuza verildiğinde güçlenir.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'six_of_pentacles_ma_pos4',
-        card: 'Six of Pentacles',
-        position: 4,
-        upright:
-          'Adil verme–alma dengesi bağlanma isteğini artırır. Şeffaf koşullar ve karşılıklılık güven inşa eder.',
-        reversed:
-          'Koşullu yardım, borçluluk hissi veya güç asimetrisi bağı zedeler. Eşitlik hissi kurulmadan kalıcı söz zorlaşır.',
-        keywords: ['adalet', 'paylaşım', 'eşitlik', 'güven', 'karşılıklılık'],
-        context: 'Bağlanma, adil değiş tokuşla yeşerir; güç dengesizliği engeldir.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'seven_of_pentacles_ma_pos4',
-        card: 'Seven of Pentacles',
-        position: 4,
-        upright:
-          'Sabır ve değerlendirme dönemi, “evet”in olgunlaşmasını sağlar. Küçük iyileştirmelerle bağın verimi artar.',
-        reversed:
-          'Batık maliyet inadı ya da sabırsızlık, yanlış kararlara itebilir. Kriterler netleşmeden bağlanma aceleye gelmemelidir.',
-        keywords: ['sabır', 'değerlendirme', 'verim', 'zamanlama', 'ölçüm'],
-        context: 'Bağlanma, olgunlaşmış karar ve sabırla kalıcı olur.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'eight_of_pentacles_ma_pos4',
-        card: 'Eight of Pentacles',
-        position: 4,
-        upright:
-          'Düzenli emek, öğrenme ve kalite standardı bağlanmayı destekler. Alışkanlıklar uyumlandıkça güven artar.',
-        reversed:
-          'Özensizlik, yüzeysellik veya “hemen olsun” isteği bağı gevşetir. Disiplin olmadan kalıcı söz zorlanır.',
-        keywords: ['emek', 'disiplin', 'öğrenme', 'kalite', 'alışkanlık'],
-        context: 'Bağlanma, düzenli emek ve kaliteyle sağlamlaşır.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'nine_of_pentacles_ma_pos4',
-        card: 'Nine of Pentacles',
-        position: 4,
-        upright:
-          'Sağlıklı bağımsızlık ve özdeğer, yetişkin bir “evet” için zemin hazırlar. Kendi ayakları üzerinde duran iki kişi daha dengeli bağ kurar.',
-        reversed:
-          'Aşırı bağımsızlık ya da konfora düşkünlük ortak hayatı zorlaştırabilir. “Biz” alanını küçültmek bağlanmayı geciktirir.',
-        keywords: ['özdeğer', 'bağımsızlık', 'konfor', 'olgunluk', 'sınır'],
-        context: 'Bağlanma, sağlıklı bireysellikten doğan “biz” ile güçlenir.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'ten_of_pentacles_ma_pos4',
-        card: 'Ten of Pentacles',
-        position: 4,
-        upright:
-          'Aile, miras ve uzun vadeli güvence temaları bağlanmayı güçleştirir. Ortak sistem ve düzen kurma niyeti yüksektir.',
-        reversed:
-          'Aile baskısı, mal–mülk tartışmaları veya sistem çatışması bağlanmayı zorlayabilir. Kurallar netleşmeden kalıcı söz kırılgan kalır.',
-        keywords: ['aile', 'güvence', 'sistem', 'uzun vade', 'düzen'],
-        context: 'Bağlanma, ortak düzen ve aile entegrasyonuyla kalıcı olur.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'page_of_pentacles_ma_pos4',
-        card: 'Page of Pentacles',
-        position: 4,
-        upright:
-          'Somut bir hedefe odaklanma ve öğrenme iştahı, bağlanmaya hazırlık getirir. Küçük adımlar ileride büyük bir sözün temeli olur.',
-        reversed:
-          'Erteleme, dağınık odak veya motivasyon düşüklüğü süreci uzatır. Taahhüt için disiplinli plan gerekir.',
-        keywords: ['hedef', 'öğrenme', 'başlangıç', 'pratik', 'somut adım'],
-        context: 'Bağlanma, küçük ama kararlı adımlarla yaklaşır.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'knight_of_pentacles_ma_pos4',
-        card: 'Knight of Pentacles',
-        position: 4,
-        upright:
-          'Yavaş ama tutarlı ilerleyiş güven verir. Rutin ve istikrar, bağlanma kararını doğal biçimde olgunlaştırır.',
-        reversed:
-          'Aşırı durağanlık veya esneklik eksikliği ilişkiyi monotonlaştırabilir. Küçük yenilikler olmadan “evet” isteği sönük kalır.',
-        keywords: ['istikrar', 'tutarlılık', 'rutin', 'güven', 'sabır'],
-        context: 'Bağlanma, emin adımlarla ve istikrarla büyür; durağanlıkta zorlanır.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'queen_of_pentacles_ma_pos4',
-        card: 'Queen of Pentacles',
-        position: 4,
-        upright:
-          'Besleyen pratiklik, ev kurma enerjisi ve kaynak yönetimi bağlanmayı güçlendirir. Güvenli, sıcak bir zemin oluşur.',
-        reversed:
-          'Aşırı yüklenme ve özbakım eksikliği ilişkiyi yorar. Paylaşılmayan yükler “evet” demeyi erteletebilir.',
-        keywords: ['bakım', 'pratiklik', 'ev', 'kaynak', 'güven'],
-        context: 'Bağlanma, besleyen düzen ve özbakımla kalıcılaşır.',
-        group: 'Tılsımlar',
-      },
-      {
-        id: 'king_of_pentacles_ma_pos4',
-        card: 'King of Pentacles',
-        position: 4,
-        upright:
-          'Stratejik sağlamlık, cömertlik ve uzun vade vizyonu bağlanmayı destekler. Koruyucu ama paylaşan bir tutum “evet”i kolaylaştırır.',
-        reversed:
-          'Aşırı kontrol, statü odağı veya katı kurallar yakınlığı soğutabilir. Gücün paylaşılmadığı yerde kalıcı söz zorlaşır.',
-        keywords: ['sağlamlık', 'vizyon', 'paylaşım', 'koruma', 'güvence'],
-        context: 'Bağlanma, paylaşılan güç ve uzun vade vizyonuyla güçlenir.',
-        group: 'Tılsımlar',
-      },
+  // =========================
+  // CUPS — KUPALAR (14)
+  // =========================
+  {
+    id: 'ace_of_cups_ma_pos4',
+    card: 'Ace of Cups',
+    position: 4,
+    upright:
+      'Yeni bir duygusal başlangıç, kalplerin açılması ve birbirine bağlanma isteği güçlüdür. İlişkiyi saf bir sevgi ve duygusal akış besler. Bağlanma için uygun zemin doğuyor.',
+    reversed:
+      'Duygular bastırıldığında ya da korkular öne çıktığında bağlanma gecikebilir. Taraflardan biri hislerini saklarsa, bağ derinleşmeden yüzeyde kalır.',
+    keywords: ['açılım', 'sevgi', 'bağ', 'duygu', 'yeni başlangıç'],
+    context:
+      'Bağlanma arzusu taze ve güçlü, ama duyguların saklanmaması gerekiyor.',
+    group: 'Kupalar',
+  },
+  {
+    id: 'two_of_cups_ma_pos4',
+    card: 'Two of Cups',
+    position: 4,
+    upright:
+      'Karşılıklı sevgi ve denge öne çıkar. İki tarafın da bağlanmaya gönüllü olması, ilişkiye güçlü bir ortaklık enerjisi katar.',
+    reversed:
+      'Taraflardan biri mesafe koyabilir ya da beklentilerde uyumsuzluk oluşabilir. Bu durumda bağlanma niyeti olsa da eşleşme dengesiz kalır.',
+    keywords: ['karşılıklılık', 'uyum', 'ilişki', 'bağ', 'denge'],
+    context:
+      'Bağlanma isteği karşılıklı olabilir, ama uyumu sürekli korumak şarttır.',
+    group: 'Kupalar',
+  },
+  {
+    id: 'three_of_cups_ma_pos4',
+    card: 'Three of Cups',
+    position: 4,
+    upright:
+      'Paylaşım ve kutlama enerjisi bağlanmaya alan açar. Sosyal destek ve dostça ortam, ilişkinin bağını güçlendirir.',
+    reversed:
+      'Dış etkiler ya da üçüncü kişilerin müdahalesi bağlanmayı zorlaştırabilir. Tarafların kendi bağına odaklanması gerekir.',
+    keywords: ['kutlama', 'paylaşım', 'topluluk', 'bağ', 'neşe'],
+    context:
+      'Bağlanma isteği neşeyle besleniyor, ama üçüncü kişilere dikkat edilmeli.',
+    group: 'Kupalar',
+  },
+  {
+    id: 'four_of_cups_ma_pos4',
+    card: 'Four of Cups',
+    position: 4,
+    upright:
+      'Biri duygusal olarak kapalı ya da ilgisiz görünebilir. Bağlanma isteği olsa da fark edilmesi gereken bir fırsat vardır.',
+    reversed:
+      'Kapanma hali çözülürse, yeni bir duygusal uyanış bağlanmaya zemin hazırlar. İçsel tatminsizlikten çıkış önemlidir.',
+    keywords: ['ilgisizlik', 'tatminsizlik', 'içe dönüş', 'bağlanma', 'uyanış'],
+    context: 'Bağlanma arzusu görünmez olabilir, farkındalıkla güçlenebilir.',
+    group: 'Kupalar',
+  },
+  {
+    id: 'five_of_cups_ma_pos4',
+    card: 'Five of Cups',
+    position: 4,
+    upright:
+      'Geçmiş kayıplar ve hayal kırıklıkları bağlanmaya gölge düşürebilir. Ancak elde olan bağa odaklanmak dengeyi getirir.',
+    reversed:
+      'Yas süreci geride bırakıldığında bağlanma için umut yeniden doğar. Olumsuz duygulardan iyileşme önemlidir.',
+    keywords: ['kayıp', 'üzüntü', 'bağlanma', 'şifa', 'umut'],
+    context: 'Bağlanma isteği geçmiş yaraları onarmakla güçlenebilir.',
+    group: 'Kupalar',
+  },
+  {
+    id: 'six_of_cups_ma_pos4',
+    card: 'Six of Cups',
+    position: 4,
+    upright:
+      'Saf, çocukça bir samimiyetle bağlanma mümkündür. Geçmişten gelen güven duygusu bağı besler.',
+    reversed:
+      'Geçmişe aşırı tutunma bağlanmayı engelleyebilir. İlişkinin bugüne odaklanması gerekir.',
+    keywords: ['nostalji', 'samimiyet', 'güven', 'çocukluk', 'bağ'],
+    context: 'Bağlanma isteği saf ve samimi, ama geçmişte kalmamak gerekir.',
+    group: 'Kupalar',
+  },
+  {
+    id: 'seven_of_cups_ma_pos4',
+    card: 'Seven of Cups',
+    position: 4,
+    upright:
+      'Hayaller ve seçenekler bağlanmayı zorlaştırabilir. Karar netleşirse bağ güçlenir.',
+    reversed:
+      'Netlik sağlandığında, bağlanma isteği dağılmadan somut hale gelir. Hayalden gerçeğe geçiş önemlidir.',
+    keywords: ['seçenek', 'hayal', 'belirsizlik', 'bağlanma', 'karar'],
+    context: 'Bağlanma için netlik ve gerçekçilik şarttır.',
+    group: 'Kupalar',
+  },
+  {
+    id: 'eight_of_cups_ma_pos4',
+    card: 'Eight of Cups',
+    position: 4,
+    upright:
+      'Taraflardan biri mevcut duygusal tatminsizlik nedeniyle bağlanmaktan uzaklaşabilir. Daha derin bir anlam arayışı öne çıkar.',
+    reversed:
+      'Gitme eğilimi yerini kalma isteğine bırakabilir. Bağlanma için yeni bir sebep bulunabilir.',
+    keywords: ['ayrılış', 'tatminsizlik', 'anlam arayışı', 'kalma', 'bağ'],
+    context: 'Bağlanma arzusu sorgulanabilir, ama yeniden şekillenebilir.',
+    group: 'Kupalar',
+  },
+  {
+    id: 'nine_of_cups_ma_pos4',
+    card: 'Nine of Cups',
+    position: 4,
+    upright:
+      'Duygusal tatmin ve mutluluk bağlanmaya güç verir. İki taraf da kendini hazır hissedebilir.',
+    reversed:
+      'Aşırı beklenti ya da bencillik bağlanmayı zorlaştırır. Paylaşımcı bir tavır gerekir.',
+    keywords: ['tatmin', 'mutluluk', 'haz', 'paylaşım', 'bağ'],
+    context: 'Bağlanma isteği yüksek, ama bencillikten kaçınmak önemli.',
+    group: 'Kupalar',
+  },
+  {
+    id: 'ten_of_cups_ma_pos4',
+    card: 'Ten of Cups',
+    position: 4,
+    upright:
+      'Aile, birlik ve kalıcı mutluluk öne çıkar. Karşılıklı bağlanma isteği en güçlü seviyededir.',
+    reversed:
+      'Hayal edilen uyum ile gerçekler arasında fark olabilir. İdeal beklentiler bağlanmayı zorlayabilir.',
+    keywords: ['aile', 'mutluluk', 'uyum', 'bağ', 'huzur'],
+    context: 'Bağlanma isteği yüksek, ama gerçekçi olmak gerekiyor.',
+    group: 'Kupalar',
+  },
+  {
+    id: 'page_of_cups_ma_pos4',
+    card: 'Page of Cups',
+    position: 4,
+    upright:
+      'Saf bir merak ve romantik yaklaşım bağlanmaya kapı aralar. Küçük jestler ilişkiyi tatlılaştırır.',
+    reversed:
+      'Aşırı duygusallık ya da olgunlaşmamış tavırlar bağlanmayı zorlaştırabilir. Denge şarttır.',
+    keywords: ['romantizm', 'merak', 'duygu', 'hayal', 'bağ'],
+    context: 'Bağlanma arzusu saf ve samimi, ama olgunluk gerekir.',
+    group: 'Kupalar',
+  },
+  {
+    id: 'knight_of_cups_ma_pos4',
+    card: 'Knight of Cups',
+    position: 4,
+    upright:
+      'Romantik teklifler ve duygusal açıklık bağlanmayı kolaylaştırır. İlişkiye zarafet ve samimiyet hakim olur.',
+    reversed:
+      'Tutarsızlık ya da aşırı idealizm bağlanmayı zayıflatır. Süreklilik sağlanmalıdır.',
+    keywords: ['romantizm', 'teklif', 'samimiyet', 'idealler', 'bağ'],
+    context: 'Bağlanma arzusu romantizmle güçleniyor, ama tutarlılık gerekir.',
+    group: 'Kupalar',
+  },
+  {
+    id: 'queen_of_cups_ma_pos4',
+    card: 'Queen of Cups',
+    position: 4,
+    upright:
+      'Empati, şefkat ve duygusal güven bağlanma isteğini güçlendirir. İlişki sıcak bir yuvaya dönüşür.',
+    reversed:
+      'Aşırı duygusal bağımlılık bağlanmayı zorlaştırabilir. Duygusal denge şarttır.',
+    keywords: ['empati', 'şefkat', 'güven', 'duygu', 'bağ'],
+    context: 'Bağlanma arzusu güçlü, ama bağımlılıktan kaçınılmalı.',
+    group: 'Kupalar',
+  },
+  {
+    id: 'king_of_cups_ma_pos4',
+    card: 'King of Cups',
+    position: 4,
+    upright:
+      'Olgun bir duygusal denge, bağlanma isteğini destekler. Taraflar güven ve huzur içinde hareket edebilir.',
+    reversed:
+      'Bastırılmış duygular ya da pasif agresif tavırlar bağlanmayı gölgeleyebilir.',
+    keywords: ['olgunluk', 'denge', 'huzur', 'güven', 'bağ'],
+    context: 'Bağlanma arzusu olgunlukla güçleniyor, ama açıklık şarttır.',
+    group: 'Kupalar',
+  },
+
+  // =========================
+  // SWORDS — KILIÇLAR (14)
+  // =========================
+  {
+    id: 'ace_of_swords_ma_pos4',
+    card: 'Ace of Swords',
+    position: 4,
+    upright:
+      'Netlik ve dürüstlükle bağlanma sağlanabilir. İki tarafın da açık ve doğrudan iletişim kurması bağın temelini güçlendirir.',
+    reversed:
+      'Yanlış anlamalar veya saklanan gerçekler bağlanma sürecini zorlaştırabilir. İletişim eksikliği mesafe yaratır.',
+    keywords: ['netlik', 'hakikat', 'iletişim', 'doğruluk', 'bağ'],
+    context:
+      'Bağlanma isteği açık sözlülükle güçlenir, ama iletişim koparsa zayıflar.',
+    group: 'Kılıçlar',
+  },
+  {
+    id: 'two_of_swords_ma_pos4',
+    card: 'Two of Swords',
+    position: 4,
+    upright:
+      'Kararsızlık bağlanmayı erteleyebilir. Taraflardan biri hislerini dengelemekte zorlanıyorsa, net bir adım atmak gecikebilir.',
+    reversed:
+      'Görmezden gelinen gerçekler açığa çıkar ve seçim yapılır. Bu noktada bağlanma ya güçlenir ya da kopar.',
+    keywords: ['kararsızlık', 'seçim', 'denge', 'çatışma', 'bağ'],
+    context: 'Bağlanma arzusu var ama karar gecikebilir, açıklık önemlidir.',
+    group: 'Kılıçlar',
+  },
+  {
+    id: 'three_of_swords_ma_pos4',
+    card: 'Three of Swords',
+    position: 4,
+    upright:
+      'Kalp kırıklıkları ve geçmiş acılar bağlanmayı zorlaştırabilir. Üçüncü kişiler ya da güven sorunları bağın önünde engel olabilir.',
+    reversed:
+      'Acılar geride bırakıldığında bağlanma için şifa doğar. Affetme süreci ilişkiye alan açar.',
+    keywords: ['kalp kırıklığı', 'acı', 'engeller', 'şifa', 'bağ'],
+    context: 'Bağlanma için geçmiş yaraların onarılması gerekir.',
+    group: 'Kılıçlar',
+  },
+  {
+    id: 'four_of_swords_ma_pos4',
+    card: 'Four of Swords',
+    position: 4,
+    upright:
+      'Dinlenme, mesafe ve sakinleşme ihtiyacı bağlanmayı yavaşlatabilir. Taraflardan biri geri çekilip düşünmek isteyebilir.',
+    reversed:
+      'Uzun süren suskunluk bağın kopmasına yol açabilir. Yeniden harekete geçmek gerekir.',
+    keywords: ['dinlenme', 'mesafe', 'sükunet', 'geri çekilme', 'bağ'],
+    context:
+      'Bağlanma isteği vardır ama zamanlama dinlenme ihtiyacına bağlıdır.',
+    group: 'Kılıçlar',
+  },
+  {
+    id: 'five_of_swords_ma_pos4',
+    card: 'Five of Swords',
+    position: 4,
+    upright:
+      'Kazanma hırsı ve egolar bağlanmayı zorlaştırır. Kavgalar ve tartışmalar bağ isteğini gölgeleyebilir.',
+    reversed:
+      'Çatışmadan sonra barışma isteği doğabilir. Ego bırakılırsa bağ güçlenebilir.',
+    keywords: ['çatışma', 'ego', 'kazanma', 'barışma', 'bağ'],
+    context: 'Bağlanma isteği vardır ama çatışmalar dengelenmelidir.',
+    group: 'Kılıçlar',
+  },
+  {
+    id: 'six_of_swords_ma_pos4',
+    card: 'Six of Swords',
+    position: 4,
+    upright:
+      'Geçmiş sorunlardan uzaklaşmak için bağlanma sakin bir şekilde inşa edilebilir. İlişki daha huzurlu bir döneme girebilir.',
+    reversed:
+      'Geçmiş yükler bırakılmadığında bağlanma gecikir. İleriye bakmak yerine eskiye takılı kalınabilir.',
+    keywords: ['geçiş', 'huzur', 'ilerleme', 'bırakma', 'bağ'],
+    context: 'Bağlanma isteği var, geçmişi geride bırakmak şart.',
+    group: 'Kılıçlar',
+  },
+  {
+    id: 'seven_of_swords_ma_pos4',
+    card: 'Seven of Swords',
+    position: 4,
+    upright:
+      'Gizlilik veya dürüst olmayan tavırlar bağlanmayı zorlaştırır. Taraflardan biri gerçeği saklıyorsa bağ güvene oturmaz.',
+    reversed:
+      'Açıklık sağlandığında bağ güvenle güçlenebilir. Gizli saklı durumlar biterse bağlanma mümkündür.',
+    keywords: ['gizlilik', 'dürüstlük', 'strateji', 'güven', 'bağ'],
+    context: 'Bağlanma isteği güvenin kurulmasına bağlıdır.',
+    group: 'Kılıçlar',
+  },
+  {
+    id: 'eight_of_swords_ma_pos4',
+    card: 'Eight of Swords',
+    position: 4,
+    upright:
+      'Taraflardan biri kendi korkuları ve sınırlamaları nedeniyle bağlanmaktan çekinebilir. Zihinsel engeller bağ isteğini baskılar.',
+    reversed:
+      'Korkuların çözülmesiyle bağlanma yolu açılır. Özgürleşme, bağ kurmayı mümkün kılar.',
+    keywords: ['kısıtlama', 'korku', 'özgürlük', 'engel', 'bağ'],
+    context: 'Bağlanma isteği vardır, ama korkular aşılmalıdır.',
+    group: 'Kılıçlar',
+  },
+  {
+    id: 'nine_of_swords_ma_pos4',
+    card: 'Nine of Swords',
+    position: 4,
+    upright:
+      'Kaygı, uykusuzluk ve endişeler bağlanmayı zorlaştırabilir. Taraflardan biri geleceğe dair korkular taşıyabilir.',
+    reversed:
+      'Kaygıların azalmasıyla bağlanma kolaylaşır. Kötü senaryoların yerini umut alabilir.',
+    keywords: ['kaygı', 'endişe', 'korku', 'umut', 'bağ'],
+    context: 'Bağlanma isteği vardır, ama kaygılar çözülmelidir.',
+    group: 'Kılıçlar',
+  },
+  {
+    id: 'ten_of_swords_ma_pos4',
+    card: 'Ten of Swords',
+    position: 4,
+    upright:
+      'Biten bir döngü bağlanmayı zorlaştırabilir. İhanet ya da ağır bir bitişten sonra yeni bir bağ kurmak zaman alır.',
+    reversed:
+      'Acıların ardından toparlanma süreci başlar. Bu durumda bağlanma yeniden doğabilir.',
+    keywords: ['bitiş', 'ihanet', 'acı', 'yeniden doğuş', 'bağ'],
+    context: 'Bağlanma isteği vardır ama geçmiş yaralar kapanmalıdır.',
+    group: 'Kılıçlar',
+  },
+  {
+    id: 'page_of_swords_ma_pos4',
+    card: 'Page of Swords',
+    position: 4,
+    upright:
+      'Merak ve gözlem bağlanmayı artırabilir. Taraflardan biri öğrenmeye ve anlamaya çalışıyorsa bağ kuvvetlenir.',
+    reversed:
+      'Aşırı sorgulama ya da dedikodu bağlanmayı zayıflatır. Şüphe güveni sarsabilir.',
+    keywords: ['merak', 'öğrenme', 'sorgu', 'güven', 'bağ'],
+    context: 'Bağlanma isteği vardır, ama aşırı sorgu engel olabilir.',
+    group: 'Kılıçlar',
+  },
+  {
+    id: 'knight_of_swords_ma_pos4',
+    card: 'Knight of Swords',
+    position: 4,
+    upright:
+      'Hızlı ve kararlı adımlar bağlanmayı destekler. Cesaretle atılan adımlar ilişkiye yön verir.',
+    reversed:
+      'Aceleci davranışlar ya da öfke bağlanmayı gölgeleyebilir. Daha sakin ilerlemek gerekir.',
+    keywords: ['hız', 'karar', 'cesaret', 'acelecilik', 'bağ'],
+    context: 'Bağlanma isteği vardır ama hız dengelenmelidir.',
+    group: 'Kılıçlar',
+  },
+  {
+    id: 'queen_of_swords_ma_pos4',
+    card: 'Queen of Swords',
+    position: 4,
+    upright:
+      'Mantık ve objektiflik bağlanmayı güçlendirebilir. Açık ve adil bir tutum güven verir.',
+    reversed:
+      'Soğukluk ya da aşırı eleştirellik bağ isteğini zayıflatır. Duygulara alan açmak gerekir.',
+    keywords: ['mantık', 'adalet', 'soğukluk', 'netlik', 'bağ'],
+    context: 'Bağlanma isteği vardır ama duygusuzluk gölge olabilir.',
+    group: 'Kılıçlar',
+  },
+  {
+    id: 'king_of_swords_ma_pos4',
+    card: 'King of Swords',
+    position: 4,
+    upright:
+      'Düşünülmüş kararlar ve mantıklı bir yaklaşım bağlanmayı güçlendirir. Otoriter ama adil bir tavır güven yaratır.',
+    reversed:
+      'Katı kurallar veya duygu eksikliği bağlanmayı engelleyebilir. Empati önemlidir.',
+    keywords: ['otorite', 'mantık', 'adalet', 'soğukluk', 'bağ'],
+    context: 'Bağlanma isteği vardır ama katılıktan kaçınmak gerekir.',
+    group: 'Kılıçlar',
+  },
+
+  // =========================
+  // PENTACLES — TILSIMLAR (14)
+  // =========================
+  {
+    id: 'ace_of_pentacles_ma_pos4',
+    card: 'Ace of Pentacles',
+    position: 4,
+    upright:
+      'Somut bir başlangıç, güven ve istikrar arzusu bağlanmayı güçlendirir. İki taraf da ortak bir temele yatırım koymaya istekli olduğunda ilişki kök salar.',
+    reversed:
+      'Maddi endişeler veya güvence eksikliği bağlanmayı erteleyebilir. Somut planlar netleşmeden kalpler “evet” demekte çekingen kalır.',
+    keywords: ['başlangıç', 'güvence', 'somutluk', 'yatırım', 'istikrar'],
+    context:
+      'Bağlanma, somut adımlar ve güvenceyle kolaylaşır; belirsizlik geciktirebilir.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'two_of_pentacles_ma_pos4',
+    card: 'Two of Pentacles',
+    position: 4,
+    upright:
+      'Zaman, enerji ve kaynakları dengelemek bağlanmayı mümkün kılar. Esnek bir ritim kurulduğunda ilişki yük olmadan ilerler.',
+    reversed:
+      'Aşırı koşturma ve öncelik karmaşası bağlanma kararını zorlaştırabilir. Programlar uyumlanmadıkça gönüller aynı anda “evet” diyemez.',
+    keywords: ['denge', 'esneklik', 'zamanlama', 'uyum', 'öncelik'],
+    context:
+      'Bağlanma için ritim ve öncelikler uyumlanmalı; dağınıklık engel olur.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'three_of_pentacles_ma_pos4',
+    card: 'Three of Pentacles',
+    position: 4,
+    upright:
+      'İşbirliği, rol netliği ve ortak emeğin görünür olması bağlanmayı güçlendirir. “Bir ekip” gibi hareket etmek uzun vadeli söze zemin hazırlar.',
+    reversed:
+      'Rol belirsizliği ve görünmeyen emek kırgınlık yaratır. Takdir ve görev paylaşımı netleşmeden bağlanma askıda kalabilir.',
+    keywords: ['işbirliği', 'rol', 'takdir', 'süreç', 'kalite'],
+    context:
+      'Bağlanma, net görevler ve adil takdirle büyür; belirsizlik yıpratır.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'four_of_pentacles_ma_pos4',
+    card: 'Four of Pentacles',
+    position: 4,
+    upright:
+      'Güvenliği koruma ihtiyacı yüksektir ve bu, bağlanmayı temkinli ama sağlam kılar. Paylaşım dengeli olduğunda bağ uzun ömürlü olur.',
+    reversed:
+      'Aşırı tutma, kıskançlık veya kontrol eğilimi yakınlığı kısıtlayabilir. Esnemeden bağ kurmak zorlaşır.',
+    keywords: ['güvenlik', 'kontrol', 'paylaşım', 'tutma', 'sınır'],
+    context: 'Bağlanma için güvenlik duygusu şart; aşırı kontrol akışı keser.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'five_of_pentacles_ma_pos4',
+    card: 'Five of Pentacles',
+    position: 4,
+    upright:
+      'Yoksunluk hissi veya dışlanmışlık, “evet” demeyi zorlaştırabilir. Ancak birlikte dayanışma gösterildiğinde bağ derinleşir.',
+    reversed:
+      'Toparlanma kapısı aralanır; destek istendiğinde yalnızlık azalır. İyileşme boyunca şeffaf kalmak bağlanmayı mümkün kılar.',
+    keywords: ['yoksunluk', 'destek', 'yalnızlık', 'şifa', 'dayanışma'],
+    context: 'Bağlanma, zor günlerde omuz omuza verildiğinde güçlenir.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'six_of_pentacles_ma_pos4',
+    card: 'Six of Pentacles',
+    position: 4,
+    upright:
+      'Adil verme–alma dengesi bağlanma isteğini artırır. Şeffaf koşullar ve karşılıklılık güven inşa eder.',
+    reversed:
+      'Koşullu yardım, borçluluk hissi veya güç asimetrisi bağı zedeler. Eşitlik hissi kurulmadan kalıcı söz zorlaşır.',
+    keywords: ['adalet', 'paylaşım', 'eşitlik', 'güven', 'karşılıklılık'],
+    context: 'Bağlanma, adil değiş tokuşla yeşerir; güç dengesizliği engeldir.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'seven_of_pentacles_ma_pos4',
+    card: 'Seven of Pentacles',
+    position: 4,
+    upright:
+      'Sabır ve değerlendirme dönemi, “evet”in olgunlaşmasını sağlar. Küçük iyileştirmelerle bağın verimi artar.',
+    reversed:
+      'Batık maliyet inadı ya da sabırsızlık, yanlış kararlara itebilir. Kriterler netleşmeden bağlanma aceleye gelmemelidir.',
+    keywords: ['sabır', 'değerlendirme', 'verim', 'zamanlama', 'ölçüm'],
+    context: 'Bağlanma, olgunlaşmış karar ve sabırla kalıcı olur.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'eight_of_pentacles_ma_pos4',
+    card: 'Eight of Pentacles',
+    position: 4,
+    upright:
+      'Düzenli emek, öğrenme ve kalite standardı bağlanmayı destekler. Alışkanlıklar uyumlandıkça güven artar.',
+    reversed:
+      'Özensizlik, yüzeysellik veya “hemen olsun” isteği bağı gevşetir. Disiplin olmadan kalıcı söz zorlanır.',
+    keywords: ['emek', 'disiplin', 'öğrenme', 'kalite', 'alışkanlık'],
+    context: 'Bağlanma, düzenli emek ve kaliteyle sağlamlaşır.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'nine_of_pentacles_ma_pos4',
+    card: 'Nine of Pentacles',
+    position: 4,
+    upright:
+      'Sağlıklı bağımsızlık ve özdeğer, yetişkin bir “evet” için zemin hazırlar. Kendi ayakları üzerinde duran iki kişi daha dengeli bağ kurar.',
+    reversed:
+      'Aşırı bağımsızlık ya da konfora düşkünlük ortak hayatı zorlaştırabilir. “Biz” alanını küçültmek bağlanmayı geciktirir.',
+    keywords: ['özdeğer', 'bağımsızlık', 'konfor', 'olgunluk', 'sınır'],
+    context: 'Bağlanma, sağlıklı bireysellikten doğan “biz” ile güçlenir.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'ten_of_pentacles_ma_pos4',
+    card: 'Ten of Pentacles',
+    position: 4,
+    upright:
+      'Aile, miras ve uzun vadeli güvence temaları bağlanmayı güçleştirir. Ortak sistem ve düzen kurma niyeti yüksektir.',
+    reversed:
+      'Aile baskısı, mal–mülk tartışmaları veya sistem çatışması bağlanmayı zorlayabilir. Kurallar netleşmeden kalıcı söz kırılgan kalır.',
+    keywords: ['aile', 'güvence', 'sistem', 'uzun vade', 'düzen'],
+    context: 'Bağlanma, ortak düzen ve aile entegrasyonuyla kalıcı olur.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'page_of_pentacles_ma_pos4',
+    card: 'Page of Pentacles',
+    position: 4,
+    upright:
+      'Somut bir hedefe odaklanma ve öğrenme iştahı, bağlanmaya hazırlık getirir. Küçük adımlar ileride büyük bir sözün temeli olur.',
+    reversed:
+      'Erteleme, dağınık odak veya motivasyon düşüklüğü süreci uzatır. Taahhüt için disiplinli plan gerekir.',
+    keywords: ['hedef', 'öğrenme', 'başlangıç', 'pratik', 'somut adım'],
+    context: 'Bağlanma, küçük ama kararlı adımlarla yaklaşır.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'knight_of_pentacles_ma_pos4',
+    card: 'Knight of Pentacles',
+    position: 4,
+    upright:
+      'Yavaş ama tutarlı ilerleyiş güven verir. Rutin ve istikrar, bağlanma kararını doğal biçimde olgunlaştırır.',
+    reversed:
+      'Aşırı durağanlık veya esneklik eksikliği ilişkiyi monotonlaştırabilir. Küçük yenilikler olmadan “evet” isteği sönük kalır.',
+    keywords: ['istikrar', 'tutarlılık', 'rutin', 'güven', 'sabır'],
+    context:
+      'Bağlanma, emin adımlarla ve istikrarla büyür; durağanlıkta zorlanır.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'queen_of_pentacles_ma_pos4',
+    card: 'Queen of Pentacles',
+    position: 4,
+    upright:
+      'Besleyen pratiklik, ev kurma enerjisi ve kaynak yönetimi bağlanmayı güçlendirir. Güvenli, sıcak bir zemin oluşur.',
+    reversed:
+      'Aşırı yüklenme ve özbakım eksikliği ilişkiyi yorar. Paylaşılmayan yükler “evet” demeyi erteletebilir.',
+    keywords: ['bakım', 'pratiklik', 'ev', 'kaynak', 'güven'],
+    context: 'Bağlanma, besleyen düzen ve özbakımla kalıcılaşır.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'king_of_pentacles_ma_pos4',
+    card: 'King of Pentacles',
+    position: 4,
+    upright:
+      'Stratejik sağlamlık, cömertlik ve uzun vade vizyonu bağlanmayı destekler. Koruyucu ama paylaşan bir tutum “evet”i kolaylaştırır.',
+    reversed:
+      'Aşırı kontrol, statü odağı veya katı kurallar yakınlığı soğutabilir. Gücün paylaşılmadığı yerde kalıcı söz zorlaşır.',
+    keywords: ['sağlamlık', 'vizyon', 'paylaşım', 'koruma', 'güvence'],
+    context: 'Bağlanma, paylaşılan güç ve uzun vade vizyonuyla güçlenir.',
+    group: 'Tılsımlar',
+  },
+
+  // =========================
+  // WANDS — ASALAR (14)
+  // =========================
+  {
+    id: 'ace_of_pentacles_ma_pos4',
+    card: 'Ace of Pentacles',
+    position: 4,
+    upright:
+      'Somut bir başlangıç, güven ve istikrar arzusu bağlanmayı güçlendirir. İki taraf da ortak bir temele yatırım koymaya istekli olduğunda ilişki kök salar.',
+    reversed:
+      'Maddi endişeler veya güvence eksikliği bağlanmayı erteleyebilir. Somut planlar netleşmeden kalpler “evet” demekte çekingen kalır.',
+    keywords: ['başlangıç', 'güvence', 'somutluk', 'yatırım', 'istikrar'],
+    context:
+      'Bağlanma, somut adımlar ve güvenceyle kolaylaşır; belirsizlik geciktirebilir.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'two_of_pentacles_ma_pos4',
+    card: 'Two of Pentacles',
+    position: 4,
+    upright:
+      'Zaman, enerji ve kaynakları dengelemek bağlanmayı mümkün kılar. Esnek bir ritim kurulduğunda ilişki yük olmadan ilerler.',
+    reversed:
+      'Aşırı koşturma ve öncelik karmaşası bağlanma kararını zorlaştırabilir. Programlar uyumlanmadıkça gönüller aynı anda “evet” diyemez.',
+    keywords: ['denge', 'esneklik', 'zamanlama', 'uyum', 'öncelik'],
+    context:
+      'Bağlanma için ritim ve öncelikler uyumlanmalı; dağınıklık engel olur.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'three_of_pentacles_ma_pos4',
+    card: 'Three of Pentacles',
+    position: 4,
+    upright:
+      'İşbirliği, rol netliği ve ortak emeğin görünür olması bağlanmayı güçlendirir. “Bir ekip” gibi hareket etmek uzun vadeli söze zemin hazırlar.',
+    reversed:
+      'Rol belirsizliği ve görünmeyen emek kırgınlık yaratır. Takdir ve görev paylaşımı netleşmeden bağlanma askıda kalabilir.',
+    keywords: ['işbirliği', 'rol', 'takdir', 'süreç', 'kalite'],
+    context:
+      'Bağlanma, net görevler ve adil takdirle büyür; belirsizlik yıpratır.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'four_of_pentacles_ma_pos4',
+    card: 'Four of Pentacles',
+    position: 4,
+    upright:
+      'Güvenliği koruma ihtiyacı yüksektir ve bu, bağlanmayı temkinli ama sağlam kılar. Paylaşım dengeli olduğunda bağ uzun ömürlü olur.',
+    reversed:
+      'Aşırı tutma, kıskançlık veya kontrol eğilimi yakınlığı kısıtlayabilir. Esnemeden bağ kurmak zorlaşır.',
+    keywords: ['güvenlik', 'kontrol', 'paylaşım', 'tutma', 'sınır'],
+    context: 'Bağlanma için güvenlik duygusu şart; aşırı kontrol akışı keser.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'five_of_pentacles_ma_pos4',
+    card: 'Five of Pentacles',
+    position: 4,
+    upright:
+      'Yoksunluk hissi veya dışlanmışlık, “evet” demeyi zorlaştırabilir. Ancak birlikte dayanışma gösterildiğinde bağ derinleşir.',
+    reversed:
+      'Toparlanma kapısı aralanır; destek istendiğinde yalnızlık azalır. İyileşme boyunca şeffaf kalmak bağlanmayı mümkün kılar.',
+    keywords: ['yoksunluk', 'destek', 'yalnızlık', 'şifa', 'dayanışma'],
+    context: 'Bağlanma, zor günlerde omuz omuza verildiğinde güçlenir.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'six_of_pentacles_ma_pos4',
+    card: 'Six of Pentacles',
+    position: 4,
+    upright:
+      'Adil verme–alma dengesi bağlanma isteğini artırır. Şeffaf koşullar ve karşılıklılık güven inşa eder.',
+    reversed:
+      'Koşullu yardım, borçluluk hissi veya güç asimetrisi bağı zedeler. Eşitlik hissi kurulmadan kalıcı söz zorlaşır.',
+    keywords: ['adalet', 'paylaşım', 'eşitlik', 'güven', 'karşılıklılık'],
+    context: 'Bağlanma, adil değiş tokuşla yeşerir; güç dengesizliği engeldir.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'seven_of_pentacles_ma_pos4',
+    card: 'Seven of Pentacles',
+    position: 4,
+    upright:
+      'Sabır ve değerlendirme dönemi, “evet”in olgunlaşmasını sağlar. Küçük iyileştirmelerle bağın verimi artar.',
+    reversed:
+      'Batık maliyet inadı ya da sabırsızlık, yanlış kararlara itebilir. Kriterler netleşmeden bağlanma aceleye gelmemelidir.',
+    keywords: ['sabır', 'değerlendirme', 'verim', 'zamanlama', 'ölçüm'],
+    context: 'Bağlanma, olgunlaşmış karar ve sabırla kalıcı olur.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'eight_of_pentacles_ma_pos4',
+    card: 'Eight of Pentacles',
+    position: 4,
+    upright:
+      'Düzenli emek, öğrenme ve kalite standardı bağlanmayı destekler. Alışkanlıklar uyumlandıkça güven artar.',
+    reversed:
+      'Özensizlik, yüzeysellik veya “hemen olsun” isteği bağı gevşetir. Disiplin olmadan kalıcı söz zorlanır.',
+    keywords: ['emek', 'disiplin', 'öğrenme', 'kalite', 'alışkanlık'],
+    context: 'Bağlanma, düzenli emek ve kaliteyle sağlamlaşır.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'nine_of_pentacles_ma_pos4',
+    card: 'Nine of Pentacles',
+    position: 4,
+    upright:
+      'Sağlıklı bağımsızlık ve özdeğer, yetişkin bir “evet” için zemin hazırlar. Kendi ayakları üzerinde duran iki kişi daha dengeli bağ kurar.',
+    reversed:
+      'Aşırı bağımsızlık ya da konfora düşkünlük ortak hayatı zorlaştırabilir. “Biz” alanını küçültmek bağlanmayı geciktirir.',
+    keywords: ['özdeğer', 'bağımsızlık', 'konfor', 'olgunluk', 'sınır'],
+    context: 'Bağlanma, sağlıklı bireysellikten doğan “biz” ile güçlenir.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'ten_of_pentacles_ma_pos4',
+    card: 'Ten of Pentacles',
+    position: 4,
+    upright:
+      'Aile, miras ve uzun vadeli güvence temaları bağlanmayı güçleştirir. Ortak sistem ve düzen kurma niyeti yüksektir.',
+    reversed:
+      'Aile baskısı, mal–mülk tartışmaları veya sistem çatışması bağlanmayı zorlayabilir. Kurallar netleşmeden kalıcı söz kırılgan kalır.',
+    keywords: ['aile', 'güvence', 'sistem', 'uzun vade', 'düzen'],
+    context: 'Bağlanma, ortak düzen ve aile entegrasyonuyla kalıcı olur.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'page_of_pentacles_ma_pos4',
+    card: 'Page of Pentacles',
+    position: 4,
+    upright:
+      'Somut bir hedefe odaklanma ve öğrenme iştahı, bağlanmaya hazırlık getirir. Küçük adımlar ileride büyük bir sözün temeli olur.',
+    reversed:
+      'Erteleme, dağınık odak veya motivasyon düşüklüğü süreci uzatır. Taahhüt için disiplinli plan gerekir.',
+    keywords: ['hedef', 'öğrenme', 'başlangıç', 'pratik', 'somut adım'],
+    context: 'Bağlanma, küçük ama kararlı adımlarla yaklaşır.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'knight_of_pentacles_ma_pos4',
+    card: 'Knight of Pentacles',
+    position: 4,
+    upright:
+      'Yavaş ama tutarlı ilerleyiş güven verir. Rutin ve istikrar, bağlanma kararını doğal biçimde olgunlaştırır.',
+    reversed:
+      'Aşırı durağanlık veya esneklik eksikliği ilişkiyi monotonlaştırabilir. Küçük yenilikler olmadan “evet” isteği sönük kalır.',
+    keywords: ['istikrar', 'tutarlılık', 'rutin', 'güven', 'sabır'],
+    context:
+      'Bağlanma, emin adımlarla ve istikrarla büyür; durağanlıkta zorlanır.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'queen_of_pentacles_ma_pos4',
+    card: 'Queen of Pentacles',
+    position: 4,
+    upright:
+      'Besleyen pratiklik, ev kurma enerjisi ve kaynak yönetimi bağlanmayı güçlendirir. Güvenli, sıcak bir zemin oluşur.',
+    reversed:
+      'Aşırı yüklenme ve özbakım eksikliği ilişkiyi yorar. Paylaşılmayan yükler “evet” demeyi erteletebilir.',
+    keywords: ['bakım', 'pratiklik', 'ev', 'kaynak', 'güven'],
+    context: 'Bağlanma, besleyen düzen ve özbakımla kalıcılaşır.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'king_of_pentacles_ma_pos4',
+    card: 'King of Pentacles',
+    position: 4,
+    upright:
+      'Stratejik sağlamlık, cömertlik ve uzun vade vizyonu bağlanmayı destekler. Koruyucu ama paylaşan bir tutum “evet”i kolaylaştırır.',
+    reversed:
+      'Aşırı kontrol, statü odağı veya katı kurallar yakınlığı soğutabilir. Gücün paylaşılmadığı yerde kalıcı söz zorlaşır.',
+    keywords: ['sağlamlık', 'vizyon', 'paylaşım', 'koruma', 'güvence'],
+    context: 'Bağlanma, paylaşılan güç ve uzun vade vizyonuyla güçlenir.',
+    group: 'Tılsımlar',
+  },
 ];
 
 // Kart adına göre pozisyon 4 anlamını bulma fonksiyonu
 export const getposition4Meaning = (
   cardName: string
 ): MarriagePositionMeaning | undefined => {
-  return position4Meanings.find(
-    meaning => meaning.card === cardName
-  );
+  return position4Meanings.find(meaning => meaning.card === cardName);
 };
 
 // Ana index dosyası için uyumluluk fonksiyonu

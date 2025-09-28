@@ -52,8 +52,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Joker, engelin kaynağı dikkatsizlik, sorumsuzluk veya sürekli ertelediğin risklerdir. Belirsizlikten kaçarken cesaretini de kaybediyor olabilirsin.',
     keywords: ['risk', 'plansızlık', 'belirsizlik', 'sabırsızlık', 'engel'],
-    context:
-      'Engel, belirsizlik ve plansız adımlardan kaynaklanıyor.',
+    context: 'Engel, belirsizlik ve plansız adımlardan kaynaklanıyor.',
     group: 'Majör Arkana',
   },
   {
@@ -78,8 +77,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Başrahibe, gizli bilgilerin, sırların veya kendine kapalı olmanın yarattığı engeli işaret eder. Sezgini bastırmak çözümü bulmanı zorlaştırıyor.',
     keywords: ['sezgi', 'gizli bilgi', 'içsel korku', 'kapalılık', 'engel'],
-    context:
-      'Engel, sezgini ve içsel bilgelik sesini bastırmandan doğuyor.',
+    context: 'Engel, sezgini ve içsel bilgelik sesini bastırmandan doğuyor.',
     group: 'Majör Arkana',
   },
   {
@@ -104,8 +102,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters İmparator, kuralsızlık, dağınıklık ya da otoriteyle çatışma problemini büyütüyor olabilir. Aşırı baskıcı tavırlar da esnekliğini kaybettiriyor.',
     keywords: ['kontrol', 'otorite', 'kurallar', 'katılık', 'engel'],
-    context:
-      'Engel, katı kurallar ve kontrol etme ihtiyacından kaynaklanıyor.',
+    context: 'Engel, katı kurallar ve kontrol etme ihtiyacından kaynaklanıyor.',
     group: 'Majör Arkana',
   },
   {
@@ -117,8 +114,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Aziz, kuralları reddetmek, rehbersizlik veya isyanın yarattığı düzensizlik engeli oluşturuyor olabilir.',
     keywords: ['gelenek', 'otorite', 'beklenti', 'rehberlik', 'engel'],
-    context:
-      'Engel, kurallar ve toplum baskısının aşırı etkisinden doğuyor.',
+    context: 'Engel, kurallar ve toplum baskısının aşırı etkisinden doğuyor.',
     group: 'Majör Arkana',
   },
   {
@@ -143,8 +139,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Savaş Arabası, kaos, aşırı hırs ya da dağınıklık nedeniyle yolun tıkanıyor olabilir.',
     keywords: ['kontrol', 'irade', 'yön', 'kaos', 'engel'],
-    context:
-      'Engel, net bir yön ve kararlılık eksikliğinden kaynaklanıyor.',
+    context: 'Engel, net bir yön ve kararlılık eksikliğinden kaynaklanıyor.',
     group: 'Majör Arkana',
   },
   {
@@ -169,13 +164,12 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Ermiş, izolasyon, rehberlikten kaçma veya dünyadan uzaklaşmak problemini büyütüyor olabilir.',
     keywords: ['yalnızlık', 'rehberlik', 'içe dönüş', 'izolasyon', 'engel'],
-    context:
-      'Engel, aşırı yalnızlaşma ve destek almaktan kaçınmadan doğuyor.',
+    context: 'Engel, aşırı yalnızlaşma ve destek almaktan kaçınmadan doğuyor.',
     group: 'Majör Arkana',
   },
   {
     id: 'wheel_of_fortune_ps_pos2',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 2,
     upright:
       'Kader Çarkı, engelin kontrol dışı olaylar, şans faktörü veya değişimlere direnmek olabilir. Döngülerin farkına varamadığında zorlanıyorsun.',
@@ -208,8 +202,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Asılan Adam, inatçılık, direnç veya vazgeçememek engel oluşturuyor olabilir.',
     keywords: ['bakış açısı', 'teslimiyet', 'inat', 'tutulma', 'engel'],
-    context:
-      'Engel, farklı bir perspektifi kabul etmemekten kaynaklanıyor.',
+    context: 'Engel, farklı bir perspektifi kabul etmemekten kaynaklanıyor.',
     group: 'Majör Arkana',
   },
   {
@@ -221,8 +214,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Ölüm, bitmesi gerekeni sürdürmek veya dönüşümden korkmak engel oluşturuyor olabilir.',
     keywords: ['dönüşüm', 'bitiş', 'değişim', 'korku', 'engel'],
-    context:
-      'Engel, bırakman gerekeni bırakmamaktan doğuyor.',
+    context: 'Engel, bırakman gerekeni bırakmamaktan doğuyor.',
     group: 'Majör Arkana',
   },
   {
@@ -234,8 +226,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Denge, sabırsızlık, aşırı uçlara gitmek veya uyumsuzluk problemin kaynağı olabilir.',
     keywords: ['denge', 'uyum', 'sabır', 'ölçülülük', 'engel'],
-    context:
-      'Engel, dengeyi kuramamak ve sabırsızlıktan doğuyor.',
+    context: 'Engel, dengeyi kuramamak ve sabırsızlıktan doğuyor.',
     group: 'Majör Arkana',
   },
   {
@@ -247,8 +238,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Şeytan, özgürleşememek, kısıtlamalara boyun eğmek veya bağımlı kalmak engel oluşturuyor olabilir.',
     keywords: ['bağımlılık', 'korku', 'kısıtlama', 'özgürlük', 'engel'],
-    context:
-      'Engel, bağımlı olduğun alışkanlıklar ve korkulardan doğuyor.',
+    context: 'Engel, bağımlı olduğun alışkanlıklar ve korkulardan doğuyor.',
     group: 'Majör Arkana',
   },
   {
@@ -260,8 +250,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Kule, krizleri görmezden gelmek, değişimi ertelemek veya kaosu bastırmak engel oluşturuyor olabilir.',
     keywords: ['kriz', 'değişim', 'yıkım', 'kaos', 'engel'],
-    context:
-      'Engel, ani yıkımlar ve krizlerle yüzleşmemekten doğuyor.',
+    context: 'Engel, ani yıkımlar ve krizlerle yüzleşmemekten doğuyor.',
     group: 'Majör Arkana',
   },
   {
@@ -273,8 +262,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Yıldız, karamsarlık, güven kaybı veya rehberlik eksikliği engelin kaynağı olabilir.',
     keywords: ['umut', 'vizyon', 'ilham', 'karamsarlık', 'engel'],
-    context:
-      'Engel, umut kaybı ve karamsar bakış açısından doğuyor.',
+    context: 'Engel, umut kaybı ve karamsar bakış açısından doğuyor.',
     group: 'Majör Arkana',
   },
   {
@@ -285,9 +273,13 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
       'Kadehler İkilisi, engelin ilişki sorunları, ortaklık eksikliği veya karşılıklı çekim yokluğu olabilir.',
     reversed:
       'Ters Kadehler İkilisi, ilişki sorunları, ortaklık eksikliği veya karşılıklı çekim yokluğu engel oluşturuyor olabilir.',
-    keywords: ['ilişki sorunları', 'ortaklık eksikliği', 'çekim yokluğu', 'engel'],
-    context:
-      'Engel, ilişki sorunları ve ortaklık eksikliğinden doğuyor.',
+    keywords: [
+      'ilişki sorunları',
+      'ortaklık eksikliği',
+      'çekim yokluğu',
+      'engel',
+    ],
+    context: 'Engel, ilişki sorunları ve ortaklık eksikliğinden doğuyor.',
     group: 'Kupalar',
   },
   {
@@ -299,8 +291,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Ay, yanılsama, yanlış anlamalar veya korkulara teslim olmak engel oluşturuyor olabilir.',
     keywords: ['belirsizlik', 'korku', 'yanılsama', 'aldanma', 'engel'],
-    context:
-      'Engel, gerçekleri görememek ve korkulara kapılmaktan doğuyor.',
+    context: 'Engel, gerçekleri görememek ve korkulara kapılmaktan doğuyor.',
     group: 'Majör Arkana',
   },
   {
@@ -312,8 +303,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Güneş, özgüven eksikliği, engellenmiş başarı veya karamsarlık engel oluşturuyor olabilir.',
     keywords: ['iyimserlik', 'başarı', 'özgüven', 'gerçekçilik', 'engel'],
-    context:
-      'Engel, aşırı beklentiler ya da özgüven eksikliğinden doğuyor.',
+    context: 'Engel, aşırı beklentiler ya da özgüven eksikliğinden doğuyor.',
     group: 'Majör Arkana',
   },
   {
@@ -325,8 +315,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Mahkeme, öz değerlendirmeden kaçmak, kendini kandırmak veya geçmişi reddetmek engel oluşturuyor olabilir.',
     keywords: ['karar', 'geçmiş', 'sorumluluk', 'yüzleşme', 'engel'],
-    context:
-      'Engel, geçmişle yüzleşmemek ve sorumluluktan kaçmaktan doğuyor.',
+    context: 'Engel, geçmişle yüzleşmemek ve sorumluluktan kaçmaktan doğuyor.',
     group: 'Majör Arkana',
   },
   {
@@ -338,8 +327,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Dünya, başarısızlık korkusu, tamamlanamayan hedefler veya sürekli ertelemek engel oluşturuyor olabilir.',
     keywords: ['tamamlanma', 'döngü', 'eksiklik', 'hedef', 'engel'],
-    context:
-      'Engel, kapanmamış döngülerden ve yarım kalmış işlerden doğuyor.',
+    context: 'Engel, kapanmamış döngülerden ve yarım kalmış işlerden doğuyor.',
     group: 'Majör Arkana',
   },
 
@@ -353,8 +341,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Kupa Ası, duygusal hayal kırıklıkları, sevgiyi reddetmek veya içsel kapanıklık problemin ana engeli olabilir.',
     keywords: ['duygu', 'başlangıç', 'sezgi', 'sevgi', 'engel'],
-    context:
-      'Engel, duygularını bastırmaktan ve kalbini kapatmaktan doğuyor.',
+    context: 'Engel, duygularını bastırmaktan ve kalbini kapatmaktan doğuyor.',
     group: 'Kupalar',
   },
   {
@@ -366,8 +353,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters İki Kupa, dengesiz ilişkiler, güvensizlik veya bağların kopması problemin kaynağı olabilir.',
     keywords: ['ortaklık', 'uyum', 'güven', 'ilişki', 'engel'],
-    context:
-      'Engel, ilişkilerdeki uyumsuzluk ve güven sorunlarından doğuyor.',
+    context: 'Engel, ilişkilerdeki uyumsuzluk ve güven sorunlarından doğuyor.',
     group: 'Kupalar',
   },
   {
@@ -392,8 +378,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Dört Kupa, sürekli kaçırılan fırsatlar veya dikkatsizlik engeli oluşturuyor olabilir.',
     keywords: ['tatminsizlik', 'ilgisizlik', 'fırsat', 'kapanma', 'engel'],
-    context:
-      'Engel, fırsatları görememek ve ilgisizlikten doğuyor.',
+    context: 'Engel, fırsatları görememek ve ilgisizlikten doğuyor.',
     group: 'Kupalar',
   },
   {
@@ -405,8 +390,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Beş Kupa, ders çıkarmamak veya geçmişin yüklerini bırakmamak engelin kaynağı olabilir.',
     keywords: ['kayıp', 'pişmanlık', 'geçmiş', 'suçluluk', 'engel'],
-    context:
-      'Engel, geçmişe takılı kalmaktan ve bırakmamaktan doğuyor.',
+    context: 'Engel, geçmişe takılı kalmaktan ve bırakmamaktan doğuyor.',
     group: 'Kupalar',
   },
   {
@@ -418,8 +402,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Altı Kupa, geçmişten kopamamak, ileriye bakamamak veya sürekli geriye dönmek engel olabilir.',
     keywords: ['geçmiş', 'çocukluk', 'bağ', 'nostalji', 'engel'],
-    context:
-      'Engel, geçmişten gelen bağların hâlâ etkili olmasından doğuyor.',
+    context: 'Engel, geçmişten gelen bağların hâlâ etkili olmasından doğuyor.',
     group: 'Kupalar',
   },
   {
@@ -431,8 +414,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Yedi Kupa, yanlış seçimler, aldanma veya gerçeklerden kopmak engel oluşturuyor olabilir.',
     keywords: ['seçenek', 'hayal', 'karışıklık', 'aldanma', 'engel'],
-    context:
-      'Engel, kafa karışıklığı ve yanlış seçimlerden doğuyor.',
+    context: 'Engel, kafa karışıklığı ve yanlış seçimlerden doğuyor.',
     group: 'Kupalar',
   },
   {
@@ -444,8 +426,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Sekiz Kupa, bağımlılık, geri dönmek ya da terk edememek problemin kaynağı olabilir.',
     keywords: ['bırakmak', 'tatminsizlik', 'bağımlılık', 'geri dönüş', 'engel'],
-    context:
-      'Engel, artık seni geliştirmeyen şeyleri bırakmamaktan doğuyor.',
+    context: 'Engel, artık seni geliştirmeyen şeyleri bırakmamaktan doğuyor.',
     group: 'Kupalar',
   },
   {
@@ -457,8 +438,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Dokuz Kupa, yüzeysel tatminler, doyumsuzluk veya içsel boşluk engelin kaynağı olabilir.',
     keywords: ['tatmin', 'beklenti', 'doyum', 'yüzeysellik', 'engel'],
-    context:
-      'Engel, aşırı beklenti ve içsel tatminsizlikten doğuyor.',
+    context: 'Engel, aşırı beklenti ve içsel tatminsizlikten doğuyor.',
     group: 'Kupalar',
   },
   {
@@ -470,8 +450,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters On Kupa, kopukluk, güvensizlik veya çatışmalar engelin kaynağı olabilir.',
     keywords: ['aile', 'uyum', 'huzur', 'denge', 'engel'],
-    context:
-      'Engel, huzursuz ilişkiler ve uyum eksikliğinden doğuyor.',
+    context: 'Engel, huzursuz ilişkiler ve uyum eksikliğinden doğuyor.',
     group: 'Kupalar',
   },
   {
@@ -496,8 +475,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Kupa Şövalyesi, hayal kırıklıkları, gerçek dışı beklentiler veya tutarsızlık problemin kaynağı olabilir.',
     keywords: ['idealizm', 'romantizm', 'hayal', 'tutarsızlık', 'engel'],
-    context:
-      'Engel, hayallere kapılmak ve gerçeklerden uzaklaşmaktan doğuyor.',
+    context: 'Engel, hayallere kapılmak ve gerçeklerden uzaklaşmaktan doğuyor.',
     group: 'Kupalar',
   },
   {
@@ -509,8 +487,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Kupa Kraliçesi, bağımlılık, manipülasyon veya duygusal dengesizlik engelin kaynağı olabilir.',
     keywords: ['empati', 'hassasiyet', 'bağımlılık', 'duygu', 'engel'],
-    context:
-      'Engel, aşırı hassasiyet ve duygusal yüklenmeden doğuyor.',
+    context: 'Engel, aşırı hassasiyet ve duygusal yüklenmeden doğuyor.',
     group: 'Kupalar',
   },
   {
@@ -522,8 +499,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Kupa Kralı, duygusal dengesizlik, bastırılmış öfke veya sorumluluk almamak engelin kaynağı olabilir.',
     keywords: ['denge', 'olgunluk', 'güven', 'sorumluluk', 'engel'],
-    context:
-      'Engel, duygusal olgunluğu kaybetmek ve dengesizlikten doğuyor.',
+    context: 'Engel, duygusal olgunluğu kaybetmek ve dengesizlikten doğuyor.',
     group: 'Kupalar',
   },
 
@@ -537,8 +513,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Kılıç Ası, kafa karışıklığı, yanıltıcı bilgiler veya yalanlar engel oluşturuyor olabilir.',
     keywords: ['netlik', 'gerçek', 'iletişim', 'kafa karışıklığı', 'engel'],
-    context:
-      'Engel, net düşünememek ve gerçeği görememekten doğuyor.',
+    context: 'Engel, net düşünememek ve gerçeği görememekten doğuyor.',
     group: 'Kılıçlar',
   },
   {
@@ -550,8 +525,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters İki Kılıç, inatçılık, karar ertelemek veya gerçeği reddetmek engelin kaynağı olabilir.',
     keywords: ['karar', 'ikilem', 'görmezden gelmek', 'denge', 'engel'],
-    context:
-      'Engel, seçim yapmamak ve gerçekleri reddetmekten doğuyor.',
+    context: 'Engel, seçim yapmamak ve gerçekleri reddetmekten doğuyor.',
     group: 'Kılıçlar',
   },
   {
@@ -563,8 +537,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Üç Kılıç, geçmişin acılarını iyileştirememen veya eski yaraları taşımak engel oluşturuyor olabilir.',
     keywords: ['acı', 'yaralar', 'kayıp', 'geçmiş', 'engel'],
-    context:
-      'Engel, geçmiş yaraların hâlâ etkisini sürdürmesinden doğuyor.',
+    context: 'Engel, geçmiş yaraların hâlâ etkisini sürdürmesinden doğuyor.',
     group: 'Kılıçlar',
   },
   {
@@ -576,8 +549,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Dört Kılıç, aşırı yorgunluk, tükenmişlik ya da kaçış eğilimi engelin kaynağı olabilir.',
     keywords: ['dinlenme', 'erteleme', 'kaçış', 'tükenmişlik', 'engel'],
-    context:
-      'Engel, eylemsizlik ve ertelemeden doğuyor.',
+    context: 'Engel, eylemsizlik ve ertelemeden doğuyor.',
     group: 'Kılıçlar',
   },
   {
@@ -589,8 +561,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Beş Kılıç, kin tutmak, yanlış mücadeleler veya yenilgiyi kabul edememek engelin kaynağı olabilir.',
     keywords: ['çatışma', 'tartışma', 'ego', 'gurur', 'engel'],
-    context:
-      'Engel, gereksiz çatışmalara takılmaktan doğuyor.',
+    context: 'Engel, gereksiz çatışmalara takılmaktan doğuyor.',
     group: 'Kılıçlar',
   },
   {
@@ -602,8 +573,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Altı Kılıç, sürekli geçmişe dönmek, ilerlemeyi reddetmek veya zihinsel tıkanıklık engel oluşturuyor olabilir.',
     keywords: ['geçiş', 'geçmiş', 'ilerleme', 'tutulma', 'engel'],
-    context:
-      'Engel, geçmişten kopamamak ve ileriye gidememekten doğuyor.',
+    context: 'Engel, geçmişten kopamamak ve ileriye gidememekten doğuyor.',
     group: 'Kılıçlar',
   },
   {
@@ -615,8 +585,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Yedi Kılıç, açığa çıkan sırlar, güven kaybı veya başarısız planlar engelin kaynağı olabilir.',
     keywords: ['gizlilik', 'hile', 'güven', 'kaçış', 'engel'],
-    context:
-      'Engel, gizlilik ve dürüstlükten sapmaktan doğuyor.',
+    context: 'Engel, gizlilik ve dürüstlükten sapmaktan doğuyor.',
     group: 'Kılıçlar',
   },
   {
@@ -641,8 +610,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Dokuz Kılıç, korkularla yüzleşememek, bastırılmış suçluluk ya da aşırı stres engelin kaynağı olabilir.',
     keywords: ['kaygı', 'stres', 'endişe', 'korku', 'engel'],
-    context:
-      'Engel, aşırı kaygı ve stresle zihnini meşgul etmekten doğuyor.',
+    context: 'Engel, aşırı kaygı ve stresle zihnini meşgul etmekten doğuyor.',
     group: 'Kılıçlar',
   },
   {
@@ -654,8 +622,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters On Kılıç, eski yaraları sürekli açmak veya kapanışa direnmek engelin kaynağı olabilir.',
     keywords: ['bitiş', 'ihanet', 'yenilenme', 'geçmiş', 'engel'],
-    context:
-      'Engel, bir bitişi kabullenmemekten doğuyor.',
+    context: 'Engel, bir bitişi kabullenmemekten doğuyor.',
     group: 'Kılıçlar',
   },
   {
@@ -667,8 +634,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Kılıç Prensi, dedikodular, yanlış bilgi toplamak veya odaklanamamak engelin kaynağı olabilir.',
     keywords: ['dikkat', 'merak', 'öğrenme', 'bilgi', 'engel'],
-    context:
-      'Engel, dikkatsizlik ve yüzeysel kalmaktan doğuyor.',
+    context: 'Engel, dikkatsizlik ve yüzeysel kalmaktan doğuyor.',
     group: 'Kılıçlar',
   },
   {
@@ -680,8 +646,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Kılıç Şövalyesi, yönsüz koşmak, dikkatsizlik veya fevrilik engelin kaynağı olabilir.',
     keywords: ['acele', 'sabırsızlık', 'hedef', 'fevrilik', 'engel'],
-    context:
-      'Engel, aceleci kararlar ve sabırsızlıktan doğuyor.',
+    context: 'Engel, aceleci kararlar ve sabırsızlıktan doğuyor.',
     group: 'Kılıçlar',
   },
   {
@@ -693,8 +658,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Kılıç Kraliçesi, katılık, aşırı yargılamak veya anlayış eksikliği engelin kaynağı olabilir.',
     keywords: ['eleştiri', 'soğukluk', 'mantık', 'yargı', 'engel'],
-    context:
-      'Engel, aşırı eleştirel ve soğuk yaklaşımdan doğuyor.',
+    context: 'Engel, aşırı eleştirel ve soğuk yaklaşımdan doğuyor.',
     group: 'Kılıçlar',
   },
   {
@@ -706,8 +670,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Kılıç Kralı, adaletsizlik, otoriteyle çatışma veya soğuk tavırlar engelin kaynağı olabilir.',
     keywords: ['otorite', 'mantık', 'katılık', 'adalet', 'engel'],
-    context:
-      'Engel, katı kurallar ve mantığın aşırı baskısından doğuyor.',
+    context: 'Engel, katı kurallar ve mantığın aşırı baskısından doğuyor.',
     group: 'Kılıçlar',
   },
   // --- Asalar Serisi ---
@@ -720,8 +683,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Asa Ası, yarım kalmış projeler, hevesin çabuk sönmesi veya engellenmiş yaratıcılık problemin kaynağı olabilir.',
     keywords: ['ilham', 'motivasyon', 'yaratıcılık', 'başlangıç', 'engel'],
-    context:
-      'Engel, ilham ve motivasyon eksikliğinden doğuyor.',
+    context: 'Engel, ilham ve motivasyon eksikliğinden doğuyor.',
     group: 'Asalar',
   },
   {
@@ -733,8 +695,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters İki Asa, cesaret eksikliği, fırsatları küçümsemek veya güven sorunları engel olabilir.',
     keywords: ['vizyon', 'gelecek', 'cesaret', 'dar görüş', 'engel'],
-    context:
-      'Engel, vizyon eksikliği ve adım atmaktan çekinmekten doğuyor.',
+    context: 'Engel, vizyon eksikliği ve adım atmaktan çekinmekten doğuyor.',
     group: 'Asalar',
   },
   {
@@ -759,8 +720,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Dört Asa, huzursuzluk, kutlama fırsatlarının kaçırılması veya ev/iş düzeninde aksaklık engelin kaynağı olabilir.',
     keywords: ['istikrar', 'uyum', 'temel', 'huzursuzluk', 'engel'],
-    context:
-      'Engel, istikrarsızlık ve temelsizlikten doğuyor.',
+    context: 'Engel, istikrarsızlık ve temelsizlikten doğuyor.',
     group: 'Asalar',
   },
   {
@@ -771,9 +731,14 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
       'Beş Asa, engelin sürekli rekabet, çatışma veya işbirliği eksikliği olabilir. Güç mücadelesi çözüm yollarını kapatıyor.',
     reversed:
       'Ters Beş Asa, pasiflik, kendini savunamamak veya gereksiz tartışmalar engel oluşturuyor olabilir.',
-    keywords: ['rekabet', 'çatışma', 'işbirliği eksikliği', 'mücadele', 'engel'],
-    context:
-      'Engel, sürekli mücadele ve uyumsuzluklardan doğuyor.',
+    keywords: [
+      'rekabet',
+      'çatışma',
+      'işbirliği eksikliği',
+      'mücadele',
+      'engel',
+    ],
+    context: 'Engel, sürekli mücadele ve uyumsuzluklardan doğuyor.',
     group: 'Asalar',
   },
   {
@@ -785,8 +750,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Altı Asa, kibir, başarısızlık korkusu veya kıskançlık engelin kaynağı olabilir.',
     keywords: ['başarı', 'takdir', 'görünürlük', 'kibir', 'engel'],
-    context:
-      'Engel, takdir görmemek ve değersiz hissetmekten doğuyor.',
+    context: 'Engel, takdir görmemek ve değersiz hissetmekten doğuyor.',
     group: 'Asalar',
   },
   {
@@ -798,8 +762,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Yedi Asa, vazgeçmek, güvensizlik veya mücadeleyi bırakmak engel oluşturuyor olabilir.',
     keywords: ['direnç', 'savunma', 'cesaret', 'güvensizlik', 'engel'],
-    context:
-      'Engel, direnç eksikliği ve kendini savunamamaktan doğuyor.',
+    context: 'Engel, direnç eksikliği ve kendini savunamamaktan doğuyor.',
     group: 'Asalar',
   },
   {
@@ -811,8 +774,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Sekiz Asa, yanlış anlaşılmalar, tıkanıklıklar veya sürekli ertelemeler engelin kaynağı olabilir.',
     keywords: ['iletişim', 'gecikme', 'hız', 'tıkanıklık', 'engel'],
-    context:
-      'Engel, iletişimdeki sorunlar ve yavaşlamadan doğuyor.',
+    context: 'Engel, iletişimdeki sorunlar ve yavaşlamadan doğuyor.',
     group: 'Asalar',
   },
   {
@@ -824,8 +786,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Dokuz Asa, direnç kaybı, aşırı baskı veya yılgınlık engelin kaynağı olabilir.',
     keywords: ['yorgunluk', 'direnç', 'savunma', 'baskı', 'engel'],
-    context:
-      'Engel, bitkinlik ve dayanıklılığın tükenmesinden doğuyor.',
+    context: 'Engel, bitkinlik ve dayanıklılığın tükenmesinden doğuyor.',
     group: 'Asalar',
   },
   {
@@ -837,8 +798,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters On Asa, gereksiz sorumluluklar, paylaşmamak veya tükenmişlik engel oluşturuyor olabilir.',
     keywords: ['yük', 'sorumluluk', 'baskı', 'tükenmişlik', 'engel'],
-    context:
-      'Engel, fazla sorumluluk ve yük taşımaktan doğuyor.',
+    context: 'Engel, fazla sorumluluk ve yük taşımaktan doğuyor.',
     group: 'Asalar',
   },
   {
@@ -850,8 +810,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Asa Prensi, motivasyon eksikliği, hevesin çabuk sönmesi veya amaçsızlık engelin kaynağı olabilir.',
     keywords: ['heves', 'öğrenme', 'sabırsızlık', 'motivasyon', 'engel'],
-    context:
-      'Engel, sabırsızlık ve yanlış yönlendirilmiş hevesten doğuyor.',
+    context: 'Engel, sabırsızlık ve yanlış yönlendirilmiş hevesten doğuyor.',
     group: 'Asalar',
   },
   {
@@ -863,8 +822,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Asa Şövalyesi, dikkatsizlik, kararsızlık veya aşırı risk almak engelin kaynağı olabilir.',
     keywords: ['acele', 'hareket', 'risk', 'tutarsızlık', 'engel'],
-    context:
-      'Engel, aceleci ve yönsüz hareketlerden doğuyor.',
+    context: 'Engel, aceleci ve yönsüz hareketlerden doğuyor.',
     group: 'Asalar',
   },
   {
@@ -876,8 +834,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Asa Kraliçesi, otorite sorunları, kararsızlık veya başkalarının gölgesinde kalmak engelin kaynağı olabilir.',
     keywords: ['özgüven', 'liderlik', 'karizma', 'kıskançlık', 'engel'],
-    context:
-      'Engel, özgüven eksikliği ve liderlik korkusundan doğuyor.',
+    context: 'Engel, özgüven eksikliği ve liderlik korkusundan doğuyor.',
     group: 'Asalar',
   },
   {
@@ -889,8 +846,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Asa Kralı, baskıcılık, sabırsızlık veya vizyon yoksunluğu engelin kaynağı olabilir.',
     keywords: ['vizyon', 'kontrol', 'liderlik', 'yön', 'engel'],
-    context:
-      'Engel, vizyon eksikliği ve kontrol sorunlarından doğuyor.',
+    context: 'Engel, vizyon eksikliği ve kontrol sorunlarından doğuyor.',
     group: 'Asalar',
   },
 
@@ -917,8 +873,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters İki Tılsım, kontrolsüzlük, kaynakları kötü yönetmek veya sürekli kararsızlık engelin kaynağı olabilir.',
     keywords: ['denge', 'öncelik', 'sorumluluk', 'kontrol', 'engel'],
-    context:
-      'Engel, dengesizlik ve öncelikleri belirleyememekten doğuyor.',
+    context: 'Engel, dengesizlik ve öncelikleri belirleyememekten doğuyor.',
     group: 'Tılsımlar',
   },
   {
@@ -930,8 +885,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Üç Tılsım, kötü takım çalışması, iletişim kopukluğu veya yalnız kalmak engelin kaynağı olabilir.',
     keywords: ['işbirliği', 'destek', 'uyum', 'ekip', 'engel'],
-    context:
-      'Engel, işbirliği eksikliğinden ve destek görmemekten doğuyor.',
+    context: 'Engel, işbirliği eksikliğinden ve destek görmemekten doğuyor.',
     group: 'Tılsımlar',
   },
   {
@@ -943,8 +897,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Dört Tılsım, cimrilik, kaybetme korkusu veya aşırı sahiplenme engelin kaynağı olabilir.',
     keywords: ['güvenlik', 'kontrol', 'paylaşmamak', 'korku', 'engel'],
-    context:
-      'Engel, aşırı kontrol ve paylaşım eksikliğinden doğuyor.',
+    context: 'Engel, aşırı kontrol ve paylaşım eksikliğinden doğuyor.',
     group: 'Tılsımlar',
   },
   {
@@ -956,8 +909,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Beş Tılsım, yardımı reddetmek, dışlanmışlık hissi veya özgüven kaybı engelin kaynağı olabilir.',
     keywords: ['maddi zorluk', 'yalnızlık', 'destek', 'güven', 'engel'],
-    context:
-      'Engel, kaynak eksikliği ve yalnızlık duygusundan doğuyor.',
+    context: 'Engel, kaynak eksikliği ve yalnızlık duygusundan doğuyor.',
     group: 'Tılsımlar',
   },
   {
@@ -969,8 +921,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Altı Tılsım, bağımlı ilişkiler, sömürü veya haksızlık engelin kaynağı olabilir.',
     keywords: ['denge', 'adalet', 'paylaşım', 'bağımlılık', 'engel'],
-    context:
-      'Engel, dengesiz alışveriş ve haksızlıktan doğuyor.',
+    context: 'Engel, dengesiz alışveriş ve haksızlıktan doğuyor.',
     group: 'Tılsımlar',
   },
   {
@@ -995,8 +946,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Sekiz Tılsım, motivasyon kaybı, yarım işler veya dikkatsizlik engelin kaynağı olabilir.',
     keywords: ['disiplin', 'öğrenme', 'ustalık', 'özensizlik', 'engel'],
-    context:
-      'Engel, disiplin eksikliği ve özensizlikten doğuyor.',
+    context: 'Engel, disiplin eksikliği ve özensizlikten doğuyor.',
     group: 'Tılsımlar',
   },
   {
@@ -1008,8 +958,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Dokuz Tılsım, yalnızlık korkusu, maddi bağımlılık veya tatminsizlik engelin kaynağı olabilir.',
     keywords: ['bağımsızlık', 'özgüven', 'tatmin', 'bağımlılık', 'engel'],
-    context:
-      'Engel, bağımsızlık eksikliği ve güvensizlikten doğuyor.',
+    context: 'Engel, bağımsızlık eksikliği ve güvensizlikten doğuyor.',
     group: 'Tılsımlar',
   },
   {
@@ -1021,8 +970,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters On Tılsım, miras kavgaları, aile içi çatışmalar veya kalıcı başarıyı kuramamak engelin kaynağı olabilir.',
     keywords: ['aile', 'istikrar', 'maddi güven', 'çatışma', 'engel'],
-    context:
-      'Engel, ailevi veya maddi istikrarsızlıktan doğuyor.',
+    context: 'Engel, ailevi veya maddi istikrarsızlıktan doğuyor.',
     group: 'Tılsımlar',
   },
   {
@@ -1034,8 +982,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Tılsım Prensi, motivasyon kaybı, yanlış hedefler veya yarım projeler engelin kaynağı olabilir.',
     keywords: ['öğrenme', 'dikkat', 'motivasyon', 'hedef', 'engel'],
-    context:
-      'Engel, dikkatsizlik ve somut adım atmaktan kaçınmaktan doğuyor.',
+    context: 'Engel, dikkatsizlik ve somut adım atmaktan kaçınmaktan doğuyor.',
     group: 'Tılsımlar',
   },
   {
@@ -1047,8 +994,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Tılsım Şövalyesi, tembellik, dikkatsizlik veya plan eksikliği engelin kaynağı olabilir.',
     keywords: ['durağanlık', 'temkin', 'motivasyon', 'plan', 'engel'],
-    context:
-      'Engel, durağanlık ve tembellikten doğuyor.',
+    context: 'Engel, durağanlık ve tembellikten doğuyor.',
     group: 'Tılsımlar',
   },
   {
@@ -1073,8 +1019,7 @@ export const position2Meanings: ProblemSolvingPosition2Meaning[] = [
     reversed:
       'Ters Tılsım Kralı, maddi kaygılar, baskıcılık veya doyumsuzluk engelin kaynağı olabilir.',
     keywords: ['kontrol', 'hırs', 'maddi güven', 'doyumsuzluk', 'engel'],
-    context:
-      'Engel, maddi kaygılar ve aşırı kontrol isteğinden doğuyor.',
+    context: 'Engel, maddi kaygılar ve aşırı kontrol isteğinden doğuyor.',
     group: 'Tılsımlar',
   },
 ];
@@ -1089,54 +1034,55 @@ export function getProblemSolvingPosition2Meaning(
 ): ProblemSolvingPosition2Meaning | null {
   // Kart ismi eşleştirmesi için hem İngilizce hem Türkçe isimleri kontrol et
   // Önce doğrudan eşleşme ara
-  let meaning = position2Meanings.find(m => 
-    m.card === card.name || 
-    m.card === card.nameTr ||
-    card.name === m.card ||
-    card.nameTr === m.card
+  let meaning = position2Meanings.find(
+    m =>
+      m.card === card.name ||
+      m.card === card.nameTr ||
+      card.name === m.card ||
+      card.nameTr === m.card
   );
-  
+
   if (meaning) {
     return meaning;
   }
-  
+
   // Kart ismi mapping'i kullanarak eşleştirme yap
   const cardNameMapping: { [key: string]: string } = {
     // Major Arcana - Türkçe
-    'Deli': 'The Fool',
-    'Büyücü': 'The Magician',
+    Deli: 'The Fool',
+    Büyücü: 'The Magician',
     'Yüksek Rahibe': 'The High Priestess',
-    'İmparatoriçe': 'The Empress',
-    'İmparator': 'The Emperor',
-    'Hierophant': 'The Hierophant',
-    'Aziz': 'The Hierophant',
-    'Aşıklar': 'The Lovers',
+    İmparatoriçe: 'The Empress',
+    İmparator: 'The Emperor',
+    Hierophant: 'The Hierophant',
+    Aziz: 'The Hierophant',
+    Aşıklar: 'The Lovers',
     'Savaş Arabası': 'The Chariot',
-    'Güç': 'Strength',
-    'Ermiş': 'The Hermit',
-    'Münzevi': 'The Hermit',
-    'Kader Çarkı': 'The Wheel of Fortune',
-    'Adalet': 'Justice',
+    Güç: 'Strength',
+    Ermiş: 'The Hermit',
+    Münzevi: 'The Hermit',
+    'Kader Çarkı': 'The The Wheel of Fortune',
+    Adalet: 'Justice',
     'Asılı Adam': 'The Hanged Man',
-    'Ölüm': 'Death',
-    'Ölçü': 'Temperance',
-    'Ölçülülük': 'Temperance',
-    'Şeytan': 'The Devil',
-    'Kule': 'The Tower',
-    'Yıldız': 'The Star',
-    'Ay': 'The Moon',
-    'Güneş': 'The Sun',
-    'Yargı': 'Judgement',
-    'Mahkeme': 'Judgement',
-    'Dünya': 'The World',
+    Ölüm: 'Death',
+    Ölçü: 'Temperance',
+    Ölçülülük: 'Temperance',
+    Şeytan: 'The Devil',
+    Kule: 'The Tower',
+    Yıldız: 'The Star',
+    Ay: 'The Moon',
+    Güneş: 'The Sun',
+    Yargı: 'Judgement',
+    Mahkeme: 'Judgement',
+    Dünya: 'The World',
   };
-  
+
   // Türkçe ismi İngilizce'ye çevir
   const englishName = cardNameMapping[card.nameTr] || card.nameTr;
-  
+
   // İngilizce isimle tekrar ara
   meaning = position2Meanings.find(m => m.card === englishName);
-  
+
   return meaning || null;
 }
 
@@ -1199,7 +1145,7 @@ export const useI18nposition2Meanings = (): I18nProblemSolvingPosition2Meaning[]
 */
 
 // Belirli bir kart için i18n destekli anlam al (hook kullanmadan)
-  export const getI18nPosition2Meaning = (
+export const getI18nPosition2Meaning = (
   cardName: string,
   t: (_key: string) => string
 ): I18nProblemSolvingPosition2Meaning | null => {

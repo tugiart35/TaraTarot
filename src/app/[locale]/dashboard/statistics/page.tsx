@@ -147,7 +147,9 @@ export default function StatisticsPage() {
   }, [authLoading, isAuthenticated, router, locale]);
 
   const fetchUserStats = async () => {
-    if (!user) return;
+    if (!user) {
+      return;
+    }
 
     try {
       // Tek sorguda tüm verileri al - performans için
@@ -215,7 +217,9 @@ export default function StatisticsPage() {
         readingType: string,
         costCredits?: number
       ): number => {
-        if (costCredits) return costCredits;
+        if (costCredits) {
+          return costCredits;
+        }
 
         switch (readingType) {
           case 'LOVE_SPREAD_DETAILED':
@@ -378,8 +382,11 @@ export default function StatisticsPage() {
         });
 
         if (hasReading) {
-          if (i === 0) currentStreak = 1;
-          else if (i === currentStreak) currentStreak++;
+          if (i === 0) {
+            currentStreak = 1;
+          } else if (i === currentStreak) {
+            currentStreak++;
+          }
 
           tempStreak++;
           longestStreak = Math.max(longestStreak, tempStreak);
@@ -418,7 +425,9 @@ export default function StatisticsPage() {
       const {
         data: { user },
       } = await supabase.auth.getUser();
-      if (!user) return;
+      if (!user) {
+        return;
+      }
 
       // Get user's profile data
       const { data: profile } = await supabase

@@ -72,9 +72,7 @@ export async function POST(request: NextRequest) {
 
     // Input validation
     if (!body.email || !body.email.includes('@')) {
-      return EmailCORS.wrapResponse(
-        ErrorResponse.emailValidationError()
-      );
+      return EmailCORS.wrapResponse(ErrorResponse.emailValidationError());
     }
 
     // Test email içeriği
@@ -140,14 +138,14 @@ export async function POST(request: NextRequest) {
       );
     } else {
       return EmailCORS.wrapResponse(
-        ErrorResponse.smtpConnectionError('Email gönderilemedi. SMTP ayarlarını kontrol edin.')
+        ErrorResponse.smtpConnectionError(
+          'Email gönderilemedi. SMTP ayarlarını kontrol edin.'
+        )
       );
     }
   } catch (error) {
     console.error('Test email API error:', error);
-    return EmailCORS.wrapResponse(
-      ErrorResponse.internalServerError()
-    );
+    return EmailCORS.wrapResponse(ErrorResponse.internalServerError());
   }
 }
 
@@ -181,9 +179,7 @@ export async function GET(request: NextRequest) {
     );
   } catch (error) {
     console.error('SMTP status API error:', error);
-    return EmailCORS.wrapResponse(
-      ErrorResponse.internalServerError()
-    );
+    return EmailCORS.wrapResponse(ErrorResponse.internalServerError());
   }
 }
 

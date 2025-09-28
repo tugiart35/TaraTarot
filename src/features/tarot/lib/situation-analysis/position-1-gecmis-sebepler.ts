@@ -152,7 +152,7 @@ export const position1Meanings: SituationAnalysisPositionMeaning[] = [
   },
   {
     id: 'wheel_of_fortune_sa_pos1',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 1,
     upright:
       'Kader Çarkı, geçmişte yaşanan talihli rastlantılar, değişimler veya döngüler bugünkü duruma temel hazırlamış olabilir.',
@@ -182,7 +182,13 @@ export const position1Meanings: SituationAnalysisPositionMeaning[] = [
       'Asılan Adam, geçmişte farklı bir bakış açısı kazanmak, fedakarlık yapmak veya bir duraklama yaşamak bu sürecin temelinde olabilir.',
     reversed:
       'Ters Asılan Adam, geçmişte boşa yapılan fedakarlıklar veya isteksizce yaşanan durağanlık mevcut durumu şekillendirmiş olabilir.',
-    keywords: ['bakış açısı', 'fedakarlık', 'duraklama', 'teslimiyet', 'geçmiş'],
+    keywords: [
+      'bakış açısı',
+      'fedakarlık',
+      'duraklama',
+      'teslimiyet',
+      'geçmiş',
+    ],
     context: 'Geçmişteki fedakarlık ya da duraklamaların etkisi.',
     group: 'Majör Arkana',
   },
@@ -305,7 +311,8 @@ export const position1Meanings: SituationAnalysisPositionMeaning[] = [
     reversed:
       'Ters Kupa Ası, geçmişte bastırılan duyguları, ifade edilemeyen sevgiyi ya da yarım kalmış duygusal başlangıçları işaret eder. Belki kalbinizi açmaya hazır olmadığınız için fırsatlar kaçtı veya duygularınız tam olarak akmadı.\n\nBu kart, geçmişte sevginin engellenmesinin bugünkü duygusal durumunuzu hâlâ etkilediğini hatırlatır.',
     keywords: ['sevgi', 'başlangıç', 'duygu', 'şefkat', 'geçmiş'],
-    context: 'Geçmişteki duygusal başlangıçların veya engellenen sevgilerin etkisi.',
+    context:
+      'Geçmişteki duygusal başlangıçların veya engellenen sevgilerin etkisi.',
     group: 'Kupalar',
   },
   {
@@ -425,7 +432,8 @@ export const position1Meanings: SituationAnalysisPositionMeaning[] = [
     reversed:
       'Ters Kupa Prensi, geçmişte duygusal olgunlaşmamayı, hayalperestliği veya dikkatsizliği işaret eder. Bu eksiklikler, bugünkü durumun kökeninde olabilir.\n\nBu kart, geçmişteki saf duyguların yanlış kullanılması ya da hafife alınmasının bugün hâlâ sizi etkilediğini gösterir.',
     keywords: ['masumiyet', 'hayal', 'duygu', 'başlangıç', 'geçmiş'],
-    context: 'Geçmişteki saf duyguların veya olgunlaşmamış davranışların etkisi.',
+    context:
+      'Geçmişteki saf duyguların veya olgunlaşmamış davranışların etkisi.',
     group: 'Kupalar',
   },
   {
@@ -643,7 +651,8 @@ export const position1Meanings: SituationAnalysisPositionMeaning[] = [
     reversed:
       'Ters Değnek Ası, geçmişte yarım kalan bir girişimi, motivasyon kaybını veya hedefsizliği işaret eder. Potansiyel varken kullanılmayan fırsatlar bugünkü durumun sebeplerini oluşturmuş olabilir. Belki de doğru zamanda harekete geçmediğiniz için fırsatlar elinizden kaydı.\n\nBu kart, geçmişteki bu eksikliklerin bugün hâlâ enerjinizi etkilediğini gösterir.',
     keywords: ['başlangıç', 'ilham', 'tutku', 'motivasyon', 'geçmiş'],
-    context: 'Geçmişteki ilham verici başlangıçların ya da yarım kalmış girişimlerin etkisi.',
+    context:
+      'Geçmişteki ilham verici başlangıçların ya da yarım kalmış girişimlerin etkisi.',
     group: 'Asalar',
   },
   {
@@ -932,7 +941,8 @@ export const position1Meanings: SituationAnalysisPositionMeaning[] = [
     reversed:
       'Ters Tılsım Prensi, geçmişte motivasyon eksikliğini, fırsatların değerlendirilememesini ya da öğrenme süreçlerinde yaşanan tembelliği simgeler. Bu durum, bugünkü sorunların kökeninde olabilir.\n\nBu kart, geçmişte kaçırılan fırsatların bugünkü gelişim sürecinizi yavaşlattığını anlatır.',
     keywords: ['öğrenme', 'fırsat', 'başlangıç', 'maddi güven', 'geçmiş'],
-    context: 'Geçmişteki öğrenme fırsatlarının veya motivasyon eksikliklerinin etkisi.',
+    context:
+      'Geçmişteki öğrenme fırsatlarının veya motivasyon eksikliklerinin etkisi.',
     group: 'Tılsımlar',
   },
   {
@@ -977,9 +987,7 @@ export const position1Meanings: SituationAnalysisPositionMeaning[] = [
 export const getPosition1Meaning = (
   cardName: string
 ): SituationAnalysisPositionMeaning | undefined => {
-  return position1Meanings.find(
-    meaning => meaning.card === cardName
-  );
+  return position1Meanings.find(meaning => meaning.card === cardName);
 };
 
 // Ana index dosyası için uyumluluk fonksiyonu
@@ -1004,9 +1012,10 @@ export const getSituationAnalysisPosition1MeaningByCardName = (
 };
 
 // Tüm pozisyon 1 anlamlarını alma fonksiyonu
-export const getAllPosition1Meanings = (): SituationAnalysisPositionMeaning[] => {
-  return position1Meanings;
-};
+export const getAllPosition1Meanings =
+  (): SituationAnalysisPositionMeaning[] => {
+    return position1Meanings;
+  };
 
 // Pozisyon 1 anlamlarını filtreleme fonksiyonu
 export const getPosition1MeaningsByGroup = (

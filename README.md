@@ -1,6 +1,7 @@
 # Mystik Tarot - Frontend Uygulaması
 
-Bu proje, Next.js tabanlı bir tarot okuma uygulamasıdır. Kullanıcılar farklı tarot açılımları yapabilir ve kartların anlamlarını öğrenebilir.
+Bu proje, Next.js tabanlı bir tarot okuma uygulamasıdır. Kullanıcılar farklı
+tarot açılımları yapabilir ve kartların anlamlarını öğrenebilir.
 
 ## Özellikler
 

@@ -3,7 +3,17 @@
  * Tüm UI bileşenleri için ortak tema sistemi
  */
 
-export type Theme = 'default' | 'amber' | 'pink' | 'purple' | 'blue' | 'green' | 'emerald';
+export type Theme =
+  | 'default'
+  | 'amber'
+  | 'pink'
+  | 'purple'
+  | 'blue'
+  | 'green'
+  | 'emerald'
+  | 'red'
+  | 'orange'
+  | 'yellow';
 
 export interface ThemeConfig {
   container: string;

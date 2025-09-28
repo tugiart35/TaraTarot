@@ -1,6 +1,6 @@
 /*
  * Auth SEO Meta Management
- * 
+ *
  * Bu dosya authentication sayfaları için SEO meta tag yönetimini içerir.
  * Dynamic meta tags, Open Graph ve Twitter Cards sağlar.
  */
@@ -29,53 +29,65 @@ export class AuthSEO {
   private static readonly DEFAULT_META: Record<string, AuthPageMeta> = {
     login: {
       title: 'Sign In - Tarot Reading',
-      description: 'Sign in to your tarot reading account to access your personalized readings and insights.',
+      description:
+        'Sign in to your tarot reading account to access your personalized readings and insights.',
       keywords: 'tarot, sign in, login, authentication, reading',
       ogTitle: 'Sign In - Tarot Reading',
-      ogDescription: 'Sign in to your tarot reading account to access your personalized readings and insights.',
+      ogDescription:
+        'Sign in to your tarot reading account to access your personalized readings and insights.',
       ogImage: '/images/auth/login-og.jpg',
       twitterCard: 'summary_large_image',
       twitterTitle: 'Sign In - Tarot Reading',
-      twitterDescription: 'Sign in to your tarot reading account to access your personalized readings and insights.',
+      twitterDescription:
+        'Sign in to your tarot reading account to access your personalized readings and insights.',
       twitterImage: '/images/auth/login-twitter.jpg',
       canonicalUrl: '',
     },
     register: {
       title: 'Sign Up - Tarot Reading',
-      description: 'Create your tarot reading account to start your journey of self-discovery and spiritual guidance.',
+      description:
+        'Create your tarot reading account to start your journey of self-discovery and spiritual guidance.',
       keywords: 'tarot, sign up, register, account, reading',
       ogTitle: 'Sign Up - Tarot Reading',
-      ogDescription: 'Create your tarot reading account to start your journey of self-discovery and spiritual guidance.',
+      ogDescription:
+        'Create your tarot reading account to start your journey of self-discovery and spiritual guidance.',
       ogImage: '/images/auth/register-og.jpg',
       twitterCard: 'summary_large_image',
       twitterTitle: 'Sign Up - Tarot Reading',
-      twitterDescription: 'Create your tarot reading account to start your journey of self-discovery and spiritual guidance.',
+      twitterDescription:
+        'Create your tarot reading account to start your journey of self-discovery and spiritual guidance.',
       twitterImage: '/images/auth/register-twitter.jpg',
       canonicalUrl: '',
     },
     reset: {
       title: 'Reset Password - Tarot Reading',
-      description: 'Reset your password to regain access to your tarot reading account.',
+      description:
+        'Reset your password to regain access to your tarot reading account.',
       keywords: 'tarot, password reset, account recovery, authentication',
       ogTitle: 'Reset Password - Tarot Reading',
-      ogDescription: 'Reset your password to regain access to your tarot reading account.',
+      ogDescription:
+        'Reset your password to regain access to your tarot reading account.',
       ogImage: '/images/auth/reset-og.jpg',
       twitterCard: 'summary',
       twitterTitle: 'Reset Password - Tarot Reading',
-      twitterDescription: 'Reset your password to regain access to your tarot reading account.',
+      twitterDescription:
+        'Reset your password to regain access to your tarot reading account.',
       twitterImage: '/images/auth/reset-twitter.jpg',
       canonicalUrl: '',
     },
     callback: {
       title: 'Authentication - Tarot Reading',
-      description: 'Completing your authentication to access your tarot reading account.',
+      description:
+        'Completing your authentication to access your tarot reading account.',
       keywords: 'tarot, authentication, callback, oauth',
       ogTitle: 'Authentication - Tarot Reading',
-      ogDescription: 'Completing your authentication to access your tarot reading account.',
+      ogDescription:
+        'Completing your authentication to access your tarot reading account.',
       ogImage: '/images/auth/callback-og.jpg',
       twitterCard: 'summary',
       twitterTitle: 'Authentication - Tarot Reading',
-      twitterDescription: 'Completing your authentication to access your tarot reading account.',
+      twitterDescription:
+        'Completing your authentication to access your tarot reading account.',
       twitterImage: '/images/auth/callback-twitter.jpg',
       canonicalUrl: '',
     },
@@ -84,12 +96,17 @@ export class AuthSEO {
   /**
    * Auth sayfası için meta tag'leri güncelle
    */
-  static updateAuthPageMeta(config: AuthPageConfig, customMeta?: Partial<AuthPageMeta>): void {
-    if (typeof window === 'undefined') return;
+  static updateAuthPageMeta(
+    config: AuthPageConfig,
+    customMeta?: Partial<AuthPageMeta>
+  ): void {
+    if (typeof window === 'undefined') {
+      return;
+    }
 
     const baseMeta = AuthSEO.DEFAULT_META[config.page];
     const meta = { ...baseMeta, ...customMeta };
-    
+
     // Canonical URL'i ayarla
     meta.canonicalUrl = `${config.baseUrl}/${config.locale}/auth/${config.page}`;
 
@@ -191,7 +208,7 @@ export class AuthSEO {
    * Language meta tag'ini güncelle
    */
   private static updateLanguageMeta(locale: string): void {
-    let langMeta = document.querySelector('html');
+    const langMeta = document.querySelector('html');
     if (langMeta) {
       langMeta.setAttribute('lang', locale);
     }
@@ -294,7 +311,9 @@ export class AuthSEO {
    * Auth sayfası için tüm meta tag'leri temizle
    */
   static clearAuthPageMeta(): void {
-    if (typeof window === 'undefined') return;
+    if (typeof window === 'undefined') {
+      return;
+    }
 
     // Open Graph meta tag'lerini temizle
     const ogTags = document.querySelectorAll('meta[property^="og:"]');
@@ -306,7 +325,9 @@ export class AuthSEO {
 
     // Canonical URL'i temizle
     const canonical = document.querySelector('link[rel="canonical"]');
-    if (canonical) canonical.remove();
+    if (canonical) {
+      canonical.remove();
+    }
   }
 
   /**

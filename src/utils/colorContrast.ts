@@ -35,7 +35,9 @@ export function getContrastRatio(color1: string, color2: string): number {
   const rgb1 = hexToRgb(color1);
   const rgb2 = hexToRgb(color2);
 
-  if (!rgb1 || !rgb2) return 0;
+  if (!rgb1 || !rgb2) {
+    return 0;
+  }
 
   const lum1 = getLuminance(rgb1.r, rgb1.g, rgb1.b);
   const lum2 = getLuminance(rgb2.r, rgb2.g, rgb2.b);
@@ -49,7 +51,10 @@ export function getContrastRatio(color1: string, color2: string): number {
 /**
  * WCAG 2.1 AA compliance kontrolü
  */
-export function isAccessibleContrast(foreground: string, background: string): boolean {
+export function isAccessibleContrast(
+  foreground: string,
+  background: string
+): boolean {
   const ratio = getContrastRatio(foreground, background);
   return ratio >= 4.5; // WCAG 2.1 AA standard
 }
@@ -57,7 +62,10 @@ export function isAccessibleContrast(foreground: string, background: string): bo
 /**
  * WCAG 2.1 AAA compliance kontrolü
  */
-export function isHighContrast(foreground: string, background: string): boolean {
+export function isHighContrast(
+  foreground: string,
+  background: string
+): boolean {
   const ratio = getContrastRatio(foreground, background);
   return ratio >= 7; // WCAG 2.1 AAA standard
 }

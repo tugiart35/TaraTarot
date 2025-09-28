@@ -49,8 +49,11 @@ type Locale = (typeof supportedLocales)[number];
 // Nested key'leri çözmek için helper fonksiyon
 function getNestedValue(obj: Record<string, unknown>, path: string): string {
   return path.split('.').reduce((current: unknown, key: string) => {
-    return current && typeof current === 'object' && current !== null && key in current 
-      ? (current as Record<string, unknown>)[key] 
+    return current &&
+      typeof current === 'object' &&
+      current !== null &&
+      key in current
+      ? (current as Record<string, unknown>)[key]
       : null;
   }, obj) as string;
 }
@@ -60,7 +63,9 @@ export function useTranslations() {
 
   // Mevcut locale'i pathname'den çıkar
   const currentLocale = useMemo(() => {
-    if (!pathname) return 'tr';
+    if (!pathname) {
+      return 'tr';
+    }
     const locale = pathname.split('/')[1] as Locale;
     return supportedLocales.includes(locale) ? locale : 'tr';
   }, [pathname]);

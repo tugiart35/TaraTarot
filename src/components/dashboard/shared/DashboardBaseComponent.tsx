@@ -1,6 +1,6 @@
 /*
  * Dashboard Base Component - Ortak Dashboard Logic'i
- * 
+ *
  * Bu component tüm dashboard component'leri için ortak state yönetimi ve logic sağlar.
  * DRY principle uygulayarak tekrarlanan dashboard kodlarını önler.
  */
@@ -35,7 +35,7 @@ export interface DashboardBaseComponentProps {
 
 export function useDashboardBaseComponent({
   onStatsUpdate,
-  onFiltersChange
+  onFiltersChange,
 }: DashboardBaseComponentProps = {}) {
   // State management
   const [stats, setStats] = useState<DashboardStats>({
@@ -43,15 +43,15 @@ export function useDashboardBaseComponent({
     monthlyCount: 0,
     favoriteSpread: '',
     creditBalance: 0,
-    recentActivity: []
+    recentActivity: [],
   });
-  
+
   const [filters, setFilters] = useState<DashboardFilters>({
     type: 'all',
     dateRange: 'month',
-    search: ''
+    search: '',
   });
-  
+
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -63,7 +63,9 @@ export function useDashboardBaseComponent({
 
   // Stats fetching
   const fetchStats = useCallback(async () => {
-    if (!user) return;
+    if (!user) {
+      return;
+    }
 
     setLoading(true);
     setError(null);
@@ -76,7 +78,9 @@ export function useDashboardBaseComponent({
         .eq('id', user.id)
         .single();
 
-      if (profileError) throw profileError;
+      if (profileError) {
+        throw profileError;
+      }
 
       // Fetch reading statistics
       const { data: readings, error: readingsError } = await supabase
@@ -85,25 +89,37 @@ export function useDashboardBaseComponent({
         .eq('user_id', user.id)
         .order('created_at', { ascending: false });
 
-      if (readingsError) throw readingsError;
+      if (readingsError) {
+        throw readingsError;
+      }
 
       // Calculate statistics
       const totalCount = readings?.length || 0;
-      const monthlyCount = readings?.filter((reading: any) => {
-        const readingDate = new Date(reading.created_at);
-        const now = new Date();
-        const monthAgo = new Date(now.getFullYear(), now.getMonth() - 1, now.getDate());
-        return readingDate >= monthAgo;
-      }).length || 0;
+      const monthlyCount =
+        readings?.filter((reading: any) => {
+          const readingDate = new Date(reading.created_at);
+          const now = new Date();
+          const monthAgo = new Date(
+            now.getFullYear(),
+            now.getMonth() - 1,
+            now.getDate()
+          );
+          return readingDate >= monthAgo;
+        }).length || 0;
 
       // Find favorite spread
-      const spreadCounts = readings?.reduce((acc: any, reading: any) => {
-        acc[reading.reading_type] = (acc[reading.reading_type] || 0) + 1;
-        return acc;
-      }, {} as Record<string, number>) || {};
+      const spreadCounts =
+        readings?.reduce(
+          (acc: any, reading: any) => {
+            acc[reading.reading_type] = (acc[reading.reading_type] || 0) + 1;
+            return acc;
+          },
+          {} as Record<string, number>
+        ) || {};
 
-      const favoriteSpread = Object.keys(spreadCounts).reduce((a, b) => 
-        spreadCounts[a] > spreadCounts[b] ? a : b, 'love'
+      const favoriteSpread = Object.keys(spreadCounts).reduce(
+        (a, b) => (spreadCounts[a] > spreadCounts[b] ? a : b),
+        'love'
       );
 
       // Get recent activity
@@ -114,13 +130,14 @@ export function useDashboardBaseComponent({
         monthlyCount,
         favoriteSpread,
         creditBalance: profile?.credit_balance || 0,
-        recentActivity
+        recentActivity,
       };
 
       setStats(newStats);
       onStatsUpdate?.(newStats);
     } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'İstatistikler yüklenemedi';
+      const errorMessage =
+        err instanceof Error ? err.message : 'İstatistikler yüklenemedi';
       setError(errorMessage);
       showToast('error', errorMessage);
     } finally {
@@ -129,17 +146,20 @@ export function useDashboardBaseComponent({
   }, [user, onStatsUpdate, showToast]);
 
   // Filters handling
-  const updateFilters = useCallback((newFilters: Partial<DashboardFilters>) => {
-    const updatedFilters = { ...filters, ...newFilters };
-    setFilters(updatedFilters);
-    onFiltersChange?.(updatedFilters);
-  }, [filters, onFiltersChange]);
+  const updateFilters = useCallback(
+    (newFilters: Partial<DashboardFilters>) => {
+      const updatedFilters = { ...filters, ...newFilters };
+      setFilters(updatedFilters);
+      onFiltersChange?.(updatedFilters);
+    },
+    [filters, onFiltersChange]
+  );
 
   const resetFilters = useCallback(() => {
     const defaultFilters: DashboardFilters = {
       type: 'all',
       dateRange: 'month',
-      search: ''
+      search: '',
     };
     setFilters(defaultFilters);
     onFiltersChange?.(defaultFilters);
@@ -147,7 +167,9 @@ export function useDashboardBaseComponent({
 
   // Credit balance refresh
   const refreshCreditBalance = useCallback(async () => {
-    if (!user) return;
+    if (!user) {
+      return;
+    }
 
     try {
       const { data: profile, error: profileError } = await supabase
@@ -156,16 +178,22 @@ export function useDashboardBaseComponent({
         .eq('id', user.id)
         .single();
 
-      if (profileError) throw profileError;
+      if (profileError) {
+        throw profileError;
+      }
 
       setStats(prev => ({
         ...prev,
-        creditBalance: profile?.credit_balance || 0
+        creditBalance: profile?.credit_balance || 0,
       }));
 
-      showToast('success', t('dashboard.creditBalanceRefreshed', 'Kredi bakiyesi yenilendi'));
+      showToast(
+        'success',
+        t('dashboard.creditBalanceRefreshed', 'Kredi bakiyesi yenilendi')
+      );
     } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'Kredi bakiyesi yenilenemedi';
+      const errorMessage =
+        err instanceof Error ? err.message : 'Kredi bakiyesi yenilenemedi';
       showToast('error', errorMessage);
     }
   }, [user, showToast, t]);
@@ -203,7 +231,7 @@ export function useDashboardBaseComponent({
     filters,
     loading,
     error,
-    
+
     // Actions
     fetchStats,
     updateFilters,
@@ -214,12 +242,12 @@ export function useDashboardBaseComponent({
     navigateToSettings,
     navigateToCredits,
     clearError,
-    
+
     // Setters
     setStats,
     setFilters,
     setLoading,
-    setError
+    setError,
   };
 }
 
@@ -230,7 +258,7 @@ export const DashboardUtils = {
     return d.toLocaleDateString('tr-TR', {
       year: 'numeric',
       month: 'long',
-      day: 'numeric'
+      day: 'numeric',
     });
   },
 
@@ -243,7 +271,7 @@ export const DashboardUtils = {
     const now = new Date();
     const diffTime = Math.abs(now.getTime() - created.getTime());
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    
+
     if (diffDays < 30) {
       return `${diffDays} gün`;
     } else if (diffDays < 365) {
@@ -256,32 +284,40 @@ export const DashboardUtils = {
   },
 
   getUserLevel: (totalReadings: number): string => {
-    if (totalReadings >= 100) return 'Usta';
-    if (totalReadings >= 50) return 'Deneyimli';
-    if (totalReadings >= 20) return 'Orta';
-    if (totalReadings >= 5) return 'Başlangıç';
+    if (totalReadings >= 100) {
+      return 'Usta';
+    }
+    if (totalReadings >= 50) {
+      return 'Deneyimli';
+    }
+    if (totalReadings >= 20) {
+      return 'Orta';
+    }
+    if (totalReadings >= 5) {
+      return 'Başlangıç';
+    }
     return 'Yeni';
   },
 
   getReadingTypeIcon: (type: string): string => {
     const icons: Record<string, string> = {
-      'love': '💕',
-      'career': '💼',
-      'money': '💰',
-      'general': '🔮',
-      'numerology': '🔢'
+      love: '💕',
+      career: '💼',
+      money: '💰',
+      general: '🔮',
+      numerology: '🔢',
     };
     return icons[type] || '🔮';
   },
 
   getReadingTypeColor: (type: string): string => {
     const colors: Record<string, string> = {
-      'love': 'text-pink-500',
-      'career': 'text-blue-500',
-      'money': 'text-green-500',
-      'general': 'text-purple-500',
-      'numerology': 'text-orange-500'
+      love: 'text-pink-500',
+      career: 'text-blue-500',
+      money: 'text-green-500',
+      general: 'text-purple-500',
+      numerology: 'text-orange-500',
     };
     return colors[type] || 'text-gray-500';
-  }
+  },
 };

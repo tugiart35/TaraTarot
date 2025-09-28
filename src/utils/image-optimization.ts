@@ -39,12 +39,14 @@ export const CARD_IMAGE_SIZES = {
   large: {
     width: 200,
     height: 300,
-    sizes: '(max-width: 640px) 150px, (max-width: 768px) 180px, (max-width: 1024px) 200px, 200px',
+    sizes:
+      '(max-width: 640px) 150px, (max-width: 768px) 180px, (max-width: 1024px) 200px, 200px',
   },
   xlarge: {
     width: 250,
     height: 375,
-    sizes: '(max-width: 640px) 180px, (max-width: 768px) 220px, (max-width: 1024px) 250px, 250px',
+    sizes:
+      '(max-width: 640px) 180px, (max-width: 768px) 220px, (max-width: 1024px) 250px, 250px',
   },
 } as const;
 
@@ -74,15 +76,19 @@ export const CRITICAL_CARDS = [
  * Image format detection
  */
 export function getOptimalImageFormat(): 'webp' | 'avif' | 'jpeg' {
-  if (typeof window === 'undefined') return 'jpeg';
-  
+  if (typeof window === 'undefined') {
+    return 'jpeg';
+  }
+
   // AVIF support check
   const canvas = document.createElement('canvas');
   canvas.width = 1;
   canvas.height = 1;
-  
+
   try {
-    return canvas.toDataURL('image/avif').indexOf('data:image/avif') === 0 ? 'avif' : 'webp';
+    return canvas.toDataURL('image/avif').indexOf('data:image/avif') === 0
+      ? 'avif'
+      : 'webp';
   } catch {
     return 'webp';
   }
@@ -92,14 +98,20 @@ export function getOptimalImageFormat(): 'webp' | 'avif' | 'jpeg' {
  * Device pixel ratio'ya göre optimal quality
  */
 export function getOptimalQuality(baseQuality: number = 85): number {
-  if (typeof window === 'undefined') return baseQuality;
-  
+  if (typeof window === 'undefined') {
+    return baseQuality;
+  }
+
   const dpr = window.devicePixelRatio || 1;
-  
+
   // Yüksek DPR'da quality'yi düşür (dosya boyutu için)
-  if (dpr >= 3) return Math.max(60, baseQuality - 15);
-  if (dpr >= 2) return Math.max(70, baseQuality - 10);
-  
+  if (dpr >= 3) {
+    return Math.max(60, baseQuality - 15);
+  }
+  if (dpr >= 2) {
+    return Math.max(70, baseQuality - 10);
+  }
+
   return baseQuality;
 }
 
@@ -112,13 +124,13 @@ export function getNetworkOptimizedSettings() {
   }
 
   const connection = (navigator as any).connection;
-  
+
   if (!connection) {
     return { quality: 85, format: getOptimalImageFormat() };
   }
 
   const { effectiveType, saveData } = connection;
-  
+
   // Data saver mode
   if (saveData) {
     return { quality: 60, format: 'jpeg' as const };
@@ -148,14 +160,18 @@ export function getImagePriority(imageUrl: string): boolean {
  * Lazy loading threshold calculation
  */
 export function getLazyLoadingThreshold(): number {
-  if (typeof window === 'undefined') return 0.1;
-  
+  if (typeof window === 'undefined') {
+    return 0.1;
+  }
+
   const connection = (navigator as any).connection;
-  
-  if (!connection) return 0.1;
-  
+
+  if (!connection) {
+    return 0.1;
+  }
+
   const { effectiveType } = connection;
-  
+
   switch (effectiveType) {
     case 'slow-2g':
     case '2g':
@@ -172,7 +188,7 @@ export function getLazyLoadingThreshold(): number {
  * Image cache key generation
  */
 export function generateImageCacheKey(
-  imageUrl: string, 
+  imageUrl: string,
   options: ImageOptimizationOptions
 ): string {
   const params = new URLSearchParams({
@@ -181,7 +197,7 @@ export function generateImageCacheKey(
     w: String(options.width || 0),
     h: String(options.height || 0),
   });
-  
+
   return `${imageUrl}?${params.toString()}`;
 }
 
@@ -189,16 +205,16 @@ export function generateImageCacheKey(
  * Image loading error handling
  */
 export function handleImageError(
-  error: Error, 
-  imageUrl: string, 
+  error: Error,
+  imageUrl: string,
   fallbackUrl?: string
 ): string {
   console.warn(`Image loading failed: ${imageUrl}`, error);
-  
+
   if (fallbackUrl) {
     return fallbackUrl;
   }
-  
+
   // Default fallback
   return '/cards/CardBack.jpg';
 }

@@ -35,7 +35,11 @@ export async function GET(request: NextRequest) {
   const type = searchParams.get('type') as EmailOtpType | null;
   const locale = extractLocaleFromRequest(request);
 
-  logger.info('Email confirmation callback', { token_hash, type, locale } as any);
+  logger.info('Email confirmation callback', {
+    token_hash,
+    type,
+    locale,
+  } as any);
 
   if (token_hash && type) {
     const cookieStore = await cookies();
@@ -47,7 +51,9 @@ export async function GET(request: NextRequest) {
           getAll() {
             return cookieStore.getAll();
           },
-          setAll(cookiesToSet: Array<{ name: string; value: string; options?: any }>) {
+          setAll(
+            cookiesToSet: Array<{ name: string; value: string; options?: any }>
+          ) {
             try {
               cookiesToSet.forEach(({ name, value, options }) =>
                 cookieStore.set(name, value, options)
@@ -71,14 +77,18 @@ export async function GET(request: NextRequest) {
         logger.info('Email confirmation successful');
 
         // Kullanıcı bilgilerini al
-        const { data: { user } } = await supabase.auth.getUser();
-        
+        const {
+          data: { user },
+        } = await supabase.auth.getUser();
+
         if (user) {
           // Profile kontrolü ve oluşturma
           try {
-            const { ensureProfileExists } = await import('@/lib/utils/profile-utils');
+            const { ensureProfileExists } = await import(
+              '@/lib/utils/profile-utils'
+            );
             const profileResult = await ensureProfileExists(user);
-            
+
             if (!profileResult.success) {
               console.warn('Profile kontrolü başarısız:', profileResult.error);
               // Profile sorunu giriş işlemini etkilemez
@@ -87,14 +97,17 @@ export async function GET(request: NextRequest) {
             console.warn('Profile kontrol hatası:', profileError);
             // Profile hatası giriş işlemini etkilemez
           }
-          
+
           // Admin kontrolü yap
           const isUserAdmin = await AdminDetectionService.isUserAdmin(user.id);
           AdminDetectionService.logAdminAccess(user.id, isUserAdmin);
-          
+
           // Yönlendirme kararı
-          const redirectPath = AdminDetectionService.getRedirectPath(isUserAdmin, locale);
-          
+          const redirectPath = AdminDetectionService.getRedirectPath(
+            isUserAdmin,
+            locale
+          );
+
           // Başarılı giriş - admin durumuna göre yönlendir
           return RedirectUtils.createRedirectResponse(request, redirectPath);
         } else {

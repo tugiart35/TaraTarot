@@ -57,8 +57,8 @@ export function usePerformanceMonitoring() {
         custom_map: {
           navigation_load_time: metrics.navigationLoadTime,
           layout_render_time: metrics.layoutRenderTime,
-          user_interaction_time: metrics.userInteractionTime
-        }
+          user_interaction_time: metrics.userInteractionTime,
+        },
       });
     }
   }, []);
@@ -73,8 +73,8 @@ export function usePerformanceMonitoring() {
         custom_map: {
           interaction_type: event.type,
           pathname: event.pathname,
-          timestamp: event.timestamp
-        }
+          timestamp: event.timestamp,
+        },
       });
     }
   }, []);
@@ -82,31 +82,34 @@ export function usePerformanceMonitoring() {
   // Layout load time tracking
   const trackLayoutLoad = useCallback(() => {
     const startTime = performance.now();
-    
+
     return () => {
       const endTime = performance.now();
       const loadTime = endTime - startTime;
-      
+
       trackPerformance({
         navigationLoadTime: loadTime,
         layoutRenderTime: 0,
         userInteractionTime: 0,
-        totalLayoutTime: loadTime
+        totalLayoutTime: loadTime,
       });
     };
   }, [trackPerformance]);
 
   // User interaction tracking
-  const trackUserInteraction = useCallback((item: string, type: 'click' | 'hover' | 'focus') => {
-    const event: NavigationEvent = {
-      type,
-      item,
-      timestamp: Date.now(),
-      pathname
-    };
-    
-    trackNavigationEvent(event);
-  }, [pathname, trackNavigationEvent]);
+  const trackUserInteraction = useCallback(
+    (item: string, type: 'click' | 'hover' | 'focus') => {
+      const event: NavigationEvent = {
+        type,
+        item,
+        timestamp: Date.now(),
+        pathname,
+      };
+
+      trackNavigationEvent(event);
+    },
+    [pathname, trackNavigationEvent]
+  );
 
   // Page view tracking
   useEffect(() => {
@@ -114,25 +117,31 @@ export function usePerformanceMonitoring() {
       window.gtag('config', 'G-Y2HESMXJXD', {
         page_title: document.title,
         page_location: window.location.href,
-        page_path: pathname
+        page_path: pathname,
       });
     }
   }, [pathname]);
 
   // Performance observer for layout components
   useEffect(() => {
-    if (typeof window === 'undefined') return;
+    if (typeof window === 'undefined') {
+      return;
+    }
 
-    const observer = new PerformanceObserver((list) => {
+    const observer = new PerformanceObserver(list => {
       const entries = list.getEntries();
-      entries.forEach((entry) => {
+      entries.forEach(entry => {
         if (entry.entryType === 'navigation') {
           const navigationEntry = entry as PerformanceNavigationTiming;
           trackPerformance({
-            navigationLoadTime: navigationEntry.loadEventEnd - navigationEntry.loadEventStart,
-            layoutRenderTime: navigationEntry.domContentLoadedEventEnd - navigationEntry.domContentLoadedEventStart,
+            navigationLoadTime:
+              navigationEntry.loadEventEnd - navigationEntry.loadEventStart,
+            layoutRenderTime:
+              navigationEntry.domContentLoadedEventEnd -
+              navigationEntry.domContentLoadedEventStart,
             userInteractionTime: 0,
-            totalLayoutTime: navigationEntry.loadEventEnd - navigationEntry.fetchStart
+            totalLayoutTime:
+              navigationEntry.loadEventEnd - navigationEntry.fetchStart,
           });
         }
       });
@@ -147,6 +156,6 @@ export function usePerformanceMonitoring() {
     trackPerformance,
     trackNavigationEvent,
     trackLayoutLoad,
-    trackUserInteraction
+    trackUserInteraction,
   };
 }

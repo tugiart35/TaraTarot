@@ -80,7 +80,9 @@ export interface SituationAnalysisPositionMeaning {
 }
 
 // Kart grubunu belirleme fonksiyonu
-function getCardGroup(card: TarotCard | string): 'Majör Arkana' | 'Kupalar' | 'Kılıçlar' | 'Asalar' | 'Tılsımlar' {
+function getCardGroup(
+  card: TarotCard | string
+): 'Majör Arkana' | 'Kupalar' | 'Kılıçlar' | 'Asalar' | 'Tılsımlar' {
   if (typeof card === 'object') {
     // TarotCard objesi ise
     if (card.suit === 'major') {
@@ -102,14 +104,22 @@ function getCardGroup(card: TarotCard | string): 'Majör Arkana' | 'Kupalar' | '
   } else {
     // String ise
     const name = card.toLowerCase();
-    
-    if (name.includes('kupalar') || name.includes('kadehler') || name.includes('pehara')) {
+
+    if (
+      name.includes('kupalar') ||
+      name.includes('kadehler') ||
+      name.includes('pehara')
+    ) {
       return 'Kupalar';
     } else if (name.includes('kılıçlar') || name.includes('mačeva')) {
       return 'Kılıçlar';
     } else if (name.includes('asalar') || name.includes('štapova')) {
       return 'Asalar';
-    } else if (name.includes('tılsımlar') || name.includes('altınlar') || name.includes('pentakla')) {
+    } else if (
+      name.includes('tılsımlar') ||
+      name.includes('altınlar') ||
+      name.includes('pentakla')
+    ) {
       return 'Tılsımlar';
     } else {
       return 'Majör Arkana';
@@ -138,19 +148,20 @@ export function getSituationAnalysisMeaningByCardAndPosition(
       keywords: card.keywordsTr || card.keywords || [],
       advice: 'Bu pozisyon için özel bir anlam tanımlanmamış.',
       context: 'Tanımlanmamış pozisyon',
-      group: getCardGroup(card)
+      group: getCardGroup(card),
     };
   }
 
   // Kart ismi mapping'ini al
   const cardNameMapping = getCardNameMappingSync();
-  
+
   // Kart ismini İngilizce'ye çevir - önce nameTr'yi dene, sonra name'i
-  const englishCardName = cardNameMapping[card.nameTr] || cardNameMapping[card.name] || card.name;
+  const englishCardName =
+    cardNameMapping[card.nameTr] || cardNameMapping[card.name] || card.name;
   console.log('🔄 Card name mapping:', {
     original: card.nameTr,
     originalName: card.name,
-    mapped: englishCardName
+    mapped: englishCardName,
   });
 
   // Pozisyon özel anlamları kontrol et
@@ -158,28 +169,34 @@ export function getSituationAnalysisMeaningByCardAndPosition(
 
   switch (position) {
     case 1:
-      positionMeaning = getSituationAnalysisPosition1MeaningByCardName(englishCardName);
+      positionMeaning =
+        getSituationAnalysisPosition1MeaningByCardName(englishCardName);
       break;
     case 2:
-      positionMeaning = getSituationAnalysisPosition2MeaningByCardName(englishCardName);
+      positionMeaning =
+        getSituationAnalysisPosition2MeaningByCardName(englishCardName);
       break;
     case 3:
-      positionMeaning = getSituationAnalysisPosition3MeaningByCardName(englishCardName);
+      positionMeaning =
+        getSituationAnalysisPosition3MeaningByCardName(englishCardName);
       break;
     case 4:
-      positionMeaning = getSituationAnalysisPosition4MeaningByCardName(englishCardName);
+      positionMeaning =
+        getSituationAnalysisPosition4MeaningByCardName(englishCardName);
       break;
     case 5:
-      positionMeaning = getSituationAnalysisPosition5MeaningByCardName(englishCardName);
+      positionMeaning =
+        getSituationAnalysisPosition5MeaningByCardName(englishCardName);
       break;
     case 6:
-      positionMeaning = getSituationAnalysisPosition6MeaningByCardName(englishCardName);
+      positionMeaning =
+        getSituationAnalysisPosition6MeaningByCardName(englishCardName);
       break;
     case 7:
-      positionMeaning = getSituationAnalysisPosition7MeaningByCardName(englishCardName);
+      positionMeaning =
+        getSituationAnalysisPosition7MeaningByCardName(englishCardName);
       break;
   }
-
 
   if (positionMeaning) {
     const result = {
@@ -211,8 +228,11 @@ export function getSituationAnalysisMeaningByCardAndPosition(
     upright: isReversed ? baseMeaning.reversed : baseMeaning.upright,
     reversed: isReversed ? baseMeaning.upright : baseMeaning.reversed,
   };
-  
-  console.log('⚠️ Returning fallback meaning:', fallbackResult.upright.substring(0, 50) + '...');
+
+  console.log(
+    '⚠️ Returning fallback meaning:',
+    fallbackResult.upright.substring(0, 50) + '...'
+  );
   return fallbackResult;
 }
 
@@ -257,7 +277,9 @@ export const situationAnalysisPositions = {
 
 // Pozisyon bilgilerini alma fonksiyonu
 export const getSituationAnalysisPositionInfo = (position: number) => {
-  return situationAnalysisPositions[position as keyof typeof situationAnalysisPositions];
+  return situationAnalysisPositions[
+    position as keyof typeof situationAnalysisPositions
+  ];
 };
 
 // Tüm pozisyonları alma fonksiyonu
@@ -283,30 +305,35 @@ export const getSituationAnalysisMeaningByCardNameAndPosition = (
     number: 0,
     meaning: {
       upright: 'Temel anlam',
-      reversed: 'Ters anlam'
+      reversed: 'Ters anlam',
     },
     meaningTr: {
       upright: 'Temel anlam',
-      reversed: 'Ters anlam'
+      reversed: 'Ters anlam',
     },
     keywords: [],
     keywordsTr: [],
-    image: ''
+    image: '',
   };
 
-  return getSituationAnalysisMeaningByCardAndPosition(mockCard, position, isReversed);
+  return getSituationAnalysisMeaningByCardAndPosition(
+    mockCard,
+    position,
+    isReversed
+  );
 };
 
 // Tüm pozisyon anlamlarını birleştiren ana array
-export const allSituationAnalysisPositionMeanings: SituationAnalysisPositionMeaning[] = [
-  ...position1Meanings,
-  ...position2Meanings,
-  ...position3Meanings,
-  ...position4Meanings,
-  ...position5Meanings,
-  ...position6Meanings,
-  ...position7Meanings,
-];
+export const allSituationAnalysisPositionMeanings: SituationAnalysisPositionMeaning[] =
+  [
+    ...position1Meanings,
+    ...position2Meanings,
+    ...position3Meanings,
+    ...position4Meanings,
+    ...position5Meanings,
+    ...position6Meanings,
+    ...position7Meanings,
+  ];
 
 // Pozisyon bazlı anlam alma fonksiyonları
 export function getSituationAnalysisMeaningsByPosition(
@@ -343,7 +370,10 @@ export function getSituationAnalysisMeaningsByCard(
   const meanings: SituationAnalysisPositionMeaning[] = [];
 
   for (let position = 1; position <= 7; position++) {
-    const meaning = getSituationAnalysisMeaningByCardAndPosition(card, position);
+    const meaning = getSituationAnalysisMeaningByCardAndPosition(
+      card,
+      position
+    );
     if (meaning) {
       meanings.push(meaning);
     }
@@ -360,7 +390,8 @@ export function getAllSituationAnalysisMeanings(): Record<
   const allMeanings: Record<number, SituationAnalysisPositionMeaning[]> = {};
 
   for (let position = 1; position <= 7; position++) {
-    allMeanings[position] = getSituationAnalysisMeaningsByPosition(position) || [];
+    allMeanings[position] =
+      getSituationAnalysisMeaningsByPosition(position) || [];
   }
 
   return allMeanings;
@@ -370,7 +401,9 @@ export function getAllSituationAnalysisMeanings(): Record<
 export const getSituationAnalysisMeaningsByGroup = (
   group: 'Majör Arkana' | 'Kupalar' | 'Kılıçlar' | 'Asalar' | 'Tılsımlar'
 ): SituationAnalysisPositionMeaning[] => {
-  return allSituationAnalysisPositionMeanings.filter(meaning => meaning.group === group);
+  return allSituationAnalysisPositionMeanings.filter(
+    meaning => meaning.group === group
+  );
 };
 
 // Pozisyon ve gruba göre filtreleme fonksiyonu
@@ -387,9 +420,11 @@ export const getSituationAnalysisMeaningsByPositionAndGroup = (
 export const searchSituationAnalysisMeaningsByCardName = (
   cardName: string
 ): SituationAnalysisPositionMeaning[] => {
-  return allSituationAnalysisPositionMeanings.filter(meaning =>
-    meaning.cardName.toLowerCase().includes(cardName.toLowerCase()) ||
-    meaning.card.toLowerCase().includes(cardName.toLowerCase())
+  return allSituationAnalysisPositionMeanings.filter(
+    meaning =>
+      (meaning.cardName &&
+        meaning.cardName.toLowerCase().includes(cardName.toLowerCase())) ||
+      meaning.card.toLowerCase().includes(cardName.toLowerCase())
   );
 };
 
@@ -414,12 +449,18 @@ export const getSituationAnalysisStatistics = () => {
     'Majör Arkana': allSituationAnalysisPositionMeanings.filter(
       m => m.group === 'Majör Arkana'
     ).length,
-    Kupalar: allSituationAnalysisPositionMeanings.filter(m => m.group === 'Kupalar').length,
-    Kılıçlar: allSituationAnalysisPositionMeanings.filter(m => m.group === 'Kılıçlar')
-      .length,
-    Asalar: allSituationAnalysisPositionMeanings.filter(m => m.group === 'Asalar').length,
-    Tılsımlar: allSituationAnalysisPositionMeanings.filter(m => m.group === 'Tılsımlar')
-      .length,
+    Kupalar: allSituationAnalysisPositionMeanings.filter(
+      m => m.group === 'Kupalar'
+    ).length,
+    Kılıçlar: allSituationAnalysisPositionMeanings.filter(
+      m => m.group === 'Kılıçlar'
+    ).length,
+    Asalar: allSituationAnalysisPositionMeanings.filter(
+      m => m.group === 'Asalar'
+    ).length,
+    Tılsımlar: allSituationAnalysisPositionMeanings.filter(
+      m => m.group === 'Tılsımlar'
+    ).length,
   };
 
   return {

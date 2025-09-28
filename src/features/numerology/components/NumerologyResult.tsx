@@ -13,7 +13,10 @@ interface NumerologyResultProps {
   loading?: boolean;
 }
 
-export default function NumerologyResult({ result, loading = false }: NumerologyResultProps) {
+export default function NumerologyResult({
+  result,
+  loading = false,
+}: NumerologyResultProps) {
   const getTypeLabel = (type: string) => {
     switch (type) {
       case 'life-path':

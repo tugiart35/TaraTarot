@@ -174,11 +174,15 @@ export class APIKeyManager {
       };
 
       // Sadece sağlanan alanları güncelle
-      if (updateData.name !== undefined) updatePayload.name = updateData.name;
-      if (updateData.service_type !== undefined)
+      if (updateData.name !== undefined) {
+        updatePayload.name = updateData.name;
+      }
+      if (updateData.service_type !== undefined) {
         updatePayload.service_type = updateData.service_type;
-      if (updateData.active !== undefined)
+      }
+      if (updateData.active !== undefined) {
         updatePayload.active = updateData.active;
+      }
 
       // Key value güncelleniyorsa şifrele
       if (updateData.key_value !== undefined) {
@@ -294,7 +298,9 @@ export class APIKeyManager {
 
   // Key'i maskele (görüntüleme için)
   static maskKey(key: string): string {
-    if (key.length <= 8) return '*'.repeat(key.length);
+    if (key.length <= 8) {
+      return '*'.repeat(key.length);
+    }
     return key.slice(0, 4) + '*'.repeat(key.length - 8) + key.slice(-4);
   }
 

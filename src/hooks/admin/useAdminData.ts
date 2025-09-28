@@ -1,6 +1,6 @@
 /*
  * Admin Data Hook
- * 
+ *
  * Bu dosya admin paneli için ortak data fetching hook'unu sağlar.
  * DRY principle uygulayarak tekrarlanan data fetching kodlarını önler.
  */
@@ -12,19 +12,23 @@ import { AdminDataHookReturn } from '@/types/admin.types';
 interface UseAdminDataOptions {
   table: string;
   select?: string;
-  filters?: Record<string, any>;
+  filters?: Record<string, any> | undefined;
   orderBy?: { column: string; ascending?: boolean };
   limit?: number;
   enabled?: boolean;
 }
 
-export function useAdminData<T>(options: UseAdminDataOptions): AdminDataHookReturn<T> {
+export function useAdminData<T>(
+  options: UseAdminDataOptions
+): AdminDataHookReturn<T> {
   const [data, setData] = useState<T[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   const fetchData = useCallback(async () => {
-    if (!options.enabled) return;
+    if (!options.enabled) {
+      return;
+    }
 
     try {
       setLoading(true);
@@ -43,8 +47,8 @@ export function useAdminData<T>(options: UseAdminDataOptions): AdminDataHookRetu
 
       // Apply ordering
       if (options.orderBy) {
-        query = query.order(options.orderBy.column, { 
-          ascending: options.orderBy.ascending ?? false 
+        query = query.order(options.orderBy.column, {
+          ascending: options.orderBy.ascending ?? false,
         });
       }
 
@@ -67,7 +71,14 @@ export function useAdminData<T>(options: UseAdminDataOptions): AdminDataHookRetu
     } finally {
       setLoading(false);
     }
-  }, [options.table, options.select, options.filters, options.orderBy, options.limit, options.enabled]);
+  }, [
+    options.table,
+    options.select,
+    options.filters,
+    options.orderBy,
+    options.limit,
+    options.enabled,
+  ]);
 
   useEffect(() => {
     fetchData();
@@ -77,7 +88,7 @@ export function useAdminData<T>(options: UseAdminDataOptions): AdminDataHookRetu
     data,
     loading,
     error,
-    refetch: fetchData
+    refetch: fetchData,
   };
 }
 
@@ -85,11 +96,12 @@ export function useAdminData<T>(options: UseAdminDataOptions): AdminDataHookRetu
 export function useAdminUsers(userId?: string, limit?: number) {
   return useAdminData({
     table: 'profiles',
-    select: 'id, email, display_name, credit_balance, created_at, last_sign_in_at',
+    select:
+      'id, email, display_name, credit_balance, created_at, last_sign_in_at',
     filters: userId ? { id: userId } : undefined,
     orderBy: { column: 'created_at', ascending: false },
     limit: limit || 50,
-    enabled: true
+    enabled: true,
   });
 }
 
@@ -103,7 +115,7 @@ export function useAdminReadings(userId?: string, limit?: number) {
     filters: userId ? { user_id: userId } : undefined,
     orderBy: { column: 'created_at', ascending: false },
     limit: limit || 100,
-    enabled: true
+    enabled: true,
   });
 }
 
@@ -117,7 +129,7 @@ export function useAdminPayments(userId?: string, limit?: number) {
     filters: userId ? { user_id: userId } : undefined,
     orderBy: { column: 'created_at', ascending: false },
     limit: limit || 50,
-    enabled: true
+    enabled: true,
   });
 }
 
@@ -131,6 +143,6 @@ export function useAdminTransactions(userId?: string, limit?: number) {
     filters: userId ? { user_id: userId } : undefined,
     orderBy: { column: 'created_at', ascending: false },
     limit: limit || 100,
-    enabled: true
+    enabled: true,
   });
 }

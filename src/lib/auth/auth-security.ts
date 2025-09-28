@@ -1,6 +1,6 @@
 /*
  * Auth Security Utilities
- * 
+ *
  * Bu dosya authentication güvenlik özelliklerini içerir.
  * Rate limiting, input sanitization ve güvenlik kontrolleri sağlar.
  */
@@ -30,7 +30,11 @@ export class AuthSecurity {
     identifier: string,
     operation: string,
     config: RateLimitConfig = AuthSecurity.DEFAULT_RATE_LIMIT
-  ): Promise<{ allowed: boolean; remainingAttempts: number; resetTime: number }> {
+  ): Promise<{
+    allowed: boolean;
+    remainingAttempts: number;
+    resetTime: number;
+  }> {
     const key = `${identifier}:${operation}`;
     const now = Date.now();
     const stored = rateLimitStore.get(key);
@@ -93,9 +97,13 @@ export class AuthSecurity {
   /**
    * Email validation with security checks
    */
-  static validateEmailSecurity(email: string): { valid: boolean; sanitized: string; error?: string } {
+  static validateEmailSecurity(email: string): {
+    valid: boolean;
+    sanitized: string;
+    error?: string;
+  } {
     const sanitized = AuthSecurity.sanitizeInput(email);
-    
+
     // Basic email format validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(sanitized)) {
@@ -112,7 +120,11 @@ export class AuthSecurity {
 
     for (const pattern of suspiciousPatterns) {
       if (pattern.test(sanitized)) {
-        return { valid: false, sanitized, error: 'Suspicious email content detected' };
+        return {
+          valid: false,
+          sanitized,
+          error: 'Suspicious email content detected',
+        };
       }
     }
 
@@ -127,11 +139,11 @@ export class AuthSecurity {
   /**
    * Password strength validation
    */
-  static validatePasswordSecurity(password: string): { 
-    valid: boolean; 
-    score: number; 
-    suggestions: string[]; 
-    error?: string 
+  static validatePasswordSecurity(password: string): {
+    valid: boolean;
+    score: number;
+    suggestions: string[];
+    error?: string;
   } {
     const suggestions: string[] = [];
     let score = 0;
@@ -144,22 +156,42 @@ export class AuthSecurity {
     }
 
     // Character variety checks
-    if (/[a-z]/.test(password)) score += 1;
-    else suggestions.push('Add lowercase letters');
+    if (/[a-z]/.test(password)) {
+      score += 1;
+    } else {
+      suggestions.push('Add lowercase letters');
+    }
 
-    if (/[A-Z]/.test(password)) score += 1;
-    else suggestions.push('Add uppercase letters');
+    if (/[A-Z]/.test(password)) {
+      score += 1;
+    } else {
+      suggestions.push('Add uppercase letters');
+    }
 
-    if (/[0-9]/.test(password)) score += 1;
-    else suggestions.push('Add numbers');
+    if (/[0-9]/.test(password)) {
+      score += 1;
+    } else {
+      suggestions.push('Add numbers');
+    }
 
-    if (/[^a-zA-Z0-9]/.test(password)) score += 1;
-    else suggestions.push('Add special characters');
+    if (/[^a-zA-Z0-9]/.test(password)) {
+      score += 1;
+    } else {
+      suggestions.push('Add special characters');
+    }
 
     // Common password check
     const commonPasswords = [
-      'password', '123456', '123456789', 'qwerty', 'abc123',
-      'password123', 'admin', 'letmein', 'welcome', 'monkey'
+      'password',
+      '123456',
+      '123456789',
+      'qwerty',
+      'abc123',
+      'password123',
+      'admin',
+      'letmein',
+      'welcome',
+      'monkey',
     ];
 
     if (commonPasswords.includes(password.toLowerCase())) {
@@ -179,14 +211,17 @@ export class AuthSecurity {
       valid,
       score,
       suggestions,
-      error: valid ? undefined : 'Password does not meet security requirements'
+      error: valid ? undefined : 'Password does not meet security requirements',
     };
   }
 
   /**
    * Session security validation
    */
-  static validateSessionSecurity(session: any): { valid: boolean; error?: string } {
+  static validateSessionSecurity(session: any): {
+    valid: boolean;
+    error?: string;
+  } {
     if (!session) {
       return { valid: false, error: 'No session found' };
     }
@@ -242,7 +277,10 @@ export class AuthSecurity {
   /**
    * Get rate limit status
    */
-  static getRateLimitStatus(identifier: string, operation: string): {
+  static getRateLimitStatus(
+    identifier: string,
+    operation: string
+  ): {
     count: number;
     resetTime: number;
     isBlocked: boolean;

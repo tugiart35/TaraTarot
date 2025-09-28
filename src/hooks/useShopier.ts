@@ -56,7 +56,10 @@ interface PackageData {
 }
 
 export interface UseShopierReturn {
-  initiatePayment: (packageId: string, packageData: PackageData) => Promise<void>;
+  initiatePayment: (
+    packageId: string,
+    packageData: PackageData
+  ) => Promise<void>;
   loading: boolean;
   error: string | null;
   success: string | null;

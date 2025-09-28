@@ -1,11 +1,14 @@
 # Yeni Optimize Edilmiş Supabase Veritabanı Şeması
 
 ## Genel Bakış
-Bu şema, mevcut 11 tabloyu 6 optimize edilmiş tabloya indirgeyerek maliyeti düşürür ve performansı artırır.
+
+Bu şema, mevcut 11 tabloyu 6 optimize edilmiş tabloya indirgeyerek maliyeti
+düşürür ve performansı artırır.
 
 ## Tablo Yapısı
 
 ### 1. `profiles` Tablosu
+
 ```sql
 CREATE TABLE profiles (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -22,6 +25,7 @@ CREATE TABLE profiles (
 ```
 
 ### 2. `readings` Tablosu
+
 ```sql
 CREATE TABLE readings (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -41,6 +45,7 @@ CREATE TABLE readings (
 ```
 
 ### 3. `transactions` Tablosu
+
 ```sql
 CREATE TABLE transactions (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -55,6 +60,7 @@ CREATE TABLE transactions (
 ```
 
 ### 4. `packages` Tablosu
+
 ```sql
 CREATE TABLE packages (
   id SERIAL PRIMARY KEY,
@@ -71,6 +77,7 @@ CREATE TABLE packages (
 ```
 
 ### 5. `spreads` Tablosu
+
 ```sql
 CREATE TABLE spreads (
   id SERIAL PRIMARY KEY,
@@ -92,6 +99,7 @@ CREATE TABLE spreads (
 ```
 
 ### 6. `admin_logs` Tablosu
+
 ```sql
 CREATE TABLE admin_logs (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -177,6 +185,7 @@ CREATE POLICY "Admins can insert admin logs" ON admin_logs FOR INSERT WITH CHECK
 ## Veri Migrasyonu
 
 ### Eski Tablolardan Yeni Tablolara Geçiş
+
 ```sql
 -- Profiles tablosuna veri aktarımı
 INSERT INTO profiles (id, email, display_name, avatar_url, credit_balance, is_premium, is_admin, timezone, created_at, updated_at)
@@ -185,10 +194,10 @@ FROM users_old;
 
 -- Readings tablosuna veri aktarımı
 INSERT INTO readings (id, user_id, reading_type, spread_name, title, interpretation, cards, questions, cost_credits, status, metadata, created_at, updated_at)
-SELECT 
-  id, 
-  user_id, 
-  reading_type, 
+SELECT
+  id,
+  user_id,
+  reading_type,
   COALESCE(spread_name, 'Bilinmeyen Yayılım') as spread_name,
   COALESCE(title, 'Okuma') as title,
   interpretation,
@@ -203,7 +212,7 @@ FROM tarot_readings_old;
 
 -- Transactions tablosuna veri aktarımı
 INSERT INTO transactions (id, user_id, type, amount, description, reference_type, reference_id, created_at)
-SELECT 
+SELECT
   id,
   user_id,
   type,
@@ -231,4 +240,5 @@ FROM transactions_old;
 - `positions`: Tarot açılım pozisyonları
 - `details`: Admin log detayları
 
-Bu şema, mevcut uygulamanın tüm işlevselliğini korurken maliyeti ve karmaşıklığı önemli ölçüde azaltır.
+Bu şema, mevcut uygulamanın tüm işlevselliğini korurken maliyeti ve karmaşıklığı
+önemli ölçüde azaltır.

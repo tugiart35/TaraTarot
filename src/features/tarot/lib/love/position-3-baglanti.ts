@@ -215,12 +215,12 @@ export const position3Meanings: LovePositionMeaning[] = [
   },
   {
     id: 'wheel_of_fortune_pos3',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 3,
     upright:
       'Bu, karmik bir ruhsal bağlantıdır. Kader sizi bir araya getirmiştir ve bu ilişkinin ruhsal evriminizde önemli bir rolü vardır. Bağlantınız sürekli bir değişim ve büyüme içinde.',
     reversed:
-      'Ters Wheel of Fortune, ilişkinin ruhsal bir döngüde takılıp kaldığını veya olumsuz bir karmik deseni tekrarladığınızı gösterir. Değişime direniyorsunuz.',
+      'Ters The Wheel of Fortune, ilişkinin ruhsal bir döngüde takılıp kaldığını veya olumsuz bir karmik deseni tekrarladığınızı gösterir. Değişime direniyorsunuz.',
     keywords: ['karmik bağ', 'kader', 'ruhsal döngü', 'değişim', 'evrim'],
     context:
       'Ruhsal bağınız, kaderin bir araya getirdiği ve birlikte bir döngüyü tamamlamanız gereken iki ruh.',

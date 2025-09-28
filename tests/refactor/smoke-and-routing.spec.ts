@@ -1,13 +1,13 @@
 /**
  * 🧪 Smoke and Routing Tests - Tarot Web Application
- * 
+ *
  * Bu dosya sadece PLACEHOLDER plan içerir.
  * Gerçek test implementasyonu Prompt 3'te yapılacak.
- * 
+ *
  * Framework: Next.js 15.4.4 + TypeScript + Supabase
  * Test Framework: Jest + React Testing Library + Playwright
  * Branch: refactor/structure-v1
- * 
+ *
  * Last Updated: $(date)
  */
 

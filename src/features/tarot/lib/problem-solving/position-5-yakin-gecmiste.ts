@@ -14,7 +14,7 @@ Bağlı Dosyalar:
 - Evet, detaylı anlamlar mevcut
 ---
 
-*/  
+*/
 
 import { TarotCard } from '@/types/tarot';
 
@@ -175,7 +175,7 @@ export const position5Meanings: ProblemSolvingPosition5Meaning[] = [
   },
   {
     id: 'wheel_of_fortune_ps_pos5',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 5,
     upright:
       'Kader Çarkı, yakın geçmişte yaşamında ani değişimler, kaderin döngüleri veya fırsatların açığa çıkması söz konusu olmuş olabilir.',
@@ -849,8 +849,7 @@ export const position5Meanings: ProblemSolvingPosition5Meaning[] = [
     reversed:
       'Ters Tılsım Şövalyesi, yakın geçmişte durağanlık, motivasyon kaybı ya da işlerde aşırı yavaşlık yaşamış olabilirsin.',
     keywords: ['sabır', 'azim', 'istikrar', 'çalışkanlık', 'disiplin'],
-    context:
-      'Yakın geçmişin, azim ya da durağanlıkla belirlenmiş olabilir.',
+    context: 'Yakın geçmişin, azim ya da durağanlıkla belirlenmiş olabilir.',
     group: 'Tılsımlar',
   },
   {
@@ -1074,54 +1073,55 @@ export function getProblemSolvingPosition5Meaning(
 ): ProblemSolvingPosition5Meaning | null {
   // Kart ismi eşleştirmesi için hem İngilizce hem Türkçe isimleri kontrol et
   // Önce doğrudan eşleşme ara
-  let meaning = position5Meanings.find(m => 
-    m.card === card.name || 
-    m.card === card.nameTr ||
-    card.name === m.card ||
-    card.nameTr === m.card
+  let meaning = position5Meanings.find(
+    m =>
+      m.card === card.name ||
+      m.card === card.nameTr ||
+      card.name === m.card ||
+      card.nameTr === m.card
   );
-  
+
   if (meaning) {
     return meaning;
   }
-  
+
   // Kart ismi mapping'i kullanarak eşleştirme yap
   const cardNameMapping: { [key: string]: string } = {
     // Major Arcana - Türkçe
-    'Deli': 'The Fool',
-    'Büyücü': 'The Magician',
+    Deli: 'The Fool',
+    Büyücü: 'The Magician',
     'Yüksek Rahibe': 'The High Priestess',
-    'İmparatoriçe': 'The Empress',
-    'İmparator': 'The Emperor',
-    'Hierophant': 'The Hierophant',
-    'Aziz': 'The Hierophant',
-    'Aşıklar': 'The Lovers',
+    İmparatoriçe: 'The Empress',
+    İmparator: 'The Emperor',
+    Hierophant: 'The Hierophant',
+    Aziz: 'The Hierophant',
+    Aşıklar: 'The Lovers',
     'Savaş Arabası': 'The Chariot',
-    'Güç': 'Strength',
-    'Ermiş': 'The Hermit',
-    'Münzevi': 'The Hermit',
-    'Kader Çarkı': 'The Wheel of Fortune',
-    'Adalet': 'Justice',
+    Güç: 'Strength',
+    Ermiş: 'The Hermit',
+    Münzevi: 'The Hermit',
+    'Kader Çarkı': 'The The Wheel of Fortune',
+    Adalet: 'Justice',
     'Asılı Adam': 'The Hanged Man',
-    'Ölüm': 'Death',
-    'Ölçü': 'Temperance',
-    'Ölçülülük': 'Temperance',
-    'Şeytan': 'The Devil',
-    'Kule': 'The Tower',
-    'Yıldız': 'The Star',
-    'Ay': 'The Moon',
-    'Güneş': 'The Sun',
-    'Yargı': 'Judgement',
-    'Mahkeme': 'Judgement',
-    'Dünya': 'The World',
+    Ölüm: 'Death',
+    Ölçü: 'Temperance',
+    Ölçülülük: 'Temperance',
+    Şeytan: 'The Devil',
+    Kule: 'The Tower',
+    Yıldız: 'The Star',
+    Ay: 'The Moon',
+    Güneş: 'The Sun',
+    Yargı: 'Judgement',
+    Mahkeme: 'Judgement',
+    Dünya: 'The World',
   };
-  
+
   // Türkçe ismi İngilizce'ye çevir
   const englishName = cardNameMapping[card.nameTr] || card.nameTr;
-  
+
   // İngilizce isimle tekrar ara
   meaning = position5Meanings.find(m => m.card === englishName);
-  
+
   return meaning || null;
 }
 
@@ -1184,7 +1184,7 @@ export const useI18nposition5Meanings = (): I18nProblemSolvingPosition5Meaning[]
 */
 
 // Belirli bir kart için i18n destekli anlam al (hook kullanmadan)
-      export const getI18nPosition5Meaning = (
+export const getI18nPosition5Meaning = (
   cardName: string,
   t: (_key: string) => string
 ): I18nProblemSolvingPosition5Meaning | null => {

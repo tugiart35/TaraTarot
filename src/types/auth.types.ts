@@ -31,10 +31,19 @@ export type UserRole = 'admin' | 'premium' | 'user' | 'guest';
 export type SubscriptionType = 'free' | 'premium' | 'pro' | 'enterprise';
 
 // Subscription status
-export type SubscriptionStatus = 'active' | 'inactive' | 'cancelled' | 'expired' | 'pending';
+export type SubscriptionStatus =
+  | 'active'
+  | 'inactive'
+  | 'cancelled'
+  | 'expired'
+  | 'pending';
 
 // Auth state types
-export type AuthState = 'loading' | 'authenticated' | 'unauthenticated' | 'error';
+export type AuthState =
+  | 'loading'
+  | 'authenticated'
+  | 'unauthenticated'
+  | 'error';
 
 // Session timeout configuration
 export interface SessionConfig {
@@ -72,14 +81,19 @@ export interface AuthContextType {
   sessionConfig: SessionConfig;
   signOut: () => Promise<void>;
   resetPassword: (email: string) => Promise<boolean>;
-  updateProfile: (updates: Partial<EnhancedUser['user_metadata']>) => Promise<boolean>;
+  updateProfile: (
+    updates: Partial<EnhancedUser['user_metadata']>
+  ) => Promise<boolean>;
   refreshSession: () => Promise<boolean>;
   checkPermission: (permission: string) => boolean;
-  auditLog: (action: string, details?: Record<string, unknown>) => Promise<void>;
+  auditLog: (
+    action: string,
+    details?: Record<string, unknown>
+  ) => Promise<void>;
 }
 
 // Permission types for role-based access
-export type Permission = 
+export type Permission =
   | 'read:tarot'
   | 'write:tarot'
   | 'read:premium'

@@ -1,19 +1,19 @@
 /*
  * EMAIL NOTIFICATIONS - EDGE FUNCTION
- * 
+ *
  * Bu fonksiyon email bildirimlerini işler:
  * - Okuma tamamlandı bildirimleri
  * - Kredi bitti uyarıları
  * - Hoş geldin emailleri
  */
 
-import "jsr:@supabase/functions-js/edge-runtime.d.ts";
-import { createClient } from "jsr:@supabase/supabase-js@2";
+import 'jsr:@supabase/functions-js/edge-runtime.d.ts';
+import { createClient } from 'jsr:@supabase/supabase-js@2';
 
 // Environment variables
-const SUPABASE_URL = Deno.env.get("SUPABASE_URL")!;
-const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
-const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY")!;
+const SUPABASE_URL = Deno.env.get('SUPABASE_URL')!;
+const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
+const RESEND_API_KEY = Deno.env.get('RESEND_API_KEY')!;
 
 // Supabase client
 const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
@@ -26,7 +26,11 @@ interface EmailTemplate {
 }
 
 // Notification types
-type NotificationType = 'reading_completed' | 'low_credits' | 'welcome' | 'package_purchased';
+type NotificationType =
+  | 'reading_completed'
+  | 'low_credits'
+  | 'welcome'
+  | 'package_purchased';
 
 /**
  * Generate email template
@@ -69,9 +73,9 @@ function generateEmailTemplate(
           - Kullanılan Kredi: ${data.creditsUsed}
           
           Okumayı görüntülemek için: ${data.readingUrl}
-        `
+        `,
       };
-      
+
     case 'low_credits':
       return {
         subject: 'Kredi Bakiyeniz Düşük! 💳',
@@ -102,9 +106,9 @@ function generateEmailTemplate(
           - Premium Paket: 500 kredi + %20 bonus - 119.99₺
           
           Kredi paketi satın almak için: ${data.packagesUrl}
-        `
+        `,
       };
-      
+
     case 'welcome':
       return {
         subject: 'Tarot Uygulamasına Hoş Geldiniz! 🌟',
@@ -137,9 +141,9 @@ function generateEmailTemplate(
           3. Sonuçlarınızı keşfedin
           
           Uygulamaya gitmek için: ${data.appUrl}
-        `
+        `,
       };
-      
+
     case 'package_purchased':
       return {
         subject: 'Kredi Paketiniz Aktif Edildi! ✅',
@@ -174,9 +178,9 @@ function generateEmailTemplate(
           - Yeni Bakiye: ${data.newBalance}
           
           Okuma yapmak için: ${data.appUrl}
-        `
+        `,
       };
-      
+
     default:
       throw new Error(`Unknown notification type: ${type}`);
   }
@@ -193,28 +197,27 @@ async function sendEmail(
     const response = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${RESEND_API_KEY}`,
-        'Content-Type': 'application/json'
+        Authorization: `Bearer ${RESEND_API_KEY}`,
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify({
         from: 'Tarot Uygulaması <noreply@tarot.app>',
         to: [to],
         subject: template.subject,
         html: template.html,
-        text: template.text
-      })
+        text: template.text,
+      }),
     });
-    
+
     if (!response.ok) {
       const error = await response.text();
       console.error('Resend API error:', error);
       return false;
     }
-    
+
     const result = await response.json();
     console.log('Email sent successfully:', result.id);
     return true;
-    
   } catch (error) {
     console.error('Error sending email:', error);
     return false;
@@ -235,35 +238,35 @@ async function sendReadingCompletedNotification(
       .select('email, display_name')
       .eq('user_id', userId)
       .single();
-    
+
     if (profileError || !profile) {
       console.error('Error fetching profile:', profileError);
       return false;
     }
-    
+
     const { data: reading, error: readingError } = await supabase
       .from('readings')
       .select('title, reading_type, cost_credits')
       .eq('id', readingId)
       .single();
-    
+
     if (readingError || !reading) {
       console.error('Error fetching reading:', readingError);
       return false;
     }
-    
+
     // Generate email template
     const template = generateEmailTemplate('reading_completed', {
       displayName: profile.display_name,
       readingTitle: reading.title,
       readingType: reading.reading_type,
       creditsUsed: reading.cost_credits,
-      readingUrl: `${Deno.env.get('APP_URL')}/readings/${readingId}`
+      readingUrl: `${Deno.env.get('APP_URL')}/readings/${readingId}`,
     });
-    
+
     // Send email
     const success = await sendEmail(profile.email, template);
-    
+
     if (success) {
       // Log the notification
       await supabase.rpc('log_audit_event', {
@@ -271,12 +274,11 @@ async function sendReadingCompletedNotification(
         p_action: 'email_notification_sent',
         p_resource_type: 'reading',
         p_resource_id: readingId,
-        p_details: { type: 'reading_completed', email: profile.email }
+        p_details: { type: 'reading_completed', email: profile.email },
       });
     }
-    
+
     return success;
-    
   } catch (error) {
     console.error('Error sending reading completed notification:', error);
     return false;
@@ -294,22 +296,22 @@ async function sendLowCreditsWarning(userId: string): Promise<boolean> {
       .select('email, display_name, credit_balance')
       .eq('user_id', userId)
       .single();
-    
+
     if (profileError || !profile) {
       console.error('Error fetching profile:', profileError);
       return false;
     }
-    
+
     // Generate email template
     const template = generateEmailTemplate('low_credits', {
       displayName: profile.display_name,
       creditBalance: profile.credit_balance,
-      packagesUrl: `${Deno.env.get('APP_URL')}/packages`
+      packagesUrl: `${Deno.env.get('APP_URL')}/packages`,
     });
-    
+
     // Send email
     const success = await sendEmail(profile.email, template);
-    
+
     if (success) {
       // Log the notification
       await supabase.rpc('log_audit_event', {
@@ -317,12 +319,11 @@ async function sendLowCreditsWarning(userId: string): Promise<boolean> {
         p_action: 'email_notification_sent',
         p_resource_type: 'profile',
         p_resource_id: userId,
-        p_details: { type: 'low_credits', email: profile.email }
+        p_details: { type: 'low_credits', email: profile.email },
       });
     }
-    
+
     return success;
-    
   } catch (error) {
     console.error('Error sending low credits warning:', error);
     return false;
@@ -336,33 +337,36 @@ Deno.serve(async (req: Request) => {
   try {
     // Only allow POST requests
     if (req.method !== 'POST') {
-      return new Response(
-        JSON.stringify({ error: 'Method not allowed' }),
-        { status: 405, headers: { 'Content-Type': 'application/json' } }
-      );
+      return new Response(JSON.stringify({ error: 'Method not allowed' }), {
+        status: 405,
+        headers: { 'Content-Type': 'application/json' },
+      });
     }
-    
+
     // Parse request body
     const { type, userId, data } = await req.json();
-    
+
     let success = false;
-    
+
     switch (type) {
       case 'reading_completed':
-        success = await sendReadingCompletedNotification(userId, data.readingId);
+        success = await sendReadingCompletedNotification(
+          userId,
+          data.readingId
+        );
         break;
-        
+
       case 'low_credits':
         success = await sendLowCreditsWarning(userId);
         break;
-        
+
       default:
         return new Response(
           JSON.stringify({ error: 'Unknown notification type' }),
           { status: 400, headers: { 'Content-Type': 'application/json' } }
         );
     }
-    
+
     if (success) {
       return new Response(
         JSON.stringify({ message: 'Notification sent successfully' }),
@@ -374,12 +378,11 @@ Deno.serve(async (req: Request) => {
         { status: 500, headers: { 'Content-Type': 'application/json' } }
       );
     }
-    
   } catch (error) {
     console.error('Notification handler error:', error);
-    return new Response(
-      JSON.stringify({ error: 'Internal server error' }),
-      { status: 500, headers: { 'Content-Type': 'application/json' } }
-    );
+    return new Response(JSON.stringify({ error: 'Internal server error' }), {
+      status: 500,
+      headers: { 'Content-Type': 'application/json' },
+    });
   }
 });

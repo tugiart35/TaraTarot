@@ -517,7 +517,9 @@ export class AuditLogger {
 
   // Process batch
   private async processBatch(): Promise<void> {
-    if (this.pendingLogs.length === 0) return;
+    if (this.pendingLogs.length === 0) {
+      return;
+    }
 
     const batch = [...this.pendingLogs];
     this.pendingLogs = [];

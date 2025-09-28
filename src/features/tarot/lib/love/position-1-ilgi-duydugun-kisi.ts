@@ -178,12 +178,12 @@ export const position1Meanings: LovePosition1Meaning[] = [
   },
   {
     id: 'wheel_of_fortune_pos1',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 1,
     upright:
       'Bu kişi, hayatında önemli bir dönüm noktası ve değişim döngüsü içinde. Kaderin rüzgarları onun için esiyor. İlişki hayatında da ani ve beklenmedik gelişmeler yaşanabilir.',
     reversed:
-      'Ters Wheel of Fortune, bu kişinin şanssız bir dönemden geçtiğini, değişime direndiğini veya hayatının kontrolünü kaybettiğini hissettiğini gösterir. İşler onun için ters gidiyor olabilir.',
+      'Ters The Wheel of Fortune, bu kişinin şanssız bir dönemden geçtiğini, değişime direndiğini veya hayatının kontrolünü kaybettiğini hissettiğini gösterir. İşler onun için ters gidiyor olabilir.',
     keywords: ['kader', 'döngüler', 'değişim', 'şans', 'dönüm noktası'],
     context:
       'Bu kişi, hayatın iniş ve çıkışlarının tam ortasında, kader çarkının döndüğü bir noktada.',

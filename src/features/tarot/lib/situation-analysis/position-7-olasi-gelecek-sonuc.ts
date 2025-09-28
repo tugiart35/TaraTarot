@@ -151,7 +151,7 @@ export const position7Meanings: SituationAnalysisPositionMeaning[] = [
   },
   {
     id: 'wheel_of_fortune_sa_pos7',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 7,
     upright:
       'Olası gelecek: Çark lehinize döner; doğru zamanlama çarpan etkisi yaratır ve döngü yeni bir faza geçer.',
@@ -293,7 +293,7 @@ export const position7Meanings: SituationAnalysisPositionMeaning[] = [
     context: 'Gelecek potansiyeli ve olası sonuçlar',
     group: 'Majör Arkana',
   },
-  
+
   // CUPS (Kupalar)
   {
     id: 'ace_of_cups_sa_pos7',
@@ -463,7 +463,7 @@ export const position7Meanings: SituationAnalysisPositionMeaning[] = [
     context: 'Gelecek potansiyeli ve olası sonuçlar',
     group: 'Kupalar',
   },
-  
+
   // SWORDS (Kılıçlar)
   {
     id: 'ace_of_swords_sa_pos7',
@@ -495,8 +495,7 @@ export const position7Meanings: SituationAnalysisPositionMeaning[] = [
     position: 7,
     upright:
       'Olası gelecek: Sert bir gerçek ya da hayal kırıklığıyla yüzleşilir; bu açıklık iyileşmeyi başlatır.',
-    reversed:
-      'Olası gelecek: İyileşme hızlanır; affediş köprüleri onarır.',
+    reversed: 'Olası gelecek: İyileşme hızlanır; affediş köprüleri onarır.',
     keywords: ['kırgınlık', 'gerçek', 'iyileşme', 'ifade', 'affediş'],
     context: 'Gelecek potansiyeli ve olası sonuçlar',
     group: 'Kılıçlar',
@@ -519,8 +518,7 @@ export const position7Meanings: SituationAnalysisPositionMeaning[] = [
     position: 7,
     upright:
       'Olası gelecek: Pyrrhus zaferi tadında, bedeli yüksek bir kazanım mümkündür; ilişkisel maliyet görünür olur.',
-    reversed:
-      'Olası gelecek: Onarım ve yüz kurtaran uzlaşı kapısı aralanır.',
+    reversed: 'Olası gelecek: Onarım ve yüz kurtaran uzlaşı kapısı aralanır.',
     keywords: ['çatışma', 'zafer', 'maliyet', 'ego', 'uzlaşı'],
     context: 'Gelecek potansiyeli ve olası sonuçlar',
     group: 'Kılıçlar',
@@ -633,7 +631,7 @@ export const position7Meanings: SituationAnalysisPositionMeaning[] = [
     context: 'Gelecek potansiyeli ve olası sonuçlar',
     group: 'Kılıçlar',
   },
-  
+
   // WANDS (Asalar)
   {
     id: 'ace_of_wands_sa_pos7',
@@ -699,8 +697,7 @@ export const position7Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'six_of_wands_sa_pos7',
     card: 'Six of Wands',
     position: 7,
-    upright:
-      'Olası gelecek: Görünür bir zafer ve tanınma; motivasyon artar.',
+    upright: 'Olası gelecek: Görünür bir zafer ve tanınma; motivasyon artar.',
     reversed:
       'Olası gelecek: Takdir eksikliği algısı oluşabilir; başarıyı ölçmek ve anlatmak gerekir.',
     keywords: ['zafer', 'tanınma', 'algı', 'motivasyon', 'hikaye'],
@@ -803,7 +800,7 @@ export const position7Meanings: SituationAnalysisPositionMeaning[] = [
     context: 'Gelecek potansiyeli ve olası sonuçlar',
     group: 'Asalar',
   },
-  
+
   // PENTACLES (Tılsımlar)
   {
     id: 'ace_of_pentacles_sa_pos7',
@@ -837,7 +834,13 @@ export const position7Meanings: SituationAnalysisPositionMeaning[] = [
       'Olası gelecek: İşbirliği kalite üretir; ustalık görünür ve sonuçlar sağlam olur.',
     reversed:
       'Olası gelecek: Koordinasyon zayıflığı kaliteyi düşürebilir; roller netleştirilmelidir.',
-    keywords: ['işbirliği', 'ustalık', 'kalite', 'koordinasyon', 'geri bildirim'],
+    keywords: [
+      'işbirliği',
+      'ustalık',
+      'kalite',
+      'koordinasyon',
+      'geri bildirim',
+    ],
     context: 'Gelecek potansiyeli ve olası sonuçlar',
     group: 'Tılsımlar',
   },
@@ -979,25 +982,23 @@ export const position7Meanings: SituationAnalysisPositionMeaning[] = [
 export const getPosition7Meaning = (
   cardName: string
 ): SituationAnalysisPositionMeaning | undefined => {
-  return position7Meanings.find(
-    meaning => meaning.card === cardName
-  );
+  return position7Meanings.find(meaning => meaning.card === cardName);
 };
 
 // Ana index dosyası için uyumluluk fonksiyonu
 export const getSituationAnalysisPosition7Meaning = (
   cardName: string,
-  isReversed: boolean = false
+  _isReversed: boolean = false
 ): SituationAnalysisPositionMeaning | undefined => {
-  return getPosition7Meaning(cardName, isReversed);
+  return getPosition7Meaning(cardName);
 };
 
 // Kart adına göre pozisyon 7 anlamını bulma fonksiyonu (ana index için)
 export const getSituationAnalysisPosition7MeaningByCardName = (
   cardName: string,
-  isReversed: boolean = false
+  _isReversed: boolean = false
 ): SituationAnalysisPositionMeaning | undefined => {
-  const meaning = getPosition7Meaning(cardName, isReversed);
+  const meaning = getPosition7Meaning(cardName);
   if (meaning) {
     return {
       ...meaning,
@@ -1008,9 +1009,10 @@ export const getSituationAnalysisPosition7MeaningByCardName = (
 };
 
 // Tüm pozisyon 7 anlamlarını alma fonksiyonu
-export const getAllPosition7Meanings = (): SituationAnalysisPositionMeaning[] => {
-  return position7Meanings;
-};
+export const getAllPosition7Meanings =
+  (): SituationAnalysisPositionMeaning[] => {
+    return position7Meanings;
+  };
 
 // Pozisyon 7 anlamlarını filtreleme fonksiyonu
 export const getPosition7MeaningsByGroup = (

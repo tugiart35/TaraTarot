@@ -99,7 +99,9 @@ export interface RelationshipProblemsPositionMeaning {
 }
 
 // Kart grubunu belirleme fonksiyonu
-function getCardGroup(card: TarotCard | string): 'Majör Arkana' | 'Kupalar' | 'Kılıçlar' | 'Asalar' | 'Tılsımlar' {
+function getCardGroup(
+  card: TarotCard | string
+): 'Majör Arkana' | 'Kupalar' | 'Kılıçlar' | 'Asalar' | 'Tılsımlar' {
   if (typeof card === 'object') {
     // TarotCard objesi ise
     if (card.suit === 'major') {
@@ -121,14 +123,22 @@ function getCardGroup(card: TarotCard | string): 'Majör Arkana' | 'Kupalar' | '
   } else {
     // String ise
     const name = card.toLowerCase();
-    
-    if (name.includes('kupalar') || name.includes('kadehler') || name.includes('pehara')) {
+
+    if (
+      name.includes('kupalar') ||
+      name.includes('kadehler') ||
+      name.includes('pehara')
+    ) {
       return 'Kupalar';
     } else if (name.includes('kılıçlar') || name.includes('mačeva')) {
       return 'Kılıçlar';
     } else if (name.includes('asalar') || name.includes('štapova')) {
       return 'Asalar';
-    } else if (name.includes('tılsımlar') || name.includes('altınlar') || name.includes('pentakla')) {
+    } else if (
+      name.includes('tılsımlar') ||
+      name.includes('altınlar') ||
+      name.includes('pentakla')
+    ) {
       return 'Tılsımlar';
     } else {
       return 'Majör Arkana';
@@ -149,7 +159,7 @@ export function getRelationshipProblemsMeaningByCardAndPosition(
     cardName: card.name,
     cardNameTr: card.nameTr,
     position,
-    isReversed
+    isReversed,
   });
 
   // Pozisyon 1-9 arasında olmalı
@@ -166,19 +176,20 @@ export function getRelationshipProblemsMeaningByCardAndPosition(
       keywords: card.keywordsTr || card.keywords || [],
       advice: 'Bu pozisyon için özel bir anlam tanımlanmamış.',
       context: 'Tanımlanmamış pozisyon',
-      group: getCardGroup(card)
+      group: getCardGroup(card),
     };
   }
 
   // Kart ismi mapping'ini al
   const cardNameMapping = getCardNameMappingSync();
-  
+
   // Kart ismini İngilizce'ye çevir - önce nameTr'yi dene, sonra name'i
-  const englishCardName = cardNameMapping[card.nameTr] || cardNameMapping[card.name] || card.name;
+  const englishCardName =
+    cardNameMapping[card.nameTr] || cardNameMapping[card.name] || card.name;
   console.log('🔄 Card name mapping:', {
     original: card.nameTr,
     originalName: card.name,
-    mapped: englishCardName
+    mapped: englishCardName,
   });
 
   // Pozisyon özel anlamları kontrol et
@@ -186,31 +197,40 @@ export function getRelationshipProblemsMeaningByCardAndPosition(
 
   switch (position) {
     case 1:
-      positionMeaning = getRelationshipProblemsPosition1MeaningByCardName(englishCardName);
+      positionMeaning =
+        getRelationshipProblemsPosition1MeaningByCardName(englishCardName);
       break;
     case 2:
-      positionMeaning = getRelationshipProblemsposition2MeaningByCardName(englishCardName);
+      positionMeaning =
+        getRelationshipProblemsposition2MeaningByCardName(englishCardName);
       break;
     case 3:
-      positionMeaning = getRelationshipProblemsposition3MeaningByCardName(englishCardName);
+      positionMeaning =
+        getRelationshipProblemsposition3MeaningByCardName(englishCardName);
       break;
     case 4:
-      positionMeaning = getRelationshipProblemsposition4MeaningByCardName(englishCardName);
+      positionMeaning =
+        getRelationshipProblemsposition4MeaningByCardName(englishCardName);
       break;
     case 5:
-      positionMeaning = getRelationshipProblemsposition5MeaningByCardName(englishCardName);
+      positionMeaning =
+        getRelationshipProblemsposition5MeaningByCardName(englishCardName);
       break;
     case 6:
-      positionMeaning = getRelationshipProblemsposition6MeaningByCardName(englishCardName);
+      positionMeaning =
+        getRelationshipProblemsposition6MeaningByCardName(englishCardName);
       break;
     case 7:
-      positionMeaning = getRelationshipProblemsposition7MeaningByCardName(englishCardName);
+      positionMeaning =
+        getRelationshipProblemsposition7MeaningByCardName(englishCardName);
       break;
     case 8:
-      positionMeaning = getRelationshipProblemsposition8MeaningByCardName(englishCardName);
+      positionMeaning =
+        getRelationshipProblemsposition8MeaningByCardName(englishCardName);
       break;
     case 9:
-      positionMeaning = getRelationshipProblemsposition9MeaningByCardName(englishCardName);
+      positionMeaning =
+        getRelationshipProblemsposition9MeaningByCardName(englishCardName);
       break;
   }
 
@@ -223,7 +243,10 @@ export function getRelationshipProblemsMeaningByCardAndPosition(
       upright: isReversed ? positionMeaning.reversed : positionMeaning.upright,
       reversed: isReversed ? positionMeaning.upright : positionMeaning.reversed,
     };
-    console.log('✅ Returning position-specific meaning:', result.upright.substring(0, 50) + '...');
+    console.log(
+      '✅ Returning position-specific meaning:',
+      result.upright.substring(0, 50) + '...'
+    );
     return result;
   }
 
@@ -246,8 +269,11 @@ export function getRelationshipProblemsMeaningByCardAndPosition(
     upright: isReversed ? baseMeaning.reversed : baseMeaning.upright,
     reversed: isReversed ? baseMeaning.upright : baseMeaning.reversed,
   };
-  
-  console.log('⚠️ Returning fallback meaning:', fallbackResult.upright.substring(0, 50) + '...');
+
+  console.log(
+    '⚠️ Returning fallback meaning:',
+    fallbackResult.upright.substring(0, 50) + '...'
+  );
   return fallbackResult;
 }
 
@@ -302,15 +328,19 @@ export const relationshipProblemsPositions = {
 
 // Pozisyon bilgilerini alma fonksiyonu
 export const getRelationshipProblemsPositionInfo = (position: number) => {
-  return relationshipProblemsPositions[position as keyof typeof relationshipProblemsPositions];
+  return relationshipProblemsPositions[
+    position as keyof typeof relationshipProblemsPositions
+  ];
 };
 
 // Tüm pozisyonları alma fonksiyonu
 export const getAllRelationshipProblemsPositions = () => {
-  return Object.entries(relationshipProblemsPositions).map(([position, info]) => ({
-    position: parseInt(position),
-    ...info,
-  }));
+  return Object.entries(relationshipProblemsPositions).map(
+    ([position, info]) => ({
+      position: parseInt(position),
+      ...info,
+    })
+  );
 };
 
 // Kart adına ve pozisyona göre anlam bulma fonksiyonu
@@ -328,32 +358,37 @@ export const getRelationshipProblemsMeaningByCardNameAndPosition = (
     number: 0,
     meaning: {
       upright: 'Temel anlam',
-      reversed: 'Ters anlam'
+      reversed: 'Ters anlam',
     },
     meaningTr: {
       upright: 'Temel anlam',
-      reversed: 'Ters anlam'
+      reversed: 'Ters anlam',
     },
     keywords: [],
     keywordsTr: [],
-    image: ''
+    image: '',
   };
 
-  return getRelationshipProblemsMeaningByCardAndPosition(mockCard, position, isReversed);
+  return getRelationshipProblemsMeaningByCardAndPosition(
+    mockCard,
+    position,
+    isReversed
+  );
 };
 
 // Tüm pozisyon anlamlarını birleştiren ana array
-export const allRelationshipProblemsPositionMeanings: RelationshipProblemsPositionMeaning[] = [
-  ...position1Meanings,
-  ...position2Meanings,
-  ...position3Meanings,
-  ...position4Meanings,
-  ...position5Meanings,
-  ...position6Meanings,
-  ...position7Meanings,
-  ...position8Meanings,
-  ...position9Meanings,
-];
+export const allRelationshipProblemsPositionMeanings: RelationshipProblemsPositionMeaning[] =
+  [
+    ...position1Meanings,
+    ...position2Meanings,
+    ...position3Meanings,
+    ...position4Meanings,
+    ...position5Meanings,
+    ...position6Meanings,
+    ...position7Meanings,
+    ...position8Meanings,
+    ...position9Meanings,
+  ];
 
 // Pozisyon bazlı anlam alma fonksiyonları
 export function getRelationshipProblemsMeaningsByPosition(
@@ -394,7 +429,10 @@ export function getRelationshipProblemsMeaningsByCard(
   const meanings: RelationshipProblemsPositionMeaning[] = [];
 
   for (let position = 1; position <= 9; position++) {
-    const meaning = getRelationshipProblemsMeaningByCardAndPosition(card, position);
+    const meaning = getRelationshipProblemsMeaningByCardAndPosition(
+      card,
+      position
+    );
     if (meaning) {
       meanings.push(meaning);
     }
@@ -411,7 +449,8 @@ export function getAllRelationshipProblemsMeanings(): Record<
   const allMeanings: Record<number, RelationshipProblemsPositionMeaning[]> = {};
 
   for (let position = 1; position <= 9; position++) {
-    allMeanings[position] = getRelationshipProblemsMeaningsByPosition(position) || [];
+    allMeanings[position] =
+      getRelationshipProblemsMeaningsByPosition(position) || [];
   }
 
   return allMeanings;
@@ -421,7 +460,9 @@ export function getAllRelationshipProblemsMeanings(): Record<
 export const getRelationshipProblemsMeaningsByGroup = (
   group: 'Majör Arkana' | 'Kupalar' | 'Kılıçlar' | 'Asalar' | 'Tılsımlar'
 ): RelationshipProblemsPositionMeaning[] => {
-  return allRelationshipProblemsPositionMeanings.filter(meaning => meaning.group === group);
+  return allRelationshipProblemsPositionMeanings.filter(
+    meaning => meaning.group === group
+  );
 };
 
 // Pozisyon ve gruba göre filtreleme fonksiyonu
@@ -438,9 +479,11 @@ export const getRelationshipProblemsMeaningsByPositionAndGroup = (
 export const searchRelationshipProblemsMeaningsByCardName = (
   cardName: string
 ): RelationshipProblemsPositionMeaning[] => {
-  return allRelationshipProblemsPositionMeanings.filter(meaning =>
-    meaning.cardName?.toLowerCase().includes(cardName.toLowerCase()) || false ||
-    meaning.card.toLowerCase().includes(cardName.toLowerCase())
+  return allRelationshipProblemsPositionMeanings.filter(
+    meaning =>
+      meaning.cardName?.toLowerCase().includes(cardName.toLowerCase()) ||
+      false ||
+      meaning.card.toLowerCase().includes(cardName.toLowerCase())
   );
 };
 
@@ -465,12 +508,18 @@ export const getRelationshipProblemsStatistics = () => {
     'Majör Arkana': allRelationshipProblemsPositionMeanings.filter(
       m => m.group === 'Majör Arkana'
     ).length,
-    Kupalar: allRelationshipProblemsPositionMeanings.filter(m => m.group === 'Kupalar').length,
-    Kılıçlar: allRelationshipProblemsPositionMeanings.filter(m => m.group === 'Kılıçlar')
-      .length,
-    Asalar: allRelationshipProblemsPositionMeanings.filter(m => m.group === 'Asalar').length,
-    Tılsımlar: allRelationshipProblemsPositionMeanings.filter(m => m.group === 'Tılsımlar')
-      .length,
+    Kupalar: allRelationshipProblemsPositionMeanings.filter(
+      m => m.group === 'Kupalar'
+    ).length,
+    Kılıçlar: allRelationshipProblemsPositionMeanings.filter(
+      m => m.group === 'Kılıçlar'
+    ).length,
+    Asalar: allRelationshipProblemsPositionMeanings.filter(
+      m => m.group === 'Asalar'
+    ).length,
+    Tılsımlar: allRelationshipProblemsPositionMeanings.filter(
+      m => m.group === 'Tılsımlar'
+    ).length,
   };
 
   return {

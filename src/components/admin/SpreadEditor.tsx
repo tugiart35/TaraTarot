@@ -91,7 +91,9 @@ export default function SpreadEditor({
           })
           .eq('id', spread.id);
 
-        if (error) throw error;
+        if (error) {
+          throw error;
+        }
       } else {
         // Create new spread
         const { data, error } = await supabase
@@ -107,7 +109,9 @@ export default function SpreadEditor({
           .select()
           .single();
 
-        if (error) throw error;
+        if (error) {
+          throw error;
+        }
         formData.id = data.id;
       }
 

@@ -44,17 +44,7 @@ import React from 'react';
 import type { TarotCard } from '@/features/tarot/lib/a-tarot-helpers';
 import type { CardMeaningData } from '@/types/ui';
 import BaseCardDetails from './BaseCardDetails';
-import { getMeaningByCardAndPosition as getLoveMeaningByCardAndPosition } from '@/features/tarot/lib/love/position-meanings-index';
-import { getCareerMeaningByCardAndPosition } from '@/features/tarot/lib/career/position-meanings-index';
-import { getProblemSolvingMeaningByCardAndPosition } from '@/features/tarot/lib/problem-solving/position-meanings-index';
-import { getSituationAnalysisMeaningByCardAndPosition } from '@/features/tarot/lib/situation-analysis/position-meanings-index';
-import relationshipAnalysisExports from '@/features/tarot/lib/relationship-analysis/position-meanings-index';
-const { getRelationshipAnalysisMeaningByCardAndPosition } = relationshipAnalysisExports;
-import { getRelationshipProblemsMeaningByCardAndPosition } from '@/features/tarot/lib/relationship-problems/position-meanings-index';
-import { getMarriageMeaningByCardAndPosition } from '@/features/tarot/lib/marriage/position-meanings-index';
-import newLoverExports from '@/features/tarot/lib/new-lover/position-meanings-index';
-const { getNewLoverCardMeaning } = newLoverExports;
-import { getMoneyMeaningByCardAndPosition } from '@/features/tarot/lib/money/position-meanings-index';
+// Eski import'lar kaldırıldı - yeni yapıda kullanılmıyor
 
 // CardMeaningData artık @/types/ui'dan import ediliyor
 
@@ -63,20 +53,29 @@ interface CardDetailsProps {
   isReversed: boolean;
   position: number | null;
   onClose: () => void;
-  spreadType: 'love' | 'career' | 'problem-solving' | 'situation-analysis' | 'relationship-analysis' | 'relationship-problems' | 'marriage' | 'new-lover' | 'money';
+  spreadType:
+    | 'love'
+    | 'career'
+    | 'problem-solving'
+    | 'situation-analysis'
+    | 'relationship-analysis'
+    | 'relationship-problems'
+    | 'marriage'
+    | 'new-lover'
+    | 'money';
   positionInfo?: {
     title: string;
     desc: string;
   };
   title?: string;
-  
+
   // BaseInterpretation.tsx'den alınan kariyer anlamları için fonksiyonlar
-  getCardMeaning?: (card: TarotCard) => CardMeaningData | null;
+  getCardMeaning?: (_card: TarotCard) => CardMeaningData | null;
   getMeaningText?: (
     _meaning: CardMeaningData | null,
     _card: TarotCard,
     _isReversed: boolean
-  ) => string;
+  ) => string | { interpretation: string; context: string };
   getKeywords?: (
     _meaning: CardMeaningData | null,
     _card: TarotCard
@@ -85,10 +84,16 @@ interface CardDetailsProps {
     _card: TarotCard,
     _position: number,
     _isReversed: boolean
-  ) => string;
-  
+  ) => string | { interpretation: string; context: string };
+
   // CONTEXT GÖSTERİMİ İÇİN (Problem çözme açılımı için)
   showContext?: boolean;
+
+  // POZİSYON CONTEXT FONKSİYONU (lib/ dosyalarındaki context bilgileri için)
+  getPositionContext?: (
+    _card: TarotCard,
+    _position: number
+  ) => string | undefined;
 }
 
 const CardDetails: React.FC<CardDetailsProps> = ({
@@ -104,6 +109,7 @@ const CardDetails: React.FC<CardDetailsProps> = ({
   getKeywords,
   getPositionSpecificInterpretation,
   showContext = false,
+  getPositionContext,
 }) => {
   if (!card) {
     return null;
@@ -127,20 +133,38 @@ const CardDetails: React.FC<CardDetailsProps> = ({
 
   const renderCardImage = (card: TarotCard, isReversed: boolean) => (
     <div className='text-center'>
-      <img
-        src={card.image || '/cards/CardBack.jpg'}
-        alt={card.nameTr}
-        className={`w-48 h-auto mx-auto rounded-lg border-2 border-current/60 shadow-lg ${isReversed ? 'transform rotate-180' : ''}`}
-      />
+      <div className='relative inline-block group'>
+        {/* Floating card container */}
+        <div className='relative transform transition-all duration-500 group-hover:scale-105 group-hover:-translate-y-2'>
+          <img
+            src={card.image || '/cards/CardBack.jpg'}
+            alt={card.nameTr}
+            className={`w-44 h-auto mx-auto rounded-3xl shadow-2xl transition-all duration-500 ${
+              isReversed ? 'transform rotate-180' : ''
+            }`}
+            style={{
+              filter: 'drop-shadow(0 25px 50px rgba(0, 0, 0, 0.3))',
+            }}
+          />
+          {/* Floating status indicator */}
+          {isReversed && (
+            <div className='absolute -top-3 -right-3 w-8 h-8 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center shadow-lg animate-pulse'>
+              <span className='text-white text-sm font-bold'>↻</span>
+            </div>
+          )}
+          {/* Glow effect */}
+          <div className={`absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
+            isReversed ? 'bg-gradient-to-br from-red-500/20 to-orange-500/20' : 'bg-gradient-to-br from-blue-500/20 to-purple-500/20'
+          }`}></div>
+        </div>
+      </div>
       {positionInfo && (
-        <div className='mt-4'>
-          <p
-            className={`text-${themeSettings[spreadType].theme}-300 font-bold text-lg`}
-          >
+        <div className='mt-8 space-y-3'>
+          <h3 className='text-2xl font-light text-white tracking-wide'>
             {positionInfo.title}
-          </p>
-          <p className='text-gray-300 text-sm italic'>
-            &quot;{positionInfo.desc}&quot;
+          </h3>
+          <p className='text-gray-300 text-base leading-relaxed max-w-lg mx-auto font-light'>
+            {positionInfo.desc}
           </p>
         </div>
       )}
@@ -152,292 +176,174 @@ const CardDetails: React.FC<CardDetailsProps> = ({
     isReversedParam: boolean,
     positionParam: number | null
   ) => {
-    // BaseInterpretation.tsx'deki gibi düzenli ve güvenli kart bilgilerini çekme
-    const getCardMeaningData = (): CardMeaningData | null => {
-      // Önce props'tan gelen getCardMeaning fonksiyonunu kullan
-      if (getCardMeaning) {
-        return getCardMeaning(cardParam);
-      }
+    // BaseInterpretation.tsx'teki mantığı kullan - pozisyon özel yorum fonksiyonu öncelikli
+    const getCardInterpretation = (): string => {
+      const cardMeaning: CardMeaningData | null = getCardMeaning
+        ? getCardMeaning(cardParam)
+        : null;
       
-      // Fallback: Pozisyon bazlı anlamı çek
-      let positionMeaning = null;
-      
-      if (positionParam) {
-        switch (spreadType) {
-          case 'love':
-            positionMeaning = getLoveMeaningByCardAndPosition(
-              cardParam.name,
-              positionParam
-            );
-            break;
-          case 'career':
-            positionMeaning = getCareerMeaningByCardAndPosition(
-              cardParam,
-              positionParam,
-              isReversedParam
-            );
-            break;
-          case 'problem-solving':
-            positionMeaning = getProblemSolvingMeaningByCardAndPosition(
-              cardParam,
-              positionParam,
-              isReversedParam
-            );
-            break;
-          case 'situation-analysis':
-            positionMeaning = getSituationAnalysisMeaningByCardAndPosition(
-              cardParam,
-              positionParam,
-              isReversedParam
-            );
-            break;
-          case 'relationship-analysis':
-            positionMeaning = getRelationshipAnalysisMeaningByCardAndPosition(
-              cardParam,
-              positionParam,
-              isReversedParam
-            );
-            break;
-          case 'relationship-problems':
-            positionMeaning = getRelationshipProblemsMeaningByCardAndPosition(
-              cardParam,
-              positionParam,
-              isReversedParam
-            );
-            break;
-          case 'marriage':
-            positionMeaning = getMarriageMeaningByCardAndPosition(
-              cardParam,
-              positionParam,
-              isReversedParam
-            );
-            break;
-          case 'new-lover':
-            positionMeaning = getNewLoverCardMeaning(
-              cardParam,
-              positionParam,
-              isReversedParam
-            );
-            break;
-          case 'money':
-            positionMeaning = getMoneyMeaningByCardAndPosition(
-              cardParam,
-              positionParam,
-              isReversedParam
-            );
-            break;
-        }
-      }
+      let positionInterpretation = '';
 
-      // PositionMeaning'i CardMeaningData formatına dönüştür
-      if (positionMeaning) {
-        if (typeof positionMeaning === 'string') {
-          return {
-            card: cardParam.name,
-            name: cardParam.nameTr,
-            upright: positionMeaning,
-            reversed: positionMeaning,
-            keywords: cardParam.keywordsTr || cardParam.keywords || [],
-          };
-        } else if (typeof positionMeaning === 'object' && positionMeaning !== null) {
-          // İlişki Sorunları açılımı için özel dönüşüm
-          if (spreadType === 'relationship-problems') {
-            return {
-              card: cardParam.name,
-              name: cardParam.nameTr,
-              upright: (positionMeaning as any).upright,
-              reversed: (positionMeaning as any).reversed,
-              keywords: (positionMeaning as any).keywords || cardParam.keywordsTr || cardParam.keywords || [],
-              context: (positionMeaning as any).context,
-            };
-          }
-          // İlişki Analizi açılımı için özel dönüşüm
-          if (spreadType === 'relationship-analysis') {
-            return {
-              card: cardParam.name,
-              name: cardParam.nameTr,
-              upright: (positionMeaning as any).upright,
-              reversed: (positionMeaning as any).reversed,
-              keywords: (positionMeaning as any).keywords || cardParam.keywordsTr || cardParam.keywords || [],
-              context: (positionMeaning as any).context,
-            };
-          }
-          // Money açılımı için özel dönüşüm - BaseInterpretation.tsx'deki gibi
-          if (spreadType === 'money') {
-            return {
-              card: cardParam.name,
-              name: cardParam.nameTr,
-              upright: (positionMeaning as any).upright,
-              reversed: (positionMeaning as any).reversed,
-              keywords: (positionMeaning as any).keywords || cardParam.keywordsTr || cardParam.keywords || [],
-              context: (positionMeaning as any).context,
-              // BaseInterpretation.tsx'deki gibi moneyMeaning alanını da ekle
-              moneyMeaning: {
-                upright: (positionMeaning as any).upright,
-                reversed: (positionMeaning as any).reversed,
-              },
-            };
-          }
-          // New-lover açılımı için özel dönüşüm - BaseInterpretation.tsx'deki gibi
-          if (spreadType === 'new-lover') {
-            return {
-              card: cardParam.name,
-              name: cardParam.nameTr,
-              upright: (positionMeaning as any).upright,
-              reversed: (positionMeaning as any).reversed,
-              keywords: (positionMeaning as any).keywords || cardParam.keywordsTr || cardParam.keywords || [],
-              context: (positionMeaning as any).context,
-              // BaseInterpretation.tsx'deki gibi newLoverMeaning alanını da ekle
-              newLoverMeaning: {
-                upright: (positionMeaning as any).upright,
-                reversed: (positionMeaning as any).reversed,
-              },
-            };
-          }
-          // Diğer açılımlar için genel dönüşüm
-          return {
-            card: cardParam.name,
-            name: cardParam.nameTr,
-            upright: (positionMeaning as any).upright || (positionMeaning as any).meaning,
-            reversed: (positionMeaning as any).reversed || (positionMeaning as any).meaning,
-            keywords: (positionMeaning as any).keywords || cardParam.keywordsTr || cardParam.keywords || [],
-            context: (positionMeaning as any).context,
-          };
-        }
-      }
-
-      return null;
-    };
-
-    // BaseInterpretation.tsx'deki gibi anlam metnini al
-    const getMeaningTextData = (): string => {
-      // Önce props'tan gelen getMeaningText fonksiyonunu kullan
-      if (getMeaningText) {
-        const cardMeaningData = getCardMeaningData();
-        return getMeaningText(cardMeaningData, cardParam, isReversedParam);
-      }
-      
-      // Önce props'tan gelen getPositionSpecificInterpretation fonksiyonunu kullan
+      // 1. Önce props'tan gelen getPositionSpecificInterpretation fonksiyonunu kullan
       if (getPositionSpecificInterpretation && positionParam) {
-        return getPositionSpecificInterpretation(cardParam, positionParam, isReversedParam);
-      }
-      
-      // Fallback: CardMeaningData'dan anlamı al - BaseInterpretation.tsx'deki gibi
-      const cardMeaningData = getCardMeaningData();
-      if (cardMeaningData) {
-        // BaseInterpretation.tsx'deki mantığı kullan
-        if (cardMeaningData.moneyMeaning) {
-          return isReversedParam 
-            ? cardMeaningData.moneyMeaning.reversed 
-            : cardMeaningData.moneyMeaning.upright;
-        } else if (cardMeaningData.newLoverMeaning) {
-          return isReversedParam 
-            ? cardMeaningData.newLoverMeaning.reversed 
-            : cardMeaningData.newLoverMeaning.upright;
-        } else if (cardMeaningData.relationshipAnalysisMeaning) {
-          return isReversedParam 
-            ? cardMeaningData.relationshipAnalysisMeaning.reversed 
-            : cardMeaningData.relationshipAnalysisMeaning.upright;
-        } else if (cardMeaningData.careerMeaning) {
-          return isReversedParam 
-            ? cardMeaningData.careerMeaning.reversed 
-            : cardMeaningData.careerMeaning.upright;
-        } else if (cardMeaningData.upright || cardMeaningData.reversed) {
-          return isReversedParam 
-            ? cardMeaningData.reversed || cardMeaningData.upright || 'Bu kart için ters anlam bulunamadı.'
-            : cardMeaningData.upright || 'Bu kart için düz anlam bulunamadı.';
+        const result = getPositionSpecificInterpretation(
+          cardParam,
+          positionParam,
+          isReversedParam
+        );
+        
+        // Eğer result string ise, direkt kullan
+        if (typeof result === 'string') {
+          positionInterpretation = result;
+        } 
+        // Eğer result object ise, interpretation'ı al
+        else if (result && typeof result === 'object') {
+          positionInterpretation = result.interpretation || '';
         }
       }
 
-      // Son fallback: Kartın genel anlamını kullan
-      return isReversedParam
-        ? cardParam.meaningTr?.reversed || 'Bu kart için ters anlam bulunamadı.'
-        : cardParam.meaningTr?.upright || 'Bu kart için düz anlam bulunamadı.';
-    };
-
-    // BaseInterpretation.tsx'deki gibi anahtar kelimeleri al
-    const getKeywordsData = (): string[] => {
-      // Önce props'tan gelen getKeywords fonksiyonunu kullan
-      if (getKeywords) {
-        const cardMeaningData = getCardMeaningData();
-        return getKeywords(cardMeaningData, cardParam);
-      }
-      
-      // Fallback: CardMeaningData'dan anahtar kelimeleri al
-      const cardMeaningData = getCardMeaningData();
-      if (cardMeaningData && cardMeaningData.keywords) {
-        const keywords = cardMeaningData.keywords;
-        if (Array.isArray(keywords)) {
-          return keywords;
-        } else if (typeof keywords === 'string') {
-          return (keywords as string)
-            .split(',')
-            .map((k: string) => k.trim())
-            .filter((k: string) => k.length > 0);
+      // 2. Eğer positionInterpretation boşsa, getMeaningText fonksiyonunu dene
+      if (!positionInterpretation && getMeaningText) {
+        const result = getMeaningText(cardMeaning, cardParam, isReversedParam);
+        
+        // Eğer result string ise, direkt kullan
+        if (typeof result === 'string') {
+          positionInterpretation = result;
+        } 
+        // Eğer result object ise, interpretation'ı al
+        else if (result && typeof result === 'object') {
+          positionInterpretation = result.interpretation || '';
         }
       }
 
-      // Son fallback: Kartın genel anahtar kelimelerini kullan
-      const fallbackKeywords = cardParam.keywordsTr || cardParam.keywords || [];
-      return Array.isArray(fallbackKeywords) ? fallbackKeywords : [];
+      // 3. Hala boşsa, CardMeaningData'dan anlamı al
+      if (!positionInterpretation && cardMeaning) {
+        if (cardMeaning.relationshipAnalysisMeaning) {
+          positionInterpretation = isReversedParam
+            ? cardMeaning.relationshipAnalysisMeaning.reversed
+            : cardMeaning.relationshipAnalysisMeaning.upright;
+        } else if (cardMeaning.careerMeaning) {
+          positionInterpretation = isReversedParam
+            ? cardMeaning.careerMeaning.reversed
+            : cardMeaning.careerMeaning.upright;
+        } else if (cardMeaning.moneyMeaning) {
+          positionInterpretation = isReversedParam
+            ? cardMeaning.moneyMeaning.reversed
+            : cardMeaning.moneyMeaning.upright;
+        } else if (cardMeaning.newLoverMeaning) {
+          positionInterpretation = isReversedParam
+            ? cardMeaning.newLoverMeaning.reversed
+            : cardMeaning.newLoverMeaning.upright;
+        } else if (cardMeaning.marriageMeaning) {
+          positionInterpretation = isReversedParam
+            ? cardMeaning.marriageMeaning.reversed
+            : cardMeaning.marriageMeaning.upright;
+        } else if (cardMeaning.upright || cardMeaning.reversed) {
+          positionInterpretation = isReversedParam
+            ? cardMeaning.reversed || cardMeaning.upright || ''
+            : cardMeaning.upright || '';
+        }
+      }
+
+      // 4. Son fallback: Kartın genel anlamını kullan
+      if (!positionInterpretation) {
+        positionInterpretation = isReversedParam
+          ? cardParam.meaningTr.reversed
+          : cardParam.meaningTr.upright;
+      }
+
+      return positionInterpretation;
     };
+
+    // Kart anlamını ve anahtar kelimeleri al
+    const cardInterpretation = getCardInterpretation();
+    const keywords = getKeywords ? getKeywords(getCardMeaning ? getCardMeaning(cardParam) : null, cardParam) : [];
+    
+    // Context'i al (problem çözme açılımı için)
+    const cardMeaning = getCardMeaning ? getCardMeaning(cardParam) : null;
+    const context = showContext ? (cardMeaning?.context || '') : '';
+
+    // Pozisyon context'ini al (lib/ dosyalarından)
+    const positionContext = getPositionContext && positionParam
+      ? getPositionContext(cardParam, positionParam)
+      : undefined;
 
     return (
-      <div className='w-full space-y-4'>
-        {/* Ana Anlam */}
-        <div>
-          <h3
-            className={`font-semibold text-xl text-${themeSettings[spreadType].theme}-300 mb-2 border-b-2 border-${themeSettings[spreadType].theme}-500/50 pb-1`}
-          >
-            {positionParam
-              ? `Pozisyon ${positionParam} - ${spreadType === 'love' ? 'Aşk' : 'Kart'} Anlamı`
-              : 'Kart Anlamı'}
-          </h3>
-          <p className='text-gray-200 leading-relaxed'>
-            {getMeaningTextData()}
-          </p>
-        </div>
-        
-        {/* Context - Problem çözme açılımı için */}
-        {showContext && (() => {
-          const cardMeaningData = getCardMeaningData();
-          const context = cardMeaningData?.context || '';
-          return context ? (
-            <div>
-              <h3
-                className={`font-semibold text-xl text-${themeSettings[spreadType].theme}-300 mb-2 border-b-2 border-${themeSettings[spreadType].theme}-500/50 pb-1`}
-              >
-                Bağlam
-              </h3>
-              <p className={`text-${themeSettings[spreadType].theme}-200 italic text-sm leading-relaxed`}>
-                {context}
-              </p>
+      <div className='w-full space-y-10'>
+        {/* Pozisyon Bağlamı - Glassmorphism Card */}
+        {positionContext && (
+          <div className='relative group'>
+            <div className='absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl blur-sm group-hover:blur-none transition-all duration-300'></div>
+            <div className='relative bg-white/5 backdrop-blur-xl rounded-2xl p-6 border border-white/20 shadow-2xl'>
+              <div className='flex items-start gap-4'>
+                <div className='w-3 h-3 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full mt-1 flex-shrink-0 shadow-lg'></div>
+                <div className='flex-1'>
+                  <h4 className='text-blue-200 font-light text-sm mb-3 tracking-wide uppercase'>Pozisyon Bağlamı</h4>
+                  <p className='text-gray-200 text-base leading-relaxed font-light'>{positionContext}</p>
+                </div>
+              </div>
             </div>
-          ) : null;
-        })()}
-        
-        {/* Anahtar Kelimeler */}
-        <div>
-          <h3
-            className={`font-semibold text-xl text-${themeSettings[spreadType].theme}-300 mb-2 border-b-2 border-${themeSettings[spreadType].theme}-500/50 pb-1`}
-          >
-            {positionParam
-              ? `Pozisyon ${positionParam} - Anahtar Kelimeler`
-              : 'Anahtar Kelimeler'}
-          </h3>
-          <div className='flex flex-wrap gap-2'>
-            {getKeywordsData().map(
-              (keyword: string, index: number) => (
-                <span
-                  key={index}
-                  className={`bg-${themeSettings[spreadType].theme}-500/20 text-${themeSettings[spreadType].theme}-200 px-3 py-1 rounded-full text-sm`}
-                >
-                  {keyword}
+          </div>
+        )}
+
+        {/* Ana Anlam - Floating Card */}
+        <div className='relative group'>
+          <div className='absolute inset-0 bg-gradient-to-br from-white/5 to-white/10 rounded-2xl blur-sm group-hover:blur-none transition-all duration-500'></div>
+          <div className='relative bg-white/5 backdrop-blur-xl rounded-2xl p-8 border border-white/20 shadow-2xl'>
+            <div className='space-y-6'>
+              <div className='flex items-center gap-4'>
+                <div className={`w-4 h-4 rounded-full shadow-lg ${
+                  isReversedParam ? 'bg-gradient-to-r from-red-400 to-orange-400' : 'bg-gradient-to-r from-green-400 to-emerald-400'
+                }`}></div>
+                <span className={`text-lg font-light tracking-wide ${
+                  isReversedParam ? 'text-red-200' : 'text-green-200'
+                }`}>
+                  {isReversedParam ? 'Ters Anlam' : 'Düz Anlam'}
                 </span>
-              )
-            )}
+              </div>
+              <div className='text-white text-lg leading-relaxed font-light pl-8'>
+                {cardInterpretation}
+              </div>
+            </div>
           </div>
         </div>
+
+        {/* Ek Context - Glassmorphism Card */}
+        {context && (
+          <div className='relative group'>
+            <div className='absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-2xl blur-sm group-hover:blur-none transition-all duration-300'></div>
+            <div className='relative bg-white/5 backdrop-blur-xl rounded-2xl p-6 border border-white/20 shadow-2xl'>
+              <div className='flex items-start gap-4'>
+                <div className='w-3 h-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mt-1 flex-shrink-0 shadow-lg'></div>
+                <div className='flex-1'>
+                  <h4 className='text-purple-200 font-light text-sm mb-3 tracking-wide uppercase'>Derin Bağlam</h4>
+                  <p className='text-gray-200 text-base leading-relaxed font-light italic'>{context}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Anahtar Kelimeler - Floating Tags */}
+        {keywords.length > 0 && (
+          <div className='space-y-6'>
+            <div className='flex items-center gap-4'>
+              <div className='w-4 h-4 bg-gradient-to-r from-amber-400 to-yellow-400 rounded-full shadow-lg'></div>
+              <span className='text-amber-200 font-light text-lg tracking-wide'>Anahtar Kelimeler</span>
+            </div>
+            <div className='flex flex-wrap gap-3 pl-8'>
+              {keywords.map((keyword: string, index: number) => (
+                <span
+                  key={index}
+                  className='group/tag relative bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-light hover:bg-white/20 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl'
+                >
+                  <div className='absolute inset-0 bg-gradient-to-r from-white/5 to-white/10 rounded-full opacity-0 group-hover/tag:opacity-100 transition-opacity duration-300'></div>
+                  <span className='relative z-10'>{keyword}</span>
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     );
   };
@@ -455,6 +361,12 @@ const CardDetails: React.FC<CardDetailsProps> = ({
       positionInfo={positionInfo || undefined}
       title={title || 'Kart Detayları'}
       spreadType={spreadType}
+      getCardMeaning={getCardMeaning}
+      getMeaningText={getMeaningText}
+      getKeywords={getKeywords}
+      getPositionSpecificInterpretation={getPositionSpecificInterpretation}
+      getPositionContext={getPositionContext}
+      showContext={showContext}
     />
   );
 };

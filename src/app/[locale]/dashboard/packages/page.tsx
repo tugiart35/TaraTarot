@@ -233,7 +233,9 @@ export default function PackagesPage() {
 
   // Kullanıcı profilini çek
   const fetchUserProfile = useCallback(async () => {
-    if (!user) return;
+    if (!user) {
+      return;
+    }
 
     try {
       setLoading(true);
@@ -274,14 +276,7 @@ export default function PackagesPage() {
       fetchUserProfile();
       fetchPackages(); // Supabase'den paketleri çek
     }
-  }, [
-    authLoading,
-    user,
-    router,
-    locale,
-    fetchPackages,
-    fetchUserProfile,
-  ]);
+  }, [authLoading, user, router, locale, fetchPackages, fetchUserProfile]);
 
   // Paket satın alma işlemi
   const purchasePackage = async (packageId: string) => {
@@ -318,7 +313,9 @@ export default function PackagesPage() {
         })
         .eq('id', user.id);
 
-      if (updateError) throw updateError;
+      if (updateError) {
+        throw updateError;
+      }
 
       // Transaction log oluştur
       const { error: transactionError } = await supabase

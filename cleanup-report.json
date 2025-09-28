@@ -10,7 +10,7 @@
     },
     "analysisMethods": [
       "Static import/export analysis",
-      "File reference tracking", 
+      "File reference tracking",
       "Asset usage verification",
       "Type/interface usage analysis",
       "Duplicate file detection",
@@ -26,7 +26,7 @@
       "category": "unused-component"
     },
     {
-      "path": "src/hooks/useTarotSpreadLogic.ts", 
+      "path": "src/hooks/useTarotSpreadLogic.ts",
       "reason": "Never imported or used",
       "evidence": "No import statements found in codebase",
       "riskLevel": "Low",
@@ -34,7 +34,7 @@
     },
     {
       "path": "src/features/shared/icons/MysticalIcons.tsx",
-      "reason": "Never imported or used", 
+      "reason": "Never imported or used",
       "evidence": "Only referenced in index.ts but never imported",
       "riskLevel": "Low",
       "category": "unused-component"
@@ -43,7 +43,7 @@
       "path": "src/features/shared/icons/index.ts",
       "reason": "Exports unused component",
       "evidence": "Only exports MysticalIcons which is unused",
-      "riskLevel": "Low", 
+      "riskLevel": "Low",
       "category": "unused-export"
     },
     {
@@ -63,7 +63,7 @@
       "category": "unused-image"
     },
     {
-      "path": "public/images/Ekran Resmi 2025-06-30 02.06.28.png", 
+      "path": "public/images/Ekran Resmi 2025-06-30 02.06.28.png",
       "reason": "No references found",
       "evidence": "No import or usage in codebase",
       "riskLevel": "Low",
@@ -71,7 +71,7 @@
     },
     {
       "path": "public/images/freepik__enchanted-future-prediction-setup-crystal-ball-ast__6398.png",
-      "reason": "No references found", 
+      "reason": "No references found",
       "evidence": "No import or usage in codebase",
       "riskLevel": "Low",
       "category": "unused-image"
@@ -79,7 +79,7 @@
     {
       "path": "public/images/freepik__enchanted-future-prediction-setup-crystal-ball-ast__6399.jpeg",
       "reason": "No references found",
-      "evidence": "No import or usage in codebase", 
+      "evidence": "No import or usage in codebase",
       "riskLevel": "Low",
       "category": "unused-image"
     },
@@ -94,7 +94,7 @@
       "path": "public/images/selfreflection.png",
       "reason": "No references found",
       "evidence": "No import or usage in codebase",
-      "riskLevel": "Low", 
+      "riskLevel": "Low",
       "category": "unused-image"
     },
     {
@@ -115,7 +115,7 @@
       "category": "unused-interface"
     },
     {
-      "name": "MysticalIconsProps", 
+      "name": "MysticalIconsProps",
       "file": "src/features/shared/icons/MysticalIcons.tsx",
       "reason": "Component never used",
       "evidence": "No imports found",
@@ -136,19 +136,19 @@
   "legalPagesStatus": {
     "allUsed": true,
     "pages": [
-      {"path": "/legal/privacy-policy", "status": "used", "linkedIn": "Footer.tsx"},
-      {"path": "/legal/terms-of-use", "status": "used", "linkedIn": "Footer.tsx"},
-      {"path": "/legal/kvkk-disclosure", "status": "used", "linkedIn": "Footer.tsx"},
-      {"path": "/legal/cookie-policy", "status": "used", "linkedIn": "Footer.tsx"},
-      {"path": "/legal/contact", "status": "used", "linkedIn": "Footer.tsx"},
-      {"path": "/legal/about", "status": "used", "linkedIn": "Footer.tsx"},
-      {"path": "/legal/disclaimer", "status": "used", "linkedIn": "Footer.tsx"},
-      {"path": "/legal/copyright-policy", "status": "used", "linkedIn": "Footer.tsx"},
-      {"path": "/legal/refund-policy", "status": "used", "linkedIn": "Footer.tsx"},
-      {"path": "/legal/payment-terms", "status": "used", "linkedIn": "Footer.tsx"},
-      {"path": "/legal/security-policy", "status": "used", "linkedIn": "Footer.tsx"},
-      {"path": "/legal/accessibility", "status": "used", "linkedIn": "Footer.tsx"},
-      {"path": "/legal/child-privacy", "status": "used", "linkedIn": "Footer.tsx"}
+      { "path": "/legal/privacy-policy", "status": "used", "linkedIn": "Footer.tsx" },
+      { "path": "/legal/terms-of-use", "status": "used", "linkedIn": "Footer.tsx" },
+      { "path": "/legal/kvkk-disclosure", "status": "used", "linkedIn": "Footer.tsx" },
+      { "path": "/legal/cookie-policy", "status": "used", "linkedIn": "Footer.tsx" },
+      { "path": "/legal/contact", "status": "used", "linkedIn": "Footer.tsx" },
+      { "path": "/legal/about", "status": "used", "linkedIn": "Footer.tsx" },
+      { "path": "/legal/disclaimer", "status": "used", "linkedIn": "Footer.tsx" },
+      { "path": "/legal/copyright-policy", "status": "used", "linkedIn": "Footer.tsx" },
+      { "path": "/legal/refund-policy", "status": "used", "linkedIn": "Footer.tsx" },
+      { "path": "/legal/payment-terms", "status": "used", "linkedIn": "Footer.tsx" },
+      { "path": "/legal/security-policy", "status": "used", "linkedIn": "Footer.tsx" },
+      { "path": "/legal/accessibility", "status": "used", "linkedIn": "Footer.tsx" },
+      { "path": "/legal/child-privacy", "status": "used", "linkedIn": "Footer.tsx" }
     ]
   },
   "manualReviewRequired": [
@@ -178,7 +178,7 @@
       "severity": "Low"
     },
     {
-      "type": "unused-imports", 
+      "type": "unused-imports",
       "description": "Some components import but don't use certain modules",
       "severity": "Low"
     },
@@ -192,7 +192,7 @@
     "safeToRemove": {
       "files": [
         "src/features/shared/ui/tarot/TarotSpreadWrapper.tsx",
-        "src/hooks/useTarotSpreadLogic.ts", 
+        "src/hooks/useTarotSpreadLogic.ts",
         "src/features/shared/icons/MysticalIcons.tsx",
         "src/features/shared/icons/index.ts"
       ],
@@ -211,7 +211,7 @@
     "reviewBeforeRemoval": {
       "files": [
         "src/features/tarot/lib/love/position-1-ilgi-duydugun-kisi.ts",
-        "src/features/tarot/lib/love/position-2-fiziksel.ts", 
+        "src/features/tarot/lib/love/position-2-fiziksel.ts",
         "src/features/tarot/lib/love/position-3-baglanti.ts",
         "src/features/tarot/lib/love/position-4-uzun-vadeli-surec.ts",
         "src/features/shared/ui/ReadingInfoModal.tsx"
@@ -234,7 +234,7 @@
     "automatedCleanupScript": [
       "rm src/features/shared/ui/tarot/TarotSpreadWrapper.tsx",
       "rm src/hooks/useTarotSpreadLogic.ts",
-      "rm src/features/shared/icons/MysticalIcons.tsx", 
+      "rm src/features/shared/icons/MysticalIcons.tsx",
       "rm src/features/shared/icons/index.ts",
       "rm \"public/cards/CardBack (1).jpg\"",
       "rm public/images/Ekran\\ Resmi\\ 2025-06-20\\ 21.08.09.png",

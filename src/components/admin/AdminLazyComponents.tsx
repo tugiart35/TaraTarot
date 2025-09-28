@@ -1,6 +1,6 @@
 /*
  * Admin Lazy Components
- * 
+ *
  * Bu dosya admin paneli için lazy loading component'lerini içerir.
  * Bundle size'ı optimize eder ve performansı artırır.
  */
@@ -19,20 +19,32 @@ export const SpreadEditorLazy = dynamic(() => import('./SpreadEditor'), {
   ssr: false,
 });
 
-export const EmailTemplateModalsLazy = dynamic(() => import('./EmailTemplateModals').then(mod => ({ default: mod.AddEmailTemplateModal })), {
-  loading: () => <CardSkeleton />,
-  ssr: false,
-});
+export const EmailTemplateModalsLazy = dynamic(
+  () =>
+    import('./EmailTemplateModals').then(mod => ({
+      default: mod.AddEmailTemplateModal,
+    })),
+  {
+    loading: () => <CardSkeleton />,
+    ssr: false,
+  }
+);
 
 export const AuditLogViewerLazy = dynamic(() => import('./AuditLogViewer'), {
   loading: () => <CardSkeleton />,
   ssr: false,
 });
 
-export const AdminUserModalsLazy = dynamic(() => import('./AdminUserModals').then(mod => ({ default: mod.AddAdminUserModal })), {
-  loading: () => <CardSkeleton />,
-  ssr: false,
-});
+export const AdminUserModalsLazy = dynamic(
+  () =>
+    import('./AdminUserModals').then(mod => ({
+      default: mod.AddAdminUserModal,
+    })),
+  {
+    loading: () => <CardSkeleton />,
+    ssr: false,
+  }
+);
 
 // Modal components lazy loading
 export const UserDetailModalLazy = dynamic(() => import('./UserDetailModal'), {
@@ -40,10 +52,13 @@ export const UserDetailModalLazy = dynamic(() => import('./UserDetailModal'), {
   ssr: false,
 });
 
-export const CreditManagementModalLazy = dynamic(() => import('./CreditManagementModal'), {
-  loading: () => <CardSkeleton />,
-  ssr: false,
-});
+export const CreditManagementModalLazy = dynamic(
+  () => import('./CreditManagementModal'),
+  {
+    loading: () => <CardSkeleton />,
+    ssr: false,
+  }
+);
 
 // History components lazy loading
 export const ReadingHistoryLazy = dynamic(() => import('./ReadingHistory'), {
@@ -56,7 +71,10 @@ export const PaymentHistoryLazy = dynamic(() => import('./PaymentHistory'), {
   ssr: false,
 });
 
-export const TransactionHistoryLazy = dynamic(() => import('./TransactionHistory'), {
-  loading: () => <CardSkeleton />,
-  ssr: false,
-});
+export const TransactionHistoryLazy = dynamic(
+  () => import('./TransactionHistory'),
+  {
+    loading: () => <CardSkeleton />,
+    ssr: false,
+  }
+);

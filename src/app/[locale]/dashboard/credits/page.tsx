@@ -63,7 +63,9 @@ export default function CreditsPage() {
   }, [authLoading, user, filter, dateRange, router, locale]);
 
   const fetchTransactions = async () => {
-    if (!user) return;
+    if (!user) {
+      return;
+    }
 
     try {
       setLoading(true);

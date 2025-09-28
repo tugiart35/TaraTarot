@@ -1,6 +1,6 @@
 /*
  * Auth Accessibility Utilities
- * 
+ *
  * Bu dosya authentication işlemleri için accessibility özelliklerini içerir.
  * Screen reader desteği, keyboard navigation ve ARIA attributes sağlar.
  */
@@ -24,7 +24,9 @@ export class AuthAccessibility {
    * Error'ı screen reader'a duyur
    */
   static announceError(error: string, context: string = 'auth'): void {
-    if (typeof window === 'undefined') return;
+    if (typeof window === 'undefined') {
+      return;
+    }
 
     const announcement = `Error: ${error}`;
     this.createAriaLiveRegion(announcement, 'assertive');
@@ -34,7 +36,9 @@ export class AuthAccessibility {
    * Success mesajını screen reader'a duyur
    */
   static announceSuccess(message: string, context: string = 'auth'): void {
-    if (typeof window === 'undefined') return;
+    if (typeof window === 'undefined') {
+      return;
+    }
 
     const announcement = `Success: ${message}`;
     this.createAriaLiveRegion(announcement, 'polite');
@@ -43,7 +47,10 @@ export class AuthAccessibility {
   /**
    * ARIA live region oluştur
    */
-  private static createAriaLiveRegion(message: string, politeness: 'polite' | 'assertive'): void {
+  private static createAriaLiveRegion(
+    message: string,
+    politeness: 'polite' | 'assertive'
+  ): void {
     const existingRegion = document.getElementById('auth-aria-live');
     if (existingRegion) {
       existingRegion.remove();
@@ -75,9 +82,9 @@ export class AuthAccessibility {
    */
   static provideKeyboardShortcuts(): Record<string, string> {
     return {
-      'Enter': 'Submit form',
-      'Escape': 'Close modal or cancel operation',
-      'Tab': 'Navigate to next field',
+      Enter: 'Submit form',
+      Escape: 'Close modal or cancel operation',
+      Tab: 'Navigate to next field',
       'Shift+Tab': 'Navigate to previous field',
       'Ctrl+Enter': 'Submit form (alternative)',
       'Alt+A': 'Focus on email field',
@@ -90,11 +97,14 @@ export class AuthAccessibility {
   /**
    * Form field için accessibility attributes
    */
-  static getFieldAttributes(fieldName: string, hasError: boolean = false): Record<string, string> {
+  static getFieldAttributes(
+    fieldName: string,
+    hasError: boolean = false
+  ): Record<string, string> {
     const baseAttributes: Record<string, string> = {
       'aria-label': this.getFieldLabel(fieldName),
       'aria-required': 'true',
-      'role': 'textbox',
+      role: 'textbox',
     };
 
     if (hasError) {
@@ -129,8 +139,8 @@ export class AuthAccessibility {
     isLoading: boolean = false
   ): Record<string, string> {
     const baseAttributes: Record<string, string> = {
-      'role': 'button',
-      'tabindex': '0',
+      role: 'button',
+      tabindex: '0',
     };
 
     if (isLoading) {
@@ -159,7 +169,9 @@ export class AuthAccessibility {
   /**
    * Form için accessibility attributes
    */
-  static getFormAttributes(formType: 'login' | 'register' | 'reset'): Record<string, string> {
+  static getFormAttributes(
+    formType: 'login' | 'register' | 'reset'
+  ): Record<string, string> {
     const formLabels: Record<string, string> = {
       login: 'Sign in form',
       register: 'Sign up form',
@@ -167,7 +179,7 @@ export class AuthAccessibility {
     };
 
     return {
-      'role': 'form',
+      role: 'form',
       'aria-label': formLabels[formType],
       'aria-live': 'polite',
     };
@@ -178,8 +190,8 @@ export class AuthAccessibility {
    */
   static getErrorAttributes(errorId: string): Record<string, string> {
     return {
-      'id': errorId,
-      'role': 'alert',
+      id: errorId,
+      role: 'alert',
       'aria-live': 'assertive',
       'aria-atomic': 'true',
     };
@@ -188,9 +200,11 @@ export class AuthAccessibility {
   /**
    * Loading state için accessibility attributes
    */
-  static getLoadingAttributes(loadingText: string = 'Loading'): Record<string, string> {
+  static getLoadingAttributes(
+    loadingText: string = 'Loading'
+  ): Record<string, string> {
     return {
-      'role': 'status',
+      role: 'status',
       'aria-live': 'polite',
       'aria-label': loadingText,
     };
@@ -201,16 +215,19 @@ export class AuthAccessibility {
    */
   static getOAuthButtonAttributes(provider: string): Record<string, string> {
     return {
-      'role': 'button',
+      role: 'button',
       'aria-label': `Sign in with ${provider}`,
-      'tabindex': '0',
+      tabindex: '0',
     };
   }
 
   /**
    * Form validation için accessibility feedback
    */
-  static announceValidationError(fieldName: string, errorMessage: string): void {
+  static announceValidationError(
+    fieldName: string,
+    errorMessage: string
+  ): void {
     const announcement = `${fieldName} field error: ${errorMessage}`;
     this.announceError(announcement, 'validation');
   }
@@ -218,7 +235,10 @@ export class AuthAccessibility {
   /**
    * Form submission için accessibility feedback
    */
-  static announceFormSubmission(status: 'success' | 'error', message: string): void {
+  static announceFormSubmission(
+    status: 'success' | 'error',
+    message: string
+  ): void {
     if (status === 'success') {
       this.announceSuccess(message, 'submission');
     } else {
@@ -230,7 +250,9 @@ export class AuthAccessibility {
    * High contrast mode kontrolü
    */
   static isHighContrastMode(): boolean {
-    if (typeof window === 'undefined') return false;
+    if (typeof window === 'undefined') {
+      return false;
+    }
 
     return (
       window.matchMedia('(prefers-contrast: high)').matches ||
@@ -242,7 +264,9 @@ export class AuthAccessibility {
    * Reduced motion kontrolü
    */
   static isReducedMotion(): boolean {
-    if (typeof window === 'undefined') return false;
+    if (typeof window === 'undefined') {
+      return false;
+    }
 
     return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   }
@@ -291,7 +315,9 @@ export class AuthAccessibility {
    * Field'a focus yap
    */
   private static focusField(fieldName: string): void {
-    const field = document.querySelector(`[name="${fieldName}"], [id="${fieldName}"]`) as HTMLElement;
+    const field = document.querySelector(
+      `[name="${fieldName}"], [id="${fieldName}"]`
+    ) as HTMLElement;
     if (field) {
       field.focus();
     }
@@ -303,7 +329,9 @@ export class AuthAccessibility {
   private static submitForm(): void {
     const form = document.querySelector('form[role="form"]') as HTMLFormElement;
     if (form) {
-      const submitButton = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+      const submitButton = form.querySelector(
+        'button[type="submit"]'
+      ) as HTMLButtonElement;
       if (submitButton) {
         submitButton.click();
       }
@@ -324,7 +352,9 @@ export class AuthAccessibility {
    * İşlemi iptal et
    */
   private static cancelOperation(): void {
-    const cancelButton = document.querySelector('button[aria-label*="Cancel"]') as HTMLButtonElement;
+    const cancelButton = document.querySelector(
+      'button[aria-label*="Cancel"]'
+    ) as HTMLButtonElement;
     if (cancelButton) {
       cancelButton.click();
     }

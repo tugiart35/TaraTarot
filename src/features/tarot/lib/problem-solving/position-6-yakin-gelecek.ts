@@ -14,7 +14,7 @@ Bağlı Dosyalar:
 - Evet, detaylı anlamlar mevcut
 ---
 
-*/  
+*/
 
 import { TarotCard } from '@/types/tarot';
 
@@ -77,9 +77,14 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
       'Başrahibe, yakın gelecekte sezgilerini daha güçlü hissedecek, içsel bilgeliğe yönelme fırsatı bulacaksın.',
     reversed:
       'Ters Başrahibe, yakın gelecekte içsel sesini dinlememek, sırların saklanması veya yanıltıcı bilgilerle karşılaşmak söz konusu olabilir.',
-    keywords: ['sezgi', 'bilgelik', 'gizli bilgi', 'içsel rehberlik', 'farkındalık'],
-    context:
-      'Yakın geleceğin, sezgilerini dinleyip dinlememekle şekillenecek.',
+    keywords: [
+      'sezgi',
+      'bilgelik',
+      'gizli bilgi',
+      'içsel rehberlik',
+      'farkındalık',
+    ],
+    context: 'Yakın geleceğin, sezgilerini dinleyip dinlememekle şekillenecek.',
     group: 'Majör Arkana',
   },
   {
@@ -91,8 +96,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters İmparatoriçe, yakın gelecekte üretkenlik tıkanıklığı, bağımlılık ya da öz bakımı ihmal etme riski var.',
     keywords: ['bolluk', 'yaratıcılık', 'şefkat', 'ilişkiler', 'üretkenlik'],
-    context:
-      'Yakın geleceğin, bolluk ya da tıkanıklıkla belirlenebilir.',
+    context: 'Yakın geleceğin, bolluk ya da tıkanıklıkla belirlenebilir.',
     group: 'Majör Arkana',
   },
   {
@@ -130,8 +134,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Aşıklar, yakın gelecekte uyumsuz ilişkiler, yanlış kararlar ya da kararsızlıkla yüzleşebilirsin.',
     keywords: ['ilişki', 'seçim', 'uyum', 'karar', 'değerler'],
-    context:
-      'Yakın geleceğin, ilişkiler ya da seçimlerle şekillenecek.',
+    context: 'Yakın geleceğin, ilişkiler ya da seçimlerle şekillenecek.',
     group: 'Majör Arkana',
   },
   {
@@ -143,8 +146,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Savaş Arabası, yakın gelecekte kontrol kaybı, yönsüzlük ya da dağınık enerji yaşayabilirsin.',
     keywords: ['irade', 'kararlılık', 'hedef', 'kontrol', 'ilerleme'],
-    context:
-      'Yakın geleceğin, irade ve kontrol dengesine bağlı olacak.',
+    context: 'Yakın geleceğin, irade ve kontrol dengesine bağlı olacak.',
     group: 'Majör Arkana',
   },
   {
@@ -168,14 +170,19 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
       'Ermiş, yakın gelecekte içsel bir yolculuğa çıkabilir, yalnız kalıp bilgelik arayabilir ya da kendi ışığını bulabilirsin.',
     reversed:
       'Ters Ermiş, yakın gelecekte aşırı yalnızlık, rehbersizlik ya da izolasyon yaşayabilirsin.',
-    keywords: ['bilgelik', 'içsel arayış', 'yalnızlık', 'rehberlik', 'farkındalık'],
-    context:
-      'Yakın geleceğin, içsel yolculuk ya da yalnızlıkla şekillenecek.',
+    keywords: [
+      'bilgelik',
+      'içsel arayış',
+      'yalnızlık',
+      'rehberlik',
+      'farkındalık',
+    ],
+    context: 'Yakın geleceğin, içsel yolculuk ya da yalnızlıkla şekillenecek.',
     group: 'Majör Arkana',
   },
   {
     id: 'wheel_of_fortune_ps_pos6',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 6,
     upright:
       'Kader Çarkı, yakın gelecekte ani değişimler, kaderin dönmesi ya da şanslı fırsatlar seni bekliyor olabilir.',
@@ -195,8 +202,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Adalet, yakın gelecekte yanlış anlaşılmalar, adaletsizlik ya da dengesizlik yaşayabilirsin.',
     keywords: ['adalet', 'denge', 'gerçek', 'karar', 'dürüstlük'],
-    context:
-      'Yakın geleceğin, adil ya da adaletsiz kararlarla şekillenebilir.',
+    context: 'Yakın geleceğin, adil ya da adaletsiz kararlarla şekillenebilir.',
     group: 'Majör Arkana',
   },
   {
@@ -207,7 +213,13 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
       'Asılan Adam, yakın gelecekte farklı bir bakış açısı kazanacak, fedakarlık yapacak ya da yeni bir anlayış geliştireceksin.',
     reversed:
       'Ters Asılan Adam, yakın gelecekte inatçılık, direnç ya da teslimiyetsizlik yaşayabilirsin.',
-    keywords: ['bakış açısı', 'teslimiyet', 'fedakarlık', 'farkındalık', 'öğrenme'],
+    keywords: [
+      'bakış açısı',
+      'teslimiyet',
+      'fedakarlık',
+      'farkındalık',
+      'öğrenme',
+    ],
     context:
       'Yakın geleceğin, yeni bakış açıları ya da dirençlerle şekillenecek.',
     group: 'Majör Arkana',
@@ -221,8 +233,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Ölüm, yakın gelecekte değişime direnç, kapanmamış süreçler ya da bırakmakta zorlanma yaşayabilirsin.',
     keywords: ['dönüşüm', 'bitiş', 'yenilenme', 'kapanış', 'cesaret'],
-    context:
-      'Yakın geleceğin, dönüşüm ya da dönüşüme dirençle belirlenecek.',
+    context: 'Yakın geleceğin, dönüşüm ya da dönüşüme dirençle belirlenecek.',
     group: 'Majör Arkana',
   },
   {
@@ -234,8 +245,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Denge, yakın gelecekte sabırsızlık, aşırılıklar ya da uyumsuzluk yaşayabilirsin.',
     keywords: ['denge', 'uyum', 'sabır', 'ölçülülük', 'dengeleyici'],
-    context:
-      'Yakın geleceğin, uyum ya da dengesizlikle şekillenecek.',
+    context: 'Yakın geleceğin, uyum ya da dengesizlikle şekillenecek.',
     group: 'Majör Arkana',
   },
   {
@@ -247,8 +257,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Şeytan, yakın gelecekte zincirlerinden kurtulma, özgürleşme ve korkularını aşma fırsatı bulabilirsin.',
     keywords: ['bağımlılık', 'kısıtlama', 'özgürlük', 'korku', 'gölge'],
-    context:
-      'Yakın geleceğin, bağımlılıklar ya da özgürleşmeyle şekillenecek.',
+    context: 'Yakın geleceğin, bağımlılıklar ya da özgürleşmeyle şekillenecek.',
     group: 'Majör Arkana',
   },
   {
@@ -260,8 +269,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Kule, yakın gelecekte ertelediğin bir krizin patlaması ya da değişimden kaçma eğilimi olabilir.',
     keywords: ['kriz', 'yıkım', 'değişim', 'dönüşüm', 'şok'],
-    context:
-      'Yakın geleceğin, kriz ya da krizden kaçışla şekillenecek.',
+    context: 'Yakın geleceğin, kriz ya da krizden kaçışla şekillenecek.',
     group: 'Majör Arkana',
   },
   {
@@ -273,8 +281,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Yıldız, yakın gelecekte umutsuzluk, ilham kaybı ya da güvensizlik yaşayabilirsin.',
     keywords: ['umut', 'ilham', 'yenilenme', 'ruh', 'güven'],
-    context:
-      'Yakın geleceğin, umut ya da umutsuzlukla şekillenecek.',
+    context: 'Yakın geleceğin, umut ya da umutsuzlukla şekillenecek.',
     group: 'Majör Arkana',
   },
   {
@@ -299,8 +306,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Güneş, yakın gelecekte karamsarlık, özgüven eksikliği ya da başarıların engellenmesi söz konusu olabilir.',
     keywords: ['mutluluk', 'başarı', 'özgüven', 'aydınlanma', 'neşe'],
-    context:
-      'Yakın geleceğin, mutluluk ya da karamsarlıkla şekillenecek.',
+    context: 'Yakın geleceğin, mutluluk ya da karamsarlıkla şekillenecek.',
     group: 'Majör Arkana',
   },
   {
@@ -312,8 +318,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Mahkeme, yakın gelecekte sorumluluktan kaçma, geçmişi reddetme ya da fırsatları görmezden gelme olabilir.',
     keywords: ['farkındalık', 'karar', 'yüzleşme', 'yenilenme', 'çağrı'],
-    context:
-      'Yakın geleceğin, farkındalık ya da kaçışla şekillenecek.',
+    context: 'Yakın geleceğin, farkındalık ya da kaçışla şekillenecek.',
     group: 'Majör Arkana',
   },
   {
@@ -378,8 +383,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Dört Kupa, yakın gelecekte fırsatlara açılma, farkındalık kazanma ve yeni bir ilgi alanı bulma yaşayabilirsin.',
     keywords: ['tatminsizlik', 'fırsat', 'ilgisizlik', 'uyanış', 'arama'],
-    context:
-      'Yakın geleceğin, tatminsizlik ya da farkındalıkla şekillenecek.',
+    context: 'Yakın geleceğin, tatminsizlik ya da farkındalıkla şekillenecek.',
     group: 'Kupalar',
   },
   {
@@ -391,8 +395,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Beş Kupa, yakın gelecekte iyileşme, geride kalan güzelliklere odaklanma ve şifalanma yaşayabilirsin.',
     keywords: ['kayıp', 'pişmanlık', 'üzüntü', 'şifa', 'farkındalık'],
-    context:
-      'Yakın geleceğin, yas ya da şifalanma süreçleriyle şekillenecek.',
+    context: 'Yakın geleceğin, yas ya da şifalanma süreçleriyle şekillenecek.',
     group: 'Kupalar',
   },
   {
@@ -430,8 +433,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Sekiz Kupa, yakın gelecekte ayrılmakta zorlanma, geçmişe geri dönme ya da kararsızlık yaşayabilirsin.',
     keywords: ['bırakış', 'arayış', 'tatminsizlik', 'karar', 'kaçış'],
-    context:
-      'Yakın geleceğin, bırakmak ya da geri dönmekle şekillenecek.',
+    context: 'Yakın geleceğin, bırakmak ya da geri dönmekle şekillenecek.',
     group: 'Kupalar',
   },
   {
@@ -443,8 +445,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Dokuz Kupa, yakın gelecekte beklentilerin karşılanmaması, yüzeysel tatmin ya da doyumsuzluk yaşayabilirsin.',
     keywords: ['dilek', 'tatmin', 'mutluluk', 'doyum', 'beklenti'],
-    context:
-      'Yakın geleceğin, tatmin ya da beklentiyle şekillenecek.',
+    context: 'Yakın geleceğin, tatmin ya da beklentiyle şekillenecek.',
     group: 'Kupalar',
   },
   {
@@ -469,8 +470,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Kupa Prensi, yakın gelecekte hayalcilik, duygusal olgunluk eksikliği ya da samimiyet sorunları olabilir.',
     keywords: ['ilham', 'romantizm', 'yaratıcılık', 'hayal', 'samimiyet'],
-    context:
-      'Yakın geleceğin, ilham ya da hayalcilikle şekillenecek.',
+    context: 'Yakın geleceğin, ilham ya da hayalcilikle şekillenecek.',
     group: 'Kupalar',
   },
   {
@@ -482,8 +482,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Kupa Şövalyesi, yakın gelecekte tutarsızlık, boş vaatler ya da gerçek dışı beklentiler yaşayabilirsin.',
     keywords: ['romantizm', 'teklif', 'ilham', 'hayal', 'adım'],
-    context:
-      'Yakın geleceğin, romantizm ya da tutarsızlıkla şekillenecek.',
+    context: 'Yakın geleceğin, romantizm ya da tutarsızlıkla şekillenecek.',
     group: 'Kupalar',
   },
   {
@@ -495,8 +494,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Kupa Kraliçesi, yakın gelecekte aşırı hassasiyet, bağımlılık ya da duygusal dengesizlik yaşayabilirsin.',
     keywords: ['şefkat', 'empati', 'bilgelik', 'hassasiyet', 'denge'],
-    context:
-      'Yakın geleceğin, şefkat ya da dengesizlikle şekillenecek.',
+    context: 'Yakın geleceğin, şefkat ya da dengesizlikle şekillenecek.',
     group: 'Kupalar',
   },
   {
@@ -508,8 +506,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Kupa Kralı, yakın gelecekte duygusal kontrol kaybı, bastırılmış öfke ya da güvensizlik yaşayabilirsin.',
     keywords: ['olgunluk', 'denge', 'sakinlik', 'rehberlik', 'bilgelik'],
-    context:
-      'Yakın geleceğin, olgunluk ya da dengesizlikle şekillenecek.',
+    context: 'Yakın geleceğin, olgunluk ya da dengesizlikle şekillenecek.',
     group: 'Kupalar',
   },
 
@@ -536,8 +533,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters İki Kılıç, yakın gelecekte karar vermekten kaçmak ya da yanlış seçim yapma ihtimalin olabilir.',
     keywords: ['kararsızlık', 'seçim', 'denge', 'ikilem', 'yol ayrımı'],
-    context:
-      'Yakın geleceğin, karar alma süreçleriyle şekillenecek.',
+    context: 'Yakın geleceğin, karar alma süreçleriyle şekillenecek.',
     group: 'Kılıçlar',
   },
   {
@@ -549,8 +545,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Üç Kılıç, yakın gelecekte şifalanma, affediş ya da eski yaraları onarma fırsatı doğabilir.',
     keywords: ['kalp kırıklığı', 'ayrılık', 'acı', 'şifa', 'affediş'],
-    context:
-      'Yakın geleceğin, kırılma ya da şifalanmayla şekillenecek.',
+    context: 'Yakın geleceğin, kırılma ya da şifalanmayla şekillenecek.',
     group: 'Kılıçlar',
   },
   {
@@ -562,8 +557,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Dört Kılıç, yakın gelecekte tükenmişlik, dinlenme eksikliği ya da toparlanmayı erteleme olabilir.',
     keywords: ['dinlenme', 'toparlanma', 'zihin', 'yenilenme', 'huzur'],
-    context:
-      'Yakın geleceğin, dinlenme ya da tükenmişlikle şekillenecek.',
+    context: 'Yakın geleceğin, dinlenme ya da tükenmişlikle şekillenecek.',
     group: 'Kılıçlar',
   },
   {
@@ -575,8 +569,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Beş Kılıç, yakın gelecekte barışma, uzlaşma ya da çatışmaları geride bırakma fırsatı bulabilirsin.',
     keywords: ['çatışma', 'gurur', 'kayıp', 'uzlaşma', 'gerilim'],
-    context:
-      'Yakın geleceğin, çatışma ya da barış arayışıyla şekillenecek.',
+    context: 'Yakın geleceğin, çatışma ya da barış arayışıyla şekillenecek.',
     group: 'Kılıçlar',
   },
   {
@@ -601,8 +594,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Yedi Kılıç, yakın gelecekte sırların açığa çıkması, dürüstleşme ya da yakalanma ihtimali olabilir.',
     keywords: ['gizlilik', 'hile', 'strateji', 'sırlar', 'hesap'],
-    context:
-      'Yakın geleceğin, gizlilik ya da dürüstlükle şekillenecek.',
+    context: 'Yakın geleceğin, gizlilik ya da dürüstlükle şekillenecek.',
     group: 'Kılıçlar',
   },
   {
@@ -614,8 +606,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Sekiz Kılıç, yakın gelecekte özgürleşme, kısıtlamalardan kurtulma ya da zihinsel zincirlerini kırma yaşayabilirsin.',
     keywords: ['sınırlama', 'çaresizlik', 'özgürlük', 'zihin', 'engeller'],
-    context:
-      'Yakın geleceğin, kısıtlanma ya da özgürleşmeyle şekillenecek.',
+    context: 'Yakın geleceğin, kısıtlanma ya da özgürleşmeyle şekillenecek.',
     group: 'Kılıçlar',
   },
   {
@@ -627,8 +618,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Dokuz Kılıç, yakın gelecekte kaygılardan arınma, rahatlama ya da destek bulma fırsatı doğabilir.',
     keywords: ['kaygı', 'stres', 'kabus', 'endişe', 'destek'],
-    context:
-      'Yakın geleceğin, kaygılar ya da şifalanmayla şekillenecek.',
+    context: 'Yakın geleceğin, kaygılar ya da şifalanmayla şekillenecek.',
     group: 'Kılıçlar',
   },
   {
@@ -640,8 +630,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters On Kılıç, yakın gelecekte toparlanma, yeniden doğuş ya da travmaları geride bırakma fırsatı doğabilir.',
     keywords: ['bitiş', 'ihanet', 'yeniden doğuş', 'kayıp', 'acı'],
-    context:
-      'Yakın geleceğin, bitiş ya da yeniden doğuşla şekillenecek.',
+    context: 'Yakın geleceğin, bitiş ya da yeniden doğuşla şekillenecek.',
     group: 'Kılıçlar',
   },
   {
@@ -653,8 +642,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Kılıç Prensi, yakın gelecekte dedikodular, yanlış bilgi ya da dikkatsizlik gündeme gelebilir.',
     keywords: ['merak', 'iletişim', 'zeka', 'öğrenme', 'dikkat'],
-    context:
-      'Yakın geleceğin, öğrenme ya da dikkatsizlikle şekillenecek.',
+    context: 'Yakın geleceğin, öğrenme ya da dikkatsizlikle şekillenecek.',
     group: 'Kılıçlar',
   },
   {
@@ -666,8 +654,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Kılıç Şövalyesi, yakın gelecekte acelecilik, dikkatsizlik ya da yönsüzlük yaşayabilirsin.',
     keywords: ['cesaret', 'hız', 'karar', 'hedef', 'acele'],
-    context:
-      'Yakın geleceğin, cesaret ya da acelecilikle şekillenecek.',
+    context: 'Yakın geleceğin, cesaret ya da acelecilikle şekillenecek.',
     group: 'Kılıçlar',
   },
   {
@@ -719,8 +706,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters İki Tılsım, yakın gelecekte dengesizlik, fazla yüklenme ya da karar verememe olabilir.',
     keywords: ['denge', 'sorumluluk', 'öncelik', 'esneklik', 'yoğunluk'],
-    context:
-      'Yakın geleceğin, denge ya da dengesizlikle şekillenecek.',
+    context: 'Yakın geleceğin, denge ya da dengesizlikle şekillenecek.',
     group: 'Tılsımlar',
   },
   {
@@ -732,8 +718,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Üç Tılsım, yakın gelecekte uyumsuzluk, ekip içinde anlaşmazlık ya da destek eksikliği olabilir.',
     keywords: ['işbirliği', 'ekip', 'başarı', 'paylaşım', 'uyum'],
-    context:
-      'Yakın geleceğin, işbirliği ya da uyumsuzlukla şekillenecek.',
+    context: 'Yakın geleceğin, işbirliği ya da uyumsuzlukla şekillenecek.',
     group: 'Tılsımlar',
   },
   {
@@ -745,8 +730,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Dört Tılsım, yakın gelecekte cimrilik, kaybetme korkusu ya da aşırı kontrol gündeme gelebilir.',
     keywords: ['güvenlik', 'istikrar', 'kontrol', 'koruma', 'kaybetme korkusu'],
-    context:
-      'Yakın geleceğin, güvence ya da aşırı tutuculukla şekillenecek.',
+    context: 'Yakın geleceğin, güvence ya da aşırı tutuculukla şekillenecek.',
     group: 'Tılsımlar',
   },
   {
@@ -757,9 +741,14 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
       'Beş Tılsım, yakın gelecekte maddi zorluk, yalnızlık ya da desteğin eksikliği gündeme gelebilir.',
     reversed:
       'Ters Beş Tılsım, yakın gelecekte yardımlaşma, destek bulma ve zorlukları aşma fırsatı doğabilir.',
-    keywords: ['zorluk', 'yalnızlık', 'destek', 'maddi sıkıntı', 'dayanıklılık'],
-    context:
-      'Yakın geleceğin, zorluk ya da destekle şekillenecek.',
+    keywords: [
+      'zorluk',
+      'yalnızlık',
+      'destek',
+      'maddi sıkıntı',
+      'dayanıklılık',
+    ],
+    context: 'Yakın geleceğin, zorluk ya da destekle şekillenecek.',
     group: 'Tılsımlar',
   },
   {
@@ -771,8 +760,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Altı Tılsım, yakın gelecekte eşitsiz ilişkiler, dengesizlik ya da tek taraflı destek olabilir.',
     keywords: ['yardım', 'paylaşım', 'adalet', 'denge', 'destek'],
-    context:
-      'Yakın geleceğin, denge ya da dengesizlikle şekillenecek.',
+    context: 'Yakın geleceğin, denge ya da dengesizlikle şekillenecek.',
     group: 'Tılsımlar',
   },
   {
@@ -784,8 +772,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Yedi Tılsım, yakın gelecekte sabırsızlık, boşuna emek ya da tatminsizlik gündeme gelebilir.',
     keywords: ['sabır', 'emek', 'yatırım', 'bekleyiş', 'kazanç'],
-    context:
-      'Yakın geleceğin, sabır ya da sabırsızlıkla şekillenecek.',
+    context: 'Yakın geleceğin, sabır ya da sabırsızlıkla şekillenecek.',
     group: 'Tılsımlar',
   },
   {
@@ -797,8 +784,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Sekiz Tılsım, yakın gelecekte özensizlik, motivasyon eksikliği ya da aynı hataları tekrarlama olabilir.',
     keywords: ['çalışma', 'ustalık', 'öğrenme', 'disiplin', 'emek'],
-    context:
-      'Yakın geleceğin, çalışkanlık ya da özensizlikle şekillenecek.',
+    context: 'Yakın geleceğin, çalışkanlık ya da özensizlikle şekillenecek.',
     group: 'Tılsımlar',
   },
   {
@@ -810,8 +796,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Dokuz Tılsım, yakın gelecekte yalnızlık korkusu, bağımlılık ya da maddi aşırılıklar olabilir.',
     keywords: ['bağımsızlık', 'özgüven', 'tatmin', 'başarı', 'bolluk'],
-    context:
-      'Yakın geleceğin, bağımsızlık ya da bağımlılıkla şekillenecek.',
+    context: 'Yakın geleceğin, bağımsızlık ya da bağımlılıkla şekillenecek.',
     group: 'Tılsımlar',
   },
   {
@@ -823,8 +808,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters On Tılsım, yakın gelecekte ailevi sorunlar, kalıcı istikrarsızlık ya da miras anlaşmazlıkları olabilir.',
     keywords: ['aile', 'istikrar', 'güvence', 'bolluk', 'miras'],
-    context:
-      'Yakın geleceğin, istikrar ya da huzursuzlukla şekillenecek.',
+    context: 'Yakın geleceğin, istikrar ya da huzursuzlukla şekillenecek.',
     group: 'Tılsımlar',
   },
   {
@@ -836,8 +820,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Tılsım Prensi, yakın gelecekte motivasyon kaybı, dikkatsizlik ya da yarım kalan projeler gündeme gelebilir.',
     keywords: ['öğrenme', 'fırsat', 'plan', 'araştırma', 'başlangıç'],
-    context:
-      'Yakın geleceğin, öğrenme ya da dikkatsizlikle şekillenecek.',
+    context: 'Yakın geleceğin, öğrenme ya da dikkatsizlikle şekillenecek.',
     group: 'Tılsımlar',
   },
   {
@@ -849,8 +832,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Tılsım Şövalyesi, yakın gelecekte durağanlık, tembellik ya da fazla yavaş ilerleme olabilir.',
     keywords: ['sabır', 'istikrar', 'çalışma', 'disiplin', 'azim'],
-    context:
-      'Yakın geleceğin, disiplin ya da durağanlıkla şekillenecek.',
+    context: 'Yakın geleceğin, disiplin ya da durağanlıkla şekillenecek.',
     group: 'Tılsımlar',
   },
   {
@@ -862,8 +844,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Tılsım Kraliçesi, yakın gelecekte öz bakım eksikliği, savurganlık ya da dengesiz kaynak kullanımı olabilir.',
     keywords: ['bolluk', 'şefkat', 'kaynak yönetimi', 'denge', 'üretkenlik'],
-    context:
-      'Yakın geleceğin, bolluk ya da savurganlıkla şekillenecek.',
+    context: 'Yakın geleceğin, bolluk ya da savurganlıkla şekillenecek.',
     group: 'Tılsımlar',
   },
   {
@@ -875,8 +856,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Tılsım Kralı, yakın gelecekte hırs, baskıcılık ya da istikrar eksikliği gündeme gelebilir.',
     keywords: ['başarı', 'istikrar', 'güven', 'liderlik', 'bolluk'],
-    context:
-      'Yakın geleceğin, başarı ya da istikrarsızlıkla şekillenecek.',
+    context: 'Yakın geleceğin, başarı ya da istikrarsızlıkla şekillenecek.',
     group: 'Tılsımlar',
   },
   // --- Asalar Serisi ---
@@ -915,8 +895,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Üç Değnek, yakın gelecekte gecikmeler, vizyon kaybı ya da beklentilerin ertelenmesi olabilir.',
     keywords: ['ilerleme', 'ufuk', 'fırsat', 'plan', 'vizyon'],
-    context:
-      'Yakın geleceğin, fırsatlarla ya da engellerle şekillenecek.',
+    context: 'Yakın geleceğin, fırsatlarla ya da engellerle şekillenecek.',
     group: 'Asalar',
   },
   {
@@ -928,8 +907,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Dört Değnek, yakın gelecekte uyumsuzluk, ev ya da iş yaşamında huzursuzluk yaşayabilirsin.',
     keywords: ['kutlama', 'temel', 'uyum', 'denge', 'huzur'],
-    context:
-      'Yakın geleceğin, uyum ya da huzursuzlukla şekillenecek.',
+    context: 'Yakın geleceğin, uyum ya da huzursuzlukla şekillenecek.',
     group: 'Asalar',
   },
   {
@@ -941,8 +919,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Beş Değnek, yakın gelecekte çatışmalardan uzaklaşabilir, işbirliğine daha çok odaklanabilirsin.',
     keywords: ['rekabet', 'çatışma', 'mücadele', 'işbirliği', 'gerilim'],
-    context:
-      'Yakın geleceğin, rekabet ya da işbirliğiyle şekillenecek.',
+    context: 'Yakın geleceğin, rekabet ya da işbirliğiyle şekillenecek.',
     group: 'Asalar',
   },
   {
@@ -954,8 +931,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Altı Değnek, yakın gelecekte değerinin bilinmemesi, başarının engellenmesi ya da özgüven eksikliği yaşayabilirsin.',
     keywords: ['zafer', 'başarı', 'takdir', 'özgüven', 'liderlik'],
-    context:
-      'Yakın geleceğin, zafer ya da hayal kırıklığıyla şekillenecek.',
+    context: 'Yakın geleceğin, zafer ya da hayal kırıklığıyla şekillenecek.',
     group: 'Asalar',
   },
   {
@@ -967,8 +943,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Yedi Değnek, yakın gelecekte direnmekte zorlanabilir, geri adım atma ihtiyacı hissedebilirsin.',
     keywords: ['savunma', 'mücadele', 'kararlılık', 'cesaret', 'sınırlar'],
-    context:
-      'Yakın geleceğin, direnç ya da geri çekilme ile şekillenecek.',
+    context: 'Yakın geleceğin, direnç ya da geri çekilme ile şekillenecek.',
     group: 'Asalar',
   },
   {
@@ -980,8 +955,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Sekiz Değnek, yakın gelecekte gecikmeler, iletişim sorunları ya da yavaş ilerleme olabilir.',
     keywords: ['hız', 'iletişim', 'haber', 'ilerleme', 'değişim'],
-    context:
-      'Yakın geleceğin, hızlı ilerleme ya da gecikmelerle şekillenecek.',
+    context: 'Yakın geleceğin, hızlı ilerleme ya da gecikmelerle şekillenecek.',
     group: 'Asalar',
   },
   {
@@ -1006,8 +980,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters On Değnek, yakın gelecekte yüklerinden kurtulma, sorumluluklarını hafifletme ya da aşırı yorgunluk olabilir.',
     keywords: ['yük', 'sorumluluk', 'görev', 'mücadele', 'ağırlık'],
-    context:
-      'Yakın geleceğin, sorumluluk ya da hafifleme ile şekillenecek.',
+    context: 'Yakın geleceğin, sorumluluk ya da hafifleme ile şekillenecek.',
     group: 'Asalar',
   },
   {
@@ -1019,8 +992,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Değnek Prensi, yakın gelecekte motivasyon kaybı, acelecilik ya da dikkatsizlik yaşayabilirsin.',
     keywords: ['ilham', 'keşif', 'cesaret', 'deneyim', 'merak'],
-    context:
-      'Yakın geleceğin, cesur adımlar ya da acelecilikle şekillenecek.',
+    context: 'Yakın geleceğin, cesur adımlar ya da acelecilikle şekillenecek.',
     group: 'Asalar',
   },
   {
@@ -1045,8 +1017,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Değnek Kraliçesi, yakın gelecekte güvensizlik, kıskançlık ya da enerjide düşüş yaşayabilirsin.',
     keywords: ['özgüven', 'liderlik', 'ilham', 'çekim', 'enerji'],
-    context:
-      'Yakın geleceğin, özgüven ya da güvensizlikle şekillenecek.',
+    context: 'Yakın geleceğin, özgüven ya da güvensizlikle şekillenecek.',
     group: 'Asalar',
   },
   {
@@ -1058,8 +1029,7 @@ export const position6Meanings: ProblemSolvingPosition6Meaning[] = [
     reversed:
       'Ters Değnek Kralı, yakın gelecekte baskıcılık, kontrol etme isteği ya da vizyon eksikliği gündeme gelebilir.',
     keywords: ['liderlik', 'vizyon', 'ilham', 'karizma', 'cesaret'],
-    context:
-      'Yakın geleceğin, vizyon ya da kontrol ihtiyacıyla şekillenecek.',
+    context: 'Yakın geleceğin, vizyon ya da kontrol ihtiyacıyla şekillenecek.',
     group: 'Asalar',
   },
 ];
@@ -1074,54 +1044,55 @@ export function getProblemSolvingPosition6Meaning(
 ): ProblemSolvingPosition6Meaning | null {
   // Kart ismi eşleştirmesi için hem İngilizce hem Türkçe isimleri kontrol et
   // Önce doğrudan eşleşme ara
-  let meaning = position6Meanings.find(m => 
-    m.card === card.name || 
-    m.card === card.nameTr ||
-    card.name === m.card ||
-    card.nameTr === m.card
+  let meaning = position6Meanings.find(
+    m =>
+      m.card === card.name ||
+      m.card === card.nameTr ||
+      card.name === m.card ||
+      card.nameTr === m.card
   );
-  
+
   if (meaning) {
     return meaning;
   }
-  
+
   // Kart ismi mapping'i kullanarak eşleştirme yap
   const cardNameMapping: { [key: string]: string } = {
     // Major Arcana - Türkçe
-    'Deli': 'The Fool',
-    'Büyücü': 'The Magician',
+    Deli: 'The Fool',
+    Büyücü: 'The Magician',
     'Yüksek Rahibe': 'The High Priestess',
-    'İmparatoriçe': 'The Empress',
-    'İmparator': 'The Emperor',
-    'Hierophant': 'The Hierophant',
-    'Aziz': 'The Hierophant',
-    'Aşıklar': 'The Lovers',
+    İmparatoriçe: 'The Empress',
+    İmparator: 'The Emperor',
+    Hierophant: 'The Hierophant',
+    Aziz: 'The Hierophant',
+    Aşıklar: 'The Lovers',
     'Savaş Arabası': 'The Chariot',
-    'Güç': 'Strength',
-    'Ermiş': 'The Hermit',
-    'Münzevi': 'The Hermit',
-    'Kader Çarkı': 'The Wheel of Fortune',
-    'Adalet': 'Justice',
+    Güç: 'Strength',
+    Ermiş: 'The Hermit',
+    Münzevi: 'The Hermit',
+    'Kader Çarkı': 'The The Wheel of Fortune',
+    Adalet: 'Justice',
     'Asılı Adam': 'The Hanged Man',
-    'Ölüm': 'Death',
-    'Ölçü': 'Temperance',
-    'Ölçülülük': 'Temperance',
-    'Şeytan': 'The Devil',
-    'Kule': 'The Tower',
-    'Yıldız': 'The Star',
-    'Ay': 'The Moon',
-    'Güneş': 'The Sun',
-    'Yargı': 'Judgement',
-    'Mahkeme': 'Judgement',
-    'Dünya': 'The World',
+    Ölüm: 'Death',
+    Ölçü: 'Temperance',
+    Ölçülülük: 'Temperance',
+    Şeytan: 'The Devil',
+    Kule: 'The Tower',
+    Yıldız: 'The Star',
+    Ay: 'The Moon',
+    Güneş: 'The Sun',
+    Yargı: 'Judgement',
+    Mahkeme: 'Judgement',
+    Dünya: 'The World',
   };
-  
+
   // Türkçe ismi İngilizce'ye çevir
   const englishName = cardNameMapping[card.nameTr] || card.nameTr;
-  
+
   // İngilizce isimle tekrar ara
   meaning = position6Meanings.find(m => m.card === englishName);
-  
+
   return meaning || null;
 }
 
@@ -1184,7 +1155,7 @@ export const useI18nposition6Meanings = (): I18nProblemSolvingPosition6Meaning[]
 */
 
 // Belirli bir kart için i18n destekli anlam al (hook kullanmadan)
-      export const getI18nPosition6Meaning = (
+export const getI18nPosition6Meaning = (
   cardName: string,
   t: (_key: string) => string
 ): I18nProblemSolvingPosition6Meaning | null => {

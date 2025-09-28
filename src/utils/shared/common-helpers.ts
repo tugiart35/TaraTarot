@@ -1,18 +1,21 @@
 /*
  * Common Helpers - Ortak Utility Function'ları
- * 
+ *
  * Bu dosya tüm proje için ortak utility function'ları sağlar.
  * DRY principle uygulayarak tekrarlanan utility kodlarını önler.
  */
 
 // Date Utilities
 export const DateUtils = {
-  formatDate: (date: string | Date, format: 'short' | 'long' | 'time' = 'short'): string => {
+  formatDate: (
+    date: string | Date,
+    format: 'short' | 'long' | 'time' = 'short'
+  ): string => {
     const d = new Date(date);
     const options: Intl.DateTimeFormatOptions = {
       short: { year: 'numeric', month: 'short', day: 'numeric' },
       long: { year: 'numeric', month: 'long', day: 'numeric' },
-      time: { hour: '2-digit', minute: '2-digit' }
+      time: { hour: '2-digit', minute: '2-digit' },
     };
     return d.toLocaleDateString('tr-TR', options[format]);
   },
@@ -41,11 +44,14 @@ export const DateUtils = {
     const birth = new Date(birthDate);
     let age = today.getFullYear() - birth.getFullYear();
     const monthDiff = today.getMonth() - birth.getMonth();
-    
-    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
+
+    if (
+      monthDiff < 0 ||
+      (monthDiff === 0 && today.getDate() < birth.getDate())
+    ) {
       age--;
     }
-    
+
     return age;
   },
 
@@ -65,8 +71,11 @@ export const DateUtils = {
   isThisMonth: (date: string | Date): boolean => {
     const today = new Date();
     const target = new Date(date);
-    return today.getMonth() === target.getMonth() && today.getFullYear() === target.getFullYear();
-  }
+    return (
+      today.getMonth() === target.getMonth() &&
+      today.getFullYear() === target.getFullYear()
+    );
+  },
 };
 
 // String Utilities
@@ -76,11 +85,16 @@ export const StringUtils = {
   },
 
   capitalizeWords: (str: string): string => {
-    return str.split(' ').map(word => StringUtils.capitalize(word)).join(' ');
+    return str
+      .split(' ')
+      .map(word => StringUtils.capitalize(word))
+      .join(' ');
   },
 
   truncate: (str: string, length: number, suffix: string = '...'): string => {
-    if (str.length <= length) return str;
+    if (str.length <= length) {
+      return str;
+    }
     return str.substring(0, length - suffix.length) + suffix;
   },
 
@@ -105,7 +119,7 @@ export const StringUtils = {
   extractPhones: (str: string): string[] => {
     const phoneRegex = /(\+90|0)?[5][0-9]{9}/g;
     return str.match(phoneRegex) || [];
-  }
+  },
 };
 
 // Number Utilities
@@ -113,14 +127,14 @@ export const NumberUtils = {
   formatCurrency: (amount: number, currency: string = 'TRY'): string => {
     return new Intl.NumberFormat('tr-TR', {
       style: 'currency',
-      currency: currency
+      currency: currency,
     }).format(amount);
   },
 
   formatNumber: (num: number, decimals: number = 0): string => {
     return new Intl.NumberFormat('tr-TR', {
       minimumFractionDigits: decimals,
-      maximumFractionDigits: decimals
+      maximumFractionDigits: decimals,
     }).format(num);
   },
 
@@ -139,7 +153,7 @@ export const NumberUtils = {
 
   round: (value: number, decimals: number = 0): number => {
     return Math.round(value * Math.pow(10, decimals)) / Math.pow(10, decimals);
-  }
+  },
 };
 
 // Array Utilities
@@ -148,23 +162,37 @@ export const ArrayUtils = {
     return [...new Set(arr)];
   },
 
-  groupBy: <T, K extends string | number>(arr: T[], key: (item: T) => K): Record<K, T[]> => {
-    return arr.reduce((groups, item) => {
-      const groupKey = key(item);
-      if (!groups[groupKey]) {
-        groups[groupKey] = [];
-      }
-      groups[groupKey].push(item);
-      return groups;
-    }, {} as Record<K, T[]>);
+  groupBy: <T, K extends string | number>(
+    arr: T[],
+    key: (item: T) => K
+  ): Record<K, T[]> => {
+    return arr.reduce(
+      (groups, item) => {
+        const groupKey = key(item);
+        if (!groups[groupKey]) {
+          groups[groupKey] = [];
+        }
+        groups[groupKey].push(item);
+        return groups;
+      },
+      {} as Record<K, T[]>
+    );
   },
 
-  sortBy: <T>(arr: T[], key: (item: T) => any, order: 'asc' | 'desc' = 'asc'): T[] => {
+  sortBy: <T>(
+    arr: T[],
+    key: (item: T) => any,
+    order: 'asc' | 'desc' = 'asc'
+  ): T[] => {
     return [...arr].sort((a, b) => {
       const aVal = key(a);
       const bVal = key(b);
-      if (aVal < bVal) return order === 'asc' ? -1 : 1;
-      if (aVal > bVal) return order === 'asc' ? 1 : -1;
+      if (aVal < bVal) {
+        return order === 'asc' ? -1 : 1;
+      }
+      if (aVal > bVal) {
+        return order === 'asc' ? 1 : -1;
+      }
       return 0;
     });
   },
@@ -184,7 +212,7 @@ export const ArrayUtils = {
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
     return shuffled;
-  }
+  },
 };
 
 // Object Utilities
@@ -193,10 +221,17 @@ export const ObjectUtils = {
     return JSON.parse(JSON.stringify(obj));
   },
 
-  deepMerge: <T extends Record<string, any>>(target: T, source: Partial<T>): T => {
+  deepMerge: <T extends Record<string, any>>(
+    target: T,
+    source: Partial<T>
+  ): T => {
     const result = { ...target };
     for (const key in source) {
-      if (source[key] && typeof source[key] === 'object' && !Array.isArray(source[key])) {
+      if (
+        source[key] &&
+        typeof source[key] === 'object' &&
+        !Array.isArray(source[key])
+      ) {
         result[key] = ObjectUtils.deepMerge(target[key] || {}, source[key]);
       } else {
         result[key] = source[key];
@@ -224,11 +259,17 @@ export const ObjectUtils = {
   },
 
   isEmpty: (obj: any): boolean => {
-    if (obj == null) return true;
-    if (Array.isArray(obj) || typeof obj === 'string') return obj.length === 0;
-    if (typeof obj === 'object') return Object.keys(obj).length === 0;
+    if (obj == null) {
+      return true;
+    }
+    if (Array.isArray(obj) || typeof obj === 'string') {
+      return obj.length === 0;
+    }
+    if (typeof obj === 'object') {
+      return Object.keys(obj).length === 0;
+    }
     return false;
-  }
+  },
 };
 
 // Validation Utilities
@@ -251,15 +292,19 @@ export const ValidationUtils = {
   },
 
   isUUID: (uuid: string): boolean => {
-    return /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(uuid);
+    return /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(
+      uuid
+    );
   },
 
   isStrongPassword: (password: string): boolean => {
-    return password.length >= 8 && 
-           /(?=.*[a-z])/.test(password) && 
-           /(?=.*[A-Z])/.test(password) && 
-           /(?=.*\d)/.test(password);
-  }
+    return (
+      password.length >= 8 &&
+      /(?=.*[a-z])/.test(password) &&
+      /(?=.*[A-Z])/.test(password) &&
+      /(?=.*\d)/.test(password)
+    );
+  },
 };
 
 // Storage Utilities
@@ -296,7 +341,7 @@ export const StorageUtils = {
     } catch (error) {
       console.error('Storage clear error:', error);
     }
-  }
+  },
 };
 
 // Export all utilities as a single object
@@ -307,5 +352,5 @@ export const CommonHelpers = {
   ArrayUtils,
   ObjectUtils,
   ValidationUtils,
-  StorageUtils
+  StorageUtils,
 };

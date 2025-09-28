@@ -125,7 +125,9 @@ class ClientRateLimiter {
     const entry = this.limits.get(key);
     const config = this.configs.get(action);
 
-    if (!entry || !config) return null;
+    if (!entry || !config) {
+      return null;
+    }
 
     if (entry.blockedUntil) {
       return Math.max(0, entry.blockedUntil - Date.now());
@@ -143,7 +145,9 @@ class ClientRateLimiter {
       const action = key.split(':')[0];
       const config = this.configs.get(action!);
 
-      if (!config) continue;
+      if (!config) {
+        continue;
+      }
 
       const expired = now - entry.windowStart > config.windowMs;
       const unblocked = !entry.blockedUntil || entry.blockedUntil < now;
@@ -184,7 +188,9 @@ export function withRateLimit<T extends unknown[], R>(
       const result: { error: string; resetTime?: number } = {
         error: `Çok fazla deneme. ${minutes} dakika sonra tekrar deneyin.`,
       };
-      if (resetTime !== undefined) result.resetTime = resetTime;
+      if (resetTime !== undefined) {
+        result.resetTime = resetTime;
+      }
       return result;
     }
 
@@ -215,7 +221,9 @@ export function withAsyncRateLimit<T extends unknown[], R>(
       const result: { error: string; resetTime?: number } = {
         error: `Çok fazla deneme. ${minutes} dakika sonra tekrar deneyin.`,
       };
-      if (resetTime !== undefined) result.resetTime = resetTime;
+      if (resetTime !== undefined) {
+        result.resetTime = resetTime;
+      }
       return result;
     }
 
@@ -243,7 +251,9 @@ export function useRateLimit(action: string, identifier: string = 'default') {
  * Format remaining time for user display
  */
 export function formatResetTime(resetTimeMs: number): string {
-  if (resetTimeMs <= 0) return 'Şimdi';
+  if (resetTimeMs <= 0) {
+    return 'Şimdi';
+  }
 
   const minutes = Math.ceil(resetTimeMs / 60000);
   if (minutes < 60) {

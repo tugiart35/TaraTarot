@@ -19,7 +19,12 @@ const nextConfig = {
   serverExternalPackages: ['@supabase/supabase-js'],
   // Bundle optimization
   experimental: {
-    optimizePackageImports: ['lucide-react', 'html2canvas', 'jspdf', 'framer-motion'],
+    optimizePackageImports: [
+      'lucide-react',
+      'html2canvas',
+      'jspdf',
+      'framer-motion',
+    ],
     turbo: {
       rules: {
         '*.svg': {
@@ -59,13 +64,13 @@ const nextConfig = {
               "base-uri 'self'",
               "form-action 'self'",
               "frame-ancestors 'none'",
-              "upgrade-insecure-requests"
-            ].join('; ')
-          }
-        ]
-      }
+              'upgrade-insecure-requests',
+            ].join('; '),
+          },
+        ],
+      },
     ];
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

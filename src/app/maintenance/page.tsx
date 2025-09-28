@@ -173,11 +173,13 @@ function MaintenanceContent() {
 
 export default function MaintenancePage() {
   return (
-    <Suspense fallback={
-      <div className='min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-4'>
-        <div className='text-white text-xl'>Yükleniyor...</div>
-      </div>
-    }>
+    <Suspense
+      fallback={
+        <div className='min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-4'>
+          <div className='text-white text-xl'>Yükleniyor...</div>
+        </div>
+      }
+    >
       <MaintenanceContent />
     </Suspense>
   );

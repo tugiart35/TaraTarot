@@ -69,6 +69,7 @@ interface BaseCardPositionProps {
   isNextPosition: boolean;
   onToggleCard: () => void;
   onCardDetails: (_card: TarotCard) => void;
+  canSelect?: boolean;
   positionInfo: {
     title: string;
     desc: string;
@@ -93,6 +94,7 @@ export default function BaseCardPosition({
   isNextPosition,
   onToggleCard: _onToggleCard,
   onCardDetails,
+  canSelect = true,
   positionInfo,
   renderCard,
   cardSize = 'medium',
@@ -198,10 +200,15 @@ export default function BaseCardPosition({
 
   return (
     <div
-      className={`${position.className} transition-all duration-300 cursor-pointer`}
+      className={`${position.className} transition-all duration-300 ${canSelect ? 'cursor-pointer' : 'cursor-default'}`}
       onClick={() => {
+        if (!canSelect) {
+          return;
+        }
         if (hasCard && _card) {
           onCardDetails(_card);
+        } else if (isNextPosition) {
+          _onToggleCard();
         }
       }}
       style={{ zIndex: isNextPosition ? 40 : hasCard ? 30 : 20 }}
@@ -210,7 +217,7 @@ export default function BaseCardPosition({
         className={`
         ${cardSizes[cardSize]}
         border-2 rounded-xl flex flex-col items-center justify-center
-        transition-all duration-500 hover:scale-110 hover:z-40 relative
+        transition-all duration-500 ${canSelect ? 'hover:scale-110 hover:z-40' : 'opacity-75'} relative
         shadow-xl shadow-black/60
         ${
           isNextPosition

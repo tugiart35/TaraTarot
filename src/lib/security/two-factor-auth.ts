@@ -203,7 +203,9 @@ export class Email2FAManager {
 export class Biometric2FAManager {
   // Check if biometric auth is available
   static async isAvailable(): Promise<boolean> {
-    if (typeof window === 'undefined') return false;
+    if (typeof window === 'undefined') {
+      return false;
+    }
 
     try {
       if (window.PublicKeyCredential) {
@@ -218,7 +220,9 @@ export class Biometric2FAManager {
   // Register biometric credential
   static async registerCredential(userId: string): Promise<boolean> {
     try {
-      if (!window.PublicKeyCredential) return false;
+      if (!window.PublicKeyCredential) {
+        return false;
+      }
 
       // Burada backend'e bağlanılacak - Biometric registration
       const response = await fetch('/api/auth/register-biometric', {
@@ -229,7 +233,9 @@ export class Biometric2FAManager {
         body: JSON.stringify({ userId }),
       });
 
-      if (!response.ok) return false;
+      if (!response.ok) {
+        return false;
+      }
 
       const options = await response.json();
 
@@ -258,7 +264,9 @@ export class Biometric2FAManager {
   // Verify biometric credential
   static async verifyCredential(userId: string): Promise<boolean> {
     try {
-      if (!window.PublicKeyCredential) return false;
+      if (!window.PublicKeyCredential) {
+        return false;
+      }
 
       // Burada backend'e bağlanılacak - Biometric verification
       const response = await fetch('/api/auth/verify-biometric', {
@@ -269,7 +277,9 @@ export class Biometric2FAManager {
         body: JSON.stringify({ userId }),
       });
 
-      if (!response.ok) return false;
+      if (!response.ok) {
+        return false;
+      }
 
       const options = await response.json();
 
@@ -325,7 +335,9 @@ export class BackupCodesManager {
         body: JSON.stringify({ userId, code }),
       });
 
-      if (!response.ok) return false;
+      if (!response.ok) {
+        return false;
+      }
 
       const result = await response.json();
       return result.valid;
@@ -403,7 +415,9 @@ export class TwoFactorManager {
         },
       });
 
-      if (!response.ok) return [];
+      if (!response.ok) {
+        return [];
+      }
 
       const result = await response.json();
       return result.configs;

@@ -175,7 +175,7 @@ export const position3Meanings: ProblemSolvingPosition3Meaning[] = [
   },
   {
     id: 'wheel_of_fortune_ps_pos3',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 3,
     upright:
       'Kader Çarkı, bilinçaltında geçmişte şans faktörleri, kontrol dışı değişimler veya döngüsel tekrarlar etkili olmuş olabilir.',
@@ -234,8 +234,7 @@ export const position3Meanings: ProblemSolvingPosition3Meaning[] = [
     reversed:
       'Ters Denge, geçmişte ölçüsüz davranmak, sabırsızlık veya uyum sorunları bilinçaltına taşınmış olabilir.',
     keywords: ['denge', 'uyum', 'sabır', 'aşırılık', 'bilinçaltı'],
-    context:
-      'Geçmişte denge kaybı bugünkü problemlerine temel olmuş olabilir.',
+    context: 'Geçmişte denge kaybı bugünkü problemlerine temel olmuş olabilir.',
     group: 'Majör Arkana',
   },
   {
@@ -285,7 +284,12 @@ export const position3Meanings: ProblemSolvingPosition3Meaning[] = [
       'Aşıklar, bilinçaltında geçmişte değer çatışmaları, zor seçimler veya uyumsuz ilişkiler yaşamış olabilirsin.',
     reversed:
       'Ters Aşıklar, bilinçaltında geçmişte yanlış seçimler, değer çatışmaları veya uyumsuz ilişkiler yaşamış olabilirsin.',
-    keywords: ['değer çatışmaları', 'zor seçimler', 'uyumsuz ilişkiler', 'bilinçaltı'],
+    keywords: [
+      'değer çatışmaları',
+      'zor seçimler',
+      'uyumsuz ilişkiler',
+      'bilinçaltı',
+    ],
     context:
       'Geçmişteki değer çatışmaları ve zor seçimler bugünkü problemlerini şekillendirmiş olabilir.',
     group: 'Majör Arkana',
@@ -443,7 +447,13 @@ export const position3Meanings: ProblemSolvingPosition3Meaning[] = [
       'Sekiz Kupa, bilinçaltında geçmişte tatminsizlik nedeniyle uzaklaşmak, bir şeyleri geride bırakmak ya da vazgeçmek olabilir.',
     reversed:
       'Ters Sekiz Kupa, geçmişte kopamamak, bırakamamak ya da geri dönmek bilinçaltına işlenmiş olabilir.',
-    keywords: ['tatminsizlik', 'bırakmak', 'geri dönüş', 'bağlılık', 'bilinçaltı'],
+    keywords: [
+      'tatminsizlik',
+      'bırakmak',
+      'geri dönüş',
+      'bağlılık',
+      'bilinçaltı',
+    ],
     context:
       'Geçmişteki uzaklaşmalar veya bağımlılıklar bugünkü sorunlarını etkiliyor olabilir.',
     group: 'Kupalar',
@@ -1089,54 +1099,55 @@ export function getProblemSolvingPosition3Meaning(
 ): ProblemSolvingPosition3Meaning | null {
   // Kart ismi eşleştirmesi için hem İngilizce hem Türkçe isimleri kontrol et
   // Önce doğrudan eşleşme ara
-  let meaning = position3Meanings.find(m => 
-    m.card === card.name || 
-    m.card === card.nameTr ||
-    card.name === m.card ||
-    card.nameTr === m.card
+  let meaning = position3Meanings.find(
+    m =>
+      m.card === card.name ||
+      m.card === card.nameTr ||
+      card.name === m.card ||
+      card.nameTr === m.card
   );
-  
+
   if (meaning) {
     return meaning;
   }
-  
+
   // Kart ismi mapping'i kullanarak eşleştirme yap
   const cardNameMapping: { [key: string]: string } = {
     // Major Arcana - Türkçe
-    'Deli': 'The Fool',
-    'Büyücü': 'The Magician',
+    Deli: 'The Fool',
+    Büyücü: 'The Magician',
     'Yüksek Rahibe': 'The High Priestess',
-    'İmparatoriçe': 'The Empress',
-    'İmparator': 'The Emperor',
-    'Hierophant': 'The Hierophant',
-    'Aziz': 'The Hierophant',
-    'Aşıklar': 'The Lovers',
+    İmparatoriçe: 'The Empress',
+    İmparator: 'The Emperor',
+    Hierophant: 'The Hierophant',
+    Aziz: 'The Hierophant',
+    Aşıklar: 'The Lovers',
     'Savaş Arabası': 'The Chariot',
-    'Güç': 'Strength',
-    'Ermiş': 'The Hermit',
-    'Münzevi': 'The Hermit',
-    'Kader Çarkı': 'The Wheel of Fortune',
-    'Adalet': 'Justice',
+    Güç: 'Strength',
+    Ermiş: 'The Hermit',
+    Münzevi: 'The Hermit',
+    'Kader Çarkı': 'The The Wheel of Fortune',
+    Adalet: 'Justice',
     'Asılı Adam': 'The Hanged Man',
-    'Ölüm': 'Death',
-    'Ölçü': 'Temperance',
-    'Ölçülülük': 'Temperance',
-    'Şeytan': 'The Devil',
-    'Kule': 'The Tower',
-    'Yıldız': 'The Star',
-    'Ay': 'The Moon',
-    'Güneş': 'The Sun',
-    'Yargı': 'Judgement',
-    'Mahkeme': 'Judgement',
-    'Dünya': 'The World',
+    Ölüm: 'Death',
+    Ölçü: 'Temperance',
+    Ölçülülük: 'Temperance',
+    Şeytan: 'The Devil',
+    Kule: 'The Tower',
+    Yıldız: 'The Star',
+    Ay: 'The Moon',
+    Güneş: 'The Sun',
+    Yargı: 'Judgement',
+    Mahkeme: 'Judgement',
+    Dünya: 'The World',
   };
-  
+
   // Türkçe ismi İngilizce'ye çevir
   const englishName = cardNameMapping[card.nameTr] || card.nameTr;
-  
+
   // İngilizce isimle tekrar ara
   meaning = position3Meanings.find(m => m.card === englishName);
-  
+
   return meaning || null;
 }
 
@@ -1199,7 +1210,7 @@ export const useI18nposition3Meanings = (): I18nProblemSolvingPosition3Meaning[]
 */
 
 // Belirli bir kart için i18n destekli anlam al (hook kullanmadan)
-  export const getI18nPosition3Meaning = (
+export const getI18nPosition3Meaning = (
   cardName: string,
   t: (_key: string) => string
 ): I18nProblemSolvingPosition3Meaning | null => {

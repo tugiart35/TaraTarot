@@ -12,9 +12,9 @@ interface CardImagePreloaderProps {
 /**
  * Kritik kart resimlerini preload eden component
  */
-export default function CardImagePreloader({ 
-  cardImages = CRITICAL_CARDS, 
-  children 
+export default function CardImagePreloader({
+  cardImages = CRITICAL_CARDS,
+  children,
 }: CardImagePreloaderProps) {
   const { allLoaded } = useImagePreloader(cardImages, {
     priority: true,

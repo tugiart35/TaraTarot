@@ -103,9 +103,11 @@ export default function AdminLayout({
     if (admin?.loginTime) {
       const loginTime = new Date(admin.loginTime);
       const now = new Date();
-      const hoursSinceLogin = (now.getTime() - loginTime.getTime()) / (1000 * 60 * 60);
-      
-      if (hoursSinceLogin > 8) { // 8 saat sonra uyarı göster
+      const hoursSinceLogin =
+        (now.getTime() - loginTime.getTime()) / (1000 * 60 * 60);
+
+      if (hoursSinceLogin > 8) {
+        // 8 saat sonra uyarı göster
         setShowSessionWarning(true);
       } else {
         setShowSessionWarning(false);
@@ -199,7 +201,9 @@ export default function AdminLayout({
               Oturum süresi yaklaşıyor. Lütfen işlemlerinizi tamamlayın.
             </span>
             <button
-              onClick={() => session?.refreshSession?.() || window.location.reload()}
+              onClick={() =>
+                session?.refreshSession?.() || window.location.reload()
+              }
               className='ml-4 px-3 py-1 bg-white/20 rounded-lg text-xs hover:bg-white/30 transition-colors'
             >
               Yenile
@@ -420,9 +424,7 @@ export default function AdminLayout({
                   <User className='h-5 w-5 text-white' />
                 </div>
                 <div className='flex-1'>
-                  <div className='font-medium text-white'>
-                    {admin?.email}
-                  </div>
+                  <div className='font-medium text-white'>{admin?.email}</div>
                   <div className='text-sm text-slate-400 flex items-center'>
                     <Sparkles className='h-3 w-3 mr-1' />
                     Super Admin

@@ -115,8 +115,8 @@ export default function TarotPage() {
         />
         <div className='mb-8'>
           {CurrentComponent ? (
-            <CurrentComponent 
-              onComplete={handleReadingComplete} 
+            <CurrentComponent
+              onComplete={handleReadingComplete}
               onReadingTypeSelected={handleReadingTypeSelected}
             />
           ) : null}

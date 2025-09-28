@@ -215,12 +215,12 @@ export const position4Meanings: LovePositionMeaning[] = [
   },
   {
     id: 'wheel_of_fortune_pos4',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 4,
     upright:
       'Bu ilişkinin uzun vadeli kaderi, kadersel bir dönüm noktasıdır. Birlikte yeni ve şanslı bir döngüye girebilirsiniz. Kader sizi bir araya getirecek.',
     reversed:
-      'Ters Wheel of Fortune, uzun vadede şanssızlıkların ve tekrarlayan olumsuz döngülerin ilişkiyi bitireceğini gösterir. Kader, yollarınızı ayırabilir.',
+      'Ters The Wheel of Fortune, uzun vadede şanssızlıkların ve tekrarlayan olumsuz döngülerin ilişkiyi bitireceğini gösterir. Kader, yollarınızı ayırabilir.',
     keywords: ['kader', 'dönüm noktası', 'şans', 'yeni döngü', 'karmik sonuç'],
     context:
       'Bu ilişkinin nihai sonucu, kader çarkının sizin lehinize veya aleyhinize dönmesidir.',

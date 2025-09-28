@@ -1,6 +1,6 @@
 /*
  * Redirect Utility Functions
- * 
+ *
  * Bu dosya redirect işlemleri için ortak utility fonksiyonları sağlar.
  * DRY principle uygulayarak tekrarlanan redirect kodlarını önler.
  */
@@ -19,9 +19,9 @@ export class RedirectUtils {
     const origin = new URL(request.url).origin;
     const forwardedHost = request.headers.get('x-forwarded-host');
     const isLocalEnv = process.env.NODE_ENV === 'development';
-    
+
     const fullPath = locale ? `/${locale}${path}` : path;
-    
+
     if (isLocalEnv) {
       return NextResponse.redirect(`${origin}${fullPath}`);
     } else if (forwardedHost) {
@@ -30,7 +30,7 @@ export class RedirectUtils {
       return NextResponse.redirect(`${origin}${fullPath}`);
     }
   }
-  
+
   /**
    * Auth error redirect oluştur
    */
@@ -39,13 +39,9 @@ export class RedirectUtils {
     locale: string,
     error: string
   ): NextResponse {
-    return this.createRedirectResponse(
-      request,
-      `/auth?error=${error}`,
-      locale
-    );
+    return this.createRedirectResponse(request, `/auth?error=${error}`, locale);
   }
-  
+
   /**
    * Dashboard redirect oluştur
    */
@@ -53,13 +49,9 @@ export class RedirectUtils {
     request: NextRequest,
     locale: string
   ): NextResponse {
-    return this.createRedirectResponse(
-      request,
-      '/dashboard',
-      locale
-    );
+    return this.createRedirectResponse(request, '/dashboard', locale);
   }
-  
+
   /**
    * Admin panel redirect oluştur
    */
@@ -67,13 +59,9 @@ export class RedirectUtils {
     request: NextRequest,
     locale: string
   ): NextResponse {
-    return this.createRedirectResponse(
-      request,
-      '/pakize',
-      locale
-    );
+    return this.createRedirectResponse(request, '/pakize', locale);
   }
-  
+
   /**
    * Next.js URL constructor ile redirect oluştur
    */

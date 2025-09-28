@@ -56,7 +56,9 @@ export default function TransactionHistory({
 
       if (error) {
         console.error('Supabase error fetching transactions:', error);
-        throw new Error(`İşlem verileri yüklenirken hata oluştu: ${error.message}`);
+        throw new Error(
+          `İşlem verileri yüklenirken hata oluştu: ${error.message}`
+        );
       }
 
       setTransactions(data || []);
@@ -108,25 +110,27 @@ export default function TransactionHistory({
 
   // Okuma türünü belirle (sesli/yazılı) - reading-credits.ts'deki değerlere göre
   const getReadingType = (transaction: Transaction) => {
-    if (transaction.type !== 'reading') return null;
-    
+    if (transaction.type !== 'reading') {
+      return null;
+    }
+
     // Kredi miktarına göre okuma türünü belirle
     const creditAmount = Math.abs(transaction.delta_credits);
-    
+
     // reading-credits.ts'deki kredi miktarlarına göre
     // Detaylı okumalar (sesli): 80-140 kredi arası
     if (creditAmount >= 80 && creditAmount <= 140) {
       return { type: 'audio', label: 'Sesli' };
-    } 
+    }
     // Yazılı okumalar: 70-130 kredi arası
     else if (creditAmount >= 70 && creditAmount <= 130) {
       return { type: 'written', label: 'Yazılı' };
-    } 
+    }
     // Basit okumalar: 70'den az
     else if (creditAmount < 70) {
       return { type: 'simple', label: 'Basit' };
     }
-    
+
     // Varsayılan olarak sesli kabul et
     return { type: 'audio', label: 'Sesli' };
   };
@@ -193,40 +197,45 @@ export default function TransactionHistory({
                     {transaction.delta_credits > 0 ? '+' : ''}
                     {Math.abs(transaction.delta_credits)} kredi
                   </span>
-                  {transaction.type === 'reading' && (() => {
-                    const readingType = getReadingType(transaction);
-                    if (!readingType) return null;
-                    
-                    return (
-                      <div className='flex items-center space-x-1'>
-                        {readingType.type === 'audio' ? (
-                          <>
-                            <Volume2 className='h-3 w-3 text-blue-400' />
-                            <span className='text-xs text-blue-400 bg-blue-400/10 px-2 py-1 rounded'>
-                              {readingType.label}
-                            </span>
-                          </>
-                        ) : readingType.type === 'written' ? (
-                          <>
-                            <FileText className='h-3 w-3 text-green-400' />
-                            <span className='text-xs text-green-400 bg-green-400/10 px-2 py-1 rounded'>
-                              {readingType.label}
-                            </span>
-                          </>
-                        ) : (
-                          <>
-                            <FileText className='h-3 w-3 text-gray-400' />
-                            <span className='text-xs text-gray-400 bg-gray-400/10 px-2 py-1 rounded'>
-                              {readingType.label}
-                            </span>
-                          </>
-                        )}
-                      </div>
-                    );
-                  })()}
+                  {transaction.type === 'reading' &&
+                    (() => {
+                      const readingType = getReadingType(transaction);
+                      if (!readingType) {
+                        return null;
+                      }
+
+                      return (
+                        <div className='flex items-center space-x-1'>
+                          {readingType.type === 'audio' ? (
+                            <>
+                              <Volume2 className='h-3 w-3 text-blue-400' />
+                              <span className='text-xs text-blue-400 bg-blue-400/10 px-2 py-1 rounded'>
+                                {readingType.label}
+                              </span>
+                            </>
+                          ) : readingType.type === 'written' ? (
+                            <>
+                              <FileText className='h-3 w-3 text-green-400' />
+                              <span className='text-xs text-green-400 bg-green-400/10 px-2 py-1 rounded'>
+                                {readingType.label}
+                              </span>
+                            </>
+                          ) : (
+                            <>
+                              <FileText className='h-3 w-3 text-gray-400' />
+                              <span className='text-xs text-gray-400 bg-gray-400/10 px-2 py-1 rounded'>
+                                {readingType.label}
+                              </span>
+                            </>
+                          )}
+                        </div>
+                      );
+                    })()}
                 </div>
                 <p className='text-lavender text-sm mb-2'>
-                  {transaction.reason || transaction.description || 'İşlem açıklaması yok'}
+                  {transaction.reason ||
+                    transaction.description ||
+                    'İşlem açıklaması yok'}
                 </p>
                 <div className='flex items-center space-x-4 text-xs text-lavender'>
                   <span>{formatDate(transaction.created_at)}</span>

@@ -28,8 +28,8 @@ export function validateImageSrc(src: string): boolean {
 
   try {
     const url = new URL(src);
-    return allowedDomains.some(domain => 
-      url.hostname === domain || url.hostname.endsWith(`.${domain}`)
+    return allowedDomains.some(
+      domain => url.hostname === domain || url.hostname.endsWith(`.${domain}`)
     );
   } catch {
     // Geçersiz URL
@@ -100,9 +100,9 @@ export const CSP_HEADERS = {
     "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://www.googletagmanager.com",
     "frame-ancestors 'none'",
     "base-uri 'self'",
-    "form-action 'self'"
+    "form-action 'self'",
   ].join('; '),
   'X-Frame-Options': 'DENY',
   'X-Content-Type-Options': 'nosniff',
-  'Referrer-Policy': 'strict-origin-when-cross-origin'
+  'Referrer-Policy': 'strict-origin-when-cross-origin',
 };

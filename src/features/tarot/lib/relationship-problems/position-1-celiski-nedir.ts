@@ -152,7 +152,7 @@ export const position1Meanings: RelationshipProblemsPositionMeaning[] = [
   },
   {
     id: 'wheel_of_fortune_rc_pos1',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 1,
     upright:
       'Kader Çarkı, döngüler ve zamanlama kaynaklı iniş çıkışların çatışmayı tetiklediğini söyler. Roller ve koşullar değişirken uyum güncellenmediyse sürtünme artar.',
@@ -170,7 +170,13 @@ export const position1Meanings: RelationshipProblemsPositionMeaning[] = [
       'Adalet, adil olmayan iş bölümü, çifte standart veya sorumluluk dengesinin ana çatışma olduğunu belirtir. Hesap verilebilirlik talebi yüksektir.',
     reversed:
       'Ters Adalet, suçlama döngüsü, tarafgirlik ya da görmezden gelmenin güveni sarstığını gösterir. Haksızlık algısı kök çelişkidir.',
-    keywords: ['adalet', 'denge', 'sorumluluk', 'eşitlik', 'hesap verebilirlik'],
+    keywords: [
+      'adalet',
+      'denge',
+      'sorumluluk',
+      'eşitlik',
+      'hesap verebilirlik',
+    ],
     context: 'İlişkide çelişkinin doğası: adalet ve denge arayışı.',
     group: 'Majör Arkana',
   },
@@ -182,7 +188,13 @@ export const position1Meanings: RelationshipProblemsPositionMeaning[] = [
       'Asılan Adam, fedakarlıkların tek taraflı algılanması ve askıda kalan kararların çatışma doğurduğunu söyler. Perspektif değişimi gecikmiş olabilir.',
     reversed:
       'Ters Asılan Adam, kurban psikolojisi, erteleme ve pasifliği işaret eder. Ben hep veriyorum anlatısı çelişkiyi besler.',
-    keywords: ['fedakarlık', 'askıda kalma', 'perspektif', 'erteleme', 'kurban'],
+    keywords: [
+      'fedakarlık',
+      'askıda kalma',
+      'perspektif',
+      'erteleme',
+      'kurban',
+    ],
     context: 'İlişkide çelişkinin doğası: tek taraflı fedakarlık algısı.',
     group: 'Majör Arkana',
   },
@@ -294,7 +306,7 @@ export const position1Meanings: RelationshipProblemsPositionMeaning[] = [
     context: 'İlişkide çelişkinin doğası: eşik ve tamamlanma meselesi.',
     group: 'Majör Arkana',
   },
-  
+
   // CUPS
   {
     id: 'ace_of_cups_rc_pos1',
@@ -464,7 +476,7 @@ export const position1Meanings: RelationshipProblemsPositionMeaning[] = [
     context: 'Çelişkinin duygusal kökü: ifade ve regülasyon farkı.',
     group: 'Kupalar',
   },
-  
+
   // SWORDS
   {
     id: 'ace_of_swords_rc_pos1',
@@ -634,7 +646,7 @@ export const position1Meanings: RelationshipProblemsPositionMeaning[] = [
     context: 'Çelişkinin zihinsel kökü: ilke ve esneklik çekişmesi.',
     group: 'Kılıçlar',
   },
-  
+
   // WANDS
   {
     id: 'ace_of_wands_rc_pos1',
@@ -804,7 +816,7 @@ export const position1Meanings: RelationshipProblemsPositionMeaning[] = [
     context: 'Çelişkinin eylemsel kökü: liderlik ve katılım dengesi.',
     group: 'Asalar',
   },
-  
+
   // PENTACLES
   {
     id: 'ace_of_pentacles_rc_pos1',
@@ -898,7 +910,13 @@ export const position1Meanings: RelationshipProblemsPositionMeaning[] = [
       'Sekiz Tılsım, çalışma alışkanlıkları ve kalite standardı konusunda uyumsuzluk olduğunu söyler.',
     reversed:
       'Ters Sekiz Tılsım, özensizlik veya aşırı mükemmeliyetçiliğin sürtünme yarattığını gösterir.',
-    keywords: ['çalışma', 'standart', 'özen', 'mükemmeliyetçilik', 'alışkanlık'],
+    keywords: [
+      'çalışma',
+      'standart',
+      'özen',
+      'mükemmeliyetçilik',
+      'alışkanlık',
+    ],
     context: 'Çelişkinin somut kökü: emek standardı farkı.',
     group: 'Tılsımlar',
   },
@@ -980,9 +998,7 @@ export const position1Meanings: RelationshipProblemsPositionMeaning[] = [
 export const getPosition1Meaning = (
   cardName: string
 ): RelationshipProblemsPositionMeaning | undefined => {
-  return position1Meanings.find(
-    meaning => meaning.card === cardName
-  );
+  return position1Meanings.find(meaning => meaning.card === cardName);
 };
 
 // Ana index dosyası için uyumluluk fonksiyonu
@@ -1007,9 +1023,10 @@ export const getRelationshipProblemsPosition1MeaningByCardName = (
 };
 
 // Tüm pozisyon 1 anlamlarını alma fonksiyonu
-export const getAllPosition1Meanings = (): RelationshipProblemsPositionMeaning[] => {
-  return position1Meanings;
-};
+export const getAllPosition1Meanings =
+  (): RelationshipProblemsPositionMeaning[] => {
+    return position1Meanings;
+  };
 
 // Pozisyon 1 anlamlarını filtreleme fonksiyonu
 export const getPosition1MeaningsByGroup = (

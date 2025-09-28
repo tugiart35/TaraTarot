@@ -1,11 +1,14 @@
 /*
  * Auth Error Messages
- * 
+ *
  * Bu dosya authentication hataları için lokalize edilmiş mesajları içerir.
  * i18n sistem entegrasyonu için hazırlanmıştır.
  */
 
-export const getAuthErrorMessage = (error: Error, locale: string = 'tr'): string => {
+export const getAuthErrorMessage = (
+  error: Error,
+  locale: string = 'tr'
+): string => {
   const errorMap: Record<string, Record<string, string>> = {
     tr: {
       'Invalid login credentials': 'Geçersiz e-posta veya şifre',
@@ -40,44 +43,58 @@ export const getAuthErrorMessage = (error: Error, locale: string = 'tr'): string
   };
 
   // Get localized message or fallback to original error message
-  const localizedMessage = errorMap[locale]?.[error.message] || 
-                          errorMap['en']?.[error.message] || 
-                          error.message;
+  const localizedMessage =
+    errorMap[locale]?.[error.message] ||
+    errorMap['en']?.[error.message] ||
+    error.message;
 
   return localizedMessage;
 };
 
 // Error message categories for better UX
-export const getAuthErrorCategory = (error: Error): 'validation' | 'network' | 'auth' | 'server' | 'unknown' => {
+export const getAuthErrorCategory = (
+  error: Error
+): 'validation' | 'network' | 'auth' | 'server' | 'unknown' => {
   const message = error.message.toLowerCase();
-  
-  if (message.includes('invalid') || message.includes('password') || message.includes('email')) {
+
+  if (
+    message.includes('invalid') ||
+    message.includes('password') ||
+    message.includes('email')
+  ) {
     return 'validation';
   }
-  
+
   if (message.includes('network') || message.includes('connection')) {
     return 'network';
   }
-  
-  if (message.includes('credentials') || message.includes('confirmed') || message.includes('registered')) {
+
+  if (
+    message.includes('credentials') ||
+    message.includes('confirmed') ||
+    message.includes('registered')
+  ) {
     return 'auth';
   }
-  
+
   if (message.includes('server') || message.includes('rate limit')) {
     return 'server';
   }
-  
+
   return 'unknown';
 };
 
 // User-friendly error messages with suggestions
-export const getAuthErrorWithSuggestion = (error: Error, locale: string = 'tr'): {
+export const getAuthErrorWithSuggestion = (
+  error: Error,
+  locale: string = 'tr'
+): {
   message: string;
   suggestion?: string;
 } => {
   const category = getAuthErrorCategory(error);
   const message = getAuthErrorMessage(error, locale);
-  
+
   const suggestions: Record<string, Record<string, string>> = {
     tr: {
       validation: 'Lütfen bilgilerinizi kontrol edin ve tekrar deneyin.',
@@ -94,7 +111,7 @@ export const getAuthErrorWithSuggestion = (error: Error, locale: string = 'tr'):
       unknown: 'Contact technical support.',
     },
   };
-  
+
   return {
     message,
     suggestion: suggestions[locale]?.[category],

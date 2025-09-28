@@ -1,6 +1,6 @@
 /*
  * useAuth Hook Tests
- * 
+ *
  * Bu dosya useAuth hook'u için unit testleri içerir.
  * Jest ve React Testing Library kullanır.
  */
@@ -48,7 +48,7 @@ describe('useAuth', () => {
     it('should call AuthService.signIn and update user state', async () => {
       const mockUser = { id: '1', email: 'test@example.com' };
       const mockAuthData = { user: mockUser, session: null };
-      
+
       mockAuthService.signIn.mockResolvedValue(mockAuthData);
       mockAuthService.getCurrentUser.mockResolvedValue(mockUser);
 
@@ -58,7 +58,10 @@ describe('useAuth', () => {
         await result.current.signIn('test@example.com', 'password123');
       });
 
-      expect(mockAuthService.signIn).toHaveBeenCalledWith('test@example.com', 'password123');
+      expect(mockAuthService.signIn).toHaveBeenCalledWith(
+        'test@example.com',
+        'password123'
+      );
       expect(result.current.user).toEqual(mockUser);
       expect(result.current.error).toBeNull();
     });
@@ -167,7 +170,10 @@ describe('useAuth', () => {
         await result.current.resetPassword('test@example.com', 'tr');
       });
 
-      expect(mockAuthService.resetPassword).toHaveBeenCalledWith('test@example.com', 'tr');
+      expect(mockAuthService.resetPassword).toHaveBeenCalledWith(
+        'test@example.com',
+        'tr'
+      );
       expect(result.current.error).toBeNull();
     });
 
@@ -225,7 +231,7 @@ describe('useAuth', () => {
     it('should call AuthService.refreshSession and update user state', async () => {
       const mockUser = { id: '1', email: 'test@example.com' };
       const mockRefreshData = { user: mockUser, session: null };
-      
+
       mockAuthService.refreshSession.mockResolvedValue(mockRefreshData);
 
       const { result } = renderHook(() => useAuth());
@@ -259,8 +265,11 @@ describe('useAuth', () => {
 
   describe('Loading State', () => {
     it('should set loading to true during operations', async () => {
-      mockAuthService.signIn.mockImplementation(() => 
-        new Promise(resolve => setTimeout(() => resolve({ user: null, session: null }), 100))
+      mockAuthService.signIn.mockImplementation(
+        () =>
+          new Promise(resolve =>
+            setTimeout(() => resolve({ user: null, session: null }), 100)
+          )
       );
 
       const { result } = renderHook(() => useAuth());
@@ -268,7 +277,10 @@ describe('useAuth', () => {
       expect(result.current.loading).toBe(true);
 
       await act(async () => {
-        const promise = result.current.signIn('test@example.com', 'password123');
+        const promise = result.current.signIn(
+          'test@example.com',
+          'password123'
+        );
         expect(result.current.loading).toBe(true);
         await promise;
       });

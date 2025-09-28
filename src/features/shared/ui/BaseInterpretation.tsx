@@ -36,7 +36,7 @@ Anlam Seçimi Öncelik Sırası:
 'use client';
 
 import { forwardRef } from 'react';
-import type { TarotCard } from '@/features/tarot/lib/a-tarot-helpers';
+import type { TarotCard } from '@/types/tarot';
 import type { Theme, PositionInfo, CardMeaningData } from '@/types/ui';
 // useAuth kaldırıldı - login sistemi kaldırıldı
 // import { saveTarotReading } from '@/lib/services/reading-service'; // Service kaldırıldı
@@ -55,7 +55,7 @@ export interface BaseInterpretationProps {
 
   // Pozisyon ve anlam verileri
   positionsInfo: readonly PositionInfo[];
-  getCardMeaning?: (card: TarotCard) => CardMeaningData | null;
+  getCardMeaning?: (_card: TarotCard) => CardMeaningData | null;
   getMeaningText?: (
     _meaning: CardMeaningData | null,
     _card: TarotCard,
@@ -72,7 +72,13 @@ export interface BaseInterpretationProps {
     _position: number,
     _isReversed: boolean
   ) => string;
-  
+
+  // CONTEXT BİLGİSİ FONKSİYONU (lib/ dosyalarındaki context bilgileri için)
+  getPositionContext?: (
+    _card: TarotCard,
+    _position: number
+  ) => string | undefined;
+
   // CONTEXT GÖSTERİMİ İÇİN (Problem çözme açılımı için)
   showContext?: boolean;
 }
@@ -284,6 +290,7 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
       getMeaningText,
       getKeywords,
       getPositionSpecificInterpretation,
+      getPositionContext,
       showContext = false,
     },
     ref
@@ -337,7 +344,7 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
               : null;
             // CardDetails.tsx'deki mantığı kullan - pozisyon özel yorum fonksiyonu öncelikli
             let positionInterpretation = '';
-            
+
             // 1. Önce props'tan gelen getPositionSpecificInterpretation fonksiyonunu kullan
             if (getPositionSpecificInterpretation) {
               positionInterpretation = getPositionSpecificInterpretation(
@@ -346,50 +353,66 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
                 isReversed[idx] || false
               );
             }
-            
+
             // 2. Eğer positionInterpretation boşsa, getMeaningText fonksiyonunu dene
             if (!positionInterpretation && getMeaningText) {
-              positionInterpretation = getMeaningText(cardMeaning, card, isReversed[idx] || false);
+              positionInterpretation = getMeaningText(
+                cardMeaning,
+                card,
+                isReversed[idx] || false
+              );
             }
-            
+
             // 3. Hala boşsa, CardMeaningData'dan anlamı al
             if (!positionInterpretation && cardMeaning) {
               if (cardMeaning.relationshipAnalysisMeaning) {
-                positionInterpretation = isReversed[idx] || false
-                  ? cardMeaning.relationshipAnalysisMeaning.reversed
-                  : cardMeaning.relationshipAnalysisMeaning.upright;
+                positionInterpretation =
+                  isReversed[idx] || false
+                    ? cardMeaning.relationshipAnalysisMeaning.reversed
+                    : cardMeaning.relationshipAnalysisMeaning.upright;
               } else if (cardMeaning.careerMeaning) {
-                positionInterpretation = isReversed[idx] || false
-                  ? cardMeaning.careerMeaning.reversed
-                  : cardMeaning.careerMeaning.upright;
+                positionInterpretation =
+                  isReversed[idx] || false
+                    ? cardMeaning.careerMeaning.reversed
+                    : cardMeaning.careerMeaning.upright;
               } else if (cardMeaning.moneyMeaning) {
-                positionInterpretation = isReversed[idx] || false
-                  ? cardMeaning.moneyMeaning.reversed
-                  : cardMeaning.moneyMeaning.upright;
+                positionInterpretation =
+                  isReversed[idx] || false
+                    ? cardMeaning.moneyMeaning.reversed
+                    : cardMeaning.moneyMeaning.upright;
               } else if (cardMeaning.newLoverMeaning) {
-                positionInterpretation = isReversed[idx] || false
-                  ? cardMeaning.newLoverMeaning.reversed
-                  : cardMeaning.newLoverMeaning.upright;
+                positionInterpretation =
+                  isReversed[idx] || false
+                    ? cardMeaning.newLoverMeaning.reversed
+                    : cardMeaning.newLoverMeaning.upright;
               } else if (cardMeaning.marriageMeaning) {
-                positionInterpretation = isReversed[idx] || false
-                  ? cardMeaning.marriageMeaning.reversed
-                  : cardMeaning.marriageMeaning.upright;
+                positionInterpretation =
+                  isReversed[idx] || false
+                    ? cardMeaning.marriageMeaning.reversed
+                    : cardMeaning.marriageMeaning.upright;
               } else if (cardMeaning.upright || cardMeaning.reversed) {
-                positionInterpretation = isReversed[idx] || false
-                  ? cardMeaning.reversed || cardMeaning.upright || ''
-                  : cardMeaning.upright || '';
+                positionInterpretation =
+                  isReversed[idx] || false
+                    ? cardMeaning.reversed || cardMeaning.upright || ''
+                    : cardMeaning.upright || '';
               }
             }
-            
+
             // 4. Son fallback: Kartın genel anlamını kullan
             if (!positionInterpretation) {
-              positionInterpretation = isReversed[idx] || false
-                ? card.meaningTr.reversed
-                : card.meaningTr.upright;
+              positionInterpretation =
+                isReversed[idx] || false
+                  ? card.meaningTr.reversed
+                  : card.meaningTr.upright;
             }
 
             const keywords = getKeywords ? getKeywords(cardMeaning, card) : [];
-            
+
+            // Context'i al (lib/ dosyalarından)
+            const positionContext = getPositionContext
+              ? getPositionContext(card, idx + 1)
+              : null;
+
             // Context'i al (problem çözme açılımı için)
             const context = cardMeaning?.context || '';
 
@@ -441,14 +464,33 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
                   </div>
 
                   {/* Kart Anlamı */}
-                  <div className='text-gray-200 text-sm leading-relaxed'>
+                  <div className='text-gray-200 text-sm leading-relaxed mb-3'>
                     {positionInterpretation}
                   </div>
+
+                  {/* Kart Context Bilgisi - lib/ dosyalarından */}
+                  {positionContext && (
+                    <div className='mt-2 p-2 bg-gray-800/40 rounded-lg border border-gray-700'>
+                      <div className='flex items-center gap-1 mb-1'>
+                        <span className={`${colors.iconText} text-xs`}>💡</span>
+                        <span
+                          className={`text-xs ${colors.contextText} font-medium`}
+                        >
+                          Bağlam:
+                        </span>
+                      </div>
+                      <div className='text-gray-300 text-xs leading-relaxed pl-4'>
+                        {positionContext}
+                      </div>
+                    </div>
+                  )}
 
                   {/* Context - Anlam altında göster */}
                   {showContext && context && (
                     <div className='mt-2'>
-                      <div className={`text-xs ${colors.contextText} font-medium mb-1`}>
+                      <div
+                        className={`text-xs ${colors.contextText} font-medium mb-1`}
+                      >
                         Bağlam:
                       </div>
                       <div className={`text-xs ${colors.contextText} italic`}>

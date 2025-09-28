@@ -40,7 +40,9 @@ import type { Metadata, Viewport } from 'next';
 
 // Ana uygulama metadata'sı - SEO Optimized
 export const defaultMetadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3111'),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3111'
+  ),
   title: 'Büşbüşkimki - Profesyonel Tarot Okuması ve Numeroloji Analizi',
   description:
     'Profesyonel tarot okuması ve numeroloji analizi ile geleceğinizi keşfedin. Aşk, kariyer ve yaşam sorularınıza mistik cevaplar bulun. Güvenilir mistik rehberlik hizmetleri.',

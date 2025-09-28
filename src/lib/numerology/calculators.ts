@@ -510,12 +510,15 @@ export function calculateNumerology(
 ): NumerologyResult {
   switch (type) {
     case 'life-path':
-      if (!input.birthDate) throw new Error('Doğum tarihi gerekli');
+      if (!input.birthDate) {
+        throw new Error('Doğum tarihi gerekli');
+      }
       return calculateLifePath(input.birthDate, locale);
 
     case 'expression-destiny':
-      if (!input.firstName || !input.lastName)
+      if (!input.firstName || !input.lastName) {
         throw new Error('İsim ve soyisim gerekli');
+      }
       return calculateExpressionDestiny(
         input.firstName,
         input.lastName,
@@ -523,22 +526,27 @@ export function calculateNumerology(
       );
 
     case 'soul-urge':
-      if (!input.firstName || !input.lastName)
+      if (!input.firstName || !input.lastName) {
         throw new Error('İsim ve soyisim gerekli');
+      }
       return calculateSoulUrge(input.firstName, input.lastName);
 
     case 'personality':
-      if (!input.firstName || !input.lastName)
+      if (!input.firstName || !input.lastName) {
         throw new Error('İsim ve soyisim gerekli');
+      }
       return calculatePersonality(input.firstName, input.lastName, locale);
 
     case 'birthday-number':
-      if (!input.birthDate) throw new Error('Doğum tarihi gerekli');
+      if (!input.birthDate) {
+        throw new Error('Doğum tarihi gerekli');
+      }
       return calculateBirthdayNumber(input.birthDate, locale);
 
     case 'maturity':
-      if (!input.birthDate || !input.firstName || !input.lastName)
+      if (!input.birthDate || !input.firstName || !input.lastName) {
         throw new Error('Doğum tarihi, isim ve soyisim gerekli');
+      }
       const lifePath = calculateLifePath(input.birthDate);
       const expression = calculateExpressionDestiny(
         input.firstName,
@@ -547,17 +555,21 @@ export function calculateNumerology(
       return calculateMaturity(lifePath.number, expression.number, locale);
 
     case 'pinnacles-challenges':
-      if (!input.birthDate) throw new Error('Doğum tarihi gerekli');
+      if (!input.birthDate) {
+        throw new Error('Doğum tarihi gerekli');
+      }
       return calculatePinnaclesChallenges(input.birthDate, locale);
 
     case 'personal-cycles':
-      if (!input.birthDate || !input.targetDate)
+      if (!input.birthDate || !input.targetDate) {
         throw new Error('Doğum tarihi ve hedef tarih gerekli');
+      }
       return calculatePersonalCycles(input.birthDate, input.targetDate, locale);
 
     case 'compatibility':
-      if (!input.personA || !input.personB)
+      if (!input.personA || !input.personB) {
         throw new Error('İki kişinin bilgileri gerekli');
+      }
       return calculateCompatibility(input.personA, input.personB, locale);
 
     default:

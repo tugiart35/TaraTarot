@@ -79,7 +79,9 @@ export interface RelationshipAnalysisPositionMeaning {
   group: 'Majör Arkana' | 'Kupalar' | 'Kılıçlar' | 'Asalar' | 'Tılsımlar';
 }
 // Kart grubunu belirleme fonksiyonu
-function getCardGroup(card: TarotCard | string): 'Majör Arkana' | 'Kupalar' | 'Kılıçlar' | 'Asalar' | 'Tılsımlar' {
+function getCardGroup(
+  card: TarotCard | string
+): 'Majör Arkana' | 'Kupalar' | 'Kılıçlar' | 'Asalar' | 'Tılsımlar' {
   if (typeof card === 'object') {
     // TarotCard objesi ise
     if (card.suit === 'major') {
@@ -101,14 +103,22 @@ function getCardGroup(card: TarotCard | string): 'Majör Arkana' | 'Kupalar' | '
   } else {
     // String ise
     const name = card.toLowerCase();
-    
-    if (name.includes('kupalar') || name.includes('kadehler') || name.includes('pehara')) {
+
+    if (
+      name.includes('kupalar') ||
+      name.includes('kadehler') ||
+      name.includes('pehara')
+    ) {
       return 'Kupalar';
     } else if (name.includes('kılıçlar') || name.includes('mačeva')) {
       return 'Kılıçlar';
     } else if (name.includes('asalar') || name.includes('štapova')) {
       return 'Asalar';
-    } else if (name.includes('tılsımlar') || name.includes('altınlar') || name.includes('pentakla')) {
+    } else if (
+      name.includes('tılsımlar') ||
+      name.includes('altınlar') ||
+      name.includes('pentakla')
+    ) {
       return 'Tılsımlar';
     } else {
       return 'Majör Arkana';
@@ -128,7 +138,7 @@ export function getRelationshipAnalysisMeaningByCardAndPosition(
     cardName: card.name,
     cardNameTr: card.nameTr,
     position,
-    isReversed
+    isReversed,
   });
 
   // Pozisyon 1-7 arasında olmalı
@@ -145,19 +155,20 @@ export function getRelationshipAnalysisMeaningByCardAndPosition(
       keywords: card.keywordsTr || card.keywords || [],
       advice: 'Bu pozisyon için özel bir anlam tanımlanmamış.',
       context: 'Tanımlanmamış pozisyon',
-      group: getCardGroup(card)
+      group: getCardGroup(card),
     };
   }
 
   // Kart ismi mapping'ini al
   const cardNameMapping = getCardNameMappingSync();
-  
+
   // Kart ismini İngilizce'ye çevir - önce nameTr'yi dene, sonra name'i
-  const englishCardName = cardNameMapping[card.nameTr] || cardNameMapping[card.name] || card.name;
+  const englishCardName =
+    cardNameMapping[card.nameTr] || cardNameMapping[card.name] || card.name;
   console.log('🔄 Card name mapping:', {
     original: card.nameTr,
     originalName: card.name,
-    mapped: englishCardName
+    mapped: englishCardName,
   });
 
   // Pozisyon özel anlamları kontrol et
@@ -165,25 +176,32 @@ export function getRelationshipAnalysisMeaningByCardAndPosition(
 
   switch (position) {
     case 1:
-      positionMeaning = getRelationshipAnalysisPosition1MeaningByCardName(englishCardName);
+      positionMeaning =
+        getRelationshipAnalysisPosition1MeaningByCardName(englishCardName);
       break;
     case 2:
-      positionMeaning = getRelationshipAnalysisPosition2MeaningByCardName(englishCardName);
+      positionMeaning =
+        getRelationshipAnalysisPosition2MeaningByCardName(englishCardName);
       break;
     case 3:
-      positionMeaning = getRelationshipAnalysisPosition3MeaningByCardName(englishCardName);
+      positionMeaning =
+        getRelationshipAnalysisPosition3MeaningByCardName(englishCardName);
       break;
     case 4:
-      positionMeaning = getRelationshipAnalysisPosition4MeaningByCardName(englishCardName);
+      positionMeaning =
+        getRelationshipAnalysisPosition4MeaningByCardName(englishCardName);
       break;
     case 5:
-      positionMeaning = getRelationshipAnalysisPosition5MeaningByCardName(englishCardName);
+      positionMeaning =
+        getRelationshipAnalysisPosition5MeaningByCardName(englishCardName);
       break;
     case 6:
-      positionMeaning = getRelationshipAnalysisPosition6MeaningByCardName(englishCardName);
+      positionMeaning =
+        getRelationshipAnalysisPosition6MeaningByCardName(englishCardName);
       break;
     case 7:
-      positionMeaning = getRelationshipAnalysisPosition7MeaningByCardName(englishCardName);
+      positionMeaning =
+        getRelationshipAnalysisPosition7MeaningByCardName(englishCardName);
       break;
   }
 
@@ -196,7 +214,10 @@ export function getRelationshipAnalysisMeaningByCardAndPosition(
       upright: isReversed ? positionMeaning.reversed : positionMeaning.upright,
       reversed: isReversed ? positionMeaning.upright : positionMeaning.reversed,
     };
-    console.log('✅ Returning position-specific meaning:', result.upright.substring(0, 50) + '...');
+    console.log(
+      '✅ Returning position-specific meaning:',
+      result.upright.substring(0, 50) + '...'
+    );
     return result;
   }
 
@@ -219,8 +240,11 @@ export function getRelationshipAnalysisMeaningByCardAndPosition(
     upright: isReversed ? baseMeaning.reversed : baseMeaning.upright,
     reversed: isReversed ? baseMeaning.upright : baseMeaning.reversed,
   };
-  
-  console.log('⚠️ Returning fallback meaning:', fallbackResult.upright.substring(0, 50) + '...');
+
+  console.log(
+    '⚠️ Returning fallback meaning:',
+    fallbackResult.upright.substring(0, 50) + '...'
+  );
   return fallbackResult;
 }
 
@@ -233,17 +257,20 @@ export const relationshipAnalysisPositions = {
   },
   2: {
     title: 'Sizin Hissleriniz',
-    description: 'Sizin hisleriniz, düşünceleriniz ve partnerinize bakış açınız',
+    description:
+      'Sizin hisleriniz, düşünceleriniz ve partnerinize bakış açınız',
     question: 'Partnerinize karşı nasıl hissediyorsunuz?',
   },
   3: {
     title: 'Sizin Beklentileriniz',
-    description: 'İlişkiniz hakkındaki endişeleriniz, beklentileriniz ve hayalleriniz',
+    description:
+      'İlişkiniz hakkındaki endişeleriniz, beklentileriniz ve hayalleriniz',
     question: 'Bu ilişkiden ne bekliyorsunuz?',
   },
   4: {
     title: 'Tavsiye',
-    description: 'İlişkinizin gidişatı ile ilgili sergileyeceğiniz tutum tavsiyeleri',
+    description:
+      'İlişkinizin gidişatı ile ilgili sergileyeceğiniz tutum tavsiyeleri',
     question: 'Bu durumda nasıl davranmalısınız?',
   },
   5: {
@@ -253,7 +280,8 @@ export const relationshipAnalysisPositions = {
   },
   6: {
     title: 'Partnerinizin Beklentileri',
-    description: 'Partnerinizin ilişkiniz hakkındaki endişeleri, beklentileri ve hayalleri',
+    description:
+      'Partnerinizin ilişkiniz hakkındaki endişeleri, beklentileri ve hayalleri',
     question: 'Partneriniz bu ilişkiden ne bekliyor?',
   },
   7: {
@@ -265,15 +293,19 @@ export const relationshipAnalysisPositions = {
 
 // Pozisyon bilgilerini alma fonksiyonu
 export const getRelationshipAnalysisPositionInfo = (position: number) => {
-  return relationshipAnalysisPositions[position as keyof typeof relationshipAnalysisPositions];
+  return relationshipAnalysisPositions[
+    position as keyof typeof relationshipAnalysisPositions
+  ];
 };
 
 // Tüm pozisyonları alma fonksiyonu
 export const getAllRelationshipAnalysisPositions = () => {
-  return Object.entries(relationshipAnalysisPositions).map(([position, info]) => ({
-    position: parseInt(position),
-    ...info,
-  }));
+  return Object.entries(relationshipAnalysisPositions).map(
+    ([position, info]) => ({
+      position: parseInt(position),
+      ...info,
+    })
+  );
 };
 
 // Kart adına ve pozisyona göre anlam bulma fonksiyonu
@@ -291,30 +323,35 @@ export const getRelationshipAnalysisMeaningByCardNameAndPosition = (
     number: 0,
     meaning: {
       upright: 'Temel anlam',
-      reversed: 'Ters anlam'
+      reversed: 'Ters anlam',
     },
     meaningTr: {
       upright: 'Temel anlam',
-      reversed: 'Ters anlam'
+      reversed: 'Ters anlam',
     },
     keywords: [],
     keywordsTr: [],
-    image: ''
+    image: '',
   };
 
-  return getRelationshipAnalysisMeaningByCardAndPosition(mockCard, position, isReversed);
+  return getRelationshipAnalysisMeaningByCardAndPosition(
+    mockCard,
+    position,
+    isReversed
+  );
 };
 
 // Tüm pozisyon anlamlarını birleştiren ana array
-export const allRelationshipAnalysisPositionMeanings: RelationshipAnalysisPositionMeaning[] = [
-  ...position1Meanings,
-  ...position2Meanings,
-  ...position3Meanings,
-  ...position4Meanings,
-  ...position5Meanings,
-  ...position6Meanings,
-  ...position7Meanings,
-];
+export const allRelationshipAnalysisPositionMeanings: RelationshipAnalysisPositionMeaning[] =
+  [
+    ...position1Meanings,
+    ...position2Meanings,
+    ...position3Meanings,
+    ...position4Meanings,
+    ...position5Meanings,
+    ...position6Meanings,
+    ...position7Meanings,
+  ];
 
 // Pozisyon bazlı anlam alma fonksiyonları
 export function getRelationshipAnalysisMeaningsByPosition(
@@ -351,7 +388,10 @@ export function getRelationshipAnalysisMeaningsByCard(
   const meanings: RelationshipAnalysisPositionMeaning[] = [];
 
   for (let position = 1; position <= 7; position++) {
-    const meaning = getRelationshipAnalysisMeaningByCardAndPosition(card, position);
+    const meaning = getRelationshipAnalysisMeaningByCardAndPosition(
+      card,
+      position
+    );
     if (meaning) {
       meanings.push(meaning);
     }
@@ -368,7 +408,8 @@ export function getAllRelationshipAnalysisMeanings(): Record<
   const allMeanings: Record<number, RelationshipAnalysisPositionMeaning[]> = {};
 
   for (let position = 1; position <= 7; position++) {
-    allMeanings[position] = getRelationshipAnalysisMeaningsByPosition(position) || [];
+    allMeanings[position] =
+      getRelationshipAnalysisMeaningsByPosition(position) || [];
   }
 
   return allMeanings;
@@ -378,7 +419,9 @@ export function getAllRelationshipAnalysisMeanings(): Record<
 export const getRelationshipAnalysisMeaningsByGroup = (
   group: 'Majör Arkana' | 'Kupalar' | 'Kılıçlar' | 'Asalar' | 'Tılsımlar'
 ): RelationshipAnalysisPositionMeaning[] => {
-  return allRelationshipAnalysisPositionMeanings.filter(meaning => meaning.group === group);
+  return allRelationshipAnalysisPositionMeanings.filter(
+    meaning => meaning.group === group
+  );
 };
 
 // Pozisyon ve gruba göre filtreleme fonksiyonu
@@ -395,9 +438,11 @@ export const getRelationshipAnalysisMeaningsByPositionAndGroup = (
 export const searchRelationshipAnalysisMeaningsByCardName = (
   cardName: string
 ): RelationshipAnalysisPositionMeaning[] => {
-  return allRelationshipAnalysisPositionMeanings.filter(meaning =>
-    (meaning.cardName?.toLowerCase().includes(cardName.toLowerCase()) || false) ||
-    meaning.card.toLowerCase().includes(cardName.toLowerCase())
+  return allRelationshipAnalysisPositionMeanings.filter(
+    meaning =>
+      meaning.cardName?.toLowerCase().includes(cardName.toLowerCase()) ||
+      false ||
+      meaning.card.toLowerCase().includes(cardName.toLowerCase())
   );
 };
 
@@ -422,12 +467,18 @@ export const getRelationshipAnalysisStatistics = () => {
     'Majör Arkana': allRelationshipAnalysisPositionMeanings.filter(
       m => m.group === 'Majör Arkana'
     ).length,
-    Kupalar: allRelationshipAnalysisPositionMeanings.filter(m => m.group === 'Kupalar').length,
-    Kılıçlar: allRelationshipAnalysisPositionMeanings.filter(m => m.group === 'Kılıçlar')
-      .length,
-    Asalar: allRelationshipAnalysisPositionMeanings.filter(m => m.group === 'Asalar').length,
-    Tılsımlar: allRelationshipAnalysisPositionMeanings.filter(m => m.group === 'Tılsımlar')
-      .length,
+    Kupalar: allRelationshipAnalysisPositionMeanings.filter(
+      m => m.group === 'Kupalar'
+    ).length,
+    Kılıçlar: allRelationshipAnalysisPositionMeanings.filter(
+      m => m.group === 'Kılıçlar'
+    ).length,
+    Asalar: allRelationshipAnalysisPositionMeanings.filter(
+      m => m.group === 'Asalar'
+    ).length,
+    Tılsımlar: allRelationshipAnalysisPositionMeanings.filter(
+      m => m.group === 'Tılsımlar'
+    ).length,
   };
 
   return {

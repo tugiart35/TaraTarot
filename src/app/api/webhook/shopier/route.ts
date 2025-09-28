@@ -95,7 +95,7 @@ export async function POST(request: NextRequest) {
         'Shopier webhook: Payment not successful',
         webhookData.status
       );
-      
+
       // Başarısız ödeme için email bildirimi gönder
       try {
         const userId = extractUserIdFromOrderId(webhookData.orderId);
@@ -105,15 +105,16 @@ export async function POST(request: NextRequest) {
             .select('display_name, email')
             .eq('id', userId)
             .single();
-            
+
           if (profile) {
-            const emailTemplate = ShopierEmailTemplates.generatePaymentFailureEmail({
-              userEmail: profile.email || 'Bilinmiyor',
-              userName: profile.display_name || 'Bilinmiyor',
-              orderId: webhookData.orderId,
-              status: webhookData.status,
-              amount: webhookData.amount,
-            });
+            const emailTemplate =
+              ShopierEmailTemplates.generatePaymentFailureEmail({
+                userEmail: profile.email || 'Bilinmiyor',
+                userName: profile.display_name || 'Bilinmiyor',
+                orderId: webhookData.orderId,
+                status: webhookData.status,
+                amount: webhookData.amount,
+              });
 
             const emailData = {
               to: 'busbuskimkionline@gmail.com', // Admin email
@@ -126,9 +127,12 @@ export async function POST(request: NextRequest) {
           }
         }
       } catch (emailError) {
-        console.error('Failed to send payment failure notification email:', emailError);
+        console.error(
+          'Failed to send payment failure notification email:',
+          emailError
+        );
       }
-      
+
       return NextResponse.json(
         { message: 'Payment not successful' },
         { status: 200 }
@@ -188,10 +192,7 @@ export async function POST(request: NextRequest) {
     const packageData = getPackageInfo(packageId);
     if (!packageData) {
       console.error('Shopier webhook: Package not found:', packageId);
-      return NextResponse.json(
-        { error: 'Package not found' },
-        { status: 400 }
-      );
+      return NextResponse.json({ error: 'Package not found' }, { status: 400 });
     }
 
     console.log('Shopier webhook: Using package data:', packageData);

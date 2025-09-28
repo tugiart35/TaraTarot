@@ -1,29 +1,36 @@
 /*
  * Admin Filter Hook
- * 
+ *
  * Bu dosya admin paneli için ortak filter management hook'unu sağlar.
  * DRY principle uygulayarak tekrarlanan filter logic'ini önler.
  */
 
 import { useState, useMemo } from 'react';
-import { AdminFilterHookReturn, ReadingFilter, PaymentFilter, TransactionFilter } from '@/types/admin.types';
+import {
+  AdminFilterHookReturn,
+  ReadingFilter,
+  PaymentFilter,
+  TransactionFilter,
+} from '@/types/admin.types';
 
 export function useAdminFilter<T>(
   data: T[],
   filterKey: keyof T,
   defaultFilter: string = 'all'
-): AdminFilterHookReturn<string> {
+): AdminFilterHookReturn<T> {
   const [filter, setFilter] = useState<string>(defaultFilter);
-  
+
   const filteredData = useMemo(() => {
-    if (filter === 'all') return data;
+    if (filter === 'all') {
+      return data;
+    }
     return data.filter(item => item[filterKey] === filter);
   }, [data, filter, filterKey]);
 
-  return { 
-    filter, 
-    setFilter, 
-    filteredData 
+  return {
+    filter,
+    setFilter,
+    filteredData,
   };
 }
 
@@ -45,12 +52,15 @@ export function useAdvancedAdminFilter<T>(
   data: T[],
   filters: Record<keyof T, string>
 ) {
-  const [filterState, setFilterState] = useState<Record<keyof T, string>>(filters);
+  const [filterState, setFilterState] =
+    useState<Record<keyof T, string>>(filters);
 
   const filteredData = useMemo(() => {
     return data.filter(item => {
       return Object.entries(filterState).every(([key, value]) => {
-        if (value === 'all' || value === '') return true;
+        if (value === 'all' || value === '') {
+          return true;
+        }
         return item[key as keyof T] === value;
       });
     });
@@ -59,7 +69,7 @@ export function useAdvancedAdminFilter<T>(
   const setFilter = (key: keyof T, value: string) => {
     setFilterState(prev => ({
       ...prev,
-      [key]: value
+      [key]: value,
     }));
   };
 
@@ -67,14 +77,16 @@ export function useAdvancedAdminFilter<T>(
     setFilterState(filters);
   };
 
-  const hasActiveFilters = Object.values(filterState).some(value => value !== 'all' && value !== '');
+  const hasActiveFilters = Object.values(filterState).some(
+    value => value !== 'all' && value !== ''
+  );
 
   return {
     filters: filterState,
     setFilter,
     filteredData,
     resetFilters,
-    hasActiveFilters
+    hasActiveFilters,
   };
 }
 
@@ -122,6 +134,6 @@ export function useAdminSearchAndFilter<T>(
     clearFilters: () => {
       setSearchTerm('');
       setFilter(defaultFilter);
-    }
+    },
   };
 }

@@ -14,7 +14,7 @@ Bağlı Dosyalar:
 - Evet, detaylı anlamlar mevcut
 ---
 
-*/  
+*/
 
 import { TarotCard } from '@/types/tarot';
 
@@ -78,8 +78,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Başrahibe, şu anda sezgilerini görmezden geliyor ya da sırların saklı kalması seni zor durumda bırakıyor olabilir.',
     keywords: ['sezgi', 'bilgelik', 'giz', 'içsel rehberlik', 'farkındalık'],
-    context:
-      'Mevcut durumun, sezgilerini dinleyip dinlememenle şekilleniyor.',
+    context: 'Mevcut durumun, sezgilerini dinleyip dinlememenle şekilleniyor.',
     group: 'Majör Arkana',
   },
   {
@@ -156,8 +155,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Güç, şu anda güvensizlik, sabırsızlık ya da öfke patlamaları seni zorlayabilir.',
     keywords: ['cesaret', 'sabır', 'denge', 'güven', 'irade'],
-    context:
-      'Mevcut durumun, cesaretle ya da güvensizlikle şekilleniyor.',
+    context: 'Mevcut durumun, cesaretle ya da güvensizlikle şekilleniyor.',
     group: 'Majör Arkana',
   },
   {
@@ -168,22 +166,26 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
       'Ermiş, şu anda içsel bir yolculukta olabilir, yalnız kalarak kendini keşfetmeye çalışıyor olabilirsin.',
     reversed:
       'Ters Ermiş, şu anda aşırı yalnızlık, rehberlik eksikliği ya da içe kapanıklık seni zorlayabilir.',
-    keywords: ['bilgelik', 'içsel arayış', 'yalnızlık', 'rehberlik', 'farkındalık'],
-    context:
-      'Mevcut durumun, içsel keşif ya da yalnızlıkla şekilleniyor.',
+    keywords: [
+      'bilgelik',
+      'içsel arayış',
+      'yalnızlık',
+      'rehberlik',
+      'farkındalık',
+    ],
+    context: 'Mevcut durumun, içsel keşif ya da yalnızlıkla şekilleniyor.',
     group: 'Majör Arkana',
   },
   {
     id: 'wheel_of_fortune_ps_pos7',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 7,
     upright:
       'Kader Çarkı, şu anda hayatında önemli değişimler, döngüler ve şanslı fırsatlar ortaya çıkıyor olabilir.',
     reversed:
       'Ters Kader Çarkı, şu anda şanssızlık, yanlış zamanlama ya da tekrarlayan döngüler içinde olabilirsin.',
     keywords: ['kader', 'şans', 'döngü', 'fırsat', 'değişim'],
-    context:
-      'Mevcut durumun, olumlu ya da olumsuz döngülerle şekilleniyor.',
+    context: 'Mevcut durumun, olumlu ya da olumsuz döngülerle şekilleniyor.',
     group: 'Majör Arkana',
   },
   {
@@ -207,7 +209,13 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
       'Asılan Adam, şu anda farklı bir bakış açısı kazanıyor, fedakarlık yapıyor ya da bekleyiş içindesin.',
     reversed:
       'Ters Asılan Adam, şu anda direnç, inatçılık ya da teslimiyet eksikliği seni zorlayabilir.',
-    keywords: ['bakış açısı', 'teslimiyet', 'fedakarlık', 'farkındalık', 'öğrenme'],
+    keywords: [
+      'bakış açısı',
+      'teslimiyet',
+      'fedakarlık',
+      'farkındalık',
+      'öğrenme',
+    ],
     context:
       'Mevcut durumun, yeni bir bakış açısı ya da dirençle şekilleniyor.',
     group: 'Majör Arkana',
@@ -221,8 +229,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Ölüm, şu anda değişime direniyor, kapanması gereken süreçleri erteleyerek zorlanıyor olabilirsin.',
     keywords: ['dönüşüm', 'bitiş', 'yenilenme', 'kapanış', 'cesaret'],
-    context:
-      'Mevcut durumun, dönüşüm ya da dirençle şekilleniyor.',
+    context: 'Mevcut durumun, dönüşüm ya da dirençle şekilleniyor.',
     group: 'Majör Arkana',
   },
   {
@@ -234,8 +241,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Denge, şu anda sabırsızlık, uyumsuzluk ya da aşırılıklar seni zorlayabilir.',
     keywords: ['denge', 'uyum', 'sabır', 'ölçülülük', 'dengeleyici'],
-    context:
-      'Mevcut durumun, uyum ya da dengesizlikle şekilleniyor.',
+    context: 'Mevcut durumun, uyum ya da dengesizlikle şekilleniyor.',
     group: 'Majör Arkana',
   },
   {
@@ -260,8 +266,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Kule, şu anda ertelediğin bir kriz patlayabilir ya da değişimden kaçıyor olabilirsin.',
     keywords: ['kriz', 'yıkım', 'değişim', 'dönüşüm', 'şok'],
-    context:
-      'Mevcut durumun, kriz ya da krizden kaçışla şekilleniyor.',
+    context: 'Mevcut durumun, kriz ya da krizden kaçışla şekilleniyor.',
     group: 'Majör Arkana',
   },
   {
@@ -273,8 +278,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Yıldız, şu anda umutsuzluk, güven kaybı ya da ilham eksikliği seni zorluyor olabilir.',
     keywords: ['umut', 'ilham', 'yenilenme', 'ruh', 'güven'],
-    context:
-      'Mevcut durumun, umutla ya da umutsuzlukla şekilleniyor.',
+    context: 'Mevcut durumun, umutla ya da umutsuzlukla şekilleniyor.',
     group: 'Majör Arkana',
   },
   {
@@ -286,8 +290,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Ay, şu anda sırların açığa çıkması, netlik kazanma ya da yanılsamalardan kurtulma süreci yaşanıyor olabilir.',
     keywords: ['belirsizlik', 'yanılsama', 'sezgi', 'korku', 'gizli'],
-    context:
-      'Mevcut durumun, belirsizlik ya da netlikle şekilleniyor.',
+    context: 'Mevcut durumun, belirsizlik ya da netlikle şekilleniyor.',
     group: 'Majör Arkana',
   },
   {
@@ -299,8 +302,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Güneş, şu anda karamsarlık, özgüven eksikliği ya da başarıların gecikmesi söz konusu olabilir.',
     keywords: ['mutluluk', 'başarı', 'aydınlanma', 'özgüven', 'neşe'],
-    context:
-      'Mevcut durumun, aydınlanma ya da karamsarlıkla şekilleniyor.',
+    context: 'Mevcut durumun, aydınlanma ya da karamsarlıkla şekilleniyor.',
     group: 'Majör Arkana',
   },
   {
@@ -312,8 +314,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Mahkeme, şu anda sorumluluklardan kaçma, geçmişi reddetme ya da fırsatları görmezden gelme olabilir.',
     keywords: ['farkındalık', 'karar', 'yüzleşme', 'yenilenme', 'çağrı'],
-    context:
-      'Mevcut durumun, farkındalık ya da kaçışla şekilleniyor.',
+    context: 'Mevcut durumun, farkındalık ya da kaçışla şekilleniyor.',
     group: 'Majör Arkana',
   },
   {
@@ -325,8 +326,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Dünya, şu anda yarım kalmış işler, kapanmayan döngüler ya da tatminsizlik seni zorlayabilir.',
     keywords: ['tamamlanma', 'başarı', 'döngü', 'bütünlük', 'kapanış'],
-    context:
-      'Mevcut durumun, tamamlanma ya da yarım kalmışlıkla şekilleniyor.',
+    context: 'Mevcut durumun, tamamlanma ya da yarım kalmışlıkla şekilleniyor.',
     group: 'Majör Arkana',
   },
   // --- Kupalar Serisi ---
@@ -352,8 +352,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters İki Kupa, şu anda anlaşmazlık, uyumsuzluk veya iletişim sorunları seni zorlayabilir.',
     keywords: ['ilişki', 'ortaklık', 'uyum', 'sevgi', 'bağ'],
-    context:
-      'Mevcut durumun, uyum ya da uyumsuzlukla şekilleniyor.',
+    context: 'Mevcut durumun, uyum ya da uyumsuzlukla şekilleniyor.',
     group: 'Kupalar',
   },
   {
@@ -365,8 +364,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Üç Kupa, şu anda sosyal çevrenden uzaklaşma, yanlış anlaşılma ya da samimiyetsizlikle karşılaşabilirsin.',
     keywords: ['kutlama', 'dostluk', 'topluluk', 'mutluluk', 'paylaşım'],
-    context:
-      'Mevcut durumun, sosyal bağlarla ya da uzaklaşmayla şekilleniyor.',
+    context: 'Mevcut durumun, sosyal bağlarla ya da uzaklaşmayla şekilleniyor.',
     group: 'Kupalar',
   },
   {
@@ -377,9 +375,14 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
       'Dört Kupa, şu anda ilgisizlik, tatminsizlik ya da içsel bir boşluk duygusu içinde olabilirsin.',
     reversed:
       'Ters Dört Kupa, şu anda farkındalık kazanıyor, fırsatlara yeniden açılıyor ya da yeni ilgiler geliştiriyor olabilirsin.',
-    keywords: ['tatminsizlik', 'ilgisizlik', 'uyanış', 'fırsat', 'içsel boşluk'],
-    context:
-      'Mevcut durumun, tatminsizlik ya da farkındalıkla şekilleniyor.',
+    keywords: [
+      'tatminsizlik',
+      'ilgisizlik',
+      'uyanış',
+      'fırsat',
+      'içsel boşluk',
+    ],
+    context: 'Mevcut durumun, tatminsizlik ya da farkındalıkla şekilleniyor.',
     group: 'Kupalar',
   },
   {
@@ -391,8 +394,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Beş Kupa, şu anda geçmişi geride bırakıyor, kalan güzelliklere odaklanıyor ve şifalanıyorsun.',
     keywords: ['kayıp', 'pişmanlık', 'üzüntü', 'şifa', 'farkındalık'],
-    context:
-      'Mevcut durumun, yas ya da şifalanmayla şekilleniyor.',
+    context: 'Mevcut durumun, yas ya da şifalanmayla şekilleniyor.',
     group: 'Kupalar',
   },
   {
@@ -417,8 +419,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Yedi Kupa, şu anda kafandaki karmaşayı geride bırakıyor, netlik kazanıyor ve somut seçimlere yöneliyorsun.',
     keywords: ['seçenek', 'hayal', 'karar', 'vizyon', 'netlik'],
-    context:
-      'Mevcut durumun, kafa karışıklığı ya da netlikle şekilleniyor.',
+    context: 'Mevcut durumun, kafa karışıklığı ya da netlikle şekilleniyor.',
     group: 'Kupalar',
   },
   {
@@ -430,8 +431,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Sekiz Kupa, şu anda geçmişe dönme, ayrılmakta zorlanma ya da kararsızlık içinde olabilirsin.',
     keywords: ['bırakış', 'arayış', 'tatminsizlik', 'karar', 'kaçış'],
-    context:
-      'Mevcut durumun, bırakış ya da geri dönüşle şekilleniyor.',
+    context: 'Mevcut durumun, bırakış ya da geri dönüşle şekilleniyor.',
     group: 'Kupalar',
   },
   {
@@ -443,8 +443,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Dokuz Kupa, şu anda yüzeysel tatmin, doyumsuzluk ya da beklentilerin karşılanmaması söz konusu olabilir.',
     keywords: ['tatmin', 'dilek', 'mutluluk', 'doyum', 'beklenti'],
-    context:
-      'Mevcut durumun, tatmin ya da doyumsuzlukla şekilleniyor.',
+    context: 'Mevcut durumun, tatmin ya da doyumsuzlukla şekilleniyor.',
     group: 'Kupalar',
   },
   {
@@ -456,8 +455,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters On Kupa, şu anda ailevi huzursuzluk, uyumsuzluk ya da hayal kırıklığı seni zorluyor olabilir.',
     keywords: ['aile', 'mutluluk', 'uyum', 'huzur', 'ilişki'],
-    context:
-      'Mevcut durumun, uyum ya da huzursuzlukla şekilleniyor.',
+    context: 'Mevcut durumun, uyum ya da huzursuzlukla şekilleniyor.',
     group: 'Kupalar',
   },
   {
@@ -469,8 +467,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Kupa Prensi, şu anda hayalcilik, duygusal olgunluk eksikliği ya da samimiyet sorunları yaşayabilirsin.',
     keywords: ['ilham', 'romantizm', 'yaratıcılık', 'hayal', 'samimiyet'],
-    context:
-      'Mevcut durumun, ilham ya da hayalcilikle şekilleniyor.',
+    context: 'Mevcut durumun, ilham ya da hayalcilikle şekilleniyor.',
     group: 'Kupalar',
   },
   {
@@ -482,8 +479,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Kupa Şövalyesi, şu anda tutarsızlık, boş vaatler ya da gerçek dışı beklentiler seni zorluyor olabilir.',
     keywords: ['romantizm', 'teklif', 'ilham', 'hayal', 'hareket'],
-    context:
-      'Mevcut durumun, romantizm ya da tutarsızlıkla şekilleniyor.',
+    context: 'Mevcut durumun, romantizm ya da tutarsızlıkla şekilleniyor.',
     group: 'Kupalar',
   },
   {
@@ -536,8 +532,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters İki Kılıç, şu anda karar vermekten kaçınıyor, belki de yanlış tercihler yapıyor olabilirsin.',
     keywords: ['karar', 'denge', 'ikilem', 'kararsızlık', 'yol ayrımı'],
-    context:
-      'Mevcut durumun, seçim yapma ya da kararsızlıkla şekilleniyor.',
+    context: 'Mevcut durumun, seçim yapma ya da kararsızlıkla şekilleniyor.',
     group: 'Kılıçlar',
   },
   {
@@ -549,8 +544,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Üç Kılıç, şu anda eski yaraların şifalanması, affediş ya da acıyı geride bırakma süreci içindesin.',
     keywords: ['kalp kırıklığı', 'ayrılık', 'acı', 'şifa', 'affetmek'],
-    context:
-      'Mevcut durumun, acı ya da şifalanmayla şekilleniyor.',
+    context: 'Mevcut durumun, acı ya da şifalanmayla şekilleniyor.',
     group: 'Kılıçlar',
   },
   {
@@ -562,8 +556,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Dört Kılıç, şu anda tükenmişlik ya da kendine zaman ayıramama durumu seni zorluyor olabilir.',
     keywords: ['dinlenme', 'toparlanma', 'zihin', 'huzur', 'iyileşme'],
-    context:
-      'Mevcut durumun, yenilenme ya da tükenmişlikle şekilleniyor.',
+    context: 'Mevcut durumun, yenilenme ya da tükenmişlikle şekilleniyor.',
     group: 'Kılıçlar',
   },
   {
@@ -575,8 +568,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Beş Kılıç, şu anda barış arayışı, uzlaşma ya da geçmiş çatışmaları geride bırakma süreci yaşıyor olabilirsin.',
     keywords: ['çatışma', 'tartışma', 'gurur', 'uzlaşma', 'kaygı'],
-    context:
-      'Mevcut durumun, çatışma ya da barışma ihtiyacıyla şekilleniyor.',
+    context: 'Mevcut durumun, çatışma ya da barışma ihtiyacıyla şekilleniyor.',
     group: 'Kılıçlar',
   },
   {
@@ -601,8 +593,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Yedi Kılıç, şu anda sırların açığa çıkması, dürüstlük ihtiyacı ya da yakalanma durumu gündemde olabilir.',
     keywords: ['gizlilik', 'hile', 'strateji', 'sırlar', 'plan'],
-    context:
-      'Mevcut durumun, gizlilik ya da dürüstlükle şekilleniyor.',
+    context: 'Mevcut durumun, gizlilik ya da dürüstlükle şekilleniyor.',
     group: 'Kılıçlar',
   },
   {
@@ -614,8 +605,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Sekiz Kılıç, şu anda özgürleşme, engelleri kaldırma ya da kendi sınırlarını aşma süreci içindesin.',
     keywords: ['sınırlama', 'çaresizlik', 'özgürlük', 'engeller', 'zihin'],
-    context:
-      'Mevcut durumun, kısıtlanma ya da özgürleşmeyle şekilleniyor.',
+    context: 'Mevcut durumun, kısıtlanma ya da özgürleşmeyle şekilleniyor.',
     group: 'Kılıçlar',
   },
   {
@@ -627,8 +617,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Dokuz Kılıç, şu anda kaygılardan kurtulma, rahatlama ya da destek bulma süreci yaşıyor olabilirsin.',
     keywords: ['kaygı', 'stres', 'endişe', 'kabus', 'rahatlama'],
-    context:
-      'Mevcut durumun, kaygılar ya da şifalanmayla şekilleniyor.',
+    context: 'Mevcut durumun, kaygılar ya da şifalanmayla şekilleniyor.',
     group: 'Kılıçlar',
   },
   {
@@ -640,8 +629,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters On Kılıç, şu anda yeniden doğuş, toparlanma ve karanlık dönemleri geride bırakma sürecindesin.',
     keywords: ['bitiş', 'ihanet', 'yeniden doğuş', 'acı', 'travma'],
-    context:
-      'Mevcut durumun, bitiş ya da yeniden doğuşla şekilleniyor.',
+    context: 'Mevcut durumun, bitiş ya da yeniden doğuşla şekilleniyor.',
     group: 'Kılıçlar',
   },
   {
@@ -653,8 +641,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Kılıç Prensi, şu anda dedikodu, yanlış bilgi ya da dikkatsizlik seni etkiliyor olabilir.',
     keywords: ['merak', 'iletişim', 'öğrenme', 'zeka', 'dikkat'],
-    context:
-      'Mevcut durumun, öğrenme ya da dikkatsizlikle şekilleniyor.',
+    context: 'Mevcut durumun, öğrenme ya da dikkatsizlikle şekilleniyor.',
     group: 'Kılıçlar',
   },
   {
@@ -666,8 +653,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Kılıç Şövalyesi, şu anda acelecilik, dikkatsizlik ya da yönsüzlük seni zorlayabilir.',
     keywords: ['cesaret', 'hız', 'karar', 'odak', 'acele'],
-    context:
-      'Mevcut durumun, cesaret ya da acelecilikle şekilleniyor.',
+    context: 'Mevcut durumun, cesaret ya da acelecilikle şekilleniyor.',
     group: 'Kılıçlar',
   },
   {
@@ -679,8 +665,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Kılıç Kraliçesi, şu anda soğukluk, eleştirellik ya da anlayışsızlıkla karşı karşıya olabilirsin.',
     keywords: ['mantık', 'bağımsızlık', 'objektiflik', 'soğukluk', 'karar'],
-    context:
-      'Mevcut durumun, mantıkla ya da aşırı soğuklukla şekilleniyor.',
+    context: 'Mevcut durumun, mantıkla ya da aşırı soğuklukla şekilleniyor.',
     group: 'Kılıçlar',
   },
   {
@@ -692,8 +677,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Kılıç Kralı, şu anda baskıcılık, adaletsiz kararlar ya da soğuk bir tavır sergiliyor olabilirsin.',
     keywords: ['otorite', 'adalet', 'mantık', 'bilgelik', 'karar'],
-    context:
-      'Mevcut durumun, bilgelik ya da adaletsizlikle şekilleniyor.',
+    context: 'Mevcut durumun, bilgelik ya da adaletsizlikle şekilleniyor.',
     group: 'Kılıçlar',
   },
   // --- Tılsımlar Serisi ---
@@ -719,8 +703,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters İki Tılsım, şu anda dengesizlik, fazla yüklenme ya da karar verememe durumuyla karşı karşıya olabilirsin.',
     keywords: ['denge', 'sorumluluk', 'öncelik', 'yoğunluk', 'esneklik'],
-    context:
-      'Mevcut durumun, dengeyi bulmak ya da kaybetmekle şekilleniyor.',
+    context: 'Mevcut durumun, dengeyi bulmak ya da kaybetmekle şekilleniyor.',
     group: 'Tılsımlar',
   },
   {
@@ -732,8 +715,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Üç Tılsım, şu anda uyumsuzluk, destek eksikliği ya da işbirliği yapamama durumu söz konusu olabilir.',
     keywords: ['işbirliği', 'ekip', 'başarı', 'paylaşım', 'uyum'],
-    context:
-      'Mevcut durumun, işbirliği ya da uyumsuzlukla şekilleniyor.',
+    context: 'Mevcut durumun, işbirliği ya da uyumsuzlukla şekilleniyor.',
     group: 'Tılsımlar',
   },
   {
@@ -758,8 +740,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Beş Tılsım, şu anda yardım bulma, destek alma ya da zorlukları aşma sürecindesin.',
     keywords: ['zorluk', 'destek', 'yalnızlık', 'maddi sıkıntı', 'dayanışma'],
-    context:
-      'Mevcut durumun, zorluk ya da destek bulmayla şekilleniyor.',
+    context: 'Mevcut durumun, zorluk ya da destek bulmayla şekilleniyor.',
     group: 'Tılsımlar',
   },
   {
@@ -771,8 +752,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Altı Tılsım, şu anda eşitsizlik, tek taraflı ilişkiler ya da dengesizlik deneyimliyor olabilirsin.',
     keywords: ['yardım', 'paylaşım', 'adalet', 'denge', 'destek'],
-    context:
-      'Mevcut durumun, denge ya da dengesizlikle şekilleniyor.',
+    context: 'Mevcut durumun, denge ya da dengesizlikle şekilleniyor.',
     group: 'Tılsımlar',
   },
   {
@@ -784,8 +764,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Yedi Tılsım, şu anda sabırsızlık, tatminsizlik ya da boşa emek verme duygusu içinde olabilirsin.',
     keywords: ['sabır', 'emek', 'bekleyiş', 'yatırım', 'kazanç'],
-    context:
-      'Mevcut durumun, sabır ya da tatminsizlikle şekilleniyor.',
+    context: 'Mevcut durumun, sabır ya da tatminsizlikle şekilleniyor.',
     group: 'Tılsımlar',
   },
   {
@@ -797,8 +776,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Sekiz Tılsım, şu anda özensizlik, motivasyon eksikliği ya da aynı hataları tekrar etme eğilimi olabilir.',
     keywords: ['çalışma', 'ustalık', 'disiplin', 'öğrenme', 'emek'],
-    context:
-      'Mevcut durumun, çalışkanlık ya da özensizlikle şekilleniyor.',
+    context: 'Mevcut durumun, çalışkanlık ya da özensizlikle şekilleniyor.',
     group: 'Tılsımlar',
   },
   {
@@ -810,8 +788,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Dokuz Tılsım, şu anda bağımlılıklar, yalnızlık korkusu ya da maddi aşırılıklar seni etkiliyor olabilir.',
     keywords: ['bağımsızlık', 'özgüven', 'tatmin', 'bolluk', 'başarı'],
-    context:
-      'Mevcut durumun, bağımsızlık ya da bağımlılıkla şekilleniyor.',
+    context: 'Mevcut durumun, bağımsızlık ya da bağımlılıkla şekilleniyor.',
     group: 'Tılsımlar',
   },
   {
@@ -823,8 +800,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters On Tılsım, şu anda ailevi sorunlar, miras anlaşmazlıkları ya da istikrarsızlık seni etkiliyor olabilir.',
     keywords: ['aile', 'istikrar', 'maddi güvence', 'bolluk', 'bağ'],
-    context:
-      'Mevcut durumun, istikrar ya da ailevi zorluklarla şekilleniyor.',
+    context: 'Mevcut durumun, istikrar ya da ailevi zorluklarla şekilleniyor.',
     group: 'Tılsımlar',
   },
   {
@@ -849,8 +825,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Tılsım Şövalyesi, şu anda tembellik, durağanlık ya da yavaş ilerleme seni zorlayabilir.',
     keywords: ['sabır', 'istikrar', 'çalışma', 'disiplin', 'azim'],
-    context:
-      'Mevcut durumun, disiplin ya da durağanlıkla şekilleniyor.',
+    context: 'Mevcut durumun, disiplin ya da durağanlıkla şekilleniyor.',
     group: 'Tılsımlar',
   },
   {
@@ -862,8 +837,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Tılsım Kraliçesi, şu anda savurganlık, öz bakım eksikliği ya da dengesiz kaynak kullanımı seni etkiliyor olabilir.',
     keywords: ['bolluk', 'şefkat', 'kaynak yönetimi', 'denge', 'üretkenlik'],
-    context:
-      'Mevcut durumun, bolluk ya da savurganlıkla şekilleniyor.',
+    context: 'Mevcut durumun, bolluk ya da savurganlıkla şekilleniyor.',
     group: 'Tılsımlar',
   },
   {
@@ -875,8 +849,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Tılsım Kralı, şu anda hırs, baskıcılık ya da istikrar eksikliği seni zorlayabilir.',
     keywords: ['başarı', 'istikrar', 'liderlik', 'güven', 'bolluk'],
-    context:
-      'Mevcut durumun, başarı ya da istikrarsızlıkla şekilleniyor.',
+    context: 'Mevcut durumun, başarı ya da istikrarsızlıkla şekilleniyor.',
     group: 'Tılsımlar',
   },
   // --- Asalar Serisi ---
@@ -915,8 +888,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Üç Değnek, şu anda gecikmeler, engeller ya da planlarda aksamalar yaşayabilirsin.',
     keywords: ['ilerleme', 'fırsat', 'vizyon', 'ufuk', 'plan'],
-    context:
-      'Mevcut durumun, ilerleme ya da gecikmelerle şekilleniyor.',
+    context: 'Mevcut durumun, ilerleme ya da gecikmelerle şekilleniyor.',
     group: 'Asalar',
   },
   {
@@ -928,8 +900,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Dört Değnek, şu anda uyumsuzluk, ev veya iş yaşamında huzursuzluk seni etkiliyor olabilir.',
     keywords: ['kutlama', 'huzur', 'temel', 'uyum', 'denge'],
-    context:
-      'Mevcut durumun, huzur ya da uyumsuzlukla şekilleniyor.',
+    context: 'Mevcut durumun, huzur ya da uyumsuzlukla şekilleniyor.',
     group: 'Asalar',
   },
   {
@@ -941,8 +912,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Beş Değnek, şu anda çatışmalardan uzaklaşma, işbirliğine yönelme ya da gerilimi azaltma sürecindesin.',
     keywords: ['rekabet', 'çatışma', 'mücadele', 'gerilim', 'işbirliği'],
-    context:
-      'Mevcut durumun, rekabet ya da işbirliğiyle şekilleniyor.',
+    context: 'Mevcut durumun, rekabet ya da işbirliğiyle şekilleniyor.',
     group: 'Asalar',
   },
   {
@@ -954,8 +924,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Altı Değnek, şu anda özgüven eksikliği, başarının gölgelenmesi ya da takdir görmeme durumuyla karşılaşabilirsin.',
     keywords: ['zafer', 'başarı', 'takdir', 'özgüven', 'liderlik'],
-    context:
-      'Mevcut durumun, başarı ya da hayal kırıklığıyla şekilleniyor.',
+    context: 'Mevcut durumun, başarı ya da hayal kırıklığıyla şekilleniyor.',
     group: 'Asalar',
   },
   {
@@ -967,8 +936,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Yedi Değnek, şu anda direnç kaybı, geri çekilme ya da pes etme eğilimi içinde olabilirsin.',
     keywords: ['savunma', 'kararlılık', 'cesaret', 'sınırlar', 'dayanıklılık'],
-    context:
-      'Mevcut durumun, kararlılık ya da geri çekilme ile şekilleniyor.',
+    context: 'Mevcut durumun, kararlılık ya da geri çekilme ile şekilleniyor.',
     group: 'Asalar',
   },
   {
@@ -993,8 +961,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Dokuz Değnek, şu anda tükenmişlik, yorgunluk ya da pes etme eğilimi yaşıyor olabilirsin.',
     keywords: ['direnç', 'sabır', 'koruma', 'dayanıklılık', 'mücadele'],
-    context:
-      'Mevcut durumun, direnç ya da yorgunlukla şekilleniyor.',
+    context: 'Mevcut durumun, direnç ya da yorgunlukla şekilleniyor.',
     group: 'Asalar',
   },
   {
@@ -1032,8 +999,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Değnek Şövalyesi, şu anda acelecilik, yönsüzlük ya da sabırsızlık seni etkiliyor olabilir.',
     keywords: ['tutku', 'cesaret', 'hareket', 'macera', 'enerji'],
-    context:
-      'Mevcut durumun, cesur adımlar ya da acelecilikle şekilleniyor.',
+    context: 'Mevcut durumun, cesur adımlar ya da acelecilikle şekilleniyor.',
     group: 'Asalar',
   },
   {
@@ -1045,8 +1011,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Değnek Kraliçesi, şu anda güvensizlik, kıskançlık ya da enerjide düşüş seni zorlayabilir.',
     keywords: ['özgüven', 'liderlik', 'çekim', 'ilham', 'enerji'],
-    context:
-      'Mevcut durumun, özgüven ya da güvensizlikle şekilleniyor.',
+    context: 'Mevcut durumun, özgüven ya da güvensizlikle şekilleniyor.',
     group: 'Asalar',
   },
   {
@@ -1058,8 +1023,7 @@ export const position7Meanings: ProblemSolvingPosition7Meaning[] = [
     reversed:
       'Ters Değnek Kralı, şu anda kontrol etme isteği, baskıcılık ya da vizyon eksikliği seni zorlayabilir.',
     keywords: ['liderlik', 'vizyon', 'ilham', 'karizma', 'cesaret'],
-    context:
-      'Mevcut durumun, vizyon ya da kontrol ihtiyacıyla şekilleniyor.',
+    context: 'Mevcut durumun, vizyon ya da kontrol ihtiyacıyla şekilleniyor.',
     group: 'Asalar',
   },
 ];
@@ -1074,54 +1038,55 @@ export function getProblemSolvingPosition7Meaning(
 ): ProblemSolvingPosition7Meaning | null {
   // Kart ismi eşleştirmesi için hem İngilizce hem Türkçe isimleri kontrol et
   // Önce doğrudan eşleşme ara
-  let meaning = position7Meanings.find(m => 
-    m.card === card.name || 
-    m.card === card.nameTr ||
-    card.name === m.card ||
-    card.nameTr === m.card
+  let meaning = position7Meanings.find(
+    m =>
+      m.card === card.name ||
+      m.card === card.nameTr ||
+      card.name === m.card ||
+      card.nameTr === m.card
   );
-  
+
   if (meaning) {
     return meaning;
   }
-  
+
   // Kart ismi mapping'i kullanarak eşleştirme yap
   const cardNameMapping: { [key: string]: string } = {
     // Major Arcana - Türkçe
-    'Deli': 'The Fool',
-    'Büyücü': 'The Magician',
+    Deli: 'The Fool',
+    Büyücü: 'The Magician',
     'Yüksek Rahibe': 'The High Priestess',
-    'İmparatoriçe': 'The Empress',
-    'İmparator': 'The Emperor',
-    'Hierophant': 'The Hierophant',
-    'Aziz': 'The Hierophant',
-    'Aşıklar': 'The Lovers',
+    İmparatoriçe: 'The Empress',
+    İmparator: 'The Emperor',
+    Hierophant: 'The Hierophant',
+    Aziz: 'The Hierophant',
+    Aşıklar: 'The Lovers',
     'Savaş Arabası': 'The Chariot',
-    'Güç': 'Strength',
-    'Ermiş': 'The Hermit',
-    'Münzevi': 'The Hermit',
-    'Kader Çarkı': 'The Wheel of Fortune',
-    'Adalet': 'Justice',
+    Güç: 'Strength',
+    Ermiş: 'The Hermit',
+    Münzevi: 'The Hermit',
+    'Kader Çarkı': 'The The Wheel of Fortune',
+    Adalet: 'Justice',
     'Asılı Adam': 'The Hanged Man',
-    'Ölüm': 'Death',
-    'Ölçü': 'Temperance',
-    'Ölçülülük': 'Temperance',
-    'Şeytan': 'The Devil',
-    'Kule': 'The Tower',
-    'Yıldız': 'The Star',
-    'Ay': 'The Moon',
-    'Güneş': 'The Sun',
-    'Yargı': 'Judgement',
-    'Mahkeme': 'Judgement',
-    'Dünya': 'The World',
+    Ölüm: 'Death',
+    Ölçü: 'Temperance',
+    Ölçülülük: 'Temperance',
+    Şeytan: 'The Devil',
+    Kule: 'The Tower',
+    Yıldız: 'The Star',
+    Ay: 'The Moon',
+    Güneş: 'The Sun',
+    Yargı: 'Judgement',
+    Mahkeme: 'Judgement',
+    Dünya: 'The World',
   };
-  
+
   // Türkçe ismi İngilizce'ye çevir
   const englishName = cardNameMapping[card.nameTr] || card.nameTr;
-  
+
   // İngilizce isimle tekrar ara
   meaning = position7Meanings.find(m => m.card === englishName);
-  
+
   return meaning || null;
 }
 
@@ -1184,7 +1149,7 @@ export const useI18nposition7Meanings = (): I18nProblemSolvingPosition7Meaning[]
 */
 
 // Belirli bir kart için i18n destekli anlam al (hook kullanmadan)
-      export const getI18nPosition7Meaning = (
+export const getI18nPosition7Meaning = (
   cardName: string,
   t: (_key: string) => string
 ): I18nProblemSolvingPosition7Meaning | null => {

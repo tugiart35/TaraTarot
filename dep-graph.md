@@ -9,6 +9,7 @@
 ## 📊 Dependency Overview
 
 ### 📈 İstatistikler
+
 - **Toplam Import:** 514
 - **Toplam Export:** 613
 - **Client Components:** 88
@@ -20,6 +21,7 @@
 ## 🏗️ Ana Bağımlılık Kümeleri
 
 ### 1. 🎨 UI Components Cluster
+
 ```
 src/features/shared/ui/
 ├── BaseCardRenderer.tsx
@@ -38,6 +40,7 @@ Dependencies:
 ```
 
 ### 2. 🃏 Tarot Engine Cluster
+
 ```
 src/features/tarot/lib/
 ├── a-tarot-helpers.ts
@@ -56,6 +59,7 @@ Dependencies:
 ```
 
 ### 3. 🔐 Authentication Cluster
+
 ```
 src/hooks/useAuth.ts
 src/lib/session-manager.ts
@@ -72,6 +76,7 @@ Dependencies:
 ```
 
 ### 4. 💳 Payment System Cluster
+
 ```
 src/hooks/usePayment.ts
 src/hooks/useShopier.ts
@@ -86,6 +91,7 @@ Dependencies:
 ```
 
 ### 5. 🌐 Internationalization Cluster
+
 ```
 src/i18n/request.ts
 src/lib/i18n/
@@ -105,31 +111,34 @@ Dependencies:
 ## 🔄 Import Patterns
 
 ### External Dependencies
-| Package | Usage Count | Purpose |
-|---------|-------------|---------|
-| `react` | 45 | Core React functionality |
-| `next` | 38 | Next.js framework |
-| `@supabase/supabase-js` | 25 | Database and auth |
-| `tailwindcss` | 15 | Styling |
-| `framer-motion` | 8 | Animations |
-| `react-hook-form` | 12 | Form handling |
-| `zod` | 8 | Validation |
-| `next-intl` | 6 | Internationalization |
+
+| Package                 | Usage Count | Purpose                  |
+| ----------------------- | ----------- | ------------------------ |
+| `react`                 | 45          | Core React functionality |
+| `next`                  | 38          | Next.js framework        |
+| `@supabase/supabase-js` | 25          | Database and auth        |
+| `tailwindcss`           | 15          | Styling                  |
+| `framer-motion`         | 8           | Animations               |
+| `react-hook-form`       | 12          | Form handling            |
+| `zod`                   | 8           | Validation               |
+| `next-intl`             | 6           | Internationalization     |
 
 ### Internal Dependencies
-| Path | Usage Count | Purpose |
-|------|-------------|---------|
-| `@/lib` | 89 | Utilities and configs |
-| `@/features` | 67 | Feature modules |
-| `@/hooks` | 34 | Custom React hooks |
-| `@/components` | 45 | Reusable components |
-| `@/types` | 28 | TypeScript definitions |
+
+| Path           | Usage Count | Purpose                |
+| -------------- | ----------- | ---------------------- |
+| `@/lib`        | 89          | Utilities and configs  |
+| `@/features`   | 67          | Feature modules        |
+| `@/hooks`      | 34          | Custom React hooks     |
+| `@/components` | 45          | Reusable components    |
+| `@/types`      | 28          | TypeScript definitions |
 
 ---
 
 ## ⚠️ Dependency Issues
 
 ### 1. 🔴 Circular Dependencies
+
 ```
 src/lib/security/audit-logger.ts
 ├── imports: @/lib/supabase/client.ts
@@ -141,6 +150,7 @@ src/lib/supabase/client.ts
 ```
 
 ### 2. 🟡 Duplicate Exports
+
 ```typescript
 // Multiple files exporting same names:
 src/lib/security/2fa.ts: TOTPManager, SMS2FAManager, Email2FAManager
@@ -149,6 +159,7 @@ src/lib/mobile/mobile-utils.ts: MobileSecureStorage, MobileSessionManager
 ```
 
 ### 3. 🟠 Unused Imports
+
 ```typescript
 // Common unused imports:
 src/lib/numerology/calculators.ts: normalizeDate, getLetterValue
@@ -161,35 +172,43 @@ src/lib/security/audit-logger.ts: supabase, UserRole
 ## 🏛️ Architecture Layers
 
 ### Layer 1: Presentation (UI Components)
+
 ```
 src/features/shared/ui/
 src/components/
 src/app/[locale]/
 ```
+
 **Dependencies:** React, Tailwind, Framer Motion
 
 ### Layer 2: Business Logic (Features)
+
 ```
 src/features/tarot/
 src/features/numerology/
 src/features/dashboard/
 ```
+
 **Dependencies:** Layer 1 + Custom hooks
 
 ### Layer 3: Data Access (Hooks & Services)
+
 ```
 src/hooks/
 src/lib/supabase/
 src/lib/admin/
 ```
+
 **Dependencies:** Layer 2 + Supabase
 
 ### Layer 4: Infrastructure (Utils & Config)
+
 ```
 src/lib/utils/
 src/lib/config/
 src/lib/constants/
 ```
+
 **Dependencies:** External packages only
 
 ---
@@ -197,6 +216,7 @@ src/lib/constants/
 ## 🔍 Dependency Analysis by Feature
 
 ### Tarot Reading System
+
 ```
 LoveTarot.tsx
 ├── LoveCardRenderer.tsx
@@ -212,6 +232,7 @@ Dependencies:
 ```
 
 ### Numerology System
+
 ```
 NumerologyForm.tsx
 ├── NumerologyResult.tsx
@@ -224,6 +245,7 @@ Dependencies:
 ```
 
 ### Dashboard System
+
 ```
 DashboardPage.tsx
 ├── WelcomeSection.tsx
@@ -243,16 +265,19 @@ Dependencies:
 ## 🚨 Critical Dependency Issues
 
 ### 1. RSC Violations (23 files)
+
 App Router sayfalarında client-side hook kullanımı:
+
 ```typescript
 // ❌ Server Component'te client hook
-'use client' // Missing directive
+'use client'; // Missing directive
 export default function Page() {
   const [state, setState] = useState(); // ❌ Client hook in server component
 }
 ```
 
 ### 2. Type Safety Issues
+
 ```typescript
 // ❌ Unsafe type assertions
 const data = response.data as any;
@@ -260,6 +285,7 @@ const user = session?.user!; // Non-null assertion without check
 ```
 
 ### 3. Missing Error Boundaries
+
 ```typescript
 // ❌ No error handling for async operations
 const result = await supabase.from('table').select();
@@ -270,20 +296,21 @@ const result = await supabase.from('table').select();
 
 ## 📊 Dependency Metrics
 
-| Metric | Value | Status |
-|--------|-------|--------|
-| **Total Dependencies** | 514 imports | ⚠️ High |
-| **Circular Dependencies** | 2 detected | 🔴 Critical |
-| **Duplicate Exports** | 15+ conflicts | 🔴 Critical |
-| **Unused Imports** | 25+ files | 🟡 Warning |
-| **RSC Violations** | 23 files | 🔴 Critical |
-| **Type Safety** | 235 errors | 🔴 Critical |
+| Metric                    | Value         | Status      |
+| ------------------------- | ------------- | ----------- |
+| **Total Dependencies**    | 514 imports   | ⚠️ High     |
+| **Circular Dependencies** | 2 detected    | 🔴 Critical |
+| **Duplicate Exports**     | 15+ conflicts | 🔴 Critical |
+| **Unused Imports**        | 25+ files     | 🟡 Warning  |
+| **RSC Violations**        | 23 files      | 🔴 Critical |
+| **Type Safety**           | 235 errors    | 🔴 Critical |
 
 ---
 
 ## 🎯 Dependency Optimization Recommendations
 
 ### Immediate (Critical)
+
 1. **Fix Circular Dependencies**
    - Refactor audit-logger.ts
    - Separate client/server concerns
@@ -300,6 +327,7 @@ const result = await supabase.from('table').select();
    - Use proper data fetching patterns
 
 ### Short Term (High Priority)
+
 1. **Clean Unused Imports**
    - Remove unused dependencies
    - Optimize bundle size
@@ -316,6 +344,7 @@ const result = await supabase.from('table').select();
    - Implement fallback UI
 
 ### Long Term (Medium Priority)
+
 1. **Dependency Architecture**
    - Implement proper layering
    - Use dependency injection
@@ -336,12 +365,14 @@ const result = await supabase.from('table').select();
 ## 🔧 Dependency Management Tools
 
 ### Recommended Tools
+
 1. **madge** - Circular dependency detection
 2. **depcheck** - Unused dependency detection
 3. **bundle-analyzer** - Bundle size analysis
 4. **type-coverage** - TypeScript coverage
 
 ### Implementation
+
 ```bash
 # Install tools
 npm install -D madge depcheck @next/bundle-analyzer type-coverage
@@ -357,24 +388,28 @@ npx type-coverage
 ## 📋 Action Plan
 
 ### Week 1: Critical Fixes
+
 - [ ] Fix circular dependencies
 - [ ] Resolve duplicate exports
 - [ ] Fix RSC violations
 - [ ] Clean unused imports
 
 ### Week 2: Type Safety
+
 - [ ] Fix TypeScript errors
 - [ ] Add proper type guards
 - [ ] Implement error boundaries
 - [ ] Improve type coverage
 
 ### Week 3: Optimization
+
 - [ ] Optimize bundle size
 - [ ] Implement lazy loading
 - [ ] Add dependency monitoring
 - [ ] Performance testing
 
 ### Week 4: Documentation
+
 - [ ] Document dependency patterns
 - [ ] Create architecture diagrams
 - [ ] Update development guidelines

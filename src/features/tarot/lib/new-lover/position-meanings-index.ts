@@ -50,12 +50,14 @@ export interface NewLoverPositionMeaning {
 export const newLoverPositions = {
   1: {
     title: 'Yeni Bir Sevgili Yaklaşacak mı?',
-    description: 'Yakın gelecekte yeni bir aşk ilişkisi başlayıp başlamayacağını gösterir',
+    description:
+      'Yakın gelecekte yeni bir aşk ilişkisi başlayıp başlamayacağını gösterir',
     question: 'Yakın gelecekte yeni bir sevgiliyle tanışacak mısınız?',
   },
   2: {
     title: 'Bu Kişi Nasıl Biri?',
-    description: 'Yeni sevgilinizin kişilik özelliklerini ve karakterini gösterir',
+    description:
+      'Yeni sevgilinizin kişilik özelliklerini ve karakterini gösterir',
     question: 'Yeni sevgiliniz nasıl bir kişilik olacak?',
   },
   3: {
@@ -84,7 +86,10 @@ export const newLoverPositions = {
  * Yeni Bir Sevgili açılımı pozisyon anlamları
  * Her pozisyon için kart anlamlarını içerir
  */
-export const NEW_LOVER_POSITION_MEANINGS: Record<string, NewLoverPositionMeaning[]> = {
+export const NEW_LOVER_POSITION_MEANINGS: Record<
+  string,
+  NewLoverPositionMeaning[]
+> = {
   '1': position1Meanings,
   '2': position2Meanings,
   '3': position3Meanings,
@@ -112,12 +117,13 @@ export function getNewLoverMeaningByCardAndPosition(
 
   // Kart ismi mapping'ini al
   const cardNameMapping = getCardNameMappingSync();
-  
+
   // Kart ismini İngilizce'ye çevir
   const englishCardName = cardNameMapping[card.nameTr] || card.nameTr;
 
   // Pozisyon özel anlamları kontrol et
-  const positionMeanings = NEW_LOVER_POSITION_MEANINGS[position.toString()] || [];
+  const positionMeanings =
+    NEW_LOVER_POSITION_MEANINGS[position.toString()] || [];
   const positionMeaning = positionMeanings.find(
     meaning => meaning.card === englishCardName
   );
@@ -153,7 +159,7 @@ export function getNewLoverMeaningByCardAndPosition(
     upright: isReversed ? baseMeaning.reversed : baseMeaning.upright,
     reversed: isReversed ? baseMeaning.upright : baseMeaning.reversed,
   };
-  
+
   return fallbackResult;
 }
 
@@ -186,7 +192,9 @@ function getCardGroup(
 /**
  * Yeni Bir Sevgili açılımı pozisyon anlamlarını al
  */
-export function getNewLoverPositionMeanings(position: number): NewLoverPositionMeaning[] {
+export function getNewLoverPositionMeanings(
+  position: number
+): NewLoverPositionMeaning[] {
   return NEW_LOVER_POSITION_MEANINGS[position.toString()] || [];
 }
 
@@ -229,9 +237,7 @@ export function getAllNewLoverMeanings(): Record<
 
 // Pozisyon bilgilerini alma fonksiyonu
 export const getPositionInfo = (position: number) => {
-  return newLoverPositions[
-    position as keyof typeof newLoverPositions
-  ];
+  return newLoverPositions[position as keyof typeof newLoverPositions];
 };
 
 // Tüm pozisyonları alma fonksiyonu
@@ -263,18 +269,21 @@ export const getNewLoverMeaningByCardNameAndPosition = (
     number: 0,
     meaning: {
       upright: 'Temel anlam',
-      reversed: 'Ters anlam'
+      reversed: 'Ters anlam',
     },
     meaningTr: {
       upright: 'Temel anlam',
-      reversed: 'Ters anlam'
+      reversed: 'Ters anlam',
     },
     keywords: [],
     keywordsTr: [],
-    image: ''
+    image: '',
   };
 
-  return getNewLoverMeaningByCardAndPosition(mockCard, position, isReversed) || undefined;
+  return (
+    getNewLoverMeaningByCardAndPosition(mockCard, position, isReversed) ||
+    undefined
+  );
 };
 
 // Kart gruplarına göre filtreleme fonksiyonu
@@ -298,9 +307,10 @@ export const getNewLoverMeaningsByPositionAndGroup = (
 export const searchNewLoverMeaningsByCardName = (
   cardName: string
 ): NewLoverPositionMeaning[] => {
-  return allNewLoverPositionMeanings.filter(meaning =>
-    meaning.cardName?.toLowerCase().includes(cardName.toLowerCase()) ||
-    meaning.card.toLowerCase().includes(cardName.toLowerCase())
+  return allNewLoverPositionMeanings.filter(
+    meaning =>
+      meaning.cardName?.toLowerCase().includes(cardName.toLowerCase()) ||
+      meaning.card.toLowerCase().includes(cardName.toLowerCase())
   );
 };
 
@@ -308,12 +318,13 @@ export const searchNewLoverMeaningsByCardName = (
 export const searchNewLoverMeaningsByKeyword = (
   keyword: string
 ): NewLoverPositionMeaning[] => {
-  return allNewLoverPositionMeanings.filter(meaning =>
-    meaning.keywords.some(kw =>
-      kw.toLowerCase().includes(keyword.toLowerCase())
-    ) ||
-    meaning.upright.toLowerCase().includes(keyword.toLowerCase()) ||
-    meaning.reversed.toLowerCase().includes(keyword.toLowerCase())
+  return allNewLoverPositionMeanings.filter(
+    meaning =>
+      meaning.keywords.some(kw =>
+        kw.toLowerCase().includes(keyword.toLowerCase())
+      ) ||
+      meaning.upright.toLowerCase().includes(keyword.toLowerCase()) ||
+      meaning.reversed.toLowerCase().includes(keyword.toLowerCase())
   );
 };
 
@@ -327,10 +338,12 @@ export const getNewLoverStatistics = () => {
     'Majör Arkana': allNewLoverPositionMeanings.filter(
       m => m.group === 'Majör Arkana'
     ).length,
-    Kupalar: allNewLoverPositionMeanings.filter(m => m.group === 'Kupalar').length,
+    Kupalar: allNewLoverPositionMeanings.filter(m => m.group === 'Kupalar')
+      .length,
     Kılıçlar: allNewLoverPositionMeanings.filter(m => m.group === 'Kılıçlar')
       .length,
-    Asalar: allNewLoverPositionMeanings.filter(m => m.group === 'Asalar').length,
+    Asalar: allNewLoverPositionMeanings.filter(m => m.group === 'Asalar')
+      .length,
     Tılsımlar: allNewLoverPositionMeanings.filter(m => m.group === 'Tılsımlar')
       .length,
   };
@@ -362,12 +375,20 @@ const newLoverExports = {
   searchNewLoverMeaningsByKeyword,
   getNewLoverStatistics,
   // Eski fonksiyonlar (geriye uyumluluk için)
-  getNewLoverCardMeaning: (card: TarotCard | null, position: number, isReversed: boolean) => {
+  getNewLoverCardMeaning: (
+    card: TarotCard | null,
+    position: number,
+    isReversed: boolean
+  ) => {
     if (!card) {
       return '';
     }
-    
-    const meaning = getNewLoverMeaningByCardAndPosition(card, position, isReversed);
+
+    const meaning = getNewLoverMeaningByCardAndPosition(
+      card,
+      position,
+      isReversed
+    );
     return meaning ? (isReversed ? meaning.reversed : meaning.upright) : '';
   },
 };

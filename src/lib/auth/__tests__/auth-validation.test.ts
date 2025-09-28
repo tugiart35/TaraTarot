@@ -1,17 +1,17 @@
 /*
  * Auth Validation Tests
- * 
+ *
  * Bu dosya auth validation schemas için unit testleri içerir.
  * Jest kullanır.
  */
 
-import { 
-  loginSchema, 
-  registerSchema, 
+import {
+  loginSchema,
+  registerSchema,
   passwordResetSchema,
   validatePasswordStrength,
   validateEmail,
-  validateAge
+  validateAge,
 } from '../auth-validation';
 
 describe('Auth Validation', () => {
@@ -36,7 +36,9 @@ describe('Auth Validation', () => {
       const result = loginSchema.safeParse(invalidData);
       expect(result.success).toBe(false);
       if (!result.success) {
-        expect(result.error.issues[0].message).toBe('Geçerli bir e-posta adresi girin');
+        expect(result.error.issues[0].message).toBe(
+          'Geçerli bir e-posta adresi girin'
+        );
       }
     });
 
@@ -49,7 +51,9 @@ describe('Auth Validation', () => {
       const result = loginSchema.safeParse(invalidData);
       expect(result.success).toBe(false);
       if (!result.success) {
-        expect(result.error.issues[0].message).toBe('Şifre en az 6 karakter olmalı');
+        expect(result.error.issues[0].message).toBe(
+          'Şifre en az 6 karakter olmalı'
+        );
       }
     });
   });
@@ -102,7 +106,9 @@ describe('Auth Validation', () => {
       const result = registerSchema.safeParse(invalidData);
       expect(result.success).toBe(false);
       if (!result.success) {
-        expect(result.error.issues[0].message).toBe('Ad en az 2 karakter olmalı');
+        expect(result.error.issues[0].message).toBe(
+          'Ad en az 2 karakter olmalı'
+        );
       }
     });
 
@@ -120,7 +126,9 @@ describe('Auth Validation', () => {
       const result = registerSchema.safeParse(invalidData);
       expect(result.success).toBe(false);
       if (!result.success) {
-        expect(result.error.issues[0].message).toBe('En az 13 yaşında olmalısınız');
+        expect(result.error.issues[0].message).toBe(
+          'En az 13 yaşında olmalısınız'
+        );
       }
     });
   });
@@ -148,42 +156,42 @@ describe('Auth Validation', () => {
   describe('validatePasswordStrength', () => {
     it('should validate strong password', () => {
       const result = validatePasswordStrength('Password123!');
-      
+
       expect(result.isValid).toBe(true);
       expect(result.errors).toHaveLength(0);
     });
 
     it('should reject password without uppercase', () => {
       const result = validatePasswordStrength('password123!');
-      
+
       expect(result.isValid).toBe(false);
       expect(result.errors).toContain('Şifre en az bir büyük harf içermeli');
     });
 
     it('should reject password without lowercase', () => {
       const result = validatePasswordStrength('PASSWORD123!');
-      
+
       expect(result.isValid).toBe(false);
       expect(result.errors).toContain('Şifre en az bir küçük harf içermeli');
     });
 
     it('should reject password without numbers', () => {
       const result = validatePasswordStrength('Password!');
-      
+
       expect(result.isValid).toBe(false);
       expect(result.errors).toContain('Şifre en az bir rakam içermeli');
     });
 
     it('should reject password without special characters', () => {
       const result = validatePasswordStrength('Password123');
-      
+
       expect(result.isValid).toBe(false);
       expect(result.errors).toContain('Şifre en az bir özel karakter içermeli');
     });
 
     it('should reject short password', () => {
       const result = validatePasswordStrength('Pass1!');
-      
+
       expect(result.isValid).toBe(false);
       expect(result.errors).toContain('Şifre en az 8 karakter olmalı');
     });
@@ -209,7 +217,7 @@ describe('Auth Validation', () => {
     it('should validate correct age', () => {
       const birthDate = '1990-01-01';
       const result = validateAge(birthDate);
-      
+
       expect(result.isValid).toBe(true);
       expect(result.age).toBeGreaterThan(13);
     });
@@ -217,7 +225,7 @@ describe('Auth Validation', () => {
     it('should reject underage user', () => {
       const birthDate = '2020-01-01';
       const result = validateAge(birthDate);
-      
+
       expect(result.isValid).toBe(false);
       expect(result.error).toBe('En az 13 yaşında olmalısınız');
     });
@@ -225,7 +233,7 @@ describe('Auth Validation', () => {
     it('should reject unrealistic age', () => {
       const birthDate = '1800-01-01';
       const result = validateAge(birthDate);
-      
+
       expect(result.isValid).toBe(false);
       expect(result.error).toBe('Geçerli bir yaş girin');
     });

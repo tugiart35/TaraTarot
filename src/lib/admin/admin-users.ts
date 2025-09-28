@@ -394,10 +394,14 @@ export class AdminUserManager {
       const {
         data: { user },
       } = await supabase.auth.getUser();
-      if (!user) return false;
+      if (!user) {
+        return false;
+      }
 
       const adminUser = await this.getAdminUserById(user.id);
-      if (!adminUser) return false;
+      if (!adminUser) {
+        return false;
+      }
 
       return adminUser.permissions[permission] === true;
     } catch (error) {
@@ -412,10 +416,14 @@ export class AdminUserManager {
       const {
         data: { user },
       } = await supabase.auth.getUser();
-      if (!user) return false;
+      if (!user) {
+        return false;
+      }
 
       const adminUser = await this.getAdminUserById(user.id);
-      if (!adminUser) return false;
+      if (!adminUser) {
+        return false;
+      }
 
       return adminUser.role === role;
     } catch (error) {
@@ -430,7 +438,9 @@ export class AdminUserManager {
       const {
         data: { user },
       } = await supabase.auth.getUser();
-      if (!user) return null;
+      if (!user) {
+        return null;
+      }
 
       return await this.getAdminUserById(user.id);
     } catch (error) {

@@ -67,7 +67,7 @@ export async function GET(request: NextRequest) {
 
     try {
       let error;
-      
+
       if (token_hash && type) {
         // PKCE flow - email confirmation için
         const result = await supabase.auth.verifyOtp({
@@ -80,17 +80,21 @@ export async function GET(request: NextRequest) {
         const result = await supabase.auth.exchangeCodeForSession(code);
         error = result.error;
       }
-      
+
       if (!error) {
         // Kullanıcı bilgilerini al
-        const { data: { user } } = await supabase.auth.getUser();
-        
+        const {
+          data: { user },
+        } = await supabase.auth.getUser();
+
         if (user) {
           // Profile kontrolü ve oluşturma
           try {
-            const { ensureProfileExists } = await import('@/lib/utils/profile-utils');
+            const { ensureProfileExists } = await import(
+              '@/lib/utils/profile-utils'
+            );
             const profileResult = await ensureProfileExists(user);
-            
+
             if (!profileResult.success) {
               console.warn('Profile kontrolü başarısız:', profileResult.error);
               // Profile sorunu giriş işlemini etkilemez
@@ -99,14 +103,17 @@ export async function GET(request: NextRequest) {
             console.warn('Profile kontrol hatası:', profileError);
             // Profile hatası giriş işlemini etkilemez
           }
-          
+
           // Admin kontrolü yap
           const isUserAdmin = await AdminDetectionService.isUserAdmin(user.id);
           AdminDetectionService.logAdminAccess(user.id, isUserAdmin);
-          
+
           // Yönlendirme kararı
-          const redirectPath = AdminDetectionService.getRedirectPath(isUserAdmin, locale);
-          
+          const redirectPath = AdminDetectionService.getRedirectPath(
+            isUserAdmin,
+            locale
+          );
+
           // Başarılı giriş - admin durumuna göre yönlendir
           return RedirectUtils.createRedirectResponse(request, redirectPath);
         } else {
@@ -120,5 +127,8 @@ export async function GET(request: NextRequest) {
   }
 
   // Hata durumunda auth sayfasına yönlendir
-  return AuthErrorService.handleCallbackError(new Error('No code provided'), locale);
+  return AuthErrorService.handleCallbackError(
+    new Error('No code provided'),
+    locale
+  );
 }

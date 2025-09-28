@@ -38,7 +38,8 @@ export const position2Meanings: SituationAnalysisPositionMeaning[] = [
     reversed:
       'Ters Joker, şu anki durumunuzda dikkatsizlik, plansızlık veya gereksiz risk alma eğilimini simgeler. Belki de yönünüzü tam olarak bulamıyor, kararlarınızı aceleyle veriyor olabilirsiniz. Bu durum, hata yapma olasılığını artırıyor.\n\nKart, aynı zamanda yeni bir başlangıçtan korktuğunuzu veya adım atmakta tereddüt ettiğinizi de gösterebilir.',
     keywords: ['başlangıç', 'özgürlük', 'risk', 'merak', 'şimdi'],
-    context: 'Şu anki durumunuzda yeni başlangıçlara açıklık veya dikkatsizlik enerjisi.',
+    context:
+      'Şu anki durumunuzda yeni başlangıçlara açıklık veya dikkatsizlik enerjisi.',
     group: 'Majör Arkana',
   },
   {
@@ -151,7 +152,7 @@ export const position2Meanings: SituationAnalysisPositionMeaning[] = [
   },
   {
     id: 'wheel_of_fortune_sa_pos2',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 2,
     upright:
       'Kader Çarkı, şu anda hayatınızda önemli bir değişim, şans döngüsü ya da beklenmedik fırsatlar yaşanabileceğini gösterir. Şu an değişim enerjisi yoğun.\n\nBu kart, şu an kaderin size sunduğu fırsatlara uyum sağlamanın önemini hatırlatır.',
@@ -218,7 +219,8 @@ export const position2Meanings: SituationAnalysisPositionMeaning[] = [
     reversed:
       'Ters Şeytan, şu an bağımlılıklardan kurtulma çabasında olduğunuzu ya da özgürleşme yolunda adımlar attığınızı simgeler. Zincirleri kırma enerjisi güçlüdür.\n\nBu kart, şu an bağımlılıklardan uzaklaşmanız için fırsat olduğunu hatırlatır.',
     keywords: ['bağımlılık', 'arzu', 'kontrol', 'özgürlük', 'şimdi'],
-    context: 'Şu anki durumda bağımlılıkların veya özgürleşme sürecinin etkisi.',
+    context:
+      'Şu anki durumda bağımlılıkların veya özgürleşme sürecinin etkisi.',
     group: 'Majör Arkana',
   },
   {
@@ -907,7 +909,13 @@ export const position2Meanings: SituationAnalysisPositionMeaning[] = [
       'Dokuz Kılıç, şu an kaygı, gece düşünceleri ve felaket senaryolarının zihni meşgul ettiğini gösterir. Uykusuzluk netliği gölgeler.\n\nKaygıyı kâğıda dökmek ve kanıt aramak döngüyü zayıflatır.',
     reversed:
       'Ters Dokuz Kılıç, kabusun sabahında gerçekliğin daha taşınabilir göründüğünü işaret eder. Yine de tetiklenmeler olabilir.\n\nNefes, beden regülasyonu ve küçük başarıların kaydı denge getirir.',
-    keywords: ['kaygı', 'uykusuzluk', 'felaketleştirme', 'regülasyon', 'gerçeklik testi'],
+    keywords: [
+      'kaygı',
+      'uykusuzluk',
+      'felaketleştirme',
+      'regülasyon',
+      'gerçeklik testi',
+    ],
     context: 'Şu anki ihtiyaç: kaygı hijyeni ve ritim.',
     group: 'Kılıçlar',
   },
@@ -919,7 +927,13 @@ export const position2Meanings: SituationAnalysisPositionMeaning[] = [
       'On Kılıç, şu an bir döngünün fiilen bittiğini ve teslimiyetin kapıda olduğunu gösterir. En dipten sonra yön yalnızca yukarıdır.\n\nBitişi onurlandırmak, yeniye yer açar.',
     reversed:
       'Ters On Kılıç, toparlanma ve hikâyeyi yeniden çerçeveleme sürecinin başladığını söyler. Eski acıya dönük bakış açısını değiştirmek iyileşmeyi hızlandırır.\n\nKüçük ileri anlaşmalar, tazelenmiş güç yaratır.',
-    keywords: ['bitiş', 'teslim', 'yeniden doğuş', 'iyileşme', 'yeniden çerçeve'],
+    keywords: [
+      'bitiş',
+      'teslim',
+      'yeniden doğuş',
+      'iyileşme',
+      'yeniden çerçeve',
+    ],
     context: 'Şu anki eşik: kapanışın kabulü, başlangıcın kıvılcımı.',
     group: 'Kılıçlar',
   },
@@ -977,9 +991,7 @@ export const position2Meanings: SituationAnalysisPositionMeaning[] = [
 export const getPosition2Meaning = (
   cardName: string
 ): SituationAnalysisPositionMeaning | undefined => {
-  return position2Meanings.find(
-    meaning => meaning.card === cardName
-  );
+  return position2Meanings.find(meaning => meaning.card === cardName);
 };
 
 // Ana index dosyası için uyumluluk fonksiyonu
@@ -1004,9 +1016,10 @@ export const getSituationAnalysisPosition2MeaningByCardName = (
 };
 
 // Tüm pozisyon 2 anlamlarını alma fonksiyonu
-export const getAllPosition2Meanings = (): SituationAnalysisPositionMeaning[] => {
-  return position2Meanings;
-};
+export const getAllPosition2Meanings =
+  (): SituationAnalysisPositionMeaning[] => {
+    return position2Meanings;
+  };
 
 // Pozisyon 2 anlamlarını filtreleme fonksiyonu
 export const getPosition2MeaningsByGroup = (

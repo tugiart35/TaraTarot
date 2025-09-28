@@ -23,6 +23,7 @@
 **Dosya:** `src/features/tarot/components/shared/forms/TarotFormModal.tsx`
 
 #### Props Interface
+
 ```typescript
 interface TarotFormModalProps {
   isOpen: boolean;
@@ -35,6 +36,7 @@ interface TarotFormModalProps {
 ```
 
 #### FormData Interface
+
 ```typescript
 interface FormData {
   name: string;
@@ -44,6 +46,7 @@ interface FormData {
 ```
 
 #### Kullanım Örneği
+
 ```tsx
 <TarotFormModal
   isOpen={showForm}
@@ -56,6 +59,7 @@ interface FormData {
 ```
 
 #### Tema Konfigürasyonu
+
 ```typescript
 const loveFormTheme: FormTheme = {
   primary: 'pink',
@@ -66,7 +70,7 @@ const loveFormTheme: FormTheme = {
   border: 'gray-200',
   focus: 'pink-500',
   error: 'red-500',
-  success: 'green-500'
+  success: 'green-500',
 };
 ```
 
@@ -77,6 +81,7 @@ const loveFormTheme: FormTheme = {
 **Dosya:** `src/features/tarot/components/shared/modals/CreditConfirmModal.tsx`
 
 #### Props Interface
+
 ```typescript
 interface CreditConfirmModalProps {
   isOpen: boolean;
@@ -90,6 +95,7 @@ interface CreditConfirmModalProps {
 ```
 
 #### Kullanım Örneği
+
 ```tsx
 <CreditConfirmModal
   isOpen={showCreditModal}
@@ -103,6 +109,7 @@ interface CreditConfirmModalProps {
 ```
 
 #### Tema Konfigürasyonu
+
 ```typescript
 const loveModalTheme: ModalTheme = {
   primary: 'pink',
@@ -114,8 +121,8 @@ const loveModalTheme: ModalTheme = {
   button: {
     primary: 'pink-500',
     secondary: 'gray-500',
-    hover: 'pink-600'
-  }
+    hover: 'pink-600',
+  },
 };
 ```
 
@@ -126,6 +133,7 @@ const loveModalTheme: ModalTheme = {
 **Dosya:** `src/features/tarot/components/shared/modals/SuccessModal.tsx`
 
 #### Props Interface
+
 ```typescript
 interface SuccessModalProps {
   isOpen: boolean;
@@ -138,6 +146,7 @@ interface SuccessModalProps {
 ```
 
 #### Kullanım Örneği
+
 ```tsx
 <SuccessModal
   isOpen={showSuccessModal}
@@ -150,6 +159,7 @@ interface SuccessModalProps {
 ```
 
 #### Tema Konfigürasyonu
+
 ```typescript
 const loveSuccessTheme: SuccessModalTheme = {
   primary: 'pink',
@@ -162,8 +172,8 @@ const loveSuccessTheme: SuccessModalTheme = {
   button: {
     primary: 'pink-500',
     secondary: 'gray-500',
-    hover: 'pink-600'
-  }
+    hover: 'pink-600',
+  },
 };
 ```
 
@@ -174,6 +184,7 @@ const loveSuccessTheme: SuccessModalTheme = {
 **Dosya:** `src/features/tarot/components/shared/layouts/TarotReadingLayout.tsx`
 
 #### Props Interface
+
 ```typescript
 interface TarotReadingLayoutProps {
   theme: LayoutTheme;
@@ -186,6 +197,7 @@ interface TarotReadingLayoutProps {
 ```
 
 #### Kullanım Örneği
+
 ```tsx
 <TarotReadingLayout
   theme={loveLayoutTheme}
@@ -198,6 +210,7 @@ interface TarotReadingLayoutProps {
 ```
 
 #### Tema Konfigürasyonu
+
 ```typescript
 const loveLayoutTheme: LayoutTheme = {
   primary: 'pink',
@@ -206,17 +219,17 @@ const loveLayoutTheme: LayoutTheme = {
   header: {
     background: 'white',
     border: 'gray-200',
-    text: 'gray-900'
+    text: 'gray-900',
   },
   content: {
     background: 'transparent',
-    padding: '2rem'
+    padding: '2rem',
   },
   footer: {
     background: 'white',
     border: 'gray-200',
-    text: 'gray-600'
-  }
+    text: 'gray-600',
+  },
 };
 ```
 
@@ -227,6 +240,7 @@ const loveLayoutTheme: LayoutTheme = {
 **Dosya:** `src/features/tarot/components/shared/utils/TarotReadingSaver.tsx`
 
 #### Props Interface
+
 ```typescript
 interface TarotReadingSaverProps {
   reading: TarotReading;
@@ -238,6 +252,7 @@ interface TarotReadingSaverProps {
 ```
 
 #### TarotReading Interface
+
 ```typescript
 interface TarotReading {
   id: string;
@@ -251,6 +266,7 @@ interface TarotReading {
 ```
 
 #### Kullanım Örneği
+
 ```tsx
 <TarotReadingSaver
   reading={readingData}
@@ -268,6 +284,7 @@ interface TarotReading {
 ### Tema Tipleri
 
 #### FormTheme
+
 ```typescript
 interface FormTheme {
   primary: string;
@@ -283,6 +300,7 @@ interface FormTheme {
 ```
 
 #### ModalTheme
+
 ```typescript
 interface ModalTheme {
   primary: string;
@@ -300,6 +318,7 @@ interface ModalTheme {
 ```
 
 #### SuccessModalTheme
+
 ```typescript
 interface SuccessModalTheme extends ModalTheme {
   success: string;
@@ -307,6 +326,7 @@ interface SuccessModalTheme extends ModalTheme {
 ```
 
 #### LayoutTheme
+
 ```typescript
 interface LayoutTheme {
   primary: string;
@@ -332,6 +352,7 @@ interface LayoutTheme {
 ### Önceden Tanımlı Temalar
 
 #### Love Theme (Pink/Purple)
+
 ```typescript
 const loveFormTheme: FormTheme = {
   primary: 'pink',
@@ -342,11 +363,12 @@ const loveFormTheme: FormTheme = {
   border: 'gray-200',
   focus: 'pink-500',
   error: 'red-500',
-  success: 'green-500'
+  success: 'green-500',
 };
 ```
 
 #### Career Theme (Blue/Gray)
+
 ```typescript
 const careerFormTheme: FormTheme = {
   primary: 'blue',
@@ -357,11 +379,12 @@ const careerFormTheme: FormTheme = {
   border: 'gray-200',
   focus: 'blue-500',
   error: 'red-500',
-  success: 'green-500'
+  success: 'green-500',
 };
 ```
 
 #### General Theme (Green/Teal)
+
 ```typescript
 const generalFormTheme: FormTheme = {
   primary: 'green',
@@ -372,7 +395,7 @@ const generalFormTheme: FormTheme = {
   border: 'gray-200',
   focus: 'green-500',
   error: 'red-500',
-  success: 'green-500'
+  success: 'green-500',
 };
 ```
 
@@ -393,7 +416,7 @@ const newSpreadFormTheme: FormTheme = {
   border: 'gray-200',
   focus: 'purple-500',
   error: 'red-500',
-  success: 'green-500'
+  success: 'green-500',
 };
 
 // 2. Ana bileşen
@@ -410,7 +433,7 @@ const NewSpreadReading = () => {
         onSubmit={handleFormSubmit}
         theme={newSpreadFormTheme}
       />
-      
+
       <CreditConfirmModal
         isOpen={showCreditModal}
         onClose={() => setShowCreditModal(false)}
@@ -418,14 +441,14 @@ const NewSpreadReading = () => {
         creditCost={NEW_SPREAD_CREDIT_COST}
         theme={newSpreadModalTheme}
       />
-      
+
       <SuccessModal
         isOpen={showSuccessModal}
         onClose={() => setShowSuccessModal(false)}
         onNewReading={() => handleNewReading()}
         theme={newSpreadSuccessTheme}
       />
-      
+
       {/* Özel içerik */}
       <div className="new-spread-content">
         {/* Yeni açılım özel bileşenleri */}
@@ -458,16 +481,18 @@ const customThemeWithCSS: FormTheme = {
 ## 🏆 Best Practices
 
 ### 1. Tema Kullanımı
+
 - Her açılım türü için uygun tema seç
 - Tutarlı renk paleti kullan
 - Accessibility standartlarına uy
 
 ### 2. Error Handling
+
 ```tsx
 // Error boundary kullan
 <ErrorBoundary fallback={<ErrorFallback />}>
   <TarotFormModal {...props} />
-</ErrorBoundary>
+</ErrorBoundary>;
 
 // Try-catch ile error yakalama
 try {
@@ -478,18 +503,19 @@ try {
 ```
 
 ### 3. Loading States
+
 ```tsx
 // Loading state göster
-<TarotFormModal
-  {...props}
-  loading={isSubmitting}
-/>
+<TarotFormModal {...props} loading={isSubmitting} />;
 
 // Skeleton loader kullan
-{isLoading ? <SkeletonLoader /> : <Content />}
+{
+  isLoading ? <SkeletonLoader /> : <Content />;
+}
 ```
 
 ### 4. Responsive Design
+
 ```tsx
 // Mobile-first yaklaşım
 <div className="w-full md:w-1/2 lg:w-1/3">
@@ -498,13 +524,10 @@ try {
 ```
 
 ### 5. Accessibility
+
 ```tsx
 // ARIA labels ekle
-<TarotFormModal
-  {...props}
-  aria-label="Tarot reading form"
-  role="dialog"
-/>
+<TarotFormModal {...props} aria-label="Tarot reading form" role="dialog" />
 ```
 
 ---
@@ -512,6 +535,7 @@ try {
 ## 🧪 Testing
 
 ### Unit Test Örneği
+
 ```typescript
 import { render, screen, fireEvent } from '@testing-library/react';
 import { TarotFormModal } from './TarotFormModal';
@@ -526,7 +550,7 @@ describe('TarotFormModal', () => {
         theme={loveFormTheme}
       />
     );
-    
+
     expect(screen.getByLabelText('Ad Soyad')).toBeInTheDocument();
   });
 
@@ -540,7 +564,7 @@ describe('TarotFormModal', () => {
         theme={loveFormTheme}
       />
     );
-    
+
     fireEvent.click(screen.getByText('Okumaya Başla'));
     expect(mockSubmit).toHaveBeenCalled();
   });

@@ -1,13 +1,15 @@
 # Dashboard Modüler Yapısı
 
-Bu dosya, dashboard sayfasının modüler yapısını ve her dosyanın işlevini açıklar.
+Bu dosya, dashboard sayfasının modüler yapısını ve her dosyanın işlevini
+açıklar.
 
 ## 📁 Ana Dashboard Sayfası
 
 ### `page.tsx` (210 satır)
+
 - **İşlevi**: Ana dashboard sayfasının bileşeni
 - **Açıklama**: Modüler yapıda organize edilmiş dashboard sayfası
-- **Özellikler**: 
+- **Özellikler**:
   - Custom hook'lar ile veri yönetimi
   - Modüler UI bileşenleri
   - Loading state kontrolü
@@ -16,6 +18,7 @@ Bu dosya, dashboard sayfasının modüler yapısını ve her dosyanın işlevini
 ## 🧩 Dashboard Bileşenleri (`src/components/dashboard/`)
 
 ### `NavigationHeader.tsx`
+
 - **İşlevi**: Üst navigasyon çubuğu bileşeni
 - **Açıklama**: Logo, menü linkleri ve mobil sidebar kontrolü
 - **Özellikler**:
@@ -24,6 +27,7 @@ Bu dosya, dashboard sayfasının modüler yapısını ve her dosyanın işlevini
   - Sidebar açma/kapama
 
 ### `WelcomeSection.tsx`
+
 - **İşlevi**: Hoş geldin bölümü bileşeni
 - **Açıklama**: Kullanıcı profil bilgilerini gösterir
 - **Özellikler**:
@@ -33,6 +37,7 @@ Bu dosya, dashboard sayfasının modüler yapısını ve her dosyanın işlevini
   - Admin etiketi
 
 ### `StatsCards.tsx`
+
 - **İşlevi**: İstatistik kartları bileşeni
 - **Açıklama**: Kullanıcı istatistiklerini gösterir
 - **Özellikler**:
@@ -43,6 +48,7 @@ Bu dosya, dashboard sayfasının modüler yapısını ve her dosyanın işlevini
   - Kredi yenileme butonu
 
 ### `CreditPackages.tsx`
+
 - **İşlevi**: Kredi paketleri bileşeni
 - **Açıklama**: Satın alınabilir kredi paketlerini gösterir
 - **Özellikler**:
@@ -52,6 +58,7 @@ Bu dosya, dashboard sayfasının modüler yapısını ve her dosyanın işlevini
   - Satın alma butonları
 
 ### `ProfileManagement.tsx`
+
 - **İşlevi**: Profil yönetimi bileşeni
 - **Açıklama**: Profil yönetimi kartlarını gösterir
 - **Özellikler**:
@@ -61,6 +68,7 @@ Bu dosya, dashboard sayfasının modüler yapısını ve her dosyanın işlevini
   - Hover efektleri
 
 ### `RecentActivity.tsx`
+
 - **İşlevi**: Son aktiviteler bileşeni
 - **Açıklama**: Son okumalar ve hızlı istatistikleri gösterir
 - **Özellikler**:
@@ -72,6 +80,7 @@ Bu dosya, dashboard sayfasının modüler yapısını ve her dosyanın işlevini
 ## 🎣 Custom Hook'lar (`src/hooks/`)
 
 ### `useDashboardData.ts`
+
 - **İşlevi**: Dashboard veri yönetimi hook'u
 - **Açıklama**: Tüm dashboard verilerini yönetir
 - **Özellikler**:
@@ -83,6 +92,7 @@ Bu dosya, dashboard sayfasının modüler yapısını ve her dosyanın işlevini
   - Event listener'lar
 
 ### `useDashboardActions.ts`
+
 - **İşlevi**: Dashboard aksiyonları hook'u
 - **Açıklama**: Dashboard'daki tüm aksiyonları yönetir
 - **Özellikler**:
@@ -95,6 +105,7 @@ Bu dosya, dashboard sayfasının modüler yapısını ve her dosyanın işlevini
 ## 📋 Tip Tanımlamaları (`src/types/`)
 
 ### `dashboard.types.ts`
+
 - **İşlevi**: Dashboard için TypeScript tip tanımlamaları
 - **Açıklama**: Tüm dashboard veri yapılarını tanımlar
 - **İçerik**:
@@ -107,6 +118,7 @@ Bu dosya, dashboard sayfasının modüler yapısını ve her dosyanın işlevini
 ## 🔧 Utility Fonksiyonları (`src/utils/`)
 
 ### `dashboard-utils.ts`
+
 - **İşlevi**: Dashboard utility fonksiyonları
 - **Açıklama**: Dashboard'da kullanılan yardımcı fonksiyonlar
 - **Fonksiyonlar**:
@@ -121,38 +133,46 @@ Bu dosya, dashboard sayfasının modüler yapısını ve her dosyanın işlevini
 ## 📄 Alt Sayfalar
 
 ### `readings/page.tsx`
+
 - **İşlevi**: Okumalar listesi sayfası
 - **Açıklama**: Kullanıcının tüm okumalarını gösterir
 
 ### `statistics/page.tsx`
+
 - **İşlevi**: İstatistikler sayfası
 - **Açıklama**: Detaylı kullanıcı istatistiklerini gösterir
 
 ### `settings/page.tsx`
+
 - **İşlevi**: Ayarlar sayfası
 - **Açıklama**: Kullanıcı ayarlarını yönetir
 
 ### `credits/page.tsx`
+
 - **İşlevi**: Kredi geçmişi sayfası
 - **Açıklama**: Kredi işlemlerini gösterir
 
 ### `packages/page.tsx`
+
 - **İşlevi**: Kredi paketleri sayfası
 - **Açıklama**: Tüm kredi paketlerini gösterir
 
 ## 🔗 Bağlantılı Dosyalar
 
 ### Shared Bileşenler
+
 - `@/features/shared/layout/BottomNavigation` - Alt navigasyon
 - `@/features/shared/ui/ReadingDetailModal` - Okuma detay modal'ı
 - `@/features/dashboard/components/shared/ProfileModal` - Profil modal'ı
 
 ### Hook'lar
+
 - `@/hooks/useAuth` - Authentication hook'u
 - `@/hooks/useTranslations` - Çeviri hook'u
 - `@/hooks/useShopier` - Ödeme hook'u
 
 ### Sabitler
+
 - `@/lib/constants/reading-credits` - Kredi sabitleri
 - `@/lib/utils/profile-utils` - Profil utility fonksiyonları
 

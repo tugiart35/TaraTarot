@@ -54,7 +54,8 @@ export interface MoneyPositionMeaning {
 export const moneyPositions = {
   1: {
     title: 'Mevcut Finansal Durum',
-    description: 'Şu anki finansal durumunuz ve para konusundaki mevcut durumunuz',
+    description:
+      'Şu anki finansal durumunuz ve para konusundaki mevcut durumunuz',
     question: 'Şu anda finansal durumunuz nasıl?',
   },
   2: {
@@ -136,7 +137,7 @@ export function getMoneyMeaningByCardAndPosition(
 
   // Kart ismi mapping'ini al
   const cardNameMapping = getCardNameMappingSync();
-  
+
   // Kart ismini İngilizce'ye çevir
   const englishCardName = cardNameMapping[card.nameTr] || card.nameTr;
 
@@ -177,8 +178,11 @@ export function getMoneyMeaningByCardAndPosition(
     upright: isReversed ? baseMeaning.reversed : baseMeaning.upright,
     reversed: isReversed ? baseMeaning.upright : baseMeaning.reversed,
   };
-  
-  console.log('⚠️ Returning fallback meaning:', fallbackResult.upright.substring(0, 50) + '...');
+
+  console.log(
+    '⚠️ Returning fallback meaning:',
+    fallbackResult.upright.substring(0, 50) + '...'
+  );
   return fallbackResult;
 }
 
@@ -211,7 +215,9 @@ function getCardGroup(
 /**
  * Para Açılımı pozisyon anlamlarını al
  */
-export function getMoneyPositionMeanings(position: number): MoneyPositionMeaning[] {
+export function getMoneyPositionMeanings(
+  position: number
+): MoneyPositionMeaning[] {
   return MONEY_POSITION_MEANINGS[position.toString()] || [];
 }
 
@@ -239,10 +245,7 @@ export function getMoneyMeaningsByCard(
  * Tüm pozisyon anlamlarını getirir
  * @returns Tüm pozisyon anlamları
  */
-export function getAllMoneyMeanings(): Record<
-  number,
-  MoneyPositionMeaning[]
-> {
+export function getAllMoneyMeanings(): Record<number, MoneyPositionMeaning[]> {
   const allMeanings: Record<number, MoneyPositionMeaning[]> = {};
 
   for (let position = 1; position <= 8; position++) {
@@ -254,9 +257,7 @@ export function getAllMoneyMeanings(): Record<
 
 // Pozisyon bilgilerini alma fonksiyonu
 export const getPositionInfo = (position: number) => {
-  return moneyPositions[
-    position as keyof typeof moneyPositions
-  ];
+  return moneyPositions[position as keyof typeof moneyPositions];
 };
 
 // Tüm pozisyonları alma fonksiyonu
@@ -288,18 +289,21 @@ export const getMoneyMeaningByCardNameAndPosition = (
     number: 0,
     meaning: {
       upright: 'Temel anlam',
-      reversed: 'Ters anlam'
+      reversed: 'Ters anlam',
     },
     meaningTr: {
       upright: 'Temel anlam',
-      reversed: 'Ters anlam'
+      reversed: 'Ters anlam',
     },
     keywords: [],
     keywordsTr: [],
-    image: ''
+    image: '',
   };
 
-  return getMoneyMeaningByCardAndPosition(mockCard, position, isReversed) || undefined;
+  return (
+    getMoneyMeaningByCardAndPosition(mockCard, position, isReversed) ||
+    undefined
+  );
 };
 
 // Kart gruplarına göre filtreleme fonksiyonu
@@ -323,9 +327,10 @@ export const getMoneyMeaningsByPositionAndGroup = (
 export const searchMoneyMeaningsByCardName = (
   cardName: string
 ): MoneyPositionMeaning[] => {
-  return allMoneyPositionMeanings.filter(meaning =>
-    meaning.cardName?.toLowerCase().includes(cardName.toLowerCase()) ||
-    meaning.card.toLowerCase().includes(cardName.toLowerCase())
+  return allMoneyPositionMeanings.filter(
+    meaning =>
+      meaning.cardName?.toLowerCase().includes(cardName.toLowerCase()) ||
+      meaning.card.toLowerCase().includes(cardName.toLowerCase())
   );
 };
 
@@ -333,12 +338,13 @@ export const searchMoneyMeaningsByCardName = (
 export const searchMoneyMeaningsByKeyword = (
   keyword: string
 ): MoneyPositionMeaning[] => {
-  return allMoneyPositionMeanings.filter(meaning =>
-    meaning.keywords.some(kw =>
-      kw.toLowerCase().includes(keyword.toLowerCase())
-    ) ||
-    meaning.upright.toLowerCase().includes(keyword.toLowerCase()) ||
-    meaning.reversed.toLowerCase().includes(keyword.toLowerCase())
+  return allMoneyPositionMeanings.filter(
+    meaning =>
+      meaning.keywords.some(kw =>
+        kw.toLowerCase().includes(keyword.toLowerCase())
+      ) ||
+      meaning.upright.toLowerCase().includes(keyword.toLowerCase()) ||
+      meaning.reversed.toLowerCase().includes(keyword.toLowerCase())
   );
 };
 
@@ -387,8 +393,16 @@ const moneyExports = {
   searchMoneyMeaningsByKeyword,
   getMoneyStatistics,
   // Eski fonksiyonlar (geriye uyumluluk için)
-  getMoneyCardMeaning: (card: TarotCard, position: number, isReversed: boolean = false) => {
-    const meaning = getMoneyMeaningByCardAndPosition(card, position, isReversed);
+  getMoneyCardMeaning: (
+    card: TarotCard,
+    position: number,
+    isReversed: boolean = false
+  ) => {
+    const meaning = getMoneyMeaningByCardAndPosition(
+      card,
+      position,
+      isReversed
+    );
     return meaning ? (isReversed ? meaning.reversed : meaning.upright) : '';
   },
 };

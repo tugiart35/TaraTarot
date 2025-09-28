@@ -161,7 +161,7 @@ export const position6Meanings: CareerPositionMeaning[] = [
   },
   {
     id: 'wheel_of_fortune_pos6',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 6,
     upright:
       'Kader Çarkı, geçmişte şansa veya dış koşullara fazla güvenmek kariyerinde engel yaratmış olabilir.',

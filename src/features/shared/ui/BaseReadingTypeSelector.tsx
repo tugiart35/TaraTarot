@@ -2,13 +2,10 @@
 info:
 Bağlantılı dosyalar:
 - react: Temel React fonksiyonları için (gerekli)
-- @/hooks/useAuth: Kullanıcı oturum ve yetki kontrolü için (gerekli) - YENİ EKLENDİ
+- @/hooks/useAuth: Kullanıcı oturum ve yetki kontrolü için (gerekli)
 - @/hooks/useReadingCredits: Okuma tipi için kredi kontrolü ve yönetimi (gerekli)
 - @/constants/reading-credits: Okuma tipine göre kredi miktarları (gerekli)
-- components/specific/tarot/3cardtarot/ThreeReadingTypeSelector.tsx: 3 kart açılımı için özelleştirilmiş okuma tipi seçici (gerekli, BaseReadingTypeSelector'ı özelleştirerek kullanır)
-- components/specific/tarot/hermit/ReadingTypeSelector.tsx: Hermit açılımı için özelleştirilmiş okuma tipi seçici (gerekli, BaseReadingTypeSelector'ı özelleştirerek kullanır)
-- components/specific/tarot/Love-Spread/LoveReadingTypeSelector.tsx: Aşk açılımı için özelleştirilmiş okuma tipi seçici (gerekli, BaseReadingTypeSelector'ı özelleştirerek kullanır)
-- components/specific/tarot/CareerTarot/CareerReadingTypeSelector.tsx: Kariyer açılımı için özelleştirilmiş okuma tipi seçici (gerekli, BaseReadingTypeSelector'ı özelleştirerek kullanır)
+- Yeni yapıda: Tüm tarot açılımları BaseReadingTypeSelector'ı doğrudan kullanıyor
 
 Dosyanın amacı:
 - Tüm tarot açılımları için ortak, mobil uyumlu, temalı ve yeniden kullanılabilir bir okuma tipi (basit/detaylı/yazılı) seçici bileşeni sunmak. Kullanıcı giriş kontrolü, tema ve metin özelleştirmesi ile farklı açılımlarda tekrar eden kodu ortadan kaldırır.
@@ -84,7 +81,27 @@ interface BaseReadingTypeSelectorProps {
   writtenSelectedMessage?: string;
   adminRequiredMessage?: string;
   writtenRequiredMessage?: string;
-  readingType: 'LOVE_SPREAD' | 'LOVE_SPREAD_DETAILED' | 'LOVE_SPREAD_WRITTEN' | 'CAREER_SPREAD_DETAILED' | 'CAREER_SPREAD_WRITTEN' | 'PROBLEM_SOLVING_DETAILED' | 'PROBLEM_SOLVING_WRITTEN' | 'SITUATION_ANALYSIS_DETAILED' | 'SITUATION_ANALYSIS_WRITTEN' | 'RELATIONSHIP_ANALYSIS_DETAILED' | 'RELATIONSHIP_ANALYSIS_WRITTEN' | 'RELATIONSHIP_PROBLEMS_DETAILED' | 'RELATIONSHIP_PROBLEMS_WRITTEN' | 'MARRIAGE_DETAILED' | 'MARRIAGE_WRITTEN' | 'NEW_LOVER_DETAILED' | 'NEW_LOVER_WRITTEN' | 'MONEY_SPREAD' | 'MONEY_SPREAD_DETAILED' | 'MONEY_SPREAD_WRITTEN';
+  readingType:
+    | 'LOVE_SPREAD'
+    | 'LOVE_SPREAD_DETAILED'
+    | 'LOVE_SPREAD_WRITTEN'
+    | 'CAREER_SPREAD_DETAILED'
+    | 'CAREER_SPREAD_WRITTEN'
+    | 'PROBLEM_SOLVING_DETAILED'
+    | 'PROBLEM_SOLVING_WRITTEN'
+    | 'SITUATION_ANALYSIS_DETAILED'
+    | 'SITUATION_ANALYSIS_WRITTEN'
+    | 'RELATIONSHIP_ANALYSIS_DETAILED'
+    | 'RELATIONSHIP_ANALYSIS_WRITTEN'
+    | 'RELATIONSHIP_PROBLEMS_DETAILED'
+    | 'RELATIONSHIP_PROBLEMS_WRITTEN'
+    | 'MARRIAGE_DETAILED'
+    | 'MARRIAGE_WRITTEN'
+    | 'NEW_LOVER_DETAILED'
+    | 'NEW_LOVER_WRITTEN'
+    | 'MONEY_SPREAD'
+    | 'MONEY_SPREAD_DETAILED'
+    | 'MONEY_SPREAD_WRITTEN';
 }
 
 export default function BaseReadingTypeSelector({
@@ -115,42 +132,45 @@ export default function BaseReadingTypeSelector({
   const { isAuthenticated } = useAuth(); // Kullanıcı giriş durumunu kontrol et
 
   // Kredi kontrolü - sesli ve yazılı okumalar için
-  const detailedReadingType = readingType === 'PROBLEM_SOLVING_DETAILED' 
-    ? 'PROBLEM_SOLVING_DETAILED' 
-    : readingType === 'CAREER_SPREAD_DETAILED'
-    ? 'CAREER_SPREAD_DETAILED'
-    : readingType === 'SITUATION_ANALYSIS_DETAILED'
-    ? 'SITUATION_ANALYSIS_DETAILED'
-    : readingType === 'RELATIONSHIP_ANALYSIS_DETAILED'
-    ? 'RELATIONSHIP_ANALYSIS_DETAILED'
-    : readingType === 'RELATIONSHIP_PROBLEMS_DETAILED'
-    ? 'RELATIONSHIP_PROBLEMS_DETAILED'
-    : readingType === 'MARRIAGE_DETAILED'
-    ? 'MARRIAGE_DETAILED'
-    : readingType === 'NEW_LOVER_DETAILED'
-    ? 'NEW_LOVER_DETAILED'
-    : readingType === 'MONEY_SPREAD' || readingType === 'MONEY_SPREAD_DETAILED'
-    ? 'MONEY_SPREAD_DETAILED'
-    : 'LOVE_SPREAD_DETAILED';
-    
-  const writtenReadingType = readingType === 'PROBLEM_SOLVING_DETAILED' 
-    ? 'PROBLEM_SOLVING_WRITTEN' 
-    : readingType === 'CAREER_SPREAD_DETAILED'
-    ? 'CAREER_SPREAD_WRITTEN'
-    : readingType === 'SITUATION_ANALYSIS_DETAILED'
-    ? 'SITUATION_ANALYSIS_WRITTEN'
-    : readingType === 'RELATIONSHIP_ANALYSIS_DETAILED'
-    ? 'RELATIONSHIP_ANALYSIS_WRITTEN'
-    : readingType === 'RELATIONSHIP_PROBLEMS_DETAILED'
-    ? 'RELATIONSHIP_PROBLEMS_WRITTEN'
-    : readingType === 'MARRIAGE_DETAILED'
-    ? 'MARRIAGE_WRITTEN'
-    : readingType === 'NEW_LOVER_DETAILED'
-    ? 'NEW_LOVER_WRITTEN'
-    : readingType === 'MONEY_SPREAD' || readingType === 'MONEY_SPREAD_WRITTEN'
-    ? 'MONEY_SPREAD_WRITTEN'
-    : 'LOVE_SPREAD_WRITTEN';
+  const detailedReadingType =
+    readingType === 'PROBLEM_SOLVING_DETAILED'
+      ? 'PROBLEM_SOLVING_DETAILED'
+      : readingType === 'CAREER_SPREAD_DETAILED'
+        ? 'CAREER_SPREAD_DETAILED'
+        : readingType === 'SITUATION_ANALYSIS_DETAILED'
+          ? 'SITUATION_ANALYSIS_DETAILED'
+          : readingType === 'RELATIONSHIP_ANALYSIS_DETAILED'
+            ? 'RELATIONSHIP_ANALYSIS_DETAILED'
+            : readingType === 'RELATIONSHIP_PROBLEMS_DETAILED'
+              ? 'RELATIONSHIP_PROBLEMS_DETAILED'
+              : readingType === 'MARRIAGE_DETAILED'
+                ? 'MARRIAGE_DETAILED'
+                : readingType === 'NEW_LOVER_DETAILED'
+                  ? 'NEW_LOVER_DETAILED'
+                  : readingType === 'MONEY_SPREAD' ||
+                      readingType === 'MONEY_SPREAD_DETAILED'
+                    ? 'MONEY_SPREAD_DETAILED'
+                    : 'LOVE_SPREAD_DETAILED';
 
+  const writtenReadingType =
+    readingType === 'PROBLEM_SOLVING_DETAILED'
+      ? 'PROBLEM_SOLVING_WRITTEN'
+      : readingType === 'CAREER_SPREAD_DETAILED'
+        ? 'CAREER_SPREAD_WRITTEN'
+        : readingType === 'SITUATION_ANALYSIS_DETAILED'
+          ? 'SITUATION_ANALYSIS_WRITTEN'
+          : readingType === 'RELATIONSHIP_ANALYSIS_DETAILED'
+            ? 'RELATIONSHIP_ANALYSIS_WRITTEN'
+            : readingType === 'RELATIONSHIP_PROBLEMS_DETAILED'
+              ? 'RELATIONSHIP_PROBLEMS_WRITTEN'
+              : readingType === 'MARRIAGE_DETAILED'
+                ? 'MARRIAGE_WRITTEN'
+                : readingType === 'NEW_LOVER_DETAILED'
+                  ? 'NEW_LOVER_WRITTEN'
+                  : readingType === 'MONEY_SPREAD' ||
+                      readingType === 'MONEY_SPREAD_WRITTEN'
+                    ? 'MONEY_SPREAD_WRITTEN'
+                    : 'LOVE_SPREAD_WRITTEN';
 
   const detailedCredits = useReadingCredits(detailedReadingType);
   const writtenCredits = useReadingCredits(writtenReadingType);

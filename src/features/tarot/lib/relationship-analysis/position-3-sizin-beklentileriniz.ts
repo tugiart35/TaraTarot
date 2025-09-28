@@ -43,8 +43,7 @@ export interface I18nRelationshipAnalysisposition3Meaning {
 
 export const position3Meanings: RelationshipAnalysisposition3Meaning[] = [
   // --- Majör Arkana Kartları ---
-// RELATIONSHIP ANALYSIS (ra) – POSITION 3: "Sizin Beklentileriniz"
-
+  // RELATIONSHIP ANALYSIS (ra) – POSITION 3: "Sizin Beklentileriniz"
 
   {
     id: 'the_fool_ra_pos3',
@@ -178,7 +177,7 @@ export const position3Meanings: RelationshipAnalysisposition3Meaning[] = [
   },
   {
     id: 'wheel_of_fortune_ra_pos3',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 3,
     upright:
       'Kader Çarkı, beklentinizin akışa güvenmek ve zamanında doğru fırsatları yakalamak olduğunu söyler. Döngülerin desteklemesini istiyorsunuz.. Akış, uyum, fırsat.',
@@ -618,8 +617,7 @@ export const position3Meanings: RelationshipAnalysisposition3Meaning[] = [
     reversed:
       'Ters Sekiz Tılsım, beklentinizin boşa emek vermekten kaçınmak olduğunu gösterir. Kalbiniz anlamlı iş arıyor.\n\nBelirti: Değerli emek isteği.',
     keywords: ['çaba', 'öğrenme', 'ustalık', 'emek', 'gelişim'],
-    context:
-      'Beklentiniz gelişimdir. Kalbiniz emekle büyümek istiyor.',
+    context: 'Beklentiniz gelişimdir. Kalbiniz emekle büyümek istiyor.',
     group: 'Tılsımlar',
   },
   {
@@ -644,8 +642,7 @@ export const position3Meanings: RelationshipAnalysisposition3Meaning[] = [
     reversed:
       'Ters On Tılsım, beklentinizin güvensizlikten korunmak olduğunu gösterir. Kalbiniz sağlam temel arıyor.\n\nBelirti: Güvenlik arayışı.',
     keywords: ['aile', 'güvence', 'köklülük', 'istikrar', 'miras'],
-    context:
-      'Beklentiniz kalıcı birliktir. Kalbiniz güvenli bağ arıyor.',
+    context: 'Beklentiniz kalıcı birliktir. Kalbiniz güvenli bağ arıyor.',
     group: 'Tılsımlar',
   },
   {
@@ -657,8 +654,7 @@ export const position3Meanings: RelationshipAnalysisposition3Meaning[] = [
     reversed:
       'Ters Tılsım Prensi, beklentinizin yüzeysellikten uzak kalmak olduğunu gösterir. Kalbiniz kalıcı adım arıyor.\n\nBelirti: Derinlik ihtiyacı.',
     keywords: ['öğrenme', 'istikrar', 'temel', 'gelişim', 'sabır'],
-    context:
-      'Beklentiniz öğrenerek ilerlemektir. Kalbiniz köklü adım istiyor.',
+    context: 'Beklentiniz öğrenerek ilerlemektir. Kalbiniz köklü adım istiyor.',
     group: 'Tılsımlar',
   },
   {
@@ -762,8 +758,7 @@ export const position3Meanings: RelationshipAnalysisposition3Meaning[] = [
     reversed:
       'Ters Beş Kılıç, beklentinizin gururu bırakıp hakikaten barışmak olduğunu gösterir. Kalbiniz köprü kurmak istiyor.\n\nBelirti: Barış talebi.',
     keywords: ['barış', 'uzlaşı', 'ego', 'onur', 'köprü'],
-    context:
-      'Beklentiniz uzlaşmadır. Kalbiniz kavgadan çok anlayış arıyor.',
+    context: 'Beklentiniz uzlaşmadır. Kalbiniz kavgadan çok anlayış arıyor.',
     group: 'Kılıçlar',
   },
   {
@@ -788,8 +783,7 @@ export const position3Meanings: RelationshipAnalysisposition3Meaning[] = [
     reversed:
       'Ters Yedi Kılıç, beklentinizin gizli oyunlardan arınmak olduğunu gösterir. Kalbiniz temiz niyet arıyor.\n\nBelirti: Güven isteği.',
     keywords: ['dürüstlük', 'açıklık', 'güven', 'şeffaflık', 'sadakat'],
-    context:
-      'Beklentiniz açık niyetlerdir. Kalbiniz sahicilik talep ediyor.',
+    context: 'Beklentiniz açık niyetlerdir. Kalbiniz sahicilik talep ediyor.',
     group: 'Kılıçlar',
   },
   {
@@ -814,8 +808,7 @@ export const position3Meanings: RelationshipAnalysisposition3Meaning[] = [
     reversed:
       'Ters Dokuz Kılıç, beklentinizin korkuları geride bırakmak olduğunu gösterir. Kalbiniz umut istiyor.\n\nBelirti: Kaygıdan arınma arzusu.',
     keywords: ['kaygı', 'umut', 'sakinlik', 'özgürlük', 'şifa'],
-    context:
-      'Beklentiniz huzurdur. Kalbiniz güvenli bir alan arıyor.',
+    context: 'Beklentiniz huzurdur. Kalbiniz güvenli bir alan arıyor.',
     group: 'Kılıçlar',
   },
   {
@@ -827,8 +820,7 @@ export const position3Meanings: RelationshipAnalysisposition3Meaning[] = [
     reversed:
       'Ters On Kılıç, beklentinizin toparlanmak ve yeniden umut bulmak olduğunu gösterir. Kalbiniz yeni bir sayfa arıyor.\n\nBelirti: Yeniden doğuş isteği.',
     keywords: ['bitiş', 'yenilenme', 'başlangıç', 'dönüşüm', 'umut'],
-    context:
-      'Beklentiniz kapanıştır. Kalbiniz yeniye doğmak istiyor.',
+    context: 'Beklentiniz kapanıştır. Kalbiniz yeniye doğmak istiyor.',
     group: 'Kılıçlar',
   },
   {
@@ -884,9 +876,9 @@ export const position3Meanings: RelationshipAnalysisposition3Meaning[] = [
     group: 'Kılıçlar',
   },
 
-// Set: Asalar (14 kart)
+  // Set: Asalar (14 kart)
 
-{
+  {
     id: 'ace_of_wands_ra_pos3',
     card: 'Ace of Wands',
     position: 3,
@@ -908,8 +900,7 @@ export const position3Meanings: RelationshipAnalysisposition3Meaning[] = [
     reversed:
       'Ters İki Değnek, beklentinizin belirsizlikten kurtulmak olduğunu gösterir. Kalbiniz net rota istiyor.\n\nBelirti: Belirsizlikten çıkış isteği.',
     keywords: ['vizyon', 'plan', 'rota', 'hedef', 'ilerleme'],
-    context:
-      'Beklentiniz yol haritasıdır. Kalbiniz yönünü bilmek istiyor.',
+    context: 'Beklentiniz yol haritasıdır. Kalbiniz yönünü bilmek istiyor.',
     group: 'Asalar',
   },
   {
@@ -934,8 +925,7 @@ export const position3Meanings: RelationshipAnalysisposition3Meaning[] = [
     reversed:
       'Ters Dört Değnek, beklentinizin temelsiz kutlamalardan korunmak olduğunu gösterir. Kalbiniz sahici huzur arıyor.\n\nBelirti: Gerçeklik isteği.',
     keywords: ['huzur', 'uyum', 'kutlama', 'aile', 'istikrar'],
-    context:
-      'Beklentiniz sağlam köklerdir. Kalbiniz güvenli bir alan arıyor.',
+    context: 'Beklentiniz sağlam köklerdir. Kalbiniz güvenli bir alan arıyor.',
     group: 'Asalar',
   },
   {
@@ -1025,8 +1015,7 @@ export const position3Meanings: RelationshipAnalysisposition3Meaning[] = [
     reversed:
       'Ters Değnek Prensi, beklentinizin yarım kalmış heveslerden arınmak olduğunu gösterir. Kalbiniz sahici motivasyon istiyor.\n\nBelirti: Gerçek tutku isteği.',
     keywords: ['heves', 'keşif', 'öğrenme', 'tutku', 'enerji'],
-    context:
-      'Beklentiniz macera ruhudur. Kalbiniz keşfetmek istiyor.',
+    context: 'Beklentiniz macera ruhudur. Kalbiniz keşfetmek istiyor.',
     group: 'Asalar',
   },
   {
@@ -1080,54 +1069,55 @@ export function getRelationshipAnalysisPosition3Meaning(
 ): RelationshipAnalysisposition3Meaning | null {
   // Kart ismi eşleştirmesi için hem İngilizce hem Türkçe isimleri kontrol et
   // Önce doğrudan eşleşme ara
-  let meaning = position3Meanings.find(m => 
-    m.card === card.name || 
-    m.card === card.nameTr ||
-    card.name === m.card ||
-    card.nameTr === m.card
+  let meaning = position3Meanings.find(
+    m =>
+      m.card === card.name ||
+      m.card === card.nameTr ||
+      card.name === m.card ||
+      card.nameTr === m.card
   );
-  
+
   if (meaning) {
     return meaning;
   }
-  
+
   // Kart ismi mapping'i kullanarak eşleştirme yap
   const cardNameMapping: { [key: string]: string } = {
     // Major Arcana - Türkçe
-    'Deli': 'The Fool',
-    'Büyücü': 'The Magician',
+    Deli: 'The Fool',
+    Büyücü: 'The Magician',
     'Yüksek Rahibe': 'The High Priestess',
-    'İmparatoriçe': 'The Empress',
-    'İmparator': 'The Emperor',
-    'Hierophant': 'The Hierophant',
-    'Aziz': 'The Hierophant',
-    'Aşıklar': 'The Lovers',
+    İmparatoriçe: 'The Empress',
+    İmparator: 'The Emperor',
+    Hierophant: 'The Hierophant',
+    Aziz: 'The Hierophant',
+    Aşıklar: 'The Lovers',
     'Savaş Arabası': 'The Chariot',
-    'Güç': 'Strength',
-    'Ermiş': 'The Hermit',
-    'Münzevi': 'The Hermit',
-    'Kader Çarkı': 'The Wheel of Fortune',
-    'Adalet': 'Justice',
+    Güç: 'Strength',
+    Ermiş: 'The Hermit',
+    Münzevi: 'The Hermit',
+    'Kader Çarkı': 'The The Wheel of Fortune',
+    Adalet: 'Justice',
     'Asılı Adam': 'The Hanged Man',
-    'Ölüm': 'Death',
-    'Ölçü': 'Temperance',
-    'Ölçülülük': 'Temperance',
-    'Şeytan': 'The Devil',
-    'Kule': 'The Tower',
-    'Yıldız': 'The Star',
-    'Ay': 'The Moon',
-    'Güneş': 'The Sun',
-    'Yargı': 'Judgement',
-    'Mahkeme': 'Judgement',
-    'Dünya': 'The World',
+    Ölüm: 'Death',
+    Ölçü: 'Temperance',
+    Ölçülülük: 'Temperance',
+    Şeytan: 'The Devil',
+    Kule: 'The Tower',
+    Yıldız: 'The Star',
+    Ay: 'The Moon',
+    Güneş: 'The Sun',
+    Yargı: 'Judgement',
+    Mahkeme: 'Judgement',
+    Dünya: 'The World',
   };
-  
+
   // Türkçe ismi İngilizce'ye çevir
   const englishName = cardNameMapping[card.nameTr] || card.nameTr;
-  
+
   // İngilizce isimle tekrar ara
   meaning = position3Meanings.find(m => m.card === englishName);
-  
+
   return meaning || null;
 }
 

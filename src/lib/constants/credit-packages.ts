@@ -144,7 +144,9 @@ export const CREDIT_PACKAGES: Record<PackageType, CreditPackage> = {
 // Bonus kredi hesaplama fonksiyonu
 export const calculateBonus = (packageType: PackageType): number => {
   const pkg = CREDIT_PACKAGES[packageType];
-  if (!pkg.bonusPercentage) return 0;
+  if (!pkg.bonusPercentage) {
+    return 0;
+  }
 
   return Math.round((pkg.credits * pkg.bonusPercentage) / 100);
 };
@@ -163,8 +165,12 @@ export const calculatePricePerCredit = (packageType: PackageType): number => {
 
 // Paket önerisi (kullanıcının ihtiyacına göre)
 export const recommendPackage = (requiredCredits: number): PackageType => {
-  if (requiredCredits <= 150) return 'starter';
-  if (requiredCredits <= 400) return 'popular';
+  if (requiredCredits <= 150) {
+    return 'starter';
+  }
+  if (requiredCredits <= 400) {
+    return 'popular';
+  }
   return 'premium';
 };
 
@@ -206,7 +212,9 @@ export const getPackageFeatures = (
 ): string[] => {
   const pkg = CREDIT_PACKAGES[packageType];
 
-  if (!category) return pkg.features;
+  if (!category) {
+    return pkg.features;
+  }
 
   // Kategoriye göre filtreleme (gelecekte genişletilebilir)
   switch (category) {
@@ -285,8 +293,12 @@ export const sortPackages = (
       case 'value':
         return pkgB.credits / pkgB.price - pkgA.credits / pkgA.price;
       case 'popularity':
-        if (pkgA.popular && !pkgB.popular) return -1;
-        if (!pkgA.popular && pkgB.popular) return 1;
+        if (pkgA.popular && !pkgB.popular) {
+          return -1;
+        }
+        if (!pkgA.popular && pkgB.popular) {
+          return 1;
+        }
         return 0;
       default:
         return 0;

@@ -157,7 +157,7 @@ export const position1Meanings: CareerPosition1Meaning[] = [
   },
   {
     id: 'wheel_of_fortune_pos1',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 1,
     upright:
       'Kader Çarkı, değişim ve fırsatları temsil eder. Şu anki kariyer yolun sürpriz gelişmelerle şekillenebilir.',

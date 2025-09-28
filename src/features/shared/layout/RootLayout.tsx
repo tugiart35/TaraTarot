@@ -12,7 +12,7 @@ import HeadTags from './HeadTags';
 
 // Lazy load heavy components
 const Footer = dynamic(() => import('./Footer'), {
-  loading: () => <div className="h-16 bg-slate-900/95" />
+  loading: () => <div className='h-16 bg-slate-900/95' />,
 });
 
 interface RootLayoutProps {
@@ -24,14 +24,23 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang={APP_CONFIG.defaultLanguage} className='h-full'>
       <head>
         <HeadTags />
-        
+
         {/* Security Headers */}
-        <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://www.googletagmanager.com; frame-ancestors 'none';" />
-        <meta httpEquiv="X-Frame-Options" content="DENY" />
-        <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
-        <meta httpEquiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
-        <meta httpEquiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), interest-cohort=()" />
-        
+        <meta
+          httpEquiv='Content-Security-Policy'
+          content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://www.googletagmanager.com; frame-ancestors 'none';"
+        />
+        <meta httpEquiv='X-Frame-Options' content='DENY' />
+        <meta httpEquiv='X-Content-Type-Options' content='nosniff' />
+        <meta
+          httpEquiv='Referrer-Policy'
+          content='strict-origin-when-cross-origin'
+        />
+        <meta
+          httpEquiv='Permissions-Policy'
+          content='camera=(), microphone=(), geolocation=(), interest-cohort=()'
+        />
+
         {/* Google Analytics - G-Y2HESMXJXD */}
         <script
           async
@@ -58,7 +67,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <main className='flex-1'>{children}</main>
 
           {/* Footer bileşeni - Lazy loaded */}
-          <Suspense fallback={<div className="h-16 bg-slate-900/95" />}>
+          <Suspense fallback={<div className='h-16 bg-slate-900/95' />}>
             <Footer />
           </Suspense>
 

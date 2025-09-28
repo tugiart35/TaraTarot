@@ -44,8 +44,14 @@ const RATE_WINDOW = 60 * 1000; // 1 dakika
 // GET endpoint - IP tabanlı coğrafi konum tespiti
 export async function GET(request: NextRequest) {
   // Rate limiting kontrolü using ApiBase
-  const rateLimitResponse = ApiBase.checkRateLimit(request, RATE_LIMIT, RATE_WINDOW);
-  if (rateLimitResponse) return rateLimitResponse;
+  const rateLimitResponse = ApiBase.checkRateLimit(
+    request,
+    RATE_LIMIT,
+    RATE_WINDOW
+  );
+  if (rateLimitResponse) {
+    return rateLimitResponse;
+  }
 
   // Request logging
   ApiBase.logRequest(request, 'Geolocation API');
@@ -64,7 +70,9 @@ export async function GET(request: NextRequest) {
     return GeolocationCORS.createSuccessResponse(geolocation, ip);
   } catch (error) {
     console.error('Geolocation API error:', error);
-    return GeolocationErrorResponse.internalServerError((error as Error).message);
+    return GeolocationErrorResponse.internalServerError(
+      (error as Error).message
+    );
   }
 }
 
@@ -119,7 +127,9 @@ export async function POST(request: NextRequest) {
     return GeolocationCORS.createSuccessResponse(geolocationData, ip);
   } catch (error) {
     console.error('Geolocation POST API error:', error);
-    return GeolocationErrorResponse.internalServerError((error as Error).message);
+    return GeolocationErrorResponse.internalServerError(
+      (error as Error).message
+    );
   }
 }
 

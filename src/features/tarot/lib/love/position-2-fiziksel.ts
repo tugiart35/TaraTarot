@@ -185,12 +185,12 @@ export const position2Meanings: LovePositionMeaning[] = [
   },
   {
     id: 'wheel_of_fortune_pos2',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 2,
     upright:
       'Cinsel yaşamınızda beklenmedik gelişmeler ve döngüsel değişimler var. Bazen çok tutkulu, bazen daha mesafeli olabilirsiniz. Kaderin sizi fiziksel olarak bir araya getirdiği veya ayırdığı bir dönem.',
     reversed:
-      'Ters Wheel of Fortune, cinsel hayatta bir durgunluk, şanssızlık veya tekrarlayan olumsuz döngüleri gösterir. Cinsel rutin sıkıcı hale gelmiş olabilir.',
+      'Ters The Wheel of Fortune, cinsel hayatta bir durgunluk, şanssızlık veya tekrarlayan olumsuz döngüleri gösterir. Cinsel rutin sıkıcı hale gelmiş olabilir.',
     keywords: [
       'kader',
       'döngüler',

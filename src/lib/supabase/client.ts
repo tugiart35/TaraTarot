@@ -41,47 +41,95 @@ console.log('🔍 Supabase Client: Environment kontrolü:', {
   hasUrl: !!supabaseUrl,
   hasKey: !!supabaseAnonKey,
   urlLength: supabaseUrl?.length,
-  keyLength: supabaseAnonKey?.length
+  keyLength: supabaseAnonKey?.length,
 });
 
 // Environment değişkenleri eksikse dummy client oluştur
 const createDummyClient = () => {
-  console.warn('⚠️ Supabase Client: Environment değişkenleri eksik, dummy client oluşturuluyor');
-  
+  console.warn(
+    '⚠️ Supabase Client: Environment değişkenleri eksik, dummy client oluşturuluyor'
+  );
+
   return {
     auth: {
-      getSession: () => Promise.resolve({ data: { session: null }, error: new Error('Environment variables missing') }),
-      onAuthStateChange: () => ({ data: { subscription: { unsubscribe: () => {} } } }),
-      signInWithPassword: () => Promise.resolve({ data: null, error: new Error('Environment variables missing') }),
-      signUp: () => Promise.resolve({ data: null, error: new Error('Environment variables missing') }),
-      signOut: () => Promise.resolve({ error: new Error('Environment variables missing') }),
-      resetPasswordForEmail: () => Promise.resolve({ error: new Error('Environment variables missing') }),
-      resend: () => Promise.resolve({ error: new Error('Environment variables missing') })
+      getSession: () =>
+        Promise.resolve({
+          data: { session: null },
+          error: new Error('Environment variables missing'),
+        }),
+      onAuthStateChange: () => ({
+        data: { subscription: { unsubscribe: () => {} } },
+      }),
+      signInWithPassword: () =>
+        Promise.resolve({
+          data: null,
+          error: new Error('Environment variables missing'),
+        }),
+      signUp: () =>
+        Promise.resolve({
+          data: null,
+          error: new Error('Environment variables missing'),
+        }),
+      signOut: () =>
+        Promise.resolve({ error: new Error('Environment variables missing') }),
+      resetPasswordForEmail: () =>
+        Promise.resolve({ error: new Error('Environment variables missing') }),
+      resend: () =>
+        Promise.resolve({ error: new Error('Environment variables missing') }),
     },
     from: () => ({
       select: () => ({
         eq: () => ({
-          single: () => Promise.resolve({ data: null, error: new Error('Environment variables missing') }),
+          single: () =>
+            Promise.resolve({
+              data: null,
+              error: new Error('Environment variables missing'),
+            }),
           order: () => ({
-            limit: () => Promise.resolve({ data: [], error: new Error('Environment variables missing') })
-          })
+            limit: () =>
+              Promise.resolve({
+                data: [],
+                error: new Error('Environment variables missing'),
+              }),
+          }),
         }),
         order: () => ({
-          limit: () => Promise.resolve({ data: [], error: new Error('Environment variables missing') })
-        })
+          limit: () =>
+            Promise.resolve({
+              data: [],
+              error: new Error('Environment variables missing'),
+            }),
+        }),
       }),
-      insert: () => Promise.resolve({ data: null, error: new Error('Environment variables missing') }),
-      update: () => Promise.resolve({ data: null, error: new Error('Environment variables missing') }),
-      delete: () => Promise.resolve({ data: null, error: new Error('Environment variables missing') })
+      insert: () =>
+        Promise.resolve({
+          data: null,
+          error: new Error('Environment variables missing'),
+        }),
+      update: () =>
+        Promise.resolve({
+          data: null,
+          error: new Error('Environment variables missing'),
+        }),
+      delete: () =>
+        Promise.resolve({
+          data: null,
+          error: new Error('Environment variables missing'),
+        }),
     }),
-    rpc: () => Promise.resolve({ data: null, error: new Error('Environment variables missing') })
+    rpc: () =>
+      Promise.resolve({
+        data: null,
+        error: new Error('Environment variables missing'),
+      }),
   };
 };
 
 // Supabase browser client'ı oluştur
-export const supabase = (!supabaseUrl || !supabaseAnonKey) 
-  ? createDummyClient() as any
-  : createBrowserClient<Database>(supabaseUrl, supabaseAnonKey);
+export const supabase =
+  !supabaseUrl || !supabaseAnonKey
+    ? (createDummyClient() as any)
+    : createBrowserClient<Database>(supabaseUrl, supabaseAnonKey);
 
 // Database types için tip tanımları - Yeni optimize edilmiş şema
 export interface Database {
@@ -329,7 +377,12 @@ export interface Database {
       fn_create_reading_with_debit: {
         Args: {
           p_user_id: string;
-          p_reading_type: 'tarot' | 'numerology' | 'love' | 'career' | 'general';
+          p_reading_type:
+            | 'tarot'
+            | 'numerology'
+            | 'love'
+            | 'career'
+            | 'general';
           p_spread_name: string;
           p_title: string;
           p_interpretation: string;

@@ -63,10 +63,10 @@ function LanguageSelector() {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className='flex flex-col items-center justify-center px-2 py-2 rounded-lg transition-all duration-300 min-w-0 flex-1 text-gray-500 hover:text-gray-300'
-        aria-label="Dil seçici menüsünü aç"
+        aria-label='Dil seçici menüsünü aç'
         aria-expanded={isOpen}
-        aria-haspopup="menu"
-        role="button"
+        aria-haspopup='menu'
+        role='button'
       >
         <span className='text-lg mb-1'>{currentLanguage?.flag}</span>
         <span className='text-xs font-medium truncate'>
@@ -84,10 +84,10 @@ function LanguageSelector() {
           />
 
           {/* Dropup menü */}
-          <div 
+          <div
             className='absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 z-50 bg-slate-800/95 backdrop-blur-md border border-slate-600 rounded-lg shadow-xl min-w-[140px]'
-            role="menu"
-            aria-label="Dil seçenekleri"
+            role='menu'
+            aria-label='Dil seçenekleri'
           >
             {languages.map((language, index) => (
               <button
@@ -103,9 +103,11 @@ function LanguageSelector() {
                       : 'text-gray-300'
                   }
                 `}
-                role="menuitem"
+                role='menuitem'
                 aria-label={`${language.name} dilini seç`}
-                aria-current={currentLanguage?.code === language.code ? 'true' : 'false'}
+                aria-current={
+                  currentLanguage?.code === language.code ? 'true' : 'false'
+                }
               >
                 <div className='flex items-center space-x-3'>
                   <span className='text-lg'>{language.flag}</span>
@@ -134,8 +136,10 @@ export default function BottomNavigation() {
   const handleProfileClick = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    
-    const profileItem = navigationItems.find(item => item.name === 'Profil' || item.name === 'Giriş Yap');
+
+    const profileItem = navigationItems.find(
+      item => item.name === 'Profil' || item.name === 'Giriş Yap'
+    );
     if (profileItem) {
       trackUserInteraction(profileItem.name, 'click');
       handleNavigationClick(profileItem);
@@ -146,7 +150,7 @@ export default function BottomNavigation() {
   const handlePakizeClick = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    
+
     const pakizeItem = navigationItems.find(item => item.name === 'Pakize');
     if (pakizeItem) {
       trackUserInteraction(pakizeItem.name, 'click');
@@ -156,91 +160,98 @@ export default function BottomNavigation() {
 
   return (
     <LayoutErrorBoundary>
-      <nav 
+      <nav
         className='fixed bottom-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-md border-t border-slate-700'
-        role="navigation"
-        aria-label="Ana navigasyon menüsü"
+        role='navigation'
+        aria-label='Ana navigasyon menüsü'
       >
-      <div className='flex items-center justify-around h-16 px-1'>
-        {navigationItems.map(item => {
-          const isActive =
-            pathname === item.href ||
-            (item.href === '/' && pathname === '') ||
-            (item.href !== '/' && pathname?.startsWith(item.href));
+        <div className='flex items-center justify-around h-16 px-1'>
+          {navigationItems.map(item => {
+            const isActive =
+              pathname === item.href ||
+              (item.href === '/' && pathname === '') ||
+              (item.href !== '/' && pathname?.startsWith(item.href));
 
-          // Profil/Auth/Pakize sekmesi için özel tıklama işlemi
-          const isProfileOrAuth = item.name === 'Profil' || item.name === 'Giriş Yap';
-          const isPakize = item.name === 'Pakize';
+            // Profil/Auth/Pakize sekmesi için özel tıklama işlemi
+            const isProfileOrAuth =
+              item.name === 'Profil' || item.name === 'Giriş Yap';
+            const isPakize = item.name === 'Pakize';
 
-          if (isProfileOrAuth) {
-            return (
-              <button
-                key={item.name}
-                onClick={handleProfileClick}
-                className={`
+            if (isProfileOrAuth) {
+              return (
+                <button
+                  key={item.name}
+                  onClick={handleProfileClick}
+                  className={`
                   flex flex-col items-center justify-center px-2 py-2 rounded-lg
                   transition-all duration-300 min-w-0 flex-1
                   ${isActive ? 'text-amber-400' : 'text-gray-500 hover:text-gray-300'}
                 `}
-                aria-label={`${item.name} sayfasına git`}
-                aria-current={isActive ? 'page' : undefined}
-                role="menuitem"
-              >
-                <span className='text-lg mb-1'>
-                  {isActive ? item.activeIcon : item.icon}
-                </span>
-                <span className='text-xs font-medium truncate'>{item.name}</span>
-              </button>
-            );
-          }
+                  aria-label={`${item.name} sayfasına git`}
+                  aria-current={isActive ? 'page' : undefined}
+                  role='menuitem'
+                >
+                  <span className='text-lg mb-1'>
+                    {isActive ? item.activeIcon : item.icon}
+                  </span>
+                  <span className='text-xs font-medium truncate'>
+                    {item.name}
+                  </span>
+                </button>
+              );
+            }
 
-          if (isPakize) {
-            return (
-              <button
-                key={item.name}
-                onClick={handlePakizeClick}
-                className={`
+            if (isPakize) {
+              return (
+                <button
+                  key={item.name}
+                  onClick={handlePakizeClick}
+                  className={`
                   flex flex-col items-center justify-center px-2 py-2 rounded-lg
                   transition-all duration-300 min-w-0 flex-1
                   ${isActive ? 'text-amber-400' : 'text-gray-500 hover:text-gray-300'}
                 `}
-                aria-label={`${item.name} sayfasına git`}
-                aria-current={isActive ? 'page' : undefined}
-                role="menuitem"
-              >
-                <span className='text-lg mb-1'>
-                  {isActive ? item.activeIcon : item.icon}
-                </span>
-                <span className='text-xs font-medium truncate'>{item.name}</span>
-              </button>
-            );
-          }
+                  aria-label={`${item.name} sayfasına git`}
+                  aria-current={isActive ? 'page' : undefined}
+                  role='menuitem'
+                >
+                  <span className='text-lg mb-1'>
+                    {isActive ? item.activeIcon : item.icon}
+                  </span>
+                  <span className='text-xs font-medium truncate'>
+                    {item.name}
+                  </span>
+                </button>
+              );
+            }
 
-          return (
-            <Link
-              key={item.name}
-              href={item.href}
-              className={`
+            return (
+              <Link
+                key={item.name}
+                href={item.href}
+                className={`
                 flex flex-col items-center justify-center px-2 py-2 rounded-lg
                 transition-all duration-300 min-w-0 flex-1
                 ${isActive ? 'text-amber-400' : 'text-gray-500 hover:text-gray-300'}
               `}
-              aria-label={`${item.name} sayfasına git`}
-              aria-current={isActive ? 'page' : undefined}
-              role="menuitem"
-            >
-              <span className='text-lg mb-1'>
-                {isActive ? item.activeIcon : item.icon}
-              </span>
-              <span className='text-xs font-medium truncate'>{item.name}</span>
-            </Link>
-          );
-        })}
+                aria-label={`${item.name} sayfasına git`}
+                aria-current={isActive ? 'page' : undefined}
+                role='menuitem'
+              >
+                <span className='text-lg mb-1'>
+                  {isActive ? item.activeIcon : item.icon}
+                </span>
+                <span className='text-xs font-medium truncate'>
+                  {item.name}
+                </span>
+              </Link>
+            );
+          })}
 
-        {/* Dil seçici */}
-        <LanguageSelector />
-      </div>
-    </nav>
+          {/* Dil seçici */}
+          <LanguageSelector />
+        </div>
+      </nav>
     </LayoutErrorBoundary>
   );
 }

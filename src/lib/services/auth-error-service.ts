@@ -1,6 +1,6 @@
 /*
  * Auth Error Handling Service
- * 
+ *
  * Bu dosya auth error handling işlemleri için ortak service fonksiyonları sağlar.
  * DRY principle uygulayarak tekrarlanan error handling kodlarını önler.
  */
@@ -14,7 +14,7 @@ export class AuthErrorService {
    */
   static handleCallbackError(error: any, locale: string): NextResponse {
     console.error('Auth callback error:', error);
-    
+
     // Error type'a göre farklı redirect'ler
     if (error.message?.includes('expired')) {
       return this.createErrorRedirect(locale, 'token_expired');
@@ -26,13 +26,13 @@ export class AuthErrorService {
       return this.createErrorRedirect(locale, 'callback_failed');
     }
   }
-  
+
   /**
    * Email confirmation error'ını handle et
    */
   static handleConfirmationError(error: any, locale: string): NextResponse {
     console.error('Email confirmation error:', error);
-    
+
     if (error.message?.includes('expired')) {
       return this.createErrorRedirect(locale, 'token_expired');
     } else if (error.message?.includes('invalid')) {
@@ -41,14 +41,17 @@ export class AuthErrorService {
       return this.createErrorRedirect(locale, 'confirmation_failed');
     }
   }
-  
+
   /**
    * Auth error redirect oluştur
    */
-  private static createErrorRedirect(locale: string, error: string): NextResponse {
+  private static createErrorRedirect(
+    locale: string,
+    error: string
+  ): NextResponse {
     return NextResponse.redirect(`/${locale}/auth?error=${error}`);
   }
-  
+
   /**
    * Error mesajını kullanıcı dostu hale getir
    */

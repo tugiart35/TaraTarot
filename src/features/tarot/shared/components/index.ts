@@ -1,0 +1,1 @@
+export { createTarotReadingComponent } from './createTarotReadingComponent';

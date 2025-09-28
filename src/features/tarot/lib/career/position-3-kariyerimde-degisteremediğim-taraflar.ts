@@ -165,7 +165,7 @@ export const position3Meanings: CareerPositionMeaning[] = [
   },
   {
     id: 'wheel_of_fortune_pos3',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 3,
     upright:
       'Kader Çarkı, şans ve kader döngülerinin kontrolünde olmadığını söyler. Bazı inişler ve çıkışlar kaçınılmazdır.',

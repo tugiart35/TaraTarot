@@ -8,7 +8,9 @@
 
 ## 🎯 Genel Bakış
 
-Bu dokümantasyon merkezi, Tarot bileşenlerinin modüler sistemine geçiş sürecini ve yeni yapıyı detaylı olarak açıklar. Eski monolitik sistemden (v1.0) yeni modüler sisteme (v2.0) geçiş yapılmıştır.
+Bu dokümantasyon merkezi, Tarot bileşenlerinin modüler sistemine geçiş sürecini
+ve yeni yapıyı detaylı olarak açıklar. Eski monolitik sistemden (v1.0) yeni
+modüler sisteme (v2.0) geçiş yapılmıştır.
 
 ---
 
@@ -67,20 +69,21 @@ cp LoveTarot.tsx LoveTarot.tsx.backup
 
 ## 📊 Sistem Karşılaştırması
 
-| Özellik | Eski Sistem (v1.0) | Yeni Sistem (v2.0) |
-|---------|-------------------|-------------------|
-| **Dosya Boyutu** | 1123 satır | 200 satır |
-| **Maintainability** | Düşük | Yüksek |
-| **Test Edilebilirlik** | Zor | Kolay |
-| **Yeniden Kullanım** | Yok | Tam |
-| **Bundle Size** | Büyük | Küçük |
-| **Development Speed** | Yavaş | Hızlı |
+| Özellik                | Eski Sistem (v1.0) | Yeni Sistem (v2.0) |
+| ---------------------- | ------------------ | ------------------ |
+| **Dosya Boyutu**       | 1123 satır         | 200 satır          |
+| **Maintainability**    | Düşük              | Yüksek             |
+| **Test Edilebilirlik** | Zor                | Kolay              |
+| **Yeniden Kullanım**   | Yok                | Tam                |
+| **Bundle Size**        | Büyük              | Küçük              |
+| **Development Speed**  | Yavaş              | Hızlı              |
 
 ---
 
 ## 🔧 Geliştirme Araçları
 
 ### Gerekli Paketler
+
 ```json
 {
   "dependencies": {
@@ -96,6 +99,7 @@ cp LoveTarot.tsx LoveTarot.tsx.backup
 ```
 
 ### Komutlar
+
 ```bash
 # Development server
 npm run dev
@@ -121,6 +125,7 @@ npm run lint
 - **General Theme:** Green/Teal (Genel açılım)
 
 ### Özel Tema Oluşturma
+
 ```typescript
 const customTheme: FormTheme = {
   primary: 'purple',
@@ -134,11 +139,13 @@ const customTheme: FormTheme = {
 ## 🧪 Testing
 
 ### Test Stratejisi
+
 1. **Unit Tests:** Bileşen seviyesinde
 2. **Integration Tests:** Bileşen etkileşimleri
 3. **E2E Tests:** Kullanıcı akışları
 
 ### Test Örnekleri
+
 ```typescript
 // Unit test
 describe('TarotFormModal', () => {
@@ -153,12 +160,14 @@ describe('TarotFormModal', () => {
 ## 📈 Performans
 
 ### Optimizasyonlar
+
 - **Code Splitting:** Lazy loading
 - **Bundle Size:** Tree shaking
 - **Render:** Memoization
 - **Images:** Optimization
 
 ### Metrikler
+
 - **First Load:** < 2s
 - **Bundle Size:** < 500KB
 - **Lighthouse Score:** > 90
@@ -168,6 +177,7 @@ describe('TarotFormModal', () => {
 ## 🔒 Güvenlik
 
 ### Güvenlik Önlemleri
+
 - **Input Validation:** Form verileri
 - **XSS Protection:** Sanitization
 - **CSRF Protection:** Token validation
@@ -178,11 +188,13 @@ describe('TarotFormModal', () => {
 ## 🌐 Internationalization (i18n)
 
 ### Desteklenen Diller
+
 - **Türkçe (tr):** Ana dil
 - **İngilizce (en):** İkinci dil
 - **Sırpça (sr):** Üçüncü dil
 
 ### Kullanım
+
 ```typescript
 const { t } = useTranslations();
 return <h1>{t('tarot.title')}</h1>;
@@ -193,11 +205,13 @@ return <h1>{t('tarot.title')}</h1>;
 ## 📱 Responsive Design
 
 ### Breakpoints
+
 - **Mobile:** < 768px
 - **Tablet:** 768px - 1024px
 - **Desktop:** > 1024px
 
 ### Mobile-First Yaklaşım
+
 ```css
 /* Mobile first */
 .component {
@@ -224,6 +238,7 @@ return <h1>{t('tarot.title')}</h1>;
 ## ♿ Accessibility
 
 ### ARIA Labels
+
 ```tsx
 <TarotFormModal
   aria-label="Tarot reading form"
@@ -233,6 +248,7 @@ return <h1>{t('tarot.title')}</h1>;
 ```
 
 ### Keyboard Navigation
+
 - **Tab:** Form elemanları arası geçiş
 - **Enter:** Form gönderimi
 - **Escape:** Modal kapatma
@@ -242,12 +258,14 @@ return <h1>{t('tarot.title')}</h1>;
 ## 🚀 Deployment
 
 ### Production Build
+
 ```bash
 npm run build
 npm run start
 ```
 
 ### Environment Variables
+
 ```env
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_key
@@ -258,11 +276,13 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_key
 ## 📞 Destek
 
 ### Sorun Bildirimi
+
 - **GitHub Issues:** Bug reports
 - **Code Review:** Pull requests
 - **Documentation:** Wiki updates
 
 ### Geliştirme
+
 - **Feature Branch:** Yeni özellikler
 - **Pull Request:** Code review
 - **Testing:** Test coverage
@@ -272,11 +292,13 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_key
 ## 📚 Kaynaklar
 
 ### Dokümantasyon
+
 - [React Documentation](https://react.dev/)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/)
 - [Tailwind CSS](https://tailwindcss.com/)
 
 ### Araçlar
+
 - [Testing Library](https://testing-library.com/)
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
@@ -286,6 +308,7 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_key
 ## 🎉 Başarılar
 
 ### Tamamlanan Görevler
+
 - ✅ **Rate limiting** aktif edildi
 - ✅ **Console.log'lar** temizlendi
 - ✅ **ESLint hataları** düzeltildi
@@ -299,6 +322,7 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_key
 - ✅ **God Files'ları böl** (LoveTarot.tsx) - Modüler sistem oluşturuldu
 
 ### İlerleme
+
 - **Toplam Görev:** 12
 - **Tamamlanan:** 11
 - **Kalan:** 1

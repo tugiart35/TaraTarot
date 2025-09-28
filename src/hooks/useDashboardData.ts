@@ -44,35 +44,39 @@ Kullanım durumu:
 // Dashboard sayfası için veri yönetimi hook'u
 
 import { useState, useEffect, useMemo, useCallback } from 'react';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { supabase } from '@/lib/supabase/client';
 import { useAuth } from '@/hooks/auth/useAuth';
 import { useTranslations } from '@/hooks/useTranslations';
 import { useShopier } from '@/hooks/useShopier';
 import { useErrorBoundary } from '@/hooks/useErrorBoundary';
-import { ensureProfileExists } from '@/lib/utils/profile-utils';
 import { UserProfile, Reading, Package } from '@/types/dashboard.types';
-import { getReadingTitle, getReadingSummary, getCreditCost, getFallbackPackages } from '@/utils/dashboard-utils';
+import {
+  getReadingTitle,
+  getReadingSummary,
+  getReadingFormat,
+  getFormatInfo,
+  getFallbackPackages,
+} from '@/utils/dashboard-utils';
+import { READING_CREDITS } from '@/lib/constants/reading-credits';
 
 // Dashboard veri yönetimi için custom hook
 export const useDashboardData = () => {
   // Error boundary integration
   const { captureError } = useErrorBoundary();
-  
+
   // useAuth hook'undan kullanıcı bilgilerini al
-  const { user, isAuthenticated, loading: authLoading } = useAuth();
+  const { user, isAuthenticated } = useAuth();
   // useTranslations hook'undan çeviri fonksiyonunu al
   const { t: translate } = useTranslations();
   // useShopier hook'undan ödeme fonksiyonlarını al
   const { loading: paymentLoading } = useShopier();
   // Mevcut sayfa URL'ini al
   const pathname = usePathname();
-  // Programatik sayfa yönlendirme için router
-  const router = useRouter();
-  
+
   // Pathname'den locale'i çıkar (örn: /tr/dashboard -> tr)
   const currentLocale = pathname.split('/')[1] || 'tr';
-  
+
   // Component state'leri - kullanıcı profil bilgileri
   const [profile, setProfile] = useState<UserProfile | null>(null);
   // Son okumalar listesi
@@ -82,10 +86,13 @@ export const useDashboardData = () => {
   // Sayfa yükleme durumu
   const [loading, setLoading] = useState(true);
   // Admin kullanıcı kontrolü
-  const [isAdmin, setIsAdmin] = useState(false);
-  
+  const [isAdmin] = useState(false);
+
   // Toplam okuma sayısı - hesaplanan değer (memoized)
-  const totalCount = useMemo(() => recentReadings.length, [recentReadings.length]);
+  const totalCount = useMemo(
+    () => recentReadings.length,
+    [recentReadings.length]
+  );
 
   // Veri yükleme - auth kontrolü yok, herkese açık
   useEffect(() => {
@@ -93,10 +100,9 @@ export const useDashboardData = () => {
       try {
         // Batch işlemler - tüm verileri paralel olarak çek
         const promises = [];
-        
+
         // Eğer kullanıcı giriş yapmışsa profil bilgilerini al
         if (isAuthenticated && user?.id) {
-          
           // Profil bilgilerini çek
           promises.push(
             supabase
@@ -113,7 +119,7 @@ export const useDashboardData = () => {
 
           // Son okumaları çek
           promises.push(fetchRecentReadings(user.id));
-          
+
           // Son işlemleri çek
           promises.push(fetchRecentTransactions(user.id));
         }
@@ -121,27 +127,26 @@ export const useDashboardData = () => {
         // Aktif paketleri al (herkes için)
         promises.push(fetchActivePackages());
 
-        
         // Tüm işlemleri paralel olarak bekle
-        const results = await Promise.allSettled(promises);
-
+        await Promise.allSettled(promises);
       } catch (error) {
         // Capture error for debugging and user feedback
-        captureError(error instanceof Error ? error : new Error('Data loading failed'));
+        captureError(
+          error instanceof Error ? error : new Error('Data loading failed')
+        );
       }
-      
+
       setLoading(false);
     };
 
     loadData();
   }, [isAuthenticated, user?.id]); // Sadece user.id değiştiğinde çalış
 
-
   // Sayfa focus olduğunda kredi bakiyesini yenile - gerçek zamanlı güncelleme için
   useEffect(() => {
     // Debounce için timer
     let debounceTimer: NodeJS.Timeout;
-    
+
     // Pencere odaklandığında çalışacak fonksiyon
     const handleFocus = () => {
       if (isAuthenticated && user?.id) {
@@ -186,13 +191,12 @@ export const useDashboardData = () => {
     };
   }, [isAuthenticated, user?.id]); // Sadece gerekli değerler değiştiğinde çalış
 
-
   // Kredi bakiyesini yenile - gerçek zamanlı güncelleme için
   const refreshCreditBalance = async () => {
     if (!user?.id) {
       return; // Kullanıcı yoksa çık
     }
-    
+
     try {
       // Supabase'den güncel kredi bakiyesini çek
       const { data: profileData, error } = await supabase
@@ -200,14 +204,16 @@ export const useDashboardData = () => {
         .select('credit_balance')
         .eq('id', user.id)
         .single();
-      
+
       if (error) {
         return; // Hata varsa çık
       }
-      
+
       if (profileData) {
         // Profil state'ini güncelle - sadece credit_balance'ı değiştir
-        setProfile(prev => prev ? { ...prev, credit_balance: profileData.credit_balance } : null);
+        setProfile(prev =>
+          prev ? { ...prev, credit_balance: profileData.credit_balance } : null
+        );
       } else {
         // Veri yoksa hiçbir şey yapma
       }
@@ -222,11 +228,12 @@ export const useDashboardData = () => {
       // tarot_readings tablosundan son 30 günün okumalarını çek
       const thirtyDaysAgo = new Date();
       thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30); // 30 gün öncesini hesapla
-      
+
       // Sadece kullanıcının kendi okumalarını çek - doğrudan readings tablosundan
       const { data, error } = await supabase
         .from('readings')
-        .select(`
+        .select(
+          `
           id,
           user_id,
           reading_type,
@@ -237,7 +244,8 @@ export const useDashboardData = () => {
           title,
           cost_credits,
           created_at
-        `)
+        `
+        )
         .eq('user_id', userId) // Sadece bu kullanıcının okumaları
         .gte('created_at', thirtyDaysAgo.toISOString()) // Son 30 gün
         .order('created_at', { ascending: false }) // En yeni önce
@@ -248,25 +256,46 @@ export const useDashboardData = () => {
         setRecentReadings([]);
         return;
       }
-      
+
       if (data && data.length > 0) {
         // Verileri işle ve formatla - batch processing
-        const processedReadings: Reading[] = data.map((reading) => ({
-          id: reading.id,
-          user_id: reading.user_id,
-          reading_type: reading.reading_type,
-          cards: reading.cards || '',
-          interpretation: reading.interpretation || '',
-          questions: reading.questions || {},
-          status: reading.status || 'completed',
-          created_at: reading.created_at,
-          title: reading.title || getReadingTitle(reading.reading_type),
-          cost_credits: getCreditCost(reading.reading_type),
-          // Eski uyumluluk için
-          type: reading.reading_type as 'tarot' | 'numerology' | 'love' | 'simple' | 'general' | 'career',
-          summary: getReadingSummary(reading.interpretation)
-        }));
-        
+        const processedReadings: Reading[] = data.map((reading: any) => {
+          const actualCostCredits =
+            reading.cost_credits ||
+            READING_CREDITS[
+              reading.reading_type as keyof typeof READING_CREDITS
+            ] ||
+            50; // fallback
+          const format = getReadingFormat(
+            reading.reading_type,
+            actualCostCredits
+          );
+          const formatInfo = getFormatInfo(format);
+          return {
+            id: reading.id,
+            user_id: reading.user_id,
+            reading_type: reading.reading_type,
+            cards: reading.cards || '',
+            interpretation: reading.interpretation || '',
+            questions: reading.questions || {},
+            status: reading.status || 'completed',
+            created_at: reading.created_at,
+            title: reading.title || getReadingTitle(reading.reading_type),
+            cost_credits: actualCostCredits,
+            format: format,
+            formatInfo: formatInfo,
+            // Eski uyumluluk için
+            type: reading.reading_type as
+              | 'tarot'
+              | 'numerology'
+              | 'love'
+              | 'simple'
+              | 'general'
+              | 'career',
+            summary: getReadingSummary(reading.interpretation),
+          };
+        });
+
         setRecentReadings(processedReadings);
       } else {
         setRecentReadings([]);
@@ -280,11 +309,11 @@ export const useDashboardData = () => {
   // Son işlemleri getir - kullanıcının kredi işlemlerini çek (memoized)
   const fetchRecentTransactions = useCallback(async (userId: string) => {
     try {
-      
       // transactions tablosundan sadece kullanıcının kendi işlemlerini çek
       const { data, error } = await supabase
         .from('transactions')
-        .select(`
+        .select(
+          `
           id,
           user_id,
           type,
@@ -293,7 +322,8 @@ export const useDashboardData = () => {
           delta_credits,
           reason,
           created_at
-        `)
+        `
+        )
         .eq('user_id', userId) // Sadece bu kullanıcının işlemleri
         .order('created_at', { ascending: false }) // En yeni önce
         .limit(10); // Maksimum 10 işlem
@@ -313,7 +343,6 @@ export const useDashboardData = () => {
   // Aktif kredi paketlerini getir - satın alınabilir paketleri çek (memoized)
   const fetchActivePackages = useCallback(async () => {
     try {
-      
       // packages tablosundan sadece aktif paketleri çek
       const { data, error } = await supabase
         .from('packages')
@@ -329,7 +358,7 @@ export const useDashboardData = () => {
       }
       if (data && data.length > 0) {
         // Veritabanından gelen paketleri işle
-        const processedPackages: Package[] = data.map((pkg) => ({
+        const processedPackages: Package[] = data.map(pkg => ({
           id: pkg.id || Date.now(),
           name: pkg.name || 'Unnamed Package',
           description: pkg.description || '',
@@ -338,9 +367,9 @@ export const useDashboardData = () => {
           price_try: pkg.price_try || 0,
           active: pkg.active !== false,
           created_at: pkg.created_at || new Date().toISOString(),
-          shopier_product_id: pkg.shopier_product_id || undefined
+          shopier_product_id: pkg.shopier_product_id || undefined,
         }));
-        
+
         setPackages(processedPackages); // İşlenmiş paketleri set et
       } else {
         // Veri yoksa fallback paketler kullan
@@ -361,15 +390,15 @@ export const useDashboardData = () => {
     isAdmin,
     totalCount,
     currentLocale,
-    
+
     // Actions
     refreshCreditBalance,
     setProfile, // Profile state setter'ı export et
-    
+
     // User data
     user,
     isAuthenticated,
     paymentLoading,
-    translate
+    translate,
   };
 };

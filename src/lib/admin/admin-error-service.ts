@@ -1,6 +1,6 @@
 /*
  * Admin Error Service
- * 
+ *
  * Bu dosya admin paneli için ortak error handling service'ini sağlar.
  * DRY principle uygulayarak tekrarlanan error handling kodlarını önler.
  */
@@ -18,17 +18,32 @@ export class AdminErrorService {
     const errorMessage = error instanceof Error ? error.message : String(error);
     if (errorMessage.includes('network') || errorMessage.includes('fetch')) {
       return 'Ağ bağlantısı hatası. Lütfen internet bağlantınızı kontrol edin ve tekrar deneyin.';
-    } else if (errorMessage.includes('permission') || errorMessage.includes('unauthorized')) {
+    } else if (
+      errorMessage.includes('permission') ||
+      errorMessage.includes('unauthorized')
+    ) {
       return 'Bu işlem için yetkiniz bulunmuyor. Lütfen admin yetkilerinizi kontrol edin.';
-    } else if (errorMessage.includes('not found') || errorMessage.includes('404')) {
+    } else if (
+      errorMessage.includes('not found') ||
+      errorMessage.includes('404')
+    ) {
       return 'Kayıt bulunamadı. Lütfen sayfayı yenileyin ve tekrar deneyin.';
-    } else if (errorMessage.includes('duplicate') || errorMessage.includes('already exists')) {
+    } else if (
+      errorMessage.includes('duplicate') ||
+      errorMessage.includes('already exists')
+    ) {
       return 'Bu kayıt zaten mevcut. Lütfen farklı bir değer deneyin.';
-    } else if (errorMessage.includes('validation') || errorMessage.includes('invalid')) {
+    } else if (
+      errorMessage.includes('validation') ||
+      errorMessage.includes('invalid')
+    ) {
       return 'Girilen bilgiler geçersiz. Lütfen formu kontrol edin ve tekrar deneyin.';
     } else if (errorMessage.includes('timeout')) {
       return 'İşlem zaman aşımına uğradı. Lütfen tekrar deneyin.';
-    } else if (errorMessage.includes('server') || errorMessage.includes('500')) {
+    } else if (
+      errorMessage.includes('server') ||
+      errorMessage.includes('500')
+    ) {
       return 'Sunucu hatası. Lütfen daha sonra tekrar deneyin.';
     } else {
       return 'Beklenmeyen bir hata oluştu. Lütfen tekrar deneyin.';
@@ -38,13 +53,17 @@ export class AdminErrorService {
   /**
    * Admin action'ını logla
    */
-  static logAdminAction(action: string, details: Record<string, unknown>): void {
+  static logAdminAction(
+    action: string,
+    details: Record<string, unknown>
+  ): void {
     const logData = {
       action,
       details,
       timestamp: new Date().toISOString(),
-      userAgent: typeof window !== 'undefined' ? window.navigator.userAgent : 'server',
-      url: typeof window !== 'undefined' ? window.location.href : 'server'
+      userAgent:
+        typeof window !== 'undefined' ? window.navigator.userAgent : 'server',
+      url: typeof window !== 'undefined' ? window.location.href : 'server',
     };
 
     // Action logging is handled by monitoring system
@@ -59,11 +78,15 @@ export class AdminErrorService {
   /**
    * Error boundary için error objesi oluştur
    */
-  static createErrorObject(code: string, message: string, details?: Record<string, unknown>): AdminError {
+  static createErrorObject(
+    code: string,
+    message: string,
+    details?: Record<string, unknown>
+  ): AdminError {
     return {
       code,
       message,
-      details
+      details,
     };
   }
 

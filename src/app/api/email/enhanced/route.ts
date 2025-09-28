@@ -27,10 +27,10 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { userEmail } = body;
 
-    // Test okuma verisi (Enhanced tarzında)
+    // Test okuma verisi (Enhanced tarzında) - Farklı formatları test et
     const readingData = {
       id: 'enhanced-test-reading-123',
-      reading_type: 'love',
+      reading_type: 'LOVE_SPREAD_DETAILED', // Sesli okuma için
       title: 'Aşk Açılımı - Detaylı Kişisel Okuma',
       spread_name: 'Aşk Yayılımı',
       cards: [
@@ -75,6 +75,8 @@ Bu açılım, Kılıçlar İkilisi kartının temsil ettiği kişiyle olan iliş
           email: userEmail || 'test@example.com',
           surname: 'Yılmaz',
           birthDate: '1993-11-11',
+          phone: '+90 555 123 4567',
+          whatsapp: true,
         },
         userQuestions: {
           concern: {
@@ -93,11 +95,20 @@ Bu açılım, Kılıçlar İkilisi kartının temsil ettiği kişiyle olan iliş
               'Karışık duygular içindeyim, hem umutlu hem de endişeliyim.',
           },
         },
+        questions: [
+          'Aşk hayatınızda sizi en çok endişelendiren konu nedir?',
+          'Bu aşk açılımı ile neyi anlamak istiyorsunuz?',
+          'Şu anda duygusal olarak nasıl hissediyorsunuz?'
+        ],
       },
       status: 'completed',
       created_at: new Date().toISOString(),
-      cost_credits: 50,
+      cost_credits: 70, // Sesli okuma için 70 kredi
       admin_notes: 'Test okuma - Enhanced email oluşturma',
+      metadata: {
+        readingFormat: 'detailed', // Sesli okuma formatı
+        readingFormatTr: 'Sesli Detaylı Okuma'
+      }
     };
 
     console.log('Enhanced email ile PDF oluşturuluyor...');

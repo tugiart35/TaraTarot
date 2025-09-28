@@ -12,7 +12,8 @@ interface AdminUser extends AuthUser {
 }
 
 export function useAuthAdmin() {
-  const { user, loading, error, isAuthenticated, clearError, refreshSession } = useAuthBase<AdminUser>();
+  const { user, loading, error, isAuthenticated, clearError, refreshSession } =
+    useAuthBase<AdminUser>();
   const [admin, setAdmin] = useState<AdminUser | null>(null);
 
   // Admin session kontrolü - Supabase ile entegre
@@ -32,7 +33,9 @@ export function useAuthAdmin() {
   // Supabase'den admin kontrolü yap
   const checkSupabaseAdmin = useCallback(async () => {
     try {
-      if (!user) return false;
+      if (!user) {
+        return false;
+      }
 
       // Profiles tablosundan admin kontrolü yap
       const { data: profile, error: profileError } = await supabase
@@ -51,9 +54,9 @@ export function useAuthAdmin() {
         id: profile.id,
         email: profile.email,
         is_admin: profile.is_admin,
-        display_name: profile.display_name
+        display_name: profile.display_name,
       };
-      
+
       setAdmin(adminUser);
       return true;
     } catch (error) {
@@ -74,14 +77,14 @@ export function useAuthAdmin() {
       // Önce basit admin kontrolü yap (SimpleAdminLogin ile uyumlu)
       if (email === 'tugi@admin.com' && password === 'Tugay.888') {
         console.log('🔐 Basit admin girişi başarılı:', email);
-        
+
         const adminUser: AdminUser = {
           id: 'admin-session',
           email: email,
           is_admin: true,
-          display_name: 'Admin User'
+          display_name: 'Admin User',
         };
-        
+
         setAdmin(adminUser);
         return { success: true, error: null };
       }
@@ -101,7 +104,7 @@ export function useAuthAdmin() {
 
       if (data.user) {
         console.log('🔐 Supabase giriş başarılı, admin kontrolü yapılıyor...');
-        
+
         // Admin kontrolü yap
         const { data: profile, error: profileError } = await supabase
           .from('profiles')
@@ -113,7 +116,10 @@ export function useAuthAdmin() {
         if (profileError || !profile) {
           console.log('🔐 Admin yetkisi yok, çıkış yapılıyor...');
           await supabase.auth.signOut();
-          return { success: false, error: 'Bu hesap admin yetkisine sahip değil.' };
+          return {
+            success: false,
+            error: 'Bu hesap admin yetkisine sahip değil.',
+          };
         }
 
         console.log('🔐 Supabase admin girişi başarılı:', profile.email);
@@ -123,9 +129,9 @@ export function useAuthAdmin() {
           id: profile.id,
           email: profile.email,
           is_admin: profile.is_admin,
-          display_name: profile.display_name
+          display_name: profile.display_name,
         };
-        
+
         setAdmin(adminUser);
         return { success: true, error: null };
       }

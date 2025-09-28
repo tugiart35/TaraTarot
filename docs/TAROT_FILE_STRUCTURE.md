@@ -20,11 +20,13 @@
 ## 🎯 Genel Bakış
 
 ### Önceki Sistem (v1.0)
+
 - **Tek dosya:** `LoveTarot.tsx` (1123 satır)
 - **Sorunlar:** Maintainability düşük, kod tekrarı, test zorluğu
 - **Yeniden kullanım:** Yok
 
 ### Yeni Sistem (v2.0)
+
 - **Modüler yapı:** 6 ana bileşen + shared bileşenler
 - **Avantajlar:** Maintainability yüksek, kod tekrarı yok, test kolay
 - **Yeniden kullanım:** Tam destek
@@ -65,14 +67,17 @@ src/features/tarot/components/
 ### 🆕 Shared Bileşenler
 
 #### 1. `TarotFormModal.tsx`
+
 **Amaç:** Kişisel bilgi formu (ad, doğum tarihi, soru)  
 **Özellikler:**
+
 - Tema desteği (pink, purple, blue, green)
 - Form validasyonu
 - Responsive tasarım
 - i18n desteği
 
 **Kullanım:**
+
 ```tsx
 <TarotFormModal
   isOpen={showForm}
@@ -83,14 +88,17 @@ src/features/tarot/components/
 ```
 
 #### 2. `CreditConfirmModal.tsx`
+
 **Amaç:** Kredi onay modalı  
 **Özellikler:**
+
 - Kredi miktarı gösterimi
 - Onay/İptal butonları
 - Tema desteği
 - Loading state
 
 **Kullanım:**
+
 ```tsx
 <CreditConfirmModal
   isOpen={showCreditModal}
@@ -102,14 +110,17 @@ src/features/tarot/components/
 ```
 
 #### 3. `SuccessModal.tsx`
+
 **Amaç:** Başarı modalı (okuma tamamlandıktan sonra)  
 **Özellikler:**
+
 - Başarı mesajı
 - Paylaşım butonları
 - Yeni okuma butonu
 - Tema desteği
 
 **Kullanım:**
+
 ```tsx
 <SuccessModal
   isOpen={showSuccessModal}
@@ -120,14 +131,17 @@ src/features/tarot/components/
 ```
 
 #### 4. `TarotReadingLayout.tsx`
+
 **Amaç:** Ana layout wrapper  
 **Özellikler:**
+
 - Header, content, footer alanları
 - Tema desteği
 - Responsive tasarım
 - Loading state
 
 **Kullanım:**
+
 ```tsx
 <TarotReadingLayout
   theme={loveLayoutTheme}
@@ -139,14 +153,17 @@ src/features/tarot/components/
 ```
 
 #### 5. `TarotReadingSaver.tsx`
+
 **Amaç:** Okuma kaydetme utility'si  
 **Özellikler:**
+
 - Supabase entegrasyonu
 - Error handling
 - Loading state
 - Success callback
 
 **Kullanım:**
+
 ```tsx
 <TarotReadingSaver
   reading={readingData}
@@ -158,33 +175,42 @@ src/features/tarot/components/
 ### 🔄 Mevcut Bileşenler (Korundu)
 
 #### 1. `LoveTarot.tsx` (Yeni)
+
 **Amaç:** Ana bileşen - yeni refactor edilmiş bileşeni export eder  
 **Satır:** 33 (önceden 1123)
 
 #### 2. `LoveCardRenderer.tsx`
+
 **Amaç:** Kart render bileşeni  
 **Özellikler:**
+
 - Kart animasyonları
 - Hover efektleri
 - Responsive tasarım
 
 #### 3. `LoveInterpretation.tsx`
+
 **Amaç:** Yorumlama bileşeni  
 **Özellikler:**
+
 - Pozisyon açıklamaları
 - Kart yorumları
 - Detaylı analiz
 
 #### 4. `LoveGuidanceDetail.tsx`
+
 **Amaç:** Rehberlik detay bileşeni  
 **Özellikler:**
+
 - Detaylı rehberlik
 - Öneriler
 - Uyarılar
 
 #### 5. `love-config.ts`
+
 **Amaç:** Konfigürasyon dosyası  
 **İçerik:**
+
 - Pozisyon bilgileri
 - Layout konfigürasyonu
 - Kart sayısı
@@ -238,9 +264,7 @@ const LoveReadingRefactored = () => {
       />
 
       {/* Ana içerik */}
-      <div className="reading-content">
-        {/* Kart render ve yorumlama */}
-      </div>
+      <div className="reading-content">{/* Kart render ve yorumlama */}</div>
     </TarotReadingLayout>
   );
 };
@@ -275,12 +299,14 @@ const CareerReadingRefactored = () => {
 ## 🚀 Gelecek Geliştirmeler
 
 ### Planlanan Açılım Türleri
+
 1. **Kariyer Açılımı** (Career Spread)
 2. **Genel Açılım** (General Spread)
 3. **Gelecek Açılımı** (Future Spread)
 4. **İlişki Açılımı** (Relationship Spread)
 
 ### Teknik İyileştirmeler
+
 1. **Lazy Loading** - Büyük bileşenler için
 2. **Code Splitting** - Bundle size optimizasyonu
 3. **TypeScript** - Tip güvenliği artırma
@@ -288,6 +314,7 @@ const CareerReadingRefactored = () => {
 5. **Performance** - Render optimizasyonu
 
 ### UI/UX İyileştirmeleri
+
 1. **Animasyonlar** - Daha smooth geçişler
 2. **Responsive** - Mobil optimizasyon
 3. **Accessibility** - Erişilebilirlik
@@ -300,18 +327,21 @@ const CareerReadingRefactored = () => {
 ### Eski Sistemden Yeni Sisteme Geçiş
 
 #### 1. Backup Alma
+
 ```bash
 # Eski dosyayı backup olarak kaydet
 cp LoveTarot.tsx LoveTarot.tsx.backup
 ```
 
 #### 2. Yeni Bileşenleri Oluşturma
+
 ```bash
 # Shared bileşenleri oluştur
 mkdir -p src/features/tarot/components/shared/{forms,modals,layouts,utils}
 ```
 
 #### 3. Import'ları Güncelleme
+
 ```tsx
 // Eski
 import { LOVE_POSITIONS_INFO } from './love-config';
@@ -321,6 +351,7 @@ import { LOVE_POSITIONS_INFO } from '../../Love-Spread/love-config';
 ```
 
 #### 4. Test Etme
+
 ```bash
 # Development server'ı başlat
 npm run dev
@@ -333,20 +364,21 @@ curl http://localhost:3111/tr/tarotokumasi
 
 ## 📊 Performans Karşılaştırması
 
-| Metrik | Eski Sistem | Yeni Sistem | İyileşme |
-|--------|-------------|-------------|----------|
-| Dosya Boyutu | 1123 satır | 200 satır | 82% azalma |
-| Maintainability | Düşük | Yüksek | ✅ |
-| Test Edilebilirlik | Zor | Kolay | ✅ |
-| Yeniden Kullanım | Yok | Tam | ✅ |
-| Bundle Size | Büyük | Küçük | ✅ |
-| Development Speed | Yavaş | Hızlı | ✅ |
+| Metrik             | Eski Sistem | Yeni Sistem | İyileşme   |
+| ------------------ | ----------- | ----------- | ---------- |
+| Dosya Boyutu       | 1123 satır  | 200 satır   | 82% azalma |
+| Maintainability    | Düşük       | Yüksek      | ✅         |
+| Test Edilebilirlik | Zor         | Kolay       | ✅         |
+| Yeniden Kullanım   | Yok         | Tam         | ✅         |
+| Bundle Size        | Büyük       | Küçük       | ✅         |
+| Development Speed  | Yavaş       | Hızlı       | ✅         |
 
 ---
 
 ## 🔧 Geliştirici Notları
 
 ### Best Practices
+
 1. **Tema kullanımı:** Her açılım için uygun tema seç
 2. **Error handling:** Tüm bileşenlerde error boundary kullan
 3. **Loading states:** Kullanıcı deneyimi için loading göster
@@ -354,6 +386,7 @@ curl http://localhost:3111/tr/tarotokumasi
 5. **Accessibility:** ARIA labels ve keyboard navigation
 
 ### Debugging
+
 1. **Console.log'lar:** Development'ta kullan, production'da kaldır
 2. **Error boundaries:** Hata yakalama için
 3. **DevTools:** React DevTools kullan
@@ -364,11 +397,13 @@ curl http://localhost:3111/tr/tarotokumasi
 ## 📞 Destek
 
 **Sorunlar için:**
+
 - GitHub Issues kullan
 - Code review yap
 - Test coverage artır
 
 **Geliştirme için:**
+
 - Feature branch kullan
 - Pull request oluştur
 - Documentation güncelle

@@ -1,12 +1,12 @@
 /*
  * DASHBOARD YARDIMCI FONKSİYONLARI
- * 
+ *
  * Dosya Amacı: Dashboard sayfasında kullanılan yardımcı fonksiyonları içerir
- * 
+ *
  * Bağlı Dosyalar:
  * - src/components/dashboard/WelcomeSection.tsx (getMemberSince, formatDate kullanır)
  * - src/app/[locale]/dashboard/page.tsx (dashboard ana sayfası)
- * 
+ *
  * Fonksiyonlar:
  * - getPackageStyle: Kredi miktarına göre paket stili belirler
  * - formatCredits: Kredi miktarını formatlar (1000+ için K kullanır)
@@ -15,9 +15,9 @@
  * - getPackageBonus: Bonus kredi bilgisi hesaplar
  * - formatDate: Tarihi Türkçe formatta gösterir
  * - getMemberSince: Üyelik süresini hesaplar ve Türkçe olarak döner
- * 
+ *
  * Durum: Aktif kullanımda, hata düzeltildi
- * 
+ *
  * Geliştirme Önerileri:
  * - Tarih hesaplamalarını daha hassas hale getirilebilir
  * - Çoklu dil desteği eklenebilir
@@ -26,14 +26,7 @@
 
 // Dashboard yardımcı fonksiyonları
 
-import {
-  Star,
-  Zap,
-  Crown,
-  Gem,
-  Sparkles,
-  Coins,
-} from 'lucide-react';
+import { Star, Zap, Crown, Gem, Sparkles, Coins } from 'lucide-react';
 
 // Paket stil arayüzü
 export interface PackageStyle {
@@ -56,7 +49,8 @@ export function getPackageStyle(credits: number): PackageStyle {
       borderColor: 'border-blue-200',
       iconColor: 'text-blue-600',
       creditColor: 'text-blue-600',
-      buttonClass: 'bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors',
+      buttonClass:
+        'bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors',
       isPopular: false,
     };
   } else if (credits <= 100) {
@@ -67,7 +61,8 @@ export function getPackageStyle(credits: number): PackageStyle {
       borderColor: 'border-green-200',
       iconColor: 'text-green-600',
       creditColor: 'text-green-600',
-      buttonClass: 'bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition-colors',
+      buttonClass:
+        'bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition-colors',
       isPopular: false,
     };
   } else if (credits <= 200) {
@@ -78,7 +73,8 @@ export function getPackageStyle(credits: number): PackageStyle {
       borderColor: 'border-yellow-200',
       iconColor: 'text-yellow-600',
       creditColor: 'text-yellow-600',
-      buttonClass: 'bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg transition-colors',
+      buttonClass:
+        'bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg transition-colors',
       isPopular: true,
     };
   } else if (credits <= 500) {
@@ -89,7 +85,8 @@ export function getPackageStyle(credits: number): PackageStyle {
       borderColor: 'border-purple-200',
       iconColor: 'text-purple-600',
       creditColor: 'text-purple-600',
-      buttonClass: 'bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-lg transition-colors',
+      buttonClass:
+        'bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-lg transition-colors',
       isPopular: false,
     };
   } else if (credits <= 1000) {
@@ -100,7 +97,8 @@ export function getPackageStyle(credits: number): PackageStyle {
       borderColor: 'border-pink-200',
       iconColor: 'text-pink-600',
       creditColor: 'text-pink-600',
-      buttonClass: 'bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg transition-colors',
+      buttonClass:
+        'bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg transition-colors',
       isPopular: false,
     };
   } else {
@@ -111,7 +109,8 @@ export function getPackageStyle(credits: number): PackageStyle {
       borderColor: 'border-purple-300',
       iconColor: 'text-purple-600',
       creditColor: 'text-purple-600',
-      buttonClass: 'bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-4 py-2 rounded-lg transition-all',
+      buttonClass:
+        'bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-4 py-2 rounded-lg transition-all',
       isPopular: true,
     };
   }
@@ -181,7 +180,7 @@ export function formatDate(dateString: string): string {
   return date.toLocaleDateString('tr-TR', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric'
+    day: 'numeric',
   });
 }
 
@@ -213,6 +212,21 @@ export function getMemberSince(dateString: string): string {
 // Okuma türüne göre başlık oluşturma fonksiyonu
 export function getReadingTitle(readingType: string): string {
   switch (readingType) {
+    case 'LOVE_SPREAD_DETAILED':
+      return 'Aşk Açılımı - Sesli Detaylı Okuma';
+    case 'LOVE_SPREAD_WRITTEN':
+      return 'Aşk Açılımı - Yazılı Okuma';
+    case 'LOVE_SPREAD_SIMPLE':
+      return 'Aşk Açılımı - Basit Okuma';
+    case 'GENERAL_SPREAD':
+      return 'Genel Açılım - Sesli Okuma';
+    case 'THREE_CARD_SPREAD':
+      return '3 Kart Okuması - Basit Okuma';
+    case 'CAREER_SPREAD':
+      return 'Kariyer Açılımı - Sesli Okuma';
+    case 'NUMEROLOGY_READING':
+      return 'Numeroloji Okuması';
+    // Eski format desteği
     case 'love':
       return 'Aşk Açılımı';
     case 'general':
@@ -244,30 +258,85 @@ export function getReadingTitle(readingType: string): string {
   }
 }
 
-// Okuma türüne göre kredi maliyeti hesaplama fonksiyonu
-export function getCreditCost(readingType: string): number {
+
+// Okuma formatını belirle (sesli/yazılı/basit)
+export function getReadingFormat(readingType: string, costCredits?: number): 'audio' | 'written' | 'simple' {
+  // Önce cost_credits'e göre format belirle (daha güvenilir)
+  if (costCredits) {
+    if (costCredits === 60) {
+      return 'written'; // 60 kredi = yazılı okuma (LOVE_SPREAD_WRITTEN)
+    } else if (costCredits === 70) {
+      return 'audio'; // 70 kredi = sesli detaylı okuma (LOVE_SPREAD_DETAILED)
+    } else if (costCredits <= 50) {
+      return 'simple'; // 50 ve altı = basit okuma
+    } else if (costCredits >= 80) {
+      return 'audio'; // 80+ kredi = detaylı sesli okumalar
+    }
+  }
+  
+  // Fallback: reading_type'a göre belirle
   switch (readingType) {
-    case 'love':
-    case 'general':
-    case 'career':
-      return 5;
-    case 'marriage':
-    case 'new-lover':
-    case 'relationship-analysis':
-    case 'relationship-problems':
-      return 8;
-    case 'problem-solving':
-    case 'situation-analysis':
-      return 6;
-    case 'written':
-    case 'detailed':
-      return 10;
-    case 'numerology':
-      return 3;
-    case 'tarot':
-      return 4;
+    case 'LOVE_SPREAD_DETAILED':
+    case 'GENERAL_SPREAD':
+    case 'CAREER_SPREAD':
+    case 'CAREER_SPREAD_DETAILED':
+    case 'PROBLEM_SOLVING_DETAILED':
+    case 'SITUATION_ANALYSIS_DETAILED':
+    case 'RELATIONSHIP_ANALYSIS_DETAILED':
+    case 'RELATIONSHIP_PROBLEMS_DETAILED':
+    case 'MARRIAGE_DETAILED':
+    case 'NEW_LOVER_DETAILED':
+    case 'MONEY_SPREAD_DETAILED':
+      return 'audio'; // Detaylı okumalar sesli
+    case 'LOVE_SPREAD_WRITTEN':
+    case 'CAREER_SPREAD_WRITTEN':
+    case 'PROBLEM_SOLVING_WRITTEN':
+    case 'SITUATION_ANALYSIS_WRITTEN':
+    case 'RELATIONSHIP_ANALYSIS_WRITTEN':
+    case 'RELATIONSHIP_PROBLEMS_WRITTEN':
+    case 'MARRIAGE_WRITTEN':
+    case 'NEW_LOVER_WRITTEN':
+    case 'MONEY_SPREAD_WRITTEN':
+      return 'written'; // Yazılı okumalar
+    case 'LOVE_SPREAD_SIMPLE':
+    case 'THREE_CARD_SPREAD':
+      return 'simple'; // Basit okumalar
     default:
-      return 5;
+      return 'audio'; // Varsayılan
+  }
+}
+
+// Format bilgisi için etiket ve ikon
+export function getFormatInfo(format: 'audio' | 'written' | 'simple') {
+  switch (format) {
+    case 'audio':
+      return {
+        label: 'Sesli',
+        icon: '🎵',
+        color: 'bg-blue-500/20 text-blue-400 border-blue-500/30',
+        iconComponent: '🔊',
+      };
+    case 'written':
+      return {
+        label: 'Yazılı',
+        icon: '📝',
+        color: 'bg-green-500/20 text-green-400 border-green-500/30',
+        iconComponent: '📄',
+      };
+    case 'simple':
+      return {
+        label: 'Basit',
+        icon: '⚡',
+        color: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30',
+        iconComponent: '⚡',
+      };
+    default:
+      return {
+        label: 'Bilinmiyor',
+        icon: '❓',
+        color: 'bg-gray-500/20 text-gray-400 border-gray-500/30',
+        iconComponent: '❓',
+      };
   }
 }
 
@@ -306,10 +375,10 @@ export function downloadReading(reading: any) {
     // JSON dosyası oluştur
     const jsonString = JSON.stringify(readingData, null, 2);
     const blob = new Blob([jsonString], { type: 'application/json' });
-    
+
     // Dosya adı oluştur
     const fileName = `tarot-okuma-${reading.id}-${new Date(reading.created_at).toISOString().split('T')[0]}.json`;
-    
+
     // İndirme linki oluştur ve tıkla
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
@@ -319,7 +388,7 @@ export function downloadReading(reading: any) {
     link.click();
     document.body.removeChild(link);
     URL.revokeObjectURL(url);
-    
+
     return true;
   } catch (error) {
     console.error('Okuma indirme hatası:', error);

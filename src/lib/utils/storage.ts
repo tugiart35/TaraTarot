@@ -1,6 +1,6 @@
 /*
  * Storage Utility
- * 
+ *
  * Bu dosya Supabase ile entegre çalışan güvenli storage utility fonksiyonları içerir.
  * localStorage yerine Supabase session kullanır.
  */
@@ -13,7 +13,9 @@ export class Storage {
    */
   static async get<T>(key: string): Promise<T | null> {
     try {
-      const { data: { session } } = await supabase.auth.getSession();
+      const {
+        data: { session },
+      } = await supabase.auth.getSession();
       if (session?.user) {
         // User metadata'dan veri al
         return session.user.user_metadata?.[key] || null;
@@ -30,13 +32,15 @@ export class Storage {
    */
   static async set<T>(key: string, value: T): Promise<void> {
     try {
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (user) {
         // User metadata'yı güncelle
         const { error } = await supabase.auth.updateUser({
-          data: { ...user.user_metadata, [key]: value }
+          data: { ...user.user_metadata, [key]: value },
         });
-        
+
         if (error) {
           console.error(`Storage set error for key ${key}:`, error);
         }
@@ -51,15 +55,17 @@ export class Storage {
    */
   static async remove(key: string): Promise<void> {
     try {
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (user) {
         const updatedMetadata = { ...user.user_metadata };
         delete updatedMetadata[key];
-        
+
         const { error } = await supabase.auth.updateUser({
-          data: updatedMetadata
+          data: updatedMetadata,
         });
-        
+
         if (error) {
           console.error(`Storage remove error for key ${key}:`, error);
         }
@@ -85,7 +91,9 @@ export class Storage {
    */
   static async has(key: string): Promise<boolean> {
     try {
-      const { data: { session } } = await supabase.auth.getSession();
+      const {
+        data: { session },
+      } = await supabase.auth.getSession();
       return session?.user?.user_metadata?.[key] !== undefined;
     } catch (error) {
       console.error(`Storage has error for key ${key}:`, error);
@@ -99,7 +107,10 @@ export class AuthStorage {
   /**
    * Remember me bilgilerini kaydetme
    */
-  static async setRememberMe(email: string, rememberMe: boolean): Promise<void> {
+  static async setRememberMe(
+    email: string,
+    rememberMe: boolean
+  ): Promise<void> {
     if (rememberMe && email) {
       await Storage.set('rememberMe', { email, rememberMe });
     } else {
@@ -110,7 +121,10 @@ export class AuthStorage {
   /**
    * Remember me bilgilerini alma
    */
-  static async getRememberMe(): Promise<{ email: string; rememberMe: boolean } | null> {
+  static async getRememberMe(): Promise<{
+    email: string;
+    rememberMe: boolean;
+  } | null> {
     return await Storage.get('rememberMe');
   }
 

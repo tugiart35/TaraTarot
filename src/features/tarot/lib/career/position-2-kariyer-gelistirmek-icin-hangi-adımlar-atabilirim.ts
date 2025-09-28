@@ -160,7 +160,7 @@ export const position2Meanings: CareerPositionMeaning[] = [
   },
   {
     id: 'wheel_of_fortune_pos2',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 2,
     upright:
       'Kader Çarkı, değişimlere uyum sağlayarak fırsatları yakalaman gerektiğini söyler. Şans karşına çıkabilir, açık olmalısın.',

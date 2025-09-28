@@ -10,6 +10,7 @@
 ## ✅ Pre-Deployment Validation
 
 ### 1. **Code Quality Checks**
+
 - [x] TypeScript compilation passes (`npm run typecheck`)
 - [x] ESLint checks pass (`npm run lint`)
 - [x] Prettier formatting applied (`npm run format`)
@@ -18,6 +19,7 @@
 - [x] No circular dependencies
 
 ### 2. **Build Validation**
+
 - [x] Production build succeeds (`npm run build`)
 - [x] No build errors or warnings
 - [x] All pages compile successfully
@@ -25,6 +27,7 @@
 - [x] Bundle size optimized
 
 ### 3. **Security Validation**
+
 - [x] No hardcoded secrets in code
 - [x] Environment variables properly configured
 - [x] API routes have proper runtime configuration
@@ -33,6 +36,7 @@
 - [x] RLS policies active
 
 ### 4. **Functionality Tests**
+
 - [x] Dashboard auth protection working
 - [x] i18n fallback mechanism working (tr → en → sr)
 - [x] API endpoints responding correctly
@@ -45,6 +49,7 @@
 ## 🔧 Environment Configuration
 
 ### 1. **Required Environment Variables**
+
 ```bash
 # Supabase Configuration
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
@@ -63,6 +68,7 @@ NEXT_PUBLIC_APP_NAME=Tarot Web
 ```
 
 ### 2. **Database Setup**
+
 - [ ] Supabase project created
 - [ ] Database migrations applied
 - [ ] RLS policies configured
@@ -70,6 +76,7 @@ NEXT_PUBLIC_APP_NAME=Tarot Web
 - [ ] Backup strategy implemented
 
 ### 3. **Domain & SSL**
+
 - [ ] Domain configured
 - [ ] SSL certificate installed
 - [ ] DNS records updated
@@ -80,6 +87,7 @@ NEXT_PUBLIC_APP_NAME=Tarot Web
 ## 🚀 Deployment Steps
 
 ### 1. **Build Process**
+
 ```bash
 # Install dependencies
 npm ci
@@ -98,6 +106,7 @@ npm start
 ```
 
 ### 2. **Server Configuration**
+
 - [ ] Node.js 18+ installed
 - [ ] PM2 or similar process manager configured
 - [ ] Nginx reverse proxy configured
@@ -105,6 +114,7 @@ npm start
 - [ ] Monitoring tools installed
 
 ### 3. **Performance Optimization**
+
 - [ ] Gzip compression enabled
 - [ ] Static file caching configured
 - [ ] Database connection pooling
@@ -116,6 +126,7 @@ npm start
 ## 🔍 Post-Deployment Validation
 
 ### 1. **Health Checks**
+
 - [ ] Homepage loads correctly
 - [ ] Authentication flow works
 - [ ] Dashboard accessible to logged-in users
@@ -124,6 +135,7 @@ npm start
 - [ ] Payment integration working (if applicable)
 
 ### 2. **Performance Monitoring**
+
 - [ ] Page load times < 3 seconds
 - [ ] Core Web Vitals within acceptable ranges
 - [ ] Database query performance optimized
@@ -131,6 +143,7 @@ npm start
 - [ ] Uptime monitoring active
 
 ### 3. **Security Validation**
+
 - [ ] HTTPS enforced
 - [ ] Security headers present
 - [ ] No sensitive data exposed
@@ -143,6 +156,7 @@ npm start
 ## 📊 Monitoring & Alerting
 
 ### 1. **Application Monitoring**
+
 - [ ] Error tracking (Sentry) configured
 - [ ] Performance monitoring active
 - [ ] Uptime monitoring configured
@@ -150,6 +164,7 @@ npm start
 - [ ] Alert thresholds configured
 
 ### 2. **Business Metrics**
+
 - [ ] User analytics tracking
 - [ ] Conversion tracking
 - [ ] Revenue tracking (if applicable)
@@ -161,6 +176,7 @@ npm start
 ## 🔄 Rollback Plan
 
 ### 1. **Rollback Triggers**
+
 - Error rate > 5%
 - Performance degradation > 50%
 - Security vulnerability detected
@@ -168,6 +184,7 @@ npm start
 - User complaints > threshold
 
 ### 2. **Rollback Process**
+
 ```bash
 # 1. Stop current deployment
 pm2 stop tarot-app
@@ -191,18 +208,21 @@ curl -f https://your-domain.com/health
 ## 📋 Maintenance Tasks
 
 ### 1. **Daily Tasks**
+
 - [ ] Monitor error rates
 - [ ] Check system resources
 - [ ] Review security logs
 - [ ] Monitor user feedback
 
 ### 2. **Weekly Tasks**
+
 - [ ] Review performance metrics
 - [ ] Update dependencies (if needed)
 - [ ] Backup verification
 - [ ] Security scan
 
 ### 3. **Monthly Tasks**
+
 - [ ] Full security audit
 - [ ] Performance optimization review
 - [ ] Dependency updates
@@ -213,15 +233,18 @@ curl -f https://your-domain.com/health
 ## 🆘 Emergency Contacts
 
 ### 1. **Technical Team**
+
 - **Lead Developer:** [Contact Info]
 - **DevOps Engineer:** [Contact Info]
 - **Database Admin:** [Contact Info]
 
 ### 2. **Business Team**
+
 - **Product Manager:** [Contact Info]
 - **Customer Support:** [Contact Info]
 
 ### 3. **External Services**
+
 - **Supabase Support:** [Contact Info]
 - **Hosting Provider:** [Contact Info]
 - **Domain Registrar:** [Contact Info]
@@ -231,12 +254,14 @@ curl -f https://your-domain.com/health
 ## 📚 Documentation
 
 ### 1. **Technical Documentation**
+
 - [ ] API documentation updated
 - [ ] Database schema documented
 - [ ] Deployment guide updated
 - [ ] Troubleshooting guide created
 
 ### 2. **User Documentation**
+
 - [ ] User manual updated
 - [ ] FAQ updated
 - [ ] Support documentation ready
@@ -247,11 +272,13 @@ curl -f https://your-domain.com/health
 ## ✅ Final Sign-off
 
 ### Deployment Approval
-- [ ] **Technical Lead:** _________________ Date: _______
-- [ ] **Product Manager:** _________________ Date: _______
-- [ ] **DevOps Engineer:** _________________ Date: _______
+
+- [ ] **Technical Lead:** ********\_******** Date: **\_\_\_**
+- [ ] **Product Manager:** ********\_******** Date: **\_\_\_**
+- [ ] **DevOps Engineer:** ********\_******** Date: **\_\_\_**
 
 ### Post-Deployment Verification
+
 - [ ] **All systems operational**
 - [ ] **Performance metrics acceptable**
 - [ ] **Security validation passed**
@@ -259,7 +286,7 @@ curl -f https://your-domain.com/health
 
 ---
 
-**Deployment completed successfully on:** _______________  
-**Deployed by:** _______________  
+**Deployment completed successfully on:** ******\_\_\_******  
+**Deployed by:** ******\_\_\_******  
 **Version:** refactor/structure-v1  
 **Environment:** Production

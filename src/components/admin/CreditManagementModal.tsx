@@ -55,7 +55,9 @@ export default function CreditManagementModal({
         })
         .eq('id', user.id);
 
-      if (updateError) throw updateError;
+      if (updateError) {
+        throw updateError;
+      }
 
       // Transaction log oluştur
       const { error: transactionError } = await supabase
@@ -71,7 +73,9 @@ export default function CreditManagementModal({
           description: reason.trim(),
         });
 
-      if (transactionError) throw transactionError;
+      if (transactionError) {
+        throw transactionError;
+      }
 
       // Parent component'e güncellemeyi bildir
       onUpdate({
@@ -79,7 +83,10 @@ export default function CreditManagementModal({
         credit_balance: newBalance,
       });
     } catch (error) {
-      const errorMessage = AdminErrorService.handleError(error, 'credit update');
+      const errorMessage = AdminErrorService.handleError(
+        error,
+        'credit update'
+      );
       setError(errorMessage);
     } finally {
       setLoading(false);

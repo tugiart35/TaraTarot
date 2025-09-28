@@ -1,6 +1,6 @@
 /*
  * Geolocation CORS Utility
- * 
+ *
  * Bu dosya geolocation API endpoint'leri için ortak CORS utility sağlar.
  * DRY principle uygulayarak tekrarlanan CORS kodlarını önler.
  */
@@ -36,7 +36,9 @@ export class GeolocationCORS {
     });
 
     // CORS headers ekle
-    for (const [key, value] of Object.entries(GeolocationCORS.getCORSHeaders())) {
+    for (const [key, value] of Object.entries(
+      GeolocationCORS.getCORSHeaders()
+    )) {
       wrappedResponse.headers.set(key, value);
     }
 

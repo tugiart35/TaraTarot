@@ -3,12 +3,13 @@
 import { Package } from '@/types/dashboard.types';
 import { getPackageStyle } from '@/utils/dashboard-utils';
 import { Star } from 'lucide-react';
+import Link from 'next/link';
 
 interface CreditPackagesProps {
   packages: Package[];
-  handlePackagePurchase: (pkg: Package) => Promise<void>;
+  handlePackagePurchase: (_pkg: Package) => Promise<void>;
   paymentLoading: boolean;
-  translate: (key: string, fallback?: string) => string;
+  translate: (_key: string, _fallback?: string) => string;
 }
 
 // Kredi paketleri bileşeni
@@ -25,13 +26,13 @@ export default function CreditPackages({
           {translate('dashboard.creditPackages')}
         </h2>
         {/* Tüm paketleri gör linki */}
-        <a
+        <Link
           href='/dashboard/packages'
           className='text-gold hover:text-gold/80 transition-colors text-sm flex items-center space-x-1'
         >
           <span>{translate('common.viewAll', 'Tümünü Gör')}</span>
           <span>→</span>
-        </a>
+        </Link>
       </div>
 
       {/* Kredi paketleri grid'i */}

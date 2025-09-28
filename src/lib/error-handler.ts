@@ -180,7 +180,9 @@ export class ErrorHandler {
         type: 'supabase',
         message: errorObj.message || 'Database error',
       };
-      if (errorObj.code !== undefined) result.code = errorObj.code;
+      if (errorObj.code !== undefined) {
+        result.code = errorObj.code;
+      }
       return result;
     }
 

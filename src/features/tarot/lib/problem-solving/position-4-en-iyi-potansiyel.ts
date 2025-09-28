@@ -117,8 +117,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Aziz, potansiyelini ortaya çıkarmak için başkalarının kurallarına körü körüne bağlanmamalı, kendi yolunu bulmalısın.',
     keywords: ['rehberlik', 'bilgelik', 'öğreti', 'değerler', 'potansiyel'],
-    context:
-      'En iyi potansiyelin, bilgini ve deneyimini paylaşmaktır.',
+    context: 'En iyi potansiyelin, bilgini ve deneyimini paylaşmaktır.',
     group: 'Majör Arkana',
   },
   {
@@ -130,8 +129,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Aşıklar, potansiyelini engelleyen kararsızlıklardan ve yanlış seçimlerden kaçınmalısın.',
     keywords: ['seçim', 'uyum', 'ilişki', 'karar', 'potansiyel'],
-    context:
-      'En iyi potansiyelin, kalbinle uyumlu seçimler yapmaktır.',
+    context: 'En iyi potansiyelin, kalbinle uyumlu seçimler yapmaktır.',
     group: 'Majör Arkana',
   },
   {
@@ -143,8 +141,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Savaş Arabası, potansiyelini boşa harcamamak için yönsüzlükten ve dağınıklıktan uzak durmalısın.',
     keywords: ['irade', 'kontrol', 'kararlılık', 'hedef', 'potansiyel'],
-    context:
-      'En iyi potansiyelin, hedeflerine iradeyle odaklanmaktır.',
+    context: 'En iyi potansiyelin, hedeflerine iradeyle odaklanmaktır.',
     group: 'Majör Arkana',
   },
   {
@@ -156,8 +153,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Güç, potansiyelini kullanırken sabırsızlık, öfke ya da güvensizlikten uzak durmalısın.',
     keywords: ['cesaret', 'sabır', 'denge', 'güven', 'potansiyel'],
-    context:
-      'En iyi potansiyelin, sabır ve cesaretle ilerlemektir.',
+    context: 'En iyi potansiyelin, sabır ve cesaretle ilerlemektir.',
     group: 'Majör Arkana',
   },
   {
@@ -168,22 +164,26 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
       'Ermiş, potansiyelinin içsel bilgelikten, yalnızlıktan doğan farkındalıktan ve kendi yolunu aydınlatmaktan geçtiğini gösterir.',
     reversed:
       'Ters Ermiş, potansiyelini ortaya koymak için izolasyona düşmemeli, içsel bilgini dünyayla paylaşmalısın.',
-    keywords: ['bilgelik', 'yalnızlık', 'aydınlanma', 'rehberlik', 'potansiyel'],
-    context:
-      'En iyi potansiyelin, kendi iç ışığını keşfetmek ve paylaşmaktır.',
+    keywords: [
+      'bilgelik',
+      'yalnızlık',
+      'aydınlanma',
+      'rehberlik',
+      'potansiyel',
+    ],
+    context: 'En iyi potansiyelin, kendi iç ışığını keşfetmek ve paylaşmaktır.',
     group: 'Majör Arkana',
   },
   {
     id: 'wheel_of_fortune_ps_pos4',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 4,
     upright:
       'Kader Çarkı, potansiyelinin döngülerden faydalanmak, değişime uyum sağlamak ve fırsatları yakalamak olduğunu gösterir.',
     reversed:
       'Ters Kader Çarkı, potansiyelini sınırlayan talihsizlik korkusundan ve kontrol saplantısından uzaklaşmalısın.',
     keywords: ['kader', 'fırsat', 'döngü', 'uyum', 'potansiyel'],
-    context:
-      'En iyi potansiyelin, fırsatları fark edip değerlendirmektir.',
+    context: 'En iyi potansiyelin, fırsatları fark edip değerlendirmektir.',
     group: 'Majör Arkana',
   },
   {
@@ -195,8 +195,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Adalet, potansiyelini zayıflatan taraflı düşünceler ve sorumluluktan kaçmak olabilir.',
     keywords: ['adalet', 'denge', 'karar', 'doğruluk', 'potansiyel'],
-    context:
-      'En iyi potansiyelin, adil ve dengeli seçimler yapmaktır.',
+    context: 'En iyi potansiyelin, adil ve dengeli seçimler yapmaktır.',
     group: 'Majör Arkana',
   },
   {
@@ -207,7 +206,13 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
       'Asılan Adam, potansiyelinin farklı bir bakış açısı kazanmak, teslimiyet göstermek ve yeni anlayışlar geliştirmek olduğunu gösterir.',
     reversed:
       'Ters Asılan Adam, potansiyelini sınırlayan inatçılık, direnç ve dar görüş olabilir.',
-    keywords: ['teslimiyet', 'bakış açısı', 'kabullenme', 'öğrenme', 'potansiyel'],
+    keywords: [
+      'teslimiyet',
+      'bakış açısı',
+      'kabullenme',
+      'öğrenme',
+      'potansiyel',
+    ],
     context:
       'En iyi potansiyelin, farklı perspektiflerden öğrenmekten doğuyor.',
     group: 'Majör Arkana',
@@ -221,8 +226,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Ölüm, potansiyelini zayıflatan değişim korkusu ve bitişleri kabullenememek olabilir.',
     keywords: ['dönüşüm', 'yenilenme', 'bitiş', 'cesaret', 'potansiyel'],
-    context:
-      'En iyi potansiyelin, dönüşüm ve yeniden doğuşa izin vermektir.',
+    context: 'En iyi potansiyelin, dönüşüm ve yeniden doğuşa izin vermektir.',
     group: 'Majör Arkana',
   },
   {
@@ -234,8 +238,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Denge, potansiyelini engelleyen aşırılıklar, sabırsızlık veya uyumsuzluk olabilir.',
     keywords: ['denge', 'uyum', 'sabır', 'ölçülülük', 'potansiyel'],
-    context:
-      'En iyi potansiyelin, uyumlu ve sabırlı adımlar atmaktır.',
+    context: 'En iyi potansiyelin, uyumlu ve sabırlı adımlar atmaktır.',
     group: 'Majör Arkana',
   },
   {
@@ -260,8 +263,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Kule, potansiyelini zayıflatan kriz korkusu ve değişime direnç olabilir.',
     keywords: ['değişim', 'yıkım', 'yeniden doğuş', 'kriz', 'potansiyel'],
-    context:
-      'En iyi potansiyelin, yıkımdan sonra yeniden inşa etmektir.',
+    context: 'En iyi potansiyelin, yıkımdan sonra yeniden inşa etmektir.',
     group: 'Majör Arkana',
   },
   {
@@ -273,8 +275,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Yıldız, potansiyelini kısıtlayan karamsarlık, güvensizlik ve ilham eksikliği olabilir.',
     keywords: ['umut', 'ilham', 'yenilenme', 'güven', 'potansiyel'],
-    context:
-      'En iyi potansiyelin, umutla ilhamı hayatına taşımaktır.',
+    context: 'En iyi potansiyelin, umutla ilhamı hayatına taşımaktır.',
     group: 'Majör Arkana',
   },
   {
@@ -299,8 +300,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Güneş, potansiyelini engelleyen karamsarlık, başarısızlık korkusu veya özgüven eksikliği olabilir.',
     keywords: ['mutluluk', 'başarı', 'aydınlanma', 'özgüven', 'potansiyel'],
-    context:
-      'En iyi potansiyelin, yaşamını neşe ve aydınlıkla doldurmaktır.',
+    context: 'En iyi potansiyelin, yaşamını neşe ve aydınlıkla doldurmaktır.',
     group: 'Majör Arkana',
   },
   {
@@ -312,8 +312,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Mahkeme, potansiyelini sınırlayan inkar, pişmanlık ve sorumluluktan kaçmak olabilir.',
     keywords: ['farkındalık', 'yeniden doğuş', 'geçmiş', 'karar', 'potansiyel'],
-    context:
-      'En iyi potansiyelin, geçmişle yüzleşip yeniden doğmaktır.',
+    context: 'En iyi potansiyelin, geçmişle yüzleşip yeniden doğmaktır.',
     group: 'Majör Arkana',
   },
   {
@@ -550,8 +549,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Üç Kılıç, potansiyeline ulaşmak için kalp kırıklıklarını iyileştirmeli, suçlulukları bırakmalı ve affedişe alan açmalısın.',
     keywords: ['iyileşme', 'affediş', 'bilgelik', 'deneyim', 'şefkat'],
-    context:
-      'En iyi potansiyelin, acıyı bilgelik ve güce dönüştürmektir.',
+    context: 'En iyi potansiyelin, acıyı bilgelik ve güce dönüştürmektir.',
     group: 'Kılıçlar',
   },
   {
@@ -589,8 +587,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Altı Kılıç, potansiyeline ulaşmak için geçmişte sıkışmayı bırakmalı, cesurca ileriye adım atmalı ve yeni yolculuklara izin vermelisin.',
     keywords: ['geçiş', 'ilerleme', 'şifa', 'kabulleniş', 'yolculuk'],
-    context:
-      'En iyi potansiyelin, geçmişten arınarak ileriye yol almaktır.',
+    context: 'En iyi potansiyelin, geçmişten arınarak ileriye yol almaktır.',
     group: 'Kılıçlar',
   },
   {
@@ -693,8 +690,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Kılıç Kralı, potansiyeline ulaşmak için otoriterlikten, soğukluktan ve katı tavırlardan uzaklaşmalısın.',
     keywords: ['adalet', 'mantık', 'rehberlik', 'otorite', 'bilgelik'],
-    context:
-      'En iyi potansiyelin, adaletli ve mantıklı bir rehber olmaktır.',
+    context: 'En iyi potansiyelin, adaletli ve mantıklı bir rehber olmaktır.',
     group: 'Kılıçlar',
   },
 
@@ -734,8 +730,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Üç Tılsım, potansiyelini açmak için tek başına direnmek yerine destek almalı ve ekip çalışmasına açık olmalısın.',
     keywords: ['işbirliği', 'paylaşım', 'beceri', 'uyum', 'başarı'],
-    context:
-      'En iyi potansiyelin, işbirliğiyle somut başarı inşa etmektir.',
+    context: 'En iyi potansiyelin, işbirliğiyle somut başarı inşa etmektir.',
     group: 'Tılsımlar',
   },
   {
@@ -760,8 +755,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Beş Tılsım, potansiyeline ulaşmak için yetersizlik inancını bırakmalı, yardımı kabul etmeli ve güven duygunu yenilemelisin.',
     keywords: ['dayanıklılık', 'destek', 'zorluk', 'şifa', 'güven'],
-    context:
-      'En iyi potansiyelin, zorlukları dayanıklılıkla aşmaktır.',
+    context: 'En iyi potansiyelin, zorlukları dayanıklılıkla aşmaktır.',
     group: 'Tılsımlar',
   },
   {
@@ -773,8 +767,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Altı Tılsım, potansiyelini açmak için tek taraflı ilişkileri bırakmalı, alma-verme dengesini kurmalısın.',
     keywords: ['adalet', 'paylaşım', 'denge', 'yardım', 'bolluk'],
-    context:
-      'En iyi potansiyelin, adil ve dengeli paylaşımda bulunmaktır.',
+    context: 'En iyi potansiyelin, adil ve dengeli paylaşımda bulunmaktır.',
     group: 'Tılsımlar',
   },
   {
@@ -799,8 +792,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Sekiz Tılsım, potansiyeline ulaşmak için özensizlikten kaçmalı, öğrenmeye açık kalmalı ve disiplinini korumalısın.',
     keywords: ['ustalık', 'çalışkanlık', 'disiplin', 'öğrenme', 'başarı'],
-    context:
-      'En iyi potansiyelin, çalışarak ustalığa erişmektir.',
+    context: 'En iyi potansiyelin, çalışarak ustalığa erişmektir.',
     group: 'Tılsımlar',
   },
   {
@@ -825,8 +817,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters On Tılsım, potansiyeline ulaşmak için kısa vadeli çıkarları bırakmalı, kalıcı değerlere odaklanmalısın.',
     keywords: ['istikrar', 'aile', 'güvence', 'miras', 'bolluk'],
-    context:
-      'En iyi potansiyelin, kalıcı istikrar ve güvence inşa etmektir.',
+    context: 'En iyi potansiyelin, kalıcı istikrar ve güvence inşa etmektir.',
     group: 'Tılsımlar',
   },
   {
@@ -851,8 +842,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Tılsım Şövalyesi, potansiyelini engelleyen tembellikten ve aşırı durağanlıktan uzak durmalısın.',
     keywords: ['istikrar', 'sabır', 'azim', 'disiplin', 'ilerleyiş'],
-    context:
-      'En iyi potansiyelin, sabır ve disiplinle ilerlemektir.',
+    context: 'En iyi potansiyelin, sabır ve disiplinle ilerlemektir.',
     group: 'Tılsımlar',
   },
   {
@@ -891,8 +881,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Değnek Ası, potansiyeline ulaşmak için ertelemeyi bırakmalı, cesaretini toplamalı ve motivasyonunu yeniden yakalamalısın.',
     keywords: ['ilham', 'başlangıç', 'yaratıcılık', 'tutku', 'cesaret'],
-    context:
-      'En iyi potansiyelin, ilhamı eyleme dönüştürmekten doğuyor.',
+    context: 'En iyi potansiyelin, ilhamı eyleme dönüştürmekten doğuyor.',
     group: 'Asalar',
   },
   {
@@ -904,8 +893,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters İki Değnek, potansiyelini açığa çıkarmak için belirsizlikte kalmayı bırakmalı ve yönünü netleştirmelisin.',
     keywords: ['vizyon', 'plan', 'gelecek', 'cesaret', 'seçim'],
-    context:
-      'En iyi potansiyelin, cesur planlarla geleceği şekillendirmektir.',
+    context: 'En iyi potansiyelin, cesur planlarla geleceği şekillendirmektir.',
     group: 'Asalar',
   },
   {
@@ -943,8 +931,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Beş Değnek, potansiyelini açmak için gereksiz çatışmalardan uzaklaşmalı ve enerjini verimli alanlara yöneltmelisin.',
     keywords: ['rekabet', 'mücadele', 'gelişim', 'cesaret', 'fırsat'],
-    context:
-      'En iyi potansiyelin, mücadeleyi büyümeye dönüştürmektir.',
+    context: 'En iyi potansiyelin, mücadeleyi büyümeye dönüştürmektir.',
     group: 'Asalar',
   },
   {
@@ -956,8 +943,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Altı Değnek, potansiyeline ulaşmak için onay arayışını bırakmalı ve kendi başarını içsel olarak takdir etmelisin.',
     keywords: ['başarı', 'zafer', 'takdir', 'özgüven', 'liderlik'],
-    context:
-      'En iyi potansiyelin, başarılarını sahiplenerek ilerlemektir.',
+    context: 'En iyi potansiyelin, başarılarını sahiplenerek ilerlemektir.',
     group: 'Asalar',
   },
   {
@@ -969,8 +955,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Yedi Değnek, potansiyeline ulaşmak için geri adım atmamalı, kararlılıkla sınırlarını savunmalısın.',
     keywords: ['savunma', 'kararlılık', 'cesaret', 'dayanıklılık', 'mücadele'],
-    context:
-      'En iyi potansiyelin, sınırlarını savunmaktan doğuyor.',
+    context: 'En iyi potansiyelin, sınırlarını savunmaktan doğuyor.',
     group: 'Asalar',
   },
   {
@@ -982,8 +967,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Sekiz Değnek, potansiyeline ulaşmak için gecikmeleri bırakmalı ve odaklı, net adımlar atmalısın.',
     keywords: ['hız', 'iletişim', 'ilerleme', 'fırsat', 'odak'],
-    context:
-      'En iyi potansiyelin, hızlı ve odaklı hareket etmektir.',
+    context: 'En iyi potansiyelin, hızlı ve odaklı hareket etmektir.',
     group: 'Asalar',
   },
   {
@@ -995,8 +979,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Dokuz Değnek, potansiyeline ulaşmak için yorgunluğa yenilmemeli, direnmeye devam etmelisin.',
     keywords: ['direnç', 'sabır', 'deneyim', 'koruma', 'mücadele'],
-    context:
-      'En iyi potansiyelin, sabırlı direnç göstermektir.',
+    context: 'En iyi potansiyelin, sabırlı direnç göstermektir.',
     group: 'Asalar',
   },
   {
@@ -1008,8 +991,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters On Değnek, potansiyelini açmak için gereksiz yükleri bırakmalı ve sadece sana hizmet eden sorumluluklara odaklanmalısın.',
     keywords: ['sorumluluk', 'yük', 'emek', 'kararlılık', 'azim'],
-    context:
-      'En iyi potansiyelin, bilinçli sorumluluklarla ilerlemektir.',
+    context: 'En iyi potansiyelin, bilinçli sorumluluklarla ilerlemektir.',
     group: 'Asalar',
   },
   {
@@ -1021,8 +1003,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Değnek Prensi, potansiyeline ulaşmak için motivasyonunu canlı tutmalı ve korkularını aşarak adım atmalısın.',
     keywords: ['keşif', 'cesaret', 'ilham', 'başlangıç', 'merak'],
-    context:
-      'En iyi potansiyelin, yeni fikirler keşfetmekten doğuyor.',
+    context: 'En iyi potansiyelin, yeni fikirler keşfetmekten doğuyor.',
     group: 'Asalar',
   },
   {
@@ -1034,8 +1015,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Değnek Şövalyesi, potansiyeline ulaşmak için acelecilikten kaçınmalı ve enerjini kontrollü biçimde yönlendirmelisin.',
     keywords: ['tutku', 'cesaret', 'macera', 'hareket', 'enerji'],
-    context:
-      'En iyi potansiyelin, tutkularını cesurca eyleme dökmektir.',
+    context: 'En iyi potansiyelin, tutkularını cesurca eyleme dökmektir.',
     group: 'Asalar',
   },
   {
@@ -1047,8 +1027,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Değnek Kraliçesi, potansiyeline ulaşmak için güvensizlikten arınmalı ve içsel ışığını parlatmalısın.',
     keywords: ['özgüven', 'liderlik', 'çekim', 'ilham', 'karizma'],
-    context:
-      'En iyi potansiyelin, özgüvenle liderlik etmektir.',
+    context: 'En iyi potansiyelin, özgüvenle liderlik etmektir.',
     group: 'Asalar',
   },
   {
@@ -1060,8 +1039,7 @@ export const position4Meanings: ProblemSolvingPosition4Meaning[] = [
     reversed:
       'Ters Değnek Kralı, potansiyeline ulaşmak için aşırı kontrol ihtiyacını bırakmalı ve vizyonunu paylaşmalısın.',
     keywords: ['vizyon', 'liderlik', 'ilham', 'kararlılık', 'cesaret'],
-    context:
-      'En iyi potansiyelin, vizyonla liderlik etmekten doğuyor.',
+    context: 'En iyi potansiyelin, vizyonla liderlik etmekten doğuyor.',
     group: 'Asalar',
   },
 ];
@@ -1076,54 +1054,55 @@ export function getProblemSolvingPosition4Meaning(
 ): ProblemSolvingPosition4Meaning | null {
   // Kart ismi eşleştirmesi için hem İngilizce hem Türkçe isimleri kontrol et
   // Önce doğrudan eşleşme ara
-  let meaning = position4Meanings.find(m => 
-    m.card === card.name || 
-    m.card === card.nameTr ||
-    card.name === m.card ||
-    card.nameTr === m.card
+  let meaning = position4Meanings.find(
+    m =>
+      m.card === card.name ||
+      m.card === card.nameTr ||
+      card.name === m.card ||
+      card.nameTr === m.card
   );
-  
+
   if (meaning) {
     return meaning;
   }
-  
+
   // Kart ismi mapping'i kullanarak eşleştirme yap
   const cardNameMapping: { [key: string]: string } = {
     // Major Arcana - Türkçe
-    'Deli': 'The Fool',
-    'Büyücü': 'The Magician',
+    Deli: 'The Fool',
+    Büyücü: 'The Magician',
     'Yüksek Rahibe': 'The High Priestess',
-    'İmparatoriçe': 'The Empress',
-    'İmparator': 'The Emperor',
-    'Hierophant': 'The Hierophant',
-    'Aziz': 'The Hierophant',
-    'Aşıklar': 'The Lovers',
+    İmparatoriçe: 'The Empress',
+    İmparator: 'The Emperor',
+    Hierophant: 'The Hierophant',
+    Aziz: 'The Hierophant',
+    Aşıklar: 'The Lovers',
     'Savaş Arabası': 'The Chariot',
-    'Güç': 'Strength',
-    'Ermiş': 'The Hermit',
-    'Münzevi': 'The Hermit',
-    'Kader Çarkı': 'The Wheel of Fortune',
-    'Adalet': 'Justice',
+    Güç: 'Strength',
+    Ermiş: 'The Hermit',
+    Münzevi: 'The Hermit',
+    'Kader Çarkı': 'The The Wheel of Fortune',
+    Adalet: 'Justice',
     'Asılı Adam': 'The Hanged Man',
-    'Ölüm': 'Death',
-    'Ölçü': 'Temperance',
-    'Ölçülülük': 'Temperance',
-    'Şeytan': 'The Devil',
-    'Kule': 'The Tower',
-    'Yıldız': 'The Star',
-    'Ay': 'The Moon',
-    'Güneş': 'The Sun',
-    'Yargı': 'Judgement',
-    'Mahkeme': 'Judgement',
-    'Dünya': 'The World',
+    Ölüm: 'Death',
+    Ölçü: 'Temperance',
+    Ölçülülük: 'Temperance',
+    Şeytan: 'The Devil',
+    Kule: 'The Tower',
+    Yıldız: 'The Star',
+    Ay: 'The Moon',
+    Güneş: 'The Sun',
+    Yargı: 'Judgement',
+    Mahkeme: 'Judgement',
+    Dünya: 'The World',
   };
-  
+
   // Türkçe ismi İngilizce'ye çevir
   const englishName = cardNameMapping[card.nameTr] || card.nameTr;
-  
+
   // İngilizce isimle tekrar ara
   meaning = position4Meanings.find(m => m.card === englishName);
-  
+
   return meaning || null;
 }
 
@@ -1186,7 +1165,7 @@ export const useI18nposition4Meanings = (): I18nProblemSolvingPosition4Meaning[]
 */
 
 // Belirli bir kart için i18n destekli anlam al (hook kullanmadan)
-    export const getI18nPosition4Meaning = (
+export const getI18nPosition4Meaning = (
   cardName: string,
   t: (_key: string) => string
 ): I18nProblemSolvingPosition4Meaning | null => {

@@ -29,9 +29,9 @@ export default function ReadingHistory({
   const [readings, setReadings] = useState<Reading[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedReading, setSelectedReading] = useState<Reading | null>(null);
-  const [filter, setFilter] = useState<'all' | 'tarot' | 'numerology' | 'love' | 'career' | 'general'>(
-    'all'
-  );
+  const [filter, setFilter] = useState<
+    'all' | 'tarot' | 'numerology' | 'love' | 'career' | 'general'
+  >('all');
 
   useEffect(() => {
     fetchReadings();
@@ -42,23 +42,25 @@ export default function ReadingHistory({
     try {
       // Admin kontrolü yap
       const { data: currentUser } = await supabase.auth.getUser();
-      
+
       // Admin tablosunu kontrol et
       const { data: adminCheck } = await supabase
         .from('admins')
         .select('*')
         .eq('user_id', currentUser?.user?.id);
-      
+
       // Admin check'i kullan (linter hatası için)
       if (!adminCheck || adminCheck.length === 0) {
         console.warn('Admin yetkisi bulunamadı');
       }
-      
+
       // RLS politikalarını bypass etmek için farklı yaklaşım
       // Önce mevcut kullanıcının okumalarını dene
-      const { data: currentUserReadings, error: currentUserError } = await supabase
-        .from('readings')
-        .select(`
+      const { data: currentUserReadings, error: currentUserError } =
+        await supabase
+          .from('readings')
+          .select(
+            `
           id,
           user_id,
           reading_type,
@@ -72,25 +74,34 @@ export default function ReadingHistory({
           metadata,
           created_at,
           updated_at
-        `)
-        .eq('user_id', userId)
-        .eq('status', 'completed') // Sadece tamamlanan okumaları getir
-        .order('created_at', { ascending: false })
-        .limit(100);
+        `
+          )
+          .eq('user_id', userId)
+          .eq('status', 'completed') // Sadece tamamlanan okumaları getir
+          .order('created_at', { ascending: false })
+          .limit(100);
 
-      console.log('🔍 Current user readings query result:', { currentUserReadings, currentUserError });
-      
+      console.log('🔍 Current user readings query result:', {
+        currentUserReadings,
+        currentUserError,
+      });
+
       // Eğer RLS hatası varsa veya veri yoksa, service role ile dene
       let allReadings, allError;
-      if (currentUserError || !currentUserReadings || currentUserReadings.length === 0) {
+      if (
+        currentUserError ||
+        !currentUserReadings ||
+        currentUserReadings.length === 0
+      ) {
         console.log('🔍 No data or RLS error, trying with service role...');
-        
+
         // Mevcut supabase client'ı kullan (service role client-side'da mevcut değil)
         const serviceSupabase = supabase;
-        
+
         const { data, error } = await serviceSupabase
           .from('readings')
-          .select(`
+          .select(
+            `
             id,
             user_id,
             reading_type,
@@ -104,15 +115,16 @@ export default function ReadingHistory({
             metadata,
             created_at,
             updated_at
-          `)
+          `
+          )
           .eq('user_id', userId)
           .eq('status', 'completed') // Sadece tamamlanan okumaları getir
           .order('created_at', { ascending: false })
           .limit(100);
-          
+
         allReadings = data;
         allError = error;
-        
+
         console.log('🔍 Service role query result:', { data, error });
       } else {
         allReadings = currentUserReadings;
@@ -121,20 +133,28 @@ export default function ReadingHistory({
 
       console.log('🔍 All readings in database:', allReadings?.length || 0);
       console.log('🔍 All readings sample:', allReadings?.slice(0, 3));
-      
+
       // Veritabanında hangi user_id'ler var kontrol et
-      const uniqueUserIds = [...new Set(allReadings?.map((r: any) => r.user_id) || [])];
-      const uniqueStatuses = [...new Set(allReadings?.map((r: any) => r.status) || [])];
+      const uniqueUserIds = [
+        ...new Set(allReadings?.map((r: any) => r.user_id) || []),
+      ];
+      const uniqueStatuses = [
+        ...new Set(allReadings?.map((r: any) => r.status) || []),
+      ];
       console.log('🔍 Unique user IDs in readings:', uniqueUserIds);
       console.log('🔍 Unique statuses in readings:', uniqueStatuses);
       console.log('🔍 Target user ID:', userId);
-      console.log('🔍 Is target user ID in database?', uniqueUserIds.includes(userId));
-      
+      console.log(
+        '🔍 Is target user ID in database?',
+        uniqueUserIds.includes(userId)
+      );
+
       // Şimdi belirli kullanıcı için filtrele
-      const userReadings = allReadings?.filter((reading: any) => reading.user_id === userId) || [];
+      const userReadings =
+        allReadings?.filter((reading: any) => reading.user_id === userId) || [];
       console.log('🔍 User specific readings:', userReadings.length);
       console.log('🔍 User readings sample:', userReadings.slice(0, 3));
-      
+
       const data = userReadings;
       const error = allError;
 
@@ -146,7 +166,9 @@ export default function ReadingHistory({
 
       if (error) {
         console.error('Supabase error fetching readings:', error);
-        throw new Error(`Okuma verileri yüklenirken hata oluştu: ${error.message}`);
+        throw new Error(
+          `Okuma verileri yüklenirken hata oluştu: ${error.message}`
+        );
       }
 
       console.log('Raw readings data:', data);
@@ -154,22 +176,26 @@ export default function ReadingHistory({
       // Veriyi formatla
       const formattedReadings = (data || []).map((reading: any) => {
         console.log('Processing reading:', reading);
-        
+
         // Cards verisi JSONB olarak geliyor, doğru şekilde parse et
         let cards_drawn: string[] = [];
         if (reading.cards) {
           try {
             if (typeof reading.cards === 'string') {
               const parsedCards = JSON.parse(reading.cards);
-              cards_drawn = Array.isArray(parsedCards) 
-                ? parsedCards.map((card: any) => card.name || card.title || card)
+              cards_drawn = Array.isArray(parsedCards)
+                ? parsedCards.map(
+                    (card: any) => card.name || card.title || card
+                  )
                 : [];
             } else if (Array.isArray(reading.cards)) {
-              cards_drawn = reading.cards.map((card: any) => card.name || card.title || card);
+              cards_drawn = reading.cards.map(
+                (card: any) => card.name || card.title || card
+              );
             } else if (reading.cards && typeof reading.cards === 'object') {
               // Object ise values'ları al
-              cards_drawn = Object.values(reading.cards).map((card: any) => 
-                card.name || card.title || card
+              cards_drawn = Object.values(reading.cards).map(
+                (card: any) => card.name || card.title || card
               );
             }
           } catch (e) {
@@ -182,9 +208,10 @@ export default function ReadingHistory({
         let metadata = {};
         if (reading.metadata) {
           try {
-            metadata = typeof reading.metadata === 'string' 
-              ? JSON.parse(reading.metadata) 
-              : reading.metadata;
+            metadata =
+              typeof reading.metadata === 'string'
+                ? JSON.parse(reading.metadata)
+                : reading.metadata;
           } catch (e) {
             console.warn('Error parsing metadata:', e);
             metadata = {};
@@ -195,7 +222,8 @@ export default function ReadingHistory({
           id: reading.id,
           user_id: reading.user_id,
           spread_type: reading.reading_type || 'tarot',
-          spread_name: reading.spread_name || reading.title || 'Bilinmeyen Okuma',
+          spread_name:
+            reading.spread_name || reading.title || 'Bilinmeyen Okuma',
           cards_drawn,
           interpretation: reading.interpretation || 'Yorum bulunamadı',
           cost_credits: reading.cost_credits || 0,
@@ -211,7 +239,7 @@ export default function ReadingHistory({
       let filteredReadings = formattedReadings.filter(
         (reading: any) => reading.user_id === userId
       );
-      
+
       if (filter !== 'all') {
         filteredReadings = filteredReadings.filter(
           (reading: any) => reading.spread_type === filter
@@ -277,8 +305,9 @@ export default function ReadingHistory({
   };
 
   const renderStars = (rating?: number) => {
-    if (!rating)
+    if (!rating) {
       return <span className='text-lavender text-sm'>Değerlendirilmedi</span>;
+    }
 
     return (
       <div className='flex items-center'>
@@ -316,7 +345,13 @@ export default function ReadingHistory({
               value={filter}
               onChange={e =>
                 setFilter(
-                  e.target.value as 'all' | 'tarot' | 'numerology' | 'love' | 'career' | 'general'
+                  e.target.value as
+                    | 'all'
+                    | 'tarot'
+                    | 'numerology'
+                    | 'love'
+                    | 'career'
+                    | 'general'
                 )
               }
               className='bg-night/50 border border-lavender/30 text-white rounded px-3 py-1 text-sm focus:border-gold focus:outline-none'

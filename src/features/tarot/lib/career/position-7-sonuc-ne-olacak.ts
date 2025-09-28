@@ -160,7 +160,7 @@ export const position7Meanings: CareerPositionMeaning[] = [
   },
   {
     id: 'wheel_of_fortune_pos7',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 7,
     upright:
       'Kader Çarkı, kariyer yolculuğunun sonucunun şans, kaderin desteği ve döngüsel başarılarla şekilleneceğini gösterir.',

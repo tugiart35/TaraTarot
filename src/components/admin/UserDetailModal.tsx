@@ -70,12 +70,12 @@ export default function UserDetailModal({
   };
 
   return (
-    <div 
+    <div
       className='fixed inset-0 bg-black/70 backdrop-blur-lg flex items-center justify-center z-50 p-4'
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="user-detail-title"
-      aria-describedby="user-detail-description"
+      role='dialog'
+      aria-modal='true'
+      aria-labelledby='user-detail-title'
+      aria-describedby='user-detail-description'
     >
       <div className='admin-card rounded-2xl p-6 w-full max-w-5xl max-h-[90vh] overflow-hidden flex flex-col admin-hover-scale'>
         {/* Header */}
@@ -90,16 +90,13 @@ export default function UserDetailModal({
                 </span>
               </div>
               <div>
-                <h3 
-                  id="user-detail-title"
+                <h3
+                  id='user-detail-title'
                   className='text-2xl font-bold text-white mb-1'
                 >
                   {user.display_name || 'İsimsiz Kullanıcı'}
                 </h3>
-                <p 
-                  id="user-detail-description"
-                  className='text-slate-200 mb-2'
-                >
+                <p id='user-detail-description' className='text-slate-200 mb-2'>
                   {user.email}
                 </p>
                 <div className='flex items-center space-x-3'>
@@ -135,10 +132,10 @@ export default function UserDetailModal({
 
         {/* Tab Navigation */}
         <div className='admin-glass rounded-xl p-2 mb-6'>
-          <nav 
+          <nav
             className='flex space-x-2'
-            role="tablist"
-            aria-label="Kullanıcı detay sekmeleri"
+            role='tablist'
+            aria-label='Kullanıcı detay sekmeleri'
           >
             <button
               onClick={() => setActiveTab('overview')}
@@ -147,10 +144,10 @@ export default function UserDetailModal({
                   ? 'admin-gradient-accent text-white'
                   : 'text-slate-400 hover:text-white hover:bg-slate-700/30'
               }`}
-              role="tab"
+              role='tab'
               aria-selected={activeTab === 'overview'}
-              aria-controls="overview-panel"
-              id="overview-tab"
+              aria-controls='overview-panel'
+              id='overview-tab'
             >
               📊 Genel Bakış
             </button>

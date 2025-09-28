@@ -151,7 +151,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
   },
   {
     id: 'wheel_of_fortune_sa_pos6',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 6,
     upright:
       'Tavsiye: Zamanlamayı tarayın, en olası senaryolara B planı hazırlayın. Akışa uyum sağlayın.',
@@ -251,8 +251,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     position: 6,
     upright:
       'Tavsiye: Varsayımları test edin, belirsiz alanları küçük deneylerle aydınlatın.',
-    reversed:
-      'Tavsiye: Gerçeklik kontrolü yapın. Korkuyu veriyle dengeleyin.',
+    reversed: 'Tavsiye: Gerçeklik kontrolü yapın. Korkuyu veriyle dengeleyin.',
     keywords: ['belirsizlik', 'varsayım', 'test', 'korku', 'doğrulama'],
     context: 'Tavsiye: Sis içinde küçük fenerler yakmak.',
     group: 'Majör Arkana',
@@ -287,13 +286,12 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     position: 6,
     upright:
       'Tavsiye: Dosyayı tamamlayın, belgeleyin ve ölçekleyin. Başarıyı sistemleştirin.',
-    reversed:
-      'Tavsiye: Eksik uçları kapatın. Bitirmeden yeniye geçmeyin.',
+    reversed: 'Tavsiye: Eksik uçları kapatın. Bitirmeden yeniye geçmeyin.',
     keywords: ['tamamlama', 'sistem', 'ölçek', 'entegrasyon', 'başarı'],
     context: 'Tavsiye: Kapanıştan sonra ölçekleme.',
     group: 'Majör Arkana',
   },
-  
+
   // CUPS (Kupalar)
   {
     id: 'ace_of_cups_sa_pos6',
@@ -325,8 +323,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     position: 6,
     upright:
       'Tavsiye: Topluluğunuzu aktive edin, destek isteyin ve küçük kutlamalar planlayın.',
-    reversed:
-      'Tavsiye: Sosyal diyet uygulayın. Derin bağlara öncelik verin.',
+    reversed: 'Tavsiye: Sosyal diyet uygulayın. Derin bağlara öncelik verin.',
     keywords: ['topluluk', 'destek', 'kutlama', 'öncelik', 'bağ'],
     context: 'Tavsiye: Sosyal enerjiyi bilinçli kullanmak.',
     group: 'Kupalar',
@@ -361,8 +358,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     position: 6,
     upright:
       'Tavsiye: Güçlü eski bağlarla yeniden temas kurun; iç çocuğa şefkat gösterin.',
-    reversed:
-      'Tavsiye: Geçmişi onurlandırın ama bugüne yatırım yapın.',
+    reversed: 'Tavsiye: Geçmişi onurlandırın ama bugüne yatırım yapın.',
     keywords: ['nostalji', 'bağ', 'şefkat', 'bugün', 'destek'],
     context: 'Tavsiye: Geçmişten güç alıp bugüne akmak.',
     group: 'Kupalar',
@@ -373,8 +369,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     position: 6,
     upright:
       'Tavsiye: Seçim kriterleri yazın, 3 alternatife indirin ve birini test edin.',
-    reversed:
-      'Tavsiye: Sis dağıtın; tek seçime odaklanıp yürütün.',
+    reversed: 'Tavsiye: Sis dağıtın; tek seçime odaklanıp yürütün.',
     keywords: ['seçim', 'netlik', 'kriter', 'odak', 'test'],
     context: 'Tavsiye: Ayıklama ve taahhüt.',
     group: 'Kupalar',
@@ -395,10 +390,8 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'nine_of_cups_sa_pos6',
     card: 'Nine of Cups',
     position: 6,
-    upright:
-      'Tavsiye: Değer odaklı hedefler belirleyin ve başarıyı paylaşın.',
-    reversed:
-      'Tavsiye: Yüzeysel hazları sınırlayın; içsel tatmini besleyin.',
+    upright: 'Tavsiye: Değer odaklı hedefler belirleyin ve başarıyı paylaşın.',
+    reversed: 'Tavsiye: Yüzeysel hazları sınırlayın; içsel tatmini besleyin.',
     keywords: ['tatmin', 'değer', 'hedef', 'paylaşım', 'öz-disiplin'],
     context: 'Tavsiye: Sahici doyumu kurmak.',
     group: 'Kupalar',
@@ -409,8 +402,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     position: 6,
     upright:
       'Tavsiye: Aile/ekip ritüelleri oluşturun, birlikte sevinen bir kültür kurun.',
-    reversed:
-      'Tavsiye: Beklentileri açıkça konuşun; sahici uyumu inşa edin.',
+    reversed: 'Tavsiye: Beklentileri açıkça konuşun; sahici uyumu inşa edin.',
     keywords: ['uyum', 'ritüel', 'kültür', 'iletişim', 'birlik'],
     context: 'Tavsiye: Birlik duygusunu yapılandırmak.',
     group: 'Kupalar',
@@ -421,8 +413,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     position: 6,
     upright:
       'Tavsiye: Küçük yaratıcı bir proje başlatın; oyunsulukla keşfedin.',
-    reversed:
-      'Tavsiye: Kaçışı sınırlayın; duyguyu eyleme bağlayın.',
+    reversed: 'Tavsiye: Kaçışı sınırlayın; duyguyu eyleme bağlayın.',
     keywords: ['yaratıcılık', 'oyun', 'başlangıç', 'ifade', 'eylem'],
     context: 'Tavsiye: Oyunla akışı açmak.',
     group: 'Kupalar',
@@ -431,8 +422,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'knight_of_cups_sa_pos6',
     card: 'Knight of Cups',
     position: 6,
-    upright:
-      'Tavsiye: Kalpten bir teklif götürün; zarafetle iletişim kurun.',
+    upright: 'Tavsiye: Kalpten bir teklif götürün; zarafetle iletişim kurun.',
     reversed:
       'Tavsiye: Söz–eylem tutarlılığını kurun; romantizmi gerçeklikle dengeleyin.',
     keywords: ['teklif', 'zarafet', 'tutarlılık', 'vizyon', 'gerçeklik'],
@@ -445,8 +435,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     position: 6,
     upright:
       'Tavsiye: Güvenli duygusal alan tutun, empatik dinleyin, şefkatle yön verin.',
-    reversed:
-      'Tavsiye: Sınırlarınızı güçlendirin; öz-bakımı önceliklendirin.',
+    reversed: 'Tavsiye: Sınırlarınızı güçlendirin; öz-bakımı önceliklendirin.',
     keywords: ['empati', 'alan', 'sınır', 'öz bakım', 'şifa'],
     context: 'Tavsiye: Şefkat–sınır dengesi.',
     group: 'Kupalar',
@@ -455,24 +444,20 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'king_of_cups_sa_pos6',
     card: 'King of Cups',
     position: 6,
-    upright:
-      'Tavsiye: Fırtınada sakin kalın; duygusal liderlikle güven verin.',
-    reversed:
-      'Tavsiye: Bastırılanı ifade edin; pasif-agresyonu durdurun.',
+    upright: 'Tavsiye: Fırtınada sakin kalın; duygusal liderlikle güven verin.',
+    reversed: 'Tavsiye: Bastırılanı ifade edin; pasif-agresyonu durdurun.',
     keywords: ['sükunet', 'liderlik', 'ifade', 'denge', 'güven'],
     context: 'Tavsiye: Duygu yönetimiyle liderlik.',
     group: 'Kupalar',
   },
-  
+
   // SWORDS (Kılıçlar)
   {
     id: 'ace_of_swords_sa_pos6',
     card: 'Ace of Swords',
     position: 6,
-    upright:
-      'Tavsiye: Bir cümlede niyetinizi yazın ve ona göre karar verin.',
-    reversed:
-      'Tavsiye: Mesajı sadeleştirin, bilgi kalabalığını kesin.',
+    upright: 'Tavsiye: Bir cümlede niyetinizi yazın ve ona göre karar verin.',
+    reversed: 'Tavsiye: Mesajı sadeleştirin, bilgi kalabalığını kesin.',
     keywords: ['netlik', 'karar', 'mesaj', 'sadelik', 'odak'],
     context: 'Tavsiye: Çekirdek cümleye inmek.',
     group: 'Kılıçlar',
@@ -481,10 +466,8 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'two_of_swords_sa_pos6',
     card: 'Two of Swords',
     position: 6,
-    upright:
-      'Tavsiye: Eksik veriyi toplayın ve karar için tarih belirleyin.',
-    reversed:
-      'Tavsiye: Karar felcini bitirin; küçük hataya izin verip seçin.',
+    upright: 'Tavsiye: Eksik veriyi toplayın ve karar için tarih belirleyin.',
+    reversed: 'Tavsiye: Karar felcini bitirin; küçük hataya izin verip seçin.',
     keywords: ['karar', 'veri', 'tarih', 'ikilem', 'seçim'],
     context: 'Tavsiye: Karar penceresi açmak.',
     group: 'Kılıçlar',
@@ -507,8 +490,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     position: 6,
     upright:
       'Tavsiye: Dinlenme blokları planlayın; zihin soğudukça çözüm belirir.',
-    reversed:
-      'Tavsiye: Mikro molalar ve dijital diyetle tükenmişliği azaltın.',
+    reversed: 'Tavsiye: Mikro molalar ve dijital diyetle tükenmişliği azaltın.',
     keywords: ['dinlenme', 'mola', 'toparlanma', 'ritim', 'netlik'],
     context: 'Tavsiye: Enerji bankasını doldurmak.',
     group: 'Kılıçlar',
@@ -517,10 +499,8 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'five_of_swords_sa_pos6',
     card: 'Five of Swords',
     position: 6,
-    upright:
-      'Tavsiye: Haklılık yerine ilişkiyi koruyan kazanımı seçin.',
-    reversed:
-      'Tavsiye: Özür/onarım teklifiyle köprüleri onarın.',
+    upright: 'Tavsiye: Haklılık yerine ilişkiyi koruyan kazanımı seçin.',
+    reversed: 'Tavsiye: Özür/onarım teklifiyle köprüleri onarın.',
     keywords: ['ilişki', 'ego', 'kazanım', 'onarım', 'müzakere'],
     context: 'Tavsiye: Köprüleri yakmamak.',
     group: 'Kılıçlar',
@@ -531,8 +511,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     position: 6,
     upright:
       'Tavsiye: Kademeli bir geçiş planı yapın; güvenli eşlikçiler bulun.',
-    reversed:
-      'Tavsiye: Büyük sıçrama yerine küçük taşınmalarla ilerleyin.',
+    reversed: 'Tavsiye: Büyük sıçrama yerine küçük taşınmalarla ilerleyin.',
     keywords: ['geçiş', 'plan', 'eşlik', 'kademeli', 'güven'],
     context: 'Tavsiye: Sakin sulara rota.',
     group: 'Kılıçlar',
@@ -543,8 +522,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     position: 6,
     upright:
       'Tavsiye: Etik bir strateji kurun; gereksizce her şeyi açıklamayın.',
-    reversed:
-      'Tavsiye: Yarım gerçekleri düzeltin; şeffaf hizalanın.',
+    reversed: 'Tavsiye: Yarım gerçekleri düzeltin; şeffaf hizalanın.',
     keywords: ['strateji', 'etik', 'taktik', 'şeffaflık', 'güven'],
     context: 'Tavsiye: Akıllı ve temiz oyun.',
     group: 'Kılıçlar',
@@ -555,8 +533,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     position: 6,
     upright:
       'Tavsiye: İnanç sınırlarını küçük deneylerle test edin; kanıt toplayın.',
-    reversed:
-      'Tavsiye: Yardım isteyin; çıkış adımlarını yazın.',
+    reversed: 'Tavsiye: Yardım isteyin; çıkış adımlarını yazın.',
     keywords: ['inanç', 'deney', 'kanıt', 'yardım', 'özgürleşme'],
     context: 'Tavsiye: Zihinsel düğümü çözmek.',
     group: 'Kılıçlar',
@@ -577,8 +554,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'ten_of_swords_sa_pos6',
     card: 'Ten of Swords',
     position: 6,
-    upright:
-      'Tavsiye: Bitişi kabul edin ve yeni çerçeveyi tasarlayın.',
+    upright: 'Tavsiye: Bitişi kabul edin ve yeni çerçeveyi tasarlayın.',
     reversed:
       'Tavsiye: İleriye dönük küçük anlaşmalar yapın; gücü geri toplayın.',
     keywords: ['bitiş', 'kabul', 'yeniden çerçeve', 'başlangıç', 'güç'],
@@ -591,8 +567,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     position: 6,
     upright:
       'Tavsiye: Araştırın, soru sorun, veri toplayın; öğrenmeyi hızlandırın.',
-    reversed:
-      'Tavsiye: Kaynak doğrulaması yapın; dedikodudan uzak durun.',
+    reversed: 'Tavsiye: Kaynak doğrulaması yapın; dedikodudan uzak durun.',
     keywords: ['araştırma', 'soru', 'veri', 'doğrulama', 'öğrenme'],
     context: 'Tavsiye: Merakı disipline etmek.',
     group: 'Kılıçlar',
@@ -601,10 +576,8 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'knight_of_swords_sa_pos6',
     card: 'Knight of Swords',
     position: 6,
-    upright:
-      'Tavsiye: Hızlı harekete net plan ekleyin; mesajı doğrudan verin.',
-    reversed:
-      'Tavsiye: Nefes–dur–konuş ritmi uygulayın; aceleyle kırmayın.',
+    upright: 'Tavsiye: Hızlı harekete net plan ekleyin; mesajı doğrudan verin.',
+    reversed: 'Tavsiye: Nefes–dur–konuş ritmi uygulayın; aceleyle kırmayın.',
     keywords: ['hız', 'plan', 'mesaj', 'ritim', 'etki'],
     context: 'Tavsiye: Süratle ama isabetle.',
     group: 'Kılıçlar',
@@ -613,10 +586,8 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'queen_of_swords_sa_pos6',
     card: 'Queen of Swords',
     position: 6,
-    upright:
-      'Tavsiye: Net sınırlar koyun, objektif karar verin, adil olun.',
-    reversed:
-      'Tavsiye: Dili yumuşatın; şefkatle net olmayı deneyin.',
+    upright: 'Tavsiye: Net sınırlar koyun, objektif karar verin, adil olun.',
+    reversed: 'Tavsiye: Dili yumuşatın; şefkatle net olmayı deneyin.',
     keywords: ['sınır', 'nesnellik', 'adalet', 'iletişim', 'şefkat'],
     context: 'Tavsiye: Berrak ama nazik olmak.',
     group: 'Kılıçlar',
@@ -627,22 +598,19 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     position: 6,
     upright:
       'Tavsiye: İlkelere dayalı politika yazın; stratejiyi açıkça iletin.',
-    reversed:
-      'Tavsiye: Katılığı azaltın; empatiyi çerçeveye ekleyin.',
+    reversed: 'Tavsiye: Katılığı azaltın; empatiyi çerçeveye ekleyin.',
     keywords: ['ilke', 'strateji', 'politika', 'iletişim', 'empati'],
     context: 'Tavsiye: İlke ve empatiyi birleştirmek.',
     group: 'Kılıçlar',
   },
-  
+
   // WANDS (Asalar)
   {
     id: 'ace_of_wands_sa_pos6',
     card: 'Ace of Wands',
     position: 6,
-    upright:
-      'Tavsiye: İlk kıvılcımı hemen küçük bir eyleme dönüştürün.',
-    reversed:
-      'Tavsiye: Blokajı aşmak için 10 dakikalık mikro başlangıç yapın.',
+    upright: 'Tavsiye: İlk kıvılcımı hemen küçük bir eyleme dönüştürün.',
+    reversed: 'Tavsiye: Blokajı aşmak için 10 dakikalık mikro başlangıç yapın.',
     keywords: ['kıvılcım', 'başlangıç', 'hareket', 'minik adım', 'ivme'],
     context: 'Tavsiye: Ateşi pratikle yakmak.',
     group: 'Asalar',
@@ -651,10 +619,8 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'two_of_wands_sa_pos6',
     card: 'Two of Wands',
     position: 6,
-    upright:
-      'Tavsiye: 90 günlük plan yapın; ufku haritalayın.',
-    reversed:
-      'Tavsiye: Büyük vizyonu küçük pilotla test edin.',
+    upright: 'Tavsiye: 90 günlük plan yapın; ufku haritalayın.',
+    reversed: 'Tavsiye: Büyük vizyonu küçük pilotla test edin.',
     keywords: ['plan', 'ufuk', 'pilot', 'risk', 'harita'],
     context: 'Tavsiye: Vizyonu zemine indirmek.',
     group: 'Asalar',
@@ -677,8 +643,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     position: 6,
     upright:
       'Tavsiye: Küçük bir kutlama/landmark organize edin; temeli pekiştirin.',
-    reversed:
-      'Tavsiye: Eşiği tamamlayın, eksikleri kapatın; sonra kutlayın.',
+    reversed: 'Tavsiye: Eşiği tamamlayın, eksikleri kapatın; sonra kutlayın.',
     keywords: ['temel', 'eşik', 'kutlama', 'istikrar', 'tamamlama'],
     context: 'Tavsiye: Temel–eşik döngüsünü kapatmak.',
     group: 'Asalar',
@@ -699,10 +664,8 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'six_of_wands_sa_pos6',
     card: 'Six of Wands',
     position: 6,
-    upright:
-      'Tavsiye: Başarıyı görünür kılın; hikayeleştirip paylaşın.',
-    reversed:
-      'Tavsiye: Kanıt ve metrik oluşturun; algıyı veriye dayayın.',
+    upright: 'Tavsiye: Başarıyı görünür kılın; hikayeleştirip paylaşın.',
+    reversed: 'Tavsiye: Kanıt ve metrik oluşturun; algıyı veriye dayayın.',
     keywords: ['zafer', 'görünürlük', 'hikaye', 'metrik', 'algı'],
     context: 'Tavsiye: Zaferi kalıcı kılmak.',
     group: 'Asalar',
@@ -711,10 +674,8 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'seven_of_wands_sa_pos6',
     card: 'Seven of Wands',
     position: 6,
-    upright:
-      'Tavsiye: Öncelikli hatları savunun; seçici savaşın.',
-    reversed:
-      'Tavsiye: Destek isteyin, dinlenin; kaynakları yenileyin.',
+    upright: 'Tavsiye: Öncelikli hatları savunun; seçici savaşın.',
+    reversed: 'Tavsiye: Destek isteyin, dinlenin; kaynakları yenileyin.',
     keywords: ['savunma', 'öncelik', 'seçicilik', 'destek', 'enerji'],
     context: 'Tavsiye: Doğru savaşı seçmek.',
     group: 'Asalar',
@@ -723,10 +684,8 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'eight_of_wands_sa_pos6',
     card: 'Eight of Wands',
     position: 6,
-    upright:
-      'Tavsiye: İletişimi tek kanala toplayın; sırayı sadeleştirin.',
-    reversed:
-      'Tavsiye: Eşzamanlı işleri azaltın; bekleyenleri kapatın.',
+    upright: 'Tavsiye: İletişimi tek kanala toplayın; sırayı sadeleştirin.',
+    reversed: 'Tavsiye: Eşzamanlı işleri azaltın; bekleyenleri kapatın.',
     keywords: ['hız', 'iletişim', 'sıra', 'akış', 'WIP'],
     context: 'Tavsiye: Akışta sürtünmeyi düşürmek.',
     group: 'Asalar',
@@ -737,8 +696,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     position: 6,
     upright:
       'Tavsiye: Enerjinizi koruyun, mikro molalarla dayanıklılığı sürdürün.',
-    reversed:
-      'Tavsiye: Yükü hafifletin; destek ağı kurun.',
+    reversed: 'Tavsiye: Yükü hafifletin; destek ağı kurun.',
     keywords: ['dayanıklılık', 'mola', 'koruma', 'yük', 'destek'],
     context: 'Tavsiye: Güç rezervini yönetmek.',
     group: 'Asalar',
@@ -747,10 +705,8 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'ten_of_wands_sa_pos6',
     card: 'Ten of Wands',
     position: 6,
-    upright:
-      'Tavsiye: Delege edin, vazgeçilecekleri belirleyin; yükü azaltın.',
-    reversed:
-      'Tavsiye: “Hayır” demeyi planlayın; sadeleştirin.',
+    upright: 'Tavsiye: Delege edin, vazgeçilecekleri belirleyin; yükü azaltın.',
+    reversed: 'Tavsiye: “Hayır” demeyi planlayın; sadeleştirin.',
     keywords: ['delege', 'yük', 'sadelik', 'odak', 'bırakma'],
     context: 'Tavsiye: Yük yönetimi sistemi.',
     group: 'Asalar',
@@ -759,10 +715,8 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'page_of_wands_sa_pos6',
     card: 'Page of Wands',
     position: 6,
-    upright:
-      'Tavsiye: Bir pilot başlatın; merakla keşfedin.',
-    reversed:
-      'Tavsiye: Odak listesi yapın; hevesi ritme bağlayın.',
+    upright: 'Tavsiye: Bir pilot başlatın; merakla keşfedin.',
+    reversed: 'Tavsiye: Odak listesi yapın; hevesi ritme bağlayın.',
     keywords: ['pilot', 'keşif', 'odak', 'ritim', 'öğrenme'],
     context: 'Tavsiye: Hevesi sürdürülebilir kılmak.',
     group: 'Asalar',
@@ -771,8 +725,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'knight_of_wands_sa_pos6',
     card: 'Knight of Wands',
     position: 6,
-    upright:
-      'Tavsiye: Enerjinizi tek OKR’a bağlayın; hızla ilerleyin.',
+    upright: 'Tavsiye: Enerjinizi tek OKR’a bağlayın; hızla ilerleyin.',
     reversed:
       'Tavsiye: “Başla-bitir” taahhüdü koyun; yarıda bırakmayı durdurun.',
     keywords: ['enerji', 'OKR', 'hız', 'taahhüt', 'tamamlama'],
@@ -783,10 +736,8 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'queen_of_wands_sa_pos6',
     card: 'Queen of Wands',
     position: 6,
-    upright:
-      'Tavsiye: Görün; karizmanızı paylaşın; ilham verin.',
-    reversed:
-      'Tavsiye: Öz-değeri güçlendirin; kıyas tuzağından çıkın.',
+    upright: 'Tavsiye: Görün; karizmanızı paylaşın; ilham verin.',
+    reversed: 'Tavsiye: Öz-değeri güçlendirin; kıyas tuzağından çıkın.',
     keywords: ['görünürlük', 'özgüven', 'ilham', 'liderlik', 'etki'],
     context: 'Tavsiye: Manyetik duruşu beslemek.',
     group: 'Asalar',
@@ -795,15 +746,14 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'king_of_wands_sa_pos6',
     card: 'King of Wands',
     position: 6,
-    upright:
-      'Tavsiye: Vizyonu net söyleyin, yetki devredin ve ölçekleyin.',
+    upright: 'Tavsiye: Vizyonu net söyleyin, yetki devredin ve ölçekleyin.',
     reversed:
       'Tavsiye: Dinleyin, ego sürtüşmelerini yumuşatın; ekipleri güçlendirin.',
     keywords: ['vizyon', 'yetki', 'ölçek', 'dinleme', 'güçlendirme'],
     context: 'Tavsiye: Vizyonu paylaştırmak.',
     group: 'Asalar',
   },
-  
+
   // PENTACLES (Tılsımlar)
   {
     id: 'ace_of_pentacles_sa_pos6',
@@ -821,10 +771,8 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'two_of_pentacles_sa_pos6',
     card: 'Two of Pentacles',
     position: 6,
-    upright:
-      'Tavsiye: Zaman–enerji dengelemesi için timeboxing uygulayın.',
-    reversed:
-      'Tavsiye: Fazla taahhütleri azaltın; ajandayı sadeleştirin.',
+    upright: 'Tavsiye: Zaman–enerji dengelemesi için timeboxing uygulayın.',
+    reversed: 'Tavsiye: Fazla taahhütleri azaltın; ajandayı sadeleştirin.',
     keywords: ['denge', 'timeboxing', 'öncelik', 'akış', 'sadelik'],
     context: 'Tavsiye: Ritmi yönetmek.',
     group: 'Tılsımlar',
@@ -835,8 +783,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     position: 6,
     upright:
       'Tavsiye: İşbirliği kurun; rol ve kalite standartlarını netleştirin.',
-    reversed:
-      'Tavsiye: Sorumluluk matrisi yazın; koordinasyonu artırın.',
+    reversed: 'Tavsiye: Sorumluluk matrisi yazın; koordinasyonu artırın.',
     keywords: ['işbirliği', 'rol', 'standart', 'koordinasyon', 'kalite'],
     context: 'Tavsiye: Birlikte inşa sistemi.',
     group: 'Tılsımlar',
@@ -845,10 +792,8 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'four_of_pentacles_sa_pos6',
     card: 'Four of Pentacles',
     position: 6,
-    upright:
-      'Tavsiye: Bütçe yapın ama büyüme yatırımı için pay ayırın.',
-    reversed:
-      'Tavsiye: Aşırı sıkılığı gevşetin; stratejik risk alın.',
+    upright: 'Tavsiye: Bütçe yapın ama büyüme yatırımı için pay ayırın.',
+    reversed: 'Tavsiye: Aşırı sıkılığı gevşetin; stratejik risk alın.',
     keywords: ['bütçe', 'tasarruf', 'yatırım', 'risk', 'denge'],
     context: 'Tavsiye: Koruma–büyüme dengesini kurmak.',
     group: 'Tılsımlar',
@@ -857,10 +802,8 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'five_of_pentacles_sa_pos6',
     card: 'Five of Pentacles',
     position: 6,
-    upright:
-      'Tavsiye: Yardım isteyin; destek programlarını araştırın.',
-    reversed:
-      'Tavsiye: Küçük kazanımları görünür kılın; morali yükseltin.',
+    upright: 'Tavsiye: Yardım isteyin; destek programlarını araştırın.',
+    reversed: 'Tavsiye: Küçük kazanımları görünür kılın; morali yükseltin.',
     keywords: ['destek', 'yardım', 'program', 'kazanım', 'moral'],
     context: 'Tavsiye: Köprü desteklerle geçmek.',
     group: 'Tılsımlar',
@@ -869,10 +812,8 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'six_of_pentacles_sa_pos6',
     card: 'Six of Pentacles',
     position: 6,
-    upright:
-      'Tavsiye: Adil anlaşmalar kurun; koşulları şeffaflaştırın.',
-    reversed:
-      'Tavsiye: Güç dengesini düzeltin; net beklenti yazın.',
+    upright: 'Tavsiye: Adil anlaşmalar kurun; koşulları şeffaflaştırın.',
+    reversed: 'Tavsiye: Güç dengesini düzeltin; net beklenti yazın.',
     keywords: ['adalet', 'anlaşma', 'şeffaflık', 'denge', 'beklenti'],
     context: 'Tavsiye: Kazan-kazanı yapılandırmak.',
     group: 'Tılsımlar',
@@ -883,8 +824,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     position: 6,
     upright:
       'Tavsiye: Göstergeleri gözden geçirin; küçük iyileştirmeler yapın.',
-    reversed:
-      'Tavsiye: Batık maliyete takılmayın; pivot kriteri uygulayın.',
+    reversed: 'Tavsiye: Batık maliyete takılmayın; pivot kriteri uygulayın.',
     keywords: ['verim', 'ölçüm', 'iyileştirme', 'pivot', 'sabır'],
     context: 'Tavsiye: Hasat öncesi ince ayar.',
     group: 'Tılsımlar',
@@ -895,8 +835,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     position: 6,
     upright:
       'Tavsiye: Deliberate practice yapın; zanaat standardını yükseltin.',
-    reversed:
-      'Tavsiye: Oto-pilotu kapatın; anlamla yeniden bağ kurun.',
+    reversed: 'Tavsiye: Oto-pilotu kapatın; anlamla yeniden bağ kurun.',
     keywords: ['pratik', 'ustalık', 'standart', 'anlam', 'odak'],
     context: 'Tavsiye: Ustalığı bilinçle büyütmek.',
     group: 'Tılsımlar',
@@ -905,10 +844,8 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'nine_of_pentacles_sa_pos6',
     card: 'Nine of Pentacles',
     position: 6,
-    upright:
-      'Tavsiye: Sınırları güçlendirin; emeğin meyvesini tadın.',
-    reversed:
-      'Tavsiye: İsrafı kısın; akıllı tasarruf/gelir planı yapın.',
+    upright: 'Tavsiye: Sınırları güçlendirin; emeğin meyvesini tadın.',
+    reversed: 'Tavsiye: İsrafı kısın; akıllı tasarruf/gelir planı yapın.',
     keywords: ['sınır', 'öz yeter', 'konfor', 'tasarruf', 'plan'],
     context: 'Tavsiye: Zarif yeterliliği korumak.',
     group: 'Tılsımlar',
@@ -919,8 +856,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     position: 6,
     upright:
       'Tavsiye: Sistem ve süreçlerle kalıcılık kurun; miras/uzun vade düşünün.',
-    reversed:
-      'Tavsiye: Aile/kurumsal çekişmeleri şeffaf kurallarla çözün.',
+    reversed: 'Tavsiye: Aile/kurumsal çekişmeleri şeffaf kurallarla çözün.',
     keywords: ['sistem', 'süreç', 'uzun vade', 'miras', 'şeffaflık'],
     context: 'Tavsiye: Kalıcı yapı oluşturmak.',
     group: 'Tılsımlar',
@@ -931,8 +867,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     position: 6,
     upright:
       'Tavsiye: Yeni bir beceri/sertifika sürecine başlayın; küçük hedef koyun.',
-    reversed:
-      'Tavsiye: Öğrenme planı yazın; dikkat dağınıklığını sınırlayın.',
+    reversed: 'Tavsiye: Öğrenme planı yazın; dikkat dağınıklığını sınırlayın.',
     keywords: ['öğrenme', 'hedef', 'sertifika', 'plan', 'odak'],
     context: 'Tavsiye: Çıraklık kasını çalıştırmak.',
     group: 'Tılsımlar',
@@ -941,10 +876,8 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'knight_of_pentacles_sa_pos6',
     card: 'Knight of Pentacles',
     position: 6,
-    upright:
-      'Tavsiye: Rutinler ve SOP’lar kurun; istikrarla ilerleyin.',
-    reversed:
-      'Tavsiye: Sürece çeviklik ekleyin; küçük yenilikler deneyin.',
+    upright: 'Tavsiye: Rutinler ve SOP’lar kurun; istikrarla ilerleyin.',
+    reversed: 'Tavsiye: Sürece çeviklik ekleyin; küçük yenilikler deneyin.',
     keywords: ['rutin', 'SOP', 'istikrar', 'çeviklik', 'ivme'],
     context: 'Tavsiye: Güvenilir tempo.',
     group: 'Tılsımlar',
@@ -953,10 +886,8 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'queen_of_pentacles_sa_pos6',
     card: 'Queen of Pentacles',
     position: 6,
-    upright:
-      'Tavsiye: Kaynakları sevgiyle yönetin; öz-bakıma pay ayırın.',
-    reversed:
-      'Tavsiye: Aşırı yükü bırakın; destek ve sınır isteyin.',
+    upright: 'Tavsiye: Kaynakları sevgiyle yönetin; öz-bakıma pay ayırın.',
+    reversed: 'Tavsiye: Aşırı yükü bırakın; destek ve sınır isteyin.',
     keywords: ['kaynak', 'öz bakım', 'destek', 'sınır', 'denge'],
     context: 'Tavsiye: Besleyen düzen kurmak.',
     group: 'Tılsımlar',
@@ -967,8 +898,7 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
     position: 6,
     upright:
       'Tavsiye: Uzun vadeli strateji yazın; mentorlukla etkiyi kalıcı kılın.',
-    reversed:
-      'Tavsiye: Mikro-yönetimi bırakın; yetki ve güven dağıtın.',
+    reversed: 'Tavsiye: Mikro-yönetimi bırakın; yetki ve güven dağıtın.',
     keywords: ['strateji', 'uzun vade', 'mentorluk', 'yetki', 'güven'],
     context: 'Tavsiye: Sağlam liderlikle ölçeklemek.',
     group: 'Tılsımlar',
@@ -979,25 +909,22 @@ export const position6Meanings: SituationAnalysisPositionMeaning[] = [
 export const getPosition6Meaning = (
   cardName: string
 ): SituationAnalysisPositionMeaning | undefined => {
-  return position6Meanings.find(
-    meaning => meaning.card === cardName
-  );
+  return position6Meanings.find(meaning => meaning.card === cardName);
 };
 
 // Ana index dosyası için uyumluluk fonksiyonu
 export const getSituationAnalysisPosition6Meaning = (
-  cardName: string,
-  isReversed: boolean = false
+  cardName: string
 ): SituationAnalysisPositionMeaning | undefined => {
-  return getPosition6Meaning(cardName, isReversed);
+  return getPosition6Meaning(cardName);
 };
 
 // Kart adına göre pozisyon 6 anlamını bulma fonksiyonu (ana index için)
 export const getSituationAnalysisPosition6MeaningByCardName = (
   cardName: string,
-  isReversed: boolean = false
+  _isReversed: boolean = false
 ): SituationAnalysisPositionMeaning | undefined => {
-  const meaning = getPosition6Meaning(cardName, isReversed);
+  const meaning = getPosition6Meaning(cardName);
   if (meaning) {
     return {
       ...meaning,
@@ -1008,9 +935,10 @@ export const getSituationAnalysisPosition6MeaningByCardName = (
 };
 
 // Tüm pozisyon 6 anlamlarını alma fonksiyonu
-export const getAllPosition6Meanings = (): SituationAnalysisPositionMeaning[] => {
-  return position6Meanings;
-};
+export const getAllPosition6Meanings =
+  (): SituationAnalysisPositionMeaning[] => {
+    return position6Meanings;
+  };
 
 // Pozisyon 6 anlamlarını filtreleme fonksiyonu
 export const getPosition6MeaningsByGroup = (

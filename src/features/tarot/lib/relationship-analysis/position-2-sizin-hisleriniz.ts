@@ -175,7 +175,7 @@ export const position2Meanings: RelationshipAnalysisPosition2Meaning[] = [
   },
   {
     id: 'wheel_of_fortune_ra_pos2',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 2,
     upright:
       'Kader Çarkı, hislerinizin döngüler ve şansla değiştiğini gösterir. Kalbiniz sürekli hareket halinde.',
@@ -234,8 +234,7 @@ export const position2Meanings: RelationshipAnalysisPosition2Meaning[] = [
     reversed:
       'Ters Denge, aşırılık ve dengesizliklerin hislerinizi zorladığını söyler. Belirti: Ya hep ya hiç hali.',
     keywords: ['denge', 'uyum', 'sabır', 'sentez', 'ölçü'],
-    context:
-      'Şu an hisleriniz orta yolu arıyor. Uyum ritmi huzur getirecek.',
+    context: 'Şu an hisleriniz orta yolu arıyor. Uyum ritmi huzur getirecek.',
     group: 'Majör Arkana',
   },
   {
@@ -417,8 +416,7 @@ export const position2Meanings: RelationshipAnalysisPosition2Meaning[] = [
     reversed:
       'Ters Yedi Kupa, hayal perdesinin kalktığını ama kararsızlığın devam edebildiğini gösterir. Belirti: Kafa karışıklığı.',
     keywords: ['hayal', 'seçenek', 'illüzyon', 'karar', 'arayış'],
-    context:
-      'Şu an kalbiniz hayallerle dolu. Net seçim huzur getirecek.',
+    context: 'Şu an kalbiniz hayallerle dolu. Net seçim huzur getirecek.',
     group: 'Kupalar',
   },
   {
@@ -443,8 +441,7 @@ export const position2Meanings: RelationshipAnalysisPosition2Meaning[] = [
     reversed:
       'Ters Dokuz Kupa, sahte tatmin ya da yüzeysel zevklerin hislerinizi gölgelediğini söyler. Belirti: Eksik hissetme.',
     keywords: ['tatmin', 'mutluluk', 'doyum', 'şükür', 'zevk'],
-    context:
-      'Şu an kalbiniz dolu. İçten gelen mutluluk huzuru besleyecek.',
+    context: 'Şu an kalbiniz dolu. İçten gelen mutluluk huzuru besleyecek.',
     group: 'Kupalar',
   },
   {
@@ -468,7 +465,13 @@ export const position2Meanings: RelationshipAnalysisPosition2Meaning[] = [
       'Kupa Prensi, hislerinizde saf romantizm ve duygusal açıklık öne çıkıyor. Kalbiniz oyunbaz bir sevgi diliyle atıyor. İpucu: Hayal gücünüzü paylaşın.',
     reversed:
       'Ters Kupa Prensi, duygusal olgunluk eksikliğinin hislerinizi savurduğunu gösterir. Belirti: Abartılı duygular.',
-    keywords: ['romantizm', 'masumiyet', 'hayal gücü', 'duygusallık', 'açıklık'],
+    keywords: [
+      'romantizm',
+      'masumiyet',
+      'hayal gücü',
+      'duygusallık',
+      'açıklık',
+    ],
     context:
       'Şu an kalbiniz masum bir aşkla dolu. Olgunluk bu sevgiyi büyütecek.',
     group: 'Kupalar',
@@ -536,8 +539,7 @@ export const position2Meanings: RelationshipAnalysisPosition2Meaning[] = [
     reversed:
       'Ters İki Tılsım, dengesizlik ve aşırı yükün hislerinizi zorladığını söyler. Belirti: Dağınık enerji.',
     keywords: ['denge', 'uyum', 'sorumluluk', 'esneklik', 'akış'],
-    context:
-      'Şu an kalbiniz çok şeyle uğraşıyor. Esneklik sizi hafifletecek.',
+    context: 'Şu an kalbiniz çok şeyle uğraşıyor. Esneklik sizi hafifletecek.',
     group: 'Tılsımlar',
   },
   {
@@ -575,8 +577,7 @@ export const position2Meanings: RelationshipAnalysisPosition2Meaning[] = [
     reversed:
       'Ters Beş Tılsım, toparlanma ve desteğe yönelme isteğinin arttığını gösterir. Belirti: Kapı aralanıyor.',
     keywords: ['yalnızlık', 'eksiklik', 'destek', 'kaynak', 'yardım'],
-    context:
-      'Şu an kalbiniz destek arıyor. Paylaşım yaraları saracak.',
+    context: 'Şu an kalbiniz destek arıyor. Paylaşım yaraları saracak.',
     group: 'Tılsımlar',
   },
   {
@@ -601,8 +602,7 @@ export const position2Meanings: RelationshipAnalysisPosition2Meaning[] = [
     reversed:
       'Ters Yedi Tılsım, sabırsızlık ve sonuç görememenin hislerinizi zorladığını söyler. Belirti: Umutsuz bekleyiş.',
     keywords: ['sabır', 'yatırım', 'bekleyiş', 'umut', 'emek'],
-    context:
-      'Şu an kalbiniz sabırla dolu. İnançla beklemek meyve verecek.',
+    context: 'Şu an kalbiniz sabırla dolu. İnançla beklemek meyve verecek.',
     group: 'Tılsımlar',
   },
   {
@@ -879,190 +879,186 @@ export const position2Meanings: RelationshipAnalysisPosition2Meaning[] = [
       'Şu an kalbiniz düzen ve tutarlılık istiyor. Yumuşak empati odayı ısıtacak. İlke ve kalp el ele ilerlesin.',
     group: 'Kılıçlar',
   },
-// Set: Asalar (14 kart)
+  // Set: Asalar (14 kart)
 
-{
-  id: 'ace_of_wands_ra_pos2',
-  card: 'Ace of Wands',
-  position: 2,
-  upright:
-    'Değnek Ası, hislerinizde tutku ve yeni bir kıvılcım doğduğunu söyler. Kalbiniz ateşlenmek istiyor. İpucu: İçinizdeki coşkuyu paylaşın.',
-  reversed:
-    'Ters Değnek Ası, hevesin söndüğü veya engellendiğini gösterir. Belirti: Ertelenmiş başlangıç.',
-  keywords: ['tutku', 'ilham', 'başlangıç', 'ateş', 'coşku'],
-  context:
-    'Şu an kalbinizde kıvılcım var. Ateşi büyütmek bağınızı canlandıracak.',
-  group: 'Asalar',
-},
-{
-  id: 'two_of_wands_ra_pos2',
-  card: 'Two of Wands',
-  position: 2,
-  upright:
-    'İki Değnek, hislerinizde plan yapma ve ufka bakma isteği var. Kalbiniz geleceğe yöneliyor. İpucu: Cesur bir vizyon belirleyin.',
-  reversed:
-    'Ters İki Değnek, adım atamama ve kararsızlığın hislerinizi tuttuğunu gösterir. Belirti: Ufka bakıp geri çekilme.',
-  keywords: ['plan', 'vizyon', 'gelecek', 'tereddüt', 'cesaret'],
-  context:
-    'Şu an kalbiniz ileriye bakıyor. Net niyetler adım atmayı kolaylaştıracak.',
-  group: 'Asalar',
-},
-{
-  id: 'three_of_wands_ra_pos2',
-  card: 'Three of Wands',
-  position: 2,
-  upright:
-    'Üç Değnek, hislerinizde beklenti ve genişleme arzusu var. Kalbiniz yeni ufuklara açılmak istiyor. İpucu: Sabırla fırsatları izleyin.',
-  reversed:
-    'Ters Üç Değnek, beklenen şeylerin gelmemesinin duygularınızı zorladığını söyler. Belirti: Hayal kırıklığı.',
-  keywords: ['beklenti', 'genişleme', 'vizyon', 'umut', 'ufuk'],
-  context:
-    'Şu an kalbiniz gelecek için umutlu. Sabır ve inanç duygularınızı büyütecek.',
-  group: 'Asalar',
-},
-{
-  id: 'four_of_wands_ra_pos2',
-  card: 'Four of Wands',
-  position: 2,
-  upright:
-    'Dört Değnek, hislerinizde kutlama ve güvenli alan enerjisi var. Kalbiniz huzurla bağ kurmak istiyor. İpucu: Mutluluğu paylaşın.',
-  reversed:
-    'Ters Dört Değnek, uyumsuzluk veya yarım kalmış birlik hissini gösterir. Belirti: Eksik kutlama.',
-  keywords: ['kutlama', 'huzur', 'birlik', 'güven', 'dayanışma'],
-  context:
-    'Şu an kalbiniz huzurlu birlik arıyor. Güvenli alan paylaşımı şifalı olacak.',
-  group: 'Asalar',
-},
-{
-  id: 'five_of_wands_ra_pos2',
-  card: 'Five of Wands',
-  position: 2,
-  upright:
-    'Beş Değnek, hislerinizde rekabet veya küçük çatışmalar hissi var. Kalbiniz anlaşılmak istiyor. İpucu: Çatışmayı oyuna çevirin.',
-  reversed:
-    'Ters Beş Değnek, gereksiz tartışmaların duygularınızı zorladığını gösterir. Belirti: Enerji kaybı.',
-  keywords: ['rekabet', 'çatışma', 'dinamizm', 'oyun', 'ifade'],
-  context:
-    'Şu an kalbiniz biraz rekabetçi. Yapıcı yaklaşım bağı besleyecek.',
-  group: 'Asalar',
-},
-{
-  id: 'six_of_wands_ra_pos2',
-  card: 'Six of Wands',
-  position: 2,
-  upright:
-    'Altı Değnek, hislerinizde takdir görme ve onaylanma isteği var. Kalbiniz gururla ışıldıyor. İpucu: Zaferinizi paylaşın.',
-  reversed:
-    'Ters Altı Değnek, görülmeme hissi veya onay eksikliğinin hislerinizi gölgelediğini söyler. Belirti: Hayal kırıklığı.',
-  keywords: ['zafer', 'takdir', 'görülmek', 'gurur', 'başarı'],
-  context:
-    'Şu an kalbiniz takdir arıyor. Şeffaf paylaşım görülmenizi kolaylaştıracak.',
-  group: 'Asalar',
-},
-{
-  id: 'seven_of_wands_ra_pos2',
-  card: 'Seven of Wands',
-  position: 2,
-  upright:
-    'Yedi Değnek, hislerinizde savunma ve direnç enerjisi var. Kalbiniz kendini korumak istiyor. İpucu: Sınırlarınızı şefkatle anlatın.',
-  reversed:
-    'Ters Yedi Değnek, yorucu savunmaların kalbinizi yorduğunu söyler. Belirti: Tükenmiş direnç.',
-  keywords: ['savunma', 'sınır', 'direnç', 'mücadele', 'güç'],
-  context:
-    'Şu an kalbiniz kendini koruyor. Yumuşak açıklık duygularınızı hafifletecek.',
-  group: 'Asalar',
-},
-{
-  id: 'eight_of_wands_ra_pos2',
-  card: 'Eight of Wands',
-  position: 2,
-  upright:
-    'Sekiz Değnek, hislerinizde hız ve akış isteği var. Kalbiniz gelişmeleri görmek istiyor. İpucu: Haberleşmeye izin verin.',
-  reversed:
-    'Ters Sekiz Değnek, gecikmelerin hislerinizi zorladığını gösterir. Belirti: Sabırsızlık.',
-  keywords: ['hız', 'akış', 'iletişim', 'gelişme', 'ivme'],
-  context:
-    'Şu an kalbiniz hız arıyor. Sabırla beklemek akışı kolaylaştıracak.',
-  group: 'Asalar',
-},
-{
-  id: 'nine_of_wands_ra_pos2',
-  card: 'Nine of Wands',
-  position: 2,
-  upright:
-    'Dokuz Değnek, hislerinizde temkin ve direnç enerjisi var. Kalbiniz sınırlarını koruyor. İpucu: Az kaldı, sabırlı olun.',
-  reversed:
-    'Ters Dokuz Değnek, aşırı yorgunluk ve şüphelerin duygularınızı zorladığını gösterir. Belirti: Bitkin savunma.',
-  keywords: ['sabır', 'koruma', 'sınır', 'direnç', 'azim'],
-  context:
-    'Şu an kalbiniz kendini korumakla meşgul. Biraz dinlenmek güç toplayacak.',
-  group: 'Asalar',
-},
-{
-  id: 'ten_of_wands_ra_pos2',
-  card: 'Ten of Wands',
-  position: 2,
-  upright:
-    'On Değnek, hislerinizde yük taşıma ve sorumluluk baskısı var. Kalbiniz yorulmuş olabilir. İpucu: Yükünüzü paylaşın.',
-  reversed:
-    'Ters On Değnek, fazlalıkları bırakma ihtiyacını söyler. Belirti: Tükenmişlik.',
-  keywords: ['sorumluluk', 'yük', 'yorulma', 'dayanma', 'paylaşım'],
-  context:
-    'Şu an kalbiniz yük altında. Destek istemek duygularınızı hafifletecek.',
-  group: 'Asalar',
-},
-{
-  id: 'page_of_wands_ra_pos2',
-  card: 'Page of Wands',
-  position: 2,
-  upright:
-    'Değnek Prensi, hislerinizde merak ve macera isteği var. Kalbiniz keşfe aç. İpucu: Cesurca adım atın.',
-  reversed:
-    'Ters Değnek Prensi, dengesizlik ve sabırsızlığın hislerinizi savurduğunu gösterir. Belirti: Başlanıp yarım kalan işler.',
-  keywords: ['merak', 'macera', 'heves', 'keşif', 'coşku'],
-  context:
-    'Şu an kalbiniz keşif arıyor. Denge bu enerjiyi besleyecek.',
-  group: 'Asalar',
-},
-{
-  id: 'knight_of_wands_ra_pos2',
-  card: 'Knight of Wands',
-  position: 2,
-  upright:
-    'Değnek Şövalyesi, hislerinizde tutku ve hızlı hareket isteği var. Kalbiniz aceleyle ilerlemek istiyor. İpucu: Sabırla ateşi besleyin.',
-  reversed:
-    'Ters Değnek Şövalyesi, sabırsızlık ve öfke patlamalarının hislerinizi zorladığını söyler. Belirti: Acele kararlar.',
-  keywords: ['tutku', 'hız', 'hareket', 'cesaret', 'coşku'],
-  context:
-    'Şu an kalbiniz atak. Sabırla adım atmak bağı güçlendirecek.',
-  group: 'Asalar',
-},
-{
-  id: 'queen_of_wands_ra_pos2',
-  card: 'Queen of Wands',
-  position: 2,
-  upright:
-    'Değnek Kraliçesi, hislerinizde özgüven ve sıcaklık enerjisi var. Kalbiniz ışığını saçmak istiyor. İpucu: Çekiciliğinizi paylaşın.',
-  reversed:
-    'Ters Değnek Kraliçesi, kıskançlık veya aşırı gururun hislerinizi zorladığını söyler. Belirti: Kapris.',
-  keywords: ['özgüven', 'sıcaklık', 'çekicilik', 'tutku', 'liderlik'],
-  context:
-    'Şu an kalbiniz parlıyor. İçtenlik bu ışığı büyütecek.',
-  group: 'Asalar',
-},
-{
-  id: 'king_of_wands_ra_pos2',
-  card: 'King of Wands',
-  position: 2,
-  upright:
-    'Değnek Kralı, hislerinizde güçlü liderlik ve yön belirleme isteği var. Kalbiniz tutkulu bir vizyon istiyor. İpucu: İlhamla yön verin.',
-  reversed:
-    'Ters Değnek Kralı, otoriterlik veya aşırı baskının hislerinizi zorladığını gösterir. Belirti: Katı tutum.',
-  keywords: ['liderlik', 'vizyon', 'tutku', 'karizma', 'ilham'],
-  context:
-    'Şu an kalbiniz güçlü hislerle dolu. Şefkatle liderlik etmek bağı büyütecek.',
-  group: 'Asalar',
-},
+  {
+    id: 'ace_of_wands_ra_pos2',
+    card: 'Ace of Wands',
+    position: 2,
+    upright:
+      'Değnek Ası, hislerinizde tutku ve yeni bir kıvılcım doğduğunu söyler. Kalbiniz ateşlenmek istiyor. İpucu: İçinizdeki coşkuyu paylaşın.',
+    reversed:
+      'Ters Değnek Ası, hevesin söndüğü veya engellendiğini gösterir. Belirti: Ertelenmiş başlangıç.',
+    keywords: ['tutku', 'ilham', 'başlangıç', 'ateş', 'coşku'],
+    context:
+      'Şu an kalbinizde kıvılcım var. Ateşi büyütmek bağınızı canlandıracak.',
+    group: 'Asalar',
+  },
+  {
+    id: 'two_of_wands_ra_pos2',
+    card: 'Two of Wands',
+    position: 2,
+    upright:
+      'İki Değnek, hislerinizde plan yapma ve ufka bakma isteği var. Kalbiniz geleceğe yöneliyor. İpucu: Cesur bir vizyon belirleyin.',
+    reversed:
+      'Ters İki Değnek, adım atamama ve kararsızlığın hislerinizi tuttuğunu gösterir. Belirti: Ufka bakıp geri çekilme.',
+    keywords: ['plan', 'vizyon', 'gelecek', 'tereddüt', 'cesaret'],
+    context:
+      'Şu an kalbiniz ileriye bakıyor. Net niyetler adım atmayı kolaylaştıracak.',
+    group: 'Asalar',
+  },
+  {
+    id: 'three_of_wands_ra_pos2',
+    card: 'Three of Wands',
+    position: 2,
+    upright:
+      'Üç Değnek, hislerinizde beklenti ve genişleme arzusu var. Kalbiniz yeni ufuklara açılmak istiyor. İpucu: Sabırla fırsatları izleyin.',
+    reversed:
+      'Ters Üç Değnek, beklenen şeylerin gelmemesinin duygularınızı zorladığını söyler. Belirti: Hayal kırıklığı.',
+    keywords: ['beklenti', 'genişleme', 'vizyon', 'umut', 'ufuk'],
+    context:
+      'Şu an kalbiniz gelecek için umutlu. Sabır ve inanç duygularınızı büyütecek.',
+    group: 'Asalar',
+  },
+  {
+    id: 'four_of_wands_ra_pos2',
+    card: 'Four of Wands',
+    position: 2,
+    upright:
+      'Dört Değnek, hislerinizde kutlama ve güvenli alan enerjisi var. Kalbiniz huzurla bağ kurmak istiyor. İpucu: Mutluluğu paylaşın.',
+    reversed:
+      'Ters Dört Değnek, uyumsuzluk veya yarım kalmış birlik hissini gösterir. Belirti: Eksik kutlama.',
+    keywords: ['kutlama', 'huzur', 'birlik', 'güven', 'dayanışma'],
+    context:
+      'Şu an kalbiniz huzurlu birlik arıyor. Güvenli alan paylaşımı şifalı olacak.',
+    group: 'Asalar',
+  },
+  {
+    id: 'five_of_wands_ra_pos2',
+    card: 'Five of Wands',
+    position: 2,
+    upright:
+      'Beş Değnek, hislerinizde rekabet veya küçük çatışmalar hissi var. Kalbiniz anlaşılmak istiyor. İpucu: Çatışmayı oyuna çevirin.',
+    reversed:
+      'Ters Beş Değnek, gereksiz tartışmaların duygularınızı zorladığını gösterir. Belirti: Enerji kaybı.',
+    keywords: ['rekabet', 'çatışma', 'dinamizm', 'oyun', 'ifade'],
+    context: 'Şu an kalbiniz biraz rekabetçi. Yapıcı yaklaşım bağı besleyecek.',
+    group: 'Asalar',
+  },
+  {
+    id: 'six_of_wands_ra_pos2',
+    card: 'Six of Wands',
+    position: 2,
+    upright:
+      'Altı Değnek, hislerinizde takdir görme ve onaylanma isteği var. Kalbiniz gururla ışıldıyor. İpucu: Zaferinizi paylaşın.',
+    reversed:
+      'Ters Altı Değnek, görülmeme hissi veya onay eksikliğinin hislerinizi gölgelediğini söyler. Belirti: Hayal kırıklığı.',
+    keywords: ['zafer', 'takdir', 'görülmek', 'gurur', 'başarı'],
+    context:
+      'Şu an kalbiniz takdir arıyor. Şeffaf paylaşım görülmenizi kolaylaştıracak.',
+    group: 'Asalar',
+  },
+  {
+    id: 'seven_of_wands_ra_pos2',
+    card: 'Seven of Wands',
+    position: 2,
+    upright:
+      'Yedi Değnek, hislerinizde savunma ve direnç enerjisi var. Kalbiniz kendini korumak istiyor. İpucu: Sınırlarınızı şefkatle anlatın.',
+    reversed:
+      'Ters Yedi Değnek, yorucu savunmaların kalbinizi yorduğunu söyler. Belirti: Tükenmiş direnç.',
+    keywords: ['savunma', 'sınır', 'direnç', 'mücadele', 'güç'],
+    context:
+      'Şu an kalbiniz kendini koruyor. Yumuşak açıklık duygularınızı hafifletecek.',
+    group: 'Asalar',
+  },
+  {
+    id: 'eight_of_wands_ra_pos2',
+    card: 'Eight of Wands',
+    position: 2,
+    upright:
+      'Sekiz Değnek, hislerinizde hız ve akış isteği var. Kalbiniz gelişmeleri görmek istiyor. İpucu: Haberleşmeye izin verin.',
+    reversed:
+      'Ters Sekiz Değnek, gecikmelerin hislerinizi zorladığını gösterir. Belirti: Sabırsızlık.',
+    keywords: ['hız', 'akış', 'iletişim', 'gelişme', 'ivme'],
+    context:
+      'Şu an kalbiniz hız arıyor. Sabırla beklemek akışı kolaylaştıracak.',
+    group: 'Asalar',
+  },
+  {
+    id: 'nine_of_wands_ra_pos2',
+    card: 'Nine of Wands',
+    position: 2,
+    upright:
+      'Dokuz Değnek, hislerinizde temkin ve direnç enerjisi var. Kalbiniz sınırlarını koruyor. İpucu: Az kaldı, sabırlı olun.',
+    reversed:
+      'Ters Dokuz Değnek, aşırı yorgunluk ve şüphelerin duygularınızı zorladığını gösterir. Belirti: Bitkin savunma.',
+    keywords: ['sabır', 'koruma', 'sınır', 'direnç', 'azim'],
+    context:
+      'Şu an kalbiniz kendini korumakla meşgul. Biraz dinlenmek güç toplayacak.',
+    group: 'Asalar',
+  },
+  {
+    id: 'ten_of_wands_ra_pos2',
+    card: 'Ten of Wands',
+    position: 2,
+    upright:
+      'On Değnek, hislerinizde yük taşıma ve sorumluluk baskısı var. Kalbiniz yorulmuş olabilir. İpucu: Yükünüzü paylaşın.',
+    reversed:
+      'Ters On Değnek, fazlalıkları bırakma ihtiyacını söyler. Belirti: Tükenmişlik.',
+    keywords: ['sorumluluk', 'yük', 'yorulma', 'dayanma', 'paylaşım'],
+    context:
+      'Şu an kalbiniz yük altında. Destek istemek duygularınızı hafifletecek.',
+    group: 'Asalar',
+  },
+  {
+    id: 'page_of_wands_ra_pos2',
+    card: 'Page of Wands',
+    position: 2,
+    upright:
+      'Değnek Prensi, hislerinizde merak ve macera isteği var. Kalbiniz keşfe aç. İpucu: Cesurca adım atın.',
+    reversed:
+      'Ters Değnek Prensi, dengesizlik ve sabırsızlığın hislerinizi savurduğunu gösterir. Belirti: Başlanıp yarım kalan işler.',
+    keywords: ['merak', 'macera', 'heves', 'keşif', 'coşku'],
+    context: 'Şu an kalbiniz keşif arıyor. Denge bu enerjiyi besleyecek.',
+    group: 'Asalar',
+  },
+  {
+    id: 'knight_of_wands_ra_pos2',
+    card: 'Knight of Wands',
+    position: 2,
+    upright:
+      'Değnek Şövalyesi, hislerinizde tutku ve hızlı hareket isteği var. Kalbiniz aceleyle ilerlemek istiyor. İpucu: Sabırla ateşi besleyin.',
+    reversed:
+      'Ters Değnek Şövalyesi, sabırsızlık ve öfke patlamalarının hislerinizi zorladığını söyler. Belirti: Acele kararlar.',
+    keywords: ['tutku', 'hız', 'hareket', 'cesaret', 'coşku'],
+    context: 'Şu an kalbiniz atak. Sabırla adım atmak bağı güçlendirecek.',
+    group: 'Asalar',
+  },
+  {
+    id: 'queen_of_wands_ra_pos2',
+    card: 'Queen of Wands',
+    position: 2,
+    upright:
+      'Değnek Kraliçesi, hislerinizde özgüven ve sıcaklık enerjisi var. Kalbiniz ışığını saçmak istiyor. İpucu: Çekiciliğinizi paylaşın.',
+    reversed:
+      'Ters Değnek Kraliçesi, kıskançlık veya aşırı gururun hislerinizi zorladığını söyler. Belirti: Kapris.',
+    keywords: ['özgüven', 'sıcaklık', 'çekicilik', 'tutku', 'liderlik'],
+    context: 'Şu an kalbiniz parlıyor. İçtenlik bu ışığı büyütecek.',
+    group: 'Asalar',
+  },
+  {
+    id: 'king_of_wands_ra_pos2',
+    card: 'King of Wands',
+    position: 2,
+    upright:
+      'Değnek Kralı, hislerinizde güçlü liderlik ve yön belirleme isteği var. Kalbiniz tutkulu bir vizyon istiyor. İpucu: İlhamla yön verin.',
+    reversed:
+      'Ters Değnek Kralı, otoriterlik veya aşırı baskının hislerinizi zorladığını gösterir. Belirti: Katı tutum.',
+    keywords: ['liderlik', 'vizyon', 'tutku', 'karizma', 'ilham'],
+    context:
+      'Şu an kalbiniz güçlü hislerle dolu. Şefkatle liderlik etmek bağı büyütecek.',
+    group: 'Asalar',
+  },
 ];
 
 /**
@@ -1075,54 +1071,55 @@ export function getRelationshipAnalysisPosition2Meaning(
 ): RelationshipAnalysisPosition2Meaning | null {
   // Kart ismi eşleştirmesi için hem İngilizce hem Türkçe isimleri kontrol et
   // Önce doğrudan eşleşme ara
-  let meaning = position2Meanings.find(m => 
-    m.card === card.name || 
-    m.card === card.nameTr ||
-    card.name === m.card ||
-    card.nameTr === m.card
+  let meaning = position2Meanings.find(
+    m =>
+      m.card === card.name ||
+      m.card === card.nameTr ||
+      card.name === m.card ||
+      card.nameTr === m.card
   );
-  
+
   if (meaning) {
     return meaning;
   }
-  
+
   // Kart ismi mapping'i kullanarak eşleştirme yap
   const cardNameMapping: { [key: string]: string } = {
     // Major Arcana - Türkçe
-    'Deli': 'The Fool',
-    'Büyücü': 'The Magician',
+    Deli: 'The Fool',
+    Büyücü: 'The Magician',
     'Yüksek Rahibe': 'The High Priestess',
-    'İmparatoriçe': 'The Empress',
-    'İmparator': 'The Emperor',
-    'Hierophant': 'The Hierophant',
-    'Aziz': 'The Hierophant',
-    'Aşıklar': 'The Lovers',
+    İmparatoriçe: 'The Empress',
+    İmparator: 'The Emperor',
+    Hierophant: 'The Hierophant',
+    Aziz: 'The Hierophant',
+    Aşıklar: 'The Lovers',
     'Savaş Arabası': 'The Chariot',
-    'Güç': 'Strength',
-    'Ermiş': 'The Hermit',
-    'Münzevi': 'The Hermit',
-    'Kader Çarkı': 'The Wheel of Fortune',
-    'Adalet': 'Justice',
+    Güç: 'Strength',
+    Ermiş: 'The Hermit',
+    Münzevi: 'The Hermit',
+    'Kader Çarkı': 'The The Wheel of Fortune',
+    Adalet: 'Justice',
     'Asılı Adam': 'The Hanged Man',
-    'Ölüm': 'Death',
-    'Ölçü': 'Temperance',
-    'Ölçülülük': 'Temperance',
-    'Şeytan': 'The Devil',
-    'Kule': 'The Tower',
-    'Yıldız': 'The Star',
-    'Ay': 'The Moon',
-    'Güneş': 'The Sun',
-    'Yargı': 'Judgement',
-    'Mahkeme': 'Judgement',
-    'Dünya': 'The World',
+    Ölüm: 'Death',
+    Ölçü: 'Temperance',
+    Ölçülülük: 'Temperance',
+    Şeytan: 'The Devil',
+    Kule: 'The Tower',
+    Yıldız: 'The Star',
+    Ay: 'The Moon',
+    Güneş: 'The Sun',
+    Yargı: 'Judgement',
+    Mahkeme: 'Judgement',
+    Dünya: 'The World',
   };
-  
+
   // Türkçe ismi İngilizce'ye çevir
   const englishName = cardNameMapping[card.nameTr] || card.nameTr;
-  
+
   // İngilizce isimle tekrar ara
   meaning = position2Meanings.find(m => m.card === englishName);
-  
+
   return meaning || null;
 }
 

@@ -1,6 +1,6 @@
 /*
  * IP Utility Functions
- * 
+ *
  * Bu dosya IP adresi alma işlemleri için ortak utility fonksiyonları sağlar.
  * DRY principle uygulayarak tekrarlanan getClientIP kodlarını önler.
  */
@@ -67,11 +67,12 @@ export function cleanIPAddress(ip: string): string {
  */
 export function isValidIP(ip: string): boolean {
   // IPv4 regex
-  const ipv4Regex = /^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
-  
+  const ipv4Regex =
+    /^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+
   // IPv6 regex (basit)
   const ipv6Regex = /^(?:[0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}$/;
-  
+
   return ipv4Regex.test(ip) || ipv6Regex.test(ip);
 }
 

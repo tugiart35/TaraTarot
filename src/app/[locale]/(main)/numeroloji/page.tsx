@@ -83,7 +83,7 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
 
     try {
       // Gerekli alanları kontrol et
-      let input: any = {};
+      const input: any = {};
 
       if (activeTab === 'life-path' && formData.birthDate) {
         input.birthDate = formData.birthDate;

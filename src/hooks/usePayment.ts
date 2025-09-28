@@ -196,10 +196,14 @@ export function usePayment(): UsePaymentReturn {
   // Check if user can access a feature
   const canAccessFeature = useCallback(
     (feature: string): boolean => {
-      if (!subscription) return false;
+      if (!subscription) {
+        return false;
+      }
 
       const tier = pricingTiers.find(t => t.id === subscription.type);
-      if (!tier) return false;
+      if (!tier) {
+        return false;
+      }
 
       return tier.limits[feature as keyof typeof tier.limits] === true;
     },
@@ -209,14 +213,20 @@ export function usePayment(): UsePaymentReturn {
   // Get remaining usage for a feature
   const getRemainingUsage = useCallback(
     (feature: string): number => {
-      if (!subscription) return 0;
+      if (!subscription) {
+        return 0;
+      }
 
       const tier = pricingTiers.find(t => t.id === subscription.type);
-      if (!tier) return 0;
+      if (!tier) {
+        return 0;
+      }
 
       const limit = tier.limits[feature as keyof typeof tier.limits];
       if (typeof limit === 'number') {
-        if (limit === -1) return Infinity; // Unlimited
+        if (limit === -1) {
+          return Infinity;
+        } // Unlimited
         // Burada backend'den kullanım bilgisini alacak
         return limit;
       }
@@ -617,7 +627,9 @@ export function usePayment(): UsePaymentReturn {
   const calculatePrice = useCallback(
     async (tierId: string, couponCode?: string): Promise<number> => {
       const tier = pricingTiers.find(t => t.id === tierId);
-      if (!tier) return 0;
+      if (!tier) {
+        return 0;
+      }
 
       let price = tier.price;
 

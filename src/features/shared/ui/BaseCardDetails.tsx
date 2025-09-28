@@ -42,6 +42,7 @@ Gereklilik ve Kullanım Durumu:
 'use client';
 
 import type { TarotCard } from '@/features/tarot/lib/a-tarot-helpers';
+import type { CardMeaningData } from '@/types/ui';
 import { ReactElement } from 'react';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
 
@@ -51,13 +52,22 @@ export interface BaseCardDetailsProps {
   position: number | null;
   onClose: () => void;
   renderCardImage?: (_card: TarotCard, _isReversed: boolean) => ReactElement;
-  renderContent: (
+  renderContent?: (
     _card: TarotCard,
     _isReversed: boolean,
     _position: number | null
   ) => ReactElement;
   title?: string;
-  spreadType?: 'love' | 'money' | 'career' | 'problem-solving' | 'situation-analysis' | 'relationship-analysis' | 'relationship-problems' | 'marriage' | 'new-lover';
+  spreadType?:
+    | 'love'
+    | 'money'
+    | 'career'
+    | 'problem-solving'
+    | 'situation-analysis'
+    | 'relationship-analysis'
+    | 'relationship-problems'
+    | 'marriage'
+    | 'new-lover';
   theme?: 'default' | 'amber' | 'pink' | 'purple' | 'blue';
   maxWidth?: 'sm' | 'md' | 'lg' | 'xl' | '2xl';
   positionInfo?:
@@ -66,6 +76,28 @@ export interface BaseCardDetailsProps {
         desc: string;
       }
     | undefined;
+
+  // BaseInterpretation.tsx'den alınan kart anlamı fonksiyonları
+  getCardMeaning?: ((_card: TarotCard) => CardMeaningData | null) | undefined;
+  getMeaningText?: ((
+    _meaning: CardMeaningData | null,
+    _card: TarotCard,
+    _isReversed: boolean
+  ) => string | { interpretation: string; context: string }) | undefined;
+  getKeywords?: ((
+    _meaning: CardMeaningData | null,
+    _card: TarotCard
+  ) => string[]) | undefined;
+  getPositionSpecificInterpretation?: ((
+    _card: TarotCard,
+    _position: number,
+    _isReversed: boolean
+  ) => string | { interpretation: string; context: string }) | undefined;
+  getPositionContext?: ((
+    _card: TarotCard,
+    _position: number
+  ) => string | undefined) | undefined;
+  showContext?: boolean;
 }
 
 export default function BaseCardDetails({
@@ -78,12 +110,106 @@ export default function BaseCardDetails({
   theme = 'default',
   maxWidth = 'lg',
   positionInfo: _positionInfo,
+  getCardMeaning,
+  getMeaningText,
+  getKeywords,
+  getPositionSpecificInterpretation,
+  getPositionContext,
+  showContext = false,
 }: BaseCardDetailsProps) {
   const focusTrapRef = useFocusTrap(true);
 
   if (!card) {
     return null;
   }
+
+  // BaseInterpretation.tsx'teki mantığı kullan - pozisyon özel yorum fonksiyonu öncelikli
+  const getCardInterpretation = (): string => {
+    const cardMeaning: CardMeaningData | null = getCardMeaning
+      ? getCardMeaning(card)
+      : null;
+    
+    let positionInterpretation = '';
+
+    // 1. Önce props'tan gelen getPositionSpecificInterpretation fonksiyonunu kullan
+    if (getPositionSpecificInterpretation && position) {
+      const result = getPositionSpecificInterpretation(card, position, isReversed);
+      
+      // Eğer result string ise, direkt kullan
+      if (typeof result === 'string') {
+        positionInterpretation = result;
+      } 
+      // Eğer result object ise, interpretation'ı al
+      else if (result && typeof result === 'object') {
+        positionInterpretation = result.interpretation || '';
+      }
+    }
+
+    // 2. Eğer positionInterpretation boşsa, getMeaningText fonksiyonunu dene
+    if (!positionInterpretation && getMeaningText) {
+      const result = getMeaningText(cardMeaning, card, isReversed);
+      
+      // Eğer result string ise, direkt kullan
+      if (typeof result === 'string') {
+        positionInterpretation = result;
+      } 
+      // Eğer result object ise, interpretation'ı al
+      else if (result && typeof result === 'object') {
+        positionInterpretation = result.interpretation || '';
+      }
+    }
+
+    // 3. Hala boşsa, CardMeaningData'dan anlamı al
+    if (!positionInterpretation && cardMeaning) {
+      if (cardMeaning.relationshipAnalysisMeaning) {
+        positionInterpretation = isReversed
+          ? cardMeaning.relationshipAnalysisMeaning.reversed
+          : cardMeaning.relationshipAnalysisMeaning.upright;
+      } else if (cardMeaning.careerMeaning) {
+        positionInterpretation = isReversed
+          ? cardMeaning.careerMeaning.reversed
+          : cardMeaning.careerMeaning.upright;
+      } else if (cardMeaning.moneyMeaning) {
+        positionInterpretation = isReversed
+          ? cardMeaning.moneyMeaning.reversed
+          : cardMeaning.moneyMeaning.upright;
+      } else if (cardMeaning.newLoverMeaning) {
+        positionInterpretation = isReversed
+          ? cardMeaning.newLoverMeaning.reversed
+          : cardMeaning.newLoverMeaning.upright;
+      } else if (cardMeaning.marriageMeaning) {
+        positionInterpretation = isReversed
+          ? cardMeaning.marriageMeaning.reversed
+          : cardMeaning.marriageMeaning.upright;
+      } else if (cardMeaning.upright || cardMeaning.reversed) {
+        positionInterpretation = isReversed
+          ? cardMeaning.reversed || cardMeaning.upright || ''
+          : cardMeaning.upright || '';
+      }
+    }
+
+    // 4. Son fallback: Kartın genel anlamını kullan
+    if (!positionInterpretation) {
+      positionInterpretation = isReversed
+        ? card.meaningTr.reversed
+        : card.meaningTr.upright;
+    }
+
+    return positionInterpretation;
+  };
+
+  // Kart anlamını ve anahtar kelimeleri al
+  const cardInterpretation = getCardInterpretation();
+  const keywords = getKeywords ? getKeywords(getCardMeaning ? getCardMeaning(card) : null, card) : [];
+  
+  // Context'i al (lib/ dosyalarından)
+  const positionContext = getPositionContext && position
+    ? getPositionContext(card, position)
+    : null;
+
+  // Context'i al (problem çözme açılımı için)
+  const cardMeaning = getCardMeaning ? getCardMeaning(card) : null;
+  const context = cardMeaning?.context || '';
 
   // Tema renk şemalarını tanımla
   const themes = {
@@ -149,9 +275,9 @@ export default function BaseCardDetails({
         ref={focusTrapRef as React.RefObject<HTMLDivElement>}
         className={`${currentTheme.container} rounded-3xl p-6 md:p-8 ${maxWidthClasses[maxWidth]} w-full border shadow-2xl relative max-h-[90vh] overflow-y-auto animate-slide-in-up`}
         onClick={e => e.stopPropagation()}
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="modal-title"
+        role='dialog'
+        aria-modal='true'
+        aria-labelledby='modal-title'
       >
         {/* Kapatma Butonu */}
         <button
@@ -216,7 +342,112 @@ export default function BaseCardDetails({
 
           {/* Detay İçeriği */}
           <div className={`${maxWidth === '2xl' ? 'flex-1' : 'w-full'}`}>
-            {renderContent(card, isReversed, position)}
+            {renderContent ? (
+              renderContent(card, isReversed, position)
+            ) : (
+              <div className='space-y-6'>
+                {/* Pozisyon Header */}
+                {position && _positionInfo && (
+                  <div className='bg-gradient-to-r from-gray-800/50 to-gray-700/30 rounded-xl p-4 border border-gray-600/30'>
+                    <div className='flex items-center justify-between mb-2'>
+                      <span className={`text-lg font-bold ${currentTheme.title}`}>
+                        {_positionInfo.title}
+                      </span>
+                      <span className={`text-sm px-3 py-1 rounded-full font-semibold ${
+                        isReversed ? 'bg-red-500/20 text-red-300' : 'bg-green-500/20 text-green-300'
+                      }`}>
+                        {isReversed ? 'Ters' : 'Düz'}
+                      </span>
+                    </div>
+                    <div className='text-gray-300 text-sm leading-relaxed italic'>
+                      "{_positionInfo.desc}"
+                    </div>
+                  </div>
+                )}
+
+                {/* Ana İçerik Kartı */}
+                <div className='bg-gradient-to-br from-gray-800/60 to-gray-900/60 rounded-2xl p-6 border border-gray-600/20 shadow-xl'>
+                  {/* Context Bilgisi - Üstte */}
+                  {positionContext && (
+                    <div className='mb-6 p-4 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl border border-blue-500/20'>
+                      <div className='flex items-center gap-3 mb-3'>
+                        <div className='w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center'>
+                          <span className='text-white text-sm'>💡</span>
+                        </div>
+                        <span className='text-blue-300 font-semibold text-sm uppercase tracking-wide'>
+                          Pozisyon Bağlamı
+                        </span>
+                      </div>
+                      <div className='text-gray-200 text-sm leading-relaxed pl-2'>
+                        {positionContext}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Ana Anlam */}
+                  <div className='mb-6'>
+                    <div className='flex items-center gap-3 mb-4'>
+                      <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
+                        isReversed ? 'bg-gradient-to-r from-red-500 to-orange-500' : 'bg-gradient-to-r from-green-500 to-emerald-500'
+                      }`}>
+                        <span className='text-white text-sm font-bold'>
+                          {isReversed ? '↻' : '↻'}
+                        </span>
+                      </div>
+                      <span className={`text-lg font-bold ${
+                        isReversed ? 'text-red-300' : 'text-green-300'
+                      }`}>
+                        {isReversed ? 'Ters Anlam' : 'Düz Anlam'}
+                      </span>
+                    </div>
+                    <div className='text-gray-100 text-base leading-relaxed pl-2'>
+                      {cardInterpretation}
+                    </div>
+                  </div>
+
+                  {/* Ek Context - Anlam altında */}
+                  {showContext && context && (
+                    <div className='mb-6 p-4 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl border border-purple-500/20'>
+                      <div className='flex items-center gap-3 mb-3'>
+                        <div className='w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center'>
+                          <span className='text-white text-sm'>🔮</span>
+                        </div>
+                        <span className='text-purple-300 font-semibold text-sm uppercase tracking-wide'>
+                          Derin Bağlam
+                        </span>
+                      </div>
+                      <div className='text-gray-200 text-sm leading-relaxed pl-2 italic'>
+                        {context}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Anahtar Kelimeler */}
+                  {keywords.length > 0 && (
+                    <div className='pt-4 border-t border-gray-600/30'>
+                      <div className='flex items-center gap-3 mb-4'>
+                        <div className='w-8 h-8 bg-gradient-to-r from-amber-500 to-yellow-500 rounded-full flex items-center justify-center'>
+                          <span className='text-white text-sm'>✨</span>
+                        </div>
+                        <span className='text-amber-300 font-semibold text-sm uppercase tracking-wide'>
+                          Anahtar Kelimeler
+                        </span>
+                      </div>
+                      <div className='flex flex-wrap gap-2'>
+                        {keywords.map((keyword, keyIdx) => (
+                          <span
+                            key={keyIdx}
+                            className={`text-sm ${currentTheme.badge} px-4 py-2 rounded-full font-medium transition-all duration-200 hover:scale-105 hover:shadow-lg`}
+                          >
+                            {keyword}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>

@@ -74,7 +74,8 @@ export const position5Meanings: SituationAnalysisPositionMeaning[] = [
     reversed:
       'Ters İmparatoriçe, aşırı korumacı/kollayıcı çevrenin tembelliğe veya bağımlılığa yol açabileceğini söyler. Konfor, inovasyonun önüne geçebilir.',
     keywords: ['kaynak', 'destek', 'bereket', 'konfor alanı', 'yaratıcılık'],
-    context: 'Dış kaynak bolluğu üretimi büyütür; konfor fazlası frenleyebilir.',
+    context:
+      'Dış kaynak bolluğu üretimi büyütür; konfor fazlası frenleyebilir.',
     group: 'Majör Arkana',
   },
   {
@@ -151,7 +152,7 @@ export const position5Meanings: SituationAnalysisPositionMeaning[] = [
   },
   {
     id: 'wheel_of_fortune_sa_pos5',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 5,
     upright:
       'Kader Çarkı, dışarıda dalgalı döngüler ve zamanlamanın kritik olduğunu gösterir. Doğru an, çarpan etkisi yaratır.',
@@ -293,7 +294,7 @@ export const position5Meanings: SituationAnalysisPositionMeaning[] = [
     context: 'Global bağlar ölçeği büyütür; eksikleri kapatmak gerek.',
     group: 'Majör Arkana',
   },
-  
+
   // CUPS (Kupalar)
   {
     id: 'ace_of_cups_sa_pos5',
@@ -459,11 +460,17 @@ export const position5Meanings: SituationAnalysisPositionMeaning[] = [
       'Kupa Kralı, dışarıda duygusal olgunluk ve kriz anında serinkanlı liderliğin bulunduğunu gösterir. Zor koşullarda bile sükûnet korunur.',
     reversed:
       'Ters Kupa Kralı, pasif-agresif tutumlar, bastırılmış duygular ve gelgitli tepkilerin dış ilişkileri zorlayabileceğini söyler.',
-    keywords: ['olgunluk', 'sükûnet', 'kriz yönetimi', 'pasif-agresyon', 'denge'],
+    keywords: [
+      'olgunluk',
+      'sükûnet',
+      'kriz yönetimi',
+      'pasif-agresyon',
+      'denge',
+    ],
     context: 'Dış liderlik dengeli; gölge tarafı gizli gerilim.',
     group: 'Kupalar',
   },
-  
+
   // SWORDS (Kılıçlar)
   {
     id: 'ace_of_swords_sa_pos5',
@@ -633,7 +640,7 @@ export const position5Meanings: SituationAnalysisPositionMeaning[] = [
     context: 'Harici akıl ve etik çerçeve rotayı belirliyor.',
     group: 'Kılıçlar',
   },
-  
+
   // WANDS (Asalar)
   {
     id: 'ace_of_wands_sa_pos5',
@@ -803,7 +810,7 @@ export const position5Meanings: SituationAnalysisPositionMeaning[] = [
     context: 'Vizyonu paylaşmak dış desteği büyütür.',
     group: 'Asalar',
   },
-  
+
   // PENTACLES (Tılsımlar)
   {
     id: 'ace_of_pentacles_sa_pos5',
@@ -979,9 +986,7 @@ export const position5Meanings: SituationAnalysisPositionMeaning[] = [
 export const getPosition5Meaning = (
   cardName: string
 ): SituationAnalysisPositionMeaning | undefined => {
-  return position5Meanings.find(
-    meaning => meaning.card === cardName
-  );
+  return position5Meanings.find(meaning => meaning.card === cardName);
 };
 
 // Ana index dosyası için uyumluluk fonksiyonu
@@ -1006,9 +1011,10 @@ export const getSituationAnalysisPosition5MeaningByCardName = (
 };
 
 // Tüm pozisyon 5 anlamlarını alma fonksiyonu
-export const getAllPosition5Meanings = (): SituationAnalysisPositionMeaning[] => {
-  return position5Meanings;
-};
+export const getAllPosition5Meanings =
+  (): SituationAnalysisPositionMeaning[] => {
+    return position5Meanings;
+  };
 
 // Pozisyon 5 anlamlarını filtreleme fonksiyonu
 export const getPosition5MeaningsByGroup = (

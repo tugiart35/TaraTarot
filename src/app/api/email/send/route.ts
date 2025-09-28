@@ -37,7 +37,9 @@ import { ApiBase } from '@/lib/api/shared/api-base';
 export async function POST(request: NextRequest) {
   // Rate limiting kontrolü
   const rateLimitResponse = ApiBase.checkRateLimit(request);
-  if (rateLimitResponse) return rateLimitResponse;
+  if (rateLimitResponse) {
+    return rateLimitResponse;
+  }
 
   // Request logging
   ApiBase.logRequest(request, 'Email Send API');
@@ -49,17 +51,23 @@ export async function POST(request: NextRequest) {
 
     // Input validation using ApiBase
     const requiredFields = ['to', 'subject', 'body'];
-    const validationResult = ApiBase.validateRequiredFields(requestBody, requiredFields);
+    const validationResult = ApiBase.validateRequiredFields(
+      requestBody,
+      requiredFields
+    );
     if (!validationResult.success) {
       return validationResult.error;
     }
 
     // Email validation using ApiBase
     if (!ApiBase.validateEmail(to)) {
-      return ApiBase.error({
-        code: 'INVALID_EMAIL',
-        message: 'Geçerli bir email adresi girin'
-      }, 400);
+      return ApiBase.error(
+        {
+          code: 'INVALID_EMAIL',
+          message: 'Geçerli bir email adresi girin',
+        },
+        400
+      );
     }
 
     // SMTP settings validation
@@ -97,20 +105,26 @@ export async function POST(request: NextRequest) {
     const info = await transporter.sendMail(mailOptions);
 
     return EmailCORS.wrapResponse(
-      ApiBase.success({
-        messageId: info.messageId,
-        to: to,
-        subject: subject
-      }, 'Email başarıyla gönderildi')
+      ApiBase.success(
+        {
+          messageId: info.messageId,
+          to: to,
+          subject: subject,
+        },
+        'Email başarıyla gönderildi'
+      )
     );
   } catch (error) {
     ApiBase.logError(error, 'Email Send API');
     return EmailCORS.wrapResponse(
-      ApiBase.error({
-        code: 'EMAIL_SEND_FAILED',
-        message: 'Email gönderilemedi',
-        details: error
-      }, 500)
+      ApiBase.error(
+        {
+          code: 'EMAIL_SEND_FAILED',
+          message: 'Email gönderilemedi',
+          details: error,
+        },
+        500
+      )
     );
   }
 }

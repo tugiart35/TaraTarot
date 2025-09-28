@@ -120,7 +120,9 @@ class MemoryRateLimitStore {
     key: string
   ): { count: number; resetTime: number; windowStart: number } | null {
     const data = this.store[key];
-    if (!data) return null;
+    if (!data) {
+      return null;
+    }
 
     // Check if window has expired
     if (Date.now() > data.resetTime) {
@@ -195,7 +197,9 @@ class RedisRateLimitStore {
   ): Promise<{ count: number; resetTime: number; windowStart: number } | null> {
     try {
       const data = await this.redis.get(key);
-      if (!data) return null;
+      if (!data) {
+        return null;
+      }
 
       const parsed = JSON.parse(data);
 
@@ -308,7 +312,9 @@ export class RateLimiter {
       remaining,
       resetTime: data.resetTime,
     };
-    if (retryAfter !== undefined) result.retryAfter = retryAfter;
+    if (retryAfter !== undefined) {
+      result.retryAfter = retryAfter;
+    }
     return result;
   }
 
@@ -357,7 +363,9 @@ export class RateLimiter {
     ruleName: string
   ): Promise<RateLimitResult | null> {
     const rule = this.rules[ruleName];
-    if (!rule) return null;
+    if (!rule) {
+      return null;
+    }
 
     const key = `${ruleName}:${identifier}`;
     const data = await this.store.get(key);

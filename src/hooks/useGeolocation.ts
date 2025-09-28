@@ -54,7 +54,9 @@ interface GeolocationCache {
 function getCachedGeolocation(): GeolocationData | null {
   try {
     const cached = localStorage.getItem(GEOLOCATION_CACHE_KEY);
-    if (!cached) return null;
+    if (!cached) {
+      return null;
+    }
 
     const parsed: GeolocationCache = JSON.parse(cached);
     const now = Date.now();

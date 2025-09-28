@@ -14,10 +14,10 @@ interface PDFExportProps {
   className?: string;
 }
 
-export default function PDFExport({ 
-  onDownload, 
-  isDisabled = false, 
-  className = '' 
+export default function PDFExport({
+  onDownload,
+  isDisabled = false,
+  className = '',
 }: PDFExportProps) {
   const { t } = useTranslations();
 
@@ -27,7 +27,7 @@ export default function PDFExport({
       disabled={isDisabled}
       className={`px-6 py-3 bg-gradient-to-r from-gold to-yellow-500 hover:from-gold/80 hover:to-yellow-500/80 text-night font-semibold rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gold/20 flex items-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed ${className}`}
     >
-      <Download className="h-4 w-4" />
+      <Download className='h-4 w-4' />
       <span>{t('readingModal.downloadPdf', 'PDF İndir')}</span>
     </button>
   );

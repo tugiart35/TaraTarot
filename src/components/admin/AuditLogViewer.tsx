@@ -161,9 +161,15 @@ export default function AuditLogViewer({
   };
 
   const getActionIcon = (action: string) => {
-    if (action.includes('login') || action.includes('logout')) return User;
-    if (action.includes('security')) return Shield;
-    if (action.includes('delete')) return AlertTriangle;
+    if (action.includes('login') || action.includes('logout')) {
+      return User;
+    }
+    if (action.includes('security')) {
+      return Shield;
+    }
+    if (action.includes('delete')) {
+      return AlertTriangle;
+    }
     return Activity;
   };
 

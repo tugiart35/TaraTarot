@@ -38,8 +38,8 @@ export const cardNameMapping: { [key: string]: string } = {
   Güç: 'Strength',
   Ermiş: 'The Hermit',
   Münzevi: 'The Hermit',
-  'Kader Çarkı': 'Wheel of Fortune',
-  'Kader Çarkı (Wheel)': 'Wheel of Fortune',
+  'Kader Çarkı': 'The Wheel of Fortune',
+  'Kader Çarkı (Wheel)': 'The Wheel of Fortune',
   Adalet: 'Justice',
   'Asılı Adam': 'The Hanged Man',
   Ölüm: 'Death',
@@ -65,8 +65,8 @@ export const cardNameMapping: { [key: string]: string } = {
   Kola: 'The Chariot',
   Snaga: 'Strength',
   Pustinjak: 'The Hermit',
-  'Točak Sreće': 'The Wheel of Fortune',
-  'Točak Sreće (Wheel)': 'Wheel of Fortune',
+  'Točak Sreće': 'The The Wheel of Fortune',
+  'Točak Sreće (Wheel)': 'The Wheel of Fortune',
   Pravda: 'Justice',
   'Obeseni Čovek': 'The Hanged Man',
   Smrt: 'Death',
@@ -112,7 +112,6 @@ export const cardNameMapping: { [key: string]: string } = {
   'Kadehler Şövalyesi': 'Knight of Cups',
   'Kadehler Kraliçesi': 'Queen of Cups',
   'Kadehler Kralı': 'King of Cups',
-
 
   // Minor Arcana - Kupalar (Sırpça)
   'As Pehara': 'Ace of Cups',

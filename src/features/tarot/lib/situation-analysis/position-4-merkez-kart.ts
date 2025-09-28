@@ -151,7 +151,7 @@ export const position4Meanings: SituationAnalysisPositionMeaning[] = [
   },
   {
     id: 'wheel_of_fortune_sa_pos4',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 4,
     upright:
       'Merkezde döngülerin dönüşü ve zamanlama etkisi var. Akışla uyum ana unsur olabilir.',
@@ -237,8 +237,7 @@ export const position4Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'the_star_sa_pos4',
     card: 'The Star',
     position: 4,
-    upright:
-      'Merkezde umut, şifa ve sadeleşme var. Şeffaflık ilhamı çoğaltır.',
+    upright: 'Merkezde umut, şifa ve sadeleşme var. Şeffaflık ilhamı çoğaltır.',
     reversed:
       'Merkezde umutsuzluk veya tükenmişlik gölgesi bulunabilir. Küçük ritüeller ışığı geri çağırır.',
     keywords: ['umut', 'şifa', 'ilham', 'sadelik', 'yenilenme'],
@@ -293,7 +292,7 @@ export const position4Meanings: SituationAnalysisPositionMeaning[] = [
     context: 'Merkez: kapanışın tacı.',
     group: 'Majör Arkana',
   },
-  
+
   // CUPS (Kupalar)
   {
     id: 'ace_of_cups_sa_pos4',
@@ -463,7 +462,7 @@ export const position4Meanings: SituationAnalysisPositionMeaning[] = [
     context: 'Merkez: dingin kaptan.',
     group: 'Kupalar',
   },
-  
+
   // SWORDS (Kılıçlar)
   {
     id: 'ace_of_swords_sa_pos4',
@@ -507,8 +506,7 @@ export const position4Meanings: SituationAnalysisPositionMeaning[] = [
     position: 4,
     upright:
       'Merkezde dinlenme ve zihni toplama ihtiyacı var. Sükunet, stratejiyi olgunlaştırır.',
-    reversed:
-      'Merkezde mola direnci tükenmişliği büyütür. Mikro molalar şart.',
+    reversed: 'Merkezde mola direnci tükenmişliği büyütür. Mikro molalar şart.',
     keywords: ['dinlenme', 'toparlanma', 'strateji', 'sükunet', 'yenilenme'],
     context: 'Merkez: sessiz güç.',
     group: 'Kılıçlar',
@@ -519,8 +517,7 @@ export const position4Meanings: SituationAnalysisPositionMeaning[] = [
     position: 4,
     upright:
       'Merkezde haklı çıkma arzusu çatışmayı sertleştiriyor olabilir. Köprüleri korumak için kazanımı yeniden tanımlayın.',
-    reversed:
-      'Merkezde onarım niyeti var. Esnek müzakere gerilimi çözer.',
+    reversed: 'Merkezde onarım niyeti var. Esnek müzakere gerilimi çözer.',
     keywords: ['çatışma', 'ego', 'haklılık', 'onarım', 'müzakere'],
     context: 'Merkez: bağ mı haklılık mı.',
     group: 'Kılıçlar',
@@ -569,7 +566,13 @@ export const position4Meanings: SituationAnalysisPositionMeaning[] = [
       'Merkezde kaygı ve geceler var. Yazmak ve kanıt aramak döngüyü zayıflatır.',
     reversed:
       'Merkezde sabah netliği artıyor. Regülasyon ve küçük zaferler dengeyi kurar.',
-    keywords: ['kaygı', 'uykusuzluk', 'felaketleştirme', 'regülasyon', 'gerçeklik'],
+    keywords: [
+      'kaygı',
+      'uykusuzluk',
+      'felaketleştirme',
+      'regülasyon',
+      'gerçeklik',
+    ],
     context: 'Merkez: kaygı düğmesi.',
     group: 'Kılıçlar',
   },
@@ -577,10 +580,8 @@ export const position4Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'ten_of_swords_sa_pos4',
     card: 'Ten of Swords',
     position: 4,
-    upright:
-      'Merkezde bir döngü bitti. Bitişi onurlandırmak yeniye yer açar.',
-    reversed:
-      'Merkezde toparlanma başlıyor. Yeniden çerçeve güç verir.',
+    upright: 'Merkezde bir döngü bitti. Bitişi onurlandırmak yeniye yer açar.',
+    reversed: 'Merkezde toparlanma başlıyor. Yeniden çerçeve güç verir.',
     keywords: ['bitiş', 'teslim', 'yeniden doğuş', 'iyileşme', 'kapanış'],
     context: 'Merkez: sonun hediyesi.',
     group: 'Kılıçlar',
@@ -627,13 +628,12 @@ export const position4Meanings: SituationAnalysisPositionMeaning[] = [
     position: 4,
     upright:
       'Merkezde ilkeler ve stratejik mantık var. Etik güç güven inşa eder.',
-    reversed:
-      'Merkezde katılık veya dogma riski var. Empatiyle dengeleyin.',
+    reversed: 'Merkezde katılık veya dogma riski var. Empatiyle dengeleyin.',
     keywords: ['etik', 'mantık', 'otorite', 'strateji', 'empati'],
     context: 'Merkez: ilkeli zihin.',
     group: 'Kılıçlar',
   },
-  
+
   // WANDS (Asalar)
   {
     id: 'ace_of_wands_sa_pos4',
@@ -723,8 +723,7 @@ export const position4Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'eight_of_wands_sa_pos4',
     card: 'Eight of Wands',
     position: 4,
-    upright:
-      'Merkezde hız ve akış var. Zamanında mesaj fırsat penceresi açar.',
+    upright: 'Merkezde hız ve akış var. Zamanında mesaj fırsat penceresi açar.',
     reversed:
       'Merkezde gecikme ve sinyal karmaşası olabilir. Sıralamayı sadeleştirin.',
     keywords: ['hız', 'ivme', 'iletişim', 'senkron', 'akış'],
@@ -771,8 +770,7 @@ export const position4Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'knight_of_wands_sa_pos4',
     card: 'Knight of Wands',
     position: 4,
-    upright:
-      'Merkezde cesur hamle ve tutku var. Hız stratejiyle buluşmalı.',
+    upright: 'Merkezde cesur hamle ve tutku var. Hız stratejiyle buluşmalı.',
     reversed:
       'Merkezde savrukluk veya yarıda bırakma riski var. Taahhüt yönetimi gerek.',
     keywords: ['cesaret', 'hız', 'tutku', 'strateji', 'taahhüt'],
@@ -803,7 +801,7 @@ export const position4Meanings: SituationAnalysisPositionMeaning[] = [
     context: 'Merkez: vizyonun direksiyonu.',
     group: 'Asalar',
   },
-  
+
   // PENTACLES (Tılsımlar)
   {
     id: 'ace_of_pentacles_sa_pos4',
@@ -883,8 +881,7 @@ export const position4Meanings: SituationAnalysisPositionMeaning[] = [
     position: 4,
     upright:
       'Merkezde değerlendirme ve sabır var. Küçük iyileştirmeler çarpan etkisi yaratır.',
-    reversed:
-      'Merkezde batık maliyet tuzağı olabilir. Kriterle pivot edin.',
+    reversed: 'Merkezde batık maliyet tuzağı olabilir. Kriterle pivot edin.',
     keywords: ['değerlendirme', 'sabır', 'verim', 'pivot', 'hasat'],
     context: 'Merkez: hasat öncesi kontrol.',
     group: 'Tılsımlar',
@@ -905,8 +902,7 @@ export const position4Meanings: SituationAnalysisPositionMeaning[] = [
     id: 'nine_of_pentacles_sa_pos4',
     card: 'Nine of Pentacles',
     position: 4,
-    upright:
-      'Merkezde bağımsızlık ve öz-değer var. Sınırlar refahı korur.',
+    upright: 'Merkezde bağımsızlık ve öz-değer var. Sınırlar refahı korur.',
     reversed:
       'Merkezde savurganlık veya aşırı bağımlılık olabilir. Disiplin rahatlık getirir.',
     keywords: ['bağımsızlık', 'öz değer', 'konfor', 'sınır', 'disiplin'],
@@ -979,9 +975,7 @@ export const position4Meanings: SituationAnalysisPositionMeaning[] = [
 export const getPosition4Meaning = (
   cardName: string
 ): SituationAnalysisPositionMeaning | undefined => {
-  return position4Meanings.find(
-    meaning => meaning.card === cardName
-  );
+  return position4Meanings.find(meaning => meaning.card === cardName);
 };
 
 // Ana index dosyası için uyumluluk fonksiyonu
@@ -1006,9 +1000,10 @@ export const getSituationAnalysisPosition4MeaningByCardName = (
 };
 
 // Tüm pozisyon 4 anlamlarını alma fonksiyonu
-export const getAllPosition4Meanings = (): SituationAnalysisPositionMeaning[] => {
-  return position4Meanings;
-};
+export const getAllPosition4Meanings =
+  (): SituationAnalysisPositionMeaning[] => {
+    return position4Meanings;
+  };
 
 // Pozisyon 4 anlamlarını filtreleme fonksiyonu
 export const getPosition4MeaningsByGroup = (

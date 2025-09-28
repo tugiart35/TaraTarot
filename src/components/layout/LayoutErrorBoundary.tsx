@@ -51,7 +51,8 @@ export class LayoutErrorBoundary extends Component<Props, State> {
                   Layout Hatası
                 </h1>
                 <p className='text-gray-300 mb-4'>
-                  Navigasyon veya layout bileşeninde beklenmeyen bir hata oluştu. Lütfen tekrar deneyin.
+                  Navigasyon veya layout bileşeninde beklenmeyen bir hata
+                  oluştu. Lütfen tekrar deneyin.
                 </p>
               </div>
 

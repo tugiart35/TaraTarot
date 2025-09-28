@@ -55,25 +55,27 @@ export const useDashboardActions = (
   // Çıkış yap fonksiyonu - Supabase ile entegre
   const handleLogout = async () => {
     console.log('🚪 Çıkış yapma işlemi başlatılıyor...');
-    
+
     try {
       // Supabase signOut çağrısı
       console.log('🔐 Supabase signOut çağrılıyor...');
       const { error } = await supabase.auth.signOut();
-      
-      console.log('🔍 SignOut sonucu:', { hasError: !!error, errorMessage: error?.message });
-      
+
+      console.log('🔍 SignOut sonucu:', {
+        hasError: !!error,
+        errorMessage: error?.message,
+      });
+
       console.log('✅ Çıkış tamamlandı, yönlendiriliyor...');
-      
+
       // Kısa bir bekleme sonrası yönlendir
       setTimeout(() => {
         console.log('🔄 Yönlendirme:', `/${currentLocale}`);
         window.location.href = `/${currentLocale}`;
       }, 100);
-      
     } catch (error) {
       console.error('❌ Çıkış yapma hatası:', error);
-      
+
       console.log('🔄 Hata durumunda yönlendiriliyor...');
       window.location.href = `/${currentLocale}`;
     }
@@ -81,7 +83,9 @@ export const useDashboardActions = (
 
   // Profil modal'ını aç ve güncel verileri yükle
   const openProfileModal = async () => {
-    if (!user) return; // Kullanıcı yoksa çık
+    if (!user) {
+      return;
+    } // Kullanıcı yoksa çık
 
     try {
       // Supabase'den güncel profil verilerini çek
@@ -108,7 +112,9 @@ export const useDashboardActions = (
 
   // Profil kaydetme işlemini yönet - Supabase'e güncelleme gönder
   const handleSaveProfile = async () => {
-    if (!user) return; // Kullanıcı yoksa çık
+    if (!user) {
+      return;
+    } // Kullanıcı yoksa çık
 
     setSaving(true); // Kaydetme durumunu başlat
     try {

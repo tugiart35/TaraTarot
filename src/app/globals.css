@@ -41,7 +41,7 @@
   .mobile-compact {
     padding: 1.5rem;
   }
-  
+
   .mobile-compact-sm {
     padding: 1rem;
   }
@@ -79,14 +79,18 @@
   --text-secondary: #64748b;
   --accent-primary: #a855f7;
   --accent-secondary: #f59e0b;
-  
+
   /* Mystical effect variables */
   --mystical-glow: 0 0 30px rgba(168, 85, 247, 0.3);
   --golden-glow: 0 0 25px rgba(245, 158, 11, 0.4);
-  --ethereal-mist: linear-gradient(45deg, rgba(168, 85, 247, 0.1), rgba(245, 158, 11, 0.1));
+  --ethereal-mist: linear-gradient(
+    45deg,
+    rgba(168, 85, 247, 0.1),
+    rgba(245, 158, 11, 0.1)
+  );
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   /* Dark theme variables */
   --bg-primary: #0f172a;
   --bg-secondary: #1e293b;
@@ -242,11 +246,11 @@
   .mobile-scroll {
     -webkit-overflow-scrolling: touch;
   }
-  
+
   .horizontal-scroll {
     -webkit-overflow-scrolling: touch;
   }
-  
+
   .vertical-scroll {
     -webkit-overflow-scrolling: touch;
   }
@@ -405,24 +409,41 @@
   * {
     @apply border-gray-200 dark:border-gray-800;
   }
-  
+
   html {
     @apply overflow-x-hidden scroll-smooth;
-    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
   }
 
   body {
     @apply bg-mystical-950 text-cosmic-100 font-body antialiased;
-    background-image: 
-      radial-gradient(circle at 20% 80%, rgba(168, 85, 247, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 40% 40%, rgba(99, 102, 241, 0.05) 0%, transparent 50%);
+    background-image:
+      radial-gradient(
+        circle at 20% 80%,
+        rgba(168, 85, 247, 0.1) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 80% 20%,
+        rgba(245, 158, 11, 0.1) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 40% 40%,
+        rgba(99, 102, 241, 0.05) 0%,
+        transparent 50%
+      );
     background-attachment: fixed;
     min-height: 100vh;
   }
 
   /* Enhanced typography hierarchy */
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-mystical font-semibold tracking-wide;
   }
 
@@ -620,10 +641,22 @@ input[type='date']::-webkit-datetime-edit-year-field {
 /* Admin Dashboard Tema Sınıfları */
 .admin-bg {
   @apply bg-mystical-950;
-  background-image: 
-    radial-gradient(circle at 20% 80%, rgba(168, 85, 247, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(99, 102, 241, 0.05) 0%, transparent 50%);
+  background-image:
+    radial-gradient(
+      circle at 20% 80%,
+      rgba(168, 85, 247, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(245, 158, 11, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 40% 40%,
+      rgba(99, 102, 241, 0.05) 0%,
+      transparent 50%
+    );
   background-attachment: fixed;
 }
 

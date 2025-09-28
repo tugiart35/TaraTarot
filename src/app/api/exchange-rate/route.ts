@@ -117,7 +117,9 @@ function getFallbackExchangeRate(): number {
 
 // Cache kontrolü
 function isCacheValid(): boolean {
-  if (!exchangeRateCache) return false;
+  if (!exchangeRateCache) {
+    return false;
+  }
 
   const now = Date.now();
   return now - exchangeRateCache.timestamp < CACHE_DURATION;

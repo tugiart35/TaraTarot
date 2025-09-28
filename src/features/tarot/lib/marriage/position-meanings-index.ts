@@ -43,7 +43,6 @@ import { position8Meanings } from './position-8-anlasabilecek-miyim';
 import { position9Meanings } from './position-9-benim-icin-nasil-bir-es-uygundur';
 import { position10Meanings } from './position-10-evlenebilecek-miyim';
 
-
 export interface MarriagePositionMeaning {
   id: string;
   position: number;
@@ -61,23 +60,30 @@ export interface MarriagePositionMeaning {
 export const marriagePositions = {
   1: {
     title: 'Sonuç ne olacak?',
-    description: 'Evlilik sürecinizin genel sonucunu ve nasıl ilerleyeceğini gösterir.',
-    question: 'Evlilik sürecinizin genel sonucunu ve nasıl ilerleyeceğini gösterir.',
+    description:
+      'Evlilik sürecinizin genel sonucunu ve nasıl ilerleyeceğini gösterir.',
+    question:
+      'Evlilik sürecinizin genel sonucunu ve nasıl ilerleyeceğini gösterir.',
   },
   2: {
     title: 'Eşimi beklerken benim ne yapmam gerekiyor?',
-    description: 'Doğru kişiyi bulana kadar kendinizi nasıl geliştirmeniz gerektiğini gösterir.',
-    question: 'Doğru kişiyi bulana kadar kendinizi nasıl geliştirmeniz gerektiğini gösterir.',
+    description:
+      'Doğru kişiyi bulana kadar kendinizi nasıl geliştirmeniz gerektiğini gösterir.',
+    question:
+      'Doğru kişiyi bulana kadar kendinizi nasıl geliştirmeniz gerektiğini gösterir.',
   },
   3: {
     title: 'Mali kaynaklarımızı birbirimizle paylaşacak mıyız?',
-    description: 'Evlilikte mali konularda uyumunuzu ve paylaşımınızı gösterir.',
+    description:
+      'Evlilikte mali konularda uyumunuzu ve paylaşımınızı gösterir.',
     question: 'Evlilikte mali konularda uyumunuzu ve paylaşımınızı gösterir.',
   },
   4: {
     title: 'Her ikimiz de bağlanmak isteyecek miyiz?',
-    description: 'Her iki tarafın da evliliğe hazır olup olmadığını ve bağlanma isteğini gösterir.',
-    question: 'Her iki tarafın da evliliğe hazır olup olmadığını ve bağlanma isteğini gösterir.',
+    description:
+      'Her iki tarafın da evliliğe hazır olup olmadığını ve bağlanma isteğini gösterir.',
+    question:
+      'Her iki tarafın da evliliğe hazır olup olmadığını ve bağlanma isteğini gösterir.',
   },
   5: {
     title: 'Benzer yanlarımız olacak mı?',
@@ -91,18 +97,22 @@ export const marriagePositions = {
   },
   7: {
     title: 'Birbirimizi nasıl bulacağız?',
-    description: 'Doğru kişiyle nasıl tanışacağınızı ve buluşacağınızı gösterir.',
+    description:
+      'Doğru kişiyle nasıl tanışacağınızı ve buluşacağınızı gösterir.',
     question: 'Doğru kişiyle nasıl tanışacağınızı ve buluşacağınızı gösterir.',
   },
   8: {
     title: 'Anlaşabilecek miyiz?',
-    description: 'İletişim uyumunuzu ve birbirinizi anlama kapasitenizi gösterir.',
+    description:
+      'İletişim uyumunuzu ve birbirinizi anlama kapasitenizi gösterir.',
     question: 'İletişim uyumunuzu ve birbirinizi anlama kapasitenizi gösterir.',
   },
   9: {
     title: 'Benim için nasıl bir eş uygundur?',
-    description: 'İdeal eşinizin özelliklerini ve sizinle uyumlu olacak kişiyi gösterir.',
-    question: 'İdeal eşinizin özelliklerini ve sizinle uyumlu olacak kişiyi gösterir.',
+    description:
+      'İdeal eşinizin özelliklerini ve sizinle uyumlu olacak kişiyi gösterir.',
+    question:
+      'İdeal eşinizin özelliklerini ve sizinle uyumlu olacak kişiyi gösterir.',
   },
   10: {
     title: 'Evlenebilecek miyim?',
@@ -110,7 +120,7 @@ export const marriagePositions = {
     question: 'Evlilik potansiyelinizi ve evlenme şansınızı gösterir.',
   },
 };
- /**
+/**
  * Evlilik açılımında belirli bir kartın belirli pozisyondaki anlamını döndürür
  * @param card - Tarot kartı
  * @param position - Pozisyon numarası (1-10)
@@ -129,7 +139,7 @@ export function getMarriageMeaningByCardAndPosition(
 
   // Kart ismi mapping'ini al
   const cardNameMapping = getCardNameMappingSync();
-  
+
   // Kart ismini İngilizce'ye çevir
   const englishCardName = cardNameMapping[card.nameTr] || card.nameTr;
 
@@ -208,7 +218,7 @@ export function getMarriageMeaningByCardAndPosition(
     upright: baseMeaning.upright,
     reversed: baseMeaning.reversed,
   };
-  
+
   return fallbackResult;
 }
 
@@ -316,9 +326,7 @@ export function getAllMarriageMeanings(): Record<
 
 // Pozisyon bilgilerini alma fonksiyonu
 export const getPositionInfo = (position: number) => {
-  return marriagePositions[
-    position as keyof typeof marriagePositions
-  ];
+  return marriagePositions[position as keyof typeof marriagePositions];
 };
 
 // Tüm pozisyonları alma fonksiyonu
@@ -415,18 +423,21 @@ export const getMarriageMeaningByCardNameAndPosition = (
     number: 0,
     meaning: {
       upright: 'Temel anlam',
-      reversed: 'Ters anlam'
+      reversed: 'Ters anlam',
     },
     meaningTr: {
       upright: 'Temel anlam',
-      reversed: 'Ters anlam'
+      reversed: 'Ters anlam',
     },
     keywords: [],
     keywordsTr: [],
-    image: ''
+    image: '',
   };
 
-  return getMarriageMeaningByCardAndPosition(mockCard, position, isReversed) || undefined;
+  return (
+    getMarriageMeaningByCardAndPosition(mockCard, position, isReversed) ||
+    undefined
+  );
 };
 
 // Kart gruplarına göre filtreleme fonksiyonu
@@ -450,9 +461,11 @@ export const getMarriageMeaningsByPositionAndGroup = (
 export const searchMarriageMeaningsByCardName = (
   cardName: string
 ): MarriagePositionMeaning[] => {
-  return allMarriagePositionMeanings.filter(meaning =>
-    (meaning.cardName?.toLowerCase().includes(cardName.toLowerCase()) || false) ||
-    meaning.card.toLowerCase().includes(cardName.toLowerCase())
+  return allMarriagePositionMeanings.filter(
+    meaning =>
+      meaning.cardName?.toLowerCase().includes(cardName.toLowerCase()) ||
+      false ||
+      meaning.card.toLowerCase().includes(cardName.toLowerCase())
   );
 };
 
@@ -477,10 +490,12 @@ export const getMarriageStatistics = () => {
     'Majör Arkana': allMarriagePositionMeanings.filter(
       m => m.group === 'Majör Arkana'
     ).length,
-    Kupalar: allMarriagePositionMeanings.filter(m => m.group === 'Kupalar').length,
+    Kupalar: allMarriagePositionMeanings.filter(m => m.group === 'Kupalar')
+      .length,
     Kılıçlar: allMarriagePositionMeanings.filter(m => m.group === 'Kılıçlar')
       .length,
-    Asalar: allMarriagePositionMeanings.filter(m => m.group === 'Asalar').length,
+    Asalar: allMarriagePositionMeanings.filter(m => m.group === 'Asalar')
+      .length,
     Tılsımlar: allMarriagePositionMeanings.filter(m => m.group === 'Tılsımlar')
       .length,
   };

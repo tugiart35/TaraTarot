@@ -1,6 +1,6 @@
 /*
  * useAuthBase Hook
- * 
+ *
  * Bu hook tüm auth hook'ları için ortak base logic'i sağlar.
  * DRY principle uygulayarak tekrarlanan auth kodlarını önler.
  */
@@ -41,17 +41,19 @@ export function useAuthBase<T extends AuthUser>(): AuthState<T> & AuthActions {
   const refreshSession = useCallback(async () => {
     try {
       setError(null);
-      const { data, error: refreshError } = await supabase.auth.refreshSession();
-      
+      const { data, error: refreshError } =
+        await supabase.auth.refreshSession();
+
       if (refreshError) {
         throw refreshError;
       }
-      
+
       if (data.user) {
         setUser(data.user as T);
       }
     } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'Session yenileme başarısız';
+      const errorMessage =
+        err instanceof Error ? err.message : 'Session yenileme başarısız';
       setError(errorMessage);
     }
   }, []);
@@ -59,11 +61,14 @@ export function useAuthBase<T extends AuthUser>(): AuthState<T> & AuthActions {
   // Initial user fetch
   useEffect(() => {
     let isMounted = true;
-    
+
     const fetchUser = async () => {
       try {
-        const { data: { user }, error } = await supabase.auth.getUser();
-        
+        const {
+          data: { user },
+          error,
+        } = await supabase.auth.getUser();
+
         if (isMounted) {
           if (error) {
             setError(error.message);
@@ -85,18 +90,18 @@ export function useAuthBase<T extends AuthUser>(): AuthState<T> & AuthActions {
     fetchUser();
 
     // Listen to auth state changes
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(
-      async (event, session) => {
-        if (isMounted) {
-          setUser(session?.user as T ?? null);
-          setLoading(false);
-          
-          if (event === 'SIGNED_OUT') {
-            setError(null);
-          }
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange(async (event, session) => {
+      if (isMounted) {
+        setUser((session?.user as T) ?? null);
+        setLoading(false);
+
+        if (event === 'SIGNED_OUT') {
+          setError(null);
         }
       }
-    );
+    });
 
     return () => {
       isMounted = false;

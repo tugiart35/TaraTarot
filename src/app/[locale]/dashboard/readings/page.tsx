@@ -19,6 +19,8 @@ import {
 } from 'lucide-react';
 import ReadingDetailModal from '@/features/shared/ui/ReadingDetailModal';
 import { BottomNavigation } from '@/features/shared/layout';
+import { READING_CREDITS } from '@/lib/constants/reading-credits';
+import { getReadingFormat, getFormatInfo } from '@/utils/dashboard-utils';
 
 interface Reading {
   id: string;
@@ -53,8 +55,10 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
   const { user, loading: authLoading } = useAuth();
   const { t } = useTranslations();
   const router = useRouter();
-  const [resolvedParams, setResolvedParams] = useState<{ locale: string } | null>(null);
-  
+  const [resolvedParams, setResolvedParams] = useState<{
+    locale: string;
+  } | null>(null);
+
   // Tüm hook'ları koşullu return'den önce tanımla
   const [readings, setReadings] = useState<Reading[]>([]);
   const [loading, setLoading] = useState(true);
@@ -149,7 +153,9 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
         .order('created_at', { ascending: false })
         .limit(limit);
 
-      if (error) throw error;
+      if (error) {
+        throw error;
+      }
 
       if (data) {
         const processedReadings: Reading[] = data.map((reading: any) => {
@@ -157,11 +163,24 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
           const getReadingTitle = (readingType: string): string => {
             switch (readingType) {
               case 'LOVE_SPREAD_DETAILED':
+                return t(
+                  'readings.loveReadingDetailed',
+                  'Aşk Açılımı - Sesli Detaylı Okuma'
+                );
               case 'LOVE_SPREAD_WRITTEN':
-                return t('readings.loveReading', 'Aşk Okuması');
+                return t(
+                  'readings.loveReadingWritten',
+                  'Aşk Açılımı - Yazılı Okuma'
+                );
+              case 'LOVE_SPREAD_SIMPLE':
+                return t(
+                  'readings.loveReadingSimple',
+                  'Aşk Açılımı - Basit Okuma'
+                );
               case 'GENERAL_SPREAD':
-              case 'THREE_CARD_SPREAD':
                 return t('readings.generalReading', 'Genel Okuma');
+              case 'THREE_CARD_SPREAD':
+                return t('readings.threeCardReading', '3 Kart Okuması');
               case 'CAREER_SPREAD':
                 return t('readings.careerReading', 'Kariyer Okuması');
               case 'NUMEROLOGY_READING':
@@ -179,8 +198,13 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
               ? reading.interpretation.substring(0, 100) + '...'
               : reading.interpretation;
 
-          // Kredi maliyeti - veritabanından gelen değeri kullan
-          const cost_credits = reading.cost_credits || 50;
+          // Kredi maliyeti - veritabanından gelen değeri kullan, yoksa READING_CREDITS'ten al
+          const cost_credits =
+            reading.cost_credits ||
+            READING_CREDITS[
+              reading.reading_type as keyof typeof READING_CREDITS
+            ] ||
+            50;
 
           // Spread adı - veritabanından gelen değeri kullan veya varsayılan oluştur
           const getSpreadName = (readingType: string): string => {
@@ -218,7 +242,7 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
             summary,
             cost_credits,
             spread_name: getSpreadName(reading.reading_type),
-            format: getReadingFormat(cost_credits),
+            format: getReadingFormat(reading.reading_type, cost_credits),
           };
         });
 
@@ -238,7 +262,7 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
         );
       }
     } catch (error) {
-      console.error('Error fetching readings:', error);
+      // Error fetching readings
     } finally {
       setLoading(false);
     }
@@ -299,60 +323,6 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
       hour: '2-digit',
       minute: '2-digit',
     });
-  };
-
-  // Okuma formatını belirle (sesli/yazılı/basit)
-  const getReadingFormat = (costCredits: number): 'audio' | 'written' | 'simple' => {
-    // Kredi miktarına göre okuma türünü belirle
-    // Detaylı okumalar (sesli): 80-140 kredi arası
-    if (costCredits >= 80 && costCredits <= 140) {
-      return 'audio';
-    } 
-    // Yazılı okumalar: 70-130 kredi arası
-    else if (costCredits >= 70 && costCredits <= 130) {
-      return 'written';
-    } 
-    // Basit okumalar: 70'den az
-    else if (costCredits < 70) {
-      return 'simple';
-    }
-    
-    // Varsayılan olarak sesli kabul et
-    return 'audio';
-  };
-
-  // Okuma formatı için etiket ve ikon
-  const getFormatInfo = (format: 'audio' | 'written' | 'simple') => {
-    switch (format) {
-      case 'audio':
-        return { 
-          label: 'Sesli', 
-          icon: '🎵', 
-          color: 'bg-blue-500/20 text-blue-400 border-blue-500/30',
-          iconComponent: '🔊'
-        };
-      case 'written':
-        return { 
-          label: 'Yazılı', 
-          icon: '📝', 
-          color: 'bg-green-500/20 text-green-400 border-green-500/30',
-          iconComponent: '📄'
-        };
-      case 'simple':
-        return { 
-          label: 'Basit', 
-          icon: '⚡', 
-          color: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30',
-          iconComponent: '⚡'
-        };
-      default:
-        return { 
-          label: 'Bilinmiyor', 
-          icon: '❓', 
-          color: 'bg-gray-500/20 text-gray-400 border-gray-500/30',
-          iconComponent: '❓'
-        };
-    }
   };
 
   // Params yüklenene kadar bekle
@@ -626,11 +596,15 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
                       </div>
                       <div className='flex flex-col gap-2'>
                         <span className='text-xs px-3 py-1 rounded-full bg-gold/20 text-gold border border-gold/30 font-semibold'>
-                          {reading.cost_credits} {t('readings.credits', 'kredi')}
+                          {reading.cost_credits}{' '}
+                          {t('readings.credits', 'kredi')}
                         </span>
                         {reading.format && (
-                          <span className={`text-xs px-3 py-1 rounded-full border font-semibold ${getFormatInfo(reading.format).color}`}>
-                            {getFormatInfo(reading.format).iconComponent} {getFormatInfo(reading.format).label}
+                          <span
+                            className={`text-xs px-3 py-1 rounded-full border font-semibold ${getFormatInfo(reading.format).color}`}
+                          >
+                            {getFormatInfo(reading.format).iconComponent}{' '}
+                            {getFormatInfo(reading.format).label}
                           </span>
                         )}
                       </div>
@@ -710,8 +684,11 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
                               {t('readings.credits', 'kredi')}
                             </span>
                             {reading.format && (
-                              <span className={`px-3 py-1 rounded-full border font-semibold ${getFormatInfo(reading.format).color}`}>
-                                {getFormatInfo(reading.format).iconComponent} {getFormatInfo(reading.format).label}
+                              <span
+                                className={`px-3 py-1 rounded-full border font-semibold ${getFormatInfo(reading.format).color}`}
+                              >
+                                {getFormatInfo(reading.format).iconComponent}{' '}
+                                {getFormatInfo(reading.format).label}
                               </span>
                             )}
                           </div>

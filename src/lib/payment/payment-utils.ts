@@ -1,6 +1,6 @@
 /*
  * Payment Utility Functions
- * 
+ *
  * Bu dosya payment işlemleri için ortak utility fonksiyonları sağlar.
  * DRY principle uygulayarak tekrarlanan payment kodlarını önler.
  */
@@ -41,7 +41,7 @@ export function extractUserIdFromOrderId(orderId: string): string | null {
 export function extractPackageIdFromOrderId(orderId: string): string | null {
   try {
     const parts = orderId.split('_');
-    
+
     // Format: user_userId_package_packageType_timestamp
     if (parts.length >= 4 && parts[0] === 'user' && parts[2] === 'package') {
       return parts[3];
@@ -71,21 +71,21 @@ export function getPackageInfo(packageId: string): PackageInfo | null {
       bonusCredits: 0,
       priceTRY: 50.0,
     },
-    'starter': {
+    starter: {
       id: 'starter',
       name: 'Başlangıç Paketi',
       credits: 100,
       bonusCredits: 0,
       priceTRY: 50.0,
     },
-    'popular': {
+    popular: {
       id: 'popular',
       name: 'Popüler Paket',
       credits: 300,
       bonusCredits: 30,
       priceTRY: 150.0,
     },
-    'premium': {
+    premium: {
       id: 'premium',
       name: 'Premium Paket',
       credits: 500,
@@ -101,8 +101,12 @@ export function getPackageInfo(packageId: string): PackageInfo | null {
  * Bonus kredi hesaplama
  */
 export function calculateBonusCredits(credits: number): number {
-  if (credits >= 500) return 100;
-  if (credits >= 300) return 30;
+  if (credits >= 500) {
+    return 100;
+  }
+  if (credits >= 300) {
+    return 30;
+  }
   return 0;
 }
 
@@ -111,8 +115,10 @@ export function calculateBonusCredits(credits: number): number {
  */
 export function calculateTotalCredits(packageId: string): number {
   const packageInfo = getPackageInfo(packageId);
-  if (!packageInfo) return 0;
-  
+  if (!packageInfo) {
+    return 0;
+  }
+
   return packageInfo.credits + packageInfo.bonusCredits;
 }
 

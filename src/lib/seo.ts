@@ -24,7 +24,7 @@ export function generateMetaTags(config: SEOConfig) {
     image = '/og-image.jpg',
     url = '',
     type = 'website',
-    locale = 'tr'
+    locale = 'tr',
   } = config;
 
   return {
@@ -70,52 +70,98 @@ export function generateMetaTags(config: SEOConfig) {
 /**
  * Tarot okuma sayfası için SEO config
  */
-export function getReadingSEOConfig(readingType: string, locale: string = 'tr'): SEOConfig {
+export function getReadingSEOConfig(
+  readingType: string,
+  locale: string = 'tr'
+): SEOConfig {
   const configs = {
     tr: {
       love: {
         title: 'Aşk Tarot Okuma',
-        description: 'Aşk hayatınız hakkında detaylı tarot okuma. Gelecekteki ilişkilerinizi keşfedin.',
-        keywords: ['aşk tarot', 'ilişki okuma', 'aşk falı', 'tarot kartları', 'aşk rehberi']
+        description:
+          'Aşk hayatınız hakkında detaylı tarot okuma. Gelecekteki ilişkilerinizi keşfedin.',
+        keywords: [
+          'aşk tarot',
+          'ilişki okuma',
+          'aşk falı',
+          'tarot kartları',
+          'aşk rehberi',
+        ],
       },
       career: {
         title: 'Kariyer Tarot Okuma',
-        description: 'Kariyeriniz ve iş hayatınız hakkında profesyonel tarot okuma. İş fırsatlarınızı keşfedin.',
-        keywords: ['kariyer tarot', 'iş okuma', 'kariyer falı', 'iş fırsatları', 'profesyonel rehberlik']
+        description:
+          'Kariyeriniz ve iş hayatınız hakkında profesyonel tarot okuma. İş fırsatlarınızı keşfedin.',
+        keywords: [
+          'kariyer tarot',
+          'iş okuma',
+          'kariyer falı',
+          'iş fırsatları',
+          'profesyonel rehberlik',
+        ],
       },
       problem: {
         title: 'Problem Çözme Tarot Okuma',
-        description: 'Hayatınızdaki problemleri çözmek için detaylı tarot okuma. Çözüm yollarını keşfedin.',
-        keywords: ['problem çözme', 'tarot rehberi', 'yaşam koçluğu', 'çözüm yolları', 'kişisel gelişim']
-      }
+        description:
+          'Hayatınızdaki problemleri çözmek için detaylı tarot okuma. Çözüm yollarını keşfedin.',
+        keywords: [
+          'problem çözme',
+          'tarot rehberi',
+          'yaşam koçluğu',
+          'çözüm yolları',
+          'kişisel gelişim',
+        ],
+      },
     },
     en: {
       love: {
         title: 'Love Tarot Reading',
-        description: 'Detailed tarot reading about your love life. Discover your future relationships.',
-        keywords: ['love tarot', 'relationship reading', 'love fortune', 'tarot cards', 'love guidance']
+        description:
+          'Detailed tarot reading about your love life. Discover your future relationships.',
+        keywords: [
+          'love tarot',
+          'relationship reading',
+          'love fortune',
+          'tarot cards',
+          'love guidance',
+        ],
       },
       career: {
         title: 'Career Tarot Reading',
-        description: 'Professional tarot reading about your career and work life. Discover your job opportunities.',
-        keywords: ['career tarot', 'job reading', 'career fortune', 'job opportunities', 'professional guidance']
+        description:
+          'Professional tarot reading about your career and work life. Discover your job opportunities.',
+        keywords: [
+          'career tarot',
+          'job reading',
+          'career fortune',
+          'job opportunities',
+          'professional guidance',
+        ],
       },
       problem: {
         title: 'Problem Solving Tarot Reading',
-        description: 'Detailed tarot reading to solve problems in your life. Discover solution paths.',
-        keywords: ['problem solving', 'tarot guidance', 'life coaching', 'solution paths', 'personal development']
-      }
-    }
+        description:
+          'Detailed tarot reading to solve problems in your life. Discover solution paths.',
+        keywords: [
+          'problem solving',
+          'tarot guidance',
+          'life coaching',
+          'solution paths',
+          'personal development',
+        ],
+      },
+    },
   };
 
   const localeConfig = configs[locale as keyof typeof configs] || configs.tr;
-  const readingConfig = localeConfig[readingType as keyof typeof localeConfig] || localeConfig.love;
+  const readingConfig =
+    localeConfig[readingType as keyof typeof localeConfig] || localeConfig.love;
 
   return {
     ...readingConfig,
     url: `/${locale}/reading/${readingType}`,
     image: `/og-images/${readingType}-${locale}.jpg`,
-    locale
+    locale,
   };
 }
 
@@ -134,7 +180,7 @@ export function generateStructuredData(config: SEOConfig) {
     isPartOf: {
       '@type': 'WebSite',
       name: 'Mystic Tarot',
-      url: 'https://mystictarot.com'
+      url: 'https://mystictarot.com',
     },
     breadcrumb: {
       '@type': 'BreadcrumbList',
@@ -143,15 +189,15 @@ export function generateStructuredData(config: SEOConfig) {
           '@type': 'ListItem',
           position: 1,
           name: 'Ana Sayfa',
-          item: 'https://mystictarot.com'
+          item: 'https://mystictarot.com',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: config.title,
-          item: config.url
-        }
-      ]
-    }
+          item: config.url,
+        },
+      ],
+    },
   };
 }

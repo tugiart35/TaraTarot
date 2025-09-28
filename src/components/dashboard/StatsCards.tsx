@@ -38,7 +38,9 @@ export default function StatsCards({
                 {translate('dashboard.creditBalance', 'Kredi Bakiyesi')}
               </p>
               <p className='text-2xl font-bold text-text-celestial'>
-                {DashboardUtils.formatCreditBalance(profile?.credit_balance || 0)}
+                {DashboardUtils.formatCreditBalance(
+                  profile?.credit_balance || 0
+                )}
               </p>
             </div>
           </div>

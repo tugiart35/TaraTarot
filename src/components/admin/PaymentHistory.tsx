@@ -61,7 +61,9 @@ export default function PaymentHistory({
 
       if (error) {
         console.error('Supabase error fetching payments:', error);
-        throw new Error(`Ödeme verileri yüklenirken hata oluştu: ${error.message}`);
+        throw new Error(
+          `Ödeme verileri yüklenirken hata oluştu: ${error.message}`
+        );
       }
 
       // Veriyi formatla

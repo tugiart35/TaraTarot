@@ -24,7 +24,11 @@ export class NumerologyErrorBoundary extends Component<Props, State> {
   }
 
   componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
-    console.error('Numerology Error Boundary caught an error:', error, errorInfo);
+    console.error(
+      'Numerology Error Boundary caught an error:',
+      error,
+      errorInfo
+    );
   }
 
   handleRetry = () => {
@@ -51,7 +55,8 @@ export class NumerologyErrorBoundary extends Component<Props, State> {
                   Bir Hata Oluştu
                 </h1>
                 <p className='text-gray-300 mb-4'>
-                  Numeroloji hesaplamasında beklenmeyen bir hata oluştu. Lütfen tekrar deneyin.
+                  Numeroloji hesaplamasında beklenmeyen bir hata oluştu. Lütfen
+                  tekrar deneyin.
                 </p>
               </div>
 

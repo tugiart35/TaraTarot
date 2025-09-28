@@ -1,6 +1,6 @@
 /*
  * Email API Error Response Standardization
- * 
+ *
  * Bu dosya email API endpoint'leri için standart error response'ları sağlar.
  * Production'da güvenlik için detaylı error mesajlarını gizler.
  */
@@ -25,7 +25,9 @@ export class ErrorResponse {
     return error.message;
   }
 
-  static emailValidationError(message: string = 'Geçersiz email adresi'): NextResponse {
+  static emailValidationError(
+    message: string = 'Geçersiz email adresi'
+  ): NextResponse {
     return NextResponse.json(
       {
         success: false,
@@ -36,25 +38,33 @@ export class ErrorResponse {
     );
   }
 
-  static smtpConnectionError(message: string = 'SMTP bağlantı hatası'): NextResponse {
+  static smtpConnectionError(
+    message: string = 'SMTP bağlantı hatası'
+  ): NextResponse {
     return NextResponse.json(
       {
         success: false,
         error: 'SMTP_CONNECTION_ERROR',
-        message: this.isProduction() ? 'Email servisi şu anda kullanılamıyor' : message,
+        message: this.isProduction()
+          ? 'Email servisi şu anda kullanılamıyor'
+          : message,
       },
       { status: 500 }
     );
   }
 
   static internalServerError(details?: string): NextResponse {
-    const sanitizedMessage = details ? this.sanitizeError(new Error(details)) : 'Sunucu hatası';
-    
+    const sanitizedMessage = details
+      ? this.sanitizeError(new Error(details))
+      : 'Sunucu hatası';
+
     return NextResponse.json(
       {
         success: false,
         error: 'INTERNAL_SERVER_ERROR',
-        message: this.isProduction() ? 'Sunucu hatası oluştu' : sanitizedMessage,
+        message: this.isProduction()
+          ? 'Sunucu hatası oluştu'
+          : sanitizedMessage,
       },
       { status: 500 }
     );
@@ -65,8 +75,8 @@ export class ErrorResponse {
       {
         success: false,
         error: 'MISSING_FIELDS',
-        message: this.isProduction() 
-          ? 'Gerekli alanlar eksik' 
+        message: this.isProduction()
+          ? 'Gerekli alanlar eksik'
           : `Eksik alanlar: ${fields.join(', ')}`,
       },
       { status: 400 }
@@ -96,7 +106,9 @@ export class ErrorResponse {
       {
         success: false,
         error: 'NOT_FOUND',
-        message: this.isProduction() ? 'Kaynak bulunamadı' : `${resource} bulunamadı`,
+        message: this.isProduction()
+          ? 'Kaynak bulunamadı'
+          : `${resource} bulunamadı`,
       },
       { status: 404 }
     );

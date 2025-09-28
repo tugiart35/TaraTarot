@@ -1,6 +1,6 @@
 /*
  * Admin Types
- * 
+ *
  * Bu dosya admin paneli için ortak type tanımlarını içerir.
  * DRY principle uygulayarak duplicate interface'leri önler.
  */
@@ -123,9 +123,26 @@ export interface AdminAuditLog {
 }
 
 // Filter types
-export type ReadingFilter = 'all' | 'tarot' | 'numerology' | 'love' | 'career' | 'general';
-export type PaymentFilter = 'all' | 'completed' | 'pending' | 'failed' | 'refunded';
-export type TransactionFilter = 'all' | 'purchase' | 'refund' | 'bonus' | 'deduction' | 'reading';
+export type ReadingFilter =
+  | 'all'
+  | 'tarot'
+  | 'numerology'
+  | 'love'
+  | 'career'
+  | 'general';
+export type PaymentFilter =
+  | 'all'
+  | 'completed'
+  | 'pending'
+  | 'failed'
+  | 'refunded';
+export type TransactionFilter =
+  | 'all'
+  | 'purchase'
+  | 'refund'
+  | 'bonus'
+  | 'deduction'
+  | 'reading';
 
 // Component props types
 export interface AdminDataTableProps<T> {

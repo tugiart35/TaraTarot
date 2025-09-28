@@ -106,18 +106,18 @@ class RateLimiter {
     const now = Date.now();
     const windowMs = 60 * 1000; // 1 minute
     const requests = this.requests.get(identifier) || [];
-    
+
     // Remove old requests outside the window
     const validRequests = requests.filter(time => now - time < windowMs);
-    
+
     if (validRequests.length >= MAX_REQUESTS_PER_MINUTE) {
       return false;
     }
-    
+
     // Add current request
     validRequests.push(now);
     this.requests.set(identifier, validRequests);
-    
+
     return true;
   }
 }
@@ -126,11 +126,11 @@ const sessionStorage = new SecureSessionStorage();
 const rateLimiter = new RateLimiter();
 
 // Install event - cache auth-related resources
-self.addEventListener('install', (event) => {
+self.addEventListener('install', event => {
   console.log('Auth Service Worker installing...');
-  
+
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
+    caches.open(CACHE_NAME).then(cache => {
       return cache.addAll([
         '/auth',
         '/manifest.json',
@@ -139,18 +139,18 @@ self.addEventListener('install', (event) => {
       ]);
     })
   );
-  
+
   self.skipWaiting();
 });
 
 // Activate event - clean up old caches
-self.addEventListener('activate', (event) => {
+self.addEventListener('activate', event => {
   console.log('Auth Service Worker activating...');
-  
+
   event.waitUntil(
-    caches.keys().then((cacheNames) => {
+    caches.keys().then(cacheNames => {
       return Promise.all(
-        cacheNames.map((cacheName) => {
+        cacheNames.map(cacheName => {
           if (cacheName !== CACHE_NAME && cacheName !== AUTH_CACHE_NAME) {
             return caches.delete(cacheName);
           }
@@ -158,21 +158,21 @@ self.addEventListener('activate', (event) => {
       );
     })
   );
-  
+
   self.clients.claim();
 });
 
 // Fetch event - handle auth requests with security
-self.addEventListener('fetch', (event) => {
+self.addEventListener('fetch', event => {
   const { request } = event;
   const url = new URL(request.url);
-  
+
   // Handle auth-related requests
   if (AUTH_ROUTES.some(route => url.pathname.startsWith(route))) {
     event.respondWith(handleAuthRequest(request));
     return;
   }
-  
+
   // Handle Supabase auth requests
   if (url.hostname.includes('supabase') && url.pathname.includes('auth')) {
     event.respondWith(handleSupabaseAuthRequest(request));
@@ -183,28 +183,25 @@ self.addEventListener('fetch', (event) => {
 // Handle auth requests with rate limiting and caching
 async function handleAuthRequest(request) {
   const clientId = request.headers.get('x-client-id') || 'anonymous';
-  
+
   // Rate limiting check
   if (!rateLimiter.isAllowed(clientId)) {
-    return new Response(
-      JSON.stringify({ error: 'Rate limit exceeded' }),
-      {
-        status: 429,
-        headers: { 'Content-Type': 'application/json' }
-      }
-    );
+    return new Response(JSON.stringify({ error: 'Rate limit exceeded' }), {
+      status: 429,
+      headers: { 'Content-Type': 'application/json' },
+    });
   }
-  
+
   try {
     // Try network first for auth requests
     const response = await fetch(request);
-    
+
     // Cache successful auth responses
     if (response.ok && request.method === 'GET') {
       const cache = await caches.open(AUTH_CACHE_NAME);
       cache.put(request, response.clone());
     }
-    
+
     return response;
   } catch (error) {
     // Fallback to cache for offline support
@@ -212,21 +209,22 @@ async function handleAuthRequest(request) {
     if (cachedResponse) {
       return cachedResponse;
     }
-    
+
     // Return offline page for auth routes
     if (request.method === 'GET') {
       return new Response(
-        JSON.stringify({ 
+        JSON.stringify({
           error: 'Offline',
-          message: 'Authentication service is currently offline. Please check your connection.'
+          message:
+            'Authentication service is currently offline. Please check your connection.',
         }),
         {
           status: 503,
-          headers: { 'Content-Type': 'application/json' }
+          headers: { 'Content-Type': 'application/json' },
         }
       );
     }
-    
+
     throw error;
   }
 }
@@ -240,15 +238,15 @@ async function handleSupabaseAuthRequest(request) {
         ...request.headers,
         'X-Requested-With': 'XMLHttpRequest',
         'Cache-Control': 'no-cache',
-      }
+      },
     });
-    
+
     const response = await fetch(modifiedRequest);
-    
+
     // Handle successful auth responses
     if (response.ok) {
       const responseData = await response.clone().json();
-      
+
       // Store session data securely
       if (responseData.session) {
         sessionStorage.setSession({
@@ -260,29 +258,26 @@ async function handleSupabaseAuthRequest(request) {
         });
       }
     }
-    
+
     return response;
   } catch (error) {
     console.error('Supabase auth request failed:', error);
-    
+
     // Return cached session if available
     const cachedSession = sessionStorage.getSession();
     if (cachedSession && request.method === 'GET') {
-      return new Response(
-        JSON.stringify({ session: cachedSession }),
-        {
-          status: 200,
-          headers: { 'Content-Type': 'application/json' }
-        }
-      );
+      return new Response(JSON.stringify({ session: cachedSession }), {
+        status: 200,
+        headers: { 'Content-Type': 'application/json' },
+      });
     }
-    
+
     throw error;
   }
 }
 
 // Background sync for auth operations
-self.addEventListener('sync', (event) => {
+self.addEventListener('sync', event => {
   if (event.tag === 'auth-sync') {
     event.waitUntil(performAuthSync());
   }
@@ -293,24 +288,24 @@ async function performAuthSync() {
   try {
     const session = sessionStorage.getSession();
     if (!session) return;
-    
+
     // Check if session is expired
     const now = Date.now();
     const expiresAt = session.expires_at * 1000;
-    
+
     if (now >= expiresAt) {
       // Try to refresh session
       const response = await fetch('/api/auth/refresh', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${session.access_token}`,
+          Authorization: `Bearer ${session.access_token}`,
         },
         body: JSON.stringify({
           refresh_token: session.refresh_token,
         }),
       });
-      
+
       if (response.ok) {
         const newSession = await response.json();
         sessionStorage.setSession(newSession);
@@ -325,10 +320,10 @@ async function performAuthSync() {
 }
 
 // Handle push notifications for auth events
-self.addEventListener('push', (event) => {
+self.addEventListener('push', event => {
   if (event.data) {
     const data = event.data.json();
-    
+
     if (data.type === 'auth') {
       const options = {
         body: data.message,
@@ -349,68 +344,67 @@ self.addEventListener('push', (event) => {
           },
         ],
       };
-      
-      event.waitUntil(
-        self.registration.showNotification(data.title, options)
-      );
+
+      event.waitUntil(self.registration.showNotification(data.title, options));
     }
   }
 });
 
 // Handle notification clicks
-self.addEventListener('notificationclick', (event) => {
+self.addEventListener('notificationclick', event => {
   event.notification.close();
-  
+
   if (event.action === 'view') {
-    event.waitUntil(
-      clients.openWindow('/auth')
-    );
+    event.waitUntil(clients.openWindow('/auth'));
   }
 });
 
 // Message handling for communication with main thread
-self.addEventListener('message', (event) => {
+self.addEventListener('message', event => {
   const { type, data } = event.data;
-  
+
   switch (type) {
     case 'GET_SESSION':
       const session = sessionStorage.getSession();
       event.ports[0].postMessage({ session });
       break;
-      
+
     case 'CLEAR_SESSION':
       sessionStorage.clearSession();
       event.ports[0].postMessage({ success: true });
       break;
-      
+
     case 'SET_SESSION':
       const success = sessionStorage.setSession(data);
       event.ports[0].postMessage({ success });
       break;
-      
+
     case 'SKIP_WAITING':
       self.skipWaiting();
       break;
-      
+
     default:
       console.log('Unknown message type:', type);
   }
 });
 
 // Periodic cleanup
-setInterval(() => {
-  // Clean up old rate limit entries
-  const now = Date.now();
-  const windowMs = 60 * 1000;
-  
-  for (const [key, requests] of rateLimiter.requests.entries()) {
-    const validRequests = requests.filter(time => now - time < windowMs);
-    if (validRequests.length === 0) {
-      rateLimiter.requests.delete(key);
-    } else {
-      rateLimiter.requests.set(key, validRequests);
+setInterval(
+  () => {
+    // Clean up old rate limit entries
+    const now = Date.now();
+    const windowMs = 60 * 1000;
+
+    for (const [key, requests] of rateLimiter.requests.entries()) {
+      const validRequests = requests.filter(time => now - time < windowMs);
+      if (validRequests.length === 0) {
+        rateLimiter.requests.delete(key);
+      } else {
+        rateLimiter.requests.set(key, validRequests);
+      }
     }
-  }
-}, 5 * 60 * 1000); // Clean up every 5 minutes
+  },
+  5 * 60 * 1000
+); // Clean up every 5 minutes
 
 console.log('Auth Service Worker loaded successfully');

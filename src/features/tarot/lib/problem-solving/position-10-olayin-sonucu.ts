@@ -14,7 +14,7 @@ Bağlı Dosyalar:
 - Evet, detaylı anlamlar mevcut
 ---
 
-*/  
+*/
 
 import { TarotCard } from '@/types/tarot';
 
@@ -91,8 +91,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters İmparatoriçe, olayın sonucunda üretkenlik kaybı, duygusal dengesizlik ya da aşırı bağımlılık olabilir.',
     keywords: ['bereket', 'üretkenlik', 'bolluk', 'huzur', 'tatmin'],
-    context:
-      'Sonuç, bolluk ve huzur ya da üretkenlik kaybı olabilir.',
+    context: 'Sonuç, bolluk ve huzur ya da üretkenlik kaybı olabilir.',
     group: 'Majör Arkana',
   },
   {
@@ -117,8 +116,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Aziz, olayın sonucunda yanlış rehberlik, geleneklere başkaldırı ya da sahte öğretiler olabilir.',
     keywords: ['bilgelik', 'rehberlik', 'öğreti', 'gelenek', 'uyum'],
-    context:
-      'Sonuç, bilgeliğe erişmek ya da yanlış yönlendirilmek olabilir.',
+    context: 'Sonuç, bilgeliğe erişmek ya da yanlış yönlendirilmek olabilir.',
     group: 'Majör Arkana',
   },
   {
@@ -143,8 +141,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Savaş Arabası, olayın sonucunda yön kaybı, başarısızlık ya da kontrolsüzlük olabilir.',
     keywords: ['zafer', 'kontrol', 'ilerleme', 'başarı', 'kararlılık'],
-    context:
-      'Sonuç, başarıyla ilerlemek ya da kontrolü kaybetmek olabilir.',
+    context: 'Sonuç, başarıyla ilerlemek ya da kontrolü kaybetmek olabilir.',
     group: 'Majör Arkana',
   },
   {
@@ -169,13 +166,12 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Ermiş, olayın sonucunda aşırı yalnızlık, izolasyon ya da yanlış yönlendirilme olabilir.',
     keywords: ['bilgelik', 'arayış', 'rehberlik', 'yalnızlık', 'aydınlanma'],
-    context:
-      'Sonuç, içsel ışığını bulmak ya da yalnızlığa çekilmek olabilir.',
+    context: 'Sonuç, içsel ışığını bulmak ya da yalnızlığa çekilmek olabilir.',
     group: 'Majör Arkana',
   },
   {
     id: 'wheel_of_fortune_ps_pos10',
-    card: 'Wheel of Fortune',
+    card: 'The Wheel of Fortune',
     position: 10,
     upright:
       'Kader Çarkı, olayın sonucunda şansın açılması, talihin dönmesi ve olumlu değişimlerin başlaması olabilir.',
@@ -195,8 +191,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Adalet, olayın sonucunda adaletsizlik, yanlış kararlar ya da sorumluluktan kaçış olabilir.',
     keywords: ['adalet', 'denge', 'karar', 'sorumluluk', 'gerçek'],
-    context:
-      'Sonuç, adaletin sağlanması ya da haksızlıkla yüzleşmek olabilir.',
+    context: 'Sonuç, adaletin sağlanması ya da haksızlıkla yüzleşmek olabilir.',
     group: 'Majör Arkana',
   },
   {
@@ -207,9 +202,14 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
       'Asılan Adam, olayın sonucunda yeni bir bakış açısı kazanmak, teslimiyet ve kabullenme olabilir.',
     reversed:
       'Ters Asılan Adam, olayın sonucunda isteksizlik, durağanlık ya da boşuna fedakarlık olabilir.',
-    keywords: ['bakış açısı', 'teslimiyet', 'fedakarlık', 'farkındalık', 'duraklama'],
-    context:
-      'Sonuç, yeni bir bakış kazanmak ya da durağan kalmak olabilir.',
+    keywords: [
+      'bakış açısı',
+      'teslimiyet',
+      'fedakarlık',
+      'farkındalık',
+      'duraklama',
+    ],
+    context: 'Sonuç, yeni bir bakış kazanmak ya da durağan kalmak olabilir.',
     group: 'Majör Arkana',
   },
   {
@@ -221,8 +221,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Ölüm, olayın sonucunda değişime direnç, kapanmayan döngüler ya da gereksiz uzatmalar olabilir.',
     keywords: ['dönüşüm', 'bitiş', 'yenilenme', 'değişim', 'kapanış'],
-    context:
-      'Sonuç, güçlü bir dönüşüm ya da değişime direnç olabilir.',
+    context: 'Sonuç, güçlü bir dönüşüm ya da değişime direnç olabilir.',
     group: 'Majör Arkana',
   },
   {
@@ -234,8 +233,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Denge, olayın sonucunda uyumsuzluk, aşırılıklar ya da denge kaybı olabilir.',
     keywords: ['denge', 'uyum', 'sabır', 'dengelemek', 'orta yol'],
-    context:
-      'Sonuç, uyum sağlamak ya da dengesizlikle uğraşmak olabilir.',
+    context: 'Sonuç, uyum sağlamak ya da dengesizlikle uğraşmak olabilir.',
     group: 'Majör Arkana',
   },
   {
@@ -247,8 +245,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Şeytan, olayın sonucunda özgürleşme, bağımlılıklardan kurtulma ve zincirleri kırma olabilir.',
     keywords: ['bağımlılık', 'esaret', 'özgürleşme', 'arzu', 'kısıtlama'],
-    context:
-      'Sonuç, bağımlı kalmak ya da özgürleşmek olabilir.',
+    context: 'Sonuç, bağımlı kalmak ya da özgürleşmek olabilir.',
     group: 'Majör Arkana',
   },
   {
@@ -273,8 +270,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Yıldız, olayın sonucunda umutsuzluk, inanç kaybı ya da karamsarlık olabilir.',
     keywords: ['umut', 'ilham', 'şifa', 'gelecek', 'aydınlanma'],
-    context:
-      'Sonuç, umut dolu bir yenilenme ya da karamsarlık olabilir.',
+    context: 'Sonuç, umut dolu bir yenilenme ya da karamsarlık olabilir.',
     group: 'Majör Arkana',
   },
   {
@@ -299,8 +295,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Güneş, olayın sonucunda geçici karamsarlık, özgüven kaybı ya da görünürlüğün azalması olabilir.',
     keywords: ['başarı', 'mutluluk', 'aydınlanma', 'özgüven', 'zafer'],
-    context:
-      'Sonuç, parlak bir mutluluk ya da geçici gölgeler olabilir.',
+    context: 'Sonuç, parlak bir mutluluk ya da geçici gölgeler olabilir.',
     group: 'Majör Arkana',
   },
   {
@@ -312,8 +307,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Mahkeme, olayın sonucunda fırsatları kaçırma, sorumluluklardan kaçış ya da affedememe olabilir.',
     keywords: ['yeniden doğuş', 'karar', 'özgürleşme', 'geçmiş', 'hesaplaşma'],
-    context:
-      'Sonuç, yeniden doğuş ya da fırsatların kaçırılması olabilir.',
+    context: 'Sonuç, yeniden doğuş ya da fırsatların kaçırılması olabilir.',
     group: 'Majör Arkana',
   },
   {
@@ -325,8 +319,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Dünya, olayın sonucunda eksiklik, başarısızlık ya da tamamlanamayan süreçler olabilir.',
     keywords: ['tamamlanma', 'başarı', 'döngü', 'bütünlük', 'kapanış'],
-    context:
-      'Sonuç, döngüyü kapatmak ya da yarım kalmışlık olabilir.',
+    context: 'Sonuç, döngüyü kapatmak ya da yarım kalmışlık olabilir.',
     group: 'Majör Arkana',
   },
   // --- Kupalar Serisi ---
@@ -352,8 +345,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters İki Kupa, olayın sonucunda uyumsuzluk, ayrılık ya da anlaşmazlık olabilir.',
     keywords: ['birlik', 'ortaklık', 'uyum', 'sevgi', 'ilişki'],
-    context:
-      'Sonuç, güçlü bir bağ kurmak ya da ayrılık olabilir.',
+    context: 'Sonuç, güçlü bir bağ kurmak ya da ayrılık olabilir.',
     group: 'Kupalar',
   },
   {
@@ -365,8 +357,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Üç Kupa, olayın sonucunda sahte dostluklar, yanlış anlaşılmalar ya da sosyal kopukluk olabilir.',
     keywords: ['kutlama', 'destek', 'arkadaşlık', 'mutluluk', 'birlik'],
-    context:
-      'Sonuç, kutlama yapmak ya da dostlukları sorgulamak olabilir.',
+    context: 'Sonuç, kutlama yapmak ya da dostlukları sorgulamak olabilir.',
     group: 'Kupalar',
   },
   {
@@ -378,8 +369,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Dört Kupa, olayın sonucunda yeni bir farkındalık, fırsatları değerlendirme ya da uyanış olabilir.',
     keywords: ['tatminsizlik', 'fırsat', 'farkındalık', 'sorgulama', 'uyanış'],
-    context:
-      'Sonuç, içsel sorgulama ya da farkındalığa ulaşmak olabilir.',
+    context: 'Sonuç, içsel sorgulama ya da farkındalığa ulaşmak olabilir.',
     group: 'Kupalar',
   },
   {
@@ -391,8 +381,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Beş Kupa, olayın sonucunda geçmişi bırakma, affetme ve yeniden toparlanma olabilir.',
     keywords: ['kayıp', 'pişmanlık', 'hayal kırıklığı', 'toparlanma', 'şifa'],
-    context:
-      'Sonuç, pişmanlık yaşamak ya da yeniden şifa bulmak olabilir.',
+    context: 'Sonuç, pişmanlık yaşamak ya da yeniden şifa bulmak olabilir.',
     group: 'Kupalar',
   },
   {
@@ -404,8 +393,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Altı Kupa, olayın sonucunda geçmişe takılmak, ileriye gidememek ya da çocukça davranışlar olabilir.',
     keywords: ['geçmiş', 'nostalji', 'barışma', 'mutluluk', 'anılar'],
-    context:
-      'Sonuç, geçmişten gelen mutluluk ya da ilerleyememek olabilir.',
+    context: 'Sonuç, geçmişten gelen mutluluk ya da ilerleyememek olabilir.',
     group: 'Kupalar',
   },
   {
@@ -417,8 +405,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Yedi Kupa, olayın sonucunda kafa karışıklığı, yanlış seçimler ya da yanılsamalar olabilir.',
     keywords: ['seçenek', 'hayal', 'yaratıcılık', 'karar', 'yanılsama'],
-    context:
-      'Sonuç, çok seçenekli bir dönem ya da kafa karışıklığı olabilir.',
+    context: 'Sonuç, çok seçenekli bir dönem ya da kafa karışıklığı olabilir.',
     group: 'Kupalar',
   },
   {
@@ -430,8 +417,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Sekiz Kupa, olayın sonucunda geri dönmek, ilerleyememek ya da kararsızlık olabilir.',
     keywords: ['bırakış', 'yolculuk', 'tatminsizlik', 'kaçış', 'ilerleme'],
-    context:
-      'Sonuç, ilerlemek ya da geri dönmek olabilir.',
+    context: 'Sonuç, ilerlemek ya da geri dönmek olabilir.',
     group: 'Kupalar',
   },
   {
@@ -443,8 +429,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Dokuz Kupa, olayın sonucunda yüzeysel tatmin, doyumsuzluk ya da hayal kırıklığı olabilir.',
     keywords: ['mutluluk', 'tatmin', 'dilek', 'keyif', 'doyum'],
-    context:
-      'Sonuç, büyük bir mutluluk ya da doyumsuzluk olabilir.',
+    context: 'Sonuç, büyük bir mutluluk ya da doyumsuzluk olabilir.',
     group: 'Kupalar',
   },
   {
@@ -456,8 +441,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters On Kupa, olayın sonucunda aile içi uyumsuzluk, huzursuzluk ya da kalıcı mutluluk kaybı olabilir.',
     keywords: ['aile', 'mutluluk', 'uyum', 'huzur', 'ilişki'],
-    context:
-      'Sonuç, kalıcı huzur ya da ailevi uyumsuzluk olabilir.',
+    context: 'Sonuç, kalıcı huzur ya da ailevi uyumsuzluk olabilir.',
     group: 'Kupalar',
   },
   {
@@ -469,8 +453,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Kupa Prensi, olayın sonucunda yüzeysel duygular, reddedilme ya da hayal kırıklığı olabilir.',
     keywords: ['romantizm', 'teklif', 'başlangıç', 'ilham', 'hayal'],
-    context:
-      'Sonuç, romantik bir gelişme ya da hayal kırıklığı olabilir.',
+    context: 'Sonuç, romantik bir gelişme ya da hayal kırıklığı olabilir.',
     group: 'Kupalar',
   },
   {
@@ -482,8 +465,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Kupa Şövalyesi, olayın sonucunda boş vaatler, yanıltıcı teklifler ya da duygusal hayal kırıklıkları olabilir.',
     keywords: ['romantizm', 'teklif', 'hayal', 'yolculuk', 'ideal'],
-    context:
-      'Sonuç, romantik bir teklif ya da boş vaat olabilir.',
+    context: 'Sonuç, romantik bir teklif ya da boş vaat olabilir.',
     group: 'Kupalar',
   },
   {
@@ -495,8 +477,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Kupa Kraliçesi, olayın sonucunda aşırı hassasiyet, bağımlılık ya da duygusal dengesizlik olabilir.',
     keywords: ['şefkat', 'denge', 'anlayış', 'hassasiyet', 'duygu'],
-    context:
-      'Sonuç, duygusal denge ya da aşırılık olabilir.',
+    context: 'Sonuç, duygusal denge ya da aşırılık olabilir.',
     group: 'Kupalar',
   },
   {
@@ -508,8 +489,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Kupa Kralı, olayın sonucunda duygusal istikrarsızlık, manipülasyon ya da kontrol kaybı olabilir.',
     keywords: ['olgunluk', 'denge', 'rehberlik', 'duygu', 'kontrol'],
-    context:
-      'Sonuç, olgunluk kazanmak ya da dengesizlik olabilir.',
+    context: 'Sonuç, olgunluk kazanmak ya da dengesizlik olabilir.',
     group: 'Kupalar',
   },
   // --- Kılıçlar Serisi ---
@@ -522,8 +502,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Kılıç Ası, olayın sonucunda kafa karışıklığı, yanlış anlaşılmalar veya başarısız kararlar olabilir.',
     keywords: ['netlik', 'karar', 'başlangıç', 'zihin', 'gerçek'],
-    context:
-      'Sonuç, zihinsel netlik ya da kafa karışıklığı olabilir.',
+    context: 'Sonuç, zihinsel netlik ya da kafa karışıklığı olabilir.',
     group: 'Kılıçlar',
   },
   {
@@ -535,8 +514,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters İki Kılıç, olayın sonucunda karar verememek, kör noktalar ya da yanlış seçimler olabilir.',
     keywords: ['karar', 'denge', 'ikilem', 'seçim', 'netlik'],
-    context:
-      'Sonuç, karar vermek ya da kararsızlıkta kalmak olabilir.',
+    context: 'Sonuç, karar vermek ya da kararsızlıkta kalmak olabilir.',
     group: 'Kılıçlar',
   },
   {
@@ -548,8 +526,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Üç Kılıç, olayın sonucunda affetme, iyileşme ve kalp yaralarının kapanması olabilir.',
     keywords: ['ayrılık', 'hayal kırıklığı', 'acı', 'ihanet', 'iyileşme'],
-    context:
-      'Sonuç, kalp kırıklığı ya da iyileşme olabilir.',
+    context: 'Sonuç, kalp kırıklığı ya da iyileşme olabilir.',
     group: 'Kılıçlar',
   },
   {
@@ -561,8 +538,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Dört Kılıç, olayın sonucunda zorunlu bir duraklama, tükenmişlik ya da gecikme olabilir.',
     keywords: ['dinlenme', 'toparlanma', 'huzur', 'zihin', 'duraklama'],
-    context:
-      'Sonuç, huzur bulmak ya da tükenmişlik olabilir.',
+    context: 'Sonuç, huzur bulmak ya da tükenmişlik olabilir.',
     group: 'Kılıçlar',
   },
   {
@@ -574,8 +550,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Beş Kılıç, olayın sonucunda uzlaşma, barışma ya da gereksiz kavgaların bitmesi olabilir.',
     keywords: ['çatışma', 'zafer', 'uzlaşma', 'gurur', 'kaygı'],
-    context:
-      'Sonuç, geçici bir zafer ya da barışma olabilir.',
+    context: 'Sonuç, geçici bir zafer ya da barışma olabilir.',
     group: 'Kılıçlar',
   },
   {
@@ -587,8 +562,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Altı Kılıç, olayın sonucunda geri dönüş, sıkışma ya da ilerleyememe olabilir.',
     keywords: ['geçiş', 'yolculuk', 'ilerleme', 'kaçış', 'yenilenme'],
-    context:
-      'Sonuç, ileriye yol almak ya da sıkışıp kalmak olabilir.',
+    context: 'Sonuç, ileriye yol almak ya da sıkışıp kalmak olabilir.',
     group: 'Kılıçlar',
   },
   {
@@ -600,8 +574,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Yedi Kılıç, olayın sonucunda sırların açığa çıkması, yakalanma ya da dürüstlüğün önem kazanması olabilir.',
     keywords: ['strateji', 'gizlilik', 'plan', 'dürüstlük', 'yakalanma'],
-    context:
-      'Sonuç, stratejik başarı ya da sırların açığa çıkması olabilir.',
+    context: 'Sonuç, stratejik başarı ya da sırların açığa çıkması olabilir.',
     group: 'Kılıçlar',
   },
   {
@@ -613,8 +586,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Sekiz Kılıç, olayın sonucunda özgürleşme, engellerden kurtulma ve yeni yollar bulma olabilir.',
     keywords: ['özgürlük', 'engel', 'sınırlama', 'kaçış', 'çözüm'],
-    context:
-      'Sonuç, sıkışmak ya da özgürleşmek olabilir.',
+    context: 'Sonuç, sıkışmak ya da özgürleşmek olabilir.',
     group: 'Kılıçlar',
   },
   {
@@ -626,8 +598,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Dokuz Kılıç, olayın sonucunda kaygıların hafiflemesi, içsel huzur ya da kabusların sona ermesi olabilir.',
     keywords: ['kaygı', 'stres', 'huzur', 'zihin', 'endişe'],
-    context:
-      'Sonuç, kaygı yaşamak ya da huzur bulmak olabilir.',
+    context: 'Sonuç, kaygı yaşamak ya da huzur bulmak olabilir.',
     group: 'Kılıçlar',
   },
   {
@@ -639,8 +610,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters On Kılıç, olayın sonucunda toparlanma, yeniden ayağa kalkma ya da yeni bir başlangıç olabilir.',
     keywords: ['bitiş', 'acı', 'ihanet', 'yeniden doğuş', 'son'],
-    context:
-      'Sonuç, bitiş ya da yeniden doğuş olabilir.',
+    context: 'Sonuç, bitiş ya da yeniden doğuş olabilir.',
     group: 'Kılıçlar',
   },
   {
@@ -652,8 +622,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Kılıç Prensi, olayın sonucunda yanlış bilgi, dedikodu ya da dikkatsizlik olabilir.',
     keywords: ['bilgi', 'iletişim', 'merak', 'öğrenme', 'dikkat'],
-    context:
-      'Sonuç, yeni bilgiler edinmek ya da yanlış anlaşılmak olabilir.',
+    context: 'Sonuç, yeni bilgiler edinmek ya da yanlış anlaşılmak olabilir.',
     group: 'Kılıçlar',
   },
   {
@@ -665,8 +634,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Kılıç Şövalyesi, olayın sonucunda acelecilik, plansızlık ya da yönsüz hareket olabilir.',
     keywords: ['hız', 'cesaret', 'kararlılık', 'hamle', 'plansızlık'],
-    context:
-      'Sonuç, hızlı bir ilerleme ya da acelecilik olabilir.',
+    context: 'Sonuç, hızlı bir ilerleme ya da acelecilik olabilir.',
     group: 'Kılıçlar',
   },
   {
@@ -678,8 +646,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Kılıç Kraliçesi, olayın sonucunda soğukluk, aşırı eleştiri ya da yanlış anlamalar olabilir.',
     keywords: ['mantık', 'bağımsızlık', 'iletişim', 'eleştiri', 'netlik'],
-    context:
-      'Sonuç, mantıklı kararlar ya da yanlış anlamalar olabilir.',
+    context: 'Sonuç, mantıklı kararlar ya da yanlış anlamalar olabilir.',
     group: 'Kılıçlar',
   },
   {
@@ -691,8 +658,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Kılıç Kralı, olayın sonucunda baskıcı kararlar, adaletsizlik ya da soğuk otorite olabilir.',
     keywords: ['adalet', 'mantık', 'otorite', 'liderlik', 'karar'],
-    context:
-      'Sonuç, adaletli bir yönetim ya da baskıcı kararlar olabilir.',
+    context: 'Sonuç, adaletli bir yönetim ya da baskıcı kararlar olabilir.',
     group: 'Kılıçlar',
   },
   // --- Tılsımlar Serisi ---
@@ -705,8 +671,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Tılsım Ası, olayın sonucunda kaçırılmış fırsatlar, yanlış yatırımlar ya da güvensiz bir temel olabilir.',
     keywords: ['fırsat', 'bolluk', 'güvenlik', 'başlangıç', 'yatırım'],
-    context:
-      'Sonuç, yeni maddi kazançlar ya da kaçırılan fırsatlar olabilir.',
+    context: 'Sonuç, yeni maddi kazançlar ya da kaçırılan fırsatlar olabilir.',
     group: 'Tılsımlar',
   },
   {
@@ -718,8 +683,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters İki Tılsım, olayın sonucunda dengesizlik, sorumlulukların altında ezilme ya da uyumsuzluk olabilir.',
     keywords: ['denge', 'sorumluluk', 'esneklik', 'uyum', 'karar'],
-    context:
-      'Sonuç, dengeyi bulmak ya da sorumluluklarla zorlanmak olabilir.',
+    context: 'Sonuç, dengeyi bulmak ya da sorumluluklarla zorlanmak olabilir.',
     group: 'Tılsımlar',
   },
   {
@@ -731,8 +695,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Üç Tılsım, olayın sonucunda uyumsuzluk, yetersiz işbirliği ya da destek eksikliği olabilir.',
     keywords: ['işbirliği', 'başarı', 'takdir', 'ekip', 'temel'],
-    context:
-      'Sonuç, işbirliğiyle başarı ya da uyumsuzluk olabilir.',
+    context: 'Sonuç, işbirliğiyle başarı ya da uyumsuzluk olabilir.',
     group: 'Tılsımlar',
   },
   {
@@ -744,8 +707,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Dört Tılsım, olayın sonucunda cimrilik, kontrol kaybı ya da bağımlı hale gelmek olabilir.',
     keywords: ['güvenlik', 'istikrar', 'koruma', 'kontrol', 'maddi güç'],
-    context:
-      'Sonuç, güvenliği korumak ya da kaybetmek olabilir.',
+    context: 'Sonuç, güvenliği korumak ya da kaybetmek olabilir.',
     group: 'Tılsımlar',
   },
   {
@@ -757,8 +719,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Beş Tılsım, olayın sonucunda toparlanma, destek bulma ya da maddi sıkıntılardan çıkış olabilir.',
     keywords: ['zorluk', 'yalnızlık', 'destek', 'maddi kayıp', 'toparlanma'],
-    context:
-      'Sonuç, zor bir dönem ya da toparlanma olabilir.',
+    context: 'Sonuç, zor bir dönem ya da toparlanma olabilir.',
     group: 'Tılsımlar',
   },
   {
@@ -770,8 +731,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Altı Tılsım, olayın sonucunda adaletsizlik, bağımlılık ya da dengesiz ilişkiler olabilir.',
     keywords: ['yardım', 'denge', 'paylaşım', 'adalet', 'destek'],
-    context:
-      'Sonuç, adil paylaşım ya da dengesizlik olabilir.',
+    context: 'Sonuç, adil paylaşım ya da dengesizlik olabilir.',
     group: 'Tılsımlar',
   },
   {
@@ -783,8 +743,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Yedi Tılsım, olayın sonucunda sabırsızlık, yanlış yatırımlar ya da hayal kırıklıkları olabilir.',
     keywords: ['emek', 'sabır', 'yatırım', 'ödül', 'bekleyiş'],
-    context:
-      'Sonuç, emeğin karşılığı ya da hayal kırıklığı olabilir.',
+    context: 'Sonuç, emeğin karşılığı ya da hayal kırıklığı olabilir.',
     group: 'Tılsımlar',
   },
   {
@@ -796,8 +755,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Sekiz Tılsım, olayın sonucunda dikkatsizlik, başarısızlık ya da yetersiz çaba olabilir.',
     keywords: ['çalışma', 'ustalık', 'öğrenme', 'başarı', 'emek'],
-    context:
-      'Sonuç, ustalaşmak ya da dikkatsizlik olabilir.',
+    context: 'Sonuç, ustalaşmak ya da dikkatsizlik olabilir.',
     group: 'Tılsımlar',
   },
   {
@@ -809,8 +767,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Dokuz Tılsım, olayın sonucunda bağımlılık, savurganlık ya da özgürlüğün kaybı olabilir.',
     keywords: ['bağımsızlık', 'özgüven', 'bolluk', 'özgürlük', 'keyif'],
-    context:
-      'Sonuç, özgürlük ve bolluk ya da bağımlılık olabilir.',
+    context: 'Sonuç, özgürlük ve bolluk ya da bağımlılık olabilir.',
     group: 'Tılsımlar',
   },
   {
@@ -822,8 +779,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters On Tılsım, olayın sonucunda ailevi huzursuzluk, kayıplar ya da başarısız yatırımlar olabilir.',
     keywords: ['aile', 'istikrar', 'başarı', 'güvence', 'uzun vadeli'],
-    context:
-      'Sonuç, kalıcı güvence ya da huzursuzluk olabilir.',
+    context: 'Sonuç, kalıcı güvence ya da huzursuzluk olabilir.',
     group: 'Tılsımlar',
   },
   {
@@ -835,8 +791,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Tılsım Prensi, olayın sonucunda isteksizlik, motivasyon kaybı ya da başarısızlık olabilir.',
     keywords: ['öğrenme', 'fırsat', 'başlangıç', 'maddi güven', 'motivasyon'],
-    context:
-      'Sonuç, öğrenme fırsatı ya da başarısızlık olabilir.',
+    context: 'Sonuç, öğrenme fırsatı ya da başarısızlık olabilir.',
     group: 'Tılsımlar',
   },
   {
@@ -848,8 +803,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Tılsım Şövalyesi, olayın sonucunda durağanlık, tembellik ya da görevleri ihmal etme olabilir.',
     keywords: ['istikrar', 'sorumluluk', 'ilerleme', 'durağanlık', 'güven'],
-    context:
-      'Sonuç, istikrarla ilerlemek ya da durağan kalmak olabilir.',
+    context: 'Sonuç, istikrarla ilerlemek ya da durağan kalmak olabilir.',
     group: 'Tılsımlar',
   },
   {
@@ -861,8 +815,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Tılsım Kraliçesi, olayın sonucunda öz bakım eksikliği, güvensizlik ya da aşırı bağımlılık olabilir.',
     keywords: ['bolluk', 'şefkat', 'güvenlik', 'destek', 'maddi güç'],
-    context:
-      'Sonuç, bolluk ve güvenlik ya da bağımlılık olabilir.',
+    context: 'Sonuç, bolluk ve güvenlik ya da bağımlılık olabilir.',
     group: 'Tılsımlar',
   },
   {
@@ -874,8 +827,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Tılsım Kralı, olayın sonucunda otoriterlik, aşırı hırs ya da kayıp olabilir.',
     keywords: ['başarı', 'otorite', 'bolluk', 'güvenlik', 'liderlik'],
-    context:
-      'Sonuç, kalıcı başarı ya da otorite baskısı olabilir.',
+    context: 'Sonuç, kalıcı başarı ya da otorite baskısı olabilir.',
     group: 'Tılsımlar',
   },
   // --- Asalar Serisi ---
@@ -901,8 +853,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters İki Değnek, olayın sonucunda plansızlık, vizyon eksikliği ya da fırsatları kaçırmak olabilir.',
     keywords: ['vizyon', 'plan', 'gelecek', 'ilerleme', 'karar'],
-    context:
-      'Sonuç, vizyon geliştirmek ya da plansız kalmak olabilir.',
+    context: 'Sonuç, vizyon geliştirmek ya da plansız kalmak olabilir.',
     group: 'Asalar',
   },
   {
@@ -914,8 +865,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Üç Değnek, olayın sonucunda gecikmeler, başarısız girişimler ya da beklentilerin karşılanmaması olabilir.',
     keywords: ['fırsat', 'işbirliği', 'ilerleme', 'vizyon', 'genişleme'],
-    context:
-      'Sonuç, yeni fırsatlar ya da hayal kırıklıkları olabilir.',
+    context: 'Sonuç, yeni fırsatlar ya da hayal kırıklıkları olabilir.',
     group: 'Asalar',
   },
   {
@@ -927,8 +877,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Dört Değnek, olayın sonucunda uyumsuzluk, ailevi huzursuzluk ya da istikrarsızlık olabilir.',
     keywords: ['kutlama', 'temel', 'uyum', 'başarı', 'istikrar'],
-    context:
-      'Sonuç, kutlama yapmak ya da uyumsuzlukla yüzleşmek olabilir.',
+    context: 'Sonuç, kutlama yapmak ya da uyumsuzlukla yüzleşmek olabilir.',
     group: 'Asalar',
   },
   {
@@ -940,8 +889,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Beş Değnek, olayın sonucunda gereksiz çatışmaların sona ermesi, barış ya da uyum sağlamak olabilir.',
     keywords: ['rekabet', 'mücadele', 'çatışma', 'dayanıklılık', 'barış'],
-    context:
-      'Sonuç, mücadele etmek ya da uyum sağlamak olabilir.',
+    context: 'Sonuç, mücadele etmek ya da uyum sağlamak olabilir.',
     group: 'Asalar',
   },
   {
@@ -953,8 +901,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Altı Değnek, olayın sonucunda kıskançlık, takdir görmeme ya da başarısızlık olabilir.',
     keywords: ['zafer', 'başarı', 'tanınma', 'görünürlük', 'gurur'],
-    context:
-      'Sonuç, büyük bir zafer ya da geçici bir başarısızlık olabilir.',
+    context: 'Sonuç, büyük bir zafer ya da geçici bir başarısızlık olabilir.',
     group: 'Asalar',
   },
   {
@@ -966,8 +913,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Yedi Değnek, olayın sonucunda geri çekilmek, direncin kırılması ya da pes etmek olabilir.',
     keywords: ['savunma', 'kararlılık', 'direnç', 'mücadele', 'pes etmek'],
-    context:
-      'Sonuç, güçlü bir savunma ya da geri çekilmek olabilir.',
+    context: 'Sonuç, güçlü bir savunma ya da geri çekilmek olabilir.',
     group: 'Asalar',
   },
   {
@@ -979,8 +925,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Sekiz Değnek, olayın sonucunda gecikmeler, iletişim sorunları ya da yanlış anlaşılmalar olabilir.',
     keywords: ['hız', 'haber', 'gelişme', 'iletişim', 'engeller'],
-    context:
-      'Sonuç, hızlı bir ilerleme ya da gecikme olabilir.',
+    context: 'Sonuç, hızlı bir ilerleme ya da gecikme olabilir.',
     group: 'Asalar',
   },
   {
@@ -992,8 +937,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Dokuz Değnek, olayın sonucunda tükenmişlik, savunmasızlık ya da direnç kaybı olabilir.',
     keywords: ['direnç', 'sabır', 'mücadele', 'dayanıklılık', 'kararlılık'],
-    context:
-      'Sonuç, dayanıklılıkla ayakta kalmak ya da tükenmek olabilir.',
+    context: 'Sonuç, dayanıklılıkla ayakta kalmak ya da tükenmek olabilir.',
     group: 'Asalar',
   },
   {
@@ -1005,8 +949,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters On Değnek, olayın sonucunda aşırı yüklenmek, yardım alamamak ya da tükenmişlik olabilir.',
     keywords: ['sorumluluk', 'yük', 'tamamlama', 'başarı', 'bitirme'],
-    context:
-      'Sonuç, başarıyla tamamlama ya da tükenmişlik olabilir.',
+    context: 'Sonuç, başarıyla tamamlama ya da tükenmişlik olabilir.',
     group: 'Asalar',
   },
   {
@@ -1031,8 +974,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Değnek Şövalyesi, olayın sonucunda savrukluk, yönsüzlük ya da acelecilik olabilir.',
     keywords: ['cesaret', 'hareket', 'tutku', 'hız', 'gelişme'],
-    context:
-      'Sonuç, tutkulu bir ilerleme ya da acelecilik olabilir.',
+    context: 'Sonuç, tutkulu bir ilerleme ya da acelecilik olabilir.',
     group: 'Asalar',
   },
   {
@@ -1044,8 +986,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Değnek Kraliçesi, olayın sonucunda kıskançlık, güvensizlik ya da dengesizlik olabilir.',
     keywords: ['özgüven', 'karizma', 'liderlik', 'güç', 'çekicilik'],
-    context:
-      'Sonuç, güçlü bir duruş ya da dengesizlik olabilir.',
+    context: 'Sonuç, güçlü bir duruş ya da dengesizlik olabilir.',
     group: 'Asalar',
   },
   {
@@ -1057,8 +998,7 @@ export const position10Meanings: ProblemSolvingPosition10Meaning[] = [
     reversed:
       'Ters Değnek Kralı, olayın sonucunda otoriterlik, yön kaybı ya da kibir olabilir.',
     keywords: ['liderlik', 'vizyon', 'başarı', 'otorite', 'güç'],
-    context:
-      'Sonuç, vizyoner bir başarı ya da yönsüzlük olabilir.',
+    context: 'Sonuç, vizyoner bir başarı ya da yönsüzlük olabilir.',
     group: 'Asalar',
   },
 ];
@@ -1073,54 +1013,55 @@ export function getProblemSolvingPosition10Meaning(
 ): ProblemSolvingPosition10Meaning | null {
   // Kart ismi eşleştirmesi için hem İngilizce hem Türkçe isimleri kontrol et
   // Önce doğrudan eşleşme ara
-  let meaning = position10Meanings.find(m => 
-    m.card === card.name || 
-    m.card === card.nameTr ||
-    card.name === m.card ||
-    card.nameTr === m.card
+  let meaning = position10Meanings.find(
+    m =>
+      m.card === card.name ||
+      m.card === card.nameTr ||
+      card.name === m.card ||
+      card.nameTr === m.card
   );
-  
+
   if (meaning) {
     return meaning;
   }
-  
+
   // Kart ismi mapping'i kullanarak eşleştirme yap
   const cardNameMapping: { [key: string]: string } = {
     // Major Arcana - Türkçe
-    'Deli': 'The Fool',
-    'Büyücü': 'The Magician',
+    Deli: 'The Fool',
+    Büyücü: 'The Magician',
     'Yüksek Rahibe': 'The High Priestess',
-    'İmparatoriçe': 'The Empress',
-    'İmparator': 'The Emperor',
-    'Hierophant': 'The Hierophant',
-    'Aziz': 'The Hierophant',
-    'Aşıklar': 'The Lovers',
+    İmparatoriçe: 'The Empress',
+    İmparator: 'The Emperor',
+    Hierophant: 'The Hierophant',
+    Aziz: 'The Hierophant',
+    Aşıklar: 'The Lovers',
     'Savaş Arabası': 'The Chariot',
-    'Güç': 'Strength',
-    'Ermiş': 'The Hermit',
-    'Münzevi': 'The Hermit',
-    'Kader Çarkı': 'The Wheel of Fortune',
-    'Adalet': 'Justice',
+    Güç: 'Strength',
+    Ermiş: 'The Hermit',
+    Münzevi: 'The Hermit',
+    'Kader Çarkı': 'The The Wheel of Fortune',
+    Adalet: 'Justice',
     'Asılı Adam': 'The Hanged Man',
-    'Ölüm': 'Death',
-    'Ölçü': 'Temperance',
-    'Ölçülülük': 'Temperance',
-    'Şeytan': 'The Devil',
-    'Kule': 'The Tower',
-    'Yıldız': 'The Star',
-    'Ay': 'The Moon',
-    'Güneş': 'The Sun',
-    'Yargı': 'Judgement',
-    'Mahkeme': 'Judgement',
-    'Dünya': 'The World',
+    Ölüm: 'Death',
+    Ölçü: 'Temperance',
+    Ölçülülük: 'Temperance',
+    Şeytan: 'The Devil',
+    Kule: 'The Tower',
+    Yıldız: 'The Star',
+    Ay: 'The Moon',
+    Güneş: 'The Sun',
+    Yargı: 'Judgement',
+    Mahkeme: 'Judgement',
+    Dünya: 'The World',
   };
-  
+
   // Türkçe ismi İngilizce'ye çevir
   const englishName = cardNameMapping[card.nameTr] || card.nameTr;
-  
+
   // İngilizce isimle tekrar ara
   meaning = position10Meanings.find(m => m.card === englishName);
-  
+
   return meaning || null;
 }
 
@@ -1183,7 +1124,7 @@ export const useI18nposition10Meanings = (): I18nProblemSolvingPosition10Meaning
 */
 
 // Belirli bir kart için i18n destekli anlam al (hook kullanmadan)
-      export const getI18nPosition10Meaning = (
+export const getI18nPosition10Meaning = (
   cardName: string,
   t: (_key: string) => string
 ): I18nProblemSolvingPosition10Meaning | null => {

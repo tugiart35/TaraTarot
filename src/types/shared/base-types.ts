@@ -1,6 +1,6 @@
 /*
  * Base Types - Ortak Type Definition'ları
- * 
+ *
  * Bu dosya tüm proje için ortak type definition'ları sağlar.
  * DRY principle uygulayarak tekrarlanan type kodlarını önler.
  */
@@ -230,10 +230,14 @@ export const TypeGuards = {
   isString: (value: any): value is string => typeof value === 'string',
   isNumber: (value: any): value is number => typeof value === 'number',
   isBoolean: (value: any): value is boolean => typeof value === 'boolean',
-  isObject: (value: any): value is object => typeof value === 'object' && value !== null,
+  isObject: (value: any): value is object =>
+    typeof value === 'object' && value !== null,
   isArray: (value: any): value is any[] => Array.isArray(value),
   isDate: (value: any): value is Date => value instanceof Date,
   isEmail: (value: string): boolean => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value),
   isPhone: (value: string): boolean => /^(\+90|0)?[5][0-9]{9}$/.test(value),
-  isUUID: (value: string): boolean => /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(value)
+  isUUID: (value: string): boolean =>
+    /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(
+      value
+    ),
 };

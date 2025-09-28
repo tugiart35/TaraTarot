@@ -89,17 +89,21 @@ export default function RecentActivity({
                   {/* Okuma türü ikonu */}
                   <div
                     className={`p-3 rounded-lg transition-all duration-200 group-hover:scale-110 ${
-                      reading.reading_type === 'love'
+                      reading.reading_type.includes('LOVE')
                         ? 'bg-purple/20 group-hover:bg-purple/30'
-                        : reading.reading_type === 'general'
+                        : reading.reading_type.includes('GENERAL') || reading.reading_type.includes('THREE_CARD')
                           ? 'bg-green/20 group-hover:bg-green/30'
-                          : 'bg-info/20 group-hover:bg-info/30'
+                          : reading.reading_type.includes('CAREER')
+                            ? 'bg-blue/20 group-hover:bg-blue/30'
+                            : 'bg-info/20 group-hover:bg-info/30'
                     }`}
                   >
-                    {reading.reading_type === 'love' ? (
+                    {reading.reading_type.includes('LOVE') ? (
                       <Heart className='h-5 w-5 text-purple' />
-                    ) : reading.reading_type === 'general' ? (
+                    ) : reading.reading_type.includes('GENERAL') || reading.reading_type.includes('THREE_CARD') ? (
                       <BookOpen className='h-5 w-5 text-green' />
+                    ) : reading.reading_type.includes('CAREER') ? (
+                      <Hash className='h-5 w-5 text-blue' />
                     ) : (
                       <Hash className='h-5 w-5 text-info' />
                     )}
@@ -109,9 +113,19 @@ export default function RecentActivity({
                     <p className='text-sm font-medium text-text-celestial truncate group-hover:text-gold transition-colors'>
                       {reading.title}
                     </p>
-                    <div className='flex items-center space-x-2 text-xs text-text-muted'>
-                      <Clock className='h-3 w-3' />
-                      <span>{formatDate(reading.created_at)}</span>
+                    <div className='flex items-center space-x-3 text-xs text-text-muted'>
+                      <div className='flex items-center space-x-1'>
+                        <Clock className='h-3 w-3' />
+                        <span>{formatDate(reading.created_at)}</span>
+                      </div>
+                      {reading.formatInfo && (
+                        <div className={`px-2 py-1 rounded-full text-xs font-medium ${reading.formatInfo.color}`}>
+                          {reading.formatInfo.iconComponent} {reading.formatInfo.label}
+                        </div>
+                      )}
+                      <div className='px-2 py-1 rounded-full bg-gold/20 text-gold border border-gold/30 text-xs font-medium'>
+                        {reading.cost_credits || 0} kredi
+                      </div>
                     </div>
                   </div>
                   {/* Aksiyon butonları */}

@@ -52,11 +52,7 @@
       "risk": "medium",
       "estimatedTime": "4 hours",
       "dependencies": [1],
-      "acceptanceCriteria": [
-        "pnpm build başarılı",
-        "Tüm import path'leri güncellenmiş",
-        "Tarot spreads çalışıyor"
-      ],
+      "acceptanceCriteria": ["pnpm build başarılı", "Tüm import path'leri güncellenmiş", "Tarot spreads çalışıyor"],
       "rollbackPlan": "Dosyayı eski konumuna geri taşı ve import'ları eski haline getir"
     },
     {
@@ -242,11 +238,7 @@
   ],
   "rollback": {
     "strategy": "Git-based rollback",
-    "checkpoints": [
-      "Her adım öncesi git commit",
-      "Her adım sonrası git tag",
-      "Rollback için git reset --hard <tag>"
-    ],
+    "checkpoints": ["Her adım öncesi git commit", "Her adım sonrası git tag", "Rollback için git reset --hard <tag>"],
     "validation": [
       "Rollback sonrası build çalışıyor",
       "Rollback sonrası test'ler geçiyor",
@@ -254,19 +246,8 @@
     ]
   },
   "monitoring": {
-    "metrics": [
-      "Build time",
-      "Bundle size",
-      "Type check time",
-      "Test coverage",
-      "Import count"
-    ],
-    "alerts": [
-      "Build failure",
-      "Type check failure",
-      "Test failure",
-      "Performance regression"
-    ]
+    "metrics": ["Build time", "Bundle size", "Type check time", "Test coverage", "Import count"],
+    "alerts": ["Build failure", "Type check failure", "Test failure", "Performance regression"]
   },
   "documentation": [
     "Her adım için README güncelle",

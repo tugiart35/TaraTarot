@@ -8,13 +8,16 @@ interface PreloadOptions {
 /**
  * Kritik kart resimlerini preload eder
  */
-export function useImagePreloader(imageUrls: string[], options: PreloadOptions = {}) {
+export function useImagePreloader(
+  imageUrls: string[],
+  options: PreloadOptions = {}
+) {
   const [loadedImages, setLoadedImages] = useState<Set<string>>(new Set());
   const [loadingImages, setLoadingImages] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     const preloadImages = async () => {
-      const promises = imageUrls.map((url) => {
+      const promises = imageUrls.map(url => {
         if (loadedImages.has(url) || loadingImages.has(url)) {
           return Promise.resolve();
         }
@@ -23,7 +26,7 @@ export function useImagePreloader(imageUrls: string[], options: PreloadOptions =
 
         return new Promise<void>((resolve, reject) => {
           const img = new Image();
-          
+
           if (options.crossOrigin) {
             img.crossOrigin = options.crossOrigin;
           }
@@ -85,7 +88,9 @@ export function useLazyImageLoader(
 
   useEffect(() => {
     const element = ref.current;
-    if (!element) return;
+    if (!element) {
+      return;
+    }
 
     const observer = new IntersectionObserver(
       ([entry]) => {

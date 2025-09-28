@@ -1,6 +1,6 @@
 /*
  * Admin Performance Monitoring
- * 
+ *
  * Bu dosya admin paneli için performance monitoring utilities'ini sağlar.
  * Component render time ve data fetch performance'ını takip eder.
  */
@@ -20,7 +20,7 @@ export class AdminPerformanceMonitor {
       renderTime,
       dataFetchTime: 0,
       memoryUsage: this.getMemoryUsage(),
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     };
 
     this.addMetric(metric);
@@ -37,7 +37,7 @@ export class AdminPerformanceMonitor {
       renderTime: 0,
       dataFetchTime: fetchTime,
       memoryUsage: this.getMemoryUsage(),
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     };
 
     this.addMetric(metric);
@@ -48,13 +48,17 @@ export class AdminPerformanceMonitor {
   /**
    * Combined performance tracking
    */
-  static trackPerformance(componentName: string, renderTime: number, fetchTime: number): void {
+  static trackPerformance(
+    componentName: string,
+    renderTime: number,
+    fetchTime: number
+  ): void {
     const metric: AdminPerformanceMetrics = {
       componentName,
       renderTime,
       dataFetchTime: fetchTime,
       memoryUsage: this.getMemoryUsage(),
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     };
 
     this.addMetric(metric);
@@ -66,7 +70,11 @@ export class AdminPerformanceMonitor {
    * Memory usage'ı al
    */
   private static getMemoryUsage(): number {
-    if (typeof window !== 'undefined' && 'performance' in window && 'memory' in (window.performance as any)) {
+    if (
+      typeof window !== 'undefined' &&
+      'performance' in window &&
+      'memory' in (window.performance as any)
+    ) {
       const memory = (window.performance as any).memory;
       return memory.usedJSHeapSize / 1024 / 1024; // MB
     }
@@ -78,7 +86,7 @@ export class AdminPerformanceMonitor {
    */
   private static addMetric(metric: AdminPerformanceMetrics): void {
     this.metrics.push(metric);
-    
+
     // Keep only recent metrics
     if (this.metrics.length > this.MAX_METRICS) {
       this.metrics = this.metrics.slice(-this.MAX_METRICS);
@@ -103,20 +111,26 @@ export class AdminPerformanceMonitor {
     slowEndpoints: string[];
   } {
     const totalMetrics = this.metrics.length;
-    
+
     if (totalMetrics === 0) {
       return {
         totalMetrics: 0,
         averageRenderTime: 0,
         averageFetchTime: 0,
         slowComponents: [],
-        slowEndpoints: []
+        slowEndpoints: [],
       };
     }
 
-    const totalRenderTime = this.metrics.reduce((sum, m) => sum + m.renderTime, 0);
-    const totalFetchTime = this.metrics.reduce((sum, m) => sum + m.dataFetchTime, 0);
-    
+    const totalRenderTime = this.metrics.reduce(
+      (sum, m) => sum + m.renderTime,
+      0
+    );
+    const totalFetchTime = this.metrics.reduce(
+      (sum, m) => sum + m.dataFetchTime,
+      0
+    );
+
     const averageRenderTime = totalRenderTime / totalMetrics;
     const averageFetchTime = totalFetchTime / totalMetrics;
 
@@ -133,7 +147,7 @@ export class AdminPerformanceMonitor {
       averageRenderTime,
       averageFetchTime,
       slowComponents: [...new Set(slowComponents)],
-      slowEndpoints: [...new Set(slowEndpoints)]
+      slowEndpoints: [...new Set(slowEndpoints)],
     };
   }
 
@@ -149,7 +163,7 @@ export class AdminPerformanceMonitor {
    */
   static generatePerformanceReport(): string {
     const summary = this.getPerformanceSummary();
-    
+
     let report = `# Admin Performance Report\n\n`;
     report += `**Generated:** ${new Date().toLocaleString('tr-TR')}\n`;
     report += `**Total Metrics:** ${summary.totalMetrics}\n`;
@@ -189,7 +203,7 @@ export class AdminPerformanceMonitor {
     return {
       renderTimeWarning: summary.averageRenderTime > 100,
       fetchTimeWarning: summary.averageFetchTime > 2000,
-      memoryWarning: latestMetric ? latestMetric.memoryUsage > 50 : false // 50MB threshold
+      memoryWarning: latestMetric ? latestMetric.memoryUsage > 50 : false, // 50MB threshold
     };
   }
 }
@@ -205,12 +219,16 @@ export function useAdminPerformanceTracking(componentName: string) {
   };
 
   const trackCombined = (renderTime: number, fetchTime: number) => {
-    AdminPerformanceMonitor.trackPerformance(componentName, renderTime, fetchTime);
+    AdminPerformanceMonitor.trackPerformance(
+      componentName,
+      renderTime,
+      fetchTime
+    );
   };
 
   return {
     trackRender,
     trackFetch,
-    trackCombined
+    trackCombined,
   };
 }
