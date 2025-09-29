@@ -61,7 +61,6 @@ export function HomePageClient({ locale }: HomePageClientProps) {
     try {
       return t ? t(key, fallback) : fallback;
     } catch (error) {
-      console.error('Translation error:', error);
       return fallback;
     }
   };
@@ -76,13 +75,11 @@ export function HomePageClient({ locale }: HomePageClientProps) {
         .eq('status', 'completed');
 
       if (error) {
-        console.error('Okuma sayısı çekme hatası:', error);
         setTotalReadings(0);
       } else {
         setTotalReadings(count || 0);
       }
     } catch (error) {
-      console.error('Okuma sayısı çekme hatası:', error);
       setTotalReadings(0);
     } finally {
       setLoadingStats(false);

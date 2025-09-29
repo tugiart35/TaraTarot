@@ -146,7 +146,6 @@ export default function CreditsPage() {
         });
       }
     } catch (error) {
-      console.error('Error fetching transactions:', error);
       setError('Kredi geçmişi yüklenirken bir hata oluştu');
       // Hata durumunda boş liste göster
       setTransactions([]);

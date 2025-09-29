@@ -1,5 +1,6 @@
 // Dashboard istatistik kartları bileşeni
 
+import { memo } from 'react';
 import { UserProfile } from '@/types/dashboard.types';
 import { formatDate, getMemberSince } from '@/utils/dashboard-utils';
 import { getUserLevelString } from '@/utils/dashboard/user-level-utils';
@@ -16,7 +17,7 @@ interface StatsCardsProps {
 }
 
 // İstatistik kartları bileşeni
-export default function StatsCards({
+const StatsCards = memo(function StatsCards({
   profile,
   totalCount,
   isAdmin,
@@ -44,9 +45,13 @@ export default function StatsCards({
               </p>
             </div>
           </div>
-          {/* Yenile butonu */}
+          {/* Yenile butonu - debounced */}
           <button
-            onClick={refreshCreditBalance} // Kredi bakiyesini yenile
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              refreshCreditBalance();
+            }}
             className='p-2 hover:bg-gold/10 rounded-lg transition-colors'
             title={translate('common.refresh', 'Kredi bakiyesini yenile')}
           >
@@ -121,4 +126,6 @@ export default function StatsCards({
       </div>
     </div>
   );
-}
+});
+
+export default StatsCards;

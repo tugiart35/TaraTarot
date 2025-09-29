@@ -20,7 +20,6 @@
  */
 
 import nodemailer from 'nodemailer';
-import { getReadingFormat as getDashboardReadingFormat } from '@/utils/dashboard-utils';
 
 interface EmailConfig {
   host: string;
@@ -139,45 +138,17 @@ class EmailService {
   async sendTarotReadingPDF(
     userEmail: string,
     readingData: any,
-    pdfBuffer: Buffer,
-    fileName: string
+    _pdfBuffer: Buffer,
+    _fileName: string
   ): Promise<boolean> {
+    // Sadece güzel e-posta template'i - PDF gönderimi yok
     const htmlTemplate = this.generateEmailTemplate(readingData, userEmail);
-
-    // Numeroloji PDF'i de oluştur
-    const attachments = [
-      {
-        filename: fileName,
-        content: pdfBuffer,
-        contentType: 'application/pdf',
-      },
-    ];
-
-    // Kullanıcı bilgileri varsa numeroloji PDF'i de ekle
-    if (readingData.questions?.personalInfo) {
-      try {
-        const { pdfGeneratorService } = await import('@/lib/pdf/pdf-generator');
-        const numerologyPdfBuffer =
-          await pdfGeneratorService.generateNumerologyPDF(
-            readingData.questions.personalInfo
-          );
-        const numerologyFileName = `numeroloji-analizi-${new Date().toISOString().split('T')[0]}.pdf`;
-
-        attachments.push({
-          filename: numerologyFileName,
-          content: numerologyPdfBuffer,
-          contentType: 'application/pdf',
-        });
-      } catch (error) {
-        console.error('Numeroloji PDF oluşturulamadı:', error);
-      }
-    }
 
     const emailData: EmailData = {
       to: 'busbuskimkionline@gmail.com', // Sadece admin'e gönder
       subject: `📊 Yeni Tarot Okuma - ${readingData.title || 'Mistik Okuma'}`,
       html: htmlTemplate,
-      attachments: attachments,
+      // PDF attachments kaldırıldı
     };
 
     return await this.sendEmail(emailData);
@@ -207,43 +178,35 @@ class EmailService {
     // Okuma türünü Türkçe'ye çevir
     const getReadingTypeText = (type: string) => {
       switch (type) {
-        case 'love':
-          return 'Aşk Açılımı';
-        case 'general':
+        case 'LOVE_SPREAD_DETAILED':
+          return 'Aşk Açılımı - Detaylı';
+        case 'LOVE_SPREAD_WRITTEN':
+          return 'Aşk Açılımı - Yazılı';
+        case 'GENERAL_SPREAD':
           return 'Genel Okuma';
-        case 'three_card':
+        case 'THREE_CARD_SPREAD':
           return 'Üç Kart Açılımı';
-        case 'career':
+        case 'CAREER_SPREAD':
           return 'Kariyer Okuması';
-        case 'numerology':
+        case 'NUMEROLOGY_READING':
           return 'Numeroloji';
-        case 'problem_solving':
+        case 'PROBLEM_SOLVING_SPREAD':
           return 'Problem Çözme';
-        case 'money':
+        case 'MONEY_SPREAD':
           return 'Para ve Mali Durum';
         default:
-          return type;
+          return type.replace(/_/g, ' ');
       }
     };
 
-    // Okuma formatını belirle (sesli/yazılı) - dashboard-utils.ts fonksiyonunu kullan
+    // Okuma formatını belirle
     const getReadingFormat = () => {
-      // Dashboard-utils'ten format bilgisini al
-      const format = getDashboardReadingFormat(
-        readingData.reading_type || readingData.readingType, 
-        readingData.cost_credits
-      );
-      
-      // Format'a göre Türkçe etiket döndür
-      switch (format) {
-        case 'audio':
-          return '🎤 Sesli Detaylı Okuma';
-        case 'written':
-          return '📝 Yazılı Okuma';
-        case 'simple':
-          return '📄 Basit Okuma';
-        default:
-          return '📄 Standart Okuma';
+      if (readingData.reading_type?.includes('DETAILED')) {
+        return '🎤 Sesli Detaylı Okuma';
+      } else if (readingData.reading_type?.includes('WRITTEN')) {
+        return '📝 Yazılı Okuma';
+      } else {
+        return '📄 Standart Okuma';
       }
     };
 
@@ -258,16 +221,54 @@ class EmailService {
       }
     };
 
-    // Seçilen kartları listele
-    const selectedCards = Array.isArray(readingData.cards)
-      ? readingData.cards
-      : [];
+    // Seçilen kartları listele - Yorumları ile birlikte
+    const selectedCards = Array.isArray(readingData.cards) ? readingData.cards : [];
+    
+    // Kartların yorumlarını çıkar
+    const getCardInterpretation = (cardIndex: number, cardName: string) => {
+      const interpretation = readingData.interpretation || '';
+      const lines = interpretation.split('\n');
+      const cardSection = lines.find(
+        (line: string) =>
+          line.includes(`${cardIndex + 1}.`) &&
+          line.includes(cardName)
+      );
+
+      if (cardSection) {
+        const sectionIndex = lines.findIndex((line: string) => line === cardSection);
+        const meaningLines = [];
+        for (let i = sectionIndex + 2; i < lines.length; i++) {
+          const currentLine = lines[i];
+          if (
+            !currentLine ||
+            currentLine.trim() === '' ||
+            currentLine.match(/^\*\*\d+\./) ||
+            currentLine.includes('**Aşk Hayatı Özeti**')
+          ) {
+            break;
+          }
+          meaningLines.push(currentLine.trim());
+        }
+        return meaningLines.join(' ').trim();
+      }
+      return 'Yorum bulunamadı.';
+    };
+
     const cardsList = selectedCards
-      .map(
-        (card: any, index: number) =>
-          `${index + 1}. ${card.nameTr || card.name} ${card.isReversed ? '(Ters)' : '(Düz)'}`
-      )
-      .join('<br>');
+      .map((card: any, index: number) => {
+        const interpretation = getCardInterpretation(index, card.nameTr || card.name);
+        return `
+          <div style="background: #f8fafc; padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 4px solid #8b5cf6;">
+            <h4 style="margin: 0 0 8px 0; color: #1f2937; font-size: 14px;">
+              ${index + 1}. ${card.nameTr || card.name} ${card.isReversed ? '(Ters)' : '(Düz)'}
+            </h4>
+            <p style="margin: 0; color: #374151; font-size: 13px; line-height: 1.5;">
+              ${interpretation}
+            </p>
+          </div>
+        `;
+      })
+      .join('');
 
     // Kullanıcı sorularını al
     const userQuestions = readingData.questions?.questions || [];
@@ -283,7 +284,7 @@ class EmailService {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
           body { 
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
             line-height: 1.6; 
             color: #1a1a1a; 
             margin: 0; 
@@ -404,7 +405,7 @@ class EmailService {
             </div>
             
             <div class="section user-info">
-              <h3>👤 Kullanıcı Bilgileri</h3>
+              <h3>👤 KULLANICI BİLGİLERİ</h3>
               <div class="info-row">
                 <span class="info-label">Ad Soyad:</span> 
                 <span class="info-value">${userName} ${userSurname}</span>
@@ -424,7 +425,7 @@ class EmailService {
             </div>
             
             <div class="section reading-info">
-              <h3>🔮 Okuma Detayları</h3>
+              <h3>🔮 OKUMA DETAYLARI</h3>
               <div class="info-row">
                 <span class="info-label">Okuma Türü:</span> 
                 <span class="info-value">${getReadingTypeText(readingData.reading_type)}</span>
@@ -456,8 +457,8 @@ class EmailService {
             </div>
             
             <div class="section cards-info">
-              <h3>🎴 Seçilen Kartlar (${selectedCards.length} kart)</h3>
-              <div class="info-value" style="text-align: left; line-height: 1.8;">
+              <h3>🎴 SEÇİLEN KARTLAR VE ANLAMLARI (${selectedCards.length} kart)</h3>
+              <div style="text-align: left; line-height: 1.8;">
                 ${cardsList || 'Kart bilgisi bulunamadı'}
               </div>
             </div>
@@ -466,7 +467,7 @@ class EmailService {
               questionsList
                 ? `
             <div class="section questions-info">
-              <h3>❓ Kullanıcı Soruları</h3>
+              <h3>❓ SORULAR VE CEVAPLAR</h3>
               <div class="info-value" style="text-align: left; line-height: 1.8;">
                 ${questionsList}
               </div>
@@ -476,7 +477,7 @@ class EmailService {
             }
             
             <div class="section communication-info">
-              <h3>📞 İletişim Bilgileri</h3>
+              <h3>📞 İLETİŞİM BİLGİLERİ</h3>
               <div class="info-row">
                 <span class="info-label">Tercih Edilen İletişim:</span> 
                 <span class="info-value">${getCommunicationPreference()}</span>
@@ -489,13 +490,6 @@ class EmailService {
                 <span class="info-label">Telefon:</span> 
                 <span class="info-value">${phoneNumber}</span>
               </div>
-            </div>
-            
-            <div style="background: #f0f9ff; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #0ea5e9;">
-              <h4 style="margin: 0 0 10px 0; color: #0c4a6e;">📎 Ekli Dosyalar</h4>
-              <p style="margin: 5px 0; color: #075985;">• Detaylı tarot okuma raporu (PDF)</p>
-              <p style="margin: 5px 0; color: #075985;">• Numeroloji analizi (PDF)</p>
-              ${getReadingFormat().includes('Sesli') ? '<p style="margin: 5px 0; color: #075985;">• Sesli okuma kaydı (MP3)</p>' : ''}
             </div>
             
             <div style="background: #fef2f2; padding: 15px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ef4444;">

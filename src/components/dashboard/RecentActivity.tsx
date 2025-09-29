@@ -17,6 +17,7 @@ import {
   StarIcon,
 } from 'lucide-react';
 import { useTranslations } from '@/hooks/useTranslations';
+import { getReadingTitle } from '@/utils/dashboard-utils';
 
 interface RecentActivityProps {
   recentReadings: Reading[];
@@ -91,7 +92,7 @@ export default function RecentActivity({
                     className={`p-3 rounded-lg transition-all duration-200 group-hover:scale-110 ${
                       reading.reading_type.includes('LOVE')
                         ? 'bg-purple/20 group-hover:bg-purple/30'
-                        : reading.reading_type.includes('GENERAL') || reading.reading_type.includes('THREE_CARD')
+                        : reading.reading_type.includes('GENERAL, SITUATION_ANALYSIS, PROBLEM_SOLVING') || reading.reading_type.includes('THREE_CARD')
                           ? 'bg-green/20 group-hover:bg-green/30'
                           : reading.reading_type.includes('CAREER')
                             ? 'bg-blue/20 group-hover:bg-blue/30'
@@ -111,7 +112,10 @@ export default function RecentActivity({
                   {/* Okuma bilgileri */}
                   <div className='flex-1 min-w-0'>
                     <p className='text-sm font-medium text-text-celestial truncate group-hover:text-gold transition-colors'>
-                      {reading.title}
+                      {reading.title && reading.title.includes('.') 
+                        ? t(reading.title, reading.title)
+                        : t(`tarot.${reading.reading_type}.data.detailedTitle`, getReadingTitle(reading.reading_type))
+                      }
                     </p>
                     <div className='flex items-center space-x-3 text-xs text-text-muted'>
                       <div className='flex items-center space-x-1'>
@@ -124,7 +128,7 @@ export default function RecentActivity({
                         </div>
                       )}
                       <div className='px-2 py-1 rounded-full bg-gold/20 text-gold border border-gold/30 text-xs font-medium'>
-                        {reading.cost_credits || 0} kredi
+                        {reading.cost_credits || 0} {t('common.credits', 'kredi')}
                       </div>
                     </div>
                   </div>
@@ -134,7 +138,7 @@ export default function RecentActivity({
                     <button
                       onClick={() => setSelectedReading(reading)} // Modal aç
                       className='p-2 text-text-muted hover:text-gold hover:bg-gold/10 rounded-lg transition-all duration-200 hover:scale-110'
-                      title='Okumayı Görüntüle'
+                      title={t('dashboard.viewReading', 'Okumayı Görüntüle')}
                     >
                       <Eye className='h-4 w-4' />
                     </button>
@@ -142,7 +146,7 @@ export default function RecentActivity({
                     <button
                       onClick={() => downloadReading(reading)} // İndirme başlat
                       className='p-2 text-text-muted hover:text-success hover:bg-success/10 rounded-lg transition-all duration-200 hover:scale-110'
-                      title='Okumayı İndir'
+                      title={t('dashboard.downloadReading', 'Okumayı İndir')}
                     >
                       <Download className='h-4 w-4' />
                     </button>
@@ -154,13 +158,13 @@ export default function RecentActivity({
               {recentReadings.length > 5 && (
                 <div className='text-center pt-4 border-t border-cosmic-fog'>
                   <p className='text-sm text-text-muted mb-2'>
-                    +{recentReadings.length - 5} okuma daha var
+                    +{recentReadings.length - 5} {t('dashboard.moreReadings', 'okuma daha var')}
                   </p>
                   <a
                     href={routes.readings}
                     className='text-gold hover:text-gold/80 text-sm font-medium'
                   >
-                    Tüm okumaları görüntüle →
+                    {t('dashboard.viewAllReadings', 'Tüm okumaları görüntüle')} →
                   </a>
                 </div>
               )}
@@ -175,17 +179,16 @@ export default function RecentActivity({
                 </div>
               </div>
               <h3 className='text-lg font-medium text-text-celestial mb-2'>
-                ✨ Mistik Yolculuğunuza Hoş Geldiniz!
+                ✨ {t('dashboard.welcomeMessage', 'Mistik Yolculuğunuza Hoş Geldiniz!')}
               </h3>
               <p className='text-sm text-text-muted mb-6 max-w-sm mx-auto'>
-                Henüz okuma yapılmamış. İlk mistik deneyiminizi yaşamak için bir
-                okuma başlatın ve kaderinizin sırlarını keşfedin.
+                {t('dashboard.noReadingsYet', 'Henüz okuma yapılmamış. İlk mistik deneyiminizi yaşamak için bir okuma başlatın ve kaderinizin sırlarını keşfedin.')}
               </p>
               <a
                 href='/tarot'
                 className='btn btn-primary hover:scale-105 transition-transform duration-200'
               >
-                🔮 İlk Okumamı Başlat
+                🔮 {t('dashboard.startFirstReading', 'İlk Okumamı Başlat')}
               </a>
             </div>
           )}
@@ -209,9 +212,9 @@ export default function RecentActivity({
             <div className='flex items-center justify-between'>
               <div className='flex items-center space-x-2'>
                 <Clock className='h-4 w-4 text-success' />
-                <span className='text-sm font-medium text-text-muted'>
-                  Bugünkü Okumalar
-                </span>
+              <span className='text-sm font-medium text-text-muted'>
+                {t('dashboard.todayReadings', 'Bugünkü Okumalar')}
+              </span>
               </div>
               <span className='text-sm font-semibold text-text-celestial'>
                 {todayReadings}
@@ -229,7 +232,7 @@ export default function RecentActivity({
               <div className='flex items-center space-x-2'>
                 <Target className='h-4 w-4 text-info' />
                 <span className='text-sm font-medium text-text-muted'>
-                  Bu Hafta
+                  {t('dashboard.thisWeek', 'Bu Hafta')}
                 </span>
               </div>
               <span className='text-sm font-semibold text-text-celestial'>
@@ -250,7 +253,7 @@ export default function RecentActivity({
               <div className='flex items-center space-x-2'>
                 <LevelIcon className={`h-4 w-4 ${userLevel.color}`} />
                 <span className='text-sm font-medium text-text-muted'>
-                  Mistik Seviye
+                  {t('dashboard.mysticLevel', 'Mistik Seviye')}
                 </span>
               </div>
               <span className={`text-sm font-semibold ${userLevel.color}`}>
@@ -269,7 +272,7 @@ export default function RecentActivity({
               <div className='bg-gold/10 border border-gold/20 rounded-lg p-4 text-center'>
                 <Sparkles className='h-6 w-6 text-gold mx-auto mb-2' />
                 <p className='text-sm text-gold font-medium'>
-                  🌟 İlk okumanızı yapın ve seviyenizi keşfedin!
+                  🌟 {t('dashboard.discoverLevel', 'İlk okumanızı yapın ve seviyenizi keşfedin!')}
                 </p>
               </div>
             )}
@@ -278,7 +281,7 @@ export default function RecentActivity({
               <div className='bg-green/10 border border-green/20 rounded-lg p-4 text-center'>
                 <Heart className='h-6 w-6 text-green mx-auto mb-2' />
                 <p className='text-sm text-green font-medium'>
-                  💫 Harika gidiyorsunuz! Devam edin!
+                  💫 {t('dashboard.keepGoing', 'Harika gidiyorsunuz! Devam edin!')}
                 </p>
               </div>
             )}
@@ -287,7 +290,7 @@ export default function RecentActivity({
               <div className='bg-purple/10 border border-purple/20 rounded-lg p-4 text-center'>
                 <StarIcon className='h-6 w-6 text-purple mx-auto mb-2' />
                 <p className='text-sm text-purple font-medium'>
-                  ✨ Mistik yolculuğunuzda ilerliyorsunuz!
+                  ✨ {t('dashboard.mysticJourney', 'Mistik yolculuğunuzda ilerliyorsunuz!')}
                 </p>
               </div>
             )}
@@ -297,7 +300,7 @@ export default function RecentActivity({
               href={routes.statistics}
               className='btn btn-primary w-full hover:scale-105 transition-transform duration-200'
             >
-              📊 Detaylı İstatistikler
+              📊 {t('dashboard.detailedStatistics', 'Detaylı İstatistikler')}
             </a>
           </div>
         </div>

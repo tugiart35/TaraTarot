@@ -35,7 +35,6 @@ interface Reading {
   admin_notes?: string;
   // Hesaplanan alanlar
   title: string;
-  summary: string;
   cost_credits: number;
   spread_name: string;
   format?: 'audio' | 'written' | 'simple'; // Okuma formatı
@@ -73,7 +72,7 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
   const [selectedReading, setSelectedReading] = useState<Reading | null>(null);
   const [showModal, setShowModal] = useState(false);
 
-  const fetchReadings = useCallback(async () => {
+  const fetchReadings = useCallback(async (resetCursor = false) => {
     if (!user) {
       return;
     }
@@ -105,10 +104,10 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
       // Type filter
       if (filters.type !== 'all') {
         const typeMapping: Record<string, string[]> = {
-          love: ['LOVE_SPREAD_DETAILED', 'LOVE_SPREAD_WRITTEN'],
-          general: ['GENERAL_SPREAD', 'THREE_CARD_SPREAD'],
-          career: ['CAREER_SPREAD'],
-          numerology: ['NUMEROLOGY_READING'],
+          love: ['love', 'new-lover-spread', 'relationship-problems', 'relationship-analysis', 'marriage'],
+          general: ['general', 'tarot', 'situation-analysis', 'problem-solving' ],
+          career: ['career', 'money-spread'],
+          numerology: ['numerology'],
         };
 
         const types = typeMapping[filters.type];
@@ -146,8 +145,9 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
 
       // Keyset pagination
       const limit = 20;
-      if (cursor) {
-        query = query.lt('created_at', cursor);
+      const currentCursor = resetCursor ? null : cursor;
+      if (currentCursor) {
+        query = query.lt('created_at', currentCursor);
       }
       const { data, error } = await query
         .order('created_at', { ascending: false })
@@ -159,44 +159,49 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
 
       if (data) {
         const processedReadings: Reading[] = data.map((reading: any) => {
-          // Okuma türüne göre başlık oluştur
-          const getReadingTitle = (readingType: string): string => {
-            switch (readingType) {
-              case 'LOVE_SPREAD_DETAILED':
-                return t(
-                  'readings.loveReadingDetailed',
-                  'Aşk Açılımı - Sesli Detaylı Okuma'
-                );
-              case 'LOVE_SPREAD_WRITTEN':
-                return t(
-                  'readings.loveReadingWritten',
-                  'Aşk Açılımı - Yazılı Okuma'
-                );
-              case 'LOVE_SPREAD_SIMPLE':
-                return t(
-                  'readings.loveReadingSimple',
-                  'Aşk Açılımı - Basit Okuma'
-                );
-              case 'GENERAL_SPREAD':
+          // Başlık oluştur - önce veritabanındaki title'ı çevirmeye çalış, yoksa reading_type'a göre oluştur
+          const getReadingTitle = (reading: any): string => {
+            // Eğer title bir translation key ise çevirmeye çalış
+            if (reading.title && reading.title.includes('.')) {
+              const translatedTitle = t(reading.title, undefined);
+              // Eğer çeviri başarılı olduysa (null döndürmediyse) kullan
+              if (translatedTitle && translatedTitle !== reading.title) {
+                return translatedTitle;
+              }
+            }
+            
+            // Çeviri başarısız olduysa reading_type'a göre başlık oluştur
+            switch (reading.reading_type) {
+              case 'love':
+                return t('readings.loveReading', 'Aşk Açılımı');
+              case 'new-lover-spread':
+                return t('readings.newLoverReading', 'Yeni Aşk Açılımı');
+              case 'relationship-problems':
+                return t('readings.relationshipProblemsReading', 'İlişki Sorunları Açılımı');
+              case 'relationship-analysis':
+                return t('readings.relationshipAnalysisReading', 'İlişki Analizi Açılımı');
+              case 'marriage':
+                return t('readings.marriageReading', 'Evlilik Açılımı');
+              case 'general':
                 return t('readings.generalReading', 'Genel Okuma');
-              case 'THREE_CARD_SPREAD':
-                return t('readings.threeCardReading', '3 Kart Okuması');
-              case 'CAREER_SPREAD':
+              case 'tarot':
+                return t('readings.tarotReading', 'Tarot Okuması');
+              case 'career':
                 return t('readings.careerReading', 'Kariyer Okuması');
-              case 'NUMEROLOGY_READING':
+              case 'money-spread':
+                return t('readings.moneyReading', 'Para Açılımı');
+              case 'numerology':
                 return t('readings.numerologyReading', 'Numeroloji Okuması');
+              case 'situation-analysis':
+                return t('readings.situationAnalysisReading', 'Durum Analizi Açılımı');
+              case 'problem-solving':
+                return t('readings.problemSolvingReading', 'Problem Çözme Açılımı');
               default:
-                return (
-                  reading.title || t('readings.mysticReading', 'Mistik Okuma')
-                );
+                return reading.title || t('readings.mysticReading', 'Mistik Okuma');
             }
           };
 
-          // Özet oluştur (interpretation'dan ilk 100 karakter)
-          const summary =
-            reading.interpretation.length > 100
-              ? reading.interpretation.substring(0, 100) + '...'
-              : reading.interpretation;
+          // Summary alanı kaldırıldı - kullanıcı istemediği için
 
           // Kredi maliyeti - veritabanından gelen değeri kullan, yoksa READING_CREDITS'ten al
           const cost_credits =
@@ -206,25 +211,39 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
             ] ||
             50;
 
-          // Spread adı - veritabanından gelen değeri kullan veya varsayılan oluştur
-          const getSpreadName = (readingType: string): string => {
-            switch (readingType) {
-              case 'LOVE_SPREAD_DETAILED':
-              case 'LOVE_SPREAD_WRITTEN':
+          // Spread adı - önce veritabanındaki spread_name'i çevirmeye çalış, yoksa reading_type'a göre oluştur
+          const getSpreadName = (reading: any): string => {
+            // Eğer spread_name bir translation key ise çevirmeye çalış
+            if (reading.spread_name && reading.spread_name.includes('.')) {
+              const translatedSpreadName = t(reading.spread_name, undefined);
+              // Eğer çeviri başarılı olduysa (null döndürmediyse) kullan
+              if (translatedSpreadName && translatedSpreadName !== reading.spread_name) {
+                return translatedSpreadName;
+              }
+            }
+            
+            // Çeviri başarısız olduysa reading_type'a göre spread adı oluştur
+            switch (reading.reading_type) {
+              case 'love':
+              case 'new-lover-spread':
+              case 'relationship-problems':
+              case 'relationship-analysis':
+              case 'marriage':
                 return t('readings.loveSpread', 'Aşk Yayılımı');
-              case 'GENERAL_SPREAD':
+              case 'general':
+              case 'tarot':
                 return t('readings.generalSpread', 'Genel Yayılım');
-              case 'THREE_CARD_SPREAD':
-                return t('readings.threeCardSpread', '3 Kart Yayılımı');
-              case 'CAREER_SPREAD':
+              case 'career':
+              case 'money-spread':
                 return t('readings.careerSpread', 'Kariyer Yayılımı');
-              case 'NUMEROLOGY_READING':
+              case 'numerology':
                 return t('readings.numerologyAnalysis', 'Numeroloji Analizi');
+              case 'problem-solving':
+                return t('readings.problemSolvingSpread', 'Problem Çözme Yayılımı');
+              case 'situation-analysis':
+                return t('readings.situationAnalysisSpread', 'Durum Analizi Yayılımı');
               default:
-                return (
-                  reading.spread_name ||
-                  t('readings.mysticSpread', 'Mistik Yayılım')
-                );
+                return reading.spread_name || t('readings.mysticSpread', 'Mistik Yayılım');
             }
           };
 
@@ -238,15 +257,14 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
             status: reading.status,
             created_at: reading.created_at,
             updated_at: reading.updated_at,
-            title: getReadingTitle(reading.reading_type),
-            summary,
+            title: getReadingTitle(reading),
             cost_credits,
-            spread_name: getSpreadName(reading.reading_type),
+            spread_name: getSpreadName(reading),
             format: getReadingFormat(reading.reading_type, cost_credits),
           };
         });
 
-        if (!cursor) {
+        if (resetCursor || !currentCursor) {
           setReadings(processedReadings);
         } else {
           setReadings(prev => [...prev, ...processedReadings]);
@@ -287,20 +305,27 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
         router.replace(`/${locale}/auth`);
         return;
       }
-      fetchReadings();
+      fetchReadings(true);
     }
-  }, [authLoading, user, router, locale, fetchReadings]);
+  }, [authLoading, user, router, locale]);
+
+  // Filtre değişikliklerinde okumaları yeniden yükle
+  useEffect(() => {
+    if (user && !authLoading) {
+      fetchReadings(true);
+    }
+  }, [filters, user, authLoading]);
 
   const handleFilterChange = (key: keyof ReadingFilters, value: string) => {
     setFilters(prev => ({ ...prev, [key]: value }));
     setCursor(null);
     setReadings([]);
+    setHasMore(true);
   };
 
   const loadMore = () => {
     if (!loading && hasMore) {
-      // Trigger next page fetch; cursor is updated after fetch
-      setCursor(prev => prev ?? new Date().toISOString());
+      fetchReadings(false);
     }
   };
 
@@ -441,7 +466,7 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
                   {t('readings.loveReadings', 'Aşk Okumaları')}
                 </p>
                 <p className='text-3xl font-black bg-gradient-to-r from-pink-400 to-rose-400 bg-clip-text text-transparent'>
-                  {readings.filter(r => r.reading_type.includes('LOVE')).length}
+                  {readings.filter(r => r.reading_type === 'love' || r.reading_type === 'new-lover-spread' || r.reading_type === 'relationship-problems' || r.reading_type === 'relationship-analysis' || r.reading_type === 'marriage').length}
                 </p>
               </div>
               <div className='p-3 bg-gradient-to-br from-pink-500 to-rose-500 rounded-xl group-hover:scale-110 transition-transform duration-300 shadow-lg'>
@@ -460,8 +485,10 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
                   {
                     readings.filter(
                       r =>
-                        r.reading_type.includes('GENERAL') ||
-                        r.reading_type.includes('THREE_CARD')
+                        r.reading_type === 'general' ||
+                        r.reading_type === 'tarot' ||
+                        r.reading_type === 'situation-analysis' ||
+                        r.reading_type === 'problem-solving'
                     ).length
                   }
                 </p>
@@ -555,6 +582,7 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
                 });
                 setCursor(null);
                 setReadings([]);
+                setHasMore(true);
               }}
               className='px-6 py-3 bg-gradient-to-r from-gold to-yellow-500 hover:from-gold/80 hover:to-yellow-500/80 text-night font-semibold rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gold/20'
             >
@@ -576,19 +604,18 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
                     <div className='flex items-center justify-between mb-6'>
                       <div
                         className={`p-3 rounded-xl ${
-                          reading.reading_type.includes('LOVE')
+                          reading.reading_type === 'love' || reading.reading_type === 'new-lover-spread' || reading.reading_type === 'relationship-problems' || reading.reading_type === 'relationship-analysis' || reading.reading_type === 'marriage'
                             ? 'bg-gradient-to-br from-pink-500 to-rose-500'
-                            : reading.reading_type.includes('GENERAL') ||
-                                reading.reading_type.includes('THREE_CARD')
+                            : reading.reading_type === 'general' || reading.reading_type === 'tarot'
                               ? 'bg-gradient-to-br from-blue-500 to-cyan-500'
-                              : reading.reading_type.includes('CAREER')
+                              : reading.reading_type === 'career' || reading.reading_type === 'money-spread'
                                 ? 'bg-gradient-to-br from-emerald-500 to-teal-500'
                                 : 'bg-gradient-to-br from-purple-500 to-indigo-500'
                         } group-hover:scale-110 transition-transform duration-300 shadow-lg`}
                       >
-                        {reading.reading_type.includes('LOVE') ? (
+                        {reading.reading_type === 'love' || reading.reading_type === 'new-lover-spread' || reading.reading_type === 'relationship-problems' || reading.reading_type === 'relationship-analysis' || reading.reading_type === 'marriage' ? (
                           <Heart className='h-6 w-6 text-white' />
-                        ) : reading.reading_type.includes('NUMEROLOGY') ? (
+                        ) : reading.reading_type === 'numerology' ? (
                           <Hash className='h-6 w-6 text-white' />
                         ) : (
                           <Star className='h-6 w-6 text-white' />
@@ -613,9 +640,6 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
                     <h3 className='font-bold text-white mb-3 line-clamp-2 text-lg'>
                       {reading.title}
                     </h3>
-                    <p className='text-sm text-lavender/80 mb-4 line-clamp-3 leading-relaxed'>
-                      {reading.summary}
-                    </p>
 
                     <div className='flex items-center justify-between text-xs text-lavender/70 mb-6'>
                       <span>{formatDate(reading.created_at)}</span>
@@ -646,19 +670,18 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
                       <div className='flex items-center space-x-6'>
                         <div
                           className={`p-4 rounded-xl ${
-                            reading.reading_type.includes('LOVE')
+                            reading.reading_type === 'love' || reading.reading_type === 'new-lover-spread' || reading.reading_type === 'relationship-problems' || reading.reading_type === 'relationship-analysis' || reading.reading_type === 'marriage'
                               ? 'bg-gradient-to-br from-pink-500 to-rose-500'
-                              : reading.reading_type.includes('GENERAL') ||
-                                  reading.reading_type.includes('THREE_CARD')
+                              : reading.reading_type === 'general' || reading.reading_type === 'tarot'
                                 ? 'bg-gradient-to-br from-blue-500 to-cyan-500'
-                                : reading.reading_type.includes('CAREER')
+                                : reading.reading_type === 'career' || reading.reading_type === 'money-spread'
                                   ? 'bg-gradient-to-br from-emerald-500 to-teal-500'
                                   : 'bg-gradient-to-br from-purple-500 to-indigo-500'
                           } group-hover:scale-110 transition-transform duration-300 shadow-lg`}
                         >
-                          {reading.reading_type.includes('LOVE') ? (
+                          {reading.reading_type === 'love' || reading.reading_type === 'new-lover-spread' || reading.reading_type === 'relationship-problems' || reading.reading_type === 'relationship-analysis' || reading.reading_type === 'marriage' ? (
                             <Heart className='h-6 w-6 text-white' />
-                          ) : reading.reading_type.includes('NUMEROLOGY') ? (
+                          ) : reading.reading_type === 'numerology' ? (
                             <Hash className='h-6 w-6 text-white' />
                           ) : (
                             <Star className='h-6 w-6 text-white' />
@@ -669,9 +692,6 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
                           <h3 className='font-bold text-white mb-2 text-lg'>
                             {reading.title}
                           </h3>
-                          <p className='text-sm text-lavender/80 mb-3 line-clamp-2 leading-relaxed'>
-                            {reading.summary}
-                          </p>
 
                           <div className='flex items-center space-x-4 text-xs text-lavender/70'>
                             <span>{formatDate(reading.created_at)}</span>

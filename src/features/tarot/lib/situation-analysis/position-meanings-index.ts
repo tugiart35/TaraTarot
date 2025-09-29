@@ -158,10 +158,11 @@ export function getSituationAnalysisMeaningByCardAndPosition(
   // Kart ismini İngilizce'ye çevir - önce nameTr'yi dene, sonra name'i
   const englishCardName =
     cardNameMapping[card.nameTr] || cardNameMapping[card.name] || card.name;
-  console.log('🔄 Card name mapping:', {
+  console.log('🔄 Situation Analysis Card name mapping:', {
     original: card.nameTr,
     originalName: card.name,
     mapped: englishCardName,
+    position: position
   });
 
   // Pozisyon özel anlamları kontrol et
@@ -199,6 +200,11 @@ export function getSituationAnalysisMeaningByCardAndPosition(
   }
 
   if (positionMeaning) {
+    console.log('✅ Situation Analysis: Found position meaning for', {
+      cardName: card.nameTr,
+      position: position,
+      meaningId: positionMeaning.id
+    });
     const result = {
       ...positionMeaning,
       cardName: card.nameTr, // cardName alanını ekle
@@ -229,10 +235,11 @@ export function getSituationAnalysisMeaningByCardAndPosition(
     reversed: isReversed ? baseMeaning.upright : baseMeaning.reversed,
   };
 
-  console.log(
-    '⚠️ Returning fallback meaning:',
-    fallbackResult.upright.substring(0, 50) + '...'
-  );
+  console.log('⚠️ Situation Analysis: Using fallback meaning for', {
+    cardName: card.nameTr,
+    position: position,
+    meaningPreview: fallbackResult.upright.substring(0, 50) + '...'
+  });
   return fallbackResult;
 }
 

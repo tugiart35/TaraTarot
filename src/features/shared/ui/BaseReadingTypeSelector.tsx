@@ -217,6 +217,8 @@ export default function BaseReadingTypeSelector({
     if (type === readingTypes.DETAILED || type === readingTypes.WRITTEN) {
       // Kullanıcı giriş yapmamışsa butonları devre dışı bırak
       if (!isAuthenticated) {
+        // Kullanıcıya giriş yapması gerektiğini bildir
+        console.warn('Kullanıcı giriş yapmamış - sesli/yazılı okuma için giriş gerekli');
         return;
       }
 
@@ -226,6 +228,7 @@ export default function BaseReadingTypeSelector({
         !detailedCredits.creditStatus.hasEnoughCredits
       ) {
         // Kredi yetersiz - kredi bilgi modalını aç
+        console.warn(`Yetersiz kredi - ${detailedCredits.creditStatus.requiredCredits} kredi gerekli`);
         if (_onCreditInfoClick) {
           _onCreditInfoClick();
         }
@@ -237,6 +240,7 @@ export default function BaseReadingTypeSelector({
         !writtenCredits.creditStatus.hasEnoughCredits
       ) {
         // Kredi yetersiz - kredi bilgi modalını aç
+        console.warn(`Yetersiz kredi - ${writtenCredits.creditStatus.requiredCredits} kredi gerekli`);
         if (_onCreditInfoClick) {
           _onCreditInfoClick();
         }
@@ -244,6 +248,7 @@ export default function BaseReadingTypeSelector({
       }
 
       // Kredi yeterli - okuma türünü seç ve akışa devam et
+      console.log(`${type} okuma tipi seçildi - kredi yeterli`);
       onTypeSelect(type);
       // Okuma tipi seçildiğinde parent bileşene bildir
       if (onReadingTypeSelected) {
@@ -251,6 +256,7 @@ export default function BaseReadingTypeSelector({
       }
     } else {
       // Basit okuma için direkt seç
+      console.log('Basit okuma seçildi');
       onTypeSelect(type);
       // Okuma tipi seçildiğinde parent bileşene bildir
       if (onReadingTypeSelected) {
@@ -286,7 +292,11 @@ export default function BaseReadingTypeSelector({
             }`}
         >
           <span className='flex items-center space-x-1'>
-            <span className='text-sm sm:text-base'>{simpleIcon}</span>
+            {disabled && selectedType === readingTypes.SIMPLE ? (
+              <span className='animate-spin text-sm'>⏳</span>
+            ) : (
+              <span className='text-sm sm:text-base'>{simpleIcon}</span>
+            )}
             <span className='hidden sm:inline'>{defaultSimpleText}</span>
             <span className='sm:hidden'>{t('reading.types.simpleShort')}</span>
           </span>
@@ -318,7 +328,11 @@ export default function BaseReadingTypeSelector({
           }
         >
           <span className='flex items-center space-x-1'>
-            <span className='text-sm sm:text-base'>{detailedIcon}</span>
+            {disabled && selectedType === readingTypes.DETAILED ? (
+              <span className='animate-spin text-sm'>⏳</span>
+            ) : (
+              <span className='text-sm sm:text-base'>{detailedIcon}</span>
+            )}
             <span className='hidden sm:inline'>{defaultDetailedText}</span>
             <span className='sm:hidden'>
               {t('reading.types.detailedShort')}
@@ -357,7 +371,11 @@ export default function BaseReadingTypeSelector({
           }
         >
           <span className='flex items-center space-x-1'>
-            <span className='text-sm sm:text-base'>{writtenIcon}</span>
+            {disabled && selectedType === readingTypes.WRITTEN ? (
+              <span className='animate-spin text-sm'>⏳</span>
+            ) : (
+              <span className='text-sm sm:text-base'>{writtenIcon}</span>
+            )}
             <span className='hidden sm:inline'>{defaultWrittenText}</span>
             <span className='sm:hidden'>{t('reading.types.writtenShort')}</span>
             {isAuthenticated && (
@@ -395,15 +413,25 @@ export default function BaseReadingTypeSelector({
             🔒 Sesli ve yazılı okumalar için giriş yapın
           </span>
         )}
-        {isAuthenticated &&
-          (!detailedCredits.creditStatus.hasEnoughCredits ||
-            !writtenCredits.creditStatus.hasEnoughCredits) && (
-            <span className={`text-xs ${currentTheme.messages.adminRequired}`}>
-              💳 Sesli okuma: {detailedCredits.creditStatus.requiredCredits}{' '}
-              kredi | Yazılı okuma:{' '}
-              {writtenCredits.creditStatus.requiredCredits} kredi
-            </span>
-          )}
+        {isAuthenticated && (
+          <div className="flex flex-col gap-1 text-xs">
+            {!detailedCredits.creditStatus.hasEnoughCredits && (
+              <span className={`${currentTheme.messages.adminRequired}`}>
+                💳 Sesli okuma: {detailedCredits.creditStatus.requiredCredits} kredi gerekli
+              </span>
+            )}
+            {!writtenCredits.creditStatus.hasEnoughCredits && (
+              <span className={`${currentTheme.messages.adminRequired}`}>
+                💳 Yazılı okuma: {writtenCredits.creditStatus.requiredCredits} kredi gerekli
+              </span>
+            )}
+            {detailedCredits.creditStatus.hasEnoughCredits && writtenCredits.creditStatus.hasEnoughCredits && (
+              <span className="text-green-400">
+                ✅ Tüm okuma türleri için yeterli kredi mevcut
+              </span>
+            )}
+          </div>
+        )}
       </div>
 
       {/* CreditInfoModal - kredi bilgilendirmesi için - Archived */}

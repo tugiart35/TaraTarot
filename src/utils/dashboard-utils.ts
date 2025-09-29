@@ -226,6 +226,12 @@ export function getReadingTitle(readingType: string): string {
       return 'Kariyer Açılımı - Sesli Okuma';
     case 'NUMEROLOGY_READING':
       return 'Numeroloji Okuması';
+    case 'PROBLEM_SOLVING_SPREAD':
+      return 'Problem Çözme Açılımı';
+    case 'SITUATION_ANALYSIS_SPREAD':
+      return 'Durum Analizi Açılımı';
+    case 'RELATIONSHIP_ANALYSIS_SPREAD':
+      return 'İlişki Analizi Açılımı';
     // Eski format desteği
     case 'love':
       return 'Aşk Açılımı';
@@ -243,6 +249,10 @@ export function getReadingTitle(readingType: string): string {
       return 'İlişki Problemleri';
     case 'problem-solving':
       return 'Problem Çözme Açılımı';
+    case 'problem_solving':
+      return 'Problem Çözme Açılımı';
+      case 'money':
+      return 'Para Açılımı';
     case 'situation-analysis':
       return 'Durum Analizi';
     case 'written':
@@ -260,17 +270,61 @@ export function getReadingTitle(readingType: string): string {
 
 
 // Okuma formatını belirle (sesli/yazılı/basit)
-export function getReadingFormat(readingType: string, costCredits?: number): 'audio' | 'written' | 'simple' {
-  // Önce cost_credits'e göre format belirle (daha güvenilir)
+export function getReadingFormat(readingType: string, costCredits?: number, title?: string, metadata?: any): 'audio' | 'written' | 'simple' {
+  // Önce metadata'dan readingFormat bilgisini kontrol et (en güvenilir)
+  if (metadata?.readingFormat) {
+    const format = metadata.readingFormat.toLowerCase();
+    if (format === 'detailed') {
+      return 'audio';
+    }
+    if (format === 'written') {
+      return 'written';
+    }
+    if (format === 'simple') {
+      return 'simple';
+    }
+  }
+
+  // Sonra title alanındaki format bilgisini kontrol et
+  if (title) {
+    const titleUpper = title.toUpperCase();
+    if (titleUpper.includes('VOICE') || titleUpper.includes('SESLİ')) {
+      return 'audio';
+    }
+    if (titleUpper.includes('WRITTEN') || titleUpper.includes('YAZILI')) {
+      return 'written';
+    }
+    if (titleUpper.includes('SIMPLE') || titleUpper.includes('BASIT')) {
+      return 'simple';
+    }
+  }
+  
+  // Sonra reading_type'a göre format belirle
+  const type = readingType.toUpperCase();
+  
+  // WRITTEN okumalar
+  if (type.includes('WRITTEN')) {
+    return 'written';
+  }
+  
+  // DETAILED okumalar (sesli)
+  if (type.includes('DETAILED')) {
+    return 'audio';
+  }
+  
+  // SIMPLE okumalar
+  if (type.includes('SIMPLE') || type.includes('THREE_CARD')) {
+    return 'simple';
+  }
+  
+  // Fallback: cost_credits'e göre belirle
   if (costCredits) {
-    if (costCredits === 60) {
-      return 'written'; // 60 kredi = yazılı okuma (LOVE_SPREAD_WRITTEN)
-    } else if (costCredits === 70) {
-      return 'audio'; // 70 kredi = sesli detaylı okuma (LOVE_SPREAD_DETAILED)
-    } else if (costCredits <= 50) {
-      return 'simple'; // 50 ve altı = basit okuma
-    } else if (costCredits >= 80) {
-      return 'audio'; // 80+ kredi = detaylı sesli okumalar
+    if (costCredits <= 50) {
+      return 'simple';
+    } else if (costCredits >= 60 && costCredits <= 80) {
+      return 'written'; // Genellikle yazılı okumalar
+    } else if (costCredits >= 90) {
+      return 'audio'; // Genellikle sesli okumalar
     }
   }
   
@@ -369,7 +423,7 @@ export function downloadReading(reading: any) {
       interpretation: reading.interpretation,
       questions: reading.questions,
       date: new Date(reading.created_at).toLocaleDateString('tr-TR'),
-      cost_credits: getCreditCost(reading.reading_type),
+      cost_credits: reading.cost_credits || 50,
     };
 
     // JSON dosyası oluştur

@@ -78,53 +78,6 @@ export interface RelationshipAnalysisPositionMeaning {
   context: string;
   group: 'Majör Arkana' | 'Kupalar' | 'Kılıçlar' | 'Asalar' | 'Tılsımlar';
 }
-// Kart grubunu belirleme fonksiyonu
-function getCardGroup(
-  card: TarotCard | string
-): 'Majör Arkana' | 'Kupalar' | 'Kılıçlar' | 'Asalar' | 'Tılsımlar' {
-  if (typeof card === 'object') {
-    // TarotCard objesi ise
-    if (card.suit === 'major') {
-      return 'Majör Arkana';
-    }
-    if (card.suit === 'cups') {
-      return 'Kupalar';
-    }
-    if (card.suit === 'swords') {
-      return 'Kılıçlar';
-    }
-    if (card.suit === 'wands') {
-      return 'Asalar';
-    }
-    if (card.suit === 'pentacles') {
-      return 'Tılsımlar';
-    }
-    return 'Majör Arkana'; // fallback
-  } else {
-    // String ise
-    const name = card.toLowerCase();
-
-    if (
-      name.includes('kupalar') ||
-      name.includes('kadehler') ||
-      name.includes('pehara')
-    ) {
-      return 'Kupalar';
-    } else if (name.includes('kılıçlar') || name.includes('mačeva')) {
-      return 'Kılıçlar';
-    } else if (name.includes('asalar') || name.includes('štapova')) {
-      return 'Asalar';
-    } else if (
-      name.includes('tılsımlar') ||
-      name.includes('altınlar') ||
-      name.includes('pentakla')
-    ) {
-      return 'Tılsımlar';
-    } else {
-      return 'Majör Arkana';
-    }
-  }
-}
 /**
  * İlişki Analizi açılımında kartın pozisyonuna göre anlamını döndürür
  */
@@ -132,31 +85,11 @@ export function getRelationshipAnalysisMeaningByCardAndPosition(
   card: TarotCard,
   position: number,
   isReversed: boolean = false
-): RelationshipAnalysisPositionMeaning {
-  // Debug için console.log ekle
-  console.log('🔍 getRelationshipAnalysisMeaningByCardAndPosition called:', {
-    cardName: card.name,
-    cardNameTr: card.nameTr,
-    position,
-    isReversed,
-  });
+): RelationshipAnalysisPositionMeaning | null {
 
   // Pozisyon 1-7 arasında olmalı
   if (position < 1 || position > 7) {
-    console.log('❌ Invalid position:', position);
-    return {
-      id: `relationship-analysis-${position}-${card.id}-${isReversed ? 'reversed' : 'upright'}`,
-      position: 0,
-      card: card.name,
-      cardName: card.nameTr,
-      isReversed,
-      upright: card.meaningTr.upright,
-      reversed: card.meaningTr.reversed,
-      keywords: card.keywordsTr || card.keywords || [],
-      advice: 'Bu pozisyon için özel bir anlam tanımlanmamış.',
-      context: 'Tanımlanmamış pozisyon',
-      group: getCardGroup(card),
-    };
+    return null;
   }
 
   // Kart ismi mapping'ini al
@@ -165,11 +98,6 @@ export function getRelationshipAnalysisMeaningByCardAndPosition(
   // Kart ismini İngilizce'ye çevir - önce nameTr'yi dene, sonra name'i
   const englishCardName =
     cardNameMapping[card.nameTr] || cardNameMapping[card.name] || card.name;
-  console.log('🔄 Card name mapping:', {
-    original: card.nameTr,
-    originalName: card.name,
-    mapped: englishCardName,
-  });
 
   // Pozisyon özel anlamları kontrol et
   let positionMeaning = null;
@@ -205,7 +133,6 @@ export function getRelationshipAnalysisMeaningByCardAndPosition(
       break;
   }
 
-  console.log('🎯 Position meaning found:', positionMeaning ? 'YES' : 'NO');
 
   if (positionMeaning) {
     const result = {
@@ -214,38 +141,11 @@ export function getRelationshipAnalysisMeaningByCardAndPosition(
       upright: isReversed ? positionMeaning.reversed : positionMeaning.upright,
       reversed: isReversed ? positionMeaning.upright : positionMeaning.reversed,
     };
-    console.log(
-      '✅ Returning position-specific meaning:',
-      result.upright.substring(0, 50) + '...'
-    );
     return result;
   }
 
-  // Fallback: Genel kart anlamlarını döndür
-  const baseMeaning: RelationshipAnalysisPositionMeaning = {
-    id: `relationship-analysis-${position}-${card.id}-${isReversed ? 'reversed' : 'upright'}`,
-    position: position,
-    card: card.name,
-    cardName: card.nameTr,
-    isReversed,
-    upright: card.meaningTr.upright,
-    reversed: card.meaningTr.reversed,
-    keywords: card.keywordsTr || card.keywords || [],
-    context: `İlişki analizi açılımında ${position}. pozisyon (${relationshipAnalysisPositions[position as keyof typeof relationshipAnalysisPositions]?.title}) için ${card.nameTr} kartının anlamı`,
-    group: getCardGroup(card),
-  };
-
-  const fallbackResult = {
-    ...baseMeaning,
-    upright: isReversed ? baseMeaning.reversed : baseMeaning.upright,
-    reversed: isReversed ? baseMeaning.upright : baseMeaning.reversed,
-  };
-
-  console.log(
-    '⚠️ Returning fallback meaning:',
-    fallbackResult.upright.substring(0, 50) + '...'
-  );
-  return fallbackResult;
+  // Geçerli anlam bulunamadı, null döndür
+  return null;
 }
 
 // Pozisyon bilgileri ve açıklamaları
@@ -313,7 +213,7 @@ export const getRelationshipAnalysisMeaningByCardNameAndPosition = (
   cardName: string,
   position: number,
   isReversed: boolean = false
-): RelationshipAnalysisPositionMeaning | undefined => {
+): RelationshipAnalysisPositionMeaning | null => {
   // Bu fonksiyon TarotCard objesi gerektirir, bu yüzden mock bir obje oluşturuyoruz
   const mockCard: TarotCard = {
     id: 0,

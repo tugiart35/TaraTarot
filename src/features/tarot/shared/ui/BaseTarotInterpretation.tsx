@@ -5,6 +5,7 @@ import { useTranslations } from '@/hooks/useTranslations';
 import { BaseInterpretation } from '@/features/shared/ui';
 import { TarotConfig } from '../types/tarot-config.types';
 import { TarotCard, PositionInfo } from '@/types/tarot';
+import { CardMeaningData } from '@/types/ui';
 
 export interface BaseTarotInterpretationProps {
   config: TarotConfig;
@@ -22,7 +23,7 @@ export interface BaseTarotInterpretationProps {
   ) => string;
   getPositionContext?: (_card: TarotCard, _position: number) => string;
   getKeywords?: (
-    _meaning: any,
+    _meaning: CardMeaningData | null,
     _card: TarotCard
   ) => string[];
   showContext?: boolean;
@@ -87,8 +88,8 @@ export default function BaseTarotInterpretation({
         badgeColor={defaultBadgeColor || 'bg-blue-500/20 text-blue-400'}
         positionsInfo={positionsInfo}
         getPositionSpecificInterpretation={getPositionSpecificInterpretation}
-        getPositionContext={getPositionContext}
-        getKeywords={getKeywords}
+        {...(getPositionContext && { getPositionContext })}
+        {...(getKeywords && { getKeywords })}
         showContext={showContext}
       />
 

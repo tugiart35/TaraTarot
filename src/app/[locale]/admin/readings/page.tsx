@@ -280,6 +280,10 @@ export default function ReadingsPage() {
         return 'text-purple-400 bg-purple-500/20 border-purple-500/30';
       case 'numerology':
         return 'text-yellow-400 bg-yellow-500/20 border-yellow-500/30';
+      case 'situation-analysis':
+        return 'text-blue-400 bg-blue-500/20 border-blue-500/30';
+      case 'problem-solving':
+        return 'text-green-400 bg-green-500/20 border-green-500/30';
       default:
         return 'text-slate-400 bg-slate-500/20 border-slate-500/30';
     }
@@ -311,6 +315,10 @@ export default function ReadingsPage() {
         return 'Yeni Aşk';
       case 'marriage':
         return 'Evlilik';
+      case 'situation-analysis':
+        return 'Durum Analizi';
+      case 'problem-solving':
+        return 'Problem Çözme';
       default:
         return type;
     }
@@ -326,6 +334,10 @@ export default function ReadingsPage() {
         return 'text-red-400 bg-red-500/20 border-red-500/30';
       case 'reviewed':
         return 'text-blue-400 bg-blue-500/20 border-blue-500/30';
+      case 'situation-analysis':
+        return 'text-blue-400 bg-blue-500/20 border-blue-500/30';
+      case 'problem-solving':
+        return 'text-green-400 bg-green-500/20 border-green-500/30';
       default:
         return 'text-slate-400 bg-slate-500/20 border-slate-500/30';
     }
@@ -355,6 +367,10 @@ export default function ReadingsPage() {
       case 'failed':
         return 'Başarısız';
       case 'reviewed':
+        return 'İncelendi';
+      case 'situation-analysis':
+        return 'İncelendi';
+      case 'problem-solving':
         return 'İncelendi';
       default:
         return status;
@@ -535,6 +551,8 @@ export default function ReadingsPage() {
               <option value='general'>🎯 Genel</option>
               <option value='tarot'>✨ Tarot</option>
               <option value='numerology'>⭐ Numeroloji</option>
+              <option value='situation-analysis'>📊 Durum Analizi</option>
+              <option value='problem-solving'>🔍 Problem Çözme</option>
             </select>
           </div>
 
@@ -550,7 +568,9 @@ export default function ReadingsPage() {
               <option value='pending'>⏳ Beklemede</option>
               <option value='failed'>❌ Başarısız</option>
               <option value='reviewed'>👀 İncelenen</option>
-            </select>
+              <option value='situation-analysis'>📊 Durum Analizi</option>
+              <option value='problem-solving'>🔍 Problem Çözme</option>
+              </select>
           </div>
         </div>
       </div>

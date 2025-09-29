@@ -17,6 +17,7 @@ Bağlı Dosyalar:
 */
 
 import { TarotCard } from '@/types/tarot';
+import { getCardNameMappingSync } from '@/features/tarot/lib/love/card-name-mapping';
 
 export interface ProblemSolvingPosition6Meaning {
   id: string;
@@ -1056,36 +1057,8 @@ export function getProblemSolvingPosition6Meaning(
     return meaning;
   }
 
-  // Kart ismi mapping'i kullanarak eşleştirme yap
-  const cardNameMapping: { [key: string]: string } = {
-    // Major Arcana - Türkçe
-    Deli: 'The Fool',
-    Büyücü: 'The Magician',
-    'Yüksek Rahibe': 'The High Priestess',
-    İmparatoriçe: 'The Empress',
-    İmparator: 'The Emperor',
-    Hierophant: 'The Hierophant',
-    Aziz: 'The Hierophant',
-    Aşıklar: 'The Lovers',
-    'Savaş Arabası': 'The Chariot',
-    Güç: 'Strength',
-    Ermiş: 'The Hermit',
-    Münzevi: 'The Hermit',
-    'Kader Çarkı': 'The The Wheel of Fortune',
-    Adalet: 'Justice',
-    'Asılı Adam': 'The Hanged Man',
-    Ölüm: 'Death',
-    Ölçü: 'Temperance',
-    Ölçülülük: 'Temperance',
-    Şeytan: 'The Devil',
-    Kule: 'The Tower',
-    Yıldız: 'The Star',
-    Ay: 'The Moon',
-    Güneş: 'The Sun',
-    Yargı: 'Judgement',
-    Mahkeme: 'Judgement',
-    Dünya: 'The World',
-  };
+  // Ana mapping sistemini kullan
+  const cardNameMapping = getCardNameMappingSync();
 
   // Türkçe ismi İngilizce'ye çevir
   const englishName = cardNameMapping[card.nameTr] || card.nameTr;

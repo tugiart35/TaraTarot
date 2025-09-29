@@ -4,18 +4,24 @@ export async function triggerEmailSending(readingId: string | undefined): Promis
   }
 
   try {
-    const response = await fetch('/api/send-reading-email', {
+    // Doğru endpoint ile e-posta gönder - /api/email/reading kullan
+    const response = await fetch('/api/email/reading', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ readingId }),
+      body: JSON.stringify({ 
+        readingId: readingId
+      }),
     });
 
     if (!response.ok) {
-      // Email gönderimi başarısız oldu; sessizce devam et.
+      console.warn('Email gönderimi başarısız:', response.status, response.statusText);
+    } else {
+      const result = await response.json();
+      console.log('Email gönderimi başarılı:', readingId, result.fileName);
     }
-  } catch {
-    // Email gönderimi sırasında beklenmeyen bir hata oluştu; sessizce devam et.
+  } catch (error) {
+    console.warn('Email gönderimi sırasında hata:', error);
   }
 }

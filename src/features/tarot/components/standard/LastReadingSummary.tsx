@@ -39,12 +39,15 @@ Gereklilik ve Kullanım Durumu:
 'use client';
 
 import { TarotCard } from '@/features/tarot/lib/a-tarot-helpers';
+import { getReadingFormat } from '@/utils/dashboard-utils';
 
 interface LastReadingSummaryProps {
   lastReading: {
     cards: TarotCard[];
     interpretation: string;
     spreadId: string;
+    reading_type?: string;
+    cost_credits?: number;
   } | null;
   currentSpreadId: string;
 }
@@ -58,6 +61,14 @@ export default function LastReadingSummary({
     return null;
   }
 
+  // Format bilgisini belirle
+  const format = getReadingFormat(lastReading.reading_type || '', lastReading.cost_credits);
+  const formatInfo = {
+    audio: { label: 'Sesli', icon: '🎵', color: 'text-blue-400' },
+    written: { label: 'Yazılı', icon: '📝', color: 'text-green-400' },
+    simple: { label: 'Basit', icon: '✨', color: 'text-purple-400' }
+  }[format];
+
   return (
     <div className='mb-8'>
       <div className='bg-slate-800/30 border border-slate-600 rounded-xl p-4'>
@@ -65,11 +76,17 @@ export default function LastReadingSummary({
           <div className='w-8 h-8 bg-amber-500/20 rounded-full flex items-center justify-center'>
             <span className='text-amber-400 text-sm'>📜</span>
           </div>
-          <div>
+          <div className='flex-1'>
             <p className='text-amber-400 font-medium text-sm'>Son Okuma</p>
-            <p className='text-gray-400 text-xs'>
-              {lastReading.cards.length} kart çekildi
-            </p>
+            <div className='flex items-center gap-2'>
+              <p className='text-gray-400 text-xs'>
+                {lastReading.cards.length} kart çekildi
+              </p>
+              <span className={`inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium bg-slate-700/50 ${formatInfo.color}`}>
+                <span>{formatInfo.icon}</span>
+                {formatInfo.label}
+              </span>
+            </div>
           </div>
         </div>
         <div className='flex space-x-2'>

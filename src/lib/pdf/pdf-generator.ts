@@ -447,7 +447,7 @@ class PDFGeneratorService {
 
     return cardsData
       .map((card: any, index: number) => {
-        const positionTitle = positionTitles[index] || `Pozisyon ${index + 1}`;
+        const positionTitle = positionTitles[index] || `position ${index + 1}`;
         const cardImageUrl = this.getCardImageUrl(card.id, card.isReversed);
 
         // Yorum metnini bul

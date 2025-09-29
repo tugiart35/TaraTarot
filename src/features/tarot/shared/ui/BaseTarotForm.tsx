@@ -1,7 +1,8 @@
 'use client';
 
-import React, { useCallback, useMemo } from 'react';
+import React, { useCallback, useMemo, useEffect } from 'react';
 import { useTranslations } from '@/hooks/useTranslations';
+import { useCountryDetection } from '@/hooks/useCountryDetection';
 import { TarotConfig } from '../types/tarot-config.types';
 import { getThemeClasses } from './theme-utils';
 
@@ -15,6 +16,7 @@ export interface BaseTarotFormProps {
     birthDate: string;
     email: string;
     phone: string;
+    countryCode?: string;
   };
   communicationMethod: 'email' | 'whatsapp';
   questions: {
@@ -35,7 +37,7 @@ export interface BaseTarotFormProps {
   };
   isSaving: boolean;
   onUpdatePersonalInfo: (
-    field: 'name' | 'surname' | 'birthDate' | 'email' | 'phone',
+    field: 'name' | 'surname' | 'birthDate' | 'email' | 'phone' | 'countryCode',
     value: string
   ) => void;
   onUpdateCommunicationMethod: (method: 'email' | 'whatsapp') => void;
@@ -65,6 +67,14 @@ export default function BaseTarotForm({
   const { t } = useTranslations();
   const themeClasses = getThemeClasses(config.theme);
   const formKeys = config.i18nKeys.form;
+  const { countryInfo, isLoading: countryLoading } = useCountryDetection();
+
+  // Otomatik ülke kodu ayarla
+  useEffect(() => {
+    if (countryInfo && !personalInfo.countryCode) {
+      onUpdatePersonalInfo('countryCode', countryInfo.phoneCode);
+    }
+  }, [countryInfo, personalInfo.countryCode, onUpdatePersonalInfo]);
 
   const placeholders = useMemo(
     () => formKeys.placeholders ?? {},
@@ -250,118 +260,98 @@ export default function BaseTarotForm({
             </div>
 
 
-            {/* İletişim Tercihi - Modern Tasarım */}
-            <div className='space-y-3'>
-              <label
-                className={`block text-sm font-medium ${themeClasses.labelText} mb-4`}
-              >
+            {/* İletişim Tercihi - Minimal Tasarım */}
+            <div className='space-y-4'>
+              <label className={`block text-sm font-medium ${themeClasses.labelText} mb-3`}>
                 {translate(formKeys.communicationMethod)} *
               </label>
               
-              {/* E-posta Seçeneği */}
-              <div 
-                onClick={() => onUpdateCommunicationMethod('email')}
-                className={`relative cursor-pointer rounded-xl border-2 transition-all duration-300 ${
-                  communicationMethod === 'email'
-                    ? 'border-blue-500 bg-blue-500/10 shadow-lg shadow-blue-500/20'
-                    : 'border-slate-600 bg-slate-800/30 hover:border-slate-500 hover:bg-slate-700/30'
-                }`}
-              >
-                <div className='flex items-center p-4'>
-                  <div className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 transition-all ${
+              <div className='grid grid-cols-1 gap-3'>
+                {/* E-posta Seçeneği */}
+                <button
+                  type='button'
+                  onClick={() => onUpdateCommunicationMethod('email')}
+                  className={`relative p-4 rounded-lg border transition-all duration-200 text-left ${
                     communicationMethod === 'email'
-                      ? 'bg-blue-500 text-white'
-                      : 'bg-slate-600 text-gray-300'
-                  }`}>
-                    <svg className='w-6 h-6' fill='currentColor' viewBox='0 0 20 20'>
-                      <path d='M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z' />
-                      <path d='M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z' />
-                    </svg>
-                  </div>
-                  <div className='flex-1'>
-                    <h3 className={`font-semibold ${
-                      communicationMethod === 'email' ? 'text-blue-400' : 'text-gray-200'
+                      ? 'border-blue-500 bg-blue-500/5'
+                      : 'border-gray-700 bg-gray-800/50 hover:border-gray-600 hover:bg-gray-700/50'
+                  }`}
+                >
+                  <div className='flex items-center gap-3'>
+                    <div className={`w-8 h-8 rounded-md flex items-center justify-center ${
+                      communicationMethod === 'email' ? 'bg-blue-500' : 'bg-gray-600'
                     }`}>
-                      {translate(formKeys.emailCommunication)}
-                    </h3>
-                    <p className={`text-sm ${
-                      communicationMethod === 'email' ? 'text-blue-300' : 'text-gray-400'
+                      <svg className='w-4 h-4 text-white' fill='currentColor' viewBox='0 0 20 20'>
+                        <path d='M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z' />
+                        <path d='M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z' />
+                      </svg>
+                    </div>
+                    <div className='flex-1'>
+                      <div className={`text-sm font-medium ${
+                        communicationMethod === 'email' ? 'text-blue-400' : 'text-gray-200'
+                      }`}>
+                        {translate(formKeys.emailCommunication)}
+                      </div>
+                    </div>
+                    <div className={`w-4 h-4 rounded-full border-2 ${
+                      communicationMethod === 'email'
+                        ? 'border-blue-500 bg-blue-500'
+                        : 'border-gray-500'
                     }`}>
-                      Sonuçları e-posta adresinize gönderelim
-                    </p>
+                      {communicationMethod === 'email' && (
+                        <div className='w-full h-full rounded-full bg-white scale-50'></div>
+                      )}
+                    </div>
                   </div>
-                  <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center ${
-                    communicationMethod === 'email'
-                      ? 'border-blue-500 bg-blue-500'
-                      : 'border-gray-400'
-                  }`}>
-                    {communicationMethod === 'email' && (
-                      <div className='w-2 h-2 bg-white rounded-full'></div>
-                    )}
-                  </div>
-                </div>
-              </div>
+                </button>
 
-              {/* WhatsApp Seçeneği */}
-              <div 
-                onClick={() => onUpdateCommunicationMethod('whatsapp')}
-                className={`relative cursor-pointer rounded-xl border-2 transition-all duration-300 ${
-                  communicationMethod === 'whatsapp'
-                    ? 'border-green-500 bg-green-500/10 shadow-lg shadow-green-500/20'
-                    : 'border-slate-600 bg-slate-800/30 hover:border-slate-500 hover:bg-slate-700/30'
-                }`}
-              >
-                <div className='flex items-center p-4'>
-                  <div className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 transition-all ${
+                {/* WhatsApp Seçeneği */}
+                <button
+                  type='button'
+                  onClick={() => onUpdateCommunicationMethod('whatsapp')}
+                  className={`relative p-4 rounded-lg border transition-all duration-200 text-left ${
                     communicationMethod === 'whatsapp'
-                      ? 'bg-green-500 text-white'
-                      : 'bg-slate-600 text-gray-300'
-                  }`}>
-                    <svg className='w-6 h-6' fill='currentColor' viewBox='0 0 24 24'>
-                      <path d='M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488'/>
-                    </svg>
-                  </div>
-                  <div className='flex-1'>
-                    <h3 className={`font-semibold ${
-                      communicationMethod === 'whatsapp' ? 'text-green-400' : 'text-gray-200'
+                      ? 'border-green-500 bg-green-500/5'
+                      : 'border-gray-700 bg-gray-800/50 hover:border-gray-600 hover:bg-gray-700/50'
+                  }`}
+                >
+                  <div className='flex items-center gap-3'>
+                    <div className={`w-8 h-8 rounded-md flex items-center justify-center ${
+                      communicationMethod === 'whatsapp' ? 'bg-green-500' : 'bg-gray-600'
                     }`}>
-                      {translate(formKeys.whatsappCommunication)}
-                    </h3>
-                    <p className={`text-sm ${
-                      communicationMethod === 'whatsapp' ? 'text-green-300' : 'text-gray-400'
+                      <svg className='w-4 h-4 text-white' fill='currentColor' viewBox='0 0 24 24'>
+                        <path d='M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488'/>
+                      </svg>
+                    </div>
+                    <div className='flex-1'>
+                      <div className={`text-sm font-medium ${
+                        communicationMethod === 'whatsapp' ? 'text-green-400' : 'text-gray-200'
+                      }`}>
+                        {translate(formKeys.whatsappCommunication)}
+                      </div>
+                    </div>
+                    <div className={`w-4 h-4 rounded-full border-2 ${
+                      communicationMethod === 'whatsapp'
+                        ? 'border-green-500 bg-green-500'
+                        : 'border-gray-500'
                     }`}>
-                      Sonuçları WhatsApp ile paylaşalım
-                    </p>
+                      {communicationMethod === 'whatsapp' && (
+                        <div className='w-full h-full rounded-full bg-white scale-50'></div>
+                      )}
+                    </div>
                   </div>
-                  <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center ${
-                    communicationMethod === 'whatsapp'
-                      ? 'border-green-500 bg-green-500'
-                      : 'border-gray-400'
-                  }`}>
-                    {communicationMethod === 'whatsapp' && (
-                      <div className='w-2 h-2 bg-white rounded-full'></div>
-                    )}
-                  </div>
-                </div>
+                </button>
               </div>
             </div>
 
-            {/* E-posta Alanı - Sadece Email seçilirse göster */}
+            {/* E-posta Alanı - Minimal Tasarım */}
             {communicationMethod === 'email' && (
               <div className='space-y-3 animate-in slide-in-from-top-2 duration-300'>
-                <label
-                  className={`block text-sm font-medium ${themeClasses.labelText} mb-3`}
-                >
+                <label className={`block text-sm font-medium ${themeClasses.labelText} mb-2`}>
                   {translate(formKeys.email)} *
                 </label>
                 
                 <div className='relative'>
-                  <div className='absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none'>
-                    <svg className='w-5 h-5 text-blue-400' fill='currentColor' viewBox='0 0 20 20'>
-                      <path d='M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z' />
-                      <path d='M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z' />
-                    </svg>
-                  </div>
                   <input
                     type='email'
                     value={personalInfo.email}
@@ -369,97 +359,160 @@ export default function BaseTarotForm({
                       onUpdatePersonalInfo('email', event.target.value)
                     }
                     placeholder={getPlaceholder(placeholders.email)}
-                    className={`w-full pl-12 pr-4 py-4 bg-slate-800/80 border-2 ${
+                    className={`w-full px-4 py-3 bg-gray-800/50 border ${
                       formErrors.email 
                         ? 'border-red-500 focus:border-red-400' 
-                        : 'border-blue-500/30 focus:border-blue-500'
-                    } rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all duration-300 text-lg`}
+                        : 'border-gray-600 focus:border-blue-500'
+                    } rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-blue-500/30 transition-all duration-200`}
                   />
                 </div>
                 
                 {formErrors.email && (
-                  <div className='flex items-center space-x-2 text-red-400 text-sm'>
+                  <div className='flex items-center gap-2 text-red-400 text-sm'>
                     <svg className='w-4 h-4 flex-shrink-0' fill='currentColor' viewBox='0 0 20 20'>
                       <path fillRule='evenodd' d='M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z' clipRule='evenodd' />
                     </svg>
                     <span>{formErrors.email}</span>
                   </div>
                 )}
-                
-                {!personalInfo.email && !formErrors.email && (
-                  <div className='flex items-center space-x-2 text-blue-400 text-sm'>
-                    <svg className='w-4 h-4 flex-shrink-0' fill='currentColor' viewBox='0 0 20 20'>
-                      <path fillRule='evenodd' d='M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z' clipRule='evenodd' />
-                    </svg>
-                    <span>E-posta adresi gerekli</span>
-                  </div>
-                )}
-                
-                {personalInfo.email && !formErrors.email && (
-                  <div className='flex items-center space-x-2 text-blue-400 text-sm'>
-                    <svg className='w-4 h-4 flex-shrink-0' fill='currentColor' viewBox='0 0 20 20'>
-                      <path fillRule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clipRule='evenodd' />
-                    </svg>
-                    <span>E-posta adresi geçerli görünüyor</span>
-                  </div>
-                )}
               </div>
             )}
 
-            {/* Telefon Alanı - Sadece WhatsApp seçilirse göster */}
+            {/* Telefon Alanı - Minimal Tasarım */}
             {communicationMethod === 'whatsapp' && (
               <div className='space-y-3 animate-in slide-in-from-top-2 duration-300'>
-                <label
-                  className={`block text-sm font-medium ${themeClasses.labelText} mb-3`}
-                >
+                <label className={`block text-sm font-medium ${themeClasses.labelText} mb-2`}>
                   {translate(formKeys.phone)} *
                 </label>
                 
-                <div className='relative'>
-                  <div className='absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none'>
-                    <svg className='w-5 h-5 text-green-400' fill='currentColor' viewBox='0 0 24 24'>
-                      <path d='M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z'/>
-                    </svg>
+                <div className='flex gap-2'>
+                  <div className='flex-shrink-0'>
+                    <select
+                      value={personalInfo.countryCode || countryInfo?.phoneCode || '+90'}
+                      onChange={event =>
+                        onUpdatePersonalInfo('countryCode', event.target.value)
+                      }
+                      className={`px-3 py-3 bg-gray-800/50 border border-gray-600 focus:border-green-500 rounded-lg text-white focus:outline-none focus:ring-1 focus:ring-green-500/30 transition-all duration-200 text-sm ${
+                        countryLoading ? 'opacity-50' : ''
+                      }`}
+                      disabled={countryLoading}
+                    >
+                      {countryInfo && (
+                        <option value={countryInfo.phoneCode} className="bg-green-600">
+                          🎯 {countryInfo.phoneCode} ({countryInfo.country})
+                        </option>
+                      )}
+                      <option value="+90">🇹🇷 +90</option>
+                      <option value="+1">🇺🇸 +1</option>
+                      <option value="+44">🇬🇧 +44</option>
+                      <option value="+49">🇩🇪 +49</option>
+                      <option value="+33">🇫🇷 +33</option>
+                      <option value="+39">🇮🇹 +39</option>
+                      <option value="+34">🇪🇸 +34</option>
+                      <option value="+31">🇳🇱 +31</option>
+                      <option value="+32">🇧🇪 +32</option>
+                      <option value="+41">🇨🇭 +41</option>
+                      <option value="+43">🇦🇹 +43</option>
+                      <option value="+46">🇸🇪 +46</option>
+                      <option value="+47">🇳🇴 +47</option>
+                      <option value="+45">🇩🇰 +45</option>
+                      <option value="+358">🇫🇮 +358</option>
+                      <option value="+7">🇷🇺 +7</option>
+                      <option value="+86">🇨🇳 +86</option>
+                      <option value="+81">🇯🇵 +81</option>
+                      <option value="+82">🇰🇷 +82</option>
+                      <option value="+91">🇮🇳 +91</option>
+                      <option value="+55">🇧🇷 +55</option>
+                      <option value="+54">🇦🇷 +54</option>
+                      <option value="+52">🇲🇽 +52</option>
+                      <option value="+971">🇦🇪 +971</option>
+                      <option value="+966">🇸🇦 +966</option>
+                      <option value="+974">🇶🇦 +974</option>
+                      <option value="+965">🇰🇼 +965</option>
+                      <option value="+973">🇧🇭 +973</option>
+                      <option value="+968">🇴🇲 +968</option>
+                      <option value="+20">🇪🇬 +20</option>
+                      <option value="+212">🇲🇦 +212</option>
+                      <option value="+216">🇹🇳 +216</option>
+                      <option value="+213">🇩🇿 +213</option>
+                      <option value="+218">🇱🇾 +218</option>
+                      <option value="+249">🇸🇩 +249</option>
+                      <option value="+27">🇿🇦 +27</option>
+                      <option value="+234">🇳🇬 +234</option>
+                      <option value="+254">🇰🇪 +254</option>
+                      <option value="+233">🇬🇭 +233</option>
+                      <option value="+220">🇬🇲 +220</option>
+                      <option value="+221">🇸🇳 +221</option>
+                      <option value="+223">🇲🇱 +223</option>
+                      <option value="+226">🇧🇫 +226</option>
+                      <option value="+227">🇳🇪 +227</option>
+                      <option value="+228">🇹🇬 +228</option>
+                      <option value="+229">🇧🇯 +229</option>
+                      <option value="+230">🇲🇺 +230</option>
+                      <option value="+231">🇱🇷 +231</option>
+                      <option value="+232">🇸🇱 +232</option>
+                      <option value="+235">🇹🇩 +235</option>
+                      <option value="+236">🇨🇫 +236</option>
+                      <option value="+237">🇨🇲 +237</option>
+                      <option value="+238">🇨🇻 +238</option>
+                      <option value="+239">🇸🇹 +239</option>
+                      <option value="+240">🇬🇶 +240</option>
+                      <option value="+241">🇬🇦 +241</option>
+                      <option value="+242">🇨🇬 +242</option>
+                      <option value="+243">🇨🇩 +243</option>
+                      <option value="+244">🇦🇴 +244</option>
+                      <option value="+245">🇬🇼 +245</option>
+                      <option value="+246">🇮🇴 +246</option>
+                      <option value="+247">🇦🇨 +247</option>
+                      <option value="+248">🇸🇨 +248</option>
+                      <option value="+250">🇷🇼 +250</option>
+                      <option value="+251">🇪🇹 +251</option>
+                      <option value="+252">🇸🇴 +252</option>
+                      <option value="+253">🇩🇯 +253</option>
+                      <option value="+255">🇹🇿 +255</option>
+                      <option value="+256">🇺🇬 +256</option>
+                      <option value="+257">🇧🇮 +257</option>
+                      <option value="+258">🇲🇿 +258</option>
+                      <option value="+260">🇿🇲 +260</option>
+                      <option value="+261">🇲🇬 +261</option>
+                      <option value="+262">🇷🇪 +262</option>
+                      <option value="+263">🇿🇼 +263</option>
+                      <option value="+264">🇳🇦 +264</option>
+                      <option value="+265">🇲🇼 +265</option>
+                      <option value="+266">🇱🇸 +266</option>
+                      <option value="+267">🇧🇼 +267</option>
+                      <option value="+268">🇸🇿 +268</option>
+                      <option value="+269">🇰🇲 +269</option>
+                      <option value="+290">🇸🇭 +290</option>
+                      <option value="+291">🇪🇷 +291</option>
+                      <option value="+297">🇦🇼 +297</option>
+                      <option value="+298">🇫🇴 +298</option>
+                      <option value="+299">🇬🇱 +299</option>
+                    </select>
                   </div>
-                  <input
-                    type='tel'
-                    value={personalInfo.phone}
-                    onChange={event =>
-                      onUpdatePersonalInfo('phone', event.target.value)
-                    }
-                    placeholder={translate(formKeys.phonePlaceholder)}
-                    className={`w-full pl-12 pr-4 py-4 bg-slate-800/80 border-2 ${
-                      formErrors.phone 
-                        ? 'border-red-500 focus:border-red-400' 
-                        : 'border-green-500/30 focus:border-green-500'
-                    } rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500/20 transition-all duration-300 text-lg`}
-                  />
+                  <div className='flex-1'>
+                    <input
+                      type='tel'
+                      value={personalInfo.phone}
+                      onChange={event =>
+                        onUpdatePersonalInfo('phone', event.target.value)
+                      }
+                      placeholder={getPlaceholder(placeholders.phone)}
+                      className={`w-full px-4 py-3 bg-gray-800/50 border ${
+                        formErrors.phone 
+                          ? 'border-red-500 focus:border-red-400' 
+                          : 'border-gray-600 focus:border-green-500'
+                      } rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-green-500/30 transition-all duration-200`}
+                    />
+                  </div>
                 </div>
                 
                 {formErrors.phone && (
-                  <div className='flex items-center space-x-2 text-red-400 text-sm'>
+                  <div className='flex items-center gap-2 text-red-400 text-sm'>
                     <svg className='w-4 h-4 flex-shrink-0' fill='currentColor' viewBox='0 0 20 20'>
                       <path fillRule='evenodd' d='M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z' clipRule='evenodd' />
                     </svg>
                     <span>{formErrors.phone}</span>
-                  </div>
-                )}
-                
-                {!personalInfo.phone && !formErrors.phone && (
-                  <div className='flex items-center space-x-2 text-green-400 text-sm'>
-                    <svg className='w-4 h-4 flex-shrink-0' fill='currentColor' viewBox='0 0 20 20'>
-                      <path fillRule='evenodd' d='M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z' clipRule='evenodd' />
-                    </svg>
-                    <span>{translate(formKeys.phoneRequired)}</span>
-                  </div>
-                )}
-                
-                {personalInfo.phone && !formErrors.phone && (
-                  <div className='flex items-center space-x-2 text-green-400 text-sm'>
-                    <svg className='w-4 h-4 flex-shrink-0' fill='currentColor' viewBox='0 0 20 20'>
-                      <path fillRule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clipRule='evenodd' />
-                    </svg>
-                    <span>Telefon numarası geçerli görünüyor</span>
                   </div>
                 )}
               </div>

@@ -164,6 +164,7 @@ export function getProblemSolvingMeaningByCardAndPosition(
   console.log('🔄 Card name mapping:', {
     original: card.nameTr,
     mapped: englishCardName,
+    position: position
   });
 
   // Pozisyon özel anlamları kontrol et
@@ -171,8 +172,18 @@ export function getProblemSolvingMeaningByCardAndPosition(
 
   switch (position) {
     case 1:
+      console.log('🔍 Position 1 Debug:', {
+        englishCardName,
+        position,
+        isReversed
+      });
       positionMeaning =
         getProblemSolvingPosition1MeaningByCardName(englishCardName);
+      console.log('🔍 Position 1 Result:', {
+        found: !!positionMeaning,
+        card: positionMeaning?.card,
+        upright: positionMeaning?.upright?.substring(0, 50) + '...'
+      });
       break;
     case 2:
       positionMeaning =
@@ -213,6 +224,7 @@ export function getProblemSolvingMeaningByCardAndPosition(
   }
 
   if (positionMeaning) {
+    console.log('✅ Found position-specific meaning:', positionMeaning.card);
     const result = {
       ...positionMeaning,
       // upright ve reversed alanlarını orijinal haliyle koru
@@ -222,6 +234,8 @@ export function getProblemSolvingMeaningByCardAndPosition(
     return result;
   }
 
+  console.log('⚠️ No position-specific meaning found, using fallback for:', card.nameTr);
+  
   // Fallback: Genel kart anlamlarını döndür
   const baseMeaning: ProblemSolvingPositionMeaning = {
     id: `${card.name.toLowerCase().replace(/\s+/g, '_')}_pos${position}`,
@@ -241,7 +255,7 @@ export function getProblemSolvingMeaningByCardAndPosition(
   };
 
   console.log(
-    '⚠️ Returning fallback meaning:',
+    '✅ Returning fallback meaning:',
     fallbackResult.upright.substring(0, 50) + '...'
   );
   return fallbackResult;

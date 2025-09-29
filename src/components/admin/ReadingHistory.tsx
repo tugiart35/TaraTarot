@@ -30,7 +30,7 @@ export default function ReadingHistory({
   const [loading, setLoading] = useState(true);
   const [selectedReading, setSelectedReading] = useState<Reading | null>(null);
   const [filter, setFilter] = useState<
-    'all' | 'tarot' | 'numerology' | 'love' | 'career' | 'general'
+    'all' | 'tarot' | 'numerology' | 'love' | 'career' | 'general' | 'situation-analysis' | 'problem-solving'
   >('all');
 
   useEffect(() => {
@@ -282,6 +282,10 @@ export default function ReadingHistory({
         return '💼';
       case 'general':
         return '✨';
+      case 'situation-analysis':
+        return '📊';
+      case 'problem-solving':
+        return '🔍';
       default:
         return '🔮';
     }
@@ -299,6 +303,14 @@ export default function ReadingHistory({
         return 'Kariyer';
       case 'general':
         return 'Genel';
+      case 'situation-analysis':
+        return 'Durum Analizi';
+      case 'problem-solving':
+        return 'Problem Çözme';
+      case 'situation-analysis':
+        return 'Durum Analizi';
+      case 'problem-solving':
+        return 'Problem Çözme';
       default:
         return type;
     }
@@ -352,6 +364,8 @@ export default function ReadingHistory({
                     | 'love'
                     | 'career'
                     | 'general'
+                    | 'situation-analysis'
+                    | 'problem-solving'
                 )
               }
               className='bg-night/50 border border-lavender/30 text-white rounded px-3 py-1 text-sm focus:border-gold focus:outline-none'
@@ -362,6 +376,8 @@ export default function ReadingHistory({
               <option value='love'>Aşk</option>
               <option value='career'>Kariyer</option>
               <option value='general'>Genel</option>
+              <option value='situation-analysis'>📊 Durum Analizi</option>
+              <option value='problem-solving'>🔍 Problem Çözme</option>
             </select>
           </div>
         </div>

@@ -76,7 +76,7 @@ export interface ReadingDetail {
 export interface Reading {
   id?: string; // Firestore document ID
   userId: string;
-  readingType: 'love' | 'general';
+  readingType: 'love' | 'general' | 'relationshipAnalysis' | 'money' | 'relationshipProblems' | 'situationAnalysis' | 'newLover' | 'problemSolving' | 'marriage';
   status: 'pending' | 'completed' | 'failed';
   creditCost: number;
   summary: {
@@ -112,7 +112,7 @@ export interface ReadingInput {
 export interface OptimizedReading {
   id?: string; // Firestore document ID
   userId: string;
-  readingType: 'love' | 'general';
+  readingType: 'love' | 'general' | 'relationshipAnalysis' | 'money' | 'relationshipProblems' | 'situationAnalysis' | 'newLover' | 'problemSolving' | 'marriage';
   status: 'pending' | 'completed' | 'failed';
   creditCost: number;
   title: string;

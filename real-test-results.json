@@ -1,0 +1,38 @@
+{
+  "testDate": "2025-09-29T01:14:10.985Z",
+  "user": {
+    "email": "barbieetugay@gmail.com",
+    "name": "Barbie Etugay"
+  },
+  "voiceReading": {
+    "id": "2bb7fe15-5c10-4736-b589-98e234e06fac",
+    "type": "voice",
+    "communicationType": "sesli",
+    "cards": 10,
+    "communicationMethod": "whatsapp",
+    "status": "completed",
+    "costCredits": 130
+  },
+  "writtenReading": {
+    "id": "bcd1cd72-0dad-4ee5-97a1-1101e79d687f",
+    "type": "written",
+    "communicationType": "yazılı",
+    "cards": 10,
+    "communicationMethod": "email",
+    "status": "completed",
+    "costCredits": 120
+  },
+  "credits": {
+    "initial": 890,
+    "final": 640,
+    "deducted": 250,
+    "voiceCredits": 130,
+    "writtenCredits": 120,
+    "totalCredits": 250
+  },
+  "summary": {
+    "totalReadings": 2,
+    "success": true,
+    "timestamp": "2025-09-29T01:14:10.985Z"
+  }
+}

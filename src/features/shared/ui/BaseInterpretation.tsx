@@ -71,7 +71,7 @@ export interface BaseInterpretationProps {
     _card: TarotCard,
     _position: number,
     _isReversed: boolean
-  ) => string;
+  ) => string | { interpretation: string; context?: string; keywords?: string[] };
 
   // CONTEXT BİLGİSİ FONKSİYONU (lib/ dosyalarındaki context bilgileri için)
   getPositionContext?: (
@@ -346,12 +346,23 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
             let positionInterpretation = '';
 
             // 1. Önce props'tan gelen getPositionSpecificInterpretation fonksiyonunu kullan
+            let positionContext = '';
+            let positionKeywords: string[] = [];
+            
             if (getPositionSpecificInterpretation) {
-              positionInterpretation = getPositionSpecificInterpretation(
+              const result = getPositionSpecificInterpretation(
                 card,
                 idx + 1,
                 isReversed[idx] || false
               );
+              
+              if (typeof result === 'string') {
+                positionInterpretation = result;
+              } else if (result && typeof result === 'object') {
+                positionInterpretation = result.interpretation || '';
+                positionContext = result.context || '';
+                positionKeywords = result.keywords || [];
+              }
             }
 
             // 2. Eğer positionInterpretation boşsa, getMeaningText fonksiyonunu dene
@@ -406,15 +417,15 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
                   : card.meaningTr.upright;
             }
 
-            const keywords = getKeywords ? getKeywords(cardMeaning, card) : [];
+            // Anahtar kelimeleri al - önce position'dan, sonra getKeywords'dan
+            const keywords = positionKeywords.length > 0 
+              ? positionKeywords 
+              : (getKeywords ? getKeywords(cardMeaning, card) : []);
 
-            // Context'i al (lib/ dosyalarından)
-            const positionContext = getPositionContext
-              ? getPositionContext(card, idx + 1)
-              : null;
-
-            // Context'i al (problem çözme açılımı için)
-            const context = cardMeaning?.context || '';
+            // Context'i al - önce position'dan, sonra lib/ dosyalarından, sonra problem çözme için
+            const finalContext = positionContext || 
+              (getPositionContext ? getPositionContext(card, idx + 1) : '') ||
+              (cardMeaning?.context || '');
 
             return (
               <div
@@ -442,7 +453,7 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
                     <span
                       className={`text-xs ${colors.tagBg} ${colors.tagText} px-2 py-1 rounded font-bold`}
                     >
-                      {positionInfo?.title || `Pozisyon ${idx + 1}`}
+                      {positionInfo?.title || `position ${idx + 1}`}
                     </span>
                     <span className='text-xs text-gray-400'>
                       ({isReversed[idx] ? 'Ters' : 'Düz'})
@@ -469,7 +480,7 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
                   </div>
 
                   {/* Kart Context Bilgisi - lib/ dosyalarından */}
-                  {positionContext && (
+                  {finalContext && (
                     <div className='mt-2 p-2 bg-gray-800/40 rounded-lg border border-gray-700'>
                       <div className='flex items-center gap-1 mb-1'>
                         <span className={`${colors.iconText} text-xs`}>💡</span>
@@ -480,21 +491,7 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
                         </span>
                       </div>
                       <div className='text-gray-300 text-xs leading-relaxed pl-4'>
-                        {positionContext}
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Context - Anlam altında göster */}
-                  {showContext && context && (
-                    <div className='mt-2'>
-                      <div
-                        className={`text-xs ${colors.contextText} font-medium mb-1`}
-                      >
-                        Bağlam:
-                      </div>
-                      <div className={`text-xs ${colors.contextText} italic`}>
-                        {context}
+                        {finalContext}
                       </div>
                     </div>
                   )}

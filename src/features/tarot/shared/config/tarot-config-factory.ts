@@ -708,6 +708,7 @@ const createFormI18nKeys = (spreadId: string): FormI18nKeys => ({
   lastName: `${spreadId}.form.lastName`,
   birthDate: `${spreadId}.form.birthDate`,
   email: `${spreadId}.form.email`,
+  phone: `${spreadId}.form.phone`,
   communicationMethod: `${spreadId}.form.communicationMethod`,
   emailCommunication: `${spreadId}.form.emailCommunication`,
   whatsappCommunication: `${spreadId}.form.whatsappCommunication`,
@@ -722,6 +723,7 @@ const createFormI18nKeys = (spreadId: string): FormI18nKeys => ({
     firstName: `${spreadId}.form.placeholders.firstName`,
     lastName: `${spreadId}.form.placeholders.lastName`,
     email: `${spreadId}.form.placeholders.email`,
+    phone: `${spreadId}.form.placeholders.phone`,
     concernQuestion: `${spreadId}.form.placeholders.concernQuestion`,
     understandingQuestion: `${spreadId}.form.placeholders.understandingQuestion`,
     emotionalQuestion: `${spreadId}.form.placeholders.emotionalQuestion`,
@@ -763,6 +765,7 @@ export interface CreateTarotConfigParams {
   spreadId: string;
   translationNamespace?: string;
   summaryKey?: string;
+  spreadName?: string;
   positionsInfo: readonly PositionInfo[];
   positionsLayout: readonly PositionLayout[];
   theme: TarotTheme;
@@ -788,6 +791,7 @@ export function createTarotConfig(
     spreadId,
     translationNamespace,
     summaryKey,
+    spreadName,
     positionsInfo,
     positionsLayout,
     theme,
@@ -894,6 +898,7 @@ export function createTarotConfig(
     spreadId,
     translationNamespace: namespace,
     summaryKey: summaryKeyValue,
+    spreadName: spreadName || `${namespace}.data.spreadName`,
     cardCount: positionsInfo.length,
     positionsInfo: positionsInfo as any,
     positionsLayout: positionsLayout as any,
@@ -925,6 +930,7 @@ export function createCareerConfig(): TarotConfig {
     theme: 'blue',
     icon: '💼',
     readingType: 'CAREER_SPREAD',
+    supabaseReadingType: 'career', // Veritabanında mevcut enum değeri
     creditKeyPrefix: 'CAREER_SPREAD',
   });
 }
@@ -942,6 +948,7 @@ export function createLoveConfig(): TarotConfig {
     theme: 'pink',
     icon: '💕',
     readingType: 'LOVE_SPREAD',
+    supabaseReadingType: 'love', // Veritabanında mevcut enum değeri
     creditKeyPrefix: 'LOVE_SPREAD',
   });
 }
@@ -959,6 +966,7 @@ export function createMoneyConfig(): TarotConfig {
     theme: 'green',
     icon: '💰',
     readingType: 'MONEY_SPREAD',
+    supabaseReadingType: 'money', // Veritabanında mevcut enum değeri
     creditKeyPrefix: 'MONEY_SPREAD',
   });
 }
@@ -969,6 +977,7 @@ export function createMoneyConfig(): TarotConfig {
 export function createProblemSolvingConfig(): TarotConfig {
   return createTarotConfig({
     spreadId: 'problem-solving',
+    spreadName: 'problemSolving',
     translationNamespace: 'problemSolving',
     summaryKey: 'problemSolvingSpread',
     positionsInfo: PROBLEM_SOLVING_POSITIONS_INFO,
@@ -976,6 +985,7 @@ export function createProblemSolvingConfig(): TarotConfig {
     theme: 'orange',
     icon: '🧩',
     readingType: 'PROBLEM_SOLVING_SPREAD',
+    supabaseReadingType: 'problem-solving', // Veritabanında mevcut enum değeri
     creditKeyPrefix: 'PROBLEM_SOLVING',
   });
 }
@@ -993,6 +1003,7 @@ export function createMarriageConfig(): TarotConfig {
     theme: 'pink',
     icon: '💒',
     readingType: 'MARRIAGE_SPREAD',
+    supabaseReadingType: 'love', // Veritabanında mevcut enum değeri
     creditKeyPrefix: 'MARRIAGE',
   });
 }
@@ -1010,6 +1021,7 @@ export function createRelationshipAnalysisConfig(): TarotConfig {
     theme: 'blue',
     icon: '💙',
     readingType: 'RELATIONSHIP_ANALYSIS_SPREAD',
+    supabaseReadingType: 'relationshipAnalysis', // Veritabanında mevcut enum değeri
     creditKeyPrefix: 'RELATIONSHIP_ANALYSIS',
   });
 }
@@ -1027,6 +1039,7 @@ export function createRelationshipProblemsConfig(): TarotConfig {
     theme: 'red',
     icon: '💔',
     readingType: 'RELATIONSHIP_PROBLEMS_SPREAD',
+    supabaseReadingType: 'relationshipProblems', // Veritabanında mevcut enum değeri
     creditKeyPrefix: 'RELATIONSHIP_PROBLEMS',
   });
 }
@@ -1044,6 +1057,7 @@ export function createNewLoverConfig(): TarotConfig {
     theme: 'pink',
     icon: '💕',
     readingType: 'NEW_LOVER_SPREAD',
+    supabaseReadingType: 'love', // Veritabanında mevcut enum değeri
     creditKeyPrefix: 'NEW_LOVER',
   });
 }
@@ -1056,11 +1070,13 @@ export function createSituationAnalysisConfig(): TarotConfig {
     spreadId: 'situation-analysis',
     translationNamespace: 'situationAnalysis',
     summaryKey: 'situationAnalysisSpread',
+    spreadName: 'situationAnalysis.data.spreadName',
     positionsInfo: SITUATION_ANALYSIS_POSITIONS_INFO,
     positionsLayout: SITUATION_ANALYSIS_POSITIONS_LAYOUT,
     theme: 'purple',
     icon: '🔮',
     readingType: 'SITUATION_ANALYSIS_SPREAD',
+    supabaseReadingType: 'situation-analysis', // Veritabanında mevcut enum değeri
     creditKeyPrefix: 'SITUATION_ANALYSIS',
   });
 }

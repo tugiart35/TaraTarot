@@ -90,11 +90,9 @@ export async function GET(request: NextRequest) {
             const profileResult = await ensureProfileExists(user);
 
             if (!profileResult.success) {
-              console.warn('Profile kontrolü başarısız:', profileResult.error);
               // Profile sorunu giriş işlemini etkilemez
             }
           } catch (profileError) {
-            console.warn('Profile kontrol hatası:', profileError);
             // Profile hatası giriş işlemini etkilemez
           }
 

@@ -69,6 +69,12 @@ export const useDashboardData = () => {
   const { user, isAuthenticated } = useAuth();
   // useTranslations hook'undan çeviri fonksiyonunu al
   const { t: translate } = useTranslations();
+  
+  // Translate fonksiyonunu memoize et - sürekli yeniden render'ı önlemek için
+  const memoizedTranslate = useCallback(
+    (key: string, fallback?: string) => translate(key, fallback),
+    [translate]
+  );
   // useShopier hook'undan ödeme fonksiyonlarını al
   const { loading: paymentLoading } = useShopier();
   // Mevcut sayfa URL'ini al
@@ -88,10 +94,13 @@ export const useDashboardData = () => {
   // Admin kullanıcı kontrolü
   const [isAdmin] = useState(false);
 
+  // Toplam okuma sayısı state'i - tüm okumalar için ayrı state
+  const [totalReadingsCount, setTotalReadingsCount] = useState<number>(0);
+
   // Toplam okuma sayısı - hesaplanan değer (memoized)
   const totalCount = useMemo(
-    () => recentReadings.length,
-    [recentReadings.length]
+    () => totalReadingsCount,
+    [totalReadingsCount]
   );
 
   // Veri yükleme - auth kontrolü yok, herkese açık
@@ -110,7 +119,7 @@ export const useDashboardData = () => {
               .select('*')
               .eq('id', user.id)
               .single()
-              .then(({ data, error }) => {
+              .then(({ data, error }: { data: any; error: any }) => {
                 if (!error && data) {
                   setProfile(data);
                 }
@@ -119,6 +128,9 @@ export const useDashboardData = () => {
 
           // Son okumaları çek
           promises.push(fetchRecentReadings(user.id));
+
+          // Toplam okuma sayısını çek
+          promises.push(fetchTotalReadingsCount(user.id));
 
           // Son işlemleri çek
           promises.push(fetchRecentTransactions(user.id));
@@ -142,57 +154,8 @@ export const useDashboardData = () => {
     loadData();
   }, [isAuthenticated, user?.id]); // Sadece user.id değiştiğinde çalış
 
-  // Sayfa focus olduğunda kredi bakiyesini yenile - gerçek zamanlı güncelleme için
-  useEffect(() => {
-    // Debounce için timer
-    let debounceTimer: NodeJS.Timeout;
-
-    // Pencere odaklandığında çalışacak fonksiyon
-    const handleFocus = () => {
-      if (isAuthenticated && user?.id) {
-        clearTimeout(debounceTimer);
-        debounceTimer = setTimeout(() => {
-          refreshCreditBalance(); // Kredi bakiyesini yenile
-        }, 300); // 300ms debounce
-      }
-    };
-
-    // Sayfa görünürlüğü değiştiğinde çalışacak fonksiyon
-    const handleVisibilityChange = () => {
-      if (!document.hidden && isAuthenticated && user?.id) {
-        clearTimeout(debounceTimer);
-        debounceTimer = setTimeout(() => {
-          refreshCreditBalance(); // Kredi bakiyesini yenile
-        }, 300); // 300ms debounce
-      }
-    };
-
-    // Kredi değişikliği event listener'ı - custom event
-    const handleCreditChange = () => {
-      if (isAuthenticated && user?.id) {
-        clearTimeout(debounceTimer);
-        debounceTimer = setTimeout(() => {
-          refreshCreditBalance(); // Kredi bakiyesini yenile
-        }, 100); // Daha hızlı response
-      }
-    };
-
-    // Event listener'ları ekle
-    window.addEventListener('focus', handleFocus);
-    document.addEventListener('visibilitychange', handleVisibilityChange);
-    window.addEventListener('creditBalanceChanged', handleCreditChange);
-
-    // Cleanup fonksiyonu - component unmount olduğunda event listener'ları kaldır
-    return () => {
-      clearTimeout(debounceTimer);
-      window.removeEventListener('focus', handleFocus);
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
-      window.removeEventListener('creditBalanceChanged', handleCreditChange);
-    };
-  }, [isAuthenticated, user?.id]); // Sadece gerekli değerler değiştiğinde çalış
-
-  // Kredi bakiyesini yenile - gerçek zamanlı güncelleme için
-  const refreshCreditBalance = async () => {
+  // Kredi bakiyesini yenile - gerçek zamanlı güncelleme için (memoized)
+  const refreshCreditBalance = useCallback(async () => {
     if (!user?.id) {
       return; // Kullanıcı yoksa çık
     }
@@ -214,13 +177,81 @@ export const useDashboardData = () => {
         setProfile(prev =>
           prev ? { ...prev, credit_balance: profileData.credit_balance } : null
         );
-      } else {
-        // Veri yoksa hiçbir şey yapma
       }
+      // Toplam okuma sayısını yenileme - sadece kredi bakiyesini güncelle
     } catch (error) {
       // Hata durumunda sessizce devam et
     }
-  };
+  }, [user?.id]); // Sadece user.id değiştiğinde yeniden oluştur
+
+  // Sayfa focus olduğunda kredi bakiyesini yenile - gerçek zamanlı güncelleme için
+  useEffect(() => {
+    // Debounce için timer
+    let debounceTimer: NodeJS.Timeout;
+    let lastRefreshTime = 0;
+    const MIN_REFRESH_INTERVAL = 60000; // Minimum 60 saniye bekle (daha uzun interval)
+
+    // Pencere odaklandığında çalışacak fonksiyon
+    const handleFocus = () => {
+      if (isAuthenticated && user?.id) {
+        const now = Date.now();
+        if (now - lastRefreshTime < MIN_REFRESH_INTERVAL) {
+          return; // Çok sık yenileme yapma
+        }
+        
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => {
+          lastRefreshTime = now;
+          refreshCreditBalance(); // Kredi bakiyesini yenile
+        }, 2000); // 2 saniye debounce
+      }
+    };
+
+    // Sayfa görünürlüğü değiştiğinde çalışacak fonksiyon
+    const handleVisibilityChange = () => {
+      if (!document.hidden && isAuthenticated && user?.id) {
+        const now = Date.now();
+        if (now - lastRefreshTime < MIN_REFRESH_INTERVAL) {
+          return; // Çok sık yenileme yapma
+        }
+        
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => {
+          lastRefreshTime = now;
+          refreshCreditBalance(); // Kredi bakiyesini yenile
+        }, 2000); // 2 saniye debounce
+      }
+    };
+
+    // Kredi değişikliği event listener'ı - custom event
+    const handleCreditChange = () => {
+      if (isAuthenticated && user?.id) {
+        const now = Date.now();
+        if (now - lastRefreshTime < MIN_REFRESH_INTERVAL) {
+          return; // Çok sık yenileme yapma
+        }
+        
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => {
+          lastRefreshTime = now;
+          refreshCreditBalance(); // Kredi bakiyesini yenile
+        }, 1000); // 1 saniye debounce
+      }
+    };
+
+    // Event listener'ları ekle
+    window.addEventListener('focus', handleFocus);
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    window.addEventListener('creditBalanceChanged', handleCreditChange);
+
+    // Cleanup fonksiyonu - component unmount olduğunda event listener'ları kaldır
+    return () => {
+      clearTimeout(debounceTimer);
+      window.removeEventListener('focus', handleFocus);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      window.removeEventListener('creditBalanceChanged', handleCreditChange);
+    };
+  }, [isAuthenticated, user?.id, refreshCreditBalance]); // refreshCreditBalance dependency eklendi
 
   // Son okumaları getir - kullanıcının son 30 günlük okumalarını çek (memoized)
   const fetchRecentReadings = useCallback(async (userId: string) => {
@@ -243,6 +274,7 @@ export const useDashboardData = () => {
           status,
           title,
           cost_credits,
+          metadata,
           created_at
         `
         )
@@ -268,7 +300,9 @@ export const useDashboardData = () => {
             50; // fallback
           const format = getReadingFormat(
             reading.reading_type,
-            actualCostCredits
+            actualCostCredits,
+            reading.title,
+            reading.metadata // metadata parametresini ekle
           );
           const formatInfo = getFormatInfo(format);
           return {
@@ -280,18 +314,21 @@ export const useDashboardData = () => {
             questions: reading.questions || {},
             status: reading.status || 'completed',
             created_at: reading.created_at,
-            title: reading.title || getReadingTitle(reading.reading_type),
+            title: reading.title || memoizedTranslate(`tarot.${reading.reading_type}.data.detailedTitle`, getReadingTitle(reading.reading_type)),
             cost_credits: actualCostCredits,
             format: format,
             formatInfo: formatInfo,
             // Eski uyumluluk için
             type: reading.reading_type as
               | 'tarot'
+              | 'money'
               | 'numerology'
               | 'love'
               | 'simple'
               | 'general'
-              | 'career',
+              | 'career'
+              | 'situation-analysis'
+              | 'problem-solving',
             summary: getReadingSummary(reading.interpretation),
           };
         });
@@ -303,6 +340,34 @@ export const useDashboardData = () => {
     } catch (error) {
       // Silently handle fetch errors
       setRecentReadings([]);
+    }
+  }, [memoizedTranslate]);
+
+  // Toplam okuma sayısını getir - kullanıcının tüm okumalarını say (memoized)
+  const fetchTotalReadingsCount = useCallback(async (userId: string) => {
+    try {
+      // Kullanıcının tüm okumalarını say
+      const { count, error } = await supabase
+        .from('readings')
+        .select('*', { count: 'exact', head: true })
+        .eq('user_id', userId)
+        .eq('status', 'completed');
+
+      if (error) {
+        setTotalReadingsCount(0);
+        return;
+      }
+
+      // Sadece değer gerçekten değiştiyse state'i güncelle
+      const newCount = count || 0;
+      setTotalReadingsCount(prevCount => {
+        if (prevCount !== newCount) {
+          return newCount;
+        }
+        return prevCount;
+      });
+    } catch (error) {
+      setTotalReadingsCount(0);
     }
   }, []);
 
@@ -358,7 +423,7 @@ export const useDashboardData = () => {
       }
       if (data && data.length > 0) {
         // Veritabanından gelen paketleri işle
-        const processedPackages: Package[] = data.map(pkg => ({
+        const processedPackages: Package[] = data.map((pkg: any) => ({
           id: pkg.id || Date.now(),
           name: pkg.name || 'Unnamed Package',
           description: pkg.description || '',
@@ -399,6 +464,6 @@ export const useDashboardData = () => {
     user,
     isAuthenticated,
     paymentLoading,
-    translate,
+    translate: memoizedTranslate,
   };
 };

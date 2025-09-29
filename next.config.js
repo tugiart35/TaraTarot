@@ -44,6 +44,10 @@ const nextConfig = {
       },
     ];
   },
+  // Development server settings
+  devIndicators: {
+    buildActivity: false,
+  },
   // Content Security Policy headers
   async headers() {
     return [
@@ -55,10 +59,11 @@ const nextConfig = {
             value: [
               "default-src 'self'",
               "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.google-analytics.com https://www.googletagmanager.com",
-              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-              "font-src 'self' https://fonts.gstatic.com",
+              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net",
+              "style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net",
+              "font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net",
               "img-src 'self' data: https: blob:",
-              "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://www.googletagmanager.com",
+              "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://www.googletagmanager.com http://localhost:3111",
               "frame-src 'self'",
               "object-src 'none'",
               "base-uri 'self'",
@@ -66,6 +71,10 @@ const nextConfig = {
               "frame-ancestors 'none'",
               'upgrade-insecure-requests',
             ].join('; '),
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'DENY',
           },
         ],
       },

@@ -23,7 +23,7 @@ export interface DashboardStats {
 }
 
 export interface DashboardFilters {
-  type: 'all' | 'love' | 'general' | 'career' | 'numerology';
+  type: 'all' | 'love' | 'general' | 'career' | 'numerology' | 'situation-analysis' | 'problem-solving';
   dateRange: 'week' | 'month' | 'year' | 'all';
   search: string;
 }
@@ -306,6 +306,8 @@ export const DashboardUtils = {
       money: '💰',
       general: '🔮',
       numerology: '🔢',
+      situationAnalysis: '📊',
+      problemSolving: '🔍',
     };
     return icons[type] || '🔮';
   },
@@ -317,6 +319,8 @@ export const DashboardUtils = {
       money: 'text-green-500',
       general: 'text-purple-500',
       numerology: 'text-orange-500',
+      situationAnalysis: 'text-blue-500',
+      problemSolving: 'text-green-500',
     };
     return colors[type] || 'text-gray-500';
   },

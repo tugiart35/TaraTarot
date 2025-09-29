@@ -177,7 +177,7 @@ export interface Database {
         Row: {
           id: string;
           user_id: string;
-          reading_type: 'tarot' | 'numerology' | 'love' | 'career' | 'general';
+          reading_type: 'tarot' | 'numerology' | 'love' | 'career' | 'general' | 'relationshipAnalysis' | 'money' | 'relationshipProblems' | 'situationAnalysis' | 'newLover' | 'problemSolving' | 'marriage';
           spread_name: string;
           title: string;
           interpretation: string;
@@ -192,8 +192,7 @@ export interface Database {
         Insert: {
           id?: string;
           user_id: string;
-          reading_type: 'tarot' | 'numerology' | 'love' | 'career' | 'general';
-          spread_name: string;
+          reading_type: 'tarot' | 'numerology' | 'love' | 'career' | 'general' | 'relationshipAnalysis' | 'money' | 'relationshipProblems' | 'situationAnalysis' | 'newLover' | 'problemSolving' | 'marriage';          spread_name: string;
           title: string;
           interpretation: string;
           cards?: any;
@@ -207,8 +206,7 @@ export interface Database {
         Update: {
           id?: string;
           user_id?: string;
-          reading_type?: 'tarot' | 'numerology' | 'love' | 'career' | 'general';
-          spread_name?: string;
+          reading_type: 'tarot' | 'numerology' | 'love' | 'career' | 'general' | 'relationshipAnalysis' | 'money' | 'relationshipProblems' | 'situationAnalysis' | 'newLover' | 'problemSolving' | 'marriage';          spread_name?: string;
           title?: string;
           interpretation?: string;
           cards?: any;
@@ -302,7 +300,7 @@ export interface Database {
           positions: any;
           card_count: number;
           cost_credits: number;
-          category: 'general' | 'love' | 'career' | 'spiritual' | 'health';
+          category: 'general' | 'love' | 'career' | 'spiritual' | 'health' | 'relationshipAnalysis' | 'money' | 'relationshipProblems' | 'situationAnalysis' | 'newLover' | 'problemSolving' | 'marriage';
           difficulty_level: 'beginner' | 'intermediate' | 'advanced';
           active: boolean;
           created_at: string;
@@ -319,7 +317,7 @@ export interface Database {
           positions: any;
           card_count?: number;
           cost_credits?: number;
-          category?: 'general' | 'love' | 'career' | 'spiritual' | 'health';
+          category?: 'general' | 'love' | 'career' | 'spiritual' | 'health' | 'relationshipAnalysis' | 'money' | 'relationshipProblems' | 'situationAnalysis' | 'newLover' | 'problemSolving' | 'marriage';
           difficulty_level?: 'beginner' | 'intermediate' | 'advanced';
           active?: boolean;
           created_at?: string;
@@ -336,7 +334,7 @@ export interface Database {
           positions?: any;
           card_count?: number;
           cost_credits?: number;
-          category?: 'general' | 'love' | 'career' | 'spiritual' | 'health';
+          category?: 'general' | 'love' | 'career' | 'spiritual' | 'health' | 'relationshipAnalysis' | 'money' | 'relationshipProblems' | 'situationAnalysis' | 'newLover' | 'problemSolving' | 'marriage';
           difficulty_level?: 'beginner' | 'intermediate' | 'advanced';
           active?: boolean;
           created_at?: string;
@@ -382,7 +380,14 @@ export interface Database {
             | 'numerology'
             | 'love'
             | 'career'
-            | 'general';
+            | 'general'
+            | 'relationshipAnalysis'
+            | 'money'
+            | 'relationshipProblems'
+            | 'situationAnalysis'
+            | 'newLover'
+            | 'problemSolving'
+            | 'marriage';
           p_spread_name: string;
           p_title: string;
           p_interpretation: string;
@@ -395,7 +400,7 @@ export interface Database {
         Returns: {
           id: string;
           user_id: string;
-          reading_type: 'tarot' | 'numerology' | 'love' | 'career' | 'general';
+          reading_type: 'tarot' | 'numerology' | 'love' | 'career' | 'general' | 'relationshipAnalysis' | 'money' | 'relationshipProblems' | 'situationAnalysis' | 'newLover' | 'problemSolving' | 'marriage' | 'marriage';
           spread_name: string;
           title: string;
           interpretation: string;

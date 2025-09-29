@@ -46,8 +46,9 @@ export interface Reading {
     color: string;
     iconComponent: string;
   };
+  metadata?: any; // Okuma metadata'sı (opsiyonel)
   // Eski uyumluluk için - geriye dönük uyumluluk
-  type?: 'tarot' | 'numerology' | 'love' | 'simple' | 'general' | 'career';
+  type?: 'tarot' | 'numerology' | 'love' | 'simple' | 'general' | 'career' | 'relationshipAnalysis' | 'money' | 'relationshipProblems' | 'situationAnalysis' | 'newLover' | 'problemSolving' | 'marriage';
   summary?: string; // Okuma özeti (opsiyonel)
 }
 

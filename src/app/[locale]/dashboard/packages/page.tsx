@@ -115,7 +115,6 @@ export default function PackagesPage() {
         .order('credits', { ascending: true });
 
       if (error) {
-        console.error('Paketler yüklenirken hata:', error);
         return;
       }
 

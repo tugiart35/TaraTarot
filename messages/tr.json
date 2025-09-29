@@ -86,7 +86,7 @@
       "passwordsNotMatch": "Şifreler eşleşmiyor",
       "processing": "⏳ İşleniyor...",
       "redirecting": "Giriş sayfasına yönlendiriliyor...",
-    "register": "Kayıt Ol",
+      "register": "Kayıt Ol",
       "registerSubtitle": "Yeni hesap oluşturun",
       "registerTitle": "Kayıt Ol",
       "registering": "📝 Kayıt oluşturuluyor...",
@@ -210,12 +210,15 @@
     "form": {
       "birthDate": "Doğum Tarihi",
       "clearAll": "Tüm Kartları Temizle",
+      "communicationMethod": "İletişim Yöntemi",
       "concernQuestion": "Kariyer konusunda en çok endişelendiğiniz şey nedir?",
       "email": "E-posta",
+      "emailCommunication": "E-posta",
       "emotionalQuestion": "Kariyer konusunda hangi duygusal engelleri yaşıyorsunuz?",
       "firstName": "Ad",
       "lastName": "Soyad",
       "personalInfo": "Kişisel Bilgiler",
+      "phone": "Telefon Numarası",
       "placeholders": {
         "concernQuestion": "İşim beni mutlu ediyor mu, doğru yolda mıyım?...",
         "email": "ornek@email.com",
@@ -227,7 +230,8 @@
       "questions": "Kariyer Sorularınız",
       "saveAndOpen": "Kaydet ve Kartları Aç",
       "saving": "Kaydediliyor...",
-      "understandingQuestion": "Kariyerinizde hangi alanları daha iyi anlamak istiyorsunuz?"
+      "understandingQuestion": "Kariyerinizde hangi alanları daha iyi anlamak istiyorsunuz?",
+      "whatsappCommunication": "WhatsApp"
     },
     "messages": {
       "allCardsRequired": "Tüm kartları seçmeden yorum oluşturulamaz.",
@@ -243,30 +247,32 @@
     },
     "modals": {
       "aboutSpread": "Kariyer Açılımı Hakkında",
-      "aboutSpreadText": "Kariyer açılımı; iş ve meslek yolculuğundaki belirsizlikleri netleştirmek, güçlü yönlerini, engelleri ve fırsatları görünür kılmak için tasarlandı. Başlamadan önce niyetini belirle, kartları sezgilerinle seç ve her kartın pozisyonuna göre yorumu oku; böylece içgörüleri somut adımlara çevirebilirsin. ",
-      "cancel": "İptal",
-      "cardCount": "Kart Sayısı",
-      "cardCountText": "Bu açılım 7 kart ile yapılır. Her kart farklı bir kariyer alanını temsil eder ve size özel rehberlik sağlar.",
-      "confirm": "Onayla",
+      "aboutSpreadText": "Bu 7 kart; mevcut durumunu, güçlü yanlarını, engelleri ve fırsatları görünür kılar. İçindeki potansiyeli harekete geçiren bir yol haritası sunar—bugünden yarına net ve şefkatli bir köprü.",
+      "cancel": "Vazgeç",
+      "cardCountText": "Toplam 7 kart: (1) Mevcut Durum (2) Güçlü Yanlar (3) Engeller (4) Fırsatlar (5) Kaynaklar/Destek (6) Yol Haritası (7) Sonuç & Öneri.",
+      "cardCountTitle": "Kart Sayısı",
+      "confirm": "Evet, Onaylıyorum",
       "continue": "Devam Et",
       "creditConfirm": "Kredi Onayı",
-      "creditConfirmMessage": "Bu okuma için kredi kullanılacak. Devam etmek istediğinize emin misiniz?",
+      "creditConfirmMessage": "Bu kariyer açılımı için kredi kullanılacak. Devam etmek istediğinize emin misiniz?",
       "detailedReading": "Sesli Okuma",
-      "detailedReadingText": "Sesli okuma ile kartların anlamlarını sesli olarak dinleyebilir, daha detaylı yorumlar alabilirsiniz.",
+      "detailedReadingText": "Yorumunu sıcak bir ses kaydı olarak al. Sana özel hazırlanır; indirip dilediğin an dinleyebilirsin.",
       "infoTitle": "Kariyer Açılımı",
+      "loveAttention": "Okumayı kaydettikten sonra genellikle 2–4 saat içinde kişisel yorumunu e-posta ile iletirim. Bu çalışma rehberlik amaçlıdır; nihai seçimler sana aittir.",
+      "loveAttentionInfo": "Nazik Bir Not",
       "process": "Süreç",
       "processing": "İşleniyor...",
-      "redirecting": "Ana sayfaya yönlendiriliyorsunuz...",
-      "saveReading": "Okumayı Kaydet",
-      "savingReading": "Okuma Kaydediliyor...",
-      "step1": "Kişisel bilgilerinizi ve sorularınızı doldurun",
-      "step2": "7 kartı sezgilerinizle seçin",
-      "step3": "Kartların pozisyonlarına göre yorumları okuyun",
-      "step4": "Okumanızı kaydedin ve sonuçları alın",
-      "successMessage": "Kariyer açılımınız başarıyla tamamlandı ve kaydedildi. Size özel yorumlarınızı inceleyebilirsiniz.",
-      "successTitle": "Okuma Tamamlandı!",
+      "redirecting": "💼 Ana sayfaya yönlendiriliyorsun...",
+      "saveReading": "Okumayı Kaydet 💼",
+      "savingReading": "Kaydediliyor...",
+      "step1": "Kişisel bilgilerini gir",
+      "step2": "Kariyerle ilgili soruları yanıtla",
+      "step3": "7 kartı seç ve ön izle",
+      "step4": "Okumayı kaydet; sonuç e-postana gelsin",
+      "successMessage": "Kariyer açılımın kaydedildi ve analiz edildi. Sonuçlarını panelinden görüntüleyebilirsin.",
+      "successTitle": "Okuma Kaydedildi",
       "writtenReading": "Yazılı Okuma",
-      "writtenReadingText": "Yazılı okuma ile kartların anlamlarını yazılı olarak okuyabilir, daha kapsamlı analizler alabilirsiniz."
+      "writtenReadingText": "Tercih edersen detaylı yazılı rapor olarak teslim edilir; kaydedip yeniden okuyabilirsin."
     },
     "validation": {
       "birthDateRequired": "Doğum tarihi zorunludur.",
@@ -285,6 +291,7 @@
     "confirm": "Onayla",
     "continue": "Devam Et",
     "copy": "Kopyala",
+    "credits": "kredi",
     "delete": "Sil",
     "download": "İndir",
     "edit": "Düzenle",
@@ -295,6 +302,7 @@
     "immediateAccess": "Anında Erişim",
     "info": "Bilgi",
     "loading": "Yükleniyor...",
+    "locale": "tr-TR",
     "new": "Yeni",
     "next": "İleri",
     "no": "Hayır",
@@ -373,17 +381,25 @@
       "usage": "Kullanımlar"
     },
     "creditPackages": "Kredi Paketleri",
+    "detailedStatistics": "Detaylı İstatistikler",
+    "discoverLevel": "İlk okumanızı yapın ve seviyenizi keşfedin!",
     "displayName": "Görünen Ad",
+    "downloadReading": "Okumayı İndir",
     "editProfile": "Profili Düzenle",
     "email": "E-posta",
     "expert": "Uzman",
     "free": "Özgür",
     "immediateAccess": "Anında Erişim",
     "intermediate": "Orta",
+    "keepGoing": "Harika gidiyorsunuz! Devam edin!",
     "last30Days": "Son 30 gün",
     "memberSince": "Üye Olma Tarihi",
     "membershipDuration": "Üyelik Süresi",
+    "moreReadings": "okuma daha var",
+    "mysticJourney": "Mistik yolculuğunuzda ilerliyorsunuz!",
+    "mysticLevel": "Mistik Seviye",
     "new": "Yeni",
+    "noReadingsYet": "Henüz okuma yapılmamış. İlk mistik deneyiminizi yaşamak için bir okuma başlatın ve kaderinizin sırlarını keşfedin.",
     "packages": {
       "addedToAccount": "hesabınıza eklendi.",
       "bonus": "bonus",
@@ -458,16 +474,16 @@
         "yourQuestion": "Sorunuz"
       },
       "download": "İndir",
-    "generalReadings": "Genel Okumalar",
+      "generalReadings": "Genel Okumalar",
       "generalType": "Genel Okuma",
-    "lastMonth": "Son 1 Ay",
+      "lastMonth": "Son 1 Ay",
       "lastWeek": "Son 1 Hafta",
-    "lastYear": "Son 1 Yıl",
-    "loadMore": "Daha Fazla Yükle",
+      "lastYear": "Son 1 Yıl",
+      "loadMore": "Daha Fazla Yükle",
       "loading": "Yükleniyor...",
       "loveReadings": "Aşk Okumaları",
       "loveType": "Aşk Okuması",
-    "noReadings": "Henüz Okuma Yok",
+      "noReadings": "Henüz Okuma Yok",
       "noReadingsDesc": "İlk mistik deneyiminizi yaşamaya hazır mısınız?",
       "numerologyType": "Numeroloji",
       "searchPlaceholder": "Okuma ara...",
@@ -484,16 +500,22 @@
     "saveChanges": "Değişiklikleri Kaydet",
     "settings": "Ayarlar",
     "signOut": "Çıkış Yap",
+    "startFirstReading": "İlk Okumamı Başlat",
     "statistics": "İstatistikler",
+    "thisWeek": "Bu Hafta",
     "title": "Dashboard",
     "today": "Bugün",
+    "todayReadings": "Bugünkü Okumalar",
     "totalReadings": "Toplam Okuma",
     "user": "Kullanıcı",
     "userId": "Kullanıcı ID",
     "userInfo": "Kullanıcı Bilgileri",
     "userLevel": "Kullanıcı Seviyesi",
     "viewAll": "Hepsini görüntüle",
-    "welcome": "Hoş geldiniz"
+    "viewAllReadings": "Tüm okumaları görüntüle",
+    "viewReading": "Okumayı Görüntüle",
+    "welcome": "Hoş geldiniz",
+    "welcomeMessage": "Mistik Yolculuğunuza Hoş Geldiniz!"
   },
   "errors": {
     "contactSupport": "Destek ile İletişime Geç",
@@ -627,15 +649,15 @@
       "simpleTitle": "Aşk Açılımı - Basit Okuma",
       "spreadName": "Aşk Açılımı",
       "spreadTitle": "Aşk Açılımı"
-      },
-      "form": {
-        "birthDate": "Doğum Tarihi",
+    },
+    "form": {
+      "birthDate": "Doğum Tarihi",
       "clearAll": "🔄 Tümünü Temizle",
       "communicationMethod": "İletişim Tercihi",
-        "concernQuestion": "Aşk hayatında şu an en çok aklını meşgul eden konu nedir?",
+      "concernQuestion": "Aşk hayatında şu an en çok aklını meşgul eden konu nedir?",
       "email": "E-posta Adresiniz",
       "emailCommunication": "E-posta",
-        "emotionalQuestion": "Şu anda duygusal olarak nasılsın? (ör. umutlu, belirsiz, yorgun…)",
+      "emotionalQuestion": "Şu anda duygusal olarak nasılsın? (ör. umutlu, belirsiz, yorgun…)",
       "firstName": "Adınız",
       "lastName": "Soyadınız",
       "personalInfo": "Kişisel Bilgiler",
@@ -643,8 +665,8 @@
       "phonePlaceholder": "+90 5XX XXX XX XX",
       "phoneRequired": "WhatsApp için telefon numarası gereklidir",
       "questions": "✨ Aşk Açılımı Soruları ✨",
-        "saveAndOpen": "Okumayı Kaydet ve Kartları Aç 💕",
-        "saving": "Kaydediliyor...",
+      "saveAndOpen": "Okumayı Kaydet ve Kartları Aç 💕",
+      "saving": "Kaydediliyor...",
       "understandingQuestion": "Bu açılımdan neyi anlamak veya duymak istiyorsun?",
       "whatsappCommunication": "WhatsApp"
     },
@@ -667,32 +689,32 @@
       "loginRequired": "Bu işlem için giriş yapmanız gerekiyor.",
       "readingSaveError": "Okuma kaydedilirken bir hata oluştu.",
       "readingSavedSuccess": "Aşk açılımınız başarıyla kaydedildi!"
-      },
-      "modals": {
-        "aboutSpread": "Açılım Hakkında",
-        "aboutSpreadText": "Bu 4 kart; aklındaki kişi, aranızdaki çekim, kalpten kalbe uyum ve ilişkinin uzun vadeli yönünü aydınlatır—bugünden yarına şefkatli bir köprü kurar.",
+    },
+    "modals": {
+      "aboutSpread": "Açılım Hakkında",
+      "aboutSpreadText": "Bu 4 kart; aklındaki kişi, aranızdaki çekim, kalpten kalbe uyum ve ilişkinin uzun vadeli yönünü aydınlatır—bugünden yarına şefkatli bir köprü kurar.",
       "cancel": "Vazgeç",
-        "cardCountInfo": "Niyetler",
-        "cardCountText": "(1) İlgi Duyduğun Kişi (2) Fiziksel Bağlantı (3) Duygusal Bağlantı (4) Uzun Vadeli Süreç.",
+      "cardCountInfo": "Niyetler",
+      "cardCountText": "(1) İlgi Duyduğun Kişi (2) Fiziksel Bağlantı (3) Duygusal Bağlantı (4) Uzun Vadeli Süreç.",
       "confirm": "Evet, Onaylıyorum",
       "continue": "Devam Et",
       "creditConfirm": "Kredi Onayı",
       "creditConfirmMessage": "Bu aşk açılımı için kredi kullanılacak. Devam etmek istediğinize emin misiniz?",
-        "detailedReading": "Sesli Okuma",
-        "detailedReadingText": "Yorumunu sıcak bir ses kaydı olarak al. Sana özel hazırlanır; indirip dilediğin an dinleyebilirsin.",
+      "detailedReading": "Sesli Okuma",
+      "detailedReadingText": "Yorumunu sıcak bir ses kaydı olarak al. Sana özel hazırlanır; indirip dilediğin an dinleyebilirsin.",
       "infoTitle": "Aşk Açılımı Hakkında",
       "loveAttention": "Okumayı kaydettikten sonra genellikle 2–4 saat içinde kişisel yorumunu e-posta ile iletirim. Bu çalışma rehberlik amaçlıdır; nihai seçimler sana aittir.",
       "loveAttentionInfo": "Nazik Bir Not",
-        "process": "Süreç",
+      "process": "Süreç",
       "processing": "İşleniyor...",
       "redirecting": "💝 Ana sayfaya yönlendiriliyorsun...",
       "saveReading": "Okumayı Kaydet 💝",
       "savingReading": "Kaydediliyor...",
-        "step1": "Kişisel bilgilerini gir",
-        "step2": "Aşk ile ilgili soruları yanıtla",
-        "step3": "4 kartı seç ve ön izle",
-        "step4": "Okumayı kaydet; sonuç e-postana gelsin",
-        "successMessage": "Aşk açılımın kaydedildi ve analiz edildi. Sonuçları panelinden görüntüleyebilirsin.",
+      "step1": "Kişisel bilgilerini gir",
+      "step2": "Aşk ile ilgili soruları yanıtla",
+      "step3": "4 kartı seç ve ön izle",
+      "step4": "Okumayı kaydet; sonuç e-postana gelsin",
+      "successMessage": "Aşk açılımın kaydedildi ve analiz edildi. Sonuçları panelinden görüntüleyebilirsin.",
       "successTitle": "Okuma Kaydedildi",
       "writtenReading": "Yazılı Okuma",
       "writtenReadingText": "Tercih edersen detaylı yazılı rapor olarak teslim edilir; istediğin zaman yeniden okuyabilirsin."
@@ -766,10 +788,10 @@
       "title": "Evlilik Açılımı Yorumu"
     },
     "title": "Evlilik Açılımı"
-    },
-    "meanings": {
-      "theFool": {
-        "position1": {
+  },
+  "meanings": {
+    "theFool": {
+      "position1": {
         "context": "Bu kişi, aşk hayatında yeni bir sayfa açmaya hazır veya bundan korkan bir maceracı.",
         "keywords": [
           "yeni başlangıçlar",
@@ -786,7 +808,11 @@
   "messages": {
     "readings": {
       "loveReadingDetailed": "Aşk Açılımı - Sesli Detaylı Okuma",
-      "loveReadingWritten": "Aşk Açılımı - Yazılı Okuma"
+      "loveReadingWritten": "Aşk Açılımı - Yazılı Okuma",
+      "marriageReading": "Evlilik Açılımı",
+      "relationshipAnalysisReading": "Durum Analizi",
+      "situationAnalysisReading": "Durum Analizi Açılımı",
+      "situationAnalysisSpread": "Durum Analizi Açılımı"
     }
   },
   "money": {
@@ -1115,13 +1141,27 @@
   },
   "problemSolving": {
     "data": {
+      "badgeText": "PROBLEM ÇÖZME",
+      "cardDirections": {
+        "reversed": "Ters",
+        "upright": "Düz"
+      },
       "dearClient": "Sevgili danışan,",
       "defaultTitle": "Problem Çözme Açılımı",
       "detailedReadingTitle": "Problem Çözme Açılımı - Detaylı Kişisel Okuma",
+      "detailedTitle": "Problem Çözme Açılımı - Detaylı Kişisel Okuma",
       "interpretationTitle": "Problem Çözme Açılımı",
+      "readingFormats": {
+        "detailed": "Sesli",
+        "simple": "Basit",
+        "written": "Yazılı"
+      },
       "reversed": "Ters",
+      "simpleInterpretation": "Basit okuma - sadece sayaç",
       "simpleReadingCounter": "Basit okuma - sadece sayaç",
+      "simpleTitle": "Basit Okuma",
       "spreadName": "Problem Çözme Yayılımı",
+      "spreadTitle": "Problem Çözme Açılımı",
       "upright": "Düz"
     },
     "errors": {
@@ -1133,12 +1173,15 @@
       "clearAll": "Tümünü Temizle",
       "close": "Kapat",
       "closeForm": "Formu kapat (ESC)",
+      "communicationMethod": "İletişim Yöntemi",
       "concernQuestion": "Hangi konuda problem yaşıyorsunuz ve çözüm arıyorsunuz?",
       "email": "E-posta Adresiniz",
+      "emailCommunication": "E-posta",
       "emotionalQuestion": "Bu problem karşısında şu anda nasıl hissediyorsunuz?",
-        "firstName": "Adınız",
-        "lastName": "Soyadınız",
+      "firstName": "Adınız",
+      "lastName": "Soyadınız",
       "personalInfo": "Kişisel Bilgileriniz",
+      "phone": "Telefon Numarası",
       "placeholders": {
         "concernQuestion": "Hangi konuda problem yaşıyorsunuz ve çözüm arıyorsunuz?",
         "email": "ornek@email.com",
@@ -1150,7 +1193,8 @@
       "questions": "✨ Problem Çözme Açılımı Soruları ✨",
       "saveAndOpen": "Kaydet ve Aç",
       "saving": "Kaydediliyor...",
-      "understandingQuestion": "Bu problem çözme açılımı ile neyi anlamak istiyorsunuz?"
+      "understandingQuestion": "Bu problem çözme açılımı ile neyi anlamak istiyorsunuz?",
+      "whatsappCommunication": "WhatsApp"
     },
     "messages": {
       "configurationNotFound": "Problem Çözme Açılımı konfigürasyonu bulunamadı. Lütfen tarotSpreads.ts dosyasını kontrol edin.",
@@ -1165,29 +1209,32 @@
     },
     "modals": {
       "aboutSpread": "Açılım Hakkında",
-      "aboutSpreadText": "Problem Çözme Açılımı, karşılaştığınız problemleri analiz etmek ve çözüm yolları bulmak için tasarlanmış 10 kartlık özel bir açılımdır.",
-      "cancel": "İptal",
-      "cardCount": "Kart Sayısı",
-      "cardCountText": "Bu açılım 10 kart kullanır ve her kart farklı bir analiz aşamasını temsil eder.",
-      "confirm": "Onayla",
+      "aboutSpreadText": "Bu 10 kart; problemi netleştirir, kök nedenleri, engelleri ve seçenekleri aydınlatır—içgörüyü sakin ve uygulanabilir adımlara dönüştürür.",
+      "cancel": "Vazgeç",
+      "cardCountInfo": "Analiz Başlıkları",
+      "cardCountText": "(1) Mevcut Durum (2) Problem Kaynağı (3) Engeller (4) Geçmiş Deneyimler (5) Mevcut Kaynaklar (6) Dış Faktörler (7) İç Görü (8) Çözüm Yolu (9) Sonuç (10) Öğrenilen Dersler.",
+      "confirm": "Evet, Onaylıyorum",
       "continue": "Devam Et",
       "creditConfirm": "Kredi Onayı",
-      "creditConfirmMessage": "Bu okuma için kredi düşülecek. Devam etmek istediğinize emin misiniz?",
-      "detailedReading": "Detaylı Okuma",
-      "detailedReadingText": "Sesli olarak kaydedilmiş, kişiselleştirilmiş detaylı yorum.",
+      "creditConfirmMessage": "Bu problem çözme açılımı için kredi kullanılacak. Devam etmek istediğinize emin misiniz?",
+      "detailedReading": "Sesli Okuma",
+      "detailedReadingText": "Yorumunu sıcak bir ses kaydı olarak al. Sana özel hazırlanır; indirip dilediğin an dinleyebilirsin.",
       "infoTitle": "Problem Çözme Açılımı Hakkında",
+      "loveAttention": "Okumayı kaydettikten sonra genellikle 2–4 saat içinde kişisel yorumunu e-posta ile iletirim. Bu çalışma rehberlik amaçlıdır; nihai seçimler sana aittir.",
+      "loveAttentionInfo": "Nazik Bir Not",
       "process": "Süreç",
       "processing": "İşleniyor...",
-      "redirecting": "🔍 Ana sayfaya yönlendiriliyorsunuz...",
+      "redirecting": "🔍 Ana sayfaya yönlendiriliyorsun...",
       "saveReading": "Okumayı Kaydet 🔍",
-      "step1": "Kişisel bilgilerinizi girin",
-      "step2": "Problem hakkında soruları yanıtlayın",
-      "step3": "10 kartı seçin ve pozisyonlarını belirleyin",
-      "step4": "Detaylı yorumunuzu alın",
-      "successMessage": "Problem çözme açılımınız başarıyla kaydedildi ve e-posta adresinize gönderildi.",
-      "successTitle": "Okuma Başarıyla Kaydedildi!",
+      "savingReading": "Kaydediliyor...",
+      "step1": "Kişisel bilgilerini gir",
+      "step2": "Problem hakkında soruları yanıtla",
+      "step3": "10 kartı seç ve pozisyonları belirle",
+      "step4": "Okumayı kaydet; detaylı yorumun e-postana gelsin",
+      "successMessage": "Problem çözme açılımın kaydedildi ve analiz edildi. Sonuçları panelinden görüntüleyebilirsin.",
+      "successTitle": "Okuma Kaydedildi",
       "writtenReading": "Yazılı Okuma",
-      "writtenReadingText": "Yazılı olarak hazırlanmış, kişiselleştirilmiş detaylı yorum."
+      "writtenReadingText": "Tercih edersen detaylı yazılı rapor olarak teslim edilir; istediğin zaman yeniden okuyabilirsin."
     },
     "validation": {
       "birthDateRequired": "Doğum tarihi gereklidir",
@@ -1266,20 +1313,24 @@
     }
   },
   "readingModal": {
+    "birthDate": "Doğum Tarihi",
     "cardspreadmeaning2": "İlişkiler ve duygusal bağlar için 4 kartlık özel açılım",
     "close": "Kapat",
     "completed": "Tamamlandı",
     "creditCost": "Kredi Maliyeti",
     "downloadPdf": "PDF İndir",
+    "email": "E-posta",
     "filePrefix": "tarot-okuma",
+    "firstName": "Ad",
     "generalSpread": "Genel Yayılım",
     "interpretation": "Mistik Yorumlama",
     "interpretationDesc": "Tarot kartlarının anlamı ve rehberliği",
+    "lastName": "Soyad",
     "loveSpread": "Aşk Açılımı",
-    "noInterpretation": "Bu kart için yorum henüz hazırlanmamış.",
     "loveSpreadName": "Aşk Açılımı",
-    "mysticNotes": "Mistik Notlar",
+    "mysticNotes": "Kişisel mistik notlarınızı kaydetmek için bu okumanın PDF kopyasını indirebilirsiniz.",
     "mysticReading": "Mistik Okuma",
+    "noInterpretation": "Bu kart için yorum henüz hazırlanmamış.",
     "pdfError": "PDF oluşturulurken bir hata oluştu. Lütfen tekrar deneyin.",
     "pending": "Beklemede",
     "position": "Pozisyon",
@@ -1287,6 +1338,7 @@
     "position2": "Fiziksel/Cinsel Bağlantı",
     "position3": "Duygusal/Ruhsal Bağlantı",
     "position4": "Uzun Vadeli Sonuç",
+    "question": "Soru",
     "question1": "Aşk hayatınızda sizi en çok endişelendiren konu nedir?",
     "question2": "Bu aşk açılımı ile neyi anlamak istiyorsunuz?",
     "question3": "Şu anda duygusal olarak nasıl hissediyorsunuz?",
@@ -1307,6 +1359,12 @@
     "clearFilters": "Filtreleri Temizle",
     "credits": "kredi",
     "firstExperience": "İlk mistik deneyiminizi yaşamaya hazır mısınız? Tarot kartları sizi bekliyor...",
+    "format": {
+      "audio": "Sesli Okuma",
+      "simple": "Basit Okuma",
+      "written": "Yazılı Okuma"
+    },
+    "formatLabel": "Okuma Formatı",
     "generalReading": "Genel Okuma",
     "generalReadings": "Genel Okumalar",
     "generalSpread": "Genel Yayılım",
@@ -1328,7 +1386,13 @@
     "numerologyAnalysis": "Numeroloji Analizi",
     "numerologyReading": "Numeroloji Okuması",
     "preparing": "Mistik deneyimleriniz hazırlanıyor...",
+    "problemSolvingReading": "Problem Çözme Açılımı",
+    "problemSolvingSpread": "Problem Çözme Yayılımı",
+    "relationshipAnalysisReading": "İlişki Analizi Açılımı",
+    "relationshipAnalysisSpread": "İlişki Analizi Yayılımı",
     "searchPlaceholder": "Okuma ara...",
+    "situationAnalysisReading": "Durum Analizi Açılımı",
+    "situationAnalysisSpread": "Durum Analizi Yayılımı",
     "startFirstReading": "İlk Okumayı Başlat",
     "threeCardReading": "3 Kart Okuması",
     "threeCardSpread": "3 Kart Yayılımı",
@@ -1337,6 +1401,26 @@
     "view": "Görüntüle"
   },
   "relationshipAnalysis": {
+    "data": {
+      "badgeText": "İLİŞKİ ANALİZİ",
+      "cardDirections": {
+        "reversed": "Ters",
+        "upright": "Düz"
+      },
+      "defaultTitle": "İlişki Analizi Açılımı",
+      "detailedReadingTitle": "İlişki Analizi Açılımı - Detaylı Kişisel Okuma",
+      "detailedTitle": "İlişki Analizi Açılımı - Detaylı Kişisel Okuma",
+      "interpretationTitle": "İlişki Analizi Açılımı Yorumu",
+      "readingFormats": {
+        "detailed": "Sesli",
+        "simple": "Basit",
+        "written": "Yazılı"
+      },
+      "simpleInterpretation": "Basit okuma - sadece sayaç",
+      "simpleTitle": "Basit Okuma",
+      "spreadName": "İlişki Analizi Açılımı",
+      "spreadTitle": "İlişki Analizi Açılımı"
+    },
     "form": {
       "birthDate": "Doğum Tarihi",
       "clearAll": "🔄 Tümünü Temizle",
@@ -1379,6 +1463,26 @@
     }
   },
   "relationshipProblems": {
+    "data": {
+      "badgeText": "İLİŞKİ SORUNLARI",
+      "cardDirections": {
+        "reversed": "Ters",
+        "upright": "Düz"
+      },
+      "defaultTitle": "İlişki Sorunları Açılımı",
+      "detailedReadingTitle": "İlişki Sorunları Açılımı - Detaylı Kişisel Okuma",
+      "detailedTitle": "İlişki Sorunları Açılımı - Detaylı Kişisel Okuma",
+      "interpretationTitle": "İlişki Sorunları Açılımı Yorumu",
+      "readingFormats": {
+        "detailed": "Sesli",
+        "simple": "Basit",
+        "written": "Yazılı"
+      },
+      "simpleInterpretation": "Basit okuma - sadece sayaç",
+      "simpleTitle": "Basit Okuma",
+      "spreadName": "İlişki Sorunları Açılımı",
+      "spreadTitle": "İlişki Sorunları Açılımı"
+    },
     "form": {
       "birthDate": "Doğum Tarihi",
       "clearAll": "🔄 Tümünü Temizle",
@@ -1406,6 +1510,8 @@
       "detailedReading": "Sesli Okuma",
       "detailedReadingText": "Sesli okuma ile ilişkinizdeki sorunları derinlemesine analiz edebilirsiniz. Kişisel bilgileriniz ve özel sorularınız ile daha kişiselleştirilmiş bir yorum alırsınız.",
       "infoTitle": "İlişki Sorunları Açılımı Hakkında",
+      "loveAttention": "Okumayı kaydettikten sonra genellikle 2–4 saat içinde kişisel yorumunu e-posta ile iletirim. Bu çalışma rehberlik amaçlıdır; nihai seçimler sana aittir.",
+      "loveAttentionInfo": "Nazik Bir Not",
       "process": "Süreç",
       "processing": "İşleniyor...",
       "redirecting": "💔 Ana sayfaya yönlendiriliyorsunuz...",
@@ -1489,10 +1595,23 @@
   "situationAnalysis": {
     "data": {
       "badgeText": "DURUM ANALİZİ",
+      "cardDirections": {
+        "reversed": "Ters",
+        "upright": "Düz"
+      },
       "defaultTitle": "Durum Analizi Açılımı",
       "detailedReadingTitle": "Durum Analizi Açılımı - Detaylı Kişisel Okuma",
+      "detailedTitle": "Durum Analizi Açılımı - Detaylı Kişisel Okuma",
       "interpretationTitle": "Durum Analizi Açılımı Yorumu",
-      "spreadName": "Durum Analizi Açılımı"
+      "readingFormats": {
+        "detailed": "Sesli",
+        "simple": "Basit",
+        "written": "Yazılı"
+      },
+      "simpleInterpretation": "Basit okuma - sadece sayaç",
+      "simpleTitle": "Basit Okuma",
+      "spreadName": "Durum Analizi Açılımı",
+      "spreadTitle": "Durum Analizi Açılımı"
     },
     "errors": {
       "allCardsRequired": "Tüm kartları seçmeden yorum oluşturulamaz.",
@@ -1503,14 +1622,20 @@
       "clearAll": "🔄 Tümünü Temizle",
       "concernQuestion": "Hangi durumu analiz etmek istiyorsunuz?",
       "email": "E-posta Adresiniz",
+      "emailCommunication": "E-posta",
       "emotionalQuestion": "Bu durum karşısında şu anda nasıl hissediyorsunuz?",
       "firstName": "Adınız",
       "lastName": "Soyadınız",
       "personalInfo": "Kişisel Bilgileriniz",
+      "phone": "Telefon Numarası",
+      "phoneCommunication": "Telefon",
+      "phonePlaceholder": "+90 5XX XXX XX XX",
+      "phoneRequired": "WhatsApp için telefon numarası gereklidir",
       "questions": "✨ Durum Analizi Açılımı Soruları ✨",
       "saveAndOpen": "🔍 Kaydet ve Kartları Aç",
       "saving": "Kaydediliyor...",
-      "understandingQuestion": "Bu durum analizi ile neyi anlamak istiyorsunuz?"
+      "understandingQuestion": "Bu durum analizi ile neyi anlamak istiyorsunuz?",
+      "whatsappCommunication": "WhatsApp"
     },
     "interpretation": {
       "dearClient": "Sevgili danışan,",
@@ -1520,6 +1645,7 @@
     "messages": {
       "formNotSavedConfirm": "Form dolduruldu ancak kaydedilmedi. Çıkmak istediğinize emin misiniz?",
       "readingSaveError": "Okuma kaydedilirken bir hata oluştu.",
+      "readingSavedSuccess": "Durum analizi açılımınız başarıyla kaydedildi!",
       "readingSavedSuccessfully": "Okumanız başarıyla kaydedildi!",
       "redirectingToHome": "Ana sayfaya yönlendiriliyorsunuz...",
       "savingReading": "📝 Okuma kaydediliyor...",
@@ -1539,6 +1665,8 @@
       "detailedReading": "Sesli Okuma",
       "detailedReadingText": "Kartların detaylı yorumları ve pozisyon anlamları ile birlikte kapsamlı bir analiz sunar.",
       "infoTitle": "Durum Analizi Açılımı Hakkında",
+      "loveAttention": "Okumayı kaydettikten sonra genellikle 2–4 saat içinde kişisel yorumunu e-posta ile iletirim. Bu çalışma rehberlik amaçlıdır; nihai seçimler sana aittir.",
+      "loveAttentionInfo": "Nazik Bir Not",
       "process": "Süreç",
       "processing": "İşleniyor...",
       "redirecting": "🔍 Ana sayfaya yönlendiriliyorsunuz...",
@@ -1615,43 +1743,43 @@
       "description": "Evlilik ve eş bulma için 10 kartlık özel açılım",
       "name": "Evlilik Açılımı",
       "positions": {
-      "1": {
+        "1": {
           "description": "Evlilik sürecinizin genel sonucunu ve nasıl ilerleyeceğini gösterir.",
           "title": "Sonuç ne olacak?"
         },
         "10": {
           "description": "Evlilik potansiyelinizi ve evlenme şansınızı gösterir.",
           "title": "Evlenebilecek miyim?"
-      },
-      "2": {
+        },
+        "2": {
           "description": "Doğru kişiyi bulana kadar kendinizi nasıl geliştirmeniz gerektiğini gösterir.",
           "title": "Eşimi beklerken benim ne yapmam gerekiyor?"
-      },
-      "3": {
+        },
+        "3": {
           "description": "Evlilikte mali konularda uyumunuzu ve paylaşımınızı gösterir.",
           "title": "Mali kaynaklarımızı birbirimizle paylaşacak mıyız?"
-      },
-      "4": {
+        },
+        "4": {
           "description": "Her iki tarafın da evliliğe hazır olup olmadığını ve bağlanma isteğini gösterir.",
           "title": "Her ikimiz de bağlanmak isteyecek miyiz?"
-      },
-      "5": {
+        },
+        "5": {
           "description": "Ortak değerleriniz, benzerlikleriniz ve uyumunuzu gösterir.",
           "title": "Benzer yanlarımız olacak mı?"
-      },
-      "6": {
+        },
+        "6": {
           "description": "Aile onayı ve aile ilişkilerinizin nasıl olacağını gösterir.",
           "title": "Bu kişinin ailesi beni kabul edecek mi?"
-      },
-      "7": {
+        },
+        "7": {
           "description": "Doğru kişiyle nasıl tanışacağınızı ve buluşacağınızı gösterir.",
           "title": "Birbirimizi nasıl bulacağız?"
-      },
-      "8": {
+        },
+        "8": {
           "description": "İletişim uyumunuzu ve birbirinizi anlama kapasitenizi gösterir.",
           "title": "Anlaşabilecek miyiz?"
-      },
-      "9": {
+        },
+        "9": {
           "description": "İdeal eşinizin özelliklerini ve sizinle uyumlu olacak kişiyi gösterir.",
           "title": "Benim için nasıl bir eş uygundur?"
         }
@@ -1726,6 +1854,9 @@
       }
     },
     "problemSolving": {
+      "data": {
+        "detailedTitle": "Problem Çözme Açılımı - Detaylı Kişisel Okuma"
+      },
       "description": "Problem analizi ve çözüm için 10 kartlık detaylı açılım",
       "name": "Problem Çözme Açılımı",
       "positions": {
@@ -1772,40 +1903,46 @@
       }
     },
     "relationshipAnalysis": {
+      "data": {
+        "detailedTitle": "İlişki Analizi Açılımı - Detaylı Kişisel Okuma"
+      },
       "description": "İlişki analizi ve değerlendirme için 7 kartlık özel açılım",
       "name": "İlişki Analizi Açılımı",
       "positions": {
-      "1": {
+        "1": {
           "description": "İlişkinin mevcut şartları, içinde bulunduğu durum ve varsa problemlerin yarattığı atmosfer hakkında bilgi verir.",
           "title": "Mevcut Durum"
-      },
-      "2": {
+        },
+        "2": {
           "description": "Sizin hisleriniz, düşünceleriniz ve partnerinize bakış açınızı gösterir. İlişkideki duygusal durumunuzu yansıtır.",
           "title": "Sizin Hissleriniz"
-      },
-      "3": {
+        },
+        "3": {
           "description": "Sizin ilişkiniz ya da içinde bulunduğunuz durum hakkında endişelerinizi, beklentilerinizi ve hayallerinizi gösterir.",
           "title": "Sizin Beklentileriniz"
-      },
-      "4": {
+        },
+        "4": {
           "description": "İlişkinizin gidişatı ile ilgili sergileyeceğiniz tutum ile ilgili tavsiyeleri içerir. Nasıl davranmanız gerektiğini gösterir.",
           "title": "Tavsiyeler"
-      },
-      "5": {
+        },
+        "5": {
           "description": "Bu ilişkide ya da var olan sorun karşısında takınmanız gereken tavır ve nasıl bir yol izlemeniz konusunda size yol gösterir.",
           "title": "Yol Haritası"
-      },
-      "6": {
+        },
+        "6": {
           "description": "Partnerinizin ilişkiniz ya da içinde bulunduğunuz durum hakkında endişelerini, beklentilerini ve hayallerini gösterir.",
           "title": "Partnerinizin Beklentileri"
-      },
-      "7": {
+        },
+        "7": {
           "description": "Partnerinizin hislerini, düşüncelerini ve size bakış açısını gösterir. İlişkideki duygusal durumunu yansıtır.",
           "title": "Partnerinizin Hissleri"
         }
       }
     },
     "relationshipProblems": {
+      "data": {
+        "detailedTitle": "İlişki Sorunları Açılımı - Detaylı Kişisel Okuma"
+      },
       "description": "İlişki sorunları analizi ve çözüm için 9 kartlık özel açılım",
       "name": "İlişki Sorunları Açılımı",
       "positions": {
@@ -1947,9 +2084,29 @@
     "past": "Geçmiş",
     "position": "Pozisyon",
     "present": "Şimdi",
+    "problemSolving": {
+      "data": {
+        "detailedTitle": "Problem Çözme Açılımı - Detaylı Kişisel Okuma"
+      }
+    },
     "reading": "Okuma",
+    "relationshipAnalysis": {
+      "data": {
+        "detailedTitle": "İlişki Analizi Açılımı - Detaylı Kişisel Okuma"
+      }
+    },
+    "relationshipProblems": {
+      "data": {
+        "detailedTitle": "İlişki Sorunları Açılımı - Detaylı Kişisel Okuma"
+      }
+    },
     "selectCards": "Kartları Seçin",
     "shuffle": "Karıştır",
+    "situationAnalysis": {
+      "data": {
+        "detailedTitle": "Durum Analizi Açılımı - Detaylı Kişisel Okuma"
+      }
+    },
     "spirituality": "Ruhsallık",
     "spread": "Açılım",
     "strength": "Güç",
@@ -2128,7 +2285,7 @@
           "upright": "Yeni başlangıçlar, masumiyet, spontanlık"
         },
         "name": "Deli"
-    },
+      },
       "1": {
         "keywords": [
           "tezahür",
@@ -2518,7 +2675,7 @@
       }
     },
     "swords": {
-        "1": {
+      "1": {
         "keywords": [
           "berraklık",
           "atılım"
@@ -2528,8 +2685,8 @@
           "upright": "Atılım, berraklık"
         },
         "name": "Kılıçlar Ası"
-        },
-        "10": {
+      },
+      "10": {
         "keywords": [
           "sonlar",
           "ihanet"
@@ -2539,8 +2696,8 @@
           "upright": "Acılı sonlar, ihanet"
         },
         "name": "Kılıçlar Onlusu"
-        },
-        "2": {
+      },
+      "2": {
         "keywords": [
           "kararlar",
           "çıkmaz"
@@ -2550,8 +2707,8 @@
           "upright": "Zor kararlar, çıkmaz"
         },
         "name": "Kılıçlar İkilisi"
-        },
-        "3": {
+      },
+      "3": {
         "keywords": [
           "kalp kırıklığı",
           "keder"
@@ -2561,8 +2718,8 @@
           "upright": "Kalp kırıklığı, keder"
         },
         "name": "Kılıçlar Üçlüsü"
-        },
-        "4": {
+      },
+      "4": {
         "keywords": [
           "dinlenme",
           "meditasyon"
@@ -2572,8 +2729,8 @@
           "upright": "Dinlenme, meditasyon"
         },
         "name": "Kılıçlar Dörtlüsü"
-        },
-        "5": {
+      },
+      "5": {
         "keywords": [
           "çatışma",
           "yenilgi"
@@ -2583,8 +2740,8 @@
           "upright": "Çatışma, yenilgi"
         },
         "name": "Kılıçlar Beşlisi"
-        },
-        "6": {
+      },
+      "6": {
         "keywords": [
           "geçiş",
           "değişim"
@@ -2594,8 +2751,8 @@
           "upright": "Geçiş, değişim"
         },
         "name": "Kılıçlar Altılısı"
-        },
-        "7": {
+      },
+      "7": {
         "keywords": [
           "ihanet",
           "aldatma"
@@ -2674,7 +2831,7 @@
       }
     },
     "wands": {
-        "1": {
+      "1": {
         "keywords": [
           "ilham",
           "güç"
@@ -2695,8 +2852,8 @@
           "upright": "Yük, sorumluluk"
         },
         "name": "Asalar Onlusu"
-        },
-        "2": {
+      },
+      "2": {
         "keywords": [
           "planlama",
           "kararlar"
@@ -2706,8 +2863,8 @@
           "upright": "Gelecek planlama, kararlar"
         },
         "name": "Asalar İkilisi"
-        },
-        "3": {
+      },
+      "3": {
         "keywords": [
           "genişleme",
           "öngörü"
@@ -2717,8 +2874,8 @@
           "upright": "Genişleme, öngörü"
         },
         "name": "Asalar Üçlüsü"
-        },
-        "4": {
+      },
+      "4": {
         "keywords": [
           "kutlama",
           "uyum"
@@ -2728,8 +2885,8 @@
           "upright": "Kutlama, uyum"
         },
         "name": "Asalar Dörtlüsü"
-        },
-        "5": {
+      },
+      "5": {
         "keywords": [
           "çatışma",
           "rekabet"
@@ -2739,8 +2896,8 @@
           "upright": "Çatışma, rekabet"
         },
         "name": "Asalar Beşlisi"
-        },
-        "6": {
+      },
+      "6": {
         "keywords": [
           "başarı",
           "tanınma"
@@ -2750,8 +2907,8 @@
           "upright": "Başarı, tanınma"
         },
         "name": "Asalar Altılısı"
-        },
-        "7": {
+      },
+      "7": {
         "keywords": [
           "meydan okuma",
           "sebat"
@@ -2761,8 +2918,8 @@
           "upright": "Meydan okuma, sebat"
         },
         "name": "Asalar Yedilisi"
-        },
-        "8": {
+      },
+      "8": {
         "keywords": [
           "hız",
           "ilerleme"
@@ -2772,8 +2929,8 @@
           "upright": "Hız, ilerleme"
         },
         "name": "Asalar Sekizlisi"
-        },
-        "9": {
+      },
+      "9": {
         "keywords": [
           "dayanıklılık",
           "cesaret"
