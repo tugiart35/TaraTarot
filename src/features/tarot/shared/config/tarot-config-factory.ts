@@ -439,9 +439,9 @@ const MARRIAGE_POSITIONS_INFO: PositionInfo[] = [
 
 const MARRIAGE_POSITIONS_LAYOUT: PositionLayout[] = [
   // Üst sıra (10, 9, 8)
-  { id: 10, className: 'absolute top-[10%] left-[15%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sol üst
-  { id: 9, className: 'absolute top-[10%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Merkez üst
-  { id: 8, className: 'absolute top-[10%] left-[85%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sağ üst
+  { id: 10, className: 'absolute top-[15%] left-[15%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sol üst
+  { id: 9, className: 'absolute top-[15%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Merkez üst
+  { id: 8, className: 'absolute top-[15%] left-[85%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sağ üst
   
   // Orta sıra - Sol daire (7, 6)
   { id: 7, className: 'absolute top-[35%] left-[25%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sol daire üst
@@ -1003,7 +1003,7 @@ export function createMarriageConfig(): TarotConfig {
     theme: 'pink',
     icon: '💒',
     readingType: 'MARRIAGE_SPREAD',
-    supabaseReadingType: 'love', // Veritabanında mevcut enum değeri
+    supabaseReadingType: 'marriage', // Veritabanında mevcut enum değeri
     creditKeyPrefix: 'MARRIAGE',
   });
 }
@@ -1057,7 +1057,7 @@ export function createNewLoverConfig(): TarotConfig {
     theme: 'pink',
     icon: '💕',
     readingType: 'NEW_LOVER_SPREAD',
-    supabaseReadingType: 'love', // Veritabanında mevcut enum değeri
+    supabaseReadingType: 'new-lover', // Veritabanında mevcut enum değeri
     creditKeyPrefix: 'NEW_LOVER',
   });
 }

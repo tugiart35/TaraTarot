@@ -197,7 +197,7 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
               case 'problem-solving':
                 return t('readings.problemSolvingReading', 'Problem Çözme Açılımı');
               default:
-                return reading.title || t('readings.mysticReading', 'Mistik Okuma');
+                return reading.title || t('readings.mysticReading', 'Tarot Okuma');
             }
           };
 

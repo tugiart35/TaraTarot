@@ -370,7 +370,7 @@ class PDFGeneratorService {
       </head>
       <body>
         <div class="header">
-          <h1>${getReadingIcon(readingData.reading_type)} ${readingData.title || 'Mistik Okuma'}</h1>
+          <h1>${getReadingIcon(readingData.reading_type)} ${readingData.title || 'Tarot okuma'}</h1>
           <p>${readingData.spread_name || 'Genel Yayılım'}</p>
         </div>
         

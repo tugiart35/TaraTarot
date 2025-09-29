@@ -146,7 +146,7 @@ class EmailService {
 
     const emailData: EmailData = {
       to: 'busbuskimkionline@gmail.com', // Sadece admin'e gönder
-      subject: `📊 Yeni Tarot Okuma - ${readingData.title || 'Mistik Okuma'}`,
+      subject: `📊 Yeni Tarot Okuma - ${readingData.title || 'Tarot okuma'}`,
       html: htmlTemplate,
       // PDF attachments kaldırıldı
     };
@@ -432,7 +432,7 @@ class EmailService {
               </div>
               <div class="info-row">
                 <span class="info-label">Başlık:</span> 
-                <span class="info-value">${readingData.title || 'Mistik Okuma'}</span>
+                <span class="info-value">${readingData.title || 'Tarot okuma'}</span>
               </div>
               <div class="info-row">
                 <span class="info-label">Yayılım:</span> 

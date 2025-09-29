@@ -264,7 +264,7 @@ export function getReadingTitle(readingType: string): string {
     case 'tarot':
       return 'Tarot Okuması';
     default:
-      return 'Mistik Okuma';
+      return 'Tarot okuma';
   }
 }
 

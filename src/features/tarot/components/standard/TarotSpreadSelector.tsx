@@ -40,7 +40,7 @@ import { useState } from 'react';
 interface TarotSpreadSelectorProps {
   spreads: TarotSpread[];
   selectedSpread: string;
-  onSpreadSelect: (_spreadId: string) => void;
+  onSpreadSelect: (spreadId: string) => void;
   showDescription?: boolean; // Açıklama gösterilsin mi?
 }
 

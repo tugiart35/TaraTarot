@@ -118,12 +118,12 @@ export const READING_CREDIT_CONFIGS = {
     description: '9 kartlık yazılı ilişki sorunları açılımı',
   },
   MARRIAGE_DETAILED: {
-    cost: 140,
+    cost: 120,
     name: 'Evlilik Açılımı (Detaylı)',
     description: '10 kartlık detaylı evlilik açılımı',
   },
   MARRIAGE_WRITTEN: {
-    cost: 130,
+    cost: 110,
     name: 'Evlilik Açılımı (Yazılı)',
     description: '10 kartlık yazılı evlilik açılımı',
   },

@@ -1064,7 +1064,7 @@ export default function ReadingDetailModal({
               <div>
                 <h2 className='text-2xl font-bold bg-gradient-to-r from-gold to-yellow-400 bg-clip-text text-transparent'>
                   {reading.title ||
-                    t('readingModal.mysticReading', 'Mistik Okuma')}
+                    t('readingModal.mysticReading', 'Tarot okuma')}
                 </h2>
                 <p className='text-lavender/90'>
                   {reading.spread_name ||

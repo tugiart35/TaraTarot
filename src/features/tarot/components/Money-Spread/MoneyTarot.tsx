@@ -12,7 +12,7 @@ import {
 const MoneyReading = createTarotReadingComponent({
   getConfig: () => createMoneyConfig(),
   interpretationEmoji: '💰',
-  readingType: 'MONEY_SPREAD_DETAILED', // Money Spread için reading type belirt
+  readingType: 'MONEY_SPREAD', // Money Spread için reading type belirt
   getCardMeaning: (
     card: TarotCard | null,
     position: number,
