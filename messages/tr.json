@@ -739,6 +739,11 @@
     }
   },
   "marriage": {
+    "data": {
+      "badgeText": "EVLİLİK",
+      "detailedTitle": "Evlilik Açılımı - Detaylı Kişisel Okuma",
+      "spreadName": "Evlilik Açılımı"
+    },
     "credit": {
       "cancel": "İptal",
       "confirm": "Onayla",
@@ -816,6 +821,11 @@
     }
   },
   "money": {
+    "data": {
+      "badgeText": "PARA",
+      "detailedTitle": "Para Açılımı - Detaylı Kişisel Okuma",
+      "spreadName": "Para Açılımı"
+    },
     "form": {
       "birthDate": "Doğum Tarihi",
       "clearAll": "Tümünü Temizle",
@@ -883,6 +893,11 @@
     "tarot": "Tarot"
   },
   "newLover": {
+    "data": {
+      "badgeText": "YENİ AŞK",
+      "detailedTitle": "Yeni Aşk Açılımı - Detaylı Kişisel Okuma",
+      "spreadName": "Yeni Aşk Açılımı"
+    },
     "credit": {
       "cancel": "İptal",
       "confirm": "Onayla",
@@ -1433,6 +1448,9 @@
       "questions": "💕 İlişki Analizi Açılımı Soruları 💕",
       "saveAndOpen": "💕 Kaydet ve Kartları Aç",
       "saving": "Kaydediliyor...",
+      "emailCommunication": "E-posta",
+      "whatsappCommunication": "WhatsApp",
+      "communicationMethod": "İletişim Yöntemi",
       "understandingQuestion": "Bu ilişki analizi ile neyi anlamak istiyorsunuz?"
     },
     "modals": {
@@ -1459,12 +1477,18 @@
       "successMessage": "İlişki analizi açılımınız detaylı olarak kaydedildi ve analiz edildi. Sonuçlarınızı kullanıcı panelinden görüntüleyebilirsiniz.",
       "successTitle": "Okuma Başarıyla Kaydedildi!",
       "writtenReading": "Yazılı Okuma",
+      "loveAttention": "Okumayı kaydettikten sonra genellikle 2–4 saat içinde kişisel yorumunu e-posta ile iletirim. Bu çalışma rehberlik amaçlıdır; nihai seçimler sana aittir.",
+      "loveAttentionInfo": "Nazik Bir Not",
+      "communicationMethod": "İletişim Yöntemi",
+      "emailCommunication": "E-posta",
+      "whatsappCommunication": "WhatsApp",
+      "continue": "Devam Et",
       "writtenReadingText": "Yazılı okuma ile ilişki analizinizi detaylı bir rapor halinde alabilirsiniz. Bu raporu kaydedebilir ve daha sonra tekrar okuyabilirsiniz."
     }
   },
   "relationshipProblems": {
     "data": {
-      "badgeText": "İLİŞKİ SORUNLARI",
+      "badgeText": "Kart yorumları bilgilendirme amaçlıdır. Detaylı okumanız size ulaştıracaktır.",
       "cardDirections": {
         "reversed": "Ters",
         "upright": "Düz"
@@ -1472,7 +1496,7 @@
       "defaultTitle": "İlişki Sorunları Açılımı",
       "detailedReadingTitle": "İlişki Sorunları Açılımı - Detaylı Kişisel Okuma",
       "detailedTitle": "İlişki Sorunları Açılımı - Detaylı Kişisel Okuma",
-      "interpretationTitle": "İlişki Sorunları Açılımı Yorumu",
+      "interpretationTitle": "İlişki Sorunları Açılımı",
       "readingFormats": {
         "detailed": "Sesli",
         "simple": "Basit",
@@ -1484,6 +1508,9 @@
       "spreadTitle": "İlişki Sorunları Açılımı"
     },
     "form": {
+      "communicationMethod": "İletişim Yöntemi",
+      "emailCommunication": "E-posta",
+      "whatsappCommunication": "WhatsApp",
       "birthDate": "Doğum Tarihi",
       "clearAll": "🔄 Tümünü Temizle",
       "concernQuestion": "Hangi ilişki sorununu analiz etmek istiyorsunuz?",
@@ -1525,6 +1552,15 @@
       "successTitle": "Okuma Başarıyla Kaydedildi!",
       "writtenReading": "Yazılı Okuma",
       "writtenReadingText": "Yazılı okuma ile ilişki sorunları analizinizi detaylı bir rapor halinde alabilirsiniz. Bu raporu kaydedebilir ve daha sonra tekrar okuyabilirsiniz."
+    },
+    "messeages": {
+      "readingSaveError": "Okuma kaydedilirken bir hata oluştu.",
+      "readingSavedSuccessfully": "Okumanız başarıyla kaydedildi!",
+      "redirectingToHome": "Ana sayfaya yönlendiriliyorsunuz...",
+      "savingReading": "📝 Okuma kaydediliyor...",
+      "selectReadingTypeFirst": "Lütfen önce bir okuma tipi seçin.",
+      "readingSavedSuccess": "Okumanız başarıyla kaydedildi!",
+      "simpleReadingCompleted": "Basit okuma tamamlandı!"
     }
   },
   "seo": {
@@ -2092,12 +2128,31 @@
     "reading": "Okuma",
     "relationshipAnalysis": {
       "data": {
-        "detailedTitle": "İlişki Analizi Açılımı - Detaylı Kişisel Okuma"
+        "detailedTitle": "İlişki Analizi Açılımı - Detaylı Kişisel Okuma",  
+        "messages": {
+          "detailedDescription": "Sesli ve detaylı yorumlama",
+          "detailedSelected": "Sesli okuma seçildi",
+          "simpleDescription": "Basit yazılı Sesli okuması",
+          "simpleSelected": "Basit okuma seçildi",
+          "writtenDescription": "Yazılı ve kapsamlı yorumlama",
+          "readingSavedSuccessfully": "Okumanız başarıyla kaydedildi!",
+          "writtenSelected": "Yazılı okuma seçildi"
+        }
       }
     },
     "relationshipProblems": {
       "data": {
-        "detailedTitle": "İlişki Sorunları Açılımı - Detaylı Kişisel Okuma"
+        "detailedTitle": "İlişki Sorunları Açılımı - Detaylı Kişisel Okuma",
+        "messages": {
+          "detailedDescription": "Sesli ve detaylı yorumlama",
+          "readingSaveError": "Okuma kaydedilirken bir hata oluştu.",
+          "detailedSelected": "Sesli okuma seçildi",
+          "simpleDescription": "Basit yazılı Sesli okuması",
+          "simpleSelected": "Basit okuma seçildi",
+          "writtenDescription": "Yazılı ve kapsamlı yorumlama",
+          "readingSavedSuccessfully": "Okumanız başarıyla kaydedildi!",
+          "writtenSelected": "Yazılı okuma seçildi"
+        }
       }
     },
     "selectCards": "Kartları Seçin",

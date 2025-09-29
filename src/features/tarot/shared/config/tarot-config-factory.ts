@@ -1021,7 +1021,7 @@ export function createRelationshipAnalysisConfig(): TarotConfig {
     theme: 'blue',
     icon: '💙',
     readingType: 'RELATIONSHIP_ANALYSIS_SPREAD',
-    supabaseReadingType: 'relationshipAnalysis', // Veritabanında mevcut enum değeri
+    supabaseReadingType: 'relationship-analysis', // Veritabanında mevcut enum değeri
     creditKeyPrefix: 'RELATIONSHIP_ANALYSIS',
   });
 }
@@ -1039,7 +1039,7 @@ export function createRelationshipProblemsConfig(): TarotConfig {
     theme: 'red',
     icon: '💔',
     readingType: 'RELATIONSHIP_PROBLEMS_SPREAD',
-    supabaseReadingType: 'relationshipProblems', // Veritabanında mevcut enum değeri
+    supabaseReadingType: 'relationship-problems', // Veritabanında mevcut enum değeri
     creditKeyPrefix: 'RELATIONSHIP_PROBLEMS',
   });
 }

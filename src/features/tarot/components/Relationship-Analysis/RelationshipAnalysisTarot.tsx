@@ -26,7 +26,7 @@ const RelationshipAnalysisReading = createTarotReadingComponent({
       isReversed
     });
 
-    const meaning = getRelationshipAnalysisMeaningByCardAndPosition(card, position, isReversed);
+    const meaning = getRelationshipAnalysisMeaningByCardAndPosition(card, position);
 
     console.log('🔍 RelationshipAnalysisTarot meaning result:', {
       found: !!meaning,

@@ -51,7 +51,7 @@ export function useReadingMetadata(
       title = t(rawTitle, rawTitle);
     } else if (normalizedType) {
       // Normalized type'a göre çeviri anahtarı oluştur
-      const translationKey = `tarot.${normalizedType}.data.detailedTitle`;
+      const translationKey = `${normalizedType}.data.detailedTitle`;
       const translatedTitle = t(translationKey, '');
       
       if (translatedTitle && translatedTitle !== translationKey) {

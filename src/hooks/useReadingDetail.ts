@@ -1,8 +1,10 @@
 import { useMemo } from 'react';
 import { useTranslations } from '@/hooks/useTranslations';
 import type { Reading } from '@/types/dashboard.types';
-import type { TarotTheme } from '@/features/tarot/shared/types/tarot-config.types';
-import type { TarotConfig } from '@/features/tarot/shared/types/tarot-config.types';
+import type {
+  TarotTheme,
+  TarotConfig,
+} from '@/features/tarot/shared/types/tarot-config.types';
 import { sanitizeHtml } from '@/utils/security';
 import { useReadingCards } from '@/hooks/useReadingCards';
 import { useReadingQuestions } from '@/hooks/useReadingQuestions';
@@ -33,7 +35,10 @@ export type NormalizedTarotReadingType =
 
 // Import edilen hook'lardan gelen interface'ler
 export type { ReadingDetailCard } from '@/hooks/useReadingCards';
-export type { ReadingQuestionEntry, ReadingQuestions } from '@/hooks/useReadingQuestions';
+export type {
+  ReadingQuestionEntry,
+  ReadingQuestions,
+} from '@/hooks/useReadingQuestions';
 export type { ReadingStatusInfo } from '@/utils/reading-status-utils';
 
 export interface ReadingDetailResult {
@@ -55,30 +60,31 @@ export interface ReadingDetailResult {
   filePrefix: string;
 }
 
-const CONFIG_FACTORIES: Record<NormalizedTarotReadingType, () => TarotConfig> = {
-  love: createLoveConfig,
-  newLover: createNewLoverConfig,
-  career: createCareerConfig,
-  money: createMoneyConfig,
-  problemSolving: createProblemSolvingConfig,
-  marriage: createMarriageConfig,
-  situationAnalysis: createSituationAnalysisConfig,
-  relationshipAnalysis: createRelationshipAnalysisConfig,
-  relationshipProblems: createRelationshipProblemsConfig,
-};
+const CONFIG_FACTORIES: Record<NormalizedTarotReadingType, () => TarotConfig> =
+  {
+    love: createLoveConfig,
+    newLover: createNewLoverConfig,
+    career: createCareerConfig,
+    money: createMoneyConfig,
+    problemSolving: createProblemSolvingConfig,
+    marriage: createMarriageConfig,
+    situationAnalysis: createSituationAnalysisConfig,
+    relationshipAnalysis: createRelationshipAnalysisConfig,
+    relationshipProblems: createRelationshipProblemsConfig,
+  };
 
-const TYPE_PRESENTATION: Record<NormalizedTarotReadingType, { icon: string }> = {
-  love: { icon: '💕' },
-  newLover: { icon: '💖' },
-  career: { icon: '💼' },
-  money: { icon: '💰' },
-  problemSolving: { icon: '🧩' },
-  marriage: { icon: '💒' },
-  situationAnalysis: { icon: '🔮' },
-  relationshipAnalysis: { icon: '💙' },
-  relationshipProblems: { icon: '💔' },
-};
-
+const TYPE_PRESENTATION: Record<NormalizedTarotReadingType, { icon: string }> =
+  {
+    love: { icon: '💕' },
+    newLover: { icon: '💖' },
+    career: { icon: '💼' },
+    money: { icon: '💰' },
+    problemSolving: { icon: '🧩' },
+    marriage: { icon: '💒' },
+    situationAnalysis: { icon: '🔮' },
+    relationshipAnalysis: { icon: '💙' },
+    relationshipProblems: { icon: '💔' },
+  };
 
 function normalizeReadingType(
   readingType?: string,
@@ -89,99 +95,119 @@ function normalizeReadingType(
   }
 
   const source = `${readingType ?? ''} ${spreadName ?? ''}`.toLowerCase();
-  
+
   // Önce en spesifik kontrolleri yap
-  
+
   // Relationship Analysis - en spesifik (spreadName kontrolü önce)
-  if (spreadName === 'relationshipAnalysis.data.spreadName' ||
-      source.includes('relationshipanalysis.data.spreadname')) {
+  if (
+    spreadName === 'relationshipAnalysis.data.spreadName' ||
+    source.includes('relationshipanalysis.data.spreadname')
+  ) {
     return 'relationshipAnalysis';
   }
-  
+
   // Relationship Analysis - diğer kontroller
-  if (source.includes('relationship-analysis') || 
-      source.includes('relationshipanalysis') ||
-      source.includes('ilişki analizi') ||
-      source.includes('iliskianalizi') ||
-      readingType === 'relationship-analysis' ||
-      spreadName === 'relationship-analysis') {
+  if (
+    source.includes('relationship-analysis') ||
+    source.includes('relationshipanalysis') ||
+    source.includes('ilişki analizi') ||
+    source.includes('iliskianalizi') ||
+    readingType === 'relationship-analysis' ||
+    spreadName === 'relationship-analysis'
+  ) {
     return 'relationshipAnalysis';
   }
-  
+
   // Relationship Problems
-  if (source.includes('relationship-problems') || 
-      source.includes('relationshipproblems') ||
-      source.includes('ilişki problemleri') ||
-      source.includes('relationshipproblems.data.spreadname') ||
-      readingType === 'relationship-problems' ||
-      spreadName === 'relationship-problems' ||
-      spreadName === 'relationshipProblems.data.spreadName') {
+  if (
+    source.includes('relationship-problems') ||
+    source.includes('relationshipproblems') ||
+    source.includes('ilişki problemleri') ||
+    source.includes('relationshipproblems.data.spreadname') ||
+    readingType === 'relationship-problems' ||
+    spreadName === 'relationship-problems' ||
+    spreadName === 'relationshipProblems.data.spreadName'
+  ) {
     return 'relationshipProblems';
   }
-  
+
   // Situation Analysis
-  if (source.includes('situation-Analysis') || 
-      source.includes('situationAnalysis') ||
-      source.includes('durum analizi') ||
-      readingType === 'situation-analysis' ||
-      readingType === 'SITUATION_ANALYSIS_SPREAD' ||
-      spreadName === 'situation-analysis' ||
-      spreadName === 'situationAnalysis.data.spreadName') {
+  if (
+    source.includes('situation-Analysis') ||
+    source.includes('situationAnalysis') ||
+    source.includes('durum analizi') ||
+    readingType === 'situation-analysis' ||
+    readingType === 'SITUATION_ANALYSIS_SPREAD' ||
+    spreadName === 'situation-analysis' ||
+    spreadName === 'situationAnalysis.data.spreadName'
+  ) {
     return 'situationAnalysis';
   }
-  
+
   // New Lover
-  if (source.includes('new-lover') || 
-      source.includes('newlover') ||
-      source.includes('yeni aşk') ||
-      readingType === 'new-lover' ||
-      spreadName === 'new-lover') {
+  if (
+    source.includes('new-lover') ||
+    source.includes('newlover') ||
+    source.includes('yeni aşk') ||
+    readingType === 'new-lover' ||
+    spreadName === 'new-lover'
+  ) {
     return 'newLover';
   }
-  
+
   // Problem Solving
-  if (source.includes('problem-solving') || 
-      source.includes('problemsolving') ||
-      source.includes('problem çözme') ||
-      readingType === 'problem-solving' ||
-      spreadName === 'problem-solving') {
+  if (
+    source.includes('problem-solving') ||
+    source.includes('problemsolving') ||
+    source.includes('problem çözme') ||
+    readingType === 'problem-solving' ||
+    spreadName === 'problem-solving'
+  ) {
     return 'problemSolving';
   }
-  
+
   // Marriage
-  if (source.includes('marriage') || 
-      source.includes('evlilik') ||
-      readingType === 'marriage' ||
-      spreadName === 'marriage') {
+  if (
+    source.includes('marriage') ||
+    source.includes('evlilik') ||
+    readingType === 'marriage' ||
+    spreadName === 'marriage'
+  ) {
     return 'marriage';
   }
-  
+
   // Money
-  if (source.includes('money') || 
-      source.includes('para') ||
-      readingType === 'money' ||
-      spreadName === 'money') {
+  if (
+    source.includes('money') ||
+    source.includes('para') ||
+    readingType === 'money' ||
+    spreadName === 'money'
+  ) {
     return 'money';
   }
-  
+
   // Career
-  if (source.includes('career') || 
-      source.includes('kariyer') ||
-      readingType === 'career' ||
-      spreadName === 'career') {
+  if (
+    source.includes('career') ||
+    source.includes('kariyer') ||
+    readingType === 'career' ||
+    spreadName === 'career'
+  ) {
     return 'career';
   }
-  
+
   // Love - genel kontrol (sadece Relationship Analysis değilse)
-  if ((source.includes('love') || 
-       source.includes('aşk') ||
-       readingType === 'love' ||
-       spreadName === 'love') &&
-      spreadName !== 'love.data.spreadName' ||
-      spreadName !== 'relationshipAnalysis.data.spreadName') {
+  if (
+    ((source.includes('love') ||
+      source.includes('aşk') ||
+      readingType === 'love' ||
+      spreadName === 'love') &&
+      spreadName !== 'love.data.spreadName') ||
+    spreadName !== 'relationshipAnalysis.data.spreadName'
+  ) {
     return 'love';
   }
-  
+
   // Fallback: Eğer hiçbir case match etmezse, general olarak problemSolving döndür
   if (source.includes('general') || !source.trim()) {
     return 'problemSolving';
@@ -190,16 +216,14 @@ function normalizeReadingType(
   return null;
 }
 
-
-export function useReadingDetail(reading: Reading | null): ReadingDetailResult | null {
+export function useReadingDetail(
+  reading: Reading | null
+): ReadingDetailResult | null {
   const { t } = useTranslations();
 
-  const normalizedType = useMemo(
-    () => {
-      return normalizeReadingType(reading?.reading_type, reading?.spread_name);
-    },
-    [reading?.reading_type, reading?.spread_name]
-  );
+  const normalizedType = useMemo(() => {
+    return normalizeReadingType(reading?.reading_type, reading?.spread_name);
+  }, [reading?.reading_type, reading?.spread_name]);
 
   const config = useMemo(() => {
     if (!normalizedType) {
@@ -207,13 +231,14 @@ export function useReadingDetail(reading: Reading | null): ReadingDetailResult |
     }
     const factory = CONFIG_FACTORIES[normalizedType];
     const configResult = factory ? factory() : null;
-    
-    
+
     return configResult;
   }, [normalizedType]);
 
   const theme: TarotTheme = config?.theme ?? 'purple';
-  const icon = config?.icon ?? (normalizedType ? TYPE_PRESENTATION[normalizedType].icon : '✨');
+  const icon =
+    config?.icon ??
+    (normalizedType ? TYPE_PRESENTATION[normalizedType].icon : '✨');
 
   // Yeni hook'ları kullan
   const cards = useReadingCards(reading, config, normalizedType);
@@ -244,20 +269,30 @@ export function useReadingDetail(reading: Reading | null): ReadingDetailResult |
     icon,
     title: metadata.title,
     spreadName: (() => {
-      // Önce normalizedType'a göre çeviri anahtarı dene
+      // Önce config'den çeviri anahtarı dene
+      if (config?.spreadName) {
+        const translatedSpreadName = t(config.spreadName, '');
+
+        if (
+          translatedSpreadName &&
+          translatedSpreadName !== config.spreadName
+        ) {
+          return translatedSpreadName;
+        }
+      }
+
+      // Fallback: normalizedType'a göre çeviri anahtarı dene
       if (normalizedType) {
-        const translationKey = `spreads.${normalizedType}.data.spreadName`;
+        const translationKey = `${normalizedType}.data.spreadName`;
         const translatedSpreadName = t(translationKey, '');
-        
+
         if (translatedSpreadName && translatedSpreadName !== translationKey) {
           return translatedSpreadName;
         }
       }
-      
-      // Fallback değerler
-      return reading.spread_name ||
-        config?.spreadName ||
-        metadata.title;
+
+      // Son fallback değerler
+      return reading.spread_name || metadata.title;
     })(),
     costCredits: metadata.costCredits,
     formattedDate: metadata.formattedDate,
