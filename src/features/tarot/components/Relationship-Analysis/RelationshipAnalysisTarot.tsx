@@ -3,9 +3,7 @@
 import type { TarotCard } from '@/types/tarot';
 import { createTarotReadingComponent } from '@/features/tarot/shared/components';
 import { createRelationshipAnalysisConfig } from '@/features/tarot/shared/config';
-import { 
-  getRelationshipAnalysisMeaningByCardAndPosition
-} from '@/features/tarot/lib/relationship-analysis/position-meanings-index';
+import { getRelationshipAnalysisMeaningByCardAndPosition } from '@/features/tarot/lib/relationship-analysis/position-meanings-index';
 
 const RelationshipAnalysisReading = createTarotReadingComponent({
   getConfig: () => createRelationshipAnalysisConfig(),
@@ -23,15 +21,21 @@ const RelationshipAnalysisReading = createTarotReadingComponent({
     console.log('🔍 RelationshipAnalysisTarot getCardMeaning:', {
       cardName: card.nameTr,
       position,
-      isReversed
+      isReversed,
     });
 
-    const meaning = getRelationshipAnalysisMeaningByCardAndPosition(card, position);
+    const meaning = getRelationshipAnalysisMeaningByCardAndPosition(
+      card,
+      position
+    );
 
     console.log('🔍 RelationshipAnalysisTarot meaning result:', {
       found: !!meaning,
       card: meaning?.card,
-      interpretation: meaning ? (isReversed ? meaning.reversed : meaning.upright)?.substring(0, 50) + '...' : 'No meaning'
+      interpretation: meaning
+        ? (isReversed ? meaning.reversed : meaning.upright)?.substring(0, 50) +
+          '...'
+        : 'No meaning',
     });
 
     if (!meaning) {
@@ -42,7 +46,7 @@ const RelationshipAnalysisReading = createTarotReadingComponent({
     return {
       interpretation: isReversed ? meaning.reversed : meaning.upright,
       context: meaning.context,
-      keywords: meaning.keywords || []
+      keywords: meaning.keywords || [],
     };
   },
 });

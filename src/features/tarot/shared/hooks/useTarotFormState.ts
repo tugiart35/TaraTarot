@@ -93,7 +93,9 @@ export function useTarotFormState({
     phone: '',
   });
 
-  const [communicationMethod, setCommunicationMethod] = useState<'email' | 'whatsapp'>('email');
+  const [communicationMethod, setCommunicationMethod] = useState<
+    'email' | 'whatsapp'
+  >('email');
 
   const [questions, setQuestions] = useState<Questions>({
     concern: '',
@@ -181,7 +183,9 @@ export function useTarotFormState({
       if (!personalInfo.phone.trim()) {
         errors.phone = t('validation.phoneRequired');
         hasError = true;
-      } else if (!/^\+?[1-9]\d{1,14}$/.test(personalInfo.phone.replace(/\s/g, ''))) {
+      } else if (
+        !/^\+?[1-9]\d{1,14}$/.test(personalInfo.phone.replace(/\s/g, ''))
+      ) {
         errors.phone = t('validation.phone');
         hasError = true;
       }
@@ -235,17 +239,20 @@ export function useTarotFormState({
     setModalStates(prev => ({ ...prev, detailedFormSaved: saved }));
   }, []);
 
-  const updateCommunicationMethod = useCallback((method: 'email' | 'whatsapp') => {
-    setCommunicationMethod(method);
-    // E-posta seçilirse telefon alanını, WhatsApp seçilirse e-posta alanını temizle
-    if (method === 'email') {
-      setPersonalInfo(prev => ({ ...prev, phone: '' }));
-      setFormErrors(prev => ({ ...prev, phone: '' }));
-    } else if (method === 'whatsapp') {
-      setPersonalInfo(prev => ({ ...prev, email: '' }));
-      setFormErrors(prev => ({ ...prev, email: '' }));
-    }
-  }, []);
+  const updateCommunicationMethod = useCallback(
+    (method: 'email' | 'whatsapp') => {
+      setCommunicationMethod(method);
+      // E-posta seçilirse telefon alanını, WhatsApp seçilirse e-posta alanını temizle
+      if (method === 'email') {
+        setPersonalInfo(prev => ({ ...prev, phone: '' }));
+        setFormErrors(prev => ({ ...prev, phone: '' }));
+      } else if (method === 'whatsapp') {
+        setPersonalInfo(prev => ({ ...prev, email: '' }));
+        setFormErrors(prev => ({ ...prev, email: '' }));
+      }
+    },
+    []
+  );
 
   return {
     // State

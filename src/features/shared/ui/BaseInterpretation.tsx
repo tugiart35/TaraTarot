@@ -71,7 +71,9 @@ export interface BaseInterpretationProps {
     _card: TarotCard,
     _position: number,
     _isReversed: boolean
-  ) => string | { interpretation: string; context?: string; keywords?: string[] };
+  ) =>
+    | string
+    | { interpretation: string; context?: string; keywords?: string[] };
 
   // CONTEXT BİLGİSİ FONKSİYONU (lib/ dosyalarındaki context bilgileri için)
   getPositionContext?: (
@@ -291,7 +293,6 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
       getKeywords,
       getPositionSpecificInterpretation,
       getPositionContext,
-      showContext = false,
     },
     ref
   ) => {
@@ -348,14 +349,14 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
             // 1. Önce props'tan gelen getPositionSpecificInterpretation fonksiyonunu kullan
             let positionContext = '';
             let positionKeywords: string[] = [];
-            
+
             if (getPositionSpecificInterpretation) {
               const result = getPositionSpecificInterpretation(
                 card,
                 idx + 1,
                 isReversed[idx] || false
               );
-              
+
               if (typeof result === 'string') {
                 positionInterpretation = result;
               } else if (result && typeof result === 'object') {
@@ -418,14 +419,19 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
             }
 
             // Anahtar kelimeleri al - önce position'dan, sonra getKeywords'dan
-            const keywords = positionKeywords.length > 0 
-              ? positionKeywords 
-              : (getKeywords ? getKeywords(cardMeaning, card) : []);
+            const keywords =
+              positionKeywords.length > 0
+                ? positionKeywords
+                : getKeywords
+                  ? getKeywords(cardMeaning, card)
+                  : [];
 
             // Context'i al - önce position'dan, sonra lib/ dosyalarından, sonra problem çözme için
-            const finalContext = positionContext || 
+            const finalContext =
+              positionContext ||
               (getPositionContext ? getPositionContext(card, idx + 1) : '') ||
-              (cardMeaning?.context || '');
+              cardMeaning?.context ||
+              '';
 
             return (
               <div

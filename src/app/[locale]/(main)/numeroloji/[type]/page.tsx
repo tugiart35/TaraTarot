@@ -11,6 +11,7 @@ import { calculateNumerology } from '@/lib/numerology/calculators';
 import { getNumberMeaning } from '@/lib/numerology/meanings';
 import { NumberMeaning } from '@/features/numerology/components/NumberMeaning';
 import BottomNavigation from '@/features/shared/layout/BottomNavigation';
+import { useTranslations } from '@/hooks/useTranslations';
 
 interface NumerologyResultPageProps {
   params: Promise<{
@@ -33,6 +34,7 @@ export default function NumerologyResultPage({
   params,
   searchParams,
 }: NumerologyResultPageProps) {
+  const { t } = useTranslations();
   const [resolvedParams, setResolvedParams] = useState<{
     type: string;
     locale: string;
@@ -54,7 +56,7 @@ export default function NumerologyResultPage({
       <div className='min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white flex items-center justify-center'>
         <div className='text-center'>
           <div className='w-16 h-16 border-4 border-purple-500 border-t-transparent rounded-full animate-spin mx-auto mb-4'></div>
-          <p className='text-gray-300'>Yükleniyor...</p>
+          <p className='text-gray-300'>{t('numerologyResult.loading')}</p>
         </div>
       </div>
     );
@@ -91,7 +93,7 @@ export default function NumerologyResultPage({
           'compatibility',
         ];
         if (!validTypes.includes(type as NumerologyType)) {
-          setError('Geçersiz numeroloji tipi');
+          setError(t('numerologyResult.invalidType'));
           setLoading(false);
           return;
         }
@@ -119,7 +121,7 @@ export default function NumerologyResultPage({
         );
 
         if (missingParams && missingParams.length > 0) {
-          setError('Eksik parametreler');
+          setError(t('numerologyResult.missingParams'));
           setLoading(false);
           return;
         }
@@ -153,7 +155,7 @@ export default function NumerologyResultPage({
         setResult(calculatedResult);
         setError(null);
       } catch (err) {
-        setError('Hesaplama hatası');
+        setError(t('numerologyResult.calculationError'));
       } finally {
         setLoading(false);
       }
@@ -178,7 +180,7 @@ export default function NumerologyResultPage({
       <div className='min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white flex items-center justify-center'>
         <div className='text-center'>
           <div className='w-16 h-16 border-4 border-purple-500 border-t-transparent rounded-full animate-spin mx-auto mb-4'></div>
-          <p className='text-gray-300'>Hesaplanıyor...</p>
+          <p className='text-gray-300'>{t('numerologyResult.calculating')}</p>
         </div>
       </div>
     );
@@ -188,13 +190,15 @@ export default function NumerologyResultPage({
     return (
       <div className='min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white flex items-center justify-center'>
         <div className='text-center'>
-          <h1 className='text-4xl font-bold text-red-400 mb-4'>Hata</h1>
+          <h1 className='text-4xl font-bold text-red-400 mb-4'>
+            {t('numerologyResult.error')}
+          </h1>
           <p className='text-gray-300 mb-8'>{error}</p>
           <a
             href={`/${locale}/numeroloji`}
             className='px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl font-semibold text-white hover:from-purple-600 hover:to-pink-600 transition-all duration-300'
           >
-            Geri Dön
+            {t('numerologyResult.backButton')}
           </a>
         </div>
       </div>
@@ -206,16 +210,16 @@ export default function NumerologyResultPage({
       <div className='min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white flex items-center justify-center'>
         <div className='text-center'>
           <h1 className='text-4xl font-bold text-red-400 mb-4'>
-            Sonuç Bulunamadı
+            {t('numerologyResult.resultNotFound')}
           </h1>
           <p className='text-gray-300 mb-8'>
-            Numeroloji hesaplaması yapılamadı.
+            {t('numerologyResult.calculationError')}
           </p>
           <a
             href={`/${locale}/numeroloji`}
             className='px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl font-semibold text-white hover:from-purple-600 hover:to-pink-600 transition-all duration-300'
           >
-            Geri Dön
+            {t('numerologyResult.backButton')}
           </a>
         </div>
       </div>
@@ -241,7 +245,7 @@ export default function NumerologyResultPage({
             className='inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-xl text-gray-300 hover:text-white hover:bg-white/20 transition-all duration-300'
           >
             <span>←</span>
-            <span>Geri Dön</span>
+            <span>{t('numerologyResult.backButton')}</span>
           </a>
         </div>
 
@@ -257,13 +261,14 @@ export default function NumerologyResultPage({
           </div>
 
           <h1 className='text-4xl font-bold text-white mb-4'>
-            {getTypeLabel(result.type)} Sayınız
+            {t(`numerologyResult.typeLabels.${result.type}`)}{' '}
+            {t('numerologyResult.yourNumber')}
           </h1>
 
           {result.isMasterNumber && (
             <div className='mb-4'>
               <span className='inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-yellow-400/20 text-yellow-400 border border-yellow-400/30'>
-                ✨ Master Sayı
+                ✨ {t('numerologyResult.masterNumber')}
               </span>
             </div>
           )}
@@ -287,7 +292,7 @@ export default function NumerologyResultPage({
               {/* Pinnacles */}
               <div className='bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20'>
                 <h3 className='text-2xl font-bold text-white mb-6 text-center'>
-                  ⛰️ Zirveler
+                  ⛰️ {t('numerologyResult.pinnacles')}
                 </h3>
                 <div className='space-y-4'>
                   {result.pinnacles.map((pinnacle, index) => (
@@ -314,7 +319,7 @@ export default function NumerologyResultPage({
               {/* Challenges */}
               <div className='bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20'>
                 <h3 className='text-2xl font-bold text-white mb-6 text-center'>
-                  ⚡ Zorluklar
+                  ⚡ {t('numerologyResult.challenges')}
                 </h3>
                 <div className='space-y-4'>
                   {result.challenges.map((challenge, index) => (
@@ -346,26 +351,32 @@ export default function NumerologyResultPage({
           <div className='max-w-2xl mx-auto mb-12'>
             <div className='bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20'>
               <h3 className='text-2xl font-bold text-white mb-6 text-center'>
-                🔄 Kişisel Döngüler
+                🔄 {t('numerologyResult.personalCycles')}
               </h3>
               <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
                 <div className='text-center p-4 bg-white/5 rounded-xl'>
                   <div className='text-3xl font-bold text-blue-400 mb-2'>
                     {result.personalYear}
                   </div>
-                  <div className='text-sm text-gray-300'>Kişisel Yıl</div>
+                  <div className='text-sm text-gray-300'>
+                    {t('numerologyResult.personalYear')}
+                  </div>
                 </div>
                 <div className='text-center p-4 bg-white/5 rounded-xl'>
                   <div className='text-3xl font-bold text-green-400 mb-2'>
                     {result.personalMonth}
                   </div>
-                  <div className='text-sm text-gray-300'>Kişisel Ay</div>
+                  <div className='text-sm text-gray-300'>
+                    {t('numerologyResult.personalMonth')}
+                  </div>
                 </div>
                 <div className='text-center p-4 bg-white/5 rounded-xl'>
                   <div className='text-3xl font-bold text-purple-400 mb-2'>
                     {result.personalDay}
                   </div>
-                  <div className='text-sm text-gray-300'>Kişisel Gün</div>
+                  <div className='text-sm text-gray-300'>
+                    {t('numerologyResult.personalDay')}
+                  </div>
                 </div>
               </div>
             </div>
@@ -378,16 +389,20 @@ export default function NumerologyResultPage({
             <div className='max-w-2xl mx-auto mb-12'>
               <div className='bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20'>
                 <h3 className='text-2xl font-bold text-white mb-6 text-center'>
-                  💕 Uyum Analizi
+                  💕 {t('numerologyResult.compatibilityAnalysis')}
                 </h3>
                 <div className='text-center mb-6'>
                   <div className='text-4xl font-bold text-pink-400 mb-2'>
                     {result.compatibilityScore}/100
                   </div>
-                  <div className='text-sm text-gray-300'>Uyum Skoru</div>
+                  <div className='text-sm text-gray-300'>
+                    {t('numerologyResult.compatibilityScore')}
+                  </div>
                 </div>
                 <div className='space-y-3'>
-                  <h4 className='font-semibold text-white'>Notlar:</h4>
+                  <h4 className='font-semibold text-white'>
+                    {t('numerologyResult.notes')}
+                  </h4>
                   {result.compatibilityNotes.map((note, index) => (
                     <div
                       key={index}
@@ -405,7 +420,7 @@ export default function NumerologyResultPage({
         <div className='max-w-2xl mx-auto mb-12'>
           <div className='bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20'>
             <h3 className='text-2xl font-bold text-white mb-6 text-center'>
-              📊 Hesaplama Detayları
+              📊 {t('numerologyResult.calculationDetails')}
             </h3>
           </div>
         </div>
@@ -417,13 +432,13 @@ export default function NumerologyResultPage({
               href={`/${locale}/numeroloji`}
               className='px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl font-semibold text-white hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105'
             >
-              🔮 Yeni Hesaplama
+              🔮 {t('numerologyResult.newCalculation')}
             </a>
             <button
               onClick={() => window.print()}
               className='px-6 py-3 bg-white/10 backdrop-blur-sm rounded-xl font-semibold text-white hover:bg-white/20 transition-all duration-300'
             >
-              🖨️ Yazdır
+              🖨️ {t('numerologyResult.print')}
             </button>
           </div>
         </div>
@@ -433,29 +448,4 @@ export default function NumerologyResultPage({
       <BottomNavigation />
     </div>
   );
-}
-
-function getTypeLabel(type: string): string {
-  switch (type) {
-    case 'life-path':
-      return 'Yaşam Yolu';
-    case 'expression-destiny':
-      return 'İfade/Kader';
-    case 'soul-urge':
-      return 'Ruh Arzusu';
-    case 'personality':
-      return 'Kişilik';
-    case 'birthday-number':
-      return 'Doğum Günü';
-    case 'maturity':
-      return 'Olgunluk';
-    case 'pinnacles-challenges':
-      return 'Zirveler/Zorluklar';
-    case 'personal-cycles':
-      return 'Kişisel Döngüler';
-    case 'compatibility':
-      return 'Uyum Analizi';
-    default:
-      return type;
-  }
 }

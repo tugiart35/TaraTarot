@@ -1,12 +1,10 @@
 'use client';
 
 import type { TarotCard } from '@/types/tarot';
-import type { CardMeaningData } from '@/types/ui';
 import { createTarotReadingComponent } from '@/features/tarot/shared/components';
 import { createMoneyConfig } from '@/features/tarot/shared/config';
-import { 
+import {
   getMoneyMeaningByCardAndPosition,
-  type MoneyPositionMeaning 
 } from '@/features/tarot/lib/money/position-meanings-index';
 
 const MoneyReading = createTarotReadingComponent({
@@ -22,7 +20,11 @@ const MoneyReading = createTarotReadingComponent({
       return '';
     }
 
-    const meaning = getMoneyMeaningByCardAndPosition(card, position, isReversed);
+    const meaning = getMoneyMeaningByCardAndPosition(
+      card,
+      position,
+      isReversed
+    );
 
     if (!meaning) {
       return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
@@ -32,7 +34,7 @@ const MoneyReading = createTarotReadingComponent({
     return {
       interpretation: isReversed ? meaning.reversed : meaning.upright,
       context: meaning.context,
-      keywords: meaning.keywords || []
+      keywords: meaning.keywords || [],
     };
   },
 });

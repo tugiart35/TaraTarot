@@ -1069,17 +1069,17 @@ export function getProblemSolvingPosition1MeaningByCardName(
 ): ProblemSolvingPosition1Meaning | null {
   console.log('🔍 Position 1 Search:', {
     searchingFor: cardName,
-    availableCards: position1Meanings.slice(0, 5).map(m => m.card)
+    availableCards: position1Meanings.slice(0, 5).map(m => m.card),
   });
-  
+
   const result = position1Meanings.find(m => m.card === cardName) || null;
-  
+
   console.log('🔍 Position 1 Search Result:', {
     found: !!result,
     card: result?.card,
-    upright: result?.upright?.substring(0, 50) + '...'
+    upright: result?.upright?.substring(0, 50) + '...',
   });
-  
+
   return result;
 }
 

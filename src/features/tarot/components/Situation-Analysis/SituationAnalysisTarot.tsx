@@ -3,9 +3,7 @@
 import type { TarotCard } from '@/types/tarot';
 import { createTarotReadingComponent } from '@/features/tarot/shared/components';
 import { createSituationAnalysisConfig } from '@/features/tarot/shared/config';
-import { 
-  getSituationAnalysisMeaningByCardAndPosition
-} from '@/features/tarot/lib/situation-analysis/position-meanings-index';
+import { getSituationAnalysisMeaningByCardAndPosition } from '@/features/tarot/lib/situation-analysis/position-meanings-index';
 
 const SituationAnalysisReading = createTarotReadingComponent({
   getConfig: () => createSituationAnalysisConfig(),
@@ -20,7 +18,11 @@ const SituationAnalysisReading = createTarotReadingComponent({
       return '';
     }
 
-    const meaning = getSituationAnalysisMeaningByCardAndPosition(card, position, isReversed);
+    const meaning = getSituationAnalysisMeaningByCardAndPosition(
+      card,
+      position,
+      isReversed
+    );
 
     if (!meaning) {
       return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
@@ -30,7 +32,7 @@ const SituationAnalysisReading = createTarotReadingComponent({
     return {
       interpretation: isReversed ? meaning.reversed : meaning.upright,
       context: meaning.context,
-      keywords: meaning.keywords || []
+      keywords: meaning.keywords || [],
     };
   },
 });

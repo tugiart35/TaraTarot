@@ -61,7 +61,7 @@ Yapılan veya önerilen geliştirmeler:
 */
 'use client';
 
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import { BottomNavigation } from '@/features/shared/layout';
 import { TarotCard } from '@/features/tarot/lib/full-tarot-deck';
 import { tarotSpreads } from '@/lib/constants/tarotSpreads';
@@ -69,8 +69,10 @@ import {
   TarotSpreadSelector,
   LastReadingSummary,
 } from '@/features/tarot/components';
+import { useTranslations } from '@/hooks/useTranslations';
 
 export default function TarotPage() {
+  const { t } = useTranslations();
   const [selectedSpread, setSelectedSpread] = useState('love-spread');
   const [showDescription, setShowDescription] = useState(true); // Açıklama gösterilsin mi?
   const [lastReading, setLastReading] = useState<{
@@ -115,11 +117,34 @@ export default function TarotPage() {
         />
         <div className='mb-8'>
           {CurrentComponent ? (
-            <CurrentComponent
-              onComplete={handleReadingComplete}
-              onReadingTypeSelected={handleReadingTypeSelected}
-            />
-          ) : null}
+            <Suspense
+              fallback={
+                <div className='flex items-center justify-center py-12'>
+                  <div className='animate-spin rounded-full h-8 w-8 border-b-2 border-purple-500'></div>
+                  <span className='ml-3 text-gray-400'>
+                    {t('tarot.page.loadingSpread')}
+                  </span>
+                </div>
+              }
+            >
+              <CurrentComponent
+                onComplete={handleReadingComplete}
+                onReadingTypeSelected={handleReadingTypeSelected}
+              />
+            </Suspense>
+          ) : (
+            <div className='text-center py-12'>
+              <div className='text-gray-400 mb-4'>
+                <span className='text-4xl'>🔮</span>
+              </div>
+              <p className='text-gray-300 text-lg'>
+                {t('tarot.page.selectSpread')}
+              </p>
+              <p className='text-gray-500 text-sm mt-2'>
+                {t('tarot.page.selectSpreadDescription')}
+              </p>
+            </div>
+          )}
         </div>
         <LastReadingSummary
           lastReading={lastReading}

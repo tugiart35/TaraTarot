@@ -255,7 +255,7 @@ export class TarotPositionMeaningGenerator implements PositionMeaningGenerator {
       love: 'aşk açılımında',
       career: 'kariyer açılımında',
       money: 'para açılımında',
-        relationshipAnalysis: 'ilişki analizi açılımında',
+      relationshipAnalysis: 'ilişki analizi açılımında',
       problemSolving: 'problem çözme açılımında',
       situationAnalysis: 'durum analizi açılımında',
       relationshipProblems: 'ilişki problemleri açılımında',
@@ -302,11 +302,7 @@ export function getRelationshipAnalysisPositionMeanings(
   position: number,
   positionName: string
 ) {
-  return createPositionMeanings(
-    'relationshipAnalysis',
-    position,
-    positionName
-  );
+  return createPositionMeanings('relationshipAnalysis', position, positionName);
 }
 
 export function getProblemSolvingPositionMeanings(
@@ -327,11 +323,7 @@ export function getRelationshipProblemsPositionMeanings(
   position: number,
   positionName: string
 ) {
-  return createPositionMeanings(
-      'relationshipProblems',
-    position,
-    positionName
-  );
+  return createPositionMeanings('relationshipProblems', position, positionName);
 }
 
 export function getMarriagePositionMeanings(

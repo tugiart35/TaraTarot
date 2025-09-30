@@ -153,9 +153,13 @@ const CardDetails: React.FC<CardDetailsProps> = ({
             </div>
           )}
           {/* Glow effect */}
-          <div className={`absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
-            isReversed ? 'bg-gradient-to-br from-red-500/20 to-orange-500/20' : 'bg-gradient-to-br from-blue-500/20 to-purple-500/20'
-          }`}></div>
+          <div
+            className={`absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
+              isReversed
+                ? 'bg-gradient-to-br from-red-500/20 to-orange-500/20'
+                : 'bg-gradient-to-br from-blue-500/20 to-purple-500/20'
+            }`}
+          ></div>
         </div>
       </div>
       {positionInfo && (
@@ -181,7 +185,7 @@ const CardDetails: React.FC<CardDetailsProps> = ({
       const cardMeaning: CardMeaningData | null = getCardMeaning
         ? getCardMeaning(cardParam)
         : null;
-      
+
       let positionInterpretation = '';
 
       // 1. Önce props'tan gelen getPositionSpecificInterpretation fonksiyonunu kullan
@@ -191,11 +195,11 @@ const CardDetails: React.FC<CardDetailsProps> = ({
           positionParam,
           isReversedParam
         );
-        
+
         // Eğer result string ise, direkt kullan
         if (typeof result === 'string') {
           positionInterpretation = result;
-        } 
+        }
         // Eğer result object ise, interpretation'ı al
         else if (result && typeof result === 'object') {
           positionInterpretation = result.interpretation || '';
@@ -205,11 +209,11 @@ const CardDetails: React.FC<CardDetailsProps> = ({
       // 2. Eğer positionInterpretation boşsa, getMeaningText fonksiyonunu dene
       if (!positionInterpretation && getMeaningText) {
         const result = getMeaningText(cardMeaning, cardParam, isReversedParam);
-        
+
         // Eğer result string ise, direkt kullan
         if (typeof result === 'string') {
           positionInterpretation = result;
-        } 
+        }
         // Eğer result object ise, interpretation'ı al
         else if (result && typeof result === 'object') {
           positionInterpretation = result.interpretation || '';
@@ -257,16 +261,22 @@ const CardDetails: React.FC<CardDetailsProps> = ({
 
     // Kart anlamını ve anahtar kelimeleri al
     const cardInterpretation = getCardInterpretation();
-    const keywords = getKeywords ? getKeywords(getCardMeaning ? getCardMeaning(cardParam) : null, cardParam) : [];
-    
+    const keywords = getKeywords
+      ? getKeywords(
+          getCardMeaning ? getCardMeaning(cardParam) : null,
+          cardParam
+        )
+      : [];
+
     // Context'i al (problem çözme açılımı için)
     const cardMeaning = getCardMeaning ? getCardMeaning(cardParam) : null;
-    const context = showContext ? (cardMeaning?.context || '') : '';
+    const context = showContext ? cardMeaning?.context || '' : '';
 
     // Pozisyon context'ini al (lib/ dosyalarından)
-    const positionContext = getPositionContext && positionParam
-      ? getPositionContext(cardParam, positionParam)
-      : undefined;
+    const positionContext =
+      getPositionContext && positionParam
+        ? getPositionContext(cardParam, positionParam)
+        : undefined;
 
     return (
       <div className='w-full space-y-10'>
@@ -278,8 +288,12 @@ const CardDetails: React.FC<CardDetailsProps> = ({
               <div className='flex items-start gap-4'>
                 <div className='w-3 h-3 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full mt-1 flex-shrink-0 shadow-lg'></div>
                 <div className='flex-1'>
-                  <h4 className='text-blue-200 font-light text-sm mb-3 tracking-wide uppercase'>Pozisyon Bağlamı</h4>
-                  <p className='text-gray-200 text-base leading-relaxed font-light'>{positionContext}</p>
+                  <h4 className='text-blue-200 font-light text-sm mb-3 tracking-wide uppercase'>
+                    Pozisyon Bağlamı
+                  </h4>
+                  <p className='text-gray-200 text-base leading-relaxed font-light'>
+                    {positionContext}
+                  </p>
                 </div>
               </div>
             </div>
@@ -292,12 +306,18 @@ const CardDetails: React.FC<CardDetailsProps> = ({
           <div className='relative bg-white/5 backdrop-blur-xl rounded-2xl p-8 border border-white/20 shadow-2xl'>
             <div className='space-y-6'>
               <div className='flex items-center gap-4'>
-                <div className={`w-4 h-4 rounded-full shadow-lg ${
-                  isReversedParam ? 'bg-gradient-to-r from-red-400 to-orange-400' : 'bg-gradient-to-r from-green-400 to-emerald-400'
-                }`}></div>
-                <span className={`text-lg font-light tracking-wide ${
-                  isReversedParam ? 'text-red-200' : 'text-green-200'
-                }`}>
+                <div
+                  className={`w-4 h-4 rounded-full shadow-lg ${
+                    isReversedParam
+                      ? 'bg-gradient-to-r from-red-400 to-orange-400'
+                      : 'bg-gradient-to-r from-green-400 to-emerald-400'
+                  }`}
+                ></div>
+                <span
+                  className={`text-lg font-light tracking-wide ${
+                    isReversedParam ? 'text-red-200' : 'text-green-200'
+                  }`}
+                >
                   {isReversedParam ? 'Ters Anlam' : 'Düz Anlam'}
                 </span>
               </div>
@@ -316,8 +336,12 @@ const CardDetails: React.FC<CardDetailsProps> = ({
               <div className='flex items-start gap-4'>
                 <div className='w-3 h-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mt-1 flex-shrink-0 shadow-lg'></div>
                 <div className='flex-1'>
-                  <h4 className='text-purple-200 font-light text-sm mb-3 tracking-wide uppercase'>Derin Bağlam</h4>
-                  <p className='text-gray-200 text-base leading-relaxed font-light italic'>{context}</p>
+                  <h4 className='text-purple-200 font-light text-sm mb-3 tracking-wide uppercase'>
+                    Derin Bağlam
+                  </h4>
+                  <p className='text-gray-200 text-base leading-relaxed font-light italic'>
+                    {context}
+                  </p>
                 </div>
               </div>
             </div>
@@ -329,7 +353,9 @@ const CardDetails: React.FC<CardDetailsProps> = ({
           <div className='space-y-6'>
             <div className='flex items-center gap-4'>
               <div className='w-4 h-4 bg-gradient-to-r from-amber-400 to-yellow-400 rounded-full shadow-lg'></div>
-              <span className='text-amber-200 font-light text-lg tracking-wide'>Anahtar Kelimeler</span>
+              <span className='text-amber-200 font-light text-lg tracking-wide'>
+                Anahtar Kelimeler
+              </span>
             </div>
             <div className='flex flex-wrap gap-3 pl-8'>
               {keywords.map((keyword: string, index: number) => (

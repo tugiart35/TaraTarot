@@ -16,11 +16,14 @@ const Footer = () => {
           <div>
             <h3 className='text-lg font-semibold mb-4'>Hakkımızda</h3>
             <p className='text-gray-300 text-sm'>
-              Tarot alanında uzmanlaşmış, güvenilir ve profesyonel hizmet sunan
-              platformunuz.
+              Büşbüşkimki olarak, profesyonel tarot okuması ve numeroloji
+              analizi hizmetleri sunuyoruz. Aşk rehberliği, kariyer rehberliği,
+              günlük rehberlik ve detaylı numeroloji analizleri ile hayatınızın
+              her alanında rehberlik alabilirsiniz. Mistik rehberlik, ruhani
+              danışmanlık ve kader analizi konularında uzman ekibimizle
+              hizmetinizdeyiz.
             </p>
           </div>
-
           {/* Hızlı Linkler */}
           <div>
             <h3 className='text-lg font-semibold mb-4'>Hızlı Erişim</h3>

@@ -47,7 +47,7 @@ interface ProfileModalProps {
   onClose: () => void;
   profile: UserProfile | null;
   user: AuthUser | null;
-  onProfileUpdate: (updatedProfile: UserProfile) => void;
+  onProfileUpdate: (_updatedProfile: UserProfile) => void;
 }
 
 export default function ProfileModal({
@@ -138,8 +138,9 @@ export default function ProfileModal({
       onProfileUpdate(updatedProfile);
       setEditing(false);
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.error('Profil güncelleme hatası:', error);
-      setError(t('profile.updateError', 'Profil güncellenirken hata oluştu'));
+      setError(t('messages.profile.updateError'));
     } finally {
       setSaving(false);
     }
@@ -150,6 +151,7 @@ export default function ProfileModal({
       await signOut();
       onClose();
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.error('Çıkış yapma hatası:', error);
     }
   };
@@ -159,23 +161,33 @@ export default function ProfileModal({
   }
 
   return (
-    <div className='fixed inset-0 z-50 flex items-center justify-center'>
+    <div
+      className='fixed inset-0 z-50 flex items-center justify-center'
+      role='dialog'
+      aria-modal='true'
+      aria-labelledby='profile-modal-title'
+    >
       {/* Backdrop */}
       <div
         className='absolute inset-0 bg-black/50 backdrop-blur-sm'
         onClick={onClose}
+        aria-hidden='true'
       />
 
       {/* Modal */}
       <div className='relative w-full max-w-2xl mx-4 bg-night border border-lavender/20 rounded-xl shadow-2xl'>
         {/* Header */}
         <div className='flex items-center justify-between p-6 border-b border-lavender/20'>
-          <h2 className='text-2xl font-bold text-white'>
+          <h2
+            id='profile-modal-title'
+            className='text-2xl font-bold text-white'
+          >
             {t('profile.title', 'Profil Bilgileri')}
           </h2>
           <button
             onClick={onClose}
             className='p-2 hover:bg-lavender/10 rounded-lg transition-colors'
+            aria-label={t('common.close', 'Kapat')}
           >
             <X className='h-6 w-6 text-lavender' />
           </button>
@@ -196,7 +208,7 @@ export default function ProfileModal({
               <div>
                 <h3 className='text-xl font-semibold text-white'>
                   {profile?.full_name ||
-                    t('profile.noName', 'İsim Belirtilmemiş')}
+                    t('profile2.noName', 'İsim Belirtilmemiş')}
                 </h3>
                 <p className='text-lavender/80'>{user?.email}</p>
                 <div className='flex items-center mt-2'>
@@ -216,7 +228,7 @@ export default function ProfileModal({
               <div className='bg-lavender/10 rounded-lg p-4 text-center'>
                 <Coins className='h-6 w-6 text-gold mx-auto mb-2' />
                 <p className='text-sm text-lavender/80'>
-                  {t('dashboard.credits', 'Kredi')}
+                  {t('messages.dashboard.creditHistory.credits', 'Kredi')}
                 </p>
                 <p className='text-lg font-bold text-white'>
                   {profile?.credit_balance || 0}
@@ -303,6 +315,7 @@ export default function ProfileModal({
                     'profile.firstNamePlaceholder',
                     'Adınızı girin'
                   )}
+                  aria-describedby='first-name-help'
                 />
               </div>
 

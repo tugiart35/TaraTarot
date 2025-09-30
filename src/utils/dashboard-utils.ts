@@ -251,7 +251,7 @@ export function getReadingTitle(readingType: string): string {
       return 'Problem Çözme Açılımı';
     case 'problem_solving':
       return 'Problem Çözme Açılımı';
-      case 'money':
+    case 'money':
       return 'Para Açılımı';
     case 'situation-analysis':
       return 'Durum Analizi';
@@ -268,9 +268,13 @@ export function getReadingTitle(readingType: string): string {
   }
 }
 
-
 // Okuma formatını belirle (sesli/yazılı/basit)
-export function getReadingFormat(readingType: string, costCredits?: number, title?: string, metadata?: any): 'audio' | 'written' | 'simple' {
+export function getReadingFormat(
+  readingType: string,
+  costCredits?: number,
+  title?: string,
+  metadata?: any
+): 'audio' | 'written' | 'simple' {
   // Önce metadata'dan readingFormat bilgisini kontrol et (en güvenilir)
   if (metadata?.readingFormat) {
     const format = metadata.readingFormat.toLowerCase();
@@ -298,25 +302,25 @@ export function getReadingFormat(readingType: string, costCredits?: number, titl
       return 'simple';
     }
   }
-  
+
   // Sonra reading_type'a göre format belirle
   const type = readingType.toUpperCase();
-  
+
   // WRITTEN okumalar
   if (type.includes('WRITTEN')) {
     return 'written';
   }
-  
+
   // DETAILED okumalar (sesli)
   if (type.includes('DETAILED')) {
     return 'audio';
   }
-  
+
   // SIMPLE okumalar
   if (type.includes('SIMPLE') || type.includes('THREE_CARD')) {
     return 'simple';
   }
-  
+
   // Fallback: cost_credits'e göre belirle
   if (costCredits) {
     if (costCredits <= 50) {
@@ -327,7 +331,7 @@ export function getReadingFormat(readingType: string, costCredits?: number, titl
       return 'audio'; // Genellikle sesli okumalar
     }
   }
-  
+
   // Fallback: reading_type'a göre belirle
   switch (readingType) {
     case 'LOVE_SPREAD_DETAILED':

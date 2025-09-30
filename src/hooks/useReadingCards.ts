@@ -60,7 +60,9 @@ const UNKNOWN_CARD: TarotCard = {
   image: '',
 };
 
-function parseRawCards(rawCards: Reading['cards'] | null | undefined): RawReadingCard[] {
+function parseRawCards(
+  rawCards: Reading['cards'] | null | undefined
+): RawReadingCard[] {
   if (!rawCards) {
     return [];
   }
@@ -71,7 +73,11 @@ function parseRawCards(rawCards: Reading['cards'] | null | undefined): RawReadin
       if (Array.isArray(parsed)) {
         return parsed as RawReadingCard[];
       }
-      if (parsed && typeof parsed === 'object' && Array.isArray(parsed.selectedCards)) {
+      if (
+        parsed &&
+        typeof parsed === 'object' &&
+        Array.isArray(parsed.selectedCards)
+      ) {
         return parsed.selectedCards as RawReadingCard[];
       }
     }
@@ -108,12 +114,18 @@ function parsePositions(
   try {
     if (typeof rawCards === 'string') {
       const parsed = JSON.parse(rawCards);
-      if (parsed && typeof parsed === 'object' && Array.isArray(parsed.positions)) {
+      if (
+        parsed &&
+        typeof parsed === 'object' &&
+        Array.isArray(parsed.positions)
+      ) {
         return parsed.positions.map((position: any, index: number) => ({
           id: position?.id ?? index + 1,
           title: position?.title ?? `position ${index + 1}`,
-          desc: position?.desc ?? position?.description ?? `position ${index + 1}`,
-          description: position?.description ?? position?.desc ?? `position ${index + 1}`,
+          desc:
+            position?.desc ?? position?.description ?? `position ${index + 1}`,
+          description:
+            position?.description ?? position?.desc ?? `position ${index + 1}`,
         }));
       }
     }
@@ -205,50 +217,65 @@ function buildMeaningResolver(
   switch (normalizedType) {
     case 'love':
       return (card: TarotCard, position: number, isReversed: boolean) => {
-        const meaning = getMeaningByCardAndPosition(card.nameTr || card.name, position);
+        const meaning = getMeaningByCardAndPosition(
+          card.nameTr || card.name,
+          position
+        );
         if (!meaning) {
           return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
         }
         return {
           interpretation: isReversed ? meaning.reversed : meaning.upright,
           keywords: meaning.keywords || [],
-          context: meaning.context || ''
+          context: meaning.context || '',
         };
       };
     case 'newLover':
       return (card: TarotCard, position: number, isReversed: boolean) => {
-        const meaning = getNewLoverMeaningByCardAndPosition(card, position, isReversed);
+        const meaning = getNewLoverMeaningByCardAndPosition(
+          card,
+          position,
+          isReversed
+        );
         if (!meaning) {
           return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
         }
         return {
           interpretation: isReversed ? meaning.reversed : meaning.upright,
           keywords: meaning.keywords || [],
-          context: meaning.context || ''
+          context: meaning.context || '',
         };
       };
     case 'career':
       return (card: TarotCard, position: number, isReversed: boolean) => {
-        const meaning = getCareerMeaningByCardAndPosition(card, position, isReversed);
+        const meaning = getCareerMeaningByCardAndPosition(
+          card,
+          position,
+          isReversed
+        );
         if (!meaning) {
           return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
         }
         return {
           interpretation: isReversed ? meaning.reversed : meaning.upright,
           keywords: meaning.keywords || [],
-          context: meaning.context || ''
+          context: meaning.context || '',
         };
       };
     case 'money':
       return (card: TarotCard, position: number, isReversed: boolean) => {
-        const meaning = getMoneyMeaningByCardAndPosition(card, position, isReversed);
+        const meaning = getMoneyMeaningByCardAndPosition(
+          card,
+          position,
+          isReversed
+        );
         if (!meaning) {
           return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
         }
         return {
           interpretation: isReversed ? meaning.reversed : meaning.upright,
           keywords: meaning.keywords || [],
-          context: meaning.context || ''
+          context: meaning.context || '',
         };
       };
     case 'problemSolving':
@@ -258,26 +285,30 @@ function buildMeaningResolver(
           position,
           isReversed
         );
-        
+
         if (!meaning) {
           return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
         }
         return {
           interpretation: isReversed ? meaning.reversed : meaning.upright,
           keywords: meaning.keywords || [],
-          context: meaning.context || ''
+          context: meaning.context || '',
         };
       };
     case 'marriage':
       return (card: TarotCard, position: number, isReversed: boolean) => {
-        const meaning = getMarriageMeaningByCardAndPosition(card, position, isReversed);
+        const meaning = getMarriageMeaningByCardAndPosition(
+          card,
+          position,
+          isReversed
+        );
         if (!meaning) {
           return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
         }
         return {
           interpretation: isReversed ? meaning.reversed : meaning.upright,
           keywords: meaning.keywords || [],
-          context: meaning.context || ''
+          context: meaning.context || '',
         };
       };
     case 'relationshipAnalysis':
@@ -293,7 +324,7 @@ function buildMeaningResolver(
         return {
           interpretation: isReversed ? meaning.reversed : meaning.upright,
           keywords: meaning.keywords || [],
-          context: meaning.context || ''
+          context: meaning.context || '',
         };
       };
     case 'relationshipProblems':
@@ -309,7 +340,7 @@ function buildMeaningResolver(
         return {
           interpretation: isReversed ? meaning.reversed : meaning.upright,
           keywords: meaning.keywords || [],
-          context: meaning.context || ''
+          context: meaning.context || '',
         };
       };
     case 'situationAnalysis':
@@ -319,14 +350,14 @@ function buildMeaningResolver(
           position,
           isReversed
         );
-        
+
         if (!meaning) {
           return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
         }
         return {
           interpretation: isReversed ? meaning.reversed : meaning.upright,
           keywords: meaning.keywords || [],
-          context: meaning.context || ''
+          context: meaning.context || '',
         };
       };
     default:
@@ -359,7 +390,10 @@ export function useReadingCards(
     return map;
   }, [deck]);
 
-  const rawCards = useMemo(() => parseRawCards(reading?.cards), [reading?.cards]);
+  const rawCards = useMemo(
+    () => parseRawCards(reading?.cards),
+    [reading?.cards]
+  );
   const positions = useMemo(
     () => parsePositions(reading?.cards, config),
     [reading?.cards, config]
@@ -373,7 +407,7 @@ export function useReadingCards(
   const cards = useMemo<ReadingDetailCard[]>(() => {
     // Config'den cardCount al, eğer yoksa fallback kullan
     let cardCount = config?.cardCount;
-    
+
     // Eğer config'den cardCount gelmiyorsa özel mantık kullan
     if (!cardCount) {
       switch (normalizedType) {
@@ -405,7 +439,7 @@ export function useReadingCards(
           cardCount = rawCards.length;
       }
     }
-    
+
     if (!cardCount) {
       return [];
     }
@@ -413,9 +447,14 @@ export function useReadingCards(
     // rawCards array'ini cardCount'a göre sınırla
     const actualCardCount = Math.min(cardCount, rawCards.length);
     const limitedRawCards = rawCards.slice(0, actualCardCount);
-    
+
     const result = limitedRawCards.map((rawCard, index) => {
-      const resolved = resolveCard(rawCard, deckById, deckByName, index * -1 - 1);
+      const resolved = resolveCard(
+        rawCard,
+        deckById,
+        deckByName,
+        index * -1 - 1
+      );
 
       const positionInfo =
         positions[index] ??
@@ -448,14 +487,24 @@ export function useReadingCards(
         displayName: resolved.displayName,
         isReversed: resolved.isReversed,
         position: positionInfo,
-        meaning: typeof meaning === 'string' ? meaning : (meaning?.interpretation || ''),
+        meaning:
+          typeof meaning === 'string' ? meaning : meaning?.interpretation || '',
         keywords: keywords.length > 0 ? keywords : [],
         context: context || '',
       };
     });
-    
+
     return result;
-  }, [config?.cardCount, rawCards, deckById, deckByName, positions, t, meaningResolver, normalizedType]);
+  }, [
+    config?.cardCount,
+    rawCards,
+    deckById,
+    deckByName,
+    positions,
+    t,
+    meaningResolver,
+    normalizedType,
+  ]);
 
   return cards;
 }

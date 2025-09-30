@@ -45,6 +45,7 @@ import { useState } from 'react';
 import { LayoutErrorBoundary } from '@/components/layout/LayoutErrorBoundary';
 import { useNavigation } from '@/hooks/useNavigation';
 import { usePerformanceMonitoring } from '@/hooks/usePerformanceMonitoring';
+import { useTranslations } from '@/hooks/useTranslations';
 
 // Navigation logic moved to useNavigation hook
 
@@ -52,6 +53,7 @@ import { usePerformanceMonitoring } from '@/hooks/usePerformanceMonitoring';
 function LanguageSelector() {
   const [isOpen, setIsOpen] = useState(false);
   const { currentLanguage, languages, handleLanguageChange } = useNavigation();
+  const { t } = useTranslations();
 
   const handleLanguageSelect = (locale: string) => {
     setIsOpen(false);
@@ -63,7 +65,7 @@ function LanguageSelector() {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className='flex flex-col items-center justify-center px-2 py-2 rounded-lg transition-all duration-300 min-w-0 flex-1 text-gray-500 hover:text-gray-300'
-        aria-label='Dil seçici menüsünü aç'
+        aria-label={t('navigation.languageSelector.openMenu')}
         aria-expanded={isOpen}
         aria-haspopup='menu'
         role='button'
@@ -87,7 +89,10 @@ function LanguageSelector() {
           <div
             className='absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 z-50 bg-slate-800/95 backdrop-blur-md border border-slate-600 rounded-lg shadow-xl min-w-[140px]'
             role='menu'
-            aria-label='Dil seçenekleri'
+            aria-label={t(
+              'navigation.languageSelector.languageOptions',
+              'Dil seçenekleri'
+            )}
           >
             {languages.map((language, index) => (
               <button
@@ -104,7 +109,7 @@ function LanguageSelector() {
                   }
                 `}
                 role='menuitem'
-                aria-label={`${language.name} dilini seç`}
+                aria-label={`${language.name} ${t('navigation.languageSelector.selectLanguage', 'dilini seç')}`}
                 aria-current={
                   currentLanguage?.code === language.code ? 'true' : 'false'
                 }
@@ -131,6 +136,7 @@ export default function BottomNavigation() {
   const pathname = usePathname();
   const { navigationItems, handleNavigationClick } = useNavigation();
   const { trackUserInteraction } = usePerformanceMonitoring();
+  const { t } = useTranslations();
 
   // Profil ikonuna tıklama işlemi - programatik yönlendirme
   const handleProfileClick = (e: React.MouseEvent) => {
@@ -187,7 +193,7 @@ export default function BottomNavigation() {
                   transition-all duration-300 min-w-0 flex-1
                   ${isActive ? 'text-amber-400' : 'text-gray-500 hover:text-gray-300'}
                 `}
-                  aria-label={`${item.name} sayfasına git`}
+                  aria-label={`${item.name} ${t('navigation.menu.goToPage', 'sayfasına git')}`}
                   aria-current={isActive ? 'page' : undefined}
                   role='menuitem'
                 >
@@ -211,7 +217,7 @@ export default function BottomNavigation() {
                   transition-all duration-300 min-w-0 flex-1
                   ${isActive ? 'text-amber-400' : 'text-gray-500 hover:text-gray-300'}
                 `}
-                  aria-label={`${item.name} sayfasına git`}
+                  aria-label={`${item.name} ${t('navigation.menu.goToPage', 'sayfasına git')}`}
                   aria-current={isActive ? 'page' : undefined}
                   role='menuitem'
                 >

@@ -2,15 +2,17 @@
 
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useAuth } from '@/hooks/auth/useAuth';
+import { useTranslations } from '@/hooks/useTranslations';
 import { supabase } from '@/lib/supabase/client';
 import { CheckCircle, ArrowRight, CreditCard } from 'lucide-react';
 import { PaymentErrorBoundary } from '@/components/payment/PaymentErrorBoundary';
 
 export default function PaymentSuccessPage() {
   const { user } = useAuth();
+  const { t } = useTranslations();
   const router = useRouter();
   const searchParams = useSearchParams();
   const [loading, setLoading] = useState(true);
@@ -20,25 +22,16 @@ export default function PaymentSuccessPage() {
   const [creditsAdded, setCreditsAdded] = useState(0);
   const [packageName, setPackageName] = useState('');
 
-  useEffect(() => {
-    if (!user) {
-      router.push('/auth/login');
-      return;
-    }
-
-    checkPaymentStatus();
-  }, [user, router]);
-
-  // Input validation for order_id
-  const validateOrderId = (orderId: string | null): boolean => {
-    return orderId !== null && /^[a-zA-Z0-9-_]+$/.test(orderId);
-  };
-
-  const checkPaymentStatus = async () => {
+  const checkPaymentStatus = useCallback(async () => {
+    // Input validation for order_id
+    const validateOrderId = (orderId: string | null): boolean => {
+      return orderId !== null && /^[a-zA-Z0-9-_]+$/.test(orderId);
+    };
     try {
       const orderId = searchParams.get('order_id');
 
       if (!orderId || !validateOrderId(orderId)) {
+        // eslint-disable-next-line no-console
         console.error('Invalid order_id parameter:', orderId);
         setPaymentStatus('error');
         setLoading(false);
@@ -67,12 +60,22 @@ export default function PaymentSuccessPage() {
         setPaymentStatus('error');
       }
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.error('Payment status check error:', error);
       setPaymentStatus('error');
     } finally {
       setLoading(false);
     }
-  };
+  }, [searchParams]);
+
+  useEffect(() => {
+    if (!user) {
+      router.push('/auth/login');
+      return;
+    }
+
+    checkPaymentStatus();
+  }, [user, router, checkPaymentStatus]);
 
   const handleGoToDashboard = () => {
     router.push('/dashboard');
@@ -84,7 +87,10 @@ export default function PaymentSuccessPage() {
         <div className='text-center'>
           <div className='animate-spin rounded-full h-12 w-12 border-b-2 border-gold mx-auto mb-4'></div>
           <p className='text-text-celestial'>
-            Ödeme durumu kontrol ediliyor...
+            {t(
+              'payment.success.checkingStatus',
+              'Ödeme durumu kontrol ediliyor...'
+            )}
           </p>
         </div>
       </div>
@@ -101,10 +107,11 @@ export default function PaymentSuccessPage() {
                 <div className='mb-6'>
                   <CheckCircle className='h-16 w-16 text-green-400 mx-auto mb-4' />
                   <h1 className='text-2xl font-bold text-text-celestial mb-2'>
-                    Ödeme Başarılı!
+                    {t('payment.success.title', 'Ödeme Başarılı!')}
                   </h1>
                   <p className='text-text-mystic mb-4'>
-                    {packageName} başarıyla satın alındı
+                    {t('payment.success.packagePurchased')}
+                    {packageName ? `: ${packageName}` : ''}
                   </p>
                 </div>
 
@@ -112,11 +119,11 @@ export default function PaymentSuccessPage() {
                   <div className='flex items-center justify-center space-x-2 mb-2'>
                     <CreditCard className='h-6 w-6 text-green-400' />
                     <span className='text-green-400 font-bold'>
-                      +{creditsAdded} Kredi
+                      {`+${creditsAdded} ${t('payment.success.creditsUnit')}`}
                     </span>
                   </div>
                   <p className='text-sm text-text-muted'>
-                    Krediler hesabınıza eklendi
+                    {t('payment.success.creditsAddedDescription')}
                   </p>
                 </div>
 
@@ -124,7 +131,7 @@ export default function PaymentSuccessPage() {
                   onClick={handleGoToDashboard}
                   className='w-full btn btn-primary flex items-center justify-center space-x-2'
                 >
-                  <span>Dashboard'a Git</span>
+                  <span>{t('payment.success.goToDashboard')}</span>
                   <ArrowRight className='h-4 w-4' />
                 </button>
               </>
@@ -135,10 +142,10 @@ export default function PaymentSuccessPage() {
                     <span className='text-red-400 text-2xl'>!</span>
                   </div>
                   <h1 className='text-2xl font-bold text-text-celestial mb-2'>
-                    Ödeme Hatası
+                    {t('payment.error.title', 'Ödeme Hatası')}
                   </h1>
                   <p className='text-text-mystic mb-4'>
-                    Ödeme işlemi tamamlanamadı
+                    {t('payment.error.description')}
                   </p>
                 </div>
 
@@ -146,7 +153,7 @@ export default function PaymentSuccessPage() {
                   onClick={handleGoToDashboard}
                   className='w-full btn btn-secondary'
                 >
-                  Dashboard'a Dön
+                  {t('payment.cancel.goToDashboard')}
                 </button>
               </>
             )}

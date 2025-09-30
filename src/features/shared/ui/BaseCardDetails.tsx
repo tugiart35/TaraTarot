@@ -79,24 +79,26 @@ export interface BaseCardDetailsProps {
 
   // BaseInterpretation.tsx'den alınan kart anlamı fonksiyonları
   getCardMeaning?: ((_card: TarotCard) => CardMeaningData | null) | undefined;
-  getMeaningText?: ((
-    _meaning: CardMeaningData | null,
-    _card: TarotCard,
-    _isReversed: boolean
-  ) => string | { interpretation: string; context: string }) | undefined;
-  getKeywords?: ((
-    _meaning: CardMeaningData | null,
-    _card: TarotCard
-  ) => string[]) | undefined;
-  getPositionSpecificInterpretation?: ((
-    _card: TarotCard,
-    _position: number,
-    _isReversed: boolean
-  ) => string | { interpretation: string; context: string }) | undefined;
-  getPositionContext?: ((
-    _card: TarotCard,
-    _position: number
-  ) => string | undefined) | undefined;
+  getMeaningText?:
+    | ((
+        _meaning: CardMeaningData | null,
+        _card: TarotCard,
+        _isReversed: boolean
+      ) => string | { interpretation: string; context: string })
+    | undefined;
+  getKeywords?:
+    | ((_meaning: CardMeaningData | null, _card: TarotCard) => string[])
+    | undefined;
+  getPositionSpecificInterpretation?:
+    | ((
+        _card: TarotCard,
+        _position: number,
+        _isReversed: boolean
+      ) => string | { interpretation: string; context: string })
+    | undefined;
+  getPositionContext?:
+    | ((_card: TarotCard, _position: number) => string | undefined)
+    | undefined;
   showContext?: boolean;
 }
 
@@ -128,17 +130,21 @@ export default function BaseCardDetails({
     const cardMeaning: CardMeaningData | null = getCardMeaning
       ? getCardMeaning(card)
       : null;
-    
+
     let positionInterpretation = '';
 
     // 1. Önce props'tan gelen getPositionSpecificInterpretation fonksiyonunu kullan
     if (getPositionSpecificInterpretation && position) {
-      const result = getPositionSpecificInterpretation(card, position, isReversed);
-      
+      const result = getPositionSpecificInterpretation(
+        card,
+        position,
+        isReversed
+      );
+
       // Eğer result string ise, direkt kullan
       if (typeof result === 'string') {
         positionInterpretation = result;
-      } 
+      }
       // Eğer result object ise, interpretation'ı al
       else if (result && typeof result === 'object') {
         positionInterpretation = result.interpretation || '';
@@ -148,11 +154,11 @@ export default function BaseCardDetails({
     // 2. Eğer positionInterpretation boşsa, getMeaningText fonksiyonunu dene
     if (!positionInterpretation && getMeaningText) {
       const result = getMeaningText(cardMeaning, card, isReversed);
-      
+
       // Eğer result string ise, direkt kullan
       if (typeof result === 'string') {
         positionInterpretation = result;
-      } 
+      }
       // Eğer result object ise, interpretation'ı al
       else if (result && typeof result === 'object') {
         positionInterpretation = result.interpretation || '';
@@ -200,12 +206,13 @@ export default function BaseCardDetails({
 
   // Kart anlamını ve anahtar kelimeleri al
   const cardInterpretation = getCardInterpretation();
-  const keywords = getKeywords ? getKeywords(getCardMeaning ? getCardMeaning(card) : null, card) : [];
-  
+  const keywords = getKeywords
+    ? getKeywords(getCardMeaning ? getCardMeaning(card) : null, card)
+    : [];
+
   // Context'i al (lib/ dosyalarından)
-  const positionContext = getPositionContext && position
-    ? getPositionContext(card, position)
-    : null;
+  const positionContext =
+    getPositionContext && position ? getPositionContext(card, position) : null;
 
   // Context'i al (problem çözme açılımı için)
   const cardMeaning = getCardMeaning ? getCardMeaning(card) : null;
@@ -350,12 +357,18 @@ export default function BaseCardDetails({
                 {position && _positionInfo && (
                   <div className='bg-gradient-to-r from-gray-800/50 to-gray-700/30 rounded-xl p-4 border border-gray-600/30'>
                     <div className='flex items-center justify-between mb-2'>
-                      <span className={`text-lg font-bold ${currentTheme.title}`}>
+                      <span
+                        className={`text-lg font-bold ${currentTheme.title}`}
+                      >
                         {_positionInfo.title}
                       </span>
-                      <span className={`text-sm px-3 py-1 rounded-full font-semibold ${
-                        isReversed ? 'bg-red-500/20 text-red-300' : 'bg-green-500/20 text-green-300'
-                      }`}>
+                      <span
+                        className={`text-sm px-3 py-1 rounded-full font-semibold ${
+                          isReversed
+                            ? 'bg-red-500/20 text-red-300'
+                            : 'bg-green-500/20 text-green-300'
+                        }`}
+                      >
                         {isReversed ? 'Ters' : 'Düz'}
                       </span>
                     </div>
@@ -387,16 +400,22 @@ export default function BaseCardDetails({
                   {/* Ana Anlam */}
                   <div className='mb-6'>
                     <div className='flex items-center gap-3 mb-4'>
-                      <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
-                        isReversed ? 'bg-gradient-to-r from-red-500 to-orange-500' : 'bg-gradient-to-r from-green-500 to-emerald-500'
-                      }`}>
+                      <div
+                        className={`w-8 h-8 rounded-full flex items-center justify-center ${
+                          isReversed
+                            ? 'bg-gradient-to-r from-red-500 to-orange-500'
+                            : 'bg-gradient-to-r from-green-500 to-emerald-500'
+                        }`}
+                      >
                         <span className='text-white text-sm font-bold'>
                           {isReversed ? '↻' : '↻'}
                         </span>
                       </div>
-                      <span className={`text-lg font-bold ${
-                        isReversed ? 'text-red-300' : 'text-green-300'
-                      }`}>
+                      <span
+                        className={`text-lg font-bold ${
+                          isReversed ? 'text-red-300' : 'text-green-300'
+                        }`}
+                      >
                         {isReversed ? 'Ters Anlam' : 'Düz Anlam'}
                       </span>
                     </div>

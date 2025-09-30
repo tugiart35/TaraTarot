@@ -334,7 +334,8 @@ const THEME_STYLES: Record<TarotTheme, SpreadThemeStyles> = {
         'bg-gradient-to-br from-purple-900/95 to-indigo-900/95 border border-purple-500/30 rounded-3xl shadow-2xl max-w-md w-full p-8 text-center',
       title: 'text-indigo-300 text-2xl font-bold mb-4',
       message: 'text-purple-200 mb-6 leading-relaxed',
-      infoBox: 'bg-purple-800/30 border border-purple-500/20 rounded-xl p-4 mb-6',
+      infoBox:
+        'bg-purple-800/30 border border-purple-500/20 rounded-xl p-4 mb-6',
       infoText: 'text-purple-300 text-sm',
       progressTrack: 'bg-purple-800/30',
       progressFill: 'bg-gradient-to-r from-indigo-400 to-purple-500',
@@ -395,7 +396,8 @@ const THEME_STYLES: Record<TarotTheme, SpreadThemeStyles> = {
         'bg-gradient-to-br from-yellow-900/95 to-amber-900/95 border border-yellow-500/30 rounded-3xl shadow-2xl max-w-md w-full p-8 text-center',
       title: 'text-amber-300 text-2xl font-bold mb-4',
       message: 'text-yellow-200 mb-6 leading-relaxed',
-      infoBox: 'bg-yellow-800/30 border border-yellow-500/20 rounded-xl p-4 mb-6',
+      infoBox:
+        'bg-yellow-800/30 border border-yellow-500/20 rounded-xl p-4 mb-6',
       infoText: 'text-yellow-300 text-sm',
       progressTrack: 'bg-yellow-800/30',
       progressFill: 'bg-gradient-to-r from-green-400 to-amber-500',
@@ -456,7 +458,8 @@ const THEME_STYLES: Record<TarotTheme, SpreadThemeStyles> = {
         'bg-gradient-to-br from-orange-900/95 to-green-900/95 border border-orange-500/30 rounded-3xl shadow-2xl max-w-md w-full p-8 text-center',
       title: 'text-green-300 text-2xl font-bold mb-4',
       message: 'text-orange-200 mb-6 leading-relaxed',
-      infoBox: 'bg-orange-800/30 border border-orange-500/20 rounded-xl p-4 mb-6',
+      infoBox:
+        'bg-orange-800/30 border border-orange-500/20 rounded-xl p-4 mb-6',
       infoText: 'text-orange-300 text-sm',
       progressTrack: 'bg-orange-800/30',
       progressFill: 'bg-gradient-to-r from-green-400 to-amber-500',
@@ -550,7 +553,9 @@ interface CreateTarotReadingComponentOptions {
     card: TarotCard | null,
     position: number,
     isReversed: boolean
-  ) => string | { interpretation: string; context: string; keywords?: string[] };
+  ) =>
+    | string
+    | { interpretation: string; context: string; keywords?: string[] };
 }
 
 // Tarot okuma bileşeni factory fonksiyonu - konfigürasyona göre özelleştirilmiş bileşen döner
@@ -569,17 +574,19 @@ export function createTarotReadingComponent({
     // Konfigürasyon ve tema stilleri - memo ile optimize edilmiş
     const config = useMemo(() => getConfig(), []);
     const themeStyles = THEME_STYLES[config.theme];
-    
+
     // Router ve çeviri hook'ları
     const router = useRouter();
     const { t } = useTranslations();
-    
+
     // Kullanıcı auth ve toast bildirimleri
     const { user } = useAuth();
     const { toast, showToast, hideToast } = useToast();
-    
+
     // Kredi yönetimi - detaylı ve yazılı okuma için ayrı krediler
-    const detailedCredits = useReadingCredits(config.creditKeys.detailed as any);
+    const detailedCredits = useReadingCredits(
+      config.creditKeys.detailed as any
+    );
     const writtenCredits = useReadingCredits(config.creditKeys.written as any);
 
     // Tarot okuma akışı hook'u - tüm state ve fonksiyonları yönetir
@@ -599,27 +606,27 @@ export function createTarotReadingComponent({
       shuffleDeck,
       interpretationRef,
       userQuestion,
-      
+
       // Okuma tipi seçimi
       selectedReadingType,
       setSelectedReadingType,
-      
+
       // Form verileri
       personalInfo,
       communicationMethod,
       questions,
       formErrors,
-      
+
       // Modal durumları
       modalStates,
       setModalStates,
-      
+
       // Form güncelleme fonksiyonları
       updatePersonalInfo,
       updateCommunicationMethod,
       updateQuestion,
       validateDetailedForm,
-      
+
       // Kaydetme durumları
       setSaving,
       setSavingReading,
@@ -705,7 +712,7 @@ export function createTarotReadingComponent({
     // Özet başlık ve metin anahtarları - yorumlama sonunda gösterilecek
     const summaryTitleKey = `tarotPage.${config.summaryKey}.summary`;
     const summaryTextKey = `tarotPage.${config.summaryKey}.summaryText`;
-    
+
     // Modal çeviri anahtarları
     const modalKeys = config.i18nKeys.modals;
 
@@ -837,16 +844,22 @@ export function createTarotReadingComponent({
           p_metadata: enhancedMetadata,
           p_idempotency_key: `reading_${user.id}_${readingData.timestamp}`,
         };
-        
-        console.log('🔍 Situation Analysis RPC çağrısı parametreleri:', rpcParams);
+
+        console.log(
+          '🔍 Situation Analysis RPC çağrısı parametreleri:',
+          rpcParams
+        );
 
         // Supabase RPC fonksiyonu ile okuma kaydetme ve kredi düşme
         const { data: rpcResult, error: rpcError } = await supabase.rpc(
           'fn_create_reading_with_debit',
           rpcParams
         );
-        
-        console.log('🔍 Situation Analysis RPC sonucu:', { rpcResult, rpcError });
+
+        console.log('🔍 Situation Analysis RPC sonucu:', {
+          rpcResult,
+          rpcError,
+        });
 
         // Okuma kaydedildikten sonra iletişim bilgilerini güncelle
         if (rpcResult?.id) {
@@ -871,7 +884,7 @@ export function createTarotReadingComponent({
             message: rpcError.message,
             details: rpcError.details,
             hint: rpcError.hint,
-            code: rpcError.code
+            code: rpcError.code,
           });
           throw rpcError;
         }
@@ -974,7 +987,7 @@ export function createTarotReadingComponent({
         ) {
           // Okuma süresini hesapla
           const duration = Date.now() - startTime;
-          
+
           // Seçilen kartları serialize et
           const serializedCards = selectedCards
             .filter((card): card is TarotCard => card !== null)
@@ -1040,12 +1053,14 @@ export function createTarotReadingComponent({
             setModalStates(prev => ({ ...prev, showSuccessModal: false }));
             try {
               // Locale-aware dashboard yönlendirmesi
-              const currentLocale = window.location.pathname.split('/')[1] || 'tr';
+              const currentLocale =
+                window.location.pathname.split('/')[1] || 'tr';
               router.push(`/${currentLocale}/dashboard`);
             } catch (error) {
               console.warn('Dashboard yönlendirme hatası:', error);
               // Fallback: window.location kullan
-              const currentLocale = window.location.pathname.split('/')[1] || 'tr';
+              const currentLocale =
+                window.location.pathname.split('/')[1] || 'tr';
               window.location.href = `/${currentLocale}/dashboard`;
             }
           }, 1500);
@@ -1058,7 +1073,7 @@ export function createTarotReadingComponent({
           error: error instanceof Error ? error.message : error,
           stack: error instanceof Error ? error.stack : undefined,
           readingType: config.supabaseReadingType,
-          spreadName: t(dataKeys.spreadName)
+          spreadName: t(dataKeys.spreadName),
         });
         showToast(t(messages.readingSaveError), 'error');
       } finally {
@@ -1079,7 +1094,10 @@ export function createTarotReadingComponent({
         }
       } catch (error) {
         console.error('Reading type seçiminde hata:', error);
-        showToast('Okuma tipi seçiminde bir hata oluştu. Lütfen tekrar deneyin.', 'error');
+        showToast(
+          'Okuma tipi seçiminde bir hata oluştu. Lütfen tekrar deneyin.',
+          'error'
+        );
       }
     };
 
@@ -1090,12 +1108,15 @@ export function createTarotReadingComponent({
           showToast(t(messages.selectReadingTypeFirst), 'info');
           return;
         }
-        
+
         console.log(`Kart seçiliyor: ${card.name}`);
         handleCardSelect(card);
       } catch (error) {
         console.error('Kart seçiminde hata:', error);
-        showToast('Kart seçiminde bir hata oluştu. Lütfen tekrar deneyin.', 'error');
+        showToast(
+          'Kart seçiminde bir hata oluştu. Lütfen tekrar deneyin.',
+          'error'
+        );
       }
     };
 
@@ -1107,7 +1128,8 @@ export function createTarotReadingComponent({
         detailedFormSaved);
 
     // Kredi anahtarı - detaylı okuma için
-    const readingTypeKey = readingType || `${config.creditKeyPrefix}_DETAILED` as any;
+    const readingTypeKey =
+      readingType || (`${config.creditKeyPrefix}_DETAILED` as any);
 
     return (
       <div className='w-full space-y-6 md:space-y-8'>
@@ -1138,7 +1160,7 @@ export function createTarotReadingComponent({
                 {t(modalKeys.aboutSpreadText)}
               </p>
             </div>
-            
+
             {/* Okuma tipi bilgisi */}
             <div className={themeStyles.infoPrimary.container}>
               <h3 className={themeStyles.infoPrimary.title}>
@@ -1152,7 +1174,7 @@ export function createTarotReadingComponent({
                   : t(modalKeys.writtenReadingText)}
               </p>
             </div>
-            
+
             {/* Dikkat bilgisi */}
             <div className={themeStyles.infoSecondary.container}>
               <h3 className={themeStyles.infoSecondary.title}>
@@ -1162,14 +1184,19 @@ export function createTarotReadingComponent({
                 {t(modalKeys.loveAttention)}
               </p>
             </div>
-            
+
             {/* Süreç adımları */}
             <div className={themeStyles.process.container}>
               <h3 className={themeStyles.process.title}>
                 {t(modalKeys.process)}
               </h3>
               <div className='space-y-2'>
-                {[modalKeys.step1, modalKeys.step2, modalKeys.step3, modalKeys.step4].map((stepKey, index) => (
+                {[
+                  modalKeys.step1,
+                  modalKeys.step2,
+                  modalKeys.step3,
+                  modalKeys.step4,
+                ].map((stepKey, index) => (
                   <div
                     key={stepKey}
                     className='flex items-center text-gray-300 text-sm'
@@ -1263,9 +1290,6 @@ export function createTarotReadingComponent({
           </div>
         )}
 
-
-     
-
         {/* Tarot canvas - kart yayılımı ve seçim alanı */}
         <BaseTarotCanvas
           config={config}
@@ -1289,7 +1313,9 @@ export function createTarotReadingComponent({
                   <div
                     className={`w-6 h-6 ${themeStyles.readingHighlight.iconBg} rounded-full flex items-center justify-center`}
                   >
-                    <span className={`${themeStyles.readingHighlight.iconText} text-sm`}>
+                    <span
+                      className={`${themeStyles.readingHighlight.iconText} text-sm`}
+                    >
                       {interpretationEmoji}
                     </span>
                   </div>
@@ -1326,19 +1352,28 @@ export function createTarotReadingComponent({
             <div className='flex flex-col items-center gap-3'>
               <div className='flex items-center gap-2 px-4 py-2 bg-white/10 rounded-lg'>
                 <span className='text-sm text-gray-300'>
-                  {selectedReadingType === READING_TYPES.SIMPLE && '✨ Basit Okuma'}
-                  {selectedReadingType === READING_TYPES.DETAILED && '👑 Sesli Okuma'}
-                  {selectedReadingType === READING_TYPES.WRITTEN && '📝 Yazılı Okuma'}
+                  {selectedReadingType === READING_TYPES.SIMPLE &&
+                    '✨ Basit Okuma'}
+                  {selectedReadingType === READING_TYPES.DETAILED &&
+                    '👑 Sesli Okuma'}
+                  {selectedReadingType === READING_TYPES.WRITTEN &&
+                    '📝 Yazılı Okuma'}
                 </span>
                 <button
                   onClick={() => {
                     try {
                       console.log('Okuma tipi değiştiriliyor...');
                       setSelectedReadingType(null);
-                      showToast('Okuma tipi değiştirildi. Yeni tip seçebilirsiniz.', 'info');
+                      showToast(
+                        'Okuma tipi değiştirildi. Yeni tip seçebilirsiniz.',
+                        'info'
+                      );
                     } catch (error) {
                       console.error('Okuma tipi değiştirirken hata:', error);
-                      showToast('Okuma tipi değiştirirken bir hata oluştu.', 'error');
+                      showToast(
+                        'Okuma tipi değiştirirken bir hata oluştu.',
+                        'error'
+                      );
                     }
                   }}
                   className='px-3 py-1 text-xs bg-blue-500/20 hover:bg-blue-500/30 text-blue-300 rounded-md transition-colors'
@@ -1437,9 +1472,14 @@ export function createTarotReadingComponent({
             }}
             getKeywords={(_cardMeaning, card) => {
               // Keywords'leri almak için lib/ dosyalarından
-              const position = selectedCards.findIndex(c => c && c.id === card.id) + 1;
+              const position =
+                selectedCards.findIndex(c => c && c.id === card.id) + 1;
               const meaning = getCardMeaning(card, position, false);
-              if (typeof meaning === 'object' && meaning !== null && meaning.keywords) {
+              if (
+                typeof meaning === 'object' &&
+                meaning !== null &&
+                meaning.keywords
+              ) {
                 return meaning.keywords;
               }
               return [];
@@ -1461,7 +1501,11 @@ export function createTarotReadingComponent({
                 icon={interpretationEmoji}
                 badgeText={t(dataKeys.badgeText)}
                 positionsInfo={config.positionsInfo}
-                getPositionSpecificInterpretation={(card, position, reversed) => {
+                getPositionSpecificInterpretation={(
+                  card,
+                  position,
+                  reversed
+                ) => {
                   const meaning = getCardMeaning(card, position, reversed);
                   if (typeof meaning === 'object' && meaning !== null) {
                     return meaning.interpretation;
@@ -1478,9 +1522,14 @@ export function createTarotReadingComponent({
                 }}
                 getKeywords={(_cardMeaning, card) => {
                   // Keywords'leri almak için lib/ dosyalarından
-                  const position = selectedCards.findIndex(c => c && c.id === card.id) + 1;
+                  const position =
+                    selectedCards.findIndex(c => c && c.id === card.id) + 1;
                   const meaning = getCardMeaning(card, position, false);
-                  if (typeof meaning === 'object' && meaning !== null && meaning.keywords) {
+                  if (
+                    typeof meaning === 'object' &&
+                    meaning !== null &&
+                    meaning.keywords
+                  ) {
                     return meaning.keywords;
                   }
                   return [];

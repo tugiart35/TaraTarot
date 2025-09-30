@@ -63,3 +63,25 @@ Thumbs.db
 
 # Large cache files
 *.pack.*
+
+# KORUNACAK DOSYALAR - Bu dosyalar değiştirilmemelidir
+# Bu dosyalar kritik olduğu için git tarafından izlenir ama değiştirilmemelidir
+# messages/tr.json
+# messages/en.json
+# messages/sr.json
+# messages/tr.backup.json
+# src/app/[locale]/layout.tsx
+# src/app/[locale]/(main)/tarotokumasi/page.tsx
+# TAROT-ACILIMLARI-REHBERI.md
+# migrations/ klasöründeki tüm .sql dosyaları
+# functions/ klasöründeki tüm dosyalar
+# public/cards/ klasöründeki tüm dosyalar
+# public/Spread/ klasöründeki tüm dosyalar
+
+# YENİ EKLENEN KORUNACAK DOSYALAR
+# src/hooks/useReadingDetail.ts
+# src/features/shared/ui/ReadingDetailModal.tsx
+# src/lib/ klasöründeki tüm dosyalar
+# src/features/tarot/ klasöründeki tüm dosyalar
+# src/lib/tarotspread/ klasöründeki tüm dosyalar
+# src/app/[locale]/(main)/numeroloji/ klasöründeki tüm dosyalar

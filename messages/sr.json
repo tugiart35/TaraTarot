@@ -1,4 +1,11 @@
 {
+  "accessibility": {
+    "goToPage": "stranicu",
+    "languageOptions": "Opcije jezika",
+    "openLanguageMenu": "Otvori meni za izbor jezika",
+    "selectLanguage": "jezik",
+    "skipToMain": "Idi na glavni sadržaj"
+  },
   "auth": {
     "audit": {
       "loginSuccess": ""
@@ -458,6 +465,65 @@
     },
     "title": "Büşbüşkimki"
   },
+  "homepage": {
+    "features": {
+      "authentic": {
+        "description": "Tradicionalne tarot i numerološke metode",
+        "title": "Autentično Vođstvo"
+      },
+      "multilingual": {
+        "description": "Podrška za turski, engleski i srpski",
+        "title": "Višejezično"
+      },
+      "personalized": {
+        "description": "Detaljne analize prilagođene vama",
+        "title": "Personalizovano"
+      },
+      "secure": {
+        "description": "Vaši podaci su potpuno sigurni",
+        "title": "Sigurno"
+      },
+      "title": "Zašto Nas Izabrati?"
+    },
+    "hero": {
+      "description": "Krenite u putovanje kroz mistični svet karata i brojeva. Otkrijte tajne svog života sa profesionalnim tarot čitanjem i numerološkom analizom.",
+      "subtitle": "Otkrijte Svoju Budućnost, Razumite Svoju Sudbinu",
+      "title": "Mistični Tarot i Numerologija"
+    },
+    "seo": {
+      "content": "Kao Büşbüşkimki, pružamo profesionalne usluge tarot čitanja i numerološke analize. Možete dobiti vođstvo u svim oblastima svog života sa ljubavnim vođstvom, karijernim vođstvom, dnevnim vođstvom i detaljnom numerološkom analizom. Na vašoj usluzi smo sa našim stručnim timom u mističnom vođstvu, duhovnom savetovanju i analizi sudbine."
+    },
+    "services": {
+      "numerology": {
+        "button": "Numerološka Analiza",
+        "description": "Otkrijte tajne brojeva. Naučite svoj životni put, broj izražavanja i duhovnu želju.",
+        "features": [
+          "Životni Put",
+          "Broj Izražavanja",
+          "Želja Duše",
+          "Dnevni Broj"
+        ],
+        "title": "Numerološka Analiza"
+      },
+      "tarot": {
+        "button": "Tarot Čitanje",
+        "description": "Krenite u putovanje kroz mistični svet karata. Otkrijte svoju prošlost, sadašnjost i budućnost.",
+        "features": [
+          "Ljubavni Raspored",
+          "Karijerno Vođstvo",
+          "Dnevno Vođstvo",
+          "Detaljno Tumačenje"
+        ],
+        "title": "Tarot Čitanje"
+      }
+    },
+    "stats": {
+      "readings": "Završena Čitanja",
+      "satisfaction": "Stopa Zadovoljstva",
+      "title": "Pouzdana Usluga",
+      "users": "Aktivni Korisnici"
+    }
+  },
   "interpretation": {
     "badge": "TAROT",
     "cannotGenerate": "Ne može se generisati tumačenje bez izbora svih karata.",
@@ -650,8 +716,29 @@
     }
   },
   "messages": {
+    "accessibility": {
+      "skipToMain": "Idi na glavni sadržaj"
+    },
+    "dashboard": {
+      "creditBalanceRefreshed": "Кредитни биланс је обновљен"
+    },
+    "payment": {
+      "cancel": {
+        "goToDashboard": "Повратак на контролну таблу"
+      },
+      "success": {
+        "creditsAdded": "Кредит",
+        "creditsUnit": "Кредит"
+      }
+    },
     "readingModal": {
       "completed": ""
+    },
+    "tarot": {
+      "page": {
+        "selectSpread": "\n",
+        "selectSpreadDescription": "Izaberite jednu od opcija iznad da počnete čitanje"
+      }
     }
   },
   "nav": {
@@ -671,12 +758,20 @@
     "terms": "Uslovi"
   },
   "navigation": {
-    "auth": "Prijavite se",
-    "dashboard": "Kontrolna tabla",
-    "home": "Početna",
-    "numerology": "Numerologija",
-    "profile": "Profil",
-    "tarot": "Tarot"
+    "languageSelector": {
+      "auth": "Prijavite se",
+      "dashboard": "Kontrolna tabla",
+      "home": "Početna",
+      "languageOptions": "Opcije jezika",
+      "numerology": "Numerologija",
+      "openMenu": "Otvori meni za izbor jezika",
+      "profile": "Profil",
+      "selectLanguage": "jezik",
+      "tarot": "Tarot"
+    },
+    "menu": {
+      "goToPage": "stranicu"
+    }
   },
   "numerology": {
     "birthdayMeanings": {
@@ -781,6 +876,67 @@
       "8": "Broj Zrelosti 8 pojedinci se suočavaju sa temama moći, upravljanja i materijalnog uspeha u drugoj polovini svojih života. Tokom ovog perioda, mogu dostići uticajne pozicije u poslu ili zajednicama. Zahvaljujući svojoj odlučnosti, imaju potencijal da stvore obilje i prosperitet.\n\nMeđutim, prekomerna ambicija, želja za kontrolom ili autoritarizam može biti senovna strana ovog procesa. Kada balansiraju materijalni uspeh sa duhovnošću, postaju i jaki i pravedni lideri.",
       "9": "Za Broj Zrelosti 9 pojedince, napredne godine su oblikovane temama saosećanja, idealizma i služenja čovečanstvu. Ceniti dodirivanje tuđih života, ostavljanje traga u svetu i doprinos kroz umetničke/humanitarne projekte.\n\nMeđutim, prekomerni idealizam ili samožrtvovanje mogu biti senovni aspekti. Kada kombinuju realnost sa svojim idealizmom, postaju inspirativne i isceljujuće figure u društvu."
     },
+    "page": {
+      "calculate": "Izračunaj",
+      "calculating": "Izračunavam...",
+      "close": "Zatvori",
+      "descriptions": {
+        "birthdayNumber": "Otkrijte svoje urođene darove",
+        "compatibility": "Analizirajte kompatibilnost između dve osobe",
+        "expressionDestiny": "Saznajte svoje prirodne talente kroz ime",
+        "lifePath": "Otkrijte svoj životni put kroz datum rođenja",
+        "maturity": "Saznajte teme vašeg perioda 35+ godina",
+        "personalCycles": "Pogledajte svoj godišnji, mesečni i dnevni energetski kalendar",
+        "personality": "Saznajte kako se vidite spoljašnjem svetu",
+        "pinnaclesChallenges": "Otkrijte svoje životne periode i izazove",
+        "soulUrge": "Otkrijte svoje unutrašnje motivacije i želje duše"
+      },
+      "errors": {
+        "calculationError": "Došlo je do greške u izračunavanju",
+        "invalidDateFormat": "Neispravan format datuma",
+        "invalidNameFormat": "Neispravan format imena",
+        "rateLimitExceeded": "Previše često izračunavate. Molimo sačekajte 1 minut.",
+        "requiredFields": "Molimo popunite potrebna polja"
+      },
+      "form": {
+        "birthDate": "Datum Rođenja (GGGG-MM-DD)",
+        "fullName": "Ime i Prezime",
+        "namePlaceholder": "Npr: Marko Petrović",
+        "namePlaceholder2": "Npr: Ana Nikolić",
+        "person1": "1. Osoba",
+        "person2": "2. Osoba",
+        "targetDate": "Ciljni Datum (GGGG-MM-DD)"
+      },
+      "loading": "Učitava se...",
+      "ok": "U redu",
+      "results": {
+        "challenges": "Izazovi",
+        "compatibility": "Analiza Kompatibilnosti",
+        "compatibilityScore": "Skor Kompatibilnosti",
+        "day": "Dan",
+        "description": "Opis",
+        "masterNumber": "Master Broj",
+        "month": "Mesec",
+        "personalCycles": "Lični Ciklusi",
+        "pinnacles": "Vrhunci",
+        "subtitle": "Numerološka Analiza",
+        "title": "Rezultat",
+        "year": "Godina"
+      },
+      "subtitle": "Krenite na putovanje kroz mistični svet brojeva. Otkrijte dubine svoje ličnosti kroz ime i datum rođenja.",
+      "tabs": {
+        "birthdayNumber": "Dan Rođenja",
+        "compatibility": "Analiza Kompatibilnosti",
+        "expressionDestiny": "Izražavanje/Sudbina",
+        "lifePath": "Životni Put",
+        "maturity": "Zrelost",
+        "personalCycles": "Lični Ciklusi",
+        "personality": "Ličnost",
+        "pinnaclesChallenges": "Vrhunci/Izazovi",
+        "soulUrge": "Želja Duše"
+      },
+      "title": "Numerologija"
+    },
     "personalYearMeanings": {
       "1": "Lična godina 1 je vreme novih početaka, sejanja semena i početka novog ciklusa života. Ove godine, osoba može hrabro da kroči u nove projekte, otkrije svoju individualnu snagu i iskoristi prilike da nacrta svoj put. Ovaj period je jak u pogledu liderstva, preduzetništva i individualnog izražavanja.\n\nMeđutim, nestrpljivost ili samoća mogu biti senovni aspekti ove godine. Kada se preduzimaju spori i svesni koraci, Lična godina 1 omogućava osobi da postavi čvrste temelje koji će oblikovati njenu budućnost.",
       "2": "Lična godina 2 je poznata kao vreme strpljivosti, saradnje i harmonije. Ove godine, odnosi, partnerstva i emocionalne veze dolaze u prvi plan. Osoba prolazi kroz odgovarajući period da primi podršku i deluje zajedno sa drugima. Diplomatija, razumevanje i saosećanje se ističu.\n\nMeđutim, prekomerna osetljivost ili neodlučnost mogu biti senovni aspekti ove godine. Kada zaštite svoje granice i nastave sa strpljivošću, Lična godina 2 donosi trajnu harmoniju u odnosima.",
@@ -840,6 +996,62 @@
     },
     "subtitle": "Otkrij vođstvo svog broja uz ime i datum rođenja.",
     "title": "Numerologija"
+  },
+  "numerologyResult": {
+    "backButton": "Nazad",
+    "calculating": "Računanje...",
+    "calculationDetails": "Detalji Izračuna",
+    "calculationError": "Numerološki izračun nije mogao biti izvršen.",
+    "challenges": "Izazovi",
+    "compatibilityAnalysis": "Analiza Kompatibilnosti",
+    "compatibilityScore": "Skor Kompatibilnosti",
+    "error": "Greška",
+    "invalidType": "Neispravan tip numerologije",
+    "loading": "Učitavanje...",
+    "masterNumber": "Master Broj",
+    "missingParams": "Nedostaju parametri",
+    "newCalculation": "Novi Izračun",
+    "notes": "Napomene:",
+    "personalCycles": "Lični Ciklusi",
+    "personalDay": "Lični Dan",
+    "personalMonth": "Lični Mesec",
+    "personalYear": "Lična Godina",
+    "pinnacles": "Vrhunci",
+    "print": "Štampaj",
+    "resultNotFound": "Rezultat Nije Pronađen",
+    "typeLabels": {
+      "birthday-number": "Broj Rođendana",
+      "compatibility": "Kompatibilnost",
+      "expression-destiny": "Izražavanje/Sudbina",
+      "life-path": "Životni Put",
+      "maturity": "Zrelost",
+      "personal-cycles": "Lični Ciklusi",
+      "personality": "Ličnost",
+      "pinnacles-challenges": "Vrhunci/Izazovi",
+      "soul-urge": "Želja Duše"
+    },
+    "yourNumber": "Vaš Broj"
+  },
+  "payment": {
+    "cancel": {
+      "description": "Proces plaćanja je otkazan. Možete ponovo kupiti paket kredita.",
+      "goToDashboard": "Povratak na Dashboard",
+      "title": "Plaćanje otkazano",
+      "viewPackages": "Paketi kredita"
+    },
+    "error": {
+      "description": "Proces plaćanja nije mogao biti završen",
+      "invalidOrderId": "Nevažeći ID narudžbine",
+      "title": "Greška pri plaćanju"
+    },
+    "success": {
+      "checkingStatus": "Provera statusa plaćanja...",
+      "creditsAdded": "+{credits} Kredita",
+      "creditsAddedDescription": "Krediti su dodati na vaš račun",
+      "goToDashboard": "Idi na Dashboard",
+      "packagePurchased": "{packageName} uspešno kupljen",
+      "title": "Plaćanje uspešno!"
+    }
   },
   "problemSolving": {
     "data": {
@@ -927,6 +1139,12 @@
       "surnameMinLength": "Prezime mora imati najmanje 3 karaktera",
       "understandingMinLength": "Razumevanje mora imati najmanje 10 karaktera"
     }
+  },
+  "prompts": {
+    "lockedStateDescription": "",
+    "lockedStateTitle": "",
+    "selectReadingDescription": "",
+    "selectReadingTitle": ""
   },
   "reading": {
     "messages": {
@@ -1597,6 +1815,11 @@
     "obstacle": "Prepreka",
     "opportunity": "Prilika",
     "outcome": "Rezultat",
+    "page": {
+      "loadingSpread": "Učitavanje rasporeda...",
+      "selectSpread": "Izaberite tarot raspored",
+      "selectSpreadDescription": "Izaberite jednu od opcija iznad da počnete čitanje"
+    },
     "past": "Prošlost",
     "position": "Pozicija",
     "present": "Sadašnjost",

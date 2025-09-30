@@ -1,4 +1,6 @@
-export async function triggerEmailSending(readingId: string | undefined): Promise<void> {
+export async function triggerEmailSending(
+  readingId: string | undefined
+): Promise<void> {
   if (!readingId) {
     return;
   }
@@ -10,13 +12,17 @@ export async function triggerEmailSending(readingId: string | undefined): Promis
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ 
-        readingId: readingId
+      body: JSON.stringify({
+        readingId: readingId,
       }),
     });
 
     if (!response.ok) {
-      console.warn('Email gönderimi başarısız:', response.status, response.statusText);
+      console.warn(
+        'Email gönderimi başarısız:',
+        response.status,
+        response.statusText
+      );
     } else {
       const result = await response.json();
       console.log('Email gönderimi başarılı:', readingId, result.fileName);

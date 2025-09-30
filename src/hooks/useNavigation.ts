@@ -120,7 +120,7 @@ const changeLanguage = (locale: string, pathname: string): string => {
     // Yeni path oluştur - mevcut sayfayı koru
     const newPath =
       pathWithoutLocale === '/'
-        ? `/${locale}/tarotokumasi`
+        ? `/${locale}`  // Ana sayfa için ana sayfada kal
         : `/${locale}${pathWithoutLocale}`;
 
     // Cookie'yi güncelle - dil tercihini kaydet
@@ -129,7 +129,7 @@ const changeLanguage = (locale: string, pathname: string): string => {
     return newPath;
   } catch (error) {
     // Silently handle language change errors
-    return `/${locale}/tarotokumasi`; // Fallback
+    return `/${locale}`; // Fallback - ana sayfaya yönlendir
   }
 };
 

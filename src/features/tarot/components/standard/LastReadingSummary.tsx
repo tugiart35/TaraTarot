@@ -62,11 +62,14 @@ export default function LastReadingSummary({
   }
 
   // Format bilgisini belirle
-  const format = getReadingFormat(lastReading.reading_type || '', lastReading.cost_credits);
+  const format = getReadingFormat(
+    lastReading.reading_type || '',
+    lastReading.cost_credits
+  );
   const formatInfo = {
     audio: { label: 'Sesli', icon: '🎵', color: 'text-blue-400' },
     written: { label: 'Yazılı', icon: '📝', color: 'text-green-400' },
-    simple: { label: 'Basit', icon: '✨', color: 'text-purple-400' }
+    simple: { label: 'Basit', icon: '✨', color: 'text-purple-400' },
   }[format];
 
   return (
@@ -82,7 +85,9 @@ export default function LastReadingSummary({
               <p className='text-gray-400 text-xs'>
                 {lastReading.cards.length} kart çekildi
               </p>
-              <span className={`inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium bg-slate-700/50 ${formatInfo.color}`}>
+              <span
+                className={`inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium bg-slate-700/50 ${formatInfo.color}`}
+              >
                 <span>{formatInfo.icon}</span>
                 {formatInfo.label}
               </span>

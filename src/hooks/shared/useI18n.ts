@@ -16,7 +16,10 @@ function extractLocale(pathname: string | null | undefined): SupportedLocale {
   return 'tr';
 }
 
-function buildLanguagePath(pathname: string, nextLocale: SupportedLocale): string {
+function buildLanguagePath(
+  pathname: string,
+  nextLocale: SupportedLocale
+): string {
   try {
     // Eğer pathname locale ile başlıyorsa kaldır
     let pathWithoutLocale = pathname;
@@ -45,18 +48,30 @@ function buildLanguagePath(pathname: string, nextLocale: SupportedLocale): strin
 export function useI18n() {
   const pathname = usePathname();
   const { t } = useTranslations();
-  const { locale: geoLocale, loading: geoLoading, error: geoError, requestLocale } =
-    useLocaleFromGeolocation();
+  const {
+    locale: geoLocale,
+    loading: geoLoading,
+    error: geoError,
+    requestLocale,
+  } = useLocaleFromGeolocation();
 
-  const currentLocale = useMemo<SupportedLocale>(() => extractLocale(pathname), [pathname]);
+  const currentLocale = useMemo<SupportedLocale>(
+    () => extractLocale(pathname),
+    [pathname]
+  );
 
   const changeLanguage = useCallback(
-    (nextLocale: SupportedLocale): string => buildLanguagePath(pathname || '/', nextLocale),
+    (nextLocale: SupportedLocale): string =>
+      buildLanguagePath(pathname || '/', nextLocale),
     [pathname]
   );
 
   const formatDate = useCallback(
-    (date: string | number | Date, locale?: string, options?: Intl.DateTimeFormatOptions) => {
+    (
+      date: string | number | Date,
+      locale?: string,
+      options?: Intl.DateTimeFormatOptions
+    ) => {
       try {
         const loc = locale || t('common.locale', 'tr-TR');
         return new Date(date).toLocaleString(loc || 'tr-TR', options);
@@ -81,5 +96,3 @@ export function useI18n() {
 }
 
 export type { SupportedLocale };
-
-

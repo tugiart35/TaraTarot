@@ -28,12 +28,13 @@
 // Dashboard hoş geldin bölümü bileşeni
 
 import { UserProfile } from '@/types/dashboard.types';
+import { EnhancedUser } from '@/types/auth.types';
 import { formatDate, getMemberSince } from '@/utils/dashboard-utils';
 import { useTranslations } from '@/hooks/useTranslations';
 
 interface WelcomeSectionProps {
   profile: UserProfile | null;
-  user: any;
+  user: EnhancedUser | null;
   isAdmin: boolean;
 }
 
@@ -45,13 +46,13 @@ export default function WelcomeSection({
 }: WelcomeSectionProps) {
   const { t } = useTranslations();
   return (
-    <div className='mb-8'>
+    <div className='mb-8' role='banner' aria-label='Hoş geldin bölümü'>
       <div className='card-mystic p-8 text-text-celestial mystic-glow'>
         <div className='flex flex-col lg:flex-row items-start lg:items-center space-y-4 lg:space-y-0 lg:space-x-6'>
           {/* Kullanıcı bilgileri */}
           <div className='flex-1 w-full'>
             {/* Hoş geldin mesajı */}
-            <h1 className='text-heading-1 text-gold mb-3'>
+            <h1 className='text-heading-1 text-gold mb-3' id='welcome-heading'>
               {t('dashboard.welcome', 'Hoş geldiniz')},{' '}
               {profile?.first_name && profile?.last_name
                 ? `${profile.first_name} ${profile.last_name}`

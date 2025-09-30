@@ -1,7 +1,11 @@
 // Dashboard son aktiviteler bileşeni
 
 import { Reading } from '@/types/dashboard.types';
-import { formatDate, downloadReading } from '@/utils/dashboard-utils';
+import {
+  formatDate,
+  downloadReading,
+  getReadingTitle,
+} from '@/utils/dashboard-utils';
 import { calculateUserLevel } from '@/utils/dashboard/user-level-utils';
 import { getDashboardRoutes } from '@/utils/dashboard/routing-utils';
 import {
@@ -17,11 +21,11 @@ import {
   StarIcon,
 } from 'lucide-react';
 import { useTranslations } from '@/hooks/useTranslations';
-import { getReadingTitle } from '@/utils/dashboard-utils';
+import Link from 'next/link';
 
 interface RecentActivityProps {
   recentReadings: Reading[];
-  setSelectedReading: (reading: Reading | null) => void;
+  setSelectedReading: (_reading: Reading | null) => void;
   totalReadings?: number;
   isAdmin?: boolean;
   currentLocale?: string;
@@ -54,14 +58,25 @@ export default function RecentActivity({
   const userLevel = calculateUserLevel(totalReadings, isAdmin, recentReadings);
   const LevelIcon = userLevel.icon;
   return (
-    <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
+    <div
+      className='grid grid-cols-1 lg:grid-cols-2 gap-8'
+      role='region'
+      aria-label='Son aktiviteler ve istatistikler'
+    >
       {/* Recent Readings - Son okumalar kartı */}
-      <div className='card'>
+      <div
+        className='card'
+        role='article'
+        aria-labelledby='recent-readings-title'
+      >
         <div className='p-6 border-b border-cosmic-fog'>
           <div className='flex items-center justify-between'>
             <div className='flex items-center space-x-2'>
               <BookOpen className='h-5 w-5 text-gold' />
-              <h3 className='text-heading-3 text-gold'>
+              <h3
+                id='recent-readings-title'
+                className='text-heading-3 text-gold'
+              >
                 {t('dashboard.recentReadings', 'Son Okumalar')}
               </h3>
               <span className='bg-gold/20 text-gold px-2 py-1 rounded-full text-xs font-medium'>
@@ -92,7 +107,9 @@ export default function RecentActivity({
                     className={`p-3 rounded-lg transition-all duration-200 group-hover:scale-110 ${
                       reading.reading_type.includes('LOVE')
                         ? 'bg-purple/20 group-hover:bg-purple/30'
-                        : reading.reading_type.includes('GENERAL, SITUATION_ANALYSIS, PROBLEM_SOLVING') || reading.reading_type.includes('THREE_CARD')
+                        : reading.reading_type.includes(
+                              'GENERAL, SITUATION_ANALYSIS, PROBLEM_SOLVING'
+                            ) || reading.reading_type.includes('THREE_CARD')
                           ? 'bg-green/20 group-hover:bg-green/30'
                           : reading.reading_type.includes('CAREER')
                             ? 'bg-blue/20 group-hover:bg-blue/30'
@@ -101,7 +118,8 @@ export default function RecentActivity({
                   >
                     {reading.reading_type.includes('LOVE') ? (
                       <Heart className='h-5 w-5 text-purple' />
-                    ) : reading.reading_type.includes('GENERAL') || reading.reading_type.includes('THREE_CARD') ? (
+                    ) : reading.reading_type.includes('GENERAL') ||
+                      reading.reading_type.includes('THREE_CARD') ? (
                       <BookOpen className='h-5 w-5 text-green' />
                     ) : reading.reading_type.includes('CAREER') ? (
                       <Hash className='h-5 w-5 text-blue' />
@@ -112,10 +130,12 @@ export default function RecentActivity({
                   {/* Okuma bilgileri */}
                   <div className='flex-1 min-w-0'>
                     <p className='text-sm font-medium text-text-celestial truncate group-hover:text-gold transition-colors'>
-                      {reading.title && reading.title.includes('.') 
+                      {reading.title && reading.title.includes('.')
                         ? t(reading.title, reading.title)
-                        : t(`tarot.${reading.reading_type}.data.detailedTitle`, getReadingTitle(reading.reading_type))
-                      }
+                        : t(
+                            `tarot.${reading.reading_type}.data.detailedTitle`,
+                            getReadingTitle(reading.reading_type)
+                          )}
                     </p>
                     <div className='flex items-center space-x-3 text-xs text-text-muted'>
                       <div className='flex items-center space-x-1'>
@@ -123,12 +143,16 @@ export default function RecentActivity({
                         <span>{formatDate(reading.created_at)}</span>
                       </div>
                       {reading.formatInfo && (
-                        <div className={`px-2 py-1 rounded-full text-xs font-medium ${reading.formatInfo.color}`}>
-                          {reading.formatInfo.iconComponent} {reading.formatInfo.label}
+                        <div
+                          className={`px-2 py-1 rounded-full text-xs font-medium ${reading.formatInfo.color}`}
+                        >
+                          {reading.formatInfo.iconComponent}{' '}
+                          {reading.formatInfo.label}
                         </div>
                       )}
                       <div className='px-2 py-1 rounded-full bg-gold/20 text-gold border border-gold/30 text-xs font-medium'>
-                        {reading.cost_credits || 0} {t('common.credits', 'kredi')}
+                        {reading.cost_credits || 0}{' '}
+                        {t('common.credits', 'kredi')}
                       </div>
                     </div>
                   </div>
@@ -139,6 +163,10 @@ export default function RecentActivity({
                       onClick={() => setSelectedReading(reading)} // Modal aç
                       className='p-2 text-text-muted hover:text-gold hover:bg-gold/10 rounded-lg transition-all duration-200 hover:scale-110'
                       title={t('dashboard.viewReading', 'Okumayı Görüntüle')}
+                      aria-label={t(
+                        'dashboard.viewReading',
+                        'Okumayı Görüntüle'
+                      )}
                     >
                       <Eye className='h-4 w-4' />
                     </button>
@@ -147,6 +175,10 @@ export default function RecentActivity({
                       onClick={() => downloadReading(reading)} // İndirme başlat
                       className='p-2 text-text-muted hover:text-success hover:bg-success/10 rounded-lg transition-all duration-200 hover:scale-110'
                       title={t('dashboard.downloadReading', 'Okumayı İndir')}
+                      aria-label={t(
+                        'dashboard.downloadReading',
+                        'Okumayı İndir'
+                      )}
                     >
                       <Download className='h-4 w-4' />
                     </button>
@@ -158,13 +190,15 @@ export default function RecentActivity({
               {recentReadings.length > 5 && (
                 <div className='text-center pt-4 border-t border-cosmic-fog'>
                   <p className='text-sm text-text-muted mb-2'>
-                    +{recentReadings.length - 5} {t('dashboard.moreReadings', 'okuma daha var')}
+                    +{recentReadings.length - 5}{' '}
+                    {t('dashboard.moreReadings', 'okuma daha var')}
                   </p>
                   <a
                     href={routes.readings}
                     className='text-gold hover:text-gold/80 text-sm font-medium'
                   >
-                    {t('dashboard.viewAllReadings', 'Tüm okumaları görüntüle')} →
+                    {t('dashboard.viewAllReadings', 'Tüm okumaları görüntüle')}{' '}
+                    →
                   </a>
                 </div>
               )}
@@ -179,28 +213,35 @@ export default function RecentActivity({
                 </div>
               </div>
               <h3 className='text-lg font-medium text-text-celestial mb-2'>
-                ✨ {t('dashboard.welcomeMessage', 'Mistik Yolculuğunuza Hoş Geldiniz!')}
+                ✨{' '}
+                {t(
+                  'dashboard.welcomeMessage',
+                  'Mistik Yolculuğunuza Hoş Geldiniz!'
+                )}
               </h3>
               <p className='text-sm text-text-muted mb-6 max-w-sm mx-auto'>
-                {t('dashboard.noReadingsYet', 'Henüz okuma yapılmamış. İlk mistik deneyiminizi yaşamak için bir okuma başlatın ve kaderinizin sırlarını keşfedin.')}
+                {t(
+                  'dashboard.noReadingsYet',
+                  'Henüz okuma yapılmamış. İlk mistik deneyiminizi yaşamak için bir okuma başlatın ve kaderinizin sırlarını keşfedin.'
+                )}
               </p>
-              <a
+              <Link
                 href='/tarot'
                 className='btn btn-primary hover:scale-105 transition-transform duration-200'
               >
                 🔮 {t('dashboard.startFirstReading', 'İlk Okumamı Başlat')}
-              </a>
+              </Link>
             </div>
           )}
         </div>
       </div>
 
       {/* Quick Stats - Hızlı istatistikler kartı */}
-      <div className='card'>
+      <div className='card' role='article' aria-labelledby='quick-stats-title'>
         <div className='p-6 border-b border-cosmic-fog'>
           <div className='flex items-center space-x-2'>
             <TrendingUp className='h-5 w-5 text-gold' />
-            <h3 className='text-heading-3 text-gold'>
+            <h3 id='quick-stats-title' className='text-heading-3 text-gold'>
               {t('dashboard.statistics', 'Hızlı İstatistikler')}
             </h3>
           </div>
@@ -212,9 +253,9 @@ export default function RecentActivity({
             <div className='flex items-center justify-between'>
               <div className='flex items-center space-x-2'>
                 <Clock className='h-4 w-4 text-success' />
-              <span className='text-sm font-medium text-text-muted'>
-                {t('dashboard.todayReadings', 'Bugünkü Okumalar')}
-              </span>
+                <span className='text-sm font-medium text-text-muted'>
+                  {t('dashboard.todayReadings', 'Bugünkü Okumalar')}
+                </span>
               </div>
               <span className='text-sm font-semibold text-text-celestial'>
                 {todayReadings}
@@ -272,7 +313,11 @@ export default function RecentActivity({
               <div className='bg-gold/10 border border-gold/20 rounded-lg p-4 text-center'>
                 <Sparkles className='h-6 w-6 text-gold mx-auto mb-2' />
                 <p className='text-sm text-gold font-medium'>
-                  🌟 {t('dashboard.discoverLevel', 'İlk okumanızı yapın ve seviyenizi keşfedin!')}
+                  🌟{' '}
+                  {t(
+                    'dashboard.discoverLevel',
+                    'İlk okumanızı yapın ve seviyenizi keşfedin!'
+                  )}
                 </p>
               </div>
             )}
@@ -281,7 +326,8 @@ export default function RecentActivity({
               <div className='bg-green/10 border border-green/20 rounded-lg p-4 text-center'>
                 <Heart className='h-6 w-6 text-green mx-auto mb-2' />
                 <p className='text-sm text-green font-medium'>
-                  💫 {t('dashboard.keepGoing', 'Harika gidiyorsunuz! Devam edin!')}
+                  💫{' '}
+                  {t('dashboard.keepGoing', 'Harika gidiyorsunuz! Devam edin!')}
                 </p>
               </div>
             )}
@@ -290,7 +336,11 @@ export default function RecentActivity({
               <div className='bg-purple/10 border border-purple/20 rounded-lg p-4 text-center'>
                 <StarIcon className='h-6 w-6 text-purple mx-auto mb-2' />
                 <p className='text-sm text-purple font-medium'>
-                  ✨ {t('dashboard.mysticJourney', 'Mistik yolculuğunuzda ilerliyorsunuz!')}
+                  ✨{' '}
+                  {t(
+                    'dashboard.mysticJourney',
+                    'Mistik yolculuğunuzda ilerliyorsunuz!'
+                  )}
                 </p>
               </div>
             )}

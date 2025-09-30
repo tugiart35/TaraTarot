@@ -3,9 +3,7 @@
 import type { TarotCard } from '@/types/tarot';
 import { createTarotReadingComponent } from '@/features/tarot/shared/components';
 import { createProblemSolvingConfig } from '@/features/tarot/shared/config';
-import { 
-  getProblemSolvingMeaningByCardAndPosition
-} from '@/features/tarot/lib/problem-solving/position-meanings-index';
+import { getProblemSolvingMeaningByCardAndPosition } from '@/features/tarot/lib/problem-solving/position-meanings-index';
 
 const ProblemSolvingReading = createTarotReadingComponent({
   getConfig: () => createProblemSolvingConfig(),
@@ -23,15 +21,22 @@ const ProblemSolvingReading = createTarotReadingComponent({
     console.log('🔍 ProblemSolvingTarot getCardMeaning:', {
       cardName: card.nameTr,
       position,
-      isReversed
+      isReversed,
     });
 
-    const meaning = getProblemSolvingMeaningByCardAndPosition(card, position, isReversed);
+    const meaning = getProblemSolvingMeaningByCardAndPosition(
+      card,
+      position,
+      isReversed
+    );
 
     console.log('🔍 ProblemSolvingTarot meaning result:', {
       found: !!meaning,
       card: meaning?.card,
-      interpretation: meaning ? (isReversed ? meaning.reversed : meaning.upright)?.substring(0, 50) + '...' : 'No meaning'
+      interpretation: meaning
+        ? (isReversed ? meaning.reversed : meaning.upright)?.substring(0, 50) +
+          '...'
+        : 'No meaning',
     });
 
     if (!meaning) {
@@ -43,7 +48,7 @@ const ProblemSolvingReading = createTarotReadingComponent({
     return {
       interpretation,
       context: meaning.context || '',
-      keywords: meaning.keywords || []
+      keywords: meaning.keywords || [],
     };
   },
 });

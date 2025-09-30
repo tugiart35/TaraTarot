@@ -371,5 +371,60 @@ export async function POST(request: NextRequest) {
 
 ---
 
+---
+
+## 🛡️ DOSYA KORUMA KURALLARI
+
+### 1. **KESINLIKLE DOKUNULMAMASI GEREKEN DOSYALAR**
+
+```
+messages/tr.json          # Ana Türkçe çeviri dosyası
+messages/en.json          # İngilizce çeviri dosyası  
+messages/sr.json          # Sırpça çeviri dosyası
+messages/tr.backup.json   # Türkçe yedek dosyası
+src/app/[locale]/layout.tsx                    # Ana layout dosyası
+src/app/[locale]/(main)/tarotokumasi/page.tsx  # Tarot okuma sayfası
+TAROT-ACILIMLARI-REHBERI.md                    # Tarot rehberi
+migrations/ klasöründeki tüm .sql dosyaları      # Veritabanı migrasyonları
+functions/ klasöründeki tüm dosyalar           # Supabase fonksiyonları
+public/cards/ klasöründeki tüm dosyalar        # Tarot kartları
+public/Spread/ klasöründeki tüm dosyalar       # Yayılım görselleri
+
+# YENİ EKLENEN KORUNACAK DOSYALAR
+src/hooks/useReadingDetail.ts                  # Okuma detay hook'u
+src/features/shared/ui/ReadingDetailModal.tsx   # Okuma detay modal'ı
+src/lib/ klasöründeki tüm dosyalar             # Kütüphane dosyaları
+src/features/tarot/ klasöründeki tüm dosyalar   # Tarot özellik dosyaları
+src/lib/tarotspread/ klasöründeki tüm dosyalar # Tarot yayılım dosyaları
+src/app/[locale]/(main)/numeroloji/ klasöründeki tüm dosyalar # Numeroloji sayfaları
+```
+
+### 2. **KORUMA KURALLARI**
+
+- **ASLA** bu dosyalara dokunma, değiştirme, silme veya yeniden adlandırma
+- Bu dosyaları sadece **OKUMA** amaçlı kullan
+- Bu dosyalar hakkında soru sorulduğunda sadece `read_file` işlemi yap
+- Bu dosyaların yedeklerini oluşturma (zaten mevcut)
+- Bu dosyaları referans olarak kullanabilirsin ama içeriklerini değiştirme
+
+### 3. **İZİN VERİLEN İŞLEMLER**
+
+- Bu dosyaları okuyabilirsin (`read_file`)
+- Bu dosyaların içeriğini analiz edebilirsin
+- Bu dosyalara dayalı yeni dosyalar oluşturabilirsin
+- Bu dosyaların yapısını anlayabilirsin
+- Bu dosyalardan veri çekebilirsin
+
+### 4. **UYARI**
+
+Bu kurallara uymazsan:
+- Kod tabanı bozulabilir
+- Kritik veriler kaybolabilir
+- Uygulama çalışmayabilir
+- Çeviri dosyaları bozulabilir
+- Veritabanı yapısı zarar görebilir
+
+---
+
 **Bu kurallar, Tarot Web uygulamasının kaliteli, güvenli ve sürdürülebilir kod
 yazımı için tasarlanmıştır. Tüm geliştiriciler bu kurallara uymalıdır.**

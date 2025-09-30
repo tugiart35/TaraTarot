@@ -47,7 +47,7 @@ const StatsCards = memo(function StatsCards({
           </div>
           {/* Yenile butonu - debounced */}
           <button
-            onClick={(e) => {
+            onClick={e => {
               e.preventDefault();
               e.stopPropagation();
               refreshCreditBalance();

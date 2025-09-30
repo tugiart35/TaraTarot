@@ -72,18 +72,19 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
   const [selectedReading, setSelectedReading] = useState<Reading | null>(null);
   const [showModal, setShowModal] = useState(false);
 
-  const fetchReadings = useCallback(async (resetCursor = false) => {
-    if (!user) {
-      return;
-    }
+  const fetchReadings = useCallback(
+    async (resetCursor = false) => {
+      if (!user) {
+        return;
+      }
 
-    try {
-      setLoading(true);
+      try {
+        setLoading(true);
 
-      let query = supabase
-        .from('readings')
-        .select(
-          `
+        let query = supabase
+          .from('readings')
+          .select(
+            `
           id,
           user_id,
           reading_type,
@@ -97,194 +98,233 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
           cost_credits,
           spread_name
         `,
-          { count: 'exact' }
-        )
-        .eq('user_id', user.id); // Sadece kullanıcının kendi okumalarını çek
+            { count: 'exact' }
+          )
+          .eq('user_id', user.id); // Sadece kullanıcının kendi okumalarını çek
 
-      // Type filter
-      if (filters.type !== 'all') {
-        const typeMapping: Record<string, string[]> = {
-          love: ['love', 'new-lover-spread', 'relationship-problems', 'relationship-analysis', 'marriage'],
-          general: ['general', 'tarot', 'situation-analysis', 'problem-solving' ],
-          career: ['career', 'money-spread'],
-          numerology: ['numerology'],
-        };
+        // Type filter
+        if (filters.type !== 'all') {
+          const typeMapping: Record<string, string[]> = {
+            love: [
+              'love',
+              'new-lover-spread',
+              'relationship-problems',
+              'relationship-analysis',
+              'marriage',
+            ],
+            general: [
+              'general',
+              'tarot',
+              'situation-analysis',
+              'problem-solving',
+            ],
+            career: ['career', 'money-spread'],
+            numerology: ['numerology'],
+          };
 
-        const types = typeMapping[filters.type];
-        if (types) {
-          query = query.in('reading_type', types);
-        }
-      }
-
-      // Date range filter
-      if (filters.dateRange !== 'all') {
-        const now = new Date();
-        const startDate = new Date();
-
-        switch (filters.dateRange) {
-          case 'week':
-            startDate.setDate(now.getDate() - 7);
-            break;
-          case 'month':
-            startDate.setMonth(now.getMonth() - 1);
-            break;
-          case 'year':
-            startDate.setFullYear(now.getFullYear() - 1);
-            break;
+          const types = typeMapping[filters.type];
+          if (types) {
+            query = query.in('reading_type', types);
+          }
         }
 
-        query = query.gte('created_at', startDate.toISOString());
-      }
+        // Date range filter
+        if (filters.dateRange !== 'all') {
+          const now = new Date();
+          const startDate = new Date();
 
-      // Search filter
-      if (filters.search) {
-        query = query.or(
-          `interpretation.ilike.%${filters.search}%,title.ilike.%${filters.search}%`
-        );
-      }
+          switch (filters.dateRange) {
+            case 'week':
+              startDate.setDate(now.getDate() - 7);
+              break;
+            case 'month':
+              startDate.setMonth(now.getMonth() - 1);
+              break;
+            case 'year':
+              startDate.setFullYear(now.getFullYear() - 1);
+              break;
+          }
 
-      // Keyset pagination
-      const limit = 20;
-      const currentCursor = resetCursor ? null : cursor;
-      if (currentCursor) {
-        query = query.lt('created_at', currentCursor);
-      }
-      const { data, error } = await query
-        .order('created_at', { ascending: false })
-        .limit(limit);
+          query = query.gte('created_at', startDate.toISOString());
+        }
 
-      if (error) {
-        throw error;
-      }
+        // Search filter
+        if (filters.search) {
+          query = query.or(
+            `interpretation.ilike.%${filters.search}%,title.ilike.%${filters.search}%`
+          );
+        }
 
-      if (data) {
-        const processedReadings: Reading[] = data.map((reading: any) => {
-          // Başlık oluştur - önce veritabanındaki title'ı çevirmeye çalış, yoksa reading_type'a göre oluştur
-          const getReadingTitle = (reading: any): string => {
-            // Eğer title bir translation key ise çevirmeye çalış
-            if (reading.title && reading.title.includes('.')) {
-              const translatedTitle = t(reading.title, undefined);
-              // Eğer çeviri başarılı olduysa (null döndürmediyse) kullan
-              if (translatedTitle && translatedTitle !== reading.title) {
-                return translatedTitle;
+        // Keyset pagination
+        const limit = 20;
+        const currentCursor = resetCursor ? null : cursor;
+        if (currentCursor) {
+          query = query.lt('created_at', currentCursor);
+        }
+        const { data, error } = await query
+          .order('created_at', { ascending: false })
+          .limit(limit);
+
+        if (error) {
+          throw error;
+        }
+
+        if (data) {
+          const processedReadings: Reading[] = data.map((reading: any) => {
+            // Başlık oluştur - önce veritabanındaki title'ı çevirmeye çalış, yoksa reading_type'a göre oluştur
+            const getReadingTitle = (reading: any): string => {
+              // Eğer title bir translation key ise çevirmeye çalış
+              if (reading.title && reading.title.includes('.')) {
+                const translatedTitle = t(reading.title, undefined);
+                // Eğer çeviri başarılı olduysa (null döndürmediyse) kullan
+                if (translatedTitle && translatedTitle !== reading.title) {
+                  return translatedTitle;
+                }
               }
-            }
-            
-            // Çeviri başarısız olduysa reading_type'a göre başlık oluştur
-            switch (reading.reading_type) {
-              case 'love':
-                return t('readings.loveReading', 'Aşk Açılımı');
-              case 'new-lover-spread':
-                return t('readings.newLoverReading', 'Yeni Aşk Açılımı');
-              case 'relationship-problems':
-                return t('readings.relationshipProblemsReading', 'İlişki Sorunları Açılımı');
-              case 'relationship-analysis':
-                return t('readings.relationshipAnalysisReading', 'İlişki Analizi Açılımı');
-              case 'marriage':
-                return t('readings.marriageReading', 'Evlilik Açılımı');
-              case 'general':
-                return t('readings.generalReading', 'Genel Okuma');
-              case 'tarot':
-                return t('readings.tarotReading', 'Tarot Okuması');
-              case 'career':
-                return t('readings.careerReading', 'Kariyer Okuması');
-              case 'money-spread':
-                return t('readings.moneyReading', 'Para Açılımı');
-              case 'numerology':
-                return t('readings.numerologyReading', 'Numeroloji Okuması');
-              case 'situation-analysis':
-                return t('readings.situationAnalysisReading', 'Durum Analizi Açılımı');
-              case 'problem-solving':
-                return t('readings.problemSolvingReading', 'Problem Çözme Açılımı');
-              default:
-                return reading.title || t('readings.mysticReading', 'Tarot Okuma');
-            }
-          };
 
-          // Summary alanı kaldırıldı - kullanıcı istemediği için
-
-          // Kredi maliyeti - veritabanından gelen değeri kullan, yoksa READING_CREDITS'ten al
-          const cost_credits =
-            reading.cost_credits ||
-            READING_CREDITS[
-              reading.reading_type as keyof typeof READING_CREDITS
-            ] ||
-            50;
-
-          // Spread adı - önce veritabanındaki spread_name'i çevirmeye çalış, yoksa reading_type'a göre oluştur
-          const getSpreadName = (reading: any): string => {
-            // Eğer spread_name bir translation key ise çevirmeye çalış
-            if (reading.spread_name && reading.spread_name.includes('.')) {
-              const translatedSpreadName = t(reading.spread_name, undefined);
-              // Eğer çeviri başarılı olduysa (null döndürmediyse) kullan
-              if (translatedSpreadName && translatedSpreadName !== reading.spread_name) {
-                return translatedSpreadName;
+              // Çeviri başarısız olduysa reading_type'a göre başlık oluştur
+              switch (reading.reading_type) {
+                case 'love':
+                  return t('readings.loveReading', 'Aşk Açılımı');
+                case 'new-lover-spread':
+                  return t('readings.newLoverReading', 'Yeni Aşk Açılımı');
+                case 'relationship-problems':
+                  return t(
+                    'readings.relationshipProblemsReading',
+                    'İlişki Sorunları Açılımı'
+                  );
+                case 'relationship-analysis':
+                  return t(
+                    'readings.relationshipAnalysisReading',
+                    'İlişki Analizi Açılımı'
+                  );
+                case 'marriage':
+                  return t('readings.marriageReading', 'Evlilik Açılımı');
+                case 'general':
+                  return t('readings.generalReading', 'Genel Okuma');
+                case 'tarot':
+                  return t('readings.tarotReading', 'Tarot Okuması');
+                case 'career':
+                  return t('readings.careerReading', 'Kariyer Okuması');
+                case 'money-spread':
+                  return t('readings.moneyReading', 'Para Açılımı');
+                case 'numerology':
+                  return t('readings.numerologyReading', 'Numeroloji Okuması');
+                case 'situation-analysis':
+                  return t(
+                    'readings.situationAnalysisReading',
+                    'Durum Analizi Açılımı'
+                  );
+                case 'problem-solving':
+                  return t(
+                    'readings.problemSolvingReading',
+                    'Problem Çözme Açılımı'
+                  );
+                default:
+                  return (
+                    reading.title || t('readings.mysticReading', 'Tarot Okuma')
+                  );
               }
-            }
-            
-            // Çeviri başarısız olduysa reading_type'a göre spread adı oluştur
-            switch (reading.reading_type) {
-              case 'love':
-              case 'new-lover-spread':
-              case 'relationship-problems':
-              case 'relationship-analysis':
-              case 'marriage':
-                return t('readings.loveSpread', 'Aşk Yayılımı');
-              case 'general':
-              case 'tarot':
-                return t('readings.generalSpread', 'Genel Yayılım');
-              case 'career':
-              case 'money-spread':
-                return t('readings.careerSpread', 'Kariyer Yayılımı');
-              case 'numerology':
-                return t('readings.numerologyAnalysis', 'Numeroloji Analizi');
-              case 'problem-solving':
-                return t('readings.problemSolvingSpread', 'Problem Çözme Yayılımı');
-              case 'situation-analysis':
-                return t('readings.situationAnalysisSpread', 'Durum Analizi Yayılımı');
-              default:
-                return reading.spread_name || t('readings.mysticSpread', 'Mistik Yayılım');
-            }
-          };
+            };
 
-          return {
-            id: reading.id,
-            user_id: reading.user_id,
-            reading_type: reading.reading_type,
-            cards: reading.cards,
-            interpretation: reading.interpretation,
-            questions: reading.questions,
-            status: reading.status,
-            created_at: reading.created_at,
-            updated_at: reading.updated_at,
-            title: getReadingTitle(reading),
-            cost_credits,
-            spread_name: getSpreadName(reading),
-            format: getReadingFormat(reading.reading_type, cost_credits),
-          };
-        });
+            // Summary alanı kaldırıldı - kullanıcı istemediği için
 
-        if (resetCursor || !currentCursor) {
-          setReadings(processedReadings);
-        } else {
-          setReadings(prev => [...prev, ...processedReadings]);
+            // Kredi maliyeti - veritabanından gelen değeri kullan, yoksa READING_CREDITS'ten al
+            const cost_credits =
+              reading.cost_credits ||
+              READING_CREDITS[
+                reading.reading_type as keyof typeof READING_CREDITS
+              ] ||
+              50;
+
+            // Spread adı - önce veritabanındaki spread_name'i çevirmeye çalış, yoksa reading_type'a göre oluştur
+            const getSpreadName = (reading: any): string => {
+              // Eğer spread_name bir translation key ise çevirmeye çalış
+              if (reading.spread_name && reading.spread_name.includes('.')) {
+                const translatedSpreadName = t(reading.spread_name, undefined);
+                // Eğer çeviri başarılı olduysa (null döndürmediyse) kullan
+                if (
+                  translatedSpreadName &&
+                  translatedSpreadName !== reading.spread_name
+                ) {
+                  return translatedSpreadName;
+                }
+              }
+
+              // Çeviri başarısız olduysa reading_type'a göre spread adı oluştur
+              switch (reading.reading_type) {
+                case 'love':
+                case 'new-lover-spread':
+                case 'relationship-problems':
+                case 'relationship-analysis':
+                case 'marriage':
+                  return t('readings.loveSpread', 'Aşk Yayılımı');
+                case 'general':
+                case 'tarot':
+                  return t('readings.generalSpread', 'Genel Yayılım');
+                case 'career':
+                case 'money-spread':
+                  return t('readings.careerSpread', 'Kariyer Yayılımı');
+                case 'numerology':
+                  return t('readings.numerologyAnalysis', 'Numeroloji Analizi');
+                case 'problem-solving':
+                  return t(
+                    'readings.problemSolvingSpread',
+                    'Problem Çözme Yayılımı'
+                  );
+                case 'situation-analysis':
+                  return t(
+                    'readings.situationAnalysisSpread',
+                    'Durum Analizi Yayılımı'
+                  );
+                default:
+                  return (
+                    reading.spread_name ||
+                    t('readings.mysticSpread', 'Mistik Yayılım')
+                  );
+              }
+            };
+
+            return {
+              id: reading.id,
+              user_id: reading.user_id,
+              reading_type: reading.reading_type,
+              cards: reading.cards,
+              interpretation: reading.interpretation,
+              questions: reading.questions,
+              status: reading.status,
+              created_at: reading.created_at,
+              updated_at: reading.updated_at,
+              title: getReadingTitle(reading),
+              cost_credits,
+              spread_name: getSpreadName(reading),
+              format: getReadingFormat(reading.reading_type, cost_credits),
+            };
+          });
+
+          if (resetCursor || !currentCursor) {
+            setReadings(processedReadings);
+          } else {
+            setReadings(prev => [...prev, ...processedReadings]);
+          }
+          // Update cursor and hasMore (keyset)
+          const hasNext = processedReadings.length === limit;
+          setHasMore(hasNext);
+          setCursor(
+            hasNext
+              ? (processedReadings[processedReadings.length - 1]?.created_at ??
+                  null)
+              : null
+          );
         }
-        // Update cursor and hasMore (keyset)
-        const hasNext = processedReadings.length === limit;
-        setHasMore(hasNext);
-        setCursor(
-          hasNext
-            ? (processedReadings[processedReadings.length - 1]?.created_at ??
-                null)
-            : null
-        );
+      } catch (error) {
+        // Error fetching readings
+      } finally {
+        setLoading(false);
       }
-    } catch (error) {
-      // Error fetching readings
-    } finally {
-      setLoading(false);
-    }
-  }, [user, filters, cursor, t]);
+    },
+    [user, filters, cursor, t]
+  );
 
   // Params'ı resolve et
   useEffect(() => {
@@ -466,7 +506,16 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
                   {t('readings.loveReadings', 'Aşk Okumaları')}
                 </p>
                 <p className='text-3xl font-black bg-gradient-to-r from-pink-400 to-rose-400 bg-clip-text text-transparent'>
-                  {readings.filter(r => r.reading_type === 'love' || r.reading_type === 'new-lover-spread' || r.reading_type === 'relationship-problems' || r.reading_type === 'relationship-analysis' || r.reading_type === 'marriage').length}
+                  {
+                    readings.filter(
+                      r =>
+                        r.reading_type === 'love' ||
+                        r.reading_type === 'new-lover-spread' ||
+                        r.reading_type === 'relationship-problems' ||
+                        r.reading_type === 'relationship-analysis' ||
+                        r.reading_type === 'marriage'
+                    ).length
+                  }
                 </p>
               </div>
               <div className='p-3 bg-gradient-to-br from-pink-500 to-rose-500 rounded-xl group-hover:scale-110 transition-transform duration-300 shadow-lg'>
@@ -604,16 +653,26 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
                     <div className='flex items-center justify-between mb-6'>
                       <div
                         className={`p-3 rounded-xl ${
-                          reading.reading_type === 'love' || reading.reading_type === 'new-lover-spread' || reading.reading_type === 'relationship-problems' || reading.reading_type === 'relationship-analysis' || reading.reading_type === 'marriage'
+                          reading.reading_type === 'love' ||
+                          reading.reading_type === 'new-lover-spread' ||
+                          reading.reading_type === 'relationship-problems' ||
+                          reading.reading_type === 'relationship-analysis' ||
+                          reading.reading_type === 'marriage'
                             ? 'bg-gradient-to-br from-pink-500 to-rose-500'
-                            : reading.reading_type === 'general' || reading.reading_type === 'tarot'
+                            : reading.reading_type === 'general' ||
+                                reading.reading_type === 'tarot'
                               ? 'bg-gradient-to-br from-blue-500 to-cyan-500'
-                              : reading.reading_type === 'career' || reading.reading_type === 'money-spread'
+                              : reading.reading_type === 'career' ||
+                                  reading.reading_type === 'money-spread'
                                 ? 'bg-gradient-to-br from-emerald-500 to-teal-500'
                                 : 'bg-gradient-to-br from-purple-500 to-indigo-500'
                         } group-hover:scale-110 transition-transform duration-300 shadow-lg`}
                       >
-                        {reading.reading_type === 'love' || reading.reading_type === 'new-lover-spread' || reading.reading_type === 'relationship-problems' || reading.reading_type === 'relationship-analysis' || reading.reading_type === 'marriage' ? (
+                        {reading.reading_type === 'love' ||
+                        reading.reading_type === 'new-lover-spread' ||
+                        reading.reading_type === 'relationship-problems' ||
+                        reading.reading_type === 'relationship-analysis' ||
+                        reading.reading_type === 'marriage' ? (
                           <Heart className='h-6 w-6 text-white' />
                         ) : reading.reading_type === 'numerology' ? (
                           <Hash className='h-6 w-6 text-white' />
@@ -670,16 +729,26 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
                       <div className='flex items-center space-x-6'>
                         <div
                           className={`p-4 rounded-xl ${
-                            reading.reading_type === 'love' || reading.reading_type === 'new-lover-spread' || reading.reading_type === 'relationship-problems' || reading.reading_type === 'relationship-analysis' || reading.reading_type === 'marriage'
+                            reading.reading_type === 'love' ||
+                            reading.reading_type === 'new-lover-spread' ||
+                            reading.reading_type === 'relationship-problems' ||
+                            reading.reading_type === 'relationship-analysis' ||
+                            reading.reading_type === 'marriage'
                               ? 'bg-gradient-to-br from-pink-500 to-rose-500'
-                              : reading.reading_type === 'general' || reading.reading_type === 'tarot'
+                              : reading.reading_type === 'general' ||
+                                  reading.reading_type === 'tarot'
                                 ? 'bg-gradient-to-br from-blue-500 to-cyan-500'
-                                : reading.reading_type === 'career' || reading.reading_type === 'money-spread'
+                                : reading.reading_type === 'career' ||
+                                    reading.reading_type === 'money-spread'
                                   ? 'bg-gradient-to-br from-emerald-500 to-teal-500'
                                   : 'bg-gradient-to-br from-purple-500 to-indigo-500'
                           } group-hover:scale-110 transition-transform duration-300 shadow-lg`}
                         >
-                          {reading.reading_type === 'love' || reading.reading_type === 'new-lover-spread' || reading.reading_type === 'relationship-problems' || reading.reading_type === 'relationship-analysis' || reading.reading_type === 'marriage' ? (
+                          {reading.reading_type === 'love' ||
+                          reading.reading_type === 'new-lover-spread' ||
+                          reading.reading_type === 'relationship-problems' ||
+                          reading.reading_type === 'relationship-analysis' ||
+                          reading.reading_type === 'marriage' ? (
                             <Heart className='h-6 w-6 text-white' />
                           ) : reading.reading_type === 'numerology' ? (
                             <Hash className='h-6 w-6 text-white' />

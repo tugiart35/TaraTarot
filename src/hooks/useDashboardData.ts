@@ -69,7 +69,7 @@ export const useDashboardData = () => {
   const { user, isAuthenticated } = useAuth();
   // useTranslations hook'undan çeviri fonksiyonunu al
   const { t: translate } = useTranslations();
-  
+
   // Translate fonksiyonunu memoize et - sürekli yeniden render'ı önlemek için
   const memoizedTranslate = useCallback(
     (key: string, fallback?: string) => translate(key, fallback),
@@ -98,10 +98,7 @@ export const useDashboardData = () => {
   const [totalReadingsCount, setTotalReadingsCount] = useState<number>(0);
 
   // Toplam okuma sayısı - hesaplanan değer (memoized)
-  const totalCount = useMemo(
-    () => totalReadingsCount,
-    [totalReadingsCount]
-  );
+  const totalCount = useMemo(() => totalReadingsCount, [totalReadingsCount]);
 
   // Veri yükleme - auth kontrolü yok, herkese açık
   useEffect(() => {
@@ -198,7 +195,7 @@ export const useDashboardData = () => {
         if (now - lastRefreshTime < MIN_REFRESH_INTERVAL) {
           return; // Çok sık yenileme yapma
         }
-        
+
         clearTimeout(debounceTimer);
         debounceTimer = setTimeout(() => {
           lastRefreshTime = now;
@@ -214,7 +211,7 @@ export const useDashboardData = () => {
         if (now - lastRefreshTime < MIN_REFRESH_INTERVAL) {
           return; // Çok sık yenileme yapma
         }
-        
+
         clearTimeout(debounceTimer);
         debounceTimer = setTimeout(() => {
           lastRefreshTime = now;
@@ -230,7 +227,7 @@ export const useDashboardData = () => {
         if (now - lastRefreshTime < MIN_REFRESH_INTERVAL) {
           return; // Çok sık yenileme yapma
         }
-        
+
         clearTimeout(debounceTimer);
         debounceTimer = setTimeout(() => {
           lastRefreshTime = now;
@@ -254,17 +251,18 @@ export const useDashboardData = () => {
   }, [isAuthenticated, user?.id, refreshCreditBalance]); // refreshCreditBalance dependency eklendi
 
   // Son okumaları getir - kullanıcının son 30 günlük okumalarını çek (memoized)
-  const fetchRecentReadings = useCallback(async (userId: string) => {
-    try {
-      // tarot_readings tablosundan son 30 günün okumalarını çek
-      const thirtyDaysAgo = new Date();
-      thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30); // 30 gün öncesini hesapla
+  const fetchRecentReadings = useCallback(
+    async (userId: string) => {
+      try {
+        // tarot_readings tablosundan son 30 günün okumalarını çek
+        const thirtyDaysAgo = new Date();
+        thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30); // 30 gün öncesini hesapla
 
-      // Sadece kullanıcının kendi okumalarını çek - doğrudan readings tablosundan
-      const { data, error } = await supabase
-        .from('readings')
-        .select(
-          `
+        // Sadece kullanıcının kendi okumalarını çek - doğrudan readings tablosundan
+        const { data, error } = await supabase
+          .from('readings')
+          .select(
+            `
           id,
           user_id,
           reading_type,
@@ -277,71 +275,78 @@ export const useDashboardData = () => {
           metadata,
           created_at
         `
-        )
-        .eq('user_id', userId) // Sadece bu kullanıcının okumaları
-        .gte('created_at', thirtyDaysAgo.toISOString()) // Son 30 gün
-        .order('created_at', { ascending: false }) // En yeni önce
-        .limit(10); // Maksimum 10 okuma
+          )
+          .eq('user_id', userId) // Sadece bu kullanıcının okumaları
+          .gte('created_at', thirtyDaysAgo.toISOString()) // Son 30 gün
+          .order('created_at', { ascending: false }) // En yeni önce
+          .limit(10); // Maksimum 10 okuma
 
-      if (error) {
-        // Silently handle reading fetch errors
+        if (error) {
+          // Silently handle reading fetch errors
+          setRecentReadings([]);
+          return;
+        }
+
+        if (data && data.length > 0) {
+          // Verileri işle ve formatla - batch processing
+          const processedReadings: Reading[] = data.map((reading: any) => {
+            const actualCostCredits =
+              reading.cost_credits ||
+              READING_CREDITS[
+                reading.reading_type as keyof typeof READING_CREDITS
+              ] ||
+              50; // fallback
+            const format = getReadingFormat(
+              reading.reading_type,
+              actualCostCredits,
+              reading.title,
+              reading.metadata // metadata parametresini ekle
+            );
+            const formatInfo = getFormatInfo(format);
+            return {
+              id: reading.id,
+              user_id: reading.user_id,
+              reading_type: reading.reading_type,
+              cards: reading.cards || '',
+              interpretation: reading.interpretation || '',
+              questions: reading.questions || {},
+              status: reading.status || 'completed',
+              created_at: reading.created_at,
+              title:
+                reading.title ||
+                memoizedTranslate(
+                  `tarot.${reading.reading_type}.data.detailedTitle`,
+                  getReadingTitle(reading.reading_type)
+                ),
+              cost_credits: actualCostCredits,
+              format: format,
+              formatInfo: formatInfo,
+              // Eski uyumluluk için
+              type: reading.reading_type as
+                | 'tarot'
+                | 'money'
+                | 'numerology'
+                | 'love'
+                | 'simple'
+                | 'general'
+                | 'career'
+                | 'situation-analysis'
+                | 'problem-solving',
+              summary: getReadingSummary(reading.interpretation),
+            };
+          });
+
+          setRecentReadings(processedReadings);
+        } else {
+          setRecentReadings([]);
+        }
+      } catch (error) {
+        // Silently handle fetch errors
         setRecentReadings([]);
-        return;
       }
-
-      if (data && data.length > 0) {
-        // Verileri işle ve formatla - batch processing
-        const processedReadings: Reading[] = data.map((reading: any) => {
-          const actualCostCredits =
-            reading.cost_credits ||
-            READING_CREDITS[
-              reading.reading_type as keyof typeof READING_CREDITS
-            ] ||
-            50; // fallback
-          const format = getReadingFormat(
-            reading.reading_type,
-            actualCostCredits,
-            reading.title,
-            reading.metadata // metadata parametresini ekle
-          );
-          const formatInfo = getFormatInfo(format);
-          return {
-            id: reading.id,
-            user_id: reading.user_id,
-            reading_type: reading.reading_type,
-            cards: reading.cards || '',
-            interpretation: reading.interpretation || '',
-            questions: reading.questions || {},
-            status: reading.status || 'completed',
-            created_at: reading.created_at,
-            title: reading.title || memoizedTranslate(`tarot.${reading.reading_type}.data.detailedTitle`, getReadingTitle(reading.reading_type)),
-            cost_credits: actualCostCredits,
-            format: format,
-            formatInfo: formatInfo,
-            // Eski uyumluluk için
-            type: reading.reading_type as
-              | 'tarot'
-              | 'money'
-              | 'numerology'
-              | 'love'
-              | 'simple'
-              | 'general'
-              | 'career'
-              | 'situation-analysis'
-              | 'problem-solving',
-            summary: getReadingSummary(reading.interpretation),
-          };
-        });
-
-        setRecentReadings(processedReadings);
-      } else {
-        setRecentReadings([]);
-      }
-    } catch (error) {
-      // Silently handle fetch errors
-      setRecentReadings([]);
-    }
-  }, [memoizedTranslate]);
+    },
+    [memoizedTranslate]
+  );
 
   // Toplam okuma sayısını getir - kullanıcının tüm okumalarını say (memoized)
   const fetchTotalReadingsCount = useCallback(async (userId: string) => {

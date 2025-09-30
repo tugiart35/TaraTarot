@@ -171,7 +171,7 @@ function normalizeReadingType(
     source.includes('marriage') ||
     source.includes('evlilik') ||
     readingType === 'marriage' ||
-    readingType === 'love' && source.includes('evlilik') ||
+    (readingType === 'love' && source.includes('evlilik')) ||
     spreadName === 'marriage'
   ) {
     return 'marriage';

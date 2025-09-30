@@ -164,7 +164,7 @@ export function getProblemSolvingMeaningByCardAndPosition(
   console.log('🔄 Card name mapping:', {
     original: card.nameTr,
     mapped: englishCardName,
-    position: position
+    position: position,
   });
 
   // Pozisyon özel anlamları kontrol et
@@ -175,14 +175,14 @@ export function getProblemSolvingMeaningByCardAndPosition(
       console.log('🔍 Position 1 Debug:', {
         englishCardName,
         position,
-        isReversed
+        isReversed,
       });
       positionMeaning =
         getProblemSolvingPosition1MeaningByCardName(englishCardName);
       console.log('🔍 Position 1 Result:', {
         found: !!positionMeaning,
         card: positionMeaning?.card,
-        upright: positionMeaning?.upright?.substring(0, 50) + '...'
+        upright: positionMeaning?.upright?.substring(0, 50) + '...',
       });
       break;
     case 2:
@@ -234,8 +234,11 @@ export function getProblemSolvingMeaningByCardAndPosition(
     return result;
   }
 
-  console.log('⚠️ No position-specific meaning found, using fallback for:', card.nameTr);
-  
+  console.log(
+    '⚠️ No position-specific meaning found, using fallback for:',
+    card.nameTr
+  );
+
   // Fallback: Genel kart anlamlarını döndür
   const baseMeaning: ProblemSolvingPositionMeaning = {
     id: `${card.name.toLowerCase().replace(/\s+/g, '_')}_pos${position}`,

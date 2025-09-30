@@ -10,8 +10,7 @@ const STATUS_PRESENTATION: Record<string, ReadingStatusInfo> = {
   completed: {
     label: 'readingModal.completed',
     icon: '✅',
-    badgeClassName:
-      'bg-green-500/20 text-green-300 border border-green-500/30',
+    badgeClassName: 'bg-green-500/20 text-green-300 border border-green-500/30',
   },
   reviewed: {
     label: 'readingModal.reviewed',
@@ -22,8 +21,7 @@ const STATUS_PRESENTATION: Record<string, ReadingStatusInfo> = {
   pending: {
     label: 'readingModal.pending',
     icon: '⏳',
-    badgeClassName:
-      'bg-blue-500/20 text-blue-200 border border-blue-500/30',
+    badgeClassName: 'bg-blue-500/20 text-blue-200 border border-blue-500/30',
   },
 };
 
@@ -35,11 +33,14 @@ export function getReadingStatusInfo(
   translate: (key: string, fallback?: string) => string
 ): ReadingStatusInfo {
   const statusKey = reading?.status ?? 'pending';
-  const presentation = STATUS_PRESENTATION[statusKey] ?? STATUS_PRESENTATION.pending;
-  
+  const presentation =
+    STATUS_PRESENTATION[statusKey] ?? STATUS_PRESENTATION.pending;
+
   return {
     icon: presentation?.icon ?? '⏳',
-    badgeClassName: presentation?.badgeClassName ?? 'bg-blue-500/20 text-blue-200 border border-blue-500/30',
+    badgeClassName:
+      presentation?.badgeClassName ??
+      'bg-blue-500/20 text-blue-200 border border-blue-500/30',
     label: translate(presentation?.label ?? 'readingModal.pending', statusKey),
   };
 }

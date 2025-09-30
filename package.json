@@ -17,6 +17,12 @@
     "i18n:analyze": "node scripts/i18n-key-extractor.mjs",
     "i18n:test": "npm test tests/i18n/",
     "i18n:validate": "npm run i18n:check && npm run i18n:test",
+    "i18n:auto-translate": "node scripts/auto-translate-missing-keys.mjs",
+    "i18n:watch": "node scripts/auto-translate-console-watcher.mjs",
+    "i18n:simple": "node scripts/simple-i18n-translator.mjs",
+    "i18n:add-missing": "node scripts/add-missing-keys.mjs",
+    "i18n:add-simple": "node scripts/simple-add-keys.mjs",
+    "i18n:clear-cache": "node scripts/clear-i18n-cache.mjs",
     "clean:macos": "find . -name '._*' -delete && find . -name '.DS_Store' -delete",
     "test": "jest",
     "test:watch": "npm run test:continuous",
@@ -39,7 +45,6 @@
     "test:user:career": "node real-user-test.js career-spread",
     "test:user:situation": "node real-user-test.js situation-analysis",
     "test:user:relationship": "node real-user-test.js relationship-analysis",
-    "test:all": "node test-all-spreads.js",
     "test:all-spreads": "npm run test:all"
   },
   "dependencies": {
@@ -83,6 +88,7 @@
     "@types/nodemailer": "^7.0.1",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@vitalets/google-translate-api": "^9.2.1",
     "@vitejs/plugin-react": "^4.0.0",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
@@ -95,7 +101,8 @@
     "postcss": "^8",
     "prettier": "^3.6.0",
     "tailwindcss": "^3.3.0",
-    "typescript": "^5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
     "vitest": "^1.0.0"
   }
 }

@@ -12,12 +12,11 @@ import {
 } from 'lucide-react';
 import { useTranslations } from '@/hooks/useTranslations';
 import { getDashboardRoutes } from '@/utils/dashboard/routing-utils';
-// import { DashboardUtils } from '@/components/dashboard/shared/DashboardBaseComponent';
 
 interface NavigationHeaderProps {
   currentLocale: string;
   sidebarOpen: boolean;
-  setSidebarOpen: (open: boolean) => void;
+  setSidebarOpen: (_open: boolean) => void;
   handleLogout: () => Promise<void>;
 }
 
@@ -31,7 +30,10 @@ export default function NavigationHeader({
   const { t } = useTranslations();
   const routes = getDashboardRoutes(currentLocale);
   return (
-    <header className='fixed top-0 left-0 right-0 z-50 admin-sidebar border-b border-mystical-700/50'>
+    <header
+      className='fixed top-0 left-0 right-0 z-50 admin-sidebar border-b border-mystical-700/50'
+      role='banner'
+    >
       <div className='flex items-center justify-between h-16 px-4 md:px-6'>
         {/* Logo - Site logosu ve adı */}
         <div className='flex items-center space-x-3'>
@@ -44,7 +46,10 @@ export default function NavigationHeader({
         </div>
 
         {/* Desktop Navigation - Masaüstü navigasyon menüsü */}
-        <nav className='hidden md:flex items-center space-x-1'>
+        <nav
+          className='hidden md:flex items-center space-x-1'
+          aria-label='Ana Navigasyon'
+        >
           {/* Dashboard linki - aktif sayfa */}
           <a
             href={routes.main}
@@ -52,7 +57,7 @@ export default function NavigationHeader({
           >
             <BarChart3 className='h-4 w-4' />
             <span className='font-medium'>
-              {t('nav.dashboard', 'Dashboard')}
+              {t('navigation.dashboard', 'Dashboard')}
             </span>
           </a>
           {/* Okumalar sayfası linki */}
@@ -93,6 +98,9 @@ export default function NavigationHeader({
         <button
           onClick={() => setSidebarOpen(!sidebarOpen)} // Sidebar aç/kapat
           className='md:hidden p-2 rounded-md text-text-muted hover:text-text-celestial hover:bg-crystal-clear'
+          aria-expanded={sidebarOpen}
+          aria-controls='mobile-menu'
+          aria-label={sidebarOpen ? 'Menüyü kapat' : 'Menüyü aç'}
         >
           {sidebarOpen ? (
             <X className='h-5 w-5' />
@@ -105,8 +113,11 @@ export default function NavigationHeader({
 
       {/* Mobile Navigation - Mobil navigasyon menüsü */}
       {sidebarOpen && (
-        <div className='md:hidden border-t border-mystical-700/50'>
-          <nav className='px-4 py-2 space-y-1'>
+        <div
+          className='md:hidden border-t border-mystical-700/50'
+          id='mobile-menu'
+        >
+          <nav className='px-4 py-2 space-y-1' aria-label='Mobil Navigasyon'>
             {/* Dashboard linki - mobil */}
             <a
               href={routes.main}

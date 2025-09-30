@@ -40,7 +40,8 @@ export interface Reading {
   cost_credits?: number; // Okuma maliyeti (opsiyonel)
   spread_name?: string; // Kart yayılımı adı (opsiyonel)
   format?: 'audio' | 'written' | 'simple'; // Okuma formatı (opsiyonel)
-  formatInfo?: { // Format bilgileri (opsiyonel)
+  formatInfo?: {
+    // Format bilgileri (opsiyonel)
     label: string;
     icon: string;
     color: string;
@@ -48,7 +49,20 @@ export interface Reading {
   };
   metadata?: any; // Okuma metadata'sı (opsiyonel)
   // Eski uyumluluk için - geriye dönük uyumluluk
-  type?: 'tarot' | 'numerology' | 'love' | 'simple' | 'general' | 'career' | 'relationshipAnalysis' | 'money' | 'relationshipProblems' | 'situationAnalysis' | 'newLover' | 'problemSolving' | 'marriage';
+  type?:
+    | 'tarot'
+    | 'numerology'
+    | 'love'
+    | 'simple'
+    | 'general'
+    | 'career'
+    | 'relationshipAnalysis'
+    | 'money'
+    | 'relationshipProblems'
+    | 'situationAnalysis'
+    | 'newLover'
+    | 'problemSolving'
+    | 'marriage';
   summary?: string; // Okuma özeti (opsiyonel)
 }
 

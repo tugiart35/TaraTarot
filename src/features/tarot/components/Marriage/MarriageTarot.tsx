@@ -1,12 +1,10 @@
 'use client';
 
 import type { TarotCard } from '@/types/tarot';
-import type { CardMeaningData } from '@/types/ui';
 import { createTarotReadingComponent } from '@/features/tarot/shared/components';
 import { createMarriageConfig } from '@/features/tarot/shared/config';
-import { 
+import {
   getMarriageMeaningByCardAndPosition,
-  type MarriagePositionMeaning 
 } from '@/features/tarot/lib/marriage/position-meanings-index';
 
 const MarriageReading = createTarotReadingComponent({
@@ -22,7 +20,11 @@ const MarriageReading = createTarotReadingComponent({
       return '';
     }
 
-    const meaning = getMarriageMeaningByCardAndPosition(card, position, isReversed);
+    const meaning = getMarriageMeaningByCardAndPosition(
+      card,
+      position,
+      isReversed
+    );
 
     if (!meaning) {
       return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
@@ -32,7 +34,7 @@ const MarriageReading = createTarotReadingComponent({
     return {
       interpretation: isReversed ? meaning.reversed : meaning.upright,
       context: meaning.context,
-      keywords: meaning.keywords || []
+      keywords: meaning.keywords || [],
     };
   },
 });

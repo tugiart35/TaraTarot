@@ -113,7 +113,9 @@ function parseQuestions(
   }
 
   return {
-    personalInfo: personalInfoEntries.filter(entry => entry.value && entry.value !== '-'),
+    personalInfo: personalInfoEntries.filter(
+      entry => entry.value && entry.value !== '-'
+    ),
     prompts: promptEntries.filter(entry => entry.value),
   };
 }
@@ -125,7 +127,10 @@ export function useReadingQuestions(
   const { t } = useTranslations();
 
   const questions = useMemo(
-    () => parseQuestions(reading?.questions, config, (key, fallback) => t(key, fallback ?? key)),
+    () =>
+      parseQuestions(reading?.questions, config, (key, fallback) =>
+        t(key, fallback ?? key)
+      ),
     [reading?.questions, config, t]
   );
 

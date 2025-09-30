@@ -27,7 +27,7 @@ const LoveReading = createTarotReadingComponent({
     const interpretation = isReversed ? meaning.reversed : meaning.upright;
     return {
       interpretation,
-      context: meaning.context || ''
+      context: meaning.context || '',
     };
   },
 });

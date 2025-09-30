@@ -7,22 +7,26 @@ import StatsCards from './StatsCards';
 import CreditPackages from './CreditPackages';
 import ProfileManagement from './ProfileManagement';
 import RecentActivity from './RecentActivity';
-// import { DashboardUtils } from '@/components/dashboard/shared/DashboardBaseComponent';
+import { UserProfile, Package, Reading } from '@/types/dashboard.types';
+import { EnhancedUser } from '@/types/auth.types';
+import ErrorBoundary, {
+  ErrorFallback,
+} from '@/components/shared/ui/ErrorBoundary';
 
 interface DashboardContainerProps {
   locale: string;
-  profile: any;
-  user: any;
+  profile: UserProfile | null;
+  user: EnhancedUser | null;
   isAdmin: boolean;
   totalCount: number;
-  recentReadings: any[];
-  packages: any[];
+  recentReadings: Reading[];
+  packages: Package[];
   refreshCreditBalance: () => Promise<void>;
-  handlePackagePurchase: (pkg: any) => Promise<void>;
+  handlePackagePurchase: (_pkg: Package) => Promise<void>;
   openProfileModal: () => Promise<void>;
-  setSelectedReading: (reading: any | null) => void;
+  setSelectedReading: (_reading: Reading | null) => void;
   handleLogout: () => Promise<void>;
-  translate: (key: string, fallback?: string) => string;
+  translate: (_key: string, _fallback?: string) => string;
   paymentLoading: boolean;
 }
 
@@ -47,20 +51,32 @@ const DashboardContainer: React.FC<DashboardContainerProps> = ({
 
   // Memoized components to prevent unnecessary re-renders
   const MemoizedWelcomeSection = useMemo(
-    () => <WelcomeSection profile={profile} user={user} isAdmin={isAdmin} />,
+    () => (
+      <section aria-labelledby='welcome-heading'>
+        <h2 id='welcome-heading' className='sr-only'>
+          Hoş Geldiniz
+        </h2>
+        <WelcomeSection profile={profile} user={user} isAdmin={isAdmin} />
+      </section>
+    ),
     [profile, user, isAdmin]
   );
 
   const MemoizedStatsCards = useMemo(
     () => (
-      <StatsCards
-        profile={profile}
-        totalCount={totalCount}
-        isAdmin={isAdmin}
-        recentReadings={recentReadings}
-        refreshCreditBalance={refreshCreditBalance}
-        translate={translate}
-      />
+      <section aria-labelledby='stats-heading'>
+        <h2 id='stats-heading' className='sr-only'>
+          İstatistikler
+        </h2>
+        <StatsCards
+          profile={profile}
+          totalCount={totalCount}
+          isAdmin={isAdmin}
+          recentReadings={recentReadings}
+          refreshCreditBalance={refreshCreditBalance}
+          translate={translate}
+        />
+      </section>
     ),
     [
       profile,
@@ -74,35 +90,50 @@ const DashboardContainer: React.FC<DashboardContainerProps> = ({
 
   const MemoizedCreditPackages = useMemo(
     () => (
-      <CreditPackages
-        packages={packages}
-        handlePackagePurchase={handlePackagePurchase}
-        paymentLoading={paymentLoading}
-        translate={translate}
-      />
+      <section aria-labelledby='packages-heading'>
+        <h2 id='packages-heading' className='sr-only'>
+          Kredi Paketleri
+        </h2>
+        <CreditPackages
+          packages={packages}
+          handlePackagePurchase={handlePackagePurchase}
+          paymentLoading={paymentLoading}
+          translate={translate}
+        />
+      </section>
     ),
     [packages, handlePackagePurchase, paymentLoading, translate]
   );
 
   const MemoizedProfileManagement = useMemo(
     () => (
-      <ProfileManagement
-        openProfileModal={openProfileModal}
-        currentLocale={locale}
-      />
+      <section aria-labelledby='profile-heading'>
+        <h2 id='profile-heading' className='sr-only'>
+          Profil Yönetimi
+        </h2>
+        <ProfileManagement
+          openProfileModal={openProfileModal}
+          currentLocale={locale}
+        />
+      </section>
     ),
     [openProfileModal, locale]
   );
 
   const MemoizedRecentActivity = useMemo(
     () => (
-      <RecentActivity
-        recentReadings={recentReadings}
-        setSelectedReading={setSelectedReading}
-        totalReadings={totalCount}
-        isAdmin={isAdmin}
-        currentLocale={locale}
-      />
+      <section aria-labelledby='recent-activity-heading'>
+        <h2 id='recent-activity-heading' className='sr-only'>
+          Son Aktiviteler
+        </h2>
+        <RecentActivity
+          recentReadings={recentReadings}
+          setSelectedReading={setSelectedReading}
+          totalReadings={totalCount}
+          isAdmin={isAdmin}
+          currentLocale={locale}
+        />
+      </section>
     ),
     [recentReadings, setSelectedReading, totalCount, isAdmin, locale]
   );
@@ -120,16 +151,37 @@ const DashboardContainer: React.FC<DashboardContainerProps> = ({
   );
 
   return (
-    <div className='dashboard-container min-h-screen bg-night'>
+    <div
+      className='dashboard-container min-h-screen bg-night'
+      role='region'
+      aria-label='Dashboard'
+    >
       {MemoizedNavigationHeader}
 
-      <main className='dashboard-main pt-16 px-4 md:px-6 pb-8'>
-        <div className='max-w-7xl mx-auto'>
-          {MemoizedWelcomeSection}
-          {MemoizedStatsCards}
-          {MemoizedCreditPackages}
-          {MemoizedProfileManagement}
-          {MemoizedRecentActivity}
+      <main
+        className='dashboard-main pt-16 px-4 md:px-6 pb-8'
+        id='dashboard-main-content'
+        tabIndex={-1}
+      >
+        <div className='max-w-7xl mx-auto' aria-live='polite'>
+          <ErrorBoundary
+            fallback={
+              <ErrorFallback
+                error={
+                  new Error(
+                    'Dashboard bileşenleri yüklenirken bir hata oluştu.'
+                  )
+                }
+                resetError={() => window.location.reload()}
+              />
+            }
+          >
+            {MemoizedWelcomeSection}
+            {MemoizedStatsCards}
+            {MemoizedCreditPackages}
+            {MemoizedProfileManagement}
+            {MemoizedRecentActivity}
+          </ErrorBoundary>
         </div>
       </main>
     </div>

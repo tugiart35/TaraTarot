@@ -9,6 +9,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import BottomNavigation from '@/features/shared/layout/BottomNavigation';
+import { useTranslations } from '@/hooks/useTranslations';
 
 interface AuthAccessibilityWrapperProps {
   children: React.ReactNode;
@@ -21,6 +22,7 @@ export default function AuthAccessibilityWrapper({
   title,
   description,
 }: AuthAccessibilityWrapperProps) {
+  const { t } = useTranslations();
   const mainRef = useRef<HTMLElement>(null);
   const headingRef = useRef<HTMLHeadingElement>(null);
 
@@ -49,9 +51,9 @@ export default function AuthAccessibilityWrapper({
         href='#main-content'
         className='sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-gold focus:text-night focus:rounded focus:font-semibold'
         onKeyDown={handleSkipLink}
-        aria-label='Ana içeriğe geç'
+        aria-label={t('accessibility.skipToMain', 'Ana içeriğe geç')}
       >
-        Ana içeriğe geç
+        {t('accessibility.skipToMain', 'Ana içeriğe geç')}
       </a>
 
       {/* Main content area */}

@@ -13,13 +13,12 @@ import { useToast } from '@/hooks/useToast';
 import { useAuth } from '@/hooks/auth/useAuth';
 import { useRememberMe } from '@/hooks/auth/useRememberMe';
 import { getAuthErrorMessage } from '@/lib/auth/auth-error-messages';
-import type {
-  LoginFormData,
-  RegisterFormData,
-} from '@/lib/auth/auth-validation';
+
 import {
   validateEmail,
   validatePasswordStrength,
+  LoginFormData,
+  RegisterFormData,
 } from '@/lib/auth/auth-validation';
 import Toast from '@/features/shared/ui/Toast';
 
@@ -209,17 +208,6 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
               router.push(redirectPath);
             }, 1000);
           } catch (error: any) {
-            console.log('Sign in error caught:', {
-              message: error.message,
-              error: error,
-              includesEmailNotConfirmed: error.message?.includes(
-                'Email not confirmed'
-              ),
-              includesTurkishMessage: error.message?.includes(
-                'E-posta adresinizi onaylamanız gerekiyor'
-              ),
-            });
-
             // E-posta onaylanmamış kullanıcılar için özel handling
             if (
               error.message?.includes('Email not confirmed') ||
@@ -227,20 +215,12 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
                 'E-posta adresinizi onaylamanız gerekiyor'
               )
             ) {
-              console.log('Setting up resend email UI');
               setMessage(
                 'E-posta adresinizi onaylamanız gerekiyor. Onay e-postasını tekrar göndermek ister misiniz?'
               );
               setShowResendEmail(true);
               setPendingEmail(formData.email);
-              console.log('State updated:', {
-                showResendEmail: true,
-                pendingEmail: formData.email,
-                message:
-                  'E-posta adresinizi onaylamanız gerekiyor. Onay e-postasını tekrar göndermek ister misiniz?',
-              });
             } else {
-              console.log('Throwing error to normal error handling');
               throw error; // Diğer hataları normal error handling'e bırak
             }
           }
@@ -298,18 +278,16 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
       }
     },
     [
-      isLogin,
-      formData,
-      signIn,
-      signUp,
-      signInWithGoogle,
-      resetPassword,
-      locale,
-      next,
-      router,
-      showToast,
-      getAuthErrorMessage,
       validateForm,
+      formData,
+      isLogin,
+      signIn,
+      showToast,
+      updateRememberMe,
+      next,
+      locale,
+      router,
+      signUp,
     ]
   );
 
@@ -328,32 +306,25 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
       setLoading(false);
       setLoadingStep('');
     }
-  }, [signInWithGoogle, locale, showToast, getAuthErrorMessage]);
+  }, [signInWithGoogle, locale, showToast]);
 
   // Resend email confirmation - memoized
   const handleResendEmail = useCallback(async () => {
-    console.log('handleResendEmail called', { pendingEmail, showResendEmail });
-
     if (!pendingEmail) {
-      console.log('No pending email, returning');
       return;
     }
 
     try {
-      console.log('Starting resend email process');
       setLoading(true);
       setLoadingStep('E-posta gönderiliyor...');
       setMessage('');
 
-      console.log('Calling resendConfirmation with:', pendingEmail);
       await resendConfirmation(pendingEmail);
 
-      console.log('Resend confirmation successful');
       showToast('Onay e-postası tekrar gönderildi!', 'success');
       setShowResendEmail(false);
       setPendingEmail('');
     } catch (error: unknown) {
-      console.error('Resend confirmation error:', error);
       const errorMessage = getAuthErrorMessage(error as Error, locale);
       showToast(errorMessage, 'error');
       setMessage(errorMessage);
@@ -361,13 +332,7 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
       setLoading(false);
       setLoadingStep('');
     }
-  }, [
-    pendingEmail,
-    resendConfirmation,
-    showToast,
-    getAuthErrorMessage,
-    locale,
-  ]);
+  }, [pendingEmail, resendConfirmation, showToast, locale]);
 
   // Password reset - memoized
   const handlePasswordReset = useCallback(
@@ -413,7 +378,7 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
         setLoadingStep('');
       }
     },
-    [resetPassword, locale, showToast, getAuthErrorMessage]
+    [resetPassword, locale, showToast]
   );
 
   // Input change handler - memoized
@@ -1152,10 +1117,6 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
               <button
                 type='button'
                 onClick={() => {
-                  console.log('🔴 RESEND BUTTON CLICKED!', {
-                    loading,
-                    pendingEmail,
-                  });
                   handleResendEmail();
                 }}
                 disabled={loading}
@@ -1170,7 +1131,6 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
               <button
                 type='button'
                 onClick={() => {
-                  console.log('🔴 CANCEL BUTTON CLICKED!');
                   setShowResendEmail(false);
                   setPendingEmail('');
                   setMessage('');

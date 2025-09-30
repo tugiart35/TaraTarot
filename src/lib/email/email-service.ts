@@ -222,20 +222,23 @@ class EmailService {
     };
 
     // Seçilen kartları listele - Yorumları ile birlikte
-    const selectedCards = Array.isArray(readingData.cards) ? readingData.cards : [];
-    
+    const selectedCards = Array.isArray(readingData.cards)
+      ? readingData.cards
+      : [];
+
     // Kartların yorumlarını çıkar
     const getCardInterpretation = (cardIndex: number, cardName: string) => {
       const interpretation = readingData.interpretation || '';
       const lines = interpretation.split('\n');
       const cardSection = lines.find(
         (line: string) =>
-          line.includes(`${cardIndex + 1}.`) &&
-          line.includes(cardName)
+          line.includes(`${cardIndex + 1}.`) && line.includes(cardName)
       );
 
       if (cardSection) {
-        const sectionIndex = lines.findIndex((line: string) => line === cardSection);
+        const sectionIndex = lines.findIndex(
+          (line: string) => line === cardSection
+        );
         const meaningLines = [];
         for (let i = sectionIndex + 2; i < lines.length; i++) {
           const currentLine = lines[i];
@@ -256,7 +259,10 @@ class EmailService {
 
     const cardsList = selectedCards
       .map((card: any, index: number) => {
-        const interpretation = getCardInterpretation(index, card.nameTr || card.name);
+        const interpretation = getCardInterpretation(
+          index,
+          card.nameTr || card.name
+        );
         return `
           <div style="background: #f8fafc; padding: 15px; border-radius: 8px; margin: 10px 0; border-left: 4px solid #8b5cf6;">
             <h4 style="margin: 0 0 8px 0; color: #1f2937; font-size: 14px;">

@@ -23,14 +23,21 @@ export interface DashboardStats {
 }
 
 export interface DashboardFilters {
-  type: 'all' | 'love' | 'general' | 'career' | 'numerology' | 'situation-analysis' | 'problem-solving';
+  type:
+    | 'all'
+    | 'love'
+    | 'general'
+    | 'career'
+    | 'numerology'
+    | 'situation-analysis'
+    | 'problem-solving';
   dateRange: 'week' | 'month' | 'year' | 'all';
   search: string;
 }
 
 export interface DashboardBaseComponentProps {
-  onStatsUpdate?: (stats: DashboardStats) => void;
-  onFiltersChange?: (filters: DashboardFilters) => void;
+  onStatsUpdate?: (_stats: DashboardStats) => void;
+  onFiltersChange?: (_filters: DashboardFilters) => void;
 }
 
 export function useDashboardBaseComponent({
@@ -308,6 +315,11 @@ export const DashboardUtils = {
       numerology: '🔢',
       situationAnalysis: '📊',
       problemSolving: '🔍',
+      relationshipAnalysis: '💙',
+      relationshipProblems: '💔',
+      marriage: '💒',
+      newLover: '💖',
+      moneySpread: '💰',
     };
     return icons[type] || '🔮';
   },

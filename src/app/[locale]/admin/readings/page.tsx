@@ -570,7 +570,7 @@ export default function ReadingsPage() {
               <option value='reviewed'>👀 İncelenen</option>
               <option value='situation-analysis'>📊 Durum Analizi</option>
               <option value='problem-solving'>🔍 Problem Çözme</option>
-              </select>
+            </select>
           </div>
         </div>
       </div>

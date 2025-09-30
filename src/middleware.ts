@@ -202,10 +202,10 @@ export async function middleware(request: NextRequest) {
       ? preferredLocale
       : 'tr';
 
-    // Root path'i tarot sayfasına yönlendir
+    // Root path'i ana sayfaya yönlendir
     if (pathname === '/') {
       return NextResponse.redirect(
-        new URL(`/${validLocale}/tarotokumasi`, request.url)
+        new URL(`/${validLocale}`, request.url)
       );
     }
 
@@ -237,7 +237,7 @@ export async function middleware(request: NextRequest) {
 
     if (pathname === '/') {
       return NextResponse.redirect(
-        new URL(`/${validLocale}/tarotokumasi`, request.url)
+        new URL(`/${validLocale}`, request.url)
       );
     }
 

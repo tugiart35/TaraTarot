@@ -86,7 +86,6 @@ export function getRelationshipAnalysisMeaningByCardAndPosition(
   position: number,
   isReversed: boolean = false
 ): RelationshipAnalysisPositionMeaning | null {
-
   // Pozisyon 1-7 arasında olmalı
   if (position < 1 || position > 7) {
     return null;
@@ -132,7 +131,6 @@ export function getRelationshipAnalysisMeaningByCardAndPosition(
         getRelationshipAnalysisPosition7MeaningByCardName(englishCardName);
       break;
   }
-
 
   if (positionMeaning) {
     const result = {

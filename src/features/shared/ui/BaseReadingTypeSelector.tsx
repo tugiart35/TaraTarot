@@ -218,7 +218,9 @@ export default function BaseReadingTypeSelector({
       // Kullanıcı giriş yapmamışsa butonları devre dışı bırak
       if (!isAuthenticated) {
         // Kullanıcıya giriş yapması gerektiğini bildir
-        console.warn('Kullanıcı giriş yapmamış - sesli/yazılı okuma için giriş gerekli');
+        console.warn(
+          'Kullanıcı giriş yapmamış - sesli/yazılı okuma için giriş gerekli'
+        );
         return;
       }
 
@@ -228,7 +230,9 @@ export default function BaseReadingTypeSelector({
         !detailedCredits.creditStatus.hasEnoughCredits
       ) {
         // Kredi yetersiz - kredi bilgi modalını aç
-        console.warn(`Yetersiz kredi - ${detailedCredits.creditStatus.requiredCredits} kredi gerekli`);
+        console.warn(
+          `Yetersiz kredi - ${detailedCredits.creditStatus.requiredCredits} kredi gerekli`
+        );
         if (_onCreditInfoClick) {
           _onCreditInfoClick();
         }
@@ -240,7 +244,9 @@ export default function BaseReadingTypeSelector({
         !writtenCredits.creditStatus.hasEnoughCredits
       ) {
         // Kredi yetersiz - kredi bilgi modalını aç
-        console.warn(`Yetersiz kredi - ${writtenCredits.creditStatus.requiredCredits} kredi gerekli`);
+        console.warn(
+          `Yetersiz kredi - ${writtenCredits.creditStatus.requiredCredits} kredi gerekli`
+        );
         if (_onCreditInfoClick) {
           _onCreditInfoClick();
         }
@@ -414,22 +420,25 @@ export default function BaseReadingTypeSelector({
           </span>
         )}
         {isAuthenticated && (
-          <div className="flex flex-col gap-1 text-xs">
+          <div className='flex flex-col gap-1 text-xs'>
             {!detailedCredits.creditStatus.hasEnoughCredits && (
               <span className={`${currentTheme.messages.adminRequired}`}>
-                💳 Sesli okuma: {detailedCredits.creditStatus.requiredCredits} kredi gerekli
+                💳 Sesli okuma: {detailedCredits.creditStatus.requiredCredits}{' '}
+                kredi gerekli
               </span>
             )}
             {!writtenCredits.creditStatus.hasEnoughCredits && (
               <span className={`${currentTheme.messages.adminRequired}`}>
-                💳 Yazılı okuma: {writtenCredits.creditStatus.requiredCredits} kredi gerekli
+                💳 Yazılı okuma: {writtenCredits.creditStatus.requiredCredits}{' '}
+                kredi gerekli
               </span>
             )}
-            {detailedCredits.creditStatus.hasEnoughCredits && writtenCredits.creditStatus.hasEnoughCredits && (
-              <span className="text-green-400">
-                ✅ Tüm okuma türleri için yeterli kredi mevcut
-              </span>
-            )}
+            {detailedCredits.creditStatus.hasEnoughCredits &&
+              writtenCredits.creditStatus.hasEnoughCredits && (
+                <span className='text-green-400'>
+                  ✅ Tüm okuma türleri için yeterli kredi mevcut
+                </span>
+              )}
           </div>
         )}
       </div>

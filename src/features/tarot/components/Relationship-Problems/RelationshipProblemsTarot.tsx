@@ -1,12 +1,10 @@
 'use client';
 
 import type { TarotCard } from '@/types/tarot';
-import type { CardMeaningData } from '@/types/ui';
 import { createTarotReadingComponent } from '@/features/tarot/shared/components';
 import { createRelationshipProblemsConfig } from '@/features/tarot/shared/config';
-import { 
+import {
   getRelationshipProblemsMeaningByCardAndPosition,
-  type RelationshipProblemsPositionMeaning 
 } from '@/features/tarot/lib/relationship-problems/position-meanings-index';
 
 const RelationshipProblemsReading = createTarotReadingComponent({
@@ -22,7 +20,11 @@ const RelationshipProblemsReading = createTarotReadingComponent({
       return '';
     }
 
-    const meaning = getRelationshipProblemsMeaningByCardAndPosition(card, position, isReversed);
+    const meaning = getRelationshipProblemsMeaningByCardAndPosition(
+      card,
+      position,
+      isReversed
+    );
 
     if (!meaning) {
       return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
@@ -32,7 +34,7 @@ const RelationshipProblemsReading = createTarotReadingComponent({
     return {
       interpretation: isReversed ? meaning.reversed : meaning.upright,
       context: meaning.context,
-      keywords: meaning.keywords || []
+      keywords: meaning.keywords || [],
     };
   },
 });

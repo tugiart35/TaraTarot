@@ -379,25 +379,29 @@ const MARRIAGE_POSITIONS_INFO: PositionInfo[] = [
     id: 1,
     title: 'Sonuç ne olacak?',
     desc: 'Evlilik sürecinizin genel sonucunu ve nasıl ilerleyeceğini gösterir.',
-    description: 'Evlilik sürecinizin genel sonucunu ve nasıl ilerleyeceğini gösterir.',
+    description:
+      'Evlilik sürecinizin genel sonucunu ve nasıl ilerleyeceğini gösterir.',
   },
   {
     id: 2,
     title: 'Eşimi beklerken benim ne yapmam gerekiyor?',
     desc: 'Doğru kişiyi bulana kadar kendinizi nasıl geliştirmeniz gerektiğini gösterir.',
-    description: 'Doğru kişiyi bulana kadar kendinizi nasıl geliştirmeniz gerektiğini gösterir.',
+    description:
+      'Doğru kişiyi bulana kadar kendinizi nasıl geliştirmeniz gerektiğini gösterir.',
   },
   {
     id: 3,
     title: 'Mali kaynaklarımızı birbirimizle paylaşacak mıyız?',
     desc: 'Evlilikte mali konularda uyumunuzu ve paylaşımınızı gösterir.',
-    description: 'Evlilikte mali konularda uyumunuzu ve paylaşımınızı gösterir.',
+    description:
+      'Evlilikte mali konularda uyumunuzu ve paylaşımınızı gösterir.',
   },
   {
     id: 4,
     title: 'Her ikimiz de bağlanmak isteyecek miyiz?',
     desc: 'Her iki tarafın da evliliğe hazır olup olmadığını ve bağlanma isteğini gösterir.',
-    description: 'Her iki tarafın da evliliğe hazır olup olmadığını ve bağlanma isteğini gösterir.',
+    description:
+      'Her iki tarafın da evliliğe hazır olup olmadığını ve bağlanma isteğini gösterir.',
   },
   {
     id: 5,
@@ -415,19 +419,22 @@ const MARRIAGE_POSITIONS_INFO: PositionInfo[] = [
     id: 7,
     title: 'Birbirimizi nasıl bulacağız?',
     desc: 'Doğru kişiyle nasıl tanışacağınızı ve buluşacağınızı gösterir.',
-    description: 'Doğru kişiyle nasıl tanışacağınızı ve buluşacağınızı gösterir.',
+    description:
+      'Doğru kişiyle nasıl tanışacağınızı ve buluşacağınızı gösterir.',
   },
   {
     id: 8,
     title: 'Anlaşabilecek miyiz?',
     desc: 'İletişim uyumunuzu ve birbirinizi anlama kapasitenizi gösterir.',
-    description: 'İletişim uyumunuzu ve birbirinizi anlama kapasitenizi gösterir.',
+    description:
+      'İletişim uyumunuzu ve birbirinizi anlama kapasitenizi gösterir.',
   },
   {
     id: 9,
     title: 'Benim için nasıl bir eş uygundur?',
     desc: 'İdeal eşinizin özelliklerini ve sizinle uyumlu olacak kişiyi gösterir.',
-    description: 'İdeal eşinizin özelliklerini ve sizinle uyumlu olacak kişiyi gösterir.',
+    description:
+      'İdeal eşinizin özelliklerini ve sizinle uyumlu olacak kişiyi gösterir.',
   },
   {
     id: 10,
@@ -439,22 +446,62 @@ const MARRIAGE_POSITIONS_INFO: PositionInfo[] = [
 
 const MARRIAGE_POSITIONS_LAYOUT: PositionLayout[] = [
   // Üst sıra (10, 9, 8)
-  { id: 10, className: 'absolute top-[15%] left-[15%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sol üst
-  { id: 9, className: 'absolute top-[15%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Merkez üst
-  { id: 8, className: 'absolute top-[15%] left-[85%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sağ üst
-  
+  {
+    id: 10,
+    className:
+      'absolute top-[15%] left-[15%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Sol üst
+  {
+    id: 9,
+    className:
+      'absolute top-[15%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Merkez üst
+  {
+    id: 8,
+    className:
+      'absolute top-[15%] left-[85%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Sağ üst
+
   // Orta sıra - Sol daire (7, 6)
-  { id: 7, className: 'absolute top-[35%] left-[25%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sol daire üst
-  { id: 6, className: 'absolute top-[55%] left-[25%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sol daire alt
+  {
+    id: 7,
+    className:
+      'absolute top-[35%] left-[25%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Sol daire üst
+  {
+    id: 6,
+    className:
+      'absolute top-[55%] left-[25%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Sol daire alt
 
   // Orta sıra - Sağ daire (5, 4)
-  { id: 5, className: 'absolute top-[35%] left-[75%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sağ daire üst
-  { id: 4, className: 'absolute top-[55%] left-[75%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sağ daire alt
+  {
+    id: 5,
+    className:
+      'absolute top-[35%] left-[75%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Sağ daire üst
+  {
+    id: 4,
+    className:
+      'absolute top-[55%] left-[75%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Sağ daire alt
 
   // Alt sıra (3, 2, 1)
-  { id: 3, className: 'absolute top-[85%] left-[15%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sol alt
-  { id: 2, className: 'absolute top-[85%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Merkez alt
-  { id: 1, className: 'absolute top-[85%] left-[85%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sağ alt
+  {
+    id: 3,
+    className:
+      'absolute top-[85%] left-[15%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Sol alt
+  {
+    id: 2,
+    className:
+      'absolute top-[85%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Merkez alt
+  {
+    id: 1,
+    className:
+      'absolute top-[85%] left-[85%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Sağ alt
 ];
 
 // Relationship Analysis Spread Position Data
@@ -463,54 +510,89 @@ const RELATIONSHIP_ANALYSIS_POSITIONS_INFO: PositionInfo[] = [
     id: 1,
     title: 'Mevcut Durum',
     desc: 'İlişkinin mevcut şartları, içinde bulunduğu durum ve varsa problemlerin yarattığı atmosfer hakkında bilgi verir.',
-    description: 'İlişkinin mevcut şartları, içinde bulunduğu durum ve varsa problemlerin yarattığı atmosfer hakkında bilgi verir.',
+    description:
+      'İlişkinin mevcut şartları, içinde bulunduğu durum ve varsa problemlerin yarattığı atmosfer hakkında bilgi verir.',
   },
   {
     id: 2,
     title: 'Sizin Hissleriniz',
     desc: 'Sizin hisleriniz, düşünceleriniz ve partnerinize bakış açınızı gösterir. İlişkideki duygusal durumunuzu yansıtır.',
-    description: 'Sizin hisleriniz, düşünceleriniz ve partnerinize bakış açınızı gösterir. İlişkideki duygusal durumunuzu yansıtır.',
+    description:
+      'Sizin hisleriniz, düşünceleriniz ve partnerinize bakış açınızı gösterir. İlişkideki duygusal durumunuzu yansıtır.',
   },
   {
     id: 3,
     title: 'Sizin Beklentileriniz',
     desc: 'Sizin ilişkiniz ya da içinde bulunduğunuz durum hakkında endişelerinizi, beklentilerinizi ve hayallerinizi gösterir.',
-    description: 'Sizin ilişkiniz ya da içinde bulunduğunuz durum hakkında endişelerinizi, beklentilerinizi ve hayallerinizi gösterir.',
+    description:
+      'Sizin ilişkiniz ya da içinde bulunduğunuz durum hakkında endişelerinizi, beklentilerinizi ve hayallerinizi gösterir.',
   },
   {
     id: 4,
     title: 'Tavsiyeler',
     desc: 'İlişkinizin gidişatı ile ilgili sergileyeceğiniz tutum ile ilgili tavsiyeleri içerir. Nasıl davranmanız gerektiğini gösterir.',
-    description: 'İlişkinizin gidişatı ile ilgili sergileyeceğiniz tutum ile ilgili tavsiyeleri içerir. Nasıl davranmanız gerektiğini gösterir.',
+    description:
+      'İlişkinizin gidişatı ile ilgili sergileyeceğiniz tutum ile ilgili tavsiyeleri içerir. Nasıl davranmanız gerektiğini gösterir.',
   },
   {
     id: 5,
     title: 'Yol Haritası',
     desc: 'Bu ilişkide ya da var olan sorun karşısında takınmanız gereken tavır ve nasıl bir yol izlemeniz konusunda size yol gösterir.',
-    description: 'Bu ilişkide ya da var olan sorun karşısında takınmanız gereken tavır ve nasıl bir yol izlemeniz konusunda size yol gösterir.',
+    description:
+      'Bu ilişkide ya da var olan sorun karşısında takınmanız gereken tavır ve nasıl bir yol izlemeniz konusunda size yol gösterir.',
   },
   {
     id: 6,
     title: 'Partnerinizin Beklentileri',
     desc: 'Partnerinizin ilişkiniz ya da içinde bulunduğunuz durum hakkında endişelerini, beklentilerini ve hayallerini gösterir.',
-    description: 'Partnerinizin ilişkiniz ya da içinde bulunduğunuz durum hakkında endişelerini, beklentilerini ve hayallerini gösterir.',
+    description:
+      'Partnerinizin ilişkiniz ya da içinde bulunduğunuz durum hakkında endişelerini, beklentilerini ve hayallerini gösterir.',
   },
   {
     id: 7,
     title: 'Partnerinizin Hissleri',
     desc: 'Partnerinizin hislerini, düşüncelerini ve size bakış açısını gösterir. İlişkideki duygusal durumunu yansıtır.',
-    description: 'Partnerinizin hislerini, düşüncelerini ve size bakış açısını gösterir. İlişkideki duygusal durumunu yansıtır.',
+    description:
+      'Partnerinizin hislerini, düşüncelerini ve size bakış açısını gösterir. İlişkideki duygusal durumunu yansıtır.',
   },
 ];
 
 const RELATIONSHIP_ANALYSIS_POSITIONS_LAYOUT: PositionLayout[] = [
-  { id: 1, className: 'absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-30' }, // Merkez - Mevcut Durum
-  { id: 2, className: 'absolute top-[20%] left-[70%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sağ üst - Sizin Hissleriniz
-  { id: 3, className: 'absolute top-[50%] left-[75%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sağ orta - Sizin Beklentileriniz
-  { id: 4, className: 'absolute top-[80%] left-[70%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sağ alt - Tavsiyeler
-  { id: 5, className: 'absolute top-[80%] left-[30%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sol alt - Yol Haritası
-  { id: 6, className: 'absolute top-[50%] left-[25%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sol orta - Partnerinizin Beklentileri
-  { id: 7, className: 'absolute top-[20%] left-[30%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sol üst - Partnerinizin Hissleri
+  {
+    id: 1,
+    className:
+      'absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-30',
+  }, // Merkez - Mevcut Durum
+  {
+    id: 2,
+    className:
+      'absolute top-[20%] left-[70%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Sağ üst - Sizin Hissleriniz
+  {
+    id: 3,
+    className:
+      'absolute top-[50%] left-[75%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Sağ orta - Sizin Beklentileriniz
+  {
+    id: 4,
+    className:
+      'absolute top-[80%] left-[70%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Sağ alt - Tavsiyeler
+  {
+    id: 5,
+    className:
+      'absolute top-[80%] left-[30%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Sol alt - Yol Haritası
+  {
+    id: 6,
+    className:
+      'absolute top-[50%] left-[25%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Sol orta - Partnerinizin Beklentileri
+  {
+    id: 7,
+    className:
+      'absolute top-[20%] left-[30%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Sol üst - Partnerinizin Hissleri
 ];
 
 // Relationship Problems Spread Position Data
@@ -519,75 +601,120 @@ const RELATIONSHIP_PROBLEMS_POSITIONS_INFO: PositionInfo[] = [
     id: 1,
     title: 'Çelişki nedir?',
     desc: 'İlişkinizdeki iç çelişkileri ve çatışmaları gösterir. Hangi konularda anlaşamadığınızı ve neden çelişki yaşadığınızı anlamanıza yardımcı olur.',
-    description: 'İlişkinizdeki iç çelişkileri ve çatışmaları gösterir. Hangi konularda anlaşamadığınızı ve neden çelişki yaşadığınızı anlamanıza yardımcı olur.',
+    description:
+      'İlişkinizdeki iç çelişkileri ve çatışmaları gösterir. Hangi konularda anlaşamadığınızı ve neden çelişki yaşadığınızı anlamanıza yardımcı olur.',
   },
   {
     id: 2,
     title: 'Sorun nedir?',
     desc: 'İlişkinizdeki ana problemi ve temel sorunu ortaya koyar. Hangi konunun en büyük zorluk yarattığını gösterir.',
-    description: 'İlişkinizdeki ana problemi ve temel sorunu ortaya koyar. Hangi konunun en büyük zorluk yarattığını gösterir.',
+    description:
+      'İlişkinizdeki ana problemi ve temel sorunu ortaya koyar. Hangi konunun en büyük zorluk yarattığını gösterir.',
   },
   {
     id: 3,
     title: 'Sorunu ben mi yarattım?',
     desc: 'Sorunun kaynağında sizin payınızı ve sorumluluğunuzu gösterir. Kendi davranışlarınızın soruna nasıl katkıda bulunduğunu anlamanıza yardımcı olur.',
-    description: 'Sorunun kaynağında sizin payınızı ve sorumluluğunuzu gösterir. Kendi davranışlarınızın soruna nasıl katkıda bulunduğunu anlamanıza yardımcı olur.',
+    description:
+      'Sorunun kaynağında sizin payınızı ve sorumluluğunuzu gösterir. Kendi davranışlarınızın soruna nasıl katkıda bulunduğunu anlamanıza yardımcı olur.',
   },
   {
     id: 4,
     title: 'Bu sorundaki payımı görmezden mi geliyorum?',
     desc: 'Kendi sorumluluğunuzu kabul etme konusundaki durumunuzu gösterir. Kendi hatalarınızı görmezden gelip gelmediğinizi ortaya koyar.',
-    description: 'Kendi sorumluluğunuzu kabul etme konusundaki durumunuzu gösterir. Kendi hatalarınızı görmezden gelip gelmediğinizi ortaya koyar.',
+    description:
+      'Kendi sorumluluğunuzu kabul etme konusundaki durumunuzu gösterir. Kendi hatalarınızı görmezden gelip gelmediğinizi ortaya koyar.',
   },
   {
     id: 5,
     title: 'Birlikte olduğum kişiyle geçmişteki deneyimlerim',
     desc: 'Partnerinizle yaşadığınız geçmiş deneyimlerin mevcut sorunlara etkisini gösterir. Geçmişin bugüne nasıl yansıdığını anlamanıza yardımcı olur.',
-    description: 'Partnerinizle yaşadığınız geçmiş deneyimlerin mevcut sorunlara etkisini gösterir. Geçmişin bugüne nasıl yansıdığını anlamanıza yardımcı olur.',
+    description:
+      'Partnerinizle yaşadığınız geçmiş deneyimlerin mevcut sorunlara etkisini gösterir. Geçmişin bugüne nasıl yansıdığını anlamanıza yardımcı olur.',
   },
   {
     id: 6,
     title: 'Birbirimizi suistimal mi ediyoruz?',
     desc: 'İlişkinizde karşılıklı saygı ve sağlıklı sınırların durumunu gösterir. Birbirinizi nasıl etkilediğinizi ve zarar verip vermediğinizi ortaya koyar.',
-    description: 'İlişkinizde karşılıklı saygı ve sağlıklı sınırların durumunu gösterir. Birbirinizi nasıl etkilediğinizi ve zarar verip vermediğinizi ortaya koyar.',
+    description:
+      'İlişkinizde karşılıklı saygı ve sağlıklı sınırların durumunu gösterir. Birbirinizi nasıl etkilediğinizi ve zarar verip vermediğinizi ortaya koyar.',
   },
   {
     id: 7,
     title: 'Sorunumuza karışan başka insanlar var mı?',
     desc: 'İlişkinizi etkileyen dış faktörleri ve üçüncü kişileri gösterir. Aile, arkadaşlar veya diğer insanların sorununuza nasıl etki ettiğini anlamanıza yardımcı olur.',
-    description: 'İlişkinizi etkileyen dış faktörleri ve üçüncü kişileri gösterir. Aile, arkadaşlar veya diğer insanların sorununuza nasıl etki ettiğini anlamanıza yardımcı olur.',
+    description:
+      'İlişkinizi etkileyen dış faktörleri ve üçüncü kişileri gösterir. Aile, arkadaşlar veya diğer insanların sorununuza nasıl etki ettiğini anlamanıza yardımcı olur.',
   },
   {
     id: 8,
     title: 'İlişkimizi etkileyen maddi sorunlar var mı?',
     desc: 'Para, iş, maddi durum gibi faktörlerin ilişkinize etkisini gösterir. Ekonomik sorunların ilişkinizi nasıl etkilediğini ortaya koyar.',
-    description: 'Para, iş, maddi durum gibi faktörlerin ilişkinize etkisini gösterir. Ekonomik sorunların ilişkinizi nasıl etkilediğini ortaya koyar.',
+    description:
+      'Para, iş, maddi durum gibi faktörlerin ilişkinize etkisini gösterir. Ekonomik sorunların ilişkinizi nasıl etkilediğini ortaya koyar.',
   },
   {
     id: 9,
     title: 'Bu ilişki sürecek mi?',
     desc: 'İlişkinizin geleceği hakkında öngörü sunar. Mevcut sorunların çözülüp çözülmeyeceği ve ilişkinin devam edip etmeyeceği konusunda bilgi verir.',
-    description: 'İlişkinizin geleceği hakkında öngörü sunar. Mevcut sorunların çözülüp çözülmeyeceği ve ilişkinin devam edip etmeyeceği konusunda bilgi verir.',
+    description:
+      'İlişkinizin geleceği hakkında öngörü sunar. Mevcut sorunların çözülüp çözülmeyeceği ve ilişkinin devam edip etmeyeceği konusunda bilgi verir.',
   },
 ];
 
 const RELATIONSHIP_PROBLEMS_POSITIONS_LAYOUT: PositionLayout[] = [
   // Üst sıra (7, 8, 9)
-  { id: 7, className: 'absolute top-[85%] left-[85%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sol üst
-  { id: 8, className: 'absolute top-[65%] left-[85%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Merkez üst
-  { id: 9, className: 'absolute top-[85%] left-[15%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sağ üst
-  
+  {
+    id: 7,
+    className:
+      'absolute top-[85%] left-[85%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Sol üst
+  {
+    id: 8,
+    className:
+      'absolute top-[65%] left-[85%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Merkez üst
+  {
+    id: 9,
+    className:
+      'absolute top-[85%] left-[15%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Sağ üst
+
   // Sağ daire (1, 2)
-  { id: 1, className: 'absolute top-[65%] left-[15%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sağ daire alt
-  { id: 2, className: 'absolute top-[65%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sağ daire üst
-  
+  {
+    id: 1,
+    className:
+      'absolute top-[65%] left-[15%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Sağ daire alt
+  {
+    id: 2,
+    className:
+      'absolute top-[65%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Sağ daire üst
+
   // Sol daire (3, 4)
-  { id: 3, className: 'absolute top-[45%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sol daire alt
-  { id: 4, className: 'absolute top-[25%] left-[85%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sol daire üst
-  
+  {
+    id: 3,
+    className:
+      'absolute top-[45%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Sol daire alt
+  {
+    id: 4,
+    className:
+      'absolute top-[25%] left-[85%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Sol daire üst
+
   // Merkez kesişim (5, 6)
-  { id: 5, className: 'absolute top-[12%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-30' }, // Merkez alt
-  { id: 6, className: 'absolute top-[25%] left-[15%] -translate-x-1/2 -translate-y-1/2 z-30' }, // Merkez üst
+  {
+    id: 5,
+    className:
+      'absolute top-[12%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-30',
+  }, // Merkez alt
+  {
+    id: 6,
+    className:
+      'absolute top-[25%] left-[15%] -translate-x-1/2 -translate-y-1/2 z-30',
+  }, // Merkez üst
 ];
 
 // New Lover Spread Position Data
@@ -596,47 +723,77 @@ const NEW_LOVER_POSITIONS_INFO: PositionInfo[] = [
     id: 1,
     title: 'Yakında yeni bir ilişki yaşayacak mıyım?',
     desc: 'Gelecekteki ilişki potansiyelinizi gösterir',
-    description: 'Bu pozisyon, yakın gelecekte yeni bir ilişki yaşayıp yaşamayacağınızı ve bu ilişkinin nasıl başlayacağını gösterir.',
+    description:
+      'Bu pozisyon, yakın gelecekte yeni bir ilişki yaşayıp yaşamayacağınızı ve bu ilişkinin nasıl başlayacağını gösterir.',
   },
   {
     id: 2,
     title: 'Bu kişi hangi burçtan olacak?',
     desc: 'Gelecekteki partnerinizin astrolojik özelliklerini gösterir',
-    description: 'Bu pozisyon, gelecekteki partnerinizin burç özelliklerini ve kişilik yapısını ortaya koyar.',
+    description:
+      'Bu pozisyon, gelecekteki partnerinizin burç özelliklerini ve kişilik yapısını ortaya koyar.',
   },
   {
     id: 3,
     title: 'Birbirimizle uyumlu olacak mıyız?',
     desc: 'İlişkinizdeki uyum ve uyumsuzlukları gösterir',
-    description: 'Bu pozisyon, gelecekteki partnerinizle aranızdaki uyumu, ortak noktaları ve potansiyel zorlukları gösterir.',
+    description:
+      'Bu pozisyon, gelecekteki partnerinizle aranızdaki uyumu, ortak noktaları ve potansiyel zorlukları gösterir.',
   },
   {
     id: 4,
     title: 'Uzun süreli bir ilişki olacak mı?',
     desc: 'İlişkinizin sürekliliğini ve derinliğini gösterir',
-    description: 'Bu pozisyon, gelecekteki ilişkinizin ne kadar süreceğini ve ne kadar derin olacağını gösterir.',
+    description:
+      'Bu pozisyon, gelecekteki ilişkinizin ne kadar süreceğini ve ne kadar derin olacağını gösterir.',
   },
   {
     id: 5,
     title: 'Bu kişi benim ruh eşim olabilir mi?',
     desc: 'Ruhsal bağlantı ve derin aşk potansiyelini gösterir',
-    description: 'Bu pozisyon, gelecekteki partnerinizin ruh eşiniz olup olmadığını ve aranızdaki ruhsal bağı gösterir.',
+    description:
+      'Bu pozisyon, gelecekteki partnerinizin ruh eşiniz olup olmadığını ve aranızdaki ruhsal bağı gösterir.',
   },
   {
     id: 6,
     title: 'Dileğim gerçekleşecek mi?',
     desc: 'Aşk dileğinizin gerçekleşme olasılığını gösterir',
-    description: 'Bu pozisyon, aşk dileğinizin gerçekleşip gerçekleşmeyeceğini ve bunun için ne yapmanız gerektiğini gösterir.',
+    description:
+      'Bu pozisyon, aşk dileğinizin gerçekleşip gerçekleşmeyeceğini ve bunun için ne yapmanız gerektiğini gösterir.',
   },
 ];
 
 const NEW_LOVER_POSITIONS_LAYOUT: PositionLayout[] = [
-  { id: 1, className: 'absolute top-[65%] left-[55%] -translate-x-1/2 -translate-y-1/2 z-20' }, // sağ altta
-  { id: 2, className: 'absolute top-[65%] left-[45%] -translate-x-1/2 -translate-y-1/2 z-20' }, // sol altta
-  { id: 3, className: 'absolute top-[50%] left-[25%] -translate-x-1/2 -translate-y-1/2 -rotate-6 z-20' }, // en sol (hafif yana kayık)
-  { id: 4, className: 'absolute top-[30%] left-[45%] -translate-x-1/2 -translate-y-1/2 z-20' }, // üst sol
-  { id: 5, className: 'absolute top-[30%] left-[55%] -translate-x-1/2 -translate-y-1/2 z-20' }, // üst sağ
-  { id: 6, className: 'absolute top-[50%] left-[75%] -translate-x-1/2 -translate-y-1/2 rotate-6 z-20' }, // en sağ (hafif yana kayık)
+  {
+    id: 1,
+    className:
+      'absolute top-[65%] left-[55%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // sağ altta
+  {
+    id: 2,
+    className:
+      'absolute top-[65%] left-[45%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // sol altta
+  {
+    id: 3,
+    className:
+      'absolute top-[50%] left-[25%] -translate-x-1/2 -translate-y-1/2 -rotate-6 z-20',
+  }, // en sol (hafif yana kayık)
+  {
+    id: 4,
+    className:
+      'absolute top-[30%] left-[45%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // üst sol
+  {
+    id: 5,
+    className:
+      'absolute top-[30%] left-[55%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // üst sağ
+  {
+    id: 6,
+    className:
+      'absolute top-[50%] left-[75%] -translate-x-1/2 -translate-y-1/2 rotate-6 z-20',
+  }, // en sağ (hafif yana kayık)
 ];
 
 // Situation Analysis Spread Position Data
@@ -645,54 +802,89 @@ const SITUATION_ANALYSIS_POSITIONS_INFO: PositionInfo[] = [
     id: 1,
     title: 'Geçmiş ya da Sebepler',
     desc: 'Yaşanan durumun sebepleri, neden şu anda böyle bir durumun yaşandığı ve yapılan tüm hatalar bu kartta belirtilir. Geçmişin değiştirilemez olduğu vurgulanır.',
-    description: 'Yaşanan durumun sebepleri, neden şu anda böyle bir durumun yaşandığı ve yapılan tüm hatalar bu kartta belirtilir. Geçmişin değiştirilemez olduğu vurgulanır.',
+    description:
+      'Yaşanan durumun sebepleri, neden şu anda böyle bir durumun yaşandığı ve yapılan tüm hatalar bu kartta belirtilir. Geçmişin değiştirilemez olduğu vurgulanır.',
   },
   {
     id: 2,
     title: 'Şu Anki Durum',
     desc: 'Şu anda neler yaşandığı, gündemdeki konular ve geçmişin bugüne göre nasıl bir etkisi olduğu belirtilir.',
-    description: 'Şu anda neler yaşandığı, gündemdeki konular ve geçmişin bugüne göre nasıl bir etkisi olduğu belirtilir.',
+    description:
+      'Şu anda neler yaşandığı, gündemdeki konular ve geçmişin bugüne göre nasıl bir etkisi olduğu belirtilir.',
   },
   {
     id: 3,
     title: 'Gizli Etkenler',
     desc: 'Kişinin bilgisi dışında gelişen olaylar, arkasından konuşanlar, gizli işler ve bilinmeyen gerçekler bu kartta gizlidir.',
-    description: 'Kişinin bilgisi dışında gelişen olaylar, arkasından konuşanlar, gizli işler ve bilinmeyen gerçekler bu kartta gizlidir.',
+    description:
+      'Kişinin bilgisi dışında gelişen olaylar, arkasından konuşanlar, gizli işler ve bilinmeyen gerçekler bu kartta gizlidir.',
   },
   {
     id: 4,
     title: 'Merkez Kart',
     desc: 'Açılımın merkezini temsil eder. Durumun merkezindeki kişiyi veya hayatınızdaki en merkezi alanı ifade eder.',
-    description: 'Açılımın merkezini temsil eder. Durumun merkezindeki kişiyi veya hayatınızdaki en merkezi alanı ifade eder.',
+    description:
+      'Açılımın merkezini temsil eder. Durumun merkezindeki kişiyi veya hayatınızdaki en merkezi alanı ifade eder.',
   },
   {
     id: 5,
     title: 'Dış Etkenler',
     desc: 'Farklı kaynaklardan gelecek bilgiler ve geleceğe dair açılar sunar. Dış saldırılar ve olası entrikalara da işaret edebilir.',
-    description: 'Farklı kaynaklardan gelecek bilgiler ve geleceğe dair açılar sunar. Dış saldırılar ve olası entrikalara da işaret edebilir.',
+    description:
+      'Farklı kaynaklardan gelecek bilgiler ve geleceğe dair açılar sunar. Dış saldırılar ve olası entrikalara da işaret edebilir.',
   },
   {
     id: 6,
     title: 'Tavsiye',
     desc: 'Yaşanan durumla ilgili en uygun hareketlerin ne olduğu hakkında bilgi verir. Çözüm veya çıkış yolu sunabileceği belirtilir.',
-    description: 'Yaşanan durumla ilgili en uygun hareketlerin ne olduğu hakkında bilgi verir. Çözüm veya çıkış yolu sunabileceği belirtilir.',
+    description:
+      'Yaşanan durumla ilgili en uygun hareketlerin ne olduğu hakkında bilgi verir. Çözüm veya çıkış yolu sunabileceği belirtilir.',
   },
   {
     id: 7,
     title: 'Olası Gelecek - Sonuç',
     desc: 'Mevcut gidişatın nereye varacağını, olası engelleri veya sürprizleri gösterir. Geleceğin, alınacak kararlara bağlı olarak değişebileceği belirtilir.',
-    description: 'Mevcut gidişatın nereye varacağını, olası engelleri veya sürprizleri gösterir. Geleceğin, alınacak kararlara bağlı olarak değişebileceği belirtilir.',
+    description:
+      'Mevcut gidişatın nereye varacağını, olası engelleri veya sürprizleri gösterir. Geleceğin, alınacak kararlara bağlı olarak değişebileceği belirtilir.',
   },
 ];
 
 const SITUATION_ANALYSIS_POSITIONS_LAYOUT: PositionLayout[] = [
-  { id: 1, className: 'absolute top-[86%] left-[25%] -translate-x-1/2 -translate-y-1/2 z-10' }, // Geçmiş
-  { id: 2, className: 'absolute top-[61%] left-[25%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Şimdi (1 ve 3 ile hafif overlap)
-  { id: 3, className: 'absolute top-[36%] left-[25%] -translate-x-1/2 -translate-y-1/2 z-10' }, // Gelecek
-  { id: 4, className: 'absolute top-[18%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-30' }, // Tavsiye (üstte, 3'ün üstüne biner)
-  { id: 5, className: 'absolute top-[36%] left-[75%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Etkiler
-  { id: 6, className: 'absolute top-[61%] left-[75%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Engeller
-  { id: 7, className: 'absolute top-[86%] left-[75%] -translate-x-1/2 -translate-y-1/2 z-20' }, // Sonuç
+  {
+    id: 1,
+    className:
+      'absolute top-[86%] left-[25%] -translate-x-1/2 -translate-y-1/2 z-10',
+  }, // Geçmiş
+  {
+    id: 2,
+    className:
+      'absolute top-[61%] left-[25%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Şimdi (1 ve 3 ile hafif overlap)
+  {
+    id: 3,
+    className:
+      'absolute top-[36%] left-[25%] -translate-x-1/2 -translate-y-1/2 z-10',
+  }, // Gelecek
+  {
+    id: 4,
+    className:
+      'absolute top-[18%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-30',
+  }, // Tavsiye (üstte, 3'ün üstüne biner)
+  {
+    id: 5,
+    className:
+      'absolute top-[36%] left-[75%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Etkiler
+  {
+    id: 6,
+    className:
+      'absolute top-[61%] left-[75%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Engeller
+  {
+    id: 7,
+    className:
+      'absolute top-[86%] left-[75%] -translate-x-1/2 -translate-y-1/2 z-20',
+  }, // Sonuç
 ];
 
 const DEFAULT_CANVAS_I18N = {
@@ -808,10 +1000,8 @@ export function createTarotConfig(
 
   const namespace = translationNamespace ?? toCamelCase(spreadId);
   const summaryKeyValue = summaryKey ?? `${namespace}Spread`;
-  const supabaseReadingTypeValue =
-    supabaseReadingType ?? namespace;
-  const creditPrefix =
-    creditKeyPrefix ?? toUpperSnakeCase(namespace);
+  const supabaseReadingTypeValue = supabaseReadingType ?? namespace;
+  const creditPrefix = creditKeyPrefix ?? toUpperSnakeCase(namespace);
 
   const formI18nKeys = createFormI18nKeys(namespace);
 

@@ -30,7 +30,14 @@ export default function ReadingHistory({
   const [loading, setLoading] = useState(true);
   const [selectedReading, setSelectedReading] = useState<Reading | null>(null);
   const [filter, setFilter] = useState<
-    'all' | 'tarot' | 'numerology' | 'love' | 'career' | 'general' | 'situation-analysis' | 'problem-solving'
+    | 'all'
+    | 'tarot'
+    | 'numerology'
+    | 'love'
+    | 'career'
+    | 'general'
+    | 'situation-analysis'
+    | 'problem-solving'
   >('all');
 
   useEffect(() => {

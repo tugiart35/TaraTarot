@@ -27,7 +27,6 @@ export default function ReadingDetailModal({
   const theme = detail?.theme ?? 'purple';
   const themeClasses = getThemeClasses(theme);
 
-
   const handleDownload = useCallback(() => {
     const modalNode = document.querySelector('[data-reading-detail-modal]');
     if (!modalNode) {
@@ -77,18 +76,16 @@ export default function ReadingDetailModal({
       maxWidth='xl'
       className='backdrop-blur'
     >
-      <div
-        data-reading-detail-modal
-        className='space-y-8'
-      >
+      <div data-reading-detail-modal className='space-y-8'>
         <header className='space-y-4 rounded-2xl border border-white/10 bg-slate-900/60 p-6 shadow-inner shadow-black/20'>
           <div className='flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between'>
             <div>
               <div className='flex items-center gap-3'>
                 <span className='text-3xl'>{detail.icon}</span>
-                <h2 className='text-xl font-semibold text-slate-100'>{detail.title}</h2>
+                <h2 className='text-xl font-semibold text-slate-100'>
+                  {detail.title}
+                </h2>
               </div>
-             
             </div>
             <span
               className={`inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium ${detail.status.badgeClassName}`}
@@ -105,21 +102,40 @@ export default function ReadingDetailModal({
             />
             <InfoTile
               label={t('readingModal.creditCost', 'Kredi Maliyeti')}
-              value={detail.costCredits ? `${detail.costCredits} ${t('readings.credits', 'kredi')}` : '-'}
+              value={
+                detail.costCredits
+                  ? `${detail.costCredits} ${t('readings.credits', 'kredi')}`
+                  : '-'
+              }
             />
             <div className='rounded-xl border border-white/5 bg-slate-900/40 p-6 shadow-sm shadow-black/10'>
-              <p className='text-xs uppercase tracking-wide text-slate-400'>{t('readings.formatLabel', 'Okuma Formatı')}</p>
+              <p className='text-xs uppercase tracking-wide text-slate-400'>
+                {t('readings.formatLabel', 'Okuma Formatı')}
+              </p>
               <div className='mt-1'>
-                <span className={`inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium ${
-                  detail.formatLabel.includes('Sesli') || detail.formatLabel.includes('Sesli Okuma') || detail.formatLabel.includes('Audio')
-                    ? 'bg-blue-500/20 text-blue-300 border border-blue-500/30' 
-                    : detail.formatLabel.includes('Yazılı') || detail.formatLabel.includes('Yazılı Okuma') || detail.formatLabel.includes('Written')
-                    ? 'bg-green-500/20 text-green-300 border border-green-500/30'
-                    : 'bg-purple-500/20 text-purple-300 border border-purple-500/30'
-                }`}>
+                <span
+                  className={`inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium ${
+                    detail.formatLabel.includes('Sesli') ||
+                    detail.formatLabel.includes('Sesli Okuma') ||
+                    detail.formatLabel.includes('Audio')
+                      ? 'bg-blue-500/20 text-blue-300 border border-blue-500/30'
+                      : detail.formatLabel.includes('Yazılı') ||
+                          detail.formatLabel.includes('Yazılı Okuma') ||
+                          detail.formatLabel.includes('Written')
+                        ? 'bg-green-500/20 text-green-300 border border-green-500/30'
+                        : 'bg-purple-500/20 text-purple-300 border border-purple-500/30'
+                  }`}
+                >
                   <span>
-                    {detail.formatLabel.includes('Sesli') || detail.formatLabel.includes('Sesli Okuma') || detail.formatLabel.includes('Audio') ? '🎵' : 
-                     detail.formatLabel.includes('Yazılı') || detail.formatLabel.includes('Yazılı Okuma') || detail.formatLabel.includes('Written') ? '📝' : '✨'}
+                    {detail.formatLabel.includes('Sesli') ||
+                    detail.formatLabel.includes('Sesli Okuma') ||
+                    detail.formatLabel.includes('Audio')
+                      ? '🎵'
+                      : detail.formatLabel.includes('Yazılı') ||
+                          detail.formatLabel.includes('Yazılı Okuma') ||
+                          detail.formatLabel.includes('Written')
+                        ? '📝'
+                        : '✨'}
                   </span>
                   {detail.formatLabel}
                 </span>
@@ -127,7 +143,8 @@ export default function ReadingDetailModal({
             </div>
           </div>
         </header>
-        {(detail.questions.personalInfo.length > 0 || detail.questions.prompts.length > 0) && (
+        {(detail.questions.personalInfo.length > 0 ||
+          detail.questions.prompts.length > 0) && (
           <section className='space-y-3'>
             <h3 className={`${themeClasses.titleText} text-lg font-semibold`}>
               {t('readingModal.questionsAnswers', 'Sorular ve Cevaplar')}
@@ -135,7 +152,11 @@ export default function ReadingDetailModal({
 
             <div className='grid gap-4 md:grid-cols-2'>
               {detail.questions.personalInfo.map(entry => (
-                <InfoTile key={entry.label} label={entry.label} value={entry.value} />
+                <InfoTile
+                  key={entry.label}
+                  label={entry.label}
+                  value={entry.value}
+                />
               ))}
             </div>
 
@@ -157,11 +178,17 @@ export default function ReadingDetailModal({
           <section className='space-y-4'>
             <div className='flex items-center justify-between'>
               <div className='space-y-2'>
-                <h3 className={`${themeClasses.titleText} text-lg font-semibold`}>
+                <h3
+                  className={`${themeClasses.titleText} text-lg font-semibold`}
+                >
                   {detail.spreadName}
                 </h3>
                 <p className='text-sm text-slate-300 leading-relaxed'>
-                  {detail.normalizedType && t(`spreads.${detail.normalizedType}.description`, 'Kartların rehberliği')}
+                  {detail.normalizedType &&
+                    t(
+                      `spreads.${detail.normalizedType}.description`,
+                      'Kartların rehberliği'
+                    )}
                 </p>
               </div>
             </div>
@@ -178,20 +205,18 @@ export default function ReadingDetailModal({
                   keywords={cardItem.keywords}
                   context={cardItem.context}
                   theme={theme}
-                  
                 />
               ))}
             </div>
           </section>
         )}
 
-        
-
-        
-
         <footer className='flex flex-col gap-3 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between'>
           <div className='text-xs text-slate-400'>
-            {t('readingModal.mysticNotes', 'Kişisel notlarınızı kaydetmek için bu okumanın PDF kopyasını indirebilirsiniz.')}
+            {t(
+              'readingModal.mysticNotes',
+              'Kişisel notlarınızı kaydetmek için bu okumanın PDF kopyasını indirebilirsiniz.'
+            )}
           </div>
           <PDFExport onDownload={handleDownload} />
         </footer>
@@ -247,7 +272,6 @@ function CardInsight({
 
   const resolvedTheme = themeMap[theme] ?? 'default';
 
-
   return (
     <div className='flex flex-col gap-4 rounded-2xl border border-white/10 bg-slate-900/40 p-4 shadow-sm shadow-black/10'>
       <div className='flex items-start gap-4'>
@@ -268,40 +292,50 @@ function CardInsight({
           </span>
         </div>
       </div>
-      
+
       {/* Context bilgisi */}
       {context && (
         <div className='mt-3 p-3 rounded-lg bg-slate-800/50 border border-slate-700/50'>
           <div className='flex items-start gap-2'>
             <div className='w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0'></div>
             <div>
-              <p className='text-xs uppercase tracking-wide text-blue-300 font-medium mb-1'>Bağlam</p>
-              <p className='text-sm text-slate-200 leading-relaxed'>{context}</p>
+              <p className='text-xs uppercase tracking-wide text-blue-300 font-medium mb-1'>
+                Bağlam
+              </p>
+              <p className='text-sm text-slate-200 leading-relaxed'>
+                {context}
+              </p>
             </div>
           </div>
         </div>
       )}
-      
+
       {/* Ana anlam */}
       {meaning && (
         <div className='mt-3 p-3 rounded-lg bg-slate-800/50 border border-slate-700/50'>
           <div className='flex items-start gap-2'>
             <div className='w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0'></div>
             <div>
-              <p className='text-xs uppercase tracking-wide text-purple-300 font-medium mb-1'>Anlam</p>
-              <p className='text-sm text-slate-200 leading-relaxed'>{meaning}</p>
+              <p className='text-xs uppercase tracking-wide text-purple-300 font-medium mb-1'>
+                Anlam
+              </p>
+              <p className='text-sm text-slate-200 leading-relaxed'>
+                {meaning}
+              </p>
             </div>
           </div>
         </div>
       )}
-      
+
       {/* Keywords */}
       {keywords && keywords.length > 0 && (
         <div className='mt-3 p-3 rounded-lg bg-slate-800/50 border border-slate-700/50'>
           <div className='flex items-start gap-2'>
             <div className='w-2 h-2 bg-amber-400 rounded-full mt-2 flex-shrink-0'></div>
             <div className='flex-1'>
-              <p className='text-xs uppercase tracking-wide text-amber-300 font-medium mb-2'>Anahtar Kelimeler</p>
+              <p className='text-xs uppercase tracking-wide text-amber-300 font-medium mb-2'>
+                Anahtar Kelimeler
+              </p>
               <div className='flex flex-wrap gap-2'>
                 {keywords.map((keyword, index) => (
                   <span

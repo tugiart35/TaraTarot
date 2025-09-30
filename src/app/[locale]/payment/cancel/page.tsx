@@ -4,12 +4,14 @@
 
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/hooks/auth/useAuth';
+import { useTranslations } from '@/hooks/useTranslations';
 import { useEffect } from 'react';
 import { XCircle, ArrowLeft, CreditCard } from 'lucide-react';
 import { PaymentErrorBoundary } from '@/components/payment/PaymentErrorBoundary';
 
 export default function PaymentCancelPage() {
   const { user } = useAuth();
+  const { t } = useTranslations();
   const router = useRouter();
 
   useEffect(() => {
@@ -34,11 +36,13 @@ export default function PaymentCancelPage() {
             <div className='mb-6'>
               <XCircle className='h-16 w-16 text-orange-400 mx-auto mb-4' />
               <h1 className='text-2xl font-bold text-text-celestial mb-2'>
-                Ödeme İptal Edildi
+                {t('messages.messages.payment.cancel.title')}
               </h1>
               <p className='text-text-mystic mb-4'>
-                Ödeme işlemi iptal edildi. Kredi paketinizi tekrar satın
-                alabilirsiniz.
+                {t(
+                  'messages.messages.payment.cancel.description',
+                  'Ödeme işlemi iptal edildi. Kredi paketinizi tekrar satın alabilirsiniz.'
+                )}
               </p>
             </div>
 
@@ -48,7 +52,9 @@ export default function PaymentCancelPage() {
                 className='w-full btn btn-primary flex items-center justify-center space-x-2'
               >
                 <CreditCard className='h-4 w-4' />
-                <span>Kredi Paketleri</span>
+                <span>
+                  {t('messages.dashboard.packages.title', 'Kredi Paketleri')}
+                </span>
               </button>
 
               <button
@@ -56,7 +62,12 @@ export default function PaymentCancelPage() {
                 className='w-full btn btn-secondary flex items-center justify-center space-x-2'
               >
                 <ArrowLeft className='h-4 w-4' />
-                <span>Dashboard'a Dön</span>
+                <span>
+                  {t(
+                    'messages.payment.cancel.goToDashboard',
+                    "Dashboard'a Dön"
+                  )}
+                </span>
               </button>
             </div>
           </div>

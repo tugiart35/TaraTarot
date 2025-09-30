@@ -8,6 +8,14 @@ import { useState, useEffect } from 'react';
 import BottomNavigation from '@/features/shared/layout/BottomNavigation';
 import { calculateNumerology } from '@/lib/numerology/calculators';
 import { NumerologyType, NumerologyResult } from '@/lib/numerology/types';
+import {
+  sanitizeNumerologyInput,
+  validateDateInput,
+  validateNameInput,
+  sanitizeForDisplay,
+  checkRateLimit,
+} from '@/utils/security';
+import { useTranslations } from '@/hooks/useTranslations';
 
 interface NumerologyPageProps {
   params: Promise<{
@@ -16,6 +24,7 @@ interface NumerologyPageProps {
 }
 
 export default function NumerologyPage({ params }: NumerologyPageProps) {
+  const { t } = useTranslations();
   const [resolvedParams, setResolvedParams] = useState<{
     locale: string;
   } | null>(null);
@@ -42,6 +51,7 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
   const [result, setResult] = useState<NumerologyResult | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [securityError, setSecurityError] = useState<string | null>(null);
 
   useEffect(() => {
     const resolveParams = async () => {
@@ -56,14 +66,31 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
       <div className='min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white flex items-center justify-center'>
         <div className='text-center'>
           <div className='w-16 h-16 border-4 border-purple-500 border-t-transparent rounded-full animate-spin mx-auto mb-4'></div>
-          <p className='text-gray-300'>Yükleniyor...</p>
+          <p className='text-gray-300'>{t('numerology.page.loading')}</p>
         </div>
       </div>
     );
   }
 
   const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    // Güvenlik: Input sanitization
+    const sanitizedValue = sanitizeNumerologyInput(value);
+
+    // Validation kontrolü
+    if (field === 'birthDate' || field === 'targetDate') {
+      if (sanitizedValue && !validateDateInput(sanitizedValue)) {
+        setSecurityError(t('numerology.page.errors.invalidDateFormat'));
+        return;
+      }
+    } else if (field === 'fullName') {
+      if (sanitizedValue && !validateNameInput(sanitizedValue)) {
+        setSecurityError(t('numerology.page.errors.invalidNameFormat'));
+        return;
+      }
+    }
+
+    setSecurityError(null);
+    setFormData(prev => ({ ...prev, [field]: sanitizedValue }));
   };
 
   const handlePersonInputChange = (
@@ -71,17 +98,41 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
     field: 'fullName' | 'birthDate',
     value: string
   ) => {
+    // Güvenlik: Input sanitization
+    const sanitizedValue = sanitizeNumerologyInput(value);
+
+    // Validation kontrolü
+    if (field === 'birthDate') {
+      if (sanitizedValue && !validateDateInput(sanitizedValue)) {
+        setSecurityError(t('numerology.page.errors.invalidDateFormat'));
+        return;
+      }
+    } else if (field === 'fullName') {
+      if (sanitizedValue && !validateNameInput(sanitizedValue)) {
+        setSecurityError(t('numerology.page.errors.invalidNameFormat'));
+        return;
+      }
+    }
+
+    setSecurityError(null);
     setFormData(prev => ({
       ...prev,
-      [person]: { ...prev[person], [field]: value },
+      [person]: { ...prev[person], [field]: sanitizedValue },
     }));
   };
 
   const handleCalculate = async () => {
     setLoading(true);
     setError(null);
+    setSecurityError(null);
 
     try {
+      // Rate limiting kontrolü
+      if (!checkRateLimit('numerology-form', 10, 60000)) {
+        setError(t('numerology.page.errors.rateLimitExceeded'));
+        setLoading(false);
+        return;
+      }
       // Gerekli alanları kontrol et
       const input: any = {};
 
@@ -140,7 +191,7 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
           birthDate: formData.personB.birthDate,
         };
       } else {
-        setError('Lütfen gerekli alanları doldurun');
+        setError(t('numerology.page.errors.requiredFields'));
         setLoading(false);
         return;
       }
@@ -151,29 +202,72 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
         input,
         resolvedParams.locale
       );
-      setResult(calculatedResult);
+
+      // Sonuçları güvenli hale getir
+      const sanitizedResult = {
+        ...calculatedResult,
+        description: sanitizeForDisplay(calculatedResult.description),
+        compatibilityNotes:
+          calculatedResult.compatibilityNotes?.map(note =>
+            sanitizeForDisplay(note)
+          ) || [],
+      };
+
+      setResult(sanitizedResult);
       setShowModal(true);
     } catch (err) {
-      setError('Hesaplama hatası oluştu');
+      setError(t('numerology.page.errors.calculationError'));
     } finally {
       setLoading(false);
     }
   };
 
   const tabs = [
-    { id: 'life-path' as const, label: 'Yaşam Yolu', icon: '🛤️' },
-    { id: 'expression-destiny' as const, label: 'İfade/Kader', icon: '💫' },
-    { id: 'soul-urge' as const, label: 'Ruh Arzusu', icon: '💖' },
-    { id: 'personality' as const, label: 'Kişilik', icon: '👤' },
-    { id: 'birthday-number' as const, label: 'Doğum Günü', icon: '🎂' },
-    { id: 'maturity' as const, label: 'Olgunluk', icon: '🌳' },
+    {
+      id: 'life-path' as const,
+      label: t('numerology.page.tabs.lifePath'),
+      icon: '🛤️',
+    },
+    {
+      id: 'expression-destiny' as const,
+      label: t('numerology.page.tabs.expressionDestiny'),
+      icon: '💫',
+    },
+    {
+      id: 'soul-urge' as const,
+      label: t('numerology.page.tabs.soulUrge'),
+      icon: '💖',
+    },
+    {
+      id: 'personality' as const,
+      label: t('numerology.page.tabs.personality'),
+      icon: '👤',
+    },
+    {
+      id: 'birthday-number' as const,
+      label: t('numerology.page.tabs.birthdayNumber'),
+      icon: '🎂',
+    },
+    {
+      id: 'maturity' as const,
+      label: t('numerology.page.tabs.maturity'),
+      icon: '🌳',
+    },
     {
       id: 'pinnacles-challenges' as const,
-      label: 'Zirveler/Zorluklar',
+      label: t('numerology.page.tabs.pinnaclesChallenges'),
       icon: '⛰️',
     },
-    { id: 'personal-cycles' as const, label: 'Kişisel Döngüler', icon: '🔄' },
-    { id: 'compatibility' as const, label: 'Uyum Analizi', icon: '💕' },
+    {
+      id: 'personal-cycles' as const,
+      label: t('numerology.page.tabs.personalCycles'),
+      icon: '🔄',
+    },
+    {
+      id: 'compatibility' as const,
+      label: t('numerology.page.tabs.compatibility'),
+      icon: '💕',
+    },
   ];
 
   return (
@@ -189,7 +283,7 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
         {/* Hero Section */}
         <div className='text-center mb-12'>
           <h1 className='text-6xl font-black mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent drop-shadow-2xl'>
-            Numeroloji
+            {t('numerology.page.title')}
           </h1>
           <div className='flex justify-center space-x-3 mb-8'>
             <div className='w-3 h-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-bounce'></div>
@@ -203,13 +297,7 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
             ></div>
           </div>
           <p className='text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed mb-8'>
-            Sayıların gizemli dünyasında yolculuğa çıkın. İsmin ve doğum tarihin
-            ile
-            <span className='text-purple-400 font-semibold'>
-              {' '}
-              kişiliğinizin derinliklerini
-            </span>{' '}
-            keşfedin.
+            {t('numerology.page.subtitle')}
           </p>
         </div>
 
@@ -279,23 +367,23 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
               </div>
               <p className='text-gray-300 text-sm max-w-md mx-auto'>
                 {activeTab === 'life-path' &&
-                  'Doğum tarihinizden yaşam yolunuzu keşfedin'}
+                  t('numerology.page.descriptions.lifePath')}
                 {activeTab === 'expression-destiny' &&
-                  'İsminizden doğal yeteneklerinizi öğrenin'}
+                  t('numerology.page.descriptions.expressionDestiny')}
                 {activeTab === 'soul-urge' &&
-                  'İç motivasyonlarınızı ve ruh arzularınızı keşfedin'}
+                  t('numerology.page.descriptions.soulUrge')}
                 {activeTab === 'personality' &&
-                  'Dış dünyaya nasıl göründüğünüzü öğrenin'}
+                  t('numerology.page.descriptions.personality')}
                 {activeTab === 'birthday-number' &&
-                  'Doğuştan hediyelerinizi keşfedin'}
+                  t('numerology.page.descriptions.birthdayNumber')}
                 {activeTab === 'maturity' &&
-                  '35+ yaş döneminizdeki temaları öğrenin'}
+                  t('numerology.page.descriptions.maturity')}
                 {activeTab === 'pinnacles-challenges' &&
-                  'Hayat dönemlerinizi ve zorluklarınızı keşfedin'}
+                  t('numerology.page.descriptions.pinnaclesChallenges')}
                 {activeTab === 'personal-cycles' &&
-                  'Yıllık, aylık ve günlük enerji takviminizi görün'}
+                  t('numerology.page.descriptions.personalCycles')}
                 {activeTab === 'compatibility' &&
-                  'İki kişi arasındaki uyumu analiz edin'}
+                  t('numerology.page.descriptions.compatibility')}
               </p>
             </div>
 
@@ -305,7 +393,7 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
                 <div className='group'>
                   <label className='flex text-sm font-semibold mb-3 text-gray-200 items-center gap-2'>
                     <span className='text-lg'>📅</span>
-                    Doğum Tarihi (YYYY-AA-GG)
+                    {t('numerology.page.form.birthDate')}
                   </label>
                   <div className='relative'>
                     <input
@@ -329,7 +417,7 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
                 <div className='group'>
                   <label className='flex text-sm font-semibold mb-3 text-gray-200 items-center gap-2'>
                     <span className='text-lg'>👤</span>
-                    Ad Soyad
+                    {t('numerology.page.form.fullName')}
                   </label>
                   <div className='relative'>
                     <input
@@ -338,7 +426,7 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
                       onChange={e =>
                         handleInputChange('fullName', e.target.value)
                       }
-                      placeholder='Örn: Ahmet Yılmaz'
+                      placeholder={t('numerology.page.form.namePlaceholder')}
                       className='w-full px-4 py-4 rounded-xl bg-white/20 border border-white/30 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent transition-all duration-300 text-white placeholder-gray-400 hover:bg-white/25'
                       required
                     />
@@ -351,7 +439,7 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
               {activeTab === 'birthday-number' && (
                 <div>
                   <label className='block text-sm font-semibold mb-3 text-gray-200'>
-                    📅 Doğum Tarihi (YYYY-AA-GG)
+                    📅 {t('numerology.page.form.birthDate')}
                   </label>
                   <input
                     type='date'
@@ -370,7 +458,7 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
                 <div className='space-y-4'>
                   <div>
                     <label className='block text-sm font-semibold mb-3 text-gray-200'>
-                      📅 Doğum Tarihi (YYYY-AA-GG)
+                      📅 {t('numerology.page.form.birthDate')}
                     </label>
                     <input
                       type='date'
@@ -384,7 +472,7 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
                   </div>
                   <div>
                     <label className='block text-sm font-semibold mb-3 text-gray-200'>
-                      👤 Ad Soyad
+                      👤 {t('numerology.page.form.fullName')}
                     </label>
                     <input
                       type='text'
@@ -392,7 +480,7 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
                       onChange={e =>
                         handleInputChange('fullName', e.target.value)
                       }
-                      placeholder='Örn: Ahmet Yılmaz'
+                      placeholder={t('numerology.page.form.namePlaceholder')}
                       className='w-full px-4 py-3 rounded-xl bg-white/20 border border-white/30 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent transition-all duration-300 text-white placeholder-gray-400'
                       required
                     />
@@ -404,7 +492,7 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
               {activeTab === 'pinnacles-challenges' && (
                 <div>
                   <label className='block text-sm font-semibold mb-3 text-gray-200'>
-                    📅 Doğum Tarihi (YYYY-AA-GG)
+                    📅 {t('numerology.page.form.birthDate')}
                   </label>
                   <input
                     type='date'
@@ -423,7 +511,7 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
                 <div className='space-y-4'>
                   <div>
                     <label className='block text-sm font-semibold mb-3 text-gray-200'>
-                      📅 Doğum Tarihi (YYYY-AA-GG)
+                      📅 {t('numerology.page.form.birthDate')}
                     </label>
                     <input
                       type='date'
@@ -437,7 +525,7 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
                   </div>
                   <div>
                     <label className='block text-sm font-semibold mb-3 text-gray-200'>
-                      🎯 Hedef Tarih (YYYY-AA-GG)
+                      🎯 {t('numerology.page.form.targetDate')}
                     </label>
                     <input
                       type='date'
@@ -457,12 +545,12 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
                 <div className='space-y-6'>
                   <div className='bg-white/5 rounded-xl p-4'>
                     <h4 className='text-lg font-semibold text-purple-400 mb-4'>
-                      👤 1. Kişi
+                      👤 {t('numerology.page.form.person1')}
                     </h4>
                     <div className='space-y-4'>
                       <div>
                         <label className='block text-sm font-semibold mb-2 text-gray-200'>
-                          Ad Soyad
+                          {t('numerology.page.form.fullName')}
                         </label>
                         <input
                           type='text'
@@ -474,14 +562,16 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
                               e.target.value
                             )
                           }
-                          placeholder='Örn: Ahmet Yılmaz'
+                          placeholder={t(
+                            'numerology.page.form.namePlaceholder'
+                          )}
                           className='w-full px-4 py-3 rounded-xl bg-white/20 border border-white/30 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent transition-all duration-300 text-white placeholder-gray-400'
                           required
                         />
                       </div>
                       <div>
                         <label className='block text-sm font-semibold mb-2 text-gray-200'>
-                          Doğum Tarihi
+                          {t('numerology.page.form.birthDate')}
                         </label>
                         <input
                           type='date'
@@ -502,12 +592,12 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
 
                   <div className='bg-white/5 rounded-xl p-4'>
                     <h4 className='text-lg font-semibold text-pink-400 mb-4'>
-                      👤 2. Kişi
+                      👤 {t('numerology.page.form.person2')}
                     </h4>
                     <div className='space-y-4'>
                       <div>
                         <label className='block text-sm font-semibold mb-2 text-gray-200'>
-                          Ad Soyad
+                          {t('numerology.page.form.fullName')}
                         </label>
                         <input
                           type='text'
@@ -519,14 +609,16 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
                               e.target.value
                             )
                           }
-                          placeholder='Örn: Ayşe Demir'
+                          placeholder={t(
+                            'numerology.page.form.namePlaceholder2'
+                          )}
                           className='w-full px-4 py-3 rounded-xl bg-white/20 border border-white/30 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent transition-all duration-300 text-white placeholder-gray-400'
                           required
                         />
                       </div>
                       <div>
                         <label className='block text-sm font-semibold mb-2 text-gray-200'>
-                          Doğum Tarihi
+                          {t('numerology.page.form.birthDate')}
                         </label>
                         <input
                           type='date'
@@ -543,6 +635,18 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
                         />
                       </div>
                     </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Security Error Display */}
+              {securityError && (
+                <div className='mb-4 p-4 bg-red-500/20 border border-red-500/30 rounded-xl'>
+                  <div className='flex items-center gap-2'>
+                    <span className='text-red-400 text-lg'>⚠️</span>
+                    <p className='text-red-300 text-sm font-medium'>
+                      {securityError}
+                    </p>
                   </div>
                 </div>
               )}
@@ -565,14 +669,18 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
                     {loading ? (
                       <>
                         <div className='animate-spin rounded-full h-6 w-6 border-2 border-white border-t-transparent'></div>
-                        <span className='text-lg'>Hesaplanıyor...</span>
+                        <span className='text-lg'>
+                          {t('numerology.page.calculating')}
+                        </span>
                       </>
                     ) : (
                       <>
                         <span className='text-2xl group-hover:scale-110 transition-transform duration-300'>
                           🔮
                         </span>
-                        <span className='text-lg'>Hesapla</span>
+                        <span className='text-lg'>
+                          {t('numerology.page.calculate')}
+                        </span>
                         <div className='absolute -top-1 -right-1 w-3 h-3 bg-yellow-400 rounded-full animate-pulse'></div>
                       </>
                     )}
@@ -599,9 +707,12 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
                   </div>
                   <div>
                     <h3 className='text-xl font-bold text-white'>
-                      {tabs.find(tab => tab.id === activeTab)?.label} Sonucu
+                      {tabs.find(tab => tab.id === activeTab)?.label}{' '}
+                      {t('numerology.page.results.title')}
                     </h3>
-                    <p className='text-sm text-gray-400'>Numeroloji Analizi</p>
+                    <p className='text-sm text-gray-400'>
+                      {t('numerology.page.results.subtitle')}
+                    </p>
                   </div>
                 </div>
                 <button
@@ -633,7 +744,7 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
                   {result.isMasterNumber && (
                     <div className='inline-flex items-center gap-2 px-4 py-2 bg-yellow-400/20 rounded-full'>
                       <span className='text-yellow-400 text-sm font-semibold'>
-                        ✨ Master Sayı
+                        ✨ {t('numerology.page.results.masterNumber')}
                       </span>
                     </div>
                   )}
@@ -643,7 +754,9 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
                 <div className='bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10'>
                   <div className='flex items-center gap-2 mb-3'>
                     <span className='text-lg'>📖</span>
-                    <h4 className='text-white font-semibold'>Açıklama</h4>
+                    <h4 className='text-white font-semibold'>
+                      {t('numerology.page.results.description')}
+                    </h4>
                   </div>
                   <p className='text-gray-300 text-sm leading-relaxed whitespace-pre-line'>
                     {result.description}
@@ -652,7 +765,9 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
                 {/* Special Results */}
                 {result.pinnacles && (
                   <div className='bg-gray-800 rounded-lg p-4'>
-                    <h4 className='text-white font-semibold mb-2'>Zirveler</h4>
+                    <h4 className='text-white font-semibold mb-2'>
+                      {t('numerology.page.results.pinnacles')}
+                    </h4>
                     <div className='grid grid-cols-2 gap-2'>
                       {result.pinnacles.map((pinnacle, index) => (
                         <div key={index} className='text-center'>
@@ -670,7 +785,9 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
 
                 {result.challenges && (
                   <div className='bg-gray-800 rounded-lg p-4'>
-                    <h4 className='text-white font-semibold mb-2'>Zorluklar</h4>
+                    <h4 className='text-white font-semibold mb-2'>
+                      {t('numerology.page.results.challenges')}
+                    </h4>
                     <div className='grid grid-cols-2 gap-2'>
                       {result.challenges.map((challenge, index) => (
                         <div key={index} className='text-center'>
@@ -689,26 +806,32 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
                 {result.personalYear && (
                   <div className='bg-gray-800 rounded-lg p-4'>
                     <h4 className='text-white font-semibold mb-2'>
-                      Kişisel Döngüler
+                      {t('numerology.page.results.personalCycles')}
                     </h4>
                     <div className='grid grid-cols-3 gap-2 text-center'>
                       <div>
                         <div className='text-lg font-bold text-blue-400'>
                           {result.personalYear}
                         </div>
-                        <div className='text-xs text-gray-400'>Yıl</div>
+                        <div className='text-xs text-gray-400'>
+                          {t('numerology.page.results.year')}
+                        </div>
                       </div>
                       <div>
                         <div className='text-lg font-bold text-green-400'>
                           {result.personalMonth}
                         </div>
-                        <div className='text-xs text-gray-400'>Ay</div>
+                        <div className='text-xs text-gray-400'>
+                          {t('numerology.page.results.month')}
+                        </div>
                       </div>
                       <div>
                         <div className='text-lg font-bold text-yellow-400'>
                           {result.personalDay}
                         </div>
-                        <div className='text-xs text-gray-400'>Gün</div>
+                        <div className='text-xs text-gray-400'>
+                          {t('numerology.page.results.day')}
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -717,13 +840,15 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
                 {result.compatibilityScore && (
                   <div className='bg-gray-800 rounded-lg p-4'>
                     <h4 className='text-white font-semibold mb-2'>
-                      Uyum Analizi
+                      {t('numerology.page.results.compatibility')}
                     </h4>
                     <div className='text-center mb-2'>
                       <div className='text-3xl font-bold text-pink-400'>
                         {result.compatibilityScore}/100
                       </div>
-                      <div className='text-sm text-gray-400'>Uyum Skoru</div>
+                      <div className='text-sm text-gray-400'>
+                        {t('numerology.page.results.compatibilityScore')}
+                      </div>
                     </div>
                     {result.compatibilityNotes && (
                       <div className='text-sm text-gray-300'>
@@ -746,7 +871,7 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
                     <span className='text-lg group-hover:scale-110 transition-transform duration-300'>
                       ✨
                     </span>
-                    <span>Kapat</span>
+                    <span>{t('numerology.page.close')}</span>
                   </div>
                 </button>
               </div>
@@ -767,7 +892,7 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
                 <div className='absolute -top-1 -right-1 w-6 h-6 bg-yellow-400 rounded-full animate-pulse'></div>
               </div>
               <h3 className='text-2xl font-bold text-white mb-3'>
-                Hata Oluştu
+                {t('numerology.page.errors.calculationError')}
               </h3>
               <p className='text-gray-300 mb-6 leading-relaxed'>{error}</p>
               <button
@@ -778,7 +903,7 @@ export default function NumerologyPage({ params }: NumerologyPageProps) {
                   <span className='text-lg group-hover:scale-110 transition-transform duration-300'>
                     ✓
                   </span>
-                  <span>Tamam</span>
+                  <span>{t('numerology.page.ok')}</span>
                 </div>
               </button>
             </div>

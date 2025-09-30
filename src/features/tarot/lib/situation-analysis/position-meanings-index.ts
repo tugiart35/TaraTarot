@@ -162,7 +162,7 @@ export function getSituationAnalysisMeaningByCardAndPosition(
     original: card.nameTr,
     originalName: card.name,
     mapped: englishCardName,
-    position: position
+    position: position,
   });
 
   // Pozisyon özel anlamları kontrol et
@@ -203,7 +203,7 @@ export function getSituationAnalysisMeaningByCardAndPosition(
     console.log('✅ Situation Analysis: Found position meaning for', {
       cardName: card.nameTr,
       position: position,
-      meaningId: positionMeaning.id
+      meaningId: positionMeaning.id,
     });
     const result = {
       ...positionMeaning,
@@ -238,7 +238,7 @@ export function getSituationAnalysisMeaningByCardAndPosition(
   console.log('⚠️ Situation Analysis: Using fallback meaning for', {
     cardName: card.nameTr,
     position: position,
-    meaningPreview: fallbackResult.upright.substring(0, 50) + '...'
+    meaningPreview: fallbackResult.upright.substring(0, 50) + '...',
   });
   return fallbackResult;
 }

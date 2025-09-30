@@ -1,12 +1,10 @@
 'use client';
 
 import type { TarotCard } from '@/types/tarot';
-import type { CardMeaningData } from '@/types/ui';
 import { createTarotReadingComponent } from '@/features/tarot/shared/components';
 import { createCareerConfig } from '@/features/tarot/shared/config';
-import { 
+import {
   getCareerMeaningByCardAndPosition,
-  type CareerPositionMeaning 
 } from '@/features/tarot/lib/career/position-meanings-index';
 
 const CareerReading = createTarotReadingComponent({
@@ -22,7 +20,11 @@ const CareerReading = createTarotReadingComponent({
       return '';
     }
 
-    const meaning = getCareerMeaningByCardAndPosition(card, position, isReversed);
+    const meaning = getCareerMeaningByCardAndPosition(
+      card,
+      position,
+      isReversed
+    );
 
     if (!meaning) {
       return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
@@ -32,7 +34,7 @@ const CareerReading = createTarotReadingComponent({
     return {
       interpretation: isReversed ? meaning.reversed : meaning.upright,
       context: meaning.context,
-      keywords: meaning.keywords || []
+      keywords: meaning.keywords || [],
     };
   },
 });

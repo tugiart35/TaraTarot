@@ -23,7 +23,7 @@ export default function CreditPackages({
     <div className='mb-8'>
       <div className='flex items-center justify-between mb-6'>
         <h2 className='text-heading-2 text-gold'>
-          {translate('dashboard.creditPackages')}
+          {translate('dashboard.creditPackages', 'Kredi Paketleri')}
         </h2>
         {/* Tüm paketleri gör linki */}
         <Link
