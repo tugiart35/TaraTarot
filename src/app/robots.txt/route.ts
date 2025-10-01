@@ -1,4 +1,4 @@
-import { MetadataRoute } from 'next'
+// robots.txt route handler
 
 export async function GET(): Promise<Response> {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://busbuskimki.com'
