@@ -5,43 +5,30 @@
  * Bundle size'ı optimize eder ve performansı artırır.
  */
 
-import dynamic from 'next/dynamic';
-import { CardSkeleton } from '@/components/shared/ui/LoadingSpinner';
 
-// Lazy load XLSX (~200KB)
-export const XlsxLazy = dynamic(
-  () => import('xlsx').then(mod => ({
-    default: mod,
-  })),
-  {
-    loading: () => (
-      <CardSkeleton>
-        <div className="text-center text-gray-500">
-          📊 Excel Utils yükleniyor...
-        </div>
-      </CardSkeleton>
-    ),
-    ssr: false,
-  }
-);
+// Lazy load XLSX (~200KB) - Promise-based approach
+export const loadXlsx = () => import('xlsx');
 
 // Lazy load specific XLSX functions
-export const XlsxUtilsLazy = dynamic(
-  () => import('xlsx').then(mod => ({
-    default: mod.utils,
-  })),
-  {
-    loading: () => <CardSkeleton />,
-    ssr: false,
-  }
-);
+export const loadXlsxUtils = () => import('xlsx').then(mod => mod.utils);
 
-export const XlsxWorkbookLazy = dynamic(
-  () => import('xlsx').then(mod => ({
-    default: mod.Workbook,
-  })),
-  {
-    loading: () => <CardSkeleton />,
-    ssr: false,
+// XLSX doesn't have a Workbook export, use the main module
+export const loadXlsxWorkbook = () => import('xlsx');
+
+// Lazy load XLSX with proper error handling
+export const loadXlsxLazy = async () => {
+  try {
+    const xlsx = await import('xlsx');
+    return xlsx;
+  } catch (error) {
+    console.error('XLSX yüklenirken hata:', error);
+    throw error;
   }
+};
+
+// Loading component for Excel operations
+export const ExcelLoadingComponent = () => (
+  <div className="text-center text-gray-500">
+    📊 Excel Utils yükleniyor...
+  </div>
 );

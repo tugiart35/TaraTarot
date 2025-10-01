@@ -31,27 +31,33 @@ import {
   getClientIP,
   type GeolocationData,
 } from '@/lib/utils/geolocation';
-import { RateLimiter } from '@/lib/utils/rate-limiting';
 import { determineLocale } from '@/lib/utils/locale-utils';
 import { GeolocationCORS } from '@/lib/api/geolocation-cors';
 import { GeolocationErrorResponse } from '@/lib/api/geolocation-responses';
 import { ApiBase } from '@/lib/api/shared/api-base';
 import { AuthSecurity } from '@/lib/auth/auth-security';
 
-// Rate limiting constants
-const RATE_LIMIT = 10; // Dakikada 10 istek
-const RATE_WINDOW = 60 * 1000; // 1 dakika
+// Rate limiting için AuthSecurity kullanılıyor
 
 // GET endpoint - IP tabanlı coğrafi konum tespiti
 export async function GET(request: NextRequest) {
-  // Rate limiting kontrolü using ApiBase
-  const rateLimitResponse = ApiBase.checkRateLimit(
-    request,
-    RATE_LIMIT,
-    RATE_WINDOW
-  );
-  if (rateLimitResponse) {
-    return rateLimitResponse;
+  // Rate limiting kontrolü using AuthSecurity
+  const ip = ApiBase.getClientIP(request);
+  const rateLimitResult = await AuthSecurity.checkIPRateLimit(ip, 'geolocation-get');
+  if (!rateLimitResult.allowed) {
+    return new Response(
+      JSON.stringify({
+        error: 'Rate limit exceeded',
+        message: 'Çok fazla istek gönderildi. Lütfen daha sonra tekrar deneyin.',
+      }),
+      {
+        status: 429,
+        headers: {
+          'Content-Type': 'application/json',
+          'Retry-After': '60',
+        },
+      }
+    );
   }
 
   // Request logging
@@ -82,9 +88,22 @@ export async function POST(request: NextRequest) {
   try {
     const ip = getClientIP(request);
 
-    // Rate limiting kontrolü
-    if (!RateLimiter.checkLimit('geolocation', ip, RATE_LIMIT, RATE_WINDOW)) {
-      return RateLimiter.createRateLimitResponse(RATE_LIMIT, RATE_WINDOW);
+    // Rate limiting kontrolü using AuthSecurity
+    const rateLimitResult = await AuthSecurity.checkIPRateLimit(ip, 'geolocation-post');
+    if (!rateLimitResult.allowed) {
+      return new Response(
+        JSON.stringify({
+          error: 'Rate limit exceeded',
+          message: 'Çok fazla istek gönderildi. Lütfen daha sonra tekrar deneyin.',
+        }),
+        {
+          status: 429,
+          headers: {
+            'Content-Type': 'application/json',
+            'Retry-After': '60',
+          },
+        }
+      );
     }
 
     const body = await request.json();

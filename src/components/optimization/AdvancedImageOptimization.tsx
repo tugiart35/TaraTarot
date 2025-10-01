@@ -4,7 +4,7 @@
  */
 
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 interface AdvancedImageOptimizationProps {
   src: string;
@@ -40,35 +40,6 @@ export function AdvancedImageOptimization({
   const [isLoaded, setIsLoaded] = useState(false);
   const [hasError, setHasError] = useState(false);
 
-  // Generate blur data URL if not provided
-  const generateBlurDataURL = (w: number, h: number) => {
-    const canvas = document.createElement('canvas');
-    const ctx = canvas.getContext('2d');
-    canvas.width = w;
-    canvas.height = h;
-    
-    if (ctx) {
-      const gradient = ctx.createLinearGradient(0, 0, w, h);
-      gradient.addColorStop(0, '#f3f4f6');
-      gradient.addColorStop(1, '#e5e7eb');
-      ctx.fillStyle = gradient;
-      ctx.fillRect(0, 0, w, h);
-    }
-    
-    return canvas.toDataURL();
-  };
-
-  // Determine optimal quality based on image size
-  const getOptimalQuality = () => {
-    if (width && height) {
-      const pixels = width * height;
-      if (pixels > 1000000) return 80; // Large images
-      if (pixels > 500000) return 85;  // Medium images
-      return 90; // Small images
-    }
-    return quality;
-  };
-
   // Handle image load
   const handleLoad = () => {
     setIsLoaded(true);
@@ -79,13 +50,6 @@ export function AdvancedImageOptimization({
   const handleError = () => {
     setHasError(true);
     onError?.();
-  };
-
-  // Get responsive sizes for different breakpoints
-  const getResponsiveSizes = () => {
-    if (sizes) return sizes;
-    
-    return '(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw';
   };
 
   return (
@@ -101,24 +65,26 @@ export function AdvancedImageOptimization({
         </div>
       ) : (
         <Image
-          src={src}
-          alt={alt}
-          width={width}
-          height={height}
-          priority={priority}
-          quality={getOptimalQuality()}
-          sizes={getResponsiveSizes()}
-          placeholder={placeholder}
-          blurDataURL={blurDataURL || (width && height ? generateBlurDataURL(width, height) : undefined)}
-          loading={loading}
-          onLoad={handleLoad}
-          onError={handleError}
-          className={`transition-opacity duration-300 ${
-            isLoaded ? 'opacity-100' : 'opacity-0'
-          }`}
-          style={{
-            objectFit: 'cover',
-          }}
+          {...({
+            src,
+            alt,
+            width,
+            height,
+            priority,
+            quality,
+            sizes,
+            placeholder,
+            blurDataURL,
+            loading,
+            onLoad: handleLoad,
+            onError: handleError,
+            className: `transition-opacity duration-300 ${
+              isLoaded ? 'opacity-100' : 'opacity-0'
+            }`,
+            style: {
+              objectFit: 'cover',
+            }
+          } as any)}
         />
       )}
       

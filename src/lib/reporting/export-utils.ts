@@ -18,12 +18,18 @@ Supabase değişkenleri ve tabloları:
 Geliştirme önerileri:
 - PDF ve Excel export fonksiyonları
 - Rapor şablonları
-- Dosya boyutu optimizasyonu
+*/
 
-Tespit edilen hatalar:
-- ✅ Kütüphane bağımlılıkları eklendi
+import jsPDF from 'jspdf';
+import * as XLSX from 'xlsx';
 
-Kullanım durumu:
+/*
+ * Dosya boyutu optimizasyonu
+ * 
+ * Tespit edilen hatalar:
+ * - ✅ Kütüphane bağımlılıkları eklendi
+ * 
+ * Kullanım durumu:
 - ✅ Gerekli: Raporlama sistemi için export fonksiyonları
 - ✅ Production-ready: jsPDF ve xlsx kütüphaneleri ile
 */

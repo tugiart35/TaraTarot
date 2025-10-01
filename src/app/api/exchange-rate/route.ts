@@ -43,29 +43,8 @@ let exchangeRateCache: {
 } | null = null;
 
 const CACHE_DURATION = 3600 * 1000; // 1 saat
-const RATE_LIMIT_DURATION = 60 * 60 * 1000; // 1 saat
-const MAX_REQUESTS_PER_HOUR = 100;
 
-// Rate limiting için basit in-memory store
-const rateLimitStore = new Map<string, { count: number; resetTime: number }>();
-
-// Rate limiting kontrolü
-function checkRateLimit(ip: string): boolean {
-  const now = Date.now();
-  const userLimit = rateLimitStore.get(ip);
-
-  if (!userLimit || now > userLimit.resetTime) {
-    rateLimitStore.set(ip, { count: 1, resetTime: now + RATE_LIMIT_DURATION });
-    return true;
-  }
-
-  if (userLimit.count >= MAX_REQUESTS_PER_HOUR) {
-    return false;
-  }
-
-  userLimit.count++;
-  return true;
-}
+// Rate limiting için AuthSecurity kullanılıyor
 
 // Client IP alma
 // getClientIP artık ip-utils'den import ediliyor
@@ -130,8 +109,9 @@ export async function GET(request: NextRequest) {
   try {
     const ip = getClientIP(request);
 
-    // Rate limiting kontrolü
-    if (!checkRateLimit(ip)) {
+    // Rate limiting kontrolü - AuthSecurity kullanılıyor
+    const rateLimitResult = await AuthSecurity.checkIPRateLimit(ip, 'exchange-rate-get');
+    if (!rateLimitResult.allowed) {
       return NextResponse.json(
         {
           error: 'Rate limit exceeded',
@@ -142,7 +122,7 @@ export async function GET(request: NextRequest) {
           status: 429,
           headers: {
             'Retry-After': '3600',
-            'X-RateLimit-Limit': MAX_REQUESTS_PER_HOUR.toString(),
+            'X-RateLimit-Limit': '10',
             'X-RateLimit-Remaining': '0',
           },
         }
@@ -207,8 +187,9 @@ export async function POST(request: NextRequest) {
   try {
     const ip = getClientIP(request);
 
-    // Rate limiting kontrolü
-    if (!checkRateLimit(ip)) {
+    // Rate limiting kontrolü - AuthSecurity kullanılıyor
+    const rateLimitResult = await AuthSecurity.checkIPRateLimit(ip, 'exchange-rate-post');
+    if (!rateLimitResult.allowed) {
       return NextResponse.json(
         {
           error: 'Rate limit exceeded',
@@ -219,7 +200,7 @@ export async function POST(request: NextRequest) {
           status: 429,
           headers: {
             'Retry-After': '3600',
-            'X-RateLimit-Limit': MAX_REQUESTS_PER_HOUR.toString(),
+            'X-RateLimit-Limit': '10',
             'X-RateLimit-Remaining': '0',
           },
         }

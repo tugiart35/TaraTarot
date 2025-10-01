@@ -8,7 +8,6 @@ import { useTranslations } from 'next-intl';
 
 interface InternalLinkingProps {
   currentPage?: string;
-  locale?: string;
   showRelatedServices?: boolean;
   showPopularPages?: boolean;
   showBreadcrumbs?: boolean;
@@ -16,7 +15,6 @@ interface InternalLinkingProps {
 
 export function InternalLinking({
   currentPage,
-  locale = 'tr',
   showRelatedServices = true,
   showPopularPages = true,
   showBreadcrumbs = true,
@@ -27,29 +25,29 @@ export function InternalLinking({
   const getRelatedLinks = (page: string) => {
     const baseLinks = {
       home: [
-        { href: '/tarotokumasi', label: 'Tarot Falı', description: 'Profesyonel tarot yorumları' },
-        { href: '/numeroloji', label: 'Numeroloji', description: 'Kişilik analizi ve gelecek yorumları' },
-        { href: '/auth', label: 'Giriş Yap', description: 'Hesabınıza giriş yapın' },
+        { href: '/tarotokumasi', label: t('tarotReading'), description: t('tarotDescription') },
+        { href: '/numeroloji', label: t('numerology'), description: t('numerologyDescription') },
+        { href: '/auth', label: t('login'), description: t('loginDescription') },
       ],
       tarot: [
-        { href: '/numeroloji', label: 'Numeroloji Analizi', description: 'Sayıların sırrını keşfedin' },
-        { href: '/auth', label: 'Ücretsiz Deneme', description: 'Hemen başlayın' },
-        { href: '/dashboard', label: 'Hesabım', description: 'Fal geçmişinizi görün' },
+        { href: '/numeroloji', label: t('numerologyAnalysis'), description: t('numerologyAnalysisDescription') },
+        { href: '/auth', label: t('freeTrial'), description: t('freeTrialDescription') },
+        { href: '/dashboard', label: t('myAccount'), description: t('myAccountDescription') },
       ],
       numerology: [
-        { href: '/tarotokumasi', label: 'Tarot Falı', description: 'Kartların sırrını keşfedin' },
-        { href: '/auth', label: 'Ücretsiz Deneme', description: 'Hemen başlayın' },
-        { href: '/dashboard', label: 'Hesabım', description: 'Analiz geçmişinizi görün' },
+        { href: '/tarotokumasi', label: t('tarotReading'), description: t('tarotDescription') },
+        { href: '/auth', label: t('freeTrial'), description: t('freeTrialDescription') },
+        { href: '/dashboard', label: t('myAccount'), description: t('analysisHistoryDescription') },
       ],
       auth: [
-        { href: '/tarotokumasi', label: 'Tarot Falı', description: 'Profesyonel tarot yorumları' },
-        { href: '/numeroloji', label: 'Numeroloji', description: 'Kişilik analizi' },
-        { href: '/dashboard', label: 'Dashboard', description: 'Hesabınıza giriş yapın' },
+        { href: '/tarotokumasi', label: t('tarotReading'), description: t('tarotDescription') },
+        { href: '/numeroloji', label: t('numerology'), description: t('numerologyDescription') },
+        { href: '/dashboard', label: t('dashboard'), description: t('loginDescription') },
       ],
       dashboard: [
-        { href: '/tarotokumasi', label: 'Yeni Tarot Falı', description: 'Hemen başlayın' },
-        { href: '/numeroloji', label: 'Numeroloji Analizi', description: 'Kişilik analizi yapın' },
-        { href: '/dashboard/readings', label: 'Fal Geçmişi', description: 'Geçmiş fallarınızı görün' },
+        { href: '/tarotokumasi', label: t('newTarotReading'), description: t('freeTrialDescription') },
+        { href: '/numeroloji', label: t('numerologyAnalysis'), description: t('numerologyDescription') },
+        { href: '/dashboard/readings', label: t('readingHistory'), description: t('readingHistoryDescription') },
       ],
     };
 
@@ -58,34 +56,34 @@ export function InternalLinking({
 
   // Popular pages for site-wide internal linking
   const popularPages = [
-    { href: '/tarotokumasi', label: 'Tarot Falı', description: 'Profesyonel tarot yorumları' },
-    { href: '/numeroloji', label: 'Numeroloji', description: 'Kişilik analizi ve gelecek yorumları' },
-    { href: '/auth', label: 'Giriş Yap', description: 'Hesabınıza giriş yapın' },
-    { href: '/dashboard', label: 'Dashboard', description: 'Hesabınızı yönetin' },
+    { href: '/tarotokumasi', label: t('tarotReading'), description: t('tarotDescription') },
+    { href: '/numeroloji', label: t('numerology'), description: t('numerologyDescription') },
+    { href: '/auth', label: t('login'), description: t('loginDescription') },
+    { href: '/dashboard', label: t('dashboard'), description: t('dashboardDescription') },
   ];
 
   // Breadcrumb navigation
   const getBreadcrumbs = (page: string) => {
     const breadcrumbs = {
       tarot: [
-        { href: '/', label: 'Ana Sayfa' },
-        { href: '/tarotokumasi', label: 'Tarot Falı' },
+        { href: '/', label: t('homePage') },
+        { href: '/tarotokumasi', label: t('tarotReading') },
       ],
       numerology: [
-        { href: '/', label: 'Ana Sayfa' },
-        { href: '/numeroloji', label: 'Numeroloji' },
+        { href: '/', label: t('homePage') },
+        { href: '/numeroloji', label: t('numerology') },
       ],
       dashboard: [
-        { href: '/', label: 'Ana Sayfa' },
-        { href: '/dashboard', label: 'Dashboard' },
+        { href: '/', label: t('homePage') },
+        { href: '/dashboard', label: t('dashboard') },
       ],
       auth: [
-        { href: '/', label: 'Ana Sayfa' },
-        { href: '/auth', label: 'Giriş' },
+        { href: '/', label: t('homePage') },
+        { href: '/auth', label: t('login') },
       ],
     };
 
-    return breadcrumbs[page as keyof typeof breadcrumbs] || [{ href: '/', label: 'Ana Sayfa' }];
+    return breadcrumbs[page as keyof typeof breadcrumbs] || [{ href: '/', label: t('homePage') }];
   };
 
   const relatedLinks = currentPage ? getRelatedLinks(currentPage) : [];
@@ -120,7 +118,7 @@ export function InternalLinking({
       {showRelatedServices && relatedLinks.length > 0 && (
         <section className="related-services">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">
-            İlgili Hizmetlerimiz
+            {t('relatedServices')}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {relatedLinks.map((link, index) => (
@@ -136,7 +134,7 @@ export function InternalLinking({
                   {link.description}
                 </p>
                 <span className="inline-block mt-2 text-xs text-purple-600 font-medium">
-                  Devamını Oku →
+                  {t('continueReading')} →
                 </span>
               </Link>
             ))}
@@ -148,7 +146,7 @@ export function InternalLinking({
       {showPopularPages && (
         <section className="popular-pages">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">
-            Popüler Sayfalar
+            {t('popularPages')}
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {popularPages.map((page, index) => (
@@ -170,23 +168,23 @@ export function InternalLinking({
       <section className="navigation-hints">
         <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
           <h4 className="font-medium text-purple-900 mb-2">
-            Site Haritası
+            {t('siteMap')}
           </h4>
           <div className="flex flex-wrap gap-2 text-sm">
             <Link href="/tarotokumasi" className="text-purple-700 hover:text-purple-900 transition-colors">
-              Tarot Falı
+              {t('tarotReading')}
             </Link>
             <span className="text-purple-400">•</span>
             <Link href="/numeroloji" className="text-purple-700 hover:text-purple-900 transition-colors">
-              Numeroloji
+              {t('numerology')}
             </Link>
             <span className="text-purple-400">•</span>
             <Link href="/dashboard" className="text-purple-700 hover:text-purple-900 transition-colors">
-              Dashboard
+              {t('dashboard')}
             </Link>
             <span className="text-purple-400">•</span>
             <Link href="/legal/privacy-policy" className="text-purple-700 hover:text-purple-900 transition-colors">
-              Gizlilik Politikası
+              {t('privacyPolicy')}
             </Link>
           </div>
         </div>

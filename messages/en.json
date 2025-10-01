@@ -3538,5 +3538,31 @@
   },
   "profile2": {
     "noName": "Noun"
+  },
+  "SEO": {
+    "homePage": "Home page",
+    "popularPages": "Popular pages",
+    "login": "Login",
+    "tarotReading": "Tarot fortune",
+    "loginDescription": "Login to your account",
+    "numerologyDescription": "Personality Analysis and Future Reviews",
+    "dashboardDescription": "Manage your account",
+    "numerology": "Numerology",
+    "dashboard": "Dashboard",
+    "tarotDescription": "Professional Tarot Reviews",
+    "newTarotReading": "New tarot fortune",
+    "freeTrialDescription": "Start Now",
+    "readingHistory": "Fortune -telling",
+    "freeTrial": "Free trial",
+    "readingHistoryDescription": "See your past fortunes",
+    "myAccountDescription": "See your fortune history",
+    "myAccount": "My account",
+    "numerologyAnalysis": "Nummerology Analysis",
+    "analysisHistoryDescription": "See your analysis history",
+    "relatedServices": "Our related services",
+    "siteMap": "Site Map",
+    "continueReading": "Read more",
+    "privacyPolicy": "Privacy Policy",
+    "numerologyAnalysisDescription": "Discover the secret of numbers"
   }
 }

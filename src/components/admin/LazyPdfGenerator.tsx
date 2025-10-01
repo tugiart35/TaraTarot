@@ -5,73 +5,39 @@
  * Bundle size'ı optimize eder ve performansı artırır.
  */
 
-import dynamic from 'next/dynamic';
-import { CardSkeleton } from '@/components/shared/ui/LoadingSpinner';
-
-// Lazy load PDF generator (puppeteer ~300MB)
-export const PdfGeneratorLazy = dynamic(
-  () => import('@/lib/pdf/pdf-generator').then(mod => ({
-    default: mod.PdfGenerator,
-  })),
-  {
-    loading: () => (
-      <CardSkeleton>
-        <div className="text-center text-gray-500">
-          📄 PDF Generator yükleniyor...
-        </div>
-      </CardSkeleton>
-    ),
-    ssr: false,
-  }
-);
+// Lazy load PDF generator (puppeteer ~300MB) - Promise-based approach
+export const loadPdfGenerator = () => import('@/lib/pdf/pdf-generator');
 
 // Lazy load Export Utils (html2canvas + jspdf ~3MB)
-export const ExportUtilsLazy = dynamic(
-  () => import('@/lib/reporting/export-utils').then(mod => ({
-    default: mod.ExportUtils,
-  })),
-  {
-    loading: () => (
-      <CardSkeleton>
-        <div className="text-center text-gray-500">
-          📊 Export Utils yükleniyor...
-        </div>
-      </CardSkeleton>
-    ),
-    ssr: false,
-  }
-);
+export const loadExportUtils = () => import('@/lib/reporting/export-utils');
 
 // Lazy load HTML2Canvas (~2MB)
-export const Html2CanvasLazy = dynamic(
-  () => import('html2canvas').then(mod => ({
-    default: mod.default,
-  })),
-  {
-    loading: () => (
-      <CardSkeleton>
-        <div className="text-center text-gray-500">
-          🖼️ HTML2Canvas yükleniyor...
-        </div>
-      </CardSkeleton>
-    ),
-    ssr: false,
-  }
-);
+export const loadHtml2Canvas = () => import('html2canvas');
 
 // Lazy load jsPDF (~1MB)
-export const JsPdfLazy = dynamic(
-  () => import('jspdf').then(mod => ({
-    default: mod.jsPDF,
-  })),
-  {
-    loading: () => (
-      <CardSkeleton>
-        <div className="text-center text-gray-500">
-          📄 jsPDF yükleniyor...
-        </div>
-      </CardSkeleton>
-    ),
-    ssr: false,
-  }
+export const loadJsPdf = () => import('jspdf');
+
+// Loading components for PDF operations
+export const PdfLoadingComponent = () => (
+  <div className="text-center text-gray-500">
+    📄 PDF Generator yükleniyor...
+  </div>
+);
+
+export const ExportLoadingComponent = () => (
+  <div className="text-center text-gray-500">
+    📊 Export Utils yükleniyor...
+  </div>
+);
+
+export const Html2CanvasLoadingComponent = () => (
+  <div className="text-center text-gray-500">
+    🖼️ HTML2Canvas yükleniyor...
+  </div>
+);
+
+export const JsPdfLoadingComponent = () => (
+  <div className="text-center text-gray-500">
+    📄 jsPDF yükleniyor...
+  </div>
 );

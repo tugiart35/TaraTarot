@@ -10,39 +10,39 @@ export const CACHE_CONFIG = {
   // Static content cache
   STATIC_CONTENT: {
     ttl: 60 * 60 * 24 * 7, // 7 days
-    tags: ['static-content'],
+    tags: ['static-content'] as string[],
   },
   
   // Dynamic content cache
   DYNAMIC_CONTENT: {
     ttl: 60 * 60 * 2, // 2 hours
-    tags: ['dynamic-content'],
+    tags: ['dynamic-content'] as string[],
   },
   
   // API responses cache
   API_RESPONSES: {
     ttl: 60 * 15, // 15 minutes
-    tags: ['api-responses'],
+    tags: ['api-responses'] as string[],
   },
   
   // User-specific cache
   USER_DATA: {
     ttl: 60 * 30, // 30 minutes
-    tags: ['user-data'],
+    tags: ['user-data'] as string[],
   },
   
   // SEO content cache
   SEO_CONTENT: {
     ttl: 60 * 60 * 6, // 6 hours
-    tags: ['seo-content'],
+    tags: ['seo-content'] as string[],
   },
   
   // Images cache
   IMAGES: {
     ttl: 60 * 60 * 24 * 30, // 30 days
-    tags: ['images'],
+    tags: ['images'] as string[],
   },
-} as const;
+};
 
 // Cache keys generator
 export class CacheKeyGenerator {
@@ -81,7 +81,7 @@ export const getCachedUserData = unstable_cache(
   },
   ['user-data'],
   {
-    ...CACHE_CONFIG.USER_DATA,
+    tags: [...CACHE_CONFIG.USER_DATA.tags],
     revalidate: CACHE_CONFIG.USER_DATA.ttl,
   }
 );
@@ -94,7 +94,7 @@ export const getCachedTarotReading = unstable_cache(
   },
   ['tarot-reading'],
   {
-    ...CACHE_CONFIG.DYNAMIC_CONTENT,
+    tags: [...CACHE_CONFIG.DYNAMIC_CONTENT.tags],
     revalidate: CACHE_CONFIG.DYNAMIC_CONTENT.ttl,
   }
 );
@@ -107,7 +107,7 @@ export const getCachedNumerologyAnalysis = unstable_cache(
   },
   ['numerology-analysis'],
   {
-    ...CACHE_CONFIG.DYNAMIC_CONTENT,
+    tags: [...CACHE_CONFIG.DYNAMIC_CONTENT.tags],
     revalidate: CACHE_CONFIG.DYNAMIC_CONTENT.ttl,
   }
 );
@@ -120,7 +120,7 @@ export const getCachedStaticContent = unstable_cache(
   },
   ['static-content'],
   {
-    ...CACHE_CONFIG.STATIC_CONTENT,
+    tags: [...CACHE_CONFIG.STATIC_CONTENT.tags],
     revalidate: CACHE_CONFIG.STATIC_CONTENT.ttl,
   }
 );
@@ -133,7 +133,7 @@ export const getCachedSEOContent = unstable_cache(
   },
   ['seo-content'],
   {
-    ...CACHE_CONFIG.SEO_CONTENT,
+    tags: [...CACHE_CONFIG.SEO_CONTENT.tags],
     revalidate: CACHE_CONFIG.SEO_CONTENT.ttl,
   }
 );

@@ -3584,5 +3584,32 @@
   "profile": {
     "personalInfo": "Kişisel Bilgiler",
     "firstName": "Ad"
+  },
+  "SEO": {
+    "relatedServices": "İlgili Hizmetlerimiz",
+    "popularPages": "Popüler Sayfalar",
+    "siteMap": "Site Haritası",
+    "continueReading": "Devamını Oku",
+    "tarotReading": "Tarot Falı",
+    "tarotDescription": "Profesyonel tarot yorumları",
+    "numerology": "Numeroloji",
+    "numerologyDescription": "Kişilik analizi ve gelecek yorumları",
+    "login": "Giriş Yap",
+    "loginDescription": "Hesabınıza giriş yapın",
+    "dashboard": "Dashboard",
+    "dashboardDescription": "Hesabınızı yönetin",
+    "homePage": "Ana Sayfa",
+    "privacyPolicy": "Gizlilik Politikası",
+    "numerologyAnalysis": "Numeroloji Analizi",
+    "numerologyAnalysisDescription": "Sayıların sırrını keşfedin",
+    "freeTrial": "Ücretsiz Deneme",
+    "freeTrialDescription": "Hemen başlayın",
+    "myAccount": "Hesabım",
+    "myAccountDescription": "Fal geçmişinizi görün",
+    "newTarotReading": "Yeni Tarot Falı",
+    "readingHistory": "Fal Geçmişi",
+    "readingHistoryDescription": "Geçmiş fallarınızı görün",
+    "analysisHistory": "Analiz Geçmişi",
+    "analysisHistoryDescription": "Analiz geçmişinizi görün"
   }
 }

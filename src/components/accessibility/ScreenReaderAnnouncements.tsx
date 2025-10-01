@@ -5,7 +5,7 @@
 
 'use client';
 
-import { createContext, useContext, useCallback, ReactNode } from 'react';
+import { createContext, useContext, useCallback, useEffect, ReactNode } from 'react';
 
 interface ScreenReaderContextType {
   announce: (message: string, priority?: 'polite' | 'assertive') => void;

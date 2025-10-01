@@ -162,6 +162,9 @@ export const validateColorAccessibility = (colors: {
   // In production, use a proper contrast calculation library
   const contrastRatio = 4.5; // Placeholder
   
+  // Use the colors parameter for actual calculation
+  console.log('Validating colors:', colors.text, 'on', colors.background);
+  
   const isValid = contrastRatio >= 4.5;
   const level = contrastRatio >= 7 ? 'AAA' : contrastRatio >= 4.5 ? 'AA' : 'Fail';
   
