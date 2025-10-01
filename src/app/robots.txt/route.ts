@@ -9,6 +9,13 @@ Allow: /
 # Sitemap
 Sitemap: ${baseUrl}/sitemap.xml
 
+# Allow static assets for better crawling
+Allow: /_next/static/
+Allow: /fonts/
+Allow: /icons/
+Allow: /images/
+Allow: /cards/
+
 # Disallow admin and private areas
 Disallow: /admin/
 Disallow: /api/
