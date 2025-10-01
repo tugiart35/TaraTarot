@@ -1,5 +1,5 @@
 {
-  "name": "mobil-tarot-app",
+  "name": "busbuskimki-tarot",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -55,7 +55,9 @@
     "@supabase/ssr": "^0.7.0",
     "@supabase/supabase-js": "^2.58.0",
     "@types/xlsx": "^0.0.35",
+    "@vercel/speed-insights": "^1.2.0",
     "clsx": "^2.1.1",
+    "dompurify": "^3.2.7",
     "framer-motion": "^12.23.0",
     "html2canvas": "^1.4.1",
     "jsdom": "^26.1.0",
@@ -81,6 +83,7 @@
     "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.0.0",
+    "@types/dompurify": "^3.0.5",
     "@types/html2canvas": "^0.5.35",
     "@types/jsdom": "^21.1.7",
     "@types/jspdf": "^1.3.3",

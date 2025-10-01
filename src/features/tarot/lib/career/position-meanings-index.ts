@@ -47,7 +47,7 @@ import type { TarotCard } from '@/types/tarot';
 import { getCardNameMappingSync } from '@/features/tarot/lib/love/card-name-mapping';
 import { position1Meanings } from './position-1-gercekten-istedigim-kariyer-bumu';
 import { position2Meanings } from './position-2-kariyer-gelistirmek-icin-hangi-adımlar-atabilirim';
-import { position3Meanings } from './position-3-kariyerimde-degisteremediğim-taraflar';
+import { position3Meanings } from './position-3-kariyerimde-degisteremedigigim-taraflar';
 import { position4Meanings } from './position-4-kariyerimde-elimden-gelenin-en-iyisi-yapıyormuyum';
 import { position5Meanings } from './position-5-kariyerimde-yardimci-olacak-ne-gibi-degisikler';
 import { position6Meanings } from './position-6-gecmisimdeki-hangi-engeller';

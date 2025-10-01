@@ -57,7 +57,7 @@ import {
   position4Meanings,
   getRelationshipProblemsposition4Meaning,
   getRelationshipProblemsposition4MeaningByCardName,
-} from './position-4-bu-sorundaki-payimi-görmezden';
+} from './position-4-bu-sorundaki-payimi-gormezden';
 import {
   position5Meanings,
   getRelationshipProblemsposition5Meaning,
@@ -82,7 +82,7 @@ import {
   position9Meanings,
   getRelationshipProblemsposition9Meaning,
   getRelationshipProblemsposition9MeaningByCardName,
-} from './position-9-bu-iliski-sürecek-mi';
+} from './position-9-bu-iliski-surecek-mi';
 
 export interface RelationshipProblemsPositionMeaning {
   id: string;
