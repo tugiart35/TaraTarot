@@ -28,8 +28,9 @@ Kullanım durumu:
 - ✅ Production-ready: jsPDF ve xlsx kütüphaneleri ile
 */
 
-import jsPDF from 'jspdf';
-import * as XLSX from 'xlsx';
+// Lazy imports - will be loaded dynamically when needed
+// import jsPDF from 'jspdf';
+// import * as XLSX from 'xlsx';
 
 export interface ReportData {
   dailyUsers: number;

@@ -72,8 +72,123 @@ define(['./workbox-e43f5367'], function (workbox) {
   'use strict';
 
   importScripts();
+  
+  // Service Worker version management
+  const SW_VERSION = '1.2.0';
+  const CACHE_NAME = `tarot-sw-v${SW_VERSION}`;
+  
+  console.log(`🔧 Service Worker v${SW_VERSION} activated`);
+  
   self.skipWaiting();
   workbox.clientsClaim();
+  
+  // Clean up old caches
+  self.addEventListener('activate', (event) => {
+    event.waitUntil(
+      caches.keys().then((cacheNames) => {
+        return Promise.all(
+          cacheNames.map((cacheName) => {
+            if (cacheName !== CACHE_NAME && cacheName.startsWith('tarot-sw-v')) {
+              console.log(`🗑️ Deleting old cache: ${cacheName}`);
+              return caches.delete(cacheName);
+            }
+          })
+        );
+      })
+    );
+  });
+  // Cache static assets with StaleWhileRevalidate
+  workbox.registerRoute(
+    ({ request }) => request.destination === 'image',
+    new workbox.StaleWhileRevalidate({
+      cacheName: 'images',
+      plugins: [
+        {
+          cacheWillUpdate: async ({ request, response }) => {
+            return response.status === 200 ? response : null;
+          },
+        },
+      ],
+    }),
+    'GET'
+  );
+
+  // Cache fonts with CacheFirst
+  workbox.registerRoute(
+    ({ request }) => request.destination === 'font',
+    new workbox.CacheFirst({
+      cacheName: 'fonts',
+      plugins: [
+        {
+          cacheWillUpdate: async ({ request, response }) => {
+            return response.status === 200 ? response : null;
+          },
+        },
+      ],
+    }),
+    'GET'
+  );
+
+  // Cache API responses with NetworkFirst
+  workbox.registerRoute(
+    ({ url }) => url.pathname.startsWith('/api/'),
+    new workbox.NetworkFirst({
+      cacheName: 'api',
+      networkTimeoutSeconds: 3,
+      plugins: [
+        {
+          cacheWillUpdate: async ({ request, response }) => {
+            return response.status === 200 ? response : null;
+          },
+        },
+      ],
+    }),
+    'GET'
+  );
+
+  // Cache pages with NetworkFirst and offline fallback
+  workbox.registerRoute(
+    ({ request }) => request.destination === 'document',
+    new workbox.NetworkFirst({
+      cacheName: 'pages',
+      networkTimeoutSeconds: 3,
+      plugins: [
+        {
+          handlerDidError: async () => {
+            return await caches.match('/offline') || new Response(
+              '<html><body><h1>Offline</h1></body></html>',
+              {
+                status: 200,
+                statusText: 'OK',
+                headers: { 'Content-Type': 'text/html' }
+              }
+            );
+          },
+        },
+      ],
+    }),
+    'GET'
+  );
+
+  // Cache static resources with CacheFirst
+  workbox.registerRoute(
+    ({ request }) => 
+      request.destination === 'script' || 
+      request.destination === 'style',
+    new workbox.CacheFirst({
+      cacheName: 'static-resources',
+      plugins: [
+        {
+          cacheWillUpdate: async ({ request, response }) => {
+            return response.status === 200 ? response : null;
+          },
+        },
+      ],
+    }),
+    'GET'
+  );
+
+  // Start URL cache
   workbox.registerRoute(
     '/',
     new workbox.NetworkFirst({
@@ -92,14 +207,6 @@ define(['./workbox-e43f5367'], function (workbox) {
           },
         },
       ],
-    }),
-    'GET'
-  );
-  workbox.registerRoute(
-    /.*/i,
-    new workbox.NetworkOnly({
-      cacheName: 'dev',
-      plugins: [],
     }),
     'GET'
   );

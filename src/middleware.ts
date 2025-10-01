@@ -50,17 +50,22 @@ const securityHeaders = {
   }),
   'Content-Security-Policy': [
     "default-src 'self'",
-    "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com",
-    "style-src 'self' 'unsafe-inline'",
-    "img-src 'self' data: https:",
-    "font-src 'self'",
-    "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://www.googletagmanager.com",
+    "script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com",
+    "style-src 'self' https://fonts.googleapis.com",
+    "img-src 'self' data: https: blob:",
+    "font-src 'self' https://fonts.gstatic.com data:",
+    "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://www.googletagmanager.com https://ipapi.co",
     "frame-src 'none'",
     "object-src 'none'",
     "base-uri 'self'",
     "form-action 'self'",
     "frame-ancestors 'none'",
+    "manifest-src 'self'",
+    "media-src 'self' data:",
+    "worker-src 'self' blob:",
+    "child-src 'self' blob:",
     'upgrade-insecure-requests',
+    'block-all-mixed-content',
   ].join('; '),
 };
 
@@ -68,12 +73,12 @@ const securityHeaders = {
 
 // Bot detection kaldırıldı - development için
 
-// Role-based access control - Dashboard herkese açık
+// Role-based access control - Dashboard artık korumalı
 const ROLE_PERMISSIONS: Record<string, string[]> = {
   admin: ['/pakize', '/dashboard', '/profile', '/settings', '/analytics'],
   premium: ['/dashboard', '/profile', '/settings', '/premium'],
   user: ['/dashboard', '/profile', '/settings'],
-  guest: ['/dashboard'], // Dashboard guest'lere açık
+  guest: [], // Dashboard artık guest'lere kapalı
 };
 
 export async function middleware(request: NextRequest) {
@@ -166,8 +171,8 @@ export async function middleware(request: NextRequest) {
     const session = user ? { user } : null;
     const userRole = (user?.user_metadata?.role as UserRole) || 'guest';
 
-    // ✅ KORUMALI SAYFALAR KONTROLÜ - Dashboard korumalı değil
-    const protectedPaths = ['/profile', '/settings', '/pakize', '/premium'];
+    // ✅ KORUMALI SAYFALAR KONTROLÜ - Dashboard artık korumalı
+    const protectedPaths = ['/profile', '/settings', '/pakize', '/premium', '/dashboard'];
     const isProtectedPath = protectedPaths.some(
       path => pathname.includes(path) || pathname.endsWith(path)
     );

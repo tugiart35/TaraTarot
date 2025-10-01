@@ -1,7 +1,7 @@
 {
-  "name": "TarotNumeroloji - Mystical Tarot Reading",
+  "name": "Busbuskimki - Profesyonel Tarot ve Numeroloji",
   "short_name": "TarotNumeroloji",
-  "description": "Professional tarot reading service with mystical guidance",
+  "description": "Professional tarot reading and numerology service with mystical guidance. Get accurate readings for love, career, and life decisions.",
   "start_url": "/tr",
   "display": "standalone",
   "orientation": "portrait-primary",
@@ -10,7 +10,7 @@
   "scope": "/",
   "lang": "tr",
   "dir": "ltr",
-  "categories": ["lifestyle", "entertainment", "utilities"],
+  "categories": ["lifestyle", "entertainment", "utilities", "productivity", "social"],
   "icons": [
     {
       "src": "/icons/icon.svg",
@@ -82,5 +82,28 @@
         }
       ]
     }
-  }
+  },
+  "screenshots": [
+    {
+      "src": "/screenshots/desktop-1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Tarot reading dashboard"
+    },
+    {
+      "src": "/screenshots/mobile-1.png", 
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile tarot reading"
+    },
+    {
+      "src": "/screenshots/mobile-2.png",
+      "sizes": "390x844", 
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Numerology analysis"
+    }
+  ]
 }

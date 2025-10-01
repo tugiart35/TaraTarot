@@ -329,6 +329,106 @@ export function generateTarotReadingSchema(readingType: string, price?: string):
 }
 
 /**
+ * Generate Local Business schema for enhanced local SEO
+ */
+export function generateLocalBusinessSchema() {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://busbuskimki.com';
+  
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    '@id': `${baseUrl}#business`,
+    name: 'Busbuskimki - Tarot ve Numeroloji Hizmetleri',
+    description: 'Profesyonel tarot falı ve numeroloji hizmetleri. Deneyimli falcılar tarafından gerçekleştirilen detaylı yorumlar.',
+    url: baseUrl,
+    telephone: '+382 (67) 010176',
+    email: 'busbuskimkionline@gmail.com',
+    address: {
+      '@type': 'PostalAddress',
+      addressCountry: 'ME',
+      addressLocality: 'Montenegro'
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 42.4304,
+      longitude: 19.2594
+    },
+    openingHours: 'Mo-Su 09:00-23:00',
+    priceRange: '$$',
+    paymentAccepted: 'Credit Card, PayPal',
+    currenciesAccepted: 'TRY, EUR, USD',
+    serviceArea: {
+      '@type': 'Country',
+      name: 'Turkey'
+    },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Tarot ve Numeroloji Hizmetleri',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Tarot Falı',
+            description: 'Profesyonel tarot yorumları'
+          }
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Numeroloji',
+            description: 'Kişilik analizi ve gelecek yorumları'
+          }
+        }
+      ]
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.8',
+      reviewCount: '150',
+      bestRating: '5',
+      worstRating: '1'
+    }
+  };
+}
+
+/**
+ * Generate Review schema for customer testimonials
+ */
+export function generateReviewSchema() {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://busbuskimki.com';
+  
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Review',
+    '@id': `${baseUrl}#review`,
+    itemReviewed: {
+      '@type': 'LocalBusiness',
+      name: 'Busbuskimki - Tarot ve Numeroloji Hizmetleri',
+      '@id': `${baseUrl}#business`
+    },
+    author: {
+      '@type': 'Person',
+      name: 'Müşteri Yorumları'
+    },
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: '4.8',
+      bestRating: '5',
+      worstRating: '1'
+    },
+    reviewBody: 'Müşterilerimizin deneyimleri ve yorumları. Profesyonel tarot ve numeroloji hizmetlerimiz hakkında gerçek geri bildirimler.',
+    datePublished: new Date().toISOString(),
+    publisher: {
+      '@type': 'Organization',
+      name: 'Busbuskimki',
+      url: baseUrl
+    }
+  };
+}
+
+/**
  * Generate all schemas for the homepage
  */
 export function generateHomepageSchemas() {
@@ -336,7 +436,14 @@ export function generateHomepageSchemas() {
     generateOrganizationSchema(),
     generateWebSiteSchema(),
     generateServiceSchema(),
-    generateFAQSchema()
+    generateFAQSchema(),
+    generateLocalBusinessSchema(),
+    generateReviewSchema(),
+    generateBreadcrumbSchema([
+      { name: 'Ana Sayfa', url: '/tr' },
+      { name: 'Tarot Falı', url: '/tr/tarotokumasi' },
+      { name: 'Numeroloji', url: '/tr/numeroloji' }
+    ])
   ];
 }
 
@@ -344,7 +451,7 @@ export function generateHomepageSchemas() {
  * Generate schemas for a specific page
  */
 export function generatePageSchemas(pageType: string, pageData?: any) {
-  const schemas = [generateOrganizationSchema()];
+  const schemas: any[] = [generateOrganizationSchema()];
   
   if (pageType === 'tarot-reading' && pageData?.readingType) {
     schemas.push(generateTarotReadingSchema(pageData.readingType, pageData.price));

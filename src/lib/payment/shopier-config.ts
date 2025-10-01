@@ -212,7 +212,51 @@ export const generateShopierSignature = (
   }
 };
 
-// Webhook signature doğrulama
+// HMAC-based webhook signature verification (more secure)
+export const verifyShopierWebhookHMAC = async (
+  data: ShopierWebhookData,
+  signature: string,
+  secret: string
+): Promise<boolean> => {
+  try {
+    // Create payload string from webhook data
+    const payload = JSON.stringify({
+      orderId: data.orderId,
+      status: data.status,
+      amount: data.amount,
+      currency: data.currency,
+      transactionId: data.transactionId,
+      timestamp: data.timestamp,
+    });
+
+    // Generate HMAC-SHA256 signature
+    const encoder = new TextEncoder();
+    const keyData = encoder.encode(secret);
+    const payloadData = encoder.encode(payload);
+    
+    const cryptoKey = await crypto.subtle.importKey(
+      'raw',
+      keyData,
+      { name: 'HMAC', hash: 'SHA-256' },
+      false,
+      ['sign']
+    );
+    
+    const signatureBuffer = await crypto.subtle.sign('HMAC', cryptoKey, payloadData);
+    const expectedSignature = Array.from(new Uint8Array(signatureBuffer))
+      .map(b => b.toString(16).padStart(2, '0'))
+      .join('');
+
+    // Constant-time comparison to prevent timing attacks
+    return signature.length === expectedSignature.length && 
+           signature === expectedSignature;
+  } catch (error) {
+    console.error('HMAC verification error:', error);
+    return false;
+  }
+};
+
+// Legacy webhook signature doğrulama (fallback)
 export const verifyShopierWebhook = (
   data: ShopierWebhookData,
   signature: string

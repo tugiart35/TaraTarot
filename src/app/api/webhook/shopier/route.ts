@@ -38,6 +38,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { supabase } from '@/lib/supabase/client';
 import {
   verifyShopierWebhook,
+  verifyShopierWebhookHMAC,
   ShopierWebhookData,
 } from '@/lib/payment/shopier-config';
 import { emailService } from '@/lib/email/email-service';
@@ -59,6 +60,26 @@ export async function POST(request: NextRequest) {
   try {
     // Test modunu kontrol et
     const isTestMode = process.env.NODE_ENV === 'development';
+
+    // 🛡️ GÜVENLİK KONTROL 0: Webhook Secret Validation
+    const webhookSecret = process.env.WEBHOOK_SECRET;
+    if (!webhookSecret) {
+      console.error('WEBHOOK_SECRET environment variable is not set');
+      return NextResponse.json(
+        { error: 'Webhook secret not configured' },
+        { status: 500 }
+      );
+    }
+
+    // Webhook secret validation (header'dan gelen secret ile karşılaştır)
+    const providedSecret = request.headers.get('x-webhook-secret');
+    if (providedSecret && providedSecret !== webhookSecret) {
+      console.error('Invalid webhook secret provided');
+      return NextResponse.json(
+        { error: 'Invalid webhook secret' },
+        { status: 401 }
+      );
+    }
 
     // 🛡️ GÜVENLİK KONTROL 1: IP Whitelisting ve Rate Limiting
     if (!isTestMode) {
@@ -99,6 +120,12 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Missing signature' }, { status: 400 });
     }
 
+    // Additional security: Validate signature format
+    if (signature && !/^[a-f0-9]{64}$/i.test(signature)) {
+      console.error('Shopier webhook: Invalid signature format');
+      return NextResponse.json({ error: 'Invalid signature format' }, { status: 400 });
+    }
+
     // 🛡️ GÜVENLİK KONTROL 2: Webhook Data Validation
     if (!skipSecurityChecks) {
       const validation = ShopierRequestValidator.validateWebhookData(body);
@@ -128,14 +155,24 @@ export async function POST(request: NextRequest) {
       userId: body.user_id,
     };
 
-    // Signature doğrulama (test modunda atla)
-    if (
-      !isTestMode &&
-      signature &&
-      !verifyShopierWebhook(webhookData, signature)
-    ) {
-      console.error('Shopier webhook: Invalid signature');
-      return NextResponse.json({ error: 'Invalid signature' }, { status: 401 });
+    // Enhanced Signature doğrulama (test modunda atla)
+    if (!isTestMode && signature) {
+      // Try HMAC verification first (more secure)
+      const hmacValid = await verifyShopierWebhookHMAC(
+        webhookData,
+        signature,
+        webhookSecret
+      );
+      
+      // Fallback to legacy verification if HMAC fails
+      const legacyValid = verifyShopierWebhook(webhookData, signature);
+      
+      if (!hmacValid && !legacyValid) {
+        console.error('Shopier webhook: Invalid signature (both HMAC and legacy failed)');
+        return NextResponse.json({ error: 'Invalid signature' }, { status: 401 });
+      }
+      
+      console.log(`Shopier webhook: Signature verified using ${hmacValid ? 'HMAC' : 'legacy'} method`);
     }
 
     // Ödeme durumunu kontrol et ve email bildirimi gönder

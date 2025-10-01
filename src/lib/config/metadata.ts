@@ -43,14 +43,14 @@ export const defaultMetadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3111'
   ),
-  title: 'Büşbüşkimki - Profesyonel Tarot Okuması ve Numeroloji Analizi',
+  title: 'Busbuskimki - Profesyonel Tarot Falı ve Numeroloji | %100 Doğru Yorumlar',
   description:
-    'Profesyonel tarot okuması ve numeroloji analizi ile geleceğinizi keşfedin. Aşk, kariyer ve yaşam sorularınıza mistik cevaplar bulun. Güvenilir mistik rehberlik hizmetleri.',
+    'Profesyonel tarot falı ve numeroloji hizmetleri. Deneyimli falcılar tarafından gerçekleştirilen detaylı yorumlar. Aşk, kariyer ve yaşam rehberliği. %100 gizli ve güvenli. Hemen başla!',
   keywords:
-    'tarot okuması, numeroloji, mistik rehberlik, aşk rehberliği, kariyer rehberliği, günlük rehberlik, ruhani danışmanlık, tarot kartları, sayıların sırrı, gelecek tahmini, kader analizi',
-  authors: [{ name: 'Büşbüşkimki - Mistik Rehberlik' }],
-  creator: 'Büşbüşkimki',
-  publisher: 'Büşbüşkimki',
+    'tarot falı, numeroloji, profesyonel tarot, online tarot, aşk falı, kariyer falı, gelecek yorumu, tarot kartları, mistik yorumlar, spiritüel rehberlik, busbuskimki, güvenilir falcı, deneyimli falcı, detaylı tarot yorumu, kişisel analiz, yaşam rehberliği, karar verme desteği, gelecek kehaneti, spiritüel danışmanlık, mistik hizmetler',
+  authors: [{ name: 'Busbuskimki Ekibi', url: 'https://busbuskimki.com' }],
+  creator: 'Busbuskimki',
+  publisher: 'Busbuskimki',
   robots: {
     index: true,
     follow: true,
@@ -65,26 +65,33 @@ export const defaultMetadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'tr_TR',
+    alternateLocale: ['en_US', 'sr_RS'],
     url: 'https://busbuskimki.com',
-    siteName: 'Büşbüşkimki - Mistik Rehberlik',
-    title: 'Büşbüşkimki - Profesyonel Tarot Okuması ve Numeroloji Analizi',
+    siteName: 'Busbuskimki - Profesyonel Tarot ve Numeroloji',
+    title: 'Busbuskimki - Profesyonel Tarot Falı ve Numeroloji | %100 Doğru Yorumlar',
     description:
-      'Profesyonel tarot okuması ve numeroloji analizi ile geleceğinizi keşfedin. Aşk, kariyer ve yaşam sorularınıza mistik cevaplar bulun.',
+      'Profesyonel tarot falı ve numeroloji hizmetleri. Deneyimli falcılar tarafından gerçekleştirilen detaylı yorumlar. Aşk, kariyer ve yaşam rehberliği.',
     images: [
       {
-        url: '/images/og-image.jpg',
+        url: '/images/tarot-og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Büşbüşkimki - Mistik Tarot ve Numeroloji',
+        alt: 'Busbuskimki - Profesyonel Tarot Falı ve Numeroloji Hizmetleri',
+        type: 'image/jpeg',
       },
     ],
+    countryName: 'Turkey',
+    emails: ['busbuskimkionline@gmail.com'],
+    phoneNumbers: ['+382 (67) 010176'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Büşbüşkimki - Profesyonel Tarot Okuması ve Numeroloji Analizi',
+    title: 'Busbuskimki - Profesyonel Tarot Falı ve Numeroloji',
     description:
-      'Profesyonel tarot okuması ve numeroloji analizi ile geleceğinizi keşfedin.',
-    images: ['/images/twitter-card.jpg'],
+      'Profesyonel tarot falı ve numeroloji hizmetleri. Deneyimli falcılar tarafından gerçekleştirilen detaylı yorumlar.',
+    images: ['/images/tarot-og-image.jpg'],
+    creator: '@busbuskimki',
+    site: '@busbuskimki',
   },
   alternates: {
     canonical: 'https://busbuskimki.com',
@@ -94,9 +101,16 @@ export const defaultMetadata: Metadata = {
       'sr-RS': 'https://busbuskimki.com/sr',
     },
   },
-  category: 'Spirituality',
   classification: 'Mystical Services',
   other: {
+    'mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-status-bar-style': 'default',
+    'apple-mobile-web-app-title': 'Busbuskimki',
+    'application-name': 'Busbuskimki',
+    'msapplication-TileColor': '#8B5CF6',
+    'theme-color': '#8B5CF6',
+    'format-detection': 'telephone=no',
     'google-site-verification': 'your-google-verification-code',
     'msvalidate.01': 'your-bing-verification-code',
   },

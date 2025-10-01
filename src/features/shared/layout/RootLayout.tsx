@@ -1,6 +1,6 @@
 /*
  info:
- Bu değişiklikte Google Analytics entegrasyonu eklendi. <head> içine G-Y2HESMXJXD kodunu kullanan gtag scriptleri eklendi. Artık analytics event'leri (ör: signup_success, signup_error) Google Analytics'e iletilebilir. Kodun genel yapısı ve stiline dokunulmadı.
+ Bu değişiklikte Google Analytics entegrasyonu eklendi. <head> içine G-HYE4L3NKCL kodunu kullanan gtag scriptleri eklendi. Artık analytics event'leri (ör: signup_success, signup_error) Google Analytics'e iletilebilir. Kodun genel yapısı ve stiline dokunulmadı.
  */
 
 'use client';
@@ -47,10 +47,10 @@ export default function RootLayout({
       {/* HeadTags artık metadata API ile değiştirilmeli */}
       <HeadTags />
 
-      {/* Google Analytics - G-Y2HESMXJXD */}
+      {/* Google Analytics - G-HYE4L3NKCL */}
       <Script
         strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-Y2HESMXJXD"
+        src="https://www.googletagmanager.com/gtag/js?id=G-HYE4L3NKCL"
       />
       <Script
         id="google-analytics"
@@ -60,7 +60,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-Y2HESMXJXD');
+            gtag('config', 'G-HYE4L3NKCL');
           `,
         }}
       />

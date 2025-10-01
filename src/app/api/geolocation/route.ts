@@ -36,6 +36,7 @@ import { determineLocale } from '@/lib/utils/locale-utils';
 import { GeolocationCORS } from '@/lib/api/geolocation-cors';
 import { GeolocationErrorResponse } from '@/lib/api/geolocation-responses';
 import { ApiBase } from '@/lib/api/shared/api-base';
+import { AuthSecurity } from '@/lib/auth/auth-security';
 
 // Rate limiting constants
 const RATE_LIMIT = 10; // Dakikada 10 istek
@@ -88,14 +89,32 @@ export async function POST(request: NextRequest) {
 
     const body = await request.json();
 
-    // Input validation
+    // Input validation and sanitization
     if (!body.latitude || !body.longitude) {
       return GeolocationErrorResponse.missingCoordinates();
     }
 
-    // Reverse geocoding
+    // Sanitize and validate coordinates
+    const latitude = parseFloat(body.latitude);
+    const longitude = parseFloat(body.longitude);
+
+    if (!Number.isFinite(latitude) || !Number.isFinite(longitude)) {
+      return GeolocationErrorResponse.invalidCoordinates();
+    }
+
+    // Validate coordinate ranges
+    if (latitude < -90 || latitude > 90 || longitude < -180 || longitude > 180) {
+      return GeolocationErrorResponse.invalidCoordinates();
+    }
+
+    // Additional security: Check for reasonable precision (prevent coordinate injection)
+    if (latitude.toString().length > 15 || longitude.toString().length > 15) {
+      return GeolocationErrorResponse.invalidCoordinates();
+    }
+
+    // Reverse geocoding - Use sanitized coordinates
     const response = await fetch(
-      `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${body.latitude}&longitude=${body.longitude}&localityLanguage=en`,
+      `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`,
       {
         method: 'GET',
         headers: {

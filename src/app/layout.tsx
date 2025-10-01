@@ -31,6 +31,7 @@ import { Inter } from 'next/font/google';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/react';
 import { generateHomepageSchemas } from '@/lib/seo/schema-markup';
+import { WebVitalsProvider } from '@/components/analytics/WebVitalsProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -49,8 +50,24 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         
         {/* Performance Optimization: DNS Prefetch */}
         <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+        <link rel='dns-prefetch' href='//fonts.gstatic.com' />
         <link rel='dns-prefetch' href='//www.google-analytics.com' />
+        <link rel='dns-prefetch' href='//www.googletagmanager.com' />
         <link rel='dns-prefetch' href='//connect.facebook.net' />
+        
+        {/* Preconnect for critical external resources */}
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='anonymous' />
+        <link rel='preconnect' href='https://www.google-analytics.com' />
+        
+                {/* Font preload removed - no mystical font file */}
+        
+        {/* Preload critical images */}
+        <link
+          rel='preload'
+          href='/images/tarot-og-image.jpg'
+          as='image'
+        />
 
         {/* Preload Critical Resources */}
         <link
@@ -61,10 +78,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           crossOrigin='anonymous'
         />
 
-        {/* Google Analytics - G-Y2HESMXJXD */}
+        {/* Google Analytics - G-HYE4L3NKCL */}
         <script
           async
-          src='https://www.googletagmanager.com/gtag/js?id=G-Y2HESMXJXD'
+          src='https://www.googletagmanager.com/gtag/js?id=G-HYE4L3NKCL'
         />
         <script
           dangerouslySetInnerHTML={{
@@ -72,7 +89,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-Y2HESMXJXD');
+              gtag('config', 'G-HYE4L3NKCL');
             `,
           }}
         />
@@ -92,10 +109,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         className='h-full overflow-x-hidden antialiased'
         style={{ backgroundColor: APP_CONFIG.theme.backgroundColor }}
       >
-        {children}
-        <Footer />
-        <Analytics />
-        <SpeedInsights />
+        <WebVitalsProvider>
+          {children}
+          <Footer />
+          <Analytics />
+          <SpeedInsights />
+        </WebVitalsProvider>
       </body>
     </html>
   );

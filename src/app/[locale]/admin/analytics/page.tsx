@@ -49,27 +49,25 @@ import {
   ArrowDown,
   Minus,
   BarChart3,
-  PieChart,
+  PieChart as LucidePieChart,
   Activity,
   Eye,
   DollarSign,
 } from 'lucide-react';
 
-// Recharts bileşenleri
 import {
+  ResponsiveContainer,
   LineChart,
   Line,
   BarChart,
   Bar,
-  PieChart as RechartsPieChart,
-  Pie,
+  PieChart,
   Cell,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
-  ResponsiveContainer,
+  Legend
 } from 'recharts';
 
 interface AnalyticsData {
@@ -620,7 +618,7 @@ export default function AnalyticsPage() {
           <div className='flex items-center justify-between mb-6'>
             <h3 className='text-xl font-bold text-white flex items-center'>
               <div className='admin-gradient-warning p-2 rounded-lg mr-3'>
-                <PieChart className='h-5 w-5 text-white' />
+                <LucidePieChart className='h-5 w-5 text-white' />
               </div>
               Paket Satışları
             </h3>
@@ -630,7 +628,7 @@ export default function AnalyticsPage() {
           </div>
 
           <ResponsiveContainer width='100%' height={300}>
-            <RechartsPieChart>
+            <PieChart>
               <Pie
                 data={analytics.packageSales}
                 cx='50%'
@@ -655,7 +653,7 @@ export default function AnalyticsPage() {
                 }}
               />
               <Legend />
-            </RechartsPieChart>
+            </PieChart>
           </ResponsiveContainer>
         </div>
 
@@ -674,7 +672,7 @@ export default function AnalyticsPage() {
           </div>
 
           <ResponsiveContainer width='100%' height={300}>
-            <RechartsPieChart>
+            <PieChart>
               <Pie
                 data={analytics.featureUsage}
                 cx='50%'
@@ -699,7 +697,7 @@ export default function AnalyticsPage() {
                 }}
               />
               <Legend />
-            </RechartsPieChart>
+            </PieChart>
           </ResponsiveContainer>
         </div>
       </div>

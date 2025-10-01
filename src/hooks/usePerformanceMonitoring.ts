@@ -114,7 +114,7 @@ export function usePerformanceMonitoring() {
   // Page view tracking
   useEffect(() => {
     if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('config', 'G-Y2HESMXJXD', {
+      (window as any).gtag('config', 'G-HYE4L3NKCL', {
         page_title: document.title,
         page_location: window.location.href,
         page_path: pathname,

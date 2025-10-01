@@ -77,7 +77,7 @@ SSL: Cloudflare SSL/TLS
 ### Active Monitoring
 - ✅ **Vercel Analytics** - Page views, user sessions
 - ✅ **Speed Insights** - Core Web Vitals tracking
-- ✅ **Google Analytics** - G-Y2HESMXJXD
+- ✅ **Google Analytics** - G-HYE4L3NKCL
 - ✅ **Error Boundaries** - React error catching
 - ✅ **Function Logs** - API endpoint monitoring
 

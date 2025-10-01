@@ -32,11 +32,7 @@ export default function PakizeAuthPage() {
   // Pathname'den locale'i çıkar
   const locale = pathname.split('/')[1] || 'tr';
 
-  const {
-    loading: authLoading,
-    loginAdmin,
-    isAuthenticated,
-  } = useAdminAuth();
+  const { loading: authLoading, loginAdmin, isAuthenticated } = useAdminAuth();
 
   // Auth sayfasında admin kontrolü yapmıyoruz - döngüyü önlemek için
 
@@ -48,7 +44,7 @@ export default function PakizeAuthPage() {
 
     try {
       const result = await loginAdmin(email, password);
-      
+
       if (result.success) {
         setSuccess('Giriş başarılı! Admin paneline yönlendiriliyorsunuz...');
         // Router otomatik olarak yönlendirecek (useEffect)
@@ -119,6 +115,8 @@ export default function PakizeAuthPage() {
                   onChange={e => setEmail(e.target.value)}
                   className='w-full pl-10 pr-4 py-3 bg-slate-700/50 backdrop-blur-sm border border-slate-700/50 rounded-lg text-white placeholder-slate-400 focus:ring-2 focus:ring-purple-500/50 focus:outline-none touch-target'
                   placeholder='admin@example.com'
+                  aria-label='Admin e-posta adresi'
+                  id='admin-email'
                   required
                 />
               </div>

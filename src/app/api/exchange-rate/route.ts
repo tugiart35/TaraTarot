@@ -32,6 +32,7 @@ Kullanım durumu:
 
 import { NextRequest, NextResponse } from 'next/server';
 import { getClientIP } from '@/lib/utils/ip-utils';
+import { AuthSecurity } from '@/lib/auth/auth-security';
 // import { ApiBase } from '@/lib/api/shared/api-base';
 
 // Cache için global değişkenler
@@ -227,10 +228,18 @@ export async function POST(request: NextRequest) {
 
     const body = await request.json();
 
-    // Input validation
-    if (typeof body.amount !== 'number' || body.amount <= 0) {
+    // Input validation and sanitization
+    if (typeof body.amount !== 'number' || body.amount <= 0 || body.amount > 1000000) {
       return NextResponse.json(
-        { error: 'Geçerli bir TL miktarı giriniz' },
+        { error: 'Geçerli bir TL miktarı giriniz (1-1,000,000 TL arası)' },
+        { status: 400 }
+      );
+    }
+
+    // Additional security: Check for reasonable amounts
+    if (!Number.isFinite(body.amount) || body.amount % 0.01 !== 0) {
+      return NextResponse.json(
+        { error: 'Geçersiz para miktarı formatı' },
         { status: 400 }
       );
     }

@@ -61,6 +61,7 @@
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "clsx": "^2.1.1",
+    "critters": "^0.0.23",
     "dompurify": "^3.2.7",
     "framer-motion": "^12.23.0",
     "html2canvas": "^1.4.1",
@@ -79,10 +80,12 @@
     "react-icons": "^5.5.0",
     "recharts": "^3.1.2",
     "tailwind-merge": "^3.3.1",
+    "web-vitals": "^5.1.0",
     "xlsx": "^0.18.5",
     "zod": "^4.0.5"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^15.5.4",
     "@playwright/test": "^1.40.0",
     "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^14.0.0",

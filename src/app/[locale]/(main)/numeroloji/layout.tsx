@@ -525,4 +525,3 @@ export default async function NumerologyLayout({
     </>
   );
 }
-

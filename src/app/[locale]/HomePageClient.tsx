@@ -52,6 +52,7 @@ export function HomePageClient({ locale }: HomePageClientProps) {
   const router = useRouter();
   const pathname = usePathname();
   const [totalReadings, setTotalReadings] = useState<number>(0);
+  const [activeUsers, setActiveUsers] = useState<number>(0);
   const [loadingStats, setLoadingStats] = useState(true);
   const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
 
@@ -71,33 +72,90 @@ export function HomePageClient({ locale }: HomePageClientProps) {
   const fetchTotalReadings = async () => {
     try {
       setLoadingStats(true);
+      
+      // Önce public view'ı dene
+      const { data: viewData, error: viewError } = await supabase
+        .from('stats_completed_readings')
+        .select('total_completed')
+        .single();
+
+      if (!viewError && viewData) {
+        setTotalReadings(viewData.total_completed || 0);
+        return;
+      }
+
+      // View yoksa direkt tabloyu dene
       const { count, error } = await supabase
         .from('readings')
         .select('*', { count: 'exact', head: true })
         .eq('status', 'completed');
 
       if (error) {
+        console.error('Error fetching total readings:', error);
         setTotalReadings(0);
       } else {
         setTotalReadings(count || 0);
       }
     } catch (error) {
+      console.error('Error in fetchTotalReadings:', error);
       setTotalReadings(0);
     } finally {
       setLoadingStats(false);
     }
   };
 
-  // Component mount olduğunda okuma sayısını çek
+  // Database'den aktif kullanıcı sayısını çek
+  const fetchActiveUsers = async () => {
+    try {
+      // Önce public view'ı dene (son 30 gün)
+      const { data: viewData, error: viewError } = await supabase
+        .from('stats_recent_active_users')
+        .select('recent_active')
+        .single();
+
+      if (!viewError && viewData) {
+        setActiveUsers(viewData.recent_active || 0);
+        return;
+      }
+
+      // View yoksa direkt tabloyu dene
+      const thirtyDaysAgo = new Date();
+      thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+
+      const { count, error } = await supabase
+        .from('profiles')
+        .select('*', { count: 'exact', head: true })
+        .gte('last_login', thirtyDaysAgo.toISOString());
+
+      if (error) {
+        console.error('Error fetching active users:', error);
+        setActiveUsers(0);
+      } else {
+        setActiveUsers(count || 0);
+      }
+    } catch (error) {
+      console.error('Error in fetchActiveUsers:', error);
+      setActiveUsers(0);
+    }
+  };
+
+  // Component mount olduğunda istatistikleri çek
   useEffect(() => {
-    fetchTotalReadings();
+    const loadStats = async () => {
+      await Promise.all([
+        fetchTotalReadings(),
+        fetchActiveUsers()
+      ]);
+    };
+    
+    loadStats();
   }, []);
 
   // Dil değiştirme fonksiyonu
   const handleLanguageChange = (newLocale: string) => {
     // Mevcut path'i locale olmadan al
     let pathWithoutLocale = pathname;
-    
+
     // Eğer pathname locale ile başlıyorsa, onu kaldır
     if (pathname.startsWith(`/${locale}/`)) {
       pathWithoutLocale = pathname.substring(`/${locale}`.length);
@@ -106,13 +164,14 @@ export function HomePageClient({ locale }: HomePageClientProps) {
     }
 
     // Yeni path oluştur - ana sayfada kal
-    const newPath = pathWithoutLocale === '/' 
-      ? `/${newLocale}` 
-      : `/${newLocale}${pathWithoutLocale}`;
+    const newPath =
+      pathWithoutLocale === '/'
+        ? `/${newLocale}`
+        : `/${newLocale}${pathWithoutLocale}`;
 
     // Cookie'yi güncelle
     document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=31536000; SameSite=Lax`;
-    
+
     // Router ile yönlendir
     router.push(newPath);
     setIsLanguageMenuOpen(false);
@@ -125,7 +184,8 @@ export function HomePageClient({ locale }: HomePageClientProps) {
     { code: 'sr', name: 'Srpski', flag: '🇷🇸' },
   ];
 
-  const currentLanguage = languages.find(lang => lang.code === locale) || languages[0];
+  const currentLanguage =
+    languages.find(lang => lang.code === locale) || languages[0];
 
   // Structured Data for SEO - moved to layout.tsx for better SEO
 
@@ -178,14 +238,21 @@ export function HomePageClient({ locale }: HomePageClientProps) {
                 role='button'
               >
                 <span className='text-lg'>{currentLanguage?.flag}</span>
-                <span className='text-sm font-medium'>{currentLanguage?.code.toUpperCase()}</span>
+                <span className='text-sm font-medium'>
+                  {currentLanguage?.code.toUpperCase()}
+                </span>
                 <svg
                   className={`w-4 h-4 transition-transform duration-200 ${isLanguageMenuOpen ? 'rotate-180' : ''}`}
                   fill='none'
                   stroke='currentColor'
                   viewBox='0 0 24 24'
                 >
-                  <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M19 9l-7 7-7-7' />
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth={2}
+                    d='M19 9l-7 7-7-7'
+                  />
                 </svg>
               </button>
 
@@ -197,26 +264,32 @@ export function HomePageClient({ locale }: HomePageClientProps) {
                     className='fixed inset-0 z-40'
                     onClick={() => setIsLanguageMenuOpen(false)}
                   />
-                  
+
                   {/* Dropdown Menu */}
                   <div className='absolute right-0 top-full mt-2 z-50 bg-slate-800/95 backdrop-blur-md border border-slate-600 rounded-lg shadow-xl min-w-[160px]'>
-                    {languages.map((language) => (
+                    {languages.map(language => (
                       <button
                         key={language.code}
                         onClick={() => handleLanguageChange(language.code)}
                         className={`w-full px-4 py-3 text-left hover:bg-slate-700/50 transition-colors duration-200 flex items-center space-x-3 ${
-                          language.code === locale 
-                            ? 'bg-slate-700/50 text-amber-400' 
+                          language.code === locale
+                            ? 'bg-slate-700/50 text-amber-400'
                             : 'text-gray-300'
                         }`}
                         role='menuitem'
                         aria-label={`${language.name} dilini seç`}
-                        aria-current={language.code === locale ? 'true' : 'false'}
+                        aria-current={
+                          language.code === locale ? 'true' : 'false'
+                        }
                       >
                         <span className='text-lg'>{language.flag}</span>
                         <div className='flex flex-col'>
-                          <span className='text-sm font-medium'>{language.name}</span>
-                          <span className='text-xs text-gray-400'>{language.code.toUpperCase()}</span>
+                          <span className='text-sm font-medium'>
+                            {language.name}
+                          </span>
+                          <span className='text-xs text-gray-400'>
+                            {language.code.toUpperCase()}
+                          </span>
                         </div>
                       </button>
                     ))}
@@ -404,7 +477,11 @@ export function HomePageClient({ locale }: HomePageClientProps) {
             <div className='grid grid-cols-3 gap-8 text-center'>
               <div className='bg-gradient-to-br from-cosmic-800/30 to-mystical-800/30 backdrop-blur-mystical border border-cosmic-500/20 rounded-mystical p-6'>
                 <div className='text-3xl font-bold text-golden-400 mb-2'>
-                  10K+
+                  {loadingStats ? (
+                    <div className='animate-pulse'>...</div>
+                  ) : (
+                    activeUsers > 0 ? activeUsers.toLocaleString('tr-TR') : '10K+'
+                  )}
                 </div>
                 <div className='text-cosmic-300 text-sm'>
                   {t('homepage.stats.users')}
