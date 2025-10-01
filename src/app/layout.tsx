@@ -30,6 +30,7 @@ import { defaultLocale } from '@/lib/i18n/config';
 import { Inter } from 'next/font/google';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/react';
+import { generateHomepageSchemas } from '@/lib/seo/schema-markup';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -75,6 +76,17 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             `,
           }}
         />
+
+        {/* Schema.org JSON-LD Structured Data */}
+        {generateHomepageSchemas().map((schema, index) => (
+          <script
+            key={index}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(schema),
+            }}
+          />
+        ))}
       </head>
       <body
         className='h-full overflow-x-hidden antialiased'
