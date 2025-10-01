@@ -154,7 +154,7 @@ export function PWAAuthProvider({ children }: PWAAuthProviderProps) {
       if (registration.active) {
         // Send session data to service worker
         const sessionData: SessionStorage = {
-          user: auth.user,
+          user: auth.user as any,
           sessionToken: null, // Will be set by service worker
           refreshToken: null, // Will be set by service worker
           expiresAt: null, // Will be set by service worker
@@ -274,6 +274,7 @@ export function PWAAuthProvider({ children }: PWAAuthProviderProps) {
 
   const contextValue: PWAAuthContextType = {
     ...auth,
+    user: auth.user as any,
     isOnline,
     isPWA,
     canInstall,
@@ -283,6 +284,22 @@ export function PWAAuthProvider({ children }: PWAAuthProviderProps) {
     requestNotificationPermission,
     isNotificationSupported,
     auditLog: enhancedAuditLog,
+    isPremium: false,
+    sessionConfig: {
+      timeout: 30 * 60 * 1000, // 30 dakika
+      refreshThreshold: 5 * 60 * 1000, // 5 dakika
+      maxRetries: 3,
+    },
+    updateProfile: async () => false,
+    checkPermission: () => false,
+    resetPassword: async (email: string) => {
+      await auth.resetPassword(email, 'tr');
+      return true;
+    },
+    refreshSession: async () => {
+      await auth.refreshSession();
+      return true;
+    },
   };
 
   return (

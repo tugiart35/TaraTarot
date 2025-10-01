@@ -109,7 +109,7 @@ export const useShopier = (): UseShopierReturn => {
         // Ödeme isteği oluştur
         const paymentRequest: ShopierPaymentRequest = {
           orderId: `ORDER_${Date.now()}_${user.id}`,
-          amount: packageData.price_try,
+          amount: packageData.price,
           currency: 'TRY',
           description: `${packageData.name} - ${totalCredits} kredi`,
           customerEmail: profile.email || user.email || '',

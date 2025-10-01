@@ -27,7 +27,7 @@ export interface UserLevel {
 export const calculateUserLevel = (
   totalReadings: number,
   isAdmin: boolean,
-  recentReadings: any[]
+  _recentReadings: any[]
 ): UserLevel => {
   if (isAdmin) {
     return {
@@ -96,7 +96,7 @@ export const calculateUserLevel = (
  * @returns Kullanıcı seviyesi string'i
  */
 export const getUserLevelString = (
-  totalReadings: number,
+  _totalReadings: number,
   isAdmin: boolean,
   recentReadings: any[]
 ): string => {

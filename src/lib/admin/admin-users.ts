@@ -86,7 +86,7 @@ export class AdminUserManager {
       }
 
       // Auth user bilgilerini admin user'a ekle
-      const adminUsers = (data || []).map(adminUser => ({
+      const adminUsers = (data || []).map((adminUser: any) => ({
         ...adminUser,
         email: adminUser.auth_user?.email || 'Bilinmeyen',
         display_name:

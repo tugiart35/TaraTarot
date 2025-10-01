@@ -17,7 +17,7 @@ export class EmailCORS {
         ? [process.env.NEXT_PUBLIC_SITE_URL || 'https://busbuskimki.com']
         : ['*'];
 
-    response.headers.set('Access-Control-Allow-Origin', allowedOrigins[0]);
+    response.headers.set('Access-Control-Allow-Origin', allowedOrigins[0] || '*');
     response.headers.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
     response.headers.set(
       'Access-Control-Allow-Headers',

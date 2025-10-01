@@ -105,19 +105,25 @@ export class AuthSEO {
     }
 
     const baseMeta = AuthSEO.DEFAULT_META[config.page];
-    const meta = { ...baseMeta, ...customMeta };
+    const meta: AuthPageMeta = { ...baseMeta, ...customMeta } as AuthPageMeta;
 
     // Canonical URL'i ayarla
     meta.canonicalUrl = `${config.baseUrl}/${config.locale}/auth/${config.page}`;
 
     // Document title'ı güncelle
-    document.title = meta.title;
+    if (meta.title) {
+      document.title = meta.title;
+    }
 
     // Meta description'ı güncelle
-    AuthSEO.updateMetaTag('description', meta.description);
+    if (meta.description) {
+      AuthSEO.updateMetaTag('description', meta.description);
+    }
 
     // Meta keywords'ü güncelle
-    AuthSEO.updateMetaTag('keywords', meta.keywords);
+    if (meta.keywords) {
+      AuthSEO.updateMetaTag('keywords', meta.keywords);
+    }
 
     // Open Graph meta tag'lerini güncelle
     AuthSEO.updateOpenGraphMeta(meta);
@@ -225,8 +231,8 @@ export class AuthSEO {
     return {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
-      name: AuthSEO.DEFAULT_META[page].title,
-      description: AuthSEO.DEFAULT_META[page].description,
+      name: AuthSEO.DEFAULT_META[page]?.title || 'Auth Page',
+      description: AuthSEO.DEFAULT_META[page]?.description || 'Authentication page',
       url: `${baseUrl}/${locale}/auth/${page}`,
       inLanguage: locale,
       isPartOf: {
@@ -252,7 +258,7 @@ export class AuthSEO {
           {
             '@type': 'ListItem',
             position: 3,
-            name: AuthSEO.DEFAULT_META[page].title,
+            name: AuthSEO.DEFAULT_META[page]?.title || 'Auth Page',
             item: `${baseUrl}/${locale}/auth/${page}`,
           },
         ],

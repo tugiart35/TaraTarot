@@ -12,12 +12,23 @@ export const DateUtils = {
     format: 'short' | 'long' | 'time' = 'short'
   ): string => {
     const d = new Date(date);
-    const options: Intl.DateTimeFormatOptions = {
-      short: { year: 'numeric', month: 'short', day: 'numeric' },
-      long: { year: 'numeric', month: 'long', day: 'numeric' },
-      time: { hour: '2-digit', minute: '2-digit' },
-    };
-    return d.toLocaleDateString('tr-TR', options[format]);
+    let options: Intl.DateTimeFormatOptions;
+    
+    switch (format) {
+      case 'short':
+        options = { year: 'numeric', month: 'short', day: 'numeric' };
+        break;
+      case 'long':
+        options = { year: 'numeric', month: 'long', day: 'numeric' };
+        break;
+      case 'time':
+        options = { hour: '2-digit', minute: '2-digit' };
+        break;
+      default:
+        options = { year: 'numeric', month: 'short', day: 'numeric' };
+    }
+    
+    return d.toLocaleDateString('tr-TR', options);
   },
 
   formatRelativeTime: (date: string | Date): string => {
@@ -209,7 +220,11 @@ export const ArrayUtils = {
     const shuffled = [...arr];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      const temp = shuffled[i];
+      if (shuffled[j] !== undefined && temp !== undefined) {
+        shuffled[i] = shuffled[j];
+        shuffled[j] = temp;
+      }
     }
     return shuffled;
   },
@@ -232,15 +247,15 @@ export const ObjectUtils = {
         typeof source[key] === 'object' &&
         !Array.isArray(source[key])
       ) {
-        result[key] = ObjectUtils.deepMerge(target[key] || {}, source[key]);
-      } else {
+        result[key] = ObjectUtils.deepMerge(target[key] || ({} as any), source[key]);
+      } else if (source[key] !== undefined) {
         result[key] = source[key];
       }
     }
     return result;
   },
 
-  pick: <T, K extends keyof T>(obj: T, keys: K[]): Pick<T, K> => {
+  pick: <T extends Record<string, any>, K extends keyof T>(obj: T, keys: K[]): Pick<T, K> => {
     const result = {} as Pick<T, K>;
     keys.forEach(key => {
       if (key in obj) {

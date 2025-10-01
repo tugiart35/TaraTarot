@@ -20,12 +20,12 @@ export function extractUserIdFromOrderId(orderId: string): string | null {
     // Format 2: user_userId_package_packageType_timestamp
     const parts = orderId.split('_');
     if (parts.length >= 2 && parts[0] === 'user') {
-      return parts[1];
+      return parts[1] || null;
     }
 
     // Format 3: userId_package_timestamp
     if (parts.length >= 3 && parts[1] === 'package') {
-      return parts[0];
+      return parts[0] || null;
     }
 
     return null;
@@ -44,12 +44,12 @@ export function extractPackageIdFromOrderId(orderId: string): string | null {
 
     // Format: user_userId_package_packageType_timestamp
     if (parts.length >= 4 && parts[0] === 'user' && parts[2] === 'package') {
-      return parts[3];
+      return parts[3] || null;
     }
 
     // Format: userId_package_packageType_timestamp
     if (parts.length >= 3 && parts[1] === 'package') {
-      return parts[2];
+      return parts[2] || null;
     }
 
     return null;

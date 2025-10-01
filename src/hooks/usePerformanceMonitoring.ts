@@ -49,8 +49,8 @@ export function usePerformanceMonitoring() {
 
   // Performance metrics collection
   const trackPerformance = useCallback((metrics: PerformanceMetrics) => {
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'performance_metrics', {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'performance_metrics', {
         event_category: 'Layout',
         event_label: 'Performance',
         value: Math.round(metrics.totalLayoutTime),
@@ -65,8 +65,8 @@ export function usePerformanceMonitoring() {
 
   // Navigation event tracking
   const trackNavigationEvent = useCallback((event: NavigationEvent) => {
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'navigation_interaction', {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'navigation_interaction', {
         event_category: 'Navigation',
         event_label: event.item,
         value: 1,
@@ -113,8 +113,8 @@ export function usePerformanceMonitoring() {
 
   // Page view tracking
   useEffect(() => {
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('config', 'G-Y2HESMXJXD', {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('config', 'G-Y2HESMXJXD', {
         page_title: document.title,
         page_location: window.location.href,
         page_path: pathname,

@@ -7,6 +7,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import { supabase } from '@/lib/supabase/client';
+import type { AuthChangeEvent, Session } from '@supabase/supabase-js';
 
 export interface AuthUser {
   id: string;
@@ -92,9 +93,9 @@ export function useAuthBase<T extends AuthUser>(): AuthState<T> & AuthActions {
     // Listen to auth state changes
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange(async (event, session) => {
+    } = supabase.auth.onAuthStateChange(async (event: AuthChangeEvent, session: Session | null) => {
       if (isMounted) {
-        setUser((session?.user as T) ?? null);
+        setUser((session?.user as unknown as T) ?? null);
         setLoading(false);
 
         if (event === 'SIGNED_OUT') {

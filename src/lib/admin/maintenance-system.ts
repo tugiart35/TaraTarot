@@ -70,7 +70,7 @@ export class MaintenanceSystemManager {
       }
 
       const maintenanceData = settings.reduce(
-        (acc, setting) => {
+        (acc: Record<string, any>, setting: any) => {
           acc[setting.key] = setting.value;
           return acc;
         },

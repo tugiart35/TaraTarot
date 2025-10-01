@@ -7,11 +7,6 @@
 
 import { NextResponse } from 'next/server';
 
-interface ErrorDetails {
-  message: string;
-  code?: string;
-  details?: string;
-}
 
 export class ErrorResponse {
   private static isProduction(): boolean {

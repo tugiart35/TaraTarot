@@ -45,7 +45,7 @@ Gereklilik ve Kullanım Durumu:
 'use client';
 
 import { useEffect, useState, useCallback } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { supabase } from '@/lib/supabase/client';
 import { useAuth } from '@/hooks/auth/useAuth';
@@ -90,9 +90,9 @@ export default function PackagesPage() {
   const { user, loading: authLoading } = useAuth();
   const { t } = useTranslations();
   const router = useRouter();
+  const pathname = usePathname();
 
   // Pathname'den locale'i çıkar
-  const pathname = window.location.pathname;
   const locale = pathname.split('/')[1] || 'tr';
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [loading, setLoading] = useState(true);

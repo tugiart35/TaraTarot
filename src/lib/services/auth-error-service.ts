@@ -5,8 +5,7 @@
  * DRY principle uygulayarak tekrarlanan error handling kodlarını önler.
  */
 
-import { NextRequest, NextResponse } from 'next/server';
-import { RedirectUtils } from '@/lib/utils/redirect-utils';
+import { NextResponse } from 'next/server';
 
 export class AuthErrorService {
   /**

@@ -21,7 +21,8 @@ import { useEffect, useState } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { supabase } from '@/lib/supabase/client';
 import { logError, logSupabaseError } from '@/lib/logger';
-import { useSimpleAdmin } from '@/hooks/useSimpleAdmin';
+import { useAdminAuth } from '@/providers/AdminAuthProvider';
+import { usePerformanceMonitor } from '@/hooks/usePerformanceMonitor';
 import {
   Users,
   Package,
@@ -47,6 +48,11 @@ interface AdminStats {
   totalProfiles: number;
   dailyCreditUsage: number;
   dailyRevenue: number;
+  last7DaysUsage: Array<{
+    date: string;
+    credits: number;
+    transactions: number;
+  }>;
   recentUsers: Array<{
     id: string;
     display_name?: string;
@@ -73,40 +79,64 @@ export default function AdminDashboard() {
   const locale = pathname.split('/')[1] || 'tr';
 
   // useSimpleAdmin hook'undan admin durumunu al
-  const { admin, loading: authLoading, isAuthenticated } = useSimpleAdmin();
+  const { admin, loading: authLoading, isAuthenticated } = useAdminAuth();
+  
+  // Performans monitoring hook'u - otomatik yenileme yok
+  const { 
+    currentMetrics: systemPerformance, 
+    refreshMetrics: refreshPerformance
+  } = usePerformanceMonitor(0); // Otomatik yenileme yok
+  
+  // Gerçek sistem monitoring hook'u - devre dışı bırakıldı
+  // const { 
+  //   startMonitoring, 
+  //   stopMonitoring, 
+  //   collectMetrics, 
+  //   saveMetrics 
+  // } = useRealSystemMonitoring(60000); // 1 dakika
+  
   const [stats, setStats] = useState<AdminStats>({
     totalUsers: 0,
     totalCredits: 0,
     totalProfiles: 0,
     dailyCreditUsage: 0,
     dailyRevenue: 0,
+    last7DaysUsage: [],
     recentUsers: [],
   });
   const [loading, setLoading] = useState(true);
   const [isRedirecting, setIsRedirecting] = useState(false);
 
-  // Admin kontrolü - sadece bir kez çalıştır
+  // Admin kontrolü - sadece gerçek admin kullanıcıları
   useEffect(() => {
-    if (!authLoading && !isAuthenticated && !isRedirecting) {
+    if (!authLoading && (!isAuthenticated || !admin || !admin.is_admin) && !isRedirecting) {
       setIsRedirecting(true);
-      console.log('Admin girişi yapılmamış, auth sayfasına yönlendiriliyor');
+      // Admin girişi yapılmamış veya admin yetkisi yok, auth sayfasına yönlendiriliyor
       router.push(`/${locale}/admin/auth`);
     }
-  }, [authLoading, isAuthenticated, isRedirecting, router, locale]);
+  }, [authLoading, isAuthenticated, admin, isRedirecting, router, locale]);
 
   useEffect(() => {
     // Sadece admin kullanıcı için stats yükle
-    if (!authLoading && isAuthenticated && admin) {
+    if (!authLoading && isAuthenticated && admin && admin.is_admin) {
       fetchStats();
+      refreshPerformance(); // İlk yüklemede performans verilerini güncelle
+      // startMonitoring(); // Gerçek sistem monitoring devre dışı
     }
-  }, [authLoading, isAuthenticated, admin]);
+    
+    // Cleanup function
+    return () => {
+      // stopMonitoring(); // Gerçek sistem monitoring devre dışı
+    };
+  }, [authLoading, isAuthenticated, admin, refreshPerformance]);
 
   const fetchStats = async () => {
     try {
-      // Toplam kullanıcı sayısı
+      // Toplam kullanıcı sayısı (admin hariç)
       const { count: userCount, error: countError } = await supabase
         .from('profiles')
-        .select('*', { count: 'exact', head: true });
+        .select('*', { count: 'exact', head: true })
+        .eq('is_admin', false);
 
       if (countError) {
         logSupabaseError('profile count', countError);
@@ -126,10 +156,11 @@ export default function AdminDashboard() {
         0
       );
 
-      // Son kullanıcılar için ayrı sorgu
+      // Son kullanıcılar için ayrı sorgu (admin hariç)
       const { data: profiles, error: profileError } = await supabase
         .from('profiles')
         .select('id, credit_balance, display_name, created_at')
+        .eq('is_admin', false)
         .order('created_at', { ascending: false })
         .limit(5);
 
@@ -137,14 +168,17 @@ export default function AdminDashboard() {
         logSupabaseError('profiles fetch', profileError);
       }
 
-      // Günlük kredi harcama verilerini çek
-      const today = new Date().toISOString().split('T')[0];
+      // Günlük kredi harcama verilerini çek - timezone aware
+      const now = new Date();
+      const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+      const todayEnd = new Date(todayStart.getTime() + 24 * 60 * 60 * 1000);
+      
       const { data: dailyTransactions, error: dailyError } = await supabase
         .from('transactions')
-        .select('delta_credits')
+        .select('delta_credits, created_at')
         .lt('delta_credits', 0)
-        .gte('created_at', `${today}T00:00:00.000Z`)
-        .lt('created_at', `${today}T23:59:59.999Z`);
+        .gte('created_at', todayStart.toISOString())
+        .lt('created_at', todayEnd.toISOString());
 
       if (dailyError) {
         logSupabaseError('daily transactions fetch', dailyError);
@@ -156,15 +190,67 @@ export default function AdminDashboard() {
         0
       );
 
-      // Günlük gelir hesaplama (Shopier'den)
+      // Günlük kredi harcama bilgileri
+
+      // Admin sayısını kontrol et (istatistik için)
+      await supabase
+        .from('profiles')
+        .select('*', { count: 'exact', head: true })
+        .eq('is_admin', true);
+
+      // Son 7 günün günlük kredi harcama analizi
+      const last7Days = [];
+      for (let i = 6; i >= 0; i--) {
+        const date = new Date();
+        date.setDate(date.getDate() - i);
+        const dayStart = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+        const dayEnd = new Date(dayStart.getTime() + 24 * 60 * 60 * 1000);
+        
+        last7Days.push({
+          date: dayStart.toISOString().split('T')[0],
+          start: dayStart.toISOString(),
+          end: dayEnd.toISOString()
+        });
+      }
+
+      // Son 7 günün analizi hazır
+
+      // Son 7 günün günlük kredi harcama verilerini çek
+      const last7DaysUsage = [];
+      for (let i = 6; i >= 0; i--) {
+        const date = new Date();
+        date.setDate(date.getDate() - i);
+        const dayStart = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+        const dayEnd = new Date(dayStart.getTime() + 24 * 60 * 60 * 1000);
+        
+        const { data: dayTransactions } = await supabase
+          .from('transactions')
+          .select('delta_credits')
+          .lt('delta_credits', 0)
+          .gte('created_at', dayStart.toISOString())
+          .lt('created_at', dayEnd.toISOString());
+
+        const dayCredits = (dayTransactions || []).reduce(
+          (sum: number, transaction: any) => sum + Math.abs(transaction.delta_credits),
+          0
+        );
+
+        last7DaysUsage.push({
+          date: dayStart.toISOString().split('T')[0] || '',
+          credits: dayCredits,
+          transactions: dayTransactions?.length || 0
+        });
+      }
+
+      // Günlük gelir hesaplama (Shopier'den) - timezone aware
       const { data: dailyRevenueData, error: dailyRevenueError } =
         await supabase
           .from('transactions')
-          .select('amount')
+          .select('amount, created_at')
           .eq('type', 'purchase')
           .eq('ref_type', 'shopier_payment')
-          .gte('created_at', `${today}T00:00:00.000Z`)
-          .lt('created_at', `${today}T23:59:59.999Z`);
+          .gte('created_at', todayStart.toISOString())
+          .lt('created_at', todayEnd.toISOString());
 
       if (dailyRevenueError) {
         logSupabaseError('daily revenue fetch', dailyRevenueError);
@@ -189,6 +275,7 @@ export default function AdminDashboard() {
         totalProfiles: userCount || 0,
         dailyCreditUsage,
         dailyRevenue,
+        last7DaysUsage,
         recentUsers: formattedUsers,
       });
     } catch (error) {
@@ -199,6 +286,7 @@ export default function AdminDashboard() {
         totalProfiles: 0,
         dailyCreditUsage: 0,
         dailyRevenue: 0,
+        last7DaysUsage: [],
         recentUsers: [],
       });
     } finally {
@@ -528,6 +616,72 @@ export default function AdminDashboard() {
         </div>
       </div>
 
+      {/* Son 7 Gün Kredi Harcama Analizi */}
+      <div className='admin-card rounded-2xl p-6 admin-hover-lift'>
+        <div className='flex items-center justify-between mb-6'>
+          <div className='flex items-center space-x-3'>
+            <div className='admin-gradient-primary p-3 rounded-xl'>
+              <TrendingUp className='h-6 w-6 text-white' />
+            </div>
+            <div>
+              <h3 className='text-xl font-bold text-white'>Son 7 Gün Analizi</h3>
+              <p className='text-slate-400'>Günlük kredi harcama trendi</p>
+            </div>
+          </div>
+        </div>
+
+        <div className='grid grid-cols-1 md:grid-cols-7 gap-3'>
+          {stats.last7DaysUsage.map((day, index) => {
+            const isToday = index === 6;
+            const isYesterday = index === 5;
+            const dayName = isToday ? 'Bugün' : isYesterday ? 'Dün' : 
+              new Date(day.date).toLocaleDateString('tr-TR', { weekday: 'short' });
+            
+            return (
+              <div
+                key={day.date}
+                className={`admin-glass rounded-lg p-4 text-center ${
+                  isToday ? 'ring-2 ring-blue-500' : ''
+                }`}
+              >
+                <div className='text-xs text-slate-400 mb-2'>{dayName}</div>
+                <div className='text-lg font-bold text-white mb-1'>
+                  {day.credits}
+                </div>
+                <div className='text-xs text-slate-500'>
+                  {day.transactions} işlem
+                </div>
+                <div className='mt-2 h-2 bg-slate-700 rounded-full overflow-hidden'>
+                  <div
+                    className='h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-500'
+                    style={{
+                      width: `${Math.min(100, (day.credits / Math.max(...stats.last7DaysUsage.map(d => d.credits), 1)) * 100)}%`
+                    }}
+                  />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <div className='mt-6 p-4 admin-gradient-dark rounded-lg'>
+          <div className='flex items-center justify-between'>
+            <div>
+              <div className='text-sm text-slate-400'>Toplam 7 Gün</div>
+              <div className='text-2xl font-bold text-white'>
+                {stats.last7DaysUsage.reduce((sum, day) => sum + day.credits, 0)} Kredi
+              </div>
+            </div>
+            <div className='text-right'>
+              <div className='text-sm text-slate-400'>Ortalama Günlük</div>
+              <div className='text-lg font-semibold text-blue-400'>
+                {Math.round(stats.last7DaysUsage.reduce((sum, day) => sum + day.credits, 0) / 7)} Kredi
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Real-time Monitoring */}
       <div className='admin-card rounded-2xl p-6 admin-hover-lift'>
         {/* <RealTimeMonitoring /> Archived */}
@@ -540,54 +694,108 @@ export default function AdminDashboard() {
             <Activity className='h-5 w-5 mr-2 text-cyan-400' />
             Sistem Performansı
           </h3>
-          <div className='text-cyan-400 text-sm font-medium'>Real-time</div>
+          <div className='flex items-center space-x-2'>
+            <div className='text-cyan-400 text-sm font-medium'>
+              {systemPerformance ? 
+                `Son güncelleme: ${new Date(systemPerformance.timestamp).toLocaleTimeString('tr-TR')}` : 
+                'Real-time'}
+            </div>
+            <button 
+              onClick={() => refreshPerformance()}
+              className='p-1 rounded-md bg-blue-900/50 hover:bg-blue-800/50 transition-colors'
+              title='Verileri yenile'
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-cyan-400">
+                <path d="M21 2v6h-6"></path>
+                <path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path>
+                <path d="M3 22v-6h6"></path>
+                <path d="M21 12a9 9 0 0 1-15 6.7L3 16"></path>
+              </svg>
+            </button>
+            <button 
+              onClick={() => refreshPerformance()}
+              className='p-1 rounded-md bg-green-900/50 hover:bg-green-800/50 transition-colors'
+              title='Performans verilerini yenile'
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-green-400">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </button>
+          </div>
         </div>
 
         <div className='grid grid-cols-1 md:grid-cols-4 gap-6'>
           <div className='text-center'>
-            <div className='text-2xl font-bold text-green-400 mb-1'>99.9%</div>
+            <div className='text-2xl font-bold text-green-400 mb-1'>
+              {systemPerformance ? `${systemPerformance.uptime.toFixed(1)}%` : '99.9%'}
+            </div>
             <div className='text-sm text-slate-300'>Uptime</div>
             <div className='mt-2 bg-green-400/20 rounded-full h-2'>
               <div
                 className='bg-green-400 rounded-full h-2'
-                style={{ width: '99.9%' }}
+                style={{ width: `${systemPerformance ? systemPerformance.uptime : 99.9}%` }}
               ></div>
             </div>
           </div>
 
           <div className='text-center'>
-            <div className='text-2xl font-bold text-blue-400 mb-1'>45ms</div>
+            <div className='text-2xl font-bold text-blue-400 mb-1'>
+              {systemPerformance ? `${systemPerformance.responseTime}ms` : '45ms'}
+            </div>
             <div className='text-sm text-slate-300'>Response Time</div>
             <div className='mt-2 bg-blue-400/20 rounded-full h-2'>
               <div
                 className='bg-blue-400 rounded-full h-2'
-                style={{ width: '85%' }}
+                style={{ 
+                  width: `${systemPerformance ? 
+                    Math.min(100, (systemPerformance.responseTime / 100) * 100) : 85}%` 
+                }}
               ></div>
             </div>
           </div>
 
           <div className='text-center'>
-            <div className='text-2xl font-bold text-purple-400 mb-1'>2.4GB</div>
+            <div className='text-2xl font-bold text-purple-400 mb-1'>
+              {systemPerformance ? `${systemPerformance.memoryUsage.toFixed(1)}GB` : '2.4GB'}
+            </div>
             <div className='text-sm text-slate-300'>Memory Usage</div>
             <div className='mt-2 bg-purple-400/20 rounded-full h-2'>
               <div
                 className='bg-purple-400 rounded-full h-2'
-                style={{ width: '60%' }}
+                style={{ 
+                  width: `${systemPerformance ? 
+                    Math.min(100, (systemPerformance.memoryUsage / 4) * 100) : 60}%` 
+                }}
               ></div>
             </div>
           </div>
 
           <div className='text-center'>
-            <div className='text-2xl font-bold text-orange-400 mb-1'>12%</div>
+            <div className='text-2xl font-bold text-orange-400 mb-1'>
+              {systemPerformance ? `${systemPerformance.cpuUsage}%` : '12%'}
+            </div>
             <div className='text-sm text-slate-300'>CPU Usage</div>
             <div className='mt-2 bg-orange-400/20 rounded-full h-2'>
               <div
                 className='bg-orange-400 rounded-full h-2'
-                style={{ width: '12%' }}
+                style={{ 
+                  width: `${systemPerformance ? systemPerformance.cpuUsage : 12}%` 
+                }}
               ></div>
             </div>
           </div>
         </div>
+        
+        {systemPerformance && systemPerformance.activeUsers > 0 && (
+          <div className='mt-4 p-3 bg-blue-900/30 rounded-lg'>
+            <div className='flex items-center justify-between'>
+              <div className='text-sm text-slate-300'>Aktif Kullanıcılar:</div>
+              <div className='text-lg font-bold text-blue-400'>{systemPerformance.activeUsers}</div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

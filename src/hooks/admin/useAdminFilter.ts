@@ -18,7 +18,7 @@ export function useAdminFilter<T>(
   filterKey: keyof T,
   defaultFilter: string = 'all'
 ): AdminFilterHookReturn<T> {
-  const [filter, setFilter] = useState<string>(defaultFilter);
+  const [filter, setFilter] = useState<T[keyof T] | string>(defaultFilter);
 
   const filteredData = useMemo(() => {
     if (filter === 'all') {

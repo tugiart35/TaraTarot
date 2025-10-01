@@ -146,7 +146,7 @@ export function useDashboardBaseComponent({
       const errorMessage =
         err instanceof Error ? err.message : 'İstatistikler yüklenemedi';
       setError(errorMessage);
-      showToast('error', errorMessage);
+      showToast(errorMessage, 'error');
     } finally {
       setLoading(false);
     }
@@ -195,13 +195,13 @@ export function useDashboardBaseComponent({
       }));
 
       showToast(
-        'success',
-        t('dashboard.creditBalanceRefreshed', 'Kredi bakiyesi yenilendi')
+        t('dashboard.creditBalanceRefreshed', 'Kredi bakiyesi yenilendi'),
+        'success'
       );
     } catch (err) {
       const errorMessage =
         err instanceof Error ? err.message : 'Kredi bakiyesi yenilenemedi';
-      showToast('error', errorMessage);
+      showToast(errorMessage, 'error');
     }
   }, [user, showToast, t]);
 

@@ -25,7 +25,7 @@
  */
 
 import { useState, useEffect, useCallback } from 'react';
-import type { GeolocationData, SupportedLocale } from '@/lib/utils/geolocation';
+import type { GeolocationData } from '@/lib/utils/geolocation';
 
 interface GeolocationState {
   data: GeolocationData | null;
@@ -37,7 +37,7 @@ interface GeolocationState {
 interface GeolocationHookReturn extends GeolocationState {
   requestLocation: () => Promise<void>;
   clearError: () => void;
-  getLocale: () => SupportedLocale;
+  getLocale: () => string;
 }
 
 // Local storage key for caching
@@ -267,7 +267,7 @@ export function useGeolocation(): GeolocationHookReturn {
   }, []);
 
   // Dil belirle
-  const getLocale = useCallback((): SupportedLocale => {
+  const getLocale = useCallback((): string => {
     return state.data?.locale || 'en';
   }, [state.data]);
 
@@ -281,7 +281,7 @@ export function useGeolocation(): GeolocationHookReturn {
 
 // Basit coğrafi konum hook'u (sadece dil için)
 export function useLocaleFromGeolocation(): {
-  locale: SupportedLocale;
+  locale: string;
   loading: boolean;
   error: string | null;
   requestLocale: () => Promise<void>;

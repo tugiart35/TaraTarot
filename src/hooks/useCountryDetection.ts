@@ -169,7 +169,7 @@ export const useCountryDetection = () => {
             const result = {
               country: countryName,
               countryCode: countryCode,
-              phoneCode: phoneCode,
+              phoneCode: phoneCode || '+90', // Varsayılan Türkiye kodu
             };
 
             setCountryInfo(result);

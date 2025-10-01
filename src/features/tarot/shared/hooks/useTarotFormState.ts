@@ -9,6 +9,7 @@ export interface PersonalInfo {
   birthDate: string;
   email: string;
   phone: string;
+  countryCode: string;
 }
 
 export interface Questions {
@@ -23,6 +24,7 @@ export interface FormErrors {
   birthDate: string;
   email: string;
   phone: string;
+  countryCode: string;
   concern: string;
   understanding: string;
   emotional: string;
@@ -91,6 +93,7 @@ export function useTarotFormState({
     birthDate: '',
     email: '',
     phone: '',
+    countryCode: '',
   });
 
   const [communicationMethod, setCommunicationMethod] = useState<
@@ -109,6 +112,7 @@ export function useTarotFormState({
     birthDate: '',
     email: '',
     phone: '',
+    countryCode: '',
     concern: '',
     understanding: '',
     emotional: '',

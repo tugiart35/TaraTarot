@@ -83,7 +83,7 @@ class SessionManager {
    * Set up Supabase auth state listener
    */
   private setupAuthListener(): void {
-    supabase.auth.onAuthStateChange((event, session) => {
+    supabase.auth.onAuthStateChange((event: any, session: any) => {
       logDebug('Auth state changed', { event, hasSession: !!session });
 
       switch (event) {

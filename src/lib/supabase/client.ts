@@ -147,6 +147,14 @@ export interface Database {
           timezone: string;
           created_at: string;
           updated_at: string;
+          first_name?: string;
+          last_name?: string;
+          full_name?: string;
+          birth_date?: string;
+          gender?: string;
+          bio?: string;
+          last_login_at?: string;
+          login_count?: number;
         };
         Insert: {
           id?: string;
@@ -159,6 +167,14 @@ export interface Database {
           timezone?: string;
           created_at?: string;
           updated_at?: string;
+          first_name?: string;
+          last_name?: string;
+          full_name?: string;
+          birth_date?: string;
+          gender?: string;
+          bio?: string;
+          last_login_at?: string;
+          login_count?: number;
         };
         Update: {
           id?: string;
@@ -171,6 +187,14 @@ export interface Database {
           timezone?: string;
           created_at?: string;
           updated_at?: string;
+          first_name?: string;
+          last_name?: string;
+          full_name?: string;
+          birth_date?: string;
+          gender?: string;
+          bio?: string;
+          last_login_at?: string;
+          login_count?: number;
         };
       };
       readings: {

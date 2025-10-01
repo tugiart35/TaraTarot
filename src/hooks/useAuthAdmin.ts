@@ -12,58 +12,10 @@ interface AdminUser extends AuthUser {
 }
 
 export function useAuthAdmin() {
-  const { user, loading, error, isAuthenticated, clearError, refreshSession } =
+  const { loading } =
     useAuthBase<AdminUser>();
   const [admin, setAdmin] = useState<AdminUser | null>(null);
 
-  // Admin session kontrolü - Supabase ile entegre
-  const checkAdminSession = useCallback(async () => {
-    try {
-      if (user && user.is_admin) {
-        setAdmin(user);
-        return true;
-      }
-      return false;
-    } catch (error) {
-      console.error('Admin session kontrol hatası:', error);
-      return false;
-    }
-  }, [user]);
-
-  // Supabase'den admin kontrolü yap
-  const checkSupabaseAdmin = useCallback(async () => {
-    try {
-      if (!user) {
-        return false;
-      }
-
-      // Profiles tablosundan admin kontrolü yap
-      const { data: profile, error: profileError } = await supabase
-        .from('profiles')
-        .select('id, email, is_admin, display_name')
-        .eq('id', user.id)
-        .eq('is_admin', true)
-        .single();
-
-      if (profileError || !profile) {
-        return false;
-      }
-
-      // Admin kullanıcı bulundu
-      const adminUser: AdminUser = {
-        id: profile.id,
-        email: profile.email,
-        is_admin: profile.is_admin,
-        display_name: profile.display_name,
-      };
-
-      setAdmin(adminUser);
-      return true;
-    } catch (error) {
-      console.error('Supabase admin kontrol hatası:', error);
-      return false;
-    }
-  }, [user]);
 
   // Admin session'ını temizle
   const clearAdminSession = useCallback(async () => {
@@ -74,36 +26,23 @@ export function useAuthAdmin() {
   // Admin girişi yap
   const loginAdmin = useCallback(async (email: string, password: string) => {
     try {
-      // Önce basit admin kontrolü yap (SimpleAdminLogin ile uyumlu)
-      if (email === 'tugi@admin.com' && password === 'Tugay.888') {
-        console.log('🔐 Basit admin girişi başarılı:', email);
-
-        const adminUser: AdminUser = {
-          id: 'admin-session',
-          email: email,
-          is_admin: true,
-          display_name: 'Admin User',
-        };
-
-        setAdmin(adminUser);
-        return { success: true, error: null };
-      }
-
-      console.log('🔐 Supabase admin kontrolü yapılıyor...');
-
-      // Supabase admin kontrolü
+      // Production için tüm geliştirme modu kodları kaldırıldı
+      
+      // Supabase admin kontrolü - güvenli authentication
+      console.log('🔐 Supabase admin authentication başlatılıyor...');
+      
       const { data, error } = await supabase.auth.signInWithPassword({
         email,
         password,
       });
 
       if (error) {
-        console.log('🔐 Supabase giriş hatası:', error.message);
+        // Supabase giriş hatası
         return { success: false, error: error.message };
       }
 
       if (data.user) {
-        console.log('🔐 Supabase giriş başarılı, admin kontrolü yapılıyor...');
+        // Supabase giriş başarılı, admin kontrolü yapılıyor
 
         // Admin kontrolü yap
         const { data: profile, error: profileError } = await supabase
@@ -114,7 +53,7 @@ export function useAuthAdmin() {
           .single();
 
         if (profileError || !profile) {
-          console.log('🔐 Admin yetkisi yok, çıkış yapılıyor...');
+          // Admin yetkisi yok, çıkış yapılıyor
           await supabase.auth.signOut();
           return {
             success: false,
@@ -122,7 +61,7 @@ export function useAuthAdmin() {
           };
         }
 
-        console.log('🔐 Supabase admin girişi başarılı:', profile.email);
+        // Supabase admin girişi başarılı
 
         // Başarılı admin girişi
         const adminUser: AdminUser = {
@@ -132,6 +71,7 @@ export function useAuthAdmin() {
           display_name: profile.display_name,
         };
 
+        console.log('✅ Admin kullanıcısı doğrulandı:', profile.email);
         setAdmin(adminUser);
         return { success: true, error: null };
       }
@@ -154,20 +94,47 @@ export function useAuthAdmin() {
     }
   }, [clearAdminSession]);
 
-  // İlk yükleme kontrolü
+  // İlk yükleme kontrolü - Supabase session'ını kontrol et
   useEffect(() => {
     const initializeAdmin = async () => {
-      // Önce Supabase kontrolü yap
-      await checkSupabaseAdmin();
+      try {
+        // Mevcut Supabase session'ını kontrol et
+        const { data: { session } } = await supabase.auth.getSession();
+        
+        if (session?.user) {
+          console.log('🔐 Mevcut session bulundu:', session.user.email);
+          
+          // Admin kontrolü yap
+          const { data: profile, error: profileError } = await supabase
+            .from('profiles')
+            .select('id, email, is_admin, display_name')
+            .eq('id', session.user.id)
+            .eq('is_admin', true)
+            .single();
+
+          if (!profileError && profile) {
+            const adminUser: AdminUser = {
+              id: profile.id,
+              email: profile.email,
+              is_admin: profile.is_admin,
+              display_name: profile.display_name,
+            };
+            console.log('✅ Admin session restore edildi:', profile.email);
+            setAdmin(adminUser);
+          }
+        }
+      } catch (error) {
+        console.error('Session initialize error:', error);
+      }
     };
 
     initializeAdmin();
-  }, [checkSupabaseAdmin]);
+  }, []);
 
   return {
     admin,
     loading,
-    isAuthenticated,
+    isAuthenticated: !!admin, // Admin varsa authenticated kabul et
     loginAdmin,
     logoutAdmin,
     clearAdminSession,

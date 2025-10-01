@@ -27,7 +27,9 @@ import { defaultMetadata, viewport } from '@/lib/config/metadata';
 import { APP_CONFIG } from '@/lib/config/app-config';
 import { HeadTags, Footer } from '@/features/shared/layout';
 import { defaultLocale } from '@/lib/i18n/config';
-// import { generateMetaTags } from '@/lib/seo';
+import { Inter } from 'next/font/google';
+
+const inter = Inter({ subsets: ['latin'] });
 
 // Next.js için metadata export'u
 export const metadata = defaultMetadata;
@@ -38,9 +40,24 @@ export { viewport };
 // Ana layout fonksiyonu
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang={defaultLocale} className='h-full' data-scroll-behavior='smooth'>
+    <html lang={defaultLocale} className={`h-full ${inter.className}`} data-scroll-behavior='smooth'>
       <head>
         <HeadTags />
+        
+        {/* Performance Optimization: DNS Prefetch */}
+        <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+        <link rel='dns-prefetch' href='//www.google-analytics.com' />
+        <link rel='dns-prefetch' href='//connect.facebook.net' />
+
+        {/* Preload Critical Resources */}
+        <link
+          rel='preload'
+          href='/fonts/mystical-font.woff2'
+          as='font'
+          type='font/woff2'
+          crossOrigin='anonymous'
+        />
+
         {/* Google Analytics - G-Y2HESMXJXD */}
         <script
           async
@@ -58,7 +75,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
       </head>
       <body
-        className='h-full overflow-x-hidden'
+        className='h-full overflow-x-hidden antialiased'
         style={{ backgroundColor: APP_CONFIG.theme.backgroundColor }}
       >
         {children}

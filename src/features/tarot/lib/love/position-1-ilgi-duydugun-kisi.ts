@@ -34,6 +34,7 @@ export const position1Meanings: LovePosition1Meaning[] = [
     card: 'The Fool',
     position: 1,
     upright:
+    
       'İlgi duyduğun kişi, hayata karşı çocuksu bir merak ve heyecanla dolu. Yeni başlangıçlara açık, maceracı bir ruha sahip ancak bu durum bazen plansız ve programsız olmasına neden olabilir. İlişkilere de bu özgür ruhla yaklaşır.',
     reversed:
       'Ters Fool, bu kişinin pervasız, sorumsuz veya bir ilişkiye başlamaktan korkan biri olabileceğini gösterir. Potansiyel tehlikeleri görmezden geliyor ve bağlanmaktan kaçınıyor olabilir.',

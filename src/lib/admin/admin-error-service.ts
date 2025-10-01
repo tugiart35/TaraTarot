@@ -11,7 +11,7 @@ export class AdminErrorService {
   /**
    * Admin error'ını handle et ve user-friendly mesaj döndür
    */
-  static handleError(error: Error | unknown, context: string): string {
+  static handleError(error: Error | unknown): string {
     // Error logging is handled by monitoring system
 
     // Production'da sadece user-friendly mesaj
@@ -57,22 +57,8 @@ export class AdminErrorService {
     action: string,
     details: Record<string, unknown>
   ): void {
-    const logData = {
-      action,
-      details,
-      timestamp: new Date().toISOString(),
-      userAgent:
-        typeof window !== 'undefined' ? window.navigator.userAgent : 'server',
-      url: typeof window !== 'undefined' ? window.location.href : 'server',
-    };
-
     // Action logging is handled by monitoring system
-
-    // Production'da structured logging
-    if (process.env.NODE_ENV === 'production') {
-      // Sentry veya benzeri monitoring service'e gönder
-      // logToMonitoringService(logData);
-    }
+    console.log(`Admin action: ${action}`, details);
   }
 
   /**
@@ -83,29 +69,36 @@ export class AdminErrorService {
     message: string,
     details?: Record<string, unknown>
   ): AdminError {
-    return {
+    const error: AdminError = {
       code,
       message,
-      details,
     };
+    
+    if (details) {
+      error.details = details;
+    }
+    
+    return error;
   }
 
   /**
    * Supabase error'ını handle et
    */
-  static handleSupabaseError(error: Error | unknown, context: string): string {
-    if (error.code === 'PGRST116') {
+  static handleSupabaseError(error: Error | unknown): string {
+    const errorObj = error as any;
+    
+    if (errorObj.code === 'PGRST116') {
       return 'Aradığınız kayıt bulunamadı.';
-    } else if (error.code === 'PGRST301') {
+    } else if (errorObj.code === 'PGRST301') {
       return 'Bu işlem için yetkiniz bulunmuyor.';
-    } else if (error.code === '23505') {
+    } else if (errorObj.code === '23505') {
       return 'Bu kayıt zaten mevcut.';
-    } else if (error.code === '23503') {
+    } else if (errorObj.code === '23503') {
       return 'İlgili kayıt bulunamadı.';
-    } else if (error.code === '23514') {
+    } else if (errorObj.code === '23514') {
       return 'Girilen veriler geçersiz.';
     } else {
-      return this.handleError(error, context);
+      return this.handleError(error);
     }
   }
 
@@ -113,11 +106,13 @@ export class AdminErrorService {
    * Network error'ını handle et
    */
   static handleNetworkError(error: Error | unknown): string {
-    if (error.name === 'NetworkError') {
+    const errorObj = error as any;
+    
+    if (errorObj.name === 'NetworkError') {
       return 'Ağ bağlantısı hatası. Lütfen internet bağlantınızı kontrol edin.';
-    } else if (error.name === 'TimeoutError') {
+    } else if (errorObj.name === 'TimeoutError') {
       return 'İşlem zaman aşımına uğradı. Lütfen tekrar deneyin.';
-    } else if (error.name === 'AbortError') {
+    } else if (errorObj.name === 'AbortError') {
       return 'İşlem iptal edildi.';
     } else {
       return 'Ağ hatası oluştu. Lütfen tekrar deneyin.';
@@ -128,13 +123,15 @@ export class AdminErrorService {
    * Validation error'ını handle et
    */
   static handleValidationError(error: Error | unknown): string {
-    if (error.message?.includes('required')) {
+    const errorObj = error as any;
+    
+    if (errorObj.message?.includes('required')) {
       return 'Gerekli alanlar doldurulmalıdır.';
-    } else if (error.message?.includes('email')) {
+    } else if (errorObj.message?.includes('email')) {
       return 'Geçerli bir email adresi girin.';
-    } else if (error.message?.includes('password')) {
+    } else if (errorObj.message?.includes('password')) {
       return 'Şifre en az 8 karakter olmalıdır.';
-    } else if (error.message?.includes('length')) {
+    } else if (errorObj.message?.includes('length')) {
       return 'Girilen değer çok uzun veya çok kısa.';
     } else {
       return 'Girilen bilgiler geçersiz.';
@@ -147,13 +144,15 @@ export class AdminErrorService {
   static getUserFriendlyMessage(error: Error | unknown): string {
     if (typeof error === 'string') {
       return error;
-    } else if (error.message) {
+    } else if (error instanceof Error) {
       return error.message;
-    } else if (error.error) {
-      return error.error;
-    } else {
-      return 'Beklenmeyen bir hata oluştu.';
+    } else if (typeof error === 'object' && error !== null) {
+      const errorObj = error as any;
+      if (errorObj.error) {
+        return errorObj.error;
+      }
     }
+    return 'Beklenmeyen bir hata oluştu.';
   }
 
   /**

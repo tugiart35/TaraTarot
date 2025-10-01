@@ -66,6 +66,12 @@ function parseQuestions(
           (formKeys && translate(formKeys.email)) ||
           translate('readingModal.email', 'E-posta'),
         value: personalInfo.email ?? '-',
+      },
+      {
+        label:
+          (formKeys && translate(formKeys.phone)) ||
+          translate('readingModal.phone', 'Telefon'),
+        value: personalInfo.phone ?? '-',
       }
     );
   }

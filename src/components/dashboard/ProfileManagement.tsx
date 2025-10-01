@@ -1,6 +1,6 @@
 // Dashboard profil yönetimi bileşeni
 
-import { User, Settings, Coins, Clock } from 'lucide-react';
+import { User, Settings, Coins } from 'lucide-react';
 import { useTranslations } from '@/hooks/useTranslations';
 import { getDashboardRoutes } from '@/utils/dashboard/routing-utils';
 

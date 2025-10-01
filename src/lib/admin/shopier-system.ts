@@ -69,7 +69,7 @@ export class ShopierSystemManager {
       }
 
       const shopierData = settings.reduce(
-        (acc, setting) => {
+        (acc: Record<string, any>, setting: any) => {
           acc[setting.key] = setting.value;
           return acc;
         },

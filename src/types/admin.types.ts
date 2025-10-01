@@ -174,8 +174,8 @@ export interface AdminDataHookReturn<T> {
 }
 
 export interface AdminFilterHookReturn<T> {
-  filter: T;
-  setFilter: (filter: T) => void;
+  filter: T[keyof T] | string;
+  setFilter: (filter: T[keyof T] | string) => void;
   filteredData: T[];
 }
 

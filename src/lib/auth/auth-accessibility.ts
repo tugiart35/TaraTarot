@@ -23,7 +23,7 @@ export class AuthAccessibility {
   /**
    * Error'ı screen reader'a duyur
    */
-  static announceError(error: string, context: string = 'auth'): void {
+  static announceError(error: string): void {
     if (typeof window === 'undefined') {
       return;
     }
@@ -35,7 +35,7 @@ export class AuthAccessibility {
   /**
    * Success mesajını screen reader'a duyur
    */
-  static announceSuccess(message: string, context: string = 'auth'): void {
+  static announceSuccess(message: string): void {
     if (typeof window === 'undefined') {
       return;
     }
@@ -180,7 +180,7 @@ export class AuthAccessibility {
 
     return {
       role: 'form',
-      'aria-label': formLabels[formType],
+      'aria-label': formLabels[formType] || 'Form',
       'aria-live': 'polite',
     };
   }
@@ -229,7 +229,7 @@ export class AuthAccessibility {
     errorMessage: string
   ): void {
     const announcement = `${fieldName} field error: ${errorMessage}`;
-    this.announceError(announcement, 'validation');
+    this.announceError(announcement);
   }
 
   /**
@@ -240,9 +240,9 @@ export class AuthAccessibility {
     message: string
   ): void {
     if (status === 'success') {
-      this.announceSuccess(message, 'submission');
+      this.announceSuccess(message);
     } else {
-      this.announceError(message, 'submission');
+      this.announceError(message);
     }
   }
 

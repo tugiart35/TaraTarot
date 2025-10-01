@@ -33,6 +33,7 @@ export interface UseTarotReadingFlowReturn {
     birthDate: string;
     email: string;
     phone: string;
+    countryCode: string;
   };
   communicationMethod: 'email' | 'whatsapp';
   questions: {
@@ -46,6 +47,7 @@ export interface UseTarotReadingFlowReturn {
     birthDate: string;
     email: string;
     phone: string;
+    countryCode: string;
     concern: string;
     understanding: string;
     emotional: string;
@@ -70,7 +72,7 @@ export interface UseTarotReadingFlowReturn {
 
   // Form Actions
   updatePersonalInfo: (
-    field: 'name' | 'surname' | 'birthDate' | 'email' | 'phone',
+    field: 'name' | 'surname' | 'birthDate' | 'email' | 'phone' | 'countryCode',
     value: string
   ) => void;
   updateCommunicationMethod: (method: 'email' | 'whatsapp') => void;
@@ -85,6 +87,7 @@ export interface UseTarotReadingFlowReturn {
       birthDate: string;
       email: string;
       phone: string;
+      countryCode: string;
     }>
   >;
   setQuestions: React.Dispatch<
@@ -101,6 +104,7 @@ export interface UseTarotReadingFlowReturn {
       birthDate: string;
       email: string;
       phone: string;
+      countryCode: string;
       concern: string;
       understanding: string;
       emotional: string;

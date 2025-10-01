@@ -24,8 +24,7 @@
  * - PERFORMANSLI: Cache mekanizması ile
  */
 
-import { NextRequest } from 'next/server';
-import { getClientIP, cleanIPAddress } from './ip-utils';
+import { cleanIPAddress } from './ip-utils';
 import { determineLocale, type SupportedLocale } from './locale-utils';
 
 // Coğrafi konum bilgisi

@@ -378,9 +378,9 @@ const MARRIAGE_POSITIONS_INFO: PositionInfo[] = [
   {
     id: 1,
     title: 'Sonuç ne olacak?',
-    desc: 'Evlilik sürecinizin genel sonucunu ve nasıl ilerleyeceğini gösterir.',
+    desc: 'Evlilik sürecinizin genelsss sonucunu ve nasıl ilerleyeceğini gösterir.',
     description:
-      'Evlilik sürecinizin genel sonucunu ve nasıl ilerleyeceğini gösterir.',
+      'Evlilik sürecinizin genelsss sonucunu ve nasıl ilerleyeceğini gösterir.',
   },
   {
     id: 2,

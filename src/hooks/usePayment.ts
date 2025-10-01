@@ -184,9 +184,8 @@ export function usePayment(): UsePaymentReturn {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Get user role
-  const userRole: UserRoleLocal =
-    (user?.user_metadata?.role as UserRoleLocal) || 'guest';
+  // Get user role - basit role kontrolü
+  const userRole: UserRoleLocal = user?.is_admin ? 'admin' : 'user';
 
   // Get payment permissions
   const getPaymentPermissions = useCallback((): PaymentPermissions => {

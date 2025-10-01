@@ -8,7 +8,8 @@ import CreditPackages from './CreditPackages';
 import ProfileManagement from './ProfileManagement';
 import RecentActivity from './RecentActivity';
 import { UserProfile, Package, Reading } from '@/types/dashboard.types';
-import { EnhancedUser } from '@/types/auth.types';
+import type { AuthUser } from '@/hooks/shared/useAuthBase';
+import type { EnhancedUser } from '@/types/auth.types';
 import ErrorBoundary, {
   ErrorFallback,
 } from '@/components/shared/ui/ErrorBoundary';
@@ -16,7 +17,7 @@ import ErrorBoundary, {
 interface DashboardContainerProps {
   locale: string;
   profile: UserProfile | null;
-  user: EnhancedUser | null;
+  user: AuthUser | EnhancedUser | null;
   isAdmin: boolean;
   totalCount: number;
   recentReadings: Reading[];

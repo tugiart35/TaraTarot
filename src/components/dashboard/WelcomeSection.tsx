@@ -28,13 +28,14 @@
 // Dashboard hoş geldin bölümü bileşeni
 
 import { UserProfile } from '@/types/dashboard.types';
-import { EnhancedUser } from '@/types/auth.types';
+import type { AuthUser } from '@/hooks/shared/useAuthBase';
+import type { EnhancedUser } from '@/types/auth.types';
 import { formatDate, getMemberSince } from '@/utils/dashboard-utils';
 import { useTranslations } from '@/hooks/useTranslations';
 
 interface WelcomeSectionProps {
   profile: UserProfile | null;
-  user: EnhancedUser | null;
+  user: AuthUser | EnhancedUser | null;
   isAdmin: boolean;
 }
 

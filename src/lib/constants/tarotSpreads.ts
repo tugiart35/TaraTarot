@@ -167,36 +167,43 @@ const careerPositions: TarotCardPosition[] = [
     id: 1,
     title: 'spreads.career.positions.1.title',
     description: 'spreads.career.positions.1.description',
+    className: 'career-position-1',
   },
   {
     id: 2,
     title: 'spreads.career.positions.2.title',
     description: 'spreads.career.positions.2.description',
+    className: 'career-position-2',
   },
   {
     id: 3,
     title: 'spreads.career.positions.3.title',
     description: 'spreads.career.positions.3.description',
+    className: 'career-position-3',
   },
   {
     id: 4,
     title: 'spreads.career.positions.4.title',
     description: 'spreads.career.positions.4.description',
+    className: 'career-position-4',
   },
   {
     id: 5,
     title: 'spreads.career.positions.5.title',
     description: 'spreads.career.positions.5.description',
+    className: 'career-position-5',
   },
   {
     id: 6,
     title: 'spreads.career.positions.6.title',
     description: 'spreads.career.positions.6.description',
+    className: 'career-position-6',
   },
   {
     id: 7,
     title: 'spreads.career.positions.7.title',
     description: 'spreads.career.positions.7.description',
+    className: 'career-position-7',
   },
 ];
 

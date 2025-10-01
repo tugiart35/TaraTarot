@@ -28,7 +28,6 @@ Kullanım durumu:
 
 import { usePathname } from 'next/navigation';
 import { useMemo, useCallback } from 'react';
-import { useValidation, ValidationUtils } from '@/hooks/shared/useValidation';
 
 // Dil dosyalarını import et
 import trMessages from '../../messages/tr.json';

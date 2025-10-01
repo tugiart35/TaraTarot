@@ -6,8 +6,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
-import { useAuthAdmin } from '@/hooks/useAuthAdmin';
+import { useRouter, usePathname } from 'next/navigation';
+import { useAdminAuth } from '@/providers/AdminAuthProvider';
 import {
   Crown,
   Eye,
@@ -27,17 +27,16 @@ export default function PakizeAuthPage() {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
   const router = useRouter();
+  const pathname = usePathname();
 
   // Pathname'den locale'i çıkar
-  const pathname = window.location.pathname;
   const locale = pathname.split('/')[1] || 'tr';
 
   const {
-    admin,
     loading: authLoading,
     loginAdmin,
     isAuthenticated,
-  } = useAuthAdmin();
+  } = useAdminAuth();
 
   // Auth sayfasında admin kontrolü yapmıyoruz - döngüyü önlemek için
 
@@ -48,13 +47,14 @@ export default function PakizeAuthPage() {
     setSuccess('');
 
     try {
-      await loginAdmin(email, password);
-      setSuccess('Giriş başarılı! Admin paneline yönlendiriliyorsunuz...');
-
-      // 1 saniye bekle ve admin dashboard'a yönlendir
-      setTimeout(() => {
-        router.push(`/${locale}/admin`);
-      }, 1000);
+      const result = await loginAdmin(email, password);
+      
+      if (result.success) {
+        setSuccess('Giriş başarılı! Admin paneline yönlendiriliyorsunuz...');
+        // Router otomatik olarak yönlendirecek (useEffect)
+      } else {
+        setError(result.error || 'Giriş sırasında bir hata oluştu.');
+      }
     } catch (error: any) {
       setError(error.message || 'Giriş sırasında bir hata oluştu.');
     } finally {
@@ -66,16 +66,34 @@ export default function PakizeAuthPage() {
 
   // Eğer zaten admin kullanıcı ise dashboard'a yönlendir
   useEffect(() => {
-    if (!authLoading && isAuthenticated && admin) {
+    if (!authLoading && isAuthenticated) {
       router.push(`/${locale}/admin`);
     }
-  }, [authLoading, isAuthenticated, admin, router, locale]);
+  }, [authLoading, isAuthenticated, router, locale]);
+
+  // Loading durumu
+  if (authLoading) {
+    return (
+      <div className='min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-4 safe-top safe-bottom'>
+        <div className='w-full max-w-md mx-auto'>
+          <div className='bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 text-center'>
+            <div className='animate-pulse mb-4'>
+              <Crown className='h-12 w-12 text-blue-500 mx-auto' />
+            </div>
+            <div className='bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400 bg-clip-text text-transparent text-xl font-semibold'>
+              Admin paneli yükleniyor...
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   // Auth loading kontrolünü kaldırdık - direkt formu göster
 
   return (
-    <div className='min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-4'>
-      <div className='w-full max-w-md'>
+    <div className='min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-4 safe-top safe-bottom'>
+      <div className='w-full max-w-md mx-auto'>
         {/* Header */}
         <div className='text-center mb-8'>
           <div className='inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mb-4'>
@@ -86,7 +104,7 @@ export default function PakizeAuthPage() {
         </div>
 
         {/* Login Form */}
-        <div className='admin-card rounded-2xl p-8'>
+        <div className='bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-slate-700/50'>
           <form onSubmit={handleLogin} className='space-y-6'>
             {/* Email Field */}
             <div>
@@ -99,7 +117,7 @@ export default function PakizeAuthPage() {
                   type='email'
                   value={email}
                   onChange={e => setEmail(e.target.value)}
-                  className='w-full pl-10 pr-4 py-3 admin-glass rounded-lg border-0 text-white placeholder-slate-400 focus:ring-2 focus:ring-purple-500/50 focus:outline-none'
+                  className='w-full pl-10 pr-4 py-3 bg-slate-700/50 backdrop-blur-sm border border-slate-700/50 rounded-lg text-white placeholder-slate-400 focus:ring-2 focus:ring-purple-500/50 focus:outline-none touch-target'
                   placeholder='admin@example.com'
                   required
                 />
@@ -117,14 +135,14 @@ export default function PakizeAuthPage() {
                   type={showPassword ? 'text' : 'password'}
                   value={password}
                   onChange={e => setPassword(e.target.value)}
-                  className='w-full pl-10 pr-12 py-3 admin-glass rounded-lg border-0 text-white placeholder-slate-400 focus:ring-2 focus:ring-purple-500/50 focus:outline-none'
+                  className='w-full pl-10 pr-12 py-3 bg-slate-700/50 backdrop-blur-sm border border-slate-700/50 rounded-lg text-white placeholder-slate-400 focus:ring-2 focus:ring-purple-500/50 focus:outline-none touch-target'
                   placeholder='••••••••'
                   required
                 />
                 <button
                   type='button'
                   onClick={() => setShowPassword(!showPassword)}
-                  className='absolute right-3 top-1/2 transform -translate-y-1/2 text-slate-400 hover:text-white'
+                  className='absolute right-3 top-1/2 transform -translate-y-1/2 text-slate-400 hover:text-white touch-target'
                 >
                   {showPassword ? (
                     <EyeOff className='h-5 w-5' />
@@ -153,7 +171,7 @@ export default function PakizeAuthPage() {
             <button
               type='submit'
               disabled={loading}
-              className='w-full admin-btn-primary py-3 rounded-lg font-medium flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed'
+              className='w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white py-3 rounded-lg font-medium flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 touch-target'
             >
               {loading ? (
                 <>
@@ -173,7 +191,7 @@ export default function PakizeAuthPage() {
           <div className='mt-6 text-center'>
             <button
               onClick={() => router.push(`/${locale}/tarotokumasi`)}
-              className='inline-flex items-center space-x-2 text-slate-400 hover:text-white transition-colors'
+              className='inline-flex items-center space-x-2 text-slate-400 hover:text-white transition-colors touch-target'
             >
               <ArrowLeft className='h-4 w-4' />
               <span>Ana Sayfaya Dön</span>

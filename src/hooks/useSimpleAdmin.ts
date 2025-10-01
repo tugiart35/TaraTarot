@@ -10,7 +10,7 @@ interface AdminUser extends AuthUser {
 }
 
 export function useSimpleAdmin() {
-  const { user, loading, error, isAuthenticated, clearError } =
+  const { user, loading } =
     useAuthBase<AdminUser>();
   const [admin, setAdmin] = useState<AdminUser | null>(null);
 

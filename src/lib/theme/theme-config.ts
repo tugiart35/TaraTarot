@@ -177,6 +177,66 @@ export const themeConfig: Record<Theme, ThemeConfig> = {
       noSelection: 'text-gray-400',
     },
   },
+  red: {
+    container: 'bg-red-800/80 border-red-700',
+    simpleButton: {
+      selected: 'bg-red-500/80 text-white shadow-md',
+      unselected: 'bg-red-700/60 text-red-200 hover:bg-red-500/30',
+      focus: 'focus:ring-red-400',
+    },
+    detailedButton: {
+      selected: 'bg-purple-500/80 text-white shadow-md',
+      unselected: 'bg-red-700/60 text-purple-200 hover:bg-purple-500/30',
+      focus: 'focus:ring-purple-400',
+      disabled: 'bg-red-800/60 text-gray-400',
+    },
+    messages: {
+      simple: 'text-red-400',
+      detailed: 'text-purple-400',
+      adminRequired: 'text-amber-400',
+      noSelection: 'text-gray-400',
+    },
+  },
+  orange: {
+    container: 'bg-orange-800/80 border-orange-700',
+    simpleButton: {
+      selected: 'bg-orange-500/80 text-white shadow-md',
+      unselected: 'bg-orange-700/60 text-orange-200 hover:bg-orange-500/30',
+      focus: 'focus:ring-orange-400',
+    },
+    detailedButton: {
+      selected: 'bg-purple-500/80 text-white shadow-md',
+      unselected: 'bg-orange-700/60 text-purple-200 hover:bg-purple-500/30',
+      focus: 'focus:ring-purple-400',
+      disabled: 'bg-orange-800/60 text-gray-400',
+    },
+    messages: {
+      simple: 'text-orange-400',
+      detailed: 'text-purple-400',
+      adminRequired: 'text-amber-400',
+      noSelection: 'text-gray-400',
+    },
+  },
+  yellow: {
+    container: 'bg-yellow-800/80 border-yellow-700',
+    simpleButton: {
+      selected: 'bg-yellow-500/80 text-white shadow-md',
+      unselected: 'bg-yellow-700/60 text-yellow-200 hover:bg-yellow-500/30',
+      focus: 'focus:ring-yellow-400',
+    },
+    detailedButton: {
+      selected: 'bg-purple-500/80 text-white shadow-md',
+      unselected: 'bg-yellow-700/60 text-purple-200 hover:bg-purple-500/30',
+      focus: 'focus:ring-purple-400',
+      disabled: 'bg-yellow-800/60 text-gray-400',
+    },
+    messages: {
+      simple: 'text-yellow-400',
+      detailed: 'text-purple-400',
+      adminRequired: 'text-amber-400',
+      noSelection: 'text-gray-400',
+    },
+  },
 };
 
 // Yardımcı fonksiyon

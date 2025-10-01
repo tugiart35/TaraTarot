@@ -27,7 +27,6 @@ Kullanım durumu:
 
 import { useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
-import { supabase } from '@/lib/supabase/client';
 
 interface PageViewData {
   page_path: string;

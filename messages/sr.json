@@ -739,6 +739,9 @@
         "selectSpread": "\n",
         "selectSpreadDescription": "Izaberite jednu od opcija iznad da počnete čitanje"
       }
+    },
+    "profile": {
+      "updateError": "Грешка у ажурирању профила"
     }
   },
   "nav": {
@@ -776,17 +779,17 @@
   "numerology": {
     "birthdayMeanings": {
       "1": "Ljudi rođeni 1. dolaze na svet sa jakim osećajem individualnosti. Od ranog detinjstva osećaju potrebu da kreiraju svoj put, donose nezavisne odluke i vode. Varnica koja gori u njima ih konstantno usmerava ka novim početcima i novim prilikama. Ovi pojedinci su hrabri, odlučni i često postaju primer onima oko sebe svojim pionirskim idejama.\n\nMeđutim, ova jaka liderška energija ponekad se može pretvoriti u previše sebičan ili autoritaran stav. Ljudi rođeni 1. rizikuju izolaciju ako ne nauče da sarađuju sa drugima. Kada su uravnoteženi, postaju svetlo koje vodi i u svojim životima i u životima drugih.",
-      "11": "Oni rođeni 11. su intuitivni, vizionarski i duhovno jaki pojedinci. Njihova energija radi na visokoj frekvenciji i inspiriše one oko sebe. Sa svojom urođenom svešću, moguće je da osećaju božansko vođstvo u svojim životima.\n\nMeđutim, ova intenzivna energija ih može učiniti nemirnim, anksioznim ili neuravnoteženim. Kada se ukorene, postaju svetlo koje inspiriše i vodi one oko sebe.",
       "2": "Oni rođeni 2. dolaze na svet sa energijom izgrađenom na harmoniji, ravnoteži i odnosima. Oni su prirodni posrednici sa jedinstvenim sposobnostima u rešavanju konflikata, okupljanju različitih strana i stvaranju saradničkih okruženja. U svojim životima obično traže međusobno razumevanje, intimnost i emocionalnu dubinu.\n\nS druge strane, ova osetljivost ih može učiniti lako povredljivim. Želja za prekomernim prilagođavanjem može ih naterati da svoje želje stavljaju u pozadinu. Kada pronađu zdravu ravnotežu, postaju pouzdan i podržavajući vodič za druge.",
-      "22": "Oni rođeni 22. su graditelji velikih vizija. Imaju sposobnost da pretvore moćne snove u stvarnost. Zahvaljujući svojoj disciplinovanoj, praktičnoj i odlučnoj prirodi, mogu postići velike uspehe i u materijalnom i u duhovnom svetu.\n\nAli ova velika energija može stvoriti pritisak odgovornosti. Kada se ne zadovolje malim ciljevima, ostavljaju trajne tragove u svetu gradeći velike projekte.",
       "3": "Ljudi rođeni 3. dolaze na pozornicu života sa kreativnim, energičnim i radosnim duhom. Njihova najjača strana je sposobnost izražavanja; mogu se predstaviti u umetnosti, pisanju, govoru ili dizajnu. Lako se ističu u društvenim odnosima i postaju svetlo koje inspiriše ljude.\n\nMeđutim, ponekad mogu pokazati tendencije da budu površni ili rasejani. Nedostatak discipline u njihovim životima može sprečiti da u potpunosti iskoriste svoje talente. Kada su fokusirani, oslobađaju ogromnu kreativnost i energiju koja donosi sreću ljudima.",
-      "33": "Oni rođeni 33. su nosioci bezuslovne ljubavi, saosećanja i isceljujuće energije. Oni su pojedinci koji žive za dobro drugih, osećajući duboku odgovornost i samožrtvovanje. Inspirišu ljude, omekšavaju srca i vode zajednice.\n\nMeđutim, ova visoka energija može stvoriti pritisak obaveze. Kada nauče da se izražavaju bez iscrpljivanja, ostavljaju trajni isceljujući trag u svetu i doprinose kolektivnom isceljenju.",
       "4": "Oni rođeni 4. su ljudi koji donose red, disciplinu i strukturu. Oni su pouzdani, vredni i odgovorni pojedinci. Kada se suoče sa poteškoćama, napreduju strpljivo i sistematski. Žele da izgrade čvrstu osnovu za svoje živote i stvore stabilnost i za sebe i za svoje voljene.\n\nPonekad mogu biti kruti, tvrdoglavi ili previše kontrolišući. Ovo može otežati fleksibilnost u odnosima. Kada razviju fleksibilnost, postižu trajne uspehe gradeći čvrstu strukturu i u svojim životima i u svojoj okolini.",
       "5": "Oni rođeni 5. su predstavnici slobode, avanture i promene. Konstantno traže nova iskustva i hrane se upoznavanjem različitih kultura i ljudi. Brzo uče i lako se prilagođavaju promenama koje život donosi. Dodaju uzbuđenje, novinu i vitalnost svojoj okolini.\n\nMeđutim, ova potreba za slobodom ponekad se može pretvoriti u nestrpljivost, nered ili strah od obaveza. Ne žele da se ograničavaju. Ali kada nauče da balansiraju slobodu sa odgovornošću, njihovi životi postaju inspirativno putovanje otkrića.",
       "6": "Ljudi rođeni 6. nose energiju ljubavi, harmonije i odgovornosti. Osećaju duboku lojalnost prema svojim porodicama, prijateljima i zajednici. Njihova pomagačka priroda, estetsko razumevanje i želja da stvaraju lepotu čine ih pouzdanim utočištem za druge.\n\nPonekad mogu imati tendencije ka prekomernom samožrtvovanju, zanemarivanju sopstvenih potreba ili preuzimanju tuđih problema. Kada nauče da zaštite svoje granice, postaju isceljujuća sila i za sebe i za svoju okolinu.",
       "7": "Oni rođeni 7. su istraživački, duboko misleći i intuitivni pojedinci. Imaju duh koji propituje život i traži misteriju iza istine. Zanimaju ih nauka, filozofija, misticizam ili duhovni predmeti. Njihov unutrašnji svet je jak, a samoća može biti hranljiva za njih.\n\nMeđutim, mogu imati tendencije ka prekomernoj introvertnosti, hladnoći ili distanciranju. Kada nauče da formiraju emocionalne veze sa drugima, postaju učitelj koji osvetljava druge svojom mudrošću.",
       "8": "Ljudi rođeni 8. su predstavnici moći, upravljanja i materijalnog uspeha. Imaju prirodni talent u poslu, organizaciji i strategiji. Usmereni su ka ciljevima i mogu postići velike uspehe kroz odlučan rad.\n\nMeđutim, ambicija i težnja za moći ponekad ih može učiniti grubim ili autoritarnim. Kada nauče da balansiraju duhovnost sa materijalnošću, stvaraju obilje u svojim životima i postaju pravedni lideri za druge.",
-      "9": "Oni rođeni 9. su saosećajni, idealistički i umetnički duhoviti pojedinci. Stavljaju služenje čovečanstvu, deljenje dobra i lepote u centar svojih života. Sa svojim kreativnim aspektima mogu napraviti razliku u društvu i dodirnuti tuđe živote.\n\nPonekad mogu biti previše emocionalni, sanjarski ili samožrtvujući. Međutim, kada žive posmatrajući svoje granice i stvarnosti, postaju humanitarni lideri koji ostavljaju trajni trag u svetu."
+      "9": "Oni rođeni 9. su saosećajni, idealistički i umetnički duhoviti pojedinci. Stavljaju služenje čovečanstvu, deljenje dobra i lepote u centar svojih života. Sa svojim kreativnim aspektima mogu napraviti razliku u društvu i dodirnuti tuđe živote.\n\nPonekad mogu biti previše emocionalni, sanjarski ili samožrtvujući. Međutim, kada žive posmatrajući svoje granice i stvarnosti, postaju humanitarni lideri koji ostavljaju trajni trag u svetu.",
+      "11": "Oni rođeni 11. su intuitivni, vizionarski i duhovno jaki pojedinci. Njihova energija radi na visokoj frekvenciji i inspiriše one oko sebe. Sa svojom urođenom svešću, moguće je da osećaju božansko vođstvo u svojim životima.\n\nMeđutim, ova intenzivna energija ih može učiniti nemirnim, anksioznim ili neuravnoteženim. Kada se ukorene, postaju svetlo koje inspiriše i vodi one oko sebe.",
+      "22": "Oni rođeni 22. su graditelji velikih vizija. Imaju sposobnost da pretvore moćne snove u stvarnost. Zahvaljujući svojoj disciplinovanoj, praktičnoj i odlučnoj prirodi, mogu postići velike uspehe i u materijalnom i u duhovnom svetu.\n\nAli ova velika energija može stvoriti pritisak odgovornosti. Kada se ne zadovolje malim ciljevima, ostavljaju trajne tragove u svetu gradeći velike projekte.",
+      "33": "Oni rođeni 33. su nosioci bezuslovne ljubavi, saosećanja i isceljujuće energije. Oni su pojedinci koji žive za dobro drugih, osećajući duboku odgovornost i samožrtvovanje. Inspirišu ljude, omekšavaju srca i vode zajednice.\n\nMeđutim, ova visoka energija može stvoriti pritisak obaveze. Kada nauče da se izražavaju bez iscrpljivanja, ostavljaju trajni isceljujući trag u svetu i doprinose kolektivnom isceljenju."
     },
     "calculators": {
       "birthdayNumber": "Broj Rođendana",
@@ -812,31 +815,31 @@
     },
     "compatibilityMeanings": {
       "1": "Kada jedna ili obe strane u odnosu imaju broj 1, dominira jaka energija liderstva i nezavisnosti. Ova veza sadrži strast, dinamiku i preduzetništvo. Dodaje vitalnost odnosu i par se može međusobno podržavati u novim počecima.\n\nMeđutim, konflikti mogu nastati kada su obe strane previše kontrolišuće ili tvrdoglave. Uzajamno poštovanje i saradnja su neophodni za balansiranje ove energije; tako se odnos transformiše u i jaku i inspirativnu putanju.",
-      "11": "Broj 11 u odnosu donosi visoku intuiciju, viziju i duhovnu vezu. Između para može postojati duboko razumevanje, telepatski osećaj i jaka duhovna veza. Ova energija transformiše ljubav u duhovno iskustvo.\n\nMeđutim, intenzivna energija može stvoriti anksioznost ili neuravnoteženost. Kada su uravnoteženi, energija 11 transformiše ljubav u inspirativnu svetlost.",
       "2": "Broj 2 u odnosu donosi harmoniju, ravnotežu i osetljivost. Emocionalna veza između para postaje jaka; strane su sklone da se međusobno razumeju, podržavaju i deluju zajedno. Ova energija povećava romantiku i intimnost.\n\nMeđutim, prekomerna osetljivost ili zavisnost mogu naštetiti odnosu. Kada strane zaštite svoje granice, energija 2 stvara ljubavnu i trajnu zajednicu.",
-      "22": "Broj 22 u odnosu nosi energiju velikih vizija, trajnih projekata i jake saradnje. Par može zajedno da gradi trajne strukture u svojim životima, jačajući se i materijalno i duhovno.\n\nMeđutim, teška odgovornost ili prekomerna želja za kontrolom mogu biti problematični. Kada su uravnoteženi, energija 22 transformiše odnos u trajnu i jaku saradnju.",
       "3": "Broj 3 u odnosu donosi radost, komunikaciju i kreativnost. Par uspeva da se zabavlja zajedno, društveno se povezuje i čini život prijatnim. U njihovoj vezi postoji duhovita, pozitivna i umetnička energija.\n\nMeđutim, površnost ili prekomerna neorganizovanost mogu naštetiti odnosu. Kada se fokusiraju, energija 3 dodaje inspiraciju i sreću odnosu.",
-      "33": "Broj 33 u odnosu nosi energiju bezuslovne ljubavi, saosećanja i isceljenja. Par se međusobno približava sa dubokom posvećenošću i samožrtvovanjem. Ova veza može stvoriti nastavni, isceljujući i inspirativan odnos.\n\nMeđutim, postoji rizik prekomernog samožrtvovanja ili sagorevanja. Kada se održavaju zdrave granice, energija 33 transformiše ljubav u transformativno isceljenje.",
       "4": "Broj 4 u odnosu donosi stabilnost, poverenje i odgovornost. Par može zajedno da izgradi čvrst temelj, pravi dugoročne planove i uspostavlja siguran život. Ova energija jača posvećenost i izdržljivost.\n\nMeđutim, prekomerna krutost ili tvrdoglavost mogu stvoriti probleme. Kada se podržava fleksibilnošću, energija 4 donosi trajno poverenje i lojalnost odnosu.",
       "5": "Broj 5 u odnosu donosi slobodu, uzbuđenje i avanturu. Par zajedno doživljava nova iskustva, putuje i dodaje boju svojim životima. Dinamika i pokret se ističu u odnosu.\n\nMeđutim, prekomerna želja za slobodom može dovesti do problema vezanosti. Kada se postigne ravnoteža sa svesnošću odgovornosti, energija 5 nosi inspiraciju i strast odnosu.",
       "6": "Broj 6 u odnosu donosi ljubav, harmoniju i porodičnu energiju. Između para se formira saosećajna, odgovorna i uravnotežena veza. Ova energija povećava poverenje i posvećenost, jačajući želju za osnivanje porodice.\n\nMeđutim, prekomerno samožrtvovanje ili mešanje mogu stvoriti probleme. Sa ravnotežom koja takođe razmatra sopstvene potrebe, energija 6 nudi saosećajan i trajan odnos.",
       "7": "Broj 7 u odnosu donosi dubinu, duhovnost i mudrost. Između para se formira intuitivna i intelektualna veza. Ova energija podržava intimne razgovore, unutrašnja otkrića i duhovnu bliskost u odnosu.\n\nMeđutim, prekomerna introvertnost ili distanca mogu stvoriti probleme. Kada se postigne emocionalna otvorenost, energija 7 stvara duhovno partnerstvo.",
       "8": "Broj 8 u odnosu donosi energiju moći, uspeha i odlučnosti. Par može postati jaka ekipa za postizanje svojih ciljeva zajedno. Finansijski uspeh i društveni status mogu se istaknuti u ovoj vezi.\n\nMeđutim, prekomerna ambicija ili želja za kontrolom mogu dovesti do konflikata. Kada balansiraju moć sa pravdom, energija 8 stvara trajni uspeh i prosperitet u odnosu.",
-      "9": "Broj 9 u odnosu donosi energiju saosećanja, idealizma i samožrtvovanja. Par može želeti da zajedno radi korisne poslove za čovečanstvo ili učestvuje u umetničkim projektima. Ova energija povećava romantiku i osetljivost.\n\nMeđutim, prekomerno samožrtvovanje ili idealizam mogu biti problematični. Kada se kombinuje sa realnošću, energija 9 stvara ljubavan i inspirativan odnos."
+      "9": "Broj 9 u odnosu donosi energiju saosećanja, idealizma i samožrtvovanja. Par može želeti da zajedno radi korisne poslove za čovečanstvo ili učestvuje u umetničkim projektima. Ova energija povećava romantiku i osetljivost.\n\nMeđutim, prekomerno samožrtvovanje ili idealizam mogu biti problematični. Kada se kombinuje sa realnošću, energija 9 stvara ljubavan i inspirativan odnos.",
+      "11": "Broj 11 u odnosu donosi visoku intuiciju, viziju i duhovnu vezu. Između para može postojati duboko razumevanje, telepatski osećaj i jaka duhovna veza. Ova energija transformiše ljubav u duhovno iskustvo.\n\nMeđutim, intenzivna energija može stvoriti anksioznost ili neuravnoteženost. Kada su uravnoteženi, energija 11 transformiše ljubav u inspirativnu svetlost.",
+      "22": "Broj 22 u odnosu nosi energiju velikih vizija, trajnih projekata i jake saradnje. Par može zajedno da gradi trajne strukture u svojim životima, jačajući se i materijalno i duhovno.\n\nMeđutim, teška odgovornost ili prekomerna želja za kontrolom mogu biti problematični. Kada su uravnoteženi, energija 22 transformiše odnos u trajnu i jaku saradnju.",
+      "33": "Broj 33 u odnosu nosi energiju bezuslovne ljubavi, saosećanja i isceljenja. Par se međusobno približava sa dubokom posvećenošću i samožrtvovanjem. Ova veza može stvoriti nastavni, isceljujući i inspirativan odnos.\n\nMeđutim, postoji rizik prekomernog samožrtvovanja ili sagorevanja. Kada se održavaju zdrave granice, energija 33 transformiše ljubav u transformativno isceljenje."
     },
     "expressionMeanings": {
       "1": "Broj Izražavanja 1 pojedinci usmeravaju svoje živote sa jakom energijom liderstva i individualnosti. Generišu kreativne ideje, otvaraju svoje puteve i postaju primeri drugima. Zahvaljujući svojoj urođenoj odlučnosti i samopouzdanju, preduzimanje inicijativa, pokretanje novih projekata i preuzimanje rizika je prirodan proces za njih.\n\nMeđutim, ova jaka energija ponekad može pokazati svoju senovnu stranu kao sebičnost, nestrpljivost ili autoritarizam. Kada nauče saradnju i ceniti tuđe ideje, ostavljaju velike uspehe i trajne uticaje na svojim životnim putevima.",
-      "11": "Broj Izražavanja 11 pojedinci nose vizionarsku, intuitivnu i inspirativnu energiju. Imaju visokofrekventnu svest i jaki su u osvetljavanju svoje okoline. Često se ističu u umetnosti, duhovnim poljima ili društvenom vođstvu.\n\nMeđutim, njihova intenzivna energija može stvoriti anksioznost, nemir ili neuravnoteženost. Kada se uravnoteže, postaju svetlo koje nudi inspiraciju i vođstvo svojoj okolini.",
       "2": "Broj Izražavanja 2 pojedinci nose energiju harmonije, saradnje i diplomatije. Prirodno su talentovani za okupljanje različitih strana, rešavanje konflikata i stvaranje ravnoteže. Ističu se kao blaga, ljubazna i podržavajuća prisutnost u svojoj okolini.\n\nMeđutim, prekomerna želja za prilagođavanje ponekad može dovesti do toga da potisnu svoje potrebe. Kada nauče da postave svoje granice, postaju isceljujuća sila i u svojim odnosima i unutar zajednice.",
-      "22": "Broj Izražavanja 22 pojedinci su poznati kao majstori graditelji. Imaju sposobnost da pretvore velike snove u konkretan uspeh. Zahvaljujući svojoj disciplinovanoj, vizionarskoj i praktičnoj prirodi, mogu potpisati velike projekte u društvu.\n\nMeđutim, ova velika energija može stvoriti pritisak odgovornosti. Kada se ne zadovolje malim ciljevima i ostvare svoje vizije, ostavljaju trajno nasleđe u svetu.",
       "3": "Broj Izražavanja 3 pojedinci sijaju energijom kreativnosti, komunikacije i radosti. Snažno se izražavaju u oblastima kao što su pisanje, govor, umetnost i dizajn. Lako se ističu u društvenim odnosima i postaju svetlo koje inspiriše ljude.\n\nMeđutim, neorganizovanost ili površnost može sprečiti da u potpunosti iskoriste svoj potencijal. Kada se kombinuje sa disciplinom, Broj Izražavanja 3 pojedinci postižu velike uspehe i postaju izvor sreće i inspiracije za svoju okolinu.",
-      "33": "Broj Izražavanja 33 pojedinci nose bezuslovnu ljubav, saosećanje i isceljujuću energiju. Oni su ljudi koji žive za dobro drugih, učitelji i vodiči. Postaju svetlo koje inspiriše, leči i vodi svoju okolinu.\n\nMeđutim, ova intenzivna energija može se pretvoriti u sagorevanje ili prekomerni osećaj odgovornosti. Kada ostanu uravnoteženi, postaju moćni vodiči koji donose trajnu ljubav i isceljenje društvu.",
       "4": "Broj Izražavanja 4 pojedinci su poznati po energiji reda, stabilnosti i vrednog rada. Postavljaju čvrste temelje, ispunjavaju svoje odgovornosti i postižu trajne uspehe u dugoročnim projektima. Njihova okolina ih vidi kao pouzdane i disciplinovane ljude.\n\nMeđutim, previše krutost ili tvrdoglavost, otpor promenama može biti njihovi senovni aspekti. Kada steknu fleksibilnost, dodaju trajnu vrednost i sebi i drugima svojom jakom strukturirajućom energijom.",
       "5": "Broj Izražavanja 5 pojedinci su predstavnici slobode, avanture i promene. Usmeravaju se sa velikom željom ka novim iskustvima, različitim kulturama i otkrićima. Brzo uče, prilagođavaju se različitim oblastima i dodaju vitalnost svojoj okolini.\n\nMeđutim, nestrpljivost ili nered može ih povući na slabo tlo. Kada balansiraju svoju želju za slobodom sa svešću odgovornosti, njihovi životi postaju inspirativno putovanje i za sebe i za druge.",
       "6": "Broj Izražavanja 6 pojedinci nose energiju ljubavi, harmonije i odgovornosti. Osećaju jaku lojalnost prema svojim porodicama, društvu i okolini. Zahvaljujući svojoj pomagačkoj prirodi, estetskom razumevanju i želji da stvaraju lepotu, postaju pouzdane figure u svojoj okolini.\n\nMeđutim, mogu imati tendencije ka prekomernom samožrtvovanju ili preuzimanju tuđih problema. Kada zaštite svoje granice, postaju sila koja leči i svoje voljene i društvo.",
       "7": "Broj Izražavanja 7 pojedinci imaju energiju znanja, istraživanja i duhovne dubine. Propituju smisao života, traže nevidljive istine i vode svojom intuicijom. Često su privučeni nauci, filozofiji ili duhovnim poljima.\n\nMeđutim, prekomerna introvertnost ili distanciran stav može stvoriti poteškoće u odnosima. Kada nauče da dele svoju unutrašnju mudrost sa drugima, postaju vredni vodiči koji osvetljavaju svoju okolinu.",
       "8": "Broj Izražavanja 8 pojedinci žive sa energijom moći, uspeha i upravljanja. Imaju prirodne veštine u poslu, finansijskim oblastima i liderstvu. Zahvaljujući svojoj odlučnosti, imaju visok potencijal za postizanje velikih ciljeva.\n\nMeđutim, ambicija ili prekomerna želja za kontrolom mogu biti senovni aspekti. Kada balansiraju materijalni uspeh sa duhovnim vrednostima, ostavljaju velike tragove kao jaki i pravedni lideri.",
-      "9": "Broj Izražavanja 9 pojedinci se kreću sa idealizmom, saosećanjem i ljubavlju prema čovečanstvu. Ceniti služenje čovečanstvu, dodirivanje tuđih života i doprinos društvu kroz umetničke projekte. Poznati su kao pomagači i vizionari u svojoj okolini.\n\nMeđutim, prekomerno samožrtvovanje ili idealizam može ih istrošiti. Kada nauče da nude svoje saosećanje zadržavajući realnost, postaju humanitarni lideri koji ostavljaju trajne tragove u svetu."
+      "9": "Broj Izražavanja 9 pojedinci se kreću sa idealizmom, saosećanjem i ljubavlju prema čovečanstvu. Ceniti služenje čovečanstvu, dodirivanje tuđih života i doprinos društvu kroz umetničke projekte. Poznati su kao pomagači i vizionari u svojoj okolini.\n\nMeđutim, prekomerno samožrtvovanje ili idealizam može ih istrošiti. Kada nauče da nude svoje saosećanje zadržavajući realnost, postaju humanitarni lideri koji ostavljaju trajne tragove u svetu.",
+      "11": "Broj Izražavanja 11 pojedinci nose vizionarsku, intuitivnu i inspirativnu energiju. Imaju visokofrekventnu svest i jaki su u osvetljavanju svoje okoline. Često se ističu u umetnosti, duhovnim poljima ili društvenom vođstvu.\n\nMeđutim, njihova intenzivna energija može stvoriti anksioznost, nemir ili neuravnoteženost. Kada se uravnoteže, postaju svetlo koje nudi inspiraciju i vođstvo svojoj okolini.",
+      "22": "Broj Izražavanja 22 pojedinci su poznati kao majstori graditelji. Imaju sposobnost da pretvore velike snove u konkretan uspeh. Zahvaljujući svojoj disciplinovanoj, vizionarskoj i praktičnoj prirodi, mogu potpisati velike projekte u društvu.\n\nMeđutim, ova velika energija može stvoriti pritisak odgovornosti. Kada se ne zadovolje malim ciljevima i ostvare svoje vizije, ostavljaju trajno nasleđe u svetu.",
+      "33": "Broj Izražavanja 33 pojedinci nose bezuslovnu ljubav, saosećanje i isceljujuću energiju. Oni su ljudi koji žive za dobro drugih, učitelji i vodiči. Postaju svetlo koje inspiriše, leči i vodi svoju okolinu.\n\nMeđutim, ova intenzivna energija može se pretvoriti u sagorevanje ili prekomerni osećaj odgovornosti. Kada ostanu uravnoteženi, postaju moćni vodiči koji donose trajnu ljubav i isceljenje društvu."
     },
     "form": {
       "birth": "Datum Rođenja (YYYY-MM-DD)",
@@ -850,31 +853,31 @@
     },
     "lifePathMeanings": {
       "1": "Životni Put 1 pojedinci dolaze u život sa liderstvom, nezavisnošću i pionirskom energijom. Nose želju da kreiraju svoj put, generišu nove ideje i vode one oko sebe. Često imaju preduzetničku, hrabru i vizionarsku prirodu. U svojim životima često osećaju potrebu da dođu u prvi plan i snažno izraze svoj identitet.\n\nMeđutim, ova energija ponekad se može reflektovati kao sebičnost, nestrpljivost ili autoritarizam. Kada su otvoreni za saradnju i prepoznaju i tuđe liderstvo, postižu velike uspehe i inspirativne početke u svojim životima.",
-      "11": "Životni Put 11 pojedinci nose visoku intuiciju, viziju i energiju inspiracije. Imaju urođenu duhovnu svest i jaki su u inspiraciji onih oko sebe. Mogu voditi ljude svojim vizijama i doprinositi kolektivu svojim božanskim vođstvom.\n\nMeđutim, ova intenzivna energija može stvoriti anksioznost, nemir ili neuravnoteženost. Kada se uravnoteže, postaju i vodič koji sija svetlost i vizionar koji donosi isceljenje svojoj okolini.",
       "2": "Životni Put 2 pojedinci dolaze na svet sa harmonijom, diplomacijom i osetljivošću. Imaju jaku sposobnost u posredovanju, okupljanju različitih strana i održavanju mira. Opšte su percipirani kao blaga, saosećajna i podržavajuća energija u svojoj okolini. Odnosi su im veoma važni i obično zauzimaju centralno mesto u životu.\n\nMeđutim, prekomerna osetljivost ponekad se može pretvoriti u nedostatak samopouzdanja ili zavisnost od drugih. Kada uspostave ravnotežu, postaju pravi vodič koji donosi mir i razumevanje i sebi i drugima.",
-      "22": "Životni Put 22 pojedinci su poznati kao majstori graditelji. Imaju moć da pretvore velike snove u stvarnost. Zahvaljujući svojoj praktičnoj, disciplinovanoj i vizionarskoj prirodi, mogu graditi trajne projekte u svetu. Imaju potencijal da istovremeno stvaraju i materijalni i duhovni uspeh.\n\nMeđutim, ova velika energija ponekad može stvoriti težak pritisak odgovornosti. Kada se ne zadovolje malim ciljevima, otkrivaju svoj potencijal da ostave trajno nasleđe u svetu.",
       "3": "Životni Put 3 pojedinci dolaze u život sa kreativnim, energičnim i radosnim duhom. Izražavanje, komunikacija i umetnost su im prirodne oblasti. Često inspirišu one oko sebe svojim razgovorima, pisanjem ili pozorišnim talentima. Vitalnost koju nose u sebi im omogućava da uživaju u životu i donose radost drugima.\n\nMeđutim, ova energija se takođe može manifestovati kao površnost, neorganizovanost ili rasipništvo. Kada se kombinuje sa disciplinom, 3 širi svetlost kreativnosti i radosti i u svom životu i u životima drugih.",
-      "33": "Životni Put 33 pojedinci nose bezuslovnu ljubav, saosećanje i energiju službe. Dolaze na svet sa duhom koji posreduje u isceljenju drugih i vodi društvo. Sa svojim nastavnim aspektima, saosećajnim stavovima i visokom energijom, osvetljava svoju okolinu.\n\nMeđutim, ova intenzivna energija ponekad može stvoriti prekomerno samožrtvovanje ili rizik sagorevanja. Kada zaštite svoje granice i izraze svoju ljubav na uravnotežen način, postaju moćna figura koja nudi isceljenje i vođstvo u svetu.",
       "4": "Životni Put 4 pojedinci žive sa energijom koja donosi red, disciplinu i strukturu. Oni su strpljivi, vredni i pouzdani pojedinci. Prave dugoročne planove, postavljaju čvrste temelje i igraju jaku ulogu u izgradnji trajnih uspeha. Zahvaljujući svojoj praktičnoj inteligenciji i stabilnom stavu, znaju kako da prevaziđu poteškoće.\n\nMeđutim, ova energija takođe može bacati senke kao kruta pravila, nedostatak fleksibilnosti ili tvrdoglavost. Kada se prilagode promenama, postižu trajne uspehe koji su i pouzdani i otvoreni za inovacije.",
       "5": "Životni Put 5 pojedinci su predstavnici slobode, avanture i promene. Kreću se kroz život sa konstantnom potragom za otkrićem. Upoznavanje novih kultura, iskustava i ljudi hrani njihovu dušu. Pošto se lako prilagođavaju promenama, mogu biti pioniri u oživljavanju inovativnih ideja.\n\nMeđutim, nestrpljivost, neodlučnost i nestabilnost su njihovi senovni aspekti. Kada nauče da balansiraju slobodu sa odgovornošću, njihovi životi postaju uzbudljivo putovanje i za sebe i za svoju okolinu.",
       "6": "Životni Put 6 pojedinci dolaze u život sa energijom odgovornosti, porodice i ljubavi. Imaju jaku želju da pomažu drugima, prilagođavaju se i stvaraju lepotu. Poznati su kao zaštitna, podržavajuća i pouzdana energija u svojoj okolini. Njihovo estetsko razumevanje i sposobnost stvaranja harmonije su jaki.\n\nMeđutim, mogu imati tendencije ka prekomernom samožrtvovanju ili preuzimanju tuđih problema. Kada nauče da takođe razmotre svoje potrebe, postaju isceljujuća sila i za sebe i za druge.",
       "7": "Životni Put 7 pojedinci se hrane introspekcijom, istraživanjem i duhovnošću. Traže duboke smislove života, propituju nevidljivo i vode svojom intuicijom. Nauka, filozofija, duhovna polja ili dubine umetnosti ih privlače. Tišina i samoća su oblasti koje hrane njihovu unutrašnju mudrost.\n\nMeđutim, mogu postojati tendencije ka prekomernoj introvertnosti ili hladnom izgledu. Kada uspostave uravnotežene veze sa drugima, postaju vodič koji osvetljava svoju okolinu svojom mudrošću.",
       "8": "Životni Put 8 pojedinci dolaze na svet sa energijom moći, uspeha i upravljanja. Imaju prirodnu veštinu u poslu, organizaciji i liderstvu. Napreduju odlučno ka svojim ciljevima i imaju visok potencijal za postizanje materijalnog uspeha. Kada se pravilno koristi, mogu stvoriti obilje i prosperitet.\n\nMeđutim, ambicija, želja za kontrolom ili autoritarni stav mogu biti senovni aspekti. Kada balansiraju materijalno i duhovno, postižu trajne uspehe kao pravedni i jaki lider.",
-      "9": "Životni Put 9 pojedinci se kreću sa saosećanjem, idealizmom i ljubavlju prema čovečanstvu. Žele da učine svet boljim mestom i doprinose društvu samožrtvovanjem. Njihovi umetnički aspekti mogu biti jaki i mogu kreirati projekte koji dodiruju tuđe živote.\n\nMeđutim, mogu imati tendencije ka tome da budu previše emocionalni, sanjarski ili prekomerno samožrtvujući. Kada zaštite svoje granice i kombinuju realnost sa idealizmom, postaju humanitarni lideri koji ostavljaju trajne tragove u svetu."
+      "9": "Životni Put 9 pojedinci se kreću sa saosećanjem, idealizmom i ljubavlju prema čovečanstvu. Žele da učine svet boljim mestom i doprinose društvu samožrtvovanjem. Njihovi umetnički aspekti mogu biti jaki i mogu kreirati projekte koji dodiruju tuđe živote.\n\nMeđutim, mogu imati tendencije ka tome da budu previše emocionalni, sanjarski ili prekomerno samožrtvujući. Kada zaštite svoje granice i kombinuju realnost sa idealizmom, postaju humanitarni lideri koji ostavljaju trajne tragove u svetu.",
+      "11": "Životni Put 11 pojedinci nose visoku intuiciju, viziju i energiju inspiracije. Imaju urođenu duhovnu svest i jaki su u inspiraciji onih oko sebe. Mogu voditi ljude svojim vizijama i doprinositi kolektivu svojim božanskim vođstvom.\n\nMeđutim, ova intenzivna energija može stvoriti anksioznost, nemir ili neuravnoteženost. Kada se uravnoteže, postaju i vodič koji sija svetlost i vizionar koji donosi isceljenje svojoj okolini.",
+      "22": "Životni Put 22 pojedinci su poznati kao majstori graditelji. Imaju moć da pretvore velike snove u stvarnost. Zahvaljujući svojoj praktičnoj, disciplinovanoj i vizionarskoj prirodi, mogu graditi trajne projekte u svetu. Imaju potencijal da istovremeno stvaraju i materijalni i duhovni uspeh.\n\nMeđutim, ova velika energija ponekad može stvoriti težak pritisak odgovornosti. Kada se ne zadovolje malim ciljevima, otkrivaju svoj potencijal da ostave trajno nasleđe u svetu.",
+      "33": "Životni Put 33 pojedinci nose bezuslovnu ljubav, saosećanje i energiju službe. Dolaze na svet sa duhom koji posreduje u isceljenju drugih i vodi društvo. Sa svojim nastavnim aspektima, saosećajnim stavovima i visokom energijom, osvetljava svoju okolinu.\n\nMeđutim, ova intenzivna energija ponekad može stvoriti prekomerno samožrtvovanje ili rizik sagorevanja. Kada zaštite svoje granice i izraze svoju ljubav na uravnotežen način, postaju moćna figura koja nudi isceljenje i vođstvo u svetu."
     },
     "maturityMeanings": {
       "1": "Broj Zrelosti 1 pojedinci osećaju teme nezavisnosti, liderstva i crtanja sopstvenog puta jače u drugoj polovini života. Tokom ovog perioda, pronalaze velike prilike da izraze svoj potencijal, naprave nove početke i vode. Njihova unutrašnja snaga ih čini kapetanima sopstvenih života.\n\nMeđutim, ova energija ponekad može da se reflektuje kao samoća, autoritarizam ili nestrpljivost. Kada nauče da sarađuju sa drugima i balansiraju svoju individualnost sa harmonijom, postaju vizionarski lideri koji inspirišu društvo.",
-      "11": "Broj Zrelosti 11 pojedinci osećaju teme intuicije, vizije i duhovnog vođstva intenzivnije u drugoj polovini svojih života. Ovaj period je pun inspirativnih projekata i prilika da osvetljavaju druge za njih.\n\nMeđutim, intenzivna energija može stvoriti anksioznost ili neuravnoteženost. Kada se uravnoteže, postaju moćne figure koje vode društvo i nude visoku viziju.",
       "2": "Broj Zrelosti 2 pojedinci doživljavaju teme harmonije, ravnoteže i saradnje u svojim naprednim godinama. Tokom ovog perioda, diplomatija, partnerstva i emocionalne veze dolaze u prvi plan. Njihova srca se okreću ka stvaranju mira i razumevanja.\n\nMeđutim, prekomerna osetljivost ili zavisnost od drugih može biti senovna strana ovog procesa. Kada prepoznaju sopstvene vrednosti i zaštite svoje granice, postaju vodiči koji donose mir i ljubav svojoj okolini.",
-      "22": "Za Broj Zrelosti 22 pojedince, napredne godine postaju period stvaranja velikih projekata i trajnih nasleđa. Imaju potencijal da pretvore svoje snove u stvarnost i pruže konkretne doprinose društvu. Njihova disciplinovana i vizionarska priroda postaje još jača tokom ovog perioda.\n\nMeđutim, težak pritisak odgovornosti može biti senovni aspekt. Kada se ne zadovolje malim ciljevima, postaju nezaboravne figure gradeći trajna dela u svetu.",
       "3": "Za Broj Zrelosti 3 pojedince, druga polovina života je period kreativnosti, izražavanja i inspiracije. Pojavljuje se želja da se više istaknu u umetnosti, pisanju, komunikaciji ili društvenim poljima. Ovi pojedinci biraju da žive svoje živote radosnije i energičnije.\n\nMeđutim, površnost ili neorganizovanost može biti senovna strana ovog procesa. Kada razviju disciplinu, postaju inspirativni pojedinci koji dodiruju srca drugih svojom snagom izražavanja.",
-      "33": "Broj Zrelosti 33 pojedinci osećaju energiju bezuslovne ljubavi, saosećanja i isceljenja intenzivno u drugoj polovini svojih života. Ovaj period je pun prilika da inspirišu druge, uče i leče društvo.\n\nMeđutim, prekomerna odgovornost ili sagorevanje mogu biti senovni aspekti. Kada ostanu uravnoteženi, postaju moćni iscelitelji koji osvetljavaju i svoje voljene i društvo.",
       "4": "Broj Zrelosti 4 pojedinci doživljavaju teme discipline, reda i gradnje strukture u svojim naprednim godinama. Tokom ovog perioda, stvaranje stabilnosti, gradnja trajnih projekata i dokazivanje njihove pouzdanosti dolaze u prvi plan. Postižu trajne uspehe radeći strpljivo.\n\nMeđutim, prekomerna krutost, otpor promenama ili tendencije prekomernog kontrole mogu biti senovni aspekti. Kada razviju fleksibilnost, grade jaku strukturu koja daje poverenje i sebi i drugima.",
       "5": "Za Broj Zrelosti 5 pojedince, druga polovina života je puna slobode, promena i otkrića. Tokom ovog perioda, nove kulture, nova iskustva i avanture ih čekaju. Zahvaljujući svojoj fleksibilnoj prirodi, lako prihvataju transformacije života.\n\nMeđutim, nestrpljivost ili nestabilnost može biti senovna strana ovog procesa. Kada balansiraju slobodu sa odgovornošću, njihovi životi postaju inspirativno putovanje i za sebe i za druge.",
       "6": "Broj Zrelosti 6 pojedinci doživljavaju teme porodice, ljubavi i odgovornosti intenzivnije u drugoj polovini svojih života. Za njih, ovaj period je o provođenju više vremena sa voljenima, služenju društvu i stvaranju lepote. Estetika, harmonija i saosećanje su ključevi ovog perioda.\n\nMeđutim, prekomerno samožrtvovanje ili preuzimanje tuđih problema može ih umoriti. Kada nauče da takođe razmotre sopstvene potrebe, postaju sila koja leči i sebe i svoju okolinu.",
       "7": "Za Broj Zrelosti 7 pojedince, napredne godine prolaze sa duhovnom dubinom, istraživanjem i traganjem za mudrošću. Tokom ovog perioda, više introspekcije, učenja i duhovnih otkrića dolazi u prvi plan. Samoća postaje ne teret već izvor mudrosti za njih.\n\nMeđutim, prekomerna introvertnost ili tendencije distanciranja mogu biti senovni aspekti. Kada podele svoju mudrost sa drugima, postaju vodiči koji osvetljavaju svoju okolinu.",
       "8": "Broj Zrelosti 8 pojedinci se suočavaju sa temama moći, upravljanja i materijalnog uspeha u drugoj polovini svojih života. Tokom ovog perioda, mogu dostići uticajne pozicije u poslu ili zajednicama. Zahvaljujući svojoj odlučnosti, imaju potencijal da stvore obilje i prosperitet.\n\nMeđutim, prekomerna ambicija, želja za kontrolom ili autoritarizam može biti senovna strana ovog procesa. Kada balansiraju materijalni uspeh sa duhovnošću, postaju i jaki i pravedni lideri.",
-      "9": "Za Broj Zrelosti 9 pojedince, napredne godine su oblikovane temama saosećanja, idealizma i služenja čovečanstvu. Ceniti dodirivanje tuđih života, ostavljanje traga u svetu i doprinos kroz umetničke/humanitarne projekte.\n\nMeđutim, prekomerni idealizam ili samožrtvovanje mogu biti senovni aspekti. Kada kombinuju realnost sa svojim idealizmom, postaju inspirativne i isceljujuće figure u društvu."
+      "9": "Za Broj Zrelosti 9 pojedince, napredne godine su oblikovane temama saosećanja, idealizma i služenja čovečanstvu. Ceniti dodirivanje tuđih života, ostavljanje traga u svetu i doprinos kroz umetničke/humanitarne projekte.\n\nMeđutim, prekomerni idealizam ili samožrtvovanje mogu biti senovni aspekti. Kada kombinuju realnost sa svojim idealizmom, postaju inspirativne i isceljujuće figure u društvu.",
+      "11": "Broj Zrelosti 11 pojedinci osećaju teme intuicije, vizije i duhovnog vođstva intenzivnije u drugoj polovini svojih života. Ovaj period je pun inspirativnih projekata i prilika da osvetljavaju druge za njih.\n\nMeđutim, intenzivna energija može stvoriti anksioznost ili neuravnoteženost. Kada se uravnoteže, postaju moćne figure koje vode društvo i nude visoku viziju.",
+      "22": "Za Broj Zrelosti 22 pojedince, napredne godine postaju period stvaranja velikih projekata i trajnih nasleđa. Imaju potencijal da pretvore svoje snove u stvarnost i pruže konkretne doprinose društvu. Njihova disciplinovana i vizionarska priroda postaje još jača tokom ovog perioda.\n\nMeđutim, težak pritisak odgovornosti može biti senovni aspekt. Kada se ne zadovolje malim ciljevima, postaju nezaboravne figure gradeći trajna dela u svetu.",
+      "33": "Broj Zrelosti 33 pojedinci osećaju energiju bezuslovne ljubavi, saosećanja i isceljenja intenzivno u drugoj polovini svojih života. Ovaj period je pun prilika da inspirišu druge, uče i leče društvo.\n\nMeđutim, prekomerna odgovornost ili sagorevanje mogu biti senovni aspekti. Kada ostanu uravnoteženi, postaju moćni iscelitelji koji osvetljavaju i svoje voljene i društvo."
     },
     "page": {
       "calculate": "Izračunaj",
@@ -950,31 +953,31 @@
     },
     "personalityMeanings": {
       "1": "Broj Ličnosti 1 pojedinci se doživljavaju kao odlučni, samouvereni i lideri duha spolja. Ljudi ih vide kao jake, samopouzdane i hrabre karaktere. Kada govore, zrače autoritetom i prirodno privlače pažnju u svojoj okolini.\n\nMeđutim, ova energija ponekad može biti doživljena kao autoritarna, arogantna ili previše sebična od strane drugih. Kada razviju mekši i deljeniji stav, postaju prirodni lideri koji inspirišu druge.",
-      "11": "Broj Ličnosti 11 pojedinci se spolja čine karizmatični, intuitivni i inspirišući. Nose visoku energetsku frekvenciju i zrače svetlošću svojoj okolini. Ljudi ih doživljavaju sa vizionarskom, duhovnom i drugačijom aurom.\n\nMeđutim, ova energija ponekad može biti viđena kao teška za razumevanje, neuravnotežena ili previše osetljiva od strane drugih. Kada su uravnoteženi, nude jaku inspiraciju i vođstvo svojoj okolini.",
       "2": "Broj Ličnosti 2 pojedinci se spolja čine nežni, harmonični i osetljivi. Lako se povezuju sa drugima, zrače saosećajnom i razumevajućom energijom. U svojoj okolini obično predstavljaju toplu, pouzdanu i kooperativnu sliku.\n\nMeđutim, prekomerna potraga za harmonijom može dovesti do toga da ih drugi doživljavaju kao pasivne ili neodlučne. Kada jasno definišu svoje granice, imaju i nežan i jak stav.",
-      "22": "Broj Ličnosti 22 pojedinci se spolja doživljavaju kao vizionarski, odlučni i jaki graditelji. Nose disciplinovanu, praktičnu i impresivnu auru unutar zajednice. Ljudi ih vide kao pojedince koji grade čvrste projekte, pouzdani i imaju viziju.\n\nMeđutim, ova energija ponekad može biti doživljena kao teška, distancirana ili previše kontrolišuća od strane drugih. Kada su uravnoteženi, postaju moćne figure koje stvaraju trajne vrednosti u društvu.",
       "3": "Broj Ličnosti 3 pojedinci se spolja čine energični, društveni i kreativni. Svojim veselim stavovima osvetljavaju svoju okolinu i dodaju radost svojoj okolini svojim duhovitim ličnostima. Ljudi ih poznaju kao jake komunikatore, zabavne i otvorene.\n\nMeđutim, ova energija ponekad može biti doživljena kao previše rasejana, površna ili nepažljiva. Kada se fokusiraju, postaju moćne figure koje donose radost i inspiraciju spoljašnjem svetu.",
-      "33": "Broj Ličnosti 33 pojedinci predstavljaju saosećajnu, nastavnu i isceljujuću sliku spolja. Nose auru bezuslovne ljubavi, razumevanja i poverenja svojoj okolini. Ljudi ih vide kao vodiče, podršku i izvore mudrosti.\n\nMeđutim, ova energija ponekad može stvoriti sliku prekomernog samožrtvovanja, zanemarivanja sebe ili preuzimanja prekomernih odgovornosti. Kada ostanu uravnoteženi, postaju jake ličnosti koje i donose isceljenje svojoj okolini i inspirišu.",
       "4": "Broj Ličnosti 4 pojedinci se spolja doživljavaju kao ozbiljni, disciplinovani i pouzdani. Ljudi ih poznaju kao čvrste, odlučne i vredne pojedince. U spoljašnjem svetu obično predstavljaju odgovornu, planiranu i organizovanu ličnost.\n\nMeđutim, ova energija ponekad može biti viđena kao kruta, tvrdoglava ili previše vezana za pravila. Kada postanu fleksibilniji i prilagodljiviji, postaju ličnosti koje su i pouzdane i sa kojima je lako komunicirati.",
       "5": "Broj Ličnosti 5 pojedinci se spolja čine dinamični, slobodnog duha i energični. Nose inovativnu, pokretnu i avanturističku auru. Ljudi ih poznaju kao žive, otvorene za promene i pojedince koji vole otkrića.\n\nMeđutim, ova energija ponekad može biti doživljena kao neuravnotežena, nestrpljiva ili nepouzdana. Kada balansiraju svoju želju za slobodom sa svešću odgovornosti, postaju avanturistički duh koji inspiriše spoljašnji svet.",
       "6": "Broj Ličnosti 6 pojedinci predstavljaju nežnu, elegantnu i podržavajuću sliku spolja. Poznati su kao ljubavni, visokog estetskog razumevanja i harmonični pojedinci. Ljudi ih doživljavaju kao pouzdane, saosećajne i uravnotežene figure.\n\nMeđutim, ova energija ponekad može se reflektovati kao previše mešajuća, samožrtvujuća ili kritična. Kada zaštite svoje granice, postaju jake ličnosti koje donose mir i poverenje drugima.",
       "7": "Broj Ličnosti 7 pojedinci se spolja doživljavaju kao misteriozni, zamišljeni i duboki. Nose tihu, intuitivnu i intelektualnu auru. Ljudi ih vide kao mudre, istraživačke i duhovno jake pojedince.\n\nMeđutim, ova energija ponekad može biti doživljena kao distancirana, hladna ili introvertna. Kada otvore svoja srca, postaju ličnosti koje inspirišu svoju okolinu svojom mudrošću.",
       "8": "Broj Ličnosti 8 pojedinci se spolja čine jaki, autoritativni i karizmatični. Predstavljaju impresivnu poziciju u poslu ili zajednicama. Ljudi ih doživljavaju kao disciplinovane, odlučne i moćne figure.\n\nMeđutim, ova energija ponekad može stvoriti previše opresivnu, ambicioznu ili distanciranu sliku. Kada balansiraju moć sa pravdom, postaju jaki lideri koji donose poverenje i inspiraciju svojoj okolini.",
-      "9": "Broj Ličnosti 9 pojedinci se spolja čine saosećajni, umetnički i idealistički. Nose energiju koja je spremna da pomaže ljudima, inspirišuća i osetljiva. U svojoj okolini obično su poznati kao humani, umetnički i vizionarski likovi.\n\nMeđutim, ova energija ponekad može biti doživljena kao previše sanjarska, emocionalna ili krhka. Kada kombinuju realnost sa idealizmom, postaju isceljujuće i inspirišuće ličnosti u spoljašnjem svetu."
+      "9": "Broj Ličnosti 9 pojedinci se spolja čine saosećajni, umetnički i idealistički. Nose energiju koja je spremna da pomaže ljudima, inspirišuća i osetljiva. U svojoj okolini obično su poznati kao humani, umetnički i vizionarski likovi.\n\nMeđutim, ova energija ponekad može biti doživljena kao previše sanjarska, emocionalna ili krhka. Kada kombinuju realnost sa idealizmom, postaju isceljujuće i inspirišuće ličnosti u spoljašnjem svetu.",
+      "11": "Broj Ličnosti 11 pojedinci se spolja čine karizmatični, intuitivni i inspirišući. Nose visoku energetsku frekvenciju i zrače svetlošću svojoj okolini. Ljudi ih doživljavaju sa vizionarskom, duhovnom i drugačijom aurom.\n\nMeđutim, ova energija ponekad može biti viđena kao teška za razumevanje, neuravnotežena ili previše osetljiva od strane drugih. Kada su uravnoteženi, nude jaku inspiraciju i vođstvo svojoj okolini.",
+      "22": "Broj Ličnosti 22 pojedinci se spolja doživljavaju kao vizionarski, odlučni i jaki graditelji. Nose disciplinovanu, praktičnu i impresivnu auru unutar zajednice. Ljudi ih vide kao pojedince koji grade čvrste projekte, pouzdani i imaju viziju.\n\nMeđutim, ova energija ponekad može biti doživljena kao teška, distancirana ili previše kontrolišuća od strane drugih. Kada su uravnoteženi, postaju moćne figure koje stvaraju trajne vrednosti u društvu.",
+      "33": "Broj Ličnosti 33 pojedinci predstavljaju saosećajnu, nastavnu i isceljujuću sliku spolja. Nose auru bezuslovne ljubavi, razumevanja i poverenja svojoj okolini. Ljudi ih vide kao vodiče, podršku i izvore mudrosti.\n\nMeđutim, ova energija ponekad može stvoriti sliku prekomernog samožrtvovanja, zanemarivanja sebe ili preuzimanja prekomernih odgovornosti. Kada ostanu uravnoteženi, postaju jake ličnosti koje i donose isceljenje svojoj okolini i inspirišu."
     },
     "pinnaclesMeanings": {
       "1": "Vrhunac 1 pokazuje da se tema nezavisnosti i liderstva snažno ističe u životu osobe. Tokom ovog perioda, osoba pravi nove početke i preduzima hrabre korake da nacrta svoj put. Iskra unutar stvara prilike za individualna dostignuća i preduzetništvo.\n\nMeđutim, postoji rizik da se ponaša previše sebično ili autoritarno tokom ovog perioda. Učenje saradnje sa drugima, proširivanje vizije i balansiranje nezavisnosti sa harmonijom iznosi najbolji potencijal ovog vrhunca.",
-      "11": "Vrhunac 11 otkriva temu inspiracije, intuicije i vizije u životu osobe. Ovaj period je vreme kada se povećava duhovna svest i ističu se inspirativni projekti.\n\nMeđutim, intenzivna energija može stvoriti anksioznost i nemir. Kada je uravnotežena, Vrhunac 11 se transformiše u period vođstva koji osvetljava okolinu.",
       "2": "Vrhunac 2 pokazuje da se prilike za harmoniju, partnerstva i saradnju povećavaju u životu osobe. Ovaj period je idealan za stvaranje dubokih veza u odnosima, osiguravanje mira i razvijanje diplomatskih veština.\n\nMeđutim, tokom ovog procesa mogu se javiti prekomerna osetljivost, neodlučnost ili tendencije zavisnosti. Kada se održavaju zdrave granice, osoba postiže velike uspehe sa drugima i postaje sila koja donosi mir svojoj okolini.",
-      "22": "Vrhunac 22 donosi velike projekte, trajna nasleđa i društvene doprinose u prvi plan u životu osobe. Ovaj period je proces gde se vizije pretvaraju u stvarnost i postižu konkretna dostignuća.\n\nMeđutim, pritisak odgovornosti ili želja za kontrolom mogu biti senovni aspekti. Kada se ova energija koristi uravnoteženo, osoba ostavlja nezaboravne tragove u svetu.",
       "3": "Vrhunac 3 pokazuje da se kreativnost, izražavanje i društvena dostignuća ističu u životu osobe. Tokom ovog perioda, osoba se može istaknuti u umetnosti, komunikaciji, pisanju ili na sceni. To je period visoke energije, radosti i inspiracije.\n\nMeđutim, tokom ovog procesa površnost ili neorganizovanost mogu biti opstruktivni. Kada se fokusira, kreativnost se transformiše u i ličnu i društvenu svetlost.",
-      "33": "Vrhunac 33 pokazuje da se teme bezuslovne ljubavi, saosećanja i služenja intenziviraju u životu osobe. Ovaj period je jaka prilika za vođstvo društva, donošenje isceljenja i sjaj kroz podučavanje.\n\nMeđutim, mogu postojati rizici prekomerne odgovornosti ili sagorevanja. Kada je uravnotežen, Vrhunac 33 nudi moćan period isceljenja koji inspiriše društvo.",
       "4": "Vrhunac 4 pokazuje da se tema discipline, rada i reda ističe u životu osobe. Ovaj period može biti vreme za postavljanje čvrstih temelja, stvaranje trajnih projekata i preuzimanje odgovornosti.\n\nMeđutim, kruta pravila ili otpor promenama mogu biti senovna strana ovog procesa. Kada se razvije fleksibilnost, Vrhunac 4 postaje temelj velike stabilnosti i poverenja.",
       "5": "Vrhunac 5 pokazuje da se energija slobode, promene i otkrića intenzivira u životu osobe. Ovaj period nudi jake prilike za sticanje novih iskustava, putovanje ili pravljenje radikalnih transformacija.\n\nMeđutim, nestrpljivost i nestabilnost su rizici ovog perioda. Balansiranje želje za slobodom sa svesnošću odgovornosti u potpunosti otkriva potencijal Vrhunca 5.",
       "6": "Vrhunac 6 pokazuje da se tema porodice, odgovornosti i ljubavi ističe u životu osobe. Ovaj period može biti vreme za harmoniju u odnosima, stvaranje estetike i služenje društvu.\n\nMeđutim, prekomerno samožrtvovanje ili tendencija preuzimanja tuđih problema može biti iscrpljujuća. Održavanje ravnoteže razmatranjem sopstvenih potreba otkriva svetlost ovog perioda.",
       "7": "Vrhunac 7 pokazuje da se tema duhovnosti, istraživanja i mudrosti jača u životu osobe. Tokom ovog perioda, osoba se više okreće svom unutrašnjem svetu, prati svoje intuicije i propituje smisao života.\n\nMeđutim, prekomerna introvertnost ili osećaji samoće mogu biti senovni aspekti. Deljenje mudrosti sa drugima transformiše ovaj vrhunac u svetao period.",
       "8": "Vrhunac 8 pokazuje da se tema moći, uspeha i materijalnog prosperiteta ističe u životu osobe. Ovaj period može doneti napredovanje u karijeri, prilike za liderstvo i finansijski uspeh.\n\nMeđutim, prekomerna ambicija, želja za kontrolom ili autoritarni stavovi mogu biti senovna strana ovog procesa. Kada se balansira sa duhovnošću, Vrhunac 8 otvara vrata trajnim dostignućima.",
-      "9": "Vrhunac 9 intenzivno otkriva temu saosećanja, služenja i idealizma u životu osobe. Ovaj period može biti vreme za pomaganje drugima, bavljenje umetničkim radom i doprinos društvu.\n\nMeđutim, prekomerno samožrtvovanje ili idealizam mogu biti senovni aspekti. Kada se kombinuje sa realnošću, Vrhunac 9 donosi projekte koji ostavljaju trajne tragove u svetu."
+      "9": "Vrhunac 9 intenzivno otkriva temu saosećanja, služenja i idealizma u životu osobe. Ovaj period može biti vreme za pomaganje drugima, bavljenje umetničkim radom i doprinos društvu.\n\nMeđutim, prekomerno samožrtvovanje ili idealizam mogu biti senovni aspekti. Kada se kombinuje sa realnošću, Vrhunac 9 donosi projekte koji ostavljaju trajne tragove u svetu.",
+      "11": "Vrhunac 11 otkriva temu inspiracije, intuicije i vizije u životu osobe. Ovaj period je vreme kada se povećava duhovna svest i ističu se inspirativni projekti.\n\nMeđutim, intenzivna energija može stvoriti anksioznost i nemir. Kada je uravnotežena, Vrhunac 11 se transformiše u period vođstva koji osvetljava okolinu.",
+      "22": "Vrhunac 22 donosi velike projekte, trajna nasleđa i društvene doprinose u prvi plan u životu osobe. Ovaj period je proces gde se vizije pretvaraju u stvarnost i postižu konkretna dostignuća.\n\nMeđutim, pritisak odgovornosti ili želja za kontrolom mogu biti senovni aspekti. Kada se ova energija koristi uravnoteženo, osoba ostavlja nezaboravne tragove u svetu.",
+      "33": "Vrhunac 33 pokazuje da se teme bezuslovne ljubavi, saosećanja i služenja intenziviraju u životu osobe. Ovaj period je jaka prilika za vođstvo društva, donošenje isceljenja i sjaj kroz podučavanje.\n\nMeđutim, mogu postojati rizici prekomerne odgovornosti ili sagorevanja. Kada je uravnotežen, Vrhunac 33 nudi moćan period isceljenja koji inspiriše društvo."
     },
     "result": {
       "calculationDetails": "Detalji Izračuna",
@@ -1438,10 +1441,6 @@
           "description": "Pokazuje opšti ishod tvog bračnog procesa i kako će napredovati.",
           "title": "Kakav će biti ishod?"
         },
-        "10": {
-          "description": "Pokazuje tvoj bračni potencijal i šanse za venčanje.",
-          "title": "Da li ću moći da se oženim/udam?"
-        },
         "2": {
           "description": "Pokazuje kako treba da se razvijaš dok ne nađeš pravu osobu.",
           "title": "Šta treba da radim dok čekam supružnika?"
@@ -1473,6 +1472,10 @@
         "9": {
           "description": "Pokazuje karakteristike tvog idealnog supružnika i osobu koja će biti kompatibilna sa tobom.",
           "title": "Kakav supružnik je prikladan za mene?"
+        },
+        "10": {
+          "description": "Pokazuje tvoj bračni potencijal i šanse za venčanje.",
+          "title": "Da li ću moći da se oženim/udam?"
         }
       }
     },
@@ -1552,10 +1555,6 @@
           "description": "Glavno pitanje ili tema koja čini osnovu otvaranja",
           "title": "Postavljeno Pitanje"
         },
-        "10": {
-          "description": "Konačni ishod teme ili događaja, moguće rešenje",
-          "title": "Ishod Događaja"
-        },
         "2": {
           "description": "Glavna prepreka ili poteškoća pred problemom",
           "title": "Prepreka Problema"
@@ -1587,6 +1586,10 @@
         "9": {
           "description": "Naši unutrašnji strahovi i zabrinutosti povezani sa temom",
           "title": "Strahovi i Zabrinutosti"
+        },
+        "10": {
+          "description": "Konačni ishod teme ili događaja, moguće rešenje",
+          "title": "Ishod Događaja"
         }
       }
     },
@@ -1849,17 +1852,6 @@
         },
         "name": "As Pehara"
       },
-      "10": {
-        "keywords": [
-          "božanska ljubav",
-          "harmonija"
-        ],
-        "meaning": {
-          "reversed": "Odvojenost, teške veze",
-          "upright": "Božanska ljubav, harmonija"
-        },
-        "name": "Desetka Pehara"
-      },
       "2": {
         "keywords": [
           "partnerstvo",
@@ -1948,6 +1940,17 @@
         },
         "name": "Devetka Pehara"
       },
+      "10": {
+        "keywords": [
+          "božanska ljubav",
+          "harmonija"
+        ],
+        "meaning": {
+          "reversed": "Odvojenost, teške veze",
+          "upright": "Božanska ljubav, harmonija"
+        },
+        "name": "Desetka Pehara"
+      },
       "king": {
         "keywords": [
           "emocionalna ravnoteža",
@@ -2015,6 +2018,94 @@
           "upright": "Manifestacija, snalažljivost, moć"
         },
         "name": "Mađioničar"
+      },
+      "2": {
+        "keywords": [
+          "intuicija",
+          "misterija"
+        ],
+        "meaning": {
+          "reversed": "Tajne, odvojenost od intuicije",
+          "upright": "Intuicija, sveto znanje, božanska ženskost"
+        },
+        "name": "Visoka Svestenica"
+      },
+      "3": {
+        "keywords": [
+          "ženskost",
+          "lepota"
+        ],
+        "meaning": {
+          "reversed": "Kreativni blok, zavisnost",
+          "upright": "Ženskost, lepota, priroda, negovanje"
+        },
+        "name": "Carica"
+      },
+      "4": {
+        "keywords": [
+          "autoritet",
+          "struktura"
+        ],
+        "meaning": {
+          "reversed": "Dominacija, prekomerna kontrola",
+          "upright": "Autoritet, uspostavljanje, struktura"
+        },
+        "name": "Car"
+      },
+      "5": {
+        "keywords": [
+          "tradicija",
+          "usaglašenost"
+        ],
+        "meaning": {
+          "reversed": "Lična uverenja, sloboda",
+          "upright": "Duhovna mudrost, verska uverenja"
+        },
+        "name": "Sveštenik"
+      },
+      "6": {
+        "keywords": [
+          "ljubav",
+          "harmonija"
+        ],
+        "meaning": {
+          "reversed": "Samo-ljubav, neharmonija",
+          "upright": "Ljubav, harmonija, veze"
+        },
+        "name": "Ljubavnici"
+      },
+      "7": {
+        "keywords": [
+          "kontrola",
+          "snaga volje"
+        ],
+        "meaning": {
+          "reversed": "Samo-disciplina, opozicija",
+          "upright": "Kontrola, snaga volje, uspeh"
+        },
+        "name": "Kola"
+      },
+      "8": {
+        "keywords": [
+          "snaga",
+          "hrabrost"
+        ],
+        "meaning": {
+          "reversed": "Samo-sumlja, nedostatak samopouzdanja",
+          "upright": "Snaga, hrabrost, ubeđivanje"
+        },
+        "name": "Snaga"
+      },
+      "9": {
+        "keywords": [
+          "introspekcija",
+          "traganje"
+        ],
+        "meaning": {
+          "reversed": "Izolacija, usamljenost",
+          "upright": "Traganje za dušom, introspekcija"
+        },
+        "name": "Pustinjak"
       },
       "10": {
         "keywords": [
@@ -2126,17 +2217,6 @@
         },
         "name": "Sunce"
       },
-      "2": {
-        "keywords": [
-          "intuicija",
-          "misterija"
-        ],
-        "meaning": {
-          "reversed": "Tajne, odvojenost od intuicije",
-          "upright": "Intuicija, sveto znanje, božanska ženskost"
-        },
-        "name": "Visoka Svestenica"
-      },
       "20": {
         "keywords": [
           "sud",
@@ -2158,83 +2238,6 @@
           "upright": "Završetak, integracija, postignuće"
         },
         "name": "Svet"
-      },
-      "3": {
-        "keywords": [
-          "ženskost",
-          "lepota"
-        ],
-        "meaning": {
-          "reversed": "Kreativni blok, zavisnost",
-          "upright": "Ženskost, lepota, priroda, negovanje"
-        },
-        "name": "Carica"
-      },
-      "4": {
-        "keywords": [
-          "autoritet",
-          "struktura"
-        ],
-        "meaning": {
-          "reversed": "Dominacija, prekomerna kontrola",
-          "upright": "Autoritet, uspostavljanje, struktura"
-        },
-        "name": "Car"
-      },
-      "5": {
-        "keywords": [
-          "tradicija",
-          "usaglašenost"
-        ],
-        "meaning": {
-          "reversed": "Lična uverenja, sloboda",
-          "upright": "Duhovna mudrost, verska uverenja"
-        },
-        "name": "Sveštenik"
-      },
-      "6": {
-        "keywords": [
-          "ljubav",
-          "harmonija"
-        ],
-        "meaning": {
-          "reversed": "Samo-ljubav, neharmonija",
-          "upright": "Ljubav, harmonija, veze"
-        },
-        "name": "Ljubavnici"
-      },
-      "7": {
-        "keywords": [
-          "kontrola",
-          "snaga volje"
-        ],
-        "meaning": {
-          "reversed": "Samo-disciplina, opozicija",
-          "upright": "Kontrola, snaga volje, uspeh"
-        },
-        "name": "Kola"
-      },
-      "8": {
-        "keywords": [
-          "snaga",
-          "hrabrost"
-        ],
-        "meaning": {
-          "reversed": "Samo-sumlja, nedostatak samopouzdanja",
-          "upright": "Snaga, hrabrost, ubeđivanje"
-        },
-        "name": "Snaga"
-      },
-      "9": {
-        "keywords": [
-          "introspekcija",
-          "traganje"
-        ],
-        "meaning": {
-          "reversed": "Izolacija, usamljenost",
-          "upright": "Traganje za dušom, introspekcija"
-        },
-        "name": "Pustinjak"
       }
     },
     "pentacles": {
@@ -2248,17 +2251,6 @@
           "upright": "Nova mogućnost, manifestacija"
         },
         "name": "As Pentakla"
-      },
-      "10": {
-        "keywords": [
-          "bogatstvo",
-          "porodica"
-        ],
-        "meaning": {
-          "reversed": "Finansijski neuspeh, mračna strana bogatstva",
-          "upright": "Bogatstvo, porodica, dugoročni uspeh"
-        },
-        "name": "Desetka Pentakla"
       },
       "2": {
         "keywords": [
@@ -2348,6 +2340,17 @@
         },
         "name": "Devetka Pentakla"
       },
+      "10": {
+        "keywords": [
+          "bogatstvo",
+          "porodica"
+        ],
+        "meaning": {
+          "reversed": "Finansijski neuspeh, mračna strana bogatstva",
+          "upright": "Bogatstvo, porodica, dugoročni uspeh"
+        },
+        "name": "Desetka Pentakla"
+      },
       "king": {
         "keywords": [
           "uspeh",
@@ -2404,17 +2407,6 @@
           "upright": "Proboj, jasnoća"
         },
         "name": "As Mačeva"
-      },
-      "10": {
-        "keywords": [
-          "krajevi",
-          "izdaja"
-        ],
-        "meaning": {
-          "reversed": "Oporavak, otpor kraju",
-          "upright": "Bolni krajevi, izdaja"
-        },
-        "name": "Desetka Mačeva"
       },
       "2": {
         "keywords": [
@@ -2504,6 +2496,17 @@
         },
         "name": "Devetka Mačeva"
       },
+      "10": {
+        "keywords": [
+          "krajevi",
+          "izdaja"
+        ],
+        "meaning": {
+          "reversed": "Oporavak, otpor kraju",
+          "upright": "Bolni krajevi, izdaja"
+        },
+        "name": "Desetka Mačeva"
+      },
       "king": {
         "keywords": [
           "jasnoća",
@@ -2560,17 +2563,6 @@
           "upright": "Inspiracija, nove mogućnosti"
         },
         "name": "As Štapova"
-      },
-      "10": {
-        "keywords": [
-          "teret",
-          "odgovornost"
-        ],
-        "meaning": {
-          "reversed": "Raditi sve, delegiranje",
-          "upright": "Teret, odgovornost"
-        },
-        "name": "Desetka Štapova"
       },
       "2": {
         "keywords": [
@@ -2659,6 +2651,17 @@
           "upright": "Otpornost, hrabrost"
         },
         "name": "Devetka Štapova"
+      },
+      "10": {
+        "keywords": [
+          "teret",
+          "odgovornost"
+        ],
+        "meaning": {
+          "reversed": "Raditi sve, delegiranje",
+          "upright": "Teret, odgovornost"
+        },
+        "name": "Desetka Štapova"
       },
       "king": {
         "keywords": [

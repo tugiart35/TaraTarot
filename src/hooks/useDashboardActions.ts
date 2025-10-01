@@ -1,7 +1,6 @@
 // Dashboard sayfası için aksiyon fonksiyonları hook'u
 
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
 import { supabase } from '@/lib/supabase/client';
 import { useShopier } from '@/hooks/useShopier';
 import { UserProfile, Reading, Package } from '@/types/dashboard.types';
@@ -21,8 +20,6 @@ export const useDashboardActions = (
 ) => {
   // useShopier hook'undan ödeme fonksiyonlarını al
   const { initiatePayment, loading: paymentLoading } = useShopier();
-  // Programatik sayfa yönlendirme için router
-  const router = useRouter();
 
   // Modal state'leri
   const [profileModalOpen, setProfileModalOpen] = useState(false);
@@ -46,7 +43,13 @@ export const useDashboardActions = (
       }
 
       // Fallback: Shopier ödeme sistemi ile satın alma
-      await initiatePayment(pkg.id.toString(), pkg); // useShopier hook'u ile ödeme başlat
+      const packageData = {
+        name: pkg.name,
+        credits: pkg.credits,
+        price: pkg.price_try, // Türk Lirası fiyatını kullan
+        currency: 'TRY'
+      };
+      await initiatePayment(pkg.id.toString(), packageData); // useShopier hook'u ile ödeme başlat
     } catch (error) {
       alert('Paket satın alınırken bir hata oluştu. Lütfen tekrar deneyin.');
     }

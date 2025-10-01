@@ -54,7 +54,31 @@ import {
   Package,
   DollarSign,
   Download,
+  UserCheck,
+  Calendar as CalendarIcon,
+  Hash,
+  Tag,
+  FileText,
+  MessageSquare,
+  Settings,
+  Database,
+  Key,
+  Link,
+  Copy,
+  Mail,
+  User,
+  Clock,
+  Activity,
+  X,
 } from 'lucide-react';
+
+interface OrderMetadata {
+  status?: string;
+  updated_at?: string;
+  updated_by?: string;
+  readingFormat?: 'detailed' | 'written' | 'simple';
+  [key: string]: any;
+}
 
 interface Order {
   id: string;
@@ -69,9 +93,18 @@ interface Order {
   ref_id: string;
   user_display_name?: string;
   user_email?: string;
+  user_first_name?: string;
+  user_last_name?: string;
+  user_avatar?: string | null;
   package_name?: string;
   package_credits?: number;
   status?: string;
+  statusData?: {
+    color: string;
+    icon: React.ReactNode;
+    text: string;
+  };
+  metadata?: OrderMetadata;
 }
 
 export default function OrdersPage() {
@@ -143,7 +176,22 @@ export default function OrdersPage() {
 
       // Durum filtresi
       if (statusFilter !== 'all') {
-        countQuery = countQuery.eq('type', statusFilter);
+        // Status filtresi için transaction type'ları map et
+        const statusTypeMap: Record<string, string[]> = {
+          'completed': ['purchase', 'bonus', 'deduction'],
+          'pending': ['pending_payment'],
+          'cancelled': ['refund']
+        };
+        
+        // Eğer bu bir durum filtresi ise
+        if (['completed', 'pending', 'cancelled'].includes(statusFilter)) {
+          if (statusTypeMap[statusFilter]) {
+            countQuery = countQuery.in('type', statusTypeMap[statusFilter]);
+          }
+        } else {
+          // Doğrudan transaction tipi filtresi
+          countQuery = countQuery.eq('type', statusFilter);
+        }
       }
 
       // Arama terimi - kullanıcı email ve display_name dahil
@@ -156,15 +204,18 @@ export default function OrdersPage() {
       const { count } = await countQuery;
       setTotalCount(count || 0);
 
-      // Transactions query with joins
+      // Transactions query with joins - LEFT JOIN kullanarak tüm transaction'ları getir
       let query = supabase
         .from('transactions')
         .select(
           `
           *,
-          profiles!inner(
+          profiles(
             email,
-            display_name
+            display_name,
+            first_name,
+            last_name,
+            avatar_url
           )
         `
         )
@@ -176,7 +227,22 @@ export default function OrdersPage() {
 
       // Durum filtresi
       if (statusFilter !== 'all') {
-        query = query.eq('type', statusFilter);
+        // Status filtresi için transaction type'ları map et
+        const statusTypeMap: Record<string, string[]> = {
+          'completed': ['purchase', 'bonus', 'deduction'],
+          'pending': ['pending_payment'],
+          'cancelled': ['refund']
+        };
+        
+        // Eğer bu bir durum filtresi ise
+        if (['completed', 'pending', 'cancelled'].includes(statusFilter)) {
+          if (statusTypeMap[statusFilter]) {
+            query = query.in('type', statusTypeMap[statusFilter]);
+          }
+        } else {
+          // Doğrudan transaction tipi filtresi
+          query = query.eq('type', statusFilter);
+        }
       }
 
       // Arama terimi - transaction bilgileri ile arama
@@ -190,41 +256,58 @@ export default function OrdersPage() {
 
       if (error) {
         console.error('Supabase error:', error);
+        showToast('Veriler yüklenirken hata oluştu: ' + error.message, 'error');
         setOrders([]);
         return;
       }
 
-      // Format transactions safely with user data
-      const formattedOrders = (data || []).map((transaction: any) => ({
-        id: transaction.id || 'unknown',
-        user_id: transaction.user_id || 'unknown',
-        type: transaction.type || 'unknown',
-        amount: transaction.amount || 0,
-        description: transaction.description || 'No description',
-        created_at: transaction.created_at || new Date().toISOString(),
-        delta_credits: transaction.delta_credits || 0,
-        reason: transaction.reason || 'No reason',
-        ref_type: transaction.ref_type || 'unknown',
-        ref_id: transaction.ref_id || 'No reference',
-        // Kullanıcı bilgileri
-        user_email: transaction.profiles?.email || 'Bilinmeyen',
-        user_display_name:
-          transaction.profiles?.display_name || 'Bilinmeyen Kullanıcı',
-        // Paket bilgileri (ref_id'den paket bilgisi çekilebilir)
-        package_name:
-          transaction.ref_type === 'package_purchase'
-            ? 'Paket Satın Alma'
-            : 'Diğer',
-        package_credits: transaction.delta_credits || 0,
-        status:
-          transaction.type === 'purchase'
-            ? 'completed'
-            : transaction.type === 'bonus'
-              ? 'completed'
-              : transaction.type === 'deduction'
-                ? 'completed'
-                : 'pending',
-      }));
+        // Format transactions safely with user data
+        const formattedOrders = (data || []).map((transaction: any) => {
+          // Önce client-side'da saklanan status'u kontrol et
+          const storedStatuses = getStoredStatuses();
+          const storedStatus = storedStatuses[transaction.id];
+          
+          // Status öncelik sırası: localStorage > transaction.status > transaction.type
+          let status = storedStatus || 
+                      transaction.status || 
+                      getTransactionStatus(transaction.type);
+          
+          // Status bilgisine göre renk, icon ve metin belirle
+          const statusData = {
+            color: getStatusColor(transaction.type, status),
+            icon: getStatusIcon(transaction.type, status),
+            text: getStatusText(transaction.type, status)
+          };
+          
+          return {
+            id: transaction.id || 'unknown',
+            user_id: transaction.user_id || 'unknown',
+            type: transaction.type || 'unknown',
+            amount: transaction.amount || 0,
+            description: transaction.description || 'Açıklama yok',
+            created_at: transaction.created_at || new Date().toISOString(),
+            delta_credits: transaction.delta_credits || 0,
+            reason: transaction.reason || 'Sebep belirtilmemiş',
+            ref_type: transaction.ref_type || 'unknown',
+            ref_id: transaction.ref_id || 'Referans yok',
+            // Kullanıcı bilgileri
+            user_email: transaction.profiles?.email || 'Bilinmeyen',
+            user_display_name:
+              transaction.profiles?.display_name || 'Bilinmeyen Kullanıcı',
+            user_first_name: transaction.profiles?.first_name || '',
+            user_last_name: transaction.profiles?.last_name || '',
+            user_avatar: transaction.profiles?.avatar_url || null,
+            // Paket bilgileri
+            package_name: getPackageName(transaction.ref_type),
+            package_credits: transaction.delta_credits || 0,
+            // Status - localStorage > transaction.status > transaction.type
+            status: status,
+            // Status data - renk, icon ve metin
+            statusData: statusData,
+            // Metadata - diğer özel alanlar (varsa)
+            metadata: transaction.metadata || {},
+          };
+        });
 
       setOrders(formattedOrders);
     } catch (error) {
@@ -236,17 +319,176 @@ export default function OrdersPage() {
     }
   };
 
-  const handleStatusUpdate = async (orderId: string, newStatus: string) => {
+  // Helper functions
+  const getPackageName = (refType: string) => {
+    switch (refType) {
+      case 'package_purchase':
+        return 'Paket Satın Alma';
+      case 'shopier_payment':
+        return 'Shopier Ödemesi';
+      case 'admin_adjustment':
+        return 'Admin Düzenlemesi';
+      case 'bonus':
+        return 'Bonus Kredi';
+      case 'reading_deduction':
+        return 'Okuma Ücreti';
+      default:
+        return 'Diğer';
+    }
+  };
+
+  const getReadingType = (refType: string, description: string) => {
+    // Okuma türünü belirle
+    if (refType === 'reading_deduction') {
+      if (description.toLowerCase().includes('sesli') || description.toLowerCase().includes('voice')) {
+        return 'Sesli Okuma';
+      } else if (description.toLowerCase().includes('yazılı') || description.toLowerCase().includes('text')) {
+        return 'Yazılı Okuma';
+      } else {
+        return 'Tarot Okuması';
+      }
+    }
+    return 'Diğer';
+  };
+
+  const getTransactionStatus = (type: string) => {
+    switch (type) {
+      case 'purchase':
+      case 'bonus':
+        return 'completed';
+      case 'deduction':
+        return 'completed';
+      case 'refund':
+        return 'cancelled';
+      case 'pending_payment':
+        return 'pending';
+      default:
+        return 'pending';
+    }
+  };
+
+  // Client-side durum yönetimi için localStorage kullanımı
+  const getStoredStatuses = (): Record<string, string> => {
+    if (typeof window === 'undefined') return {};
+    
+    const stored = localStorage.getItem('admin_transaction_statuses');
+    if (!stored) return {};
+    
     try {
-      // Transactions tablosunda status güncellemesi yapmıyoruz
-      // Çünkü transaction'lar immutable (değiştirilemez) kayıtlardır
-      console.log(
-        'Transaction status update not supported:',
-        orderId,
-        newStatus
+      return JSON.parse(stored);
+    } catch (e) {
+      console.error('Stored statuses parse error:', e);
+      return {};
+    }
+  };
+  
+  const saveStoredStatus = (id: string, status: string) => {
+    if (typeof window === 'undefined') return;
+    
+    const current = getStoredStatuses();
+    const updated = { ...current, [id]: status };
+    localStorage.setItem('admin_transaction_statuses', JSON.stringify(updated));
+  };
+
+  // Kopyalama fonksiyonu
+  const copyToClipboard = async (text: string, label: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      showToast(`${label} panoya kopyalandı`, 'success');
+    } catch (err) {
+      console.error('Kopyalama hatası:', err);
+      showToast('Kopyalama başarısız', 'error');
+    }
+  };
+
+  const handleStatusUpdate = async (orderId: string, newStatus: string, e?: React.MouseEvent) => {
+    // Eğer event nesnesi varsa, varsayılan davranışı engelle
+    if (e && typeof e.preventDefault === 'function') {
+      e.preventDefault();
+    }
+    
+    // orderId kontrolü
+    if (!orderId) {
+      console.error('Geçersiz işlem ID');
+      showToast('Geçersiz işlem ID', 'error');
+      return;
+    }
+    
+    try {
+      console.log('İşlem güncelleniyor:', orderId, 'yeni durum:', newStatus);
+      
+      // UI'ı hemen güncelle - optimistic update
+      setOrders(prevOrders => 
+        prevOrders.map(order => 
+          order.id === orderId 
+            ? { 
+                ...order, 
+                status: newStatus,
+                statusData: {
+                  color: getStatusColor(order.type, newStatus),
+                  icon: getStatusIcon(order.type, newStatus),
+                  text: getStatusText(order.type, newStatus)
+                }
+              } 
+            : order
+        )
       );
-    } catch (error) {
+      
+      // Eğer modal açıksa, seçili siparişi güncelle
+      if (selectedOrder && selectedOrder.id === orderId) {
+        setSelectedOrder({
+          ...selectedOrder,
+          status: newStatus,
+          statusData: {
+            color: getStatusColor(selectedOrder.type, newStatus),
+            icon: getStatusIcon(selectedOrder.type, newStatus),
+            text: getStatusText(selectedOrder.type, newStatus)
+          }
+        });
+      }
+      
+      // Client-side'da durumu sakla
+      saveStoredStatus(orderId, newStatus);
+      
+      // Metadata olmadan doğrudan status alanını güncellemeyi dene
+      const { error: directUpdateError } = await supabase
+        .from('transactions')
+        .update({ status: newStatus })
+        .eq('id', orderId);
+
+      if (directUpdateError) {
+        console.log('Direct status update failed, using alternative method');
+        
+        // Alternatif 1: RPC fonksiyonu kullanarak güncelleme
+        const { error: rpcError } = await supabase.rpc('update_transaction_status', {
+          p_transaction_id: orderId,
+          p_status: newStatus
+        });
+        
+        if (rpcError) {
+          console.log('RPC update failed, using client-side only storage');
+          // Başarılı bildirim göster (client-side storage çalıştı)
+          showToast('İşlem durumu sadece görsel olarak güncellendi', 'warning');
+        } else {
+          // RPC başarılı
+          showToast('İşlem durumu güncellendi', 'success');
+        }
+      } else {
+        // Doğrudan güncelleme başarılı
+        showToast('İşlem durumu güncellendi', 'success');
+      }
+      
+      // Modal'ı kapat
+      setShowOrderModal(false);
+      
+    } catch (error: any) {
       console.error('Error updating transaction status:', error);
+      showToast(`İşlem durumu güncellenirken hata oluştu: ${error?.message || 'Bilinmeyen hata'}`, 'error');
+      
+      // Hata durumunda bile client-side'da durumu sakla
+      if (orderId) {
+        saveStoredStatus(orderId, newStatus);
+      }
     }
   };
 
@@ -268,7 +510,22 @@ export default function OrdersPage() {
 
       // Durum filtresi
       if (statusFilter !== 'all') {
-        query = query.eq('type', statusFilter);
+        // Status filtresi için transaction type'ları map et
+        const statusTypeMap: Record<string, string[]> = {
+          'completed': ['purchase', 'bonus', 'deduction'],
+          'pending': ['pending_payment'],
+          'cancelled': ['refund']
+        };
+        
+        // Eğer bu bir durum filtresi ise
+        if (['completed', 'pending', 'cancelled'].includes(statusFilter)) {
+          if (statusTypeMap[statusFilter]) {
+            query = query.in('type', statusTypeMap[statusFilter]);
+          }
+        } else {
+          // Doğrudan transaction tipi filtresi
+          query = query.eq('type', statusFilter);
+        }
       }
 
       // Arama terimi
@@ -330,7 +587,20 @@ export default function OrdersPage() {
     }
   };
 
-  const getStatusColor = (type: string) => {
+  const getStatusColor = (type: string, status?: string) => {
+    // Önce status'a göre renk belirle
+    if (status) {
+      switch (status) {
+        case 'completed':
+          return 'text-green-400 bg-green-500/20 border-green-500/30';
+        case 'pending':
+          return 'text-yellow-400 bg-yellow-500/20 border-yellow-500/30';
+        case 'cancelled':
+          return 'text-red-400 bg-red-500/20 border-red-500/30';
+      }
+    }
+    
+    // Status yoksa type'a göre renk belirle
     switch (type) {
       case 'purchase':
         return 'text-green-400 bg-green-500/20 border-green-500/30';
@@ -340,12 +610,27 @@ export default function OrdersPage() {
         return 'text-orange-400 bg-orange-500/20 border-orange-500/30';
       case 'refund':
         return 'text-red-400 bg-red-500/20 border-red-500/30';
+      case 'pending_payment':
+        return 'text-yellow-400 bg-yellow-500/20 border-yellow-500/30';
       default:
         return 'text-slate-400 bg-slate-500/20 border-slate-500/30';
     }
   };
 
-  const getStatusIcon = (type: string) => {
+  const getStatusIcon = (type: string, status?: string) => {
+    // Önce status'a göre icon belirle
+    if (status) {
+      switch (status) {
+        case 'completed':
+          return <CheckCircle className='h-4 w-4' />;
+        case 'pending':
+          return <AlertCircle className='h-4 w-4' />;
+        case 'cancelled':
+          return <XCircle className='h-4 w-4' />;
+      }
+    }
+    
+    // Status yoksa type'a göre icon belirle
     switch (type) {
       case 'purchase':
         return <CheckCircle className='h-4 w-4' />;
@@ -355,12 +640,27 @@ export default function OrdersPage() {
         return <CreditCard className='h-4 w-4' />;
       case 'refund':
         return <RefreshCw className='h-4 w-4' />;
+      case 'pending_payment':
+        return <AlertCircle className='h-4 w-4' />;
       default:
         return <AlertCircle className='h-4 w-4' />;
     }
   };
 
-  const getStatusText = (type: string) => {
+  const getStatusText = (type: string, status?: string) => {
+    // Önce status'a göre text belirle
+    if (status) {
+      switch (status) {
+        case 'completed':
+          return 'Tamamlandı';
+        case 'pending':
+          return 'Beklemede';
+        case 'cancelled':
+          return 'İptal Edildi';
+      }
+    }
+    
+    // Status yoksa type'a göre text belirle
     switch (type) {
       case 'purchase':
         return 'Satın Alma';
@@ -370,6 +670,8 @@ export default function OrdersPage() {
         return 'Kredi Düşümü';
       case 'refund':
         return 'İade';
+      case 'pending_payment':
+        return 'Ödeme Bekliyor';
       default:
         return type;
     }
@@ -512,17 +814,22 @@ export default function OrdersPage() {
 
           {/* Status Filter */}
           <div>
-            <select
-              value={statusFilter}
-              onChange={e => setStatusFilter(e.target.value)}
-              className='w-full px-4 py-3 admin-glass rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-purple-500 mobile-text-sm'
-            >
-              <option value='all'>🔍 Tümü</option>
-              <option value='purchase'>✅ Satın Alma</option>
-              <option value='bonus'>🎁 Bonus</option>
-              <option value='deduction'>💳 Kredi Düşümü</option>
-              <option value='refund'>🔄 İade</option>
-            </select>
+              <select
+                value={statusFilter}
+                onChange={e => setStatusFilter(e.target.value)}
+                className='w-full px-4 py-3 admin-glass rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-purple-500 mobile-text-sm'
+              >
+                <option value='all'>🔍 Tümü</option>
+                {/* Durum filtreleri */}
+                <option value='completed'>✅ Tamamlandı</option>
+                <option value='pending'>⏳ Beklemede</option>
+                <option value='cancelled'>❌ İptal Edildi</option>
+                {/* İşlem tipi filtreleri */}
+                <option value='purchase'>💰 Satın Alma</option>
+                <option value='bonus'>🎁 Bonus</option>
+                <option value='deduction'>💳 Kredi Düşümü</option>
+                <option value='refund'>🔄 İade</option>
+              </select>
           </div>
         </div>
       </div>
@@ -532,17 +839,17 @@ export default function OrdersPage() {
         {orders.map((order, index) => (
           <div
             key={order.id}
-            className='admin-card rounded-xl mobile-compact-sm md:p-6 admin-hover-lift admin-hover-scale'
+            className='admin-card rounded-2xl mobile-compact-sm md:p-6 admin-hover-lift admin-hover-scale border border-slate-700/50 backdrop-blur-sm'
             style={{ animationDelay: `${index * 0.05}s` }}
           >
-            {/* Order Header */}
-            <div className='flex items-center justify-between mb-4'>
+            {/* Modern Card Header */}
+            <div className='flex items-center justify-between mb-6'>
               <div className='flex items-center space-x-3'>
-                <div className='admin-gradient-accent p-2 rounded-lg'>
+                <div className='admin-gradient-accent p-3 rounded-xl shadow-lg'>
                   <CreditCard className='h-5 w-5 text-white' />
                 </div>
                 <div>
-                  <h3 className='font-semibold text-white'>
+                  <h3 className='font-bold text-white text-lg'>
                     #{order.id.slice(0, 8)}...
                   </h3>
                   <p className='text-sm text-slate-400'>
@@ -551,88 +858,107 @@ export default function OrdersPage() {
                 </div>
               </div>
 
-              <div
-                className={`inline-flex items-center px-3 py-1 rounded-lg text-xs font-medium border ${getStatusColor(order.type)}`}
-              >
-                {getStatusIcon(order.type)}
-                <span className='ml-1'>{getStatusText(order.type)}</span>
-              </div>
+                <div
+                 className={`inline-flex items-center px-3 py-2 rounded-xl text-xs font-semibold border-2 shadow-lg ${order.statusData?.color || getStatusColor(order.type, order.status)}`}
+                >
+                 {order.statusData?.icon || getStatusIcon(order.type, order.status)}
+                 <span className='ml-2'>{order.statusData?.text || getStatusText(order.type, order.status)}</span>
+                </div>
             </div>
 
-            {/* Transaction Details */}
-            <div className='space-y-3 mb-4'>
-              {/* Kullanıcı Bilgileri */}
-              <div className='admin-glass rounded-lg p-3'>
-                <div className='flex items-center justify-between mb-2'>
-                  <span className='text-sm text-slate-400'>Kullanıcı</span>
-                  <span className='text-sm text-white font-medium'>
-                    {order.user_display_name}
-                  </span>
+            {/* Modern Transaction Details */}
+            <div className='space-y-4 mb-6'>
+              {/* Kullanıcı Bilgileri - Modern Card */}
+              <div className='admin-glass rounded-xl p-4 border border-slate-600/30'>
+                <div className='flex items-center space-x-3 mb-3'>
+                  <div className='w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center'>
+                    <span className='text-white text-sm font-bold'>
+                      {(order.user_first_name?.charAt(0) || order.user_last_name?.charAt(0) || 'U').toUpperCase()}
+                    </span>
+                  </div>
+                  <div className='flex-1'>
+                    <div className='text-sm text-slate-400'>Kullanıcı</div>
+                    <div className='text-white font-semibold'>
+                      {order.user_first_name && order.user_last_name 
+                        ? `${order.user_first_name} ${order.user_last_name}`
+                        : order.user_display_name || 'Bilinmeyen Kullanıcı'
+                      }
+                    </div>
+                  </div>
                 </div>
-                <div className='flex items-center justify-between'>
-                  <span className='text-sm text-slate-400'>Email</span>
-                  <span className='text-xs text-slate-300'>
-                    {order.user_email}
-                  </span>
+                <div className='text-xs text-slate-400 truncate'>
+                  {order.user_email}
                 </div>
               </div>
 
-              <div className='admin-glass rounded-lg p-3'>
-                <div className='flex items-center justify-between mb-2'>
-                  <span className='text-sm text-slate-400'>Tutar</span>
-                  <div className='text-lg font-bold text-white'>
+              {/* Tutar ve Kredi - Modern Card */}
+              <div className='admin-glass rounded-xl p-4 border border-slate-600/30'>
+                <div className='flex items-center justify-between mb-3'>
+                  <div className='text-sm text-slate-400'>Tutar</div>
+                  <div className='text-xl font-bold text-white'>
                     {formatPrice(order.amount, 'TRY')}
                   </div>
                 </div>
                 <div className='flex items-center justify-between'>
-                  <span className='text-sm text-slate-400'>Kredi Değişimi</span>
-                  <span
-                    className={`text-sm font-medium ${order.delta_credits > 0 ? 'text-green-400' : 'text-red-400'}`}
+                  <div className='text-sm text-slate-400'>Kredi Değişimi</div>
+                  <div
+                    className={`text-lg font-bold flex items-center space-x-1 ${
+                      order.delta_credits > 0 ? 'text-green-400' : 'text-red-400'
+                    }`}
                   >
-                    {order.delta_credits > 0 ? '+' : ''}
-                    {order.delta_credits}
-                  </span>
+                    <span>{order.delta_credits > 0 ? '+' : ''}</span>
+                    <span>{order.delta_credits}</span>
+                    <span className='text-xs'>kredi</span>
+                  </div>
                 </div>
               </div>
 
-              <div className='admin-glass rounded-lg p-3'>
-                <div className='flex items-center justify-between mb-2'>
-                  <span className='text-sm text-slate-400'>Açıklama</span>
-                  <span className='text-sm text-white'>
-                    {order.description}
-                  </span>
-                </div>
-                <div className='flex items-center justify-between'>
-                  <span className='text-sm text-slate-400'>Sebep</span>
-                  <span className='text-xs text-slate-400'>{order.reason}</span>
+              {/* Açıklama ve Sebep - Modern Card */}
+              <div className='admin-glass rounded-xl p-4 border border-slate-600/30'>
+                <div className='space-y-2'>
+                  <div className='flex items-center justify-between'>
+                    <span className='text-sm text-slate-400'>Açıklama</span>
+                    <span className='text-sm text-white font-medium'>
+                      {order.description}
+                    </span>
+                  </div>
+                  <div className='flex items-center justify-between'>
+                    <span className='text-sm text-slate-400'>Sebep</span>
+                    <span className='text-xs text-slate-400'>{order.reason}</span>
+                  </div>
                 </div>
               </div>
 
-              <div className='admin-glass rounded-lg p-3'>
-                <div className='flex items-center justify-between mb-2'>
-                  <span className='text-sm text-slate-400'>Referans ID</span>
-                  <span className='text-sm text-white'>{order.ref_id}</span>
-                </div>
-                <div className='flex items-center justify-between'>
-                  <span className='text-sm text-slate-400'>Referans Tipi</span>
-                  <span className='text-xs text-slate-400'>
-                    {order.ref_type}
-                  </span>
+              {/* Referans Bilgileri - Modern Card */}
+              <div className='admin-glass rounded-xl p-4 border border-slate-600/30'>
+                <div className='space-y-2'>
+                  <div className='flex items-center justify-between'>
+                    <span className='text-sm text-slate-400'>Okuma ID</span>
+                    <span className='text-sm text-white font-mono'>
+                      {order.ref_id}
+                    </span>
+                  </div>
+                  <div className='flex items-center justify-between'>
+                    <span className='text-sm text-slate-400'>Okuma Tipi</span>
+                    <span className='text-xs text-blue-400 font-medium'>
+                      {getReadingType(order.ref_type, order.description)}
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Actions */}
+            {/* Modern Action Button */}
             <div className='flex space-x-2'>
               <button
                 onClick={() => {
                   setSelectedOrder(order);
                   setShowOrderModal(true);
                 }}
-                className='flex-1 admin-glass hover:bg-slate-700/50 text-white p-2 rounded-lg admin-hover-scale transition-colors flex items-center justify-center space-x-1'
+                className='flex-1 admin-glass hover:bg-slate-700/50 text-white p-3 rounded-xl admin-hover-scale transition-all duration-200 flex items-center justify-center space-x-2 border border-slate-600/30 shadow-lg'
               >
                 <Eye className='h-4 w-4' />
-                <span className='text-sm'>Detay</span>
+                <span className='text-sm font-medium'>Detayları Gör</span>
               </button>
             </div>
           </div>
@@ -705,7 +1031,7 @@ export default function OrdersPage() {
       )}
 
       {/* Order Detail Modal */}
-      {showOrderModal && selectedOrder && (
+      {showOrderModal && selectedOrder && selectedOrder.id && (
         <div className='fixed inset-0 bg-black/70 backdrop-blur-lg flex items-center justify-center z-50 p-4'>
           <div className='admin-card rounded-2xl p-6 w-full max-w-2xl admin-hover-scale'>
             <div className='flex items-center justify-between mb-6'>
@@ -726,72 +1052,119 @@ export default function OrdersPage() {
             <div className='space-y-4'>
               <div className='grid grid-cols-2 gap-4'>
                 <div className='admin-glass rounded-lg p-4'>
-                  <h4 className='font-medium text-white mb-3'>
+                  <h4 className='font-medium text-white mb-3 flex items-center'>
+                    <Hash className='h-4 w-4 mr-2 text-blue-400' />
                     Sipariş Bilgileri
                   </h4>
-                  <div className='space-y-2 text-sm'>
-                    <div className='flex justify-between'>
-                      <span className='text-slate-400'>ID:</span>
-                      <span className='text-white font-mono'>
-                        {selectedOrder.id}
+                  <div className='space-y-3 text-sm'>
+                    <div className='flex justify-between items-center'>
+                      <span className='text-slate-400 flex items-center'>
+                        <Key className='h-3 w-3 mr-1' />
+                        ID:
                       </span>
+                      <div className='flex items-center space-x-2'>
+                        <span className='text-white font-mono text-xs bg-slate-800 px-2 py-1 rounded'>
+                          {selectedOrder?.id || 'N/A'}
+                        </span>
+                        <button
+                          onClick={() => selectedOrder?.id && copyToClipboard(selectedOrder.id, 'İşlem ID')}
+                          className='p-1 hover:bg-slate-700 rounded transition-colors'
+                          title='Kopyala'
+                        >
+                          <Copy className='h-3 w-3 text-slate-400 hover:text-white' />
+                        </button>
+                      </div>
                     </div>
-                    <div className='flex justify-between'>
-                      <span className='text-slate-400'>Durum:</span>
+                    <div className='flex justify-between items-center'>
+                      <span className='text-slate-400 flex items-center'>
+                        <Activity className='h-3 w-3 mr-1' />
+                        Durum:
+                      </span>
                       <div
-                        className={`inline-flex items-center px-2 py-1 rounded text-xs font-medium ${getStatusColor(selectedOrder.status || 'pending')}`}
+                        className={`inline-flex items-center px-2 py-1 rounded text-xs font-medium ${selectedOrder?.statusData?.color || getStatusColor(selectedOrder?.type || '', selectedOrder?.status)}`}
                       >
-                        {getStatusIcon(selectedOrder.status || 'pending')}
+                        {selectedOrder?.statusData?.icon || getStatusIcon(selectedOrder?.type || '', selectedOrder?.status)}
                         <span className='ml-1'>
-                          {getStatusText(selectedOrder.status || 'pending')}
+                          {selectedOrder?.statusData?.text || getStatusText(selectedOrder?.type || '', selectedOrder?.status)}
                         </span>
                       </div>
                     </div>
-                    <div className='flex justify-between'>
-                      <span className='text-slate-400'>Tarih:</span>
-                      <span className='text-white'>
-                        {formatDate(selectedOrder.created_at)}
+                    <div className='flex justify-between items-center'>
+                      <span className='text-slate-400 flex items-center'>
+                        <CalendarIcon className='h-3 w-3 mr-1' />
+                        Tarih:
+                      </span>
+                      <span className='text-white text-xs'>
+                        {selectedOrder?.created_at ? formatDate(selectedOrder.created_at) : 'N/A'}
                       </span>
                     </div>
-                    <div className='flex justify-between'>
-                      <span className='text-slate-400'>Referans:</span>
-                      <span className='text-white font-mono text-xs'>
-                        {selectedOrder.ref_id}
+                    <div className='flex justify-between items-center'>
+                      <span className='text-slate-400 flex items-center'>
+                        <Link className='h-3 w-3 mr-1' />
+                        Referans:
                       </span>
+                      <div className='flex items-center space-x-2'>
+                        <span className='text-white font-mono text-xs bg-slate-800 px-2 py-1 rounded'>
+                          {selectedOrder?.ref_id || 'N/A'}
+                        </span>
+                        <button
+                          onClick={() => selectedOrder?.ref_id && copyToClipboard(selectedOrder.ref_id, 'Referans ID')}
+                          className='p-1 hover:bg-slate-700 rounded transition-colors'
+                          title='Kopyala'
+                        >
+                          <Copy className='h-3 w-3 text-slate-400 hover:text-white' />
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 <div className='admin-glass rounded-lg p-4'>
-                  <h4 className='font-medium text-white mb-3'>
+                  <h4 className='font-medium text-white mb-3 flex items-center'>
+                    <DollarSign className='h-4 w-4 mr-2 text-green-400' />
                     Transaction Bilgileri
                   </h4>
-                  <div className='space-y-2 text-sm'>
-                    <div className='flex justify-between'>
-                      <span className='text-slate-400'>Tutar:</span>
-                      <span className='text-white font-bold'>
-                        {formatPrice(selectedOrder.amount, 'TRY')}
+                  <div className='space-y-3 text-sm'>
+                    <div className='flex justify-between items-center'>
+                      <span className='text-slate-400 flex items-center'>
+                        <DollarSign className='h-3 w-3 mr-1' />
+                        Tutar:
+                      </span>
+                      <span className='text-white font-bold text-lg'>
+                        {selectedOrder?.amount ? formatPrice(selectedOrder.amount, 'TRY') : 'N/A'}
                       </span>
                     </div>
-                    <div className='flex justify-between'>
-                      <span className='text-slate-400'>Kredi Değişimi:</span>
-                      <span
-                        className={`font-bold ${selectedOrder.delta_credits > 0 ? 'text-green-400' : 'text-red-400'}`}
-                      >
-                        {selectedOrder.delta_credits > 0 ? '+' : ''}
-                        {selectedOrder.delta_credits}
+                    <div className='flex justify-between items-center'>
+                      <span className='text-slate-400 flex items-center'>
+                        <Activity className='h-3 w-3 mr-1' />
+                        Kredi Değişimi:
+                      </span>
+                      <div className='flex items-center space-x-2'>
+                        <span
+                          className={`font-bold text-lg ${(selectedOrder?.delta_credits || 0) > 0 ? 'text-green-400' : 'text-red-400'}`}
+                        >
+                          {(selectedOrder?.delta_credits || 0) > 0 ? '+' : ''}
+                          {selectedOrder?.delta_credits || 0}
+                        </span>
+                        <span className='text-xs text-slate-500'>kredi</span>
+                      </div>
+                    </div>
+                    <div className='flex justify-between items-start'>
+                      <span className='text-slate-400 flex items-center mt-1'>
+                        <FileText className='h-3 w-3 mr-1' />
+                        Açıklama:
+                      </span>
+                      <span className='text-white text-right max-w-[200px] break-words'>
+                        {selectedOrder?.description || 'N/A'}
                       </span>
                     </div>
-                    <div className='flex justify-between'>
-                      <span className='text-slate-400'>Açıklama:</span>
-                      <span className='text-white'>
-                        {selectedOrder.description}
+                    <div className='flex justify-between items-start'>
+                      <span className='text-slate-400 flex items-center mt-1'>
+                        <MessageSquare className='h-3 w-3 mr-1' />
+                        Sebep:
                       </span>
-                    </div>
-                    <div className='flex justify-between'>
-                      <span className='text-slate-400'>Sebep:</span>
-                      <span className='text-slate-300'>
-                        {selectedOrder.reason}
+                      <span className='text-slate-300 text-right max-w-[200px] break-words'>
+                        {selectedOrder?.reason || 'N/A'}
                       </span>
                     </div>
                   </div>
@@ -799,51 +1172,160 @@ export default function OrdersPage() {
               </div>
 
               <div className='admin-glass rounded-lg p-4'>
-                <h4 className='font-medium text-white mb-3'>
+                <h4 className='font-medium text-white mb-3 flex items-center'>
+                  <User className='h-4 w-4 mr-2 text-purple-400' />
                   Kullanıcı Bilgileri
                 </h4>
                 <div className='grid grid-cols-2 gap-4 text-sm'>
-                  <div className='flex justify-between'>
-                    <span className='text-slate-400'>Kullanıcı ID:</span>
-                    <span className='text-white font-mono text-xs'>
-                      {selectedOrder.user_id}
+                  <div className='flex justify-between items-center'>
+                    <span className='text-slate-400 flex items-center'>
+                      <Key className='h-3 w-3 mr-1' />
+                      Kullanıcı ID:
                     </span>
+                    <div className='flex items-center space-x-2'>
+                      <span className='text-white font-mono text-xs bg-slate-800 px-2 py-1 rounded'>
+                        {selectedOrder?.user_id || 'N/A'}
+                      </span>
+                      <button
+                        onClick={() => selectedOrder?.user_id && copyToClipboard(selectedOrder.user_id, 'Kullanıcı ID')}
+                        className='p-1 hover:bg-slate-700 rounded transition-colors'
+                        title='Kopyala'
+                      >
+                        <Copy className='h-3 w-3 text-slate-400 hover:text-white' />
+                      </button>
+                    </div>
                   </div>
-                  <div className='flex justify-between'>
-                    <span className='text-slate-400'>Kullanıcı Adı:</span>
-                    <span className='text-white'>
-                      {selectedOrder.user_display_name}
+                  <div className='flex justify-between items-center'>
+                    <span className='text-slate-400 flex items-center'>
+                      <UserCheck className='h-3 w-3 mr-1' />
+                      Kullanıcı Adı:
                     </span>
+                    <div className='flex items-center space-x-2'>
+                      <span className='text-white font-medium'>
+                        {selectedOrder?.user_display_name || 'N/A'}
+                      </span>
+                      {selectedOrder?.user_first_name && selectedOrder?.user_last_name && (
+                        <span className='text-xs text-slate-400'>
+                          ({selectedOrder.user_first_name} {selectedOrder.user_last_name})
+                        </span>
+                      )}
+                    </div>
                   </div>
-                  <div className='flex justify-between col-span-2'>
-                    <span className='text-slate-400'>Email:</span>
-                    <span className='text-white'>
-                      {selectedOrder.user_email}
+                  <div className='flex justify-between items-center col-span-2'>
+                    <span className='text-slate-400 flex items-center'>
+                      <Mail className='h-3 w-3 mr-1' />
+                      Email:
                     </span>
+                    <div className='flex items-center space-x-2'>
+                      <span className='text-white'>
+                        {selectedOrder?.user_email || 'N/A'}
+                      </span>
+                      <button
+                        onClick={() => selectedOrder?.user_email && copyToClipboard(selectedOrder.user_email, 'Email')}
+                        className='p-1 hover:bg-slate-700 rounded transition-colors'
+                        title='Kopyala'
+                      >
+                        <Copy className='h-3 w-3 text-slate-400 hover:text-white' />
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
 
               <div className='admin-glass rounded-lg p-4'>
-                <h4 className='font-medium text-white mb-3'>
+                <h4 className='font-medium text-white mb-3 flex items-center'>
+                  <Package className='h-4 w-4 mr-2 text-orange-400' />
                   Referans Bilgileri
                 </h4>
                 <div className='grid grid-cols-2 gap-4 text-sm'>
-                  <div className='flex justify-between'>
-                    <span className='text-slate-400'>Referans ID:</span>
-                    <span className='text-white font-mono text-xs'>
-                      {selectedOrder.ref_id}
+                  <div className='flex justify-between items-center'>
+                    <span className='text-slate-400 flex items-center'>
+                      <Link className='h-3 w-3 mr-1' />
+                      Referans ID:
+                    </span>
+                    <div className='flex items-center space-x-2'>
+                      <span className='text-white font-mono text-xs bg-slate-800 px-2 py-1 rounded'>
+                        {selectedOrder?.ref_id || 'N/A'}
+                      </span>
+                      <button
+                        onClick={() => selectedOrder?.ref_id && copyToClipboard(selectedOrder.ref_id, 'Referans ID')}
+                        className='p-1 hover:bg-slate-700 rounded transition-colors'
+                        title='Kopyala'
+                      >
+                        <Copy className='h-3 w-3 text-slate-400 hover:text-white' />
+                      </button>
+                    </div>
+                  </div>
+                  <div className='flex justify-between items-center'>
+                    <span className='text-slate-400 flex items-center'>
+                      <Tag className='h-3 w-3 mr-1' />
+                      Referans Tipi:
+                    </span>
+                    <span className='text-white font-medium bg-blue-500/20 px-2 py-1 rounded text-xs'>
+                      {selectedOrder?.ref_type || 'N/A'}
                     </span>
                   </div>
-                  <div className='flex justify-between'>
-                    <span className='text-slate-400'>Referans Tipi:</span>
-                    <span className='text-white'>{selectedOrder.ref_type}</span>
-                  </div>
-                  <div className='flex justify-between col-span-2'>
-                    <span className='text-slate-400'>Paket:</span>
-                    <span className='text-white'>
-                      {selectedOrder.package_name}
+                  <div className='flex justify-between items-center col-span-2'>
+                    <span className='text-slate-400 flex items-center'>
+                      <Package className='h-3 w-3 mr-1' />
+                      Paket:
                     </span>
+                    <div className='flex items-center space-x-2'>
+                      <span className='text-white font-medium'>
+                        {selectedOrder?.package_name || 'N/A'}
+                      </span>
+                      {selectedOrder?.package_credits && (
+                        <span className='text-xs text-slate-400'>
+                          ({selectedOrder.package_credits} kredi)
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Okuma Tipi ve Ek Bilgiler */}
+              <div className='admin-glass rounded-lg p-4'>
+                <h4 className='font-medium text-white mb-3 flex items-center'>
+                  <Settings className='h-4 w-4 mr-2 text-cyan-400' />
+                  Okuma Detayları
+                </h4>
+                <div className='grid grid-cols-2 gap-4 text-sm'>
+                  <div className='flex justify-between items-center'>
+                    <span className='text-slate-400 flex items-center'>
+                      <FileText className='h-3 w-3 mr-1' />
+                      Okuma Tipi:
+                    </span>
+                    <span className='text-white font-medium bg-purple-500/20 px-2 py-1 rounded text-xs'>
+                      {getReadingType(selectedOrder?.ref_type || '', selectedOrder?.description || '')}
+                    </span>
+                  </div>
+                  <div className='flex justify-between items-center'>
+                    <span className='text-slate-400 flex items-center'>
+                      <Clock className='h-3 w-3 mr-1' />
+                      İşlem Tipi:
+                    </span>
+                    <span className='text-white font-medium bg-slate-700 px-2 py-1 rounded text-xs'>
+                      {selectedOrder?.type || 'N/A'}
+                    </span>
+                  </div>
+                  <div className='flex justify-between items-center col-span-2'>
+                    <span className='text-slate-400 flex items-center'>
+                      <Database className='h-3 w-3 mr-1' />
+                      İşlem ID:
+                    </span>
+                    <div className='flex items-center space-x-2'>
+                      <span className='text-white font-mono text-xs bg-slate-800 px-2 py-1 rounded'>
+                        {selectedOrder?.id || 'N/A'}
+                      </span>
+                      <button
+                        onClick={() => selectedOrder?.id && copyToClipboard(selectedOrder.id, 'İşlem ID')}
+                        className='p-1 hover:bg-slate-700 rounded transition-colors'
+                        title='Kopyala'
+                      >
+                        <Copy className='h-3 w-3 text-slate-400 hover:text-white' />
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -852,21 +1334,47 @@ export default function OrdersPage() {
             <div className='flex space-x-3 mt-6'>
               <button
                 onClick={() => setShowOrderModal(false)}
-                className='flex-1 admin-glass hover:bg-slate-700/50 text-slate-300 p-3 rounded-lg admin-hover-scale transition-colors'
+                className='flex-1 admin-glass hover:bg-slate-700/50 text-slate-300 p-3 rounded-lg admin-hover-scale transition-colors flex items-center justify-center'
               >
-                Kapat
+                <X className='h-4 w-4 mr-2' />
+                <span>Kapat</span>
               </button>
-              {selectedOrder.status === 'pending' && (
-                <button
-                  onClick={() => {
-                    handleStatusUpdate(selectedOrder.id, 'completed');
-                    setShowOrderModal(false);
-                  }}
-                  className='flex-1 admin-gradient-success p-3 rounded-lg text-white admin-hover-scale'
-                >
-                  Onayla
-                </button>
-              )}
+              
+              {/* Durum değiştirme butonları */}
+              <div className="flex-1 flex space-x-2">
+                {selectedOrder && selectedOrder.status !== 'completed' && (
+                  <button
+                    onClick={(e) => handleStatusUpdate(selectedOrder.id, 'completed', e)}
+                    className='flex-1 admin-gradient-success p-3 rounded-lg text-white admin-hover-scale flex items-center justify-center transition-all duration-200 hover:shadow-lg'
+                    title='İşlemi onayla'
+                  >
+                    <CheckCircle className='h-4 w-4 mr-2' />
+                    <span>Onayla</span>
+                  </button>
+                )}
+                
+                {selectedOrder && selectedOrder.status !== 'pending' && (
+                  <button
+                    onClick={(e) => handleStatusUpdate(selectedOrder.id, 'pending', e)}
+                    className='flex-1 bg-yellow-500/20 border border-yellow-500/30 p-3 rounded-lg text-yellow-400 admin-hover-scale flex items-center justify-center transition-all duration-200 hover:shadow-lg hover:bg-yellow-500/30'
+                    title='İşlemi beklemede bırak'
+                  >
+                    <AlertCircle className='h-4 w-4 mr-2' />
+                    <span>Beklet</span>
+                  </button>
+                )}
+                
+                {selectedOrder && selectedOrder.status !== 'cancelled' && (
+                  <button
+                    onClick={(e) => handleStatusUpdate(selectedOrder.id, 'cancelled', e)}
+                    className='flex-1 bg-red-500/20 border border-red-500/30 p-3 rounded-lg text-red-400 admin-hover-scale flex items-center justify-center transition-all duration-200 hover:shadow-lg hover:bg-red-500/30'
+                    title='İşlemi iptal et'
+                  >
+                    <XCircle className='h-4 w-4 mr-2' />
+                    <span>İptal Et</span>
+                  </button>
+                )}
+              </div>
             </div>
           </div>
         </div>

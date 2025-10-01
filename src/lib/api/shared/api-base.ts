@@ -51,7 +51,7 @@ export class ApiBase {
     const realIP = request.headers.get('x-real-ip');
 
     if (forwarded) {
-      return forwarded.split(',')[0].trim();
+      return forwarded.split(',')[0]?.trim() || '';
     }
 
     if (realIP) {
@@ -68,9 +68,12 @@ export class ApiBase {
     const response: ApiResponse<T> = {
       success: true,
       data,
-      message,
       timestamp: new Date().toISOString(),
     };
+    
+    if (message) {
+      response.message = message;
+    }
 
     return NextResponse.json(response, {
       status: 200,

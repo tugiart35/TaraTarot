@@ -568,7 +568,7 @@ class PDFGeneratorService {
       pinnacles: calculatePinnaclesChallenges(birthDate, 'tr'),
       personalCycles: calculatePersonalCycles(
         birthDate,
-        new Date().toISOString().split('T')[0],
+        new Date().toISOString().split('T')[0] || '',
         'tr'
       ),
     };

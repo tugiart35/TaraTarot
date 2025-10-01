@@ -119,7 +119,7 @@ export default function PaymentSuccessPage() {
                   <div className='flex items-center justify-center space-x-2 mb-2'>
                     <CreditCard className='h-6 w-6 text-green-400' />
                     <span className='text-green-400 font-bold'>
-                      {`+${creditsAdded} ${t('payment.success.creditsUnit')}`}
+                      {`+${creditsAdded} ${t('messages.payment.success.creditsUnit')}`}
                     </span>
                   </div>
                   <p className='text-sm text-text-muted'>

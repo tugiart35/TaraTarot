@@ -112,8 +112,14 @@ export const getAuthErrorWithSuggestion = (
     },
   };
 
-  return {
+  const result: { message: string; suggestion?: string } = {
     message,
-    suggestion: suggestions[locale]?.[category],
   };
+  
+  const suggestion = suggestions[locale]?.[category];
+  if (suggestion) {
+    result.suggestion = suggestion;
+  }
+  
+  return result;
 };

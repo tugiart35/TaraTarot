@@ -43,8 +43,16 @@ interface MinimalAuthProviderProps {
 export function MinimalAuthProvider({ children }: MinimalAuthProviderProps) {
   const auth = useAuth();
 
+  const authWithCheckAdmin = {
+    ...auth,
+    checkAdminStatus: async (_userId: string) => {
+      // TODO: Implement admin check
+      return false;
+    },
+  };
+
   return (
-    <MinimalAuthContext.Provider value={auth}>
+    <MinimalAuthContext.Provider value={authWithCheckAdmin}>
       {children}
     </MinimalAuthContext.Provider>
   );

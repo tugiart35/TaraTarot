@@ -83,10 +83,7 @@ export default function CreditManagementModal({
         credit_balance: newBalance,
       });
     } catch (error) {
-      const errorMessage = AdminErrorService.handleError(
-        error,
-        'credit update'
-      );
+      const errorMessage = AdminErrorService.handleError(error);
       setError(errorMessage);
     } finally {
       setLoading(false);

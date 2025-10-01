@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { ToastType } from '@/features/shared/ui/Toast';
+
+type ToastType = 'success' | 'error' | 'warning' | 'info';
 
 interface ToastState {
   message: string;

@@ -182,12 +182,14 @@ export function usePageMeta(): UsePageMetaReturn {
       }
 
       if (meta.ogTitle || meta.ogDescription || meta.ogImage || meta.ogUrl) {
-        updateOpenGraph({
-          ogTitle: meta.ogTitle,
-          ogDescription: meta.ogDescription,
-          ogImage: meta.ogImage,
-          ogUrl: meta.ogUrl,
-        });
+        const ogData: Partial<Pick<PageMeta, "ogTitle" | "ogDescription" | "ogImage" | "ogUrl">> = {};
+        
+        if (meta.ogTitle) ogData.ogTitle = meta.ogTitle;
+        if (meta.ogDescription) ogData.ogDescription = meta.ogDescription;
+        if (meta.ogImage) ogData.ogImage = meta.ogImage;
+        if (meta.ogUrl) ogData.ogUrl = meta.ogUrl;
+        
+        updateOpenGraph(ogData);
       }
 
       if (
@@ -196,12 +198,14 @@ export function usePageMeta(): UsePageMetaReturn {
         meta.twitterDescription ||
         meta.twitterImage
       ) {
-        updateTwitter({
-          twitterCard: meta.twitterCard,
-          twitterTitle: meta.twitterTitle,
-          twitterDescription: meta.twitterDescription,
-          twitterImage: meta.twitterImage,
-        });
+        const twitterData: Partial<Pick<PageMeta, "twitterCard" | "twitterTitle" | "twitterDescription" | "twitterImage">> = {};
+        
+        if (meta.twitterCard) twitterData.twitterCard = meta.twitterCard;
+        if (meta.twitterTitle) twitterData.twitterTitle = meta.twitterTitle;
+        if (meta.twitterDescription) twitterData.twitterDescription = meta.twitterDescription;
+        if (meta.twitterImage) twitterData.twitterImage = meta.twitterImage;
+        
+        updateTwitter(twitterData);
       }
     },
     [
