@@ -261,7 +261,7 @@ export default function BaseCardPosition({
             // Varsayılan kart görünümü
             <div className='w-full h-full flex items-center justify-center'>
               <img
-                src={_card ? _card.image : '/cards/CardBack.jpg'}
+                src={_card ? _card.image : '/cards/CardBack.webp'}
                 alt={_card ? _card.nameTr : 'Kart'}
                 className={`w-full h-full object-cover rounded-lg ${isReversed ? 'transform rotate-180' : ''}`}
               />

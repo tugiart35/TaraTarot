@@ -442,7 +442,7 @@ const BaseInterpretation = forwardRef<HTMLDivElement, BaseInterpretationProps>(
                 {/* Kart Görseli */}
                 <div className='flex-shrink-0'>
                   <img
-                    src={card.image || '/cards/CardBack.jpg'}
+                    src={card.image || '/cards/CardBack.webp'}
                     alt={card.nameTr}
                     className={`
                       w-22 h-40 object-cover rounded-lg border-2 ${colors.cardBorder} shadow 

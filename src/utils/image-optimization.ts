@@ -64,12 +64,12 @@ export const CARD_QUALITY_SETTINGS = {
  * Kritik kartlar (ilk yüklenenler)
  */
 export const CRITICAL_CARDS = [
-  '/cards/CardBack.jpg',
-  '/cards/rws/0-Fool.jpg',
-  '/cards/rws/I-Magician.jpg',
-  '/cards/rws/II-HighPriestess.jpg',
-  '/cards/rws/III-Empress.jpg',
-  '/cards/rws/IV-Emperor.jpg',
+  '/cards/CardBack.webp',
+  '/cards/rws/0-Fool.webp',
+  '/cards/rws/I-Magician.webp',
+  '/cards/rws/II-HighPriestess.webp',
+  '/cards/rws/III-Empress.webp',
+  '/cards/rws/IV-Emperor.webp',
 ];
 
 /**
@@ -216,5 +216,5 @@ export function handleImageError(
   }
 
   // Default fallback
-  return '/cards/CardBack.jpg';
+  return '/cards/CardBack.webp';
 }

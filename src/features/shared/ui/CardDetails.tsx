@@ -137,7 +137,7 @@ const CardDetails: React.FC<CardDetailsProps> = ({
         {/* Floating card container */}
         <div className='relative transform transition-all duration-500 group-hover:scale-105 group-hover:-translate-y-2'>
           <img
-            src={card.image || '/cards/CardBack.jpg'}
+            src={card.image || '/cards/CardBack.webp'}
             alt={card.nameTr}
             className={`w-44 h-auto mx-auto rounded-3xl shadow-2xl transition-all duration-500 ${
               isReversed ? 'transform rotate-180' : ''

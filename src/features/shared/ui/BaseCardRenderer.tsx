@@ -191,22 +191,22 @@ const BaseCardRenderer = memo(function BaseCardRenderer({
     // Galeri modunda kart seçilmişse ön yüzünü göster, değilse arka yüzü
     if (mode === 'gallery') {
       return isUsed && card
-        ? card.image || '/cards/CardBack.jpg'
-        : '/cards/CardBack.jpg';
+        ? card.image || '/cards/CardBack.webp'
+        : '/cards/CardBack.webp';
     }
 
     // Pozisyon modunda kart seçilmişse ön yüzünü göster
     if (mode === 'position' && card) {
-      return card.image || '/cards/CardBack.jpg';
+      return card.image || '/cards/CardBack.webp';
     }
 
     // Detay modunda kart seçilmişse ön yüzünü göster
     if (mode === 'detail' && card) {
-      return card.image || '/cards/CardBack.jpg';
+      return card.image || '/cards/CardBack.webp';
     }
 
     // Diğer durumlarda arka yüzü göster
-    return '/cards/CardBack.jpg';
+    return '/cards/CardBack.webp';
   };
 
   // Kart bileşeni

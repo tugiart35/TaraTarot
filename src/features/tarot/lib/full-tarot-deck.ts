@@ -77,7 +77,7 @@ export function useTarotDeck(): TarotCard[] {
           .split(',')
           .map(k => k.trim())
           .filter(k => k),
-        image: `/cards/rws/${i === 0 ? '0-Fool' : i === 1 ? 'I-Magician' : i === 2 ? 'II-HighPriestess' : i === 3 ? 'III-Empress' : i === 4 ? 'IV-Emperor' : i === 5 ? 'V-Hierophant' : i === 6 ? 'VI-Lovers' : i === 7 ? 'VII-Chariot' : i === 8 ? 'VIII-Strength' : i === 9 ? 'IX-Hermit' : i === 10 ? 'X-WheelOfFortune' : i === 11 ? 'XI-Justice' : i === 12 ? 'XII-HangedMan' : i === 13 ? 'XIII-Death' : i === 14 ? 'XIV-Temperance' : i === 15 ? 'XV-Devil' : i === 16 ? 'XVI-Tower' : i === 17 ? 'XVII-Star' : i === 18 ? 'XVIII-Moon' : i === 19 ? 'XIX-Sun' : i === 20 ? 'XX-Judgement' : 'XXI-World'}.jpg`,
+        image: `/cards/rws/${i === 0 ? '0-Fool' : i === 1 ? 'I-Magician' : i === 2 ? 'II-HighPriestess' : i === 3 ? 'III-Empress' : i === 4 ? 'IV-Emperor' : i === 5 ? 'V-Hierophant' : i === 6 ? 'VI-Lovers' : i === 7 ? 'VII-Chariot' : i === 8 ? 'VIII-Strength' : i === 9 ? 'IX-Hermit' : i === 10 ? 'X-WheelOfFortune' : i === 11 ? 'XI-Justice' : i === 12 ? 'XII-HangedMan' : i === 13 ? 'XIII-Death' : i === 14 ? 'XIV-Temperance' : i === 15 ? 'XV-Devil' : i === 16 ? 'XVI-Tower' : i === 17 ? 'XVII-Star' : i === 18 ? 'XVIII-Moon' : i === 19 ? 'XIX-Sun' : i === 20 ? 'XX-Judgement' : 'XXI-World'}.webp`,
       });
     }
 
@@ -125,7 +125,7 @@ export function useTarotDeck(): TarotCard[] {
           .split(',')
           .map(k => k.trim())
           .filter(k => k),
-        image: `/cards/rws/${card.image}.jpg`,
+        image: `/cards/rws/${card.image}.webp`,
       });
     });
 
@@ -173,7 +173,7 @@ export function useTarotDeck(): TarotCard[] {
           .split(',')
           .map(k => k.trim())
           .filter(k => k),
-        image: `/cards/rws/${card.image}.jpg`,
+        image: `/cards/rws/${card.image}.webp`,
       });
     });
 
@@ -221,7 +221,7 @@ export function useTarotDeck(): TarotCard[] {
           .split(',')
           .map(k => k.trim())
           .filter(k => k),
-        image: `/cards/rws/${card.image}.jpg`,
+        image: `/cards/rws/${card.image}.webp`,
       });
     });
 
@@ -269,7 +269,7 @@ export function useTarotDeck(): TarotCard[] {
           .split(',')
           .map(k => k.trim())
           .filter(k => k),
-        image: `/cards/rws/${card.image}.jpg`,
+        image: `/cards/rws/${card.image}.webp`,
       });
     });
 

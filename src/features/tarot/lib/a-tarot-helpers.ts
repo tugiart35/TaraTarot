@@ -45,7 +45,7 @@ export type { TarotCard };
 // Kart resminin yolunu oluşturan yardımcı fonksiyon
 export function getCardImagePath(card: TarotCard): string {
   if (!card.image) {
-    return '/cards/CardBack.jpg'; // Varsayılan arka yüz
+    return '/cards/CardBack.webp'; // Varsayılan arka yüz
   }
   return card.image.startsWith('/') ? card.image : `/cards/rws/${card.image}`;
 }
