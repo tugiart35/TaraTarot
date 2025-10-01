@@ -183,18 +183,33 @@ export const createShopierPayment = async (
   }
 };
 
-// Shopier signature oluşturma
+// Shopier signature oluşturma (HMAC-SHA256 ile güvenli)
 export const generateShopierSignature = (
   params: Record<string, string>,
   secret: string
 ): string => {
-  // Shopier signature algoritması
-  const sortedParams = Object.keys(params)
-    .sort()
-    .map(key => `${key}=${params[key]}`)
-    .join('&');
+  // Node.js crypto modülünü kullan
+  if (typeof window === 'undefined') {
+    // Server-side: HMAC-SHA256 kullan
+    const crypto = require('crypto');
+    const sortedParams = Object.keys(params)
+      .sort()
+      .map(key => `${key}=${params[key]}`)
+      .join('&');
 
-  return btoa(sortedParams + secret);
+    return crypto
+      .createHmac('sha256', secret)
+      .update(sortedParams)
+      .digest('hex');
+  } else {
+    // Client-side: Legacy base64 kullan (geriye dönük uyumluluk)
+    const sortedParams = Object.keys(params)
+      .sort()
+      .map(key => `${key}=${params[key]}`)
+      .join('&');
+
+    return btoa(sortedParams + secret);
+  }
 };
 
 // Webhook signature doğrulama

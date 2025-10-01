@@ -48,22 +48,73 @@ import {
   getPackageInfo,
   calculateTotalCredits,
 } from '@/lib/payment/payment-utils';
+import {
+  ShopierIPWhitelist,
+  ShopierRateLimiter,
+  ShopierRequestValidator,
+  performSecurityCheck,
+} from '@/lib/payment/shopier-security';
 
 export async function POST(request: NextRequest) {
+  const startTime = Date.now();
+
   try {
+    // Test modunu kontrol et
+    const isTestMode = process.env.NODE_ENV === 'development';
+
+    // 🛡️ GÜVENLİK KONTROL 1: IP Whitelisting ve Rate Limiting
+    if (!isTestMode) {
+      const securityCheck = await performSecurityCheck(request);
+
+      if (!securityCheck.passed) {
+        console.error('Shopier webhook: Security check failed', {
+          reason: securityCheck.reason,
+          details: securityCheck.details,
+        });
+
+        return NextResponse.json(
+          {
+            error: 'Security check failed',
+            reason: securityCheck.reason,
+          },
+          {
+            status: 403,
+            headers: {
+              'X-RateLimit-Reset': securityCheck.details?.resetTime || '',
+            },
+          }
+        );
+      }
+    }
+
     const body = await request.json();
     console.log('Shopier webhook: Received body:', body);
 
     const signature = request.headers.get('x-shopier-signature');
 
     // Test modunda signature kontrolünü atla
-    const isTestMode =
-      process.env.NODE_ENV === 'development' ||
-      body.platform_order_id?.startsWith('TEST_');
+    const isOrderTest = body.platform_order_id?.startsWith('TEST_');
+    const skipSecurityChecks = isTestMode || isOrderTest;
 
-    if (!signature && !isTestMode) {
+    if (!signature && !skipSecurityChecks) {
       console.error('Shopier webhook: Missing signature');
       return NextResponse.json({ error: 'Missing signature' }, { status: 400 });
+    }
+
+    // 🛡️ GÜVENLİK KONTROL 2: Webhook Data Validation
+    if (!skipSecurityChecks) {
+      const validation = ShopierRequestValidator.validateWebhookData(body);
+
+      if (!validation.valid) {
+        console.error('Shopier webhook: Invalid data', validation.errors);
+        return NextResponse.json(
+          {
+            error: 'Invalid webhook data',
+            errors: validation.errors,
+          },
+          { status: 400 }
+        );
+      }
     }
 
     // Webhook verilerini parse et
@@ -291,19 +342,48 @@ export async function POST(request: NextRequest) {
       // Email hatası kritik değil, devam et
     }
 
+    // ⏱️ Performance monitoring
+    const processingTime = Date.now() - startTime;
+    if (processingTime > 5000) {
+      console.warn(`⚠️ Slow webhook processing: ${processingTime}ms`, {
+        orderId: webhookData.orderId,
+        userId,
+      });
+    }
+
+    console.log(`✅ Webhook processed in ${processingTime}ms`);
+
     return NextResponse.json(
       {
         message: 'Payment processed successfully',
         orderId: webhookData.orderId,
         credits: totalCredits,
+        processingTime,
       },
-      { status: 200 }
+      {
+        status: 200,
+        headers: {
+          'X-Processing-Time': `${processingTime}ms`,
+          'X-Content-Type-Options': 'nosniff',
+          'X-Frame-Options': 'DENY',
+          'Strict-Transport-Security': 'max-age=31536000',
+        },
+      }
     );
   } catch (error) {
-    console.error('Shopier webhook error:', error);
+    const processingTime = Date.now() - startTime;
+    console.error('Shopier webhook error:', error, {
+      processingTime: `${processingTime}ms`,
+    });
+
     return NextResponse.json(
       { error: 'Internal server error' },
-      { status: 500 }
+      {
+        status: 500,
+        headers: {
+          'X-Processing-Time': `${processingTime}ms`,
+        },
+      }
     );
   }
 }
