@@ -49,7 +49,6 @@ import {
   calculateTotalCredits,
 } from '@/lib/payment/payment-utils';
 import {
-  ShopierIPWhitelist,
   ShopierRateLimiter,
   ShopierRequestValidator,
   performSecurityCheck,
