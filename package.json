@@ -55,6 +55,7 @@
     "@supabase/ssr": "^0.7.0",
     "@supabase/supabase-js": "^2.58.0",
     "@types/xlsx": "^0.0.35",
+    "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "clsx": "^2.1.1",
     "dompurify": "^3.2.7",
