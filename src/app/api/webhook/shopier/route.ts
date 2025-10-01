@@ -49,7 +49,6 @@ import {
   calculateTotalCredits,
 } from '@/lib/payment/payment-utils';
 import {
-  ShopierRateLimiter,
   ShopierRequestValidator,
   performSecurityCheck,
 } from '@/lib/payment/shopier-security';
