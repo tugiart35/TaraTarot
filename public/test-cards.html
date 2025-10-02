@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kart Görüntü Testi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #1a1a1a;
+            color: white;
+        }
+        .card-test {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #333;
+            border-radius: 8px;
+        }
+        .card-image {
+            max-width: 200px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .error {
+            color: #ff6b6b;
+        }
+        .success {
+            color: #51cf66;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔮 Tarot Kart Görüntü Testi</h1>
+    
+    <div class="card-test">
+        <h3>CardBack Testi</h3>
+        <img src="/cards/CardBack.jpg" alt="CardBack" class="card-image" 
+             onload="this.nextElementSibling.innerHTML='✅ CardBack.jpg yüklendi'" 
+             onerror="this.nextElementSibling.innerHTML='❌ CardBack.jpg yüklenemedi'">
+        <p id="cardback-status"></p>
+    </div>
+
+    <div class="card-test">
+        <h3>X-Swords Testi</h3>
+        <img src="/cards/rws/X-Swords.jpg" alt="X-Swords" class="card-image"
+             onload="this.nextElementSibling.innerHTML='✅ X-Swords.jpg yüklendi'" 
+             onerror="this.nextElementSibling.innerHTML='❌ X-Swords.jpg yüklenemedi'">
+        <p id="xswords-status"></p>
+    </div>
+
+    <div class="card-test">
+        <h3>VII-Pentacles Testi</h3>
+        <img src="/cards/rws/VII-Pentacles.jpg" alt="VII-Pentacles" class="card-image"
+             onload="this.nextElementSibling.innerHTML='✅ VII-Pentacles.jpg yüklendi'" 
+             onerror="this.nextElementSibling.innerHTML='❌ VII-Pentacles.jpg yüklenemedi'">
+        <p id="vii-pentacles-status"></p>
+    </div>
+
+    <div class="card-test">
+        <h3>Cache Temizleme Önerileri:</h3>
+        <ul>
+            <li><strong>Hard Refresh:</strong> Ctrl+Shift+R (Windows/Linux) veya Cmd+Shift+R (Mac)</li>
+            <li><strong>Geliştirici Araçları:</strong> F12 → Network → "Disable cache" işaretle</li>
+            <li><strong>Tarayıcı Cache Temizle:</strong> Ayarlar → Gizlilik → Tarama verilerini temizle</li>
+        </ul>
+    </div>
+
+    <script>
+        // Otomatik test sonuçları
+        setTimeout(() => {
+            const images = document.querySelectorAll('img');
+            let allLoaded = true;
+            
+            images.forEach(img => {
+                if (!img.complete || img.naturalHeight === 0) {
+                    allLoaded = false;
+                }
+            });
+            
+            if (allLoaded) {
+                document.body.insertAdjacentHTML('beforeend', 
+                    '<div class="card-test success"><h3>🎉 Tüm kartlar başarıyla yüklendi!</h3></div>'
+                );
+            } else {
+                document.body.insertAdjacentHTML('beforeend', 
+                    '<div class="card-test error"><h3>⚠️ Bazı kartlar yüklenemedi. Cache temizlemeyi deneyin.</h3></div>'
+                );
+            }
+        }, 2000);
+    </script>
+</body>
+</html>
