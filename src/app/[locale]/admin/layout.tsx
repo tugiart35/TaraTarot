@@ -465,10 +465,10 @@ export default function AdminLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // Admin sayfalarında Footer'ı gizle
+  // Admin sayfalarında Footer'ı gizle - sadece admin sayfalarında
   useEffect(() => {
     const footer = document.querySelector('footer');
-    if (footer) {
+    if (footer && window.location.pathname.includes('/admin')) {
       footer.style.display = 'none';
       footer.style.visibility = 'hidden';
       footer.style.opacity = '0';
@@ -482,9 +482,11 @@ export default function AdminLayout({
       <div className="admin-layout admin-page">
         <AdminLayoutContent>{children}</AdminLayoutContent>
       </div>
-      {/* Admin sayfalarında Footer'ı gizle */}
+      {/* Admin sayfalarında Footer'ı gizle - sadece admin sayfalarında */}
       <style jsx global>{`
-        footer {
+        .admin-layout footer,
+        .admin-page footer,
+        [data-admin="true"] footer {
           display: none !important;
           visibility: hidden !important;
           opacity: 0 !important;

@@ -52,7 +52,8 @@ export function HomePageClient({ locale }: HomePageClientProps) {
   const router = useRouter();
   const pathname = usePathname();
   const [totalReadings, setTotalReadings] = useState<number>(0);
-  const [loadingStats, setLoadingStats] = useState(true);
+  const [loadingStats, setLoadingStats] = useState(true); // SSR ile uyumlu olması için true başlat
+  const [mounted, setMounted] = useState(false);
   const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
 
   // Ana sayfada otomatik yönlendirme kaldırıldı
@@ -90,6 +91,7 @@ export function HomePageClient({ locale }: HomePageClientProps) {
 
   // Component mount olduğunda okuma sayısını çek
   useEffect(() => {
+    setMounted(true);
     fetchTotalReadings();
   }, []);
 
@@ -412,7 +414,7 @@ export function HomePageClient({ locale }: HomePageClientProps) {
               </div>
               <div className='bg-gradient-to-br from-cosmic-800/30 to-mystical-800/30 backdrop-blur-mystical border border-cosmic-500/20 rounded-mystical p-6'>
                 <div className='text-3xl font-bold text-golden-400 mb-2'>
-                  {loadingStats ? (
+                  {!mounted || loadingStats ? (
                     <div className='animate-pulse'>...</div>
                   ) : (
                     totalReadings.toLocaleString('tr-TR')

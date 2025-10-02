@@ -33,7 +33,16 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createServerClient } from '@supabase/ssr';
 import type { UserRole } from '@/types/auth.types';
+import createIntlMiddleware from 'next-intl/middleware';
+import { locales, defaultLocale } from './lib/i18n/config';
 // import { checkMaintenanceMode } from './middleware/maintenance';
+
+// next-intl middleware oluştur
+const intlMiddleware = createIntlMiddleware({
+  locales,
+  defaultLocale,
+  localePrefix: 'as-needed',
+});
 
 // Rate limiting kaldırıldı - development için
 
@@ -78,6 +87,12 @@ const ROLE_PERMISSIONS: Record<string, string[]> = {
 
 export async function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
+
+  // next-intl middleware'ini çalıştır
+  const intlResponse = intlMiddleware(request);
+  if (intlResponse) {
+    return intlResponse;
+  }
 
   // Bakım modu kontrolü - geçici olarak devre dışı
   // const maintenanceResponse = await checkMaintenanceMode(request);
@@ -191,30 +206,7 @@ export async function middleware(request: NextRequest) {
       }
     }
 
-    // Locale kontrolü
-    const pathnameIsMissingLocale = ['tr', 'en', 'sr'].every(
-      locale => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
-    );
-
-    // Kullanıcının dil tercihini cookie'den al
-    const preferredLocale = request.cookies.get('NEXT_LOCALE')?.value || 'tr';
-    const validLocale = ['tr', 'en', 'sr'].includes(preferredLocale)
-      ? preferredLocale
-      : 'tr';
-
-    // Root path'i ana sayfaya yönlendir
-    if (pathname === '/') {
-      return NextResponse.redirect(
-        new URL(`/${validLocale}`, request.url)
-      );
-    }
-
-    // Locale yoksa varsayılan dile yönlendir
-    if (pathnameIsMissingLocale) {
-      return NextResponse.redirect(
-        new URL(`/${validLocale}${pathname}`, request.url)
-      );
-    }
+    // Locale kontrolü next-intl tarafından yapılıyor
 
     // Add user info to headers for client-side use
     if (user) {
@@ -225,28 +217,6 @@ export async function middleware(request: NextRequest) {
     return response;
   } catch (error) {
     // Fallback: continue with basic routing
-    const pathnameIsMissingLocale = ['tr', 'en', 'sr'].every(
-      locale => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
-    );
-
-    // Kullanıcının dil tercihini cookie'den al
-    const preferredLocale = request.cookies.get('NEXT_LOCALE')?.value || 'tr';
-    const validLocale = ['tr', 'en', 'sr'].includes(preferredLocale)
-      ? preferredLocale
-      : 'tr';
-
-    if (pathname === '/') {
-      return NextResponse.redirect(
-        new URL(`/${validLocale}`, request.url)
-      );
-    }
-
-    if (pathnameIsMissingLocale) {
-      return NextResponse.redirect(
-        new URL(`/${validLocale}${pathname}`, request.url)
-      );
-    }
-
     return response;
   }
 }

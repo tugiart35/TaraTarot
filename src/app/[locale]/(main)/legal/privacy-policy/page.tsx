@@ -1,218 +1,532 @@
 // Bu dosya, Karadağ PDPL uyumlu güncel Gizlilik Politikası sayfasını oluşturur.
 // Kullanıcıların kişisel verilerinin işlenmesi, hakları ve güvenliği hakkında detaylı bilgi sunar.
-// Mobil öncelikli, sade ve modern bir arayüz sağlar.
+// Mistik tarot temasına uygun, modern ve profesyonel bir arayüz sağlar.
+
+'use client';
 
 import React from 'react';
+import {
+  FaShieldAlt,
+  FaLock,
+  FaUserShield,
+  FaEye,
+  FaDatabase,
+  FaGavel,
+  FaCheckCircle,
+} from 'react-icons/fa';
+import BottomNavigation from '@/features/shared/layout/BottomNavigation';
+import { useTranslations } from '@/hooks/useTranslations';
 
 export default function PrivacyPolicy() {
+  const { t } = useTranslations();
+
   return (
-    <main className='max-w-xl mx-auto px-4 py-8 text-gray-800'>
-      <section className='mb-8'>
-        <h1 className='text-2xl font-bold mb-2 text-center'>
-          📘 Gizlilik Politikası
-        </h1>
-        <p className='text-center text-sm text-gray-500 mb-1'>
-          Karadağ PDPL Uyumlu
-        </p>
-        <p className='text-center text-xs text-gray-400'>
-          Son Güncelleme: 8 Temmuz 2025
-        </p>
-      </section>
+    <div className='min-h-screen bg-cosmic-black'>
+      {/* Mystical Background Effects */}
+      <div className='absolute inset-0 bg-gradient-to-br from-purple-900/20 via-indigo-900/20 to-purple-800/20'></div>
+      <div className='absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent'></div>
 
-      <section className='mb-6'>
-        <h2 className='font-semibold text-lg mb-2'>1. Giriş</h2>
-        <p>
-          Bu politikada geçen “Platform”, Tarot ve Numeroloji hizmetlerini sunan{' '}
-          <b>www.tarotnumeroloji.com</b> olarak anılmaktadır. Bu gizlilik
-          politikası, Karadağ’daki Law on Personal Data Protection (PDPL)
-          hükümlerine uygun şekilde kişisel veri işleme uygulamalarımızı
-          açıklar.
-        </p>
-      </section>
-
-      <section className='mb-6'>
-        <h2 className='font-semibold text-lg mb-2'>2. Uygulama Kapsamı</h2>
-        <p>
-          PDPL, Karadağ’da faaliyet gösteren tüm yerli ve yabancı kuruluşlara,
-          elektronik ya da manuel veri işleme sistemleriyle veri toplayan
-          şirketlere uygulanır.
-        </p>
-      </section>
-
-      <section className='mb-6'>
-        <h2 className='font-semibold text-lg mb-2'>
-          3. Toplanan Veriler & Hassas Kategoriler
-        </h2>
-        <ul className='list-disc pl-5 space-y-1'>
-          <li>
-            <b>Kişisel veriler:</b> Ad, soyad, e‑posta, IP adresi, çerez
-            verileri vb.
-          </li>
-          <li>
-            <b>Hassas veriler:</b> Doğum tarihi, sağlık durumu gibi özel
-            kategoriler. Bu kategorilerin işlenmesi ancak açık rıza veya yasal
-            istisnalarla mümkündür.
-          </li>
-        </ul>
-      </section>
-
-      <section className='mb-6'>
-        <h2 className='font-semibold text-lg mb-2'>4. İşleme Koşulları</h2>
-        <p>Veri işleme faaliyetlerimiz şunlara dayanmaktadır:</p>
-        <ol className='list-decimal pl-5 space-y-1'>
-          <li>Aydınlatılmış açık rıza,</li>
-          <li>Sözleşme veya yasal yükümlülüklerin yerine getirilmesi,</li>
-          <li>
-            Hayati çıkarlar gibi yasal amacı dışında bir nedene dayanmadan
-            gerçekleştirilir.
-          </li>
-        </ol>
-        <p className='mt-2'>
-          Ayrıca, veri minimizasyonu, amaç sınırlaması, veri doğruluğu ve
-          saklama süresi sınırlaması ilkelerine sıkı şekilde uyuyoruz.
-        </p>
-      </section>
-
-      <section className='mb-6'>
-        <h2 className='font-semibold text-lg mb-2'>
-          5. Veri Sorumlusu Kaydı & DPO
-        </h2>
-        <ul className='list-disc pl-5 space-y-1'>
-          <li>
-            Platform, Karadağ Veri Koruma Ajansı (AZLP) nezdinde veri sorumlusu
-            olarak kayıtlıdır; veri tabanlarımız için ayrı başvurular
-            yapılmıştır.
-          </li>
-          <li>
-            Çalışan sayımız 10 ve üzeri olduğunda DPO (Veri Koruma Görevlisi)
-            atanacaktır. Mevcut durumda yükümlülüklerimize uygun atama
-            planlanmıştır.
-          </li>
-        </ul>
-      </section>
-
-      <section className='mb-6'>
-        <h2 className='font-semibold text-lg mb-2'>
-          6. Teknik ve Organizasyonel Güvenlik
-        </h2>
-        <ul className='list-disc pl-5 space-y-1'>
-          <li>Şifreleme, erişim kontrolü ve sistem loglaması,</li>
-          <li>Çalışan eğitimleri ve gizlilik politikaları,</li>
-          <li>Düzenli iç denetimler uygulanmaktadır.</li>
-        </ul>
-      </section>
-
-      <section className='mb-6'>
-        <h2 className='font-semibold text-lg mb-2'>
-          7. Veri İhlali (Breach) Bildirim Prosedürü
-        </h2>
-        <ul className='list-disc pl-5 space-y-1'>
-          <li>
-            Herhangi bir veri ihlali durumunda, 72 saat içinde AZLP’ye bildirimi
-            gerçekleştiriyoruz.
-          </li>
-          <li>
-            Eğer ihlal, kullanıcı verilerinin haklarını etkiliyorsa, ilgili
-            kullanıcılar da derhal bilgilendirilecektir.
-          </li>
-        </ul>
-      </section>
-
-      <section className='mb-6'>
-        <h2 className='font-semibold text-lg mb-2'>8. Kullanıcı Hakları</h2>
-        <p>Karadağ PDPL kapsamında, kullanıcılar aşağıdaki haklara sahiptir:</p>
-        <ul className='list-disc pl-5 space-y-1'>
-          <li>Kişisel verilere erişim, düzeltme, silme, işleme itiraz,</li>
-          <li>İşleme sınırlaması talebi,</li>
-          <li>Otomatik karar süreçlerine itiraz,</li>
-          <li>Verilerin taşınabilirliğini talep etme.</li>
-        </ul>
-        <p className='mt-2'>
-          Başvurularınızı{' '}
-          <a
-            href='mailto:info@tarotnumeroloji.com'
-            className='text-blue-600 underline'
-          >
-            info@tarotnumeroloji.com
-          </a>{' '}
-          adresine kimlik doğrulama belgeleriyle iletebilirsiniz.
-        </p>
-      </section>
-
-      <section className='mb-6'>
-        <h2 className='font-semibold text-lg mb-2'>
-          9. Uluslararası Veri Transferleri
-        </h2>
-        <ul className='list-disc pl-5 space-y-1'>
-          <li>
-            Karadağ dışına veri transferi öncesinde AZLP onayı alınmaktadır.
-          </li>
-          <li>
-            İstisnalar: AB/AEA ülkeleri, AB tarafından yeterli kabul edilen
-            üçüncü ülkeler, kullanıcının açık yazılı rızası.
-          </li>
-        </ul>
-      </section>
-
-      <section className='mb-6'>
-        <h2 className='font-semibold text-lg mb-2'>
-          10. Veri Saklama Süresi ve İmha
-        </h2>
-        <p>
-          Kişisel veriler, yalnızca işleme amaçlarının gerektirdiği süre boyunca
-          saklanır; süre bitince anonimleştirilir veya güvenli şekilde imha
-          edilir.
-        </p>
-      </section>
-
-      <section className='mb-6'>
-        <h2 className='font-semibold text-lg mb-2'>
-          11. Çerezler ve Doğrudan Pazarlama
-        </h2>
-        <ul className='list-disc pl-5 space-y-1'>
-          <li>Kullanıcıların çerez tercihleri dikkate alınır.</li>
-          <li>
-            Çerez kullanımı hakkında net bilgi sağlanır ve itiraz hakkı sunulur.
-          </li>
-        </ul>
-      </section>
-
-      <section className='mb-6'>
-        <h2 className='font-semibold text-lg mb-2'>12. Değişiklikler</h2>
-        <p>
-          Bu politika, düzenleyici ya da işleyişsel gereksinimler doğrultusunda
-          periyodik olarak güncellenir. En güncel versiyon her zaman{' '}
-          <a
-            href='https://www.tarotnumeroloji.com'
-            className='text-blue-600 underline'
-          >
-            www.tarotnumeroloji.com
-          </a>{' '}
-          adresinde yayınlanacaktır.
-        </p>
-      </section>
-
-      <section className='mb-6'>
-        <h2 className='font-semibold text-lg mb-2'>13. İletişim Bilgileri</h2>
-        <div className='bg-gray-100 rounded-lg p-4'>
-          <p className='mb-1'>
-            <b>E‑posta:</b>{' '}
-            <a
-              href='mailto:info@tarotnumeroloji.com'
-              className='text-blue-600 underline'
-            >
-              info@tarotnumeroloji.com
-            </a>
+      <main className='relative z-10 max-w-4xl mx-auto px-4 py-12'>
+        {/* Header Section with Mystical Design */}
+        <section className='mb-12 text-center'>
+          <div className='inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-purple-500/20 to-indigo-500/20 rounded-full mb-6 backdrop-blur-sm border border-purple-500/30'>
+            <FaShieldAlt className='w-10 h-10 text-purple-300' />
+          </div>
+          <h1 className='text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-golden-400 via-purple-300 to-indigo-300 bg-clip-text text-transparent'>
+            {t('footer.legalPages.privacyPolicy.title')}
+          </h1>
+          <div className='flex items-center justify-center space-x-4 text-sm text-cosmic-300 mb-2'>
+            <div className='flex items-center space-x-2'>
+              <FaGavel className='w-4 h-4 text-golden-400' />
+              <span>
+                {t('footer.legalPages.privacyPolicy.montenegroCompliant')}
+              </span>
+            </div>
+            <div className='w-1 h-1 bg-cosmic-400 rounded-full'></div>
+            <div className='flex items-center space-x-2'>
+              <FaCheckCircle className='w-4 h-4 text-green-400' />
+              <span>{t('footer.legalPages.privacyPolicy.lastUpdated')}</span>
+            </div>
+          </div>
+          <p className='text-cosmic-300 max-w-2xl mx-auto leading-relaxed'>
+            {t('footer.legalPages.privacyPolicy.subtitle')}
           </p>
-          <p className='mb-1'>
-            <b>Adres:</b> Podgorica, Karadağ
-          </p>
-          <p className='mb-1'>
-            <b>Veri Sorumlusu:</b> Tarot-Numeroloji Platformu, Kaydı: AZLP
-          </p>
+        </section>
+
+        {/* Content Sections with Card-like Design */}
+        <div className='space-y-8'>
+          <section className='card p-6 hover-lift'>
+            <div className='flex items-center space-x-3 mb-4'>
+              <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
+                <FaEye className='w-5 h-5 text-purple-300' />
+              </div>
+              <h2 className='text-2xl font-bold text-golden-300'>
+                {t(
+                  'footer.legalPages.privacyPolicy.sections.introduction.title'
+                )}
+              </h2>
+            </div>
+            <p className='text-cosmic-200 leading-relaxed'>
+              {t(
+                'footer.legalPages.privacyPolicy.sections.introduction.content'
+              )}
+            </p>
+          </section>
+
+          <section className='card p-6 hover-lift'>
+            <div className='flex items-center space-x-3 mb-4'>
+              <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
+                <FaGavel className='w-5 h-5 text-purple-300' />
+              </div>
+              <h2 className='text-2xl font-bold text-golden-300'>
+                {t('footer.legalPages.privacyPolicy.sections.scope.title')}
+              </h2>
+            </div>
+            <p className='text-cosmic-200 leading-relaxed'>
+              {t('footer.legalPages.privacyPolicy.sections.scope.content')}
+            </p>
+          </section>
+
+          <section className='card p-6 hover-lift'>
+            <div className='flex items-center space-x-3 mb-4'>
+              <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
+                <FaDatabase className='w-5 h-5 text-purple-300' />
+              </div>
+              <h2 className='text-2xl font-bold text-golden-300'>
+                {t(
+                  'footer.legalPages.privacyPolicy.sections.dataCollection.title'
+                )}
+              </h2>
+            </div>
+            <div className='space-y-4'>
+              <div className='bg-gradient-to-r from-purple-500/10 to-indigo-500/10 p-4 rounded-lg border border-purple-500/20'>
+                <h3 className='text-lg font-semibold text-golden-300 mb-2 flex items-center'>
+                  <FaUserShield className='w-4 h-4 mr-2' />
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.dataCollection.personalData.title'
+                  )}
+                </h3>
+                <p className='text-cosmic-200'>
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.dataCollection.personalData.content'
+                  )}
+                </p>
+              </div>
+              <div className='bg-gradient-to-r from-red-500/10 to-pink-500/10 p-4 rounded-lg border border-red-500/20'>
+                <h3 className='text-lg font-semibold text-red-300 mb-2 flex items-center'>
+                  <FaLock className='w-4 h-4 mr-2' />
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.dataCollection.sensitiveData.title'
+                  )}
+                </h3>
+                <p className='text-cosmic-200'>
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.dataCollection.sensitiveData.content'
+                  )}
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section className='card p-6 hover-lift'>
+            <div className='flex items-center space-x-3 mb-4'>
+              <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
+                <FaCheckCircle className='w-5 h-5 text-purple-300' />
+              </div>
+              <h2 className='text-2xl font-bold text-golden-300'>
+                {t(
+                  'footer.legalPages.privacyPolicy.sections.processingConditions.title'
+                )}
+              </h2>
+            </div>
+            <p className='text-cosmic-200 leading-relaxed mb-4'>
+              {t(
+                'footer.legalPages.privacyPolicy.sections.processingConditions.content'
+              )}
+            </p>
+            <div className='space-y-3'>
+              {t('footer.legalPages.privacyPolicy.sections.processingConditions.conditions', '').split(',').map((condition, index) => (
+                <div key={index} className='flex items-start space-x-3'>
+                  <div className='w-6 h-6 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full flex items-center justify-center text-white text-sm font-bold'>
+                    {index + 1}
+                  </div>
+                  <p className='text-cosmic-200'>{condition.trim()}</p>
+                </div>
+              ))}
+            </div>
+            <div className='mt-4 p-4 bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-lg border border-green-500/20'>
+              <p className='text-cosmic-200'>
+                {t(
+                  'footer.legalPages.privacyPolicy.sections.processingConditions.additionalSecurity'
+                )}
+              </p>
+            </div>
+          </section>
+
+          <section className='card p-6 hover-lift'>
+            <div className='flex items-center space-x-3 mb-4'>
+              <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
+                <FaUserShield className='w-5 h-5 text-purple-300' />
+              </div>
+              <h2 className='text-2xl font-bold text-golden-300'>
+                {t(
+                  'footer.legalPages.privacyPolicy.sections.dataController.title'
+                )}
+              </h2>
+            </div>
+            <div className='space-y-4'>
+              <div className='bg-gradient-to-r from-blue-500/10 to-cyan-500/10 p-4 rounded-lg border border-blue-500/20'>
+                <p className='text-cosmic-200'>
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.dataController.registration'
+                  )}
+                </p>
+              </div>
+              <div className='bg-gradient-to-r from-yellow-500/10 to-orange-500/10 p-4 rounded-lg border border-yellow-500/20'>
+                <p className='text-cosmic-200'>
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.dataController.dpo'
+                  )}
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section className='card p-6 hover-lift'>
+            <div className='flex items-center space-x-3 mb-4'>
+              <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
+                <FaLock className='w-5 h-5 text-purple-300' />
+              </div>
+              <h2 className='text-2xl font-bold text-golden-300'>
+                {t('footer.legalPages.privacyPolicy.sections.security.title')}
+              </h2>
+            </div>
+            <div className='grid md:grid-cols-3 gap-4'>
+              <div className='bg-gradient-to-r from-green-500/10 to-emerald-500/10 p-4 rounded-lg border border-green-500/20 text-center'>
+                <div className='w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-3'>
+                  <FaLock className='w-6 h-6 text-white' />
+                </div>
+                <h3 className='text-lg font-semibold text-green-300 mb-2'>
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.security.encryption.title'
+                  )}
+                </h3>
+                <p className='text-cosmic-200 text-sm'>
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.security.encryption.content'
+                  )}
+                </p>
+              </div>
+              <div className='bg-gradient-to-r from-blue-500/10 to-cyan-500/10 p-4 rounded-lg border border-blue-500/20 text-center'>
+                <div className='w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-3'>
+                  <FaUserShield className='w-6 h-6 text-white' />
+                </div>
+                <h3 className='text-lg font-semibold text-blue-300 mb-2'>
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.security.training.title'
+                  )}
+                </h3>
+                <p className='text-cosmic-200 text-sm'>
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.security.training.content'
+                  )}
+                </p>
+              </div>
+              <div className='bg-gradient-to-r from-purple-500/10 to-indigo-500/10 p-4 rounded-lg border border-purple-500/20 text-center'>
+                <div className='w-12 h-12 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-3'>
+                  <FaCheckCircle className='w-6 h-6 text-white' />
+                </div>
+                <h3 className='text-lg font-semibold text-purple-300 mb-2'>
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.security.audit.title'
+                  )}
+                </h3>
+                <p className='text-cosmic-200 text-sm'>
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.security.audit.content'
+                  )}
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section className='card p-6 hover-lift'>
+            <div className='flex items-center space-x-3 mb-4'>
+              <div className='p-2 bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-lg'>
+                <FaShieldAlt className='w-5 h-5 text-red-300' />
+              </div>
+              <h2 className='text-2xl font-bold text-golden-300'>
+                {t('footer.legalPages.privacyPolicy.sections.dataBreach.title')}
+              </h2>
+            </div>
+            <div className='space-y-4'>
+              <div className='bg-gradient-to-r from-red-500/10 to-pink-500/10 p-4 rounded-lg border border-red-500/20'>
+                <h3 className='text-lg font-semibold text-red-300 mb-2 flex items-center'>
+                  <FaCheckCircle className='w-4 h-4 mr-2' />
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.dataBreach.seventyTwoHour.title'
+                  )}
+                </h3>
+                <p className='text-cosmic-200'>
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.dataBreach.seventyTwoHour.content'
+                  )}
+                </p>
+              </div>
+              <div className='bg-gradient-to-r from-orange-500/10 to-yellow-500/10 p-4 rounded-lg border border-orange-500/20'>
+                <h3 className='text-lg font-semibold text-orange-300 mb-2 flex items-center'>
+                  <FaUserShield className='w-4 h-4 mr-2' />
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.dataBreach.userNotification.title'
+                  )}
+                </h3>
+                <p className='text-cosmic-200'>
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.dataBreach.userNotification.content'
+                  )}
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section className='card p-6 hover-lift'>
+            <div className='flex items-center space-x-3 mb-4'>
+              <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
+                <FaUserShield className='w-5 h-5 text-purple-300' />
+              </div>
+              <h2 className='text-2xl font-bold text-golden-300'>
+                {t('footer.legalPages.privacyPolicy.sections.userRights.title')}
+              </h2>
+            </div>
+            <p className='text-cosmic-200 leading-relaxed mb-6'>
+              {t('footer.legalPages.privacyPolicy.sections.userRights.content')}
+            </p>
+            <div className='grid md:grid-cols-2 gap-4 mb-6'>
+              <div className='bg-gradient-to-r from-green-500/10 to-emerald-500/10 p-4 rounded-lg border border-green-500/20'>
+                <h3 className='text-lg font-semibold text-green-300 mb-2 flex items-center'>
+                  <FaCheckCircle className='w-4 h-4 mr-2' />
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.userRights.basicRights.title'
+                  )}
+                </h3>
+                <ul className='text-cosmic-200 space-y-1'>
+                  {t('footer.legalPages.privacyPolicy.sections.userRights.basicRights.rights', '').split(',').map((right, index) => (
+                    <li key={index}>• {right.trim()}</li>
+                  ))}
+                </ul>
+              </div>
+              <div className='bg-gradient-to-r from-blue-500/10 to-cyan-500/10 p-4 rounded-lg border border-blue-500/20'>
+                <h3 className='text-lg font-semibold text-blue-300 mb-2 flex items-center'>
+                  <FaShieldAlt className='w-4 h-4 mr-2' />
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.userRights.advancedRights.title'
+                  )}
+                </h3>
+                <ul className='text-cosmic-200 space-y-1'>
+                  {t('footer.legalPages.privacyPolicy.sections.userRights.advancedRights.rights', '').split(',').map((right, index) => (
+                    <li key={index}>• {right.trim()}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div className='bg-gradient-to-r from-purple-500/10 to-indigo-500/10 p-4 rounded-lg border border-purple-500/20'>
+              <p className='text-cosmic-200'>
+                {t(
+                  'footer.legalPages.privacyPolicy.sections.userRights.application'
+                )}
+              </p>
+            </div>
+          </section>
+
+          <section className='card p-6 hover-lift'>
+            <div className='flex items-center space-x-3 mb-4'>
+              <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
+                <FaDatabase className='w-5 h-5 text-purple-300' />
+              </div>
+              <h2 className='text-2xl font-bold text-golden-300'>
+                {t(
+                  'footer.legalPages.privacyPolicy.sections.internationalTransfers.title'
+                )}
+              </h2>
+            </div>
+            <div className='space-y-4'>
+              <div className='bg-gradient-to-r from-blue-500/10 to-cyan-500/10 p-4 rounded-lg border border-blue-500/20'>
+                <h3 className='text-lg font-semibold text-blue-300 mb-2 flex items-center'>
+                  <FaCheckCircle className='w-4 h-4 mr-2' />
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.internationalTransfers.azlpApproval.title'
+                  )}
+                </h3>
+                <p className='text-cosmic-200'>
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.internationalTransfers.azlpApproval.content'
+                  )}
+                </p>
+              </div>
+              <div className='bg-gradient-to-r from-green-500/10 to-emerald-500/10 p-4 rounded-lg border border-green-500/20'>
+                <h3 className='text-lg font-semibold text-green-300 mb-2 flex items-center'>
+                  <FaShieldAlt className='w-4 h-4 mr-2' />
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.internationalTransfers.exceptions.title'
+                  )}
+                </h3>
+                <p className='text-cosmic-200'>
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.internationalTransfers.exceptions.content'
+                  )}
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section className='card p-6 hover-lift'>
+            <div className='flex items-center space-x-3 mb-4'>
+              <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
+                <FaLock className='w-5 h-5 text-purple-300' />
+              </div>
+              <h2 className='text-2xl font-bold text-golden-300'>
+                {t(
+                  'footer.legalPages.privacyPolicy.sections.dataRetention.title'
+                )}
+              </h2>
+            </div>
+            <div className='bg-gradient-to-r from-red-500/10 to-pink-500/10 p-4 rounded-lg border border-red-500/20'>
+              <p className='text-cosmic-200'>
+                {t(
+                  'footer.legalPages.privacyPolicy.sections.dataRetention.content'
+                )}
+              </p>
+            </div>
+          </section>
+
+          <section className='card p-6 hover-lift'>
+            <div className='flex items-center space-x-3 mb-4'>
+              <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
+                <FaEye className='w-5 h-5 text-purple-300' />
+              </div>
+              <h2 className='text-2xl font-bold text-golden-300'>
+                {t('footer.legalPages.privacyPolicy.sections.cookies.title')}
+              </h2>
+            </div>
+            <div className='grid md:grid-cols-2 gap-4'>
+              <div className='bg-gradient-to-r from-blue-500/10 to-cyan-500/10 p-4 rounded-lg border border-blue-500/20'>
+                <h3 className='text-lg font-semibold text-blue-300 mb-2 flex items-center'>
+                  <FaCheckCircle className='w-4 h-4 mr-2' />
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.cookies.cookiePreferences.title'
+                  )}
+                </h3>
+                <p className='text-cosmic-200 text-sm'>
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.cookies.cookiePreferences.content'
+                  )}
+                </p>
+              </div>
+              <div className='bg-gradient-to-r from-green-500/10 to-emerald-500/10 p-4 rounded-lg border border-green-500/20'>
+                <h3 className='text-lg font-semibold text-green-300 mb-2 flex items-center'>
+                  <FaShieldAlt className='w-4 h-4 mr-2' />
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.cookies.information.title'
+                  )}
+                </h3>
+                <p className='text-cosmic-200 text-sm'>
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.cookies.information.content'
+                  )}
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section className='card p-6 hover-lift'>
+            <div className='flex items-center space-x-3 mb-4'>
+              <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
+                <FaCheckCircle className='w-5 h-5 text-purple-300' />
+              </div>
+              <h2 className='text-2xl font-bold text-golden-300'>
+                {t('footer.legalPages.privacyPolicy.sections.changes.title')}
+              </h2>
+            </div>
+            <div className='bg-gradient-to-r from-blue-500/10 to-cyan-500/10 p-4 rounded-lg border border-blue-500/20'>
+              <p className='text-cosmic-200'>
+                {t('footer.legalPages.privacyPolicy.sections.changes.content')}
+              </p>
+            </div>
+          </section>
+
+          <section className='card p-6 hover-lift'>
+            <div className='flex items-center space-x-3 mb-4'>
+              <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
+                <FaUserShield className='w-5 h-5 text-purple-300' />
+              </div>
+              <h2 className='text-2xl font-bold text-golden-300'>
+                {t('footer.legalPages.privacyPolicy.sections.contact.title')}
+              </h2>
+            </div>
+            <div className='bg-gradient-to-r from-purple-500/10 to-indigo-500/10 p-6 rounded-lg border border-purple-500/20'>
+              <div className='grid md:grid-cols-3 gap-6'>
+                <div className='text-center'>
+                  <div className='w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-3'>
+                    <FaUserShield className='w-6 h-6 text-white' />
+                  </div>
+                  <h3 className='text-lg font-semibold text-blue-300 mb-2'>
+                    {t(
+                      'footer.legalPages.privacyPolicy.sections.contact.email.title'
+                    )}
+                  </h3>
+                  <a
+                    href='mailto:info@tarotnumeroloji.com'
+                    className='text-golden-400 hover:text-golden-300 underline transition-colors'
+                  >
+                    {t(
+                      'footer.legalPages.privacyPolicy.sections.contact.email.address'
+                    )}
+                  </a>
+                </div>
+                <div className='text-center'>
+                  <div className='w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-3'>
+                    <FaShieldAlt className='w-6 h-6 text-white' />
+                  </div>
+                  <h3 className='text-lg font-semibold text-green-300 mb-2'>
+                    {t(
+                      'footer.legalPages.privacyPolicy.sections.contact.address.title'
+                    )}
+                  </h3>
+                  <p className='text-cosmic-200'>
+                    {t(
+                      'footer.legalPages.privacyPolicy.sections.contact.address.location'
+                    )}
+                  </p>
+                </div>
+                <div className='text-center'>
+                  <div className='w-12 h-12 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-3'>
+                    <FaGavel className='w-6 h-6 text-white' />
+                  </div>
+                  <h3 className='text-lg font-semibold text-purple-300 mb-2'>
+                    {t(
+                      'footer.legalPages.privacyPolicy.sections.contact.dataController.title'
+                    )}
+                  </h3>
+                  <p className='text-cosmic-200 text-sm'>
+                    {t(
+                      'footer.legalPages.privacyPolicy.sections.contact.dataController.name'
+                    )}
+                  </p>
+                  <p className='text-cosmic-200 text-sm'>
+                    {t(
+                      'footer.legalPages.privacyPolicy.sections.contact.dataController.registration'
+                    )}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
-    </main>
+      </main>
+
+      {/* Bottom Navigation */}
+      <BottomNavigation />
+    </div>
   );
 }
 // Burada backend'e bağlanılacak alanlar için ileride entegrasyon notu eklenebilir.

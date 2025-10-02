@@ -1,3 +1,8 @@
+const withNextIntl = require('next-intl/plugin')(
+  // next-intl yapılandırması
+  './src/lib/i18n/config.ts'
+);
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Workspace root ayarı - birden fazla lockfile uyarısını önler
@@ -82,4 +87,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = withNextIntl(nextConfig);

@@ -1,224 +1,93 @@
 // Bu dosya, Karadağ uyumlu Çerez Politikası sayfasını oluşturur.
 // Kullanıcıların çerezler hakkında bilgilendirilmesi ve haklarının korunması için hazırlanmıştır.
-// Mobil öncelikli, sade ve modern bir arayüz sunar.
+// Mistik tarot temasına uygun, i18n destekli, modern ve profesyonel bir arayüz sunar.
+
+'use client';
 
 import React from 'react';
+import { FaCookie, FaCog, FaChartBar, FaAd, FaCheckCircle, FaTimesCircle, FaInfoCircle } from 'react-icons/fa';
+import BottomNavigation from '@/features/shared/layout/BottomNavigation';
+import { useTranslations } from '@/hooks/useTranslations';
 
 export default function CookiePolicy() {
+  const { t } = useTranslations();
+
   return (
-    <main className='max-w-xl mx-auto px-4 py-8 text-gray-800'>
-      <section className='mb-8'>
-        <h1 className='text-2xl font-bold mb-2 text-center'>
-          🍪 Çerez Politikası
-        </h1>
-        <p className='text-center text-sm text-gray-500 mb-1'>Karadağ Uyumlu</p>
-        <p className='text-center text-xs text-gray-400'>
-          Son Güncelleme: 8 Temmuz 2025
-        </p>
-      </section>
-
-      <section className='mb-6'>
-        <h2 className='font-semibold text-lg mb-2'>1. Çerezler Nelerdir?</h2>
-        <p>
-          Çerezler, ziyaret ettiğiniz web sayfalarının cihazınıza yerleştirdiği
-          küçük metin dosyalarıdır. Teknik ihtiyaçların karşılanması,
-          tercihlerinizin hatırlanması, güvenlik sağlanması ve analiz gibi
-          amaçlarla kullanılır.
-        </p>
-      </section>
-
-      <section className='mb-6'>
-        <h2 className='font-semibold text-lg mb-2'>2. Yasal Dayanak</h2>
-        <ul className='list-disc pl-5 space-y-1'>
-          <li>
-            Çerezler veri oluşturur ve PDPL ile Elektronik Haberleşme Kanunu
-            kapsamındadır.
-          </li>
-          <li>
-            PDPL, çerezlerin kişisel verileri içermesi durumunda toplanması ve
-            işlenmesi için aydınlatılmış açık rıza gerektirir.
-          </li>
-          <li>
-            Elektronik Haberleşme Kanunu, çerezlerin kullanımında önceden
-            bilgilendirme ve açık rıza şartı öngörür; aksi halde kullanım
-            yasaktır.
-          </li>
-        </ul>
-      </section>
-
-      <section className='mb-6'>
-        <h2 className='font-semibold text-lg mb-2'>3. Çerez Kategorileri</h2>
-        <div className='space-y-3'>
-          <div>
-            <h3 className='font-semibold'>1. Zorunlu (Strictly Necessary)</h3>
-            <ul className='list-disc pl-5 text-sm'>
-              <li>Oturum yönetimi, güvenlik, navigasyon amaçlı.</li>
-              <li>
-                Kullanıcı izni olmaksızın kullanılabilir; ancak bu çerezlerin
-                amacı kullanıcıya açık olarak bildirilmeli.
-              </li>
-            </ul>
+    <div className='min-h-screen bg-cosmic-black'>
+      {/* Mystical Background Effects */}
+      <div className='absolute inset-0 bg-gradient-to-br from-purple-900/20 via-indigo-900/20 to-purple-800/20'></div>
+      <div className='absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent'></div>
+      
+      <main className='relative z-10 max-w-4xl mx-auto px-4 py-12'>
+        {/* Header Section with Mystical Design */}
+        <section className='mb-12 text-center'>
+          <div className='inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-purple-500/20 to-indigo-500/20 rounded-full mb-6 backdrop-blur-sm border border-purple-500/30'>
+            <FaCookie className='w-10 h-10 text-purple-300' />
           </div>
-          <div>
-            <h3 className='font-semibold'>
-              2. Analiz & İstatistik (Performance)
-            </h3>
-            <ul className='list-disc pl-5 text-sm'>
-              <li>Site kullanım analizleri için.</li>
-              <li>Kullanıcı rızası gerekir.</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className='font-semibold'>
-              3. Pazarlama ve Reklam (Marketing)
-            </h3>
-            <ul className='list-disc pl-5 text-sm'>
-              <li>Kişiselleştirilmiş reklamlar ve yeniden hedefleme için.</li>
-              <li>Kesinlikle kullanıcı onayı gereklidir.</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className='font-semibold'>4. Fonksiyonel (Preferences)</h3>
-            <ul className='list-disc pl-5 text-sm'>
-              <li>Dil tercihi, tema gibi özelleştirmeler.</li>
-              <li>
-                Açık rıza ile kullanılır; teknik olmayan işlevsel çerezler ise
-                analiz gerekebilir.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section className='mb-6'>
-        <h2 className='font-semibold text-lg mb-2'>4. Rıza Yönetimi</h2>
-        <ul className='list-disc pl-5 space-y-1'>
-          <li>
-            Çerezler, ziyaretçiler siteye ilk girdiğinde gösterilen bir çerez
-            banner’ı ile sunulur.
-          </li>
-          <li>
-            Banner şunları içerir: çerez kategorilerinin açıklaması, “Kabul Et”
-            ve “Reddet” seçenekleri, detaylı Çerez Politikası’na bağlantı,
-            rızanın geri alınma yöntemi.
-          </li>
-          <li>“Kabul Et” ve “Reddet” butonları eşit görünürlükte olmalı.</li>
-          <li>
-            Rıza “önceden işaretli kutular” veya banner’ın gizlenmesi ile olmaz;
-            açık eylem gereklidir.
-          </li>
-        </ul>
-      </section>
-
-      <section className='mb-6'>
-        <h2 className='font-semibold text-lg mb-2'>
-          5. Çerez Listesi ve Açıklama (Örnek)
-        </h2>
-        <div className='overflow-x-auto'>
-          <table className='min-w-full text-sm border border-gray-200 rounded-lg'>
-            <thead>
-              <tr className='bg-gray-100'>
-                <th className='p-2 border'>Çerez Adı</th>
-                <th className='p-2 border'>Kategori</th>
-                <th className='p-2 border'>Amaç</th>
-                <th className='p-2 border'>Saklama Süresi</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className='p-2 border'>PHPSESSID</td>
-                <td className='p-2 border'>Zorunlu</td>
-                <td className='p-2 border'>Kullanıcı oturumunu yönetir</td>
-                <td className='p-2 border'>Oturum süresince</td>
-              </tr>
-              <tr>
-                <td className='p-2 border'>_ga, _gid</td>
-                <td className='p-2 border'>Analiz</td>
-                <td className='p-2 border'>
-                  Google Analytics ile web trafiği incelenir
-                </td>
-                <td className='p-2 border'>2 yıl / 24 saat</td>
-              </tr>
-              <tr>
-                <td className='p-2 border'>_fbp</td>
-                <td className='p-2 border'>Pazarlama</td>
-                <td className='p-2 border'>
-                  Facebook reklamları için kullanıcı ataması
-                </td>
-                <td className='p-2 border'>3 ay</td>
-              </tr>
-              <tr>
-                <td className='p-2 border'>lang</td>
-                <td className='p-2 border'>Fonksiyonel</td>
-                <td className='p-2 border'>Dil tercihini hatırlama</td>
-                <td className='p-2 border'>1 yıl</td>
-              </tr>
-            </tbody>
-          </table>
-          <p className='text-xs text-gray-500 mt-2'>
-            Gerçek kullanılan çerezlere göre güncellenmelidir.
+          <h1 className='text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-golden-400 via-purple-300 to-indigo-300 bg-clip-text text-transparent'>
+            {t('footer.legalPages.cookiePolicy.title')}
+          </h1>
+          <p className='text-cosmic-300 max-w-2xl mx-auto leading-relaxed'>
+            {t('footer.legalPages.cookiePolicy.subtitle')}
           </p>
+        </section>
+
+        {/* Content Sections with Card-like Design */}
+        <div className='space-y-8'>
+          <section className='card p-6 hover-lift'>
+            <div className='flex items-center space-x-3 mb-4'>
+              <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
+                <FaInfoCircle className='w-5 h-5 text-purple-300' />
+              </div>
+              <h2 className='text-2xl font-bold text-golden-300'>{t('footer.legalPages.cookiePolicy.whatIsCookie')}</h2>
+            </div>
+            <p className='text-cosmic-200 leading-relaxed'>
+              {t('footer.legalPages.cookiePolicy.content')}
+            </p>
+          </section>
+
+          <section className='card p-6 hover-lift'>
+            <div className='flex items-center space-x-3 mb-4'>
+              <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
+                <FaCog className='w-5 h-5 text-purple-300' />
+              </div>
+              <h2 className='text-2xl font-bold text-golden-300'>{t('footer.legalPages.cookiePolicy.types')}</h2>
+            </div>
+            <div className='grid md:grid-cols-2 gap-4'>
+              <div className='bg-gradient-to-r from-blue-500/10 to-cyan-500/10 p-4 rounded-lg border border-blue-500/20'>
+                <h3 className='text-lg font-semibold text-blue-300 mb-2'>{t('footer.legalPages.cookiePolicy.technical')}</h3>
+                <p className='text-cosmic-200 text-sm'>Site işlevselliği için zorunlu</p>
+              </div>
+              <div className='bg-gradient-to-r from-green-500/10 to-emerald-500/10 p-4 rounded-lg border border-green-500/20'>
+                <h3 className='text-lg font-semibold text-green-300 mb-2'>{t('footer.legalPages.cookiePolicy.functional')}</h3>
+                <p className='text-cosmic-200 text-sm'>Kullanıcı tercihlerini hatırlar</p>
+              </div>
+              <div className='bg-gradient-to-r from-purple-500/10 to-indigo-500/10 p-4 rounded-lg border border-purple-500/20'>
+                <h3 className='text-lg font-semibold text-purple-300 mb-2'>{t('footer.legalPages.cookiePolicy.analytics')}</h3>
+                <p className='text-cosmic-200 text-sm'>Site kullanımını analiz eder</p>
+              </div>
+            </div>
+          </section>
+
+          <section className='card p-6 hover-lift'>
+            <div className='flex items-center space-x-3 mb-4'>
+              <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
+                <FaCheckCircle className='w-5 h-5 text-purple-300' />
+              </div>
+              <h2 className='text-2xl font-bold text-golden-300'>{t('footer.legalPages.cookiePolicy.preferences')}</h2>
+            </div>
+            <div className='bg-gradient-to-r from-purple-500/10 to-indigo-500/10 p-4 rounded-lg border border-purple-500/20'>
+              <p className='text-cosmic-200'>
+                {t('footer.legalPages.cookiePolicy.manage')}
+              </p>
+            </div>
+          </section>
         </div>
-      </section>
+      </main>
 
-      <section className='mb-6'>
-        <h2 className='font-semibold text-lg mb-2'>6. Rıza ve Red Beyanı</h2>
-        <ul className='list-disc pl-5 space-y-1'>
-          <li>
-            Kullanıcı, banner üzerinden rızasını verebilir veya reddedebilir.
-          </li>
-          <li>
-            Rıza durumu tarayıcıda saklanır (çerezle ile) ve banner yeniden
-            görünmez.
-          </li>
-          <li>
-            Kullanıcı rızayı istediği zaman çerez ayarları sayfasından geri
-            çekebilir.
-          </li>
-        </ul>
-      </section>
-
-      <section className='mb-6'>
-        <h2 className='font-semibold text-lg mb-2'>7. Çerez İptali</h2>
-        <ul className='list-disc pl-5 space-y-1'>
-          <li>Tarayıcı ayarlarıyla da çerez reddi mümkündür.</li>
-          <li>
-            Bazı çerezler devre dışı bırakılırsa site çalışmasında sınırlama
-            olabilir.
-          </li>
-        </ul>
-      </section>
-
-      <section className='mb-6'>
-        <h2 className='font-semibold text-lg mb-2'>
-          8. Çerezler Hakkında Bilgi
-        </h2>
-        <ul className='list-disc pl-5 space-y-1'>
-          <li>
-            Çerezlerle ilgili güncel bilgiler, kullanılan üçüncü taraf
-            hizmetlerin gizlilik sayfalarında bulunabilir (örneğin Google
-            Analytics, Facebook).
-          </li>
-          <li>
-            Kullanıcıların çerez tercihlerini ve bu çerezlerin işlevlerini
-            bunlardan takip edebilir.
-          </li>
-        </ul>
-      </section>
-
-      <section className='mb-6'>
-        <h2 className='font-semibold text-lg mb-2'>
-          9. Politika Güncellemeleri
-        </h2>
-        <ul className='list-disc pl-5 space-y-1'>
-          <li>
-            Bu çerez politikası yasal değişiklik ve teknik gereksinimler
-            nedeniyle güncellenebilir.
-          </li>
-          <li>Güncel sürüm her zaman web sitesinde yer alacaktır.</li>
-        </ul>
-      </section>
-    </main>
+      {/* Bottom Navigation */}
+      <BottomNavigation />
+    </div>
   );
 }
 // Bu dosyada kullanıcı rıza durumu sadece çerez ile saklanıyor. Firebase entegrasyonu gerekmedi.

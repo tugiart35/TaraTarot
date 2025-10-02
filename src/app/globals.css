@@ -21,21 +21,7 @@
 }
 
 /* Admin layout specific styles - Footer'ı admin sayfalarında gizle */
-.admin-layout footer,
-.admin-page footer,
-body:has(.admin-layout) footer,
-body:has(.admin-page) footer,
-[class*="admin"] footer,
-html:has(.admin-layout) footer,
-html:has(.admin-page) footer {
-  display: none !important;
-  visibility: hidden !important;
-  opacity: 0 !important;
-  height: 0 !important;
-  overflow: hidden !important;
-  position: absolute !important;
-  left: -9999px !important;
-}
+/* Bu stiller admin sayfalarında footer'ı gizlemek için kullanılır */
 
 /* Mobile optimization utilities */
 .touch-target {
