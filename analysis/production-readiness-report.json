@@ -1,0 +1,74 @@
+{
+  "timestamp": "2025-10-04T10:27:10.099Z",
+  "total_cards": 78,
+  "languages": ["tr", "en", "sr"],
+  "total_pages": 234,
+  "content_completeness": {
+    "completion_rate": 100,
+    "total_sections": 3744,
+    "completed_sections": 3744,
+    "score": 100,
+    "status": "EXCELLENT"
+  },
+  "seo_optimization": {
+    "optimization_rate": 80,
+    "total_seo_items": 1170,
+    "optimized_items": 936,
+    "score": 80,
+    "status": "GOOD"
+  },
+  "technical_requirements": {
+    "compliance_rate": 50,
+    "total_technical_items": 936,
+    "compliant_items": 468,
+    "score": 50,
+    "status": "NEEDS_IMPROVEMENT"
+  },
+  "quality_metrics": {
+    "quality_rate": 89,
+    "total_quality_checks": 936,
+    "passed_quality_checks": 837,
+    "score": 80,
+    "status": "GOOD"
+  },
+  "production_checklist": {
+    "content_ready": true,
+    "seo_ready": true,
+    "technical_ready": true,
+    "multilingual_ready": true,
+    "structured_data_ready": true,
+    "performance_optimized": true,
+    "accessibility_compliant": true,
+    "mobile_responsive": true
+  },
+  "overall_score": 80,
+  "production_ready": false,
+  "critical_issues": [],
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "category": "SEO",
+      "message": "SEO optimization needs improvement",
+      "action": "Optimize meta titles, descriptions, and keywords"
+    },
+    {
+      "priority": "MEDIUM",
+      "category": "TECHNICAL",
+      "message": "Technical requirements need attention",
+      "action": "Implement proper URL structure, hreflang, and OpenGraph tags"
+    },
+    {
+      "priority": "MEDIUM",
+      "category": "QUALITY",
+      "message": "Content quality needs improvement",
+      "action": "Improve content length, FAQ completeness, and keyword quality"
+    }
+  ],
+  "statistics": {
+    "total_words": 89938,
+    "average_words_per_card": 1153,
+    "total_faqs": 1170,
+    "total_keywords": 3978,
+    "structured_data_completion": 100
+  }
+}

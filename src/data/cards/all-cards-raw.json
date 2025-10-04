@@ -1,0 +1,3338 @@
+{
+  "cards": [
+    {
+      "id": "the_fool",
+      "names": {
+        "tr": "Deli",
+        "en": "The Fool",
+        "sr": "Luda"
+      },
+      "short_description": "Saf merak, cesur adımlar ve yeni döngülerin daveti.",
+      "meanings": {
+        "upright": {
+          "general": "Özgürce yeni bir başlangıç; taze enerji ve sürprizli bir tanışma getirebilir.",
+          "love": "Beklenmedik tanışmalar, hafiflik ve keşif dolu birliktelikler.",
+          "career": "Yeni deneyimler ve risk almaya açık bir dönem.",
+          "money": "Girişimsel fırsatlar; cesaretin yeni kapılar açabilir.",
+          "spiritual": "İçsel çocuğa dönme, evrene güvenme ve maceraya çağrı."
+        },
+        "reversed": {
+          "general": "Plansızlık, dikkatsizlik veya aceleci davranışların riski.",
+          "love": "Bağlanmaktan kaçış, yüzeysel ilişkiler olasılığı.",
+          "career": "Hazırlıksız atılımlar; fırsatların boşa gitmesi riski.",
+          "money": "Düşünmeden harcama, ölçüsüz risk alma.",
+          "spiritual": "Niyet eksikliği, dağınık ruh hali."
+        }
+      },
+      "context": {
+        "mythology": "Majör Arkana'nın başlangıcı; döngülerin ucu açık enerjisi.",
+        "celtic_cross": {
+          "future": "Yeni bir yolculuğa adım atma.",
+          "hidden_influences": "Macera ve özgürlük arzusu."
+        }
+      },
+      "cta": {
+        "main": "Yeni Başlangıç Okuması — 20 dk",
+        "micro": "1 karta hızlı rehber"
+      },
+      "faq": ["Deli kartı ne anlama gelir?", "Deli ters geldiğinde ne demek?", "Yeni başlangıç nasıl desteklenir?"],
+      "related": {
+        "cards": ["the_magician", "the_sun", "the_tower"],
+        "guides": ["Yeni Başlangıçlar Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Deli — Yeni Başlangıçlar & Anlamı | Büsbüskimki",
+        "tr_meta": "Deli (The Fool) kartının düz ve ters anlamları; aşk, kariyer ve ruhsal rehberlik.",
+        "en_title": "The Fool (Deli) — New Beginnings & Meaning | Büsbüskimki",
+        "en_meta": "Discover The Fool: upright & reversed meanings, love, career and spiritual insights."
+      }
+    },
+    {
+      "id": "the_magician",
+      "names": {
+        "tr": "Büyücü",
+        "en": "The Magician",
+        "sr": "Čarobnjak"
+      },
+      "short_description": "İrade, yaratıcılık ve niyetin gerçeğe dönüşme gücü.",
+      "meanings": {
+        "upright": {
+          "general": "Potansiyelini bilince çevirme zamanı; becerilerinle dünyayı şekillendirirsin.",
+          "love": "Etkileyici iletişim ve birlikte yaratma enerjisi.",
+          "career": "Yetenekleri sergileme, ikna ve sunum gücünün ön planda olduğu dönem.",
+          "money": "Kaynakları stratejik kullanıp fırsatlar yaratma.",
+          "spiritual": "Niyet çalışmaları ve bilinçli yaratım."
+        },
+        "reversed": {
+          "general": "Manipülasyon, odak kaybı veya potansiyeli yanlış kullanma riski.",
+          "love": "Yanıltıcı sözler veya samimiyetsiz davranışlar.",
+          "career": "Taklitçi yaklaşımlar veya yanıltıcı fırsatlar.",
+          "money": "Aldatıcı teklifler, hesap eksiklikleri.",
+          "spiritual": "Niyetin bulanması, içsel güvensizlik."
+        }
+      },
+      "context": {
+        "mythology": "Gök ve yer arasındaki köprüyü taşıyan yaratıcı arketip.",
+        "celtic_cross": {
+          "future": "Yaratıcı adımların görünür sonuçları.",
+          "hidden_influences": "Niyetin gücü ve çevresel etkenler."
+        }
+      },
+      "cta": {
+        "main": "Kariyer & Niyet Okuması — 30 dk",
+        "micro": "1 karta odaklı yorum"
+      },
+      "faq": ["Büyücü kartı neyi temsil eder?", "Niyetimi nasıl netleştiririm?", "Ters Büyücü ne uyarır?"],
+      "related": {
+        "cards": ["the_high_priestess", "the_fool", "the_sun"],
+        "guides": ["Niyet ve Manifesto Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Büyücü — İrade, Yaratıcılık & Kariyer | Büsbüskimki",
+        "tr_meta": "Büyücü (The Magician) kartının düz/ters anlamları; niyet, yetenek ve kariyer içgörüleri.",
+        "en_title": "The Magician (Büyücü) — Willpower & Creativity | Büsbüskimki",
+        "en_meta": "Explore The Magician: manifesting, skills and career guidance."
+      }
+    },
+    {
+      "id": "the_high_priestess",
+      "names": {
+        "tr": "Başrahibe",
+        "en": "The High Priestess",
+        "sr": "Prvosveštenica"
+      },
+      "short_description": "Sezgi, içsel bilgelik ve görünmeyen rehberliğin sessiz çağrısı.",
+      "meanings": {
+        "upright": {
+          "general": "Sezgilerine kulak ver; sessizlikte cevaplar saklıdır.",
+          "love": "Derin sezgisel bağlar, kelimelerden öte bir anlayış.",
+          "career": "Araştırma, içgörü ve sabırlı derinleşme dönemi.",
+          "money": "Sessiz planlama, gizli fırsatların farkına varma.",
+          "spiritual": "Rüya dili ve sembollerle rehberlik alma."
+        },
+        "reversed": {
+          "general": "Sezgiyi bastırma, aşırı gizlilik veya içe kapanma riski.",
+          "love": "Sırlar, mesafe veya pasiflik ilişkide sorun yaratabilir.",
+          "career": "Bilgiye kapalı kalma, sezgiyi yok sayma.",
+          "money": "Gizli riskler ve sezgiyi dinlememek mali sorun yaratır.",
+          "spiritual": "İçsel işaretleri görmezden gelme."
+        }
+      },
+      "context": {
+        "mythology": "Ay ve bilinçaltıyla bağlantılı; saklı bilginin bekçisi.",
+        "celtic_cross": {
+          "future": "İçsel bilgelikle yolunu aydınlatma.",
+          "hidden_influences": "Gizli sezgiler ve görünmeyen bağlar."
+        }
+      },
+      "cta": {
+        "main": "Sezgi & Ruhsal Okuma — 30 dk",
+        "micro": "1 karta sezgi mesajı"
+      },
+      "faq": ["Başrahibe hangi durumlarda olumlu çıkar?", "Sezgimi nasıl güçlendiririm?"],
+      "related": {
+        "cards": ["the_moon", "the_hermit", "the_empress"],
+        "guides": ["Sezgi ve İçsel Bilgelik Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Başrahibe — Sezgi & İçsel Bilgelik | Büsbüskimki",
+        "tr_meta": "Başrahibe kartının düz ve ters anlamları; sezgi, ilişki ve kariyer içgörüleri.",
+        "en_title": "The High Priestess (Başrahibe) — Intuition & Wisdom | Büsbüskimki",
+        "en_meta": "Learn about The High Priestess: intuition, secrets and spiritual insight."
+      }
+    },
+    {
+      "id": "the_empress",
+      "names": {
+        "tr": "İmparatoriçe",
+        "en": "The Empress",
+        "sr": "Carica"
+      },
+      "short_description": "Bolluk, şefkat ve yaratıcı üretkenlik enerjisi.",
+      "meanings": {
+        "upright": {
+          "general": "Bereket, şefkat ve yaratıcı üretkenlik zamanı.",
+          "love": "Sıcak, destekleyici ve büyüyen bir bağ.",
+          "career": "Yaratıcı projeler, destek ve verimlilik.",
+          "money": "Kaynakların artışı; istikrar ve bakım.",
+          "spiritual": "Doğa ile uyum, besleyici ritüeller."
+        },
+        "reversed": {
+          "general": "Aşırı sahiplenme, tükenmişlik veya öz-bakım eksikliği.",
+          "love": "Bağımlı dinamikler veya kontrol ihtiyacı.",
+          "career": "Yaratıcılık blokları ve kaynakların yanlış kullanımı.",
+          "money": "Aşırı harcama veya mali tükenme riski.",
+          "spiritual": "Kendine özen göstermemek, tükenmişlik."
+        }
+      },
+      "context": {
+        "mythology": "Toprak ana arketipi; verim ve doğurganlığın sembolü.",
+        "celtic_cross": {
+          "future": "Projelerin bereketli sonuçları.",
+          "hidden_influences": "Destekleyici kaynak ve çevre."
+        }
+      },
+      "cta": {
+        "main": "Bereket & Yaratıcılık Okuması — 30 dk",
+        "micro": "1 karta hızlı bakım mesajı"
+      },
+      "faq": ["İmparatoriçe bolluk mu getirir?", "Yaratıcılığı nasıl canlandırırım?"],
+      "related": {
+        "cards": ["the_emperor", "the_fool", "the_lovers"],
+        "guides": ["Bereket ve Yaratıcılık Rehberi"]
+      },
+      "seo": {
+        "tr_title": "İmparatoriçe — Bolluk & Yaratıcılık | Büsbüskimki",
+        "tr_meta": "İmparatoriçe kartının anlamları; bolluk, şefkat ve yaratıcı rehberlik.",
+        "en_title": "The Empress (İmparatoriçe) — Abundance & Nurturing | Büsbüskimki",
+        "en_meta": "Explore The Empress: abundance, nurturing and creative guidance."
+      }
+    },
+    {
+      "id": "the_emperor",
+      "names": {
+        "tr": "İmparator",
+        "en": "The Emperor",
+        "sr": "Car"
+      },
+      "short_description": "Düzen, otorite ve güvenlik sağlayan yapı enerjisi.",
+      "meanings": {
+        "upright": {
+          "general": "Güçlü düzen, disiplin ve sorumluluk alma zamanı.",
+          "love": "Güven veren, istikrarlı ve koruyucu ilişki enerjisi.",
+          "career": "Liderlik, strateji ve yapı gerektiren roller.",
+          "money": "Mali güvenlik ve disiplinli yönetim.",
+          "spiritual": "Sınırlar koyma ve sorumluluk bilinci."
+        },
+        "reversed": {
+          "general": "Katılık, kontrolcülük veya esnekliğin kaybı.",
+          "love": "Baskıcı tutumlar, duygusal mesafe.",
+          "career": "Hantal yönetim, inat veya otorite çatışmaları.",
+          "money": "Aşırı kontrol veya sert mali kararlar zarar verebilir.",
+          "spiritual": "Sert sınırlar ve içsel esnekliğin kaybı."
+        }
+      },
+      "context": {
+        "mythology": "Otorite ve yapı arketipi; düzenin savunucusu.",
+        "celtic_cross": {
+          "future": "Güçlü temeller ve yönetim becerileri.",
+          "hidden_influences": "Güvenlik ihtiyacı ve sorumluluklar."
+        }
+      },
+      "cta": {
+        "main": "Liderlik & Yapı Okuması — 30 dk",
+        "micro": "1 karta kısa strateji"
+      },
+      "faq": ["İmparator neyi temsil eder?", "Sınırları nasıl dengelerim?"],
+      "related": {
+        "cards": ["the_empress", "justice", "the_hierophant"],
+        "guides": ["Liderlik ve Sınır Koyma Rehberi"]
+      },
+      "seo": {
+        "tr_title": "İmparator — Otorite & Güvenlik | Büsbüskimki",
+        "tr_meta": "İmparator kartının anlamları; liderlik, düzen ve güvenlik rehberi.",
+        "en_title": "The Emperor (İmparator) — Authority & Stability | Büsbüskimki",
+        "en_meta": "Understand The Emperor: authority, structure and leadership guidance."
+      }
+    },
+    {
+      "id": "the_hierophant",
+      "names": {
+        "tr": "Aziz",
+        "en": "The Hierophant",
+        "sr": "Vrhovnik"
+      },
+      "short_description": "Gelenek, öğreti ve toplumsal rehberlik kartı.",
+      "meanings": {
+        "upright": {
+          "general": "Geleneksel değerler, öğreti ve rehberlik arayışı.",
+          "love": "Geleneksel bağlar, bağlılık ve ritüeller.",
+          "career": "Eğitim, kurum içinde ilerleme ve mentorluk.",
+          "money": "Sistemli ve güvenli finansal adımlar.",
+          "spiritual": "Ritüeller, inanç ve öğrenme süreçleri."
+        },
+        "reversed": {
+          "general": "Kör bağlılık veya kurallara isyan etme eğilimi.",
+          "love": "Gelenekselliğe karşı isyan veya sıkılma.",
+          "career": "Sistemle çatışma veya kurallara direnç.",
+          "money": "Sistem dışı riskler veya uyumsuz seçimler.",
+          "spiritual": "İnanç sorgulaması ve otoriteyle çatışma."
+        }
+      },
+      "context": {
+        "mythology": "Tarihsel öğretileri koruyan ruhsal rehber figürü.",
+        "celtic_cross": {
+          "future": "Geleneksel rehberlik ve öğrenme fırsatları.",
+          "hidden_influences": "Toplumsal normların etkisi."
+        }
+      },
+      "cta": {
+        "main": "Geleneksel Rehberlik Okuması — 30 dk",
+        "micro": "1 karta hızlı tavsiye"
+      },
+      "faq": ["Aziz kartı neyi öğretir?", "Ritüeller nasıl yardımcı olur?"],
+      "related": {
+        "cards": ["justice", "the_emperor", "the_hierophant"],
+        "guides": ["Gelenek & Rehberlik Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Aziz — Gelenek & Rehberlik | Büsbüskimki",
+        "tr_meta": "Aziz kartının anlamları; inanç, eğitim ve toplumsal rehberlik.",
+        "en_title": "The Hierophant (Aziz) — Tradition & Guidance | Büsbüskimki",
+        "en_meta": "Learn about The Hierophant: tradition, mentorship and spiritual teaching."
+      }
+    },
+    {
+      "id": "the_lovers",
+      "names": {
+        "tr": "Aşıklar",
+        "en": "The Lovers",
+        "sr": "Ljubavnici"
+      },
+      "short_description": "Seçim, uyum ve kalp–akıl dengesinin sınandığı an.",
+      "meanings": {
+        "upright": {
+          "general": "Önemli seçimler, uyum ve derin bağların işareti.",
+          "love": "Derin çekim, uyumlu birliktelik ve değer ortaklığı.",
+          "career": "Ortaklıklar ve değerlerle uyumlu kararlar.",
+          "money": "Paylaşılan kaynaklarda adil ve dengeli seçimler.",
+          "spiritual": "Kalpten verilen kararların ruhsal etkisi."
+        },
+        "reversed": {
+          "general": "Kararsızlık, yanlış seçim veya uyumsuzluk.",
+          "love": "Uyumsuz ortaklıklar veya seçim yapamama.",
+          "career": "Değer çatışmaları veya hatalı ortak kararlar.",
+          "money": "Harcamalarda fikir ayrılıkları, dengesizlik.",
+          "spiritual": "Değerler ile eylemler arasında çelişki."
+        }
+      },
+      "context": {
+        "mythology": "Aşk ve seçim mitleriyle bağlantılı arketip.",
+        "celtic_cross": {
+          "future": "İlişkide dönüm noktası ve seçim anı.",
+          "hidden_influences": "Değerlerin uyumu veya çatışması."
+        }
+      },
+      "cta": {
+        "main": "İlişki & Seçim Okuması — 30 dk",
+        "micro": "1 karta ilişkin bakış"
+      },
+      "faq": ["Aşıklar hangi seçimleri gösterir?", "Uyum nasıl güçlenir?"],
+      "related": {
+        "cards": ["the_empress", "the_fool", "the_chariot"],
+        "guides": ["Aşk & Seçim Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Aşıklar — Aşk & Seçim | Büsbüskimki",
+        "tr_meta": "Aşıklar kartının düz ve ters anlamları; seçimler, ilişkiler ve uyum.",
+        "en_title": "The Lovers (Aşıklar) — Choice & Harmony | Büsbüskimki",
+        "en_meta": "Discover The Lovers: choices, relationships and values alignment."
+      }
+    },
+    {
+      "id": "the_chariot",
+      "names": {
+        "tr": "Savaş Arabası",
+        "en": "The Chariot",
+        "sr": "Kočija"
+      },
+      "short_description": "İrade, kararlılık ve hedefe doğru kararlı ilerleyiş.",
+      "meanings": {
+        "upright": {
+          "general": "Hedefe odaklanma, disiplin ve irade ile ilerleme.",
+          "love": "İlişkide kararlı adımlar ve birlikte yön alma arzusu.",
+          "career": "Hızlı ilerleme, hedefe kilitlenme ve zafer potansiyeli.",
+          "money": "Mali hedeflere disiplinli yaklaşım.",
+          "spiritual": "İrade çalışmaları ve içsel disiplin."
+        },
+        "reversed": {
+          "general": "Yön kaybı, acelecilik ve kontrol çatışmaları.",
+          "love": "Güç mücadeleleri veya acele kararlar.",
+          "career": "Savrulma, odak kaybı ve motivasyon düşüşü.",
+          "money": "Aceleyle yapılan mali hatalar.",
+          "spiritual": "İrade zayıflığı, düzensizlik."
+        }
+      },
+      "context": {
+        "mythology": "Zafer ve hareket arketipi; kontrolün sembolü.",
+        "celtic_cross": {
+          "future": "Hedeflere varma potansiyeli.",
+          "hidden_influences": "Motivasyon ve dış etkenler."
+        }
+      },
+      "cta": {
+        "main": "Hedef & İrade Okuması — 25 dk",
+        "micro": "1 karta odaklan"
+      },
+      "faq": ["Savaş Arabası nasıl destekler?", "Motivasyon kaybında ne yapmalı?"],
+      "related": {
+        "cards": ["strength", "the_chariot", "the_hermit"],
+        "guides": ["İrade & Hedef Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Savaş Arabası — İrade & Hedef | Büsbüskimki",
+        "tr_meta": "Savaş Arabası kartı: odak, disiplin ve hedefe ulaşma rehberi.",
+        "en_title": "The Chariot (Savaş Arabası) — Focus & Triumph | Büsbüskimki",
+        "en_meta": "Explore The Chariot: willpower, focus and career momentum."
+      }
+    },
+    {
+      "id": "strength",
+      "names": {
+        "tr": "Güç",
+        "en": "Strength",
+        "sr": "Snaga"
+      },
+      "short_description": "Nazik cesaret, sabır ve şefkatle zorlukları aşma.",
+      "meanings": {
+        "upright": {
+          "general": "İçsel cesaret, sabır ve yumuşak güç ön planda.",
+          "love": "Şefkatli güç, dayanıklılık ve duygusal güven.",
+          "career": "Zorluklarla sakinçe başa çıkma ve istikrar.",
+          "money": "Süreklilik ve disiplinle mali denge kurma.",
+          "spiritual": "Korkularla nazikçe yüzleşme ve iyileşme."
+        },
+        "reversed": {
+          "general": "Sabırsızlık, özgüven eksikliği veya öfkeye teslim olma.",
+          "love": "Kıskançlık, sabırsız davranışlar.",
+          "career": "Tereddüt ve liderlikte güçsüz hissetme.",
+          "money": "Panik kararları ve kısa vadeli tepkiler.",
+          "spiritual": "İçsel mücadele ve kendine sert davranma."
+        }
+      },
+      "context": {
+        "mythology": "İç gücü şefkatle birleştiren arketip.",
+        "celtic_cross": {
+          "future": "İçsel denge ve sabırla ilerleme.",
+          "hidden_influences": "Korkuların dönüşümü."
+        }
+      },
+      "cta": {
+        "main": "İçsel Güç Okuması — 25 dk",
+        "micro": "1 karta cesaret mesajı"
+      },
+      "faq": ["Güç nasıl kullanılır?", "Sabrı nasıl geliştiririm?"],
+      "related": {
+        "cards": ["the_chariot", "the_hermit", "the_emperor"],
+        "guides": ["Cesaret & Şefkat Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Güç — Cesaret & Sabır | Büsbüskimki",
+        "tr_meta": "Güç kartı: içsel cesaret, sabır ve şefkat üzerine rehber.",
+        "en_title": "Strength (Güç) — Courage & Compassion | Büsbüskimki",
+        "en_meta": "Understand Strength: patience, inner courage and resilience."
+      }
+    },
+    {
+      "id": "the_hermit",
+      "names": {
+        "tr": "Ermiş",
+        "en": "The Hermit",
+        "sr": "Pustinjak"
+      },
+      "short_description": "İçe dönme, aydınlanma arayışı ve yalnız keşif.",
+      "meanings": {
+        "upright": {
+          "general": "Yalnızlıkta derinleşme; içsel bilgelikle buluşma zamanı.",
+          "love": "İlişkide geri çekilme veya içsel değerlendirme dönemi.",
+          "career": "Derin öğrenme, yalnız çalışma ve hedef yeniden biçimlendirme.",
+          "money": "Temkinli mali planlama ve bağımsız değerlendirme.",
+          "spiritual": "Sessizlik, meditasyon ve içsel rehberlikle buluşma."
+        },
+        "reversed": {
+          "general": "Aşırı izolasyon, yalnızlık veya destek reddi riski.",
+          "love": "İlişkide kopukluk ve iletişim eksikliği.",
+          "career": "Fırsatları kaçırma veya aşırı içe çekilme.",
+          "money": "Destek almadan risk alma sonucu zorluklar.",
+          "spiritual": "Yalnız kalmanın olumsuz etkileri."
+        }
+      },
+      "context": {
+        "mythology": "Bilge yolculuğunun bekçisi; ışıkla yön gösterir.",
+        "celtic_cross": {
+          "future": "Yeni içsel keşifler ve bilgelik.",
+          "hidden_influences": "Geçmiş deneyimlerin rehberliği."
+        }
+      },
+      "cta": {
+        "main": "İçe Dönüş Okuması — 30 dk",
+        "micro": "1 karta rehberlik"
+      },
+      "faq": ["Ermiş yalnızlık mı demek?", "Ne zaman içe dönmeliyim?"],
+      "related": {
+        "cards": ["the_high_priestess", "strength", "the_hierophant"],
+        "guides": ["İçsel Keşif Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Ermiş — İçsel Bilgelik & Yalnızlık | Büsbüskimki",
+        "tr_meta": "Ermiş kartı: içe dönüş, bilgelik arayışı ve yalnız keşif rehberi.",
+        "en_title": "The Hermit (Ermiş) — Solitude & Insight | Büsbüskimki",
+        "en_meta": "Explore The Hermit: solitude, inner guidance and reflection."
+      }
+    },
+    {
+      "id": "wheel_of_fortune",
+      "names": {
+        "tr": "Kader Çarkı",
+        "en": "Wheel of Fortune",
+        "sr": "Točak Sreće"
+      },
+      "short_description": "Döngüler, şans ve zamanlamanın akışı.",
+      "meanings": {
+        "upright": {
+          "general": "Değişim, şans kapıları ve kaderin akışı.",
+          "love": "İlişkilerde beklenmedik dönemeçler ve fırsatlar.",
+          "career": "Kariyerde sürpriz fırsatlar veya ani değişimler.",
+          "money": "Finansal dalgalanmalar; zamanlama önem kazanır.",
+          "spiritual": "Kaderin akışına teslim olma ve öğrenme."
+        },
+        "reversed": {
+          "general": "Tekrarlayan olumsuz döngüler veya talihsizlik hissi.",
+          "love": "Tekrarlayan sorunlar ve yanlış zamanlama.",
+          "career": "Plansız değişimler veya beklenmedik kayıplar.",
+          "money": "Kontrol dışı mali dalgalanmalar.",
+          "spiritual": "Kaderle çatışma ve direnç."
+        }
+      },
+      "context": {
+        "mythology": "Kaderin döngüsünü ve şansın değişkenliğini simgeler.",
+        "celtic_cross": {
+          "future": "Yeni döngüler ve fırsatlar.",
+          "hidden_influences": "Zamanlama ve harici etkenler."
+        }
+      },
+      "cta": {
+        "main": "Şans & Dönüşüm Okuması — 25 dk",
+        "micro": "1 karta yönlendirme"
+      },
+      "faq": ["Kader Çarkı nasıl çalışır?", "Değişimi nasıl yönetirim?"],
+      "related": {
+        "cards": ["the_tower", "the_chariot", "the_fool"],
+        "guides": ["Döngüler ve Zamanlama Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Kader Çarkı — Şans & Döngüler | Büsbüskimki",
+        "tr_meta": "Kader Çarkı kartı: değişim, şans ve doğru zamanlama rehberi.",
+        "en_title": "Wheel of Fortune (Kader Çarkı) — Luck & Cycles | Büsbüskimki",
+        "en_meta": "Discover Wheel of Fortune: cycles, luck and timely opportunities."
+      }
+    },
+    {
+      "id": "justice",
+      "names": {
+        "tr": "Adalet",
+        "en": "Justice",
+        "sr": "Pravda"
+      },
+      "short_description": "Denge, doğruluk ve eylem–sonuç ilkesinin hatırlatıcısı.",
+      "meanings": {
+        "upright": {
+          "general": "Adalet, denge ve sorumlulukların netleştiği dönem.",
+          "love": "Dürüstlük ve haksızlığa karşı denge ihtiyacı.",
+          "career": "Sözleşmeler, etik ve hesap verme zamanı.",
+          "money": "Mali denge ve şeffaflık önem kazanır.",
+          "spiritual": "Karma ve eylem sonuçlarının farkına varma."
+        },
+        "reversed": {
+          "general": "Haksızlık, dengesizlik veya adaletsizlik hissi.",
+          "love": "Dengesiz sorumluluk paylaşımı veya haksızlık duygusu.",
+          "career": "Haksız değerlendirmeler veya anlaşmazlıklar.",
+          "money": "Yanlış hesaplar veya belirsiz mali durumlar.",
+          "spiritual": "Karma ile yüzleşme çağrısı."
+        }
+      },
+      "context": {
+        "mythology": "Hesap ve denge arketipi; hakkaniyeti simgeler.",
+        "celtic_cross": {
+          "future": "Değerlendirme ve sonuç alma zamanı.",
+          "hidden_influences": "Geçmiş eylemlerin etkileri."
+        }
+      },
+      "cta": {
+        "main": "Denge & Karar Okuması — 30 dk",
+        "micro": "1 karta net tavsiye"
+      },
+      "faq": ["Adalet kartı neyi gösterir?", "Haksızlık nasıl düzelir?"],
+      "related": {
+        "cards": ["the_emperor", "judgement", "the_hierophant"],
+        "guides": ["Hesap & Denge Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Adalet — Denge & Hesaplaşma | Büsbüskimki",
+        "tr_meta": "Adalet kartı: denge, kararlar ve etik rehberlik.",
+        "en_title": "Justice (Adalet) — Balance & Accountability | Büsbüskimki",
+        "en_meta": "Explore Justice: fairness, decisions and legal clarity."
+      }
+    },
+    {
+      "id": "the_hanged_man",
+      "names": {
+        "tr": "Asılan Adam",
+        "en": "The Hanged Man",
+        "sr": "Obešenik"
+      },
+      "short_description": "Teslimiyet, perspektif değişimi ve bekleme süreci.",
+      "meanings": {
+        "upright": {
+          "general": "Bakış açısını değiştirme, sabırlı bekleyiş ve teslimiyet.",
+          "love": "İlişkide mola veya yeni bir perspektif kazanma.",
+          "career": "Bekleme ve strateji yeniden gözden geçirme dönemi.",
+          "money": "Harcamaların yeniden değerlendirilmesi ve erteleme.",
+          "spiritual": "Fedakârlıkla gelen içsel dönüşüm."
+        },
+        "reversed": {
+          "general": "Erteleme, inatçılık veya kaçırılan fırsatlar.",
+          "love": "Kararsızlık ve durumu sürdürme eğilimi.",
+          "career": "Kilitlenme hissi ve ilerleyememe.",
+          "money": "Gecikmeler ve mali kararsızlık.",
+          "spiritual": "Teslimiyetin reddi, direnç."
+        }
+      },
+      "context": {
+        "mythology": "Fedakârlık ve yeni perspektif sembolü.",
+        "celtic_cross": {
+          "future": "Yeni görüş açılarının gelişmesi.",
+          "hidden_influences": "Gecikmelerin içsel nedeni."
+        }
+      },
+      "cta": {
+        "main": "Perspektif & Teslimiyet Okuması — 25 dk",
+        "micro": "1 karta rehberlik"
+      },
+      "faq": ["Asılan Adam ne öğretir?", "Bekleme nasıl değerlendirilir?"],
+      "related": {
+        "cards": ["the_hanged_man", "the_hermit", "temperance"],
+        "guides": ["Teslimiyet & Bakış Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Asılan Adam — Teslimiyet & Bakış Açısı | Büsbüskimki",
+        "tr_meta": "Asılan Adam kartı: perspektif değişimi, bekleme ve fedakârlık rehberi.",
+        "en_title": "The Hanged Man (Asılan Adam) — Surrender & Insight | Büsbüskimki",
+        "en_meta": "Discover The Hanged Man: new perspectives, patience and inner pause."
+      }
+    },
+    {
+      "id": "death",
+      "names": {
+        "tr": "Ölüm",
+        "en": "Death",
+        "sr": "Smrt"
+      },
+      "short_description": "Derin dönüşüm, sonlanma ve yeniden doğuşun habercisi.",
+      "meanings": {
+        "upright": {
+          "general": "Eskiyi bırakma, dönüşüm ve yeni başlangıç fırsatı.",
+          "love": "İlişkide dönüşüm; bitişler yeni alan açar.",
+          "career": "Kariyerde radikal değişim ve yeniden yapılanma.",
+          "money": "Eski finansal alışkanlıkların bırakılması ve yenilenme.",
+          "spiritual": "Ruhsal temizlik ve yeniden doğuş süreci."
+        },
+        "reversed": {
+          "general": "Değişime direnç, tutunma ve gecikmiş kapanışlar.",
+          "love": "Bitmesi gerekenin uzaması, dönüşümü reddetme.",
+          "career": "Eski yolları sürdürme isteği; ilerleyememe.",
+          "money": "Dönüşümü ertelemenin maliyeti.",
+          "spiritual": "İçsel dönüşümü kabul etmeme."
+        }
+      },
+      "context": {
+        "mythology": "Temizlenme ve yeniden doğuş arketipi; zor ama gerekli sonlanma.",
+        "celtic_cross": {
+          "future": "Yeni döngü için gereken bırakış.",
+          "hidden_influences": "Geçmişin serbest bırakılması."
+        }
+      },
+      "cta": {
+        "main": "Dönüşüm Okuması — 30 dk",
+        "micro": "1 karta dönüşüm rehberi"
+      },
+      "faq": ["Ölüm kartı gerçek ölüm mü demek?", "Dönüşümle nasıl barışırım?"],
+      "related": {
+        "cards": ["the_tower", "the_hermit", "death"],
+        "guides": ["Dönüşüm & Yeniden Doğuş Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Ölüm — Dönüşüm & Yeniden Doğuş | Büsbüskimki",
+        "tr_meta": "Ölüm kartı: bitişler, dönüşüm ve ruhsal yenilenme rehberi.",
+        "en_title": "Death (Ölüm) — Transformation & Renewal | Büsbüskimki",
+        "en_meta": "Learn about Death: endings, transformation and new beginnings."
+      }
+    },
+    {
+      "id": "temperance",
+      "names": {
+        "tr": "Denge",
+        "en": "Temperance",
+        "sr": "Umerenost"
+      },
+      "short_description": "Orta yolu bulma, sabır ve uyum enerjisi.",
+      "meanings": {
+        "upright": {
+          "general": "Ölçülülük, uyum ve sabırla ilerleme zamanı.",
+          "love": "İlişkide orta yol, tolerans ve denge.",
+          "career": "Orantılı kararlar, istikrar ve uyum.",
+          "money": "Dengeli bütçe ve ölçülü adımlar.",
+          "spiritual": "Zıtlıkları birleştirerek bütünlüğe ulaşma."
+        },
+        "reversed": {
+          "general": "Aşırılıklar, dengesizlik ve sabırsızlık.",
+          "love": "Uyumsuzluk veya aşırı tepki.",
+          "career": "Tutarsız stratejiler veya aşırı hırs.",
+          "money": "Dengesiz harcama eğilimleri.",
+          "spiritual": "İçsel çatışmaların çözülmemesi."
+        }
+      },
+      "context": {
+        "mythology": "Simya ve denge sembolleriyle orta yol arketipi.",
+        "celtic_cross": {
+          "future": "Uyum ve ölçülü ilerleme.",
+          "hidden_influences": "Sabır ve zamanlama."
+        }
+      },
+      "cta": {
+        "main": "Denge & Uyum Okuması — 25 dk",
+        "micro": "1 karta denge önerisi"
+      },
+      "faq": ["Denge nasıl sağlanır?", "Aşırılıklardan nasıl kaçınırım?"],
+      "related": {
+        "cards": ["temperance", "justice", "the_hanged_man"],
+        "guides": ["Denge & Ölçülülük Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Denge — Ölçülülük & Uyum | Büsbüskimki",
+        "tr_meta": "Denge kartı: ölçülülük, sabır ve uyum üzerine rehberlik.",
+        "en_title": "Temperance (Denge) — Balance & Moderation | Büsbüskimki",
+        "en_meta": "Discover Temperance: balance, patience and integration."
+      }
+    },
+    {
+      "id": "the_devil",
+      "names": {
+        "tr": "Şeytan",
+        "en": "The Devil",
+        "sr": "Đavo"
+      },
+      "short_description": "Bağımlılıklar, gölge yönler ve sınırların sorgulanması.",
+      "meanings": {
+        "upright": {
+          "general": "Güçlü arzular, bağımlılıklar ve kısıtlanma hissi.",
+          "love": "Yoğun tutku ama bağlılık sorunları veya toksik dinamikler.",
+          "career": "Kısıtlayıcı anlaşmalar veya hırsın gölgesi.",
+          "money": "Borç, aşırı harcama veya tuzak finansal teklifler.",
+          "spiritual": "Gölgeyle yüzleşme ve sınırları görme zamanı."
+        },
+        "reversed": {
+          "general": "Zincirlerden kopma ve özgürleşme potansiyeli.",
+          "love": "Toksik bağlardan çıkma ve sınır koyma.",
+          "career": "Toksik dinamiklerden uzaklaşma fırsatı.",
+          "money": "Borçtan çıkma veya mali temizlenme süreci.",
+          "spiritual": "Gölge işiyle yüzleşip iyileşme."
+        }
+      },
+      "context": {
+        "mythology": "Gölge, arzu ve bağlanma arketipi; uyarıcı bir enerji.",
+        "celtic_cross": {
+          "future": "Bağımlılıkları sorgulama zamanı.",
+          "hidden_influences": "İçsel arzular ve dış etkiler."
+        }
+      },
+      "cta": {
+        "main": "Gölge & Sınır Okuması — 30 dk",
+        "micro": "1 karta sınır rehberi"
+      },
+      "faq": ["Şeytan kartı korkutucu mu?", "Bağımlılıktan nasıl özgürleşirim?"],
+      "related": {
+        "cards": ["the_tower", "death", "the_devil"],
+        "guides": ["Gölge Çalışması Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Şeytan — Gölge & Bağımlılıklar | Büsbüskimki",
+        "tr_meta": "Şeytan kartı: bağımlılıklar, tutkular ve özgürleşme rehberi.",
+        "en_title": "The Devil (Şeytan) — Shadow & Liberation | Büsbüskimki",
+        "en_meta": "Explore The Devil: temptations, bondage and breaking free."
+      }
+    },
+    {
+      "id": "the_tower",
+      "names": {
+        "tr": "Kule",
+        "en": "The Tower",
+        "sr": "Kula"
+      },
+      "short_description": "Ani sarsıntılar, yıkım ve hakikatin açığa çıkışı.",
+      "meanings": {
+        "upright": {
+          "general": "Beklenmedik yıkım; ilüzyonların çöküşü ve gerçeklerle yüzleşme.",
+          "love": "İlişkide ani kriz veya yüzleşme ve kopuş riski.",
+          "career": "Ani iş değişiklikleri, ifşa veya kayıplar.",
+          "money": "Finansal sarsıntılar; yapıların yeniden değerlendirilmesi.",
+          "spiritual": "İllüzyonun çöküşü ve ruhsal uyanış."
+        },
+        "reversed": {
+          "general": "Yıkımı erteleme veya gerçekleri görmezden gelme riski.",
+          "love": "Sorunları örtbas etme; ileride daha büyük sarsıntılar doğabilir.",
+          "career": "Krizleri gizleme; daha ciddi sonuçlar doğabilir.",
+          "money": "Mali krizleri erteleme ve sonrasında ağır bedel.",
+          "spiritual": "Gerçeği reddetme ve içsel çöküş."
+        }
+      },
+      "context": {
+        "mythology": "Gerçeğin şok edici açığa çıkışı ve yeniden yapılanma arketipi.",
+        "celtic_cross": {
+          "future": "Ani değişim ve yeniden inşa süreci.",
+          "hidden_influences": "Gizli gerçeklerin etkisi."
+        }
+      },
+      "cta": {
+        "main": "Kriz & Yeniden Yapılanma Okuması — 30 dk",
+        "micro": "1 karta acil rehber"
+      },
+      "faq": ["Kule neden çıkar?", "Krizden nasıl güçlenirim?"],
+      "related": {
+        "cards": ["death", "the_fool", "the_tower"],
+        "guides": ["Kriz & Yeniden İnşa Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Kule — Kriz & Yenilenme | Büsbüskimki",
+        "tr_meta": "Kule kartı: ani sarsıntılar, ifşa ve yeniden yapılanma rehberi.",
+        "en_title": "The Tower (Kule) — Upheaval & Revelation | Büsbüskimki",
+        "en_meta": "Understand The Tower: sudden change, revelation and rebuilding."
+      }
+    },
+    {
+      "id": "the_star",
+      "names": {
+        "tr": "Yıldız",
+        "en": "The Star",
+        "sr": "Zvezda"
+      },
+      "short_description": "Umut, şifa ve ilham veren yenilenme enerjisi.",
+      "meanings": {
+        "upright": {
+          "general": "Umutun ve şifanın geri gelişi; ilham dolu bir dönem.",
+          "love": "İlişkide iyileşme, taze umut ve içtenlik.",
+          "career": "Yaratıcı ilham ve yeniden güven kazanma.",
+          "money": "Durgunluktan toparlanma, sürdürülebilir umut.",
+          "spiritual": "Ruhsal yenilenme ve ilahi rehberlikle bağlanma."
+        },
+        "reversed": {
+          "general": "Umutsuzluk, ilham kaybı veya tükenmişlik hissi.",
+          "love": "Güven kaybı ve beklentilerin sarsılması.",
+          "career": "Motivasyon düşüklüğü ve ilham eksikliği.",
+          "money": "Finansal belirsizlik ve karamsarlık.",
+          "spiritual": "İnanç krizleri, ruhsal yalnızlık."
+        }
+      },
+      "context": {
+        "mythology": "İlahi ışık, rehberlik ve şifa sembolü.",
+        "celtic_cross": {
+          "future": "Şifa ve umutla ilerleme.",
+          "hidden_influences": "İyileşme enerjileri ve ilham kaynakları."
+        }
+      },
+      "cta": {
+        "main": "Umut & Şifa Okuması — 30 dk",
+        "micro": "1 karta umut mesajı"
+      },
+      "faq": ["Yıldız nasıl umut verir?", "Şifa süreci nasıl hızlanır?"],
+      "related": {
+        "cards": ["the_sun", "the_star", "the_hermit"],
+        "guides": ["Umut & Şifa Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Yıldız — Umut & Şifa | Büsbüskimki",
+        "tr_meta": "Yıldız kartı: umut, ilham ve ruhsal şifa rehberi.",
+        "en_title": "The Star (Yıldız) — Hope & Healing | Büsbüskimki",
+        "en_meta": "Discover The Star: inspiration, healing and renewed faith."
+      }
+    },
+    {
+      "id": "the_moon",
+      "names": {
+        "tr": "Ay",
+        "en": "The Moon",
+        "sr": "Mesec"
+      },
+      "short_description": "Bilinçaltı, belirsizlik ve rüya dilinin mesajları.",
+      "meanings": {
+        "upright": {
+          "general": "Belirsizlik, yanılsamalar ve içsel gölgelerin ortaya çıkışı.",
+          "love": "Gizli duygular, yanılsamalar ve duygusal dalgalanmalar.",
+          "career": "Net olmayan koşullar; sezgilerle ilerleme gereği.",
+          "money": "Gizli mali bilgiler veya yanlış anlaşılma riskleri.",
+          "spiritual": "Rüya ve semboller aracılığıyla rehberlik."
+        },
+        "reversed": {
+          "general": "Korkulara kapılma, yanlış algılar veya sisin dağılması.",
+          "love": "Güvensizlik, yanlış okumalar ve aldatılma riski.",
+          "career": "Saklanan gerçeklerin açığa çıkması veya kafa karışıklığı.",
+          "money": "Gizli mali risklerin görünür hale gelmesi.",
+          "spiritual": "İçsel korkularla yüzleşme gereği."
+        }
+      },
+      "context": {
+        "mythology": "Ayın gizemi, rüyalar ve bilinçaltı sembollerinin bekçisi.",
+        "celtic_cross": {
+          "future": "Gizli konuların açığa çıkması.",
+          "hidden_influences": "Bilinçaltı korkular ve rüyalar."
+        }
+      },
+      "cta": {
+        "main": "Rüya & Sezgi Okuması — 30 dk",
+        "micro": "1 karta rüya yorumu"
+      },
+      "faq": ["Ay kartı ne uyarır?", "Rüyalar nasıl yorumlanır?"],
+      "related": {
+        "cards": ["the_high_priestess", "the_moon", "the_star"],
+        "guides": ["Rüya & Sezgi Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Ay — Sezgi & Bilinçaltı | Büsbüskimki",
+        "tr_meta": "Ay kartı: belirsizlik, rüyalar ve sezgisel uyarılar hakkında rehber.",
+        "en_title": "The Moon (Ay) — Intuition & Subconscious | Büsbüskimki",
+        "en_meta": "Explore The Moon: illusions, dreams and intuitive warnings."
+      }
+    },
+    {
+      "id": "the_sun",
+      "names": {
+        "tr": "Güneş",
+        "en": "The Sun",
+        "sr": "Sunce"
+      },
+      "short_description": "Neşe, başarı ve canlı bir netlik enerjisi.",
+      "meanings": {
+        "upright": {
+          "general": "Açık başarı, neşe ve yaşam enerjisinin yükselmesi.",
+          "love": "Mutluluk, samimiyet ve güçlenen bağlar.",
+          "career": "Görünür başarı, takdir edilme ve ilerleme.",
+          "money": "İyimserlikle artan kazanç ve güvenli planlar.",
+          "spiritual": "Aydınlanma, canlılık ve içsel ışıma."
+        },
+        "reversed": {
+          "general": "Motivasyon düşüklüğü, geçici hayal kırıklığı veya yorgunluk.",
+          "love": "İniş çıkışlı mutluluk veya özgüven sorunları.",
+          "career": "Gecikmiş ödüller veya motivasyon eksikliği.",
+          "money": "Kısa vadeli finansal hayal kırıklıkları.",
+          "spiritual": "Enerji düşüklüğü; yeniden şarj olma ihtiyacı."
+        }
+      },
+      "context": {
+        "mythology": "Güneşin canlı enerjisi; başarı ve aydınlanma sembolü.",
+        "celtic_cross": {
+          "future": "Görünür zafer ve coşku potansiyeli.",
+          "hidden_influences": "Başarıyı destekleyen etkenler."
+        }
+      },
+      "cta": {
+        "main": "Başarı & Neşe Okuması — 25 dk",
+        "micro": "1 karta olumlama"
+      },
+      "faq": ["Güneş kartı neyi müjdeler?", "İçsel ışığı nasıl beslerim?"],
+      "related": {
+        "cards": ["the_star", "the_empress", "the_fool"],
+        "guides": ["Başarı & Neşe Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Güneş — Neşe & Başarı | Büsbüskimki",
+        "tr_meta": "Güneş kartı: neşe, başarı ve aydınlanma üzerine rehber.",
+        "en_title": "The Sun (Güneş) — Joy & Success | Büsbüskimki",
+        "en_meta": "Discover The Sun: joy, clarity and visible achievements."
+      }
+    },
+    {
+      "id": "judgement",
+      "names": {
+        "tr": "Mahkeme",
+        "en": "Judgement",
+        "sr": "Sud"
+      },
+      "short_description": "Yüzleşme, farkındalık ve yeniden doğuş çağrısı.",
+      "meanings": {
+        "upright": {
+          "general": "Geçmişle hesaplaşma, farkındalık ve yeniden doğuş imkânı.",
+          "love": "İlişkide affetme ve yenilenme dönemi.",
+          "career": "Kariyerde tanınma veya yeni yönlenme zamanıdır.",
+          "money": "Mali temizlenme, hesapların düzeltilmesi.",
+          "spiritual": "Ruhsal uyanış, çağrıya cevap verme."
+        },
+        "reversed": {
+          "general": "Geçmişe takılma, karar vermede zorlanma veya inkâr.",
+          "love": "Eski yaralara takılma ve affetmeme.",
+          "career": "Tanınmanın gecikmesi ya da mesleki sorgulama.",
+          "money": "Geçmiş mali hataların bedeliyle yüzleşme.",
+          "spiritual": "Uyanışı reddetme, inisiyatif eksikliği."
+        }
+      },
+      "context": {
+        "mythology": "Hesaplaşma ve çağrı arketipi; ruhsal yeniden doğuş vurgusu.",
+        "celtic_cross": {
+          "future": "Önemli karar ve dönüşüm anı.",
+          "hidden_influences": "Geçmiş eylemlerin sonuçları."
+        }
+      },
+      "cta": {
+        "main": "Yüzleşme & Yeniden Doğuş Okuması — 30 dk",
+        "micro": "1 karta net yön"
+      },
+      "faq": ["Mahkeme kartı ne çağırır?", "Geçmişle nasıl barışırım?"],
+      "related": {
+        "cards": ["justice", "death", "the_hanged_man"],
+        "guides": ["Yeniden Doğuş Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Mahkeme — Yeniden Doğuş & Hesaplaşma | Büsbüskimki",
+        "tr_meta": "Mahkeme kartı: yüzleşme, karar verme ve ruhsal uyanış rehberi.",
+        "en_title": "Judgement (Mahkeme) — Renewal & Reckoning | Büsbüskimki",
+        "en_meta": "Explore Judgement: awakening, reckoning and second chances."
+      }
+    },
+    {
+      "id": "the_world",
+      "names": {
+        "tr": "Dünya",
+        "en": "The World",
+        "sr": "Svet"
+      },
+      "short_description": "Tamamlanma, bütünleşme ve yeni döngüye geçiş.",
+      "meanings": {
+        "upright": {
+          "general": "Bir döngünün tamamlanması; başarı ve bütünlük hissi.",
+          "love": "Olgun, tamamlayıcı ilişki ve ortak hedef uyumu.",
+          "career": "Projelerin bitimi, tanınma ve tatmin.",
+          "money": "Dengeli ve stabil mali sonuçlar.",
+          "spiritual": "Bütünleşme ve ruhsal erişim hissi."
+        },
+        "reversed": {
+          "general": "Yarım kalan işler, tamamlanma korkusu veya gecikme.",
+          "love": "Tamamlanma eksikliği, bağlanma korkusu.",
+          "career": "Projelerin yarıda kalması veya engeller.",
+          "money": "Hedeflere ulaşamama hissi, gecikmeler.",
+          "spiritual": "Tamamlanma korkusu, ruhsal duraklama."
+        }
+      },
+      "context": {
+        "mythology": "Döngülerin tamamlanması ve küresel bütünlük sembolü.",
+        "celtic_cross": {
+          "future": "Kapanış ve yeni başlangıcın eşiği.",
+          "hidden_influences": "Tamamlanmayı destekleyen etkenler."
+        }
+      },
+      "cta": {
+        "main": "Tamamlanma & Sonuç Okuması — 30 dk",
+        "micro": "1 karta sonuç yorumu"
+      },
+      "faq": ["Dünya kartı neyi müjdeler?", "Kapanışı nasıl onurlandırırım?"],
+      "related": {
+        "cards": ["the_sun", "judgement", "the_world"],
+        "guides": ["Tamamlanma & Kutlama Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Dünya — Tamamlanma & Bütünlük | Büsbüskimki",
+        "tr_meta": "Dünya kartı: döngülerin kapanışı, başarı ve bütünleşme rehberi.",
+        "en_title": "The World (Dünya) — Completion & Wholeness | Büsbüskimki",
+        "en_meta": "Discover The World: completion, success and new cycles."
+      }
+    },
+    {
+      "id": "swords_ace",
+      "names": {
+        "tr": "Kılıçlar Ası",
+        "en": "Ace of Swords",
+        "sr": "Mač As"
+      },
+      "short_description": "Netlik, zihinsel açıklık ve gerçeğin kılıcı.",
+      "long_description_tr": "Kılıçlar Ası, zihninin sabah güneşi gibidir — sislerin aralanıp gerçeklerin ortaya çıktığı an. Eğer kafanda düğümler varsa bu kart seni sakinçe, ama kesin bir netliğe çağırır. Sözlerin niyetle birleştiğinde kapılar açılır; bu dönemde dürüst iletişim, açık kararlar ve berrak niyetler seni korur ve güçlendirir.",
+      "keywords": ["netlik", "karar", "zihin", "iletişim", "gerçek"],
+      "meanings": {
+        "upright": {
+          "general": "Yeni fikirlerin doğuşu; zihninde berraklık ve gerçekleri görme zamanı.",
+          "love": "Açık konuşmalar, net sınırlar ve dürüst iletişim fırsatı.",
+          "career": "Kararların netleştiği, fikirlerin takdir gördüğü dönem.",
+          "money": "Mali konularda akılcı adımlar ve berrak planlama.",
+          "spiritual": "Gerçeğe uyanış; zihinsel farkındalığın artması."
+        },
+        "reversed": {
+          "general": "Kafa karışıklığı, karar erteleme veya gerçeği görmezden gelme.",
+          "love": "İletişim kopukluğu, yanlış anlaşılmalar riski.",
+          "career": "Yanlış bilgiye dayalı kararlar, fırsat kaçırma.",
+          "money": "Mali kafa karışıklıkları ve aceleci harcamalar.",
+          "spiritual": "Gerçeği reddetme, içsel sorgulamadan kaçış."
+        }
+      },
+      "context": {
+        "element": "Hava",
+        "celtic_cross": {
+          "future": "Bir fikir ya da gerçek belirginleşecek.",
+          "hidden_influences": "Zihinsel netlik veya yanılsamalar."
+        }
+      },
+      "cta": {
+        "main": "Netlik Okuması — 20 dk",
+        "micro": "1 karta kısa rehber"
+      },
+      "faq": ["Kılıçlar Ası ne zaman çıkar?", "Nasıl daha net karar verilir?"],
+      "related": {
+        "cards": ["swords_two", "justice"],
+        "guides": ["Zihin & Netlik Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Kılıçlar Ası — Netlik & Karar | Büsbüskimki",
+        "tr_meta": "Kılıçlar Ası: zihinsel açıklık, karar ve iletişim rehberi."
+      }
+    },
+    {
+      "id": "swords_two",
+      "names": {
+        "tr": "Kılıçlar İkilisi",
+        "en": "Two of Swords",
+        "sr": "Mač Dvojka"
+      },
+      "short_description": "Kararsızlık, denge arayışı ve kalp–akıl çatışması.",
+      "long_description_tr": "Kılıçlar İkilisi, iki yolun kıyısında oturan yürektir. Gözünü kapatıp dış dünyadan gelen sesleri azaltırken iç sesini duymaya davet eder. Bazen cevap hemen gelmez; bu kart sabırlı bekleyişin, tarafsız analizlerin ve dürüstçe içeriye bakmanın önemini fısıldar. Kalp mi, akıl mı? Her ikisini de dinleyip nazikçe denge kurmayı öğretir.",
+      "keywords": ["kararsızlık", "denge", "içsel seçim", "meditasyon", "beklemek"],
+      "meanings": {
+        "upright": {
+          "general": "İçsel ikilem; akıl ile kalbin farklı yönler söylemesi ve beklemenin hakim olması.",
+          "love": "İlişkide ikilem, karar vermek için zaman gereksinimi.",
+          "career": "İki seçenek arasında kalma ve tarafsız değerlendirme ihtiyacı.",
+          "money": "Maddi konularda aceleci davranmamak, dengeli bakış.",
+          "spiritual": "Sessizlik ve meditasyonla içsel denge arayışı."
+        },
+        "reversed": {
+          "general": "Kararsızlıktan çıkma, gerçeklerle yüzleşme veya kör noktaların açığa çıkması.",
+          "love": "İletişimin açılması veya sorunların görünür olması.",
+          "career": "Ertelemenin son bulması; zor bir seçim zorunluluğu.",
+          "money": "Baskı altında alınan mali kararlar.",
+          "spiritual": "İçsel çatışmaların su yüzüne çıkması."
+        }
+      },
+      "context": {
+        "element": "Hava",
+        "celtic_cross": {
+          "future": "Zor bir seçim anı gelebilir.",
+          "hidden_influences": "Bastırılmış korkular ve dış baskılar."
+        }
+      },
+      "cta": {
+        "main": "Seçim & Netlik Okuması — 20 dk",
+        "micro": "1 soruya hızlı tarot cevabı"
+      },
+      "faq": ["Kılıçlar İkilisi ne demek?", "Beklemek mi yoksa karar vermek mi daha iyi?"],
+      "related": {
+        "cards": ["swords_three", "justice", "the_moon"],
+        "guides": ["Karar Verme Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Kılıçlar İkilisi — Karar & Denge | Büsbüskimki",
+        "tr_meta": "Kılıçlar İkilisi: seçim, denge ve içsel çatışma rehberi."
+      }
+    },
+    {
+      "id": "swords_three",
+      "names": {
+        "tr": "Kılıçlar Üçlüsü",
+        "en": "Three of Swords",
+        "sr": "Mač Trojka"
+      },
+      "short_description": "Kalp kırıklığı, ayrılık ve duygusal arınma.",
+      "long_description_tr": "Kılıçlar Üçlüsü, kalbin derinliklerinde yankılanan bir ağıttır; acıyı inkar etmeden hissedip dönüştürmeyi öğretir. Bu kart, yara almanın insan oluşun parçası olduğunu, aceleyle sarılacak bir pansuman yerine şefkatli bakım ve zaman gerektiğini anlatır. İyileşme uzun olabilir ama içinden çıkan bilgelik seni daha hafif kılar.",
+      "keywords": ["kalp kırıklığı", "ayrılık", "acı", "şifa", "affetme"],
+      "meanings": {
+        "upright": {
+          "general": "Ağrı ve kayıp; itiraflar veya ayrılık sonrasında gelen acı.",
+          "love": "Aldatma, hayal kırıklığı veya ayrılık deneyimi.",
+          "career": "İş ilişkilerinde çatlaklar veya hayal kırıklıkları.",
+          "money": "Beklentilerin boşa çıkması; maddi üzüntü.",
+          "spiritual": "Acı yoluyla öğrenme ve arınma süreci."
+        },
+        "reversed": {
+          "general": "Şifa sürecinin başlaması; affetme ve toparlanma.",
+          "love": "İyileşme, yeniden güven inşa etme ihtimali.",
+          "career": "Zorluk sonrası toparlanma ve yeni yollar.",
+          "money": "Maddi kayıplardan toparlanma.",
+          "spiritual": "Acıyı dönüştürüp ruhsal olarak güçlenme."
+        }
+      },
+      "context": {
+        "element": "Hava",
+        "celtic_cross": {
+          "future": "Duygusal bir temizlenme veya yüzleşme zamanı.",
+          "hidden_influences": "Bastırılmış kalp yaraları."
+        }
+      },
+      "cta": {
+        "main": "Kalp Şifası Okuması — 25 dk",
+        "micro": "1 soruya aşk yorumu"
+      },
+      "faq": ["Kılıçlar Üçlüsü ne ifade eder?", "Acıyı nasıl dönüştürebilirim?"],
+      "related": {
+        "cards": ["swords_two", "death", "the_moon"],
+        "guides": ["Kalp Kırıklığı Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Kılıçlar Üçlüsü — Kalp Kırıklığı & Şifa | Büsbüskimki",
+        "tr_meta": "Kılıçlar Üçlüsü: ayrılık, acı ve iyileşme sürecine dair rehber."
+      }
+    },
+    {
+      "id": "swords_four",
+      "names": {
+        "tr": "Kılıçlar Dörtlüsü",
+        "en": "Four of Swords",
+        "sr": "Mač Četvorka"
+      },
+      "short_description": "Dinlenme, toparlanma ve geri çekilme ihtiyacı.",
+      "long_description_tr": "Kılıçlar Dörtlüsü, savaşın ardından uzanan huzurlu vadidir. Şimdi dinlenme, içe çekilme ve yeniden toplanma zamanın. Bu kart sana izin verir: geride bıraktıklarını yargılamadan dinle, bedenine ve zihnine bakım yap. Yeniden harekete geçmeden önce yenilenmiş ve dengelenmiş olman gerekir.",
+      "keywords": ["dinlenme", "toparlanma", "mola", "yenilenme", "içsel bakım"],
+      "meanings": {
+        "upright": {
+          "general": "Molaya çekilme, içsel yenilenme ve sakinleşme süreci.",
+          "love": "İlişkide nefes alma zamanı; duygusal dinlenme.",
+          "career": "Tükenmişliği önlemek için mola verme ihtiyacı.",
+          "money": "Harcamaları durdurup yeniden planlama fırsatı.",
+          "spiritual": "Meditasyon ve sessizlikle şifa arayışı."
+        },
+        "reversed": {
+          "general": "Dinlenmeyi reddetme; tükenme riski.",
+          "love": "Çekilmenin sona ermesi veya yüzleşmenin gelmesi.",
+          "career": "Fazla yüklenme nedeniyle verim düşüşü.",
+          "money": "Plansız harcamalar nedeniyle baskı.",
+          "spiritual": "Ruhsal tükenmişliğin belirtileri."
+        }
+      },
+      "context": {
+        "element": "Hava",
+        "celtic_cross": {
+          "future": "Toparlanma dönemi geliyor.",
+          "hidden_influences": "İçsel yorgunluk ve dinlenme ihtiyacı."
+        }
+      },
+      "cta": {
+        "main": "Dinlenme & Toparlanma Okuması — 20 dk",
+        "micro": "1 karta şifa mesajı"
+      },
+      "faq": ["Ne kadar dinlenmeliyim?", "Mola vererek ne kazanırım?"],
+      "related": {
+        "cards": ["the_hermit", "swords_ten"],
+        "guides": ["Yenilenme Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Kılıçlar Dörtlüsü — Dinlenme & İyileşme | Büsbüskimki",
+        "tr_meta": "Kılıçlar Dörtlüsü: dinlenme, toparlanma ve zihinsel yenilenme rehberi."
+      }
+    },
+    {
+      "id": "swords_five",
+      "names": {
+        "tr": "Kılıçlar Beşlisi",
+        "en": "Five of Swords",
+        "sr": "Mač Petica"
+      },
+      "short_description": "Çatışma, gurur ve kazanmanın maliyeti.",
+      "long_description_tr": "Kılıçlar Beşlisi, zaferin yalnızlığıdır. Kazanmak istedikçe kaybedilen şeyleri görmeni sağlar: güven, saygı veya barış. Bu kart, kazanma dürtüsünü sorgulatır; bazen en cesur adım çekilip uzlaşmak, bazen de gururu bırakmaktır. Bakış açını yumuşatmak, yara almadan ilerlemek için anahtardır.",
+      "keywords": ["çatışma", "gurur", "uzlaşma", "etik", "düşmanlık"],
+      "meanings": {
+        "upright": {
+          "general": "Anlaşmazlık, egonun öne çıkması ve kazanmanın bazı bedelleri.",
+          "love": "Gurur kaynaklı kavgalar; uzlaşma zorluğu.",
+          "career": "Ofiste çekişmeler, etik sınavları ve gerilim.",
+          "money": "Kısa vadeli kazançların uzun vadeli bedelleri.",
+          "spiritual": "Ego ile yüzleşme ve öğrenme çağrısı."
+        },
+        "reversed": {
+          "general": "Uzlaşma, özür ve hataların fark edilmesiyle barışma.",
+          "love": "İlişkiyi tamir etme ve empati kurma fırsatı.",
+          "career": "Çatışmanın yatışması ve itibar onarımı.",
+          "money": "Zararların telafisi ve hesapların düzeltilmesi.",
+          "spiritual": "Egonun çözümlenmesi ve ders alınması."
+        }
+      },
+      "context": {
+        "element": "Hava",
+        "celtic_cross": {
+          "future": "Çatışma etkileri sürebilir.",
+          "hidden_influences": "Gizli rekabet veya kıskançlık."
+        }
+      },
+      "cta": {
+        "main": "Çatışma Yönetimi Okuması — 25 dk",
+        "micro": "1 karta uzlaşma önerisi"
+      },
+      "faq": ["Çatışmayı nasıl çözerim?", "Gurur ilişkilere nasıl zarar verir?"],
+      "related": {
+        "cards": ["justice", "swords_seven"],
+        "guides": ["Çatışma & Uzlaşma Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Kılıçlar Beşlisi — Çatışma & Gurur | Büsbüskimki",
+        "tr_meta": "Kılıçlar Beşlisi: anlaşmazlık, gurur ve uzlaşma yolları."
+      }
+    },
+    {
+      "id": "swords_six",
+      "names": {
+        "tr": "Kılıçlar Altılısı",
+        "en": "Six of Swords",
+        "sr": "Mač Šestica"
+      },
+      "short_description": "Geçiş, uzaklaşma ve daha sakin kıyılara yönelme.",
+      "long_description_tr": "Kılıçlar Altılısı, yavaş ama istikrarlı bir iyileşme yolculuğudur. Arkanızda bıraktığınız fırtınalı günler sizin öğretmeniniz oldu; şimdi daha dingin sularda ilerleme vakti. Bu kart, cesurca uzaklaşmayı, geçmişin yükünü usulca bırakmayı ve yeni ufuklara doğru nazik bir yolculuğu simgeler.",
+      "keywords": ["geçiş", "uyum", "uzaklaşma", "iyileşme", "yolculuk"],
+      "meanings": {
+        "upright": {
+          "general": "Sorunlardan sakin bir şekilde uzaklaşma; iyileşme yolculuğu.",
+          "love": "Zorlu dönemi geride bırakma veya birlikte iyileşme.",
+          "career": "Toksik ortamdan ayrılma; daha huzurlu bir role geçiş.",
+          "money": "Mali istikrar için temkinli adımlar atma.",
+          "spiritual": "Ritüeller ve yolculuklarla zihinsel hafifleme."
+        },
+        "reversed": {
+          "general": "Kaçış yerine çözüm arama gereği; geçişin tamamlanmaması.",
+          "love": "Sorunları bırakmadan ilerlemeye çalışmak.",
+          "career": "Değişimi erteleme ve aynı sorunları taşıma.",
+          "money": "Geçici kaçışların mali sonuçları.",
+          "spiritual": "Geçişin tamamlanmaması ruhsal yorgunluk yaratır."
+        }
+      },
+      "context": {
+        "element": "Hava",
+        "celtic_cross": {
+          "future": "Daha sakin bir döneme yolculuk.",
+          "hidden_influences": "Geçmiş yüklerin etkileri."
+        }
+      },
+      "cta": {
+        "main": "Geçiş & İyileşme Okuması — 25 dk",
+        "micro": "1 karta yönlendirme"
+      },
+      "faq": ["Nereye doğru ilerliyorum?", "Kaçış mı yoksa çözüm mü?"],
+      "related": {
+        "cards": ["the_hermit", "swords_four"],
+        "guides": ["Geçiş Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Kılıçlar Altılısı — Geçiş & İyileşme | Büsbüskimki",
+        "tr_meta": "Kılıçlar Altılısı: sorunlardan uzaklaşma, iyileşme ve yeni başlangıçlar."
+      }
+    },
+    {
+      "id": "swords_seven",
+      "names": {
+        "tr": "Kılıçlar Yedilisi",
+        "en": "Seven of Swords",
+        "sr": "Mač Sedmica"
+      },
+      "short_description": "Sinsilik, gizli planlar ve stratejik kaçışlar.",
+      "long_description_tr": "Kılıçlar Yedilisi, gölge oyunlarının kartıdır. Ne yapıyorsun, neden gizlisin? Bu kart dürüstlüğün ve stratejinin dengelenmesini ister. Bazen plan yapmak gerekir; ama eğer niyet saklamaksa ya da başkasına zarar verme riski taşıyorsa, gölgeyi aydınlatıp dürüstlüğe dönmenin zamanı gelmiştir. Açıklık özgürleştirir.",
+      "keywords": ["gizlilik", "sinsi", "strateji", "hile", "gölge"],
+      "meanings": {
+        "upright": {
+          "general": "Gizli hamleler, kurnazlık veya dürüst olmayan stratejiler.",
+          "love": "Gizli davranışlar, sırlar veya sadakatsizlik riski.",
+          "career": "Kurnaz manevralar, etik sınırların zorlanması.",
+          "money": "Gizli finansal manevralar veya örtük anlaşmalar.",
+          "spiritual": "Kendi gölgenle yüzleşme zamanı."
+        },
+        "reversed": {
+          "general": "Hilelerin açığa çıkması; dürüstlüğe dönüş fırsatı.",
+          "love": "Sırların keşfi veya itirafın gelmesi.",
+          "career": "Stratejilerin başarısızlığı, açıklık ihtiyacı.",
+          "money": "Gizli anlaşmaların mali bedeli görünür olur.",
+          "spiritual": "Gölgeleri kabul edip dönüştürme şansı."
+        }
+      },
+      "context": {
+        "element": "Hava",
+        "celtic_cross": {
+          "future": "Gizli niyetlerin sonuçları ortaya çıkabilir.",
+          "hidden_influences": "Saklı planlar ve korkular."
+        }
+      },
+      "cta": {
+        "main": "Strateji & Dürüstlük Okuması — 25 dk",
+        "micro": "1 karta dürüstlük rehberi"
+      },
+      "faq": ["Gizli planlar ortaya çıkarsa ne yapmalıyım?", "Hile yerine dürüstlük nasıl seçilir?"],
+      "related": {
+        "cards": ["swords_five", "justice"],
+        "guides": ["Gölge & Strateji Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Kılıçlar Yedilisi — Strateji & Gizem | Büsbüskimki",
+        "tr_meta": "Kılıçlar Yedilisi: gizem, strateji ve dürüstlük rehberi."
+      }
+    },
+    {
+      "id": "swords_eight",
+      "names": {
+        "tr": "Kılıçlar Sekizlisi",
+        "en": "Eight of Swords",
+        "sr": "Mač Osmica"
+      },
+      "short_description": "Algısal kısıtlanma, korkular ve kendini sınırlama.",
+      "long_description_tr": "Kılıçlar Sekizlisi, görünmez zincirlerin ağırlaştırdığı bir andır — bu zincirler çoğunlukla kendi inançlarımızdır. Kart, seni nazikçe uyarır: sınırların çoğu zihninde. Küçük cesaret adımları, bir destek arayışı veya algını değiştirmen büyük fark yaratır. Özgürleşme yolu gördüğünden daha yakındır.",
+      "keywords": ["kısıtlama", "korku", "algı", "özgürleşme", "inanç"],
+      "meanings": {
+        "upright": {
+          "general": "Kendini inançlarınla sınırlama; çıkış yolu görünmez hissi.",
+          "love": "Korkular nedeniyle ilişkiye kapanma.",
+          "career": "Özgüven eksikliği, ilerleyememe hissi.",
+          "money": "Mali kaygılar nedeniyle risk alamama.",
+          "spiritual": "Zihinsel tutsaklıktan kurtulma çağrısı."
+        },
+        "reversed": {
+          "general": "Kısıtlamaların farkına varıp adım atma potansiyeli.",
+          "love": "Korkuların çözülmesi ve ilişkiye açılma.",
+          "career": "Kısıtları aşma ve özgüven kazanma.",
+          "money": "Mali korkuları aşma ve plan yapma.",
+          "spiritual": "Zihinsel özgürleşme ve farkındalık."
+        }
+      },
+      "context": {
+        "element": "Hava",
+        "celtic_cross": {
+          "future": "Algı engellerinin çözülmesi.",
+          "hidden_influences": "Korkuların ve inançların etkisi."
+        }
+      },
+      "cta": {
+        "main": "Sınırları Aşma Okuması — 25 dk",
+        "micro": "1 karta özgürlük mesajı"
+      },
+      "faq": ["Kısıtlamalardan nasıl kurtulurum?", "Korkular gerçek mi?"],
+      "related": {
+        "cards": ["the_hermit", "swords_nine"],
+        "guides": ["Algı & Özgürleşme Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Kılıçlar Sekizlisi — Kısıtlama & Özgürleşme | Büsbüskimki",
+        "tr_meta": "Kılıçlar Sekizlisi: algısal kısıtlamalar, korkular ve özgürleşme yolları."
+      }
+    },
+    {
+      "id": "swords_nine",
+      "names": {
+        "tr": "Kılıçlar Dokuzlusu",
+        "en": "Nine of Swords",
+        "sr": "Mač Devetka"
+      },
+      "short_description": "Kaygı, pişmanlık ve gece uykularını bozan düşünceler.",
+      "long_description_tr": "Kılıçlar Dokuzlusu, gecenin uzun sessizliğinde zihnini kuşatan fırtınadır. Endişeler seni çepeçevre sarıyorsa bu kart destek aramanın, düşünceleri paylaşmanın ve ritüellerle sakinleşmenin önemini vurgular. Yalnız değilsin — düşüncelerle başa çıkmak için adım atmak, gecenin aydınlanmasına yardımcı olur.",
+      "keywords": ["kaygı", "pişmanlık", "uykusuzluk", "destek", "endişe"],
+      "meanings": {
+        "upright": {
+          "general": "Derin kaygı, suçluluk duyguları ve zihinsel baskı.",
+          "love": "Endişe ve felaketleştirme ilişkiyi zedeleyebilir.",
+          "career": "İş kaygıları ve tükenmişlik belirtileri.",
+          "money": "Mali endişelerle uykunun kaçması.",
+          "spiritual": "Korkularla yüzleşme ve destek arama ihtiyacı."
+        },
+        "reversed": {
+          "general": "Kaygıların azalması, destekle iyileşme işareti.",
+          "love": "Endişelerin paylaşılması ve rahatlama.",
+          "career": "Destek arayarak durumu düzeltme fırsatı.",
+          "money": "Pratik çözümlerle mali kaygının azalması.",
+          "spiritual": "Ritüel ve destekle ruhsal rahatlama."
+        }
+      },
+      "context": {
+        "element": "Hava",
+        "celtic_cross": {
+          "future": "Kaygıların zirve yapması veya azalması.",
+          "hidden_influences": "Bilinçaltı korkular."
+        }
+      },
+      "cta": {
+        "main": "Kaygı & Şifa Okuması — 30 dk",
+        "micro": "1 karta rahatlama mesajı"
+      },
+      "faq": ["Kaygıyla nasıl baş ederim?", "Uykusuzluk neyi gösterir?"],
+      "related": {
+        "cards": ["swords_ten", "the_hermit"],
+        "guides": ["Kaygı Yönetimi Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Kılıçlar Dokuzlusu — Kaygı & Gece Düşünceleri | Büsbüskimki",
+        "tr_meta": "Kılıçlar Dokuzlusu: kaygı, pişmanlık ve destek yolları."
+      }
+    },
+    {
+      "id": "swords_ten",
+      "names": {
+        "tr": "Kılıçlar Onlusu",
+        "en": "Ten of Swords",
+        "sr": "Mač Desetka"
+      },
+      "short_description": "Çöküş, döngünün acılı sonu ve nihai teslimiyet.",
+      "long_description_tr": "Kılıçlar Onlusu, bir döngünün keskin sonunu ilân eder; belki planların parçalandı, belki güvenin sarsıldı. Bu kartın sert ama net mesajı var: artık altın toprak arıyorsun. Bu en dip noktadır ama aynı zamanda harekete geçmeden önce teslimiyetin ve temiz başlangıcın eşiğidir. İyileşme zamanla, adım adım gelir.",
+      "keywords": ["çöküş", "son", "teslimiyet", "yıkım", "yeniden doğuş"],
+      "meanings": {
+        "upright": {
+          "general": "Derin bir sonlanma; en dipte olma hissi ve zorunlu kapanış.",
+          "love": "İlişkinin kesin sonu veya ihanetin açığa çıkması.",
+          "career": "Projelerin çöküşü, işten ayrılma ya da büyük kayıplar.",
+          "money": "Maddi daralma veya kayıpların zirve noktası.",
+          "spiritual": "Yıkımdan sonra gelecek yeniden doğuşun eşiği."
+        },
+        "reversed": {
+          "general": "İyileşme, toparlanma ve travma sonrası yeniden yapılanma.",
+          "love": "Kapanış sonrası yeniden inşa imkânı.",
+          "career": "Yeniden planlama ve toparlanma süreçleri.",
+          "money": "Zarar telafisi ve finansal düzenleme fırsatı.",
+          "spiritual": "Yıkımın ardından ruhsal yeniden doğuş."
+        }
+      },
+      "context": {
+        "element": "Hava",
+        "celtic_cross": {
+          "future": "Zorlu bir son veya radikal değişim yakın.",
+          "hidden_influences": "Birikmiş baskıların sonucu."
+        }
+      },
+      "cta": {
+        "main": "Çöküş & Yeniden Başlama Okuması — 30 dk",
+        "micro": "1 karta toparlanma rehberi"
+      },
+      "faq": ["Bu bitiş yeni başlangıç mı?", "Travma sonrası ne yapmalıyım?"],
+      "related": {
+        "cards": ["death", "the_hermit"],
+        "guides": ["Yıkım & Yeniden İnşa Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Kılıçlar Onlusu — Çöküş & Yeniden Doğuş | Büsbüskimki",
+        "tr_meta": "Kılıçlar Onlusu: sonlanma, teslimiyet ve toparlanma rehberi."
+      }
+    },
+    {
+      "id": "swords_page",
+      "names": {
+        "tr": "Kılıçlar Valesi",
+        "en": "Page of Swords",
+        "sr": "Paž Mačeva"
+      },
+      "short_description": "Merak, haberci zihin ve sorgulayan enerji.",
+      "long_description_tr": "Kılıçlar Valesi taze bir merak çiçeğidir: yeni sorular, haberler ve öğrenmeler getirir. Bu enerjinin yanında cesaretle soru sormak ve yüzeyin altına bakmak vardır. Eğer bir mesaj bekliyorsan ya da araştırma gerektiren bir kapı aralıksa, bu kart öğrenmeye açık kalıp bilgiyi nazikçe sahiplenmeni teşvik eder.",
+      "keywords": ["haber", "merak", "öğrenme", "soru sorma", "haberci"],
+      "meanings": {
+        "upright": {
+          "general": "Meraklı zihin, yeni haberler ve öğrenmeye açık bir dönem.",
+          "love": "Hafif, meraklı iletişim; konuşmalarla ilerleme.",
+          "career": "Araştırma, bilgi toplama ve yeni fikirler.",
+          "money": "Bilgiyle açılan finansal fırsatlar.",
+          "spiritual": "Soru sorma ve zihinsel uyanış."
+        },
+        "reversed": {
+          "general": "Dedikodu, yüzeysel bilgi veya aceleci çıkarımlar.",
+          "love": "Yanlış haberler veya dedikodu kaynaklı sorunlar.",
+          "career": "Yüzeysel bilgiyle hareket etme riski.",
+          "money": "Hızlı kararların maliyeti olabilir.",
+          "spiritual": "Sorgulamadan kabullenme eğilimi."
+        }
+      },
+      "context": {
+        "element": "Hava",
+        "celtic_cross": {
+          "future": "Yeni bilgiler ya da haberler gelebilir.",
+          "hidden_influences": "Merak ve öğrenme dürtüsü."
+        }
+      },
+      "cta": {
+        "main": "Haber & Öğrenme Okuması — 20 dk",
+        "micro": "1 karta haber yorumu"
+      },
+      "faq": ["Yeni haber beklemeli miyim?", "Merakı nasıl yönlendiririm?"],
+      "related": {
+        "cards": ["swords_two", "swords_knight"],
+        "guides": ["Haber & Öğrenme Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Kılıçlar Valesi — Haberci & Merak | Büsbüskimki",
+        "tr_meta": "Kılıçlar Valesi: merak, haber ve zihinsel keşif rehberi."
+      }
+    },
+    {
+      "id": "swords_knight",
+      "names": {
+        "tr": "Kılıçlar Şövalyesi",
+        "en": "Knight of Swords",
+        "sr": "Vitez Mačeva"
+      },
+      "short_description": "Hızlı eylem, iddialı adımlar ve aceleci cesaret.",
+      "long_description_tr": "Kılıçlar Şövalyesi rüzgâr gibi gelir: hızlı, iddialı ve bazı zamanlar düşüncesizce. Bu kart, harekete geçmeye çağırır fakat nazik bir uyarı da verir—acele kararların sonuçlarını önceden hayal et. Cesaretin takdire şayan; ama aklın rehberliğini elinden bırakma. Dengeyi yakalarsan güçlü bir ivme elde edersin.",
+      "keywords": ["hız", "cesaret", "acelecilt", "eylem", "karar"],
+      "meanings": {
+        "upright": {
+          "general": "Hızlı ilerleme, güçlü fikirler ve atak eylemler.",
+          "love": "Ani girişimler, tutkulu fakat aceleci yaklaşımlar.",
+          "career": "Atak projeler, hızlı kararlar ve agresif ilerleme.",
+          "money": "Hızlı teklifler; dikkat gerektiren riskler.",
+          "spiritual": "Ani uyanışlar ve kararlılık anları."
+        },
+        "reversed": {
+          "general": "Acelecilik, düşünmeden hareket etme ve çatışmalara yol açma.",
+          "love": "Düşünmeden yapılan hamleler ilişkiye zarar verebilir.",
+          "career": "Acele kararların hataya dönüşmesi olasılığı.",
+          "money": "Hızlı harcamalar veya riskli yatırımlar tehlikeli olabilir.",
+          "spiritual": "Sabırsız, yüzeysel uyanışlar."
+        }
+      },
+      "context": {
+        "element": "Hava",
+        "celtic_cross": {
+          "future": "Ani gelişmeler ve hızlı adımlar gelebilir.",
+          "hidden_influences": "Aceleciliğin etkisi."
+        }
+      },
+      "cta": {
+        "main": "Hızlı Eylem Okuması — 20 dk",
+        "micro": "1 karta acil yön"
+      },
+      "faq": ["Aceleci kararlar zarar verir mi?", "Cesareti nasıl dengelerim?"],
+      "related": {
+        "cards": ["the_chariot", "swords_page"],
+        "guides": ["Hız & Denge Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Kılıçlar Şövalyesi — Hız & Cesaret | Büsbüskimki",
+        "tr_meta": "Kılıçlar Şövalyesi: hızlı hareket, risk ve cesaret dengesi rehberi."
+      }
+    },
+    {
+      "id": "swords_queen",
+      "names": {
+        "tr": "Kılıçlar Kraliçesi",
+        "en": "Queen of Swords",
+        "sr": "Kraljica Mačeva"
+      },
+      "short_description": "Netlik, tarafsız zeka ve adil sınırlar koyma yeteneği.",
+      "long_description_tr": "Kılıçlar Kraliçesi, keskin ama şefkatlidir. Sözlerinin kılıcı adildir; gereksiz acı vermeden hakikati söyler. Bu kart, duygularla aklı dengelemenin, sınır koymanın ve empatiyle doğruları paylaşmanın önemini hatırlatır. Güçlü bir duruşun var — onu sevgiyle tahkim et.",
+      "keywords": ["netlik", "sınırlar", "adillik", "analiz", "objektiflik"],
+      "meanings": {
+        "upright": {
+          "general": "Keskin zihin, adalet duygusu ve net sınırlar.",
+          "love": "Açık, objektif iletişim; zaman zaman mesafeli şefkat.",
+          "career": "Analitik güç, objektif değerlendirme ve liderlik.",
+          "money": "Akılcı mali kararlar ve mantıklı planlama.",
+          "spiritual": "Aydınlanmış farkındalık ve netlik."
+        },
+        "reversed": {
+          "general": "Soğukluk, aşırı eleştiri veya empati eksikliği.",
+          "love": "Duygusal mesafe veya keskin eleştirilerin zararları.",
+          "career": "Fazla mesafeli liderlik; iletişim kopukluğu.",
+          "money": "Aşırı ihtiyat veya sert mali yaklaşımlar.",
+          "spiritual": "Sadece akılla hareket etme, sezgiyi ihmal etme."
+        }
+      },
+      "context": {
+        "element": "Hava",
+        "celtic_cross": {
+          "future": "Nihai netlik ve adil değerlendirmeler.",
+          "hidden_influences": "Soğukkanlı akıl ve mantık."
+        }
+      },
+      "cta": {
+        "main": "Netlik & Sınır Okuması — 25 dk",
+        "micro": "1 karta sınır rehberi"
+      },
+      "faq": ["Nasıl daha net olabilirim?", "Soğukluğu nasıl yumuşatırım?"],
+      "related": {
+        "cards": ["justice", "swords_king"],
+        "guides": ["Netlik & Sınır Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Kılıçlar Kraliçesi — Netlik & Adalet | Büsbüskimki",
+        "tr_meta": "Kılıçlar Kraliçesi: objektiflik, adalet ve net sınırlar rehberi."
+      }
+    },
+    {
+      "id": "swords_king",
+      "names": {
+        "tr": "Kılıçlar Kralı",
+        "en": "King of Swords",
+        "sr": "Kral Mačeva"
+      },
+      "short_description": "Stratejik zeka, otorite ve adaletin temsilcisi.",
+      "long_description_tr": "Kılıçlar Kralı, aklın ve etik sorumluluğun güçlü bir temsilcisidir. Otoriten dengeli, kararların adil ve mantıklı olmalı. Bu kart, liderlik rollerinde nesnel olmayı, hukuki konuları dikkatle yürütmeyi ve başkalarına rehberlik ederken merhameti unutmamayı öğütler. Sözün kılıcı adalet için kullanıldığında en güçlü olur.",
+      "keywords": ["otorite", "strateji", "adil karar", "hukuk", "liderlik"],
+      "meanings": {
+        "upright": {
+          "general": "Mantıklı liderlik, stratejik kararlar ve adalet duygusu.",
+          "love": "Adil ve net ilişkiler; zaman zaman mesafeli ama dengeli.",
+          "career": "Hukuki veya entelektüel otorite, stratejik yönlendirme.",
+          "money": "Mantıklı ve disiplinli finansal yönetim.",
+          "spiritual": "Akıl ve disiplinle ruhsal yolda ilerleme."
+        },
+        "reversed": {
+          "general": "Zorlayıcı otorite, fikir dikliği veya soğuk davranış.",
+          "love": "Duygusal mesafe ve şefkat eksikliği.",
+          "career": "Tiranik liderlik veya adaletsiz uygulamalar.",
+          "money": "Sert mali kararlar ve insanı göz ardı eden stratejiler.",
+          "spiritual": "Aşırı rasyonalite, empati yoksunluğu."
+        }
+      },
+      "context": {
+        "element": "Hava",
+        "celtic_cross": {
+          "future": "Liderlik ve adaletin öne çıkması.",
+          "hidden_influences": "Akılcı mantığın etkisi."
+        }
+      },
+      "cta": {
+        "main": "Liderlik & Strateji Okuması — 30 dk",
+        "micro": "1 karta strateji"
+      },
+      "faq": ["Adil liderlik nasıl olur?", "Soğukluğu nasıl dengelerim?"],
+      "related": {
+        "cards": ["justice", "the_emperor"],
+        "guides": ["Liderlik & Strateji Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Kılıçlar Kralı — Otorite & Akıl | Büsbüskimki",
+        "tr_meta": "Kılıçlar Kralı: strateji, adalet ve liderlik rehberi."
+      }
+    },
+    {
+      "id": "pentacles_ace",
+      "names": {
+        "tr": "Tılsımlar Ası",
+        "en": "Ace of Pentacles",
+        "sr": "Zlatnik As"
+      },
+      "short_description": "Yeni maddi fırsatlar, somut başlangıçlar ve bolluk tohumu.",
+      "long_description_tr": "Tılsımlar Ası, cebinde parlayan bir tohum gibidir — toprağa atıldığında somut gerçekliklere dönüşecek bir potansiyeli müjdeler. Bu kart, yeni bir iş kapısı, beklenmedik bir kazanç veya güven veren pratik bir başlangıç getirebilir. Nazikçe bak, planla ve adım adım eyleme geçir; bolluk sabırla yeşerecektir.",
+      "keywords": ["fırsat", "maddi başlangıç", "bolluk", "yatırım", "güven"],
+      "app_brief": "Yeni maddi fırsat",
+      "meanings": {
+        "upright": {
+          "general": "Somut fırsatlar, yeni finansal başlangıçlar ve güven inşa etme enerjisi.",
+          "love": "İstikrar arayışı; ilişkide somut adımlar atılabilir.",
+          "career": "Yeni iş imkânı, maaş artışı veya somut teklif.",
+          "money": "Beklenmedik gelir, yatırım başlangıcı veya mali stabilite işareti.",
+          "spiritual": "Dünyevi kaynaklarla uyum, beden ve ruhun dengelenmesi."
+        },
+        "reversed": {
+          "general": "Fırsatları kaçırma, başlangıçlarda gecikme ya da pratik eksiklikler.",
+          "love": "Somut adımların ertelenmesi; güven sorunları.",
+          "career": "Tekliflerin iptali veya projelerin gecikmesi.",
+          "money": "Beklenen gelirin gelmemesi veya yatırımların ertelenmesi.",
+          "spiritual": "Dünyevi kaygıların ruhsal dengeyi gölgelemesi."
+        }
+      },
+      "context": {
+        "element": "Toprak",
+        "celtic_cross": {
+          "future": "Maddi fırsatlar kapınızı çalabilir.",
+          "hidden_influences": "Pratik hazırlık veya kaynak eksikliği."
+        }
+      },
+      "cta": {
+        "main": "Maddi Fırsat Okuması — 25 dk",
+        "micro": "1 karta finansal yol gösteri"
+      },
+      "faq": ["Tılsımlar Ası neyi müjdeler?", "Yeni iş teklifi nasıl yorumlanır?"],
+      "related": {
+        "cards": ["Tılsımlar İkilisi", "İmparatoriçe"],
+        "guides": ["Bolluk ve Yatırım Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Tılsımlar Ası — Yeni Maddi Fırsatlar | Büsbüskimki",
+        "tr_meta": "Tılsımlar Ası: yatırım, gelir ve somut başlangıçlar için rehber.",
+        "en_title": "Ace of Pentacles — New Material Opportunities | Büsbüskimki",
+        "en_meta": "Ace of Pentacles: discover new financial beginnings, practical opportunities, and how to plant seeds for lasting abundance."
+      }
+    },
+    {
+      "id": "pentacles_two",
+      "names": {
+        "tr": "Tılsımlar İkilisi",
+        "en": "Two of Pentacles",
+        "sr": "Zlatnik Dvojka"
+      },
+      "short_description": "Denge kurma, kaynakları yönetme ve çoklu sorumluluklarla başa çıkma.",
+      "long_description_tr": "Tılsımlar İkilisi, elindeki tabakaları nazikçe çevirmeyi bilen bir ustadır. Hayatın pratik alanlarında denge kurmak, gelir–gider akışını takip etmek ve esnek olmak önemlidir. Bu kart, çoklu görevleri dengede tutma, öncelik belirleme ve hafif esneklikle ilerleme çağrısıdır.",
+      "keywords": ["denge", "yönetim", "öncelik", "esneklik", "kaynak"],
+      "app_brief": "Kaynakları dengele",
+      "meanings": {
+        "upright": {
+          "general": "Kaynakları dengeleme, çoklu işlerin yönetimi ve pratik adaptasyon.",
+          "love": "İlişkide zaman/enerji dengesi; denge kurma gereği.",
+          "career": "Çoklu projeler; zaman yönetimi becerileri öne çıkıyor.",
+          "money": "Bütçe dengesi, nakit akışı yönetimi.",
+          "spiritual": "Günlük ritüeller ve pratik spiritüel uygulamalar."
+        },
+        "reversed": {
+          "general": "Denge kaybı, savrulma veya sorumluluk yorgunluğu.",
+          "love": "İlgide dalgalanma; önceliklerin çatışması.",
+          "career": "İş yükünün kontrol dışına çıkması; acele hatalar.",
+          "money": "Nakit akışı sorunları veya denge kuramama.",
+          "spiritual": "Günlük ritüellerin ihmal edilmesi."
+        }
+      },
+      "context": {
+        "element": "Toprak",
+        "celtic_cross": {
+          "future": "Kaynak yönetimi öne çıkacak.",
+          "hidden_influences": "Zamanlama ve esneklik ihtiyacı."
+        }
+      },
+      "cta": {
+        "main": "Bütçe & Öncelik Okuması — 20 dk",
+        "micro": "1 karta pratik öneri"
+      },
+      "faq": ["Nasıl denge kurarım?", "Çoklu projeyi nasıl yönetirim?"],
+      "related": {
+        "cards": ["Tılsımlar Üçlüsü", "Denge"],
+        "guides": ["Kaynak Yönetimi Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Tılsımlar İkilisi — Denge & Yönetim | Büsbüskimki",
+        "tr_meta": "Tılsımlar İkilisi: bütçe, zaman yönetimi ve denge rehberi.",
+        "en_title": "Two of Pentacles — Balance & Resource Management | Büsbüskimki",
+        "en_meta": "Two of Pentacles: practical guidance for balancing resources, managing multiple responsibilities, and maintaining financial flow."
+      }
+    },
+    {
+      "id": "pentacles_three",
+      "names": {
+        "tr": "Tılsımlar Üçlüsü",
+        "en": "Three of Pentacles",
+        "sr": "Zlatnik Trojka"
+      },
+      "short_description": "Usta işi, ekip çalışması ve yeteneklerin değer görmesi.",
+      "long_description_tr": "Tılsımlar Üçlüsü, emeğin değer gördüğü bir atölyedir. Yeteneklerini sergilediğin, ekip içinde uyumla ilerlediğin ve alın terinin ödüllendirildiği bir süreç gelir. Bu kart, iyi bir plan, iş birliği ve ustalıkla somut sonuçlar üretme rehberidir.",
+      "keywords": ["işbirliği", "ustalık", "kalite", "takdir", "projeler"],
+      "app_brief": "Ustalık ve ekip işi",
+      "meanings": {
+        "upright": {
+          "general": "Ekip çalışması, ustalık ve somut projelerde takdir görme.",
+          "love": "Ortak projeler ve ilişkide birlikte inşa etme enerjisi.",
+          "career": "Takdir edilen beceriler, iş birliğiyle yükselme.",
+          "money": "Proje bazlı kazanç ve emeğin karşılığını alma.",
+          "spiritual": "Rutin çalışmalarla ruhsal yetkinlik kazanma."
+        },
+        "reversed": {
+          "general": "Kalitesiz iş, uyumsuz ekip veya takdir eksikliği.",
+          "love": "Ortaklıkta eşitsizlik veya emek paylaşımında sorun.",
+          "career": "Yeteneklerin görünmemesi, takdir eksikliği.",
+          "money": "Projeden beklenen gelirin gelmemesi.",
+          "spiritual": "Ritüel ve disiplinin boş bırakılması."
+        }
+      },
+      "context": {
+        "element": "Toprak",
+        "celtic_cross": {
+          "future": "Ekip çalışması ve proje başarıları bekleniyor.",
+          "hidden_influences": "Yetkinlik ve dış değerlendirmeler."
+        }
+      },
+      "cta": {
+        "main": "Proje & İşbirliği Okuması — 25 dk",
+        "micro": "1 karta ekip önerisi"
+      },
+      "faq": ["Emekim karşılığını alacak mı?", "Ortak çalışmada nasıl uyum sağlanır?"],
+      "related": {
+        "cards": ["Tılsımlar İkilisi", "İmparator"],
+        "guides": ["Ekip & Ustalık Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Tılsımlar Üçlüsü — Ustalık & İşbirliği | Büsbüskimki",
+        "tr_meta": "Tılsımlar Üçlüsü: ekip çalışması, proje başarısı ve yetenek rehberi.",
+        "en_title": "Three of Pentacles — Craftsmanship & Collaboration | Büsbüskimki",
+        "en_meta": "Three of Pentacles: teamwork, skill recognition, and building tangible results through collaborative effort."
+      }
+    },
+    {
+      "id": "pentacles_four",
+      "names": {
+        "tr": "Tılsımlar Dörtlüsü",
+        "en": "Four of Pentacles",
+        "sr": "Zlatnik Četvorka"
+      },
+      "short_description": "Sahiplenme, maddi güven arayışı ve tutuculuk.",
+      "long_description_tr": "Tılsımlar Dörtlüsü, elde tutma isteğinin bankadaki sakin yüzüdür. Güvende kalma arzusu bazen sıkı tutuşa dönüşebilir; paylaşmayı unutmak veya riskten kaçınmak büyümeyi engelleyebilir. Bu kart, güvenliği korurken cömertliğin ve akışa izin vermenin dengelenmesini hatırlatır.",
+      "keywords": ["sahiplenme", "güven", "tasarruf", "tutuculuk", "koruma"],
+      "app_brief": "Mülkiyet ve koruma",
+      "meanings": {
+        "upright": {
+          "general": "Maddi güven arayışı, tasarruf ve sahiplenme eğilimi.",
+          "love": "Koruyucu tutum; bazen duygusal mesafe yaratabilir.",
+          "career": "Mali tutumluluk, kaynak kontrolü ve güvenlik odaklı kararlar.",
+          "money": "Birikim yapma, tasarruf veya mülkiyete odaklanma.",
+          "spiritual": "Dünyevi kaynaklara sıkı bağlanma ve kontrol ihtiyacı."
+        },
+        "reversed": {
+          "general": "Açılma, paylaşma veya tutuculuğun yumuşaması.",
+          "love": "Koruyucu duruşun gevşemesi; paylaşım başlaması.",
+          "career": "Kaynakları serbest bırakma veya yatırım yapma zamanı.",
+          "money": "Maddi blokların çözülmesi, kaynak akışına izin verme.",
+          "spiritual": "Güvenlik yanılsısının çözülmesi."
+        }
+      },
+      "context": {
+        "element": "Toprak",
+        "celtic_cross": {
+          "future": "Mülkiyet ve güven konuları gündeme gelebilir.",
+          "hidden_influences": "Güvenlik endişeleri ve tutumlar."
+        }
+      },
+      "cta": {
+        "main": "Mülkiyet & Güven Okuması — 20 dk",
+        "micro": "1 karta tasarruf önerisi"
+      },
+      "faq": ["Biriktirmek mi paylaşmak mı daha iyi?", "Güvenlik hissi nasıl sağlanır?"],
+      "related": {
+        "cards": ["Tılsımlar Beşlisi", "İmparator"],
+        "guides": ["Mülkiyet & Güven Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Tılsımlar Dörtlüsü — Tasarruf & Güven | Büsbüskimki",
+        "tr_meta": "Tılsımlar Dörtlüsü: mülkiyet, tasarruf ve güven arayışı rehberi.",
+        "en_title": "Four of Pentacles — Possession & Security | Büsbüskimki",
+        "en_meta": "Four of Pentacles: understand tendencies to hold tightly, financial conservatism, and how to balance security with generosity."
+      }
+    },
+    {
+      "id": "pentacles_five",
+      "names": {
+        "tr": "Tılsımlar Beşlisi",
+        "en": "Five of Pentacles",
+        "sr": "Zlatnik Petica"
+      },
+      "short_description": "Kıtlık, dışlanma ve maddi zorlukların gölgesi.",
+      "long_description_tr": "Tılsımlar Beşlisi, soğuk bir kış gecesinde yoldan çıkmış bir yolcudur; kıtlık hissi ve destek eksikliği ağır gelir. Bu kart zor zamanları, yardıma ihtiyaç duyma halini ve dayanışmanın önemini hatırlatır. Gurur yerine alçakgönüllülük ve destek aramak çözümün kapısını aralar.",
+      "keywords": ["kıtlık", "dışlanma", "maddi zorluk", "destek", "süreç"],
+      "app_brief": "Kıtlık ve destek",
+      "meanings": {
+        "upright": {
+          "general": "Maddi sıkıntılar, dışlanma hissi veya kaynak eksikliği.",
+          "love": "İlişkide yalnızlık veya güven eksikliği duygusu.",
+          "career": "İş kaybı, mali zorluklar veya istikrar kaybı.",
+          "money": "Borçlanma, gelir düşüşü veya beklenmedik harcamalar.",
+          "spiritual": "Kıtlık zihniyetiyle yüzleşme ve dayanışma arayışı."
+        },
+        "reversed": {
+          "general": "Destek bulma, zorlukları aşma ve iyileşme belirtileri.",
+          "love": "İlişkte destek ve yeniden bağ kurulması.",
+          "career": "Krizden çıkış, yardım alma veya yeni kaynaklar.",
+          "money": "Maddi toparlanma ve planlama ile düzeltme.",
+          "spiritual": "Kıtlık inancının çözülmesi ve bolluğa açılma."
+        }
+      },
+      "context": {
+        "element": "Toprak",
+        "celtic_cross": {
+          "future": "Maddi zorluklar test edebilir.",
+          "hidden_influences": "Yetersizlik hissi veya dış desteğin eksikliği."
+        }
+      },
+      "cta": {
+        "main": "Maddi Destek Okuması — 30 dk",
+        "micro": "1 karta toparlanma rehberi"
+      },
+      "faq": ["Kıtlık psikolojisi nasıl aşılır?", "Yardım istemek yanlış mı?"],
+      "related": {
+        "cards": ["Tılsımlar Dörtlüsü", "Aziz"],
+        "guides": ["Kıtlık & Dayanışma Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Tılsımlar Beşlisi — Kıtlık & Destek | Büsbüskimki",
+        "tr_meta": "Tılsımlar Beşlisi: maddi zorluklar, dışlanma ve destek rehberi.",
+        "en_title": "Five of Pentacles — Hardship & Support | Büsbüskimki",
+        "en_meta": "Five of Pentacles: guidance for scarcity, seeking help, and pathways from hardship to renewed stability."
+      }
+    },
+    {
+      "id": "pentacles_six",
+      "names": {
+        "tr": "Tılsımlar Altılısı",
+        "en": "Six of Pentacles",
+        "sr": "Zlatnik Šestica"
+      },
+      "short_description": "Paylaşma, cömertlik ve adil denge kurulması.",
+      "long_description_tr": "Tılsımlar Altılısı, bereketin paylaşılmasının huzurunu gösterir. Cömertlik veren de alan da dengede olduğunda toplum güçlenir. Bu kart, bağışlama, yardım alma ya da adil paylaşımın önemini vurgular. Kaynak akışını açmak için cömertçe ve onurlandırarak hareket et.",
+      "keywords": ["cömertlik", "paylaşma", "denge", "yardım", "adalet"],
+      "app_brief": "Cömertlik ve denge",
+      "meanings": {
+        "upright": {
+          "general": "Maddi denge, yardım etme veya yardım alma ve adil paylaşım.",
+          "love": "İlişkide destek verme veya alma dengesi.",
+          "career": "Bağışlama, ödül veya destek ile ilerleme.",
+          "money": "Bağış/ödeme dengesi; kredi veya yardım gelebilir.",
+          "spiritual": "Cömertlikle ruhsal tatmin ve topluluk hissi."
+        },
+        "reversed": {
+          "general": "Dengesiz yardım, istismar veya cömertlik eksikliği.",
+          "love": "Tek taraflı verme veya alma durumları.",
+          "career": "Kaynakların adaletsiz dağılımı veya suistimal.",
+          "money": "Yardımın kötüye kullanılması veya beklentiler.",
+          "spiritual": "Cömertliğin karşılığını beklemekten uzaklaşma ihtiyacı."
+        }
+      },
+      "context": {
+        "element": "Toprak",
+        "celtic_cross": {
+          "future": "Cömert davranışlar ve destek akışı görülebilir.",
+          "hidden_influences": "Toplumsal denge ve beklentiler."
+        }
+      },
+      "cta": {
+        "main": "Paylaşma & Destek Okuması — 25 dk",
+        "micro": "1 karta cömertlik yönlendirmesi"
+      },
+      "faq": ["Yardım istemek ayıp mı?", "Cömertlik nasıl dengelenir?"],
+      "related": {
+        "cards": ["Tılsımlar Dörtlüsü", "Adalet"],
+        "guides": ["Cömertlik & Denge Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Tılsımlar Altılısı — Paylaşma & Cömertlik | Büsbüskimki",
+        "tr_meta": "Tılsımlar Altılısı: paylaşma, yardım ve adil kaynak dağılımı rehberi.",
+        "en_title": "Six of Pentacles — Generosity & Balance | Büsbüskimki",
+        "en_meta": "Six of Pentacles: insight on giving and receiving, equitable support, and restoring balance through generosity."
+      }
+    },
+    {
+      "id": "pentacles_seven",
+      "names": {
+        "tr": "Tılsımlar Yedilisi",
+        "en": "Seven of Pentacles",
+        "sr": "Zlatnik Sedmica"
+      },
+      "short_description": "Sabır, değerlendirme ve uzun vadeli emeğin meyvelerini bekleme.",
+      "long_description_tr": "Tılsımlar Yedilisi, emek verdiğin tarlaya sabırla bakandır. Hemen hasat yok; yatırımın sonuçları zamanla gelir. Bu kart, stratejik sabır, yeniden değerlendirme ve gerektiğinde yön değiştirme öğütler. Eğer sabreder ve akıllıca sulamaya devam edersen verim seni bekler.",
+      "keywords": ["sabır", "değerlendirme", "yatırım", "uzun vadeli", "emek"],
+      "app_brief": "Sabırla yatırım yap",
+      "meanings": {
+        "upright": {
+          "general": "Sabırla bekleme, değerlendirme ve uzun vadeli planlama.",
+          "love": "İlişkide emek ve sabır gereği; yavaş gelişen bağlar.",
+          "career": "Yatırımın meyve vereceği bir süreç, sabırlı çalışma.",
+          "money": "Uzun vadeli yatırımlar ve getirilerin beklenmesi.",
+          "spiritual": "Zamana bırakma ve sürecin derslerini alabilme."
+        },
+        "reversed": {
+          "general": "Sabırsızlık, yatırımın sorgulanması veya verimsizlik hissi.",
+          "love": "Beklentilerin karşılanmaması ve hayal kırıklığı.",
+          "career": "Yatırımın geri dönmemesi; yeniden strateji gerekebilir.",
+          "money": "Uzun vadeli planların aksaması veya acele harcamalar.",
+          "spiritual": "Süreçten kaçma, kısa yoldan sonuç bekleme."
+        }
+      },
+      "context": {
+        "element": "Toprak",
+        "celtic_cross": {
+          "future": "Uzun vadeli planların gözden geçirilmesi.",
+          "hidden_influences": "Sabır ve çalışma birikimi."
+        }
+      },
+      "cta": {
+        "main": "Yatırım & Sabır Okuması — 30 dk",
+        "micro": "1 karta uzun vadeli öneri"
+      },
+      "faq": ["Beklemek doğru mu?", "Yatırım ne zaman geri döner?"],
+      "related": {
+        "cards": ["Tılsımlar Üçlüsü", "Aziz"],
+        "guides": ["Sabır & Yatırım Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Tılsımlar Yedilisi — Sabır & Yatırım | Büsbüskimki",
+        "tr_meta": "Tılsımlar Yedilisi: uzun vadeli planlama, sabır ve yatırımlar hakkında rehber.",
+        "en_title": "Seven of Pentacles — Patience & Investment | Büsbüskimki",
+        "en_meta": "Seven of Pentacles: guidance on patience, evaluation of your investments, and nurturing long-term returns."
+      }
+    },
+    {
+      "id": "pentacles_eight",
+      "names": {
+        "tr": "Tılsımlar Sekizlisi",
+        "en": "Eight of Pentacles",
+        "sr": "Zlatnik Osmica"
+      },
+      "short_description": "Ustalık, dikkatli çalışma ve zanaatkârlığın yükselişi.",
+      "long_description_tr": "Tılsımlar Sekizlisi, işine sevgiyle sarılan bir zanaatkârın tezgâhıdır. Tekrar, özen ve ustalığa adanmışlık bu kartın ruhudur. Eğer bir beceriyi derinleştirmek, sertifikasyon almak ya da portföyünü güçlendirmek istiyorsan şimdi çalışmanın ve detaylara değer vermenin zamanı.",
+      "keywords": ["usta", "çalışma", "disiplin", "zanaatkârlık", "detay"],
+      "app_brief": "Ustalığa adan",
+      "meanings": {
+        "upright": {
+          "general": "Özenli çalışma, ustalık geliştirme ve detaylara dikkat.",
+          "love": "İlişkide düzenli emek ve küçük jestlerin değeri.",
+          "career": "Yetenek geliştirme, eğitim ve tekrar ile ilerleme.",
+          "money": "Emeğin karşılığını alma; beceriye yatırım getirisi.",
+          "spiritual": "Ritüel ve disiplinle ruhsal ilerleme."
+        },
+        "reversed": {
+          "general": "Mükemmeliyetçilik tuzağı, çalışmayı erteleme veya motivasyon kaybı.",
+          "love": "Rutin ilişkide duygusallığın eksilmesi.",
+          "career": "Tekdüzelik, sıkılma veya çabaların görünmemesi.",
+          "money": "Emeğe rağmen kazancın düşük kalması.",
+          "spiritual": "Ritüelin anlamını yitirme riski."
+        }
+      },
+      "context": {
+        "element": "Toprak",
+        "celtic_cross": {
+          "future": "Ustalık ve yetkinlik gerektiren dönem.",
+          "hidden_influences": "Tekrar ve detay çalışmasının etkisi."
+        }
+      },
+      "cta": {
+        "main": "Ustalık & Gelişim Okuması — 25 dk",
+        "micro": "1 karta beceri önerisi"
+      },
+      "faq": ["Yetenek nasıl geliştirilir?", "Çalışmanın karşılığı ne zaman gelir?"],
+      "related": {
+        "cards": ["Tılsımlar Üçlüsü", "İmparator"],
+        "guides": ["Ustalık & Eğitim Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Tılsımlar Sekizlisi — Ustalık & Çalışma | Büsbüskimki",
+        "tr_meta": "Tılsımlar Sekizlisi: disiplin, beceri geliştirme ve iş ahlakı rehberi.",
+        "en_title": "Eight of Pentacles — Craft & Diligence | Büsbüskimki",
+        "en_meta": "Eight of Pentacles: focus on honing skills, dedication to craft, and steady progress toward mastery."
+      }
+    },
+    {
+      "id": "pentacles_nine",
+      "names": {
+        "tr": "Tılsımlar Dokuzlusu",
+        "en": "Nine of Pentacles",
+        "sr": "Zlatnik Devetka"
+      },
+      "short_description": "Bağımsız bolluk, emekle kazanılmış konfor ve kendine yatırım.",
+      "long_description_tr": "Tılsımlar Dokuzlusu, kendi emeğiyle huzura erişmiş bir bahçenin sahibidir. Bağımsızlık, kendi ayakları üzerinde durma ve emeğin getirdiği konfor burada övülür. Bu kart, kendine yatırım yapma, sınır koyma ve kazancın tadını çıkarma çağrısıdır — hak ettiğini bil ve kutla.",
+      "keywords": ["bağımsızlık", "bolluk", "konfor", "özdeğer", "yatırım"],
+      "app_brief": "Bağımsız bolluk",
+      "meanings": {
+        "upright": {
+          "general": "Bağımsız bolluk, emeğin karşılığını alma ve özgüvenli konfor.",
+          "love": "Bağımsız ama olgun ilişki; kendi alanına saygı.",
+          "career": "Kariyer başarısı, finansal özgürlük ya da konforlu pozisyon.",
+          "money": "Maddi rahatlık, birikim ve kaliteli yaşam.",
+          "spiritual": "Kendine değer verme ve bolluğu kutlama."
+        },
+        "reversed": {
+          "general": "Yalnızlık hissi, dış görünüşe odaklanma veya fazlasıyla bağımlı davranış.",
+          "love": "Bağımsızlıkla soğukluk arasında denge sorunu.",
+          "career": "Gurur veya yalnız çalışmanın getirdiği izolasyon.",
+          "money": "Görünüşe yatırım yaparken öz kaynakların ihmal edilmesi.",
+          "spiritual": "Maddi bolluğun ruhsal boşluğu örtme riski."
+        }
+      },
+      "context": {
+        "element": "Toprak",
+        "celtic_cross": {
+          "future": "Konfor ve bağımsızlık dönemi başlıyor.",
+          "hidden_influences": "Emeğin getirileri ve öz-değer algısı."
+        }
+      },
+      "cta": {
+        "main": "Bolluk & Bağımsızlık Okuması — 30 dk",
+        "micro": "1 karta özdeğer mesajı"
+      },
+      "faq": ["Bağımsız bolluk nasıl korunur?", "Kazancımı nasıl kutlarım?"],
+      "related": {
+        "cards": ["Tılsımlar Sekizlisi", "İmparatoriçe"],
+        "guides": ["Bağımsızlık & Bolluk Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Tılsımlar Dokuzlusu — Bağımsız Bolluk | Büsbüskimki",
+        "tr_meta": "Tılsımlar Dokuzlusu: emeğin karşılığı, bağımsızlık ve konfor rehberi.",
+        "en_title": "Nine of Pentacles — Independent Abundance | Büsbüskimki",
+        "en_meta": "Nine of Pentacles: celebrate independent success, earned comfort, and self-investment for sustainable abundance."
+      }
+    },
+    {
+      "id": "pentacles_ten",
+      "names": {
+        "tr": "Tılsımlar Onlusu",
+        "en": "Ten of Pentacles",
+        "sr": "Zlatnik Desetka"
+      },
+      "short_description": "Aile mirası, uzun vadeli güven ve nesiller arası bolluk.",
+      "long_description_tr": "Tılsımlar Onlusu, köklerin derinlediği bir aile ağacıdır; miras, güven ve uzun vadeli refahın sembolüdür. Bu kart, kurulan sistemlerin nesillere yayılmasını, finansal istikrarın aile düzeyinde hissedilmesini ve emeklerin kalıcı bir değere dönüşmesini müjdeler. Planlarını geniş vizyonda gör.",
+      "keywords": ["miras", "aile", "güvence", "uzun vadeli", "refah"],
+      "app_brief": "Aile ve miras güveni",
+      "meanings": {
+        "upright": {
+          "general": "Ailesel güven, kalıcı refah ve köklü maddi yapıların oluşması.",
+          "love": "Aile bağlarının ve uzun vadeli birlikteliğin güçlenmesi.",
+          "career": "Kalıcılık, miras niteliğinde başarı veya aile işi ile bağlantı.",
+          "money": "Uzun vadeli yatırımlar, miras ve finansal güvenlik.",
+          "spiritual": "Köklerle bağlantı, aile ritüelleri ve geleneksel değerler."
+        },
+        "reversed": {
+          "general": "Aile içinde çatışma, miras sorunları veya finansal güvencesizlik.",
+          "love": "Aile meseleleri ilişkiye gölge düşürebilir.",
+          "career": "Kale düşmesi gibi işin sürdürülemezliği veya miras çatışmaları.",
+          "money": "Mirasın bölünmesi veya uzun vadeli planların zedelenmesi.",
+          "spiritual": "Geleneksel değerlerle çatışma veya kopuş hissi."
+        }
+      },
+      "context": {
+        "element": "Toprak",
+        "celtic_cross": {
+          "future": "Aile ve miras konuları canlanabilir.",
+          "hidden_influences": "Kökler ve uzun vadeli planlar."
+        }
+      },
+      "cta": {
+        "main": "Miras & Güvence Okuması — 30 dk",
+        "micro": "1 karta aile rehberi"
+      },
+      "faq": ["Miras meseleleri nasıl yönetilir?", "Uzun vadeli güven nasıl kurulur?"],
+      "related": {
+        "cards": ["Tılsımlar Dokuzlusu", "Adalet"],
+        "guides": ["Miras & Nesiller Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Tılsımlar Onlusu — Aile & Miras | Büsbüskimki",
+        "tr_meta": "Tılsımlar Onlusu: aile, miras ve uzun vadeli güven rehberi.",
+        "en_title": "Ten of Pentacles — Family Legacy & Stability | Büsbüskimki",
+        "en_meta": "Ten of Pentacles: family legacy, multigenerational wealth, and building lasting security for your lineage."
+      }
+    },
+    {
+      "id": "pentacles_page",
+      "names": {
+        "tr": "Tılsımlar Valesi",
+        "en": "Page of Pentacles",
+        "sr": "Paž Zlatnika"
+      },
+      "short_description": "Yeni öğrenme, pratik bilgi ve maddi eğitim isteği.",
+      "long_description_tr": "Tılsımlar Valesi, öğrenmeye hevesli genç bir öğrenci gibidir; pratik bilgiler, stajlar veya kurslarla kendini geliştirme arzusu vardır. Bu kart, somut beceriler edinme, gelir getirici eğitimlere başlama veya yeni bir finansal plan öğrenme fırsatlarını işaret eder. Küçük adımlarla büyük uzmanlıklar doğar.",
+      "keywords": ["öğrenme", "staj", "pratik beceri", "eğitim", "başlangıç"],
+      "app_brief": "Beceriler öğren",
+      "meanings": {
+        "upright": {
+          "general": "Yeni eğitimler, pratik öğrenme ve maddi bilgi edinme isteği.",
+          "love": "İlişkide öğrenme ve birlikte büyüme fırsatı.",
+          "career": "Staj, eğitim veya yeni bir yetenek edinme dönemi.",
+          "money": "Yeni gelir yolları öğrenme veya mali eğitim fırsatı.",
+          "spiritual": "Günlük uygulamalarla ruhsal pratik kazanma."
+        },
+        "reversed": {
+          "general": "Yüzeysel öğrenme, fırsatların göz ardı edilmesi veya tembellik.",
+          "love": "İlişkide gelişim fırsatlarının kaçırılması.",
+          "career": "Eğitim fırsatlarına gereken önemin verilmemesi.",
+          "money": "Bilgi eksikliği nedeniyle mali hatalar.",
+          "spiritual": "Ritüel eksikliği veya pratik uygulamadan kaçış."
+        }
+      },
+      "context": {
+        "element": "Toprak",
+        "celtic_cross": {
+          "future": "Eğitim ve öğrenme fırsatları gelişecek.",
+          "hidden_influences": "Pratik merak ve kaynak arayışı."
+        }
+      },
+      "cta": {
+        "main": "Eğitim & Beceriler Okuması — 20 dk",
+        "micro": "1 karta öğrenme önerisi"
+      },
+      "faq": ["Hangi beceriyi öğrenmeliyim?", "Eğitim için yatırım yapmalı mıyım?"],
+      "related": {
+        "cards": ["Tılsımlar Sekizlisi", "Kupa Valesi"],
+        "guides": ["Pratik Eğitim Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Tılsımlar Valesi — Öğrenme & Beceriler | Büsbüskimki",
+        "tr_meta": "Tılsımlar Valesi: pratik öğrenme, eğitim ve kariyer gelişimi rehberi.",
+        "en_title": "Page of Pentacles — Learning & Practical Growth | Büsbüskimki",
+        "en_meta": "Page of Pentacles: start practical studies, skill-building, and financial education to grow your material foundations."
+      }
+    },
+    {
+      "id": "pentacles_knight",
+      "names": {
+        "tr": "Tılsımlar Şövalyesi",
+        "en": "Knight of Pentacles",
+        "sr": "Vitez Zlatnika"
+      },
+      "short_description": "Güvenilir çalışma, istikrar ve sabırlı ilerleyiş.",
+      "long_description_tr": "Tılsımlar Şövalyesi, sabırlı ve kararlı bir işçinin yürüyüşüdür. Hızlı parıltılar yerine istikrarlı adımlar, güvenilirlik ve tutarlılık bu kartın ruhudur. Yavaş ama emin ilerlersin; disiplin ve düzenle sürdürülebilir başarı inşa edilir. Acele etmeyen, özenli bir zafere hazır ol.",
+      "keywords": ["istikrar", "çalışkanlık", "disiplin", "güvenilir", "sürdürülebilir"],
+      "app_brief": "İstikrarlı ilerleme",
+      "meanings": {
+        "upright": {
+          "general": "İstikrarlı çalışma, sorumluluk alma ve güvenilir ilerleme.",
+          "love": "Güvenilir ilişki dinamikleri; sabırla inşa edilen bağ.",
+          "career": "Disiplinli çalışma, uzun vadeli projelerde ilerleme.",
+          "money": "Planlı tasarruf, düzenli gelir ve güvenli yatırımlar.",
+          "spiritual": "Ritüel disiplin ve süreç odaklı gelişim."
+        },
+        "reversed": {
+          "general": "İnatçılık, değişime direnç veya durağanlık.",
+          "love": "Rutine takılma, heyecanın azalması.",
+          "career": "İlerlememe, esnek olmama ve fırsat kaçırma.",
+          "money": "Aynı yöntemle devam edip verim alamama.",
+          "spiritual": "Ritüelin mekanikleşmesi, ruhsallıktan uzaklaşma."
+        }
+      },
+      "context": {
+        "element": "Toprak",
+        "celtic_cross": {
+          "future": "Disiplin ve düzenle ilerleme zamanıdır.",
+          "hidden_influences": "Sürekli çaba ve pratik etkeni."
+        }
+      },
+      "cta": {
+        "main": "İstikrar & Disiplin Okuması — 25 dk",
+        "micro": "1 karta sabır mesajı"
+      },
+      "faq": ["Sabırlı ilerlemek ne getirir?", "Rutini nasıl anlamlı kılarım?"],
+      "related": {
+        "cards": ["Tılsımlar Sekizlisi", "Savaş Arabası"],
+        "guides": ["İstikrar & Başarı Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Tılsımlar Şövalyesi — İstikrar & Disiplin | Büsbüskimki",
+        "tr_meta": "Tılsımlar Şövalyesi: güvenilir ilerleme, disiplin ve sürdürülebilir başarı rehberi.",
+        "en_title": "Knight of Pentacles — Steady Work & Reliability | Büsbüskimki",
+        "en_meta": "Knight of Pentacles: build success through consistent effort, patience, and responsible stewardship of resources."
+      }
+    },
+    {
+      "id": "pentacles_queen",
+      "names": {
+        "tr": "Tılsımlar Kraliçesi",
+        "en": "Queen of Pentacles",
+        "sr": "Kraljica Zlatnika"
+      },
+      "short_description": "Besleyici bolluk, pratik şefkat ve evin güveni.",
+      "long_description_tr": "Tılsımlar Kraliçesi, hem bereket veren hem de pratik çözümler üreten bir anne figürüdür. Evin konforunu sağlama, kaynakları sıcaklıkla paylaşma ve pratik şefkatle bakma onun işidir. Bu kart, hem maddi sağlığı hem de duygusal güvenliği birlikte kurmayı öğretir.",
+      "keywords": ["şefkat", "bolluk", "pratik", "ev", "destek"],
+      "app_brief": "Besleyici bolluk",
+      "meanings": {
+        "upright": {
+          "general": "Besleyici bolluk, pratiğe dökülen şefkat ve kaynak yönetimi.",
+          "love": "Sıcak, destekleyici ve istikrarlı ilişki dinamikleri.",
+          "career": "Pratik liderlik, kaynak yönetimi ve destekleyici rol.",
+          "money": "Mali güvence, iyi yönetilmiş bir bütçe ve konfor.",
+          "spiritual": "Toprakla bağlantı, beden bakımı ve ritüel beslenme."
+        },
+        "reversed": {
+          "general": "Aşırı fedakârlık, kıskançlık ya da maddi çekingenlik.",
+          "love": "Aşırı koruma veya kontrolcü şefkat sorun yaratabilir.",
+          "career": "Sınır koyamama veya emek vermekten tükenme.",
+          "money": "Kaynakları gereğinden fazla harcama veya aşırı tasarruf.",
+          "spiritual": "Bedensel ihtiyaçları ihmal etme veya aşırı odaklanma."
+        }
+      },
+      "context": {
+        "element": "Toprak",
+        "celtic_cross": {
+          "future": "Ev, aile ve kaynak yönetimi öne çıkacak.",
+          "hidden_influences": "Besleyici roller ve sorumluluklar."
+        }
+      },
+      "cta": {
+        "main": "Ev & Bolluk Okuması — 30 dk",
+        "micro": "1 karta şefkat mesajı"
+      },
+      "faq": ["Evde bolluk nasıl sağlanır?", "Nasıl daha şefkatli olabilirim?"],
+      "related": {
+        "cards": ["Tılsımlar Dokuzlusu", "İmparatoriçe"],
+        "guides": ["Ev & Bolluk Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Tılsımlar Kraliçesi — Şefkat & Ev | Büsbüskimki",
+        "tr_meta": "Tılsımlar Kraliçesi: besleyici bolluk, ev ve pratik şefkat rehberi.",
+        "en_title": "Queen of Pentacles — Nurturing Abundance & Home | Büsbüskimki",
+        "en_meta": "Queen of Pentacles: nurturing material comfort, caring for home and resources, and combining practicality with warmth."
+      }
+    },
+    {
+      "id": "pentacles_king",
+      "names": {
+        "tr": "Tılsımlar Kralı",
+        "en": "King of Pentacles",
+        "sr": "Kral Zlatnika"
+      },
+      "short_description": "Maddi liderlik, güvenilir başarı ve kaynakların bilgece yönetimi.",
+      "long_description_tr": "Tılsımlar Kralı, kaynaklarını adil ve akıllıca yöneten bir liderdir. Güveni, istikrarı ve uzun vadeli refahı temsil eder. Bu kart, mali konularda stratejik düşünmeyi, miras ve işletme yönetimini ve sorumlulukla servet inşa etmeyi öğütler. Gücünü şefkatle dengele.",
+      "keywords": ["liderlik", "mali yönetim", "başarı", "miras", "strateji"],
+      "app_brief": "Mali liderlik",
+      "meanings": {
+        "upright": {
+          "general": "Mali liderlik, güvenilir başarı ve sorumluluk sahibi yönetim.",
+          "love": "Güvenli, destekleyici ve maddi açıdan sağlam ilişki.",
+          "career": "İş yönetimi, yatırım ve uzun vadeli stratejik başarı.",
+          "money": "Zenginlik inşa etme, portföy yönetimi ve güvenli yatırımlar.",
+          "spiritual": "Toprağa bağlılık, sorumluluk ve dengeli güç kullanımı."
+        },
+        "reversed": {
+          "general": "Maddiyata aşırı değer verme, kibir veya servet odaklılık.",
+          "love": "Maddiyata dayalı ilişkilerde denge kaybı.",
+          "career": "Gururlu liderlik, adaletsiz uygulamalar veya kötü yatırım kararları.",
+          "money": "Kötü yönetim, servetin sabit kalmaması riski.",
+          "spiritual": "Ruhsal görmezden gelme, sadece mal varlığına odaklanma."
+        }
+      },
+      "context": {
+        "element": "Toprak",
+        "celtic_cross": {
+          "future": "Liderlik ve maddi sorumluluk ele alınacak.",
+          "hidden_influences": "Aile serveti veya işletme dinamikleri."
+        }
+      },
+      "cta": {
+        "main": "Mali Liderlik Okuması — 30 dk",
+        "micro": "1 karta strateji"
+      },
+      "faq": ["Servet nasıl sürdürülebilir kurulur?", "Liderlik ve şefkat nasıl dengelenir?"],
+      "related": {
+        "cards": ["Tılsımlar Onlusu", "İmparator"],
+        "guides": ["Miras & Yönetim Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Tılsımlar Kralı — Mali Liderlik & Başarı | Büsbüskimki",
+        "tr_meta": "Tılsımlar Kralı: stratejik para yönetimi, güven ve liderlik rehberi.",
+        "en_title": "King of Pentacles — Wealth Leadership & Stewardship | Büsbüskimki",
+        "en_meta": "King of Pentacles: masterful stewardship of resources, long-term wealth building, and leadership with responsibility."
+      }
+    },
+    {
+      "id": "wands_ace",
+      "names": {
+        "tr": "Asalar Ası",
+        "en": "Ace of Wands",
+        "sr": "Štap As"
+      },
+      "short_description": "Tutku, yaratıcı kıvılcım ve yeni başlangıçların ateşi.",
+      "long_description_tr": "Asalar Ası, içindeki kıvılcımın alevlendiği andır. Yeni bir proje, tutku veya ilham dalgası geliyor; cesurca adım atmak için evrenin izin verdiği bir dönemdesin. Enerjini nazikçe yönlendir, ilk kıvılcımı besle ve harekete geç. Bu ateş yol gösterir ama senin elinle büyür.",
+      "keywords": ["ilham", "başlangıç", "tutku", "yaratıcılık", "enerji"],
+      "app_brief": "Yeni ilham kıvılcımı",
+      "app_brief_en": "New inspiration",
+      "meanings": {
+        "upright": {
+          "general": "Yaratıcı başlangıç, enerjinin yüksek olması ve harekete çağrı.",
+          "love": "Tutkulu başlangıçlar, yeni çekim ya da romantik kıvılcım.",
+          "career": "Yaratıcı proje başlangıcı, fırsatları yakalama zamanı.",
+          "money": "Enerji gerektiren kazanç fırsatları, girişimcilik işareti.",
+          "spiritual": "Ruhsal ilham, enerji yükselişi ve kıvılcımın farkına varma."
+        },
+        "reversed": {
+          "general": "Erteleme, hevesin sönmesi veya yönsüz enerji kullanımı.",
+          "love": "Tutkunun azalması veya başlangıçta takılma.",
+          "career": "Fikirlerin uygulanmaması, motivasyon kaybı.",
+          "money": "Plansız harcamalar, aceleci yatırım riski.",
+          "spiritual": "Dağınık enerji, disiplin eksikliği."
+        }
+      },
+      "context": {
+        "element": "Ateş",
+        "celtic_cross": {
+          "future": "İlham dolu bir dönem başlıyor.",
+          "hidden_influences": "Yeni enerji ve fırsatların kıvılcımı."
+        }
+      },
+      "cta": {
+        "main": "İlham Okuması — 20 dk",
+        "micro": "1 karta kıvılcım rehberi"
+      },
+      "faq": ["Asalar Ası neyi müjdeler?", "Yeni bir projeye başlamalı mıyım?"],
+      "related": {
+        "cards": ["wands_two", "the_sun"],
+        "guides": ["Yaratıcılığı Ateşleme Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Asalar Ası — İlham & Başlangıç | Büsbüskimki",
+        "tr_meta": "Asalar Ası: yeni projeler, yaratıcılık ve tutku için rehber.",
+        "en_title": "Ace of Wands — Inspiration & New Starts | Büsbüskimki",
+        "en_meta": "Ace of Wands: ignite new creative ventures, harness enthusiasm, and begin with bold energy."
+      }
+    },
+    {
+      "id": "wands_two",
+      "names": {
+        "tr": "Asalar İkilisi",
+        "en": "Two of Wands",
+        "sr": "Štap Dvojka"
+      },
+      "short_description": "Vizyon, planlama ve yol seçimi; ufku değerlendirme zamanı.",
+      "long_description_tr": "Asalar İkilisi, elindeki çubuğu ufka doğru tutan bir vizyonerdir. İçinde hissedilen enerjiyle dış dünyayı eşleştirmenin, plan oluşturmanın ve cesurca bir yön seçmenin zamanıdır. İstikamet belirlenir; şimdi strateji ve niyetlerle ateşi yönlendir. Hayalin için haritalama vakti.",
+      "keywords": ["vizyon", "planlama", "yön seçimi", "strateji", "ufuk"],
+      "app_brief": "Vizyonunu belirle",
+      "app_brief_en": "Choose your path",
+      "meanings": {
+        "upright": {
+          "general": "Geniş perspektif, planlama ve yön belirleme enerjisi.",
+          "love": "İlişkide gelecek planları ve ortak vizyon tartışmaları.",
+          "career": "Uzun vadeli planlama, iş rotası seçimi.",
+          "money": "Yatırım stratejisi oluşturma, risk–getiri değerlendirmesi.",
+          "spiritual": "Genişleyen vizyon, ruhsal yol haritası çizme."
+        },
+        "reversed": {
+          "general": "Kararsızlık, kısa görüşlülük veya planların belirsizliği.",
+          "love": "Gelecek konusunda farklı beklentiler ve netlik eksikliği.",
+          "career": "Hareketsizlik, planları eyleme dönüştürememe.",
+          "money": "Stratejisizlik, dağınık finansal kararlar.",
+          "spiritual": "Vizyon kaybı, yönsüz enerji."
+        }
+      },
+      "context": {
+        "element": "Ateş",
+        "celtic_cross": {
+          "future": "Yeni yol seçimleri ve vizyon netleşmesi.",
+          "hidden_influences": "Geniş perspektif ve fırsat değerlendirmesi."
+        }
+      },
+      "cta": {
+        "main": "Vizyon & Plan Okuması — 25 dk",
+        "micro": "1 karta yön önerisi"
+      },
+      "faq": ["Hangi yönü seçmeliyim?", "Planı nasıl hayata geçiririm?"],
+      "related": {
+        "cards": ["wands_ace", "the_chariot"],
+        "guides": ["Vizyon & Strateji Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Asalar İkilisi — Vizyon & Planlama | Büsbüskimki",
+        "tr_meta": "Asalar İkilisi: yol seçimi, strateji ve gelecek planları için rehber.",
+        "en_title": "Two of Wands — Vision & Planning | Büsbüskimki",
+        "en_meta": "Two of Wands: plan your path, evaluate opportunities, and choose a bold direction for growth."
+      }
+    },
+    {
+      "id": "wands_three",
+      "names": {
+        "tr": "Asalar Üçlüsü",
+        "en": "Three of Wands",
+        "sr": "Štap Trojka"
+      },
+      "short_description": "Genişleme, beklenen sonuçlar ve eylemin verilerini gözleme.",
+      "long_description_tr": "Asalar Üçlüsü, diktiğin tohumların ufukta filizlendiğini gören sabırlı bir bekleyiştir. Başlangıcın ardından genişleme vakti; dış dünyadan gelecek geri dönüşleri gözlemle, stratejiyi ayarla ve fırsatları toplu şekilde değerlendirmeye başla. Uzaklar sana yeni kapılar açar.",
+      "keywords": ["genişleme", "bekleyiş", "sonuçlar", "strateji", "fırsatlar"],
+      "app_brief": "Genişlemeyi izle",
+      "app_brief_en": "Expand horizons",
+      "meanings": {
+        "upright": {
+          "general": "Beklenen sonuçların gelmeye başlaması, genişleme ve ilk meyveler.",
+          "love": "İlişkide yeni aşamalar ve ortak planların ortaya çıkması.",
+          "career": "Projelerin genişlemesi, yeni pazarlar veya iş birlikleri.",
+          "money": "Yatırımın geri dönüşleri ve fırsat genişlemesi.",
+          "spiritual": "Ruhsal yolculukta ileri adımlar ve ufuk genişlemesi."
+        },
+        "reversed": {
+          "general": "Beklentilerin ertelenmesi, genişleme planlarının sekteye uğraması.",
+          "love": "Gelecek planlarında gecikme veya hayal kırıklığı.",
+          "career": "Projelerin yavaşlaması; sabırsızlık riski.",
+          "money": "Beklenen gelir akışının gecikmesi.",
+          "spiritual": "Umutların sarsılması; vizyonu yeniden gözden geçirmek gerek."
+        }
+      },
+      "context": {
+        "element": "Ateş",
+        "celtic_cross": {
+          "future": "Genişleyen fırsatlar ve beklenen gelişmeler.",
+          "hidden_influences": "Dış etkenlerin etkisi ve uluslararası kapılar."
+        }
+      },
+      "cta": {
+        "main": "Genişleme Okuması — 25 dk",
+        "micro": "1 karta fırsat analizi"
+      },
+      "faq": ["Beklediğim sonuç ne zaman gelir?", "Genişleme için ne yapmalıyım?"],
+      "related": {
+        "cards": ["wands_two", "wands_king"],
+        "guides": ["Büyüme & Genişleme Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Asalar Üçlüsü — Genişleme & Bekleyiş | Büsbüskimki",
+        "tr_meta": "Asalar Üçlüsü: projelerin sonuçlanması, genişleme ve dış fırsatlar için rehber.",
+        "en_title": "Three of Wands — Expansion & Progress | Büsbüskimki",
+        "en_meta": "Three of Wands: see your early efforts expand, evaluate returns, and prepare for wider horizons."
+      }
+    },
+    {
+      "id": "wands_four",
+      "names": {
+        "tr": "Asalar Dörtlüsü",
+        "en": "Four of Wands",
+        "sr": "Štap Četvorka"
+      },
+      "short_description": "Kutlama, başarıların paylaşıldığı güvenli bir alan ve topluluk sevinci.",
+      "long_description_tr": "Asalar Dörtlüsü, emeğinin kutlandığı bir şölen gibidir. Küçük ya da büyük başarıları paylaşmak, toplulukla kutlama ve güvenli bir alan yaratmak bu kartın ruhu. Başarıyı tanı, şükran duy ve etrafınla beraber ilerlemenin tadını çıkar — birliktelik güç verir.",
+      "keywords": ["kutlama", "başarı", "topluluk", "güven", "paylaşım"],
+      "app_brief": "Başarıyı kutla",
+      "app_brief_en": "Celebrate together",
+      "meanings": {
+        "upright": {
+          "general": "Kutlama, topluluk desteği ve başarıların paylaşılması.",
+          "love": "İlişkide güven ve birlikte atılan kutlama adımları.",
+          "career": "Projelerin başarıyla sonuçlanması ve ekip kutlamaları.",
+          "money": "Başarı sonrası kaynak akışı veya ödüller.",
+          "spiritual": "Topluluk ritüelleri, minnettarlık ve kutlama."
+        },
+        "reversed": {
+          "general": "Kutlamanın eksikliği, başarının takdir edilmemesi veya gecikmesi.",
+          "love": "İlişkide soğuma; birlikte kutlama eksikliği.",
+          "career": "Başarıların görünmemesi veya içsel tatminsizlik.",
+          "money": "Beklenen ödentin gelmemesi.",
+          "spiritual": "Kutlama ritüellerinin eksikliği ruhu zayıflatır."
+        }
+      },
+      "context": {
+        "element": "Ateş",
+        "celtic_cross": {
+          "future": "Sosyal başarılar ve kutlamalar bekleniyor.",
+          "hidden_influences": "Topluluk ve destek ağları."
+        }
+      },
+      "cta": {
+        "main": "Kazanım & Kutlama Okuması — 20 dk",
+        "micro": "1 karta kutlama önerisi"
+      },
+      "faq": ["Başarıyı nasıl kutlarım?", "Birlikte kutlamak neden önemli?"],
+      "related": {
+        "cards": ["wands_three", "the_emperor"],
+        "guides": ["Topluluk & Kutlama Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Asalar Dörtlüsü — Kutlama & Topluluk | Büsbüskimki",
+        "tr_meta": "Asalar Dörtlüsü: başarı, güven ve birlikte kutlama rehberi.",
+        "en_title": "Four of Wands — Celebration & Community | Büsbüskimki",
+        "en_meta": "Four of Wands: celebrate milestones, build community joy, and honor shared achievements."
+      }
+    },
+    {
+      "id": "wands_five",
+      "names": {
+        "tr": "Asalar Beşlisi",
+        "en": "Five of Wands",
+        "sr": "Štap Petica"
+      },
+      "short_description": "Rekabet, sürtüşme ve yaratıcı çatışmaların enerjisi.",
+      "long_description_tr": "Asalar Beşlisi, kıvılcımlı bir meydan okumadır: fikirlerin çarpıştığı, rekabetin ve egoların öne çıktığı dönem. Bu çatışma yıpratıcı olabilir ama aynı zamanda yaratıcılığı ateşler. Savaş yerine oyunu kuralına göre oyna; çatışmanın içindeki dersleri topla ve enerjiyi yaratıcı çözümlere dönüştür.",
+      "keywords": ["rekabet", "çatışma", "enerji", "yarış", "fikir çarpışması"],
+      "app_brief": "Çatışmadan öğren",
+      "app_brief_en": "Learn from clashes",
+      "meanings": {
+        "upright": {
+          "general": "Rekabet, fikir çarpışmaları ve enerjik sürtüşmeler.",
+          "love": "Tutkulu ama bazen gergin ilişkiler; sınırlar test edilebilir.",
+          "career": "Ofiste rekabet, fikir çatışmaları ve meydan okumalar.",
+          "money": "Fırsat için yarış veya kaynak paylaşımı çatışmaları.",
+          "spiritual": "Çatışma yoluyla öğrenme ve sınırların belirlenmesi."
+        },
+        "reversed": {
+          "general": "Çatışmanın yatışması, uzlaşma veya enerjinin dağılması.",
+          "love": "Sürtüşmelerin azalması; barışma fırsatı.",
+          "career": "Rekabetin azalması veya çözüme dönüşmesi.",
+          "money": "Kaynak paylaşımında denge sağlanması.",
+          "spiritual": "İç çatışmanın uyuma dönüşmesi."
+        }
+      },
+      "context": {
+        "element": "Ateş",
+        "celtic_cross": {
+          "future": "Çatışmalar ve rekabet öne çıkabilir.",
+          "hidden_influences": "Ego, meydan okuma ve yaratıcı kıvılcım."
+        }
+      },
+      "cta": {
+        "main": "Çatışma & Strateji Okuması — 25 dk",
+        "micro": "1 karta çözüm önerisi"
+      },
+      "faq": ["Rekabetle nasıl baş ederim?", "Çatışma fırsata dönüşür mü?"],
+      "related": {
+        "cards": ["wands_six", "wands_seven"],
+        "guides": ["Rekabet & Yaratıcılık Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Asalar Beşlisi — Rekabet & Çatışma | Büsbüskimki",
+        "tr_meta": "Asalar Beşlisi: rekabet, sürtüşme ve yaratıcı çatışmalar için rehber.",
+        "en_title": "Five of Wands — Competition & Conflict | Büsbüskimki",
+        "en_meta": "Five of Wands: navigate energetic conflicts, channel rivalry into creativity, and learn from friction."
+      }
+    },
+    {
+      "id": "wands_six",
+      "names": {
+        "tr": "Asalar Altılısı",
+        "en": "Six of Wands",
+        "sr": "Štap Šestica"
+      },
+      "short_description": "Tanınırlık, galibiyet ve başarılı bir geri dönüş.",
+      "long_description_tr": "Asalar Altılısı, zaferin ve görünürlüğün kartıdır. Emeklerin takdir ediliyor; başarı seni alkışlar. Bu kart, güven kazanma, ödüllendirme ve liderlik alanında öne çıkma zamanıdır. Alınan onurla alçakgönüllü kal, zaferin sesini etrafa ilham vermek için kullan.",
+      "keywords": ["başarı", "tanınma", "zafer", "görünürlük", "onur"],
+      "app_brief": "Zafer ve onur",
+      "app_brief_en": "Victory and praise",
+      "meanings": {
+        "upright": {
+          "general": "Kamu takdiri, başarı ve galibiyet enerjisi.",
+          "love": "İlişkide onaylanma, gurur ve destek hissi.",
+          "career": "Başarı, terfi veya görünürlük kazandıran proje.",
+          "money": "Kazanç ve ödüller, yatırımın meyvesi.",
+          "spiritual": "Ruhsal zafer, içsel hedeflere ulaşma hissi."
+        },
+        "reversed": {
+          "general": "Gururun gölgesi, takdir eksikliği veya başarının sarsılması.",
+          "love": "Onay görmeme veya kibirli tavırlar sorun yaratabilir.",
+          "career": "Başarı görünür ama içsel tatmin eksik olabilir.",
+          "money": "Beklenen ödentin gelmemesi veya haksız takdir.",
+          "spiritual": "Zaferin boşluğunu hissetme riski."
+        }
+      },
+      "context": {
+        "element": "Ateş",
+        "celtic_cross": {
+          "future": "Tanınırlık ve başarı dönemine işaret.",
+          "hidden_influences": "Toplumsal onay ve görünür destek."
+        }
+      },
+      "cta": {
+        "main": "Başarı & Görünürlük Okuması — 25 dk",
+        "micro": "1 karta kutlama yönlendirmesi"
+      },
+      "faq": ["Nasıl daha görünür olurum?", "Başarıyı nasıl sürdürürüm?"],
+      "related": {
+        "cards": ["wands_four", "the_sun"],
+        "guides": ["Başarı & Görünürlük Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Asalar Altılısı — Zafer & Tanınma | Büsbüskimki",
+        "tr_meta": "Asalar Altılısı: başarı, tanınma ve galibiyet rehberi.",
+        "en_title": "Six of Wands — Victory & Recognition | Büsbüskimki",
+        "en_meta": "Six of Wands: celebrate recognition, lead with humility, and honor your achievements."
+      }
+    },
+    {
+      "id": "wands_seven",
+      "names": {
+        "tr": "Asalar Yedilisi",
+        "en": "Seven of Wands",
+        "sr": "Štap Sedmica"
+      },
+      "short_description": "Savunma, duruş sergileme ve sınırları koruma zamanıdır.",
+      "long_description_tr": "Asalar Yedilisi, mevzini koruyan cesur bir duruştur. Dış baskılara karşı dimdik ayakta kalmak, sınır koymak ve değerini savunmak gerektiğinde bu kart elbet gelir. Sesini duyur, ama saldırganlığa dönüşmesin; duruşun net, niyetin temiz olsun. Savunma bile şifalanabilir.",
+      "keywords": ["savunma", "sınır", "kararlılık", "dayanma", "cesaret"],
+      "app_brief": "Sınırlarını koru",
+      "app_brief_en": "Protect your ground",
+      "meanings": {
+        "upright": {
+          "general": "Savunma, duruş sergileme ve sınır koyma enerjisi.",
+          "love": "Kendi ihtiyaçlarını koruma, ilişki sınırlarının belirlenmesi.",
+          "career": "Rakiplere karşı duruş, haksızlıklara karşı savunma.",
+          "money": "Maddi hakları koruma, fırsatları savunma ihtiyacı.",
+          "spiritual": "İnancını savunma ve ruhsal sınır koyma."
+        },
+        "reversed": {
+          "general": "Yorgun savunma, kapanma ya da savunma stratejilerinin başarısızlığı.",
+          "love": "Çatışmadan kaçma veya aşırı savunmacılık.",
+          "career": "Savunma taktiklerinin geri tepebileceği durumlar.",
+          "money": "Maddi savunmanın sürdürülemez olması.",
+          "spiritual": "Aşırı katı sınırlar ruhu daraltabilir."
+        }
+      },
+      "context": {
+        "element": "Ateş",
+        "celtic_cross": {
+          "future": "Meydan okumalar ve savunma anları.",
+          "hidden_influences": "Rakiplerin veya dış baskıların etkisi."
+        }
+      },
+      "cta": {
+        "main": "Sınır & Savunma Okuması — 25 dk",
+        "micro": "1 karta sınır rehberi"
+      },
+      "faq": ["Nasıl duruş sergilerim?", "Sınır koymak nasıl öğretilir?"],
+      "related": {
+        "cards": ["wands_five", "justice"],
+        "guides": ["Sınır & Savunma Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Asalar Yedilisi — Savunma & Duruş | Büsbüskimki",
+        "tr_meta": "Asalar Yedilisi: sınır koyma, duruş sergileme ve savunma rehberi.",
+        "en_title": "Seven of Wands — Defense & Standing Your Ground | Büsbüskimki",
+        "en_meta": "Seven of Wands: protect your position, set healthy boundaries, and stand firm with integrity."
+      }
+    },
+    {
+      "id": "wands_eight",
+      "names": {
+        "tr": "Asalar Sekizlisi",
+        "en": "Eight of Wands",
+        "sr": "Štap Osmica"
+      },
+      "short_description": "Hızlı hareket, haber akışı ve gecikmenin sona ermesi.",
+      "long_description_tr": "Asalar Sekizlisi, rüzgârın hızla getirdiği haber ve hareket anıdır. Engeller kalkıyor, iletişim akıyor ve ilerleme ivme kazanıyor. Bu kart, hızla gelişen olaylar karşısında hazırlıklı olmayı ve enerjiyi verimli kullanmayı hatırlatır. Hızlı kararlar geliyor — nazik ama cesur ol.",
+      "keywords": ["hız", "haber", "ilerleme", "ivme", "hareket"],
+      "app_brief": "Hızlı ilerleme",
+      "app_brief_en": "Rapid momentum",
+      "meanings": {
+        "upright": {
+          "general": "Hızlı gelişmeler, haberler ve ani ilerleme.",
+          "love": "Ani yakınlaşmalar, hızlı kararlar veya sürpriz haberler.",
+          "career": "Projelerin hızla ilerlemesi, teklifler veya hızlı onaylar.",
+          "money": "Hızlı finansal akışlar veya beklenmedik ödeme.",
+          "spiritual": "Ani farkındalıklar ve hızlı içsel geçişler."
+        },
+        "reversed": {
+          "general": "Gecikmeler, iletişim kopuklukları veya aceleyle zarar görme.",
+          "love": "Hızlı kararların ilişkide sorun yaratması.",
+          "career": "Gecikmeler veya yanlış yönlendirilmiş hız.",
+          "money": "Ani harcamalar veya öngörülemeyen gecikmeler.",
+          "spiritual": "Geçişi aceleye getirme riski."
+        }
+      },
+      "context": {
+        "element": "Ateş",
+        "celtic_cross": {
+          "future": "Hızlı değişimler ve haber akışı bekleniyor.",
+          "hidden_influences": "Zamanlama ve iletişim etkenleri."
+        }
+      },
+      "cta": {
+        "main": "İvme & Haber Okuması — 20 dk",
+        "micro": "1 karta hız analizi"
+      },
+      "faq": ["Hızlı kararlar güvenli mi?", "Gecikme neden oluyor?"],
+      "related": {
+        "cards": ["wands_three", "wands_knight"],
+        "guides": ["Hız & Zamanlama Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Asalar Sekizlisi — Hız & Haber | Büsbüskimki",
+        "tr_meta": "Asalar Sekizlisi: hızlı ilerleme, haber akışı ve ivme hakkında rehber.",
+        "en_title": "Eight of Wands — Speed & Momentum | Büsbüskimki",
+        "en_meta": "Eight of Wands: expect rapid developments, swift communication, and momentum in your plans."
+      }
+    },
+    {
+      "id": "wands_nine",
+      "names": {
+        "tr": "Asalar Dokuzlusu",
+        "en": "Nine of Wands",
+        "sr": "Štap Devetka"
+      },
+      "short_description": "Direç, direnç ve son düzlükte sabırlı kalma gücü.",
+      "long_description_tr": "Asalar Dokuzlusu, yorgun ama kararlı bir bekleyiştir. Zorluklardan geçmiş, sınanmış bir ruhsun; şimdi azıcık daha direnç göstermek gerekebilir. Bu kart, sınırlarını koruma, stratejiyi tazeleme ve yılmadan ilerleme gücü verir. Yorgunluk doğaldır—mola ver, sonra tekrar ayağa kalk.",
+      "keywords": ["direnç", "dayanma", "sabır", "koruma", "sınav"],
+      "app_brief": "Azim ve direnç",
+      "app_brief_en": "Persevere & endure",
+      "meanings": {
+        "upright": {
+          "general": "Dayanma, sınavdan geçmişlik ve son aşamada sabırlı kalma.",
+          "love": "İlişki sınavları, bağlı kalma ve kararlılık.",
+          "career": "Zorlu süreçte ayakta kalma ve sonuca odaklanma.",
+          "money": "Maddi direnç, boşlukta kalmama ve sabırla yönetim.",
+          "spiritual": "Ruhsal sınavdan geçme ve dayanıklılık."
+        },
+        "reversed": {
+          "general": "Tükenmişlik, savunmanın çökmesi veya pes etme riski.",
+          "love": "Çabaların tükendiği ilişkilerde vazgeçme eğilimi.",
+          "career": "Yıpranma, motivasyon kaybı veya işi bırakma isteği.",
+          "money": "Dayanma gücünün azalması ve hatalı kararlar.",
+          "spiritual": "Ruhsal tükeniş ve yalnızlaşma hissi."
+        }
+      },
+      "context": {
+        "element": "Ateş",
+        "celtic_cross": {
+          "future": "Sınav ve koruma dönemleri devam edebilir.",
+          "hidden_influences": "Geçmiş mücadelelerin etkisi."
+        }
+      },
+      "cta": {
+        "main": "Direnç Okuması — 25 dk",
+        "micro": "1 karta güç mesajı"
+      },
+      "faq": ["Ne kadar daha dayanmalıyım?", "Tükenmişliği nasıl aşarım?"],
+      "related": {
+        "cards": ["wands_seven", "wands_ten"],
+        "guides": ["Azim & Yeniden Güçlenme Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Asalar Dokuzlusu — Direnç & Azim | Büsbüskimki",
+        "tr_meta": "Asalar Dokuzlusu: dayanma gücü, direnç ve sınavlarla başa çıkma rehberi.",
+        "en_title": "Nine of Wands — Resilience & Perseverance | Büsbüskimki",
+        "en_meta": "Nine of Wands: hold your ground, renew stamina, and finish the journey with resilience."
+      }
+    },
+    {
+      "id": "wands_ten",
+      "names": {
+        "tr": "Asalar Onlusu",
+        "en": "Ten of Wands",
+        "sr": "Štap Desetka"
+      },
+      "short_description": "Ağırlık, sorumlulukların yığılması ve fazlalıkları bırakma çağrısı.",
+      "long_description_tr": "Asalar Onlusu, omuzlarına binen yüklerin ağırlığını gösterir. Çok sorumluluk, aşırı çalışma veya kontrol etme isteği seni yoruyor olabilir. Bu kart, devretme, önceliklendirme ve sınır koyma ihtiyacını hatırlatır. Hafiflemek için gereksizleri bırak; gerçek yükünü seçerek taşı.",
+      "keywords": ["yük", "sorumluluk", "ağırlık", "tükenme", "devretme"],
+      "app_brief": "Yükleri hafiflet",
+      "app_brief_en": "Lighten your load",
+      "meanings": {
+        "upright": {
+          "general": "Ağırlık hissi, sorumlulukların fazlalaşması ve tükenme riski.",
+          "love": "İlişkide aşırı sorumluluk üstlenme veya baskı.",
+          "career": "Aşırı iş yükü, sorumluluk yığılması ve tükenme.",
+          "money": "Borç veya mali yükler nedeniyle baskı.",
+          "spiritual": "Aşırı sorumluluk ruhsal alanı daraltır; denge gerek."
+        },
+        "reversed": {
+          "general": "Yüklerin paylaşılması, delege etme veya rahatlama.",
+          "love": "Denge sağlama ve sorumlulukları hafifletme.",
+          "career": "Delegasyon, iş paylaşımı ve toparlanma.",
+          "money": "Mali yüklerin azalması veya yapılandırma.",
+          "spiritual": "Ruhsal hafifleme ve serbest bırakma pratiği."
+        }
+      },
+      "context": {
+        "element": "Ateş",
+        "celtic_cross": {
+          "future": "Ağırlık ve sorumluluk testi olabilir.",
+          "hidden_influences": "Sahiplenme ve kontrol arzusu."
+        }
+      },
+      "cta": {
+        "main": "Yük & Delege Okuması — 30 dk",
+        "micro": "1 karta hafifleme önerisi"
+      },
+      "faq": ["Yüklerimi nasıl paylaşırım?", "Tükenmişlikten nasıl kurtulurum?"],
+      "related": {
+        "cards": ["wands_nine", "justice"],
+        "guides": ["Yükleri Paylaşma Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Asalar Onlusu — Yük & Tükenme | Büsbüskimki",
+        "tr_meta": "Asalar Onlusu: sorumlulukların ağırlığı, tükenme ve devretme rehberi.",
+        "en_title": "Ten of Wands — Burden & Release | Büsbüskimki",
+        "en_meta": "Ten of Wands: recognize overload, delegate wisely, and lighten your responsibilities."
+      }
+    },
+    {
+      "id": "wands_page",
+      "names": {
+        "tr": "Asalar Valesi",
+        "en": "Page of Wands",
+        "sr": "Paž Štapova"
+      },
+      "short_description": "Meraklı maceracı ruh, mesajcı enerji ve öğrenme hevesi.",
+      "long_description_tr": "Asalar Valesi, maceraya hazır genç bir ruhun ateşidir. Yeni fikirler, keşif arzusu ve haberlerle gelir; cesurca sorgular ve ilk adımları atmak ister. Bu kart, merakını kucakla, küçük riskler al ve deneyimle öğren. Macera seni büyütür.",
+      "keywords": ["macera", "haberci", "merak", "enerji", "keşif"],
+      "app_brief": "Macera çağrısı",
+      "app_brief_en": "Curious explorer",
+      "meanings": {
+        "upright": {
+          "general": "Merak, haberci enerji ve yeni deneyimlere açık olma.",
+          "love": "Hafif flörtler, macera ve yeni başlangıçların habercisi.",
+          "career": "Yeni görev, keşif ve merakla hareket etme zamanı.",
+          "money": "Küçük fırsatlar, girişimci denemeler.",
+          "spiritual": "Keşif ruhu, yeni pratikler deneme arzusu."
+        },
+        "reversed": {
+          "general": "Dalgınlık, odağını kaybetme veya aceleci davranış.",
+          "love": "Yüzeysel ilişkiler veya tutarsız ilgi.",
+          "career": "Plansız atılımlar ve kısa süreli hevesler.",
+          "money": "Düşünmeden yapılan küçük harcamalar.",
+          "spiritual": "Yüzeysel uygulamalar ve sabırsızlık."
+        }
+      },
+      "context": {
+        "element": "Ateş",
+        "celtic_cross": {
+          "future": "Keşif ve haberci enerjiler gelebilir.",
+          "hidden_influences": "Merak ve küçük risklerini etkisi."
+        }
+      },
+      "cta": {
+        "main": "Macera & Haber Okuması — 20 dk",
+        "micro": "1 karta keşif rehberi"
+      },
+      "faq": ["Yeni bir şeye başlamalı mıyım?", "Merakımı nasıl yönlendiririm?"],
+      "related": {
+        "cards": ["wands_ace", "wands_knight"],
+        "guides": ["Macera & Keşif Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Asalar Valesi — Macera & Haber | Büsbüskimki",
+        "tr_meta": "Asalar Valesi: merak, keşif ve yeni deneyimler için rehber.",
+        "en_title": "Page of Wands — Enthusiasm & Exploration | Büsbüskimki",
+        "en_meta": "Page of Wands: embrace curiosity, take small bold steps, and explore new creative paths."
+      }
+    },
+    {
+      "id": "wands_knight",
+      "names": {
+        "tr": "Asalar Şövalyesi",
+        "en": "Knight of Wands",
+        "sr": "Vitez Štapova"
+      },
+      "short_description": "Ateşli eylem, cesur atılımlar ve risk alma arzusu.",
+      "long_description_tr": "Asalar Şövalyesi, enerjisini hızla harekete çeviren bir maceraperesttir. Tutkulu ve iddialı adımlar atılır; bazen aceleci ama çoğunlukla kararlı. Bu kart cesaret verir ama planı elden bırakma uyarısı da taşır. Hızlı ilerleyeceksen rotanı kontrol et — ateş tutkulu ama yönsüzse zarar verir.",
+      "keywords": ["eylem", "cesaret", "risk", "hız", "tutku"],
+      "app_brief": "Cesur atılım yap",
+      "app_brief_en": "Bold action awaits",
+      "meanings": {
+        "upright": {
+          "general": "Hızlı eylem, cesur adımlar ve maceracı enerji.",
+          "love": "Tutkulu meblağlar, sürpriz girişimler veya ani yakınlaşmalar.",
+          "career": "Hızlı terfi fırsatları veya projelere atılma zamanı.",
+          "money": "Riskli ama potansiyel getirisi yüksek adımlar.",
+          "spiritual": "Ani uyanışlar ve cesur deneyimler."
+        },
+        "reversed": {
+          "general": "Acelecilik, dikkatsizlik ve plan eksikliği yüzünden hata.",
+          "love": "Düşünmeden atılan adımlar ilişkiye zarar verebilir.",
+          "career": "Hızlı kararların hataya dönüşmesi riski.",
+          "money": "Düşünmeden yapılan yatırımların zararı.",
+          "spiritual": "Yüzeysel keşifler ve sabırsızlık."
+        }
+      },
+      "context": {
+        "element": "Ateş",
+        "celtic_cross": {
+          "future": "Ani fırsatlar ve hızlı adımlar gelebilir.",
+          "hidden_influences": "Cesaret ve aceleciliğin dengesi."
+        }
+      },
+      "cta": {
+        "main": "Hızlı Eylem Okuması — 25 dk",
+        "micro": "1 karta risk analizi"
+      },
+      "faq": ["Aceleyle karar vermeli miyim?", "Cesareti nasıl dengelerim?"],
+      "related": {
+        "cards": ["wands_eight", "the_chariot"],
+        "guides": ["Cesaret & Strateji Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Asalar Şövalyesi — Cesaret & Hız | Büsbüskimki",
+        "tr_meta": "Asalar Şövalyesi: atılganlık, risk alma ve hızlı ilerleme rehberi.",
+        "en_title": "Knight of Wands — Bold Action & Adventure | Büsbüskimki",
+        "en_meta": "Knight of Wands: charge forward with passion, manage risks, and harness adventurous momentum."
+      }
+    },
+    {
+      "id": "wands_queen",
+      "names": {
+        "tr": "Asalar Kraliçesi",
+        "en": "Queen of Wands",
+        "sr": "Kraljica Štapova"
+      },
+      "short_description": "Karizma, sıcak liderlik ve yaratıcı otorite.",
+      "long_description_tr": "Asalar Kraliçesi, ışık saçan bir liderdir: karizmatik, sıcak ve yaratıcı. İnsanları cezbeder, ilham verir ve sahada örnek olur. Bu kart, içindeki ateşi cesurca ifade etmeni, sınırları sevgiyle koymanı ve liderliği şefkatle kullanmanı öğütler. Yaratıcılığınla etkile, ama egonu aşındırma.",
+      "keywords": ["karizma", "liderlik", "yaratıcılık", "ilham", "sıcaklık"],
+      "app_brief": "Karizmatik ilham",
+      "app_brief_en": "Charismatic leader",
+      "meanings": {
+        "upright": {
+          "general": "Karizmatik enerji, liderlik ve yaratıcı ifade.",
+          "love": "Cazibe, sıcaklık ve ilişkiye ilham katma.",
+          "career": "Etkileyici liderlik, yaratıcı yönlendirme.",
+          "money": "Yaratıcı projelerden kazanma, marka değeri artışı.",
+          "spiritual": "İçsel ateşi güçlendirme ve ilham yayma."
+        },
+        "reversed": {
+          "general": "Aşırı egoluk, manipülasyon veya dikkat çekme isteği.",
+          "love": "Kıskançlık veya kontrolcü tavırlar sorun yaratabilir.",
+          "career": "Gurur veya liderlikte soğukluk gözlenebilir.",
+          "money": "İmaj kaygısıyla yanlış harcamalar.",
+          "spiritual": "Sahte gösteri ve yüzeysel ruhsallık."
+        }
+      },
+      "context": {
+        "element": "Ateş",
+        "celtic_cross": {
+          "future": "Liderlik ve ilham verme dönemi.",
+          "hidden_influences": "Karizma ve topluluk etkisi."
+        }
+      },
+      "cta": {
+        "main": "Liderlik & İlham Okuması — 30 dk",
+        "micro": "1 karta ilham mesajı"
+      },
+      "faq": ["Nasıl daha ilham verici olurum?", "Liderliği sevgiyle nasıl kullanırım?"],
+      "related": {
+        "cards": ["wands_king", "the_empress"],
+        "guides": ["Karizma & Liderlik Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Asalar Kraliçesi — Karizma & Liderlik | Büsbüskimki",
+        "tr_meta": "Asalar Kraliçesi: karizma, yaratıcı liderlik ve ilham verme rehberi.",
+        "en_title": "Queen of Wands — Charisma & Creative Leadership | Büsbüskimki",
+        "en_meta": "Queen of Wands: lead with warmth, inspire others, and channel creative charisma responsibly."
+      }
+    },
+    {
+      "id": "wands_king",
+      "names": {
+        "tr": "Asalar Kralı",
+        "en": "King of Wands",
+        "sr": "Kral Štapova"
+      },
+      "short_description": "Vizyoner liderlik, cesaret ve harekete geçirici güç.",
+      "long_description_tr": "Asalar Kralı, vizyonunu gerçeğe dönüştüren bir stratejidir. Tutkulu, kararlı ve etrafına ilham veren bir lider olarak, riskleri göze alır ama akıllıca yönlendirir. Bu kart, vizyonu cesurca paylaşmayı, ekipleri ateşlemeyi ve sonuç odaklı adımlar atmayı öğretir. Gücünü hizmet için kullan.",
+      "keywords": ["vizyon", "liderlik", "cesaret", "strateji", "ilham"],
+      "app_brief": "Vizyoner liderlik",
+      "app_brief_en": "Visionary leadership",
+      "meanings": {
+        "upright": {
+          "general": "Vizyoner liderlik, harekete geçirici güç ve stratejik cesaret.",
+          "love": "Tutkulu, güven veren ve yönlendirici bir partnerlik.",
+          "career": "Büyük projelere liderlik, girişimcilik ve strateji.",
+          "money": "Yatırım vizyonu, büyüme odaklı stratejiler.",
+          "spiritual": "Ateş ile uyumlu ruhsal liderlik ve rehberlik."
+        },
+        "reversed": {
+          "general": "Tiranik liderlik, düşüncesiz riskler veya vizyonsuzluk.",
+          "love": "Kontrolcü tavırlar veya aşırı baskıcı dinamikler.",
+          "career": "Kötü risk alma, ekiplerle uyumsuz liderlik.",
+          "money": "Aceleciliğin kötü yatırım kararlarına yol açması.",
+          "spiritual": "Gurur ve egonun ruhu gölgelemesi."
+        }
+      },
+      "context": {
+        "element": "Ateş",
+        "celtic_cross": {
+          "future": "Büyük vizyonlar ve liderlik fırsatları.",
+          "hidden_influences": "Güç, karizma ve etki alanı."
+        }
+      },
+      "cta": {
+        "main": "Vizyon & Liderlik Okuması — 30 dk",
+        "micro": "1 karta strateji"
+      },
+      "faq": ["Nasıl vizyoner olunur?", "Liderlikte denge nasıl kurulur?"],
+      "related": {
+        "cards": ["wands_queen", "the_emperor"],
+        "guides": ["Vizyoner Liderlik Rehberi"]
+      },
+      "seo": {
+        "tr_title": "Asalar Kralı — Vizyon & Liderlik | Büsbüskimki",
+        "tr_meta": "Asalar Kralı: vizyoner liderlik, cesaret ve strateji rehberi.",
+        "en_title": "King of Wands — Visionary Leadership & Drive | Büsbüskimki",
+        "en_meta": "King of Wands: lead boldly, inspire action, and steer ambitious visions to fruition."
+      }
+    },
+    {
+      "id": "cups_ace",
+      "names": {
+        "tr": "Kupalar Ası",
+        "en": "Ace of Cups"
+      },
+      "position": ["P1", "P3", "P7"],
+      "upright": "Yeni duygusal başlangıçlar, sevgi ve ruhsal bağlantılar.",
+      "reversed": "Duyguların bastırılması, bağların kopukluğu veya hayal kırıklığı.",
+      "context": "Romantik, arkadaşlık veya kişisel gelişim odaklı yeni bir duygusal başlangıç.",
+      "cta": "Kalbini aç ve sevgiyi hisset",
+      "long_description_tr": "Kupalar Ası, kalbinde yeni bir sevgi veya duygusal kıvılcımın doğuşunu müjdeler. İster romantik ister ruhsal, yeni bir his veya bağ başlıyor. Kalbini aç, sezgine güven ve sevgiyi besle. Bu bir davet: hislerin akmasına izin ver.",
+      "keywords": ["sevgi", "duygu", "başlangıç", "ruh", "bağ"],
+      "app_brief": "Duygusal kıvılcım",
+      "app_brief_en": "Emotional spark"
+    },
+    {
+      "id": "cups_two",
+      "names": {
+        "tr": "Kupalar İkilisi",
+        "en": "Two of Cups"
+      },
+      "position": ["P1", "P5", "P10"],
+      "upright": "Ortaklık, uyum ve kalpten bağ kurma.",
+      "reversed": "Uyumsuzluk, kararsızlık veya ilişkide kopukluk.",
+      "context": "Romantik veya arkadaşlık ilişkilerinde uyum ve dengeyi gösterir.",
+      "cta": "Ortaklığı güçlendir",
+      "long_description_tr": "Kupalar İkilisi, iki kalbin birbiriyle uyum içinde buluştuğu karttır. İster romantik ister arkadaşlık, ruhsal veya iş ilişkisi olsun, bağ güçleniyor. Karşılıklı saygı, sevgi ve uyum temaları öne çıkıyor. Duygularını paylaş, empatiyle yaklaş ve ortak enerjiyi besle.",
+      "keywords": ["ortaklık", "uyum", "bağ", "sevgi", "denge"],
+      "app_brief": "Ortaklığı güçlendir",
+      "app_brief_en": "Strengthen connection"
+    },
+    {
+      "id": "cups_three",
+      "names": {
+        "tr": "Kupalar Üçlüsü",
+        "en": "Three of Cups"
+      },
+      "position": ["P3", "P5", "P7"],
+      "upright": "Kutlama, dostluk ve duygusal paylaşım.",
+      "reversed": "Aşırı kutlama, dedikodu veya bağların zayıflaması.",
+      "context": "Arkadaşlık ve toplulukla birlikte neşeyi paylaşma zamanı.",
+      "cta": "Kutlamayı paylaş",
+      "long_description_tr": "Kupalar Üçlüsü, sevinç, kutlama ve arkadaşlıkların enerjisini getirir. Başarıları paylaşmak, birlikte keyif almak ve duygusal bağları güçlendirmek için mükemmel bir karttır. Bir topluluk içinde sevgi ve destek hissi yükselir.",
+      "keywords": ["kutlama", "dostluk", "paylaşım", "sevinç", "topluluk"],
+      "app_brief": "Kutlamayı paylaş",
+      "app_brief_en": "Celebrate together"
+    },
+    {
+      "id": "cups_four",
+      "names": {
+        "tr": "Kupalar Dörtlüsü",
+        "en": "Four of Cups"
+      },
+      "position": ["P2", "P4"],
+      "upright": "Duygusal memnuniyetsizlik ve içsel düşünce.",
+      "reversed": "Yeni fırsatları görme, farkındalık ve harekete geçme.",
+      "context": "Fırsatları fark etmek ve duygusal bakış açısını genişletmek için bir çağrı.",
+      "cta": "Duygularını gözden geçir",
+      "long_description_tr": "Kupalar Dörtlüsü, mevcut duygusal duruma karşı tatminsizlik ve içe dönme dönemini gösterir. Fırsatları fark etmek yerine mevcut olanı sorgulamak, duygusal yenilenmeyi geciktirebilir. İçsel keşif ve duygusal farkındalık zamanı.",
+      "keywords": ["tatminsizlik", "içe dönme", "duygusal farkındalık", "yeni fırsatlar"],
+      "app_brief": "Duygularını gözden geçir",
+      "app_brief_en": "Reflect on emotions"
+    },
+    {
+      "id": "cups_five",
+      "names": {
+        "tr": "Kupalar Beşlisi",
+        "en": "Five of Cups"
+      },
+      "position": ["P4", "P7"],
+      "upright": "Kaybetme ve üzüntü, geçmişe takılma.",
+      "reversed": "Kayıplardan öğrenme, duygusal iyileşme ve umut.",
+      "context": "Geçmişteki kayıplardan ders almak ve yeniden umut bulmak.",
+      "cta": "Duygularını bırak ve ileriye bak",
+      "long_description_tr": "Kupalar Beşlisi, duygusal kayıplar ve üzüntü zamanını temsil eder. Dikkatli olmalı, geçmişin gölgesinde kalmamalısınız. İleriye bakmak, şifa bulmak ve yeni fırsatları görmeye başlamak için doğru an.",
+      "keywords": ["kaybetme", "üzüntü", "geçmiş", "şifa", "umut"],
+      "app_brief": "İleriye bak",
+      "app_brief_en": "Look forward"
+    },
+    {
+      "id": "cups_six",
+      "names": {
+        "tr": "Kupalar Altılısı",
+        "en": "Six of Cups"
+      },
+      "position": ["P3", "P6"],
+      "upright": "Nostalji, geçmişe dönüş, saf mutluluk.",
+      "reversed": "Geçmişe takılma, ilerlemeyi engelleme.",
+      "context": "Geçmişten gelen anıları değerlendirme ve duygusal dengeyi bulma.",
+      "cta": "Geçmişi sevgiyle hatırla",
+      "long_description_tr": "Kupalar Altılısı, geçmişe dair tatlı anılar ve nostaljik duygular getirir. Saf ve masum sevgiyi hatırlatır, geçmişle bağ kurmayı teşvik eder. Ancak geçmişe fazla takılmamak ve şimdiyi yaşamak önemlidir.",
+      "keywords": ["nostalji", "geçmiş", "mutluluk", "sevgi", "masumiyet"],
+      "app_brief": "Geçmişi hatırla",
+      "app_brief_en": "Remember the past"
+    },
+    {
+      "id": "cups_seven",
+      "names": {
+        "tr": "Kupalar Yedilisi",
+        "en": "Seven of Cups"
+      },
+      "position": ["P2", "P4", "P7"],
+      "upright": "Hayaller, seçenekler ve vizyon.",
+      "reversed": "Yanılsamalar, kafa karışıklığı ve karar vermede zorlanma.",
+      "context": "Farklı seçenekleri değerlendirme ve hayallerini somutlaştırma zamanı.",
+      "cta": "Seçimlerini netleştir",
+      "long_description_tr": "Kupalar Yedilisi, birçok seçenek ve hayalin önünüze çıktığını gösterir. Hayallerin cazibesiyle yanılsamaya düşmemeli, net seçimler yapmalısınız. Duygusal ve ruhsal vizyonunuzu netleştirme kartıdır.",
+      "keywords": ["hayaller", "seçenekler", "vizyon", "karar", "yanılsama"],
+      "app_brief": "Seçimlerini netleştir",
+      "app_brief_en": "Clarify choices"
+    },
+    {
+      "id": "cups_eight",
+      "names": {
+        "tr": "Kupalar Sekizlisi",
+        "en": "Eight of Cups"
+      },
+      "position": ["P1", "P4", "P7"],
+      "upright": "Veda, ayrılma ve ruhsal arayış.",
+      "reversed": "Kaçış, bağları koparamama veya duygusal takılma.",
+      "context": "Eski duygusal bağlardan ayrılarak yeni bir yol açma zamanı.",
+      "cta": "Yoluna devam et",
+      "long_description_tr": "Kupalar Sekizlisi, geçmişe bağlı kalmanın getirdiği duygusal yükleri bırakıp yeni bir yola çıkma ihtiyacını simgeler. Duygusal olgunluk, içsel arayış ve farkındalık öne çıkar. Değişime açık olun.",
+      "keywords": ["veda", "ayrılma", "ruhsal arayış", "değişim", "farkındalık"],
+      "app_brief": "Yola devam et",
+      "app_brief_en": "Move forward"
+    },
+    {
+      "id": "cups_nine",
+      "names": {
+        "tr": "Kupalar Dokuzlusu",
+        "en": "Nine of Cups"
+      },
+      "position": ["P3", "P5"],
+      "upright": "Dileklerin gerçekleşmesi, tatmin ve mutluluk.",
+      "reversed": "Tuzaklı tatmin, aşırı ego veya doyumsuzluk.",
+      "context": "Kendi mutluluğunuzu ve tatmininizi fark etme zamanı.",
+      "cta": "Dileklerini kutla",
+      "long_description_tr": "Kupalar Dokuzlusu, dileklerin gerçekleştiğini ve tatmin duygusunun arttığını gösterir. Mutluluğu paylaşmak, minnettarlığı hissetmek ve duygusal olarak doyum sağlamak için ideal bir karttır. Egoya kapılmadan sevinci yaşayın.",
+      "keywords": ["dilek", "tatmin", "mutluluk", "duygusal doyum", "minnettarlık"],
+      "app_brief": "Dileklerini kutla",
+      "app_brief_en": "Celebrate wishes"
+    },
+    {
+      "id": "cups_ten",
+      "names": {
+        "tr": "Kupalar Onlusu",
+        "en": "Ten of Cups"
+      },
+      "position": ["P5", "P10"],
+      "upright": "Aile, uyum ve tamamlanmış mutluluk.",
+      "reversed": "Uyumsuzluk, aile sorunları veya hayal kırıklığı.",
+      "context": "Aile ve ilişkilerde duygusal tatmin ve uyum.",
+      "cta": "Ailenle mutluluğu paylaş",
+      "long_description_tr": "Kupalar Onlusu, kalpten gelen mutluluğun ve uyumun sembolüdür. Aile, dostluk veya topluluk ilişkilerinde huzur ve dengeyi temsil eder. Duygusal tatmin, sevgi ve bağları güçlendirmek için kartın enerjisiyle bağlantıya geçin.",
+      "keywords": ["aile", "uyum", "mutluluk", "tatmin", "sevgi"],
+      "app_brief": "Mutluluğu paylaş",
+      "app_brief_en": "Share happiness"
+    },
+    {
+      "id": "cups_page",
+      "names": {
+        "tr": "Kupalar Prensi",
+        "en": "Page of Cups"
+      },
+      "position": ["P1", "P3"],
+      "upright": "Yeni duygusal mesajlar, sezgi ve masumiyet.",
+      "reversed": "Duygusal olgunlaşmamışlık, hayal kırıklığı veya yüzeysellik.",
+      "context": "Yeni bir haber, mesaj veya duygusal bir farkındalık ortaya çıkabilir.",
+      "cta": "Sezgine kulak ver",
+      "long_description_tr": "Kupalar Prensi, yeni duygusal keşifler ve sezgisel mesajları temsil eder. Masumiyet ve saflıkla duygularını deneyimlemen için bir çağrıdır. İçsel sezgine güven ve hislerini takip et.",
+      "keywords": ["sezgi", "duygu", "mesaj", "masumiyet", "keşif"],
+      "app_brief": "Sezgine kulak ver",
+      "app_brief_en": "Listen to intuition"
+    },
+    {
+      "id": "cups_knight",
+      "names": {
+        "tr": "Kupalar Şövalyesi",
+        "en": "Knight of Cups"
+      },
+      "position": ["P2", "P5", "P7"],
+      "upright": "Romantik teklif, duygusal yolculuk ve hareket.",
+      "reversed": "Hayal kırıklığı, fazla idealizm veya duygusal kararsızlık.",
+      "context": "Duygularını ifade etme ve romantik veya ruhsal bir adım atma zamanı.",
+      "cta": "Duygularını paylaş",
+      "long_description_tr": "Kupalar Şövalyesi, duygusal yolculuk ve romantik teklifler kartıdır. Kalbini açmak ve duygularını ifade etmek için cesaret bul. Fakat aşırı hayalperest olmaktan kaçın ve gerçekçi duygusal adımlar at.",
+      "keywords": ["romantizm", "duygu", "hareket", "teklif", "yolculuk"],
+      "app_brief": "Duygularını paylaş",
+      "app_brief_en": "Express feelings"
+    },
+    {
+      "id": "cups_queen",
+      "names": {
+        "tr": "Kupalar Kraliçesi",
+        "en": "Queen of Cups"
+      },
+      "position": ["P3", "P5", "P7"],
+      "upright": "Sevgi dolu, şefkatli ve sezgisel.",
+      "reversed": "Duygusal dengesizlik, aşırı bağımlılık veya manipülasyon.",
+      "context": "Sevgi ve şefkatiyle başkalarına rehberlik etme zamanı.",
+      "cta": "Şefkatini göster",
+      "long_description_tr": "Kupalar Kraliçesi, şefkat, sezgi ve duygusal derinliği temsil eder. Başkalarına rehberlik ederken duygularını dengede tut ve sezgine güven. İçsel bilgelik ve empatiyi ön plana çıkar.",
+      "keywords": ["şefkat", "sezgi", "empati", "duygu", "rehberlik"],
+      "app_brief": "Şefkatini göster",
+      "app_brief_en": "Show compassion"
+    },
+    {
+      "id": "cups_king",
+      "names": {
+        "tr": "Kupalar Kralı",
+        "en": "King of Cups"
+      },
+      "position": ["P5", "P7", "P10"],
+      "upright": "Duygusal olgunluk, denge ve bilgelik.",
+      "reversed": "Duygusal manipülasyon, soğukluk veya kontrolsüz hisler.",
+      "context": "Duygusal liderlik ve olgun yaklaşım sergileme zamanı.",
+      "cta": "Duygularını yönet",
+      "long_description_tr": "Kupalar Kralı, duygusal olgunluk, denge ve bilgelik kartıdır. Duygularını kontrol eder, başkalarına güven verir ve zor durumlarda sakin kalır. Sezgi ve empati ile liderlik eder.",
+      "keywords": ["olgunluk", "denge", "bilgelik", "liderlik", "duygu"],
+      "app_brief": "Duygularını yönet",
+      "app_brief_en": "Master emotions"
+    }
+  ],
+  "metadata": {
+    "total": 78,
+    "generated": "2025-10-04T00:14:42.236Z"
+  }
+}

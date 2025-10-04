@@ -1,0 +1,1874 @@
+{
+    "id": "0",
+    "card": { "tr": "Joker", "en": "The Fool", "sr": "Lud" },
+    "title": {
+      "tr": "Joker — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "The Fool (Joker) — Meaning, Love & Career | busbuskimki",
+      "sr": "Lud (Džoker) — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Joker kartının düz ve ters anlamları; yeni başlangıçlar, aşk ve kariyer fırsatları. Kişisel tarot randevusu al.",
+      "en": "Discover The Fool: upright and reversed meanings, new beginnings, love & career insights. Book a personal tarot session.",
+      "sr": "Otkrijte Luda: značenje u uspravnom i obrnutom položaju, novi počeci, ljubav i karijera. Rezervišite sesiju."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Joker kartı ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Joker, yeni başlangıçlar, masumiyet, potansiyel ve cesur adımlar atma ihtiyacını temsil eder." } },
+        { "@type": "Question", "name": "Joker ters geldiğinde ne demek?", "acceptedAnswer": { "@type": "Answer", "text": "Ters Joker dikkatsizlik, plansızlık, sorumsuz riskler veya yol gösterici enerjinin kaçırıldığını gösterir." } },
+        { "@type": "Question", "name": "Joker aşk hayatında ne ifade eder?", "acceptedAnswer": { "@type": "Answer", "text": "Yeni tanışmalar, spontane çekimler veya ilişkiye masumiyetle yaklaşma fırsatını müjdeler." } },
+        { "@type": "Question", "name": "Joker kariyer anlamında neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Yaratıcı yeni başlangıçlar, cesur girişimler ve bilinmeyene atılma potansiyelini gösterir." } }
+      ]
+    }
+  },
+  {
+    "id": "1",
+    "card": { "tr": "Büyücü", "en": "The Magician", "sr": "Mag" },
+    "title": {
+      "tr": "Büyücü — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "The Magician — Meaning, Love & Career | busbuskimki",
+      "sr": "Mag — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Büyücü kartı: yaratıcılık, irade ve iletişim gücü. Düz/ters anlamlar ve kariyer-aşk yorumları.",
+      "en": "Discover The Magician: creativity, willpower and communication. Upright & reversed meanings with love and career guidance.",
+      "sr": "Otkrijte Maga: kreativnost, volja i komunikacija. Značenja za normalan i obrnuti položaj, ljubav i karijera."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Büyücü kartı ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "Büyücü, becerilerinizi kullanarak niyetinizi gerçeğe dönüştürme gücünü simgeler." } },
+        { "@type": "Question", "name": "Büyücü ters anlamı nedir?", "acceptedAnswer": { "@type": "Answer", "text": "Ters Büyücü manipülasyon, aldatma veya potansiyeli israf etme riskine işaret eder." } },
+        { "@type": "Question", "name": "Büyücü aşk ilişkilerinde neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Etkili iletişim, çekim ve ilişkinin bilinçli yaratımı; fırsatlar ortaya çıkabilir." } },
+        { "@type": "Question", "name": "Büyücü kariyerde nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Yeteneklerinizi ortaya koyma zamanı; yaratıcı projeler ve girişimler desteklenir." } }
+      ]
+    }
+  },
+  {
+    "id": "2",
+    "card": { "tr": "Başrahibe", "en": "The High Priestess", "sr": "Velika sveštenica" },
+    "title": {
+      "tr": "Başrahibe — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "The High Priestess — Meaning, Love & Career | busbuskimki",
+      "sr": "Velika sveštenica — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Başrahibe kartı: sezgi, içsel bilgelik ve gizem. Düz/ters yönde aşk ve kariyer yorumları.",
+      "en": "Discover The High Priestess: intuition, inner wisdom and mystery. Upright & reversed meanings for love and career.",
+      "sr": "Otkrijte Veliku sveštenicu: intuicija, unutrašnja mudrost i misterija. Značenja za ljubav i karijeru."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Başrahibe kartı neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Sezgi, bilinçaltı mesajları ve içsel rehberlikle bağlantıyı temsil eder." } },
+        { "@type": "Question", "name": "Başrahibe ters geldiğinde anlamı nedir?", "acceptedAnswer": { "@type": "Answer", "text": "Sezgilerin bastırılması, aşırı gizlilik veya içe kapanma durumlarına işaret edebilir." } },
+        { "@type": "Question", "name": "Başrahibe aşk yorumunda ne söyler?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkide sessiz bir uyum, sezgisel bağlar ve kelimelerin ötesinde anlama vurgu yapar." } },
+        { "@type": "Question", "name": "Başrahibe kariyerde neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Araştırma, gizli etkenleri fark etme ve sezgiyle karar alma önem kazanır." } }
+      ]
+    }
+  },
+  {
+    "id": "3",
+    "card": { "tr": "İmparatoriçe", "en": "The Empress", "sr": "Carica" },
+    "title": {
+      "tr": "İmparatoriçe — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "The Empress — Meaning, Love & Career | busbuskimki",
+      "sr": "Carica — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "İmparatoriçe kartı: bolluk, şefkat ve yaratıcılık. Aşk ve kariyerde besleyici enerjiler.",
+      "en": "Discover The Empress: abundance, nurturing and creativity. Upright & reversed insights for love and career.",
+      "sr": "Otkrijte Caricu: obilje, negovanje i kreativnost. Značenja za ljubav i karijeru."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "İmparatoriçe ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Bolluk, yaratıcılık, şefkat ve hayatın verimliliğini temsil eder." } },
+        { "@type": "Question", "name": "İmparatoriçe ters anlamı nedir?", "acceptedAnswer": { "@type": "Answer", "text": "Aşırı sahiplenme, tükenmişlik veya öz bakım eksikliği gibi uyarılar verir." } },
+        { "@type": "Question", "name": "İmparatoriçe aşkta neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Besleyici, destekleyici ve duygusal güven sunan bir ilişki potansiyelidir." } },
+        { "@type": "Question", "name": "İmparatoriçe kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Yaratıcı projelerin, üretkenliğin ve kaynakları iyi kullanmanın işaretidir." } }
+      ]
+    }
+  },
+  {
+    "id": "4",
+    "card": { "tr": "İmparator", "en": "The Emperor", "sr": "Car" },
+    "title": {
+      "tr": "İmparator — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "The Emperor — Meaning, Love & Career | busbuskimki",
+      "sr": "Car — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "İmparator kartı: otorite, düzen ve güvenlik. Düz/ters anlamlarda liderlik ve sınırlar.",
+      "en": "Discover The Emperor: authority, structure and stability. Upright & reversed meanings with love and career notes.",
+      "sr": "Otkrijte Cara: autoritet, struktura i stabilnost. Značenja za ljubav i karijeru."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "İmparator kartı ne ifade eder?", "acceptedAnswer": { "@type": "Answer", "text": "Otorite, düzen, liderlik ve güvenlik arzusunu temsil eder." } },
+        { "@type": "Question", "name": "İmparator ters anlamı nedir?", "acceptedAnswer": { "@type": "Answer", "text": "Aşırı kontrol, sertlik veya esneklik eksikliği konusunda uyarır." } },
+        { "@type": "Question", "name": "İmparator aşk ilişkilerinde neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Stabil, kararlı ve sorumluluk sahibi bir partnerlik enerjisini işaret eder." } },
+        { "@type": "Question", "name": "İmparator kariyerde ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "Yapılandırılmış liderlik, planlama ve disiplin gerektiren başarıyı temsil eder." } }
+      ]
+    }
+  },
+  {
+    "id": "5",
+    "card": { "tr": "Aziz (Hierophant)", "en": "The Hierophant", "sr": "Sveštenik" },
+    "title": {
+      "tr": "Aziz — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "The Hierophant — Meaning, Love & Career | busbuskimki",
+      "sr": "Sveštenik — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Aziz kartı: gelenek, rehberlik ve öğrenme. Düz/ters yorumlarla aşk ve mesleki bağlam.",
+      "en": "Discover The Hierophant: tradition, guidance and learning. Upright & reversed meanings plus love and career insights.",
+      "sr": "Otkrijte Sveštenika: tradicija, vođstvo i učenje. Značenja za ljubav i karijeru."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Aziz kartı ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Gelenek, kurumlar, öğretmenlik ve rehberlik temasını taşır." } },
+        { "@type": "Question", "name": "Aziz ters olduğunda ne olur?", "acceptedAnswer": { "@type": "Answer", "text": "Dogmatik düşünce, kör bağlılık veya sistemlere karşı başkaldırı görülebilir." } },
+        { "@type": "Question", "name": "Aziz aşk bağlamında neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Geleneksel değerlere dayalı ilişki, uzun vadeli bağlılık potansiyeli." } },
+        { "@type": "Question", "name": "Aziz kariyerde nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Eğitim, rehberlik veya kurumsal bir yapı içinde ilerleme işareti verir." } }
+      ]
+    }
+  },
+  {
+    "id": "6",
+    "card": { "tr": "Aşıklar", "en": "The Lovers", "sr": "Ljubavnici" },
+    "title": {
+      "tr": "Aşıklar — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "The Lovers — Meaning, Love & Career | busbuskimki",
+      "sr": "Ljubavnici — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Aşıklar kartı: seçimler, uyum ve kalpten bağlanma. Düz/ters yönleriyle aşk ve hayat kararları.",
+      "en": "Discover The Lovers: choices, harmony and soulful partnership. Upright & reversed meanings for love and life decisions.",
+      "sr": "Otkrijte Ljubavnike: izbori, harmonija i duhovno partnerstvo. Značenja za ljubav i odluke."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Aşıklar kartı neyi sembolize eder?", "acceptedAnswer": { "@type": "Answer", "text": "Seçimler, uyum, aşk ve kalp-akıl dengesi temalarını taşır." } },
+        { "@type": "Question", "name": "Aşıklar ters gelirse ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Kararsızlık, yanlış seçim ya da uyumsuz ilişkiler söz konusu olabilir." } },
+        { "@type": "Question", "name": "Aşıklar aşk yorumunda ne söyler?", "acceptedAnswer": { "@type": "Answer", "text": "Derin uyum, ortak değerler ve güçlü duygusal bağ potansiyeli gösterir." } },
+        { "@type": "Question", "name": "Aşıklar kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Ortaklıklar, iş birliği ve değerlerle uyumlu seçimler yapma zamanıdır." } }
+      ]
+    }
+  },
+  {
+    "id": "7",
+    "card": { "tr": "Savaş Arabası", "en": "The Chariot", "sr": "Kočija" },
+    "title": {
+      "tr": "Savaş Arabası — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "The Chariot — Meaning, Love & Career | busbuskimki",
+      "sr": "Kočija — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Savaş Arabası kartı: irade, zafer ve kararlılık. Düz/ters anlamlarıyla aşk ve kariyer yorumları.",
+      "en": "Discover The Chariot: willpower, victory and determination. Upright & reversed insights for relationships and career.",
+      "sr": "Otkrijte Kočiju: volja, pobeda i odlučnost. Značenja za ljubav i karijeru."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Savaş Arabası ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "Kontrol, kararlılık ve hedefe doğru ilerlemeyi temsil eder." } },
+        { "@type": "Question", "name": "Savaş Arabası ters geldiğinde?", "acceptedAnswer": { "@type": "Answer", "text": "Kontrol kaybı, yön kaybı veya aceleci davranışlara dikkat çeker." } },
+        { "@type": "Question", "name": "Aşk bağlamında savaş arabası ne söyler?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkide irade ve yön belirleme; engelleri aşma potansiyeli." } },
+        { "@type": "Question", "name": "Kariyerde savaş arabası neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Hızlı ilerleme, hedef odaklılık ve disiplinle başarıya ulaşma." } }
+      ]
+    }
+  },
+  {
+    "id": "8",
+    "card": { "tr": "Güç", "en": "Strength", "sr": "Snaga" },
+    "title": {
+      "tr": "Güç — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Strength — Meaning, Love & Career | busbuskimki",
+      "sr": "Snaga — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Güç kartı: içsel cesaret, sabır ve şefkat. Düz/ters yorumlarla aşk ve işte denge.",
+      "en": "Discover Strength: inner courage, patience and compassion. Upright & reversed meanings for love and career balance.",
+      "sr": "Otkrijte Snagu: unutrašnja hrabrost, strpljenje i saosećanje. Značenja za ljubav i karijeru."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Güç kartı ne anlatır?", "acceptedAnswer": { "@type": "Answer", "text": "İçsel cesaret, şefkat ve zorluklara karşı sabırla yaklaşmayı simgeler." } },
+        { "@type": "Question", "name": "Güç ters gelirse ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "Sabırsızlık, özgüven eksikliği veya kontrolsüz öfke uyarısı olabilir." } },
+        { "@type": "Question", "name": "Güç aşk ilişkilerinde ne ifade eder?", "acceptedAnswer": { "@type": "Answer", "text": "Sevgiyle yaklaşma, sabır ve anlayışla ilişkinin güçlenmesi." } },
+        { "@type": "Question", "name": "Güç kariyerde neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Zorluklarla olgunlukla başa çıkma ve liderlikte şefkat kullanma." } }
+      ]
+    }
+  },
+  {
+    "id": "9",
+    "card": { "tr": "Ermiş", "en": "The Hermit", "sr": "Pustinjak" },
+    "title": {
+      "tr": "Ermiş — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "The Hermit — Meaning, Love & Career | busbuskimki",
+      "sr": "Pustinjak — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Ermiş kartı: içsel sorgulama, yalnızlık ve bilgelik arayışı. Düz/ters okuma rehberi.",
+      "en": "Discover The Hermit: introspection, solitude and wisdom seeking. Upright & reversed guidance for love and career.",
+      "sr": "Otkrijte Pustinjaka: introspekcija, samoća i traženje mudrosti. Značenja za ljubav i karijeru."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Ermiş neyi temsil eder?", "acceptedAnswer": { "@type": "Answer", "text": "İçsel bilgelik arayışı, yalnız kalıp derin sorgulama zamanını temsil eder." } },
+        { "@type": "Question", "name": "Ermiş ters olduğunda ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Aşırı yalnızlık, izolasyon ya da bilgelikten kaçınma durumuna işaret eder." } },
+        { "@type": "Question", "name": "Ermiş aşk hayatında ne söyler?", "acceptedAnswer": { "@type": "Answer", "text": "Bir mola, ilişkiyi gözden geçirme ya da içsel rehberliği dinleme ihtiyacı olabilir." } },
+        { "@type": "Question", "name": "Ermiş kariyerde nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Tek başına öğrenme, mentorluk arayışı veya stratejik geri çekilme zamanıdır." } }
+      ]
+    }
+  },
+  {
+    "id": "10",
+    "card": { "tr": "Kader Çarkı", "en": "Wheel of Fortune", "sr": "Točak sreće" },
+    "title": {
+      "tr": "Kader Çarkı — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Wheel of Fortune — Meaning, Love & Career | busbuskimki",
+      "sr": "Točak sreće — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kader Çarkı: değişim, döngüler ve şans. Düz/ters anlamlarla fırsatlar ve uyarılar.",
+      "en": "Discover the Wheel of Fortune: change, cycles and luck. Upright & reversed insights into timing, love and career.",
+      "sr": "Otkrijte Točak sreće: promena, ciklusi i sreća. Značenja za ljubav i karijeru."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kader Çarkı ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "Hayattaki değişim döngülerini, kısmetin açılıp kapanmasını ve şans faktörlerini temsil eder." } },
+        { "@type": "Question", "name": "Kader Çarkı ters geldiğinde?", "acceptedAnswer": { "@type": "Answer", "text": "Kötü zamanlama, beklenmedik kayıplar veya kontrolü kaybetme hissi olasıdır." } },
+        { "@type": "Question", "name": "Aşk açısından ne söyler?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkilerde beklenmedik dönemeçler; fırsatlar ya da değişimler kapıda olabilir." } },
+        { "@type": "Question", "name": "Kariyer için nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Kariyerde şanslı dönemeçler gelebilir; zamanlama ve esneklik önemlidir." } }
+      ]
+    }
+  },
+  {
+    "id": "11",
+    "card": { "tr": "Adalet", "en": "Justice", "sr": "Pravda" },
+    "title": {
+      "tr": "Adalet — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Justice — Meaning, Love & Career | busbuskimki",
+      "sr": "Pravda — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Adalet kartı: denge, etik kararlar ve sonuçlar. Düz/ters yorumlarla ilişki ve iş rehberi.",
+      "en": "Discover Justice: balance, ethical decisions and consequences. Upright & reversed meanings for love and career.",
+      "sr": "Otkrijte Pravdu: ravnoteža, etičke odluke i posledice. Značenja za ljubav i karijeru."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Adalet kartı neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Denge, doğruluk, adil kararlar ve hesap verme temalarını taşır." } },
+        { "@type": "Question", "name": "Adalet ters geldiğinde ne olur?", "acceptedAnswer": { "@type": "Answer", "text": "Haksızlık, geciken adalet veya objektiflik kaybı uyarısı verebilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl yorumlanır?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkide dürüstlük, hesaplaşma veya adil çözümler gerekliliğini işaret eder." } },
+        { "@type": "Question", "name": "Kariyerde ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Adil değerlendirme, hukuki meseleler veya etik kararlarla bağlantılıdır." } }
+      ]
+    }
+  },
+  {
+    "id": "12",
+    "card": { "tr": "Asılan Adam", "en": "The Hanged Man", "sr": "Obešenjak" },
+    "title": {
+      "tr": "Asılan Adam — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "The Hanged Man — Meaning, Love & Career | busbuskimki",
+      "sr": "Obešenjak — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Asılan Adam: teslimiyet, perspektif değişikliği ve bekleme. Düz/ters okumalar için rehber.",
+      "en": "Discover The Hanged Man: surrender, perspective shift and waiting. Upright & reversed insights for relationships and career.",
+      "sr": "Otkrijte Obešenca: predaja, promena perspektive i čekanje. Značenja za ljubav i karijeru."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Asılan Adam neyi temsil eder?", "acceptedAnswer": { "@type": "Answer", "text": "Teslimiyet, bekleme ve farklı bir bakış açısı kazanma gereğini işaret eder." } },
+        { "@type": "Question", "name": "Ters Asılan Adam anlamı nedir?", "acceptedAnswer": { "@type": "Answer", "text": "Erteleme, kararsızlık veya gereksiz fedakârlıklar uyarısı olabilir." } },
+        { "@type": "Question", "name": "Aşk bağlamında ne söyler?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkide bekleme, fedakârlık ya da farklı bir perspektife ihtiyaç olabilir." } },
+        { "@type": "Question", "name": "Kariyerde nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Bir projeyi farklı açılardan görmek, stratejik bekleme veya yeniden değerlendirme zamanı." } }
+      ]
+    }
+  },
+  {
+    "id": "13",
+    "card": { "tr": "Ölüm", "en": "Death", "sr": "Smrt" },
+    "title": {
+      "tr": "Ölüm — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Death — Meaning, Love & Career | busbuskimki",
+      "sr": "Smrt — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Ölüm kartı: dönüşüm, bitiş ve yeniden doğuş. Düz/ters yorumlarla hayat değişimleri.",
+      "en": "Discover Death: transformation, endings and rebirth. Upright & reversed meanings for life changes, love and career.",
+      "sr": "Otkrijte Smrt: transformacija, krajevi i preporod. Značenja za promene u ljubavi i karijeri."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Ölüm kartı ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Radikal dönüşüm, eskilerin bitmesi ve yeni döngülerin başlamasını simgeler." } },
+        { "@type": "Question", "name": "Ölüm ters geldiğinde ne demek?", "acceptedAnswer": { "@type": "Answer", "text": "Değişime direnç, eski alışkanlıklara tutunma veya gecikmiş dönüşüm olabilir." } },
+        { "@type": "Question", "name": "Aşkta Ölüm kartı neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkinin bir evresinin sonu veya yeniden doğuş için gerekli dönüşüm süreçleri." } },
+        { "@type": "Question", "name": "Kariyerde Ölüm ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "Eski işin bitmesi, yeniden yapılanma veya radikal kariyer değişiklikleri." } }
+      ]
+    }
+  },
+  {
+    "id": "14",
+    "card": { "tr": "Denge (Temperance)", "en": "Temperance", "sr": "Umerenost" },
+    "title": {
+      "tr": "Denge — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Temperance — Meaning, Love & Career | busbuskimki",
+      "sr": "Umerenost — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Denge kartı: uyum, ölçülülük ve sabır. Düz/ters anlamlarda ilişki ve iş dengesi.",
+      "en": "Discover Temperance: balance, moderation and patience. Upright & reversed insights for harmony in love and career.",
+      "sr": "Otkrijte Umerenost: ravnoteža, umerenost i strpljenje. Značenja za ljubav i karijeru."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Denge kartı neyi temsil eder?", "acceptedAnswer": { "@type": "Answer", "text": "Orta yol, denge, uyum ve sabırlı dönüşümü simgeler." } },
+        { "@type": "Question", "name": "Ters Denge anlamı nedir?", "acceptedAnswer": { "@type": "Answer", "text": "Aşırılıklar, dengesizlik ya da sabırsızlık uyarısı olabilir." } },
+        { "@type": "Question", "name": "Aşkta Denge ne gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkide ölçülü davranış, uzlaşma ve karşılıklı saygı fırsatı." } },
+        { "@type": "Question", "name": "Kariyerde Denge nasıl yorumlanır?", "acceptedAnswer": { "@type": "Answer", "text": "Aşırı yüklenmeyi önleme, iş-yaşam dengesi ve stratejik uyum çağrısı." } }
+      ]
+    }
+  },
+  {
+    "id": "15",
+    "card": { "tr": "Şeytan", "en": "The Devil", "sr": "Đavo" },
+    "title": {
+      "tr": "Şeytan — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "The Devil — Meaning, Love & Career | busbuskimki",
+      "sr": "Đavo — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Şeytan kartı: bağımlılıklar, zincirlenmişlik ve yoğun tutkular. Uyarıcı düz/ters yorumlar.",
+      "en": "Discover The Devil: bondage, addictions and intense passions. Upright & reversed meanings for pitfalls in love and career.",
+      "sr": "Otkrijte Đavola: zavisnosti, vezanosti i intenzivne strasti. Značenja za ljubav i karijeru."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Şeytan kartı neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Bağımlılıklar, sınırların aşılması ve gölgede kalan arzularla yüzleşme temasıdır." } },
+        { "@type": "Question", "name": "Şeytan ters olduğunda ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Kısıtlayıcı durumların kırılması, özgürleşme ve bağımlılıklardan kurtulma sürecine işaret edebilir." } },
+        { "@type": "Question", "name": "Aşkta Şeytan neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Tutku dolu ama bağımlılık yaratabilecek ilişkiler; sınır ve bilinç gerektirir." } },
+        { "@type": "Question", "name": "Kariyerde Şeytan neyi uyarır?", "acceptedAnswer": { "@type": "Answer", "text": "Kandırılma, etik dışı anlaşmalar veya sağlıksız iş dinamiklerine dikkat." } }
+      ]
+    }
+  },
+  {
+    "id": "16",
+    "card": { "tr": "Kule", "en": "The Tower", "sr": "Kula" },
+    "title": {
+      "tr": "Kule — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "The Tower — Meaning, Love & Career | busbuskimki",
+      "sr": "Kula — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kule kartı: ani değişim, sarsıcı gerçekler ve yıkım sonrası yeniden yapılanma. Düz/ters yorumlar.",
+      "en": "Discover The Tower: sudden upheaval, shocking truths and rebuilding. Upright & reversed guidance for relationships and career.",
+      "sr": "Otkrijte Kulu: iznenadne promene, šokantne istine i obnova. Značenja za ljubav i karijeru."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kule kartı ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Ani yıkım, beklenmedik sarsıntılar ve zorlayıcı gerçeklerin meydana çıkışıdır." } },
+        { "@type": "Question", "name": "Kule ters geldiğinde ne olur?", "acceptedAnswer": { "@type": "Answer", "text": "Yıkımın ertelenmesi, uzun süreli baskı ya da gerçeğin reddi ile ilişkilendirilebilir." } },
+        { "@type": "Question", "name": "Aşkta Kule neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkide ani çalkantılar, ortaya çıkan gerçekler ya da beklenmedik ayrılıklar olabilir." } },
+        { "@type": "Question", "name": "Kariyerde Kule ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Ani kayıplar, şirket içi sarsıntılar veya beklenmedik değişimler yaşanabilir." } }
+      ]
+    }
+  },
+  {
+    "id": "17",
+    "card": { "tr": "Yıldız", "en": "The Star", "sr": "Zvezda" },
+    "title": {
+      "tr": "Yıldız — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "The Star — Meaning, Love & Career | busbuskimki",
+      "sr": "Zvezda — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Yıldız kartı: umut, şifa ve ilham. Düz/ters yorumlarla aşk ve kariyerde yön gösterir.",
+      "en": "Discover The Star: hope, healing and inspiration. Upright & reversed insights for love, healing and career vision.",
+      "sr": "Otkrijte Zvezdu: nada, isceljenje i inspiracija. Značenja za ljubav i karijeru."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Yıldız kartı neyi temsil eder?", "acceptedAnswer": { "@type": "Answer", "text": "Umut, iyileşme, ilham ve geleceğe dair pozitif vizyonu simgeler." } },
+        { "@type": "Question", "name": "Yıldız ters olduğunda ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Umutsuzluk, ilham kaybı ya da iyileşme sürecinin gecikmesi olabilir." } },
+        { "@type": "Question", "name": "Aşkta Yıldız neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkide umut, yeniden canlanma ve ilham verici dönemler söz konusudur." } },
+        { "@type": "Question", "name": "Kariyerde Yıldız hangi mesajı verir?", "acceptedAnswer": { "@type": "Answer", "text": "Vizyon projeler, iyileştirici yaklaşımlar ve ilhamla ilerleme fırsatları." } }
+      ]
+    }
+  },
+  {
+    "id": "18",
+    "card": { "tr": "Ay", "en": "The Moon", "sr": "Mesec" },
+    "title": {
+      "tr": "Ay — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "The Moon — Meaning, Love & Career | busbuskimki",
+      "sr": "Mesec — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Ay kartı: belirsizlik, sezgi ve gölgeler. Düz/ters yorumlarla ilişki ve işte dikkat edilmesi gerekenler.",
+      "en": "Discover The Moon: uncertainty, intuition and shadows. Upright & reversed meanings for hidden influences in love and career.",
+      "sr": "Otkrijte Mesec: neizvesnost, intuicija i senke. Značenja za ljubav i karijeru."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Ay kartı neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Bilinmezlik, rüyalar, sezgisel mesajlar ve yanılsamalar temalarını taşır." } },
+        { "@type": "Question", "name": "Ay ters olduğunda ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Korkulara teslim olma, yanlış algılar veya duygu karmaşası görülebilir." } },
+        { "@type": "Question", "name": "Aşkta Ay neyi ifade eder?", "acceptedAnswer": { "@type": "Answer", "text": "Gizli duygular, belirsizlik ve sezgisel uyumun öne çıkması." } },
+        { "@type": "Question", "name": "Kariyerde Ay neye işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Gizli etkenler, belirsizlikler ve sezgisel karar gereksinimleri." } }
+      ]
+    }
+  },
+  {
+    "id": "19",
+    "card": { "tr": "Güneş", "en": "The Sun", "sr": "Sunce" },
+    "title": {
+      "tr": "Güneş — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "The Sun — Meaning, Love & Career | busbuskimki",
+      "sr": "Sunce — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Güneş kartı: netlik, başarı ve neşe. Düz/ters anlamlarla aşk ve işte parlama zamanı.",
+      "en": "Discover The Sun: clarity, success and joy. Upright & reversed meanings for radiant love and career moments.",
+      "sr": "Otkrijte Sunce: jasnoća, uspeh i radost. Značenja za ljubav i karijeru."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Güneş kartı neyi temsil eder?", "acceptedAnswer": { "@type": "Answer", "text": "Mutluluk, başarı, netlik ve yaşam sevincini temsil eder." } },
+        { "@type": "Question", "name": "Güneş ters geldiğinde ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Geçici motivasyon kaybı veya fazlasıyla iyimser olup gözden kaçan detaylar olabilir." } },
+        { "@type": "Question", "name": "Aşkta Güneş neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Açık sevgi, mutluluk ve sağlıklı ortaklıkların işaretidir." } },
+        { "@type": "Question", "name": "Kariyerde Güneş hangi mesajı verir?", "acceptedAnswer": { "@type": "Answer", "text": "Başarı, görünürlük ve tatmin edici sonuçlar beklenir." } }
+      ]
+    }
+  },
+  {
+    "id": "20",
+    "card": { "tr": "Mahkeme", "en": "Judgement", "sr": "Sud" },
+    "title": {
+      "tr": "Mahkeme — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Judgement — Meaning, Love & Career | busbuskimki",
+      "sr": "Sud — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Mahkeme kartı: yeniden doğuş, hesaplaşma ve farkındalık. Düz/ters yorumlarla karar anları.",
+      "en": "Discover Judgement: rebirth, reckoning and awakening. Upright & reversed meanings for transformative moments in love and career.",
+      "sr": "Otkrijte Sud: preporod, obračun i buđenje. Značenja za transformacije u ljubavi i karijeri."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Mahkeme kartı ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Geçmişle yüzleşme, yeniden doğuş ve önemli karar anlarını temsil eder." } },
+        { "@type": "Question", "name": "Mahkeme ters olduğunda ne olur?", "acceptedAnswer": { "@type": "Answer", "text": "Geçmişe takılma, kendini affetmeme veya dönüşümü reddetme görülebilir." } },
+        { "@type": "Question", "name": "Aşkta Mahkeme neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Geçmişin değerlendirilmesi, bağışlama ve ilişkinin yeniden şekillenmesi." } },
+        { "@type": "Question", "name": "Kariyerde Mahkeme ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "Kariyer kararları, performansın değerlendirilmesi ve yeni başlangıçlara izin verme." } }
+      ]
+    }
+  },
+  {
+    "id": "21",
+    "card": { "tr": "Dünya", "en": "The World", "sr": "Svet" },
+    "title": {
+      "tr": "Dünya — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "The World — Meaning, Love & Career | busbuskimki",
+      "sr": "Svet — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Dünya kartı: tamamlanma, bütünlük ve yeni döngü başlangıcı. Düz/ters yorumlarla aşk ve kariyer sonuçları.",
+      "en": "Discover The World: completion, wholeness and new cycles. Upright & reversed meanings for outcomes in love and career.",
+      "sr": "Otkrijte Svet: završetak, celovitost i novi ciklusi. Značenja za ljubav i karijeru."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Dünya kartı neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Tamamlanma, başarıyla döngüyü kapatma ve yeni başlangıca hazır olmayı temsil eder." } },
+        { "@type": "Question", "name": "Dünya ters geldiğinde ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Eksik kalan işler, kapanış korkusu veya gecikmiş sonuçlar görülebilir." } },
+        { "@type": "Question", "name": "Aşkta Dünya neyi ifade eder?", "acceptedAnswer": { "@type": "Answer", "text": "Kalıcı uyum, ilişki tamamlanması veya yeni evreye geçişi işaret eder." } },
+        { "@type": "Question", "name": "Kariyerde Dünya ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Büyük bir projenin tamamlanması, başarı ve yeni kapıların açılmasıdır." } }
+      ]
+    }
+  }
+]
+  {
+    "id": "wands_ace",
+    "card": { "tr": "Asalar Ası", "en": "Ace of Wands", "sr": "Štap As" },
+    "title": {
+      "tr": "Asalar Ası — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Ace of Wands — Meaning, Love & Career | busbuskimki",
+      "sr": "Štap As — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Asalar Ası: ilham, yeni başlangıçlar ve yaratıcı kıvılcım. Harekete geçme zamanı.",
+      "en": "Ace of Wands: inspiration, new beginnings and creative spark. Time to take action.",
+      "sr": "Štap As: inspiracija, novi počeci i kreativni podsticaj. Vreme za pokret."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Asalar Ası ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Yaratıcı başlangıçlar, ilham ve harekete geçme çağrısıdır." } },
+        { "@type": "Question", "name": "Ters Asalar Ası ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "Hevesin sönmesi, erteleme veya yönsüz enerji kullanımını işaret eder." } },
+        { "@type": "Question", "name": "Aşkta Asalar Ası nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Tutkulu yeni başlangıçlar, kıvılcım ve heyecan vaat eder." } },
+        { "@type": "Question", "name": "Kariyerde Asalar Ası neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Yeni projeler, girişimler ve yaratıcı atılımlar için uygun dönemdir." } }
+      ]
+    }
+  },
+  {
+    "id": "wands_two",
+    "card": { "tr": "Asalar İkilisi", "en": "Two of Wands", "sr": "Štap Dvojka" },
+    "title": {
+      "tr": "Asalar İkilisi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Two of Wands — Meaning, Love & Career | busbuskimki",
+      "sr": "Štap Dvojka — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Asalar İkilisi: vizyon, planlama ve yol seçimi. Geleceğe bakma zamanı.",
+      "en": "Two of Wands: vision, planning and choosing a path. Look to the future.",
+      "sr": "Štap Dvojka: vizija, planiranje i izbor puta. Gledajte u budućnost."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Asalar İkilisi ne demek?", "acceptedAnswer": { "@type": "Answer", "text": "Geniş perspektif, planlama ve geleceğe yönelik karar alma enerjisidir." } },
+        { "@type": "Question", "name": "Ters Asalar İkilisi neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Kararsızlık, kısa görüşlülük veya planları erteleme riski vardır." } },
+        { "@type": "Question", "name": "Aşkta Asalar İkilisi nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkide ortak vizyon ve gelecek planlarını tartışma zamanıdır." } },
+        { "@type": "Question", "name": "Kariyerde ne işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Uzun vadeli strateji belirleme ve yeni rotalar arayışı." } }
+      ]
+    }
+  },
+  {
+    "id": "wands_three",
+    "card": { "tr": "Asalar Üçlüsü", "en": "Three of Wands", "sr": "Štap Trojka" },
+    "title": {
+      "tr": "Asalar Üçlüsü — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Three of Wands — Meaning, Love & Career | busbuskimki",
+      "sr": "Štap Trojka — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Asalar Üçlüsü: genişleme, beklenen sonuçlar ve dış fırsatlar.",
+      "en": "Three of Wands: expansion, expected results and outward opportunities.",
+      "sr": "Štap Trojka: ekspanzija, očekivani rezultati i spoljne prilike."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Asalar Üçlüsü neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Dışa açılma, beklenen geri dönüşler ve genişleme enerjisidir." } },
+        { "@type": "Question", "name": "Ters Asalar Üçlüsü nedir?", "acceptedAnswer": { "@type": "Answer", "text": "Gecikmeler, beklenen gelişmelerin ertelenmesi ya da sabırsızlık olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl yorumlanır?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkide yeni aşamalar veya uzaklardan gelecek etkiler söz konusu olabilir." } },
+        { "@type": "Question", "name": "Kariyerde neyi ima eder?", "acceptedAnswer": { "@type": "Answer", "text": "Projelerin büyümesi, yeni pazarlar veya ortaklık fırsatları doğabilir." } }
+      ]
+    }
+  },
+  {
+    "id": "wands_four",
+    "card": { "tr": "Asalar Dörtlüsü", "en": "Four of Wands", "sr": "Štap Četvorka" },
+    "title": {
+      "tr": "Asalar Dörtlüsü — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Four of Wands — Meaning, Love & Career | busbuskimki",
+      "sr": "Štap Četvorka — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Asalar Dörtlüsü: kutlama, güven ve toplulukla paylaşım enerjisi.",
+      "en": "Four of Wands: celebration, stability and communal joy. Time to share success.",
+      "sr": "Štap Četvorka: proslava, stabilnost i zajednička radost. Vreme za deljenje uspeha."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Asalar Dörtlüsü ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "Elde edilen başarıların kutlanması, güvenli bir zemin ve topluluk desteğidir." } },
+        { "@type": "Question", "name": "Ters Asalar Dörtlüsü neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Kutlama eksikliği, içsel tatminsizlik veya toplulukla uyumsuzluk olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Güçlü bağlar ve birlikte kutlanacak güzel dönemler vaat eder." } },
+        { "@type": "Question", "name": "Kariyerde anlamı nedir?", "acceptedAnswer": { "@type": "Answer", "text": "Ekip başarısı, proje tamamlanması ve görünür ödüller beklenir." } }
+      ]
+    }
+  },
+  {
+    "id": "wands_five",
+    "card": { "tr": "Asalar Beşlisi", "en": "Five of Wands", "sr": "Štap Petica" },
+    "title": {
+      "tr": "Asalar Beşlisi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Five of Wands — Meaning, Love & Career | busbuskimki",
+      "sr": "Štap Petica — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Asalar Beşlisi: rekabet, çatışma ve fikirlerin çarpışması. Yaratıcı gerginlik.",
+      "en": "Five of Wands: competition, conflict and clashing ideas. Creative tension.",
+      "sr": "Štap Petica: takmičenje, konflikt i sudar ideja. Kreativni napor."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Asalar Beşlisi neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Fikir çatışmaları, rekabet ve enerjik sürtüşmelerin işaretidir." } },
+        { "@type": "Question", "name": "Ters Asalar Beşlisi ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Çatışmanın yatışması, uzlaşma veya enerjinin dağılması görülebilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl yorumlanır?", "acceptedAnswer": { "@type": "Answer", "text": "Tutkulu ama gergin dönemler; sınırlar ve iletişim test edilebilir." } },
+        { "@type": "Question", "name": "Kariyerde anlamı nedir?", "acceptedAnswer": { "@type": "Answer", "text": "Ofiste rekabet veya fikir ayrılıkları; strateji ile dönüşebilir." } }
+      ]
+    }
+  },
+  {
+    "id": "wands_six",
+    "card": { "tr": "Asalar Altılısı", "en": "Six of Wands", "sr": "Štap Šestica" },
+    "title": {
+      "tr": "Asalar Altılısı — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Six of Wands — Meaning, Love & Career | busbuskimki",
+      "sr": "Štap Šestica — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Asalar Altılısı: tanınma, zafer ve kamu takdiri. Başarıyı kutlama zamanı.",
+      "en": "Six of Wands: recognition, victory and public praise. Time to celebrate success.",
+      "sr": "Štap Šestica: priznanje, pobeda i javni aplauz. Vreme za proslavu."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Asalar Altılısı neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Başarı, tanınma ve toplum önünde takdir edilme enerjisidir." } },
+        { "@type": "Question", "name": "Ters Asalar Altılısı ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "Gurur, takdir eksikliği veya görünürlükte hayal kırıklığı olabilir." } },
+        { "@type": "Question", "name": "Aşkta neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Partner tarafından takdir edilme, gurur ve birlikte kutlama fırsatı." } },
+        { "@type": "Question", "name": "Kariyerde nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Terfi, ödül veya projenin başarıyla tanınması beklenir." } }
+      ]
+    }
+  },
+  {
+    "id": "wands_seven",
+    "card": { "tr": "Asalar Yedilisi", "en": "Seven of Wands", "sr": "Štap Sedmica" },
+    "title": {
+      "tr": "Asalar Yedilisi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Seven of Wands — Meaning, Love & Career | busbuskimki",
+      "sr": "Štap Sedmica — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Asalar Yedilisi: savunma, dik durma ve sınır koyma enerjisi. Mücadele vaktidir.",
+      "en": "Seven of Wands: defense, standing your ground and boundary setting. Time to stand firm.",
+      "sr": "Štap Sedmica: odbrana, zauzimanje stava i postavljanje granica. Vreme da ostanete čvrsti."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Asalar Yedilisi ne demek?", "acceptedAnswer": { "@type": "Answer", "text": "Hakkını savunma, sınır koyma ve kararlı duruşu temsil eder." } },
+        { "@type": "Question", "name": "Ters Asalar Yedilisi neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Aşırı savunma, yorgunluk veya geri çekilme eğilimi olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Kendi ihtiyaçlarını koruma, sınır koyma veya duruş sergileme zamanı." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Rakiplere karşı durmak, projeyi savunmak veya konumunu korumak." } }
+      ]
+    }
+  },
+  {
+    "id": "wands_eight",
+    "card": { "tr": "Asalar Sekizlisi", "en": "Eight of Wands", "sr": "Štap Osmica" },
+    "title": {
+      "tr": "Asalar Sekizlisi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Eight of Wands — Meaning, Love & Career | busbuskimki",
+      "sr": "Štap Osmica — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Asalar Sekizlisi: hızlı hareket, haber akışı ve gecikmenin sona ermesi.",
+      "en": "Eight of Wands: swift movement, messages and end of delays. Momentum returns.",
+      "sr": "Štap Osmica: brz napredak, poruke i kraj odlaganja. Momentum se vraća."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Asalar Sekizlisi ne anlatır?", "acceptedAnswer": { "@type": "Answer", "text": "Hızlı gelişmeler, haber akışı ve ani ilerleme enerjisidir." } },
+        { "@type": "Question", "name": "Ters Asalar Sekizlisi ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Gecikmeler, iletişim kopuklukları veya aceleyle alınan hatalı kararlar olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl yorumlanır?", "acceptedAnswer": { "@type": "Answer", "text": "Ani yakınlaşmalar, sürpriz haberler veya hızlı kararlar getirebilir." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Projelerin hızla ilerlemesi, teklifler veya hızlı onaylar beklenir." } }
+      ]
+    }
+  },
+  {
+    "id": "wands_nine",
+    "card": { "tr": "Asalar Dokuzlusu", "en": "Nine of Wands", "sr": "Štap Devetka" },
+    "title": {
+      "tr": "Asalar Dokuzlusu — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Nine of Wands — Meaning, Love & Career | busbuskimki",
+      "sr": "Štap Devetka — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Asalar Dokuzlusu: direnç, azim ve son düzlükte sabırlı kalma gücü.",
+      "en": "Nine of Wands: resilience, perseverance and standing strong near the finish.",
+      "sr": "Štap Devetka: otpornost, istrajnost i ostajanje čvrstim pred kraj."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Asalar Dokuzlusu neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Yorgun ama dirençli bir tutum; sınavlardan geçmişlik ve sabırdır." } },
+        { "@type": "Question", "name": "Ters Asalar Dokuzlusu ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "Tükenmişlik, pes etme eğilimi veya savunmanın çökmesi görülebilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl yorumlanır?", "acceptedAnswer": { "@type": "Answer", "text": "Bağlı kalma mücadelesi; ilişki sınavından geçme ihtiyacı." } },
+        { "@type": "Question", "name": "Kariyerde işareti nedir?", "acceptedAnswer": { "@type": "Answer", "text": "Zorlu süreçte dayanma, son adımları tamamlayacak güç bulunması." } }
+      ]
+    }
+  },
+  {
+    "id": "wands_ten",
+    "card": { "tr": "Asalar Onlusu", "en": "Ten of Wands", "sr": "Štap Desetka" },
+    "title": {
+      "tr": "Asalar Onlusu — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Ten of Wands — Meaning, Love & Career | busbuskimki",
+      "sr": "Štap Desetka — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Asalar Onlusu: ağırlık, sorumluluklar ve fazlalıklardan kurtulma çağrısı.",
+      "en": "Ten of Wands: burden, overloaded responsibilities and the need to release.",
+      "sr": "Štap Desetka: teret, prevelike obaveze i potreba za oslobađanjem."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Asalar Onlusu ne demek?", "acceptedAnswer": { "@type": "Answer", "text": "Aşırı yük, sorumlulukların birikmesi ve tükenme riskini gösterir." } },
+        { "@type": "Question", "name": "Ters Asalar Onlusu ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Yükleri paylaşma, delege etme veya hafifleme fırsatı doğabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl yorumlanır?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkide aşırı sorumluluk alma, tükenme veya denge arayışı olabilir." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "İş yükü fazlalığı, delegasyon gereksinimi ve sınır koyma çağrısı." } }
+      ]
+    }
+  },
+  {
+    "id": "wands_page",
+    "card": { "tr": "Asalar Valesi", "en": "Page of Wands", "sr": "Paž Štapova" },
+    "title": {
+      "tr": "Asalar Valesi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Page of Wands — Meaning, Love & Career | busbuskimki",
+      "sr": "Paž Štapova — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Asalar Valesi: merak, haberci enerji ve maceraperest ruh. Yeni denemeler.",
+      "en": "Page of Wands: curiosity, messenger energy and adventurous spirit. Try new things.",
+      "sr": "Paž Štapova: radoznalost, energija glasnika i avanturistički duh. Isprobajte novo."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Asalar Valesi ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Keşif arzusu, haberci enerji ve küçük risklerle öğrenme isteğidir." } },
+        { "@type": "Question", "name": "Ters Asalar Valesi ne demek?", "acceptedAnswer": { "@type": "Answer", "text": "Dalgınlık, odak kaybı veya yüzeysel hevesler görülebilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl yorumlanır?", "acceptedAnswer": { "@type": "Answer", "text": "Hafif flörtler, macera ve duygusal merakın artması." } },
+        { "@type": "Question", "name": "Kariyerde ne işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Yeni görevler, keşif ve öğrenme odaklı fırsatlar doğabilir." } }
+      ]
+    }
+  },
+  {
+    "id": "wands_knight",
+    "card": { "tr": "Asalar Şövalyesi", "en": "Knight of Wands", "sr": "Vitez Štapova" },
+    "title": {
+      "tr": "Asalar Şövalyesi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Knight of Wands — Meaning, Love & Career | busbuskimki",
+      "sr": "Vitez Štapova — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Asalar Şövalyesi: ateşli eylem, cesur atılımlar ve hızlı ilerleme enerjisi.",
+      "en": "Knight of Wands: fiery action, bold moves and swift progress. Embrace momentum.",
+      "sr": "Vitez Štapova: vatrena akcija, hrabri potezi i brz napredak. Prigrlite zamah."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Asalar Şövalyesi neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Hızlı hareket, cesur atılım ve tutkulu eylem enerjisidir." } },
+        { "@type": "Question", "name": "Ters Asalar Şövalyesi ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Acelecilik, dikkatsizlik veya plansız risk alma riski taşır." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Tutkulu teklifler, ani yakınlaşmalar veya romantik coşku getirir." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Hızlı terfi fırsatları, atılgan projeler veya girişimler görülebilir." } }
+      ]
+    }
+  },
+  {
+    "id": "wands_queen",
+    "card": { "tr": "Asalar Kraliçesi", "en": "Queen of Wands", "sr": "Kraljica Štapova" },
+    "title": {
+      "tr": "Asalar Kraliçesi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Queen of Wands — Meaning, Love & Career | busbuskimki",
+      "sr": "Kraljica Štapova — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Asalar Kraliçesi: karizma, sıcak liderlik ve yaratıcı otorite. İlham verici bir figür.",
+      "en": "Queen of Wands: charisma, warm leadership and creative authority. An inspiring figure.",
+      "sr": "Kraljica Štapova: harizma, toplo vođstvo i kreativni autoritet. Inspirativna figura."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Asalar Kraliçesi ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Karizma, ilham ve şefkatli liderliği temsil eder." } },
+        { "@type": "Question", "name": "Ters Asalar Kraliçesi neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Aşırı gösteriş, kıskançlık veya manipülatif davranış riski olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Tutkulu, sıcak ve ilham verici bir partnerlik potansiyeli." } },
+        { "@type": "Question", "name": "Kariyerde ne ifade eder?", "acceptedAnswer": { "@type": "Answer", "text": "Ekip motivasyonu, liderlik ve yaratıcı yönlendirme yeteneğini gösterir." } }
+      ]
+    }
+  },
+  {
+    "id": "wands_king",
+    "card": { "tr": "Asalar Kralı", "en": "King of Wands", "sr": "Kral Štapova" },
+    "title": {
+      "tr": "Asalar Kralı — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "King of Wands — Meaning, Love & Career | busbuskimki",
+      "sr": "Kral Štapova — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Asalar Kralı: vizyoner liderlik, cesaret ve harekete geçirici güç. Büyük hedefler.",
+      "en": "King of Wands: visionary leadership, courage and drive. Great ambitions ahead.",
+      "sr": "Kral Štapova: vizionarsko vođstvo, hrabrost i pokretačka snaga. Velike ambicije."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Asalar Kralı neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Vizyoner liderlik, cesaret ve girişimci ruhu temsil eder." } },
+        { "@type": "Question", "name": "Ters Asalar Kralı ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Tyranlık, düşüncesiz riskler veya vizyonsuzluk uyarısı olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Güçlü ve yönlendirici bir partnerlik; tutku ve amaç birliği olabilir." } },
+        { "@type": "Question", "name": "Kariyerde neyi ifade eder?", "acceptedAnswer": { "@type": "Answer", "text": "Büyük projelere liderlik, stratejik vizyon ve sonuç odaklılık." } }
+      ]
+    }
+  },
+  {
+    "id": "cups_ace",
+    "card": { "tr": "Kupalar Ası", "en": "Ace of Cups", "sr": "Pehar As" },
+    "title": {
+      "tr": "Kupalar Ası — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Ace of Cups — Meaning, Love & Career | busbuskimki",
+      "sr": "Pehar As — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kupalar Ası: duygusal başlangıç, sevgi ve ruhsal bağlantı. Kalbini aç.",
+      "en": "Ace of Cups: emotional beginning, love and spiritual connection. Open your heart.",
+      "sr": "Pehar As: emocionalni početak, ljubav i duhovna veza. Otvorite srce."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kupalar Ası ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Yeni duygular, sevgi dolu başlangıçlar ve ruhsal uyanışı müjdeler." } },
+        { "@type": "Question", "name": "Ters Kupalar Ası neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Duygusal bloklar, reddetme veya beklenti hayal kırıklığı olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl yorumlanır?", "acceptedAnswer": { "@type": "Answer", "text": "Yeni bir aşk kıvılcımı ya da duygusal yakınlaşma getirir." } },
+        { "@type": "Question", "name": "Kariyerde anlamı nedir?", "acceptedAnswer": { "@type": "Answer", "text": "İş yerinde destekleyici ilişkiler ve duygusal tatmin vaat eder." } }
+      ]
+    }
+  },
+  {
+    "id": "cups_two",
+    "card": { "tr": "Kupalar İkilisi", "en": "Two of Cups", "sr": "Pehar Dvojka" },
+    "title": {
+      "tr": "Kupalar İkilisi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Two of Cups — Meaning, Love & Career | busbuskimki",
+      "sr": "Pehar Dvojka — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kupalar İkilisi: ortaklık, uyum ve kalpten bağlanma. Dengeli ilişkiler.",
+      "en": "Two of Cups: partnership, harmony and heartfelt connection. Balanced relations.",
+      "sr": "Pehar Dvojka: partnerstvo, harmonija i veza iz srca. Uravnoteženi odnosi."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kupalar İkilisi neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Karşılıklı bağlılık, uyum ve duygusal dengeyi temsil eder." } },
+        { "@type": "Question", "name": "Ters Kupalar İkilisi ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "Uyumsuzluk, iletişim eksikliği veya duygusal kopukluk olabilir." } },
+        { "@type": "Question", "name": "Aşkta ne gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Derin bir bağ, karşılıklı anlayış ve ortaklık potansiyeli." } },
+        { "@type": "Question", "name": "Kariyerde anlamı nedir?", "acceptedAnswer": { "@type": "Answer", "text": "İş birlikleri, takım uyumu ve ortak projelerde denge." } }
+      ]
+    }
+  },
+  {
+    "id": "cups_three",
+    "card": { "tr": "Kupalar Üçlüsü", "en": "Three of Cups", "sr": "Pehar Trojka" },
+    "title": {
+      "tr": "Kupalar Üçlüsü — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Three of Cups — Meaning, Love & Career | busbuskimki",
+      "sr": "Pehar Trojka — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kupalar Üçlüsü: kutlama, dostluk ve duygusal paylaşım. Topluluk sevinci.",
+      "en": "Three of Cups: celebration, friendship and emotional sharing. Community joy.",
+      "sr": "Pehar Trojka: proslava, prijateljstvo i emotivno deljenje. Radost zajednice."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kupalar Üçlüsü neyi ifade eder?", "acceptedAnswer": { "@type": "Answer", "text": "Kutlama, dostluk ve beraber paylaşılan mutluluğu simgeler." } },
+        { "@type": "Question", "name": "Ters Kupalar Üçlüsü ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Aşırı kutlama, dedikodu veya bağların zayıflaması olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Mutluluğun paylaşılması, arkadaşça destek ve sosyal yakınlaşma." } },
+        { "@type": "Question", "name": "Kariyerde ne işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Ekip başarısı, takdir ve ortak kutlamalar beklenir." } }
+      ]
+    }
+  },
+  {
+    "id": "cups_four",
+    "card": { "tr": "Kupalar Dörtlüsü", "en": "Four of Cups", "sr": "Pehar Četvorka" },
+    "title": {
+      "tr": "Kupalar Dörtlüsü — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Four of Cups — Meaning, Love & Career | busbuskimki",
+      "sr": "Pehar Četvorka — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kupalar Dörtlüsü: duygusal memnuniyetsizlik ve içe dönme. Yenilenme çağrısı.",
+      "en": "Four of Cups: emotional discontent and introspection. A call to renewal.",
+      "sr": "Pehar Četvorka: emotivno nezadovoljstvo i introspekcija. Poziv na obnovu."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kupalar Dörtlüsü ne demek?", "acceptedAnswer": { "@type": "Answer", "text": "Mevcut duygusal tatminsizlik, fırsatları görmeme ya da içe kapanma halidir." } },
+        { "@type": "Question", "name": "Ters Kupalar Dörtlüsü ne işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Fırsatları fark etme, farkındalık ve harekete geçme zamanı olabilir." } },
+        { "@type": "Question", "name": "Aşkta ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkide duygusal soğuma veya farkındalık gerektiren bir dönem." } },
+        { "@type": "Question", "name": "Kariyerde neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Mevcut işte tatminsizlik; yeni yönler araştırmak faydalı olabilir." } }
+      ]
+    }
+  },
+  {
+    "id": "cups_five",
+    "card": { "tr": "Kupalar Beşlisi", "en": "Five of Cups", "sr": "Pehar Petica" },
+    "title": {
+      "tr": "Kupalar Beşlisi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Five of Cups — Meaning, Love & Career | busbuskimki",
+      "sr": "Pehar Petica — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kupalar Beşlisi: kayıp, üzüntü ve duygusal toparlanma süreci. Kabullenme zamanı.",
+      "en": "Five of Cups: loss, sorrow and emotional recovery. Time to grieve and heal.",
+      "sr": "Pehar Petica: gubitak, tuga i emocionalni oporavak. Vreme za tugovanje i isceljenje."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kupalar Beşlisi neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Duygusal kayıplar, hayal kırıklığı ve yas sürecini temsil eder." } },
+        { "@type": "Question", "name": "Ters Kupalar Beşlisi ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Kayıplardan öğrenme, umut bulma ve yeniden ayağa kalkma enerjisi." } },
+        { "@type": "Question", "name": "Aşkta neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Ayrılık sonrası yas süreci veya duygusal toparlanma dönemi." } },
+        { "@type": "Question", "name": "Kariyerde anlamı nedir?", "acceptedAnswer": { "@type": "Answer", "text": "Kaçırılan fırsatlar veya iş kaybı sonrası yeniden yapılanma." } }
+      ]
+    }
+  },
+  {
+    "id": "cups_six",
+    "card": { "tr": "Kupalar Altılısı", "en": "Six of Cups", "sr": "Pehar Šestica" },
+    "title": {
+      "tr": "Kupalar Altılısı — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Six of Cups — Meaning, Love & Career | busbuskimki",
+      "sr": "Pehar Šestica — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kupalar Altılısı: nostalji, geçmişin sıcak anıları ve masum sevgi hatırlatması.",
+      "en": "Six of Cups: nostalgia, warm memories from the past and innocent love reminders.",
+      "sr": "Pehar Šestica: nostalgija, tople uspomene iz prošlosti i podsećanje na nevinu ljubav."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kupalar Altılısı ne simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Geçmişin tatlı anılarını, nostalji ve şefkat hissini temsil eder." } },
+        { "@type": "Question", "name": "Ters Kupalar Altılısı ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "Geçmişe fazla bağlı kalma, ilerlemeyi engelleme riski olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl yorumlanır?", "acceptedAnswer": { "@type": "Answer", "text": "Eski flörtler, yeniden bağlantı veya nostaljik romantizm ortaya çıkabilir." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Geçmiş deneyimlerden öğrenme, sıcak ekip ilişkileri ve destek." } }
+      ]
+    }
+  },
+  {
+    "id": "cups_seven",
+    "card": { "tr": "Kupalar Yedilisi", "en": "Seven of Cups", "sr": "Pehar Sedmica" },
+    "title": {
+      "tr": "Kupalar Yedilisi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Seven of Cups — Meaning, Love & Career | busbuskimki",
+      "sr": "Pehar Sedmica — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kupalar Yedilisi: seçenekler, hayaller ve duygusal vizyonlar. Karar zamanı.",
+      "en": "Seven of Cups: options, dreams and emotional visions. Time to choose wisely.",
+      "sr": "Pehar Sedmica: opcije, snovi i emotivne vizije. Vreme za mudro odabiranje."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kupalar Yedilisi neyi anlatır?", "acceptedAnswer": { "@type": "Answer", "text": "Çok sayıda duygusal seçenek, hayaller ve yanılsama ihtimalini gösterir." } },
+        { "@type": "Question", "name": "Ters Kupalar Yedilisi ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "Netlik kazanma, yanılsamalardan arınma ve gerçekçi seçim yapma zamanı." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Birden fazla seçenek veya idealize edilmiş beklentileri gözden geçirme gereği." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Fırsatlar arasında seçim yapma, gerçekçi kriterlerle değerlendirme önemli." } }
+      ]
+    }
+  },
+  {
+    "id": "cups_eight",
+    "card": { "tr": "Kupalar Sekizlisi", "en": "Eight of Cups", "sr": "Pehar Osmica" },
+    "title": {
+      "tr": "Kupalar Sekizlisi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Eight of Cups — Meaning, Love & Career | busbuskimki",
+      "sr": "Pehar Osmica — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kupalar Sekizlisi: ayrılma, bırakma ve içsel yolculuğa çıkma ihtiyacı.",
+      "en": "Eight of Cups: leaving behind, letting go and embarking on an inner journey.",
+      "sr": "Pehar Osmica: napuštanje, otpuštanje i ulazak na unutrašnje putovanje."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kupalar Sekizlisi ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Eski bağları bırakma, kişisel arayışa çıkma ve olgunlaşma sürecidir." } },
+        { "@type": "Question", "name": "Ters Kupalar Sekizlisi neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Kaçış, bağları koparamama veya duygusal takılma görülebilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkiden ayrılma, kendini bulma veya yeni yol arayışı anlamı taşır." } },
+        { "@type": "Question", "name": "Kariyerde neyi ifade eder?", "acceptedAnswer": { "@type": "Answer", "text": "Mevcut işten ayrılma, yeni bir kariyer yoluna yönelme ihtiyacı." } }
+      ]
+    }
+  },
+  {
+    "id": "cups_nine",
+    "card": { "tr": "Kupalar Dokuzlusu", "en": "Nine of Cups", "sr": "Pehar Devetka" },
+    "title": {
+      "tr": "Kupalar Dokuzlusu — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Nine of Cups — Meaning, Love & Career | busbuskimki",
+      "sr": "Pehar Devetka — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kupalar Dokuzlusu: dileklerin gerçekleşmesi, tatmin ve duygusal doyum.",
+      "en": "Nine of Cups: wishes fulfilled, contentment and emotional satisfaction.",
+      "sr": "Pehar Devetka: ispunjenje želja, zadovoljstvo i emotivna ispunjenost."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kupalar Dokuzlusu neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Dileklerin gerçekleşmesi, mutluluk ve içsel tatmin dönemi." } },
+        { "@type": "Question", "name": "Ters Kupalar Dokuzlusu ne ifade eder?", "acceptedAnswer": { "@type": "Answer", "text": "Yüzeysel tatmin, doyumsuzluk ya da aşırı öz-odaklanma riski olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Duygusal tatmin, ilişkide huzur ve arzuların gerçekleşmesi." } },
+        { "@type": "Question", "name": "Kariyerde neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "İstenen hedeflere ulaşma, tatmin edici sonuçlar ve ödüller." } }
+      ]
+    }
+  },
+  {
+    "id": "cups_ten",
+    "card": { "tr": "Kupalar Onlusu", "en": "Ten of Cups", "sr": "Pehar Desetka" },
+    "title": {
+      "tr": "Kupalar Onlusu — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Ten of Cups — Meaning, Love & Career | busbuskimki",
+      "sr": "Pehar Desetka — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kupalar Onlusu: aile, uyum ve duygusal tamamlanma. Kalıcı mutluluk.",
+      "en": "Ten of Cups: family harmony, emotional completion and lasting happiness.",
+      "sr": "Pehar Desetka: porodična harmonija, emotivno ispunjenje i trajna sreća."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kupalar Onlusu ne demek?", "acceptedAnswer": { "@type": "Answer", "text": "Aile uyumu, duygusal tamamlanma ve uzun vadeli mutluluğu temsil eder." } },
+        { "@type": "Question", "name": "Ters Kupalar Onlusu neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Uyumsuzluk, aile içi problemler veya beklenti kırıklığı olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Kalıcı ve tatmin edici ilişkiler potansiyeli, aile mutluluğu." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "İş-yaşam dengesi, tatmin edici çalışma ortamı ve duygusal destek." } }
+      ]
+    }
+  },
+  {
+    "id": "cups_page",
+    "card": { "tr": "Kupalar Prensi", "en": "Page of Cups", "sr": "Paž Pehara" },
+    "title": {
+      "tr": "Kupalar Prensi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Page of Cups — Meaning, Love & Career | busbuskimki",
+      "sr": "Paž Pehara — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kupalar Prensi: sezgisel haberler, sürprizler ve duygusal merak. Yumuşak mesajlar.",
+      "en": "Page of Cups: intuitive messages, surprises and emotional curiosity. Gentle news.",
+      "sr": "Paž Pehara: intuitivne poruke, iznenađenja i emotivna znatiželja. Nježne vesti."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kupalar Prensi ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Sezgisel mesajlar, duygusal başlangıçlar ve yaratıcı hayal gücünü temsil eder." } },
+        { "@type": "Question", "name": "Ters Kupalar Prensi ne olur?", "acceptedAnswer": { "@type": "Answer", "text": "Duygusal olgunlaşmamışlık, yüzeysel yaklaşımlar veya hayal kırıklıkları olabilir." } },
+        { "@type": "Question", "name": "Aşkta ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Sürpriz ilgi, duygusal haberler veya masum romantizm getirir." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Kreatif teklif veya duygusal zekâyla ilerleme fırsatı." } }
+      ]
+    }
+  },
+  {
+    "id": "cups_knight",
+    "card": { "tr": "Kupalar Şövalyesi", "en": "Knight of Cups", "sr": "Vitez Pehara" },
+    "title": {
+      "tr": "Kupalar Şövalyesi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Knight of Cups — Meaning, Love & Career | busbuskimki",
+      "sr": "Vitez Pehara — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kupalar Şövalyesi: romantik adımlar, duygusal teklifler ve nazik ifade. Kalpten hareket.",
+      "en": "Knight of Cups: romantic gestures, emotional offers and gentle expression. Move from the heart.",
+      "sr": "Vitez Pehara: romantični gestovi, emotivni pozivi i blago izražavanje. Djelujte iz srca."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kupalar Şövalyesi neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Romantizm, teklif etme ve duyguların nazikçe ifade edilmesidir." } },
+        { "@type": "Question", "name": "Ters Kupalar Şövalyesi ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "Aşırı idealizm, kararsızlık veya gerçekçilik eksikliği olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Romantik teklif veya duygusal bir yaklaşım beklenir." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "İşte duygusal zekâ gerektiren roller ve yaratıcı teklifler olabilir." } }
+      ]
+    }
+  },
+  {
+    "id": "cups_queen",
+    "card": { "tr": "Kupalar Kraliçesi", "en": "Queen of Cups", "sr": "Kraljica Pehara" },
+    "title": {
+      "tr": "Kupalar Kraliçesi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Queen of Cups — Meaning, Love & Career | busbuskimki",
+      "sr": "Kraljica Pehara — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kupalar Kraliçesi: şefkat, sezgi ve duygusal olgunluk. Empatik rehberlik.",
+      "en": "Queen of Cups: compassion, intuition and emotional maturity. An empathetic guide.",
+      "sr": "Kraljica Pehara: saosećanje, intuicija i emotivna zrelost. Empatični vodič."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kupalar Kraliçesi ne demek?", "acceptedAnswer": { "@type": "Answer", "text": "Derin şefkat, sezgi ve başkalarına duygusal rehberlik sunmayı temsil eder." } },
+        { "@type": "Question", "name": "Ters Kupalar Kraliçesi neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Duygusal dengesizlik, aşırı bağımlılık veya manipülasyon riski olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Şefkatli, destekleyici ve sezgisel bir partnerlik işareti." } },
+        { "@type": "Question", "name": "Kariyerde neyi ifade eder?", "acceptedAnswer": { "@type": "Answer", "text": "Empatik liderlik, danışmanlık veya destekleyici roller uygun." } }
+      ]
+    }
+  },
+  {
+    "id": "cups_king",
+    "card": { "tr": "Kupalar Kralı", "en": "King of Cups", "sr": "Kral Pehara" },
+    "title": {
+      "tr": "Kupalar Kralı — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "King of Cups — Meaning, Love & Career | busbuskimki",
+      "sr": "Kral Pehara — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kupalar Kralı: duygusal denge, olgun liderlik ve şefkatli güç. Sakin rehber.",
+      "en": "King of Cups: emotional balance, mature leadership and compassionate strength.",
+      "sr": "Kral Pehara: emotivna ravnoteža, zrelo vođstvo i saosećajna snaga."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kupalar Kralı neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Duygusal olgunluk, denge ve şefkatle liderlik etmeyi temsil eder." } },
+        { "@type": "Question", "name": "Ters Kupalar Kralı ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Duygusal manipülasyon, soğukluk veya kontrolsüz duygular görülebilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Güven veren, dengeli ve olgun bir partnerlik potansiyeli." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Duygusal zekâyla liderlik, kriz yönetimi ve stabil rehberlik." } }
+      ]
+    }
+  },
+  {
+    "id": "swords_ace",
+    "card": { "tr": "Kılıçlar Ası", "en": "Ace of Swords", "sr": "Mač As" },
+    "title": {
+      "tr": "Kılıçlar Ası — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Ace of Swords — Meaning, Love & Career | busbuskimki",
+      "sr": "Mač As — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kılıçlar Ası: netlik, gerçekler ve zihinsel uyanış. Gerçeği konuşma zamanı.",
+      "en": "Ace of Swords: clarity, truth and mental breakthrough. Time to speak truth.",
+      "sr": "Mač As: jasnoća, istina i mentalni proboj. Vreme da govorite istinu."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kılıçlar Ası ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Zihinsel netlik, hakikat ve gerçekçi değerlendirme zamanıdır." } },
+        { "@type": "Question", "name": "Ters Kılıçlar Ası neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Kafa karışıklığı, yanlış bilgilendirme veya karanlık düşünceler olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Açıkça konuşma, sınırlar belirleme veya gerçekleri paylaşma ihtiyacı." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Zihinsel odaklanma, stratejik netlik ve karar verme anı." } }
+      ]
+    }
+  },
+  {
+    "id": "swords_two",
+    "card": { "tr": "Kılıçlar İkilisi", "en": "Two of Swords", "sr": "Mač Dvojka" },
+    "title": {
+      "tr": "Kılıçlar İkilisi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Two of Swords — Meaning, Love & Career | busbuskimki",
+      "sr": "Mač Dvojka — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kılıçlar İkilisi: kararsızlık, iç çatışma ve denge arayışı. Seçim zorluğu.",
+      "en": "Two of Swords: indecision, inner conflict and balance-seeking. Tough choice.",
+      "sr": "Mač Dvojka: neodlučnost, unutrašnji konflikt i traženje ravnoteže. Težak izbor."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kılıçlar İkilisi ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "Karar verememe, dengede kalma çabası ve zihinsel blokları gösterir." } },
+        { "@type": "Question", "name": "Ters Kılıçlar İkilisi neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Karar verme zamanı geldi; erteleme artık çözüm değil." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Duygular ve mantık arasında kalma; netlik gereklidir." } },
+        { "@type": "Question", "name": "Kariyerde neyi ifade eder?", "acceptedAnswer": { "@type": "Answer", "text": "İkili seçenekler, stratejik karar anı veya bekleme süreci." } }
+      ]
+    }
+  },
+  {
+    "id": "swords_three",
+    "card": { "tr": "Kılıçlar Üçlüsü", "en": "Three of Swords", "sr": "Mač Trojka" },
+    "title": {
+      "tr": "Kılıçlar Üçlüsü — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Three of Swords — Meaning, Love & Career | busbuskimki",
+      "sr": "Mač Trojka — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kılıçlar Üçlüsü: kırık kalp, acı ve yüzleşme. Şifa süreci başlar.",
+      "en": "Three of Swords: heartbreak, pain and necessary confrontation. Healing begins.",
+      "sr": "Mač Trojka: slomljeno srce, bol i neophodan obračun. Isceljivanje počinje."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kılıçlar Üçlüsü ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Duygusal acı, hayal kırıklığı ve kalp yaralanmalarını temsil eder." } },
+        { "@type": "Question", "name": "Ters Kılıçlar Üçlüsü ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "Şifa, affetme veya acının azalması sürecini işaret eder." } },
+        { "@type": "Question", "name": "Aşkta neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Ayrılık, ihaneti hissetme ya da kalp acısı tecrübesi." } },
+        { "@type": "Question", "name": "Kariyerde nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Hayal kırıklığı, iş kaybı ya da zor kararların sonucu olabilir." } }
+      ]
+    }
+  },
+  {
+    "id": "swords_four",
+    "card": { "tr": "Kılıçlar Dörtlüsü", "en": "Four of Swords", "sr": "Mač Četvorka" },
+    "title": {
+      "tr": "Kılıçlar Dörtlüsü — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Four of Swords — Meaning, Love & Career | busbuskimki",
+      "sr": "Mač Četvorka — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kılıçlar Dörtlüsü: dinlenme, iyileşme ve geri çekilme. Yenilenme için mola.",
+      "en": "Four of Swords: rest, recuperation and retreat. A pause for renewal.",
+      "sr": "Mač Četvorka: odmor, oporavak i povlačenje. Pauza za obnovu."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kılıçlar Dörtlüsü ne demek?", "acceptedAnswer": { "@type": "Answer", "text": "Geri çekilme, dinlenme ve zihinsel iyileşme dönemini gösterir." } },
+        { "@type": "Question", "name": "Ters Kılıçlar Dörtlüsü ne işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Aşırı dinlenme, hareketsizlik ya da kaçma eğilimi olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkide mola, duygusal yenilenme veya düşünme süreci." } },
+        { "@type": "Question", "name": "Kariyerde neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Mola verme, toparlanma ve strateji gözden geçirme zamanı." } }
+      ]
+    }
+  },
+  {
+    "id": "swords_five",
+    "card": { "tr": "Kılıçlar Beşlisi", "en": "Five of Swords", "sr": "Mač Petica" },
+    "title": {
+      "tr": "Kılıçlar Beşlisi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Five of Swords — Meaning, Love & Career | busbuskimki",
+      "sr": "Mač Petica — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kılıçlar Beşlisi: çatışma, kazanç uğruna kayıplar ve etik sorgulama. Dikkatli ol.",
+      "en": "Five of Swords: conflict, winning at a cost and ethical questioning. Be cautious.",
+      "sr": "Mač Petica: konflikt, pobeda po cenu i etičko preispitivanje. Budite oprezni."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kılıçlar Beşlisi neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Çatışma, zaferin bedeli ve ilişkilerde zorlayıcı dinamikleri gösterir." } },
+        { "@type": "Question", "name": "Ters Kılıçlar Beşlisi ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Uzlaşma, yaptırım sonrası pişmanlık veya barışma fırsatı olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Sürtüşmeler, manipülasyon veya kazanç uğruna zarar verme riskleri." } },
+        { "@type": "Question", "name": "Kariyerde işareti nedir?", "acceptedAnswer": { "@type": "Answer", "text": "Ofiste çekişmeler, ikili hesaplar veya etik sorunlara dikkat." } }
+      ]
+    }
+  },
+  {
+    "id": "swords_six",
+    "card": { "tr": "Kılıçlar Altılısı", "en": "Six of Swords", "sr": "Mač Šestica" },
+    "title": {
+      "tr": "Kılıçlar Altılısı — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Six of Swords — Meaning, Love & Career | busbuskimki",
+      "sr": "Mač Šestica — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kılıçlar Altılısı: geçiş, seyahat ve iyileşme yolculuğu. Zorluğu geride bırakma.",
+      "en": "Six of Swords: transition, travel and journey toward healing. Leaving hardship behind.",
+      "sr": "Mač Šestica: tranzicija, putovanje i put ka isceljenju. Odlazak od teškoća."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kılıçlar Altılısı neyi temsil eder?", "acceptedAnswer": { "@type": "Answer", "text": "Geçiş süreci, uzaklaşma ve daha sakin bir döneme yönelme arzusu." } },
+        { "@type": "Question", "name": "Ters Kılıçlar Altılısı ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Geçişin başarısızlığı, kaçış ya da çözülmemiş sorunlar olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl yorumlanır?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkide bir dönemi geride bırakma veya uzaklaşma ihtiyacı." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Taşınma, departman değişimi veya yeni bir başlangıca doğru ilerleme." } }
+      ]
+    }
+  },
+  {
+    "id": "swords_seven",
+    "card": { "tr": "Kılıçlar Yedilisi", "en": "Seven of Swords", "sr": "Mač Sedmica" },
+    "title": {
+      "tr": "Kılıçlar Yedilisi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Seven of Swords — Meaning, Love & Career | busbuskimki",
+      "sr": "Mač Sedmica — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kılıçlar Yedilisi: sinsi stratejiler, kaçış ve dürüstlük sorgusu. Dikkatli ilerle.",
+      "en": "Seven of Swords: stealthy strategies, avoidance and honesty questioning. Proceed carefully.",
+      "sr": "Mač Sedmica: prikriveni planovi, izbegavanje i pitanje iskrenosti. Napredujte oprezno."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kılıçlar Yedilisi neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Saklanan niyetler, stratejik kaçış veya dürüstlük sorgulanmasıdır." } },
+        { "@type": "Question", "name": "Ters Kılıçlar Yedilisi ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Hataların açığa çıkması, dürüstlüğe dönme veya açıklık olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl yorumlanır?", "acceptedAnswer": { "@type": "Answer", "text": "Gizli davranışlar, dürüstlük eksikliği veya ilişkiye itimat sorunu." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Sinsi politikalar, gizli planlar veya etik sınırların zorlanması." } }
+      ]
+    }
+  },
+  {
+    "id": "swords_eight",
+    "card": { "tr": "Kılıçlar Sekizlisi", "en": "Eight of Swords", "sr": "Mač Osmica" },
+    "title": {
+      "tr": "Kılıçlar Sekizlisi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Eight of Swords — Meaning, Love & Career | busbuskimki",
+      "sr": "Mač Osmica — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kılıçlar Sekizlisi: zihinsel kısıtlanma, çaresizlik hissi ve sınırlamalar. Bakış açısı değişebilir.",
+      "en": "Eight of Swords: mental restriction, feeling trapped and limiting beliefs. Perspective can shift.",
+      "sr": "Mač Osmica: mentalna ograničenja, osećaj zatočenosti i ograničavajuća uverenja. Perspektiva se može promeniti."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kılıçlar Sekizlisi neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Zihinsel tuzaklar, kısıtlanmışlık ve çıkış yolu görememe hissini temsil eder." } },
+        { "@type": "Question", "name": "Ters Kılıçlar Sekizlisi ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Sınırların farkına varma, özgürleşme ve zihinsel engelleri aşma zamanı." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkide sıkışmış hissetme veya seçimlerde kısıtlanma durumu." } },
+        { "@type": "Question", "name": "Kariyerde neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "İş yerinde kısıtlanma hissi, ilerlemeyi engelleyen düşünce kalıpları." } }
+      ]
+    }
+  },
+  {
+    "id": "swords_nine",
+    "card": { "tr": "Kılıçlar Dokuzlusu", "en": "Nine of Swords", "sr": "Mač Devetka" },
+    "title": {
+      "tr": "Kılıçlar Dokuzlusu — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Nine of Swords — Meaning, Love & Career | busbuskimki",
+      "sr": "Mač Devetka — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kılıçlar Dokuzlusu: endişe, uykusuzluk ve zihinsel sıkıntı. Korkularla yüzleşme zamanı.",
+      "en": "Nine of Swords: anxiety, sleeplessness and mental distress. Time to face fears.",
+      "sr": "Mač Devetka: anksioznost, nesanica i mentalna patnja. Vreme da se suočite sa strahovima."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kılıçlar Dokuzlusu neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Gece uykusuzluğu, kaygı ve zihinsel sıkıntı dönemidir." } },
+        { "@type": "Question", "name": "Ters Kılıçlar Dokuzlusu neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Korkularla yüzleşme, kaygının azalması veya destek arama eğilimi." } },
+        { "@type": "Question", "name": "Aşkta nasıl yorumlanır?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkide kaygı, kıskançlık veya sürekli endişe hali." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "İş stresi, performans kaygıları veya iş ile ilgili endişeler." } }
+      ]
+    }
+  },
+  {
+    "id": "swords_ten",
+    "card": { "tr": "Kılıçlar Onlusu", "en": "Ten of Swords", "sr": "Mač Desetka" },
+    "title": {
+      "tr": "Kılıçlar Onlusu — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Ten of Swords — Meaning, Love & Career | busbuskimki",
+      "sr": "Mač Desetka — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kılıçlar Onlusu: zor bir son, kırılma ve nihai bitiş. Yeniden doğuş potansiyeli taşır.",
+      "en": "Ten of Swords: painful ending, rupture and final closure. Potential for rebirth.",
+      "sr": "Mač Desetka: bolan kraj, raskid i konačno zatvaranje. Potencijal za preporod."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kılıçlar Onlusu neyi temsil eder?", "acceptedAnswer": { "@type": "Answer", "text": "Ağır sonlanma, ihanete uğrama hissi veya zorlayıcı kapanışı temsil eder." } },
+        { "@type": "Question", "name": "Ters Kılıçlar Onlusu ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "İyileşme, toparlanma ve yeni başlangıç için alan açma anlamı." } },
+        { "@type": "Question", "name": "Aşkta nasıl yorumlanır?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkinin sert bir sonu veya ihanete bağlı derin yara gösterebilir." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Projede ani sonlanma, işten çıkarılma veya radikal değişiklikler." } }
+      ]
+    }
+  },
+  {
+    "id": "swords_page",
+    "card": { "tr": "Kılıçlar Valesi", "en": "Page of Swords", "sr": "Paž Mačeva" },
+    "title": {
+      "tr": "Kılıçlar Valesi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Page of Swords — Meaning, Love & Career | busbuskimki",
+      "sr": "Paž Mačeva — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kılıçlar Valesi: meraklı zihin, fikirlerin habercisi ve gözetleme enerjisi.",
+      "en": "Page of Swords: inquisitive mind, messenger of ideas and watchful energy.",
+      "sr": "Paž Mačeva: radoznali um, glasnik ideja i budna energija."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kılıçlar Valesi ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Zihin açıklığı, soru sorma ve yeni bilgiyi takip etme isteğidir." } },
+        { "@type": "Question", "name": "Ters Kılıçlar Valesi neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Dedikodu, yanlış bilgi yayma veya saldırgan iletişim riski." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Meraklı flört, açık konuşma ve sınırları test etme durumu." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Araştırma, bilgi toplama ve entelektüel görevler için uygun." } }
+      ]
+    }
+  },
+  {
+    "id": "swords_knight",
+    "card": { "tr": "Kılıçlar Şövalyesi", "en": "Knight of Swords", "sr": "Vitez Mačeva" },
+    "title": {
+      "tr": "Kılıçlar Şövalyesi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Knight of Swords — Meaning, Love & Career | busbuskimki",
+      "sr": "Vitez Mačeva — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kılıçlar Şövalyesi: hızlı düşünme, sert eylem ve kararlı iletişim. Hızlı adımlar.",
+      "en": "Knight of Swords: quick thinking, decisive action and assertive communication.",
+      "sr": "Vitez Mačeva: brzo razmišljanje, odlučno delovanje i asertivna komunikacija."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kılıçlar Şövalyesi neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Hızlı eylem, kararlı düşünce ve net söylemi temsil eder." } },
+        { "@type": "Question", "name": "Ters Kılıçlar Şövalyesi ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Düşüncesiz acelecilik, saldırgan tavırlar veya hatalı kararlar riski." } },
+        { "@type": "Question", "name": "Aşkta nasıl yorumlanır?", "acceptedAnswer": { "@type": "Answer", "text": "Ani teklifler, dramatik hareketler veya sözlü açıklamalar olabilir." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Hızlı projeler, ileri atılma ve net iletişim gerektiren roller." } }
+      ]
+    }
+  },
+  {
+    "id": "swords_queen",
+    "card": { "tr": "Kılıçlar Kraliçesi", "en": "Queen of Swords", "sr": "Kraljica Mačeva" },
+    "title": {
+      "tr": "Kılıçlar Kraliçesi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Queen of Swords — Meaning, Love & Career | busbuskimki",
+      "sr": "Kraljica Mačeva — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kılıçlar Kraliçesi: netlik, objektif zeka ve dürüst iletişim. Keskin sezgi.",
+      "en": "Queen of Swords: clarity, objective intellect and honest communication. Keen insight.",
+      "sr": "Kraljica Mačeva: jasnoća, objektivni intelekt i iskrena komunikacija. Oštro razumevanje."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kılıçlar Kraliçesi ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "Akılcı, objektif ve net ifade kabiliyeti ile bilgelik sunar." } },
+        { "@type": "Question", "name": "Ters Kılıçlar Kraliçesi neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Soğukluk, kırıcı sözler veya aşırı eleştirellik riski olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl yorumlanır?", "acceptedAnswer": { "@type": "Answer", "text": "Dürüstlük ve net sınırlarla kurulan ilişkiler önerir." } },
+        { "@type": "Question", "name": "Kariyerde neyi ifade eder?", "acceptedAnswer": { "@type": "Answer", "text": "Analitik roller, karar alma ve politik dengeler için uygundur." } }
+      ]
+    }
+  },
+  {
+    "id": "swords_king",
+    "card": { "tr": "Kılıçlar Kralı", "en": "King of Swords", "sr": "Kral Mačeva" },
+    "title": {
+      "tr": "Kılıçlar Kralı — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "King of Swords — Meaning, Love & Career | busbuskimki",
+      "sr": "Kral Mačeva — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Kılıçlar Kralı: adalet, mantık ve stratejik karar verme. Akıllıca yönetim.",
+      "en": "King of Swords: justice, logic and strategic decision-making. Wise governance.",
+      "sr": "Kral Mačeva: pravda, logika i strateško donošenje odluka. Mudro upravljanje."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kılıçlar Kralı neyi temsil eder?", "acceptedAnswer": { "@type": "Answer", "text": "Mantıklı liderlik, adalet ve stratejik zihniyet sunar." } },
+        { "@type": "Question", "name": "Ters Kılıçlar Kralı ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Tiranlık, soğuk otorite veya sert kararlar riski olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl yorumlanır?", "acceptedAnswer": { "@type": "Answer", "text": "Düşünceli ama mesafeli ilişkiler; mantığın sözünü dinleyen partner." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Hukuk, politika veya stratejik yönetim rolleriyle ilişkilidir." } }
+      ]
+    }
+  },
+  {
+    "id": "pentacles_ace",
+    "card": { "tr": "Tılsımlar Ası", "en": "Ace of Pentacles", "sr": "Novčić As" },
+    "title": {
+      "tr": "Tılsımlar Ası — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Ace of Pentacles — Meaning, Love & Career | busbuskimki",
+      "sr": "Novčić As — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Tılsımlar Ası: yeni maddi fırsatlar, güven ve somut başlangıç. Kaynakların yeşermesi.",
+      "en": "Ace of Pentacles: fresh material opportunities, security and tangible new starts.",
+      "sr": "Novčić As: nove materijalne prilike, sigurnost i opipljivi novi počeci."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Tılsımlar Ası ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Maddi başlangıçlar, güven ve yatırım fırsatlarını temsil eder." } },
+        { "@type": "Question", "name": "Ters Tılsımlar Ası neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Fırsatların kaçırılması, maddi gecikmeler veya temelsizlik riski." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Güven ve sağlam temellere dayanan ilişkiler kurulabilir." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Yeni iş fırsatı, gelir artışı veya yatırım başlangıcıdır." } }
+      ]
+    }
+  },
+  {
+    "id": "pentacles_two",
+    "card": { "tr": "Tılsımlar İkilisi", "en": "Two of Pentacles", "sr": "Novčić Dvojka" },
+    "title": {
+      "tr": "Tılsımlar İkilisi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Two of Pentacles — Meaning, Love & Career | busbuskimki",
+      "sr": "Novčić Dvojka — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Tılsımlar İkilisi: denge, çoklu sorumluluklar ve kaynak yönetimi. Esneklik gerektirir.",
+      "en": "Two of Pentacles: balance, juggling responsibilities and resource management. Be flexible.",
+      "sr": "Novčić Dvojka: balans, upravljanje obavezama i resursima. Budite fleksibilni."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Tılsımlar İkilisi ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "Sorumlulukları dengeleme, esneklik ve önceliklendirme durumudur." } },
+        { "@type": "Question", "name": "Ters Tılsımlar İkilisi neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Dengesizlik, dağılım hatası veya tükenme riski olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkide denge arayışı; zaman ve enerji paylaşımlarına dikkat." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Birden çok projeyi yönetme, esneklik ve organizasyon becerisi gerektirir." } }
+      ]
+    }
+  },
+  {
+    "id": "pentacles_three",
+    "card": { "tr": "Tılsımlar Üçlüsü", "en": "Three of Pentacles", "sr": "Novčić Trojka" },
+    "title": {
+      "tr": "Tılsımlar Üçlüsü — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Three of Pentacles — Meaning, Love & Career | busbuskimki",
+      "sr": "Novčić Trojka — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Tılsımlar Üçlüsü: iş birliği, zanaat ve uzmanlıkla başarı. Ekip çalışması önemlidir.",
+      "en": "Three of Pentacles: collaboration, craftsmanship and success through skillful teamwork.",
+      "sr": "Novčić Trojka: saradnja, zanatstvo i uspeh kroz vešt timski rad."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Tılsımlar Üçlüsü neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Ekip çalışması, beceri sergileme ve uzmanlıkla ilerleme fırsatıdır." } },
+        { "@type": "Question", "name": "Ters Tılsımlar Üçlüsü ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "İş birliği eksikliği, takdir görmeme veya kalite sorunları ortaya çıkabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl yorumlanır?", "acceptedAnswer": { "@type": "Answer", "text": "Ortak projeler, birlikte inşa etme ve karşılıklı destek temaları." } },
+        { "@type": "Question", "name": "Kariyerde neyi ifade eder?", "acceptedAnswer": { "@type": "Answer", "text": "Ustalık gerektiren işler, takım projeleri ve profesyonel tanınma." } }
+      ]
+    }
+  },
+  {
+    "id": "pentacles_four",
+    "card": { "tr": "Tılsımlar Dörtlüsü", "en": "Four of Pentacles", "sr": "Novčić Četvorka" },
+    "title": {
+      "tr": "Tılsımlar Dörtlüsü — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Four of Pentacles — Meaning, Love & Career | busbuskimki",
+      "sr": "Novčić Četvorka — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Tılsımlar Dörtlüsü: tutma, sahiplenme ve güvenlik arayışı. Esneklik gerekebilir.",
+      "en": "Four of Pentacles: holding on, possessiveness and security-seeking. Flexibility may be needed.",
+      "sr": "Novčić Četvorka: držanje, posedovanje i traženje sigurnosti. Potrebna fleksibilnost."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Tılsımlar Dörtlüsü ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Maddi güvenlik arayışı, tutma ve bazen sahiplenme davranışlarını simgeler." } },
+        { "@type": "Question", "name": "Ters Tılsımlar Dörtlüsü neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Açılma, paylaşma veya kontrolü bırakma fırsatı doğabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Kıskançlık, güven ihtiyaçları veya bağlılıkta titizlik görülebilir." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Güvence arayışı, tasarruf ve statü koruma eğilimi." } }
+      ]
+    }
+  },
+  {
+    "id": "pentacles_five",
+    "card": { "tr": "Tılsımlar Beşlisi", "en": "Five of Pentacles", "sr": "Novčić Petica" },
+    "title": {
+      "tr": "Tılsımlar Beşlisi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Five of Pentacles — Meaning, Love & Career | busbuskimki",
+      "sr": "Novčić Petica — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Tılsımlar Beşlisi: maddi zorluklar, dışlanmışlık ve destek arayışı. Yardım kabul et.",
+      "en": "Five of Pentacles: financial hardship, exclusion and the need to seek support.",
+      "sr": "Novčić Petica: finansijske teškoće, isključenost i potreba za podrškom."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Tılsımlar Beşlisi ne anlam taşır?", "acceptedAnswer": { "@type": "Answer", "text": "Maddi sıkıntı, dışlanmışlık ve zor dönemleri ifade eder." } },
+        { "@type": "Question", "name": "Ters Tılsımlar Beşlisi ne demek?", "acceptedAnswer": { "@type": "Answer", "text": "Destek bulma, toparlanma ve kaynaklara erişim artışı olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl yorumlanır?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkide dışlanma hissi veya maddi kaynakların etkisi görülebilir." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "İş kaybı, maddi zorluk veya kaynak sıkıntısı yaşanabilir." } }
+      ]
+    }
+  },
+  {
+    "id": "pentacles_six",
+    "card": { "tr": "Tılsımlar Altılısı", "en": "Six of Pentacles", "sr": "Novčić Šestica" },
+    "title": {
+      "tr": "Tılsımlar Altılısı — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Six of Pentacles — Meaning, Love & Career | busbuskimki",
+      "sr": "Novčić Šestica — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Tılsımlar Altılısı: cömertlik, denge ve kaynak paylaşımı. Ver ve al dengesi.",
+      "en": "Six of Pentacles: generosity, balance and fair distribution of resources.",
+      "sr": "Novčić Šestica: velikodušnost, ravnoteža i pravedna raspodela resursa."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Tılsımlar Altılısı neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Yardım, cömertlik ve kaynakların dengeli paylaşımını temsil eder." } },
+        { "@type": "Question", "name": "Ters Tılsımlar Altılısı ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Dengesiz yardım, karşılıklılık eksikliği veya suistimal riskleri olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Destekleyici ilişki dinamikleri ve adil paylaşım vurgulanır." } },
+        { "@type": "Question", "name": "Kariyerde neyi ifade eder?", "acceptedAnswer": { "@type": "Answer", "text": "Maddi destek, burs, prim veya adil ödeme fırsatları." } }
+      ]
+    }
+  },
+  {
+    "id": "pentacles_seven",
+    "card": { "tr": "Tılsımlar Yedilisi", "en": "Seven of Pentacles", "sr": "Novčić Sedmica" },
+    "title": {
+      "tr": "Tılsımlar Yedilisi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Seven of Pentacles — Meaning, Love & Career | busbuskimki",
+      "sr": "Novčić Sedmica — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Tılsımlar Yedilisi: sabır, değerlendirme ve emeklerin sonuçlarını bekleme. Sabırla gözle.",
+      "en": "Seven of Pentacles: patience, assessment and waiting for returns on effort.",
+      "sr": "Novčić Sedmica: strpljenje, procena i čekanje povrata uloženog truda."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Tılsımlar Yedilisi ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "Emeklerin değerlendirilmesi, sabırlı bekleyiş ve plan gözden geçirmesidir." } },
+        { "@type": "Question", "name": "Ters Tılsımlar Yedilisi neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Sabırsızlık, sonuçların gecikmesi veya yanlış yatırım uyarısı olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl yorumlanır?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkide yatırım yapma ve uzun vadeli çaba gerekliliği." } },
+        { "@type": "Question", "name": "Kariyerde neyi ifade eder?", "acceptedAnswer": { "@type": "Answer", "text": "Uzun vadeli projeler, geri dönüşleri zaman alacak yatırımlar." } }
+      ]
+    }
+  },
+  {
+    "id": "pentacles_eight",
+    "card": { "tr": "Tılsımlar Sekizlisi", "en": "Eight of Pentacles", "sr": "Novčić Osmica" },
+    "title": {
+      "tr": "Tılsımlar Sekizlisi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Eight of Pentacles — Meaning, Love & Career | busbuskimki",
+      "sr": "Novčić Osmica — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Tılsımlar Sekizlisi: ustalık, disiplin ve çalışma ile gelişme. Usta olma süreci.",
+      "en": "Eight of Pentacles: mastery, discipline and growth through focused work.",
+      "sr": "Novčić Osmica: majstorstvo, disciplina i rast kroz fokusiran rad."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Tılsımlar Sekizlisi neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Ustalık kazanma, disiplinli çalışma ve becerileri geliştirme sürecidir." } },
+        { "@type": "Question", "name": "Ters Tılsımlar Sekizlisi ne olur?", "acceptedAnswer": { "@type": "Answer", "text": "Rutin bıkkınlığı, motivasyon kaybı veya kalite düşüşü görülebilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkide emek harcama, ilişkiyi geliştirme çabası gerektirir." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Usta işçilik, mesleki eğitim ve profesyonel gelişim fırsatları." } }
+      ]
+    }
+  },
+  {
+    "id": "pentacles_nine",
+    "card": { "tr": "Tılsımlar Dokuzlusu", "en": "Nine of Pentacles", "sr": "Novčić Devetka" },
+    "title": {
+      "tr": "Tılsımlar Dokuzlusu — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Nine of Pentacles — Meaning, Love & Career | busbuskimki",
+      "sr": "Novčić Devetka — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Tılsımlar Dokuzlusu: bağımsızlık, lüks ve emeğin meyvesi. Kendi ayaklarında durma.",
+      "en": "Nine of Pentacles: independence, comfort and rewards of your own efforts.",
+      "sr": "Novčić Devetka: nezavisnost, udobnost i nagrade sopstvenog truda."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Tılsımlar Dokuzlusu neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Maddi bağımsızlık, rahatlık ve sıkı çalışmanın getirdiği ödüllerdir." } },
+        { "@type": "Question", "name": "Ters Tılsımlar Dokuzlusu ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Maddi güvensizlik, yalnızlık ya da aşırı lüks arayışı görülebilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl yorumlanır?", "acceptedAnswer": { "@type": "Answer", "text": "Bağımsız, kendine yeten ilişki dinamikleri ve özdeğer hissi." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Finansal güven, iyi kazanç ve profesyonel başarı sonucu." } }
+      ]
+    }
+  },
+  {
+    "id": "pentacles_ten",
+    "card": { "tr": "Tılsımlar Onlusu", "en": "Ten of Pentacles", "sr": "Novčić Desetka" },
+    "title": {
+      "tr": "Tılsımlar Onlusu — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Ten of Pentacles — Meaning, Love & Career | busbuskimki",
+      "sr": "Novčić Desetka — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Tılsımlar Onlusu: mir, aile serveti ve kuşaklar arası güvenlik. Miras ve istikrar.",
+      "en": "Ten of Pentacles: legacy, family wealth and multi-generational security.",
+      "sr": "Novčić Desetka: nasledstvo, porodično bogatstvo i sigurnost kroz generacije."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Tılsımlar Onlusu neyi temsil eder?", "acceptedAnswer": { "@type": "Answer", "text": "Aile istikrarı, miras ve uzun vadeli maddi güvenliği ifade eder." } },
+        { "@type": "Question", "name": "Ters Tılsımlar Onlusu ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "Aile içi çatışmalar, miras meseleleri veya maddi güvensizlik olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Kalıcı bağlar, aile kurma ve güven temaları ön plandadır." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Aile işi, uzun vadeli finansal güven veya büyük miraslar söz konusu olabilir." } }
+      ]
+    }
+  },
+  {
+    "id": "pentacles_page",
+    "card": { "tr": "Tılsımlar Valesi", "en": "Page of Pentacles", "sr": "Paž Novčića" },
+    "title": {
+      "tr": "Tılsımlar Valesi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Page of Pentacles — Meaning, Love & Career | busbuskimki",
+      "sr": "Paž Novčića — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Tılsımlar Valesi: öğrenme, pratikleşme ve maddi fırsatların habercisi. Eğitim zamanıdır.",
+      "en": "Page of Pentacles: learning, apprenticeship and sign of material opportunity.",
+      "sr": "Paž Novčića: učenje, praktikovanje i znak materijalne prilike."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Tılsımlar Valesi ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Eğitim, staj ve pratik adımlarla maddi yetenek geliştirmeyi işaret eder." } },
+        { "@type": "Question", "name": "Ters Tılsımlar Valesi neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Temelsiz planlar, öğrenme isteksizliği veya fırsatların kaçması olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl yorumlanır?", "acceptedAnswer": { "@type": "Answer", "text": "İlişkide somut adımlar atma, birlikte öğrenme ve büyüme önerir." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Yeni eğitim, pratik fırsatlar ve başlangıç aşamasındaki projeler." } }
+      ]
+    }
+  },
+  {
+    "id": "pentacles_knight",
+    "card": { "tr": "Tılsımlar Şövalyesi", "en": "Knight of Pentacles", "sr": "Vitez Novčića" },
+    "title": {
+      "tr": "Tılsımlar Şövalyesi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Knight of Pentacles — Meaning, Love & Career | busbuskimki",
+      "sr": "Vitez Novčića — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Tılsımlar Şövalyesi: sabır, disiplin ve güvenilir emeğin simgesi. İstikrar sağlanır.",
+      "en": "Knight of Pentacles: patience, discipline and dependable effort. Stability ensues.",
+      "sr": "Vitez Novčića: strpljenje, disciplina i pouzdan trud. Stabilnost sledi."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Tılsımlar Şövalyesi neyi simgeler?", "acceptedAnswer": { "@type": "Answer", "text": "Disiplinli çalışma, güvenilir ilerleme ve adım adım büyümeyi gösterir." } },
+        { "@type": "Question", "name": "Ters Tılsımlar Şövalyesi ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Aşırı temkinlilik, durağanlık veya değişime direnç görülebilir." } },
+        { "@type": "Question", "name": "Aşkta neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Güvenilir, istikrarlı ve adım adım ilerleyen ilişkiler." } },
+        { "@type": "Question", "name": "Kariyerde nasıl yorumlanır?", "acceptedAnswer": { "@type": "Answer", "text": "Sürekli çaba, güvenilir iş performansı ve profesyonel disiplin." } }
+      ]
+    }
+  },
+  {
+    "id": "pentacles_queen",
+    "card": { "tr": "Tılsımlar Kraliçesi", "en": "Queen of Pentacles", "sr": "Kraljica Novčića" },
+    "title": {
+      "tr": "Tılsımlar Kraliçesi — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "Queen of Pentacles — Meaning, Love & Career | busbuskimki",
+      "sr": "Kraljica Novčića — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Tılsımlar Kraliçesi: pratik sevgi, ev ve mali denge. Şefkatle yönetilen kaynaklar.",
+      "en": "Queen of Pentacles: practical care, home and financial balance. Nurturing stewardship.",
+      "sr": "Kraljica Novčića: praktična briga, dom i finansijska ravnoteža. Negujuće upravljanje."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Tılsımlar Kraliçesi ne anlama gelir?", "acceptedAnswer": { "@type": "Answer", "text": "Ev, para ve günlük yaşamın dengeli, şefkatle yönetilmesini temsil eder." } },
+        { "@type": "Question", "name": "Ters Tılsımlar Kraliçesi neyi gösterir?", "acceptedAnswer": { "@type": "Answer", "text": "Aşırı korumacılık, maddi kaygı veya konfor bağımlılığı olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Güvenli, destekleyici ve pratik bir ilişkisel yaklaşım önerir." } },
+        { "@type": "Question", "name": "Kariyerde neyi ifade eder?", "acceptedAnswer": { "@type": "Answer", "text": "İşlerde pratiklik, yönetim ve kaynak kullanımı becerileri öne çıkar." } }
+      ]
+    }
+  },
+  {
+    "id": "pentacles_king",
+    "card": { "tr": "Tılsımlar Kralı", "en": "King of Pentacles", "sr": "Kral Novčića" },
+    "title": {
+      "tr": "Tılsımlar Kralı — Anlamı, Aşk & Kariyer | busbuskimki",
+      "en": "King of Pentacles — Meaning, Love & Career | busbuskimki",
+      "sr": "Kral Novčića — Značenje, Ljubav & Karijera | busbuskimki"
+    },
+    "meta": {
+      "tr": "Tılsımlar Kralı: maddi güvenlik, yöneticilik ve başarılı yatırımcılık. Güçlü temeller.",
+      "en": "King of Pentacles: material security, stewardship and successful investment. Strong foundations.",
+      "sr": "Kral Novčića: materijalna sigurnost, upravljanje i uspešno investiranje. Snažni temelji."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Tılsımlar Kralı neyi temsil eder?", "acceptedAnswer": { "@type": "Answer", "text": "Maddi başarı, sorumluluk ve istikrarlı liderlikle ilişkilidir." } },
+        { "@type": "Question", "name": "Ters Tılsımlar Kralı ne demektir?", "acceptedAnswer": { "@type": "Answer", "text": "Mal odaklılık, cimrilik veya statü saplantısı riskleri olabilir." } },
+        { "@type": "Question", "name": "Aşkta nasıl okunur?", "acceptedAnswer": { "@type": "Answer", "text": "Güvenli, konforlu ve sağlam ilişkisel temeller sağlar." } },
+        { "@type": "Question", "name": "Kariyerde neyi işaret eder?", "acceptedAnswer": { "@type": "Answer", "text": "Başarılı yönetim, yatırım ve uzun vadeli kazanç fırsatları." } }
+      ]
+    }
+  }
+]

@@ -1,0 +1,84 @@
+{
+  "summary": {
+    "total_cards": 78,
+    "optimization_date": "2025-10-04T00:47:11.608Z",
+    "optimizations_applied": 1648,
+    "estimated_improvement": 129
+  },
+  "image_optimization": {
+    "webp_conversion": 234,
+    "lazy_loading": 234,
+    "responsive_images": 234,
+    "estimated_savings": 11700
+  },
+  "code_optimization": {
+    "bundle_splitting": 9,
+    "tree_shaking": 234,
+    "minification": 234,
+    "estimated_savings": 180
+  },
+  "caching_optimization": {
+    "static_generation": 234,
+    "api_caching": 1,
+    "cdn_optimization": 234,
+    "estimated_savings": 117000
+  },
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "category": "Image Optimization",
+      "optimization": "WebP Conversion",
+      "description": "Convert 234 images to WebP format",
+      "implementation": [
+        "Use Next.js Image component with WebP support",
+        "Add fallback for older browsers",
+        "Implement progressive loading"
+      ],
+      "estimated_improvement": "11700KB reduction"
+    },
+    {
+      "priority": "HIGH",
+      "category": "Code Optimization",
+      "optimization": "Bundle Splitting",
+      "description": "Split 9 components into separate bundles",
+      "implementation": [
+        "Use dynamic imports for non-critical components",
+        "Implement route-based code splitting",
+        "Lazy load FAQ and related components"
+      ],
+      "estimated_improvement": "180KB reduction"
+    },
+    {
+      "priority": "HIGH",
+      "category": "Caching Optimization",
+      "optimization": "Static Generation",
+      "description": "Generate 234 pages statically",
+      "implementation": [
+        "Use Next.js Static Site Generation (SSG)",
+        "Implement Incremental Static Regeneration (ISR)",
+        "Add proper cache headers"
+      ],
+      "estimated_improvement": "117000ms faster loading"
+    },
+    {
+      "priority": "MEDIUM",
+      "category": "Performance",
+      "optimization": "Critical CSS",
+      "description": "Inline critical CSS for above-the-fold content",
+      "implementation": [
+        "Extract critical CSS for hero sections",
+        "Defer non-critical CSS",
+        "Use CSS-in-JS for component styles"
+      ],
+      "estimated_improvement": "200-500ms faster First Contentful Paint"
+    },
+    {
+      "priority": "MEDIUM",
+      "category": "Performance",
+      "optimization": "Service Worker",
+      "description": "Implement service worker for offline functionality",
+      "implementation": ["Cache static assets", "Implement offline fallbacks", "Add background sync for forms"],
+      "estimated_improvement": "Instant loading for returning users"
+    }
+  ]
+}

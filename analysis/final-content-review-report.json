@@ -1,0 +1,2862 @@
+{
+  "summary": {
+    "total_cards": 78,
+    "review_date": "2025-10-04T09:52:56.483Z",
+    "overall_content_quality_score": 91,
+    "critical_issues_found": 110,
+    "content_recommendations": 1,
+    "production_readiness": "unknown"
+  },
+  "detailed_analysis": [
+    {
+      "card_id": "the_fool",
+      "card_name": {
+        "tr": "Deli",
+        "en": "The Fool",
+        "sr": "Luda"
+      },
+      "quality_score": 89,
+      "critical_issues": [
+        "TR: Meta description needs optimization (103 chars)",
+        "SR: Meta description needs optimization (113 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 103,
+          "content_word_count": 330,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 145,
+          "content_word_count": 393,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 113,
+          "content_word_count": 408,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "the_magician",
+      "card_name": {
+        "tr": "Büyücü",
+        "en": "The Magician",
+        "sr": "Čarobnjak"
+      },
+      "quality_score": 89,
+      "critical_issues": [
+        "TR: Meta description needs optimization (105 chars)",
+        "SR: Meta description needs optimization (118 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 105,
+          "content_word_count": 328,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 149,
+          "content_word_count": 397,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 118,
+          "content_word_count": 406,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "the_high_priestess",
+      "card_name": {
+        "tr": "Başrahibe",
+        "en": "The High Priestess",
+        "sr": "Prvosveštenica"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (108 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 108,
+          "content_word_count": 327,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 155,
+          "content_word_count": 407,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 123,
+          "content_word_count": 405,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "the_empress",
+      "card_name": {
+        "tr": "İmparatoriçe",
+        "en": "The Empress",
+        "sr": "Carica"
+      },
+      "quality_score": 90,
+      "critical_issues": [
+        "TR: Meta description needs optimization (111 chars)",
+        "SR: Meta description needs optimization (115 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 111,
+          "content_word_count": 325,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 148,
+          "content_word_count": 407,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 115,
+          "content_word_count": 403,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "the_emperor",
+      "card_name": {
+        "tr": "İmparator",
+        "en": "The Emperor",
+        "sr": "Car"
+      },
+      "quality_score": 90,
+      "critical_issues": [
+        "TR: Meta description needs optimization (108 chars)",
+        "SR: Meta description needs optimization (112 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 108,
+          "content_word_count": 325,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 148,
+          "content_word_count": 407,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 112,
+          "content_word_count": 403,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "the_hierophant",
+      "card_name": {
+        "tr": "Aziz",
+        "en": "The Hierophant",
+        "sr": "Vrhovnik"
+      },
+      "quality_score": 90,
+      "critical_issues": [
+        "TR: Meta description needs optimization (103 chars)",
+        "SR: Meta description needs optimization (117 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 103,
+          "content_word_count": 326,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 151,
+          "content_word_count": 408,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 117,
+          "content_word_count": 404,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "the_lovers",
+      "card_name": {
+        "tr": "Aşıklar",
+        "en": "The Lovers",
+        "sr": "Ljubavnici"
+      },
+      "quality_score": 90,
+      "critical_issues": [
+        "TR: Meta description needs optimization (106 chars)",
+        "SR: Meta description needs optimization (119 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 106,
+          "content_word_count": 325,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 147,
+          "content_word_count": 407,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 119,
+          "content_word_count": 403,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "the_chariot",
+      "card_name": {
+        "tr": "Savaş Arabası",
+        "en": "The Chariot",
+        "sr": "Kočija"
+      },
+      "quality_score": 90,
+      "critical_issues": [
+        "TR: Meta description needs optimization (112 chars)",
+        "SR: Meta description needs optimization (115 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 112,
+          "content_word_count": 337,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 148,
+          "content_word_count": 408,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 115,
+          "content_word_count": 404,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "strength",
+      "card_name": {
+        "tr": "Güç",
+        "en": "Strength",
+        "sr": "Snaga"
+      },
+      "quality_score": 89,
+      "critical_issues": [
+        "TR: Meta description needs optimization (102 chars)",
+        "SR: Meta description needs optimization (114 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 102,
+          "content_word_count": 328,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 145,
+          "content_word_count": 399,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 114,
+          "content_word_count": 406,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "the_hermit",
+      "card_name": {
+        "tr": "Ermiş",
+        "en": "The Hermit",
+        "sr": "Pustinjak"
+      },
+      "quality_score": 90,
+      "critical_issues": [
+        "TR: Meta description needs optimization (104 chars)",
+        "SR: Meta description needs optimization (118 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 104,
+          "content_word_count": 326,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 147,
+          "content_word_count": 408,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 118,
+          "content_word_count": 404,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "wheel_of_fortune",
+      "card_name": {
+        "tr": "Kader Çarkı",
+        "en": "Wheel of Fortune",
+        "sr": "Točak Sreće"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (110 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 110,
+          "content_word_count": 336,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 153,
+          "content_word_count": 418,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 120,
+          "content_word_count": 414,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "justice",
+      "card_name": {
+        "tr": "Adalet",
+        "en": "Justice",
+        "sr": "Pravda"
+      },
+      "quality_score": 89,
+      "critical_issues": [
+        "TR: Meta description needs optimization (105 chars)",
+        "SR: Meta description needs optimization (115 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 105,
+          "content_word_count": 324,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 144,
+          "content_word_count": 395,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 115,
+          "content_word_count": 402,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "the_hanged_man",
+      "card_name": {
+        "tr": "Asılan Adam",
+        "en": "The Hanged Man",
+        "sr": "Obešenik"
+      },
+      "quality_score": 90,
+      "critical_issues": [
+        "TR: Meta description needs optimization (110 chars)",
+        "SR: Meta description needs optimization (117 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 110,
+          "content_word_count": 336,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 151,
+          "content_word_count": 418,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 117,
+          "content_word_count": 403,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "death",
+      "card_name": {
+        "tr": "Ölüm",
+        "en": "Death",
+        "sr": "Smrt"
+      },
+      "quality_score": 89,
+      "critical_issues": [
+        "TR: Meta description needs optimization (103 chars)",
+        "SR: Meta description needs optimization (113 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 103,
+          "content_word_count": 326,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 142,
+          "content_word_count": 397,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 113,
+          "content_word_count": 404,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "temperance",
+      "card_name": {
+        "tr": "Denge",
+        "en": "Temperance",
+        "sr": "Umerenost"
+      },
+      "quality_score": 89,
+      "critical_issues": [
+        "TR: Meta description needs optimization (104 chars)",
+        "SR: Meta description needs optimization (118 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 104,
+          "content_word_count": 335,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 147,
+          "content_word_count": 394,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 118,
+          "content_word_count": 401,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "the_devil",
+      "card_name": {
+        "tr": "Şeytan",
+        "en": "The Devil",
+        "sr": "Đavo"
+      },
+      "quality_score": 90,
+      "critical_issues": [
+        "TR: Meta description needs optimization (105 chars)",
+        "SR: Meta description needs optimization (113 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 105,
+          "content_word_count": 324,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 146,
+          "content_word_count": 406,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 113,
+          "content_word_count": 402,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "the_tower",
+      "card_name": {
+        "tr": "Kule",
+        "en": "The Tower",
+        "sr": "Kula"
+      },
+      "quality_score": 90,
+      "critical_issues": [
+        "TR: Meta description needs optimization (103 chars)",
+        "SR: Meta description needs optimization (113 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 103,
+          "content_word_count": 327,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 146,
+          "content_word_count": 409,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 113,
+          "content_word_count": 405,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "the_star",
+      "card_name": {
+        "tr": "Yıldız",
+        "en": "The Star",
+        "sr": "Zvezda"
+      },
+      "quality_score": 90,
+      "critical_issues": [
+        "TR: Meta description needs optimization (105 chars)",
+        "SR: Meta description needs optimization (115 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 105,
+          "content_word_count": 328,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 145,
+          "content_word_count": 410,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 115,
+          "content_word_count": 406,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "the_moon",
+      "card_name": {
+        "tr": "Ay",
+        "en": "The Moon",
+        "sr": "Mesec"
+      },
+      "quality_score": 90,
+      "critical_issues": [
+        "TR: Meta description needs optimization (101 chars)",
+        "SR: Meta description needs optimization (114 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 101,
+          "content_word_count": 327,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 145,
+          "content_word_count": 409,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 114,
+          "content_word_count": 405,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "the_sun",
+      "card_name": {
+        "tr": "Güneş",
+        "en": "The Sun",
+        "sr": "Sunce"
+      },
+      "quality_score": 90,
+      "critical_issues": [
+        "TR: Meta description needs optimization (104 chars)",
+        "SR: Meta description needs optimization (114 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 104,
+          "content_word_count": 327,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 144,
+          "content_word_count": 409,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 114,
+          "content_word_count": 405,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "judgement",
+      "card_name": {
+        "tr": "Mahkeme",
+        "en": "Judgement",
+        "sr": "Sud"
+      },
+      "quality_score": 89,
+      "critical_issues": [
+        "TR: Meta description needs optimization (106 chars)",
+        "SR: Meta description needs optimization (112 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 106,
+          "content_word_count": 327,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 146,
+          "content_word_count": 398,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 112,
+          "content_word_count": 405,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "the_world",
+      "card_name": {
+        "tr": "Dünya",
+        "en": "The World",
+        "sr": "Svet"
+      },
+      "quality_score": 90,
+      "critical_issues": [
+        "TR: Meta description needs optimization (104 chars)",
+        "SR: Meta description needs optimization (113 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 104,
+          "content_word_count": 327,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 146,
+          "content_word_count": 409,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 113,
+          "content_word_count": 405,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "swords_ace",
+      "card_name": {
+        "tr": "Kılıçlar Ası",
+        "en": "Ace of Swords",
+        "sr": "Mač As"
+      },
+      "quality_score": 89,
+      "critical_issues": [
+        "TR: Meta description needs optimization (111 chars)",
+        "SR: Meta description needs optimization (115 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 111,
+          "content_word_count": 342,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 150,
+          "content_word_count": 392,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 115,
+          "content_word_count": 407,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "swords_two",
+      "card_name": {
+        "tr": "Kılıçlar İkilisi",
+        "en": "Two of Swords",
+        "sr": "Mač Dvojka"
+      },
+      "quality_score": 87,
+      "critical_issues": [
+        "TR: Meta description needs optimization (115 chars)",
+        "SR: Meta description needs optimization (119 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 115,
+          "content_word_count": 331,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 150,
+          "content_word_count": 396,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 119,
+          "content_word_count": 392,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "swords_three",
+      "card_name": {
+        "tr": "Kılıçlar Üçlüsü",
+        "en": "Three of Swords",
+        "sr": "Mač Trojka"
+      },
+      "quality_score": 90,
+      "critical_issues": [
+        "TR: Meta description needs optimization (114 chars)",
+        "SR: Meta description needs optimization (119 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 114,
+          "content_word_count": 340,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 152,
+          "content_word_count": 403,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 119,
+          "content_word_count": 418,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "swords_four",
+      "card_name": {
+        "tr": "Kılıçlar Dörtlüsü",
+        "en": "Four of Swords",
+        "sr": "Mač Četvorka"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (116 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 116,
+          "content_word_count": 336,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 151,
+          "content_word_count": 418,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 121,
+          "content_word_count": 414,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "swords_five",
+      "card_name": {
+        "tr": "Kılıçlar Beşlisi",
+        "en": "Five of Swords",
+        "sr": "Mač Petica"
+      },
+      "quality_score": 89,
+      "critical_issues": [
+        "TR: Meta description needs optimization (115 chars)",
+        "SR: Meta description needs optimization (119 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 115,
+          "content_word_count": 340,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 151,
+          "content_word_count": 390,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 119,
+          "content_word_count": 418,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "swords_six",
+      "card_name": {
+        "tr": "Kılıçlar Altılısı",
+        "en": "Six of Swords",
+        "sr": "Mač Šestica"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (116 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 116,
+          "content_word_count": 339,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 150,
+          "content_word_count": 408,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 120,
+          "content_word_count": 417,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "swords_seven",
+      "card_name": {
+        "tr": "Kılıçlar Yedilisi",
+        "en": "Seven of Swords",
+        "sr": "Mač Sedmica"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (116 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 116,
+          "content_word_count": 338,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 152,
+          "content_word_count": 420,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 120,
+          "content_word_count": 416,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "swords_eight",
+      "card_name": {
+        "tr": "Kılıçlar Sekizlisi",
+        "en": "Eight of Swords",
+        "sr": "Mač Osmica"
+      },
+      "quality_score": 90,
+      "critical_issues": [
+        "TR: Meta description needs optimization (117 chars)",
+        "SR: Meta description needs optimization (119 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 117,
+          "content_word_count": 338,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 152,
+          "content_word_count": 420,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 119,
+          "content_word_count": 416,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "swords_nine",
+      "card_name": {
+        "tr": "Kılıçlar Dokuzlusu",
+        "en": "Nine of Swords",
+        "sr": "Mač Devetka"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (117 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 117,
+          "content_word_count": 337,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 151,
+          "content_word_count": 419,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 120,
+          "content_word_count": 415,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "swords_ten",
+      "card_name": {
+        "tr": "Kılıçlar Onlusu",
+        "en": "Ten of Swords",
+        "sr": "Mač Desetka"
+      },
+      "quality_score": 90,
+      "critical_issues": ["TR: Meta description needs optimization (114 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 114,
+          "content_word_count": 327,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 150,
+          "content_word_count": 392,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 120,
+          "content_word_count": 420,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "swords_page",
+      "card_name": {
+        "tr": "Kılıçlar Valesi",
+        "en": "Page of Swords",
+        "sr": "Paž Mačeva"
+      },
+      "quality_score": 90,
+      "critical_issues": [
+        "TR: Meta description needs optimization (114 chars)",
+        "SR: Meta description needs optimization (119 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 114,
+          "content_word_count": 340,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 151,
+          "content_word_count": 403,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 119,
+          "content_word_count": 418,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "swords_knight",
+      "card_name": {
+        "tr": "Kılıçlar Şövalyesi",
+        "en": "Knight of Swords",
+        "sr": "Vitez Mačeva"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (117 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 117,
+          "content_word_count": 340,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 153,
+          "content_word_count": 409,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 121,
+          "content_word_count": 405,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "swords_queen",
+      "card_name": {
+        "tr": "Kılıçlar Kraliçesi",
+        "en": "Queen of Swords",
+        "sr": "Kraljica Mačeva"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (117 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 117,
+          "content_word_count": 338,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 152,
+          "content_word_count": 420,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 124,
+          "content_word_count": 416,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "swords_king",
+      "card_name": {
+        "tr": "Kılıçlar Kralı",
+        "en": "King of Swords",
+        "sr": "Kral Mačeva"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (113 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 113,
+          "content_word_count": 339,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 151,
+          "content_word_count": 408,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 120,
+          "content_word_count": 417,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "pentacles_ace",
+      "card_name": {
+        "tr": "Tılsımlar Ası",
+        "en": "Ace of Pentacles",
+        "sr": "Zlatnik As"
+      },
+      "quality_score": 88,
+      "critical_issues": [
+        "TR: Meta description needs optimization (112 chars)",
+        "SR: Meta description needs optimization (119 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 112,
+          "content_word_count": 328,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 123,
+          "content_word_count": 393,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 119,
+          "content_word_count": 408,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "pentacles_two",
+      "card_name": {
+        "tr": "Tılsımlar İkilisi",
+        "en": "Two of Pentacles",
+        "sr": "Zlatnik Dvojka"
+      },
+      "quality_score": 91,
+      "critical_issues": ["TR: Meta description needs optimization (116 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 116,
+          "content_word_count": 339,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 129,
+          "content_word_count": 402,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 123,
+          "content_word_count": 417,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "pentacles_three",
+      "card_name": {
+        "tr": "Tılsımlar Üçlüsü",
+        "en": "Three of Pentacles",
+        "sr": "Zlatnik Trojka"
+      },
+      "quality_score": 90,
+      "critical_issues": ["TR: Meta description needs optimization (115 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 115,
+          "content_word_count": 340,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 155,
+          "content_word_count": 390,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 123,
+          "content_word_count": 418,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "pentacles_four",
+      "card_name": {
+        "tr": "Tılsımlar Dörtlüsü",
+        "en": "Four of Pentacles",
+        "sr": "Zlatnik Četvorka"
+      },
+      "quality_score": 91,
+      "critical_issues": ["TR: Meta description needs optimization (117 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 117,
+          "content_word_count": 337,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 126,
+          "content_word_count": 419,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 125,
+          "content_word_count": 415,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "pentacles_five",
+      "card_name": {
+        "tr": "Tılsımlar Beşlisi",
+        "en": "Five of Pentacles",
+        "sr": "Zlatnik Petica"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (116 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 116,
+          "content_word_count": 339,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 154,
+          "content_word_count": 408,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 123,
+          "content_word_count": 417,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "pentacles_six",
+      "card_name": {
+        "tr": "Tılsımlar Altılısı",
+        "en": "Six of Pentacles",
+        "sr": "Zlatnik Šestica"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (117 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 117,
+          "content_word_count": 326,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 153,
+          "content_word_count": 404,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 124,
+          "content_word_count": 419,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "pentacles_seven",
+      "card_name": {
+        "tr": "Tılsımlar Yedilisi",
+        "en": "Seven of Pentacles",
+        "sr": "Zlatnik Sedmica"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (117 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 117,
+          "content_word_count": 338,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 155,
+          "content_word_count": 420,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 124,
+          "content_word_count": 416,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "pentacles_eight",
+      "card_name": {
+        "tr": "Tılsımlar Sekizlisi",
+        "en": "Eight of Pentacles",
+        "sr": "Zlatnik Osmica"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (118 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 118,
+          "content_word_count": 339,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 155,
+          "content_word_count": 408,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 123,
+          "content_word_count": 417,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "pentacles_nine",
+      "card_name": {
+        "tr": "Tılsımlar Dokuzlusu",
+        "en": "Nine of Pentacles",
+        "sr": "Zlatnik Devetka"
+      },
+      "quality_score": 90,
+      "critical_issues": ["TR: Meta description needs optimization (118 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 118,
+          "content_word_count": 342,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 154,
+          "content_word_count": 392,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 124,
+          "content_word_count": 407,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "pentacles_ten",
+      "card_name": {
+        "tr": "Tılsımlar Onlusu",
+        "en": "Ten of Pentacles",
+        "sr": "Zlatnik Desetka"
+      },
+      "quality_score": 90,
+      "critical_issues": ["TR: Meta description needs optimization (115 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 115,
+          "content_word_count": 342,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 153,
+          "content_word_count": 392,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 124,
+          "content_word_count": 407,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "pentacles_page",
+      "card_name": {
+        "tr": "Tılsımlar Valesi",
+        "en": "Page of Pentacles",
+        "sr": "Paž Zlatnika"
+      },
+      "quality_score": 90,
+      "critical_issues": ["TR: Meta description needs optimization (115 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 115,
+          "content_word_count": 342,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 154,
+          "content_word_count": 392,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 121,
+          "content_word_count": 407,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "pentacles_knight",
+      "card_name": {
+        "tr": "Tılsımlar Şövalyesi",
+        "en": "Knight of Pentacles",
+        "sr": "Vitez Zlatnika"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (118 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 118,
+          "content_word_count": 337,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 152,
+          "content_word_count": 419,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 123,
+          "content_word_count": 415,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "pentacles_queen",
+      "card_name": {
+        "tr": "Tılsımlar Kraliçesi",
+        "en": "Queen of Pentacles",
+        "sr": "Kraljica Zlatnika"
+      },
+      "quality_score": 90,
+      "critical_issues": ["TR: Meta description needs optimization (118 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 118,
+          "content_word_count": 340,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 155,
+          "content_word_count": 390,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 126,
+          "content_word_count": 418,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "pentacles_king",
+      "card_name": {
+        "tr": "Tılsımlar Kralı",
+        "en": "King of Pentacles",
+        "sr": "Kral Zlatnika"
+      },
+      "quality_score": 90,
+      "critical_issues": ["TR: Meta description needs optimization (114 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 114,
+          "content_word_count": 341,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 154,
+          "content_word_count": 391,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 122,
+          "content_word_count": 406,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "wands_ace",
+      "card_name": {
+        "tr": "Asalar Ası",
+        "en": "Ace of Wands",
+        "sr": "Štap As"
+      },
+      "quality_score": 89,
+      "critical_issues": [
+        "TR: Meta description needs optimization (109 chars)",
+        "SR: Meta description needs optimization (116 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 109,
+          "content_word_count": 340,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 149,
+          "content_word_count": 390,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 116,
+          "content_word_count": 418,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "wands_two",
+      "card_name": {
+        "tr": "Asalar İkilisi",
+        "en": "Two of Wands",
+        "sr": "Štap Dvojka"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (113 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 113,
+          "content_word_count": 338,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 149,
+          "content_word_count": 420,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 120,
+          "content_word_count": 416,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "wands_three",
+      "card_name": {
+        "tr": "Asalar Üçlüsü",
+        "en": "Three of Wands",
+        "sr": "Štap Trojka"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (112 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 112,
+          "content_word_count": 339,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 151,
+          "content_word_count": 402,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 120,
+          "content_word_count": 417,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "wands_four",
+      "card_name": {
+        "tr": "Asalar Dörtlüsü",
+        "en": "Four of Wands",
+        "sr": "Štap Četvorka"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (114 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 114,
+          "content_word_count": 338,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 150,
+          "content_word_count": 407,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 122,
+          "content_word_count": 416,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "wands_five",
+      "card_name": {
+        "tr": "Asalar Beşlisi",
+        "en": "Five of Wands",
+        "sr": "Štap Petica"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (113 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 113,
+          "content_word_count": 337,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 150,
+          "content_word_count": 419,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 120,
+          "content_word_count": 415,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "wands_six",
+      "card_name": {
+        "tr": "Asalar Altılısı",
+        "en": "Six of Wands",
+        "sr": "Štap Šestica"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (114 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 114,
+          "content_word_count": 338,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 149,
+          "content_word_count": 407,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 121,
+          "content_word_count": 416,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "wands_seven",
+      "card_name": {
+        "tr": "Asalar Yedilisi",
+        "en": "Seven of Wands",
+        "sr": "Štap Sedmica"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (114 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 114,
+          "content_word_count": 340,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 151,
+          "content_word_count": 409,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 121,
+          "content_word_count": 405,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "wands_eight",
+      "card_name": {
+        "tr": "Asalar Sekizlisi",
+        "en": "Eight of Wands",
+        "sr": "Štap Osmica"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (115 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 115,
+          "content_word_count": 338,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 151,
+          "content_word_count": 407,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 120,
+          "content_word_count": 416,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "wands_nine",
+      "card_name": {
+        "tr": "Asalar Dokuzlusu",
+        "en": "Nine of Wands",
+        "sr": "Štap Devetka"
+      },
+      "quality_score": 90,
+      "critical_issues": ["TR: Meta description needs optimization (115 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 115,
+          "content_word_count": 340,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 150,
+          "content_word_count": 390,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 121,
+          "content_word_count": 418,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "wands_ten",
+      "card_name": {
+        "tr": "Asalar Onlusu",
+        "en": "Ten of Wands",
+        "sr": "Štap Desetka"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (112 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 112,
+          "content_word_count": 338,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 149,
+          "content_word_count": 420,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 121,
+          "content_word_count": 416,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "wands_page",
+      "card_name": {
+        "tr": "Asalar Valesi",
+        "en": "Page of Wands",
+        "sr": "Paž Štapova"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (112 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 112,
+          "content_word_count": 339,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 150,
+          "content_word_count": 402,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 120,
+          "content_word_count": 417,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "wands_knight",
+      "card_name": {
+        "tr": "Asalar Şövalyesi",
+        "en": "Knight of Wands",
+        "sr": "Vitez Štapova"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (115 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 115,
+          "content_word_count": 339,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 152,
+          "content_word_count": 408,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 122,
+          "content_word_count": 417,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "wands_queen",
+      "card_name": {
+        "tr": "Asalar Kraliçesi",
+        "en": "Queen of Wands",
+        "sr": "Kraljica Štapova"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (115 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 115,
+          "content_word_count": 338,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 151,
+          "content_word_count": 407,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 125,
+          "content_word_count": 416,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "wands_king",
+      "card_name": {
+        "tr": "Asalar Kralı",
+        "en": "King of Wands",
+        "sr": "Kral Štapova"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (111 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 111,
+          "content_word_count": 339,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 150,
+          "content_word_count": 402,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 121,
+          "content_word_count": 417,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "cups_ace",
+      "card_name": {
+        "tr": "Kupalar Ası",
+        "en": "Ace of Cups",
+        "sr": "Čaša As"
+      },
+      "quality_score": 90,
+      "critical_issues": [
+        "TR: Meta description needs optimization (110 chars)",
+        "SR: Meta description needs optimization (116 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 110,
+          "content_word_count": 339,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 148,
+          "content_word_count": 408,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 116,
+          "content_word_count": 406,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "cups_two",
+      "card_name": {
+        "tr": "Kupalar İkilisi",
+        "en": "Two of Cups",
+        "sr": "Čaša Dvojka"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (114 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 114,
+          "content_word_count": 336,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 148,
+          "content_word_count": 418,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 120,
+          "content_word_count": 403,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "cups_three",
+      "card_name": {
+        "tr": "Kupalar Üçlüsü",
+        "en": "Three of Cups",
+        "sr": "Čaša Trojka"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (113 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 113,
+          "content_word_count": 336,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 150,
+          "content_word_count": 418,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 120,
+          "content_word_count": 417,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "cups_four",
+      "card_name": {
+        "tr": "Kupalar Dörtlüsü",
+        "en": "Four of Cups",
+        "sr": "Čaša Četvorka"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (115 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 115,
+          "content_word_count": 337,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 149,
+          "content_word_count": 406,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 122,
+          "content_word_count": 418,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "cups_five",
+      "card_name": {
+        "tr": "Kupalar Beşlisi",
+        "en": "Five of Cups",
+        "sr": "Čaša Petica"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (114 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 114,
+          "content_word_count": 336,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 149,
+          "content_word_count": 418,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 120,
+          "content_word_count": 417,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "cups_six",
+      "card_name": {
+        "tr": "Kupalar Altılısı",
+        "en": "Six of Cups",
+        "sr": "Čaša Šestica"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (115 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 115,
+          "content_word_count": 334,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 148,
+          "content_word_count": 416,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 121,
+          "content_word_count": 415,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "cups_seven",
+      "card_name": {
+        "tr": "Kupalar Yedilisi",
+        "en": "Seven of Cups",
+        "sr": "Čaša Sedmica"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (115 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 115,
+          "content_word_count": 336,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 150,
+          "content_word_count": 405,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 121,
+          "content_word_count": 417,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "cups_eight",
+      "card_name": {
+        "tr": "Kupalar Sekizlisi",
+        "en": "Eight of Cups",
+        "sr": "Čaša Osmica"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (116 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 116,
+          "content_word_count": 336,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 150,
+          "content_word_count": 418,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 120,
+          "content_word_count": 417,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "cups_nine",
+      "card_name": {
+        "tr": "Kupalar Dokuzlusu",
+        "en": "Nine of Cups",
+        "sr": "Čaša Devetka"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (116 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 116,
+          "content_word_count": 336,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 149,
+          "content_word_count": 418,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 121,
+          "content_word_count": 417,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "cups_ten",
+      "card_name": {
+        "tr": "Kupalar Onlusu",
+        "en": "Ten of Cups",
+        "sr": "Čaša Desetka"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (113 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 113,
+          "content_word_count": 336,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 148,
+          "content_word_count": 418,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 121,
+          "content_word_count": 417,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "cups_page",
+      "card_name": {
+        "tr": "Kupalar Prensi",
+        "en": "Page of Cups",
+        "sr": "Paž Čaše"
+      },
+      "quality_score": 90,
+      "critical_issues": [
+        "TR: Meta description needs optimization (113 chars)",
+        "SR: Meta description needs optimization (117 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 113,
+          "content_word_count": 337,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 149,
+          "content_word_count": 419,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 117,
+          "content_word_count": 404,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "cups_knight",
+      "card_name": {
+        "tr": "Kupalar Şövalyesi",
+        "en": "Knight of Cups",
+        "sr": "Vitez Čaše"
+      },
+      "quality_score": 90,
+      "critical_issues": [
+        "TR: Meta description needs optimization (116 chars)",
+        "SR: Meta description needs optimization (119 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 116,
+          "content_word_count": 338,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 151,
+          "content_word_count": 407,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 119,
+          "content_word_count": 405,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "cups_queen",
+      "card_name": {
+        "tr": "Kupalar Kraliçesi",
+        "en": "Queen of Cups",
+        "sr": "Kraljica Čaše"
+      },
+      "quality_score": 92,
+      "critical_issues": ["TR: Meta description needs optimization (116 chars)"],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 116,
+          "content_word_count": 336,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 150,
+          "content_word_count": 418,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 122,
+          "content_word_count": 417,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    },
+    {
+      "card_id": "cups_king",
+      "card_name": {
+        "tr": "Kupalar Kralı",
+        "en": "King of Cups",
+        "sr": "Kral Čaše"
+      },
+      "quality_score": 90,
+      "critical_issues": [
+        "TR: Meta description needs optimization (112 chars)",
+        "SR: Meta description needs optimization (118 chars)"
+      ],
+      "blocking_issues": [],
+      "content_analysis": {
+        "tr": {
+          "meta_description_length": 112,
+          "content_word_count": 336,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "en": {
+          "meta_description_length": 149,
+          "content_word_count": 418,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        },
+        "sr": {
+          "meta_description_length": 118,
+          "content_word_count": 417,
+          "faq_count": 5,
+          "keywords_count": 17,
+          "structured_data_present": true
+        }
+      },
+      "recommendations": []
+    }
+  ],
+  "content_quality_metrics": {
+    "meta_descriptions_optimal": 0,
+    "content_length_sufficient": 0,
+    "faq_complete": 78,
+    "keywords_optimized": 78,
+    "structured_data_ready": 78
+  },
+  "production_readiness": {
+    "ready_for_launch": false,
+    "blocking_issues": 0,
+    "recommendations": ["Address remaining critical issues"]
+  },
+  "recommendations": [
+    {
+      "priority": "MEDIUM",
+      "description": "Multiple critical content issues remain",
+      "action": "Address remaining critical issues"
+    },
+    {
+      "priority": "LOW",
+      "description": "Content quality is excellent",
+      "action": "Maintain current quality standards"
+    }
+  ]
+}

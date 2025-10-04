@@ -1,0 +1,1196 @@
+{
+  "summary": {
+    "total_cards": 78,
+    "total_pages": 234,
+    "verification_date": "2025-10-04T09:42:32.193Z",
+    "hreflang_implementation_score": 0,
+    "issues_found": 234,
+    "recommendations": []
+  },
+  "detailed_results": [
+    {
+      "card_id": "the_fool",
+      "card_name": {
+        "tr": "Deli",
+        "en": "The Fool",
+        "sr": "Luda"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "the_magician",
+      "card_name": {
+        "tr": "Büyücü",
+        "en": "The Magician",
+        "sr": "Čarobnjak"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "the_high_priestess",
+      "card_name": {
+        "tr": "Başrahibe",
+        "en": "The High Priestess",
+        "sr": "Prvosveštenica"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "the_empress",
+      "card_name": {
+        "tr": "İmparatoriçe",
+        "en": "The Empress",
+        "sr": "Carica"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "the_emperor",
+      "card_name": {
+        "tr": "İmparator",
+        "en": "The Emperor",
+        "sr": "Car"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "the_hierophant",
+      "card_name": {
+        "tr": "Aziz",
+        "en": "The Hierophant",
+        "sr": "Vrhovnik"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "the_lovers",
+      "card_name": {
+        "tr": "Aşıklar",
+        "en": "The Lovers",
+        "sr": "Ljubavnici"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "the_chariot",
+      "card_name": {
+        "tr": "Savaş Arabası",
+        "en": "The Chariot",
+        "sr": "Kočija"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "strength",
+      "card_name": {
+        "tr": "Güç",
+        "en": "Strength",
+        "sr": "Snaga"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "the_hermit",
+      "card_name": {
+        "tr": "Ermiş",
+        "en": "The Hermit",
+        "sr": "Pustinjak"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "wheel_of_fortune",
+      "card_name": {
+        "tr": "Kader Çarkı",
+        "en": "Wheel of Fortune",
+        "sr": "Točak Sreće"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "justice",
+      "card_name": {
+        "tr": "Adalet",
+        "en": "Justice",
+        "sr": "Pravda"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "the_hanged_man",
+      "card_name": {
+        "tr": "Asılan Adam",
+        "en": "The Hanged Man",
+        "sr": "Obešenik"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "death",
+      "card_name": {
+        "tr": "Ölüm",
+        "en": "Death",
+        "sr": "Smrt"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "temperance",
+      "card_name": {
+        "tr": "Denge",
+        "en": "Temperance",
+        "sr": "Umerenost"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "the_devil",
+      "card_name": {
+        "tr": "Şeytan",
+        "en": "The Devil",
+        "sr": "Đavo"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "the_tower",
+      "card_name": {
+        "tr": "Kule",
+        "en": "The Tower",
+        "sr": "Kula"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "the_star",
+      "card_name": {
+        "tr": "Yıldız",
+        "en": "The Star",
+        "sr": "Zvezda"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "the_moon",
+      "card_name": {
+        "tr": "Ay",
+        "en": "The Moon",
+        "sr": "Mesec"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "the_sun",
+      "card_name": {
+        "tr": "Güneş",
+        "en": "The Sun",
+        "sr": "Sunce"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "judgement",
+      "card_name": {
+        "tr": "Mahkeme",
+        "en": "Judgement",
+        "sr": "Sud"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "the_world",
+      "card_name": {
+        "tr": "Dünya",
+        "en": "The World",
+        "sr": "Svet"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "swords_ace",
+      "card_name": {
+        "tr": "Kılıçlar Ası",
+        "en": "Ace of Swords",
+        "sr": "Mač As"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "swords_two",
+      "card_name": {
+        "tr": "Kılıçlar İkilisi",
+        "en": "Two of Swords",
+        "sr": "Mač Dvojka"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "swords_three",
+      "card_name": {
+        "tr": "Kılıçlar Üçlüsü",
+        "en": "Three of Swords",
+        "sr": "Mač Trojka"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "swords_four",
+      "card_name": {
+        "tr": "Kılıçlar Dörtlüsü",
+        "en": "Four of Swords",
+        "sr": "Mač Četvorka"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "swords_five",
+      "card_name": {
+        "tr": "Kılıçlar Beşlisi",
+        "en": "Five of Swords",
+        "sr": "Mač Petica"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "swords_six",
+      "card_name": {
+        "tr": "Kılıçlar Altılısı",
+        "en": "Six of Swords",
+        "sr": "Mač Šestica"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "swords_seven",
+      "card_name": {
+        "tr": "Kılıçlar Yedilisi",
+        "en": "Seven of Swords",
+        "sr": "Mač Sedmica"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "swords_eight",
+      "card_name": {
+        "tr": "Kılıçlar Sekizlisi",
+        "en": "Eight of Swords",
+        "sr": "Mač Osmica"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "swords_nine",
+      "card_name": {
+        "tr": "Kılıçlar Dokuzlusu",
+        "en": "Nine of Swords",
+        "sr": "Mač Devetka"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "swords_ten",
+      "card_name": {
+        "tr": "Kılıçlar Onlusu",
+        "en": "Ten of Swords",
+        "sr": "Mač Desetka"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "swords_page",
+      "card_name": {
+        "tr": "Kılıçlar Valesi",
+        "en": "Page of Swords",
+        "sr": "Paž Mačeva"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "swords_knight",
+      "card_name": {
+        "tr": "Kılıçlar Şövalyesi",
+        "en": "Knight of Swords",
+        "sr": "Vitez Mačeva"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "swords_queen",
+      "card_name": {
+        "tr": "Kılıçlar Kraliçesi",
+        "en": "Queen of Swords",
+        "sr": "Kraljica Mačeva"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "swords_king",
+      "card_name": {
+        "tr": "Kılıçlar Kralı",
+        "en": "King of Swords",
+        "sr": "Kral Mačeva"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "pentacles_ace",
+      "card_name": {
+        "tr": "Tılsımlar Ası",
+        "en": "Ace of Pentacles",
+        "sr": "Zlatnik As"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "pentacles_two",
+      "card_name": {
+        "tr": "Tılsımlar İkilisi",
+        "en": "Two of Pentacles",
+        "sr": "Zlatnik Dvojka"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "pentacles_three",
+      "card_name": {
+        "tr": "Tılsımlar Üçlüsü",
+        "en": "Three of Pentacles",
+        "sr": "Zlatnik Trojka"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "pentacles_four",
+      "card_name": {
+        "tr": "Tılsımlar Dörtlüsü",
+        "en": "Four of Pentacles",
+        "sr": "Zlatnik Četvorka"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "pentacles_five",
+      "card_name": {
+        "tr": "Tılsımlar Beşlisi",
+        "en": "Five of Pentacles",
+        "sr": "Zlatnik Petica"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "pentacles_six",
+      "card_name": {
+        "tr": "Tılsımlar Altılısı",
+        "en": "Six of Pentacles",
+        "sr": "Zlatnik Šestica"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "pentacles_seven",
+      "card_name": {
+        "tr": "Tılsımlar Yedilisi",
+        "en": "Seven of Pentacles",
+        "sr": "Zlatnik Sedmica"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "pentacles_eight",
+      "card_name": {
+        "tr": "Tılsımlar Sekizlisi",
+        "en": "Eight of Pentacles",
+        "sr": "Zlatnik Osmica"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "pentacles_nine",
+      "card_name": {
+        "tr": "Tılsımlar Dokuzlusu",
+        "en": "Nine of Pentacles",
+        "sr": "Zlatnik Devetka"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "pentacles_ten",
+      "card_name": {
+        "tr": "Tılsımlar Onlusu",
+        "en": "Ten of Pentacles",
+        "sr": "Zlatnik Desetka"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "pentacles_page",
+      "card_name": {
+        "tr": "Tılsımlar Valesi",
+        "en": "Page of Pentacles",
+        "sr": "Paž Zlatnika"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "pentacles_knight",
+      "card_name": {
+        "tr": "Tılsımlar Şövalyesi",
+        "en": "Knight of Pentacles",
+        "sr": "Vitez Zlatnika"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "pentacles_queen",
+      "card_name": {
+        "tr": "Tılsımlar Kraliçesi",
+        "en": "Queen of Pentacles",
+        "sr": "Kraljica Zlatnika"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "pentacles_king",
+      "card_name": {
+        "tr": "Tılsımlar Kralı",
+        "en": "King of Pentacles",
+        "sr": "Kral Zlatnika"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "wands_ace",
+      "card_name": {
+        "tr": "Asalar Ası",
+        "en": "Ace of Wands",
+        "sr": "Štap As"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "wands_two",
+      "card_name": {
+        "tr": "Asalar İkilisi",
+        "en": "Two of Wands",
+        "sr": "Štap Dvojka"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "wands_three",
+      "card_name": {
+        "tr": "Asalar Üçlüsü",
+        "en": "Three of Wands",
+        "sr": "Štap Trojka"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "wands_four",
+      "card_name": {
+        "tr": "Asalar Dörtlüsü",
+        "en": "Four of Wands",
+        "sr": "Štap Četvorka"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "wands_five",
+      "card_name": {
+        "tr": "Asalar Beşlisi",
+        "en": "Five of Wands",
+        "sr": "Štap Petica"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "wands_six",
+      "card_name": {
+        "tr": "Asalar Altılısı",
+        "en": "Six of Wands",
+        "sr": "Štap Šestica"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "wands_seven",
+      "card_name": {
+        "tr": "Asalar Yedilisi",
+        "en": "Seven of Wands",
+        "sr": "Štap Sedmica"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "wands_eight",
+      "card_name": {
+        "tr": "Asalar Sekizlisi",
+        "en": "Eight of Wands",
+        "sr": "Štap Osmica"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "wands_nine",
+      "card_name": {
+        "tr": "Asalar Dokuzlusu",
+        "en": "Nine of Wands",
+        "sr": "Štap Devetka"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "wands_ten",
+      "card_name": {
+        "tr": "Asalar Onlusu",
+        "en": "Ten of Wands",
+        "sr": "Štap Desetka"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "wands_page",
+      "card_name": {
+        "tr": "Asalar Valesi",
+        "en": "Page of Wands",
+        "sr": "Paž Štapova"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "wands_knight",
+      "card_name": {
+        "tr": "Asalar Şövalyesi",
+        "en": "Knight of Wands",
+        "sr": "Vitez Štapova"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "wands_queen",
+      "card_name": {
+        "tr": "Asalar Kraliçesi",
+        "en": "Queen of Wands",
+        "sr": "Kraljica Štapova"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "wands_king",
+      "card_name": {
+        "tr": "Asalar Kralı",
+        "en": "King of Wands",
+        "sr": "Kral Štapova"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "cups_ace",
+      "card_name": {
+        "tr": "Kupalar Ası",
+        "en": "Ace of Cups",
+        "sr": "Čaša As"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "cups_two",
+      "card_name": {
+        "tr": "Kupalar İkilisi",
+        "en": "Two of Cups",
+        "sr": "Čaša Dvojka"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "cups_three",
+      "card_name": {
+        "tr": "Kupalar Üçlüsü",
+        "en": "Three of Cups",
+        "sr": "Čaša Trojka"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "cups_four",
+      "card_name": {
+        "tr": "Kupalar Dörtlüsü",
+        "en": "Four of Cups",
+        "sr": "Čaša Četvorka"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "cups_five",
+      "card_name": {
+        "tr": "Kupalar Beşlisi",
+        "en": "Five of Cups",
+        "sr": "Čaša Petica"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "cups_six",
+      "card_name": {
+        "tr": "Kupalar Altılısı",
+        "en": "Six of Cups",
+        "sr": "Čaša Šestica"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "cups_seven",
+      "card_name": {
+        "tr": "Kupalar Yedilisi",
+        "en": "Seven of Cups",
+        "sr": "Čaša Sedmica"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "cups_eight",
+      "card_name": {
+        "tr": "Kupalar Sekizlisi",
+        "en": "Eight of Cups",
+        "sr": "Čaša Osmica"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "cups_nine",
+      "card_name": {
+        "tr": "Kupalar Dokuzlusu",
+        "en": "Nine of Cups",
+        "sr": "Čaša Devetka"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "cups_ten",
+      "card_name": {
+        "tr": "Kupalar Onlusu",
+        "en": "Ten of Cups",
+        "sr": "Čaša Desetka"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "cups_page",
+      "card_name": {
+        "tr": "Kupalar Prensi",
+        "en": "Page of Cups",
+        "sr": "Paž Čaše"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "cups_knight",
+      "card_name": {
+        "tr": "Kupalar Şövalyesi",
+        "en": "Knight of Cups",
+        "sr": "Vitez Čaše"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "cups_queen",
+      "card_name": {
+        "tr": "Kupalar Kraliçesi",
+        "en": "Queen of Cups",
+        "sr": "Kraljica Čaše"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    },
+    {
+      "card_id": "cups_king",
+      "card_name": {
+        "tr": "Kupalar Kralı",
+        "en": "King of Cups",
+        "sr": "Kral Čaše"
+      },
+      "issues": [
+        "TR: Missing hreflang implementation",
+        "EN: Missing hreflang implementation",
+        "SR: Missing hreflang implementation"
+      ],
+      "hreflang_status": "invalid",
+      "validation_details": {}
+    }
+  ],
+  "hreflang_validation": {
+    "valid_implementations": 0,
+    "missing_hreflang": 234,
+    "invalid_urls": 0,
+    "missing_x_default": 0,
+    "incorrect_language_codes": 0
+  },
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "description": "Hreflang implementation score is below 90%",
+      "action": "Review and fix missing hreflang implementations"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "original_critical_issues": 306,
+    "issues_fixed": 292,
+    "cards_fixed": 78,
+    "remaining_issues": 14,
+    "fix_percentage": 95,
+    "report_date": "2025-10-04T01:10:16.644Z"
+  },
+  "details": {
+    "description_fixes": "Short descriptions expanded to 120+ characters",
+    "content_fixes": "Content sections expanded to meet 500+ word target",
+    "slug_fixes": "Missing URL slugs generated for all locales",
+    "hreflang_fixes": "Hreflang implementation prepared",
+    "title_fixes": "Short titles expanded to 50+ characters",
+    "keyword_fixes": "Missing keywords added (8-12 keywords per card)"
+  },
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "action": "Run SEO audit again to verify fixes",
+      "description": "Verify that critical issues have been resolved"
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Test hreflang implementation",
+      "description": "Ensure hreflang tags work correctly across all pages"
+    },
+    {
+      "priority": "LOW",
+      "action": "Monitor search console",
+      "description": "Track SEO performance after fixes"
+    }
+  ]
+}

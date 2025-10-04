@@ -154,6 +154,21 @@ export async function middleware(request: NextRequest) {
     return NextResponse.redirect(url);
   }
 
+  // i18n URL redirects for better SEO and user experience
+  // English tarot reading redirects
+  if (pathname === '/en/tarotreading' || pathname.startsWith('/en/tarotreading')) {
+    const url = request.nextUrl.clone();
+    url.pathname = url.pathname.replace('/en/tarotreading', '/en/tarotokumasi');
+    return NextResponse.redirect(url);
+  }
+
+  // Serbian tarot reading redirects  
+  if (pathname === '/sr/tarotčitanje' || pathname.startsWith('/sr/tarotčitanje')) {
+    const url = request.nextUrl.clone();
+    url.pathname = url.pathname.replace('/sr/tarotčitanje', '/sr/tarotokumasi');
+    return NextResponse.redirect(url);
+  }
+
   // Public paths - auth sayfası ve callback'ler
   const publicPaths = ['/auth', '/auth/', '/auth/callback', '/auth/callback/'];
 

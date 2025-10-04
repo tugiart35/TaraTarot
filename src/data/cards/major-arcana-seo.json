@@ -1,0 +1,3045 @@
+{
+  "cards": [
+    {
+      "id": "the_fool",
+      "names": {
+        "tr": "Deli",
+        "en": "The Fool",
+        "sr": "Luda"
+      },
+      "slugs": {
+        "tr": "deli",
+        "en": "the-fool",
+        "sr": "luda"
+      },
+      "content": {
+        "tr": {
+          "short_description": "Saf merak, cesur adımlar ve yeni döngülerin daveti.",
+          "meanings": {
+            "upright": {
+              "general": "Özgürce yeni bir başlangıç; taze enerji ve sürprizli bir tanışma getirebilir.",
+              "love": "Beklenmedik tanışmalar, hafiflik ve keşif dolu birliktelikler.",
+              "career": "Yeni deneyimler ve risk almaya açık bir dönem.",
+              "money": "Girişimsel fırsatlar; cesaretin yeni kapılar açabilir.",
+              "spiritual": "İçsel çocuğa dönme, evrene güvenme ve maceraya çağrı."
+            },
+            "reversed": {
+              "general": "Plansızlık, dikkatsizlik veya aceleci davranışların riski.",
+              "love": "Bağlanmaktan kaçış, yüzeysel ilişkiler olasılığı.",
+              "career": "Hazırlıksız atılımlar; fırsatların boşa gitmesi riski.",
+              "money": "Düşünmeden harcama, ölçüsüz risk alma.",
+              "spiritual": "Niyet eksikliği, dağınık ruh hali."
+            }
+          },
+          "context": {
+            "mythology": "Majör Arkana'nın başlangıcı; döngülerin ucu açık enerjisi.",
+            "celtic_cross": {
+              "future": "Yeni bir yolculuğa adım atma.",
+              "hidden_influences": "Macera ve özgürlük arzusu."
+            }
+          },
+          "faq": ["Deli kartı ne anlama gelir?", "Deli ters geldiğinde ne demek?", "Yeni başlangıç nasıl desteklenir?"],
+          "cta": {
+            "main": "Yeni Başlangıç Okuması — 20 dk",
+            "micro": "1 karta hızlı rehber"
+          },
+          "related": {
+            "cards": ["the_magician", "the_sun", "the_tower"],
+            "guides": ["Yeni Başlangıçlar Rehberi"]
+          }
+        },
+        "en": {
+          "short_description": "Saf merak, cesur adımlar ve yeni döngülerin daveti.",
+          "meanings": {
+            "upright": {
+              "general": "Özgürce yeni bir başlangıç; taze enerji ve sürprizli bir tanışma getirebilir.",
+              "love": "Beklenmedik tanışmalar, hafiflik ve keşif dolu birliktelikler.",
+              "career": "Yeni deneyimler ve risk almaya açık bir dönem.",
+              "money": "Girişimsel fırsatlar; cesaretin yeni kapılar açabilir.",
+              "spiritual": "İçsel çocuğa dönme, evrene güvenme ve maceraya çağrı."
+            },
+            "reversed": {
+              "general": "Plansızlık, dikkatsizlik veya aceleci davranışların riski.",
+              "love": "Bağlanmaktan kaçış, yüzeysel ilişkiler olasılığı.",
+              "career": "Hazırlıksız atılımlar; fırsatların boşa gitmesi riski.",
+              "money": "Düşünmeden harcama, ölçüsüz risk alma.",
+              "spiritual": "Niyet eksikliği, dağınık ruh hali."
+            }
+          },
+          "context": {
+            "mythology": "Majör Arkana'nın başlangıcı; döngülerin ucu açık enerjisi.",
+            "celtic_cross": {
+              "future": "Yeni bir yolculuğa adım atma.",
+              "hidden_influences": "Macera ve özgürlük arzusu."
+            }
+          },
+          "faq": ["Deli kartı ne anlama gelir?", "Deli ters geldiğinde ne demek?", "Yeni başlangıç nasıl desteklenir?"],
+          "cta": {
+            "main": "Yeni Başlangıç Okuması — 20 dk",
+            "micro": "1 karta hızlı rehber"
+          },
+          "related": {
+            "cards": ["the_magician", "the_sun", "the_tower"],
+            "guides": ["Yeni Başlangıçlar Rehberi"]
+          }
+        },
+        "sr": {
+          "short_description": "Saf merak, cesur adımlar ve yeni döngülerin daveti.",
+          "meanings": {
+            "upright": {
+              "general": "Özgürce yeni bir başlangıç; taze enerji ve sürprizli bir tanışma getirebilir.",
+              "love": "Beklenmedik tanışmalar, hafiflik ve keşif dolu birliktelikler.",
+              "career": "Yeni deneyimler ve risk almaya açık bir dönem.",
+              "money": "Girişimsel fırsatlar; cesaretin yeni kapılar açabilir.",
+              "spiritual": "İçsel çocuğa dönme, evrene güvenme ve maceraya çağrı."
+            },
+            "reversed": {
+              "general": "Plansızlık, dikkatsizlik veya aceleci davranışların riski.",
+              "love": "Bağlanmaktan kaçış, yüzeysel ilişkiler olasılığı.",
+              "career": "Hazırlıksız atılımlar; fırsatların boşa gitmesi riski.",
+              "money": "Düşünmeden harcama, ölçüsüz risk alma.",
+              "spiritual": "Niyet eksikliği, dağınık ruh hali."
+            }
+          },
+          "context": {
+            "mythology": "Majör Arkana'nın başlangıcı; döngülerin ucu açık enerjisi.",
+            "celtic_cross": {
+              "future": "Yeni bir yolculuğa adım atma.",
+              "hidden_influences": "Macera ve özgürlük arzusu."
+            }
+          },
+          "faq": ["Deli kartı ne anlama gelir?", "Deli ters geldiğinde ne demek?", "Yeni başlangıç nasıl desteklenir?"],
+          "cta": {
+            "main": "Yeni Başlangıç Okuması — 20 dk",
+            "micro": "1 karta hızlı rehber"
+          },
+          "related": {
+            "cards": ["the_magician", "the_sun", "the_tower"],
+            "guides": ["Yeni Başlangıçlar Rehberi"]
+          }
+        }
+      },
+      "seo": {
+        "tr": {
+          "title": "Deli — Yeni Başlangıçlar & Anlamı | Büsbüskimki",
+          "description": "Deli (The Fool) kartının düz ve ters anlamları; aşk, kariyer ve ruhsal rehberlik.",
+          "keywords": ["tarot", "kart", "deli"]
+        },
+        "en": {
+          "title": "The Fool (Deli) — New Beginnings & Meaning | Büsbüskimki",
+          "description": "Discover The Fool: upright & reversed meanings, love, career and spiritual insights.",
+          "keywords": ["tarot", "card", "the fool"]
+        },
+        "sr": {
+          "title": "Luda — Značenje Tarot Karte | Büsbüskimki",
+          "description": "Otkrijte značenje Luda karte.",
+          "keywords": ["tarot", "karta", "luda"]
+        }
+      },
+      "category": "major_arcana"
+    },
+    {
+      "id": "the_magician",
+      "names": {
+        "tr": "Büyücü",
+        "en": "The Magician",
+        "sr": "Čarobnjak"
+      },
+      "slugs": {
+        "tr": "buyucu",
+        "en": "the-magician",
+        "sr": "carobnjak"
+      },
+      "content": {
+        "tr": {
+          "short_description": "İrade, yaratıcılık ve niyetin gerçeğe dönüşme gücü.",
+          "meanings": {
+            "upright": {
+              "general": "Potansiyelini bilince çevirme zamanı; becerilerinle dünyayı şekillendirirsin.",
+              "love": "Etkileyici iletişim ve birlikte yaratma enerjisi.",
+              "career": "Yetenekleri sergileme, ikna ve sunum gücünün ön planda olduğu dönem.",
+              "money": "Kaynakları stratejik kullanıp fırsatlar yaratma.",
+              "spiritual": "Niyet çalışmaları ve bilinçli yaratım."
+            },
+            "reversed": {
+              "general": "Manipülasyon, odak kaybı veya potansiyeli yanlış kullanma riski.",
+              "love": "Yanıltıcı sözler veya samimiyetsiz davranışlar.",
+              "career": "Taklitçi yaklaşımlar veya yanıltıcı fırsatlar.",
+              "money": "Aldatıcı teklifler, hesap eksiklikleri.",
+              "spiritual": "Niyetin bulanması, içsel güvensizlik."
+            }
+          },
+          "context": {
+            "mythology": "Gök ve yer arasındaki köprüyü taşıyan yaratıcı arketip.",
+            "celtic_cross": {
+              "future": "Yaratıcı adımların görünür sonuçları.",
+              "hidden_influences": "Niyetin gücü ve çevresel etkenler."
+            }
+          },
+          "faq": ["Büyücü kartı neyi temsil eder?", "Niyetimi nasıl netleştiririm?", "Ters Büyücü ne uyarır?"],
+          "cta": {
+            "main": "Kariyer & Niyet Okuması — 30 dk",
+            "micro": "1 karta odaklı yorum"
+          },
+          "related": {
+            "cards": ["the_high_priestess", "the_fool", "the_sun"],
+            "guides": ["Niyet ve Manifesto Rehberi"]
+          }
+        },
+        "en": {
+          "short_description": "İrade, yaratıcılık ve niyetin gerçeğe dönüşme gücü.",
+          "meanings": {
+            "upright": {
+              "general": "Potansiyelini bilince çevirme zamanı; becerilerinle dünyayı şekillendirirsin.",
+              "love": "Etkileyici iletişim ve birlikte yaratma enerjisi.",
+              "career": "Yetenekleri sergileme, ikna ve sunum gücünün ön planda olduğu dönem.",
+              "money": "Kaynakları stratejik kullanıp fırsatlar yaratma.",
+              "spiritual": "Niyet çalışmaları ve bilinçli yaratım."
+            },
+            "reversed": {
+              "general": "Manipülasyon, odak kaybı veya potansiyeli yanlış kullanma riski.",
+              "love": "Yanıltıcı sözler veya samimiyetsiz davranışlar.",
+              "career": "Taklitçi yaklaşımlar veya yanıltıcı fırsatlar.",
+              "money": "Aldatıcı teklifler, hesap eksiklikleri.",
+              "spiritual": "Niyetin bulanması, içsel güvensizlik."
+            }
+          },
+          "context": {
+            "mythology": "Gök ve yer arasındaki köprüyü taşıyan yaratıcı arketip.",
+            "celtic_cross": {
+              "future": "Yaratıcı adımların görünür sonuçları.",
+              "hidden_influences": "Niyetin gücü ve çevresel etkenler."
+            }
+          },
+          "faq": ["Büyücü kartı neyi temsil eder?", "Niyetimi nasıl netleştiririm?", "Ters Büyücü ne uyarır?"],
+          "cta": {
+            "main": "Kariyer & Niyet Okuması — 30 dk",
+            "micro": "1 karta odaklı yorum"
+          },
+          "related": {
+            "cards": ["the_high_priestess", "the_fool", "the_sun"],
+            "guides": ["Niyet ve Manifesto Rehberi"]
+          }
+        },
+        "sr": {
+          "short_description": "İrade, yaratıcılık ve niyetin gerçeğe dönüşme gücü.",
+          "meanings": {
+            "upright": {
+              "general": "Potansiyelini bilince çevirme zamanı; becerilerinle dünyayı şekillendirirsin.",
+              "love": "Etkileyici iletişim ve birlikte yaratma enerjisi.",
+              "career": "Yetenekleri sergileme, ikna ve sunum gücünün ön planda olduğu dönem.",
+              "money": "Kaynakları stratejik kullanıp fırsatlar yaratma.",
+              "spiritual": "Niyet çalışmaları ve bilinçli yaratım."
+            },
+            "reversed": {
+              "general": "Manipülasyon, odak kaybı veya potansiyeli yanlış kullanma riski.",
+              "love": "Yanıltıcı sözler veya samimiyetsiz davranışlar.",
+              "career": "Taklitçi yaklaşımlar veya yanıltıcı fırsatlar.",
+              "money": "Aldatıcı teklifler, hesap eksiklikleri.",
+              "spiritual": "Niyetin bulanması, içsel güvensizlik."
+            }
+          },
+          "context": {
+            "mythology": "Gök ve yer arasındaki köprüyü taşıyan yaratıcı arketip.",
+            "celtic_cross": {
+              "future": "Yaratıcı adımların görünür sonuçları.",
+              "hidden_influences": "Niyetin gücü ve çevresel etkenler."
+            }
+          },
+          "faq": ["Büyücü kartı neyi temsil eder?", "Niyetimi nasıl netleştiririm?", "Ters Büyücü ne uyarır?"],
+          "cta": {
+            "main": "Kariyer & Niyet Okuması — 30 dk",
+            "micro": "1 karta odaklı yorum"
+          },
+          "related": {
+            "cards": ["the_high_priestess", "the_fool", "the_sun"],
+            "guides": ["Niyet ve Manifesto Rehberi"]
+          }
+        }
+      },
+      "seo": {
+        "tr": {
+          "title": "Büyücü — İrade, Yaratıcılık & Kariyer | Büsbüskimki",
+          "description": "Büyücü (The Magician) kartının düz/ters anlamları; niyet, yetenek ve kariyer içgörüleri.",
+          "keywords": ["tarot", "kart", "büyücü"]
+        },
+        "en": {
+          "title": "The Magician (Büyücü) — Willpower & Creativity | Büsbüskimki",
+          "description": "Explore The Magician: manifesting, skills and career guidance.",
+          "keywords": ["tarot", "card", "the magician"]
+        },
+        "sr": {
+          "title": "Čarobnjak — Značenje Tarot Karte | Büsbüskimki",
+          "description": "Otkrijte značenje Čarobnjak karte.",
+          "keywords": ["tarot", "karta", "čarobnjak"]
+        }
+      },
+      "category": "major_arcana"
+    },
+    {
+      "id": "the_high_priestess",
+      "names": {
+        "tr": "Başrahibe",
+        "en": "The High Priestess",
+        "sr": "Prvosveštenica"
+      },
+      "slugs": {
+        "tr": "basrahibe",
+        "en": "the-high-priestess",
+        "sr": "prvosvestenica"
+      },
+      "content": {
+        "tr": {
+          "short_description": "Sezgi, içsel bilgelik ve görünmeyen rehberliğin sessiz çağrısı.",
+          "meanings": {
+            "upright": {
+              "general": "Sezgilerine kulak ver; sessizlikte cevaplar saklıdır.",
+              "love": "Derin sezgisel bağlar, kelimelerden öte bir anlayış.",
+              "career": "Araştırma, içgörü ve sabırlı derinleşme dönemi.",
+              "money": "Sessiz planlama, gizli fırsatların farkına varma.",
+              "spiritual": "Rüya dili ve sembollerle rehberlik alma."
+            },
+            "reversed": {
+              "general": "Sezgiyi bastırma, aşırı gizlilik veya içe kapanma riski.",
+              "love": "Sırlar, mesafe veya pasiflik ilişkide sorun yaratabilir.",
+              "career": "Bilgiye kapalı kalma, sezgiyi yok sayma.",
+              "money": "Gizli riskler ve sezgiyi dinlememek mali sorun yaratır.",
+              "spiritual": "İçsel işaretleri görmezden gelme."
+            }
+          },
+          "context": {
+            "mythology": "Ay ve bilinçaltıyla bağlantılı; saklı bilginin bekçisi.",
+            "celtic_cross": {
+              "future": "İçsel bilgelikle yolunu aydınlatma.",
+              "hidden_influences": "Gizli sezgiler ve görünmeyen bağlar."
+            }
+          },
+          "faq": ["Başrahibe hangi durumlarda olumlu çıkar?", "Sezgimi nasıl güçlendiririm?"],
+          "cta": {
+            "main": "Sezgi & Ruhsal Okuma — 30 dk",
+            "micro": "1 karta sezgi mesajı"
+          },
+          "related": {
+            "cards": ["the_moon", "the_hermit", "the_empress"],
+            "guides": ["Sezgi ve İçsel Bilgelik Rehberi"]
+          }
+        },
+        "en": {
+          "short_description": "Sezgi, içsel bilgelik ve görünmeyen rehberliğin sessiz çağrısı.",
+          "meanings": {
+            "upright": {
+              "general": "Sezgilerine kulak ver; sessizlikte cevaplar saklıdır.",
+              "love": "Derin sezgisel bağlar, kelimelerden öte bir anlayış.",
+              "career": "Araştırma, içgörü ve sabırlı derinleşme dönemi.",
+              "money": "Sessiz planlama, gizli fırsatların farkına varma.",
+              "spiritual": "Rüya dili ve sembollerle rehberlik alma."
+            },
+            "reversed": {
+              "general": "Sezgiyi bastırma, aşırı gizlilik veya içe kapanma riski.",
+              "love": "Sırlar, mesafe veya pasiflik ilişkide sorun yaratabilir.",
+              "career": "Bilgiye kapalı kalma, sezgiyi yok sayma.",
+              "money": "Gizli riskler ve sezgiyi dinlememek mali sorun yaratır.",
+              "spiritual": "İçsel işaretleri görmezden gelme."
+            }
+          },
+          "context": {
+            "mythology": "Ay ve bilinçaltıyla bağlantılı; saklı bilginin bekçisi.",
+            "celtic_cross": {
+              "future": "İçsel bilgelikle yolunu aydınlatma.",
+              "hidden_influences": "Gizli sezgiler ve görünmeyen bağlar."
+            }
+          },
+          "faq": ["Başrahibe hangi durumlarda olumlu çıkar?", "Sezgimi nasıl güçlendiririm?"],
+          "cta": {
+            "main": "Sezgi & Ruhsal Okuma — 30 dk",
+            "micro": "1 karta sezgi mesajı"
+          },
+          "related": {
+            "cards": ["the_moon", "the_hermit", "the_empress"],
+            "guides": ["Sezgi ve İçsel Bilgelik Rehberi"]
+          }
+        },
+        "sr": {
+          "short_description": "Sezgi, içsel bilgelik ve görünmeyen rehberliğin sessiz çağrısı.",
+          "meanings": {
+            "upright": {
+              "general": "Sezgilerine kulak ver; sessizlikte cevaplar saklıdır.",
+              "love": "Derin sezgisel bağlar, kelimelerden öte bir anlayış.",
+              "career": "Araştırma, içgörü ve sabırlı derinleşme dönemi.",
+              "money": "Sessiz planlama, gizli fırsatların farkına varma.",
+              "spiritual": "Rüya dili ve sembollerle rehberlik alma."
+            },
+            "reversed": {
+              "general": "Sezgiyi bastırma, aşırı gizlilik veya içe kapanma riski.",
+              "love": "Sırlar, mesafe veya pasiflik ilişkide sorun yaratabilir.",
+              "career": "Bilgiye kapalı kalma, sezgiyi yok sayma.",
+              "money": "Gizli riskler ve sezgiyi dinlememek mali sorun yaratır.",
+              "spiritual": "İçsel işaretleri görmezden gelme."
+            }
+          },
+          "context": {
+            "mythology": "Ay ve bilinçaltıyla bağlantılı; saklı bilginin bekçisi.",
+            "celtic_cross": {
+              "future": "İçsel bilgelikle yolunu aydınlatma.",
+              "hidden_influences": "Gizli sezgiler ve görünmeyen bağlar."
+            }
+          },
+          "faq": ["Başrahibe hangi durumlarda olumlu çıkar?", "Sezgimi nasıl güçlendiririm?"],
+          "cta": {
+            "main": "Sezgi & Ruhsal Okuma — 30 dk",
+            "micro": "1 karta sezgi mesajı"
+          },
+          "related": {
+            "cards": ["the_moon", "the_hermit", "the_empress"],
+            "guides": ["Sezgi ve İçsel Bilgelik Rehberi"]
+          }
+        }
+      },
+      "seo": {
+        "tr": {
+          "title": "Başrahibe — Sezgi & İçsel Bilgelik | Büsbüskimki",
+          "description": "Başrahibe kartının düz ve ters anlamları; sezgi, ilişki ve kariyer içgörüleri.",
+          "keywords": ["tarot", "kart", "başrahibe"]
+        },
+        "en": {
+          "title": "The High Priestess (Başrahibe) — Intuition & Wisdom | Büsbüskimki",
+          "description": "Learn about The High Priestess: intuition, secrets and spiritual insight.",
+          "keywords": ["tarot", "card", "the high priestess"]
+        },
+        "sr": {
+          "title": "Prvosveštenica — Značenje Tarot Karte | Büsbüskimki",
+          "description": "Otkrijte značenje Prvosveštenica karte.",
+          "keywords": ["tarot", "karta", "prvosveštenica"]
+        }
+      },
+      "category": "major_arcana"
+    },
+    {
+      "id": "the_empress",
+      "names": {
+        "tr": "İmparatoriçe",
+        "en": "The Empress",
+        "sr": "Carica"
+      },
+      "slugs": {
+        "tr": "imparatorice",
+        "en": "the-empress",
+        "sr": "carica"
+      },
+      "content": {
+        "tr": {
+          "short_description": "Bolluk, şefkat ve yaratıcı üretkenlik enerjisi.",
+          "meanings": {
+            "upright": {
+              "general": "Bereket, şefkat ve yaratıcı üretkenlik zamanı.",
+              "love": "Sıcak, destekleyici ve büyüyen bir bağ.",
+              "career": "Yaratıcı projeler, destek ve verimlilik.",
+              "money": "Kaynakların artışı; istikrar ve bakım.",
+              "spiritual": "Doğa ile uyum, besleyici ritüeller."
+            },
+            "reversed": {
+              "general": "Aşırı sahiplenme, tükenmişlik veya öz-bakım eksikliği.",
+              "love": "Bağımlı dinamikler veya kontrol ihtiyacı.",
+              "career": "Yaratıcılık blokları ve kaynakların yanlış kullanımı.",
+              "money": "Aşırı harcama veya mali tükenme riski.",
+              "spiritual": "Kendine özen göstermemek, tükenmişlik."
+            }
+          },
+          "context": {
+            "mythology": "Toprak ana arketipi; verim ve doğurganlığın sembolü.",
+            "celtic_cross": {
+              "future": "Projelerin bereketli sonuçları.",
+              "hidden_influences": "Destekleyici kaynak ve çevre."
+            }
+          },
+          "faq": ["İmparatoriçe bolluk mu getirir?", "Yaratıcılığı nasıl canlandırırım?"],
+          "cta": {
+            "main": "Bereket & Yaratıcılık Okuması — 30 dk",
+            "micro": "1 karta hızlı bakım mesajı"
+          },
+          "related": {
+            "cards": ["the_emperor", "the_fool", "the_lovers"],
+            "guides": ["Bereket ve Yaratıcılık Rehberi"]
+          }
+        },
+        "en": {
+          "short_description": "Bolluk, şefkat ve yaratıcı üretkenlik enerjisi.",
+          "meanings": {
+            "upright": {
+              "general": "Bereket, şefkat ve yaratıcı üretkenlik zamanı.",
+              "love": "Sıcak, destekleyici ve büyüyen bir bağ.",
+              "career": "Yaratıcı projeler, destek ve verimlilik.",
+              "money": "Kaynakların artışı; istikrar ve bakım.",
+              "spiritual": "Doğa ile uyum, besleyici ritüeller."
+            },
+            "reversed": {
+              "general": "Aşırı sahiplenme, tükenmişlik veya öz-bakım eksikliği.",
+              "love": "Bağımlı dinamikler veya kontrol ihtiyacı.",
+              "career": "Yaratıcılık blokları ve kaynakların yanlış kullanımı.",
+              "money": "Aşırı harcama veya mali tükenme riski.",
+              "spiritual": "Kendine özen göstermemek, tükenmişlik."
+            }
+          },
+          "context": {
+            "mythology": "Toprak ana arketipi; verim ve doğurganlığın sembolü.",
+            "celtic_cross": {
+              "future": "Projelerin bereketli sonuçları.",
+              "hidden_influences": "Destekleyici kaynak ve çevre."
+            }
+          },
+          "faq": ["İmparatoriçe bolluk mu getirir?", "Yaratıcılığı nasıl canlandırırım?"],
+          "cta": {
+            "main": "Bereket & Yaratıcılık Okuması — 30 dk",
+            "micro": "1 karta hızlı bakım mesajı"
+          },
+          "related": {
+            "cards": ["the_emperor", "the_fool", "the_lovers"],
+            "guides": ["Bereket ve Yaratıcılık Rehberi"]
+          }
+        },
+        "sr": {
+          "short_description": "Bolluk, şefkat ve yaratıcı üretkenlik enerjisi.",
+          "meanings": {
+            "upright": {
+              "general": "Bereket, şefkat ve yaratıcı üretkenlik zamanı.",
+              "love": "Sıcak, destekleyici ve büyüyen bir bağ.",
+              "career": "Yaratıcı projeler, destek ve verimlilik.",
+              "money": "Kaynakların artışı; istikrar ve bakım.",
+              "spiritual": "Doğa ile uyum, besleyici ritüeller."
+            },
+            "reversed": {
+              "general": "Aşırı sahiplenme, tükenmişlik veya öz-bakım eksikliği.",
+              "love": "Bağımlı dinamikler veya kontrol ihtiyacı.",
+              "career": "Yaratıcılık blokları ve kaynakların yanlış kullanımı.",
+              "money": "Aşırı harcama veya mali tükenme riski.",
+              "spiritual": "Kendine özen göstermemek, tükenmişlik."
+            }
+          },
+          "context": {
+            "mythology": "Toprak ana arketipi; verim ve doğurganlığın sembolü.",
+            "celtic_cross": {
+              "future": "Projelerin bereketli sonuçları.",
+              "hidden_influences": "Destekleyici kaynak ve çevre."
+            }
+          },
+          "faq": ["İmparatoriçe bolluk mu getirir?", "Yaratıcılığı nasıl canlandırırım?"],
+          "cta": {
+            "main": "Bereket & Yaratıcılık Okuması — 30 dk",
+            "micro": "1 karta hızlı bakım mesajı"
+          },
+          "related": {
+            "cards": ["the_emperor", "the_fool", "the_lovers"],
+            "guides": ["Bereket ve Yaratıcılık Rehberi"]
+          }
+        }
+      },
+      "seo": {
+        "tr": {
+          "title": "İmparatoriçe — Bolluk & Yaratıcılık | Büsbüskimki",
+          "description": "İmparatoriçe kartının anlamları; bolluk, şefkat ve yaratıcı rehberlik.",
+          "keywords": ["tarot", "kart", "i̇mparatoriçe"]
+        },
+        "en": {
+          "title": "The Empress (İmparatoriçe) — Abundance & Nurturing | Büsbüskimki",
+          "description": "Explore The Empress: abundance, nurturing and creative guidance.",
+          "keywords": ["tarot", "card", "the empress"]
+        },
+        "sr": {
+          "title": "Carica — Značenje Tarot Karte | Büsbüskimki",
+          "description": "Otkrijte značenje Carica karte.",
+          "keywords": ["tarot", "karta", "carica"]
+        }
+      },
+      "category": "major_arcana"
+    },
+    {
+      "id": "the_emperor",
+      "names": {
+        "tr": "İmparator",
+        "en": "The Emperor",
+        "sr": "Car"
+      },
+      "slugs": {
+        "tr": "imparator",
+        "en": "the-emperor",
+        "sr": "car"
+      },
+      "content": {
+        "tr": {
+          "short_description": "Düzen, otorite ve güvenlik sağlayan yapı enerjisi.",
+          "meanings": {
+            "upright": {
+              "general": "Güçlü düzen, disiplin ve sorumluluk alma zamanı.",
+              "love": "Güven veren, istikrarlı ve koruyucu ilişki enerjisi.",
+              "career": "Liderlik, strateji ve yapı gerektiren roller.",
+              "money": "Mali güvenlik ve disiplinli yönetim.",
+              "spiritual": "Sınırlar koyma ve sorumluluk bilinci."
+            },
+            "reversed": {
+              "general": "Katılık, kontrolcülük veya esnekliğin kaybı.",
+              "love": "Baskıcı tutumlar, duygusal mesafe.",
+              "career": "Hantal yönetim, inat veya otorite çatışmaları.",
+              "money": "Aşırı kontrol veya sert mali kararlar zarar verebilir.",
+              "spiritual": "Sert sınırlar ve içsel esnekliğin kaybı."
+            }
+          },
+          "context": {
+            "mythology": "Otorite ve yapı arketipi; düzenin savunucusu.",
+            "celtic_cross": {
+              "future": "Güçlü temeller ve yönetim becerileri.",
+              "hidden_influences": "Güvenlik ihtiyacı ve sorumluluklar."
+            }
+          },
+          "faq": ["İmparator neyi temsil eder?", "Sınırları nasıl dengelerim?"],
+          "cta": {
+            "main": "Liderlik & Yapı Okuması — 30 dk",
+            "micro": "1 karta kısa strateji"
+          },
+          "related": {
+            "cards": ["the_empress", "justice", "the_hierophant"],
+            "guides": ["Liderlik ve Sınır Koyma Rehberi"]
+          }
+        },
+        "en": {
+          "short_description": "Düzen, otorite ve güvenlik sağlayan yapı enerjisi.",
+          "meanings": {
+            "upright": {
+              "general": "Güçlü düzen, disiplin ve sorumluluk alma zamanı.",
+              "love": "Güven veren, istikrarlı ve koruyucu ilişki enerjisi.",
+              "career": "Liderlik, strateji ve yapı gerektiren roller.",
+              "money": "Mali güvenlik ve disiplinli yönetim.",
+              "spiritual": "Sınırlar koyma ve sorumluluk bilinci."
+            },
+            "reversed": {
+              "general": "Katılık, kontrolcülük veya esnekliğin kaybı.",
+              "love": "Baskıcı tutumlar, duygusal mesafe.",
+              "career": "Hantal yönetim, inat veya otorite çatışmaları.",
+              "money": "Aşırı kontrol veya sert mali kararlar zarar verebilir.",
+              "spiritual": "Sert sınırlar ve içsel esnekliğin kaybı."
+            }
+          },
+          "context": {
+            "mythology": "Otorite ve yapı arketipi; düzenin savunucusu.",
+            "celtic_cross": {
+              "future": "Güçlü temeller ve yönetim becerileri.",
+              "hidden_influences": "Güvenlik ihtiyacı ve sorumluluklar."
+            }
+          },
+          "faq": ["İmparator neyi temsil eder?", "Sınırları nasıl dengelerim?"],
+          "cta": {
+            "main": "Liderlik & Yapı Okuması — 30 dk",
+            "micro": "1 karta kısa strateji"
+          },
+          "related": {
+            "cards": ["the_empress", "justice", "the_hierophant"],
+            "guides": ["Liderlik ve Sınır Koyma Rehberi"]
+          }
+        },
+        "sr": {
+          "short_description": "Düzen, otorite ve güvenlik sağlayan yapı enerjisi.",
+          "meanings": {
+            "upright": {
+              "general": "Güçlü düzen, disiplin ve sorumluluk alma zamanı.",
+              "love": "Güven veren, istikrarlı ve koruyucu ilişki enerjisi.",
+              "career": "Liderlik, strateji ve yapı gerektiren roller.",
+              "money": "Mali güvenlik ve disiplinli yönetim.",
+              "spiritual": "Sınırlar koyma ve sorumluluk bilinci."
+            },
+            "reversed": {
+              "general": "Katılık, kontrolcülük veya esnekliğin kaybı.",
+              "love": "Baskıcı tutumlar, duygusal mesafe.",
+              "career": "Hantal yönetim, inat veya otorite çatışmaları.",
+              "money": "Aşırı kontrol veya sert mali kararlar zarar verebilir.",
+              "spiritual": "Sert sınırlar ve içsel esnekliğin kaybı."
+            }
+          },
+          "context": {
+            "mythology": "Otorite ve yapı arketipi; düzenin savunucusu.",
+            "celtic_cross": {
+              "future": "Güçlü temeller ve yönetim becerileri.",
+              "hidden_influences": "Güvenlik ihtiyacı ve sorumluluklar."
+            }
+          },
+          "faq": ["İmparator neyi temsil eder?", "Sınırları nasıl dengelerim?"],
+          "cta": {
+            "main": "Liderlik & Yapı Okuması — 30 dk",
+            "micro": "1 karta kısa strateji"
+          },
+          "related": {
+            "cards": ["the_empress", "justice", "the_hierophant"],
+            "guides": ["Liderlik ve Sınır Koyma Rehberi"]
+          }
+        }
+      },
+      "seo": {
+        "tr": {
+          "title": "İmparator — Otorite & Güvenlik | Büsbüskimki",
+          "description": "İmparator kartının anlamları; liderlik, düzen ve güvenlik rehberi.",
+          "keywords": ["tarot", "kart", "i̇mparator"]
+        },
+        "en": {
+          "title": "The Emperor (İmparator) — Authority & Stability | Büsbüskimki",
+          "description": "Understand The Emperor: authority, structure and leadership guidance.",
+          "keywords": ["tarot", "card", "the emperor"]
+        },
+        "sr": {
+          "title": "Car — Značenje Tarot Karte | Büsbüskimki",
+          "description": "Otkrijte značenje Car karte.",
+          "keywords": ["tarot", "karta", "car"]
+        }
+      },
+      "category": "major_arcana"
+    },
+    {
+      "id": "the_hierophant",
+      "names": {
+        "tr": "Aziz",
+        "en": "The Hierophant",
+        "sr": "Vrhovnik"
+      },
+      "slugs": {
+        "tr": "aziz",
+        "en": "the-hierophant",
+        "sr": "vrhovnik"
+      },
+      "content": {
+        "tr": {
+          "short_description": "Gelenek, öğreti ve toplumsal rehberlik kartı.",
+          "meanings": {
+            "upright": {
+              "general": "Geleneksel değerler, öğreti ve rehberlik arayışı.",
+              "love": "Geleneksel bağlar, bağlılık ve ritüeller.",
+              "career": "Eğitim, kurum içinde ilerleme ve mentorluk.",
+              "money": "Sistemli ve güvenli finansal adımlar.",
+              "spiritual": "Ritüeller, inanç ve öğrenme süreçleri."
+            },
+            "reversed": {
+              "general": "Kör bağlılık veya kurallara isyan etme eğilimi.",
+              "love": "Gelenekselliğe karşı isyan veya sıkılma.",
+              "career": "Sistemle çatışma veya kurallara direnç.",
+              "money": "Sistem dışı riskler veya uyumsuz seçimler.",
+              "spiritual": "İnanç sorgulaması ve otoriteyle çatışma."
+            }
+          },
+          "context": {
+            "mythology": "Tarihsel öğretileri koruyan ruhsal rehber figürü.",
+            "celtic_cross": {
+              "future": "Geleneksel rehberlik ve öğrenme fırsatları.",
+              "hidden_influences": "Toplumsal normların etkisi."
+            }
+          },
+          "faq": ["Aziz kartı neyi öğretir?", "Ritüeller nasıl yardımcı olur?"],
+          "cta": {
+            "main": "Geleneksel Rehberlik Okuması — 30 dk",
+            "micro": "1 karta hızlı tavsiye"
+          },
+          "related": {
+            "cards": ["justice", "the_emperor", "the_hierophant"],
+            "guides": ["Gelenek & Rehberlik Rehberi"]
+          }
+        },
+        "en": {
+          "short_description": "Gelenek, öğreti ve toplumsal rehberlik kartı.",
+          "meanings": {
+            "upright": {
+              "general": "Geleneksel değerler, öğreti ve rehberlik arayışı.",
+              "love": "Geleneksel bağlar, bağlılık ve ritüeller.",
+              "career": "Eğitim, kurum içinde ilerleme ve mentorluk.",
+              "money": "Sistemli ve güvenli finansal adımlar.",
+              "spiritual": "Ritüeller, inanç ve öğrenme süreçleri."
+            },
+            "reversed": {
+              "general": "Kör bağlılık veya kurallara isyan etme eğilimi.",
+              "love": "Gelenekselliğe karşı isyan veya sıkılma.",
+              "career": "Sistemle çatışma veya kurallara direnç.",
+              "money": "Sistem dışı riskler veya uyumsuz seçimler.",
+              "spiritual": "İnanç sorgulaması ve otoriteyle çatışma."
+            }
+          },
+          "context": {
+            "mythology": "Tarihsel öğretileri koruyan ruhsal rehber figürü.",
+            "celtic_cross": {
+              "future": "Geleneksel rehberlik ve öğrenme fırsatları.",
+              "hidden_influences": "Toplumsal normların etkisi."
+            }
+          },
+          "faq": ["Aziz kartı neyi öğretir?", "Ritüeller nasıl yardımcı olur?"],
+          "cta": {
+            "main": "Geleneksel Rehberlik Okuması — 30 dk",
+            "micro": "1 karta hızlı tavsiye"
+          },
+          "related": {
+            "cards": ["justice", "the_emperor", "the_hierophant"],
+            "guides": ["Gelenek & Rehberlik Rehberi"]
+          }
+        },
+        "sr": {
+          "short_description": "Gelenek, öğreti ve toplumsal rehberlik kartı.",
+          "meanings": {
+            "upright": {
+              "general": "Geleneksel değerler, öğreti ve rehberlik arayışı.",
+              "love": "Geleneksel bağlar, bağlılık ve ritüeller.",
+              "career": "Eğitim, kurum içinde ilerleme ve mentorluk.",
+              "money": "Sistemli ve güvenli finansal adımlar.",
+              "spiritual": "Ritüeller, inanç ve öğrenme süreçleri."
+            },
+            "reversed": {
+              "general": "Kör bağlılık veya kurallara isyan etme eğilimi.",
+              "love": "Gelenekselliğe karşı isyan veya sıkılma.",
+              "career": "Sistemle çatışma veya kurallara direnç.",
+              "money": "Sistem dışı riskler veya uyumsuz seçimler.",
+              "spiritual": "İnanç sorgulaması ve otoriteyle çatışma."
+            }
+          },
+          "context": {
+            "mythology": "Tarihsel öğretileri koruyan ruhsal rehber figürü.",
+            "celtic_cross": {
+              "future": "Geleneksel rehberlik ve öğrenme fırsatları.",
+              "hidden_influences": "Toplumsal normların etkisi."
+            }
+          },
+          "faq": ["Aziz kartı neyi öğretir?", "Ritüeller nasıl yardımcı olur?"],
+          "cta": {
+            "main": "Geleneksel Rehberlik Okuması — 30 dk",
+            "micro": "1 karta hızlı tavsiye"
+          },
+          "related": {
+            "cards": ["justice", "the_emperor", "the_hierophant"],
+            "guides": ["Gelenek & Rehberlik Rehberi"]
+          }
+        }
+      },
+      "seo": {
+        "tr": {
+          "title": "Aziz — Gelenek & Rehberlik | Büsbüskimki",
+          "description": "Aziz kartının anlamları; inanç, eğitim ve toplumsal rehberlik.",
+          "keywords": ["tarot", "kart", "aziz"]
+        },
+        "en": {
+          "title": "The Hierophant (Aziz) — Tradition & Guidance | Büsbüskimki",
+          "description": "Learn about The Hierophant: tradition, mentorship and spiritual teaching.",
+          "keywords": ["tarot", "card", "the hierophant"]
+        },
+        "sr": {
+          "title": "Vrhovnik — Značenje Tarot Karte | Büsbüskimki",
+          "description": "Otkrijte značenje Vrhovnik karte.",
+          "keywords": ["tarot", "karta", "vrhovnik"]
+        }
+      },
+      "category": "major_arcana"
+    },
+    {
+      "id": "the_lovers",
+      "names": {
+        "tr": "Aşıklar",
+        "en": "The Lovers",
+        "sr": "Ljubavnici"
+      },
+      "slugs": {
+        "tr": "asiklar",
+        "en": "the-lovers",
+        "sr": "ljubavnici"
+      },
+      "content": {
+        "tr": {
+          "short_description": "Seçim, uyum ve kalp–akıl dengesinin sınandığı an.",
+          "meanings": {
+            "upright": {
+              "general": "Önemli seçimler, uyum ve derin bağların işareti.",
+              "love": "Derin çekim, uyumlu birliktelik ve değer ortaklığı.",
+              "career": "Ortaklıklar ve değerlerle uyumlu kararlar.",
+              "money": "Paylaşılan kaynaklarda adil ve dengeli seçimler.",
+              "spiritual": "Kalpten verilen kararların ruhsal etkisi."
+            },
+            "reversed": {
+              "general": "Kararsızlık, yanlış seçim veya uyumsuzluk.",
+              "love": "Uyumsuz ortaklıklar veya seçim yapamama.",
+              "career": "Değer çatışmaları veya hatalı ortak kararlar.",
+              "money": "Harcamalarda fikir ayrılıkları, dengesizlik.",
+              "spiritual": "Değerler ile eylemler arasında çelişki."
+            }
+          },
+          "context": {
+            "mythology": "Aşk ve seçim mitleriyle bağlantılı arketip.",
+            "celtic_cross": {
+              "future": "İlişkide dönüm noktası ve seçim anı.",
+              "hidden_influences": "Değerlerin uyumu veya çatışması."
+            }
+          },
+          "faq": ["Aşıklar hangi seçimleri gösterir?", "Uyum nasıl güçlenir?"],
+          "cta": {
+            "main": "İlişki & Seçim Okuması — 30 dk",
+            "micro": "1 karta ilişkin bakış"
+          },
+          "related": {
+            "cards": ["the_empress", "the_fool", "the_chariot"],
+            "guides": ["Aşk & Seçim Rehberi"]
+          }
+        },
+        "en": {
+          "short_description": "Seçim, uyum ve kalp–akıl dengesinin sınandığı an.",
+          "meanings": {
+            "upright": {
+              "general": "Önemli seçimler, uyum ve derin bağların işareti.",
+              "love": "Derin çekim, uyumlu birliktelik ve değer ortaklığı.",
+              "career": "Ortaklıklar ve değerlerle uyumlu kararlar.",
+              "money": "Paylaşılan kaynaklarda adil ve dengeli seçimler.",
+              "spiritual": "Kalpten verilen kararların ruhsal etkisi."
+            },
+            "reversed": {
+              "general": "Kararsızlık, yanlış seçim veya uyumsuzluk.",
+              "love": "Uyumsuz ortaklıklar veya seçim yapamama.",
+              "career": "Değer çatışmaları veya hatalı ortak kararlar.",
+              "money": "Harcamalarda fikir ayrılıkları, dengesizlik.",
+              "spiritual": "Değerler ile eylemler arasında çelişki."
+            }
+          },
+          "context": {
+            "mythology": "Aşk ve seçim mitleriyle bağlantılı arketip.",
+            "celtic_cross": {
+              "future": "İlişkide dönüm noktası ve seçim anı.",
+              "hidden_influences": "Değerlerin uyumu veya çatışması."
+            }
+          },
+          "faq": ["Aşıklar hangi seçimleri gösterir?", "Uyum nasıl güçlenir?"],
+          "cta": {
+            "main": "İlişki & Seçim Okuması — 30 dk",
+            "micro": "1 karta ilişkin bakış"
+          },
+          "related": {
+            "cards": ["the_empress", "the_fool", "the_chariot"],
+            "guides": ["Aşk & Seçim Rehberi"]
+          }
+        },
+        "sr": {
+          "short_description": "Seçim, uyum ve kalp–akıl dengesinin sınandığı an.",
+          "meanings": {
+            "upright": {
+              "general": "Önemli seçimler, uyum ve derin bağların işareti.",
+              "love": "Derin çekim, uyumlu birliktelik ve değer ortaklığı.",
+              "career": "Ortaklıklar ve değerlerle uyumlu kararlar.",
+              "money": "Paylaşılan kaynaklarda adil ve dengeli seçimler.",
+              "spiritual": "Kalpten verilen kararların ruhsal etkisi."
+            },
+            "reversed": {
+              "general": "Kararsızlık, yanlış seçim veya uyumsuzluk.",
+              "love": "Uyumsuz ortaklıklar veya seçim yapamama.",
+              "career": "Değer çatışmaları veya hatalı ortak kararlar.",
+              "money": "Harcamalarda fikir ayrılıkları, dengesizlik.",
+              "spiritual": "Değerler ile eylemler arasında çelişki."
+            }
+          },
+          "context": {
+            "mythology": "Aşk ve seçim mitleriyle bağlantılı arketip.",
+            "celtic_cross": {
+              "future": "İlişkide dönüm noktası ve seçim anı.",
+              "hidden_influences": "Değerlerin uyumu veya çatışması."
+            }
+          },
+          "faq": ["Aşıklar hangi seçimleri gösterir?", "Uyum nasıl güçlenir?"],
+          "cta": {
+            "main": "İlişki & Seçim Okuması — 30 dk",
+            "micro": "1 karta ilişkin bakış"
+          },
+          "related": {
+            "cards": ["the_empress", "the_fool", "the_chariot"],
+            "guides": ["Aşk & Seçim Rehberi"]
+          }
+        }
+      },
+      "seo": {
+        "tr": {
+          "title": "Aşıklar — Aşk & Seçim | Büsbüskimki",
+          "description": "Aşıklar kartının düz ve ters anlamları; seçimler, ilişkiler ve uyum.",
+          "keywords": ["tarot", "kart", "aşıklar"]
+        },
+        "en": {
+          "title": "The Lovers (Aşıklar) — Choice & Harmony | Büsbüskimki",
+          "description": "Discover The Lovers: choices, relationships and values alignment.",
+          "keywords": ["tarot", "card", "the lovers"]
+        },
+        "sr": {
+          "title": "Ljubavnici — Značenje Tarot Karte | Büsbüskimki",
+          "description": "Otkrijte značenje Ljubavnici karte.",
+          "keywords": ["tarot", "karta", "ljubavnici"]
+        }
+      },
+      "category": "major_arcana"
+    },
+    {
+      "id": "the_chariot",
+      "names": {
+        "tr": "Savaş Arabası",
+        "en": "The Chariot",
+        "sr": "Kočija"
+      },
+      "slugs": {
+        "tr": "savas-arabasi",
+        "en": "the-chariot",
+        "sr": "kocija"
+      },
+      "content": {
+        "tr": {
+          "short_description": "İrade, kararlılık ve hedefe doğru kararlı ilerleyiş.",
+          "meanings": {
+            "upright": {
+              "general": "Hedefe odaklanma, disiplin ve irade ile ilerleme.",
+              "love": "İlişkide kararlı adımlar ve birlikte yön alma arzusu.",
+              "career": "Hızlı ilerleme, hedefe kilitlenme ve zafer potansiyeli.",
+              "money": "Mali hedeflere disiplinli yaklaşım.",
+              "spiritual": "İrade çalışmaları ve içsel disiplin."
+            },
+            "reversed": {
+              "general": "Yön kaybı, acelecilik ve kontrol çatışmaları.",
+              "love": "Güç mücadeleleri veya acele kararlar.",
+              "career": "Savrulma, odak kaybı ve motivasyon düşüşü.",
+              "money": "Aceleyle yapılan mali hatalar.",
+              "spiritual": "İrade zayıflığı, düzensizlik."
+            }
+          },
+          "context": {
+            "mythology": "Zafer ve hareket arketipi; kontrolün sembolü.",
+            "celtic_cross": {
+              "future": "Hedeflere varma potansiyeli.",
+              "hidden_influences": "Motivasyon ve dış etkenler."
+            }
+          },
+          "faq": ["Savaş Arabası nasıl destekler?", "Motivasyon kaybında ne yapmalı?"],
+          "cta": {
+            "main": "Hedef & İrade Okuması — 25 dk",
+            "micro": "1 karta odaklan"
+          },
+          "related": {
+            "cards": ["strength", "the_chariot", "the_hermit"],
+            "guides": ["İrade & Hedef Rehberi"]
+          }
+        },
+        "en": {
+          "short_description": "İrade, kararlılık ve hedefe doğru kararlı ilerleyiş.",
+          "meanings": {
+            "upright": {
+              "general": "Hedefe odaklanma, disiplin ve irade ile ilerleme.",
+              "love": "İlişkide kararlı adımlar ve birlikte yön alma arzusu.",
+              "career": "Hızlı ilerleme, hedefe kilitlenme ve zafer potansiyeli.",
+              "money": "Mali hedeflere disiplinli yaklaşım.",
+              "spiritual": "İrade çalışmaları ve içsel disiplin."
+            },
+            "reversed": {
+              "general": "Yön kaybı, acelecilik ve kontrol çatışmaları.",
+              "love": "Güç mücadeleleri veya acele kararlar.",
+              "career": "Savrulma, odak kaybı ve motivasyon düşüşü.",
+              "money": "Aceleyle yapılan mali hatalar.",
+              "spiritual": "İrade zayıflığı, düzensizlik."
+            }
+          },
+          "context": {
+            "mythology": "Zafer ve hareket arketipi; kontrolün sembolü.",
+            "celtic_cross": {
+              "future": "Hedeflere varma potansiyeli.",
+              "hidden_influences": "Motivasyon ve dış etkenler."
+            }
+          },
+          "faq": ["Savaş Arabası nasıl destekler?", "Motivasyon kaybında ne yapmalı?"],
+          "cta": {
+            "main": "Hedef & İrade Okuması — 25 dk",
+            "micro": "1 karta odaklan"
+          },
+          "related": {
+            "cards": ["strength", "the_chariot", "the_hermit"],
+            "guides": ["İrade & Hedef Rehberi"]
+          }
+        },
+        "sr": {
+          "short_description": "İrade, kararlılık ve hedefe doğru kararlı ilerleyiş.",
+          "meanings": {
+            "upright": {
+              "general": "Hedefe odaklanma, disiplin ve irade ile ilerleme.",
+              "love": "İlişkide kararlı adımlar ve birlikte yön alma arzusu.",
+              "career": "Hızlı ilerleme, hedefe kilitlenme ve zafer potansiyeli.",
+              "money": "Mali hedeflere disiplinli yaklaşım.",
+              "spiritual": "İrade çalışmaları ve içsel disiplin."
+            },
+            "reversed": {
+              "general": "Yön kaybı, acelecilik ve kontrol çatışmaları.",
+              "love": "Güç mücadeleleri veya acele kararlar.",
+              "career": "Savrulma, odak kaybı ve motivasyon düşüşü.",
+              "money": "Aceleyle yapılan mali hatalar.",
+              "spiritual": "İrade zayıflığı, düzensizlik."
+            }
+          },
+          "context": {
+            "mythology": "Zafer ve hareket arketipi; kontrolün sembolü.",
+            "celtic_cross": {
+              "future": "Hedeflere varma potansiyeli.",
+              "hidden_influences": "Motivasyon ve dış etkenler."
+            }
+          },
+          "faq": ["Savaş Arabası nasıl destekler?", "Motivasyon kaybında ne yapmalı?"],
+          "cta": {
+            "main": "Hedef & İrade Okuması — 25 dk",
+            "micro": "1 karta odaklan"
+          },
+          "related": {
+            "cards": ["strength", "the_chariot", "the_hermit"],
+            "guides": ["İrade & Hedef Rehberi"]
+          }
+        }
+      },
+      "seo": {
+        "tr": {
+          "title": "Savaş Arabası — İrade & Hedef | Büsbüskimki",
+          "description": "Savaş Arabası kartı: odak, disiplin ve hedefe ulaşma rehberi.",
+          "keywords": ["tarot", "kart", "savaş arabası"]
+        },
+        "en": {
+          "title": "The Chariot (Savaş Arabası) — Focus & Triumph | Büsbüskimki",
+          "description": "Explore The Chariot: willpower, focus and career momentum.",
+          "keywords": ["tarot", "card", "the chariot"]
+        },
+        "sr": {
+          "title": "Kočija — Značenje Tarot Karte | Büsbüskimki",
+          "description": "Otkrijte značenje Kočija karte.",
+          "keywords": ["tarot", "karta", "kočija"]
+        }
+      },
+      "category": "major_arcana"
+    },
+    {
+      "id": "strength",
+      "names": {
+        "tr": "Güç",
+        "en": "Strength",
+        "sr": "Snaga"
+      },
+      "slugs": {
+        "tr": "guc",
+        "en": "strength",
+        "sr": "snaga"
+      },
+      "content": {
+        "tr": {
+          "short_description": "Nazik cesaret, sabır ve şefkatle zorlukları aşma.",
+          "meanings": {
+            "upright": {
+              "general": "İçsel cesaret, sabır ve yumuşak güç ön planda.",
+              "love": "Şefkatli güç, dayanıklılık ve duygusal güven.",
+              "career": "Zorluklarla sakinçe başa çıkma ve istikrar.",
+              "money": "Süreklilik ve disiplinle mali denge kurma.",
+              "spiritual": "Korkularla nazikçe yüzleşme ve iyileşme."
+            },
+            "reversed": {
+              "general": "Sabırsızlık, özgüven eksikliği veya öfkeye teslim olma.",
+              "love": "Kıskançlık, sabırsız davranışlar.",
+              "career": "Tereddüt ve liderlikte güçsüz hissetme.",
+              "money": "Panik kararları ve kısa vadeli tepkiler.",
+              "spiritual": "İçsel mücadele ve kendine sert davranma."
+            }
+          },
+          "context": {
+            "mythology": "İç gücü şefkatle birleştiren arketip.",
+            "celtic_cross": {
+              "future": "İçsel denge ve sabırla ilerleme.",
+              "hidden_influences": "Korkuların dönüşümü."
+            }
+          },
+          "faq": ["Güç nasıl kullanılır?", "Sabrı nasıl geliştiririm?"],
+          "cta": {
+            "main": "İçsel Güç Okuması — 25 dk",
+            "micro": "1 karta cesaret mesajı"
+          },
+          "related": {
+            "cards": ["the_chariot", "the_hermit", "the_emperor"],
+            "guides": ["Cesaret & Şefkat Rehberi"]
+          }
+        },
+        "en": {
+          "short_description": "Nazik cesaret, sabır ve şefkatle zorlukları aşma.",
+          "meanings": {
+            "upright": {
+              "general": "İçsel cesaret, sabır ve yumuşak güç ön planda.",
+              "love": "Şefkatli güç, dayanıklılık ve duygusal güven.",
+              "career": "Zorluklarla sakinçe başa çıkma ve istikrar.",
+              "money": "Süreklilik ve disiplinle mali denge kurma.",
+              "spiritual": "Korkularla nazikçe yüzleşme ve iyileşme."
+            },
+            "reversed": {
+              "general": "Sabırsızlık, özgüven eksikliği veya öfkeye teslim olma.",
+              "love": "Kıskançlık, sabırsız davranışlar.",
+              "career": "Tereddüt ve liderlikte güçsüz hissetme.",
+              "money": "Panik kararları ve kısa vadeli tepkiler.",
+              "spiritual": "İçsel mücadele ve kendine sert davranma."
+            }
+          },
+          "context": {
+            "mythology": "İç gücü şefkatle birleştiren arketip.",
+            "celtic_cross": {
+              "future": "İçsel denge ve sabırla ilerleme.",
+              "hidden_influences": "Korkuların dönüşümü."
+            }
+          },
+          "faq": ["Güç nasıl kullanılır?", "Sabrı nasıl geliştiririm?"],
+          "cta": {
+            "main": "İçsel Güç Okuması — 25 dk",
+            "micro": "1 karta cesaret mesajı"
+          },
+          "related": {
+            "cards": ["the_chariot", "the_hermit", "the_emperor"],
+            "guides": ["Cesaret & Şefkat Rehberi"]
+          }
+        },
+        "sr": {
+          "short_description": "Nazik cesaret, sabır ve şefkatle zorlukları aşma.",
+          "meanings": {
+            "upright": {
+              "general": "İçsel cesaret, sabır ve yumuşak güç ön planda.",
+              "love": "Şefkatli güç, dayanıklılık ve duygusal güven.",
+              "career": "Zorluklarla sakinçe başa çıkma ve istikrar.",
+              "money": "Süreklilik ve disiplinle mali denge kurma.",
+              "spiritual": "Korkularla nazikçe yüzleşme ve iyileşme."
+            },
+            "reversed": {
+              "general": "Sabırsızlık, özgüven eksikliği veya öfkeye teslim olma.",
+              "love": "Kıskançlık, sabırsız davranışlar.",
+              "career": "Tereddüt ve liderlikte güçsüz hissetme.",
+              "money": "Panik kararları ve kısa vadeli tepkiler.",
+              "spiritual": "İçsel mücadele ve kendine sert davranma."
+            }
+          },
+          "context": {
+            "mythology": "İç gücü şefkatle birleştiren arketip.",
+            "celtic_cross": {
+              "future": "İçsel denge ve sabırla ilerleme.",
+              "hidden_influences": "Korkuların dönüşümü."
+            }
+          },
+          "faq": ["Güç nasıl kullanılır?", "Sabrı nasıl geliştiririm?"],
+          "cta": {
+            "main": "İçsel Güç Okuması — 25 dk",
+            "micro": "1 karta cesaret mesajı"
+          },
+          "related": {
+            "cards": ["the_chariot", "the_hermit", "the_emperor"],
+            "guides": ["Cesaret & Şefkat Rehberi"]
+          }
+        }
+      },
+      "seo": {
+        "tr": {
+          "title": "Güç — Cesaret & Sabır | Büsbüskimki",
+          "description": "Güç kartı: içsel cesaret, sabır ve şefkat üzerine rehber.",
+          "keywords": ["tarot", "kart", "güç"]
+        },
+        "en": {
+          "title": "Strength (Güç) — Courage & Compassion | Büsbüskimki",
+          "description": "Understand Strength: patience, inner courage and resilience.",
+          "keywords": ["tarot", "card", "strength"]
+        },
+        "sr": {
+          "title": "Snaga — Značenje Tarot Karte | Büsbüskimki",
+          "description": "Otkrijte značenje Snaga karte.",
+          "keywords": ["tarot", "karta", "snaga"]
+        }
+      },
+      "category": "major_arcana"
+    },
+    {
+      "id": "the_hermit",
+      "names": {
+        "tr": "Ermiş",
+        "en": "The Hermit",
+        "sr": "Pustinjak"
+      },
+      "slugs": {
+        "tr": "ermis",
+        "en": "the-hermit",
+        "sr": "pustinjak"
+      },
+      "content": {
+        "tr": {
+          "short_description": "İçe dönme, aydınlanma arayışı ve yalnız keşif.",
+          "meanings": {
+            "upright": {
+              "general": "Yalnızlıkta derinleşme; içsel bilgelikle buluşma zamanı.",
+              "love": "İlişkide geri çekilme veya içsel değerlendirme dönemi.",
+              "career": "Derin öğrenme, yalnız çalışma ve hedef yeniden biçimlendirme.",
+              "money": "Temkinli mali planlama ve bağımsız değerlendirme.",
+              "spiritual": "Sessizlik, meditasyon ve içsel rehberlikle buluşma."
+            },
+            "reversed": {
+              "general": "Aşırı izolasyon, yalnızlık veya destek reddi riski.",
+              "love": "İlişkide kopukluk ve iletişim eksikliği.",
+              "career": "Fırsatları kaçırma veya aşırı içe çekilme.",
+              "money": "Destek almadan risk alma sonucu zorluklar.",
+              "spiritual": "Yalnız kalmanın olumsuz etkileri."
+            }
+          },
+          "context": {
+            "mythology": "Bilge yolculuğunun bekçisi; ışıkla yön gösterir.",
+            "celtic_cross": {
+              "future": "Yeni içsel keşifler ve bilgelik.",
+              "hidden_influences": "Geçmiş deneyimlerin rehberliği."
+            }
+          },
+          "faq": ["Ermiş yalnızlık mı demek?", "Ne zaman içe dönmeliyim?"],
+          "cta": {
+            "main": "İçe Dönüş Okuması — 30 dk",
+            "micro": "1 karta rehberlik"
+          },
+          "related": {
+            "cards": ["the_high_priestess", "strength", "the_hierophant"],
+            "guides": ["İçsel Keşif Rehberi"]
+          }
+        },
+        "en": {
+          "short_description": "İçe dönme, aydınlanma arayışı ve yalnız keşif.",
+          "meanings": {
+            "upright": {
+              "general": "Yalnızlıkta derinleşme; içsel bilgelikle buluşma zamanı.",
+              "love": "İlişkide geri çekilme veya içsel değerlendirme dönemi.",
+              "career": "Derin öğrenme, yalnız çalışma ve hedef yeniden biçimlendirme.",
+              "money": "Temkinli mali planlama ve bağımsız değerlendirme.",
+              "spiritual": "Sessizlik, meditasyon ve içsel rehberlikle buluşma."
+            },
+            "reversed": {
+              "general": "Aşırı izolasyon, yalnızlık veya destek reddi riski.",
+              "love": "İlişkide kopukluk ve iletişim eksikliği.",
+              "career": "Fırsatları kaçırma veya aşırı içe çekilme.",
+              "money": "Destek almadan risk alma sonucu zorluklar.",
+              "spiritual": "Yalnız kalmanın olumsuz etkileri."
+            }
+          },
+          "context": {
+            "mythology": "Bilge yolculuğunun bekçisi; ışıkla yön gösterir.",
+            "celtic_cross": {
+              "future": "Yeni içsel keşifler ve bilgelik.",
+              "hidden_influences": "Geçmiş deneyimlerin rehberliği."
+            }
+          },
+          "faq": ["Ermiş yalnızlık mı demek?", "Ne zaman içe dönmeliyim?"],
+          "cta": {
+            "main": "İçe Dönüş Okuması — 30 dk",
+            "micro": "1 karta rehberlik"
+          },
+          "related": {
+            "cards": ["the_high_priestess", "strength", "the_hierophant"],
+            "guides": ["İçsel Keşif Rehberi"]
+          }
+        },
+        "sr": {
+          "short_description": "İçe dönme, aydınlanma arayışı ve yalnız keşif.",
+          "meanings": {
+            "upright": {
+              "general": "Yalnızlıkta derinleşme; içsel bilgelikle buluşma zamanı.",
+              "love": "İlişkide geri çekilme veya içsel değerlendirme dönemi.",
+              "career": "Derin öğrenme, yalnız çalışma ve hedef yeniden biçimlendirme.",
+              "money": "Temkinli mali planlama ve bağımsız değerlendirme.",
+              "spiritual": "Sessizlik, meditasyon ve içsel rehberlikle buluşma."
+            },
+            "reversed": {
+              "general": "Aşırı izolasyon, yalnızlık veya destek reddi riski.",
+              "love": "İlişkide kopukluk ve iletişim eksikliği.",
+              "career": "Fırsatları kaçırma veya aşırı içe çekilme.",
+              "money": "Destek almadan risk alma sonucu zorluklar.",
+              "spiritual": "Yalnız kalmanın olumsuz etkileri."
+            }
+          },
+          "context": {
+            "mythology": "Bilge yolculuğunun bekçisi; ışıkla yön gösterir.",
+            "celtic_cross": {
+              "future": "Yeni içsel keşifler ve bilgelik.",
+              "hidden_influences": "Geçmiş deneyimlerin rehberliği."
+            }
+          },
+          "faq": ["Ermiş yalnızlık mı demek?", "Ne zaman içe dönmeliyim?"],
+          "cta": {
+            "main": "İçe Dönüş Okuması — 30 dk",
+            "micro": "1 karta rehberlik"
+          },
+          "related": {
+            "cards": ["the_high_priestess", "strength", "the_hierophant"],
+            "guides": ["İçsel Keşif Rehberi"]
+          }
+        }
+      },
+      "seo": {
+        "tr": {
+          "title": "Ermiş — İçsel Bilgelik & Yalnızlık | Büsbüskimki",
+          "description": "Ermiş kartı: içe dönüş, bilgelik arayışı ve yalnız keşif rehberi.",
+          "keywords": ["tarot", "kart", "ermiş"]
+        },
+        "en": {
+          "title": "The Hermit (Ermiş) — Solitude & Insight | Büsbüskimki",
+          "description": "Explore The Hermit: solitude, inner guidance and reflection.",
+          "keywords": ["tarot", "card", "the hermit"]
+        },
+        "sr": {
+          "title": "Pustinjak — Značenje Tarot Karte | Büsbüskimki",
+          "description": "Otkrijte značenje Pustinjak karte.",
+          "keywords": ["tarot", "karta", "pustinjak"]
+        }
+      },
+      "category": "major_arcana"
+    },
+    {
+      "id": "wheel_of_fortune",
+      "names": {
+        "tr": "Kader Çarkı",
+        "en": "Wheel of Fortune",
+        "sr": "Točak Sreće"
+      },
+      "slugs": {
+        "tr": "kader-carki",
+        "en": "wheel-of-fortune",
+        "sr": "tocak-srece"
+      },
+      "content": {
+        "tr": {
+          "short_description": "Döngüler, şans ve zamanlamanın akışı.",
+          "meanings": {
+            "upright": {
+              "general": "Değişim, şans kapıları ve kaderin akışı.",
+              "love": "İlişkilerde beklenmedik dönemeçler ve fırsatlar.",
+              "career": "Kariyerde sürpriz fırsatlar veya ani değişimler.",
+              "money": "Finansal dalgalanmalar; zamanlama önem kazanır.",
+              "spiritual": "Kaderin akışına teslim olma ve öğrenme."
+            },
+            "reversed": {
+              "general": "Tekrarlayan olumsuz döngüler veya talihsizlik hissi.",
+              "love": "Tekrarlayan sorunlar ve yanlış zamanlama.",
+              "career": "Plansız değişimler veya beklenmedik kayıplar.",
+              "money": "Kontrol dışı mali dalgalanmalar.",
+              "spiritual": "Kaderle çatışma ve direnç."
+            }
+          },
+          "context": {
+            "mythology": "Kaderin döngüsünü ve şansın değişkenliğini simgeler.",
+            "celtic_cross": {
+              "future": "Yeni döngüler ve fırsatlar.",
+              "hidden_influences": "Zamanlama ve harici etkenler."
+            }
+          },
+          "faq": ["Kader Çarkı nasıl çalışır?", "Değişimi nasıl yönetirim?"],
+          "cta": {
+            "main": "Şans & Dönüşüm Okuması — 25 dk",
+            "micro": "1 karta yönlendirme"
+          },
+          "related": {
+            "cards": ["the_tower", "the_chariot", "the_fool"],
+            "guides": ["Döngüler ve Zamanlama Rehberi"]
+          }
+        },
+        "en": {
+          "short_description": "Döngüler, şans ve zamanlamanın akışı.",
+          "meanings": {
+            "upright": {
+              "general": "Değişim, şans kapıları ve kaderin akışı.",
+              "love": "İlişkilerde beklenmedik dönemeçler ve fırsatlar.",
+              "career": "Kariyerde sürpriz fırsatlar veya ani değişimler.",
+              "money": "Finansal dalgalanmalar; zamanlama önem kazanır.",
+              "spiritual": "Kaderin akışına teslim olma ve öğrenme."
+            },
+            "reversed": {
+              "general": "Tekrarlayan olumsuz döngüler veya talihsizlik hissi.",
+              "love": "Tekrarlayan sorunlar ve yanlış zamanlama.",
+              "career": "Plansız değişimler veya beklenmedik kayıplar.",
+              "money": "Kontrol dışı mali dalgalanmalar.",
+              "spiritual": "Kaderle çatışma ve direnç."
+            }
+          },
+          "context": {
+            "mythology": "Kaderin döngüsünü ve şansın değişkenliğini simgeler.",
+            "celtic_cross": {
+              "future": "Yeni döngüler ve fırsatlar.",
+              "hidden_influences": "Zamanlama ve harici etkenler."
+            }
+          },
+          "faq": ["Kader Çarkı nasıl çalışır?", "Değişimi nasıl yönetirim?"],
+          "cta": {
+            "main": "Şans & Dönüşüm Okuması — 25 dk",
+            "micro": "1 karta yönlendirme"
+          },
+          "related": {
+            "cards": ["the_tower", "the_chariot", "the_fool"],
+            "guides": ["Döngüler ve Zamanlama Rehberi"]
+          }
+        },
+        "sr": {
+          "short_description": "Döngüler, şans ve zamanlamanın akışı.",
+          "meanings": {
+            "upright": {
+              "general": "Değişim, şans kapıları ve kaderin akışı.",
+              "love": "İlişkilerde beklenmedik dönemeçler ve fırsatlar.",
+              "career": "Kariyerde sürpriz fırsatlar veya ani değişimler.",
+              "money": "Finansal dalgalanmalar; zamanlama önem kazanır.",
+              "spiritual": "Kaderin akışına teslim olma ve öğrenme."
+            },
+            "reversed": {
+              "general": "Tekrarlayan olumsuz döngüler veya talihsizlik hissi.",
+              "love": "Tekrarlayan sorunlar ve yanlış zamanlama.",
+              "career": "Plansız değişimler veya beklenmedik kayıplar.",
+              "money": "Kontrol dışı mali dalgalanmalar.",
+              "spiritual": "Kaderle çatışma ve direnç."
+            }
+          },
+          "context": {
+            "mythology": "Kaderin döngüsünü ve şansın değişkenliğini simgeler.",
+            "celtic_cross": {
+              "future": "Yeni döngüler ve fırsatlar.",
+              "hidden_influences": "Zamanlama ve harici etkenler."
+            }
+          },
+          "faq": ["Kader Çarkı nasıl çalışır?", "Değişimi nasıl yönetirim?"],
+          "cta": {
+            "main": "Şans & Dönüşüm Okuması — 25 dk",
+            "micro": "1 karta yönlendirme"
+          },
+          "related": {
+            "cards": ["the_tower", "the_chariot", "the_fool"],
+            "guides": ["Döngüler ve Zamanlama Rehberi"]
+          }
+        }
+      },
+      "seo": {
+        "tr": {
+          "title": "Kader Çarkı — Şans & Döngüler | Büsbüskimki",
+          "description": "Kader Çarkı kartı: değişim, şans ve doğru zamanlama rehberi.",
+          "keywords": ["tarot", "kart", "kader çarkı"]
+        },
+        "en": {
+          "title": "Wheel of Fortune (Kader Çarkı) — Luck & Cycles | Büsbüskimki",
+          "description": "Discover Wheel of Fortune: cycles, luck and timely opportunities.",
+          "keywords": ["tarot", "card", "wheel of fortune"]
+        },
+        "sr": {
+          "title": "Točak Sreće — Značenje Tarot Karte | Büsbüskimki",
+          "description": "Otkrijte značenje Točak Sreće karte.",
+          "keywords": ["tarot", "karta", "točak sreće"]
+        }
+      },
+      "category": "major_arcana"
+    },
+    {
+      "id": "justice",
+      "names": {
+        "tr": "Adalet",
+        "en": "Justice",
+        "sr": "Pravda"
+      },
+      "slugs": {
+        "tr": "adalet",
+        "en": "justice",
+        "sr": "pravda"
+      },
+      "content": {
+        "tr": {
+          "short_description": "Denge, doğruluk ve eylem–sonuç ilkesinin hatırlatıcısı.",
+          "meanings": {
+            "upright": {
+              "general": "Adalet, denge ve sorumlulukların netleştiği dönem.",
+              "love": "Dürüstlük ve haksızlığa karşı denge ihtiyacı.",
+              "career": "Sözleşmeler, etik ve hesap verme zamanı.",
+              "money": "Mali denge ve şeffaflık önem kazanır.",
+              "spiritual": "Karma ve eylem sonuçlarının farkına varma."
+            },
+            "reversed": {
+              "general": "Haksızlık, dengesizlik veya adaletsizlik hissi.",
+              "love": "Dengesiz sorumluluk paylaşımı veya haksızlık duygusu.",
+              "career": "Haksız değerlendirmeler veya anlaşmazlıklar.",
+              "money": "Yanlış hesaplar veya belirsiz mali durumlar.",
+              "spiritual": "Karma ile yüzleşme çağrısı."
+            }
+          },
+          "context": {
+            "mythology": "Hesap ve denge arketipi; hakkaniyeti simgeler.",
+            "celtic_cross": {
+              "future": "Değerlendirme ve sonuç alma zamanı.",
+              "hidden_influences": "Geçmiş eylemlerin etkileri."
+            }
+          },
+          "faq": ["Adalet kartı neyi gösterir?", "Haksızlık nasıl düzelir?"],
+          "cta": {
+            "main": "Denge & Karar Okuması — 30 dk",
+            "micro": "1 karta net tavsiye"
+          },
+          "related": {
+            "cards": ["the_emperor", "judgement", "the_hierophant"],
+            "guides": ["Hesap & Denge Rehberi"]
+          }
+        },
+        "en": {
+          "short_description": "Denge, doğruluk ve eylem–sonuç ilkesinin hatırlatıcısı.",
+          "meanings": {
+            "upright": {
+              "general": "Adalet, denge ve sorumlulukların netleştiği dönem.",
+              "love": "Dürüstlük ve haksızlığa karşı denge ihtiyacı.",
+              "career": "Sözleşmeler, etik ve hesap verme zamanı.",
+              "money": "Mali denge ve şeffaflık önem kazanır.",
+              "spiritual": "Karma ve eylem sonuçlarının farkına varma."
+            },
+            "reversed": {
+              "general": "Haksızlık, dengesizlik veya adaletsizlik hissi.",
+              "love": "Dengesiz sorumluluk paylaşımı veya haksızlık duygusu.",
+              "career": "Haksız değerlendirmeler veya anlaşmazlıklar.",
+              "money": "Yanlış hesaplar veya belirsiz mali durumlar.",
+              "spiritual": "Karma ile yüzleşme çağrısı."
+            }
+          },
+          "context": {
+            "mythology": "Hesap ve denge arketipi; hakkaniyeti simgeler.",
+            "celtic_cross": {
+              "future": "Değerlendirme ve sonuç alma zamanı.",
+              "hidden_influences": "Geçmiş eylemlerin etkileri."
+            }
+          },
+          "faq": ["Adalet kartı neyi gösterir?", "Haksızlık nasıl düzelir?"],
+          "cta": {
+            "main": "Denge & Karar Okuması — 30 dk",
+            "micro": "1 karta net tavsiye"
+          },
+          "related": {
+            "cards": ["the_emperor", "judgement", "the_hierophant"],
+            "guides": ["Hesap & Denge Rehberi"]
+          }
+        },
+        "sr": {
+          "short_description": "Denge, doğruluk ve eylem–sonuç ilkesinin hatırlatıcısı.",
+          "meanings": {
+            "upright": {
+              "general": "Adalet, denge ve sorumlulukların netleştiği dönem.",
+              "love": "Dürüstlük ve haksızlığa karşı denge ihtiyacı.",
+              "career": "Sözleşmeler, etik ve hesap verme zamanı.",
+              "money": "Mali denge ve şeffaflık önem kazanır.",
+              "spiritual": "Karma ve eylem sonuçlarının farkına varma."
+            },
+            "reversed": {
+              "general": "Haksızlık, dengesizlik veya adaletsizlik hissi.",
+              "love": "Dengesiz sorumluluk paylaşımı veya haksızlık duygusu.",
+              "career": "Haksız değerlendirmeler veya anlaşmazlıklar.",
+              "money": "Yanlış hesaplar veya belirsiz mali durumlar.",
+              "spiritual": "Karma ile yüzleşme çağrısı."
+            }
+          },
+          "context": {
+            "mythology": "Hesap ve denge arketipi; hakkaniyeti simgeler.",
+            "celtic_cross": {
+              "future": "Değerlendirme ve sonuç alma zamanı.",
+              "hidden_influences": "Geçmiş eylemlerin etkileri."
+            }
+          },
+          "faq": ["Adalet kartı neyi gösterir?", "Haksızlık nasıl düzelir?"],
+          "cta": {
+            "main": "Denge & Karar Okuması — 30 dk",
+            "micro": "1 karta net tavsiye"
+          },
+          "related": {
+            "cards": ["the_emperor", "judgement", "the_hierophant"],
+            "guides": ["Hesap & Denge Rehberi"]
+          }
+        }
+      },
+      "seo": {
+        "tr": {
+          "title": "Adalet — Denge & Hesaplaşma | Büsbüskimki",
+          "description": "Adalet kartı: denge, kararlar ve etik rehberlik.",
+          "keywords": ["tarot", "kart", "adalet"]
+        },
+        "en": {
+          "title": "Justice (Adalet) — Balance & Accountability | Büsbüskimki",
+          "description": "Explore Justice: fairness, decisions and legal clarity.",
+          "keywords": ["tarot", "card", "justice"]
+        },
+        "sr": {
+          "title": "Pravda — Značenje Tarot Karte | Büsbüskimki",
+          "description": "Otkrijte značenje Pravda karte.",
+          "keywords": ["tarot", "karta", "pravda"]
+        }
+      },
+      "category": "major_arcana"
+    },
+    {
+      "id": "the_hanged_man",
+      "names": {
+        "tr": "Asılan Adam",
+        "en": "The Hanged Man",
+        "sr": "Obešenik"
+      },
+      "slugs": {
+        "tr": "asilan-adam",
+        "en": "the-hanged-man",
+        "sr": "obesenik"
+      },
+      "content": {
+        "tr": {
+          "short_description": "Teslimiyet, perspektif değişimi ve bekleme süreci.",
+          "meanings": {
+            "upright": {
+              "general": "Bakış açısını değiştirme, sabırlı bekleyiş ve teslimiyet.",
+              "love": "İlişkide mola veya yeni bir perspektif kazanma.",
+              "career": "Bekleme ve strateji yeniden gözden geçirme dönemi.",
+              "money": "Harcamaların yeniden değerlendirilmesi ve erteleme.",
+              "spiritual": "Fedakârlıkla gelen içsel dönüşüm."
+            },
+            "reversed": {
+              "general": "Erteleme, inatçılık veya kaçırılan fırsatlar.",
+              "love": "Kararsızlık ve durumu sürdürme eğilimi.",
+              "career": "Kilitlenme hissi ve ilerleyememe.",
+              "money": "Gecikmeler ve mali kararsızlık.",
+              "spiritual": "Teslimiyetin reddi, direnç."
+            }
+          },
+          "context": {
+            "mythology": "Fedakârlık ve yeni perspektif sembolü.",
+            "celtic_cross": {
+              "future": "Yeni görüş açılarının gelişmesi.",
+              "hidden_influences": "Gecikmelerin içsel nedeni."
+            }
+          },
+          "faq": ["Asılan Adam ne öğretir?", "Bekleme nasıl değerlendirilir?"],
+          "cta": {
+            "main": "Perspektif & Teslimiyet Okuması — 25 dk",
+            "micro": "1 karta rehberlik"
+          },
+          "related": {
+            "cards": ["the_hanged_man", "the_hermit", "temperance"],
+            "guides": ["Teslimiyet & Bakış Rehberi"]
+          }
+        },
+        "en": {
+          "short_description": "Teslimiyet, perspektif değişimi ve bekleme süreci.",
+          "meanings": {
+            "upright": {
+              "general": "Bakış açısını değiştirme, sabırlı bekleyiş ve teslimiyet.",
+              "love": "İlişkide mola veya yeni bir perspektif kazanma.",
+              "career": "Bekleme ve strateji yeniden gözden geçirme dönemi.",
+              "money": "Harcamaların yeniden değerlendirilmesi ve erteleme.",
+              "spiritual": "Fedakârlıkla gelen içsel dönüşüm."
+            },
+            "reversed": {
+              "general": "Erteleme, inatçılık veya kaçırılan fırsatlar.",
+              "love": "Kararsızlık ve durumu sürdürme eğilimi.",
+              "career": "Kilitlenme hissi ve ilerleyememe.",
+              "money": "Gecikmeler ve mali kararsızlık.",
+              "spiritual": "Teslimiyetin reddi, direnç."
+            }
+          },
+          "context": {
+            "mythology": "Fedakârlık ve yeni perspektif sembolü.",
+            "celtic_cross": {
+              "future": "Yeni görüş açılarının gelişmesi.",
+              "hidden_influences": "Gecikmelerin içsel nedeni."
+            }
+          },
+          "faq": ["Asılan Adam ne öğretir?", "Bekleme nasıl değerlendirilir?"],
+          "cta": {
+            "main": "Perspektif & Teslimiyet Okuması — 25 dk",
+            "micro": "1 karta rehberlik"
+          },
+          "related": {
+            "cards": ["the_hanged_man", "the_hermit", "temperance"],
+            "guides": ["Teslimiyet & Bakış Rehberi"]
+          }
+        },
+        "sr": {
+          "short_description": "Teslimiyet, perspektif değişimi ve bekleme süreci.",
+          "meanings": {
+            "upright": {
+              "general": "Bakış açısını değiştirme, sabırlı bekleyiş ve teslimiyet.",
+              "love": "İlişkide mola veya yeni bir perspektif kazanma.",
+              "career": "Bekleme ve strateji yeniden gözden geçirme dönemi.",
+              "money": "Harcamaların yeniden değerlendirilmesi ve erteleme.",
+              "spiritual": "Fedakârlıkla gelen içsel dönüşüm."
+            },
+            "reversed": {
+              "general": "Erteleme, inatçılık veya kaçırılan fırsatlar.",
+              "love": "Kararsızlık ve durumu sürdürme eğilimi.",
+              "career": "Kilitlenme hissi ve ilerleyememe.",
+              "money": "Gecikmeler ve mali kararsızlık.",
+              "spiritual": "Teslimiyetin reddi, direnç."
+            }
+          },
+          "context": {
+            "mythology": "Fedakârlık ve yeni perspektif sembolü.",
+            "celtic_cross": {
+              "future": "Yeni görüş açılarının gelişmesi.",
+              "hidden_influences": "Gecikmelerin içsel nedeni."
+            }
+          },
+          "faq": ["Asılan Adam ne öğretir?", "Bekleme nasıl değerlendirilir?"],
+          "cta": {
+            "main": "Perspektif & Teslimiyet Okuması — 25 dk",
+            "micro": "1 karta rehberlik"
+          },
+          "related": {
+            "cards": ["the_hanged_man", "the_hermit", "temperance"],
+            "guides": ["Teslimiyet & Bakış Rehberi"]
+          }
+        }
+      },
+      "seo": {
+        "tr": {
+          "title": "Asılan Adam — Teslimiyet & Bakış Açısı | Büsbüskimki",
+          "description": "Asılan Adam kartı: perspektif değişimi, bekleme ve fedakârlık rehberi.",
+          "keywords": ["tarot", "kart", "asılan adam"]
+        },
+        "en": {
+          "title": "The Hanged Man (Asılan Adam) — Surrender & Insight | Büsbüskimki",
+          "description": "Discover The Hanged Man: new perspectives, patience and inner pause.",
+          "keywords": ["tarot", "card", "the hanged man"]
+        },
+        "sr": {
+          "title": "Obešenik — Značenje Tarot Karte | Büsbüskimki",
+          "description": "Otkrijte značenje Obešenik karte.",
+          "keywords": ["tarot", "karta", "obešenik"]
+        }
+      },
+      "category": "major_arcana"
+    },
+    {
+      "id": "death",
+      "names": {
+        "tr": "Ölüm",
+        "en": "Death",
+        "sr": "Smrt"
+      },
+      "slugs": {
+        "tr": "olum",
+        "en": "death",
+        "sr": "smrt"
+      },
+      "content": {
+        "tr": {
+          "short_description": "Derin dönüşüm, sonlanma ve yeniden doğuşun habercisi.",
+          "meanings": {
+            "upright": {
+              "general": "Eskiyi bırakma, dönüşüm ve yeni başlangıç fırsatı.",
+              "love": "İlişkide dönüşüm; bitişler yeni alan açar.",
+              "career": "Kariyerde radikal değişim ve yeniden yapılanma.",
+              "money": "Eski finansal alışkanlıkların bırakılması ve yenilenme.",
+              "spiritual": "Ruhsal temizlik ve yeniden doğuş süreci."
+            },
+            "reversed": {
+              "general": "Değişime direnç, tutunma ve gecikmiş kapanışlar.",
+              "love": "Bitmesi gerekenin uzaması, dönüşümü reddetme.",
+              "career": "Eski yolları sürdürme isteği; ilerleyememe.",
+              "money": "Dönüşümü ertelemenin maliyeti.",
+              "spiritual": "İçsel dönüşümü kabul etmeme."
+            }
+          },
+          "context": {
+            "mythology": "Temizlenme ve yeniden doğuş arketipi; zor ama gerekli sonlanma.",
+            "celtic_cross": {
+              "future": "Yeni döngü için gereken bırakış.",
+              "hidden_influences": "Geçmişin serbest bırakılması."
+            }
+          },
+          "faq": ["Ölüm kartı gerçek ölüm mü demek?", "Dönüşümle nasıl barışırım?"],
+          "cta": {
+            "main": "Dönüşüm Okuması — 30 dk",
+            "micro": "1 karta dönüşüm rehberi"
+          },
+          "related": {
+            "cards": ["the_tower", "the_hermit", "death"],
+            "guides": ["Dönüşüm & Yeniden Doğuş Rehberi"]
+          }
+        },
+        "en": {
+          "short_description": "Derin dönüşüm, sonlanma ve yeniden doğuşun habercisi.",
+          "meanings": {
+            "upright": {
+              "general": "Eskiyi bırakma, dönüşüm ve yeni başlangıç fırsatı.",
+              "love": "İlişkide dönüşüm; bitişler yeni alan açar.",
+              "career": "Kariyerde radikal değişim ve yeniden yapılanma.",
+              "money": "Eski finansal alışkanlıkların bırakılması ve yenilenme.",
+              "spiritual": "Ruhsal temizlik ve yeniden doğuş süreci."
+            },
+            "reversed": {
+              "general": "Değişime direnç, tutunma ve gecikmiş kapanışlar.",
+              "love": "Bitmesi gerekenin uzaması, dönüşümü reddetme.",
+              "career": "Eski yolları sürdürme isteği; ilerleyememe.",
+              "money": "Dönüşümü ertelemenin maliyeti.",
+              "spiritual": "İçsel dönüşümü kabul etmeme."
+            }
+          },
+          "context": {
+            "mythology": "Temizlenme ve yeniden doğuş arketipi; zor ama gerekli sonlanma.",
+            "celtic_cross": {
+              "future": "Yeni döngü için gereken bırakış.",
+              "hidden_influences": "Geçmişin serbest bırakılması."
+            }
+          },
+          "faq": ["Ölüm kartı gerçek ölüm mü demek?", "Dönüşümle nasıl barışırım?"],
+          "cta": {
+            "main": "Dönüşüm Okuması — 30 dk",
+            "micro": "1 karta dönüşüm rehberi"
+          },
+          "related": {
+            "cards": ["the_tower", "the_hermit", "death"],
+            "guides": ["Dönüşüm & Yeniden Doğuş Rehberi"]
+          }
+        },
+        "sr": {
+          "short_description": "Derin dönüşüm, sonlanma ve yeniden doğuşun habercisi.",
+          "meanings": {
+            "upright": {
+              "general": "Eskiyi bırakma, dönüşüm ve yeni başlangıç fırsatı.",
+              "love": "İlişkide dönüşüm; bitişler yeni alan açar.",
+              "career": "Kariyerde radikal değişim ve yeniden yapılanma.",
+              "money": "Eski finansal alışkanlıkların bırakılması ve yenilenme.",
+              "spiritual": "Ruhsal temizlik ve yeniden doğuş süreci."
+            },
+            "reversed": {
+              "general": "Değişime direnç, tutunma ve gecikmiş kapanışlar.",
+              "love": "Bitmesi gerekenin uzaması, dönüşümü reddetme.",
+              "career": "Eski yolları sürdürme isteği; ilerleyememe.",
+              "money": "Dönüşümü ertelemenin maliyeti.",
+              "spiritual": "İçsel dönüşümü kabul etmeme."
+            }
+          },
+          "context": {
+            "mythology": "Temizlenme ve yeniden doğuş arketipi; zor ama gerekli sonlanma.",
+            "celtic_cross": {
+              "future": "Yeni döngü için gereken bırakış.",
+              "hidden_influences": "Geçmişin serbest bırakılması."
+            }
+          },
+          "faq": ["Ölüm kartı gerçek ölüm mü demek?", "Dönüşümle nasıl barışırım?"],
+          "cta": {
+            "main": "Dönüşüm Okuması — 30 dk",
+            "micro": "1 karta dönüşüm rehberi"
+          },
+          "related": {
+            "cards": ["the_tower", "the_hermit", "death"],
+            "guides": ["Dönüşüm & Yeniden Doğuş Rehberi"]
+          }
+        }
+      },
+      "seo": {
+        "tr": {
+          "title": "Ölüm — Dönüşüm & Yeniden Doğuş | Büsbüskimki",
+          "description": "Ölüm kartı: bitişler, dönüşüm ve ruhsal yenilenme rehberi.",
+          "keywords": ["tarot", "kart", "ölüm"]
+        },
+        "en": {
+          "title": "Death (Ölüm) — Transformation & Renewal | Büsbüskimki",
+          "description": "Learn about Death: endings, transformation and new beginnings.",
+          "keywords": ["tarot", "card", "death"]
+        },
+        "sr": {
+          "title": "Smrt — Značenje Tarot Karte | Büsbüskimki",
+          "description": "Otkrijte značenje Smrt karte.",
+          "keywords": ["tarot", "karta", "smrt"]
+        }
+      },
+      "category": "major_arcana"
+    },
+    {
+      "id": "temperance",
+      "names": {
+        "tr": "Denge",
+        "en": "Temperance",
+        "sr": "Umerenost"
+      },
+      "slugs": {
+        "tr": "denge",
+        "en": "temperance",
+        "sr": "umerenost"
+      },
+      "content": {
+        "tr": {
+          "short_description": "Orta yolu bulma, sabır ve uyum enerjisi.",
+          "meanings": {
+            "upright": {
+              "general": "Ölçülülük, uyum ve sabırla ilerleme zamanı.",
+              "love": "İlişkide orta yol, tolerans ve denge.",
+              "career": "Orantılı kararlar, istikrar ve uyum.",
+              "money": "Dengeli bütçe ve ölçülü adımlar.",
+              "spiritual": "Zıtlıkları birleştirerek bütünlüğe ulaşma."
+            },
+            "reversed": {
+              "general": "Aşırılıklar, dengesizlik ve sabırsızlık.",
+              "love": "Uyumsuzluk veya aşırı tepki.",
+              "career": "Tutarsız stratejiler veya aşırı hırs.",
+              "money": "Dengesiz harcama eğilimleri.",
+              "spiritual": "İçsel çatışmaların çözülmemesi."
+            }
+          },
+          "context": {
+            "mythology": "Simya ve denge sembolleriyle orta yol arketipi.",
+            "celtic_cross": {
+              "future": "Uyum ve ölçülü ilerleme.",
+              "hidden_influences": "Sabır ve zamanlama."
+            }
+          },
+          "faq": ["Denge nasıl sağlanır?", "Aşırılıklardan nasıl kaçınırım?"],
+          "cta": {
+            "main": "Denge & Uyum Okuması — 25 dk",
+            "micro": "1 karta denge önerisi"
+          },
+          "related": {
+            "cards": ["temperance", "justice", "the_hanged_man"],
+            "guides": ["Denge & Ölçülülük Rehberi"]
+          }
+        },
+        "en": {
+          "short_description": "Orta yolu bulma, sabır ve uyum enerjisi.",
+          "meanings": {
+            "upright": {
+              "general": "Ölçülülük, uyum ve sabırla ilerleme zamanı.",
+              "love": "İlişkide orta yol, tolerans ve denge.",
+              "career": "Orantılı kararlar, istikrar ve uyum.",
+              "money": "Dengeli bütçe ve ölçülü adımlar.",
+              "spiritual": "Zıtlıkları birleştirerek bütünlüğe ulaşma."
+            },
+            "reversed": {
+              "general": "Aşırılıklar, dengesizlik ve sabırsızlık.",
+              "love": "Uyumsuzluk veya aşırı tepki.",
+              "career": "Tutarsız stratejiler veya aşırı hırs.",
+              "money": "Dengesiz harcama eğilimleri.",
+              "spiritual": "İçsel çatışmaların çözülmemesi."
+            }
+          },
+          "context": {
+            "mythology": "Simya ve denge sembolleriyle orta yol arketipi.",
+            "celtic_cross": {
+              "future": "Uyum ve ölçülü ilerleme.",
+              "hidden_influences": "Sabır ve zamanlama."
+            }
+          },
+          "faq": ["Denge nasıl sağlanır?", "Aşırılıklardan nasıl kaçınırım?"],
+          "cta": {
+            "main": "Denge & Uyum Okuması — 25 dk",
+            "micro": "1 karta denge önerisi"
+          },
+          "related": {
+            "cards": ["temperance", "justice", "the_hanged_man"],
+            "guides": ["Denge & Ölçülülük Rehberi"]
+          }
+        },
+        "sr": {
+          "short_description": "Orta yolu bulma, sabır ve uyum enerjisi.",
+          "meanings": {
+            "upright": {
+              "general": "Ölçülülük, uyum ve sabırla ilerleme zamanı.",
+              "love": "İlişkide orta yol, tolerans ve denge.",
+              "career": "Orantılı kararlar, istikrar ve uyum.",
+              "money": "Dengeli bütçe ve ölçülü adımlar.",
+              "spiritual": "Zıtlıkları birleştirerek bütünlüğe ulaşma."
+            },
+            "reversed": {
+              "general": "Aşırılıklar, dengesizlik ve sabırsızlık.",
+              "love": "Uyumsuzluk veya aşırı tepki.",
+              "career": "Tutarsız stratejiler veya aşırı hırs.",
+              "money": "Dengesiz harcama eğilimleri.",
+              "spiritual": "İçsel çatışmaların çözülmemesi."
+            }
+          },
+          "context": {
+            "mythology": "Simya ve denge sembolleriyle orta yol arketipi.",
+            "celtic_cross": {
+              "future": "Uyum ve ölçülü ilerleme.",
+              "hidden_influences": "Sabır ve zamanlama."
+            }
+          },
+          "faq": ["Denge nasıl sağlanır?", "Aşırılıklardan nasıl kaçınırım?"],
+          "cta": {
+            "main": "Denge & Uyum Okuması — 25 dk",
+            "micro": "1 karta denge önerisi"
+          },
+          "related": {
+            "cards": ["temperance", "justice", "the_hanged_man"],
+            "guides": ["Denge & Ölçülülük Rehberi"]
+          }
+        }
+      },
+      "seo": {
+        "tr": {
+          "title": "Denge — Ölçülülük & Uyum | Büsbüskimki",
+          "description": "Denge kartı: ölçülülük, sabır ve uyum üzerine rehberlik.",
+          "keywords": ["tarot", "kart", "denge"]
+        },
+        "en": {
+          "title": "Temperance (Denge) — Balance & Moderation | Büsbüskimki",
+          "description": "Discover Temperance: balance, patience and integration.",
+          "keywords": ["tarot", "card", "temperance"]
+        },
+        "sr": {
+          "title": "Umerenost — Značenje Tarot Karte | Büsbüskimki",
+          "description": "Otkrijte značenje Umerenost karte.",
+          "keywords": ["tarot", "karta", "umerenost"]
+        }
+      },
+      "category": "major_arcana"
+    },
+    {
+      "id": "the_devil",
+      "names": {
+        "tr": "Şeytan",
+        "en": "The Devil",
+        "sr": "Đavo"
+      },
+      "slugs": {
+        "tr": "seytan",
+        "en": "the-devil",
+        "sr": "davo"
+      },
+      "content": {
+        "tr": {
+          "short_description": "Bağımlılıklar, gölge yönler ve sınırların sorgulanması.",
+          "meanings": {
+            "upright": {
+              "general": "Güçlü arzular, bağımlılıklar ve kısıtlanma hissi.",
+              "love": "Yoğun tutku ama bağlılık sorunları veya toksik dinamikler.",
+              "career": "Kısıtlayıcı anlaşmalar veya hırsın gölgesi.",
+              "money": "Borç, aşırı harcama veya tuzak finansal teklifler.",
+              "spiritual": "Gölgeyle yüzleşme ve sınırları görme zamanı."
+            },
+            "reversed": {
+              "general": "Zincirlerden kopma ve özgürleşme potansiyeli.",
+              "love": "Toksik bağlardan çıkma ve sınır koyma.",
+              "career": "Toksik dinamiklerden uzaklaşma fırsatı.",
+              "money": "Borçtan çıkma veya mali temizlenme süreci.",
+              "spiritual": "Gölge işiyle yüzleşip iyileşme."
+            }
+          },
+          "context": {
+            "mythology": "Gölge, arzu ve bağlanma arketipi; uyarıcı bir enerji.",
+            "celtic_cross": {
+              "future": "Bağımlılıkları sorgulama zamanı.",
+              "hidden_influences": "İçsel arzular ve dış etkiler."
+            }
+          },
+          "faq": ["Şeytan kartı korkutucu mu?", "Bağımlılıktan nasıl özgürleşirim?"],
+          "cta": {
+            "main": "Gölge & Sınır Okuması — 30 dk",
+            "micro": "1 karta sınır rehberi"
+          },
+          "related": {
+            "cards": ["the_tower", "death", "the_devil"],
+            "guides": ["Gölge Çalışması Rehberi"]
+          }
+        },
+        "en": {
+          "short_description": "Bağımlılıklar, gölge yönler ve sınırların sorgulanması.",
+          "meanings": {
+            "upright": {
+              "general": "Güçlü arzular, bağımlılıklar ve kısıtlanma hissi.",
+              "love": "Yoğun tutku ama bağlılık sorunları veya toksik dinamikler.",
+              "career": "Kısıtlayıcı anlaşmalar veya hırsın gölgesi.",
+              "money": "Borç, aşırı harcama veya tuzak finansal teklifler.",
+              "spiritual": "Gölgeyle yüzleşme ve sınırları görme zamanı."
+            },
+            "reversed": {
+              "general": "Zincirlerden kopma ve özgürleşme potansiyeli.",
+              "love": "Toksik bağlardan çıkma ve sınır koyma.",
+              "career": "Toksik dinamiklerden uzaklaşma fırsatı.",
+              "money": "Borçtan çıkma veya mali temizlenme süreci.",
+              "spiritual": "Gölge işiyle yüzleşip iyileşme."
+            }
+          },
+          "context": {
+            "mythology": "Gölge, arzu ve bağlanma arketipi; uyarıcı bir enerji.",
+            "celtic_cross": {
+              "future": "Bağımlılıkları sorgulama zamanı.",
+              "hidden_influences": "İçsel arzular ve dış etkiler."
+            }
+          },
+          "faq": ["Şeytan kartı korkutucu mu?", "Bağımlılıktan nasıl özgürleşirim?"],
+          "cta": {
+            "main": "Gölge & Sınır Okuması — 30 dk",
+            "micro": "1 karta sınır rehberi"
+          },
+          "related": {
+            "cards": ["the_tower", "death", "the_devil"],
+            "guides": ["Gölge Çalışması Rehberi"]
+          }
+        },
+        "sr": {
+          "short_description": "Bağımlılıklar, gölge yönler ve sınırların sorgulanması.",
+          "meanings": {
+            "upright": {
+              "general": "Güçlü arzular, bağımlılıklar ve kısıtlanma hissi.",
+              "love": "Yoğun tutku ama bağlılık sorunları veya toksik dinamikler.",
+              "career": "Kısıtlayıcı anlaşmalar veya hırsın gölgesi.",
+              "money": "Borç, aşırı harcama veya tuzak finansal teklifler.",
+              "spiritual": "Gölgeyle yüzleşme ve sınırları görme zamanı."
+            },
+            "reversed": {
+              "general": "Zincirlerden kopma ve özgürleşme potansiyeli.",
+              "love": "Toksik bağlardan çıkma ve sınır koyma.",
+              "career": "Toksik dinamiklerden uzaklaşma fırsatı.",
+              "money": "Borçtan çıkma veya mali temizlenme süreci.",
+              "spiritual": "Gölge işiyle yüzleşip iyileşme."
+            }
+          },
+          "context": {
+            "mythology": "Gölge, arzu ve bağlanma arketipi; uyarıcı bir enerji.",
+            "celtic_cross": {
+              "future": "Bağımlılıkları sorgulama zamanı.",
+              "hidden_influences": "İçsel arzular ve dış etkiler."
+            }
+          },
+          "faq": ["Şeytan kartı korkutucu mu?", "Bağımlılıktan nasıl özgürleşirim?"],
+          "cta": {
+            "main": "Gölge & Sınır Okuması — 30 dk",
+            "micro": "1 karta sınır rehberi"
+          },
+          "related": {
+            "cards": ["the_tower", "death", "the_devil"],
+            "guides": ["Gölge Çalışması Rehberi"]
+          }
+        }
+      },
+      "seo": {
+        "tr": {
+          "title": "Şeytan — Gölge & Bağımlılıklar | Büsbüskimki",
+          "description": "Şeytan kartı: bağımlılıklar, tutkular ve özgürleşme rehberi.",
+          "keywords": ["tarot", "kart", "şeytan"]
+        },
+        "en": {
+          "title": "The Devil (Şeytan) — Shadow & Liberation | Büsbüskimki",
+          "description": "Explore The Devil: temptations, bondage and breaking free.",
+          "keywords": ["tarot", "card", "the devil"]
+        },
+        "sr": {
+          "title": "Đavo — Značenje Tarot Karte | Büsbüskimki",
+          "description": "Otkrijte značenje Đavo karte.",
+          "keywords": ["tarot", "karta", "đavo"]
+        }
+      },
+      "category": "major_arcana"
+    },
+    {
+      "id": "the_tower",
+      "names": {
+        "tr": "Kule",
+        "en": "The Tower",
+        "sr": "Kula"
+      },
+      "slugs": {
+        "tr": "kule",
+        "en": "the-tower",
+        "sr": "kula"
+      },
+      "content": {
+        "tr": {
+          "short_description": "Ani sarsıntılar, yıkım ve hakikatin açığa çıkışı.",
+          "meanings": {
+            "upright": {
+              "general": "Beklenmedik yıkım; ilüzyonların çöküşü ve gerçeklerle yüzleşme.",
+              "love": "İlişkide ani kriz veya yüzleşme ve kopuş riski.",
+              "career": "Ani iş değişiklikleri, ifşa veya kayıplar.",
+              "money": "Finansal sarsıntılar; yapıların yeniden değerlendirilmesi.",
+              "spiritual": "İllüzyonun çöküşü ve ruhsal uyanış."
+            },
+            "reversed": {
+              "general": "Yıkımı erteleme veya gerçekleri görmezden gelme riski.",
+              "love": "Sorunları örtbas etme; ileride daha büyük sarsıntılar doğabilir.",
+              "career": "Krizleri gizleme; daha ciddi sonuçlar doğabilir.",
+              "money": "Mali krizleri erteleme ve sonrasında ağır bedel.",
+              "spiritual": "Gerçeği reddetme ve içsel çöküş."
+            }
+          },
+          "context": {
+            "mythology": "Gerçeğin şok edici açığa çıkışı ve yeniden yapılanma arketipi.",
+            "celtic_cross": {
+              "future": "Ani değişim ve yeniden inşa süreci.",
+              "hidden_influences": "Gizli gerçeklerin etkisi."
+            }
+          },
+          "faq": ["Kule neden çıkar?", "Krizden nasıl güçlenirim?"],
+          "cta": {
+            "main": "Kriz & Yeniden Yapılanma Okuması — 30 dk",
+            "micro": "1 karta acil rehber"
+          },
+          "related": {
+            "cards": ["death", "the_fool", "the_tower"],
+            "guides": ["Kriz & Yeniden İnşa Rehberi"]
+          }
+        },
+        "en": {
+          "short_description": "Ani sarsıntılar, yıkım ve hakikatin açığa çıkışı.",
+          "meanings": {
+            "upright": {
+              "general": "Beklenmedik yıkım; ilüzyonların çöküşü ve gerçeklerle yüzleşme.",
+              "love": "İlişkide ani kriz veya yüzleşme ve kopuş riski.",
+              "career": "Ani iş değişiklikleri, ifşa veya kayıplar.",
+              "money": "Finansal sarsıntılar; yapıların yeniden değerlendirilmesi.",
+              "spiritual": "İllüzyonun çöküşü ve ruhsal uyanış."
+            },
+            "reversed": {
+              "general": "Yıkımı erteleme veya gerçekleri görmezden gelme riski.",
+              "love": "Sorunları örtbas etme; ileride daha büyük sarsıntılar doğabilir.",
+              "career": "Krizleri gizleme; daha ciddi sonuçlar doğabilir.",
+              "money": "Mali krizleri erteleme ve sonrasında ağır bedel.",
+              "spiritual": "Gerçeği reddetme ve içsel çöküş."
+            }
+          },
+          "context": {
+            "mythology": "Gerçeğin şok edici açığa çıkışı ve yeniden yapılanma arketipi.",
+            "celtic_cross": {
+              "future": "Ani değişim ve yeniden inşa süreci.",
+              "hidden_influences": "Gizli gerçeklerin etkisi."
+            }
+          },
+          "faq": ["Kule neden çıkar?", "Krizden nasıl güçlenirim?"],
+          "cta": {
+            "main": "Kriz & Yeniden Yapılanma Okuması — 30 dk",
+            "micro": "1 karta acil rehber"
+          },
+          "related": {
+            "cards": ["death", "the_fool", "the_tower"],
+            "guides": ["Kriz & Yeniden İnşa Rehberi"]
+          }
+        },
+        "sr": {
+          "short_description": "Ani sarsıntılar, yıkım ve hakikatin açığa çıkışı.",
+          "meanings": {
+            "upright": {
+              "general": "Beklenmedik yıkım; ilüzyonların çöküşü ve gerçeklerle yüzleşme.",
+              "love": "İlişkide ani kriz veya yüzleşme ve kopuş riski.",
+              "career": "Ani iş değişiklikleri, ifşa veya kayıplar.",
+              "money": "Finansal sarsıntılar; yapıların yeniden değerlendirilmesi.",
+              "spiritual": "İllüzyonun çöküşü ve ruhsal uyanış."
+            },
+            "reversed": {
+              "general": "Yıkımı erteleme veya gerçekleri görmezden gelme riski.",
+              "love": "Sorunları örtbas etme; ileride daha büyük sarsıntılar doğabilir.",
+              "career": "Krizleri gizleme; daha ciddi sonuçlar doğabilir.",
+              "money": "Mali krizleri erteleme ve sonrasında ağır bedel.",
+              "spiritual": "Gerçeği reddetme ve içsel çöküş."
+            }
+          },
+          "context": {
+            "mythology": "Gerçeğin şok edici açığa çıkışı ve yeniden yapılanma arketipi.",
+            "celtic_cross": {
+              "future": "Ani değişim ve yeniden inşa süreci.",
+              "hidden_influences": "Gizli gerçeklerin etkisi."
+            }
+          },
+          "faq": ["Kule neden çıkar?", "Krizden nasıl güçlenirim?"],
+          "cta": {
+            "main": "Kriz & Yeniden Yapılanma Okuması — 30 dk",
+            "micro": "1 karta acil rehber"
+          },
+          "related": {
+            "cards": ["death", "the_fool", "the_tower"],
+            "guides": ["Kriz & Yeniden İnşa Rehberi"]
+          }
+        }
+      },
+      "seo": {
+        "tr": {
+          "title": "Kule — Kriz & Yenilenme | Büsbüskimki",
+          "description": "Kule kartı: ani sarsıntılar, ifşa ve yeniden yapılanma rehberi.",
+          "keywords": ["tarot", "kart", "kule"]
+        },
+        "en": {
+          "title": "The Tower (Kule) — Upheaval & Revelation | Büsbüskimki",
+          "description": "Understand The Tower: sudden change, revelation and rebuilding.",
+          "keywords": ["tarot", "card", "the tower"]
+        },
+        "sr": {
+          "title": "Kula — Značenje Tarot Karte | Büsbüskimki",
+          "description": "Otkrijte značenje Kula karte.",
+          "keywords": ["tarot", "karta", "kula"]
+        }
+      },
+      "category": "major_arcana"
+    },
+    {
+      "id": "the_star",
+      "names": {
+        "tr": "Yıldız",
+        "en": "The Star",
+        "sr": "Zvezda"
+      },
+      "slugs": {
+        "tr": "yildiz",
+        "en": "the-star",
+        "sr": "zvezda"
+      },
+      "content": {
+        "tr": {
+          "short_description": "Umut, şifa ve ilham veren yenilenme enerjisi.",
+          "meanings": {
+            "upright": {
+              "general": "Umutun ve şifanın geri gelişi; ilham dolu bir dönem.",
+              "love": "İlişkide iyileşme, taze umut ve içtenlik.",
+              "career": "Yaratıcı ilham ve yeniden güven kazanma.",
+              "money": "Durgunluktan toparlanma, sürdürülebilir umut.",
+              "spiritual": "Ruhsal yenilenme ve ilahi rehberlikle bağlanma."
+            },
+            "reversed": {
+              "general": "Umutsuzluk, ilham kaybı veya tükenmişlik hissi.",
+              "love": "Güven kaybı ve beklentilerin sarsılması.",
+              "career": "Motivasyon düşüklüğü ve ilham eksikliği.",
+              "money": "Finansal belirsizlik ve karamsarlık.",
+              "spiritual": "İnanç krizleri, ruhsal yalnızlık."
+            }
+          },
+          "context": {
+            "mythology": "İlahi ışık, rehberlik ve şifa sembolü.",
+            "celtic_cross": {
+              "future": "Şifa ve umutla ilerleme.",
+              "hidden_influences": "İyileşme enerjileri ve ilham kaynakları."
+            }
+          },
+          "faq": ["Yıldız nasıl umut verir?", "Şifa süreci nasıl hızlanır?"],
+          "cta": {
+            "main": "Umut & Şifa Okuması — 30 dk",
+            "micro": "1 karta umut mesajı"
+          },
+          "related": {
+            "cards": ["the_sun", "the_star", "the_hermit"],
+            "guides": ["Umut & Şifa Rehberi"]
+          }
+        },
+        "en": {
+          "short_description": "Umut, şifa ve ilham veren yenilenme enerjisi.",
+          "meanings": {
+            "upright": {
+              "general": "Umutun ve şifanın geri gelişi; ilham dolu bir dönem.",
+              "love": "İlişkide iyileşme, taze umut ve içtenlik.",
+              "career": "Yaratıcı ilham ve yeniden güven kazanma.",
+              "money": "Durgunluktan toparlanma, sürdürülebilir umut.",
+              "spiritual": "Ruhsal yenilenme ve ilahi rehberlikle bağlanma."
+            },
+            "reversed": {
+              "general": "Umutsuzluk, ilham kaybı veya tükenmişlik hissi.",
+              "love": "Güven kaybı ve beklentilerin sarsılması.",
+              "career": "Motivasyon düşüklüğü ve ilham eksikliği.",
+              "money": "Finansal belirsizlik ve karamsarlık.",
+              "spiritual": "İnanç krizleri, ruhsal yalnızlık."
+            }
+          },
+          "context": {
+            "mythology": "İlahi ışık, rehberlik ve şifa sembolü.",
+            "celtic_cross": {
+              "future": "Şifa ve umutla ilerleme.",
+              "hidden_influences": "İyileşme enerjileri ve ilham kaynakları."
+            }
+          },
+          "faq": ["Yıldız nasıl umut verir?", "Şifa süreci nasıl hızlanır?"],
+          "cta": {
+            "main": "Umut & Şifa Okuması — 30 dk",
+            "micro": "1 karta umut mesajı"
+          },
+          "related": {
+            "cards": ["the_sun", "the_star", "the_hermit"],
+            "guides": ["Umut & Şifa Rehberi"]
+          }
+        },
+        "sr": {
+          "short_description": "Umut, şifa ve ilham veren yenilenme enerjisi.",
+          "meanings": {
+            "upright": {
+              "general": "Umutun ve şifanın geri gelişi; ilham dolu bir dönem.",
+              "love": "İlişkide iyileşme, taze umut ve içtenlik.",
+              "career": "Yaratıcı ilham ve yeniden güven kazanma.",
+              "money": "Durgunluktan toparlanma, sürdürülebilir umut.",
+              "spiritual": "Ruhsal yenilenme ve ilahi rehberlikle bağlanma."
+            },
+            "reversed": {
+              "general": "Umutsuzluk, ilham kaybı veya tükenmişlik hissi.",
+              "love": "Güven kaybı ve beklentilerin sarsılması.",
+              "career": "Motivasyon düşüklüğü ve ilham eksikliği.",
+              "money": "Finansal belirsizlik ve karamsarlık.",
+              "spiritual": "İnanç krizleri, ruhsal yalnızlık."
+            }
+          },
+          "context": {
+            "mythology": "İlahi ışık, rehberlik ve şifa sembolü.",
+            "celtic_cross": {
+              "future": "Şifa ve umutla ilerleme.",
+              "hidden_influences": "İyileşme enerjileri ve ilham kaynakları."
+            }
+          },
+          "faq": ["Yıldız nasıl umut verir?", "Şifa süreci nasıl hızlanır?"],
+          "cta": {
+            "main": "Umut & Şifa Okuması — 30 dk",
+            "micro": "1 karta umut mesajı"
+          },
+          "related": {
+            "cards": ["the_sun", "the_star", "the_hermit"],
+            "guides": ["Umut & Şifa Rehberi"]
+          }
+        }
+      },
+      "seo": {
+        "tr": {
+          "title": "Yıldız — Umut & Şifa | Büsbüskimki",
+          "description": "Yıldız kartı: umut, ilham ve ruhsal şifa rehberi.",
+          "keywords": ["tarot", "kart", "yıldız"]
+        },
+        "en": {
+          "title": "The Star (Yıldız) — Hope & Healing | Büsbüskimki",
+          "description": "Discover The Star: inspiration, healing and renewed faith.",
+          "keywords": ["tarot", "card", "the star"]
+        },
+        "sr": {
+          "title": "Zvezda — Značenje Tarot Karte | Büsbüskimki",
+          "description": "Otkrijte značenje Zvezda karte.",
+          "keywords": ["tarot", "karta", "zvezda"]
+        }
+      },
+      "category": "major_arcana"
+    },
+    {
+      "id": "the_moon",
+      "names": {
+        "tr": "Ay",
+        "en": "The Moon",
+        "sr": "Mesec"
+      },
+      "slugs": {
+        "tr": "ay",
+        "en": "the-moon",
+        "sr": "mesec"
+      },
+      "content": {
+        "tr": {
+          "short_description": "Bilinçaltı, belirsizlik ve rüya dilinin mesajları.",
+          "meanings": {
+            "upright": {
+              "general": "Belirsizlik, yanılsamalar ve içsel gölgelerin ortaya çıkışı.",
+              "love": "Gizli duygular, yanılsamalar ve duygusal dalgalanmalar.",
+              "career": "Net olmayan koşullar; sezgilerle ilerleme gereği.",
+              "money": "Gizli mali bilgiler veya yanlış anlaşılma riskleri.",
+              "spiritual": "Rüya ve semboller aracılığıyla rehberlik."
+            },
+            "reversed": {
+              "general": "Korkulara kapılma, yanlış algılar veya sisin dağılması.",
+              "love": "Güvensizlik, yanlış okumalar ve aldatılma riski.",
+              "career": "Saklanan gerçeklerin açığa çıkması veya kafa karışıklığı.",
+              "money": "Gizli mali risklerin görünür hale gelmesi.",
+              "spiritual": "İçsel korkularla yüzleşme gereği."
+            }
+          },
+          "context": {
+            "mythology": "Ayın gizemi, rüyalar ve bilinçaltı sembollerinin bekçisi.",
+            "celtic_cross": {
+              "future": "Gizli konuların açığa çıkması.",
+              "hidden_influences": "Bilinçaltı korkular ve rüyalar."
+            }
+          },
+          "faq": ["Ay kartı ne uyarır?", "Rüyalar nasıl yorumlanır?"],
+          "cta": {
+            "main": "Rüya & Sezgi Okuması — 30 dk",
+            "micro": "1 karta rüya yorumu"
+          },
+          "related": {
+            "cards": ["the_high_priestess", "the_moon", "the_star"],
+            "guides": ["Rüya & Sezgi Rehberi"]
+          }
+        },
+        "en": {
+          "short_description": "Bilinçaltı, belirsizlik ve rüya dilinin mesajları.",
+          "meanings": {
+            "upright": {
+              "general": "Belirsizlik, yanılsamalar ve içsel gölgelerin ortaya çıkışı.",
+              "love": "Gizli duygular, yanılsamalar ve duygusal dalgalanmalar.",
+              "career": "Net olmayan koşullar; sezgilerle ilerleme gereği.",
+              "money": "Gizli mali bilgiler veya yanlış anlaşılma riskleri.",
+              "spiritual": "Rüya ve semboller aracılığıyla rehberlik."
+            },
+            "reversed": {
+              "general": "Korkulara kapılma, yanlış algılar veya sisin dağılması.",
+              "love": "Güvensizlik, yanlış okumalar ve aldatılma riski.",
+              "career": "Saklanan gerçeklerin açığa çıkması veya kafa karışıklığı.",
+              "money": "Gizli mali risklerin görünür hale gelmesi.",
+              "spiritual": "İçsel korkularla yüzleşme gereği."
+            }
+          },
+          "context": {
+            "mythology": "Ayın gizemi, rüyalar ve bilinçaltı sembollerinin bekçisi.",
+            "celtic_cross": {
+              "future": "Gizli konuların açığa çıkması.",
+              "hidden_influences": "Bilinçaltı korkular ve rüyalar."
+            }
+          },
+          "faq": ["Ay kartı ne uyarır?", "Rüyalar nasıl yorumlanır?"],
+          "cta": {
+            "main": "Rüya & Sezgi Okuması — 30 dk",
+            "micro": "1 karta rüya yorumu"
+          },
+          "related": {
+            "cards": ["the_high_priestess", "the_moon", "the_star"],
+            "guides": ["Rüya & Sezgi Rehberi"]
+          }
+        },
+        "sr": {
+          "short_description": "Bilinçaltı, belirsizlik ve rüya dilinin mesajları.",
+          "meanings": {
+            "upright": {
+              "general": "Belirsizlik, yanılsamalar ve içsel gölgelerin ortaya çıkışı.",
+              "love": "Gizli duygular, yanılsamalar ve duygusal dalgalanmalar.",
+              "career": "Net olmayan koşullar; sezgilerle ilerleme gereği.",
+              "money": "Gizli mali bilgiler veya yanlış anlaşılma riskleri.",
+              "spiritual": "Rüya ve semboller aracılığıyla rehberlik."
+            },
+            "reversed": {
+              "general": "Korkulara kapılma, yanlış algılar veya sisin dağılması.",
+              "love": "Güvensizlik, yanlış okumalar ve aldatılma riski.",
+              "career": "Saklanan gerçeklerin açığa çıkması veya kafa karışıklığı.",
+              "money": "Gizli mali risklerin görünür hale gelmesi.",
+              "spiritual": "İçsel korkularla yüzleşme gereği."
+            }
+          },
+          "context": {
+            "mythology": "Ayın gizemi, rüyalar ve bilinçaltı sembollerinin bekçisi.",
+            "celtic_cross": {
+              "future": "Gizli konuların açığa çıkması.",
+              "hidden_influences": "Bilinçaltı korkular ve rüyalar."
+            }
+          },
+          "faq": ["Ay kartı ne uyarır?", "Rüyalar nasıl yorumlanır?"],
+          "cta": {
+            "main": "Rüya & Sezgi Okuması — 30 dk",
+            "micro": "1 karta rüya yorumu"
+          },
+          "related": {
+            "cards": ["the_high_priestess", "the_moon", "the_star"],
+            "guides": ["Rüya & Sezgi Rehberi"]
+          }
+        }
+      },
+      "seo": {
+        "tr": {
+          "title": "Ay — Sezgi & Bilinçaltı | Büsbüskimki",
+          "description": "Ay kartı: belirsizlik, rüyalar ve sezgisel uyarılar hakkında rehber.",
+          "keywords": ["tarot", "kart", "ay"]
+        },
+        "en": {
+          "title": "The Moon (Ay) — Intuition & Subconscious | Büsbüskimki",
+          "description": "Explore The Moon: illusions, dreams and intuitive warnings.",
+          "keywords": ["tarot", "card", "the moon"]
+        },
+        "sr": {
+          "title": "Mesec — Značenje Tarot Karte | Büsbüskimki",
+          "description": "Otkrijte značenje Mesec karte.",
+          "keywords": ["tarot", "karta", "mesec"]
+        }
+      },
+      "category": "major_arcana"
+    },
+    {
+      "id": "the_sun",
+      "names": {
+        "tr": "Güneş",
+        "en": "The Sun",
+        "sr": "Sunce"
+      },
+      "slugs": {
+        "tr": "gunes",
+        "en": "the-sun",
+        "sr": "sunce"
+      },
+      "content": {
+        "tr": {
+          "short_description": "Neşe, başarı ve canlı bir netlik enerjisi.",
+          "meanings": {
+            "upright": {
+              "general": "Açık başarı, neşe ve yaşam enerjisinin yükselmesi.",
+              "love": "Mutluluk, samimiyet ve güçlenen bağlar.",
+              "career": "Görünür başarı, takdir edilme ve ilerleme.",
+              "money": "İyimserlikle artan kazanç ve güvenli planlar.",
+              "spiritual": "Aydınlanma, canlılık ve içsel ışıma."
+            },
+            "reversed": {
+              "general": "Motivasyon düşüklüğü, geçici hayal kırıklığı veya yorgunluk.",
+              "love": "İniş çıkışlı mutluluk veya özgüven sorunları.",
+              "career": "Gecikmiş ödüller veya motivasyon eksikliği.",
+              "money": "Kısa vadeli finansal hayal kırıklıkları.",
+              "spiritual": "Enerji düşüklüğü; yeniden şarj olma ihtiyacı."
+            }
+          },
+          "context": {
+            "mythology": "Güneşin canlı enerjisi; başarı ve aydınlanma sembolü.",
+            "celtic_cross": {
+              "future": "Görünür zafer ve coşku potansiyeli.",
+              "hidden_influences": "Başarıyı destekleyen etkenler."
+            }
+          },
+          "faq": ["Güneş kartı neyi müjdeler?", "İçsel ışığı nasıl beslerim?"],
+          "cta": {
+            "main": "Başarı & Neşe Okuması — 25 dk",
+            "micro": "1 karta olumlama"
+          },
+          "related": {
+            "cards": ["the_star", "the_empress", "the_fool"],
+            "guides": ["Başarı & Neşe Rehberi"]
+          }
+        },
+        "en": {
+          "short_description": "Neşe, başarı ve canlı bir netlik enerjisi.",
+          "meanings": {
+            "upright": {
+              "general": "Açık başarı, neşe ve yaşam enerjisinin yükselmesi.",
+              "love": "Mutluluk, samimiyet ve güçlenen bağlar.",
+              "career": "Görünür başarı, takdir edilme ve ilerleme.",
+              "money": "İyimserlikle artan kazanç ve güvenli planlar.",
+              "spiritual": "Aydınlanma, canlılık ve içsel ışıma."
+            },
+            "reversed": {
+              "general": "Motivasyon düşüklüğü, geçici hayal kırıklığı veya yorgunluk.",
+              "love": "İniş çıkışlı mutluluk veya özgüven sorunları.",
+              "career": "Gecikmiş ödüller veya motivasyon eksikliği.",
+              "money": "Kısa vadeli finansal hayal kırıklıkları.",
+              "spiritual": "Enerji düşüklüğü; yeniden şarj olma ihtiyacı."
+            }
+          },
+          "context": {
+            "mythology": "Güneşin canlı enerjisi; başarı ve aydınlanma sembolü.",
+            "celtic_cross": {
+              "future": "Görünür zafer ve coşku potansiyeli.",
+              "hidden_influences": "Başarıyı destekleyen etkenler."
+            }
+          },
+          "faq": ["Güneş kartı neyi müjdeler?", "İçsel ışığı nasıl beslerim?"],
+          "cta": {
+            "main": "Başarı & Neşe Okuması — 25 dk",
+            "micro": "1 karta olumlama"
+          },
+          "related": {
+            "cards": ["the_star", "the_empress", "the_fool"],
+            "guides": ["Başarı & Neşe Rehberi"]
+          }
+        },
+        "sr": {
+          "short_description": "Neşe, başarı ve canlı bir netlik enerjisi.",
+          "meanings": {
+            "upright": {
+              "general": "Açık başarı, neşe ve yaşam enerjisinin yükselmesi.",
+              "love": "Mutluluk, samimiyet ve güçlenen bağlar.",
+              "career": "Görünür başarı, takdir edilme ve ilerleme.",
+              "money": "İyimserlikle artan kazanç ve güvenli planlar.",
+              "spiritual": "Aydınlanma, canlılık ve içsel ışıma."
+            },
+            "reversed": {
+              "general": "Motivasyon düşüklüğü, geçici hayal kırıklığı veya yorgunluk.",
+              "love": "İniş çıkışlı mutluluk veya özgüven sorunları.",
+              "career": "Gecikmiş ödüller veya motivasyon eksikliği.",
+              "money": "Kısa vadeli finansal hayal kırıklıkları.",
+              "spiritual": "Enerji düşüklüğü; yeniden şarj olma ihtiyacı."
+            }
+          },
+          "context": {
+            "mythology": "Güneşin canlı enerjisi; başarı ve aydınlanma sembolü.",
+            "celtic_cross": {
+              "future": "Görünür zafer ve coşku potansiyeli.",
+              "hidden_influences": "Başarıyı destekleyen etkenler."
+            }
+          },
+          "faq": ["Güneş kartı neyi müjdeler?", "İçsel ışığı nasıl beslerim?"],
+          "cta": {
+            "main": "Başarı & Neşe Okuması — 25 dk",
+            "micro": "1 karta olumlama"
+          },
+          "related": {
+            "cards": ["the_star", "the_empress", "the_fool"],
+            "guides": ["Başarı & Neşe Rehberi"]
+          }
+        }
+      },
+      "seo": {
+        "tr": {
+          "title": "Güneş — Neşe & Başarı | Büsbüskimki",
+          "description": "Güneş kartı: neşe, başarı ve aydınlanma üzerine rehber.",
+          "keywords": ["tarot", "kart", "güneş"]
+        },
+        "en": {
+          "title": "The Sun (Güneş) — Joy & Success | Büsbüskimki",
+          "description": "Discover The Sun: joy, clarity and visible achievements.",
+          "keywords": ["tarot", "card", "the sun"]
+        },
+        "sr": {
+          "title": "Sunce — Značenje Tarot Karte | Büsbüskimki",
+          "description": "Otkrijte značenje Sunce karte.",
+          "keywords": ["tarot", "karta", "sunce"]
+        }
+      },
+      "category": "major_arcana"
+    },
+    {
+      "id": "judgement",
+      "names": {
+        "tr": "Mahkeme",
+        "en": "Judgement",
+        "sr": "Sud"
+      },
+      "slugs": {
+        "tr": "mahkeme",
+        "en": "judgement",
+        "sr": "sud"
+      },
+      "content": {
+        "tr": {
+          "short_description": "Yüzleşme, farkındalık ve yeniden doğuş çağrısı.",
+          "meanings": {
+            "upright": {
+              "general": "Geçmişle hesaplaşma, farkındalık ve yeniden doğuş imkânı.",
+              "love": "İlişkide affetme ve yenilenme dönemi.",
+              "career": "Kariyerde tanınma veya yeni yönlenme zamanıdır.",
+              "money": "Mali temizlenme, hesapların düzeltilmesi.",
+              "spiritual": "Ruhsal uyanış, çağrıya cevap verme."
+            },
+            "reversed": {
+              "general": "Geçmişe takılma, karar vermede zorlanma veya inkâr.",
+              "love": "Eski yaralara takılma ve affetmeme.",
+              "career": "Tanınmanın gecikmesi ya da mesleki sorgulama.",
+              "money": "Geçmiş mali hataların bedeliyle yüzleşme.",
+              "spiritual": "Uyanışı reddetme, inisiyatif eksikliği."
+            }
+          },
+          "context": {
+            "mythology": "Hesaplaşma ve çağrı arketipi; ruhsal yeniden doğuş vurgusu.",
+            "celtic_cross": {
+              "future": "Önemli karar ve dönüşüm anı.",
+              "hidden_influences": "Geçmiş eylemlerin sonuçları."
+            }
+          },
+          "faq": ["Mahkeme kartı ne çağırır?", "Geçmişle nasıl barışırım?"],
+          "cta": {
+            "main": "Yüzleşme & Yeniden Doğuş Okuması — 30 dk",
+            "micro": "1 karta net yön"
+          },
+          "related": {
+            "cards": ["justice", "death", "the_hanged_man"],
+            "guides": ["Yeniden Doğuş Rehberi"]
+          }
+        },
+        "en": {
+          "short_description": "Yüzleşme, farkındalık ve yeniden doğuş çağrısı.",
+          "meanings": {
+            "upright": {
+              "general": "Geçmişle hesaplaşma, farkındalık ve yeniden doğuş imkânı.",
+              "love": "İlişkide affetme ve yenilenme dönemi.",
+              "career": "Kariyerde tanınma veya yeni yönlenme zamanıdır.",
+              "money": "Mali temizlenme, hesapların düzeltilmesi.",
+              "spiritual": "Ruhsal uyanış, çağrıya cevap verme."
+            },
+            "reversed": {
+              "general": "Geçmişe takılma, karar vermede zorlanma veya inkâr.",
+              "love": "Eski yaralara takılma ve affetmeme.",
+              "career": "Tanınmanın gecikmesi ya da mesleki sorgulama.",
+              "money": "Geçmiş mali hataların bedeliyle yüzleşme.",
+              "spiritual": "Uyanışı reddetme, inisiyatif eksikliği."
+            }
+          },
+          "context": {
+            "mythology": "Hesaplaşma ve çağrı arketipi; ruhsal yeniden doğuş vurgusu.",
+            "celtic_cross": {
+              "future": "Önemli karar ve dönüşüm anı.",
+              "hidden_influences": "Geçmiş eylemlerin sonuçları."
+            }
+          },
+          "faq": ["Mahkeme kartı ne çağırır?", "Geçmişle nasıl barışırım?"],
+          "cta": {
+            "main": "Yüzleşme & Yeniden Doğuş Okuması — 30 dk",
+            "micro": "1 karta net yön"
+          },
+          "related": {
+            "cards": ["justice", "death", "the_hanged_man"],
+            "guides": ["Yeniden Doğuş Rehberi"]
+          }
+        },
+        "sr": {
+          "short_description": "Yüzleşme, farkındalık ve yeniden doğuş çağrısı.",
+          "meanings": {
+            "upright": {
+              "general": "Geçmişle hesaplaşma, farkındalık ve yeniden doğuş imkânı.",
+              "love": "İlişkide affetme ve yenilenme dönemi.",
+              "career": "Kariyerde tanınma veya yeni yönlenme zamanıdır.",
+              "money": "Mali temizlenme, hesapların düzeltilmesi.",
+              "spiritual": "Ruhsal uyanış, çağrıya cevap verme."
+            },
+            "reversed": {
+              "general": "Geçmişe takılma, karar vermede zorlanma veya inkâr.",
+              "love": "Eski yaralara takılma ve affetmeme.",
+              "career": "Tanınmanın gecikmesi ya da mesleki sorgulama.",
+              "money": "Geçmiş mali hataların bedeliyle yüzleşme.",
+              "spiritual": "Uyanışı reddetme, inisiyatif eksikliği."
+            }
+          },
+          "context": {
+            "mythology": "Hesaplaşma ve çağrı arketipi; ruhsal yeniden doğuş vurgusu.",
+            "celtic_cross": {
+              "future": "Önemli karar ve dönüşüm anı.",
+              "hidden_influences": "Geçmiş eylemlerin sonuçları."
+            }
+          },
+          "faq": ["Mahkeme kartı ne çağırır?", "Geçmişle nasıl barışırım?"],
+          "cta": {
+            "main": "Yüzleşme & Yeniden Doğuş Okuması — 30 dk",
+            "micro": "1 karta net yön"
+          },
+          "related": {
+            "cards": ["justice", "death", "the_hanged_man"],
+            "guides": ["Yeniden Doğuş Rehberi"]
+          }
+        }
+      },
+      "seo": {
+        "tr": {
+          "title": "Mahkeme — Yeniden Doğuş & Hesaplaşma | Büsbüskimki",
+          "description": "Mahkeme kartı: yüzleşme, karar verme ve ruhsal uyanış rehberi.",
+          "keywords": ["tarot", "kart", "mahkeme"]
+        },
+        "en": {
+          "title": "Judgement (Mahkeme) — Renewal & Reckoning | Büsbüskimki",
+          "description": "Explore Judgement: awakening, reckoning and second chances.",
+          "keywords": ["tarot", "card", "judgement"]
+        },
+        "sr": {
+          "title": "Sud — Značenje Tarot Karte | Büsbüskimki",
+          "description": "Otkrijte značenje Sud karte.",
+          "keywords": ["tarot", "karta", "sud"]
+        }
+      },
+      "category": "major_arcana"
+    },
+    {
+      "id": "the_world",
+      "names": {
+        "tr": "Dünya",
+        "en": "The World",
+        "sr": "Svet"
+      },
+      "slugs": {
+        "tr": "dunya",
+        "en": "the-world",
+        "sr": "svet"
+      },
+      "content": {
+        "tr": {
+          "short_description": "Tamamlanma, bütünleşme ve yeni döngüye geçiş.",
+          "meanings": {
+            "upright": {
+              "general": "Bir döngünün tamamlanması; başarı ve bütünlük hissi.",
+              "love": "Olgun, tamamlayıcı ilişki ve ortak hedef uyumu.",
+              "career": "Projelerin bitimi, tanınma ve tatmin.",
+              "money": "Dengeli ve stabil mali sonuçlar.",
+              "spiritual": "Bütünleşme ve ruhsal erişim hissi."
+            },
+            "reversed": {
+              "general": "Yarım kalan işler, tamamlanma korkusu veya gecikme.",
+              "love": "Tamamlanma eksikliği, bağlanma korkusu.",
+              "career": "Projelerin yarıda kalması veya engeller.",
+              "money": "Hedeflere ulaşamama hissi, gecikmeler.",
+              "spiritual": "Tamamlanma korkusu, ruhsal duraklama."
+            }
+          },
+          "context": {
+            "mythology": "Döngülerin tamamlanması ve küresel bütünlük sembolü.",
+            "celtic_cross": {
+              "future": "Kapanış ve yeni başlangıcın eşiği.",
+              "hidden_influences": "Tamamlanmayı destekleyen etkenler."
+            }
+          },
+          "faq": ["Dünya kartı neyi müjdeler?", "Kapanışı nasıl onurlandırırım?"],
+          "cta": {
+            "main": "Tamamlanma & Sonuç Okuması — 30 dk",
+            "micro": "1 karta sonuç yorumu"
+          },
+          "related": {
+            "cards": ["the_sun", "judgement", "the_world"],
+            "guides": ["Tamamlanma & Kutlama Rehberi"]
+          }
+        },
+        "en": {
+          "short_description": "Tamamlanma, bütünleşme ve yeni döngüye geçiş.",
+          "meanings": {
+            "upright": {
+              "general": "Bir döngünün tamamlanması; başarı ve bütünlük hissi.",
+              "love": "Olgun, tamamlayıcı ilişki ve ortak hedef uyumu.",
+              "career": "Projelerin bitimi, tanınma ve tatmin.",
+              "money": "Dengeli ve stabil mali sonuçlar.",
+              "spiritual": "Bütünleşme ve ruhsal erişim hissi."
+            },
+            "reversed": {
+              "general": "Yarım kalan işler, tamamlanma korkusu veya gecikme.",
+              "love": "Tamamlanma eksikliği, bağlanma korkusu.",
+              "career": "Projelerin yarıda kalması veya engeller.",
+              "money": "Hedeflere ulaşamama hissi, gecikmeler.",
+              "spiritual": "Tamamlanma korkusu, ruhsal duraklama."
+            }
+          },
+          "context": {
+            "mythology": "Döngülerin tamamlanması ve küresel bütünlük sembolü.",
+            "celtic_cross": {
+              "future": "Kapanış ve yeni başlangıcın eşiği.",
+              "hidden_influences": "Tamamlanmayı destekleyen etkenler."
+            }
+          },
+          "faq": ["Dünya kartı neyi müjdeler?", "Kapanışı nasıl onurlandırırım?"],
+          "cta": {
+            "main": "Tamamlanma & Sonuç Okuması — 30 dk",
+            "micro": "1 karta sonuç yorumu"
+          },
+          "related": {
+            "cards": ["the_sun", "judgement", "the_world"],
+            "guides": ["Tamamlanma & Kutlama Rehberi"]
+          }
+        },
+        "sr": {
+          "short_description": "Tamamlanma, bütünleşme ve yeni döngüye geçiş.",
+          "meanings": {
+            "upright": {
+              "general": "Bir döngünün tamamlanması; başarı ve bütünlük hissi.",
+              "love": "Olgun, tamamlayıcı ilişki ve ortak hedef uyumu.",
+              "career": "Projelerin bitimi, tanınma ve tatmin.",
+              "money": "Dengeli ve stabil mali sonuçlar.",
+              "spiritual": "Bütünleşme ve ruhsal erişim hissi."
+            },
+            "reversed": {
+              "general": "Yarım kalan işler, tamamlanma korkusu veya gecikme.",
+              "love": "Tamamlanma eksikliği, bağlanma korkusu.",
+              "career": "Projelerin yarıda kalması veya engeller.",
+              "money": "Hedeflere ulaşamama hissi, gecikmeler.",
+              "spiritual": "Tamamlanma korkusu, ruhsal duraklama."
+            }
+          },
+          "context": {
+            "mythology": "Döngülerin tamamlanması ve küresel bütünlük sembolü.",
+            "celtic_cross": {
+              "future": "Kapanış ve yeni başlangıcın eşiği.",
+              "hidden_influences": "Tamamlanmayı destekleyen etkenler."
+            }
+          },
+          "faq": ["Dünya kartı neyi müjdeler?", "Kapanışı nasıl onurlandırırım?"],
+          "cta": {
+            "main": "Tamamlanma & Sonuç Okuması — 30 dk",
+            "micro": "1 karta sonuç yorumu"
+          },
+          "related": {
+            "cards": ["the_sun", "judgement", "the_world"],
+            "guides": ["Tamamlanma & Kutlama Rehberi"]
+          }
+        }
+      },
+      "seo": {
+        "tr": {
+          "title": "Dünya — Tamamlanma & Bütünlük | Büsbüskimki",
+          "description": "Dünya kartı: döngülerin kapanışı, başarı ve bütünleşme rehberi.",
+          "keywords": ["tarot", "kart", "dünya"]
+        },
+        "en": {
+          "title": "The World (Dünya) — Completion & Wholeness | Büsbüskimki",
+          "description": "Discover The World: completion, success and new cycles.",
+          "keywords": ["tarot", "card", "the world"]
+        },
+        "sr": {
+          "title": "Svet — Značenje Tarot Karte | Büsbüskimki",
+          "description": "Otkrijte značenje Svet karte.",
+          "keywords": ["tarot", "karta", "svet"]
+        }
+      },
+      "category": "major_arcana"
+    }
+  ],
+  "metadata": {
+    "total": 22,
+    "category": "major_arcana",
+    "generated": "2025-10-04T00:15:58.911Z"
+  }
+}

@@ -1,0 +1,2428 @@
+{
+  "summary": {
+    "total_cards": 78,
+    "audit_date": "2025-10-04T01:14:44.772Z",
+    "overall_score": 77,
+    "critical_issues": 306,
+    "warnings": 0,
+    "passed": 1020
+  },
+  "meta_tags": {
+    "title_length": {
+      "passed": 0,
+      "failed": 0,
+      "issues": []
+    },
+    "description_length": {
+      "passed": 0,
+      "failed": 0,
+      "issues": []
+    },
+    "keywords_present": {
+      "passed": 0,
+      "failed": 0,
+      "issues": []
+    },
+    "unique_titles": {
+      "passed": 0,
+      "failed": 0,
+      "issues": []
+    }
+  },
+  "content": {
+    "word_count": {
+      "passed": 0,
+      "failed": 0,
+      "issues": []
+    },
+    "duplicate_content": {
+      "passed": 0,
+      "failed": 0,
+      "issues": []
+    },
+    "missing_content": {
+      "passed": 0,
+      "failed": 0,
+      "issues": []
+    }
+  },
+  "technical": {
+    "url_structure": {
+      "passed": 0,
+      "failed": 0,
+      "issues": []
+    },
+    "hreflang": {
+      "passed": 0,
+      "failed": 0,
+      "issues": []
+    },
+    "structured_data": {
+      "passed": 0,
+      "failed": 0,
+      "issues": []
+    }
+  },
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "category": "Critical Issues",
+      "description": "306 critical issues found",
+      "action": "Fix all critical issues before launch"
+    },
+    {
+      "priority": "HIGH",
+      "category": "Content",
+      "description": "78 cards have insufficient content",
+      "action": "Expand content to at least 500 words per language"
+    },
+    {
+      "priority": "MEDIUM",
+      "category": "Translations",
+      "description": "14 cards missing SR translations",
+      "action": "Complete Serbian translations"
+    }
+  ],
+  "detailed_results": [
+    {
+      "card_id": "the_fool",
+      "card_name": {
+        "tr": "Deli",
+        "en": "The Fool",
+        "sr": "Luda"
+      },
+      "issues": [
+        "TR: Description too long (197 chars)",
+        "SR: Description too long (209 chars)",
+        "TR: Content too short (335 words)",
+        "EN: Content too short (398 words)",
+        "SR: Content too short (413 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "the_magician",
+      "card_name": {
+        "tr": "Büyücü",
+        "en": "The Magician",
+        "sr": "Čarobnjak"
+      },
+      "issues": [
+        "TR: Description too long (199 chars)",
+        "TR: Content too short (334 words)",
+        "EN: Content too short (403 words)",
+        "SR: Content too short (412 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "the_high_priestess",
+      "card_name": {
+        "tr": "Başrahibe",
+        "en": "The High Priestess",
+        "sr": "Prvosveštenica"
+      },
+      "issues": [
+        "TR: Content too short (332 words)",
+        "EN: Content too short (412 words)",
+        "SR: Content too short (410 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "the_empress",
+      "card_name": {
+        "tr": "İmparatoriçe",
+        "en": "The Empress",
+        "sr": "Carica"
+      },
+      "issues": [
+        "SR: Description too long (211 chars)",
+        "TR: Content too short (330 words)",
+        "EN: Content too short (412 words)",
+        "SR: Content too short (408 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "the_emperor",
+      "card_name": {
+        "tr": "İmparator",
+        "en": "The Emperor",
+        "sr": "Car"
+      },
+      "issues": [
+        "SR: Description too long (208 chars)",
+        "TR: Content too short (329 words)",
+        "EN: Content too short (411 words)",
+        "SR: Content too short (407 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "the_hierophant",
+      "card_name": {
+        "tr": "Aziz",
+        "en": "The Hierophant",
+        "sr": "Vrhovnik"
+      },
+      "issues": [
+        "TR: Description too long (197 chars)",
+        "TR: Content too short (330 words)",
+        "EN: Content too short (412 words)",
+        "SR: Content too short (408 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "the_lovers",
+      "card_name": {
+        "tr": "Aşıklar",
+        "en": "The Lovers",
+        "sr": "Ljubavnici"
+      },
+      "issues": [
+        "TR: Content too short (329 words)",
+        "EN: Content too short (411 words)",
+        "SR: Content too short (407 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "the_chariot",
+      "card_name": {
+        "tr": "Savaş Arabası",
+        "en": "The Chariot",
+        "sr": "Kočija"
+      },
+      "issues": [
+        "SR: Description too long (211 chars)",
+        "TR: Content too short (341 words)",
+        "EN: Content too short (412 words)",
+        "SR: Content too short (408 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "strength",
+      "card_name": {
+        "tr": "Güç",
+        "en": "Strength",
+        "sr": "Snaga"
+      },
+      "issues": [
+        "TR: Description too long (196 chars)",
+        "SR: Description too long (210 chars)",
+        "TR: Content too short (331 words)",
+        "EN: Content too short (402 words)",
+        "SR: Content too short (409 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "the_hermit",
+      "card_name": {
+        "tr": "Ermiş",
+        "en": "The Hermit",
+        "sr": "Pustinjak"
+      },
+      "issues": [
+        "TR: Description too long (198 chars)",
+        "TR: Content too short (330 words)",
+        "EN: Content too short (412 words)",
+        "SR: Content too short (408 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "wheel_of_fortune",
+      "card_name": {
+        "tr": "Kader Çarkı",
+        "en": "Wheel of Fortune",
+        "sr": "Točak Sreće"
+      },
+      "issues": [
+        "TR: Content too short (340 words)",
+        "EN: Content too short (422 words)",
+        "SR: Content too short (418 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "justice",
+      "card_name": {
+        "tr": "Adalet",
+        "en": "Justice",
+        "sr": "Pravda"
+      },
+      "issues": [
+        "TR: Description too long (199 chars)",
+        "SR: Description too long (211 chars)",
+        "TR: Content too short (328 words)",
+        "EN: Content too short (399 words)",
+        "SR: Content too short (406 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "the_hanged_man",
+      "card_name": {
+        "tr": "Asılan Adam",
+        "en": "The Hanged Man",
+        "sr": "Obešenik"
+      },
+      "issues": [
+        "TR: Content too short (339 words)",
+        "EN: Content too short (421 words)",
+        "SR: Content too short (406 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "death",
+      "card_name": {
+        "tr": "Ölüm",
+        "en": "Death",
+        "sr": "Smrt"
+      },
+      "issues": [
+        "TR: Description too long (197 chars)",
+        "EN: Description too long (228 chars)",
+        "SR: Description too long (209 chars)",
+        "TR: Content too short (333 words)",
+        "EN: Content too short (404 words)",
+        "SR: Content too short (411 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "temperance",
+      "card_name": {
+        "tr": "Denge",
+        "en": "Temperance",
+        "sr": "Umerenost"
+      },
+      "issues": [
+        "TR: Description too long (198 chars)",
+        "TR: Content too short (340 words)",
+        "EN: Content too short (399 words)",
+        "SR: Content too short (406 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "the_devil",
+      "card_name": {
+        "tr": "Şeytan",
+        "en": "The Devil",
+        "sr": "Đavo"
+      },
+      "issues": [
+        "TR: Description too long (199 chars)",
+        "SR: Description too long (209 chars)",
+        "TR: Content too short (330 words)",
+        "EN: Content too short (412 words)",
+        "SR: Content too short (408 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "the_tower",
+      "card_name": {
+        "tr": "Kule",
+        "en": "The Tower",
+        "sr": "Kula"
+      },
+      "issues": [
+        "TR: Description too long (197 chars)",
+        "SR: Description too long (209 chars)",
+        "TR: Content too short (334 words)",
+        "EN: Content too short (416 words)",
+        "SR: Content too short (412 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "the_star",
+      "card_name": {
+        "tr": "Yıldız",
+        "en": "The Star",
+        "sr": "Zvezda"
+      },
+      "issues": [
+        "TR: Description too long (199 chars)",
+        "SR: Description too long (211 chars)",
+        "TR: Content too short (332 words)",
+        "EN: Content too short (414 words)",
+        "SR: Content too short (410 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "the_moon",
+      "card_name": {
+        "tr": "Ay",
+        "en": "The Moon",
+        "sr": "Mesec"
+      },
+      "issues": [
+        "TR: Description too long (195 chars)",
+        "SR: Description too long (210 chars)",
+        "TR: Content too short (332 words)",
+        "EN: Content too short (414 words)",
+        "SR: Content too short (410 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "the_sun",
+      "card_name": {
+        "tr": "Güneş",
+        "en": "The Sun",
+        "sr": "Sunce"
+      },
+      "issues": [
+        "TR: Description too long (198 chars)",
+        "SR: Description too long (210 chars)",
+        "TR: Content too short (332 words)",
+        "EN: Content too short (414 words)",
+        "SR: Content too short (410 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "judgement",
+      "card_name": {
+        "tr": "Mahkeme",
+        "en": "Judgement",
+        "sr": "Sud"
+      },
+      "issues": [
+        "SR: Description too long (208 chars)",
+        "TR: Content too short (333 words)",
+        "EN: Content too short (404 words)",
+        "SR: Content too short (411 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "the_world",
+      "card_name": {
+        "tr": "Dünya",
+        "en": "The World",
+        "sr": "Svet"
+      },
+      "issues": [
+        "TR: Description too long (198 chars)",
+        "SR: Description too long (209 chars)",
+        "TR: Content too short (331 words)",
+        "EN: Content too short (413 words)",
+        "SR: Content too short (409 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "swords_ace",
+      "card_name": {
+        "tr": "Kılıçlar Ası",
+        "en": "Ace of Swords",
+        "sr": "Mač As"
+      },
+      "issues": [
+        "SR: Description too long (220 chars)",
+        "TR: Content too short (348 words)",
+        "EN: Content too short (398 words)",
+        "SR: Content too short (413 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "swords_two",
+      "card_name": {
+        "tr": "Kılıçlar İkilisi",
+        "en": "Two of Swords",
+        "sr": "Mač Dvojka"
+      },
+      "issues": [
+        "TR: Content too short (337 words)",
+        "EN: Content too short (402 words)",
+        "SR: Content too short (398 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "swords_three",
+      "card_name": {
+        "tr": "Kılıçlar Üçlüsü",
+        "en": "Three of Swords",
+        "sr": "Mač Trojka"
+      },
+      "issues": [
+        "TR: Content too short (346 words)",
+        "EN: Content too short (409 words)",
+        "SR: Content too short (424 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "swords_four",
+      "card_name": {
+        "tr": "Kılıçlar Dörtlüsü",
+        "en": "Four of Swords",
+        "sr": "Mač Četvorka"
+      },
+      "issues": [
+        "TR: Content too short (342 words)",
+        "EN: Content too short (424 words)",
+        "SR: Content too short (420 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "swords_five",
+      "card_name": {
+        "tr": "Kılıçlar Beşlisi",
+        "en": "Five of Swords",
+        "sr": "Mač Petica"
+      },
+      "issues": [
+        "TR: Content too short (346 words)",
+        "EN: Content too short (396 words)",
+        "SR: Content too short (424 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "swords_six",
+      "card_name": {
+        "tr": "Kılıçlar Altılısı",
+        "en": "Six of Swords",
+        "sr": "Mač Šestica"
+      },
+      "issues": [
+        "TR: Content too short (345 words)",
+        "EN: Content too short (414 words)",
+        "SR: Content too short (423 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "swords_seven",
+      "card_name": {
+        "tr": "Kılıçlar Yedilisi",
+        "en": "Seven of Swords",
+        "sr": "Mač Sedmica"
+      },
+      "issues": [
+        "TR: Content too short (344 words)",
+        "EN: Content too short (426 words)",
+        "SR: Content too short (422 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "swords_eight",
+      "card_name": {
+        "tr": "Kılıçlar Sekizlisi",
+        "en": "Eight of Swords",
+        "sr": "Mač Osmica"
+      },
+      "issues": [
+        "TR: Content too short (344 words)",
+        "EN: Content too short (426 words)",
+        "SR: Content too short (422 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "swords_nine",
+      "card_name": {
+        "tr": "Kılıçlar Dokuzlusu",
+        "en": "Nine of Swords",
+        "sr": "Mač Devetka"
+      },
+      "issues": [
+        "TR: Content too short (343 words)",
+        "EN: Content too short (425 words)",
+        "SR: Content too short (421 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "swords_ten",
+      "card_name": {
+        "tr": "Kılıçlar Onlusu",
+        "en": "Ten of Swords",
+        "sr": "Mač Desetka"
+      },
+      "issues": [
+        "TR: Content too short (333 words)",
+        "EN: Content too short (398 words)",
+        "SR: Content too short (426 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "swords_page",
+      "card_name": {
+        "tr": "Kılıçlar Valesi",
+        "en": "Page of Swords",
+        "sr": "Paž Mačeva"
+      },
+      "issues": [
+        "TR: Content too short (346 words)",
+        "EN: Content too short (409 words)",
+        "SR: Content too short (424 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "swords_knight",
+      "card_name": {
+        "tr": "Kılıçlar Şövalyesi",
+        "en": "Knight of Swords",
+        "sr": "Vitez Mačeva"
+      },
+      "issues": [
+        "TR: Content too short (346 words)",
+        "EN: Content too short (415 words)",
+        "SR: Content too short (411 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "swords_queen",
+      "card_name": {
+        "tr": "Kılıçlar Kraliçesi",
+        "en": "Queen of Swords",
+        "sr": "Kraljica Mačeva"
+      },
+      "issues": [
+        "TR: Content too short (344 words)",
+        "EN: Content too short (426 words)",
+        "SR: Content too short (422 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "swords_king",
+      "card_name": {
+        "tr": "Kılıçlar Kralı",
+        "en": "King of Swords",
+        "sr": "Kral Mačeva"
+      },
+      "issues": [
+        "TR: Content too short (345 words)",
+        "EN: Content too short (414 words)",
+        "SR: Content too short (423 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "pentacles_ace",
+      "card_name": {
+        "tr": "Tılsımlar Ası",
+        "en": "Ace of Pentacles",
+        "sr": "Zlatnik As"
+      },
+      "issues": [
+        "TR: Content too short (334 words)",
+        "EN: Content too short (399 words)",
+        "SR: Content too short (414 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "pentacles_two",
+      "card_name": {
+        "tr": "Tılsımlar İkilisi",
+        "en": "Two of Pentacles",
+        "sr": "Zlatnik Dvojka"
+      },
+      "issues": [
+        "TR: Content too short (345 words)",
+        "EN: Content too short (408 words)",
+        "SR: Content too short (423 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "pentacles_three",
+      "card_name": {
+        "tr": "Tılsımlar Üçlüsü",
+        "en": "Three of Pentacles",
+        "sr": "Zlatnik Trojka"
+      },
+      "issues": [
+        "TR: Content too short (346 words)",
+        "EN: Content too short (396 words)",
+        "SR: Content too short (424 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "pentacles_four",
+      "card_name": {
+        "tr": "Tılsımlar Dörtlüsü",
+        "en": "Four of Pentacles",
+        "sr": "Zlatnik Četvorka"
+      },
+      "issues": [
+        "TR: Content too short (343 words)",
+        "EN: Content too short (425 words)",
+        "SR: Content too short (421 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "pentacles_five",
+      "card_name": {
+        "tr": "Tılsımlar Beşlisi",
+        "en": "Five of Pentacles",
+        "sr": "Zlatnik Petica"
+      },
+      "issues": [
+        "TR: Content too short (345 words)",
+        "EN: Content too short (414 words)",
+        "SR: Content too short (423 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "pentacles_six",
+      "card_name": {
+        "tr": "Tılsımlar Altılısı",
+        "en": "Six of Pentacles",
+        "sr": "Zlatnik Šestica"
+      },
+      "issues": [
+        "TR: Content too short (332 words)",
+        "EN: Content too short (410 words)",
+        "SR: Content too short (425 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "pentacles_seven",
+      "card_name": {
+        "tr": "Tılsımlar Yedilisi",
+        "en": "Seven of Pentacles",
+        "sr": "Zlatnik Sedmica"
+      },
+      "issues": [
+        "TR: Content too short (344 words)",
+        "EN: Content too short (426 words)",
+        "SR: Content too short (422 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "pentacles_eight",
+      "card_name": {
+        "tr": "Tılsımlar Sekizlisi",
+        "en": "Eight of Pentacles",
+        "sr": "Zlatnik Osmica"
+      },
+      "issues": [
+        "TR: Content too short (345 words)",
+        "EN: Content too short (414 words)",
+        "SR: Content too short (423 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "pentacles_nine",
+      "card_name": {
+        "tr": "Tılsımlar Dokuzlusu",
+        "en": "Nine of Pentacles",
+        "sr": "Zlatnik Devetka"
+      },
+      "issues": [
+        "TR: Content too short (348 words)",
+        "EN: Content too short (398 words)",
+        "SR: Content too short (413 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "pentacles_ten",
+      "card_name": {
+        "tr": "Tılsımlar Onlusu",
+        "en": "Ten of Pentacles",
+        "sr": "Zlatnik Desetka"
+      },
+      "issues": [
+        "TR: Content too short (348 words)",
+        "EN: Content too short (398 words)",
+        "SR: Content too short (413 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "pentacles_page",
+      "card_name": {
+        "tr": "Tılsımlar Valesi",
+        "en": "Page of Pentacles",
+        "sr": "Paž Zlatnika"
+      },
+      "issues": [
+        "TR: Content too short (348 words)",
+        "EN: Content too short (398 words)",
+        "SR: Content too short (413 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "pentacles_knight",
+      "card_name": {
+        "tr": "Tılsımlar Şövalyesi",
+        "en": "Knight of Pentacles",
+        "sr": "Vitez Zlatnika"
+      },
+      "issues": [
+        "TR: Content too short (343 words)",
+        "EN: Content too short (425 words)",
+        "SR: Content too short (421 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "pentacles_queen",
+      "card_name": {
+        "tr": "Tılsımlar Kraliçesi",
+        "en": "Queen of Pentacles",
+        "sr": "Kraljica Zlatnika"
+      },
+      "issues": [
+        "TR: Content too short (346 words)",
+        "EN: Content too short (396 words)",
+        "SR: Content too short (424 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "pentacles_king",
+      "card_name": {
+        "tr": "Tılsımlar Kralı",
+        "en": "King of Pentacles",
+        "sr": "Kral Zlatnika"
+      },
+      "issues": [
+        "TR: Content too short (347 words)",
+        "EN: Content too short (397 words)",
+        "SR: Content too short (412 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "wands_ace",
+      "card_name": {
+        "tr": "Asalar Ası",
+        "en": "Ace of Wands",
+        "sr": "Štap As"
+      },
+      "issues": [
+        "TR: Content too short (346 words)",
+        "EN: Content too short (396 words)",
+        "SR: Content too short (424 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "wands_two",
+      "card_name": {
+        "tr": "Asalar İkilisi",
+        "en": "Two of Wands",
+        "sr": "Štap Dvojka"
+      },
+      "issues": [
+        "TR: Content too short (344 words)",
+        "EN: Content too short (426 words)",
+        "SR: Content too short (422 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "wands_three",
+      "card_name": {
+        "tr": "Asalar Üçlüsü",
+        "en": "Three of Wands",
+        "sr": "Štap Trojka"
+      },
+      "issues": [
+        "TR: Content too short (345 words)",
+        "EN: Content too short (408 words)",
+        "SR: Content too short (423 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "wands_four",
+      "card_name": {
+        "tr": "Asalar Dörtlüsü",
+        "en": "Four of Wands",
+        "sr": "Štap Četvorka"
+      },
+      "issues": [
+        "TR: Content too short (344 words)",
+        "EN: Content too short (413 words)",
+        "SR: Content too short (422 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "wands_five",
+      "card_name": {
+        "tr": "Asalar Beşlisi",
+        "en": "Five of Wands",
+        "sr": "Štap Petica"
+      },
+      "issues": [
+        "TR: Content too short (343 words)",
+        "EN: Content too short (425 words)",
+        "SR: Content too short (421 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "wands_six",
+      "card_name": {
+        "tr": "Asalar Altılısı",
+        "en": "Six of Wands",
+        "sr": "Štap Šestica"
+      },
+      "issues": [
+        "TR: Content too short (344 words)",
+        "EN: Content too short (413 words)",
+        "SR: Content too short (422 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "wands_seven",
+      "card_name": {
+        "tr": "Asalar Yedilisi",
+        "en": "Seven of Wands",
+        "sr": "Štap Sedmica"
+      },
+      "issues": [
+        "TR: Content too short (346 words)",
+        "EN: Content too short (415 words)",
+        "SR: Content too short (411 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "wands_eight",
+      "card_name": {
+        "tr": "Asalar Sekizlisi",
+        "en": "Eight of Wands",
+        "sr": "Štap Osmica"
+      },
+      "issues": [
+        "TR: Content too short (344 words)",
+        "EN: Content too short (413 words)",
+        "SR: Content too short (422 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "wands_nine",
+      "card_name": {
+        "tr": "Asalar Dokuzlusu",
+        "en": "Nine of Wands",
+        "sr": "Štap Devetka"
+      },
+      "issues": [
+        "TR: Content too short (346 words)",
+        "EN: Content too short (396 words)",
+        "SR: Content too short (424 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "wands_ten",
+      "card_name": {
+        "tr": "Asalar Onlusu",
+        "en": "Ten of Wands",
+        "sr": "Štap Desetka"
+      },
+      "issues": [
+        "TR: Content too short (344 words)",
+        "EN: Content too short (426 words)",
+        "SR: Content too short (422 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "wands_page",
+      "card_name": {
+        "tr": "Asalar Valesi",
+        "en": "Page of Wands",
+        "sr": "Paž Štapova"
+      },
+      "issues": [
+        "TR: Content too short (345 words)",
+        "EN: Content too short (408 words)",
+        "SR: Content too short (423 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "wands_knight",
+      "card_name": {
+        "tr": "Asalar Şövalyesi",
+        "en": "Knight of Wands",
+        "sr": "Vitez Štapova"
+      },
+      "issues": [
+        "TR: Content too short (345 words)",
+        "EN: Content too short (414 words)",
+        "SR: Content too short (423 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "wands_queen",
+      "card_name": {
+        "tr": "Asalar Kraliçesi",
+        "en": "Queen of Wands",
+        "sr": "Kraljica Štapova"
+      },
+      "issues": [
+        "TR: Content too short (344 words)",
+        "EN: Content too short (413 words)",
+        "SR: Content too short (422 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "wands_king",
+      "card_name": {
+        "tr": "Asalar Kralı",
+        "en": "King of Wands",
+        "sr": "Kral Štapova"
+      },
+      "issues": [
+        "TR: Content too short (345 words)",
+        "EN: Content too short (408 words)",
+        "SR: Content too short (423 words)"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Description length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "SR: URL slug valid",
+        "Hreflang implementation ready",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "cups_ace",
+      "card_name": {
+        "tr": "Kupalar Ası",
+        "en": "Ace of Cups",
+        "sr": ""
+      },
+      "issues": [
+        "SR: Description too long (212 chars)",
+        "TR: Content too short (347 words)",
+        "EN: Content too short (416 words)",
+        "SR: Content too short (405 words)",
+        "SR: Missing URL slug",
+        "Missing slugs for hreflang implementation"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "cups_two",
+      "card_name": {
+        "tr": "Kupalar İkilisi",
+        "en": "Two of Cups",
+        "sr": ""
+      },
+      "issues": [
+        "SR: Description too long (212 chars)",
+        "TR: Content too short (342 words)",
+        "EN: Content too short (424 words)",
+        "SR: Content too short (400 words)",
+        "SR: Missing URL slug",
+        "Missing slugs for hreflang implementation"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "cups_three",
+      "card_name": {
+        "tr": "Kupalar Üçlüsü",
+        "en": "Three of Cups",
+        "sr": ""
+      },
+      "issues": [
+        "SR: Description too long (212 chars)",
+        "TR: Content too short (341 words)",
+        "EN: Content too short (423 words)",
+        "SR: Content too short (413 words)",
+        "SR: Missing URL slug",
+        "Missing slugs for hreflang implementation"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "cups_four",
+      "card_name": {
+        "tr": "Kupalar Dörtlüsü",
+        "en": "Four of Cups",
+        "sr": ""
+      },
+      "issues": [
+        "SR: Description too long (212 chars)",
+        "TR: Content too short (346 words)",
+        "EN: Content too short (415 words)",
+        "SR: Content too short (418 words)",
+        "SR: Missing URL slug",
+        "Missing slugs for hreflang implementation"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "cups_five",
+      "card_name": {
+        "tr": "Kupalar Beşlisi",
+        "en": "Five of Cups",
+        "sr": ""
+      },
+      "issues": [
+        "SR: Description too long (212 chars)",
+        "TR: Content too short (342 words)",
+        "EN: Content too short (424 words)",
+        "SR: Content too short (414 words)",
+        "SR: Missing URL slug",
+        "Missing slugs for hreflang implementation"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "cups_six",
+      "card_name": {
+        "tr": "Kupalar Altılısı",
+        "en": "Six of Cups",
+        "sr": ""
+      },
+      "issues": [
+        "SR: Description too long (212 chars)",
+        "TR: Content too short (340 words)",
+        "EN: Content too short (422 words)",
+        "SR: Content too short (412 words)",
+        "SR: Missing URL slug",
+        "Missing slugs for hreflang implementation"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "cups_seven",
+      "card_name": {
+        "tr": "Kupalar Yedilisi",
+        "en": "Seven of Cups",
+        "sr": ""
+      },
+      "issues": [
+        "SR: Description too long (212 chars)",
+        "TR: Content too short (341 words)",
+        "EN: Content too short (410 words)",
+        "SR: Content too short (413 words)",
+        "SR: Missing URL slug",
+        "Missing slugs for hreflang implementation"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "cups_eight",
+      "card_name": {
+        "tr": "Kupalar Sekizlisi",
+        "en": "Eight of Cups",
+        "sr": ""
+      },
+      "issues": [
+        "SR: Description too long (212 chars)",
+        "TR: Content too short (343 words)",
+        "EN: Content too short (425 words)",
+        "SR: Content too short (415 words)",
+        "SR: Missing URL slug",
+        "Missing slugs for hreflang implementation"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "cups_nine",
+      "card_name": {
+        "tr": "Kupalar Dokuzlusu",
+        "en": "Nine of Cups",
+        "sr": ""
+      },
+      "issues": [
+        "SR: Description too long (212 chars)",
+        "TR: Content too short (341 words)",
+        "EN: Content too short (423 words)",
+        "SR: Content too short (413 words)",
+        "SR: Missing URL slug",
+        "Missing slugs for hreflang implementation"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "cups_ten",
+      "card_name": {
+        "tr": "Kupalar Onlusu",
+        "en": "Ten of Cups",
+        "sr": ""
+      },
+      "issues": [
+        "SR: Description too long (212 chars)",
+        "TR: Content too short (341 words)",
+        "EN: Content too short (423 words)",
+        "SR: Content too short (413 words)",
+        "SR: Missing URL slug",
+        "Missing slugs for hreflang implementation"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "cups_page",
+      "card_name": {
+        "tr": "Kupalar Prensi",
+        "en": "Page of Cups",
+        "sr": ""
+      },
+      "issues": [
+        "SR: Description too long (212 chars)",
+        "TR: Content too short (345 words)",
+        "EN: Content too short (427 words)",
+        "SR: Content too short (403 words)",
+        "SR: Missing URL slug",
+        "Missing slugs for hreflang implementation"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "cups_knight",
+      "card_name": {
+        "tr": "Kupalar Şövalyesi",
+        "en": "Knight of Cups",
+        "sr": ""
+      },
+      "issues": [
+        "SR: Description too long (212 chars)",
+        "TR: Content too short (347 words)",
+        "EN: Content too short (416 words)",
+        "SR: Content too short (405 words)",
+        "SR: Missing URL slug",
+        "Missing slugs for hreflang implementation"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "cups_queen",
+      "card_name": {
+        "tr": "Kupalar Kraliçesi",
+        "en": "Queen of Cups",
+        "sr": ""
+      },
+      "issues": [
+        "SR: Description too long (212 chars)",
+        "TR: Content too short (341 words)",
+        "EN: Content too short (423 words)",
+        "SR: Content too short (413 words)",
+        "SR: Missing URL slug",
+        "Missing slugs for hreflang implementation"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "FAQ structured data ready"
+      ]
+    },
+    {
+      "card_id": "cups_king",
+      "card_name": {
+        "tr": "Kupalar Kralı",
+        "en": "King of Cups",
+        "sr": ""
+      },
+      "issues": [
+        "SR: Description too long (212 chars)",
+        "TR: Content too short (341 words)",
+        "EN: Content too short (423 words)",
+        "SR: Content too short (413 words)",
+        "SR: Missing URL slug",
+        "Missing slugs for hreflang implementation"
+      ],
+      "warnings": [],
+      "passed_checks": [
+        "TR: Title length optimal",
+        "TR: Description length optimal",
+        "TR: Keywords present",
+        "EN: Title length optimal",
+        "EN: Description length optimal",
+        "EN: Keywords present",
+        "SR: Title length optimal",
+        "SR: Keywords present",
+        "TR: URL slug valid",
+        "EN: URL slug valid",
+        "FAQ structured data ready"
+      ]
+    }
+  ]
+}

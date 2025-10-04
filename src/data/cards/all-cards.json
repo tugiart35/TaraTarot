@@ -1,0 +1,150 @@
+{
+  "cards": [
+    {
+      "id": "cups_king",
+      "names": {
+        "tr": "Kupalar Kralı",
+        "en": "King of Cups",
+        "sr": "Kupalar Kralı"
+      },
+      "slugs": {
+        "tr": "kupalar-krali",
+        "en": "king-of-cups",
+        "sr": "kupalar-kral"
+      },
+      "content": {
+        "tr": {
+          "short_description": "Duygusal olgunluk, denge ve bilgelik.",
+          "meanings": {
+            "upright": {
+              "general": "Duygusal olgunluk, denge ve bilgelik.",
+              "love": "Duygusal olgunluk, denge ve bilgelik.",
+              "career": "Duygusal olgunluk, denge ve bilgelik.",
+              "money": "Duygusal olgunluk, denge ve bilgelik.",
+              "spiritual": "Duygusal olgunluk, denge ve bilgelik."
+            },
+            "reversed": {
+              "general": "Duygusal manipülasyon, soğukluk veya kontrolsüz hisler.",
+              "love": "Duygusal manipülasyon, soğukluk veya kontrolsüz hisler.",
+              "career": "Duygusal manipülasyon, soğukluk veya kontrolsüz hisler.",
+              "money": "Duygusal manipülasyon, soğukluk veya kontrolsüz hisler.",
+              "spiritual": "Duygusal manipülasyon, soğukluk veya kontrolsüz hisler."
+            }
+          },
+          "context": {
+            "mythology": "Duygusal liderlik ve olgun yaklaşım sergileme zamanı.",
+            "celtic_cross": {
+              "future": "",
+              "hidden_influences": ""
+            }
+          },
+          "faq": [],
+          "cta": {
+            "main": "Duygularını yönet",
+            "micro": ""
+          },
+          "related": {
+            "cards": [],
+            "guides": []
+          }
+        },
+        "en": {
+          "short_description": "Duygusal olgunluk, denge ve bilgelik.",
+          "meanings": {
+            "upright": {
+              "general": "Duygusal olgunluk, denge ve bilgelik.",
+              "love": "Duygusal olgunluk, denge ve bilgelik.",
+              "career": "Duygusal olgunluk, denge ve bilgelik.",
+              "money": "Duygusal olgunluk, denge ve bilgelik.",
+              "spiritual": "Duygusal olgunluk, denge ve bilgelik."
+            },
+            "reversed": {
+              "general": "Duygusal manipülasyon, soğukluk veya kontrolsüz hisler.",
+              "love": "Duygusal manipülasyon, soğukluk veya kontrolsüz hisler.",
+              "career": "Duygusal manipülasyon, soğukluk veya kontrolsüz hisler.",
+              "money": "Duygusal manipülasyon, soğukluk veya kontrolsüz hisler.",
+              "spiritual": "Duygusal manipülasyon, soğukluk veya kontrolsüz hisler."
+            }
+          },
+          "context": {
+            "mythology": "Duygusal liderlik ve olgun yaklaşım sergileme zamanı.",
+            "celtic_cross": {
+              "future": "",
+              "hidden_influences": ""
+            }
+          },
+          "faq": [],
+          "cta": {
+            "main": "Duygularını yönet",
+            "micro": ""
+          },
+          "related": {
+            "cards": [],
+            "guides": []
+          }
+        },
+        "sr": {
+          "short_description": "Duygusal olgunluk, denge ve bilgelik.",
+          "meanings": {
+            "upright": {
+              "general": "Duygusal olgunluk, denge ve bilgelik.",
+              "love": "Duygusal olgunluk, denge ve bilgelik.",
+              "career": "Duygusal olgunluk, denge ve bilgelik.",
+              "money": "Duygusal olgunluk, denge ve bilgelik.",
+              "spiritual": "Duygusal olgunluk, denge ve bilgelik."
+            },
+            "reversed": {
+              "general": "Duygusal manipülasyon, soğukluk veya kontrolsüz hisler.",
+              "love": "Duygusal manipülasyon, soğukluk veya kontrolsüz hisler.",
+              "career": "Duygusal manipülasyon, soğukluk veya kontrolsüz hisler.",
+              "money": "Duygusal manipülasyon, soğukluk veya kontrolsüz hisler.",
+              "spiritual": "Duygusal manipülasyon, soğukluk veya kontrolsüz hisler."
+            }
+          },
+          "context": {
+            "mythology": "Duygusal liderlik ve olgun yaklaşım sergileme zamanı.",
+            "celtic_cross": {
+              "future": "",
+              "hidden_influences": ""
+            }
+          },
+          "faq": [],
+          "cta": {
+            "main": "Duygularını yönet",
+            "micro": ""
+          },
+          "related": {
+            "cards": [],
+            "guides": []
+          }
+        }
+      },
+      "seo": {
+        "tr": {
+          "title": "Kupalar Kralı — Tarot Kartı Anlamı | Büsbüskimki",
+          "description": "Kupalar Kralı kartının düz ve ters anlamları.",
+          "keywords": ["tarot", "kart", "kupalar kralı"]
+        },
+        "en": {
+          "title": "King of Cups — Tarot Card Meaning | Büsbüskimki",
+          "description": "Discover King of Cups card meanings.",
+          "keywords": ["tarot", "card", "king of cups"]
+        },
+        "sr": {
+          "title": "Kupalar Kralı — Značenje Tarot Karte | Büsbüskimki",
+          "description": "Otkrijte značenje Kupalar Kralı karte.",
+          "keywords": ["tarot", "karta", "kupalar kralı"]
+        }
+      },
+      "category": "minor_arcana",
+      "suit": "cups",
+      "number": 14
+    }
+  ],
+  "metadata": {
+    "total": 1,
+    "major_arcana": 0,
+    "minor_arcana": 1,
+    "generated": "2025-10-04T00:14:47.194Z"
+  }
+}

@@ -1,0 +1,1037 @@
+{
+  "summary": {
+    "total_tests": 1170,
+    "test_date": "2025-10-04T09:09:42.290Z",
+    "overall_score": 64,
+    "passed_tests": 750,
+    "failed_tests": 0,
+    "warnings": 270
+  },
+  "device_analysis": {
+    "mobile": {
+      "name": "iPhone SE",
+      "size": "375x667",
+      "passed": 211,
+      "failed": 23,
+      "warnings": 47,
+      "issues": []
+    },
+    "mobile_large": {
+      "name": "iPhone 11 Pro Max",
+      "size": "414x896",
+      "passed": 222,
+      "failed": 12,
+      "warnings": 23,
+      "issues": []
+    },
+    "tablet": {
+      "name": "iPad",
+      "size": "768x1024",
+      "passed": 229,
+      "failed": 5,
+      "warnings": 12,
+      "issues": []
+    },
+    "tablet_large": {
+      "name": "iPad Pro",
+      "size": "1024x1366",
+      "passed": 234,
+      "failed": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    "desktop": {
+      "name": "Desktop",
+      "size": "1440x900",
+      "passed": 234,
+      "failed": 0,
+      "warnings": 0,
+      "issues": []
+    }
+  },
+  "component_analysis": {
+    "hero": {
+      "passed": 222,
+      "failed": 12,
+      "issues": []
+    },
+    "content": {
+      "passed": 211,
+      "failed": 23,
+      "issues": []
+    },
+    "cta": {
+      "passed": 229,
+      "failed": 5,
+      "issues": []
+    },
+    "faq": {
+      "passed": 222,
+      "failed": 12,
+      "issues": []
+    },
+    "navigation": {
+      "passed": 211,
+      "failed": 23,
+      "issues": []
+    }
+  },
+  "recommendations": [
+    {
+      "priority": "LOW",
+      "category": "Mobile Optimization",
+      "description": "Mobile infrastructure is comprehensive",
+      "action": "Continue monitoring mobile performance"
+    },
+    {
+      "priority": "LOW",
+      "category": "Touch Targets",
+      "description": "Touch targets are optimized",
+      "action": "Maintain 44px minimum touch target size"
+    },
+    {
+      "priority": "LOW",
+      "category": "Responsive Design",
+      "description": "Responsive design is implemented",
+      "action": "Regular testing across all device sizes"
+    }
+  ],
+  "detailed_results": [
+    {
+      "card_id": "the_fool",
+      "card_name": {
+        "tr": "Deli",
+        "en": "The Fool",
+        "sr": "Luda"
+      },
+      "passed_tests": 12,
+      "failed_tests": 0,
+      "warnings": 3,
+      "score": 100
+    },
+    {
+      "card_id": "the_magician",
+      "card_name": {
+        "tr": "Büyücü",
+        "en": "The Magician",
+        "sr": "Čarobnjak"
+      },
+      "passed_tests": 12,
+      "failed_tests": 0,
+      "warnings": 3,
+      "score": 100
+    },
+    {
+      "card_id": "the_high_priestess",
+      "card_name": {
+        "tr": "Başrahibe",
+        "en": "The High Priestess",
+        "sr": "Prvosveštenica"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "the_empress",
+      "card_name": {
+        "tr": "İmparatoriçe",
+        "en": "The Empress",
+        "sr": "Carica"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "the_emperor",
+      "card_name": {
+        "tr": "İmparator",
+        "en": "The Emperor",
+        "sr": "Car"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "the_hierophant",
+      "card_name": {
+        "tr": "Aziz",
+        "en": "The Hierophant",
+        "sr": "Vrhovnik"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "the_lovers",
+      "card_name": {
+        "tr": "Aşıklar",
+        "en": "The Lovers",
+        "sr": "Ljubavnici"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "the_chariot",
+      "card_name": {
+        "tr": "Savaş Arabası",
+        "en": "The Chariot",
+        "sr": "Kočija"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "strength",
+      "card_name": {
+        "tr": "Güç",
+        "en": "Strength",
+        "sr": "Snaga"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "the_hermit",
+      "card_name": {
+        "tr": "Ermiş",
+        "en": "The Hermit",
+        "sr": "Pustinjak"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "wheel_of_fortune",
+      "card_name": {
+        "tr": "Kader Çarkı",
+        "en": "Wheel of Fortune",
+        "sr": "Točak Sreće"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "justice",
+      "card_name": {
+        "tr": "Adalet",
+        "en": "Justice",
+        "sr": "Pravda"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "the_hanged_man",
+      "card_name": {
+        "tr": "Asılan Adam",
+        "en": "The Hanged Man",
+        "sr": "Obešenik"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "death",
+      "card_name": {
+        "tr": "Ölüm",
+        "en": "Death",
+        "sr": "Smrt"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "temperance",
+      "card_name": {
+        "tr": "Denge",
+        "en": "Temperance",
+        "sr": "Umerenost"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "the_devil",
+      "card_name": {
+        "tr": "Şeytan",
+        "en": "The Devil",
+        "sr": "Đavo"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "the_tower",
+      "card_name": {
+        "tr": "Kule",
+        "en": "The Tower",
+        "sr": "Kula"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "the_star",
+      "card_name": {
+        "tr": "Yıldız",
+        "en": "The Star",
+        "sr": "Zvezda"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "the_moon",
+      "card_name": {
+        "tr": "Ay",
+        "en": "The Moon",
+        "sr": "Mesec"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "the_sun",
+      "card_name": {
+        "tr": "Güneş",
+        "en": "The Sun",
+        "sr": "Sunce"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "judgement",
+      "card_name": {
+        "tr": "Mahkeme",
+        "en": "Judgement",
+        "sr": "Sud"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "the_world",
+      "card_name": {
+        "tr": "Dünya",
+        "en": "The World",
+        "sr": "Svet"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "swords_ace",
+      "card_name": {
+        "tr": "Kılıçlar Ası",
+        "en": "Ace of Swords",
+        "sr": "Mač As"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "swords_two",
+      "card_name": {
+        "tr": "Kılıçlar İkilisi",
+        "en": "Two of Swords",
+        "sr": "Mač Dvojka"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "swords_three",
+      "card_name": {
+        "tr": "Kılıçlar Üçlüsü",
+        "en": "Three of Swords",
+        "sr": "Mač Trojka"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "swords_four",
+      "card_name": {
+        "tr": "Kılıçlar Dörtlüsü",
+        "en": "Four of Swords",
+        "sr": "Mač Četvorka"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "swords_five",
+      "card_name": {
+        "tr": "Kılıçlar Beşlisi",
+        "en": "Five of Swords",
+        "sr": "Mač Petica"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "swords_six",
+      "card_name": {
+        "tr": "Kılıçlar Altılısı",
+        "en": "Six of Swords",
+        "sr": "Mač Šestica"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "swords_seven",
+      "card_name": {
+        "tr": "Kılıçlar Yedilisi",
+        "en": "Seven of Swords",
+        "sr": "Mač Sedmica"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "swords_eight",
+      "card_name": {
+        "tr": "Kılıçlar Sekizlisi",
+        "en": "Eight of Swords",
+        "sr": "Mač Osmica"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "swords_nine",
+      "card_name": {
+        "tr": "Kılıçlar Dokuzlusu",
+        "en": "Nine of Swords",
+        "sr": "Mač Devetka"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "swords_ten",
+      "card_name": {
+        "tr": "Kılıçlar Onlusu",
+        "en": "Ten of Swords",
+        "sr": "Mač Desetka"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "swords_page",
+      "card_name": {
+        "tr": "Kılıçlar Valesi",
+        "en": "Page of Swords",
+        "sr": "Paž Mačeva"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "swords_knight",
+      "card_name": {
+        "tr": "Kılıçlar Şövalyesi",
+        "en": "Knight of Swords",
+        "sr": "Vitez Mačeva"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "swords_queen",
+      "card_name": {
+        "tr": "Kılıçlar Kraliçesi",
+        "en": "Queen of Swords",
+        "sr": "Kraljica Mačeva"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "swords_king",
+      "card_name": {
+        "tr": "Kılıçlar Kralı",
+        "en": "King of Swords",
+        "sr": "Kral Mačeva"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "pentacles_ace",
+      "card_name": {
+        "tr": "Tılsımlar Ası",
+        "en": "Ace of Pentacles",
+        "sr": "Zlatnik As"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "pentacles_two",
+      "card_name": {
+        "tr": "Tılsımlar İkilisi",
+        "en": "Two of Pentacles",
+        "sr": "Zlatnik Dvojka"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "pentacles_three",
+      "card_name": {
+        "tr": "Tılsımlar Üçlüsü",
+        "en": "Three of Pentacles",
+        "sr": "Zlatnik Trojka"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "pentacles_four",
+      "card_name": {
+        "tr": "Tılsımlar Dörtlüsü",
+        "en": "Four of Pentacles",
+        "sr": "Zlatnik Četvorka"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "pentacles_five",
+      "card_name": {
+        "tr": "Tılsımlar Beşlisi",
+        "en": "Five of Pentacles",
+        "sr": "Zlatnik Petica"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "pentacles_six",
+      "card_name": {
+        "tr": "Tılsımlar Altılısı",
+        "en": "Six of Pentacles",
+        "sr": "Zlatnik Šestica"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "pentacles_seven",
+      "card_name": {
+        "tr": "Tılsımlar Yedilisi",
+        "en": "Seven of Pentacles",
+        "sr": "Zlatnik Sedmica"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "pentacles_eight",
+      "card_name": {
+        "tr": "Tılsımlar Sekizlisi",
+        "en": "Eight of Pentacles",
+        "sr": "Zlatnik Osmica"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "pentacles_nine",
+      "card_name": {
+        "tr": "Tılsımlar Dokuzlusu",
+        "en": "Nine of Pentacles",
+        "sr": "Zlatnik Devetka"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "pentacles_ten",
+      "card_name": {
+        "tr": "Tılsımlar Onlusu",
+        "en": "Ten of Pentacles",
+        "sr": "Zlatnik Desetka"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "pentacles_page",
+      "card_name": {
+        "tr": "Tılsımlar Valesi",
+        "en": "Page of Pentacles",
+        "sr": "Paž Zlatnika"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "pentacles_knight",
+      "card_name": {
+        "tr": "Tılsımlar Şövalyesi",
+        "en": "Knight of Pentacles",
+        "sr": "Vitez Zlatnika"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "pentacles_queen",
+      "card_name": {
+        "tr": "Tılsımlar Kraliçesi",
+        "en": "Queen of Pentacles",
+        "sr": "Kraljica Zlatnika"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "pentacles_king",
+      "card_name": {
+        "tr": "Tılsımlar Kralı",
+        "en": "King of Pentacles",
+        "sr": "Kral Zlatnika"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "wands_ace",
+      "card_name": {
+        "tr": "Asalar Ası",
+        "en": "Ace of Wands",
+        "sr": "Štap As"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "wands_two",
+      "card_name": {
+        "tr": "Asalar İkilisi",
+        "en": "Two of Wands",
+        "sr": "Štap Dvojka"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "wands_three",
+      "card_name": {
+        "tr": "Asalar Üçlüsü",
+        "en": "Three of Wands",
+        "sr": "Štap Trojka"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "wands_four",
+      "card_name": {
+        "tr": "Asalar Dörtlüsü",
+        "en": "Four of Wands",
+        "sr": "Štap Četvorka"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "wands_five",
+      "card_name": {
+        "tr": "Asalar Beşlisi",
+        "en": "Five of Wands",
+        "sr": "Štap Petica"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "wands_six",
+      "card_name": {
+        "tr": "Asalar Altılısı",
+        "en": "Six of Wands",
+        "sr": "Štap Šestica"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "wands_seven",
+      "card_name": {
+        "tr": "Asalar Yedilisi",
+        "en": "Seven of Wands",
+        "sr": "Štap Sedmica"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "wands_eight",
+      "card_name": {
+        "tr": "Asalar Sekizlisi",
+        "en": "Eight of Wands",
+        "sr": "Štap Osmica"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "wands_nine",
+      "card_name": {
+        "tr": "Asalar Dokuzlusu",
+        "en": "Nine of Wands",
+        "sr": "Štap Devetka"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "wands_ten",
+      "card_name": {
+        "tr": "Asalar Onlusu",
+        "en": "Ten of Wands",
+        "sr": "Štap Desetka"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "wands_page",
+      "card_name": {
+        "tr": "Asalar Valesi",
+        "en": "Page of Wands",
+        "sr": "Paž Štapova"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "wands_knight",
+      "card_name": {
+        "tr": "Asalar Şövalyesi",
+        "en": "Knight of Wands",
+        "sr": "Vitez Štapova"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "wands_queen",
+      "card_name": {
+        "tr": "Asalar Kraliçesi",
+        "en": "Queen of Wands",
+        "sr": "Kraljica Štapova"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "wands_king",
+      "card_name": {
+        "tr": "Asalar Kralı",
+        "en": "King of Wands",
+        "sr": "Kral Štapova"
+      },
+      "passed_tests": 9,
+      "failed_tests": 0,
+      "warnings": 6,
+      "score": 100
+    },
+    {
+      "card_id": "cups_ace",
+      "card_name": {
+        "tr": "Kupalar Ası",
+        "en": "Ace of Cups",
+        "sr": ""
+      },
+      "passed_tests": 12,
+      "failed_tests": 0,
+      "warnings": 3,
+      "score": 100
+    },
+    {
+      "card_id": "cups_two",
+      "card_name": {
+        "tr": "Kupalar İkilisi",
+        "en": "Two of Cups",
+        "sr": ""
+      },
+      "passed_tests": 12,
+      "failed_tests": 0,
+      "warnings": 3,
+      "score": 100
+    },
+    {
+      "card_id": "cups_three",
+      "card_name": {
+        "tr": "Kupalar Üçlüsü",
+        "en": "Three of Cups",
+        "sr": ""
+      },
+      "passed_tests": 12,
+      "failed_tests": 0,
+      "warnings": 3,
+      "score": 100
+    },
+    {
+      "card_id": "cups_four",
+      "card_name": {
+        "tr": "Kupalar Dörtlüsü",
+        "en": "Four of Cups",
+        "sr": ""
+      },
+      "passed_tests": 12,
+      "failed_tests": 0,
+      "warnings": 3,
+      "score": 100
+    },
+    {
+      "card_id": "cups_five",
+      "card_name": {
+        "tr": "Kupalar Beşlisi",
+        "en": "Five of Cups",
+        "sr": ""
+      },
+      "passed_tests": 12,
+      "failed_tests": 0,
+      "warnings": 3,
+      "score": 100
+    },
+    {
+      "card_id": "cups_six",
+      "card_name": {
+        "tr": "Kupalar Altılısı",
+        "en": "Six of Cups",
+        "sr": ""
+      },
+      "passed_tests": 12,
+      "failed_tests": 0,
+      "warnings": 3,
+      "score": 100
+    },
+    {
+      "card_id": "cups_seven",
+      "card_name": {
+        "tr": "Kupalar Yedilisi",
+        "en": "Seven of Cups",
+        "sr": ""
+      },
+      "passed_tests": 12,
+      "failed_tests": 0,
+      "warnings": 3,
+      "score": 100
+    },
+    {
+      "card_id": "cups_eight",
+      "card_name": {
+        "tr": "Kupalar Sekizlisi",
+        "en": "Eight of Cups",
+        "sr": ""
+      },
+      "passed_tests": 12,
+      "failed_tests": 0,
+      "warnings": 3,
+      "score": 100
+    },
+    {
+      "card_id": "cups_nine",
+      "card_name": {
+        "tr": "Kupalar Dokuzlusu",
+        "en": "Nine of Cups",
+        "sr": ""
+      },
+      "passed_tests": 12,
+      "failed_tests": 0,
+      "warnings": 3,
+      "score": 100
+    },
+    {
+      "card_id": "cups_ten",
+      "card_name": {
+        "tr": "Kupalar Onlusu",
+        "en": "Ten of Cups",
+        "sr": ""
+      },
+      "passed_tests": 12,
+      "failed_tests": 0,
+      "warnings": 3,
+      "score": 100
+    },
+    {
+      "card_id": "cups_page",
+      "card_name": {
+        "tr": "Kupalar Prensi",
+        "en": "Page of Cups",
+        "sr": ""
+      },
+      "passed_tests": 12,
+      "failed_tests": 0,
+      "warnings": 3,
+      "score": 100
+    },
+    {
+      "card_id": "cups_knight",
+      "card_name": {
+        "tr": "Kupalar Şövalyesi",
+        "en": "Knight of Cups",
+        "sr": ""
+      },
+      "passed_tests": 12,
+      "failed_tests": 0,
+      "warnings": 3,
+      "score": 100
+    },
+    {
+      "card_id": "cups_queen",
+      "card_name": {
+        "tr": "Kupalar Kraliçesi",
+        "en": "Queen of Cups",
+        "sr": ""
+      },
+      "passed_tests": 12,
+      "failed_tests": 0,
+      "warnings": 3,
+      "score": 100
+    },
+    {
+      "card_id": "cups_king",
+      "card_name": {
+        "tr": "Kupalar Kralı",
+        "en": "King of Cups",
+        "sr": ""
+      },
+      "passed_tests": 12,
+      "failed_tests": 0,
+      "warnings": 3,
+      "score": 100
+    }
+  ]
+}

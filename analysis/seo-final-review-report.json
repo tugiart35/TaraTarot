@@ -1,0 +1,1490 @@
+{
+  "summary": {
+    "total_cards": 78,
+    "fixes_applied": 535,
+    "issues_fixed": 535,
+    "remaining_issues": 0,
+    "fix_date": "2025-10-04T09:35:03.648Z"
+  },
+  "fixes_applied": {
+    "meta_descriptions": 187,
+    "content_length": 140,
+    "missing_sr_slugs": 14,
+    "title_length": 211,
+    "faq_content": 164
+  },
+  "detailed_fixes": [
+    {
+      "card_id": "the_fool",
+      "card_name": {
+        "tr": "Deli",
+        "en": "The Fool",
+        "sr": "Luda"
+      },
+      "fixes_applied": 5,
+      "issues_fixed": 5,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (330 → 400+ words)",
+        "EN: Meta description optimized",
+        "EN: Content expanded (393 → 400+ words)",
+        "SR: Meta description optimized"
+      ]
+    },
+    {
+      "card_id": "the_magician",
+      "card_name": {
+        "tr": "Büyücü",
+        "en": "The Magician",
+        "sr": "Čarobnjak"
+      },
+      "fixes_applied": 5,
+      "issues_fixed": 5,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (328 → 400+ words)",
+        "EN: Meta description optimized",
+        "EN: Content expanded (397 → 400+ words)",
+        "SR: Meta description optimized"
+      ]
+    },
+    {
+      "card_id": "the_high_priestess",
+      "card_name": {
+        "tr": "Başrahibe",
+        "en": "The High Priestess",
+        "sr": "Prvosveštenica"
+      },
+      "fixes_applied": 8,
+      "issues_fixed": 8,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (327 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: Title length optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "the_empress",
+      "card_name": {
+        "tr": "İmparatoriçe",
+        "en": "The Empress",
+        "sr": "Carica"
+      },
+      "fixes_applied": 8,
+      "issues_fixed": 8,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (325 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: Title length optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "the_emperor",
+      "card_name": {
+        "tr": "İmparator",
+        "en": "The Emperor",
+        "sr": "Car"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (325 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "the_hierophant",
+      "card_name": {
+        "tr": "Aziz",
+        "en": "The Hierophant",
+        "sr": "Vrhovnik"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (326 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "the_lovers",
+      "card_name": {
+        "tr": "Aşıklar",
+        "en": "The Lovers",
+        "sr": "Ljubavnici"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (325 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "the_chariot",
+      "card_name": {
+        "tr": "Savaş Arabası",
+        "en": "The Chariot",
+        "sr": "Kočija"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (337 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "strength",
+      "card_name": {
+        "tr": "Güç",
+        "en": "Strength",
+        "sr": "Snaga"
+      },
+      "fixes_applied": 8,
+      "issues_fixed": 8,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (328 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: Content expanded (399 → 400+ words)",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "the_hermit",
+      "card_name": {
+        "tr": "Ermiş",
+        "en": "The Hermit",
+        "sr": "Pustinjak"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (326 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "wheel_of_fortune",
+      "card_name": {
+        "tr": "Kader Çarkı",
+        "en": "Wheel of Fortune",
+        "sr": "Točak Sreće"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (336 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "justice",
+      "card_name": {
+        "tr": "Adalet",
+        "en": "Justice",
+        "sr": "Pravda"
+      },
+      "fixes_applied": 8,
+      "issues_fixed": 8,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (324 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: Content expanded (395 → 400+ words)",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "the_hanged_man",
+      "card_name": {
+        "tr": "Asılan Adam",
+        "en": "The Hanged Man",
+        "sr": "Obešenik"
+      },
+      "fixes_applied": 8,
+      "issues_fixed": 8,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (336 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: Title length optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "death",
+      "card_name": {
+        "tr": "Ölüm",
+        "en": "Death",
+        "sr": "Smrt"
+      },
+      "fixes_applied": 8,
+      "issues_fixed": 8,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (326 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: Content expanded (397 → 400+ words)",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "temperance",
+      "card_name": {
+        "tr": "Denge",
+        "en": "Temperance",
+        "sr": "Umerenost"
+      },
+      "fixes_applied": 8,
+      "issues_fixed": 8,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (335 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: Content expanded (394 → 400+ words)",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "the_devil",
+      "card_name": {
+        "tr": "Şeytan",
+        "en": "The Devil",
+        "sr": "Đavo"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (324 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "the_tower",
+      "card_name": {
+        "tr": "Kule",
+        "en": "The Tower",
+        "sr": "Kula"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (327 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "the_star",
+      "card_name": {
+        "tr": "Yıldız",
+        "en": "The Star",
+        "sr": "Zvezda"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (328 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "the_moon",
+      "card_name": {
+        "tr": "Ay",
+        "en": "The Moon",
+        "sr": "Mesec"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (327 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "the_sun",
+      "card_name": {
+        "tr": "Güneş",
+        "en": "The Sun",
+        "sr": "Sunce"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (327 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "judgement",
+      "card_name": {
+        "tr": "Mahkeme",
+        "en": "Judgement",
+        "sr": "Sud"
+      },
+      "fixes_applied": 8,
+      "issues_fixed": 8,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (327 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: Content expanded (398 → 400+ words)",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "the_world",
+      "card_name": {
+        "tr": "Dünya",
+        "en": "The World",
+        "sr": "Svet"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (327 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "swords_ace",
+      "card_name": {
+        "tr": "Kılıçlar Ası",
+        "en": "Ace of Swords",
+        "sr": "Mač As"
+      },
+      "fixes_applied": 8,
+      "issues_fixed": 8,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (342 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: Content expanded (392 → 400+ words)",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "swords_two",
+      "card_name": {
+        "tr": "Kılıçlar İkilisi",
+        "en": "Two of Swords",
+        "sr": "Mač Dvojka"
+      },
+      "fixes_applied": 9,
+      "issues_fixed": 9,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (331 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: Content expanded (396 → 400+ words)",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: Content expanded (392 → 400+ words)",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "swords_three",
+      "card_name": {
+        "tr": "Kılıçlar Üçlüsü",
+        "en": "Three of Swords",
+        "sr": "Mač Trojka"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (340 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "swords_four",
+      "card_name": {
+        "tr": "Kılıçlar Dörtlüsü",
+        "en": "Four of Swords",
+        "sr": "Mač Četvorka"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (336 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "swords_five",
+      "card_name": {
+        "tr": "Kılıçlar Beşlisi",
+        "en": "Five of Swords",
+        "sr": "Mač Petica"
+      },
+      "fixes_applied": 8,
+      "issues_fixed": 8,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (340 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: Content expanded (390 → 400+ words)",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "swords_six",
+      "card_name": {
+        "tr": "Kılıçlar Altılısı",
+        "en": "Six of Swords",
+        "sr": "Mač Šestica"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (339 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "swords_seven",
+      "card_name": {
+        "tr": "Kılıçlar Yedilisi",
+        "en": "Seven of Swords",
+        "sr": "Mač Sedmica"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (338 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "swords_eight",
+      "card_name": {
+        "tr": "Kılıçlar Sekizlisi",
+        "en": "Eight of Swords",
+        "sr": "Mač Osmica"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (338 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "swords_nine",
+      "card_name": {
+        "tr": "Kılıçlar Dokuzlusu",
+        "en": "Nine of Swords",
+        "sr": "Mač Devetka"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (337 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "swords_ten",
+      "card_name": {
+        "tr": "Kılıçlar Onlusu",
+        "en": "Ten of Swords",
+        "sr": "Mač Desetka"
+      },
+      "fixes_applied": 8,
+      "issues_fixed": 8,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (327 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: Content expanded (392 → 400+ words)",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "swords_page",
+      "card_name": {
+        "tr": "Kılıçlar Valesi",
+        "en": "Page of Swords",
+        "sr": "Paž Mačeva"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (340 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "swords_knight",
+      "card_name": {
+        "tr": "Kılıçlar Şövalyesi",
+        "en": "Knight of Swords",
+        "sr": "Vitez Mačeva"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (340 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "swords_queen",
+      "card_name": {
+        "tr": "Kılıçlar Kraliçesi",
+        "en": "Queen of Swords",
+        "sr": "Kraljica Mačeva"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (338 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "swords_king",
+      "card_name": {
+        "tr": "Kılıçlar Kralı",
+        "en": "King of Swords",
+        "sr": "Kral Mačeva"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (339 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "pentacles_ace",
+      "card_name": {
+        "tr": "Tılsımlar Ası",
+        "en": "Ace of Pentacles",
+        "sr": "Zlatnik As"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (328 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Content expanded (393 → 400+ words)",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "pentacles_two",
+      "card_name": {
+        "tr": "Tılsımlar İkilisi",
+        "en": "Two of Pentacles",
+        "sr": "Zlatnik Dvojka"
+      },
+      "fixes_applied": 6,
+      "issues_fixed": 6,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (339 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "pentacles_three",
+      "card_name": {
+        "tr": "Tılsımlar Üçlüsü",
+        "en": "Three of Pentacles",
+        "sr": "Zlatnik Trojka"
+      },
+      "fixes_applied": 9,
+      "issues_fixed": 9,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (340 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: Title length optimized",
+        "EN: Content expanded (390 → 400+ words)",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "pentacles_four",
+      "card_name": {
+        "tr": "Tılsımlar Dörtlüsü",
+        "en": "Four of Pentacles",
+        "sr": "Zlatnik Četvorka"
+      },
+      "fixes_applied": 6,
+      "issues_fixed": 6,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (337 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "pentacles_five",
+      "card_name": {
+        "tr": "Tılsımlar Beşlisi",
+        "en": "Five of Pentacles",
+        "sr": "Zlatnik Petica"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (339 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "pentacles_six",
+      "card_name": {
+        "tr": "Tılsımlar Altılısı",
+        "en": "Six of Pentacles",
+        "sr": "Zlatnik Šestica"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (326 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "pentacles_seven",
+      "card_name": {
+        "tr": "Tılsımlar Yedilisi",
+        "en": "Seven of Pentacles",
+        "sr": "Zlatnik Sedmica"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (338 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "pentacles_eight",
+      "card_name": {
+        "tr": "Tılsımlar Sekizlisi",
+        "en": "Eight of Pentacles",
+        "sr": "Zlatnik Osmica"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (339 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "pentacles_nine",
+      "card_name": {
+        "tr": "Tılsımlar Dokuzlusu",
+        "en": "Nine of Pentacles",
+        "sr": "Zlatnik Devetka"
+      },
+      "fixes_applied": 8,
+      "issues_fixed": 8,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (342 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: Content expanded (392 → 400+ words)",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "pentacles_ten",
+      "card_name": {
+        "tr": "Tılsımlar Onlusu",
+        "en": "Ten of Pentacles",
+        "sr": "Zlatnik Desetka"
+      },
+      "fixes_applied": 8,
+      "issues_fixed": 8,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (342 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: Content expanded (392 → 400+ words)",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "pentacles_page",
+      "card_name": {
+        "tr": "Tılsımlar Valesi",
+        "en": "Page of Pentacles",
+        "sr": "Paž Zlatnika"
+      },
+      "fixes_applied": 8,
+      "issues_fixed": 8,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (342 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: Content expanded (392 → 400+ words)",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "pentacles_knight",
+      "card_name": {
+        "tr": "Tılsımlar Şövalyesi",
+        "en": "Knight of Pentacles",
+        "sr": "Vitez Zlatnika"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (337 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "pentacles_queen",
+      "card_name": {
+        "tr": "Tılsımlar Kraliçesi",
+        "en": "Queen of Pentacles",
+        "sr": "Kraljica Zlatnika"
+      },
+      "fixes_applied": 8,
+      "issues_fixed": 8,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (340 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: Content expanded (390 → 400+ words)",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "pentacles_king",
+      "card_name": {
+        "tr": "Tılsımlar Kralı",
+        "en": "King of Pentacles",
+        "sr": "Kral Zlatnika"
+      },
+      "fixes_applied": 9,
+      "issues_fixed": 9,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (341 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: Title length optimized",
+        "EN: Content expanded (391 → 400+ words)",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "wands_ace",
+      "card_name": {
+        "tr": "Asalar Ası",
+        "en": "Ace of Wands",
+        "sr": "Štap As"
+      },
+      "fixes_applied": 8,
+      "issues_fixed": 8,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (340 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: Content expanded (390 → 400+ words)",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "wands_two",
+      "card_name": {
+        "tr": "Asalar İkilisi",
+        "en": "Two of Wands",
+        "sr": "Štap Dvojka"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (338 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "wands_three",
+      "card_name": {
+        "tr": "Asalar Üçlüsü",
+        "en": "Three of Wands",
+        "sr": "Štap Trojka"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (339 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "wands_four",
+      "card_name": {
+        "tr": "Asalar Dörtlüsü",
+        "en": "Four of Wands",
+        "sr": "Štap Četvorka"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (338 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "wands_five",
+      "card_name": {
+        "tr": "Asalar Beşlisi",
+        "en": "Five of Wands",
+        "sr": "Štap Petica"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (337 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "wands_six",
+      "card_name": {
+        "tr": "Asalar Altılısı",
+        "en": "Six of Wands",
+        "sr": "Štap Šestica"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (338 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "wands_seven",
+      "card_name": {
+        "tr": "Asalar Yedilisi",
+        "en": "Seven of Wands",
+        "sr": "Štap Sedmica"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (340 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "wands_eight",
+      "card_name": {
+        "tr": "Asalar Sekizlisi",
+        "en": "Eight of Wands",
+        "sr": "Štap Osmica"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (338 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "wands_nine",
+      "card_name": {
+        "tr": "Asalar Dokuzlusu",
+        "en": "Nine of Wands",
+        "sr": "Štap Devetka"
+      },
+      "fixes_applied": 8,
+      "issues_fixed": 8,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (340 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: Content expanded (390 → 400+ words)",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "wands_ten",
+      "card_name": {
+        "tr": "Asalar Onlusu",
+        "en": "Ten of Wands",
+        "sr": "Štap Desetka"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (338 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "wands_page",
+      "card_name": {
+        "tr": "Asalar Valesi",
+        "en": "Page of Wands",
+        "sr": "Paž Štapova"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (339 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "wands_knight",
+      "card_name": {
+        "tr": "Asalar Şövalyesi",
+        "en": "Knight of Wands",
+        "sr": "Vitez Štapova"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (339 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "wands_queen",
+      "card_name": {
+        "tr": "Asalar Kraliçesi",
+        "en": "Queen of Wands",
+        "sr": "Kraljica Štapova"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (338 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "wands_king",
+      "card_name": {
+        "tr": "Asalar Kralı",
+        "en": "King of Wands",
+        "sr": "Kral Štapova"
+      },
+      "fixes_applied": 7,
+      "issues_fixed": 7,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (339 → 400+ words)",
+        "TR: FAQ content enhanced",
+        "EN: Meta description optimized",
+        "EN: FAQ content enhanced",
+        "SR: Meta description optimized",
+        "SR: FAQ content enhanced"
+      ]
+    },
+    {
+      "card_id": "cups_ace",
+      "card_name": {
+        "tr": "Kupalar Ası",
+        "en": "Ace of Cups",
+        "sr": ""
+      },
+      "fixes_applied": 5,
+      "issues_fixed": 5,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (339 → 400+ words)",
+        "EN: Meta description optimized",
+        "SR: Meta description optimized",
+        "SR: Missing URL slug added"
+      ]
+    },
+    {
+      "card_id": "cups_two",
+      "card_name": {
+        "tr": "Kupalar İkilisi",
+        "en": "Two of Cups",
+        "sr": ""
+      },
+      "fixes_applied": 5,
+      "issues_fixed": 5,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (336 → 400+ words)",
+        "EN: Meta description optimized",
+        "SR: Meta description optimized",
+        "SR: Missing URL slug added"
+      ]
+    },
+    {
+      "card_id": "cups_three",
+      "card_name": {
+        "tr": "Kupalar Üçlüsü",
+        "en": "Three of Cups",
+        "sr": ""
+      },
+      "fixes_applied": 5,
+      "issues_fixed": 5,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (336 → 400+ words)",
+        "EN: Meta description optimized",
+        "SR: Meta description optimized",
+        "SR: Missing URL slug added"
+      ]
+    },
+    {
+      "card_id": "cups_four",
+      "card_name": {
+        "tr": "Kupalar Dörtlüsü",
+        "en": "Four of Cups",
+        "sr": ""
+      },
+      "fixes_applied": 5,
+      "issues_fixed": 5,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (337 → 400+ words)",
+        "EN: Meta description optimized",
+        "SR: Meta description optimized",
+        "SR: Missing URL slug added"
+      ]
+    },
+    {
+      "card_id": "cups_five",
+      "card_name": {
+        "tr": "Kupalar Beşlisi",
+        "en": "Five of Cups",
+        "sr": ""
+      },
+      "fixes_applied": 5,
+      "issues_fixed": 5,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (336 → 400+ words)",
+        "EN: Meta description optimized",
+        "SR: Meta description optimized",
+        "SR: Missing URL slug added"
+      ]
+    },
+    {
+      "card_id": "cups_six",
+      "card_name": {
+        "tr": "Kupalar Altılısı",
+        "en": "Six of Cups",
+        "sr": ""
+      },
+      "fixes_applied": 5,
+      "issues_fixed": 5,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (334 → 400+ words)",
+        "EN: Meta description optimized",
+        "SR: Meta description optimized",
+        "SR: Missing URL slug added"
+      ]
+    },
+    {
+      "card_id": "cups_seven",
+      "card_name": {
+        "tr": "Kupalar Yedilisi",
+        "en": "Seven of Cups",
+        "sr": ""
+      },
+      "fixes_applied": 5,
+      "issues_fixed": 5,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (336 → 400+ words)",
+        "EN: Meta description optimized",
+        "SR: Meta description optimized",
+        "SR: Missing URL slug added"
+      ]
+    },
+    {
+      "card_id": "cups_eight",
+      "card_name": {
+        "tr": "Kupalar Sekizlisi",
+        "en": "Eight of Cups",
+        "sr": ""
+      },
+      "fixes_applied": 5,
+      "issues_fixed": 5,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (336 → 400+ words)",
+        "EN: Meta description optimized",
+        "SR: Meta description optimized",
+        "SR: Missing URL slug added"
+      ]
+    },
+    {
+      "card_id": "cups_nine",
+      "card_name": {
+        "tr": "Kupalar Dokuzlusu",
+        "en": "Nine of Cups",
+        "sr": ""
+      },
+      "fixes_applied": 5,
+      "issues_fixed": 5,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (336 → 400+ words)",
+        "EN: Meta description optimized",
+        "SR: Meta description optimized",
+        "SR: Missing URL slug added"
+      ]
+    },
+    {
+      "card_id": "cups_ten",
+      "card_name": {
+        "tr": "Kupalar Onlusu",
+        "en": "Ten of Cups",
+        "sr": ""
+      },
+      "fixes_applied": 5,
+      "issues_fixed": 5,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (336 → 400+ words)",
+        "EN: Meta description optimized",
+        "SR: Meta description optimized",
+        "SR: Missing URL slug added"
+      ]
+    },
+    {
+      "card_id": "cups_page",
+      "card_name": {
+        "tr": "Kupalar Prensi",
+        "en": "Page of Cups",
+        "sr": ""
+      },
+      "fixes_applied": 5,
+      "issues_fixed": 5,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (337 → 400+ words)",
+        "EN: Meta description optimized",
+        "SR: Meta description optimized",
+        "SR: Missing URL slug added"
+      ]
+    },
+    {
+      "card_id": "cups_knight",
+      "card_name": {
+        "tr": "Kupalar Şövalyesi",
+        "en": "Knight of Cups",
+        "sr": ""
+      },
+      "fixes_applied": 5,
+      "issues_fixed": 5,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (338 → 400+ words)",
+        "EN: Meta description optimized",
+        "SR: Meta description optimized",
+        "SR: Missing URL slug added"
+      ]
+    },
+    {
+      "card_id": "cups_queen",
+      "card_name": {
+        "tr": "Kupalar Kraliçesi",
+        "en": "Queen of Cups",
+        "sr": ""
+      },
+      "fixes_applied": 5,
+      "issues_fixed": 5,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (336 → 400+ words)",
+        "EN: Meta description optimized",
+        "SR: Meta description optimized",
+        "SR: Missing URL slug added"
+      ]
+    },
+    {
+      "card_id": "cups_king",
+      "card_name": {
+        "tr": "Kupalar Kralı",
+        "en": "King of Cups",
+        "sr": ""
+      },
+      "fixes_applied": 5,
+      "issues_fixed": 5,
+      "fixes": [
+        "TR: Meta description optimized",
+        "TR: Content expanded (336 → 400+ words)",
+        "EN: Meta description optimized",
+        "SR: Meta description optimized",
+        "SR: Missing URL slug added"
+      ]
+    }
+  ],
+  "remaining_issues": []
+}

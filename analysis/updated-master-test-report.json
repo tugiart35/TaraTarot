@@ -1,0 +1,137 @@
+{
+  "project_info": {
+    "name": "Tarot Kartları SEO Projesi",
+    "total_cards": 78,
+    "total_pages": 234,
+    "languages": ["tr", "en", "sr"],
+    "report_date": "2025-10-04T09:43:04.209Z",
+    "report_type": "Updated Master Test Report"
+  },
+  "test_summary": {
+    "total_tests": 6552,
+    "passed_tests": 3379,
+    "failed_tests": null,
+    "warnings": 766,
+    "overall_score": null
+  },
+  "consolidation_analysis": {
+    "seo_health": 61,
+    "mobile_readiness": 64,
+    "content_quality": 50,
+    "accessibility_score": 75
+  },
+  "critical_issues": [],
+  "high_priority_recommendations": [
+    {
+      "priority": "HIGH",
+      "category": "SEO",
+      "description": "SEO score improved but needs further optimization",
+      "action": "Continue SEO improvements and monitoring"
+    },
+    {
+      "priority": "HIGH",
+      "category": "Accessibility",
+      "description": "Accessibility score significantly improved",
+      "action": "Maintain accessibility standards"
+    },
+    {
+      "priority": "MEDIUM",
+      "category": "Mobile",
+      "description": "Mobile responsiveness infrastructure established",
+      "action": "Continue mobile optimization"
+    },
+    {
+      "priority": "MEDIUM",
+      "category": "Performance",
+      "description": "Performance optimizations applied",
+      "action": "Monitor performance metrics"
+    }
+  ],
+  "launch_readiness": {
+    "ready": false,
+    "blocking_issues": 0,
+    "recommendations": [
+      {
+        "priority": "HIGH",
+        "action": "Complete remaining critical issues",
+        "description": "Address all high-priority issues before launch"
+      },
+      {
+        "priority": "MEDIUM",
+        "action": "Improve overall test scores",
+        "description": "Aim for at least 70% overall score"
+      },
+      {
+        "priority": "LOW",
+        "action": "Final testing and validation",
+        "description": "Conduct comprehensive final testing"
+      }
+    ]
+  },
+  "detailed_results": {
+    "seo_audit": {
+      "score": 61,
+      "critical_issues": 6,
+      "warnings": 56,
+      "passed": 1148
+    },
+    "core_web_vitals": {
+      "good_pages": 71,
+      "poor_pages": 0
+    },
+    "mobile_responsiveness": {
+      "score": 64,
+      "passed_tests": 750,
+      "failed_tests": 0,
+      "warnings": 270
+    },
+    "content_proofreading": {
+      "score": 50,
+      "passed_cards": 0,
+      "failed_cards": 0,
+      "warnings": 78
+    },
+    "accessibility": {
+      "score": 75,
+      "passed_tests": 1410,
+      "failed_tests": 0,
+      "warnings": 362
+    }
+  },
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "category": "Critical Issues Resolution",
+      "description": "Address remaining critical issues",
+      "estimated_time": "2-3 days",
+      "action": "Fix all high-priority issues before launch"
+    },
+    {
+      "priority": "MEDIUM",
+      "category": "High Priority Improvements",
+      "description": "Implement high-priority improvements",
+      "estimated_time": "3-5 days",
+      "action": "Focus on areas with lowest scores"
+    },
+    {
+      "priority": "LOW",
+      "category": "Medium Priority Enhancements",
+      "description": "Implement medium-priority enhancements",
+      "estimated_time": "2-3 days",
+      "action": "Improve overall project quality"
+    },
+    {
+      "priority": "LOW",
+      "category": "Launch Preparation",
+      "description": "Final launch preparation",
+      "estimated_time": "1-2 days",
+      "action": "Prepare for production launch"
+    }
+  ],
+  "next_steps": [
+    "Complete remaining critical issues resolution",
+    "Implement high-priority improvements",
+    "Conduct final testing and validation",
+    "Prepare for production launch"
+  ]
+}
