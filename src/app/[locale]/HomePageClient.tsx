@@ -95,7 +95,7 @@ export function HomePageClient({ locale }: HomePageClientProps) {
     fetchTotalReadings();
   }, []);
 
-  // Dil değiştirme fonksiyonu
+  // Dil değiştirme fonksiyonu - SEO-friendly URL mapping ile
   const handleLanguageChange = (newLocale: string) => {
     // Mevcut path'i locale olmadan al
     let pathWithoutLocale = pathname;
@@ -107,10 +107,65 @@ export function HomePageClient({ locale }: HomePageClientProps) {
       pathWithoutLocale = '/';
     }
 
-    // Yeni path oluştur - ana sayfada kal
-    const newPath = pathWithoutLocale === '/' 
-      ? `/${newLocale}` 
-      : `/${newLocale}${pathWithoutLocale}`;
+    // SEO-friendly path mapping uygula
+    const seoFriendlyMappings = {
+      tr: {
+        '/': '/anasayfa',
+        '/anasayfa': '/anasayfa',
+        '/tarotokumasi': '/tarot-okuma',
+        '/tarot-okuma': '/tarot-okuma',
+        '/numeroloji': '/numeroloji',
+        '/dashboard': '/panel',
+        '/panel': '/panel',
+        '/auth': '/giris',
+        '/giris': '/giris'
+      },
+      en: {
+        '/': '/home',
+        '/home': '/home',
+        '/anasayfa': '/home',
+        '/tarotokumasi': '/tarot-reading',
+        '/tarot-reading': '/tarot-reading',
+        '/tarot-okuma': '/tarot-reading',
+        '/numeroloji': '/numerology',
+        '/numerology': '/numerology',
+        '/dashboard': '/dashboard',
+        '/auth': '/login',
+        '/login': '/login'
+      },
+      sr: {
+        '/': '/pocetna',
+        '/pocetna': '/pocetna',
+        '/anasayfa': '/pocetna',
+        '/home': '/pocetna',
+        '/tarotokumasi': '/tarot-citanje',
+        '/tarot-citanje': '/tarot-citanje',
+        '/tarot-okuma': '/tarot-citanje',
+        '/tarot-reading': '/tarot-citanje',
+        '/numeroloji': '/numerologija',
+        '/numerologija': '/numerologija',
+        '/numerology': '/numerologija',
+        '/dashboard': '/panel',
+        '/panel': '/panel',
+        '/auth': '/prijava',
+        '/prijava': '/prijava',
+        '/giris': '/prijava',
+        '/login': '/prijava'
+      }
+    };
+
+    const getSeoFriendlyPath = (locale: string, path: string): string => {
+      const mapping = seoFriendlyMappings[locale];
+      return mapping?.[path] || path;
+    };
+
+    // SEO-friendly path mapping uygula
+    const seoFriendlyPath = getSeoFriendlyPath(newLocale, pathWithoutLocale);
+    
+    // Yeni path oluştur - SEO-friendly URL kullan
+    const newPath = seoFriendlyPath === '/' 
+      ? `/${newLocale}${getSeoFriendlyPath(newLocale, '/')}` 
+      : `/${newLocale}${seoFriendlyPath}`;
 
     // Cookie'yi güncelle
     document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=31536000; SameSite=Lax`;

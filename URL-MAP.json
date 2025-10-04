@@ -1,0 +1,385 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created": "2025-01-20",
+    "description": "TaraTarot Projesi - Eski Route'lardan Yeni SEO-Friendly Route'lara Mapping",
+    "purpose": "Geriye dönük uyumluluk ve SEO optimizasyonu için URL yönlendirme haritası"
+  },
+  "redirectStrategy": {
+    "type": "301",
+    "reason": "SEO-friendly URL'ler ve dil-spesifik path'ler",
+    "preserveQueryParams": true,
+    "preserveHash": true
+  },
+  "localeMapping": {
+    "tr": {
+      "name": "Türkçe",
+      "nativeName": "Türkçe",
+      "seoFriendly": true,
+      "examples": {
+        "home": "/tr/anasayfa",
+        "tarot": "/tr/tarot-okuma", 
+        "numerology": "/tr/numeroloji"
+      }
+    },
+    "en": {
+      "name": "English", 
+      "nativeName": "English",
+      "seoFriendly": true,
+      "examples": {
+        "home": "/en/home",
+        "tarot": "/en/tarot-reading",
+        "numerology": "/en/numerology"
+      }
+    },
+    "sr": {
+      "name": "Serbian (Latin)",
+      "nativeName": "Srpski (Latinica)", 
+      "seoFriendly": true,
+      "examples": {
+        "home": "/sr/pocetna",
+        "tarot": "/sr/tarot-citanje",
+        "numerology": "/sr/numerologija"
+      }
+    }
+  },
+  "routeMappings": {
+    "homepage": {
+      "current": {
+        "tr": "/tr",
+        "en": "/en", 
+        "sr": "/sr"
+      },
+      "new": {
+        "tr": "/tr/anasayfa",
+        "en": "/en/home",
+        "sr": "/sr/pocetna"
+      },
+      "redirects": [
+        {
+          "from": "/tr",
+          "to": "/tr/anasayfa",
+          "status": 301,
+          "reason": "SEO-friendly homepage URL"
+        },
+        {
+          "from": "/en", 
+          "to": "/en/home",
+          "status": 301,
+          "reason": "SEO-friendly homepage URL"
+        },
+        {
+          "from": "/sr",
+          "to": "/sr/pocetna", 
+          "status": 301,
+          "reason": "SEO-friendly homepage URL"
+        }
+      ]
+    },
+    "tarot": {
+      "current": {
+        "tr": "/tr/tarotokumasi",
+        "en": "/en/tarotokumasi",
+        "sr": "/sr/tarotokumasi"
+      },
+      "new": {
+        "tr": "/tr/tarot-okuma",
+        "en": "/en/tarot-reading", 
+        "sr": "/sr/tarot-citanje"
+      },
+      "redirects": [
+        {
+          "from": "/tr/tarotokumasi",
+          "to": "/tr/tarot-okuma",
+          "status": 301,
+          "reason": "SEO-friendly Turkish tarot URL"
+        },
+        {
+          "from": "/en/tarotokumasi",
+          "to": "/en/tarot-reading",
+          "status": 301, 
+          "reason": "SEO-friendly English tarot URL"
+        },
+        {
+          "from": "/sr/tarotokumasi",
+          "to": "/sr/tarot-citanje",
+          "status": 301,
+          "reason": "SEO-friendly Serbian tarot URL"
+        }
+      ]
+    },
+    "numerology": {
+      "current": {
+        "tr": "/tr/numeroloji",
+        "en": "/en/numeroloji", 
+        "sr": "/sr/numeroloji"
+      },
+      "new": {
+        "tr": "/tr/numeroloji",
+        "en": "/en/numerology",
+        "sr": "/sr/numerologija"
+      },
+      "redirects": [
+        {
+          "from": "/en/numeroloji",
+          "to": "/en/numerology", 
+          "status": 301,
+          "reason": "English-specific numerology URL"
+        },
+        {
+          "from": "/sr/numeroloji",
+          "to": "/sr/numerologija",
+          "status": 301,
+          "reason": "Serbian-specific numerology URL"
+        }
+      ]
+    },
+    "dashboard": {
+      "current": {
+        "tr": "/tr/dashboard",
+        "en": "/en/dashboard",
+        "sr": "/sr/dashboard"
+      },
+      "new": {
+        "tr": "/tr/panel",
+        "en": "/en/dashboard", 
+        "sr": "/sr/panel"
+      },
+      "redirects": [
+        {
+          "from": "/tr/dashboard",
+          "to": "/tr/panel",
+          "status": 301,
+          "reason": "Turkish-specific dashboard URL"
+        },
+        {
+          "from": "/sr/dashboard", 
+          "to": "/sr/panel",
+          "status": 301,
+          "reason": "Serbian-specific dashboard URL"
+        }
+      ]
+    },
+    "auth": {
+      "current": {
+        "tr": "/tr/auth",
+        "en": "/en/auth",
+        "sr": "/sr/auth"
+      },
+      "new": {
+        "tr": "/tr/giris",
+        "en": "/en/login",
+        "sr": "/sr/prijava"
+      },
+      "redirects": [
+        {
+          "from": "/tr/auth",
+          "to": "/tr/giris",
+          "status": 301,
+          "reason": "Turkish-specific auth URL"
+        },
+        {
+          "from": "/en/auth",
+          "to": "/en/login",
+          "status": 301,
+          "reason": "English-specific auth URL"
+        },
+        {
+          "from": "/sr/auth",
+          "to": "/sr/prijava", 
+          "status": 301,
+          "reason": "Serbian-specific auth URL"
+        }
+      ]
+    },
+    "legal": {
+      "current": {
+        "tr": "/tr/legal/{page}",
+        "en": "/en/legal/{page}",
+        "sr": "/sr/legal/{page}"
+      },
+      "new": {
+        "tr": "/tr/yasal/{page}",
+        "en": "/en/legal/{page}",
+        "sr": "/sr/pravni/{page}"
+      },
+      "redirects": [
+        {
+          "from": "/tr/legal/about",
+          "to": "/tr/yasal/hakkimizda",
+          "status": 301,
+          "reason": "Turkish-specific legal page URL"
+        },
+        {
+          "from": "/tr/legal/contact", 
+          "to": "/tr/yasal/iletisim",
+          "status": 301,
+          "reason": "Turkish-specific contact page URL"
+        },
+        {
+          "from": "/sr/legal/about",
+          "to": "/sr/pravni/o-nama",
+          "status": 301,
+          "reason": "Serbian-specific legal page URL"
+        },
+        {
+          "from": "/sr/legal/contact",
+          "to": "/sr/pravni/kontakt", 
+          "status": 301,
+          "reason": "Serbian-specific contact page URL"
+        }
+      ]
+    }
+  },
+  "specialCases": {
+    "adminRoutes": {
+      "strategy": "keepAsIs",
+      "reason": "Admin routes should remain consistent across locales",
+      "routes": [
+        "/{locale}/admin",
+        "/{locale}/admin/analytics", 
+        "/{locale}/admin/orders",
+        "/{locale}/admin/packages",
+        "/{locale}/admin/readings",
+        "/{locale}/admin/settings",
+        "/{locale}/admin/users"
+      ]
+    },
+    "apiRoutes": {
+      "strategy": "keepAsIs", 
+      "reason": "API routes should remain consistent",
+      "routes": [
+        "/api/email/send",
+        "/api/email/reading",
+        "/api/exchange-rate",
+        "/api/geolocation",
+        "/api/webhook/shopier"
+      ]
+    },
+    "paymentRoutes": {
+      "strategy": "keepAsIs",
+      "reason": "Payment routes should remain consistent for security",
+      "routes": [
+        "/{locale}/payment",
+        "/{locale}/payment/success",
+        "/{locale}/payment/cancel"
+      ]
+    }
+  },
+  "seoOptimizations": {
+    "hreflang": {
+      "implementation": "required",
+      "strategy": "x-default with locale-specific alternatives",
+      "example": {
+        "x-default": "/tr/anasayfa",
+        "tr": "/tr/anasayfa", 
+        "en": "/en/home",
+        "sr": "/sr/pocetna"
+      }
+    },
+    "canonical": {
+      "implementation": "required",
+      "strategy": "self-referencing canonical URLs",
+      "example": {
+        "tr": "https://busbuskimki.com/tr/anasayfa",
+        "en": "https://busbuskimki.com/en/home", 
+        "sr": "https://busbuskimki.com/sr/pocetna"
+      }
+    },
+    "sitemap": {
+      "updateRequired": true,
+      "newUrls": [
+        "/tr/anasayfa",
+        "/tr/tarot-okuma", 
+        "/tr/numeroloji",
+        "/tr/panel",
+        "/tr/giris",
+        "/en/home",
+        "/en/tarot-reading",
+        "/en/numerology", 
+        "/en/dashboard",
+        "/en/login",
+        "/sr/pocetna",
+        "/sr/tarot-citanje",
+        "/sr/numerologija",
+        "/sr/panel",
+        "/sr/prijava"
+      ]
+    }
+  },
+  "implementationPhases": {
+    "phase1": {
+      "name": "URL Mapping Implementation",
+      "description": "Implement new SEO-friendly URLs with redirects",
+      "estimatedTime": "2-3 days",
+      "risk": "low",
+      "tasks": [
+        "Update next.config.js rewrites",
+        "Add redirect middleware", 
+        "Update sitemap.ts",
+        "Test all redirects"
+      ]
+    },
+    "phase2": {
+      "name": "SEO Headers Implementation", 
+      "description": "Add hreflang and canonical tags",
+      "estimatedTime": "1-2 days",
+      "risk": "low",
+      "tasks": [
+        "Update layout.tsx with hreflang",
+        "Add canonical URL generation",
+        "Update metadata generation",
+        "Test SEO headers"
+      ]
+    },
+    "phase3": {
+      "name": "Content Updates",
+      "description": "Update internal links and navigation",
+      "estimatedTime": "1 day", 
+      "risk": "medium",
+      "tasks": [
+        "Update navigation components",
+        "Update internal links",
+        "Update language switcher",
+        "Test all navigation"
+      ]
+    }
+  },
+  "testingChecklist": {
+    "redirects": [
+      "Test all 301 redirects work correctly",
+      "Verify query parameters are preserved", 
+      "Check hash fragments are preserved",
+      "Test redirect chains don't create loops"
+    ],
+    "seo": [
+      "Verify hreflang tags are correct",
+      "Check canonical URLs are self-referencing",
+      "Test sitemap includes new URLs",
+      "Verify robots.txt allows new URLs"
+    ],
+    "functionality": [
+      "Test all pages load correctly",
+      "Verify language switcher works",
+      "Check navigation links work",
+      "Test form submissions work"
+    ],
+    "performance": [
+      "Check redirect performance impact",
+      "Verify no duplicate content issues",
+      "Test page load speeds",
+      "Check Core Web Vitals"
+    ]
+  },
+  "rollbackPlan": {
+    "description": "If issues arise, rollback to original URL structure",
+    "steps": [
+      "Remove redirect rules from next.config.js",
+      "Revert sitemap.ts to original URLs", 
+      "Remove hreflang and canonical tags",
+      "Update navigation back to original URLs",
+      "Test all functionality works"
+    ],
+    "estimatedTime": "30 minutes"
+  }
+}

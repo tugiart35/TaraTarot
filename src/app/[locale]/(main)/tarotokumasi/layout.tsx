@@ -24,6 +24,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
 
+  // Hreflang URLs for tarot pages - SEO-friendly
+  const hreflangUrls = {
+    'tr': '/tr/tarot-okuma',
+    'en': '/en/tarot-reading',
+    'sr': '/sr/tarot-citanje'
+  };
+
   const seoData = {
     tr: {
       title: 'Tarot Okuması - Profesyonel Tarot Açılımları | Büşbüşkimki',
@@ -31,7 +38,7 @@ export async function generateMetadata({
         'Ücretsiz tarot okuması ile aşk, kariyer ve yaşam sorularınıza anında cevap bulun. 22 farklı tarot açılımı, profesyonel yorumlar ve kişisel rehberlik.',
       keywords:
         'ücretsiz tarot okuması, online tarot, aşk açılımı, kariyer tarot, gelecek tahmini, tarot kartları, mistik rehberlik, türkçe tarot, tarot falı, kişisel gelişim',
-      canonical: 'https://busbuskimki.com/tr/tarotokumasi',
+      canonical: 'https://busbuskimki.com/tr/tarot-okuma',
       shortTitle: 'Tarot Okuması | Büşbüşkimki',
       longTailKeywords: [
         'bugün için tarot okuması',
@@ -47,7 +54,7 @@ export async function generateMetadata({
         'Get instant answers to your love, career and life questions with free professional tarot reading. 22 different spreads, expert interpretations and personal guidance.',
       keywords:
         'free tarot reading, online tarot, love spread, career guidance, tarot cards, mystical guidance, future prediction, daily tarot, personal development',
-      canonical: 'https://busbuskimki.com/en/tarotokumasi',
+      canonical: 'https://busbuskimki.com/en/tarotreadings',
       shortTitle: 'Tarot Reading | Büşbüşkimki',
       longTailKeywords: [
         'today tarot reading',
@@ -64,7 +71,7 @@ export async function generateMetadata({
         'Pronađite trenutne odgovore na vaša pitanja o ljubavi, karijeri i životu sa besplatnim profesionalnim tarot čitanjem.',
       keywords:
         'besplatno tarot čitanje, online tarot, ljubavni raspored, karijera, tarot karte, mistično vođstvo, predviđanje budućnosti',
-      canonical: 'https://busbuskimki.com/sr/tarotokumasi',
+      canonical: 'https://busbuskimki.com/en/citanjetarota',
       shortTitle: 'Tarot Čitanje | Büşbüşkimki',
       longTailKeywords: [
         'danas tarot čitanje',
@@ -87,6 +94,14 @@ export async function generateMetadata({
     publisher: 'Büşbüşkimki',
     category: 'Spirituality & Mysticism',
     classification: 'Tarot Reading Services',
+    alternates: {
+      canonical: currentSeo.canonical,
+      languages: {
+        'tr': `${SEO_CONFIG.domain}/tr/tarot-okuma`,
+        'en': `${SEO_CONFIG.domain}/en/tarot-reading`,
+        'sr': `${SEO_CONFIG.domain}/sr/tarot-citanje`
+      }
+    },
     openGraph: {
       title: currentSeo.shortTitle,
       description: currentSeo.description,
@@ -162,8 +177,8 @@ export async function generateMetadata({
       canonical: currentSeo.canonical,
       languages: {
         'tr-TR': 'https://busbuskimki.com/tr/tarotokumasi',
-        'en-US': 'https://busbuskimki.com/en/tarotokumasi',
-        'sr-RS': 'https://busbuskimki.com/sr/tarotokumasi',
+        'en-US': 'https://busbuskimki.com/en/tarotreadings',
+        'sr-RS': 'https://busbuskimki.com/en/citanjetarota',
         'x-default': 'https://busbuskimki.com/tr/tarotokumasi',
       },
       types: {

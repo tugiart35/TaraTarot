@@ -48,7 +48,7 @@ export async function generateMetadata({
         'Discover your life path, destiny number and personality traits with free numerology analysis. 9 different numerology calculations, detailed analyses and personal guidance.',
       keywords:
         'free numerology, life path calculation, destiny number, numerology analysis, birth date analysis, name analysis, personality numerology, compatibility calculation, power of numbers',
-      canonical: 'https://busbuskimki.com/en/numeroloji',
+      canonical: 'https://busbuskimki.com/en/numerology',
       shortTitle: 'Numerology Analysis | Büşbüşkimki',
       longTailKeywords: [
         'today numerology analysis',
@@ -66,7 +66,7 @@ export async function generateMetadata({
         'Otkrijte svoj životni put, broj sudbine i osobine ličnosti sa besplatnom numerološkom analizom. 9 različitih numeroloških izračuna, detaljne analize i lično vođstvo.',
       keywords:
         'besplatna numerologija, izračun životnog puta, broj sudbine, numerološka analiza, analiza datuma rođenja, analiza imena, numerologija ličnosti, izračun kompatibilnosti',
-      canonical: 'https://busbuskimki.com/sr/numeroloji',
+      canonical: 'https://busbuskimki.com/sr/numerologija',
       shortTitle: 'Numerološka Analiza | Büşbüşkimki',
       longTailKeywords: [
         'danas numerološka analiza',
@@ -165,8 +165,8 @@ export async function generateMetadata({
       canonical: currentSeo.canonical,
       languages: {
         'tr-TR': 'https://busbuskimki.com/tr/numeroloji',
-        'en-US': 'https://busbuskimki.com/en/numeroloji',
-        'sr-RS': 'https://busbuskimki.com/sr/numeroloji',
+        'en-US': 'https://busbuskimki.com/en/numerology',
+        'sr-RS': 'https://busbuskimki.com/sr/numerologija',
         'x-default': 'https://busbuskimki.com/tr/numeroloji',
       },
       types: {

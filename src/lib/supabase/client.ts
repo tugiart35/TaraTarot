@@ -37,12 +37,15 @@ import { createBrowserClient } from '@supabase/ssr';
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
-console.log('🔍 Supabase Client: Environment kontrolü:', {
-  hasUrl: !!supabaseUrl,
-  hasKey: !!supabaseAnonKey,
-  urlLength: supabaseUrl?.length,
-  keyLength: supabaseAnonKey?.length,
-});
+// Production'da console.log'ları kaldır - performans için
+if (process.env.NODE_ENV === 'development') {
+  console.log('🔍 Supabase Client: Environment kontrolü:', {
+    hasUrl: !!supabaseUrl,
+    hasKey: !!supabaseAnonKey,
+    urlLength: supabaseUrl?.length,
+    keyLength: supabaseAnonKey?.length,
+  });
+}
 
 // Environment değişkenleri eksikse dummy client oluştur
 const createDummyClient = () => {

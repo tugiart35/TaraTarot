@@ -827,7 +827,7 @@ export default function ReadingsPage({ params }: ReadingsPageProps) {
               )}
             </p>
             <Link
-              href={`/${locale}/tarot`}
+              href={`/${locale}/tarot-okuma`}
               className='inline-flex items-center space-x-2 bg-gradient-to-r from-gold to-yellow-500 hover:from-gold/80 hover:to-yellow-500/80 text-night font-semibold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gold/20'
             >
               <Star className='h-5 w-5' />

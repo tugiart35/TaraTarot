@@ -5,7 +5,7 @@
 'use client';
 
 import React from 'react';
-import { FaCookie, FaCog, FaChartBar, FaAd, FaCheckCircle, FaTimesCircle, FaInfoCircle } from 'react-icons/fa';
+import { FaCookie, FaCog, FaCheckCircle, FaInfoCircle } from 'react-icons/fa';
 import BottomNavigation from '@/features/shared/layout/BottomNavigation';
 import { useTranslations } from '@/hooks/useTranslations';
 

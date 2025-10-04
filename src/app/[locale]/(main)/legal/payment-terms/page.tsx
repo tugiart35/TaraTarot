@@ -3,7 +3,7 @@
 // Mistik tarot temasına uygun, i18n destekli, modern ve profesyonel bir arayüz sunar.
 
 import React from 'react';
-import { FaCreditCard, FaShieldAlt, FaLock, FaCheckCircle } from 'react-icons/fa';
+import { FaCreditCard, FaShieldAlt, FaLock } from 'react-icons/fa';
 import { useTranslations } from '@/hooks/useTranslations';
 
 export default function PaymentTerms() {

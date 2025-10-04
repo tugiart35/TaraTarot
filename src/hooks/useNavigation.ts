@@ -45,6 +45,35 @@ export const languages = [
   { code: 'sr', name: 'Srpski', flag: '🇷🇸' },
 ];
 
+// SEO-friendly URL mapping'leri
+const getSeoFriendlyPath = (locale: string, path: string): string => {
+  const mappings = {
+    tr: {
+      '/': '/anasayfa',
+      '/tarotokumasi': '/tarot-okuma',
+      '/numeroloji': '/numeroloji',
+      '/dashboard': '/panel',
+      '/auth': '/giris'
+    },
+    en: {
+      '/': '/home',
+      '/tarotokumasi': '/tarot-reading',
+      '/numeroloji': '/numerology',
+      '/dashboard': '/dashboard',
+      '/auth': '/login'
+    },
+    sr: {
+      '/': '/pocetna',
+      '/tarotokumasi': '/tarot-citanje',
+      '/numeroloji': '/numerologija',
+      '/dashboard': '/panel',
+      '/auth': '/prijava'
+    }
+  };
+  
+  return mappings[locale]?.[path] || path;
+};
+
 // Navigasyon öğelerini oluştur - auth durumuna göre dinamik
 const getNavigationItems = (
   currentLocale: string,
@@ -54,19 +83,19 @@ const getNavigationItems = (
   const baseItems: NavigationItem[] = [
     {
       name: 'Tarot',
-      href: `/${currentLocale}/tarotokumasi`,
+      href: `/${currentLocale}${getSeoFriendlyPath(currentLocale, '/tarotokumasi')}`,
       icon: '⭐',
       activeIcon: '⭐',
     },
     {
       name: 'Numeroloji',
-      href: `/${currentLocale}/numeroloji`,
+      href: `/${currentLocale}${getSeoFriendlyPath(currentLocale, '/numeroloji')}`,
       icon: '🔢',
       activeIcon: '🔢',
     },
     {
       name: 'Ana Sayfa',
-      href: `/${currentLocale}`,
+      href: `/${currentLocale}${getSeoFriendlyPath(currentLocale, '/')}`,
       icon: '💛',
       activeIcon: '💛',
     },
@@ -86,14 +115,14 @@ const getNavigationItems = (
   if (isAuthenticated) {
     baseItems.push({
       name: 'Profil',
-      href: `/${currentLocale}/dashboard`,
+      href: `/${currentLocale}${getSeoFriendlyPath(currentLocale, '/dashboard')}`,
       icon: '👤',
       activeIcon: '👤',
     });
   } else {
     baseItems.push({
       name: 'Giriş Yap',
-      href: `/${currentLocale}/auth`,
+      href: `/${currentLocale}${getSeoFriendlyPath(currentLocale, '/auth')}`,
       icon: '🔑',
       activeIcon: '🔑',
     });
@@ -102,7 +131,7 @@ const getNavigationItems = (
   return baseItems;
 };
 
-// Dil değiştirme fonksiyonu
+// Dil değiştirme fonksiyonu - SEO-friendly URL mapping ile
 const changeLanguage = (locale: string, pathname: string): string => {
   try {
     // Mevcut path'i locale olmadan al - daha güvenli yöntem
@@ -116,11 +145,13 @@ const changeLanguage = (locale: string, pathname: string): string => {
       pathWithoutLocale = '/';
     }
 
-    // Yeni path oluştur - mevcut sayfayı koru
-    const newPath =
-      pathWithoutLocale === '/'
-        ? `/${locale}`  // Ana sayfa için ana sayfada kal
-        : `/${locale}${pathWithoutLocale}`;
+    // SEO-friendly path mapping uygula
+    const seoFriendlyPath = getSeoFriendlyPath(locale, pathWithoutLocale);
+    
+    // Yeni path oluştur - SEO-friendly URL kullan
+    const newPath = seoFriendlyPath === '/' 
+      ? `/${locale}${getSeoFriendlyPath(locale, '/')}` 
+      : `/${locale}${seoFriendlyPath}`;
 
     // Cookie'yi güncelle - dil tercihini kaydet
     document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=31536000; SameSite=Lax`;
@@ -128,7 +159,7 @@ const changeLanguage = (locale: string, pathname: string): string => {
     return newPath;
   } catch (error) {
     // Silently handle language change errors
-    return `/${locale}`; // Fallback - ana sayfaya yönlendir
+    return `/${locale}${getSeoFriendlyPath(locale, '/')}`; // Fallback - ana sayfaya yönlendir
   }
 };
 
@@ -153,10 +184,37 @@ export function useNavigation() {
     [currentLocale]
   );
 
-  // Dil değiştirme fonksiyonu
+  // Dil değiştirme fonksiyonu - SEO-friendly URL mapping ile
   const handleLanguageChange = (locale: string) => {
-    const newPath = changeLanguage(locale, pathname);
-    window.location.href = newPath;
+    try {
+      // Mevcut path'i locale olmadan al
+      let pathWithoutLocale = pathname;
+
+      // Eğer pathname locale ile başlıyorsa, onu kaldır
+      if (pathname.startsWith(`/${currentLocale}/`)) {
+        pathWithoutLocale = pathname.substring(`/${currentLocale}`.length);
+      } else if (pathname === `/${currentLocale}`) {
+        pathWithoutLocale = '/';
+      }
+
+      // SEO-friendly path mapping uygula
+      const seoFriendlyPath = getSeoFriendlyPath(locale, pathWithoutLocale);
+
+      // Yeni path oluştur - SEO-friendly URL kullan
+      const newPath = seoFriendlyPath === '/'
+        ? `/${locale}${getSeoFriendlyPath(locale, '/')}`
+        : `/${locale}${seoFriendlyPath}`;
+
+      // Cookie'yi güncelle
+      document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=31536000; SameSite=Lax`;
+
+      // Router ile yönlendir
+      router.push(newPath);
+    } catch (error) {
+      // Fallback - ana sayfaya yönlendir
+      const fallbackPath = `/${locale}${getSeoFriendlyPath(locale, '/')}`;
+      router.push(fallbackPath);
+    }
   };
 
   // Navigation item click handler

@@ -52,14 +52,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel='dns-prefetch' href='//www.google-analytics.com' />
         <link rel='dns-prefetch' href='//connect.facebook.net' />
 
-        {/* Preload Critical Resources */}
-        <link
+        {/* Preload Critical Resources - Font dosyaları mevcut değil, Google Fonts kullanıyoruz */}
+        {/* <link
           rel='preload'
           href='/fonts/mystical-font.woff2'
           as='font'
           type='font/woff2'
           crossOrigin='anonymous'
-        />
+        /> */}
 
         {/* Google Analytics - G-Y2HESMXJXD */}
         <script

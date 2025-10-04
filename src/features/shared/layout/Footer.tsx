@@ -64,7 +64,7 @@ const Footer = () => {
               <ul className='space-y-3'>
                 <li>
                   <Link
-                    href='/tarotokumasi'
+                    href='/tr/tarot-okuma'
                     className='group flex items-center text-sm text-gray-300 hover:text-white transition-all duration-300 hover:translate-x-1'
                   >
                     <FaChevronRight className='w-3 h-3 mr-2 text-purple-400 group-hover:text-purple-300 transition-colors' />
@@ -73,7 +73,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href='/numeroloji'
+                    href='/tr/numeroloji'
                     className='group flex items-center text-sm text-gray-300 hover:text-white transition-all duration-300 hover:translate-x-1'
                   >
                     <FaChevronRight className='w-3 h-3 mr-2 text-purple-400 group-hover:text-purple-300 transition-colors' />

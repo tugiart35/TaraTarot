@@ -41,7 +41,7 @@ import { locales, defaultLocale } from './lib/i18n/config';
 const intlMiddleware = createIntlMiddleware({
   locales,
   defaultLocale,
-  localePrefix: 'as-needed',
+  localePrefix: 'always',
 });
 
 // Rate limiting kaldırıldı - development için
@@ -76,6 +76,8 @@ const securityHeaders = {
 // Rate limiting kaldırıldı - development için
 
 // Bot detection kaldırıldı - development için
+
+// URL mapping is now handled in next.config.js rewrites
 
 // Role-based access control - Dashboard herkese açık
 const ROLE_PERMISSIONS: Record<string, string[]> = {

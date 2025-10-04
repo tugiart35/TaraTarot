@@ -20,8 +20,8 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // External packages for server components
-  serverExternalPackages: ['@supabase/supabase-js'],
+  // External packages for server components - Supabase çakışmasını önle
+  // serverExternalPackages: ['@supabase/supabase-js'],
   // Bundle optimization
   experimental: {
     optimizePackageImports: [
@@ -29,30 +29,184 @@ const nextConfig = {
       'html2canvas',
       'jspdf',
       'framer-motion',
+      'react-hook-form',
+      'zod',
     ],
-    turbo: {
-      rules: {
-        '*.svg': {
-          loaders: ['@svgr/webpack'],
-          as: '*.js',
-        },
-      },
-    },
   },
-  // Development server configuration
-  // Force HTTP in development
-  async rewrites() {
+  
+  // SEO-friendly redirects
+  async redirects() {
     return [
+      // Ana sayfa redirects
       {
-        source: '/:path*',
-        destination: '/:path*',
+        source: '/tr',
+        destination: '/tr/anasayfa',
+        permanent: true,
+      },
+      {
+        source: '/en',
+        destination: '/en/home',
+        permanent: true,
+      },
+      {
+        source: '/sr',
+        destination: '/sr/pocetna',
+        permanent: true,
+      },
+      
+      // Tarot redirects
+      {
+        source: '/tr/tarotokumasi',
+        destination: '/tr/tarot-okuma',
+        permanent: true,
+      },
+      {
+        source: '/en/tarotokumasi',
+        destination: '/en/tarot-reading',
+        permanent: true,
+      },
+      {
+        source: '/sr/tarotokumasi',
+        destination: '/sr/tarot-citanje',
+        permanent: true,
+      },
+      
+      // Numeroloji redirects
+      {
+        source: '/en/numeroloji',
+        destination: '/en/numerology',
+        permanent: true,
+      },
+      {
+        source: '/sr/numeroloji',
+        destination: '/sr/numerologija',
+        permanent: true,
+      },
+      
+      // Dashboard redirects
+      {
+        source: '/tr/dashboard',
+        destination: '/tr/panel',
+        permanent: true,
+      },
+      {
+        source: '/sr/dashboard',
+        destination: '/sr/panel',
+        permanent: true,
+      },
+      
+      // Auth redirects
+      {
+        source: '/tr/auth',
+        destination: '/tr/giris',
+        permanent: true,
+      },
+      {
+        source: '/en/auth',
+        destination: '/en/login',
+        permanent: true,
+      },
+      {
+        source: '/sr/auth',
+        destination: '/sr/prijava',
+        permanent: true,
       },
     ];
   },
-  // Development server settings
-  devIndicators: {
-    buildActivity: false,
+
+  // SEO-friendly rewrites
+  async rewrites() {
+    return [
+      // Ana sayfa rewrites
+      {
+        source: '/tr/anasayfa',
+        destination: '/tr',
+      },
+      {
+        source: '/en/home',
+        destination: '/en',
+      },
+      {
+        source: '/sr/pocetna',
+        destination: '/sr',
+      },
+      
+      // Tarot rewrites
+      {
+        source: '/tr/tarot-okuma',
+        destination: '/tr/tarotokumasi',
+      },
+      {
+        source: '/en/tarot-reading',
+        destination: '/en/tarotokumasi',
+      },
+      {
+        source: '/sr/tarot-citanje',
+        destination: '/sr/tarotokumasi',
+      },
+      
+      // Numeroloji rewrites
+      {
+        source: '/en/numerology',
+        destination: '/en/numeroloji',
+      },
+      {
+        source: '/sr/numerologija',
+        destination: '/sr/numeroloji',
+      },
+      
+      // Dashboard rewrites
+      {
+        source: '/tr/panel',
+        destination: '/tr/dashboard',
+      },
+      {
+        source: '/sr/panel',
+        destination: '/sr/dashboard',
+      },
+      
+      // Auth rewrites
+      {
+        source: '/tr/giris',
+        destination: '/tr/auth',
+      },
+      {
+        source: '/en/login',
+        destination: '/en/auth',
+      },
+      {
+        source: '/sr/prijava',
+        destination: '/sr/auth',
+      },
+      
+      // Mevcut numeroloji rewrites (korunuyor)
+      {
+        source: '/numerology/:path*',
+        destination: '/numeroloji/:path*',
+      },
+      {
+        source: '/numerologija/:path*',
+        destination: '/numeroloji/:path*',
+      },
+      {
+        source: '/:locale(numerology|numerologija)/:path*',
+        destination: '/:locale/numeroloji/:path*',
+      },
+      {
+        source: '/:locale(tr|en|sr)/numerology/:path*',
+        destination: '/:locale/numeroloji/:path*',
+      },
+      {
+        source: '/:locale(tr|en|sr)/numerologija/:path*',
+        destination: '/:locale/numeroloji/:path*',
+      },
+    ];
   },
+  
+  // Development server settings - deprecated uyarısını kaldır
+  // devIndicators: {
+  //   buildActivity: false,
+  // },
   // Content Security Policy headers
   async headers() {
     return [

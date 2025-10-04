@@ -77,14 +77,14 @@ export async function generateMetadata({
       title: `${currentTypeLabel} Numerology Result - Detailed Analysis | Büşbüşkimki`,
       description: `Your personal ${currentTypeLabel.toLowerCase()} numerology analysis is ready. Detailed number interpretations, life guidance and personal development recommendations.`,
       keywords: `${currentTypeLabel.toLowerCase()} numerology, numerology result, number analysis, personal numerology, life guidance, mystical analysis`,
-      canonical: `https://busbuskimki.com/en/numeroloji/${type}`,
+      canonical: `https://busbuskimki.com/en/numerology/${type}`,
       shortTitle: `${currentTypeLabel} Result | Büşbüşkimki`,
     },
     sr: {
       title: `${currentTypeLabel} Numerološki Rezultat - Detaljna Analiza | Büşbüşkimki`,
       description: `Vaša lična ${currentTypeLabel.toLowerCase()} numerološka analiza je spremna. Detaljna tumačenja brojeva, životno vođstvo i preporuke za lični razvoj.`,
       keywords: `${currentTypeLabel.toLowerCase()} numerologija, numerološki rezultat, analiza brojeva, lična numerologija, životno vođstvo, mistična analiza`,
-      canonical: `https://busbuskimki.com/sr/numeroloji/${type}`,
+      canonical: `https://busbuskimki.com/sr/numerologija/${type}`,
       shortTitle: `${currentTypeLabel} Rezultat | Büşbüşkimki`,
     },
   };
@@ -145,8 +145,8 @@ export async function generateMetadata({
       canonical: currentSeo.canonical,
       languages: {
         'tr-TR': `https://busbuskimki.com/tr/numeroloji/${type}`,
-        'en-US': `https://busbuskimki.com/en/numeroloji/${type}`,
-        'sr-RS': `https://busbuskimki.com/sr/numeroloji/${type}`,
+        'en-US': `https://busbuskimki.com/en/numerology/${type}`,
+        'sr-RS': `https://busbuskimki.com/sr/numerologija/${type}`,
         'x-default': `https://busbuskimki.com/tr/numeroloji/${type}`,
       },
     },

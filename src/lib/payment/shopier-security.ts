@@ -104,6 +104,7 @@ export class ShopierIPWhitelist {
   private static isIPInRange(ip: string, cidr: string): boolean {
     try {
       const [range, bits] = cidr.split('/');
+      if (!bits || !range) return false;
       const mask = ~(2 ** (32 - parseInt(bits)) - 1);
 
       const ipInt = this.ipToInt(ip);

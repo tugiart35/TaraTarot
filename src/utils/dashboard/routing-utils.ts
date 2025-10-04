@@ -1,15 +1,47 @@
 // Dashboard routing utility fonksiyonları
 
+// SEO-friendly URL mapping'leri
+const getSeoFriendlyDashboardPath = (locale: string, path: string): string => {
+  const mappings = {
+    tr: {
+      '/dashboard': '/panel',
+      '/dashboard/readings': '/panel/readings',
+      '/dashboard/statistics': '/panel/statistics',
+      '/dashboard/settings': '/panel/settings',
+      '/dashboard/packages': '/panel/packages',
+      '/dashboard/credits': '/panel/credits'
+    },
+    en: {
+      '/dashboard': '/dashboard',
+      '/dashboard/readings': '/dashboard/readings',
+      '/dashboard/statistics': '/dashboard/statistics',
+      '/dashboard/settings': '/dashboard/settings',
+      '/dashboard/packages': '/dashboard/packages',
+      '/dashboard/credits': '/dashboard/credits'
+    },
+    sr: {
+      '/dashboard': '/panel',
+      '/dashboard/readings': '/panel/readings',
+      '/dashboard/statistics': '/panel/statistics',
+      '/dashboard/settings': '/panel/settings',
+      '/dashboard/packages': '/panel/packages',
+      '/dashboard/credits': '/panel/credits'
+    }
+  };
+  
+  return mappings[locale]?.[path] || path;
+};
+
 /**
- * Dashboard route'ları için sabitler
+ * Dashboard route'ları için sabitler - SEO-friendly URLs
  */
 export const DASHBOARD_ROUTES = {
-  MAIN: (locale: string) => `/${locale}/dashboard`,
-  READINGS: (locale: string) => `/${locale}/dashboard/readings`,
-  STATISTICS: (locale: string) => `/${locale}/dashboard/statistics`,
-  SETTINGS: (locale: string) => `/${locale}/dashboard/settings`,
-  PACKAGES: (locale: string) => `/${locale}/dashboard/packages`,
-  CREDITS: (locale: string) => `/${locale}/dashboard/credits`,
+  MAIN: (locale: string) => `/${locale}${getSeoFriendlyDashboardPath(locale, '/dashboard')}`,
+  READINGS: (locale: string) => `/${locale}${getSeoFriendlyDashboardPath(locale, '/dashboard/readings')}`,
+  STATISTICS: (locale: string) => `/${locale}${getSeoFriendlyDashboardPath(locale, '/dashboard/statistics')}`,
+  SETTINGS: (locale: string) => `/${locale}${getSeoFriendlyDashboardPath(locale, '/dashboard/settings')}`,
+  PACKAGES: (locale: string) => `/${locale}${getSeoFriendlyDashboardPath(locale, '/dashboard/packages')}`,
+  CREDITS: (locale: string) => `/${locale}${getSeoFriendlyDashboardPath(locale, '/dashboard/credits')}`,
 } as const;
 
 /**

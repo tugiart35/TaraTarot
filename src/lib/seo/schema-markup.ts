@@ -344,7 +344,7 @@ export function generateHomepageSchemas() {
  * Generate schemas for a specific page
  */
 export function generatePageSchemas(pageType: string, pageData?: any) {
-  const schemas = [generateOrganizationSchema()];
+  const schemas: any[] = [generateOrganizationSchema()];
   
   if (pageType === 'tarot-reading' && pageData?.readingType) {
     schemas.push(generateTarotReadingSchema(pageData.readingType, pageData.price));
