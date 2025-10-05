@@ -36,12 +36,12 @@ export function RelatedCards({ cards, locale }: RelatedCardsProps) {
 
         {/* Related Cards Grid */}
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
-          {cards.map(card => {
+          {cards.map((card, index) => {
             const cardName = CardMapping.getCardNameForLocale(card, locale);
             const cardUrl = CardMapping.getCardUrlForLocale(card, locale);
 
             return (
-              <Link key={card.id} href={cardUrl}>
+              <Link key={`${card.id}-${index}`} href={cardUrl}>
                 <div className='group bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200 hover:border-purple-300'>
                   {/* Card Image */}
                   <div className='relative aspect-[2/3] overflow-hidden'>

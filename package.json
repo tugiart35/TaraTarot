@@ -25,6 +25,7 @@
     "i18n:clear-cache": "node scripts/clear-i18n-cache.mjs",
     "i18n:migrate": "node scripts/auto-i18n-migration.mjs --live",
     "i18n:migrate:dry": "node scripts/auto-i18n-migration.mjs --dry-run",
+    "i18n:find": "node scripts/find-hardcode.mjs",
     "clean:macos": "find . -name '._*' -delete && find . -name '.DS_Store' -delete",
     "test": "jest",
     "test:watch": "npm run test:continuous",

@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import BottomNavigation from '@/features/shared/layout/BottomNavigation';
+import Footer from '@/features/shared/layout/Footer';
 
 interface PageProps {
   params: Promise<{
@@ -508,6 +510,8 @@ export default async function CardsPage({ params }: PageProps) {
           </div>
         </section>
       </div>
+      <BottomNavigation />
+      <Footer />
     </div>
   );
 }

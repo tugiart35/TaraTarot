@@ -18,86 +18,100 @@ export class CardData {
         }
         
         // Then try Minor Arcana fallback
-        return this.createMinorArcanaFallback(slug, locale);
+        const minorArcanaFallback = this.createMinorArcanaFallback(slug, locale);
+        if (minorArcanaFallback) {
+          return minorArcanaFallback;
+        }
+        
+        // If all fallbacks fail, create a basic card data
+        return this.createBasicCardData(slug, locale);
       }
 
-      const relatedCards = BlogCardService.getRelatedCards('the_fool', 4); // For now, using the_fool as base
-
-      // Map to CardPageData format
-      const mappedCard = {
-        id: 'the_fool', // For now, using the_fool as base
-        englishName: 'The Fool',
-        turkishName: card.name,
-        serbianName: 'Joker',
-        arcanaType: 'major' as const,
-        imageUrl: card.imageUrl,
-        slug: {
-          tr: BlogCardService.getCardSlug(card, 'tr'),
-          en: BlogCardService.getCardSlug(card, 'en'),
-          sr: BlogCardService.getCardSlug(card, 'sr'),
-        },
-        createdAt: new Date(),
-        updatedAt: new Date(),
-      };
-
-      const mappedContent = {
-        id: `the_fool-content`,
-        cardId: 'the_fool',
-        locale: locale,
-        uprightMeaning: card.meanings.upright.general,
-        reversedMeaning: card.meanings.reversed.general,
-        loveInterpretation: card.meanings.upright.love,
-        careerInterpretation: card.meanings.upright.career,
-        moneyInterpretation: card.meanings.upright.money,
-        spiritualInterpretation: card.meanings.upright.spiritual,
-        story: card.context.mythology,
-        keywords: [], // Will be populated from blog data
-        readingTime: 5,
-        createdAt: new Date(),
-        updatedAt: new Date(),
-      };
-
-      const mappedSEO = {
-        id: `the_fool-seo`,
-        cardId: 'the_fool',
-        locale: locale,
-        metaTitle: `${card.name} — Tarot Kartı Anlamı | Busbuskimki`,
-        metaDescription: card.short_description,
-        canonicalUrl: BlogCardService.getCardUrl(card, locale),
-        ogImage: card.imageUrl,
-        twitterImage: card.imageUrl,
-        keywords: [],
-        faq: Array.isArray(card.faq) ? card.faq : [],
-        createdAt: new Date(),
-        updatedAt: new Date(),
-      };
-
-      const mappedRelatedCards = relatedCards.map(relatedCard => ({
-        id: 'related-card',
-        englishName: 'Related Card',
-        turkishName: relatedCard.name,
-        serbianName: 'Related Card',
-        arcanaType: 'major' as const,
-        imageUrl: relatedCard.imageUrl,
-        slug: {
-          tr: BlogCardService.getCardSlug(relatedCard, 'tr'),
-          en: BlogCardService.getCardSlug(relatedCard, 'en'),
-          sr: BlogCardService.getCardSlug(relatedCard, 'sr'),
-        },
-        createdAt: new Date(),
-        updatedAt: new Date(),
-      }));
-
-      return {
-        card: mappedCard,
-        content: mappedContent,
-        seo: mappedSEO,
-        relatedCards: mappedRelatedCards,
-      };
+      // Use the createCardPageDataFromBlogCard helper method
+      return this.createCardPageDataFromBlogCard(card, slug, locale);
     } catch (error) {
       console.error('Error in getCardBySlug:', error);
-      return null;
+      // Return basic card data even on error
+      return this.createBasicCardData(slug, locale);
     }
+  }
+
+  // Create basic card data when all other methods fail
+  private static createBasicCardData(slug: string, locale: 'tr' | 'en' | 'sr'): CardPageData {
+    const cardName = this.getCardNameFromSlug(slug, locale);
+    
+    const mappedCard = {
+      id: slug,
+      englishName: cardName.en,
+      turkishName: cardName.tr,
+      serbianName: cardName.sr,
+      arcanaType: 'major' as const,
+      imageUrl: `/cards/rws/${slug}.webp`,
+      slug: {
+        tr: this.getSlugForLocale(slug, 'tr'),
+        en: this.getSlugForLocale(slug, 'en'),
+        sr: this.getSlugForLocale(slug, 'sr'),
+      },
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    };
+
+    const mappedContent = {
+      id: `${slug}-content`,
+      cardId: slug,
+      locale: locale,
+      uprightMeaning: this.getBasicUprightMeaning(cardName[locale], locale),
+      reversedMeaning: this.getBasicReversedMeaning(cardName[locale], locale),
+      loveInterpretation: this.getBasicLoveInterpretation(cardName[locale], locale),
+      careerInterpretation: this.getBasicCareerInterpretation(cardName[locale], locale),
+      moneyInterpretation: this.getBasicMoneyInterpretation(cardName[locale], locale),
+      spiritualInterpretation: this.getBasicSpiritualInterpretation(cardName[locale], locale),
+      story: this.getBasicCardStory(cardName[locale], locale),
+      keywords: this.getBasicCardKeywords(locale),
+      readingTime: 3,
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    };
+
+    const mappedSEO = {
+      id: `${slug}-seo`,
+      cardId: slug,
+      locale: locale,
+      metaTitle: this.getSEOTitle(cardName[locale], locale),
+      metaDescription: this.getSEODescription(cardName[locale], locale),
+      canonicalUrl: this.getCanonicalUrl(slug, locale),
+      ogImage: `/cards/rws/${slug}.webp`,
+      twitterImage: `/cards/rws/${slug}.webp`,
+      keywords: this.getSEOKeywords(cardName[locale], locale).split(', '),
+      faq: [],
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    };
+
+    const mappedRelatedCards = [
+      {
+        id: 'the-fool',
+        englishName: 'The Fool',
+        turkishName: 'Deli (Joker)',
+        serbianName: 'Joker',
+        arcanaType: 'major' as const,
+        imageUrl: '/cards/rws/0-Fool.webp',
+        slug: {
+          tr: 'joker',
+          en: 'the-fool',
+          sr: 'joker',
+        },
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+    ];
+
+    return {
+      card: mappedCard,
+      content: mappedContent,
+      seo: mappedSEO,
+      relatedCards: mappedRelatedCards,
+    };
   }
 
   // Create fallback data for Minor Arcana cards
@@ -326,10 +340,175 @@ export class CardData {
     return slug;
   }
 
+  // Get card ID from slug for related cards
+  private static getCardIdFromSlug(slug: string, _locale: 'tr' | 'en' | 'sr'): string {
+    // Use the slug mapping from BlogCardService to get the actual card ID
+    const slugMapping: { [key: string]: string } = {
+      // Major Arcana - Turkish
+      'joker': 'the-fool',
+      'yuksek-rahibe': 'the-high-priestess',
+      'buyucu': 'the-magician',
+      'imparatorice': 'the-empress',
+      'imparator': 'the-emperor',
+      'basrahip': 'the-hierophant',
+      'asiklar': 'the-lovers',
+      'savas-arabasi': 'the-chariot',
+      'guc': 'strength',
+      'ermis': 'the-hermit',
+      'kader-carki': 'wheel-of-fortune',
+      'adalet': 'justice',
+      'asili-adam': 'the-hanged-man',
+      'olum': 'death',
+      'olcululuk': 'temperance',
+      'seytan': 'the-devil',
+      'kule': 'the-tower',
+      'yildiz': 'the-star',
+      'ay': 'the-moon',
+      'gunes': 'the-sun',
+      'yargi': 'judgement',
+      'dunya': 'the-world',
+      
+      // Major Arcana - English
+      'the-fool': 'the-fool',
+      'the-high-priestess': 'the-high-priestess',
+      'the-magician': 'the-magician',
+      'the-empress': 'the-empress',
+      'the-emperor': 'the-emperor',
+      'the-hierophant': 'the-hierophant',
+      'the-lovers': 'the-lovers',
+      'the-chariot': 'the-chariot',
+      'strength': 'strength',
+      'the-hermit': 'the-hermit',
+      'wheel-of-fortune': 'wheel-of-fortune',
+      'justice': 'justice',
+      'the-hanged-man': 'the-hanged-man',
+      'death': 'death',
+      'temperance': 'temperance',
+      'the-devil': 'the-devil',
+      'the-tower': 'the-tower',
+      'the-star': 'the-star',
+      'the-moon': 'the-moon',
+      'the-sun': 'the-sun',
+      'judgement': 'judgement',
+      'the-world': 'the-world',
+      
+      // Major Arcana - Serbian
+      'visoka-svestenica': 'the-high-priestess',
+      'carobnjak': 'the-magician',
+      'carica': 'the-empress',
+      'car': 'the-emperor',
+      'prvosveštenica': 'the-hierophant',
+      'ljubavnici': 'the-lovers',
+      'ratna-kolica': 'the-chariot',
+      'snaga': 'strength',
+      'pustinjak': 'the-hermit',
+      'kolo-srece': 'wheel-of-fortune',
+      'pravda': 'justice',
+      'obeseni': 'the-hanged-man',
+      'smrt': 'death',
+      'umerenost': 'temperance',
+      'djavol': 'the-devil',
+      'kula': 'the-tower',
+      'zvezda': 'the-star',
+      'mesec': 'the-moon',
+      'sunce': 'the-sun',
+      'sud': 'judgement',
+      'svet': 'the-world',
+    };
+    
+    return slugMapping[slug] || slug;
+  }
+
   // Major Arcana fallback for missing cards
-  private static createMajorArcanaFallback(_slug: string, _locale: 'tr' | 'en' | 'sr'): CardPageData | null {
-    // TODO: Implement proper Major Arcana fallback
+  private static createMajorArcanaFallback(slug: string, locale: 'tr' | 'en' | 'sr'): CardPageData | null {
+    // Try to find the card in blog data with different slug variations
+    const blogCard = BlogCardService.getCardBySlug(slug, locale);
+    if (blogCard) {
+      return this.createCardPageDataFromBlogCard(blogCard, slug, locale);
+    }
     return null;
+  }
+
+  // Create CardPageData from BlogCardData
+  private static createCardPageDataFromBlogCard(
+    blogCard: any,
+    slug: string,
+    locale: 'tr' | 'en' | 'sr'
+  ): CardPageData {
+    // Get the actual card ID from the blog card data
+    const cardId = this.getCardIdFromSlug(slug, locale);
+    const relatedCards = BlogCardService.getRelatedCards(cardId, 4);
+
+    const mappedCard = {
+      id: slug,
+      englishName: blogCard.name,
+      turkishName: blogCard.name,
+      serbianName: blogCard.name,
+      arcanaType: 'major' as const,
+      imageUrl: blogCard.imageUrl,
+      slug: {
+        tr: BlogCardService.getCardSlug(blogCard, 'tr'),
+        en: BlogCardService.getCardSlug(blogCard, 'en'),
+        sr: BlogCardService.getCardSlug(blogCard, 'sr'),
+      },
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    };
+
+    const mappedContent = {
+      id: `${slug}-content`,
+      cardId: slug,
+      locale: locale,
+      uprightMeaning: blogCard.meanings.upright.general,
+      reversedMeaning: blogCard.meanings.reversed.general,
+      loveInterpretation: blogCard.meanings.upright.love,
+      careerInterpretation: blogCard.meanings.upright.career,
+      moneyInterpretation: blogCard.meanings.upright.money,
+      spiritualInterpretation: blogCard.meanings.upright.spiritual,
+      story: blogCard.context.mythology,
+      keywords: [],
+      readingTime: 5,
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    };
+
+    const mappedSEO = {
+      id: `${slug}-seo`,
+      cardId: slug,
+      locale: locale,
+      metaTitle: `${blogCard.name} — Tarot Kartı Anlamı | Busbuskimki`,
+      metaDescription: blogCard.short_description,
+      canonicalUrl: BlogCardService.getCardUrl(blogCard, locale),
+      ogImage: blogCard.imageUrl,
+      twitterImage: blogCard.imageUrl,
+      keywords: [],
+      faq: Array.isArray(blogCard.faq) ? blogCard.faq : [],
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    };
+
+    const mappedRelatedCards = relatedCards.map(relatedCard => ({
+      id: 'related-card',
+      englishName: 'Related Card',
+      turkishName: relatedCard.name,
+      serbianName: 'Related Card',
+      arcanaType: 'major' as const,
+      imageUrl: relatedCard.imageUrl,
+      slug: {
+        tr: BlogCardService.getCardSlug(relatedCard, 'tr'),
+        en: BlogCardService.getCardSlug(relatedCard, 'en'),
+        sr: BlogCardService.getCardSlug(relatedCard, 'sr'),
+      },
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    }));
+
+    return {
+      card: mappedCard,
+      content: mappedContent,
+      seo: mappedSEO,
+      relatedCards: mappedRelatedCards,
+    };
   }
 
   private static getUprightMeaning(suit: string, number: string, locale: 'tr' | 'en' | 'sr'): string {
@@ -660,5 +839,96 @@ export class CardData {
       }
     };
     return structuredData[locale];
+  }
+
+  // Helper functions for basic card data
+  private static getCardNameFromSlug(slug: string, _locale: 'tr' | 'en' | 'sr'): { tr: string; en: string; sr: string } {
+    // Basic mapping for common cards
+    const nameMapping: { [key: string]: { tr: string; en: string; sr: string } } = {
+      'the-fool': { tr: 'Deli (Joker)', en: 'The Fool', sr: 'Joker' },
+      'joker': { tr: 'Deli (Joker)', en: 'The Fool', sr: 'Joker' },
+      'the-high-priestess': { tr: 'Yüksek Rahibe', en: 'The High Priestess', sr: 'Visoka Svestenica' },
+      'yuksek-rahibe': { tr: 'Yüksek Rahibe', en: 'The High Priestess', sr: 'Visoka Svestenica' },
+      'visoka-svestenica': { tr: 'Yüksek Rahibe', en: 'The High Priestess', sr: 'Visoka Svestenica' },
+      // Add more mappings as needed
+    };
+    
+    return nameMapping[slug] || { 
+      tr: slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()), 
+      en: slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()), 
+      sr: slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) 
+    };
+  }
+
+  private static getBasicUprightMeaning(cardName: string, locale: 'tr' | 'en' | 'sr'): string {
+    const meanings = {
+      tr: `${cardName} kartı, pozitif enerjileri ve fırsatları temsil eder.`,
+      en: `The ${cardName} card represents positive energies and opportunities.`,
+      sr: `${cardName} karta predstavlja pozitivne energije i prilike.`
+    };
+    return meanings[locale];
+  }
+
+  private static getBasicReversedMeaning(cardName: string, locale: 'tr' | 'en' | 'sr'): string {
+    const meanings = {
+      tr: `Ters ${cardName} kartı, zorlukları ve engelleri işaret eder.`,
+      en: `The reversed ${cardName} card indicates challenges and obstacles.`,
+      sr: `Obrnuta ${cardName} karta ukazuje na izazove i prepreke.`
+    };
+    return meanings[locale];
+  }
+
+  private static getBasicLoveInterpretation(cardName: string, locale: 'tr' | 'en' | 'sr'): string {
+    const meanings = {
+      tr: `Aşk alanında ${cardName} kartı, duygusal gelişimi ve ilişki dinamiklerini gösterir.`,
+      en: `In love, the ${cardName} card shows emotional development and relationship dynamics.`,
+      sr: `U ljubavi, ${cardName} karta pokazuje emocionalni razvoj i dinamiku veza.`
+    };
+    return meanings[locale];
+  }
+
+  private static getBasicCareerInterpretation(cardName: string, locale: 'tr' | 'en' | 'sr'): string {
+    const meanings = {
+      tr: `Kariyer açısından ${cardName} kartı, profesyonel gelişimi ve iş fırsatlarını işaret eder.`,
+      en: `Career-wise, the ${cardName} card indicates professional development and work opportunities.`,
+      sr: `Što se tiče karijere, ${cardName} karta ukazuje na profesionalni razvoj i radne prilike.`
+    };
+    return meanings[locale];
+  }
+
+  private static getBasicMoneyInterpretation(cardName: string, locale: 'tr' | 'en' | 'sr'): string {
+    const meanings = {
+      tr: `Maddi konularda ${cardName} kartı, finansal durumu ve para yönetimini gösterir.`,
+      en: `Financially, the ${cardName} card shows financial situation and money management.`,
+      sr: `Finansijski, ${cardName} karta pokazuje finansijsku situaciju i upravljanje novcem.`
+    };
+    return meanings[locale];
+  }
+
+  private static getBasicSpiritualInterpretation(cardName: string, locale: 'tr' | 'en' | 'sr'): string {
+    const meanings = {
+      tr: `Ruhsal olarak ${cardName} kartı, içsel gelişimi ve ruhsal yolculuğu işaret eder.`,
+      en: `Spiritually, the ${cardName} card indicates inner development and spiritual journey.`,
+      sr: `Duhovno, ${cardName} karta ukazuje na unutrašnji razvoj i duhovno putovanje.`
+    };
+    return meanings[locale];
+  }
+
+  private static getBasicCardStory(cardName: string, locale: 'tr' | 'en' | 'sr'): string {
+    const stories = {
+      tr: `${cardName} kartının hikayesi, tarot geleneğinde özel bir yere sahiptir.`,
+      en: `The story of the ${cardName} card holds a special place in tarot tradition.`,
+      sr: `Priča o ${cardName} karti ima posebno mesto u tarot tradiciji.`
+    };
+    return stories[locale];
+  }
+
+  private static getBasicCardKeywords(locale: 'tr' | 'en' | 'sr'): string[] {
+    const keywords = {
+      tr: ['enerji', 'gelişim', 'fırsat'],
+      en: ['energy', 'development', 'opportunity'],
+      sr: ['energija', 'razvoj', 'prilika']
+    };
+    return keywords[locale];
   }
 }

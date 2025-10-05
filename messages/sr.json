@@ -199,7 +199,112 @@
     "view": "Prikaži",
     "viewAll": "Vidi Sve",
     "warning": "Upozorenje",
-    "yes": "Da"
+    "yes": "Da",
+    "cups": "Cups",
+    "pentacles": "Pentacles",
+    "swords": "Swords",
+    "wands": "Wands",
+    "three": "Three",
+    "four": "Four",
+    "five": "Five",
+    "seven": "Seven",
+    "eight": "Eight",
+    "nine": "Nine",
+    "page": "Page",
+    "knight": "Knight",
+    "queen": "Queen",
+    "king": "King",
+    "kupalar": "Kupalar",
+    "tilsimlar": "Tılsımlar",
+    "kiliclar": "Kılıçlar",
+    "asalar": "Asalar",
+    "kupovi": "Kupovi",
+    "pentakli": "Pentakli",
+    "ucretsiz-tarot-okumasi": "Ücretsiz tarot okuması ile kendi kartlarınızı çekin",
+    "draw-your-own": "Draw your own cards with free tarot reading",
+    "kisilik": "Kişilik",
+    "olgunluk": "Olgunluk",
+    "personality": "Personality",
+    "maturity": "Maturity",
+    "compatibility": "Compatibility",
+    "zrelost": "Zrelost",
+    "kompatibilnost": "Kompatibilnost",
+    "busbuskimki": "Büşbüşkimki",
+    "article": "Article",
+    "person": "Person",
+    "organization": "Organization",
+    "home": "Home",
+    "numeroloji": "Numeroloji",
+    "numerology": "Numerology",
+    "numerologija": "Numerologija",
+    "thing": "Thing",
+    "yakinda": "Yakında",
+    "secim-yapin": "Seçim yapın",
+    "hizmetlerimiz": "Hizmetlerimiz",
+    "ozelliklerimiz": "Özelliklerimiz",
+    "istatistiklerimiz": "İstatistiklerimiz",
+    "panel": "Panel",
+    "giris": "Giriş",
+    "email-confirmation-callback": "Email confirmation callback",
+    "email-confirmation-successful": "Email confirmation successful",
+    "email-confirmation-error": "Email confirmation error",
+    "email-confirmation-exception": "Email confirmation exception",
+    "guvenli-giris-yapin": "Güvenli giriş yapın veya yeni hesap oluşturun",
+    "sifreler-eslesmiyor": "Şifreler eşleşmiyor",
+    "sifre-guncelleme-hatasi": "Şifre güncelleme hatası",
+    "sifre-sifirlama-hatasi": "Şifre sıfırlama hatası",
+    "yeni-sifrenizi-girin": "Yeni şifrenizi girin",
+    "sifrenizi-tekrar-girin": "Şifrenizi tekrar girin",
+    "dashboard": "Dashboard",
+    "okuma-verisi": "Okuma verisi",
+    "kullanici-email-adresi": "Kullanıcı email adresi",
+    "email-basariyla-gonderildi": "Email başarıyla gönderildi",
+    "email-gonderimi-basarisiz": "Email gönderimi başarısız",
+    "bilinmeyen-hata": "Bilinmeyen hata",
+    "gecerli-bir-email": "Geçerli bir email adresi girin",
+    "email-gonderilemedi": "Email gönderilemedi",
+    "rate-limit-exceeded": "Rate limit exceeded",
+    "cache": "Cache",
+    "fallback": "Fallback",
+    "internal-server-error": "Internal server error",
+    "doviz-kuru-alinirken": "Döviz kuru alınırken hata oluştu",
+    "para-birimi-donusumunde": "Para birimi dönüşümünde hata oluştu",
+    "unknown": "Unknown",
+    "security-check-failed": "Security check failed",
+    "missing-signature": "Missing signature",
+    "bilinmiyor": "Bilinmiyor",
+    "payment-failure-notification": "Payment failure notification email sent",
+    "payment-not-successful": "Payment not successful",
+    "payment-already-processed": "Payment already processed",
+    "package-not-found": "Package not found",
+    "user-profile-not": "User profile not found",
+    "failed-to-update": "Failed to update credit balance",
+    "payment-notification-email": "Payment notification email sent successfully",
+    "payment-processed-successfully": "Payment processed successfully",
+    "no-meaning": "No meaning",
+    "sesli": "Sesli",
+    "yazili": "Yazılı",
+    "basit": "Basit",
+    "strength": "Strength",
+    "justice": "Justice",
+    "death": "Death",
+    "temperance": "Temperance",
+    "judgement": "Judgement",
+    "kariyerimde-degistiremedigim-taraflar": "Kariyerimde değiştiremediğim taraflar",
+    "kariyerimde-yardimci-olacak": "Kariyerimde yardımcı olacak ne gibi değişikler",
+    "gecmisimdeki-hangi-engeller": "Geçmişimdeki hangi engeller",
+    "sonuc-ne-olacak": "Sonuç ne olacak",
+    "dilek-karti": "Dilek kartı",
+    "beyaz-atli-prens": "Beyaz atlı prens",
+    "cinsel-dileklerin-gerceklesmesi": "Cinsel dileklerin gerçekleşmesi",
+    "kirli-konusma": "Kirli konuşma",
+    "tek-gecelik-iliski": "Tek gecelik ilişki",
+    "hakkinda-soru-sordugun": "Hakkında soru sorduğun kişi",
+    "fiziksel-ve-cinsel": "Fiziksel ve cinsel bağlantınız",
+    "duygusal-ve-ruhsal": "Duygusal ve ruhsal bağlantınız",
+    "iliskinin-uzun-vadeli": "İlişkinin uzun vadeli sonucu",
+    "temel-anlam": "Temel anlam",
+    "ters-anlam": "Ters anlam"
   },
   "dashboard": {
     "accountSettings": "Podešavanja Naloga",
@@ -421,7 +526,92 @@
     "userInfo": "Informacije o korisniku",
     "userLevel": "Nivo korisnika",
     "viewAll": "Vidi Sve",
-    "welcome": "Dobrodošli"
+    "welcome": "Dobrodošli",
+    "kullanimlar": "Korišćenje",
+    "iadeler": "Povraćaji",
+    "bonuslar": "Bonusi",
+    "kredi-gecmisi-yuklenirken": "Kredi geçmişi yüklenirken bir hata oluştu",
+    "bonus": "Bonus",
+    "iade": "İade",
+    "kullanim": "Kullanım",
+    "tarih": "Tarih",
+    "miktar": "Miktar",
+    "aciklama": "Açıklama",
+    "dashboard": "Dashboard",
+    "busbuskimki": "Büşbüşkimki",
+    "kisisel-dashboard-sayfasi": "Kişisel dashboard sayfası",
+    "personal-dashboard-page": "Personal dashboard page",
+    "organization": "Organization",
+    "audience": "Audience",
+    "numeroloji-analizi": "Numeroloji analizi",
+    "ask-acilimi": "Aşk açılımı",
+    "kariyer-okumasi": "Kariyer okuması",
+    "genel-okuma": "Genel okuma",
+    "oncelikli-destek": "Öncelikli destek",
+    "profil-bilgileri-yuklenemedi": "Profil bilgileri yüklenemedi",
+    "tarot-okumalariniz-icin": "Tarot okumalarınız için ihtiyacınız olan kredileri satın alın",
+    "kredileriniz-hemen-hesabiniza": "Kredileriniz hemen hesabınıza eklenir",
+    "buyuk-paketlerde-ekstra": "Büyük paketlerde ekstra kredi kazanın",
+    "okumalarim": "Okumalarım",
+    "tum-mistik-deneyimleriniz": "Tüm mistik deneyimleriniz",
+    "numeroloji": "Numeroloji",
+    "goruntule": "Görüntüle",
+    "profil-bilgilerinizi-duzenlemek": "Profil bilgilerinizi düzenlemek için dashboard",
+    "bildirimler": "Bildirimler",
+    "gizlilik": "Gizlilik",
+    "guvenlik": "Güvenlik",
+    "tarot-veya-numeroloji": "Tarot veya numeroloji okumanız tamamlandığında bildirim alın",
+    "kredi-bakiyeniz-dustugunde": "Kredi bakiyeniz düştüğünde bildirim alın",
+    "aylik-numeroloji-ve": "Aylık numeroloji ve tarot özetinizi alın",
+    "ozel-indirimler-ve": "Özel indirimler ve kampanyalardan haberdar olun",
+    "profilinizi-diger-kullanicilar": "Profilinizi diğer kullanıcılar görebilsin",
+    "okuma-gecmisinizi-diger": "Okuma geçmişinizi diğer kullanıcılar görebilsin",
+    "istatistiklerinizi-diger-kullanicilar": "İstatistiklerinizi diğer kullanıcılar görebilsin",
+    "hizmet-kalitesini-artirmak": "Hizmet kalitesini artırmak için anonim veriler toplansın",
+    "hesap-guvenliginiz-icin": "Hesap güvenliğiniz için şifrenizi güncelleyin",
+    "mevcut-sifrenizi-girin": "Mevcut şifrenizi girin",
+    "yeni-sifrenizi-girin": "Yeni şifrenizi girin",
+    "yeni-sifrenizi-tekrar": "Yeni şifrenizi tekrar girin",
+    "iptal": "İptal",
+    "indir": "İndir",
+    "hesabinizi-ve-tum": "Hesabınızı ve tüm verilerinizi kalıcı olarak silin",
+    "henuz-yok": "Henüz yok",
+    "bilinmeyen": "Bilinmeyen",
+    "pazartesi": "Pazartesi",
+    "sali": "Salı",
+    "carsamba": "Çarşamba",
+    "persembe": "Perşembe",
+    "cuma": "Cuma",
+    "cumartesi": "Cumartesi",
+    "pazar": "Pazar",
+    "kullanici": "Kullanıcı",
+    "mistik-yolculugunuzda-ilerlemenizi": "Mistik yolculuğunuzda ilerlemenizi takip edin",
+    "yenile": "Osveži",
+    "numerolojik-rehberliginiz-ve": "Numerolojik rehberliğiniz ve okuma alışkanlıklarınızla ilgili derinlemesine analiz",
+    "desenler": "Desenler",
+    "bu-ay": "Bu ay",
+    "ortalama": "Ortalama",
+    "en-uzun": "En uzun",
+    "aktif-seri": "Aktif seri",
+    "kredi-maliyeti": "Kredi maliyeti",
+    "premium-okuma": "Premium okuma",
+    "artis": "Artış",
+    "azalis": "Azalış",
+    "yuksek": "Yüksek",
+    "orta": "Orta",
+    "dusuk": "Düşük",
+    "isim": "İsim",
+    "belirtilmemis": "Belirtilmemiş",
+    "soyisim": "Soyisim",
+    "numeroloji-hesaplamalari-icin": "Numeroloji hesaplamaları için tam isim soyisim önerilir",
+    "kisilik": "Kişilik",
+    "olgunluk": "Olgunluk",
+    "henuz-okuma-yapmadiniz": "Henüz okuma yapmadınız",
+    "favori-diziliminiz-henuz": "Favori diziliminiz henüz belirlenmedi",
+    "gunluk-okuma-aliskanligi": "Günlük okuma alışkanlığı oluşturmaya odaklanın",
+    "bu-ay-daha": "Bu ay daha fazla okuma yaparak hedeflerinizi aşabilirsiniz",
+    "daha-ekonomik-okuma": "Daha ekonomik okuma türlerini deneyebilirsiniz",
+    "kredi-kullaniminiz-verimli": "Kredi kullanımınız verimli görünüyor"
   },
   "errors": {
     "contactSupport": "Kontaktiraj podršku",
@@ -497,13 +687,23 @@
       "numerology": {
         "button": "Numerološka Analiza",
         "description": "Otkrijte tajne brojeva. Naučite svoj životni put, broj izražavanja i duhovnu želju.",
-        "features": ["Životni Put", "Broj Izražavanja", "Želja Duše", "Dnevni Broj"],
+        "features": [
+          "Životni Put",
+          "Broj Izražavanja",
+          "Želja Duše",
+          "Dnevni Broj"
+        ],
         "title": "Numerološka Analiza"
       },
       "tarot": {
         "button": "Tarot Čitanje",
         "description": "Krenite u putovanje kroz mistični svet karata. Otkrijte svoju prošlost, sadašnjost i budućnost.",
-        "features": ["Ljubavni Raspored", "Karijerno Vođstvo", "Dnevno Vođstvo", "Detaljno Tumačenje"],
+        "features": [
+          "Ljubavni Raspored",
+          "Karijerno Vođstvo",
+          "Dnevno Vođstvo",
+          "Detaljno Tumačenje"
+        ],
         "title": "Tarot Čitanje"
       }
     },
@@ -568,7 +768,13 @@
       "theFool": {
         "position1": {
           "context": "Ova osoba je spremna da otvori novu stranicu u svom ljubavnom životu ili je avanturista koji se toga plaši.",
-          "keywords": ["novi počeci", "nevinost", "spontanost", "uzimanje rizika", "slobodan duh"],
+          "keywords": [
+            "novi počeci",
+            "nevinost",
+            "spontanost",
+            "uzimanje rizika",
+            "slobodan duh"
+          ],
           "reversed": "Obrnuti Budala pokazuje da bi ta osoba mogla biti neoprezna, neodgovorna ili da se plaši da započne vezu. Možda ignoriše potencijalne opasnosti i izbegava obavezu.",
           "upright": "Osoba koja vas zanima puna je dečje radoznalosti i uzbuđenja o životu. Otvorena je za nove početke i ima avanturistički duh, ali to ponekad može da je učini neplaniranom i neorganizovanom. I veze pristupa ovim slobodnim duhom."
         }
@@ -577,7 +783,13 @@
         "position2": {
           "upright": "[SR] Fiziksel bağlantınızda çocuksu bir merak ve deneme...",
           "reversed": "[SR] Ters Fool, cinsel konularda pervasızlık, düşüncesi...",
-          "keywords": ["[SR] keşif", "[SR] spontanlık", "[SR] deneyimsizlik", "[SR] eğlence", "[SR] özgürlük"],
+          "keywords": [
+            "[SR] keşif",
+            "[SR] spontanlık",
+            "[SR] deneyimsizlik",
+            "[SR] eğlence",
+            "[SR] özgürlük"
+          ],
           "context": "[SR] Aranızdaki tensel çekim, yeni ve heyecan verici bi..."
         },
         "position3": {
@@ -693,7 +905,13 @@
         "position2": {
           "upright": "[SR] Fiziksel bağlantınız son derece şehvetli, besleyic...",
           "reversed": "[SR] Ters Empress, cinsel enerjide bir tembellik, kendi...",
-          "keywords": ["[SR] şehvet", "[SR] bereket", "[SR] duyusallık", "[SR] doğurganlık", "[SR] zevk"],
+          "keywords": [
+            "[SR] şehvet",
+            "[SR] bereket",
+            "[SR] duyusallık",
+            "[SR] doğurganlık",
+            "[SR] zevk"
+          ],
           "context": "[SR] Cinsel yaşamınız, tüm duyuların harekete geçtiği, ..."
         },
         "position3": {
@@ -712,7 +930,13 @@
         "position4": {
           "upright": "[SR] Uzun vadeli sonuç, bereketli, sevgi dolu ve büyüye...",
           "reversed": "[SR] Ters Empress, uzun vadede ilişkinin durağanlaşacağ...",
-          "keywords": ["[SR] bereket", "[SR] büyüme", "[SR] evlilik", "[SR] doğurganlık", "[SR] kalıcı sevgi"],
+          "keywords": [
+            "[SR] bereket",
+            "[SR] büyüme",
+            "[SR] evlilik",
+            "[SR] doğurganlık",
+            "[SR] kalıcı sevgi"
+          ],
           "context": "[SR] Bu ilişkinin geleceği, sevgiyle sulanan ve sürekli..."
         }
       },
@@ -720,7 +944,13 @@
         "position2": {
           "upright": "[SR] Fiziksel bağlantınızda yapı, kontrol ve tutku var....",
           "reversed": "[SR] Ters Emperor, cinsel hayatta aşırı kontrolcü, domi...",
-          "keywords": ["[SR] tutku", "[SR] kontrol", "[SR] güç", "[SR] istikrar", "[SR] liderlik"],
+          "keywords": [
+            "[SR] tutku",
+            "[SR] kontrol",
+            "[SR] güç",
+            "[SR] istikrar",
+            "[SR] liderlik"
+          ],
           "context": "[SR] Cinsel bağlantınız, tutkunun ve kontrolün birleşti..."
         },
         "position3": {
@@ -795,7 +1025,13 @@
         "position2": {
           "upright": "[SR] Aranızda ruhsal ve fiziksel olarak derin bir uyum ...",
           "reversed": "[SR] Ters Lovers, fiziksel ve duygusal uyumsuzluğu, cin...",
-          "keywords": ["[SR] cinsel uyum", "[SR] ruh eşi", "[SR] tutku", "[SR] kimya", "[SR] derin bağ"],
+          "keywords": [
+            "[SR] cinsel uyum",
+            "[SR] ruh eşi",
+            "[SR] tutku",
+            "[SR] kimya",
+            "[SR] derin bağ"
+          ],
           "context": "[SR] Fiziksel bağlantınız, iki ruhun bir bütün olduğu, ..."
         },
         "position3": {
@@ -829,7 +1065,13 @@
         "position2": {
           "upright": "[SR] Cinsel yaşamınızda güçlü bir irade, hedef odaklılı...",
           "reversed": "[SR] Ters Chariot, cinsel enerjinin kontrolsüz veya agr...",
-          "keywords": ["[SR] yüksek libido", "[SR] irade", "[SR] tutku", "[SR] kontrol", "[SR] enerji"],
+          "keywords": [
+            "[SR] yüksek libido",
+            "[SR] irade",
+            "[SR] tutku",
+            "[SR] kontrol",
+            "[SR] enerji"
+          ],
           "context": "[SR] Cinsel enerjiniz, hedefine kararlılıkla ilerleyen,..."
         },
         "position3": {
@@ -863,13 +1105,25 @@
         "position2": {
           "upright": "[SR] Fiziksel bağlantınızda tutku ve şefkat mükemmel bi...",
           "reversed": "[SR] Ters Strength, cinsel güvensizlik veya ham arzular...",
-          "keywords": ["[SR] dengeli tutku", "[SR] şefkat", "[SR] içsel güç", "[SR] sabır", "[SR] cinsel güven"],
+          "keywords": [
+            "[SR] dengeli tutku",
+            "[SR] şefkat",
+            "[SR] içsel güç",
+            "[SR] sabır",
+            "[SR] cinsel güven"
+          ],
           "context": "[SR] Cinselliğiniz, vahşi bir aslanı şefkatle evcilleşt..."
         },
         "position3": {
           "upright": "[SR] Duygusal bağınız şefkat, sabır ve derin bir içsel ...",
           "reversed": "[SR] Ters Strength, duygusal olarak birbirinize karşı g...",
-          "keywords": ["[SR] şefkatli güç", "[SR] sabır", "[SR] kabul", "[SR] ruhsal şifa", "[SR] içsel güç"],
+          "keywords": [
+            "[SR] şefkatli güç",
+            "[SR] sabır",
+            "[SR] kabul",
+            "[SR] ruhsal şifa",
+            "[SR] içsel güç"
+          ],
           "context": "[SR] Duygusal bağınız, en zorlu duyguları bile şefkatle..."
         },
         "position4": {
@@ -944,13 +1198,25 @@
         "position3": {
           "upright": "[SR] Bu, karmik bir ruhsal bağlantıdır. Kader sizi bir ...",
           "reversed": "[SR] Ters The Wheel of Fortune, ilişkinin ruhsal bir dö...",
-          "keywords": ["[SR] karmik bağ", "[SR] kader", "[SR] ruhsal döngü", "[SR] değişim", "[SR] evrim"],
+          "keywords": [
+            "[SR] karmik bağ",
+            "[SR] kader",
+            "[SR] ruhsal döngü",
+            "[SR] değişim",
+            "[SR] evrim"
+          ],
           "context": "[SR] Ruhsal bağınız, kaderin bir araya getirdiği ve bir..."
         },
         "position4": {
           "upright": "[SR] Bu ilişkinin uzun vadeli kaderi, kadersel bir dönü...",
           "reversed": "[SR] Ters The Wheel of Fortune, uzun vadede şanssızlıkl...",
-          "keywords": ["[SR] kader", "[SR] dönüm noktası", "[SR] şans", "[SR] yeni döngü", "[SR] karmik sonuç"],
+          "keywords": [
+            "[SR] kader",
+            "[SR] dönüm noktası",
+            "[SR] şans",
+            "[SR] yeni döngü",
+            "[SR] karmik sonuç"
+          ],
           "context": "[SR] Bu ilişkinin nihai sonucu, kader çarkının sizin le..."
         }
       },
@@ -958,7 +1224,13 @@
         "position2": {
           "upright": "[SR] Fiziksel bağlantınızda denge, adalet ve dürüstlük ...",
           "reversed": "[SR] Ters Justice, cinsel hayatta bir dengesizlik veya ...",
-          "keywords": ["[SR] denge", "[SR] adalet", "[SR] dürüstlük", "[SR] karşılıklılık", "[SR] saygı"],
+          "keywords": [
+            "[SR] denge",
+            "[SR] adalet",
+            "[SR] dürüstlük",
+            "[SR] karşılıklılık",
+            "[SR] saygı"
+          ],
           "context": "[SR] Cinselliğiniz, her iki tarafın da tatmin olduğu ad..."
         },
         "position3": {
@@ -1018,7 +1290,13 @@
         "position4": {
           "upright": "[SR] Uzun vadede bu ilişki bir belirsizlik içinde kalab...",
           "reversed": "[SR] Ters Hanged Man, uzun vadede bir tarafın boşuna fe...",
-          "keywords": ["[SR] belirsizlik", "[SR] duraklama", "[SR] fedakarlık", "[SR] çıkmaz", "[SR] bekleyiş"],
+          "keywords": [
+            "[SR] belirsizlik",
+            "[SR] duraklama",
+            "[SR] fedakarlık",
+            "[SR] çıkmaz",
+            "[SR] bekleyiş"
+          ],
           "context": "[SR] Bu ilişkinin uzun vadeli kaderi, bir sonuca ulaşma..."
         }
       },
@@ -1067,19 +1345,37 @@
         "position2": {
           "upright": "[SR] Fiziksel ve duygusal enerjiler arasında mükemmel b...",
           "reversed": "[SR] Ters Temperance, cinsel enerjide bir dengesizlik, ...",
-          "keywords": ["[SR] denge", "[SR] uyum", "[SR] simya", "[SR] ölçülülük", "[SR] şefkatli tutku"],
+          "keywords": [
+            "[SR] denge",
+            "[SR] uyum",
+            "[SR] simya",
+            "[SR] ölçülülük",
+            "[SR] şefkatli tutku"
+          ],
           "context": "[SR] Cinselliğiniz, iki farklı enerjinin mükemmel bir u..."
         },
         "position3": {
           "upright": "[SR] Aranızda harika bir duygusal ve ruhsal denge var. ...",
           "reversed": "[SR] Ters Temperance, aranızda duygusal bir dengesizlik...",
-          "keywords": ["[SR] duygusal denge", "[SR] uyum", "[SR] ruhsal şifa", "[SR] harmanlanma", "[SR] huzur"],
+          "keywords": [
+            "[SR] duygusal denge",
+            "[SR] uyum",
+            "[SR] ruhsal şifa",
+            "[SR] harmanlanma",
+            "[SR] huzur"
+          ],
           "context": "[SR] Duygusal bağınız, iki farklı ruhun birleşerek yara..."
         },
         "position4": {
           "upright": "[SR] Uzun vadeli sonuç, son derece dengeli, uyumlu ve h...",
           "reversed": "[SR] Ters Temperance, uzun vadede uyumsuzluk ve çatışma...",
-          "keywords": ["[SR] denge", "[SR] uyum", "[SR] huzur", "[SR] uzun süreli ortaklık", "[SR] şifa"],
+          "keywords": [
+            "[SR] denge",
+            "[SR] uyum",
+            "[SR] huzur",
+            "[SR] uzun süreli ortaklık",
+            "[SR] şifa"
+          ],
           "context": "[SR] Bu ilişkinin uzun vadeli potansiyeli, iki ruhun mü..."
         }
       },
@@ -1154,7 +1450,13 @@
         "position4": {
           "upright": "[SR] Uzun vadeli sonuç, ani ve sarsıcı bir ayrılık veya...",
           "reversed": "[SR] Ters Kule, kaçınılmaz bir ayrılıktan veya krizden ...",
-          "keywords": ["[SR] ani ayrılık", "[SR] yıkım", "[SR] kriz", "[SR] beklenmedik son", "[SR] yüzleşme"],
+          "keywords": [
+            "[SR] ani ayrılık",
+            "[SR] yıkım",
+            "[SR] kriz",
+            "[SR] beklenmedik son",
+            "[SR] yüzleşme"
+          ],
           "context": "[SR] Bu ilişkinin uzun vadeli kaderi, sağlam olmayan te..."
         }
       },
@@ -1175,13 +1477,25 @@
         "position3": {
           "upright": "[SR] Aranızda umut dolu, ilham verici ve şifalı bir ruh...",
           "reversed": "[SR] Ters Star, duygusal olarak umudunuzu kaybettiğiniz...",
-          "keywords": ["[SR] umut", "[SR] ilham", "[SR] ruhsal şifa", "[SR] inanç", "[SR] kutsanmış bağ"],
+          "keywords": [
+            "[SR] umut",
+            "[SR] ilham",
+            "[SR] ruhsal şifa",
+            "[SR] inanç",
+            "[SR] kutsanmış bağ"
+          ],
           "context": "[SR] Ruhsal bağınız, en karanlık zamanlarda bile yolunu..."
         },
         "position4": {
           "upright": "[SR] Uzun vadeli sonuç, umut, şifa ve ilham dolu bir ge...",
           "reversed": "[SR] Ters Star, uzun vadede umutların tükeneceğini ve h...",
-          "keywords": ["[SR] umutlu gelecek", "[SR] şifa", "[SR] mutluluk", "[SR] ilham", "[SR] huzur"],
+          "keywords": [
+            "[SR] umutlu gelecek",
+            "[SR] şifa",
+            "[SR] mutluluk",
+            "[SR] ilham",
+            "[SR] huzur"
+          ],
           "context": "[SR] Bu ilişkinin kaderi, karanlıktan sonra doğan, parl..."
         }
       },
@@ -1243,7 +1557,13 @@
         "position3": {
           "upright": "[SR] Aranızda neşe, sıcaklık ve açıklıkla dolu, harika ...",
           "reversed": "[SR] Ters Sun, aranızdaki neşenin ve sıcaklığın geçici ...",
-          "keywords": ["[SR] neşe", "[SR] mutluluk", "[SR] açıklık", "[SR] sıcaklık", "[SR] ruhsal canlılık"],
+          "keywords": [
+            "[SR] neşe",
+            "[SR] mutluluk",
+            "[SR] açıklık",
+            "[SR] sıcaklık",
+            "[SR] ruhsal canlılık"
+          ],
           "context": "[SR] Duygusal bağınız, tüm karanlığı aydınlatan, sıcak ..."
         },
         "position4": {
@@ -1305,7 +1625,13 @@
         "position2": {
           "upright": "[SR] Fiziksel bağlantınızda bir bütünlük, tamamlanma ve...",
           "reversed": "[SR] Ters World, cinsel hayatta bir şeylerin eksik kald...",
-          "keywords": ["[SR] tamamlanma", "[SR] cinsel doyum", "[SR] bütünlük", "[SR] başarı", "[SR] uyum"],
+          "keywords": [
+            "[SR] tamamlanma",
+            "[SR] cinsel doyum",
+            "[SR] bütünlük",
+            "[SR] başarı",
+            "[SR] uyum"
+          ],
           "context": "[SR] Fiziksel bağlantınız, yolculuğun sonunda ulaşılan,..."
         },
         "position3": {
@@ -1324,7 +1650,13 @@
         "position4": {
           "upright": "[SR] Bu ilişkinin uzun vadeli sonucu, bir tamamlanma, b...",
           "reversed": "[SR] Ters Dünya, uzun vadede bir şeylerin eksik kalacağ...",
-          "keywords": ["[SR] tamamlanma", "[SR] başarı", "[SR] mutluluk", "[SR] bütünlük", "[SR] döngünün sonu"],
+          "keywords": [
+            "[SR] tamamlanma",
+            "[SR] başarı",
+            "[SR] mutluluk",
+            "[SR] bütünlük",
+            "[SR] döngünün sonu"
+          ],
           "context": "[SR] Uzun vadede bu ilişki, tatmin ve başarıyla dolu bi..."
         }
       },
@@ -1509,13 +1841,25 @@
         "position3": {
           "upright": "[SR] Duygusal bağınız, geçmişteki bir kayıp veya hayal ...",
           "reversed": "[SR] Ters Kupa Beşlisi, geçmişteki duygusal acıları aff...",
-          "keywords": ["[SR] kayıp", "[SR] keder", "[SR] pişmanlık", "[SR] duygusal acı", "[SR] affetme"],
+          "keywords": [
+            "[SR] kayıp",
+            "[SR] keder",
+            "[SR] pişmanlık",
+            "[SR] duygusal acı",
+            "[SR] affetme"
+          ],
           "context": "[SR] Duygusal bağınız, dökülenlere ağlarken, hala dolu ..."
         },
         "position4": {
           "upright": "[SR] Uzun vadeli sonuç, bir kayıp, pişmanlık ve kederdi...",
           "reversed": "[SR] Ters Kupa Beşlisi, uzun vadede geçmişin acılarını ...",
-          "keywords": ["[SR] kayıp", "[SR] pişmanlık", "[SR] keder", "[SR] hayal kırıklığı", "[SR] üzücü son"],
+          "keywords": [
+            "[SR] kayıp",
+            "[SR] pişmanlık",
+            "[SR] keder",
+            "[SR] hayal kırıklığı",
+            "[SR] üzücü son"
+          ],
           "context": "[SR] Bu ilişkinin geleceği, geçmişin kayıplarına odakla..."
         }
       },
@@ -1523,7 +1867,13 @@
         "position2": {
           "upright": "[SR] Fiziksel bağlantınız masum, tatlı ve nostaljik bir...",
           "reversed": "[SR] Ters Kupa Altılısı, geçmiş cinsel deneyimlere takı...",
-          "keywords": ["[SR] masumiyet", "[SR] şefkat", "[SR] nostalji", "[SR] tatlılık", "[SR] eski sevgili"],
+          "keywords": [
+            "[SR] masumiyet",
+            "[SR] şefkat",
+            "[SR] nostalji",
+            "[SR] tatlılık",
+            "[SR] eski sevgili"
+          ],
           "context": "[SR] Tensel yakınlığınız, geçmişin tatlı anılarını anım..."
         },
         "position3": {
@@ -1639,7 +1989,13 @@
         "position2": {
           "upright": "[SR] Son derece tatmin edici, zevk dolu ve duyusal bir ...",
           "reversed": "[SR] Ters Kupa Dokuzlusu, cinsel doyumsuzluğu, bencilli...",
-          "keywords": ["[SR] cinsel tatmin", "[SR] zevk", "[SR] şehvet", "[SR] doyum", "[SR] cömertlik"],
+          "keywords": [
+            "[SR] cinsel tatmin",
+            "[SR] zevk",
+            "[SR] şehvet",
+            "[SR] doyum",
+            "[SR] cömertlik"
+          ],
           "context": "[SR] Cinsel yaşamınız, tüm arzularınızın gerçekleştiği,..."
         },
         "position3": {
@@ -1904,7 +2260,13 @@
         "position4": {
           "upright": "[SR] Uzun vadeli sonuç, bir gerçeğin net bir şekilde or...",
           "reversed": "[SR] Ters Kılıç Ası, uzun vadede çözülmemiş çatışmalar ...",
-          "keywords": ["[SR] net sonuç", "[SR] gerçek", "[SR] karar", "[SR] dürüstlük", "[SR] aydınlanma"],
+          "keywords": [
+            "[SR] net sonuç",
+            "[SR] gerçek",
+            "[SR] karar",
+            "[SR] dürüstlük",
+            "[SR] aydınlanma"
+          ],
           "context": "[SR] Bu ilişkinin kaderi, her şeyi değiştirecek, keskin..."
         }
       },
@@ -1966,13 +2328,25 @@
         "position3": {
           "upright": "[SR] Bu, acı verici bir duygusal bağı, bir kalp kırıklı...",
           "reversed": "[SR] Ters Kılıç Üçlüsü, bir kalp kırıklığının acısını u...",
-          "keywords": ["[SR] kalp kırıklığı", "[SR] duygusal acı", "[SR] ihanet", "[SR] keder", "[SR] ayrılık"],
+          "keywords": [
+            "[SR] kalp kırıklığı",
+            "[SR] duygusal acı",
+            "[SR] ihanet",
+            "[SR] keder",
+            "[SR] ayrılık"
+          ],
           "context": "[SR] Duygusal bağınız, üç keskin kılıcın saplandığı, ac..."
         },
         "position4": {
           "upright": "[SR] Uzun vadeli sonuç, kaçınılmaz bir kalp kırıklığı, ...",
           "reversed": "[SR] Ters Kılıç Üçlüsü, uzun vadede bir ayrılığın veya ...",
-          "keywords": ["[SR] ayrılık", "[SR] kalp kırıklığı", "[SR] keder", "[SR] acı", "[SR] ihanet"],
+          "keywords": [
+            "[SR] ayrılık",
+            "[SR] kalp kırıklığı",
+            "[SR] keder",
+            "[SR] acı",
+            "[SR] ihanet"
+          ],
           "context": "[SR] Bu ilişkinin kaderi, acı, gözyaşı ve kederle dolu ..."
         }
       },
@@ -2047,7 +2421,13 @@
         "position4": {
           "upright": "[SR] Uzun vadeli sonuç, acı ve kayıplarla dolu bir çatı...",
           "reversed": "[SR] Ters Kılıç Beşlisi, uzun vadede bir tarafın diğeri...",
-          "keywords": ["[SR] düşmanca ayrılık", "[SR] çatışma", "[SR] yenilgi", "[SR] pişmanlık", "[SR] kayıp"],
+          "keywords": [
+            "[SR] düşmanca ayrılık",
+            "[SR] çatışma",
+            "[SR] yenilgi",
+            "[SR] pişmanlık",
+            "[SR] kayıp"
+          ],
           "context": "[SR] Bu ilişkinin geleceği, her iki tarafın da kaybetti..."
         }
       },
@@ -2191,13 +2571,25 @@
         "position3": {
           "upright": "[SR] Bu duygusal bağ, size endişe, suçluluk veya korku ...",
           "reversed": "[SR] Ters Kılıç Dokuzlusu, en kötü korkularınızla yüzle...",
-          "keywords": ["[SR] endişe", "[SR] korku", "[SR] suçluluk", "[SR] zihinsel acı", "[SR] ruhsal eziyet"],
+          "keywords": [
+            "[SR] endişe",
+            "[SR] korku",
+            "[SR] suçluluk",
+            "[SR] zihinsel acı",
+            "[SR] ruhsal eziyet"
+          ],
           "context": "[SR] Duygusal bağınız, geceleri sizi uyutmayan, endişe ..."
         },
         "position4": {
           "upright": "[SR] Uzun vadeli sonuç, endişe, suçluluk ve korku dolu ...",
           "reversed": "[SR] Ters Kılıç Dokuzlusu, uzun vadede bir krizin veya ...",
-          "keywords": ["[SR] endişe", "[SR] korku", "[SR] zihinsel acı", "[SR] kabus", "[SR] suçluluk"],
+          "keywords": [
+            "[SR] endişe",
+            "[SR] korku",
+            "[SR] zihinsel acı",
+            "[SR] kabus",
+            "[SR] suçluluk"
+          ],
           "context": "[SR] Bu ilişkinin geleceği, endişe ve pişmanlıklarla do..."
         }
       },
@@ -2231,7 +2623,13 @@
         "position4": {
           "upright": "[SR] Uzun vadeli sonuç, acı verici ve kesin bir sondur....",
           "reversed": "[SR] Ters Kılıç Onlusu, acı verici bir sonun sürekli er...",
-          "keywords": ["[SR] kesin son", "[SR] ihanet", "[SR] acı", "[SR] çöküş", "[SR] yenilgi"],
+          "keywords": [
+            "[SR] kesin son",
+            "[SR] ihanet",
+            "[SR] acı",
+            "[SR] çöküş",
+            "[SR] yenilgi"
+          ],
           "context": "[SR] Bu ilişkinin kaderi, kaçınılmaz ve acı dolu bir fi..."
         }
       },
@@ -2306,7 +2704,13 @@
         "position4": {
           "upright": "[SR] Uzun vadeli sonuç, ani ve hızlı bir ayrılıktır. Bi...",
           "reversed": "[SR] Ters Kılıç Şövalyesi, uzun vadede büyük ve yıkıcı ...",
-          "keywords": ["[SR] ani ayrılık", "[SR] hızlı son", "[SR] düşüncesizlik", "[SR] kavga", "[SR] kopuş"],
+          "keywords": [
+            "[SR] ani ayrılık",
+            "[SR] hızlı son",
+            "[SR] düşüncesizlik",
+            "[SR] kavga",
+            "[SR] kopuş"
+          ],
           "context": "[SR] Bu ilişkinin kaderi, bir fırtına gibi aniden gelip..."
         }
       },
@@ -2314,7 +2718,13 @@
         "position2": {
           "upright": "[SR] Cinsel olarak zeki, deneyimli ve ne istediğini bil...",
           "reversed": "[SR] Ters Kılıç Kraliçesi, cinsel olarak soğuk, mesafel...",
-          "keywords": ["[SR] cinsel zeka", "[SR] deneyim", "[SR] netlik", "[SR] mesafe", "[SR] bağımsızlık"],
+          "keywords": [
+            "[SR] cinsel zeka",
+            "[SR] deneyim",
+            "[SR] netlik",
+            "[SR] mesafe",
+            "[SR] bağımsızlık"
+          ],
           "context": "[SR] Cinselliğiniz, zekanın ve deneyimin yönlendirdiği,..."
         },
         "position3": {
@@ -2430,7 +2840,13 @@
         "position2": {
           "upright": "[SR] Fiziksel olarak birbirinizi arzuluyor ve gelecekte...",
           "reversed": "[SR] Ters Asa İkilisi, cinsel bir adım atmaktan korkma,...",
-          "keywords": ["[SR] cinsel arzu", "[SR] potansiyel", "[SR] planlama", "[SR] keşif", "[SR] çekim"],
+          "keywords": [
+            "[SR] cinsel arzu",
+            "[SR] potansiyel",
+            "[SR] planlama",
+            "[SR] keşif",
+            "[SR] çekim"
+          ],
           "context": "[SR] Tensel enerjiniz, bir sonraki adımı atmayı düşünen..."
         },
         "position3": {
@@ -2477,7 +2893,13 @@
         "position3": {
           "upright": "[SR] Ruhsal ve duygusal olarak ektiğiniz tohumların mey...",
           "reversed": "[SR] Ters Asa Üçlüsü, duygusal ilerlemede gecikmeler ve...",
-          "keywords": ["[SR] genişleme", "[SR] beklenti", "[SR] ortak hayaller", "[SR] ilerleme", "[SR] umut"],
+          "keywords": [
+            "[SR] genişleme",
+            "[SR] beklenti",
+            "[SR] ortak hayaller",
+            "[SR] ilerleme",
+            "[SR] umut"
+          ],
           "context": "[SR] Ruhsal bağınız, limana dönmekte olan gemilerini um..."
         },
         "position4": {
@@ -2498,7 +2920,13 @@
         "position2": {
           "upright": "[SR] Fiziksel bağlantınız neşeli, uyumlu ve kutlamaya d...",
           "reversed": "[SR] Ters Asa Dörtlüsü, cinsel hayatta bir uyumsuzluk v...",
-          "keywords": ["[SR] tutkulu kutlama", "[SR] cinsel uyum", "[SR] neşe", "[SR] balayı", "[SR] istikrar"],
+          "keywords": [
+            "[SR] tutkulu kutlama",
+            "[SR] cinsel uyum",
+            "[SR] neşe",
+            "[SR] balayı",
+            "[SR] istikrar"
+          ],
           "context": "[SR] Cinsel yaşamınız, iki insanın bir araya gelmesini ..."
         },
         "position3": {
@@ -2573,19 +3001,37 @@
         "position2": {
           "upright": "[SR] Tatmin edici ve başarılı bir cinsel yaşam. Partner...",
           "reversed": "[SR] Ters Asa Altılısı, cinsel hayatta bir başarısızlık...",
-          "keywords": ["[SR] cinsel zafer", "[SR] özgüven", "[SR] takdir", "[SR] başarı", "[SR] tatmin"],
+          "keywords": [
+            "[SR] cinsel zafer",
+            "[SR] özgüven",
+            "[SR] takdir",
+            "[SR] başarı",
+            "[SR] tatmin"
+          ],
           "context": "[SR] Fiziksel bağlantınız, her iki tarafın da kendini g..."
         },
         "position3": {
           "upright": "[SR] Duygusal olarak birbirinizi destekliyor ve başarıl...",
           "reversed": "[SR] Ters Asa Altılısı, aranızda bir tanınma eksikliği ...",
-          "keywords": ["[SR] karşılıklı destek", "[SR] takdir", "[SR] başarı", "[SR] özgüven", "[SR] zafer"],
+          "keywords": [
+            "[SR] karşılıklı destek",
+            "[SR] takdir",
+            "[SR] başarı",
+            "[SR] özgüven",
+            "[SR] zafer"
+          ],
           "context": "[SR] Duygusal bağınız, birbirini onurlandıran ve zafere..."
         },
         "position4": {
           "upright": "[SR] Uzun vadeli sonuç, birlikte kazanılmış bir zafer v...",
           "reversed": "[SR] Ters Asa Altılısı, uzun vadede bir başarısızlık ve...",
-          "keywords": ["[SR] ortak zafer", "[SR] başarı", "[SR] takdir", "[SR] mutlu son", "[SR] özgüven"],
+          "keywords": [
+            "[SR] ortak zafer",
+            "[SR] başarı",
+            "[SR] takdir",
+            "[SR] mutlu son",
+            "[SR] özgüven"
+          ],
           "context": "[SR] Bu ilişkinin kaderi, herkesin imreneceği, parlak b..."
         }
       },
@@ -2742,7 +3188,13 @@
         "position4": {
           "upright": "[SR] Uzun vadede bu ilişki, bir zevkten çok ağır bir yü...",
           "reversed": "[SR] Ters Asa Onlusu, uzun vadede bu yükün altında ezil...",
-          "keywords": ["[SR] ağır yük", "[SR] sorumluluk", "[SR] tükenmişlik", "[SR] baskı", "[SR] yorucu son"],
+          "keywords": [
+            "[SR] ağır yük",
+            "[SR] sorumluluk",
+            "[SR] tükenmişlik",
+            "[SR] baskı",
+            "[SR] yorucu son"
+          ],
           "context": "[SR] Bu ilişkinin geleceği, taşınması imkansız hale gel..."
         }
       },
@@ -2750,19 +3202,37 @@
         "position2": {
           "upright": "[SR] Yeni cinsel deneyimlere karşı bir heves ve macera ...",
           "reversed": "[SR] Ters Asa Uşağı, cinsel bir başlangıç yapma konusun...",
-          "keywords": ["[SR] cinsel macera", "[SR] heves", "[SR] flört", "[SR] keşif", "[SR] tutkulu başlangıç"],
+          "keywords": [
+            "[SR] cinsel macera",
+            "[SR] heves",
+            "[SR] flört",
+            "[SR] keşif",
+            "[SR] tutkulu başlangıç"
+          ],
           "context": "[SR] Fiziksel bağlantınız, yeni maceralara atılmaya hev..."
         },
         "position3": {
           "upright": "[SR] Aranızda yeni bir tutku, heyecan ve ruhsal merak f...",
           "reversed": "[SR] Ters Asa Uşağı, duygusal bir başlangıç yapma konus...",
-          "keywords": ["[SR] ruhsal merak", "[SR] yeni tutku", "[SR] macera", "[SR] keşif", "[SR] heyecan"],
+          "keywords": [
+            "[SR] ruhsal merak",
+            "[SR] yeni tutku",
+            "[SR] macera",
+            "[SR] keşif",
+            "[SR] heyecan"
+          ],
           "context": "[SR] Duygusal bağınız, yeni bir maceranın başında duran..."
         },
         "position4": {
           "upright": "[SR] Uzun vadeli sonuç, birlikte yeni maceralara atılma...",
           "reversed": "[SR] Ters Asa Uşağı, uzun vadede bir başlangıç yapma he...",
-          "keywords": ["[SR] yeni maceralar", "[SR] keşif", "[SR] eğlence", "[SR] dinamik ilişki", "[SR] heves"],
+          "keywords": [
+            "[SR] yeni maceralar",
+            "[SR] keşif",
+            "[SR] eğlence",
+            "[SR] dinamik ilişki",
+            "[SR] heves"
+          ],
           "context": "[SR] Bu ilişkinin geleceği, bitmeyen bir keşif ve macer..."
         }
       },
@@ -2770,7 +3240,13 @@
         "position2": {
           "upright": "[SR] Son derece tutkulu, enerjik ve maceraperest bir ci...",
           "reversed": "[SR] Ters Asa Şövalyesi, bencil, aceleci ve sadece kend...",
-          "keywords": ["[SR] yoğun tutku", "[SR] macera", "[SR] karizma", "[SR] cinsel enerji", "[SR] cesaret"],
+          "keywords": [
+            "[SR] yoğun tutku",
+            "[SR] macera",
+            "[SR] karizma",
+            "[SR] cinsel enerji",
+            "[SR] cesaret"
+          ],
           "context": "[SR] Cinsel enerjiniz, bir alev gibi parlak, sıcak ve d..."
         },
         "position3": {
@@ -2845,13 +3321,25 @@
         "position2": {
           "upright": "[SR] Cinsel olarak deneyimli, lider ve son derece tutku...",
           "reversed": "[SR] Ters Asa Kralı, cinsel olarak baskıcı, bencil veya...",
-          "keywords": ["[SR] cinsel liderlik", "[SR] deneyim", "[SR] yoğun tutku", "[SR] karizma", "[SR] güç"],
+          "keywords": [
+            "[SR] cinsel liderlik",
+            "[SR] deneyim",
+            "[SR] yoğun tutku",
+            "[SR] karizma",
+            "[SR] güç"
+          ],
           "context": "[SR] Cinsel yaşamınız, tutku krallığını yöneten, deneyi..."
         },
         "position3": {
           "upright": "[SR] Aranızda ortak bir vizyonla hareket eden, güçlü, l...",
           "reversed": "[SR] Ters Asa Kralı, duygusal olarak baskıcı, egoist ve...",
-          "keywords": ["[SR] liderlik", "[SR] ortak vizyon", "[SR] ilham", "[SR] güç ortaklığı", "[SR] cesaret"],
+          "keywords": [
+            "[SR] liderlik",
+            "[SR] ortak vizyon",
+            "[SR] ilham",
+            "[SR] güç ortaklığı",
+            "[SR] cesaret"
+          ],
           "context": "[SR] Ruhsal bağınız, ortak bir krallığı yöneten, vizyon..."
         },
         "position4": {
@@ -2898,7 +3386,13 @@
         "position4": {
           "upright": "[SR] Uzun vadeli sonuç, son derece sağlam, güvenilir ve...",
           "reversed": "[SR] Ters Tılsım Ası, uzun vadede bir fırsatın kaçırıla...",
-          "keywords": ["[SR] somut başlangıç", "[SR] kalıcı ilişki", "[SR] güven", "[SR] refah", "[SR] fırsat"],
+          "keywords": [
+            "[SR] somut başlangıç",
+            "[SR] kalıcı ilişki",
+            "[SR] güven",
+            "[SR] refah",
+            "[SR] fırsat"
+          ],
           "context": "[SR] Bu ilişkinin geleceği, gerçek dünyada kök salan, s..."
         }
       },
@@ -2906,7 +3400,13 @@
         "position2": {
           "upright": "[SR] Fiziksel bağlantınız eğlenceli, esnek ve ritmik. P...",
           "reversed": "[SR] Ters Tılsım İkilisi, cinsel hayatta bir denge kuru...",
-          "keywords": ["[SR] denge", "[SR] ritim", "[SR] esneklik", "[SR] eğlence", "[SR] oyunculuk"],
+          "keywords": [
+            "[SR] denge",
+            "[SR] ritim",
+            "[SR] esneklik",
+            "[SR] eğlence",
+            "[SR] oyunculuk"
+          ],
           "context": "[SR] Cinselliğiniz, iki bedenin uyum içinde dans ettiği..."
         },
         "position3": {
@@ -3145,13 +3645,25 @@
         "position2": {
           "upright": "[SR] Cinsel yaşamda bir öğrenme, pratik yapma ve ustala...",
           "reversed": "[SR] Ters Tılsım Sekizlisi, cinsel hayatta bir tembelli...",
-          "keywords": ["[SR] cinsel öğrenme", "[SR] ustalaşma", "[SR] özen", "[SR] pratik", "[SR] keşif"],
+          "keywords": [
+            "[SR] cinsel öğrenme",
+            "[SR] ustalaşma",
+            "[SR] özen",
+            "[SR] pratik",
+            "[SR] keşif"
+          ],
           "context": "[SR] Cinselliğiniz, birbirinizin bedenini bir sanat ese..."
         },
         "position3": {
           "upright": "[SR] Duygusal bağınızı güçlendirmek için bilinçli bir ç...",
           "reversed": "[SR] Ters Tılsım Sekizlisi, duygusal olarak ilişkiye ye...",
-          "keywords": ["[SR] duygusal çaba", "[SR] adanmışlık", "[SR] özen", "[SR] gelişim", "[SR] ustalaşma"],
+          "keywords": [
+            "[SR] duygusal çaba",
+            "[SR] adanmışlık",
+            "[SR] özen",
+            "[SR] gelişim",
+            "[SR] ustalaşma"
+          ],
           "context": "[SR] Duygusal bağınız, bir zanaatkarın eserine gösterdi..."
         },
         "position4": {
@@ -3198,7 +3710,13 @@
         "position4": {
           "upright": "[SR] Uzun vadeli sonuç, her iki tarafın da bağımsızlığı...",
           "reversed": "[SR] Ters Tılsım Dokuzlusu, uzun vadede bir tarafın diğ...",
-          "keywords": ["[SR] bağımsız ilişki", "[SR] refah", "[SR] olgunluk", "[SR] lüks", "[SR] kendine yetme"],
+          "keywords": [
+            "[SR] bağımsız ilişki",
+            "[SR] refah",
+            "[SR] olgunluk",
+            "[SR] lüks",
+            "[SR] kendine yetme"
+          ],
           "context": "[SR] Bu ilişkinin geleceği, her ikisinin de kendi bahçe..."
         }
       },
@@ -3232,7 +3750,13 @@
         "position4": {
           "upright": "[SR] Uzun vadeli sonuç, son derece istikrarlı, güvenli ...",
           "reversed": "[SR] Ters Tılsım Onlusu, uzun vadede maddi sorunlar vey...",
-          "keywords": ["[SR] kalıcı aile", "[SR] zenginlik", "[SR] güvenlik", "[SR] miras", "[SR] istikrar"],
+          "keywords": [
+            "[SR] kalıcı aile",
+            "[SR] zenginlik",
+            "[SR] güvenlik",
+            "[SR] miras",
+            "[SR] istikrar"
+          ],
           "context": "[SR] Bu ilişkinin kaderi, nesiller boyu sürecek, sağlam..."
         }
       },
@@ -3281,7 +3805,13 @@
         "position2": {
           "upright": "[SR] Fiziksel bağlantınız yavaş, sabırlı, güvenilir ve ...",
           "reversed": "[SR] Ters Tılsım Şövalyesi, cinsel hayatta bir durgunlu...",
-          "keywords": ["[SR] şehvet", "[SR] sabır", "[SR] güvenilirlik", "[SR] sadakat", "[SR] yavaş cinsellik"],
+          "keywords": [
+            "[SR] şehvet",
+            "[SR] sabır",
+            "[SR] güvenilirlik",
+            "[SR] sadakat",
+            "[SR] yavaş cinsellik"
+          ],
           "context": "[SR] Cinsel enerjiniz, hedefine yavaş ama emin adımlarl..."
         },
         "position3": {
@@ -3315,7 +3845,13 @@
         "position2": {
           "upright": "[SR] Cinsellik besleyici, cömert, sıcak ve son derece d...",
           "reversed": "[SR] Ters Tılsım Kraliçesi, cinsel olarak kendine veya ...",
-          "keywords": ["[SR] duyusallık", "[SR] şehvet", "[SR] besleyicilik", "[SR] cömertlik", "[SR] güven"],
+          "keywords": [
+            "[SR] duyusallık",
+            "[SR] şehvet",
+            "[SR] besleyicilik",
+            "[SR] cömertlik",
+            "[SR] güven"
+          ],
           "context": "[SR] Cinsel yaşamınız, tüm duyuları besleyen, sıcak ve ..."
         },
         "position3": {
@@ -3362,7 +3898,13 @@
         "position3": {
           "upright": "[SR] Aranızda son derece başarılı, istikrarlı ve güven ...",
           "reversed": "[SR] Ters Tılsım Kralı, duygusal bağın aşırı materyalis...",
-          "keywords": ["[SR] istikrarlı bağ", "[SR] güven", "[SR] başarı", "[SR] cömertlik", "[SR] zenginlik"],
+          "keywords": [
+            "[SR] istikrarlı bağ",
+            "[SR] güven",
+            "[SR] başarı",
+            "[SR] cömertlik",
+            "[SR] zenginlik"
+          ],
           "context": "[SR] Duygusal bağınız, hem zengin hem de cömert, bilge ..."
         },
         "position4": {
@@ -3437,7 +3979,13 @@
     "theEmperor": {
       "position1": {
         "context": "Ova osoba je lider koji želi da izgradi svoj život i veze na čvrstim temeljima.",
-        "keywords": ["autoritet", "stabilnost", "liderstvo", "zaštitništvo", "disciplina"],
+        "keywords": [
+          "autoritet",
+          "stabilnost",
+          "liderstvo",
+          "zaštitništvo",
+          "disciplina"
+        ],
         "reversed": "Obrnuti Car ukazuje na to da bi ta osoba mogla biti preterano kontrolišeća, kruta, dominantna ili imati probleme sa autoritetom. Možda ima poteškoća sa prikazivanjem svojih emocija.",
         "upright": "Ova osoba ima organizovanu, disciplinovanu, zaštitničku i liderstvu orijentisanu prirodu. Traži stabilnost i kontrolu u svom životu. U vezama može ponuditi pouzdano rame i čvrstu osnovu."
       }
@@ -3445,7 +3993,13 @@
     "theEmpress": {
       "position1": {
         "context": "Ova osoba je srce puno života koje neguje ljubavlju i saosećanjem.",
-        "keywords": ["obilje", "majčinstvo", "prirodnost", "saosećanje", "lepota"],
+        "keywords": [
+          "obilje",
+          "majčinstvo",
+          "prirodnost",
+          "saosećanje",
+          "lepota"
+        ],
         "reversed": "Obrnuta Carica pokazuje da bi ta osoba mogla biti preterano posesivna, lenja ili ne brinuti o sebi. Možda ima blokade u izražavanju svoje kreativnosti ili ljubavi.",
         "upright": "Osoba koja vas zanima je negujuća, saosećajna, toplog srca i voli uživanja života. Širi lepotu i obilje oko sebe. U vezama možda ima majčinski ili očinski stav koji pruža sigurnost."
       }
@@ -3453,7 +4007,13 @@
     "theFool": {
       "position1": {
         "context": "Ova osoba je spremna da otvori novu stranicu u svom ljubavnom životu ili je avanturista koji se toga plaši.",
-        "keywords": ["novi počeci", "nevinost", "spontanost", "preuzimanje rizika", "slobodni duh"],
+        "keywords": [
+          "novi počeci",
+          "nevinost",
+          "spontanost",
+          "preuzimanje rizika",
+          "slobodni duh"
+        ],
         "reversed": "Obrnuti Budala pokazuje da bi ta osoba mogla biti neoprezna, neodgovorna ili da se plaši da započne vezu. Možda ignoriše potencijalne opasnosti i izbegava obavezu.",
         "upright": "Osoba koja vas zanima puna je dečje radoznalosti i uzbuđenja o životu. Otvorena je za nove početke i ima avanturistički duh, ali to ponekad može da je učini neplaniranom i neorganizovanom. I veze pristupa ovim slobodnim duhom."
       }
@@ -3461,7 +4021,13 @@
     "theHighPriestess": {
       "position1": {
         "context": "Ova osoba je misteriozna duša koja živi svoje emocije ne na površini, već u dubinama.",
-        "keywords": ["intuicija", "misterija", "podsvest", "skrivene emocije", "uvid"],
+        "keywords": [
+          "intuicija",
+          "misterija",
+          "podsvest",
+          "skrivene emocije",
+          "uvid"
+        ],
         "reversed": "Obrnuta Visoka Svestenica pokazuje da bi ta osoba mogla biti tajnovita, odvojena od svoje intuicije ili nesincera sa vama. Možda ima problema sa povezivanjem sa svojim unutrašnjim svetom ili sa vama.",
         "upright": "Ova osoba ima misterioznu, intuitivnu prirodu i ne otkriva odmah svoje emocije. Njen unutrašnji svet je bogat i možda će biti potrebno vreme da je razumete. Možda čuva svoja osećanja prema vama kao tajnu."
       }
@@ -3469,7 +4035,13 @@
     "theMagician": {
       "position1": {
         "context": "Ova osoba je kreator koji sedi u rediteljskoj stolici svog života i veza.",
-        "keywords": ["volja", "kreativnost", "veština", "privlačnost", "manifestacija"],
+        "keywords": [
+          "volja",
+          "kreativnost",
+          "veština",
+          "privlačnost",
+          "manifestacija"
+        ],
         "reversed": "Obrnuti Mađioničar ukazuje na to da bi ta osoba mogla biti manipulativna, obmanjujuća ili ne koristiti svoj potencijal. Njene reči i dela možda nisu konzistentni ili možda pati od nedostatka samopouzdanja.",
         "upright": "Osoba koja vas zanima je privlačna, talentovana i ima moć da postigne ono što želi. Ima visoke komunikacijske veštine i zna kako da okrene događaje u svoju korist. Možda stvara svesnu privlačnost prema vama."
       }
@@ -3758,7 +4330,11 @@
       "title": "{type} Rezultat"
     },
     "subtitle": "Otkrij vođstvo svog broja uz ime i datum rođenja.",
-    "title": "Numerologija"
+    "title": "Numerologija",
+    "renk": "Boja",
+    "element": "Element",
+    "gezegen": "Planeta",
+    "ifade": "İfade"
   },
   "numerologyResult": {
     "backButton": "Nazad",
@@ -4602,7 +5178,10 @@
   "tarotCards": {
     "cups": {
       "1": {
-        "keywords": ["ljubav", "emocije"],
+        "keywords": [
+          "ljubav",
+          "emocije"
+        ],
         "meaning": {
           "reversed": "Samo-ljubav, potisnute emocije",
           "upright": "Nove veze, saosećanje"
@@ -4610,7 +5189,10 @@
         "name": "As Pehara"
       },
       "2": {
-        "keywords": ["partnerstvo", "ljubav"],
+        "keywords": [
+          "partnerstvo",
+          "ljubav"
+        ],
         "meaning": {
           "reversed": "Samo-ljubav, raskidi",
           "upright": "Partnerstvo, uzajamna privlačnost"
@@ -4618,7 +5200,10 @@
         "name": "Dvojka Pehara"
       },
       "3": {
-        "keywords": ["proslava", "prijateljstvo"],
+        "keywords": [
+          "proslava",
+          "prijateljstvo"
+        ],
         "meaning": {
           "reversed": "Nezavisnost, kreativni blokovi",
           "upright": "Proslava, prijateljstvo"
@@ -4626,7 +5211,10 @@
         "name": "Trojka Pehara"
       },
       "4": {
-        "keywords": ["meditacija", "kontemplacija"],
+        "keywords": [
+          "meditacija",
+          "kontemplacija"
+        ],
         "meaning": {
           "reversed": "Povlačenje, izolacija",
           "upright": "Meditacija, kontemplacija"
@@ -4634,7 +5222,10 @@
         "name": "Četvorka Pehara"
       },
       "5": {
-        "keywords": ["žaljenje", "razočaranje"],
+        "keywords": [
+          "žaljenje",
+          "razočaranje"
+        ],
         "meaning": {
           "reversed": "Samo-opraštanje, napredovanje",
           "upright": "Žaljenje, razočaranje"
@@ -4642,7 +5233,10 @@
         "name": "Petica Pehara"
       },
       "6": {
-        "keywords": ["nostalgija", "detinjstvo"],
+        "keywords": [
+          "nostalgija",
+          "detinjstvo"
+        ],
         "meaning": {
           "reversed": "Život u prošlosti, opraštanje",
           "upright": "Sećanja iz detinjstva, nevinost"
@@ -4650,7 +5244,10 @@
         "name": "Šestica Pehara"
       },
       "7": {
-        "keywords": ["mogućnosti", "izbori"],
+        "keywords": [
+          "mogućnosti",
+          "izbori"
+        ],
         "meaning": {
           "reversed": "Lične vrednosti, preopterećenost",
           "upright": "Mogućnosti, izbori"
@@ -4658,7 +5255,10 @@
         "name": "Sedmica Pehara"
       },
       "8": {
-        "keywords": ["razočaranje", "napuštanje"],
+        "keywords": [
+          "razočaranje",
+          "napuštanje"
+        ],
         "meaning": {
           "reversed": "Pokušaj ponovo, neodlučnost",
           "upright": "Razočaranje, napuštanje"
@@ -4666,7 +5266,10 @@
         "name": "Osmica Pehara"
       },
       "9": {
-        "keywords": ["zadovoljstvo", "zadovoljstvo"],
+        "keywords": [
+          "zadovoljstvo",
+          "zadovoljstvo"
+        ],
         "meaning": {
           "reversed": "Unutrašnja sreća, nezadovoljstvo",
           "upright": "Zadovoljstvo, zadovoljstvo"
@@ -4674,7 +5277,10 @@
         "name": "Devetka Pehara"
       },
       "10": {
-        "keywords": ["božanska ljubav", "harmonija"],
+        "keywords": [
+          "božanska ljubav",
+          "harmonija"
+        ],
         "meaning": {
           "reversed": "Odvojenost, teške veze",
           "upright": "Božanska ljubav, harmonija"
@@ -4682,7 +5288,10 @@
         "name": "Desetka Pehara"
       },
       "king": {
-        "keywords": ["emocionalna ravnoteža", "diplomatija"],
+        "keywords": [
+          "emocionalna ravnoteža",
+          "diplomatija"
+        ],
         "meaning": {
           "reversed": "Samo-saosećanje, promenljivo raspoloženje",
           "upright": "Emocionalno uravnotežen, diplomatski"
@@ -4690,7 +5299,10 @@
         "name": "Kralj Pehara"
       },
       "knight": {
-        "keywords": ["romantika", "šarm"],
+        "keywords": [
+          "romantika",
+          "šarm"
+        ],
         "meaning": {
           "reversed": "Nerealno, ljubomora",
           "upright": "Romantika, šarm, mašta"
@@ -4698,7 +5310,10 @@
         "name": "Vitez Pehara"
       },
       "page": {
-        "keywords": ["kreativnost", "intuicija"],
+        "keywords": [
+          "kreativnost",
+          "intuicija"
+        ],
         "meaning": {
           "reversed": "Nove ideje, sumlja u intuiciju",
           "upright": "Kreativne mogućnosti, intuicija"
@@ -4706,7 +5321,10 @@
         "name": "Paž Pehara"
       },
       "queen": {
-        "keywords": ["saosećanje", "emocionalna stabilnost"],
+        "keywords": [
+          "saosećanje",
+          "emocionalna stabilnost"
+        ],
         "meaning": {
           "reversed": "Unutrašnja osećanja, briga o sebi",
           "upright": "Saosećajna, emocionalno stabilna"
@@ -4716,7 +5334,10 @@
     },
     "majorArcana": {
       "0": {
-        "keywords": ["novi počeci", "nevinost"],
+        "keywords": [
+          "novi počeci",
+          "nevinost"
+        ],
         "meaning": {
           "reversed": "Nepažnja, iskorišćavanje",
           "upright": "Novi počeci, nevinost, spontanost"
@@ -4724,7 +5345,10 @@
         "name": "Budala"
       },
       "1": {
-        "keywords": ["manifestacija", "moć"],
+        "keywords": [
+          "manifestacija",
+          "moć"
+        ],
         "meaning": {
           "reversed": "Manipulacija, loše planiranje",
           "upright": "Manifestacija, snalažljivost, moć"
@@ -4732,7 +5356,10 @@
         "name": "Mađioničar"
       },
       "2": {
-        "keywords": ["intuicija", "misterija"],
+        "keywords": [
+          "intuicija",
+          "misterija"
+        ],
         "meaning": {
           "reversed": "Tajne, odvojenost od intuicije",
           "upright": "Intuicija, sveto znanje, božanska ženskost"
@@ -4740,7 +5367,10 @@
         "name": "Visoka Svestenica"
       },
       "3": {
-        "keywords": ["ženskost", "lepota"],
+        "keywords": [
+          "ženskost",
+          "lepota"
+        ],
         "meaning": {
           "reversed": "Kreativni blok, zavisnost",
           "upright": "Ženskost, lepota, priroda, negovanje"
@@ -4748,7 +5378,10 @@
         "name": "Carica"
       },
       "4": {
-        "keywords": ["autoritet", "struktura"],
+        "keywords": [
+          "autoritet",
+          "struktura"
+        ],
         "meaning": {
           "reversed": "Dominacija, prekomerna kontrola",
           "upright": "Autoritet, uspostavljanje, struktura"
@@ -4756,7 +5389,10 @@
         "name": "Car"
       },
       "5": {
-        "keywords": ["tradicija", "usaglašenost"],
+        "keywords": [
+          "tradicija",
+          "usaglašenost"
+        ],
         "meaning": {
           "reversed": "Lična uverenja, sloboda",
           "upright": "Duhovna mudrost, verska uverenja"
@@ -4764,7 +5400,10 @@
         "name": "Sveštenik"
       },
       "6": {
-        "keywords": ["ljubav", "harmonija"],
+        "keywords": [
+          "ljubav",
+          "harmonija"
+        ],
         "meaning": {
           "reversed": "Samo-ljubav, neharmonija",
           "upright": "Ljubav, harmonija, veze"
@@ -4772,7 +5411,10 @@
         "name": "Ljubavnici"
       },
       "7": {
-        "keywords": ["kontrola", "snaga volje"],
+        "keywords": [
+          "kontrola",
+          "snaga volje"
+        ],
         "meaning": {
           "reversed": "Samo-disciplina, opozicija",
           "upright": "Kontrola, snaga volje, uspeh"
@@ -4780,7 +5422,10 @@
         "name": "Kola"
       },
       "8": {
-        "keywords": ["snaga", "hrabrost"],
+        "keywords": [
+          "snaga",
+          "hrabrost"
+        ],
         "meaning": {
           "reversed": "Samo-sumlja, nedostatak samopouzdanja",
           "upright": "Snaga, hrabrost, ubeđivanje"
@@ -4788,7 +5433,10 @@
         "name": "Snaga"
       },
       "9": {
-        "keywords": ["introspekcija", "traganje"],
+        "keywords": [
+          "introspekcija",
+          "traganje"
+        ],
         "meaning": {
           "reversed": "Izolacija, usamljenost",
           "upright": "Traganje za dušom, introspekcija"
@@ -4796,7 +5444,10 @@
         "name": "Pustinjak"
       },
       "10": {
-        "keywords": ["sreća", "karma"],
+        "keywords": [
+          "sreća",
+          "karma"
+        ],
         "meaning": {
           "reversed": "Loša sreća, nedostatak kontrole",
           "upright": "Dobra sreća, karma, životni ciklusi"
@@ -4804,7 +5455,10 @@
         "name": "Točak Sreće"
       },
       "11": {
-        "keywords": ["pravda", "pravednost"],
+        "keywords": [
+          "pravda",
+          "pravednost"
+        ],
         "meaning": {
           "reversed": "Nepravda, nedostatak odgovornosti",
           "upright": "Pravda, pravednost, istina"
@@ -4812,7 +5466,10 @@
         "name": "Pravda"
       },
       "12": {
-        "keywords": ["predaja", "žrtvovanje"],
+        "keywords": [
+          "predaja",
+          "žrtvovanje"
+        ],
         "meaning": {
           "reversed": "Kašnjenja, otpor, odugovlačenje",
           "upright": "Predaja, puštanje, žrtvovanje"
@@ -4820,7 +5477,10 @@
         "name": "Obeseni Čovek"
       },
       "13": {
-        "keywords": ["transformacija", "krajevi"],
+        "keywords": [
+          "transformacija",
+          "krajevi"
+        ],
         "meaning": {
           "reversed": "Otpornost na promene, unutrašnje čišćenje",
           "upright": "Krajevi, transformacija, prelaz"
@@ -4828,7 +5488,10 @@
         "name": "Smrt"
       },
       "14": {
-        "keywords": ["ravnoteža", "umerenost"],
+        "keywords": [
+          "ravnoteža",
+          "umerenost"
+        ],
         "meaning": {
           "reversed": "Neravnoteža, preterivanje, samo-isceljenje",
           "upright": "Ravnoteža, umerenost, strpljivost"
@@ -4836,7 +5499,10 @@
         "name": "Umerenost"
       },
       "15": {
-        "keywords": ["porobljavanje", "materijalizam"],
+        "keywords": [
+          "porobljavanje",
+          "materijalizam"
+        ],
         "meaning": {
           "reversed": "Oslobađanje ograničavajućih uverenja, odvajanje",
           "upright": "Porobljavanje, zavisnost, materijalizam"
@@ -4844,7 +5510,10 @@
         "name": "Đavo"
       },
       "16": {
-        "keywords": ["iznenadna promena", "prevrat"],
+        "keywords": [
+          "iznenadna promena",
+          "prevrat"
+        ],
         "meaning": {
           "reversed": "Lična transformacija, strah od promene",
           "upright": "Iznenadna promena, prevrat, haos"
@@ -4852,7 +5521,10 @@
         "name": "Kula"
       },
       "17": {
-        "keywords": ["nada", "vera"],
+        "keywords": [
+          "nada",
+          "vera"
+        ],
         "meaning": {
           "reversed": "Nedostatak vere, očajanje, odvojenost",
           "upright": "Nada, vera, svrha, obnavljanje"
@@ -4860,7 +5532,10 @@
         "name": "Zvezda"
       },
       "18": {
-        "keywords": ["iluzija", "strah"],
+        "keywords": [
+          "iluzija",
+          "strah"
+        ],
         "meaning": {
           "reversed": "Oslobađanje straha, potisnuta emocija",
           "upright": "Iluzija, strah, anksioznost, podsvest"
@@ -4868,7 +5543,10 @@
         "name": "Mesec"
       },
       "19": {
-        "keywords": ["pozitivnost", "zabava"],
+        "keywords": [
+          "pozitivnost",
+          "zabava"
+        ],
         "meaning": {
           "reversed": "Unutrašnje dete, loše raspoloženje",
           "upright": "Pozitivnost, zabava, toplina, uspeh"
@@ -4876,7 +5554,10 @@
         "name": "Sunce"
       },
       "20": {
-        "keywords": ["sud", "ponovno rođenje"],
+        "keywords": [
+          "sud",
+          "ponovno rođenje"
+        ],
         "meaning": {
           "reversed": "Samo-sumlja, unutrašnji kritičar",
           "upright": "Sud, ponovno rođenje, unutrašnji poziv"
@@ -4884,7 +5565,10 @@
         "name": "Sud"
       },
       "21": {
-        "keywords": ["završetak", "integracija"],
+        "keywords": [
+          "završetak",
+          "integracija"
+        ],
         "meaning": {
           "reversed": "Traganje za ličnim zatvaranjem, prečica",
           "upright": "Završetak, integracija, postignuće"
@@ -4894,7 +5578,10 @@
     },
     "pentacles": {
       "1": {
-        "keywords": ["mogućnost", "manifestacija"],
+        "keywords": [
+          "mogućnost",
+          "manifestacija"
+        ],
         "meaning": {
           "reversed": "Propuštena mogućnost, nedostatak planiranja",
           "upright": "Nova mogućnost, manifestacija"
@@ -4902,7 +5589,10 @@
         "name": "As Pentakla"
       },
       "2": {
-        "keywords": ["prioriteti", "prilagodljivost"],
+        "keywords": [
+          "prioriteti",
+          "prilagodljivost"
+        ],
         "meaning": {
           "reversed": "Prekomitovanost, neorganizovanost",
           "upright": "Više prioriteta, prilagodljivost"
@@ -4910,7 +5600,10 @@
         "name": "Dvojka Pentakla"
       },
       "3": {
-        "keywords": ["saradnja", "učenje"],
+        "keywords": [
+          "saradnja",
+          "učenje"
+        ],
         "meaning": {
           "reversed": "Neharmonija, rad sam",
           "upright": "Saradnja, učenje"
@@ -4918,7 +5611,10 @@
         "name": "Trojka Pentakla"
       },
       "4": {
-        "keywords": ["štednja", "sigurnost"],
+        "keywords": [
+          "štednja",
+          "sigurnost"
+        ],
         "meaning": {
           "reversed": "Prekomerno trošenje, velikodušnost",
           "upright": "Štednja novca, sigurnost"
@@ -4926,7 +5622,10 @@
         "name": "Četvorka Pentakla"
       },
       "5": {
-        "keywords": ["gubitak", "izolacija"],
+        "keywords": [
+          "gubitak",
+          "izolacija"
+        ],
         "meaning": {
           "reversed": "Oporavak od gubitka, duhovno siromaštvo",
           "upright": "Finansijski gubitak, izolacija"
@@ -4934,7 +5633,10 @@
         "name": "Petica Pentakla"
       },
       "6": {
-        "keywords": ["davanje", "deljenje"],
+        "keywords": [
+          "davanje",
+          "deljenje"
+        ],
         "meaning": {
           "reversed": "Briga o sebi, neplaćeni dugovi",
           "upright": "Davanje, deljenje bogatstva"
@@ -4942,7 +5644,10 @@
         "name": "Šestica Pentakla"
       },
       "7": {
-        "keywords": ["istrajnost", "investicija"],
+        "keywords": [
+          "istrajnost",
+          "investicija"
+        ],
         "meaning": {
           "reversed": "Nedostatak dugoročnog gledišta, nestrpljivost",
           "upright": "Istrajnost, investicija"
@@ -4950,7 +5655,10 @@
         "name": "Sedmica Pentakla"
       },
       "8": {
-        "keywords": ["majstorstvo", "veština"],
+        "keywords": [
+          "majstorstvo",
+          "veština"
+        ],
         "meaning": {
           "reversed": "Perfekcionizam, nedostatak posvećenosti",
           "upright": "Majstorstvo, razvoj veština"
@@ -4958,7 +5666,10 @@
         "name": "Osmica Pentakla"
       },
       "9": {
-        "keywords": ["obilje", "nezavisnost"],
+        "keywords": [
+          "obilje",
+          "nezavisnost"
+        ],
         "meaning": {
           "reversed": "Samo-vrednost, prekomerna investicija",
           "upright": "Obilje, finansijska nezavisnost"
@@ -4966,7 +5677,10 @@
         "name": "Devetka Pentakla"
       },
       "10": {
-        "keywords": ["bogatstvo", "porodica"],
+        "keywords": [
+          "bogatstvo",
+          "porodica"
+        ],
         "meaning": {
           "reversed": "Finansijski neuspeh, mračna strana bogatstva",
           "upright": "Bogatstvo, porodica, dugoročni uspeh"
@@ -4974,7 +5688,10 @@
         "name": "Desetka Pentakla"
       },
       "king": {
-        "keywords": ["uspeh", "posao"],
+        "keywords": [
+          "uspeh",
+          "posao"
+        ],
         "meaning": {
           "reversed": "Finansijski savet, život iznad mogućnosti",
           "upright": "Finansijski uspeh, poslovna pamet"
@@ -4982,7 +5699,10 @@
         "name": "Kralj Pentakla"
       },
       "knight": {
-        "keywords": ["rad", "rutina"],
+        "keywords": [
+          "rad",
+          "rutina"
+        ],
         "meaning": {
           "reversed": "Samo-disciplina, osećaj zaglavljenosti",
           "upright": "Marljiv rad, rutina"
@@ -4990,7 +5710,10 @@
         "name": "Vitez Pentakla"
       },
       "page": {
-        "keywords": ["manifestacija", "mogućnost"],
+        "keywords": [
+          "manifestacija",
+          "mogućnost"
+        ],
         "meaning": {
           "reversed": "Nedostatak napretka, odlaganje",
           "upright": "Manifestacija, finansijska mogućnost"
@@ -4998,7 +5721,10 @@
         "name": "Paž Pentakla"
       },
       "queen": {
-        "keywords": ["negovanje", "praktičnost"],
+        "keywords": [
+          "negovanje",
+          "praktičnost"
+        ],
         "meaning": {
           "reversed": "Finansijska nezavisnost, konflikt posao-dom",
           "upright": "Negovanje, praktičnost"
@@ -5008,7 +5734,10 @@
     },
     "swords": {
       "1": {
-        "keywords": ["jasnoća", "proboj"],
+        "keywords": [
+          "jasnoća",
+          "proboj"
+        ],
         "meaning": {
           "reversed": "Konfuzija, haos",
           "upright": "Proboj, jasnoća"
@@ -5016,7 +5745,10 @@
         "name": "As Mačeva"
       },
       "2": {
-        "keywords": ["odluke", "ćorsokak"],
+        "keywords": [
+          "odluke",
+          "ćorsokak"
+        ],
         "meaning": {
           "reversed": "Neodlučnost, konfuzija",
           "upright": "Teške odluke, ćorsokak"
@@ -5024,7 +5756,10 @@
         "name": "Dvojka Mačeva"
       },
       "3": {
-        "keywords": ["slomljeno srce", "tuga"],
+        "keywords": [
+          "slomljeno srce",
+          "tuga"
+        ],
         "meaning": {
           "reversed": "Oslobađanje bola, optimizam",
           "upright": "Slomljeno srce, tuga"
@@ -5032,7 +5767,10 @@
         "name": "Trojka Mačeva"
       },
       "4": {
-        "keywords": ["odmor", "meditacija"],
+        "keywords": [
+          "odmor",
+          "meditacija"
+        ],
         "meaning": {
           "reversed": "Iscrpljenost, sagorevanje",
           "upright": "Odmor, meditacija"
@@ -5040,7 +5778,10 @@
         "name": "Četvorka Mačeva"
       },
       "5": {
-        "keywords": ["konflikt", "poraz"],
+        "keywords": [
+          "konflikt",
+          "poraz"
+        ],
         "meaning": {
           "reversed": "Pomirenje, prošla ogorčenost",
           "upright": "Konflikt, poraz"
@@ -5048,7 +5789,10 @@
         "name": "Petica Mačeva"
       },
       "6": {
-        "keywords": ["prelaz", "promena"],
+        "keywords": [
+          "prelaz",
+          "promena"
+        ],
         "meaning": {
           "reversed": "Lični prelaz, otpor",
           "upright": "Prelaz, promena"
@@ -5056,7 +5800,10 @@
         "name": "Šestica Mačeva"
       },
       "7": {
-        "keywords": ["izdaja", "obmana"],
+        "keywords": [
+          "izdaja",
+          "obmana"
+        ],
         "meaning": {
           "reversed": "Sindrom prevaranta, tajne",
           "upright": "Izdaja, obmana"
@@ -5064,7 +5811,10 @@
         "name": "Sedmica Mačeva"
       },
       "8": {
-        "keywords": ["ograničavanje", "zatvor"],
+        "keywords": [
+          "ograničavanje",
+          "zatvor"
+        ],
         "meaning": {
           "reversed": "Samo-ograničavajuća uverenja, unutrašnji kritičar",
           "upright": "Ograničavanje, zatvor"
@@ -5072,7 +5822,10 @@
         "name": "Osmica Mačeva"
       },
       "9": {
-        "keywords": ["anksioznost", "strah"],
+        "keywords": [
+          "anksioznost",
+          "strah"
+        ],
         "meaning": {
           "reversed": "Unutrašnja previranja, oslobađanje anksioznosti",
           "upright": "Anksioznost, strah"
@@ -5080,7 +5833,10 @@
         "name": "Devetka Mačeva"
       },
       "10": {
-        "keywords": ["krajevi", "izdaja"],
+        "keywords": [
+          "krajevi",
+          "izdaja"
+        ],
         "meaning": {
           "reversed": "Oporavak, otpor kraju",
           "upright": "Bolni krajevi, izdaja"
@@ -5088,7 +5844,10 @@
         "name": "Desetka Mačeva"
       },
       "king": {
-        "keywords": ["jasnoća", "autoritet"],
+        "keywords": [
+          "jasnoća",
+          "autoritet"
+        ],
         "meaning": {
           "reversed": "Tiha moć, zloupotreba moći",
           "upright": "Mentalna jasnoća, autoritet"
@@ -5096,7 +5855,10 @@
         "name": "Kralj Mačeva"
       },
       "knight": {
-        "keywords": ["ambicija", "akcija"],
+        "keywords": [
+          "ambicija",
+          "akcija"
+        ],
         "meaning": {
           "reversed": "Nemiran, impulsivan",
           "upright": "Ambiciozan, orijentisan na akciju"
@@ -5104,7 +5866,10 @@
         "name": "Vitez Mačeva"
       },
       "page": {
-        "keywords": ["ideje", "radoznalost"],
+        "keywords": [
+          "ideje",
+          "radoznalost"
+        ],
         "meaning": {
           "reversed": "Samo-izražavanje, nema akcije",
           "upright": "Nove ideje, radoznalost"
@@ -5112,7 +5877,10 @@
         "name": "Paž Mačeva"
       },
       "queen": {
-        "keywords": ["nezavisnost", "granice"],
+        "keywords": [
+          "nezavisnost",
+          "granice"
+        ],
         "meaning": {
           "reversed": "Previše emocionalan, hladan",
           "upright": "Nezavisan, jasne granice"
@@ -5122,7 +5890,10 @@
     },
     "wands": {
       "1": {
-        "keywords": ["inspiracija", "moć"],
+        "keywords": [
+          "inspiracija",
+          "moć"
+        ],
         "meaning": {
           "reversed": "Nedostatak energije, dosada",
           "upright": "Inspiracija, nove mogućnosti"
@@ -5130,7 +5901,10 @@
         "name": "As Štapova"
       },
       "2": {
-        "keywords": ["planiranje", "odluke"],
+        "keywords": [
+          "planiranje",
+          "odluke"
+        ],
         "meaning": {
           "reversed": "Lični ciljevi, strah od nepoznatog",
           "upright": "Planiranje budućnosti, odluke"
@@ -5138,7 +5912,10 @@
         "name": "Dvojka Štapova"
       },
       "3": {
-        "keywords": ["širenje", "predviđanje"],
+        "keywords": [
+          "širenje",
+          "predviđanje"
+        ],
         "meaning": {
           "reversed": "Igra malo, kašnjenja",
           "upright": "Širenje, predviđanje"
@@ -5146,7 +5923,10 @@
         "name": "Trojka Štapova"
       },
       "4": {
-        "keywords": ["proslava", "harmonija"],
+        "keywords": [
+          "proslava",
+          "harmonija"
+        ],
         "meaning": {
           "reversed": "Lična proslava, konflikt",
           "upright": "Proslava, harmonija"
@@ -5154,7 +5934,10 @@
         "name": "Četvorka Štapova"
       },
       "5": {
-        "keywords": ["konflikt", "takmičenje"],
+        "keywords": [
+          "konflikt",
+          "takmičenje"
+        ],
         "meaning": {
           "reversed": "Unutrašnji konflikt, izbegavanje",
           "upright": "Konflikt, takmičenje"
@@ -5162,7 +5945,10 @@
         "name": "Petica Štapova"
       },
       "6": {
-        "keywords": ["uspeh", "prepoznavanje"],
+        "keywords": [
+          "uspeh",
+          "prepoznavanje"
+        ],
         "meaning": {
           "reversed": "Privatno postignuće, pad iz milosti",
           "upright": "Uspeh, prepoznavanje"
@@ -5170,7 +5956,10 @@
         "name": "Šestica Štapova"
       },
       "7": {
-        "keywords": ["izazov", "istrajnost"],
+        "keywords": [
+          "izazov",
+          "istrajnost"
+        ],
         "meaning": {
           "reversed": "Iscrpljenost, odustajanje",
           "upright": "Izazov, istrajnost"
@@ -5178,7 +5967,10 @@
         "name": "Sedmica Štapova"
       },
       "8": {
-        "keywords": ["brzina", "napredak"],
+        "keywords": [
+          "brzina",
+          "napredak"
+        ],
         "meaning": {
           "reversed": "Kašnjenja, frustracija",
           "upright": "Brzina, napredak"
@@ -5186,7 +5978,10 @@
         "name": "Osmica Štapova"
       },
       "9": {
-        "keywords": ["otpornost", "hrabrost"],
+        "keywords": [
+          "otpornost",
+          "hrabrost"
+        ],
         "meaning": {
           "reversed": "Unutrašnji resursi, borba",
           "upright": "Otpornost, hrabrost"
@@ -5194,7 +5989,10 @@
         "name": "Devetka Štapova"
       },
       "10": {
-        "keywords": ["teret", "odgovornost"],
+        "keywords": [
+          "teret",
+          "odgovornost"
+        ],
         "meaning": {
           "reversed": "Raditi sve, delegiranje",
           "upright": "Teret, odgovornost"
@@ -5202,7 +6000,10 @@
         "name": "Desetka Štapova"
       },
       "king": {
-        "keywords": ["vodstvo", "vizija"],
+        "keywords": [
+          "vodstvo",
+          "vizija"
+        ],
         "meaning": {
           "reversed": "Impulsivnost, nemilosrdnost",
           "upright": "Vodstvo, vizija"
@@ -5210,7 +6011,10 @@
         "name": "Kralj Štapova"
       },
       "knight": {
-        "keywords": ["energija", "strast"],
+        "keywords": [
+          "energija",
+          "strast"
+        ],
         "meaning": {
           "reversed": "Žurba, rasuta energija",
           "upright": "Energija, strast, avantura"
@@ -5218,7 +6022,10 @@
         "name": "Vitez Štapova"
       },
       "page": {
-        "keywords": ["inspiracija", "otkriće"],
+        "keywords": [
+          "inspiracija",
+          "otkriće"
+        ],
         "meaning": {
           "reversed": "Nedostatak pravca, odlaganje",
           "upright": "Inspiracija, otkriće"
@@ -5226,7 +6033,10 @@
         "name": "Paž Štapova"
       },
       "queen": {
-        "keywords": ["hrabrost", "nezavisnost"],
+        "keywords": [
+          "hrabrost",
+          "nezavisnost"
+        ],
         "meaning": {
           "reversed": "Samo-poštovanje, introvertnost",
           "upright": "Hrabrost, nezavisnost"
@@ -5609,5 +6419,54 @@
       "text": "Sva prava zadržana.",
       "disclaimer": "Ovaj sajt je namenjen zabavi i ne zamenjuje savete iz stvarnog života."
     }
+  },
+  "legal": {
+    "misyonumuz": "Naša Misija",
+    "vizyonumuz": "Naša Vizija",
+    "busbuskimki": "Büşbüşkimki",
+    "uyumluluk-ve-destek": "Kompatibilnost i Podrška",
+    "tam-klavye-destegi": "Puna Podrška Tastature",
+    "iletisim": "Kontakt",
+    "mesajiniz": "Mesajınız"
+  },
+  "maintenance": {
+    "su-anki-zaman": "Trenutno Vreme",
+    "yenile": "Osveži",
+    "sistem-guncellemesi": "Sistemsko Ažuriranje",
+    "performans-iyilestirmesi": "Poboljšanje Performansi",
+    "guvenlik-guncellemesi": "Sigurnosno Ažuriranje"
+  },
+  "shared": {
+    "dashboard": "Dashboard",
+    "pakize": "Pakize",
+    "profil": "Profil",
+    "ana-navigasyon-menusu": "Ana navigasyon menüsü",
+    "hakkimizda": "Hakkımızda",
+    "yasal": "Yasal",
+    "iletisim": "Kontakt",
+    "guvenli-odeme": "Güvenli ödeme",
+    "turkish": "Turkish",
+    "turkce": "Türkçe",
+    "english": "English",
+    "srpski": "Srpski",
+    "dil-sec": "Dil seç",
+    "kapat": "Kapat",
+    "ters": "Ters",
+    "tum-pozisyonlar-dolu": "Tüm pozisyonlar dolu",
+    "karistir": "Karıştır",
+    "kaydirarak-tum-kartlari": "Kaydırarak tüm kartları görün",
+    "kart-destesi-bos": "Kart destesi boş",
+    "kart": "Kart",
+    "guvenli-olmayan-resim": "Nesigurna Slika",
+    "basit-okuma-secildi": "Basit okuma seçildi",
+    "giris-yapin": "Giriş yapın",
+    "loading": "Loading",
+    "inter": "Inter",
+    "sesli": "Sesli",
+    "audio": "Audio",
+    "yazili": "Yazılı",
+    "written": "Written",
+    "kartlarin-rehberligi": "Kartların rehberliği",
+    "uyari-mesajini-kapat": "Uyarı mesajını kapat"
   }
 }

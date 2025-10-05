@@ -18,8 +18,10 @@ import { join, extname } from 'path';
 
 // Hardcoded string pattern'leri
 const HARDCODED_PATTERNS = [
-  // JSX içinde Türkçe metinler (büyük harfle başlayan)
-  />([A-ZÇĞIİÖŞÜ][a-zçğıiöşü\s]{3,})</g,
+  // JSX içinde Türkçe metinler (büyük harfle başlayan) - daha geniş pattern
+  />([A-ZÇĞIİÖŞÜ][a-zçğıiöşü\s]{2,})</g,
+  // String literal'lar (Türkçe karakterler içeren)
+  /['"`]([A-ZÇĞIİÖŞÜ][a-zçğıiöşü\s]{3,})['"`]/g,
   // Button içindeki metinler
   /<button[^>]*>([^<{]+)<\/button>/gi,
   // Label içindeki metinler
@@ -40,6 +42,8 @@ const HARDCODED_PATTERNS = [
   /alt=['"`]([^'"`]+)['"`]/gi,
   // aria-label attribute'ları
   /aria-label=['"`]([^'"`]+)['"`]/gi,
+  // Object key'leri (metadata'lar hariç)
+  /:\s*['"`]([A-ZÇĞIİÖŞÜ][a-zçğıiöşü\s]{3,})['"`]/g,
 ];
 
 // Whitelist
@@ -47,6 +51,16 @@ const WHITELIST = [
   'className', 'id', 'data-', 'aria-', 'http', 'https', 'www', '@',
   /^\d+$/, /^[a-zA-Z]$/, '', /^[a-z-]+$/, /^<[^>]+>$/,
   'src', 'href', 'key', 'ref', 'style', 'onClick', 'onChange', 'type', 'name', 'value',
+  // Metadata ve SEO ile ilgili
+  'title', 'description', 'keywords', 'canonical', 'locale', 'type', 'card',
+  // Route ve slug'lar
+  'slug', 'locale', 'path', 'route', 'url',
+  // API ve teknik terimler
+  'api', 'endpoint', 'method', 'status', 'error', 'success',
+  // Component isimleri
+  'Component', 'Props', 'State', 'Hook', 'Provider',
+  // Tek karakterler ve kısa metinler
+  /^.{1,2}$/, /^[A-Z]$/,
 ];
 
 const ALLOWED_EXTENSIONS = ['.tsx', '.ts', '.jsx', '.js'];
@@ -69,9 +83,15 @@ class I18nMigration {
     console.log(`Mod: ${this.dryRun ? 'DRY RUN (sadece analiz)' : 'LIVE (dosyalar güncellenecek)'}`);
     console.log('='.repeat(80) + '\n');
 
-    for (const dir of SOURCE_DIRS) {
-      if (this.directoryExists(dir)) {
-        await this.checkDirectory(dir);
+    // Tek dosya modu
+    if (this.targetFile) {
+      await this.checkFile(this.targetFile);
+    } else {
+      // Tüm proje modu
+      for (const dir of SOURCE_DIRS) {
+        if (this.directoryExists(dir)) {
+          await this.checkDirectory(dir);
+        }
       }
     }
 
@@ -248,8 +268,10 @@ class I18nMigration {
 async function main() {
   const args = process.argv.slice(2);
   const dryRun = args.includes('--dry-run') || !args.includes('--live');
+  const fileArg = args.find(arg => arg.startsWith('--file='));
+  const targetFile = fileArg ? fileArg.split('=')[1] : null;
 
-  const migration = new I18nMigration({ dryRun });
+  const migration = new I18nMigration({ dryRun, targetFile });
   await migration.migrate();
 
   process.exit(0);

@@ -1,0 +1,176 @@
+/*
+info:
+Bağlantılı dosyalar:
+- next/link: Sayfalar arası geçiş için Link bileşeni (gerekli)
+- next/navigation: usePathname ile aktif rota tespiti için (gerekli)
+- @/hooks/useAuth: Kullanıcı giriş durumu kontrolü için (gerekli)
+
+Dosyanın amacı:
+- Mobil cihazlarda alt kısımda sabit duran navigasyon çubuğu oluşturur.
+- Giriş yapmış kullanıcılar için "Dashboard" sekmesi, giriş yapmamış kullanıcılar için "Giriş Yap" sekmesi gösterir.
+- Admin kullanıcılar için "Pakize" sekmesi gösterir.
+
+Backend bağlantısı:
+- useAuth hook'u üzerinden Supabase auth durumu kontrol edilir.
+
+Geliştirme ve öneriler:
+- Auth durumuna göre dinamik menü öğeleri gösterilir.
+- Her sekme için emoji ikonlar ve aktif/aktif olmayan durumlar belirgin.
+- Navigasyonun sticky olması için z-index ve sabit konumlandırma kullanılmış.
+- Aktif sekme için renk vurgusu ve hover efektleri mevcut.
+- Menü öğeleri sade, okunabilir ve kolayca genişletilebilir.
+
+Hatalar / Geliştirmeye Açık Noktalar:
+- Erişilebilirlik (a11y) için nav'a aria-label, Link'lere aria-current eklenebilir.
+- Menüde çok fazla sekme olursa taşma veya responsive sorunları olabilir, scroll veya daha küçük ikonlar eklenebilir.
+- Menüdeki isimler sabit, çoklu dil desteği için i18n eklenebilir.
+
+Kodun okunabilirliği, optimizasyonu, yeniden kullanılabilirliği ve güvenliği:
+- Okunabilirlik: Fonksiyonlar ve değişken isimleri açık, kod blokları sade ve modüler.
+- Optimizasyon: Sadece gerekli render ve kontrol var, gereksiz tekrar yok.
+- Yeniden Kullanılabilirlik: Basit yapı, kolayca genişletilebilir.
+- Güvenlik: Auth durumu güvenli şekilde kontrol edilir.
+
+Gereklilik ve Kullanım Durumu:
+- BottomNavigation: Gerekli, mobilde hızlı erişim ve yönlendirme için ana navigasyon bileşeni.
+- getNavigationItems: Gerekli, auth durumuna göre dinamik menü oluşturmak için.
+- LanguageSelector: Gerekli, dil değiştirme işlevi için.
+*/
+
+'use client';
+
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { LayoutErrorBoundary } from '@/components/layout/LayoutErrorBoundary';
+import { useNavigation } from '@/hooks/useNavigation';
+import { usePerformanceMonitoring } from '@/hooks/usePerformanceMonitoring';
+import { useTranslations } from '@/hooks/useTranslations';
+
+// Navigation logic moved to useNavigation hook
+
+export default function BottomNavigation() {
+  const pathname = usePathname();
+  const { navigationItems, handleNavigationClick } = useNavigation();
+  const { trackUserInteraction } = usePerformanceMonitoring();
+  const { t } = useTranslations();
+
+  // Profil ikonuna tıklama işlemi - programatik yönlendirme
+  const handleProfileClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const profileItem = navigationItems.find(
+      item => item.name === 'Profil' || item.name === 'Giriş Yap'
+    );
+    if (profileItem) {
+      trackUserInteraction(profileItem.name, 'click');
+      handleNavigationClick(profileItem);
+    }
+  };
+
+  // Pakize sekmesi tıklama işlemi - programatik yönlendirme
+  const handlePakizeClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const pakizeItem = navigationItems.find(item => item.name === 'Pakize');
+    if (pakizeItem) {
+      trackUserInteraction(pakizeItem.name, 'click');
+      handleNavigationClick(pakizeItem);
+    }
+  };
+
+  return (
+    <LayoutErrorBoundary>
+      <nav
+        className='fixed bottom-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-md border-t border-slate-700'
+        role='navigation'
+        aria-label='Ana navigasyon menüsü'
+      >
+        <div className='flex items-center justify-around h-16 px-1'>
+          {navigationItems.map(item => {
+            const isActive =
+              pathname === item.href ||
+              (item.href === '/' && pathname === '') ||
+              (item.href !== '/' && pathname?.startsWith(item.href));
+
+            // Profil/Auth/Pakize sekmesi için özel tıklama işlemi
+            const isProfileOrAuth =
+              item.name === 'Profil' || item.name === 'Giriş Yap';
+            const isPakize = item.name === 'Pakize';
+
+            if (isProfileOrAuth) {
+              return (
+                <button
+                  key={item.name}
+                  onClick={handleProfileClick}
+                  className={`
+                  flex flex-col items-center justify-center px-2 py-2 rounded-lg
+                  transition-all duration-300 min-w-0 flex-1
+                  ${isActive ? 'text-amber-400' : 'text-gray-500 hover:text-gray-300'}
+                `}
+                  aria-label={`${item.name} ${t('navigation.menu.goToPage', 'sayfasına git')}`}
+                  aria-current={isActive ? 'page' : undefined}
+                  role='menuitem'
+                >
+                  <span className='text-lg mb-1'>
+                    {isActive ? item.activeIcon : item.icon}
+                  </span>
+                  <span className='text-xs font-medium truncate'>
+                    {item.name}
+                  </span>
+                </button>
+              );
+            }
+
+            if (isPakize) {
+              return (
+                <button
+                  key={item.name}
+                  onClick={handlePakizeClick}
+                  className={`
+                  flex flex-col items-center justify-center px-2 py-2 rounded-lg
+                  transition-all duration-300 min-w-0 flex-1
+                  ${isActive ? 'text-amber-400' : 'text-gray-500 hover:text-gray-300'}
+                `}
+                  aria-label={`${item.name} ${t('navigation.menu.goToPage', 'sayfasına git')}`}
+                  aria-current={isActive ? 'page' : undefined}
+                  role='menuitem'
+                >
+                  <span className='text-lg mb-1'>
+                    {isActive ? item.activeIcon : item.icon}
+                  </span>
+                  <span className='text-xs font-medium truncate'>
+                    {item.name}
+                  </span>
+                </button>
+              );
+            }
+
+            return (
+              <Link
+                key={item.name}
+                href={item.href}
+                className={`
+                flex flex-col items-center justify-center px-2 py-2 rounded-lg
+                transition-all duration-300 min-w-0 flex-1
+                ${isActive ? 'text-amber-400' : 'text-gray-500 hover:text-gray-300'}
+              `}
+                aria-label={`${item.name} sayfasına git`}
+                aria-current={isActive ? 'page' : undefined}
+                role='menuitem'
+              >
+                <span className='text-lg mb-1'>
+                  {isActive ? item.activeIcon : item.icon}
+                </span>
+                <span className='text-xs font-medium truncate'>
+                  {item.name}
+                </span>
+              </Link>
+            );
+          })}
+        </div>
+      </nav>
+    </LayoutErrorBoundary>
+  );
+}
