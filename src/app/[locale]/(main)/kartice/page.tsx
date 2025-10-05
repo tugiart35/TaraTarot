@@ -224,7 +224,7 @@ export default async function CardsPage({ params }: PageProps) {
     };
     
     if (majorArcanaMapping[cardKey]) {
-      return `/cards/rws/${majorArcanaMapping[cardKey]}.jpg`;
+      return `/cards/rws/${majorArcanaMapping[cardKey]}.webp`;
     }
     
     // Minor Arcana için
@@ -263,7 +263,7 @@ export default async function CardsPage({ params }: PageProps) {
       cardName = 'King';
     }
     
-    return `/cards/rws/${cardName}-${suit}.jpg`;
+    return `/cards/rws/${cardName}-${suit}.webp`;
   };
 
   const translations = {

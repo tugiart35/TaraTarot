@@ -121,7 +121,7 @@ export class CardData {
       turkishName: cardName.tr,
       serbianName: cardName.sr,
       arcanaType: 'minor' as const,
-      imageUrl: `/cards/rws/${suit}-${number}.jpg`,
+      imageUrl: `/cards/rws/${suit}-${number}.webp`,
       slug: {
         tr: this.getSlugForLocale(slug, 'tr'),
         en: this.getSlugForLocale(slug, 'en'),
@@ -159,8 +159,8 @@ export class CardData {
       metaTitle: this.getSEOTitle(cardName[locale], locale),
       metaDescription: this.getSEODescription(cardName[locale], locale),
       canonicalUrl: this.getCanonicalUrl(slug, locale),
-      ogImage: `/cards/rws/${suit}-${number}.jpg`,
-      twitterImage: `/cards/rws/${suit}-${number}.jpg`,
+      ogImage: `/cards/rws/${suit}-${number}.webp`,
+      twitterImage: `/cards/rws/${suit}-${number}.webp`,
       keywords: this.getSEOKeywords(cardName[locale], locale).split(', '),
       faq: [],
       createdAt: new Date(),
@@ -175,7 +175,7 @@ export class CardData {
         turkishName: 'Deli (Joker)',
         serbianName: 'Joker',
         arcanaType: 'major' as const,
-        imageUrl: '/cards/rws/0-Fool.jpg',
+        imageUrl: '/cards/rws/0-Fool.webp',
         slug: {
           tr: 'joker',
           en: 'the-fool',

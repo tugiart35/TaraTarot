@@ -224,14 +224,14 @@ export default async function CardsPage({ params }: PageProps) {
     };
     
     if (majorArcanaMapping[cardKey]) {
-      return `/cards/rws/${majorArcanaMapping[cardKey]}.jpg`;
+      return `/cards/rws/${majorArcanaMapping[cardKey]}.webp`;
     }
-    
+
     // Minor Arcana için
-    const suit = cardKey.includes('cups') ? 'Cups' : 
+    const suit = cardKey.includes('cups') ? 'Cups' :
                  cardKey.includes('pentacles') ? 'Pentacles' :
                  cardKey.includes('swords') ? 'Swords' : 'Wands';
-    
+
     let cardName = '';
     if (cardKey.includes('ace')) {
       cardName = 'Ace';
@@ -262,8 +262,8 @@ export default async function CardsPage({ params }: PageProps) {
     } else if (cardKey.includes('king')) {
       cardName = 'King';
     }
-    
-    return `/cards/rws/${cardName}-${suit}.jpg`;
+
+    return `/cards/rws/${cardName}-${suit}.webp`;
   };
 
   const translations = {

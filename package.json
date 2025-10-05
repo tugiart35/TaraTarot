@@ -23,6 +23,8 @@
     "i18n:add-missing": "node scripts/add-missing-keys.mjs",
     "i18n:add-simple": "node scripts/simple-add-keys.mjs",
     "i18n:clear-cache": "node scripts/clear-i18n-cache.mjs",
+    "i18n:migrate": "node scripts/auto-i18n-migration.mjs --live",
+    "i18n:migrate:dry": "node scripts/auto-i18n-migration.mjs --dry-run",
     "clean:macos": "find . -name '._*' -delete && find . -name '.DS_Store' -delete",
     "test": "jest",
     "test:watch": "npm run test:continuous",
