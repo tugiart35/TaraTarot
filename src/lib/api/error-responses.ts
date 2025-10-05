@@ -7,7 +7,6 @@
 
 import { NextResponse } from 'next/server';
 
-
 export class ErrorResponse {
   private static isProduction(): boolean {
     return process.env.NODE_ENV === 'production';

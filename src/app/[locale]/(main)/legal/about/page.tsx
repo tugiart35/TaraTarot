@@ -19,7 +19,7 @@ export default function About() {
       {/* Mystical Background Effects */}
       <div className='absolute inset-0 bg-gradient-to-br from-purple-900/20 via-indigo-900/20 to-purple-800/20'></div>
       <div className='absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent'></div>
-      
+
       <main className='relative z-10 max-w-4xl mx-auto px-4 py-12'>
         {/* Header Section with Mystical Design */}
         <section className='mb-12 text-center'>
@@ -46,8 +46,8 @@ export default function About() {
             </div>
             <p className='text-cosmic-200 leading-relaxed'>
               Büşbüşkimki olarak, kullanıcılarımıza en doğru, güvenilir ve etik
-              tarot ile numeroloji analizlerini sunmayı amaçlıyoruz. Kişisel gelişim
-              ve farkındalık yolculuğunuzda yanınızdayız.
+              tarot ile numeroloji analizlerini sunmayı amaçlıyoruz. Kişisel
+              gelişim ve farkındalık yolculuğunuzda yanınızdayız.
             </p>
           </section>
 
@@ -59,8 +59,8 @@ export default function About() {
               <h2 className='text-2xl font-bold text-golden-300'>Vizyonumuz</h2>
             </div>
             <p className='text-cosmic-200 leading-relaxed'>
-              Modern teknolojiyi kullanarak, spiritüel danışmanlık ve kişisel analiz
-              hizmetlerini herkes için erişilebilir ve anlaşılır kılmak.
+              Modern teknolojiyi kullanarak, spiritüel danışmanlık ve kişisel
+              analiz hizmetlerini herkes için erişilebilir ve anlaşılır kılmak.
             </p>
           </section>
 
@@ -69,29 +69,37 @@ export default function About() {
               <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
                 <FaRocket className='w-5 h-5 text-purple-300' />
               </div>
-              <h2 className='text-2xl font-bold text-golden-300'>Temel Bilgiler</h2>
+              <h2 className='text-2xl font-bold text-golden-300'>
+                Temel Bilgiler
+              </h2>
             </div>
             <div className='grid md:grid-cols-3 gap-6'>
               <div className='text-center'>
                 <div className='w-16 h-16 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4'>
                   <FaShieldAlt className='w-8 h-8 text-white' />
                 </div>
-                <h3 className='text-lg font-semibold text-purple-300 mb-2'>Platform</h3>
+                <h3 className='text-lg font-semibold text-purple-300 mb-2'>
+                  Platform
+                </h3>
                 <p className='text-cosmic-200'>Büşbüşkimki</p>
               </div>
               <div className='text-center'>
                 <div className='w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4'>
                   <FaMapMarkerAlt className='w-8 h-8 text-white' />
                 </div>
-                <h3 className='text-lg font-semibold text-green-300 mb-2'>Kuruluş Yeri</h3>
+                <h3 className='text-lg font-semibold text-green-300 mb-2'>
+                  Kuruluş Yeri
+                </h3>
                 <p className='text-cosmic-200'>Podgorica, Montenegro</p>
               </div>
               <div className='text-center'>
                 <div className='w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4'>
                   <FaEnvelope className='w-8 h-8 text-white' />
                 </div>
-                <h3 className='text-lg font-semibold text-blue-300 mb-2'>İletişim</h3>
-                <a 
+                <h3 className='text-lg font-semibold text-blue-300 mb-2'>
+                  İletişim
+                </h3>
+                <a
                   href='mailto:info@busbuskimki.com'
                   className='text-golden-400 hover:text-golden-300 underline transition-colors'
                 >

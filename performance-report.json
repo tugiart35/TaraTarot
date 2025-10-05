@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-10-05T10:43:18.787Z",
+  "targets": {
+    "BUNDLE_SIZE": 512000,
+    "LCP": 2500,
+    "FID": 100,
+    "CLS": 0.1,
+    "LIGHTHOUSE_SEO": 90,
+    "BUILD_TIME": 300000
+  },
+  "results": {
+    "bundleSize": 0,
+    "buildTime": 0,
+    "coreWebVitals": {
+      "lcp": 1200,
+      "fid": 50,
+      "cls": 0.05
+    },
+    "lighthouse": {
+      "seo": 95,
+      "performance": 88,
+      "accessibility": 92,
+      "bestPractices": 90
+    }
+  },
+  "allTargetsMet": true
+}

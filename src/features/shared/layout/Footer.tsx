@@ -33,13 +33,12 @@ const Footer = () => {
     <footer className='relative overflow-hidden bg-gradient-to-br from-purple-900 via-indigo-900 to-purple-800'>
       {/* Glassmorphism overlay */}
       <div className='absolute inset-0 backdrop-blur-sm bg-gradient-to-br from-white/5 via-transparent to-white/5'></div>
-      
+
       {/* Content */}
       <div className='relative z-10 text-white'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16'>
           {/* Ana Footer Grid */}
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12'>
-            
             {/* Hakkımızda Bölümü - Enhanced */}
             <div className='lg:col-span-1'>
               <div className='mb-6'>
@@ -49,7 +48,10 @@ const Footer = () => {
                 <div className='w-12 h-1 bg-gradient-to-r from-purple-400 to-indigo-400 rounded-full mb-4'></div>
               </div>
               <p className='text-gray-300 text-sm leading-relaxed'>
-                {t('footer.about.description', 'Büşbüşkimki olarak, profesyonel tarot okuması ve numeroloji analizi hizmetleri sunuyoruz. Aşk rehberliği, kariyer rehberliği, günlük rehberlik ve detaylı numeroloji analizleri ile hayatınızın her alanında rehberlik alabilirsiniz.')}
+                {t(
+                  'footer.about.description',
+                  'Büşbüşkimki olarak, profesyonel tarot okuması ve numeroloji analizi hizmetleri sunuyoruz. Aşk rehberliği, kariyer rehberliği, günlük rehberlik ve detaylı numeroloji analizleri ile hayatınızın her alanında rehberlik alabilirsiniz.'
+                )}
               </p>
             </div>
 
@@ -114,37 +116,49 @@ const Footer = () => {
                   href='/legal/privacy-policy'
                   className='text-sm text-gray-300 hover:text-white transition-all duration-300 hover:translate-x-1 group'
                 >
-                  <span className='group-hover:text-purple-300'>{t('footer.legal.privacyPolicy', 'Gizlilik Politikası')}</span>
+                  <span className='group-hover:text-purple-300'>
+                    {t('footer.legal.privacyPolicy', 'Gizlilik Politikası')}
+                  </span>
                 </Link>
                 <Link
                   href='/legal/terms-of-use'
                   className='text-sm text-gray-300 hover:text-white transition-all duration-300 hover:translate-x-1 group'
                 >
-                  <span className='group-hover:text-purple-300'>{t('footer.legal.termsOfUse', 'Kullanım Şartları')}</span>
+                  <span className='group-hover:text-purple-300'>
+                    {t('footer.legal.termsOfUse', 'Kullanım Şartları')}
+                  </span>
                 </Link>
                 <Link
                   href='/legal/kvkk-disclosure'
                   className='text-sm text-gray-300 hover:text-white transition-all duration-300 hover:translate-x-1 group'
                 >
-                  <span className='group-hover:text-purple-300'>{t('footer.legal.kvkkDisclosure', 'KVKK Aydınlatma')}</span>
+                  <span className='group-hover:text-purple-300'>
+                    {t('footer.legal.kvkkDisclosure', 'KVKK Aydınlatma')}
+                  </span>
                 </Link>
                 <Link
                   href='/legal/cookie-policy'
                   className='text-sm text-gray-300 hover:text-white transition-all duration-300 hover:translate-x-1 group'
                 >
-                  <span className='group-hover:text-purple-300'>{t('footer.legal.cookiePolicy', 'Çerez Politikası')}</span>
+                  <span className='group-hover:text-purple-300'>
+                    {t('footer.legal.cookiePolicy', 'Çerez Politikası')}
+                  </span>
                 </Link>
                 <Link
                   href='/legal/disclaimer'
                   className='text-sm text-gray-300 hover:text-white transition-all duration-300 hover:translate-x-1 group'
                 >
-                  <span className='group-hover:text-purple-300'>{t('footer.legal.disclaimer', 'Sorumluluk Reddi')}</span>
+                  <span className='group-hover:text-purple-300'>
+                    {t('footer.legal.disclaimer', 'Sorumluluk Reddi')}
+                  </span>
                 </Link>
                 <Link
                   href='/legal/refund-policy'
                   className='text-sm text-gray-300 hover:text-white transition-all duration-300 hover:translate-x-1 group'
                 >
-                  <span className='group-hover:text-purple-300'>{t('footer.legal.refundPolicy', 'Geri Ödeme Politikası')}</span>
+                  <span className='group-hover:text-purple-300'>
+                    {t('footer.legal.refundPolicy', 'Geri Ödeme Politikası')}
+                  </span>
                 </Link>
               </div>
             </div>
@@ -184,14 +198,14 @@ const Footer = () => {
                   </span>
                 </div>
               </div>
-              
+
               {/* Ödeme Yöntemleri - Minimal Design */}
               <div className='mt-6'>
                 <h4 className='text-sm font-semibold text-gray-300 mb-3 flex items-center'>
                   <FaLock className='w-3 h-3 mr-1 text-green-400' />
                   {t('footer.payment.title', 'Ödeme Yöntemleri')}
                 </h4>
-                
+
                 {/* Minimal Payment Icons */}
                 <div className='flex flex-wrap items-center gap-3 mb-2'>
                   <SiVisa className='w-6 h-6 text-blue-500 hover:text-blue-400 transition-colors cursor-pointer' />
@@ -201,17 +215,21 @@ const Footer = () => {
                   <SiApplepay className='w-6 h-6 text-gray-700 hover:text-gray-600 transition-colors cursor-pointer' />
                   <SiGooglepay className='w-6 h-6 text-gray-600 hover:text-gray-500 transition-colors cursor-pointer' />
                 </div>
-                
+
                 {/* Minimal Security Badge */}
                 <div className='flex items-center space-x-1 text-xs text-gray-400'>
                   <FaCheckCircle className='w-3 h-3 text-green-400' />
-                  <span>{t('footer.payment.securePayment', 'Güvenli ödeme')}</span>
+                  <span>
+                    {t('footer.payment.securePayment', 'Güvenli ödeme')}
+                  </span>
                 </div>
               </div>
-              
+
               {/* Sosyal Medya İkonları - Enhanced */}
               <div className='mt-6'>
-                <h4 className='text-sm font-semibold text-gray-300 mb-3'>{t('footer.social.title', 'Sosyal Medya')}</h4>
+                <h4 className='text-sm font-semibold text-gray-300 mb-3'>
+                  {t('footer.social.title', 'Sosyal Medya')}
+                </h4>
                 <div className='flex space-x-3'>
                   <a
                     href='https://facebook.com/busbuskimki'
@@ -237,7 +255,6 @@ const Footer = () => {
                   >
                     <FaInstagram className='w-5 h-5 text-purple-300 group-hover:text-white transition-colors' />
                   </a>
-              
                 </div>
               </div>
             </div>
@@ -259,7 +276,10 @@ const Footer = () => {
                 </div>
                 <div className='text-center lg:text-right'>
                   <p className='text-xs text-gray-400 max-w-md'>
-                    {t('footer.copyright.disclaimer', 'Bu site eğlence amaçlıdır ve gerçek hayat tavsiyesi yerine geçmez.')}
+                    {t(
+                      'footer.copyright.disclaimer',
+                      'Bu site eğlence amaçlıdır ve gerçek hayat tavsiyesi yerine geçmez.'
+                    )}
                   </p>
                 </div>
               </div>

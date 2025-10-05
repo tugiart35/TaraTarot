@@ -145,14 +145,19 @@ export default function PrivacyPolicy() {
               )}
             </p>
             <div className='space-y-3'>
-              {t('footer.legalPages.privacyPolicy.sections.processingConditions.conditions', '').split(',').map((condition, index) => (
-                <div key={index} className='flex items-start space-x-3'>
-                  <div className='w-6 h-6 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full flex items-center justify-center text-white text-sm font-bold'>
-                    {index + 1}
+              {t(
+                'footer.legalPages.privacyPolicy.sections.processingConditions.conditions',
+                ''
+              )
+                .split(',')
+                .map((condition, index) => (
+                  <div key={index} className='flex items-start space-x-3'>
+                    <div className='w-6 h-6 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full flex items-center justify-center text-white text-sm font-bold'>
+                      {index + 1}
+                    </div>
+                    <p className='text-cosmic-200'>{condition.trim()}</p>
                   </div>
-                  <p className='text-cosmic-200'>{condition.trim()}</p>
-                </div>
-              ))}
+                ))}
             </div>
             <div className='mt-4 p-4 bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-lg border border-green-500/20'>
               <p className='text-cosmic-200'>
@@ -310,9 +315,14 @@ export default function PrivacyPolicy() {
                   )}
                 </h3>
                 <ul className='text-cosmic-200 space-y-1'>
-                  {t('footer.legalPages.privacyPolicy.sections.userRights.basicRights.rights', '').split(',').map((right, index) => (
-                    <li key={index}>• {right.trim()}</li>
-                  ))}
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.userRights.basicRights.rights',
+                    ''
+                  )
+                    .split(',')
+                    .map((right, index) => (
+                      <li key={index}>• {right.trim()}</li>
+                    ))}
                 </ul>
               </div>
               <div className='bg-gradient-to-r from-blue-500/10 to-cyan-500/10 p-4 rounded-lg border border-blue-500/20'>
@@ -323,9 +333,14 @@ export default function PrivacyPolicy() {
                   )}
                 </h3>
                 <ul className='text-cosmic-200 space-y-1'>
-                  {t('footer.legalPages.privacyPolicy.sections.userRights.advancedRights.rights', '').split(',').map((right, index) => (
-                    <li key={index}>• {right.trim()}</li>
-                  ))}
+                  {t(
+                    'footer.legalPages.privacyPolicy.sections.userRights.advancedRights.rights',
+                    ''
+                  )
+                    .split(',')
+                    .map((right, index) => (
+                      <li key={index}>• {right.trim()}</li>
+                    ))}
                 </ul>
               </div>
             </div>

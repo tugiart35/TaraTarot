@@ -1,15 +1,15 @@
 /*
  * Gerçek zamanlı sistem performans monitörü
- * 
+ *
  * Bu dosya, sistem performans metriklerini gerçek zamanlı olarak izlemek için kullanılır.
  * Admin panelinde gösterilecek performans verileri için API sağlar.
  */
 
 import { useState, useEffect } from 'react';
 import { supabase } from '@/lib/supabase/client';
-import { 
-  SystemPerformanceMetrics, 
-  logSystemPerformance 
+import {
+  SystemPerformanceMetrics,
+  logSystemPerformance,
 } from '@/lib/admin/system-performance';
 
 /**
@@ -29,7 +29,9 @@ export async function getActiveUserCount(): Promise<number> {
     if (error) {
       // Rate limit hatası için özel mesaj
       if (error.message && error.message.includes('Failed to fetch')) {
-        console.warn('Supabase rate limit - aktif kullanıcı sayısı alınamadı, varsayılan değer kullanılıyor');
+        console.warn(
+          'Supabase rate limit - aktif kullanıcı sayısı alınamadı, varsayılan değer kullanılıyor'
+        );
         return 0;
       }
       console.error('Supabase get active user count failed', error);
@@ -68,7 +70,9 @@ export async function getAverageResponseTime(): Promise<number> {
     if (error) {
       // Rate limit hatası için özel mesaj
       if (error.message && error.message.includes('Failed to fetch')) {
-        console.warn('Supabase rate limit - ortalama yanıt süresi alınamadı, varsayılan değer kullanılıyor');
+        console.warn(
+          'Supabase rate limit - ortalama yanıt süresi alınamadı, varsayılan değer kullanılıyor'
+        );
         return 45; // Varsayılan değer
       }
       console.error('Supabase get average response time failed', error);
@@ -81,12 +85,15 @@ export async function getAverageResponseTime(): Promise<number> {
 
     // Sıfır olmayan değerleri filtrele ve ortalama hesapla
     const validTimes = data.filter((item: any) => item.response_time > 0);
-    
+
     if (validTimes.length === 0) {
       return 45; // Varsayılan değer
     }
 
-    const sum = validTimes.reduce((acc: number, item: any) => acc + item.response_time, 0);
+    const sum = validTimes.reduce(
+      (acc: number, item: any) => acc + item.response_time,
+      0
+    );
     return Math.round(sum / validTimes.length);
   } catch (error) {
     console.error('Error getting average response time:', error);
@@ -120,13 +127,14 @@ export async function getCpuUsage(): Promise<number> {
 export async function collectAndLogSystemPerformance(): Promise<SystemPerformanceMetrics | null> {
   try {
     // Tüm metrikleri topla
-    const [uptime, responseTime, memoryUsage, cpuUsage, activeUsers] = await Promise.all([
-      getServerUptime(),
-      getAverageResponseTime(),
-      getMemoryUsage(),
-      getCpuUsage(),
-      getActiveUserCount(),
-    ]);
+    const [uptime, responseTime, memoryUsage, cpuUsage, activeUsers] =
+      await Promise.all([
+        getServerUptime(),
+        getAverageResponseTime(),
+        getMemoryUsage(),
+        getCpuUsage(),
+        getActiveUserCount(),
+      ]);
 
     // Metrikleri kaydet
     const metrics = {
@@ -138,7 +146,7 @@ export async function collectAndLogSystemPerformance(): Promise<SystemPerformanc
     };
 
     const success = await logSystemPerformance(metrics);
-    
+
     if (!success) {
       console.error('Failed to log system performance metrics');
       return null;
@@ -158,16 +166,23 @@ export async function collectAndLogSystemPerformance(): Promise<SystemPerformanc
  * Düzenli aralıklarla sistem performans metriklerini toplar ve kaydeder
  * Bu fonksiyon genellikle bir background job olarak çalıştırılır
  */
-export function startPerformanceMonitoring(intervalMinutes = 5): NodeJS.Timeout {
-  console.log(`Starting system performance monitoring every ${intervalMinutes} minutes`);
-  
+export function startPerformanceMonitoring(
+  intervalMinutes = 5
+): NodeJS.Timeout {
+  console.log(
+    `Starting system performance monitoring every ${intervalMinutes} minutes`
+  );
+
   // İlk çalıştırma
   collectAndLogSystemPerformance();
-  
+
   // Düzenli aralıklarla çalıştır
-  return setInterval(() => {
-    collectAndLogSystemPerformance();
-  }, intervalMinutes * 60 * 1000);
+  return setInterval(
+    () => {
+      collectAndLogSystemPerformance();
+    },
+    intervalMinutes * 60 * 1000
+  );
 }
 
 /**
@@ -187,25 +202,32 @@ export function useRealSystemMonitoring(intervalMinutes = 1) {
   const [intervalId, setIntervalId] = useState<NodeJS.Timeout | null>(null);
 
   const startMonitoring = () => {
-    if (isMonitoring) return;
-    
+    if (isMonitoring) {
+      return;
+    }
+
     console.log('Starting real-time system monitoring');
     setIsMonitoring(true);
-    
+
     // İlk metrikleri topla
     collectAndLogSystemPerformance().then(setMetrics);
-    
+
     // Düzenli aralıklarla topla
-    const id = setInterval(() => {
-      collectAndLogSystemPerformance().then(setMetrics);
-    }, intervalMinutes * 60 * 1000);
-    
+    const id = setInterval(
+      () => {
+        collectAndLogSystemPerformance().then(setMetrics);
+      },
+      intervalMinutes * 60 * 1000
+    );
+
     setIntervalId(id);
   };
 
   const stopMonitoring = () => {
-    if (!isMonitoring || !intervalId) return;
-    
+    if (!isMonitoring || !intervalId) {
+      return;
+    }
+
     console.log('Stopping real-time system monitoring');
     setIsMonitoring(false);
     clearInterval(intervalId);
@@ -218,10 +240,16 @@ export function useRealSystemMonitoring(intervalMinutes = 1) {
     return newMetrics;
   };
 
-  const saveMetrics = async (customMetrics?: Partial<SystemPerformanceMetrics>) => {
-    const metricsToSave = customMetrics ? { ...metrics, ...customMetrics } : metrics;
-    if (!metricsToSave) return false;
-    
+  const saveMetrics = async (
+    customMetrics?: Partial<SystemPerformanceMetrics>
+  ) => {
+    const metricsToSave = customMetrics
+      ? { ...metrics, ...customMetrics }
+      : metrics;
+    if (!metricsToSave) {
+      return false;
+    }
+
     return await logSystemPerformance({
       uptime: metricsToSave.uptime || 0,
       responseTime: metricsToSave.responseTime || 0,

@@ -73,11 +73,11 @@ export class AdminErrorService {
       code,
       message,
     };
-    
+
     if (details) {
       error.details = details;
     }
-    
+
     return error;
   }
 
@@ -86,7 +86,7 @@ export class AdminErrorService {
    */
   static handleSupabaseError(error: Error | unknown): string {
     const errorObj = error as any;
-    
+
     if (errorObj.code === 'PGRST116') {
       return 'Aradığınız kayıt bulunamadı.';
     } else if (errorObj.code === 'PGRST301') {
@@ -107,7 +107,7 @@ export class AdminErrorService {
    */
   static handleNetworkError(error: Error | unknown): string {
     const errorObj = error as any;
-    
+
     if (errorObj.name === 'NetworkError') {
       return 'Ağ bağlantısı hatası. Lütfen internet bağlantınızı kontrol edin.';
     } else if (errorObj.name === 'TimeoutError') {
@@ -124,7 +124,7 @@ export class AdminErrorService {
    */
   static handleValidationError(error: Error | unknown): string {
     const errorObj = error as any;
-    
+
     if (errorObj.message?.includes('required')) {
       return 'Gerekli alanlar doldurulmalıdır.';
     } else if (errorObj.message?.includes('email')) {

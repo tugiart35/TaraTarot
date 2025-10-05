@@ -3,9 +3,7 @@
 import type { TarotCard } from '@/types/tarot';
 import { createTarotReadingComponent } from '@/features/tarot/shared/components';
 import { createRelationshipProblemsConfig } from '@/features/tarot/shared/config';
-import {
-  getRelationshipProblemsMeaningByCardAndPosition,
-} from '@/features/tarot/lib/relationship-problems/position-meanings-index';
+import { getRelationshipProblemsMeaningByCardAndPosition } from '@/features/tarot/lib/relationship-problems/position-meanings-index';
 
 const RelationshipProblemsReading = createTarotReadingComponent({
   getConfig: () => createRelationshipProblemsConfig(),

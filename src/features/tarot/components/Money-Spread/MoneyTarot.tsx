@@ -3,9 +3,7 @@
 import type { TarotCard } from '@/types/tarot';
 import { createTarotReadingComponent } from '@/features/tarot/shared/components';
 import { createMoneyConfig } from '@/features/tarot/shared/config';
-import {
-  getMoneyMeaningByCardAndPosition,
-} from '@/features/tarot/lib/money/position-meanings-index';
+import { getMoneyMeaningByCardAndPosition } from '@/features/tarot/lib/money/position-meanings-index';
 
 const MoneyReading = createTarotReadingComponent({
   getConfig: () => createMoneyConfig(),

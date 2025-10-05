@@ -1,19 +1,21 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { 
-  fetchCurrentSystemPerformance, 
+import {
+  fetchCurrentSystemPerformance,
   fetchAllPerformanceMetrics,
   SystemPerformanceMetrics,
-  PerformanceHistory
+  PerformanceHistory,
 } from '@/lib/admin/system-performance';
 
 /**
  * Admin paneli için sistem performans metriklerini çeken hook
  */
 export function usePerformanceMonitor(refreshInterval = 60000) {
-  const [currentMetrics, setCurrentMetrics] = useState<SystemPerformanceMetrics | null>(null);
-  const [performanceHistory, setPerformanceHistory] = useState<PerformanceHistory | null>(null);
+  const [currentMetrics, setCurrentMetrics] =
+    useState<SystemPerformanceMetrics | null>(null);
+  const [performanceHistory, setPerformanceHistory] =
+    useState<PerformanceHistory | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -26,13 +28,13 @@ export function usePerformanceMonitor(refreshInterval = 60000) {
       try {
         setLoading(true);
         setError(null);
-        
+
         // Anlık metrikleri çek
         const metrics = await fetchCurrentSystemPerformance();
         if (isMounted) {
           setCurrentMetrics(metrics);
         }
-        
+
         // Tüm performans geçmişini çek
         const history = await fetchAllPerformanceMetrics();
         if (isMounted) {
@@ -72,15 +74,15 @@ export function usePerformanceMonitor(refreshInterval = 60000) {
     try {
       setLoading(true);
       setError(null);
-      
+
       // Anlık metrikleri çek
       const metrics = await fetchCurrentSystemPerformance();
       setCurrentMetrics(metrics);
-      
+
       // Tüm performans geçmişini çek
       const history = await fetchAllPerformanceMetrics();
       setPerformanceHistory(history);
-      
+
       return true;
     } catch (err) {
       console.error('Performance metrics refresh error:', err);

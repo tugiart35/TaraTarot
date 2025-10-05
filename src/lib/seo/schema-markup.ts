@@ -116,28 +116,30 @@ export interface TarotReadingSchema {
  */
 export function generateOrganizationSchema(): OrganizationSchema {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://busbuskimki.com';
-  
+
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Busbuskimki - Tarot & Numerology',
-    description: 'Professional tarot card readings and numerology services. Get personalized insights about love, career, and life guidance.',
+    name: 'BüşBüşKimKi Tarot Okuyucusu',
+    description:
+      'Profesyonel tarot okuma ve numeroloji hizmetleri. Aşk, kariyer ve yaşam rehberliği için kişiselleştirilmiş içgörüler alın.',
     url: baseUrl,
-    logo: `${baseUrl}/icons/logo-512.png`,
+    logo: 'https://busbuskimki.com/assets/logo/logo.png', // Logo URL'i
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+382 (67) 010176',
-      contactType: 'customer service'
+      telephone: '+382 67 010176',
+      contactType: 'customer service',
     },
     sameAs: [
-      'https://www.facebook.com/busbuskimki',
-      'https://www.instagram.com/busbuskimki'
+      'https://facebook.com/busbuskimki',
+      'https://twitter.com/busbuskimki',
+      'https://instagram.com/busbuskimki',
     ],
     address: {
       '@type': 'PostalAddress',
       addressCountry: 'ME',
-      addressLocality: 'Montenegro'
-    }
+      addressLocality: 'Podgorica - Montenegro',
+    },
   };
 }
 
@@ -146,23 +148,24 @@ export function generateOrganizationSchema(): OrganizationSchema {
  */
 export function generateWebSiteSchema(): WebSiteSchema {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://busbuskimki.com';
-  
+
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'Busbuskimki - Tarot & Numerology',
+    name: 'BüşBüşKimKi Tarot Okuyucusu',
     url: baseUrl,
-    description: 'Professional tarot card readings and numerology services. Get personalized insights about love, career, and life guidance.',
+    description:
+      'Profesyonel tarot okuma ve numeroloji hizmetleri. Aşk, kariyer ve yaşam rehberliği için kişiselleştirilmiş içgörüler alın.',
     publisher: {
       '@type': 'Organization',
-      name: 'Busbuskimki'
+      name: 'BüşBüşKimKi Tarot Okuyucusu',
     },
     potentialAction: {
       '@type': 'SearchAction',
       target: `${baseUrl}/search?q={search_term_string}`,
-      'query-input': 'required name=search_term_string'
+      'query-input': 'required name=search_term_string',
     },
-    inLanguage: ['tr', 'en', 'sr']
+    inLanguage: ['tr-TR', 'en-US', 'sr-RS'],
   };
 }
 
@@ -171,56 +174,60 @@ export function generateWebSiteSchema(): WebSiteSchema {
  */
 export function generateServiceSchema(): ServiceSchema {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://busbuskimki.com';
-  
+
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: 'Tarot & Numerology Services',
-    description: 'Professional tarot card readings and numerology services for love, career, and life guidance.',
+    name: 'Tarot & Numeroloji Hizmetleri',
+    description:
+      'Aşk, kariyer ve yaşam rehberliği için profesyonel tarot okuma ve numeroloji hizmetleri.',
     provider: {
       '@type': 'Organization',
-      name: 'Busbuskimki',
-      url: baseUrl
+      name: 'BüşBüşKimKi Tarot Okuyucusu',
+      url: baseUrl,
     },
     serviceType: 'Personal Services',
     areaServed: 'Worldwide',
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Tarot & Numerology Services',
+      name: 'Tarot & Numeroloji Hizmetleri',
       itemListElement: [
         {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Love Tarot Reading',
-            description: 'Get insights about your love life and relationships'
-          }
+            name: 'Aşk Tarot Okuması',
+            description:
+              'Aşk hayatınız ve ilişkileriniz hakkında içgörüler alın',
+          },
         },
         {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Career Tarot Reading',
-            description: 'Discover your career path and professional opportunities'
-          }
+            name: 'Kariyer Tarot Okuması',
+            description: 'Kariyer yolunuzu ve profesyonel fırsatları keşfedin',
+          },
         },
         {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Numerology Reading',
-            description: 'Understand your life path through numerology'
-          }
-        }
-      ]
-    }
+            name: 'Numeroloji Okuması',
+            description: 'Numeroloji ile yaşam yolunuzu anlayın',
+          },
+        },
+      ],
+    },
   };
 }
 
 /**
  * Generate Breadcrumb schema for navigation
  */
-export function generateBreadcrumbSchema(items: Array<{name: string, url: string}>): BreadcrumbSchema {
+export function generateBreadcrumbSchema(
+  items: Array<{ name: string; url: string }>
+): BreadcrumbSchema {
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -228,8 +235,8 @@ export function generateBreadcrumbSchema(items: Array<{name: string, url: string
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
-      item: item.url
-    }))
+      item: item.url,
+    })),
   };
 }
 
@@ -246,76 +253,84 @@ export function generateFAQSchema(): FAQSchema {
         name: 'How does tarot reading work?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Tarot reading is a form of divination that uses a deck of tarot cards to gain insight into various aspects of life, including love, career, and personal growth. Our professional readers interpret the cards to provide guidance and clarity.'
-        }
+          text: 'Tarot reading is a form of divination that uses a deck of tarot cards to gain insight into various aspects of life, including love, career, and personal growth. Our professional readers interpret the cards to provide guidance and clarity.',
+        },
       },
       {
         '@type': 'Question',
         name: 'What is numerology?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Numerology is the study of numbers and their influence on human life. By analyzing your birth date and name, numerology can reveal insights about your personality, life path, and future opportunities.'
-        }
+          text: 'Numerology is the study of numbers and their influence on human life. By analyzing your birth date and name, numerology can reveal insights about your personality, life path, and future opportunities.',
+        },
       },
       {
         '@type': 'Question',
         name: 'Are the readings accurate?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'While tarot and numerology provide guidance and insights, the accuracy depends on various factors including the question asked, the interpretation, and how the guidance is applied to your life. Our readers are experienced professionals who provide thoughtful, personalized interpretations.'
-        }
+          text: 'While tarot and numerology provide guidance and insights, the accuracy depends on various factors including the question asked, the interpretation, and how the guidance is applied to your life. Our readers are experienced professionals who provide thoughtful, personalized interpretations.',
+        },
       },
       {
         '@type': 'Question',
         name: 'How long does a reading take?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Reading times vary depending on the type of reading. Simple spreads take 5-10 minutes, while comprehensive readings can take 15-30 minutes. You can choose the reading type that fits your schedule and needs.'
-        }
+          text: 'Reading times vary depending on the type of reading. Simple spreads take 5-10 minutes, while comprehensive readings can take 15-30 minutes. You can choose the reading type that fits your schedule and needs.',
+        },
       },
       {
         '@type': 'Question',
         name: 'Can I get a reading in my language?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes! Our service is available in Turkish, English, and Serbian. You can select your preferred language when starting a reading.'
-        }
-      }
-    ]
+          text: 'Yes! Our service is available in Turkish, English, and Serbian. You can select your preferred language when starting a reading.',
+        },
+      },
+    ],
   };
 }
 
 /**
  * Generate Tarot Reading schema for specific readings
  */
-export function generateTarotReadingSchema(readingType: string, price?: string): TarotReadingSchema {
+export function generateTarotReadingSchema(
+  readingType: string,
+  price?: string
+): TarotReadingSchema {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://busbuskimki.com';
-  
+
   const readingNames: Record<string, string> = {
     'love-spread': 'Love Tarot Reading',
     'career-spread': 'Career Tarot Reading',
     'situation-analysis': 'Situation Analysis Reading',
     'new-lover': 'New Lover Reading',
-    'relationship-problems': 'Relationship Problems Reading'
+    'relationship-problems': 'Relationship Problems Reading',
   };
-  
+
   const readingDescriptions: Record<string, string> = {
-    'love-spread': 'Get insights about your love life, relationships, and romantic future',
-    'career-spread': 'Discover your career path, professional opportunities, and work-life balance',
-    'situation-analysis': 'Analyze your current situation and get guidance for the future',
+    'love-spread':
+      'Get insights about your love life, relationships, and romantic future',
+    'career-spread':
+      'Discover your career path, professional opportunities, and work-life balance',
+    'situation-analysis':
+      'Analyze your current situation and get guidance for the future',
     'new-lover': 'Explore potential new romantic connections and relationships',
-    'relationship-problems': 'Address relationship challenges and find solutions'
+    'relationship-problems':
+      'Address relationship challenges and find solutions',
   };
-  
+
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
     name: readingNames[readingType] || 'Tarot Reading',
-    description: readingDescriptions[readingType] || 'Professional tarot reading service',
+    description:
+      readingDescriptions[readingType] || 'Professional tarot reading service',
     provider: {
       '@type': 'Organization',
       name: 'Busbuskimki',
-      url: baseUrl
+      url: baseUrl,
     },
     serviceType: 'Tarot Reading',
     category: 'Personal Services',
@@ -323,8 +338,8 @@ export function generateTarotReadingSchema(readingType: string, price?: string):
       '@type': 'Offer',
       price: price || '5',
       priceCurrency: 'TRY',
-      availability: 'https://schema.org/InStock'
-    }
+      availability: 'https://schema.org/InStock',
+    },
   };
 }
 
@@ -336,7 +351,7 @@ export function generateHomepageSchemas() {
     generateOrganizationSchema(),
     generateWebSiteSchema(),
     generateServiceSchema(),
-    generateFAQSchema()
+    generateFAQSchema(),
   ];
 }
 
@@ -345,14 +360,16 @@ export function generateHomepageSchemas() {
  */
 export function generatePageSchemas(pageType: string, pageData?: any) {
   const schemas: any[] = [generateOrganizationSchema()];
-  
+
   if (pageType === 'tarot-reading' && pageData?.readingType) {
-    schemas.push(generateTarotReadingSchema(pageData.readingType, pageData.price));
+    schemas.push(
+      generateTarotReadingSchema(pageData.readingType, pageData.price)
+    );
   }
-  
+
   if (pageData?.breadcrumbs) {
     schemas.push(generateBreadcrumbSchema(pageData.breadcrumbs));
   }
-  
+
   return schemas;
 }

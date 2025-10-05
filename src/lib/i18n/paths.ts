@@ -1,169 +1,134 @@
-/*
-info:
-Bağlantılı dosyalar:
-- ../config.ts: i18n yapılandırması için (gerekli)
+import { createNavigation } from 'next-intl/navigation';
 
-Dosyanın amacı:
-- Locale-aware path helper fonksiyonları
-- URL oluşturma ve yönlendirme için
-- Language switcher için path korunması
+// Supported locales
+export const locales = ['tr', 'en', 'sr'] as const;
+export type Locale = (typeof locales)[number];
 
-Supabase değişkenleri ve tabloları:
-- Yok (path helper)
+// Create navigation helpers
+export const { Link, redirect, usePathname, useRouter } = createNavigation({
+  locales,
+});
 
-Geliştirme önerileri:
-- Dynamic route parametreleri desteği
-- Query string korunması
+// Card URL patterns for each locale
+export const cardUrlPatterns = {
+  tr: '/kartlar',
+  en: '/cards',
+  sr: '/kartice',
+} as const;
 
-Tespit edilen hatalar:
-- Yok
+// Generate card URL for a specific locale
+export function getCardUrl(slug: string, locale: Locale): string {
+  const basePath = cardUrlPatterns[locale];
+  return `/${locale}${basePath}/${slug}`;
+}
 
-Kullanım durumu:
-- Aktif kullanımda
-*/
+// Generate all locale URLs for a card
+export function getAllCardUrls(slug: string) {
+  return {
+    tr: getCardUrl(slug, 'tr'),
+    en: getCardUrl(slug, 'en'),
+    sr: getCardUrl(slug, 'sr'),
+  };
+}
 
-import { locales, defaultLocale, type Locale } from './config';
-
-// Path'ten locale çıkarma
-export function getLocaleFromPath(pathname: string): Locale {
+// Extract locale from pathname
+export function getLocaleFromPathname(pathname: string): Locale | null {
   const segments = pathname.split('/');
-  const firstSegment = segments[1];
+  const locale = segments[1];
 
-  if (locales.includes(firstSegment as Locale)) {
-    return firstSegment as Locale;
+  if (locales.includes(locale as Locale)) {
+    return locale as Locale;
   }
 
-  return defaultLocale;
+  return null;
 }
 
-// Path'ten locale kaldırma
-export function removeLocaleFromPath(pathname: string): string {
-  const segments = pathname.split('/');
-  const firstSegment = segments[1];
+// Extract slug from card pathname
+export function getSlugFromCardPathname(
+  pathname: string,
+  locale: Locale
+): string | null {
+  const basePath = cardUrlPatterns[locale];
+  const pattern = new RegExp(`^/${locale}${basePath}/(.+)$`);
+  const match = pathname.match(pattern);
 
-  if (locales.includes(firstSegment as Locale)) {
-    return '/' + segments.slice(2).join('/');
-  }
-
-  return pathname;
+  return match ? match[1] || null : null;
 }
 
-// Locale ile path oluşturma
-export function createLocalizedPath(pathname: string, locale: Locale): string {
-  const cleanPath = removeLocaleFromPath(pathname);
-
-  if (locale === defaultLocale) {
-    return cleanPath === '/' ? '/' : cleanPath;
-  }
-
-  return `/${locale}${cleanPath === '/' ? '' : cleanPath}`;
-}
-
-// Tüm diller için path'ler oluşturma
-export function createAllLocalizedPaths(
-  pathname: string
-): Record<Locale, string> {
-  const result = {} as Record<Locale, string>;
-
-  locales.forEach(locale => {
-    result[locale] = createLocalizedPath(pathname, locale);
+// Check if pathname is a card page
+export function isCardPage(pathname: string): boolean {
+  return locales.some(locale => {
+    const basePath = cardUrlPatterns[locale];
+    const pattern = new RegExp(`^/${locale}${basePath}/.+$`);
+    return pattern.test(pathname);
   });
-
-  return result;
 }
 
-// SEO-friendly URL mapping'leri
-const seoFriendlyMappings = {
-  tr: {
-    '/': '/anasayfa',
-    '/anasayfa': '/anasayfa',
-    '/tarotokumasi': '/tarot-okuma',
-    '/tarot-okuma': '/tarot-okuma',
-    '/numeroloji': '/numeroloji',
-    '/dashboard': '/panel',
-    '/panel': '/panel',
-    '/auth': '/giris',
-    '/giris': '/giris'
-  },
-  en: {
-    '/': '/home',
-    '/home': '/home',
-    '/anasayfa': '/home',
-    '/tarotokumasi': '/tarot-reading',
-    '/tarot-reading': '/tarot-reading',
-    '/tarot-okuma': '/tarot-reading',
-    '/numeroloji': '/numerology',
-    '/numerology': '/numerology',
-    '/dashboard': '/dashboard',
-    '/auth': '/login',
-    '/login': '/login'
-  },
-  sr: {
-    '/': '/pocetna',
-    '/pocetna': '/pocetna',
-    '/anasayfa': '/pocetna',
-    '/home': '/pocetna',
-    '/tarotokumasi': '/tarot-citanje',
-    '/tarot-citanje': '/tarot-citanje',
-    '/tarot-okuma': '/tarot-citanje',
-    '/tarot-reading': '/tarot-citanje',
-    '/numeroloji': '/numerologija',
-    '/numerologija': '/numerologija',
-    '/numerology': '/numerologija',
-    '/dashboard': '/panel',
-    '/panel': '/panel',
-    '/auth': '/prijava',
-    '/prijava': '/prijava',
-    '/giris': '/prijava',
-    '/login': '/prijava'
-  }
-};
+// Generate hreflang URLs for a card
+export function generateHreflangUrls(slug: string) {
+  const urls = getAllCardUrls(slug);
 
-// SEO-friendly path mapping
-function getSeoFriendlyPath(locale: Locale, path: string): string {
-  const mapping = seoFriendlyMappings[locale];
-  return mapping?.[path] || path;
+  return [
+    { hreflang: 'tr', href: urls.tr },
+    { hreflang: 'en', href: urls.en },
+    { hreflang: 'sr', href: urls.sr },
+    { hreflang: 'x-default', href: urls.en }, // Default to English
+  ];
 }
 
-// Language switcher için path korunması - SEO-friendly URL mapping ile
-export function getLanguageSwitcherPaths(currentPath: string): Array<{
-  locale: Locale;
-  path: string;
-  name: string;
-  nativeName: string;
-}> {
-  const cleanPath = removeLocaleFromPath(currentPath);
+// Card name mapping for different locales
+export const cardNameMapping = {
+  'the-fool': {
+    tr: 'joker',
+    en: 'the-fool',
+    sr: 'joker',
+  },
+  'the-high-priestess': {
+    tr: 'yuksek-rahibe',
+    en: 'the-high-priestess',
+    sr: 'visoka-svestenica',
+  },
+} as const;
 
-  return locales.map(locale => {
-    // SEO-friendly path mapping uygula
-    const seoFriendlyPath = getSeoFriendlyPath(locale, cleanPath);
-    
-    // Ana sayfa için özel durum - her dil için doğru ana sayfa path'i
-    let fullPath: string;
-    
-    if (cleanPath === '/' || cleanPath === '') {
-      // Ana sayfa için her dil için doğru path
-      fullPath = `/${locale}${getSeoFriendlyPath(locale, '/')}`;
-    } else {
-      // Diğer sayfalar için SEO-friendly path
-      fullPath = `/${locale}${seoFriendlyPath}`;
+// Get card slug for specific locale
+export function getCardSlugForLocale(cardKey: string, locale: Locale): string {
+  const mapping = cardNameMapping[cardKey as keyof typeof cardNameMapping];
+  return mapping?.[locale] || cardKey;
+}
+
+// Get card key from slug and locale
+export function getCardKeyFromSlug(
+  slug: string,
+  locale: Locale
+): string | null {
+  for (const [key, mapping] of Object.entries(cardNameMapping)) {
+    if (mapping[locale] === slug) {
+      return key;
     }
+  }
+  return null;
+}
 
-    return {
-      locale,
-      path: fullPath,
-      name:
-        locale === 'tr'
-          ? 'Türkçe'
-          : locale === 'en'
-            ? 'English'
-            : 'Serbian (Latin)',
-      nativeName:
-        locale === 'tr'
-          ? 'Türkçe'
-          : locale === 'en'
-            ? 'English'
-            : 'Srpski (Latinica)',
-    };
-  });
+// Language switcher paths for current page
+export function getLanguageSwitcherPaths(currentPathname: string) {
+  const currentLocale = getLocaleFromPathname(currentPathname);
+  if (!currentLocale) {
+    return null;
+  }
+
+  // Extract the path without locale
+  const pathWithoutLocale = currentPathname.replace(`/${currentLocale}`, '');
+
+  // Generate paths for all locales
+  const paths: Record<Locale, string> = {} as Record<Locale, string>;
+
+  for (const locale of locales) {
+    paths[locale] = `/${locale}${pathWithoutLocale}`;
+  }
+
+  return {
+    currentLocale,
+    paths,
+    currentPath: currentPathname,
+  };
 }

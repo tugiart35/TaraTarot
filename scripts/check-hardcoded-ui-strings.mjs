@@ -93,13 +93,7 @@ const EXCLUDE_PATTERNS = [
 ];
 
 // Hariç tutulacak dizinler
-const EXCLUDE_DIRS = [
-  'node_modules',
-  '.next',
-  '.git',
-  'dist',
-  'build',
-];
+const EXCLUDE_DIRS = ['node_modules', '.next', '.git', 'dist', 'build'];
 
 class HardcodedStringChecker {
   constructor() {
@@ -125,11 +119,11 @@ class HardcodedStringChecker {
   // Dizin kontrolü
   async checkDirectory(dirPath) {
     const items = readdirSync(dirPath);
-    
+
     for (const item of items) {
       const fullPath = join(dirPath, item);
       const stat = statSync(fullPath);
-      
+
       if (stat.isDirectory()) {
         if (!this.shouldExcludeDir(item)) {
           await this.checkDirectory(fullPath);
@@ -147,14 +141,14 @@ class HardcodedStringChecker {
     try {
       const content = readFileSync(filePath, 'utf8');
       this.fileCount++;
-      
+
       // Hardcoded string'leri bul
       for (const pattern of HARDCODED_PATTERNS) {
         const matches = content.matchAll(pattern);
-        
+
         for (const match of matches) {
           const string = match[1] || match[0];
-          
+
           if (this.isHardcodedString(string)) {
             this.violations.push({
               file: filePath,
@@ -174,7 +168,7 @@ class HardcodedStringChecker {
   // Hardcoded string kontrolü
   isHardcodedString(str) {
     if (!str || typeof str !== 'string') return false;
-    
+
     // Whitelist kontrolü
     for (const whitelistItem of WHITELIST) {
       if (typeof whitelistItem === 'string') {
@@ -183,25 +177,25 @@ class HardcodedStringChecker {
         if (whitelistItem.test(str)) return false;
       }
     }
-    
+
     // Minimum uzunluk kontrolü
     if (str.length < 3) return false;
-    
+
     // Sadece boşluk kontrolü
     if (str.trim().length === 0) return false;
-    
+
     // HTML tag kontrolü
     if (str.startsWith('<') && str.endsWith('>')) return false;
-    
+
     // URL kontrolü
     if (str.startsWith('http') || str.startsWith('www')) return false;
-    
+
     // Email kontrolü
     if (str.includes('@')) return false;
-    
+
     // CSS class kontrolü
     if (/^[a-z-]+$/.test(str)) return false;
-    
+
     return true;
   }
 
@@ -213,8 +207,10 @@ class HardcodedStringChecker {
 
   // Dizin hariç tutulmalı mı?
   shouldExcludeDir(dirname) {
-    return EXCLUDE_DIRS.includes(dirname) || 
-           EXCLUDE_PATTERNS.some(pattern => pattern.test(dirname));
+    return (
+      EXCLUDE_DIRS.includes(dirname) ||
+      EXCLUDE_PATTERNS.some(pattern => pattern.test(dirname))
+    );
   }
 
   // Dizin var mı?
@@ -248,7 +244,7 @@ class HardcodedStringChecker {
 
     if (this.violations.length > 0) {
       console.log('❌ Hardcoded UI stringleri bulundu:\n');
-      
+
       // Dosya bazında grupla
       const violationsByFile = this.violations.reduce((acc, violation) => {
         if (!acc[violation.file]) {
@@ -283,7 +279,7 @@ class HardcodedStringChecker {
 async function main() {
   const checker = new HardcodedStringChecker();
   const success = await checker.check();
-  
+
   if (!success) {
     console.log('❌ Hardcoded string kontrolü başarısız!');
     process.exit(1);

@@ -3,10 +3,12 @@ import translate from '@vitalets/google-translate-api';
 
 const SRC = process.argv[2];
 const DST = process.argv[3];
-const TO  = process.argv[4] || 'en';
+const TO = process.argv[4] || 'en';
 
 if (!SRC || !DST) {
-  console.error('Usage: node scripts/translate-json-google.mjs <src.json> <dst.json> [to]');
+  console.error(
+    'Usage: node scripts/translate-json-google.mjs <src.json> <dst.json> [to]'
+  );
   process.exit(1);
 }
 
@@ -16,10 +18,20 @@ async function gTranslate(text, to) {
   const parts = text.split(PLACEHOLDER_RE);
   const out = [];
   for (const seg of parts) {
-    if (!seg) { out.push(seg); continue; }
-    if (PLACEHOLDER_RE.test(seg) || !/[A-Za-zÇĞİÖŞÜçğıöşü]/.test(seg)) { out.push(seg); continue; }
-    try { const res = await translate(seg, { to }); out.push(res.text); }
-    catch { out.push(seg); }
+    if (!seg) {
+      out.push(seg);
+      continue;
+    }
+    if (PLACEHOLDER_RE.test(seg) || !/[A-Za-zÇĞİÖŞÜçğıöşü]/.test(seg)) {
+      out.push(seg);
+      continue;
+    }
+    try {
+      const res = await translate(seg, { to });
+      out.push(res.text);
+    } catch {
+      out.push(seg);
+    }
     await new Promise(r => setTimeout(r, 150));
   }
   return out.join('');

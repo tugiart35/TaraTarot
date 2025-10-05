@@ -39,15 +39,24 @@ export function LanguageSwitcher() {
 
   const languagePaths = getLanguageSwitcherPaths(pathname);
 
+  if (!languagePaths) {
+    return null;
+  }
+
   const handleLanguageChange = (newLocale: string) => {
-    const targetPath = languagePaths.find(lp => lp.locale === newLocale)?.path;
+    const targetPath =
+      languagePaths.paths[newLocale as keyof typeof languagePaths.paths];
     if (targetPath) {
       router.push(targetPath);
       setIsOpen(false);
     }
   };
 
-  const currentLanguage = languagePaths.find(lp => lp.locale === locale);
+  const languages = [
+    { locale: 'tr', name: 'Türkçe', nativeName: 'Türkçe' },
+    { locale: 'en', name: 'English', nativeName: 'English' },
+    { locale: 'sr', name: 'Srpski', nativeName: 'Српски' },
+  ];
 
   return (
     <div className='relative'>
@@ -60,7 +69,7 @@ export function LanguageSwitcher() {
         <span className='text-lg'>
           {locale === 'tr' ? '🇹🇷' : locale === 'en' ? '🇺🇸' : '🇷🇸'}
         </span>
-        <span>{currentLanguage?.nativeName}</span>
+        <span>{languages.find(l => l.locale === locale)?.nativeName}</span>
         <svg
           className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`}
           fill='none'
@@ -79,7 +88,7 @@ export function LanguageSwitcher() {
       {isOpen && (
         <div className='absolute right-0 z-10 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg'>
           <div className='py-1'>
-            {languagePaths.map(language => (
+            {languages.map(language => (
               <button
                 key={language.locale}
                 onClick={() => handleLanguageChange(language.locale)}

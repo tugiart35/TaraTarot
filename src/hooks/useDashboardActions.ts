@@ -47,7 +47,7 @@ export const useDashboardActions = (
         name: pkg.name,
         credits: pkg.credits,
         price: pkg.price_try, // Türk Lirası fiyatını kullan
-        currency: 'TRY'
+        currency: 'TRY',
       };
       await initiatePayment(pkg.id.toString(), packageData); // useShopier hook'u ile ödeme başlat
     } catch (error) {

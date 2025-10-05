@@ -34,7 +34,10 @@ export function useInputValidation(): UseInputValidationReturn {
 
   // Sanitize input to prevent XSS attacks
   const sanitizeInput = useCallback((input: string): string => {
-    return input.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
+    return input.replace(
+      /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,
+      ''
+    );
   }, []);
 
   // Validate email format

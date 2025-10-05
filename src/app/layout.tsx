@@ -32,7 +32,14 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/react';
 import { generateHomepageSchemas } from '@/lib/seo/schema-markup';
 
-const inter = Inter({ subsets: ['latin'] });
+// Optimize font loading with display swap and preload
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap', // Prevent invisible text (FOIT)
+  preload: true,
+  variable: '--font-inter',
+  fallback: ['system-ui', 'arial'],
+});
 
 // Next.js için metadata export'u
 export const metadata = defaultMetadata;
@@ -43,10 +50,14 @@ export { viewport };
 // Ana layout fonksiyonu
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang={defaultLocale} className={`h-full ${inter.className}`} data-scroll-behavior='smooth'>
+    <html
+      lang={defaultLocale}
+      className={`h-full ${inter.className}`}
+      data-scroll-behavior='smooth'
+    >
       <head>
         <HeadTags />
-        
+
         {/* Performance Optimization: DNS Prefetch */}
         <link rel='dns-prefetch' href='//fonts.googleapis.com' />
         <link rel='dns-prefetch' href='//www.google-analytics.com' />
@@ -81,7 +92,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {generateHomepageSchemas().map((schema, index) => (
           <script
             key={index}
-            type="application/ld+json"
+            type='application/ld+json'
             dangerouslySetInnerHTML={{
               __html: JSON.stringify(schema),
             }}

@@ -12,10 +12,8 @@ interface AdminUser extends AuthUser {
 }
 
 export function useAuthAdmin() {
-  const { loading } =
-    useAuthBase<AdminUser>();
+  const { loading } = useAuthBase<AdminUser>();
   const [admin, setAdmin] = useState<AdminUser | null>(null);
-
 
   // Admin session'ını temizle
   const clearAdminSession = useCallback(async () => {
@@ -27,10 +25,10 @@ export function useAuthAdmin() {
   const loginAdmin = useCallback(async (email: string, password: string) => {
     try {
       // Production için tüm geliştirme modu kodları kaldırıldı
-      
+
       // Supabase admin kontrolü - güvenli authentication
       console.log('🔐 Supabase admin authentication başlatılıyor...');
-      
+
       const { data, error } = await supabase.auth.signInWithPassword({
         email,
         password,
@@ -99,11 +97,13 @@ export function useAuthAdmin() {
     const initializeAdmin = async () => {
       try {
         // Mevcut Supabase session'ını kontrol et
-        const { data: { session } } = await supabase.auth.getSession();
-        
+        const {
+          data: { session },
+        } = await supabase.auth.getSession();
+
         if (session?.user) {
           console.log('🔐 Mevcut session bulundu:', session.user.email);
-          
+
           // Admin kontrolü yap
           const { data: profile, error: profileError } = await supabase
             .from('profiles')

@@ -93,16 +93,18 @@ export function useAuthBase<T extends AuthUser>(): AuthState<T> & AuthActions {
     // Listen to auth state changes
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange(async (event: AuthChangeEvent, session: Session | null) => {
-      if (isMounted) {
-        setUser((session?.user as unknown as T) ?? null);
-        setLoading(false);
+    } = supabase.auth.onAuthStateChange(
+      async (event: AuthChangeEvent, session: Session | null) => {
+        if (isMounted) {
+          setUser((session?.user as unknown as T) ?? null);
+          setLoading(false);
 
-        if (event === 'SIGNED_OUT') {
-          setError(null);
+          if (event === 'SIGNED_OUT') {
+            setError(null);
+          }
         }
       }
-    });
+    );
 
     return () => {
       isMounted = false;

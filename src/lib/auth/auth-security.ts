@@ -207,16 +207,21 @@ export class AuthSecurity {
 
     const valid = score >= 3 && password.length >= 8;
 
-    const result: { valid: boolean; score: number; suggestions: string[]; error?: string } = {
+    const result: {
+      valid: boolean;
+      score: number;
+      suggestions: string[];
+      error?: string;
+    } = {
       valid,
       score,
       suggestions,
     };
-    
+
     if (!valid) {
       result.error = 'Password does not meet security requirements';
     }
-    
+
     return result;
   }
 

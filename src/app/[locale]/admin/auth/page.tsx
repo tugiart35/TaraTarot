@@ -32,11 +32,7 @@ export default function PakizeAuthPage() {
   // Pathname'den locale'i çıkar
   const locale = pathname.split('/')[1] || 'tr';
 
-  const {
-    loading: authLoading,
-    loginAdmin,
-    isAuthenticated,
-  } = useAdminAuth();
+  const { loading: authLoading, loginAdmin, isAuthenticated } = useAdminAuth();
 
   // Auth sayfasında admin kontrolü yapmıyoruz - döngüyü önlemek için
 
@@ -48,7 +44,7 @@ export default function PakizeAuthPage() {
 
     try {
       const result = await loginAdmin(email, password);
-      
+
       if (result.success) {
         setSuccess('Giriş başarılı! Admin paneline yönlendiriliyorsunuz...');
         // Router otomatik olarak yönlendirecek (useEffect)

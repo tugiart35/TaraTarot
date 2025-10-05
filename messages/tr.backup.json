@@ -409,23 +409,13 @@
       "numerology": {
         "button": "Numeroloji Analizi",
         "description": "Sayıların sırlarını keşfedin. Yaşam yolunuzu, ifade sayınızı ve ruhsal arzunuzu öğrenin.",
-        "features": [
-          "Yaşam Yolu",
-          "İfade Sayısı",
-          "Ruhsal Arzu",
-          "Günlük Sayı"
-        ],
+        "features": ["Yaşam Yolu", "İfade Sayısı", "Ruhsal Arzu", "Günlük Sayı"],
         "title": "Numeroloji Analizi"
       },
       "tarot": {
         "button": "Tarot Okuması",
         "description": "Kartların gizemli dünyasında yolculuğa çıkın. Geçmiş, şimdi ve geleceğinizi keşfedin.",
-        "features": [
-          "Aşk Açılımı",
-          "Kariyer Rehberliği",
-          "Günlük Rehberlik",
-          "Detaylı Yorumlama"
-        ],
+        "features": ["Aşk Açılımı", "Kariyer Rehberliği", "Günlük Rehberlik", "Detaylı Yorumlama"],
         "title": "Tarot Okuması"
       }
     },
@@ -475,23 +465,13 @@
       "numerology": {
         "button": "Numeroloji Analizi",
         "description": "Sayıların sırlarını keşfedin. Yaşam yolunuzu, ifade sayınızı ve ruhsal arzunuzu öğrenin.",
-        "features": [
-          "Yaşam Yolu",
-          "İfade Sayısı",
-          "Ruhsal Arzu",
-          "Günlük Sayı"
-        ],
+        "features": ["Yaşam Yolu", "İfade Sayısı", "Ruhsal Arzu", "Günlük Sayı"],
         "title": "Numeroloji Analizi"
       },
       "tarot": {
         "button": "Tarot Okuması",
         "description": "Kartların gizemli dünyasında yolculuğa çıkın. Geçmiş, şimdi ve geleceğinizi keşfedin.",
-        "features": [
-          "Aşk Açılımı",
-          "Kariyer Rehberliği",
-          "Günlük Rehberlik",
-          "Detaylı Yorumlama"
-        ],
+        "features": ["Aşk Açılımı", "Kariyer Rehberliği", "Günlük Rehberlik", "Detaylı Yorumlama"],
         "title": "Tarot Okuması"
       }
     },
@@ -737,13 +717,7 @@
     "theFool": {
       "position1": {
         "context": "Bu kişi, aşk hayatında yeni bir sayfa açmaya hazır veya bundan korkan bir maceracı.",
-        "keywords": [
-          "yeni başlangıçlar",
-          "masumiyet",
-          "spontanlık",
-          "risk almak",
-          "özgür ruh"
-        ],
+        "keywords": ["yeni başlangıçlar", "masumiyet", "spontanlık", "risk almak", "özgür ruh"],
         "reversed": "Ters Fool, bu kişinin pervasız, sorumsuz veya bir ilişkiye başlamaktan korkan biri olabileceğini gösterir. Potansiyel tehlikeleri görmezden geliyor ve bağlanmaktan kaçınıyor olabilir.",
         "upright": "İlgi duyduğun kişi, hayata karşı çocuksu bir merak ve heyecanla dolu. Yeni başlangıçlara açık, maceracı bir ruha sahip ancak bu durum bazen plansız ve programsız olmasına neden olabilir. İlişkilere de bu özgür ruhla yaklaşır."
       }
@@ -2589,10 +2563,7 @@
   "tarotCards": {
     "cups": {
       "1": {
-        "keywords": [
-          "aşk",
-          "duygular"
-        ],
+        "keywords": ["aşk", "duygular"],
         "meaning": {
           "reversed": "Öz sevgi, bastırılmış duygular",
           "upright": "Yeni ilişkiler, merhamet"
@@ -2600,10 +2571,7 @@
         "name": "Kadehler Ası"
       },
       "2": {
-        "keywords": [
-          "ortaklık",
-          "aşk"
-        ],
+        "keywords": ["ortaklık", "aşk"],
         "meaning": {
           "reversed": "Öz sevgi, ayrılıklar",
           "upright": "Ortaklık, karşılıklı çekim"
@@ -2611,10 +2579,7 @@
         "name": "Kadehler İkilisi"
       },
       "3": {
-        "keywords": [
-          "kutlama",
-          "dostluk"
-        ],
+        "keywords": ["kutlama", "dostluk"],
         "meaning": {
           "reversed": "Bağımsızlık, yaratıcı bloklar",
           "upright": "Kutlama, dostluk"
@@ -2622,10 +2587,7 @@
         "name": "Kadehler Üçlüsü"
       },
       "4": {
-        "keywords": [
-          "meditasyon",
-          "düşünce"
-        ],
+        "keywords": ["meditasyon", "düşünce"],
         "meaning": {
           "reversed": "Geri çekilme, içe kapanma",
           "upright": "Meditasyon, düşünce"
@@ -2633,10 +2595,7 @@
         "name": "Kadehler Dörtlüsü"
       },
       "5": {
-        "keywords": [
-          "pişmanlık",
-          "hayal kırıklığı"
-        ],
+        "keywords": ["pişmanlık", "hayal kırıklığı"],
         "meaning": {
           "reversed": "Kendini bağışlama, ilerleme",
           "upright": "Pişmanlık, hayal kırıklığı"
@@ -2644,10 +2603,7 @@
         "name": "Kadehler Beşlisi"
       },
       "6": {
-        "keywords": [
-          "nostalji",
-          "çocukluk"
-        ],
+        "keywords": ["nostalji", "çocukluk"],
         "meaning": {
           "reversed": "Geçmişte yaşama, bağışlama",
           "upright": "Çocukluk anıları, masumiyet"
@@ -2655,10 +2611,7 @@
         "name": "Kadehler Altılısı"
       },
       "7": {
-        "keywords": [
-          "fırsatlar",
-          "seçimler"
-        ],
+        "keywords": ["fırsatlar", "seçimler"],
         "meaning": {
           "reversed": "Kişisel değerler, bunalma",
           "upright": "Fırsatlar, seçimler"
@@ -2666,10 +2619,7 @@
         "name": "Kadehler Yedilisi"
       },
       "8": {
-        "keywords": [
-          "hayal kırıklığı",
-          "terk etme"
-        ],
+        "keywords": ["hayal kırıklığı", "terk etme"],
         "meaning": {
           "reversed": "Tekrar deneme, kararsızlık",
           "upright": "Hayal kırıklığı, terk etme"
@@ -2677,10 +2627,7 @@
         "name": "Kadehler Sekizlisi"
       },
       "9": {
-        "keywords": [
-          "memnuniyet",
-          "tatmin"
-        ],
+        "keywords": ["memnuniyet", "tatmin"],
         "meaning": {
           "reversed": "İç mutluluk, memnuniyetsizlik",
           "upright": "Memnuniyet, tatmin"
@@ -2688,10 +2635,7 @@
         "name": "Kadehler Dokuzlusu"
       },
       "10": {
-        "keywords": [
-          "ilahi aşk",
-          "uyum"
-        ],
+        "keywords": ["ilahi aşk", "uyum"],
         "meaning": {
           "reversed": "Kopukluk, zorlu ilişkiler",
           "upright": "İlahi aşk, uyum"
@@ -2699,10 +2643,7 @@
         "name": "Kadehler Onlusu"
       },
       "king": {
-        "keywords": [
-          "duygusal denge",
-          "diplomasi"
-        ],
+        "keywords": ["duygusal denge", "diplomasi"],
         "meaning": {
           "reversed": "Öz merhamet, huysuzluk",
           "upright": "Duygusal dengeli, diplomatik"
@@ -2710,10 +2651,7 @@
         "name": "Kadehler Kralı"
       },
       "knight": {
-        "keywords": [
-          "romantizm",
-          "cazibe"
-        ],
+        "keywords": ["romantizm", "cazibe"],
         "meaning": {
           "reversed": "Gerçekçi olmayan, kıskançlık",
           "upright": "Romantizm, cazibe, hayal gücü"
@@ -2721,10 +2659,7 @@
         "name": "Kadehler Şövalyesi"
       },
       "page": {
-        "keywords": [
-          "yaratıcılık",
-          "sezgi"
-        ],
+        "keywords": ["yaratıcılık", "sezgi"],
         "meaning": {
           "reversed": "Yeni fikirler, sezgiyi şüphe",
           "upright": "Yaratıcı fırsatlar, sezgi"
@@ -2732,10 +2667,7 @@
         "name": "Kadehler Prensi"
       },
       "queen": {
-        "keywords": [
-          "merhamet",
-          "duygusal kararlılık"
-        ],
+        "keywords": ["merhamet", "duygusal kararlılık"],
         "meaning": {
           "reversed": "İç duygular, öz bakım",
           "upright": "Merhametli, duygusal kararlı"
@@ -2745,10 +2677,7 @@
     },
     "majorArcana": {
       "0": {
-        "keywords": [
-          "yeni başlangıçlar",
-          "masumiyet"
-        ],
+        "keywords": ["yeni başlangıçlar", "masumiyet"],
         "meaning": {
           "reversed": "Dikkatsizlik, istismar edilme",
           "upright": "Yeni başlangıçlar, masumiyet, spontanlık"
@@ -2756,10 +2685,7 @@
         "name": "Deli"
       },
       "1": {
-        "keywords": [
-          "tezahür",
-          "güç"
-        ],
+        "keywords": ["tezahür", "güç"],
         "meaning": {
           "reversed": "Manipülasyon, kötü planlama",
           "upright": "Tezahür, beceriklilik, güç"
@@ -2767,10 +2693,7 @@
         "name": "Büyücü"
       },
       "2": {
-        "keywords": [
-          "sezgi",
-          "gizem"
-        ],
+        "keywords": ["sezgi", "gizem"],
         "meaning": {
           "reversed": "Sırlar, sezgiden kopukluk",
           "upright": "Sezgi, kutsal bilgi, ilahi dişilik"
@@ -2778,10 +2701,7 @@
         "name": "Yüksek Rahibe"
       },
       "3": {
-        "keywords": [
-          "kadınsılık",
-          "güzellik"
-        ],
+        "keywords": ["kadınsılık", "güzellik"],
         "meaning": {
           "reversed": "Yaratıcı blok, bağımlılık",
           "upright": "Kadınsılık, güzellik, doğa"
@@ -2789,10 +2709,7 @@
         "name": "İmparatoriçe"
       },
       "4": {
-        "keywords": [
-          "otorite",
-          "yapı"
-        ],
+        "keywords": ["otorite", "yapı"],
         "meaning": {
           "reversed": "Tahakküm, aşırı kontrol",
           "upright": "Otorite, kurumsallık, yapı"
@@ -2800,10 +2717,7 @@
         "name": "İmparator"
       },
       "5": {
-        "keywords": [
-          "gelenek",
-          "uyum"
-        ],
+        "keywords": ["gelenek", "uyum"],
         "meaning": {
           "reversed": "Kişisel inançlar, özgürlük",
           "upright": "Ruhsal bilgelik, dini inançlar"
@@ -2811,10 +2725,7 @@
         "name": "Aziz"
       },
       "6": {
-        "keywords": [
-          "aşk",
-          "uyum"
-        ],
+        "keywords": ["aşk", "uyum"],
         "meaning": {
           "reversed": "Öz sevgi, uyumsuzluk",
           "upright": "Aşk, uyum, ilişkiler"
@@ -2822,10 +2733,7 @@
         "name": "Aşıklar"
       },
       "7": {
-        "keywords": [
-          "kontrol",
-          "irade"
-        ],
+        "keywords": ["kontrol", "irade"],
         "meaning": {
           "reversed": "Öz disiplin, karşıtlık",
           "upright": "Kontrol, irade gücü, başarı"
@@ -2833,10 +2741,7 @@
         "name": "Savaş Arabası"
       },
       "8": {
-        "keywords": [
-          "güç",
-          "cesaret"
-        ],
+        "keywords": ["güç", "cesaret"],
         "meaning": {
           "reversed": "Öz şüphe, güven eksikliği",
           "upright": "Güç, cesaret, ikna"
@@ -2844,10 +2749,7 @@
         "name": "Güç"
       },
       "9": {
-        "keywords": [
-          "iç gözlem",
-          "arayış"
-        ],
+        "keywords": ["iç gözlem", "arayış"],
         "meaning": {
           "reversed": "İzolasyon, yalnızlık",
           "upright": "Ruh arayışı, iç gözlem"
@@ -2855,10 +2757,7 @@
         "name": "Münzevi"
       },
       "10": {
-        "keywords": [
-          "şans",
-          "karma"
-        ],
+        "keywords": ["şans", "karma"],
         "meaning": {
           "reversed": "Kötü şans, kontrol eksikliği",
           "upright": "İyi şans, karma, yaşam döngüleri"
@@ -2866,10 +2765,7 @@
         "name": "Kader Çarkı"
       },
       "11": {
-        "keywords": [
-          "adalet",
-          "hakkaniyet"
-        ],
+        "keywords": ["adalet", "hakkaniyet"],
         "meaning": {
           "reversed": "Haksızlık, hesap verememe",
           "upright": "Adalet, hakkaniyet, gerçek"
@@ -2877,10 +2773,7 @@
         "name": "Adalet"
       },
       "12": {
-        "keywords": [
-          "teslim olma",
-          "fedakarlık"
-        ],
+        "keywords": ["teslim olma", "fedakarlık"],
         "meaning": {
           "reversed": "Gecikmeler, direnç, oyalama",
           "upright": "Teslim olma, bırakma, fedakarlık"
@@ -2888,10 +2781,7 @@
         "name": "Asılan Adam"
       },
       "13": {
-        "keywords": [
-          "dönüşüm",
-          "sonlar"
-        ],
+        "keywords": ["dönüşüm", "sonlar"],
         "meaning": {
           "reversed": "Değişime direnç, içsel arınma",
           "upright": "Sonlar, dönüşüm, geçiş"
@@ -2899,10 +2789,7 @@
         "name": "Ölüm"
       },
       "14": {
-        "keywords": [
-          "denge",
-          "ölçülülük"
-        ],
+        "keywords": ["denge", "ölçülülük"],
         "meaning": {
           "reversed": "Dengesizlik, aşırılık, öz şifa",
           "upright": "Denge, ölçülülük, sabır"
@@ -2910,10 +2797,7 @@
         "name": "Ölçülülük"
       },
       "15": {
-        "keywords": [
-          "bağımlılık",
-          "materyalizm"
-        ],
+        "keywords": ["bağımlılık", "materyalizm"],
         "meaning": {
           "reversed": "Sınırlayıcı inançları bırakma, ayrılma",
           "upright": "Bağımlılık, tutku, materyalizm"
@@ -2921,10 +2805,7 @@
         "name": "Şeytan"
       },
       "16": {
-        "keywords": [
-          "ani değişim",
-          "karışıklık"
-        ],
+        "keywords": ["ani değişim", "karışıklık"],
         "meaning": {
           "reversed": "Kişisel dönüşüm, değişim korkusu",
           "upright": "Ani değişim, karışıklık, kaos"
@@ -2932,10 +2813,7 @@
         "name": "Kule"
       },
       "17": {
-        "keywords": [
-          "umut",
-          "inanç"
-        ],
+        "keywords": ["umut", "inanç"],
         "meaning": {
           "reversed": "İnanç eksikliği, umutsuzluk, kopukluk",
           "upright": "Umut, inanç, amaç, yenilenme"
@@ -2943,10 +2821,7 @@
         "name": "Yıldız"
       },
       "18": {
-        "keywords": [
-          "illüzyon",
-          "korku"
-        ],
+        "keywords": ["illüzyon", "korku"],
         "meaning": {
           "reversed": "Korkunun bırakılması, bastırılmış duygu",
           "upright": "İllüzyon, korku, kaygı, bilinçaltı"
@@ -2954,10 +2829,7 @@
         "name": "Ay"
       },
       "19": {
-        "keywords": [
-          "pozitiflik",
-          "eğlence"
-        ],
+        "keywords": ["pozitiflik", "eğlence"],
         "meaning": {
           "reversed": "İç çocuk, moralsizlik",
           "upright": "Pozitiflik, eğlence, sıcaklık, başarı"
@@ -2965,10 +2837,7 @@
         "name": "Güneş"
       },
       "20": {
-        "keywords": [
-          "yargı",
-          "yeniden doğuş"
-        ],
+        "keywords": ["yargı", "yeniden doğuş"],
         "meaning": {
           "reversed": "Öz şüphe, içsel eleştirmen",
           "upright": "Yargı, yeniden doğuş, içsel çağrı"
@@ -2976,10 +2845,7 @@
         "name": "Mahkeme"
       },
       "21": {
-        "keywords": [
-          "tamamlanma",
-          "bütünleşme"
-        ],
+        "keywords": ["tamamlanma", "bütünleşme"],
         "meaning": {
           "reversed": "Kişisel kapanış arayışı, kısa yol",
           "upright": "Tamamlanma, bütünleşme, başarı"
@@ -2989,10 +2855,7 @@
     },
     "pentacles": {
       "1": {
-        "keywords": [
-          "fırsat",
-          "tezahür"
-        ],
+        "keywords": ["fırsat", "tezahür"],
         "meaning": {
           "reversed": "Kaçırılan fırsat, planlama eksikliği",
           "upright": "Yeni fırsat, tezahür"
@@ -3000,10 +2863,7 @@
         "name": "Altınlar Ası"
       },
       "2": {
-        "keywords": [
-          "öncelikler",
-          "uyum"
-        ],
+        "keywords": ["öncelikler", "uyum"],
         "meaning": {
           "reversed": "Aşırı taahhüt, düzensizlik",
           "upright": "Çoklu öncelikler, uyum"
@@ -3011,10 +2871,7 @@
         "name": "Altınlar İkilisi"
       },
       "3": {
-        "keywords": [
-          "işbirliği",
-          "öğrenme"
-        ],
+        "keywords": ["işbirliği", "öğrenme"],
         "meaning": {
           "reversed": "Uyumsuzluk, tek başına çalışma",
           "upright": "İşbirliği, öğrenme"
@@ -3022,10 +2879,7 @@
         "name": "Altınlar Üçlüsü"
       },
       "4": {
-        "keywords": [
-          "biriktirme",
-          "güvenlik"
-        ],
+        "keywords": ["biriktirme", "güvenlik"],
         "meaning": {
           "reversed": "Aşırı harcama, cömertlik",
           "upright": "Para biriktirme, güvenlik"
@@ -3033,10 +2887,7 @@
         "name": "Altınlar Dörtlüsü"
       },
       "5": {
-        "keywords": [
-          "kayıp",
-          "izolasyon"
-        ],
+        "keywords": ["kayıp", "izolasyon"],
         "meaning": {
           "reversed": "Kayıptan kurtulma, ruhsal yoksulluk",
           "upright": "Mali kayıp, izolasyon"
@@ -3044,10 +2895,7 @@
         "name": "Altınlar Beşlisi"
       },
       "6": {
-        "keywords": [
-          "verme",
-          "paylaşım"
-        ],
+        "keywords": ["verme", "paylaşım"],
         "meaning": {
           "reversed": "Kendine bakım, ödenmemiş borçlar",
           "upright": "Verme, zenginlik paylaşımı"
@@ -3055,10 +2903,7 @@
         "name": "Altınlar Altılısı"
       },
       "7": {
-        "keywords": [
-          "sebat",
-          "yatırım"
-        ],
+        "keywords": ["sebat", "yatırım"],
         "meaning": {
           "reversed": "Uzun vadeli görüş eksikliği, sabırsızlık",
           "upright": "Sebat, yatırım"
@@ -3066,10 +2911,7 @@
         "name": "Altınlar Yedilisi"
       },
       "8": {
-        "keywords": [
-          "ustalık",
-          "beceri"
-        ],
+        "keywords": ["ustalık", "beceri"],
         "meaning": {
           "reversed": "Mükemmeliyetçilik, bağlılık eksikliği",
           "upright": "Ustalık, beceri geliştirme"
@@ -3077,10 +2919,7 @@
         "name": "Altınlar Sekizlisi"
       },
       "9": {
-        "keywords": [
-          "bolluk",
-          "bağımsızlık"
-        ],
+        "keywords": ["bolluk", "bağımsızlık"],
         "meaning": {
           "reversed": "Öz değer, aşırı yatırım",
           "upright": "Bolluk, mali bağımsızlık"
@@ -3088,10 +2927,7 @@
         "name": "Altınlar Dokuzlusu"
       },
       "10": {
-        "keywords": [
-          "zenginlik",
-          "aile"
-        ],
+        "keywords": ["zenginlik", "aile"],
         "meaning": {
           "reversed": "Mali başarısızlık, zenginliğin karanlık tarafı",
           "upright": "Zenginlik, aile, uzun vadeli başarı"
@@ -3099,10 +2935,7 @@
         "name": "Altınlar Onlusu"
       },
       "king": {
-        "keywords": [
-          "başarı",
-          "iş"
-        ],
+        "keywords": ["başarı", "iş"],
         "meaning": {
           "reversed": "Mali tavsiye, gücünün üstünde yaşama",
           "upright": "Mali başarı, iş zekası"
@@ -3110,10 +2943,7 @@
         "name": "Altınlar Kralı"
       },
       "knight": {
-        "keywords": [
-          "çalışma",
-          "rutin"
-        ],
+        "keywords": ["çalışma", "rutin"],
         "meaning": {
           "reversed": "Öz disiplin, sıkışmış hissetme",
           "upright": "Sıkı çalışma, rutin"
@@ -3121,10 +2951,7 @@
         "name": "Altınlar Şövalyesi"
       },
       "page": {
-        "keywords": [
-          "tezahür",
-          "fırsat"
-        ],
+        "keywords": ["tezahür", "fırsat"],
         "meaning": {
           "reversed": "İlerleme eksikliği, erteleme",
           "upright": "Tezahür, mali fırsat"
@@ -3132,10 +2959,7 @@
         "name": "Altınlar Prensi"
       },
       "queen": {
-        "keywords": [
-          "besleyici",
-          "pratik"
-        ],
+        "keywords": ["besleyici", "pratik"],
         "meaning": {
           "reversed": "Mali bağımsızlık, iş-ev çatışması",
           "upright": "Besleyici, pratik"
@@ -3145,10 +2969,7 @@
     },
     "swords": {
       "1": {
-        "keywords": [
-          "berraklık",
-          "atılım"
-        ],
+        "keywords": ["berraklık", "atılım"],
         "meaning": {
           "reversed": "Karışıklık, kaos",
           "upright": "Atılım, berraklık"
@@ -3156,10 +2977,7 @@
         "name": "Kılıçlar Ası"
       },
       "2": {
-        "keywords": [
-          "kararlar",
-          "çıkmaz"
-        ],
+        "keywords": ["kararlar", "çıkmaz"],
         "meaning": {
           "reversed": "Kararsızlık, karışıklık",
           "upright": "Zor kararlar, çıkmaz"
@@ -3167,10 +2985,7 @@
         "name": "Kılıçlar İkilisi"
       },
       "3": {
-        "keywords": [
-          "kalp kırıklığı",
-          "keder"
-        ],
+        "keywords": ["kalp kırıklığı", "keder"],
         "meaning": {
           "reversed": "Acıyı serbest bırakma, iyimserlik",
           "upright": "Kalp kırıklığı, keder"
@@ -3178,10 +2993,7 @@
         "name": "Kılıçlar Üçlüsü"
       },
       "4": {
-        "keywords": [
-          "dinlenme",
-          "meditasyon"
-        ],
+        "keywords": ["dinlenme", "meditasyon"],
         "meaning": {
           "reversed": "Tükenmişlik, yanma",
           "upright": "Dinlenme, meditasyon"
@@ -3189,10 +3001,7 @@
         "name": "Kılıçlar Dörtlüsü"
       },
       "5": {
-        "keywords": [
-          "çatışma",
-          "yenilgi"
-        ],
+        "keywords": ["çatışma", "yenilgi"],
         "meaning": {
           "reversed": "Uzlaşma, geçmiş kırgınlık",
           "upright": "Çatışma, yenilgi"
@@ -3200,10 +3009,7 @@
         "name": "Kılıçlar Beşlisi"
       },
       "6": {
-        "keywords": [
-          "geçiş",
-          "değişim"
-        ],
+        "keywords": ["geçiş", "değişim"],
         "meaning": {
           "reversed": "Kişisel geçiş, direnç",
           "upright": "Geçiş, değişim"
@@ -3211,10 +3017,7 @@
         "name": "Kılıçlar Altılısı"
       },
       "7": {
-        "keywords": [
-          "ihanet",
-          "aldatma"
-        ],
+        "keywords": ["ihanet", "aldatma"],
         "meaning": {
           "reversed": "Sahtekar sendromu, sırlar",
           "upright": "İhanet, aldatma"
@@ -3222,10 +3025,7 @@
         "name": "Kılıçlar Yedilisi"
       },
       "8": {
-        "keywords": [
-          "kısıtlama",
-          "hapis"
-        ],
+        "keywords": ["kısıtlama", "hapis"],
         "meaning": {
           "reversed": "Kendini sınırlayan inançlar, iç eleştirmen",
           "upright": "Kısıtlama, hapis"
@@ -3233,10 +3033,7 @@
         "name": "Kılıçlar Sekizlisi"
       },
       "9": {
-        "keywords": [
-          "kaygı",
-          "korku"
-        ],
+        "keywords": ["kaygı", "korku"],
         "meaning": {
           "reversed": "İç karmaşa, kaygıyı serbest bırakma",
           "upright": "Kaygı, korku"
@@ -3244,10 +3041,7 @@
         "name": "Kılıçlar Dokuzlusu"
       },
       "10": {
-        "keywords": [
-          "sonlar",
-          "ihanet"
-        ],
+        "keywords": ["sonlar", "ihanet"],
         "meaning": {
           "reversed": "İyileşme, sona direnme",
           "upright": "Acılı sonlar, ihanet"
@@ -3255,10 +3049,7 @@
         "name": "Kılıçlar Onlusu"
       },
       "king": {
-        "keywords": [
-          "berraklık",
-          "otorite"
-        ],
+        "keywords": ["berraklık", "otorite"],
         "meaning": {
           "reversed": "Sessiz güç, gücün kötüye kullanımı",
           "upright": "Zihinsel berraklık, otorite"
@@ -3266,10 +3057,7 @@
         "name": "Kılıçlar Kralı"
       },
       "knight": {
-        "keywords": [
-          "hırs",
-          "eylem"
-        ],
+        "keywords": ["hırs", "eylem"],
         "meaning": {
           "reversed": "Huzursuz, dürtüsel",
           "upright": "Hırslı, eylem odaklı"
@@ -3277,10 +3065,7 @@
         "name": "Kılıçlar Şövalyesi"
       },
       "page": {
-        "keywords": [
-          "fikirler",
-          "merak"
-        ],
+        "keywords": ["fikirler", "merak"],
         "meaning": {
           "reversed": "Kendini ifade etme, eylem yok",
           "upright": "Yeni fikirler, merak"
@@ -3288,10 +3073,7 @@
         "name": "Kılıçlar Prensi"
       },
       "queen": {
-        "keywords": [
-          "bağımsızlık",
-          "sınırlar"
-        ],
+        "keywords": ["bağımsızlık", "sınırlar"],
         "meaning": {
           "reversed": "Aşırı duygusal, soğuk kalpli",
           "upright": "Bağımsız, net sınırlar"
@@ -3301,10 +3083,7 @@
     },
     "wands": {
       "1": {
-        "keywords": [
-          "ilham",
-          "güç"
-        ],
+        "keywords": ["ilham", "güç"],
         "meaning": {
           "reversed": "Enerji eksikliği, can sıkıntısı",
           "upright": "İlham, yeni fırsatlar"
@@ -3312,10 +3091,7 @@
         "name": "Asalar Ası"
       },
       "2": {
-        "keywords": [
-          "planlama",
-          "kararlar"
-        ],
+        "keywords": ["planlama", "kararlar"],
         "meaning": {
           "reversed": "Kişisel hedefler, bilinmezlik korkusu",
           "upright": "Gelecek planlama, kararlar"
@@ -3323,10 +3099,7 @@
         "name": "Asalar İkilisi"
       },
       "3": {
-        "keywords": [
-          "genişleme",
-          "öngörü"
-        ],
+        "keywords": ["genişleme", "öngörü"],
         "meaning": {
           "reversed": "Küçük oynama, gecikmeler",
           "upright": "Genişleme, öngörü"
@@ -3334,10 +3107,7 @@
         "name": "Asalar Üçlüsü"
       },
       "4": {
-        "keywords": [
-          "kutlama",
-          "uyum"
-        ],
+        "keywords": ["kutlama", "uyum"],
         "meaning": {
           "reversed": "Kişisel kutlama, çatışma",
           "upright": "Kutlama, uyum"
@@ -3345,10 +3115,7 @@
         "name": "Asalar Dörtlüsü"
       },
       "5": {
-        "keywords": [
-          "çatışma",
-          "rekabet"
-        ],
+        "keywords": ["çatışma", "rekabet"],
         "meaning": {
           "reversed": "İç çatışma, kaçınma",
           "upright": "Çatışma, rekabet"
@@ -3356,10 +3123,7 @@
         "name": "Asalar Beşlisi"
       },
       "6": {
-        "keywords": [
-          "başarı",
-          "tanınma"
-        ],
+        "keywords": ["başarı", "tanınma"],
         "meaning": {
           "reversed": "Özel başarı, lütuftan düşme",
           "upright": "Başarı, tanınma"
@@ -3367,10 +3131,7 @@
         "name": "Asalar Altılısı"
       },
       "7": {
-        "keywords": [
-          "meydan okuma",
-          "sebat"
-        ],
+        "keywords": ["meydan okuma", "sebat"],
         "meaning": {
           "reversed": "Tükenmişlik, pes etme",
           "upright": "Meydan okuma, sebat"
@@ -3378,10 +3139,7 @@
         "name": "Asalar Yedilisi"
       },
       "8": {
-        "keywords": [
-          "hız",
-          "ilerleme"
-        ],
+        "keywords": ["hız", "ilerleme"],
         "meaning": {
           "reversed": "Gecikmeler, hayal kırıklığı",
           "upright": "Hız, ilerleme"
@@ -3389,10 +3147,7 @@
         "name": "Asalar Sekizlisi"
       },
       "9": {
-        "keywords": [
-          "dayanıklılık",
-          "cesaret"
-        ],
+        "keywords": ["dayanıklılık", "cesaret"],
         "meaning": {
           "reversed": "İç kaynaklar, mücadele",
           "upright": "Dayanıklılık, cesaret"
@@ -3400,10 +3155,7 @@
         "name": "Asalar Dokuzlusu"
       },
       "10": {
-        "keywords": [
-          "yük",
-          "sorumluluk"
-        ],
+        "keywords": ["yük", "sorumluluk"],
         "meaning": {
           "reversed": "Hepsini yapma, yetki devri",
           "upright": "Yük, sorumluluk"
@@ -3411,10 +3163,7 @@
         "name": "Asalar Onlusu"
       },
       "king": {
-        "keywords": [
-          "liderlik",
-          "vizyon"
-        ],
+        "keywords": ["liderlik", "vizyon"],
         "meaning": {
           "reversed": "Dürtüsellik, acımasız",
           "upright": "Liderlik, vizyon"
@@ -3422,10 +3171,7 @@
         "name": "Asalar Kralı"
       },
       "knight": {
-        "keywords": [
-          "enerji",
-          "tutku"
-        ],
+        "keywords": ["enerji", "tutku"],
         "meaning": {
           "reversed": "Acele, dağınık enerji",
           "upright": "Enerji, tutku, macera"
@@ -3433,10 +3179,7 @@
         "name": "Asalar Şövalyesi"
       },
       "page": {
-        "keywords": [
-          "ilham",
-          "keşif"
-        ],
+        "keywords": ["ilham", "keşif"],
         "meaning": {
           "reversed": "Yön eksikliği, erteleme",
           "upright": "İlham, keşif"
@@ -3444,10 +3187,7 @@
         "name": "Asalar Prensi"
       },
       "queen": {
-        "keywords": [
-          "cesaret",
-          "bağımsızlık"
-        ],
+        "keywords": ["cesaret", "bağımsızlık"],
         "meaning": {
           "reversed": "Öz saygı, içe dönük",
           "upright": "Cesaret, bağımsızlık"

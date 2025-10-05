@@ -48,6 +48,7 @@ WEBHOOK_SECRET=your-generated-webhook-secret
 ```
 
 ### Generate Webhook Secret
+
 ```bash
 # Terminal'de güçlü secret oluştur:
 openssl rand -base64 32
@@ -58,6 +59,7 @@ openssl rand -base64 32
 ## 2️⃣ Vercel Deploy
 
 ### Build Test (Local)
+
 ```bash
 # Proje klasöründe build test et:
 npm run build
@@ -67,6 +69,7 @@ echo $?  # 0 = success, 1 = error
 ```
 
 ### Deploy to Vercel
+
 ```bash
 # Production deploy:
 vercel --prod
@@ -77,6 +80,7 @@ vercel domains add www.busbuskimki.com
 ```
 
 ### Vercel Dashboard Configuration
+
 1. **Project Settings → Domains:**
    - `busbuskimki.com` ✅
    - `www.busbuskimki.com` ✅
@@ -91,18 +95,21 @@ vercel domains add www.busbuskimki.com
 ## 3️⃣ Cloudflare Configuration
 
 ### DNS Records Check
+
 ```
 A Record:     @     → 76.76.19.19 (Vercel IP)
 CNAME:       www    → busbuskimki.com
 ```
 
 ### SSL/TLS Settings
+
 ```
 SSL/TLS → Overview → "Full (strict)"
 Edge Certificates → Always Use HTTPS → ON
 ```
 
 ### Performance Optimization
+
 ```
 Speed → Optimization:
 - Auto Minify: HTML, CSS, JS → ON
@@ -115,6 +122,7 @@ Caching → Configuration:
 ```
 
 ### Page Rules (Optional)
+
 ```
 busbuskimki.com/api/*
 - Cache Level: Bypass
@@ -130,6 +138,7 @@ busbuskimki.com/_next/static/*
 ## 4️⃣ Production Testing
 
 ### 1. Basic Functionality Test
+
 ```bash
 # Website accessibility:
 curl -I https://busbuskimki.com
@@ -140,23 +149,28 @@ curl -X POST https://busbuskimki.com/api/webhook/shopier
 ```
 
 ### 2. Database Connection Test
+
 - Supabase Dashboard → SQL Editor
 - Test query çalıştır:
+
 ```sql
 SELECT COUNT(*) FROM profiles;
 ```
 
 ### 3. Payment Integration Test
+
 - Shopier test mode'da test payment
 - Webhook endpoint test
 - Callback URL test
 
 ### 4. Email Service Test
+
 - Contact form test
 - PDF generation test
 - SMTP connection test
 
 ### 5. Performance Test
+
 ```bash
 # Page speed test:
 curl -w "@curl-format.txt" -o /dev/null -s https://busbuskimki.com
@@ -179,11 +193,13 @@ EOF
 ## 5️⃣ Monitoring & Analytics
 
 ### Vercel Analytics
+
 1. **Vercel Dashboard → Analytics**
    - Enable Web Analytics
    - Enable Speed Insights
 
 ### Error Monitoring (Optional)
+
 ```bash
 # Sentry setup (if needed):
 npm install @sentry/nextjs
@@ -193,6 +209,7 @@ SENTRY_DSN=https://your-sentry-dsn@sentry.io/project-id
 ```
 
 ### Uptime Monitoring
+
 - **UptimeRobot** (Free tier): 50 monitors
 - **Pingdom** (Free tier): 1 monitor
 - **StatusCake** (Free tier): 10 tests
@@ -202,6 +219,7 @@ SENTRY_DSN=https://your-sentry-dsn@sentry.io/project-id
 ## 6️⃣ Security Checklist
 
 ### Pre-Launch Security
+
 - [ ] All environment variables set
 - [ ] HTTPS enforced
 - [ ] Security headers active
@@ -210,6 +228,7 @@ SENTRY_DSN=https://your-sentry-dsn@sentry.io/project-id
 - [ ] Database RLS policies active
 
 ### Post-Launch Security
+
 - [ ] Monitor error logs
 - [ ] Check failed login attempts
 - [ ] Verify payment webhooks
@@ -221,6 +240,7 @@ SENTRY_DSN=https://your-sentry-dsn@sentry.io/project-id
 ## 7️⃣ Go-Live Checklist
 
 ### Final Checks
+
 - [ ] Domain pointing to Vercel
 - [ ] SSL certificate active
 - [ ] All environment variables loaded
@@ -231,12 +251,15 @@ SENTRY_DSN=https://your-sentry-dsn@sentry.io/project-id
 - [ ] Analytics tracking
 
 ### Launch Steps
+
 1. **DNS Propagation Check:**
+
    ```bash
    nslookup busbuskimki.com
    ```
 
 2. **SSL Certificate Check:**
+
    ```bash
    curl -I https://busbuskimki.com
    # Should return: Strict-Transport-Security header
@@ -254,6 +277,7 @@ SENTRY_DSN=https://your-sentry-dsn@sentry.io/project-id
 ### Common Issues
 
 #### 1. Build Errors
+
 ```bash
 # Check build logs:
 vercel logs
@@ -264,12 +288,14 @@ npm install    # Update dependencies
 ```
 
 #### 2. Environment Variables Not Loading
+
 ```bash
 # Check in Vercel dashboard:
 Settings → Environment Variables → Production
 ```
 
 #### 3. DNS Issues
+
 ```bash
 # Check DNS propagation:
 dig busbuskimki.com
@@ -277,6 +303,7 @@ nslookup busbuskimki.com
 ```
 
 #### 4. SSL Issues
+
 - Wait 5-10 minutes after DNS changes
 - Check Cloudflare SSL/TLS settings
 - Verify domain configuration in Vercel
@@ -286,11 +313,15 @@ nslookup busbuskimki.com
 ## 📞 Support Contacts
 
 ### Vercel Support
+
 - **Documentation:** [vercel.com/docs](https://vercel.com/docs)
-- **Community:** [github.com/vercel/vercel/discussions](https://github.com/vercel/vercel/discussions)
+- **Community:**
+  [github.com/vercel/vercel/discussions](https://github.com/vercel/vercel/discussions)
 
 ### Cloudflare Support
-- **Documentation:** [developers.cloudflare.com](https://developers.cloudflare.com)
+
+- **Documentation:**
+  [developers.cloudflare.com](https://developers.cloudflare.com)
 - **Community:** [community.cloudflare.com](https://community.cloudflare.com)
 
 ---
@@ -298,6 +329,7 @@ nslookup busbuskimki.com
 ## 🎯 Timeline
 
 ### Day 1: Setup (60 minutes)
+
 - [ ] Environment variables (15 min)
 - [ ] Vercel deploy (10 min)
 - [ ] Cloudflare config (10 min)
@@ -305,12 +337,14 @@ nslookup busbuskimki.com
 - [ ] Monitoring setup (10 min)
 
 ### Day 2: Testing & Optimization
+
 - [ ] Comprehensive testing
 - [ ] Performance optimization
 - [ ] Security validation
 - [ ] Go-live preparation
 
 ### Day 3: Launch
+
 - [ ] Final checks
 - [ ] Go live
 - [ ] Monitor for 24 hours
@@ -320,11 +354,11 @@ nslookup busbuskimki.com
 ## 🚀 Ready to Deploy!
 
 **Next Steps:**
+
 1. Environment variables'ları Vercel'e ekle
 2. `vercel --prod` ile deploy et
 3. Cloudflare ayarlarını optimize et
 4. Production test et
 5. Go live! 🎉
 
-**Estimated Time:** 60 minutes
-**Status:** Ready for production deployment
+**Estimated Time:** 60 minutes **Status:** Ready for production deployment

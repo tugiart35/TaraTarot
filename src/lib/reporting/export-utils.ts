@@ -28,8 +28,24 @@ Kullanım durumu:
 - ✅ Production-ready: jsPDF ve xlsx kütüphaneleri ile
 */
 
-import jsPDF from 'jspdf';
-import * as XLSX from 'xlsx';
+// Lazy load heavy libraries to reduce initial bundle size
+let jsPDF: any = null;
+let XLSX: any = null;
+
+async function loadJsPDF() {
+  if (!jsPDF) {
+    const module = await import('jspdf');
+    jsPDF = module.default;
+  }
+  return jsPDF;
+}
+
+async function loadXLSX() {
+  if (!XLSX) {
+    XLSX = await import('xlsx');
+  }
+  return XLSX;
+}
 
 export interface ReportData {
   dailyUsers: number;
@@ -61,7 +77,8 @@ export const exportToPDF = async (
   data: ReportData,
   options: ExportOptions
 ): Promise<Blob> => {
-  const doc = new jsPDF();
+  const JsPDF = await loadJsPDF();
+  const doc = new JsPDF();
   const pageWidth = doc.internal.pageSize.getWidth();
   const pageHeight = doc.internal.pageSize.getHeight();
   let yPosition = 20;
@@ -115,7 +132,8 @@ export const exportToExcel = async (
   data: ReportData,
   _options: ExportOptions
 ): Promise<Blob> => {
-  const workbook = XLSX.utils.book_new();
+  const XLSXModule = await loadXLSX();
+  const workbook = XLSXModule.utils.book_new();
 
   // Ana özet sayfası
   const summaryData = [
@@ -129,47 +147,47 @@ export const exportToExcel = async (
     ['Kullanılan Krediler', data.creditUsage],
   ];
 
-  const summarySheet = XLSX.utils.aoa_to_sheet(summaryData);
-  XLSX.utils.book_append_sheet(workbook, summarySheet, 'Özet');
+  const summarySheet = XLSXModule.utils.aoa_to_sheet(summaryData);
+  XLSXModule.utils.book_append_sheet(workbook, summarySheet, 'Özet');
 
   // Kullanıcı kayıtları
   const userRegData = [
     ['Gün', 'Kayıt Sayısı'],
     ...data.userRegistrations.map(item => [item.name, item.value]),
   ];
-  const userRegSheet = XLSX.utils.aoa_to_sheet(userRegData);
-  XLSX.utils.book_append_sheet(workbook, userRegSheet, 'Kullanıcı Kayıtları');
+  const userRegSheet = XLSXModule.utils.aoa_to_sheet(userRegData);
+  XLSXModule.utils.book_append_sheet(workbook, userRegSheet, 'Kullanıcı Kayıtları');
 
   // Paket satışları
   const packageData = [
     ['Paket Adı', 'Satış Sayısı'],
     ...data.packageSales.map(item => [item.name, item.value]),
   ];
-  const packageSheet = XLSX.utils.aoa_to_sheet(packageData);
-  XLSX.utils.book_append_sheet(workbook, packageSheet, 'Paket Satışları');
+  const packageSheet = XLSXModule.utils.aoa_to_sheet(packageData);
+  XLSXModule.utils.book_append_sheet(workbook, packageSheet, 'Paket Satışları');
 
   // Özellik kullanımı
   const featureData = [
     ['Özellik', 'Kullanım Sayısı'],
     ...data.featureUsage.map(item => [item.name, item.value]),
   ];
-  const featureSheet = XLSX.utils.aoa_to_sheet(featureData);
-  XLSX.utils.book_append_sheet(workbook, featureSheet, 'Özellik Kullanımı');
+  const featureSheet = XLSXModule.utils.aoa_to_sheet(featureData);
+  XLSXModule.utils.book_append_sheet(workbook, featureSheet, 'Özellik Kullanımı');
 
   // Gelir verileri
   const revenueData = [
     ['Tarih', 'Gelir (€)'],
     ...data.revenueData.map(item => [item.date, item.revenue]),
   ];
-  const revenueSheet = XLSX.utils.aoa_to_sheet(revenueData);
-  XLSX.utils.book_append_sheet(workbook, revenueSheet, 'Gelir Verileri');
+  const revenueSheet = XLSXModule.utils.aoa_to_sheet(revenueData);
+  XLSXModule.utils.book_append_sheet(workbook, revenueSheet, 'Gelir Verileri');
 
-  return XLSX.write(workbook, { bookType: 'xlsx', type: 'array' });
+  return XLSXModule.write(workbook, { bookType: 'xlsx', type: 'array' });
 };
 
 // Yardımcı fonksiyonlar
 const addRevenueSection = (
-  doc: jsPDF,
+  doc: any,
   data: ReportData,
   yPos: number,
   _pageWidth: number
@@ -198,7 +216,7 @@ const addRevenueSection = (
 };
 
 const addUsersSection = (
-  doc: jsPDF,
+  doc: any,
   data: ReportData,
   yPos: number,
   _pageWidth: number
@@ -234,7 +252,7 @@ const addUsersSection = (
 };
 
 const addTransactionsSection = (
-  doc: jsPDF,
+  doc: any,
   data: ReportData,
   yPos: number,
   _pageWidth: number
@@ -261,7 +279,7 @@ const addTransactionsSection = (
 };
 
 const addComprehensiveSection = (
-  doc: jsPDF,
+  doc: any,
   data: ReportData,
   yPos: number,
   pageWidth: number

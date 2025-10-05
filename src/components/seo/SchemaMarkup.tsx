@@ -1,11 +1,15 @@
-import { generatePageSchemas, generateTarotReadingSchema, generateBreadcrumbSchema } from '@/lib/seo/schema-markup';
+import {
+  generatePageSchemas,
+  generateTarotReadingSchema,
+  generateBreadcrumbSchema,
+} from '@/lib/seo/schema-markup';
 
 interface SchemaMarkupProps {
   type: 'tarot-reading' | 'numerology' | 'general';
   data?: {
     readingType?: string;
     price?: string;
-    breadcrumbs?: Array<{name: string, url: string}>;
+    breadcrumbs?: Array<{ name: string; url: string }>;
   };
 }
 
@@ -17,7 +21,7 @@ export function SchemaMarkup({ type, data }: SchemaMarkupProps) {
       {schemas.map((schema, index) => (
         <script
           key={index}
-          type="application/ld+json"
+          type='application/ld+json'
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(schema),
           }}
@@ -30,10 +34,14 @@ export function SchemaMarkup({ type, data }: SchemaMarkupProps) {
 interface TarotReadingSchemaProps {
   readingType: string;
   price?: string;
-  breadcrumbs?: Array<{name: string, url: string}>;
+  breadcrumbs?: Array<{ name: string; url: string }>;
 }
 
-export function TarotReadingSchema({ readingType, price, breadcrumbs }: TarotReadingSchemaProps) {
+export function TarotReadingSchema({
+  readingType,
+  price,
+  breadcrumbs,
+}: TarotReadingSchemaProps) {
   const schemas = [];
 
   // Add tarot reading schema
@@ -49,7 +57,7 @@ export function TarotReadingSchema({ readingType, price, breadcrumbs }: TarotRea
       {schemas.map((schema, index) => (
         <script
           key={index}
-          type="application/ld+json"
+          type='application/ld+json'
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(schema),
           }}
@@ -60,7 +68,7 @@ export function TarotReadingSchema({ readingType, price, breadcrumbs }: TarotRea
 }
 
 interface BreadcrumbSchemaProps {
-  items: Array<{name: string, url: string}>;
+  items: Array<{ name: string; url: string }>;
 }
 
 export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
@@ -68,7 +76,7 @@ export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
 
   return (
     <script
-      type="application/ld+json"
+      type='application/ld+json'
       dangerouslySetInnerHTML={{
         __html: JSON.stringify(schema),
       }}

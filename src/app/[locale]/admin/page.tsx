@@ -80,21 +80,21 @@ export default function AdminDashboard() {
 
   // useSimpleAdmin hook'undan admin durumunu al
   const { admin, loading: authLoading, isAuthenticated } = useAdminAuth();
-  
+
   // Performans monitoring hook'u - otomatik yenileme yok
-  const { 
-    currentMetrics: systemPerformance, 
-    refreshMetrics: refreshPerformance
+  const {
+    currentMetrics: systemPerformance,
+    refreshMetrics: refreshPerformance,
   } = usePerformanceMonitor(0); // Otomatik yenileme yok
-  
+
   // Gerçek sistem monitoring hook'u - devre dışı bırakıldı
-  // const { 
-  //   startMonitoring, 
-  //   stopMonitoring, 
-  //   collectMetrics, 
-  //   saveMetrics 
+  // const {
+  //   startMonitoring,
+  //   stopMonitoring,
+  //   collectMetrics,
+  //   saveMetrics
   // } = useRealSystemMonitoring(60000); // 1 dakika
-  
+
   const [stats, setStats] = useState<AdminStats>({
     totalUsers: 0,
     totalCredits: 0,
@@ -109,7 +109,11 @@ export default function AdminDashboard() {
 
   // Admin kontrolü - sadece gerçek admin kullanıcıları
   useEffect(() => {
-    if (!authLoading && (!isAuthenticated || !admin || !admin.is_admin) && !isRedirecting) {
+    if (
+      !authLoading &&
+      (!isAuthenticated || !admin || !admin.is_admin) &&
+      !isRedirecting
+    ) {
       setIsRedirecting(true);
       // Admin girişi yapılmamış veya admin yetkisi yok, auth sayfasına yönlendiriliyor
       router.push(`/${locale}/admin/auth`);
@@ -123,7 +127,7 @@ export default function AdminDashboard() {
       refreshPerformance(); // İlk yüklemede performans verilerini güncelle
       // startMonitoring(); // Gerçek sistem monitoring devre dışı
     }
-    
+
     // Cleanup function
     return () => {
       // stopMonitoring(); // Gerçek sistem monitoring devre dışı
@@ -170,9 +174,13 @@ export default function AdminDashboard() {
 
       // Günlük kredi harcama verilerini çek - timezone aware
       const now = new Date();
-      const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+      const todayStart = new Date(
+        now.getFullYear(),
+        now.getMonth(),
+        now.getDate()
+      );
       const todayEnd = new Date(todayStart.getTime() + 24 * 60 * 60 * 1000);
-      
+
       const { data: dailyTransactions, error: dailyError } = await supabase
         .from('transactions')
         .select('delta_credits, created_at')
@@ -203,13 +211,17 @@ export default function AdminDashboard() {
       for (let i = 6; i >= 0; i--) {
         const date = new Date();
         date.setDate(date.getDate() - i);
-        const dayStart = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+        const dayStart = new Date(
+          date.getFullYear(),
+          date.getMonth(),
+          date.getDate()
+        );
         const dayEnd = new Date(dayStart.getTime() + 24 * 60 * 60 * 1000);
-        
+
         last7Days.push({
           date: dayStart.toISOString().split('T')[0],
           start: dayStart.toISOString(),
-          end: dayEnd.toISOString()
+          end: dayEnd.toISOString(),
         });
       }
 
@@ -220,9 +232,13 @@ export default function AdminDashboard() {
       for (let i = 6; i >= 0; i--) {
         const date = new Date();
         date.setDate(date.getDate() - i);
-        const dayStart = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+        const dayStart = new Date(
+          date.getFullYear(),
+          date.getMonth(),
+          date.getDate()
+        );
         const dayEnd = new Date(dayStart.getTime() + 24 * 60 * 60 * 1000);
-        
+
         const { data: dayTransactions } = await supabase
           .from('transactions')
           .select('delta_credits')
@@ -231,14 +247,15 @@ export default function AdminDashboard() {
           .lt('created_at', dayEnd.toISOString());
 
         const dayCredits = (dayTransactions || []).reduce(
-          (sum: number, transaction: any) => sum + Math.abs(transaction.delta_credits),
+          (sum: number, transaction: any) =>
+            sum + Math.abs(transaction.delta_credits),
           0
         );
 
         last7DaysUsage.push({
           date: dayStart.toISOString().split('T')[0] || '',
           credits: dayCredits,
-          transactions: dayTransactions?.length || 0
+          transactions: dayTransactions?.length || 0,
         });
       }
 
@@ -624,7 +641,9 @@ export default function AdminDashboard() {
               <TrendingUp className='h-6 w-6 text-white' />
             </div>
             <div>
-              <h3 className='text-xl font-bold text-white'>Son 7 Gün Analizi</h3>
+              <h3 className='text-xl font-bold text-white'>
+                Son 7 Gün Analizi
+              </h3>
               <p className='text-slate-400'>Günlük kredi harcama trendi</p>
             </div>
           </div>
@@ -634,9 +653,14 @@ export default function AdminDashboard() {
           {stats.last7DaysUsage.map((day, index) => {
             const isToday = index === 6;
             const isYesterday = index === 5;
-            const dayName = isToday ? 'Bugün' : isYesterday ? 'Dün' : 
-              new Date(day.date).toLocaleDateString('tr-TR', { weekday: 'short' });
-            
+            const dayName = isToday
+              ? 'Bugün'
+              : isYesterday
+                ? 'Dün'
+                : new Date(day.date).toLocaleDateString('tr-TR', {
+                    weekday: 'short',
+                  });
+
             return (
               <div
                 key={day.date}
@@ -655,7 +679,7 @@ export default function AdminDashboard() {
                   <div
                     className='h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-500'
                     style={{
-                      width: `${Math.min(100, (day.credits / Math.max(...stats.last7DaysUsage.map(d => d.credits), 1)) * 100)}%`
+                      width: `${Math.min(100, (day.credits / Math.max(...stats.last7DaysUsage.map(d => d.credits), 1)) * 100)}%`,
                     }}
                   />
                 </div>
@@ -669,13 +693,23 @@ export default function AdminDashboard() {
             <div>
               <div className='text-sm text-slate-400'>Toplam 7 Gün</div>
               <div className='text-2xl font-bold text-white'>
-                {stats.last7DaysUsage.reduce((sum, day) => sum + day.credits, 0)} Kredi
+                {stats.last7DaysUsage.reduce(
+                  (sum, day) => sum + day.credits,
+                  0
+                )}{' '}
+                Kredi
               </div>
             </div>
             <div className='text-right'>
               <div className='text-sm text-slate-400'>Ortalama Günlük</div>
               <div className='text-lg font-semibold text-blue-400'>
-                {Math.round(stats.last7DaysUsage.reduce((sum, day) => sum + day.credits, 0) / 7)} Kredi
+                {Math.round(
+                  stats.last7DaysUsage.reduce(
+                    (sum, day) => sum + day.credits,
+                    0
+                  ) / 7
+                )}{' '}
+                Kredi
               </div>
             </div>
           </div>
@@ -696,31 +730,53 @@ export default function AdminDashboard() {
           </h3>
           <div className='flex items-center space-x-2'>
             <div className='text-cyan-400 text-sm font-medium'>
-              {systemPerformance ? 
-                `Son güncelleme: ${new Date(systemPerformance.timestamp).toLocaleTimeString('tr-TR')}` : 
-                'Real-time'}
+              {systemPerformance
+                ? `Son güncelleme: ${new Date(systemPerformance.timestamp).toLocaleTimeString('tr-TR')}`
+                : 'Real-time'}
             </div>
-            <button 
+            <button
               onClick={() => refreshPerformance()}
               className='p-1 rounded-md bg-blue-900/50 hover:bg-blue-800/50 transition-colors'
               title='Verileri yenile'
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-cyan-400">
-                <path d="M21 2v6h-6"></path>
-                <path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path>
-                <path d="M3 22v-6h6"></path>
-                <path d="M21 12a9 9 0 0 1-15 6.7L3 16"></path>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='16'
+                height='16'
+                viewBox='0 0 24 24'
+                fill='none'
+                stroke='currentColor'
+                strokeWidth='2'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                className='text-cyan-400'
+              >
+                <path d='M21 2v6h-6'></path>
+                <path d='M3 12a9 9 0 0 1 15-6.7L21 8'></path>
+                <path d='M3 22v-6h6'></path>
+                <path d='M21 12a9 9 0 0 1-15 6.7L3 16'></path>
               </svg>
             </button>
-            <button 
+            <button
               onClick={() => refreshPerformance()}
               className='p-1 rounded-md bg-green-900/50 hover:bg-green-800/50 transition-colors'
               title='Performans verilerini yenile'
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-green-400">
-                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                <path d="M2 17l10 5 10-5"></path>
-                <path d="M2 12l10 5 10-5"></path>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='16'
+                height='16'
+                viewBox='0 0 24 24'
+                fill='none'
+                stroke='currentColor'
+                strokeWidth='2'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                className='text-green-400'
+              >
+                <path d='M12 2L2 7l10 5 10-5-10-5z'></path>
+                <path d='M2 17l10 5 10-5'></path>
+                <path d='M2 12l10 5 10-5'></path>
               </svg>
             </button>
           </div>
@@ -729,28 +785,40 @@ export default function AdminDashboard() {
         <div className='grid grid-cols-1 md:grid-cols-4 gap-6'>
           <div className='text-center'>
             <div className='text-2xl font-bold text-green-400 mb-1'>
-              {systemPerformance ? `${systemPerformance.uptime.toFixed(1)}%` : '99.9%'}
+              {systemPerformance
+                ? `${systemPerformance.uptime.toFixed(1)}%`
+                : '99.9%'}
             </div>
             <div className='text-sm text-slate-300'>Uptime</div>
             <div className='mt-2 bg-green-400/20 rounded-full h-2'>
               <div
                 className='bg-green-400 rounded-full h-2'
-                style={{ width: `${systemPerformance ? systemPerformance.uptime : 99.9}%` }}
+                style={{
+                  width: `${systemPerformance ? systemPerformance.uptime : 99.9}%`,
+                }}
               ></div>
             </div>
           </div>
 
           <div className='text-center'>
             <div className='text-2xl font-bold text-blue-400 mb-1'>
-              {systemPerformance ? `${systemPerformance.responseTime}ms` : '45ms'}
+              {systemPerformance
+                ? `${systemPerformance.responseTime}ms`
+                : '45ms'}
             </div>
             <div className='text-sm text-slate-300'>Response Time</div>
             <div className='mt-2 bg-blue-400/20 rounded-full h-2'>
               <div
                 className='bg-blue-400 rounded-full h-2'
-                style={{ 
-                  width: `${systemPerformance ? 
-                    Math.min(100, (systemPerformance.responseTime / 100) * 100) : 85}%` 
+                style={{
+                  width: `${
+                    systemPerformance
+                      ? Math.min(
+                          100,
+                          (systemPerformance.responseTime / 100) * 100
+                        )
+                      : 85
+                  }%`,
                 }}
               ></div>
             </div>
@@ -758,15 +826,20 @@ export default function AdminDashboard() {
 
           <div className='text-center'>
             <div className='text-2xl font-bold text-purple-400 mb-1'>
-              {systemPerformance ? `${systemPerformance.memoryUsage.toFixed(1)}GB` : '2.4GB'}
+              {systemPerformance
+                ? `${systemPerformance.memoryUsage.toFixed(1)}GB`
+                : '2.4GB'}
             </div>
             <div className='text-sm text-slate-300'>Memory Usage</div>
             <div className='mt-2 bg-purple-400/20 rounded-full h-2'>
               <div
                 className='bg-purple-400 rounded-full h-2'
-                style={{ 
-                  width: `${systemPerformance ? 
-                    Math.min(100, (systemPerformance.memoryUsage / 4) * 100) : 60}%` 
+                style={{
+                  width: `${
+                    systemPerformance
+                      ? Math.min(100, (systemPerformance.memoryUsage / 4) * 100)
+                      : 60
+                  }%`,
                 }}
               ></div>
             </div>
@@ -780,19 +853,21 @@ export default function AdminDashboard() {
             <div className='mt-2 bg-orange-400/20 rounded-full h-2'>
               <div
                 className='bg-orange-400 rounded-full h-2'
-                style={{ 
-                  width: `${systemPerformance ? systemPerformance.cpuUsage : 12}%` 
+                style={{
+                  width: `${systemPerformance ? systemPerformance.cpuUsage : 12}%`,
                 }}
               ></div>
             </div>
           </div>
         </div>
-        
+
         {systemPerformance && systemPerformance.activeUsers > 0 && (
           <div className='mt-4 p-3 bg-blue-900/30 rounded-lg'>
             <div className='flex items-center justify-between'>
               <div className='text-sm text-slate-300'>Aktif Kullanıcılar:</div>
-              <div className='text-lg font-bold text-blue-400'>{systemPerformance.activeUsers}</div>
+              <div className='text-lg font-bold text-blue-400'>
+                {systemPerformance.activeUsers}
+              </div>
             </div>
           </div>
         )}

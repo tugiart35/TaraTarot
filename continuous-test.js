@@ -2,7 +2,7 @@
 
 /**
  * 🔄 Sürekli Test Scripti
- * 
+ *
  * Bu script belirli aralıklarla test yapar:
  * - Her 30 saniyede bir test
  * - Rastgele kullanıcı verileri
@@ -38,14 +38,17 @@ function saveTestStats() {
     totalTests: testCount,
     successfulTests: successCount,
     failedTests: failureCount,
-    successRate: testCount > 0 ? (successCount / testCount * 100).toFixed(2) : 0,
-    lastUpdate: new Date().toISOString()
+    successRate:
+      testCount > 0 ? ((successCount / testCount) * 100).toFixed(2) : 0,
+    lastUpdate: new Date().toISOString(),
   };
-  
+
   const statsFile = path.join(__dirname, 'test-stats.json');
   fs.writeFileSync(statsFile, JSON.stringify(stats, null, 2));
-  
-  console.log(`📊 İstatistikler: ${successCount}/${testCount} başarılı (%${stats.successRate})`);
+
+  console.log(
+    `📊 İstatistikler: ${successCount}/${testCount} başarılı (%${stats.successRate})`
+  );
 }
 
 async function continuousTest() {
@@ -53,31 +56,31 @@ async function continuousTest() {
   console.log('⏰ Her 30 saniyede bir test yapılacak');
   console.log('🛑 Durdurmak için Ctrl+C');
   console.log('─'.repeat(50));
-  
+
   const interval = setInterval(async () => {
     testCount++;
-    console.log(`\n🧪 Test ${testCount} başlatılıyor... (${new Date().toLocaleTimeString()})`);
-    
+    console.log(
+      `\n🧪 Test ${testCount} başlatılıyor... (${new Date().toLocaleTimeString()})`
+    );
+
     try {
       const success = await runSingleTest();
       saveTestStats();
-      
+
       if (success) {
         console.log(`✅ Test ${testCount} tamamlandı`);
       } else {
         console.log(`❌ Test ${testCount} başarısız`);
       }
-      
     } catch (error) {
       console.error(`❌ Test ${testCount} hatası:`, error.message);
       failureCount++;
       saveTestStats();
     }
-    
+
     console.log('⏳ Sonraki test 30 saniye sonra...');
-    
   }, 30000); // 30 saniye
-  
+
   // Graceful shutdown
   process.on('SIGINT', () => {
     console.log('\n🛑 Test durduruluyor...');
@@ -86,7 +89,9 @@ async function continuousTest() {
     console.log(`   Toplam Test: ${testCount}`);
     console.log(`   Başarılı: ${successCount}`);
     console.log(`   Başarısız: ${failureCount}`);
-    console.log(`   Başarı Oranı: %${testCount > 0 ? (successCount / testCount * 100).toFixed(2) : 0}`);
+    console.log(
+      `   Başarı Oranı: %${testCount > 0 ? ((successCount / testCount) * 100).toFixed(2) : 0}`
+    );
     process.exit(0);
   });
 }

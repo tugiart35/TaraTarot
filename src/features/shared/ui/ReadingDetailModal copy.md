@@ -1,184 +1,117 @@
-/*
- * Okuma Detay Modal Komponenti - Modernize Edilmiş
- *
- * Bu dosya okuma detaylarını göstermek için kullanılan modal komponentini içerir.
- * Modern tasarım, gradient efektler ve glassmorphism ile güncellenmiştir.
- *
- * Bağlı dosyalar:
- * - Lucide React ikonları
- * - Next.js Image komponenti
- *
- * Supabase değişkenleri ve tablolar:
- * - readings tablosu (okuma verileri)
- *
- * Geliştirme önerileri:
- * - PDF export özelliği eklendi
- * - Modern animasyonlar eklendi
- * - Responsive tasarım iyileştirildi
- *
- * Tespit edilen hatalar:
- * - Reading type mapping düzeltildi
- * - Kart görselleri path'i düzeltildi
- * - Veri yapısı basitleştirildi
- *
- * Kullanım durumları:
- * - Gerekli: Okuma detaylarını göstermek için
- * - Modern: Gradient tasarım ve glassmorphism
- * - Responsive: Tüm cihazlarda çalışır
- */
+/\*
+
+- Okuma Detay Modal Komponenti - Modernize Edilmiş
+-
+- Bu dosya okuma detaylarını göstermek için kullanılan modal komponentini
+  içerir.
+- Modern tasarım, gradient efektler ve glassmorphism ile güncellenmiştir.
+-
+- Bağlı dosyalar:
+- - Lucide React ikonları
+- - Next.js Image komponenti
+-
+- Supabase değişkenleri ve tablolar:
+- - readings tablosu (okuma verileri)
+-
+- Geliştirme önerileri:
+- - PDF export özelliği eklendi
+- - Modern animasyonlar eklendi
+- - Responsive tasarım iyileştirildi
+-
+- Tespit edilen hatalar:
+- - Reading type mapping düzeltildi
+- - Kart görselleri path'i düzeltildi
+- - Veri yapısı basitleştirildi
+-
+- Kullanım durumları:
+- - Gerekli: Okuma detaylarını göstermek için
+- - Modern: Gradient tasarım ve glassmorphism
+- - Responsive: Tüm cihazlarda çalışır \*/
 
 'use client';
 
-import {
-  X,
-  Calendar,
-  Star,
-  Heart,
-  Hash,
-  Eye,
-  MessageSquare,
-  BookOpen,
-  Sparkles,
-} from 'lucide-react';
-import Image from 'next/image';
-import { getCardImagePath } from '@/features/tarot/lib/a-tarot-helpers';
-import type { TarotCard } from '@/types/tarot';
-import { useTranslations } from '@/hooks/useTranslations';
-import { getI18nMeaningByCardAndPosition } from '@/features/tarot/lib/love/position-meanings-index';
-import { getI18nPosition4Meaning } from '@/features/tarot/lib/love/position-4-uzun-vadeli-surec';
-import { getCardNameMappingSync } from '@/features/tarot/lib/love/card-name-mapping';
-import { getCareerMeaningByCardAndPosition } from '@/features/tarot/lib/career/position-meanings-index';
-import { getMoneyMeaningByCardAndPosition } from '@/features/tarot/lib/money/position-meanings-index';
-import { getRelationshipAnalysisMeaningByCardAndPosition } from '@/features/tarot/lib/relationship-analysis/position-meanings-index';
-import { getSituationAnalysisMeaningByCardAndPosition } from '@/features/tarot/lib/situation-analysis/position-meanings-index';
-import { getRelationshipProblemsMeaningByCardAndPosition } from '@/features/tarot/lib/relationship-problems/position-meanings-index';
-import { getNewLoverMeaningByCardAndPosition } from '@/features/tarot/lib/new-lover/position-meanings-index';
-import { getProblemSolvingMeaningByCardAndPosition } from '@/features/tarot/lib/problem-solving/position-meanings-index';
-import { getMarriageMeaningByCardAndPosition } from '@/features/tarot/lib/marriage/position-meanings-index';
-// Eski import kaldırıldı - yeni yapıda kullanılmıyor
-import { lazy, Suspense } from 'react';
-import { LazyLoadingFallback } from './LazyComponents';
-import { sanitizeHtml } from '@/utils/security';
+import { X, Calendar, Star, Heart, Hash, Eye, MessageSquare, BookOpen, Sparkles,
+} from 'lucide-react'; import Image from 'next/image'; import { getCardImagePath
+} from '@/features/tarot/lib/a-tarot-helpers'; import type { TarotCard } from
+'@/types/tarot'; import { useTranslations } from '@/hooks/useTranslations';
+import { getI18nMeaningByCardAndPosition } from
+'@/features/tarot/lib/love/position-meanings-index'; import {
+getI18nPosition4Meaning } from
+'@/features/tarot/lib/love/position-4-uzun-vadeli-surec'; import {
+getCardNameMappingSync } from '@/features/tarot/lib/love/card-name-mapping';
+import { getCareerMeaningByCardAndPosition } from
+'@/features/tarot/lib/career/position-meanings-index'; import {
+getMoneyMeaningByCardAndPosition } from
+'@/features/tarot/lib/money/position-meanings-index'; import {
+getRelationshipAnalysisMeaningByCardAndPosition } from
+'@/features/tarot/lib/relationship-analysis/position-meanings-index'; import {
+getSituationAnalysisMeaningByCardAndPosition } from
+'@/features/tarot/lib/situation-analysis/position-meanings-index'; import {
+getRelationshipProblemsMeaningByCardAndPosition } from
+'@/features/tarot/lib/relationship-problems/position-meanings-index'; import {
+getNewLoverMeaningByCardAndPosition } from
+'@/features/tarot/lib/new-lover/position-meanings-index'; import {
+getProblemSolvingMeaningByCardAndPosition } from
+'@/features/tarot/lib/problem-solving/position-meanings-index'; import {
+getMarriageMeaningByCardAndPosition } from
+'@/features/tarot/lib/marriage/position-meanings-index'; // Eski import
+kaldırıldı - yeni yapıda kullanılmıyor import { lazy, Suspense } from 'react';
+import { LazyLoadingFallback } from './LazyComponents'; import { sanitizeHtml }
+from '@/utils/security';
 
-// PDF Export'u lazy loading ile yükle
-const PDFExport = lazy(() => import('./PDFExport'));
+// PDF Export'u lazy loading ile yükle const PDFExport = lazy(() =>
+import('./PDFExport'));
 
-interface Reading {
-  id: string;
-  user_id: string;
-  reading_type: string;
-  cards: string;
-  interpretation: string;
-  questions: any;
-  status: 'pending' | 'reviewed' | 'completed';
-  created_at: string;
-  updated_at?: string;
-  admin_notes?: string;
-  title?: string;
-  summary?: string;
-  cost_credits?: number;
-  spread_name?: string;
-}
+interface Reading { id: string; user_id: string; reading_type: string; cards:
+string; interpretation: string; questions: any; status: 'pending' | 'reviewed' |
+'completed'; created_at: string; updated_at?: string; admin_notes?: string;
+title?: string; summary?: string; cost_credits?: number; spread_name?: string; }
 
-interface ReadingDetailModalProps {
-  reading: Reading | null;
-  isOpen: boolean;
-  onClose: () => void;
-}
+interface ReadingDetailModalProps { reading: Reading | null; isOpen: boolean;
+onClose: () => void; }
 
-export default function ReadingDetailModal({
-  reading,
-  isOpen,
-  onClose,
-}: ReadingDetailModalProps) {
-  const { t } = useTranslations();
+export default function ReadingDetailModal({ reading, isOpen, onClose, }:
+ReadingDetailModalProps) { const { t } = useTranslations();
 
-  if (!isOpen || !reading) {
-    return null;
-  }
+if (!isOpen || !reading) { return null; }
 
-  const formatDate = (dateString: string) => {
-    const locale = t('common.locale', 'tr-TR');
-    return new Date(dateString).toLocaleDateString(locale, {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric',
-      hour: '2-digit',
-      minute: '2-digit',
-    });
-  };
+const formatDate = (dateString: string) => { const locale = t('common.locale',
+'tr-TR'); return new Date(dateString).toLocaleDateString(locale, { day:
+'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit',
+}); };
 
-  const getReadingIcon = (type: string) => {
-    if (type.includes('LOVE')) {
-      return <Heart className='h-6 w-6 text-pink-400' />;
-    }
-    if (type.includes('GENERAL') || type.includes('THREE_CARD')) {
-      return <Star className='h-6 w-6 text-blue-400' />;
-    }
-    if (type.includes('CAREER')) {
-      return <Calendar className='h-6 w-6 text-emerald-400' />;
-    }
-    if (type.includes('NUMEROLOGY')) {
-      return <Hash className='h-6 w-6 text-purple-400' />;
-    }
-    return <Star className='h-6 w-6 text-purple-400' />;
-  };
+const getReadingIcon = (type: string) => { if (type.includes('LOVE')) { return
+<Heart className='h-6 w-6 text-pink-400' />; } if (type.includes('GENERAL') ||
+type.includes('THREE_CARD')) { return
+<Star className='h-6 w-6 text-blue-400' />; } if (type.includes('CAREER')) {
+return <Calendar className='h-6 w-6 text-emerald-400' />; } if
+(type.includes('NUMEROLOGY')) { return
+<Hash className='h-6 w-6 text-purple-400' />; } return
+<Star className='h-6 w-6 text-purple-400' />; };
 
-  const getReadingGradient = (type: string) => {
-    if (type.includes('LOVE')) {
-      return 'from-pink-500/20 to-rose-500/20 border-pink-500/30';
-    }
-    if (type.includes('GENERAL') || type.includes('THREE_CARD')) {
-      return 'from-blue-500/20 to-cyan-500/20 border-blue-500/30';
-    }
-    if (type.includes('CAREER')) {
-      return 'from-emerald-500/20 to-teal-500/20 border-emerald-500/30';
-    }
-    if (type.includes('NUMEROLOGY')) {
-      return 'from-purple-500/20 to-indigo-500/20 border-purple-500/30';
-    }
-    return 'from-purple-500/20 to-indigo-500/20 border-purple-500/30';
-  };
+const getReadingGradient = (type: string) => { if (type.includes('LOVE')) {
+return 'from-pink-500/20 to-rose-500/20 border-pink-500/30'; } if
+(type.includes('GENERAL') || type.includes('THREE_CARD')) { return
+'from-blue-500/20 to-cyan-500/20 border-blue-500/30'; } if
+(type.includes('CAREER')) { return 'from-emerald-500/20 to-teal-500/20
+border-emerald-500/30'; } if (type.includes('NUMEROLOGY')) { return
+'from-purple-500/20 to-indigo-500/20 border-purple-500/30'; } return
+'from-purple-500/20 to-indigo-500/20 border-purple-500/30'; };
 
-  const getStatusInfo = (status: string) => {
-    switch (status) {
-      case 'completed':
-        return {
-          text: t('readingModal.completed', 'Tamamlandı'),
-          color: 'bg-green-500/20 text-green-400 border-green-500/30',
-          icon: '✅',
-        };
-      case 'reviewed':
-        return {
-          text: t('readingModal.reviewed', 'İncelendi'),
-          color: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30',
-          icon: '👁️',
-        };
-      case 'pending':
-        return {
-          text: t('readingModal.pending', 'Beklemede'),
-          color: 'bg-blue-500/20 text-blue-400 border-blue-500/30',
-          icon: '⏳',
-        };
-      default:
-        return {
-          text: status,
-          color: 'bg-gray-500/20 text-gray-400 border-gray-500/30',
-          icon: '❓',
-        };
-    }
-  };
+const getStatusInfo = (status: string) => { switch (status) { case 'completed':
+return { text: t('readingModal.completed', 'Tamamlandı'), color:
+'bg-green-500/20 text-green-400 border-green-500/30', icon: '✅', }; case
+'reviewed': return { text: t('readingModal.reviewed', 'İncelendi'), color:
+'bg-yellow-500/20 text-yellow-400 border-yellow-500/30', icon: '👁️', }; case
+'pending': return { text: t('readingModal.pending', 'Beklemede'), color:
+'bg-blue-500/20 text-blue-400 border-blue-500/30', icon: '⏳', }; default:
+return { text: status, color: 'bg-gray-500/20 text-gray-400 border-gray-500/30',
+icon: '❓', }; } };
 
-  const handleDownload = async () => {
-    try {
-      // Modal içeriğini PDF'e dönüştür
-      const modalContent = document.querySelector(
-        '[data-modal-content]'
-      ) as HTMLElement;
-      if (!modalContent) {
-        // Modal content not found - burada backend'e bağlanılacak
-        return;
-      }
+const handleDownload = async () => { try { // Modal içeriğini PDF'e dönüştür
+const modalContent = document.querySelector( '[data-modal-content]' ) as
+HTMLElement; if (!modalContent) { // Modal content not found - burada backend'e
+bağlanılacak return; }
 
       // HTML sanitization before PDF generation
       const sanitizedHtml = sanitizeHtml(modalContent.innerHTML);
@@ -381,13 +314,13 @@ export default function ReadingDetailModal({
         existingStyle.remove();
       }
     }
-  };
 
-  const getCardImage = (cardData: any) => {
-    // Eğer cardData bir TarotCard objesi ise ve image alanı varsa, getCardImagePath kullan
-    if (cardData && typeof cardData === 'object' && cardData.image) {
-      return getCardImagePath(cardData as TarotCard);
-    }
+};
+
+const getCardImage = (cardData: any) => { // Eğer cardData bir TarotCard objesi
+ise ve image alanı varsa, getCardImagePath kullan if (cardData && typeof
+cardData === 'object' && cardData.image) { return getCardImagePath(cardData as
+TarotCard); }
 
     // Veritabanından gelen kart verisi için (id, name, nameTr var ama image yok)
     if (cardData && typeof cardData === 'object' && cardData.id) {
@@ -406,95 +339,33 @@ export default function ReadingDetailModal({
       .toLowerCase();
 
     return `/cards/rws/${cleanName}.jpg`;
-  };
 
-  const getCardImageById = (cardId: number, cardName: string) => {
-    // Kart ID'sine göre doğru dosya adını oluştur (gerçek dosya isimlerine göre)
-    const cardMappings: Record<number, string> = {
-      // Major Arcana (0-21)
-      0: '0-Fool',
-      1: 'I-Magician',
-      2: 'II-HighPriestess',
-      3: 'III-Empress',
-      4: 'IV-Emperor',
-      5: 'V-Hierophant',
-      6: 'VI-Lovers',
-      7: 'VII-Chariot',
-      8: 'VIII-Strength',
-      9: 'IX-Hermit',
-      10: 'X-WheelOfFortune',
-      11: 'XI-Justice',
-      12: 'XII-HangedMan',
-      13: 'XIII-Death',
-      14: 'XIV-Temperance',
-      15: 'XV-Devil',
-      16: 'XVI-Tower',
-      17: 'XVII-Star',
-      18: 'XVIII-Moon',
-      19: 'XIX-Sun',
-      20: 'XX-Judgement',
-      21: 'XXI-World',
-      // Minor Arcana - Cups (22-35)
-      22: 'Ace-Cups',
-      23: 'II-Cups',
-      24: 'III-Cups',
-      25: 'IV-Cups',
-      26: 'V-Cups',
-      27: 'VI-Cups',
-      28: 'VII-Cups',
-      29: 'VIII-Cups',
-      30: 'IX-Cups',
-      31: 'X-Cups',
-      32: 'Page-Cups',
-      33: 'Knight-Cups',
-      34: 'Queen-Cups',
-      35: 'King-Cups',
-      // Minor Arcana - Wands (36-49)
-      36: 'Ace-Wands',
-      37: 'II-Wands',
-      38: 'III-Wands',
-      39: 'IV-Wands',
-      40: 'V-Wands',
-      41: 'VI-Wands',
-      42: 'VII-Wands',
-      43: 'VIII-Wands',
-      44: 'IX-Wands',
-      45: 'X-Wands',
-      46: 'Page-Wands',
-      47: 'Knight-Wands',
-      48: 'Queen-Wands',
-      49: 'King-Wands',
-      // Minor Arcana - Swords (50-63)
-      50: 'Ace-Swords',
-      51: 'II-Swords',
-      52: 'III-Swords',
-      53: 'IV-Swords',
-      54: 'V-Swords',
-      55: 'VI-Swords',
-      56: 'VII-Swords',
-      57: 'VIII-Swords',
-      58: 'IX-Swords',
-      59: 'X-Swords',
-      60: 'Page-Swords',
-      61: 'Knight-Swords',
-      62: 'Queen-Swords',
-      63: 'King-Swords',
-      // Minor Arcana - Pentacles (64-77)
-      64: 'Ace-Pentacles',
-      65: 'II-Pentacles',
-      66: 'III-Pentacles',
-      67: 'IV-Pentacles',
-      68: 'V-Pentacles',
-      69: 'VI-Pentacles',
-      70: 'VII-Pentacles',
-      71: 'VIII-Pentacles',
-      72: 'IX-Pentacles',
-      73: 'X-Pentacles',
-      74: 'Page-Pentacles',
-      75: 'Knight-Pentacles',
-      76: 'Queen-Pentacles',
-      77: 'King-Pentacles',
-    };
+};
+
+const getCardImageById = (cardId: number, cardName: string) => { // Kart ID'sine
+göre doğru dosya adını oluştur (gerçek dosya isimlerine göre) const
+cardMappings: Record<number, string> = { // Major Arcana (0-21) 0: '0-Fool', 1:
+'I-Magician', 2: 'II-HighPriestess', 3: 'III-Empress', 4: 'IV-Emperor', 5:
+'V-Hierophant', 6: 'VI-Lovers', 7: 'VII-Chariot', 8: 'VIII-Strength', 9:
+'IX-Hermit', 10: 'X-WheelOfFortune', 11: 'XI-Justice', 12: 'XII-HangedMan', 13:
+'XIII-Death', 14: 'XIV-Temperance', 15: 'XV-Devil', 16: 'XVI-Tower', 17:
+'XVII-Star', 18: 'XVIII-Moon', 19: 'XIX-Sun', 20: 'XX-Judgement', 21:
+'XXI-World', // Minor Arcana - Cups (22-35) 22: 'Ace-Cups', 23: 'II-Cups', 24:
+'III-Cups', 25: 'IV-Cups', 26: 'V-Cups', 27: 'VI-Cups', 28: 'VII-Cups', 29:
+'VIII-Cups', 30: 'IX-Cups', 31: 'X-Cups', 32: 'Page-Cups', 33: 'Knight-Cups',
+34: 'Queen-Cups', 35: 'King-Cups', // Minor Arcana - Wands (36-49) 36:
+'Ace-Wands', 37: 'II-Wands', 38: 'III-Wands', 39: 'IV-Wands', 40: 'V-Wands', 41:
+'VI-Wands', 42: 'VII-Wands', 43: 'VIII-Wands', 44: 'IX-Wands', 45: 'X-Wands',
+46: 'Page-Wands', 47: 'Knight-Wands', 48: 'Queen-Wands', 49: 'King-Wands', //
+Minor Arcana - Swords (50-63) 50: 'Ace-Swords', 51: 'II-Swords', 52:
+'III-Swords', 53: 'IV-Swords', 54: 'V-Swords', 55: 'VI-Swords', 56:
+'VII-Swords', 57: 'VIII-Swords', 58: 'IX-Swords', 59: 'X-Swords', 60:
+'Page-Swords', 61: 'Knight-Swords', 62: 'Queen-Swords', 63: 'King-Swords', //
+Minor Arcana - Pentacles (64-77) 64: 'Ace-Pentacles', 65: 'II-Pentacles', 66:
+'III-Pentacles', 67: 'IV-Pentacles', 68: 'V-Pentacles', 69: 'VI-Pentacles', 70:
+'VII-Pentacles', 71: 'VIII-Pentacles', 72: 'IX-Pentacles', 73: 'X-Pentacles',
+74: 'Page-Pentacles', 75: 'Knight-Pentacles', 76: 'Queen-Pentacles', 77:
+'King-Pentacles', };
 
     const fileName = cardMappings[cardId];
     if (fileName) {
@@ -508,20 +379,14 @@ export default function ReadingDetailModal({
       .toLowerCase();
 
     return `/cards/rws/${cleanName}.jpg`;
-  };
 
-  // Genel kart anlamı çekme fonksiyonu - tüm açılım türleri için
-  const getCardMeaningBySpreadType = (
-    cardName: string,
-    position: number,
-    spreadType: string
-  ) => {
-    console.log('🚀 getCardMeaningBySpreadType called:', {
-      cardName,
-      position,
-      spreadType
-    });
-    
+};
+
+// Genel kart anlamı çekme fonksiyonu - tüm açılım türleri için const
+getCardMeaningBySpreadType = ( cardName: string, position: number, spreadType:
+string ) => { console.log('🚀 getCardMeaningBySpreadType called:', { cardName,
+position, spreadType });
+
     try {
       // Kart adını İngilizce'ye çevir (gerekirse)
       const englishCardName = cardName;
@@ -532,35 +397,35 @@ export default function ReadingDetailModal({
         case 'aşk':
           console.log('💕 Love açılımı seçildi');
           console.log('💕 Kart adı:', cardName, 'Pozisyon:', position);
-          
+
           // Önce i18n ile dene
           const loveResult = getI18nMeaningByCardAndPosition(cardName, position, t);
           console.log('💕 Love result:', loveResult);
-          
+
           // Eğer i18n sonucu null ise, direkt position meanings'den ara
           if (!loveResult) {
             console.log('💕 i18n null, direkt arama yapılıyor');
-            
+
             // Hazır mapping'i kullan
             const cardNameMapping = getCardNameMappingSync();
             const englishCardName = cardNameMapping[cardName] || cardName;
             console.log('💕 İngilizce kart adı:', englishCardName);
-            
+
             // İngilizce kart adı ile tekrar dene
             console.log('💕 İngilizce kart adı ile arama yapılıyor:', englishCardName, 'Pozisyon:', position);
             const englishLoveResult = getI18nMeaningByCardAndPosition(englishCardName, position, t);
             console.log('💕 İngilizce Love result:', englishLoveResult);
-            
+
             if (englishLoveResult) {
               return englishLoveResult;
             }
-            
+
             // Hala bulunamazsa, direkt position meanings array'inden ara
             console.log('💕 Direkt array arama yapılıyor');
             // Bu kısmı sonra implement edeceğiz
             return null;
           }
-          
+
           return loveResult;
 
         case 'career':
@@ -656,14 +521,12 @@ export default function ReadingDetailModal({
       // console.warn('Kart anlamı çekilirken hata:', error);
       return null;
     }
-  };
 
-  const renderModernInterpretation = () => {
-    // Kart verilerini parse et - interpretation yoksa da kartları göster
-    const cardsData =
-      typeof reading.cards === 'string'
-        ? JSON.parse(reading.cards)
-        : reading.cards;
+};
+
+const renderModernInterpretation = () => { // Kart verilerini parse et -
+interpretation yoksa da kartları göster const cardsData = typeof reading.cards
+=== 'string' ? JSON.parse(reading.cards) : reading.cards;
 
     // Eğer kartlar yoksa hiçbir şey gösterme
     if (!Array.isArray(cardsData) || cardsData.length === 0) {
@@ -802,7 +665,7 @@ export default function ReadingDetailModal({
             if (!meaningText) {
               // Açılım türünü belirle
               const spreadType = reading.reading_type || 'love';
-              
+
               // Debug için console.log ekle
               console.log('🔍 Debug kart anlamı:', {
                 cardName,
@@ -939,12 +802,10 @@ export default function ReadingDetailModal({
         </div>
       </div>
     );
-  };
 
-  const renderQuestions = () => {
-    if (!reading.questions) {
-      return null;
-    }
+};
+
+const renderQuestions = () => { if (!reading.questions) { return null; }
 
     const questions = reading.questions;
     const questionItems: { question: string; answer: string }[] = [];
@@ -1045,55 +906,35 @@ export default function ReadingDetailModal({
         ))}
       </div>
     );
-  };
 
-  const statusInfo = getStatusInfo(reading.status);
+};
 
-  return (
-    <div className='fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4'>
-      <div className='bg-gradient-to-br from-night via-purple-900/20 to-night rounded-2xl max-w-6xl w-full max-h-[90vh] overflow-y-auto border border-lavender/20 shadow-2xl'>
-        {/* Modal Header */}
-        <div className='relative border-b border-lavender/20 p-6 bg-gradient-to-r from-lavender/5 to-purple-500/5'>
-          <div className='flex items-center justify-between'>
-            <div className='flex items-center space-x-4'>
-              <div
-                className={`p-3 rounded-xl bg-gradient-to-br ${getReadingGradient(reading.reading_type)}`}
-              >
-                {getReadingIcon(reading.reading_type)}
-              </div>
-              <div>
-                <h2 className='text-2xl font-bold bg-gradient-to-r from-gold to-yellow-400 bg-clip-text text-transparent'>
-                  {reading.title ||
-                    t('readingModal.mysticReading', 'Tarot okuma')}
-                </h2>
-                <p className='text-lavender/90'>
-                  {reading.spread_name ||
-                    t('readingModal.generalSpread', 'Genel Yayılım')}
-                </p>
-                <div className='flex items-center space-x-2 mt-1'>
-                  {reading.reading_type === 'written' && (
-                    <span className='text-orange-400 bg-orange-500/20 px-2 py-1 rounded text-xs flex items-center space-x-1'>
-                      <span>📝</span>
-                      <span>Yazılı Okuma</span>
-                    </span>
-                  )}
-                  {reading.reading_type === 'detailed' && (
-                    <span className='text-purple-400 bg-purple-500/20 px-2 py-1 rounded text-xs flex items-center space-x-1'>
-                      <span>🎤</span>
-                      <span>Sesli Okuma</span>
-                    </span>
-                  )}
-                </div>
-              </div>
-            </div>
-            <button
+const statusInfo = getStatusInfo(reading.status);
+
+return (
+
+<div className='fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4'>
+<div className='bg-gradient-to-br from-night via-purple-900/20 to-night rounded-2xl max-w-6xl w-full max-h-[90vh] overflow-y-auto border border-lavender/20 shadow-2xl'>
+{/_ Modal Header _/}
+<div className='relative border-b border-lavender/20 p-6 bg-gradient-to-r from-lavender/5 to-purple-500/5'>
+<div className='flex items-center justify-between'>
+<div className='flex items-center space-x-4'> <div
+className={`p-3 rounded-xl bg-gradient-to-br ${getReadingGradient(reading.reading_type)}`} >
+{getReadingIcon(reading.reading_type)} </div> <div>
+<h2 className='text-2xl font-bold bg-gradient-to-r from-gold to-yellow-400 bg-clip-text text-transparent'>
+{reading.title || t('readingModal.mysticReading', 'Tarot okuma')} </h2>
+<p className='text-lavender/90'> {reading.spread_name ||
+t('readingModal.generalSpread', 'Genel Yayılım')} </p>
+<div className='flex items-center space-x-2 mt-1'> {reading.reading_type ===
+'written' && (
+<span className='text-orange-400 bg-orange-500/20 px-2 py-1 rounded text-xs flex items-center space-x-1'>
+<span>📝</span> <span>Yazılı Okuma</span> </span> )} {reading.reading_type ===
+'detailed' && (
+<span className='text-purple-400 bg-purple-500/20 px-2 py-1 rounded text-xs flex items-center space-x-1'>
+<span>🎤</span> <span>Sesli Okuma</span> </span> )} </div> </div> </div> <button
               onClick={onClose}
               className='p-3 bg-gradient-to-br from-lavender/10 to-purple-500/10 backdrop-blur-sm rounded-xl border border-lavender/20 hover:border-lavender/40 transition-all duration-300 hover:scale-105 text-lavender hover:text-gold'
-            >
-              <X className='h-5 w-5' />
-            </button>
-          </div>
-        </div>
+            > <X className='h-5 w-5' /> </button> </div> </div>
 
         {/* Modal Content */}
         <div className='p-6 space-y-8' data-modal-content>
@@ -1229,5 +1070,5 @@ export default function ReadingDetailModal({
         </div>
       </div>
     </div>
-  );
-}
+
+); }

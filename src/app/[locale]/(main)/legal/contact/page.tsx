@@ -19,7 +19,7 @@ export default function Contact() {
       {/* Mystical Background Effects */}
       <div className='absolute inset-0 bg-gradient-to-br from-purple-900/20 via-indigo-900/20 to-purple-800/20'></div>
       <div className='absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent'></div>
-      
+
       <main className='relative z-10 max-w-4xl mx-auto px-4 py-12'>
         {/* Header Section with Mystical Design */}
         <section className='mb-12 text-center'>
@@ -42,15 +42,19 @@ export default function Contact() {
               <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
                 <FaEnvelope className='w-5 h-5 text-purple-300' />
               </div>
-              <h2 className='text-2xl font-bold text-golden-300'>İletişim Bilgileri</h2>
+              <h2 className='text-2xl font-bold text-golden-300'>
+                İletişim Bilgileri
+              </h2>
             </div>
             <div className='grid md:grid-cols-3 gap-6'>
               <div className='text-center'>
                 <div className='w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4'>
                   <FaEnvelope className='w-8 h-8 text-white' />
                 </div>
-                <h3 className='text-lg font-semibold text-blue-300 mb-2'>E-posta</h3>
-                <a 
+                <h3 className='text-lg font-semibold text-blue-300 mb-2'>
+                  E-posta
+                </h3>
+                <a
                   href='mailto:info@busbuskimki.com'
                   className='text-golden-400 hover:text-golden-300 underline transition-colors'
                 >
@@ -61,8 +65,10 @@ export default function Contact() {
                 <div className='w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4'>
                   <FaPhone className='w-8 h-8 text-white' />
                 </div>
-                <h3 className='text-lg font-semibold text-green-300 mb-2'>Telefon</h3>
-                <a 
+                <h3 className='text-lg font-semibold text-green-300 mb-2'>
+                  Telefon
+                </h3>
+                <a
                   href='tel:+38267010176'
                   className='text-golden-400 hover:text-golden-300 underline transition-colors'
                 >
@@ -73,7 +79,9 @@ export default function Contact() {
                 <div className='w-16 h-16 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4'>
                   <FaMapMarkerAlt className='w-8 h-8 text-white' />
                 </div>
-                <h3 className='text-lg font-semibold text-purple-300 mb-2'>Adres</h3>
+                <h3 className='text-lg font-semibold text-purple-300 mb-2'>
+                  Adres
+                </h3>
                 <p className='text-cosmic-200'>Podgorica, Montenegro</p>
               </div>
             </div>
@@ -85,15 +93,20 @@ export default function Contact() {
               <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
                 <FaPaperPlane className='w-5 h-5 text-purple-300' />
               </div>
-              <h2 className='text-2xl font-bold text-golden-300'>İletişim Formu</h2>
+              <h2 className='text-2xl font-bold text-golden-300'>
+                İletişim Formu
+              </h2>
             </div>
             <div className='bg-gradient-to-r from-yellow-500/10 to-orange-500/10 p-4 rounded-lg border border-yellow-500/20 mb-6'>
               <div className='flex items-center space-x-2 text-yellow-300'>
                 <FaClock className='w-4 h-4' />
-                <span className='text-sm font-semibold'>Geliştirme Aşamasında</span>
+                <span className='text-sm font-semibold'>
+                  Geliştirme Aşamasında
+                </span>
               </div>
               <p className='text-cosmic-200 text-sm mt-1'>
-                İletişim formu ileride aktif hale getirilecektir. Şimdilik yukarıdaki iletişim bilgilerini kullanabilirsiniz.
+                İletişim formu ileride aktif hale getirilecektir. Şimdilik
+                yukarıdaki iletişim bilgilerini kullanabilirsiniz.
               </p>
             </div>
             <form className='space-y-4'>

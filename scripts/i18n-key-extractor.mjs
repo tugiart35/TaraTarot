@@ -117,16 +117,16 @@ class I18nKeyExtractor {
   // Dil dosyalarını yükle
   async loadMessageFiles() {
     console.log('📚 Dil dosyaları yükleniyor...');
-    
+
     for (const locale of SUPPORTED_LOCALES) {
       try {
         const filePath = `messages/${locale}.json`;
         const content = readFileSync(filePath, 'utf8');
         this.messages[locale] = JSON.parse(content);
-        
+
         // Anahtarları topla
         this.extractKeysFromMessages(this.messages[locale], '', locale);
-        
+
         console.log(`   ✅ ${locale}.json yüklendi`);
       } catch (error) {
         console.warn(`   ⚠️  ${locale}.json yüklenemedi: ${error.message}`);
@@ -138,7 +138,7 @@ class I18nKeyExtractor {
   extractKeysFromMessages(obj, prefix = '', locale) {
     for (const [key, value] of Object.entries(obj)) {
       const fullKey = prefix ? `${prefix}.${key}` : key;
-      
+
       if (typeof value === 'object' && value !== null) {
         this.extractKeysFromMessages(value, fullKey, locale);
       } else {
@@ -150,7 +150,7 @@ class I18nKeyExtractor {
   // Kaynak kodları analiz et
   async analyzeSourceCode() {
     console.log('🔍 Kaynak kodları analiz ediliyor...');
-    
+
     for (const dir of SOURCE_DIRS) {
       if (this.directoryExists(dir)) {
         await this.analyzeDirectory(dir);
@@ -161,11 +161,11 @@ class I18nKeyExtractor {
   // Dizin analizi
   async analyzeDirectory(dirPath) {
     const items = readdirSync(dirPath);
-    
+
     for (const item of items) {
       const fullPath = join(dirPath, item);
       const stat = statSync(fullPath);
-      
+
       if (stat.isDirectory()) {
         if (!this.shouldExcludeDir(item)) {
           await this.analyzeDirectory(fullPath);
@@ -183,11 +183,11 @@ class I18nKeyExtractor {
     try {
       const content = readFileSync(filePath, 'utf8');
       this.fileCount++;
-      
+
       // i18n anahtarlarını bul
       for (const pattern of I18N_PATTERNS) {
         const matches = content.matchAll(pattern);
-        
+
         for (const match of matches) {
           const key = match[1];
           if (key && key.trim()) {
@@ -226,7 +226,9 @@ class I18nKeyExtractor {
     console.log(`   📝 Tanımlı anahtar sayısı: ${this.definedKeys.size}`);
     console.log(`   ✅ Kullanılan anahtar sayısı: ${this.usedKeys.size}`);
     console.log(`   ❌ Eksik anahtar sayısı: ${this.missingKeys.size}`);
-    console.log(`   🗑️  Kullanılmayan anahtar sayısı: ${this.unusedKeys.size}\n`);
+    console.log(
+      `   🗑️  Kullanılmayan anahtar sayısı: ${this.unusedKeys.size}\n`
+    );
 
     // Eksik anahtarlar
     if (this.missingKeys.size > 0) {
@@ -253,12 +255,12 @@ class I18nKeyExtractor {
   // Dil dosyası durumu
   reportLanguageStatus() {
     console.log('🌍 Dil dosyası durumu:');
-    
+
     for (const locale of SUPPORTED_LOCALES) {
       if (this.messages[locale]) {
         const keyCount = this.countKeys(this.messages[locale]);
         console.log(`   ${locale}: ${keyCount} anahtar`);
-        
+
         // Eksik çevirileri kontrol et
         const missingTranslations = this.findMissingTranslations(locale);
         if (missingTranslations.length > 0) {
@@ -289,13 +291,13 @@ class I18nKeyExtractor {
     const missing = [];
     const trKeys = this.getAllKeys(this.messages.tr || {});
     const localeKeys = this.getAllKeys(this.messages[locale] || {});
-    
+
     for (const key of trKeys) {
       if (!localeKeys.includes(key)) {
         missing.push(key);
       }
     }
-    
+
     return missing;
   }
 
@@ -353,8 +355,10 @@ class I18nKeyExtractor {
 
   // Dizin hariç tutulmalı mı?
   shouldExcludeDir(dirname) {
-    return EXCLUDE_DIRS.includes(dirname) || 
-           EXCLUDE_PATTERNS.some(pattern => pattern.test(dirname));
+    return (
+      EXCLUDE_DIRS.includes(dirname) ||
+      EXCLUDE_PATTERNS.some(pattern => pattern.test(dirname))
+    );
   }
 
   // Dizin var mı?
@@ -372,13 +376,18 @@ class I18nKeyExtractor {
 async function main() {
   const extractor = new I18nKeyExtractor();
   const results = await extractor.analyze();
-  
+
   // JSON raporu oluştur
   const jsonReport = extractor.generateJsonReport();
-  writeFileSync('i18n-analysis-report.json', JSON.stringify(jsonReport, null, 2));
-  
-  console.log('📄 Detaylı rapor: i18n-analysis-report.json dosyasına kaydedildi');
-  
+  writeFileSync(
+    'i18n-analysis-report.json',
+    JSON.stringify(jsonReport, null, 2)
+  );
+
+  console.log(
+    '📄 Detaylı rapor: i18n-analysis-report.json dosyasına kaydedildi'
+  );
+
   // Özet
   console.log('\n💡 Öneriler:');
   if (results.missingKeys.length > 0) {
@@ -388,7 +397,7 @@ async function main() {
     console.log('   - Kullanılmayan anahtarları temizleyebilirsiniz');
   }
   console.log('   - Dil dosyalarını düzenli olarak senkronize edin');
-  console.log('   - CI/CD pipeline\'da bu analizi çalıştırın');
+  console.log("   - CI/CD pipeline'da bu analizi çalıştırın");
 }
 
 // Script çalıştırma

@@ -3,7 +3,13 @@
 // Mistik tarot temasına uygun, i18n destekli, modern ve profesyonel bir arayüz sunar.
 
 import React from 'react';
-import { FaUniversalAccess, FaEye, FaKeyboard, FaVolumeUp, FaCheckCircle } from 'react-icons/fa';
+import {
+  FaUniversalAccess,
+  FaEye,
+  FaKeyboard,
+  FaVolumeUp,
+  FaCheckCircle,
+} from 'react-icons/fa';
 import { useTranslations } from '@/hooks/useTranslations';
 
 export default function Accessibility() {
@@ -14,7 +20,7 @@ export default function Accessibility() {
       {/* Mystical Background Effects */}
       <div className='absolute inset-0 bg-gradient-to-br from-purple-900/20 via-indigo-900/20 to-purple-800/20'></div>
       <div className='absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent'></div>
-      
+
       <main className='relative z-10 max-w-4xl mx-auto px-4 py-12'>
         {/* Header Section with Mystical Design */}
         <section className='mb-12 text-center'>
@@ -36,7 +42,9 @@ export default function Accessibility() {
               <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
                 <FaUniversalAccess className='w-5 h-5 text-purple-300' />
               </div>
-              <h2 className='text-2xl font-bold text-golden-300'>Erişilebilirlik Taahhüdü</h2>
+              <h2 className='text-2xl font-bold text-golden-300'>
+                Erişilebilirlik Taahhüdü
+              </h2>
             </div>
             <p className='text-cosmic-200 leading-relaxed'>
               {t('legalPages.accessibility.content')}
@@ -48,29 +56,39 @@ export default function Accessibility() {
               <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
                 <FaCheckCircle className='w-5 h-5 text-purple-300' />
               </div>
-              <h2 className='text-2xl font-bold text-golden-300'>Desteklenen Özellikler</h2>
+              <h2 className='text-2xl font-bold text-golden-300'>
+                Desteklenen Özellikler
+              </h2>
             </div>
             <div className='grid md:grid-cols-3 gap-4'>
               <div className='bg-gradient-to-r from-blue-500/10 to-cyan-500/10 p-4 rounded-lg border border-blue-500/20 text-center'>
                 <div className='w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-3'>
                   <FaEye className='w-6 h-6 text-white' />
                 </div>
-                <h3 className='text-lg font-semibold text-blue-300 mb-2'>Ekran Okuyucu</h3>
+                <h3 className='text-lg font-semibold text-blue-300 mb-2'>
+                  Ekran Okuyucu
+                </h3>
                 <p className='text-cosmic-200 text-sm'>Uyumluluk ve destek</p>
               </div>
               <div className='bg-gradient-to-r from-green-500/10 to-emerald-500/10 p-4 rounded-lg border border-green-500/20 text-center'>
                 <div className='w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-3'>
                   <FaKeyboard className='w-6 h-6 text-white' />
                 </div>
-                <h3 className='text-lg font-semibold text-green-300 mb-2'>Klavye Navigasyonu</h3>
+                <h3 className='text-lg font-semibold text-green-300 mb-2'>
+                  Klavye Navigasyonu
+                </h3>
                 <p className='text-cosmic-200 text-sm'>Tam klavye desteği</p>
               </div>
               <div className='bg-gradient-to-r from-purple-500/10 to-indigo-500/10 p-4 rounded-lg border border-purple-500/20 text-center'>
                 <div className='w-12 h-12 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-3'>
                   <FaVolumeUp className='w-6 h-6 text-white' />
                 </div>
-                <h3 className='text-lg font-semibold text-purple-300 mb-2'>Yüksek Kontrast</h3>
-                <p className='text-cosmic-200 text-sm'>Görsel erişilebilirlik</p>
+                <h3 className='text-lg font-semibold text-purple-300 mb-2'>
+                  Yüksek Kontrast
+                </h3>
+                <p className='text-cosmic-200 text-sm'>
+                  Görsel erişilebilirlik
+                </p>
               </div>
             </div>
           </section>
@@ -84,7 +102,10 @@ export default function Accessibility() {
             </div>
             <div className='bg-gradient-to-r from-purple-500/10 to-indigo-500/10 p-4 rounded-lg border border-purple-500/20'>
               <p className='text-cosmic-200'>
-                {t('legalPages.accessibility.contact').replace('{email}', 'info@busbuskimki.com')}
+                {t('legalPages.accessibility.contact').replace(
+                  '{email}',
+                  'info@busbuskimki.com'
+                )}
               </p>
             </div>
           </section>

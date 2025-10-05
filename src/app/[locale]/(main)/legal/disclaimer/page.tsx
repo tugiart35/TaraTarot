@@ -5,7 +5,11 @@
 'use client';
 
 import React from 'react';
-import { FaExclamationTriangle, FaInfoCircle, FaShieldAlt } from 'react-icons/fa';
+import {
+  FaExclamationTriangle,
+  FaInfoCircle,
+  FaShieldAlt,
+} from 'react-icons/fa';
 import BottomNavigation from '@/features/shared/layout/BottomNavigation';
 import { useTranslations } from '@/hooks/useTranslations';
 
@@ -17,7 +21,7 @@ export default function Disclaimer() {
       {/* Mystical Background Effects */}
       <div className='absolute inset-0 bg-gradient-to-br from-purple-900/20 via-indigo-900/20 to-purple-800/20'></div>
       <div className='absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent'></div>
-      
+
       <main className='relative z-10 max-w-4xl mx-auto px-4 py-12'>
         {/* Header Section with Mystical Design */}
         <section className='mb-12 text-center'>
@@ -39,7 +43,9 @@ export default function Disclaimer() {
               <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
                 <FaInfoCircle className='w-5 h-5 text-purple-300' />
               </div>
-              <h2 className='text-2xl font-bold text-golden-300'>{t('footer.legalPages.disclaimer.serviceScope')}</h2>
+              <h2 className='text-2xl font-bold text-golden-300'>
+                {t('footer.legalPages.disclaimer.serviceScope')}
+              </h2>
             </div>
             <p className='text-cosmic-200 leading-relaxed'>
               {t('footer.legalPages.disclaimer.content')}
@@ -51,20 +57,30 @@ export default function Disclaimer() {
               <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
                 <FaShieldAlt className='w-5 h-5 text-purple-300' />
               </div>
-              <h2 className='text-2xl font-bold text-golden-300'>{t('footer.legalPages.disclaimer.limitations')}</h2>
+              <h2 className='text-2xl font-bold text-golden-300'>
+                {t('footer.legalPages.disclaimer.limitations')}
+              </h2>
             </div>
             <div className='grid md:grid-cols-2 gap-4'>
               <div className='bg-gradient-to-r from-yellow-500/10 to-orange-500/10 p-4 rounded-lg border border-yellow-500/20'>
-                <h3 className='text-lg font-semibold text-yellow-300 mb-2'>{t('footer.legalPages.disclaimer.entertainment')}</h3>
+                <h3 className='text-lg font-semibold text-yellow-300 mb-2'>
+                  {t('footer.legalPages.disclaimer.entertainment')}
+                </h3>
               </div>
               <div className='bg-gradient-to-r from-red-500/10 to-pink-500/10 p-4 rounded-lg border border-red-500/20'>
-                <h3 className='text-lg font-semibold text-red-300 mb-2'>{t('footer.legalPages.disclaimer.notAdvice')}</h3>
+                <h3 className='text-lg font-semibold text-red-300 mb-2'>
+                  {t('footer.legalPages.disclaimer.notAdvice')}
+                </h3>
               </div>
               <div className='bg-gradient-to-r from-blue-500/10 to-cyan-500/10 p-4 rounded-lg border border-blue-500/20'>
-                <h3 className='text-lg font-semibold text-blue-300 mb-2'>{t('footer.legalPages.disclaimer.personal')}</h3>
+                <h3 className='text-lg font-semibold text-blue-300 mb-2'>
+                  {t('footer.legalPages.disclaimer.personal')}
+                </h3>
               </div>
               <div className='bg-gradient-to-r from-purple-500/10 to-indigo-500/10 p-4 rounded-lg border border-purple-500/20'>
-                <h3 className='text-lg font-semibold text-purple-300 mb-2'>{t('footer.legalPages.disclaimer.professional')}</h3>
+                <h3 className='text-lg font-semibold text-purple-300 mb-2'>
+                  {t('footer.legalPages.disclaimer.professional')}
+                </h3>
               </div>
             </div>
           </section>

@@ -3,9 +3,7 @@
 import type { TarotCard } from '@/types/tarot';
 import { createTarotReadingComponent } from '@/features/tarot/shared/components';
 import { createCareerConfig } from '@/features/tarot/shared/config';
-import {
-  getCareerMeaningByCardAndPosition,
-} from '@/features/tarot/lib/career/position-meanings-index';
+import { getCareerMeaningByCardAndPosition } from '@/features/tarot/lib/career/position-meanings-index';
 
 const CareerReading = createTarotReadingComponent({
   getConfig: () => createCareerConfig(),

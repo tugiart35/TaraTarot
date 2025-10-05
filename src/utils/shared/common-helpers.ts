@@ -13,7 +13,7 @@ export const DateUtils = {
   ): string => {
     const d = new Date(date);
     let options: Intl.DateTimeFormatOptions;
-    
+
     switch (format) {
       case 'short':
         options = { year: 'numeric', month: 'short', day: 'numeric' };
@@ -27,7 +27,7 @@ export const DateUtils = {
       default:
         options = { year: 'numeric', month: 'short', day: 'numeric' };
     }
-    
+
     return d.toLocaleDateString('tr-TR', options);
   },
 
@@ -247,7 +247,10 @@ export const ObjectUtils = {
         typeof source[key] === 'object' &&
         !Array.isArray(source[key])
       ) {
-        result[key] = ObjectUtils.deepMerge(target[key] || ({} as any), source[key]);
+        result[key] = ObjectUtils.deepMerge(
+          target[key] || ({} as any),
+          source[key]
+        );
       } else if (source[key] !== undefined) {
         result[key] = source[key];
       }
@@ -255,7 +258,10 @@ export const ObjectUtils = {
     return result;
   },
 
-  pick: <T extends Record<string, any>, K extends keyof T>(obj: T, keys: K[]): Pick<T, K> => {
+  pick: <T extends Record<string, any>, K extends keyof T>(
+    obj: T,
+    keys: K[]
+  ): Pick<T, K> => {
     const result = {} as Pick<T, K>;
     keys.forEach(key => {
       if (key in obj) {

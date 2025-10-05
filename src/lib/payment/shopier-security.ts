@@ -104,7 +104,9 @@ export class ShopierIPWhitelist {
   private static isIPInRange(ip: string, cidr: string): boolean {
     try {
       const [range, bits] = cidr.split('/');
-      if (!bits || !range) return false;
+      if (!bits || !range) {
+        return false;
+      }
       const mask = ~(2 ** (32 - parseInt(bits)) - 1);
 
       const ipInt = this.ipToInt(ip);
@@ -135,9 +137,15 @@ export class ShopierIPWhitelist {
     const cfConnectingIP = headers.get('cf-connecting-ip');
 
     // Öncelik sırası: CF > X-Real-IP > X-Forwarded-For
-    if (cfConnectingIP) return cfConnectingIP;
-    if (realIP) return realIP;
-    if (forwardedFor) return forwardedFor.split(',')[0]?.trim() || null;
+    if (cfConnectingIP) {
+      return cfConnectingIP;
+    }
+    if (realIP) {
+      return realIP;
+    }
+    if (forwardedFor) {
+      return forwardedFor.split(',')[0]?.trim() || null;
+    }
 
     return null;
   }
@@ -202,7 +210,9 @@ export class ShopierRateLimiter {
    * Eski kayıtları temizle
    */
   private static startCleanupTimer(): void {
-    if (this.cleanupTimer) return;
+    if (this.cleanupTimer) {
+      return;
+    }
 
     this.cleanupTimer = setInterval(() => {
       const now = Date.now();
@@ -325,7 +335,10 @@ export class ShopierRequestValidator {
       errors.push('Invalid currency');
     }
 
-    if (!data.status || !['success', 'failed', 'pending'].includes(data.status)) {
+    if (
+      !data.status ||
+      !['success', 'failed', 'pending'].includes(data.status)
+    ) {
       errors.push('Invalid status');
     }
 
@@ -373,4 +386,3 @@ export async function performSecurityCheck(request: Request): Promise<{
 
   return { passed: true };
 }
-

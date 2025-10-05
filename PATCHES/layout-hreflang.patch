@@ -24,7 +24,7 @@
 +  };
  
    return {
--    title: 'TaraTarot',
+-    title: 'Büşbüşkiki',
 -    description: 'Profesyonel tarot okuma hizmeti',
 +    title: t('title'),
 +    description: t('description'),
@@ -39,7 +39,7 @@
 +      title: t('title'),
 +      description: t('description'),
 +      url: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/anasayfa`,
-+      siteName: 'TaraTarot',
++      siteName: 'Büşbüşkiki',
 +      locale: locale,
 +      type: 'website',
 +    },
@@ -61,4 +61,5 @@
 +    },
    };
  }
+
 

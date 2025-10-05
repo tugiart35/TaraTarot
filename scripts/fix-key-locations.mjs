@@ -2,7 +2,7 @@
 
 /**
  * Key Konumlarını Düzeltme Scripti
- * 
+ *
  * Bu script, yanlış yere eklenen key'leri doğru konumlarına taşır.
  */
 
@@ -24,11 +24,7 @@ try {
   console.log('TR dosyası okundu');
 
   // Yanlış yerdeki key'leri kaldır
-  const keysToMove = [
-    'profile',
-    'common',
-    'dashboard'
-  ];
+  const keysToMove = ['profile', 'common', 'dashboard'];
 
   const movedKeys = {};
 
@@ -54,9 +50,8 @@ try {
   // Dosyayı kaydet
   const updatedContent = JSON.stringify(trData, null, 2);
   fs.writeFileSync(trPath, updatedContent, 'utf8');
-  
+
   console.log('✅ Key konumları düzeltildi ve kaydedildi');
-  
 } catch (error) {
   console.error('Hata:', error.message);
 }

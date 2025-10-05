@@ -273,9 +273,9 @@ curl -f https://your-domain.com/health
 
 ### Deployment Approval
 
-- [ ] **Technical Lead:** ********\_******** Date: **\_\_\_**
-- [ ] **Product Manager:** ********\_******** Date: **\_\_\_**
-- [ ] **DevOps Engineer:** ********\_******** Date: **\_\_\_**
+- [ ] **Technical Lead:** **\*\*\*\***\_**\*\*\*\*** Date: **\_\_\_**
+- [ ] **Product Manager:** **\*\*\*\***\_**\*\*\*\*** Date: **\_\_\_**
+- [ ] **DevOps Engineer:** **\*\*\*\***\_**\*\*\*\*** Date: **\_\_\_**
 
 ### Post-Deployment Verification
 
@@ -286,7 +286,7 @@ curl -f https://your-domain.com/health
 
 ---
 
-**Deployment completed successfully on:** ******\_\_\_******  
-**Deployed by:** ******\_\_\_******  
+**Deployment completed successfully on:** **\*\***\_\_\_**\*\***  
+**Deployed by:** **\*\***\_\_\_**\*\***  
 **Version:** refactor/structure-v1  
 **Environment:** Production

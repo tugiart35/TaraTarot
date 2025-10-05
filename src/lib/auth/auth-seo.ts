@@ -232,7 +232,8 @@ export class AuthSEO {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
       name: AuthSEO.DEFAULT_META[page]?.title || 'Auth Page',
-      description: AuthSEO.DEFAULT_META[page]?.description || 'Authentication page',
+      description:
+        AuthSEO.DEFAULT_META[page]?.description || 'Authentication page',
       url: `${baseUrl}/${locale}/auth/${page}`,
       inLanguage: locale,
       isPartOf: {

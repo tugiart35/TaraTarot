@@ -2,7 +2,9 @@
 
 ## 📋 Genel Bakış
 
-Bu dokümantasyon, tarot modülünün yeniden yapılandırılmış mimarisini açıklar. Önceki monolitik yapıdan, modüler ve yeniden kullanılabilir bir shared layer architecture'a geçiş yapılmıştır.
+Bu dokümantasyon, tarot modülünün yeniden yapılandırılmış mimarisini açıklar.
+Önceki monolitik yapıdan, modüler ve yeniden kullanılabilir bir shared layer
+architecture'a geçiş yapılmıştır.
 
 ## 🎯 Refactor Hedefleri
 
@@ -57,10 +59,11 @@ export function createTarotReadingComponent({
   getConfig,
   interpretationEmoji,
   getCardMeaning,
-}: CreateTarotReadingComponentOptions)
+}: CreateTarotReadingComponentOptions);
 ```
 
 **Özellikler:**
+
 - Unified state management
 - Shared UI components
 - Theme-based styling
@@ -70,6 +73,7 @@ export function createTarotReadingComponent({
 ### **2. Shared Hooks**
 
 #### **useTarotFormState**
+
 Form state management için merkezi hook.
 
 ```typescript
@@ -85,6 +89,7 @@ const {
 ```
 
 #### **useTarotReadingFlow**
+
 Unified reading flow logic.
 
 ```typescript
@@ -99,19 +104,18 @@ const {
 ```
 
 #### **useTarotSaveState**
+
 Save functionality için merkezi hook.
 
 ```typescript
-const {
-  isSaving,
-  showCreditConfirm,
-  handleSaveReading,
-} = useTarotSaveState(config);
+const { isSaving, showCreditConfirm, handleSaveReading } =
+  useTarotSaveState(config);
 ```
 
 ### **3. Shared UI Components**
 
 #### **BaseTarotModal**
+
 Tüm modal'lar için base component.
 
 ```typescript
@@ -125,6 +129,7 @@ Tüm modal'lar için base component.
 ```
 
 #### **BaseTarotCanvas**
+
 Canvas rendering için base component.
 
 ```typescript
@@ -141,6 +146,7 @@ Canvas rendering için base component.
 ```
 
 #### **BaseTarotForm**
+
 Form rendering için base component.
 
 ```typescript
@@ -195,12 +201,13 @@ export function createTarotConfig({
   icon,
   readingType,
   // ... diğer parametreler
-}: CreateTarotConfigParams): TarotConfig
+}: CreateTarotConfigParams): TarotConfig;
 ```
 
 ## 🎨 Theme System
 
 ### **Supported Themes**
+
 - `blue` - Kariyer ve profesyonel konular
 - `pink` - Aşk ve ilişkiler
 - `purple` - Spiritüel ve mistik konular
@@ -208,6 +215,7 @@ export function createTarotConfig({
 - `yellow` - Genel ve günlük konular
 
 ### **Theme Classes**
+
 Her tema için otomatik CSS class generation:
 
 ```typescript
@@ -224,23 +232,33 @@ const themeClasses = getThemeClasses(theme);
 import { createTarotConfig } from '@/features/tarot/shared/config';
 
 const NEW_SPREAD_POSITIONS_INFO = [
-  { id: 1, title: 'Pozisyon 1', desc: 'Açıklama', description: 'Detaylı açıklama' },
+  {
+    id: 1,
+    title: 'Pozisyon 1',
+    desc: 'Açıklama',
+    description: 'Detaylı açıklama',
+  },
   // ... diğer pozisyonlar
 ];
 
 const NEW_SPREAD_POSITIONS_LAYOUT = [
-  { id: 1, className: 'absolute top-[15%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-20' },
+  {
+    id: 1,
+    className:
+      'absolute top-[15%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-20',
+  },
   // ... diğer layout'lar
 ];
 
-export const createNewSpreadConfig = () => createTarotConfig({
-  spreadId: 'new-spread',
-  positionsInfo: NEW_SPREAD_POSITIONS_INFO,
-  positionsLayout: NEW_SPREAD_POSITIONS_LAYOUT,
-  theme: 'purple',
-  icon: '🔮',
-  readingType: 'new-spread',
-});
+export const createNewSpreadConfig = () =>
+  createTarotConfig({
+    spreadId: 'new-spread',
+    positionsInfo: NEW_SPREAD_POSITIONS_INFO,
+    positionsLayout: NEW_SPREAD_POSITIONS_LAYOUT,
+    theme: 'purple',
+    icon: '🔮',
+    readingType: 'new-spread',
+  });
 ```
 
 ### **2. Ana Component Oluştur**
@@ -257,11 +275,24 @@ import { getNewSpreadMeaningByCardAndPosition } from '@/features/tarot/lib/new-s
 const NewSpreadReading = createTarotReadingComponent({
   getConfig: () => createNewSpreadConfig(),
   interpretationEmoji: '🔮',
-  getCardMeaning: (card: TarotCard | null, position: number, isReversed: boolean) => {
+  getCardMeaning: (
+    card: TarotCard | null,
+    position: number,
+    isReversed: boolean
+  ) => {
     if (!card) return '';
-    const meaning = getNewSpreadMeaningByCardAndPosition(card, position, isReversed);
-    return meaning ? (isReversed ? meaning.reversed : meaning.upright) : 
-           (isReversed ? card.meaningTr.reversed : card.meaningTr.upright);
+    const meaning = getNewSpreadMeaningByCardAndPosition(
+      card,
+      position,
+      isReversed
+    );
+    return meaning
+      ? isReversed
+        ? meaning.reversed
+        : meaning.upright
+      : isReversed
+        ? card.meaningTr.reversed
+        : card.meaningTr.upright;
   },
 });
 
@@ -274,10 +305,10 @@ export default NewSpreadReading;
 // src/features/tarot/components/New-Spread/NewSpreadReadingTypeSelector.tsx
 import { BaseReadingTypeSelector } from '@/features/shared/ui';
 
-export default function NewSpreadReadingTypeSelector({ 
-  selectedType, 
-  onTypeChange, 
-  onCreditInfoClick 
+export default function NewSpreadReadingTypeSelector({
+  selectedType,
+  onTypeChange,
+  onCreditInfoClick
 }) {
   return (
     <BaseReadingTypeSelector
@@ -297,6 +328,7 @@ export default function NewSpreadReadingTypeSelector({
 ### **Eski Yapıdan Yeni Yapıya Geçiş**
 
 1. **Eski component'i yedekle:**
+
    ```bash
    mv OldSpreadTarot.tsx OldSpreadTarot.tsx.backup
    ```
@@ -307,10 +339,11 @@ export default function NewSpreadReadingTypeSelector({
    - Reading type selector oluştur (gerekirse)
 
 3. **Import path'leri güncelle:**
+
    ```typescript
    // Eski
    import { OldSpreadTarot } from './OldSpreadTarot';
-   
+
    // Yeni
    import NewSpreadTarot from './New-Spread/NewSpreadTarot';
    ```
@@ -318,6 +351,7 @@ export default function NewSpreadReadingTypeSelector({
 ## 🧪 Testing
 
 ### **Component Testing**
+
 ```typescript
 import { render, screen } from '@testing-library/react';
 import NewSpreadTarot from './NewSpreadTarot';
@@ -329,6 +363,7 @@ test('renders new spread component', () => {
 ```
 
 ### **Hook Testing**
+
 ```typescript
 import { renderHook } from '@testing-library/react';
 import { useTarotFormState } from '../shared/hooks/useTarotFormState';
@@ -336,7 +371,11 @@ import { useTarotFormState } from '../shared/hooks/useTarotFormState';
 test('useTarotFormState initializes correctly', () => {
   const { result } = renderHook(() => useTarotFormState(validationKeys));
   expect(result.current.personalInfo).toEqual({
-    name: '', surname: '', birthDate: '', email: '', phone: ''
+    name: '',
+    surname: '',
+    birthDate: '',
+    email: '',
+    phone: '',
   });
 });
 ```
@@ -344,16 +383,19 @@ test('useTarotFormState initializes correctly', () => {
 ## 📈 Performance Metrics
 
 ### **Bundle Size Optimization**
+
 - **Before:** ~2.5MB (9 monolitik components)
 - **After:** ~1.2MB (1 shared layer + 9 lightweight configs)
 - **Improvement:** -52% bundle size reduction
 
 ### **Runtime Performance**
+
 - **Re-renders:** Optimized with useCallback and useMemo
 - **Memory Usage:** Reduced by shared state management
 - **Load Time:** Faster with better code splitting
 
 ### **Development Metrics**
+
 - **New Spread Creation:** 2 weeks → 2 days (-85% time)
 - **Bug Fixes:** 9 files → 1 file (-89% effort)
 - **Feature Addition:** 9 components → 1 component (-89% effort)
@@ -361,21 +403,25 @@ test('useTarotFormState initializes correctly', () => {
 ## 🚀 Best Practices
 
 ### **1. Configuration Management**
+
 - Her spread için ayrı config dosyası oluştur
 - Position data'yı inline tanımla (external dependency'leri önlemek için)
 - Theme consistency için standardize edilmiş theme'ler kullan
 
 ### **2. Component Composition**
+
 - Shared components'i compose et
 - Custom logic'i hook'larda tut
 - UI logic'i component'lerde tut
 
 ### **3. Type Safety**
+
 - Zod schema'ları kullan
 - TypeScript strict mode aktif
 - Interface'leri shared types'da tanımla
 
 ### **4. Performance**
+
 - useCallback ve useMemo kullan
 - Lazy loading implement et
 - Bundle splitting optimize et
@@ -385,6 +431,7 @@ test('useTarotFormState initializes correctly', () => {
 ### **Common Issues**
 
 #### **1. Build Errors**
+
 ```bash
 # Type errors için
 npm run type-check
@@ -394,12 +441,14 @@ npm run lint
 ```
 
 #### **2. Runtime Errors**
+
 ```typescript
 // Console'da error tracking
 console.error('Tarot reading error:', error);
 ```
 
 #### **3. Theme Issues**
+
 ```typescript
 // Theme class'ları kontrol et
 const themeClasses = getThemeClasses(theme);
@@ -452,7 +501,8 @@ Bu refactor ile:
 - ✅ **Type-safe** architecture
 - ✅ **Optimized** performance
 
-Yeni mimari, gelecekteki tarot spread geliştirmeleri için temiz, genişletilebilir ve maintainable bir foundation sağlar.
+Yeni mimari, gelecekteki tarot spread geliştirmeleri için temiz,
+genişletilebilir ve maintainable bir foundation sağlar.
 
 ---
 

@@ -3,9 +3,7 @@
 import type { TarotCard } from '@/types/tarot';
 import { createTarotReadingComponent } from '@/features/tarot/shared/components';
 import { createMarriageConfig } from '@/features/tarot/shared/config';
-import {
-  getMarriageMeaningByCardAndPosition,
-} from '@/features/tarot/lib/marriage/position-meanings-index';
+import { getMarriageMeaningByCardAndPosition } from '@/features/tarot/lib/marriage/position-meanings-index';
 
 const MarriageReading = createTarotReadingComponent({
   getConfig: () => createMarriageConfig(),

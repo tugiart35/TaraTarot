@@ -2,7 +2,7 @@
   "metadata": {
     "version": "1.0.0",
     "created": "2025-01-20",
-    "description": "TaraTarot Projesi - Eski Route'lardan Yeni SEO-Friendly Route'lara Mapping",
+    "description": "Büşbüşkiki Projesi - Eski Route'lardan Yeni SEO-Friendly Route'lara Mapping",
     "purpose": "Geriye dönük uyumluluk ve SEO optimizasyonu için URL yönlendirme haritası"
   },
   "redirectStrategy": {
@@ -18,12 +18,12 @@
       "seoFriendly": true,
       "examples": {
         "home": "/tr/anasayfa",
-        "tarot": "/tr/tarot-okuma", 
+        "tarot": "/tr/tarot-okuma",
         "numerology": "/tr/numeroloji"
       }
     },
     "en": {
-      "name": "English", 
+      "name": "English",
       "nativeName": "English",
       "seoFriendly": true,
       "examples": {
@@ -34,7 +34,7 @@
     },
     "sr": {
       "name": "Serbian (Latin)",
-      "nativeName": "Srpski (Latinica)", 
+      "nativeName": "Srpski (Latinica)",
       "seoFriendly": true,
       "examples": {
         "home": "/sr/pocetna",
@@ -47,7 +47,7 @@
     "homepage": {
       "current": {
         "tr": "/tr",
-        "en": "/en", 
+        "en": "/en",
         "sr": "/sr"
       },
       "new": {
@@ -63,14 +63,14 @@
           "reason": "SEO-friendly homepage URL"
         },
         {
-          "from": "/en", 
+          "from": "/en",
           "to": "/en/home",
           "status": 301,
           "reason": "SEO-friendly homepage URL"
         },
         {
           "from": "/sr",
-          "to": "/sr/pocetna", 
+          "to": "/sr/pocetna",
           "status": 301,
           "reason": "SEO-friendly homepage URL"
         }
@@ -84,7 +84,7 @@
       },
       "new": {
         "tr": "/tr/tarot-okuma",
-        "en": "/en/tarot-reading", 
+        "en": "/en/tarot-reading",
         "sr": "/sr/tarot-citanje"
       },
       "redirects": [
@@ -97,7 +97,7 @@
         {
           "from": "/en/tarotokumasi",
           "to": "/en/tarot-reading",
-          "status": 301, 
+          "status": 301,
           "reason": "SEO-friendly English tarot URL"
         },
         {
@@ -111,7 +111,7 @@
     "numerology": {
       "current": {
         "tr": "/tr/numeroloji",
-        "en": "/en/numeroloji", 
+        "en": "/en/numeroloji",
         "sr": "/sr/numeroloji"
       },
       "new": {
@@ -122,7 +122,7 @@
       "redirects": [
         {
           "from": "/en/numeroloji",
-          "to": "/en/numerology", 
+          "to": "/en/numerology",
           "status": 301,
           "reason": "English-specific numerology URL"
         },
@@ -142,7 +142,7 @@
       },
       "new": {
         "tr": "/tr/panel",
-        "en": "/en/dashboard", 
+        "en": "/en/dashboard",
         "sr": "/sr/panel"
       },
       "redirects": [
@@ -153,7 +153,7 @@
           "reason": "Turkish-specific dashboard URL"
         },
         {
-          "from": "/sr/dashboard", 
+          "from": "/sr/dashboard",
           "to": "/sr/panel",
           "status": 301,
           "reason": "Serbian-specific dashboard URL"
@@ -186,7 +186,7 @@
         },
         {
           "from": "/sr/auth",
-          "to": "/sr/prijava", 
+          "to": "/sr/prijava",
           "status": 301,
           "reason": "Serbian-specific auth URL"
         }
@@ -211,7 +211,7 @@
           "reason": "Turkish-specific legal page URL"
         },
         {
-          "from": "/tr/legal/contact", 
+          "from": "/tr/legal/contact",
           "to": "/tr/yasal/iletisim",
           "status": 301,
           "reason": "Turkish-specific contact page URL"
@@ -224,7 +224,7 @@
         },
         {
           "from": "/sr/legal/contact",
-          "to": "/sr/pravni/kontakt", 
+          "to": "/sr/pravni/kontakt",
           "status": 301,
           "reason": "Serbian-specific contact page URL"
         }
@@ -237,7 +237,7 @@
       "reason": "Admin routes should remain consistent across locales",
       "routes": [
         "/{locale}/admin",
-        "/{locale}/admin/analytics", 
+        "/{locale}/admin/analytics",
         "/{locale}/admin/orders",
         "/{locale}/admin/packages",
         "/{locale}/admin/readings",
@@ -246,7 +246,7 @@
       ]
     },
     "apiRoutes": {
-      "strategy": "keepAsIs", 
+      "strategy": "keepAsIs",
       "reason": "API routes should remain consistent",
       "routes": [
         "/api/email/send",
@@ -259,11 +259,7 @@
     "paymentRoutes": {
       "strategy": "keepAsIs",
       "reason": "Payment routes should remain consistent for security",
-      "routes": [
-        "/{locale}/payment",
-        "/{locale}/payment/success",
-        "/{locale}/payment/cancel"
-      ]
+      "routes": ["/{locale}/payment", "/{locale}/payment/success", "/{locale}/payment/cancel"]
     }
   },
   "seoOptimizations": {
@@ -272,7 +268,7 @@
       "strategy": "x-default with locale-specific alternatives",
       "example": {
         "x-default": "/tr/anasayfa",
-        "tr": "/tr/anasayfa", 
+        "tr": "/tr/anasayfa",
         "en": "/en/home",
         "sr": "/sr/pocetna"
       }
@@ -282,7 +278,7 @@
       "strategy": "self-referencing canonical URLs",
       "example": {
         "tr": "https://busbuskimki.com/tr/anasayfa",
-        "en": "https://busbuskimki.com/en/home", 
+        "en": "https://busbuskimki.com/en/home",
         "sr": "https://busbuskimki.com/sr/pocetna"
       }
     },
@@ -290,13 +286,13 @@
       "updateRequired": true,
       "newUrls": [
         "/tr/anasayfa",
-        "/tr/tarot-okuma", 
+        "/tr/tarot-okuma",
         "/tr/numeroloji",
         "/tr/panel",
         "/tr/giris",
         "/en/home",
         "/en/tarot-reading",
-        "/en/numerology", 
+        "/en/numerology",
         "/en/dashboard",
         "/en/login",
         "/sr/pocetna",
@@ -313,15 +309,10 @@
       "description": "Implement new SEO-friendly URLs with redirects",
       "estimatedTime": "2-3 days",
       "risk": "low",
-      "tasks": [
-        "Update next.config.js rewrites",
-        "Add redirect middleware", 
-        "Update sitemap.ts",
-        "Test all redirects"
-      ]
+      "tasks": ["Update next.config.js rewrites", "Add redirect middleware", "Update sitemap.ts", "Test all redirects"]
     },
     "phase2": {
-      "name": "SEO Headers Implementation", 
+      "name": "SEO Headers Implementation",
       "description": "Add hreflang and canonical tags",
       "estimatedTime": "1-2 days",
       "risk": "low",
@@ -335,7 +326,7 @@
     "phase3": {
       "name": "Content Updates",
       "description": "Update internal links and navigation",
-      "estimatedTime": "1 day", 
+      "estimatedTime": "1 day",
       "risk": "medium",
       "tasks": [
         "Update navigation components",
@@ -348,7 +339,7 @@
   "testingChecklist": {
     "redirects": [
       "Test all 301 redirects work correctly",
-      "Verify query parameters are preserved", 
+      "Verify query parameters are preserved",
       "Check hash fragments are preserved",
       "Test redirect chains don't create loops"
     ],
@@ -375,7 +366,7 @@
     "description": "If issues arise, rollback to original URL structure",
     "steps": [
       "Remove redirect rules from next.config.js",
-      "Revert sitemap.ts to original URLs", 
+      "Revert sitemap.ts to original URLs",
       "Remove hreflang and canonical tags",
       "Update navigation back to original URLs",
       "Test all functionality works"

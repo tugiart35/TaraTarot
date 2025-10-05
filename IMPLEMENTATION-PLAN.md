@@ -1,16 +1,18 @@
-# IMPLEMENTATION PLAN - TaraTarot SEO URL Optimization
+# IMPLEMENTATION PLAN - Büşbüşkiki SEO URL Optimization
 
 ## Güvenli ve Geriye Dönük Uyumlu URL Yapısı Geçişi
 
 ### 1. GENEL STRATEJİ
 
 #### 1.1 Temel Prensipler
+
 - ✅ **Geriye Dönük Uyumluluk**: Mevcut link'ler çalışmaya devam eder
 - ✅ **SEO Optimizasyonu**: Her dil için doğal URL'ler
 - ✅ **Güvenli Geçiş**: Aşamalı implementasyon
 - ✅ **Test Odaklı**: Her aşamada kapsamlı test
 
 #### 1.2 Risk Yönetimi
+
 - **Düşük Risk**: Redirect'ler ve metadata güncellemeleri
 - **Orta Risk**: Navigation ve internal link güncellemeleri
 - **Yüksek Risk**: Core routing değişiklikleri (kaçınılacak)
@@ -27,7 +29,7 @@
 // next.config.js
 const nextConfig = {
   // Mevcut konfigürasyon...
-  
+
   // SEO-friendly redirects
   async redirects() {
     return [
@@ -39,7 +41,7 @@ const nextConfig = {
       },
       {
         source: '/en',
-        destination: '/en/home', 
+        destination: '/en/home',
         permanent: true,
       },
       {
@@ -47,7 +49,7 @@ const nextConfig = {
         destination: '/sr/pocetna',
         permanent: true,
       },
-      
+
       // Tarot redirects
       {
         source: '/tr/tarotokumasi',
@@ -60,11 +62,11 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/sr/tarotokumasi', 
+        source: '/sr/tarotokumasi',
         destination: '/sr/tarot-citanje',
         permanent: true,
       },
-      
+
       // Numeroloji redirects
       {
         source: '/en/numeroloji',
@@ -76,7 +78,7 @@ const nextConfig = {
         destination: '/sr/numerologija',
         permanent: true,
       },
-      
+
       // Dashboard redirects
       {
         source: '/tr/dashboard',
@@ -85,10 +87,10 @@ const nextConfig = {
       },
       {
         source: '/sr/dashboard',
-        destination: '/sr/panel', 
+        destination: '/sr/panel',
         permanent: true,
       },
-      
+
       // Auth redirects
       {
         source: '/tr/auth',
@@ -107,7 +109,7 @@ const nextConfig = {
       },
     ];
   },
-  
+
   // Rewrites for new URL structure
   async rewrites() {
     return [
@@ -186,12 +188,12 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'metadata' });
-  
+
   // Hreflang URLs
   const hreflangUrls = {
-    'tr': '/tr/anasayfa',
-    'en': '/en/home',
-    'sr': '/sr/pocetna'
+    tr: '/tr/anasayfa',
+    en: '/en/home',
+    sr: '/sr/pocetna',
   };
 
   return {
@@ -199,16 +201,19 @@ export async function generateMetadata({
     description: t('description'),
     alternates: {
       canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/anasayfa`,
-      languages: Object.entries(hreflangUrls).reduce((acc, [lang, path]) => {
-        acc[lang] = `${process.env.NEXT_PUBLIC_SITE_URL}${path}`;
-        return acc;
-      }, {} as Record<string, string>)
+      languages: Object.entries(hreflangUrls).reduce(
+        (acc, [lang, path]) => {
+          acc[lang] = `${process.env.NEXT_PUBLIC_SITE_URL}${path}`;
+          return acc;
+        },
+        {} as Record<string, string>
+      ),
     },
     openGraph: {
       title: t('title'),
       description: t('description'),
       url: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/anasayfa`,
-      siteName: 'TaraTarot',
+      siteName: 'Büşbüşkiki',
       locale: locale,
       type: 'website',
     },
@@ -246,7 +251,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily',
       priority: 1.0,
     },
-    
+
     // Tarot sayfaları
     {
       url: `${baseUrl}/tr/tarot-okuma`,
@@ -266,7 +271,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.9,
     },
-    
+
     // Numeroloji sayfaları
     {
       url: `${baseUrl}/tr/numeroloji`,
@@ -307,35 +312,35 @@ const pathMappings = {
     '/tarot-okuma': '/tarot-okuma',
     '/numeroloji': '/numeroloji',
     '/panel': '/panel',
-    '/giris': '/giris'
+    '/giris': '/giris',
   },
   en: {
     '/anasayfa': '/home',
     '/tarot-okuma': '/tarot-reading',
     '/numeroloji': '/numerology',
     '/panel': '/dashboard',
-    '/giris': '/login'
+    '/giris': '/login',
   },
   sr: {
     '/anasayfa': '/pocetna',
     '/tarot-okuma': '/tarot-citanje',
     '/numeroloji': '/numerologija',
     '/panel': '/panel',
-    '/giris': '/prijava'
-  }
+    '/giris': '/prijava',
+  },
 };
 
 export function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
-  
+
   const handleLanguageChange = (newLocale: string) => {
     const currentPath = pathname.replace(/^\/[a-z]{2}/, '');
     const mappedPath = pathMappings[newLocale]?.[currentPath] || currentPath;
     const newPath = `/${newLocale}${mappedPath}`;
     router.push(newPath);
   };
-  
+
   // Component implementation...
 }
 ```
@@ -353,24 +358,24 @@ export function getLocalizedLink(path: string, locale: string): string {
       '/tarotokumasi': '/tarot-okuma',
       '/numeroloji': '/numeroloji',
       '/dashboard': '/panel',
-      '/auth': '/giris'
+      '/auth': '/giris',
     },
     en: {
       '/': '/home',
       '/tarotokumasi': '/tarot-reading',
       '/numeroloji': '/numerology',
       '/dashboard': '/dashboard',
-      '/auth': '/login'
+      '/auth': '/login',
     },
     sr: {
       '/': '/pocetna',
       '/tarotokumasi': '/tarot-citanje',
       '/numeroloji': '/numerologija',
       '/dashboard': '/panel',
-      '/auth': '/prijava'
-    }
+      '/auth': '/prijava',
+    },
   };
-  
+
   return linkMappings[locale]?.[path] || path;
 }
 ```
@@ -392,21 +397,21 @@ describe('Redirect Tests', () => {
       method: 'GET',
       url: '/tr',
     });
-    
+
     await handler(req, res);
-    
+
     expect(res._getStatusCode()).toBe(301);
     expect(res._getRedirectUrl()).toBe('/tr/anasayfa');
   });
-  
+
   test('English tarot redirect', async () => {
     const { req, res } = createMocks({
       method: 'GET',
       url: '/en/tarotokumasi',
     });
-    
+
     await handler(req, res);
-    
+
     expect(res._getStatusCode()).toBe(301);
     expect(res._getRedirectUrl()).toBe('/en/tarot-reading');
   });
@@ -416,18 +421,21 @@ describe('Redirect Tests', () => {
 ### 3.2 Manual Testing Checklist
 
 #### 3.2.1 URL Testing
+
 - [ ] Tüm redirect'ler 301 status code döndürüyor
 - [ ] Query parameters korunuyor
 - [ ] Hash fragments korunuyor
 - [ ] Redirect chain'ler sonsuz döngü oluşturmuyor
 
 #### 3.2.2 SEO Testing
+
 - [ ] Hreflang tag'ler doğru
 - [ ] Canonical URL'ler self-referencing
 - [ ] Sitemap yeni URL'leri içeriyor
 - [ ] Robots.txt yeni URL'lere izin veriyor
 
 #### 3.2.3 Functionality Testing
+
 - [ ] Tüm sayfalar yükleniyor
 - [ ] Navigation çalışıyor
 - [ ] Language switcher çalışıyor
@@ -438,12 +446,14 @@ describe('Redirect Tests', () => {
 ### 4.1 SEO Monitoring
 
 #### 4.1.1 Google Search Console Setup
+
 - Hreflang hatalarını izle
 - Canonical URL sorunlarını kontrol et
 - Index coverage raporlarını takip et
 - Core Web Vitals metriklerini izle
 
 #### 4.1.2 Analytics Setup
+
 - URL yapısı değişikliklerini izle
 - Bounce rate değişikliklerini takip et
 - Conversion rate etkilerini analiz et
@@ -452,12 +462,14 @@ describe('Redirect Tests', () => {
 ### 4.2 Performance Monitoring
 
 #### 4.2.1 Core Web Vitals
+
 - Largest Contentful Paint (LCP)
 - First Input Delay (FID)
 - Cumulative Layout Shift (CLS)
 - First Contentful Paint (FCP)
 
 #### 4.2.2 Technical SEO
+
 - Page load speed
 - Mobile usability
 - Structured data validation
@@ -468,6 +480,7 @@ describe('Redirect Tests', () => {
 ### 5.1 Emergency Rollback
 
 #### 5.1.1 Hızlı Rollback (15 dakika)
+
 ```bash
 # 1. Git rollback
 git revert <commit-hash>
@@ -480,6 +493,7 @@ npm run deploy
 ```
 
 #### 5.1.2 Tam Rollback (30 dakika)
+
 ```bash
 # 1. next.config.js'i eski haline döndür
 # 2. Layout.tsx'i eski haline döndür
@@ -489,6 +503,7 @@ npm run deploy
 ```
 
 ### 5.2 Rollback Triggers
+
 - **Critical**: 404 hataları %5'ten fazla
 - **High**: Core Web Vitals %20'den fazla kötüleşme
 - **Medium**: Conversion rate %10'dan fazla düşüş
@@ -497,18 +512,21 @@ npm run deploy
 ## 6. SUCCESS METRICS
 
 ### 6.1 SEO Metrics
+
 - **Hreflang Coverage**: %100
 - **Canonical URL Accuracy**: %100
 - **Sitemap Coverage**: %100
 - **Index Coverage**: %95+
 
 ### 6.2 Performance Metrics
+
 - **Page Load Speed**: <3 saniye
 - **Core Web Vitals**: Tüm metrikler "Good"
 - **Mobile Usability**: %100
 - **Accessibility Score**: %90+
 
 ### 6.3 User Experience Metrics
+
 - **Bounce Rate**: Mevcut seviyede veya daha iyi
 - **Session Duration**: Mevcut seviyede veya daha iyi
 - **Pages per Session**: Mevcut seviyede veya daha iyi
@@ -517,21 +535,25 @@ npm run deploy
 ## 7. IMPLEMENTATION TIMELINE
 
 ### 7.1 Week 1: Foundation
+
 - **Day 1-2**: next.config.js redirects ve rewrites
 - **Day 3-4**: Layout.tsx hreflang implementation
 - **Day 5**: Sitemap.ts güncellemesi
 
 ### 7.2 Week 2: Content Updates
+
 - **Day 1-2**: Navigation components güncellemesi
 - **Day 3-4**: Internal links güncellemesi
 - **Day 5**: Language switcher güncellemesi
 
 ### 7.3 Week 3: Testing & Validation
+
 - **Day 1-2**: Automated testing
 - **Day 3-4**: Manual testing
 - **Day 5**: Performance testing
 
 ### 7.4 Week 4: Monitoring & Optimization
+
 - **Day 1-2**: SEO monitoring setup
 - **Day 3-4**: Analytics setup
 - **Day 5**: Performance optimization
@@ -539,21 +561,25 @@ npm run deploy
 ## 8. RISK MITIGATION
 
 ### 8.1 Technical Risks
+
 - **Risk**: Redirect loops
 - **Mitigation**: Comprehensive testing, gradual rollout
 - **Risk**: SEO ranking drops
 - **Mitigation**: Proper canonical URLs, hreflang implementation
 
 ### 8.2 Business Risks
+
 - **Risk**: User confusion
 - **Mitigation**: Clear communication, gradual transition
 - **Risk**: Revenue impact
 - **Mitigation**: A/B testing, performance monitoring
 
 ### 8.3 Operational Risks
+
 - **Risk**: Development delays
 - **Mitigation**: Phased approach, buffer time
 - **Risk**: Resource constraints
 - **Mitigation**: Clear priorities, external support
 
-Bu implementation plan, TaraTarot projesinin SEO performansını optimize ederken mevcut işlevselliği koruyacak şekilde tasarlanmıştır.
+Bu implementation plan, Büşbüşkiki projesinin SEO performansını optimize ederken
+mevcut işlevselliği koruyacak şekilde tasarlanmıştır.

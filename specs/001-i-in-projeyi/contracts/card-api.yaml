@@ -1,0 +1,534 @@
+openapi: 3.0.3
+info:
+  title: Tarot Card API
+  description: API for tarot card information pages
+  version: 1.0.0
+  contact:
+    name: BüşBüşKimKi Development Team
+    email: dev@busbuskimki.online
+
+servers:
+  - url: https://busbuskimki.online/api
+    description: Production server
+  - url: http://localhost:3000/api
+    description: Development server
+
+paths:
+  /cards/{locale}/{slug}:
+    get:
+      summary: Get card by slug and locale
+      description: Retrieve a tarot card with content and SEO data
+      parameters:
+        - name: locale
+          in: path
+          required: true
+          schema:
+            type: string
+            enum: [tr, en, sr]
+          description: Language locale
+        - name: slug
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Card slug
+      responses:
+        '200':
+          description: Card data retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CardResponse'
+        '404':
+          description: Card not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /cards/{locale}:
+    get:
+      summary: List cards by locale
+      description: Retrieve all cards for a specific locale
+      parameters:
+        - name: locale
+          in: path
+          required: true
+          schema:
+            type: string
+            enum: [tr, en, sr]
+          description: Language locale
+        - name: arcanaType
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [major, minor]
+          description: Filter by arcana type
+        - name: suit
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [cups, swords, wands, pentacles]
+          description: Filter by suit (minor arcana only)
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 20
+          description: Number of cards to return
+        - name: offset
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 0
+            default: 0
+          description: Number of cards to skip
+      responses:
+        '200':
+          description: Cards retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CardListResponse'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /cards/{cardId}/related:
+    get:
+      summary: Get related cards
+      description: Retrieve cards related to the specified card
+      parameters:
+        - name: cardId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+          description: Card ID
+        - name: locale
+          in: query
+          required: true
+          schema:
+            type: string
+            enum: [tr, en, sr]
+          description: Language locale
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 10
+            default: 4
+          description: Number of related cards to return
+      responses:
+        '200':
+          description: Related cards retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RelatedCardsResponse'
+        '404':
+          description: Card not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+components:
+  schemas:
+    TarotCard:
+      type: object
+      required:
+        - id
+        - englishName
+        - turkishName
+        - serbianName
+        - arcanaType
+        - imageUrl
+        - slug
+        - createdAt
+        - updatedAt
+      properties:
+        id:
+          type: string
+          format: uuid
+          description: Unique card identifier
+        englishName:
+          type: string
+          maxLength: 50
+          description: English name of the card
+        turkishName:
+          type: string
+          maxLength: 50
+          description: Turkish name of the card
+        serbianName:
+          type: string
+          maxLength: 50
+          description: Serbian name of the card
+        arcanaType:
+          type: string
+          enum: [major, minor]
+          description: Type of arcana
+        suit:
+          type: string
+          enum: [cups, swords, wands, pentacles]
+          description: Suit for minor arcana cards
+        number:
+          type: integer
+          minimum: 1
+          maximum: 14
+          description: Number for minor arcana cards
+        imageUrl:
+          type: string
+          format: uri
+          description: URL to card image
+        slug:
+          $ref: '#/components/schemas/CardSlug'
+        createdAt:
+          type: string
+          format: date-time
+          description: Creation timestamp
+        updatedAt:
+          type: string
+          format: date-time
+          description: Last update timestamp
+
+    CardSlug:
+      type: object
+      required:
+        - tr
+        - en
+        - sr
+      properties:
+        tr:
+          type: string
+          maxLength: 100
+          description: Turkish slug
+        en:
+          type: string
+          maxLength: 100
+          description: English slug
+        sr:
+          type: string
+          maxLength: 100
+          description: Serbian slug
+
+    CardContent:
+      type: object
+      required:
+        - id
+        - cardId
+        - locale
+        - uprightMeaning
+        - reversedMeaning
+        - loveInterpretation
+        - careerInterpretation
+        - moneyInterpretation
+        - spiritualInterpretation
+        - story
+        - keywords
+        - readingTime
+        - createdAt
+        - updatedAt
+      properties:
+        id:
+          type: string
+          format: uuid
+          description: Unique content identifier
+        cardId:
+          type: string
+          format: uuid
+          description: Reference to tarot card
+        locale:
+          type: string
+          enum: [tr, en, sr]
+          description: Content locale
+        uprightMeaning:
+          type: string
+          minLength: 500
+          maxLength: 800
+          description: Upright meaning of the card
+        reversedMeaning:
+          type: string
+          minLength: 500
+          maxLength: 800
+          description: Reversed meaning of the card
+        loveInterpretation:
+          type: string
+          minLength: 200
+          maxLength: 400
+          description: Love interpretation
+        careerInterpretation:
+          type: string
+          minLength: 200
+          maxLength: 400
+          description: Career interpretation
+        moneyInterpretation:
+          type: string
+          minLength: 200
+          maxLength: 400
+          description: Money interpretation
+        spiritualInterpretation:
+          type: string
+          minLength: 200
+          maxLength: 400
+          description: Spiritual interpretation
+        story:
+          type: string
+          minLength: 300
+          maxLength: 600
+          description: Card story or mythology
+        keywords:
+          type: array
+          items:
+            type: string
+          minItems: 5
+          maxItems: 10
+          description: Keywords associated with the card
+        readingTime:
+          type: integer
+          minimum: 1
+          description: Estimated reading time in minutes
+        createdAt:
+          type: string
+          format: date-time
+          description: Creation timestamp
+        updatedAt:
+          type: string
+          format: date-time
+          description: Last update timestamp
+
+    CardSEO:
+      type: object
+      required:
+        - id
+        - cardId
+        - locale
+        - metaTitle
+        - metaDescription
+        - canonicalUrl
+        - ogImage
+        - twitterImage
+        - keywords
+        - faq
+        - createdAt
+        - updatedAt
+      properties:
+        id:
+          type: string
+          format: uuid
+          description: Unique SEO identifier
+        cardId:
+          type: string
+          format: uuid
+          description: Reference to tarot card
+        locale:
+          type: string
+          enum: [tr, en, sr]
+          description: SEO locale
+        metaTitle:
+          type: string
+          minLength: 50
+          maxLength: 60
+          description: SEO meta title
+        metaDescription:
+          type: string
+          minLength: 120
+          maxLength: 155
+          description: SEO meta description
+        canonicalUrl:
+          type: string
+          format: uri
+          description: Canonical URL
+        ogImage:
+          type: string
+          format: uri
+          description: Open Graph image URL
+        twitterImage:
+          type: string
+          format: uri
+          description: Twitter Card image URL
+        keywords:
+          type: array
+          items:
+            type: string
+          minItems: 5
+          maxItems: 10
+          description: SEO keywords
+        faq:
+          type: array
+          items:
+            $ref: '#/components/schemas/FAQItem'
+          minItems: 3
+          maxItems: 6
+          description: FAQ items for structured data
+        createdAt:
+          type: string
+          format: date-time
+          description: Creation timestamp
+        updatedAt:
+          type: string
+          format: date-time
+          description: Last update timestamp
+
+    FAQItem:
+      type: object
+      required:
+        - question
+        - answer
+      properties:
+        question:
+          type: string
+          maxLength: 100
+          description: FAQ question
+        answer:
+          type: string
+          maxLength: 300
+          description: FAQ answer
+
+    CardResponse:
+      type: object
+      required:
+        - success
+        - data
+      properties:
+        success:
+          type: boolean
+          description: Request success status
+        data:
+          type: object
+          required:
+            - card
+            - content
+            - seo
+          properties:
+            card:
+              $ref: '#/components/schemas/TarotCard'
+            content:
+              $ref: '#/components/schemas/CardContent'
+            seo:
+              $ref: '#/components/schemas/CardSEO'
+
+    CardListResponse:
+      type: object
+      required:
+        - success
+        - data
+        - pagination
+      properties:
+        success:
+          type: boolean
+          description: Request success status
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/TarotCard'
+          description: Array of cards
+        pagination:
+          $ref: '#/components/schemas/PaginationInfo'
+
+    RelatedCardsResponse:
+      type: object
+      required:
+        - success
+        - data
+      properties:
+        success:
+          type: boolean
+          description: Request success status
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/TarotCard'
+          description: Array of related cards
+
+    PaginationInfo:
+      type: object
+      required:
+        - total
+        - limit
+        - offset
+        - hasMore
+      properties:
+        total:
+          type: integer
+          minimum: 0
+          description: Total number of items
+        limit:
+          type: integer
+          minimum: 1
+          maximum: 100
+          description: Number of items per page
+        offset:
+          type: integer
+          minimum: 0
+          description: Number of items skipped
+        hasMore:
+          type: boolean
+          description: Whether there are more items
+
+    ErrorResponse:
+      type: object
+      required:
+        - success
+        - error
+      properties:
+        success:
+          type: boolean
+          description: Request success status
+        error:
+          type: object
+          required:
+            - code
+            - message
+          properties:
+            code:
+              type: string
+              description: Error code
+            message:
+              type: string
+              description: Error message
+            details:
+              type: object
+              description: Additional error details
+
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+      description: API key for authentication
+
+security:
+  - ApiKeyAuth: []
+
+tags:
+  - name: Cards
+    description: Tarot card operations
+  - name: Content
+    description: Card content operations
+  - name: SEO
+    description: SEO metadata operations

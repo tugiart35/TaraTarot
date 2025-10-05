@@ -152,8 +152,12 @@ describe('Shopier Security', () => {
       const mockRequest = {
         headers: {
           get: (name: string) => {
-            if (name === 'x-forwarded-for') return '1.2.3.4, 5.6.7.8';
-            if (name === 'x-real-ip') return '9.10.11.12';
+            if (name === 'x-forwarded-for') {
+              return '1.2.3.4, 5.6.7.8';
+            }
+            if (name === 'x-real-ip') {
+              return '9.10.11.12';
+            }
             return null;
           },
         },
@@ -168,9 +172,15 @@ describe('Shopier Security', () => {
       const mockRequest = {
         headers: {
           get: (name: string) => {
-            if (name === 'cf-connecting-ip') return '1.1.1.1';
-            if (name === 'x-forwarded-for') return '2.2.2.2';
-            if (name === 'x-real-ip') return '3.3.3.3';
+            if (name === 'cf-connecting-ip') {
+              return '1.1.1.1';
+            }
+            if (name === 'x-forwarded-for') {
+              return '2.2.2.2';
+            }
+            if (name === 'x-real-ip') {
+              return '3.3.3.3';
+            }
             return null;
           },
         },
@@ -253,9 +263,7 @@ describe('Shopier Security', () => {
 
       it('should reject old timestamps', () => {
         const old = new Date(Date.now() - 400000).toISOString(); // 400 saniye önce
-        expect(ShopierRequestValidator.validateTimestamp(old, 300)).toBe(
-          false
-        );
+        expect(ShopierRequestValidator.validateTimestamp(old, 300)).toBe(false);
       });
 
       it('should reject future timestamps', () => {
@@ -344,8 +352,7 @@ describe('Shopier Security', () => {
           status: 'invalid',
         };
 
-        const result =
-          ShopierRequestValidator.validateWebhookData(invalidData);
+        const result = ShopierRequestValidator.validateWebhookData(invalidData);
 
         expect(result.valid).toBe(false);
         expect(result.errors.length).toBeGreaterThan(0);
@@ -360,8 +367,7 @@ describe('Shopier Security', () => {
           status: '',
         };
 
-        const result =
-          ShopierRequestValidator.validateWebhookData(invalidData);
+        const result = ShopierRequestValidator.validateWebhookData(invalidData);
 
         expect(result.errors).toContain('Invalid order ID format');
         expect(result.errors).toContain('Invalid or expired timestamp');
@@ -372,4 +378,3 @@ describe('Shopier Security', () => {
     });
   });
 });
-

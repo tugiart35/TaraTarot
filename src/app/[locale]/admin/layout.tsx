@@ -79,11 +79,7 @@ const getNavigation = (locale: string) => [
   },
 ];
 
-function AdminLayoutContent({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+function AdminLayoutContent({ children }: { children: React.ReactNode }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [notifications] = useState(3);
   const pathname = usePathname();
@@ -146,7 +142,7 @@ function AdminLayoutContent({
   return (
     <AdminGuard>
       <div className='min-h-screen admin-bg text-white'>
-          {/* Session Warning - artık kullanılmıyor, Supabase otomatik yönetiyor */}
+        {/* Session Warning - artık kullanılmıyor, Supabase otomatik yönetiyor */}
 
         {/* Mobile Header */}
         <div className='lg:hidden'>
@@ -479,14 +475,14 @@ export default function AdminLayout({
 
   return (
     <AdminAuthProvider>
-      <div className="admin-layout admin-page">
+      <div className='admin-layout admin-page'>
         <AdminLayoutContent>{children}</AdminLayoutContent>
       </div>
       {/* Admin sayfalarında Footer'ı gizle - sadece admin sayfalarında */}
       <style jsx global>{`
         .admin-layout footer,
         .admin-page footer,
-        [data-admin="true"] footer {
+        [data-admin='true'] footer {
           display: none !important;
           visibility: hidden !important;
           opacity: 0 !important;

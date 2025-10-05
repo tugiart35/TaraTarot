@@ -70,7 +70,7 @@ export class ApiBase {
       data,
       timestamp: new Date().toISOString(),
     };
-    
+
     if (message) {
       response.message = message;
     }

@@ -1,6 +1,6 @@
 /*
  * Sistem Performans Monitoring API
- * 
+ *
  * Bu dosya Supabase'den sistem performans verilerini çekmek için API fonksiyonlarını içerir.
  * Admin dashboard'da gerçek zamanlı sistem performans metriklerini göstermek için kullanılır.
  */
@@ -9,12 +9,12 @@ import { supabase } from '@/lib/supabase/client';
 import { logSupabaseError } from '@/lib/logger';
 
 export interface SystemPerformanceMetrics {
-  uptime: number;          // Yüzde olarak (0-100)
-  responseTime: number;    // Milisaniye
-  memoryUsage: number;     // GB
-  cpuUsage: number;        // Yüzde olarak (0-100)
-  activeUsers: number;     // Aktif kullanıcı sayısı
-  timestamp: string;       // ISO string
+  uptime: number; // Yüzde olarak (0-100)
+  responseTime: number; // Milisaniye
+  memoryUsage: number; // GB
+  cpuUsage: number; // Yüzde olarak (0-100)
+  activeUsers: number; // Aktif kullanıcı sayısı
+  timestamp: string; // ISO string
 }
 
 export interface PerformanceHistory {
@@ -68,11 +68,13 @@ export async function fetchCurrentSystemPerformance(): Promise<SystemPerformance
 /**
  * Son 24 saatlik sistem performans metriklerini çeker
  */
-export async function fetchDailyPerformanceMetrics(): Promise<SystemPerformanceMetrics[]> {
+export async function fetchDailyPerformanceMetrics(): Promise<
+  SystemPerformanceMetrics[]
+> {
   try {
     const now = new Date();
     const oneDayAgo = new Date(now.getTime() - 24 * 60 * 60 * 1000);
-    
+
     const { data, error } = await supabase
       .from('system_performance')
       .select('*')
@@ -105,11 +107,13 @@ export async function fetchDailyPerformanceMetrics(): Promise<SystemPerformanceM
 /**
  * Son 7 günlük sistem performans metriklerini çeker
  */
-export async function fetchWeeklyPerformanceMetrics(): Promise<SystemPerformanceMetrics[]> {
+export async function fetchWeeklyPerformanceMetrics(): Promise<
+  SystemPerformanceMetrics[]
+> {
   try {
     const now = new Date();
     const oneWeekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
-    
+
     const { data, error } = await supabase
       .from('system_performance')
       .select('*')
@@ -127,10 +131,10 @@ export async function fetchWeeklyPerformanceMetrics(): Promise<SystemPerformance
 
     // Günlük ortalamalar hesapla
     const dailyAverages: { [date: string]: SystemPerformanceMetrics } = {};
-    
+
     data.forEach((item: any) => {
       const date = item.timestamp.split('T')[0]; // YYYY-MM-DD
-      
+
       if (!dailyAverages[date]) {
         dailyAverages[date] = {
           uptime: 0,
@@ -141,30 +145,37 @@ export async function fetchWeeklyPerformanceMetrics(): Promise<SystemPerformance
           timestamp: `${date}T12:00:00Z`,
         };
       }
-      
+
       dailyAverages[date].uptime += item.uptime;
       dailyAverages[date].responseTime += item.response_time;
       dailyAverages[date].memoryUsage += item.memory_usage;
       dailyAverages[date].cpuUsage += item.cpu_usage;
-      dailyAverages[date].activeUsers = Math.max(dailyAverages[date].activeUsers, item.active_users);
+      dailyAverages[date].activeUsers = Math.max(
+        dailyAverages[date].activeUsers,
+        item.active_users
+      );
     });
-    
+
     // Ortalamaları hesapla
-    return Object.keys(dailyAverages).map(date => {
-      const avg = dailyAverages[date];
-      if (!avg) return null;
-      
-      const count = 1; // Basit sayım
-      
-      return {
-        uptime: avg.uptime / count,
-        responseTime: avg.responseTime / count,
-        memoryUsage: avg.memoryUsage / count,
-        cpuUsage: avg.cpuUsage / count,
-        activeUsers: avg.activeUsers,
-        timestamp: avg.timestamp,
-      };
-    }).filter((item): item is SystemPerformanceMetrics => item !== null);
+    return Object.keys(dailyAverages)
+      .map(date => {
+        const avg = dailyAverages[date];
+        if (!avg) {
+          return null;
+        }
+
+        const count = 1; // Basit sayım
+
+        return {
+          uptime: avg.uptime / count,
+          responseTime: avg.responseTime / count,
+          memoryUsage: avg.memoryUsage / count,
+          cpuUsage: avg.cpuUsage / count,
+          activeUsers: avg.activeUsers,
+          timestamp: avg.timestamp,
+        };
+      })
+      .filter((item): item is SystemPerformanceMetrics => item !== null);
   } catch (error) {
     console.error('Error fetching weekly performance metrics:', error);
     return [];
@@ -174,11 +185,13 @@ export async function fetchWeeklyPerformanceMetrics(): Promise<SystemPerformance
 /**
  * Son 30 günlük sistem performans özeti
  */
-export async function fetchMonthlyPerformanceSummary(): Promise<PerformanceHistory['monthly']> {
+export async function fetchMonthlyPerformanceSummary(): Promise<
+  PerformanceHistory['monthly']
+> {
   try {
     const now = new Date();
     const oneMonthAgo = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
-    
+
     const { data, error } = await supabase
       .from('system_performance')
       .select('*')
@@ -207,20 +220,23 @@ export async function fetchMonthlyPerformanceSummary(): Promise<PerformanceHisto
 
     // Ortalama ve peak değerleri hesapla
     const totalEntries = data.length;
-    const totals = data.reduce((acc: any, item: any) => {
-      acc.uptime += item.uptime;
-      acc.responseTime += item.response_time;
-      acc.memoryUsage += item.memory_usage;
-      acc.cpuUsage += item.cpu_usage;
-      acc.peakActiveUsers = Math.max(acc.peakActiveUsers, item.active_users);
-      return acc;
-    }, {
-      uptime: 0,
-      responseTime: 0,
-      memoryUsage: 0,
-      cpuUsage: 0,
-      peakActiveUsers: 0,
-    });
+    const totals = data.reduce(
+      (acc: any, item: any) => {
+        acc.uptime += item.uptime;
+        acc.responseTime += item.response_time;
+        acc.memoryUsage += item.memory_usage;
+        acc.cpuUsage += item.cpu_usage;
+        acc.peakActiveUsers = Math.max(acc.peakActiveUsers, item.active_users);
+        return acc;
+      },
+      {
+        uptime: 0,
+        responseTime: 0,
+        memoryUsage: 0,
+        cpuUsage: 0,
+        peakActiveUsers: 0,
+      }
+    );
 
     return {
       averageUptime: totals.uptime / totalEntries,
@@ -262,18 +278,18 @@ export async function fetchAllPerformanceMetrics(): Promise<PerformanceHistory> 
  * Sistem performans metriklerini Supabase'e kaydeder
  * (Bu fonksiyon genellikle backend tarafından çağrılır)
  */
-export async function logSystemPerformance(metrics: Omit<SystemPerformanceMetrics, 'timestamp'>): Promise<boolean> {
+export async function logSystemPerformance(
+  metrics: Omit<SystemPerformanceMetrics, 'timestamp'>
+): Promise<boolean> {
   try {
-    const { error } = await supabase
-      .from('system_performance')
-      .insert({
-        uptime: metrics.uptime,
-        response_time: metrics.responseTime,
-        memory_usage: metrics.memoryUsage,
-        cpu_usage: metrics.cpuUsage,
-        active_users: metrics.activeUsers,
-        timestamp: new Date().toISOString(),
-      });
+    const { error } = await supabase.from('system_performance').insert({
+      uptime: metrics.uptime,
+      response_time: metrics.responseTime,
+      memory_usage: metrics.memoryUsage,
+      cpu_usage: metrics.cpuUsage,
+      active_users: metrics.activeUsers,
+      timestamp: new Date().toISOString(),
+    });
 
     if (error) {
       logSupabaseError('log system performance', error);

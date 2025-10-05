@@ -52,7 +52,7 @@ messaging, and form management.
   schemas)
 - **auth-error-messages.ts**: Used in `AuthForm.tsx` (getAuthErrorMessage
   import)
-- ****tests**/auth-validation.test.ts**: Test file for validation schemas
+- \***\*tests**/auth-validation.test.ts\*\*: Test file for validation schemas
 
 ### 🔍 Code Quality Issues
 

@@ -36,7 +36,7 @@ const MISSING_KEYS = {
   'messages.profile.lastNamePlaceholder': 'Soyadınızı girin',
   'messages.profile.fullName': 'Tam Ad',
   'messages.profile.fullNamePlaceholder': 'Tam adınızı girin',
-  'messages.profile.birthDate': 'Doğum Tarihi'
+  'messages.profile.birthDate': 'Doğum Tarihi',
 };
 
 // TR dosyasını oku
@@ -50,11 +50,11 @@ try {
 
   // Key'leri ekle
   let addedCount = 0;
-  
+
   for (const [keyPath, value] of Object.entries(MISSING_KEYS)) {
     const keys = keyPath.split('.');
     let current = trData;
-    
+
     // Nested object oluştur
     for (let i = 0; i < keys.length - 1; i++) {
       const key = keys[i];
@@ -63,19 +63,18 @@ try {
       }
       current = current[key];
     }
-    
+
     // Son key'i ekle
     current[keys[keys.length - 1]] = value;
     addedCount++;
     console.log(`✓ Eklendi: ${keyPath} -> ${value}`);
   }
-  
+
   // Dosyayı kaydet
   const updatedContent = JSON.stringify(trData, null, 2);
   fs.writeFileSync(trPath, updatedContent, 'utf8');
-  
+
   console.log(`✅ ${addedCount} key başarıyla eklendi ve kaydedildi`);
-  
 } catch (error) {
   console.error('Hata:', error.message);
 }

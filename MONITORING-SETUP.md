@@ -9,11 +9,13 @@
 ## 🎯 Monitoring Strategy
 
 ### 1. Vercel Built-in Analytics
+
 - **Web Analytics** - Page views, user sessions
 - **Speed Insights** - Core Web Vitals
 - **Function Logs** - API endpoint monitoring
 
 ### 2. Error Monitoring (Optional)
+
 - **Sentry** - Error tracking & performance
 - **LogRocket** - Session replay
 - **Uptime Robot** - Uptime monitoring
@@ -23,6 +25,7 @@
 ## 1️⃣ Vercel Analytics Setup
 
 ### Enable Web Analytics
+
 ```bash
 # Vercel Dashboard → Project → Analytics
 # 1. Go to: https://vercel.com/bbktarots-projects/busbuskimki/analytics
@@ -31,6 +34,7 @@
 ```
 
 ### Add to Application
+
 ```typescript
 // src/app/layout.tsx - Add analytics
 import { Analytics } from '@vercel/analytics/react';
@@ -54,6 +58,7 @@ export default function RootLayout({
 ```
 
 ### Environment Variables
+
 ```bash
 # Vercel Dashboard → Settings → Environment Variables
 VERCEL_ANALYTICS_ID=your-analytics-id
@@ -64,6 +69,7 @@ VERCEL_ANALYTICS_ID=your-analytics-id
 ## 2️⃣ Error Monitoring Setup
 
 ### Option A: Sentry (Recommended)
+
 ```bash
 # Install Sentry
 npm install @sentry/nextjs
@@ -78,6 +84,7 @@ SENTRY_PROJECT=busbuskimki
 ```
 
 ### Option B: LogRocket (Alternative)
+
 ```bash
 # Install LogRocket
 npm install logrocket
@@ -93,6 +100,7 @@ LogRocket.init('your-app-id');
 ## 3️⃣ Uptime Monitoring
 
 ### UptimeRobot (Free - 50 monitors)
+
 1. **Sign up:** [uptimerobot.com](https://uptimerobot.com)
 2. **Add Monitor:**
    - URL: `https://busbuskimki-gqzn63hrw-bbktarots-projects.vercel.app`
@@ -101,6 +109,7 @@ LogRocket.init('your-app-id');
    - Contacts: Email notifications
 
 ### Pingdom (Alternative)
+
 1. **Sign up:** [pingdom.com](https://pingdom.com)
 2. **Free tier:** 1 monitor
 3. **Setup:** Similar to UptimeRobot
@@ -110,6 +119,7 @@ LogRocket.init('your-app-id');
 ## 4️⃣ Performance Monitoring
 
 ### Core Web Vitals
+
 ```typescript
 // Already included with Vercel Speed Insights
 // Measures:
@@ -119,13 +129,14 @@ LogRocket.init('your-app-id');
 ```
 
 ### Custom Performance Metrics
+
 ```typescript
 // src/lib/analytics.ts
 export const trackEvent = (eventName: string, properties?: any) => {
   if (typeof window !== 'undefined') {
     // Google Analytics 4
     gtag('event', eventName, properties);
-    
+
     // Vercel Analytics
     analytics.track(eventName, properties);
   }
@@ -142,9 +153,10 @@ trackEvent('user_registration', { method: 'email' });
 ## 5️⃣ Database Monitoring
 
 ### Supabase Monitoring
+
 ```sql
 -- Database performance queries
-SELECT 
+SELECT
   schemaname,
   tablename,
   n_tup_ins as inserts,
@@ -156,7 +168,7 @@ FROM pg_stat_user_tables
 ORDER BY n_live_tup DESC;
 
 -- Slow queries
-SELECT 
+SELECT
   query,
   calls,
   total_time,
@@ -168,6 +180,7 @@ LIMIT 10;
 ```
 
 ### Database Alerts
+
 - **Connection limits** - Monitor concurrent connections
 - **Query performance** - Alert on slow queries (>1s)
 - **Storage usage** - Alert when >80% full
@@ -178,6 +191,7 @@ LIMIT 10;
 ## 6️⃣ Security Monitoring
 
 ### Vercel Security Headers
+
 ```typescript
 // Already configured in middleware.ts
 // Monitor for:
@@ -187,6 +201,7 @@ LIMIT 10;
 ```
 
 ### Security Alerts
+
 ```bash
 # Environment variables to monitor:
 # - Failed login attempts
@@ -200,6 +215,7 @@ LIMIT 10;
 ## 7️⃣ Business Metrics
 
 ### Key Performance Indicators (KPIs)
+
 ```typescript
 // Track these metrics:
 const businessMetrics = {
@@ -207,25 +223,26 @@ const businessMetrics = {
   dailyActiveUsers: 0,
   sessionDuration: 0,
   bounceRate: 0,
-  
+
   // Conversion Metrics
   registrationRate: 0,
   paymentConversion: 0,
   tarotReadingCompletion: 0,
-  
+
   // Revenue Metrics
   totalRevenue: 0,
   averageOrderValue: 0,
   customerLifetimeValue: 0,
-  
+
   // Technical Metrics
   pageLoadTime: 0,
   errorRate: 0,
-  uptime: 0
+  uptime: 0,
 };
 ```
 
 ### Dashboard Setup
+
 ```typescript
 // Create monitoring dashboard
 // Tools: Grafana, DataDog, or custom dashboard
@@ -241,18 +258,21 @@ const businessMetrics = {
 ## 8️⃣ Alert Configuration
 
 ### Critical Alerts (Immediate Response)
+
 - **Site Down** - 0% uptime for 5+ minutes
 - **High Error Rate** - >5% error rate
 - **Payment Failures** - Any payment system errors
 - **Database Issues** - Connection failures
 
 ### Warning Alerts (Monitor)
+
 - **Slow Performance** - Page load >3 seconds
 - **High Traffic** - Unusual traffic spikes
 - **Storage Usage** - Database >80% full
 - **SSL Certificate** - Expires in 30 days
 
 ### Notification Channels
+
 - **Email** - All alerts
 - **Slack** - Critical alerts only
 - **SMS** - Site down alerts only
@@ -262,30 +282,35 @@ const businessMetrics = {
 ## 9️⃣ Implementation Checklist
 
 ### Vercel Analytics
+
 - [ ] Enable Web Analytics in Vercel Dashboard
 - [ ] Add `<Analytics />` to layout.tsx
 - [ ] Add `<SpeedInsights />` to layout.tsx
 - [ ] Verify tracking in browser dev tools
 
 ### Error Monitoring
+
 - [ ] Install Sentry (optional)
 - [ ] Configure error boundaries
 - [ ] Test error reporting
 - [ ] Setup alert rules
 
 ### Uptime Monitoring
+
 - [ ] Create UptimeRobot account
 - [ ] Add website monitor
 - [ ] Configure email notifications
 - [ ] Test alert system
 
 ### Performance Monitoring
+
 - [ ] Verify Core Web Vitals tracking
 - [ ] Setup custom event tracking
 - [ ] Monitor API response times
 - [ ] Track user interactions
 
 ### Security Monitoring
+
 - [ ] Review security headers
 - [ ] Monitor failed login attempts
 - [ ] Setup rate limiting alerts
@@ -296,6 +321,7 @@ const businessMetrics = {
 ## 🔧 Quick Setup Commands
 
 ### Enable Vercel Analytics
+
 ```bash
 # 1. Go to Vercel Dashboard
 # 2. Project → Analytics → Enable
@@ -305,6 +331,7 @@ const businessMetrics = {
 ```
 
 ### Setup Uptime Monitoring
+
 ```bash
 # 1. Sign up at uptimerobot.com
 # 2. Add monitor for:
@@ -314,6 +341,7 @@ const businessMetrics = {
 ```
 
 ### Test Monitoring
+
 ```bash
 # Test error reporting:
 curl -X POST https://your-domain.com/api/test-error
@@ -330,6 +358,7 @@ curl -I https://your-domain.com
 ## 📊 Expected Metrics
 
 ### Performance Targets
+
 - **Page Load Time:** <2 seconds
 - **First Contentful Paint:** <1.5 seconds
 - **Largest Contentful Paint:** <2.5 seconds
@@ -337,12 +366,14 @@ curl -I https://your-domain.com
 - **First Input Delay:** <100ms
 
 ### Availability Targets
+
 - **Uptime:** >99.9%
 - **Error Rate:** <1%
 - **Response Time:** <500ms (API)
 - **Database Response:** <100ms
 
 ### Business Targets
+
 - **Conversion Rate:** >5%
 - **Session Duration:** >3 minutes
 - **Bounce Rate:** <40%
@@ -355,6 +386,7 @@ curl -I https://your-domain.com
 ### Common Issues
 
 #### Analytics Not Tracking
+
 ```bash
 # Check if tracking is enabled:
 # 1. Vercel Dashboard → Analytics
@@ -363,6 +395,7 @@ curl -I https://your-domain.com
 ```
 
 #### High Error Rate
+
 ```bash
 # Check error logs:
 vercel logs
@@ -374,6 +407,7 @@ vercel logs
 ```
 
 #### Slow Performance
+
 ```bash
 # Performance analysis:
 # 1. Vercel Speed Insights
@@ -387,10 +421,13 @@ vercel logs
 ## 📞 Support
 
 ### Vercel Support
-- **Analytics Issues:** [Vercel Analytics Docs](https://vercel.com/docs/analytics)
+
+- **Analytics Issues:**
+  [Vercel Analytics Docs](https://vercel.com/docs/analytics)
 - **Performance:** [Speed Insights Docs](https://vercel.com/docs/speed-insights)
 
 ### Third-party Services
+
 - **Sentry:** [Sentry Support](https://sentry.io/support/)
 - **UptimeRobot:** [UptimeRobot Support](https://uptimerobot.com/help/)
 

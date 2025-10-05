@@ -9,6 +9,7 @@
 ## 🚀 Quick Setup Steps
 
 ### 1. Create Account
+
 1. **Go to:** https://uptimerobot.com
 2. **Click:** "Sign Up" (top right)
 3. **Enter:** Email address
@@ -16,6 +17,7 @@
 5. **Verify:** Email verification
 
 ### 2. Add Monitor
+
 1. **Click:** "Add New Monitor" (big blue button)
 2. **Monitor Type:** HTTP(s)
 3. **Friendly Name:** `Busbuskimki Production`
@@ -25,6 +27,7 @@
 7. **Click:** "Create Monitor"
 
 ### 3. Configure Alerts
+
 1. **Go to:** Settings → Alert Contacts
 2. **Add Email Contact:**
    - **Type:** Email
@@ -33,6 +36,7 @@
    - **Save Contact**
 
 ### 4. Set Alert Preferences
+
 1. **Go to:** My Monitors
 2. **Click:** Edit (pencil icon) on your monitor
 3. **Alert Contacts:** Select your email contact
@@ -44,6 +48,7 @@
 ## 📱 Optional: SMS Alerts
 
 ### Setup SMS (Optional)
+
 1. **Go to:** Settings → Alert Contacts
 2. **Add SMS Contact:**
    - **Type:** SMS
@@ -56,6 +61,7 @@
 ## 🔧 Advanced Configuration
 
 ### Monitor Settings
+
 ```
 Monitor Type: HTTP(s)
 URL: https://busbuskimki.com
@@ -68,6 +74,7 @@ Authentication: None
 ```
 
 ### Alert Settings
+
 ```
 Down Alert: Immediate (0 minutes)
 Up Alert: 0 minutes
@@ -76,6 +83,7 @@ Alert Contacts: Your email
 ```
 
 ### Additional Monitors (Optional)
+
 ```
 Monitor 2:
 - URL: https://www.busbuskimki.com
@@ -95,6 +103,7 @@ Monitor 4:
 ## 📊 Expected Results
 
 ### After Setup
+
 - ✅ **Real-time monitoring** every 5 minutes
 - ✅ **Email alerts** when site goes down
 - ✅ **Uptime statistics** and reports
@@ -102,6 +111,7 @@ Monitor 4:
 - ✅ **Historical data** and trends
 
 ### Dashboard Features
+
 - **Uptime percentage** (should be 99.9%+)
 - **Average response time** (should be <2 seconds)
 - **Last 24 hours** uptime chart
@@ -113,6 +123,7 @@ Monitor 4:
 ## 🚨 Alert Examples
 
 ### Down Alert Email
+
 ```
 Subject: [UptimeRobot] DOWN: Busbuskimki Production
 
@@ -124,6 +135,7 @@ Response Time: 30.00 seconds
 ```
 
 ### Up Alert Email
+
 ```
 Subject: [UptimeRobot] UP: Busbuskimki Production
 
@@ -138,12 +150,14 @@ Response Time: 1.25 seconds
 ## 📈 Monitoring Benefits
 
 ### Business Impact
+
 - **Immediate notification** of outages
 - **Historical uptime data** for SLA reporting
 - **Performance tracking** over time
 - **Peace of mind** knowing site is monitored
 
 ### Technical Benefits
+
 - **Early detection** of server issues
 - **Response time monitoring** for performance
 - **SSL certificate monitoring** (optional)
@@ -156,6 +170,7 @@ Response Time: 1.25 seconds
 ### Common Issues
 
 #### Monitor Shows "Down" But Site Works
+
 ```
 Possible Causes:
 1. DNS propagation delay
@@ -171,6 +186,7 @@ Solutions:
 ```
 
 #### No Email Alerts
+
 ```
 Check:
 1. Email in spam folder
@@ -180,6 +196,7 @@ Check:
 ```
 
 #### False Positives
+
 ```
 Adjustments:
 1. Increase timeout to 60 seconds
@@ -193,6 +210,7 @@ Adjustments:
 ## 📋 Setup Checklist
 
 ### Basic Setup
+
 - [ ] Create UptimeRobot account
 - [ ] Verify email address
 - [ ] Add HTTP(s) monitor for busbuskimki.com
@@ -201,6 +219,7 @@ Adjustments:
 - [ ] Test alert system
 
 ### Optional Setup
+
 - [ ] Add WWW subdomain monitor
 - [ ] Add locale-specific monitors
 - [ ] Setup SMS alerts (paid)
@@ -212,12 +231,14 @@ Adjustments:
 ## 🎯 Expected Performance
 
 ### Uptime Targets
+
 - **Target Uptime:** 99.9%
 - **Expected Response Time:** <2 seconds
 - **Alert Response:** Immediate (0 minutes)
 - **Monitoring Frequency:** Every 5 minutes
 
 ### Free Plan Limits
+
 - **50 monitors** maximum
 - **5-minute intervals** minimum
 - **Email alerts** unlimited
@@ -229,11 +250,13 @@ Adjustments:
 ## 📞 Support
 
 ### UptimeRobot Support
+
 - **Help Center:** https://uptimerobot.com/help/
 - **Email Support:** Available for paid plans
 - **Community Forum:** https://uptimerobot.com/forum/
 
 ### Our Setup Support
+
 - **Email:** busbuskimkionline@gmail.com
 - **Phone:** +382 (67) 010176
 
@@ -242,6 +265,7 @@ Adjustments:
 ## 🚀 Ready to Setup
 
 **Next Steps:**
+
 1. Go to https://uptimerobot.com
 2. Create account (2 minutes)
 3. Add monitor for https://busbuskimki.com (2 minutes)

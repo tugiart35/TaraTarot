@@ -14,7 +14,7 @@ export default function PaymentTerms() {
       {/* Mystical Background Effects */}
       <div className='absolute inset-0 bg-gradient-to-br from-purple-900/20 via-indigo-900/20 to-purple-800/20'></div>
       <div className='absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent'></div>
-      
+
       <main className='relative z-10 max-w-4xl mx-auto px-4 py-12'>
         {/* Header Section with Mystical Design */}
         <section className='mb-12 text-center'>
@@ -36,7 +36,9 @@ export default function PaymentTerms() {
               <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
                 <FaCreditCard className='w-5 h-5 text-purple-300' />
               </div>
-              <h2 className='text-2xl font-bold text-golden-300'>Ödeme Yöntemleri</h2>
+              <h2 className='text-2xl font-bold text-golden-300'>
+                Ödeme Yöntemleri
+              </h2>
             </div>
             <p className='text-cosmic-200 leading-relaxed'>
               {t('legalPages.paymentTerms.content')}
@@ -48,26 +50,34 @@ export default function PaymentTerms() {
               <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
                 <FaShieldAlt className='w-5 h-5 text-purple-300' />
               </div>
-              <h2 className='text-2xl font-bold text-golden-300'>{t('legalPages.paymentTerms.methods')}</h2>
+              <h2 className='text-2xl font-bold text-golden-300'>
+                {t('legalPages.paymentTerms.methods')}
+              </h2>
             </div>
             <div className='grid md:grid-cols-3 gap-4'>
               <div className='bg-gradient-to-r from-blue-500/10 to-cyan-500/10 p-4 rounded-lg border border-blue-500/20 text-center'>
                 <div className='w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-3'>
                   <FaCreditCard className='w-6 h-6 text-white' />
                 </div>
-                <h3 className='text-lg font-semibold text-blue-300 mb-2'>{t('legalPages.paymentTerms.creditCard')}</h3>
+                <h3 className='text-lg font-semibold text-blue-300 mb-2'>
+                  {t('legalPages.paymentTerms.creditCard')}
+                </h3>
               </div>
               <div className='bg-gradient-to-r from-green-500/10 to-emerald-500/10 p-4 rounded-lg border border-green-500/20 text-center'>
                 <div className='w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-3'>
                   <FaCreditCard className='w-6 h-6 text-white' />
                 </div>
-                <h3 className='text-lg font-semibold text-green-300 mb-2'>{t('legalPages.paymentTerms.debitCard')}</h3>
+                <h3 className='text-lg font-semibold text-green-300 mb-2'>
+                  {t('legalPages.paymentTerms.debitCard')}
+                </h3>
               </div>
               <div className='bg-gradient-to-r from-purple-500/10 to-indigo-500/10 p-4 rounded-lg border border-purple-500/20 text-center'>
                 <div className='w-12 h-12 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-3'>
                   <FaShieldAlt className='w-6 h-6 text-white' />
                 </div>
-                <h3 className='text-lg font-semibold text-purple-300 mb-2'>{t('legalPages.paymentTerms.digitalWallet')}</h3>
+                <h3 className='text-lg font-semibold text-purple-300 mb-2'>
+                  {t('legalPages.paymentTerms.digitalWallet')}
+                </h3>
               </div>
             </div>
           </section>
@@ -77,17 +87,25 @@ export default function PaymentTerms() {
               <div className='p-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-lg'>
                 <FaLock className='w-5 h-5 text-purple-300' />
               </div>
-              <h2 className='text-2xl font-bold text-golden-300'>{t('legalPages.paymentTerms.security')}</h2>
+              <h2 className='text-2xl font-bold text-golden-300'>
+                {t('legalPages.paymentTerms.security')}
+              </h2>
             </div>
             <div className='grid md:grid-cols-3 gap-4'>
               <div className='bg-gradient-to-r from-green-500/10 to-emerald-500/10 p-4 rounded-lg border border-green-500/20'>
-                <h3 className='text-lg font-semibold text-green-300 mb-2'>{t('legalPages.paymentTerms.ssl')}</h3>
+                <h3 className='text-lg font-semibold text-green-300 mb-2'>
+                  {t('legalPages.paymentTerms.ssl')}
+                </h3>
               </div>
               <div className='bg-gradient-to-r from-blue-500/10 to-cyan-500/10 p-4 rounded-lg border border-blue-500/20'>
-                <h3 className='text-lg font-semibold text-blue-300 mb-2'>{t('legalPages.paymentTerms.pci')}</h3>
+                <h3 className='text-lg font-semibold text-blue-300 mb-2'>
+                  {t('legalPages.paymentTerms.pci')}
+                </h3>
               </div>
               <div className='bg-gradient-to-r from-purple-500/10 to-indigo-500/10 p-4 rounded-lg border border-purple-500/20'>
-                <h3 className='text-lg font-semibold text-purple-300 mb-2'>{t('legalPages.paymentTerms.secure')}</h3>
+                <h3 className='text-lg font-semibold text-purple-300 mb-2'>
+                  {t('legalPages.paymentTerms.secure')}
+                </h3>
               </div>
             </div>
           </section>

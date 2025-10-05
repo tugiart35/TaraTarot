@@ -178,11 +178,11 @@ export default function OrdersPage() {
       if (statusFilter !== 'all') {
         // Status filtresi için transaction type'ları map et
         const statusTypeMap: Record<string, string[]> = {
-          'completed': ['purchase', 'bonus', 'deduction'],
-          'pending': ['pending_payment'],
-          'cancelled': ['refund']
+          completed: ['purchase', 'bonus', 'deduction'],
+          pending: ['pending_payment'],
+          cancelled: ['refund'],
         };
-        
+
         // Eğer bu bir durum filtresi ise
         if (['completed', 'pending', 'cancelled'].includes(statusFilter)) {
           if (statusTypeMap[statusFilter]) {
@@ -229,11 +229,11 @@ export default function OrdersPage() {
       if (statusFilter !== 'all') {
         // Status filtresi için transaction type'ları map et
         const statusTypeMap: Record<string, string[]> = {
-          'completed': ['purchase', 'bonus', 'deduction'],
-          'pending': ['pending_payment'],
-          'cancelled': ['refund']
+          completed: ['purchase', 'bonus', 'deduction'],
+          pending: ['pending_payment'],
+          cancelled: ['refund'],
         };
-        
+
         // Eğer bu bir durum filtresi ise
         if (['completed', 'pending', 'cancelled'].includes(statusFilter)) {
           if (statusTypeMap[statusFilter]) {
@@ -261,53 +261,54 @@ export default function OrdersPage() {
         return;
       }
 
-        // Format transactions safely with user data
-        const formattedOrders = (data || []).map((transaction: any) => {
-          // Önce client-side'da saklanan status'u kontrol et
-          const storedStatuses = getStoredStatuses();
-          const storedStatus = storedStatuses[transaction.id];
-          
-          // Status öncelik sırası: localStorage > transaction.status > transaction.type
-          let status = storedStatus || 
-                      transaction.status || 
-                      getTransactionStatus(transaction.type);
-          
-          // Status bilgisine göre renk, icon ve metin belirle
-          const statusData = {
-            color: getStatusColor(transaction.type, status),
-            icon: getStatusIcon(transaction.type, status),
-            text: getStatusText(transaction.type, status)
-          };
-          
-          return {
-            id: transaction.id || 'unknown',
-            user_id: transaction.user_id || 'unknown',
-            type: transaction.type || 'unknown',
-            amount: transaction.amount || 0,
-            description: transaction.description || 'Açıklama yok',
-            created_at: transaction.created_at || new Date().toISOString(),
-            delta_credits: transaction.delta_credits || 0,
-            reason: transaction.reason || 'Sebep belirtilmemiş',
-            ref_type: transaction.ref_type || 'unknown',
-            ref_id: transaction.ref_id || 'Referans yok',
-            // Kullanıcı bilgileri
-            user_email: transaction.profiles?.email || 'Bilinmeyen',
-            user_display_name:
-              transaction.profiles?.display_name || 'Bilinmeyen Kullanıcı',
-            user_first_name: transaction.profiles?.first_name || '',
-            user_last_name: transaction.profiles?.last_name || '',
-            user_avatar: transaction.profiles?.avatar_url || null,
-            // Paket bilgileri
-            package_name: getPackageName(transaction.ref_type),
-            package_credits: transaction.delta_credits || 0,
-            // Status - localStorage > transaction.status > transaction.type
-            status: status,
-            // Status data - renk, icon ve metin
-            statusData: statusData,
-            // Metadata - diğer özel alanlar (varsa)
-            metadata: transaction.metadata || {},
-          };
-        });
+      // Format transactions safely with user data
+      const formattedOrders = (data || []).map((transaction: any) => {
+        // Önce client-side'da saklanan status'u kontrol et
+        const storedStatuses = getStoredStatuses();
+        const storedStatus = storedStatuses[transaction.id];
+
+        // Status öncelik sırası: localStorage > transaction.status > transaction.type
+        const status =
+          storedStatus ||
+          transaction.status ||
+          getTransactionStatus(transaction.type);
+
+        // Status bilgisine göre renk, icon ve metin belirle
+        const statusData = {
+          color: getStatusColor(transaction.type, status),
+          icon: getStatusIcon(transaction.type, status),
+          text: getStatusText(transaction.type, status),
+        };
+
+        return {
+          id: transaction.id || 'unknown',
+          user_id: transaction.user_id || 'unknown',
+          type: transaction.type || 'unknown',
+          amount: transaction.amount || 0,
+          description: transaction.description || 'Açıklama yok',
+          created_at: transaction.created_at || new Date().toISOString(),
+          delta_credits: transaction.delta_credits || 0,
+          reason: transaction.reason || 'Sebep belirtilmemiş',
+          ref_type: transaction.ref_type || 'unknown',
+          ref_id: transaction.ref_id || 'Referans yok',
+          // Kullanıcı bilgileri
+          user_email: transaction.profiles?.email || 'Bilinmeyen',
+          user_display_name:
+            transaction.profiles?.display_name || 'Bilinmeyen Kullanıcı',
+          user_first_name: transaction.profiles?.first_name || '',
+          user_last_name: transaction.profiles?.last_name || '',
+          user_avatar: transaction.profiles?.avatar_url || null,
+          // Paket bilgileri
+          package_name: getPackageName(transaction.ref_type),
+          package_credits: transaction.delta_credits || 0,
+          // Status - localStorage > transaction.status > transaction.type
+          status: status,
+          // Status data - renk, icon ve metin
+          statusData: statusData,
+          // Metadata - diğer özel alanlar (varsa)
+          metadata: transaction.metadata || {},
+        };
+      });
 
       setOrders(formattedOrders);
     } catch (error) {
@@ -340,9 +341,15 @@ export default function OrdersPage() {
   const getReadingType = (refType: string, description: string) => {
     // Okuma türünü belirle
     if (refType === 'reading_deduction') {
-      if (description.toLowerCase().includes('sesli') || description.toLowerCase().includes('voice')) {
+      if (
+        description.toLowerCase().includes('sesli') ||
+        description.toLowerCase().includes('voice')
+      ) {
         return 'Sesli Okuma';
-      } else if (description.toLowerCase().includes('yazılı') || description.toLowerCase().includes('text')) {
+      } else if (
+        description.toLowerCase().includes('yazılı') ||
+        description.toLowerCase().includes('text')
+      ) {
         return 'Yazılı Okuma';
       } else {
         return 'Tarot Okuması';
@@ -369,11 +376,15 @@ export default function OrdersPage() {
 
   // Client-side durum yönetimi için localStorage kullanımı
   const getStoredStatuses = (): Record<string, string> => {
-    if (typeof window === 'undefined') return {};
-    
+    if (typeof window === 'undefined') {
+      return {};
+    }
+
     const stored = localStorage.getItem('admin_transaction_statuses');
-    if (!stored) return {};
-    
+    if (!stored) {
+      return {};
+    }
+
     try {
       return JSON.parse(stored);
     } catch (e) {
@@ -381,10 +392,12 @@ export default function OrdersPage() {
       return {};
     }
   };
-  
+
   const saveStoredStatus = (id: string, status: string) => {
-    if (typeof window === 'undefined') return;
-    
+    if (typeof window === 'undefined') {
+      return;
+    }
+
     const current = getStoredStatuses();
     const updated = { ...current, [id]: status };
     localStorage.setItem('admin_transaction_statuses', JSON.stringify(updated));
@@ -401,39 +414,43 @@ export default function OrdersPage() {
     }
   };
 
-  const handleStatusUpdate = async (orderId: string, newStatus: string, e?: React.MouseEvent) => {
+  const handleStatusUpdate = async (
+    orderId: string,
+    newStatus: string,
+    e?: React.MouseEvent
+  ) => {
     // Eğer event nesnesi varsa, varsayılan davranışı engelle
     if (e && typeof e.preventDefault === 'function') {
       e.preventDefault();
     }
-    
+
     // orderId kontrolü
     if (!orderId) {
       console.error('Geçersiz işlem ID');
       showToast('Geçersiz işlem ID', 'error');
       return;
     }
-    
+
     try {
       console.log('İşlem güncelleniyor:', orderId, 'yeni durum:', newStatus);
-      
+
       // UI'ı hemen güncelle - optimistic update
-      setOrders(prevOrders => 
-        prevOrders.map(order => 
-          order.id === orderId 
-            ? { 
-                ...order, 
+      setOrders(prevOrders =>
+        prevOrders.map(order =>
+          order.id === orderId
+            ? {
+                ...order,
                 status: newStatus,
                 statusData: {
                   color: getStatusColor(order.type, newStatus),
                   icon: getStatusIcon(order.type, newStatus),
-                  text: getStatusText(order.type, newStatus)
-                }
-              } 
+                  text: getStatusText(order.type, newStatus),
+                },
+              }
             : order
         )
       );
-      
+
       // Eğer modal açıksa, seçili siparişi güncelle
       if (selectedOrder && selectedOrder.id === orderId) {
         setSelectedOrder({
@@ -442,14 +459,14 @@ export default function OrdersPage() {
           statusData: {
             color: getStatusColor(selectedOrder.type, newStatus),
             icon: getStatusIcon(selectedOrder.type, newStatus),
-            text: getStatusText(selectedOrder.type, newStatus)
-          }
+            text: getStatusText(selectedOrder.type, newStatus),
+          },
         });
       }
-      
+
       // Client-side'da durumu sakla
       saveStoredStatus(orderId, newStatus);
-      
+
       // Metadata olmadan doğrudan status alanını güncellemeyi dene
       const { error: directUpdateError } = await supabase
         .from('transactions')
@@ -458,13 +475,16 @@ export default function OrdersPage() {
 
       if (directUpdateError) {
         console.log('Direct status update failed, using alternative method');
-        
+
         // Alternatif 1: RPC fonksiyonu kullanarak güncelleme
-        const { error: rpcError } = await supabase.rpc('update_transaction_status', {
-          p_transaction_id: orderId,
-          p_status: newStatus
-        });
-        
+        const { error: rpcError } = await supabase.rpc(
+          'update_transaction_status',
+          {
+            p_transaction_id: orderId,
+            p_status: newStatus,
+          }
+        );
+
         if (rpcError) {
           console.log('RPC update failed, using client-side only storage');
           // Başarılı bildirim göster (client-side storage çalıştı)
@@ -477,14 +497,16 @@ export default function OrdersPage() {
         // Doğrudan güncelleme başarılı
         showToast('İşlem durumu güncellendi', 'success');
       }
-      
+
       // Modal'ı kapat
       setShowOrderModal(false);
-      
     } catch (error: any) {
       console.error('Error updating transaction status:', error);
-      showToast(`İşlem durumu güncellenirken hata oluştu: ${error?.message || 'Bilinmeyen hata'}`, 'error');
-      
+      showToast(
+        `İşlem durumu güncellenirken hata oluştu: ${error?.message || 'Bilinmeyen hata'}`,
+        'error'
+      );
+
       // Hata durumunda bile client-side'da durumu sakla
       if (orderId) {
         saveStoredStatus(orderId, newStatus);
@@ -512,11 +534,11 @@ export default function OrdersPage() {
       if (statusFilter !== 'all') {
         // Status filtresi için transaction type'ları map et
         const statusTypeMap: Record<string, string[]> = {
-          'completed': ['purchase', 'bonus', 'deduction'],
-          'pending': ['pending_payment'],
-          'cancelled': ['refund']
+          completed: ['purchase', 'bonus', 'deduction'],
+          pending: ['pending_payment'],
+          cancelled: ['refund'],
         };
-        
+
         // Eğer bu bir durum filtresi ise
         if (['completed', 'pending', 'cancelled'].includes(statusFilter)) {
           if (statusTypeMap[statusFilter]) {
@@ -599,7 +621,7 @@ export default function OrdersPage() {
           return 'text-red-400 bg-red-500/20 border-red-500/30';
       }
     }
-    
+
     // Status yoksa type'a göre renk belirle
     switch (type) {
       case 'purchase':
@@ -629,7 +651,7 @@ export default function OrdersPage() {
           return <XCircle className='h-4 w-4' />;
       }
     }
-    
+
     // Status yoksa type'a göre icon belirle
     switch (type) {
       case 'purchase':
@@ -659,7 +681,7 @@ export default function OrdersPage() {
           return 'İptal Edildi';
       }
     }
-    
+
     // Status yoksa type'a göre text belirle
     switch (type) {
       case 'purchase':
@@ -814,22 +836,22 @@ export default function OrdersPage() {
 
           {/* Status Filter */}
           <div>
-              <select
-                value={statusFilter}
-                onChange={e => setStatusFilter(e.target.value)}
-                className='w-full px-4 py-3 admin-glass rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-purple-500 mobile-text-sm'
-              >
-                <option value='all'>🔍 Tümü</option>
-                {/* Durum filtreleri */}
-                <option value='completed'>✅ Tamamlandı</option>
-                <option value='pending'>⏳ Beklemede</option>
-                <option value='cancelled'>❌ İptal Edildi</option>
-                {/* İşlem tipi filtreleri */}
-                <option value='purchase'>💰 Satın Alma</option>
-                <option value='bonus'>🎁 Bonus</option>
-                <option value='deduction'>💳 Kredi Düşümü</option>
-                <option value='refund'>🔄 İade</option>
-              </select>
+            <select
+              value={statusFilter}
+              onChange={e => setStatusFilter(e.target.value)}
+              className='w-full px-4 py-3 admin-glass rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-purple-500 mobile-text-sm'
+            >
+              <option value='all'>🔍 Tümü</option>
+              {/* Durum filtreleri */}
+              <option value='completed'>✅ Tamamlandı</option>
+              <option value='pending'>⏳ Beklemede</option>
+              <option value='cancelled'>❌ İptal Edildi</option>
+              {/* İşlem tipi filtreleri */}
+              <option value='purchase'>💰 Satın Alma</option>
+              <option value='bonus'>🎁 Bonus</option>
+              <option value='deduction'>💳 Kredi Düşümü</option>
+              <option value='refund'>🔄 İade</option>
+            </select>
           </div>
         </div>
       </div>
@@ -858,12 +880,16 @@ export default function OrdersPage() {
                 </div>
               </div>
 
-                <div
-                 className={`inline-flex items-center px-3 py-2 rounded-xl text-xs font-semibold border-2 shadow-lg ${order.statusData?.color || getStatusColor(order.type, order.status)}`}
-                >
-                 {order.statusData?.icon || getStatusIcon(order.type, order.status)}
-                 <span className='ml-2'>{order.statusData?.text || getStatusText(order.type, order.status)}</span>
-                </div>
+              <div
+                className={`inline-flex items-center px-3 py-2 rounded-xl text-xs font-semibold border-2 shadow-lg ${order.statusData?.color || getStatusColor(order.type, order.status)}`}
+              >
+                {order.statusData?.icon ||
+                  getStatusIcon(order.type, order.status)}
+                <span className='ml-2'>
+                  {order.statusData?.text ||
+                    getStatusText(order.type, order.status)}
+                </span>
+              </div>
             </div>
 
             {/* Modern Transaction Details */}
@@ -873,16 +899,19 @@ export default function OrdersPage() {
                 <div className='flex items-center space-x-3 mb-3'>
                   <div className='w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center'>
                     <span className='text-white text-sm font-bold'>
-                      {(order.user_first_name?.charAt(0) || order.user_last_name?.charAt(0) || 'U').toUpperCase()}
+                      {(
+                        order.user_first_name?.charAt(0) ||
+                        order.user_last_name?.charAt(0) ||
+                        'U'
+                      ).toUpperCase()}
                     </span>
                   </div>
                   <div className='flex-1'>
                     <div className='text-sm text-slate-400'>Kullanıcı</div>
                     <div className='text-white font-semibold'>
-                      {order.user_first_name && order.user_last_name 
+                      {order.user_first_name && order.user_last_name
                         ? `${order.user_first_name} ${order.user_last_name}`
-                        : order.user_display_name || 'Bilinmeyen Kullanıcı'
-                      }
+                        : order.user_display_name || 'Bilinmeyen Kullanıcı'}
                     </div>
                   </div>
                 </div>
@@ -903,7 +932,9 @@ export default function OrdersPage() {
                   <div className='text-sm text-slate-400'>Kredi Değişimi</div>
                   <div
                     className={`text-lg font-bold flex items-center space-x-1 ${
-                      order.delta_credits > 0 ? 'text-green-400' : 'text-red-400'
+                      order.delta_credits > 0
+                        ? 'text-green-400'
+                        : 'text-red-400'
                     }`}
                   >
                     <span>{order.delta_credits > 0 ? '+' : ''}</span>
@@ -924,7 +955,9 @@ export default function OrdersPage() {
                   </div>
                   <div className='flex items-center justify-between'>
                     <span className='text-sm text-slate-400'>Sebep</span>
-                    <span className='text-xs text-slate-400'>{order.reason}</span>
+                    <span className='text-xs text-slate-400'>
+                      {order.reason}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -1067,7 +1100,10 @@ export default function OrdersPage() {
                           {selectedOrder?.id || 'N/A'}
                         </span>
                         <button
-                          onClick={() => selectedOrder?.id && copyToClipboard(selectedOrder.id, 'İşlem ID')}
+                          onClick={() =>
+                            selectedOrder?.id &&
+                            copyToClipboard(selectedOrder.id, 'İşlem ID')
+                          }
                           className='p-1 hover:bg-slate-700 rounded transition-colors'
                           title='Kopyala'
                         >
@@ -1083,9 +1119,17 @@ export default function OrdersPage() {
                       <div
                         className={`inline-flex items-center px-2 py-1 rounded text-xs font-medium ${selectedOrder?.statusData?.color || getStatusColor(selectedOrder?.type || '', selectedOrder?.status)}`}
                       >
-                        {selectedOrder?.statusData?.icon || getStatusIcon(selectedOrder?.type || '', selectedOrder?.status)}
+                        {selectedOrder?.statusData?.icon ||
+                          getStatusIcon(
+                            selectedOrder?.type || '',
+                            selectedOrder?.status
+                          )}
                         <span className='ml-1'>
-                          {selectedOrder?.statusData?.text || getStatusText(selectedOrder?.type || '', selectedOrder?.status)}
+                          {selectedOrder?.statusData?.text ||
+                            getStatusText(
+                              selectedOrder?.type || '',
+                              selectedOrder?.status
+                            )}
                         </span>
                       </div>
                     </div>
@@ -1095,7 +1139,9 @@ export default function OrdersPage() {
                         Tarih:
                       </span>
                       <span className='text-white text-xs'>
-                        {selectedOrder?.created_at ? formatDate(selectedOrder.created_at) : 'N/A'}
+                        {selectedOrder?.created_at
+                          ? formatDate(selectedOrder.created_at)
+                          : 'N/A'}
                       </span>
                     </div>
                     <div className='flex justify-between items-center'>
@@ -1108,7 +1154,10 @@ export default function OrdersPage() {
                           {selectedOrder?.ref_id || 'N/A'}
                         </span>
                         <button
-                          onClick={() => selectedOrder?.ref_id && copyToClipboard(selectedOrder.ref_id, 'Referans ID')}
+                          onClick={() =>
+                            selectedOrder?.ref_id &&
+                            copyToClipboard(selectedOrder.ref_id, 'Referans ID')
+                          }
                           className='p-1 hover:bg-slate-700 rounded transition-colors'
                           title='Kopyala'
                         >
@@ -1131,7 +1180,9 @@ export default function OrdersPage() {
                         Tutar:
                       </span>
                       <span className='text-white font-bold text-lg'>
-                        {selectedOrder?.amount ? formatPrice(selectedOrder.amount, 'TRY') : 'N/A'}
+                        {selectedOrder?.amount
+                          ? formatPrice(selectedOrder.amount, 'TRY')
+                          : 'N/A'}
                       </span>
                     </div>
                     <div className='flex justify-between items-center'>
@@ -1187,7 +1238,10 @@ export default function OrdersPage() {
                         {selectedOrder?.user_id || 'N/A'}
                       </span>
                       <button
-                        onClick={() => selectedOrder?.user_id && copyToClipboard(selectedOrder.user_id, 'Kullanıcı ID')}
+                        onClick={() =>
+                          selectedOrder?.user_id &&
+                          copyToClipboard(selectedOrder.user_id, 'Kullanıcı ID')
+                        }
                         className='p-1 hover:bg-slate-700 rounded transition-colors'
                         title='Kopyala'
                       >
@@ -1204,11 +1258,13 @@ export default function OrdersPage() {
                       <span className='text-white font-medium'>
                         {selectedOrder?.user_display_name || 'N/A'}
                       </span>
-                      {selectedOrder?.user_first_name && selectedOrder?.user_last_name && (
-                        <span className='text-xs text-slate-400'>
-                          ({selectedOrder.user_first_name} {selectedOrder.user_last_name})
-                        </span>
-                      )}
+                      {selectedOrder?.user_first_name &&
+                        selectedOrder?.user_last_name && (
+                          <span className='text-xs text-slate-400'>
+                            ({selectedOrder.user_first_name}{' '}
+                            {selectedOrder.user_last_name})
+                          </span>
+                        )}
                     </div>
                   </div>
                   <div className='flex justify-between items-center col-span-2'>
@@ -1221,7 +1277,10 @@ export default function OrdersPage() {
                         {selectedOrder?.user_email || 'N/A'}
                       </span>
                       <button
-                        onClick={() => selectedOrder?.user_email && copyToClipboard(selectedOrder.user_email, 'Email')}
+                        onClick={() =>
+                          selectedOrder?.user_email &&
+                          copyToClipboard(selectedOrder.user_email, 'Email')
+                        }
                         className='p-1 hover:bg-slate-700 rounded transition-colors'
                         title='Kopyala'
                       >
@@ -1248,7 +1307,10 @@ export default function OrdersPage() {
                         {selectedOrder?.ref_id || 'N/A'}
                       </span>
                       <button
-                        onClick={() => selectedOrder?.ref_id && copyToClipboard(selectedOrder.ref_id, 'Referans ID')}
+                        onClick={() =>
+                          selectedOrder?.ref_id &&
+                          copyToClipboard(selectedOrder.ref_id, 'Referans ID')
+                        }
                         className='p-1 hover:bg-slate-700 rounded transition-colors'
                         title='Kopyala'
                       >
@@ -1297,7 +1359,10 @@ export default function OrdersPage() {
                       Okuma Tipi:
                     </span>
                     <span className='text-white font-medium bg-purple-500/20 px-2 py-1 rounded text-xs'>
-                      {getReadingType(selectedOrder?.ref_type || '', selectedOrder?.description || '')}
+                      {getReadingType(
+                        selectedOrder?.ref_type || '',
+                        selectedOrder?.description || ''
+                      )}
                     </span>
                   </div>
                   <div className='flex justify-between items-center'>
@@ -1319,7 +1384,10 @@ export default function OrdersPage() {
                         {selectedOrder?.id || 'N/A'}
                       </span>
                       <button
-                        onClick={() => selectedOrder?.id && copyToClipboard(selectedOrder.id, 'İşlem ID')}
+                        onClick={() =>
+                          selectedOrder?.id &&
+                          copyToClipboard(selectedOrder.id, 'İşlem ID')
+                        }
                         className='p-1 hover:bg-slate-700 rounded transition-colors'
                         title='Kopyala'
                       >
@@ -1339,12 +1407,14 @@ export default function OrdersPage() {
                 <X className='h-4 w-4 mr-2' />
                 <span>Kapat</span>
               </button>
-              
+
               {/* Durum değiştirme butonları */}
-              <div className="flex-1 flex space-x-2">
+              <div className='flex-1 flex space-x-2'>
                 {selectedOrder && selectedOrder.status !== 'completed' && (
                   <button
-                    onClick={(e) => handleStatusUpdate(selectedOrder.id, 'completed', e)}
+                    onClick={e =>
+                      handleStatusUpdate(selectedOrder.id, 'completed', e)
+                    }
                     className='flex-1 admin-gradient-success p-3 rounded-lg text-white admin-hover-scale flex items-center justify-center transition-all duration-200 hover:shadow-lg'
                     title='İşlemi onayla'
                   >
@@ -1352,10 +1422,12 @@ export default function OrdersPage() {
                     <span>Onayla</span>
                   </button>
                 )}
-                
+
                 {selectedOrder && selectedOrder.status !== 'pending' && (
                   <button
-                    onClick={(e) => handleStatusUpdate(selectedOrder.id, 'pending', e)}
+                    onClick={e =>
+                      handleStatusUpdate(selectedOrder.id, 'pending', e)
+                    }
                     className='flex-1 bg-yellow-500/20 border border-yellow-500/30 p-3 rounded-lg text-yellow-400 admin-hover-scale flex items-center justify-center transition-all duration-200 hover:shadow-lg hover:bg-yellow-500/30'
                     title='İşlemi beklemede bırak'
                   >
@@ -1363,10 +1435,12 @@ export default function OrdersPage() {
                     <span>Beklet</span>
                   </button>
                 )}
-                
+
                 {selectedOrder && selectedOrder.status !== 'cancelled' && (
                   <button
-                    onClick={(e) => handleStatusUpdate(selectedOrder.id, 'cancelled', e)}
+                    onClick={e =>
+                      handleStatusUpdate(selectedOrder.id, 'cancelled', e)
+                    }
                     className='flex-1 bg-red-500/20 border border-red-500/30 p-3 rounded-lg text-red-400 admin-hover-scale flex items-center justify-center transition-all duration-200 hover:shadow-lg hover:bg-red-500/30'
                     title='İşlemi iptal et'
                   >

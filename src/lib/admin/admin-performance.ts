@@ -7,10 +7,10 @@
  */
 
 import { AdminPerformanceMetrics } from '@/types/admin.types';
-import { 
-  fetchCurrentSystemPerformance, 
+import {
+  fetchCurrentSystemPerformance,
   fetchAllPerformanceMetrics,
-  SystemPerformanceMetrics
+  SystemPerformanceMetrics,
 } from './system-performance';
 
 export class AdminPerformanceMonitor {
@@ -205,7 +205,7 @@ export class AdminPerformanceMonitor {
           averageMemoryUsage: 2.4,
           averageCpuUsage: 12,
           peakActiveUsers: 0,
-        }
+        },
       };
     }
   }

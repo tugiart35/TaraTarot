@@ -9,35 +9,43 @@
 ## 🚀 Quick Setup Steps
 
 ### 1. Access Google Search Console
+
 1. **Go to:** https://search.google.com/search-console
 2. **Sign in** with Google account
 3. **Click:** "Add Property" (if first time)
 
 ### 2. Add Property
+
 1. **Choose:** "URL prefix" method
 2. **Enter:** `https://busbuskimki.com`
 3. **Click:** "Continue"
 
 ### 3. Verify Ownership
+
 **Choose one of these methods:**
 
 #### Method A: HTML File Upload (Recommended)
-1. **Download** the verification file (e.g., `google-site-verification=abc123.html`)
+
+1. **Download** the verification file (e.g.,
+   `google-site-verification=abc123.html`)
 2. **Upload** to your website's root directory
 3. **Access:** https://busbuskimki.com/google-site-verification=abc123.html
 4. **Verify** in Google Search Console
 
 #### Method B: HTML Meta Tag
+
 1. **Copy** the meta tag from Google Search Console
 2. **Add** to your website's `<head>` section
 3. **Deploy** the changes
 4. **Verify** in Google Search Console
 
 #### Method C: Google Analytics (If Available)
+
 1. **Connect** existing Google Analytics account
 2. **Verify** automatically
 
 ### 4. Submit Sitemap
+
 1. **Go to:** Sitemaps section
 2. **Add:** `https://busbuskimki.com/sitemap.xml`
 3. **Submit** for indexing
@@ -47,6 +55,7 @@
 ## 📊 Expected Results
 
 ### After Setup
+
 - ✅ **Search performance** monitoring
 - ✅ **Indexing status** tracking
 - ✅ **Search queries** analysis
@@ -55,6 +64,7 @@
 - ✅ **Coverage reports** and errors
 
 ### Dashboard Features
+
 - **Performance:** Search traffic and queries
 - **Coverage:** Indexed pages and errors
 - **Sitemaps:** Submitted sitemaps status
@@ -66,6 +76,7 @@
 ## 🔧 Advanced Configuration
 
 ### Sitemap Submission
+
 ```
 Primary Sitemap: https://busbuskimki.com/sitemap.xml
 Status: Active
@@ -74,6 +85,7 @@ Last Read: Daily (automatic)
 ```
 
 ### Search Console Features to Enable
+
 1. **URL Inspection Tool**
    - Test individual URLs
    - Request indexing for new content
@@ -99,6 +111,7 @@ Last Read: Daily (automatic)
 ## 📈 SEO Monitoring
 
 ### Key Metrics to Track
+
 ```
 Search Performance:
 - Total clicks (monthly)
@@ -119,6 +132,7 @@ Mobile Usability:
 ```
 
 ### Monthly SEO Tasks
+
 1. **Review Performance** - Analyze search queries and traffic
 2. **Check Coverage** - Fix any indexing errors
 3. **Submit New Content** - Use URL Inspection for new pages
@@ -130,9 +144,10 @@ Mobile Usability:
 ## 🚨 Common Issues & Solutions
 
 ### Verification Issues
+
 ```
 Problem: HTML file not accessible
-Solution: 
+Solution:
 1. Ensure file is in root directory
 2. Check file permissions
 3. Verify file content is correct
@@ -145,6 +160,7 @@ Solution:
 ```
 
 ### Sitemap Issues
+
 ```
 Problem: Sitemap not found
 Solution:
@@ -160,6 +176,7 @@ Solution:
 ```
 
 ### Indexing Issues
+
 ```
 Problem: Pages not indexed
 Solution:
@@ -174,6 +191,7 @@ Solution:
 ## 📋 Setup Checklist
 
 ### Basic Setup
+
 - [ ] Create Google Search Console account
 - [ ] Add property for busbuskimki.com
 - [ ] Verify ownership (HTML file/meta tag)
@@ -181,6 +199,7 @@ Solution:
 - [ ] Test URL Inspection tool
 
 ### Advanced Setup
+
 - [ ] Configure email notifications
 - [ ] Set up performance monitoring
 - [ ] Enable Core Web Vitals reporting
@@ -192,16 +211,19 @@ Solution:
 ## 🎯 Expected Timeline
 
 ### Immediate (Day 1)
+
 - **Setup complete** - 15 minutes
 - **Sitemap submitted** - Automatic
 - **Basic monitoring** - Active
 
 ### Short-term (Week 1)
+
 - **Initial data** - 3-7 days
 - **First reports** - Available
 - **Performance baseline** - Established
 
 ### Long-term (Month 1+)
+
 - **Historical data** - 30+ days
 - **Trend analysis** - Available
 - **SEO optimization** - Data-driven decisions
@@ -211,11 +233,13 @@ Solution:
 ## 📞 Support
 
 ### Google Search Console Help
+
 - **Help Center:** https://support.google.com/webmasters
 - **Community Forum:** https://support.google.com/webmasters/community
 - **Documentation:** https://developers.google.com/search/docs
 
 ### Our SEO Support
+
 - **Email:** busbuskimkionline@gmail.com
 - **Phone:** +382 (67) 010176
 
@@ -224,6 +248,7 @@ Solution:
 ## 🚀 Ready to Setup
 
 **Next Steps:**
+
 1. Go to https://search.google.com/search-console
 2. Add property for https://busbuskimki.com
 3. Verify ownership (15 minutes)

@@ -7,25 +7,26 @@
 
 ## 📊 Hızlı Karşılaştırma Tablosu
 
-| Özellik | Vercel | Cloudflare | Önerilen |
-|---------|--------|------------|----------|
-| **Hosting** | ✅ Excellent | ❌ No | Vercel |
-| **SSL Certificate** | ✅ Free Auto | ✅ Free | Both |
-| **CDN** | ✅ Global | ✅ Global | Both |
-| **DNS Management** | ✅ Basic | ✅ Advanced | Cloudflare |
-| **Edge Functions** | ✅ Vercel Functions | ✅ Workers | Vercel |
-| **Database** | ❌ No | ❌ No | Supabase |
-| **Static Files** | ✅ Excellent | ✅ Good | Vercel |
-| **API Routes** | ✅ Native | ⚠️ Workers | Vercel |
-| **Deployment** | ✅ Git-based | ⚠️ Manual | Vercel |
-| **Performance** | ✅ Excellent | ✅ Excellent | Both |
-| **Cost (Free Tier)** | ✅ Generous | ✅ Unlimited | Both |
+| Özellik              | Vercel              | Cloudflare   | Önerilen   |
+| -------------------- | ------------------- | ------------ | ---------- |
+| **Hosting**          | ✅ Excellent        | ❌ No        | Vercel     |
+| **SSL Certificate**  | ✅ Free Auto        | ✅ Free      | Both       |
+| **CDN**              | ✅ Global           | ✅ Global    | Both       |
+| **DNS Management**   | ✅ Basic            | ✅ Advanced  | Cloudflare |
+| **Edge Functions**   | ✅ Vercel Functions | ✅ Workers   | Vercel     |
+| **Database**         | ❌ No               | ❌ No        | Supabase   |
+| **Static Files**     | ✅ Excellent        | ✅ Good      | Vercel     |
+| **API Routes**       | ✅ Native           | ⚠️ Workers   | Vercel     |
+| **Deployment**       | ✅ Git-based        | ⚠️ Manual    | Vercel     |
+| **Performance**      | ✅ Excellent        | ✅ Excellent | Both       |
+| **Cost (Free Tier)** | ✅ Generous         | ✅ Unlimited | Both       |
 
 ---
 
 ## 🚀 Vercel - Hosting Platform
 
 ### ✅ Avantajlar
+
 ```bash
 # Next.js için optimize edilmiş
 - Zero-config deployment
@@ -39,6 +40,7 @@
 ```
 
 ### ❌ Dezavantajlar
+
 ```bash
 - Limited to JAMstack applications
 - No database hosting
@@ -48,6 +50,7 @@
 ```
 
 ### 💰 Fiyatlandırma
+
 ```
 Hobby (Free):
 - 100GB bandwidth/month
@@ -63,6 +66,7 @@ Pro ($20/month):
 ```
 
 ### 🎯 İdeal Kullanım
+
 - **Next.js applications** ✅
 - **Static sites** ✅
 - **JAMstack projects** ✅
@@ -74,6 +78,7 @@ Pro ($20/month):
 ## 🌐 Cloudflare - CDN & Security Platform
 
 ### ✅ Avantajlar
+
 ```bash
 # Global CDN + Security
 - 200+ data centers worldwide
@@ -88,6 +93,7 @@ Pro ($20/month):
 ```
 
 ### ❌ Dezavantajlar
+
 ```bash
 - No application hosting
 - Workers have execution limits
@@ -97,6 +103,7 @@ Pro ($20/month):
 ```
 
 ### 💰 Fiyatlandırma
+
 ```
 Free Plan:
 - Unlimited bandwidth
@@ -113,6 +120,7 @@ Pro ($20/month):
 ```
 
 ### 🎯 İdeal Kullanım
+
 - **CDN acceleration** ✅
 - **DNS management** ✅
 - **Security & protection** ✅
@@ -126,6 +134,7 @@ Pro ($20/month):
 ### Neden Bu Kombinasyon?
 
 #### 1. **Vercel** → Application Hosting
+
 ```bash
 # Next.js projeniz için perfect
 ✅ Zero-config deployment
@@ -137,6 +146,7 @@ Pro ($20/month):
 ```
 
 #### 2. **Cloudflare** → DNS + CDN + Security
+
 ```bash
 # Ekstra performance ve güvenlik
 ✅ Advanced DNS management
@@ -168,6 +178,7 @@ User Request → Cloudflare CDN → Vercel Edge → Your App
 ### Phase 1: Vercel Setup (Primary Hosting)
 
 #### 1. Install & Deploy
+
 ```bash
 # Terminal'de proje klasöründe:
 npm i -g vercel
@@ -176,6 +187,7 @@ vercel --prod
 ```
 
 #### 2. Domain Configuration
+
 ```bash
 # Vercel dashboard'da:
 # Settings → Domains → Add Domain
@@ -184,6 +196,7 @@ vercel --prod
 ```
 
 #### 3. Environment Variables
+
 ```bash
 # Vercel dashboard'da:
 # Settings → Environment Variables
@@ -197,6 +210,7 @@ SMTP_PASS=ouxpmflgzqfornlv
 ### Phase 2: Cloudflare Setup (CDN + DNS)
 
 #### 1. Add Domain to Cloudflare
+
 ```
 1. Cloudflare.com → Sign up
 2. "Add a Site" → busbuskimki.com
@@ -205,18 +219,21 @@ SMTP_PASS=ouxpmflgzqfornlv
 ```
 
 #### 2. DNS Configuration
+
 ```
 A Record:     @     → 76.76.19.19 (Vercel IP)
 CNAME:       www    → busbuskimki.com
 ```
 
 #### 3. SSL/TLS Settings
+
 ```
 SSL/TLS → Overview → "Full (strict)"
 Edge Certificates → Always Use HTTPS → ON
 ```
 
 #### 4. Performance Optimization
+
 ```
 Speed → Optimization:
 - Auto Minify: HTML, CSS, JS → ON
@@ -233,12 +250,14 @@ Caching → Configuration:
 ## 💰 Total Cost Comparison
 
 ### Option 1: Vercel Only
+
 ```
 Vercel Pro: $20/month
 Total: $20/month
 ```
 
 ### Option 2: Cloudflare Only (Not Recommended)
+
 ```
 Cloudflare Pro: $20/month
 + Separate hosting: $10-50/month
@@ -246,6 +265,7 @@ Total: $30-70/month
 ```
 
 ### Option 3: Vercel + Cloudflare (RECOMMENDED)
+
 ```
 Vercel Hobby: $0/month (Free tier)
 Cloudflare Free: $0/month
@@ -259,18 +279,21 @@ Total: $0/month (Free tier)
 ## 🚀 Performance Benefits
 
 ### Vercel Benefits
+
 - **Edge Functions:** 100+ locations
 - **Automatic scaling:** Traffic spikes
 - **Image optimization:** WebP/AVIF
 - **Build optimization:** Incremental builds
 
 ### Cloudflare Benefits
+
 - **Global CDN:** 200+ locations
 - **Argo Smart Routing:** Faster paths
 - **Railgun:** Dynamic content compression
 - **HTTP/3:** Latest protocol support
 
 ### Combined Benefits
+
 - **Sub-second load times**
 - **99.99% uptime**
 - **Global performance**
@@ -282,6 +305,7 @@ Total: $0/month (Free tier)
 ## 🔒 Security Comparison
 
 ### Vercel Security
+
 ```
 ✅ Automatic HTTPS
 ✅ DDoS protection
@@ -291,6 +315,7 @@ Total: $0/month (Free tier)
 ```
 
 ### Cloudflare Security
+
 ```
 ✅ Advanced DDoS protection
 ✅ WAF (Web Application Firewall)
@@ -301,6 +326,7 @@ Total: $0/month (Free tier)
 ```
 
 ### Combined Security
+
 - **Multi-layer protection**
 - **Advanced threat detection**
 - **Automatic security updates**
@@ -311,6 +337,7 @@ Total: $0/month (Free tier)
 ## 📊 Monitoring & Analytics
 
 ### Vercel Analytics
+
 ```bash
 # Built-in analytics
 - Page views
@@ -321,6 +348,7 @@ Total: $0/month (Free tier)
 ```
 
 ### Cloudflare Analytics
+
 ```bash
 # Advanced analytics
 - Traffic patterns
@@ -339,6 +367,7 @@ Total: $0/month (Free tier)
 #### ✅ **RECOMMENDED: Vercel + Cloudflare**
 
 **Reasons:**
+
 1. **$0 cost** (Free tier)
 2. **Perfect for Next.js**
 3. **Global performance**
@@ -347,15 +376,16 @@ Total: $0/month (Free tier)
 6. **Automatic scaling**
 
 #### Implementation Priority:
+
 1. **Start with Vercel** (5 minutes)
 2. **Add Cloudflare** (15 minutes)
 3. **Configure DNS** (5 minutes)
 4. **Optimize settings** (10 minutes)
 
-**Total setup time: 35 minutes**
-**Monthly cost: $0**
+**Total setup time: 35 minutes** **Monthly cost: $0**
 
 ### Alternative (If budget allows):
+
 - **Vercel Pro** ($20/month) for advanced analytics
 - **Cloudflare Pro** ($20/month) for advanced security
 
@@ -364,6 +394,7 @@ Total: $0/month (Free tier)
 ## 🚀 Quick Start Commands
 
 ### Vercel Setup
+
 ```bash
 npm i -g vercel
 vercel login
@@ -372,6 +403,7 @@ vercel domains add busbuskimki.com
 ```
 
 ### Cloudflare Setup
+
 ```bash
 # Manual setup via dashboard:
 # 1. Add site: busbuskimki.com

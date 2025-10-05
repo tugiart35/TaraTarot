@@ -33,14 +33,14 @@ interface RootLayoutProps {
 
 /**
  * Uygulamanın ana layout bileşeni
- * 
+ *
  * @param {RootLayoutProps} props - Bileşen props'ları
  * @returns {JSX.Element} Root layout bileşeni
  */
-export default function RootLayout({ 
-  children, 
+export default function RootLayout({
+  children,
   className = '',
-  hideFooter = false 
+  hideFooter = false,
 }: RootLayoutProps): JSX.Element {
   return (
     <html lang={APP_CONFIG.defaultLanguage} className='h-full'>
@@ -49,12 +49,12 @@ export default function RootLayout({
 
       {/* Google Analytics - G-Y2HESMXJXD */}
       <Script
-        strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-Y2HESMXJXD"
+        strategy='afterInteractive'
+        src='https://www.googletagmanager.com/gtag/js?id=G-Y2HESMXJXD'
       />
       <Script
-        id="google-analytics"
-        strategy="afterInteractive"
+        id='google-analytics'
+        strategy='afterInteractive'
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
@@ -64,7 +64,7 @@ export default function RootLayout({
           `,
         }}
       />
-      
+
       <body
         className='h-full overflow-x-hidden'
         style={{ backgroundColor: APP_CONFIG.theme.backgroundColor }}

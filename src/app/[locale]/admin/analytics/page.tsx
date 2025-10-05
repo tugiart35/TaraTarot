@@ -55,22 +55,22 @@ import {
   DollarSign,
 } from 'lucide-react';
 
-// Recharts bileşenleri
+// Lazy loaded recharts components for better bundle size
 import {
-  LineChart,
-  Line,
-  BarChart,
-  Bar,
-  PieChart as RechartsPieChart,
-  Pie,
-  Cell,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
-} from 'recharts';
+  LazyLineChart as LineChart,
+  LazyLine as Line,
+  LazyBarChart as BarChart,
+  LazyBar as Bar,
+  LazyPieChart as RechartsPieChart,
+  LazyPie as Pie,
+  LazyCell as Cell,
+  LazyXAxis as XAxis,
+  LazyYAxis as YAxis,
+  LazyCartesianGrid as CartesianGrid,
+  LazyTooltip as Tooltip,
+  LazyLegend as Legend,
+  LazyResponsiveContainer as ResponsiveContainer,
+} from '@/components/charts/LazyCharts';
 
 interface AnalyticsData {
   dailyUsers: number;

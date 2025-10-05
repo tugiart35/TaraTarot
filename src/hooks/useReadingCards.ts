@@ -373,7 +373,6 @@ export function useReadingCards(
   const deck = useTarotDeck();
   const { t } = useTranslations();
 
-
   const deckById = useMemo(() => {
     const map = new Map<number, TarotCard>();
     deck.forEach(card => {

@@ -2,30 +2,39 @@
 
 ## Summary
 
-**Total Duplicates Found:** 47 major duplicate blocks
-**Average Similarity:** 92%
-**Total Duplicate Lines:** ~8,500 lines
-**Refactor Potential:** Very High
+**Total Duplicates Found:** 47 major duplicate blocks **Average Similarity:**
+92% **Total Duplicate Lines:** ~8,500 lines **Refactor Potential:** Very High
 
 ## Exact Duplicates (95-100% Similarity)
 
 ### 1. **State Management Patterns**
-**Files:** All 9 tarot components
-**Lines:** CareerTarot.tsx:178-204, MoneyTarot.tsx:158-184, LoveTarot.tsx:157-183, etc.
-**Similarity:** 100%
-**DRY Advice:** Extract to `shared/hooks/useTarotFormState.ts`
+
+**Files:** All 9 tarot components **Lines:** CareerTarot.tsx:178-204,
+MoneyTarot.tsx:158-184, LoveTarot.tsx:157-183, etc. **Similarity:** 100% **DRY
+Advice:** Extract to `shared/hooks/useTarotFormState.ts`
 
 ```typescript
 // DUPLICATE BLOCK 1: Form State Management
 const [personalInfo, setPersonalInfo] = useState({
-  name: '', surname: '', birthDate: '', email: ''
+  name: '',
+  surname: '',
+  birthDate: '',
+  email: '',
 });
 const [questions, setQuestions] = useState({
-  concern: '', understanding: '', emotional: ''
+  concern: '',
+  understanding: '',
+  emotional: '',
 });
 const [formErrors, setFormErrors] = useState({
-  name: '', surname: '', birthDate: '', email: '',
-  concern: '', understanding: '', emotional: '', general: ''
+  name: '',
+  surname: '',
+  birthDate: '',
+  email: '',
+  concern: '',
+  understanding: '',
+  emotional: '',
+  general: '',
 });
 const [isSaving, setIsSaving] = useState(false);
 const [showCreditConfirm, setShowCreditConfirm] = useState(false);
@@ -36,18 +45,31 @@ const [showSuccessModal, setShowSuccessModal] = useState(false);
 ```
 
 ### 2. **Hook Usage Patterns**
-**Files:** All 9 tarot components
-**Lines:** CareerTarot.tsx:103-134, MoneyTarot.tsx:83-114, LoveTarot.tsx:117-147, etc.
-**Similarity:** 100%
-**DRY Advice:** Extract to `shared/hooks/useTarotReadingFlow.ts`
+
+**Files:** All 9 tarot components **Lines:** CareerTarot.tsx:103-134,
+MoneyTarot.tsx:83-114, LoveTarot.tsx:117-147, etc. **Similarity:** 100% **DRY
+Advice:** Extract to `shared/hooks/useTarotReadingFlow.ts`
 
 ```typescript
 // DUPLICATE BLOCK 2: Hook Initialization
 const {
-  selectedCards, usedCardIds, showCardDetails, cardStates, isReversed,
-  deck, currentPosition, handleCardSelect, handleCardDetails, setShowCardDetails,
-  toggleCardState, handleClearAll, shuffleDeck, interpretationRef, userQuestion,
-  selectedReadingType, setSelectedReadingType,
+  selectedCards,
+  usedCardIds,
+  showCardDetails,
+  cardStates,
+  isReversed,
+  deck,
+  currentPosition,
+  handleCardSelect,
+  handleCardDetails,
+  setShowCardDetails,
+  toggleCardState,
+  handleClearAll,
+  shuffleDeck,
+  interpretationRef,
+  userQuestion,
+  selectedReadingType,
+  setSelectedReadingType,
 } = useTarotReading({
   config: { cardCount: CARD_COUNT, positionsInfo: POSITIONS_INFO },
   onComplete: (_cards, _interpretation) => {},
@@ -56,10 +78,11 @@ const {
 ```
 
 ### 3. **Validation Functions**
-**Files:** All 9 tarot components
-**Lines:** CareerTarot.tsx:260-300, MoneyTarot.tsx:240-280, LoveTarot.tsx:239-279, etc.
-**Similarity:** 95% (only i18n keys differ)
-**DRY Advice:** Extract to `shared/hooks/useTarotFormState.ts` with configurable validation keys
+
+**Files:** All 9 tarot components **Lines:** CareerTarot.tsx:260-300,
+MoneyTarot.tsx:240-280, LoveTarot.tsx:239-279, etc. **Similarity:** 95% (only
+i18n keys differ) **DRY Advice:** Extract to `shared/hooks/useTarotFormState.ts`
+with configurable validation keys
 
 ```typescript
 // DUPLICATE BLOCK 3: Form Validation Logic
@@ -89,14 +112,17 @@ const validateDetailedForm = () => {
 ```
 
 ### 4. **Form Update Functions**
-**Files:** All 9 tarot components
-**Lines:** CareerTarot.tsx:249-259, MoneyTarot.tsx:229-239, LoveTarot.tsx:228-238, etc.
-**Similarity:** 100%
-**DRY Advice:** Extract to `shared/hooks/useTarotFormState.ts`
+
+**Files:** All 9 tarot components **Lines:** CareerTarot.tsx:249-259,
+MoneyTarot.tsx:229-239, LoveTarot.tsx:228-238, etc. **Similarity:** 100% **DRY
+Advice:** Extract to `shared/hooks/useTarotFormState.ts`
 
 ```typescript
 // DUPLICATE BLOCK 4: Form Update Functions
-const updatePersonalInfo = (field: 'name' | 'surname' | 'birthDate' | 'email', value: string) => {
+const updatePersonalInfo = (
+  field: 'name' | 'surname' | 'birthDate' | 'email',
+  value: string
+) => {
   setPersonalInfo(prev => ({ ...prev, [field]: value }));
   setFormErrors(errors => ({ ...errors, [field]: '', general: '' }));
 };
@@ -107,10 +133,10 @@ const updateQuestion = (field: keyof typeof questions, value: string) => {
 ```
 
 ### 5. **Component Props Interfaces**
-**Files:** All 9 tarot components
-**Lines:** CareerTarot.tsx:82-86, MoneyTarot.tsx:62-66, LoveTarot.tsx:96-100, etc.
-**Similarity:** 100%
-**DRY Advice:** Extract to `shared/types/tarot-reading.types.ts`
+
+**Files:** All 9 tarot components **Lines:** CareerTarot.tsx:82-86,
+MoneyTarot.tsx:62-66, LoveTarot.tsx:96-100, etc. **Similarity:** 100% **DRY
+Advice:** Extract to `shared/types/tarot-reading.types.ts`
 
 ```typescript
 // DUPLICATE BLOCK 5: Component Props Interface
@@ -124,10 +150,11 @@ interface CareerReadingProps {
 ## Near Duplicates (85-95% Similarity)
 
 ### 6. **Modal Structure - Info Modal**
-**Files:** All 9 tarot components
-**Lines:** CareerTarot.tsx:634-772, MoneyTarot.tsx:581-719, LoveTarot.tsx:609-747, etc.
-**Similarity:** 90% (only theme colors and icons differ)
-**DRY Advice:** Extract to `shared/ui/BaseTarotModal.tsx` with theme support
+
+**Files:** All 9 tarot components **Lines:** CareerTarot.tsx:634-772,
+MoneyTarot.tsx:581-719, LoveTarot.tsx:609-747, etc. **Similarity:** 90% (only
+theme colors and icons differ) **DRY Advice:** Extract to
+`shared/ui/BaseTarotModal.tsx` with theme support
 
 ```typescript
 // DUPLICATE BLOCK 6: Info Modal Structure
@@ -154,10 +181,10 @@ interface CareerReadingProps {
 ```
 
 ### 7. **Modal Structure - Form Modal**
-**Files:** All 9 tarot components
-**Lines:** CareerTarot.tsx:775-1066, MoneyTarot.tsx:722-1013, LoveTarot.tsx:750-1041, etc.
-**Similarity:** 95% (only theme colors differ)
-**DRY Advice:** Extract to `shared/ui/BaseTarotForm.tsx`
+
+**Files:** All 9 tarot components **Lines:** CareerTarot.tsx:775-1066,
+MoneyTarot.tsx:722-1013, LoveTarot.tsx:750-1041, etc. **Similarity:** 95% (only
+theme colors differ) **DRY Advice:** Extract to `shared/ui/BaseTarotForm.tsx`
 
 ```typescript
 // DUPLICATE BLOCK 7: Form Modal Structure
@@ -174,10 +201,11 @@ interface CareerReadingProps {
 ```
 
 ### 8. **Canvas Background Structure**
-**Files:** All 9 tarot components
-**Lines:** CareerTarot.tsx:1106-1158, MoneyTarot.tsx:1053-1105, LoveTarot.tsx:1081-1133, etc.
-**Similarity:** 95% (only background image and theme colors differ)
-**DRY Advice:** Extract to `shared/ui/BaseTarotCanvas.tsx`
+
+**Files:** All 9 tarot components **Lines:** CareerTarot.tsx:1106-1158,
+MoneyTarot.tsx:1053-1105, LoveTarot.tsx:1081-1133, etc. **Similarity:** 95%
+(only background image and theme colors differ) **DRY Advice:** Extract to
+`shared/ui/BaseTarotCanvas.tsx`
 
 ```typescript
 // DUPLICATE BLOCK 8: Canvas Background Structure
@@ -189,10 +217,11 @@ interface CareerReadingProps {
 ```
 
 ### 9. **Card Position Rendering**
-**Files:** All 9 tarot components
-**Lines:** CareerTarot.tsx:1131-1156, MoneyTarot.tsx:1078-1103, LoveTarot.tsx:1106-1131, etc.
-**Similarity:** 95% (only theme prop differs)
-**DRY Advice:** Extract to `shared/ui/BaseTarotCanvas.tsx`
+
+**Files:** All 9 tarot components **Lines:** CareerTarot.tsx:1131-1156,
+MoneyTarot.tsx:1078-1103, LoveTarot.tsx:1106-1131, etc. **Similarity:** 95%
+(only theme prop differs) **DRY Advice:** Extract to
+`shared/ui/BaseTarotCanvas.tsx`
 
 ```typescript
 // DUPLICATE BLOCK 9: Card Position Rendering
@@ -216,10 +245,11 @@ interface CareerReadingProps {
 ```
 
 ### 10. **Save Reading Function**
-**Files:** All 9 tarot components
-**Lines:** CareerTarot.tsx:401-513, MoneyTarot.tsx:348-460, LoveTarot.tsx:376-488, etc.
-**Similarity:** 90% (only reading type and i18n keys differ)
-**DRY Advice:** Extract to `shared/hooks/useTarotSaveState.ts`
+
+**Files:** All 9 tarot components **Lines:** CareerTarot.tsx:401-513,
+MoneyTarot.tsx:348-460, LoveTarot.tsx:376-488, etc. **Similarity:** 90% (only
+reading type and i18n keys differ) **DRY Advice:** Extract to
+`shared/hooks/useTarotSaveState.ts`
 
 ```typescript
 // DUPLICATE BLOCK 10: Save Reading Function
@@ -229,7 +259,10 @@ const handleSaveReading = async () => {
     if (selectedReadingType === READING_TYPES.SIMPLE) {
       // Simple reading logic - identical
     }
-    if (selectedReadingType === READING_TYPES.DETAILED || selectedReadingType === READING_TYPES.WRITTEN) {
+    if (
+      selectedReadingType === READING_TYPES.DETAILED ||
+      selectedReadingType === READING_TYPES.WRITTEN
+    ) {
       const duration = Date.now() - startTime;
       const readingData = {
         userId: 'anonymous-user',
@@ -252,10 +285,10 @@ const handleSaveReading = async () => {
 ## Config File Duplicates
 
 ### 11. **Config Export Patterns**
-**Files:** All 9 config files
-**Lines:** career-config.ts:26-73, money-config.ts:35-84, love-config.ts:6-31, etc.
-**Similarity:** 90% (only data content differs)
-**DRY Advice:** Standardize with factory pattern
+
+**Files:** All 9 config files **Lines:** career-config.ts:26-73,
+money-config.ts:35-84, love-config.ts:6-31, etc. **Similarity:** 90% (only data
+content differs) **DRY Advice:** Standardize with factory pattern
 
 ```typescript
 // DUPLICATE BLOCK 11: Config Export Pattern
@@ -265,7 +298,11 @@ export const CAREER_POSITIONS_INFO: readonly PositionInfo[] = [
 ] as const;
 
 export const CAREER_POSITIONS_LAYOUT: readonly PositionLayout[] = [
-  { id: 1, className: 'absolute top-[15%] left-[65%] -translate-x-1/2 -translate-y-1/2 z-20' },
+  {
+    id: 1,
+    className:
+      'absolute top-[15%] left-[65%] -translate-x-1/2 -translate-y-1/2 z-20',
+  },
   // ... layout data
 ] as const;
 
@@ -273,10 +310,11 @@ export const CAREER_CARD_COUNT = 7;
 ```
 
 ### 12. **Reading Type Selector Patterns**
-**Files:** All 9 reading type selector files
-**Lines:** CareerReadingTypeSelector.tsx:33-67, LoveReadingTypeSelector.tsx:33-67, etc.
-**Similarity:** 95% (only theme and text props differ)
-**DRY Advice:** Use BaseReadingTypeSelector directly with props
+
+**Files:** All 9 reading type selector files **Lines:**
+CareerReadingTypeSelector.tsx:33-67, LoveReadingTypeSelector.tsx:33-67, etc.
+**Similarity:** 95% (only theme and text props differ) **DRY Advice:** Use
+BaseReadingTypeSelector directly with props
 
 ```typescript
 // DUPLICATE BLOCK 12: Reading Type Selector Pattern
@@ -299,10 +337,10 @@ export default function CareerReadingTypeSelector({ selectedType, onTypeChange, 
 ## Import Pattern Duplicates
 
 ### 13. **Import Statements**
-**Files:** All 9 tarot components
-**Lines:** CareerTarot.tsx:21-73, MoneyTarot.tsx:21-73, LoveTarot.tsx:21-73, etc.
-**Similarity:** 95% (only specific meaning functions differ)
-**DRY Advice:** Use barrel exports
+
+**Files:** All 9 tarot components **Lines:** CareerTarot.tsx:21-73,
+MoneyTarot.tsx:21-73, LoveTarot.tsx:21-73, etc. **Similarity:** 95% (only
+specific meaning functions differ) **DRY Advice:** Use barrel exports
 
 ```typescript
 // DUPLICATE BLOCK 13: Import Statements
@@ -311,34 +349,46 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useToast } from '@/hooks/useToast';
 import { supabase } from '@/lib/supabase/client';
-import { Toast, BaseCardPosition, BaseCardGallery, BaseReadingTypeSelector, CardDetails, BaseCardRenderer, BaseInterpretation } from '@/features/shared/ui';
+import {
+  Toast,
+  BaseCardPosition,
+  BaseCardGallery,
+  BaseReadingTypeSelector,
+  CardDetails,
+  BaseCardRenderer,
+  BaseInterpretation,
+} from '@/features/shared/ui';
 import { useTarotReading } from '@/hooks/useTarotReading';
 import { useTranslations } from '@/hooks/useTranslations';
 import { useReadingCredits } from '@/hooks/useReadingCredits';
 import { useAuth } from '@/hooks/auth/useAuth';
 import { findSpreadById } from '@/lib/constants/tarotSpreads';
-import { CAREER_POSITIONS_INFO, CAREER_POSITIONS_LAYOUT } from './career-config'; // Only this varies
+import {
+  CAREER_POSITIONS_INFO,
+  CAREER_POSITIONS_LAYOUT,
+} from './career-config'; // Only this varies
 import { READING_TYPES, ReadingType, TarotCard } from '@/types/tarot';
 ```
 
 ## Summary Statistics
 
-| Duplicate Type | Count | Lines | Similarity | Refactor Target | Status |
-|---------------|-------|-------|------------|----------------|--------|
-| State Management | 9 | 270 | 100% | useTarotFormState | ✅ **COMPLETED** |
-| Hook Usage | 9 | 270 | 100% | useTarotReadingFlow | ✅ **COMPLETED** |
-| Validation Logic | 9 | 540 | 95% | useTarotFormState | ✅ **COMPLETED** |
-| Modal Structure | 18 | 3,240 | 90% | BaseTarotModal | ✅ **COMPLETED** |
-| Form Structure | 9 | 2,700 | 95% | BaseTarotForm | ✅ **COMPLETED** |
-| Canvas Structure | 9 | 450 | 95% | BaseTarotCanvas | ✅ **COMPLETED** |
-| Save Logic | 9 | 1,080 | 90% | useTarotSaveState | ✅ **COMPLETED** |
-| Config Pattern | 9 | 270 | 90% | Config Factory | ✅ **COMPLETED** |
-| Import Pattern | 9 | 450 | 95% | Barrel Exports | ✅ **COMPLETED** |
-| **TOTAL** | **90** | **8,370** | **92%** | **Shared Layer** | ✅ **COMPLETED** |
+| Duplicate Type   | Count  | Lines     | Similarity | Refactor Target     | Status           |
+| ---------------- | ------ | --------- | ---------- | ------------------- | ---------------- |
+| State Management | 9      | 270       | 100%       | useTarotFormState   | ✅ **COMPLETED** |
+| Hook Usage       | 9      | 270       | 100%       | useTarotReadingFlow | ✅ **COMPLETED** |
+| Validation Logic | 9      | 540       | 95%        | useTarotFormState   | ✅ **COMPLETED** |
+| Modal Structure  | 18     | 3,240     | 90%        | BaseTarotModal      | ✅ **COMPLETED** |
+| Form Structure   | 9      | 2,700     | 95%        | BaseTarotForm       | ✅ **COMPLETED** |
+| Canvas Structure | 9      | 450       | 95%        | BaseTarotCanvas     | ✅ **COMPLETED** |
+| Save Logic       | 9      | 1,080     | 90%        | useTarotSaveState   | ✅ **COMPLETED** |
+| Config Pattern   | 9      | 270       | 90%        | Config Factory      | ✅ **COMPLETED** |
+| Import Pattern   | 9      | 450       | 95%        | Barrel Exports      | ✅ **COMPLETED** |
+| **TOTAL**        | **90** | **8,370** | **92%**    | **Shared Layer**    | ✅ **COMPLETED** |
 
 ## 🎉 REFACTOR IMPACT: FULLY ACHIEVED
 
 ### **✅ Eliminated Duplicates**
+
 - **Lines Eliminated:** 8,370 duplicate lines ✅
 - **Components Reduced:** 9 → 1 base component + 9 configs ✅
 - **Maintenance Effort:** -89% (single source of truth) ✅
@@ -347,7 +397,8 @@ import { READING_TYPES, ReadingType, TarotCard } from '@/types/tarot';
 
 ### **✅ All Priority Recommendations Completed**
 
-1. **✅ High Priority:** Extract state management and validation (Blocks 1, 3, 4)
+1. **✅ High Priority:** Extract state management and validation (Blocks 1,
+   3, 4)
    - `useTarotFormState.ts` implemented
    - All form validation centralized
    - State management unified across all spreads
@@ -375,12 +426,14 @@ import { READING_TYPES, ReadingType, TarotCard } from '@/types/tarot';
 ### **🚀 Final Results**
 
 **Before Refactor:**
+
 - 9 monolithic components (~1,580 lines each)
 - 8,370 duplicate lines
 - 92% code similarity
 - High maintenance overhead
 
 **After Refactor:**
+
 - 1 shared layer (~1,850 lines)
 - 9 lightweight configs (~150 lines each)
 - <5% code similarity
@@ -388,4 +441,6 @@ import { READING_TYPES, ReadingType, TarotCard } from '@/types/tarot';
 
 **Total Reduction:** 77% code reduction achieved ✅
 
-This refactor successfully eliminated all identified duplicates while maintaining full functionality and improving code quality, performance, and maintainability.
+This refactor successfully eliminated all identified duplicates while
+maintaining full functionality and improving code quality, performance, and
+maintainability.

@@ -3,3 +3,4 @@ export { default as BottomNavigation } from './BottomNavigation';
 export { default as Footer } from './Footer';
 export { default as HeadTags } from './HeadTags';
 export { default as RootLayout } from './RootLayout';
+export { LanguageSelector } from './LanguageSelector';

@@ -2,7 +2,8 @@
 
 ## 📋 Genel Bakış
 
-Bu dokümantasyon, Shopier ödeme sistemi için yapılan güvenlik ve performans iyileştirmelerini açıklar.
+Bu dokümantasyon, Shopier ödeme sistemi için yapılan güvenlik ve performans
+iyileştirmelerini açıklar.
 
 **Tarih:** 1 Ekim 2025  
 **Durum:** ✅ Tamamlandı  
@@ -15,31 +16,41 @@ Bu dokümantasyon, Shopier ödeme sistemi için yapılan güvenlik ve performans
 ### ✅ 1. Signature Algoritması İyileştirmesi
 
 **Problem:**
+
 - Eski sistem basit `btoa()` base64 encoding kullanıyordu
 - Güvenlik açısından zayıf ve kolayca manipüle edilebilir
 
 **Çözüm:**
+
 - HMAC-SHA256 algoritması implementasyonu
 - Server-side'da crypto modülü ile güvenli hash oluşturma
 - Client-side'da geriye dönük uyumluluk için legacy destek
 - Timing-safe signature comparison
 
 **Dosyalar:**
+
 ```
 src/lib/payment/shopier-security.ts       [YENİ]
 src/lib/payment/shopier-config.ts         [GÜNCELLENDİ]
 ```
 
 **Örnek Kullanım:**
+
 ```typescript
-import { generateSecureSignature, verifySecureSignature } from '@/lib/payment/shopier-security';
+import {
+  generateSecureSignature,
+  verifySecureSignature,
+} from '@/lib/payment/shopier-security';
 
 // Signature oluştur
-const signature = generateSecureSignature({
-  orderId: 'ORDER_123',
-  amount: '100',
-  currency: 'TRY'
-}, 'secret-key');
+const signature = generateSecureSignature(
+  {
+    orderId: 'ORDER_123',
+    amount: '100',
+    currency: 'TRY',
+  },
+  'secret-key'
+);
 
 // Signature doğrula
 const isValid = verifySecureSignature(params, signature, 'secret-key');
@@ -50,28 +61,33 @@ const isValid = verifySecureSignature(params, signature, 'secret-key');
 ### ✅ 2. Rate Limiting Sistemi
 
 **Problem:**
+
 - Webhook endpoint'i rate limiting olmadan DDoS ve abuse'e açık
 - Unlimited webhook request kabul ediliyor
 
 **Çözüm:**
+
 - In-memory rate limiter implementasyonu
 - IP bazlı rate limiting
 - Yapılandırılabilir limit ve time window
 - Otomatik cleanup mekanizması
 
 **Özellikler:**
+
 - ⏱️ Varsayılan: 10 request / dakika
 - 🔄 Otomatik reset
 - 📊 İstatistik takibi
 - 🧹 Otomatik eski kayıt temizleme
 
 **Dosyalar:**
+
 ```
 src/lib/payment/shopier-security.ts       [YENİ]
 src/app/api/webhook/shopier/route.ts      [GÜNCELLENDİ]
 ```
 
 **Örnek Kullanım:**
+
 ```typescript
 import { ShopierRateLimiter } from '@/lib/payment/shopier-security';
 
@@ -80,17 +96,18 @@ const result = ShopierRateLimiter.checkLimit('185.93.239.1', 10, 60000);
 if (!result.allowed) {
   return NextResponse.json(
     { error: 'Rate limit exceeded' },
-    { 
+    {
       status: 429,
       headers: {
-        'X-RateLimit-Reset': new Date(result.resetTime).toISOString()
-      }
+        'X-RateLimit-Reset': new Date(result.resetTime).toISOString(),
+      },
     }
   );
 }
 ```
 
 **Response Headers:**
+
 ```
 X-RateLimit-Reset: 2025-10-01T12:30:00.000Z
 ```
@@ -100,16 +117,19 @@ X-RateLimit-Reset: 2025-10-01T12:30:00.000Z
 ### ✅ 3. IP Whitelisting
 
 **Problem:**
+
 - Herhangi bir IP'den webhook request kabul ediliyordu
 - Shopier dışındaki kaynaklardan gelen istekler engellenemiyordu
 
 **Çözüm:**
+
 - Shopier IP aralıklarının whitelist'e eklenmesi
 - CIDR notation desteği
 - Proxy header'lardan IP çıkarma
 - Development modunda esnek kontrol
 
 **Whitelist IP Aralıkları:**
+
 ```
 185.93.239.0/24  (Shopier ana IP aralığı)
 185.93.240.0/24  (Shopier yedek IP aralığı)
@@ -118,26 +138,26 @@ X-RateLimit-Reset: 2025-10-01T12:30:00.000Z
 ```
 
 **Dosyalar:**
+
 ```
 src/lib/payment/shopier-security.ts       [YENİ]
 src/app/api/webhook/shopier/route.ts      [GÜNCELLENDİ]
 ```
 
 **Örnek Kullanım:**
+
 ```typescript
 import { ShopierIPWhitelist } from '@/lib/payment/shopier-security';
 
 const ip = ShopierIPWhitelist.extractIP(request);
 
 if (!ShopierIPWhitelist.isWhitelisted(ip)) {
-  return NextResponse.json(
-    { error: 'IP not whitelisted' },
-    { status: 403 }
-  );
+  return NextResponse.json({ error: 'IP not whitelisted' }, { status: 403 });
 }
 ```
 
 **Desteklenen Headers:**
+
 - `cf-connecting-ip` (Cloudflare - en yüksek öncelik)
 - `x-real-ip` (Nginx)
 - `x-forwarded-for` (Standard proxy)
@@ -147,23 +167,27 @@ if (!ShopierIPWhitelist.isWhitelisted(ip)) {
 ### ✅ 4. Comprehensive Testing
 
 **Problem:**
+
 - Güvenlik fonksiyonları için test yoktu
 - Webhook endpoint'i için integration test yoktu
 - Kod kalitesi ve reliability düşüktü
 
 **Çözüm:**
+
 - Unit test suite oluşturuldu
 - Integration test'ler eklendi
 - Jest konfigürasyonu güncellendi
 - Test coverage raporlama
 
 **Test Dosyaları:**
+
 ```
 src/lib/payment/__tests__/shopier-security.test.ts           [YENİ - 450+ satır]
 src/app/api/webhook/shopier/__tests__/route.test.ts          [YENİ - 350+ satır]
 ```
 
 **Test Coverage:**
+
 ```
 ✅ Signature generation & verification
 ✅ IP whitelisting & extraction
@@ -175,6 +199,7 @@ src/app/api/webhook/shopier/__tests__/route.test.ts          [YENİ - 350+ satı
 ```
 
 **Çalıştırma:**
+
 ```bash
 # Tüm testler
 npm test
@@ -266,6 +291,7 @@ npm run test:coverage
 ### Yeni Metrikler
 
 **Response Headers:**
+
 ```
 X-Processing-Time: 1234ms
 X-Content-Type-Options: nosniff
@@ -274,6 +300,7 @@ Strict-Transport-Security: max-age=31536000
 ```
 
 **Performans Uyarıları:**
+
 ```typescript
 // 5 saniyeden uzun süren webhook'lar için uyarı
 if (processingTime > 5000) {
@@ -282,6 +309,7 @@ if (processingTime > 5000) {
 ```
 
 **Log Çıktısı:**
+
 ```
 ✅ Webhook processed in 1234ms
 ⚠️ Slow webhook processing: 6789ms
@@ -299,7 +327,7 @@ if (processingTime > 5000) {
   ✅ 100% coverage
   ⏱️  ~500ms execution time
 
-📁 route.test.ts  
+📁 route.test.ts
   ✅ 15 test cases
   ✅ 95% coverage
   ⏱️  ~800ms execution time
@@ -379,29 +407,37 @@ NEXT_PUBLIC_SHOPIER_CALLBACK_URL=https://your-domain.com/payment/callback
 ### `ShopierSecurity` Module
 
 #### `generateSecureSignature(params, secret)`
+
 HMAC-SHA256 ile güvenli signature oluşturur.
 
 **Parameters:**
+
 - `params` (Record<string, string>): Signature oluşturulacak parametreler
 - `secret` (string): API secret key
 
 **Returns:** `string` - Hex formatında 64 karakterlik signature
 
 **Example:**
+
 ```typescript
-const signature = generateSecureSignature({
-  orderId: 'ORDER_123',
-  amount: '100'
-}, 'secret-key');
+const signature = generateSecureSignature(
+  {
+    orderId: 'ORDER_123',
+    amount: '100',
+  },
+  'secret-key'
+);
 // Returns: "a1b2c3d4e5f6..."
 ```
 
 ---
 
 #### `verifySecureSignature(params, signature, secret)`
+
 Signature'ı doğrular (timing-safe).
 
 **Parameters:**
+
 - `params` (Record<string, string>): Doğrulanacak parametreler
 - `signature` (string): Gelen signature
 - `secret` (string): API secret key
@@ -409,6 +445,7 @@ Signature'ı doğrular (timing-safe).
 **Returns:** `boolean` - Signature geçerli mi?
 
 **Example:**
+
 ```typescript
 const isValid = verifySecureSignature(params, signature, 'secret-key');
 if (!isValid) {
@@ -419,14 +456,17 @@ if (!isValid) {
 ---
 
 #### `ShopierIPWhitelist.isWhitelisted(ip)`
+
 IP adresinin whitelist'te olup olmadığını kontrol eder.
 
 **Parameters:**
+
 - `ip` (string): Kontrol edilecek IP adresi
 
 **Returns:** `boolean` - IP whitelist'te mi?
 
 **Example:**
+
 ```typescript
 if (!ShopierIPWhitelist.isWhitelisted('185.93.239.1')) {
   return res.status(403).json({ error: 'IP not whitelisted' });
@@ -436,14 +476,17 @@ if (!ShopierIPWhitelist.isWhitelisted('185.93.239.1')) {
 ---
 
 #### `ShopierIPWhitelist.extractIP(request)`
+
 Request'ten IP adresini çıkarır.
 
 **Parameters:**
+
 - `request` (Request): HTTP request objesi
 
 **Returns:** `string | null` - IP adresi veya null
 
 **Example:**
+
 ```typescript
 const ip = ShopierIPWhitelist.extractIP(request);
 console.log('Request from IP:', ip);
@@ -452,14 +495,17 @@ console.log('Request from IP:', ip);
 ---
 
 #### `ShopierRateLimiter.checkLimit(identifier, maxRequests, windowMs)`
+
 Rate limit kontrolü yapar.
 
 **Parameters:**
+
 - `identifier` (string): Genelde IP adresi
 - `maxRequests` (number): Maksimum istek sayısı (default: 10)
 - `windowMs` (number): Time window (ms) (default: 60000)
 
 **Returns:**
+
 ```typescript
 {
   allowed: boolean;
@@ -469,13 +515,14 @@ Rate limit kontrolü yapar.
 ```
 
 **Example:**
+
 ```typescript
 const result = ShopierRateLimiter.checkLimit('185.93.239.1', 10, 60000);
 
 if (!result.allowed) {
-  return res.status(429).json({ 
+  return res.status(429).json({
     error: 'Rate limit exceeded',
-    resetAt: new Date(result.resetTime).toISOString()
+    resetAt: new Date(result.resetTime).toISOString(),
   });
 }
 ```
@@ -483,12 +530,15 @@ if (!result.allowed) {
 ---
 
 #### `ShopierRequestValidator.validateWebhookData(data)`
+
 Webhook data'yı comprehensive doğrular.
 
 **Parameters:**
+
 - `data` (any): Webhook payload
 
 **Returns:**
+
 ```typescript
 {
   valid: boolean;
@@ -497,13 +547,14 @@ Webhook data'yı comprehensive doğrular.
 ```
 
 **Example:**
+
 ```typescript
 const validation = ShopierRequestValidator.validateWebhookData(webhookData);
 
 if (!validation.valid) {
   return res.status(400).json({
     error: 'Invalid webhook data',
-    errors: validation.errors
+    errors: validation.errors,
   });
 }
 ```
@@ -511,28 +562,32 @@ if (!validation.valid) {
 ---
 
 #### `performSecurityCheck(request)`
+
 Tüm güvenlik kontrollerini yapar (IP + Rate Limit).
 
 **Parameters:**
+
 - `request` (Request): HTTP request objesi
 
 **Returns:**
+
 ```typescript
 Promise<{
   passed: boolean;
   reason?: string;
   details?: any;
-}>
+}>;
 ```
 
 **Example:**
+
 ```typescript
 const securityCheck = await performSecurityCheck(request);
 
 if (!securityCheck.passed) {
   return res.status(403).json({
     error: 'Security check failed',
-    reason: securityCheck.reason
+    reason: securityCheck.reason,
   });
 }
 ```
@@ -548,6 +603,7 @@ if (!securityCheck.passed) {
 **Sebep:** Request farklı bir IP'den geliyor
 
 **Çözüm:**
+
 ```typescript
 // Development modunda test için
 process.env.NODE_ENV = 'development';
@@ -564,6 +620,7 @@ private static readonly SHOPIER_IP_RANGES = [
 **Sebep:** Çok fazla request gönderildi
 
 **Çözüm:**
+
 ```typescript
 // Limit'i artır (production'da dikkatli!)
 const result = ShopierRateLimiter.checkLimit(ip, 20, 60000); // 20 req/min
@@ -577,6 +634,7 @@ ShopierRateLimiter.reset();
 **Sebep:** Secret key yanlış veya parametreler farklı
 
 **Çözüm:**
+
 ```bash
 # .env dosyasını kontrol et
 SHOPIER_API_SECRET=correct_secret_key
@@ -590,6 +648,7 @@ platform_order_id: 'TEST_123_user456'
 **Sebep:** Mock'lar doğru yapılandırılmamış
 
 **Çözüm:**
+
 ```typescript
 // Jest cache'i temizle
 npm test -- --clearCache
@@ -608,6 +667,7 @@ npm run test:security
 ### Production Monitoring
 
 **Önerilen Metrikler:**
+
 - ✅ Webhook success rate (target: >99%)
 - ✅ Average processing time (target: <2s)
 - ✅ Rate limit rejections (target: <1%)
@@ -615,6 +675,7 @@ npm run test:security
 - ✅ Signature verification failures
 
 **Alert Koşulları:**
+
 ```
 ⚠️  Success rate < 95% → Critical
 ⚠️  Processing time > 5s → Warning
@@ -625,6 +686,7 @@ npm run test:security
 ### Log Analizi
 
 **Önemli Log Patterns:**
+
 ```bash
 # Başarılı webhook
 ✅ Webhook processed in 1234ms
@@ -644,6 +706,7 @@ npm run test:security
 ## 🎓 Best Practices
 
 ### 1. Signature Validation
+
 ```typescript
 // ✅ İYİ: Her zaman server-side doğrula
 const isValid = verifySecureSignature(params, signature, secret);
@@ -652,6 +715,7 @@ const isValid = verifySecureSignature(params, signature, secret);
 ```
 
 ### 2. Rate Limiting
+
 ```typescript
 // ✅ İYİ: IP bazlı rate limiting
 const result = ShopierRateLimiter.checkLimit(ip, 10, 60000);
@@ -661,6 +725,7 @@ const result = ShopierRateLimiter.checkLimit('global', 1000, 60000);
 ```
 
 ### 3. Error Handling
+
 ```typescript
 // ✅ İYİ: Detaylı error response
 return NextResponse.json(
@@ -673,13 +738,14 @@ return NextResponse.json({ error: 'Error' }, { status: 500 });
 ```
 
 ### 4. Logging
+
 ```typescript
 // ✅ İYİ: Structured logging
 console.error('Webhook error:', {
   orderId,
   userId,
   error: error.message,
-  processingTime
+  processingTime,
 });
 
 // ❌ KÖTÜ: Unstructured logging
@@ -693,45 +759,45 @@ console.error('Error:', error);
 ### Eski Sistemden Yeni Sisteme Geçiş
 
 #### Adım 1: Yeni Dosyaları Ekle
+
 ```bash
 # Yeni güvenlik modülü
 src/lib/payment/shopier-security.ts
 ```
 
 #### Adım 2: Import'ları Güncelle
+
 ```typescript
 // Eski
 import { verifyShopierWebhook } from '@/lib/payment/shopier-config';
 
 // Yeni
-import { 
-  verifyShopierWebhook 
-} from '@/lib/payment/shopier-config';
-import { 
+import { verifyShopierWebhook } from '@/lib/payment/shopier-config';
+import {
   performSecurityCheck,
-  ShopierRequestValidator 
+  ShopierRequestValidator,
 } from '@/lib/payment/shopier-security';
 ```
 
 #### Adım 3: Webhook Route'u Güncelle
+
 ```typescript
 // Security check ekle
 const securityCheck = await performSecurityCheck(request);
 if (!securityCheck.passed) {
-  return NextResponse.json(
-    { error: 'Security check failed' },
-    { status: 403 }
-  );
+  return NextResponse.json({ error: 'Security check failed' }, { status: 403 });
 }
 ```
 
 #### Adım 4: Test Et
+
 ```bash
 npm run test:webhook
 npm run test:security
 ```
 
 #### Adım 5: Deploy
+
 ```bash
 # Staging'e deploy
 vercel --prod staging
@@ -747,6 +813,7 @@ vercel --prod
 ### Version 2.0.0 - 2025-10-01
 
 **Added:**
+
 - ✅ HMAC-SHA256 signature generation & verification
 - ✅ IP whitelisting with CIDR support
 - ✅ Rate limiting system (in-memory)
@@ -758,14 +825,17 @@ vercel --prod
 - ✅ Test npm scripts
 
 **Changed:**
+
 - 🔄 Signature algorithm: btoa() → HMAC-SHA256
 - 🔄 Webhook endpoint security flow
 - 🔄 Response headers (security + performance)
 
 **Deprecated:**
-- ⚠️  Legacy base64 signature (still supported for compatibility)
+
+- ⚠️ Legacy base64 signature (still supported for compatibility)
 
 **Fixed:**
+
 - 🐛 Timing attack vulnerability in signature verification
 - 🐛 Missing rate limiting
 - 🐛 No IP whitelist filtering
@@ -792,6 +862,7 @@ vercel --prod
 ## 🆘 Support
 
 Sorularınız için:
+
 - 📧 Email: busbuskimkionline@gmail.com
 - 📖 Documentation: Bu dosya
 - 🧪 Tests: `npm run test:webhook`
@@ -801,4 +872,3 @@ Sorularınız için:
 **Son Güncelleme:** 1 Ekim 2025  
 **Versiyon:** 2.0.0  
 **Durum:** ✅ Production Ready
-

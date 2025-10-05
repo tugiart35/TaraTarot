@@ -19,6 +19,7 @@
 ## 1️⃣ Supabase Production Setup
 
 ### Step 1: Create Production Project
+
 1. [Supabase Dashboard](https://supabase.com/dashboard) → "New Project"
 2. **Project Name:** `tarot-numeroloji-prod` (or your choice)
 3. **Database Password:** Güçlü password oluştur (kaydet!)
@@ -26,6 +27,7 @@
 5. **Wait:** Project oluşturulmasını bekle (2-3 dakika)
 
 ### Step 2: Get Production Keys
+
 ```bash
 # Supabase Dashboard → Settings → API
 NEXT_PUBLIC_SUPABASE_URL=https://qtlokdkcerjrbrtphlrh.supabase.co
@@ -35,6 +37,7 @@ SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhY
 ```
 
 ### Step 3: Database Setup
+
 ```sql
 -- Production database'de migration'ları çalıştır
 -- 1. migrations/ klasöründeki tüm .sql dosyalarını sırayla çalıştır
@@ -47,9 +50,11 @@ SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhY
 ## 2️⃣ Shopier Production Setup
 
 ### Step 1: Contact Shopier Support
+
 1. **Email:** `destek@shopier.com` veya `info@shopier.com`
 2. **Subject:** "Production Account Activation Request"
 3. **Message Template:**
+
 ```
 Merhaba,
 
@@ -72,6 +77,7 @@ Teşekkürler.
 ```
 
 ### Step 2: Production Credentials
+
 ```bash
 # Shopier'den gelecek değerler:
 SHOPIER_MERCHANT_ID=https://www.shopier.com/busbuskimki
@@ -90,6 +96,7 @@ NEXT_PUBLIC_SHOPIER_WEBHOOK_URL=https://busbuskimki.com/api/webhook/shopier
 ## 3️⃣ Email Service Production Setup
 
 ### Option A: Gmail Business (Recommended)
+
 1. **Google Workspace** hesabı oluştur
 2. **App Password** oluştur:
    - Google Account → Security → 2-Step Verification → App passwords
@@ -105,6 +112,7 @@ SMTP_PASS=ouxpmflgzqfornlv
 ```
 
 ### Option B: Professional Email Service
+
 **SendGrid, Mailgun, AWS SES** gibi servisler:
 
 ```bash
@@ -128,12 +136,15 @@ SMTP_PASS=your-ses-smtp-password
 ## 4️⃣ Domain & URLs Setup
 
 ### Step 1: Domain Purchase
+
 **Recommended Providers:**
+
 - [Namecheap](https://www.namecheap.com) - Cheap, reliable
 - [GoDaddy](https://www.godaddy.com) - Popular
 - [Cloudflare](https://www.cloudflare.com) - DNS + Security
 
 ### Step 2: Domain Configuration
+
 ```bash
 # Production domain'inizi kullanın:
 NEXT_PUBLIC_SITE_URL=busbuskimki.com
@@ -143,6 +154,7 @@ NEXT_PUBLIC_CONTACT_PHONE=+382 (67) 010176  # Gerçek telefon numarası
 ### Step 3: SSL Certificate
 
 #### Option A: Vercel (RECOMMENDED - FREE SSL)
+
 **En ucuz ve kolay yöntem - Otomatik SSL**
 
 ```bash
@@ -168,6 +180,7 @@ vercel domains add busbuskimki.com
 **Maliyet:** $0 (SSL ücretsiz, hosting ücretsiz tier)
 
 #### Option B: Cloudflare (FREE SSL + CDN)
+
 **Domain'i Cloudflare'e taşı - Ücretsiz SSL + Performance**
 
 ```bash
@@ -189,6 +202,7 @@ vercel domains add busbuskimki.com
 **Maliyet:** $0 (SSL + CDN ücretsiz)
 
 #### Option C: Let's Encrypt (Custom Server için)
+
 **Eğer kendi server'ınız varsa**
 
 ```bash
@@ -212,12 +226,14 @@ sudo crontab -e
 ## 🎯 RECOMMENDED SOLUTION: Vercel + Cloudflare
 
 **En uygun kombinasyon:**
+
 1. **Vercel** → Hosting + Otomatik SSL
 2. **Cloudflare** → DNS + CDN + Ekstra güvenlik
 
 ### Step-by-Step Implementation:
 
 #### 1. Vercel Setup (5 dakika)
+
 ```bash
 # Terminal'de proje klasöründe:
 npm i -g vercel
@@ -229,6 +245,7 @@ vercel domains add busbuskimki.com
 ```
 
 #### 2. Cloudflare Setup (10 dakika)
+
 1. [Cloudflare.com](https://cloudflare.com) → Sign up
 2. "Add a Site" → `busbuskimki.com`
 3. DNS Records ekle:
@@ -239,7 +256,9 @@ vercel domains add busbuskimki.com
 6. Caching → Browser Cache TTL → 4 hours
 
 #### 3. Domain Provider DNS Update
+
 **Domain provider'ınızda (Namecheap, GoDaddy, vs.):**
+
 ```
 Nameservers değiştir:
 ns1.cloudflare.com
@@ -247,6 +266,7 @@ ns2.cloudflare.com
 ```
 
 ### Benefits:
+
 - ✅ **$0 maliyet** (SSL + Hosting ücretsiz)
 - ✅ **Otomatik SSL** (Wildcard certificate)
 - ✅ **Global CDN** (Hızlı yükleme)
@@ -255,8 +275,9 @@ ns2.cloudflare.com
 - ✅ **Easy deployment** (`vercel --prod`)
 
 ### Timeline:
+
 - **Vercel setup:** 5 dakika
-- **Cloudflare setup:** 10 dakika  
+- **Cloudflare setup:** 10 dakika
 - **DNS propagation:** 5-30 dakika
 - **SSL activation:** 5-10 dakika
 
@@ -267,6 +288,7 @@ ns2.cloudflare.com
 ## 5️⃣ Webhook Security
 
 ### Generate Secure Secret
+
 ```bash
 # Terminal'de güçlü secret oluştur:
 openssl rand -base64 32
@@ -284,6 +306,7 @@ WEBHOOK_SECRET=your-32-char-random-string
 ## 6️⃣ Environment Setup
 
 ### Development → Production Migration
+
 ```bash
 # 1. Production .env dosyası oluştur
 cp env.example .env.production
@@ -316,6 +339,7 @@ SMTP_PASS=your-prod-app-password
 ## 7️⃣ Testing & Validation
 
 ### Pre-Production Tests
+
 ```bash
 # 1. Environment variables validation
 npm run build  # Build başarılı mı?
@@ -338,6 +362,7 @@ curl -X POST https://your-domain.com/api/webhook/shopier
 ## 8️⃣ Deployment Platforms
 
 ### Option A: Vercel (Recommended)
+
 ```bash
 # 1. Vercel CLI install
 npm i -g vercel
@@ -352,6 +377,7 @@ vercel env add SUPABASE_SERVICE_ROLE_KEY
 ```
 
 ### Option B: Netlify
+
 ```bash
 # 1. Netlify CLI install
 npm i -g netlify-cli
@@ -363,6 +389,7 @@ netlify deploy --prod
 ```
 
 ### Option C: Custom Server
+
 ```bash
 # 1. Server setup (Ubuntu/CentOS)
 # 2. Node.js, PM2, Nginx install
@@ -375,6 +402,7 @@ netlify deploy --prod
 ## 9️⃣ Cost Estimation
 
 ### Monthly Costs (Approximate)
+
 - **Domain:** $10-15/year
 - **Supabase:** Free tier (up to 50k requests)
 - **Email Service:** $10-50/month
@@ -388,6 +416,7 @@ netlify deploy --prod
 ## 🔒 Security Checklist
 
 ### Before Production
+
 - [ ] All secrets in environment variables (not in code)
 - [ ] HTTPS enabled (SSL certificate)
 - [ ] Database RLS policies active
@@ -396,6 +425,7 @@ netlify deploy --prod
 - [ ] Error monitoring setup (Sentry)
 
 ### After Production
+
 - [ ] Monitor error logs
 - [ ] Check payment webhooks
 - [ ] Test email delivery
@@ -407,11 +437,14 @@ netlify deploy --prod
 ## 📞 Support Contacts
 
 ### Technical Support
-- **Supabase:** [Discord](https://discord.supabase.com) or [GitHub Issues](https://github.com/supabase/supabase/issues)
+
+- **Supabase:** [Discord](https://discord.supabase.com) or
+  [GitHub Issues](https://github.com/supabase/supabase/issues)
 - **Shopier:** `destek@shopier.com`
 - **Vercel:** [Vercel Support](https://vercel.com/support)
 
 ### Emergency Contacts
+
 - **Domain Issues:** Domain provider support
 - **SSL Issues:** Certificate authority support
 - **Payment Issues:** Shopier technical support
@@ -421,16 +454,19 @@ netlify deploy --prod
 ## 🎯 Timeline
 
 ### Week 1: Setup
+
 - [ ] Day 1-2: Supabase production project
 - [ ] Day 3-4: Shopier production account
 - [ ] Day 5-7: Email service setup
 
 ### Week 2: Deployment
+
 - [ ] Day 1-2: Domain purchase & DNS
 - [ ] Day 3-4: Environment configuration
 - [ ] Day 5-7: Testing & validation
 
 ### Week 3: Go Live
+
 - [ ] Day 1-2: Final testing
 - [ ] Day 3-4: Production deployment
 - [ ] Day 5-7: Monitoring & optimization
@@ -440,6 +476,7 @@ netlify deploy --prod
 ## 🚀 Quick Commands
 
 ### Generate Random Secrets
+
 ```bash
 # Webhook secret
 openssl rand -base64 32
@@ -452,6 +489,7 @@ openssl rand -hex 32
 ```
 
 ### Test Environment Variables
+
 ```bash
 # Check if all required variables are set
 node -e "
@@ -471,6 +509,7 @@ if (missing.length) {
 ## 📋 Final Checklist
 
 Before going live:
+
 - [ ] All environment variables set
 - [ ] Database migrations completed
 - [ ] Payment integration tested

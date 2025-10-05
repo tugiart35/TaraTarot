@@ -55,7 +55,9 @@ describe('Shopier Webhook Endpoint', () => {
 
   describe('Security Checks', () => {
     it('should reject requests without IP', async () => {
-      const { performSecurityCheck } = require('@/lib/payment/shopier-security');
+      const {
+        performSecurityCheck,
+      } = require('@/lib/payment/shopier-security');
       performSecurityCheck.mockResolvedValueOnce({
         passed: false,
         reason: 'Could not extract IP address',
@@ -77,7 +79,9 @@ describe('Shopier Webhook Endpoint', () => {
     });
 
     it('should reject rate limited requests', async () => {
-      const { performSecurityCheck } = require('@/lib/payment/shopier-security');
+      const {
+        performSecurityCheck,
+      } = require('@/lib/payment/shopier-security');
       performSecurityCheck.mockResolvedValueOnce({
         passed: false,
         reason: 'Rate limit exceeded',
@@ -104,7 +108,9 @@ describe('Shopier Webhook Endpoint', () => {
     });
 
     it('should reject invalid webhook data', async () => {
-      const { ShopierRequestValidator } = require('@/lib/payment/shopier-security');
+      const {
+        ShopierRequestValidator,
+      } = require('@/lib/payment/shopier-security');
       ShopierRequestValidator.validateWebhookData.mockReturnValueOnce({
         valid: false,
         errors: ['Invalid order ID format', 'Invalid amount'],
@@ -261,9 +267,9 @@ describe('Shopier Webhook Endpoint', () => {
     it('should handle database errors gracefully', async () => {
       const { supabase } = require('@/lib/supabase/client');
 
-      supabase.from().single.mockRejectedValueOnce(
-        new Error('Database connection failed')
-      );
+      supabase
+        .from()
+        .single.mockRejectedValueOnce(new Error('Database connection failed'));
 
       const request = new NextRequest('http://localhost/api/webhook/shopier', {
         method: 'POST',
@@ -292,22 +298,23 @@ describe('Shopier Webhook Endpoint', () => {
       const { supabase } = require('@/lib/supabase/client');
 
       // Simulate slow processing
-      supabase.from().single.mockImplementationOnce(() =>
-        new Promise(resolve =>
-          setTimeout(
-            () =>
-              resolve({
-                data: {
-                  id: 'user456',
-                  credit_balance: 100,
-                  display_name: 'Test User',
-                  email: 'test@example.com',
-                },
-                error: null,
-              }),
-            6000
+      supabase.from().single.mockImplementationOnce(
+        () =>
+          new Promise(resolve =>
+            setTimeout(
+              () =>
+                resolve({
+                  data: {
+                    id: 'user456',
+                    credit_balance: 100,
+                    display_name: 'Test User',
+                    email: 'test@example.com',
+                  },
+                  error: null,
+                }),
+              6000
+            )
           )
-        )
       );
 
       const request = new NextRequest('http://localhost/api/webhook/shopier', {
@@ -372,7 +379,9 @@ describe('Shopier Webhook Endpoint', () => {
     it('should skip security checks in test mode', async () => {
       process.env.NODE_ENV = 'development';
 
-      const { performSecurityCheck } = require('@/lib/payment/shopier-security');
+      const {
+        performSecurityCheck,
+      } = require('@/lib/payment/shopier-security');
       const performSecurityCheckSpy = jest.spyOn(
         { performSecurityCheck },
         'performSecurityCheck'
@@ -397,4 +406,3 @@ describe('Shopier Webhook Endpoint', () => {
     });
   });
 });
-

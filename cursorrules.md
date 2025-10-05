@@ -379,7 +379,7 @@ export async function POST(request: NextRequest) {
 
 ```
 messages/tr.json          # Ana Türkçe çeviri dosyası
-messages/en.json          # İngilizce çeviri dosyası  
+messages/en.json          # İngilizce çeviri dosyası
 messages/sr.json          # Sırpça çeviri dosyası
 messages/tr.backup.json   # Türkçe yedek dosyası
 src/app/[locale]/layout.tsx                    # Ana layout dosyası
@@ -418,6 +418,7 @@ src/app/[locale]/(main)/numeroloji/ klasöründeki tüm dosyalar # Numeroloji sa
 ### 4. **UYARI**
 
 Bu kurallara uymazsan:
+
 - Kod tabanı bozulabilir
 - Kritik veriler kaybolabilir
 - Uygulama çalışmayabilir

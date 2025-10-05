@@ -1,6 +1,12 @@
 'use client';
 
-import React, { createContext, useContext, useEffect, useState, useCallback } from 'react';
+import React, {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+  useCallback,
+} from 'react';
 import { supabase } from '@/lib/supabase/client';
 
 interface AdminUser {
@@ -14,11 +20,16 @@ interface AdminAuthContextType {
   admin: AdminUser | null;
   loading: boolean;
   isAuthenticated: boolean;
-  loginAdmin: (email: string, password: string) => Promise<{ success: boolean; error: string | null }>;
+  loginAdmin: (
+    email: string,
+    password: string
+  ) => Promise<{ success: boolean; error: string | null }>;
   logoutAdmin: () => Promise<void>;
 }
 
-const AdminAuthContext = createContext<AdminAuthContextType | undefined>(undefined);
+const AdminAuthContext = createContext<AdminAuthContextType | undefined>(
+  undefined
+);
 
 export function AdminAuthProvider({ children }: { children: React.ReactNode }) {
   const [admin, setAdmin] = useState<AdminUser | null>(null);
@@ -39,7 +50,7 @@ export function AdminAuthProvider({ children }: { children: React.ReactNode }) {
         //     is_admin: true,
         //     display_name: 'Test Admin',
         //   };
-        //   
+        //
         //   if (mounted) {
         //     setAdmin(adminUser);
         //     setLoading(false);
@@ -47,9 +58,11 @@ export function AdminAuthProvider({ children }: { children: React.ReactNode }) {
         //     return;
         //   }
         // }
-        
-        const { data: { session } } = await supabase.auth.getSession();
-        
+
+        const {
+          data: { session },
+        } = await supabase.auth.getSession();
+
         if (session?.user && mounted) {
           // Admin kontrolü yap
           const { data: profile } = await supabase
@@ -80,8 +93,12 @@ export function AdminAuthProvider({ children }: { children: React.ReactNode }) {
     initializeAdmin();
 
     // Auth state değişikliklerini dinle
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event: any, session: any) => {
-      if (!mounted) return;
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange(async (event: any, session: any) => {
+      if (!mounted) {
+        return;
+      }
 
       if (event === 'SIGNED_OUT') {
         setAdmin(null);
@@ -122,12 +139,12 @@ export function AdminAuthProvider({ children }: { children: React.ReactNode }) {
       //       is_admin: true,
       //       display_name: 'Test Admin',
       //     };
-      //     
+      //
       //     setAdmin(adminUser);
       //     return { success: true, error: null };
       //   }
       // }
-      
+
       // Supabase admin authentication
       const { data, error } = await supabase.auth.signInWithPassword({
         email,

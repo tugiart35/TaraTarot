@@ -3,25 +3,26 @@
 ## Executive Summary
 
 **Analysis Scope:** 9 tarot spread components with ~12,000 lines of code
-**Duplication Found:** 85-95% code similarity across components
-**Refactor Potential:** High - significant modularization opportunities
-**Risk Level:** Low - well-defined interfaces and patterns
+**Duplication Found:** 85-95% code similarity across components **Refactor
+Potential:** High - significant modularization opportunities **Risk Level:**
+Low - well-defined interfaces and patterns
 
 ## Key Performance Indicators
 
-| Metric | Current | Target | Improvement |
-|--------|---------|---------|-------------|
-| Total LOC | ~12,000 | ~3,000 | -75% |
-| Duplicate Code | 85-95% | <5% | -90% |
-| Components | 9 monolithic | 1 base + 9 configs | -89% |
-| Bundle Size | Large | Optimized | -60% estimated |
-| Maintenance Effort | High | Low | -80% |
+| Metric             | Current      | Target             | Improvement    |
+| ------------------ | ------------ | ------------------ | -------------- |
+| Total LOC          | ~12,000      | ~3,000             | -75%           |
+| Duplicate Code     | 85-95%       | <5%                | -90%           |
+| Components         | 9 monolithic | 1 base + 9 configs | -89%           |
+| Bundle Size        | Large        | Optimized          | -60% estimated |
+| Maintenance Effort | High         | Low                | -80%           |
 
 ## Duplication Analysis
 
 ### 1. **Exact Duplicates (95-100% similarity)**
 
 #### **State Management Patterns**
+
 - **Location:** All 9 components, lines 158-204
 - **Pattern:** Identical useState declarations for form management
 - **Duplication:** 100% - exact same state structure
@@ -41,6 +42,7 @@ const [showCreditConfirm, setShowCreditConfirm] = useState(false);
 ```
 
 #### **Validation Functions**
+
 - **Location:** All 9 components, lines 225-280
 - **Pattern:** Identical form validation logic with only i18n key differences
 - **Duplication:** 95% - only translation keys vary
@@ -59,13 +61,16 @@ const validateDetailedForm = () => {
 ```
 
 #### **Modal Components**
+
 - **Location:** All 9 components, lines 580-870
-- **Pattern:** Identical modal structure with only theme colors and icons varying
+- **Pattern:** Identical modal structure with only theme colors and icons
+  varying
 - **Duplication:** 90% - same JSX structure, different CSS classes
 
 ### 2. **Near Duplicates (85-95% similarity)**
 
 #### **Component Props Interfaces**
+
 - **Location:** All 9 components, lines 53-86
 - **Pattern:** Identical interface structure
 - **Duplication:** 100% - exact same props
@@ -80,11 +85,13 @@ interface CareerReadingProps {
 ```
 
 #### **Hook Usage Patterns**
+
 - **Location:** All 9 components, lines 94-134
 - **Pattern:** Identical useTarotReading usage
 - **Duplication:** 95% - same hook calls and destructuring
 
 #### **Config Export Patterns**
+
 - **Location:** All 9 config files
 - **Pattern:** Identical export structure
 - **Duplication:** 90% - same constant naming and structure
@@ -94,17 +101,18 @@ interface CareerReadingProps {
 ### **Core Shared Components**
 
 #### **1. `shared/hooks/useTarotFormState.ts`**
+
 ```typescript
 export function useTarotFormState(validationKeys: ValidationKeys) {
   const [personalInfo, setPersonalInfo] = useState({...});
   const [questions, setQuestions] = useState({...});
   const [formErrors, setFormErrors] = useState({...});
   const [modals, setModals] = useState({...});
-  
+
   const validateForm = useCallback(() => { /* shared logic */ }, [validationKeys]);
   const updatePersonalInfo = useCallback((field, value) => { /* shared logic */ }, []);
   const updateQuestion = useCallback((field, value) => { /* shared logic */ }, []);
-  
+
   return {
     personalInfo, questions, formErrors, modals,
     validateForm, updatePersonalInfo, updateQuestion,
@@ -114,18 +122,22 @@ export function useTarotFormState(validationKeys: ValidationKeys) {
 ```
 
 #### **2. `shared/hooks/useTarotReadingFlow.ts`**
+
 ```typescript
 export function useTarotReadingFlow(config: TarotConfig) {
   const tarotReading = useTarotReading(config);
   const formState = useTarotFormState(config.validationKeys);
   const saveState = useTarotSaveState(config);
-  
-  const handleReadingTypeSelect = useCallback((type) => {
-    if (type === READING_TYPES.DETAILED || type === READING_TYPES.WRITTEN) {
-      formState.setModals(prev => ({ ...prev, showInfoModal: true }));
-    }
-  }, [formState]);
-  
+
+  const handleReadingTypeSelect = useCallback(
+    type => {
+      if (type === READING_TYPES.DETAILED || type === READING_TYPES.WRITTEN) {
+        formState.setModals(prev => ({ ...prev, showInfoModal: true }));
+      }
+    },
+    [formState]
+  );
+
   return {
     ...tarotReading,
     ...formState,
@@ -137,6 +149,7 @@ export function useTarotReadingFlow(config: TarotConfig) {
 ```
 
 #### **3. `shared/ui/BaseTarotModal.tsx`**
+
 ```typescript
 interface BaseTarotModalProps {
   theme: 'blue' | 'pink' | 'purple' | 'green' | 'yellow';
@@ -149,7 +162,7 @@ interface BaseTarotModalProps {
 export function BaseTarotModal({ theme, icon, titleKey, content, onClose }: BaseTarotModalProps) {
   const themeClasses = getThemeClasses(theme);
   const { t } = useTranslations();
-  
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4">
       <div className={`bg-slate-900/95 border ${themeClasses.border} rounded-2xl shadow-2xl w-full max-w-lg max-h-[90vh] flex flex-col`}>
@@ -165,7 +178,7 @@ export function BaseTarotModal({ theme, icon, titleKey, content, onClose }: Base
           </div>
           {/* Close button */}
         </div>
-        
+
         {/* Scrollable content */}
         <div className="flex-1 overflow-y-auto px-6 py-4">
           {content}
@@ -177,6 +190,7 @@ export function BaseTarotModal({ theme, icon, titleKey, content, onClose }: Base
 ```
 
 #### **4. `shared/ui/BaseTarotCanvas.tsx`**
+
 ```typescript
 interface BaseTarotCanvasProps {
   config: TarotConfig;
@@ -201,7 +215,7 @@ export function BaseTarotCanvas({
         <img src={config.backgroundImage} alt={config.backgroundAlt} className="absolute inset-0 w-full h-full object-cover object-center opacity-60" style={{ zIndex: 0 }} />
         <div className={`absolute inset-0 ${getGradientOverlay(theme)}`} style={{ zIndex: 2 }} />
       </div>
-      
+
       {/* Card positions */}
       <div className="relative z-10 p-2 xs:p-3 sm:p-4 md:p-6 lg:p-8">
         <div className="relative w-full h-full min-h-[320px] xs:min-h-[360px] sm:min-h-[400px] md:min-h-[440px] lg:min-h-[480px] xl:min-h-[520px]">
@@ -230,6 +244,7 @@ export function BaseTarotCanvas({
 ```
 
 #### **5. `shared/schemas/tarot-config.schema.ts`**
+
 ```typescript
 import { z } from 'zod';
 
@@ -288,6 +303,7 @@ export type TarotConfig = z.infer<typeof TarotConfigSchema>;
 ### **Configuration Factory**
 
 #### **`shared/config/tarot-config-factory.ts`**
+
 ```typescript
 export function createTarotConfig<T extends PositionInfo>(
   baseConfig: Partial<TarotConfig> & {
@@ -336,6 +352,7 @@ export function createTarotConfig<T extends PositionInfo>(
 ## Per-Spread Configuration Mapping
 
 ### **Before Refactor (Current State)**
+
 ```
 Career-Spread/
 ├── CareerTarot.tsx (1388 lines)
@@ -345,6 +362,7 @@ Total: ~1580 lines per spread × 9 = ~14,220 lines
 ```
 
 ### **After Refactor (Target State)**
+
 ```
 Career-Spread/
 ├── CareerTarot.tsx (50 lines - just config + render)
@@ -373,24 +391,28 @@ Grand total: ~3,200 lines (-77% reduction)
 ## Migration Strategy
 
 ### **Phase 1: Foundation (Week 1)**
+
 1. Create shared schemas and types
 2. Build BaseTarotModal component
 3. Create useTarotFormState hook
 4. Set up config factory
 
 ### **Phase 2: Core Components (Week 2)**
+
 1. Build BaseTarotCanvas component
 2. Create useTarotReadingFlow hook
 3. Build BaseTarotForm component
 4. Create BaseTarotInterpretation component
 
 ### **Phase 3: Migration (Week 3-4)**
+
 1. Migrate Career-Spread (pilot)
 2. Migrate Love-Spread
 3. Migrate Money-Spread
 4. Migrate remaining spreads
 
 ### **Phase 4: Optimization (Week 5)**
+
 1. Performance testing
 2. Bundle size optimization
 3. Documentation
@@ -399,6 +421,7 @@ Grand total: ~3,200 lines (-77% reduction)
 ## Risk Assessment & Mitigation
 
 ### **High Risk Areas**
+
 1. **Import Path Changes** - Risk: Breaking builds
    - Mitigation: Use barrel exports and gradual migration
 2. **State Management Changes** - Risk: Lost functionality
@@ -407,11 +430,13 @@ Grand total: ~3,200 lines (-77% reduction)
    - Mitigation: Visual regression testing and theme validation
 
 ### **Low Risk Areas**
+
 1. **Config Structure** - Well-defined, minimal changes needed
 2. **Hook Interfaces** - Stable, backward-compatible design
 3. **Component Props** - Maintained interface compatibility
 
 ### **Rollback Strategy**
+
 1. **Feature Flags** - Enable/disable new components
 2. **Branch Strategy** - Keep old components until validation complete
 3. **Automated Testing** - Comprehensive test suite before migration
@@ -420,23 +445,27 @@ Grand total: ~3,200 lines (-77% reduction)
 ## Expected Benefits
 
 ### **Development Velocity**
+
 - **New Spread Creation:** 2 weeks → 2 days (-85% time)
 - **Bug Fixes:** 9 files → 1 file (-89% effort)
 - **Feature Addition:** 9 components → 1 component (-89% effort)
 
 ### **Code Quality**
+
 - **Maintainability:** High - single source of truth
 - **Testability:** High - isolated, testable components
 - **Type Safety:** Enhanced - Zod schema validation
 - **Documentation:** Improved - centralized documentation
 
 ### **Performance**
+
 - **Bundle Size:** Reduced by ~60% (estimated)
 - **Runtime Performance:** Improved - optimized re-renders
 - **Memory Usage:** Reduced - shared state management
 - **Load Time:** Faster - better code splitting
 
 ### **Developer Experience**
+
 - **Learning Curve:** Reduced - consistent patterns
 - **Debugging:** Easier - centralized logic
 - **Code Reviews:** Faster - less repetitive code
@@ -444,19 +473,20 @@ Grand total: ~3,200 lines (-77% reduction)
 
 ## Implementation Timeline
 
-| Week | Phase | Deliverables | Success Criteria | Status |
-|------|-------|--------------|------------------|--------|
-| 1 | Foundation | Schemas, BaseModal, useTarotFormState | Tests pass, no regressions | ✅ **COMPLETED** |
-| 2 | Core Components | BaseCanvas, BaseForm, BaseInterpretation | All shared components working | ✅ **COMPLETED** |
-| 3 | Migration (Career) | Career-Spread migrated | Feature parity maintained | ✅ **COMPLETED** |
-| 4 | Migration (Remaining) | All spreads migrated | All tests pass | ✅ **COMPLETED** |
-| 5 | Optimization | Performance tuning, cleanup | Bundle size reduced by 50%+ | ✅ **COMPLETED** |
+| Week | Phase                 | Deliverables                             | Success Criteria              | Status           |
+| ---- | --------------------- | ---------------------------------------- | ----------------------------- | ---------------- |
+| 1    | Foundation            | Schemas, BaseModal, useTarotFormState    | Tests pass, no regressions    | ✅ **COMPLETED** |
+| 2    | Core Components       | BaseCanvas, BaseForm, BaseInterpretation | All shared components working | ✅ **COMPLETED** |
+| 3    | Migration (Career)    | Career-Spread migrated                   | Feature parity maintained     | ✅ **COMPLETED** |
+| 4    | Migration (Remaining) | All spreads migrated                     | All tests pass                | ✅ **COMPLETED** |
+| 5    | Optimization          | Performance tuning, cleanup              | Bundle size reduced by 50%+   | ✅ **COMPLETED** |
 
 ## 🎉 REFACTOR STATUS: FULLY COMPLETED
 
 ### **✅ Achieved Results**
 
 #### **Code Reduction Metrics**
+
 - **Total LOC:** ~12,000 → ~3,200 (-73% reduction) ✅
 - **Duplicate Code:** 85-95% → <5% (-90% reduction) ✅
 - **Components:** 9 monolithic → 1 base + 9 configs (-89% reduction) ✅
@@ -530,9 +560,13 @@ Grand total: ~3,200 lines (-77% reduction from original ~12,000)
 
 ## Conclusion
 
-The tarot module refactor has been **successfully completed** with all objectives achieved. The modularization strategy reduced codebase size by **77%** while significantly improving maintainability, performance, and development velocity.
+The tarot module refactor has been **successfully completed** with all
+objectives achieved. The modularization strategy reduced codebase size by
+**77%** while significantly improving maintainability, performance, and
+development velocity.
 
 **Key Achievements:**
+
 - ✅ 9 tarot spreads fully migrated to shared architecture
 - ✅ 77% code reduction achieved
 - ✅ All build and runtime errors resolved
@@ -540,4 +574,5 @@ The tarot module refactor has been **successfully completed** with all objective
 - ✅ Enhanced type safety and maintainability
 - ✅ Optimized bundle size and performance
 
-The refactored architecture provides a clean, extensible foundation for future tarot spread development with minimal maintenance overhead.
+The refactored architecture provides a clean, extensible foundation for future
+tarot spread development with minimal maintenance overhead.

@@ -41,96 +41,12 @@ Gereklilik ve Kullanım Durumu:
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
 import { LayoutErrorBoundary } from '@/components/layout/LayoutErrorBoundary';
 import { useNavigation } from '@/hooks/useNavigation';
 import { usePerformanceMonitoring } from '@/hooks/usePerformanceMonitoring';
 import { useTranslations } from '@/hooks/useTranslations';
 
 // Navigation logic moved to useNavigation hook
-
-// Dil seçici bileşeni
-function LanguageSelector() {
-  const [isOpen, setIsOpen] = useState(false);
-  const { currentLanguage, languages, handleLanguageChange } = useNavigation();
-  const { t } = useTranslations();
-
-  const handleLanguageSelect = (locale: string) => {
-    setIsOpen(false);
-    handleLanguageChange(locale);
-  };
-
-  return (
-    <div className='relative'>
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className='flex flex-col items-center justify-center px-2 py-2 rounded-lg transition-all duration-300 min-w-0 flex-1 text-gray-500 hover:text-gray-300'
-        aria-label={t('navigation.languageSelector.openMenu')}
-        aria-expanded={isOpen}
-        aria-haspopup='menu'
-        role='button'
-      >
-        <span className='text-lg mb-1'>{currentLanguage?.flag}</span>
-        <span className='text-xs font-medium truncate'>
-          {currentLanguage?.code.toUpperCase()}
-        </span>
-      </button>
-
-      {/* Dropup menü */}
-      {isOpen && (
-        <>
-          {/* Backdrop */}
-          <div
-            className='fixed inset-0 z-40'
-            onClick={() => setIsOpen(false)}
-          />
-
-          {/* Dropup menü */}
-          <div
-            className='absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 z-50 bg-slate-800/95 backdrop-blur-md border border-slate-600 rounded-lg shadow-xl min-w-[140px]'
-            role='menu'
-            aria-label={t(
-              'navigation.languageSelector.languageOptions',
-              'Dil seçenekleri'
-            )}
-          >
-            {languages.map((language, index) => (
-              <button
-                key={language.code}
-                onClick={() => handleLanguageSelect(language.code)}
-                className={`
-                  w-full px-4 py-3 text-left hover:bg-slate-700/50 transition-colors duration-200
-                  ${index === 0 ? 'rounded-t-lg' : ''}
-                  ${index === languages.length - 1 ? 'rounded-b-lg' : ''}
-                  ${
-                    currentLanguage?.code === language.code
-                      ? 'bg-slate-700/50 text-amber-400'
-                      : 'text-gray-300'
-                  }
-                `}
-                role='menuitem'
-                aria-label={`${language.name} ${t('navigation.languageSelector.selectLanguage', 'dilini seç')}`}
-                aria-current={
-                  currentLanguage?.code === language.code ? 'true' : 'false'
-                }
-              >
-                <div className='flex items-center space-x-3'>
-                  <span className='text-lg'>{language.flag}</span>
-                  <div className='flex flex-col'>
-                    <span className='text-sm font-medium'>{language.name}</span>
-                    <span className='text-xs text-gray-400'>
-                      {language.code.toUpperCase()}
-                    </span>
-                  </div>
-                </div>
-              </button>
-            ))}
-          </div>
-        </>
-      )}
-    </div>
-  );
-}
 
 export default function BottomNavigation() {
   const pathname = usePathname();
@@ -253,9 +169,6 @@ export default function BottomNavigation() {
               </Link>
             );
           })}
-
-          {/* Dil seçici */}
-          <LanguageSelector />
         </div>
       </nav>
     </LayoutErrorBoundary>

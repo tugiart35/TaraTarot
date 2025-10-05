@@ -1,4 +1,4 @@
-# SEO HEADERS - TaraTarot Projesi
+# SEO HEADERS - Büşbüşkiki Projesi
 
 ## Hreflang ve Canonical Tag Implementasyonu
 
@@ -24,14 +24,15 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'metadata' });
-  
+
   // Hreflang URLs oluştur
   const hreflangUrls = locales.map(loc => {
-    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://busbuskimki.com';
+    const baseUrl =
+      process.env.NEXT_PUBLIC_SITE_URL || 'https://busbuskimki.com';
     const path = getLocalizedPath(locale, loc);
     return {
       hrefLang: loc,
-      href: `${baseUrl}${path}`
+      href: `${baseUrl}${path}`,
     };
   });
 
@@ -40,16 +41,19 @@ export async function generateMetadata({
     description: t('description'),
     alternates: {
       canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}`,
-      languages: hreflangUrls.reduce((acc, { hrefLang, href }) => {
-        acc[hrefLang] = href;
-        return acc;
-      }, {} as Record<string, string>)
+      languages: hreflangUrls.reduce(
+        (acc, { hrefLang, href }) => {
+          acc[hrefLang] = href;
+          return acc;
+        },
+        {} as Record<string, string>
+      ),
     },
     openGraph: {
       title: t('title'),
       description: t('description'),
       url: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}`,
-      siteName: 'TaraTarot',
+      siteName: 'Büşbüşkiki',
       locale: locale,
       type: 'website',
     },
@@ -77,21 +81,21 @@ function getLocalizedPath(currentLocale: string, targetLocale: string): string {
   const pathMappings = {
     tr: {
       tr: '/anasayfa',
-      en: '/home', 
-      sr: '/pocetna'
+      en: '/home',
+      sr: '/pocetna',
     },
     en: {
       tr: '/anasayfa',
       en: '/home',
-      sr: '/pocetna'
+      sr: '/pocetna',
     },
     sr: {
       tr: '/anasayfa',
       en: '/home',
-      sr: '/pocetna'
-    }
+      sr: '/pocetna',
+    },
   };
-  
+
   return `/${targetLocale}${pathMappings[currentLocale][targetLocale]}`;
 }
 ```
@@ -106,23 +110,26 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  
+
   const hreflangUrls = {
-    'tr': '/tr/tarot-okuma',
-    'en': '/en/tarot-reading', 
-    'sr': '/sr/tarot-citanje'
+    tr: '/tr/tarot-okuma',
+    en: '/en/tarot-reading',
+    sr: '/sr/tarot-citanje',
   };
 
   return {
-    title: 'Tarot Okuma - TaraTarot',
+    title: 'Tarot Okuma - Büşbüşkiki',
     description: 'Profesyonel tarot okuma hizmeti',
     alternates: {
       canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/tarot-okuma`,
-      languages: Object.entries(hreflangUrls).reduce((acc, [lang, path]) => {
-        acc[lang] = `${process.env.NEXT_PUBLIC_SITE_URL}${path}`;
-        return acc;
-      }, {} as Record<string, string>)
-    }
+      languages: Object.entries(hreflangUrls).reduce(
+        (acc, [lang, path]) => {
+          acc[lang] = `${process.env.NEXT_PUBLIC_SITE_URL}${path}`;
+          return acc;
+        },
+        {} as Record<string, string>
+      ),
+    },
   };
 }
 ```
@@ -134,13 +141,14 @@ export async function generateMetadata({
 ```typescript
 // src/lib/seo/canonical.ts
 export function generateCanonicalUrl(
-  locale: string, 
+  locale: string,
   pathname: string,
-  baseUrl: string = process.env.NEXT_PUBLIC_SITE_URL || 'https://busbuskimki.com'
+  baseUrl: string = process.env.NEXT_PUBLIC_SITE_URL ||
+    'https://busbuskimki.com'
 ): string {
   // Path'ten locale'i çıkar
   const cleanPath = pathname.replace(`/${locale}`, '') || '/';
-  
+
   // Locale-specific path mapping
   const pathMappings = {
     tr: {
@@ -148,22 +156,22 @@ export function generateCanonicalUrl(
       '/tarotokumasi': '/tarot-okuma',
       '/numeroloji': '/numeroloji',
       '/dashboard': '/panel',
-      '/auth': '/giris'
+      '/auth': '/giris',
     },
     en: {
       '/': '/home',
-      '/tarotokumasi': '/tarot-reading', 
+      '/tarotokumasi': '/tarot-reading',
       '/numeroloji': '/numerology',
       '/dashboard': '/dashboard',
-      '/auth': '/login'
+      '/auth': '/login',
     },
     sr: {
       '/': '/pocetna',
       '/tarotokumasi': '/tarot-citanje',
-      '/numeroloji': '/numerologija', 
+      '/numeroloji': '/numerologija',
       '/dashboard': '/panel',
-      '/auth': '/prijava'
-    }
+      '/auth': '/prijava',
+    },
   };
 
   const mappedPath = pathMappings[locale]?.[cleanPath] || cleanPath;
@@ -184,7 +192,7 @@ export function generatePageMetadata({
   title,
   description,
   keywords = [],
-  image = '/og-image.jpg'
+  image = '/og-image.jpg',
 }: {
   locale: string;
   pathname: string;
@@ -207,7 +215,7 @@ export function generatePageMetadata({
       title,
       description,
       url: canonicalUrl,
-      siteName: 'TaraTarot',
+      siteName: 'Büşbüşkiki',
       locale: locale,
       type: 'website',
       images: [
@@ -251,7 +259,7 @@ export function generateStructuredData({
   pathname,
   title,
   description,
-  type = 'WebPage'
+  type = 'WebPage',
 }: {
   locale: string;
   pathname: string;
@@ -271,26 +279,26 @@ export function generateStructuredData({
     inLanguage: locale,
     isPartOf: {
       '@type': 'WebSite',
-      name: 'TaraTarot',
+      name: 'Büşbüşkiki',
       url: baseUrl,
     },
     breadcrumb: {
       '@type': 'BreadcrumbList',
-      itemListElement: generateBreadcrumbs(locale, pathname)
-    }
+      itemListElement: generateBreadcrumbs(locale, pathname),
+    },
   };
 }
 
 function generateBreadcrumbs(locale: string, pathname: string) {
   const segments = pathname.split('/').filter(Boolean);
   const breadcrumbs = [];
-  
+
   // Ana sayfa
   breadcrumbs.push({
     '@type': 'ListItem',
     position: 1,
     name: locale === 'tr' ? 'Ana Sayfa' : locale === 'en' ? 'Home' : 'Početna',
-    item: `/${locale}`
+    item: `/${locale}`,
   });
 
   // Diğer segmentler
@@ -300,7 +308,7 @@ function generateBreadcrumbs(locale: string, pathname: string) {
         '@type': 'ListItem',
         position: index + 2,
         name: getBreadcrumbName(locale, segment),
-        item: `/${locale}/${segments.slice(0, index + 1).join('/')}`
+        item: `/${locale}/${segments.slice(0, index + 1).join('/')}`,
       });
     }
   });
@@ -312,22 +320,22 @@ function getBreadcrumbName(locale: string, segment: string): string {
   const translations = {
     tr: {
       'tarot-okuma': 'Tarot Okuma',
-      'numeroloji': 'Numeroloji',
-      'panel': 'Panel',
-      'giris': 'Giriş'
+      numeroloji: 'Numeroloji',
+      panel: 'Panel',
+      giris: 'Giriş',
     },
     en: {
       'tarot-reading': 'Tarot Reading',
-      'numerology': 'Numerology', 
-      'dashboard': 'Dashboard',
-      'login': 'Login'
+      numerology: 'Numerology',
+      dashboard: 'Dashboard',
+      login: 'Login',
     },
     sr: {
       'tarot-citanje': 'Tarot Čitanje',
-      'numerologija': 'Numerologija',
-      'panel': 'Panel',
-      'prijava': 'Prijava'
-    }
+      numerologija: 'Numerologija',
+      panel: 'Panel',
+      prijava: 'Prijava',
+    },
   };
 
   return translations[locale]?.[segment] || segment;
@@ -352,22 +360,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/tr/anasayfa`, priority: 1.0 },
     { url: `${baseUrl}/en/home`, priority: 1.0 },
     { url: `${baseUrl}/sr/pocetna`, priority: 1.0 },
-    
+
     // Tarot sayfaları
     { url: `${baseUrl}/tr/tarot-okuma`, priority: 0.9 },
     { url: `${baseUrl}/en/tarot-reading`, priority: 0.9 },
     { url: `${baseUrl}/sr/tarot-citanje`, priority: 0.9 },
-    
+
     // Numeroloji sayfaları
     { url: `${baseUrl}/tr/numeroloji`, priority: 0.9 },
     { url: `${baseUrl}/en/numerology`, priority: 0.9 },
     { url: `${baseUrl}/sr/numerologija`, priority: 0.9 },
-    
+
     // Dashboard sayfaları
     { url: `${baseUrl}/tr/panel`, priority: 0.8 },
     { url: `${baseUrl}/en/dashboard`, priority: 0.8 },
     { url: `${baseUrl}/sr/panel`, priority: 0.8 },
-    
+
     // Auth sayfaları
     { url: `${baseUrl}/tr/giris`, priority: 0.7 },
     { url: `${baseUrl}/en/login`, priority: 0.7 },
@@ -390,7 +398,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 // src/app/robots.txt/route.ts
 export async function GET(): Promise<Response> {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://busbuskimki.com';
-  
+
   const robotsTxt = `User-agent: *
 Allow: /
 
@@ -444,24 +452,28 @@ Crawl-delay: 1`;
 ### 6. IMPLEMENTATION CHECKLIST
 
 #### 6.1 Hreflang Implementation
+
 - [ ] Layout.tsx'e hreflang alternates ekle
 - [ ] Her sayfa için locale-specific hreflang URLs
 - [ ] x-default hreflang (Türkçe ana dil)
 - [ ] Hreflang URL'lerin doğruluğunu test et
 
 #### 6.2 Canonical URLs
+
 - [ ] Her sayfa için canonical URL oluştur
 - [ ] Self-referencing canonical URLs
 - [ ] Duplicate content önleme
 - [ ] Canonical URL'lerin doğruluğunu test et
 
 #### 6.3 Structured Data
+
 - [ ] JSON-LD schema markup ekle
 - [ ] Breadcrumb structured data
 - [ ] WebPage schema
 - [ ] Organization schema (site-wide)
 
 #### 6.4 Sitemap & Robots
+
 - [ ] Sitemap.ts'i yeni URL'lerle güncelle
 - [ ] Robots.txt'i yeni URL'lerle güncelle
 - [ ] Sitemap'in doğruluğunu test et
@@ -470,12 +482,14 @@ Crawl-delay: 1`;
 ### 7. TESTING STRATEGY
 
 #### 7.1 SEO Testing Tools
+
 - **Google Search Console**: Hreflang ve canonical URL'leri doğrula
 - **Google Rich Results Test**: Structured data test et
 - **Screaming Frog**: URL yapısını analiz et
 - **Ahrefs/SEMrush**: SEO performansını izle
 
 #### 7.2 Manual Testing
+
 - [ ] Her dil için URL'lerin çalıştığını test et
 - [ ] Hreflang tag'lerin doğru olduğunu kontrol et
 - [ ] Canonical URL'lerin self-referencing olduğunu doğrula
@@ -484,15 +498,18 @@ Crawl-delay: 1`;
 ### 8. MONITORING & MAINTENANCE
 
 #### 8.1 SEO Monitoring
+
 - **Google Search Console**: Hreflang hatalarını izle
 - **Core Web Vitals**: Performans metriklerini takip et
 - **Crawl Errors**: 404 hatalarını kontrol et
 - **Index Coverage**: Yeni URL'lerin indexlenmesini izle
 
 #### 8.2 Maintenance Tasks
+
 - **Weekly**: Google Search Console hatalarını kontrol et
 - **Monthly**: Sitemap güncellemelerini yap
 - **Quarterly**: SEO performansını analiz et
 - **Annually**: URL yapısını gözden geçir
 
-Bu implementasyon, TaraTarot projesinin SEO performansını önemli ölçüde artıracak ve çoklu dil desteğini optimize edecektir.
+Bu implementasyon, Büşbüşkiki projesinin SEO performansını önemli ölçüde
+artıracak ve çoklu dil desteğini optimize edecektir.

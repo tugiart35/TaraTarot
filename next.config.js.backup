@@ -3,15 +3,14 @@ const withNextIntl = require('next-intl/plugin')(
   './src/lib/i18n/config.ts'
 );
 
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Workspace root ayarı - birden fazla lockfile uyarısını önler
   outputFileTracingRoot: __dirname,
-  // Image optimization
-  images: {
-    domains: ['localhost'],
-    unoptimized: true, // Geliştirme için görsel optimizasyonunu kapat
-  },
   // TypeScript configuration
   typescript: {
     ignoreBuildErrors: false,
@@ -20,50 +19,150 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // External packages for server components - Supabase çakışmasını önle
-  // serverExternalPackages: ['@supabase/supabase-js'],
+  // External packages for server components
+  serverExternalPackages: ['@supabase/supabase-js', 'html2canvas', 'jspdf', 'framer-motion', 'puppeteer'],
+  
   // Bundle optimization
   experimental: {
     optimizePackageImports: [
       'lucide-react',
-      'html2canvas',
-      'jspdf',
-      'framer-motion',
       'react-hook-form',
       'zod',
+      'next-intl',
+      '@heroicons/react',
+      'recharts',
     ],
+    // Performance optimizations
+    optimizeCss: true,
+    scrollRestoration: true,
+    optimizeServerReact: true,
+    serverMinification: true,
   },
-  // Development server configuration
-  // Force HTTP in development
-  async rewrites() {
-    return [
-      // Numerology URL mapping
-      {
-        source: '/numerology/:path*',
-        destination: '/numeroloji/:path*',
-      },
-      {
-        source: '/numerologija/:path*',
-        destination: '/numeroloji/:path*',
-      },
-      {
-        source: '/:locale(numerology|numerologija)/:path*',
-        destination: '/:locale/numeroloji/:path*',
-      },
-      {
-        source: '/:locale(tr|en|sr)/numerology/:path*',
-        destination: '/:locale/numeroloji/:path*',
-      },
-      {
-        source: '/:locale(tr|en|sr)/numerologija/:path*',
-        destination: '/:locale/numeroloji/:path*',
-      },
-      {
-        source: '/:path*',
-        destination: '/:path*',
-      },
-    ];
+
+  // Production optimizations
+  reactStrictMode: true,
+
+  // Static optimization
+  output: process.env.BUILD_STANDALONE === 'true' ? 'standalone' : undefined,
+
+  // Performance optimizations
+  compress: true,
+  poweredByHeader: false,
+
+  // Webpack optimizations
+  webpack: (config, { dev, isServer }) => {
+    // Bundle size optimization - <500KB hedefi için agresif optimizasyon
+    if (!dev && !isServer) {
+      config.optimization.splitChunks = {
+        chunks: 'all',
+        minSize: 5000, // 5KB minimum
+        maxSize: 50000, // 50KB maximum - çok agresif
+        cacheGroups: {
+          default: {
+            minChunks: 2,
+            priority: -20,
+            reuseExistingChunk: true,
+            maxSize: 50000,
+          },
+          vendor: {
+            test: /[\\/]node_modules[\\/]/,
+            name: 'vendors',
+            priority: -10,
+            chunks: 'all',
+            maxSize: 50000,
+          },
+          common: {
+            name: 'common',
+            minChunks: 2,
+            priority: -5,
+            reuseExistingChunk: true,
+            maxSize: 50000,
+          },
+          // Ağır bağımlılıkları ayrı chunk'lara ayır
+          supabase: {
+            test: /[\\/]node_modules[\\/]@supabase[\\/]/,
+            name: 'supabase',
+            priority: 20,
+            chunks: 'all',
+            maxSize: 30000, // 30KB
+          },
+          framer: {
+            test: /[\\/]node_modules[\\/]framer-motion[\\/]/,
+            name: 'framer',
+            priority: 20,
+            chunks: 'all',
+            maxSize: 20000, // 20KB
+          },
+          lucide: {
+            test: /[\\/]node_modules[\\/]lucide-react[\\/]/,
+            name: 'lucide',
+            priority: 20,
+            chunks: 'all',
+            maxSize: 15000, // 15KB
+          },
+          // PDF ve chart kütüphaneleri
+          pdf: {
+            test: /[\\/]node_modules[\\/](jspdf|html2canvas)[\\/]/,
+            name: 'pdf',
+            priority: 20,
+            chunks: 'all',
+            maxSize: 25000, // 25KB
+          },
+          charts: {
+            test: /[\\/]node_modules[\\/]recharts[\\/]/,
+            name: 'charts',
+            priority: 20,
+            chunks: 'all',
+            maxSize: 20000, // 20KB
+          },
+          // React ve Next.js optimizasyonu
+          react: {
+            test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
+            name: 'react',
+            priority: 30,
+            chunks: 'all',
+            maxSize: 50000, // 50KB
+          },
+          next: {
+            test: /[\\/]node_modules[\\/]next[\\/]/,
+            name: 'next',
+            priority: 30,
+            chunks: 'all',
+            maxSize: 50000, // 50KB
+          },
+        },
+      };
+    }
+
+    // Agresif tree shaking
+    config.optimization.sideEffects = false;
+    config.optimization.usedExports = true;
+    config.optimization.providedExports = true;
+    config.optimization.concatenateModules = true;
+    config.optimization.flagIncludedChunks = true;
+
+    // Kullanılmayan kodları temizle
+    config.optimization.removeEmptyChunks = true;
+    config.optimization.mergeDuplicateChunks = true;
+
+    return config;
   },
+
+  // Image optimization
+  images: {
+    domains: ['localhost'],
+    formats: ['image/webp', 'image/avif'],
+    minimumCacheTTL: 31536000, // 1 year
+    dangerouslyAllowSVG: false,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    // WebP formatını öncelikli olarak kullan
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+  },
+
+  // Note: Redirects and rewrites removed temporarily for debugging
+  // TODO: Add back after fixing webpack compilation issues
+
   // Development server settings - deprecated uyarısını kaldır
   // devIndicators: {
   //   buildActivity: false,
@@ -102,4 +201,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withNextIntl(nextConfig);
+module.exports = withBundleAnalyzer(withNextIntl(nextConfig));

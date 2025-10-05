@@ -53,25 +53,29 @@ const getSeoFriendlyPath = (locale: string, path: string): string => {
       '/tarotokumasi': '/tarot-okuma',
       '/numeroloji': '/numeroloji',
       '/dashboard': '/panel',
-      '/auth': '/giris'
+      '/auth': '/giris',
     },
     en: {
       '/': '/home',
       '/tarotokumasi': '/tarot-reading',
       '/numeroloji': '/numerology',
       '/dashboard': '/dashboard',
-      '/auth': '/login'
+      '/auth': '/login',
     },
     sr: {
       '/': '/pocetna',
       '/tarotokumasi': '/tarot-citanje',
       '/numeroloji': '/numerologija',
       '/dashboard': '/panel',
-      '/auth': '/prijava'
-    }
+      '/auth': '/prijava',
+    },
   };
-  
-  return mappings[locale]?.[path] || path;
+
+  const mapping = mappings[locale as keyof typeof mappings];
+  if (mapping && path in mapping) {
+    return mapping[path as keyof typeof mapping];
+  }
+  return path;
 };
 
 // Navigasyon öğelerini oluştur - auth durumuna göre dinamik
@@ -131,38 +135,6 @@ const getNavigationItems = (
   return baseItems;
 };
 
-// Dil değiştirme fonksiyonu - SEO-friendly URL mapping ile
-const changeLanguage = (locale: string, pathname: string): string => {
-  try {
-    // Mevcut path'i locale olmadan al - daha güvenli yöntem
-    let pathWithoutLocale = pathname;
-
-    // Eğer pathname locale ile başlıyorsa, onu kaldır
-    if (pathname.startsWith(`/${pathname.split('/')[1]}/`)) {
-      const currentLocale = pathname.split('/')[1];
-      pathWithoutLocale = pathname.substring(`/${currentLocale}`.length);
-    } else if (pathname === `/${pathname.split('/')[1]}`) {
-      pathWithoutLocale = '/';
-    }
-
-    // SEO-friendly path mapping uygula
-    const seoFriendlyPath = getSeoFriendlyPath(locale, pathWithoutLocale);
-    
-    // Yeni path oluştur - SEO-friendly URL kullan
-    const newPath = seoFriendlyPath === '/' 
-      ? `/${locale}${getSeoFriendlyPath(locale, '/')}` 
-      : `/${locale}${seoFriendlyPath}`;
-
-    // Cookie'yi güncelle - dil tercihini kaydet
-    document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=31536000; SameSite=Lax`;
-
-    return newPath;
-  } catch (error) {
-    // Silently handle language change errors
-    return `/${locale}${getSeoFriendlyPath(locale, '/')}`; // Fallback - ana sayfaya yönlendir
-  }
-};
-
 // Ana navigation hook
 export function useNavigation() {
   const pathname = usePathname();
@@ -201,9 +173,10 @@ export function useNavigation() {
       const seoFriendlyPath = getSeoFriendlyPath(locale, pathWithoutLocale);
 
       // Yeni path oluştur - SEO-friendly URL kullan
-      const newPath = seoFriendlyPath === '/'
-        ? `/${locale}${getSeoFriendlyPath(locale, '/')}`
-        : `/${locale}${seoFriendlyPath}`;
+      const newPath =
+        seoFriendlyPath === '/'
+          ? `/${locale}${getSeoFriendlyPath(locale, '/')}`
+          : `/${locale}${seoFriendlyPath}`;
 
       // Cookie'yi güncelle
       document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=31536000; SameSite=Lax`;
