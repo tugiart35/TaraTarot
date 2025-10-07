@@ -3,11 +3,21 @@ import Link from 'next/link';
 import Image from 'next/image';
 import BottomNavigation from '@/features/shared/layout/BottomNavigation';
 import Footer from '@/features/shared/layout/Footer';
+import { getCardName as getLocalizedCardName } from '@/lib/tarot/card-names';
+import { COURT_CARDS } from '@/lib/tarot/card-utils';
 
 interface PageProps {
   params: Promise<{
     locale: string;
   }>;
+}
+
+/**
+ * Generate static params for all supported locales
+ * This enables static page generation at build time
+ */
+export function generateStaticParams() {
+  return [{ locale: 'tr' }, { locale: 'en' }, { locale: 'sr' }];
 }
 
 export async function generateMetadata({
@@ -98,18 +108,19 @@ export default async function CardsPage({ params }: PageProps) {
 
   for (const suit of suits) {
     for (let number = 1; number <= 14; number++) {
-      if (number === 11) {
+      // Skip court card numbers - they are added separately below
+      if (number === COURT_CARDS.PAGE) {
         continue;
-      } // 11 yok, Page var
-      if (number === 12) {
+      }
+      if (number === COURT_CARDS.KNIGHT) {
         continue;
-      } // 12 yok, Knight var
-      if (number === 13) {
+      }
+      if (number === COURT_CARDS.QUEEN) {
         continue;
-      } // 13 yok, Queen var
-      if (number === 14) {
+      }
+      if (number === COURT_CARDS.KING) {
         continue;
-      } // 14 yok, King var
+      }
 
       minorArcanaCards.push({
         key: `${
@@ -328,8 +339,7 @@ export default async function CardsPage({ params }: PageProps) {
   };
 
   const getCardName = (cardKey: string) => {
-    // Basit bir fallback - gerçek implementasyon için CardMapping'e method eklenebilir
-    return cardKey.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+    return getLocalizedCardName(cardKey, currentLocale);
   };
 
   const getCardImage = (cardKey: string) => {
@@ -414,6 +424,16 @@ export default async function CardsPage({ params }: PageProps) {
       minorArcana: 'Minor Arcana (56 Kart)',
       viewCard: 'Kartı Görüntüle',
       totalCards: 'Toplam 78 Kart',
+      cardsCount: '✨ 78 Tarot Kartı',
+      majorArcanaCount: 'Major Arcana: 22',
+      minorArcanaCount: 'Minor Arcana: 56',
+      freeTarotBadge: '✨ Ücretsiz Tarot Okuması',
+      majorArcanaDescription: 'Ruhsal yolculuğunuzu temsil eden 22 ana kart',
+      minorArcanaDescription: 'Günlük yaşamınızı temsil eden 56 kart',
+      drawCardsTitle: 'Kartlarınızı Çekin ve Keşfedin',
+      drawCardsDescription:
+        'Ücretsiz tarot okuması ile kendi kartlarınızı çekin',
+      drawCardsButton: 'Tarot Okuması Yap',
     },
     en: {
       title: 'Tarot Cards',
@@ -422,6 +442,16 @@ export default async function CardsPage({ params }: PageProps) {
       minorArcana: 'Minor Arcana (56 Cards)',
       viewCard: 'View Card',
       totalCards: 'Total 78 Cards',
+      cardsCount: '✨ 78 Tarot Cards',
+      majorArcanaCount: 'Major Arcana: 22',
+      minorArcanaCount: 'Minor Arcana: 56',
+      freeTarotBadge: '✨ Free Tarot Reading',
+      majorArcanaDescription:
+        '22 main cards representing your spiritual journey',
+      minorArcanaDescription: '56 cards representing your daily life',
+      drawCardsTitle: 'Draw Your Cards and Discover',
+      drawCardsDescription: 'Draw your own cards with free tarot reading',
+      drawCardsButton: 'Get Tarot Reading',
     },
     sr: {
       title: 'Tarot Karte',
@@ -430,6 +460,17 @@ export default async function CardsPage({ params }: PageProps) {
       minorArcana: 'Minor Arcana (56 Karata)',
       viewCard: 'Pogledaj Kartu',
       totalCards: 'Ukupno 78 Karata',
+      cardsCount: '✨ 78 Tarot Karata',
+      majorArcanaCount: 'Major Arcana: 22',
+      minorArcanaCount: 'Minor Arcana: 56',
+      freeTarotBadge: '✨ Besplatno Tarot Čitanje',
+      majorArcanaDescription:
+        '22 glavne karte koje predstavljaju vaše duhovno putovanje',
+      minorArcanaDescription:
+        '56 karata koje predstavljaju vaš svakodnevni život',
+      drawCardsTitle: 'Izvucite Vaše Karte i Otkrijte',
+      drawCardsDescription: 'Izvucite svoje karte besplatnim tarot čitanjem',
+      drawCardsButton: 'Uradi Tarot Čitanje',
     },
   };
 
@@ -447,7 +488,7 @@ export default async function CardsPage({ params }: PageProps) {
           <div className='text-center'>
             <div className='inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6'>
               <span className='text-white/90 text-sm font-medium'>
-                ✨ 78 Tarot Cards
+                {t.cardsCount}
               </span>
             </div>
             <h1 className='text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent'>
@@ -461,10 +502,14 @@ export default async function CardsPage({ params }: PageProps) {
                 <span className='text-white font-medium'>{t.totalCards}</span>
               </div>
               <div className='bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20'>
-                <span className='text-white font-medium'>Major Arcana: 22</span>
+                <span className='text-white font-medium'>
+                  {t.majorArcanaCount}
+                </span>
               </div>
               <div className='bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20'>
-                <span className='text-white font-medium'>Minor Arcana: 56</span>
+                <span className='text-white font-medium'>
+                  {t.minorArcanaCount}
+                </span>
               </div>
             </div>
           </div>
@@ -484,11 +529,7 @@ export default async function CardsPage({ params }: PageProps) {
               {t.majorArcana}
             </h2>
             <p className='text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed'>
-              {currentLocale === 'tr'
-                ? 'Ruhsal yolculuğunuzu temsil eden 22 ana kart'
-                : currentLocale === 'en'
-                  ? '22 main cards representing your spiritual journey'
-                  : '22 glavne karte koje predstavljaju vaše duhovno putovanje'}
+              {t.majorArcanaDescription}
             </p>
           </div>
 
@@ -542,11 +583,7 @@ export default async function CardsPage({ params }: PageProps) {
               {t.minorArcana}
             </h2>
             <p className='text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed'>
-              {currentLocale === 'tr'
-                ? 'Günlük yaşamınızı temsil eden 56 kart'
-                : currentLocale === 'en'
-                  ? '56 cards representing your daily life'
-                  : '56 karata koje predstavljaju vaš svakodnevni život'}
+              {t.minorArcanaDescription}
             </p>
           </div>
 
@@ -659,32 +696,20 @@ export default async function CardsPage({ params }: PageProps) {
             <div className='relative z-10'>
               <div className='inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6'>
                 <span className='text-white/90 text-sm font-medium'>
-                  ✨ Free Tarot Reading
+                  {t.freeTarotBadge}
                 </span>
               </div>
               <h3 className='text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent'>
-                {currentLocale === 'tr'
-                  ? 'Kartlarınızı Çekin ve Keşfedin'
-                  : currentLocale === 'en'
-                    ? 'Draw Your Cards and Discover'
-                    : 'Izvucite Vaše Karte i Otkrijte'}
+                {t.drawCardsTitle}
               </h3>
               <p className='text-xl mb-8 opacity-90 max-w-3xl mx-auto leading-relaxed'>
-                {currentLocale === 'tr'
-                  ? 'Ücretsiz tarot okuması ile kendi kartlarınızı çekin'
-                  : currentLocale === 'en'
-                    ? 'Draw your own cards with free tarot reading'
-                    : 'Izvucite svoje karte besplatnim tarot čitanjem'}
+                {t.drawCardsDescription}
               </p>
               <Link
                 href={`/${currentLocale}/tarotokumasi`}
                 className='inline-flex items-center px-10 py-4 bg-white text-purple-600 font-bold rounded-2xl hover:bg-gray-100 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 hover:scale-105 text-lg'
               >
-                {currentLocale === 'tr'
-                  ? 'Tarot Okuması Yap'
-                  : currentLocale === 'en'
-                    ? 'Get Tarot Reading'
-                    : 'Uradi Tarot Čitanje'}
+                {t.drawCardsButton}
                 <svg
                   className='w-6 h-6 ml-3'
                   fill='none'
