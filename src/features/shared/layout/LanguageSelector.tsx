@@ -45,26 +45,40 @@ export function LanguageSelector({
       tr: {
         '/': '/anasayfa',
         '/anasayfa': '/anasayfa',
+        '/home': '/anasayfa',
+        '/pocetna': '/anasayfa',
         '/tarotokumasi': '/tarot-okuma',
         '/tarot-okuma': '/tarot-okuma',
+        '/tarot-reading': '/tarot-okuma', // İngilizce'den geçiş için
+        '/tarot-citanje': '/tarot-okuma', // Sırpça'dan geçiş için
         '/numeroloji': '/numeroloji',
+        '/numerology': '/numeroloji',
+        '/numerologija': '/numeroloji',
         '/dashboard': '/panel',
         '/panel': '/panel',
         '/auth': '/giris',
         '/giris': '/giris',
+        '/login': '/giris',
+        '/prijava': '/giris',
       },
       en: {
         '/': '/home',
         '/home': '/home',
         '/anasayfa': '/home',
+        '/pocetna': '/home',
         '/tarotokumasi': '/tarot-reading',
         '/tarot-reading': '/tarot-reading',
-        '/tarot-okuma': '/tarot-reading',
+        '/tarot-okuma': '/tarot-reading', // Türkçe'den geçiş için
+        '/tarot-citanje': '/tarot-reading', // Sırpça'dan geçiş için
         '/numeroloji': '/numerology',
         '/numerology': '/numerology',
+        '/numerologija': '/numerology',
         '/dashboard': '/dashboard',
+        '/panel': '/dashboard',
         '/auth': '/login',
         '/login': '/login',
+        '/giris': '/login',
+        '/prijava': '/login',
       },
       sr: {
         '/': '/pocetna',
@@ -73,8 +87,8 @@ export function LanguageSelector({
         '/home': '/pocetna',
         '/tarotokumasi': '/tarot-citanje',
         '/tarot-citanje': '/tarot-citanje',
-        '/tarot-okuma': '/tarot-citanje',
-        '/tarot-reading': '/tarot-citanje',
+        '/tarot-okuma': '/tarot-citanje', // Türkçe'den geçiş için
+        '/tarot-reading': '/tarot-citanje', // İngilizce'den geçiş için
         '/numeroloji': '/numerologija',
         '/numerologija': '/numerologija',
         '/numerology': '/numerologija',

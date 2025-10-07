@@ -1,0 +1,991 @@
+════════════════════════════════════════════════════════════════════════════════
+           📊 TRANSLATION DOSYASI ANALİZ RAPORU
+════════════════════════════════════════════════════════════════════════════════
+
+📈 ÖZET
+────────────────────────────────────────────────────────────────────────────────
+Toplam Anahtar Sayısı:       4215
+Kullanılan Anahtar:           0 (0.00%)
+Kullanılmayan Anahtar:        4215 (100.00%)
+Tekrar Eden Değer:            397
+Boş/Anlamsız Değer:           1
+Çok Uzun Değer:               18
+Analiz Tarihi:                08.10.2025 00:43:01
+Potansiyel Tasarruf:          4215 anahtar temizlenirse yaklaşık 206 KB tasarruf
+
+
+🔴 KULLANILMAYAN ANAHTARLAR (İlk 200)
+────────────────────────────────────────────────────────────────────────────────
+Bu anahtarlar kodda hiç kullanılmıyor ve silinebilir:
+
+1. accessibility.goToPage
+   "sayfasına git"
+
+2. accessibility.languageOptions
+   "Dil seçenekleri"
+
+3. accessibility.openLanguageMenu
+   "Dil seçici menüsünü aç"
+
+4. accessibility.selectLanguage
+   "dilini seç"
+
+5. accessibility.skipToMain
+   "Ana içeriğe geç"
+
+6. admin.errors.packagePurchaseError
+   "Paket satın alınırken bir hata oluştu. Lütfen tekrar deneyin..."
+
+7. admin.errors.positionRequired
+   "En az bir pozisyon eklemelisiniz"
+
+8. admin.errors.spreadSaveError
+   "Dizilim kaydedilirken hata oluştu"
+
+9. admin.success.profileUpdated
+   "Profil başarıyla güncellendi!"
+
+10. auth.audit.loginFailed
+   "Başarısız giriş denemesi"
+
+11. auth.audit.loginSuccess
+   "Başarılı giriş"
+
+12. auth.audit.logout
+   "Çıkış yapıldı"
+
+13. auth.audit.passwordChanged
+   "Şifre değiştirildi"
+
+14. auth.audit.paymentMethodAdded
+   "Ödeme yöntemi eklendi"
+
+15. auth.audit.paymentMethodRemoved
+   "Ödeme yöntemi kaldırıldı"
+
+16. auth.audit.profileUpdated
+   "Profil güncellendi"
+
+17. auth.audit.securityAlert
+   "Güvenlik uyarısı"
+
+18. auth.audit.subscriptionCanceled
+   "Abonelik iptal edildi"
+
+19. auth.audit.subscriptionCreated
+   "Abonelik oluşturuldu"
+
+20. auth.audit.suspiciousActivity
+   "Şüpheli aktivite tespit edildi"
+
+21. auth.errors.allLanguagesRequired
+   "Lütfen tüm dillerde isim girin"
+
+22. auth.errors.apiKeyCreateError
+   "API key oluşturulurken hata oluştu"
+
+23. auth.errors.apiKeyUpdateError
+   "API key güncellenirken hata oluştu"
+
+24. auth.errors.loginRequired
+   "Lütfen giriş yapın"
+
+25. auth.errors.userSelectionRequired
+   "Lütfen bir kullanıcı seçin"
+
+26. auth.notice.accountCreated
+   "Hesap başarıyla oluşturuldu"
+
+27. auth.notice.checkEmail
+   "E-posta adresinizi kontrol edin ve üyeliğinizi onaylayın"
+
+28. auth.notice.confirmationEmailSent
+   "Onay e-postası gönderildi"
+
+29. auth.notice.confirmationFailed
+   "E-posta onayı başarısız oldu"
+
+30. auth.notice.emailConfirmed
+   "E-posta adresiniz onaylandı! 100 kredi hediye edildi."
+
+31. auth.notice.emailVerified
+   "E-posta adresi doğrulandı"
+
+32. auth.notice.openEmailApp
+   "E-posta Uygulamasını Aç"
+
+33. auth.notice.openGmail
+   "Gmail'de Aç"
+
+34. auth.notice.openOutlook
+   "Outlook'ta Aç"
+
+35. auth.notice.openYahoo
+   "Yahoo Mail'de Aç"
+
+36. auth.notice.passwordChanged
+   "Şifre başarıyla değiştirildi"
+
+37. auth.notice.passwordResetSent
+   "Şifre sıfırlama bağlantısı gönderildi"
+
+38. auth.notice.profileUpdated
+   "Profil güncellendi"
+
+39. auth.page.backToLogin
+   "Giriş sayfasına dön"
+
+40. auth.page.birthDate
+   "Doğum Tarihi"
+
+41. auth.page.birthDateMaxAge
+   "Geçerli bir doğum tarihi girin"
+
+42. auth.page.birthDateMinAge
+   "13 yaşından küçük kullanıcılar kayıt olamaz"
+
+43. auth.page.birthDatePlaceholder
+   "Doğum Tarihi"
+
+44. auth.page.birthDateRequired
+   "Doğum tarihi gerekli"
+
+45. auth.page.cancel
+   "İptal"
+
+46. auth.page.checkingAuth
+   "🔍 Giriş durumu kontrol ediliyor…"
+
+47. auth.page.checkingEmail
+   "📧 E-posta kontrol ediliyor…"
+
+48. auth.page.confirmPassword
+   "Şifre Onayı"
+
+49. auth.page.confirmPasswordPlaceholder
+   "Şifrenizi tekrar girin"
+
+50. auth.page.confirmPasswordRequired
+   "Şifre onayı gerekli"
+
+51. auth.page.databaseError
+   "Veritabanı hatası oluştu"
+
+52. auth.page.email
+   "E-posta"
+
+53. auth.page.emailInvalid
+   "Geçerli bir e-posta adresi girin"
+
+54. auth.page.emailNotConfirmed
+   "E-posta adresi onaylanmamış"
+
+55. auth.page.emailPlaceholder
+   "E-posta adresiniz"
+
+56. auth.page.emailRequired
+   "E-posta adresi gerekli"
+
+57. auth.page.errorOccurred
+   "Bir hata oluştu"
+
+58. auth.page.facebookSignIn
+   "Facebook ile Giriş Yap"
+
+59. auth.page.facebookSignUp
+   "Facebook ile Kayıt Ol"
+
+60. auth.page.female
+   "Kadın"
+
+61. auth.page.firstName
+   "Ad"
+
+62. auth.page.forgotPassword
+   "Şifremi unuttum"
+
+63. auth.page.gender
+   "Cinsiyet"
+
+64. auth.page.genderFemale
+   "Kadın"
+
+65. auth.page.genderMale
+   "Erkek"
+
+66. auth.page.genderOther
+   "Diğer"
+
+67. auth.page.genderPlaceholder
+   "Cinsiyet seçin"
+
+68. auth.page.genderPreferNotToSay
+   "Belirtmek istemiyorum"
+
+69. auth.page.genderRequired
+   "Cinsiyet seçimi gerekli"
+
+70. auth.page.googleSignIn
+   "Google ile Giriş Yap"
+
+71. auth.page.googleSignUp
+   "Google ile Kayıt Ol"
+
+72. auth.page.hasAccount
+   "Zaten hesabınız var mı? Giriş yapın"
+
+73. auth.page.invalidCredentials
+   "Geçersiz e-posta veya şifre"
+
+74. auth.page.journeyStart
+   "Yolculuğa Başla"
+
+75. auth.page.lastName
+   "Soyad"
+
+76. auth.page.loggingIn
+   "🔐 Giriş yapılıyor…"
+
+77. auth.page.login
+   "Giriş Yap"
+
+78. auth.page.loginSubtitle
+   "Hesabınıza giriş yapın"
+
+79. auth.page.loginTitle
+   "Giriş Yap"
+
+80. auth.page.male
+   "Erkek"
+
+81. auth.page.mysticalEntry
+   "Mistik Dünyaya Giriş"
+
+82. auth.page.nameMinLength
+   "Ad en az 2 karakter olmalı"
+
+83. auth.page.namePlaceholder
+   "Ad"
+
+84. auth.page.nameRequired
+   "Ad gerekli"
+
+85. auth.page.noAccount
+   "Hesabınız yok mu? Kayıt olun"
+
+86. auth.page.orContinueWith
+   "veya şununla devam edin"
+
+87. auth.page.other
+   "Diğer"
+
+88. auth.page.password
+   "Şifre"
+
+89. auth.page.passwordMinLength
+   "Şifre en az 6 karakter olmalı"
+
+90. auth.page.passwordMismatch
+   "Şifreler eşleşmiyor"
+
+91. auth.page.passwordPlaceholder
+   "Şifreniz"
+
+92. auth.page.passwordRequired
+   "Şifre gerekli"
+
+93. auth.page.passwordsNotMatch
+   "Şifreler eşleşmiyor"
+
+94. auth.page.processing
+   "⏳ İşleniyor…"
+
+95. auth.page.redirecting
+   "Giriş sayfasına yönlendiriliyor…"
+
+96. auth.page.register
+   "Kayıt Ol"
+
+97. auth.page.registerSubtitle
+   "Yeni hesap oluşturun"
+
+98. auth.page.registerTitle
+   "Kayıt Ol"
+
+99. auth.page.registering
+   "📝 Kayıt oluşturuluyor…"
+
+100. auth.page.rememberMe
+   "Beni hatırla"
+
+101. auth.page.resetPassword
+   "Şifre Sıfırla"
+
+102. auth.page.resetPasswordEmailSent
+   "Şifre sıfırlama bağlantısı e-posta adresinize gönderildi"
+
+103. auth.page.resetPasswordError
+   "Şifre sıfırlama bağlantısı gönderilemedi"
+
+104. auth.page.resetPasswordSubtitle
+   "E-posta adresinizi girin, size şifre sıfırlama bağlantısı gö..."
+
+105. auth.page.resetPasswordTitle
+   "Şifre Sıfırlama"
+
+106. auth.page.selectGender
+   "Cinsiyet seçin"
+
+107. auth.page.sendResetEmail
+   "Sıfırlama E-postası Gönder"
+
+108. auth.page.signIn
+   "🔮 Giriş Yap"
+
+109. auth.page.signUp
+   "✨ Kayıt Ol"
+
+110. auth.page.successLogin
+   "Giriş başarılı! Yönlendiriliyor…"
+
+111. auth.page.successRegister
+   "Kayıt başarılı! Lütfen e-postanızı kontrol edin."
+
+112. auth.page.surnameMinLength
+   "Soyad en az 2 karakter olmalı"
+
+113. auth.page.surnamePlaceholder
+   "Soyad"
+
+114. auth.page.surnameRequired
+   "Soyad gerekli"
+
+115. auth.page.userAlreadyExists
+   "Bu e-posta adresi zaten kayıtlı"
+
+116. auth.page.validating
+   "🔍 Doğrulanıyor…"
+
+117. auth.page.waiting
+   "⏳ Bekleniyor…"
+
+118. auth.permissions.accessDenied
+   "Bu sayfaya erişim yetkiniz yok"
+
+119. auth.permissions.adminOnly
+   "Bu özellik sadece yöneticiler için"
+
+120. auth.permissions.contactAdmin
+   "Yönetici ile iletişime geçin"
+
+121. auth.permissions.insufficientPermissions
+   "Bu işlem için yeterli yetkiniz yok"
+
+122. auth.permissions.loginRequired
+   "Bu sayfaya erişmek için giriş yapmalısınız"
+
+123. auth.permissions.premiumRequired
+   "Bu özellik premium üyeler için"
+
+124. auth.permissions.subscriptionRequired
+   "Bu özellik için abonelik gerekli"
+
+125. auth.permissions.upgradeAccount
+   "Hesabınızı yükseltin"
+
+126. auth.pwa.backgroundSync
+   "Arka Plan Senkronizasyonu"
+
+127. auth.pwa.enableNotifications
+   "Bildirimleri Etkinleştir"
+
+128. auth.pwa.installButton
+   "Yükle"
+
+129. auth.pwa.installDescription
+   "Daha hızlı erişim için uygulamayı ana ekranınıza ekleyin"
+
+130. auth.pwa.installLater
+   "Daha Sonra"
+
+131. auth.pwa.installPrompt
+   "Uygulamayı Ana Ekrana Ekle"
+
+132. auth.pwa.notificationDenied
+   "Bildirim izni reddedildi"
+
+133. auth.pwa.notificationPermission
+   "Bildirim izni gerekli"
+
+134. auth.pwa.offlineMessage
+   "İnternet bağlantınız yok. Bazı özellikler sınırlı olabilir."
+
+135. auth.pwa.offlineMode
+   "Çevrimdışı Mod"
+
+136. auth.pwa.pushNotifications
+   "Bildirimler"
+
+137. auth.pwa.syncWhenOnline
+   "Çevrimiçi olduğunuzda senkronize edilecek"
+
+138. auth.roles.accessDenied
+   "Bu sayfaya erişim yetkiniz yok"
+
+139. auth.roles.admin
+   "Yönetici"
+
+140. auth.roles.contactAdmin
+   "Yönetici ile iletişime geçin"
+
+141. auth.roles.guest
+   "Misafir"
+
+142. auth.roles.insufficientPermissions
+   "Bu işlem için yeterli yetkiniz yok"
+
+143. auth.roles.premium
+   "Premium Üye"
+
+144. auth.roles.upgradeAccount
+   "Hesabınızı yükseltin"
+
+145. auth.roles.user
+   "Kullanıcı"
+
+146. auth.security.accountLocked
+   "Hesabınız geçici olarak kilitlendi. Lütfen daha sonra tekrar..."
+
+147. auth.security.biometricAuth
+   "Biyometrik Kimlik Doğrulama"
+
+148. auth.security.biometricFailed
+   "Biyometrik kimlik doğrulama başarısız oldu"
+
+149. auth.security.biometricNotAvailable
+   "Biyometrik kimlik doğrulama mevcut değil"
+
+150. auth.security.faceIdAuth
+   "Face ID ile Giriş"
+
+151. auth.security.fingerprintAuth
+   "Parmak İzi ile Giriş"
+
+152. auth.security.rateLimitExceeded
+   "Çok fazla deneme yapıldı. Lütfen daha sonra tekrar deneyin."
+
+153. auth.security.sessionExpired
+   "Oturumunuzun süresi doldu. Lütfen tekrar giriş yapın."
+
+154. auth.security.suspiciousActivity
+   "Şüpheli aktivite tespit edildi. Hesabınız güvenlik için kili..."
+
+155. auth.security.twoFactorCode
+   "Doğrulama kodu"
+
+156. auth.security.twoFactorCodeExpired
+   "Doğrulama kodunun süresi doldu"
+
+157. auth.security.twoFactorCodeInvalid
+   "Geçersiz doğrulama kodu"
+
+158. auth.security.twoFactorCodePlaceholder
+   "6 haneli doğrulama kodunu girin"
+
+159. auth.security.twoFactorCodeSent
+   "Doğrulama kodu e-posta adresinize gönderildi"
+
+160. auth.security.twoFactorRequired
+   "İki faktörlü kimlik doğrulama gerekli"
+
+161. auth.signIn
+   "Giriş Yap"
+
+162. auth.signOut
+   "Çıkış Yap"
+
+163. cardGroups.cups
+   "Kupalar"
+
+164. cardGroups.majorArcana
+   "Majör Arkana"
+
+165. cardGroups.pentacles
+   "Tılsımlar"
+
+166. cardGroups.swords
+   "Kılıçlar"
+
+167. cardGroups.wands
+   "Asalar"
+
+168. cards.altText
+   "Tarot Kartı"
+
+169. cards.reversed
+   "Ters"
+
+170. cards.reversedMeaning
+   "Ters Anlam:"
+
+171. cards.upright
+   "Düz"
+
+172. cards.uprightMeaning
+   "Düz Anlam:"
+
+173. career.data.badgeText
+   "KARİYER"
+
+174. career.data.cardDirections.reversed
+   "Ters"
+
+175. career.data.cardDirections.upright
+   "Düz"
+
+176. career.data.detailedTitle
+   "Kariyer Açılımı - Detaylı Kişisel Okuma"
+
+177. career.data.interpretationTitle
+   "Kariyer Açılımı Yorumu"
+
+178. career.data.readingFormats.detailed
+   "Sesli"
+
+179. career.data.readingFormats.simple
+   "Basit"
+
+180. career.data.readingFormats.written
+   "Yazılı"
+
+181. career.data.simpleInterpretation
+   "Basit okuma - sadece sayaç"
+
+182. career.data.simpleTitle
+   "Basit Okuma"
+
+183. career.data.spreadName
+   "Kariyer Yayılımı"
+
+184. career.data.spreadTitle
+   "Kariyer Açılımı"
+
+185. career.form.birthDate
+   "Doğum Tarihi"
+
+186. career.form.clearAll
+   "Tüm Kartları Temizle"
+
+187. career.form.communicationMethod
+   "İletişim Yöntemi"
+
+188. career.form.concernQuestion
+   "Kariyer konusunda en çok endişelendiğiniz şey nedir?"
+
+189. career.form.email
+   "E-posta"
+
+190. career.form.emailCommunication
+   "E-posta"
+
+191. career.form.emotionalQuestion
+   "Kariyer konusunda hangi duygusal engelleri yaşıyorsunuz?"
+
+192. career.form.firstName
+   "Ad"
+
+193. career.form.lastName
+   "Soyad"
+
+194. career.form.personalInfo
+   "Kişisel Bilgiler"
+
+195. career.form.phone
+   "Telefon Numarası"
+
+196. career.form.placeholders.concernQuestion
+   "İşim beni mutlu ediyor mu, doğru yolda mıyım?…"
+
+197. career.form.placeholders.email
+   "ornek@email.com"
+
+198. career.form.placeholders.emotionalQuestion
+   "Başarısız olma korkusu, yeterince iyi değilim düşüncesi…"
+
+199. career.form.placeholders.firstName
+   "Adınız"
+
+200. career.form.placeholders.lastName
+   "Soyadınız"
+
+
+... ve 4015 anahtar daha.
+Tam liste için JSON raporuna bakın.
+
+🟡 TEKRAR EDEN DEĞERLER (En Çok Tekrar Edenler - İlk 30)
+────────────────────────────────────────────────────────────────────────────────
+Aynı değer birden fazla anahtarda kullanılıyor.
+Bunları birleştirerek yönetimi kolaylaştırabilirsiniz:
+
+1. "E-posta"
+   17 farklı anahtarda kullanılıyor:
+   • auth.page.email
+   • career.form.email
+   • career.form.emailCommunication
+   • database.fields.email
+   • love.form.emailCommunication
+   ... ve 12 anahtar daha
+
+2. "Kaydediliyor…"
+   17 farklı anahtarda kullanılıyor:
+   • career.form.saving
+   • career.modals.savingReading
+   • love.form.saving
+   • love.modals.savingReading
+   • marriage.credit.saving
+   ... ve 12 anahtar daha
+
+3. "Doğum Tarihi"
+   13 farklı anahtarda kullanılıyor:
+   • auth.page.birthDate
+   • auth.page.birthDatePlaceholder
+   • career.form.birthDate
+   • database.fields.birthDate
+   • love.form.birthDate
+   ... ve 8 anahtar daha
+
+4. "Devam Et"
+   13 farklı anahtarda kullanılıyor:
+   • career.modals.continue
+   • love.modals.continue
+   • marriage.form.continue
+   • marriage.modals.continue
+   • messages.common.continue
+   ... ve 8 anahtar daha
+
+5. "Kredi Onayı"
+   11 farklı anahtarda kullanılıyor:
+   • career.modals.creditConfirm
+   • love.modals.creditConfirm
+   • marriage.credit.title
+   • marriage.modals.creditConfirm
+   • money.modals.creditConfirm
+   ... ve 6 anahtar daha
+
+6. "İptal"
+   10 farklı anahtarda kullanılıyor:
+   • auth.page.cancel
+   • marriage.credit.cancel
+   • marriage.form.cancel
+   • messages.common.cancel
+   • messages.dashboard.cancel
+   ... ve 5 anahtar daha
+
+7. "Ters"
+   10 farklı anahtarda kullanılıyor:
+   • cards.reversed
+   • career.data.cardDirections.reversed
+   • messages.common.reversed
+   • problemSolving.data.cardDirections.reversed
+   • problemSolving.data.reversed
+   ... ve 5 anahtar daha
+
+8. "Adınız"
+   10 farklı anahtarda kullanılıyor:
+   • career.form.placeholders.firstName
+   • love.form.firstName
+   • marriage.form.firstName
+   • marriage.form.name
+   • newLover.form.name
+   ... ve 5 anahtar daha
+
+9. "Soyadınız"
+   10 farklı anahtarda kullanılıyor:
+   • career.form.placeholders.lastName
+   • love.form.lastName
+   • marriage.form.lastName
+   • marriage.form.surname
+   • newLover.form.surname
+   ... ve 5 anahtar daha
+
+10. "WhatsApp"
+   10 farklı anahtarda kullanılıyor:
+   • career.form.whatsappCommunication
+   • love.form.whatsappCommunication
+   • marriage.form.whatsappCommunication
+   • marriage.modals.whatsappCommunication
+   • newLover.form.whatsappCommunication
+   ... ve 5 anahtar daha
+
+11. "Sesli Okuma"
+   10 farklı anahtarda kullanılıyor:
+   • career.modals.detailedReading
+   • love.modals.detailedReading
+   • marriage.modals.detailedReading
+   • money.modals.detailedReading
+   • newLover.modals.detailedReading
+   ... ve 5 anahtar daha
+
+12. "İşleniyor…"
+   10 farklı anahtarda kullanılıyor:
+   • career.modals.processing
+   • love.modals.processing
+   • marriage.modals.processing
+   • messages.dashboard.packages.processing
+   • money.modals.processing
+   ... ve 5 anahtar daha
+
+13. "Yazılı Okuma"
+   10 farklı anahtarda kullanılıyor:
+   • career.modals.writtenReading
+   • love.modals.writtenReading
+   • marriage.modals.writtenReading
+   • money.modals.writtenReading
+   • newLover.modals.writtenReading
+   ... ve 5 anahtar daha
+
+14. "Soyad"
+   9 farklı anahtarda kullanılıyor:
+   • auth.page.lastName
+   • auth.page.surnamePlaceholder
+   • career.form.lastName
+   • database.fields.lastName
+   • database.fields.surname
+   ... ve 4 anahtar daha
+
+15. "Sesli"
+   9 farklı anahtarda kullanılıyor:
+   • career.data.readingFormats.detailed
+   • problemSolving.data.readingFormats.detailed
+   • reading.types.detailed
+   • reading.types.detailedShort
+   • relationshipAnalysis.data.readingFormats.detailed
+   ... ve 4 anahtar daha
+
+16. "Yazılı"
+   9 farklı anahtarda kullanılıyor:
+   • career.data.readingFormats.written
+   • problemSolving.data.readingFormats.written
+   • reading.types.written
+   • reading.types.writtenShort
+   • relationshipAnalysis.data.readingFormats.written
+   ... ve 4 anahtar daha
+
+17. "Süreç"
+   9 farklı anahtarda kullanılıyor:
+   • career.modals.process
+   • love.modals.process
+   • marriage.modals.process
+   • money.modals.process
+   • newLover.modals.process
+   ... ve 4 anahtar daha
+
+18. "Basit"
+   8 farklı anahtarda kullanılıyor:
+   • career.data.readingFormats.simple
+   • problemSolving.data.readingFormats.simple
+   • reading.types.simple
+   • reading.types.simpleShort
+   • relationshipAnalysis.data.readingFormats.simple
+   ... ve 3 anahtar daha
+
+19. "Okumanız başarıyla kaydedildi!"
+   8 farklı anahtarda kullanılıyor:
+   • career.messages.readingSavedSuccess
+   • messages.readings.readingSavedSuccess
+   • problemSolving.messages.readingSavedSuccessfully
+   • relationshipProblems.messeages.readingSavedSuccess
+   • relationshipProblems.messeages.readingSavedSuccessfully
+   ... ve 3 anahtar daha
+
+20. "Vazgeç"
+   8 farklı anahtarda kullanılıyor:
+   • career.modals.cancel
+   • love.modals.cancel
+   • marriage.modals.cancel
+   • newLover.modals.cancel
+   • problemSolving.modals.cancel
+   ... ve 3 anahtar daha
+
+21. "Nazik Bir Not"
+   8 farklı anahtarda kullanılıyor:
+   • career.modals.loveAttentionInfo
+   • love.modals.loveAttentionInfo
+   • marriage.modals.loveAttentionInfo
+   • newLover.modals.loveAttentionInfo
+   • problemSolving.modals.loveAttentionInfo
+   ... ve 3 anahtar daha
+
+22. "Açılım Hakkında"
+   8 farklı anahtarda kullanılıyor:
+   • love.modals.aboutSpread
+   • marriage.modals.aboutSpread
+   • money.modals.aboutSpread
+   • newLover.modals.aboutSpread
+   • problemSolving.modals.aboutSpread
+   ... ve 3 anahtar daha
+
+23. "Durum Analizi Açılımı"
+   8 farklı anahtarda kullanılıyor:
+   • messages.readings.situationAnalysisReading
+   • messages.readings.situationAnalysisSpread
+   • readings.situationAnalysisReading
+   • situationAnalysis.data.defaultTitle
+   • situationAnalysis.data.spreadName
+   ... ve 3 anahtar daha
+
+24. "İletişim Yöntemi"
+   7 farklı anahtarda kullanılıyor:
+   • career.form.communicationMethod
+   • marriage.form.communicationMethod
+   • marriage.modals.communicationMethod
+   • problemSolving.form.communicationMethod
+   • relationshipAnalysis.form.communicationMethod
+   ... ve 2 anahtar daha
+
+25. "Okuma kaydedilirken bir hata oluştu."
+   7 farklı anahtarda kullanılıyor:
+   • career.messages.readingSaveError
+   • love.messages.readingSaveError
+   • problemSolving.messages.readingSaveError
+   • relationshipProblems.messeages.readingSaveError
+   • situationAnalysis.messages.readingSaveError
+   ... ve 2 anahtar daha
+
+26. "Evet, Onaylıyorum"
+   7 farklı anahtarda kullanılıyor:
+   • career.modals.confirm
+   • love.modals.confirm
+   • newLover.modals.confirm
+   • problemSolving.modals.confirm
+   • relationshipAnalysis.modals.confirm
+   ... ve 2 anahtar daha
+
+27. "Numeroloji Analizi"
+   7 farklı anahtarda kullanılıyor:
+   • home.services.numerology.button
+   • home.services.numerology.title
+   • homepage.services.numerology.button
+   • homepage.services.numerology.title
+   • numerology.page.results.subtitle
+   ... ve 2 anahtar daha
+
+28. "Aşk Açılımı"
+   7 farklı anahtarda kullanılıyor:
+   • interpretation.loveReading
+   • love.data.spreadName
+   • love.data.spreadTitle
+   • readingModal.loveSpread
+   • readingModal.loveSpreadName
+   ... ve 2 anahtar daha
+
+29. "E-posta Adresiniz"
+   7 farklı anahtarda kullanılıyor:
+   • love.form.email
+   • marriage.form.email
+   • newLover.form.email
+   • problemSolving.form.email
+   • relationshipAnalysis.form.email
+   ... ve 2 anahtar daha
+
+30. "Kapat"
+   7 farklı anahtarda kullanılıyor:
+   • marriage.info.close
+   • messages.common.close
+   • messages.dashboard.readingsPage.detailModal.close
+   • numerology.page.close
+   • problemSolving.form.close
+   ... ve 2 anahtar daha
+
+
+⚪ BOŞ VEYA ANLAMSIZ DEĞERLER
+────────────────────────────────────────────────────────────────────────────────
+Bu anahtarların değerleri eksik veya anlamsız:
+
+• technical.symbols.dash: "-"
+
+📏 ÇOK UZUN DEĞERLER (>500 karakter)
+────────────────────────────────────────────────────────────────────────────────
+Bu değerler çok uzun, ayrı bir dosyaya taşınabilir:
+
+• love.meanings.thefool.position1.upright (54545 karakter)
+  "İlgi duyduğun kişi, hayata karşı çocuksu bir merak ve heyecanla dolu. Yeni başlangıçlara açık, macer..."
+
+• numerology.birthdayMeanings.1 (694 karakter)
+  "Doğum günü sayısı 1 olan kişiler güçlü bir bireysellik duygusuyla dünyaya gelirler. Hayatın erken dö..."
+
+• numerology.birthdayMeanings.2 (580 karakter)
+  "Doğum günü sayısı 2 olanlar uyum, denge ve ilişkiler üzerine kurulu bir enerjiyle dünyaya gelirler. ..."
+
+• numerology.birthdayMeanings.3 (555 karakter)
+  "Doğum günü 3 olan kişiler hayatın sahnesine yaratıcı, enerjik ve neşeli bir ruhla gelirler. Onların ..."
+
+• numerology.birthdayMeanings.4 (542 karakter)
+  "Doğum günü sayısı 4 olanlar düzen, disiplin ve yapı getiren kişilerdir. Onlar güvenilir, çalışkan ve..."
+
+• numerology.birthdayMeanings.5 (539 karakter)
+  "Doğum günü sayısı 5 olanlar özgürlüğün, maceranın ve değişimin temsilcileridir. Onlar sürekli yeni d..."
+
+• numerology.birthdayMeanings.6 (511 karakter)
+  "Doğum günü 6 olan kişiler sevgi, uyum ve sorumluluk enerjisi taşır. Onlar ailelerine, dostlarına ve ..."
+
+• numerology.expressionMeanings.1 (576 karakter)
+  "1 numaralı ifade 1 bireyler hayatlarını güçlü liderlik ve bireysellik enerjisi ile yönlendirir. 
+Yar..."
+
+• numerology.expressionMeanings.3 (515 karakter)
+  "3 numaralı ifade bireyler yaratıcılık, iletişim ve sevinç enerjisi ile parlar. 
+Yazma, konuşma, sana..."
+
+• numerology.lifePathMeanings.1 (601 karakter)
+  "Yaşam Yolu 1 birey liderlik, bağımsızlık ve öncü enerji ile hayata geçer. 
+Kendi yollarını çizme, ye..."
+
+• numerology.lifePathMeanings.2 (559 karakter)
+  "Yaşam Yolu 2 birey dünyaya uyum, diplomasi ve hassasiyetle gelir. 
+Arabuluculukta güçlü bir yeteneğe..."
+
+• numerology.lifePathMeanings.3 (544 karakter)
+  "Yaşam Yolu 3 birey yaratıcı, enerjik ve neşeli bir ruhla canlanır. 
+İfade, iletişim ve sanat onlar i..."
+
+• numerology.lifePathMeanings.4 (534 karakter)
+  "Yaşam Yolu 4 birey düzen, disiplin ve yapı getiren enerji ile yaşar. 
+Sabırlı, çalışkan ve güvenilir..."
+
+• numerology.lifePathMeanings.5 (529 karakter)
+  "Yaşam Yolu 5 birey özgürlük, macera ve değişimin temsilcileridir. 
+Sürekli bir keşif arayışı ile hay..."
+
+• numerology.lifePathMeanings.6 (515 karakter)
+  "Yaşam Yolu 6 birey sorumluluk, aile ve aşk enerjisi ile canlanır. 
+Başkalarına yardım etmek, adapte ..."
+
+• numerology.lifePathMeanings.9 (526 karakter)
+  "Yaşam Yolu 9 birey şefkat, idealizm ve insanlığa olan sevgi ile hareket eder. 
+Dünyayı daha iyi bir ..."
+
+• numerology.maturityMeanings.1 (541 karakter)
+  "Olgunluk sayısı 1 olan kişiler, yaşamlarının ikinci yarısında bağımsızlık, liderlik ve kendi yolları..."
+
+• blog.cards.the-fool.context.mythology (647 karakter)
+  "Deli (Joker), Majör Arkana’nın ilk kartı olarak yaratımın sıfır noktasını temsil eder. O, ruhun düny..."
+
+
+════════════════════════════════════════════════════════════════════════════════
+💡 TAVSİYELER
+════════════════════════════════════════════════════════════════════════════════
+
+✂️  4215 kullanılmayan anahtar var.
+   Bunları silerek dosya boyutunu küçültün ve yönetimi kolaylaştırın.
+
+🔄 397 tekrar eden değer var.
+   Bunları birleştirerek tek bir anahtarda toplayabilirsiniz.
+
+⚠️  1 boş/anlamsız değer var.
+   Bu anahtarları doldurun veya kaldırın.
+
+
+════════════════════════════════════════════════════════════════════════════════
+Rapor Sonu - 08.10.2025 00:43:01
+════════════════════════════════════════════════════════════════════════════════

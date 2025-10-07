@@ -5,9 +5,9 @@ import dynamic from 'next/dynamic';
 // Skeleton component for loading state
 export function ChartSkeleton() {
   return (
-    <div className="w-full h-[250px] md:h-[300px] animate-pulse">
-      <div className="w-full h-full bg-slate-700/30 rounded-lg flex items-center justify-center">
-        <div className="text-slate-400">Chart yükleniyor...</div>
+    <div className='w-full h-[250px] md:h-[300px] animate-pulse'>
+      <div className='w-full h-full bg-slate-700/30 rounded-lg flex items-center justify-center'>
+        <div className='text-slate-400'>Chart yükleniyor...</div>
       </div>
     </div>
   );

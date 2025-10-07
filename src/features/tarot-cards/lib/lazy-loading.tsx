@@ -53,7 +53,9 @@ export function useLazyImage(
 
   useEffect(() => {
     const img = imgRef.current;
-    if (!img) return;
+    if (!img) {
+      return;
+    }
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -88,7 +90,7 @@ export function useLazyImage(
     isInView,
     hasError,
     handleLoad,
-    handleError
+    handleError,
   };
 }
 
@@ -110,7 +112,9 @@ export function useLazyComponent(
 
   useEffect(() => {
     const element = ref.current;
-    if (!element) return;
+    if (!element) {
+      return;
+    }
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -149,19 +153,13 @@ export function LazyImage({
   className = '',
   placeholder,
   onLoad,
-  onError
+  onError,
 }: LazyImageProps) {
-  const {
-    imgRef,
-    isLoaded,
-    isInView,
-    hasError,
-    handleLoad,
-    handleError
-  } = useLazyImage(src, {
-    threshold: 0.1,
-    rootMargin: '50px'
-  });
+  const { imgRef, isLoaded, isInView, hasError, handleLoad, handleError } =
+    useLazyImage(src, {
+      threshold: 0.1,
+      rootMargin: '50px',
+    });
 
   const handleImageLoad = useCallback(() => {
     handleLoad();
@@ -182,17 +180,17 @@ export function LazyImage({
       {/* Placeholder */}
       {!isLoaded && !hasError && (
         <div
-          className="absolute inset-0 bg-gray-200 animate-pulse flex items-center justify-center"
+          className='absolute inset-0 bg-gray-200 animate-pulse flex items-center justify-center'
           style={{ width, height }}
         >
           {placeholder ? (
             <img
               src={placeholder}
-              alt=""
-              className="w-full h-full object-cover opacity-50"
+              alt=''
+              className='w-full h-full object-cover opacity-50'
             />
           ) : (
-            <div className="w-8 h-8 bg-gray-300 rounded"></div>
+            <div className='w-8 h-8 bg-gray-300 rounded'></div>
           )}
         </div>
       )}
@@ -209,20 +207,20 @@ export function LazyImage({
           }`}
           onLoad={handleImageLoad}
           onError={handleImageError}
-          loading="lazy"
-          decoding="async"
+          loading='lazy'
+          decoding='async'
         />
       )}
 
       {/* Error state */}
       {hasError && (
         <div
-          className="absolute inset-0 bg-gray-100 flex items-center justify-center"
+          className='absolute inset-0 bg-gray-100 flex items-center justify-center'
           style={{ width, height }}
         >
-          <div className="text-center text-gray-500">
-            <div className="w-8 h-8 mx-auto mb-2">📷</div>
-            <p className="text-sm">Image failed to load</p>
+          <div className='text-center text-gray-500'>
+            <div className='w-8 h-8 mx-auto mb-2'>📷</div>
+            <p className='text-sm'>Image failed to load</p>
           </div>
         </div>
       )}
@@ -237,19 +235,17 @@ export function LazyComponent({
   children,
   fallback,
   threshold = 0.1,
-  rootMargin = '100px'
+  rootMargin = '100px',
 }: LazyComponentProps) {
   const { ref, isVisible } = useLazyComponent({
     threshold,
-    rootMargin
+    rootMargin,
   });
 
   return (
     <div ref={ref}>
       {isVisible ? (
-        <div className="animate-fade-in">
-          {children}
-        </div>
+        <div className='animate-fade-in'>{children}</div>
       ) : (
         fallback || <DefaultLazyFallback />
       )}
@@ -268,7 +264,7 @@ export function ProgressiveImage({
   className = '',
   lowQualitySrc,
   onLoad,
-  onError
+  onError,
 }: LazyImageProps & { lowQualitySrc?: string }) {
   const [currentSrc, setCurrentSrc] = useState(lowQualitySrc || '');
   const [isHighQualityLoaded, setIsHighQualityLoaded] = useState(false);
@@ -278,10 +274,10 @@ export function ProgressiveImage({
     isInView,
     hasError,
     handleLoad,
-    handleError
+    handleError,
   } = useLazyImage(src, {
     threshold: 0.1,
-    rootMargin: '50px'
+    rootMargin: '50px',
   });
 
   useEffect(() => {
@@ -316,7 +312,7 @@ export function ProgressiveImage({
           alt={alt}
           width={width}
           height={height}
-          className="absolute inset-0 w-full h-full object-cover filter blur-sm"
+          className='absolute inset-0 w-full h-full object-cover filter blur-sm'
         />
       )}
 
@@ -332,20 +328,20 @@ export function ProgressiveImage({
           }`}
           onLoad={handleImageLoad}
           onError={handleImageError}
-          loading="lazy"
-          decoding="async"
+          loading='lazy'
+          decoding='async'
         />
       )}
 
       {/* Error state */}
       {hasError && (
         <div
-          className="absolute inset-0 bg-gray-100 flex items-center justify-center"
+          className='absolute inset-0 bg-gray-100 flex items-center justify-center'
           style={{ width, height }}
         >
-          <div className="text-center text-gray-500">
-            <div className="w-8 h-8 mx-auto mb-2">📷</div>
-            <p className="text-sm">Image failed to load</p>
+          <div className='text-center text-gray-500'>
+            <div className='w-8 h-8 mx-auto mb-2'>📷</div>
+            <p className='text-sm'>Image failed to load</p>
           </div>
         </div>
       )}
@@ -362,15 +358,15 @@ export const LAZY_LOADING_CONFIG: LazyLoadingConfig = {
   delay: 0,
   placeholder: true,
   progressive: true,
-  preload: true
+  preload: true,
 };
 
 /**
  * Default fallback component
  */
 const DefaultLazyFallback = () => (
-  <div className="flex items-center justify-center p-4">
-    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+  <div className='flex items-center justify-center p-4'>
+    <div className='animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600'></div>
   </div>
 );
 
@@ -396,7 +392,7 @@ export class LazyLoadingUtils {
       onMouseEnter: () => {
         const img = new Image();
         img.src = imageUrl;
-      }
+      },
     };
   }
 
@@ -408,7 +404,7 @@ export class LazyLoadingUtils {
       onFocus: () => {
         const img = new Image();
         img.src = imageUrl;
-      }
+      },
     };
   }
 
@@ -419,7 +415,7 @@ export class LazyLoadingUtils {
     return sizes.map(size => ({
       src: `${baseSrc}?w=${size}`,
       width: size,
-      media: `(max-width: ${size}px)`
+      media: `(max-width: ${size}px)`,
     }));
   }
 
@@ -430,13 +426,13 @@ export class LazyLoadingUtils {
     const webpSources = sizes.map(size => ({
       src: `${baseSrc.replace('.jpg', '.webp')}?w=${size}`,
       width: size,
-      type: 'image/webp'
+      type: 'image/webp',
     }));
 
     const fallbackSources = sizes.map(size => ({
       src: `${baseSrc}?w=${size}`,
       width: size,
-      type: 'image/jpeg'
+      type: 'image/jpeg',
     }));
 
     return [...webpSources, ...fallbackSources];
@@ -447,11 +443,16 @@ export class LazyLoadingUtils {
    */
   static monitorLazyLoading() {
     if (typeof window !== 'undefined') {
-      const observer = new PerformanceObserver((list) => {
+      const observer = new PerformanceObserver(list => {
         for (const entry of list.getEntries()) {
-          if (entry.entryType === 'resource' && entry.name.includes('/cards/rws/')) {
+          if (
+            entry.entryType === 'resource' &&
+            entry.name.includes('/cards/rws/')
+          ) {
             const resource = entry as PerformanceResourceTiming;
-            console.log(`Lazy loaded image: ${resource.name}, load time: ${resource.duration}ms`);
+            console.log(
+              `Lazy loaded image: ${resource.name}, load time: ${resource.duration}ms`
+            );
           }
         }
       });

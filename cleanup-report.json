@@ -1,249 +1,28 @@
 {
-  "analysisMetadata": {
-    "date": "2025-01-20",
-    "project": "Mystik Tarot - Frontend Application",
-    "scope": "Complete static analysis of TypeScript/React codebase",
-    "filesAnalyzed": {
-      "typescript": 89,
-      "css": 1,
-      "images": 85
+  "timestamp": "2025-10-07T22:38:15.935Z",
+  "dryRun": false,
+  "statistics": {
+    "beforeCleanup": {
+      "totalKeys": 4215,
+      "unusedKeys": 4215,
+      "duplicateValues": 397,
+      "emptyOrInvalid": 1
     },
-    "analysisMethods": [
-      "Static import/export analysis",
-      "File reference tracking",
-      "Asset usage verification",
-      "Type/interface usage analysis",
-      "Duplicate file detection",
-      "Dead code identification"
-    ]
-  },
-  "filesForRemoval": [
-    {
-      "path": "src/features/shared/ui/tarot/TarotSpreadWrapper.tsx",
-      "reason": "Never imported or used",
-      "evidence": "No import statements found in codebase",
-      "riskLevel": "Low",
-      "category": "unused-component"
+    "afterCleanup": {
+      "totalKeys": 0,
+      "removedKeys": 4215,
+      "percentReduced": 100
     },
-    {
-      "path": "src/hooks/useTarotSpreadLogic.ts",
-      "reason": "Never imported or used",
-      "evidence": "No import statements found in codebase",
-      "riskLevel": "Low",
-      "category": "unused-hook"
-    },
-    {
-      "path": "src/features/shared/icons/MysticalIcons.tsx",
-      "reason": "Never imported or used",
-      "evidence": "Only referenced in index.ts but never imported",
-      "riskLevel": "Low",
-      "category": "unused-component"
-    },
-    {
-      "path": "src/features/shared/icons/index.ts",
-      "reason": "Exports unused component",
-      "evidence": "Only exports MysticalIcons which is unused",
-      "riskLevel": "Low",
-      "category": "unused-export"
-    },
-    {
-      "path": "public/cards/CardBack (1).jpg",
-      "reason": "Duplicate file",
-      "evidence": "Duplicate of CardBack.jpg (55KB vs 67KB)",
-      "riskLevel": "Low",
-      "category": "duplicate-asset"
-    }
-  ],
-  "unusedAssets": [
-    {
-      "path": "public/images/Ekran Resmi 2025-06-20 21.08.09.png",
-      "reason": "No references found",
-      "evidence": "No import or usage in codebase",
-      "riskLevel": "Low",
-      "category": "unused-image"
-    },
-    {
-      "path": "public/images/Ekran Resmi 2025-06-30 02.06.28.png",
-      "reason": "No references found",
-      "evidence": "No import or usage in codebase",
-      "riskLevel": "Low",
-      "category": "unused-image"
-    },
-    {
-      "path": "public/images/freepik__enchanted-future-prediction-setup-crystal-ball-ast__6398.png",
-      "reason": "No references found",
-      "evidence": "No import or usage in codebase",
-      "riskLevel": "Low",
-      "category": "unused-image"
-    },
-    {
-      "path": "public/images/freepik__enchanted-future-prediction-setup-crystal-ball-ast__6399.jpeg",
-      "reason": "No references found",
-      "evidence": "No import or usage in codebase",
-      "riskLevel": "Low",
-      "category": "unused-image"
-    },
-    {
-      "path": "public/images/geneltarot.png",
-      "reason": "No references found",
-      "evidence": "No import or usage in codebase",
-      "riskLevel": "Low",
-      "category": "unused-image"
-    },
-    {
-      "path": "public/images/selfreflection.png",
-      "reason": "No references found",
-      "evidence": "No import or usage in codebase",
-      "riskLevel": "Low",
-      "category": "unused-image"
-    },
-    {
-      "path": "public/images/CareerSpread.png",
-      "reason": "No references found",
-      "evidence": "No import or usage in codebase",
-      "riskLevel": "Low",
-      "category": "unused-image"
-    }
-  ],
-  "unusedTypes": [
-    {
-      "name": "TarotSpreadWrapperProps",
-      "file": "src/features/shared/ui/tarot/TarotSpreadWrapper.tsx",
-      "reason": "Component never used",
-      "evidence": "No imports found",
-      "riskLevel": "Low",
-      "category": "unused-interface"
-    },
-    {
-      "name": "MysticalIconsProps",
-      "file": "src/features/shared/icons/MysticalIcons.tsx",
-      "reason": "Component never used",
-      "evidence": "No imports found",
-      "riskLevel": "Low",
-      "category": "unused-interface"
-    }
-  ],
-  "duplicatesAndLegacy": [
-    {
-      "path": "public/cards/CardBack (1).jpg",
-      "type": "duplicate",
-      "reason": "Duplicate of CardBack.jpg",
-      "evidence": "Same content, different filename",
-      "riskLevel": "Low",
-      "category": "duplicate-file"
-    }
-  ],
-  "legalPagesStatus": {
-    "allUsed": true,
-    "pages": [
-      { "path": "/legal/privacy-policy", "status": "used", "linkedIn": "Footer.tsx" },
-      { "path": "/legal/terms-of-use", "status": "used", "linkedIn": "Footer.tsx" },
-      { "path": "/legal/kvkk-disclosure", "status": "used", "linkedIn": "Footer.tsx" },
-      { "path": "/legal/cookie-policy", "status": "used", "linkedIn": "Footer.tsx" },
-      { "path": "/legal/contact", "status": "used", "linkedIn": "Footer.tsx" },
-      { "path": "/legal/about", "status": "used", "linkedIn": "Footer.tsx" },
-      { "path": "/legal/disclaimer", "status": "used", "linkedIn": "Footer.tsx" },
-      { "path": "/legal/copyright-policy", "status": "used", "linkedIn": "Footer.tsx" },
-      { "path": "/legal/refund-policy", "status": "used", "linkedIn": "Footer.tsx" },
-      { "path": "/legal/payment-terms", "status": "used", "linkedIn": "Footer.tsx" },
-      { "path": "/legal/security-policy", "status": "used", "linkedIn": "Footer.tsx" },
-      { "path": "/legal/accessibility", "status": "used", "linkedIn": "Footer.tsx" },
-      { "path": "/legal/child-privacy", "status": "used", "linkedIn": "Footer.tsx" }
-    ]
-  },
-  "manualReviewRequired": [
-    {
-      "path": "src/features/tarot/lib/love/position-*.ts",
-      "reason": "Individual position files",
-      "recommendation": "These are imported by position-meanings-index.ts but the index file itself has limited usage. Consider consolidating if the detailed position meanings are not needed.",
-      "riskLevel": "Medium"
-    },
-    {
-      "path": "src/features/shared/ui/ReadingInfoModal.tsx",
-      "reason": "Imported but not used",
-      "recommendation": "Check if this component is intended for future use or can be removed.",
-      "riskLevel": "Medium"
-    },
-    {
-      "path": "src/features/tarot/components/standard/TarotSpreadSelector.tsx",
-      "reason": "Used in a-tarot page",
-      "recommendation": "Verify if this component is actually needed for the current UI flow.",
-      "riskLevel": "Low"
-    }
-  ],
-  "codeQualityIssues": [
-    {
-      "type": "unused-variables",
-      "description": "Multiple components have unused parameters marked with _ prefix",
-      "severity": "Low"
-    },
-    {
-      "type": "unused-imports",
-      "description": "Some components import but don't use certain modules",
-      "severity": "Low"
-    },
-    {
-      "type": "dead-code",
-      "description": "Several utility functions and components are never referenced",
-      "severity": "Medium"
-    }
-  ],
-  "cleanupRecommendations": {
-    "safeToRemove": {
-      "files": [
-        "src/features/shared/ui/tarot/TarotSpreadWrapper.tsx",
-        "src/hooks/useTarotSpreadLogic.ts",
-        "src/features/shared/icons/MysticalIcons.tsx",
-        "src/features/shared/icons/index.ts"
-      ],
-      "assets": [
-        "public/cards/CardBack (1).jpg",
-        "public/images/Ekran Resmi 2025-06-20 21.08.09.png",
-        "public/images/Ekran Resmi 2025-06-30 02.06.28.png",
-        "public/images/freepik__enchanted-future-prediction-setup-crystal-ball-ast__6398.png",
-        "public/images/freepik__enchanted-future-prediction-setup-crystal-ball-ast__6399.jpeg",
-        "public/images/geneltarot.png",
-        "public/images/selfreflection.png",
-        "public/images/CareerSpread.png"
-      ],
-      "riskLevel": "Low"
-    },
-    "reviewBeforeRemoval": {
-      "files": [
-        "src/features/tarot/lib/love/position-1-ilgi-duydugun-kisi.ts",
-        "src/features/tarot/lib/love/position-2-fiziksel.ts",
-        "src/features/tarot/lib/love/position-3-baglanti.ts",
-        "src/features/tarot/lib/love/position-4-uzun-vadeli-surec.ts",
-        "src/features/shared/ui/ReadingInfoModal.tsx"
-      ],
-      "riskLevel": "Medium"
-    },
-    "keep": {
-      "files": [
-        "All legal pages (properly linked)",
-        "All tarot card images (78 cards, all referenced)",
-        "Main application components"
-      ],
-      "riskLevel": "High"
+    "fileSize": {
+      "before": "0 KB",
+      "after": "0 KB",
+      "saved": "0 KB",
+      "percentSmaller": 0
     }
   },
-  "cleanupImpact": {
-    "filesToRemove": 12,
-    "estimatedSizeReduction": "~500KB",
-    "buildImpact": "Minimal (no breaking dependencies)",
-    "automatedCleanupScript": [
-      "rm src/features/shared/ui/tarot/TarotSpreadWrapper.tsx",
-      "rm src/hooks/useTarotSpreadLogic.ts",
-      "rm src/features/shared/icons/MysticalIcons.tsx",
-      "rm src/features/shared/icons/index.ts",
-      "rm \"public/cards/CardBack (1).jpg\"",
-      "rm public/images/Ekran\\ Resmi\\ 2025-06-20\\ 21.08.09.png",
-      "rm public/images/Ekran\\ Resmi\\ 2025-06-30\\ 02.06.28.png",
-      "rm public/images/freepik__enchanted-future-prediction-setup-crystal-ball-ast__6398.png",
-      "rm public/images/freepik__enchanted-future-prediction-setup-crystal-ball-ast__6399.jpeg",
-      "rm public/images/geneltarot.png",
-      "rm public/images/selfreflection.png",
-      "rm public/images/CareerSpread.png"
-    ]
+  "actions": {
+    "removedUnused": true,
+    "removedEmpty": 1,
+    "mergeDuplicates": "Skipped"
   }
 }

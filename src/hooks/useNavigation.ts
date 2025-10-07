@@ -51,6 +51,9 @@ const getSeoFriendlyPath = (locale: string, path: string): string => {
     tr: {
       '/': '/anasayfa',
       '/tarotokumasi': '/tarot-okuma',
+      '/tarot-okuma': '/tarot-okuma',
+      '/tarot-reading': '/tarot-okuma', // İngilizce'den geçiş için
+      '/tarot-citanje': '/tarot-okuma', // Sırpça'dan geçiş için
       '/numeroloji': '/numeroloji',
       '/kartlar': '/kartlar',
       '/dashboard': '/panel',
@@ -59,7 +62,11 @@ const getSeoFriendlyPath = (locale: string, path: string): string => {
     en: {
       '/': '/home',
       '/tarotokumasi': '/tarot-reading',
+      '/tarot-reading': '/tarot-reading',
+      '/tarot-okuma': '/tarot-reading', // Türkçe'den geçiş için
+      '/tarot-citanje': '/tarot-reading', // Sırpça'dan geçiş için
       '/numeroloji': '/numerology',
+      '/numerology': '/numerology',
       '/cards': '/cards',
       '/dashboard': '/dashboard',
       '/auth': '/login',
@@ -67,7 +74,12 @@ const getSeoFriendlyPath = (locale: string, path: string): string => {
     sr: {
       '/': '/pocetna',
       '/tarotokumasi': '/tarot-citanje',
+      '/tarot-citanje': '/tarot-citanje',
+      '/tarot-okuma': '/tarot-citanje', // Türkçe'den geçiş için
+      '/tarot-reading': '/tarot-citanje', // İngilizce'den geçiş için
       '/numeroloji': '/numerologija',
+      '/numerologija': '/numerologija',
+      '/numerology': '/numerologija',
       '/kartice': '/kartice',
       '/dashboard': '/panel',
       '/auth': '/prijava',

@@ -27,9 +27,9 @@ export function DynamicPDFGenerator({ onGenerate }: PDFGeneratorProps) {
       const pdf = new jsPDF();
       const canvas = await html2canvas(document.body);
       const imgData = canvas.toDataURL('image/png');
-      
+
       pdf.addImage(imgData, 'PNG', 0, 0);
-      
+
       if (onGenerate) {
         onGenerate(pdf);
       }
@@ -41,15 +41,15 @@ export function DynamicPDFGenerator({ onGenerate }: PDFGeneratorProps) {
   };
 
   return (
-    <div className="p-4">
+    <div className='p-4'>
       <button
         onClick={generatePDF}
         disabled={isLoading}
-        className="bg-blue-500 text-white px-4 py-2 rounded disabled:opacity-50"
+        className='bg-blue-500 text-white px-4 py-2 rounded disabled:opacity-50'
       >
         {isLoading ? 'PDF Oluşturuluyor...' : 'PDF Oluştur'}
       </button>
-      {error && <p className="text-red-500 mt-2">{error}</p>}
+      {error && <p className='text-red-500 mt-2'>{error}</p>}
     </div>
   );
 }

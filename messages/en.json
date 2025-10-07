@@ -1,18 +1,10 @@
 {
-  "accessibility": {
-    "skipToMain": "Skip to main content"
-  },
   "auth": {
     "errors": {
       "callbackFailed": "Login failed. Please try again.",
       "tooManyRequests": "Too many attempts. Please wait a few minutes and try again.",
       "rateLimitExceeded": "Rate limit exceeded. Please wait.",
-      "retryAfter": "You can try again in: {retryAfter} seconds",
-      "allLanguagesRequired": "Please enter name in all languages",
-      "apiKeyCreateError": "Error creating API key",
-      "apiKeyUpdateError": "Error updating API key",
-      "loginRequired": "Please log in",
-      "userSelectionRequired": "Please select a user"
+      "retryAfter": "You can try again in: {retryAfter} seconds"
     },
     "loading": {
       "validating": "Validating...",
@@ -52,275 +44,8 @@
       "description": "You need to confirm your email address. Would you like to resend the confirmation email?",
       "resendButton": "Resend Email"
     },
-    "audit": {
-      "loginFailed": "Failed login attempt",
-      "loginSuccess": "Successful login",
-      "logout": "Logged out",
-      "passwordChanged": "Password changed",
-      "paymentMethodAdded": "Payment method added",
-      "paymentMethodRemoved": "Payment method removed",
-      "profileUpdated": "Profile updated",
-      "securityAlert": "Security alert",
-      "subscriptionCanceled": "Subscription canceled",
-      "subscriptionCreated": "Subscription created",
-      "suspiciousActivity": "Suspicious activity detected"
-    },
-    "notice": {
-      "accountCreated": "Account created successfully",
-      "checkEmail": "Check your email address and confirm your membership",
-      "confirmationEmailSent": "Confirmation email sent",
-      "confirmationFailed": "Email confirmation failed",
-      "emailConfirmed": "Your email address has been confirmed! 100 credits have been gifted.",
-      "emailVerified": "Email address verified",
-      "openEmailApp": "Open Email App",
-      "openGmail": "Open in Gmail",
-      "openOutlook": "Open in Outlook",
-      "openYahoo": "Open in Yahoo Mail",
-      "passwordChanged": "Password changed successfully",
-      "passwordResetSent": "Password reset link sent",
-      "profileUpdated": "Profile updated"
-    },
     "page": {
-      "backToLogin": "Back to login page",
-      "birthDate": "Date of Birth",
-      "birthDateMaxAge": "Enter a valid date of birth",
-      "birthDateMinAge": "Users under 13 cannot register",
-      "birthDatePlaceholder": "Date of Birth",
-      "birthDateRequired": "Date of birth is required",
-      "cancel": "Cancel",
-      "checkingAuth": "🔍 Checking login status…",
-      "checkingEmail": "📧 Checking email…",
-      "confirmPassword": "Confirm Password",
-      "confirmPasswordPlaceholder": "Enter your password again",
-      "confirmPasswordRequired": "Password confirmation is required",
-      "databaseError": "A database error occurred",
-      "email": "Email",
-      "emailInvalid": "Enter a valid email address",
-      "emailNotConfirmed": "Email address not confirmed",
-      "emailPlaceholder": "Your email address",
-      "emailRequired": "Email address is required",
-      "errorOccurred": "An error occurred",
-      "facebookSignIn": "Sign In with Facebook",
-      "facebookSignUp": "Sign Up with Facebook",
-      "female": "Female",
-      "firstName": "First Name",
-      "forgotPassword": "Forgot password",
-      "gender": "Gender",
-      "genderFemale": "Female",
-      "genderMale": "Male",
-      "genderOther": "Other",
-      "genderPlaceholder": "Select gender",
-      "genderPreferNotToSay": "Prefer not to say",
-      "genderRequired": "Gender selection is required",
-      "googleSignIn": "Sign In with Google",
-      "googleSignUp": "Sign Up with Google",
-      "hasAccount": "Already have an account? Sign in",
-      "invalidCredentials": "Invalid email or password",
-      "journeyStart": "Start the Journey",
-      "lastName": "Last Name",
-      "loggingIn": "🔐 Logging in…",
-      "login": "Login",
-      "loginSubtitle": "Log in to your account",
-      "loginTitle": "Login",
-      "male": "Male",
-      "mysticalEntry": "Enter the Mystical World",
-      "nameMinLength": "Name must be at least 2 characters",
-      "namePlaceholder": "First Name",
-      "nameRequired": "First name is required",
-      "noAccount": "Don't have an account? Sign up",
-      "orContinueWith": "or continue with",
-      "other": "Other",
-      "password": "Password",
-      "passwordMinLength": "Password must be at least 6 characters",
-      "passwordMismatch": "Passwords do not match",
-      "passwordPlaceholder": "Your password",
-      "passwordRequired": "Password is required",
-      "passwordsNotMatch": "Passwords do not match",
-      "processing": "⏳ Processing…",
-      "redirecting": "Redirecting to login page…",
-      "register": "Register",
-      "registerSubtitle": "Create a new account",
-      "registerTitle": "Register",
-      "registering": "📝 Creating registration…",
-      "rememberMe": "Remember me",
-      "resetPassword": "Reset Password",
-      "resetPasswordEmailSent": "A password reset link has been sent to your email address",
-      "resetPasswordError": "Could not send password reset link",
-      "resetPasswordSubtitle": "Enter your email address and we will send you a password reset link",
-      "resetPasswordTitle": "Password Reset",
-      "selectGender": "Select gender",
-      "sendResetEmail": "Send Reset Email",
-      "signIn": "🔮 Sign In",
-      "signOut": "Sign Out",
-      "signUp": "✨ Sign Up",
-      "successLogin": "Login successful! Redirecting…",
-      "successRegister": "Registration successful! Please check your email.",
-      "surnameMinLength": "Last name must be at least 2 characters",
-      "surnamePlaceholder": "Last Name",
-      "surnameRequired": "Last name is required",
-      "userAlreadyExists": "This email address is already registered",
-      "validating": "🔍 Validating…",
-      "waiting": "⏳ Waiting…"
-    },
-    "permissions": {
-      "accessDenied": "You do not have permission to access this page",
-      "adminOnly": "This feature is for administrators only",
-      "contactAdmin": "Contact administrator",
-      "insufficientPermissions": "You do not have sufficient permissions for this action",
-      "loginRequired": "You must log in to access this page",
-      "premiumRequired": "This feature is for premium members",
-      "subscriptionRequired": "A subscription is required for this feature",
-      "upgradeAccount": "Upgrade your account"
-    },
-    "pwa": {
-      "backgroundSync": "Background Sync",
-      "enableNotifications": "Enable Notifications",
-      "installButton": "Install",
-      "installDescription": "Add the app to your home screen for faster access",
-      "installLater": "Later",
-      "installPrompt": "Add App to Home Screen",
-      "notificationDenied": "Notification permission denied",
-      "notificationPermission": "Notification permission is required",
-      "offlineMessage": "You have no internet connection. Some features may be limited.",
-      "offlineMode": "Offline Mode",
-      "pushNotifications": "Notifications",
-      "syncWhenOnline": "Will sync when you are online"
-    },
-    "roles": {
-      "accessDenied": "You do not have permission to access this page",
-      "admin": "Admin",
-      "contactAdmin": "Contact administrator",
-      "guest": "Guest",
-      "insufficientPermissions": "You do not have sufficient permissions for this action",
-      "premium": "Premium Member",
-      "upgradeAccount": "Upgrade your account",
-      "user": "User"
-    },
-    "security": {
-      "accountLocked": "Your account has been temporarily locked. Please try again later.",
-      "biometricAuth": "Biometric Authentication",
-      "biometricFailed": "Biometric authentication failed",
-      "biometricNotAvailable": "Biometric authentication is not available",
-      "faceIdAuth": "Sign In with Face ID",
-      "fingerprintAuth": "Sign In with Fingerprint",
-      "rateLimitExceeded": "Too many attempts. Please try again later.",
-      "sessionExpired": "Your session has expired. Please log in again.",
-      "suspiciousActivity": "Suspicious activity detected. Your account has been locked for security.",
-      "twoFactorCode": "Verification code",
-      "twoFactorCodeExpired": "Verification code has expired",
-      "twoFactorCodeInvalid": "Invalid verification code",
-      "twoFactorCodePlaceholder": "Enter the 6-digit verification code",
-      "twoFactorCodeSent": "Verification code has been sent to your email address",
-      "twoFactorRequired": "Two-factor authentication is required"
-    },
-    "signIn": "Sign In"
-  },
-  "cardGroups": {
-    "cups": "Cups",
-    "majorArcana": "Major Arcana",
-    "pentacles": "Pentacles",
-    "swords": "Swords",
-    "wands": "Wands"
-  },
-  "cards": {
-    "altText": "Tarot Card",
-    "reversed": "Reversed",
-    "reversedMeaning": "Reversed Meaning:",
-    "upright": "Upright",
-    "uprightMeaning": "Upright Meaning:"
-  },
-  "career": {
-    "data": {
-      "badgeText": "CAREER",
-      "cardDirections": {
-        "reversed": "Reversed",
-        "upright": "Upright"
-      },
-      "detailedTitle": "Career Spread - Detailed Personal Reading",
-      "interpretationTitle": "Career Spread Interpretation",
-      "readingFormats": {
-        "detailed": "Audio",
-        "simple": "Simple",
-        "written": "Written"
-      },
-      "simpleInterpretation": "Simple reading - counter only",
-      "simpleTitle": "Simple Reading",
-      "spreadName": "Career Spread",
-      "spreadTitle": "Career Spread"
-    },
-    "form": {
-      "birthDate": "Date of Birth",
-      "clearAll": "Clear All Cards",
-      "communicationMethod": "Communication Method",
-      "concernQuestion": "What are you most concerned about regarding your career?",
-      "email": "Email",
-      "emailCommunication": "Email",
-      "emotionalQuestion": "What emotional obstacles are you experiencing in your career?",
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "personalInfo": "Personal Information",
-      "phone": "Phone Number",
-      "placeholders": {
-        "concernQuestion": "Does my job make me happy, am I on the right path?…",
-        "email": "example@email.com",
-        "emotionalQuestion": "Fear of failure, thinking I'm not good enough…",
-        "firstName": "Your first name",
-        "lastName": "Your last name",
-        "understandingQuestion": "A more creative job, working abroad, starting my own business…"
-      },
-      "questions": "Your Career Questions",
-      "saveAndOpen": "Save and Open Cards",
-      "saving": "Saving…",
-      "understandingQuestion": "Which areas of your career do you want to understand better?",
-      "whatsappCommunication": "WhatsApp"
-    },
-    "messages": {
-      "allCardsRequired": "An interpretation cannot be generated without selecting all cards.",
-      "configurationNotFound": "Career Spread configuration not found. Please check the tarotSpreads.ts file.",
-      "formUnsavedWarning": "The form has been filled but not saved. Are you sure you want to exit?",
-      "interpretationGreeting": "Dear client, here is your specially prepared analysis for your career and money question \"{question}\":",
-      "interpretationTitle": "Career Spread",
-      "loginRequired": "You must be logged in to do a reading.",
-      "readingSaveError": "An error occurred while saving the reading.",
-      "readingSavedSuccess": "Your reading has been saved successfully!",
-      "selectReadingTypeFirst": "Please select a reading type first.",
-      "simpleReadingCompleted": "Simple reading completed!"
-    },
-    "modals": {
-      "aboutSpread": "About the Career Spread",
-      "aboutSpreadText": "These 7 cards reveal your current situation, strengths, obstacles, and opportunities. It offers a roadmap to activate your inner potential—a clear and compassionate bridge from today to tomorrow.",
-      "cancel": "Cancel",
-      "cardCountText": "Total of 7 cards: (1) Current Situation (2) Strengths (3) Obstacles (4) Opportunities (5) Resources/Support (6) Roadmap (7) Outcome & Recommendation.",
-      "cardCountTitle": "Card Count",
-      "confirm": "Yes, I Confirm",
-      "continue": "Continue",
-      "creditConfirm": "Credit Confirmation",
-      "creditConfirmMessage": "Credits will be used for this career spread. Are you sure you want to continue?",
-      "detailedReading": "Audio Reading",
-      "detailedReadingText": "Receive your interpretation as a warm voice recording. It is specially prepared for you; you can download and listen to it anytime.",
-      "infoTitle": "Career Spread",
-      "loveAttention": "After saving the reading, I usually send your personal interpretation by email within 2–4 hours. This work is for guidance purposes; the final choices are yours.",
-      "loveAttentionInfo": "A Gentle Note",
-      "process": "Process",
-      "processing": "Processing…",
-      "redirecting": "💼 Redirecting you to the main page…",
-      "saveReading": "Save Reading 💼",
-      "savingReading": "Saving…",
-      "step1": "Enter your personal information",
-      "step2": "Answer the career-related questions",
-      "step3": "Select 7 cards and preview",
-      "step4": "Save the reading; the results will be sent to your email",
-      "successMessage": "Your career spread has been saved and analyzed. You can view the results from your dashboard.",
-      "successTitle": "Reading Saved",
-      "writtenReading": "Written Reading",
-      "writtenReadingText": "If you prefer, it is delivered as a detailed written report; you can save and re-read it."
-    },
-    "validation": {
-      "birthDateRequired": "Date of birth is required.",
-      "emailInvalid": "Please enter a valid email address.",
-      "nameMinLength": "Name must be at least 3 characters.",
-      "questionMinLength": "You must provide at least a 10-character response to this question.",
-      "surnameMinLength": "Last name must be at least 3 characters."
+      "signOut": "Sign Out"
     }
   },
   "common": {
@@ -749,302 +474,18 @@
     "daha-ekonomik-okuma": "Daha ekonomik okuma türlerini deneyebilirsiniz",
     "kredi-kullaniminiz-verimli": "Kredi kullanımınız verimli görünüyor"
   },
-  "database": {
-    "fields": {
-      "adminAction": "Admin Action",
-      "amount": "Amount",
-      "birthDate": "Date of Birth",
-      "blob": "Blob",
-      "canvas": "Canvas",
-      "code": "Code",
-      "createdAt": "Created At",
-      "creditBalance": "Credit Balance",
-      "deltaCredits": "Credit Change",
-      "displayName": "Display Name",
-      "email": "Email",
-      "error": "Error",
-      "errorCode": "Error Code",
-      "firstName": "First Name",
-      "fullName": "Full Name",
-      "id": "ID",
-      "isAdmin": "Is Admin",
-      "key": "Key",
-      "lastName": "Last Name",
-      "link": "Link",
-      "locale": "Locale",
-      "message": "Message",
-      "meta": "Meta",
-      "minLength": "Minimum Length",
-      "name": "Name",
-      "orderId": "Order ID",
-      "pagePath": "Page Path",
-      "passwordRules": "Password Rules",
-      "pattern": "Pattern",
-      "puppeteer": "Puppeteer",
-      "readingType": "Reading Type",
-      "rememberMe": "Remember Me",
-      "resetEmail": "Reset Email",
-      "revenue": "Revenue",
-      "search": "Search",
-      "session": "Session",
-      "surname": "Surname",
-      "tokenHash": "Token Hash",
-      "transactions": "Transactions",
-      "type": "Type",
-      "users": "Users",
-      "value": "Value",
-      "viewDuration": "View Duration"
-    }
-  },
-  "errors": {
-    "contactSupport": "Contact Support",
-    "forbidden": "Access Denied",
-    "goHome": "Go to Home Page",
-    "maintenance": "Maintenance Mode",
-    "networkError": "Network Error",
-    "pageNotFound": "Page Not Found",
-    "serverError": "Server Error",
-    "timeout": "Timeout",
-    "tryAgain": "Try Again",
-    "unauthorized": "Unauthorized Access"
-  },
-  "forms": {
-    "confirmExit": "The form has been filled but not saved. Are you sure you want to exit?",
-    "validation": {
-      "birthDateRequired": "Date of birth is required.",
-      "concernMinLength": "This question requires a response of at least 10 characters.",
-      "emailInvalid": "Please enter a valid email address.",
-      "emotionalMinLength": "This question requires a response of at least 10 characters.",
-      "nameMinLength": "Name must be at least 3 characters.",
-      "surnameMinLength": "Last name must be at least 3 characters.",
-      "understandingMinLength": "This question requires a response of at least 10 characters."
-    }
-  },
-  "gallery": {
-    "allPositionsFull": "All positions are full",
-    "emptyDeck": "Card deck is empty",
-    "nextPosition": "Next position:",
-    "scrollToSeeAll": "Scroll to see all cards",
-    "shuffle": "Shuffle",
-    "title": "Card Gallery"
-  },
-  "home": {
-    "cta": {
-      "button": "Try for Free",
-      "description": "Start your mystical journey today and discover the secrets of your destiny.",
-      "title": "Get Started Now"
-    },
-    "features": {
-      "authentic": {
-        "description": "Traditional tarot and numerology methods",
-        "title": "Authentic Guidance"
-      },
-      "multilingual": {
-        "description": "Support in Turkish, English, and Serbian",
-        "title": "Multilingual"
-      },
-      "personalized": {
-        "description": "Detailed analyses tailored to you",
-        "title": "Personalized"
-      },
-      "secure": {
-        "description": "Your data is completely secure",
-        "title": "Secure"
-      },
-      "title": "Why Choose Us?"
-    },
-    "footerText": "Journey into the depths of your inner world, guided by the light of mystical knowledge. Each reading offers you a new perspective and guidance.",
-    "hero": {
-      "description": "Embark on a journey into the mysterious world of cards and numbers. Discover the secrets of your life with professional tarot readings and numerology analyses.",
-      "subtitle": "Discover Your Future, Understand Your Destiny",
-      "title": "Mystical Tarot & Numerology"
-    },
-    "services": {
-      "numerology": {
-        "button": "Numerology Analysis",
-        "description": "Discover the secrets of numbers. Learn your life path, expression number, and soul urge.",
-        "features": [
-          "Life Path",
-          "Expression Number",
-          "Soul Urge",
-          "Daily Number"
-        ],
-        "title": "Numerology Analysis"
-      },
-      "tarot": {
-        "button": "Tarot Reading",
-        "description": "Embark on a journey into the mysterious world of cards. Discover your past, present, and future.",
-        "features": [
-          "Love Spread",
-          "Career Guidance",
-          "Daily Guidance",
-          "Detailed Interpretation"
-        ],
-        "title": "Tarot Reading"
-      }
-    },
-    "stats": {
-      "readings": "Completed Readings",
-      "satisfaction": "Satisfaction Rate",
-      "title": "Reliable Service",
-      "users": "Active Users"
-    },
-    "subtitle": "Your Mystical Journey Begins",
-    "tarotCard": {
-      "button": "Do a Spread →",
-      "description": "Embark on a journey into the mysterious world of cards. Find mystical answers to your questions about love, career, and life.",
-      "title": "Tarot Spread"
-    },
-    "title": "Büşbüşkimki"
-  },
-  "homepage": {
-    "features": {
-      "authentic": {
-        "description": "Traditional tarot and numerology methods",
-        "title": "Authentic Guidance"
-      },
-      "multilingual": {
-        "description": "Support in Turkish, English, and Serbian",
-        "title": "Multilingual"
-      },
-      "personalized": {
-        "description": "Detailed analyses tailored to you",
-        "title": "Personalized"
-      },
-      "secure": {
-        "description": "Your data is completely secure",
-        "title": "Secure"
-      },
-      "title": "Why Choose Us?"
-    },
-    "hero": {
-      "description": "Embark on a journey into the mysterious world of cards and numbers. Discover the secrets of your life with professional tarot readings and numerology analyses.",
-      "subtitle": "Discover Your Future, Understand Your Destiny",
-      "title": "Tarot Reading & Numerology"
-    },
-    "seo": {
-      "content": "At Büşbüşkimki, we offer professional tarot reading and numerology analysis services. You can receive guidance in all areas of your life with love guidance, career guidance, daily guidance, and detailed numerology analyses. We are at your service with our expert team in mystical guidance, spiritual counseling, and destiny analysis."
-    },
-    "services": {
-      "numerology": {
-        "button": "Numerology Analysis",
-        "description": "Discover the secrets of numbers. Learn your life path, expression number, and soul urge.",
-        "features": [
-          "Life Path",
-          "Expression Number",
-          "Soul Urge",
-          "Daily Number"
-        ],
-        "title": "Numerology Analysis"
-      },
-      "tarot": {
-        "button": "Tarot Reading",
-        "description": "Embark on a journey into the mysterious world of cards. Discover your past, present, and future.",
-        "features": [
-          "Love Spread",
-          "Career Guidance",
-          "Daily Guidance",
-          "Detailed Interpretation"
-        ],
-        "title": "Tarot Reading"
-      }
-    },
-    "stats": {
-      "readings": "Completed Readings",
-      "satisfaction": "Satisfaction Rate",
-      "title": "Reliable Service",
-      "users": "Active Users"
-    }
-  },
-  "http": {
-    "headers": {
-      "cfConnectingIp": "CF-Connecting-IP",
-      "userAgent": "User-Agent",
-      "xForwardedFor": "X-Forwarded-For",
-      "xForwardedHost": "X-Forwarded-Host",
-      "xRealIp": "X-Real-IP",
-      "xShopierSignature": "X-Shopier-Signature",
-      "xVercelForwardedFor": "X-Vercel-Forwarded-For"
-    }
-  },
-  "interpretation": {
-    "badge": "TAROT",
-    "cannotGenerate": "An interpretation cannot be generated without selecting all cards.",
-    "context": "Context:",
-    "dearClient": "Dear client,",
-    "loveLifeSummary": "Love Life Summary:",
-    "loveReading": "Love Spread",
-    "loveReadingDetailed": "Love Spread - Detailed Personal Reading",
-    "placeholder": "Write your question…",
-    "title": "Tarot Interpretation"
-  },
-  "language": {
-    "english": "English",
-    "serbian": "Srpski",
-    "turkish": "Türkçe"
-  },
   "love": {
-    "cardGroups": {
-      "cups": "Cups",
-      "majorArcana": "Major Arcana",
-      "pentacles": "Pentacles",
-      "swords": "Swords",
-      "wands": "Wands"
-    },
-    "data": {
-      "badgeText": "LOVE",
-      "detailedTitle": "Love Spread - Detailed Personal Reading",
-      "interpretationTitle": "Love Spread Interpretation",
-      "simpleTitle": "Love Spread - Simple Reading",
-      "spreadName": "Love Spread",
-      "spreadTitle": "Love Spread"
-    },
-    "form": {
-      "birthDate": "Date of Birth",
-      "clearAll": "🔄 Clear All",
-      "communicationMethod": "Communication Preference",
-      "concernQuestion": "What is currently occupying your mind the most in your love life?",
-      "email": "Your Email Address",
-      "emailCommunication": "Email",
-      "emotionalQuestion": "How are you feeling emotionally right now? (e.g., hopeful, uncertain, tired…)",
-      "firstName": "Your First Name",
-      "lastName": "Your Last Name",
-      "personalInfo": "Personal Information",
-      "phone": "Phone Number",
-      "phonePlaceholder": "+90 5XX XXX XX XX",
-      "phoneRequired": "Phone number is required for WhatsApp",
-      "questions": "✨ Love Spread Questions ✨",
-      "saveAndOpen": "Save Reading and Open Cards 💕",
-      "saving": "Saving…",
-      "understandingQuestion": "What do you want to understand or hear from this spread?",
-      "whatsappCommunication": "WhatsApp"
-    },
     "meanings": {
       "theFool": {
         "position1": {
-          "context": "This person is ready for a new page in their love life; sometimes they can be an adventurer who hesitates to take this step.",
-          "keywords": [
-            "new beginnings",
-            "innocence",
-            "spontaneity",
-            "taking risks",
-            "free spirit"
-          ],
-          "reversed": "The reversed Fool indicates that the person may have a reckless or irresponsible attitude and may be hesitant to start a relationship.\nThey may ignore potential risks and avoid commitment.",
-          "upright": "The person you are interested in acts with childlike curiosity and zest for life.\nThey have an adventurous spirit open to new beginnings, which can sometimes make them appear unplanned and disorganized.\nThey approach relationships with a free mind, ready to explore."
+          "keywords": ["new beginnings", "innocence", "spontaneity", "taking risks", "free spirit"]
         }
       },
       "thefool": {
         "position2": {
           "upright": "[EN] Fiziksel bağlantınızda çocuksu bir merak ve deneme...",
           "reversed": "[EN] Ters Fool, cinsel konularda pervasızlık, düşüncesi...",
-          "keywords": [
-            "[EN] keşif",
-            "[EN] spontanlık",
-            "[EN] deneyimsizlik",
-            "[EN] eğlence",
-            "[EN] özgürlük"
-          ],
+          "keywords": ["[EN] keşif", "[EN] spontanlık", "[EN] deneyimsizlik", "[EN] eğlence", "[EN] özgürlük"],
           "context": "[EN] Aranızdaki tensel çekim, yeni ve heyecan verici bi..."
         },
         "position3": {
@@ -1160,13 +601,7 @@
         "position2": {
           "upright": "[EN] Fiziksel bağlantınız son derece şehvetli, besleyic...",
           "reversed": "[EN] Ters Empress, cinsel enerjide bir tembellik, kendi...",
-          "keywords": [
-            "[EN] şehvet",
-            "[EN] bereket",
-            "[EN] duyusallık",
-            "[EN] doğurganlık",
-            "[EN] zevk"
-          ],
+          "keywords": ["[EN] şehvet", "[EN] bereket", "[EN] duyusallık", "[EN] doğurganlık", "[EN] zevk"],
           "context": "[EN] Cinsel yaşamınız, tüm duyuların harekete geçtiği, ..."
         },
         "position3": {
@@ -1185,13 +620,7 @@
         "position4": {
           "upright": "[EN] Uzun vadeli sonuç, bereketli, sevgi dolu ve büyüye...",
           "reversed": "[EN] Ters Empress, uzun vadede ilişkinin durağanlaşacağ...",
-          "keywords": [
-            "[EN] bereket",
-            "[EN] büyüme",
-            "[EN] evlilik",
-            "[EN] doğurganlık",
-            "[EN] kalıcı sevgi"
-          ],
+          "keywords": ["[EN] bereket", "[EN] büyüme", "[EN] evlilik", "[EN] doğurganlık", "[EN] kalıcı sevgi"],
           "context": "[EN] Bu ilişkinin geleceği, sevgiyle sulanan ve sürekli..."
         }
       },
@@ -1199,13 +628,7 @@
         "position2": {
           "upright": "[EN] Fiziksel bağlantınızda yapı, kontrol ve tutku var....",
           "reversed": "[EN] Ters Emperor, cinsel hayatta aşırı kontrolcü, domi...",
-          "keywords": [
-            "[EN] tutku",
-            "[EN] kontrol",
-            "[EN] güç",
-            "[EN] istikrar",
-            "[EN] liderlik"
-          ],
+          "keywords": ["[EN] tutku", "[EN] kontrol", "[EN] güç", "[EN] istikrar", "[EN] liderlik"],
           "context": "[EN] Cinsel bağlantınız, tutkunun ve kontrolün birleşti..."
         },
         "position3": {
@@ -1280,13 +703,7 @@
         "position2": {
           "upright": "[EN] Aranızda ruhsal ve fiziksel olarak derin bir uyum ...",
           "reversed": "[EN] Ters Lovers, fiziksel ve duygusal uyumsuzluğu, cin...",
-          "keywords": [
-            "[EN] cinsel uyum",
-            "[EN] ruh eşi",
-            "[EN] tutku",
-            "[EN] kimya",
-            "[EN] derin bağ"
-          ],
+          "keywords": ["[EN] cinsel uyum", "[EN] ruh eşi", "[EN] tutku", "[EN] kimya", "[EN] derin bağ"],
           "context": "[EN] Fiziksel bağlantınız, iki ruhun bir bütün olduğu, ..."
         },
         "position3": {
@@ -1320,13 +737,7 @@
         "position2": {
           "upright": "[EN] Cinsel yaşamınızda güçlü bir irade, hedef odaklılı...",
           "reversed": "[EN] Ters Chariot, cinsel enerjinin kontrolsüz veya agr...",
-          "keywords": [
-            "[EN] yüksek libido",
-            "[EN] irade",
-            "[EN] tutku",
-            "[EN] kontrol",
-            "[EN] enerji"
-          ],
+          "keywords": ["[EN] yüksek libido", "[EN] irade", "[EN] tutku", "[EN] kontrol", "[EN] enerji"],
           "context": "[EN] Cinsel enerjiniz, hedefine kararlılıkla ilerleyen,..."
         },
         "position3": {
@@ -1360,25 +771,13 @@
         "position2": {
           "upright": "[EN] Fiziksel bağlantınızda tutku ve şefkat mükemmel bi...",
           "reversed": "[EN] Ters Strength, cinsel güvensizlik veya ham arzular...",
-          "keywords": [
-            "[EN] dengeli tutku",
-            "[EN] şefkat",
-            "[EN] içsel güç",
-            "[EN] sabır",
-            "[EN] cinsel güven"
-          ],
+          "keywords": ["[EN] dengeli tutku", "[EN] şefkat", "[EN] içsel güç", "[EN] sabır", "[EN] cinsel güven"],
           "context": "[EN] Cinselliğiniz, vahşi bir aslanı şefkatle evcilleşt..."
         },
         "position3": {
           "upright": "[EN] Duygusal bağınız şefkat, sabır ve derin bir içsel ...",
           "reversed": "[EN] Ters Strength, duygusal olarak birbirinize karşı g...",
-          "keywords": [
-            "[EN] şefkatli güç",
-            "[EN] sabır",
-            "[EN] kabul",
-            "[EN] ruhsal şifa",
-            "[EN] içsel güç"
-          ],
+          "keywords": ["[EN] şefkatli güç", "[EN] sabır", "[EN] kabul", "[EN] ruhsal şifa", "[EN] içsel güç"],
           "context": "[EN] Duygusal bağınız, en zorlu duyguları bile şefkatle..."
         },
         "position4": {
@@ -1453,25 +852,13 @@
         "position3": {
           "upright": "[EN] Bu, karmik bir ruhsal bağlantıdır. Kader sizi bir ...",
           "reversed": "[EN] Ters The Wheel of Fortune, ilişkinin ruhsal bir dö...",
-          "keywords": [
-            "[EN] karmik bağ",
-            "[EN] kader",
-            "[EN] ruhsal döngü",
-            "[EN] değişim",
-            "[EN] evrim"
-          ],
+          "keywords": ["[EN] karmik bağ", "[EN] kader", "[EN] ruhsal döngü", "[EN] değişim", "[EN] evrim"],
           "context": "[EN] Ruhsal bağınız, kaderin bir araya getirdiği ve bir..."
         },
         "position4": {
           "upright": "[EN] Bu ilişkinin uzun vadeli kaderi, kadersel bir dönü...",
           "reversed": "[EN] Ters The Wheel of Fortune, uzun vadede şanssızlıkl...",
-          "keywords": [
-            "[EN] kader",
-            "[EN] dönüm noktası",
-            "[EN] şans",
-            "[EN] yeni döngü",
-            "[EN] karmik sonuç"
-          ],
+          "keywords": ["[EN] kader", "[EN] dönüm noktası", "[EN] şans", "[EN] yeni döngü", "[EN] karmik sonuç"],
           "context": "[EN] Bu ilişkinin nihai sonucu, kader çarkının sizin le..."
         }
       },
@@ -1479,13 +866,7 @@
         "position2": {
           "upright": "[EN] Fiziksel bağlantınızda denge, adalet ve dürüstlük ...",
           "reversed": "[EN] Ters Justice, cinsel hayatta bir dengesizlik veya ...",
-          "keywords": [
-            "[EN] denge",
-            "[EN] adalet",
-            "[EN] dürüstlük",
-            "[EN] karşılıklılık",
-            "[EN] saygı"
-          ],
+          "keywords": ["[EN] denge", "[EN] adalet", "[EN] dürüstlük", "[EN] karşılıklılık", "[EN] saygı"],
           "context": "[EN] Cinselliğiniz, her iki tarafın da tatmin olduğu ad..."
         },
         "position3": {
@@ -1545,13 +926,7 @@
         "position4": {
           "upright": "[EN] Uzun vadede bu ilişki bir belirsizlik içinde kalab...",
           "reversed": "[EN] Ters Hanged Man, uzun vadede bir tarafın boşuna fe...",
-          "keywords": [
-            "[EN] belirsizlik",
-            "[EN] duraklama",
-            "[EN] fedakarlık",
-            "[EN] çıkmaz",
-            "[EN] bekleyiş"
-          ],
+          "keywords": ["[EN] belirsizlik", "[EN] duraklama", "[EN] fedakarlık", "[EN] çıkmaz", "[EN] bekleyiş"],
           "context": "[EN] Bu ilişkinin uzun vadeli kaderi, bir sonuca ulaşma..."
         }
       },
@@ -1600,37 +975,19 @@
         "position2": {
           "upright": "[EN] Fiziksel ve duygusal enerjiler arasında mükemmel b...",
           "reversed": "[EN] Ters Temperance, cinsel enerjide bir dengesizlik, ...",
-          "keywords": [
-            "[EN] denge",
-            "[EN] uyum",
-            "[EN] simya",
-            "[EN] ölçülülük",
-            "[EN] şefkatli tutku"
-          ],
+          "keywords": ["[EN] denge", "[EN] uyum", "[EN] simya", "[EN] ölçülülük", "[EN] şefkatli tutku"],
           "context": "[EN] Cinselliğiniz, iki farklı enerjinin mükemmel bir u..."
         },
         "position3": {
           "upright": "[EN] Aranızda harika bir duygusal ve ruhsal denge var. ...",
           "reversed": "[EN] Ters Temperance, aranızda duygusal bir dengesizlik...",
-          "keywords": [
-            "[EN] duygusal denge",
-            "[EN] uyum",
-            "[EN] ruhsal şifa",
-            "[EN] harmanlanma",
-            "[EN] huzur"
-          ],
+          "keywords": ["[EN] duygusal denge", "[EN] uyum", "[EN] ruhsal şifa", "[EN] harmanlanma", "[EN] huzur"],
           "context": "[EN] Duygusal bağınız, iki farklı ruhun birleşerek yara..."
         },
         "position4": {
           "upright": "[EN] Uzun vadeli sonuç, son derece dengeli, uyumlu ve h...",
           "reversed": "[EN] Ters Temperance, uzun vadede uyumsuzluk ve çatışma...",
-          "keywords": [
-            "[EN] denge",
-            "[EN] uyum",
-            "[EN] huzur",
-            "[EN] uzun süreli ortaklık",
-            "[EN] şifa"
-          ],
+          "keywords": ["[EN] denge", "[EN] uyum", "[EN] huzur", "[EN] uzun süreli ortaklık", "[EN] şifa"],
           "context": "[EN] Bu ilişkinin uzun vadeli potansiyeli, iki ruhun mü..."
         }
       },
@@ -1705,13 +1062,7 @@
         "position4": {
           "upright": "[EN] Uzun vadeli sonuç, ani ve sarsıcı bir ayrılık veya...",
           "reversed": "[EN] Ters Kule, kaçınılmaz bir ayrılıktan veya krizden ...",
-          "keywords": [
-            "[EN] ani ayrılık",
-            "[EN] yıkım",
-            "[EN] kriz",
-            "[EN] beklenmedik son",
-            "[EN] yüzleşme"
-          ],
+          "keywords": ["[EN] ani ayrılık", "[EN] yıkım", "[EN] kriz", "[EN] beklenmedik son", "[EN] yüzleşme"],
           "context": "[EN] Bu ilişkinin uzun vadeli kaderi, sağlam olmayan te..."
         }
       },
@@ -1732,25 +1083,13 @@
         "position3": {
           "upright": "[EN] Aranızda umut dolu, ilham verici ve şifalı bir ruh...",
           "reversed": "[EN] Ters Star, duygusal olarak umudunuzu kaybettiğiniz...",
-          "keywords": [
-            "[EN] umut",
-            "[EN] ilham",
-            "[EN] ruhsal şifa",
-            "[EN] inanç",
-            "[EN] kutsanmış bağ"
-          ],
+          "keywords": ["[EN] umut", "[EN] ilham", "[EN] ruhsal şifa", "[EN] inanç", "[EN] kutsanmış bağ"],
           "context": "[EN] Ruhsal bağınız, en karanlık zamanlarda bile yolunu..."
         },
         "position4": {
           "upright": "[EN] Uzun vadeli sonuç, umut, şifa ve ilham dolu bir ge...",
           "reversed": "[EN] Ters Star, uzun vadede umutların tükeneceğini ve h...",
-          "keywords": [
-            "[EN] umutlu gelecek",
-            "[EN] şifa",
-            "[EN] mutluluk",
-            "[EN] ilham",
-            "[EN] huzur"
-          ],
+          "keywords": ["[EN] umutlu gelecek", "[EN] şifa", "[EN] mutluluk", "[EN] ilham", "[EN] huzur"],
           "context": "[EN] Bu ilişkinin kaderi, karanlıktan sonra doğan, parl..."
         }
       },
@@ -1812,13 +1151,7 @@
         "position3": {
           "upright": "[EN] Aranızda neşe, sıcaklık ve açıklıkla dolu, harika ...",
           "reversed": "[EN] Ters Sun, aranızdaki neşenin ve sıcaklığın geçici ...",
-          "keywords": [
-            "[EN] neşe",
-            "[EN] mutluluk",
-            "[EN] açıklık",
-            "[EN] sıcaklık",
-            "[EN] ruhsal canlılık"
-          ],
+          "keywords": ["[EN] neşe", "[EN] mutluluk", "[EN] açıklık", "[EN] sıcaklık", "[EN] ruhsal canlılık"],
           "context": "[EN] Duygusal bağınız, tüm karanlığı aydınlatan, sıcak ..."
         },
         "position4": {
@@ -1880,13 +1213,7 @@
         "position2": {
           "upright": "[EN] Fiziksel bağlantınızda bir bütünlük, tamamlanma ve...",
           "reversed": "[EN] Ters World, cinsel hayatta bir şeylerin eksik kald...",
-          "keywords": [
-            "[EN] tamamlanma",
-            "[EN] cinsel doyum",
-            "[EN] bütünlük",
-            "[EN] başarı",
-            "[EN] uyum"
-          ],
+          "keywords": ["[EN] tamamlanma", "[EN] cinsel doyum", "[EN] bütünlük", "[EN] başarı", "[EN] uyum"],
           "context": "[EN] Fiziksel bağlantınız, yolculuğun sonunda ulaşılan,..."
         },
         "position3": {
@@ -1905,13 +1232,7 @@
         "position4": {
           "upright": "[EN] Bu ilişkinin uzun vadeli sonucu, bir tamamlanma, b...",
           "reversed": "[EN] Ters Dünya, uzun vadede bir şeylerin eksik kalacağ...",
-          "keywords": [
-            "[EN] tamamlanma",
-            "[EN] başarı",
-            "[EN] mutluluk",
-            "[EN] bütünlük",
-            "[EN] döngünün sonu"
-          ],
+          "keywords": ["[EN] tamamlanma", "[EN] başarı", "[EN] mutluluk", "[EN] bütünlük", "[EN] döngünün sonu"],
           "context": "[EN] Uzun vadede bu ilişki, tatmin ve başarıyla dolu bi..."
         }
       },
@@ -2096,25 +1417,13 @@
         "position3": {
           "upright": "[EN] Duygusal bağınız, geçmişteki bir kayıp veya hayal ...",
           "reversed": "[EN] Ters Kupa Beşlisi, geçmişteki duygusal acıları aff...",
-          "keywords": [
-            "[EN] kayıp",
-            "[EN] keder",
-            "[EN] pişmanlık",
-            "[EN] duygusal acı",
-            "[EN] affetme"
-          ],
+          "keywords": ["[EN] kayıp", "[EN] keder", "[EN] pişmanlık", "[EN] duygusal acı", "[EN] affetme"],
           "context": "[EN] Duygusal bağınız, dökülenlere ağlarken, hala dolu ..."
         },
         "position4": {
           "upright": "[EN] Uzun vadeli sonuç, bir kayıp, pişmanlık ve kederdi...",
           "reversed": "[EN] Ters Kupa Beşlisi, uzun vadede geçmişin acılarını ...",
-          "keywords": [
-            "[EN] kayıp",
-            "[EN] pişmanlık",
-            "[EN] keder",
-            "[EN] hayal kırıklığı",
-            "[EN] üzücü son"
-          ],
+          "keywords": ["[EN] kayıp", "[EN] pişmanlık", "[EN] keder", "[EN] hayal kırıklığı", "[EN] üzücü son"],
           "context": "[EN] Bu ilişkinin geleceği, geçmişin kayıplarına odakla..."
         }
       },
@@ -2122,13 +1431,7 @@
         "position2": {
           "upright": "[EN] Fiziksel bağlantınız masum, tatlı ve nostaljik bir...",
           "reversed": "[EN] Ters Kupa Altılısı, geçmiş cinsel deneyimlere takı...",
-          "keywords": [
-            "[EN] masumiyet",
-            "[EN] şefkat",
-            "[EN] nostalji",
-            "[EN] tatlılık",
-            "[EN] eski sevgili"
-          ],
+          "keywords": ["[EN] masumiyet", "[EN] şefkat", "[EN] nostalji", "[EN] tatlılık", "[EN] eski sevgili"],
           "context": "[EN] Tensel yakınlığınız, geçmişin tatlı anılarını anım..."
         },
         "position3": {
@@ -2244,13 +1547,7 @@
         "position2": {
           "upright": "[EN] Son derece tatmin edici, zevk dolu ve duyusal bir ...",
           "reversed": "[EN] Ters Kupa Dokuzlusu, cinsel doyumsuzluğu, bencilli...",
-          "keywords": [
-            "[EN] cinsel tatmin",
-            "[EN] zevk",
-            "[EN] şehvet",
-            "[EN] doyum",
-            "[EN] cömertlik"
-          ],
+          "keywords": ["[EN] cinsel tatmin", "[EN] zevk", "[EN] şehvet", "[EN] doyum", "[EN] cömertlik"],
           "context": "[EN] Cinsel yaşamınız, tüm arzularınızın gerçekleştiği,..."
         },
         "position3": {
@@ -2515,13 +1812,7 @@
         "position4": {
           "upright": "[EN] Uzun vadeli sonuç, bir gerçeğin net bir şekilde or...",
           "reversed": "[EN] Ters Kılıç Ası, uzun vadede çözülmemiş çatışmalar ...",
-          "keywords": [
-            "[EN] net sonuç",
-            "[EN] gerçek",
-            "[EN] karar",
-            "[EN] dürüstlük",
-            "[EN] aydınlanma"
-          ],
+          "keywords": ["[EN] net sonuç", "[EN] gerçek", "[EN] karar", "[EN] dürüstlük", "[EN] aydınlanma"],
           "context": "[EN] Bu ilişkinin kaderi, her şeyi değiştirecek, keskin..."
         }
       },
@@ -2583,25 +1874,13 @@
         "position3": {
           "upright": "[EN] Bu, acı verici bir duygusal bağı, bir kalp kırıklı...",
           "reversed": "[EN] Ters Kılıç Üçlüsü, bir kalp kırıklığının acısını u...",
-          "keywords": [
-            "[EN] kalp kırıklığı",
-            "[EN] duygusal acı",
-            "[EN] ihanet",
-            "[EN] keder",
-            "[EN] ayrılık"
-          ],
+          "keywords": ["[EN] kalp kırıklığı", "[EN] duygusal acı", "[EN] ihanet", "[EN] keder", "[EN] ayrılık"],
           "context": "[EN] Duygusal bağınız, üç keskin kılıcın saplandığı, ac..."
         },
         "position4": {
           "upright": "[EN] Uzun vadeli sonuç, kaçınılmaz bir kalp kırıklığı, ...",
           "reversed": "[EN] Ters Kılıç Üçlüsü, uzun vadede bir ayrılığın veya ...",
-          "keywords": [
-            "[EN] ayrılık",
-            "[EN] kalp kırıklığı",
-            "[EN] keder",
-            "[EN] acı",
-            "[EN] ihanet"
-          ],
+          "keywords": ["[EN] ayrılık", "[EN] kalp kırıklığı", "[EN] keder", "[EN] acı", "[EN] ihanet"],
           "context": "[EN] Bu ilişkinin kaderi, acı, gözyaşı ve kederle dolu ..."
         }
       },
@@ -2676,13 +1955,7 @@
         "position4": {
           "upright": "[EN] Uzun vadeli sonuç, acı ve kayıplarla dolu bir çatı...",
           "reversed": "[EN] Ters Kılıç Beşlisi, uzun vadede bir tarafın diğeri...",
-          "keywords": [
-            "[EN] düşmanca ayrılık",
-            "[EN] çatışma",
-            "[EN] yenilgi",
-            "[EN] pişmanlık",
-            "[EN] kayıp"
-          ],
+          "keywords": ["[EN] düşmanca ayrılık", "[EN] çatışma", "[EN] yenilgi", "[EN] pişmanlık", "[EN] kayıp"],
           "context": "[EN] Bu ilişkinin geleceği, her iki tarafın da kaybetti..."
         }
       },
@@ -2826,25 +2099,13 @@
         "position3": {
           "upright": "[EN] Bu duygusal bağ, size endişe, suçluluk veya korku ...",
           "reversed": "[EN] Ters Kılıç Dokuzlusu, en kötü korkularınızla yüzle...",
-          "keywords": [
-            "[EN] endişe",
-            "[EN] korku",
-            "[EN] suçluluk",
-            "[EN] zihinsel acı",
-            "[EN] ruhsal eziyet"
-          ],
+          "keywords": ["[EN] endişe", "[EN] korku", "[EN] suçluluk", "[EN] zihinsel acı", "[EN] ruhsal eziyet"],
           "context": "[EN] Duygusal bağınız, geceleri sizi uyutmayan, endişe ..."
         },
         "position4": {
           "upright": "[EN] Uzun vadeli sonuç, endişe, suçluluk ve korku dolu ...",
           "reversed": "[EN] Ters Kılıç Dokuzlusu, uzun vadede bir krizin veya ...",
-          "keywords": [
-            "[EN] endişe",
-            "[EN] korku",
-            "[EN] zihinsel acı",
-            "[EN] kabus",
-            "[EN] suçluluk"
-          ],
+          "keywords": ["[EN] endişe", "[EN] korku", "[EN] zihinsel acı", "[EN] kabus", "[EN] suçluluk"],
           "context": "[EN] Bu ilişkinin geleceği, endişe ve pişmanlıklarla do..."
         }
       },
@@ -2878,13 +2139,7 @@
         "position4": {
           "upright": "[EN] Uzun vadeli sonuç, acı verici ve kesin bir sondur....",
           "reversed": "[EN] Ters Kılıç Onlusu, acı verici bir sonun sürekli er...",
-          "keywords": [
-            "[EN] kesin son",
-            "[EN] ihanet",
-            "[EN] acı",
-            "[EN] çöküş",
-            "[EN] yenilgi"
-          ],
+          "keywords": ["[EN] kesin son", "[EN] ihanet", "[EN] acı", "[EN] çöküş", "[EN] yenilgi"],
           "context": "[EN] Bu ilişkinin kaderi, kaçınılmaz ve acı dolu bir fi..."
         }
       },
@@ -2959,13 +2214,7 @@
         "position4": {
           "upright": "[EN] Uzun vadeli sonuç, ani ve hızlı bir ayrılıktır. Bi...",
           "reversed": "[EN] Ters Kılıç Şövalyesi, uzun vadede büyük ve yıkıcı ...",
-          "keywords": [
-            "[EN] ani ayrılık",
-            "[EN] hızlı son",
-            "[EN] düşüncesizlik",
-            "[EN] kavga",
-            "[EN] kopuş"
-          ],
+          "keywords": ["[EN] ani ayrılık", "[EN] hızlı son", "[EN] düşüncesizlik", "[EN] kavga", "[EN] kopuş"],
           "context": "[EN] Bu ilişkinin kaderi, bir fırtına gibi aniden gelip..."
         }
       },
@@ -2973,13 +2222,7 @@
         "position2": {
           "upright": "[EN] Cinsel olarak zeki, deneyimli ve ne istediğini bil...",
           "reversed": "[EN] Ters Kılıç Kraliçesi, cinsel olarak soğuk, mesafel...",
-          "keywords": [
-            "[EN] cinsel zeka",
-            "[EN] deneyim",
-            "[EN] netlik",
-            "[EN] mesafe",
-            "[EN] bağımsızlık"
-          ],
+          "keywords": ["[EN] cinsel zeka", "[EN] deneyim", "[EN] netlik", "[EN] mesafe", "[EN] bağımsızlık"],
           "context": "[EN] Cinselliğiniz, zekanın ve deneyimin yönlendirdiği,..."
         },
         "position3": {
@@ -3095,13 +2338,7 @@
         "position2": {
           "upright": "[EN] Fiziksel olarak birbirinizi arzuluyor ve gelecekte...",
           "reversed": "[EN] Ters Asa İkilisi, cinsel bir adım atmaktan korkma,...",
-          "keywords": [
-            "[EN] cinsel arzu",
-            "[EN] potansiyel",
-            "[EN] planlama",
-            "[EN] keşif",
-            "[EN] çekim"
-          ],
+          "keywords": ["[EN] cinsel arzu", "[EN] potansiyel", "[EN] planlama", "[EN] keşif", "[EN] çekim"],
           "context": "[EN] Tensel enerjiniz, bir sonraki adımı atmayı düşünen..."
         },
         "position3": {
@@ -3148,13 +2385,7 @@
         "position3": {
           "upright": "[EN] Ruhsal ve duygusal olarak ektiğiniz tohumların mey...",
           "reversed": "[EN] Ters Asa Üçlüsü, duygusal ilerlemede gecikmeler ve...",
-          "keywords": [
-            "[EN] genişleme",
-            "[EN] beklenti",
-            "[EN] ortak hayaller",
-            "[EN] ilerleme",
-            "[EN] umut"
-          ],
+          "keywords": ["[EN] genişleme", "[EN] beklenti", "[EN] ortak hayaller", "[EN] ilerleme", "[EN] umut"],
           "context": "[EN] Ruhsal bağınız, limana dönmekte olan gemilerini um..."
         },
         "position4": {
@@ -3175,13 +2406,7 @@
         "position2": {
           "upright": "[EN] Fiziksel bağlantınız neşeli, uyumlu ve kutlamaya d...",
           "reversed": "[EN] Ters Asa Dörtlüsü, cinsel hayatta bir uyumsuzluk v...",
-          "keywords": [
-            "[EN] tutkulu kutlama",
-            "[EN] cinsel uyum",
-            "[EN] neşe",
-            "[EN] balayı",
-            "[EN] istikrar"
-          ],
+          "keywords": ["[EN] tutkulu kutlama", "[EN] cinsel uyum", "[EN] neşe", "[EN] balayı", "[EN] istikrar"],
           "context": "[EN] Cinsel yaşamınız, iki insanın bir araya gelmesini ..."
         },
         "position3": {
@@ -3256,37 +2481,19 @@
         "position2": {
           "upright": "[EN] Tatmin edici ve başarılı bir cinsel yaşam. Partner...",
           "reversed": "[EN] Ters Asa Altılısı, cinsel hayatta bir başarısızlık...",
-          "keywords": [
-            "[EN] cinsel zafer",
-            "[EN] özgüven",
-            "[EN] takdir",
-            "[EN] başarı",
-            "[EN] tatmin"
-          ],
+          "keywords": ["[EN] cinsel zafer", "[EN] özgüven", "[EN] takdir", "[EN] başarı", "[EN] tatmin"],
           "context": "[EN] Fiziksel bağlantınız, her iki tarafın da kendini g..."
         },
         "position3": {
           "upright": "[EN] Duygusal olarak birbirinizi destekliyor ve başarıl...",
           "reversed": "[EN] Ters Asa Altılısı, aranızda bir tanınma eksikliği ...",
-          "keywords": [
-            "[EN] karşılıklı destek",
-            "[EN] takdir",
-            "[EN] başarı",
-            "[EN] özgüven",
-            "[EN] zafer"
-          ],
+          "keywords": ["[EN] karşılıklı destek", "[EN] takdir", "[EN] başarı", "[EN] özgüven", "[EN] zafer"],
           "context": "[EN] Duygusal bağınız, birbirini onurlandıran ve zafere..."
         },
         "position4": {
           "upright": "[EN] Uzun vadeli sonuç, birlikte kazanılmış bir zafer v...",
           "reversed": "[EN] Ters Asa Altılısı, uzun vadede bir başarısızlık ve...",
-          "keywords": [
-            "[EN] ortak zafer",
-            "[EN] başarı",
-            "[EN] takdir",
-            "[EN] mutlu son",
-            "[EN] özgüven"
-          ],
+          "keywords": ["[EN] ortak zafer", "[EN] başarı", "[EN] takdir", "[EN] mutlu son", "[EN] özgüven"],
           "context": "[EN] Bu ilişkinin kaderi, herkesin imreneceği, parlak b..."
         }
       },
@@ -3443,13 +2650,7 @@
         "position4": {
           "upright": "[EN] Uzun vadede bu ilişki, bir zevkten çok ağır bir yü...",
           "reversed": "[EN] Ters Asa Onlusu, uzun vadede bu yükün altında ezil...",
-          "keywords": [
-            "[EN] ağır yük",
-            "[EN] sorumluluk",
-            "[EN] tükenmişlik",
-            "[EN] baskı",
-            "[EN] yorucu son"
-          ],
+          "keywords": ["[EN] ağır yük", "[EN] sorumluluk", "[EN] tükenmişlik", "[EN] baskı", "[EN] yorucu son"],
           "context": "[EN] Bu ilişkinin geleceği, taşınması imkansız hale gel..."
         }
       },
@@ -3457,37 +2658,19 @@
         "position2": {
           "upright": "[EN] Yeni cinsel deneyimlere karşı bir heves ve macera ...",
           "reversed": "[EN] Ters Asa Uşağı, cinsel bir başlangıç yapma konusun...",
-          "keywords": [
-            "[EN] cinsel macera",
-            "[EN] heves",
-            "[EN] flört",
-            "[EN] keşif",
-            "[EN] tutkulu başlangıç"
-          ],
+          "keywords": ["[EN] cinsel macera", "[EN] heves", "[EN] flört", "[EN] keşif", "[EN] tutkulu başlangıç"],
           "context": "[EN] Fiziksel bağlantınız, yeni maceralara atılmaya hev..."
         },
         "position3": {
           "upright": "[EN] Aranızda yeni bir tutku, heyecan ve ruhsal merak f...",
           "reversed": "[EN] Ters Asa Uşağı, duygusal bir başlangıç yapma konus...",
-          "keywords": [
-            "[EN] ruhsal merak",
-            "[EN] yeni tutku",
-            "[EN] macera",
-            "[EN] keşif",
-            "[EN] heyecan"
-          ],
+          "keywords": ["[EN] ruhsal merak", "[EN] yeni tutku", "[EN] macera", "[EN] keşif", "[EN] heyecan"],
           "context": "[EN] Duygusal bağınız, yeni bir maceranın başında duran..."
         },
         "position4": {
           "upright": "[EN] Uzun vadeli sonuç, birlikte yeni maceralara atılma...",
           "reversed": "[EN] Ters Asa Uşağı, uzun vadede bir başlangıç yapma he...",
-          "keywords": [
-            "[EN] yeni maceralar",
-            "[EN] keşif",
-            "[EN] eğlence",
-            "[EN] dinamik ilişki",
-            "[EN] heves"
-          ],
+          "keywords": ["[EN] yeni maceralar", "[EN] keşif", "[EN] eğlence", "[EN] dinamik ilişki", "[EN] heves"],
           "context": "[EN] Bu ilişkinin geleceği, bitmeyen bir keşif ve macer..."
         }
       },
@@ -3495,13 +2678,7 @@
         "position2": {
           "upright": "[EN] Son derece tutkulu, enerjik ve maceraperest bir ci...",
           "reversed": "[EN] Ters Asa Şövalyesi, bencil, aceleci ve sadece kend...",
-          "keywords": [
-            "[EN] yoğun tutku",
-            "[EN] macera",
-            "[EN] karizma",
-            "[EN] cinsel enerji",
-            "[EN] cesaret"
-          ],
+          "keywords": ["[EN] yoğun tutku", "[EN] macera", "[EN] karizma", "[EN] cinsel enerji", "[EN] cesaret"],
           "context": "[EN] Cinsel enerjiniz, bir alev gibi parlak, sıcak ve d..."
         },
         "position3": {
@@ -3576,25 +2753,13 @@
         "position2": {
           "upright": "[EN] Cinsel olarak deneyimli, lider ve son derece tutku...",
           "reversed": "[EN] Ters Asa Kralı, cinsel olarak baskıcı, bencil veya...",
-          "keywords": [
-            "[EN] cinsel liderlik",
-            "[EN] deneyim",
-            "[EN] yoğun tutku",
-            "[EN] karizma",
-            "[EN] güç"
-          ],
+          "keywords": ["[EN] cinsel liderlik", "[EN] deneyim", "[EN] yoğun tutku", "[EN] karizma", "[EN] güç"],
           "context": "[EN] Cinsel yaşamınız, tutku krallığını yöneten, deneyi..."
         },
         "position3": {
           "upright": "[EN] Aranızda ortak bir vizyonla hareket eden, güçlü, l...",
           "reversed": "[EN] Ters Asa Kralı, duygusal olarak baskıcı, egoist ve...",
-          "keywords": [
-            "[EN] liderlik",
-            "[EN] ortak vizyon",
-            "[EN] ilham",
-            "[EN] güç ortaklığı",
-            "[EN] cesaret"
-          ],
+          "keywords": ["[EN] liderlik", "[EN] ortak vizyon", "[EN] ilham", "[EN] güç ortaklığı", "[EN] cesaret"],
           "context": "[EN] Ruhsal bağınız, ortak bir krallığı yöneten, vizyon..."
         },
         "position4": {
@@ -3641,13 +2806,7 @@
         "position4": {
           "upright": "[EN] Uzun vadeli sonuç, son derece sağlam, güvenilir ve...",
           "reversed": "[EN] Ters Tılsım Ası, uzun vadede bir fırsatın kaçırıla...",
-          "keywords": [
-            "[EN] somut başlangıç",
-            "[EN] kalıcı ilişki",
-            "[EN] güven",
-            "[EN] refah",
-            "[EN] fırsat"
-          ],
+          "keywords": ["[EN] somut başlangıç", "[EN] kalıcı ilişki", "[EN] güven", "[EN] refah", "[EN] fırsat"],
           "context": "[EN] Bu ilişkinin geleceği, gerçek dünyada kök salan, s..."
         }
       },
@@ -3655,13 +2814,7 @@
         "position2": {
           "upright": "[EN] Fiziksel bağlantınız eğlenceli, esnek ve ritmik. P...",
           "reversed": "[EN] Ters Tılsım İkilisi, cinsel hayatta bir denge kuru...",
-          "keywords": [
-            "[EN] denge",
-            "[EN] ritim",
-            "[EN] esneklik",
-            "[EN] eğlence",
-            "[EN] oyunculuk"
-          ],
+          "keywords": ["[EN] denge", "[EN] ritim", "[EN] esneklik", "[EN] eğlence", "[EN] oyunculuk"],
           "context": "[EN] Cinselliğiniz, iki bedenin uyum içinde dans ettiği..."
         },
         "position3": {
@@ -3900,25 +3053,13 @@
         "position2": {
           "upright": "[EN] Cinsel yaşamda bir öğrenme, pratik yapma ve ustala...",
           "reversed": "[EN] Ters Tılsım Sekizlisi, cinsel hayatta bir tembelli...",
-          "keywords": [
-            "[EN] cinsel öğrenme",
-            "[EN] ustalaşma",
-            "[EN] özen",
-            "[EN] pratik",
-            "[EN] keşif"
-          ],
+          "keywords": ["[EN] cinsel öğrenme", "[EN] ustalaşma", "[EN] özen", "[EN] pratik", "[EN] keşif"],
           "context": "[EN] Cinselliğiniz, birbirinizin bedenini bir sanat ese..."
         },
         "position3": {
           "upright": "[EN] Duygusal bağınızı güçlendirmek için bilinçli bir ç...",
           "reversed": "[EN] Ters Tılsım Sekizlisi, duygusal olarak ilişkiye ye...",
-          "keywords": [
-            "[EN] duygusal çaba",
-            "[EN] adanmışlık",
-            "[EN] özen",
-            "[EN] gelişim",
-            "[EN] ustalaşma"
-          ],
+          "keywords": ["[EN] duygusal çaba", "[EN] adanmışlık", "[EN] özen", "[EN] gelişim", "[EN] ustalaşma"],
           "context": "[EN] Duygusal bağınız, bir zanaatkarın eserine gösterdi..."
         },
         "position4": {
@@ -3965,13 +3106,7 @@
         "position4": {
           "upright": "[EN] Uzun vadeli sonuç, her iki tarafın da bağımsızlığı...",
           "reversed": "[EN] Ters Tılsım Dokuzlusu, uzun vadede bir tarafın diğ...",
-          "keywords": [
-            "[EN] bağımsız ilişki",
-            "[EN] refah",
-            "[EN] olgunluk",
-            "[EN] lüks",
-            "[EN] kendine yetme"
-          ],
+          "keywords": ["[EN] bağımsız ilişki", "[EN] refah", "[EN] olgunluk", "[EN] lüks", "[EN] kendine yetme"],
           "context": "[EN] Bu ilişkinin geleceği, her ikisinin de kendi bahçe..."
         }
       },
@@ -4005,13 +3140,7 @@
         "position4": {
           "upright": "[EN] Uzun vadeli sonuç, son derece istikrarlı, güvenli ...",
           "reversed": "[EN] Ters Tılsım Onlusu, uzun vadede maddi sorunlar vey...",
-          "keywords": [
-            "[EN] kalıcı aile",
-            "[EN] zenginlik",
-            "[EN] güvenlik",
-            "[EN] miras",
-            "[EN] istikrar"
-          ],
+          "keywords": ["[EN] kalıcı aile", "[EN] zenginlik", "[EN] güvenlik", "[EN] miras", "[EN] istikrar"],
           "context": "[EN] Bu ilişkinin kaderi, nesiller boyu sürecek, sağlam..."
         }
       },
@@ -4060,13 +3189,7 @@
         "position2": {
           "upright": "[EN] Fiziksel bağlantınız yavaş, sabırlı, güvenilir ve ...",
           "reversed": "[EN] Ters Tılsım Şövalyesi, cinsel hayatta bir durgunlu...",
-          "keywords": [
-            "[EN] şehvet",
-            "[EN] sabır",
-            "[EN] güvenilirlik",
-            "[EN] sadakat",
-            "[EN] yavaş cinsellik"
-          ],
+          "keywords": ["[EN] şehvet", "[EN] sabır", "[EN] güvenilirlik", "[EN] sadakat", "[EN] yavaş cinsellik"],
           "context": "[EN] Cinsel enerjiniz, hedefine yavaş ama emin adımlarl..."
         },
         "position3": {
@@ -4100,13 +3223,7 @@
         "position2": {
           "upright": "[EN] Cinsellik besleyici, cömert, sıcak ve son derece d...",
           "reversed": "[EN] Ters Tılsım Kraliçesi, cinsel olarak kendine veya ...",
-          "keywords": [
-            "[EN] duyusallık",
-            "[EN] şehvet",
-            "[EN] besleyicilik",
-            "[EN] cömertlik",
-            "[EN] güven"
-          ],
+          "keywords": ["[EN] duyusallık", "[EN] şehvet", "[EN] besleyicilik", "[EN] cömertlik", "[EN] güven"],
           "context": "[EN] Cinsel yaşamınız, tüm duyuları besleyen, sıcak ve ..."
         },
         "position3": {
@@ -4153,13 +3270,7 @@
         "position3": {
           "upright": "[EN] Aranızda son derece başarılı, istikrarlı ve güven ...",
           "reversed": "[EN] Ters Tılsım Kralı, duygusal bağın aşırı materyalis...",
-          "keywords": [
-            "[EN] istikrarlı bağ",
-            "[EN] güven",
-            "[EN] başarı",
-            "[EN] cömertlik",
-            "[EN] zenginlik"
-          ],
+          "keywords": ["[EN] istikrarlı bağ", "[EN] güven", "[EN] başarı", "[EN] cömertlik", "[EN] zenginlik"],
           "context": "[EN] Duygusal bağınız, hem zengin hem de cömert, bilge ..."
         },
         "position4": {
@@ -4176,94 +3287,10 @@
           "context": "[EN] Bu ilişkinin kaderi, birlikte inşa edilmiş, zengin..."
         }
       }
-    },
-    "messages": {
-      "formUnsavedWarning": "The form has been filled but not saved. Are you sure you want to exit? Your unsaved data will be lost.",
-      "loginRequired": "You need to be logged in for this action.",
-      "readingSaveError": "An error occurred while saving the reading.",
-      "readingSavedSuccess": "Your love spread has been saved successfully!"
-    },
-    "modals": {
-      "aboutSpread": "About the Spread",
-      "aboutSpreadText": "These 4 cards illuminate the person on your mind, the attraction between you, heart-to-heart compatibility, and the long-term direction of the relationship—building a compassionate bridge from today to tomorrow.",
-      "cancel": "Cancel",
-      "cardCountInfo": "Intentions",
-      "cardCountText": "(1) The Person You're Interested In (2) Physical Connection (3) Emotional Connection (4) Long-Term Process.",
-      "confirm": "Yes, I Confirm",
-      "continue": "Continue",
-      "creditConfirm": "Credit Confirmation",
-      "creditConfirmMessage": "Credits will be used for this love spread. Are you sure you want to continue?",
-      "detailedReading": "Audio Reading",
-      "detailedReadingText": "Receive your interpretation as a warm voice recording. It is specially prepared for you; you can download and listen to it anytime.",
-      "infoTitle": "About the Love Spread",
-      "loveAttention": "After saving the reading, I usually send your personal interpretation by email within 2–4 hours. This work is for guidance purposes; the final choices are yours.",
-      "loveAttentionInfo": "A Gentle Note",
-      "process": "Process",
-      "processing": "Processing…",
-      "redirecting": "💝 Redirecting you to the main page…",
-      "saveReading": "Save Reading 💝",
-      "savingReading": "Saving…",
-      "step1": "Enter your personal information",
-      "step2": "Answer the questions about love",
-      "step3": "Select 4 cards and preview",
-      "step4": "Save the reading; the results will be sent to your email",
-      "successMessage": "Your love spread has been saved and analyzed. You can view the results from your dashboard.",
-      "successTitle": "Reading Saved",
-      "writtenReading": "Written Reading",
-      "writtenReadingText": "If you prefer, it is delivered as a detailed written report; you can re-read it anytime."
-    },
-    "positions": {
-      "position1": {
-        "description": "The true tone of the person on your mind's view, approach, and intention towards you. It makes the unsaid visible; it hints at what they hold in their heart.",
-        "title": "The Person You're Interested In"
-      },
-      "position2": {
-        "description": "The heat of the attraction between you, the harmony of your body language, and the balance of physical intimacy. How the energy flows when you are together is revealed here.",
-        "title": "Physical Connection"
-      },
-      "position3": {
-        "description": "A bridge from heart to heart: the depth of empathy, trust, and spiritual harmony. Your ability to hear each other and vibrate on the same frequency is visible in this card.",
-        "title": "Emotional Connection"
-      },
-      "position4": {
-        "description": "The path of the relationship's maturation, the potential for growth together, and the route that time suggests for you. It gives signs about patience, stability, and the future picture.",
-        "title": "Long-Term Process"
-      }
     }
   },
   "marriage": {
-    "credit": {
-      "cancel": "Cancel",
-      "confirm": "Confirm",
-      "description": "Credits will be used to save this reading. Do you want to continue?",
-      "saving": "Saving…",
-      "title": "Credit Confirmation"
-    },
-    "data": {
-      "badgeText": "Card interpretations are for informational purposes. Your detailed reading will be delivered to you.",
-      "detailedTitle": "Marriage Spread - Detailed Personal Reading",
-      "interpretationTitle": "Marriage Spread Interpretation",
-      "spreadName": "Marriage Spread"
-    },
-    "description": "A special 10-card spread for your marriage and spouse-finding journey",
     "form": {
-      "birthDate": "Your Date of Birth",
-      "birthDateRequired": "Date of birth is required",
-      "cancel": "Cancel",
-      "clearAll": "Clear All",
-      "communicationMethod": "Communication Method",
-      "concern": "Your Marriage Concern",
-      "concernQuestion": "What are you most concerned about regarding marriage?",
-      "concernRequired": "Concern is required",
-      "continue": "Continue",
-      "email": "Your Email Address",
-      "emailCommunication": "Email",
-      "emailRequired": "Email is required",
-      "emotional": "Your Current Marital Status",
-      "emotionalQuestion": "What emotional obstacles are you experiencing regarding marriage?",
-      "emotionalRequired": "Emotional status is required",
-      "firstName": "Your First Name",
-      "lastName": "Your Last Name",
       "loginRequired": "You must be logged in to save a reading",
       "name": "Your Name",
       "nameRequired": "Name is required",
@@ -4335,13 +3362,7 @@
     "theFool": {
       "position1": {
         "context": "This person is an adventurer ready to turn a new page in their love life, or afraid of doing so.",
-        "keywords": [
-          "new beginnings",
-          "innocence",
-          "spontaneity",
-          "risk-taking",
-          "free spirit"
-        ],
+        "keywords": ["new beginnings", "innocence", "spontaneity", "risk-taking", "free spirit"],
         "reversed": "The reversed Fool shows that this person may be reckless, irresponsible, or afraid to start a relationship. They may be ignoring potential dangers and avoiding commitment.",
         "upright": "The person you are interested in is filled with a childlike curiosity and excitement for life. They have an adventurous spirit open to new beginnings, but this can sometimes cause them to be unplanned and disorganized. They approach relationships with this free spirit."
       }
@@ -5883,10 +4904,7 @@
   "tarotCards": {
     "cups": {
       "1": {
-        "keywords": [
-          "love",
-          "emotions"
-        ],
+        "keywords": ["love", "emotions"],
         "meaning": {
           "reversed": "Self-love, repressed emotions",
           "upright": "New relationships, compassion"
@@ -5894,10 +4912,7 @@
         "name": "Ace of Cups"
       },
       "2": {
-        "keywords": [
-          "partnership",
-          "love"
-        ],
+        "keywords": ["partnership", "love"],
         "meaning": {
           "reversed": "Self-love, breakups",
           "upright": "Partnership, mutual attraction"
@@ -5905,10 +4920,7 @@
         "name": "Two of Cups"
       },
       "3": {
-        "keywords": [
-          "celebration",
-          "friendship"
-        ],
+        "keywords": ["celebration", "friendship"],
         "meaning": {
           "reversed": "Independence, creative blocks",
           "upright": "Celebration, friendship"
@@ -5916,10 +4928,7 @@
         "name": "Three of Cups"
       },
       "4": {
-        "keywords": [
-          "meditation",
-          "contemplation"
-        ],
+        "keywords": ["meditation", "contemplation"],
         "meaning": {
           "reversed": "Withdrawal, introspection",
           "upright": "Meditation, contemplation"
@@ -5927,10 +4936,7 @@
         "name": "Four of Cups"
       },
       "5": {
-        "keywords": [
-          "regret",
-          "disappointment"
-        ],
+        "keywords": ["regret", "disappointment"],
         "meaning": {
           "reversed": "Self-forgiveness, moving on",
           "upright": "Regret, disappointment"
@@ -5938,10 +4944,7 @@
         "name": "Five of Cups"
       },
       "6": {
-        "keywords": [
-          "nostalgia",
-          "childhood"
-        ],
+        "keywords": ["nostalgia", "childhood"],
         "meaning": {
           "reversed": "Living in the past, forgiveness",
           "upright": "Childhood memories, innocence"
@@ -5949,10 +4952,7 @@
         "name": "Six of Cups"
       },
       "7": {
-        "keywords": [
-          "opportunities",
-          "choices"
-        ],
+        "keywords": ["opportunities", "choices"],
         "meaning": {
           "reversed": "Personal values, overwhelm",
           "upright": "Opportunities, choices"
@@ -5960,10 +4960,7 @@
         "name": "Seven of Cups"
       },
       "8": {
-        "keywords": [
-          "disappointment",
-          "abandonment"
-        ],
+        "keywords": ["disappointment", "abandonment"],
         "meaning": {
           "reversed": "Trying again, indecision",
           "upright": "Disappointment, abandonment"
@@ -5971,10 +4968,7 @@
         "name": "Eight of Cups"
       },
       "9": {
-        "keywords": [
-          "contentment",
-          "satisfaction"
-        ],
+        "keywords": ["contentment", "satisfaction"],
         "meaning": {
           "reversed": "Inner happiness, dissatisfaction",
           "upright": "Contentment, satisfaction"
@@ -5982,10 +4976,7 @@
         "name": "Nine of Cups"
       },
       "10": {
-        "keywords": [
-          "divine love",
-          "harmony"
-        ],
+        "keywords": ["divine love", "harmony"],
         "meaning": {
           "reversed": "Disconnection, challenging relationships",
           "upright": "Divine love, harmony"
@@ -5993,10 +4984,7 @@
         "name": "Ten of Cups"
       },
       "king": {
-        "keywords": [
-          "emotional balance",
-          "diplomacy"
-        ],
+        "keywords": ["emotional balance", "diplomacy"],
         "meaning": {
           "reversed": "Self-compassion, moodiness",
           "upright": "Emotionally balanced, diplomatic"
@@ -6004,10 +4992,7 @@
         "name": "King of Cups"
       },
       "knight": {
-        "keywords": [
-          "romance",
-          "charm"
-        ],
+        "keywords": ["romance", "charm"],
         "meaning": {
           "reversed": "Unrealistic, jealousy",
           "upright": "Romance, charm, imagination"
@@ -6015,10 +5000,7 @@
         "name": "Knight of Cups"
       },
       "page": {
-        "keywords": [
-          "creativity",
-          "intuition"
-        ],
+        "keywords": ["creativity", "intuition"],
         "meaning": {
           "reversed": "New ideas, doubting intuition",
           "upright": "Creative opportunities, intuition"
@@ -6026,10 +5008,7 @@
         "name": "Page of Cups"
       },
       "queen": {
-        "keywords": [
-          "compassion",
-          "emotional stability"
-        ],
+        "keywords": ["compassion", "emotional stability"],
         "meaning": {
           "reversed": "Inner feelings, self-care",
           "upright": "Compassionate, emotionally stable"
@@ -6039,10 +5018,7 @@
     },
     "majorArcana": {
       "0": {
-        "keywords": [
-          "new beginnings",
-          "innocence"
-        ],
+        "keywords": ["new beginnings", "innocence"],
         "meaning": {
           "reversed": "Recklessness, being taken advantage of",
           "upright": "New beginnings, innocence, spontaneity"
@@ -6050,10 +5026,7 @@
         "name": "The Fool"
       },
       "1": {
-        "keywords": [
-          "manifestation",
-          "power"
-        ],
+        "keywords": ["manifestation", "power"],
         "meaning": {
           "reversed": "Manipulation, poor planning",
           "upright": "Manifestation, resourcefulness, power"
@@ -6061,10 +5034,7 @@
         "name": "The Magician"
       },
       "2": {
-        "keywords": [
-          "intuition",
-          "mystery"
-        ],
+        "keywords": ["intuition", "mystery"],
         "meaning": {
           "reversed": "Secrets, disconnection from intuition",
           "upright": "Intuition, sacred knowledge, divine feminine"
@@ -6072,10 +5042,7 @@
         "name": "The High Priestess"
       },
       "3": {
-        "keywords": [
-          "femininity",
-          "beauty"
-        ],
+        "keywords": ["femininity", "beauty"],
         "meaning": {
           "reversed": "Creative block, dependence",
           "upright": "Femininity, beauty, nature"
@@ -6083,10 +5050,7 @@
         "name": "The Empress"
       },
       "4": {
-        "keywords": [
-          "authority",
-          "structure"
-        ],
+        "keywords": ["authority", "structure"],
         "meaning": {
           "reversed": "Domination, excessive control",
           "upright": "Authority, establishment, structure"
@@ -6094,10 +5058,7 @@
         "name": "The Emperor"
       },
       "5": {
-        "keywords": [
-          "tradition",
-          "conformity"
-        ],
+        "keywords": ["tradition", "conformity"],
         "meaning": {
           "reversed": "Personal beliefs, freedom",
           "upright": "Spiritual wisdom, religious beliefs"
@@ -6105,10 +5066,7 @@
         "name": "The Hierophant"
       },
       "6": {
-        "keywords": [
-          "love",
-          "harmony"
-        ],
+        "keywords": ["love", "harmony"],
         "meaning": {
           "reversed": "Self-love, disharmony",
           "upright": "Love, harmony, relationships"
@@ -6116,10 +5074,7 @@
         "name": "The Lovers"
       },
       "7": {
-        "keywords": [
-          "control",
-          "willpower"
-        ],
+        "keywords": ["control", "willpower"],
         "meaning": {
           "reversed": "Self-discipline, opposition",
           "upright": "Control, willpower, success"
@@ -6127,10 +5082,7 @@
         "name": "The Chariot"
       },
       "8": {
-        "keywords": [
-          "strength",
-          "courage"
-        ],
+        "keywords": ["strength", "courage"],
         "meaning": {
           "reversed": "Self-doubt, lack of confidence",
           "upright": "Strength, courage, persuasion"
@@ -6138,10 +5090,7 @@
         "name": "Strength"
       },
       "9": {
-        "keywords": [
-          "introspection",
-          "solitude"
-        ],
+        "keywords": ["introspection", "solitude"],
         "meaning": {
           "reversed": "Isolation, loneliness",
           "upright": "Soul-searching, introspection"
@@ -6149,10 +5098,7 @@
         "name": "The Hermit"
       },
       "10": {
-        "keywords": [
-          "luck",
-          "karma"
-        ],
+        "keywords": ["luck", "karma"],
         "meaning": {
           "reversed": "Bad luck, lack of control",
           "upright": "Good luck, karma, life cycles"
@@ -6160,10 +5106,7 @@
         "name": "Wheel of Fortune"
       },
       "11": {
-        "keywords": [
-          "justice",
-          "fairness"
-        ],
+        "keywords": ["justice", "fairness"],
         "meaning": {
           "reversed": "Unfairness, lack of accountability",
           "upright": "Justice, fairness, truth"
@@ -6171,10 +5114,7 @@
         "name": "Justice"
       },
       "12": {
-        "keywords": [
-          "surrender",
-          "sacrifice"
-        ],
+        "keywords": ["surrender", "sacrifice"],
         "meaning": {
           "reversed": "Delays, resistance, stalling",
           "upright": "Surrender, letting go, sacrifice"
@@ -6182,10 +5122,7 @@
         "name": "The Hanged Man"
       },
       "13": {
-        "keywords": [
-          "transformation",
-          "endings"
-        ],
+        "keywords": ["transformation", "endings"],
         "meaning": {
           "reversed": "Resistance to change, inner purging",
           "upright": "Endings, transformation, transition"
@@ -6193,10 +5130,7 @@
         "name": "Death"
       },
       "14": {
-        "keywords": [
-          "balance",
-          "moderation"
-        ],
+        "keywords": ["balance", "moderation"],
         "meaning": {
           "reversed": "Imbalance, excess, self-healing",
           "upright": "Balance, moderation, patience"
@@ -6204,10 +5138,7 @@
         "name": "Temperance"
       },
       "15": {
-        "keywords": [
-          "addiction",
-          "materialism"
-        ],
+        "keywords": ["addiction", "materialism"],
         "meaning": {
           "reversed": "Releasing limiting beliefs, detachment",
           "upright": "Addiction, passion, materialism"
@@ -6215,10 +5146,7 @@
         "name": "The Devil"
       },
       "16": {
-        "keywords": [
-          "sudden change",
-          "upheaval"
-        ],
+        "keywords": ["sudden change", "upheaval"],
         "meaning": {
           "reversed": "Personal transformation, fear of change",
           "upright": "Sudden change, upheaval, chaos"
@@ -6226,10 +5154,7 @@
         "name": "The Tower"
       },
       "17": {
-        "keywords": [
-          "hope",
-          "faith"
-        ],
+        "keywords": ["hope", "faith"],
         "meaning": {
           "reversed": "Lack of faith, despair, disconnection",
           "upright": "Hope, faith, purpose, renewal"
@@ -6237,10 +5162,7 @@
         "name": "The Star"
       },
       "18": {
-        "keywords": [
-          "illusion",
-          "fear"
-        ],
+        "keywords": ["illusion", "fear"],
         "meaning": {
           "reversed": "Release of fear, repressed emotion",
           "upright": "Illusion, fear, anxiety, subconscious"
@@ -6248,10 +5170,7 @@
         "name": "The Moon"
       },
       "19": {
-        "keywords": [
-          "positivity",
-          "fun"
-        ],
+        "keywords": ["positivity", "fun"],
         "meaning": {
           "reversed": "Inner child, feeling down",
           "upright": "Positivity, fun, warmth, success"
@@ -6259,10 +5178,7 @@
         "name": "The Sun"
       },
       "20": {
-        "keywords": [
-          "judgment",
-          "rebirth"
-        ],
+        "keywords": ["judgment", "rebirth"],
         "meaning": {
           "reversed": "Self-doubt, inner critic",
           "upright": "Judgment, rebirth, inner calling"
@@ -6270,10 +5186,7 @@
         "name": "Judgement"
       },
       "21": {
-        "keywords": [
-          "completion",
-          "integration"
-        ],
+        "keywords": ["completion", "integration"],
         "meaning": {
           "reversed": "Seeking personal closure, shortcuts",
           "upright": "Completion, integration, accomplishment"
@@ -6283,10 +5196,7 @@
     },
     "pentacles": {
       "1": {
-        "keywords": [
-          "opportunity",
-          "manifestation"
-        ],
+        "keywords": ["opportunity", "manifestation"],
         "meaning": {
           "reversed": "Missed opportunity, lack of planning",
           "upright": "New opportunity, manifestation"
@@ -6294,10 +5204,7 @@
         "name": "Ace of Pentacles"
       },
       "2": {
-        "keywords": [
-          "priorities",
-          "balance"
-        ],
+        "keywords": ["priorities", "balance"],
         "meaning": {
           "reversed": "Over-committed, disorganization",
           "upright": "Multiple priorities, balance"
@@ -6305,10 +5212,7 @@
         "name": "Two of Pentacles"
       },
       "3": {
-        "keywords": [
-          "collaboration",
-          "learning"
-        ],
+        "keywords": ["collaboration", "learning"],
         "meaning": {
           "reversed": "Disharmony, working alone",
           "upright": "Collaboration, learning"
@@ -6316,10 +5220,7 @@
         "name": "Three of Pentacles"
       },
       "4": {
-        "keywords": [
-          "saving",
-          "security"
-        ],
+        "keywords": ["saving", "security"],
         "meaning": {
           "reversed": "Over-spending, generosity",
           "upright": "Saving money, security"
@@ -6327,10 +5228,7 @@
         "name": "Four of Pentacles"
       },
       "5": {
-        "keywords": [
-          "loss",
-          "isolation"
-        ],
+        "keywords": ["loss", "isolation"],
         "meaning": {
           "reversed": "Recovery from loss, spiritual poverty",
           "upright": "Financial loss, isolation"
@@ -6338,10 +5236,7 @@
         "name": "Five of Pentacles"
       },
       "6": {
-        "keywords": [
-          "giving",
-          "sharing"
-        ],
+        "keywords": ["giving", "sharing"],
         "meaning": {
           "reversed": "Self-care, unpaid debts",
           "upright": "Giving, sharing wealth"
@@ -6349,10 +5244,7 @@
         "name": "Six of Pentacles"
       },
       "7": {
-        "keywords": [
-          "perseverance",
-          "investment"
-        ],
+        "keywords": ["perseverance", "investment"],
         "meaning": {
           "reversed": "Lack of long-term vision, impatience",
           "upright": "Perseverance, investment"
@@ -6360,10 +5252,7 @@
         "name": "Seven of Pentacles"
       },
       "8": {
-        "keywords": [
-          "mastery",
-          "skill"
-        ],
+        "keywords": ["mastery", "skill"],
         "meaning": {
           "reversed": "Perfectionism, lack of commitment",
           "upright": "Mastery, skill development"
@@ -6371,10 +5260,7 @@
         "name": "Eight of Pentacles"
       },
       "9": {
-        "keywords": [
-          "abundance",
-          "independence"
-        ],
+        "keywords": ["abundance", "independence"],
         "meaning": {
           "reversed": "Self-worth, over-investing",
           "upright": "Abundance, financial independence"
@@ -6382,10 +5268,7 @@
         "name": "Nine of Pentacles"
       },
       "10": {
-        "keywords": [
-          "wealth",
-          "family"
-        ],
+        "keywords": ["wealth", "family"],
         "meaning": {
           "reversed": "Financial failure, the dark side of wealth",
           "upright": "Wealth, family, long-term success"
@@ -6393,10 +5276,7 @@
         "name": "Ten of Pentacles"
       },
       "king": {
-        "keywords": [
-          "success",
-          "business"
-        ],
+        "keywords": ["success", "business"],
         "meaning": {
           "reversed": "Financial advice, living beyond means",
           "upright": "Financial success, business acumen"
@@ -6404,10 +5284,7 @@
         "name": "King of Pentacles"
       },
       "knight": {
-        "keywords": [
-          "work",
-          "routine"
-        ],
+        "keywords": ["work", "routine"],
         "meaning": {
           "reversed": "Self-discipline, feeling stuck",
           "upright": "Hard work, routine"
@@ -6415,10 +5292,7 @@
         "name": "Knight of Pentacles"
       },
       "page": {
-        "keywords": [
-          "manifestation",
-          "opportunity"
-        ],
+        "keywords": ["manifestation", "opportunity"],
         "meaning": {
           "reversed": "Lack of progress, procrastination",
           "upright": "Manifestation, financial opportunity"
@@ -6426,10 +5300,7 @@
         "name": "Page of Pentacles"
       },
       "queen": {
-        "keywords": [
-          "nurturing",
-          "practical"
-        ],
+        "keywords": ["nurturing", "practical"],
         "meaning": {
           "reversed": "Financial independence, work-home conflict",
           "upright": "Nurturing, practical"
@@ -6439,10 +5310,7 @@
     },
     "swords": {
       "1": {
-        "keywords": [
-          "clarity",
-          "breakthrough"
-        ],
+        "keywords": ["clarity", "breakthrough"],
         "meaning": {
           "reversed": "Confusion, chaos",
           "upright": "Breakthrough, clarity"
@@ -6450,10 +5318,7 @@
         "name": "Ace of Swords"
       },
       "2": {
-        "keywords": [
-          "decisions",
-          "stalemate"
-        ],
+        "keywords": ["decisions", "stalemate"],
         "meaning": {
           "reversed": "Indecision, confusion",
           "upright": "Difficult decisions, stalemate"
@@ -6461,10 +5326,7 @@
         "name": "Two of Swords"
       },
       "3": {
-        "keywords": [
-          "heartbreak",
-          "grief"
-        ],
+        "keywords": ["heartbreak", "grief"],
         "meaning": {
           "reversed": "Releasing pain, optimism",
           "upright": "Heartbreak, grief"
@@ -6472,10 +5334,7 @@
         "name": "Three of Swords"
       },
       "4": {
-        "keywords": [
-          "rest",
-          "meditation"
-        ],
+        "keywords": ["rest", "meditation"],
         "meaning": {
           "reversed": "Exhaustion, burnout",
           "upright": "Rest, meditation"
@@ -6483,10 +5342,7 @@
         "name": "Four of Swords"
       },
       "5": {
-        "keywords": [
-          "conflict",
-          "defeat"
-        ],
+        "keywords": ["conflict", "defeat"],
         "meaning": {
           "reversed": "Reconciliation, past resentment",
           "upright": "Conflict, defeat"
@@ -6494,10 +5350,7 @@
         "name": "Five of Swords"
       },
       "6": {
-        "keywords": [
-          "transition",
-          "change"
-        ],
+        "keywords": ["transition", "change"],
         "meaning": {
           "reversed": "Personal transition, resistance",
           "upright": "Transition, change"
@@ -6505,10 +5358,7 @@
         "name": "Six of Swords"
       },
       "7": {
-        "keywords": [
-          "betrayal",
-          "deception"
-        ],
+        "keywords": ["betrayal", "deception"],
         "meaning": {
           "reversed": "Imposter syndrome, secrets",
           "upright": "Betrayal, deception"
@@ -6516,10 +5366,7 @@
         "name": "Seven of Swords"
       },
       "8": {
-        "keywords": [
-          "restriction",
-          "imprisonment"
-        ],
+        "keywords": ["restriction", "imprisonment"],
         "meaning": {
           "reversed": "Self-limiting beliefs, inner critic",
           "upright": "Restriction, imprisonment"
@@ -6527,10 +5374,7 @@
         "name": "Eight of Swords"
       },
       "9": {
-        "keywords": [
-          "anxiety",
-          "fear"
-        ],
+        "keywords": ["anxiety", "fear"],
         "meaning": {
           "reversed": "Inner turmoil, releasing anxiety",
           "upright": "Anxiety, fear"
@@ -6538,10 +5382,7 @@
         "name": "Nine of Swords"
       },
       "10": {
-        "keywords": [
-          "endings",
-          "betrayal"
-        ],
+        "keywords": ["endings", "betrayal"],
         "meaning": {
           "reversed": "Recovery, resisting an end",
           "upright": "Painful endings, betrayal"
@@ -6549,10 +5390,7 @@
         "name": "Ten of Swords"
       },
       "king": {
-        "keywords": [
-          "clarity",
-          "authority"
-        ],
+        "keywords": ["clarity", "authority"],
         "meaning": {
           "reversed": "Quiet power, misuse of power",
           "upright": "Mental clarity, authority"
@@ -6560,10 +5398,7 @@
         "name": "King of Swords"
       },
       "knight": {
-        "keywords": [
-          "ambition",
-          "action"
-        ],
+        "keywords": ["ambition", "action"],
         "meaning": {
           "reversed": "Restless, impulsive",
           "upright": "Ambitious, action-oriented"
@@ -6571,10 +5406,7 @@
         "name": "Knight of Swords"
       },
       "page": {
-        "keywords": [
-          "ideas",
-          "curiosity"
-        ],
+        "keywords": ["ideas", "curiosity"],
         "meaning": {
           "reversed": "Self-expression, no action",
           "upright": "New ideas, curiosity"
@@ -6582,10 +5414,7 @@
         "name": "Page of Swords"
       },
       "queen": {
-        "keywords": [
-          "independence",
-          "boundaries"
-        ],
+        "keywords": ["independence", "boundaries"],
         "meaning": {
           "reversed": "Overly emotional, cold-hearted",
           "upright": "Independent, clear boundaries"
@@ -6595,10 +5424,7 @@
     },
     "wands": {
       "1": {
-        "keywords": [
-          "inspiration",
-          "power"
-        ],
+        "keywords": ["inspiration", "power"],
         "meaning": {
           "reversed": "Lack of energy, boredom",
           "upright": "Inspiration, new opportunities"
@@ -6606,10 +5432,7 @@
         "name": "Ace of Wands"
       },
       "2": {
-        "keywords": [
-          "planning",
-          "decisions"
-        ],
+        "keywords": ["planning", "decisions"],
         "meaning": {
           "reversed": "Personal goals, fear of the unknown",
           "upright": "Future planning, decisions"
@@ -6617,10 +5440,7 @@
         "name": "Two of Wands"
       },
       "3": {
-        "keywords": [
-          "expansion",
-          "foresight"
-        ],
+        "keywords": ["expansion", "foresight"],
         "meaning": {
           "reversed": "Playing small, delays",
           "upright": "Expansion, foresight"
@@ -6628,10 +5448,7 @@
         "name": "Three of Wands"
       },
       "4": {
-        "keywords": [
-          "celebration",
-          "harmony"
-        ],
+        "keywords": ["celebration", "harmony"],
         "meaning": {
           "reversed": "Personal celebration, conflict",
           "upright": "Celebration, harmony"
@@ -6639,10 +5456,7 @@
         "name": "Four of Wands"
       },
       "5": {
-        "keywords": [
-          "conflict",
-          "competition"
-        ],
+        "keywords": ["conflict", "competition"],
         "meaning": {
           "reversed": "Inner conflict, avoidance",
           "upright": "Conflict, competition"
@@ -6650,10 +5464,7 @@
         "name": "Five of Wands"
       },
       "6": {
-        "keywords": [
-          "success",
-          "recognition"
-        ],
+        "keywords": ["success", "recognition"],
         "meaning": {
           "reversed": "Private success, falling from grace",
           "upright": "Success, recognition"
@@ -6661,10 +5472,7 @@
         "name": "Six of Wands"
       },
       "7": {
-        "keywords": [
-          "challenge",
-          "perseverance"
-        ],
+        "keywords": ["challenge", "perseverance"],
         "meaning": {
           "reversed": "Exhaustion, giving up",
           "upright": "Challenge, perseverance"
@@ -6672,10 +5480,7 @@
         "name": "Seven of Wands"
       },
       "8": {
-        "keywords": [
-          "speed",
-          "progress"
-        ],
+        "keywords": ["speed", "progress"],
         "meaning": {
           "reversed": "Delays, frustration",
           "upright": "Speed, progress"
@@ -6683,10 +5488,7 @@
         "name": "Eight of Wands"
       },
       "9": {
-        "keywords": [
-          "resilience",
-          "courage"
-        ],
+        "keywords": ["resilience", "courage"],
         "meaning": {
           "reversed": "Inner resources, struggle",
           "upright": "Resilience, courage"
@@ -6694,10 +5496,7 @@
         "name": "Nine of Wands"
       },
       "10": {
-        "keywords": [
-          "burden",
-          "responsibility"
-        ],
+        "keywords": ["burden", "responsibility"],
         "meaning": {
           "reversed": "Doing it all, delegation",
           "upright": "Burden, responsibility"
@@ -6705,10 +5504,7 @@
         "name": "Ten of Wands"
       },
       "king": {
-        "keywords": [
-          "leadership",
-          "vision"
-        ],
+        "keywords": ["leadership", "vision"],
         "meaning": {
           "reversed": "Impulsiveness, ruthless",
           "upright": "Leadership, vision"
@@ -6716,10 +5512,7 @@
         "name": "King of Wands"
       },
       "knight": {
-        "keywords": [
-          "energy",
-          "passion"
-        ],
+        "keywords": ["energy", "passion"],
         "meaning": {
           "reversed": "Haste, scattered energy",
           "upright": "Energy, passion, adventure"
@@ -6727,10 +5520,7 @@
         "name": "Knight of Wands"
       },
       "page": {
-        "keywords": [
-          "inspiration",
-          "exploration"
-        ],
+        "keywords": ["inspiration", "exploration"],
         "meaning": {
           "reversed": "Lack of direction, procrastination",
           "upright": "Inspiration, exploration"
@@ -6738,10 +5528,7 @@
         "name": "Page of Wands"
       },
       "queen": {
-        "keywords": [
-          "courage",
-          "independence"
-        ],
+        "keywords": ["courage", "independence"],
         "meaning": {
           "reversed": "Self-respect, introverted",
           "upright": "Courage, independence"
@@ -6804,7 +5591,6 @@
       "at": "@",
       "colon": ":",
       "comma": ",",
-      "dash": "-",
       "dot": ".",
       "letterA": "a",
       "letterT": "T",

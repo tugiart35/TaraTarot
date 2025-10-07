@@ -101,15 +101,16 @@ export class CardSEO {
   // Generate FAQ structured data
   static generateFAQStructuredData(seo: any) {
     const faqItems = Array.isArray(seo.faq) ? seo.faq : [];
-    
+
     return {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
       mainEntity: faqItems.map((item: any) => {
         // Handle both object and string formats
         const question = typeof item === 'string' ? item : item?.question || '';
-        const answer = typeof item === 'string' ? `Answer for ${item}` : item?.answer || '';
-        
+        const answer =
+          typeof item === 'string' ? `Answer for ${item}` : item?.answer || '';
+
         return {
           '@type': 'Question',
           name: question,

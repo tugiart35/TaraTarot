@@ -156,7 +156,11 @@ export const exportToExcel = async (
     ...data.userRegistrations.map(item => [item.name, item.value]),
   ];
   const userRegSheet = XLSXModule.utils.aoa_to_sheet(userRegData);
-  XLSXModule.utils.book_append_sheet(workbook, userRegSheet, 'Kullanıcı Kayıtları');
+  XLSXModule.utils.book_append_sheet(
+    workbook,
+    userRegSheet,
+    'Kullanıcı Kayıtları'
+  );
 
   // Paket satışları
   const packageData = [
@@ -172,7 +176,11 @@ export const exportToExcel = async (
     ...data.featureUsage.map(item => [item.name, item.value]),
   ];
   const featureSheet = XLSXModule.utils.aoa_to_sheet(featureData);
-  XLSXModule.utils.book_append_sheet(workbook, featureSheet, 'Özellik Kullanımı');
+  XLSXModule.utils.book_append_sheet(
+    workbook,
+    featureSheet,
+    'Özellik Kullanımı'
+  );
 
   // Gelir verileri
   const revenueData = [

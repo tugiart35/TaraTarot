@@ -1,0 +1,33 @@
+diff --git a/src/app/[locale]/(main)/cards/page.tsx b/src/app/[locale]/(main)/cards/page.tsx
+index fedcba9..0123456 100644
+--- a/src/app/[locale]/(main)/cards/page.tsx
++++ b/src/app/[locale]/(main)/cards/page.tsx
+@@ -11,6 +11,19 @@ interface PageProps {
+   }>;
+ }
+ 
++/**
++ * Generate static params for all supported locales
++ * This enables static page generation at build time
++ */
++export function generateStaticParams() {
++  return [
++    { locale: 'tr' },
++    { locale: 'en' },
++    { locale: 'sr' }
++  ];
++}
++
++// Metadata generation function
+ export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+   const { locale } = await params;
+   const titles = {
+@@ -57,6 +70,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata
+   };
+ }
+ 
++// Main page component
+ export default async function CardsPage({ params }: PageProps) {
+   const { locale } = await params;
+   const currentLocale = locale as 'tr' | 'en' | 'sr';
+

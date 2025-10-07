@@ -13,8 +13,8 @@ interface PerformanceMetrics {
 
 const TARGETS = {
   LCP: 2500, // 2.5s
-  INP: 200,  // 200ms (replaces FID)
-  CLS: 0.1,  // 0.1
+  INP: 200, // 200ms (replaces FID)
+  CLS: 0.1, // 0.1
   FCP: 1800, // 1.8s
   TTFB: 600, // 0.6s
   BUNDLE_SIZE: 500000, // 500KB
@@ -31,64 +31,80 @@ export function PerformanceMonitor() {
     };
 
     // Track Core Web Vitals
-    onCLS((metric) => {
+    onCLS(metric => {
       metrics.cls = metric.value;
       const meetsTarget = metric.value <= TARGETS.CLS;
-      console.log(`CLS: ${metric.value.toFixed(3)} (${meetsTarget ? '✅' : '❌'} target: ${TARGETS.CLS})`);
+      console.log(
+        `CLS: ${metric.value.toFixed(3)} (${meetsTarget ? '✅' : '❌'} target: ${TARGETS.CLS})`
+      );
     });
 
-    onINP((metric) => {
+    onINP(metric => {
       metrics.inp = metric.value;
       const meetsTarget = metric.value <= TARGETS.INP;
-      console.log(`INP: ${metric.value.toFixed(0)}ms (${meetsTarget ? '✅' : '❌'} target: ${TARGETS.INP}ms)`);
+      console.log(
+        `INP: ${metric.value.toFixed(0)}ms (${meetsTarget ? '✅' : '❌'} target: ${TARGETS.INP}ms)`
+      );
     });
 
-    onFCP((metric) => {
+    onFCP(metric => {
       metrics.fcp = metric.value;
       const meetsTarget = metric.value <= TARGETS.FCP;
-      console.log(`FCP: ${metric.value.toFixed(0)}ms (${meetsTarget ? '✅' : '❌'} target: ${TARGETS.FCP}ms)`);
+      console.log(
+        `FCP: ${metric.value.toFixed(0)}ms (${meetsTarget ? '✅' : '❌'} target: ${TARGETS.FCP}ms)`
+      );
     });
 
-    onLCP((metric) => {
+    onLCP(metric => {
       metrics.lcp = metric.value;
       const meetsTarget = metric.value <= TARGETS.LCP;
-      console.log(`LCP: ${metric.value.toFixed(0)}ms (${meetsTarget ? '✅' : '❌'} target: ${TARGETS.LCP}ms)`);
+      console.log(
+        `LCP: ${metric.value.toFixed(0)}ms (${meetsTarget ? '✅' : '❌'} target: ${TARGETS.LCP}ms)`
+      );
     });
 
-            onTTFB((metric) => {
-              metrics.ttfb = metric.value;
-              const meetsTarget = metric.value <= TARGETS.TTFB;
-              console.log(`TTFB: ${metric.value.toFixed(0)}ms (${meetsTarget ? '✅' : '❌'} target: ${TARGETS.TTFB}ms)`);
-            });
+    onTTFB(metric => {
+      metrics.ttfb = metric.value;
+      const meetsTarget = metric.value <= TARGETS.TTFB;
+      console.log(
+        `TTFB: ${metric.value.toFixed(0)}ms (${meetsTarget ? '✅' : '❌'} target: ${TARGETS.TTFB}ms)`
+      );
+    });
 
-            // Bundle size kontrolü
-            const checkBundleSize = () => {
-              const navigation = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming;
-              const bundleSize = navigation.transferSize;
-              const meetsTarget = bundleSize <= TARGETS.BUNDLE_SIZE;
-              console.log(`Bundle Size: ${(bundleSize/1024).toFixed(1)}KB (${meetsTarget ? '✅' : '❌'} target: ${(TARGETS.BUNDLE_SIZE/1024).toFixed(0)}KB)`);
-            };
-            
-            // Bundle size kontrolünü çalıştır
-            setTimeout(checkBundleSize, 1000);
+    // Bundle size kontrolü
+    const checkBundleSize = () => {
+      const navigation = performance.getEntriesByType(
+        'navigation'
+      )[0] as PerformanceNavigationTiming;
+      const bundleSize = navigation.transferSize;
+      const meetsTarget = bundleSize <= TARGETS.BUNDLE_SIZE;
+      console.log(
+        `Bundle Size: ${(bundleSize / 1024).toFixed(1)}KB (${meetsTarget ? '✅' : '❌'} target: ${(TARGETS.BUNDLE_SIZE / 1024).toFixed(0)}KB)`
+      );
+    };
+
+    // Bundle size kontrolünü çalıştır
+    setTimeout(checkBundleSize, 1000);
 
     // Monitor bundle size
-    const observer = new PerformanceObserver((list) => {
+    const observer = new PerformanceObserver(list => {
       for (const entry of list.getEntries()) {
         if (entry.entryType === 'resource') {
           const resource = entry as PerformanceResourceTiming;
           if (resource.name.includes('_next/static/chunks/')) {
             const sizeKB = Math.round(resource.transferSize / 1024);
             if (sizeKB > 100) {
-              console.warn(`Large chunk detected: ${resource.name} (${sizeKB}KB)`);
+              console.warn(
+                `Large chunk detected: ${resource.name} (${sizeKB}KB)`
+              );
             }
           }
         }
       }
     });
-    
+
     observer.observe({ entryTypes: ['resource'] });
-    
+
     return () => observer.disconnect();
   }, []);
 

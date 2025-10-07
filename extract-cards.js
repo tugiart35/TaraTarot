@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 // Read the file and split by objects
-let data = fs.readFileSync('blogtarot.txt', 'utf8');
+const data = fs.readFileSync('blogtarot.txt', 'utf8');
 
 // Split by "}, {" to separate objects
 const objects = data.split('}, {');

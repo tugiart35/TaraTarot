@@ -29,48 +29,53 @@ export function CardFAQ({ seo, locale }: CardFAQProps) {
 
         {/* FAQ Items */}
         <div className='space-y-4'>
-          {Array.isArray(seo.faq) && seo.faq.map((item, index) => {
-            // Handle both object and string formats
-            const question = typeof item === 'string' ? item : item?.question || '';
-            const answer = typeof item === 'string' ? `Answer for ${item}` : item?.answer || '';
-            
-            return (
-              <div
-                key={index}
-                className='bg-white rounded-lg shadow-md overflow-hidden'
-              >
-                <details className='group'>
-                  <summary className='flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50 transition-colors duration-200'>
-                    <h4 className='text-lg font-semibold text-gray-900 pr-4'>
-                      {question}
-                    </h4>
-                    <div className='flex-shrink-0'>
-                      <svg
-                        className='w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform duration-200'
-                        fill='none'
-                        stroke='currentColor'
-                        viewBox='0 0 24 24'
-                      >
-                        <path
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          strokeWidth={2}
-                          d='M19 9l-7 7-7-7'
-                        />
-                      </svg>
+          {Array.isArray(seo.faq) &&
+            seo.faq.map((item, index) => {
+              // Handle both object and string formats
+              const question =
+                typeof item === 'string' ? item : item?.question || '';
+              const answer =
+                typeof item === 'string'
+                  ? `Answer for ${item}`
+                  : item?.answer || '';
+
+              return (
+                <div
+                  key={index}
+                  className='bg-white rounded-lg shadow-md overflow-hidden'
+                >
+                  <details className='group'>
+                    <summary className='flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50 transition-colors duration-200'>
+                      <h4 className='text-lg font-semibold text-gray-900 pr-4'>
+                        {question}
+                      </h4>
+                      <div className='flex-shrink-0'>
+                        <svg
+                          className='w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform duration-200'
+                          fill='none'
+                          stroke='currentColor'
+                          viewBox='0 0 24 24'
+                        >
+                          <path
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
+                            strokeWidth={2}
+                            d='M19 9l-7 7-7-7'
+                          />
+                        </svg>
+                      </div>
+                    </summary>
+                    <div className='px-6 pb-6'>
+                      <div className='border-t border-gray-200 pt-4'>
+                        <p className='text-gray-700 leading-relaxed'>
+                          {answer}
+                        </p>
+                      </div>
                     </div>
-                  </summary>
-                  <div className='px-6 pb-6'>
-                    <div className='border-t border-gray-200 pt-4'>
-                      <p className='text-gray-700 leading-relaxed'>
-                        {answer}
-                      </p>
-                    </div>
-                  </div>
-                </details>
-              </div>
-            );
-          })}
+                  </details>
+                </div>
+              );
+            })}
         </div>
 
         {/* Additional Help */}

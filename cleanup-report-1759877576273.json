@@ -1,0 +1,30 @@
+{
+  "timestamp": "2025-10-07T22:52:56.273Z",
+  "strategy": "1",
+  "keysRemoved": ["technical.symbols.dash"],
+  "results": {
+    "tr": {
+      "removed": 1,
+      "failed": 0
+    },
+    "en": {
+      "removed": 0,
+      "failed": 1
+    },
+    "sr": {
+      "removed": 0,
+      "failed": 1
+    }
+  },
+  "backups": {
+    "tr": "/Users/tugi/Desktop/TaraTarot/messages/backups/tr.backup.2025-10-07T22-52-56.json",
+    "en": "/Users/tugi/Desktop/TaraTarot/messages/backups/en.backup.2025-10-07T22-52-56.json",
+    "sr": "/Users/tugi/Desktop/TaraTarot/messages/backups/sr.backup.2025-10-07T22-52-56.json"
+  },
+  "statistics": {
+    "before": 4215,
+    "after": 4214,
+    "removed": 1,
+    "percentReduced": 0.02
+  }
+}

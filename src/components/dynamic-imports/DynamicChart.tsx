@@ -22,7 +22,7 @@ export function DynamicChart({ data, type, onRender }: ChartProps) {
 
         // Dinamik olarak recharts kütüphanesini yükle
         const recharts = await dynamicImports.charts.recharts();
-        
+
         // Chart component'ini seç
         let component;
         switch (type) {
@@ -38,9 +38,9 @@ export function DynamicChart({ data, type, onRender }: ChartProps) {
           default:
             component = recharts.LineChart;
         }
-        
+
         setChartComponent(() => component);
-        
+
         if (onRender) {
           onRender(component);
         }
@@ -55,19 +55,19 @@ export function DynamicChart({ data, type, onRender }: ChartProps) {
   }, [type, onRender]);
 
   if (isLoading) {
-    return <div className="p-4">Chart yükleniyor...</div>;
+    return <div className='p-4'>Chart yükleniyor...</div>;
   }
 
   if (error) {
-    return <div className="p-4 text-red-500">{error}</div>;
+    return <div className='p-4 text-red-500'>{error}</div>;
   }
 
   if (!ChartComponent) {
-    return <div className="p-4">Chart component yüklenemedi</div>;
+    return <div className='p-4'>Chart component yüklenemedi</div>;
   }
 
   return (
-    <div className="p-4">
+    <div className='p-4'>
       <ChartComponent data={data} />
     </div>
   );

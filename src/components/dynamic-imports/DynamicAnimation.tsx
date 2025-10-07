@@ -9,7 +9,11 @@ interface AnimationProps {
   onAnimate?: (animation: any) => void;
 }
 
-export function DynamicAnimation({ children, animation, onAnimate }: AnimationProps) {
+export function DynamicAnimation({
+  children,
+  animation,
+  onAnimate,
+}: AnimationProps) {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [AnimationComponent, setAnimationComponent] = useState<any>(null);
@@ -22,7 +26,7 @@ export function DynamicAnimation({ children, animation, onAnimate }: AnimationPr
 
         // Dinamik olarak framer-motion kütüphanesini yükle
         const framerMotion = await dynamicImports.animations.framerMotion();
-        
+
         // Animation component'ini seç
         let component;
         switch (animation) {
@@ -38,14 +42,16 @@ export function DynamicAnimation({ children, animation, onAnimate }: AnimationPr
           default:
             component = framerMotion.motion.div;
         }
-        
+
         setAnimationComponent(() => component);
-        
+
         if (onAnimate) {
           onAnimate(component);
         }
       } catch (err) {
-        setError(err instanceof Error ? err.message : 'Animation yükleme hatası');
+        setError(
+          err instanceof Error ? err.message : 'Animation yükleme hatası'
+        );
       } finally {
         setIsLoading(false);
       }
@@ -55,15 +61,15 @@ export function DynamicAnimation({ children, animation, onAnimate }: AnimationPr
   }, [animation, onAnimate]);
 
   if (isLoading) {
-    return <div className="p-4">Animation yükleniyor...</div>;
+    return <div className='p-4'>Animation yükleniyor...</div>;
   }
 
   if (error) {
-    return <div className="p-4 text-red-500">{error}</div>;
+    return <div className='p-4 text-red-500'>{error}</div>;
   }
 
   if (!AnimationComponent) {
-    return <div className="p-4">{children}</div>;
+    return <div className='p-4'>{children}</div>;
   }
 
   // Animation props'ları
@@ -74,8 +80,6 @@ export function DynamicAnimation({ children, animation, onAnimate }: AnimationPr
   };
 
   return (
-    <AnimationComponent {...animationProps}>
-      {children}
-    </AnimationComponent>
+    <AnimationComponent {...animationProps}>{children}</AnimationComponent>
   );
 }

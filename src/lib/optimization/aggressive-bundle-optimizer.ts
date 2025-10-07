@@ -8,22 +8,22 @@ export const dynamicImports = {
     jsPDF: () => import('jspdf').then(mod => mod.default),
     html2canvas: () => import('html2canvas').then(mod => mod.default),
   },
-  
+
   // Grafik işlemleri - sadece gerektiğinde yükle
   charts: {
     recharts: () => import('recharts'),
   },
-  
+
   // Animasyonlar - sadece gerektiğinde yükle
   animations: {
     framerMotion: () => import('framer-motion'),
   },
-  
+
   // Browser automation - sadece gerektiğinde yükle
   automation: {
     puppeteer: () => import('puppeteer'),
   },
-  
+
   // Supabase - sadece gerektiğinde yükle
   database: {
     supabase: () => import('@supabase/supabase-js'),
@@ -33,13 +33,15 @@ export const dynamicImports = {
 // Bundle boyutunu izle
 export function monitorBundleSize() {
   if (typeof window !== 'undefined') {
-    const observer = new PerformanceObserver((list) => {
+    const observer = new PerformanceObserver(list => {
       for (const entry of list.getEntries()) {
         if (entry.entryType === 'resource') {
           const resource = entry as PerformanceResourceTiming;
           if (resource.name.includes('_next/static/chunks/')) {
             const sizeKB = (resource.transferSize / 1024).toFixed(2);
-            console.log(`Chunk: ${resource.name.split('/').pop()}, Size: ${sizeKB}KB`);
+            console.log(
+              `Chunk: ${resource.name.split('/').pop()}, Size: ${sizeKB}KB`
+            );
           }
         }
       }
@@ -56,37 +58,21 @@ export function cleanupUnusedCode() {
   // Bu fonksiyon build time'da çalışacak
   return {
     // Kullanılmayan import'ları tespit et
-    unusedImports: [
-      'date-fns',
-      'lodash',
-      'moment',
-      'dayjs',
-    ],
-    
+    unusedImports: ['date-fns', 'lodash', 'moment', 'dayjs'],
+
     // Kullanılmayan component'ları tespit et
-    unusedComponents: [
-      'unused-component-1',
-      'unused-component-2',
-    ],
+    unusedComponents: ['unused-component-1', 'unused-component-2'],
   };
 }
 
 // Bundle splitting stratejisi
 export const bundleSplittingStrategy = {
   // Kritik olmayan route'ları lazy load et
-  lazyRoutes: [
-    '/admin',
-    '/dashboard',
-    '/analytics',
-  ],
-  
+  lazyRoutes: ['/admin', '/dashboard', '/analytics'],
+
   // Ağır component'ları lazy load et
-  lazyComponents: [
-    'ChartComponent',
-    'PDFGenerator',
-    'AnimationComponent',
-  ],
-  
+  lazyComponents: ['ChartComponent', 'PDFGenerator', 'AnimationComponent'],
+
   // Vendor chunk'larını optimize et
   vendorOptimization: {
     react: { maxSize: 50000 }, // 50KB
@@ -111,15 +97,17 @@ export const performanceBudget = {
 export function checkBundleOptimization() {
   if (typeof window !== 'undefined') {
     const performance = window.performance;
-    const navigation = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming;
-    
+    const navigation = performance.getEntriesByType(
+      'navigation'
+    )[0] as PerformanceNavigationTiming;
+
     const metrics = {
       bundleSize: navigation.transferSize,
       lcp: 0, // LCP ayrı olarak ölçülecek
       cls: 0, // CLS ayrı olarak ölçülecek
       inp: 0, // INP ayrı olarak ölçülecek
     };
-    
+
     // Performance budget kontrolü
     const budgetCheck = {
       bundleSize: metrics.bundleSize <= performanceBudget.bundleSize,
@@ -127,10 +115,10 @@ export function checkBundleOptimization() {
       cls: metrics.cls <= performanceBudget.cls,
       inp: metrics.inp <= performanceBudget.inp,
     };
-    
+
     console.log('Performance Budget Check:', budgetCheck);
     return budgetCheck;
   }
-  
+
   return null;
 }

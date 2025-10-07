@@ -3,7 +3,6 @@
  * Handles image audit, optimization, and performance monitoring
  */
 
-
 export interface ImageAuditResult {
   totalImages: number;
   totalSize: number;

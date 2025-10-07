@@ -7,18 +7,22 @@ const urlMappings: Record<string, string> = {
   // Turkish
   '/tr/anasayfa': '/tr',
   '/tr/tarot-okuma': '/tr/tarotokumasi',
+  '/tr/tarot-reading': '/tr/tarotokumasi', // İngilizce'den geçiş için
   '/tr/giris': '/tr/auth',
   '/tr/panel': '/tr/dashboard',
 
   // English
   '/en/home': '/en',
   '/en/tarot-reading': '/en/tarotokumasi',
+  '/en/tarot-okuma': '/en/tarotokumasi', // Türkçe'den geçiş için
   '/en/numerology': '/en/numeroloji',
   '/en/login': '/en/auth',
 
   // Serbian
   '/sr/pocetna': '/sr',
   '/sr/tarot-citanje': '/sr/tarotokumasi',
+  '/sr/tarot-reading': '/sr/tarotokumasi', // İngilizce'den geçiş için
+  '/sr/tarot-okuma': '/sr/tarotokumasi', // Türkçe'den geçiş için
   '/sr/numerologija': '/sr/numeroloji',
   '/sr/prijava': '/sr/auth',
   '/sr/panel': '/sr/dashboard',

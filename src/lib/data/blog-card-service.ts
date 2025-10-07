@@ -1,4 +1,3 @@
-
 // Blog Card Service - Reads from tr.json blog section
 import trMessages from '../../../messages/tr.json';
 

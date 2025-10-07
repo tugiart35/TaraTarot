@@ -32,7 +32,9 @@ export interface MemoryOptimizationOptions {
 /**
  * Memory optimization hook
  */
-export function useMemoryOptimization(options: Partial<MemoryOptimizationOptions> = {}) {
+export function useMemoryOptimization(
+  options: Partial<MemoryOptimizationOptions> = {}
+) {
   const {
     enableCompression: _enableCompression = true,
     enableVirtualization: _enableVirtualization = true,

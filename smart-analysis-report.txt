@@ -1,0 +1,2100 @@
+════════════════════════════════════════════════════════════════════════════════
+              🔍 AKILLI TRANSLATION ANALİZ RAPORU
+════════════════════════════════════════════════════════════════════════════════
+
+📊 ÖZET
+────────────────────────────────────────────────────────────────────────────────
+Toplam Anahtar:           4214
+✅ Kullanılan:             0 (0.00%)
+🟡 Muhtemelen Kullanılan:  0
+❌ Kullanılmayan:          4211 (99.93%)
+⚪ Boş/Şüpheli:            3
+🔄 Tekrar Eden Değer:      400
+Analiz Tarihi:            08.10.2025 00:54:46
+
+
+⚪ BOŞ/ŞÜPHELİ DEĞERLER (HEPSİ)
+────────────────────────────────────────────────────────────────────────────────
+❗ ÖNCELİK: YÜKSEK - Bunlar hemen silinebilir
+
+• newLover.form.concernQuestion
+  Değer: "boş"
+  Sebep: Boş veya placeholder
+
+• newLover.form.emotionalQuestion
+  Değer: "boş"
+  Sebep: Boş veya placeholder
+
+• newLover.form.understandingQuestion
+  Değer: "boş"
+  Sebep: Boş veya placeholder
+
+
+❌ KULLANILMAYAN ANAHTARLAR
+────────────────────────────────────────────────────────────────────────────────
+Toplam: 4211 anahtar
+❗ ÖNCELİK: ORTA - Manuel kontrol sonrası silinebilir
+
+
+📁 ACCESSIBILITY Kategorisi (5 anahtar)
+────────────────────────────────────────
+  • accessibility.goToPage
+    "sayfasına git"
+  • accessibility.languageOptions
+    "Dil seçenekleri"
+  • accessibility.openLanguageMenu
+    "Dil seçici menüsünü aç"
+  • accessibility.selectLanguage
+    "dilini seç"
+  • accessibility.skipToMain
+    "Ana içeriğe geç"
+
+
+📁 ADMIN Kategorisi (4 anahtar)
+────────────────────────────────────────
+  • admin.errors.packagePurchaseError
+    "Paket satın alınırken bir hata oluştu. Lütfen tekrar deneyin..."
+  • admin.errors.positionRequired
+    "En az bir pozisyon eklemelisiniz"
+  • admin.errors.spreadSaveError
+    "Dizilim kaydedilirken hata oluştu"
+  • admin.success.profileUpdated
+    "Profil başarıyla güncellendi!"
+
+
+📁 AUTH Kategorisi (153 anahtar)
+────────────────────────────────────────
+  • auth.audit.loginFailed
+    "Başarısız giriş denemesi"
+  • auth.audit.loginSuccess
+    "Başarılı giriş"
+  • auth.audit.logout
+    "Çıkış yapıldı"
+  • auth.audit.passwordChanged
+    "Şifre değiştirildi"
+  • auth.audit.paymentMethodAdded
+    "Ödeme yöntemi eklendi"
+  • auth.audit.paymentMethodRemoved
+    "Ödeme yöntemi kaldırıldı"
+  • auth.audit.profileUpdated
+    "Profil güncellendi"
+  • auth.audit.securityAlert
+    "Güvenlik uyarısı"
+  • auth.audit.subscriptionCanceled
+    "Abonelik iptal edildi"
+  • auth.audit.subscriptionCreated
+    "Abonelik oluşturuldu"
+  • auth.audit.suspiciousActivity
+    "Şüpheli aktivite tespit edildi"
+  • auth.errors.allLanguagesRequired
+    "Lütfen tüm dillerde isim girin"
+  • auth.errors.apiKeyCreateError
+    "API key oluşturulurken hata oluştu"
+  • auth.errors.apiKeyUpdateError
+    "API key güncellenirken hata oluştu"
+  • auth.errors.loginRequired
+    "Lütfen giriş yapın"
+  • auth.errors.userSelectionRequired
+    "Lütfen bir kullanıcı seçin"
+  • auth.notice.accountCreated
+    "Hesap başarıyla oluşturuldu"
+  • auth.notice.checkEmail
+    "E-posta adresinizi kontrol edin ve üyeliğinizi onaylayın"
+  • auth.notice.confirmationEmailSent
+    "Onay e-postası gönderildi"
+  • auth.notice.confirmationFailed
+    "E-posta onayı başarısız oldu"
+  ... ve 133 anahtar daha
+
+
+📁 BLOG Kategorisi (1419 anahtar)
+────────────────────────────────────────
+  • blog.title
+    "Tarot Kartları Rehberi"
+  • blog.subtitle
+    "Her kartın derin anlamlarını keşfedin"
+  • blog.description
+    "Tarot kartlarının gizemli dünyasında yolculuğa çıkın. Her ka..."
+  • blog.cards.the-fool.name
+    "Deli (Joker) Tarot Kartı Anlamı"
+  • blog.cards.the-fool.short_description
+    "Joker ya da Deli tarot kartı; ruhsal yenilenme, özgür adımla..."
+  • blog.cards.the-fool.meanings.upright.general
+    "Evrenin seni yeni bir başlangıca çağırdığı bir dönemdesin. D..."
+  • blog.cards.the-fool.meanings.upright.love
+    "Aşk alanında Joker enerjisi; kalbini özgürleştiren, keşif do..."
+  • blog.cards.the-fool.meanings.upright.career
+    "Kariyerinde yeni deneyimlere ve bilinmeyene adım atma zamanı..."
+  • blog.cards.the-fool.meanings.upright.money
+    "Maddi konularda Joker, girişimsel fırsatların kapıda olduğun..."
+  • blog.cards.the-fool.meanings.upright.spiritual
+    "Ruhsal olarak bu kart, içsel çocuğunu hatırlamaya ve evrene ..."
+  • blog.cards.the-fool.meanings.reversed.general
+    "Deli kartı ters geldiğinde, yönsüzlük veya aceleyle alınan k..."
+  • blog.cards.the-fool.meanings.reversed.love
+    "Ters Joker; bağ kurmaktan kaçış veya yüzeysel ilişkilerle sı..."
+  • blog.cards.the-fool.meanings.reversed.career
+    "Hazırlıksız girişimler ve plansız adımlar kariyerinde karışı..."
+  • blog.cards.the-fool.meanings.reversed.money
+    "Maddi anlamda düşünmeden yapılan harcamalar veya riskli yatı..."
+  • blog.cards.the-fool.meanings.reversed.spiritual
+    "Ruhsal olarak yön kaybı ya da niyet eksikliği yaşayabilirsin..."
+  • blog.cards.the-fool.context.mythology
+    "Deli (Joker), Majör Arkana’nın ilk kartı olarak yaratımın sı..."
+  • blog.cards.the-fool.context.celtic_cross.future
+    "Gelecekte Deli kartı karşına çıktığında, seni bekleyen yeni ..."
+  • blog.cards.the-fool.context.celtic_cross.hidden_influences
+    "Gizli etkiler bölümünde Deli kartı belirdiğinde, içsel özgür..."
+  • blog.cards.the-fool.faq
+    "[object Object],[object Object],[object Object]"
+  • blog.cards.the-fool.related_cards
+    "the-magician,the-sun,the-tower"
+  ... ve 1399 anahtar daha
+
+
+📁 CARDGROUPS Kategorisi (5 anahtar)
+────────────────────────────────────────
+  • cardGroups.cups
+    "Kupalar"
+  • cardGroups.majorArcana
+    "Majör Arkana"
+  • cardGroups.pentacles
+    "Tılsımlar"
+  • cardGroups.swords
+    "Kılıçlar"
+  • cardGroups.wands
+    "Asalar"
+
+
+📁 CARDS Kategorisi (5 anahtar)
+────────────────────────────────────────
+  • cards.altText
+    "Tarot Kartı"
+  • cards.reversed
+    "Ters"
+  • cards.reversedMeaning
+    "Ters Anlam:"
+  • cards.upright
+    "Düz"
+  • cards.uprightMeaning
+    "Düz Anlam:"
+
+
+📁 CAREER Kategorisi (76 anahtar)
+────────────────────────────────────────
+  • career.data.badgeText
+    "KARİYER"
+  • career.data.cardDirections.reversed
+    "Ters"
+  • career.data.cardDirections.upright
+    "Düz"
+  • career.data.detailedTitle
+    "Kariyer Açılımı - Detaylı Kişisel Okuma"
+  • career.data.interpretationTitle
+    "Kariyer Açılımı Yorumu"
+  • career.data.readingFormats.detailed
+    "Sesli"
+  • career.data.readingFormats.simple
+    "Basit"
+  • career.data.readingFormats.written
+    "Yazılı"
+  • career.data.simpleInterpretation
+    "Basit okuma - sadece sayaç"
+  • career.data.simpleTitle
+    "Basit Okuma"
+  • career.data.spreadName
+    "Kariyer Yayılımı"
+  • career.data.spreadTitle
+    "Kariyer Açılımı"
+  • career.form.birthDate
+    "Doğum Tarihi"
+  • career.form.clearAll
+    "Tüm Kartları Temizle"
+  • career.form.communicationMethod
+    "İletişim Yöntemi"
+  • career.form.concernQuestion
+    "Kariyer konusunda en çok endişelendiğiniz şey nedir?"
+  • career.form.email
+    "E-posta"
+  • career.form.emailCommunication
+    "E-posta"
+  • career.form.emotionalQuestion
+    "Kariyer konusunda hangi duygusal engelleri yaşıyorsunuz?"
+  • career.form.firstName
+    "Ad"
+  ... ve 56 anahtar daha
+
+
+📁 COMMON Kategorisi (105 anahtar)
+────────────────────────────────────────
+  • common.cups
+    "Cups"
+  • common.pentacles
+    "Pentacles"
+  • common.swords
+    "Swords"
+  • common.wands
+    "Wands"
+  • common.three
+    "Three"
+  • common.four
+    "Four"
+  • common.five
+    "Five"
+  • common.seven
+    "Seven"
+  • common.eight
+    "Eight"
+  • common.nine
+    "Nine"
+  • common.page
+    "Page"
+  • common.knight
+    "Knight"
+  • common.queen
+    "Queen"
+  • common.king
+    "King"
+  • common.kupalar
+    "Kupalar"
+  • common.tilsimlar
+    "Tılsımlar"
+  • common.kiliclar
+    "Kılıçlar"
+  • common.asalar
+    "Asalar"
+  • common.kupovi
+    "Kupovi"
+  • common.pentakli
+    "Pentakli"
+  ... ve 85 anahtar daha
+
+
+📁 DASHBOARD Kategorisi (87 anahtar)
+────────────────────────────────────────
+  • dashboard.level
+    "Seviye"
+  • dashboard.creditPackages
+    "Kredi Paketleri"
+  • dashboard.kullanimlar
+    "Kullanımlar"
+  • dashboard.iadeler
+    "İadeler"
+  • dashboard.bonuslar
+    "Bonuslar"
+  • dashboard.kredi-gecmisi-yuklenirken
+    "Kredi geçmişi yüklenirken bir hata oluştu"
+  • dashboard.bonus
+    "Bonus"
+  • dashboard.iade
+    "İade"
+  • dashboard.kullanim
+    "Kullanım"
+  • dashboard.tarih
+    "Tarih"
+  • dashboard.miktar
+    "Miktar"
+  • dashboard.aciklama
+    "Açıklama"
+  • dashboard.dashboard
+    "Dashboard"
+  • dashboard.busbuskimki
+    "Büşbüşkimki"
+  • dashboard.kisisel-dashboard-sayfasi
+    "Kişisel dashboard sayfası"
+  • dashboard.personal-dashboard-page
+    "Personal dashboard page"
+  • dashboard.organization
+    "Organization"
+  • dashboard.audience
+    "Audience"
+  • dashboard.numeroloji-analizi
+    "Numeroloji analizi"
+  • dashboard.ask-acilimi
+    "Aşk açılımı"
+  ... ve 67 anahtar daha
+
+
+📁 DATABASE Kategorisi (43 anahtar)
+────────────────────────────────────────
+  • database.fields.adminAction
+    "Yönetici İşlemi"
+  • database.fields.amount
+    "Miktar"
+  • database.fields.birthDate
+    "Doğum Tarihi"
+  • database.fields.blob
+    "Blob"
+  • database.fields.canvas
+    "Canvas"
+  • database.fields.code
+    "Kod"
+  • database.fields.createdAt
+    "Oluşturulma Tarihi"
+  • database.fields.creditBalance
+    "Kredi Bakiyesi"
+  • database.fields.deltaCredits
+    "Kredi Değişimi"
+  • database.fields.displayName
+    "Görünen Ad"
+  • database.fields.email
+    "E-posta"
+  • database.fields.error
+    "Hata"
+  • database.fields.errorCode
+    "Hata Kodu"
+  • database.fields.firstName
+    "Ad"
+  • database.fields.fullName
+    "Tam Ad"
+  • database.fields.id
+    "Kimlik"
+  • database.fields.isAdmin
+    "Yönetici Mi"
+  • database.fields.key
+    "Anahtar"
+  • database.fields.lastName
+    "Soyad"
+  • database.fields.link
+    "Bağlantı"
+  ... ve 23 anahtar daha
+
+
+📁 ERRORS Kategorisi (10 anahtar)
+────────────────────────────────────────
+  • errors.contactSupport
+    "Destek ile İletişime Geç"
+  • errors.forbidden
+    "Erişim Engellendi"
+  • errors.goHome
+    "Ana Sayfaya Git"
+  • errors.maintenance
+    "Bakım Modu"
+  • errors.networkError
+    "Ağ Hatası"
+  • errors.pageNotFound
+    "Sayfa Bulunamadı"
+  • errors.serverError
+    "Sunucu Hatası"
+  • errors.timeout
+    "Zaman Aşımı"
+  • errors.tryAgain
+    "Tekrar Dene"
+  • errors.unauthorized
+    "Yetkisiz Erişim"
+
+
+📁 FOOTER Kategorisi (198 anahtar)
+────────────────────────────────────────
+  • footer.about.title
+    "Hakkımızda"
+  • footer.about.description
+    "Büşbüşkimki olarak, profesyonel tarot okuması ve numeroloji ..."
+  • footer.quickAccess.title
+    "Hızlı Erişim"
+  • footer.quickAccess.tarotReading
+    "Tarot Açılımı"
+  • footer.quickAccess.numerology
+    "Numeroloji Analizi"
+  • footer.quickAccess.loveReading
+    "Aşk Açılımı"
+  • footer.quickAccess.careerReading
+    "Kariyer Açılımı"
+  • footer.legal.title
+    "Yasal"
+  • footer.legal.privacyPolicy
+    "Gizlilik Politikası"
+  • footer.legal.termsOfUse
+    "Kullanım Şartları"
+  • footer.legal.kvkkDisclosure
+    "KVKK Aydınlatma"
+  • footer.legal.cookiePolicy
+    "Çerez Politikası"
+  • footer.legal.disclaimer
+    "Sorumluluk Reddi"
+  • footer.legal.refundPolicy
+    "Geri Ödeme Politikası"
+  • footer.legal.accessibility
+    "Erişilebilirlik Politikası"
+  • footer.legal.childPrivacy
+    "Çocuk Gizliliği Politikası"
+  • footer.legal.copyrightPolicy
+    "Telif Hakkı Politikası"
+  • footer.legal.paymentTerms
+    "Ödeme Şartları"
+  • footer.legal.securityPolicy
+    "Güvenlik Politikası"
+  • footer.legal.about
+    "Hakkımızda"
+  ... ve 178 anahtar daha
+
+
+📁 FORMS Kategorisi (8 anahtar)
+────────────────────────────────────────
+  • forms.confirmExit
+    "Form dolduruldu ancak kaydedilmedi. Çıkmak istediğinize emin..."
+  • forms.validation.birthDateRequired
+    "Doğum tarihi zorunludur."
+  • forms.validation.concernMinLength
+    "Bu soruya en az 10 karakterlik yanıt vermelisiniz."
+  • forms.validation.emailInvalid
+    "Geçerli bir e-posta adresi giriniz."
+  • forms.validation.emotionalMinLength
+    "Bu soruya en az 10 karakterlik yanıt vermelisiniz."
+  • forms.validation.nameMinLength
+    "Ad en az 3 karakter olmalıdır."
+  • forms.validation.surnameMinLength
+    "Soyad en az 3 karakter olmalıdır."
+  • forms.validation.understandingMinLength
+    "Bu soruya en az 10 karakterlik yanıt vermelisiniz."
+
+
+📁 GALLERY Kategorisi (6 anahtar)
+────────────────────────────────────────
+  • gallery.allPositionsFull
+    "Tüm pozisyonlar dolu"
+  • gallery.emptyDeck
+    "Kart destesi boş"
+  • gallery.nextPosition
+    "Sıradaki pozisyon:"
+  • gallery.scrollToSeeAll
+    "Kaydırarak tüm kartları görün"
+  • gallery.shuffle
+    "Karıştır"
+  • gallery.title
+    "Kart Galerisi"
+
+
+📁 HOME Kategorisi (33 anahtar)
+────────────────────────────────────────
+  • home.cta.button
+    "Ücretsiz Deneyin"
+  • home.cta.description
+    "Mistik yolculuğunuza bugün başlayın ve kaderinizin sırlarını..."
+  • home.cta.title
+    "Hemen Başlayın"
+  • home.features.authentic.description
+    "Geleneksel tarot ve numeroloji yöntemleri"
+  • home.features.authentic.title
+    "Orijinal Rehberlik"
+  • home.features.multilingual.description
+    "Türkçe, İngilizce ve Sırpça destek"
+  • home.features.multilingual.title
+    "Çok Dilli"
+  • home.features.personalized.description
+    "Size özel detaylı analizler"
+  • home.features.personalized.title
+    "Kişiselleştirilmiş"
+  • home.features.secure.description
+    "Verileriniz tamamen güvende"
+  • home.features.secure.title
+    "Güvenli"
+  • home.features.title
+    "Neden Bizi Seçmelisiniz?"
+  • home.footerText
+    "Mistik bilgilerin ışığında, iç dünyanızın derinliklerine yol..."
+  • home.hero.description
+    "Kartların ve sayıların gizemli dünyasında yolculuğa çıkın. P..."
+  • home.hero.subtitle
+    "Geleceğinizi Keşfedin, Kaderinizi Anlayın"
+  • home.hero.title
+    "Mistik Tarot & Numeroloji"
+  • home.services.numerology.button
+    "Numeroloji Analizi"
+  • home.services.numerology.description
+    "Sayıların sırlarını keşfedin. Yaşam yolunuzu, ifade sayınızı..."
+  • home.services.numerology.features
+    "Yaşam Yolu,İfade Sayısı,Ruhsal Arzu,Günlük Sayı"
+  • home.services.numerology.title
+    "Numeroloji Analizi"
+  ... ve 13 anahtar daha
+
+
+📁 HOMEPAGE Kategorisi (25 anahtar)
+────────────────────────────────────────
+  • homepage.features.authentic.description
+    "Geleneksel tarot ve numeroloji yöntemleri"
+  • homepage.features.authentic.title
+    "Orijinal Rehberlik"
+  • homepage.features.multilingual.description
+    "Türkçe, İngilizce ve Sırpça destek"
+  • homepage.features.multilingual.title
+    "Çok Dilli"
+  • homepage.features.personalized.description
+    "Size özel detaylı analizler"
+  • homepage.features.personalized.title
+    "Kişiselleştirilmiş"
+  • homepage.features.secure.description
+    "Verileriniz tamamen güvende"
+  • homepage.features.secure.title
+    "Güvenli"
+  • homepage.features.title
+    "Neden Bizi Seçmelisiniz?"
+  • homepage.hero.description
+    "Kartların ve sayıların gizemli dünyasında yolculuğa çıkın. P..."
+  • homepage.hero.subtitle
+    "Geleceğinizi Keşfedin, Kaderinizi Anlayın"
+  • homepage.hero.title
+    "Tarot Okuması & Numeroloji"
+  • homepage.seo.content
+    "Büşbüşkimki olarak, profesyonel tarot okuması ve numeroloji ..."
+  • homepage.services.numerology.button
+    "Numeroloji Analizi"
+  • homepage.services.numerology.description
+    "Sayıların sırlarını keşfedin. Yaşam yolunuzu, ifade sayınızı..."
+  • homepage.services.numerology.features
+    "Yaşam Yolu,İfade Sayısı,Ruhsal Arzu,Günlük Sayı"
+  • homepage.services.numerology.title
+    "Numeroloji Analizi"
+  • homepage.services.tarot.button
+    "Tarot Okuması"
+  • homepage.services.tarot.description
+    "Kartların gizemli dünyasında yolculuğa çıkın. Geçmiş, şimdi ..."
+  • homepage.services.tarot.features
+    "Aşk Açılımı,Kariyer Rehberliği,Günlük Rehberlik,Detaylı Yorumlama"
+  ... ve 5 anahtar daha
+
+
+📁 HTTP Kategorisi (7 anahtar)
+────────────────────────────────────────
+  • http.headers.cfConnectingIp
+    "CF-Connecting-IP"
+  • http.headers.userAgent
+    "User-Agent"
+  • http.headers.xForwardedFor
+    "X-Forwarded-For"
+  • http.headers.xForwardedHost
+    "X-Forwarded-Host"
+  • http.headers.xRealIp
+    "X-Real-IP"
+  • http.headers.xShopierSignature
+    "X-Shopier-Signature"
+  • http.headers.xVercelForwardedFor
+    "X-Vercel-Forwarded-For"
+
+
+📁 INTERPRETATION Kategorisi (9 anahtar)
+────────────────────────────────────────
+  • interpretation.badge
+    "TAROT"
+  • interpretation.cannotGenerate
+    "Tüm kartları seçmeden yorum oluşturulamaz."
+  • interpretation.context
+    "Bağlam:"
+  • interpretation.dearClient
+    "Sevgili danışan,"
+  • interpretation.loveLifeSummary
+    "Aşk Hayatı Özeti:"
+  • interpretation.loveReading
+    "Aşk Açılımı"
+  • interpretation.loveReadingDetailed
+    "Aşk Açılımı - Detaylı Kişisel Okuma"
+  • interpretation.placeholder
+    "Sorunuzu yazın…"
+  • interpretation.title
+    "Tarot Yorumu"
+
+
+📁 LANGUAGE Kategorisi (3 anahtar)
+────────────────────────────────────────
+  • language.english
+    "English"
+  • language.serbian
+    "Srpski"
+  • language.turkish
+    "Türkçe"
+
+
+📁 LEGAL Kategorisi (7 anahtar)
+────────────────────────────────────────
+  • legal.misyonumuz
+    "Misyonumuz"
+  • legal.vizyonumuz
+    "Vizyonumuz"
+  • legal.busbuskimki
+    "Büşbüşkimki"
+  • legal.uyumluluk-ve-destek
+    "Uyumluluk ve destek"
+  • legal.tam-klavye-destegi
+    "Tam klavye desteği"
+  • legal.iletisim
+    "İletişim"
+  • legal.mesajiniz
+    "Mesajınız"
+
+
+📁 LOVE Kategorisi (81 anahtar)
+────────────────────────────────────────
+  • love.cardGroups.cups
+    "Kupalar"
+  • love.cardGroups.majorArcana
+    "Majör Arkana"
+  • love.cardGroups.pentacles
+    "Tılsımlar"
+  • love.cardGroups.swords
+    "Kılıçlar"
+  • love.cardGroups.wands
+    "Asalar"
+  • love.cardGroups.tılsımlar
+    "Tılsımlar"
+  • love.data.badgeText
+    "AŞK"
+  • love.data.detailedTitle
+    "Aşk Açılımı - Detaylı Kişisel Okuma"
+  • love.data.interpretationTitle
+    "Aşk Açılımı Yorumu"
+  • love.data.simpleTitle
+    "Aşk Açılımı - Basit Okuma"
+  • love.data.spreadName
+    "Aşk Açılımı"
+  • love.data.spreadTitle
+    "Aşk Açılımı"
+  • love.form.birthDate
+    "Doğum Tarihi"
+  • love.form.clearAll
+    "🔄 Tümünü Temizle"
+  • love.form.communicationMethod
+    "İletişim Tercihi"
+  • love.form.concernQuestion
+    "Aşk hayatında şu an en çok aklını meşgul eden konu nedir?"
+  • love.form.email
+    "E-posta Adresiniz"
+  • love.form.emailCommunication
+    "E-posta"
+  • love.form.emotionalQuestion
+    "Şu anda duygusal olarak nasılsın? (ör. umutlu, belirsiz, yor..."
+  • love.form.firstName
+    "Adınız"
+  ... ve 61 anahtar daha
+
+
+📁 MAINTENANCE Kategorisi (5 anahtar)
+────────────────────────────────────────
+  • maintenance.su-anki-zaman
+    "Şu anki zaman"
+  • maintenance.yenile
+    "Yenile"
+  • maintenance.sistem-guncellemesi
+    "Sistem güncellemesi"
+  • maintenance.performans-iyilestirmesi
+    "Performans iyileştirmesi"
+  • maintenance.guvenlik-guncellemesi
+    "Güvenlik güncellemesi"
+
+
+📁 MARRIAGE Kategorisi (86 anahtar)
+────────────────────────────────────────
+  • marriage.credit.cancel
+    "İptal"
+  • marriage.credit.confirm
+    "Onayla"
+  • marriage.credit.description
+    "Bu okumayı kaydetmek için kredi kullanılacak. Devam etmek is..."
+  • marriage.credit.saving
+    "Kaydediliyor…"
+  • marriage.credit.title
+    "Kredi Onayı"
+  • marriage.data.badgeText
+    "Kart yorumları bilgilendirme amaçlıdır. Detaylı okumanız siz..."
+  • marriage.data.detailedTitle
+    "Evlilik Açılımı - Detaylı Kişisel Okuma"
+  • marriage.data.interpretationTitle
+    "Evlilik Açılımı Yorumu"
+  • marriage.data.spreadName
+    "Evlilik Açılımı"
+  • marriage.description
+    "Evlilik ve eş bulma yolculuğunuz için özel 10 kartlık açılım"
+  • marriage.form.birthDate
+    "Doğum Tarihiniz"
+  • marriage.form.birthDateRequired
+    "Doğum tarihi gerekli"
+  • marriage.form.cancel
+    "İptal"
+  • marriage.form.clearAll
+    "Tümünü Temizle"
+  • marriage.form.communicationMethod
+    "İletişim Yöntemi"
+  • marriage.form.concern
+    "Evlilik Endişeniz"
+  • marriage.form.concernQuestion
+    "Evlilik konusunda en çok endişelendiğiniz şey nedir?"
+  • marriage.form.concernRequired
+    "Endişe gerekli"
+  • marriage.form.continue
+    "Devam Et"
+  • marriage.form.email
+    "E-posta Adresiniz"
+  ... ve 66 anahtar daha
+
+
+📁 MEANINGS Kategorisi (4 anahtar)
+────────────────────────────────────────
+  • meanings.theFool.position1.context
+    "Bu kişi, aşk hayatında yeni bir sayfa açmaya hazır veya bund..."
+  • meanings.theFool.position1.keywords
+    "yeni başlangıçlar,masumiyet,spontanlık,risk almak,özgür ruh"
+  • meanings.theFool.position1.reversed
+    "Ters Fool, bu kişinin pervasız, sorumsuz veya bir ilişkiye b..."
+  • meanings.theFool.position1.upright
+    "İlgi duyduğun kişi, hayata karşı çocuksu bir merak ve heyeca..."
+
+
+📁 MESSAGES Kategorisi (270 anahtar)
+────────────────────────────────────────
+  • messages.accessibility.skipToMain
+    "Ana İçeriğe Geç"
+  • messages.common.back
+    "Geri"
+  • messages.common.buy
+    "Satın Al"
+  • messages.common.cancel
+    "İptal"
+  • messages.common.clear
+    "Temizle"
+  • messages.common.close
+    "Kapat"
+  • messages.common.confirm
+    "Onayla"
+  • messages.common.continue
+    "Devam Et"
+  • messages.common.copy
+    "Kopyala"
+  • messages.common.credits
+    "kredi"
+  • messages.common.delete
+    "Sil"
+  • messages.common.download
+    "İndir"
+  • messages.common.edit
+    "Düzenle"
+  • messages.common.error
+    "Hata"
+  • messages.common.filter
+    "Filtrele"
+  • messages.common.finish
+    "Bitir"
+  • messages.common.free
+    "Ücretsiz"
+  • messages.common.immediateAccess
+    "Anında Erişim"
+  • messages.common.info
+    "Bilgi"
+  • messages.common.loading
+    "Yükleniyor…"
+  ... ve 250 anahtar daha
+
+
+📁 MONEY Kategorisi (39 anahtar)
+────────────────────────────────────────
+  • money.data.badgeText
+    "PARA"
+  • money.data.detailedTitle
+    "Para Açılımı - Detaylı Kişisel Okuma"
+  • money.data.spreadName
+    "Para Açılımı"
+  • money.form.birthDate
+    "Doğum Tarihi"
+  • money.form.clearAll
+    "Tümünü Temizle"
+  • money.form.concernQuestion
+    "Hangi finansal durumu analiz etmek istiyorsunuz?"
+  • money.form.email
+    "E-posta"
+  • money.form.emotionalQuestion
+    "Para konusunda şu anda nasıl hissediyorsunuz?"
+  • money.form.firstName
+    "Ad"
+  • money.form.lastName
+    "Soyad"
+  • money.form.questions
+    "Sorular"
+  • money.form.saveAndOpen
+    "Kaydet ve Aç"
+  • money.form.saving
+    "Kaydediliyor…"
+  • money.form.understandingQuestion
+    "Bu para açılımı ile neyi anlamak istiyorsunuz?"
+  • money.modals.aboutSpread
+    "Açılım Hakkında"
+  • money.modals.aboutSpreadText
+    "Para açılımı, finansal durumunuzu ve para konusundaki fırsat..."
+  • money.modals.cancel
+    "İptal"
+  • money.modals.cardCount
+    "Kart Sayısı"
+  • money.modals.cardCountText
+    "Bu açılım 6 kart kullanır ve finansal durumunuzu kapsamlı bi..."
+  • money.modals.confirm
+    "Onayla"
+  ... ve 19 anahtar daha
+
+
+📁 NAV Kategorisi (14 anahtar)
+────────────────────────────────────────
+  • nav.about
+    "Hakkında"
+  • nav.breadcrumb
+    "Yol"
+  • nav.contact
+    "İletişim"
+  • nav.dashboard
+    "Panel"
+  • nav.help
+    "Yardım"
+  • nav.home
+    "Ana Sayfa"
+  • nav.login
+    "Giriş"
+  • nav.logout
+    "Çıkış"
+  • nav.menu
+    "Menü"
+  • nav.privacy
+    "Gizlilik"
+  • nav.profile
+    "Profil"
+  • nav.register
+    "Kayıt Ol"
+  • nav.settings
+    "Ayarlar"
+  • nav.terms
+    "Şartlar"
+
+
+📁 NAVIGATION Kategorisi (7 anahtar)
+────────────────────────────────────────
+  • navigation.auth
+    "Giriş yap"
+  • navigation.dashboard
+    "Dashboard"
+  • navigation.home
+    "Anasayfa"
+  • navigation.numerology
+    "Numeroloji"
+  • navigation.pakize
+    "Pakize"
+  • navigation.profile
+    "Profil"
+  • navigation.tarot
+    "Tarot"
+
+
+📁 NEWLOVER Kategorisi (69 anahtar)
+────────────────────────────────────────
+  • newLover.credit.cancel
+    "İptal"
+  • newLover.credit.confirm
+    "Onayla"
+  • newLover.credit.description
+    "Bu okumayı kaydetmek için kredi kullanılacak. Devam etmek is..."
+  • newLover.credit.saving
+    "Kaydediliyor…"
+  • newLover.credit.title
+    "Kredi Onayı"
+  • newLover.data.badgeText
+    "YENİ AŞK"
+  • newLover.data.detailedTitle
+    "Yeni Aşk Açılımı - Detaylı Kişisel Okuma"
+  • newLover.data.spreadName
+    "Yeni Aşk Açılımı"
+  • newLover.description
+    "Yeni bir aşk ilişkisi için 6 kartlık özel açılım"
+  • newLover.form.birthDate
+    "Doğum Tarihiniz"
+  • newLover.form.birthDateRequired
+    "Doğum tarihi gerekli"
+  • newLover.form.cancel
+    "İptal"
+  • newLover.form.clearAll
+    "Tümünü Temizle"
+  • newLover.form.communicationMethod
+    "İletişim Tercihi"
+  • newLover.form.concern
+    "Aşk Endişeniz"
+  • newLover.form.concernRequired
+    "Endişe gerekli"
+  • newLover.form.continue
+    "Devam Et"
+  • newLover.form.email
+    "E-posta Adresiniz"
+  • newLover.form.emailCommunication
+    "E-posta"
+  • newLover.form.emailRequired
+    "E-posta gerekli"
+  ... ve 49 anahtar daha
+
+
+📁 NUMEROLOGY Kategorisi (217 anahtar)
+────────────────────────────────────────
+  • numerology.birthdayMeanings.1
+    "Doğum günü sayısı 1 olan kişiler güçlü bir bireysellik duygu..."
+  • numerology.birthdayMeanings.2
+    "Doğum günü sayısı 2 olanlar uyum, denge ve ilişkiler üzerine..."
+  • numerology.birthdayMeanings.3
+    "Doğum günü 3 olan kişiler hayatın sahnesine yaratıcı, enerji..."
+  • numerology.birthdayMeanings.4
+    "Doğum günü sayısı 4 olanlar düzen, disiplin ve yapı getiren ..."
+  • numerology.birthdayMeanings.5
+    "Doğum günü sayısı 5 olanlar özgürlüğün, maceranın ve değişim..."
+  • numerology.birthdayMeanings.6
+    "Doğum günü 6 olan kişiler sevgi, uyum ve sorumluluk enerjisi..."
+  • numerology.birthdayMeanings.7
+    "Doğum günü 7 olanlar araştırmacı, derin düşünen ve sezgisel ..."
+  • numerology.birthdayMeanings.8
+    "Doğum günü sayısı 8 olan kişiler gücün, yönetimin ve maddi b..."
+  • numerology.birthdayMeanings.9
+    "Doğum günü 9 olanlar şefkatli, idealist ve sanatsal ruhlu ki..."
+  • numerology.birthdayMeanings.11
+    "Doğum günü sayısı 11 olanlar sezgisel, vizyoner ve ruhsal aç..."
+  • numerology.birthdayMeanings.22
+    "Doğum günü 22 olanlar büyük vizyonların kurucusudur. Onlar g..."
+  • numerology.birthdayMeanings.33
+    "Doğum günü 33 olanlar koşulsuz sevgi, şefkat ve şifa enerjis..."
+  • numerology.calculators.birthdayNumber
+    "Doğum Günü"
+  • numerology.calculators.compatibility
+    "Uyum Analizi"
+  • numerology.calculators.expressionDestiny
+    "İfade/Kader"
+  • numerology.calculators.lifePath
+    "Yaşam Yolu"
+  • numerology.calculators.maturity
+    "Olgunluk"
+  • numerology.calculators.personalCycles
+    "Kişisel Döngüler"
+  • numerology.calculators.personality
+    "Kişilik"
+  • numerology.calculators.pinnaclesChallenges
+    "Zirveler/Zorluklar"
+  ... ve 197 anahtar daha
+
+
+📁 NUMEROLOGYRESULT Kategorisi (31 anahtar)
+────────────────────────────────────────
+  • numerologyResult.backButton
+    "Geri Dön"
+  • numerologyResult.calculating
+    "Hesaplanıyor..."
+  • numerologyResult.calculationDetails
+    "Hesaplama Detayları"
+  • numerologyResult.calculationError
+    "Numeroloji hesaplaması yapılamadı."
+  • numerologyResult.challenges
+    "Zorluklar"
+  • numerologyResult.compatibilityAnalysis
+    "Uyum Analizi"
+  • numerologyResult.compatibilityScore
+    "Uyum Skoru"
+  • numerologyResult.error
+    "Hata"
+  • numerologyResult.invalidType
+    "Geçersiz numeroloji tipi"
+  • numerologyResult.loading
+    "Yükleniyor..."
+  • numerologyResult.masterNumber
+    "Master Sayı"
+  • numerologyResult.missingParams
+    "Eksik parametreler"
+  • numerologyResult.newCalculation
+    "Yeni Hesaplama"
+  • numerologyResult.notes
+    "Notlar:"
+  • numerologyResult.personalCycles
+    "Kişisel Döngüler"
+  • numerologyResult.personalDay
+    "Kişisel Gün"
+  • numerologyResult.personalMonth
+    "Kişisel Ay"
+  • numerologyResult.personalYear
+    "Kişisel Yıl"
+  • numerologyResult.pinnacles
+    "Zirveler"
+  • numerologyResult.print
+    "Yazdır"
+  ... ve 11 anahtar daha
+
+
+📁 PAYMENT Kategorisi (13 anahtar)
+────────────────────────────────────────
+  • payment.cancel.description
+    "Ödeme işlemi iptal edildi. Kredi paketinizi tekrar satın ala..."
+  • payment.cancel.goToDashboard
+    "Dashboard'a Dön"
+  • payment.cancel.title
+    "Ödeme İptal Edildi"
+  • payment.cancel.viewPackages
+    "Kredi Paketleri"
+  • payment.error.description
+    "Ödeme işlemi tamamlanamadı"
+  • payment.error.invalidOrderId
+    "Geçersiz sipariş numarası"
+  • payment.error.title
+    "Ödeme Hatası"
+  • payment.success.checkingStatus
+    "Ödeme durumu kontrol ediliyor..."
+  • payment.success.creditsAdded
+    "+{credits} Kredi"
+  • payment.success.creditsAddedDescription
+    "Krediler hesabınıza eklendi"
+  • payment.success.goToDashboard
+    "Dashboard'a Git"
+  • payment.success.packagePurchased
+    "{packageName} başarıyla satın alındı"
+  • payment.success.title
+    "Ödeme Başarılı!"
+
+
+📁 PROBLEMSOLVING Kategorisi (88 anahtar)
+────────────────────────────────────────
+  • problemSolving.data.badgeText
+    "PROBLEM ÇÖZME"
+  • problemSolving.data.cardDirections.reversed
+    "Ters"
+  • problemSolving.data.cardDirections.upright
+    "Düz"
+  • problemSolving.data.dearClient
+    "Sevgili danışan,"
+  • problemSolving.data.defaultTitle
+    "Problem Çözme Açılımı"
+  • problemSolving.data.detailedReadingTitle
+    "Problem Çözme Açılımı - Detaylı Kişisel Okuma"
+  • problemSolving.data.detailedTitle
+    "Problem Çözme Açılımı - Detaylı Kişisel Okuma"
+  • problemSolving.data.interpretationTitle
+    "Problem Çözme Açılımı"
+  • problemSolving.data.readingFormats.detailed
+    "Sesli"
+  • problemSolving.data.readingFormats.simple
+    "Basit"
+  • problemSolving.data.readingFormats.written
+    "Yazılı"
+  • problemSolving.data.reversed
+    "Ters"
+  • problemSolving.data.simpleInterpretation
+    "Basit okuma - sadece sayaç"
+  • problemSolving.data.simpleReadingCounter
+    "Basit okuma - sadece sayaç"
+  • problemSolving.data.simpleTitle
+    "Basit Okuma"
+  • problemSolving.data.spreadName
+    "Problem Çözme Yayılımı"
+  • problemSolving.data.spreadTitle
+    "Problem Çözme Açılımı"
+  • problemSolving.data.upright
+    "Düz"
+  • problemSolving.errors.allCardsRequired
+    "Tüm kartları seçmeden yorum oluşturulamaz."
+  • problemSolving.errors.configNotFound
+    "Problem Çözme Açılımı konfigürasyonu bulunamadı. Lütfen taro..."
+  ... ve 68 anahtar daha
+
+
+📁 PROFILE Kategorisi (2 anahtar)
+────────────────────────────────────────
+  • profile.personalInfo
+    "Kişisel Bilgiler"
+  • profile.firstName
+    "Ad"
+
+
+📁 PROFILE2 Kategorisi (1 anahtar)
+────────────────────────────────────────
+  • profile2.noName
+    "İsim Belirtilmemiş"
+
+
+📁 READING Kategorisi (53 anahtar)
+────────────────────────────────────────
+  • reading.actions.continueReading
+    "Okumaya Devam Et"
+  • reading.actions.interpretCards
+    "Kartları Yorumla"
+  • reading.actions.newReading
+    "Yeni Okuma"
+  • reading.actions.revealCards
+    "Kartları Aç"
+  • reading.actions.saveReading
+    "Okumayı Kaydet"
+  • reading.actions.selectCards
+    "Kartları Seç"
+  • reading.actions.shareReading
+    "Okumayı Paylaş"
+  • reading.actions.shuffleCards
+    "Kartları Karıştır"
+  • reading.actions.startReading
+    "Okumayı Başlat"
+  • reading.messages.adminRequired
+    "Ses okuma için yetersiz kredi"
+  • reading.messages.buyCredits
+    "Kredi Satın Al"
+  • reading.messages.cardsLocked
+    "Kartlar Kilitli"
+  • reading.messages.creditsRequired
+    "kredi gerekli"
+  • reading.messages.detailedDescription
+    "Sana özel sesli yorum"
+  • reading.messages.detailedSelected
+    "Sesli okuma seçildi"
+  • reading.messages.goToCredits
+    "Kredi Sayfasına Git"
+  • reading.messages.insufficientCredits
+    "Yetersiz kredi"
+  • reading.messages.noSelection
+    "Bir okuma türü seçin"
+  • reading.messages.selectReadingTypeFirst
+    "Kartları seçmek için önce bir okuma tipi seçmelisiniz."
+  • reading.messages.simpleDescription
+    "Kısa yazılı yorum"
+  ... ve 33 anahtar daha
+
+
+📁 READINGMODAL Kategorisi (36 anahtar)
+────────────────────────────────────────
+  • readingModal.birthDate
+    "Doğum Tarihi"
+  • readingModal.cardspreadmeaning2
+    "İlişkiler ve duygusal bağlar için 4 kartlık özel açılım"
+  • readingModal.close
+    "Kapat"
+  • readingModal.completed
+    "Tamamlandı"
+  • readingModal.creditCost
+    "Kredi Maliyeti"
+  • readingModal.downloadPdf
+    "PDF İndir"
+  • readingModal.email
+    "E-posta"
+  • readingModal.filePrefix
+    "tarot-okuma"
+  • readingModal.firstName
+    "Ad"
+  • readingModal.generalSpread
+    "Genel Yayılım"
+  • readingModal.interpretation
+    "Mistik Yorum"
+  • readingModal.interpretationDesc
+    "Tarot kartlarının anlamı ve rehberliği"
+  • readingModal.lastName
+    "Soyad"
+  • readingModal.loveSpread
+    "Aşk Açılımı"
+  • readingModal.loveSpreadName
+    "Aşk Açılımı"
+  • readingModal.mysticNotes
+    "Kişisel notlarını kaydetmek için bu okumanın PDF'ini indireb..."
+  • readingModal.mysticReading
+    "Tarot Okuma"
+  • readingModal.noInterpretation
+    "Bu kart için yorum henüz hazırlanmamış."
+  • readingModal.pdfError
+    "PDF oluşturulurken bir hata oluştu. Lütfen tekrar deneyin."
+  • readingModal.pending
+    "Beklemede"
+  ... ve 16 anahtar daha
+
+
+📁 READINGS Kategorisi (46 anahtar)
+────────────────────────────────────────
+  • readings.allExperiences
+    "Tüm mistik deneyimleriniz"
+  • readings.allTime
+    "Tüm Zamanlar"
+  • readings.allTypes
+    "Tüm Türler"
+  • readings.careerReading
+    "Kariyer Okuması"
+  • readings.careerSpread
+    "Kariyer Yayılımı"
+  • readings.clearFilters
+    "Filtreleri Temizle"
+  • readings.credits
+    "kredi"
+  • readings.firstExperience
+    "İlk mistik deneyiminizi yaşamaya hazır mısınız? Tarot kartla..."
+  • readings.format.audio
+    "Sesli Okuma"
+  • readings.format.simple
+    "Basit Okuma"
+  • readings.format.written
+    "Yazılı Okuma"
+  • readings.formatLabel
+    "Okuma Formatı"
+  • readings.generalReading
+    "Genel Okuma"
+  • readings.generalReadings
+    "Genel Okumalar"
+  • readings.generalSpread
+    "Genel Yayılım"
+  • readings.lastMonth
+    "Son 1 Ay"
+  • readings.lastWeek
+    "Son 1 Hafta"
+  • readings.lastYear
+    "Son 1 Yıl"
+  • readings.loadMore
+    "Daha Fazla Yükle"
+  • readings.loading
+    "Okumalar Yükleniyor"
+  ... ve 26 anahtar daha
+
+
+📁 RELATIONSHIPANALYSIS Kategorisi (59 anahtar)
+────────────────────────────────────────
+  • relationshipAnalysis.data.badgeText
+    "İLİŞKİ ANALİZİ"
+  • relationshipAnalysis.data.cardDirections.reversed
+    "Ters"
+  • relationshipAnalysis.data.cardDirections.upright
+    "Düz"
+  • relationshipAnalysis.data.defaultTitle
+    "İlişki Analizi Açılımı"
+  • relationshipAnalysis.data.detailedReadingTitle
+    "İlişki Analizi Açılımı - Detaylı Kişisel Okuma"
+  • relationshipAnalysis.data.detailedTitle
+    "İlişki Analizi Açılımı - Detaylı Kişisel Okuma"
+  • relationshipAnalysis.data.interpretationTitle
+    "İlişki Analizi Açılımı Yorumu"
+  • relationshipAnalysis.data.readingFormats.detailed
+    "Sesli"
+  • relationshipAnalysis.data.readingFormats.simple
+    "Basit"
+  • relationshipAnalysis.data.readingFormats.written
+    "Yazılı"
+  • relationshipAnalysis.data.simpleInterpretation
+    "Basit okuma - sadece sayaç"
+  • relationshipAnalysis.data.simpleTitle
+    "Basit Okuma"
+  • relationshipAnalysis.data.spreadName
+    "İlişki Analizi Açılımı"
+  • relationshipAnalysis.data.spreadTitle
+    "İlişki Analizi Açılımı"
+  • relationshipAnalysis.form.birthDate
+    "Doğum Tarihi"
+  • relationshipAnalysis.form.clearAll
+    "🔄 Tümünü Temizle"
+  • relationshipAnalysis.form.communicationMethod
+    "İletişim Yöntemi"
+  • relationshipAnalysis.form.concernQuestion
+    "Hangi ilişki durumunu analiz etmek istiyorsunuz?"
+  • relationshipAnalysis.form.email
+    "E-posta Adresiniz"
+  • relationshipAnalysis.form.emailCommunication
+    "E-posta"
+  ... ve 39 anahtar daha
+
+
+📁 RELATIONSHIPPROBLEMS Kategorisi (63 anahtar)
+────────────────────────────────────────
+  • relationshipProblems.data.badgeText
+    "Kart yorumları bilgilendirme amaçlıdır. Detaylı okumanız siz..."
+  • relationshipProblems.data.cardDirections.reversed
+    "Ters"
+  • relationshipProblems.data.cardDirections.upright
+    "Düz"
+  • relationshipProblems.data.defaultTitle
+    "İlişki Sorunları Açılımı"
+  • relationshipProblems.data.detailedReadingTitle
+    "İlişki Sorunları Açılımı - Detaylı Kişisel Okuma"
+  • relationshipProblems.data.detailedTitle
+    "İlişki Sorunları Açılımı - Detaylı Kişisel Okuma"
+  • relationshipProblems.data.interpretationTitle
+    "İlişki Sorunları Açılımı"
+  • relationshipProblems.data.readingFormats.detailed
+    "Sesli"
+  • relationshipProblems.data.readingFormats.simple
+    "Basit"
+  • relationshipProblems.data.readingFormats.written
+    "Yazılı"
+  • relationshipProblems.data.simpleInterpretation
+    "Basit okuma - sadece sayaç"
+  • relationshipProblems.data.simpleTitle
+    "Basit Okuma"
+  • relationshipProblems.data.spreadName
+    "İlişki Sorunları Açılımı"
+  • relationshipProblems.data.spreadTitle
+    "İlişki Sorunları Açılımı"
+  • relationshipProblems.form.birthDate
+    "Doğum Tarihi"
+  • relationshipProblems.form.clearAll
+    "🔄 Tümünü Temizle"
+  • relationshipProblems.form.communicationMethod
+    "İletişim Yöntemi"
+  • relationshipProblems.form.concernQuestion
+    "Hangi ilişki sorununu analiz etmek istiyorsunuz?"
+  • relationshipProblems.form.email
+    "E-posta Adresiniz"
+  • relationshipProblems.form.emailCommunication
+    "E-posta"
+  ... ve 43 anahtar daha
+
+
+📁 SEO Kategorisi (6 anahtar)
+────────────────────────────────────────
+  • seo.description
+    "Büşbüşkimki’nin sıcak ve profesyonel rehberliğiyle aşk, kari..."
+  • seo.keywords
+    "tarot, okuma, kader, aşk, kariyer, sağlık, rehberlik, kartla..."
+  • seo.ogDescription
+    "Kalbine iyi gelen, güvenilir ve şefkatli yorumlar. Aşk, kari..."
+  • seo.ogImage
+    "/images/og-image.webp"
+  • seo.ogTitle
+    "Büşbüşkimki Tarot — Şifalı Tarot Okumaları"
+  • seo.title
+    "Büşbüşkimki Tarot — Şifalı Tarot Okumaları"
+
+
+📁 SETTINGS Kategorisi (55 anahtar)
+────────────────────────────────────────
+  • settings.accountDeleteError
+    "Hesap silinirken hata oluştu."
+  • settings.accountDeletedSuccess
+    "Hesabınız başarıyla silindi."
+  • settings.accountSettings
+    "Hesap Ayarları"
+  • settings.analyticsData
+    "Analitik Veriler"
+  • settings.analyticsDataDesc
+    "Hizmet kalitesini artırmak için anonim veriler toplansın"
+  • settings.backToDashboard
+    "Dashboard'a Dön"
+  • settings.cancel
+    "İptal"
+  • settings.changePassword
+    "Şifre Değiştir"
+  • settings.changePasswordDesc
+    "Hesap güvenliğiniz için şifrenizi güncelleyin"
+  • settings.confirmPassword
+    "Yeni Şifre Tekrar"
+  • settings.confirmPasswordPlaceholder
+    "Yeni şifrenizi tekrar girin"
+  • settings.currentPassword
+    "Mevcut Şifre"
+  • settings.currentPasswordPlaceholder
+    "Mevcut şifrenizi girin"
+  • settings.dataExportError
+    "Veri indirme sırasında hata oluştu."
+  • settings.dataExportedSuccess
+    "Verileriniz başarıyla indirildi!"
+  • settings.dataManagement
+    "Veri Yönetimi"
+  • settings.delete
+    "Sil"
+  • settings.deleteAccount
+    "Hesap Sil"
+  • settings.deleteAccountConfirm
+    "Hesabınızı silmek istediğinizden emin misiniz? Bu işlem geri..."
+  • settings.deleteAccountDesc
+    "Hesabınızı ve tüm verilerinizi kalıcı olarak silin"
+  ... ve 35 anahtar daha
+
+
+📁 SHARED Kategorisi (31 anahtar)
+────────────────────────────────────────
+  • shared.dashboard
+    "Dashboard"
+  • shared.pakize
+    "Pakize"
+  • shared.profil
+    "Profil"
+  • shared.ana-navigasyon-menusu
+    "Ana navigasyon menüsü"
+  • shared.hakkimizda
+    "Hakkımızda"
+  • shared.yasal
+    "Yasal"
+  • shared.iletisim
+    "İletişim"
+  • shared.guvenli-odeme
+    "Güvenli ödeme"
+  • shared.turkish
+    "Turkish"
+  • shared.turkce
+    "Türkçe"
+  • shared.english
+    "English"
+  • shared.srpski
+    "Srpski"
+  • shared.dil-sec
+    "Dil seç"
+  • shared.kapat
+    "Kapat"
+  • shared.ters
+    "Ters"
+  • shared.tum-pozisyonlar-dolu
+    "Tüm pozisyonlar dolu"
+  • shared.karistir
+    "Karıştır"
+  • shared.kaydirarak-tum-kartlari
+    "Kaydırarak tüm kartları görün"
+  • shared.kart-destesi-bos
+    "Kart destesi boş"
+  • shared.kart
+    "Kart"
+  ... ve 11 anahtar daha
+
+
+📁 SITUATIONANALYSIS Kategorisi (72 anahtar)
+────────────────────────────────────────
+  • situationAnalysis.data.badgeText
+    "DURUM ANALİZİ"
+  • situationAnalysis.data.cardDirections.reversed
+    "Ters"
+  • situationAnalysis.data.cardDirections.upright
+    "Düz"
+  • situationAnalysis.data.defaultTitle
+    "Durum Analizi Açılımı"
+  • situationAnalysis.data.detailedReadingTitle
+    "Durum Analizi Açılımı - Detaylı Kişisel Okuma"
+  • situationAnalysis.data.detailedTitle
+    "Durum Analizi Açılımı - Detaylı Kişisel Okuma"
+  • situationAnalysis.data.interpretationTitle
+    "Durum Analizi Açılımı Yorumu"
+  • situationAnalysis.data.readingFormats.detailed
+    "Sesli"
+  • situationAnalysis.data.readingFormats.simple
+    "Basit"
+  • situationAnalysis.data.readingFormats.written
+    "Yazılı"
+  • situationAnalysis.data.simpleInterpretation
+    "Basit okuma - sadece sayaç"
+  • situationAnalysis.data.simpleTitle
+    "Basit Okuma"
+  • situationAnalysis.data.spreadName
+    "Durum Analizi Açılımı"
+  • situationAnalysis.data.spreadTitle
+    "Durum Analizi Açılımı"
+  • situationAnalysis.errors.allCardsRequired
+    "Tüm kartları seçmeden yorum oluşturulamaz."
+  • situationAnalysis.errors.configNotFound
+    "Durum Analizi Açılımı konfigürasyonu bulunamadı. Lütfen taro..."
+  • situationAnalysis.form.birthDate
+    "Doğum Tarihi"
+  • situationAnalysis.form.clearAll
+    "🔄 Tümünü Temizle"
+  • situationAnalysis.form.concernQuestion
+    "Hangi durumu analiz etmek istiyorsunuz?"
+  • situationAnalysis.form.email
+    "E-posta Adresiniz"
+  ... ve 52 anahtar daha
+
+
+📁 SPREADS Kategorisi (157 anahtar)
+────────────────────────────────────────
+  • spreads.career.description
+    "Kariyer ve iş hayatı için 7 kartlık özel açılım"
+  • spreads.career.name
+    "Kariyer Açılımı"
+  • spreads.career.positions.1.description
+    "Mevcut kariyerinizin gerçekten istediğiniz kariyer olup olma..."
+  • spreads.career.positions.1.title
+    "Gerçekten istediğim kariyer bu mu?"
+  • spreads.career.positions.2.description
+    "Kariyerinizi ilerletmek için atabileceğiniz somut adımlar"
+  • spreads.career.positions.2.title
+    "Kariyerimi geliştirmek için hangi adımları atabilirim?"
+  • spreads.career.positions.3.description
+    "Kariyerinizde kontrol edemediğiniz veya değiştiremediğiniz u..."
+  • spreads.career.positions.3.title
+    "Kariyerimde değiştiremediğim taraflar var mı?"
+  • spreads.career.positions.4.description
+    "Şu anki kariyerinizde gösterdiğiniz performans ve çaba seviy..."
+  • spreads.career.positions.4.title
+    "Kariyerimde elimden gelenin en iyisini yapıyor muyum?"
+  • spreads.career.positions.5.description
+    "Kariyerinize olumlu katkı sağlayacak değişiklikler ve iyileş..."
+  • spreads.career.positions.5.title
+    "Kariyerime yardımcı olacak ne gibi değişiklikler yapabilirim..."
+  • spreads.career.positions.6.description
+    "Geçmiş deneyimlerinizin mevcut kariyerinizi nasıl etkilediği"
+  • spreads.career.positions.6.title
+    "Geçmişimdeki hangi engeller şimdiki kariyerimi etkiliyor?"
+  • spreads.career.positions.7.description
+    "Kariyer yolculuğunuzun genel sonucu ve gelecekteki öngörüler"
+  • spreads.career.positions.7.title
+    "Sonuç ne olacak?"
+  • spreads.love.description
+    "Aşk ve ilişki konuları için 4 kartlık özel açılım"
+  • spreads.love.name
+    "Aşk Açılımı"
+  • spreads.love.positions.1.description
+    "Hakkında soru sorduğun kişi"
+  • spreads.love.positions.1.title
+    "Hakkında soru sorduğun kişi"
+  ... ve 137 anahtar daha
+
+
+📁 STATISTICS Kategorisi (36 anahtar)
+────────────────────────────────────────
+  • statistics.activeStreak
+    "Aktif seri"
+  • statistics.average
+    "Ortalama"
+  • statistics.backToDashboard
+    "Dashboard'a Dön"
+  • statistics.birthDate
+    "Doğum Tarihi"
+  • statistics.birthdayNumber
+    "Doğum Günü"
+  • statistics.calculating
+    "İstatistikler hesaplanıyor…"
+  • statistics.creditCost
+    "Kredi maliyeti"
+  • statistics.dailyStreak
+    "Günlük Seri"
+  • statistics.days
+    "gün"
+  • statistics.expressionDestiny
+    "İfade/Kader"
+  • statistics.fullNameRecommended
+    "Numeroloji hesaplamaları için tam isim soyisim önerilir"
+  • statistics.insightsDesc
+    "Numerolojik rehberliğiniz ve okuma alışkanlıklarınızla ilgil..."
+  • statistics.insightsTitle
+    "Mistik İçgörüleriniz"
+  • statistics.lifePath
+    "Yaşam Yolu"
+  • statistics.longest
+    "En uzun"
+  • statistics.masterNumber
+    "Master Sayı"
+  • statistics.maturity
+    "Olgunluk"
+  • statistics.mostExpensiveReading
+    "En Pahalı Okuma"
+  • statistics.name
+    "İsim"
+  • statistics.notSpecified
+    "Belirtilmemiş"
+  ... ve 16 anahtar daha
+
+
+📁 SYSTEM Kategorisi (3 anahtar)
+────────────────────────────────────────
+  • system.comprehensive
+    "Kapsamlı"
+  • system.locale
+    "tr-TR"
+  • system.nextLocale
+    "NEXT_LOCALE"
+
+
+📁 TAROT Kategorisi (60 anahtar)
+────────────────────────────────────────
+  • tarot.action
+    "Eylem"
+  • tarot.advice
+    "Tavsiye"
+  • tarot.card
+    "Kart"
+  • tarot.cards
+    "Kartlar"
+  • tarot.career
+    "Kariyer"
+  • tarot.challenge
+    "Zorluk"
+  • tarot.deck
+    "Destesi"
+  • tarot.draw
+    "Çek"
+  • tarot.fear
+    "Korku"
+  • tarot.future
+    "Gelecek"
+  • tarot.guidance
+    "Rehberlik"
+  • tarot.health
+    "Sağlık"
+  • tarot.hope
+    "Umut"
+  • tarot.inaction
+    "Hareketsizlik"
+  • tarot.influence
+    "Etki"
+  • tarot.interpretation
+    "Yorumlama"
+  • tarot.love
+    "Aşk"
+  • tarot.maybe
+    "Belki"
+  • tarot.meaning
+    "Anlam"
+  • tarot.no
+    "Hayır"
+  ... ve 40 anahtar daha
+
+
+📁 TAROTCARDS Kategorisi (312 anahtar)
+────────────────────────────────────────
+  • tarotCards.cups.1.keywords
+    "aşk,duygular"
+  • tarotCards.cups.1.meaning.reversed
+    "Öz sevgi, bastırılmış duygular"
+  • tarotCards.cups.1.meaning.upright
+    "Yeni ilişkiler, merhamet"
+  • tarotCards.cups.1.name
+    "Kadehler Ası"
+  • tarotCards.cups.2.keywords
+    "ortaklık,aşk"
+  • tarotCards.cups.2.meaning.reversed
+    "Öz sevgi, ayrılıklar"
+  • tarotCards.cups.2.meaning.upright
+    "Ortaklık, karşılıklı çekim"
+  • tarotCards.cups.2.name
+    "Kadehler İkilisi"
+  • tarotCards.cups.3.keywords
+    "kutlama,dostluk"
+  • tarotCards.cups.3.meaning.reversed
+    "Bağımsızlık, yaratıcı bloklar"
+  • tarotCards.cups.3.meaning.upright
+    "Kutlama, dostluk"
+  • tarotCards.cups.3.name
+    "Kadehler Üçlüsü"
+  • tarotCards.cups.4.keywords
+    "meditasyon,düşünce"
+  • tarotCards.cups.4.meaning.reversed
+    "Geri çekilme, içe kapanma"
+  • tarotCards.cups.4.meaning.upright
+    "Meditasyon, düşünce"
+  • tarotCards.cups.4.name
+    "Kadehler Dörtlüsü"
+  • tarotCards.cups.5.keywords
+    "pişmanlık,hayal kırıklığı"
+  • tarotCards.cups.5.meaning.reversed
+    "Kendini bağışlama, ilerleme"
+  • tarotCards.cups.5.meaning.upright
+    "Pişmanlık, hayal kırıklığı"
+  • tarotCards.cups.5.name
+    "Kadehler Beşlisi"
+  ... ve 292 anahtar daha
+
+
+📁 TAROTPAGE Kategorisi (6 anahtar)
+────────────────────────────────────────
+  • tarotPage.careerSpread.summary
+    "Genel Değerlendirme"
+  • tarotPage.careerSpread.summaryText
+    "Kartların şefkatli rehberliğiyle; kariyer yolculuğundaki fır..."
+  • tarotPage.problemSolvingSpread.summary
+    "Genel Değerlendirme"
+  • tarotPage.problemSolvingSpread.summaryText
+    "Kartların şefkatli rehberliğiyle; problemini sakinlikle anal..."
+  • tarotPage.situationAnalysisSpread.summary
+    "Genel Değerlendirme"
+  • tarotPage.situationAnalysisSpread.summaryText
+    "Kartların şefkatli rehberliğiyle; mevcut durumu gör, iç sesi..."
+
+
+📁 TAROTSPREADSELECTOR Kategorisi (5 anahtar)
+────────────────────────────────────────
+  • tarotSpreadSelector.morePositions
+    "pozisyon daha…"
+  • tarotSpreadSelector.scrollHint
+    "Kaydırarak daha fazla açılım görün"
+  • tarotSpreadSelector.showLess
+    "Daha az göster"
+  • tarotSpreadSelector.spreadMeaning
+    "Bu Açılımın Anlamı"
+  • tarotSpreadSelector.spreadPositions
+    "Açılım Pozisyonları:"
+
+
+📁 TECHNICAL Kategorisi (42 anahtar)
+────────────────────────────────────────
+  • technical.paths.adminUserModals
+    "./AdminUserModals"
+  • technical.paths.auditLogViewer
+    "./AuditLogViewer"
+  • technical.paths.autoReporting
+    "./AutoReporting"
+  • technical.paths.baseInterpretation
+    "./BaseInterpretation"
+  • technical.paths.cardDetails
+    "./CardDetails"
+  • technical.paths.careerTarot
+    "@/features/tarot/components/Career-Spread/CareerTarot"
+  • technical.paths.creditManagementModal
+    "./CreditManagementModal"
+  • technical.paths.emailTemplateModals
+    "./EmailTemplateModals"
+  • technical.paths.footer
+    "./Footer"
+  • technical.paths.loveTarot
+    "@/features/tarot/components/Love-Spread/LoveTarot"
+  • technical.paths.marriageTarot
+    "@/features/tarot/components/Marriage/MarriageTarot"
+  • technical.paths.messagesPath
+    "../../../messages/${locale}.json"
+  • technical.paths.moneyTarot
+    "@/features/tarot/components/Money-Spread/MoneyTarot"
+  • technical.paths.newLoverTarot
+    "@/features/tarot/components/New-Lover/NewLoverTarot"
+  • technical.paths.paymentHistory
+    "./PaymentHistory"
+  • technical.paths.pdfExport
+    "./PDFExport"
+  • technical.paths.problemSolvingTarot
+    "@/features/tarot/components/Problem-Solving/ProblemSolvingTa..."
+  • technical.paths.readingDetailModal
+    "./ReadingDetailModal"
+  • technical.paths.readingHistory
+    "./ReadingHistory"
+  • technical.paths.readingStatusUtils
+    "@/utils/reading-status-utils"
+  ... ve 22 anahtar daha
+
+
+📁 TOAST Kategorisi (4 anahtar)
+────────────────────────────────────────
+  • toast.cardSelectionReady
+    "Kart seçimine geçebilirsiniz."
+  • toast.readingSaveError
+    "Okuma kaydedilirken bir hata oluştu."
+  • toast.readingSaveErrorLog
+    "Okuma kaydetme hatası:"
+  • toast.simpleReadingComplete
+    "Basit okuma tamamlandı!"
+
+
+📁 VALIDATION Kategorisi (30 anahtar)
+────────────────────────────────────────
+  • validation.between
+    "{min} ile {max} arasında olmalıdır"
+  • validation.confirmPassword
+    "Şifreler eşleşmiyor"
+  • validation.date
+    "Geçerli bir tarih girin"
+  • validation.email
+    "Geçerli bir e-posta adresi girin"
+  • validation.integer
+    "Tam sayı girin"
+  • validation.max
+    "En fazla {max} olmalıdır"
+  • validation.maxLength
+    "En fazla {max} karakter olmalıdır"
+  • validation.min
+    "En az {min} olmalıdır"
+  • validation.minLength
+    "En az {min} karakter olmalıdır"
+  • validation.negative
+    "Negatif sayı girin"
+  • validation.number
+    "Geçerli bir sayı girin"
+  • validation.password.noLowercase
+    "En az bir küçük harf gerekli"
+  • validation.password.noNumber
+    "En az bir rakam gerekli"
+  • validation.password.noSpecialChar
+    "En az bir özel karakter gerekli"
+  • validation.password.noUppercase
+    "En az bir büyük harf gerekli"
+  • validation.password.rules
+    "Şifre en az 8 karakter, büyük harf, küçük harf ve rakam içer..."
+  • validation.password.strength.medium
+    "Orta"
+  • validation.password.strength.strong
+    "Güçlü"
+  • validation.password.strength.veryStrong
+    "Çok Güçlü"
+  • validation.password.strength.weak
+    "Zayıf"
+  ... ve 10 anahtar daha
+
+
+🔄 TEKRAR EDEN DEĞERLER (En Çok Tekrar Edenler)
+────────────────────────────────────────────────────────────────────────────────
+Toplam: 400 tekrar eden değer
+❗ ÖNCELİK: DÜŞÜK - Birleştirilebilir ama acil değil
+
+"E-posta"
+17 yerde kullanılıyor:
+  • auth.page.email
+  • career.form.email
+  • career.form.emailCommunication
+  • database.fields.email
+  • love.form.emailCommunication
+  ... ve 12 anahtar daha
+
+"Kaydediliyor…"
+17 yerde kullanılıyor:
+  • career.form.saving
+  • career.modals.savingReading
+  • love.form.saving
+  • love.modals.savingReading
+  • marriage.credit.saving
+  ... ve 12 anahtar daha
+
+"Doğum Tarihi"
+13 yerde kullanılıyor:
+  • auth.page.birthDate
+  • auth.page.birthDatePlaceholder
+  • career.form.birthDate
+  • database.fields.birthDate
+  • love.form.birthDate
+  ... ve 8 anahtar daha
+
+"Devam Et"
+13 yerde kullanılıyor:
+  • career.modals.continue
+  • love.modals.continue
+  • marriage.form.continue
+  • marriage.modals.continue
+  • messages.common.continue
+  ... ve 8 anahtar daha
+
+"Kredi Onayı"
+11 yerde kullanılıyor:
+  • career.modals.creditConfirm
+  • love.modals.creditConfirm
+  • marriage.credit.title
+  • marriage.modals.creditConfirm
+  • money.modals.creditConfirm
+  ... ve 6 anahtar daha
+
+"İptal"
+10 yerde kullanılıyor:
+  • auth.page.cancel
+  • marriage.credit.cancel
+  • marriage.form.cancel
+  • messages.common.cancel
+  • messages.dashboard.cancel
+  ... ve 5 anahtar daha
+
+"Ters"
+10 yerde kullanılıyor:
+  • cards.reversed
+  • career.data.cardDirections.reversed
+  • messages.common.reversed
+  • problemSolving.data.cardDirections.reversed
+  • problemSolving.data.reversed
+  ... ve 5 anahtar daha
+
+"Adınız"
+10 yerde kullanılıyor:
+  • career.form.placeholders.firstName
+  • love.form.firstName
+  • marriage.form.firstName
+  • marriage.form.name
+  • newLover.form.name
+  ... ve 5 anahtar daha
+
+"Soyadınız"
+10 yerde kullanılıyor:
+  • career.form.placeholders.lastName
+  • love.form.lastName
+  • marriage.form.lastName
+  • marriage.form.surname
+  • newLover.form.surname
+  ... ve 5 anahtar daha
+
+"WhatsApp"
+10 yerde kullanılıyor:
+  • career.form.whatsappCommunication
+  • love.form.whatsappCommunication
+  • marriage.form.whatsappCommunication
+  • marriage.modals.whatsappCommunication
+  • newLover.form.whatsappCommunication
+  ... ve 5 anahtar daha
+
+"Sesli Okuma"
+10 yerde kullanılıyor:
+  • career.modals.detailedReading
+  • love.modals.detailedReading
+  • marriage.modals.detailedReading
+  • money.modals.detailedReading
+  • newLover.modals.detailedReading
+  ... ve 5 anahtar daha
+
+"İşleniyor…"
+10 yerde kullanılıyor:
+  • career.modals.processing
+  • love.modals.processing
+  • marriage.modals.processing
+  • messages.dashboard.packages.processing
+  • money.modals.processing
+  ... ve 5 anahtar daha
+
+"Yazılı Okuma"
+10 yerde kullanılıyor:
+  • career.modals.writtenReading
+  • love.modals.writtenReading
+  • marriage.modals.writtenReading
+  • money.modals.writtenReading
+  • newLover.modals.writtenReading
+  ... ve 5 anahtar daha
+
+"kredi"
+10 yerde kullanılıyor:
+  • messages.common.credits
+  • messages.dashboard.creditHistory.credits
+  • messages.dashboard.packages.credits
+  • messages.dashboard.readingsPage.credits
+  • messages.messages.payment.success.creditsUnit
+  ... ve 5 anahtar daha
+
+"Soyad"
+9 yerde kullanılıyor:
+  • auth.page.lastName
+  • auth.page.surnamePlaceholder
+  • career.form.lastName
+  • database.fields.lastName
+  • database.fields.surname
+  ... ve 4 anahtar daha
+
+"Sesli"
+9 yerde kullanılıyor:
+  • career.data.readingFormats.detailed
+  • problemSolving.data.readingFormats.detailed
+  • reading.types.detailed
+  • reading.types.detailedShort
+  • relationshipAnalysis.data.readingFormats.detailed
+  ... ve 4 anahtar daha
+
+"Yazılı"
+9 yerde kullanılıyor:
+  • career.data.readingFormats.written
+  • problemSolving.data.readingFormats.written
+  • reading.types.written
+  • reading.types.writtenShort
+  • relationshipAnalysis.data.readingFormats.written
+  ... ve 4 anahtar daha
+
+"Süreç"
+9 yerde kullanılıyor:
+  • career.modals.process
+  • love.modals.process
+  • marriage.modals.process
+  • money.modals.process
+  • newLover.modals.process
+  ... ve 4 anahtar daha
+
+"Numeroloji Analizi"
+9 yerde kullanılıyor:
+  • home.services.numerology.button
+  • home.services.numerology.title
+  • homepage.services.numerology.button
+  • homepage.services.numerology.title
+  • messages.dashboard.packages.featureNumerology
+  ... ve 4 anahtar daha
+
+"Aşk Açılımı"
+9 yerde kullanılıyor:
+  • interpretation.loveReading
+  • love.data.spreadName
+  • love.data.spreadTitle
+  • messages.dashboard.packages.featureLove
+  • readingModal.loveSpread
+  ... ve 4 anahtar daha
+
+"E-posta adresiniz"
+8 yerde kullanılıyor:
+  • auth.page.emailPlaceholder
+  • love.form.email
+  • marriage.form.email
+  • newLover.form.email
+  • problemSolving.form.email
+  ... ve 3 anahtar daha
+
+"Basit"
+8 yerde kullanılıyor:
+  • career.data.readingFormats.simple
+  • problemSolving.data.readingFormats.simple
+  • reading.types.simple
+  • reading.types.simpleShort
+  • relationshipAnalysis.data.readingFormats.simple
+  ... ve 3 anahtar daha
+
+"Okumanız başarıyla kaydedildi!"
+8 yerde kullanılıyor:
+  • career.messages.readingSavedSuccess
+  • messages.readings.readingSavedSuccess
+  • problemSolving.messages.readingSavedSuccessfully
+  • relationshipProblems.messeages.readingSavedSuccess
+  • relationshipProblems.messeages.readingSavedSuccessfully
+  ... ve 3 anahtar daha
+
+"Vazgeç"
+8 yerde kullanılıyor:
+  • career.modals.cancel
+  • love.modals.cancel
+  • marriage.modals.cancel
+  • newLover.modals.cancel
+  • problemSolving.modals.cancel
+  ... ve 3 anahtar daha
+
+"Nazik Bir Not"
+8 yerde kullanılıyor:
+  • career.modals.loveAttentionInfo
+  • love.modals.loveAttentionInfo
+  • marriage.modals.loveAttentionInfo
+  • newLover.modals.loveAttentionInfo
+  • problemSolving.modals.loveAttentionInfo
+  ... ve 3 anahtar daha
+
+"Açılım Hakkında"
+8 yerde kullanılıyor:
+  • love.modals.aboutSpread
+  • marriage.modals.aboutSpread
+  • money.modals.aboutSpread
+  • newLover.modals.aboutSpread
+  • problemSolving.modals.aboutSpread
+  ... ve 3 anahtar daha
+
+"Durum Analizi Açılımı"
+8 yerde kullanılıyor:
+  • messages.readings.situationAnalysisReading
+  • messages.readings.situationAnalysisSpread
+  • readings.situationAnalysisReading
+  • situationAnalysis.data.defaultTitle
+  • situationAnalysis.data.spreadName
+  ... ve 3 anahtar daha
+
+"İletişim Yöntemi"
+7 yerde kullanılıyor:
+  • career.form.communicationMethod
+  • marriage.form.communicationMethod
+  • marriage.modals.communicationMethod
+  • problemSolving.form.communicationMethod
+  • relationshipAnalysis.form.communicationMethod
+  ... ve 2 anahtar daha
+
+"Okuma kaydedilirken bir hata oluştu."
+7 yerde kullanılıyor:
+  • career.messages.readingSaveError
+  • love.messages.readingSaveError
+  • problemSolving.messages.readingSaveError
+  • relationshipProblems.messeages.readingSaveError
+  • situationAnalysis.messages.readingSaveError
+  ... ve 2 anahtar daha
+
+"Evet, Onaylıyorum"
+7 yerde kullanılıyor:
+  • career.modals.confirm
+  • love.modals.confirm
+  • newLover.modals.confirm
+  • problemSolving.modals.confirm
+  • relationshipAnalysis.modals.confirm
+  ... ve 2 anahtar daha
+
+
+════════════════════════════════════════════════════════════════════════════════
+💡 ÖNERİLER VE EYLEM PLANI
+════════════════════════════════════════════════════════════════════════════════
+
+1️⃣ YÜKSEK ÖNCELİK: 3 boş değeri hemen silin
+   Komut: node safe-clean-translations.js (Seçenek 1)
+
+2️⃣ ORTA ÖNCELİK: 4211 kullanılmayan anahtarı temizleyin
+   Önerilen Strateji:
+   • Adım 1: İlk 100 anahtarı sil → Test et
+   • Adım 2: Sonraki 500 anahtarı sil → Test et
+   • Adım 3: Kalanları sil → Test et
+
+4️⃣ DÜŞÜK ÖNCELİK: 400 tekrar eden değer
+   Önce kullanılmayanları temizleyin, sonra bunlara dönün
+
+💾 Potansiyel Tasarruf: ~100.0% (4214 anahtar)
+
+════════════════════════════════════════════════════════════════════════════════
+Rapor Tarihi: 08.10.2025 00:54:46
+════════════════════════════════════════════════════════════════════════════════
