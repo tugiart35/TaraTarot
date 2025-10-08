@@ -1,0 +1,203 @@
+{
+  "README": "Bu dosya, position-1-ilgi-duydugun-kisi.ts için gerekli tüm i18n anahtarlarının yapı şablonudur.",
+  "USAGE": "Bu yapıyı messages/tr.json, messages/en.json ve messages/sr.json dosyalarına merge edin.",
+  "TOTAL_KEYS_NEEDED": 933,
+  "BREAKDOWN": {
+    "love.meanings.*.position1.upright": "78 kart × 3 dil = 234 anahtar",
+    "love.meanings.*.position1.reversed": "78 kart × 3 dil = 234 anahtar",
+    "love.meanings.*.position1.keywords": "78 kart × 3 dil = 234 anahtar",
+    "love.meanings.*.position1.context": "78 kart × 3 dil = 234 anahtar",
+    "love.cardGroups.*": "5 grup × 2 dil (en,sr) = 10 anahtar (tr zaten var)"
+  },
+  
+  "SAMPLE_STRUCTURE_TR": {
+    "love": {
+      "cardGroups": {
+        "majorArcana": "Majör Arkana",
+        "cups": "Kupalar",
+        "swords": "Kılıçlar",
+        "wands": "Asalar",
+        "pentacles": "Tılsımlar"
+      },
+      "meanings": {
+        "thefool": {
+          "position1": {
+            "upright": "İlgi duyduğun kişi, hayata karşı çocuksu bir merak ve heyecanla dolu. Yeni başlangıçlara açık, maceracı bir ruha sahip ancak bu durum bazen plansız ve programsız olmasına neden olabilir. İlişkilere de bu özgür ruhla yaklaşır.",
+            "reversed": "Ters Fool, bu kişinin pervasız, sorumsuz veya bir ilişkiye başlamaktan korkan biri olabileceğini gösterir. Potansiyel tehlikeleri görmezden geliyor ve bağlanmaktan kaçınıyor olabilir.",
+            "keywords": ["yeni başlangıçlar", "masumiyet", "spontanlık", "risk almak", "özgür ruh"],
+            "context": "Bu kişi, aşk hayatında yeni bir sayfa açmaya hazır veya bundan korkan bir maceracı."
+          }
+        },
+        "themagician": {
+          "position1": {
+            "upright": "İlgi duyduğun kişi, çekici, yetenekli ve istediğini elde etme gücüne sahip biri. İletişim becerileri yüksek ve olayları kendi lehine çevirmeyi biliyor. Size karşı bilinçli bir çekim yaratıyor olabilir.",
+            "reversed": "Ters Magician, bu kişinin manipülatif, aldatıcı veya potansiyelini kullanmayan biri olabileceğine işaret eder. Sözleri ile eylemleri tutarlı olmayabilir veya özgüven eksikliği çekiyor olabilir.",
+            "keywords": ["irade", "yaratıcılık", "beceri", "çekicilik", "manifesto"],
+            "context": "Bu kişi, hayatının ve ilişkilerinin yönetmen koltuğunda oturan bir yaratıcı."
+          }
+        }
+      }
+    }
+  },
+  
+  "SAMPLE_STRUCTURE_EN": {
+    "love": {
+      "cardGroups": {
+        "majorArcana": "Major Arcana",
+        "cups": "Cups",
+        "swords": "Swords",
+        "wands": "Wands",
+        "pentacles": "Pentacles"
+      },
+      "meanings": {
+        "thefool": {
+          "position1": {
+            "upright": "The person you're interested in is full of childlike curiosity and excitement about life. Open to new beginnings, with an adventurous spirit, though this can sometimes make them appear unplanned and spontaneous. They approach relationships with this same free spirit.",
+            "reversed": "Reversed Fool indicates this person may be reckless, irresponsible, or afraid to start a relationship. They may ignore potential dangers and avoid commitment.",
+            "keywords": ["new beginnings", "innocence", "spontaneity", "taking risks", "free spirit"],
+            "context": "This person is an adventurer ready to turn a new page in their love life, or afraid of it."
+          }
+        },
+        "themagician": {
+          "position1": {
+            "upright": "The person you're interested in is attractive, talented, and has the power to achieve what they want. They have strong communication skills and know how to turn situations to their advantage. They may be consciously creating attraction towards you.",
+            "reversed": "Reversed Magician indicates this person may be manipulative, deceptive, or not using their potential. Their words and actions may not align, or they may be struggling with lack of confidence.",
+            "keywords": ["will", "creativity", "skill", "charisma", "manifestation"],
+            "context": "This person is a creator sitting in the director's chair of their life and relationships."
+          }
+        }
+      }
+    }
+  },
+  
+  "SAMPLE_STRUCTURE_SR": {
+    "love": {
+      "cardGroups": {
+        "majorArcana": "Veliki Arkana",
+        "cups": "Čaše",
+        "swords": "Mačevi",
+        "wands": "Štapovi",
+        "pentacles": "Pentakli"
+      },
+      "meanings": {
+        "thefool": {
+          "position1": {
+            "upright": "Osoba do koje imate interesovanje puna je detinje radoznalosti i uzbuđenja prema životu. Otvorena za nove početke, sa avanturističkim duhom, iako to ponekad može učiniti da izgledaju neplanirano i spontano. Pristupi odnosima sa istim slobodnim duhom.",
+            "reversed": "Obrnuti Ludak ukazuje da ova osoba može biti neobuzdana, neodgovorna ili se plaši da započne vezu. Mogu zanemariti potencijalne opasnosti i izbegavati predanost.",
+            "keywords": ["novi počeci", "nevinost", "spontanost", "uzimanje rizika", "slobodan duh"],
+            "context": "Ova osoba je avanturista spreman da okrene novu stranicu u svom ljubavnom životu, ili se toga plaši."
+          }
+        },
+        "themagician": {
+          "position1": {
+            "upright": "Osoba do koje imate interesovanje je privlačna, talentovana i ima moć da postigne ono što želi. Imaju jake komunikacijske veštine i znaju kako da okrenu situacije u svoju korist. Možda svesno stvaraju privlačnost prema vama.",
+            "reversed": "Obrnuti Mađioničar ukazuje da ova osoba može biti manipulativna, varljiva ili ne koristi svoj potencijal. Njihove reči i dela možda nisu usklađeni, ili se možda bore sa nedostatkom samopouzdanja.",
+            "keywords": ["volja", "kreativnost", "veština", "harizma", "manifestacija"],
+            "context": "Ova osoba je kreator koji sedi u režiserskoj stolici svog života i odnosa."
+          }
+        }
+      }
+    }
+  },
+  
+  "ALL_78_CARDS_NEEDED": [
+    "thefool",
+    "themagician",
+    "thehighpriestess",
+    "theempress",
+    "theemperor",
+    "thehierophant",
+    "thelovers",
+    "thechariot",
+    "strength",
+    "thehermit",
+    "wheeloffortune",
+    "justice",
+    "thehangedman",
+    "death",
+    "temperance",
+    "thedevil",
+    "thetower",
+    "thestar",
+    "themoon",
+    "thesun",
+    "judgement",
+    "theworld",
+    "aceofcups",
+    "twoofcups",
+    "threeofcups",
+    "fourofcups",
+    "fiveofcups",
+    "sixofcups",
+    "sevenofcups",
+    "eightofcups",
+    "nineofcups",
+    "tenofcups",
+    "pageofcups",
+    "knightofcups",
+    "queenofcups",
+    "kingofcups",
+    "aceofswords",
+    "twoofswords",
+    "threeofswords",
+    "fourofswords",
+    "fiveofswords",
+    "sixofswords",
+    "sevenofswords",
+    "eightofswords",
+    "nineofswords",
+    "tenofswords",
+    "pageofswords",
+    "knightofswords",
+    "queenofswords",
+    "kingofswords",
+    "aceofwands",
+    "twoofwands",
+    "threeofwands",
+    "fourofwands",
+    "fiveofwands",
+    "sixofwands",
+    "sevenofwands",
+    "eightofwands",
+    "nineofwands",
+    "tenofwands",
+    "pageofwands",
+    "knightofwands",
+    "queenofwands",
+    "kingofwands",
+    "aceofpentacles",
+    "twoofpentacles",
+    "threeofpentacles",
+    "fourofpentacles",
+    "fiveofpentacles",
+    "sixofpentacles",
+    "sevenofpentacles",
+    "eightofpentacles",
+    "nineofpentacles",
+    "tenofpentacles",
+    "pageofpentacles",
+    "knightofpentacles",
+    "queenofpentacles",
+    "kingofpentacles"
+  ],
+  
+  "AUTOMATION_SCRIPT_SUGGESTION": {
+    "description": "Tüm 78 kartı otomatik doldurmak için bir Node.js script'i yazılabilir",
+    "script_path": "scripts/generate-love-position1-i18n.ts",
+    "steps": [
+      "1. position1Meanings array'ini oku",
+      "2. Her kart için cardKey oluştur",
+      "3. Türkçe metinleri messages/tr.json'a ekle",
+      "4. OpenAI/DeepL API ile İngilizce ve Sırpça çevirileri yap",
+      "5. messages/en.json ve messages/sr.json'a ekle"
+    ]
+  },
+  
+  "TRANSLATION_SERVICE_RECOMMENDATION": {
+    "best_for_context": "OpenAI GPT-4",
+    "reason": "Tarot kartlarının ruhsal ve mistik bağlamını anlar",
+    "alternative": "DeepL Pro API (daha hızlı ve ucuz)",
+    "cost_estimate": "OpenAI GPT-4: ~$5-10 for 933 translations"
+  }
+}
+

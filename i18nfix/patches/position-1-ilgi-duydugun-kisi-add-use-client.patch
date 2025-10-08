@@ -1,0 +1,14 @@
+diff --git a/src/features/tarot/lib/love/position-1-ilgi-duydugun-kisi.ts b/src/features/tarot/lib/love/position-1-ilgi-duydugun-kisi.ts
+index 1234567..abcdefg 100644
+--- a/src/features/tarot/lib/love/position-1-ilgi-duydugun-kisi.ts
++++ b/src/features/tarot/lib/love/position-1-ilgi-duydugun-kisi.ts
+@@ -1,4 +1,7 @@
+ // Bu dosya, Aşk açılımında Pozisyon 1 (İlgi Duyduğun Kişi) için özel kart anlamlarını içerir.
+ // Her kartın bu pozisyonda ne anlama geldiği tanımlanmıştır.
+ // i18n desteği için güncellenmiştir.
++'use client';
++
++// Bu dosya, Aşk açılımında Pozisyon 1 (İlgi Duyduğun Kişi) için özel kart anlamlarını içerir.
+ 
+ import { useLoveTranslations } from './i18n-helper';
+

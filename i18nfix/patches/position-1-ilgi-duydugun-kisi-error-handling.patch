@@ -1,0 +1,33 @@
+diff --git a/src/features/tarot/lib/love/position-1-ilgi-duydugun-kisi.ts b/src/features/tarot/lib/love/position-1-ilgi-duydugun-kisi.ts
+index abcdefg..1234567 100644
+--- a/src/features/tarot/lib/love/position-1-ilgi-duydugun-kisi.ts
++++ b/src/features/tarot/lib/love/position-1-ilgi-duydugun-kisi.ts
+@@ -1246,11 +1246,23 @@ export const getI18nPosition1Meaning = (
+   return {
+     id: originalMeaning.id,
+     card: originalMeaning.card,
+     position: originalMeaning.position,
+     upright: i18nUpright || originalMeaning.upright,
+     reversed: i18nReversed || originalMeaning.reversed,
+-    keywords: i18nKeywords
+-      ? JSON.parse(i18nKeywords)
+-      : originalMeaning.keywords,
++    keywords: (() => {
++      if (!i18nKeywords) {
++        return originalMeaning.keywords;
++      }
++      try {
++        const parsed = JSON.parse(i18nKeywords);
++        if (Array.isArray(parsed)) {
++          return parsed;
++        }
++        return originalMeaning.keywords;
++      } catch (error) {
++        console.error(`[Love Position 1] Failed to parse keywords for ${cardName}:`, error);
++        return originalMeaning.keywords;
++      }
++    })(),
+     context: i18nContext || originalMeaning.context,
+     group: i18nGroup || originalMeaning.group,
+   };
+

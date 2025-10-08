@@ -1,6 +1,9 @@
 // Bu dosya, Aşk açılımında Pozisyon 1 (İlgi Duyduğun Kişi) için özel kart anlamlarını içerir.
 // Her kartın bu pozisyonda ne anlama geldiği tanımlanmıştır.
 // i18n desteği için güncellenmiştir.
+'use client';
+
+// Bu dosya, Aşk açılımında Pozisyon 1 (İlgi Duyduğun Kişi) için özel kart anlamlarını içerir.
 
 import { useLoveTranslations } from './i18n-helper';
 
@@ -1249,9 +1252,21 @@ export const getI18nPosition1Meaning = (
     position: originalMeaning.position,
     upright: i18nUpright || originalMeaning.upright,
     reversed: i18nReversed || originalMeaning.reversed,
-    keywords: i18nKeywords
-      ? JSON.parse(i18nKeywords)
-      : originalMeaning.keywords,
+    keywords: (() => {
+      if (!i18nKeywords) {
+        return originalMeaning.keywords;
+      }
+      try {
+        const parsed = JSON.parse(i18nKeywords);
+        if (Array.isArray(parsed)) {
+          return parsed;
+        }
+        return originalMeaning.keywords;
+      } catch (error) {
+        console.error(`[Love Position 1] Failed to parse keywords for ${cardName}:`, error);
+        return originalMeaning.keywords;
+      }
+    })(),
     context: i18nContext || originalMeaning.context,
     group: i18nGroup || originalMeaning.group,
   };
