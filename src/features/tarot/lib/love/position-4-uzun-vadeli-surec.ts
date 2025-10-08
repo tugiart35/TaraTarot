@@ -1,6 +1,7 @@
 // Bu dosya, Aşk açılımında Pozisyon 4 (Uzun Vadeli Sonuç) için özel kart anlamlarını içerir.
 // Her kartın bu pozisyonda ne anlama geldiği tanımlanmıştır.
 // i18n desteği için güncellenmiştir.
+'use client';
 
 import { useLoveTranslations } from './i18n-helper';
 

@@ -711,7 +711,13 @@
         "position2": {
           "upright": "Fiziksel bağlantınızda çocuksu bir merak ve deneme arzusu var. Spontan, eğlenceli ve plansız bir cinsel keşif potansiyeli taşıyor. Kurallardan ve beklentilerden uzak, özgür bir macera.",
           "reversed": "Ters Fool, cinsel konularda pervasızlık, düşüncesizlik veya riskli davranışlar olabileceğini gösterir. Taraflardan biri deneyimsizlikten veya bağlanma korkusundan dolayı geri duruyor olabilir.",
-          "keywords": "[\"keşif\", \"spontanlık\", \"deneyimsizlik\", \"eğlence\", \"özgürlük\"]",
+          "keywords": [
+            "keşif",
+            "spontanlık",
+            "deneyimsizlik",
+            "eğlence",
+            "özgürlük"
+          ],
           "context": "Aranızdaki tensel çekim, yeni ve heyecan verici bir cinsel maceranın başlangıcını işaret ediyor."
         },
         "position3": {
@@ -719,6 +725,12 @@
           "reversed": "Ters Fool, duygusal olarak bağlanmaktan korktuğunuzu veya ruhsal bir bağ kurma konusunda düşüncesiz davrandığınızı gösterir. Bu bağlantının ciddiyetinden kaçıyorsunuz.",
           "keywords": "[\"yeni başlangıç\", \"masumiyet\", \"ruhsal macera\", \"beklentisizlik\", \"güven\"]",
           "context": "Duygusal bağınız, bilinmeyene atlayan iki ruhun neşeli ve öngörülemez yolculuğu."
+        },
+        "position4": {
+          "upright": "Uzun vadede bu ilişki, sizi tamamen yeni ve beklenmedik bir yola sokacak. Bu, geleneksel bir ilişki olmayabilir, ancak birlikte yeni bir hayata başlama potansiyeli taşıyor. Belirsiz ama heyecan verici bir gelecek.",
+          "reversed": "Ters Fool, uzun vadede bu ilişkinin sorumsuzluk veya bağlanma korkusu nedeniyle havada kalacağını gösterir. Potansiyel bir başlangıç, gerçekleşmeden sona erebilir.",
+          "keywords": "[\"yeni başlangıç\", \"belirsiz gelecek\", \"risk almak\", \"özgürlük\", \"beklenmedik yol\"]",
+          "context": "Bu ilişkinin uzun vadeli kaderi, bilinmeyene atılan cesur bir adımdır."
         }
       },
       "themagician": {
@@ -731,7 +743,13 @@
         "position2": {
           "upright": "Aranızda güçlü ve bilinçli bir cinsel çekim var. Taraflardan biri veya her ikisi de ne istediğini biliyor ve yatakta oldukça becerikli. Yaratıcı ve tatmin edici bir cinsel hayat potansiyeli yüksek.",
           "reversed": "Ters Magician, cinsel enerjinin manipülasyon veya aldatma için kullanılabileceğini gösterir. Performans anksiyetesi veya cinsel potansiyeli kullanamama durumu olabilir.",
-          "keywords": "[\"cinsel beceri\", \"çekicilik\", \"yaratıcılık\", \"manifesto\", \"güçlü arzu\"]",
+          "keywords": [
+            "cinsel beceri",
+            "çekicilik",
+            "yaratıcılık",
+            "manifesto",
+            "güçlü arzu"
+          ],
           "context": "Cinsel bağlantınız, arzu ve becerinin birleştiği, yaratıcı bir oyun alanı gibi."
         },
         "position3": {
@@ -739,6 +757,12 @@
           "reversed": "Ters Magician, aranızdaki duygusal bağın bir tarafça manipüle edildiğini veya ruhsal potansiyelinizin kullanılmadığını gösterir. Duygusal güç oyunları olabilir.",
           "keywords": "[\"bilinçli yaratım\", \"ruhsal senkronizasyon\", \"irade\", \"iletişim\", \"güçlü bağ\"]",
           "context": "Duygusal bağınız, iki güçlü iradenin birlikte bir dünya yarattığı bir alan."
+        },
+        "position4": {
+          "upright": "Uzun vadede, birlikte istediğiniz ilişkiyi ve hayatı yaratma gücüne sahipsiniz. Bu, bilinçli bir çabayla inşa edilen, dinamik ve güçlü bir birliktelik olacak.",
+          "reversed": "Ters Magician, uzun vadede bir potansiyelin boşa harcanacağını veya bir tarafın diğerini manipüle etmesiyle ilişkinin sona ereceğini gösterir. Güç dengesizliği yıkıma yol açar.",
+          "keywords": "[\"birlikte yaratma\", \"güçlü gelecek\", \"potansiyel\", \"irade\", \"başarı\"]",
+          "context": "Bu ilişkinin kaderi, sizin iradenizle şekillenecek, potansiyel dolu bir başyapıt."
         }
       },
       "thehighpriestess": {
@@ -751,7 +775,13 @@
         "position2": {
           "upright": "Fiziksel bağlantınız gizemli, sezgisel ve henüz tam olarak açığa çıkmamış bir potansiyel taşıyor. Tensel birleşmeden çok, ruhsal bir çekim ve söylenmemiş arzular ön planda. Cinsellik yavaş ve derinlemesine keşfedilmeyi bekliyor.",
           "reversed": "Ters High Priestess, cinsel konularda bastırılmış duyguları, sırları veya bir soğukluğu işaret eder. Taraflar birbirine karşı cinsel olarak açık değil ve sezgisel bağ kurulamıyor.",
-          "keywords": "[\"sezgisel çekim\", \"gizem\", \"söylenmemiş arzular\", \"bastırılmış cinsellik\", \"ruhsal bağ\"]",
+          "keywords": [
+            "sezgisel çekim",
+            "gizem",
+            "söylenmemiş arzular",
+            "bastırılmış cinsellik",
+            "ruhsal bağ"
+          ],
           "context": "Aranızdaki cinsel çekim, su yüzeyinin altındaki görünmez akıntılar gibi derin ve gizemli."
         },
         "position3": {
@@ -759,6 +789,12 @@
           "reversed": "Ters High Priestess, aranızda saklanan sırlar veya duygusal bir mesafenin olduğunu gösterir. Sezgisel olarak birbirinize kapalı, ruhsal olarak güvensizsiniz.",
           "keywords": "[\"sezgisel bağ\", \"ruhsal anlayış\", \"gizem\", \"telepati\", \"söylenmemiş sırlar\"]",
           "context": "Ruhsal bağınız, sadece kalplerin anlayabildiği, sessiz ve derin bir fısıltı."
+        },
+        "position4": {
+          "upright": "Bu ilişkinin uzun vadeli sonucu gizemini koruyor. Her şeyin netleşmesi zaman alacak. Aranızdaki bağ, yüzeyde görünenden daha derin ve ruhsal bir boyutta devam edebilir.",
+          "reversed": "Ters High Priestess, uzun vadede saklanan sırların veya güvensizliğin ilişkiyi bitireceğini gösterir. Birbirinize asla tam olarak açılamayabilirsiniz.",
+          "keywords": "[\"gizemli gelecek\", \"belirsizlik\", \"sezgisel bağ\", \"saklı potansiyel\", \"zaman\"]",
+          "context": "Bu ilişkinin nihai kaderi, henüz açığa çıkmamış bir sır gibi, zamanla anlaşılacak."
         }
       },
       "theempress": {
@@ -771,7 +807,13 @@
         "position2": {
           "upright": "Fiziksel bağlantınız son derece şehvetli, besleyici, verimli ve duyulara hitap ediyor. Cinsellik, bir zevk ve bereket kutlaması gibi yaşanır. Doğurganlık ve rahat, doğal bir tensel uyum söz konusu.",
           "reversed": "Ters Empress, cinsel enerjide bir tembellik, kendine bakmama veya zevk alamama durumu olabileceğini gösterir. Tensel bağda bir yaratıcılık eksikliği veya sahiplenici bir tavır olabilir.",
-          "keywords": "[\"şehvet\", \"bereket\", \"duyusallık\", \"doğurganlık\", \"zevk\"]",
+          "keywords": [
+            "şehvet",
+            "bereket",
+            "duyusallık",
+            "doğurganlık",
+            "zevk"
+          ],
           "context": "Cinsel yaşamınız, tüm duyuların harekete geçtiği, bereketli ve zevk dolu bir bahçe gibi."
         },
         "position3": {
@@ -779,6 +821,12 @@
           "reversed": "Ters Empress, duygusal olarak boğucu bir sevgi, aşırı sahiplenme veya duygusal ihtiyaçların karşılanmadığı bir ilişkiyi gösterir. Ruhsal olarak gelişim durmuş olabilir.",
           "keywords": "[\"besleyici sevgi\", \"şefkat\", \"duygusal güvenlik\", \"büyüme\", \"verimlilik\"]",
           "context": "Duygusal bağınız, birbirini sevgiyle besleyen ve büyüten, bereketli bir anne kucağı gibi."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, bereketli, sevgi dolu ve büyüyen bir birlikteliktir. Bu, evlilik, çocuk sahibi olma veya birlikte son derece yaratıcı ve verimli bir hayat kurma potansiyeli taşır.",
+          "reversed": "Ters Empress, uzun vadede ilişkinin durağanlaşacağını, bir tarafın diğerine aşırı bağımlı hale geleceğini veya sevginin boğucu bir hal alacağını gösterir.",
+          "keywords": "[\"bereket\", \"büyüme\", \"evlilik\", \"doğurganlık\", \"kalıcı sevgi\"]",
+          "context": "Bu ilişkinin geleceği, sevgiyle sulanan ve sürekli meyve veren bereketli bir bahçe."
         }
       },
       "theemperor": {
@@ -791,7 +839,13 @@
         "position2": {
           "upright": "Fiziksel bağlantınızda yapı, kontrol ve tutku var. Cinsellikte liderliği ve kontrolü elinde tutan, deneyimli bir enerji hakim. Güçlü ve koruyucu bir cinsel dinamik olabilir.",
           "reversed": "Ters Emperor, cinsel hayatta aşırı kontrolcü, dominant veya katı bir tutumu gösterir. Duygusal ifade eksikliği veya cinsel isteksizlik olabilir. Bir güç mücadelesi yaşanabilir.",
-          "keywords": "[\"tutku\", \"kontrol\", \"güç\", \"istikrar\", \"liderlik\"]",
+          "keywords": [
+            "tutku",
+            "kontrol",
+            "güç",
+            "istikrar",
+            "liderlik"
+          ],
           "context": "Cinsel bağlantınız, tutkunun ve kontrolün birleştiği, sağlam temelli bir yapı."
         },
         "position3": {
@@ -799,6 +853,12 @@
           "reversed": "Ters Emperor, aranızda duygusal bir katılık, kontrol savaşları veya şefkat eksikliği olduğunu gösterir. Duygular ifade edilmiyor, ruhsal bağ zayıf kalıyor.",
           "keywords": "[\"istikrar\", \"güven\", \"koruyuculuk\", \"sağlam temeller\", \"sadakat\"]",
           "context": "Duygusal bağınız, fırtınalara dayanacak kadar sağlam inşa edilmiş bir kale."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, son derece istikrarlı, güvenli ve kalıcı bir ilişkidir. Bu, evlilik veya uzun süreli bir ortaklık gibi sağlam yapılar kurmayı işaret eder.",
+          "reversed": "Ters Emperor, uzun vadede kontrol savaşları, duygusal katılık veya bir tarafın dominantlığı nedeniyle ilişkinin bir hapishaneye dönüşeceğini gösterir.",
+          "keywords": "[\"kalıcı ilişki\", \"istikrar\", \"güvenlik\", \"evlilik\", \"sağlam yapı\"]",
+          "context": "Bu ilişkinin uzun vadeli kaderi, zamanın testine dayanacak sağlam bir imparatorluk kurmaktır."
         }
       },
       "thehierophant": {
@@ -811,7 +871,13 @@
         "position2": {
           "upright": "Fiziksel bağlantınız geleneksel ve belirli beklentiler çerçevesinde yaşanabilir. Cinsellik, kutsal bir bağın veya evliliğin bir parçası olarak görülüyor olabilir. Tutkudan çok, bir ritüel ve bağlılık anlamı taşır.",
           "reversed": "Ters Hierophant, cinsel tabulara veya geleneksel ahlak anlayışına bir başkaldırıyı gösterir. Cinsel özgürlük arayışı veya geleneksel olmayan cinsel deneyimler söz konusu olabilir.",
-          "keywords": "[\"geleneksel cinsellik\", \"bağlılık\", \"ritüel\", \"tabular\", \"kutsal bağ\"]",
+          "keywords": [
+            "geleneksel cinsellik",
+            "bağlılık",
+            "ritüel",
+            "tabular",
+            "kutsal bağ"
+          ],
           "context": "Cinsel yaşamınız, toplumsal veya kişisel inançların şekillendirdiği bir çerçeve içinde yaşanıyor."
         },
         "position3": {
@@ -819,6 +885,12 @@
           "reversed": "Ters Hierophant, ruhsal veya ahlaki konularda bir çatışma yaşadığınızı gösterir. Değerleriniz uyuşmuyor ve bu durum duygusal bir uzaklaşmaya neden oluyor.",
           "keywords": "[\"ruhsal ortaklık\", \"ortak inançlar\", \"değerler\", \"öğretmenlik\", \"bağlılık\"]",
           "context": "Ruhsal bağınız, ortak bir inanç sisteminde birleşen iki müridin yol arkadaşlığı gibi."
+        },
+        "position4": {
+          "upright": "Bu ilişkinin uzun vadeli sonucu, geleneksel bir bağlılık, genellikle evliliktir. Ortak inançlar ve toplumsal değerler üzerine kurulu, saygın bir birliktelik sizi bekliyor.",
+          "reversed": "Ters Hierophant, uzun vadede toplumsal baskı veya farklı inançlar nedeniyle bu ilişkinin yürümesinin zor olacağını gösterir. Geleneklere bir başkaldırı veya ayrılık.",
+          "keywords": "[\"evlilik\", \"geleneksel bağlılık\", \"ortak inançlar\", \"toplumsal onay\", \"uzun süreli birliktelik\"]",
+          "context": "Bu bağın nihai kaderi, toplumun ve geleneklerin kutsadığı resmi bir birliktelik."
         }
       },
       "thelovers": {
@@ -831,7 +903,13 @@
         "position2": {
           "upright": "Aranızda ruhsal ve fiziksel olarak derin bir uyum ve mükemmel bir kimya var. Cinsellik, sadece fiziksel bir eylem değil, iki ruhun birleşmesidir. Yoğun bir aşk ve tutku dolu bir cinsel bağlantı.",
           "reversed": "Ters Lovers, fiziksel ve duygusal uyumsuzluğu, cinsel konularda yanlış kararları veya bir kopukluğu gösterir. Tenler uyuşsa bile kalplerin aynı frekansta olmadığını işaret edebilir.",
-          "keywords": "[\"cinsel uyum\", \"ruh eşi\", \"tutku\", \"kimya\", \"derin bağ\"]",
+          "keywords": [
+            "cinsel uyum",
+            "ruh eşi",
+            "tutku",
+            "kimya",
+            "derin bağ"
+          ],
           "context": "Fiziksel bağlantınız, iki ruhun bir bütün olduğu, kutsal bir birleşmeyi temsil ediyor."
         },
         "position3": {
@@ -839,6 +917,12 @@
           "reversed": "Ters Aşıklar, aranızda duygusal bir uyumsuzluk veya ruhsal bir kopukluk olduğunu gösterir. Değerleriniz veya kalpleriniz farklı yönlere bakıyor olabilir. Yanlış bir duygusal seçim.",
           "keywords": "[\"ruh eşi\", \"duygusal uyum\", \"derin bağ\", \"kalp seçimi\", \"birlik\"]",
           "context": "Duygusal bağınız, iki ruhun bir araya gelerek tek bir bütün oluşturduğu kutsal bir birliktelik."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, derin bir aşk, ruhsal birlik ve uyum dolu bir ortaklıktır. Bu, \"ruh eşi\" bağlantısının en yüksek potansiyelidir ve kalıcı mutluluğu işaret eder.",
+          "reversed": "Ters Lovers, uzun vadede yanlış bir seçim yapıldığını ve ilişkinin uyumsuzluk nedeniyle sona ereceğini gösterir. Kalplerin ayrılığı kaçınılmazdır.",
+          "keywords": "[\"ruh eşi\", \"kalıcı aşk\", \"uyumlu ortaklık\", \"mutluluk\", \"doğru seçim\"]",
+          "context": "Bu ilişkinin kaderi, iki ruhun bir bütün olduğu, derin ve anlamlı bir aşk hikayesi."
         }
       },
       "thechariot": {
@@ -851,7 +935,13 @@
         "position2": {
           "upright": "Cinsel yaşamınızda güçlü bir irade, hedef odaklılık ve yüksek bir libido var. Tutkulu ve enerjik bir cinsel birleşme. Taraflardan biri cinsel olarak ne istediğini biliyor ve bunu elde etmek için harekete geçiyor.",
           "reversed": "Ters Chariot, cinsel enerjinin kontrolsüz veya agresif bir şekilde kullanıldığını gösterir. Cinsel uyumsuzluk, sabırsızlık veya libido dengesizliği olabilir.",
-          "keywords": "[\"yüksek libido\", \"irade\", \"tutku\", \"kontrol\", \"enerji\"]",
+          "keywords": [
+            "yüksek libido",
+            "irade",
+            "tutku",
+            "kontrol",
+            "enerji"
+          ],
           "context": "Cinsel enerjiniz, hedefine kararlılıkla ilerleyen, güçlü ve tutkulu bir güç."
         },
         "position3": {
@@ -859,6 +949,12 @@
           "reversed": "Ters Chariot, duygusal hedeflerinizin farklı yönlere gittiğini veya aranızda bir güç mücadelesi olduğunu gösterir. Ruhsal olarak aynı yolda ilerleyemiyorsunuz.",
           "keywords": "[\"ortak hedef\", \"güçlü irade\", \"duygusal birlik\", \"ilerleme\", \"kararlılık\"]",
           "context": "Duygusal bağınız, aynı hedefe doğru birlikte yol alan, güçlü ve kararlı bir savaş arabası."
+        },
+        "position4": {
+          "upright": "Birlikte zorlukların üstesinden gelerek hedeflerinize ulaşacaksınız. Uzun vadeli sonuç, ortak bir irade ile kazanılmış bir zafer ve başarılı bir birlikteliktir.",
+          "reversed": "Ters Chariot, uzun vadede güç mücadeleleri ve farklı hedefler nedeniyle ilişkinin raydan çıkacağını gösterir. Kontrol kaybı ve başarısızlık.",
+          "keywords": "[\"ortak zafer\", \"başarı\", \"hedeflere ulaşma\", \"güçlü birliktelik\", \"ilerleme\"]",
+          "context": "Bu ilişkinin geleceği, zorluklara karşı birlikte kazanılmış bir zaferdir."
         }
       },
       "strength": {
@@ -871,7 +967,13 @@
         "position2": {
           "upright": "Fiziksel bağlantınızda tutku ve şefkat mükemmel bir denge içindedir. Vahşi arzular, nazik bir dokunuşla ve sabırla yönetilir. Güçlü ama aynı zamanda yumuşak ve sevgi dolu bir cinsellik.",
           "reversed": "Ters Strength, cinsel güvensizlik veya ham arzuların kontrolsüz bir şekilde dışa vurumunu gösterir. Tutku ve şefkat arasında bir denge kurulamıyor.",
-          "keywords": "[\"dengeli tutku\", \"şefkat\", \"içsel güç\", \"sabır\", \"cinsel güven\"]",
+          "keywords": [
+            "dengeli tutku",
+            "şefkat",
+            "içsel güç",
+            "sabır",
+            "cinsel güven"
+          ],
           "context": "Cinselliğiniz, vahşi bir aslanı şefkatle evcilleştiren içsel bir gücün ifadesi."
         },
         "position3": {
@@ -879,6 +981,12 @@
           "reversed": "Ters Strength, duygusal olarak birbirinize karşı güvensizlik veya zayıflık gösterdiğinizi işaret eder. Birbirinizin ruhsal gücünü tüketiyor olabilirsiniz.",
           "keywords": "[\"şefkatli güç\", \"sabır\", \"kabul\", \"ruhsal şifa\", \"içsel güç\"]",
           "context": "Duygusal bağınız, en zorlu duyguları bile şefkatle evcilleştiren, iyileştirici bir dokunuş."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, şefkat ve sabırla güçlenmiş, derin ve dayanıklı bir bağdır. Birbirinizin en zorlu yönlerini bile sevgiyle kabul ederek, sarsılmaz bir birliktelik kuracaksınız.",
+          "reversed": "Ters Strength, uzun vadede güvensizlik ve zayıflıkların ilişkiyi yıpratacağını gösterir. Aranızdaki tutku, şefkatle dengelenemez ve bağ kopar.",
+          "keywords": "[\"dayanıklı bağ\", \"şefkat\", \"sabır\", \"karşılıklı kabul\", \"içsel güç\"]",
+          "context": "Bu ilişkinin uzun vadeli sonucu, fırtınalara sevgiyle direnen, sarsılmaz bir güçtür."
         }
       },
       "thehermit": {
@@ -891,7 +999,13 @@
         "position2": {
           "upright": "Şu anda fiziksel bağlantı ve cinsellik öncelik değil. Taraflardan biri veya her ikisi de cinsel bir geri çekilme, yalnızlık veya içe dönme döneminde. Tensel bir bağ kurmak için zaman ve sabır gerekiyor.",
           "reversed": "Ters Hermit, bir cinsel izolasyon döneminin sona erdiğini veya yalnızlık korkusuyla cinsel ilişkiye girildiğini gösterebilir. Bağlantı kurma çabası var ama bu zorlayıcı olabilir.",
-          "keywords": "[\"cinsel geri çekilme\", \"libido düşüklüğü\", \"yalnızlık\", \"içe dönüklük\", \"mesafe\"]",
+          "keywords": [
+            "cinsel geri çekilme",
+            "libido düşüklüğü",
+            "yalnızlık",
+            "içe dönüklük",
+            "mesafe"
+          ],
           "context": "Fiziksel bağlantı, şu anda bir arayış içinde olan ve kendi içine dönmüş bir ruh için ikinci planda."
         },
         "position3": {
@@ -899,6 +1013,12 @@
           "reversed": "Ters Ermiş, birinin yalnızlık korkusuyla diğerine yapıştığını veya duygusal olarak kendini zorla izole ettiğini gösterir. Ruhsal bir bağlantı kurulamıyor.",
           "keywords": "[\"duygusal mesafe\", \"içe dönüş\", \"ruhsal arayış\", \"yalnızlık\", \"saygı\"]",
           "context": "Duygusal bağınız, birbirine alan tanıyan iki ruhun kendi içsel ışığını aradığı bir yolculuk."
+        },
+        "position4": {
+          "upright": "Uzun vadede bu ilişki bir ayrılığa veya her iki tarafın da kendi yoluna giderek ruhsal bir arayışa girmesine neden olabilir. Bu, necessarily kötü değildir, kişisel büyüme için bir adımdır.",
+          "reversed": "Ters Hermit, uzun vadede bir yalnızlık ve izolasyon hissinin ilişkiyi bitireceğini gösterir. Birbirinize ulaşamadan, ayrı dünyalarda kaybolacaksınız.",
+          "keywords": "[\"ayrılık\", \"kişisel yolculuk\", \"yalnızlık\", \"içe dönüş\", \"büyüme\"]",
+          "context": "Bu ilişkinin kaderi, her iki ruhun da kendi ışığını bulmak için ayrı yollara gitmesidir."
         }
       },
       "thewheeloffortune": {
@@ -911,7 +1031,13 @@
         "position2": {
           "upright": "Cinsel yaşamınızda beklenmedik gelişmeler ve döngüsel değişimler var. Bazen çok tutkulu, bazen daha mesafeli olabilirsiniz. Kaderin sizi fiziksel olarak bir araya getirdiği veya ayırdığı bir dönem.",
           "reversed": "Ters The Wheel of Fortune, cinsel hayatta bir durgunluk, şanssızlık veya tekrarlayan olumsuz döngüleri gösterir. Cinsel rutin sıkıcı hale gelmiş olabilir.",
-          "keywords": "[\"kader\", \"döngüler\", \"beklenmedik gelişme\", \"cinsel kimya\", \"değişim\"]",
+          "keywords": [
+            "kader",
+            "döngüler",
+            "beklenmedik gelişme",
+            "cinsel kimya",
+            "değişim"
+          ],
           "context": "Cinsel yaşamınız, kader çarkının dönüşü gibi, inişli çıkışlı ve sürprizlerle dolu."
         },
         "position3": {
@@ -919,6 +1045,12 @@
           "reversed": "Ters The Wheel of Fortune, ilişkinin ruhsal bir döngüde takılıp kaldığını veya olumsuz bir karmik deseni tekrarladığınızı gösterir. Değişime direniyorsunuz.",
           "keywords": "[\"karmik bağ\", \"kader\", \"ruhsal döngü\", \"değişim\", \"evrim\"]",
           "context": "Ruhsal bağınız, kaderin bir araya getirdiği ve birlikte bir döngüyü tamamlamanız gereken iki ruh."
+        },
+        "position4": {
+          "upright": "Bu ilişkinin uzun vadeli kaderi, kadersel bir dönüm noktasıdır. Birlikte yeni ve şanslı bir döngüye girebilirsiniz. Kader sizi bir araya getirecek.",
+          "reversed": "Ters The Wheel of Fortune, uzun vadede şanssızlıkların ve tekrarlayan olumsuz döngülerin ilişkiyi bitireceğini gösterir. Kader, yollarınızı ayırabilir.",
+          "keywords": "[\"kader\", \"dönüm noktası\", \"şans\", \"yeni döngü\", \"karmik sonuç\"]",
+          "context": "Bu ilişkinin nihai sonucu, kader çarkının sizin lehinize veya aleyhinize dönmesidir."
         }
       },
       "justice": {
@@ -931,7 +1063,13 @@
         "position2": {
           "upright": "Fiziksel bağlantınızda denge, adalet ve dürüstlük önemli. Her iki tarafın da ihtiyaçlarının ve arzularının karşılandığı, adil bir cinsel ilişki. Cinsellik, karşılıklı saygıya dayanır.",
           "reversed": "Ters Justice, cinsel hayatta bir dengesizlik veya adaletsizlik olduğunu gösterir. Bir tarafın istekleri diğerine baskın çıkıyor veya cinsel konularda dürüstlük eksikliği var.",
-          "keywords": "[\"denge\", \"adalet\", \"dürüstlük\", \"karşılıklılık\", \"saygı\"]",
+          "keywords": [
+            "denge",
+            "adalet",
+            "dürüstlük",
+            "karşılıklılık",
+            "saygı"
+          ],
           "context": "Cinselliğiniz, her iki tarafın da tatmin olduğu adil bir alışverişe dayanıyor."
         },
         "position3": {
@@ -939,6 +1077,12 @@
           "reversed": "Ters Justice, duygusal bir adaletsizlik veya dengesizlik olduğunu gösterir. Bir taraf haksızlığa uğradığını hissediyor veya geçmişin hataları affedilmiyor.",
           "keywords": "[\"duygusal adalet\", \"dürüstlük\", \"denge\", \"sorumluluk\", \"açık iletişim\"]",
           "context": "Duygusal bağınız, her iki ruhun da hak ettiğini aldığı ve verdiği adil bir terazi."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, hak edilen bir denge ve adalettir. Bu, resmi bir bağlılık (evlilik, yasal ortaklık) veya dürüst bir ayrılık olabilir. Herkes ektiğini biçecektir.",
+          "reversed": "Ters Justice, uzun vadede bir adaletsizlik, haksızlık veya çözülmemiş bir anlaşmazlık nedeniyle ilişkinin sona ereceğini gösterir. Karmik bir borç kalabilir.",
+          "keywords": "[\"adalet\", \"denge\", \"resmiyet\", \"sebep-sonuç\", \"hak edilen sonuç\"]",
+          "context": "Bu ilişkinin kaderi, evrensel adaletin tecelli edeceği, adil bir sonuçtur."
         }
       },
       "thehangedman": {
@@ -951,7 +1095,13 @@
         "position2": {
           "upright": "Cinsel hayatta bir duraklama, fedakarlık veya askıya alma dönemi. Fiziksel birleşme yerine, ruhsal veya platonik bir bağ ön planda olabilir. Cinselliğe farklı bir açıdan bakma zamanı.",
           "reversed": "Ters Hanged Man, cinsel hayattaki bir tıkanıklığı veya anlamsız bir fedakarlığı gösterir. Taraflardan biri cinsel olarak tatmin olmuyor ama bu durumu değiştirmek için bir şey yapmıyor.",
-          "keywords": "[\"duraklama\", \"fedakarlık\", \"askıya alma\", \"platonik bağ\", \"bakış açısı\"]",
+          "keywords": [
+            "duraklama",
+            "fedakarlık",
+            "askıya alma",
+            "platonik bağ",
+            "bakış açısı"
+          ],
           "context": "Fiziksel bağlantınız, şu an için durmuş, olaylara farklı bir perspektiften bakmayı bekliyor."
         },
         "position3": {
@@ -959,6 +1109,12 @@
           "reversed": "Ters Hanged Man, duygusal bir çıkmazda olduğunuzu veya bir tarafın boşuna fedakarlık yaptığını gösterir. Ruhsal olarak ilerleyemiyorsunuz, takılıp kalmışsınız.",
           "keywords": "[\"ruhsal perspektif\", \"teslimiyet\", \"fedakarlık\", \"duraklama\", \"bekleyiş\"]",
           "context": "Duygusal bağınız, daha derin bir anlayışa ulaşmak için askıya alınmış bir an."
+        },
+        "position4": {
+          "upright": "Uzun vadede bu ilişki bir belirsizlik içinde kalabilir veya bir duraklama dönemine girebilir. Bir sonuca varmadan önce, olaylara farklı bir perspektiften bakmanız gerekecek.",
+          "reversed": "Ters Hanged Man, uzun vadede bir tarafın boşuna fedakarlık yapmasıyla veya bir çıkmazdan kurtulamayarak ilişkinin sona ereceğini gösterir. Bir kurban etme durumu.",
+          "keywords": "[\"belirsizlik\", \"duraklama\", \"fedakarlık\", \"çıkmaz\", \"bekleyiş\"]",
+          "context": "Bu ilişkinin uzun vadeli kaderi, bir sonuca ulaşmadan askıda kalmaktır."
         }
       },
       "death": {
@@ -971,7 +1127,13 @@
         "position2": {
           "upright": "Cinsel yaşamınızda büyük bir dönüşüm yaşanıyor. Eski cinsel kimliğiniz veya dinamikleriniz sona eriyor ve tamamen yeni bir cinsel anlayış doğuyor. Bu, cinsel bir uyanış veya bir dönemin sonu olabilir.",
           "reversed": "Ters Death, cinsel bir değişime veya sonlanmaya direndiğinizi gösterir. Sağlıksız bir cinsel dinamiğe veya alışkanlığa tutunmak, ilerlemeyi engelliyor.",
-          "keywords": "[\"cinsel dönüşüm\", \"bitiş\", \"yeniden doğuş\", \"uyanış\", \"sonlanma\"]",
+          "keywords": [
+            "cinsel dönüşüm",
+            "bitiş",
+            "yeniden doğuş",
+            "uyanış",
+            "sonlanma"
+          ],
           "context": "Cinselliğiniz, eski bir deriyi atıp yeniden doğan bir yılan gibi köklü bir dönüşüm içinde."
         },
         "position3": {
@@ -979,6 +1141,12 @@
           "reversed": "Ters Death, gerekli olan duygusal bir sonlanmaya veya değişime direndiğinizi gösterir. Bu durum, ruhsal olarak çürümenize neden oluyor.",
           "keywords": "[\"duygusal dönüşüm\", \"bitiş ve başlangıç\", \"yeniden doğuş\", \"ruhsal temizlik\", \"değişim\"]",
           "context": "Duygusal bağınız, küllerinden yeniden doğan bir anka kuşu gibi, köklü bir dönüşümün içinde."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, kaçınılmaz bir son ve köklü bir dönüşümdür. Bu ilişki mevcut haliyle devam edemez. Bu bitiş, her ikiniz için de yeni ve daha sağlıklı başlangıçlara yol açacaktır.",
+          "reversed": "Ters Death, kaçınılmaz bir sona direnmenin uzun vadede her iki tarafa da daha fazla acı vereceğini gösterir. Bitemeyen, çürüyen bir ilişki.",
+          "keywords": "[\"kaçınılmaz son\", \"dönüşüm\", \"bitiş\", \"yeniden doğuş\", \"vazgeçiş\"]",
+          "context": "Bu ilişkinin kaderi, eskiyi tamamen bitirip yeni bir hayata başlamaktır."
         }
       },
       "temperance": {
@@ -991,7 +1159,13 @@
         "position2": {
           "upright": "Fiziksel ve duygusal enerjiler arasında mükemmel bir denge ve uyum var. Cinsellik, sakin, şefkatli ve iki ruhu birleştiren bir simya gibidir. Tutku ve sevgi harmanlanmıştır.",
           "reversed": "Ters Temperance, cinsel enerjide bir dengesizlik, aşırılık veya uyumsuzluk olduğunu gösterir. Tutku ile sevgi bir araya gelemiyor, bu da tatminsizliğe yol açıyor.",
-          "keywords": "[\"denge\", \"uyum\", \"simya\", \"ölçülülük\", \"şefkatli tutku\"]",
+          "keywords": [
+            "denge",
+            "uyum",
+            "simya",
+            "ölçülülük",
+            "şefkatli tutku"
+          ],
           "context": "Cinselliğiniz, iki farklı enerjinin mükemmel bir uyumla birleştiği şifalı bir iksir."
         },
         "position3": {
@@ -999,6 +1173,12 @@
           "reversed": "Ters Temperance, aranızda duygusal bir dengesizlik veya çatışma olduğunu gösterir. Enerjileriniz birbiriyle uyumlu değil, bu da ruhsal bir gerginliğe yol açıyor.",
           "keywords": "[\"duygusal denge\", \"uyum\", \"ruhsal şifa\", \"harmanlanma\", \"huzur\"]",
           "context": "Duygusal bağınız, iki farklı ruhun birleşerek yarattığı şifalı ve dengeli bir iksir."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, son derece dengeli, uyumlu ve huzurlu bir birlikteliktir. Birbirinizin en iyi yönlerini ortaya çıkararak, sakin ve sevgi dolu bir ortaklık kuracaksınız.",
+          "reversed": "Ters Temperance, uzun vadede uyumsuzluk ve çatışmaların ilişkiyi yıpratacağını gösterir. Denge bir türlü bulunamaz ve yollar ayrılır.",
+          "keywords": "[\"denge\", \"uyum\", \"huzur\", \"uzun süreli ortaklık\", \"şifa\"]",
+          "context": "Bu ilişkinin uzun vadeli potansiyeli, iki ruhun mükemmel bir uyumla harmanlandığı şifalı bir bağdır."
         }
       },
       "thedevil": {
@@ -1011,7 +1191,13 @@
         "position2": {
           "upright": "Aranızda karşı konulmaz, ham ve yoğun bir cinsel çekim var. Bu kart, tabuları, cinsel fantezileri ve bağımlılık yaratan bir tutkuyu temsil eder. Fiziksel bağlantınız son derece güçlü ve ilkel.",
           "reversed": "Ters Devil, cinsel bir bağımlılıktan veya sağlıksız bir dinamikten kurtulma arzusunu gösterir. Aranızdaki yoğun ama toksik çekimin zincirleri kırılıyor. Cinsel özgürleşme.",
-          "keywords": "[\"yoğun tutku\", \"cinsel çekim\", \"tabular\", \"bağımlılık\", \"fantezi\"]",
+          "keywords": [
+            "yoğun tutku",
+            "cinsel çekim",
+            "tabular",
+            "bağımlılık",
+            "fantezi"
+          ],
           "context": "Aranızdaki cinsel enerji, sizi birbirinize bağlayan ilkel ve güçlü bir çekim kuvveti."
         },
         "position3": {
@@ -1019,6 +1205,12 @@
           "reversed": "Ters Devil, aranızdaki sağlıksız duygusal veya ruhsal bağları kırmaya başladığınızı gösterir. Bir bağımlılıktan özgürleşme veya bir takıntının sona ermesi.",
           "keywords": "[\"yoğun tutku\", \"bağımlılık\", \"karmik ders\", \"gölge yönler\", \"takıntı\"]",
           "context": "Ruhsal bağınız, sizi birbirine görünmez zincirlerle bağlayan, kaçınılmaz bir çekim gücü."
+        },
+        "position4": {
+          "upright": "Uzun vadede bu ilişki, sağlıksız bir bağımlılığa, takıntıya veya toksik bir dinamiğe dönüşebilir. Birbirinizden kopmakta zorlanacağınız, karmik ve zorlayıcı bir bağ.",
+          "reversed": "Ters Devil, uzun vadede bu sağlıksız bağın zincirlerini kıracağınızı ve özgürleşeceğinizi gösterir. Acı verici ama gerekli bir kopuş.",
+          "keywords": "[\"toksik ilişki\", \"bağımlılık\", \"takıntı\", \"karmik bağ\", \"kopamama\"]",
+          "context": "Bu ilişkinin uzun vadeli kaderi, birbirine zarar veren ama ayrılamayan iki ruhun hikayesidir."
         }
       },
       "thetower": {
@@ -1031,7 +1223,13 @@
         "position2": {
           "upright": "Cinsel yaşamınızda ani ve sarsıcı bir aydınlanma veya şok edici bir olay yaşanabilir. Bu, gizli bir arzunun açığa çıkması veya cinsel dinamikleri temelden sarsan bir gerçek olabilir. Beklenmedik bir orgazmik enerji.",
           "reversed": "Ters Tower, cinsel bir krizin veya yüzleşmenin ertelendiğini gösterir. Bastırılmış cinsel enerji, bir patlamaya yol açma tehlikesi taşıyor. Yıkım korkusuyla yaşanan bir gerilim.",
-          "keywords": "[\"ani aydınlanma\", \"cinsel şok\", \"tabuların yıkılışı\", \"sarsıcı gerçek\", \"patlama\"]",
+          "keywords": [
+            "ani aydınlanma",
+            "cinsel şok",
+            "tabuların yıkılışı",
+            "sarsıcı gerçek",
+            "patlama"
+          ],
           "context": "Cinsel enerjiniz, bir şimşek gibi çakıp mevcut yapıları yıkan, sarsıcı bir potansiyele sahip."
         },
         "position3": {
@@ -1039,6 +1237,12 @@
           "reversed": "Ters Tower, kaçınılmaz bir duygusal yüzleşmeden veya krizden kaçtığınızı gösterir. Bu durum, bastırılmış enerjinin daha büyük bir patlamaya yol açmasına neden olabilir.",
           "keywords": "[\"ani aydınlanma\", \"duygusal yıkım\", \"yüzleşme\", \"kriz\", \"temellerin sarsılması\"]",
           "context": "Duygusal bağınız, sahte temeller üzerine kurulu bir kulenin yıkılışı gibi ani ve şok edici."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, ani ve sarsıcı bir ayrılık veya ilişkinin temellerini yıkan bir aydınlanmadır. Mevcut yapı sürdürülemez ve beklenmedik bir şekilde sona erecektir.",
+          "reversed": "Ters Kule, kaçınılmaz bir ayrılıktan veya krizden korkarak bu süreci uzattığınızı gösterir. Uzun vadede, bu durum daha büyük bir duygusal çöküşe yol açabilir.",
+          "keywords": "[\"ani ayrılık\", \"yıkım\", \"kriz\", \"beklenmedik son\", \"yüzleşme\"]",
+          "context": "Bu ilişkinin uzun vadeli kaderi, sağlam olmayan temellerin kaçınılmaz yıkımıdır."
         }
       },
       "thestar": {
@@ -1051,7 +1255,13 @@
         "position2": {
           "upright": "Fiziksel bağlantınız umut dolu, şifalı ve ruhsal bir nitelik taşıyor. Cinsellik, sevgi ve açıklıkla yaşanır. Geçmiş cinsel travmalardan sonra gelen bir yenilenme ve masumiyet hissi vardır.",
           "reversed": "Ters Star, cinsel hayatta bir umutsuzluk, isteksizlik veya ilham eksikliği olduğunu gösterir. Fiziksel bağda bir soğukluk veya hayal kırıklığı yaşanıyor olabilir.",
-          "keywords": "[\"şifa\", \"umut\", \"cinsel yenilenme\", \"masumiyet\", \"ruhsal cinsellik\"]",
+          "keywords": [
+            "şifa",
+            "umut",
+            "cinsel yenilenme",
+            "masumiyet",
+            "ruhsal cinsellik"
+          ],
           "context": "Fiziksel bağlantınız, karanlık bir gecenin ardından parlayan, şifa ve umut veren bir yıldız gibi."
         },
         "position3": {
@@ -1059,6 +1269,12 @@
           "reversed": "Ters Star, duygusal olarak umudunuzu kaybettiğinizi veya ruhsal bir kopukluk yaşadığınızı gösterir. Aranızdaki ilham kaynağı kurumuş olabilir.",
           "keywords": "[\"umut\", \"ilham\", \"ruhsal şifa\", \"inanç\", \"kutsanmış bağ\"]",
           "context": "Ruhsal bağınız, en karanlık zamanlarda bile yolunuzu aydınlatan parlak bir yıldız."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, umut, şifa ve ilham dolu bir gelecektir. Bu ilişki, zor zamanların ardından gelen bir hediye gibidir ve size kalıcı bir mutluluk ve huzur getirebilir.",
+          "reversed": "Ters Star, uzun vadede umutların tükeneceğini ve hayal kırıklığı yaşanacağını gösterir. İlişki, parlaklığını yitirip sıradanlaşabilir.",
+          "keywords": "[\"umutlu gelecek\", \"şifa\", \"mutluluk\", \"ilham\", \"huzur\"]",
+          "context": "Bu ilişkinin kaderi, karanlıktan sonra doğan, parlak ve umut dolu bir şafaktır."
         }
       },
       "themoon": {
@@ -1071,7 +1287,13 @@
         "position2": {
           "upright": "Fiziksel bağlantınız belirsizlikler, fanteziler ve gizli arzularla dolu. Cinsellik, rüya gibi ve gizemli bir alanda yaşanır. Neyin gerçek neyin hayal olduğu belirsiz olabilir. Yoğun ama kafa karıştırıcı bir çekim.",
           "reversed": "Ters Moon, gizli cinsel arzuların veya aldatmacaların açığa çıktığını gösterir. Cinsel konulardaki kafa karışıklığı sona eriyor ve daha fazla netlik kazanılıyor.",
-          "keywords": "[\"fantezi\", \"gizli arzular\", \"belirsizlik\", \"kafa karışıklığı\", \"rüya gibi cinsellik\"]",
+          "keywords": [
+            "fantezi",
+            "gizli arzular",
+            "belirsizlik",
+            "kafa karışıklığı",
+            "rüya gibi cinsellik"
+          ],
           "context": "Cinselliğiniz, ay ışığının aydınlattığı, gölgeler ve fantezilerle dolu gizemli bir orman."
         },
         "position3": {
@@ -1079,6 +1301,12 @@
           "reversed": "Ters Moon, aranızdaki duygusal belirsizliklerin ve korkuların dağılmaya başladığını gösterir. Sırlar ortaya çıkıyor ve ruhsal bir netlik kazanılıyor.",
           "keywords": "[\"belirsizlik\", \"korkular\", \"sezgisel çekim\", \"bilinçaltı\", \"yanılsama\"]",
           "context": "Duygusal bağınız, bilinçaltı okyanusunun derinliklerinde seyreden, gizemli bir yolculuk."
+        },
+        "position4": {
+          "upright": "Bu ilişkinin uzun vadeli sonucu belirsizliğini koruyacaktır. Korkular, yanılsamalar veya gizli durumlar, ilişkinin geleceğini sürekli olarak etkileyebilir. Net bir sonuca varmak zordur.",
+          "reversed": "Ters Moon, uzun vadede bir aldatmacanın veya gizli bir durumun ortaya çıkmasıyla ilişkinin sona ereceğini gösterir. Güvensizlik, bağı tamamen yok eder.",
+          "keywords": "[\"belirsiz gelecek\", \"yanılsama\", \"korkular\", \"aldatma\", \"güvensizlik\"]",
+          "context": "Bu ilişkinin uzun vadeli kaderi, sisler arasında yolunu kaybetmiş bir gemi gibi belirsizdir."
         }
       },
       "thesun": {
@@ -1091,7 +1319,13 @@
         "position2": {
           "upright": "Fiziksel bağlantınız neşe, canlılık ve açıklıkla dolu. Cinsellik, utançtan uzak, özgürce ve keyifle yaşanır. Yüksek bir cinsel enerji ve tatmin söz konusudur.",
           "reversed": "Ters Sun, cinsel enerjide geçici bir düşüşü veya cinsel yaşamdan keyif alamamayı gösterir. Potansiyel var ama bir bulut tarafından gölgelenmiş gibi.",
-          "keywords": "[\"neşe\", \"canlılık\", \"cinsel özgürlük\", \"tatmin\", \"yüksek enerji\"]",
+          "keywords": [
+            "neşe",
+            "canlılık",
+            "cinsel özgürlük",
+            "tatmin",
+            "yüksek enerji"
+          ],
           "context": "Cinsel yaşamınız, her şeyi aydınlatan ve ısıtan, neşe ve canlılık dolu bir güneş."
         },
         "position3": {
@@ -1099,6 +1333,12 @@
           "reversed": "Ters Sun, aranızdaki neşenin ve sıcaklığın geçici olarak gölgelendiğini gösterir. Duygusal olarak birbirinizi tam olarak göremiyor olabilirsiniz.",
           "keywords": "[\"neşe\", \"mutluluk\", \"açıklık\", \"sıcaklık\", \"ruhsal canlılık\"]",
           "context": "Duygusal bağınız, tüm karanlığı aydınlatan, sıcak ve hayat dolu bir güneş ışığı."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, büyük bir mutluluk, neşe, başarı ve açıklıktır. Bu, son derece pozitif, aydınlık ve tatmin edici bir birlikteliğin habercisidir.",
+          "reversed": "Ters Sun, uzun vadede bir mutluluk potansiyelinin tam olarak gerçekleştirilemeyeceğini gösterir. İlişki devam etse bile, bir gölge veya eksiklik hissi kalabilir.",
+          "keywords": "[\"büyük mutluluk\", \"başarı\", \"neşe\", \"açıklık\", \"tatmin edici gelecek\"]",
+          "context": "Bu ilişkinin kaderi, her günü aydınlatan, sıcak ve parlak bir güneştir."
         }
       },
       "judgement": {
@@ -1111,7 +1351,13 @@
         "position2": {
           "upright": "Cinsel bir uyanış veya yeniden doğuş yaşanıyor. Geçmiş cinsel deneyimler ve yargılar geride bırakılarak daha yüksek bir cinsel farkındalığa ulaşılıyor. Bu, bir 'ikinci şans' veya cinsel bir çağrıdır.",
           "reversed": "Ters Judgement, cinsel konularda kendini veya partnerini yargılamayı, geçmiş hatalara takılıp kalmayı gösterir. Cinsel suçluluk veya utanç duyguları olabilir.",
-          "keywords": "[\"cinsel uyanış\", \"yeniden doğuş\", \"çağrı\", \"hesaplaşma\", \"affetme\"]",
+          "keywords": [
+            "cinsel uyanış",
+            "yeniden doğuş",
+            "çağrı",
+            "hesaplaşma",
+            "affetme"
+          ],
           "context": "Cinselliğiniz, sizi daha derin bir anlayışa ve kabule çağıran bir uyanış borusu gibi."
         },
         "position3": {
@@ -1119,6 +1365,12 @@
           "reversed": "Ters Judgement, birbirinizi veya kendinizi geçmiş hatalarınız için yargıladığınızı gösterir. Ruhsal olarak ilerlemenizi engelleyen bir affedememe durumu var.",
           "keywords": "[\"ruhsal uyanış\", \"hesaplaşma\", \"affetme\", \"yeniden doğuş\", \"çağrı\"]",
           "context": "Ruhsal bağınız, sizi daha otantik bir varoluşa çağıran, dönüştürücü bir güç."
+        },
+        "position4": {
+          "upright": "Uzun vadede bu ilişki bir uyanış yaşayacak. Bu, bir affetme, barışma ve ilişkiye ikinci bir şans verme anlamına gelebilir. Karmik bir hesaplaşma ve yeniden doğuş.",
+          "reversed": "Ters Judgement, uzun vadede geçmişin hatalarını affedememe veya sürekli birbirini yargılama nedeniyle ilişkinin sona ereceğini gösterir. Bir şans daha olmayacak.",
+          "keywords": "[\"ikinci şans\", \"uyanış\", \"affetme\", \"hesaplaşma\", \"yeniden doğuş\"]",
+          "context": "Bu ilişkinin nihai kaderi, geçmişiyle yüzleşip yeniden doğmak ya da yargılar altında ezilmek."
         }
       },
       "theworld": {
@@ -1131,7 +1383,13 @@
         "position2": {
           "upright": "Fiziksel bağlantınızda bir bütünlük, tamamlanma ve derin bir tatmin hissi var. Cinsel yaşamınız tatmin edici ve döngüsünü başarıyla tamamlamış. Mükemmel bir cinsel uyum.",
           "reversed": "Ters World, cinsel hayatta bir şeylerin eksik kaldığı hissini, bir tamamlanamamayı veya rutine saplanıp kalmayı gösterir. Bir kapanış yapamama veya cinsel doyumsuzluk.",
-          "keywords": "[\"tamamlanma\", \"cinsel doyum\", \"bütünlük\", \"başarı\", \"uyum\"]",
+          "keywords": [
+            "tamamlanma",
+            "cinsel doyum",
+            "bütünlük",
+            "başarı",
+            "uyum"
+          ],
           "context": "Fiziksel bağlantınız, yolculuğun sonunda ulaşılan, tatmin ve bütünlük dolu bir dans."
         },
         "position3": {
@@ -1139,6 +1397,12 @@
           "reversed": "Ters World, duygusal olarak bir şeylerin eksik kaldığını veya bir kapanış yapamadığınızı gösterir. Ruhsal olarak bir araya gelememe, tamamlanmamışlık hissi.",
           "keywords": "[\"tamamlanma\", \"bütünlük\", \"duygusal doyum\", \"başarı\", \"ruhsal uyum\"]",
           "context": "Duygusal bağınız, uzun bir yolculuğun sonunda ulaşılan, tatmin ve bütünlük dolu bir dans."
+        },
+        "position4": {
+          "upright": "Bu ilişkinin uzun vadeli sonucu, bir tamamlanma, bütünlük ve derin bir mutluluktur. Birlikte bir döngüyü başarıyla tamamlayacak ve aradığınız her şeyi bu bağda bulacaksınız. Nihai başarı.",
+          "reversed": "Ters Dünya, uzun vadede bir şeylerin eksik kalacağını, bir tamamlanmamışlık hissi yaşanacağını gösterir. Hedeflerinize ulaşamadan bu ilişki döngüsü kapanabilir.",
+          "keywords": "[\"tamamlanma\", \"başarı\", \"mutluluk\", \"bütünlük\", \"döngünün sonu\"]",
+          "context": "Uzun vadede bu ilişki, tatmin ve başarıyla dolu bir yolculuğun mutlu sonudur."
         }
       },
       "aceofcups": {
@@ -1151,7 +1415,13 @@
         "position2": {
           "upright": "Fiziksel bağlantınız sevgi, şefkat ve derin bir duygusal bağ ile başlıyor. Cinsellik, duyguların bir ifadesidir. Yeni bir romantik ve tensel başlangıç. Doğurganlık potansiyeli.",
           "reversed": "Ters Kupa Ası, cinsel yakınlıktan kaçınma, duygusal kapalılık veya cinsel isteksizlik gösterir. Duygusal bağ olmadan fiziksel yakınlık kurulamıyor.",
-          "keywords": "[\"duygusal cinsellik\", \"sevgi\", \"şefkat\", \"yeni başlangıç\", \"doğurganlık\"]",
+          "keywords": [
+            "duygusal cinsellik",
+            "sevgi",
+            "şefkat",
+            "yeni başlangıç",
+            "doğurganlık"
+          ],
           "context": "Cinselliğiniz, taşan bir sevgi ve şefkat pınarından besleniyor."
         },
         "position3": {
@@ -1159,6 +1429,12 @@
           "reversed": "Ters Kupa Ası, duygusal bir kapalılık veya bastırılmışlık olduğunu gösterir. Bir taraf sevgiyi kabul etmeye veya vermeye hazır değil. Ruhsal kaynak tıkanmış.",
           "keywords": "[\"yeni sevgi\", \"duygusal başlangıç\", \"şefkat\", \"kalp açıklığı\", \"ruhsal akış\"]",
           "context": "Duygusal bağınız, taşmaya hazır, sevgi dolu bir kadehin ilk damlası."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, derin ve gerçek bir aşkın başlangıcıdır. Bu, duygusal olarak son derece tatmin edici, sevgi dolu ve potansiyeli yüksek bir birlikteliğin habercisidir.",
+          "reversed": "Ters Kupa Ası, uzun vadede duygusal bir hayal kırıklığı veya sevginin karşılık bulamaması anlamına gelir. Duygusal potansiyel gerçekleşmeden solar.",
+          "keywords": "[\"gerçek aşk\", \"duygusal başlangıç\", \"mutluluk\", \"şefkat\", \"yeni ilişki\"]",
+          "context": "Bu ilişkinin geleceği, taşan bir sevgi ve mutluluk pınarıdır."
         }
       },
       "twoofcups": {
@@ -1171,7 +1447,13 @@
         "position2": {
           "upright": "Aranızda inanılmaz bir kimya ve karşılıklı çekim var. Fiziksel ve duygusal olarak mükemmel bir uyum içindesiniz. Cinsellik, iki ruhun ve bedenin aşkla birleşmesidir.",
           "reversed": "Ters Kupa İkilisi, fiziksel çekimin olmasına rağmen duygusal bir kopukluk yaşandığını veya cinsel uyumsuzluk olduğunu gösterir. Birbirini yanlış anlama veya soğukluk.",
-          "keywords": "[\"mükemmel kimya\", \"karşılıklı çekim\", \"tensel uyum\", \"romantik cinsellik\", \"ruh eşi\"]",
+          "keywords": [
+            "mükemmel kimya",
+            "karşılıklı çekim",
+            "tensel uyum",
+            "romantik cinsellik",
+            "ruh eşi"
+          ],
           "context": "Fiziksel yakınlığınız, iki insanın tek bir bütün haline geldiği büyülü bir an."
         },
         "position3": {
@@ -1179,6 +1461,12 @@
           "reversed": "Ters Kupa İkilisi, duygusal bir kopukluk, yanlış anlaşılma veya karşılıksız bir sevgi olduğunu gösterir. Ruhsal uyum bozulmuş veya hiç oluşmamış olabilir.",
           "keywords": "[\"duygusal bağ\", \"karşılıklı sevgi\", \"ruhsal uyum\", \"empati\", \"birlik\"]",
           "context": "Duygusal bağlantınız, iki kalbin birbirine sevgi ve anlayışla aktığı bir nehir gibi."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, güçlü ve karşılıklı bir sevgiye dayalı, son derece uyumlu bir ortaklıktır. Bu, evlilik veya derin bir bağlılıkla sonuçlanabilecek bir ruh eşi bağlantısıdır.",
+          "reversed": "Ters Kupa İkilisi, uzun vadede bir uyumsuzluk veya duygusal kopukluk nedeniyle ayrılık yaşanacağını gösterir. Bağlantı, zamanla zayıflar.",
+          "keywords": "[\"uyumlu ortaklık\", \"evlilik\", \"ruh eşi\", \"karşılıklı sevgi\", \"bağlılık\"]",
+          "context": "Bu ilişkinin kaderi, iki kalbin mükemmel bir uyum içinde attığı, kalıcı bir birlikteliktir."
         }
       },
       "threeofcups": {
@@ -1191,7 +1479,13 @@
         "position2": {
           "upright": "Fiziksel bağlantınız eğlenceli, sosyal ve kaygısız. Bu, bir 'friends with benefits' (arkadaşça ilişki) durumunu veya grup fantezilerini işaret edebilir. Cinsellik, bir kutlama ve neşe kaynağıdır.",
           "reversed": "Ters Kupa Üçlüsü, cinsel bir kaçamağı, bir aldatmayı veya ilişkinize müdahale eden üçüncü bir kişiyi işaret edebilir. Eğlence bitmiş, yerine dedikodu ve karmaşa gelmiştir.",
-          "keywords": "[\"eğlenceli cinsellik\", \"kaygısızlık\", \"kutlama\", \"flört\", \"üçüncü kişi\"]",
+          "keywords": [
+            "eğlenceli cinsellik",
+            "kaygısızlık",
+            "kutlama",
+            "flört",
+            "üçüncü kişi"
+          ],
           "context": "Cinsel yaşamınız, arkadaşlık ve neşenin ön planda olduğu, sosyal ve hafif bir enerji taşıyor."
         },
         "position3": {
@@ -1199,6 +1493,12 @@
           "reversed": "Ters Kupa Üçlüsü, duygusal olarak bir yüzeysellik veya bir üçüncü kişinin aranızdaki bağı zedelediğini gösterir. Dedikodu veya güvensizlik ruhsal uyumu bozuyor.",
           "keywords": "[\"neşeli bağ\", \"kutlama\", \"arkadaşlık\", \"duygusal uyum\", \"topluluk\"]",
           "context": "Duygusal bağınız, iki ruhun birlikte dans ettiği neşeli bir kutlama."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, mutlu, sosyal ve kutlamalarla dolu bir birlikteliktir. Bu, nişan, evlilik veya mutlu bir olayın kutlanması anlamına gelebilir. Arkadaşlık temelinde güçlü bir aşk.",
+          "reversed": "Ters Kupa Üçlüsü, uzun vadede bir üçüncü kişinin (veya bir aldatmanın) ilişkiyi bitireceğini gösterir. Neşe, yerini dedikoduya ve acıya bırakır.",
+          "keywords": "[\"mutlu kutlama\", \"evlilik\", \"nişan\", \"sosyal uyum\", \"arkadaşça aşk\"]",
+          "context": "Bu ilişkinin geleceği, sevdiklerinizle birlikte kutlanacak neşeli bir olaydır."
         }
       },
       "fourofcups": {
@@ -1211,7 +1511,13 @@
         "position2": {
           "upright": "Cinsel hayatta bir can sıkıntısı, ilgisizlik veya tatminsizlik var. Partnerin cinsel yaklaşımları geri çevriliyor olabilir. Libido düşüklüğü ve cinsel isteksizlik söz konusu.",
           "reversed": "Ters Kupa Dörtlüsü, cinsel bir durgunluk döneminden çıkıldığını ve yeni deneyimlere açık olunduğunu gösterir. Cinsel ilgi yeniden canlanıyor.",
-          "keywords": "[\"cinsel ilgisizlik\", \"tatminsizlik\", \"libido düşüklüğü\", \"can sıkıntısı\", \"geri çevirme\"]",
+          "keywords": [
+            "cinsel ilgisizlik",
+            "tatminsizlik",
+            "libido düşüklüğü",
+            "can sıkıntısı",
+            "geri çevirme"
+          ],
           "context": "Fiziksel bağlantınız, sunulan cinsel fırsatlara karşı bir ilgisizlik ve geri çekilme halinde."
         },
         "position3": {
@@ -1219,6 +1525,12 @@
           "reversed": "Ters Kupa Dörtlüsü, duygusal bir durgunluktan çıkıp yeniden birbirinize ilgi duymaya başladığınızı gösterir. Ruhsal bir uyanış ve yeni bir farkındalık.",
           "keywords": "[\"duygusal durgunluk\", \"tatminsizlik\", \"ilgisizlik\", \"içe çekilme\", \"fırsatları kaçırma\"]",
           "context": "Duygusal bağınız, sunulan sevgi kadehini görmeyen, kendi içine dalmış bir ruh hali."
+        },
+        "position4": {
+          "upright": "Uzun vadede bu ilişki bir durgunluğa veya tatminsizliğe yol açabilir. Bir tarafın ilgisizliği veya can sıkıntısı, ilişkinin sona ermesine neden olabilir.",
+          "reversed": "Ters Kupa Dörtlüsü, bir durgunluk döneminden sonra bu ilişkiye yeni bir şans vereceğinizi ve potansiyelini yeniden keşfedeceğinizi gösterir.",
+          "keywords": "[\"durgunluk\", \"tatminsizlik\", \"ilgisizlik\", \"kaçırılan fırsat\", \"ayrılık potansiyeli\"]",
+          "context": "Bu ilişkinin uzun vadeli kaderi, sunulan sevgiye karşı bir kayıtsızlık ve uzaklaşmadır."
         }
       },
       "fiveofcups": {
@@ -1231,7 +1543,13 @@
         "position2": {
           "upright": "Geçmişteki kötü bir cinsel deneyim veya kalp kırıklığı, şimdiki cinsel yaşamı olumsuz etkiliyor. Cinsel yakınlık sırasında keder veya pişmanlık hissedilebilir. Zevke odaklanmakta zorluk.",
           "reversed": "Ters Kupa Beşlisi, geçmiş cinsel travmaların üstesinden gelindiğini ve iyileşme sürecinin başladığını gösterir. Cinselliğe yeniden umutla ve açıklıkla yaklaşma.",
-          "keywords": "[\"cinsel yas\", \"pişmanlık\", \"geçmiş travma\", \"hayal kırıklığı\", \"keder\"]",
+          "keywords": [
+            "cinsel yas",
+            "pişmanlık",
+            "geçmiş travma",
+            "hayal kırıklığı",
+            "keder"
+          ],
           "context": "Cinsel yaşamınız, geçmişin hayaletlerinin gölgesinde kalmış, tatminden çok kedere odaklı."
         },
         "position3": {
@@ -1239,6 +1557,12 @@
           "reversed": "Ters Kupa Beşlisi, geçmişteki duygusal acıları affetmeye ve geride bırakmaya başladığınızı gösterir. Ruhsal bir iyileşme ve umut filizleniyor.",
           "keywords": "[\"kayıp\", \"keder\", \"pişmanlık\", \"duygusal acı\", \"affetme\"]",
           "context": "Duygusal bağınız, dökülenlere ağlarken, hala dolu olan sevgi potansiyelini görmekte zorlanıyor."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, bir kayıp, pişmanlık ve kederdir. Bu ilişki, bir hayal kırıklığı ile sona erebilir ve geriye sadece acı anılar kalabilir.",
+          "reversed": "Ters Kupa Beşlisi, uzun vadede geçmişin acılarını affedip yola devam etmeyi başaracağınızı gösterir. Zor bir iyileşme sürecinin ardından gelen kabulleniş.",
+          "keywords": "[\"kayıp\", \"pişmanlık\", \"keder\", \"hayal kırıklığı\", \"üzücü son\"]",
+          "context": "Bu ilişkinin geleceği, geçmişin kayıplarına odaklanmaktan önünüzdeki mutluluğu görememektir."
         }
       },
       "sixofcups": {
@@ -1251,7 +1575,13 @@
         "position2": {
           "upright": "Fiziksel bağlantınız masum, tatlı ve nostaljik bir his taşıyor. Cinsellik, şefkatli ve neredeyse çocuksu bir saflıkla yaşanır. Eski bir sevgiliyle yeniden alevlenen bir tutkuyu da gösterebilir.",
           "reversed": "Ters Kupa Altılısı, geçmiş cinsel deneyimlere takılıp kalmayı veya cinsel olgunluk eksikliğini gösterir. Cinsellik, gerçekçi olmayan, geçmişe dönük beklentilerle yaşanıyor.",
-          "keywords": "[\"masumiyet\", \"şefkat\", \"nostalji\", \"tatlılık\", \"eski sevgili\"]",
+          "keywords": [
+            "masumiyet",
+            "şefkat",
+            "nostalji",
+            "tatlılık",
+            "eski sevgili"
+          ],
           "context": "Tensel yakınlığınız, geçmişin tatlı anılarını anımsatan, güvenli ve şefkatli bir liman."
         },
         "position3": {
@@ -1259,6 +1589,12 @@
           "reversed": "Ters Kupa Altılısı, geçmişe takılıp kalmanın duygusal bağınızı olumsuz etkilediğini gösterir. Büyümeyi reddeden, olgunlaşmamış bir ruhsal dinamik.",
           "keywords": "[\"geçmiş yaşam bağı\", \"nostalji\", \"masumiyet\", \"güven\", \"tanıdık ruh\"]",
           "context": "Ruhsal bağınız, geçmişin tatlı anılarından beslenen, tanıdık ve sıcak bir his."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, geçmişten gelen bir bağın yeniden canlanması ve mutlu bir şekilde devam etmesidir. Bu, masum, tatlı ve güvenli bir sevgi ortamı vaat eder.",
+          "reversed": "Ters Kupa Altılısı, uzun vadede geçmişe takılıp kalmanın veya olgunlaşamamanın ilişkiyi bitireceğini gösterir. Geçmişin gölgeleri geleceği karartır.",
+          "keywords": "[\"geçmişin canlanması\", \"mutlu anılar\", \"güvenli sevgi\", \"masumiyet\", \"kalıcı bağ\"]",
+          "context": "Bu ilişkinin kaderi, geçmişin tatlılığı ve masumiyeti üzerine kurulu, huzurlu bir gelecek."
         }
       },
       "sevenofcups": {
@@ -1271,7 +1607,13 @@
         "position2": {
           "upright": "Cinsel yaşamınızda çok fazla fantezi, hayal ve seçenek var. Ancak bu, gerçek bir fiziksel bağlantı yerine hayal dünyasında yaşamaya neden olabilir. Cinsel kafa karışıklığı veya aldatıcı durumlar.",
           "reversed": "Ters Kupa Yedilisi, cinsel fantezilerle gerçekler arasındaki ayrımın yapıldığını gösterir. Kafa karışıklığı bitiyor ve net bir cinsel arzu veya karar ortaya çıkıyor.",
-          "keywords": "[\"cinsel fantezi\", \"kafa karışıklığı\", \"seçenekler\", \"yanılsama\", \"hayalperestlik\"]",
+          "keywords": [
+            "cinsel fantezi",
+            "kafa karışıklığı",
+            "seçenekler",
+            "yanılsama",
+            "hayalperestlik"
+          ],
           "context": "Cinselliğiniz, gerçeklikten çok, sayısız seçeneğin olduğu bir hayal bulutunun içinde yaşanıyor."
         },
         "position3": {
@@ -1279,6 +1621,12 @@
           "reversed": "Ters Kupa Yedilisi, duygusal yanılsamaların dağıldığını ve gerçeğin ortaya çıktığını gösterir. Ruhsal olarak daha net bir anlayışa ulaşıyorsunuz.",
           "keywords": "[\"yanılsama\", \"kafa karışıklığı\", \"gerçekçi olmayan beklentiler\", \"fantezi\", \"seçenekler\"]",
           "context": "Duygusal bağınız, gerçek bir temel yerine, hayaller ve olasılıklar bulutu üzerinde yüzüyor."
+        },
+        "position4": {
+          "upright": "Uzun vadede bu ilişki bir kafa karışıklığı ve kararsızlık içinde kalacaktır. Çok fazla seçenek veya gerçekçi olmayan beklentiler, somut bir sonuca ulaşmayı engeller.",
+          "reversed": "Ters Kupa Yedilisi, uzun vadede bir yanılsamanın ortaya çıkmasıyla veya net bir karar verilmesiyle bir sonuca varılacağını gösterir. Bu, ayrılık da olabilir.",
+          "keywords": "[\"kararsızlık\", \"kafa karışıklığı\", \"yanılsama\", \"seçenekler\", \"belirsiz sonuç\"]",
+          "context": "Bu ilişkinin geleceği, seçenekler arasında kaybolmuş, net bir yönden yoksun bir hayaldir."
         }
       },
       "eightofcups": {
@@ -1291,7 +1639,13 @@
         "position2": {
           "upright": "Cinsel olarak tatmin etmeyen bir ilişkiden veya durumdan uzaklaşma. Fiziksel zevkten daha derin bir anlam veya ruhsal bir bağ arayışı. Cinsel bir yolculuğa çıkma.",
           "reversed": "Ters Kupa Sekizlisi, cinsel tatminsizliğe rağmen bir ilişkide kalma korkusunu veya nereye gideceğini bilememeyi gösterir. Cinsel bir arayış var ama eyleme geçilemiyor.",
-          "keywords": "[\"cinsel tatminsizlik\", \"arayış\", \"uzaklaşma\", \"derin anlam\", \"yolculuk\"]",
+          "keywords": [
+            "cinsel tatminsizlik",
+            "arayış",
+            "uzaklaşma",
+            "derin anlam",
+            "yolculuk"
+          ],
           "context": "Fiziksel bağlantı, artık ruhu beslemediği için geride bırakılan bir arayışın başlangıcı."
         },
         "position3": {
@@ -1299,6 +1653,12 @@
           "reversed": "Ters Kupa Sekizlisi, duygusal olarak gitmekle kalmak arasında sıkışıp kaldığınızı gösterir. Ruhsal bir arayış var ama eyleme geçme korkusu hakim.",
           "keywords": "[\"duygusal arayış\", \"terk etme\", \"daha fazlasını arama\", \"tatminsizlik\", \"ruhsal yolculuk\"]",
           "context": "Ruhsal bağınız, artık beslemeyen bir limandan ayrılıp, bilinmeyen denizlere yelken açma arifesinde."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, bir tarafın veya her ikisinin de duygusal olarak tatmin olmadığı için bu ilişkiyi geride bırakmasıdır. Daha derin bir anlam arayışıyla yollar ayrılacaktır.",
+          "reversed": "Ters Kupa Sekizlisi, uzun vadede bir gitme-kalma mücadelesi yaşanacağını gösterir. Mutsuz olsanız bile ayrılmaktan korkarak, bu durumda sıkışıp kalabilirsiniz.",
+          "keywords": "[\"ayrılık\", \"terk etme\", \"yeni arayış\", \"tatminsizlik\", \"yol ayrımı\"]",
+          "context": "Bu ilişkinin kaderi, daha fazlasını aramak için bildik limanlardan ayrılmaktır."
         }
       },
       "nineofcups": {
@@ -1311,7 +1671,13 @@
         "position2": {
           "upright": "Son derece tatmin edici, zevk dolu ve duyusal bir cinsel yaşam. 'Cinsel dileklerin gerçekleşmesi' olarak yorumlanabilir. Her iki tarafın da zevk aldığı, cömert bir cinsellik.",
           "reversed": "Ters Kupa Dokuzlusu, cinsel doyumsuzluğu, bencilliği veya beklentilerin karşılanmamasını gösterir. Zevk var ama bir şeyler eksik veya yüzeysel.",
-          "keywords": "[\"cinsel tatmin\", \"zevk\", \"şehvet\", \"doyum\", \"cömertlik\"]",
+          "keywords": [
+            "cinsel tatmin",
+            "zevk",
+            "şehvet",
+            "doyum",
+            "cömertlik"
+          ],
           "context": "Cinsel yaşamınız, tüm arzularınızın gerçekleştiği, zevk ve tatmin dolu bir şölen."
         },
         "position3": {
@@ -1319,6 +1685,12 @@
           "reversed": "Ters Kupa Dokuzlusu, duygusal bir bencillik veya tatminsizlik olduğunu gösterir. Bir tarafın istekleri karşılanmıyor veya sevgi gösterişe dönüşmüş.",
           "keywords": "[\"duygusal tatmin\", \"memnuniyet\", \"dileklerin kabulü\", \"mutluluk\", \"cömertlik\"]",
           "context": "Duygusal bağınız, her iki ruhun da kendini şanslı ve tatmin olmuş hissettiği bir şölen."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, son derece tatmin edici, mutlu ve dileklerinizin gerçekleştiği bir birlikteliktir. Aradığınız duygusal ve maddi doyuma ulaşırsınız.",
+          "reversed": "Ters Kupa Dokuzlusu, uzun vadede bir tatminsizlik veya bencillik nedeniyle hayal kırıklığı yaşanacağını gösterir. Görünen mutluluk, yüzeysel kalabilir.",
+          "keywords": "[\"dileklerin kabulü\", \"mutluluk\", \"duygusal tatmin\", \"keyif\", \"başarı\"]",
+          "context": "Bu ilişkinin geleceği, her iki tarafın da kendini şanslı ve tatmin olmuş hissettiği, mutlu bir sonuçtur."
         }
       },
       "tenofcups": {
@@ -1331,7 +1703,13 @@
         "position2": {
           "upright": "Fiziksel bağlantınız, derin bir sevgi, bağlılık ve duygusal güven üzerine kurulu. Cinsellik, mutlu ve uyumlu bir ilişkinin doğal bir parçasıdır. Aile kurma arzusunu yansıtan bir tensel uyum.",
           "reversed": "Ters Kupa Onlusu, cinsel hayattaki uyumsuzluğun aile hayatına yansıdığını veya tam tersini gösterir. Mutlu bir tablo var ama cinsel tatmin eksik.",
-          "keywords": "[\"duygusal güvenlik\", \"sevgi dolu cinsellik\", \"uyum\", \"kalıcı bağ\", \"aile\"]",
+          "keywords": [
+            "duygusal güvenlik",
+            "sevgi dolu cinsellik",
+            "uyum",
+            "kalıcı bağ",
+            "aile"
+          ],
           "context": "Cinsel bağlantınız, mutlu bir yuvanın sıcaklığı ve güveniyle sarmalanmış."
         },
         "position3": {
@@ -1339,6 +1717,12 @@
           "reversed": "Ters Kupa Onlusu, aranızdaki duygusal uyumun bozulduğunu veya hayal edilen mutluluğun gerçekleşmediğini gösterir. Ruhsal olarak bir kopukluk var.",
           "keywords": "[\"kalıcı mutluluk\", \"duygusal doyum\", \"uyum\", \"kutsanmış bağ\", \"aile hissi\"]",
           "context": "Duygusal bağınız, gökkuşağının altındaki o mükemmel an; kalıcı ve koşulsuz sevgi."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, kalıcı mutluluk, duygusal doyum ve uyumlu bir aile hayatıdır. Bu, hayallerdeki 'mutlu son' kartıdır. Birlikte bir yuva kurabilirsiniz.",
+          "reversed": "Ters Kupa Onlusu, uzun vadede duygusal uyumsuzluk ve hayal kırıklığına işaret eder. Mutluluk tablosu bir türlü tamamlanamaz ve aile içinde sorunlar yaşanabilir.",
+          "keywords": "[\"kalıcı mutluluk\", \"aile\", \"uyum\", \"duygusal doyum\", \"mutlu son\"]",
+          "context": "Bu bağın uzun vadeli potansiyeli, gökkuşağının altındaki o mükemmel aile tablosudur."
         }
       },
       "pageofcups": {
@@ -1351,7 +1735,13 @@
         "position2": {
           "upright": "Fiziksel bağlantıda flörtöz, hassas ve romantik bir başlangıç. Cinsel bir teklif veya duyguların tensel bir dille ifadesi. Keşfe açık, masum bir cinsel merak.",
           "reversed": "Ters Kupa Uşağı, cinsel olgunlaşmamışlığı, alınganlığı veya reddedilme korkusunu gösterir. Flörtöz yaklaşımlar samimiyetsiz veya çocukça olabilir.",
-          "keywords": "[\"flört\", \"romantik başlangıç\", \"hassasiyet\", \"cinsel merak\", \"teklif\"]",
+          "keywords": [
+            "flört",
+            "romantik başlangıç",
+            "hassasiyet",
+            "cinsel merak",
+            "teklif"
+          ],
           "context": "Tensel enerjiniz, size kalbini ve bedenini sunan utangaç ama istekli bir aşık gibi."
         },
         "position3": {
@@ -1359,6 +1749,12 @@
           "reversed": "Ters Kupa Uşağı, duygusal olgunlaşmamışlık veya bir hayal kırıklığı olduğunu gösterir. Duygular ifade edilemiyor veya yanlış anlaşılıyor.",
           "keywords": "[\"duygusal mesaj\", \"hassasiyet\", \"sezgisel başlangıç\", \"merak\", \"şefkat\"]",
           "context": "Ruhsal bağınız, kalbinden gelen bir mesajı sunmaya çalışan, masum ve hassas bir haberci."
+        },
+        "position4": {
+          "upright": "Uzun vadede bu ilişki, romantik ve hassas bir şekilde gelişmeye devam edecektir. Bu, bir nişan teklifi, hamilelik haberi veya sevginin yaratıcı bir ifadesi olabilir.",
+          "reversed": "Ters Kupa Uşağı, uzun vadede duygusal olgunlaşmamışlık veya hayal kırıklığı yaratan haberler nedeniyle ilişkinin zora gireceğini gösterir.",
+          "keywords": "[\"romantik gelişme\", \"iyi haber\", \"yaratıcılık\", \"hassasiyet\", \"nişan\"]",
+          "context": "Bu ilişkinin geleceği, kalpten gelen bir mesajla şekillenecek, umut dolu bir başlangıç."
         }
       },
       "knightofcups": {
@@ -1371,7 +1767,13 @@
         "position2": {
           "upright": "Son derece romantik, baştan çıkarıcı ve idealist bir cinsel yaklaşım. Cinsellik, bir sanat gibi incelikle ve duyarlılıkla yaşanır. Size romantik ve tutkulu bir deneyim sunuluyor.",
           "reversed": "Ters Kupa Şövalyesi, aldatıcı bir romantizmi, samimiyetsiz cinsel vaatleri veya duygusal manipülasyonu gösterir. Görünenin altındaki niyetler farklı olabilir.",
-          "keywords": "[\"romantizm\", \"baştan çıkarma\", \"idealist aşk\", \"duyarlılık\", \"tutkulu teklif\"]",
+          "keywords": [
+            "romantizm",
+            "baştan çıkarma",
+            "idealist aşk",
+            "duyarlılık",
+            "tutkulu teklif"
+          ],
           "context": "Fiziksel bağlantınız, bir şairin dizeleri gibi romantik ve baştan çıkarıcı."
         },
         "position3": {
@@ -1379,6 +1781,12 @@
           "reversed": "Ters Kupa Şövalyesi, gerçekçi olmayan duygusal beklentiler veya samimiyetsiz romantizm olduğunu gösterir. Duygusal bir hayal kırıklığı yaşanabilir.",
           "keywords": "[\"romantizm\", \"duygusal teklif\", \"idealizm\", \"kalp yolculuğu\", \"sanatsal ruh\"]",
           "context": "Duygusal bağınız, size kalbini bir kadeh gibi sunan romantik bir şövalyenin yolculuğu."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, romantik bir teklif, evlilik veya son derece idealist bir aşkın gerçekleşmesidir. Hayallerinizdeki romantik partnerle bir gelecek sizi bekliyor.",
+          "reversed": "Ters Kupa Şövalyesi, uzun vadede romantik hayallerin bir hayal kırıklığı ile sonuçlanacağını gösterir. Verilen sözler tutulmayabilir.",
+          "keywords": "[\"evlilik teklifi\", \"romantizm\", \"ideal aşk\", \"gerçekleşen hayaller\", \"bağlılık\"]",
+          "context": "Bu ilişkinin kaderi, beyaz atlı prensin geldiği ve mutlu sonun başladığı bir masal gibidir."
         }
       },
       "queenofcups": {
@@ -1391,7 +1799,13 @@
         "position2": {
           "upright": "Fiziksel bağlantı, derin bir duygusal ve sezgisel anlayışa dayanır. Cinsellik şefkatli, besleyici ve son derece empatiktir. Partnerinin ihtiyaçlarını hisseden, sevgi dolu bir tensel birleşme.",
           "reversed": "Ters Kupa Kraliçesi, cinsel hayatta aşırı duygusallık, duygusal manipülasyon veya boğucu bir yakınlık olabileceğini gösterir. Cinsel sınırlar belirsizleşebilir.",
-          "keywords": "[\"empatik cinsellik\", \"şefkat\", \"sezgisel bağ\", \"duygusal derinlik\", \"besleyicilik\"]",
+          "keywords": [
+            "empatik cinsellik",
+            "şefkat",
+            "sezgisel bağ",
+            "duygusal derinlik",
+            "besleyicilik"
+          ],
           "context": "Cinselliğiniz, partnerinizin ruhuna dokunan, şefkatli ve sezgisel bir dans."
         },
         "position3": {
@@ -1399,6 +1813,12 @@
           "reversed": "Ters Kupa Kraliçesi, aşırı duygusallık, duygusal manipülasyon veya sınırların kaybolduğu boğucu bir bağ olduğunu gösterir. Duygusal denge kaybolmuş.",
           "keywords": "[\"sezgisel anlayış\", \"empati\", \"şefkat\", \"duygusal bilgelik\", \"koşulsuz sevgi\"]",
           "context": "Ruhsal bağınız, kalbinin derinliklerindeki okyanustan bilgelik sunan şefkatli bir kraliçe."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, derin bir sezgisel anlayış, şefkat ve empati üzerine kurulu, son derece sevgi dolu bir birlikteliktir. Birbirinizin ruhunu besleyerek, kalıcı bir mutluluk bulacaksınız.",
+          "reversed": "Ters Kupa Kraliçesi, uzun vadede aşırı duygusallık veya duygusal manipülasyonun ilişkiyi yıpratacağını gösterir. Duygusal denge kaybolur.",
+          "keywords": "[\"koşulsuz sevgi\", \"empati\", \"şefkat\", \"kalıcı mutluluk\", \"sezgisel bağ\"]",
+          "context": "Bu ilişkinin geleceği, birbirini koşulsuz bir sevgi ve anlayışla kucaklayan iki ruhun birliğidir."
         }
       },
       "kingofcups": {
@@ -1411,7 +1831,13 @@
         "position2": {
           "upright": "Cinsellikte duygusal olgunluk ve kontrol hakimdir. Tutku, sevgi ve bilgelikle yönetilir. Partnerine karşı şefkatli, anlayışlı ve tatmin edici bir cinsel deneyim sunar. Duygusal ve fiziksel olarak dengeli.",
           "reversed": "Ters Kupa Kralı, cinsel olarak mesafeli, duygusal olarak ulaşılamaz veya manipülatif bir partneri gösterir. Duygularını cinsel bir silah olarak kullanabilir.",
-          "keywords": "[\"duygusal olgunluk\", \"dengeli tutku\", \"şefkat\", \"kontrol\", \"bilgelik\"]",
+          "keywords": [
+            "duygusal olgunluk",
+            "dengeli tutku",
+            "şefkat",
+            "kontrol",
+            "bilgelik"
+          ],
           "context": "Cinsel bağlantınız, duygular okyanusunu bilgece yöneten, olgun ve şefkatli bir kral gibi."
         },
         "position3": {
@@ -1419,6 +1845,12 @@
           "reversed": "Ters Kupa Kralı, duygusal manipülasyon, soğukluk veya duyguların bastırıldığı bir bağ olduğunu gösterir. Bir tarafın duygusal olarak ulaşılamaz olması.",
           "keywords": "[\"duygusal olgunluk\", \"istikrar\", \"şefkatli liderlik\", \"bilgelik\", \"denge\"]",
           "context": "Duygusal bağınız, duygular okyanusunu ustalıkla yöneten bilge ve şefkatli bir kral."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, duygusal olgunluk, istikrar ve şefkat üzerine kurulu, son derece dengeli bir ilişkidir. Bu, zamanın testine dayanacak, bilge ve sevgi dolu bir ortaklıktır.",
+          "reversed": "Ters Kupa Kralı, uzun vadede bir tarafın duygusal olarak mesafeli veya manipülatif olması nedeniyle ilişkinin tatmin edici olmayacağını gösterir.",
+          "keywords": "[\"duygusal olgunluk\", \"istikrarlı aşk\", \"kalıcı bağlılık\", \"bilgelik\", \"şefkat\"]",
+          "context": "Bu ilişkinin kaderi, duygularını ustalıkla yöneten iki insanın kurduğu, huzurlu bir krallıktır."
         }
       },
       "aceofswords": {
@@ -1431,7 +1863,13 @@
         "position2": {
           "upright": "Fiziksel bağlantı, zihinsel bir uyarılma ve net bir arzu ile başlıyor. Cinsel konularda açık ve dürüst bir iletişim var. Tutkudan çok, zihinsel bir 'evet' anı veya keskin bir arzu.",
           "reversed": "Ters Kılıç Ası, cinsel konularda iletişim eksikliği, yanlış anlaşılmalar veya cinsel isteksizliği gösterir. Zihinsel bir engel, fiziksel birleşmeyi önlüyor.",
-          "keywords": "[\"zihinsel uyarılma\", \"net arzu\", \"dürüst iletişim\", \"keskin çekim\", \"karar\"]",
+          "keywords": [
+            "zihinsel uyarılma",
+            "net arzu",
+            "dürüst iletişim",
+            "keskin çekim",
+            "karar"
+          ],
           "context": "Tensel çekiminiz, bir fikrin parlaması gibi, ani ve keskin bir netlikle başlıyor."
         },
         "position3": {
@@ -1439,6 +1877,12 @@
           "reversed": "Ters Kılıç Ası, aranızda zihinsel bir çatışma veya yanlış anlaşılma olduğunu gösterir. Duygusal ve ruhsal olarak aynı dili konuşmuyorsunuz.",
           "keywords": "[\"zihinsel netlik\", \"gerçek\", \"dürüst iletişim\", \"ruhsal aydınlanma\", \"karar\"]",
           "context": "Ruhsal bağınız, yanılsamaları kesip atan ve gerçeği ortaya çıkaran keskin bir kılıç."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, bir gerçeğin net bir şekilde ortaya çıkmasıdır. Bu, ya ilişkiyi daha güçlü bir temele oturtacak bir dürüstlük anı ya da bir ayrılık kararı olabilir. Net bir sonuç kaçınılmaz.",
+          "reversed": "Ters Kılıç Ası, uzun vadede çözülmemiş çatışmalar ve yanlış anlaşılmaların ilişkiyi bitireceğini gösterir. Netlik bir türlü sağlanamaz.",
+          "keywords": "[\"net sonuç\", \"gerçek\", \"karar\", \"dürüstlük\", \"aydınlanma\"]",
+          "context": "Bu ilişkinin kaderi, her şeyi değiştirecek, keskin ve net bir hakikat anıdır."
         }
       },
       "twoofswords": {
@@ -1451,7 +1895,13 @@
         "position2": {
           "upright": "Cinsel yakınlığa karşı bir savunma veya kararsızlık durumu. Taraflar, cinsel bir adım atmaktan kaçınıyor ve duygusal bir duvar örüyor. Cinsel gerilim var ama eylem yok.",
           "reversed": "Ters Kılıç İkilisi, cinsel bir çıkmazı veya bastırılmış duyguların yarattığı bir gerilimi gösterir. Kararsızlık, fiziksel yakınlığı imkansız kılıyor.",
-          "keywords": "[\"cinsel kararsızlık\", \"savunma\", \"duvar örme\", \"gerilim\", \"kaçınma\"]",
+          "keywords": [
+            "cinsel kararsızlık",
+            "savunma",
+            "duvar örme",
+            "gerilim",
+            "kaçınma"
+          ],
           "context": "Fiziksel bağlantınız, birbirine kapalı iki zihin arasındaki soğuk bir barış gibi."
         },
         "position3": {
@@ -1459,6 +1909,12 @@
           "reversed": "Ters Kılıç İkilisi, bastırılmış duyguların veya bir kararsızlığın yarattığı gerilimin arttığını gösterir. Duygusal bir çıkmaza saplanmışsınız.",
           "keywords": "[\"duygusal kararsızlık\", \"savunma\", \"çıkmaz\", \"inkar\", \"kalbi kapatma\"]",
           "context": "Duygusal bağınız, gözleri bağlı iki ruhun birbirine yaklaşmaktan korktuğu bir an."
+        },
+        "position4": {
+          "upright": "Uzun vadede bu ilişki bir çıkmazda kalacaktır. Önemli bir karar verilemediği için, ilişki ne ilerler ne de biter. Bir kararsızlık durumu devam eder.",
+          "reversed": "Ters Kılıç İkilisi, uzun vadede bir kararsızlık nedeniyle bir tarafın pes edeceğini veya dış bir gücün ilişkiyi bitireceğini gösterir. Çıkmaz, bir kopuşla sonuçlanır.",
+          "keywords": "[\"çıkmaz\", \"kararsızlık\", \"belirsizlik\", \"sonuçsuzluk\", \"ateşkes\"]",
+          "context": "Bu ilişkinin uzun vadeli kaderi, bir karar verilemediği için askıda kalmaktır."
         }
       },
       "threeofswords": {
@@ -1471,7 +1927,13 @@
         "position2": {
           "upright": "Fiziksel bağlantı, bir aldatma, cinsel bir hayal kırıklığı veya acı verici bir gerçekle gölgelenmiş. Cinsel birleşme, keder veya acı hissi taşıyabilir. Kalp kırıklığı tensel bağı etkiliyor.",
           "reversed": "Ters Kılıç Üçlüsü, cinsel bir acının veya ihanetin üstesinden gelme çabasını gösterir. İyileşme süreci yavaş ve acı verici olabilir. Affetmekte zorlanma.",
-          "keywords": "[\"cinsel hayal kırıklığı\", \"aldatma\", \"acı\", \"kalp kırıklığı\", \"keder\"]",
+          "keywords": [
+            "cinsel hayal kırıklığı",
+            "aldatma",
+            "acı",
+            "kalp kırıklığı",
+            "keder"
+          ],
           "context": "Fiziksel bağlantınız, acı bir gerçeğin kalbe sapladığı kılıçlar yüzünden yaralı."
         },
         "position3": {
@@ -1479,6 +1941,12 @@
           "reversed": "Ters Kılıç Üçlüsü, bir kalp kırıklığının acısını uzattığınızı veya affetmeyi reddettiğinizi gösterir. Ruhsal olarak bu acıya takılıp kalmışsınız.",
           "keywords": "[\"kalp kırıklığı\", \"duygusal acı\", \"ihanet\", \"keder\", \"ayrılık\"]",
           "context": "Duygusal bağınız, üç keskin kılıcın saplandığı, acı çeken bir kalp."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, kaçınılmaz bir kalp kırıklığı, ayrılık ve kederdir. Bu ilişki, acı verici bir şekilde sona erecektir.",
+          "reversed": "Ters Kılıç Üçlüsü, uzun vadede bir ayrılığın veya ihanetin acısının bir türlü geçmeyeceğini gösterir. Sürekli bir keder ve iyileşememe durumu.",
+          "keywords": "[\"ayrılık\", \"kalp kırıklığı\", \"keder\", \"acı\", \"ihanet\"]",
+          "context": "Bu ilişkinin kaderi, acı, gözyaşı ve kederle dolu bir sondur."
         }
       },
       "fourofswords": {
@@ -1491,7 +1959,13 @@
         "position2": {
           "upright": "Cinsel bir mola veya dinlenme dönemi. Taraflar, cinsel aktiviteden uzaklaşarak enerji topluyor. Libido düşüklüğü veya cinsel perhiz anlamına gelebilir. İyileşme için gerekli bir süreç.",
           "reversed": "Ters Kılıç Dörtlüsü, cinsel bir durgunluğun zorla yaşandığını veya bir tükenmişlik durumunu gösterir. Cinsel aktiviteye dönme zamanı gelmiş olabilir ama bir isteksizlik var.",
-          "keywords": "[\"cinsel mola\", \"perhiz\", \"dinlenme\", \"iyileşme\", \"libido düşüklüğü\"]",
+          "keywords": [
+            "cinsel mola",
+            "perhiz",
+            "dinlenme",
+            "iyileşme",
+            "libido düşüklüğü"
+          ],
           "context": "Cinsel enerjiniz, bir sonraki savaşa hazırlanmak için dinlenen bir şövalye gibi sakin."
         },
         "position3": {
@@ -1499,6 +1973,12 @@
           "reversed": "Ters Kılıç Dörtlüsü, duygusal sorunlardan kaçtığınızı veya dinlenmeyi reddederek ruhsal olarak tükendiğinizi gösterir. Birbirinize nefes aldırmıyorsunuz.",
           "keywords": "[\"duygusal dinlenme\", \"iyileşme\", \"mola\", \"zihinsel sükunet\", \"alan tanıma\"]",
           "context": "Ruhsal bağınız, savaşlara ara vermiş, şifa bulmak için dinlenen bir şövalye gibi."
+        },
+        "position4": {
+          "upright": "Uzun vadede bu ilişki bir duraklama dönemine girecek. Bu, geçici bir ayrılık veya ilişkinin geleceğini düşünmek için bir mola olabilir. Bir son değil, bir dinlenme.",
+          "reversed": "Ters Kılıç Dörtlüsü, uzun vadede sorunlardan kaçarak veya dinlenmeyi reddederek ilişkinin yavaşça tükeneceğini ve biteceğini gösterir.",
+          "keywords": "[\"duraklama\", \"mola\", \"geçici ayrılık\", \"dinlenme\", \"iyileşme süreci\"]",
+          "context": "Bu ilişkinin geleceği, bir süreliğine rafa kaldırılacak, bir nefes alma molasıdır."
         }
       },
       "fiveofswords": {
@@ -1511,7 +1991,13 @@
         "position2": {
           "upright": "Cinsellikte bir güç mücadelesi, bencillik veya çatışma var. Bir tarafın zevki, diğerinin pahasına olabilir. Cinsel birleşme, bir zafer veya yenilgi gibi hissedilebilir. Agresif veya aşağılayıcı olabilir.",
           "reversed": "Ters Kılıç Beşlisi, cinsel bir çatışmanın ardından gelen pişmanlığı veya bir aldatmacanın ortaya çıkmasını gösterebilir. Cinsel zorbalık veya taciz potansiyeli.",
-          "keywords": "[\"cinsel çatışma\", \"bencillik\", \"güç mücadelesi\", \"agresyon\", \"yenilgi\"]",
+          "keywords": [
+            "cinsel çatışma",
+            "bencillik",
+            "güç mücadelesi",
+            "agresyon",
+            "yenilgi"
+          ],
           "context": "Cinsel alanınız, sevgi dolu bir birleşme yerine bir savaş alanı gibi."
         },
         "position3": {
@@ -1519,6 +2005,12 @@
           "reversed": "Ters Kılıç Beşlisi, duygusal bir savaşın ardından gelen pişmanlığı veya barışma arzusunu gösterir. Ancak yaralar derin olabilir ve ruhsal güven sarsılmıştır.",
           "keywords": "[\"duygusal çatışma\", \"incitici sözler\", \"ego savaşı\", \"empati eksikliği\", \"güven kaybı\"]",
           "context": "Ruhsal bağınız, sevgi yerine, kazananı olmayan bir ego savaşıyla tanımlanıyor."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, acı ve kayıplarla dolu bir çatışma ve ayrılıktır. Bu, kazananı olmayan bir savaştır ve geriye sadece pişmanlık ve düşmanlık kalır.",
+          "reversed": "Ters Kılıç Beşlisi, uzun vadede bir tarafın diğerini tamamen yeneceği veya ilişkinin onarılamaz bir şekilde hasar göreceği bir sonu gösterir. Geri dönüşü olmayan bir yıkım.",
+          "keywords": "[\"düşmanca ayrılık\", \"çatışma\", \"yenilgi\", \"pişmanlık\", \"kayıp\"]",
+          "context": "Bu ilişkinin geleceği, her iki tarafın da kaybettiği, onur kırıcı bir savaştır."
         }
       },
       "sixofswords": {
@@ -1531,7 +2023,13 @@
         "position2": {
           "upright": "Zorlu veya acı verici bir cinsel geçmişi geride bırakıp daha huzurlu bir döneme geçiş. Cinsel travmalardan iyileşme ve daha sakin bir cinsel yaşama doğru yol alma.",
           "reversed": "Ters Kılıç Altılısı, cinsel sorunlardan kaçmaya çalışsanız da geçmişin yükünün hala sizinle geldiğini gösterir. Tam bir iyileşme sağlanamamış.",
-          "keywords": "[\"cinsel iyileşme\", \"geçiş\", \"huzur\", \"geçmişi bırakma\", \"sakinleşme\"]",
+          "keywords": [
+            "cinsel iyileşme",
+            "geçiş",
+            "huzur",
+            "geçmişi bırakma",
+            "sakinleşme"
+          ],
           "context": "Cinsel enerjiniz, fırtınalı denizlerden ayrılıp sakin bir koya doğru yol alıyor."
         },
         "position3": {
@@ -1539,6 +2037,12 @@
           "reversed": "Ters Kılıç Altılısı, duygusal sorunlardan kaçmaya çalışsanız da geçmişin yükünün hala ruhsal bağınızı etkilediğini gösterir. Tam bir iyileşme sağlanamamış.",
           "keywords": "[\"ruhsal iyileşme\", \"geçiş\", \"huzur\", \"geçmişi bırakma\", \"sakinleşme\"]",
           "context": "Duygusal bağınız, fırtınalı bir denizden ayrılıp, sakin bir koya doğru yol alan bir tekne."
+        },
+        "position4": {
+          "upright": "Uzun vadede, zorlu bir dönemin ardından birlikte daha sakin ve huzurlu bir geleceğe yol alacaksınız. Bu, sorunları geride bırakıp, yavaş ama emin adımlarla iyileşmektir.",
+          "reversed": "Ters Kılıç Altılısı, uzun vadede geçmişin sorunlarından bir türlü kurtulamayacağınızı ve ilişkinin bu yük altında ezileceğini gösterir.",
+          "keywords": "[\"huzurlu gelecek\", \"iyileşme\", \"geçiş\", \"sorunları aşma\", \"sakinlik\"]",
+          "context": "Bu ilişkinin kaderi, fırtınalı denizlerden ayrılıp sakin bir limana ulaşmaktır."
         }
       },
       "sevenofswords": {
@@ -1551,7 +2055,13 @@
         "position2": {
           "upright": "Cinsel hayatta gizlilik, aldatma veya dürüst olmayan davranışlar söz konusu. Bir kaçamak, gizli bir ilişki veya partnerden saklanan cinsel fanteziler olabilir.",
           "reversed": "Ters Kılıç Yedilisi, bir yalanın veya aldatmacanın ortaya çıkma tehlikesini gösterir. Sır saklamanın getirdiği vicdan azabı veya yakalanma korkusu.",
-          "keywords": "[\"aldatma\", \"gizlilik\", \"kaçamak\", \"dürüst olmayan davranış\", \"sırlar\"]",
+          "keywords": [
+            "aldatma",
+            "gizlilik",
+            "kaçamak",
+            "dürüst olmayan davranış",
+            "sırlar"
+          ],
           "context": "Fiziksel bağlantınız, dürüst bir birleşme yerine gizli saklı yürütülen bir plana benziyor."
         },
         "position3": {
@@ -1559,6 +2069,12 @@
           "reversed": "Ters Kılıç Yedilisi, bir yalanın veya sırrın ortaya çıkma tehlikesini veya bunun getirdiği vicdan azabını gösterir. Ruhsal olarak bir temizlenme ihtiyacı.",
           "keywords": "[\"aldatma\", \"sırlar\", \"dürüstlük eksikliği\", \"güvensizlik\", \"kaçınma\"]",
           "context": "Duygusal bağınız, bir tarafın diğerinden bir şeyler sakladığı, eksik bir yapboz gibi."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, bir aldatma, dürüstlük eksikliği veya bir tarafın ilişkiyi gizlice terk etmesidir. Güven eksikliği, bu bağın sonunu getirecektir.",
+          "reversed": "Ters Kılıç Yedilisi, uzun vadede bir yalanın ortaya çıkmasıyla ilişkinin ani ve sancılı bir şekilde biteceğini gösterir. Yüzleşme kaçınılmazdır.",
+          "keywords": "[\"aldatma\", \"ayrılık\", \"güvensizlik\", \"sırlar\", \"dürüstlük eksikliği\"]",
+          "context": "Bu ilişkinin kaderi, güvenin ihanete uğramasıyla gelen bir sondur."
         }
       },
       "eightofswords": {
@@ -1571,7 +2087,13 @@
         "position2": {
           "upright": "Fiziksel bağlantınız, korkular ve zihinsel engeller tarafından kısıtlanıyor. Taraflardan biri veya her ikisi de cinsel olarak kendini ifade etmekten korkuyor, kendini kapana kısılmış hissediyor. Cinsellik zihinsel bir hapishanede yaşanıyor.",
           "reversed": "Ters Kılıç Sekizlisi, cinsel tabuların ve korkuların aşıldığını gösterir. Zihinsel engeller kalkıyor ve cinsel özgürleşme başlıyor. Kendini kısıtlayan düşüncelerden kurtulma.",
-          "keywords": "[\"cinsel ketumiyet\", \"korku\", \"zihinsel engel\", \"özgüvensizlik\", \"kısıtlanma\"]",
+          "keywords": [
+            "cinsel ketumiyet",
+            "korku",
+            "zihinsel engel",
+            "özgüvensizlik",
+            "kısıtlanma"
+          ],
           "context": "Aranızdaki tensel bağ, kişinin kendi zihninde yarattığı engellerle boğuşuyor."
         },
         "position3": {
@@ -1579,6 +2101,12 @@
           "reversed": "Ters Kılıç Sekizlisi, sizi kısıtlayan duygusal veya ruhsal engelleri fark edip onlardan kurtulmaya başladığınızı gösterir. Bir özgürleşme anı.",
           "keywords": "[\"duygusal hapis\", \"kısıtlanma\", \"korku\", \"çaresizlik\", \"zihinsel engel\"]",
           "context": "Ruhsal bağınız, kendi korkularınızla ördüğünüz, sizi hapsetmiş bir kafes."
+        },
+        "position4": {
+          "upright": "Uzun vadede bu ilişki, sizi kapana kısılmış ve çaresiz hissettiren bir duruma dönüşecektir. Korkularınız ve kısıtlamalarınız nedeniyle bu bağdan kurtulamayabilirsiniz.",
+          "reversed": "Ters Kılıç Sekizlisi, uzun vadede bu kısıtlayıcı ilişkiden kurtulmak için bir yol bulacağınızı gösterir. Bu, özgürleşme ile sonuçlanacak bir ayrılıktır.",
+          "keywords": "[\"kapana kısılma\", \"çaresizlik\", \"kısıtlayıcı ilişki\", \"korku\", \"özgürleşme ihtiyacı\"]",
+          "context": "Bu ilişkinin geleceği, kendi yarattığınız korkularla inşa edilmiş bir hapishanedir."
         }
       },
       "nineofswords": {
@@ -1591,7 +2119,13 @@
         "position2": {
           "upright": "Cinsel yaşam, endişe, suçluluk veya korkuyla dolu. Cinsel performans anksiyetesi, geçmiş bir travma veya utanç, fiziksel yakınlığı bir eziyete dönüştürebilir.",
           "reversed": "Ters Kılıç Dokuzlusu, cinsel korkularla yüzleşildiğini ve bu endişelerin yersiz olduğunun anlaşıldığını gösterir. Bir iyileşme süreci başlıyor ama hala kırılganlık var.",
-          "keywords": "[\"cinsel anksiyete\", \"korku\", \"suçluluk\", \"utanç\", \"performans kaygısı\"]",
+          "keywords": [
+            "cinsel anksiyete",
+            "korku",
+            "suçluluk",
+            "utanç",
+            "performans kaygısı"
+          ],
           "context": "Cinsel yaşamınız, zihinsel işkenceye dönüşen endişelerle dolu karanlık bir gece gibi."
         },
         "position3": {
@@ -1599,6 +2133,12 @@
           "reversed": "Ters Kılıç Dokuzlusu, en kötü korkularınızla yüzleştiğinizi ve bunların yersiz olduğunu fark ettiğinizi gösterir. Duygusal bir krizin sonu ve ruhsal bir rahatlama.",
           "keywords": "[\"endişe\", \"korku\", \"suçluluk\", \"zihinsel acı\", \"ruhsal eziyet\"]",
           "context": "Duygusal bağınız, geceleri sizi uyutmayan, endişe ve korku dolu bir kabus."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, endişe, suçluluk ve korku dolu bir ilişkidir. Bu bağ, size mutluluktan çok zihinsel acı getirecek ve bir kabusa dönüşecektir.",
+          "reversed": "Ters Kılıç Dokuzlusu, uzun vadede bir krizin veya büyük bir korkunun ilişkiyi bitireceğini gösterir. Endişeler gerçeğe dönüşebilir.",
+          "keywords": "[\"endişe\", \"korku\", \"zihinsel acı\", \"kabus\", \"suçluluk\"]",
+          "context": "Bu ilişkinin geleceği, endişe ve pişmanlıklarla dolu, uykusuz bir gecedir."
         }
       },
       "tenofswords": {
@@ -1611,7 +2151,13 @@
         "position2": {
           "upright": "Cinsel bir bitiş, bir ihanetin en acı verici noktası veya cinsel enerjinin tamamen tükenmesi. Bu, bir dönemin sonudur ve artık yeni bir başlangıçtan başka yol yoktur.",
           "reversed": "Ters Kılıç Onlusu, acı verici bir cinsel durumdan sonra yavaş yavaş toparlanmayı gösterir. Yaralar hala taze ama en kötüsü geçmiş olabilir. Tam bir çöküşten kurtulma.",
-          "keywords": "[\"acı son\", \"ihanet\", \"cinsel tükenme\", \"dip nokta\", \"ihanet acısı\"]",
+          "keywords": [
+            "acı son",
+            "ihanet",
+            "cinsel tükenme",
+            "dip nokta",
+            "ihanet acısı"
+          ],
           "context": "Fiziksel bağlantınız, en dip noktaya ulaşmış, acı verici bir sonu temsil ediyor."
         },
         "position3": {
@@ -1619,6 +2165,12 @@
           "reversed": "Ters Kılıç Onlusu, acı verici bir duygusal durumdan sonra yavaş yavaş toparlanmayı gösterir. Yaralar hala taze ama ruhsal bir iyileşme süreci başlamış.",
           "keywords": "[\"acı son\", \"ihanet\", \"duygusal çöküş\", \"dip nokta\", \"yeniden başlangıç\"]",
           "context": "Duygusal bağınız, sırtından bıçaklanmış gibi hissedilen, acı verici bir son."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, acı verici ve kesin bir sondur. Bu ilişki, bir ihanet veya kaçınılmaz bir çöküşle sona erecektir. Bu bitiş, aynı zamanda yeni bir başlangıç için bir zorunluluktur.",
+          "reversed": "Ters Kılıç Onlusu, acı verici bir sonun sürekli ertelendiğini veya bir ayrılığın ardından bile acının uzun süre devam edeceğini gösterir. Bir türlü tam olarak bitmez.",
+          "keywords": "[\"kesin son\", \"ihanet\", \"acı\", \"çöküş\", \"yenilgi\"]",
+          "context": "Bu ilişkinin kaderi, kaçınılmaz ve acı dolu bir finalle noktalanmaktır."
         }
       },
       "pageofswords": {
@@ -1631,7 +2183,13 @@
         "position2": {
           "upright": "Cinsel konularda meraklı, sorgulayıcı ve konuşkan bir enerji. 'Kirli konuşma' (dirty talk) veya cinsel deneyimler hakkında açıkça iletişim kurma potansiyeli. Biraz deneyimsiz ama hevesli.",
           "reversed": "Ters Kılıç Uşağı, sözlerin cinsel hayatta kırıcı olabileceğini veya yalanları gösterir. İletişim, yakınlaşmak yerine uzaklaştırabilir. Savunmacı bir cinsellik.",
-          "keywords": "[\"cinsel merak\", \"iletişim\", \"kirli konuşma\", \"sorgulama\", \"deneyimsizlik\"]",
+          "keywords": [
+            "cinsel merak",
+            "iletişim",
+            "kirli konuşma",
+            "sorgulama",
+            "deneyimsizlik"
+          ],
           "context": "Fiziksel bağlantınız, kelimelerle ve zihinle oynanan keskin ve meraklı bir oyun."
         },
         "position3": {
@@ -1639,6 +2197,12 @@
           "reversed": "Ters Kılıç Uşağı, aranızda kırıcı sözler, tartışmalar veya zihinsel oyunlar olduğunu gösterir. İletişim, ruhsal bağı güçlendirmek yerine zedeliyor.",
           "keywords": "[\"zihinsel merak\", \"açık iletişim\", \"sorgulama\", \"tartışma\", \"dürüstlük\"]",
           "context": "Duygusal bağınız, kelimelerle ve fikirlerle oynanan, keskin ve meraklı bir zihin oyunu."
+        },
+        "position4": {
+          "upright": "Bu ilişkinin geleceği, sürekli bir sorgulama ve iletişim içinde olacak. Bu, zihinsel olarak uyarıcı olabilir, ancak aynı zamanda sürekli tartışmalara ve anlaşmazlıklara da yol açabilir.",
+          "reversed": "Ters Kılıç Uşağı, uzun vadede kırıcı sözler ve dürüst olmayan iletişimin ilişkiyi bitireceğini gösterir. Birbirinize karşı sabırsız olacaksınız.",
+          "keywords": "[\"sürekli tartışma\", \"iletişim sorunları\", \"anlaşmazlık\", \"sorgulama\", \"net olmayan gelecek\"]",
+          "context": "Bu ilişkinin geleceği, bitmeyen bir müzakere ve zihinsel bir satranç oyunu."
         }
       },
       "knightofswords": {
@@ -1651,7 +2215,13 @@
         "position2": {
           "upright": "Hızlı, tutkulu ve belki de biraz düşüncesiz bir cinsel yaklaşım. 'Tek gecelik ilişki' enerjisi taşıyabilir. Hedef odaklıdır ve duygusal derinlikten çok, eyleme ve fethe odaklanır.",
           "reversed": "Ters Kılıç Şövalyesi, agresif, kaba veya bencil bir cinsel partneri gösterebilir. Partnerinin ihtiyaçlarını göz ardı eden, aceleci bir enerji.",
-          "keywords": "[\"hızlı cinsellik\", \"düşüncesizlik\", \"fetih\", \"tek gecelik ilişki\", \"acelecilik\"]",
+          "keywords": [
+            "hızlı cinsellik",
+            "düşüncesizlik",
+            "fetih",
+            "tek gecelik ilişki",
+            "acelecilik"
+          ],
           "context": "Cinsel enerjiniz, bir fırtına gibi hızla gelip geçen, hedef odaklı bir akıncı."
         },
         "position3": {
@@ -1659,6 +2229,12 @@
           "reversed": "Ters Kılıç Şövalyesi, aranızda agresif tartışmalar ve duygusal saldırganlık olduğunu gösterir. Birbirinizin ruhunu yaralıyorsunuz.",
           "keywords": "[\"hızlı iletişim\", \"direktlik\", \"düşüncesizlik\", \"tartışma\", \"gerçeği arama\"]",
           "context": "Duygusal bağınız, gerçeği ararken önüne çıkan her şeyi yıkan, hızlı bir fırtına."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, ani ve hızlı bir ayrılıktır. Bir taraf, düşünmeden ve hızla ilişkiyi bitirme kararı alabilir.",
+          "reversed": "Ters Kılıç Şövalyesi, uzun vadede büyük ve yıkıcı bir kavganın ardından gelen bir ayrılığı gösterir. Geri dönüşü olmayan sözler söylenebilir.",
+          "keywords": "[\"ani ayrılık\", \"hızlı son\", \"düşüncesizlik\", \"kavga\", \"kopuş\"]",
+          "context": "Bu ilişkinin kaderi, bir fırtına gibi aniden gelip her şeyi yıkan bir sondur."
         }
       },
       "queenofswords": {
@@ -1671,7 +2247,13 @@
         "position2": {
           "upright": "Cinsel olarak zeki, deneyimli ve ne istediğini bilen birini temsil eder. Duygusal dramadan çok, açık iletişime ve zihinsel uyuma önem verir. Esprili ve keskin bir cinsel zekası olabilir.",
           "reversed": "Ters Kılıç Kraliçesi, cinsel olarak soğuk, mesafeli, eleştirel veya geçmişteki acılar yüzünden kendini kapatmış birini gösterebilir. Cinselliği bir intikam aracı olarak kullanabilir.",
-          "keywords": "[\"cinsel zeka\", \"deneyim\", \"netlik\", \"mesafe\", \"bağımsızlık\"]",
+          "keywords": [
+            "cinsel zeka",
+            "deneyim",
+            "netlik",
+            "mesafe",
+            "bağımsızlık"
+          ],
           "context": "Cinselliğiniz, zekanın ve deneyimin yönlendirdiği, duygusal mesafenin korunduğu bir alan."
         },
         "position3": {
@@ -1679,6 +2261,12 @@
           "reversed": "Ters Kılıç Kraliçesi, aranızda duygusal bir soğukluk, mesafe veya acımasız bir eleştiri olduğunu gösterir. Geçmişin yaraları, ruhsal bağı dondurmuş.",
           "keywords": "[\"duygusal netlik\", \"dürüstlük\", \"zeka\", \"bağımsızlık\", \"sınır koyma\"]",
           "context": "Ruhsal bağınız, duygusal dramadan arınmış, zeki ve net bir anlayış."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, net ve mantıklı bir kararla yolların ayrılmasıdır. Bu, acı tecrübelerden sonra gelen, duygusal olmayan ama dürüst bir son olabilir. Bağımsızlık kazanılır.",
+          "reversed": "Ters Kılıç Kraliçesi, uzun vadede soğukluk, mesafe ve affetmemenin ilişkiyi bitireceğini gösterir. Yalnız ve kinci bir son.",
+          "keywords": "[\"mantıklı ayrılık\", \"bağımsızlık\", \"net karar\", \"dürüst son\", \"mesafe\"]",
+          "context": "Bu ilişkinin geleceği, duygulardan arınmış, keskin ve net bir karardır."
         }
       },
       "kingofswords": {
@@ -1691,7 +2279,13 @@
         "position2": {
           "upright": "Cinsellikte otorite, zeka ve kontrol sahibi birini temsil eder. Cinsel fanteziler veya konuşmalar entelektüel bir seviyede olabilir. Duygusal olarak mesafeli ama adil ve dürüst bir cinsel partner.",
           "reversed": "Ters Kılıç Kralı, cinsel olarak manipülatif, kontrolcü ve duygusuz birini gösterir. Zekasını partnerini kontrol etmek veya cinsel olarak baskı kurmak için kullanabilir.",
-          "keywords": "[\"entelektüel cinsellik\", \"kontrol\", \"otorite\", \"dürüstlük\", \"mesafe\"]",
+          "keywords": [
+            "entelektüel cinsellik",
+            "kontrol",
+            "otorite",
+            "dürüstlük",
+            "mesafe"
+          ],
           "context": "Cinsel bağlantınız, zekanın ve mantığın hüküm sürdüğü, son derece kontrollü bir alan."
         },
         "position3": {
@@ -1699,6 +2293,12 @@
           "reversed": "Ters Kılıç Kralı, duygusal olarak manipülatif, soğuk ve yargılayıcı bir bağ olduğunu gösterir. Zeka, ruhsal bir bağ kurmak yerine üstünlük kurmak için kullanılıyor.",
           "keywords": "[\"zihinsel uyum\", \"adalet\", \"dürüstlük\", \"entelektüel saygı\", \"bilgelik\"]",
           "context": "Duygusal bağınız, gerçeğin ve adaletin hüküm sürdüğü, olgun bir zihin krallığı."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, entelektüel bir ortaklık veya adil ve mantıklı bir ayrılıktır. Duygular yerine, gerçekler ve mantık üzerine kurulu bir karara varılacaktır.",
+          "reversed": "Ters Kılıç Kralı, uzun vadede bir tarafın diğerine karşı zihinsel üstünlük kurması veya manipülasyonuyla ilişkinin sona ereceğini gösterir. Soğuk ve adaletsiz bir son.",
+          "keywords": "[\"adil sonuç\", \"mantıklı karar\", \"entelektüel ortaklık\", \"dürüstlük\", \"otorite\"]",
+          "context": "Bu ilişkinin kaderi, bir yargıcın verdiği gibi, nihai ve adil bir kararla belirlenir."
         }
       },
       "aceofwands": {
@@ -1711,7 +2311,13 @@
         "position2": {
           "upright": "Aranızda yeni ve güçlü bir cinsel kıvılcım var. Bu, büyük bir tutkunun, fiziksel enerjinin ve cinsel uyanışın başlangıcıdır. Karşı konulmaz bir arzu söz konusu.",
           "reversed": "Ters Asa Ası, cinsel isteksizlik, enerji düşüklüğü veya aranızdaki çekimin sönükleştiğini gösterir. Potansiyel var ama bir türlü alevlenmiyor. İktidarsızlık veya cinsel soğukluk.",
-          "keywords": "[\"cinsel kıvılcım\", \"tutku\", \"arzu\", \"fiziksel enerji\", \"yeni başlangıç\"]",
+          "keywords": [
+            "cinsel kıvılcım",
+            "tutku",
+            "arzu",
+            "fiziksel enerji",
+            "yeni başlangıç"
+          ],
           "context": "Fiziksel bağlantınız, patlamaya hazır bir tutkunun ilk kıvılcımını taşıyor."
         },
         "position3": {
@@ -1719,6 +2325,12 @@
           "reversed": "Ters Asa Ası, aranızdaki ruhsal ve duygusal enerjinin düşük olduğunu veya bir başlangıç yapma konusunda isteksizlik olduğunu gösterir. İlham kaynağı tıkanmış.",
           "keywords": "[\"ruhsal kıvılcım\", \"ilham\", \"tutku\", \"yaratıcılık\", \"yeni başlangıç\"]",
           "context": "Ruhsal bağınız, yeni bir projenin veya maceranın başlangıcındaki o heyecan verici kıvılcım."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, birlikte yeni ve tutkulu bir maceraya atılmaktır. Bu, yeni bir başlangıç, birlikte bir proje veya enerjik bir birlikteliğin habercisidir.",
+          "reversed": "Ters Asa Ası, uzun vadede bir potansiyelin gerçekleşemeyeceğini ve tutkunun sönümleneceğini gösterir. Bir başlangıç yapılamadan her şey biter.",
+          "keywords": "[\"yeni başlangıç\", \"tutkulu gelecek\", \"macera\", \"yaratıcılık\", \"enerji\"]",
+          "context": "Bu ilişkinin geleceği, yeni bir hayatı ateşleyen, parlak bir tutku kıvılcımıdır."
         }
       },
       "twoofwands": {
@@ -1731,7 +2343,13 @@
         "position2": {
           "upright": "Fiziksel olarak birbirinizi arzuluyor ve gelecekteki cinsel potansiyeli düşünüyorsunuz. Bir keşif ve planlama aşaması. Cinsel olarak daha ileri gitme isteği var.",
           "reversed": "Ters Asa İkilisi, cinsel bir adım atmaktan korkma, risk almama veya aradaki çekimin tek taraflı kalması anlamına gelir. Arzu var ama eylem yok.",
-          "keywords": "[\"cinsel arzu\", \"potansiyel\", \"planlama\", \"keşif\", \"çekim\"]",
+          "keywords": [
+            "cinsel arzu",
+            "potansiyel",
+            "planlama",
+            "keşif",
+            "çekim"
+          ],
           "context": "Tensel enerjiniz, bir sonraki adımı atmayı düşünen, potansiyel dolu bir kaşif gibi."
         },
         "position3": {
@@ -1739,6 +2357,12 @@
           "reversed": "Ters Asa İkilisi, ortak bir vizyon eksikliği veya gelecek planları konusunda bir kararsızlık olduğunu gösterir. Ruhsal olarak farklı yönlere bakıyorsunuz.",
           "keywords": "[\"ortak vizyon\", \"gelecek planı\", \"potansiyel\", \"büyüme\", \"kararlılık\"]",
           "context": "Duygusal bağınız, ortak bir geleceğe bakan ve bir sonraki adımı planlayan iki kaşif."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, birlikte cesur planlar yapmak ve geleceğe doğru ilerlemektir. Bu, ortak bir vizyonla hareket eden, başarılı bir ortaklık olabilir.",
+          "reversed": "Ters Asa İkilisi, uzun vadede kararsızlık veya gelecek korkusu nedeniyle ilişkinin bir yere varamayacağını gösterir. Potansiyel, eyleme dökülemez.",
+          "keywords": "[\"ortak gelecek\", \"planlama\", \"başarılı ortaklık\", \"vizyon\", \"ilerleme\"]",
+          "context": "Bu ilişkinin kaderi, ortak bir vizyonla dünyayı fethetmektir."
         }
       },
       "threeofwands": {
@@ -1751,7 +2375,13 @@
         "position2": {
           "upright": "Cinsel beklentileriniz ve arzularınız karşılık buluyor. Fiziksel olarak bir açılma ve keşfetme dönemi. Uzak mesafe ilişkisindeyseniz, kavuşma zamanının yaklaştığını gösterebilir.",
           "reversed": "Ters Asa Üçlüsü, cinsel hayatta hayal kırıklığı, gecikmeler veya tatminsizlik olduğunu gösterir. Beklentileriniz gerçekleşmiyor. Sabırsızlık, zevki engelliyor.",
-          "keywords": "[\"cinsel beklenti\", \"karşılık bulma\", \"keşif\", \"ilerleme\", \"kavuşma\"]",
+          "keywords": [
+            "cinsel beklenti",
+            "karşılık bulma",
+            "keşif",
+            "ilerleme",
+            "kavuşma"
+          ],
           "context": "Fiziksel bağlantınız, ufukta yeni ve heyecan verici cinsel maceraların göründüğü bir bekleyiş."
         },
         "position3": {
@@ -1759,6 +2389,12 @@
           "reversed": "Ters Asa Üçlüsü, duygusal ilerlemede gecikmeler veya hayal kırıklıkları olduğunu gösterir. Ruhsal olarak bir bekleme ve sıkışmışlık hali.",
           "keywords": "[\"genişleme\", \"beklenti\", \"ortak hayaller\", \"ilerleme\", \"umut\"]",
           "context": "Ruhsal bağınız, limana dönmekte olan gemilerini umutla bekleyen bir denizci gibi."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, ortak çabalarınızın meyvelerini toplamanız ve geleceğe umutla bakmanızdır. Bu, genişleyen ve büyüyen, başarılı bir ilişkiyi gösterir.",
+          "reversed": "Ters Asa Üçlüsü, uzun vadede planların suya düşeceğini ve hayal kırıklığı yaşanacağını gösterir. Beklentiler karşılanmaz.",
+          "keywords": "[\"başarılı gelecek\", \"genişleme\", \"beklentilerin karşılanması\", \"büyüme\", \"umut\"]",
+          "context": "Bu ilişkinin geleceği, ufukta parlak fırsatların belirdiği, umut dolu bir bekleyiştir."
         }
       },
       "fourofwands": {
@@ -1771,7 +2407,13 @@
         "position2": {
           "upright": "Fiziksel bağlantınız neşeli, uyumlu ve kutlamaya değer. Cinsellik, iki insan arasındaki mutlu bir birliğin kutlamasıdır. Balayı veya tutkulu bir kaçamak enerjisi.",
           "reversed": "Ters Asa Dörtlüsü, cinsel hayatta bir uyumsuzluk veya istikrarsızlık olduğunu gösterir. Fiziksel bağ, beklenen neşeyi ve kutlama hissini vermiyor.",
-          "keywords": "[\"tutkulu kutlama\", \"cinsel uyum\", \"neşe\", \"balayı\", \"istikrar\"]",
+          "keywords": [
+            "tutkulu kutlama",
+            "cinsel uyum",
+            "neşe",
+            "balayı",
+            "istikrar"
+          ],
           "context": "Cinsel yaşamınız, iki insanın bir araya gelmesini kutlayan neşeli ve tutkulu bir festival."
         },
         "position3": {
@@ -1779,6 +2421,12 @@
           "reversed": "Ters Asa Dörtlüsü, duygusal olarak bir istikrarsızlık veya uyumsuzluk olduğunu gösterir. Ruhsal temeliniz sağlam değil ve bir kutlama hissi yok.",
           "keywords": "[\"ruhsal yuva\", \"mutluluk\", \"istikrar\", \"kutlama\", \"güvenli liman\"]",
           "context": "Duygusal bağınız, iki ruhun bir araya gelmesini kutlayan neşeli ve sağlam bir yapı."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, istikrarlı, mutlu ve kutlamalarla dolu bir birlikteliktir. Bu, evlilik, birlikte yaşama veya mutlu bir yuva kurma anlamına gelir.",
+          "reversed": "Ters Asa Dörtlüsü, uzun vadede bir istikrarsızlık veya temel uyumsuzluklar nedeniyle ilişkinin sağlam bir zemine oturamayacağını gösterir.",
+          "keywords": "[\"evlilik\", \"mutlu yuva\", \"istikrar\", \"kutlama\", \"kalıcı mutluluk\"]",
+          "context": "Bu ilişkinin kaderi, birlikte kutlanacak mutlu ve sağlam bir gelecektir."
         }
       },
       "fiveofwands": {
@@ -1791,7 +2439,13 @@
         "position2": {
           "upright": "Cinsel yaşamınızda bir rekabet, oyuncul bir sürtüşme veya çok fazla ham enerji var. Bu, tutkulu ve enerjik bir cinselliğe işaret edebilir, ancak aynı zamanda bir çatışmaya da dönüşebilir. Farklı arzuların çarpışması.",
           "reversed": "Ters Asa Beşlisi, cinsel çatışmadan kaçınma, bastırılmış arzu veya cinsel yorgunluğu gösterir. Rekabet, yerini isteksizliğe bırakmıştır.",
-          "keywords": "[\"cinsel rekabet\", \"ham enerji\", \"tutkulu sürtüşme\", \"çatışma\", \"farklı arzular\"]",
+          "keywords": [
+            "cinsel rekabet",
+            "ham enerji",
+            "tutkulu sürtüşme",
+            "çatışma",
+            "farklı arzular"
+          ],
           "context": "Cinselliğiniz, enerjilerin ve arzuların çarpıştığı, oyuncul ama kaotik bir alan."
         },
         "position3": {
@@ -1799,6 +2453,12 @@
           "reversed": "Ters Asa Beşlisi, içsel bir çatışma yaşadığınızı veya duygusal bir savaştan kaçındığınızı gösterir. Bu durum, bastırılmış bir gerginliğe yol açar.",
           "keywords": "[\"duygusal çatışma\", \"rekabet\", \"sürtüşme\", \"enerji uyumsuzluğu\", \"yorucu dinamik\"]",
           "context": "Ruhsal bağınız, farklı fikirlerin ve tutkuların çarpıştığı, enerjik bir kaos alanı."
+        },
+        "position4": {
+          "upright": "Uzun vadede bu ilişki, sürekli bir çatışma, rekabet ve sürtüşme içinde olacaktır. Bu, enerjinizi tüketen, yorucu bir dinamiktir.",
+          "reversed": "Ters Asa Beşlisi, uzun vadede büyük bir çatışmadan kaçınmanın, sorunları halının altına süpürmenin ilişkiyi bitireceğini gösterir. Bastırılmış gerilim patlar.",
+          "keywords": "[\"sürekli çatışma\", \"rekabet\", \"uyumsuzluk\", \"yorucu ilişki\", \"gerilim\"]",
+          "context": "Bu ilişkinin geleceği, kazananı olmayan, bitmek bilmeyen bir savaştır."
         }
       },
       "sixofwands": {
@@ -1811,7 +2471,13 @@
         "position2": {
           "upright": "Tatmin edici ve başarılı bir cinsel yaşam. Partnerler birbirini memnun eder ve bu durum özgüveni artırır. Cinsel performansın takdir edilmesi ve zafer hissi.",
           "reversed": "Ters Asa Altılısı, cinsel hayatta bir başarısızlık hissi, performans anksiyetesi veya takdir eksikliği olduğunu gösterir. Bir tarafın egosunun diğerini ezmesi.",
-          "keywords": "[\"cinsel zafer\", \"özgüven\", \"takdir\", \"başarı\", \"tatmin\"]",
+          "keywords": [
+            "cinsel zafer",
+            "özgüven",
+            "takdir",
+            "başarı",
+            "tatmin"
+          ],
           "context": "Fiziksel bağlantınız, her iki tarafın da kendini galip hissettiği, başarılı bir fetih."
         },
         "position3": {
@@ -1819,6 +2485,12 @@
           "reversed": "Ters Asa Altılısı, aranızda bir tanınma eksikliği veya bir tarafın diğerinin başarısını kıskanması olduğunu gösterir. Ruhsal destek eksik.",
           "keywords": "[\"karşılıklı destek\", \"takdir\", \"başarı\", \"özgüven\", \"zafer\"]",
           "context": "Duygusal bağınız, birbirini onurlandıran ve zafere taşıyan iki müttefik."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, birlikte kazanılmış bir zafer ve toplum tarafından takdir edilen, başarılı bir ilişkidir. Birlikte parlayacak ve özgüven kazanacaksınız.",
+          "reversed": "Ters Asa Altılısı, uzun vadede bir başarısızlık veya bir tarafın diğerini gölgede bırakmasıyla sonuçlanacak bir ilişkiyi gösterir. Kamuoyu önünde bir düşüş.",
+          "keywords": "[\"ortak zafer\", \"başarı\", \"takdir\", \"mutlu son\", \"özgüven\"]",
+          "context": "Bu ilişkinin kaderi, herkesin imreneceği, parlak bir zaferdir."
         }
       },
       "sevenofwands": {
@@ -1831,7 +2503,13 @@
         "position2": {
           "upright": "Cinsel olarak kendini savunma veya sınırları koruma durumu. Bir tarafın cinsel yaklaşımlarına karşı diğerinin direnç göstermesi. Tutkulu bir meydan okuma veya cinsel bir mücadele.",
           "reversed": "Ters Asa Yedilisi, cinsel bir mücadelede yenik düşme, cinsel özgüven kaybı veya savunmasız hissetme. Sınırlar aşıldığında hissedilen yorgunluk.",
-          "keywords": "[\"cinsel sınırlar\", \"meydan okuma\", \"savunma\", \"direnç\", \"mücadele\"]",
+          "keywords": [
+            "cinsel sınırlar",
+            "meydan okuma",
+            "savunma",
+            "direnç",
+            "mücadele"
+          ],
           "context": "Cinsel enerjiniz, birinin kendi alanını ve arzularını tutkuyla savunduğu bir mücadele."
         },
         "position3": {
@@ -1839,6 +2517,12 @@
           "reversed": "Ters Asa Yedilisi, dış baskılar karşısında duygusal olarak bunalmış hissettiğinizi veya birbirinizi savunmaktan vazgeçtiğinizi gösterir. Ruhsal olarak yorgunsunuz.",
           "keywords": "[\"birlikte savunma\", \"cesaret\", \"meydan okuma\", \"inanç\", \"ruhsal direnç\"]",
           "context": "Ruhsal bağınız, zorluklara karşı birlikte duran, sarsılmaz bir kale."
+        },
+        "position4": {
+          "upright": "Uzun vadede, ilişkinizi dış etkenlere ve zorluklara karşı sürekli olarak savunmanız gerekecek. Bu, yorucu ama başarılı olabilecek bir mücadeledir.",
+          "reversed": "Ters Asa Yedilisi, uzun vadede dış baskılara veya zorluklara yenik düşerek ilişkinin sona ereceğini gösterir. Mücadeleyi kaybedersiniz.",
+          "keywords": "[\"sürekli mücadele\", \"savunma\", \"meydan okuma\", \"dayanıklılık\", \"zorlu gelecek\"]",
+          "context": "Bu ilişkinin geleceği, sürekli bir savunma ve mücadele gerektiren bir direniştir."
         }
       },
       "eightofwands": {
@@ -1851,7 +2535,13 @@
         "position2": {
           "upright": "Hızlı, tutkulu ve heyecan verici bir cinsel enerji. Olaylar hızla gelişebilir. Tutkulu mesajlaşmalar, ani buluşmalar ve yüksek bir cinsel tempo.",
           "reversed": "Ters Asa Sekizlisi, cinsel enerjide bir yavaşlama, gecikme veya yanlış zamanlama olduğunu gösterir. Tutkulu mesajlar cevapsız kalabilir veya cinsel birleşme ertelenebilir. Kıskançlık.",
-          "keywords": "[\"hızlı tutku\", \"heyecan\", \"cinsel iletişim\", \"yüksek tempo\", \"arzu\"]",
+          "keywords": [
+            "hızlı tutku",
+            "heyecan",
+            "cinsel iletişim",
+            "yüksek tempo",
+            "arzu"
+          ],
           "context": "Fiziksel bağlantınız, hedefine hızla ulaşan tutku okları gibi, durdurulamaz bir enerji."
         },
         "position3": {
@@ -1859,6 +2549,12 @@
           "reversed": "Ters Asa Sekizlisi, duygusal iletişimde bir yavaşlama, yanlış anlaşılma veya gecikme olduğunu gösterir. Ruhsal olarak aynı frekansta değilsiniz.",
           "keywords": "[\"hızlı iletişim\", \"duygusal akış\", \"heyecan\", \"ilerleme\", \"tutkulu mesajlar\"]",
           "context": "Duygusal bağınız, iki kalp arasında hızla gidip gelen sevgi ve tutku dolu oklar gibi."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, hızlı ve heyecan verici gelişmelerle dolu bir gelecektir. Bu, ani bir evlilik teklifi, birlikte taşınma veya hızla ilerleyen bir ilişki olabilir.",
+          "reversed": "Ters Asa Sekizlisi, uzun vadede yanlış zamanlama, gecikmeler veya kıskançlık nedeniyle ilişkinin hızla sona ereceğini gösterir.",
+          "keywords": "[\"hızlı gelişmeler\", \"heyecanlı gelecek\", \"ilerleme\", \"iyi haberler\", \"evlilik teklifi\"]",
+          "context": "Bu ilişkinin kaderi, sizi hızla mutlu bir sona ulaştıracak bir dizi olaydır."
         }
       },
       "nineofwands": {
@@ -1871,7 +2567,13 @@
         "position2": {
           "upright": "Geçmiş cinsel hayal kırıklıkları nedeniyle temkinli ve savunmacı bir duruş. Cinsel yakınlığa karşı bir duvar örülmüş olabilir. Arzu vardır ama güven eksikliği nedeniyle eyleme geçmek zordur.",
           "reversed": "Ters Asa Dokuzlusu, cinsel bir savunmanın artık işe yaramadığını veya aşıldığını gösterir. Ya tamamen pes etme ya da inatçı bir şekilde güvensizliğe devam etme.",
-          "keywords": "[\"cinsel güvensizlik\", \"savunma\", \"temkin\", \"geçmiş yaralar\", \"duvar örme\"]",
+          "keywords": [
+            "cinsel güvensizlik",
+            "savunma",
+            "temkin",
+            "geçmiş yaralar",
+            "duvar örme"
+          ],
           "context": "Fiziksel bağlantınız, geçmişte yaralanmış ve yeniden incinmekten korkan bir savaşçının enerjisi."
         },
         "position3": {
@@ -1879,6 +2581,12 @@
           "reversed": "Ters Asa Dokuzlusu, duygusal olarak duvarlarınızı daha da yükselttiğinizi veya artık savaşacak gücünüzün kalmadığını gösterir. Ruhsal bir tükenmişlik.",
           "keywords": "[\"duygusal savunma\", \"güvensizlik\", \"dayanıklılık\", \"geçmiş yaralar\", \"temkin\"]",
           "context": "Duygusal bağınız, geçmişte yaralanmış ama hala ayakta duran yorgun bir savaşçı."
+        },
+        "position4": {
+          "upright": "Uzun vadede bu ilişki, yorgun ama dayanıklı bir şekilde devam edecektir. Geçmişin yaralarına rağmen, birbirinizden vazgeçmeyeceksiniz. Yorucu ama kalıcı bir bağ.",
+          "reversed": "Ters Asa Dokuzlusu, uzun vadede geçmişin güvensizlikleri ve yaraları nedeniyle ilişkinin bir noktada pes edeceğini gösterir. Direnç kırılır.",
+          "keywords": "[\"dayanıklılık\", \"kalıcı bağ\", \"güvensizlik\", \"yorucu ilişki\", \"vazgeçmeme\"]",
+          "context": "Bu ilişkinin kaderi, tüm yaralara rağmen ayakta kalmayı başaran yorgun bir savaşçıdır."
         }
       },
       "tenofwands": {
@@ -1891,7 +2599,13 @@
         "position2": {
           "upright": "Cinsel yaşam, bir zevk kaynağından çok bir görev veya yük gibi hissediliyor. Stres ve yorgunluk, libidoyu ve cinsel isteği baskılamış durumda.",
           "reversed": "Ters Asa Onlusu, cinsel yaşamdaki bir yükün veya baskının hafiflediğini gösterir. Sorumlulukların azalmasıyla cinsel enerji yeniden canlanabilir.",
-          "keywords": "[\"cinsel yük\", \"stres\", \"tükenmişlik\", \"baskı\", \"görev gibi cinsellik\"]",
+          "keywords": [
+            "cinsel yük",
+            "stres",
+            "tükenmişlik",
+            "baskı",
+            "görev gibi cinsellik"
+          ],
           "context": "Cinsel yaşamınız, hayatın diğer yükleri altında ezilmiş, zevkini kaybetmiş bir enerji."
         },
         "position3": {
@@ -1899,6 +2613,12 @@
           "reversed": "Ters Asa Onlusu, aranızdaki duygusal yükleri bırakmaya başladığınızı gösterir. Bu, ilişkinin hafiflemesine ve ruhsal olarak nefes almasına olanak tanır.",
           "keywords": "[\"duygusal yük\", \"sorumluluk\", \"tükenmişlik\", \"baskı\", \"yorucu bağ\"]",
           "context": "Ruhsal bağınız, taşınması zorlaşan, ağır bir yük haline gelmiş."
+        },
+        "position4": {
+          "upright": "Uzun vadede bu ilişki, bir zevkten çok ağır bir yüke dönüşecektir. Sorumluluklar ve baskılar, sevgiyi ve tutkuyu yok edebilir.",
+          "reversed": "Ters Asa Onlusu, uzun vadede bu yükün altında ezilerek ilişkinin sona ereceğini veya bir tarafın tüm sorumluluğu bırakıp gideceğini gösterir.",
+          "keywords": "[\"ağır yük\", \"sorumluluk\", \"tükenmişlik\", \"baskı\", \"yorucu son\"]",
+          "context": "Bu ilişkinin geleceği, taşınması imkansız hale gelen, ağır bir sorumluluktur."
         }
       },
       "pageofwands": {
@@ -1911,7 +2631,13 @@
         "position2": {
           "upright": "Yeni cinsel deneyimlere karşı bir heves ve macera arzusu. Flörtöz, enerjik ve tutkulu bir başlangıç. Cinsel olarak keşfe açık ve eğlenceli bir enerji.",
           "reversed": "Ters Asa Uşağı, cinsel bir başlangıç yapma konusunda kararsızlık veya olgunlaşmamış bir cinsel enerji gösterir. Tutku var ama nereye yönlendireceğini bilemiyor.",
-          "keywords": "[\"cinsel macera\", \"heves\", \"flört\", \"keşif\", \"tutkulu başlangıç\"]",
+          "keywords": [
+            "cinsel macera",
+            "heves",
+            "flört",
+            "keşif",
+            "tutkulu başlangıç"
+          ],
           "context": "Fiziksel bağlantınız, yeni maceralara atılmaya hevesli, enerjik ve tutkulu bir kaşif."
         },
         "position3": {
@@ -1919,6 +2645,12 @@
           "reversed": "Ters Asa Uşağı, duygusal bir başlangıç yapma konusunda kararsızlık veya olgunlaşmamış bir enerji olduğunu gösterir. Heves var ama eylem yok.",
           "keywords": "[\"ruhsal merak\", \"yeni tutku\", \"macera\", \"keşif\", \"heyecan\"]",
           "context": "Duygusal bağınız, yeni bir maceranın başında duran, hevesli ve enerjik bir kaşif."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, birlikte yeni maceralara atılmak, keşfetmek ve eğlenmektir. Bu, genç ve enerjik bir ruhla devam eden, dinamik bir ilişki.",
+          "reversed": "Ters Asa Uşağı, uzun vadede bir başlangıç yapma hevesinin kaybolacağını ve ilişkinin bir yere varamayacağını gösterir. Olgunlaşamayan bir bağ.",
+          "keywords": "[\"yeni maceralar\", \"keşif\", \"eğlence\", \"dinamik ilişki\", \"heves\"]",
+          "context": "Bu ilişkinin geleceği, bitmeyen bir keşif ve macera ruhudur."
         }
       },
       "knightofwands": {
@@ -1931,7 +2663,13 @@
         "position2": {
           "upright": "Son derece tutkulu, enerjik ve maceraperest bir cinsel bağlantı. Karizmatik ve baştan çıkarıcı bir enerji. Cinsel olarak oldukça aktif ve cesur.",
           "reversed": "Ters Asa Şövalyesi, bencil, aceleci ve sadece kendi zevkine odaklanmış bir cinsel partneri gösterebilir. Tutkusu çabuk parlayıp sönebilir. Bağlılıktan kaçan bir enerji.",
-          "keywords": "[\"yoğun tutku\", \"macera\", \"karizma\", \"cinsel enerji\", \"cesaret\"]",
+          "keywords": [
+            "yoğun tutku",
+            "macera",
+            "karizma",
+            "cinsel enerji",
+            "cesaret"
+          ],
           "context": "Cinsel enerjiniz, bir alev gibi parlak, sıcak ve durdurulamaz bir maceraperest."
         },
         "position3": {
@@ -1939,6 +2677,12 @@
           "reversed": "Ters Asa Şövalyesi, duygusal olarak aceleci, sabırsız veya bağlanmaktan kaçan bir dinamik olduğunu gösterir. Tutku çabuk parlayıp sönebilir.",
           "keywords": "[\"tutkulu bağ\", \"macera\", \"enerji\", \"acelecilik\", \"bağlanma korkusu\"]",
           "context": "Ruhsal bağınız, bir alev gibi parlak, sıcak ama aynı zamanda öngörülemez."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, tutkulu, heyecanlı ama aynı zamanda istikrarsız bir ilişkidir. Bu, bir an gelip bir an giden, bağlanmaktan kaçan bir dinamik olabilir.",
+          "reversed": "Ters Asa Şövalyesi, uzun vadede ani bir tutku patlamasının ardından gelen hızlı bir ayrılığı gösterir. Bağlılık kurulamadan ilişki sona erer.",
+          "keywords": "[\"tutkulu ama istikrarsız\", \"ani ilişki\", \"bağlanma korkusu\", \"macera\", \"hızlı son\"]",
+          "context": "Bu ilişkinin kaderi, bir alev gibi parlayıp aniden sönen, tutkulu bir maceradır."
         }
       },
       "queenofwands": {
@@ -1951,7 +2695,13 @@
         "position2": {
           "upright": "Kendine güvenen, tutkulu ve cinsel olarak özgür bir enerji. Yatakta ne istediğini bilen, yaratıcı ve eğlenceli bir partner. Çekici ve manyetik bir cinsel aura.",
           "reversed": "Ters Asa Kraliçesi, cinsel olarak talepkar, kıskanç veya dramatik birini gösterebilir. Cinsel enerjisini manipülasyon için kullanabilir. Güvensizlik, tutkunun önüne geçiyor.",
-          "keywords": "[\"cinsel özgüven\", \"tutku\", \"yaratıcılık\", \"çekicilik\", \"özgürlük\"]",
+          "keywords": [
+            "cinsel özgüven",
+            "tutku",
+            "yaratıcılık",
+            "çekicilik",
+            "özgürlük"
+          ],
           "context": "Cinsel bağlantınız, ateşli, kendine güvenen ve etrafına ışık saçan bir kraliçenin enerjisi."
         },
         "position3": {
@@ -1959,6 +2709,12 @@
           "reversed": "Ters Asa Kraliçesi, aranızda kıskançlık, duygusal drama veya bir tarafın diğerini gölgede bırakma arzusu olduğunu gösterir. Ruhsal güven eksik.",
           "keywords": "[\"ilham verici bağ\", \"özgüven\", \"yaratıcılık\", \"sıcaklık\", \"karşılıklı destek\"]",
           "context": "Duygusal bağınız, birbirine ilham veren ve enerji katan iki parlak ateş."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, kendine güvenen, popüler ve yaratıcı bir çift olmaktır. Birlikte sosyal bir hayatın tadını çıkaracak, ilham veren, sıcak bir birliktelik kuracaksınız.",
+          "reversed": "Ters Asa Kraliçesi, uzun vadede kıskançlık, drama ve güvensizliğin ilişkiyi bitireceğini gösterir. Bir tarafın popülerliği, diğerini ezer.",
+          "keywords": "[\"başarılı çift\", \"özgüven\", \"sosyal hayat\", \"yaratıcılık\", \"ilham\"]",
+          "context": "Bu ilişkinin geleceği, birlikte parlayan, etrafına neşe ve enerji saçan bir güç çifti."
         }
       },
       "kingofwands": {
@@ -1971,7 +2727,13 @@
         "position2": {
           "upright": "Cinsel olarak deneyimli, lider ve son derece tutkulu bir partner. Yatakta kontrolü elinde tutmayı sever ama aynı zamanda cömerttir. Karizmatik ve güçlü bir cinsel enerji.",
           "reversed": "Ters Asa Kralı, cinsel olarak baskıcı, bencil veya egoist bir partneri gösterebilir. Partnerinin ihtiyaçlarını önemsemeyen, sadece kendi tatminine odaklanan bir lider.",
-          "keywords": "[\"cinsel liderlik\", \"deneyim\", \"yoğun tutku\", \"karizma\", \"güç\"]",
+          "keywords": [
+            "cinsel liderlik",
+            "deneyim",
+            "yoğun tutku",
+            "karizma",
+            "güç"
+          ],
           "context": "Cinsel yaşamınız, tutku krallığını yöneten, deneyimli ve karizmatik bir lider."
         },
         "position3": {
@@ -1979,6 +2741,12 @@
           "reversed": "Ters Asa Kralı, duygusal olarak baskıcı, egoist veya bir tarafın diğerini yönetmeye çalıştığı bir bağ olduğunu gösterir. Ruhsal bir güç mücadelesi.",
           "keywords": "[\"liderlik\", \"ortak vizyon\", \"ilham\", \"güç ortaklığı\", \"cesaret\"]",
           "context": "Ruhsal bağınız, ortak bir krallığı yöneten, vizyoner ve güçlü iki lider."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, ortak bir vizyonla hareket eden, güçlü ve başarılı bir ortaklıktır. Birlikte bir imparatorluk kurabilir, liderlik yapabilir ve büyük hedeflere ulaşabilirsiniz.",
+          "reversed": "Ters Asa Kralı, uzun vadede bir tarafın diğerine karşı baskıcı veya egoist olmasıyla ilişkinin sona ereceğini gösterir. Güç mücadelesi, bağı yok eder.",
+          "keywords": "[\"güçlü ortaklık\", \"liderlik\", \"başarı\", \"ortak vizyon\", \"imparatorluk\"]",
+          "context": "Bu ilişkinin kaderi, birlikte dünyayı yönetebilecek, vizyoner bir liderliktir."
         }
       },
       "aceofpentacles": {
@@ -1991,7 +2759,13 @@
         "position2": {
           "upright": "Yeni, sağlam ve güven veren bir fiziksel başlangıç. Bu, ilk cinsel deneyim veya tensel uyumun keşfedildiği yeni bir ilişki olabilir. Cinsellik, topraklanmış ve gerçektir.",
           "reversed": "Ters Tılsım Ası, cinsel bir fırsatın kaçırıldığını veya fiziksel bağ kurmak için doğru bir zaman olmadığını gösterir. Tensel uyumda bir eksiklik veya gecikme.",
-          "keywords": "[\"sağlam başlangıç\", \"tensel uyum\", \"güven\", \"gerçeklik\", \"fırsat\"]",
+          "keywords": [
+            "sağlam başlangıç",
+            "tensel uyum",
+            "güven",
+            "gerçeklik",
+            "fırsat"
+          ],
           "context": "Fiziksel bağlantınız, sağlam bir zeminde filizlenen yeni ve değerli bir tohum gibi."
         },
         "position3": {
@@ -1999,6 +2773,12 @@
           "reversed": "Ters Tılsım Ası, duygusal bir başlangıç için fırsatın kaçırıldığını veya bağın sağlam bir temelden yoksun olduğunu gösterir. Ruhsal olarak bir güvensizlik var.",
           "keywords": "[\"sağlam başlangıç\", \"güven\", \"kalıcı potansiyel\", \"gerçekçi sevgi\", \"fırsat\"]",
           "context": "Duygusal bağınız, verimli bir toprağa ekilmiş, büyümeye hazır değerli bir tohum."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, son derece sağlam, güvenilir ve gerçekçi bir birlikteliktir. Bu, evlilik, birlikte bir ev satın alma veya kalıcı bir ortaklık gibi somut bir başlangıçtır.",
+          "reversed": "Ters Tılsım Ası, uzun vadede bir fırsatın kaçırılacağını veya ilişkinin maddi veya pratik nedenlerle sona ereceğini gösterir.",
+          "keywords": "[\"somut başlangıç\", \"kalıcı ilişki\", \"güven\", \"refah\", \"fırsat\"]",
+          "context": "Bu ilişkinin geleceği, gerçek dünyada kök salan, sağlam ve verimli bir başlangıçtır."
         }
       },
       "twoofpentacles": {
@@ -2011,7 +2791,13 @@
         "position2": {
           "upright": "Fiziksel bağlantınız eğlenceli, esnek ve ritmik. Partnerler arasında oyuncul bir denge vardır. Cinsellik, hayatın diğer sorumlulukları arasında bir denge unsuru olabilir.",
           "reversed": "Ters Tılsım İkilisi, cinsel hayatta bir denge kurulamadığını gösterir. Stres veya meşguliyet, fiziksel yakınlığı olumsuz etkiliyor. Uyumsuz bir ritim.",
-          "keywords": "[\"denge\", \"ritim\", \"esneklik\", \"eğlence\", \"oyunculuk\"]",
+          "keywords": [
+            "denge",
+            "ritim",
+            "esneklik",
+            "eğlence",
+            "oyunculuk"
+          ],
           "context": "Cinselliğiniz, iki bedenin uyum içinde dans ettiği, neşeli ve esnek bir ritim."
         },
         "position3": {
@@ -2019,6 +2805,12 @@
           "reversed": "Ters Tılsım İkilisi, duygusal olarak dengeyi kaybettiğinizi veya ilişkinin hayatınızdaki diğer öncelikler arasında ezildiğini gösterir. Ruhsal olarak bir istikrarsızlık var.",
           "keywords": "[\"duygusal denge\", \"esneklik\", \"uyum\", \"pratik destek\", \"öncelikler\"]",
           "context": "Duygusal bağınız, hayatın dalgalarında birlikte dans eden, uyumlu bir çift."
+        },
+        "position4": {
+          "upright": "Uzun vadede, hayatın iniş ve çıkışlarına rağmen dengeyi bulmayı başaran, esnek bir ilişki sizi bekliyor. Birlikte her duruma uyum sağlayacaksınız.",
+          "reversed": "Ters Tılsım İkilisi, uzun vadede hayatın stresi ve sorumlulukları altında ezilerek ilişkinin dengeyi kaybedeceğini ve sona ereceğini gösterir.",
+          "keywords": "[\"denge\", \"uyum\", \"esneklik\", \"devamlılık\", \"inişler ve çıkışlar\"]",
+          "context": "Bu ilişkinin geleceği, hayatın ritmine uyumla dans eden, esnek bir ortaklıktır."
         }
       },
       "threeofpentacles": {
@@ -2031,7 +2823,13 @@
         "position2": {
           "upright": "Fiziksel bağlantı, bir ekip çalışması gibidir. Partnerler birbirlerinin bedenlerini öğrenir ve birlikte zevki inşa ederler. Bu kart, bir üçlü ilişki (threesome) olasılığını da gösterebilir.",
           "reversed": "Ters Tılsım Üçlüsü, cinsel olarak bir ekip gibi çalışamama, uyumsuzluk veya öğrenmeye kapalılık gösterir. Cinsellik, bir zevk paylaşımı yerine bir görev haline gelmiş.",
-          "keywords": "[\"işbirliği\", \"öğrenme\", \"tensel uyum\", \"inşa etme\", \"üçlü ilişki\"]",
+          "keywords": [
+            "işbirliği",
+            "öğrenme",
+            "tensel uyum",
+            "inşa etme",
+            "üçlü ilişki"
+          ],
           "context": "Cinsel yaşamınız, iki mimarın birlikte zevk ve tatmin inşa ettiği bir proje gibi."
         },
         "position3": {
@@ -2039,6 +2837,12 @@
           "reversed": "Ters Tılsım Üçlüsü, duygusal olarak bir ekip gibi çalışamadığınızı veya aranızda bir uyumsuzluk olduğunu gösterir. Bir tarafın çabaları takdir edilmiyor olabilir.",
           "keywords": "[\"duygusal işbirliği\", \"karşılıklı saygı\", \"birlikte inşa etme\", \"takdir\", \"uyum\"]",
           "context": "Ruhsal bağınız, her birinin kendi rolünü oynadığı, sağlam bir yapı inşa eden üç usta gibi."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, birlikte bir şeyler inşa etmeye dayalı, başarılı bir ortaklıktır. Bu, bir iş kurmak, bir ev inşa etmek veya birlikte bir aile yetiştirmek olabilir. Karşılıklı saygıya dayalıdır.",
+          "reversed": "Ters Tılsım Üçlüsü, uzun vadede bir ekip olarak çalışmayı başaramayarak ilişkinin sona ereceğini gösterir. Uyumsuzluk, projeyi yıkar.",
+          "keywords": "[\"başarılı ortaklık\", \"birlikte inşa etme\", \"takım çalışması\", \"saygı\", \"kalıcı eser\"]",
+          "context": "Bu ilişkinin kaderi, her iki tarafın da emeğiyle yükselen, kalıcı bir yapıdır."
         }
       },
       "fourofpentacles": {
@@ -2051,7 +2855,13 @@
         "position2": {
           "upright": "Cinsel hayatta tutucu, kontrollü ve bazen de cimri bir enerji. Partnerini veya cinsel zevki kaybetme korkusuyla kendini kısıtlama. Cinsellik, bir rutin içinde ve yeniliklere kapalı.",
           "reversed": "Ters Tılsım Dörtlüsü, cinsel kısıtlamalardan kurtulma arzusunu veya cinsel kontrolü kaybetme korkusunu gösterir. Bir değişim yaşanıyor ama bu gerginlik yaratabilir.",
-          "keywords": "[\"cinsel tutuculuk\", \"kontrol\", \"kısıtlama\", \"rutin\", \"kaybetme korkusu\"]",
+          "keywords": [
+            "cinsel tutuculuk",
+            "kontrol",
+            "kısıtlama",
+            "rutin",
+            "kaybetme korkusu"
+          ],
           "context": "Cinsel enerjiniz, zevki özgürce yaşamak yerine onu biriktirmeye çalışan, kapalı bir hazine sandığı."
         },
         "position3": {
@@ -2059,6 +2869,12 @@
           "reversed": "Ters Tılsım Dörtlüsü, duygusal olarak cimrilik veya kaybetme korkusuyla birbirinizi boğduğunuzu gösterir. Ruhsal olarak akışa izin vermiyorsunuz.",
           "keywords": "[\"duygusal güvenlik\", \"kontrol\", \"tutunma\", \"değişim korkusu\", \"sahiplenme\"]",
           "context": "Duygusal bağınız, kaybetme korkusuyla sıkıca kilitlenmiş bir hazine sandığı."
+        },
+        "position4": {
+          "upright": "Uzun vadede bu ilişki, son derece istikrarlı ama aynı zamanda değişime kapalı ve durağan bir hale gelecektir. Güvenlik hissi vardır ama heyecan yoktur.",
+          "reversed": "Ters Tılsım Dörtlüsü, uzun vadede kaybetme korkusu veya cimrilik nedeniyle ilişkinin boğucu bir hal alıp sona ereceğini gösterir.",
+          "keywords": "[\"durağanlık\", \"istikrar\", \"kontrol\", \"değişime kapalılık\", \"güvenlik\"]",
+          "context": "Bu ilişkinin geleceği, güvenli ama sıkıcı, değişmeyen bir kaledir."
         }
       },
       "fiveofpentacles": {
@@ -2071,7 +2887,13 @@
         "position2": {
           "upright": "Fiziksel olarak dışlanmış, istenmeyen veya sevgisiz hissetme. Cinsel yakınlık eksikliği veya soğukluk. Sağlık sorunları veya maddi sıkıntılar cinsel yaşamı olumsuz etkiliyor.",
           "reversed": "Ters Tılsım Beşlisi, cinsel bir yoksunluk döneminin sona erdiğini gösterir. Fiziksel ve duygusal sıcaklık yeniden bulunuyor. İyileşme ve kabul.",
-          "keywords": "[\"cinsel yoksunluk\", \"soğukluk\", \"dışlanma\", \"istenmeme\", \"yakınlık eksikliği\"]",
+          "keywords": [
+            "cinsel yoksunluk",
+            "soğukluk",
+            "dışlanma",
+            "istenmeme",
+            "yakınlık eksikliği"
+          ],
           "context": "Fiziksel bağlantınız, sevgi ve sıcaklık arayışında olan, soğukta kalmış bir ruh hali."
         },
         "position3": {
@@ -2079,6 +2901,12 @@
           "reversed": "Ters Tılsım Beşlisi, zor bir duygusal dönemin ardından yeniden birbirinize yaklaştığınızı ve ruhsal bir iyileşme sürecine girdiğinizi gösterir. Yardım kabul ediliyor.",
           "keywords": "[\"duygusal yoksunluk\", \"yalnızlık\", \"dışlanma\", \"destek eksikliği\", \"zor dönem\"]",
           "context": "Ruhsal bağınız, soğukta kalmış ve birbirini ısıtamayan iki ruh."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, maddi veya manevi zorluklar içinde birlikte mücadele etmektir. Bu, zor bir dönemden geçen ama birbirini terk etmeyen bir çifti veya tam tersi bir ayrılığı gösterebilir.",
+          "reversed": "Ters Tılsım Beşlisi, uzun vadede zor bir dönemin ardından ya birlikte toparlanacağınızı ya da bu krizin sizi tamamen ayıracağını gösterir.",
+          "keywords": "[\"zor zamanlar\", \"maddi sıkıntı\", \"yalnızlık\", \"kriz\", \"dayanışma veya ayrılık\"]",
+          "context": "Bu ilişkinin kaderi, soğukta birlikte titremek ya da o soğukta tek başına kalmaktır."
         }
       },
       "sixofpentacles": {
@@ -2091,7 +2919,13 @@
         "position2": {
           "upright": "Cinsel hayatta cömert ve dengeli bir alma-verme ilişkisi var. Partnerler birbirlerinin zevkine önem verir. Bu, cinsel bir güç dengesini veya bir tarafın diğerine cinsel olarak 'öğretmenlik' yapmasını gösterebilir.",
           "reversed": "Ters Tılsım Altılısı, cinsel hayatta bir dengesizlik olduğunu gösterir. Bir taraf sürekli vericiyken diğeri alıcıdır. Bu durum, bir borçluluk veya manipülasyon hissine yol açabilir.",
-          "keywords": "[\"cinsel cömertlik\", \"alma-verme dengesi\", \"karşılıklı zevk\", \"güç dengesi\", \"paylaşım\"]",
+          "keywords": [
+            "cinsel cömertlik",
+            "alma-verme dengesi",
+            "karşılıklı zevk",
+            "güç dengesi",
+            "paylaşım"
+          ],
           "context": "Cinselliğiniz, her iki tarafın da hem aldığı hem de verdiği, adil ve cömert bir hediyeleşme."
         },
         "position3": {
@@ -2099,6 +2933,12 @@
           "reversed": "Ters Tılsım Altılısı, duygusal olarak bir dengesizlik olduğunu gösterir. Bir taraf sürekli veriyor, diğeri ise alıyor. Bu durum, bir borçluluk hissine veya manipülasyona yol açabilir.",
           "keywords": "[\"duygusal cömertlik\", \"alma-verme dengesi\", \"karşılıklı destek\", \"adalet\", \"şefkat\"]",
           "context": "Duygusal bağınız, her iki tarafın da hem aldığı hem de verdiği, adil ve cömert bir hediyeleşme."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, son derece cömert, dengeli ve destekleyici bir ilişkidir. Birbirinize hem maddi hem de manevi olarak destek olacağınız, adil bir ortaklık.",
+          "reversed": "Ters Tılsım Altılısı, uzun vadede bir alma-verme dengesizliği veya bir tarafın diğerine borçlu hissetmesi nedeniyle ilişkinin sona ereceğini gösterir.",
+          "keywords": "[\"dengeli ortaklık\", \"cömertlik\", \"karşılıklı destek\", \"adalet\", \"refah\"]",
+          "context": "Bu ilişkinin geleceği, her iki tarafın da hak ettiğini aldığı, cömert ve adil bir paylaşımdır."
         }
       },
       "sevenofpentacles": {
@@ -2111,7 +2951,13 @@
         "position2": {
           "upright": "Cinsel yaşamda bir durup değerlendirme yapma zamanı. 'Bu ilişki tensel olarak beni tatmin ediyor mu?' sorusu sorulabilir. Sabırlı bir bekleyiş veya cinsel bir duraklama dönemi.",
           "reversed": "Ters Tılsım Yedilisi, cinsel hayattaki çabaların boşa gittiği hissini veya sabırsızlık nedeniyle zevkin kaçırıldığını gösterir. Yatırım yapılan cinsel enerji karşılığını vermiyor.",
-          "keywords": "[\"değerlendirme\", \"sabır\", \"cinsel duraklama\", \"tatminsizlik\", \"bekleyiş\"]",
+          "keywords": [
+            "değerlendirme",
+            "sabır",
+            "cinsel duraklama",
+            "tatminsizlik",
+            "bekleyiş"
+          ],
           "context": "Cinsel bağlantınız, emeklerinizin meyve verip vermeyeceğini görmek için sabırla beklediğiniz bir bahçe."
         },
         "position3": {
@@ -2119,6 +2965,12 @@
           "reversed": "Ters Tılsım Yedilisi, bu ilişkiye yaptığınız duygusal yatırımın karşılığını alamadığınızı veya sabırsızlık gösterdiğinizi gösterir. Ruhsal bir hayal kırıklığı.",
           "keywords": "[\"duygusal değerlendirme\", \"sabır\", \"yatırım\", \"bekleyiş\", \"gözlem\"]",
           "context": "Ruhsal bağınız, emeklerinizin meyve verip vermeyeceğini görmek için sabırla beklediğiniz bir bahçe."
+        },
+        "position4": {
+          "upright": "Uzun vadede bu ilişki, sabırla ektiğiniz tohumların meyvelerini toplamanızla sonuçlanacaktır. Bu, yavaş ama emin adımlarla büyüyen, kalıcı bir birlikteliktir.",
+          "reversed": "Ters Tılsım Yedilisi, uzun vadede emeklerinizin boşa gideceğini ve ilişkinin bir hayal kırıklığı ile sonuçlanacağını gösterir. Sabırsızlık, her şeyi mahveder.",
+          "keywords": "[\"emeğin karşılığı\", \"sabır\", \"kalıcı büyüme\", \"yatırım\", \"hasat zamanı\"]",
+          "context": "Bu ilişkinin geleceği, sabırla ve özenle bakılan bir bahçenin vereceği berekettir."
         }
       },
       "eightofpentacles": {
@@ -2131,7 +2983,13 @@
         "position2": {
           "upright": "Cinsel yaşamda bir öğrenme, pratik yapma ve ustalaşma süreci. Partnerler birbirlerinin bedenlerini ve zevk noktalarını keşfetmeye odaklanmış durumda. Özenli ve dikkatli bir cinsellik.",
           "reversed": "Ters Tılsım Sekizlisi, cinsel hayatta bir tembellik, özensizlik veya rutine saplanıp kalma durumu gösterir. Cinsellik, mekanik ve ilhamsız bir hale gelmiş.",
-          "keywords": "[\"cinsel öğrenme\", \"ustalaşma\", \"özen\", \"pratik\", \"keşif\"]",
+          "keywords": [
+            "cinsel öğrenme",
+            "ustalaşma",
+            "özen",
+            "pratik",
+            "keşif"
+          ],
           "context": "Cinselliğiniz, birbirinizin bedenini bir sanat eseri gibi özenle işlediğiniz bir atölye."
         },
         "position3": {
@@ -2139,6 +2997,12 @@
           "reversed": "Ters Tılsım Sekizlisi, duygusal olarak ilişkiye yeterince çaba göstermediğinizi veya bir rutine saplanıp kaldığınızı gösterir. Ruhsal gelişim durmuş.",
           "keywords": "[\"duygusal çaba\", \"adanmışlık\", \"özen\", \"gelişim\", \"ustalaşma\"]",
           "context": "Duygusal bağınız, bir zanaatkarın eserine gösterdiği özenle, dikkatle ve sevgiyle işleniyor."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, ilişki üzerinde sürekli çalışarak ve özen göstererek onu mükemmelleştirmektir. Bu, adanmışlık ve çaba ile ustalaşan, güçlü bir bağdır.",
+          "reversed": "Ters Tılsım Sekizlisi, uzun vadede ilişkiye yeterince çaba gösterilmemesi veya tembellik nedeniyle bağın zayıflayacağını ve sona ereceğini gösterir.",
+          "keywords": "[\"adanmışlık\", \"sürekli çaba\", \"gelişen ilişki\", \"ustalık\", \"özen\"]",
+          "context": "Bu ilişkinin kaderi, bir ustanın eseri gibi, sürekli çalışmayla mükemmelleşen bir bağdır."
         }
       },
       "nineofpentacles": {
@@ -2151,7 +3015,13 @@
         "position2": {
           "upright": "Kendi bedeniyle ve cinselliğiyle barışık, kendine yeten bir enerji. Cinsellik, bir ihtiyaçtan çok, bir zevk ve lüks olarak yaşanır. Mastürbasyon veya partner olmadan da cinsel tatmin bulma.",
           "reversed": "Ters Tılsım Dokuzlusu, cinsel olarak kendine güvensizlik, yalnızlık hissi veya bedeniyle barışık olmama durumunu gösterir. Lüks ve zevk arayışı, bir boşluğu doldurma çabası olabilir.",
-          "keywords": "[\"cinsel bağımsızlık\", \"kendine yetme\", \"zevk\", \"lüks\", \"beden olumlama\"]",
+          "keywords": [
+            "cinsel bağımsızlık",
+            "kendine yetme",
+            "zevk",
+            "lüks",
+            "beden olumlama"
+          ],
           "context": "Cinsel enerjiniz, kendi bahçesinin keyfini süren, bağımsız ve şehvetli bir ruh."
         },
         "position3": {
@@ -2159,6 +3029,12 @@
           "reversed": "Ters Tılsım Dokuzlusu, aranızda duygusal bir mesafe veya yalnızlık hissi olduğunu gösterir. Birlikteyken bile ruhsal olarak ayrı dünyalardasınız.",
           "keywords": "[\"duygusal bağımsızlık\", \"kendine yetme\", \"olgunluk\", \"zarafet\", \"keyif\"]",
           "context": "Ruhsal bağınız, her ikisinin de kendi bahçesine sahip olduğu, birbirinin alanına saygılı iki insan."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, her iki tarafın da bağımsızlığını ve kişisel alanını koruduğu, olgun ve refah içinde bir ilişkidir. Birbirinize ihtiyaç duymadan, birlikte olmanın lüksünü yaşarsınız.",
+          "reversed": "Ters Tılsım Dokuzlusu, uzun vadede bir tarafın diğerine maddi veya manevi olarak bağımlı hale gelmesiyle veya yalnızlık hissiyle sonuçlanabilir.",
+          "keywords": "[\"bağımsız ilişki\", \"refah\", \"olgunluk\", \"lüks\", \"kendine yetme\"]",
+          "context": "Bu ilişkinin geleceği, her ikisinin de kendi bahçesine sahip olduğu, zarif bir ortaklıktır."
         }
       },
       "tenofpentacles": {
@@ -2171,7 +3047,13 @@
         "position2": {
           "upright": "Fiziksel bağlantınız son derece sağlam, tatmin edici ve güven verici. Bu, sadece geçici bir heves değil, aynı zamanda köklü ve kalıcı olabilecek bir tensel uyumu gösterir. Cinsellik, bir yuva hissi verir ve doğurganlığı destekler.",
           "reversed": "Ters Tılsım Onlusu, fiziksel uyumsuzluk veya cinsel hayatta bir istikrarsızlık olduğunu gösterir. Tensel bağ, beklenen güveni ve tatmini sağlamıyor veya aile beklentileri cinsel hayatı olumsuz etkiliyor.",
-          "keywords": "[\"tensel uyum\", \"istikrar\", \"güven\", \"doğurganlık\", \"fiziksel tatmin\"]",
+          "keywords": [
+            "tensel uyum",
+            "istikrar",
+            "güven",
+            "doğurganlık",
+            "fiziksel tatmin"
+          ],
           "context": "Cinsel uyumunuz, uzun vadeli bir bağın ve köklü bir tatminin temelini oluşturuyor."
         },
         "position3": {
@@ -2179,6 +3061,12 @@
           "reversed": "Ters Tılsım Onlusu, aranızdaki duygusal bağın istikrarsız olduğunu veya ailevi sorunların ruhsal uyumunuzu bozduğunu gösterir. Güvenlik hissi eksik.",
           "keywords": "[\"kalıcı bağ\", \"duygusal güvenlik\", \"aile mirası\", \"köklenme\", \"istikrar\"]",
           "context": "Duygusal bağınız, geleceğe uzanan kökleri olan, sağlam ve bereketli bir aile ağacı."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, son derece istikrarlı, güvenli ve zengin bir aile hayatıdır. Bu, bir miras inşa etmeyi, aile kurmayı ve nesiller boyu sürecek bir mutluluğu temsil eder.",
+          "reversed": "Ters Tılsım Onlusu, uzun vadede maddi sorunlar veya ailevi anlaşmazlıklar nedeniyle ilişkinin sona ereceğini gösterir. Kalıcı bir temel kurulamayabilir.",
+          "keywords": "[\"kalıcı aile\", \"zenginlik\", \"güvenlik\", \"miras\", \"istikrar\"]",
+          "context": "Bu ilişkinin kaderi, nesiller boyu sürecek, sağlam ve bereketli bir aile ağacı kurmaktır."
         }
       },
       "pageofpentacles": {
@@ -2191,7 +3079,13 @@
         "position2": {
           "upright": "Yeni bir tensel deneyime veya bedensel keşfe açık olma. Cinselliği öğrenmeye hevesli, meraklı ve topraklanmış bir enerji. Sağlam ve yavaş bir cinsel başlangıç.",
           "reversed": "Ters Tılsım Uşağı, cinsel bir fırsatı kaçırma, tembellik veya bedensel farkındalık eksikliği gösterir. Cinselliğe karşı pratik olmayan, hayalperest bir yaklaşım.",
-          "keywords": "[\"bedensel keşif\", \"tensel merak\", \"öğrenme\", \"sağlam başlangıç\", \"fırsat\"]",
+          "keywords": [
+            "bedensel keşif",
+            "tensel merak",
+            "öğrenme",
+            "sağlam başlangıç",
+            "fırsat"
+          ],
           "context": "Fiziksel bağlantınız, kendi bedenini ve zevklerini keşfeden hevesli bir öğrenci gibi."
         },
         "position3": {
@@ -2199,6 +3093,12 @@
           "reversed": "Ters Tılsım Uşağı, duygusal bir başlangıç yapma konusunda tembellik veya isteksizlik olduğunu gösterir. Ruhsal potansiyel değerlendirilmiyor.",
           "keywords": "[\"sağlam başlangıç\", \"güvenilirlik\", \"öğrenme\", \"gerçekçilik\", \"umut\"]",
           "context": "Ruhsal bağınız, yeni bir şeyi öğrenmeye hevesli, ayakları yere basan bir öğrenci."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, sağlam ve gerçekçi bir temelde büyüyen, umut vadeden bir ilişkidir. Birlikte öğrenmeye ve gelişmeye devam edeceksiniz.",
+          "reversed": "Ters Tılsım Uşağı, uzun vadede bir fırsatın kaçırılacağını veya pratik sorunlar nedeniyle ilişkinin bir yere varamayacağını gösterir.",
+          "keywords": "[\"umut vadeden gelecek\", \"sağlam temel\", \"büyüme\", \"öğrenme\", \"fırsat\"]",
+          "context": "Bu ilişkinin geleceği, sağlam bir zeminde büyüyen, umut dolu bir fidan."
         }
       },
       "knightofpentacles": {
@@ -2211,7 +3111,13 @@
         "position2": {
           "upright": "Fiziksel bağlantınız yavaş, sabırlı, güvenilir ve son derece şehvetli. Aceleci değildir, zevkin her anını hissetmeye odaklanır. Sadık ve istikrarlı bir cinsel partner.",
           "reversed": "Ters Tılsım Şövalyesi, cinsel hayatta bir durgunluk, sıkıcılık veya tembellik gösterir. Cinsellik, bir macera veya zevkten çok, bir rutine dönüşmüş.",
-          "keywords": "[\"şehvet\", \"sabır\", \"güvenilirlik\", \"sadakat\", \"yavaş cinsellik\"]",
+          "keywords": [
+            "şehvet",
+            "sabır",
+            "güvenilirlik",
+            "sadakat",
+            "yavaş cinsellik"
+          ],
           "context": "Cinsel enerjiniz, hedefine yavaş ama emin adımlarla ilerleyen, şehvetli ve güvenilir bir şövalye."
         },
         "position3": {
@@ -2219,6 +3125,12 @@
           "reversed": "Ters Tılsım Şövalyesi, duygusal olarak bir durgunluk, sıkıcılık veya değişime kapalılık olduğunu gösterir. Ruhsal bağ, bir rutine dönüşmüş ve heyecanını kaybetmiş.",
           "keywords": "[\"sadakat\", \"sabır\", \"güvenilirlik\", \"istikrar\", \"yavaş ilerleme\"]",
           "context": "Duygusal bağınız, görevine sadık, yavaş ama asla yolundan dönmeyen bir şövalye."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, son derece sadık, güvenilir ve istikrarlı bir birlikteliktir. Bu ilişki, yavaş ama emin adımlarla ömür boyu sürecek bir yapıya dönüşür.",
+          "reversed": "Ters Tılsım Şövalyesi, uzun vadede ilişkinin sıkıcı bir rutine dönüşerek veya değişime direnerek sona ereceğini gösterir. İlerleme durur.",
+          "keywords": "[\"ömür boyu bağlılık\", \"sadakat\", \"güvenilirlik\", \"istikrar\", \"sabır\"]",
+          "context": "Bu ilişkinin kaderi, yavaş ama sarsılmaz adımlarla ilerleyen, son derece güvenilir bir yol arkadaşlığıdır."
         }
       },
       "queenofpentacles": {
@@ -2231,7 +3143,13 @@
         "position2": {
           "upright": "Cinsellik besleyici, cömert, sıcak ve son derece duyusaldır. Tüm duyulara hitap eder (dokunma, tat, koku). Partnerine güvenli ve rahat bir ortam sunan, şehvetli bir enerji.",
           "reversed": "Ters Tılsım Kraliçesi, cinsel olarak kendine veya partnerine bakmama, tembellik veya cinsel enerjiyi sadece pratik bir görev olarak görme durumunu gösterir. Duyusallık eksik.",
-          "keywords": "[\"duyusallık\", \"şehvet\", \"besleyicilik\", \"cömertlik\", \"güven\"]",
+          "keywords": [
+            "duyusallık",
+            "şehvet",
+            "besleyicilik",
+            "cömertlik",
+            "güven"
+          ],
           "context": "Cinsel yaşamınız, tüm duyuları besleyen, sıcak ve bereketli bir kucaklama gibi."
         },
         "position3": {
@@ -2239,6 +3157,12 @@
           "reversed": "Ters Tılsım Kraliçesi, bir tarafın diğerine aşırı bağımlı olduğunu veya duygusal ihtiyaçların pratik kaygılar altında ezildiğini gösterir. Ruhsal beslenme eksik.",
           "keywords": "[\"besleyici sevgi\", \"pratik destek\", \"cömertlik\", \"güven\", \"sıcaklık\"]",
           "context": "Ruhsal bağınız, hem karnınızı hem de ruhunuzu doyuran, sıcak ve şefkatli bir yuva."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, besleyici, sıcak, güvenli ve rahat bir yuva kurmaktır. Birbirinize hem maddi hem de manevi olarak bakacağınız, son derece cömert bir birliktelik.",
+          "reversed": "Ters Tılsım Kraliçesi, uzun vadede pratik kaygıların veya bir tarafın diğerine aşırı bağımlı olmasının ilişkiyi boğacağını gösterir.",
+          "keywords": "[\"güvenli yuva\", \"besleyici ortaklık\", \"konfor\", \"cömertlik\", \"istikrar\"]",
+          "context": "Bu ilişkinin geleceği, hem bedeni hem de ruhu besleyen, sıcak ve bereketli bir yuvadır."
         }
       },
       "kingofpentacles": {
@@ -2251,7 +3175,13 @@
         "position2": {
           "upright": "Son derece şehvetli, cömert ve usta bir cinsel partner. Fiziksel zevklere düşkündür ve partnerini nasıl memnun edeceğini iyi bilir. Zengin ve tatmin edici bir cinsel deneyim sunar.",
           "reversed": "Ters Tılsım Kralı, cinsel olarak bencil, tembel veya sadece kendi zevkine odaklanmış birini gösterebilir. Cinselliği bir statü veya güç göstergesi olarak kullanabilir.",
-          "keywords": "[\"şehvetli usta\", \"cömertlik\", \"fiziksel zevk\", \"başarı\", \"tatmin\"]",
+          "keywords": [
+            "şehvetli usta",
+            "cömertlik",
+            "fiziksel zevk",
+            "başarı",
+            "tatmin"
+          ],
           "context": "Cinsel bağlantınız, fiziksel zevkler krallığının cömert ve usta hükümdarı gibi."
         },
         "position3": {
@@ -2259,6 +3189,12 @@
           "reversed": "Ters Tılsım Kralı, duygusal bağın aşırı materyalist veya kontrolcü bir hale geldiğini gösterir. Sevgi, bir güç veya statü göstergesine dönüşmüş olabilir.",
           "keywords": "[\"istikrarlı bağ\", \"güven\", \"başarı\", \"cömertlik\", \"zenginlik\"]",
           "context": "Duygusal bağınız, hem zengin hem de cömert, bilge bir kralın yönettiği bir krallık."
+        },
+        "position4": {
+          "upright": "Uzun vadeli sonuç, son derece başarılı, zengin ve istikrarlı bir imparatorluk kurmaktır. Bu, hem maddi hem de manevi olarak refah içinde, güçlü ve kalıcı bir birlikteliktir.",
+          "reversed": "Ters Tılsım Kralı, uzun vadede materyalizmin veya kontrol arzusunun sevgiyi gölgede bırakarak ilişkiyi bitireceğini gösterir.",
+          "keywords": "[\"başarılı imparatorluk\", \"zenginlik\", \"istikrar\", \"güvenlik\", \"kalıcı başarı\"]",
+          "context": "Bu ilişkinin kaderi, birlikte inşa edilmiş, zengin ve cömert bir krallıktır."
         }
       }
     },
@@ -5286,42 +6222,42 @@
     "cards": {
       "the-fool": {
         "name": "Deli (Joker) Tarot Kartı Anlamı",
-        "short_description": "Joker ya da Deli tarot kartı; ruhsal yenilenme, özgür adımlar ve yeni bir hayat döngüsünün enerjisini temsil eder.",
+        "short_description": "Deli (Joker) kartı; yeni başlangıçların, sezgisel cesaretin ve sınırsız olasılıkların sembolüdür. Bu kart, içsel özgürlüğünü hatırlayıp bilinmeyene güvenle adım atma zamanını gösterir.",
         "meanings": {
           "upright": {
-            "general": "Evrenin seni yeni bir başlangıca çağırdığı bir dönemdesin. Deli kartı, cesaretle atılan adımların beklenmedik mucizelerle buluşabileceğini hatırlatır. Bu kart, içsel özgürlüğünle hayat yolculuğunu yeniden tanımlamaya davet eder.",
-            "love": "Aşk alanında Joker enerjisi; kalbini özgürleştiren, keşif dolu ilişkiler getirir. Spontane tanışmalar ve taze duygular ruhunu canlandırabilir.",
-            "career": "Kariyerinde yeni deneyimlere ve bilinmeyene adım atma zamanı. Risk almaktan korkmazsan, bu kart sana dönüşüm ve yaratıcılık getirebilir.",
-            "money": "Maddi konularda Joker, girişimsel fırsatların kapıda olduğunu söyler. Cesaretle adım at, ancak niyetini net tut; evren seni doğru zamanda destekler.",
-            "spiritual": "Ruhsal olarak bu kart, içsel çocuğunu hatırlamaya ve evrene güvenmeye çağırır. Deli, sezgisel yolculukta özgürleşmenin sembolüdür."
+            "general": "Evren sana yeni bir sayfa açman için fırsat sunuyor. Deli kartı, bilinenin ötesine geçme, sezgine güvenme ve kalbini rehber edinme çağrısıdır. Planlar net olmasa bile, bu dönem sana ilham, yaratıcılık ve özgürlük getirebilir. Hayatın tüm akışı seni yeni bir yönü keşfetmeye davet ediyor — tek yapman gereken korkularını geride bırakmak.",
+            "love": "Aşkta Deli, spontane ve özgürleştirici bir enerji taşır. Bu kart, kalbini yeniden heyecanlandıracak karşılaşmaların veya ilişkilerde tazelenmenin habercisidir. Yeni biriyle tanışabilir ya da mevcut ilişkinde özgürlüğü ve neşeyi yeniden keşfedebilirsin. Ancak bu enerjiyi hafife alma — niyetin net olursa, Deli aşkı eğlenceli bir serüvene dönüştürür.",
+            "career": "Kariyer alanında Deli, risk almanın ve cesaretle ilerlemenin kartıdır. Belki iş değiştirmek, yeni bir proje başlatmak ya da tutkularının peşinden gitmek istiyorsun. Deli sana diyor ki: 'Denemekten korkma.' Fakat bu adımların içsel bir rehberlikle atılması gerekir — acele değil, sezgiyle hareket et. Yeni fikirler, girişimler veya yaratıcı iş birlikleri seni ileri taşıyabilir.",
+            "money": "Finansal olarak Deli, cesaretle atılan yeni adımların bereket getirebileceğini söyler. Ancak bilinçli risk alman gerekir. Yeni gelir yolları, freelance işler veya yaratıcı kazanç fikirleri gündeme gelebilir. Harcamalarda ölçülü davran; maceracı yönünü destekle ama dengesizliğe izin verme.",
+            "spiritual": "Ruhsal düzeyde Deli, sezgisel keşiflerin, içsel özgürlüğün ve ruhsal uyanışın sembolüdür. Bu kart seni dogmalardan kurtulmaya, iç sesini dinlemeye ve kalbini yol gösterici olarak kabul etmeye çağırır. Meditasyon, doğa yürüyüşleri veya yaratıcı ritüeller bu enerjiyi dengeleyip güçlendirebilir."
           },
           "reversed": {
-            "general": "Deli kartı ters geldiğinde, yönsüzlük veya aceleyle alınan kararların riskine işaret eder. Dengeye dön ve niyetini netleştir, aksi halde fırsatlar gözünden kaçabilir.",
-            "love": "Ters Joker; bağ kurmaktan kaçış veya yüzeysel ilişkilerle sınanabileceğini söyler. Kalbini açarken sezgine güven.",
-            "career": "Hazırlıksız girişimler ve plansız adımlar kariyerinde karışıklık yaratabilir. Bu dönem sabır ve strateji gerektiriyor.",
-            "money": "Maddi anlamda düşünmeden yapılan harcamalar veya riskli yatırımlar kayba yol açabilir. Sezgisel ama temkinli davran.",
-            "spiritual": "Ruhsal olarak yön kaybı ya da niyet eksikliği yaşayabilirsin. Derin nefes al, merkezine dön ve yeniden hizalan."
+            "general": "Ters Deli, sabırsızlık, yönsüzlük veya kontrolsüz risk alma konularında uyarı verir. Bu dönem, aceleyle atılan adımların geri dönüşü zor sonuçlar doğurabileceğini hatırlatır. Evren seni durmaya, niyetini yeniden gözden geçirmeye ve dengeyi bulmaya çağırıyor. Cesaretini kaybetme — sadece adımlarını daha bilinçli at.",
+            "love": "Ters Deli, ilişkilerde bağ kurmaktan kaçma ya da yüzeysellik eğilimini gösterebilir. Belki karşındaki kişiye gerçekten açılmakta zorlanıyorsun. Yeni ilişkilerde aceleci davranmaktan, duygularını bastırmaktan veya kararsızlıktan kaçın. Kalbinin rehberliğiyle ilerlemek seni gerçek bağa götürecektir.",
+            "career": "Kariyer alanında ters Deli, hazırlıksız hamleler, düşünmeden yapılan değişiklikler ve yönsüz ilerleme riskine dikkat çeker. Şu anda strateji, sabır ve planlama zamanı. Gerçek tutkularını anlamadan iş değiştirmemelisin; önce içsel niyetini netleştir, sonra eyleme geç.",
+            "money": "Finansal anlamda ters Deli, düşünmeden yapılan yatırımlar veya anlık hevesle yapılan harcamalara karşı uyarır. Risk almak istiyorsan, öncelikle temeli sağlamlaştır. Bu kart, maddi dengesizliğin ardında duygusal bir boşluk olabileceğini de gösterebilir.",
+            "spiritual": "Ruhsal olarak ters Deli, yönünü kaybettiğinde veya fazla zihinselleştiğinde karşına çıkar. Bu durum, sezgisel bağlantının zayıfladığını veya içsel rehberlikten uzaklaştığını işaret eder. Şimdi yeniden merkezlenme, nefes alma ve sadeleşme zamanı."
           }
         },
         "context": {
-          "mythology": "Deli (Joker), Majör Arkana’nın ilk kartı olarak yaratımın sıfır noktasını temsil eder. O, ruhun dünyaya iniş anıdır; saf bilincin maddeye dokunduğu o büyülü geçişi simgeler. Joker’in elindeki küçük çanta, geçmiş yaşamların deneyimlerini; ayağının dibindeki köpek ise içsel sezgiyi ve sadakati temsil eder. Bu kart, ‘bilinmeyene güven’ arketipidir — ne kadar plansız görünse de, Deli daima ilahi plana bağlıdır. Her şeyin yeniden başlayabileceğini, hayatın döngüsel doğasında kaybolmak yerine yeniden doğmayı seçebileceğini hatırlatır. Deli’nin yolculuğu, tüm Majör Arkana kartlarının açılışıdır; bir ruhun, kendi farkındalığına uyanış hikâyesidir.",
+          "mythology": "Deli (Joker), Majör Arkana’nın başlangıç noktasını, yani yaratımın sıfır enerjisini temsil eder. O, sınırsız potansiyelin beden bulduğu anı simgeler — henüz hiçbir şey başlamamıştır ama her şey mümkündür. Deli’nin elindeki küçük çanta, ruhun geçmiş deneyimlerini taşır; ayağının dibindeki köpek, sadakat ve sezginin sembolüdür. Uçurum kenarındaki adımı, bilinmeyene güvenin sembolik bir yansımasıdır. Deli, Tanrı’nın veya Evrenin saf yaratım enerjisidir: bilgelik arayışına çıkmadan önceki masumiyet hâli. Mitolojik düzlemde bu figür Hermes, Loki ya da Trickster arketipleriyle ilişkilidir — yani düzeni sarsan ama dönüşümü başlatan kutsal kaos enerjisiyle bağlantılıdır.",
           "celtic_cross": {
-            "future": "Gelecekte Deli kartı karşına çıktığında, seni bekleyen yeni bir başlangıç vardır. Bu enerji, bilinmeyene adım atarken iç sesine güvenmen gerektiğini söyler. Yol belirsiz olsa da, kalbin rehberlik edecektir. Bu kart, risk almaktan korkmaman, sezgisel çağrını takip etmen gerektiğini hatırlatır. Her şey planlandığı gibi gitmese bile, evren seni ilahi bir akışa taşımaktadır.",
-            "hidden_influences": "Gizli etkiler bölümünde Deli kartı belirdiğinde, içsel özgürlük arzusu ve macera isteği ruhsal kararlarını etkiliyor olabilir. Belki de hayatın çok düzenli, çok öngörülebilir hale geldi — ve ruhun değişim istiyor. Bu kart, bastırılmış keşif enerjisini, yeniden doğmak isteyen bir tarafını görünür kılar. Evren seni alışkanlıklardan çıkmaya, kalbini yeniden heyecanla doldurmaya çağırıyor."
+            "future": "Celtic Cross açılımında geleceği temsil eden pozisyonda Deli kartı çıktığında, yeni bir maceranın veya hayat yönünün seni beklediğini gösterir. Bu kart, bilinmeyene güvenme, sezgini takip etme ve planların ötesine geçme çağrısıdır. Şu anda tüm detayları bilmesen bile, doğru yoldasın. Evren seni destekliyor.",
+            "hidden_influences": "Gizli etkiler alanında Deli kartı belirdiğinde, içsel özgürlük isteğinin ve ruhsal macera arzusunun farkında olman istenir. Belki de yaşamın çok öngörülebilir hâle geldi, ama içindeki çocuk keşfetmek istiyor. Bu kart, kalbini yeniden heyecanla doldurman, spontanlığı ve merakı hayatına geri çağırman gerektiğini hatırlatır."
           }
         },
         "faq": [
           {
             "question": "Deli (Joker) tarot kartı hangi enerjiyi temsil eder?",
-            "answer": "Deli kartı, özgürlük, yenilenme ve cesaret enerjisini taşır. Bu kart, hayatında yeni bir başlangıcın kapıda olduğunu ve evrene güvenerek adım atman gerektiğini simgeler."
+            "answer": "Deli kartı; özgürlük, keşif, yenilenme ve sezgisel cesaret enerjisini taşır. Bu kart, kalbinin çağrısına kulak vererek bilinmeyene güvenle adım atma zamanını simgeler."
           },
           {
             "question": "Deli kartı ters geldiğinde neye dikkat edilmelidir?",
-            "answer": "Ters Deli, aceleyle alınan kararlar, yönsüzlük veya plansız adımlar konusunda uyarır. Bu dönem, durup nefes almak, niyetini netleştirmek ve sabırla ilerlemek için idealdir."
+            "answer": "Ters Deli, sabırsız kararlar, acelecilik veya plansız eylemler konusunda uyarı verir. Bu kart, durup düşünmeyi, niyetini yeniden belirlemeyi ve adımlarını bilinçli şekilde atmayı öğütler."
           },
           {
             "question": "Joker kartının yeni başlangıç enerjisi nasıl dengelenir?",
-            "answer": "Yeni başlangıç enerjisini dengelemek için kalbini dinle, niyetini netleştir ve sezgine güven. Evrenin seni desteklediğini bil, ancak adımlarını bilinçli at."
+            "answer": "Yeni başlangıç enerjisini dengelemek için önce kalbini dinle, ardından sezgini mantığınla uyumla. Niyetini netleştir, acele etme ve evrenin seni doğru zamanda destekleyeceğine güven."
           }
         ],
         "related_cards": [
