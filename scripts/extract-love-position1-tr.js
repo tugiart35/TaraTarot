@@ -71,28 +71,28 @@ cardObjects.forEach((objStr, index) => {
       .replace(/\s+/g, '')
       .replace(/[^a-z0-9]/g, '');
     
-    // upright metni çıkar
-    const uprightMatch = objStr.match(/upright:\s*['"]([^'"]*(?:'[^'"]*)*)['"]/s);
-    const upright = uprightMatch ? uprightMatch[1].replace(/\\n/g, ' ').trim() : '';
+    // upright metni çıkar (field sonuna kadar al, sonraki field'a veya } 'a kadar)
+    const uprightMatch = objStr.match(/upright:\s*['"`]([\s\S]*?)['"`]\s*,?\s*(?=reversed:|keywords:|context:|group:|$)/);
+    const upright = uprightMatch ? uprightMatch[1].trim() : '';
     
     // reversed metni çıkar
-    const reversedMatch = objStr.match(/reversed:\s*['"]([^'"]*(?:'[^'"]*)*)['"]/s);
-    const reversed = reversedMatch ? reversedMatch[1].replace(/\\n/g, ' ').trim() : '';
+    const reversedMatch = objStr.match(/reversed:\s*['"`]([\s\S]*?)['"`]\s*,?\s*(?=keywords:|context:|group:|$)/);
+    const reversed = reversedMatch ? reversedMatch[1].trim() : '';
     
     // keywords çıkar
-    const keywordsMatch = objStr.match(/keywords:\s*\[([\s\S]*?)\]/);
+    const keywordsMatch = objStr.match(/keywords:\s*\[([\s\S]*?)\]\s*,?\s*(?=context:|group:|$)/);
     let keywords = [];
     if (keywordsMatch) {
       const keywordsStr = keywordsMatch[1];
       keywords = keywordsStr
         .split(',')
-        .map(k => k.trim().replace(/['"]/g, ''))
+        .map(k => k.trim().replace(/^['"`]|['"`]$/g, ''))
         .filter(k => k.length > 0);
     }
     
     // context çıkar
-    const contextMatch = objStr.match(/context:\s*['"]([^'"]*(?:'[^'"]*)*)['"]/s);
-    const context = contextMatch ? contextMatch[1].replace(/\\n/g, ' ').trim() : '';
+    const contextMatch = objStr.match(/context:\s*['"`]([\s\S]*?)['"`]\s*,?\s*(?=group:|$)/);
+    const context = contextMatch ? contextMatch[1].trim() : '';
     
     meanings[cardKey] = {
       position1: {
