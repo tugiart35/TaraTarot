@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 // Enhanced SEO configuration for Numerology Result pages
 const SEO_CONFIG = {
-  siteName: 'Büşbüşkimki - Mistik Rehberlik',
+  siteName: 'Büşbüşkimki - Tarot ve Numeroloji',
   domain: 'https://busbuskimki.com',
   socialMedia: {
     instagram: 'https://instagram.com/busbuskimki',
@@ -12,7 +12,7 @@ const SEO_CONFIG = {
   },
   contact: {
     email: 'iletisim@busbuskimki.com',
-    phone: '+90-555-000-0000',
+    phone: '+382 (67) 010176',
   },
 } as const;
 
@@ -96,7 +96,7 @@ export async function generateMetadata({
     description: currentSeo.description,
     keywords: currentSeo.keywords,
     authors: [{ name: 'Büşbüşkimki', url: SEO_CONFIG.domain }],
-    creator: 'Büşbüşkimki - Mistik Rehberlik',
+    creator: 'Büşbüşkimki - Tarot ve Numeroloji',
     publisher: 'Büşbüşkimki',
     category: 'Spirituality & Numerology',
     classification: 'Numerology Analysis Results',

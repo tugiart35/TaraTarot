@@ -28,10 +28,6 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { readingId } = body;
 
-    console.log('🔮 Server-side email gönderimi başlatılıyor...', {
-      readingId,
-    });
-
     if (!readingId) {
       return EmailCORS.wrapResponse(
         ErrorResponse.missingFieldsError(['readingId'])
@@ -51,7 +47,6 @@ export async function POST(request: NextRequest) {
     );
 
     // Supabase'den gerçek okuma verisini çek
-    console.log("📊 Supabase'den okuma verisi çekiliyor...", { readingId });
     const { data: readingData, error: readingError } = await supabaseAdmin
       .from('readings')
       .select('*')
@@ -65,12 +60,6 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    console.log('✅ Okuma verisi bulundu:', {
-      id: readingData.id,
-      reading_type: readingData.reading_type,
-      title: readingData.title,
-    });
-
     // Kullanıcı email adresini al (admin client ile)
     const { data: userData, error: userError } =
       await supabaseAdmin.auth.admin.getUserById(readingData.user_id);
@@ -82,15 +71,8 @@ export async function POST(request: NextRequest) {
     }
 
     const userEmail = userData.user.email;
-    console.log('📧 Email gönderilecek adres:', userEmail);
 
     // PDF oluştur - Gerçek veri formatını düzelt
-    console.log('📄 PDF oluşturuluyor...', {
-      readingId,
-      readingType: readingData.reading_type,
-      cardsCount: readingData.cards?.length || 0,
-    });
-
     // Supabase'den gelen veriyi PDF formatına çevir
     const pdfData = {
       id: readingData.id,
@@ -107,11 +89,8 @@ export async function POST(request: NextRequest) {
     };
 
     const pdfBuffer = await pdfGeneratorService.generateReadingPDF(pdfData);
-    console.log('✅ PDF oluşturuldu, boyut:', pdfBuffer.length, 'bytes');
 
     // Email gönder
-    console.log('📧 Email gönderiliyor...', { userEmail, readingId });
-
     const fileName = `tarot-okuma-${readingId.slice(0, 8)}-${new Date().toISOString().split('T')[0]}.pdf`;
     const success = await emailService.sendTarotReadingPDF(
       userEmail,
@@ -121,7 +100,6 @@ export async function POST(request: NextRequest) {
     );
 
     if (success) {
-      console.log("✅ Okuma PDF'i başarıyla email ile gönderildi:", userEmail);
       return EmailCORS.wrapResponse(
         NextResponse.json({
           success: true,

@@ -9,6 +9,7 @@
 
 import { useState, useEffect, useCallback, memo } from 'react';
 import { useRouter } from 'next/navigation';
+import { useTranslations } from '@/hooks/useTranslations';
 import { useToast } from '@/hooks/useToast';
 import { useAuth } from '@/hooks/auth/useAuth';
 import { useRememberMe } from '@/hooks/auth/useRememberMe';
@@ -30,6 +31,7 @@ interface AuthFormProps {
 
 function AuthForm({ locale, initialError, next }: AuthFormProps) {
   const router = useRouter();
+  const { t } = useTranslations();
   const { toast, showToast, hideToast } = useToast();
   const {
     loading: authLoading,
@@ -67,11 +69,11 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
     if (initialError) {
       const errorMessage =
         initialError === 'callback_failed'
-          ? 'Giriş işlemi başarısız oldu. Lütfen tekrar deneyin.'
+          ? t('auth.page.callbackFailed')
           : initialError;
       setMessage(errorMessage);
     }
-  }, [initialError]);
+  }, [initialError, t]);
 
   // Load saved email on mount
   useEffect(() => {
@@ -98,16 +100,16 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
 
       // Email validation
       if (!data.email) {
-        newErrors.email = 'E-posta adresi gerekli';
+        newErrors.email = t('auth.page.emailRequired');
       } else if (!validateEmail(data.email)) {
-        newErrors.email = 'Geçerli bir e-posta adresi girin';
+        newErrors.email = t('auth.page.emailInvalid');
       }
 
       // Password validation
       if (!data.password) {
-        newErrors.password = 'Şifre gerekli';
+        newErrors.password = t('auth.page.passwordRequired');
       } else if (data.password.length < 6) {
-        newErrors.password = 'Şifre en az 6 karakter olmalı';
+        newErrors.password = t('auth.page.passwordTooShort');
       } else if (!isLogin) {
         // Enhanced password validation for registration
         const passwordValidation = validatePasswordStrength(data.password);
@@ -115,7 +117,8 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
           !passwordValidation.isValid &&
           passwordValidation.errors.length > 0
         ) {
-          newErrors.password = passwordValidation.errors[0] || 'Şifre geçersiz';
+          newErrors.password =
+            passwordValidation.errors[0] || t('auth.page.passwordInvalid');
         }
       }
 
@@ -125,49 +128,49 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
 
         // Confirm password
         if (!registerData.confirmPassword) {
-          newErrors.confirmPassword = 'Şifre onayı gerekli';
+          newErrors.confirmPassword = t('auth.page.confirmPasswordRequired');
         } else if (registerData.password !== registerData.confirmPassword) {
-          newErrors.confirmPassword = 'Şifreler eşleşmiyor';
+          newErrors.confirmPassword = t('auth.page.passwordMismatch');
         }
 
         // Name validation
         if (!registerData.name?.trim()) {
-          newErrors.name = 'Ad gerekli';
+          newErrors.name = t('auth.page.nameRequired');
         } else if (registerData.name.trim().length < 2) {
-          newErrors.name = 'Ad en az 2 karakter olmalı';
+          newErrors.name = t('auth.page.nameTooShort');
         }
 
         // Surname validation
         if (!registerData.surname?.trim()) {
-          newErrors.surname = 'Soyad gerekli';
+          newErrors.surname = t('auth.page.surnameRequired');
         } else if (registerData.surname.trim().length < 2) {
-          newErrors.surname = 'Soyad en az 2 karakter olmalı';
+          newErrors.surname = t('auth.page.surnameTooShort');
         }
 
         // Birth date validation
         if (!registerData.birthDate) {
-          newErrors.birthDate = 'Doğum tarihi gerekli';
+          newErrors.birthDate = t('auth.page.birthDateRequired');
         } else {
           const age =
             new Date().getFullYear() -
             new Date(registerData.birthDate).getFullYear();
           if (age < 13) {
-            newErrors.birthDate = 'En az 13 yaşında olmalısınız';
+            newErrors.birthDate = t('auth.page.ageTooYoung');
           } else if (age > 120) {
-            newErrors.birthDate = 'Geçerli bir yaş girin';
+            newErrors.birthDate = t('auth.page.ageInvalid');
           }
         }
 
         // Gender validation
         if (!registerData.gender) {
-          newErrors.gender = 'Cinsiyet seçimi gerekli';
+          newErrors.gender = t('auth.page.genderRequired');
         }
       }
 
       setErrors(newErrors);
       return Object.keys(newErrors).length === 0;
     },
-    [isLogin]
+    [isLogin, t]
   );
 
   // Form submission - memoized
@@ -177,7 +180,7 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
       setLoading(true);
       setMessage('');
       setErrors({});
-      setLoadingStep('Doğrulanıyor...');
+      setLoadingStep(t('auth.page.validating'));
 
       if (!validateForm(formData)) {
         setLoading(false);
@@ -187,7 +190,7 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
 
       try {
         if (isLogin) {
-          setLoadingStep('Giriş yapılıyor...');
+          setLoadingStep(t('auth.page.signingIn'));
 
           try {
             await signIn(formData.email, formData.password);
@@ -197,12 +200,18 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
               updateRememberMe(formData.email, true);
             }
 
-            showToast('Başarıyla giriş yapıldı!', 'success');
-            setLoadingStep('Yönlendiriliyor...');
+            showToast(t('auth.page.loginSuccess'), 'success');
+            setLoadingStep(t('auth.page.redirecting'));
 
             // Navigate using Next.js router
             setTimeout(() => {
-              const redirectPath = next
+              // Validate redirect URL to prevent open redirect attacks
+              const isValidRedirect =
+                next &&
+                next.startsWith('/') &&
+                !next.startsWith('//') &&
+                !next.includes('//');
+              const redirectPath = isValidRedirect
                 ? `/${locale}${next}`
                 : `/${locale}/dashboard`;
               router.push(redirectPath);
@@ -215,9 +224,7 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
                 'E-posta adresinizi onaylamanız gerekiyor'
               )
             ) {
-              setMessage(
-                'E-posta adresinizi onaylamanız gerekiyor. Onay e-postasını tekrar göndermek ister misiniz?'
-              );
+              setMessage(t('auth.page.emailConfirmationRequired'));
               setShowResendEmail(true);
               setPendingEmail(formData.email);
             } else {
@@ -225,14 +232,11 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
             }
           }
         } else {
-          setLoadingStep('Kayıt olunuyor...');
+          setLoadingStep(t('auth.page.signingUp'));
 
           await signUp(formData as RegisterFormData);
 
-          showToast(
-            'Kayıt başarılı! E-posta onayı için kutunuzu kontrol edin.',
-            'info'
-          );
+          showToast(t('auth.page.registerSuccess'), 'info');
 
           // Switch to login mode and clear form
           setTimeout(() => {
@@ -249,9 +253,7 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
         // Sadece gerçek RateLimitError için özel işlem
         if (error instanceof Error && error.name === 'RateLimitError') {
           const retryAfter = (error as any).retryAfter || 60;
-          setRateLimitError(
-            'Çok fazla deneme yapıldı. Lütfen birkaç dakika bekleyip tekrar deneyin.'
-          );
+          setRateLimitError(t('auth.page.rateLimitExceeded'));
           setRetryAfter(retryAfter);
 
           // Countdown timer
@@ -288,6 +290,7 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
       locale,
       router,
       signUp,
+      t,
     ]
   );
 
@@ -295,7 +298,9 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
   const handleGoogleLogin = useCallback(async () => {
     try {
       setLoading(true);
-      setLoadingStep('Google ile giriş yapılıyor...');
+      setLoadingStep(
+        isLogin ? t('auth.page.googleLogin') : t('auth.page.googleRegister')
+      );
       setMessage('');
       setErrors({});
 
@@ -306,7 +311,7 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
       setLoading(false);
       setLoadingStep('');
     }
-  }, [signInWithGoogle, locale, showToast]);
+  }, [signInWithGoogle, locale, showToast, isLogin, t]);
 
   // Resend email confirmation - memoized
   const handleResendEmail = useCallback(async () => {
@@ -316,12 +321,12 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
 
     try {
       setLoading(true);
-      setLoadingStep('E-posta gönderiliyor...');
+      setLoadingStep(t('auth.page.sendingEmail'));
       setMessage('');
 
       await resendConfirmation(pendingEmail);
 
-      showToast('Onay e-postası tekrar gönderildi!', 'success');
+      showToast(t('auth.page.resendEmail') + '!', 'success');
       setShowResendEmail(false);
       setPendingEmail('');
     } catch (error: unknown) {
@@ -332,7 +337,7 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
       setLoading(false);
       setLoadingStep('');
     }
-  }, [pendingEmail, resendConfirmation, showToast, locale]);
+  }, [pendingEmail, resendConfirmation, showToast, locale, t]);
 
   // Password reset - memoized
   const handlePasswordReset = useCallback(
@@ -346,7 +351,7 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
       const resetEmail = formData.get('resetEmail') as string;
 
       if (!resetEmail) {
-        setErrors({ email: 'E-posta adresi gerekli' });
+        setErrors({ email: t('auth.page.emailRequired') });
         setLoading(false);
         return;
       }
@@ -354,20 +359,17 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
       // Email format validation
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(resetEmail)) {
-        setErrors({ email: 'Geçerli bir e-posta adresi girin' });
+        setErrors({ email: t('auth.page.emailInvalid') });
         setLoading(false);
         return;
       }
 
       try {
-        setLoadingStep('Şifre sıfırlama e-postası gönderiliyor...');
+        setLoadingStep(t('auth.page.sendingEmail'));
 
         await resetPassword(resetEmail, locale);
 
-        showToast(
-          'Şifre sıfırlama e-postası gönderildi! E-posta kutunuzu kontrol edin.',
-          'success'
-        );
+        showToast(t('auth.page.passwordResetDescription'), 'success');
         setShowPasswordReset(false);
       } catch (error: unknown) {
         const errorMessage = getAuthErrorMessage(error as Error, locale);
@@ -378,7 +380,7 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
         setLoadingStep('');
       }
     },
-    [resetPassword, locale, showToast]
+    [resetPassword, locale, showToast, t]
   );
 
   // Input change handler - memoized
@@ -433,7 +435,10 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
               <p className='text-orange-800 font-medium'>{rateLimitError}</p>
               {retryAfter && (
                 <p className='text-orange-700 text-sm mt-1'>
-                  Tekrar deneyebilirsiniz: {retryAfter} saniye
+                  {t('auth.page.retryAfter').replace(
+                    '{seconds}',
+                    retryAfter.toString()
+                  )}
                 </p>
               )}
             </div>
@@ -456,7 +461,7 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
 
             <input
               type='email'
-              placeholder='E-posta adresiniz'
+              placeholder={t('auth.page.emailPlaceholder')}
               value={formData.email}
               onChange={e => handleInputChange('email', e.target.value)}
               className={`w-full pl-12 pr-4 py-4 rounded-xl bg-gradient-to-r from-white/90 to-gray-100/90 border text-black placeholder-black/70 focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-all duration-300 hover:from-gray-200/90 hover:to-gray-300/90 group relative z-10 ${
@@ -506,7 +511,7 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
 
                 <input
                   type='text'
-                  placeholder='Adınız'
+                  placeholder={t('auth.page.namePlaceholder')}
                   value={(formData as RegisterFormData).name || ''}
                   onChange={e => handleInputChange('name', e.target.value)}
                   className={`w-full pl-12 pr-4 py-4 rounded-xl bg-gradient-to-r from-white/90 to-gray-100/90 border text-black placeholder-black/70 focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-all duration-300 hover:from-gray-200/90 hover:to-gray-300/90 group relative z-10 ${
@@ -553,7 +558,7 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
 
                 <input
                   type='text'
-                  placeholder='Soyadınız'
+                  placeholder={t('auth.page.surnamePlaceholder')}
                   value={(formData as RegisterFormData).surname || ''}
                   onChange={e => handleInputChange('surname', e.target.value)}
                   className={`w-full pl-12 pr-4 py-4 rounded-xl bg-gradient-to-r from-white/90 to-gray-100/90 border text-black placeholder-black/70 focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-all duration-300 hover:from-gray-200/90 hover:to-gray-300/90 group relative z-10 ${
@@ -670,22 +675,22 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
                   aria-invalid={!!errors.gender}
                 >
                   <option value='' className='bg-white text-black'>
-                    Cinsiyet seçin
+                    {t('auth.page.genderSelect')}
                   </option>
                   <option value='male' className='bg-white text-black'>
-                    👨 Erkek
+                    {t('auth.page.genderMale')}
                   </option>
                   <option value='female' className='bg-white text-black'>
-                    👩 Kadın
+                    {t('auth.page.genderFemale')}
                   </option>
                   <option value='other' className='bg-white text-black'>
-                    🏳️‍⚧️ Diğer
+                    {t('auth.page.genderOther')}
                   </option>
                   <option
                     value='prefer_not_to_say'
                     className='bg-white text-black'
                   >
-                    🤐 Belirtmek istemiyorum
+                    {t('auth.page.genderPreferNotToSay')}
                   </option>
                 </select>
 
@@ -725,7 +730,7 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
 
             <input
               type='password'
-              placeholder='Şifreniz'
+              placeholder={t('auth.page.passwordPlaceholder')}
               value={formData.password}
               onChange={e => handleInputChange('password', e.target.value)}
               className={`w-full pl-12 pr-4 py-4 rounded-xl bg-gradient-to-r from-white/90 to-gray-100/90 border text-black placeholder-black/70 focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-all duration-300 hover:from-gray-200/90 hover:to-gray-300/90 group relative z-10 ${
@@ -795,7 +800,7 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
                 </div>
               </div>
               <span className='font-medium text-gray-700 group-hover:text-gray-900 transition-colors duration-200'>
-                Beni hatırla
+                {t('auth.page.rememberMe')}
               </span>
             </label>
 
@@ -804,9 +809,9 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
               type='button'
               onClick={() => setShowPasswordReset(true)}
               className='bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-3 py-1.5 rounded text-xs font-medium transition-all duration-300 shadow-sm hover:shadow-md transform hover:scale-105 active:scale-95'
-              aria-label='Şifremi unuttum'
+              aria-label={t('auth.page.forgotPassword')}
             >
-              Şifremi Unuttum
+              {t('auth.page.forgotPassword')}
             </button>
           </div>
         )}
@@ -826,7 +831,7 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
 
               <input
                 type='password'
-                placeholder='Şifrenizi tekrar girin'
+                placeholder={t('auth.page.confirmPasswordPlaceholder')}
                 value={(formData as RegisterFormData).confirmPassword || ''}
                 onChange={e =>
                   handleInputChange('confirmPassword', e.target.value)
@@ -883,11 +888,13 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
             {loading ? (
               <div className='flex items-center justify-center gap-3 relative z-10'>
                 <div className='animate-spin w-5 h-5 border-2 border-night/30 border-t-night rounded-full'></div>
-                <span>{loadingStep || 'İşleniyor...'}</span>
+                <span>{loadingStep || t('auth.page.processing')}</span>
               </div>
             ) : (
               <span className='relative z-10 flex items-center justify-center gap-2'>
-                {isLogin ? '🔮 Giriş Yap' : '✨ Kayıt Ol'}
+                {isLogin
+                  ? t('auth.page.loginButton')
+                  : t('auth.page.registerButton')}
               </span>
             )}
           </button>
@@ -946,7 +953,9 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
                 d='M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z'
               />
             </svg>
-            Google ile {isLogin ? 'Giriş Yap' : 'Kayıt Ol'}
+            {isLogin
+              ? t('auth.page.googleLogin')
+              : t('auth.page.googleRegister')}
           </button>
         </div>
       </div>
@@ -987,10 +996,10 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
           >
             <div className='text-center mb-6'>
               <h2 className='text-xl font-semibold text-gray-800 mb-2'>
-                Şifre Sıfırlama
+                {t('auth.page.passwordResetTitle')}
               </h2>
               <p className='text-gray-600 text-sm'>
-                E-posta adresinize şifre sıfırlama linki gönderilecek
+                {t('auth.page.passwordResetDescription')}
               </p>
             </div>
 
@@ -999,7 +1008,7 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
                 <input
                   type='email'
                   name='resetEmail'
-                  placeholder='E-posta adresiniz'
+                  placeholder={t('auth.page.emailPlaceholder')}
                   defaultValue={formData.email || ''}
                   className='w-full p-3 rounded-lg border border-gray-300 text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-all duration-300'
                   aria-label='Şifre sıfırlama e-posta adresi'
@@ -1029,7 +1038,7 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
                       <span>{loadingStep}</span>
                     </div>
                   ) : (
-                    'E-posta Gönder'
+                    t('auth.page.sendEmail')
                   )}
                 </button>
 
@@ -1041,9 +1050,9 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
                     setMessage('');
                   }}
                   className='px-4 py-3 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-lg font-semibold transition-all duration-300 shadow hover:shadow-md transform hover:scale-105 active:scale-95'
-                  aria-label='İptal'
+                  aria-label={t('auth.page.cancel')}
                 >
-                  İptal
+                  {t('auth.page.cancel')}
                 </button>
               </div>
             </form>
@@ -1102,11 +1111,10 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
           >
             <div className='mb-6'>
               <h3 className='text-xl font-bold text-gray-900 mb-2'>
-                E-posta Onayı
+                {t('auth.page.emailConfirmationTitle')}
               </h3>
               <p className='text-gray-600 text-sm'>
-                E-posta adresinizi onaylamanız gerekiyor. Onay e-postasını
-                tekrar göndermek ister misiniz?
+                {t('auth.page.emailConfirmationRequired')}
               </p>
               <p className='text-gray-500 text-xs mt-2'>
                 E-posta: {pendingEmail}
@@ -1121,11 +1129,11 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
                 }}
                 disabled={loading}
                 className='flex-1 px-4 py-3 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 disabled:from-blue-400 disabled:to-blue-500 text-white rounded-lg font-semibold transition-all duration-300 shadow hover:shadow-md transform hover:scale-105 active:scale-95'
-                aria-label='E-postayı tekrar gönder'
+                aria-label={t('auth.page.resendEmail')}
               >
-                {loading && loadingStep.includes('E-posta')
+                {loading && loadingStep.includes(t('auth.page.sendingEmail'))
                   ? loadingStep
-                  : 'E-postayı Tekrar Gönder'}
+                  : t('auth.page.resendEmail')}
               </button>
 
               <button
@@ -1136,9 +1144,9 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
                   setMessage('');
                 }}
                 className='px-4 py-3 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-lg font-semibold transition-all duration-300 shadow hover:shadow-md transform hover:scale-105 active:scale-95'
-                aria-label='İptal'
+                aria-label={t('auth.page.cancel')}
               >
-                İptal
+                {t('auth.page.cancel')}
               </button>
             </div>
           </div>
@@ -1155,12 +1163,16 @@ function AuthForm({ locale, initialError, next }: AuthFormProps) {
             type='button'
             onClick={toggleMode}
             className='relative text-lavender hover:text-gold transition-all duration-300 text-sm font-semibold px-6 py-3 rounded-xl hover:bg-gradient-to-r hover:from-lavender/10 hover:to-purple-400/10 hover:shadow-lg transform hover:scale-105 border border-lavender/20 hover:border-gold/30'
-            aria-label={isLogin ? 'Kayıt olmaya geç' : 'Giriş yapmaya geç'}
+            aria-label={
+              isLogin
+                ? t('auth.page.switchToRegister')
+                : t('auth.page.switchToLogin')
+            }
           >
             <span className='flex items-center gap-2'>
               {isLogin
-                ? '✨ Hesabınız yok mu? Kayıt olun'
-                : '🔮 Zaten hesabınız var mı? Giriş yapın'}
+                ? t('auth.page.switchToRegister')
+                : t('auth.page.switchToLogin')}
             </span>
           </button>
         </div>

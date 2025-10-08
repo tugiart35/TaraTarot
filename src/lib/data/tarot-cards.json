@@ -6,47 +6,47 @@
       "description": "Tarot kartlarının gizemli dünyasında yolculuğa çıkın. Her kartın düz ve ters anlamları, aşk, kariyer, para ve ruhsal rehberlik konularındaki yorumları.",
       "cards": {
         "the-fool": {
-          "name": "Deli (Joker) Tarot Kartı Anlamı",
-          "short_description": "Joker ya da Deli tarot kartı; ruhsal yenilenme, özgür adımlar ve yeni bir hayat döngüsünün enerjisini temsil eder.",
-          "meanings": {
-            "upright": {
-              "general": "Evrenin seni yeni bir başlangıca çağırdığı bir dönemdesin. Deli kartı, cesaretle atılan adımların beklenmedik mucizelerle buluşabileceğini hatırlatır. Bu kart, içsel özgürlüğünle hayat yolculuğunu yeniden tanımlamaya davet eder.",
-              "love": "Aşk alanında Joker enerjisi; kalbini özgürleştiren, keşif dolu ilişkiler getirir. Spontane tanışmalar ve taze duygular ruhunu canlandırabilir.",
-              "career": "Kariyerinde yeni deneyimlere ve bilinmeyene adım atma zamanı. Risk almaktan korkmazsan, bu kart sana dönüşüm ve yaratıcılık getirebilir.",
-              "money": "Maddi konularda Joker, girişimsel fırsatların kapıda olduğunu söyler. Cesaretle adım at, ancak niyetini net tut; evren seni doğru zamanda destekler.",
-              "spiritual": "Ruhsal olarak bu kart, içsel çocuğunu hatırlamaya ve evrene güvenmeye çağırır. Deli, sezgisel yolculukta özgürleşmenin sembolüdür."
-            },
-            "reversed": {
-              "general": "Deli kartı ters geldiğinde, yönsüzlük veya aceleyle alınan kararların riskine işaret eder. Dengeye dön ve niyetini netleştir, aksi halde fırsatlar gözünden kaçabilir.",
-              "love": "Ters Joker; bağ kurmaktan kaçış veya yüzeysel ilişkilerle sınanabileceğini söyler. Kalbini açarken sezgine güven.",
-              "career": "Hazırlıksız girişimler ve plansız adımlar kariyerinde karışıklık yaratabilir. Bu dönem sabır ve strateji gerektiriyor.",
-              "money": "Maddi anlamda düşünmeden yapılan harcamalar veya riskli yatırımlar kayba yol açabilir. Sezgisel ama temkinli davran.",
-              "spiritual": "Ruhsal olarak yön kaybı ya da niyet eksikliği yaşayabilirsin. Derin nefes al, merkezine dön ve yeniden hizalan."
-            }
-          },
-          "context": {
-            "mythology": "Deli (Joker), Majör Arkana’nın ilk kartı olarak yaratımın sıfır noktasını temsil eder. O, ruhun dünyaya iniş anıdır; saf bilincin maddeye dokunduğu o büyülü geçişi simgeler. Joker’in elindeki küçük çanta, geçmiş yaşamların deneyimlerini; ayağının dibindeki köpek ise içsel sezgiyi ve sadakati temsil eder. Bu kart, ‘bilinmeyene güven’ arketipidir — ne kadar plansız görünse de, Deli daima ilahi plana bağlıdır. Her şeyin yeniden başlayabileceğini, hayatın döngüsel doğasında kaybolmak yerine yeniden doğmayı seçebileceğini hatırlatır. Deli’nin yolculuğu, tüm Majör Arkana kartlarının açılışıdır; bir ruhun, kendi farkındalığına uyanış hikâyesidir.",
-            "celtic_cross": {
-              "future": "Gelecekte Deli kartı karşına çıktığında, seni bekleyen yeni bir başlangıç vardır. Bu enerji, bilinmeyene adım atarken iç sesine güvenmen gerektiğini söyler. Yol belirsiz olsa da, kalbin rehberlik edecektir. Bu kart, risk almaktan korkmaman, sezgisel çağrını takip etmen gerektiğini hatırlatır. Her şey planlandığı gibi gitmese bile, evren seni ilahi bir akışa taşımaktadır.",
-              "hidden_influences": "Gizli etkiler bölümünde Deli kartı belirdiğinde, içsel özgürlük arzusu ve macera isteği ruhsal kararlarını etkiliyor olabilir. Belki de hayatın çok düzenli, çok öngörülebilir hale geldi — ve ruhun değişim istiyor. Bu kart, bastırılmış keşif enerjisini, yeniden doğmak isteyen bir tarafını görünür kılar. Evren seni alışkanlıklardan çıkmaya, kalbini yeniden heyecanla doldurmaya çağırıyor."
-            }
-          },
-          "faq": [
-            {
-              "question": "Deli (Joker) tarot kartı hangi enerjiyi temsil eder?",
-              "answer": "Deli kartı, özgürlük, yenilenme ve cesaret enerjisini taşır. Bu kart, hayatında yeni bir başlangıcın kapıda olduğunu ve evrene güvenerek adım atman gerektiğini simgeler."
-            },
-            {
-              "question": "Deli kartı ters geldiğinde neye dikkat edilmelidir?",
-              "answer": "Ters Deli, aceleyle alınan kararlar, yönsüzlük veya plansız adımlar konusunda uyarır. Bu dönem, durup nefes almak, niyetini netleştirmek ve sabırla ilerlemek için idealdir."
-            },
-            {
-              "question": "Joker kartının yeni başlangıç enerjisi nasıl dengelenir?",
-              "answer": "Yeni başlangıç enerjisini dengelemek için kalbini dinle, niyetini netleştir ve sezgine güven. Evrenin seni desteklediğini bil, ancak adımlarını bilinçli at."
-            }
-          ],
-          "related_cards": ["the-magician", "the-sun", "the-tower"],
-          "imageUrl": "/cards/rws/0-Fool.webp"
+    "name": "Deli (Joker) Tarot Kartı Anlamı ve Hikayesi (0. Majör Arkana): Yeni Başlangıçlar",
+    "short_description": "Deli kartının gerçek anlamını ve mistik hikayesini keşfedin. 0 numaralı bu Majör Arkana kartı, düz ve ters açılımlarda aşk, kariyer ve para alanlarında ne anlama gelir? Cesaret, saf potansiyel ve bilinmeyene atılan ilk adımın sembolü.",
+    "meanings": {
+        "upright": {
+            "general": "Deli kartı, **Majör Arkana yolculuğunun sıfır noktasıdır.** Düz konumda, **saf potansiyeli, sınırsız özgürlüğü ve bilinçli bir sıçrayışı** temsil eder[cite: 1]. Hayatınızda büyük bir maceraya atılma, tüm riskleri alıp tam bir **safiyet ve evrene güven** içinde ilerleme vaktidir. Bu, yeni bir iş, yeni bir şehir ya da ruhsal bir uyanış olabilir; Deli, arkasına bakmadan, zirveden aşağıya adım atan o ruhu simgeler. Anahtar kelimeler: **Yeni Başlangıç**, **Spontanelik**, **İçsel Çocuk** ve **Bilinmeyene Atılmak**.",
+            "love": "Aşk alanında, Deli enerjisi **özgürleşmeyi** ve **beklenmedik tanışmaları** işaret eder[cite: 2]. Ciddi taahhütlerden çok, **keşif ve neşe** odaklı, taze duygusal deneyimler kapıdadır. Eğer bir ilişkiniz varsa, kart sizi **rutinleri kırıp** ilişkinize yeni bir heyecan katmaya davet eder.",
+            "career": "Kariyerde, **girişimcilik ve vizyon** öne çıkar. Kariyer basamaklarını tırmanmaktan çok, bambaşka bir yola sapma ve **hazır olmadan adım atma** enerjisini gösterir[cite: 3]. Projelerinizde **yaratıcılığınızı** kullanın ve risk almaktan çekinmeyin. Yeni, geleneksel olmayan bir işe başlama zamanı.",
+            "money": "Maddi konularda kart, **fırsatların kapıda olduğunu** söyler. Ancak, bu fırsatlar geleneksel güvenceden uzaktır. İçgüdülerinizle hareket edin, ancak **cömertlik ile düşüncesizliği** ayırın[cite: 3]. Evrenin sizi doğru zamanda destekleyeceğine dair bir inançla hareket etmelisiniz.",
+            "spiritual": "Ruhsal olarak, bu kart **içsel özgürleşmenin** ve **bilinçli cahilliğin** zirvesidir[cite: 4]. Evrenin mükemmel planına güvenmeyi ve içsel çocuğunuzla yeniden bağlantı kurmayı öğrenirsiniz. **Yolculuk, ulaşılan noktadan daha önemlidir.**"
+        },
+        "reversed": {
+            "general": "Deli kartı ters geldiğinde, **yönsüzlük, aşırı acelecilik veya sorumsuzluk** riskine işaret eder[cite: 5]. Plan yapılmadan atılan adımlar, **kendini sabote etme** ya da büyük bir potansiyeli boşa harcama tehlikesi taşır. Dengeye dönün ve niyetinizi netleştirin; **kaçtığınız dersler** tekrar karşınıza çıkacaktır.",
+            "love": "Ters Deli; **taahhütten kaçış**, bir ilişkiye hak ettiğinden daha az değer verme veya **yüzeysel kaçamaklar**la sınırlanmayı gösterebilir[cite: 6]. İlişkideki **bencillik** ve duygusal olgunluk eksikliği sorun yaratır. Kalbinizi açarken sezginize güvenin.",
+            "career": "Kariyerinizde **hazırlıksız girişimler** ve **plansız hareketler** karışıklık yaratabilir[cite: 7]. Bir projeye körü körüne başlamak yerine, şimdi durup **strateji geliştirme** zamanıdır. İşlerinizin kaotik ilerlemesi, dikkatsizliğinizden kaynaklanıyor olabilir.",
+            "money": "Maddi anlamda, ters Deli **düşünmeden yapılan harcamalar**ı, riskli ve temelsiz yatırımları veya **paraya karşı sorumsuz bir tutumu** simgeler[cite: 8]. Sezgisel ama **temkinli** davranarak büyük kayıplardan kaçının.",
+            "spiritual": "Ruhsal olarak **yön kaybı** veya niyet eksikliği yaşayabilir, manevi yolculuğunuzda **ilerlemeye direnç** gösterebilirsiniz[cite: 9]. Merkezine dönmek, derin nefes almak ve niyetinizi yeniden hizalamak için ideal bir dönemdir."
+        }
+    },
+    "context": {
+        "mythology": "### Deli Kartının Hikayesi: Arketipsel Yolculuğun Başlangıcı\n\nDeli (Joker), **Majör Arkana’nın sıfır noktasıdır**; o, ruhun bilinçsiz bir saflıkla dünyaya adım atma anıdır[cite: 10]. Bu kart, tüm bilgelik ve deneyim döngüsüne başlamadan önceki **ilk nefesi** simgeler. Rider-Waite destesinde, Deli, uçurumun kenarında durur, elinde küçük bir çanta (geçmiş deneyimleri) ve yanında ona eşlik eden **beyaz bir köpek** (sezgi ve sadakat) vardır. Elindeki **beyaz gül** ise masumiyeti ve saflığı temsil eder. Deli, ne kadar plansız görünse de, daima **ilahi plana bağlıdır**[cite: 12, 13]. Onun yolculuğu, ruhun kendi farkındalığına uyanış hikâyesinin, yani diğer 21 Majör Arkana kartının açılışıdır[cite: 14]. Bu kartın hikayesi, bize her şeyin yeniden başlayabileceğini ve hayatın döngüsel doğasında **yeniden doğmayı** seçebileceğimizi hatırlatır.",
+        "celtic_cross": {
+            "future": "Gelecekte Deli kartı karşına çıktığında, seni bekleyen **yeni bir başlangıç** vardır[cite: 15]. Yol belirsiz olsa da, kart **risk almaktan korkmamanı, iç sesine güvenmeni ve sezgisel çağrını takip etmen gerektiğini** söyler[cite: 16, 17]. Evren seni ilahi bir akışa taşımaktadır.",
+            "hidden_influences": "Gizli etkilerde Deli kartı belirdiğinde, **içsel özgürlük arzusu** ve maceraya duyulan bastırılmış istek, bilinçaltı kararlarını etkiliyor olabilir[cite: 18, 19]. Rutinlerinizi kırma ve **yeniden doğmak** isteyen bir tarafınızın olduğunu gösterir[cite: 20]."
+        }
+    },
+    "faq": [
+        {
+            "question": "Deli (Joker) tarot kartı hangi enerjiyi ve arketipi temsil eder? (SEO Anahtar Kelime: Deli kartı arketip)",
+            "answer": "Deli kartı, **saf potansiyel, özgürlük, yenilenme ve cesaret** enerjisini taşır[cite: 21]. Arketipsel olarak 'Masum' ve 'Maceraperest' ruhu temsil eder. Hayatınızda yeni bir başlangıcın kapıda olduğunu ve evrene güvenerek adım atmanız gerektiğini simgeler."
+        },
+        {
+            "question": "Deli kartı ters geldiğinde neye dikkat edilmelidir? (SEO Anahtar Kelime: Ters Deli kartı uyarısı)",
+            "answer": "Ters Deli, **aceleyle alınan kararlar, yönsüzlük veya plansız adımlar** konusunda uyarır[cite: 22]. Bu dönem, durup nefes almak, niyetinizi netleştirmek ve sabırla ilerlemek için idealdir. Sorumsuzluk veya büyük risklerden kaçınmalısınız."
+        },
+        {
+            "question": "Joker kartının yeni başlangıç enerjisi nasıl dengelenir?",
+            "answer": "Yeni başlangıç enerjisini dengelemek için, kalbinizi dinleyin, niyetinizi netleştirin ve sezginize güvenin. Evrenin sizi desteklediğini bilin, ancak **adımlarınızı bilinçli ve temkinli** atın[cite: 23]."
+        }
+    ],
+    "related_cards": ["the-magician", "the-sun", "the-tower", "ace-of-wands"],
+    "imageUrl": "/cards/rws/0-Fool.webp"
         },
         "the-high-priestess": {
           "name": "Başrahibe",

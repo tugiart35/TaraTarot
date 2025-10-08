@@ -1,0 +1,29 @@
+--- a/messages/en.json
++++ b/messages/en.json
+@@ -1,4 +1,24 @@
+ {
++  "dashboard": {
++    "errors": {
++      "statsLoadFailed": "Failed to load statistics",
++      "creditRefreshFailed": "Failed to refresh credit balance"
++    },
++    "creditBalanceRefreshed": "Credit balance refreshed",
++    "time": {
++      "day": "day",
++      "days": "days",
++      "month": "month",
++      "months": "months",
++      "year": "year",
++      "years": "years"
++    },
++    "userLevels": {
++      "master": "Master",
++      "experienced": "Experienced",
++      "intermediate": "Intermediate",
++      "beginner": "Beginner",
++      "new": "New"
++    }
++  },
+   "auth": {
+     "page": {
+

@@ -1,0 +1,62 @@
+--- a/src/components/dashboard/DashboardContainer.tsx
++++ b/src/components/dashboard/DashboardContainer.tsx
+@@ -55,7 +55,7 @@ const DashboardContainer: React.FC<DashboardContainerProps> = ({
+     () => (
+       <section aria-labelledby='welcome-heading'>
+         <h2 id='welcome-heading' className='sr-only'>
+-          Hoş Geldiniz
++          {translate('dashboard.sections.welcome', 'Hoş Geldiniz')}
+         </h2>
+         <WelcomeSection profile={profile} user={user} isAdmin={isAdmin} />
+       </section>
+@@ -67,7 +67,7 @@ const DashboardContainer: React.FC<DashboardContainerProps> = ({
+     () => (
+       <section aria-labelledby='stats-heading'>
+         <h2 id='stats-heading' className='sr-only'>
+-          İstatistikler
++          {translate('dashboard.sections.statistics', 'İstatistikler')}
+         </h2>
+         <StatsCards
+           profile={profile}
+@@ -93,7 +93,7 @@ const DashboardContainer: React.FC<DashboardContainerProps> = ({
+     () => (
+       <section aria-labelledby='packages-heading'>
+         <h2 id='packages-heading' className='sr-only'>
+-          Kredi Paketleri
++          {translate('dashboard.sections.creditPackages', 'Kredi Paketleri')}
+         </h2>
+         <CreditPackages
+           packages={packages}
+@@ -109,7 +109,7 @@ const DashboardContainer: React.FC<DashboardContainerProps> = ({
+     () => (
+       <section aria-labelledby='profile-heading'>
+         <h2 id='profile-heading' className='sr-only'>
+-          Profil Yönetimi
++          {translate('dashboard.sections.profileManagement', 'Profil Yönetimi')}
+         </h2>
+         <ProfileManagement
+           openProfileModal={openProfileModal}
+@@ -124,7 +124,7 @@ const DashboardContainer: React.FC<DashboardContainerProps> = ({
+     () => (
+       <section aria-labelledby='recent-activity-heading'>
+         <h2 id='recent-activity-heading' className='sr-only'>
+-          Son Aktiviteler
++          {translate('dashboard.sections.recentActivity', 'Son Aktiviteler')}
+         </h2>
+         <RecentActivity
+           recentReadings={recentReadings}
+@@ -170,7 +170,10 @@ const DashboardContainer: React.FC<DashboardContainerProps> = ({
+             fallback={
+               <ErrorFallback
+                 error={
+-                  new Error(
+-                    'Dashboard bileşenleri yüklenirken bir hata oluştu.'
++                  new Error(
++                    translate(
++                      'dashboard.errors.loadError',
++                      'Dashboard bileşenleri yüklenirken bir hata oluştu.'
++                    )
+                   )
+                 }
+                 resetError={() => window.location.reload()}
+

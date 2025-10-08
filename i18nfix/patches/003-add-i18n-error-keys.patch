@@ -1,0 +1,40 @@
+diff --git a/messages/tr.json b/messages/tr.json
+index 1234567..abcdefg 100644
+--- a/messages/tr.json
++++ b/messages/tr.json
+@@ -1,5 +1,11 @@
+ {
+   "cards": {
++    "errors": {
++      "notFound": "Kart Bulunamadı",
++      "notFoundDescription": "Aradığınız tarot kartı bulunamadı."
++    }
++  }
++}
+diff --git a/messages/en.json b/messages/en.json
+index 1234567..abcdefg 100644
+--- a/messages/en.json
++++ b/messages/en.json
+@@ -1,5 +1,11 @@
+ {
+   "cards": {
++    "errors": {
++      "notFound": "Card Not Found",
++      "notFoundDescription": "The tarot card you are looking for could not be found."
++    }
++  }
++}
+diff --git a/messages/sr.json b/messages/sr.json
+index 1234567..abcdefg 100644
+--- a/messages/sr.json
++++ b/messages/sr.json
+@@ -1,5 +1,11 @@
+ {
+   "cards": {
++    "errors": {
++      "notFound": "Karta Nije Pronađena",
++      "notFoundDescription": "Tarot karta koju tražite nije pronađena."
++    }
++  }
++}
+

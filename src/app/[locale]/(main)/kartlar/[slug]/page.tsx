@@ -4,6 +4,8 @@ import { CardData } from '@/features/tarot-cards/lib/card-data';
 import { CardSEO } from '@/features/tarot-cards/lib/card-seo';
 import BottomNavigation from '@/features/shared/layout/BottomNavigation';
 import Footer from '@/features/shared/layout/Footer';
+import { getTranslations } from 'next-intl/server';
+import { logger } from '@/lib/logger';
 
 interface PageProps {
   params: Promise<{
@@ -109,6 +111,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps) {
   const { locale, slug } = await params;
+  const t = await getTranslations({ locale, namespace: 'cards.errors' });
 
   try {
     const cardData = await CardData.getCardBySlug(
@@ -117,8 +120,8 @@ export async function generateMetadata({ params }: PageProps) {
     );
     if (!cardData) {
       return {
-        title: 'Kart Bulunamadı',
-        description: 'Aradığınız tarot kartı bulunamadı.',
+        title: t('notFound'),
+        description: t('notFoundDescription'),
       };
     }
 
@@ -128,10 +131,10 @@ export async function generateMetadata({ params }: PageProps) {
       locale as 'tr' | 'en' | 'sr'
     );
   } catch (error) {
-    console.error('Error generating metadata:', error);
+    logger.error('Error generating metadata for kartlar route', error);
     return {
-      title: 'Kart Bulunamadı',
-      description: 'Aradığınız tarot kartı bulunamadı.',
+      title: t('notFound'),
+      description: t('notFoundDescription'),
     };
   }
 }
@@ -157,7 +160,7 @@ export default async function CardPageRoute({ params }: PageProps) {
       </>
     );
   } catch (error) {
-    console.error('Error loading card:', error);
+    logger.error('Error loading card from kartlar route', error);
     notFound();
   }
 }

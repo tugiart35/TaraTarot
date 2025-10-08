@@ -1,0 +1,116 @@
+# PATCH 002: Update env.example with Missing Variables
+# Öncelik: HIGH
+# Etki: Eksik environment variable'ları dokümante eder
+# APPLY=true ile çalıştır
+
+# ============================================
+# AÇIKLAMA
+# ============================================
+# env.example dosyasını eksik değişkenlerle
+# günceller
+# ============================================
+
+#!/bin/bash
+
+echo "📝 Updating env.example with missing variables..."
+
+ENV_EXAMPLE="env.example"
+
+# Backup oluştur
+cp "$ENV_EXAMPLE" "$ENV_EXAMPLE.backup.$(date +%Y%m%d_%H%M%S)"
+
+# Yeni değişkenleri ekle
+cat >> "$ENV_EXAMPLE" << 'EOF'
+
+# ===========================================
+# AI CONFIGURATION - ADDED BY AUDIT
+# ===========================================
+# AI servisleri için API anahtarları
+# En az birinin olması gerekli
+
+# Groq AI (Tarot yorumları için)
+GROQ_API_KEY=your-groq-api-key-here
+
+# Google Gemini AI (Alternative)
+GEMINI_API_KEY=your-gemini-api-key-here
+
+# ===========================================
+# EXTENDED SHOPIER CONFIGURATION
+# ===========================================
+
+# Webhook ve callback güvenliği için
+SHOPIER_WEBHOOK_SECRET=your-webhook-secret-here
+SHOPIER_CALLBACK_SECRET=your-callback-secret-here
+SHOPIER_CURRENCY=TRY
+SHOPIER_TIMEOUT=30000
+
+# ===========================================
+# EXTENDED EMAIL CONFIGURATION
+# ===========================================
+
+# Email gönderici bilgileri
+SMTP_FROM_NAME="Tara Tarot"
+SMTP_FROM_EMAIL=noreply@yoursite.com
+SMTP_REPLY_TO=support@yoursite.com
+SMTP_MAX_RETRIES=3
+SMTP_TIMEOUT=10000
+
+# ===========================================
+# SECURITY & ENCRYPTION
+# ===========================================
+
+# Data encryption için (32 karakter)
+# Oluşturmak için: node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+ENCRYPTION_KEY=your-32-char-encryption-key-here
+
+# Session management
+SESSION_SECRET=your-session-secret-here
+
+# API rate limiting
+API_RATE_LIMIT_SECRET=your-rate-limit-secret-here
+
+# ===========================================
+# MONITORING & ANALYTICS (Optional)
+# ===========================================
+
+# Google Analytics
+# NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
+
+# Sentry error tracking
+# SENTRY_DSN=https://xxx@sentry.io/xxx
+# SENTRY_ORG=your-org
+# SENTRY_PROJECT=your-project
+
+# Log level (debug | info | warn | error)
+LOG_LEVEL=info
+
+# ===========================================
+# PRODUCTION DEPLOYMENT NOTES
+# ===========================================
+#
+# CRITICAL CHECKLIST:
+# 1. ✅ Set NODE_ENV=production
+# 2. ✅ Use production Supabase URLs and keys
+# 3. ✅ Set SHOPIER_TEST_MODE=false
+# 4. ✅ Generate secure random secrets (32+ chars)
+# 5. ✅ Enable SMTP with production credentials
+# 6. ✅ Set GROQ_API_KEY or GEMINI_API_KEY
+# 7. ✅ Set proper NEXT_PUBLIC_SITE_URL
+# 8. ✅ Enable monitoring (Sentry, GA)
+# 9. ✅ Set LOG_LEVEL=error for production
+# 10. ✅ Verify all secrets are in Vercel/AWS
+#
+# SECURITY WARNINGS:
+# - NEVER commit .env files to git
+# - Rotate secrets every 90 days
+# - Use different secrets for each environment
+# - Keep SUPABASE_SERVICE_ROLE_KEY server-side only
+# - Monitor API usage for anomalies
+#
+# ===========================================
+
+EOF
+
+echo "✅ env.example updated successfully"
+echo "📋 Review the file and update your .env.local accordingly"
+

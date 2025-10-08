@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { CardData } from '@/features/tarot-cards/lib/card-data';
+import { logger } from '@/lib/logger';
 
 export async function GET(
   _request: NextRequest,
@@ -77,7 +78,11 @@ export async function GET(
       { status: 200 }
     );
   } catch (error) {
-    console.error('Error in GET /api/cards/[locale]/[slug]:', error);
+    const { locale, slug } = await params;
+    logger.error('API error in cards endpoint', error, {
+      action: 'GET /api/cards/[locale]/[slug]',
+      resource: `${locale}/${slug}`,
+    });
 
     return NextResponse.json(
       {

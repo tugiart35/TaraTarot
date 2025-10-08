@@ -1,0 +1,96 @@
+This is a comprehensive patch combining all i18n fixes for DashboardBaseComponent.tsx
+
+To apply all fixes at once:
+
+1. First, add i18n keys to message files:
+   - Apply: DashboardBaseComponent-add-i18n-keys-tr.patch
+   - Apply: DashboardBaseComponent-add-i18n-keys-en.patch
+   - Apply: DashboardBaseComponent-add-i18n-keys-sr.patch
+
+2. Then apply component fixes:
+   - Apply: DashboardBaseComponent-i18n-errors.patch
+   - Apply: DashboardBaseComponent-i18n-utils.patch
+
+Or manually make these changes:
+
+=== STEP 1: Add to messages/tr.json ===
+Add this object at the root level:
+
+"dashboard": {
+  "errors": {
+    "statsLoadFailed": "İstatistikler yüklenemedi",
+    "creditRefreshFailed": "Kredi bakiyesi yenilenemedi"
+  },
+  "creditBalanceRefreshed": "Kredi bakiyesi yenilendi",
+  "time": {
+    "day": "gün",
+    "days": "gün",
+    "month": "ay",
+    "months": "ay",
+    "year": "yıl",
+    "years": "yıl"
+  },
+  "userLevels": {
+    "master": "Usta",
+    "experienced": "Deneyimli",
+    "intermediate": "Orta",
+    "beginner": "Başlangıç",
+    "new": "Yeni"
+  }
+}
+
+=== STEP 2: Add to messages/en.json ===
+Same structure with English translations.
+
+=== STEP 3: Add to messages/sr.json ===
+Same structure with Serbian translations.
+
+=== STEP 4: Update DashboardBaseComponent.tsx ===
+
+Line 147 - Change:
+  err instanceof Error ? err.message : 'İstatistikler yüklenemedi';
+To:
+  err instanceof Error ? err.message : t('dashboard.errors.statsLoadFailed', 'İstatistikler yüklenemedi');
+
+Line 203 - Change:
+  err instanceof Error ? err.message : 'Kredi bakiyesi yenilenemedi';
+To:
+  err instanceof Error ? err.message : t('dashboard.errors.creditRefreshFailed', 'Kredi bakiyesi yenilenemedi');
+
+Line 263 - Change:
+  formatDate: (date: string | Date): string => {
+To:
+  formatDate: (date: string | Date, locale: string = 'tr'): string => {
+    const localeMap: Record<string, string> = { tr: 'tr-TR', en: 'en-US', sr: 'sr-RS' };
+    return d.toLocaleDateString(localeMap[locale] || 'tr-TR', {
+
+Line 276 - Change:
+  getMemberSince: (createdAt: string | Date): string => {
+To:
+  getMemberSince: (createdAt: string | Date, t: (key: string) => string): string => {
+
+And update all return statements to use t():
+  return `${diffDays} ${t(diffDays === 1 ? 'dashboard.time.day' : 'dashboard.time.days')}`;
+  return `${months} ${t(months === 1 ? 'dashboard.time.month' : 'dashboard.time.months')}`;
+  return `${years} ${t(years === 1 ? 'dashboard.time.year' : 'dashboard.time.years')}`;
+
+Line 293 - Change:
+  getUserLevel: (totalReadings: number): string => {
+To:
+  getUserLevel: (totalReadings: number, t: (key: string) => string): string => {
+
+And update all return statements:
+  return t('dashboard.userLevels.master');
+  return t('dashboard.userLevels.experienced');
+  return t('dashboard.userLevels.intermediate');
+  return t('dashboard.userLevels.beginner');
+  return t('dashboard.userLevels.new');
+
+=== VERIFICATION ===
+After applying all patches:
+1. npm run build  (should succeed)
+2. Test in TR/EN/SR locales
+3. Verify error messages show in correct language
+4. Verify user levels show in correct language
+5. Verify date formatting works for all locales
+

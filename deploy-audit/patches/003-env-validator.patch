@@ -1,0 +1,208 @@
+# PATCH 003: Environment Variable Validator
+# Öncelik: HIGH
+# Etki: Runtime'da env validation yapar
+# APPLY=true ile çalıştır
+
+# ============================================
+# AÇIKLAMA
+# ============================================
+# Yeni env-validator.ts dosyası oluşturur
+# ve startup'ta validation yapar
+# ============================================
+
+---
+File: src/lib/env-validator.ts
+---
+import { z } from 'zod';
+
+/**
+ * Environment Variables Schema
+ * 
+ * Bu schema tüm environment variable'ları validate eder.
+ * Eksik veya hatalı değişken olduğunda uygulama başlamaz.
+ */
+const envSchema = z.object({
+  // ===========================
+  // Node Environment
+  // ===========================
+  NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
+
+  // ===========================
+  // Supabase Configuration
+  // ===========================
+  NEXT_PUBLIC_SUPABASE_URL: z.string().url('Invalid Supabase URL'),
+  NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string().min(20, 'Supabase anon key too short'),
+  SUPABASE_SERVICE_ROLE_KEY: z.string().min(20).optional(),
+
+  // ===========================
+  // Application URLs
+  // ===========================
+  NEXT_PUBLIC_SITE_URL: z.string().url('Invalid site URL'),
+  NEXT_PUBLIC_CONTACT_PHONE: z.string().min(10).optional(),
+
+  // ===========================
+  // AI Configuration
+  // ===========================
+  GROQ_API_KEY: z.string().min(20).optional(),
+  GEMINI_API_KEY: z.string().min(20).optional(),
+
+  // ===========================
+  // Payment (Shopier)
+  // ===========================
+  SHOPIER_MERCHANT_ID: z.string().optional(),
+  SHOPIER_API_KEY: z.string().optional(),
+  SHOPIER_API_SECRET: z.string().optional(),
+  SHOPIER_TEST_MODE: z.string().transform(val => val === 'true').default('true'),
+  SHOPIER_WEBHOOK_SECRET: z.string().min(32).optional(),
+  
+  NEXT_PUBLIC_SHOPIER_API_URL: z.string().url().optional(),
+  NEXT_PUBLIC_SHOPIER_CALLBACK_URL: z.string().url().optional(),
+  NEXT_PUBLIC_SHOPIER_WEBHOOK_URL: z.string().url().optional(),
+
+  // ===========================
+  // Email (SMTP)
+  // ===========================
+  SMTP_HOST: z.string().optional(),
+  SMTP_PORT: z.string().transform(val => val ? Number(val) : undefined).optional(),
+  SMTP_SECURE: z.string().transform(val => val === 'true').default('false'),
+  SMTP_USER: z.string().email().optional(),
+  SMTP_PASS: z.string().optional(),
+  SMTP_FROM_NAME: z.string().optional(),
+  SMTP_FROM_EMAIL: z.string().email().optional(),
+
+  // ===========================
+  // Security
+  // ===========================
+  WEBHOOK_SECRET: z.string().min(32).optional(),
+  ENCRYPTION_KEY: z.string().length(64).optional(), // 32 bytes hex = 64 chars
+  SESSION_SECRET: z.string().min(32).optional(),
+
+  // ===========================
+  // Monitoring & Debug
+  // ===========================
+  DEBUG: z.string().transform(val => val === 'true').default('false'),
+  LOG_LEVEL: z.enum(['debug', 'info', 'warn', 'error']).default('info'),
+  SENTRY_DSN: z.string().url().optional(),
+
+  // ===========================
+  // Analytics
+  // ===========================
+  NEXT_PUBLIC_GA_ID: z.string().optional(),
+});
+
+export type Env = z.infer<typeof envSchema>;
+
+/**
+ * Validate environment variables
+ * 
+ * Bu fonksiyon uygulama başlangıcında çağrılmalı.
+ * Eksik veya hatalı değişken varsa uygulama crash eder.
+ */
+export function validateEnv(): Env {
+  try {
+    const validated = envSchema.parse(process.env);
+    
+    // Production için ek kontroller
+    if (validated.NODE_ENV === 'production') {
+      // AI key kontrolü (en az biri olmalı)
+      if (!validated.GROQ_API_KEY && !validated.GEMINI_API_KEY) {
+        console.warn('⚠️ WARNING: No AI API key configured. AI features will not work.');
+      }
+
+      // Payment kontrolü
+      if (!validated.SHOPIER_MERCHANT_ID || !validated.SHOPIER_API_KEY) {
+        console.warn('⚠️ WARNING: Shopier not configured. Payments will not work.');
+      }
+
+      // Email kontrolü
+      if (!validated.SMTP_HOST || !validated.SMTP_USER) {
+        console.warn('⚠️ WARNING: SMTP not configured. Email sending will not work.');
+      }
+
+      // Security kontrolü
+      if (!validated.WEBHOOK_SECRET) {
+        console.warn('⚠️ WARNING: WEBHOOK_SECRET not set. Webhook security compromised.');
+      }
+
+      if (!validated.ENCRYPTION_KEY) {
+        console.warn('⚠️ WARNING: ENCRYPTION_KEY not set. Data encryption disabled.');
+      }
+    }
+
+    return validated;
+  } catch (error) {
+    console.error('❌ Environment variable validation failed:');
+    
+    if (error instanceof z.ZodError) {
+      console.error('\nMissing or invalid variables:');
+      error.errors.forEach(err => {
+        console.error(`  - ${err.path.join('.')}: ${err.message}`);
+      });
+      
+      console.error('\n📋 Please check your .env.local file');
+      console.error('📋 See env.example for required variables\n');
+    } else {
+      console.error(error);
+    }
+
+    // Development'ta warning, production'da crash
+    if (process.env.NODE_ENV === 'production') {
+      process.exit(1);
+    } else {
+      console.warn('\n⚠️ Running in development mode with invalid env vars');
+      console.warn('⚠️ Some features may not work correctly\n');
+    }
+
+    // Return default values for development
+    return envSchema.parse({
+      ...process.env,
+      NODE_ENV: 'development',
+      NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co',
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key-min-20-chars-long',
+      NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3111',
+    });
+  }
+}
+
+// Auto-validate on import (singleton)
+let _env: Env | null = null;
+
+export function getEnv(): Env {
+  if (!_env) {
+    _env = validateEnv();
+  }
+  return _env;
+}
+
+// Export validated env
+export const env = getEnv();
+
+// Type-safe env access
+export default env;
+
+---
+END OF FILE
+---
+
+# ============================================
+# USAGE INSTRUCTIONS
+# ============================================
+
+echo "📝 Created: src/lib/env-validator.ts"
+echo ""
+echo "✅ To use in your code:"
+echo ""
+echo "// Import validated env"
+echo "import { env } from '@/lib/env-validator';"
+echo ""
+echo "// Use type-safe variables"
+echo "const supabaseUrl = env.NEXT_PUBLIC_SUPABASE_URL;"
+echo "const apiKey = env.GROQ_API_KEY;"
+echo ""
+echo "⚠️ IMPORTANT: Add to next.config.js:"
+echo ""
+echo "// At the top of next.config.js:"
+echo "const { validateEnv } = require('./src/lib/env-validator');"
+echo "validateEnv(); // Validate on build"
+echo ""
+

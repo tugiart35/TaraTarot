@@ -1,0 +1,47 @@
+--- a/src/lib/email/email-service.ts
++++ b/src/lib/email/email-service.ts
+@@ -15,13 +15,6 @@ const smtpConfig = {
+   pass: process.env.SMTP_PASS || '',
+ };
+ 
+-// ⚠️ SECURITY: Remove this logging in production!
+-console.log('SMTP Config:', {
+-  host: smtpConfig.host,
+-  port: smtpConfig.port,
+-  secure: smtpConfig.secure,
+-  user: smtpConfig.user,
+-  hasPassword: !!smtpConfig.pass,
+-});
++// SMTP configuration loaded from environment variables
+ 
+ // Create reusable transporter
+@@ -35,7 +28,10 @@ export const transporter = nodemailer.createTransport({
+     pass: smtpConfig.pass,
+   },
+   pool: true,
++  logger: process.env.NODE_ENV === 'development', // Only log in development
++  debug: process.env.NODE_ENV === 'development',  // Only debug in development
+ });
+ 
+-console.log('Email transporter initialized successfully with connection pooling');
++// Transporter initialized successfully
++// Connection pooling enabled for better performance
+
+--- a/src/lib/pdf/pdf-generator.ts
++++ b/src/lib/pdf/pdf-generator.ts
+@@ -25,13 +25,6 @@ const smtpConfig = {
+   pass: process.env.SMTP_PASS || '',
+ };
+ 
+-// ⚠️ SECURITY: Remove this logging in production!
+-console.log('SMTP Config:', {
+-  host: smtpConfig.host,
+-  port: smtpConfig.port,
+-  secure: smtpConfig.secure,
+-  user: smtpConfig.user,
+-  hasPassword: !!smtpConfig.pass,
+-});
++// SMTP configuration loaded from environment variables
+ 
+ /**
+

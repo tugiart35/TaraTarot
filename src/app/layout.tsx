@@ -62,6 +62,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel='dns-prefetch' href='//fonts.googleapis.com' />
         <link rel='dns-prefetch' href='//www.google-analytics.com' />
         <link rel='dns-prefetch' href='//connect.facebook.net' />
+        <link rel='dns-prefetch' href='//pagead2.googlesyndication.com' />
 
         {/* Preload Critical Resources - Font dosyaları mevcut değil, Google Fonts kullanıyoruz */}
         {/* <link
@@ -72,10 +73,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           crossOrigin='anonymous'
         /> */}
 
-        {/* Google Analytics - G-Y2HESMXJXD */}
+        {/* Google AdSense */}
         <script
           async
-          src='https://www.googletagmanager.com/gtag/js?id=G-Y2HESMXJXD'
+          src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7105264375916972'
+          crossOrigin='anonymous'
+        />
+
+        {/* Google Analytics - G-Y2HESMXJXD */}
+        <script async src='https://www.googletagmanager.com/gtag/js?id=G-Y2HESMXJXD'
         />
         <script
           dangerouslySetInnerHTML={{

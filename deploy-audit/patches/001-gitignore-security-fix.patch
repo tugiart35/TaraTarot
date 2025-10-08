@@ -1,0 +1,55 @@
+# PATCH 001: .gitignore Security Fix
+# Öncelik: CRITICAL
+# Etki: API key sızıntısını önler
+# APPLY=true ile çalıştır
+
+# ============================================
+# AÇIKLAMA
+# ============================================
+# .gemini/ dizinini ve diğer hassas dosyaları
+# .gitignore'a ekler
+# ============================================
+
+#!/bin/bash
+
+echo "🔒 Applying security fix to .gitignore..."
+
+GITIGNORE_FILE=".gitignore"
+
+# Backup oluştur
+cp "$GITIGNORE_FILE" "$GITIGNORE_FILE.backup.$(date +%Y%m%d_%H%M%S)"
+
+# API Keys & Secrets section ekle
+cat >> "$GITIGNORE_FILE" << 'EOF'
+
+# ============================================
+# API Keys & Secrets - ADDED BY SECURITY AUDIT
+# ============================================
+.gemini/
+.secrets/
+*.key
+*.pem
+*.p12
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Sensitive configuration
+config/secrets.json
+config/local.json
+
+EOF
+
+echo "✅ .gitignore updated successfully"
+echo "⚠️  NEXT STEPS:"
+echo "1. Remove .gemini/ directory: rm -rf .gemini/"
+echo "2. Check git status: git status"
+echo "3. If .gemini/ appears, it's tracked. Remove from git:"
+echo "   git rm -r --cached .gemini/"
+echo "4. Rotate all exposed API keys immediately"
+echo "5. Add keys to environment variables"
+

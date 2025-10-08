@@ -1,0 +1,32 @@
+diff --git a/src/app/[locale]/(main)/kartlar/[slug]/page.tsx b/src/app/[locale]/(main)/kartlar/[slug]/page.tsx
+index abcdefg..xyz9876 100644
+--- a/src/app/[locale]/(main)/kartlar/[slug]/page.tsx
++++ b/src/app/[locale]/(main)/kartlar/[slug]/page.tsx
+@@ -1,6 +1,7 @@
+ import { notFound } from 'next/navigation';
+ import CardPage from '@/features/tarot-cards/components/CardPage';
+ import { CardData } from '@/features/tarot-cards/lib/card-data';
+ import { CardSEO } from '@/features/tarot-cards/lib/card-seo';
+ import BottomNavigation from '@/features/shared/layout/BottomNavigation';
+ import Footer from '@/features/shared/layout/Footer';
+ import { getTranslations } from 'next-intl/server';
++import { logger } from '@/lib/logger';
+ 
+ interface PageProps {
+@@ -128,6 +129,7 @@ export async function generateMetadata({ params }: PageProps) {
+       locale as 'tr' | 'en' | 'sr'
+     );
+   } catch (error) {
++    logger.error('Error generating metadata for kartlar route', error);
+     return {
+       title: t('notFound'),
+       description: t('notFoundDescription'),
+@@ -156,7 +158,7 @@ export default async function CardPageRoute({ params }: PageProps) {
+     );
+   } catch (error) {
+-    console.error('Error loading card:', error);
++    logger.error('Error loading card from kartlar route', error);
+     notFound();
+   }
+ }
+

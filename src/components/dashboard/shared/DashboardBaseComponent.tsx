@@ -144,13 +144,16 @@ export function useDashboardBaseComponent({
       onStatsUpdate?.(newStats);
     } catch (err) {
       const errorMessage =
-        err instanceof Error ? err.message : 'İstatistikler yüklenemedi';
+        err instanceof Error
+          ? err.message
+          : t('dashboard.errors.statsLoadFailed', 'İstatistikler yüklenemedi');
+
       setError(errorMessage);
       showToast(errorMessage, 'error');
     } finally {
       setLoading(false);
     }
-  }, [user, onStatsUpdate, showToast]);
+  }, [user, onStatsUpdate, showToast, t]);
 
   // Filters handling
   const updateFilters = useCallback(
@@ -200,7 +203,13 @@ export function useDashboardBaseComponent({
       );
     } catch (err) {
       const errorMessage =
-        err instanceof Error ? err.message : 'Kredi bakiyesi yenilenemedi';
+        err instanceof Error
+          ? err.message
+          : t(
+              'dashboard.errors.creditRefreshFailed',
+              'Kredi bakiyesi yenilenemedi'
+            );
+
       showToast(errorMessage, 'error');
     }
   }, [user, showToast, t]);
@@ -260,9 +269,19 @@ export function useDashboardBaseComponent({
 
 // Export utility functions for common dashboard operations
 export const DashboardUtils = {
-  formatDate: (date: string | Date): string => {
+  /**
+   * Format date according to locale
+   * @param date - Date to format
+   * @param locale - Locale code (tr, en, sr)
+   */
+  formatDate: (date: string | Date, locale: string = 'tr'): string => {
     const d = new Date(date);
-    return d.toLocaleDateString('tr-TR', {
+    const localeMap: Record<string, string> = {
+      tr: 'tr-TR',
+      en: 'en-US',
+      sr: 'sr-RS',
+    };
+    return d.toLocaleDateString(localeMap[locale] || 'tr-TR', {
       year: 'numeric',
       month: 'long',
       day: 'numeric',
@@ -270,40 +289,57 @@ export const DashboardUtils = {
   },
 
   formatCreditBalance: (balance: number): string => {
+    // Number formatting is locale-agnostic
     return balance.toLocaleString('tr-TR');
   },
 
-  getMemberSince: (createdAt: string | Date): string => {
+  /**
+   * Get member since duration with i18n
+   * @param createdAt - User creation date
+   * @param t - Translation function
+   */
+  getMemberSince: (
+    createdAt: string | Date,
+    t: (_key: string) => string
+  ): string => {
     const created = new Date(createdAt);
     const now = new Date();
     const diffTime = Math.abs(now.getTime() - created.getTime());
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
     if (diffDays < 30) {
-      return `${diffDays} gün`;
+      return `${diffDays} ${t(diffDays === 1 ? 'dashboard.time.day' : 'dashboard.time.days')}`;
     } else if (diffDays < 365) {
       const months = Math.floor(diffDays / 30);
-      return `${months} ay`;
+      return `${months} ${t(months === 1 ? 'dashboard.time.month' : 'dashboard.time.months')}`;
     } else {
       const years = Math.floor(diffDays / 365);
-      return `${years} yıl`;
+      return `${years} ${t(years === 1 ? 'dashboard.time.year' : 'dashboard.time.years')}`;
     }
   },
 
-  getUserLevel: (totalReadings: number): string => {
+  /**
+   * Get user level based on reading count with i18n
+   * @param totalReadings - Total reading count
+   * @param t - Translation function
+   */
+  getUserLevel: (
+    totalReadings: number,
+    t: (_key: string) => string
+  ): string => {
     if (totalReadings >= 100) {
-      return 'Usta';
+      return t('dashboard.userLevels.master');
     }
     if (totalReadings >= 50) {
-      return 'Deneyimli';
+      return t('dashboard.userLevels.experienced');
     }
     if (totalReadings >= 20) {
-      return 'Orta';
+      return t('dashboard.userLevels.intermediate');
     }
     if (totalReadings >= 5) {
-      return 'Başlangıç';
+      return t('dashboard.userLevels.beginner');
     }
-    return 'Yeni';
+    return t('dashboard.userLevels.new');
   },
 
   getReadingTypeIcon: (type: string): string => {

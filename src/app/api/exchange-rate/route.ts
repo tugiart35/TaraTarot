@@ -167,7 +167,6 @@ export async function GET(request: NextRequest) {
     try {
       rate = await fetchTCMBExchangeRate();
     } catch (error) {
-      console.warn('TCMB API hatası, fallback kullanılıyor:', error);
       rate = getFallbackExchangeRate();
       source = 'Fallback';
     }
@@ -244,7 +243,6 @@ export async function POST(request: NextRequest) {
       try {
         rate = await fetchTCMBExchangeRate();
       } catch (error) {
-        console.warn('TCMB API hatası, fallback kullanılıyor:', error);
         rate = getFallbackExchangeRate();
         source = 'Fallback';
       }

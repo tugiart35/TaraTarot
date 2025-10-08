@@ -1,0 +1,23 @@
+diff --git a/src/app/[locale]/(main)/kartlar/page.tsx b/src/app/[locale]/(main)/kartlar/page.tsx
+index 1234567..abcdefg 100644
+--- a/src/app/[locale]/(main)/kartlar/page.tsx
++++ b/src/app/[locale]/(main)/kartlar/page.tsx
+@@ -52,11 +52,13 @@ export async function generateMetadata({
+       description:
+         descriptions[locale as keyof typeof descriptions] || descriptions.tr,
+     },
+     alternates: {
+-      canonical: `https://busbuskimki.com/${locale}/kartlar`,
++      canonical: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://busbuskimki.com'}/${locale}/kartlar`,
+       languages: {
+-        tr: 'https://busbuskimki.com/tr/kartlar',
+-        en: 'https://busbuskimki.com/en/cards',
+-        sr: 'https://busbuskimki.com/sr/kartice',
++        tr: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://busbuskimki.com'}/tr/kartlar`,
++        en: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://busbuskimki.com'}/en/cards`,
++        sr: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://busbuskimki.com'}/sr/kartice`,
+       },
+     },
+   };
+ }
+

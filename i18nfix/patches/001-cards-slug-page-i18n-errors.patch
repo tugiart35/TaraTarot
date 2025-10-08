@@ -1,0 +1,46 @@
+diff --git a/src/app/[locale]/(main)/cards/[slug]/page.tsx b/src/app/[locale]/(main)/cards/[slug]/page.tsx
+index 1234567..abcdefg 100644
+--- a/src/app/[locale]/(main)/cards/[slug]/page.tsx
++++ b/src/app/[locale]/(main)/cards/[slug]/page.tsx
+@@ -1,6 +1,7 @@
+ import { notFound } from 'next/navigation';
+ import CardPage from '@/features/tarot-cards/components/CardPage';
+ import { CardData } from '@/features/tarot-cards/lib/card-data';
+ import { CardSEO } from '@/features/tarot-cards/lib/card-seo';
+ import BottomNavigation from '@/features/shared/layout/BottomNavigation';
+ import Footer from '@/features/shared/layout/Footer';
++import { getTranslations } from 'next-intl/server';
+ 
+ interface PageProps {
+@@ -110,6 +111,7 @@ export async function generateStaticParams() {
+ 
+ export async function generateMetadata({ params }: PageProps) {
+   const { locale, slug } = await params;
++  const t = await getTranslations({ locale, namespace: 'cards.errors' });
+ 
+   try {
+     const cardData = await CardData.getCardBySlug(
+@@ -117,8 +119,8 @@ export async function generateMetadata({ params }: PageProps) {
+       locale as 'tr' | 'en' | 'sr'
+     );
+     if (!cardData) {
+       return {
+-        title: 'Kart Bulunamadı',
+-        description: 'Aradığınız tarot kartı bulunamadı.',
++        title: t('notFound'),
++        description: t('notFoundDescription'),
+       };
+     }
+ 
+@@ -130,8 +132,8 @@ export async function generateMetadata({ params }: PageProps) {
+     );
+   } catch (error) {
+     return {
+-      title: 'Kart Bulunamadı',
+-      description: 'Aradığınız tarot kartı bulunamadı.',
++      title: t('notFound'),
++      description: t('notFoundDescription'),
+     };
+   }
+ }
+

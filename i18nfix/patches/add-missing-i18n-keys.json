@@ -1,0 +1,46 @@
+{
+  "description": "DashboardContainer.tsx için eksik i18n anahtarları",
+  "targetFiles": ["messages/tr.json", "messages/en.json", "messages/sr.json"],
+  "keysToAdd": {
+    "dashboard.sections.welcome": {
+      "tr": "Hoş Geldiniz",
+      "en": "Welcome",
+      "sr": "Dobrodošli"
+    },
+    "dashboard.sections.statistics": {
+      "tr": "İstatistikler",
+      "en": "Statistics",
+      "sr": "Statistika"
+    },
+    "dashboard.sections.creditPackages": {
+      "tr": "Kredi Paketleri",
+      "en": "Credit Packages",
+      "sr": "Paketi kredita"
+    },
+    "dashboard.sections.profileManagement": {
+      "tr": "Profil Yönetimi",
+      "en": "Profile Management",
+      "sr": "Upravljanje profilom"
+    },
+    "dashboard.sections.recentActivity": {
+      "tr": "Son Aktiviteler",
+      "en": "Recent Activity",
+      "sr": "Nedavne aktivnosti"
+    },
+    "dashboard.errors.loadError": {
+      "tr": "Dashboard bileşenleri yüklenirken bir hata oluştu.",
+      "en": "An error occurred while loading dashboard components.",
+      "sr": "Došlo je do greške prilikom učitavanja dashboard komponenti."
+    }
+  },
+  "instructions": {
+    "manual": [
+      "1. Her dil dosyasını aç (tr.json, en.json, sr.json)",
+      "2. 'dashboard' object'i içinde 'sections' ve 'errors' object'lerini ekle",
+      "3. Yukarıdaki anahtarları ilgili dil dosyasına ekle",
+      "4. JSON formatının bozulmadığından emin ol"
+    ],
+    "automated": "npm run i18n:add-simple -- --file=i18nfix/patches/add-missing-i18n-keys.json"
+  }
+}
+

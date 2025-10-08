@@ -1,0 +1,29 @@
+--- a/messages/tr.json
++++ b/messages/tr.json
+@@ -1,4 +1,24 @@
+ {
++  "dashboard": {
++    "errors": {
++      "statsLoadFailed": "İstatistikler yüklenemedi",
++      "creditRefreshFailed": "Kredi bakiyesi yenilenemedi"
++    },
++    "creditBalanceRefreshed": "Kredi bakiyesi yenilendi",
++    "time": {
++      "day": "gün",
++      "days": "gün",
++      "month": "ay",
++      "months": "ay",
++      "year": "yıl",
++      "years": "yıl"
++    },
++    "userLevels": {
++      "master": "Usta",
++      "experienced": "Deneyimli",
++      "intermediate": "Orta",
++      "beginner": "Başlangıç",
++      "new": "Yeni"
++    }
++  },
+   "auth": {
+     "page": {
+

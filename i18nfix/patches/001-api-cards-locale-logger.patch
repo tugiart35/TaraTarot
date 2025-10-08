@@ -1,0 +1,26 @@
+diff --git a/src/app/api/cards/[locale]/route.ts b/src/app/api/cards/[locale]/route.ts
+index 1234567..abcdefg 100644
+--- a/src/app/api/cards/[locale]/route.ts
++++ b/src/app/api/cards/[locale]/route.ts
+@@ -1,5 +1,6 @@
+ import { NextRequest, NextResponse } from 'next/server';
+ import { CardData } from '@/features/tarot-cards/lib/card-data';
++import { logger } from '@/lib/logger';
+ 
+ export async function GET(
+   request: NextRequest,
+@@ -115,7 +116,13 @@ export async function GET(
+       { status: 200 }
+     );
+   } catch (error) {
+-    console.error('Error in GET /api/cards/[locale]:', error);
++    const { locale } = await params;
++    logger.error('API error in cards list endpoint', error, {
++      action: 'GET /api/cards/[locale]',
++      resource: locale,
++      queryParams: { arcanaType, suit, limit, offset }
++    });
+ 
+     return NextResponse.json(
+       {
+

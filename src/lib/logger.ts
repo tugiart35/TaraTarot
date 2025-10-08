@@ -203,3 +203,6 @@ export const logSupabaseError = (
   error: unknown,
   context?: LogContext
 ) => logger.supabaseError(operation, error, context);
+
+// Re-export for TypeScript module resolution
+export type { LogContext };

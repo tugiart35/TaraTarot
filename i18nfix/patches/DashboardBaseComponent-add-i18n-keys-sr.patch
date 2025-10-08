@@ -1,0 +1,29 @@
+--- a/messages/sr.json
++++ b/messages/sr.json
+@@ -1,4 +1,24 @@
+ {
++  "dashboard": {
++    "errors": {
++      "statsLoadFailed": "Nije moguće učitati statistiku",
++      "creditRefreshFailed": "Nije moguće osvežiti kreditni saldo"
++    },
++    "creditBalanceRefreshed": "Kreditni saldo je osvežen",
++    "time": {
++      "day": "dan",
++      "days": "dana",
++      "month": "mesec",
++      "months": "meseca",
++      "year": "godina",
++      "years": "godine"
++    },
++    "userLevels": {
++      "master": "Majstor",
++      "experienced": "Iskusan",
++      "intermediate": "Srednji",
++      "beginner": "Početnik",
++      "new": "Novi"
++    }
++  },
+   "auth": {
+     "page": {
+

@@ -1,0 +1,543 @@
+---
+alwaysApply: true
+---
+## 🚨 KRİTİK SORUNLAR (DEPLOYMENT BLOCKER)
+
+### 1. 🔴 API Key Sızıntısı (.gemini/ dizini)
+
+**Tehlike Seviyesi:** CRITICAL 🔴  
+**Etki:** Tüm sistem güvenliği risk altında  
+**Deployment:** ⛔ BLOKE EDİCİ
+
+**Sorun:**
+```
+.gemini/settings.json - GEMINI_API_KEY plaintext
+.gemini/GEMINI.md - GEMINI_API_KEY plaintext
+```
+
+**Tespit Edilen Key:**
+```
+GEMINI_API_KEY=AIzaSyAgjVO0rAe1DishHl4KGRxpiQBDaHomhPs
+```
+
+**Risk:**
+- ❌ `.gemini/` dizini `.gitignore`'da YOK
+- ❌ Git repository'de saklanıyor
+- ❌ Public olması durumunda tam sistem hacki riski
+- ❌ Mali kayıp riski (unlimited API kullanımı)
+
+**✅ ÇÖZÜM:**
+```bash
+# Acil aksiyonlar:
+1. APPLY=true ./deploy-audit/patches/APPLY.sh 001
+2. rm -rf .gemini/
+3. git rm -r --cached .gemini/ (eğer tracked ise)
+4. GEMINI_API_KEY'i Google Cloud Console'dan HEMEN yenile
+5. Yeni key'i environment variables'a ekle
+```
+
+**Patch:** `deploy-audit/patches/001-gitignore-security-fix.patch`
+
+---
+
+### 2. 🟡 Environment Variables Eksiklikleri
+
+**Tehlike Seviyesi:** HIGH 🟡  
+**Etki:** Runtime hatalar, feature'lar çalışmaz  
+**Deployment:** ⚠️ KOŞULLU BLOKE
+
+**Eksik Variables:**
+```bash
+GROQ_API_KEY=                    # ❌ AI yorumları için kritik
+GEMINI_API_KEY=                  # ❌ Alternative AI
+SHOPIER_WEBHOOK_SECRET=          # ❌ Payment security
+ENCRYPTION_KEY=                  # ❌ Data encryption
+SMTP_FROM_NAME=                  # ❌ Email sender
+```
+
+**Etki:**
+- AI tarot yorumları çalışmaz
+- Payment webhook'ları güvensiz
+- Email'ler "unknown" gönderici ile gider
+- Hassas data şifrelenmez
+
+**✅ ÇÖZÜM:**
+```bash
+# Patch'i uygula:
+APPLY=true ./deploy-audit/patches/APPLY.sh 002
+
+# .env.local'ı güncelle:
+cp env.example .env.local
+nano .env.local  # Gerekli key'leri ekle
+```
+
+**Patch:** `deploy-audit/patches/002-env-example-update.patch`
+
+---
+
+### 3. 🟡 Environment Validation Eksik
+
+**Tehlike Seviyesi:** MEDIUM-HIGH 🟡  
+**Etki:** Silent failures, debug zorluğu  
+**Deployment:** ⚠️ ÖNERİLEN
+
+**Sorun:**
+```typescript
+// Mevcut durum:
+const apiKey = process.env.GROQ_API_KEY;
+// Hiçbir validation yok, undefined olabilir
+```
+
+**Risk:**
+- Runtime'da undefined variables
+- Silent failures
+- Production'da debug zorluğu
+- Hatalı configuration tespiti geç
+
+**✅ ÇÖZÜM:**
+```bash
+# Validator'ı ekle:
+APPLY=true ./deploy-audit/patches/APPLY.sh 003
+
+# next.config.js'e ekle:
+const { validateEnv } = require('./src/lib/env-validator');
+validateEnv();
+```
+
+**Patch:** `deploy-audit/patches/003-env-validator.patch`
+
+---
+
+## 📋 DEPLOYMENT ÖNCESİ CHECKLIST
+
+### 🔴 KRİTİK (Mutlaka Yapılmalı)
+
+- [ ] **.gemini/ dizinini sil ve .gitignore'a ekle**
+  - Patch 001'i uygula
+  - `rm -rf .gemini/`
+  - Git history temizliği yap
+  - GEMINI_API_KEY'i yenile
+
+- [ ] **Tüm API key'leri environment variables'a taşı**
+  - GROQ_API_KEY ekle
+  - GEMINI_API_KEY ekle (yeni key)
+  - SHOPIER secrets ekle
+
+- [ ] **env.example'ı güncelle**
+  - Patch 002'yi uygula
+  - Eksik değişkenleri dokümante et
+
+### 🟡 ÖNEMLİ (Şiddetle Tavsiye Edilir)
+
+- [ ] **Environment validator ekle**
+  - Patch 003'ü uygula
+  - next.config.js'e validation ekle
+  - Startup'ta test et
+
+- [ ] **Production environment'ı hazırla**
+  - Vercel/AWS'de env variables tanımla
+  - NODE_ENV=production set et
+  - SHOPIER_TEST_MODE=false yap
+
+- [ ] **Git güvenliğini sağla**
+  - .env* dosyalarının .gitignore'da olduğunu doğrula
+  - Git history'de secret araması yap
+  - Pre-commit hook ekle
+
+### 🟢 TAVSİYE EDİLEN (Production Quality)
+
+- [ ] **Console.log'ları temizle**
+  - Hassas bilgi içeren logları kaldır
+  - Logger sistemine geç
+  - ESLint no-console kuralını aktif et
+
+- [ ] **Test suite'i düzelt**
+  - TypeScript test hatalarını düzelt
+  - Component interface'leri güncelle
+  - CI/CD'yi yapılandır
+
+- [ ] **i18n'i tamamla**
+  - SR translation'ları kontrol et
+  - Hardcoded string'leri temizle
+  - Date/number formatting standardize et
+
+---
+
+## 🚀 DEPLOYMENT ADIM ADIM
+
+### Adım 1: Güvenlik Patch'lerini Uygula (30dk)
+
+```bash
+# Repository'e git
+cd /Users/tugi/Desktop/TaraTarot
+
+# Backup oluştur
+git add -A
+git commit -m "Backup before security patches"
+
+# Patch'leri uygula
+APPLY=true ./deploy-audit/patches/APPLY.sh all
+
+# Doğrula
+git diff
+npm run typecheck
+npm run build
+```
+
+### Adım 2: .gemini/ Temizliği (15dk)
+
+```bash
+# Dizini sil
+rm -rf .gemini/
+
+# Git'ten kaldır (tracked ise)
+git rm -r --cached .gemini/ || true
+
+# Git history temizliği (DİKKAT: Destructive!)
+# git filter-repo --path .gemini --invert-paths --force
+
+# Google Cloud Console'a git
+# 1. Mevcut GEMINI_API_KEY'i disable et
+# 2. Yeni key oluştur
+# 3. Yeni key'i .env.local'a ekle
+```
+
+### Adım 3: Environment Variables (20dk)
+
+```bash
+# .env.local oluştur/güncelle
+cp env.example .env.local
+
+# Gerekli key'leri ekle:
+nano .env.local
+
+# En az bunlar olmalı:
+# - NEXT_PUBLIC_SUPABASE_URL
+# - NEXT_PUBLIC_SUPABASE_ANON_KEY
+# - SUPABASE_SERVICE_ROLE_KEY (server-side)
+# - GROQ_API_KEY veya GEMINI_API_KEY
+# - SHOPIER_* (payment için)
+# - SMTP_* (email için)
+```
+
+### Adım 4: Test (15dk)
+
+```bash
+# Type check
+npm run typecheck
+
+# Build test
+npm run build
+
+# Development test
+npm run dev
+
+# Her locale'i test et:
+# - http://localhost:3111/tr
+# - http://localhost:3111/en
+# - http://localhost:3111/sr
+
+# Kritik flow'ları test et:
+# - Login/Signup
+# - Tarot reading
+# - Payment (test mode)
+# - Email sending
+```
+
+### Adım 5: Production Deployment (30dk)
+
+#### Vercel Deployment:
+
+```bash
+# Vercel CLI install (yoksa)
+npm i -g vercel
+
+# Environment variables ekle
+vercel env add GROQ_API_KEY production
+vercel env add GEMINI_API_KEY production
+vercel env add NEXT_PUBLIC_SUPABASE_URL production
+# ... diğerleri
+
+# Deploy
+vercel --prod
+
+# Verify
+# - Site açılıyor mu?
+# - API'ler çalışıyor mu?
+# - AI yorumları geliyor mu?
+# - Payment flow çalışıyor mu?
+```
+
+#### Manuel Deployment:
+
+```bash
+# Build
+npm run build
+
+# Build çıktısını kontrol et
+ls -la .next/
+
+# Production server'a deploy et
+# (Platform'a göre değişir)
+```
+
+### Adım 6: Post-Deployment Monitoring (Sürekli)
+
+```bash
+# Production logs
+vercel logs --follow
+
+# Error monitoring
+# - Sentry kurulu ise dashboard kontrol et
+# - Browser console'da error var mı?
+
+# Performance
+# - Vercel Analytics kontrol et
+# - Core Web Vitals ölç
+
+# Functional test
+# - Her major feature'ı test et
+# - Farklı browser'larda test et
+# - Mobile'da test et
+```
+
+---
+
+## 📊 DETAYLI RAPORLAR
+
+Daha fazla bilgi için alt raporlara bakın:
+
+1. **[deploy-audit/01-CRITICAL-SECURITY.md](deploy-audit/01-CRITICAL-SECURITY.md)**
+   - API key sızıntısı detayları
+   - Service role key kullanımı
+   - SMTP security
+   - Güvenlik skorlaması
+
+2. **[deploy-audit/02-TYPESCRIPT-ERRORS.md](deploy-audit/02-TYPESCRIPT-ERRORS.md)**
+   - 43 TypeScript hatası (sadece test'lerde)
+   - Component interface sorunları
+   - Type safety iyileştirmeleri
+
+3. **[deploy-audit/03-CONSOLE-LOGS.md](deploy-audit/03-CONSOLE-LOGS.md)**
+   - 560 console statement
+   - 105 etkilenen dosya
+   - Otomatik temizleme stratejisi
+   - Logger sistemi önerileri
+
+4. **[deploy-audit/04-ENVIRONMENT-CONFIG.md](deploy-audit/04-ENVIRONMENT-CONFIG.md)**
+   - Eksik env variables
+   - Validation stratejisi
+   - Secrets management
+   - Environment-specific configs
+
+5. **[deploy-audit/05-I18N-COMPLETENESS.md](deploy-audit/05-I18N-COMPLETENESS.md)**
+   - 3 dil desteği (TR, EN, SR)
+   - Translation completeness
+   - Hardcoded string'ler
+   - i18n best practices
+
+---
+
+## 🔧 PATCH UYGULAMA
+
+### Tüm Patch'leri Uygula:
+
+```bash
+cd /Users/tugi/Desktop/TaraTarot
+APPLY=true ./deploy-audit/patches/APPLY.sh all
+```
+
+### Tek Tek Uygula:
+
+```bash
+# Patch 001: .gitignore security fix
+APPLY=true ./deploy-audit/patches/APPLY.sh 001
+
+# Patch 002: env.example update
+APPLY=true ./deploy-audit/patches/APPLY.sh 002
+
+# Patch 003: Environment validator
+APPLY=true ./deploy-audit/patches/APPLY.sh 003
+```
+
+### Rollback:
+
+```bash
+# Patch uygulama öncesi otomatik backup alınır
+git stash list  # Backup'ları göster
+git stash pop   # Son backup'ı geri yükle
+```
+
+---
+
+## ⚠️ DEPLOYMENT UYARILARI
+
+### 🔴 ASLA YAPMAYIN:
+
+1. ❌ `.gemini/` dizinini commit etmeyin
+2. ❌ `.env` dosyalarını commit etmeyin
+3. ❌ API key'leri kod içine hardcode etmeyin
+4. ❌ Service role key'i client-side'da kullanmayın
+5. ❌ Test mode ile production deployment yapmayın
+6. ❌ Console.log'larda hassas bilgi loglamayın
+7. ❌ Git history temizliği yapmadan force push yapmayın
+
+### 🟡 DİKKATLİ OLUN:
+
+1. ⚠️ SUPABASE_SERVICE_ROLE_KEY sadece server-side
+2. ⚠️ SHOPIER_TEST_MODE production'da false olmalı
+3. ⚠️ NODE_ENV production'da "production" olmalı
+4. ⚠️ SMTP credentials encrypted mı kontrol edin
+5. ⚠️ Webhook secret'ları 32+ karakter olmalı
+6. ⚠️ Rate limiting production'da aktif olmalı
+
+### 🟢 BEST PRACTICES:
+
+1. ✅ Secrets manager kullanın (Vercel Env, AWS Secrets)
+2. ✅ Environment-specific config kullanın
+3. ✅ API key rotation policy belirleyin (90 gün)
+4. ✅ Monitoring ve alerting kurun (Sentry, Vercel)
+5. ✅ Backup stratejiniz olsun
+6. ✅ Rollback planınız olsun
+7. ✅ Staging environment kullanın
+
+---
+
+## 📈 DEPLOYMENT SONRASI
+
+### İlk 24 Saat:
+
+- [ ] **Monitoring**
+  - Error rate izle
+  - Response time'ları kontrol et
+  - API usage'ı izle
+  - User feedback topla
+
+- [ ] **Quick Fixes**
+  - Critical bug'lar için hotfix hazırla
+  - Performance sorunlarını tespit et
+  - Security scan yap
+
+- [ ] **Validation**
+  - Tüm feature'lar çalışıyor mu?
+  - Payment flow sorunsuz mu?
+  - Email'ler gidiyor mu?
+  - AI yorumları geliyor mu?
+
+### İlk Hafta:
+
+- [ ] **Performance Optimization**
+  - Bundle size optimize et
+  - Image loading optimize et
+  - API response time'ları iyileştir
+
+- [ ] **Security Hardening**
+  - SSL/TLS kontrol et
+  - CORS politikaları gözden geçir
+  - Rate limiting tune et
+  - Firewall kuralları optimize et
+
+- [ ] **User Experience**
+  - Analytics verilerini analiz et
+  - A/B test başlat
+  - SEO kontrolü yap
+  - Mobile experience test et
+
+---
+
+## 🎯 BAŞARI KRİTERLERİ
+
+Deployment başarılı sayılır eğer:
+
+✅ **Güvenlik:**
+- API key sızıntısı yok
+- Tüm secrets güvende
+- HTTPS aktif
+- Security headers mevcut
+
+✅ **Fonksiyonellik:**
+- Tüm sayfalar açılıyor
+- Auth flow çalışıyor
+- Payment işliyor
+- AI yorumları geliyor
+- Email gönderimi çalışıyor
+
+✅ **Performance:**
+- Lighthouse score >90
+- First paint <1.5s
+- Time to interactive <3s
+- No console errors
+
+✅ **Monitoring:**
+- Error tracking aktif
+- Analytics çalışıyor
+- Logs akıyor
+- Alerts kurulu
+
+---
+
+## 📞 DESTEK VE KAYNAKLAR
+
+### Deployment Desteği:
+
+- **Vercel Docs:** https://vercel.com/docs
+- **Next.js Docs:** https://nextjs.org/docs
+- **Supabase Docs:** https://supabase.com/docs
+
+### Güvenlik:
+
+- **OWASP Top 10:** https://owasp.org/www-project-top-ten/
+- **Security Headers:** https://securityheaders.com/
+
+### Monitoring:
+
+- **Sentry:** https://sentry.io/
+- **Vercel Analytics:** https://vercel.com/analytics
+- **Google Analytics:** https://analytics.google.com/
+
+---
+
+## 🏁 SONUÇ
+
+### Mevcut Durum: ⚠️ KOŞULLU HAZIR
+
+**Production deployment için:**
+
+1. ✅ **Hemen:** Patch 001, 002, 003'ü uygula (1 saat)
+2. ✅ **Hemen:** .gemini/ temizle ve key yenile (30dk)
+3. ⚠️ **Önemli:** Production env variables ayarla (30dk)
+4. ⚠️ **Önerilen:** Test suite düzelt (2 saat)
+5. 💡 **Nice-to-have:** Console.log temizle (4 saat)
+
+**Toplam minimum süre:** 2 saat  
+**Production-ready olma süresi:** 2 saat
+
+**Tahmini deployment tarihi:** Patch'ler uygulandıktan 2 saat sonra
+
+---
+
+## ✅ FİNAL ONAY
+
+Aşağıdaki checklist'i tamamladıysanız **DEPLOYMENT HAZIRSINIZ:**
+
+- [ ] Patch 001 uygulandı (.gitignore security)
+- [ ] Patch 002 uygulandı (env.example update)
+- [ ] Patch 003 uygulandı (env validator)
+- [ ] .gemini/ silindi ve git'ten kaldırıldı
+- [ ] GEMINI_API_KEY yenilendi
+- [ ] Production env variables ayarlandı
+- [ ] `npm run build` başarılı
+- [ ] `npm run typecheck` başarılı (test hataları ok)
+- [ ] Local test geçti
+- [ ] Backup alındı
+
+**Onay:** ✅ DEPLOYMENT'A HAZIRIZ
+
+**İmza:** _____________________  
+**Tarih:** _____________________
+
+---
+
+**🚀 İyi Deployment'lar!**
+
+*Bu rapor otomatik olarak oluşturulmuştur. Lütfen deployment öncesi manuel olarak doğrulayın.*

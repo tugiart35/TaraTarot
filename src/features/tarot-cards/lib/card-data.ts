@@ -1,6 +1,7 @@
 // src/features/tarot-cards/lib/card-data.ts
 import { BlogCardService } from '@/lib/data/blog-card-service';
 import { CardPageData } from '@/types/tarot-cards';
+import { logger } from '@/lib/logger';
 
 export class CardData {
   // Get complete card data by slug and locale
@@ -36,7 +37,7 @@ export class CardData {
       // Use the createCardPageDataFromBlogCard helper method
       return this.createCardPageDataFromBlogCard(card, slug, locale);
     } catch (error) {
-      console.error('Error in getCardBySlug:', error);
+      logger.error('Error in getCardBySlug', error);
       // Return basic card data even on error
       return this.createBasicCardData(slug, locale);
     }
@@ -1238,7 +1239,7 @@ export class CardData {
         total: cards.length,
       };
     } catch (error) {
-      console.error('Error in getCardsByLocale:', error);
+      logger.error('Error in getCardsByLocale', error);
       return { cards: [], total: 0 };
     }
   }
@@ -1252,7 +1253,7 @@ export class CardData {
     try {
       return BlogCardService.getRelatedCards(cardId, limit);
     } catch (error) {
-      console.error('Error in getRelatedCards:', error);
+      logger.error('Error in getRelatedCards', error);
       return [];
     }
   }
@@ -1262,7 +1263,7 @@ export class CardData {
     try {
       return await this.getCardBySlug(slug, locale);
     } catch (error) {
-      console.error('Error in getCardPage:', error);
+      logger.error('Error in getCardPage', error);
       return null;
     }
   }
@@ -1306,7 +1307,7 @@ export class CardData {
 
       return true;
     } catch (error) {
-      console.error('Error validating card data:', error);
+      logger.error('Error validating card data', error);
       return false;
     }
   }

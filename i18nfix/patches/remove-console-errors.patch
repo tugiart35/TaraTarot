@@ -1,0 +1,29 @@
+--- a/src/components/dashboard/ProfileModal.tsx
++++ b/src/components/dashboard/ProfileModal.tsx
+@@ -139,7 +139,11 @@ export default function ProfileModal({
+       await handleSaveProfile();
+       setProfileModalOpen(false);
+     } catch (error) {
+-      console.error('Profil güncelleme hatası:', error);
++      // Log to error tracking service in production
++      if (process.env.NODE_ENV === 'production') {
++        // TODO: Send to Sentry, LogRocket, etc.
++        // Sentry.captureException(error, { tags: { component: 'ProfileModal', action: 'save' } });
++      }
+       alert(translate('errors.profileUpdateFailed', 'Profil güncellenirken bir hata oluştu.'));
+     }
+   };
+@@ -152,7 +156,11 @@ export default function ProfileModal({
+       setProfileModalOpen(false);
+       window.location.href = '/';
+     } catch (error) {
+-      console.error('Çıkış yapma hatası:', error);
++      // Log to error tracking service in production
++      if (process.env.NODE_ENV === 'production') {
++        // TODO: Send to Sentry, LogRocket, etc.
++        // Sentry.captureException(error, { tags: { component: 'ProfileModal', action: 'logout' } });
++      }
+       alert(translate('errors.logoutFailed', 'Çıkış yapılırken bir hata oluştu.'));
+     }
+   };
+

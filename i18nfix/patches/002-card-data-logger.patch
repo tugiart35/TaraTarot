@@ -1,0 +1,91 @@
+diff --git a/src/lib/logger.ts b/src/lib/logger.ts
+new file mode 100644
+index 0000000..1234567
+--- /dev/null
++++ b/src/lib/logger.ts
+@@ -0,0 +1,25 @@
++/**
++ * Guarded Logger Utility
++ * Prevents console pollution in production while maintaining debug capability
++ */
++
++type LogLevel = 'info' | 'warn' | 'error' | 'debug';
++
++const isDevelopment = process.env.NODE_ENV === 'development';
++
++export const logger = {
++  info: (message: string, ...args: any[]) => {
++    if (isDevelopment) console.info(`[INFO] ${message}`, ...args);
++  },
++  
++  warn: (message: string, ...args: any[]) => {
++    if (isDevelopment) console.warn(`[WARN] ${message}`, ...args);
++  },
++  
++  error: (message: string, error?: any) => {
++    if (isDevelopment) console.error(`[ERROR] ${message}`, error);
++    // TODO: In production, send to monitoring service (Sentry, LogRocket, etc.)
++  },
++  
++  debug: (message: string, ...args: any[]) => {
++    if (isDevelopment && process.env.DEBUG) console.debug(`[DEBUG] ${message}`, ...args);
++  },
++};
+diff --git a/src/features/tarot-cards/lib/card-data.ts b/src/features/tarot-cards/lib/card-data.ts
+index 1234567..abcdefg 100644
+--- a/src/features/tarot-cards/lib/card-data.ts
++++ b/src/features/tarot-cards/lib/card-data.ts
+@@ -1,6 +1,7 @@
+ // src/features/tarot-cards/lib/card-data.ts
+ import { BlogCardService } from '@/lib/data/blog-card-service';
+ import { CardPageData } from '@/types/tarot-cards';
++import { logger } from '@/lib/logger';
+ 
+ export class CardData {
+   // Get complete card data by slug and locale
+@@ -36,7 +37,7 @@ export class CardData {
+       // Use the createCardPageDataFromBlogCard helper method
+       return this.createCardPageDataFromBlogCard(card, slug, locale);
+     } catch (error) {
+-      console.error('Error in getCardBySlug:', error);
++      logger.error('Error in getCardBySlug', error);
+       // Return basic card data even on error
+       return this.createBasicCardData(slug, locale);
+     }
+@@ -1238,7 +1239,7 @@ export class CardData {
+         total: cards.length,
+       };
+     } catch (error) {
+-      console.error('Error in getCardsByLocale:', error);
++      logger.error('Error in getCardsByLocale', error);
+       return { cards: [], total: 0 };
+     }
+   }
+@@ -1252,7 +1253,7 @@ export class CardData {
+     try {
+       return BlogCardService.getRelatedCards(cardId, limit);
+     } catch (error) {
+-      console.error('Error in getRelatedCards:', error);
++      logger.error('Error in getRelatedCards', error);
+       return [];
+     }
+   }
+@@ -1263,7 +1264,7 @@ export class CardData {
+     try {
+       return await this.getCardBySlug(slug, locale);
+     } catch (error) {
+-      console.error('Error in getCardPage:', error);
++      logger.error('Error in getCardPage', error);
+       return null;
+     }
+   }
+@@ -1307,7 +1308,7 @@ export class CardData {
+ 
+       return true;
+     } catch (error) {
+-      console.error('Error validating card data:', error);
++      logger.error('Error validating card data', error);
+       return false;
+     }
+   }
+

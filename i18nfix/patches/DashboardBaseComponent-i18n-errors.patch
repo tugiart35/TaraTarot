@@ -1,0 +1,27 @@
+--- a/src/components/dashboard/shared/DashboardBaseComponent.tsx
++++ b/src/components/dashboard/shared/DashboardBaseComponent.tsx
+@@ -144,7 +144,10 @@ export function useDashboardBaseComponent({
+       onStatsUpdate?.(newStats);
+     } catch (err) {
+       const errorMessage =
+-        err instanceof Error ? err.message : 'İstatistikler yüklenemedi';
++        err instanceof Error
++          ? err.message
++          : t('dashboard.errors.statsLoadFailed', 'İstatistikler yüklenemedi');
++
+       setError(errorMessage);
+       showToast(errorMessage, 'error');
+     } finally {
+@@ -200,7 +203,10 @@ export function useDashboardBaseComponent({
+       );
+     } catch (err) {
+       const errorMessage =
+-        err instanceof Error ? err.message : 'Kredi bakiyesi yenilenemedi';
++        err instanceof Error
++          ? err.message
++          : t('dashboard.errors.creditRefreshFailed', 'Kredi bakiyesi yenilenemedi');
++
+       showToast(errorMessage, 'error');
+     }
+   }, [user, showToast, t]);
+
