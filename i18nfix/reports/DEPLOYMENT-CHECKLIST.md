@@ -11,41 +11,47 @@
 ### 🔴 P0 - BLOCKER (Must Fix Before Deploy)
 
 - [ ] **SMTP Logging Removal**
+
   ```bash
   git apply i18nfix/patches/remove-smtp-logging.patch
   npm run build | grep -i "smtp"  # Should be empty
   ```
+
   **Status:** 🔴 CRITICAL  
   **Impact:** Security - Credentials exposed in build logs  
   **ETA:** 5 minutes
 
 - [ ] **xlsx Vulnerability Fix**
+
   ```bash
   # Option 1: Update (if compatible)
   npm update xlsx
-  
+
   # Option 2: Replace with exceljs
   npm uninstall xlsx
   npm install exceljs
   # Update import statements in admin components
   ```
+
   **Status:** 🔴 HIGH  
   **Impact:** Security - Prototype Pollution (CVSS 7.8)  
   **ETA:** 30 minutes
 
 - [ ] **i18n Hardcoded Strings**
+
   ```bash
   # Apply patch
   git apply i18nfix/patches/dashboardcontainer-i18n.patch
-  
+
   # Add missing keys to translation files
   # Method 1: Manual (recommended)
   # - Edit messages/tr.json, en.json, sr.json
   # - Add keys from add-missing-i18n-keys.json
-  
+
   # Method 2: Automated (if script exists)
   npm run i18n:add-simple -- --file=i18nfix/patches/add-missing-i18n-keys.json
   ```
+
   **Status:** 🔴 MEDIUM  
   **Impact:** i18n completeness - 6 strings not translated  
   **ETA:** 15 minutes
@@ -55,33 +61,39 @@
 ### 🟡 P1 - HIGH (Fix Within 1 Week Post-Deploy)
 
 - [ ] **nodemailer Update**
+
   ```bash
   npm update nodemailer
   npm audit fix
   ```
+
   **Status:** 🟡 MODERATE  
   **Impact:** Security - Email domain interpretation  
   **ETA:** 5 minutes
 
 - [ ] **Console Errors Removal**
+
   ```bash
   git apply i18nfix/patches/remove-console-errors.patch
   ```
+
   **Status:** 🟡 LOW  
   **Impact:** Code quality - 2 console.error statements  
   **ETA:** 5 minutes
 
 - [ ] **Error Tracking Setup**
+
   ```bash
   # Install Sentry
   npm install @sentry/nextjs
-  
+
   # Initialize
   npx @sentry/wizard@latest -i nextjs
-  
+
   # Configure environment
   echo "NEXT_PUBLIC_SENTRY_DSN=your-dsn" >> .env
   ```
+
   **Status:** 🟡 HIGH  
   **Impact:** Observability - No error tracking in production  
   **ETA:** 1 hour
@@ -94,7 +106,7 @@
   - Fix BottomNavigation.test.tsx
   - Fix useAuth.test.ts gender type
   - Fix auth-validation.test.ts undefined checks
-  
+
   **Status:** 🟢 LOW  
   **Impact:** CI/CD - Tests not passing (non-blocking)  
   **ETA:** 2 hours
@@ -114,6 +126,7 @@
 ## 🧪 Verification Steps
 
 ### Step 1: Code Quality Checks
+
 ```bash
 # TypeScript
 npm run typecheck
@@ -129,6 +142,7 @@ npm run build
 ```
 
 ### Step 2: Security Audit
+
 ```bash
 # Dependency scan
 npm audit --production
@@ -140,6 +154,7 @@ npm run build 2>&1 | grep -E "(password|secret|key|token)" -i
 ```
 
 ### Step 3: i18n Verification
+
 ```bash
 # Run i18n checker (if available)
 npm run i18n:check
@@ -150,6 +165,7 @@ grep -r "className='sr-only'" src/components/dashboard/DashboardContainer.tsx
 ```
 
 ### Step 4: Build Output Analysis
+
 ```bash
 # Check bundle sizes
 npm run build | grep "dashboard"
@@ -167,6 +183,7 @@ ls -la .next/server/app/*/dashboard.html
 ### Environment Setup
 
 **Vercel Dashboard:**
+
 1. Navigate to Project → Settings → Environment Variables
 2. Verify all required variables are set:
    ```
@@ -187,6 +204,7 @@ ls -la .next/server/app/*/dashboard.html
 ### Database Migrations
 
 **Supabase Dashboard:**
+
 1. Navigate to SQL Editor
 2. Verify migrations applied:
    ```sql
@@ -194,8 +212,8 @@ ls -la .next/server/app/*/dashboard.html
    ```
 3. Confirm RLS policies active:
    ```sql
-   SELECT schemaname, tablename, policyname 
-   FROM pg_policies 
+   SELECT schemaname, tablename, policyname
+   FROM pg_policies
    WHERE schemaname = 'public';
    ```
 
@@ -230,18 +248,21 @@ git push origin v1.0.0
 ### Immediate (First 15 minutes)
 
 - [ ] **Homepage loads** → https://yourdomain.com
+
   ```bash
   curl -I https://yourdomain.com
   # Expected: 200 OK
   ```
 
 - [ ] **Dashboard accessible** → https://yourdomain.com/tr/dashboard
+
   ```bash
   curl -I https://yourdomain.com/tr/dashboard
   # Expected: 200 OK or 302 (redirect to auth)
   ```
 
 - [ ] **API endpoints working**
+
   ```bash
   curl https://yourdomain.com/api/cards/tr | jq '.success'
   # Expected: true
@@ -256,7 +277,6 @@ git push origin v1.0.0
 
 - [ ] **Error rate** < 1%
   - Vercel Dashboard → Analytics → Errors
-  
 - [ ] **Response time** < 2s
   - Vercel Dashboard → Analytics → Performance
 
@@ -288,6 +308,7 @@ git push origin v1.0.0
 ### Scenario 1: Critical Error (5xx, crashes)
 
 **Action:** Immediate rollback
+
 ```bash
 # Via Vercel Dashboard
 # Deployments → Previous → Promote to Production
@@ -297,9 +318,10 @@ vercel rollback [PREVIOUS_DEPLOYMENT_URL] --prod
 ```
 
 **Communication:**
+
 ```
 Subject: [URGENT] Deployment Rollback - Dashboard
-Body: 
+Body:
 - Issue: [Description]
 - Action: Rolled back to [PREVIOUS_VERSION]
 - Status: Investigating
@@ -309,6 +331,7 @@ Body:
 ### Scenario 2: Non-critical Bugs (UI glitches, minor errors)
 
 **Action:** Deploy hotfix
+
 ```bash
 # 1. Create hotfix branch
 git checkout -b hotfix/dashboard-fix
@@ -334,6 +357,7 @@ git push origin main
 ### Scenario 3: Performance Degradation
 
 **Action:** Investigate + Scale
+
 ```bash
 # 1. Check Vercel function logs
 vercel logs --prod
@@ -354,34 +378,36 @@ vercel logs --prod
 
 ### Technical Metrics
 
-| Metric | Target | Threshold |
-|--------|--------|-----------|
-| Error Rate | < 0.5% | < 1% |
-| Response Time (p95) | < 1.5s | < 2s |
-| Lighthouse Score | > 90 | > 80 |
-| Core Web Vitals | All Green | 2 Green min |
-| Uptime | 99.9% | 99.5% |
+| Metric              | Target    | Threshold   |
+| ------------------- | --------- | ----------- |
+| Error Rate          | < 0.5%    | < 1%        |
+| Response Time (p95) | < 1.5s    | < 2s        |
+| Lighthouse Score    | > 90      | > 80        |
+| Core Web Vitals     | All Green | 2 Green min |
+| Uptime              | 99.9%     | 99.5%       |
 
 ### Business Metrics
 
-| Metric | Target | Threshold |
-|--------|--------|-----------|
-| Dashboard Load Success | > 99% | > 95% |
-| Payment Success Rate | > 98% | > 95% |
-| i18n Coverage | 100% | 98% |
-| Mobile Usability | > 95% | > 90% |
+| Metric                 | Target | Threshold |
+| ---------------------- | ------ | --------- |
+| Dashboard Load Success | > 99%  | > 95%     |
+| Payment Success Rate   | > 98%  | > 95%     |
+| i18n Coverage          | 100%   | 98%       |
+| Mobile Usability       | > 95%  | > 90%     |
 
 ---
 
 ## 🆘 Emergency Contacts
 
 **On-Call Rotation:**
+
 - Primary: [Developer Name]
 - Secondary: [Developer Name]
 - Database: Supabase Support
 - Hosting: Vercel Support
 
 **Escalation Path:**
+
 1. Check monitoring dashboards
 2. Review error logs
 3. Attempt automated rollback
@@ -394,18 +420,19 @@ vercel logs --prod
 ## 📝 Sign-Off
 
 **Pre-Deployment:**
-- [ ] Developer: _____________________ Date: _____
-- [ ] QA: _____________________ Date: _____
-- [ ] Product Owner: _____________________ Date: _____
+
+- [ ] Developer: **********\_********** Date: **\_**
+- [ ] QA: **********\_********** Date: **\_**
+- [ ] Product Owner: **********\_********** Date: **\_**
 
 **Post-Deployment:**
-- [ ] Deployment successful: _____________________ Date: _____
-- [ ] Monitoring active: _____________________ Date: _____
-- [ ] No critical errors: _____________________ Date: _____
+
+- [ ] Deployment successful: **********\_********** Date: **\_**
+- [ ] Monitoring active: **********\_********** Date: **\_**
+- [ ] No critical errors: **********\_********** Date: **\_**
 
 ---
 
 **Checklist Version:** 1.0  
 **Last Updated:** 2025-10-08  
 **Next Review:** After deployment completion
-

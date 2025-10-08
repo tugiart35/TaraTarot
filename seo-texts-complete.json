@@ -1,155 +1,155 @@
-  {
-      "meta": {
-        "generated_at": "2025-10-08",
-        "description": "TaraTarot projesi için tüm SEO metinleri - Site geneli metadata, sayfa bazlı SEO ayarları, çoklu dil desteği ve yapılandırılmış veriler",
-        "languages": ["tr", "en", "sr"],
-        "total_pages": 234,
-        "seo_sources": [
-          "src/lib/config/metadata.ts",
-          "src/lib/seo/enhanced-meta-generator.ts",
-          "src/lib/seo.ts",
-          "messages/tr.json",
-          "messages/en.json",
-          "messages/sr.json",
-          "migrations/003_insert_seo_data.sql",
-          "src/app/sitemap.ts"
-        ]
+{
+  "meta": {
+    "generated_at": "2025-10-08",
+    "description": "TaraTarot projesi için tüm SEO metinleri - Site geneli metadata, sayfa bazlı SEO ayarları, çoklu dil desteği ve yapılandırılmış veriler",
+    "languages": ["tr", "en", "sr"],
+    "total_pages": 234,
+    "seo_sources": [
+      "src/lib/config/metadata.ts",
+      "src/lib/seo/enhanced-meta-generator.ts",
+      "src/lib/seo.ts",
+      "messages/tr.json",
+      "messages/en.json",
+      "messages/sr.json",
+      "migrations/003_insert_seo_data.sql",
+      "src/app/sitemap.ts"
+    ]
+  },
+  "site_metadata": {
+    "default": {
+      "site_name": "Büşbüşkimki",
+      "site_url": "https://busbuskimki.com",
+      "title": {
+        "tr": "Büşbüşkimki - Profesyonel Tarot Yorumu ve Numeroloji Analizi",
+        "en": "Busbuskimki - Professional Tarot Reading and Free Numerology Calculator",
+        "sr": "Büşbüşkimki - Profesionalno Tarot Čitanje i Numerološka Analiza"
       },
-      "site_metadata": {
-        "default": {
-          "site_name": "Büşbüşkimki",
-          "site_url": "https://busbuskimki.com",
-          "title": {
-            "tr": "Büşbüşkimki - Profesyonel Tarot Yorumu ve Numeroloji Analizi",
-            "en": "Busbuskimki - Professional Tarot Reading and Free Numerology Calculator",
-            "sr": "Büşbüşkimki - Profesionalno Tarot Čitanje i Numerološka Analiza"
-          },
-          "description": {
-            "tr": "Profesyonel tarot okumaları ve derinlemesine numeroloji analizi ile potansiyelinizi keşfedin. Aşk, kariyer ve yaşam yolculuğunuzdaki sorulara rehberlik alın.",
-            "en": "Unlock your future with our professional Tarot readings and free numerology calculator. Get mystical answers for your love, career, and life questions. Start your journey with our trusted guidance.",
-            "sr": "Otkrijte svoju budućnost uz profesionalno tarot čitanje i duboku numerološku analizu. Pronađite mistične odgovore na pitanja o ljubavi, karijeri i životu."
-          },
-          "keywords": [
-            "tarot okuması",
-            "numeroloji",
-            "mistik rehberlik",
-            "aşk rehberliği",
-            "kariyer rehberliği",
-            "ruhani danışmanlık",
-            "tarot kartları",
-            "sayıların sırrı",
-            "yaşam yolu sayısı",
-            "kader analizi",
-            "tarot reading",
-            "numerology calculator",
-            "mystical guidance",
-            "life path number",
-            "spiritual consultation",
-            "tarot cards",
-            "numerologija",
-            "tarot čitanje",
-            "životni put broj"
-          ],
-          "author": "Büşbüşkimki - Mistik Rehberlik",
-          "creator": "Büşbüşkimki",
-          "publisher": "Büşbüşkimki"
+      "description": {
+        "tr": "Profesyonel tarot okumaları ve derinlemesine numeroloji analizi ile potansiyelinizi keşfedin. Aşk, kariyer ve yaşam yolculuğunuzdaki sorulara rehberlik alın.",
+        "en": "Unlock your future with our professional Tarot readings and free numerology calculator. Get mystical answers for your love, career, and life questions. Start your journey with our trusted guidance.",
+        "sr": "Otkrijte svoju budućnost uz profesionalno tarot čitanje i duboku numerološku analizu. Pronađite mistične odgovore na pitanja o ljubavi, karijeri i životu."
+      },
+      "keywords": [
+        "tarot okuması",
+        "numeroloji",
+        "mistik rehberlik",
+        "aşk rehberliği",
+        "kariyer rehberliği",
+        "ruhani danışmanlık",
+        "tarot kartları",
+        "sayıların sırrı",
+        "yaşam yolu sayısı",
+        "kader analizi",
+        "tarot reading",
+        "numerology calculator",
+        "mystical guidance",
+        "life path number",
+        "spiritual consultation",
+        "tarot cards",
+        "numerologija",
+        "tarot čitanje",
+        "životni put broj"
+      ],
+      "author": "Büşbüşkimki - Mistik Rehberlik",
+      "creator": "Büşbüşkimki",
+      "publisher": "Büşbüşkimki"
+    }
+  },
+  "pages_seo": {
+    "homepage": {
+      "tr": {
+        "title": "Büşbüşkimki - Online Tarot Yorumu ve Numeroloji Analizi",
+        "description": "Profesyonel tarot yorumları ve kişisel numeroloji analizleri ile geleceğinize ışık tutun. Aşk, kariyer ve hayatınıza dair sorulara mistik cevaplar bulun.",
+        "url": "https://busbuskimki.com/tr",
+        "canonical": "https://busbuskimki.com/tr",
+        "priority": 1.0,
+        "change_frequency": "daily"
+      },
+      "en": {
+        "title": "Busbuskimki - Free Tarot Reading & Numerology Calculator",
+        "description": "Discover your future with professional tarot readings and our free numerology analysis. Find mystical answers to your love, career and life questions.",
+        "url": "https://busbuskimki.com/en",
+        "canonical": "https://busbuskimki.com/en",
+        "priority": 1.0,
+        "change_frequency": "daily"
+      },
+      "sr": {
+        "title": "Büşbüşkimki - Profesionalno Tarot Čitanje i Numerološka Analiza",
+        "description": "Otkrijte svoju budućnost sa profesionalnim tarot čitanjem i numerološkom analizom. Pronađite odgovore na vaša pitanja.",
+        "url": "https://busbuskimki.com/sr",
+        "canonical": "https://busbuskimki.com/sr",
+        "priority": 1.0,
+        "change_frequency": "daily"
+      }
+    },
+    "tarot_reading": {
+      "tr": {
+        "title": "Ücretsiz Tarot Okuması - Online Tarot Kart Yorumu | Büşbüşkimki",
+        "description": "Kartların gizemli dünyasında rehberliğe hazır mısınız? Geçmiş, şimdi ve geleceğe dair sorularınız için online tarot okumanızı hemen başlatın.",
+        "url": "https://busbuskimki.com/tr/tarot-okumasi",
+        "priority": 0.9,
+        "change_frequency": "weekly"
+      },
+      "en": {
+        "title": "Free Online Tarot Reading - Instant Card Interpretation | Busbuskimki",
+        "description": "Journey into the mystical world of Tarot cards. Get instant insights and discover your past, present, and future with our free online reading.",
+        "url": "https://busbuskimki.com/en/tarot-reading",
+        "priority": 0.9,
+        "change_frequency": "weekly"
+      },
+      "sr": {
+        "title": "Besplatno Tarot Čitanje - Online Tarot Karte | Büşbüşkimki",
+        "description": "Putujte kroz tajanstveni svet karata. Otkrijte svoju prošlost, sadašnjost i budućnost uz naše besplatno online tarot čitanje.",
+        "url": "https://busbuskimki.com/sr/tarot-citanje",
+        "priority": 0.9,
+        "change_frequency": "weekly"
+      }
+    },
+    "numerology": {
+      "tr": {
+        "title": "Numeroloji Hesaplama - Yaşam Yolu Sayısı Analizi | Büşbüşkimki",
+        "description": "Doğum tarihinize göre sayıların sırlarını keşfedin. Yaşam yolu, kader ve kişilik sayınızı anında hesaplayın ve anlamlarını öğrenin.",
+        "url": "https://busbuskimki.com/tr/numeroloji",
+        "priority": 0.9,
+        "change_frequency": "weekly"
+      },
+      "en": {
+        "title": "Numerology Calculator - Free Life Path & Destiny Number | Busbuskimki",
+        "description": "Discover the secrets of numbers with our free numerology calculator. Instantly find your Life Path, Expression, and Soul Urge numbers and learn their meanings.",
+        "url": "https://busbuskimki.com/en/numerology",
+        "priority": 0.9,
+        "change_frequency": "weekly"
+      },
+      "sr": {
+        "title": "Numerološka Analiza - Izračunajte Životni Put Broj | Büşbüşkimki",
+        "description": "Otkrijte tajne brojeva. Saznajte i izračunajte svoj životni put (životni put broj), sudbinski broj i lični godišnji broj.",
+        "url": "https://busbuskimki.com/sr/numerologija",
+        "priority": 0.9,
+        "change_frequency": "weekly"
+      }
+    },
+    "tarot_spreads_seo": {
+      "love_spread": {
+        "slug": {
+          "tr": "ask-acilimi",
+          "en": "love-spread",
+          "sr": "ljubavni-raspored"
+        },
+        "tr": {
+          "title": "Aşk Tarot Açılımı - İlişki Durumu Yorumu | Büşbüşkimki",
+          "description": "Aşk hayatınızdaki potansiyeli ve zorlukları keşfedin. İlişkinizin dinamiklerini anlamak için özel aşk tarot okumanızı hemen yapın.",
+          "priority": 0.8
+        },
+        "en": {
+          "title": "Love Tarot Spread - Relationship Insights Reading | Busbuskimki",
+          "description": "Explore the potential and challenges in your love life. Get a special love tarot reading to understand the dynamics of your relationship.",
+          "priority": 0.8
+        },
+        "sr": {
+          "title": "Ljubavni Tarot Raspored - Uvid u Stanje Veze | Büşbüşkimki",
+          "description": "Istražite potencijal i izazove u svom ljubavnom životu. Uradite posebno ljubavno tarot čitanje da biste razumeli dinamiku vaše veze.",
+          "priority": 0.8
         }
-      },
-      "pages_seo": {
-        "homepage": {
-          "tr": {
-            "title": "Büşbüşkimki - Online Tarot Yorumu ve Numeroloji Analizi",
-            "description": "Profesyonel tarot yorumları ve kişisel numeroloji analizleri ile geleceğinize ışık tutun. Aşk, kariyer ve hayatınıza dair sorulara mistik cevaplar bulun.",
-            "url": "https://busbuskimki.com/tr",
-            "canonical": "https://busbuskimki.com/tr",
-            "priority": 1.0,
-            "change_frequency": "daily"
-          },
-          "en": {
-            "title": "Busbuskimki - Free Tarot Reading & Numerology Calculator",
-            "description": "Discover your future with professional tarot readings and our free numerology analysis. Find mystical answers to your love, career and life questions.",
-            "url": "https://busbuskimki.com/en",
-            "canonical": "https://busbuskimki.com/en",
-            "priority": 1.0,
-            "change_frequency": "daily"
-          },
-          "sr": {
-            "title": "Büşbüşkimki - Profesionalno Tarot Čitanje i Numerološka Analiza",
-            "description": "Otkrijte svoju budućnost sa profesionalnim tarot čitanjem i numerološkom analizom. Pronađite odgovore na vaša pitanja.",
-            "url": "https://busbuskimki.com/sr",
-            "canonical": "https://busbuskimki.com/sr",
-            "priority": 1.0,
-            "change_frequency": "daily"
-          }
-        },
-        "tarot_reading": {
-          "tr": {
-            "title": "Ücretsiz Tarot Okuması - Online Tarot Kart Yorumu | Büşbüşkimki",
-            "description": "Kartların gizemli dünyasında rehberliğe hazır mısınız? Geçmiş, şimdi ve geleceğe dair sorularınız için online tarot okumanızı hemen başlatın.",
-            "url": "https://busbuskimki.com/tr/tarot-okumasi",
-            "priority": 0.9,
-            "change_frequency": "weekly"
-          },
-          "en": {
-            "title": "Free Online Tarot Reading - Instant Card Interpretation | Busbuskimki",
-            "description": "Journey into the mystical world of Tarot cards. Get instant insights and discover your past, present, and future with our free online reading.",
-            "url": "https://busbuskimki.com/en/tarot-reading",
-            "priority": 0.9,
-            "change_frequency": "weekly"
-          },
-          "sr": {
-            "title": "Besplatno Tarot Čitanje - Online Tarot Karte | Büşbüşkimki",
-            "description": "Putujte kroz tajanstveni svet karata. Otkrijte svoju prošlost, sadašnjost i budućnost uz naše besplatno online tarot čitanje.",
-            "url": "https://busbuskimki.com/sr/tarot-citanje",
-            "priority": 0.9,
-            "change_frequency": "weekly"
-          }
-        },
-        "numerology": {
-          "tr": {
-            "title": "Numeroloji Hesaplama - Yaşam Yolu Sayısı Analizi | Büşbüşkimki",
-            "description": "Doğum tarihinize göre sayıların sırlarını keşfedin. Yaşam yolu, kader ve kişilik sayınızı anında hesaplayın ve anlamlarını öğrenin.",
-            "url": "https://busbuskimki.com/tr/numeroloji",
-            "priority": 0.9,
-            "change_frequency": "weekly"
-          },
-          "en": {
-            "title": "Numerology Calculator - Free Life Path & Destiny Number | Busbuskimki",
-            "description": "Discover the secrets of numbers with our free numerology calculator. Instantly find your Life Path, Expression, and Soul Urge numbers and learn their meanings.",
-            "url": "https://busbuskimki.com/en/numerology",
-            "priority": 0.9,
-            "change_frequency": "weekly"
-          },
-          "sr": {
-            "title": "Numerološka Analiza - Izračunajte Životni Put Broj | Büşbüşkimki",
-            "description": "Otkrijte tajne brojeva. Saznajte i izračunajte svoj životni put (životni put broj), sudbinski broj i lični godišnji broj.",
-            "url": "https://busbuskimki.com/sr/numerologija",
-            "priority": 0.9,
-            "change_frequency": "weekly"
-          }
-      },
-      "tarot_spreads_seo": {
-        "love_spread": {
-          "slug": {
-            "tr": "ask-acilimi",
-            "en": "love-spread",
-            "sr": "ljubavni-raspored"
-          },
-          "tr": {
-            "title": "Aşk Tarot Açılımı - İlişki Durumu Yorumu | Büşbüşkimki",
-            "description": "Aşk hayatınızdaki potansiyeli ve zorlukları keşfedin. İlişkinizin dinamiklerini anlamak için özel aşk tarot okumanızı hemen yapın.",
-            "priority": 0.8
-          },
-          "en": {
-            "title": "Love Tarot Spread - Relationship Insights Reading | Busbuskimki",
-            "description": "Explore the potential and challenges in your love life. Get a special love tarot reading to understand the dynamics of your relationship.",
-            "priority": 0.8
-          },
-          "sr": {
-            "title": "Ljubavni Tarot Raspored - Uvid u Stanje Veze | Büşbüşkimki",
-            "description": "Istražite potencijal i izazove u svom ljubavnom životu. Uradite posebno ljubavno tarot čitanje da biste razumeli dinamiku vaše veze.",
-            "priority": 0.8
-          }
       },
       "numerology": {
         "tr": {
@@ -173,1055 +173,1048 @@
           "priority": 0.9,
           "change_frequency": "weekly"
         }
-      
-    },
-    "open_graph": {
-      "type": "website",
-      "locale": {
-        "tr": "tr_TR",
-        "en": "en_US",
-        "sr": "sr_RS"
       },
-      "site_name": "Büşbüşkimki - Mistik Rehberlik",
-      "images": {
-        "default": {
-          "url": "/images/og-image.jpg",
-          "width": 1200,
-          "height": 630,
-          "alt": "Büşbüşkimki - Mistik Tarot ve Numeroloji"
+      "open_graph": {
+        "type": "website",
+        "locale": {
+          "tr": "tr_TR",
+          "en": "en_US",
+          "sr": "sr_RS"
         },
-        "card_template": {
-          "width": 1200,
-          "height": 630,
-          "path_template": "/images/tarot-cards/{card-slug}-og.jpg"
+        "site_name": "Büşbüşkimki - Mistik Rehberlik",
+        "images": {
+          "default": {
+            "url": "/images/og-image.jpg",
+            "width": 1200,
+            "height": 630,
+            "alt": "Büşbüşkimki - Mistik Tarot ve Numeroloji"
+          },
+          "card_template": {
+            "width": 1200,
+            "height": 630,
+            "path_template": "/images/tarot-cards/{card-slug}-og.jpg"
+          }
         }
-      }
-    },
-    "twitter_card": {
-      "card": "summary_large_image",
-      "images": {
-        "default": "/images/twitter-card.jpg",
-        "card_template": "/images/tarot-cards/{card-slug}-twitter.jpg"
-      }
-    },
-    "robots": {
-      "index": true,
-      "follow": true,
-      "google_bot": {
+      },
+      "twitter_card": {
+        "card": "summary_large_image",
+        "images": {
+          "default": "/images/twitter-card.jpg",
+          "card_template": "/images/tarot-cards/{card-slug}-twitter.jpg"
+        }
+      },
+      "robots": {
         "index": true,
         "follow": true,
-        "max_video_preview": -1,
-        "max_image_preview": "large",
-        "max_snippet": -1
+        "google_bot": {
+          "index": true,
+          "follow": true,
+          "max_video_preview": -1,
+          "max_image_preview": "large",
+          "max_snippet": -1
+        }
+      },
+      "pwa": {
+        "manifest": "/manifest.json",
+        "theme_color": "#1a1a2e",
+        "icons": {
+          "favicon": "/icons/favicon.ico",
+          "apple_touch_icon": "/icons/apple-touch-icon.png"
+        }
       }
     },
-    "pwa": {
-      "manifest": "/manifest.json",
-      "theme_color": "#1a1a2e",
-      "icons": {
-        "favicon": "/icons/favicon.ico",
-        "apple_touch_icon": "/icons/apple-touch-icon.png"
-      }
-    }
-  },
-  "pages_seo": {
-    "homepage": {
-      "tr": {
-        "title": "Büşbüşkimki - Profesyonel Tarot Okuması ve Numeroloji Analizi",
-        "description": "Profesyonel tarot okuması ve numeroloji analizi ile geleceğinizi keşfedin. Aşk, kariyer ve yaşam sorularınıza mistik cevaplar bulun.",
-        "url": "https://busbuskimki.com/tr",
-        "canonical": "https://busbuskimki.com/tr",
-        "priority": 1.0,
-        "change_frequency": "daily"
-      },
-      "en": {
-        "title": "Busbuskimki - Professional Tarot Reading and Numerology Analysis",
-        "description": "Discover your future with professional tarot readings and numerology analysis. Find mystical answers to your love, career and life questions.",
-        "url": "https://busbuskimki.com/en",
-        "canonical": "https://busbuskimki.com/en",
-        "priority": 1.0,
-        "change_frequency": "daily"
-      },
-      "sr": {
-        "title": "Büşbüşkimki - Profesionalno Tarot Čitanje i Numerologija",
-        "description": "Otkrijte svoju budućnost sa profesionalnim tarot čitanjem i numerološkom analizom.",
-        "url": "https://busbuskimki.com/sr",
-        "canonical": "https://busbuskimki.com/sr",
-        "priority": 1.0,
-        "change_frequency": "daily"
-      }
-    },
-    "tarot_reading": {
-      "tr": {
-        "title": "Tarot Okuması - Ücretsiz Online Tarot Falı",
-        "description": "Kartların gizemli dünyasında yolculuğa çıkın. Geçmiş, şimdi ve geleceğinizi keşfedin.",
-        "url": "https://busbuskimki.com/tr/tarotokumasi",
-        "priority": 0.9,
-        "change_frequency": "weekly"
-      },
-      "en": {
-        "title": "Tarot Reading - Free Online Tarot Cards",
-        "description": "Journey through the mysterious world of cards. Discover your past, present and future.",
-        "url": "https://busbuskimki.com/en/tarotokumasi",
-        "priority": 0.9,
-        "change_frequency": "weekly"
-      },
-      "sr": {
-        "title": "Tarot Čitanje - Besplatne Online Tarot Karte",
-        "description": "Putujte kroz tajanstveni svet karata. Otkrijte svoju prošlost, sadašnjost i budućnost.",
-        "url": "https://busbuskimki.com/sr/tarotokumasi",
-        "priority": 0.9,
-        "change_frequency": "weekly"
-      }
-    },
-    "numerology": {
-      "tr": {
-        "title": "Numeroloji Analizi - Sayıların Sırrı",
-        "description": "Sayıların sırlarını keşfedin. Yaşam yolunuzu, ifade sayınızı ve ruhsal arzunuzu öğrenin.",
-        "url": "https://busbuskimki.com/tr/numeroloji",
-        "priority": 0.9,
-        "change_frequency": "weekly"
-      },
-      "en": {
-        "title": "Numerology Analysis - The Secret of Numbers",
-        "description": "Discover the secrets of numbers. Learn your life path, expression number and spiritual desire.",
-        "url": "https://busbuskimki.com/en/numerology",
-        "priority": 0.9,
-        "change_frequency": "weekly"
-      },
-      "sr": {
-        "title": "Numerologija Analiza - Tajna Brojeva",
-        "description": "Otkrijte tajne brojeva. Saznajte svoj životni put, broj izraza i duhovnu želju.",
-        "url": "https://busbuskimki.com/sr/numerologija",
-        "priority": 0.9,
-        "change_frequency": "weekly"
-      }
-    },
-    "cards_gallery": {
-      "tr": {
-        "title": "Tarot Kartları Galerisi - Tüm Kartlar",
-        "description": "78 tarot kartının tamamını keşfedin. Her kartın anlamını, yorumunu ve hikayesini öğrenin.",
-        "url": "https://busbuskimki.com/tr/kartlar",
-        "priority": 0.8,
-        "change_frequency": "weekly"
-      },
-      "en": {
-        "title": "Tarot Cards Gallery - All Cards",
-        "description": "Explore all 78 tarot cards. Learn the meaning, interpretation and story of each card.",
-        "url": "https://busbuskimki.com/en/cards",
-        "priority": 0.8,
-        "change_frequency": "weekly"
-      },
-      "sr": {
-        "title": "Tarot Karte Galerija - Sve Karte",
-        "description": "Istražite svih 78 tarot karata. Saznajte značenje, tumačenje i priču svake karte.",
-        "url": "https://busbuskimki.com/sr/kartice",
-        "priority": 0.8,
-        "change_frequency": "weekly"
-      }
-    },
-    "dashboard": {
-      "tr": {
-        "title": "Kontrol Paneli - Okumalarım ve Kredi",
-        "description": "Tarot okumalarınızı ve kredi durumunuzu yönetin",
-        "url": "https://busbuskimki.com/tr/dashboard",
-        "priority": 0.8,
-        "change_frequency": "weekly"
-      },
-      "en": {
-        "title": "Dashboard - My Readings and Credits",
-        "description": "Manage your tarot readings and credit status",
-        "url": "https://busbuskimki.com/en/dashboard",
-        "priority": 0.8,
-        "change_frequency": "weekly"
-      },
-      "sr": {
-        "title": "Kontrolna Tabla - Moja Čitanja i Krediti",
-        "description": "Upravljajte svojim tarot čitanjima i stanjem kredita",
-        "url": "https://busbuskimki.com/sr/dashboard",
-        "priority": 0.8,
-        "change_frequency": "weekly"
-      }
-    }
-  },
-  "tarot_spreads_seo": {
-    "love_spread": {
-      "slug": {
-        "tr": "love-spread",
-        "en": "love-spread",
-        "sr": "love-spread"
-      },
-      "tr": {
-        "title": "Aşk Açılımı - İlişki Durumu Tarot Okuması",
-        "description": "Bu okumayı kaydetmek için kredi kullanılacak. Devam etmek istiyor musunuz?",
-        "priority": 0.8
-      },
-      "en": {
-        "title": "Love Spread - Relationship Status Tarot Reading",
-        "description": "Credits will be used to save this reading. Do you want to continue?",
-        "priority": 0.8
-      },
-      "sr": {
-        "title": "Ljubavni Raspored - Tarot Čitanje Stanja Veze",
-        "description": "Krediti će biti korišćeni za čuvanje ovog čitanja. Da li želite da nastavite?",
-        "priority": 0.8
-      }
-    },
-    "career_spread": {
-      "slug": {
-        "tr": "career-spread",
-        "en": "career-spread",
-        "sr": "career-spread"
-      },
-      "tr": {
-        "title": "Kariyer Açılımı - İş Hayatı Tarot Okuması",
-        "description": "İş hayatınız ve kariyer yolculuğunuz için özel tarot açılımı",
-        "priority": 0.7
-      },
-      "en": {
-        "title": "Career Spread - Work Life Tarot Reading",
-        "description": "Special tarot spread for your work life and career journey",
-        "priority": 0.7
-      },
-      "sr": {
-        "title": "Karijerni Raspored - Tarot Čitanje Radnog Života",
-        "description": "Specijalni tarot raspored za vaš radni život i karijerno putovanje",
-        "priority": 0.7
-      }
-    },
-    "situation_analysis": {
-      "slug": {
-        "tr": "situation-analysis",
-        "en": "situation-analysis",
-        "sr": "situation-analysis"
-      },
-      "tr": {
-        "title": "Durum Analizi - 3 Kart Tarot Okuması",
-        "description": "Geçmiş, şimdi ve gelecek için 3 kartlık özel tarot açılımı",
-        "priority": 0.7
-      },
-      "en": {
-        "title": "Situation Analysis - 3 Card Tarot Reading",
-        "description": "Special 3 card tarot spread for past, present and future",
-        "priority": 0.7
-      },
-      "sr": {
-        "title": "Analiza Situacije - 3 Karte Tarot Čitanje",
-        "description": "Specijalni raspored od 3 karte za prošlost, sadašnjost i budućnost",
-        "priority": 0.7
-      }
-    },
-    "new_lover": {
-      "slug": {
-        "tr": "new-lover",
-        "en": "new-lover",
-        "sr": "new-lover"
-      },
-      "tr": {
-        "title": "Yeni Bir Sevgili Açılımı - Aşk Potansiyeli",
-        "description": "Yeni bir aşk ilişkisi için 6 kartlık özel açılım",
-        "priority": 0.6
-      },
-      "en": {
-        "title": "New Lover Spread - Love Potential",
-        "description": "Special 6 card spread for a new love relationship",
-        "priority": 0.6
-      },
-      "sr": {
-        "title": "Novi Ljubavnik Raspored - Ljubavni Potencijal",
-        "description": "Specijalni raspored od 6 karata za novu ljubavnu vezu",
-        "priority": 0.6
-      }
-    },
-    "relationship_problems": {
-      "slug": {
-        "tr": "relationship-problems",
-        "en": "relationship-problems",
-        "sr": "relationship-problems"
-      },
-      "tr": {
-        "title": "İlişki Sorunları Açılımı - Çözüm Yolları",
-        "description": "İlişkinizdeki sorunları anlamak ve çözüm bulmak için özel açılım",
-        "priority": 0.6
-      },
-      "en": {
-        "title": "Relationship Problems Spread - Solution Ways",
-        "description": "Special spread to understand and solve problems in your relationship",
-        "priority": 0.6
-      },
-      "sr": {
-        "title": "Problemi u Vezi Raspored - Načini Rešenja",
-        "description": "Specijalni raspored za razumevanje i rešavanje problema u vašoj vezi",
-        "priority": 0.6
-      }
-    },
-    "marriage_spread": {
-      "slug": {
-        "tr": "marriage-spread",
-        "en": "marriage-spread",
-        "sr": "marriage-spread"
-      },
-      "tr": {
-        "title": "Evlilik Açılımı",
-        "description": "Evlilik ve eş bulma yolculuğunuz için özel 10 kartlık açılım",
-        "priority": 0.7
-      },
-      "en": {
-        "title": "Marriage Spread",
-        "description": "Special 10 card spread for your marriage and spouse finding journey",
-        "priority": 0.7
-      },
-      "sr": {
-        "title": "Bračni Raspored",
-        "description": "Specijalni raspored od 10 karata za vaše bračno i supružničko putovanje",
-        "priority": 0.7
-      }
-    }
-  },
-  "sample_cards_seo": {
-    "the_fool": {
-      "english_name": "The Fool",
-      "slug": {
-        "tr": "joker",
-        "en": "the-fool",
-        "sr": "joker"
-      },
-      "seo": {
+    "pages_seo": {
+      "homepage": {
         "tr": {
-          "meta_title": "Joker Tarot Kartı Anlamı ve Yorumu | Ücretsiz Tarot Okuması",
-          "meta_description": "Joker tarot kartının anlamı, yorumu ve hikayesi. Düz ve ters pozisyonlarda Joker kartının aşk, kariyer ve para yorumları. Ücretsiz tarot okuması için hemen başlayın.",
-          "canonical_url": "/tr/kartlar/joker",
-          "og_image": "/images/tarot-cards/the-fool-og.jpg",
-          "twitter_image": "/images/tarot-cards/the-fool-twitter.jpg",
-          "keywords": [
-            "joker tarot",
-            "tarot kartı",
-            "joker anlamı",
-            "tarot yorumu",
-            "ücretsiz tarot",
-            "tarot okuması",
-            "joker hikayesi",
-            "tarot rehberi",
-            "yeni başlangıçlar",
-            "masumiyet",
-            "kendiliğindenlik",
-            "risk almak",
-            "özgür ruh"
-          ],
-          "faq": [
-            {
-              "question": "Joker tarot kartı ne anlama gelir?",
-              "answer": "Joker kartı yeni başlangıçları, masumiyeti ve potansiyeli temsil eder. Hayatta yeni bir yolculuğa çıkmaya hazır olduğunuzu gösterir."
-            },
-            {
-              "question": "Joker kartı aşk hayatında ne anlama gelir?",
-              "answer": "Aşk hayatınızda yeni bir sayfa açılabilir. Bekar iseniz, yeni bir ilişki başlayabilir. Mevcut ilişkinizde taze bir başlangıç yapabilirsiniz."
-            },
-            {
-              "question": "Joker kartı kariyerde ne anlama gelir?",
-              "answer": "Kariyerinizde yeni fırsatlar çıkabilir. Yeni bir iş, proje veya kariyer değişikliği söz konusu olabilir. Cesur adımlar atmanın zamanı gelmiştir."
-            },
-            {
-              "question": "Joker kartı para konusunda ne anlama gelir?",
-              "answer": "Para konusunda yeni yatırımlar yapabilirsiniz. Ancak dikkatli olmalı, riskleri hesaplamalısınız. Yeni gelir kaynakları açılabilir."
-            },
-            {
-              "question": "Joker kartı ruhsal anlamda ne ifade eder?",
-              "answer": "Ruhsal yolculuğunuzda yeni bir aşamaya geçiyorsunuz. İç sesinizi dinlemek ve sezgilerinize güvenmek önemlidir."
-            }
-          ]
+          "title": "Büşbüşkimki - Profesyonel Tarot Okuması ve Numeroloji Analizi",
+          "description": "Profesyonel tarot okuması ve numeroloji analizi ile geleceğinizi keşfedin. Aşk, kariyer ve yaşam sorularınıza mistik cevaplar bulun.",
+          "url": "https://busbuskimki.com/tr",
+          "canonical": "https://busbuskimki.com/tr",
+          "priority": 1.0,
+          "change_frequency": "daily"
         },
         "en": {
-          "meta_title": "The Fool Tarot Card Meaning and Interpretation | Free Tarot Reading",
-          "meta_description": "The Fool tarot card meaning, interpretation and story. Love, career and money interpretations of The Fool card in upright and reversed positions. Start your free tarot reading now.",
-          "canonical_url": "/en/cards/the-fool",
-          "og_image": "/images/tarot-cards/the-fool-og.jpg",
-          "twitter_image": "/images/tarot-cards/the-fool-twitter.jpg",
-          "keywords": [
-            "the fool tarot",
-            "tarot card",
-            "fool meaning",
-            "tarot interpretation",
-            "free tarot",
-            "tarot reading",
-            "fool story",
-            "tarot guide",
-            "new beginnings",
-            "innocence",
-            "spontaneity",
-            "taking risks",
-            "free spirit"
-          ],
-          "faq": [
-            {
-              "question": "What does The Fool tarot card mean?",
-              "answer": "The Fool card represents new beginnings, innocence, and potential. It shows that you are ready to embark on a new journey in life."
-            },
-            {
-              "question": "What does The Fool card mean in love?",
-              "answer": "A new chapter may open in your love life. If you are single, a new relationship may begin. You can make a fresh start in your current relationship."
-            },
-            {
-              "question": "What does The Fool card mean in career?",
-              "answer": "New opportunities may arise in your career. A new job, project, or career change may be in question. It is time to take bold steps."
-            },
-            {
-              "question": "What does The Fool card mean about money?",
-              "answer": "You can make new investments in money matters. However, you should be careful and calculate the risks. New sources of income may open up."
-            },
-            {
-              "question": "What does The Fool card mean spiritually?",
-              "answer": "You are moving to a new stage in your spiritual journey. It is important to listen to your inner voice and trust your intuition."
-            }
-          ]
+          "title": "Busbuskimki - Professional Tarot Reading and Numerology Analysis",
+          "description": "Discover your future with professional tarot readings and numerology analysis. Find mystical answers to your love, career and life questions.",
+          "url": "https://busbuskimki.com/en",
+          "canonical": "https://busbuskimki.com/en",
+          "priority": 1.0,
+          "change_frequency": "daily"
         },
         "sr": {
-          "meta_title": "Joker Tarot Karta Značenje i Tumačenje | Besplatno Tarot Čitanje",
-          "meta_description": "Joker tarot karta značenje, tumačenje i priča. Ljubav, karijera i novac tumačenja Joker karte u uspravnom i obrnutom položaju. Počnite svoje besplatno tarot čitanje sada.",
-          "canonical_url": "/sr/kartice/joker",
-          "og_image": "/images/tarot-cards/the-fool-og.jpg",
-          "twitter_image": "/images/tarot-cards/the-fool-twitter.jpg",
-          "keywords": [
-            "joker tarot",
-            "tarot karta",
-            "joker značenje",
-            "tarot tumačenje",
-            "besplatno tarot",
-            "tarot čitanje",
-            "joker priča",
-            "tarot vodič"
+          "title": "Büşbüşkimki - Profesionalno Tarot Čitanje i Numerologija",
+          "description": "Otkrijte svoju budućnost sa profesionalnim tarot čitanjem i numerološkom analizom.",
+          "url": "https://busbuskimki.com/sr",
+          "canonical": "https://busbuskimki.com/sr",
+          "priority": 1.0,
+          "change_frequency": "daily"
+        }
+      },
+      "tarot_reading": {
+        "tr": {
+          "title": "Tarot Okuması - Ücretsiz Online Tarot Falı",
+          "description": "Kartların gizemli dünyasında yolculuğa çıkın. Geçmiş, şimdi ve geleceğinizi keşfedin.",
+          "url": "https://busbuskimki.com/tr/tarotokumasi",
+          "priority": 0.9,
+          "change_frequency": "weekly"
+        },
+        "en": {
+          "title": "Tarot Reading - Free Online Tarot Cards",
+          "description": "Journey through the mysterious world of cards. Discover your past, present and future.",
+          "url": "https://busbuskimki.com/en/tarotokumasi",
+          "priority": 0.9,
+          "change_frequency": "weekly"
+        },
+        "sr": {
+          "title": "Tarot Čitanje - Besplatne Online Tarot Karte",
+          "description": "Putujte kroz tajanstveni svet karata. Otkrijte svoju prošlost, sadašnjost i budućnost.",
+          "url": "https://busbuskimki.com/sr/tarotokumasi",
+          "priority": 0.9,
+          "change_frequency": "weekly"
+        }
+      },
+      "numerology": {
+        "tr": {
+          "title": "Numeroloji Analizi - Sayıların Sırrı",
+          "description": "Sayıların sırlarını keşfedin. Yaşam yolunuzu, ifade sayınızı ve ruhsal arzunuzu öğrenin.",
+          "url": "https://busbuskimki.com/tr/numeroloji",
+          "priority": 0.9,
+          "change_frequency": "weekly"
+        },
+        "en": {
+          "title": "Numerology Analysis - The Secret of Numbers",
+          "description": "Discover the secrets of numbers. Learn your life path, expression number and spiritual desire.",
+          "url": "https://busbuskimki.com/en/numerology",
+          "priority": 0.9,
+          "change_frequency": "weekly"
+        },
+        "sr": {
+          "title": "Numerologija Analiza - Tajna Brojeva",
+          "description": "Otkrijte tajne brojeva. Saznajte svoj životni put, broj izraza i duhovnu želju.",
+          "url": "https://busbuskimki.com/sr/numerologija",
+          "priority": 0.9,
+          "change_frequency": "weekly"
+        }
+      },
+      "cards_gallery": {
+        "tr": {
+          "title": "Tarot Kartları Galerisi - Tüm Kartlar",
+          "description": "78 tarot kartının tamamını keşfedin. Her kartın anlamını, yorumunu ve hikayesini öğrenin.",
+          "url": "https://busbuskimki.com/tr/kartlar",
+          "priority": 0.8,
+          "change_frequency": "weekly"
+        },
+        "en": {
+          "title": "Tarot Cards Gallery - All Cards",
+          "description": "Explore all 78 tarot cards. Learn the meaning, interpretation and story of each card.",
+          "url": "https://busbuskimki.com/en/cards",
+          "priority": 0.8,
+          "change_frequency": "weekly"
+        },
+        "sr": {
+          "title": "Tarot Karte Galerija - Sve Karte",
+          "description": "Istražite svih 78 tarot karata. Saznajte značenje, tumačenje i priču svake karte.",
+          "url": "https://busbuskimki.com/sr/kartice",
+          "priority": 0.8,
+          "change_frequency": "weekly"
+        }
+      },
+      "dashboard": {
+        "tr": {
+          "title": "Kontrol Paneli - Okumalarım ve Kredi",
+          "description": "Tarot okumalarınızı ve kredi durumunuzu yönetin",
+          "url": "https://busbuskimki.com/tr/dashboard",
+          "priority": 0.8,
+          "change_frequency": "weekly"
+        },
+        "en": {
+          "title": "Dashboard - My Readings and Credits",
+          "description": "Manage your tarot readings and credit status",
+          "url": "https://busbuskimki.com/en/dashboard",
+          "priority": 0.8,
+          "change_frequency": "weekly"
+        },
+        "sr": {
+          "title": "Kontrolna Tabla - Moja Čitanja i Krediti",
+          "description": "Upravljajte svojim tarot čitanjima i stanjem kredita",
+          "url": "https://busbuskimki.com/sr/dashboard",
+          "priority": 0.8,
+          "change_frequency": "weekly"
+        }
+      }
+    },
+    "tarot_spreads_seo": {
+      "love_spread": {
+        "slug": {
+          "tr": "love-spread",
+          "en": "love-spread",
+          "sr": "love-spread"
+        },
+        "tr": {
+          "title": "Aşk Açılımı - İlişki Durumu Tarot Okuması",
+          "description": "Bu okumayı kaydetmek için kredi kullanılacak. Devam etmek istiyor musunuz?",
+          "priority": 0.8
+        },
+        "en": {
+          "title": "Love Spread - Relationship Status Tarot Reading",
+          "description": "Credits will be used to save this reading. Do you want to continue?",
+          "priority": 0.8
+        },
+        "sr": {
+          "title": "Ljubavni Raspored - Tarot Čitanje Stanja Veze",
+          "description": "Krediti će biti korišćeni za čuvanje ovog čitanja. Da li želite da nastavite?",
+          "priority": 0.8
+        }
+      },
+      "career_spread": {
+        "slug": {
+          "tr": "career-spread",
+          "en": "career-spread",
+          "sr": "career-spread"
+        },
+        "tr": {
+          "title": "Kariyer Açılımı - İş Hayatı Tarot Okuması",
+          "description": "İş hayatınız ve kariyer yolculuğunuz için özel tarot açılımı",
+          "priority": 0.7
+        },
+        "en": {
+          "title": "Career Spread - Work Life Tarot Reading",
+          "description": "Special tarot spread for your work life and career journey",
+          "priority": 0.7
+        },
+        "sr": {
+          "title": "Karijerni Raspored - Tarot Čitanje Radnog Života",
+          "description": "Specijalni tarot raspored za vaš radni život i karijerno putovanje",
+          "priority": 0.7
+        }
+      },
+      "situation_analysis": {
+        "slug": {
+          "tr": "situation-analysis",
+          "en": "situation-analysis",
+          "sr": "situation-analysis"
+        },
+        "tr": {
+          "title": "Durum Analizi - 3 Kart Tarot Okuması",
+          "description": "Geçmiş, şimdi ve gelecek için 3 kartlık özel tarot açılımı",
+          "priority": 0.7
+        },
+        "en": {
+          "title": "Situation Analysis - 3 Card Tarot Reading",
+          "description": "Special 3 card tarot spread for past, present and future",
+          "priority": 0.7
+        },
+        "sr": {
+          "title": "Analiza Situacije - 3 Karte Tarot Čitanje",
+          "description": "Specijalni raspored od 3 karte za prošlost, sadašnjost i budućnost",
+          "priority": 0.7
+        }
+      },
+      "new_lover": {
+        "slug": {
+          "tr": "new-lover",
+          "en": "new-lover",
+          "sr": "new-lover"
+        },
+        "tr": {
+          "title": "Yeni Bir Sevgili Açılımı - Aşk Potansiyeli",
+          "description": "Yeni bir aşk ilişkisi için 6 kartlık özel açılım",
+          "priority": 0.6
+        },
+        "en": {
+          "title": "New Lover Spread - Love Potential",
+          "description": "Special 6 card spread for a new love relationship",
+          "priority": 0.6
+        },
+        "sr": {
+          "title": "Novi Ljubavnik Raspored - Ljubavni Potencijal",
+          "description": "Specijalni raspored od 6 karata za novu ljubavnu vezu",
+          "priority": 0.6
+        }
+      },
+      "relationship_problems": {
+        "slug": {
+          "tr": "relationship-problems",
+          "en": "relationship-problems",
+          "sr": "relationship-problems"
+        },
+        "tr": {
+          "title": "İlişki Sorunları Açılımı - Çözüm Yolları",
+          "description": "İlişkinizdeki sorunları anlamak ve çözüm bulmak için özel açılım",
+          "priority": 0.6
+        },
+        "en": {
+          "title": "Relationship Problems Spread - Solution Ways",
+          "description": "Special spread to understand and solve problems in your relationship",
+          "priority": 0.6
+        },
+        "sr": {
+          "title": "Problemi u Vezi Raspored - Načini Rešenja",
+          "description": "Specijalni raspored za razumevanje i rešavanje problema u vašoj vezi",
+          "priority": 0.6
+        }
+      },
+      "marriage_spread": {
+        "slug": {
+          "tr": "marriage-spread",
+          "en": "marriage-spread",
+          "sr": "marriage-spread"
+        },
+        "tr": {
+          "title": "Evlilik Açılımı",
+          "description": "Evlilik ve eş bulma yolculuğunuz için özel 10 kartlık açılım",
+          "priority": 0.7
+        },
+        "en": {
+          "title": "Marriage Spread",
+          "description": "Special 10 card spread for your marriage and spouse finding journey",
+          "priority": 0.7
+        },
+        "sr": {
+          "title": "Bračni Raspored",
+          "description": "Specijalni raspored od 10 karata za vaše bračno i supružničko putovanje",
+          "priority": 0.7
+        }
+      }
+    },
+    "sample_cards_seo": {
+      "the_fool": {
+        "english_name": "The Fool",
+        "slug": {
+          "tr": "joker",
+          "en": "the-fool",
+          "sr": "joker"
+        },
+        "seo": {
+          "tr": {
+            "meta_title": "Joker Tarot Kartı Anlamı ve Yorumu | Ücretsiz Tarot Okuması",
+            "meta_description": "Joker tarot kartının anlamı, yorumu ve hikayesi. Düz ve ters pozisyonlarda Joker kartının aşk, kariyer ve para yorumları. Ücretsiz tarot okuması için hemen başlayın.",
+            "canonical_url": "/tr/kartlar/joker",
+            "og_image": "/images/tarot-cards/the-fool-og.jpg",
+            "twitter_image": "/images/tarot-cards/the-fool-twitter.jpg",
+            "keywords": [
+              "joker tarot",
+              "tarot kartı",
+              "joker anlamı",
+              "tarot yorumu",
+              "ücretsiz tarot",
+              "tarot okuması",
+              "joker hikayesi",
+              "tarot rehberi",
+              "yeni başlangıçlar",
+              "masumiyet",
+              "kendiliğindenlik",
+              "risk almak",
+              "özgür ruh"
+            ],
+            "faq": [
+              {
+                "question": "Joker tarot kartı ne anlama gelir?",
+                "answer": "Joker kartı yeni başlangıçları, masumiyeti ve potansiyeli temsil eder. Hayatta yeni bir yolculuğa çıkmaya hazır olduğunuzu gösterir."
+              },
+              {
+                "question": "Joker kartı aşk hayatında ne anlama gelir?",
+                "answer": "Aşk hayatınızda yeni bir sayfa açılabilir. Bekar iseniz, yeni bir ilişki başlayabilir. Mevcut ilişkinizde taze bir başlangıç yapabilirsiniz."
+              },
+              {
+                "question": "Joker kartı kariyerde ne anlama gelir?",
+                "answer": "Kariyerinizde yeni fırsatlar çıkabilir. Yeni bir iş, proje veya kariyer değişikliği söz konusu olabilir. Cesur adımlar atmanın zamanı gelmiştir."
+              },
+              {
+                "question": "Joker kartı para konusunda ne anlama gelir?",
+                "answer": "Para konusunda yeni yatırımlar yapabilirsiniz. Ancak dikkatli olmalı, riskleri hesaplamalısınız. Yeni gelir kaynakları açılabilir."
+              },
+              {
+                "question": "Joker kartı ruhsal anlamda ne ifade eder?",
+                "answer": "Ruhsal yolculuğunuzda yeni bir aşamaya geçiyorsunuz. İç sesinizi dinlemek ve sezgilerinize güvenmek önemlidir."
+              }
+            ]
+          },
+          "en": {
+            "meta_title": "The Fool Tarot Card Meaning and Interpretation | Free Tarot Reading",
+            "meta_description": "The Fool tarot card meaning, interpretation and story. Love, career and money interpretations of The Fool card in upright and reversed positions. Start your free tarot reading now.",
+            "canonical_url": "/en/cards/the-fool",
+            "og_image": "/images/tarot-cards/the-fool-og.jpg",
+            "twitter_image": "/images/tarot-cards/the-fool-twitter.jpg",
+            "keywords": [
+              "the fool tarot",
+              "tarot card",
+              "fool meaning",
+              "tarot interpretation",
+              "free tarot",
+              "tarot reading",
+              "fool story",
+              "tarot guide",
+              "new beginnings",
+              "innocence",
+              "spontaneity",
+              "taking risks",
+              "free spirit"
+            ],
+            "faq": [
+              {
+                "question": "What does The Fool tarot card mean?",
+                "answer": "The Fool card represents new beginnings, innocence, and potential. It shows that you are ready to embark on a new journey in life."
+              },
+              {
+                "question": "What does The Fool card mean in love?",
+                "answer": "A new chapter may open in your love life. If you are single, a new relationship may begin. You can make a fresh start in your current relationship."
+              },
+              {
+                "question": "What does The Fool card mean in career?",
+                "answer": "New opportunities may arise in your career. A new job, project, or career change may be in question. It is time to take bold steps."
+              },
+              {
+                "question": "What does The Fool card mean about money?",
+                "answer": "You can make new investments in money matters. However, you should be careful and calculate the risks. New sources of income may open up."
+              },
+              {
+                "question": "What does The Fool card mean spiritually?",
+                "answer": "You are moving to a new stage in your spiritual journey. It is important to listen to your inner voice and trust your intuition."
+              }
+            ]
+          },
+          "sr": {
+            "meta_title": "Joker Tarot Karta Značenje i Tumačenje | Besplatno Tarot Čitanje",
+            "meta_description": "Joker tarot karta značenje, tumačenje i priča. Ljubav, karijera i novac tumačenja Joker karte u uspravnom i obrnutom položaju. Počnite svoje besplatno tarot čitanje sada.",
+            "canonical_url": "/sr/kartice/joker",
+            "og_image": "/images/tarot-cards/the-fool-og.jpg",
+            "twitter_image": "/images/tarot-cards/the-fool-twitter.jpg",
+            "keywords": [
+              "joker tarot",
+              "tarot karta",
+              "joker značenje",
+              "tarot tumačenje",
+              "besplatno tarot",
+              "tarot čitanje",
+              "joker priča",
+              "tarot vodič"
+            ],
+            "faq": [
+              {
+                "question": "Šta znači Joker tarot karta?",
+                "answer": "Joker karta predstavlja nove početke, nevinost i potencijal. Pokazuje da ste spremni da krenete na novo putovanje u životu."
+              },
+              {
+                "question": "Šta znači Joker karta u ljubavi?",
+                "answer": "Može se otvoriti novo poglavlje u vašem ljubavnom životu. Ako ste sami, može početi nova veza. Možete napraviti svež početak u vašoj trenutnoj vezi."
+              },
+              {
+                "question": "Šta znači Joker karta u karijeri?",
+                "answer": "Mogu se pojaviti nove prilike u vašoj karijeri. Može biti u pitanju novi posao, projekat ili promena karijere. Vreme je da napravite hrabre korake."
+              },
+              {
+                "question": "Šta znači Joker karta o novcu?",
+                "answer": "Možete napraviti nove investicije u novčanim pitanjima. Međutim, trebalo bi da budete oprezni i izračunate rizike. Mogu se otvoriti novi izvori prihoda."
+              },
+              {
+                "question": "Šta znači Joker karta duhovno?",
+                "answer": "Prelazite u novu fazu u vašem duhovnom putovanju. Važno je da slušate svoj unutrašnji glas i verujete svojoj intuiciji."
+              }
+            ]
+          }
+        }
+      },
+      "the_high_priestess": {
+        "english_name": "The High Priestess",
+        "slug": {
+          "tr": "yuksek-rahibe",
+          "en": "the-high-priestess",
+          "sr": "visoka-svestenica"
+        },
+        "seo": {
+          "tr": {
+            "meta_title": "Yüksek Rahibe Tarot Kartı Anlamı ve Yorumu | Ücretsiz Tarot Okuması",
+            "meta_description": "Yüksek Rahibe tarot kartının anlamı, yorumu ve hikayesi. Düz ve ters pozisyonlarda Yüksek Rahibe kartının aşk, kariyer ve para yorumları. Ücretsiz tarot okuması için hemen başlayın.",
+            "canonical_url": "/tr/kartlar/yuksek-rahibe",
+            "og_image": "/images/tarot-cards/the-high-priestess-og.jpg",
+            "twitter_image": "/images/tarot-cards/the-high-priestess-twitter.jpg",
+            "keywords": [
+              "yüksek rahibe tarot",
+              "tarot kartı",
+              "yüksek rahibe anlamı",
+              "tarot yorumu",
+              "ücretsiz tarot",
+              "tarot okuması",
+              "yüksek rahibe hikayesi",
+              "tarot rehberi"
+            ],
+            "faq": [
+              {
+                "question": "Yüksek Rahibe tarot kartı ne anlama gelir?",
+                "answer": "Yüksek Rahibe kartı sezgileri, gizli bilgiyi ve ruhsal rehberliği temsil eder. İç sesinizi dinlemeniz ve sezgilerinize güvenmeniz gerektiğini gösterir."
+              },
+              {
+                "question": "Yüksek Rahibe kartı aşk hayatında ne anlama gelir?",
+                "answer": "Aşk hayatınızda sezgilerinize güvenin. İç sesiniz size doğru yolu gösterecektir. Mevcut ilişkinizde derinlemesine düşünmeniz gerekebilir."
+              },
+              {
+                "question": "Yüksek Rahibe kartı kariyerde ne anlama gelir?",
+                "answer": "Kariyerinizde gizli fırsatlar olabilir. Araştırma yapmalı ve bilgi toplamalısınız. Sezgileriniz size rehberlik edecektir."
+              },
+              {
+                "question": "Yüksek Rahibe kartı para konusunda ne anlama gelir?",
+                "answer": "Para konusunda dikkatli olmalısınız. Gizli mali durumlar olabilir. Araştırma yapmadan yatırım yapmamalısınız."
+              },
+              {
+                "question": "Yüksek Rahibe kartı ruhsal anlamda ne ifade eder?",
+                "answer": "Ruhsal yolculuğunuzda derinlemesine düşünmeniz gerekiyor. Meditasyon ve iç gözlem yapmalısınız."
+              }
+            ]
+          },
+          "en": {
+            "meta_title": "The High Priestess Tarot Card Meaning and Interpretation | Free Tarot Reading",
+            "meta_description": "The High Priestess tarot card meaning, interpretation and story. Love, career and money interpretations of The High Priestess card in upright and reversed positions. Start your free tarot reading now.",
+            "canonical_url": "/en/cards/the-high-priestess",
+            "og_image": "/images/tarot-cards/the-high-priestess-og.jpg",
+            "twitter_image": "/images/tarot-cards/the-high-priestess-twitter.jpg",
+            "keywords": [
+              "the high priestess tarot",
+              "tarot card",
+              "high priestess meaning",
+              "tarot interpretation",
+              "free tarot",
+              "tarot reading",
+              "high priestess story",
+              "tarot guide"
+            ],
+            "faq": [
+              {
+                "question": "What does The High Priestess tarot card mean?",
+                "answer": "The High Priestess card represents intuition, hidden knowledge, and spiritual guidance. It shows that you need to listen to your inner voice and trust your intuition."
+              },
+              {
+                "question": "What does The High Priestess card mean in love?",
+                "answer": "Trust your intuition in your love life. Your inner voice will show you the right path. You may need to think deeply about your current relationship."
+              },
+              {
+                "question": "What does The High Priestess card mean in career?",
+                "answer": "There may be hidden opportunities in your career. You should research and gather information. Your intuition will guide you."
+              },
+              {
+                "question": "What does The High Priestess card mean about money?",
+                "answer": "You should be careful about money matters. There may be hidden financial situations. You should not invest without research."
+              },
+              {
+                "question": "What does The High Priestess card mean spiritually?",
+                "answer": "You need to think deeply in your spiritual journey. You should meditate and do inner observation."
+              }
+            ]
+          },
+          "sr": {
+            "meta_title": "Visoka Svestenica Tarot Karta Značenje i Tumačenje | Besplatno Tarot Čitanje",
+            "meta_description": "Visoka Svestenica tarot karta značenje, tumačenje i priča. Ljubav, karijera i novac tumačenja Visoka Svestenica karte u uspravnom i obrnutom položaju. Počnite svoje besplatno tarot čitanje sada.",
+            "canonical_url": "/sr/kartice/visoka-svestenica",
+            "og_image": "/images/tarot-cards/the-high-priestess-og.jpg",
+            "twitter_image": "/images/tarot-cards/the-high-priestess-twitter.jpg",
+            "keywords": [
+              "visoka svestenica tarot",
+              "tarot karta",
+              "visoka svestenica značenje",
+              "tarot tumačenje",
+              "besplatno tarot",
+              "tarot čitanje",
+              "visoka svestenica priča",
+              "tarot vodič"
+            ],
+            "faq": [
+              {
+                "question": "Šta znači Visoka Svestenica tarot karta?",
+                "answer": "Visoka Svestenica karta predstavlja intuiciju, skriveno znanje i duhovno vođstvo. Pokazuje da treba da slušate svoj unutrašnji glas i verujete svojoj intuiciji."
+              },
+              {
+                "question": "Šta znači Visoka Svestenica karta u ljubavi?",
+                "answer": "Verujte svojoj intuiciji u vašem ljubavnom životu. Vaš unutrašnji glas će vam pokazati pravi put. Možda treba da duboko razmišljate o vašoj trenutnoj vezi."
+              },
+              {
+                "question": "Šta znači Visoka Svestenica karta u karijeri?",
+                "answer": "Mogu postojati skrivene prilike u vašoj karijeri. Trebalo bi da istražujete i prikupljate informacije. Vaša intuicija će vas voditi."
+              },
+              {
+                "question": "Šta znači Visoka Svestenica karta o novcu?",
+                "answer": "Trebalo bi da budete oprezni u novčanim pitanjima. Mogu postojati skrivene finansijske situacije. Ne treba da investirate bez istraživanja."
+              },
+              {
+                "question": "Šta znači Visoka Svestenica karta duhovno?",
+                "answer": "Treba da duboko razmišljate u vašem duhovnom putovanju. Trebalo bi da meditirate i radite unutrašnje posmatranje."
+              }
+            ]
+          }
+        }
+      }
+    },
+    "card_slugs_by_locale": {
+      "tr": {
+        "base_path": "kartlar",
+        "major_arcana": [
+          "joker",
+          "buyucu",
+          "yuksek-rahibe",
+          "imparatorice",
+          "imparator",
+          "basrahip",
+          "asiklar",
+          "savas-arabasi",
+          "guc",
+          "ermis",
+          "kader-carki",
+          "adalet",
+          "asili-adam",
+          "olum",
+          "olcululuk",
+          "seytan",
+          "kule",
+          "yildiz",
+          "ay",
+          "gunes",
+          "yargi",
+          "dunya"
+        ],
+        "minor_arcana": {
+          "cups": [
+            "kupalar-asi",
+            "kupalar-ikili",
+            "kupalar-uclu",
+            "kupalar-dortlu",
+            "kupalar-besli",
+            "kupalar-altili",
+            "kupalar-yedili",
+            "kupalar-sekizli",
+            "kupalar-dokuzlu",
+            "kupalar-onlu",
+            "kupalar-prensi",
+            "kupalar-sovayesi",
+            "kupalar-kralicesi",
+            "kupalar-krali"
           ],
-          "faq": [
-            {
-              "question": "Šta znači Joker tarot karta?",
-              "answer": "Joker karta predstavlja nove početke, nevinost i potencijal. Pokazuje da ste spremni da krenete na novo putovanje u životu."
-            },
-            {
-              "question": "Šta znači Joker karta u ljubavi?",
-              "answer": "Može se otvoriti novo poglavlje u vašem ljubavnom životu. Ako ste sami, može početi nova veza. Možete napraviti svež početak u vašoj trenutnoj vezi."
-            },
-            {
-              "question": "Šta znači Joker karta u karijeri?",
-              "answer": "Mogu se pojaviti nove prilike u vašoj karijeri. Može biti u pitanju novi posao, projekat ili promena karijere. Vreme je da napravite hrabre korake."
-            },
-            {
-              "question": "Šta znači Joker karta o novcu?",
-              "answer": "Možete napraviti nove investicije u novčanim pitanjima. Međutim, trebalo bi da budete oprezni i izračunate rizike. Mogu se otvoriti novi izvori prihoda."
-            },
-            {
-              "question": "Šta znači Joker karta duhovno?",
-              "answer": "Prelazite u novu fazu u vašem duhovnom putovanju. Važno je da slušate svoj unutrašnji glas i verujete svojoj intuiciji."
-            }
+          "swords": [
+            "kiliclar-asi",
+            "kiliclar-ikili",
+            "kiliclar-uclu",
+            "kiliclar-dortlu",
+            "kiliclar-besli",
+            "kiliclar-altili",
+            "kiliclar-yedili",
+            "kiliclar-sekizli",
+            "kiliclar-dokuzlu",
+            "kiliclar-onlu",
+            "kiliclar-prensi",
+            "kiliclar-sovayesi",
+            "kiliclar-kralicesi",
+            "kiliclar-krali"
+          ],
+          "wands": [
+            "asalar-asi",
+            "asalar-ikili",
+            "asalar-uclu",
+            "asalar-dortlu",
+            "asalar-besli",
+            "asalar-altili",
+            "asalar-yedili",
+            "asalar-sekizli",
+            "asalar-dokuzlu",
+            "asalar-onlu",
+            "asalar-prensi",
+            "asalar-sovayesi",
+            "asalar-kralicesi",
+            "asalar-krali"
+          ],
+          "pentacles": [
+            "paralar-asi",
+            "paralar-ikili",
+            "paralar-uclu",
+            "paralar-dortlu",
+            "paralar-besli",
+            "paralar-altili",
+            "paralar-yedili",
+            "paralar-sekizli",
+            "paralar-dokuzlu",
+            "paralar-onlu",
+            "paralar-prensi",
+            "paralar-sovayesi",
+            "paralar-kralicesi",
+            "paralar-krali"
+          ]
+        }
+      },
+      "en": {
+        "base_path": "cards",
+        "major_arcana": [
+          "the-fool",
+          "the-magician",
+          "the-high-priestess",
+          "the-empress",
+          "the-emperor",
+          "the-hierophant",
+          "the-lovers",
+          "the-chariot",
+          "strength",
+          "the-hermit",
+          "wheel-of-fortune",
+          "justice",
+          "the-hanged-man",
+          "death",
+          "temperance",
+          "the-devil",
+          "the-tower",
+          "the-star",
+          "the-moon",
+          "the-sun",
+          "judgement",
+          "the-world"
+        ],
+        "minor_arcana": {
+          "cups": [
+            "ace-of-cups",
+            "two-of-cups",
+            "three-of-cups",
+            "four-of-cups",
+            "five-of-cups",
+            "six-of-cups",
+            "seven-of-cups",
+            "eight-of-cups",
+            "nine-of-cups",
+            "ten-of-cups",
+            "page-of-cups",
+            "knight-of-cups",
+            "queen-of-cups",
+            "king-of-cups"
+          ],
+          "swords": [
+            "ace-of-swords",
+            "two-of-swords",
+            "three-of-swords",
+            "four-of-swords",
+            "five-of-swords",
+            "six-of-swords",
+            "seven-of-swords",
+            "eight-of-swords",
+            "nine-of-swords",
+            "ten-of-swords",
+            "page-of-swords",
+            "knight-of-swords",
+            "queen-of-swords",
+            "king-of-swords"
+          ],
+          "wands": [
+            "ace-of-wands",
+            "two-of-wands",
+            "three-of-wands",
+            "four-of-wands",
+            "five-of-wands",
+            "six-of-wands",
+            "seven-of-wands",
+            "eight-of-wands",
+            "nine-of-wands",
+            "ten-of-wands",
+            "page-of-wands",
+            "knight-of-wands",
+            "queen-of-wands",
+            "king-of-wands"
+          ],
+          "pentacles": [
+            "ace-of-pentacles",
+            "two-of-pentacles",
+            "three-of-pentacles",
+            "four-of-pentacles",
+            "five-of-pentacles",
+            "six-of-pentacles",
+            "seven-of-pentacles",
+            "eight-of-pentacles",
+            "nine-of-pentacles",
+            "ten-of-pentacles",
+            "page-of-pentacles",
+            "knight-of-pentacles",
+            "queen-of-pentacles",
+            "king-of-pentacles"
+          ]
+        }
+      },
+      "sr": {
+        "base_path": "kartice",
+        "major_arcana": [
+          "joker",
+          "carobnjak",
+          "visoka-svestenica",
+          "carica",
+          "car",
+          "prvosveštenica",
+          "ljubavnici",
+          "ratna-kolica",
+          "snaga",
+          "pustinjak",
+          "kolo-srece",
+          "pravda",
+          "obeseni",
+          "smrt",
+          "umerenost",
+          "djavol",
+          "kula",
+          "zvezda",
+          "mesec",
+          "sunce",
+          "sud",
+          "svet"
+        ],
+        "minor_arcana": {
+          "cups": [
+            "as-pehara",
+            "dva-pehara",
+            "tri-pehara",
+            "cetiri-pehara",
+            "pet-pehara",
+            "sest-pehara",
+            "sedam-pehara",
+            "osam-pehara",
+            "devet-pehara",
+            "deset-pehara",
+            "paz-pehara",
+            "vitez-pehara",
+            "kraljica-pehara",
+            "kralj-pehara"
+          ],
+          "swords": [
+            "as-macova",
+            "dva-macova",
+            "tri-macova",
+            "cetiri-macova",
+            "pet-macova",
+            "sest-macova",
+            "sedam-macova",
+            "osam-macova",
+            "devet-macova",
+            "deset-macova",
+            "paz-macova",
+            "vitez-macova",
+            "kraljica-macova",
+            "kralj-macova"
+          ],
+          "wands": [
+            "as-stapova",
+            "dva-stapova",
+            "tri-stapova",
+            "cetiri-stapova",
+            "pet-stapova",
+            "sest-stapova",
+            "sedam-stapova",
+            "osam-stapova",
+            "devet-stapova",
+            "deset-stapova",
+            "paz-stapova",
+            "vitez-stapova",
+            "kraljica-stapova",
+            "kralj-stapova"
+          ],
+          "pentacles": [
+            "as-diskova",
+            "dva-diskova",
+            "tri-diskova",
+            "cetiri-diskova",
+            "pet-diskova",
+            "sest-diskova",
+            "sedam-diskova",
+            "osam-diskova",
+            "devet-diskova",
+            "deset-diskova",
+            "paz-diskova",
+            "vitez-diskova",
+            "kraljica-diskova",
+            "kralj-diskova"
           ]
         }
       }
     },
-    "the_high_priestess": {
-      "english_name": "The High Priestess",
-      "slug": {
-        "tr": "yuksek-rahibe",
-        "en": "the-high-priestess",
-        "sr": "visoka-svestenica"
-      },
-      "seo": {
-        "tr": {
-          "meta_title": "Yüksek Rahibe Tarot Kartı Anlamı ve Yorumu | Ücretsiz Tarot Okuması",
-          "meta_description": "Yüksek Rahibe tarot kartının anlamı, yorumu ve hikayesi. Düz ve ters pozisyonlarda Yüksek Rahibe kartının aşk, kariyer ve para yorumları. Ücretsiz tarot okuması için hemen başlayın.",
-          "canonical_url": "/tr/kartlar/yuksek-rahibe",
-          "og_image": "/images/tarot-cards/the-high-priestess-og.jpg",
-          "twitter_image": "/images/tarot-cards/the-high-priestess-twitter.jpg",
-          "keywords": [
-            "yüksek rahibe tarot",
-            "tarot kartı",
-            "yüksek rahibe anlamı",
-            "tarot yorumu",
-            "ücretsiz tarot",
-            "tarot okuması",
-            "yüksek rahibe hikayesi",
-            "tarot rehberi"
-          ],
-          "faq": [
-            {
-              "question": "Yüksek Rahibe tarot kartı ne anlama gelir?",
-              "answer": "Yüksek Rahibe kartı sezgileri, gizli bilgiyi ve ruhsal rehberliği temsil eder. İç sesinizi dinlemeniz ve sezgilerinize güvenmeniz gerektiğini gösterir."
-            },
-            {
-              "question": "Yüksek Rahibe kartı aşk hayatında ne anlama gelir?",
-              "answer": "Aşk hayatınızda sezgilerinize güvenin. İç sesiniz size doğru yolu gösterecektir. Mevcut ilişkinizde derinlemesine düşünmeniz gerekebilir."
-            },
-            {
-              "question": "Yüksek Rahibe kartı kariyerde ne anlama gelir?",
-              "answer": "Kariyerinizde gizli fırsatlar olabilir. Araştırma yapmalı ve bilgi toplamalısınız. Sezgileriniz size rehberlik edecektir."
-            },
-            {
-              "question": "Yüksek Rahibe kartı para konusunda ne anlama gelir?",
-              "answer": "Para konusunda dikkatli olmalısınız. Gizli mali durumlar olabilir. Araştırma yapmadan yatırım yapmamalısınız."
-            },
-            {
-              "question": "Yüksek Rahibe kartı ruhsal anlamda ne ifade eder?",
-              "answer": "Ruhsal yolculuğunuzda derinlemesine düşünmeniz gerekiyor. Meditasyon ve iç gözlem yapmalısınız."
-            }
-          ]
-        },
-        "en": {
-          "meta_title": "The High Priestess Tarot Card Meaning and Interpretation | Free Tarot Reading",
-          "meta_description": "The High Priestess tarot card meaning, interpretation and story. Love, career and money interpretations of The High Priestess card in upright and reversed positions. Start your free tarot reading now.",
-          "canonical_url": "/en/cards/the-high-priestess",
-          "og_image": "/images/tarot-cards/the-high-priestess-og.jpg",
-          "twitter_image": "/images/tarot-cards/the-high-priestess-twitter.jpg",
-          "keywords": [
-            "the high priestess tarot",
-            "tarot card",
-            "high priestess meaning",
-            "tarot interpretation",
-            "free tarot",
-            "tarot reading",
-            "high priestess story",
-            "tarot guide"
-          ],
-          "faq": [
-            {
-              "question": "What does The High Priestess tarot card mean?",
-              "answer": "The High Priestess card represents intuition, hidden knowledge, and spiritual guidance. It shows that you need to listen to your inner voice and trust your intuition."
-            },
-            {
-              "question": "What does The High Priestess card mean in love?",
-              "answer": "Trust your intuition in your love life. Your inner voice will show you the right path. You may need to think deeply about your current relationship."
-            },
-            {
-              "question": "What does The High Priestess card mean in career?",
-              "answer": "There may be hidden opportunities in your career. You should research and gather information. Your intuition will guide you."
-            },
-            {
-              "question": "What does The High Priestess card mean about money?",
-              "answer": "You should be careful about money matters. There may be hidden financial situations. You should not invest without research."
-            },
-            {
-              "question": "What does The High Priestess card mean spiritually?",
-              "answer": "You need to think deeply in your spiritual journey. You should meditate and do inner observation."
-            }
-          ]
-        },
-        "sr": {
-          "meta_title": "Visoka Svestenica Tarot Karta Značenje i Tumačenje | Besplatno Tarot Čitanje",
-          "meta_description": "Visoka Svestenica tarot karta značenje, tumačenje i priča. Ljubav, karijera i novac tumačenja Visoka Svestenica karte u uspravnom i obrnutom položaju. Počnite svoje besplatno tarot čitanje sada.",
-          "canonical_url": "/sr/kartice/visoka-svestenica",
-          "og_image": "/images/tarot-cards/the-high-priestess-og.jpg",
-          "twitter_image": "/images/tarot-cards/the-high-priestess-twitter.jpg",
-          "keywords": [
-            "visoka svestenica tarot",
-            "tarot karta",
-            "visoka svestenica značenje",
-            "tarot tumačenje",
-            "besplatno tarot",
-            "tarot čitanje",
-            "visoka svestenica priča",
-            "tarot vodič"
-          ],
-          "faq": [
-            {
-              "question": "Šta znači Visoka Svestenica tarot karta?",
-              "answer": "Visoka Svestenica karta predstavlja intuiciju, skriveno znanje i duhovno vođstvo. Pokazuje da treba da slušate svoj unutrašnji glas i verujete svojoj intuiciji."
-            },
-            {
-              "question": "Šta znači Visoka Svestenica karta u ljubavi?",
-              "answer": "Verujte svojoj intuiciji u vašem ljubavnom životu. Vaš unutrašnji glas će vam pokazati pravi put. Možda treba da duboko razmišljate o vašoj trenutnoj vezi."
-            },
-            {
-              "question": "Šta znači Visoka Svestenica karta u karijeri?",
-              "answer": "Mogu postojati skrivene prilike u vašoj karijeri. Trebalo bi da istražujete i prikupljate informacije. Vaša intuicija će vas voditi."
-            },
-            {
-              "question": "Šta znači Visoka Svestenica karta o novcu?",
-              "answer": "Trebalo bi da budete oprezni u novčanim pitanjima. Mogu postojati skrivene finansijske situacije. Ne treba da investirate bez istraživanja."
-            },
-            {
-              "question": "Šta znači Visoka Svestenica karta duhovno?",
-              "answer": "Treba da duboko razmišljate u vašem duhovnom putovanju. Trebalo bi da meditirate i radite unutrašnje posmatranje."
-            }
-          ]
+    "structured_data_schema": {
+      "website": {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Büşbüşkimki",
+        "url": "https://busbuskimki.com",
+        "description": "Profesyonel tarot okuması ve numeroloji analizi",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://busbuskimki.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
         }
-      }
-    }
-  },
-  "card_slugs_by_locale": {
-    "tr": {
-      "base_path": "kartlar",
-      "major_arcana": [
-        "joker",
-        "buyucu",
-        "yuksek-rahibe",
-        "imparatorice",
-        "imparator",
-        "basrahip",
-        "asiklar",
-        "savas-arabasi",
-        "guc",
-        "ermis",
-        "kader-carki",
-        "adalet",
-        "asili-adam",
-        "olum",
-        "olcululuk",
-        "seytan",
-        "kule",
-        "yildiz",
-        "ay",
-        "gunes",
-        "yargi",
-        "dunya"
-      ],
-      "minor_arcana": {
-        "cups": [
-          "kupalar-asi",
-          "kupalar-ikili",
-          "kupalar-uclu",
-          "kupalar-dortlu",
-          "kupalar-besli",
-          "kupalar-altili",
-          "kupalar-yedili",
-          "kupalar-sekizli",
-          "kupalar-dokuzlu",
-          "kupalar-onlu",
-          "kupalar-prensi",
-          "kupalar-sovayesi",
-          "kupalar-kralicesi",
-          "kupalar-krali"
-        ],
-        "swords": [
-          "kiliclar-asi",
-          "kiliclar-ikili",
-          "kiliclar-uclu",
-          "kiliclar-dortlu",
-          "kiliclar-besli",
-          "kiliclar-altili",
-          "kiliclar-yedili",
-          "kiliclar-sekizli",
-          "kiliclar-dokuzlu",
-          "kiliclar-onlu",
-          "kiliclar-prensi",
-          "kiliclar-sovayesi",
-          "kiliclar-kralicesi",
-          "kiliclar-krali"
-        ],
-        "wands": [
-          "asalar-asi",
-          "asalar-ikili",
-          "asalar-uclu",
-          "asalar-dortlu",
-          "asalar-besli",
-          "asalar-altili",
-          "asalar-yedili",
-          "asalar-sekizli",
-          "asalar-dokuzlu",
-          "asalar-onlu",
-          "asalar-prensi",
-          "asalar-sovayesi",
-          "asalar-kralicesi",
-          "asalar-krali"
-        ],
-        "pentacles": [
-          "paralar-asi",
-          "paralar-ikili",
-          "paralar-uclu",
-          "paralar-dortlu",
-          "paralar-besli",
-          "paralar-altili",
-          "paralar-yedili",
-          "paralar-sekizli",
-          "paralar-dokuzlu",
-          "paralar-onlu",
-          "paralar-prensi",
-          "paralar-sovayesi",
-          "paralar-kralicesi",
-          "paralar-krali"
-        ]
-      }
-    },
-    "en": {
-      "base_path": "cards",
-      "major_arcana": [
-        "the-fool",
-        "the-magician",
-        "the-high-priestess",
-        "the-empress",
-        "the-emperor",
-        "the-hierophant",
-        "the-lovers",
-        "the-chariot",
-        "strength",
-        "the-hermit",
-        "wheel-of-fortune",
-        "justice",
-        "the-hanged-man",
-        "death",
-        "temperance",
-        "the-devil",
-        "the-tower",
-        "the-star",
-        "the-moon",
-        "the-sun",
-        "judgement",
-        "the-world"
-      ],
-      "minor_arcana": {
-        "cups": [
-          "ace-of-cups",
-          "two-of-cups",
-          "three-of-cups",
-          "four-of-cups",
-          "five-of-cups",
-          "six-of-cups",
-          "seven-of-cups",
-          "eight-of-cups",
-          "nine-of-cups",
-          "ten-of-cups",
-          "page-of-cups",
-          "knight-of-cups",
-          "queen-of-cups",
-          "king-of-cups"
-        ],
-        "swords": [
-          "ace-of-swords",
-          "two-of-swords",
-          "three-of-swords",
-          "four-of-swords",
-          "five-of-swords",
-          "six-of-swords",
-          "seven-of-swords",
-          "eight-of-swords",
-          "nine-of-swords",
-          "ten-of-swords",
-          "page-of-swords",
-          "knight-of-swords",
-          "queen-of-swords",
-          "king-of-swords"
-        ],
-        "wands": [
-          "ace-of-wands",
-          "two-of-wands",
-          "three-of-wands",
-          "four-of-wands",
-          "five-of-wands",
-          "six-of-wands",
-          "seven-of-wands",
-          "eight-of-wands",
-          "nine-of-wands",
-          "ten-of-wands",
-          "page-of-wands",
-          "knight-of-wands",
-          "queen-of-wands",
-          "king-of-wands"
-        ],
-        "pentacles": [
-          "ace-of-pentacles",
-          "two-of-pentacles",
-          "three-of-pentacles",
-          "four-of-pentacles",
-          "five-of-pentacles",
-          "six-of-pentacles",
-          "seven-of-pentacles",
-          "eight-of-pentacles",
-          "nine-of-pentacles",
-          "ten-of-pentacles",
-          "page-of-pentacles",
-          "knight-of-pentacles",
-          "queen-of-pentacles",
-          "king-of-pentacles"
-        ]
-      }
-    },
-    "sr": {
-      "base_path": "kartice",
-      "major_arcana": [
-        "joker",
-        "carobnjak",
-        "visoka-svestenica",
-        "carica",
-        "car",
-        "prvosveštenica",
-        "ljubavnici",
-        "ratna-kolica",
-        "snaga",
-        "pustinjak",
-        "kolo-srece",
-        "pravda",
-        "obeseni",
-        "smrt",
-        "umerenost",
-        "djavol",
-        "kula",
-        "zvezda",
-        "mesec",
-        "sunce",
-        "sud",
-        "svet"
-      ],
-      "minor_arcana": {
-        "cups": [
-          "as-pehara",
-          "dva-pehara",
-          "tri-pehara",
-          "cetiri-pehara",
-          "pet-pehara",
-          "sest-pehara",
-          "sedam-pehara",
-          "osam-pehara",
-          "devet-pehara",
-          "deset-pehara",
-          "paz-pehara",
-          "vitez-pehara",
-          "kraljica-pehara",
-          "kralj-pehara"
-        ],
-        "swords": [
-          "as-macova",
-          "dva-macova",
-          "tri-macova",
-          "cetiri-macova",
-          "pet-macova",
-          "sest-macova",
-          "sedam-macova",
-          "osam-macova",
-          "devet-macova",
-          "deset-macova",
-          "paz-macova",
-          "vitez-macova",
-          "kraljica-macova",
-          "kralj-macova"
-        ],
-        "wands": [
-          "as-stapova",
-          "dva-stapova",
-          "tri-stapova",
-          "cetiri-stapova",
-          "pet-stapova",
-          "sest-stapova",
-          "sedam-stapova",
-          "osam-stapova",
-          "devet-stapova",
-          "deset-stapova",
-          "paz-stapova",
-          "vitez-stapova",
-          "kraljica-stapova",
-          "kralj-stapova"
-        ],
-        "pentacles": [
-          "as-diskova",
-          "dva-diskova",
-          "tri-diskova",
-          "cetiri-diskova",
-          "pet-diskova",
-          "sest-diskova",
-          "sedam-diskova",
-          "osam-diskova",
-          "devet-diskova",
-          "deset-diskova",
-          "paz-diskova",
-          "vitez-diskova",
-          "kraljica-diskova",
-          "kralj-diskova"
-        ]
-      }
-    }
-  },
-  "structured_data_schema": {
-    "website": {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Büşbüşkimki",
-      "url": "https://busbuskimki.com",
-      "description": "Profesyonel tarot okuması ve numeroloji analizi",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://busbuskimki.com/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    },
-    "organization": {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Büşbüşkimki",
-      "url": "https://busbuskimki.com",
-      "logo": "https://busbuskimki.com/images/logo.png",
-      "sameAs": [
-        "https://facebook.com/busbuskimki",
-        "https://instagram.com/busbuskimki",
-        "https://twitter.com/busbuskimki"
-      ]
-    },
-    "faq_page_template": {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": []
-    },
-    "article_template": {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "{card_title}",
-      "description": "{card_description}",
-      "image": "{card_image_url}",
-      "author": {
-        "@type": "Organization",
-        "name": "Büşbüşkimki"
       },
-      "publisher": {
+      "organization": {
+        "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Büşbüşkimki",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://busbuskimki.com/images/logo.png"
+        "url": "https://busbuskimki.com",
+        "logo": "https://busbuskimki.com/images/logo.png",
+        "sameAs": [
+          "https://facebook.com/busbuskimki",
+          "https://instagram.com/busbuskimki",
+          "https://twitter.com/busbuskimki"
+        ]
+      },
+      "faq_page_template": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": []
+      },
+      "article_template": {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "{card_title}",
+        "description": "{card_description}",
+        "image": "{card_image_url}",
+        "author": {
+          "@type": "Organization",
+          "name": "Büşbüşkimki"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Büşbüşkimki",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://busbuskimki.com/images/logo.png"
+          }
         }
       }
-    }
-  },
-  "html_meta_tags": {
-    "basic": [
-      {
-        "name": "viewport",
-        "content": "width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes"
-      },
-      {
-        "name": "theme-color",
-        "content": "#1a1a2e"
-      },
-      {
-        "name": "apple-mobile-web-app-capable",
-        "content": "yes"
-      },
-      {
-        "name": "apple-mobile-web-app-status-bar-style",
-        "content": "default"
-      },
-      {
-        "name": "mobile-web-app-capable",
-        "content": "yes"
-      },
-      {
-        "name": "msapplication-TileColor",
-        "content": "#1a1a2e"
-      },
-      {
-        "name": "msapplication-tap-highlight",
-        "content": "no"
-      }
-    ],
-    "seo": [
-      {
-        "name": "author",
-        "content": "Busbuskimki Tarot"
-      },
-      {
-        "name": "robots",
-        "content": "index, follow"
-      },
-      {
-        "name": "googlebot",
-        "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-      }
-    ]
-  },
-  "numerology_seo": {
-    "tr": {
-      "title": "Numeroloji Hesaplama - Yaşam Yolu ve Kişilik Analizi",
-      "description": "Sayıların sırlarını keşfedin. Yaşam yolunuzu, ifade sayınızı ve ruhsal arzunuzu öğrenin.",
-      "keywords": [
-        "numeroloji",
-        "yaşam yolu",
-        "kişilik analizi",
-        "sayıların anlamı",
-        "numeroloji hesaplama"
-      ],
-      "life_path_numbers": {
-        "1": {
-          "title": "Lider ve Öncü",
-          "description": "1 sayısı liderlik, bağımsızlık ve yeni başlangıçları temsil eder."
-        },
-        "2": {
-          "title": "Diplomat ve İşbirlikçi",
-          "description": "2 sayısı işbirliği, denge ve uyumu temsil eder."
-        },
-        "3": {
-          "title": "Yaratıcı ve İletişimci",
-          "description": "3 sayısı yaratıcılık, iletişim ve sosyalliği temsil eder."
-        },
-        "4": {
-          "title": "Pratik ve Güvenilir",
-          "description": "4 sayısı pratiklik, güvenilirlik ve stabiliteyi temsil eder."
-        },
-        "5": {
-          "title": "Özgür Ruh ve Maceracı",
-          "description": "5 sayısı özgürlük, macera ve değişimi temsil eder."
-        },
-        "6": {
-          "title": "Koruyucu ve Şefkatli",
-          "description": "6 sayısı şefkat, koruma ve sorumluluğu temsil eder."
-        },
-        "7": {
-          "title": "Bilge ve Ruhsal",
-          "description": "7 sayısı bilgelik, ruhsallık ve içe dönüklüğü temsil eder."
-        },
-        "8": {
-          "title": "Lider ve Organizatör",
-          "description": "8 sayısı liderlik, organizasyon ve maddi başarıyı temsil eder."
-        },
-        "9": {
-          "title": "Evrensel ve Cömert",
-          "description": "9 sayısı evrensellik, cömertlik ve spiritüaliteyi temsil eder."
-        }
-      }
-    }
-  },
-  "alternate_languages": {
-    "homepage": {
-      "tr": "https://busbuskimki.com/tr",
-      "en": "https://busbuskimki.com/en",
-      "sr": "https://busbuskimki.com/sr",
-      "x-default": "https://busbuskimki.com/tr"
     },
-    "card_template": {
-      "tr": "https://busbuskimki.com/tr/kartlar/{slug}",
-      "en": "https://busbuskimki.com/en/cards/{slug}",
-      "sr": "https://busbuskimki.com/sr/kartice/{slug}"
+    "html_meta_tags": {
+      "basic": [
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes"
+        },
+        {
+          "name": "theme-color",
+          "content": "#1a1a2e"
+        },
+        {
+          "name": "apple-mobile-web-app-capable",
+          "content": "yes"
+        },
+        {
+          "name": "apple-mobile-web-app-status-bar-style",
+          "content": "default"
+        },
+        {
+          "name": "mobile-web-app-capable",
+          "content": "yes"
+        },
+        {
+          "name": "msapplication-TileColor",
+          "content": "#1a1a2e"
+        },
+        {
+          "name": "msapplication-tap-highlight",
+          "content": "no"
+        }
+      ],
+      "seo": [
+        {
+          "name": "author",
+          "content": "Busbuskimki Tarot"
+        },
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        }
+      ]
+    },
+    "numerology_seo": {
+      "tr": {
+        "title": "Numeroloji Hesaplama - Yaşam Yolu ve Kişilik Analizi",
+        "description": "Sayıların sırlarını keşfedin. Yaşam yolunuzu, ifade sayınızı ve ruhsal arzunuzu öğrenin.",
+        "keywords": ["numeroloji", "yaşam yolu", "kişilik analizi", "sayıların anlamı", "numeroloji hesaplama"],
+        "life_path_numbers": {
+          "1": {
+            "title": "Lider ve Öncü",
+            "description": "1 sayısı liderlik, bağımsızlık ve yeni başlangıçları temsil eder."
+          },
+          "2": {
+            "title": "Diplomat ve İşbirlikçi",
+            "description": "2 sayısı işbirliği, denge ve uyumu temsil eder."
+          },
+          "3": {
+            "title": "Yaratıcı ve İletişimci",
+            "description": "3 sayısı yaratıcılık, iletişim ve sosyalliği temsil eder."
+          },
+          "4": {
+            "title": "Pratik ve Güvenilir",
+            "description": "4 sayısı pratiklik, güvenilirlik ve stabiliteyi temsil eder."
+          },
+          "5": {
+            "title": "Özgür Ruh ve Maceracı",
+            "description": "5 sayısı özgürlük, macera ve değişimi temsil eder."
+          },
+          "6": {
+            "title": "Koruyucu ve Şefkatli",
+            "description": "6 sayısı şefkat, koruma ve sorumluluğu temsil eder."
+          },
+          "7": {
+            "title": "Bilge ve Ruhsal",
+            "description": "7 sayısı bilgelik, ruhsallık ve içe dönüklüğü temsil eder."
+          },
+          "8": {
+            "title": "Lider ve Organizatör",
+            "description": "8 sayısı liderlik, organizasyon ve maddi başarıyı temsil eder."
+          },
+          "9": {
+            "title": "Evrensel ve Cömert",
+            "description": "9 sayısı evrensellik, cömertlik ve spiritüaliteyi temsil eder."
+          }
+        }
+      }
+    },
+    "alternate_languages": {
+      "homepage": {
+        "tr": "https://busbuskimki.com/tr",
+        "en": "https://busbuskimki.com/en",
+        "sr": "https://busbuskimki.com/sr",
+        "x-default": "https://busbuskimki.com/tr"
+      },
+      "card_template": {
+        "tr": "https://busbuskimki.com/tr/kartlar/{slug}",
+        "en": "https://busbuskimki.com/en/cards/{slug}",
+        "sr": "https://busbuskimki.com/sr/kartice/{slug}"
+      }
+    },
+    "sitemap_priorities": {
+      "homepage": 1.0,
+      "tarot_reading": 0.9,
+      "numerology": 0.9,
+      "card_gallery": 0.8,
+      "card_detail": 0.8,
+      "spreads_love": 0.8,
+      "spreads_career": 0.7,
+      "spreads_other": 0.6,
+      "dashboard": 0.8,
+      "auth": 0.7,
+      "legal": 0.5
+    },
+    "notes": {
+      "usage": "Bu JSON dosyası TaraTarot projesinin tüm SEO metinlerini içerir. Yeni sayfalar eklendiğinde bu dosya güncellenmeli.",
+      "card_count": "78 tarot kartı × 3 dil = 234 kart sayfası",
+      "total_pages": "Ana sayfalar + Kart sayfaları + Açılım sayfaları + Yasal sayfalar ≈ 280+ sayfa",
+      "seo_files": [
+        "src/lib/config/metadata.ts",
+        "src/lib/seo/enhanced-meta-generator.ts",
+        "src/lib/seo.ts",
+        "src/lib/seo/page-seo-generator.ts",
+        "src/features/tarot-cards/lib/card-seo.ts",
+        "src/components/seo/seo.tsx",
+        "src/components/seo/StructuredData.tsx",
+        "src/features/shared/layout/HeadTags.tsx",
+        "src/hooks/usePageMeta.ts",
+        "src/app/sitemap.ts",
+        "messages/tr.json",
+        "messages/en.json",
+        "messages/sr.json",
+        "migrations/003_insert_seo_data.sql"
+      ],
+      "database_tables": [
+        "card_seo (meta_title, meta_description, canonical_url, og_image, twitter_image, keywords, faq)",
+        "card_pages (card_id, locale, slug, path, is_active)"
+      ]
     }
-  },
-  "sitemap_priorities": {
-    "homepage": 1.0,
-    "tarot_reading": 0.9,
-    "numerology": 0.9,
-    "card_gallery": 0.8,
-    "card_detail": 0.8,
-    "spreads_love": 0.8,
-    "spreads_career": 0.7,
-    "spreads_other": 0.6,
-    "dashboard": 0.8,
-    "auth": 0.7,
-    "legal": 0.5
-  },
-  "notes": {
-    "usage": "Bu JSON dosyası TaraTarot projesinin tüm SEO metinlerini içerir. Yeni sayfalar eklendiğinde bu dosya güncellenmeli.",
-    "card_count": "78 tarot kartı × 3 dil = 234 kart sayfası",
-    "total_pages": "Ana sayfalar + Kart sayfaları + Açılım sayfaları + Yasal sayfalar ≈ 280+ sayfa",
-    "seo_files": [
-      "src/lib/config/metadata.ts",
-      "src/lib/seo/enhanced-meta-generator.ts",
-      "src/lib/seo.ts",
-      "src/lib/seo/page-seo-generator.ts",
-      "src/features/tarot-cards/lib/card-seo.ts",
-      "src/components/seo/seo.tsx",
-      "src/components/seo/StructuredData.tsx",
-      "src/features/shared/layout/HeadTags.tsx",
-      "src/hooks/usePageMeta.ts",
-      "src/app/sitemap.ts",
-      "messages/tr.json",
-      "messages/en.json",
-      "messages/sr.json",
-      "migrations/003_insert_seo_data.sql"
-    ],
-    "database_tables": [
-      "card_seo (meta_title, meta_description, canonical_url, og_image, twitter_image, keywords, faq)",
-      "card_pages (card_id, locale, slug, path, is_active)"
-    ]
   }
-}
 }

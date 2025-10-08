@@ -43,4 +43,3 @@
     "automated": "npm run i18n:add-simple -- --file=i18nfix/patches/add-missing-i18n-keys.json"
   }
 }
-

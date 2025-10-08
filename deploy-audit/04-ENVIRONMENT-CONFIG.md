@@ -33,11 +33,13 @@ GEMINI_API_KEY=                  # ❌ Gemini AI için
 ```
 
 **Etki:**
+
 - AI yorumları çalışmaz
 - Kullanıcılar tarot okumalarından yararlanamaz
 - Production'da runtime error
 
 **Çözüm:**
+
 ```bash
 # env.example'a ekle:
 # AI Configuration
@@ -58,11 +60,13 @@ SUPABASE_SERVICE_ROLE_KEY=eyJ...  # ⚠️ Dikkatli kullanılmalı
 ```
 
 **Eksik Bilgiler:**
+
 - Hangi environment için? (dev, staging, prod)
 - Service role ne zaman kullanılmalı?
 - RLS policy'leri nasıl?
 
 **Önerilen Güncelleme:**
+
 ```bash
 # Supabase Configuration
 # DEV: https://dev-project.supabase.co
@@ -90,6 +94,7 @@ NEXT_PUBLIC_WEBSOCKET_URL=        # ❌ Realtime için (varsa)
 ```
 
 **Önerilen:**
+
 ```bash
 # Application URLs
 NEXT_PUBLIC_SITE_URL=http://localhost:3111        # Main site
@@ -117,6 +122,7 @@ SHOPIER_TIMEOUT=30000             # ❌ Request timeout
 ```
 
 **Önerilen:**
+
 ```bash
 # Shopier Payment Configuration
 SHOPIER_MERCHANT_ID=your-merchant-id
@@ -153,6 +159,7 @@ SMTP_TIMEOUT=10000                # ❌ Timeout
 ```
 
 **Önerilen:**
+
 ```bash
 # Email Configuration (for PDF notifications)
 SMTP_HOST=smtp.gmail.com
@@ -183,6 +190,7 @@ API_RATE_LIMIT_SECRET=           # ❌ Rate limiting token
 ```
 
 **Önerilen:**
+
 ```bash
 # Security & Secrets
 WEBHOOK_SECRET=your-webhook-secret
@@ -213,6 +221,7 @@ LOG_LEVEL=info                    # Logging level
 ```
 
 **Önerilen:**
+
 ```bash
 # Analytics & Monitoring (optional)
 NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX           # Google Analytics
@@ -264,37 +273,40 @@ import { z } from 'zod';
 const envSchema = z.object({
   // Node
   NODE_ENV: z.enum(['development', 'production', 'test']),
-  
+
   // Supabase
   NEXT_PUBLIC_SUPABASE_URL: z.string().url(),
   NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string().min(20),
   SUPABASE_SERVICE_ROLE_KEY: z.string().min(20).optional(),
-  
+
   // App
   NEXT_PUBLIC_SITE_URL: z.string().url(),
   NEXT_PUBLIC_CONTACT_PHONE: z.string(),
-  
+
   // AI
   GROQ_API_KEY: z.string().min(20).optional(),
   GEMINI_API_KEY: z.string().min(20).optional(),
-  
+
   // Payment
   SHOPIER_MERCHANT_ID: z.string().optional(),
   SHOPIER_API_KEY: z.string().optional(),
   SHOPIER_API_SECRET: z.string().optional(),
   SHOPIER_TEST_MODE: z.string().transform(val => val === 'true'),
-  
+
   // Email
   SMTP_HOST: z.string().optional(),
   SMTP_PORT: z.string().transform(Number).optional(),
   SMTP_USER: z.string().email().optional(),
   SMTP_PASS: z.string().optional(),
-  
+
   // Security
   WEBHOOK_SECRET: z.string().min(32).optional(),
-  
+
   // Debug
-  DEBUG: z.string().transform(val => val === 'true').default('false'),
+  DEBUG: z
+    .string()
+    .transform(val => val === 'true')
+    .default('false'),
 });
 
 export type Env = z.infer<typeof envSchema>;
@@ -334,6 +346,7 @@ const supabaseAnonKey = env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 ### Environment-specific Configs
 
 #### Development (.env.local)
+
 ```bash
 NODE_ENV=development
 NEXT_PUBLIC_SITE_URL=http://localhost:3111
@@ -343,6 +356,7 @@ LOG_LEVEL=debug
 ```
 
 #### Staging (.env.staging)
+
 ```bash
 NODE_ENV=production
 NEXT_PUBLIC_SITE_URL=https://staging.yoursite.com
@@ -352,6 +366,7 @@ LOG_LEVEL=info
 ```
 
 #### Production (.env.production)
+
 ```bash
 NODE_ENV=production
 NEXT_PUBLIC_SITE_URL=https://yoursite.com
@@ -451,13 +466,13 @@ aws secretsmanager create-secret --name GROQ_API_KEY
 
 ## 📊 EKSIK VARIABLE ETKİSİ
 
-| Variable | Eksiklik Etkisi | Çözüm Süresi |
-|----------|----------------|--------------|
-| GROQ_API_KEY | AI yorumları çalışmaz | 5dk |
-| GEMINI_API_KEY | Alternative AI yok | 5dk |
-| SMTP_FROM_NAME | Email'ler "unknown" | 2dk |
-| SHOPIER_WEBHOOK_SECRET | Webhook security zayıf | 5dk |
-| ENCRYPTION_KEY | Data encryption yok | 10dk |
+| Variable               | Eksiklik Etkisi        | Çözüm Süresi |
+| ---------------------- | ---------------------- | ------------ |
+| GROQ_API_KEY           | AI yorumları çalışmaz  | 5dk          |
+| GEMINI_API_KEY         | Alternative AI yok     | 5dk          |
+| SMTP_FROM_NAME         | Email'ler "unknown"    | 2dk          |
+| SHOPIER_WEBHOOK_SECRET | Webhook security zayıf | 5dk          |
+| ENCRYPTION_KEY         | Data encryption yok    | 10dk         |
 
 ---
 
@@ -471,4 +486,3 @@ aws secretsmanager create-secret --name GROQ_API_KEY
 ---
 
 **⚠️ UYARI:** Eksik env variables production'da runtime error'lara sebep olur!
-

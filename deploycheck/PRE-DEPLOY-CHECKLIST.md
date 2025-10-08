@@ -1,8 +1,8 @@
 # ✅ PRE-DEPLOYMENT CHECKLIST
 
 **Project:** TaraTarot  
-**Deploy Date:** _____________  
-**Deployed By:** _____________  
+**Deploy Date:** ******\_******  
+**Deployed By:** ******\_******  
 **Deploy Target:** Production
 
 ---
@@ -50,7 +50,7 @@ npm run build
 **CRITICAL:** Backup database before running migrations!
 
 - [ ] Create database backup in Supabase dashboard
-- [ ] Note backup timestamp: _____________
+- [ ] Note backup timestamp: ******\_******
 - [ ] Execute migrations in order (001 → 017)
 - [ ] Verify RLS policies active
 - [ ] Test read query on production DB
@@ -58,6 +58,7 @@ npm run build
 - [ ] Verify no migration errors
 
 **Migration Order:**
+
 1. `001_create_tarot_cards_tables.sql`
 2. `002_insert_sample_tarot_cards.sql`
 3. `003_insert_seo_data.sql`
@@ -120,10 +121,10 @@ npm run start
 
 ### 8. Rollback Preparation ⏱️ 10 minutes
 
-- [ ] Note current git commit SHA: _____________
+- [ ] Note current git commit SHA: ******\_******
 - [ ] Document rollback commands
 - [ ] Test rollback process in staging (if available)
-- [ ] Identify on-call person: _____________
+- [ ] Identify on-call person: ******\_******
 
 ---
 
@@ -153,7 +154,7 @@ npm run start
 
 1. **Team Notification**
    - [ ] Notify team of upcoming deployment
-   - [ ] Time: _____________
+   - [ ] Time: ******\_******
    - [ ] Expected duration: 1-2 hours
 
 2. **Final Code Review**
@@ -164,7 +165,7 @@ npm run start
 
 3. **Backup Everything**
    - [ ] Database backup created
-   - [ ] Note git SHA: _____________
+   - [ ] Note git SHA: ******\_******
    - [ ] Previous deployment URL noted (for rollback)
 
 #### Deploy (15-30 minutes)
@@ -175,6 +176,7 @@ npm run start
    ```bash
    git push origin main
    ```
+
    - [ ] Vercel auto-deploys (if connected)
    - [ ] Watch deployment logs
    - [ ] No build errors
@@ -185,6 +187,7 @@ npm run start
    ```bash
    vercel --prod
    ```
+
    - [ ] Build succeeds
    - [ ] Deployment completes
    - [ ] Production URL received
@@ -253,6 +256,7 @@ npm run start
 ### If Deployment Fails:
 
 1. **Immediate Action** (2 minutes)
+
    ```bash
    # Vercel Dashboard: Deployments → [Previous] → Promote
    # Or via CLI:
@@ -305,22 +309,24 @@ npm run start
 
 ### Pre-Deploy Approval
 
-**Technical Lead:** _____________  
-**Date:** _____________  
-**Signature:** _____________
+**Technical Lead:** ******\_******  
+**Date:** ******\_******  
+**Signature:** ******\_******
 
-**Checklist Completed:** _____% (Must be 100% for MUST COMPLETE items)
+**Checklist Completed:** **\_**% (Must be 100% for MUST COMPLETE items)
 
 **Deploy Authorization:** ☐ APPROVED ☐ REJECTED
 
 **If Rejected, Reason:**
-________________________________________
-________________________________________
+
+---
+
+---
 
 ### Post-Deploy Confirmation
 
-**Deployment Completed:** _____________  
-**Production URL:** _____________  
+**Deployment Completed:** ******\_******  
+**Production URL:** ******\_******  
 **First Error Check:** ☐ PASS ☐ FAIL  
 **Smoke Tests:** ☐ PASS ☐ FAIL  
 **Status:** ☐ SUCCESS ☐ ROLLED BACK
@@ -330,4 +336,3 @@ ________________________________________
 **Checklist Version:** 1.0  
 **Last Updated:** 2025-10-08  
 **Use This Checklist:** For every production deployment
-

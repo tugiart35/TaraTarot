@@ -8,7 +8,8 @@
 
 ## 🎯 PURPOSE
 
-This document provides step-by-step procedures for rolling back a failed deployment and recovering from production incidents.
+This document provides step-by-step procedures for rolling back a failed
+deployment and recovering from production incidents.
 
 ---
 
@@ -35,6 +36,7 @@ vercel rollback
 **Impact:** Immediate revert to last working version
 
 **Limitations:**
+
 - Database changes NOT rolled back
 - Environment variables NOT rolled back
 - User data created during failed deploy remains
@@ -107,10 +109,10 @@ SELECT COUNT(*) FROM credit_transactions;
 
 **Record Previous Values:**
 
-| Variable | Previous Value | New Value | Changed Date |
-|----------|---------------|-----------|--------------|
-| ________________ | ________________ | ________________ | ________ |
-| ________________ | ________________ | ________________ | ________ |
+| Variable             | Previous Value       | New Value            | Changed Date |
+| -------------------- | -------------------- | -------------------- | ------------ |
+| ******\_\_\_\_****** | ******\_\_\_\_****** | ******\_\_\_\_****** | **\_\_\_\_** |
+| ******\_\_\_\_****** | ******\_\_\_\_****** | ******\_\_\_\_****** | **\_\_\_\_** |
 
 ---
 
@@ -119,6 +121,7 @@ SELECT COUNT(*) FROM credit_transactions;
 ### P0: Site Down (Critical)
 
 **Symptoms:**
+
 - Homepage returns 500 error
 - All pages inaccessible
 - "Application Error" message
@@ -126,10 +129,11 @@ SELECT COUNT(*) FROM credit_transactions;
 **Immediate Actions (< 5 min):**
 
 1. **Verify it's not DNS/CDN issue**
+
    ```bash
    # Check if site resolves
    nslookup yoursite.com
-   
+
    # Check direct Vercel URL
    curl https://your-deployment.vercel.app
    ```
@@ -139,6 +143,7 @@ SELECT COUNT(*) FROM credit_transactions;
    - If Vercel issue → wait for resolution
 
 3. **If deployment issue → ROLLBACK**
+
    ```bash
    vercel rollback
    ```
@@ -149,11 +154,12 @@ SELECT COUNT(*) FROM credit_transactions;
 
 5. **Notify team**
    - "Production rolled back due to [reason]"
-   - ETA for fix: ___________
+   - ETA for fix: ****\_\_\_****
 
 ### P0: Database Connection Lost
 
 **Symptoms:**
+
 - "Database connection error"
 - Auth fails
 - Readings don't load
@@ -169,6 +175,7 @@ SELECT COUNT(*) FROM credit_transactions;
    - Test connection manually
 
 3. **Check RLS policies**
+
    ```sql
    -- In Supabase SQL Editor
    SELECT tablename, policyname
@@ -182,6 +189,7 @@ SELECT COUNT(*) FROM credit_transactions;
 ### P1: Payment System Failure
 
 **Symptoms:**
+
 - Payment button doesn't work
 - Shopier errors in logs
 - Webhook failures
@@ -189,6 +197,7 @@ SELECT COUNT(*) FROM credit_transactions;
 **Immediate Actions:**
 
 1. **Enable Shopier Test Mode**
+
    ```
    Vercel → Environment Variables
    SHOPIER_TEST_MODE = true
@@ -201,6 +210,7 @@ SELECT COUNT(*) FROM credit_transactions;
    - Review transaction logs
 
 3. **Verify webhook endpoint**
+
    ```bash
    curl -X POST https://yoursite.com/api/webhook/shopier \
      -H "Content-Type: application/json" \
@@ -214,6 +224,7 @@ SELECT COUNT(*) FROM credit_transactions;
 ### P1: Auth System Failure
 
 **Symptoms:**
+
 - Can't login/register
 - "Authentication error"
 - Supabase auth errors
@@ -243,6 +254,7 @@ SELECT COUNT(*) FROM credit_transactions;
 ### P2: Email Sending Fails
 
 **Symptoms:**
+
 - PDF emails not sent
 - SMTP errors in logs
 
@@ -266,15 +278,15 @@ SELECT COUNT(*) FROM credit_transactions;
 
 ## 📋 ROLLBACK DECISION MATRIX
 
-| Severity | Criteria | Action | Response Time |
-|----------|----------|--------|---------------|
-| **P0 - Critical** | Site completely down | IMMEDIATE ROLLBACK | < 5 minutes |
-| **P0 - Critical** | Data loss occurring | ROLLBACK + DB RESTORE | < 10 minutes |
-| **P0 - Critical** | Security breach | ROLLBACK + INVESTIGATE | < 5 minutes |
-| **P1 - High** | Core feature broken (auth/payment) | ROLLBACK or HOTFIX | < 30 minutes |
-| **P1 - High** | Significant UX degradation | HOTFIX (don't rollback) | < 2 hours |
-| **P2 - Medium** | Non-critical feature broken | HOTFIX next deploy | < 24 hours |
-| **P3 - Low** | Minor bug, cosmetic issue | Fix in next release | < 1 week |
+| Severity          | Criteria                           | Action                  | Response Time |
+| ----------------- | ---------------------------------- | ----------------------- | ------------- |
+| **P0 - Critical** | Site completely down               | IMMEDIATE ROLLBACK      | < 5 minutes   |
+| **P0 - Critical** | Data loss occurring                | ROLLBACK + DB RESTORE   | < 10 minutes  |
+| **P0 - Critical** | Security breach                    | ROLLBACK + INVESTIGATE  | < 5 minutes   |
+| **P1 - High**     | Core feature broken (auth/payment) | ROLLBACK or HOTFIX      | < 30 minutes  |
+| **P1 - High**     | Significant UX degradation         | HOTFIX (don't rollback) | < 2 hours     |
+| **P2 - Medium**   | Non-critical feature broken        | HOTFIX next deploy      | < 24 hours    |
+| **P3 - Low**      | Minor bug, cosmetic issue          | Fix in next release     | < 1 week      |
 
 ---
 
@@ -283,6 +295,7 @@ SELECT COUNT(*) FROM credit_transactions;
 **For P1 issues that don't require full rollback:**
 
 1. **Create hotfix branch**
+
    ```bash
    git checkout -b hotfix/critical-issue-name
    ```
@@ -293,6 +306,7 @@ SELECT COUNT(*) FROM credit_transactions;
    - Add quick test
 
 3. **Test locally**
+
    ```bash
    npm run build
    npm run start
@@ -300,6 +314,7 @@ SELECT COUNT(*) FROM credit_transactions;
    ```
 
 4. **Deploy hotfix**
+
    ```bash
    git push origin hotfix/critical-issue-name
    # Merge to main
@@ -344,7 +359,7 @@ ETA: [Estimated resolution time]
 **For extended outages (>30 min):**
 
 ```
-We're currently experiencing technical difficulties. 
+We're currently experiencing technical difficulties.
 Our team is working to resolve the issue.
 
 ETA: [time]
@@ -368,36 +383,43 @@ Thank you for your patience.
 
 ### Post-Mortem Template
 
-**Date:** _____________  
-**Incident ID:** _____________  
-**Duration:** _______ minutes  
-**Severity:** P___
+**Date:** ******\_******  
+**Incident ID:** ******\_******  
+**Duration:** **\_\_\_** minutes  
+**Severity:** P\_\_\_
 
 **What Happened:**
-________________________________________
+
+---
 
 **Root Cause:**
-________________________________________
+
+---
 
 **Impact:**
-- Users affected: _____________
-- Revenue impact: _____________
+
+- Users affected: ******\_******
+- Revenue impact: ******\_******
 - Data loss: YES / NO
 
 **Timeline:**
-- Detected: _____________
-- Rollback initiated: _____________
-- Resolved: _____________
+
+- Detected: ******\_******
+- Rollback initiated: ******\_******
+- Resolved: ******\_******
 
 **What Went Well:**
-________________________________________
+
+---
 
 **What Could Be Better:**
-________________________________________
+
+---
 
 **Action Items:**
-1. ________________________________________
-2. ________________________________________
+
+1. ***
+2. ***
 
 ---
 
@@ -472,6 +494,7 @@ ________________________________________
 **P0 Response (Immediate):**
 
 1. **TAKE SITE OFFLINE** (if data at risk)
+
    ```bash
    # Vercel: Scale to 0
    # Or: Delete DNS records temporarily
@@ -496,12 +519,13 @@ ________________________________________
 
 ## 📝 EMERGENCY CONTACTS
 
-**On-Call Engineer:** _____________  
-**Database Admin:** _____________  
-**Security Lead:** _____________  
-**Product Owner:** _____________  
+**On-Call Engineer:** ******\_******  
+**Database Admin:** ******\_******  
+**Security Lead:** ******\_******  
+**Product Owner:** ******\_******
 
 **Escalation Path:**
+
 1. On-call engineer (respond < 15 min)
 2. Technical lead (respond < 30 min)
 3. CTO/VP Engineering (P0 only)
@@ -517,14 +541,13 @@ ________________________________________
 - [ ] Update documentation
 - [ ] Train team members
 
-**Last Rollback Test:** _____________  
-**Next Rollback Test:** _____________
+**Last Rollback Test:** ******\_******  
+**Next Rollback Test:** ******\_******
 
 ---
 
 **Rollback Plan Version:** 1.0  
-**Approved By:** _____________  
-**Date:** _____________
+**Approved By:** ******\_******  
+**Date:** ******\_******
 
 **Keep this document updated after each incident!**
-

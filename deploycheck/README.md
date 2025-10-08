@@ -37,32 +37,32 @@
 
 ### 🔴 MUST READ (Before Deploy)
 
-| File | Purpose | Read Time |
-|------|---------|-----------|
-| **`DEPLOY_DECISION.md`** | Final verdict & reasoning | 10 min |
-| **`PRE-DEPLOY-CHECKLIST.md`** | Step-by-step deploy guide | 5 min |
-| **`ROLLBACK-PLAN.md`** | What if something goes wrong | 5 min |
+| File                          | Purpose                      | Read Time |
+| ----------------------------- | ---------------------------- | --------- |
+| **`DEPLOY_DECISION.md`**      | Final verdict & reasoning    | 10 min    |
+| **`PRE-DEPLOY-CHECKLIST.md`** | Step-by-step deploy guide    | 5 min     |
+| **`ROLLBACK-PLAN.md`**        | What if something goes wrong | 5 min     |
 
 **Total prep time:** 20 minutes
 
 ### 🟡 SHOULD READ (For Context)
 
-| File | Purpose | Read Time |
-|------|---------|-----------|
-| `AUDIT-SUMMARY.md` | Executive summary | 5 min |
-| `BUILD-REPORT.md` | Build & test details | 10 min |
-| `SECURITY-AUDIT.md` | Security analysis | 10 min |
-| `ENV-AUDIT.md` | Environment config | 8 min |
+| File                | Purpose              | Read Time |
+| ------------------- | -------------------- | --------- |
+| `AUDIT-SUMMARY.md`  | Executive summary    | 5 min     |
+| `BUILD-REPORT.md`   | Build & test details | 10 min    |
+| `SECURITY-AUDIT.md` | Security analysis    | 10 min    |
+| `ENV-AUDIT.md`      | Environment config   | 8 min     |
 
 **Total:** 33 minutes for full understanding
 
 ### 🟢 OPTIONAL (Reference)
 
-| File | Purpose |
-|------|---------|
-| `00_PREP.md` | Audit initialization details |
+| File           | Purpose                         |
+| -------------- | ------------------------------- |
+| `00_PREP.md`   | Audit initialization details    |
 | `CI-CHECKS.md` | CI/CD analysis (currently none) |
-| `BUILD-LOGS/*` | Raw build/test outputs |
+| `BUILD-LOGS/*` | Raw build/test outputs          |
 
 ---
 
@@ -106,15 +106,16 @@
 
 All patches are **optional** (no blockers), but recommended:
 
-| Patch | Priority | Time | Purpose |
-|-------|----------|------|---------|
-| `001-add-security-headers.patch` | HIGH | 15 min | Add CSP, HSTS, etc. |
-| `002-sanitize-email-templates.patch` | MEDIUM | 10 min | DOMPurify for admin |
-| `003-replace-console-with-logger.patch` | MEDIUM | 4-6 hrs | Clean logging |
-| `004-add-env-validation.patch` | LOW | 30 min | Startup validation |
-| `005-add-vercel-config.patch` | LOW | 10 min | Explicit config |
+| Patch                                   | Priority | Time    | Purpose             |
+| --------------------------------------- | -------- | ------- | ------------------- |
+| `001-add-security-headers.patch`        | HIGH     | 15 min  | Add CSP, HSTS, etc. |
+| `002-sanitize-email-templates.patch`    | MEDIUM   | 10 min  | DOMPurify for admin |
+| `003-replace-console-with-logger.patch` | MEDIUM   | 4-6 hrs | Clean logging       |
+| `004-add-env-validation.patch`          | LOW      | 30 min  | Startup validation  |
+| `005-add-vercel-config.patch`           | LOW      | 10 min  | Explicit config     |
 
 **To apply:**
+
 ```bash
 cd /Users/tugi/Desktop/TaraTarot
 git apply deploycheck/patches/001-add-security-headers.patch
@@ -129,6 +130,7 @@ npm run build
 ### For Vercel (Recommended)
 
 **First Time Setup:**
+
 ```bash
 # 1. Install Vercel CLI
 npm i -g vercel
@@ -148,6 +150,7 @@ vercel --prod
 ```
 
 **Subsequent Deploys:**
+
 ```bash
 git push origin main
 # Vercel auto-deploys (if Git integration setup)
@@ -158,6 +161,7 @@ git push origin main
 **Use:** `PRE-DEPLOY-CHECKLIST.md`
 
 **Steps:**
+
 1. Set env vars (15 min)
 2. Run migrations (30 min)
 3. Deploy (15 min)
@@ -173,6 +177,7 @@ git push origin main
 ### Before Deploy
 
 1. ✅ **BACKUP DATABASE** - Critical!
+
    ```
    Supabase → Database → Backups → Create Backup
    ```
@@ -206,16 +211,19 @@ git push origin main
 ### Monitor These Metrics:
 
 **Performance:**
+
 - Page load < 3s
 - Time to Interactive < 5s
 - Lighthouse score > 90
 
 **Reliability:**
+
 - Uptime > 99.9%
 - Error rate < 0.1%
 - API success rate > 99%
 
 **User Experience:**
+
 - Registration success rate > 95%
 - Reading completion rate > 90%
 - Payment success rate > 98%
@@ -263,7 +271,7 @@ git push origin main
 
 ### Month 2
 
-- [ ] Console.* cleanup campaign
+- [ ] Console.\* cleanup campaign
 - [ ] Performance optimization round
 - [ ] Implement remaining patches
 - [ ] Load testing
@@ -280,7 +288,8 @@ git push origin main
 A: ✅ YES - No critical issues found
 
 **Q: What could go wrong?**  
-A: Deployment failure (unlikely), integration issues (mitigated), minor bugs (acceptable)
+A: Deployment failure (unlikely), integration issues (mitigated), minor bugs
+(acceptable)
 
 **Q: Do I need to fix everything first?**  
 A: ❌ NO - Only the PRE-DEPLOY-CHECKLIST items
@@ -299,6 +308,7 @@ A: Actively: 4 hours, Passively: 24-48 hours
 ## 🏆 AUDIT SUMMARY
 
 **What was audited:**
+
 - ✅ 419 TypeScript files
 - ✅ Build & test infrastructure
 - ✅ Security (code + dependencies)
@@ -315,6 +325,7 @@ A: Actively: 4 hours, Passively: 24-48 hours
 **Issues found:** 16 (0 critical)
 
 **Value delivered:**
+
 - ✅ Deployment confidence
 - ✅ Risk assessment
 - ✅ Clear action plan
@@ -326,12 +337,14 @@ A: Actively: 4 hours, Passively: 24-48 hours
 ## 🎊 FINAL WORDS
 
 **TaraTarot is a well-built application with:**
+
 - Strong technical foundation
 - Good security practices
 - Complete internationalization
 - Excellent documentation
 
 **The audit reveals:**
+
 - No deployment blockers
 - Minor improvements needed
 - Clear path forward
@@ -359,4 +372,3 @@ A: Actively: 4 hours, Passively: 24-48 hours
 **Date:** 2025-10-08
 
 **Good luck with your deployment!** 🍀
-

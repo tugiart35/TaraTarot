@@ -1,4 +1,5 @@
 # 📝 PATCH APPLICATION INSTRUCTIONS
+
 **Target File:** `src/app/[locale]/(main)/kartlar/[slug]/page.tsx`  
 **Date:** 2025-10-07
 
@@ -23,10 +24,12 @@ npm run test
 ## 📦 PATCH DETAILS
 
 ### Patch 001: i18n Error Messages + Remove Console.error
+
 **File:** `001-kartlar-slug-page-i18n-errors.patch`  
 **Target:** `src/app/[locale]/(main)/kartlar/[slug]/page.tsx`
 
 **Changes:**
+
 1. Import `getTranslations` from next-intl/server
 2. Replace hardcoded "Kart Bulunamadı" with `t('notFound')`
 3. Replace hardcoded description with `t('notFoundDescription')`
@@ -34,6 +37,7 @@ npm run test
 5. **Bonus**: Removed console.error from line 131 (caught in same patch)
 
 **Impact:**
+
 - ✅ Fixes hardcoded Turkish strings
 - ✅ Enables multi-language error messages
 - ✅ Removes 1 console.error
@@ -41,40 +45,49 @@ npm run test
 ---
 
 ### Patch 002: Logger Utility
+
 **File:** `002-kartlar-slug-page-logger.patch`  
 **Target:** `src/app/[locale]/(main)/kartlar/[slug]/page.tsx`
 
 **Changes:**
+
 1. Import logger from @/lib/logger
 2. Add logger.error call in generateMetadata catch block (line 131)
 3. Replace console.error with logger.error (line 160)
 
 **Impact:**
+
 - ✅ Reduces production log pollution
 - ✅ Maintains debug capability in development
 - ✅ Consistent with /cards/[slug]/page.tsx pattern
 
 **Lines Changed:**
-- Line 131: Added `logger.error('Error generating metadata for kartlar route', error)`
-- Line 160: `console.error` → `logger.error('Error loading card from kartlar route', error)`
+
+- Line 131: Added
+  `logger.error('Error generating metadata for kartlar route', error)`
+- Line 160: `console.error` →
+  `logger.error('Error loading card from kartlar route', error)`
 
 ---
 
 ## 🔍 VERIFICATION STEPS
 
 ### 1. Syntax Check
+
 ```bash
 npm run lint
 # Expected: No new errors
 ```
 
 ### 2. Type Check
+
 ```bash
 npx tsc --noEmit
 # Expected: No type errors
 ```
 
 ### 3. Build Check
+
 ```bash
 npm run build
 # Expected: Successful build
@@ -82,6 +95,7 @@ npm run build
 ```
 
 ### 4. Runtime Test
+
 ```bash
 npm run dev
 
@@ -97,6 +111,7 @@ npm run dev
 ```
 
 ### 5. Logger Test
+
 ```bash
 # Development mode (should see logs)
 NODE_ENV=development npm run dev
@@ -112,9 +127,12 @@ NODE_ENV=production npm run build && npm start
 ## 🚨 TROUBLESHOOTING
 
 ### Issue 1: Patch Fails to Apply
-**Error:** `error: patch failed: src/app/[locale]/(main)/kartlar/[slug]/page.tsx:110`
+
+**Error:**
+`error: patch failed: src/app/[locale]/(main)/kartlar/[slug]/page.tsx:110`
 
 **Solution:**
+
 ```bash
 # Check if file was manually modified
 git diff src/app/[locale]/(main)/kartlar/[slug]/page.tsx
@@ -128,9 +146,11 @@ git diff src/app/[locale]/(main)/kartlar/[slug]/page.tsx
 ```
 
 ### Issue 2: i18n Keys Not Found
+
 **Error:** `Missing message: "cards.errors.notFound"`
 
 **Solution:**
+
 ```bash
 # Verify i18n keys were added to all locale files
 grep -A 3 '"errors":' messages/tr.json
@@ -145,9 +165,12 @@ grep -A 3 '"errors":' messages/sr.json
 ```
 
 ### Issue 3: Build Fails
-**Error:** `Error: Page "[locale]/(main)/kartlar/[slug]" is missing "generateStaticParams()"`
+
+**Error:**
+`Error: Page "[locale]/(main)/kartlar/[slug]" is missing "generateStaticParams()"`
 
 **Solution:**
+
 - This should not happen as generateStaticParams is already present
 - Verify Next.js version: `npm list next`
 - Required: Next.js 13.4+ for App Router static params
@@ -157,6 +180,7 @@ grep -A 3 '"errors":' messages/sr.json
 ## 📊 BEFORE & AFTER COMPARISON
 
 ### Before Patches
+
 ```typescript
 // ❌ Hardcoded Turkish strings
 return {
@@ -170,6 +194,7 @@ console.error('Error loading card:', error);
 ```
 
 ### After Patches
+
 ```typescript
 // ✅ i18n-ready error messages
 const t = await getTranslations({ locale, namespace: 'cards.errors' });
@@ -203,12 +228,12 @@ logger.error('Error loading card from kartlar route', error);
 
 After applying these patches, both route files will have:
 
-| Feature | /cards/ (EN) | /kartlar/ (TR) |
-|---------|--------------|----------------|
-| i18n Error Messages | ✅ | ✅ |
-| Logger Integration | ✅ | ✅ |
-| No Console.error | ✅ | ✅ |
-| Production Ready | ✅ | ✅ |
+| Feature             | /cards/ (EN) | /kartlar/ (TR) |
+| ------------------- | ------------ | -------------- |
+| i18n Error Messages | ✅           | ✅             |
+| Logger Integration  | ✅           | ✅             |
+| No Console.error    | ✅           | ✅             |
+| Production Ready    | ✅           | ✅             |
 
 **Result:** Consistent error handling across all locale routes! 🎉
 
@@ -234,7 +259,8 @@ npm run build
 
 ## 📝 NOTES
 
-1. **Route Parity**: These patches bring `/kartlar/` route to same quality level as `/cards/` route
+1. **Route Parity**: These patches bring `/kartlar/` route to same quality level
+   as `/cards/` route
 
 2. **Turkish Routes**: Special attention to Turkish slug patterns:
    - Major Arcana: `joker`, `yuksek-rahibe`, etc.
@@ -254,4 +280,3 @@ npm run build
 **Author:** AI Code Auditor  
 **Date:** 2025-10-07  
 **Status:** ✅ READY TO APPLY
-

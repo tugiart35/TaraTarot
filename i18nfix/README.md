@@ -26,12 +26,14 @@ i18nfix/
 **Patch Sayısı:** 4
 
 **Özet Sorunlar:**
+
 - Hardcoded UI strings (translation'a taşınmalı)
 - Card name mapping sistemi eksik
 - generateStaticParams eksik
 - Magic numbers ve code duplication
 
 **Düzeltme Adımları:**
+
 ```bash
 cd /Users/tugi/Desktop/TaraTarot
 git apply i18nfix/patches/001-*.patch
@@ -45,12 +47,14 @@ git apply i18nfix/patches/004-*.patch
 Her dosya için şu kriterler kontrol edilir:
 
 ### 1. i18n (Internationalization)
+
 - ✅ TR/EN/SR dil desteği tam mı?
 - ✅ Hardcoded string var mı?
 - ✅ Translation key'leri doğru kullanılmış mı?
 - ✅ Alt text'ler localize edilmiş mi?
 
 ### 2. Deploy Hazırlığı
+
 - ✅ TypeScript tip hataları var mı?
 - ✅ Import path'leri doğru mu?
 - ✅ SSR/CSR uyumlu mu?
@@ -58,6 +62,7 @@ Her dosya için şu kriterler kontrol edilir:
 - ✅ generateStaticParams tanımlı mı?
 
 ### 3. Security
+
 - ✅ Hardcoded secret var mı?
 - ✅ SQL/NoSQL injection riski var mı?
 - ✅ XSS vulnerability var mı?
@@ -65,6 +70,7 @@ Her dosya için şu kriterler kontrol edilir:
 - ✅ Input validation yapılmış mı?
 
 ### 4. Code Quality
+
 - ✅ Console log'ları temizlenmiş mi?
 - ✅ Magic number'lar constant'a çevrilmiş mi?
 - ✅ Code duplication var mı?
@@ -118,22 +124,26 @@ git apply i18nfix/patches/*.patch
 ## 📈 İstatistikler
 
 ### Analiz Edilen Dosyalar
+
 - ✅ 1 dosya audit edildi
 - ❌ 1 dosya düzeltme bekliyor
 - 📝 4 patch dosyası oluşturuldu
 
 ### i18n Coverage
+
 - TR: %70 → %100 (hedef)
 - EN: %70 → %100 (hedef)
 - SR: %70 → %100 (hedef)
 
 ### Security Findings
+
 - 🟢 0 Critical
 - 🟢 0 High
 - 🟢 0 Medium
 - 🟢 0 Low
 
 ### Code Quality
+
 - ⚠️ 5 hardcoded string bulundu
 - ⚠️ 4 magic number bulundu
 - ⚠️ 2 large function bulundu
@@ -161,6 +171,7 @@ Audit sistemi şu dosyalarda genişletilebilir:
 ## 📞 Destek
 
 Sorularınız için:
+
 - Rapor dosyalarını kontrol edin
 - `APPLY-INSTRUCTIONS.md` dosyasını okuyun
 - Git history'ye bakın
@@ -168,6 +179,7 @@ Sorularınız için:
 ## 📝 Changelog
 
 ### 2025-10-07
+
 - ✅ Cards page audit tamamlandı
 - ✅ 4 patch dosyası oluşturuldu
 - ✅ Detaylı rapor hazırlandı
@@ -175,4 +187,3 @@ Sorularınız için:
 ---
 
 **Not:** Bu dizin otomatik oluşturulmuştur. Manuel değişiklik yapmayın.
-

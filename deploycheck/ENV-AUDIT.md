@@ -29,39 +29,39 @@
 
 ### Critical (App Won't Start Without These)
 
-| Variable | Type | Example | Used In |
-|----------|------|---------|---------|
-| `NEXT_PUBLIC_SUPABASE_URL` | Public | `https://xxx.supabase.co` | 3 files |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Public | `eyJ...` | 3 files |
-| `SUPABASE_SERVICE_ROLE_KEY` | Secret | `eyJ...` | 4 files |
-| `NEXT_PUBLIC_SITE_URL` | Public | `https://yoursite.com` | Multiple |
+| Variable                        | Type   | Example                   | Used In  |
+| ------------------------------- | ------ | ------------------------- | -------- |
+| `NEXT_PUBLIC_SUPABASE_URL`      | Public | `https://xxx.supabase.co` | 3 files  |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Public | `eyJ...`                  | 3 files  |
+| `SUPABASE_SERVICE_ROLE_KEY`     | Secret | `eyJ...`                  | 4 files  |
+| `NEXT_PUBLIC_SITE_URL`          | Public | `https://yoursite.com`    | Multiple |
 
 ### Payment Integration (Required for Transactions)
 
-| Variable | Type | Security | Used In |
-|----------|------|----------|---------|
-| `SHOPIER_MERCHANT_ID` | Secret | Server-only | 12 files |
-| `SHOPIER_API_KEY` | Secret | Server-only | 12 files |
-| `SHOPIER_API_SECRET` | Secret | Server-only | 12 files |
-| `SHOPIER_TEST_MODE` | Config | Public | Payment flow |
-| `WEBHOOK_SECRET` | Secret | Server-only | Webhook validation |
+| Variable              | Type   | Security    | Used In            |
+| --------------------- | ------ | ----------- | ------------------ |
+| `SHOPIER_MERCHANT_ID` | Secret | Server-only | 12 files           |
+| `SHOPIER_API_KEY`     | Secret | Server-only | 12 files           |
+| `SHOPIER_API_SECRET`  | Secret | Server-only | 12 files           |
+| `SHOPIER_TEST_MODE`   | Config | Public      | Payment flow       |
+| `WEBHOOK_SECRET`      | Secret | Server-only | Webhook validation |
 
 ### Email Service (Required for Notifications)
 
-| Variable | Type | Security | Used In |
-|----------|------|----------|---------|
-| `SMTP_HOST` | Config | Public | Email service |
-| `SMTP_PORT` | Config | Public | Email service |
-| `SMTP_USER` | Config | Low-risk | Email service |
+| Variable    | Type   | Security    | Used In       |
+| ----------- | ------ | ----------- | ------------- |
+| `SMTP_HOST` | Config | Public      | Email service |
+| `SMTP_PORT` | Config | Public      | Email service |
+| `SMTP_USER` | Config | Low-risk    | Email service |
 | `SMTP_PASS` | Secret | Server-only | Email service |
 
 ### Optional (Recommended)
 
-| Variable | Type | Purpose |
-|----------|------|---------|
-| `DEBUG` | Config | Development logging |
-| `SENTRY_DSN` | Secret | Error tracking (recommended!) |
-| `NEXT_PUBLIC_CONTACT_PHONE` | Public | Contact info |
+| Variable                    | Type   | Purpose                       |
+| --------------------------- | ------ | ----------------------------- |
+| `DEBUG`                     | Config | Development logging           |
+| `SENTRY_DSN`                | Secret | Error tracking (recommended!) |
+| `NEXT_PUBLIC_CONTACT_PHONE` | Public | Contact info                  |
 
 ---
 
@@ -73,21 +73,21 @@
 
 **Top Users:**
 
-| File | Count | Type |
-|------|-------|------|
-| `lib/payment/shopier-config.ts` | 12 | Payment config |
-| `lib/audit-logger.ts` | 11 | Logging |
-| `lib/admin/api-keys.ts` | 11 | Admin API |
-| `app/api/email/test/route.ts` | 8 | Email testing |
-| `lib/email/email-service.ts` | 6 | Email config |
+| File                            | Count | Type           |
+| ------------------------------- | ----- | -------------- |
+| `lib/payment/shopier-config.ts` | 12    | Payment config |
+| `lib/audit-logger.ts`           | 11    | Logging        |
+| `lib/admin/api-keys.ts`         | 11    | Admin API      |
+| `app/api/email/test/route.ts`   | 8     | Email testing  |
+| `lib/email/email-service.ts`    | 6     | Email config   |
 
 **Security Analysis:**
 
-| Category | Count | Status |
-|----------|-------|--------|
-| Server-only secrets | 45 | ✅ SAFE |
-| Public variables (NEXT_PUBLIC_*) | 40 | ✅ SAFE |
-| Mixed/unclear | 31 | ⚠️ REVIEW |
+| Category                          | Count | Status    |
+| --------------------------------- | ----- | --------- |
+| Server-only secrets               | 45    | ✅ SAFE   |
+| Public variables (NEXT*PUBLIC*\*) | 40    | ✅ SAFE   |
+| Mixed/unclear                     | 31    | ⚠️ REVIEW |
 
 ---
 
@@ -95,21 +95,22 @@
 
 **Comparison:** Code usage vs env.example
 
-| Variable in Code | In env.example | Status |
-|------------------|----------------|--------|
-| `NEXT_PUBLIC_SUPABASE_URL` | ✅ | ✅ Documented |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | ✅ | ✅ Documented |
-| `SUPABASE_SERVICE_ROLE_KEY` | ✅ | ✅ Documented |
-| `SHOPIER_*` (4 vars) | ✅ | ✅ Documented |
-| `SMTP_*` (4 vars) | ✅ | ✅ Documented |
-| `WEBHOOK_SECRET` | ✅ | ✅ Documented |
-| `NEXT_PUBLIC_SITE_URL` | ✅ | ✅ Documented |
-| `DEBUG` | ✅ | ✅ Documented |
-| `SENTRY_DSN` | ✅ | ✅ Documented (commented) |
+| Variable in Code                | In env.example | Status                    |
+| ------------------------------- | -------------- | ------------------------- |
+| `NEXT_PUBLIC_SUPABASE_URL`      | ✅             | ✅ Documented             |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | ✅             | ✅ Documented             |
+| `SUPABASE_SERVICE_ROLE_KEY`     | ✅             | ✅ Documented             |
+| `SHOPIER_*` (4 vars)            | ✅             | ✅ Documented             |
+| `SMTP_*` (4 vars)               | ✅             | ✅ Documented             |
+| `WEBHOOK_SECRET`                | ✅             | ✅ Documented             |
+| `NEXT_PUBLIC_SITE_URL`          | ✅             | ✅ Documented             |
+| `DEBUG`                         | ✅             | ✅ Documented             |
+| `SENTRY_DSN`                    | ✅             | ✅ Documented (commented) |
 
 **Coverage:** 100% ✅
 
-**Quality:** EXCELLENT - All variables documented with examples and production notes
+**Quality:** EXCELLENT - All variables documented with examples and production
+notes
 
 ---
 
@@ -151,6 +152,7 @@ requiredEnvVars.forEach(varName => {
 ### 2. Mixed Package Managers
 
 **Found:**
+
 - `package-lock.json` (npm)
 - `pnpm-lock.yaml` (pnpm)
 
@@ -203,6 +205,7 @@ rm package-lock.json
 **Status:** ✅ EXISTS
 
 **Should verify:**
+
 - [ ] Production optimizations enabled
 - [ ] Image optimization configured
 - [ ] Security headers added
@@ -214,6 +217,7 @@ rm package-lock.json
 **Status:** ✅ EXISTS
 
 **Should verify:**
+
 - [ ] Strict mode enabled
 - [ ] Path aliases configured
 - [ ] Source maps for production
@@ -296,4 +300,3 @@ rm package-lock.json
 **Environment Audit Completed:** 2025-10-08  
 **Verdict:** ✅ READY (with proper platform configuration)  
 **Next:** Database & Migrations Audit
-

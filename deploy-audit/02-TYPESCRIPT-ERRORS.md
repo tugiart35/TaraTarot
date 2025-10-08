@@ -34,6 +34,7 @@ npm run typecheck
 **Dosya:** `src/app/api/webhook/shopier/__tests__/route.test.ts`
 
 #### Hatalar:
+
 ```typescript
 // Line 53, 380, 385
 error TS2540: Cannot assign to 'NODE_ENV' because it is a read-only property.
@@ -46,12 +47,13 @@ error TS6133: 'response' is declared but its value is never read.
 ```
 
 #### Çözüm:
+
 ```typescript
 // NODE_ENV mock için:
 const originalNodeEnv = process.env.NODE_ENV;
 Object.defineProperty(process.env, 'NODE_ENV', {
   writable: true,
-  value: 'production'
+  value: 'production',
 });
 
 // Cleanup:
@@ -70,6 +72,7 @@ afterEach(() => {
 **Dosya:** `src/components/admin/__tests__/SimpleAdminLogin.test.tsx`
 
 #### Hatalar (17 adet):
+
 ```typescript
 // Lines: 24, 34, 48, 57, 66, 84, 91, 104, 168, 175, 185
 error TS2741: Property 'locale' is missing
@@ -83,12 +86,13 @@ error TS2322: Type '{ onLogin: ... }' is not assignable
 ```
 
 #### Çözüm:
+
 ```typescript
 // locale prop'u ekle:
 render(
-  <SimpleAdminLogin 
-    locale="tr" 
-    onLogin={mockOnLogin} 
+  <SimpleAdminLogin
+    locale="tr"
+    onLogin={mockOnLogin}
   />
 );
 
@@ -106,16 +110,17 @@ interface SimpleAdminLoginProps {
 **Dosya:** `src/components/admin/__tests__/UserDetailModal.test.tsx`
 
 #### Hatalar (14 adet):
+
 ```typescript
 // Lines: 39, 47, 59, 73, 82, 91, 102, 114, 120, 126, 133
 error TS2739: Missing properties: onEditCredit, onStatusChange
 
 // Problematik kod:
 render(
-  <UserDetailModal 
-    user={mockUser} 
-    isOpen={true} 
-    onClose={mockOnClose} 
+  <UserDetailModal
+    user={mockUser}
+    isOpen={true}
+    onClose={mockOnClose}
   />
 ); // ❌ onEditCredit ve onStatusChange eksik
 
@@ -124,10 +129,11 @@ error TS2322: Property 'isOpen' does not exist
 ```
 
 #### Çözüm:
+
 ```typescript
 // Eksik prop'ları ekle:
 render(
-  <UserDetailModal 
+  <UserDetailModal
     user={mockUser}
     onClose={mockOnClose}
     onEditCredit={jest.fn()}
@@ -145,6 +151,7 @@ render(
 **Dosya:** `src/hooks/__tests__/useInputValidation.test.ts`
 
 #### Hata:
+
 ```typescript
 // Line 1
 error TS6133: 'act' is declared but its value is never read.
@@ -153,6 +160,7 @@ import { renderHook, act } from '@testing-library/react'; // ❌ act kullanılma
 ```
 
 #### Çözüm:
+
 ```typescript
 // act kullanılmıyorsa import'tan kaldır:
 import { renderHook } from '@testing-library/react';
@@ -165,6 +173,7 @@ import { renderHook } from '@testing-library/react';
 **Dosya:** `src/hooks/auth/__tests__/useAuth.test.ts`
 
 #### Hatalar:
+
 ```typescript
 // Lines: 106, 131
 error TS2345: Argument of type '{ ..., gender: string }' is not assignable
@@ -183,6 +192,7 @@ signUp({
 ```
 
 #### Çözüm:
+
 ```typescript
 // Gender için const kullan:
 const mockSignUpData = {
@@ -192,7 +202,7 @@ const mockSignUpData = {
   name: 'Test',
   surname: 'User',
   birthDate: '1990-01-01',
-  gender: 'male' as const // ✅ Type assertion
+  gender: 'male' as const, // ✅ Type assertion
 };
 
 signUp(mockSignUpData);
@@ -205,6 +215,7 @@ signUp(mockSignUpData);
 **Dosya:** `src/lib/auth/__tests__/auth-service.test.ts`
 
 #### Hatalar:
+
 ```typescript
 // Lines: 90, 120
 error TS2345: Missing properties: confirmPassword, name, surname, birthDate, gender
@@ -219,16 +230,17 @@ await signUp({
 ```
 
 #### Çözüm:
+
 ```typescript
 // Prop adlarını düzelt:
 await signUp({
   email: 'test@example.com',
   password: 'password123',
   confirmPassword: 'password123',
-  name: 'Test',        // ✅ firstName -> name
-  surname: 'User',     // ✅ lastName -> surname
+  name: 'Test', // ✅ firstName -> name
+  surname: 'User', // ✅ lastName -> surname
   birthDate: '1990-01-01',
-  gender: 'male' as const
+  gender: 'male' as const,
 });
 ```
 
@@ -239,6 +251,7 @@ await signUp({
 **Dosya:** `src/lib/auth/__tests__/auth-validation.test.ts`
 
 #### Hatalar:
+
 ```typescript
 // Lines: 39, 54, 91, 109, 129
 error TS2532: Object is possibly 'undefined'
@@ -248,6 +261,7 @@ expect(result.error.email).toBeDefined(); // ❌ result.error undefined olabilir
 ```
 
 #### Çözüm:
+
 ```typescript
 // Optional chaining kullan:
 expect(result.error?.email).toBeDefined();
@@ -265,6 +279,7 @@ if (result.error) {
 **Dosya:** `src/lib/payment/__tests__/shopier-security.test.ts`
 
 #### Hatalar:
+
 ```typescript
 // Line 7
 error TS6133: 'crypto' is declared but its value is never read.
@@ -276,6 +291,7 @@ process.env.NODE_ENV = 'production'; // ❌ Read-only
 ```
 
 #### Çözüm:
+
 ```typescript
 // crypto import'unu kaldır veya kullan
 
@@ -287,6 +303,7 @@ process.env.NODE_ENV = 'production'; // ❌ Read-only
 ## 🔧 TOPLU DÜZELTME PLANI
 
 ### Öncelik 1: Component Interface Güncellemeleri
+
 ```bash
 # Tüm component test'lerini component interface'leri ile senkronize et
 - SimpleAdminLogin: locale prop ekle, onLogin prop kaldır
@@ -294,6 +311,7 @@ process.env.NODE_ENV = 'production'; // ❌ Read-only
 ```
 
 ### Öncelik 2: Type Safety
+
 ```bash
 # Gender enum'larını const assertion ile düzelt
 # Optional chaining ekle
@@ -301,6 +319,7 @@ process.env.NODE_ENV = 'production'; // ❌ Read-only
 ```
 
 ### Öncelik 3: NODE_ENV Mocking
+
 ```bash
 # Tüm test dosyalarında standart NODE_ENV mock pattern kullan
 ```
@@ -309,16 +328,16 @@ process.env.NODE_ENV = 'production'; // ❌ Read-only
 
 ## 📊 DÜZELTME DURUMU
 
-| Dosya | Hata Sayısı | Öncelik | Efor |
-|-------|-------------|---------|------|
-| webhook/shopier test | 4 | ORTA | 15dk |
-| SimpleAdminLogin test | 17 | DÜŞÜK | 30dk |
-| UserDetailModal test | 14 | DÜŞÜK | 30dk |
-| useInputValidation test | 1 | DÜŞÜK | 2dk |
-| useAuth test | 2 | DÜŞÜK | 5dk |
-| auth-service test | 2 | DÜŞÜK | 5dk |
-| auth-validation test | 5 | DÜŞÜK | 10dk |
-| shopier-security test | 4 | ORTA | 10dk |
+| Dosya                   | Hata Sayısı | Öncelik | Efor |
+| ----------------------- | ----------- | ------- | ---- |
+| webhook/shopier test    | 4           | ORTA    | 15dk |
+| SimpleAdminLogin test   | 17          | DÜŞÜK   | 30dk |
+| UserDetailModal test    | 14          | DÜŞÜK   | 30dk |
+| useInputValidation test | 1           | DÜŞÜK   | 2dk  |
+| useAuth test            | 2           | DÜŞÜK   | 5dk  |
+| auth-service test       | 2           | DÜŞÜK   | 5dk  |
+| auth-validation test    | 5           | DÜŞÜK   | 10dk |
+| shopier-security test   | 4           | ORTA    | 10dk |
 
 **Toplam Tahmini Süre:** ~2 saat
 
@@ -327,9 +346,10 @@ process.env.NODE_ENV = 'production'; // ❌ Read-only
 ## ⚠️ DEPLOYMENT ETKİSİ
 
 **Production Build:** ✅ SORUNSUZ  
-**Test Suite:** ❌ BAŞARISIZ  
+**Test Suite:** ❌ BAŞARISIZ
 
 Test dosyalarındaki hatalar production build'i etkilemez, ancak:
+
 - CI/CD pipeline'ı etkilenebilir
 - Test coverage eksik olabilir
 - Regression risk artar
@@ -355,4 +375,3 @@ Test dosyalarındaki hatalar production build'i etkilemez, ancak:
 ---
 
 **✅ SONUÇ:** Production deployment için engel YOK, ancak test'ler düzeltilmeli.
-

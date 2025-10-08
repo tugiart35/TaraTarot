@@ -21,11 +21,13 @@
 ```
 
 **Tespit Edilen API Key:**
+
 ```
 GEMINI_API_KEY=AIzaSyAgjVO0rAe1DishHl4KGRxpiQBDaHomhPs
 ```
 
 #### Risk Değerlendirmesi:
+
 - ❌ `.gemini/` dizini `.gitignore`'da YOK
 - ❌ API key'ler Git repository'de saklanıyor
 - ❌ Public olması durumunda tüm sistem hacklenilebilir
@@ -33,6 +35,7 @@ GEMINI_API_KEY=AIzaSyAgjVO0rAe1DishHl4KGRxpiQBDaHomhPs
 - ❌ Veri sızıntısı riski
 
 #### Acil Aksiyonlar:
+
 1. ✅ `.gemini/` dizinini `.gitignore`'a ekle
 2. ✅ Bu dosyaları Git history'den temizle
 3. ✅ GEMINI_API_KEY'i yenile (mevcut key artık güvenli değil)
@@ -49,6 +52,7 @@ GEMINI_API_KEY=AIzaSyAgjVO0rAe1DishHl4KGRxpiQBDaHomhPs
 #### Tespit Edilen Sorunlar:
 
 **Eksik Environment Variables:**
+
 ```bash
 # env.example'da eksik:
 GROQ_API_KEY                    # AI servisleri için kritik
@@ -57,12 +61,14 @@ GEMINI_API_KEY                  # Gemini için
 ```
 
 **Validation Eksikliği:**
+
 - Uygulama başlangıcında env validation yok
 - API key format kontrolü yok
 - Required vs optional ayrımı net değil
 - Startup sırasında eksik key kontrolü yok
 
 #### Önerilen Çözüm:
+
 ```typescript
 // src/lib/env-validator.ts oluştur
 const requiredEnvVars = [
@@ -91,6 +97,7 @@ function validateEnv() {
 #### Tespit Edilen Sorunlar:
 
 **Dosya:** `src/lib/supabase/server.ts:91-99`
+
 ```typescript
 export const createClient = () => {
   // Server-side client with service role key for admin operations
@@ -101,12 +108,14 @@ export const createClient = () => {
 ```
 
 #### Risk Değerlendirmesi:
+
 - ⚠️ Service role key RLS'i bypass eder
 - ⚠️ Client-side'da kullanılmamalı
 - ⚠️ Sadece admin operations için kullanılmalı
 - ⚠️ Kullanım yerleri audit edilmeli
 
 #### Önerilen Çözüm:
+
 - Service role kullanımını sadece admin API routes ile sınırla
 - Client/Edge functions'da ASLA kullanma
 - Kullanım yerlerini dokümante et
@@ -122,6 +131,7 @@ export const createClient = () => {
 #### Tespit Edilen Sorunlar:
 
 **Dosya:** `src/app/api/email/send/route.ts:79-87`
+
 ```typescript
 const transporter = nodemailer.createTransport({
   host: smtpSettings.smtp_host,
@@ -129,12 +139,13 @@ const transporter = nodemailer.createTransport({
   secure: smtpSettings.smtp_secure || false,
   auth: {
     user: smtpSettings.smtp_user,
-    pass: smtpSettings.smtp_password,  // ⚠️ Password plain text
+    pass: smtpSettings.smtp_password, // ⚠️ Password plain text
   },
 });
 ```
 
 #### Risk Değerlendirmesi:
+
 - ⚠️ SMTP credentials API'den geliyorconst
 - ⚠️ Şifre encryption kontrolü yok
 - ⚠️ Database'de plain text mi encryption mı belirsiz
@@ -144,6 +155,7 @@ const transporter = nodemailer.createTransport({
 ## 📋 DEPLOYMENT ÖNCESİ KONTROL LİSTESİ
 
 ### Kritik Güvenlik (Tamamlanmalı):
+
 - [ ] .gemini/ dizinini sil
 - [ ] .gitignore'a `.gemini/` ekle
 - [ ] Git history'den API key'leri temizle
@@ -154,6 +166,7 @@ const transporter = nodemailer.createTransport({
 - [ ] SMTP credentials encryption kontrol et
 
 ### Önerilen (Production için):
+
 - [ ] Secrets manager kullan (AWS Secrets Manager, Vercel Env)
 - [ ] API key rotation policy belirle
 - [ ] Security headers ekle
@@ -188,13 +201,13 @@ git filter-repo --path .gemini --invert-paths --force
 
 ## 📊 GÜVENLİK PUANI
 
-| Kategori | Durum | Puan |
-|----------|-------|------|
-| API Key Management | 🔴 CRITICAL | 0/10 |
-| Environment Validation | 🟡 NEEDS WORK | 3/10 |
-| Secrets Management | 🟡 NEEDS WORK | 4/10 |
-| Access Control | 🟡 MEDIUM | 6/10 |
-| **GENEL PUAN** | 🔴 | **3.25/10** |
+| Kategori               | Durum         | Puan        |
+| ---------------------- | ------------- | ----------- |
+| API Key Management     | 🔴 CRITICAL   | 0/10        |
+| Environment Validation | 🟡 NEEDS WORK | 3/10        |
+| Secrets Management     | 🟡 NEEDS WORK | 4/10        |
+| Access Control         | 🟡 MEDIUM     | 6/10        |
+| **GENEL PUAN**         | 🔴            | **3.25/10** |
 
 ---
 
@@ -209,4 +222,3 @@ git filter-repo --path .gemini --invert-paths --force
 ---
 
 **⚠️ UYARI:** Bu sorunlar çözülmeden production deployment YAPILMAMALIDIR!
-

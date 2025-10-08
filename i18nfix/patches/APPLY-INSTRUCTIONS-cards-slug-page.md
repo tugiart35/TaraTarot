@@ -1,4 +1,5 @@
 # 📝 PATCH APPLICATION INSTRUCTIONS
+
 **Target File:** `src/app/[locale]/(main)/cards/[slug]/page.tsx`  
 **Date:** 2025-10-07
 
@@ -24,16 +25,19 @@ npm run test
 ## 📦 PATCH DETAILS
 
 ### Patch 001: i18n Error Messages
+
 **File:** `001-cards-slug-page-i18n-errors.patch`  
 **Target:** `src/app/[locale]/(main)/cards/[slug]/page.tsx`
 
 **Changes:**
+
 1. Import `getTranslations` from next-intl/server
 2. Replace hardcoded "Kart Bulunamadı" with `t('notFound')`
 3. Replace hardcoded description with `t('notFoundDescription')`
 4. Applied in both catch blocks (lines 120-121, 132-133)
 
 **Impact:**
+
 - ✅ Fixes hardcoded Turkish strings
 - ✅ Enables multi-language error messages
 - ✅ Improves UX for EN/SR locales
@@ -41,22 +45,27 @@ npm run test
 ---
 
 ### Patch 002: Logger Utility
+
 **File:** `002-card-data-logger.patch`  
-**Targets:** 
+**Targets:**
+
 - `src/lib/logger.ts` (NEW FILE)
 - `src/features/tarot-cards/lib/card-data.ts`
 
 **Changes:**
+
 1. Creates new guarded logger utility
 2. Replaces 5 console.error statements with logger.error
 3. Guards logs behind NODE_ENV check
 
 **Impact:**
+
 - ✅ Reduces production log pollution
 - ✅ Maintains debug capability in development
 - ✅ Prepared for future monitoring integration (Sentry, etc.)
 
 **Lines Changed:**
+
 - Line 39: `console.error` → `logger.error`
 - Line 1241: `console.error` → `logger.error`
 - Line 1255: `console.error` → `logger.error`
@@ -66,18 +75,21 @@ npm run test
 ---
 
 ### Patch 003: i18n Keys
+
 **File:** `003-add-i18n-error-keys.patch`  
-**Targets:** 
+**Targets:**
+
 - `messages/tr.json`
 - `messages/en.json`
 - `messages/sr.json`
 
-**Changes:**
-Adds `cards.errors` namespace with:
+**Changes:** Adds `cards.errors` namespace with:
+
 - `notFound`: Error title
 - `notFoundDescription`: Error description
 
 **Keys Added:**
+
 ```json
 {
   "cards": {
@@ -90,6 +102,7 @@ Adds `cards.errors` namespace with:
 ```
 
 **Impact:**
+
 - ✅ Completes i18n coverage for error scenarios
 - ✅ Consistent error messaging across locales
 
@@ -98,12 +111,14 @@ Adds `cards.errors` namespace with:
 ## 🔍 VERIFICATION STEPS
 
 ### 1. Syntax Check
+
 ```bash
 npm run lint
 # Expected: No new errors
 ```
 
 ### 2. Type Check
+
 ```bash
 npm run type-check
 # or
@@ -112,6 +127,7 @@ npx tsc --noEmit
 ```
 
 ### 3. Build Check
+
 ```bash
 npm run build
 # Expected: Successful build
@@ -119,6 +135,7 @@ npm run build
 ```
 
 ### 4. Runtime Test
+
 ```bash
 npm run dev
 
@@ -137,6 +154,7 @@ npm run dev
 ```
 
 ### 5. Logger Test
+
 ```bash
 # Development mode (should see logs)
 NODE_ENV=development npm run dev
@@ -152,9 +170,12 @@ NODE_ENV=production npm run build && npm start
 ## 🚨 TROUBLESHOOTING
 
 ### Issue 1: Patch Fails to Apply
-**Error:** `error: patch failed: src/app/[locale]/(main)/cards/[slug]/page.tsx:110`
+
+**Error:**
+`error: patch failed: src/app/[locale]/(main)/cards/[slug]/page.tsx:110`
 
 **Solution:**
+
 ```bash
 # Check if file was manually modified
 git diff src/app/[locale]/(main)/cards/[slug]/page.tsx
@@ -166,9 +187,11 @@ git diff src/app/[locale]/(main)/cards/[slug]/page.tsx
 ```
 
 ### Issue 2: Type Error on logger
+
 **Error:** `Cannot find module '@/lib/logger'`
 
 **Solution:**
+
 ```bash
 # Ensure logger.ts is created first
 # Verify tsconfig.json paths are correct
@@ -177,9 +200,11 @@ cat tsconfig.json | grep '"@/"'
 ```
 
 ### Issue 3: i18n Keys Not Found
+
 **Error:** `Missing message: "cards.errors.notFound"`
 
 **Solution:**
+
 ```bash
 # Verify JSON files are valid
 node -e "console.log(JSON.parse(require('fs').readFileSync('messages/tr.json')))"
@@ -189,9 +214,12 @@ cat middleware.ts | grep -A 5 "createMiddleware"
 ```
 
 ### Issue 4: Build Fails
-**Error:** `Error: Page "[locale]/(main)/cards/[slug]" is missing "generateStaticParams()"`
+
+**Error:**
+`Error: Page "[locale]/(main)/cards/[slug]" is missing "generateStaticParams()"`
 
 **Solution:**
+
 - This should not happen as generateStaticParams is already present
 - Verify Next.js version: `npm list next`
 - Required: Next.js 13.4+ for App Router static params
@@ -201,6 +229,7 @@ cat middleware.ts | grep -A 5 "createMiddleware"
 ## 📊 BEFORE & AFTER COMPARISON
 
 ### Before Patches
+
 ```typescript
 // ❌ Hardcoded Turkish strings
 return {
@@ -213,6 +242,7 @@ console.error('Error in getCardBySlug:', error);
 ```
 
 ### After Patches
+
 ```typescript
 // ✅ i18n-ready error messages
 const t = await getTranslations({ locale, namespace: 'cards.errors' });
@@ -243,6 +273,7 @@ logger.error('Error in getCardBySlug', error);
 ## 🎬 POST-DEPLOYMENT VALIDATION
 
 ### Staging
+
 1. Deploy to staging environment
 2. Test invalid card URLs in all 3 locales
 3. Verify error messages in correct language
@@ -250,6 +281,7 @@ logger.error('Error in getCardBySlug', error);
 5. Verify metadata in <head> (inspect with View Source)
 
 ### Production
+
 1. Monitor error rates (should remain stable)
 2. Verify Lighthouse score (should not decrease)
 3. Check Core Web Vitals (LCP, FID, CLS)
@@ -283,7 +315,8 @@ npm run build
 
 ## 📝 NOTES
 
-1. **Logger Utility**: This is a foundational utility. Consider extending it with:
+1. **Logger Utility**: This is a foundational utility. Consider extending it
+   with:
    - Sentry integration for production error tracking
    - LogRocket for session replay
    - Custom analytics events
@@ -307,4 +340,3 @@ npm run build
 **Author:** AI Code Auditor  
 **Date:** 2025-10-07  
 **Status:** ✅ READY TO APPLY
-

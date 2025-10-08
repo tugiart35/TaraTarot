@@ -29,6 +29,7 @@
 ## 🎯 WHAT'S WRONG
 
 ### Current State
+
 ```typescript
 // Component receives locale prop but ignores it!
 <AuthForm locale="en" ... />
@@ -42,7 +43,9 @@ newErrors.email = 'E-posta adresi gerekli';  // ❌ Turkish only
 ```
 
 ### User Impact
+
 **English User Experience:**
+
 1. Visits `/en/auth`
 2. Sees form in Turkish ❌
 3. Cannot understand validation errors
@@ -50,6 +53,7 @@ newErrors.email = 'E-posta adresi gerekli';  // ❌ Turkish only
 5. Likely bounces 📉
 
 **Serbian User Experience:**
+
 - Same problem! ❌
 
 ---
@@ -58,16 +62,16 @@ newErrors.email = 'E-posta adresi gerekli';  // ❌ Turkish only
 
 ### Hardcoded Strings Count
 
-| Category | Count | Examples |
-|----------|-------|----------|
-| Validation messages | 20+ | "E-posta adresi gerekli", "Şifre gerekli" |
-| Placeholders | 10+ | "E-posta adresiniz", "Adınız" |
-| Button labels | 10+ | "Giriş Yap", "Kayıt Ol", "İptal" |
-| Loading states | 5+ | "Doğrulanıyor...", "Giriş yapılıyor..." |
-| Modal titles | 5+ | "Şifre Sıfırlama", "E-posta Onayı" |
-| Dropdown options | 5+ | "Erkek", "Kadın", "Diğer" |
-| Success messages | 5+ | "Başarıyla giriş yapıldı!" |
-| **TOTAL** | **60+** | **All need translation!** |
+| Category            | Count   | Examples                                  |
+| ------------------- | ------- | ----------------------------------------- |
+| Validation messages | 20+     | "E-posta adresi gerekli", "Şifre gerekli" |
+| Placeholders        | 10+     | "E-posta adresiniz", "Adınız"             |
+| Button labels       | 10+     | "Giriş Yap", "Kayıt Ol", "İptal"          |
+| Loading states      | 5+      | "Doğrulanıyor...", "Giriş yapılıyor..."   |
+| Modal titles        | 5+      | "Şifre Sıfırlama", "E-posta Onayı"        |
+| Dropdown options    | 5+      | "Erkek", "Kadın", "Diğer"                 |
+| Success messages    | 5+      | "Başarıyla giriş yapıldı!"                |
+| **TOTAL**           | **60+** | **All need translation!**                 |
 
 ---
 
@@ -76,6 +80,7 @@ newErrors.email = 'E-posta adresi gerekli';  // ❌ Turkish only
 ### Step 1: Create i18n Keys (All Locales)
 
 **messages/tr.json:**
+
 ```json
 {
   "authForm": {
@@ -161,7 +166,7 @@ import { useTranslations } from 'next-intl';
 
 function AuthForm({ locale, ... }: AuthFormProps) {
   const t = useTranslations('authForm');
-  
+
   // Replace all hardcoded strings:
   newErrors.email = t('validation.emailRequired');
   placeholder={t('placeholders.email')}
@@ -173,15 +178,15 @@ function AuthForm({ locale, ... }: AuthFormProps) {
 
 ## ⏱️ ESTIMATED EFFORT
 
-| Task | Time | Priority |
-|------|------|----------|
-| Create i18n keys (TR) | 1 hour | 🔴 Critical |
-| Translate to EN | 45 min | 🔴 Critical |
-| Translate to SR | 45 min | 🔴 Critical |
-| Replace strings in component | 1 hour | 🔴 Critical |
-| Testing (all scenarios × 3 langs) | 2 hours | 🔴 Critical |
-| Fix open redirect | 5 min | 🟡 Medium |
-| **TOTAL** | **6 hours** | **🔴 CRITICAL** |
+| Task                              | Time        | Priority        |
+| --------------------------------- | ----------- | --------------- |
+| Create i18n keys (TR)             | 1 hour      | 🔴 Critical     |
+| Translate to EN                   | 45 min      | 🔴 Critical     |
+| Translate to SR                   | 45 min      | 🔴 Critical     |
+| Replace strings in component      | 1 hour      | 🔴 Critical     |
+| Testing (all scenarios × 3 langs) | 2 hours     | 🔴 Critical     |
+| Fix open redirect                 | 5 min       | 🟡 Medium       |
+| **TOTAL**                         | **6 hours** | **🔴 CRITICAL** |
 
 ---
 
@@ -197,11 +202,13 @@ Can deploy for international: ❌ NO (major UX issue)
 ### Recommendation
 
 **Option A: Turkish-Only Launch** (Immediate)
+
 - Deploy to `/tr/` routes only
 - Disable `/en/` and `/sr/` auth pages
 - Add "Coming Soon" notice for EN/SR
 
 **Option B: Full i18n Sprint** (Recommended)
+
 - Dedicate 1-2 days for full i18n
 - Deploy to all markets with proper language support
 - Professional multi-language experience
@@ -213,11 +220,13 @@ Can deploy for international: ❌ NO (major UX issue)
 ## 📞 NEXT STEPS
 
 ### Immediate
+
 1. ⚠️ Review this critical finding
 2. ⚠️ Decide: Turkish-only or full i18n?
 3. ⚠️ Schedule i18n sprint if needed
 
 ### i18n Sprint (If Proceeding)
+
 1. Create authForm namespace in all 3 locales
 2. Extract 60+ strings
 3. Replace with t() calls
@@ -230,12 +239,14 @@ Can deploy for international: ❌ NO (major UX issue)
 ## 🎓 LESSONS LEARNED
 
 **How did this happen?**
+
 - Component likely created for Turkish market first
 - i18n planned for "later"
 - "Later" never came
 - Now it's a blocker
 
 **Prevention:**
+
 - Start with i18n from day 1
 - Code review checklist: "Any hardcoded strings?"
 - Automated i18n linting
@@ -258,4 +269,3 @@ Bu dosya **teknik olarak** çalışıyor ama **sadece Turkish kullanıcılar iç
 EN/SR deployment için **major i18n refactoring** şart!
 
 **Karar ver: Turkish-only launch mı, yoksa proper international launch mı?** 🤔
-

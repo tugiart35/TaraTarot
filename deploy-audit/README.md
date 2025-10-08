@@ -8,21 +8,25 @@
 
 ## 📋 RAPOR DİZİNİ
 
-Bu dizin, TaraTarot projesinin production deployment hazırlığı için yapılan kapsamlı audit raporlarını içerir.
+Bu dizin, TaraTarot projesinin production deployment hazırlığı için yapılan
+kapsamlı audit raporlarını içerir.
 
 ### Ana Rapor
 
 📄 **[../100%-DEPLOY-READY.mdc](../%100-DEPLOY-READY.mdc)**  
-Deployment hazırlığının genel değerlendirmesi, kritik sorunlar ve adım adım deployment kılavuzu.
+Deployment hazırlığının genel değerlendirmesi, kritik sorunlar ve adım adım
+deployment kılavuzu.
 
 ---
 
 ## 📚 DETAYLI RAPORLAR
 
 ### 🔴 1. Kritik Güvenlik Sorunları
+
 **Dosya:** [01-CRITICAL-SECURITY.md](01-CRITICAL-SECURITY.md)
 
 **İçerik:**
+
 - ⛔ API key sızıntısı (.gemini/ dizini)
 - Environment validation eksikliği
 - Service role key kullanımı
@@ -35,9 +39,11 @@ Deployment hazırlığının genel değerlendirmesi, kritik sorunlar ve adım ad
 ---
 
 ### 🔧 2. TypeScript Hataları
+
 **Dosya:** [02-TYPESCRIPT-ERRORS.md](02-TYPESCRIPT-ERRORS.md)
 
 **İçerik:**
+
 - 43 TypeScript hatası (sadece test dosyalarında)
 - Production kodu: ✅ HATASIZ
 - Component interface sorunları
@@ -50,9 +56,11 @@ Deployment hazırlığının genel değerlendirmesi, kritik sorunlar ve adım ad
 ---
 
 ### 📝 3. Console Log Temizliği
+
 **Dosya:** [03-CONSOLE-LOGS.md](03-CONSOLE-LOGS.md)
 
 **İçerik:**
+
 - 560 console statement tespit edildi
 - 105 dosya etkilenmiş
 - Performance ve güvenlik etkileri
@@ -65,9 +73,11 @@ Deployment hazırlığının genel değerlendirmesi, kritik sorunlar ve adım ad
 ---
 
 ### 🌍 4. Environment Configuration
+
 **Dosya:** [04-ENVIRONMENT-CONFIG.md](04-ENVIRONMENT-CONFIG.md)
 
 **İçerik:**
+
 - Eksik environment variables (7+)
 - GROQ_API_KEY, GEMINI_API_KEY eksik
 - Environment validation önerileri
@@ -80,9 +90,11 @@ Deployment hazırlığının genel değerlendirmesi, kritik sorunlar ve adım ad
 ---
 
 ### 🌐 5. i18n Completeness
+
 **Dosya:** [05-I18N-COMPLETENESS.md](05-I18N-COMPLETENESS.md)
 
 **İçerik:**
+
 - 3 dil desteği (TR, EN, SR)
 - Translation completeness kontrolü
 - Hardcoded string tespiti
@@ -100,11 +112,11 @@ Deployment hazırlığının genel değerlendirmesi, kritik sorunlar ve adım ad
 
 ### Mevcut Patch'ler:
 
-| # | Dosya | Öncelik | Açıklama |
-|---|-------|---------|----------|
+| #   | Dosya                              | Öncelik     | Açıklama                         |
+| --- | ---------------------------------- | ----------- | -------------------------------- |
 | 001 | `001-gitignore-security-fix.patch` | 🔴 CRITICAL | .gitignore'a güvenlik eklemeleri |
-| 002 | `002-env-example-update.patch` | 🟡 HIGH | env.example güncelleme |
-| 003 | `003-env-validator.patch` | 🟡 HIGH | Environment validation ekleme |
+| 002 | `002-env-example-update.patch`     | 🟡 HIGH     | env.example güncelleme           |
+| 003 | `003-env-validator.patch`          | 🟡 HIGH     | Environment validation ekleme    |
 
 ### Patch Uygulama:
 
@@ -128,11 +140,13 @@ APPLY=true ./deploy-audit/patches/APPLY.sh 001
 ### Minimum Gereksinimler (2 saat):
 
 1. ✅ **Patch'leri Uygula**
+
    ```bash
    APPLY=true ./deploy-audit/patches/APPLY.sh all
    ```
 
 2. ✅ **.gemini/ Dizinini Temizle**
+
    ```bash
    rm -rf .gemini/
    git rm -r --cached .gemini/
@@ -145,6 +159,7 @@ APPLY=true ./deploy-audit/patches/APPLY.sh 001
    - .env.local'a ekle
 
 4. ✅ **Environment Variables Ayarla**
+
    ```bash
    cp env.example .env.local
    nano .env.local
@@ -164,25 +179,25 @@ APPLY=true ./deploy-audit/patches/APPLY.sh 001
 
 ### Mevcut Durum
 
-| Kategori | Puan | Status |
-|----------|------|--------|
-| 🔴 Güvenlik | 3.25/10 | CRITICAL |
-| 🟢 TypeScript | 9/10 | GOOD |
-| 🟡 Console Logs | 5/10 | MEDIUM |
-| 🟡 Env Config | 6/10 | MEDIUM |
-| 🟢 i18n | 8/10 | GOOD |
-| **TOPLAM** | **6.25/10** | **KOŞULLU** |
+| Kategori        | Puan        | Status      |
+| --------------- | ----------- | ----------- |
+| 🔴 Güvenlik     | 3.25/10     | CRITICAL    |
+| 🟢 TypeScript   | 9/10        | GOOD        |
+| 🟡 Console Logs | 5/10        | MEDIUM      |
+| 🟡 Env Config   | 6/10        | MEDIUM      |
+| 🟢 i18n         | 8/10        | GOOD        |
+| **TOPLAM**      | **6.25/10** | **KOŞULLU** |
 
 ### Patch'ler Sonrası Tahmini
 
-| Kategori | Puan | Status |
-|----------|------|--------|
-| 🟢 Güvenlik | 8.5/10 | GOOD |
-| 🟢 TypeScript | 9/10 | GOOD |
-| 🟡 Console Logs | 5/10 | MEDIUM |
-| 🟢 Env Config | 9/10 | EXCELLENT |
-| 🟢 i18n | 8/10 | GOOD |
-| **TOPLAM** | **7.9/10** | **HAZIR** |
+| Kategori        | Puan       | Status    |
+| --------------- | ---------- | --------- |
+| 🟢 Güvenlik     | 8.5/10     | GOOD      |
+| 🟢 TypeScript   | 9/10       | GOOD      |
+| 🟡 Console Logs | 5/10       | MEDIUM    |
+| 🟢 Env Config   | 9/10       | EXCELLENT |
+| 🟢 i18n         | 8/10       | GOOD      |
+| **TOPLAM**      | **7.9/10** | **HAZIR** |
 
 ---
 
@@ -243,6 +258,7 @@ deploy-audit/
 Sadece raporlar ve patch'ler oluşturuldu.
 
 Kod değişiklikleri için:
+
 ```bash
 APPLY=true ./deploy-audit/patches/APPLY.sh all
 ```
@@ -260,11 +276,13 @@ git filter-repo --path .gemini --invert-paths --force
 ### Production Secrets
 
 **ASLA:**
+
 - .env dosyalarını commit etmeyin
 - API key'leri kod içine yazmayın
 - Hassas bilgileri console.log'lamayın
 
 **HER ZAMAN:**
+
 - Secrets manager kullanın (Vercel Env, AWS Secrets)
 - Environment-specific config kullanın
 - Key rotation policy uygulayın
@@ -287,6 +305,7 @@ Sorular için:
 ### 2025-10-07 - v1.0 (İlk Audit)
 
 **Oluşturulan Raporlar:**
+
 - ✅ Güvenlik audit
 - ✅ TypeScript error analysis
 - ✅ Console log audit
@@ -294,11 +313,13 @@ Sorular için:
 - ✅ i18n completeness audit
 
 **Oluşturulan Patch'ler:**
+
 - ✅ .gitignore security fix
 - ✅ env.example update
 - ✅ Environment validator
 
 **Tespit Edilen Kritik Sorunlar:**
+
 - 🔴 .gemini/ API key sızıntısı
 - 🟡 Eksik environment variables
 - 🟡 Environment validation eksik
@@ -306,4 +327,3 @@ Sorular için:
 ---
 
 **🚀 Başarılı deployment'lar dileriz!**
-

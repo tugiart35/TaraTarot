@@ -54,29 +54,48 @@ export function useTarotDeck(): TarotCard[] {
     const deckArray: TarotCard[] = [];
 
     // Major Arcana (22 kart)
+    const majorArcanaNames = [
+      'The Fool',
+      'The Magician',
+      'The High Priestess',
+      'The Empress',
+      'The Emperor',
+      'The Hierophant',
+      'The Lovers',
+      'The Chariot',
+      'Strength',
+      'The Hermit',
+      'Wheel of Fortune',
+      'Justice',
+      'The Hanged Man',
+      'Death',
+      'Temperance',
+      'The Devil',
+      'The Tower',
+      'The Star',
+      'The Moon',
+      'The Sun',
+      'Judgement',
+      'The World',
+    ];
+
     for (let i = 0; i <= 21; i++) {
       deckArray.push({
         id: i,
-        name: t(`tarotCards.majorArcana.${i}.name`, `Card ${i}`),
-        nameTr: t(`tarotCards.majorArcana.${i}.name`, `Card ${i}`),
+        name: majorArcanaNames[i] || `Card ${i}`,
+        nameTr: majorArcanaNames[i] || `Card ${i}`,
         suit: 'major' as const,
         number: i,
         meaning: {
-          upright: t(`tarotCards.majorArcana.${i}.meaning.upright`, ''),
-          reversed: t(`tarotCards.majorArcana.${i}.meaning.reversed`, ''),
+          upright: '',
+          reversed: '',
         },
         meaningTr: {
-          upright: t(`tarotCards.majorArcana.${i}.meaning.upright`, ''),
-          reversed: t(`tarotCards.majorArcana.${i}.meaning.reversed`, ''),
+          upright: '',
+          reversed: '',
         },
-        keywords: t(`tarotCards.majorArcana.${i}.keywords`, '')
-          .split(',')
-          .map(k => k.trim())
-          .filter(k => k),
-        keywordsTr: t(`tarotCards.majorArcana.${i}.keywords`, '')
-          .split(',')
-          .map(k => k.trim())
-          .filter(k => k),
+        keywords: [],
+        keywordsTr: [],
         image: `/cards/rws/${i === 0 ? '0-Fool' : i === 1 ? 'I-Magician' : i === 2 ? 'II-HighPriestess' : i === 3 ? 'III-Empress' : i === 4 ? 'IV-Emperor' : i === 5 ? 'V-Hierophant' : i === 6 ? 'VI-Lovers' : i === 7 ? 'VII-Chariot' : i === 8 ? 'VIII-Strength' : i === 9 ? 'IX-Hermit' : i === 10 ? 'X-WheelOfFortune' : i === 11 ? 'XI-Justice' : i === 12 ? 'XII-HangedMan' : i === 13 ? 'XIII-Death' : i === 14 ? 'XIV-Temperance' : i === 15 ? 'XV-Devil' : i === 16 ? 'XVI-Tower' : i === 17 ? 'XVII-Star' : i === 18 ? 'XVIII-Moon' : i === 19 ? 'XIX-Sun' : i === 20 ? 'XX-Judgement' : 'XXI-World'}.jpg`,
       });
     }
@@ -100,31 +119,42 @@ export function useTarotDeck(): TarotCard[] {
     ];
 
     cupsCards.forEach(card => {
-      const key = card.court
-        ? `tarotCards.cups.${card.court}`
-        : `tarotCards.cups.${card.number}`;
+      const numberNames = [
+        '',
+        'Ace',
+        'Two',
+        'Three',
+        'Four',
+        'Five',
+        'Six',
+        'Seven',
+        'Eight',
+        'Nine',
+        'Ten',
+      ];
+      const numberName =
+        card.number >= 1 && card.number <= 10 ? numberNames[card.number] : '';
+
       deckArray.push({
         id: card.id,
-        name: t(`${key}.name`, `Cups Card ${card.number}`),
-        nameTr: t(`${key}.name`, `Cups Card ${card.number}`),
+        name: card.court
+          ? `${card.court.charAt(0).toUpperCase() + card.court.slice(1)} of Cups`
+          : `${numberName} of Cups`,
+        nameTr: card.court
+          ? `${card.court.charAt(0).toUpperCase() + card.court.slice(1)} of Cups`
+          : `${numberName} of Cups`,
         suit: 'cups' as const,
         number: card.number,
         meaning: {
-          upright: t(`${key}.meaning.upright`, ''),
-          reversed: t(`${key}.meaning.reversed`, ''),
+          upright: '',
+          reversed: '',
         },
         meaningTr: {
-          upright: t(`${key}.meaning.upright`, ''),
-          reversed: t(`${key}.meaning.reversed`, ''),
+          upright: '',
+          reversed: '',
         },
-        keywords: t(`${key}.keywords`, '')
-          .split(',')
-          .map(k => k.trim())
-          .filter(k => k),
-        keywordsTr: t(`${key}.keywords`, '')
-          .split(',')
-          .map(k => k.trim())
-          .filter(k => k),
+        keywords: [],
+        keywordsTr: [],
         image: `/cards/rws/${card.image}.jpg`,
       });
     });
@@ -148,31 +178,42 @@ export function useTarotDeck(): TarotCard[] {
     ];
 
     wandsCards.forEach(card => {
-      const key = card.court
-        ? `tarotCards.wands.${card.court}`
-        : `tarotCards.wands.${card.number}`;
+      const numberNames = [
+        '',
+        'Ace',
+        'Two',
+        'Three',
+        'Four',
+        'Five',
+        'Six',
+        'Seven',
+        'Eight',
+        'Nine',
+        'Ten',
+      ];
+      const numberName =
+        card.number >= 1 && card.number <= 10 ? numberNames[card.number] : '';
+
       deckArray.push({
         id: card.id,
-        name: t(`${key}.name`, `Wands Card ${card.number}`),
-        nameTr: t(`${key}.name`, `Wands Card ${card.number}`),
+        name: card.court
+          ? `${card.court.charAt(0).toUpperCase() + card.court.slice(1)} of Wands`
+          : `${numberName} of Wands`,
+        nameTr: card.court
+          ? `${card.court.charAt(0).toUpperCase() + card.court.slice(1)} of Wands`
+          : `${numberName} of Wands`,
         suit: 'wands' as const,
         number: card.number,
         meaning: {
-          upright: t(`${key}.meaning.upright`, ''),
-          reversed: t(`${key}.meaning.reversed`, ''),
+          upright: '',
+          reversed: '',
         },
         meaningTr: {
-          upright: t(`${key}.meaning.upright`, ''),
-          reversed: t(`${key}.meaning.reversed`, ''),
+          upright: '',
+          reversed: '',
         },
-        keywords: t(`${key}.keywords`, '')
-          .split(',')
-          .map(k => k.trim())
-          .filter(k => k),
-        keywordsTr: t(`${key}.keywords`, '')
-          .split(',')
-          .map(k => k.trim())
-          .filter(k => k),
+        keywords: [],
+        keywordsTr: [],
         image: `/cards/rws/${card.image}.jpg`,
       });
     });
@@ -196,31 +237,42 @@ export function useTarotDeck(): TarotCard[] {
     ];
 
     swordsCards.forEach(card => {
-      const key = card.court
-        ? `tarotCards.swords.${card.court}`
-        : `tarotCards.swords.${card.number}`;
+      const numberNames = [
+        '',
+        'Ace',
+        'Two',
+        'Three',
+        'Four',
+        'Five',
+        'Six',
+        'Seven',
+        'Eight',
+        'Nine',
+        'Ten',
+      ];
+      const numberName =
+        card.number >= 1 && card.number <= 10 ? numberNames[card.number] : '';
+
       deckArray.push({
         id: card.id,
-        name: t(`${key}.name`, `Swords Card ${card.number}`),
-        nameTr: t(`${key}.name`, `Swords Card ${card.number}`),
+        name: card.court
+          ? `${card.court.charAt(0).toUpperCase() + card.court.slice(1)} of Swords`
+          : `${numberName} of Swords`,
+        nameTr: card.court
+          ? `${card.court.charAt(0).toUpperCase() + card.court.slice(1)} of Swords`
+          : `${numberName} of Swords`,
         suit: 'swords' as const,
         number: card.number,
         meaning: {
-          upright: t(`${key}.meaning.upright`, ''),
-          reversed: t(`${key}.meaning.reversed`, ''),
+          upright: '',
+          reversed: '',
         },
         meaningTr: {
-          upright: t(`${key}.meaning.upright`, ''),
-          reversed: t(`${key}.meaning.reversed`, ''),
+          upright: '',
+          reversed: '',
         },
-        keywords: t(`${key}.keywords`, '')
-          .split(',')
-          .map(k => k.trim())
-          .filter(k => k),
-        keywordsTr: t(`${key}.keywords`, '')
-          .split(',')
-          .map(k => k.trim())
-          .filter(k => k),
+        keywords: [],
+        keywordsTr: [],
         image: `/cards/rws/${card.image}.jpg`,
       });
     });
@@ -244,31 +296,42 @@ export function useTarotDeck(): TarotCard[] {
     ];
 
     pentaclesCards.forEach(card => {
-      const key = card.court
-        ? `tarotCards.pentacles.${card.court}`
-        : `tarotCards.pentacles.${card.number}`;
+      const numberNames = [
+        '',
+        'Ace',
+        'Two',
+        'Three',
+        'Four',
+        'Five',
+        'Six',
+        'Seven',
+        'Eight',
+        'Nine',
+        'Ten',
+      ];
+      const numberName =
+        card.number >= 1 && card.number <= 10 ? numberNames[card.number] : '';
+
       deckArray.push({
         id: card.id,
-        name: t(`${key}.name`, `Pentacles Card ${card.number}`),
-        nameTr: t(`${key}.name`, `Pentacles Card ${card.number}`),
+        name: card.court
+          ? `${card.court.charAt(0).toUpperCase() + card.court.slice(1)} of Pentacles`
+          : `${numberName} of Pentacles`,
+        nameTr: card.court
+          ? `${card.court.charAt(0).toUpperCase() + card.court.slice(1)} of Pentacles`
+          : `${numberName} of Pentacles`,
         suit: 'pentacles' as const,
         number: card.number,
         meaning: {
-          upright: t(`${key}.meaning.upright`, ''),
-          reversed: t(`${key}.meaning.reversed`, ''),
+          upright: '',
+          reversed: '',
         },
         meaningTr: {
-          upright: t(`${key}.meaning.upright`, ''),
-          reversed: t(`${key}.meaning.reversed`, ''),
+          upright: '',
+          reversed: '',
         },
-        keywords: t(`${key}.keywords`, '')
-          .split(',')
-          .map(k => k.trim())
-          .filter(k => k),
-        keywordsTr: t(`${key}.keywords`, '')
-          .split(',')
-          .map(k => k.trim())
-          .filter(k => k),
+        keywords: [],
+        keywordsTr: [],
         image: `/cards/rws/${card.image}.jpg`,
       });
     });

@@ -28,24 +28,27 @@
 ### Serbian Route Shows Turkish Errors!
 
 **Current (WRONG):**
+
 ```typescript
 // Line 120-121 in Serbian route
 return {
-  title: 'Kart Bulunamadı',  // ❌ TURKISH!
-  description: 'Aradığınız tarot kartı bulunamadı.',  // ❌ TURKISH!
+  title: 'Kart Bulunamadı', // ❌ TURKISH!
+  description: 'Aradığınız tarot kartı bulunamadı.', // ❌ TURKISH!
 };
 ```
 
 **Expected (CORRECT):**
+
 ```typescript
 // Should be Serbian
 return {
-  title: 'Karta Nije Pronađena',  // ✅ SERBIAN!
-  description: 'Tarot karta koju tražite nije pronađena.',  // ✅ SERBIAN!
+  title: 'Karta Nije Pronađena', // ✅ SERBIAN!
+  description: 'Tarot karta koju tražite nije pronađena.', // ✅ SERBIAN!
 };
 ```
 
 **Impact:** Serbian users navigating to `/sr/kartice/invalid-card` will see:
+
 - ❌ "Kart Bulunamadı" (Turkish)
 - ✅ Should see "Karta Nije Pronađena" (Serbian)
 
@@ -79,17 +82,19 @@ npm run dev
 ## 📁 OLUŞTURULAN DOSYALAR
 
 ### 🔍 Ana Rapor (CRITICAL)
+
 📄 **`i18nfix/reports/src-app-locale-main-kartice-slug-page.md`** ⚠️
+
 - **100% DEPLOY'A UYGUN MU?** → **NO** (Wrong language!)
 - Critical issue: Turkish in Serbian route
 - 2 console.error instances
 - IMMEDIATE FIX REQUIRED
 
 ### 🔧 Critical Patches
+
 1. **`001-kartice-slug-page-i18n-errors.patch`** ⚠️ **APPLY NOW**
    - Fixes wrong language issue
    - Turkish → i18n keys (Serbian)
-   
 2. **`002-kartice-slug-page-logger.patch`**
    - console.error → logger.error
 
@@ -97,32 +102,34 @@ npm run dev
 
 ## 📈 ETKİ ANALİZİ
 
-| Metrik | Önce | Sonra | Değişim |
-|--------|------|-------|---------|
-| **Language Correctness** | 0% (TR in SR!) | 100% | +100% ⚠️ CRITICAL |
-| **i18n Coverage** | 70% | 100% | +30% ⬆️ |
-| **Code Quality** | 75% | 95% | +20% ⬆️ |
-| **Deploy Ready** | 80% | 100% | +20% ⬆️ |
-| **User Experience** | ❌ BAD | ✅ GOOD | FIXED ⬆️ |
-| **TOPLAM SKOR** | **79%** | **98%** | **+19%** ⬆️ |
+| Metrik                   | Önce           | Sonra   | Değişim           |
+| ------------------------ | -------------- | ------- | ----------------- |
+| **Language Correctness** | 0% (TR in SR!) | 100%    | +100% ⚠️ CRITICAL |
+| **i18n Coverage**        | 70%            | 100%    | +30% ⬆️           |
+| **Code Quality**         | 75%            | 95%     | +20% ⬆️           |
+| **Deploy Ready**         | 80%            | 100%    | +20% ⬆️           |
+| **User Experience**      | ❌ BAD         | ✅ GOOD | FIXED ⬆️          |
+| **TOPLAM SKOR**          | **79%**        | **98%** | **+19%** ⬆️       |
 
 ---
 
 ## 🔄 3-ROUTE CONSISTENCY STATUS
 
 ### Before Patches
-| Route | Language in Errors | Console.error | i18n | Deploy |
-|-------|--------------------|---------------|------|--------|
-| /cards/ (EN) | ✅ Correct | ✅ Fixed | ✅ | ✅ YES |
-| /kartlar/ (TR) | ✅ Correct | ✅ Fixed | ✅ | ✅ YES |
-| /kartice/ (SR) | ❌ **Turkish!** | ❌ 2 calls | ❌ | ❌ NO |
+
+| Route          | Language in Errors | Console.error | i18n | Deploy |
+| -------------- | ------------------ | ------------- | ---- | ------ |
+| /cards/ (EN)   | ✅ Correct         | ✅ Fixed      | ✅   | ✅ YES |
+| /kartlar/ (TR) | ✅ Correct         | ✅ Fixed      | ✅   | ✅ YES |
+| /kartice/ (SR) | ❌ **Turkish!**    | ❌ 2 calls    | ❌   | ❌ NO  |
 
 ### After Patches
-| Route | Language in Errors | Console.error | i18n | Deploy |
-|-------|--------------------|---------------|------|--------|
-| /cards/ (EN) | ✅ Correct | ✅ Fixed | ✅ | ✅ YES |
-| /kartlar/ (TR) | ✅ Correct | ✅ Fixed | ✅ | ✅ YES |
-| /kartice/ (SR) | ✅ **Fixed!** | ✅ Fixed | ✅ | ✅ YES |
+
+| Route          | Language in Errors | Console.error | i18n | Deploy |
+| -------------- | ------------------ | ------------- | ---- | ------ |
+| /cards/ (EN)   | ✅ Correct         | ✅ Fixed      | ✅   | ✅ YES |
+| /kartlar/ (TR) | ✅ Correct         | ✅ Fixed      | ✅   | ✅ YES |
+| /kartice/ (SR) | ✅ **Fixed!**      | ✅ Fixed      | ✅   | ✅ YES |
 
 **Result:** 🎉 **ALL 3 ROUTES CONSISTENT!**
 
@@ -151,13 +158,16 @@ npm run dev
 ## 🎯 WHY THIS IS CRITICAL
 
 ### User Impact
+
 Bir Serbian kullanıcı invalid URL girerse:
+
 - ❌ **Before:** "Kart Bulunamadı" görür (ne demek anlamaz!)
 - ✅ **After:** "Karta Nije Pronađena" görür (anlayabilir!)
 
 **This is a UX bug that affects real users!** 🚨
 
 ### SEO Impact
+
 - Search engines may penalize for language mismatch
 - Serbian page showing Turkish content hurts SEO
 - Metadata language inconsistency detected by crawlers
@@ -189,4 +199,3 @@ Bir Serbian kullanıcı invalid URL girerse:
 **Durum:** ⚠️ **CRITICAL FIX REQUIRED**  
 **Öncelik:** 🔴 **YÜKSEK - ACİL**  
 **Sonraki Aksiyon:** 🚨 **PATCH'LERİ HEMEN UYGULA!**
-

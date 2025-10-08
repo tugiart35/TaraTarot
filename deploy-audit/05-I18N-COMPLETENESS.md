@@ -12,7 +12,7 @@
 - **Varsayılan Dil:** Türkçe (TR)
 - **Translation Keys (TR):** 6536 satır
 - **Translation Keys (EN):** 6036 satır  
-**Translation Keys (SR):** Kontrol edilmeli
+  **Translation Keys (SR):** Kontrol edilmeli
 - **i18n Library:** next-intl
 - **Durum:** ✅ FUNCTIONAL
 
@@ -49,6 +49,7 @@ export const localeConfig = {
 ```
 
 ✅ **İyi Noktalar:**
+
 - Type-safe locale definitions
 - Timezone support
 - Native name support
@@ -65,12 +66,12 @@ const urlMappings: Record<string, string> = {
   '/tr/anasayfa': '/tr',
   '/tr/tarot-okuma': '/tr/tarotokumasi',
   '/tr/giris': '/tr/auth',
-  
+
   // English
   '/en/home': '/en',
   '/en/tarot-reading': '/en/tarotokumasi',
   '/en/login': '/en/auth',
-  
+
   // Serbian
   '/sr/pocetna': '/sr',
   '/sr/tarot-citanje': '/sr/tarotokumasi',
@@ -79,6 +80,7 @@ const urlMappings: Record<string, string> = {
 ```
 
 ✅ **İyi Noktalar:**
+
 - SEO-friendly URLs
 - Locale-specific routes
 - Clean URL structure
@@ -95,6 +97,7 @@ messages/
 ```
 
 ✅ **İyi Organizasyon:**
+
 - Nested key structure
 - Kategorize edilmiş (auth, common, cards, etc.)
 - Tutarlı naming convention
@@ -108,6 +111,7 @@ messages/
 **Sorun:** SR translation'ların completeness'i belirsiz
 
 **Kontrol Gerekli:**
+
 ```bash
 # Eksik key'leri bul:
 node scripts/i18n-key-extractor.mjs
@@ -115,6 +119,7 @@ node scripts/check-hardcoded-ui-strings.mjs
 ```
 
 **Önerilen Aksiyonlar:**
+
 1. TR vs SR key count karşılaştır
 2. Eksik key'leri tespit et
 3. Auto-translation ile doldur (manual review gerek)
@@ -126,6 +131,7 @@ node scripts/check-hardcoded-ui-strings.mjs
 **Sorun:** Bazı UI metinleri hala hardcoded olabilir
 
 **Tespit Yöntemleri:**
+
 ```bash
 # Mevcut script'ler:
 npm run i18n:check
@@ -134,6 +140,7 @@ npm run i18n:find
 ```
 
 **Önerilen:**
+
 ```bash
 # Tüm hardcoded string'leri bul:
 grep -r "\"[A-Z][a-z].*\"" src/app --include="*.tsx" --include="*.ts"
@@ -141,6 +148,7 @@ grep -r "'[A-Z][a-z].*'" src/components --include="*.tsx" --include="*.ts"
 ```
 
 **Common Patterns:**
+
 ```typescript
 // ❌ Hardcoded:
 <button>Giriş Yap</button>
@@ -162,6 +170,7 @@ grep -r "'[A-Z][a-z].*'" src/components --include="*.tsx" --include="*.ts"
 **Mevcut Durum:**
 
 **Dosya:** `src/lib/tarot/card-names.ts`
+
 ```typescript
 export function getCardName(cardKey: string, locale: Locale): string {
   const card = CARD_NAME_MAPPINGS[cardKey];
@@ -175,6 +184,7 @@ export function getCardName(cardKey: string, locale: Locale): string {
 ✅ **İyi:** Kart isimleri locale-aware
 
 **Kontrol Edilmeli:**
+
 - Tüm 78 kart için çeviriler var mı?
 - Kart açıklamaları translate edilmiş mi?
 - Position meanings çevrilmiş mi?
@@ -186,6 +196,7 @@ export function getCardName(cardKey: string, locale: Locale): string {
 **Sorun:** Locale-specific formatting consistency
 
 **Önerilen:**
+
 ```typescript
 // src/lib/i18n/formatters.ts - YENİ DOSYA
 
@@ -214,6 +225,7 @@ export function formatNumber(number: number, locale: Locale): string {
 ```
 
 **Kullanım:**
+
 ```typescript
 // ❌ Önce:
 <span>{price} TL</span>
@@ -231,6 +243,7 @@ export function formatNumber(number: number, locale: Locale): string {
 **Sorun:** Plural form'lar hardcoded
 
 **Önerilen:**
+
 ```json
 // messages/tr.json
 {
@@ -251,10 +264,11 @@ export function formatNumber(number: number, locale: Locale): string {
 ```
 
 **Kullanım:**
+
 ```typescript
 // next-intl'de:
-t('credits.count', { count: 5 }) // "5 credits"
-t('credits.count', { count: 1 }) // "1 credit"
+t('credits.count', { count: 5 }); // "5 credits"
+t('credits.count', { count: 1 }); // "1 credit"
 ```
 
 ---
@@ -264,6 +278,7 @@ t('credits.count', { count: 1 }) // "1 credit"
 **Sorun:** Arapça gibi RTL diller için hazır değil
 
 **Önerilen (ihtiyaç olursa):**
+
 ```typescript
 // src/lib/i18n/config.ts
 export const localeConfig = {
@@ -357,28 +372,29 @@ npm run dev
 
 ### Key Count Comparison
 
-| Dil | Lines | Estimated Keys | Status |
-|-----|-------|----------------|--------|
-| TR | 6536 | ~2000+ | ✅ Complete |
-| EN | 6036 | ~1900+ | ✅ Good |
-| SR | ? | ? | ⚠️ Check |
+| Dil | Lines | Estimated Keys | Status      |
+| --- | ----- | -------------- | ----------- |
+| TR  | 6536  | ~2000+         | ✅ Complete |
+| EN  | 6036  | ~1900+         | ✅ Good     |
+| SR  | ?     | ?              | ⚠️ Check    |
 
 ### Critical Sections
 
-| Section | TR | EN | SR | Priority |
-|---------|----|----|----|---------| 
-| auth | ✅ | ✅ | ? | HIGH |
-| common | ✅ | ✅ | ? | HIGH |
-| cards | ✅ | ✅ | ? | MEDIUM |
-| readings | ✅ | ✅ | ? | HIGH |
-| dashboard | ✅ | ✅ | ? | MEDIUM |
-| admin | ✅ | ✅ | ? | LOW |
+| Section   | TR  | EN  | SR  | Priority |
+| --------- | --- | --- | --- | -------- |
+| auth      | ✅  | ✅  | ?   | HIGH     |
+| common    | ✅  | ✅  | ?   | HIGH     |
+| cards     | ✅  | ✅  | ?   | MEDIUM   |
+| readings  | ✅  | ✅  | ?   | HIGH     |
+| dashboard | ✅  | ✅  | ?   | MEDIUM   |
+| admin     | ✅  | ✅  | ?   | LOW      |
 
 ---
 
 ## 🎯 DEPLOYMENT CHECKLIST
 
 ### Kritik (Must Have):
+
 - [x] Temel i18n yapılandırması ✅
 - [x] TR translations complete ✅
 - [x] EN translations complete ✅
@@ -387,6 +403,7 @@ npm run dev
 - [x] SEO-friendly URLs ✅
 
 ### Önemli (Should Have):
+
 - [ ] Hardcoded string'ler temizlenmiş
 - [ ] Plural form'lar düzgün
 - [ ] Date/number formatting tutarlı
@@ -394,6 +411,7 @@ npm run dev
 - [ ] Validation messages translated
 
 ### Nice to Have:
+
 - [ ] RTL support (gelecek)
 - [ ] Context-aware translations
 - [ ] Translation fallback chain
@@ -454,5 +472,5 @@ echo "⚠️ Manual review required. See hardcoded-strings-report.txt"
 
 ---
 
-**✅ SONUÇ:** I18n temel olarak hazır, SR kontrol edilmeli ve hardcoded string'ler temizlenmeli.
-
+**✅ SONUÇ:** I18n temel olarak hazır, SR kontrol edilmeli ve hardcoded
+string'ler temizlenmeli.

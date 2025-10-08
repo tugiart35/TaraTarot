@@ -32,17 +32,17 @@ console.debug() : ~2   (Debug)
 
 ### En Çok console.log İçeren Dosyalar
 
-| Dosya | Adet | Kategori |
-|-------|------|----------|
-| ReadingHistory.tsx | 26 | Component |
-| PackagesPage | 20 | Admin Page |
-| SettingsPage | 19 | Admin Page |
-| EmailSystemManager | 17 | Service |
-| LoveTarot.tsx | 15 | Component |
-| MoneyTarot.tsx | 14 | Component |
-| AdminUserManager | 15 | Service |
-| MaintenanceSystem | 14 | Service |
-| AutoReporting | 9 | Component |
+| Dosya              | Adet | Kategori   |
+| ------------------ | ---- | ---------- |
+| ReadingHistory.tsx | 26   | Component  |
+| PackagesPage       | 20   | Admin Page |
+| SettingsPage       | 19   | Admin Page |
+| EmailSystemManager | 17   | Service    |
+| LoveTarot.tsx      | 15   | Component  |
+| MoneyTarot.tsx     | 14   | Component  |
+| AdminUserManager   | 15   | Service    |
+| MaintenanceSystem  | 14   | Service    |
+| AutoReporting      | 9    | Component  |
 
 ---
 
@@ -58,6 +58,7 @@ console.log('Data fetched:', data); // ❌
 ```
 
 **Etki:**
+
 - CPU kullanımı artışı
 - Memory leak riski (büyük objeler)
 - Browser devtools yavaşlaması
@@ -73,6 +74,7 @@ console.log('Auth token:', token); // ❌ Kritik güvenlik sorunu
 ```
 
 **Risk:**
+
 - Production'da browser console'da hassas bilgi
 - Browser extension'lar tarafından okunabilir
 - XSS saldırılarında veri sızıntısı
@@ -129,9 +131,9 @@ logger.debug('User logged in', { userId: user.id });
 console.error('Error:', error);
 
 // ✅ İyi:
-logger.error('Login failed', error, { 
+logger.error('Login failed', error, {
   component: 'LoginForm',
-  action: 'submit'
+  action: 'submit',
 });
 ```
 
@@ -154,6 +156,7 @@ Projenizde zaten temizleme scriptleri var:
 ### Manuel Temizleme Öncelikleri
 
 #### Öncelik 1: CRITICAL (Hassas Bilgi)
+
 ```bash
 # Şunları içeren logları hemen kaldır:
 - token, password, secret
@@ -163,6 +166,7 @@ Projenizde zaten temizleme scriptleri var:
 ```
 
 #### Öncelik 2: HIGH (Production Impact)
+
 ```bash
 # Performansı etkileyen logları kaldır:
 - Render loop'larındaki loglar
@@ -172,6 +176,7 @@ Projenizde zaten temizleme scriptleri var:
 ```
 
 #### Öncelik 3: MEDIUM (Development Debug)
+
 ```bash
 # Development debug logları:
 - TODO yorumları içeren loglar
@@ -180,6 +185,7 @@ Projenizde zaten temizleme scriptleri var:
 ```
 
 #### Öncelik 4: LOW (Info Logs)
+
 ```bash
 # Bilgilendirme logları:
 - Init messages
@@ -297,11 +303,11 @@ done
 
 ### Tahmini Efor
 
-| Kategori | Dosya | Log | Efor | Yöntem |
-|----------|-------|-----|------|--------|
-| Auto-replaceable | 80 | 400 | 1h | Script |
-| Manual review | 15 | 100 | 3h | Manuel |
-| Keep (logger) | 10 | 60 | - | Dönüşüm |
+| Kategori         | Dosya | Log | Efor | Yöntem  |
+| ---------------- | ----- | --- | ---- | ------- |
+| Auto-replaceable | 80    | 400 | 1h   | Script  |
+| Manual review    | 15    | 100 | 3h   | Manuel  |
+| Keep (logger)    | 10    | 60  | -    | Dönüşüm |
 
 **Toplam:** ~4 saat
 
@@ -376,9 +382,12 @@ logger.debug('Debug info', data);
 // .eslintrc.json
 {
   "rules": {
-    "no-console": ["error", {
-      "allow": ["error"] // Sadece console.error'a izin ver
-    }]
+    "no-console": [
+      "error",
+      {
+        "allow": ["error"] // Sadece console.error'a izin ver
+      }
+    ]
   }
 }
 ```
@@ -395,4 +404,3 @@ logger.debug('Debug info', data);
 ---
 
 **⚠️ NOT:** Production deployment öncesi en az Öncelik 1 ve 2 temizlenmeli!
-

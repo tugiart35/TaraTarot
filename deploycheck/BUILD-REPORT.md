@@ -51,17 +51,18 @@ Route (app)
 
 ### Error Categories
 
-| Category | Count | Files Affected | Severity |
-|----------|-------|----------------|----------|
-| Jest matchers missing types | 10 | BottomNavigation.test.tsx | LOW |
-| Test data type mismatch | 5 | auth tests | LOW |
-| Unused variables | 2 | test files | LOW |
-| Read-only property | 3 | shopier-security.test.ts | LOW |
-| Possibly undefined | 3 | auth-validation.test.ts | LOW |
+| Category                    | Count | Files Affected            | Severity |
+| --------------------------- | ----- | ------------------------- | -------- |
+| Jest matchers missing types | 10    | BottomNavigation.test.tsx | LOW      |
+| Test data type mismatch     | 5     | auth tests                | LOW      |
+| Unused variables            | 2     | test files                | LOW      |
+| Read-only property          | 3     | shopier-security.test.ts  | LOW      |
+| Possibly undefined          | 3     | auth-validation.test.ts   | LOW      |
 
 ### Breakdown
 
 #### 1. Jest Type Issues (10 errors)
+
 **File:** `src/features/shared/layout/__tests__/BottomNavigation.test.tsx`
 
 ```
@@ -74,6 +75,7 @@ error TS2339: Property 'toHaveAttribute' does not exist
 **Fix:** Add to `jest.setup.js`: `import '@testing-library/jest-dom'`
 
 #### 2. Auth Test Type Issues (5 errors)
+
 **Files:** `useAuth.test.ts`, `auth-service.test.ts`
 
 ```
@@ -84,6 +86,7 @@ Type 'string' is not assignable to type '"male" | "female" | "other" | "prefer_n
 **Fix:** Update test data with proper gender type
 
 #### 3. Environment Mutation (3 errors)
+
 **File:** `shopier-security.test.ts`
 
 ```
@@ -105,24 +108,25 @@ error TS2540: Cannot assign to 'NODE_ENV' because it is a read-only property
 
 ### Summary
 
-| Issue Type | Count | Severity |
-|------------|-------|----------|
-| `console.log/warn/error` | 512 | WARNING |
-| Unused variables | 7 | ERROR |
-| Prettier formatting | 2 | ERROR |
+| Issue Type               | Count | Severity |
+| ------------------------ | ----- | -------- |
+| `console.log/warn/error` | 512   | WARNING  |
+| Unused variables         | 7     | ERROR    |
+| Prettier formatting      | 2     | ERROR    |
 
-### Console.* Usage (512 instances across 100 files)
+### Console.\* Usage (512 instances across 100 files)
 
 **Top Offenders:**
 
-| File | console.* Count | Type |
-|------|----------------|------|
-| Admin components | ~100 | Debug/monitoring |
-| Edge functions | ~50 | Server logs |
-| Utility scripts | ~200 | Build-time scripts |
-| Production components | ~162 | Mixed |
+| File                  | console.\* Count | Type               |
+| --------------------- | ---------------- | ------------------ |
+| Admin components      | ~100             | Debug/monitoring   |
+| Edge functions        | ~50              | Server logs        |
+| Utility scripts       | ~200             | Build-time scripts |
+| Production components | ~162             | Mixed              |
 
 **Categories:**
+
 - 🟡 **Build scripts:** Acceptable (not deployed)
 - 🟡 **Edge functions:** Acceptable (server-side logging)
 - 🔴 **Client components:** Should use logger utility
@@ -156,14 +160,14 @@ fix-json-properly.js:1 - Delete `·`
 
 ### Vulnerabilities by Severity
 
-| Package | Severity | Type | Impact |
-|---------|----------|------|--------|
-| `xlsx` | 🔴 HIGH | Prototype pollution | Dev dependency only |
-| `esbuild` | 🟡 MODERATE | - | Build tool |
-| `nodemailer` | 🟡 MODERATE | - | Email service |
-| `vite` | 🟡 MODERATE | - | Dev dependency |
-| `vite-node` | 🟡 MODERATE | - | Dev dependency |
-| `vitest` | 🟡 MODERATE | - | Dev dependency |
+| Package      | Severity    | Type                | Impact              |
+| ------------ | ----------- | ------------------- | ------------------- |
+| `xlsx`       | 🔴 HIGH     | Prototype pollution | Dev dependency only |
+| `esbuild`    | 🟡 MODERATE | -                   | Build tool          |
+| `nodemailer` | 🟡 MODERATE | -                   | Email service       |
+| `vite`       | 🟡 MODERATE | -                   | Dev dependency      |
+| `vite-node`  | 🟡 MODERATE | -                   | Dev dependency      |
+| `vitest`     | 🟡 MODERATE | -                   | Dev dependency      |
 
 **Critical Analysis:**
 
@@ -171,11 +175,12 @@ fix-json-properly.js:1 - Delete `·`
   - **Runtime Impact:** LOW (admin-only feature)
   - **Recommendation:** Update or replace with safer alternative
 
-- 🟡 **Dev dependencies (MODERATE):** 
+- 🟡 **Dev dependencies (MODERATE):**
   - **Runtime Impact:** NONE (not in production bundle)
   - **Recommendation:** Update during next maintenance window
 
-**Production Impact:** 🟢 **LOW** - Only one runtime dependency affected (xlsx), used in admin context only
+**Production Impact:** 🟢 **LOW** - Only one runtime dependency affected (xlsx),
+used in admin context only
 
 ---
 
@@ -183,15 +188,15 @@ fix-json-properly.js:1 - Delete `·`
 
 ### Available Tests
 
-| Test Type | Script | Status |
-|-----------|--------|--------|
-| Unit Tests | `npm test` | ✅ Available |
-| E2E Tests | `npm run test:e2e` | ✅ Available (Playwright) |
-| CI Tests | `npm run test:ci` | ✅ Available |
-| Coverage | `npm run test:coverage` | ✅ Available |
-| Payment Tests | `npm run test:payment` | ✅ Available |
-| Security Tests | `npm run test:security` | ✅ Available |
-| Webhook Tests | `npm run test:webhook` | ✅ Available |
+| Test Type      | Script                  | Status                    |
+| -------------- | ----------------------- | ------------------------- |
+| Unit Tests     | `npm test`              | ✅ Available              |
+| E2E Tests      | `npm run test:e2e`      | ✅ Available (Playwright) |
+| CI Tests       | `npm run test:ci`       | ✅ Available              |
+| Coverage       | `npm run test:coverage` | ✅ Available              |
+| Payment Tests  | `npm run test:payment`  | ✅ Available              |
+| Security Tests | `npm run test:security` | ✅ Available              |
+| Webhook Tests  | `npm run test:webhook`  | ✅ Available              |
 
 ### Test Execution (Not Run Yet)
 
@@ -204,20 +209,20 @@ fix-json-properly.js:1 - Delete `·`
 
 ### Code Quality Scripts
 
-| Script | Purpose | Status |
-|--------|---------|--------|
-| `npm run code-quality` | Full quality check | ⚠️ Would fail (TS errors) |
-| `npm run typecheck` | TypeScript validation | ❌ 23 errors (tests only) |
-| `npm run lint` | ESLint | ⚠️ Warnings only |
-| `npm run format:check` | Prettier | ❌ 2 util file issues |
+| Script                 | Purpose               | Status                    |
+| ---------------------- | --------------------- | ------------------------- |
+| `npm run code-quality` | Full quality check    | ⚠️ Would fail (TS errors) |
+| `npm run typecheck`    | TypeScript validation | ❌ 23 errors (tests only) |
+| `npm run lint`         | ESLint                | ⚠️ Warnings only          |
+| `npm run format:check` | Prettier              | ❌ 2 util file issues     |
 
 ### i18n Quality
 
-| Script | Purpose | Available |
-|--------|---------|-----------|
-| `npm run i18n:check` | Detect hardcoded strings | ✅ |
-| `npm run i18n:validate` | Full i18n validation | ✅ |
-| `npm run i18n:test` | i18n tests | ✅ |
+| Script                  | Purpose                  | Available |
+| ----------------------- | ------------------------ | --------- |
+| `npm run i18n:check`    | Detect hardcoded strings | ✅        |
+| `npm run i18n:validate` | Full i18n validation     | ✅        |
+| `npm run i18n:test`     | i18n tests               | ✅        |
 
 ---
 
@@ -252,13 +257,13 @@ fix-json-properly.js:1 - Delete `·`
 1. ❌ **NONE** - Production build succeeds
 2. ⚠️ TypeScript test errors (optional fix)
 3. ⚠️ npm audit vulnerabilities (optional fix)
-4. ⚠️ console.* cleanup (recommended)
+4. ⚠️ console.\* cleanup (recommended)
 
 ### Recommended Pre-Deploy Actions
 
 1. 🟡 Fix TypeScript test errors (enables CI/CD)
 2. 🟡 Update/remove xlsx package (security)
-3. 🟡 Replace console.* with logger in production code
+3. 🟡 Replace console.\* with logger in production code
 4. 🟡 Run prettier on util scripts
 
 **Estimated Fix Time:** 2-3 hours
@@ -275,4 +280,3 @@ fix-json-properly.js:1 - Delete `·`
 
 **Build check completed:** 2025-10-08  
 **Next:** Security & Environment audit
-

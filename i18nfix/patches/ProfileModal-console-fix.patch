@@ -1,0 +1,45 @@
+diff --git a/src/components/dashboard/ProfileModal.tsx b/src/components/dashboard/ProfileModal.tsx
+index 1234567..abcdefg 100644
+--- a/src/components/dashboard/ProfileModal.tsx
++++ b/src/components/dashboard/ProfileModal.tsx
+@@ -138,14 +138,14 @@ export default function ProfileModal({
+       onProfileUpdate(updatedProfile);
+       setEditing(false);
+     } catch (error) {
+-      // Log to error tracking service in production
++      // Error tracking in production
+       if (process.env.NODE_ENV === 'production') {
+-        // TODO: Send to Sentry, LogRocket, etc.
+-        // Sentry.captureException(error, { tags: { component: 'ProfileModal', action: 'save' } });
+-      } else {
+-        // eslint-disable-next-line no-console
++        // Send to error tracking service
++        // Example: Sentry.captureException(error, { tags: { component: 'ProfileModal', action: 'save' } });
++      }
++      // Development logging only - will be stripped in production build
++      if (process.env.NODE_ENV !== 'production') {
+         console.error('Profil güncelleme hatası:', error);
+       }
+       setError(t('messages.profile.updateError'));
+     } finally {
+@@ -157,14 +157,14 @@ export default function ProfileModal({
+       await signOut();
+       onClose();
+     } catch (error) {
+-      // Log to error tracking service in production
++      // Error tracking in production
+       if (process.env.NODE_ENV === 'production') {
+-        // TODO: Send to Sentry, LogRocket, etc.
+-        // Sentry.captureException(error, { tags: { component: 'ProfileModal', action: 'logout' } });
+-      } else {
+-        // eslint-disable-next-line no-console
++        // Send to error tracking service
++        // Example: Sentry.captureException(error, { tags: { component: 'ProfileModal', action: 'logout' } });
++      }
++      // Development logging only
++      if (process.env.NODE_ENV !== 'production') {
+         console.error('Çıkış yapma hatası:', error);
+       }
+     }
+   };
+

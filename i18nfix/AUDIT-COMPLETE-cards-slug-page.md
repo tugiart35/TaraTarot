@@ -22,6 +22,7 @@
 ## 📁 OLUŞTURULAN DOSYALAR
 
 ### 🔍 Raporlar (i18nfix/reports/)
+
 1. **`src-app-locale-main-cards-slug-page.md`** ⭐ **ANA RAPOR**
    - Tam güvenlik auditi
    - i18n analizi
@@ -35,6 +36,7 @@
    - Metrik karşılaştırmaları
 
 ### 🔧 Patch Dosyaları (i18nfix/patches/)
+
 1. **`001-cards-slug-page-i18n-errors.patch`**
    - Hardcoded TR stringlerini i18n'e çevir
    - 4 adet "Kart Bulunamadı" → `t('notFound')`
@@ -57,20 +59,23 @@
 ## 🎯 TESPIT EDİLEN SORUNLAR
 
 ### ❌ CRITICAL ISSUES
+
 **Yok** - Kritik güvenlik veya sistem sorunu tespit edilmedi ✅
 
 ### ⚠️ MEDIUM ISSUES (2 adet)
+
 1. **Hardcoded Turkish Strings**
    - Konum: Lines 120-121, 132-133
    - Etki: EN/SR locale'de Turkish metinler görünür
    - Fix: Patch 001 + 003
 
 2. **Missing i18n Keys**
-   - Konum: messages/*.json
+   - Konum: messages/\*.json
    - Etki: Translation eksikliği
    - Fix: Patch 003
 
 ### 🔵 LOW ISSUES (1 adet)
+
 1. **Console.error in Dependencies**
    - Konum: card-data.ts (5 yer)
    - Etki: Production log kirliliği
@@ -81,6 +86,7 @@
 ## 🚀 HEMEN ŞİMDİ YAPILACAKLAR
 
 ### Seçenek 1: Otomatik Patch (ÖNERİLEN) ⭐
+
 ```bash
 cd /Users/tugi/Desktop/TaraTarot
 
@@ -98,19 +104,20 @@ npm run dev
 ```
 
 ### Seçenek 2: Manuel Fix
+
 Detaylar için bkz: `i18nfix/patches/APPLY-INSTRUCTIONS-cards-slug-page.md`
 
 ---
 
 ## 📈 ETKİ ANALİZİ
 
-| Metrik | Önce | Sonra | Değişim |
-|--------|------|-------|---------|
-| **i18n Coverage** | 70% | 100% | +30% ⬆️ |
-| **Code Quality** | 80% | 90% | +10% ⬆️ |
-| **Deploy Ready** | 85% | 100% | +15% ⬆️ |
-| **Security** | 80% | 80% | = |
-| **TOPLAM SKOR** | **86%** | **95%** | **+9%** ⬆️ |
+| Metrik            | Önce    | Sonra   | Değişim    |
+| ----------------- | ------- | ------- | ---------- |
+| **i18n Coverage** | 70%     | 100%    | +30% ⬆️    |
+| **Code Quality**  | 80%     | 90%     | +10% ⬆️    |
+| **Deploy Ready**  | 85%     | 100%    | +15% ⬆️    |
+| **Security**      | 80%     | 80%     | =          |
+| **TOPLAM SKOR**   | **86%** | **95%** | **+9%** ⬆️ |
 
 ---
 
@@ -131,11 +138,13 @@ Patch uygulandıktan sonra şunlar sağlanmalı:
 ## 🔐 GÜVENLİK NOTU
 
 ### Tespit Edilen Güvenlik Sorunları
+
 **YOK** ✅
 
 ### Güvenlik Skoru: 8/10
 
 **Detaylar:**
+
 - ✅ Hardcoded secret yok
 - ✅ SQL injection riski yok
 - ✅ XSS riski yok
@@ -159,7 +168,8 @@ C: Evet. Minimal, test edilmiş değişiklikler. Rollback kolay.
 C: Hayır. Logger production'da 0ms overhead. i18n cache'lenir.
 
 **S: Test güncellemem gerekir mi?**  
-C: Evet, metadata testleriniz varsa i18n key'leri bekleyecek şekilde güncelleyin.
+C: Evet, metadata testleriniz varsa i18n key'leri bekleyecek şekilde
+güncelleyin.
 
 ---
 
@@ -178,14 +188,14 @@ C: Evet, metadata testleriniz varsa i18n key'leri bekleyecek şekilde güncelley
 
 ## 📚 DOKÜMANTASYON LİNKLERİ
 
-| Dosya | Amaç | Öncelik |
-|-------|------|---------|
+| Dosya                                    | Amaç             | Öncelik       |
+| ---------------------------------------- | ---------------- | ------------- |
 | `src-app-locale-main-cards-slug-page.md` | Tam audit raporu | ⭐⭐⭐ YÜKSEK |
-| `README-cards-slug-audit.md` | Hızlı özet | ⭐⭐ ORTA |
-| `APPLY-INSTRUCTIONS-cards-slug-page.md` | Patch uygulama | ⭐⭐⭐ YÜKSEK |
-| `001-cards-slug-page-i18n-errors.patch` | i18n fix | ⭐⭐⭐ YÜKSEK |
-| `002-card-data-logger.patch` | Logger fix | ⭐⭐ ORTA |
-| `003-add-i18n-error-keys.patch` | Keys ekleme | ⭐⭐⭐ YÜKSEK |
+| `README-cards-slug-audit.md`             | Hızlı özet       | ⭐⭐ ORTA     |
+| `APPLY-INSTRUCTIONS-cards-slug-page.md`  | Patch uygulama   | ⭐⭐⭐ YÜKSEK |
+| `001-cards-slug-page-i18n-errors.patch`  | i18n fix         | ⭐⭐⭐ YÜKSEK |
+| `002-card-data-logger.patch`             | Logger fix       | ⭐⭐ ORTA     |
+| `003-add-i18n-error-keys.patch`          | Keys ekleme      | ⭐⭐⭐ YÜKSEK |
 
 ---
 
@@ -238,11 +248,11 @@ git apply -R i18nfix/patches/001-cards-slug-page-i18n-errors.patch
 
 ## 📋 PATCH UYUMLULUK MATRİSİ
 
-| Patch | Değiştirilen Dosya | Satır Sayısı | Risk | Test Gerek? |
-|-------|-------------------|--------------|------|-------------|
-| 001 | page.tsx | 6 | Düşük | Evet ✅ |
-| 002 | card-data.ts + logger.ts | 7 | Düşük | Evet ✅ |
-| 003 | tr/en/sr.json | 18 | Çok Düşük | Hayır |
+| Patch | Değiştirilen Dosya       | Satır Sayısı | Risk      | Test Gerek? |
+| ----- | ------------------------ | ------------ | --------- | ----------- |
+| 001   | page.tsx                 | 6            | Düşük     | Evet ✅     |
+| 002   | card-data.ts + logger.ts | 7            | Düşük     | Evet ✅     |
+| 003   | tr/en/sr.json            | 18           | Çok Düşük | Hayır       |
 
 **Toplam:** 31 satır değişiklik, 4 dosya etkileniyor
 
@@ -251,16 +261,19 @@ git apply -R i18nfix/patches/001-cards-slug-page-i18n-errors.patch
 ## 💡 ÖNERİLER
 
 ### Kısa Vadeli (Bu Audit İçin)
+
 1. ✅ Patch'leri uygula
 2. ✅ Test et
 3. ✅ Deploy et
 
 ### Orta Vadeli (Gelecek Sprint)
+
 1. 🔄 Logger'ı Sentry ile entegre et
 2. 🔄 Error boundary component ekle
 3. 🔄 i18n namespace'lerini standartlaştır
 
 ### Uzun Vadeli (Roadmap)
+
 1. 🔮 Tüm page.tsx dosyaları için benzer audit
 2. 🔮 Otomatik i18n key validation
 3. 🔮 E2E test coverage artır
@@ -271,7 +284,8 @@ git apply -R i18nfix/patches/001-cards-slug-page-i18n-errors.patch
 
 Bu audit'ten çıkartılması gereken dersler:
 
-1. **i18n Consistency**: Metadata dahil tüm user-facing string'ler i18n'den gelmeli
+1. **i18n Consistency**: Metadata dahil tüm user-facing string'ler i18n'den
+   gelmeli
 2. **Logging Strategy**: Production ve dev için farklı logging stratejisi şart
 3. **Error Handling**: Graceful degradation ve user-friendly error messages
 4. **Static Generation**: SSG ile SEO optimize edilmiş çok dilli sayfalar mümkün
@@ -282,6 +296,7 @@ Bu audit'ten çıkartılması gereken dersler:
 ## 🙏 TEŞEKKÜRLER
 
 Bu audit'i tamamladığınız için teşekkürler! Sorularınız için:
+
 - Ana rapor: `i18nfix/reports/src-app-locale-main-cards-slug-page.md`
 - Patch rehberi: `i18nfix/patches/APPLY-INSTRUCTIONS-cards-slug-page.md`
 
@@ -311,4 +326,3 @@ Bu audit'i tamamladığınız için teşekkürler! Sorularınız için:
 ```
 
 **BAŞARI DİLERİM! 🎉**
-

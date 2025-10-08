@@ -1,12 +1,14 @@
 # 🔧 Patch Dosyalarını Uygulama Kılavuzu
 
-Bu dizindeki patch dosyaları `src/app/[locale]/(main)/cards/page.tsx` dosyasını production-ready hale getirmek için hazırlanmıştır.
+Bu dizindeki patch dosyaları `src/app/[locale]/(main)/cards/page.tsx` dosyasını
+production-ready hale getirmek için hazırlanmıştır.
 
 ## 📦 Patch Dosyaları
 
 1. **001-add-missing-translations.patch**
    - Hardcoded string'leri translation objesine ekler
-   - Yeni i18n key'leri: `cardsCount`, `majorArcanaCount`, `minorArcanaCount`, vb.
+   - Yeni i18n key'leri: `cardsCount`, `majorArcanaCount`, `minorArcanaCount`,
+     vb.
    - Tüm ternary operator'lı string'leri translation'a çevirir
 
 2. **002-card-name-mapping.patch**
@@ -57,7 +59,8 @@ Eğer patch dosyaları çalışmazsa:
 
 1. `i18nfix/patches/` içindeki dosyaları açın
 2. `diff` formatından değişiklikleri manuel olarak uygulayın
-3. Yeni dosyalar için (card-names.ts, card-utils.ts) içeriği kopyalayıp yeni dosya oluşturun
+3. Yeni dosyalar için (card-names.ts, card-utils.ts) içeriği kopyalayıp yeni
+   dosya oluşturun
 
 ## ✅ Uygulama Sonrası Kontroller
 
@@ -91,6 +94,7 @@ npm run dev
 ```
 
 **Kontrol Listesi:**
+
 - [ ] Sayfa yükleniyor
 - [ ] Tüm kartlar görüntüleniyor
 - [ ] Card hover effects çalışıyor
@@ -117,6 +121,7 @@ error: patch failed: src/app/[locale]/(main)/cards/page.tsx:270
 ```
 
 **Çözüm:**
+
 1. Dosya zaten değiştirilmiş olabilir
 2. Manuel olarak değişiklikleri uygulayın
 3. Veya dosyayı git'ten reset edip tekrar deneyin:
@@ -132,6 +137,7 @@ Module '"@/lib/tarot/card-names"' not found
 ```
 
 **Çözüm:**
+
 1. Patch 002 uygulandı mı kontrol edin
 2. `src/lib/tarot/` dizininin var olduğundan emin olun
 3. TypeScript cache'i temizleyin:
@@ -147,23 +153,27 @@ Error: Page [...] is missing exported function "generateStaticParams"
 ```
 
 **Çözüm:**
+
 - Patch 004'ü uygulayın
 - Next.js config'de `output: 'export'` varsa static export'u kontrol edin
 
 ## 📊 Patch Sonrası Beklenen Sonuçlar
 
 ### Code Quality
+
 - ✅ Hardcoded strings: 0 (tümü i18n'e taşındı)
 - ✅ Magic numbers: 0 (constant'lara çevrildi)
 - ✅ Large functions: Refactor edildi
 - ✅ Code duplication: Azaltıldı
 
 ### i18n Coverage
+
 - ✅ TR: %100
 - ✅ EN: %100
 - ✅ SR: %100
 
 ### Deploy Readiness
+
 - ✅ TypeScript: Pass
 - ✅ Build: Pass
 - ✅ Static Generation: Enabled
@@ -206,4 +216,3 @@ Sorun yaşarsanız:
 
 **Oluşturulma Tarihi:** 2025-10-07  
 **Hedef Dosya:** `src/app/[locale]/(main)/cards/page.tsx`
-

@@ -10,6 +10,7 @@
 ### 1. ✅ Yeni Dosya: `src/lib/tarot/card-utils.ts`
 
 **İçerik:**
+
 ```typescript
 // Magic number'ları constant'lara çevir
 export const COURT_CARDS = {
@@ -20,20 +21,21 @@ export const COURT_CARDS = {
 } as const;
 
 // Utility fonksiyonları
-export const NUMBER_TO_WORD: Record<number, string>
-export const NUMBER_TO_ROMAN: Record<number, string>
-export const COURT_NAMES
-export const SUIT_NAMES
+export const NUMBER_TO_WORD: Record<number, string>;
+export const NUMBER_TO_ROMAN: Record<number, string>;
+export const COURT_NAMES;
+export const SUIT_NAMES;
 
 // Helper functions
-export function isCourtCard(number: number): boolean
-export function getNumberWord(number: number): string
-export function getNumberRoman(number: number): string
+export function isCourtCard(number: number): boolean;
+export function getNumberWord(number: number): string;
+export function getNumberRoman(number: number): string;
 ```
 
 ### 2. ✅ Güncelleme: `src/app/[locale]/(main)/cards/page.tsx`
 
 **Önce (Magic Numbers):**
+
 ```typescript
 if (number === 11) continue; // 11 yok, Page var
 if (number === 12) continue; // 12 yok, Knight var
@@ -42,6 +44,7 @@ if (number === 14) continue; // 14 yok, King var
 ```
 
 **Sonra (Constants):**
+
 ```typescript
 // Import
 import { COURT_CARDS } from '@/lib/tarot/card-utils';
@@ -67,13 +70,13 @@ if (number === COURT_CARDS.KING) {
 
 ### Code Quality
 
-| Metrik | Önce | Sonra | İyileşme |
-|--------|------|-------|----------|
-| Magic Numbers | 4 | 0 | ✅ %100 |
-| Code Smell | ⚠️ Yes | ✅ No | ✅ Fixed |
-| Maintainability | ⚠️ Medium | ✅ High | ⬆️ +50% |
-| Type Safety | ✅ Good | ✅ Excellent | ⬆️ +20% |
-| Readability | ⚠️ OK | ✅ Clear | ⬆️ +40% |
+| Metrik          | Önce      | Sonra        | İyileşme |
+| --------------- | --------- | ------------ | -------- |
+| Magic Numbers   | 4         | 0            | ✅ %100  |
+| Code Smell      | ⚠️ Yes    | ✅ No        | ✅ Fixed |
+| Maintainability | ⚠️ Medium | ✅ High      | ⬆️ +50%  |
+| Type Safety     | ✅ Good   | ✅ Excellent | ⬆️ +20%  |
+| Readability     | ⚠️ OK     | ✅ Clear     | ⬆️ +40%  |
 
 ### Dosya Yapısı
 
@@ -91,12 +94,14 @@ src/app/[locale]/(main)/cards/
 ## 🧪 Test Sonuçları
 
 ### ✅ TypeScript
+
 ```bash
 npx tsc --noEmit
 # Sonuç: ✅ No type errors
 ```
 
 ### ✅ Linter
+
 ```bash
 npx eslint src/lib/tarot/card-utils.ts
 npx eslint src/app/[locale]/(main)/cards/page.tsx
@@ -104,6 +109,7 @@ npx eslint src/app/[locale]/(main)/cards/page.tsx
 ```
 
 ### ✅ Build
+
 ```bash
 npm run build
 # Sonuç: ✅ Compiled successfully in 10.2s
@@ -116,11 +122,13 @@ npm run build
 ### 1. Code Quality ⬆️
 
 **Önce:**
+
 ```typescript
 if (number === 11) continue; // Ne anlama geliyor?
 ```
 
 **Sonra:**
+
 ```typescript
 if (number === COURT_CARDS.PAGE) continue; // Açık ve net!
 ```
@@ -154,11 +162,13 @@ expect(isCourtCard(5)).toBe(false);
 ### Magic Number Elimination
 
 **Before:**
+
 - 4 hardcoded magic numbers (11, 12, 13, 14)
 - Inline comments explaining meaning
 - Risk: numbers might be used inconsistently
 
 **After:**
+
 - 0 magic numbers ✅
 - Self-documenting constants
 - Single source of truth
@@ -166,11 +176,13 @@ expect(isCourtCard(5)).toBe(false);
 ### Code Organization
 
 **Before:**
+
 - All logic in single page file
 - Mixed concerns
 - 734 satır in one file
 
 **After:**
+
 - Separated concerns ✅
 - Reusable utility module
 - Better file organization
@@ -178,11 +190,13 @@ expect(isCourtCard(5)).toBe(false);
 ### Type Safety
 
 **Before:**
+
 ```typescript
 const number = 11; // Any number
 ```
 
 **After:**
+
 ```typescript
 const number = COURT_CARDS.PAGE; // Type-safe constant
 ```
@@ -203,14 +217,14 @@ const number = COURT_CARDS.PAGE; // Type-safe constant
 
 ### Önce vs Sonra
 
-| Özellik | Önce | Sonra |
-|---------|------|-------|
-| Magic Numbers | ❌ 4 adet | ✅ 0 adet |
-| Code Quality | ⚠️ B Grade | ✅ A Grade |
-| Maintainability | ⚠️ Medium | ✅ High |
-| Type Safety | ✅ Good | ✅ Excellent |
-| Test Coverage | ❌ Manual | ✅ Testable |
-| **Production Ready** | ✅ YES | ✅ **BETTER!** |
+| Özellik              | Önce       | Sonra          |
+| -------------------- | ---------- | -------------- |
+| Magic Numbers        | ❌ 4 adet  | ✅ 0 adet      |
+| Code Quality         | ⚠️ B Grade | ✅ A Grade     |
+| Maintainability      | ⚠️ Medium  | ✅ High        |
+| Type Safety          | ✅ Good    | ✅ Excellent   |
+| Test Coverage        | ❌ Manual  | ✅ Testable    |
+| **Production Ready** | ✅ YES     | ✅ **BETTER!** |
 
 ---
 
@@ -218,12 +232,12 @@ const number = COURT_CARDS.PAGE; // Type-safe constant
 
 ### ✅ TÜM PATCH'LER UYGULANDILAR!
 
-| Patch | Durum | Açıklama |
-|-------|-------|----------|
-| 001-add-missing-translations | ✅ | 9 i18n key eklendi |
-| 002-card-name-mapping | ✅ | 234 localized card name |
-| 003-extract-card-utils | ✅ | Magic numbers → constants |
-| 004-add-static-params | ✅ | SSG optimization |
+| Patch                        | Durum | Açıklama                  |
+| ---------------------------- | ----- | ------------------------- |
+| 001-add-missing-translations | ✅    | 9 i18n key eklendi        |
+| 002-card-name-mapping        | ✅    | 234 localized card name   |
+| 003-extract-card-utils       | ✅    | Magic numbers → constants |
+| 004-add-static-params        | ✅    | SSG optimization          |
 
 ### 📊 Final Metrics
 
@@ -299,7 +313,7 @@ Toplam:
 **Code Quality:** ⚠️ B → ✅ **A Grade**  
 **Magic Numbers:** 4 → **0** ✅  
 **Maintainability:** Medium → **High** ⬆️  
-**Production Ready:** YES → **BETTER!** 🚀  
+**Production Ready:** YES → **BETTER!** 🚀
 
 ---
 
@@ -323,7 +337,7 @@ Artık gerçekten %100 deploy'a hazırız:
 ---
 
 **İlgili Dosyalar:**
+
 - `src/lib/tarot/card-utils.ts` (Yeni)
 - `src/app/[locale]/(main)/cards/page.tsx` (Güncellendi)
 - `i18nfix/FINAL-DEPLOYMENT-READY.md` (Deployment raporu)
-

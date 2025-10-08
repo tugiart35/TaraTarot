@@ -84,19 +84,25 @@ class EmailService {
         rateLimit: 10, // 10 emails per second
       };
 
-      console.log('SMTP Config:', {
-        host: config.host,
-        port: config.port,
-        secure: config.secure,
-        user: config.auth.user,
-        hasPassword: !!config.auth.pass,
-      });
+      // SMTP configuration loaded from environment variables
+      // Only log in development environment
+      if (process.env.NODE_ENV === 'development') {
+        console.log('SMTP Config (dev only):', {
+          host: config.host,
+          port: config.port,
+          secure: config.secure,
+          user: config.auth.user,
+          hasPassword: !!config.auth.pass,
+        });
+      }
 
       this.transporter = nodemailer.createTransport(config);
       this.isInitialized = true;
-      console.log(
-        'Email transporter initialized successfully with connection pooling'
-      );
+      
+      // Only log in development
+      if (process.env.NODE_ENV === 'development') {
+        console.log('Email transporter initialized successfully with connection pooling');
+      }
     } catch (error) {
       console.error('Email transporter initialization failed:', error);
     }

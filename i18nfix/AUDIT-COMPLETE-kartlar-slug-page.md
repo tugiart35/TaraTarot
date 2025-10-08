@@ -23,6 +23,7 @@
 ## 📁 OLUŞTURULAN DOSYALAR
 
 ### 🔍 Raporlar (i18nfix/reports/)
+
 1. **`src-app-locale-main-kartlar-slug-page.md`** ⭐ **ANA RAPOR**
    - Tam güvenlik auditi
    - i18n analizi
@@ -31,6 +32,7 @@
    - 100% DEPLOY'A UYGUN MU? → **NO** (Minor fixes needed)
 
 ### 🔧 Patch Dosyaları (i18nfix/patches/)
+
 1. **`001-kartlar-slug-page-i18n-errors.patch`**
    - Hardcoded TR stringlerini i18n'e çevir
    - 4 adet "Kart Bulunamadı" → `t('notFound')`
@@ -50,9 +52,11 @@
 ## 🎯 TESPIT EDİLEN SORUNLAR
 
 ### ❌ CRITICAL ISSUES
+
 **Yok** - Kritik güvenlik veya sistem sorunu tespit edilmedi ✅
 
 ### ⚠️ MEDIUM ISSUES (3 adet)
+
 1. **Hardcoded Turkish Strings**
    - Konum: Lines 120-121, 133-134
    - Etki: Multi-language architecture ile tutarsız
@@ -73,6 +77,7 @@
 ## 🚀 HEMEN ŞİMDİ YAPILACAKLAR
 
 ### Otomatik Patch (ÖNERİLEN) ⭐
+
 ```bash
 cd /Users/tugi/Desktop/TaraTarot
 
@@ -92,34 +97,36 @@ npm run dev
 
 ## 📈 ETKİ ANALİZİ
 
-| Metrik | Önce | Sonra | Değişim |
-|--------|------|-------|---------|
-| **i18n Coverage** | 70% | 100% | +30% ⬆️ |
-| **Code Quality** | 75% | 95% | +20% ⬆️ |
-| **Deploy Ready** | 80% | 100% | +20% ⬆️ |
-| **Security** | 80% | 80% | = |
-| **Consistency** | 60% | 100% | +40% ⬆️ |
-| **TOPLAM SKOR** | **83%** | **98%** | **+15%** ⬆️ |
+| Metrik            | Önce    | Sonra   | Değişim     |
+| ----------------- | ------- | ------- | ----------- |
+| **i18n Coverage** | 70%     | 100%    | +30% ⬆️     |
+| **Code Quality**  | 75%     | 95%     | +20% ⬆️     |
+| **Deploy Ready**  | 80%     | 100%    | +20% ⬆️     |
+| **Security**      | 80%     | 80%     | =           |
+| **Consistency**   | 60%     | 100%    | +40% ⬆️     |
+| **TOPLAM SKOR**   | **83%** | **98%** | **+15%** ⬆️ |
 
 ---
 
 ## 🔄 /cards/[slug] İLE KARŞILAŞTIRMA
 
 ### Before Patches
-| Aspect | /cards/ (EN) | /kartlar/ (TR) | Gap |
-|--------|-------------|----------------|-----|
-| i18n Integration | ✅ Applied | ❌ Pending | ⚠️ Inconsistent |
-| Logger Usage | ✅ Applied | ❌ Pending | ⚠️ Inconsistent |
-| Console.error | ✅ Fixed | ❌ 2 instances | ⚠️ Inconsistent |
-| Deploy Ready | ✅ YES | ❌ NO | ⚠️ Inconsistent |
+
+| Aspect           | /cards/ (EN) | /kartlar/ (TR) | Gap             |
+| ---------------- | ------------ | -------------- | --------------- |
+| i18n Integration | ✅ Applied   | ❌ Pending     | ⚠️ Inconsistent |
+| Logger Usage     | ✅ Applied   | ❌ Pending     | ⚠️ Inconsistent |
+| Console.error    | ✅ Fixed     | ❌ 2 instances | ⚠️ Inconsistent |
+| Deploy Ready     | ✅ YES       | ❌ NO          | ⚠️ Inconsistent |
 
 ### After Patches
-| Aspect | /cards/ (EN) | /kartlar/ (TR) | Status |
-|--------|-------------|----------------|--------|
-| i18n Integration | ✅ Applied | ✅ Applied | ✅ Consistent |
-| Logger Usage | ✅ Applied | ✅ Applied | ✅ Consistent |
-| Console.error | ✅ Fixed | ✅ Fixed | ✅ Consistent |
-| Deploy Ready | ✅ YES | ✅ YES | ✅ Consistent |
+
+| Aspect           | /cards/ (EN) | /kartlar/ (TR) | Status        |
+| ---------------- | ------------ | -------------- | ------------- |
+| i18n Integration | ✅ Applied   | ✅ Applied     | ✅ Consistent |
+| Logger Usage     | ✅ Applied   | ✅ Applied     | ✅ Consistent |
+| Console.error    | ✅ Fixed     | ✅ Fixed       | ✅ Consistent |
+| Deploy Ready     | ✅ YES       | ✅ YES         | ✅ Consistent |
 
 **Result:** 🎉 **FULL ROUTE PARITY ACHIEVED!**
 
@@ -143,11 +150,13 @@ Patch uygulandıktan sonra şunlar sağlanmalı:
 ## 🔐 GÜVENLİK NOTU
 
 ### Tespit Edilen Güvenlik Sorunları
+
 **YOK** ✅
 
 ### Güvenlik Skoru: 8/10
 
 **Detaylar:**
+
 - ✅ Hardcoded secret yok
 - ✅ SQL injection riski yok
 - ✅ XSS riski yok
@@ -160,16 +169,23 @@ Patch uygulandıktan sonra şunlar sağlanmalı:
 ## 🎯 TURKISH ROUTES SPECIAL NOTES
 
 ### Slug Patterns
+
 **Major Arcana (22 cards):**
-- joker, yuksek-rahibe, buyucu, imparatorice, imparator, basrahip, asiklar, savas-arabasi, guc, ermis, kader-carki, adalet, asili-adam, olum, olcululuk, seytan, kule, yildiz, ay, gunes, yargi, dunya
+
+- joker, yuksek-rahibe, buyucu, imparatorice, imparator, basrahip, asiklar,
+  savas-arabasi, guc, ermis, kader-carki, adalet, asili-adam, olum, olcululuk,
+  seytan, kule, yildiz, ay, gunes, yargi, dunya
 
 **Minor Arcana (56 cards):**
+
 - **Kupalar** (Cups): kupalar-asi, kupalar-ikili, ..., kupalar-krali
 - **Kılıçlar** (Swords): kiliclar-asi, kiliclar-ikili, ..., kiliclar-krali
 - **Asalar** (Wands): asalar-asi, asalar-ikili, ..., asalar-krali
-- **Yıldızlar** (Pentacles): yildizlar-asi, yildizlar-ikili, ..., yildizlar-krali
+- **Yıldızlar** (Pentacles): yildizlar-asi, yildizlar-ikili, ...,
+  yildizlar-krali
 
 ### Route Architecture
+
 ```
 /tr/kartlar/[slug]  ← Turkish cards
 /en/cards/[slug]    ← English cards
@@ -177,6 +193,7 @@ Patch uygulandıktan sonra şunlar sağlanmalı:
 ```
 
 **All routes should have:**
+
 - ✅ Same error handling pattern
 - ✅ Same logger usage
 - ✅ Same i18n integration
@@ -189,16 +206,19 @@ Patch uygulandıktan sonra şunlar sağlanmalı:
 ### Sık Sorulan Sorular
 
 **S: Neden /cards/ ile aynı sorunlar var?**  
-C: Her iki route ayrı dosya olarak oluşturulmuş, muhtemelen copy-paste ile. Patch'ler her iki dosyaya da uygulanmalı.
+C: Her iki route ayrı dosya olarak oluşturulmuş, muhtemelen copy-paste ile.
+Patch'ler her iki dosyaya da uygulanmalı.
 
 **S: Bu patch'leri uygulamadan deploy edebilir miyim?**  
-C: Teknik olarak evet ama önerilmez. Hardcoded stringler ve console.error'lar best practice'lere aykırı.
+C: Teknik olarak evet ama önerilmez. Hardcoded stringler ve console.error'lar
+best practice'lere aykırı.
 
 **S: Performance etkilenir mi?**  
 C: Hayır. Logger production'da 0ms overhead. i18n cache'lenir (~5ms first load).
 
 **S: /cards/ patch'lerini mi yoksa /kartlar/ patch'lerini mi önce uygularım?**  
-C: Sıralama önemli değil. Her iki route'a da uygulayın. Ancak /cards/ zaten uygulanmışsa sadece /kartlar/'ı yapın.
+C: Sıralama önemli değil. Her iki route'a da uygulayın. Ancak /cards/ zaten
+uygulanmışsa sadece /kartlar/'ı yapın.
 
 ---
 
@@ -218,12 +238,12 @@ C: Sıralama önemli değil. Her iki route'a da uygulayın. Ancak /cards/ zaten 
 
 ## 📚 DOKÜMANTASYON LİNKLERİ
 
-| Dosya | Amaç | Öncelik |
-|-------|------|---------|
+| Dosya                                      | Amaç             | Öncelik       |
+| ------------------------------------------ | ---------------- | ------------- |
 | `src-app-locale-main-kartlar-slug-page.md` | Tam audit raporu | ⭐⭐⭐ YÜKSEK |
-| `APPLY-INSTRUCTIONS-kartlar-slug-page.md` | Patch uygulama | ⭐⭐⭐ YÜKSEK |
-| `001-kartlar-slug-page-i18n-errors.patch` | i18n fix | ⭐⭐⭐ YÜKSEK |
-| `002-kartlar-slug-page-logger.patch` | Logger fix | ⭐⭐ ORTA |
+| `APPLY-INSTRUCTIONS-kartlar-slug-page.md`  | Patch uygulama   | ⭐⭐⭐ YÜKSEK |
+| `001-kartlar-slug-page-i18n-errors.patch`  | i18n fix         | ⭐⭐⭐ YÜKSEK |
+| `002-kartlar-slug-page-logger.patch`       | Logger fix       | ⭐⭐ ORTA     |
 
 ---
 
@@ -275,16 +295,19 @@ git apply -R i18nfix/patches/001-kartlar-slug-page-i18n-errors.patch
 ## 💡 ÖNERİLER
 
 ### Kısa Vadeli (Bu Audit İçin)
+
 1. ✅ Patch'leri uygula
 2. ✅ Test et
 3. ✅ /cards/ ile parity sağla
 
 ### Orta Vadeli (Gelecek Sprint)
+
 1. 🔄 Route handler factory oluştur (DRY principle)
 2. 🔄 Automated tests ekle (route parity)
 3. 🔄 Hreflang tags implement et
 
 ### Uzun Vadeli (Roadmap)
+
 1. 🔮 Tüm locale routes için uniform pattern
 2. 🔮 Automated i18n validation
 3. 🔮 E2E test coverage artır
@@ -295,8 +318,10 @@ git apply -R i18nfix/patches/001-kartlar-slug-page-i18n-errors.patch
 
 Bu audit'ten çıkartılması gereken dersler:
 
-1. **Route Consistency**: Aynı fonksiyonu sağlayan route'lar aynı pattern'i kullanmalı
-2. **i18n Best Practices**: Metadata dahil tüm user-facing string'ler i18n'den gelmeli
+1. **Route Consistency**: Aynı fonksiyonu sağlayan route'lar aynı pattern'i
+   kullanmalı
+2. **i18n Best Practices**: Metadata dahil tüm user-facing string'ler i18n'den
+   gelmeli
 3. **Logging Strategy**: Production ve dev için farklı logging şart
 4. **Code Duplication**: Copy-paste yerine shared utility kullan
 5. **Regular Audits**: Periyodik code review ile tutarlılık sağla
@@ -306,6 +331,7 @@ Bu audit'ten çıkartılması gereken dersler:
 ## 🙏 TEŞEKKÜRLER
 
 Bu audit'i tamamladığınız için teşekkürler! Sorularınız için:
+
 - Ana rapor: `i18nfix/reports/src-app-locale-main-kartlar-slug-page.md`
 - Patch rehberi: `i18nfix/patches/APPLY-INSTRUCTIONS-kartlar-slug-page.md`
 
@@ -337,4 +363,3 @@ Bu audit'i tamamladığınız için teşekkürler! Sorularınız için:
 ```
 
 **BAŞARI DİLERİM! 🎉**
-

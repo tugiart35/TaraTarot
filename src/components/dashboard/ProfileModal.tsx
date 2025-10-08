@@ -138,8 +138,14 @@ export default function ProfileModal({
       onProfileUpdate(updatedProfile);
       setEditing(false);
     } catch (error) {
-      // eslint-disable-next-line no-console
-      console.error('Profil güncelleme hatası:', error);
+      // Log to error tracking service in production
+      if (process.env.NODE_ENV === 'production') {
+        // TODO: Send to Sentry, LogRocket, etc.
+        // Sentry.captureException(error, { tags: { component: 'ProfileModal', action: 'save' } });
+      } else {
+        // eslint-disable-next-line no-console
+        console.error('Profil güncelleme hatası:', error);
+      }
       setError(t('messages.profile.updateError'));
     } finally {
       setSaving(false);
@@ -151,8 +157,14 @@ export default function ProfileModal({
       await signOut();
       onClose();
     } catch (error) {
-      // eslint-disable-next-line no-console
-      console.error('Çıkış yapma hatası:', error);
+      // Log to error tracking service in production
+      if (process.env.NODE_ENV === 'production') {
+        // TODO: Send to Sentry, LogRocket, etc.
+        // Sentry.captureException(error, { tags: { component: 'ProfileModal', action: 'logout' } });
+      } else {
+        // eslint-disable-next-line no-console
+        console.error('Çıkış yapma hatası:', error);
+      }
     }
   };
 

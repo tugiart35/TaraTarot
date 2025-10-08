@@ -48,7 +48,7 @@ export default function NavigationHeader({
         {/* Desktop Navigation - Masaüstü navigasyon menüsü */}
         <nav
           className='hidden md:flex items-center space-x-1'
-          aria-label='Ana Navigasyon'
+          aria-label={t('navigation.ariaLabel.main', 'Ana Navigasyon')}
         >
           {/* Dashboard linki - aktif sayfa */}
           <a
@@ -100,7 +100,11 @@ export default function NavigationHeader({
           className='md:hidden p-2 rounded-md text-text-muted hover:text-text-celestial hover:bg-crystal-clear'
           aria-expanded={sidebarOpen}
           aria-controls='mobile-menu'
-          aria-label={sidebarOpen ? 'Menüyü kapat' : 'Menüyü aç'}
+          aria-label={
+            sidebarOpen
+              ? t('navigation.ariaLabel.closeMenu', 'Menüyü kapat')
+              : t('navigation.ariaLabel.openMenu', 'Menüyü aç')
+          }
         >
           {sidebarOpen ? (
             <X className='h-5 w-5' />
@@ -117,7 +121,7 @@ export default function NavigationHeader({
           className='md:hidden border-t border-mystical-700/50'
           id='mobile-menu'
         >
-          <nav className='px-4 py-2 space-y-1' aria-label='Mobil Navigasyon'>
+          <nav className='px-4 py-2 space-y-1' aria-label={t('navigation.ariaLabel.mobile', 'Mobil Navigasyon')}>
             {/* Dashboard linki - mobil */}
             <a
               href={routes.main}

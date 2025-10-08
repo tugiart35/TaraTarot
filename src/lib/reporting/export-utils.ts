@@ -25,12 +25,13 @@ Tespit edilen hatalar:
 
 Kullanım durumu:
 - ✅ Gerekli: Raporlama sistemi için export fonksiyonları
-- ✅ Production-ready: jsPDF ve xlsx kütüphaneleri ile
+- ✅ Production-ready: jsPDF ve ExcelJS kütüphaneleri ile
+- ✅ Security: xlsx → ExcelJS migration (HIGH vulnerability fixed)
 */
 
 // Lazy load heavy libraries to reduce initial bundle size
 let jsPDF: any = null;
-let XLSX: any = null;
+let ExcelJS: any = null;
 
 async function loadJsPDF() {
   if (!jsPDF) {
@@ -40,11 +41,11 @@ async function loadJsPDF() {
   return jsPDF;
 }
 
-async function loadXLSX() {
-  if (!XLSX) {
-    XLSX = await import('xlsx');
+async function loadExcelJS() {
+  if (!ExcelJS) {
+    ExcelJS = await import('exceljs');
   }
-  return XLSX;
+  return ExcelJS;
 }
 
 export interface ReportData {
@@ -127,70 +128,85 @@ export const exportToPDF = async (
   return doc.output('blob');
 };
 
-// Excel Export Fonksiyonu
+// Excel Export Fonksiyonu (ExcelJS kullanarak)
 export const exportToExcel = async (
   data: ReportData,
   _options: ExportOptions
 ): Promise<Blob> => {
-  const XLSXModule = await loadXLSX();
-  const workbook = XLSXModule.utils.book_new();
+  const ExcelJSModule = await loadExcelJS();
+  const workbook = new ExcelJSModule.Workbook();
 
   // Ana özet sayfası
-  const summaryData = [
-    ['Metrik', 'Değer'],
-    ['Toplam Kullanıcı', data.totalUsers],
-    ['Günlük Kullanıcı', data.dailyUsers],
-    ['Kullanıcı Büyümesi (%)', data.userGrowth],
-    ['Toplam Gelir (€)', data.totalRevenue],
-    ['Gelir Büyümesi (%)', data.revenueGrowth],
-    ['Satılan Krediler', data.creditsSold],
-    ['Kullanılan Krediler', data.creditUsage],
-  ];
+  const summarySheet = workbook.addWorksheet('Özet');
+  summarySheet.addRow(['Metrik', 'Değer']);
+  summarySheet.addRow(['Toplam Kullanıcı', data.totalUsers]);
+  summarySheet.addRow(['Günlük Kullanıcı', data.dailyUsers]);
+  summarySheet.addRow(['Kullanıcı Büyümesi (%)', data.userGrowth]);
+  summarySheet.addRow(['Toplam Gelir (€)', data.totalRevenue]);
+  summarySheet.addRow(['Gelir Büyümesi (%)', data.revenueGrowth]);
+  summarySheet.addRow(['Satılan Krediler', data.creditsSold]);
+  summarySheet.addRow(['Kullanılan Krediler', data.creditUsage]);
 
-  const summarySheet = XLSXModule.utils.aoa_to_sheet(summaryData);
-  XLSXModule.utils.book_append_sheet(workbook, summarySheet, 'Özet');
+  // Header formatting
+  summarySheet.getRow(1).font = { bold: true };
+  summarySheet.columns = [
+    { width: 30 },
+    { width: 20 }
+  ];
 
   // Kullanıcı kayıtları
-  const userRegData = [
-    ['Gün', 'Kayıt Sayısı'],
-    ...data.userRegistrations.map(item => [item.name, item.value]),
+  const userRegSheet = workbook.addWorksheet('Kullanıcı Kayıtları');
+  userRegSheet.addRow(['Gün', 'Kayıt Sayısı']);
+  data.userRegistrations.forEach(item => {
+    userRegSheet.addRow([item.name, item.value]);
+  });
+  userRegSheet.getRow(1).font = { bold: true };
+  userRegSheet.columns = [
+    { width: 20 },
+    { width: 15 }
   ];
-  const userRegSheet = XLSXModule.utils.aoa_to_sheet(userRegData);
-  XLSXModule.utils.book_append_sheet(
-    workbook,
-    userRegSheet,
-    'Kullanıcı Kayıtları'
-  );
 
   // Paket satışları
-  const packageData = [
-    ['Paket Adı', 'Satış Sayısı'],
-    ...data.packageSales.map(item => [item.name, item.value]),
+  const packageSheet = workbook.addWorksheet('Paket Satışları');
+  packageSheet.addRow(['Paket Adı', 'Satış Sayısı']);
+  data.packageSales.forEach(item => {
+    packageSheet.addRow([item.name, item.value]);
+  });
+  packageSheet.getRow(1).font = { bold: true };
+  packageSheet.columns = [
+    { width: 25 },
+    { width: 15 }
   ];
-  const packageSheet = XLSXModule.utils.aoa_to_sheet(packageData);
-  XLSXModule.utils.book_append_sheet(workbook, packageSheet, 'Paket Satışları');
 
   // Özellik kullanımı
-  const featureData = [
-    ['Özellik', 'Kullanım Sayısı'],
-    ...data.featureUsage.map(item => [item.name, item.value]),
+  const featureSheet = workbook.addWorksheet('Özellik Kullanımı');
+  featureSheet.addRow(['Özellik', 'Kullanım Sayısı']);
+  data.featureUsage.forEach(item => {
+    featureSheet.addRow([item.name, item.value]);
+  });
+  featureSheet.getRow(1).font = { bold: true };
+  featureSheet.columns = [
+    { width: 25 },
+    { width: 15 }
   ];
-  const featureSheet = XLSXModule.utils.aoa_to_sheet(featureData);
-  XLSXModule.utils.book_append_sheet(
-    workbook,
-    featureSheet,
-    'Özellik Kullanımı'
-  );
 
   // Gelir verileri
-  const revenueData = [
-    ['Tarih', 'Gelir (€)'],
-    ...data.revenueData.map(item => [item.date, item.revenue]),
+  const revenueSheet = workbook.addWorksheet('Gelir Verileri');
+  revenueSheet.addRow(['Tarih', 'Gelir (€)']);
+  data.revenueData.forEach(item => {
+    revenueSheet.addRow([item.date, item.revenue]);
+  });
+  revenueSheet.getRow(1).font = { bold: true };
+  revenueSheet.columns = [
+    { width: 20 },
+    { width: 15 }
   ];
-  const revenueSheet = XLSXModule.utils.aoa_to_sheet(revenueData);
-  XLSXModule.utils.book_append_sheet(workbook, revenueSheet, 'Gelir Verileri');
 
-  return XLSXModule.write(workbook, { bookType: 'xlsx', type: 'array' });
+  // Write to buffer and return as Blob
+  const buffer = await workbook.xlsx.writeBuffer();
+  return new Blob([buffer], { 
+    type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' 
+  });
 };
 
 // Yardımcı fonksiyonlar
