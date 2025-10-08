@@ -58,16 +58,17 @@ def main():
         print("❌ messages/sr.json bulunamadı!")
         return
     
-    # Cyrillic var mı kontrol et
-    sample_text = json.dumps(data, ensure_ascii=False)[:1000]
+    # Cyrillic var mı kontrol et (TÜM dosyayı tara)
+    full_text = json.dumps(data, ensure_ascii=False)
     cyrillic_pattern = re.compile('[А-Яа-яЁё]')
-    has_cyrillic = bool(cyrillic_pattern.search(sample_text))
+    has_cyrillic = bool(cyrillic_pattern.search(full_text))
     
     if not has_cyrillic:
         print("✅ Cyrillic karakter bulunamadı, dönüşüm gerekmiyor!")
         return
     
-    print("⚠️  Cyrillic karakterler tespit edildi, dönüştürülüyor...")
+    cyrillic_count = len(cyrillic_pattern.findall(full_text))
+    print(f"⚠️  {cyrillic_count} Cyrillic karakter tespit edildi, dönüştürülüyor...")
     
     # Translitere et
     data = transliterate_recursive(data)
