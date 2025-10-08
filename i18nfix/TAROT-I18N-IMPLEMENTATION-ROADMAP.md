@@ -152,9 +152,13 @@ const spreadKey = '{spread}';  // 'love', 'career', 'money', vb.
 
 // 4. Pozisyon numarası
 const positionKey = 'position{X}';  // 'position1', 'position2', vb.
+
+// ⚠️ ÖNEMLİ: REGEX PATTERN'LERİ DOĞRU KULLANIN
+// Field extraction için lookahead assertion kullanın:
+const uprightMatch = objStr.match(/upright:\s*['"\`]([\s\S]*?)['"\`]\s*,?\s*(?=reversed:|keywords:|context:|group:|$)/);
 ```
 
-**Script şablonu:** `scripts/extract-love-position1-tr.js` dosyasını kopyalayın ve yukarıdaki değerleri güncelleyin.
+**Script şablonu:** `scripts/extract-love-position2-tr.js` dosyasını kopyalayın (güncellenmiş regex'ler var)
 
 ### Adım 3.2: Çalıştır
 
@@ -841,6 +845,25 @@ Her position için şunları kontrol edin:
 ---
 
 ## 🐛 SORUN GİDERME
+
+### Sorun 0: Extraction Sonrası Embedded JavaScript Kodu
+
+**Belirti:** JSON string'lerinin içinde JavaScript kodu var (örn: `"text',\nreversed:\n'more"`)
+
+**Neden:** Extraction script'inin regex pattern'i field sonunu doğru tespit edemiyor
+
+**Çözüm:**
+```bash
+# Mevcut veriyi temizle
+python3 scripts/fix-embedded-code-in-json.py
+
+# Gelecekte: Güncellenmiş extraction script kullan (lookahead assertion'lı)
+# scripts/extract-love-position2-tr.js (düzeltilmiş versiyon)
+```
+
+**Önleme:**
+- Extraction script'lerinde **lookahead assertion** kullanın: `(?=nextField:|$)`
+- Test edin: İlk kartın çıktısını kontrol edin, JavaScript kodu varsa regex'i düzeltin
 
 ### Sorun 1: "t is not defined" Hatası
 
