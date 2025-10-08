@@ -1263,7 +1263,6 @@ export const getI18nPosition1Meaning = (
         }
         return originalMeaning.keywords;
       } catch (error) {
-        console.error(`[Love Position 1] Failed to parse keywords for ${cardName}:`, error);
         return originalMeaning.keywords;
       }
     })(),

@@ -1490,9 +1490,21 @@ export const getI18nPosition3Meaning = (
     position: originalMeaning.position,
     upright: i18nUpright || originalMeaning.upright,
     reversed: i18nReversed || originalMeaning.reversed,
-    keywords: i18nKeywords
-      ? JSON.parse(i18nKeywords)
-      : originalMeaning.keywords,
+    keywords: (() => {
+      if (!i18nKeywords) {
+        return originalMeaning.keywords;
+      }
+      try {
+        const parsed = JSON.parse(i18nKeywords);
+        if (Array.isArray(parsed)) {
+          return parsed;
+        }
+        return originalMeaning.keywords;
+      } catch (error) {
+        console.error(`[Love Position 3] Failed to parse keywords for ${cardName}:`, error);
+        return originalMeaning.keywords;
+      }
+    })(),
     context: i18nContext || originalMeaning.context,
     group: i18nGroup || originalMeaning.group,
   };
