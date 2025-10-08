@@ -1,3 +1,5 @@
+'use client';
+
 /*
 info:
 ---
@@ -191,6 +193,56 @@ export const CAREER_POSITION_DESCRIPTIONS = {
   6: 'Geçmişimdeki hangi engeller',
   7: 'Sonuç ne olacak',
 } as const;
+
+// i18n destekli fonksiyon - kart ve pozisyona göre çevrilmiş anlam döndürür
+export function getI18nCareerMeaningByCardAndPosition(
+  cardName: string,
+  position: number,
+  t: (_key: string) => string
+): CareerPositionMeaning | null {
+  const positionMeanings = CAREER_POSITION_MEANINGS[position];
+  if (!positionMeanings) {
+    return null;
+  }
+
+  const originalMeaning = positionMeanings.find(m => m.card === cardName);
+  if (!originalMeaning) {
+    return null;
+  }
+
+  // i18n'den çevirileri al
+  const cardKey = cardName
+    .toLowerCase()
+    .replace(/\s+/g, '')
+    .replace(/[^a-z0-9]/g, '');
+
+  const i18nUpright = t(`career.meanings.${cardKey}.position${position}.upright`);
+  const i18nReversed = t(`career.meanings.${cardKey}.position${position}.reversed`);
+  const i18nKeywords = t(`career.meanings.${cardKey}.position${position}.keywords`);
+  const i18nContext = t(`career.meanings.${cardKey}.position${position}.context`);
+
+  return {
+    ...originalMeaning,
+    upright: i18nUpright || originalMeaning.upright,
+    reversed: i18nReversed || originalMeaning.reversed,
+    keywords: (() => {
+      if (!i18nKeywords) {
+        return originalMeaning.keywords;
+      }
+      try {
+        const parsed = JSON.parse(i18nKeywords);
+        if (Array.isArray(parsed)) {
+          return parsed;
+        }
+        return originalMeaning.keywords;
+      } catch (error) {
+        console.error(`[Career Position ${position}] Failed to parse keywords for ${cardName}:`, error);
+        return originalMeaning.keywords;
+      }
+    })(),
+    context: i18nContext || originalMeaning.context,
+  };
+}
 
 // Export edilen pozisyon arrayleri
 export {

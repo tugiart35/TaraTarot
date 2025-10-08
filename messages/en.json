@@ -5572,5 +5572,593 @@
     "written": "Written",
     "kartlarin-rehberligi": "Kartların rehberliği",
     "uyari-mesajini-kapat": "Uyarı mesajını kapat"
+  },
+  "career": {
+    "meanings": {
+      "thefool": {
+        "position1": {
+          "upright": "Joker says he is on the verge of a new beginning in his career path. You can boldly step into areas that excite your heart. If your current path does not satisfy you, it may be time to move in a new direction that will nourish your freedom.",
+          "reversed": "Inverted Joker indicates that unplanned steps can bring disappointment. Maybe your current career isn't right for you, but hastily choosing a new path just for a change is risky.",
+          "keywords": "[\"new beginning\", \"bravery\", \"freedom\", \"risk\", \"adventure\"]",
+          "context": "Your desire to find the free space your heart desires in your career path is at the forefront."
+        }
+      },
+      "themagician": {
+        "position1": {
+          "upright": "The wizard indicates a period in which you can reveal your potential. Your creativity, communication power and willpower can carry you to success in your career. If your current path supports this energy, you are on the right track.",
+          "reversed": "The Reversed Magician may indicate that you are using your talents in the wrong direction or are in a job that limits your potential. In this case, your current career may be consuming you.",
+          "keywords": "[\"creativity\", \"potential\", \"communication\", \"vision\", \"strength\"]",
+          "context": "You need to question whether you are using your own power in the right place."
+        }
+      },
+      "thehighpriestess": {
+        "position1": {
+          "upright": "The High Priestess says you should listen to your intuition. Your current career may be satisfying your mind, but if your heart whispers something else, the answer is hidden in your inner world.",
+          "reversed": "The Reversed High Priestess indicates that she suppresses her intuition and acts solely on external expectations. This path may be safe, but it may not satisfy you.",
+          "keywords": "[\"intuition\", \"wisdom\", \"inner guidance\", \"secret\", \"silence\"]",
+          "context": "You will find your real career answer where your heart whispers."
+        }
+      },
+      "theempress": {
+        "position1": {
+          "upright": "The Empress is a symbol of creativity and abundance. If your career gives you productivity, fulfillment, and the opportunity to demonstrate your values, you're on the right track.",
+          "reversed": "The Reversed Empress may indicate that your current job is dulling your creativity or does not value you. Maybe you chose this path to meet other people's expectations.",
+          "keywords": "[\"creativity\", \"plenty\", \"productivity\", \"satisfaction\", \"feminine energy\"]",
+          "context": "Question whether you are experiencing your creative and productive side in your career."
+        }
+      },
+      "theemperor": {
+        "position1": {
+          "upright": "Emperor means order, authority and solidity. If your current career offers you stability, security, and clarity, this path may be right.",
+          "reversed": "The Reversed Emperor tells you that you may be stuck in oppression and strict rules. Maybe you work in a place where you lose your freedom.",
+          "keywords": "[\"authority\", \"stability\", \"rules\", \"order\", \"strength\"]",
+          "context": "You need to balance trust and freedom."
+        }
+      },
+      "thehierophant": {
+        "position1": {
+          "upright": "The saint represents traditional paths and safe spaces. If your current career provides you with structure and social acceptance, you may be in the right place.",
+          "reversed": "The Reversed Saint shows that he lives by other people's rules and loses the originality of his soul. Maybe this career doesn't align with your core values.",
+          "keywords": "[\"tradition\", \"doctrine\", \"authority\", \"rapport\", \"guidance\"]",
+          "context": "Did you choose this path for social approval or for your own heart?"
+        }
+      },
+      "thelovers": {
+        "position1": {
+          "upright": "It means lovers, choices and harmony. If your current career is compatible with your heart and mind, it is the right choice.",
+          "reversed": "Reversed Lovers say that the choice you make leads you into an internal conflict. Maybe you chose this path with the guidance of someone else.",
+          "keywords": "[\"vote\", \"rapport\", \"heart-mind balance\", \"partnership\", \"decision\"]",
+          "context": "Question whether you followed your own heart in this career choice."
+        }
+      },
+      "thechariot": {
+        "position1": {
+          "upright": "The Chariot symbolizes will and determination. You have the motivation to move forward strongly in your current career.",
+          "reversed": "Inverted Chariot indicates that you are losing control or having trouble finding your bearings. Maybe this path isn't taking you forward.",
+          "keywords": "[\"will\", \"stability\", \"progress\", \"strength\", \"focus\"]",
+          "context": "To advance in your career, you need to clarify your direction."
+        }
+      },
+      "strength": {
+        "position1": {
+          "upright": "Strength represents inner courage and patience. If this career gives you the opportunity to show your strength in a balanced way, you may be in the right place.",
+          "reversed": "Reverse Strength tells you that you lack self-confidence or feel under pressure. Maybe this career is wearing you out.",
+          "keywords": "[\"bravery\", \"confidence\", \"patience\", \"balance\", \"durability\"]",
+          "context": "Question whether you have demonstrated your strength in a balanced way in your career."
+        }
+      },
+      "thehermit": {
+        "position1": {
+          "upright": "The saint symbolizes the wisdom that comes with inner search and loneliness. Maybe your current career doesn't offer you inner satisfaction and you need to find your own path.",
+          "reversed": "The Reversed Saint shows that he is very introverted and distant from the outside world. Maybe this job makes you lonely.",
+          "keywords": "[\"wisdom\", \"turning inward\", \"guidance\", \"quest\", \"enlightenment\"]",
+          "context": "Turn to your inner guide to find what you are really looking for on your career path."
+        }
+      },
+      "thewheeloffortune": {
+        "position1": {
+          "upright": "The Wheel of Destiny represents change and opportunity. Your current career path may be shaped by surprising developments.",
+          "reversed": "The inverted Wheel of Destiny indicates that you are stuck in cycles that you cannot control. Maybe this job keeps bringing you to the same place.",
+          "keywords": "[\"change\", \"destiny\", \"chance\", \"opportunity\", \"loop\"]",
+          "context": "Be aware of the cycle your career is taking you into."
+        }
+      },
+      "justice": {
+        "position1": {
+          "upright": "It represents justice, honesty and balance. If your current career aligns with your values ​​and feels fair, it's the right choice.",
+          "reversed": "Reverse Justice says that there is injustice or imbalance. Maybe this job isn't treating you fairly.",
+          "keywords": "[\"justice\", \"balance\", \"truth\", \"ethic\", \"responsibility\"]",
+          "context": "Does this career really feel fair to you?"
+        }
+      },
+      "thehangedman": {
+        "position1": {
+          "upright": "The Hanged Man provides a new understanding from different perspectives. Maybe you need to look at your current career in a different way.",
+          "reversed": "The Upside Down Hanged Man says that he is making unnecessary sacrifices and wasting time. This job may be giving you pause.",
+          "keywords": "[\"sacrifice\", \"waiting\", \"different view\", \"transformation\", \"surrender\"]",
+          "context": "Is your current career moving you forward or holding you back?"
+        }
+      },
+      "death": {
+        "position1": {
+          "upright": "Death symbolizes new beginnings following an end. Maybe your current career should end so that your true path can open.",
+          "reversed": "Reverse Death indicates that you are holding on to a process that needs to end. This job holds you back rather than transforming you.",
+          "keywords": "[\"transformation\", \"last\", \"rebirth\", \"release\", \"change\"]",
+          "context": "Holding on to something that needs to end is holding you back from moving forward."
+        }
+      },
+      "temperance": {
+        "position1": {
+          "upright": "It represents balance, harmony and patience. If your current career gives you peace and harmony, you are on the right track.",
+          "reversed": "Reverse Balance indicates extremes and restlessness. Maybe this job conflicts with your spiritual balance.",
+          "keywords": "[\"balance\", \"rapport\", \"patience\", \"middle way\", \"peace\"]",
+          "context": "You need to find balance in your career."
+        }
+      },
+      "thedevil": {
+        "position1": {
+          "upright": "Satan means dependence and restriction. Your current career may be making you feel dependent.",
+          "reversed": "The Reversed Devil indicates a desire for liberation. You're about to break your chains.",
+          "keywords": "[\"dependence\", \"control\", \"Restriction\", \"passion\", \"liberation\"]",
+          "context": "Does this career liberate you or chain you?"
+        }
+      },
+      "thetower": {
+        "position1": {
+          "upright": "The tower symbolizes sudden change and destruction. Your current career may change dramatically.",
+          "reversed": "The Inverted Tower indicates postponing destruction or ignoring crises.",
+          "keywords": "[\"demolition\", \"change\", \"crisis\", \"liberation\", \"regeneration\"]",
+          "context": "A new road cannot be opened without demolishing old structures."
+        }
+      },
+      "thestar": {
+        "position1": {
+          "upright": "The star means hope, inspiration and renewal. You have the potential to shine in your career.",
+          "reversed": "An Inverted Star indicates that you have lost hope or inspiration.",
+          "keywords": "[\"hope\", \"inspiration\", \"regeneration\", \"vision\", \"brightness\"]",
+          "context": "Follow your light on your career path."
+        }
+      },
+      "themoon": {
+        "position1": {
+          "upright": "The Moon is the card of uncertainty and dreams. Your current career may not offer you clarity.",
+          "reversed": "The Inverted Moon indicates awakening from illusions. You're starting to see the truth.",
+          "keywords": "[\"uncertainty\", \"intuition\", \"illusion\", \"dream\", \"mystery\"]",
+          "context": "You must see the difference between reality and illusion."
+        }
+      },
+      "thesun": {
+        "position1": {
+          "upright": "The sun symbolizes success, happiness and clarity. If your career brings you joy and success, you are on the right track.",
+          "reversed": "Reverse Sun can make you feel dissatisfied or lack motivation. Maybe you are not able to reveal your true potential.",
+          "keywords": "[\"success\", \"happiness\", \"brightness\", \"openness\", \"hope\"]",
+          "context": "Does your career bring you light and joy?"
+        }
+      },
+      "judgement": {
+        "position1": {
+          "upright": "Court means awareness and rebirth. Your current career may offer you a new direction.",
+          "reversed": "The Reversed Court indicates that you have difficulty breaking away from the past. Maybe you've become a prisoner of your old decisions.",
+          "keywords": "[\"rebirth\", \"awareness\", \"decision\", \"awakening\", \"liberation\"]",
+          "context": "Your true career answer emerges with an inner awakening."
+        }
+      },
+      "theworld": {
+        "position1": {
+          "upright": "The world is the card of completion and wholeness. If where you have reached in your career offers you satisfaction and integrity, you are on the right track.",
+          "reversed": "The Reversed Earth indicates that the cycle is not complete or you feel something is missing.",
+          "keywords": "[\"completion\", \"success\", \"integrity\", \"satisfaction\", \"loop\"]",
+          "context": "Your real career is the path that gives you a sense of fulfillment."
+        }
+      },
+      "sixofcups": {
+        "position1": {
+          "upright": "The Six of Cups symbolizes happiness from the past, nostalgia and pure joy. You may have a desire to return to your childhood dreams or a direction in your career that truly brings you joy.",
+          "reversed": "The inverted Six of Cups indicates that you are too stuck in the past or that old habits are holding you back. This path may not be taking you forward.",
+          "keywords": "[\"nostalgia\", \"past\", \"happiness\", \"childhood dream\", \"pure joy\"]",
+          "context": "Your real career is in the place that reminds you of your childhood dreams and fills your soul with joy."
+        }
+      },
+      "sevenofcups": {
+        "position1": {
+          "upright": "The Seven of Cups symbolizes dreams, options and confusion. There may be many paths coming your way in your career, but not all of them are realistic. You have to be careful to make the right choice.",
+          "reversed": "The inverted Seven of Cups indicates that it is time to get rid of dreams and make a clear decision. You begin to distinguish between what is real and what is not.",
+          "keywords": "[\"dreams\", \"options\", \"confusion\", \"opportunities\", \"illusion\"]",
+          "context": "Your true career will be revealed when you choose the one that suits your heart best among multiple options."
+        }
+      },
+      "eightofcups": {
+        "position1": {
+          "upright": "The Eight of Cups symbolizes the courage to leave an unfulfilling path behind. You are ready to move on from an area of ​​your career that no longer brings you happiness.",
+          "reversed": "The reversed Eight of Cups indicates that you are staying where you need to go or are afraid to leave. This may wear you out even more.",
+          "keywords": "[\"release\", \"farewell\", \"journey\", \"dissatisfaction\", \"bravery\"]",
+          "context": "Your true career will appear when you abandon the path that no longer nourishes you and take a new path."
+        }
+      },
+      "nineofcups": {
+        "position1": {
+          "upright": "The Nine of Cups is the card of satisfaction, happiness and abundance. If your current career truly brings you joy and satisfaction, you're on the right track.",
+          "reversed": "The reversed Nine of Cups may indicate superficial satisfaction or an unreal sense of accomplishment. Maybe you feel empty inside.",
+          "keywords": "[\"satisfaction\", \"happiness\", \"success\", \"plenty\", \"pleasure\"]",
+          "context": "Your true career is the path that gives you inner happiness and satisfaction."
+        }
+      },
+      "tenofcups": {
+        "position1": {
+          "upright": "The Ten of Cups is the card of emotional satisfaction, peace and wholeness. If your career is in harmony with other areas in your life, you are on the right track.",
+          "reversed": "The inverted Ten of Cups indicates that the work-life balance is disrupted or there is a lack of harmony.",
+          "keywords": "[\"happiness\", \"rapport\", \"family\", \"balance\", \"peace\"]",
+          "context": "Your real career is the path that is compatible with all areas of your life."
+        }
+      },
+      "pageofcups": {
+        "position1": {
+          "upright": "The Prince of Cups brings new ideas, creativity and intuitive insights. A creative start or a surprising opportunity may appear in your career.",
+          "reversed": "The Prince of Cups reversed indicates that you are acting out of immature emotions or delusional expectations. This could lead you down an unrealistic path.",
+          "keywords": "[\"creativity\", \"inspiration\", \"intuition\", \"new opportunities\", \"imagination\"]",
+          "context": "Your real career is where you can freely express your intuition and imagination."
+        }
+      },
+      "knightofcups": {
+        "position1": {
+          "upright": "The Knight of Cups symbolizes following your ideals and following your heart. An emotionally satisfying path may be waiting for you in your career.",
+          "reversed": "The reversed Knight of Cups indicates that you are caught up in dreaminess, escapism, or unrealistic goals.",
+          "keywords": "[\"ideals\", \"feeling\", \"creativity\", \"quest\", \"dream\"]",
+          "context": "Your true career will find you when you follow your heart."
+        }
+      },
+      "queenofcups": {
+        "position1": {
+          "upright": "The Queen of Cups symbolizes empathy, intuition and emotional depth. You are in the right place in your career where you benefit and inspire others.",
+          "reversed": "The Queen of Cups reversed may indicate excessive emotionality or neglect of one's own needs.",
+          "keywords": "[\"empathy\", \"intuition\", \"feeling\", \"compassion\", \"inspiration\"]",
+          "context": "Your true career is revealed in the way you demonstrate your empathy and emotional intelligence."
+        }
+      },
+      "kingofcups": {
+        "position1": {
+          "upright": "The King of Cups symbolizes maturity, wisdom and emotional balance. If you can manage your emotions in a balanced way in your career, you are on the right track.",
+          "reversed": "The reversed King of Cups may indicate emotional manipulation or inner instability. Maybe work is draining you emotionally.",
+          "keywords": "[\"balance\", \"wisdom\", \"feeling\", \"maturity\", \"leadership\"]",
+          "context": "Your true career is the way you manage your emotions with maturity and inspire others."
+        }
+      },
+      "aceofswords": {
+        "position1": {
+          "upright": "The Ace of Swords is the card of mental clarity and new ideas. An opportunity or inspiration may appear in your career that will bring you clarity.",
+          "reversed": "The Ace of Swords reversed indicates confusion or communication problems. Maybe your current path doesn't offer you clarity.",
+          "keywords": "[\"clarity of mind\", \"idea\", \"real\", \"decision\", \"beginning\"]",
+          "context": "Your true career is the one that creates clarity and a new vision in your mind."
+        }
+      },
+      "twoofswords": {
+        "position1": {
+          "upright": "Two of Swords symbolizes difficulty in making decisions. You may be torn between two paths in your career.",
+          "reversed": "Two Swords reversed indicates that postponing the decision is forcing you and now it is time to make a choice.",
+          "keywords": "[\"decision\", \"dilemma\", \"balance\", \"vote\", \"ambivalent\"]",
+          "context": "Your real career will be revealed when you lift the curtain of indecision."
+        }
+      },
+      "threeofswords": {
+        "position1": {
+          "upright": "The Three of Swords symbolizes disappointment and heartbreak. There may be situations in your career that upset you or do not meet your expectations.",
+          "reversed": "The Reversed Three of Swords indicates the process of healing and letting go of past disappointments.",
+          "keywords": "[\"sadness\", \"disappointment\", \"loss\", \"betrayal\", \"real\"]",
+          "context": "Your true career emerges when you learn and heal from the experiences that hurt you."
+        }
+      },
+      "fourofswords": {
+        "position1": {
+          "upright": "The Four of Swords symbolizes the need for rest and recovery. Maybe you should take a break from your career and re-evaluate your direction.",
+          "reversed": "The Reversed Four of Swords indicates excessive fatigue or neglect of recovery.",
+          "keywords": "[\"rest\", \"improvement\", \"recovery\", \"turning inward\", \"regeneration\"]",
+          "context": "Your true career is the path that allows you to rejuvenate mentally and physically."
+        }
+      },
+      "fiveofswords": {
+        "position1": {
+          "upright": "The Five of Swords symbolizes conflict and losing while winning. Unnecessary struggles in your career may be tiring you.",
+          "reversed": "The reversed Five of Swords says that it is time to leave conflicts behind and make peace.",
+          "keywords": "[\"conflict\", \"income\", \"defeat\", \"ego\", \"struggle\"]",
+          "context": "Your true career will emerge when you gain strength from harmony, not conflict."
+        }
+      },
+      "sixofswords": {
+        "position1": {
+          "upright": "The Six of Swords symbolizes transition and healing. There may be a transition period in your career that will lead you to peace.",
+          "reversed": "The Reversed Six of Swords indicates an inability to break away from past problems or move forward.",
+          "keywords": "[\"transition\", \"improvement\", \"progress\", \"journey\", \"hope\"]",
+          "context": "Your true career will be marked by a transition that moves you forward."
+        }
+      },
+      "sevenofswords": {
+        "position1": {
+          "upright": "The Seven of Swords symbolizes strategy, caution, and sometimes stealth. You need to plan wisely in your career.",
+          "reversed": "The Reversed Seven of Swords indicates that being dishonest can get you into trouble.",
+          "keywords": "[\"strategy\", \"plan\", \"security\", \"alertness\", \"bill\"]",
+          "context": "Your real career is built with honest strategies and smart steps."
+        }
+      },
+      "eightofswords": {
+        "position1": {
+          "upright": "The Eight of Swords symbolizes the feeling of constraint and stalemate. You may be feeling stuck in your career.",
+          "reversed": "The Reversed Eight of Swords indicates beginning to be free from these restrictions.",
+          "keywords": "[\"Restriction\", \"stuckness\", \"fear\", \"impasse\", \"liberation\"]",
+          "context": "Your true career will be revealed when you break free from your own mental blocks."
+        }
+      },
+      "nineofswords": {
+        "position1": {
+          "upright": "The Nine of Swords is the card of anxiety, stress and insomnia. You may be carrying a huge mental burden in your career.",
+          "reversed": "The Reversed Nine of Swords indicates the process of alleviating anxiety or moving towards inner peace.",
+          "keywords": "[\"anxiety\", \"stress\", \"anxiety\", \"mental load\", \"nightmare\"]",
+          "context": "Your real career is not a burden that will make you sleepless, but a path that brings peace."
+        }
+      },
+      "tenofswords": {
+        "position1": {
+          "upright": "Ten of Swords symbolizes a bitter end. It may be the end of an era in your career, but it creates space for a new beginning.",
+          "reversed": "The Reversed Ten of Swords indicates the process of recovery and rebirth.",
+          "keywords": "[\"last\", \"closing\", \"angle\", \"finish\", \"regeneration\"]",
+          "context": "Your real career is hidden in the new beginning that will arise after what must end."
+        }
+      },
+      "pageofswords": {
+        "position1": {
+          "upright": "The Prince of Swords symbolizes curiosity, desire to learn and new ideas. A new knowledge or education process may begin in your career.",
+          "reversed": "The reversed Prince of Swords indicates carelessness or superficial learning.",
+          "keywords": "[\"learning\", \"curiosity\", \"idea\", \"communication\", \"discovery\"]",
+          "context": "Your real career will flourish when you are open to learning and new ideas."
+        }
+      },
+      "knightofswords": {
+        "position1": {
+          "upright": "The Knight of Swords symbolizes quick action and bold decisions. You want to progress decisively in your career.",
+          "reversed": "The Reversed Knight of Swords indicates the risk of rashness or impulsiveness.",
+          "keywords": "[\"speed\", \"stability\", \"bravery\", \"action\", \"focus\"]",
+          "context": "Your true career will emerge not through haste but through conscious courage."
+        }
+      },
+      "queenofswords": {
+        "position1": {
+          "upright": "The Queen of Swords symbolizes intelligence, independence and objectivity. You can make the right decisions in your career with your logic.",
+          "reversed": "The Reversed Queen of Swords may show extreme coldness or detachment from emotions.",
+          "keywords": "[\"intelligence\", \"independence\", \"sharpness\", \"real\", \"logic\"]",
+          "context": "Your true career will become clear where you can use your logic freely."
+        }
+      },
+      "kingofswords": {
+        "position1": {
+          "upright": "The King of Swords symbolizes the combination of authority, justice and intelligence. You move forward in your career with wisdom and strategy.",
+          "reversed": "The Reversed King of Swords may indicate abuse of authority or overly rigid attitudes.",
+          "keywords": "[\"authority\", \"justice\", \"strategy\", \"intelligence\", \"logic\"]",
+          "context": "Your true career is revealed when you lead with wisdom and fairness."
+        }
+      },
+      "aceofwands": {
+        "position1": {
+          "upright": "The Ace of Wands means inspiration, a new opportunity, and an energetic beginning. A door may open in your career that ignites your passion and excites you.",
+          "reversed": "The Ace of Wands reversed indicates delayed opportunities or blockage of energy. Maybe your creativity is being stifled in your current job.",
+          "keywords": "[\"inspiration\", \"beginning\", \"creativity\", \"energy\", \"passion\"]",
+          "context": "Your real career lies in a new beginning that fires you up and brings out your energy."
+        }
+      },
+      "twoofwands": {
+        "position1": {
+          "upright": "Two of Wands means planning and vision. You have the potential to take solid steps towards the future in your career.",
+          "reversed": "The Two of Wands reversed may indicate that you are not living up to your potential due to fears or indecision.",
+          "keywords": "[\"planning\", \"vision\", \"decision\", \"progress\", \"opportunity\"]",
+          "context": "Your true career is revealed where you expand your horizons and plan boldly."
+        }
+      },
+      "threeofwands": {
+        "position1": {
+          "upright": "The Three of Wands symbolizes progress, expansion and the opening of horizons. Opportunities may be at your doorstep in your career.",
+          "reversed": "The Three of Wands reversed indicates failure to progress due to impatience or misdirection.",
+          "keywords": "[\"progress\", \"opportunity\", \"vision\", \"expansion\", \"preparation\"]",
+          "context": "Your real career emerges when you look to the future with hope and take bold steps."
+        }
+      },
+      "fourofwands": {
+        "position1": {
+          "upright": "The Four of Wands symbolizes celebration, success, and community support. It indicates a period in your career when you have established solid foundations.",
+          "reversed": "The Reversed Four of Wands may indicate a lack of support or an incompatible environment.",
+          "keywords": "[\"celebration\", \"success\", \"solidarity\", \"basis\", \"stability\"]",
+          "context": "Your true career is revealed in a community where you can share your successes."
+        }
+      },
+      "fiveofwands": {
+        "position1": {
+          "upright": "The Five of Wands symbolizes competition and conflict. You may be struggling to prove yourself in your career.",
+          "reversed": "The reversed Five of Wands tells you that you should stay away from unnecessary arguments. This path may be consuming you.",
+          "keywords": "[\"rivalry\", \"struggle\", \"conflict\", \"defense\", \"greed\"]",
+          "context": "Your true career emerges when you thrive in harmony rather than fueled by competition."
+        }
+      },
+      "sixofwands": {
+        "position1": {
+          "upright": "The Six of Wands symbolizes victory and recognition. It shows that your achievements in your career are appreciated.",
+          "reversed": "Reversed Six of Wands means not receiving the appreciation you expected or your success being postponed.",
+          "keywords": "[\"victory\", \"recognition\", \"success\", \"discretion\", \"pride\"]",
+          "context": "Your real career is the way in which your efforts are appreciated and you shine."
+        }
+      },
+      "sevenofwands": {
+        "position1": {
+          "upright": "The Seven of Wands symbolizes self-defense and strong standing. You are struggling to maintain your position in your career.",
+          "reversed": "The Seven of Wands reversed indicates that you are feeling vulnerable or tired of fighting.",
+          "keywords": "[\"defense\", \"struggle\", \"bravery\", \"resistance\", \"stability\"]",
+          "context": "Your true career will be strengthened when you courageously defend your values."
+        }
+      },
+      "eightofwands": {
+        "position1": {
+          "upright": "The Eight of Wands symbolizes rapid developments and progress. Sudden opportunities and momentum in your career may be waiting for you.",
+          "reversed": "The Reversed Eight of Wands indicates delays and communication problems. The progress you expect may come slowly.",
+          "keywords": "[\"speed\", \"progress\", \"news\", \"opportunity\", \"acceleration\"]",
+          "context": "Your real career will become evident in the opportunities that open up to you with rapid developments."
+        }
+      },
+      "nineofwands": {
+        "position1": {
+          "upright": "The Nine of Wands symbolizes resilience and determination. You manage to survive despite difficulties in your career.",
+          "reversed": "The Reversed Nine of Wands can indicate burnout and a tendency to give up. You may be overloaded.",
+          "keywords": "[\"durability\", \"stability\", \"resistance\", \"war\", \"protection\"]",
+          "context": "Your real career emerges when you resist without giving up and gather your strength."
+        }
+      },
+      "tenofwands": {
+        "position1": {
+          "upright": "Ten of Wands indicates increased burdens and responsibilities. You may have taken on a heavy burden in your career.",
+          "reversed": "The reversed Ten of Wands tells you that you should get rid of unnecessary responsibilities. The burden you carry consumes you.",
+          "keywords": "[\"responsibility\", \"load\", \"strain\", \"effort\", \"durability\"]",
+          "context": "Your real career should bring you shareable responsibilities, not heavy burdens."
+        }
+      },
+      "pageofwands": {
+        "position1": {
+          "upright": "The Prince of Wands symbolizes curiosity, discovery and inspiration. A new opportunity or learning process awaits you in your career.",
+          "reversed": "The Reversed Prince of Wands may indicate losing opportunities due to quick fading of enthusiasm or carelessness.",
+          "keywords": "[\"curiosity\", \"inspiration\", \"discovery\", \"learning\", \"beginning\"]",
+          "context": "Your true career lies in new beginnings that nourish your spirit of discovery."
+        }
+      },
+      "knightofwands": {
+        "position1": {
+          "upright": "The Knight of Wands symbolizes acting with passion and courage. You may be excited about a new path in your career.",
+          "reversed": "The reversed Knight of Wands indicates the risk of rashness or acting without direction.",
+          "keywords": "[\"passion\", \"bravery\", \"adventure\", \"movement\", \"energy\"]",
+          "context": "Your true career will shine when you enthusiastically pursue your passion."
+        }
+      },
+      "queenofwands": {
+        "position1": {
+          "upright": "The Queen of Wands symbolizes self-confidence, charisma and leadership energy. You assert yourself strongly in your career.",
+          "reversed": "The Queen of Wands reversed may indicate insecurity or difficulty expressing oneself.",
+          "keywords": "[\"leadership\", \"confidence\", \"charisma\", \"inspiration\", \"strength\"]",
+          "context": "Your true career will be revealed when you reveal your inner strength and leadership."
+        }
+      },
+      "kingofwands": {
+        "position1": {
+          "upright": "The King of Wands symbolizes visionary leadership and bold decisions. You carry a strong leadership energy in your career.",
+          "reversed": "The Reversed King of Wands may indicate oppressive attitudes or directionless leadership.",
+          "keywords": "[\"vision\", \"leadership\", \"bravery\", \"decision\", \"strength\"]",
+          "context": "Your real career is the path where you manifest your vision with determination."
+        }
+      },
+      "aceofpentacles": {
+        "position1": {
+          "upright": "The Ace of Pentacles is the card of abundance, opportunity and a solid start. A new job, income or a reliable path may be opened in your career.",
+          "reversed": "The reversed Ace of Pentacles indicates missed opportunities or financial uncertainty. Maybe your current path doesn't offer stability.",
+          "keywords": "[\"opportunity\", \"plenty\", \"beginning\", \"financial security\", \"potential\"]",
+          "context": "Your real career lies in a new beginning that gives you stability and tangible income."
+        }
+      },
+      "twoofpentacles": {
+        "position1": {
+          "upright": "The Two of Pentacles symbolizes balance and harmony. You may be juggling more than one responsibility in your career.",
+          "reversed": "The Reversed Two of Pentacles indicates overload or inability to manage priorities.",
+          "keywords": "[\"balance\", \"rapport\", \"flexibility\", \"multitasking\", \"administration\"]",
+          "context": "Your real career is revealed where you can manage your responsibilities in a balanced way."
+        }
+      },
+      "threeofpentacles": {
+        "position1": {
+          "upright": "The Three of Pentacles means cooperation and mastery. You are building something valuable in your career through teamwork.",
+          "reversed": "The Three of Pentacles reversed may indicate disharmony or under-appreciation of one's efforts.",
+          "keywords": "[\"partnership\", \"mastery\", \"success\", \"teamwork\", \"learning\"]",
+          "context": "Your true career will shine where your effort is valued and you build together."
+        }
+      },
+      "fourofpentacles": {
+        "position1": {
+          "upright": "The Four of Pentacles symbolize trust and ownership. You may be looking for stability in your career and want to protect what you have achieved.",
+          "reversed": "The Reversed Four of Pentacles may indicate that you are acting out of excessive control or fear of loss.",
+          "keywords": "[\"trust\", \"protection\", \"financial stability\", \"control\", \"possessiveness\"]",
+          "context": "Your real career should give you confidence while also offering growth opportunity."
+        }
+      },
+      "fiveofpentacles": {
+        "position1": {
+          "upright": "The Five of Pentacles symbolizes hardship and deprivation. You may be experiencing anxiety or temporary losses in your career.",
+          "reversed": "The Reversed Five of Pentacles indicates a process of finding support and recovery.",
+          "keywords": "[\"difficulty\", \"loss\", \"loneliness\", \"financial difficulties\", \"support\"]",
+          "context": "Your true career will be revealed where you can overcome difficulties with solidarity."
+        }
+      },
+      "sixofpentacles": {
+        "position1": {
+          "upright": "The Six of Pentacles symbolizes generosity and mutual support. Cooperation and sharing stand out in his career.",
+          "reversed": "The Reversed Six of Pentacles may indicate unbalanced relationships or unequal sharing.",
+          "keywords": "[\"generosity\", \"sharing\", \"help\", \"balance\", \"support\"]",
+          "context": "Your real career is the one built on fair sharing and mutual support."
+        }
+      },
+      "sevenofpentacles": {
+        "position1": {
+          "upright": "The Seven of Pentacles is the card of patience and long-term effort. You will be rewarded for your efforts in your career over time.",
+          "reversed": "The Reversed Seven of Pentacles may indicate impatience or wrong investments.",
+          "keywords": "[\"patience\", \"work\", \"investment\", \"waiting\", \"progress\"]",
+          "context": "Your real career is the path that you build with patience and that will bear fruit over time."
+        }
+      },
+      "eightofpentacles": {
+        "position1": {
+          "upright": "The Eight of Pentacles symbolizes mastery and dedication. You strive to improve yourself and specialize in your career.",
+          "reversed": "The Reversed Eight of Pentacles may indicate inefficiency due to indifference or carelessness.",
+          "keywords": "[\"mastery\", \"learning\", \"work\", \"practical\", \"development\"]",
+          "context": "Your true career is revealed where you develop your expertise with dedication."
+        }
+      },
+      "nineofpentacles": {
+        "position1": {
+          "upright": "The Nine of Pentacles symbolizes independence, self-confidence and material success. You see the reward of your own efforts in your career.",
+          "reversed": "The Nine of Pentacles reversed may indicate addiction or excessive pursuit of luxury.",
+          "keywords": "[\"independence\", \"confidence\", \"success\", \"financial security\", \"plenty\"]",
+          "context": "Your true career will become clear when you achieve success while maintaining your independence."
+        }
+      },
+      "tenofpentacles": {
+        "position1": {
+          "upright": "The Ten of Pentacles symbolizes the values ​​of lasting success, family and legacy. There is satisfaction built on a solid foundation in your career.",
+          "reversed": "The Ten of Pentacles reversed may indicate an environment of instability or insecurity.",
+          "keywords": "[\"permanence\", \"success\", \"financial security\", \"heritage\", \"stability\"]",
+          "context": "Your real career is the path that provides long-term security and satisfaction."
+        }
+      },
+      "pageofpentacles": {
+        "position1": {
+          "upright": "The Prince of Pentacles symbolizes learning, opportunity and discovery. Learning a new skill or receiving training can open doors for you in your career.",
+          "reversed": "The Prince of Pentacles reversed may indicate carelessness or lack of motivation.",
+          "keywords": "[\"learning\", \"opportunity\", \"discovery\", \"diligence\", \"potential\"]",
+          "context": "Your real career will flourish when you consistently apply what you've learned."
+        }
+      },
+      "knightofpentacles": {
+        "position1": {
+          "upright": "The Knight of Pentacles symbolizes discipline, patience and determination. You are progressing steadily in your career.",
+          "reversed": "The Knight of Pentacles reversed can indicate monotony or inflexibility.",
+          "keywords": "[\"stability\", \"patience\", \"discipline\", \"effort\", \"trust\"]",
+          "context": "Your real career is the path where you will achieve success with your regular and disciplined progress."
+        }
+      },
+      "queenofpentacles": {
+        "position1": {
+          "upright": "The Queen of Pentacles symbolizes fertility, compassion and practicality. You can take on both a productive and supportive role in your career.",
+          "reversed": "The Queen of Pentacles reversed may indicate excessive materialism or neglect of self-care.",
+          "keywords": "[\"abundance\", \"compassion\", \"practicality\", \"productivity\", \"support\"]",
+          "context": "Your true career is the way you demonstrate both your productivity and your compassion."
+        }
+      },
+      "kingofpentacles": {
+        "position1": {
+          "upright": "The King of Pentacles symbolizes abundance, trust and leadership. You have achieved stability and success in your career.",
+          "reversed": "The reversed King of Pentacles may indicate that you are consumed by excessive control or material ambitions.",
+          "keywords": "[\"plenty\", \"leadership\", \"trust\", \"material success\", \"stability\"]",
+          "context": "Your real career is the path you build with leadership and abundance awareness."
+        }
+      }
+    }
   }
 }

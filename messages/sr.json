@@ -378,6 +378,592 @@
   "career": {
     "modals": {
       "cardCount": "Broj Karata"
+    },
+    "meanings": {
+      "thefool": {
+        "position1": {
+          "upright": "JOKER kaže da je na ivici novog početka u svojoj karijernoj putu. Možete hrabro ući u područja koja vas uzbuđuje srce. Ako vas trenutni put ne zadovoljava, možda će biti vreme da se krećete u novom pravcu koji će vam hraniti slobodu.",
+          "reversed": "Invertirani šaljivdžija pokazuje da neplanirani koraci mogu doneti razočaranje. Možda vaša trenutna karijera nije u pravu za vas, ali ubrzano bira novi put samo za promenu je rizična.",
+          "keywords": "[\"novi početak\", \"hrabrost\", \"sloboda\", \"rizikovati\", \"avantura\"]",
+          "context": "Vaša želja da pronađete slobodan prostor vaše srčane želje u vašoj karijeri je na čelu."
+        }
+      },
+      "themagician": {
+        "position1": {
+          "upright": "Čarobnjak ukazuje na period u kojem možete otkriti svoj potencijal. Vaša kreativnost, komunikaciona moć i snaga Villpover mogu vas nositi do uspeha u vašoj karijeri. Ako vaš trenutni put podržava ovu energiju, nalazite se na pravom putu.",
+          "reversed": "Mađioničar za obrnuti može ukazivati na to da koristite svoje talente u pogrešnom smeru ili ste u poslu koji ograničava vaš potencijal. U ovom slučaju, vaša trenutna karijera vas može konzumirati.",
+          "keywords": "[\"kreativnost\", \"potencijal\", \"komunikacija\", \"vizija\", \"snaga\"]",
+          "context": "Morate da ispitate da li koristite sopstvenu moć na pravom mestu."
+        }
+      },
+      "thehighpriestess": {
+        "position1": {
+          "upright": "Visoka sveštenica kaže da bi trebalo da slušate svoju intuiciju. Vaša trenutna karijera može biti zadovoljavanje vašeg uma, ali ako vam srce šapuće nešto drugo, odgovor je skriven u vašem unutrašnjem svetu.",
+          "reversed": "Preokrećena visoka sveštenica ukazuje da potiskuje njenu intuiciju i djeluje isključivo na spoljni očekivanja. Ovaj put je možda siguran, ali možda vas neće zadovoljiti.",
+          "keywords": "[\"intuicija\", \"mudrost\", \"unutrašnja smernica\", \"tajna\", \"tišina\"]",
+          "context": "Pronaći ćete svoj pravi odgovor u karijeri gde vam srce šapuće."
+        }
+      },
+      "theempress": {
+        "position1": {
+          "upright": "Carica je simbol kreativnosti i obilja. Ako vam karijera pruži produktivnost, ispunjenje i priliku da pokažete svoje vrednosti, na pravom ste putu.",
+          "reversed": "Reversed carica može ukazivati na to da vaš trenutni posao priguši vašu kreativnost ili vas ne ceni. Možda ste izabrali ovaj put da biste upoznali očekivanja drugih ljudi.",
+          "keywords": "[\"kreativnost\", \"dosta\", \"produktivnost\", \"zadovoljstvo\", \"ženska energija\"]",
+          "context": "Pitanje da li imate svoju kreativnu i produktivnu stranu u karijeri."
+        }
+      },
+      "theemperor": {
+        "position1": {
+          "upright": "Car znači redosled, autoritet i čvrstinu. Ako vam trenutna karijera nudi stabilnost, sigurnost i jasnoću, ovaj put može biti u pravu.",
+          "reversed": "Reversirani car vam govori da se možete zaglaviti u ugnjetavanju i strogim pravilima. Možda radite na mestu gde izgubite slobodu.",
+          "keywords": "[\"vlast\", \"stabilnost\", \"pravila\", \"narediti\", \"snaga\"]",
+          "context": "Morate uravnotežiti poverenje i slobodu."
+        }
+      },
+      "thehierophant": {
+        "position1": {
+          "upright": "Saint predstavlja tradicionalne staze i sigurne prostore. Ako vam trenutna karijera pruža strukturu i socijalno prihvatanje, možda ćete biti na pravom mestu.",
+          "reversed": "Preokrećena svetac pokazuje da živi od vladajućih pravila drugih ljudi i izgubi originalnost njegove duše. Možda se ova karijera ne uskladi sa vašim osnovnim vrednostima.",
+          "keywords": "[\"tradicija\", \"doktrina\", \"vlast\", \"raport\", \"uputstvo\"]",
+          "context": "Da li ste odabrali ovaj put za socijalno odobrenje ili za svoje srce?"
+        }
+      },
+      "thelovers": {
+        "position1": {
+          "upright": "To znači ljubavnici, izbore i harmonija. Ako je vaša trenutna karijera kompatibilna sa srcem i umom, to je pravi izbor.",
+          "reversed": "Ukrasiocirani ljubavnici kažu da vas izbor koji vas uputi vodi u unutrašnji sukob. Možda ste izabrali taj put sa vođstvom nekog drugog.",
+          "keywords": "[\"glasati\", \"raport\", \"balans srca\", \"partnerstvo\", \"odluka\"]",
+          "context": "Pitanje da li ste pratili svoje srce u ovom izboru u karijeri."
+        }
+      },
+      "thechariot": {
+        "position1": {
+          "upright": "Koriot simbolizuje volju i odlučnost. Imate motivaciju da se snažno krećete naprijed u svojoj trenutnoj karijeri.",
+          "reversed": "Invertirani kolatira ukazuje da gubite kontrolu ili imate problema sa pronalaženjem ležajeva. Možda vas ovaj put ne vodi napred.",
+          "keywords": "[\"volja\", \"stabilnost\", \"napredak\", \"snaga\", \"fokus\"]",
+          "context": "Da biste unapredili u svojoj karijeri, morate da razjasnite svoj smer."
+        }
+      },
+      "strength": {
+        "position1": {
+          "upright": "Snaga predstavlja unutrašnju hrabrost i strpljenje. Ako vam ova karijera pruži priliku da pokažete snagu u uravnoteženom putu, možda ćete biti na pravom mestu.",
+          "reversed": "Obrnuta snaga vam govori da vam nedostaje samopouzdanje ili se osećate pod pritiskom. Možda vas ova karijera nosi.",
+          "keywords": "[\"hrabrost\", \"poverenje\", \"strpljenje\", \"ravnoteža\", \"izdržljivost\"]",
+          "context": "Pitanje je da li ste svoju snagu demonstrirali u uravnoteženom putu u vašoj karijeri."
+        }
+      },
+      "thehermit": {
+        "position1": {
+          "upright": "Saint simbolizuje mudrost koja dolazi sa unutrašnjom pretragom i usamljenosti. Možda vam trenutna karijera ne nudi unutrašnje zadovoljstvo i morate da pronađete svoj vlastiti put.",
+          "reversed": "Okrećena svetac pokazuje da je veoma introvertiran i udaljen od spoljnog sveta. Možda vas ovaj posao čini usamljenim.",
+          "keywords": "[\"mudrost\", \"okretanje prema unutra\", \"uputstvo\", \"potraga\", \"prosvetljenje\"]",
+          "context": "Okrenite se svom unutrašnjem vodiču da biste pronašli ono što stvarno tražite na putu karijere."
+        }
+      },
+      "thewheeloffortune": {
+        "position1": {
+          "upright": "Točak sudbine predstavlja promenu i priliku. Vaš trenutni put u karijeri može se oblikovati iznenađujućim razvojem.",
+          "reversed": "Obrnuti točak sudbine ukazuje da ste zaglavili u ciklusima koje ne možete da kontrolišete. Možda vas ovaj posao stalno dovodi do istog mesta.",
+          "keywords": "[\"promeniti\", \"sudbina\", \"šansa\", \"prilika\", \"petlja\"]",
+          "context": "Budite svesni ciklusa koji vas karijera vodi."
+        }
+      },
+      "justice": {
+        "position1": {
+          "upright": "Predstavlja pravdu, iskrenost i ravnotežu. Ako vaša trenutna karijera poravnava sa vašim vrednostima i oseća fer, to je pravi izbor.",
+          "reversed": "Obrnuta pravda kaže da postoji nepravda ili neravnoteža. Možda vas ovaj posao ne tretira pošteno.",
+          "keywords": "[\"pravda\", \"ravnoteža\", \"istina\", \"etika\", \"odgovornost\"]",
+          "context": "Da li vam se ova karijera zaista oseća fer prema vama?"
+        }
+      },
+      "thehangedman": {
+        "position1": {
+          "upright": "Obučeni čovek pruža novo razumevanje iz različitih perspektiva. Možda morate na drugi način da pogledate trenutnu karijeru.",
+          "reversed": "Okrušen muškarac naopako govore da on pravi nepotrebne žrtve i gubljenje vremena. Ovaj posao vam može dati pauzu.",
+          "keywords": "[\"žrtvovati\", \"čekanje\", \"drugačiji pogled\", \"transformacija\", \"predaja\"]",
+          "context": "Da li vas trenutna karijera kreće napred ili vas zadržava?"
+        }
+      },
+      "death": {
+        "position1": {
+          "upright": "Smrt simbolizuje nove početke nakon završetka. Možda bi vaša trenutna karijera trebalo da se završi tako da se vaš pravi put može otvoriti.",
+          "reversed": "Obrnuta smrt ukazuje da se držite procesa koji treba da se završi. Ovaj posao vas zadržava, a ne da vas transformišete.",
+          "keywords": "[\"transformacija\", \"zadnji\", \"ponovno rođenje\", \"izdanje\", \"promeniti\"]",
+          "context": "Držeći se nečega što treba da se završi zadržava vas da se krećete napred."
+        }
+      },
+      "temperance": {
+        "position1": {
+          "upright": "Predstavlja ravnotežu, harmoniju i strpljenje. Ako vam trenutna karijera daje mir i harmoniju, nalazite se na pravom putu.",
+          "reversed": "Obrnuti balans ukazuje na krajnosti i nemirnosti. Možda se ovaj posao sukobljava sa vašom duhovnom ravnotežom.",
+          "keywords": "[\"ravnoteža\", \"raport\", \"strpljenje\", \"u srednjem stanju\", \"mir\"]",
+          "context": "Morate pronaći ravnotežu u karijeri."
+        }
+      },
+      "thedevil": {
+        "position1": {
+          "upright": "Sotona znači zavisnost i ograničenje. Vaša trenutna karijera može vas činiti zavisnim.",
+          "reversed": "Reversed Đavo pokazuje želju za oslobađanjem. Uskoro ćeš slomiti lance.",
+          "keywords": "[\"zavisnost\", \"kontrola\", \"Ograničenje\", \"strast\", \"oslobođenje\"]",
+          "context": "Da li vas ova karijera oslobodi ili vas lastan?"
+        }
+      },
+      "thetower": {
+        "position1": {
+          "upright": "Toranj simbolizuje nagle promene i uništavanje. Vaša trenutna karijera može dramatično promeniti.",
+          "reversed": "Invertirani toranj ukazuje na odlaganje uništavanja ili ignorisanja krize.",
+          "keywords": "[\"rušenje\", \"promeniti\", \"kriza\", \"oslobođenje\", \"regeneracija\"]",
+          "context": "Novi put se ne može otvoriti bez rušenja starih struktura."
+        }
+      },
+      "thestar": {
+        "position1": {
+          "upright": "Zvezda znači nada, inspiraciju i obnavljanje. Imate potencijal da blistate u karijeri.",
+          "reversed": "Invertovana zvezda ukazuje da ste izgubili nadu ili inspiraciju.",
+          "keywords": "[\"nadati se\", \"inspiracija\", \"regeneracija\", \"vizija\", \"svetlina\"]",
+          "context": "Pratite svoju svetlost na putu karijere."
+        }
+      },
+      "themoon": {
+        "position1": {
+          "upright": "Mesec je kartica neizvesnosti i snova. Vaša trenutna karijera možda vam ne nudi jasnoću.",
+          "reversed": "Invertirani mesec označava buđenje iz iluzija. Počinješ da vidiš istinu.",
+          "keywords": "[\"neizvesnost\", \"intuicija\", \"iluzija\", \"sanjati\", \"misterija\"]",
+          "context": "Morate videti razliku između stvarnosti i iluzije."
+        }
+      },
+      "thesun": {
+        "position1": {
+          "upright": "Sunce simbolizuje uspeh, sreću i jasnoću. Ako vam karijera donese radost i uspeh, na pravom ste putu.",
+          "reversed": "Obrnuti sunce vas može učiniti da se osećate nezadovoljnim ili nedostaje motivacija. Možda niste u mogućnosti da otkrijete svoj pravi potencijal.",
+          "keywords": "[\"uspeh\", \"sreća\", \"svetlina\", \"otvorenost\", \"nadati se\"]",
+          "context": "Da li vam karijeru donosi svetlost i radost?"
+        }
+      },
+      "judgement": {
+        "position1": {
+          "upright": "Sud znači svest i ponovno rođenje. Vaša trenutna karijera može vam ponuditi novi smer.",
+          "reversed": "Reversirani sud ukazuje da imate poteškoća da se razbijate od prošlosti. Možda ste postali zatvorenik svojih starih odluka.",
+          "keywords": "[\"ponovno rođenje\", \"svest\", \"odluka\", \"buđenje\", \"oslobođenje\"]",
+          "context": "Vaš istinski odgovor karijere pojavljuje se sa unutrašnjim buđenjem."
+        }
+      },
+      "theworld": {
+        "position1": {
+          "upright": "Svet je kartica završetka i celovitosti. Ako ste tamo došli u karijeri, nudi vam zadovoljstvo i integritet, vi ste na pravom putu.",
+          "reversed": "Ograničena zemlja ukazuje da ciklus nije kompletan ili osećate da nešto nedostaje.",
+          "keywords": "[\"završetak\", \"uspeh\", \"integritet\", \"zadovoljstvo\", \"petlja\"]",
+          "context": "Vaša stvarna karijera je put koji vam daje osećaj ispunjenja."
+        }
+      },
+      "sixofcups": {
+        "position1": {
+          "upright": "Šest šoljica simbolizuje sreću iz prošlosti, nostalgije i čiste radosti. Možda ćete imati želju da se vratite svojim detinjskim snovima ili smer u karijeri koja vam zaista donosi radost.",
+          "reversed": "Vedro šest šoljica pokazuje da ste previše zaglavili u prošlosti ili da vas stare navike zadržavaju. Ovaj put vas možda neće voditi napred.",
+          "keywords": "[\"nostalgija\", \"prošlost\", \"sreća\", \"djetinjski san\", \"čista radost\"]",
+          "context": "Vaša stvarna karijera je na mestu koje vas podseća na vaše dečije snove i ispuni vašu dušu radošću."
+        }
+      },
+      "sevenofcups": {
+        "position1": {
+          "upright": "Sedam šoljica simbolizuje snove, opcije i konfuziju. Možda će vam biti mnogo staza koji vam se nalaze u karijeri, ali nisu svi realistični. Morate biti oprezni da napravite pravi izbor.",
+          "reversed": "Pretvorenih sedam šoljica ukazuje da je vreme da se oslobodimo snova i damo jasnu odluku. Počinjete da razlikujete ono što je stvarno i šta nije.",
+          "keywords": "[\"snova\", \"opcije\", \"zbrka\", \"prilika\", \"iluzija\"]",
+          "context": "Vaša istinska karijera biće otkrivena kada odaberete onaj koji vam najbolje odgovara vašem srcu među više opcija."
+        }
+      },
+      "eightofcups": {
+        "position1": {
+          "upright": "Osam šoljica simbolizuje hrabrost da ostavi neispravan put iza. Spremni ste da pređete sa područja vaše karijere koja vam više ne donosi sreću.",
+          "reversed": "Osvećeno osam šoljica ukazuje da ostajete tamo gde trebate da odete ili se plašite da odete. Ovo vas može još više nositi.",
+          "keywords": "[\"izdanje\", \"oproštaj\", \"putovanje\", \"nezadovoljstvo\", \"hrabrost\"]",
+          "context": "Vaša istinska karijera će se pojaviti kada napustite put koji vas više ne hrani i uzme novi put."
+        }
+      },
+      "nineofcups": {
+        "position1": {
+          "upright": "Devet šoljica je kartica zadovoljstva, sreće i obilja. Ako vam trenutna karijera zaista donosi radost i zadovoljstvo, vi ste na pravom putu.",
+          "reversed": "Ograničeno devet šoljica može ukazivati na površno zadovoljstvo ili nestvaran smisao postignuća. Možda se osećate prazno iznutra.",
+          "keywords": "[\"zadovoljstvo\", \"sreća\", \"uspeh\", \"dosta\", \"zadovoljstvo\"]",
+          "context": "Vaša istinska karijera je put koja vam daje unutrašnju sreću i zadovoljstvo."
+        }
+      },
+      "tenofcups": {
+        "position1": {
+          "upright": "Deset šoljica je kartica emocionalnog zadovoljstva, mira i celovitosti. Ako je vaša karijera u harmoniji sa drugim oblastima u vašem životu, na pravom ste stazu.",
+          "reversed": "Invertirani deset šoljica pokazuje da je ravnoteža radne životne sredine poremećena ili nedostaje harmonija.",
+          "keywords": "[\"sreća\", \"raport\", \"porodica\", \"ravnoteža\", \"mir\"]",
+          "context": "Vaša stvarna karijera je put koji je kompatibilan sa svim oblastima vašeg života."
+        }
+      },
+      "pageofcups": {
+        "position1": {
+          "upright": "Princ čaša donosi nove ideje, kreativnost i intuitivni uvidi. U vašoj karijeri se može pojaviti kreativni početak ili iznenađujuća prilika.",
+          "reversed": "Princ of Cups preokrenut ukazuje da se ponašate iz nezrelih emocija ili zabludnika. To bi vas moglo dovesti do nerealni put.",
+          "keywords": "[\"kreativnost\", \"inspiracija\", \"intuicija\", \"Nove mogućnosti\", \"mašta\"]",
+          "context": "Vaša stvarna karijera je mesto gde slobodno možete izraziti svoju intuiciju i maštu."
+        }
+      },
+      "knightofcups": {
+        "position1": {
+          "upright": "Vitez čaše simbolizuje prateći vaše ideale i prateći vaše srce. Emocionalno zadovoljavajući put vas može čekati u vašoj karijeri.",
+          "reversed": "Prekoračeni vitez čaše pokazuje da ste uhvaćeni u sanjini, bekstvom ili nerealnom ciljevima.",
+          "keywords": "[\"ideali\", \"osećanje\", \"kreativnost\", \"potraga\", \"sanjati\"]",
+          "context": "Vaša istinska karijera će vas naći kada sledite svoje srce."
+        }
+      },
+      "queenofcups": {
+        "position1": {
+          "upright": "Kueen of Cups simbolizuje empatiju, intuiciju i emocionalnu dubinu. Na pravom ste mestu u vašoj karijeri u kojoj imate koristi i nadahnjujete druge.",
+          "reversed": "Kraljica Cup-ova preokrenuta može ukazivati na prekomernu emocionalnost ili zanemarivanje sopstvenih potreba.",
+          "keywords": "[\"empatija\", \"intuicija\", \"osećanje\", \"saosećanje\", \"inspiracija\"]",
+          "context": "Vaša istinska karijera otkriva se na način na koji pokazujete svoju empatiju i emocionalnu inteligenciju."
+        }
+      },
+      "kingofcups": {
+        "position1": {
+          "upright": "Kralj šoljica simbolizuje zrelost, mudrost i emocionalnu ravnotežu. Ako možete upravljati svojim emocijama u uravnoteženom načinu u karijeri, na pravom ste putu.",
+          "reversed": "Prekoračeni kralj šoljica može ukazivati na emocionalnu manipulaciju ili unutrašnju nestabilnost. Možda vas rad emocionalno isušuje.",
+          "keywords": "[\"ravnoteža\", \"mudrost\", \"osećanje\", \"zrelost\", \"rukovodstvo\"]",
+          "context": "Vaša istinska karijera je način na koji upravljate svojim emocijama sa zrelošću i nadahnite druge."
+        }
+      },
+      "aceofswords": {
+        "position1": {
+          "upright": "Ace mačeva je kartica mentalne jasnoće i nove ideje. Prilika ili inspiracija se može pojaviti u vašoj karijeri koja će vam donijeti jasnoću.",
+          "reversed": "Ace mačeva obrnuto ukazuje na probleme sa zbrkom ili komunikacijom. Možda vam sada trenutni put ne nudi jasnoću.",
+          "keywords": "[\"jasnoća uma\", \"ideja\", \"real\", \"odluka\", \"početak\"]",
+          "context": "Vaša istinska karijera je ona koja stvara jasnoću i novu viziju u vašem umu."
+        }
+      },
+      "twoofswords": {
+        "position1": {
+          "upright": "Dvoje mačeva simbolizuje poteškoće u donošenju odluka. Možda ćete biti rastrgani između dve staze u karijeri.",
+          "reversed": "Dva preokrenuta mačeva ukazuju na to da odlaganje odluke vas prisiljava i sada je vreme da se odlučite.",
+          "keywords": "[\"odluka\", \"dilema\", \"ravnoteža\", \"glasati\", \"ambivalentan\"]",
+          "context": "Vaša stvarna karijera biće otkrivena kada podignete zavesu neodlučne."
+        }
+      },
+      "threeofswords": {
+        "position1": {
+          "upright": "Tri mačeva simbolizuje razočaranje i srce. U vašoj karijeri mogu biti situacije koje vas uznemiri ili ne ispunjavaju vaša očekivanja.",
+          "reversed": "Preokrećena tri mačeva ukazuju na proces isceljenja i prepuštanja prošlih razočaranja.",
+          "keywords": "[\"tuga\", \"razočaranje\", \"gubitak\", \"izdaja\", \"real\"]",
+          "context": "Vaša istinska karijera se pojavljuje kada učite i zacelite iz iskustava koja vas povređuju."
+        }
+      },
+      "fourofswords": {
+        "position1": {
+          "upright": "Četiri mačeva simbolizuje potrebu za odmor i oporavka. Možda bi trebalo da se odmorite od karijere i ponovo procenite svoj smer.",
+          "reversed": "Preokrećena četiri mačeva ukazuje na prekomerno umor ili zanemarivanje oporavka.",
+          "keywords": "[\"odmor\", \"poboljšanje\", \"oporavak\", \"okretanje prema unutra\", \"regeneracija\"]",
+          "context": "Vaša istinska karijera je put koja vam omogućava da se mentalno i fizički podvrgavate."
+        }
+      },
+      "fiveofswords": {
+        "position1": {
+          "upright": "Petorica mačeva simbolizuje sukob i gubitak tokom pobede. Nepotrebne borbe u vašoj karijeri mogu vas umoriti.",
+          "reversed": "Preokrećeno pet mačeva kaže da je vreme da ostavimo sukobe iza i sklopimo mir.",
+          "keywords": "[\"sukob\", \"prihod\", \"poraz\", \"ego\", \"borba\"]",
+          "context": "Vaša istinska karijera će se pojaviti kada steknete snagu od harmonije, a ne sukoba."
+        }
+      },
+      "sixofswords": {
+        "position1": {
+          "upright": "Šest mačeva simbolizuje tranziciju i isceljivanje. U vašoj karijeri može doći do prelaznog perioda koji će vas dovesti do mira.",
+          "reversed": "Preokrećeno šest mačeva ukazuje na nemogućnost razbijanja od prošlih problema ili krenuti naprijed.",
+          "keywords": "[\"prelaz\", \"poboljšanje\", \"napredak\", \"putovanje\", \"nadati se\"]",
+          "context": "Vaša istinska karijera biće obeležena tranzicijom koja vas kreće napred."
+        }
+      },
+      "sevenofswords": {
+        "position1": {
+          "upright": "Sedam mačeva simbolizuje strategiju, oprez, a ponekad i prikriveno. Morate mudro da planirate u karijeri.",
+          "reversed": "Preokrećeno sedam mačeva ukazuje da vas nepošteno može ući u probleme.",
+          "keywords": "[\"strategija\", \"plan\", \"sigurnost\", \"budnost\", \"račun\"]",
+          "context": "Vaša stvarna karijera je izgrađena sa poštenim strategijama i pametnim koracima."
+        }
+      },
+      "eightofswords": {
+        "position1": {
+          "upright": "Osam mačeva simbolizuje osećaj ograničenja i zastoja. Možda ćete se osećati zaglavljeno u karijeri.",
+          "reversed": "Otkriveni osam mačeva ukazuje na početak da se oslobode ova ograničenja.",
+          "keywords": "[\"Ograničenje\", \"zaglaznost\", \"strah\", \"zastoj\", \"oslobođenje\"]",
+          "context": "Vaša istinska karijera biće otkrivena kada se oslobodite svojih mentalnih blokova."
+        }
+      },
+      "nineofswords": {
+        "position1": {
+          "upright": "Devet mačeva je kartica anksioznosti, stresa i nesanice. Možda ćete nositi ogroman mentalni teret u karijeri.",
+          "reversed": "Preokrećeno devet mačeva ukazuje na proces ublažavanja anksioznosti ili kretanja ka unutrašnjem miru.",
+          "keywords": "[\"anksioznost\", \"stres\", \"anksioznost\", \"mentalno opterećenje\", \"noćna mora\"]",
+          "context": "Vaša stvarna karijera nije teret koji će vas učiniti neskopčenim, već stazom koja donosi mir."
+        }
+      },
+      "tenofswords": {
+        "position1": {
+          "upright": "Deset mačeva simbolizuje gorkog kraja. To je možda kraj ere u vašoj karijeri, ali stvara prostor za novi početak.",
+          "reversed": "Prekoračeni deset mačeva ukazuje na postupak oporavka i ponovnog rođenja.",
+          "keywords": "[\"zadnji\", \"zatvaranje\", \"ugao\", \"završiti\", \"regeneracija\"]",
+          "context": "Vaša stvarna karijera je skrivena u novom početku koji će se pojaviti nakon što se mora završiti."
+        }
+      },
+      "pageofswords": {
+        "position1": {
+          "upright": "Princ mačeva simbolizuje radoznalost, želju da nauči i nove ideje. Novo znanje ili obrazovni proces može početi u vašoj karijeri.",
+          "reversed": "Prenoćini princ mačeva ukazuje na nepažnju ili površno učenje.",
+          "keywords": "[\"učenje\", \"radoznalost\", \"ideja\", \"komunikacija\", \"otkriće\"]",
+          "context": "Vaša stvarna karijera će procvjetati kada ste otvoreni za učenje i nove ideje."
+        }
+      },
+      "knightofswords": {
+        "position1": {
+          "upright": "Vitez mačeva simbolizuje brze akcije i smele odluke.Želite da presudno napredujete u svojoj karijeri.",
+          "reversed": "Ograničeni vitez mačeva ukazuje na rizik od osilice ili impulsivnosti.",
+          "keywords": "[\"brzina\", \"stabilnost\", \"hrabrost\", \"akcija\", \"fokus\"]",
+          "context": "Vaša istinska karijera će se pojaviti ne kroz žurbu, već kroz svesnu hrabrost."
+        }
+      },
+      "queenofswords": {
+        "position1": {
+          "upright": "Kraljica mačeva simbolizuje inteligenciju, nezavisnost i objektivnost. Možete da donesete prave odluke u svojoj karijeri sa svojom logikom.",
+          "reversed": "Ograničena kraljica mačeva može pokazati ekstremnu hladnoću ili odred od emocija.",
+          "keywords": "[\"obaveštajna služba\", \"nezavisnost\", \"oštrina\", \"real\", \"logika\"]",
+          "context": "Vaša istinska karijera postaće jasna gde slobodno možete koristiti svoju logiku."
+        }
+      },
+      "kingofswords": {
+        "position1": {
+          "upright": "Kralj mačeva simbolizuje kombinaciju vlasti, pravde i inteligencije. Prolazite naprijed u svojoj karijeri sa mudrošću i strategijom.",
+          "reversed": "Prekoračeni kralj mačeva može ukazivati na zloupotrebu ovlašćenja ili preterano krutih stavova.",
+          "keywords": "[\"vlast\", \"pravda\", \"strategija\", \"obaveštajna služba\", \"logika\"]",
+          "context": "Vaša istinska karijera otkriva se kada vodite sa mudrošću i pravičnošću."
+        }
+      },
+      "aceofwands": {
+        "position1": {
+          "upright": "Ace štapiće znači inspiraciju, novu priliku i energičan početak. Vrata se mogu otvoriti u vašoj karijeri koja vas zapali strast i uzbuđuje vas.",
+          "reversed": "ACE of Vinds Reversed ukazuje na odlaganje mogućnosti ili blokadu energije. Možda se vaša kreativnost uguše u vašem trenutnom poslu.",
+          "keywords": "[\"inspiracija\", \"početak\", \"kreativnost\", \"energija\", \"strast\"]",
+          "context": "Vaša stvarna karijera leži u novom početku koji vas ispaljuje i otkriva vašu energiju."
+        }
+      },
+      "twoofwands": {
+        "position1": {
+          "upright": "Dvoje štapiće znači planiranje i viziju. Imate potencijal da u vašoj karijeri preuzmete čvrste korake prema budućnosti.",
+          "reversed": "Druga dvorska štampanja mogu ukazivati na to da ne živite prema vašem potencijalu zbog strahova ili neodlučnosti.",
+          "keywords": "[\"planiranje\", \"vizija\", \"odluka\", \"napredak\", \"prilika\"]",
+          "context": "Vaša istinska karijera otkriva se gde proširite svoje horizonte i planirajte hrabro."
+        }
+      },
+      "threeofwands": {
+        "position1": {
+          "upright": "Tri štapića simbolizuje napredak, širenje i otvaranje horizonta. Mogućnosti mogu biti na vašem pragu u vašoj karijeri.",
+          "reversed": "Tri štapića obrnuta ukazuju na neuspeh u napretku zbog nestrpljenja ili pogrešne predodređenja.",
+          "keywords": "[\"napredak\", \"prilika\", \"vizija\", \"ekspanzija\", \"priprema\"]",
+          "context": "Vaša stvarna karijera pojavljuje se kada pogledate budućnost sa nadom i preuzmite podebljane korake."
+        }
+      },
+      "fourofwands": {
+        "position1": {
+          "upright": "Četiri štapića simbolizuje proslavu, uspeh i podršku zajednice. Označava period u vašoj karijeri kada ste uspostavili čvrste temelje.",
+          "reversed": "Preokrećena četiri štapića mogu ukazivati na nedostatak podrške ili nekompatibilnog okruženja.",
+          "keywords": "[\"proslava\", \"uspeh\", \"solidarnost\", \"osnova\", \"stabilnost\"]",
+          "context": "Vaša istinska karijera otkriva se u zajednici u kojoj možete da delite svoje uspehe."
+        }
+      },
+      "fiveofwands": {
+        "position1": {
+          "upright": "Pet štapića simbolizuje konkurenciju i sukob. Možda se borite da se dokažete u karijeri.",
+          "reversed": "Otkriveni pet štapića govore vam da biste trebali da se držite podalje od nepotrebnih argumenata. Ovaj put vas može konzumirati.",
+          "keywords": "[\"rivalstvo\", \"borba\", \"sukob\", \"odbrana\", \"pohlepa\"]",
+          "context": "Vaša istinska karijera pojavljuje se kada napredujete u harmoniji, a ne podstaknu konkurencijom."
+        }
+      },
+      "sixofwands": {
+        "position1": {
+          "upright": "Šest štapića simbolizuje pobedu i priznanje. Pokazuje da se vaša dostignuća u vašoj karijeri ceni.",
+          "reversed": "Okolišteno šest štapića znači da ne dobijate zahvalnost koju ste očekivali ili vaš uspeh odgođen.",
+          "keywords": "[\"pobeda\", \"prepoznavanje\", \"uspeh\", \"diskrecija\", \"ponos\"]",
+          "context": "Vaša stvarna karijera je način na koji se cene vaši napori i sjajite."
+        }
+      },
+      "sevenofwands": {
+        "position1": {
+          "upright": "Sedam štapića simbolizuje samoodbranu i snažno stojeći. Borite se da održite svoju poziciju u karijeri.",
+          "reversed": "Sedam štapića obrnuta ukazuje da se osećate ranjivo ili umorno od borbi.",
+          "keywords": "[\"odbrana\", \"borba\", \"hrabrost\", \"otpornost\", \"stabilnost\"]",
+          "context": "Vaša istinska karijera biće ojačana kada hrabro bravite svoje vrednosti."
+        }
+      },
+      "eightofwands": {
+        "position1": {
+          "upright": "Osam štapića simbolizuje brzi razvoj i napredak. Nagle prilike i zamah u vašoj karijeri možda vas čekaju.",
+          "reversed": "Okolište Osam štapića ukazuje na kašnjenja i probleme sa komunikacijama. Napredak koji očekujete može doći polako.",
+          "keywords": "[\"brzina\", \"napredak\", \"vesti\", \"prilika\", \"ubrzanje\"]",
+          "context": "Vaša stvarna karijera postaće očigledna u mogućnostima koje vam se otvaraju brzim kretanjem."
+        }
+      },
+      "nineofwands": {
+        "position1": {
+          "upright": "Devet štapića simbolizuje otpornost i odlučnost. Vi uspevate da preživite uprkos poteškoćama u vašoj karijeri.",
+          "reversed": "Preokrećeno devet štapića može ukazivati na izgaranje i tendenciju da se odrekne. Možda ćete biti preopterećeni.",
+          "keywords": "[\"izdržljivost\", \"stabilnost\", \"otpornost\", \"rat\", \"zaštita\"]",
+          "context": "Vaša stvarna karijera pojavljuje se kada se odupirete bez odustajanja i prikupite snagu."
+        }
+      },
+      "tenofwands": {
+        "position1": {
+          "upright": "Deset štapića ukazuje na povećane opterećenja i odgovornosti. Možda ste u karijeri zauzeli težak teret.",
+          "reversed": "Okrećeno deset štapića vam govori da biste se trebali osloboditi nepotrebnih odgovornosti. Teret koji vas nosite troši.",
+          "keywords": "[\"odgovornost\", \"opteretiti\", \"naprezanje\", \"trud\", \"izdržljivost\"]",
+          "context": "Vaša stvarna karijera treba da vam donese pojeljne odgovornosti, a ne teške opterećenja."
+        }
+      },
+      "pageofwands": {
+        "position1": {
+          "upright": "Princ štapiće simbolizuje radoznalost, otkriće i inspiraciju. Nova prilika ili proces učenja vas očekuje u vašoj karijeri.",
+          "reversed": "Okolišteni princ štapiće može ukazivati na gubitak mogućnosti zbog brzog blede entuzijazma ili nepažnje.",
+          "keywords": "[\"radoznalost\", \"inspiracija\", \"otkriće\", \"učenje\", \"početak\"]",
+          "context": "Vaša istinska karijera leži u novim počecima koji neguju vaš duh otkrića."
+        }
+      },
+      "knightofwands": {
+        "position1": {
+          "upright": "Vitez štapića simbolizuje delovanje sa strašću i hrabrošću. Možda ćete biti uzbuđeni zbog nove staze u karijeri.",
+          "reversed": "Vraćeni vitez štapiće ukazuje na rizik od osiromaše ili glume bez pravca.",
+          "keywords": "[\"strast\", \"hrabrost\", \"avantura\", \"pokret\", \"energija\"]",
+          "context": "Vaša istinska karijera će zasjati kada vas oduševljeno sledi strast."
+        }
+      },
+      "queenofwands": {
+        "position1": {
+          "upright": "Kraljica štapića simbolizuje samopouzdanje, harizmu i energiju liderstva. Snažno se tvrdite u karijeru.",
+          "reversed": "Kraljica štapića obrnuta može ukazivati na nesigurnost ili poteškoće izražavajući sebe.",
+          "keywords": "[\"rukovodstvo\", \"poverenje\", \"karizma\", \"inspiracija\", \"snaga\"]",
+          "context": "Vaša istinska karijera biće otkrivena kada otkrijete svoju unutrašnju snagu i liderstvo."
+        }
+      },
+      "kingofwands": {
+        "position1": {
+          "upright": "Kralj štapića simbolizuje vizionarno rukovodstvo i odvažne odluke. Nosite snažnu energiju liderstva u karijeri.",
+          "reversed": "Prekoračeni kralj štapića može ukazivati na opresivne stavove ili rukovodstvo bez smera.",
+          "keywords": "[\"vizija\", \"rukovodstvo\", \"hrabrost\", \"odluka\", \"snaga\"]",
+          "context": "Vaša stvarna karijera je staza u kojoj vi kažete svoju viziju sa odlučnošću."
+        }
+      },
+      "aceofpentacles": {
+        "position1": {
+          "upright": "ACE Of Pentacles je kartica obilja, prilika i solidan početak. Novi posao, prihod ili pouzdan put mogu se otvoriti u vašoj karijeri.",
+          "reversed": "Reversed Ace Pentaklova ukazuje na propuštene mogućnosti ili finansijsku nesigurnost. Možda vaš trenutni put ne nudi stabilnost.",
+          "keywords": "[\"prilika\", \"dosta\", \"početak\", \"Finansijska sigurnost\", \"potencijal\"]",
+          "context": "Vaša stvarna karijera leži u novom početku koji vam daje stabilnost i opipljiv prihod."
+        }
+      },
+      "twoofpentacles": {
+        "position1": {
+          "upright": "Dva pentaklama simbolizuje ravnotežu i harmoniju. Možda ćete žonglirati više od jedne odgovornosti u karijeri.",
+          "reversed": "Ograničeno dva pentaklova ukazuje na preopterećenje ili nemogućnost upravljanja prioritetima.",
+          "keywords": "[\"ravnoteža\", \"raport\", \"fleksibilnost\", \"multitasking\", \"uprava\"]",
+          "context": "Vaša stvarna karijera otkriva se gde možete upravljati svojim odgovornostima na uravnotežen način."
+        }
+      },
+      "threeofpentacles": {
+        "position1": {
+          "upright": "Tri pentaklova znači saradnja i savladavanje. Izgradite nešto dragoceno u svojoj karijeri kroz timski rad.",
+          "reversed": "Tri preokrenuta Penteksa mogu ukazivati na nesklad ili nedovoljno uvažavanje nečijih napora.",
+          "keywords": "[\"partnerstvo\", \"savladav\", \"uspeh\", \"timski rad\", \"učenje\"]",
+          "context": "Vaša istinska karijera će blistati gde se vaš trud vredi i gradite zajedno."
+        }
+      },
+      "fourofpentacles": {
+        "position1": {
+          "upright": "Četiri pentaklama simboliziraju poverenje i vlasništvo. Možda tražite stabilnost u karijeri i želite da zaštitite ono što ste postigli.",
+          "reversed": "Prekoračenje četvoro pentakla mogu ukazivati na to da delujete iz prekomerne kontrole ili straha od gubitka.",
+          "keywords": "[\"poverenje\", \"zaštita\", \"Finansijska stabilnost\", \"kontrola\", \"posesivnost\"]",
+          "context": "Vaša stvarna karijera treba da vam pruži samopouzdanje, a nude i prilika za rast."
+        }
+      },
+      "fiveofpentacles": {
+        "position1": {
+          "upright": "Pet stanovnika simbolizuje teškoće i uskraćenost. Možda ćete doživljavati anksioznost ili privremeni gubici u vašoj karijeri.",
+          "reversed": "Otkriveni Pet stanovnika ukazuje na proces pronalaženja podrške i oporavka.",
+          "keywords": "[\"poteškoće\", \"gubitak\", \"usamljenost\", \"Finansijske poteškoće\", \"podrška\"]",
+          "context": "Vaša istinska karijera biće otkrivena tamo gde možete prevazići poteškoće sa solidarnošću."
+        }
+      },
+      "sixofpentacles": {
+        "position1": {
+          "upright": "Šest stanovnika simbolizuje velikodušnost i međusobnu podršku. Saradnja i deljenje ističu se u svojoj karijeri.",
+          "reversed": "Ukinuta šest pentakla može ukazivati na neuravnotežene odnose ili nejednaku deljenje.",
+          "keywords": "[\"velikodušnost\", \"deljenje\", \"pomoći\", \"ravnoteža\", \"podrška\"]",
+          "context": "Vaša stvarna karijera je ona izgrađena na fer deli i obostranoj podršci."
+        }
+      },
+      "sevenofpentacles": {
+        "position1": {
+          "upright": "Sedam pentakala je karta strpljenja i dugoročni napor. Vremenom ćete biti nagrađeni za svoje napore u karijeri.",
+          "reversed": "Okrećeno sedam pentakla može ukazivati na nestrpljenje ili pogrešne investicije.",
+          "keywords": "[\"strpljenje\", \"rad\", \"investicija\", \"čekanje\", \"napredak\"]",
+          "context": "Vaša stvarna karijera je put koju ste gradili sa strpljenjem i to će s vremenom biti voće."
+        }
+      },
+      "eightofpentacles": {
+        "position1": {
+          "upright": "Osam stanovnika simbolizuje majstorstvo i posvećenost. Trudite se da se poboljšate i specijalizujete u svojoj karijeri.",
+          "reversed": "Osvećeno osam stanovnika može ukazivati na neefikasnost zbog ravnodušnosti ili nepažnje.",
+          "keywords": "[\"savladav\", \"učenje\", \"rad\", \"praktičan\", \"razvoj\"]",
+          "context": "Vaša istinska karijera otkriva se tamo gde razvijate svoju ekspertizu sa predanošću."
+        }
+      },
+      "nineofpentacles": {
+        "position1": {
+          "upright": "Devet stanovnika simbolizuje nezavisnost, samopouzdanje i materijalni uspeh. Vidite nagradu sopstvenih napora u vašoj karijeri.",
+          "reversed": "Devet preokretanog pentakla može ukazivati na zavisnost ili prekomernu potragu za luksuzom.",
+          "keywords": "[\"nezavisnost\", \"poverenje\", \"uspeh\", \"Finansijska sigurnost\", \"dosta\"]",
+          "context": "Vaša istinska karijera postaće jasna kada postignete uspeh dok održavate svoju nezavisnost."
+        }
+      },
+      "tenofpentacles": {
+        "position1": {
+          "upright": "Deset stanovnika simbolizuje vrednosti trajnog uspeha, porodice i zaostavštine. U vašoj karijeri je izgrađeno zadovoljstvo na čvrstom temeljima.",
+          "reversed": "Deset preokretanog pentakla može ukazivati na okruženje nestabilnosti ili nesigurnosti.",
+          "keywords": "[\"stalnost\", \"uspeh\", \"Finansijska sigurnost\", \"baština\", \"stabilnost\"]",
+          "context": "Vaša stvarna karijera je put koji pruža dugoročno obezbeđenje i zadovoljstvo."
+        }
+      },
+      "pageofpentacles": {
+        "position1": {
+          "upright": "Princ pentaklama simbolizuje učenje, priliku i otkriće. Učenje nove veštine ili primanje obuke može da otvori vrata za vas u vašoj karijeri.",
+          "reversed": "Princ Pentacles obrnut može ukazivati na nepažnju ili nedostatak motivacije.",
+          "keywords": "[\"učenje\", \"prilika\", \"otkriće\", \"razvodnik\", \"potencijal\"]",
+          "context": "Vaša stvarna karijera će cvjetati kada dosledno primenite ono što ste naučili."
+        }
+      },
+      "knightofpentacles": {
+        "position1": {
+          "upright": "Vitez pentaklama simbolizuje disciplinu, strpljenje i odlučnost. Stalno napredujete u svojoj karijeri.",
+          "reversed": "Vitez pentaklova obrnut može ukazivati na monotoniju ili nefleksibilnost.",
+          "keywords": "[\"stabilnost\", \"strpljenje\", \"disciplina\", \"trud\", \"poverenje\"]",
+          "context": "Vaša stvarna karijera je put u kojoj ćete postići uspeh u redovnom i disciplinovom napretku."
+        }
+      },
+      "queenofpentacles": {
+        "position1": {
+          "upright": "Kraljica pentakala simbolizuje plodnost, saosećanje i praktičnost. Možete da preuzmete i produktivnu i podržavajuću ulogu u karijeri.",
+          "reversed": "Kraljica obrnutog preokreta može ukazivati na prekomerni materijalizam ili zanemarivanje samo-nege.",
+          "keywords": "[\"obilje\", \"saosećanje\", \"praktičnost\", \"produktivnost\", \"podrška\"]",
+          "context": "Vaša istinska karijera je način na koji pokazujete i svoju produktivnost i vaše saosećanje."
+        }
+      },
+      "kingofpentacles": {
+        "position1": {
+          "upright": "Kralj stanovnika simbolizuje obilje, poverenje i rukovodstvo. U karijeri ste postigli stabilnost i uspeh.",
+          "reversed": "Prekoračeni kralj stanovnika može ukazivati na to da vas konzumira prekomerna kontrola ili materijalne ambicije.",
+          "keywords": "[\"dosta\", \"rukovodstvo\", \"poverenje\", \"materijalni uspeh\", \"stabilnost\"]",
+          "context": "Vaša stvarna karijera je put koju gradite sa vođstvom i obiljem svesti."
+        }
+      }
     }
   },
   "cards": {

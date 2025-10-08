@@ -3,38 +3,45 @@
 import type { TarotCard } from '@/types/tarot';
 import { createTarotReadingComponent } from '@/features/tarot/shared/components';
 import { createCareerConfig } from '@/features/tarot/shared/config';
-import { getCareerMeaningByCardAndPosition } from '@/features/tarot/lib/career/position-meanings-index';
+import { getI18nCareerMeaningByCardAndPosition } from '@/features/tarot/lib/career/position-meanings-index';
+import { useTranslations } from '@/hooks/useTranslations';
 
-const CareerReading = createTarotReadingComponent({
-  getConfig: () => createCareerConfig(),
-  interpretationEmoji: '💼',
-  readingType: 'CAREER_SPREAD_DETAILED', // Career için reading type belirt
-  getCardMeaning: (
-    card: TarotCard | null,
-    position: number,
-    isReversed: boolean
-  ) => {
-    if (!card) {
-      return '';
-    }
+export default function CareerReading(props: any) {
+  const { t } = useTranslations(); // Hook component içinde
 
-    const meaning = getCareerMeaningByCardAndPosition(
-      card,
-      position,
-      isReversed
-    );
+  const TarotComponent = createTarotReadingComponent({
+    getConfig: () => createCareerConfig(),
+    interpretationEmoji: '💼',
+    readingType: 'CAREER_SPREAD_DETAILED',
+    getCardMeaning: (
+      card: TarotCard | null,
+      position: number,
+      isReversed: boolean
+    ) => {
+      if (!card) {
+        return '';
+      }
 
-    if (!meaning) {
-      return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
-    }
+      // i18n destekli fonksiyon + t parametresi
+      const meaning = getI18nCareerMeaningByCardAndPosition(
+        card.name,
+        position,
+        t
+      );
 
-    // Context bilgisini de içeren obje döndür
-    return {
-      interpretation: isReversed ? meaning.reversed : meaning.upright,
-      context: meaning.context,
-      keywords: meaning.keywords || [],
-    };
-  },
-});
+      if (!meaning) {
+        // Fallback
+        return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
+      }
 
-export default CareerReading;
+      const interpretation = isReversed ? meaning.reversed : meaning.upright;
+      return {
+        interpretation,
+        context: meaning.context || '',
+        keywords: meaning.keywords || [],
+      };
+    },
+  });
+
+  return <TarotComponent {...props} />;
+}

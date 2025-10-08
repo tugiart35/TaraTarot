@@ -24,7 +24,7 @@ const SPREAD_NAME = 'career';           // 'love', 'career', 'money', vb.
 const POSITION_NUMBER = 1;            // 1, 2, 3, 4, vb.
 const FILE_NAME = 'position-1-gercekten-istedigim-kariyer-bumu.ts';  // position dosyasının adı
 const ARRAY_NAME = `position${POSITION_NUMBER}Meanings`;  // position2Meanings, vb.
-const TYPE_NAME = `CareerPositionMeaning`;  // LovePosition1Meaning, vb.
+const TYPE_NAME = `CareerPosition1Meaning`;  // LovePosition1Meaning, vb.
 
 // ═══════════════════════════════════════════════════════════
 
