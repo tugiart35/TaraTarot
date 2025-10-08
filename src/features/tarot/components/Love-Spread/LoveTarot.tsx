@@ -1,35 +1,44 @@
 'use client';
 
 import type { TarotCard } from '@/types/tarot';
+import { useTranslations } from '@/hooks/useTranslations';
 import { createTarotReadingComponent } from '@/features/tarot/shared/components';
 import { createLoveConfig } from '@/features/tarot/shared/config';
-import { getMeaningByCardAndPosition } from '@/features/tarot/lib/love/position-meanings-index';
+import { getI18nMeaningByCardAndPosition } from '@/features/tarot/lib/love/position-meanings-index';
 
-const LoveReading = createTarotReadingComponent({
-  getConfig: () => createLoveConfig(),
-  interpretationEmoji: '❤️',
-  getCardMeaning: (
-    card: TarotCard | null,
-    position: number,
-    isReversed: boolean
-  ) => {
-    if (!card) {
-      return '';
-    }
+export default function LoveReading(props: any) {
+  // i18n hook'unu component içinde kullan
+  const { t } = useTranslations();
 
-    const meaning = getMeaningByCardAndPosition(card.name, position);
+  // TarotComponent'i hook'ların içinde oluştur
+  const TarotComponent = createTarotReadingComponent({
+    getConfig: () => createLoveConfig(),
+    interpretationEmoji: '❤️',
+    getCardMeaning: (
+      card: TarotCard | null,
+      position: number,
+      isReversed: boolean
+    ) => {
+      if (!card) {
+        return '';
+      }
 
-    if (!meaning) {
-      return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
-    }
+      // i18n destekli anlam al - t fonksiyonu artık erişilebilir!
+      const meaning = getI18nMeaningByCardAndPosition(card.name, position, t);
 
-    // Context bilgisini de döndür
-    const interpretation = isReversed ? meaning.reversed : meaning.upright;
-    return {
-      interpretation,
-      context: meaning.context || '',
-    };
-  },
-});
+      if (!meaning) {
+        // Fallback: kartın kendi Türkçe anlamını kullan
+        return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
+      }
 
-export default LoveReading;
+      // Context bilgisini de döndür
+      const interpretation = isReversed ? meaning.reversed : meaning.upright;
+      return {
+        interpretation,
+        context: meaning.context || '',
+      };
+    },
+  });
+
+  return <TarotComponent {...props} />;
+}

@@ -11,6 +11,7 @@ Dosyanın amacı:
 - Pozisyona, karta, anahtar kelimeye veya gruba göre anlam arama ve filtreleme fonksiyonları sunar.
 - Pozisyon başlıkları, açıklamaları ve ilgili meta verileri içerir.
 */
+'use client';
 
 // Bu dosya, Aşk açılımında tüm pozisyonlar için kart anlamlarını birleştirir.
 // Her pozisyon (1-4) için özel kart anlamlarını içerir ve kolay erişim sağlar.
