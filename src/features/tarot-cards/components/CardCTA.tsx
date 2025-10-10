@@ -1,26 +1,40 @@
+import { CardContent } from '@/types/tarot-cards';
+
 interface CardCTAProps {
+  content: CardContent;
   locale: 'tr' | 'en' | 'sr';
 }
 
-export function CardCTA({ locale }: CardCTAProps) {
+export function CardCTA({ content, locale }: CardCTAProps) {
+  const { cta } = content;
+
+  // Default CTA metinleri - eğer JSON'da yoksa
+  const defaultCTA = {
+    main: locale === 'tr' 
+      ? 'Kartınızı Çekin ve Keşfedin'
+      : locale === 'en'
+      ? 'Draw Your Card and Discover'
+      : 'Izvuci Svoju Kartu i Otkrij',
+    micro: locale === 'tr'
+      ? 'Ücretsiz tarot okuması ile kendi kartlarınızı çekin ve geleceğinizi keşfedin'
+      : locale === 'en'
+      ? 'Draw your own cards with a free tarot reading and discover your future'
+      : 'Izvuci svoje karte besplatnim tarot čitanjem i otkrij svoju budućnost'
+  };
+
+  const ctaMain = cta?.main || defaultCTA.main;
+  const ctaMicro = cta?.micro || defaultCTA.micro;
+
   return (
     <section className='py-16 px-4 bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 text-white'>
       <div className='max-w-4xl mx-auto text-center'>
-        {/* CTA Header */}
+        {/* CTA Header - Karttan gelen özel CTA metinleri veya default */}
         <div className='mb-8'>
           <h3 className='text-3xl lg:text-4xl font-bold mb-4'>
-            {locale === 'tr'
-              ? 'Kartınızı Çekin ve Keşfedin'
-              : locale === 'en'
-                ? 'Draw Your Card and Discover'
-                : 'Izvuci Svoju Kartu i Otkrij'}
+            {ctaMain}
           </h3>
           <p className='text-xl text-purple-200 max-w-2xl mx-auto'>
-            {locale === 'tr'
-              ? 'Ücretsiz tarot okuması ile kendi kartlarınızı çekin ve geleceğinizi keşfedin'
-              : locale === 'en'
-                ? 'Draw your own cards with a free tarot reading and discover your future'
-                : 'Izvuci svoje karte besplatnim tarot čitanjem i otkrij svoju budućnost'}
+            {ctaMicro}
           </p>
         </div>
 

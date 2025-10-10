@@ -28,14 +28,14 @@ export function generateMetaTags(config: SEOConfig) {
   } = config;
 
   return {
-    title: `${title} | Mystic Tarot`,
+    title: `${title} | Büşbüşkimki Tarot ve Numeroloji`,
     description,
     keywords: keywords.join(', '),
     openGraph: {
-      title: `${title} | Mystic Tarot`,
+      title: `${title} | Büşbüşkimki Tarot ve Numeroloji`,
       description,
       url,
-      siteName: 'Mystic Tarot',
+      siteName: 'Büşbüşkimki Tarot ve Numeroloji',
       images: [
         {
           url: image,
@@ -49,7 +49,7 @@ export function generateMetaTags(config: SEOConfig) {
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${title} | Mystic Tarot`,
+      title: `${title} | Büşbüşkimki Tarot ve Numeroloji`,
       description,
       images: [image],
     },
@@ -179,7 +179,7 @@ export function generateStructuredData(config: SEOConfig) {
     inLanguage: config.locale,
     isPartOf: {
       '@type': 'WebSite',
-      name: 'Mystic Tarot',
+      name: 'Büşbüşkimki Tarot ve Numeroloji',
       url: 'https://mystictarot.com',
     },
     breadcrumb: {

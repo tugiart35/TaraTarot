@@ -27,6 +27,45 @@ interface BlogCardData {
       hidden_influences: string;
     };
   };
+  story: {
+    title: string;
+    description: string;
+    history: string;
+    historytitle: string;
+    history_message: string;
+    mystic_title: string;
+    mystic_message: string;
+    cultural_title: string;
+    cultural_message: string;
+  };
+  keywords: {
+    keywords_title: string;
+    keywords_message: string;
+    positive_title: string;
+    positive_message: string;
+    balance_title: string;
+    balance_message: string;
+    soul_title: string;
+    soul_message: string;
+  };
+  associations?: {
+    title: string;
+    astrology: string;
+    numerology: string;
+    element: string;
+    chakra: string;
+  };
+  card_combinations?: {
+    title: string;
+    combinations: Array<{
+      card: string;
+      meaning: string;
+    }>;
+  };
+  affirmations?: {
+    title: string;
+    affirmation_list: string[];
+  };
   cta: {
     main: string;
     micro: string;

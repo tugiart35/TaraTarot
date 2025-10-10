@@ -3,6 +3,9 @@ import { CardHero } from './CardHero';
 import { CardMeanings } from './CardMeanings';
 import { CardKeywords } from './CardKeywords';
 import { CardStory } from './CardStory';
+import { CardAssociations } from './CardAssociations';
+import { CardCombinations } from './CardCombinations';
+import { CardAffirmations } from './CardAffirmations';
 import { CardCTA } from './CardCTA';
 import { CardFAQ } from './CardFAQ';
 import { RelatedCards } from './RelatedCards';
@@ -61,11 +64,20 @@ export default function CardPage({ card, locale }: CardPageProps) {
       {/* Story Section */}
       <CardStory content={content} locale={locale} />
 
+      {/* Associations Section - YENİ */}
+      <CardAssociations content={content} locale={locale} />
+
+      {/* Card Combinations Section - YENİ */}
+      <CardCombinations content={content} locale={locale} />
+
+      {/* Affirmations Section - YENİ */}
+      <CardAffirmations content={content} locale={locale} />
+
       {/* FAQ Section */}
       <CardFAQ seo={seo} locale={locale} />
 
       {/* CTA Section */}
-      <CardCTA locale={locale} />
+      <CardCTA content={content} locale={locale} />
 
       {/* Related Cards Section */}
       <RelatedCards cards={relatedCards} locale={locale} />

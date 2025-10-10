@@ -2,47 +2,83 @@ import { TarotCard } from '@/types/tarot-cards';
 
 // Card SEO service for generating metadata
 export class CardSEO {
+  // Normalize URL for canonical consistency
+  private static normalizeUrl(url: string): string {
+    // Ensure https and remove www for consistency
+    let normalized = url.replace(/^https?:\/\/(www\.)?/, 'https://');
+    
+    // Remove trailing slash for SEO best practices
+    normalized = normalized.replace(/\/$/, '');
+    
+    return normalized;
+  }
+
   // Generate metadata for a card
   static generateMetadata(
     card: TarotCard,
     seo: any,
     locale: 'tr' | 'en' | 'sr'
   ) {
+    const baseUrl = this.normalizeUrl(
+      process.env.NEXT_PUBLIC_SITE_URL || 'https://busbuskimki.com'
+    );
+    
+    // Safe date handling with proper fallbacks
+    const publishedDate = card.createdAt?.toISOString() || new Date('2025-01-01').toISOString();
+    const modifiedDate = card.updatedAt?.toISOString() || publishedDate;
+    
     return {
       title: seo.metaTitle,
       description: seo.metaDescription,
-      canonical: seo.canonicalUrl,
+      // ✅ EKLE: keywords
+      keywords: Array.isArray(seo.keywords) 
+        ? seo.keywords.join(', ') 
+        : seo.keywords || '',
+      
       openGraph: {
         title: seo.metaTitle,
         description: seo.metaDescription,
         url: seo.canonicalUrl,
+        siteName: 'Büşbüşkimki Tarot ve Numeroloji', // ✅ DÜZELTİLDİ
         images: [
           {
             url: seo.ogImage,
             width: 1200,
             height: 630,
-            alt: card.englishName,
+            alt: `${card.turkishName || card.englishName} tarot kartı`, // ✅ EKLE
           },
         ],
         locale: locale === 'tr' ? 'tr_TR' : locale === 'en' ? 'en_US' : 'sr_RS',
         type: 'article',
+        // ✅ EKLE: Article metadata with safe fallbacks
+        publishedTime: publishedDate,
+        modifiedTime: modifiedDate,
       },
       twitter: {
         card: 'summary_large_image',
         title: seo.metaTitle,
         description: seo.metaDescription,
         images: [seo.twitterImage],
+        site: '@busbuskimki', // ✅ EKLE: Twitter handle'ınız
+        creator: '@busbuskimki', // ✅ EKLE
       },
       robots: {
         index: true,
         follow: true,
+        googleBot: {
+          index: true,
+          follow: true,
+          'max-video-preview': -1,
+          'max-image-preview': 'large',
+          'max-snippet': -1,
+        },
       },
       alternates: {
         canonical: seo.canonicalUrl,
         languages: {
-          tr: `/tr/kartlar/${card.slug?.tr || card.slug}`,
-          en: `/en/cards/${card.slug?.en || card.slug}`,
-          sr: `/sr/kartice/${card.slug?.sr || card.slug}`,
+          tr: `${baseUrl}/tr/kartlar/${card.slug?.tr || card.slug}`,
+          en: `${baseUrl}/en/cards/${card.slug?.en || card.slug}`,
+          sr: `${baseUrl}/sr/kartice/${card.slug?.sr || card.slug}`,
         },
       },
     };
@@ -54,14 +90,19 @@ export class CardSEO {
     seo: any,
     locale: 'tr' | 'en' | 'sr'
   ) {
-    const baseUrl =
-      process.env.NEXT_PUBLIC_SITE_URL || 'https://busbuskimki.com';
+    const baseUrl = this.normalizeUrl(
+      process.env.NEXT_PUBLIC_SITE_URL || 'https://busbuskimki.com'
+    );
     const cardName =
       locale === 'tr'
         ? card.turkishName
         : locale === 'en'
           ? card.englishName
           : card.serbianName;
+
+    // Safe date handling with proper fallbacks
+    const publishedDate = card.createdAt?.toISOString() || new Date('2025-01-01').toISOString();
+    const modifiedDate = card.updatedAt?.toISOString() || publishedDate;
 
     return {
       '@context': 'https://schema.org',
@@ -84,8 +125,8 @@ export class CardSEO {
           url: `${baseUrl}/logo.png`,
         },
       },
-      datePublished: card.createdAt?.toISOString() || new Date().toISOString(),
-      dateModified: card.updatedAt?.toISOString() || new Date().toISOString(),
+      datePublished: publishedDate,
+      dateModified: modifiedDate,
       mainEntityOfPage: {
         '@type': 'WebPage',
         '@id': seo.canonicalUrl,
@@ -128,8 +169,9 @@ export class CardSEO {
     card: TarotCard,
     locale: 'tr' | 'en' | 'sr'
   ) {
-    const baseUrl =
-      process.env.NEXT_PUBLIC_SITE_URL || 'https://busbuskimki.com';
+    const baseUrl = this.normalizeUrl(
+      process.env.NEXT_PUBLIC_SITE_URL || 'https://busbuskimki.com'
+    );
     const cardName =
       locale === 'tr'
         ? card.turkishName
@@ -173,8 +215,9 @@ export class CardSEO {
 
   // Generate hreflang tags
   static generateHreflangTags(card: TarotCard) {
-    const baseUrl =
-      process.env.NEXT_PUBLIC_SITE_URL || 'https://busbuskimki.com';
+    const baseUrl = this.normalizeUrl(
+      process.env.NEXT_PUBLIC_SITE_URL || 'https://busbuskimki.com'
+    );
 
     return [
       {
