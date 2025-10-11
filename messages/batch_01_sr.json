@@ -1,0 +1,1406 @@
+{
+  "dashboard": {
+    "errors": {
+      "statsLoadFailed": "Nije mogao da učita statistiku",
+      "creditRefreshFailed": "Kreditni bilans se ne može obnoviti",
+      "loadError": "Došlo je do greške prilikom učitavanja komponenti nadzorne table."
+    },
+    "sections": {
+      "welcome": "Dobrodošli",
+      "statistics": "Statistika",
+      "creditPackages": "Kreditni paketi",
+      "profileManagement": "Profil upravljanje profilom",
+      "recentActivity": "Najnovije aktivnosti"
+    },
+    "ariaLabel": {
+      "profileOptions": "Opcije upravljanja profilom"
+    },
+    "creditBalanceRefreshed": "Kreditni bilans se ne može obnoviti",
+    "time": {
+      "day": "dan",
+      "days": "dan",
+      "month": "mesec",
+      "months": "mesec",
+      "year": "godina",
+      "years": "godina"
+    },
+    "userLevels": {
+      "master": "Stručnjak",
+      "experienced": "Iskusan",
+      "intermediate": "U sredini",
+      "beginner": "Početak",
+      "new": "Nov"
+    },
+    "level": "Navođenje",
+    "creditPackages": "Kreditni paketi",
+    "kullanimlar": "Upotreba",
+    "iadeler": "Povraćaj novca",
+    "bonuslar": "Bonusi",
+    "kredi-gecmisi-yuklenirken": "Došlo je do greške prilikom učitavanja kreditne istorije",
+    "bonus": "Bonus",
+    "iade": "Vratiti se",
+    "kullanim": "Upotreba",
+    "tarih": "Istorija",
+    "miktar": "Iznos",
+    "aciklama": "Objašnjenje",
+    "dashboard": "komandna tabla",
+    "busbuskimki": "Busbuskimki",
+    "kisisel-dashboard-sayfasi": "Stranica za ličnu kontrolnu tablicu",
+    "personal-dashboard-page": "Stranica za ličnu kontrolnu tablicu",
+    "organization": "organizacija",
+    "audience": "Publika",
+    "numeroloji-analizi": "Analiza numerologije",
+    "ask-acilimi": "Ljubavna ekspanzija",
+    "kariyer-okumasi": "čitanje u karijeri",
+    "genel-okuma": "opšte čitanje",
+    "oncelikli-destek": "Prioritetna podrška",
+    "profil-bilgileri-yuklenemedi": "Neuspešno učitavanje informacija o profilu",
+    "tarot-okumalariniz-icin": "Kupite kreditne kredite koje su vam potrebne za očitanja Tarot",
+    "kredileriniz-hemen-hesabiniza": "Vaši krediti se odmah dodaju na vaš račun",
+    "buyuk-paketlerde-ekstra": "Zaradite dodatni kredit na velikim paketima",
+    "okumalarim": "Moja čitanja",
+    "tum-mistik-deneyimleriniz": "Sva vaša mistična iskustva",
+    "numeroloji": "Numerologija",
+    "goruntule": "Pregledan",
+    "profil-bilgilerinizi-duzenlemek": "Kontrolna tabla za uređivanje podataka o profilu",
+    "bildirimler": "Obaveštenja",
+    "gizlilik": "Sigurnost",
+    "guvenlik": "Sigurnost",
+    "tarot-veya-numeroloji": "Obaveštavajte se kada je vaša tarot ili brojčano čitanje numerologije završeno",
+    "kredi-bakiyeniz-dustugunde": "Budite obavešteni kada vaše kreditno stanje opadne",
+    "aylik-numeroloji-ve": "Dobijte mesečnu numerologiju i Tarot Digest",
+    "ozel-indirimler-ve": "Biti obavešten o posebnim popustima i kampanjama",
+    "profilinizi-diger-kullanicilar": "Neka drugi korisnici vide vaš profil",
+    "okuma-gecmisinizi-diger": "Neka drugi korisnici vide vašu istoriju čitanja",
+    "istatistiklerinizi-diger-kullanicilar": "Neka drugi korisnici vide vašu statistiku",
+    "hizmet-kalitesini-artirmak": "Prikupite anonimne podatke da biste poboljšali kvalitet usluge",
+    "hesap-guvenliginiz-icin": "Ažurirajte lozinku za sigurnost na vašem nalogu",
+    "mevcut-sifrenizi-girin": "Unesite trenutnu lozinku",
+    "yeni-sifrenizi-girin": "Unesite svoju novu lozinku",
+    "yeni-sifrenizi-tekrar": "Ponovo unesite svoju novu lozinku",
+    "iptal": "Otkazati",
+    "indir": "Preuzeti",
+    "hesabinizi-ve-tum": "Trajno izbrišite svoj račun i sve svoje podatke",
+    "henuz-yok": "još",
+    "bilinmeyen": "Nepoznat",
+    "pazartesi": "Ponedeljak",
+    "sali": "U utorak",
+    "carsamba": "Sreda",
+    "persembe": "U četvrtak",
+    "cuma": "Petak",
+    "cumartesi": "U subotu",
+    "pazar": "Nedelja",
+    "kullanici": "Korisnik",
+    "mistik-yolculugunuzda-ilerlemenizi": "Pratite svoj napredak na svom mističnom putovanju",
+    "yenile": "Osvežiti",
+    "numerolojik-rehberliginiz-ve": "Dubinska analiza vaših numeričkih smernica i navika čitanja",
+    "desenler": "uzorak",
+    "bu-ay": "ovog meseca",
+    "ortalama": "Prosek",
+    "en-uzun": "najduže",
+    "aktif-seri": "Aktivna serija",
+    "kredi-maliyeti": "Kreditni trošak",
+    "premium-okuma": "premium čitanje",
+    "artis": "Povećanje",
+    "azalis": "smanjiti se",
+    "yuksek": "Visoko",
+    "orta": "U sredini",
+    "dusuk": "Nizak",
+    "isim": "Naziv",
+    "belirtilmemis": "Neodređen",
+    "soyisim": "prezime",
+    "numeroloji-hesaplamalari-icin": "Puno ime i prezime preporučuju se za računanje Numerologije",
+    "kisilik": "Ličnost",
+    "olgunluk": "Zrelost",
+    "henuz-okuma-yapmadiniz": "Još niste pročitali",
+    "favori-diziliminiz-henuz": "Vaša omiljena linija još nije određena",
+    "gunluk-okuma-aliskanligi": "Usredsredite se na izgradnju svakodnevne navike za čitanje",
+    "bu-ay-daha": "Ciljeve možete da pređete čitajući više ovog meseca",
+    "daha-ekonomik-okuma": "Možete isprobati ekonomičnije tipove čitanja",
+    "kredi-kullaniminiz-verimli": "Vaša upotreba kredita izgleda efikasno",
+    "memberSince": "Postati član",
+    "readings": "Očitavanja",
+    "expert": "Stručnjak",
+    "intermediate": "U sredini",
+    "beginner": "Početak",
+    "signOut": "Odjaviti se"
+  },
+  "accessibility": {
+    "goToPage": "idi na stranicu",
+    "languageOptions": "Jezičke opcije",
+    "openLanguageMenu": "Meni za odabir na otvorenom jeziku",
+    "selectLanguage": "Izaberite jezik",
+    "skipToMain": "Preskočite na glavni sadržaj"
+  },
+  "admin": {
+    "errors": {
+      "packagePurchaseError": "Došlo je do greške prilikom kupovine paketa. Pokušajte ponovo.",
+      "positionRequired": "Morate dodati barem jednu poziciju",
+      "spreadSaveError": "Došlo je do greške prilikom čuvanja postavke"
+    },
+    "success": {
+      "profileUpdated": "Profil je uspešno ažuriran!"
+    }
+  },
+  "auth": {
+    "audit": {
+      "loginFailed": "Pokušaj prijave nije uspeo",
+      "loginSuccess": "Uspešna prijava",
+      "logout": "Odjavljeno",
+      "passwordChanged": "Lozinka je promenjena",
+      "paymentMethodAdded": "Dodato je način plaćanja",
+      "paymentMethodRemoved": "Način plaćanja je uklonjeno",
+      "profileUpdated": "Profil je ažuriran",
+      "securityAlert": "Upozorenje o bezbednosti",
+      "subscriptionCanceled": "Pretplata je otkazana",
+      "subscriptionCreated": "Stvorena pretplata",
+      "suspiciousActivity": "Otkrivena je sumnjiva aktivnost"
+    },
+    "errors": {
+      "allLanguagesRequired": "Unesite ime na svim jezicima",
+      "apiKeyCreateError": "Došlo je do greške prilikom kreiranja API ključa",
+      "apiKeyUpdateError": "Greška prilikom ažuriranja API ključa",
+      "loginRequired": "Molimo prijavite se",
+      "userSelectionRequired": "Izaberite korisnika"
+    },
+    "notice": {
+      "accountCreated": "Račun je uspešno kreiran",
+      "checkEmail": "Proverite svoju adresu e-pošte i potvrdite svoje članstvo",
+      "confirmationEmailSent": "Poslano potvrđivanje e-mail",
+      "confirmationFailed": "Potvrda e-pošte nije uspela",
+      "emailConfirmed": "Vaša adresa e-pošte je potvrđena! 100 kredita je dato kao poklon.",
+      "emailVerified": "Verifikovana adresa e-pošte",
+      "openEmailApp": "Otvorite aplikaciju za e-poštu",
+      "openGmail": "Otvoren u Gmail-u",
+      "openOutlook": "Otvoren u Outlook-u",
+      "openYahoo": "Otvoren u Iahoo Mail",
+      "passwordChanged": "Lozinka se uspešno promenila",
+      "passwordResetSent": "Poslano je link za resetovanje lozinke",
+      "profileUpdated": "Profil je ažuriran"
+    },
+    "page": {
+      "ageTooYoung": "Morate imati najmanje 13 godina",
+      "ageInvalid": "Unesite validno doba",
+      "backToLogin": "Povratak na stranicu za prijavu",
+      "birthDate": "Datum rođenja",
+      "birthDateMaxAge": "Unesite važeći datum rođenja",
+      "birthDateMinAge": "Korisnici pod 13 godina se ne mogu registrovati",
+      "birthDatePlaceholder": "Datum rođenja",
+      "birthDateRequired": "Datum rođenja",
+      "callbackFailed": "Prijava nije uspela. Pokušajte ponovo.",
+      "cancel": "Otkazati",
+      "checkingAuth": "🔍 Provera statusa prijave ...",
+      "checkingEmail": "📧 Provera e-pošte ...",
+      "confirmPassword": "Potvrda lozinke",
+      "confirmPasswordPlaceholder": "Ponovna lozinka",
+      "confirmPasswordRequired": "Potrebna potvrda lozinke",
+      "databaseError": "Došlo je do greške baze podataka",
+      "email": "E-mail",
+      "emailInvalid": "Unesite važeću adresu e-pošte",
+      "emailNotConfirmed": "Adresa e-pošte nije potvrđena",
+      "emailPlaceholder": "Vaša adresa e-pošte",
+      "emailRequired": "Potrebna adresa e-pošte",
+      "errorOccurred": "Došlo je do greške",
+      "facebookSignIn": "Prijavite se sa Facebook-om",
+      "facebookSignUp": "Prijavite se sa Facebook-om",
+      "female": "Žena",
+      "firstName": "Naziv",
+      "forgotPassword": "Zaboravio sam lozinku",
+      "gender": "Rod",
+      "genderFemale": "Žena",
+      "genderMale": "Muško",
+      "genderOther": "Drugi",
+      "genderPlaceholder": "Izaberite rod",
+      "genderPreferNotToSay": "Ne želim da preciziram",
+      "genderRequired": "Potreban je izbor polova",
+      "googleSignIn": "Prijavite se sa Google-om",
+      "googleSignUp": "Prijavite se sa Google-om",
+      "hasAccount": "Već imate nalog? Prijaviti se",
+      "invalidCredentials": "Nevažeća e-pošta ili lozinka",
+      "journeyStart": "Započnite putovanje",
+      "lastName": "Prezime",
+      "loggingIn": "🔐 Prijavljivanje ...",
+      "login": "Prijaviti se",
+      "loginSubtitle": "Prijavite se na svoj račun",
+      "loginTitle": "Prijaviti se",
+      "male": "Muško",
+      "mysticalEntry": "Ulaz u mistični svet",
+      "nameMinLength": "Ime mora biti najmanje 2 znaka",
+      "namePlaceholder": "Naziv",
+      "nameRequired": "Potrebno je ime",
+      "noAccount": "Nemate račun? Prijaviti se",
+      "orContinueWith": "ili nastaviti sa",
+      "other": "Drugi",
+      "password": "Lozinka",
+      "passwordInvalid": "Lozinka je nevažeća",
+      "passwordMinLength": "Lozinka mora biti najmanje 6 znakova",
+      "passwordMismatch": "Lozinke se ne podudaraju",
+      "passwordPlaceholder": "Vaša lozinka",
+      "passwordRequired": "Potrebna lozinka",
+      "passwordsNotMatch": "Lozinke se ne podudaraju",
+      "passwordTooShort": "Lozinka mora biti najmanje 6 znakova",
+      "processing": "⏳ Obrada ...",
+      "redirecting": "Preusmeravanje na stranicu za prijavu ...",
+      "register": "Prijaviti se",
+      "registerSubtitle": "Kreirajte novi nalog",
+      "registerTitle": "Prijaviti se",
+      "registering": "📝 Registracija se stvara ...",
+      "rememberMe": "Zapamti me",
+      "resetPassword": "Resetujte lozinku",
+      "resetPasswordEmailSent": "Link za resetovanje lozinke poslato je na vašu adresu e-pošte",
+      "resetPasswordError": "Veza za resetovanje lozinke nije mogla biti poslata",
+      "resetPasswordSubtitle": "Unesite svoju adresu e-pošte i poslaćemo vam link za resetovanje lozinke",
+      "resetPasswordTitle": "Resetovanje lozinke",
+      "selectGender": "Izaberite rod",
+      "sendResetEmail": "Pošaljite resetovanje e-pošte",
+      "signIn": "🔮 Prijava",
+      "signUp": "✨ Prijavite se",
+      "successLogin": "Prijavite se uspešno! Preusmeravanje ...",
+      "successRegister": "Registracija uspešna! Proverite svoju e-poštu.",
+      "surnameMinLength": "Prezime mora biti najmanje 2 znaka",
+      "surnamePlaceholder": "Prezime",
+      "surnameRequired": "Potrebno je prezime",
+      "userAlreadyExists": "Ova adresa e-pošte je već registrovana",
+      "validating": "🔍 Provera ...",
+      "waiting": "⏳ Čekanje ..."
+    },
+    "permissions": {
+      "accessDenied": "Niste ovlašćeni da pristupite ovoj stranici",
+      "adminOnly": "Ova funkcija je samo za administratore",
+      "contactAdmin": "Kontaktirajte administratora",
+      "insufficientPermissions": "Nemate dovoljno dozvola za ovu operaciju",
+      "loginRequired": "Morate biti prijavljeni da biste pristupili ovoj stranici",
+      "premiumRequired": "Ova funkcija je za premium članove",
+      "subscriptionRequired": "Pretplata potrebna za ovu funkciju",
+      "upgradeAccount": "Nadogradite svoj račun"
+    },
+    "pwa": {
+      "backgroundSync": "Pozadinska sinhronizacija",
+      "enableNotifications": "Omogući obaveštenja",
+      "installButton": "Upload",
+      "installDescription": "Dodajte aplikaciju na početni ekran za brži pristup",
+      "installLater": "Kasnije",
+      "installPrompt": "Dodajte aplikaciju na početni ekran",
+      "notificationDenied": "Dozvola za obaveštavanje je odbijena",
+      "notificationPermission": "Potrebna dozvola za obaveštavanje",
+      "offlineMessage": "Nemate internetsku vezu. Neke karakteristike mogu biti ograničene.",
+      "offlineMode": "Offline režim",
+      "pushNotifications": "Obaveštenja",
+      "syncWhenOnline": "Sinkronitoraće se kada ste na mreži"
+    },
+    "roles": {
+      "accessDenied": "Niste ovlašćeni da pristupite ovoj stranici",
+      "admin": "Izvršni",
+      "contactAdmin": "Kontaktirajte administratora",
+      "guest": "Gost",
+      "insufficientPermissions": "Nemate dovoljno dozvola za ovu operaciju",
+      "premium": "Član premium",
+      "upgradeAccount": "Nadogradite svoj račun",
+      "user": "Korisnik"
+    },
+    "security": {
+      "accountLocked": "Vaš račun je privremeno zaključan. Pokušajte ponovo kasnije.",
+      "biometricAuth": "Biometrijska autentifikacija",
+      "biometricFailed": "Biometrijska autentifikacija nije uspela",
+      "biometricNotAvailable": "Biometrijska autentifikacija nije dostupna",
+      "faceIdAuth": "Prijavite se sa ID-om lica",
+      "fingerprintAuth": "Prijavite se sa otiskom prsta",
+      "rateLimitExceeded": "Bilo je mnogo pokušaja. Pokušajte ponovo kasnije.",
+      "sessionExpired": "Vaša sesija je istekla. Ponovo se prijavite.",
+      "suspiciousActivity": "Otkrivena je sumnjiva aktivnost. Vaš račun je zaključan za sigurnost.",
+      "twoFactorCode": "verifikacioni kod",
+      "twoFactorCodeExpired": "Kod verifikacije je istekao",
+      "twoFactorCodeInvalid": "Nevažeći verifikacioni kod",
+      "twoFactorCodePlaceholder": "Unesite 6-cifreni kod za verifikaciju",
+      "twoFactorCodeSent": "Verifikacioni kod poslan na vašu adresu e-pošte",
+      "twoFactorRequired": "Potrebna je dve faktorske autentifikacije"
+    },
+    "signIn": "Prijaviti se",
+    "signOut": "Odjaviti se"
+  },
+  "cardGroups": {
+    "cups": "trofeji",
+    "majorArcana": "Majore Arcana",
+    "pentacles": "talismani",
+    "swords": "mačevi",
+    "wands": "štapić"
+  },
+  "cards": {
+    "altText": "Tarot kartica",
+    "reversed": "Nasuprot",
+    "reversedMeaning": "Reverse značenje:",
+    "upright": "Ravno",
+    "uprightMeaning": "Oznaka:",
+    "errors": {
+      "notFound": "Kartica nije pronađena",
+      "notFoundDescription": "Tarot kartica koju ste tražili nije pronađena."
+    }
+  },
+  "career": {
+    "data": {
+      "badgeText": "Karijera",
+      "cardDirections": {
+        "reversed": "Nasuprot",
+        "upright": "Ravno"
+      },
+      "detailedTitle": "Proširenje u karijeri - Detaljno lično čitanje",
+      "interpretationTitle": "Komentar ekspanzije u karijeri",
+      "readingFormats": {
+        "detailed": "glas",
+        "simple": "Jednostavan",
+        "written": "Napisano"
+      },
+      "simpleInterpretation": "Jednostavno čitanje - samo metar",
+      "simpleTitle": "Jednostavno čitanje",
+      "spreadName": "Širenje u karijeri",
+      "spreadTitle": "Širenje u karijeri"
+    },
+    "form": {
+      "birthDate": "Datum rođenja",
+      "clearAll": "Očistite sve kartice",
+      "communicationMethod": "Metoda komunikacije",
+      "concernQuestion": "Šta se najviše brinete o karijeri?",
+      "email": "E-mail",
+      "emailCommunication": "E-mail",
+      "emotionalQuestion": "Koje emocionalne prepreke doživljavate kada je u pitanju karijera?",
+      "firstName": "Naziv",
+      "lastName": "Prezime",
+      "personalInfo": "Lične informacije",
+      "phone": "Telefonski broj",
+      "placeholders": {
+        "concernQuestion": "Da li me moj posao čini srećnim, da li sam na pravom putu? ...",
+        "email": "emanprimer@email.com",
+        "emotionalQuestion": "Strah od neuspeha, pomisao da nije dovoljno dobra ...",
+        "firstName": "Vaše ime",
+        "lastName": "vaše prezime",
+        "understandingQuestion": "Kreativniji posao, radeći u inostranstvu, pokretanje vlastitim poslovima ..."
+      },
+      "questions": "Vaša pitanja u karijeri",
+      "saveAndOpen": "Sačuvajte i otvorite kartice",
+      "saving": "Snimanje ...",
+      "understandingQuestion": "Koje oblasti želite da bolje razumete u svojoj karijeri?",
+      "whatsappCommunication": "Vhatsapp"
+    },
+    "messages": {
+      "allCardsRequired": "Komentari se ne mogu kreirati bez odabira svih kartica.",
+      "configurationNotFound": "Konfiguracija ekspanzije karijere nije pronađena. Proverite datoteku TarotsPreads.ts.",
+      "formUnsavedWarning": "Obrazac je ispunjen, ali nije sačuvan. Jeste li sigurni da želite da prestanete?",
+      "interpretationGreeting": "Poštovani klijent, posebno pripremljena analiza za vašu karijeru i pitanje u karijeri \"{Pitanje}\":",
+      "interpretationTitle": "Širenje u karijeri",
+      "loginRequired": "Morate se prijaviti da biste pročitali.",
+      "readingSaveError": "Došlo je do greške prilikom čuvanja čitanja.",
+      "readingSavedSuccess": "Vaše čitanje je uspešno sačuvano!",
+      "selectReadingTypeFirst": "Prvo odaberite vrstu čitanja.",
+      "simpleReadingCompleted": "Jednostavno čitanje završeno!"
+    },
+    "modals": {
+      "aboutSpread": "O ekspanziji u karijeri",
+      "aboutSpreadText": "Ove 7 karte; To čini vidljivu vašu trenutnu situaciju, prednosti, prepreke i mogućnosti. Nudi mapu puta koja aktivira vaš unutrašnji potencijal - jasan i saosećajni most od danas do sutra.",
+      "cancel": "Otkazati",
+      "cardCountText": "Ukupno 7 kartica: (1) Trenutni status (2) Snage (3) Prepreke (4) Mogućnosti (5) Resursi / podrška (6) Mapa puta (7) Zaključak i preporuka.",
+      "cardCountTitle": "Broj karata",
+      "confirm": "Da, odobravam",
+      "continue": "Nastavljati",
+      "creditConfirm": "Odobrenje kredita",
+      "creditConfirmMessage": "Za ovu ekspanziju karijere koristiće se kredit. Jeste li sigurni da želite da nastavite?",
+      "detailedReading": "Čitanje naglas",
+      "detailedReadingText": "Snimite svoj komentar kao toplo glasovno snimanje. Posebno je pripremljen za vas; Možete preuzeti i slušati kad god želite.",
+      "infoTitle": "Širenje u karijeri",
+      "loveAttention": "Nakon snimanja čitanja, obično vam pošaljem vaš lični komentar u roku od 2-4 sata. Ova studija je samo za smernice samo; Konačni izbori su vaši.",
+      "loveAttentionInfo": "Ljubazna beleška",
+      "process": "Period",
+      "processing": "Obrada ...",
+      "redirecting": "💼 Preusmereni ste na početnu stranicu ...",
+      "saveReading": "Sačuvaj čitanje 💼",
+      "savingReading": "Snimanje ...",
+      "step1": "Unesite svoje lične podatke",
+      "step2": "Odgovorite na pitanja u karijeri",
+      "step3": "Izaberite i pregledajte 7 kartica",
+      "step4": "Sačuvaj čitanje; Dobijte rezultate na vašu e-poštu",
+      "successMessage": "Vaš put karijere je zabeleženo i analizirano. Možete da vidite svoje rezultate sa panela.",
+      "successTitle": "Čitanje sačuvane",
+      "writtenReading": "Pismeno čitanje",
+      "writtenReadingText": "Ako želite, biće isporučeno kao detaljan pisani izveštaj; Možete ga sačuvati i ponovo pročitati."
+    },
+    "validation": {
+      "birthDateRequired": "Datum rođenja je obavezan.",
+      "emailInvalid": "Molimo unesite važeću adresu e-pošte.",
+      "nameMinLength": "Ime mora biti najmanje 3 znaka.",
+      "questionMinLength": "Morate odgovoriti na ovo pitanje u najmanje 10 znakova.",
+      "surnameMinLength": "Prezime mora biti najmanje 3 znaka."
+    },
+    "meanings": {
+      "thefool": {
+        "position1": {
+          "upright": "JOKER kaže da je na ivici novog početka u svojoj karijernoj putu. Možete hrabro ući u područja koja vas uzbuđuje srce. Ako vas trenutni put ne zadovoljava, možda će biti vreme da se krećete u novom pravcu koji će vam hraniti slobodu.",
+          "reversed": "Invertirani šaljivdžija pokazuje da neplanirani koraci mogu doneti razočaranje. Možda vaša trenutna karijera nije u pravu za vas, ali ubrzano bira novi put samo za promenu je rizična.",
+          "keywords": {
+            "0": "novi početak",
+            "1": "hrabrost",
+            "2": "sloboda",
+            "3": "rizikovati",
+            "4": "avantura"
+          },
+          "context": "Vaša želja da pronađete slobodan prostor vaše srčane želje u vašoj karijeri je na čelu."
+        },
+        "position2": {
+          "upright": "JOKER vas savetuje da preuzmete hrabar korak ka razvoju. Pretvaranje novih projekata, različita polja ili metode koje nikada niste pokušali mogu vam dati veliki zamah u karijeri.",
+          "reversed": "Invertirani Joker vas podseća da su vas preduzeti koraci bez razmišljanja. Planiranje malo pre nego što krenete, korak će vas osnažiti.",
+          "keywords": {
+            "0": "hrabrost",
+            "1": "iskustvo",
+            "2": "inovativnost",
+            "3": "rizikovati",
+            "4": "sloboda"
+          },
+          "context": "Da biste razvili svoju karijeru, morate napraviti smeli, ali svesni početak."
+        },
+        "position3": {
+          "upright": "Džoker vas podseća da se neočekivana iznenađenja u kojoj naiđete na karijeru i spontani tok života nisu pod vašom kontrolom. Neke mogućnosti i rizici se razvijaju izvan vas.",
+          "reversed": "Okrećeni Joker vam kaže da ne možete u potpunosti da izbegnete nesigurnosti da vam život donosi. Nedostatak planiranja vas može naprezati.",
+          "keywords": {
+            "0": "spontanost",
+            "1": "rizikovati",
+            "2": "neizvesnost",
+            "3": "iznenađenje",
+            "4": "sloboda"
+          },
+          "context": "Ne možete sve da planirate u svojoj karijeri; Iznenađujuće kretanja će biti izvan vaše kontrole."
+        },
+        "position4": {
+          "upright": "JOKER pokazuje da on nastavlja sa svojim radom s iskrenošću i radoznalošću. Otvoreni ste za isprobavanje novih stvari i to čini vaše performanse jedinstvenim.",
+          "reversed": "Invertirani šaljivdžija pokazuje da ne izražavate svoju punu energiju zbog nepažnje ili neplanirane korake.",
+          "keywords": {
+            "0": "hrabrost",
+            "1": "originalnost",
+            "2": "radoznalost",
+            "3": "performanse",
+            "4": "sloboda"
+          },
+          "context": "Napredujete sa slobodnim duhom u vašoj trenutnoj karijeri, ali vaši napori će biti vredniji ako ste planiraniji."
+        },
+        "position5": {
+          "upright": "JOKER, možete da kreirate promenu u karijeri tako što ćete odvajati odvažni koraci i isprobavati nove stvari. Biti otvoren za rizike vodi vas napred.",
+          "reversed": "Invertirani šaljivdžija, treba da izbegavate korake osiromašenja. Promjena je korisna kada je planirana.",
+          "keywords": {
+            "0": "inovativnost",
+            "1": "hrabrost",
+            "2": "rizikovati",
+            "3": "početak",
+            "4": "promeniti"
+          },
+          "context": "Odvažna inovacija u vašoj karijeri pomoći će vam, ali treba da se držite dalje od nedostatka planiranja."
+        },
+        "position6": {
+          "upright": "JOKER: Vaši nepromišljeni ili neplanirani koraci u prošlosti može stvoriti nesigurnosti u vašem trenutnom putu karijere.",
+          "reversed": "Invertirani šaljivdžija, vaša tendencija da izbegavate rizike u prošlosti može vas sprečiti da danas iskoristite prednost mogućnosti.",
+          "keywords": {
+            "0": "nedostatak planiranja",
+            "1": "rizikovati",
+            "2": "hrabrost",
+            "3": "neizvesnost",
+            "4": "prošlost"
+          },
+          "context": "Nekontrolisani ili hrabri koraci u prošlosti utiču na vaš trenutni put karijere."
+        },
+        "position7": {
+          "upright": "Joker pokazuje da će ishod vašeg putovanja u karijeri biti oblikovan slobodom i novim počecima. Vaša budućnost će vam predstaviti uzbudljive mogućnosti.",
+          "reversed": "Invertirani JOKER može ukazivati na neuspeh u potpunosti iskorištavanje mogućnosti zbog nepažnje ili nedostatka planiranja.",
+          "keywords": {
+            "0": "novi početak",
+            "1": "sloboda",
+            "2": "avantura",
+            "3": "rizikovati",
+            "4": "budućnost"
+          },
+          "context": "Rezultat putovanja u karijeri biće pretvoriti novu stranicu i otkriti svoju slobodu."
+        }
+      },
+      "themagician": {
+        "position1": {
+          "upright": "Čarobnjak ukazuje na period u kojem možete otkriti svoj potencijal. Vaša kreativnost, komunikaciona moć i snaga Villpover mogu vas nositi do uspeha u vašoj karijeri. Ako vaš trenutni put podržava ovu energiju, nalazite se na pravom putu.",
+          "reversed": "Mađioničar za obrnuti može ukazivati na to da koristite svoje talente u pogrešnom smeru ili ste u poslu koji ograničava vaš potencijal. U ovom slučaju, vaša trenutna karijera vas može konzumirati.",
+          "keywords": {
+            "0": "kreativnost",
+            "1": "potencijal",
+            "2": "komunikacija",
+            "3": "vizija",
+            "4": "snaga"
+          },
+          "context": "Morate da ispitate da li koristite sopstvenu moć na pravom mestu."
+        },
+        "position2": {
+          "upright": "Čarobnjak kaže da morate aktivno koristiti veštine koje imate u vašoj karijeri. Učinjanje vaših talenata vidljivijim i jačanje vaših komunikacijskih veština ubrzaće vaše korake.",
+          "reversed": "Prekoračeni mađioničar pokazuje da će vas vratiti potcenjivanje ili zloupotrebu svojih sposobnosti. Da biste se poboljšali, prvo morate da verujete u sebe.",
+          "keywords": {
+            "0": "kreativnost",
+            "1": "veština",
+            "2": "komunikacija",
+            "3": "poverenje",
+            "4": "potencijal"
+          },
+          "context": "Da biste razvili svoju karijeru, morate koristiti resurse koje vešto imate."
+        },
+        "position3": {
+          "upright": "Mađioničar pokazuje da vreme prilike koje vam dolazi nije uvek u vašim rukama. Pravo okruženje ponekad zavisi od spoljnih faktora.",
+          "reversed": "Ukrašeni mađioničar, manipulacije ili pogrešno naređenje drugih su elementi koje ne možete da kontrolišete.",
+          "keywords": {
+            "0": "prilika",
+            "1": "kreativnost",
+            "2": "komunikacija",
+            "3": "vremenski vreme",
+            "4": "spoljni uticaj"
+          },
+          "context": "Ne možete uvek da odaberete trenutak u karijeri kada uzmete pozornicu; uslovi stupaju na snagu."
+        },
+        "position4": {
+          "upright": "Mađioničar pokazuje da on odražava svoj potencijal u svoj rad i efikasno koristi svoje resurse. Stvarno vam je najbolje.",
+          "reversed": "Oversed Mage, možete potceniti ili zloupotrebiti svoje sposobnosti. To uzrokuje da se njen učinak ne odražava u potpunosti.",
+          "keywords": {
+            "0": "veština",
+            "1": "potencijal",
+            "2": "kreativnost",
+            "3": "poverenje",
+            "4": "performanse"
+          },
+          "context": "Vaš trenutni nastojanje postaje najbolji kada koristite veštine koje ste pravilno."
+        },
+        "position5": {
+          "upright": "Mađioničar pokazuje da on može da stvori promene tako što će svoje veštine vidljivijim i jačati njegovu komunikaciju.",
+          "reversed": "Obrnuti mađioničar, trebalo bi da povećate svoje performanse fokusiranjem umesto da koristite energiju.",
+          "keywords": {
+            "0": "veština",
+            "1": "kreativnost",
+            "2": "komunikacija",
+            "3": "fokus",
+            "4": "promeniti"
+          },
+          "context": "Da biste doprineli vašoj karijeri, morate da pokažete svoje veštine na fokusirani način."
+        },
+        "position6": {
+          "upright": "Čarobnjak, ne koristi vaš puni potencijal u prošlosti, možda je danas usporio vaš razvoj.",
+          "reversed": "Prekoračeni mađioničar, prošla manipulacija ili zlostavljanje mogu da ograničavaju vašu trenutnu karijeru.",
+          "keywords": {
+            "0": "potencijal",
+            "1": "manipulacija",
+            "2": "kreativnost",
+            "3": "snaga",
+            "4": "prošlost"
+          },
+          "context": "Ne mogu da iskoristite svoju moć u potpunosti ili se u prošlosti zavede u odnosu na to utiče na sadašnjost."
+        },
+        "position7": {
+          "upright": "Mađioničar pokazuje da će ishod vašeg putovanja u karijeri biti postići uspeh kroz veštinu upotrebe vaših veština.",
+          "reversed": "Kada je obrnuti mađioničar ne koristi svoj puni potencijal, rezultat može biti nepotpun ili pogrešan.",
+          "keywords": {
+            "0": "potencijal",
+            "1": "uspeh",
+            "2": "kreativnost",
+            "3": "veština",
+            "4": "budućnost"
+          },
+          "context": "Rezultat će biti postići snažan položaj u vašoj karijeri demonstriranjem vaše kreativnosti i veština."
+        }
+      },
+      "thehighpriestess": {
+        "position1": {
+          "upright": "Visoka sveštenica kaže da bi trebalo da slušate svoju intuiciju. Vaša trenutna karijera može biti zadovoljavanje vašeg uma, ali ako vam srce šapuće nešto drugo, odgovor je skriven u vašem unutrašnjem svetu.",
+          "reversed": "Preokrećena visoka sveštenica ukazuje da potiskuje njenu intuiciju i djeluje isključivo na spoljni očekivanja. Ovaj put je možda siguran, ali možda vas neće zadovoljiti.",
+          "keywords": {
+            "0": "intuicija",
+            "1": "mudrost",
+            "2": "unutrašnja smernica",
+            "3": "tajna",
+            "4": "tišina"
+          },
+          "context": "Pronaći ćete svoj pravi odgovor u karijeri gde vam srce šapuće."
+        },
+        "position2": {
+          "upright": "Visoki sveštenici preporučuju da slušate svoju intuiciju i produbljivanje vašeg znanja za vaš rast. Obrazovanje, istraživanje ili unutrašnje istraživanje vodi vas kroz ovaj proces.",
+          "reversed": "Obrnuti visoki sveštenici kaže da kada suzbijate svoj unutrašnji glas, možete zalutati. Obratite pažnju na svoju intuiciju da poboljšate svoju karijeru.",
+          "keywords": {
+            "0": "intuicija",
+            "1": "informacije",
+            "2": "unutrašnja smernica",
+            "3": "učenje",
+            "4": "mudrost"
+          },
+          "context": "Da biste unapredili svoju karijeru, morate da nastavite sa znanjem i intuicijom."
+        },
+        "position3": {
+          "upright": "Nevidljivi dinamika i procesi koji stoje iza svoje scene su izvan vaše kontrole, kaže visoki sveštenici. Postoje stvari koje ostaju tajne.",
+          "reversed": "Obrnuti visoki sveštenik, ne možete da odredite vreme otkrivenja neizvesnosti i tajnih informacija.",
+          "keywords": {
+            "0": "Skriveni faktori",
+            "1": "neizvesnost",
+            "2": "intuicija",
+            "3": "vremenski vreme",
+            "4": "van kontrole"
+          },
+          "context": "Nije moguće znati svaku činjenicu u vašoj karijeri; Neke stvari će ostati skrivene od vas."
+        },
+        "position4": {
+          "upright": "Visoka sveštenica pokazuje da ona koristi njenu intuiciju i mudrost u svom radu. Vaša unutrašnja snaga se ogleda u vašem učinku.",
+          "reversed": "Kada je obrnuta visoka svećenica potiskuje vašu intuiciju, možda nećete moći da otkrijete svoj puni potencijal.",
+          "keywords": {
+            "0": "intuicija",
+            "1": "mudrost",
+            "2": "unutrašnja snaga",
+            "3": "svest",
+            "4": "performanse"
+          },
+          "context": "Vaš trenutni napor dobija vrednost unoseći svoju mudrost i intuiciju na svoj rad."
+        },
+        "position5": {
+          "upright": "Visoka sveštenica, možete da postavite pozitivne promene u svojoj karijeri tako što ćete slušati svoju intuiciju i obraćati pažnju na neviđene mogućnosti.",
+          "reversed": "Obrnuti visoki sveštenik, ne suzbijanje vašeg unutrašnjeg glasa i verujući vašoj intuiciji u vašim odlukama koristiće vašu karijeru.",
+          "keywords": {
+            "0": "intuicija",
+            "1": "mudrost",
+            "2": "svest",
+            "3": "unutrašnja snaga",
+            "4": "promeniti"
+          },
+          "context": "Trebali biste koristiti svoju intuiciju više da biste promenili svoju karijeru."
+        },
+        "position6": {
+          "upright": "Majka superiorne, intuicije ili skrivene istine koje ste ignorisali u prošlosti možda su danas ometali vašu karijeru.",
+          "reversed": "Obrnuti visoki sveštenik, potiskivanje vaše intuicije možda je dovelo do lošeg izbora u prošlosti.",
+          "keywords": {
+            "0": "intuicija",
+            "1": "informacije",
+            "2": "Skrivene činjenice",
+            "3": "svest",
+            "4": "prošlost"
+          },
+          "context": "Intuicije koje ste suzbijali u prošlosti možda su danas ometali put."
+        },
+        "position7": {
+          "upright": "Visoki sveštenici ukazuje da će ishod vašeg putovanja u karijeri oblikovati unutrašnju mudrost i duboku intuiciju.",
+          "reversed": "Kada je obrnuta visoka sveštenica potiskuje vašu intuiciju, rezultat može biti neizvesnost i unutrašnji nezadovoljstvo.",
+          "keywords": {
+            "0": "intuicija",
+            "1": "mudrost",
+            "2": "dubina",
+            "3": "svest",
+            "4": "budućnost"
+          },
+          "context": "Ishod vašeg putovanja u karijeri će preuzeti svesne korake tako što ćete voditi svoju intuiciju."
+        }
+      },
+      "theempress": {
+        "position1": {
+          "upright": "Carica je simbol kreativnosti i obilja. Ako vam karijera pruži produktivnost, ispunjenje i priliku da pokažete svoje vrednosti, na pravom ste putu.",
+          "reversed": "Reversed carica može ukazivati na to da vaš trenutni posao priguši vašu kreativnost ili vas ne ceni. Možda ste izabrali ovaj put da biste upoznali očekivanja drugih ljudi.",
+          "keywords": {
+            "0": "kreativnost",
+            "1": "dosta",
+            "2": "produktivnost",
+            "3": "zadovoljstvo",
+            "4": "ženska energija"
+          },
+          "context": "Pitanje da li imate svoju kreativnu i produktivnu stranu u karijeri."
+        },
+        "position2": {
+          "upright": "Carica preporučuje da se njeguje vaše kreativnost i povećanje produktivnosti za rast. Stvaranje novih projekata i proširenje postojećih ideja jača vašu karijeru.",
+          "reversed": "Reversed CHEVER-u ukazuje da će vas vratiti da će vas vratiti lenjost ili gušenje vaše kreativnosti.",
+          "keywords": {
+            "0": "kreativnost",
+            "1": "produktivnost",
+            "2": "dosta",
+            "3": "inspiracija",
+            "4": "ishrana"
+          },
+          "context": "Da biste razvili svoju karijeru, morate da proizvodite i povećate kreativne projekte."
+        },
+        "position3": {
+          "upright": "Empripress pokazuje da prirodni ciklusi i proizvodni procesi zahtevaju određeno vreme. Ne možete uvek da kontrolišete tempo razvoja.",
+          "reversed": "Reverse carica vas podseća da se prirodni tok inspiracije ili kreativnosti razvija izvan vas.",
+          "keywords": {
+            "0": "priroda",
+            "1": "vreme",
+            "2": "kreativnost",
+            "3": "proizvodnja",
+            "4": "inspiracija"
+          },
+          "context": "Ne možete da kontrolišete vreme koje je potrebno da stvari budu zrele u vašoj karijeri."
+        },
+        "position4": {
+          "upright": "Campress pokazuje da ona donosi kreativnost i produktivnost na njen rad. Dajete sve od sebe.",
+          "reversed": "Iskrenuta carica, kada ograničite svoju produktivnost ili ugušite svoju inspiraciju, ne koristite svoj puni potencijal.",
+          "keywords": {
+            "0": "kreativnost",
+            "1": "produktivnost",
+            "2": "inspiracija",
+            "3": "performanse",
+            "4": "obilje"
+          },
+          "context": "Vaš trenutni nastojanje dolazi od dovođenja kreativnosti na vaš rad."
+        },
+        "position5": {
+          "upright": "Carica, možete da navedete pozitivne promene u karijeri negovanjem svoje kreativnosti i povećavajući svoju produktivnost.",
+          "reversed": "Obrnuti caricu, umesto da se zanemarite, trebalo bi da se fokusirate na stvari koje će podstaći vašu inspiraciju.",
+          "keywords": {
+            "0": "kreativnost",
+            "1": "inspiracija",
+            "2": "proizvodnja",
+            "3": "ishrana",
+            "4": "promeniti"
+          },
+          "context": "Da biste promenili svoju karijeru, morate da otkrivate svoju kreativnu stranu više."
+        },
+        "position6": {
+          "upright": "Carica je možda ometala karijeru u prošlosti ne mogu da u potpunosti iskoristi svoju kreativnost ili dobija podršku.",
+          "reversed": "Reversirana carica bi mogla biti nedostatak inspiracije ili blokade, prepreka iz prošlosti.",
+          "keywords": {
+            "0": "kreativnost",
+            "1": "inspiracija",
+            "2": "ishrana",
+            "3": "proizvodnja",
+            "4": "prošlost"
+          },
+          "context": "Nedostatak inspiracije ili podrške u prošlosti danas utiče na vašu karijeru."
+        },
+        "position7": {
+          "upright": "Carica ukazuje da će ishod vašeg putovanja u karijeri biti puni kreativnosti, produktivnosti i obilja.",
+          "reversed": "Reversed carica može rezultirati nedostatkom inspiracije ili ograničene produktivnosti.",
+          "keywords": {
+            "0": "kreativnost",
+            "1": "obilje",
+            "2": "produktivnost",
+            "3": "inspiracija",
+            "4": "budućnost"
+          },
+          "context": "Rezultat vašeg putovanja u karijeri biće unošenje kreativnog i produktivnog perioda."
+        }
+      },
+      "theemperor": {
+        "position1": {
+          "upright": "Car znači redosled, autoritet i čvrstinu. Ako vam trenutna karijera nudi stabilnost, sigurnost i jasnoću, ovaj put može biti u pravu.",
+          "reversed": "Reversirani car vam govori da se možete zaglaviti u ugnjetavanju i strogim pravilima. Možda radite na mestu gde izgubite slobodu.",
+          "keywords": {
+            "0": "vlast",
+            "1": "stabilnost",
+            "2": "pravila",
+            "3": "narediti",
+            "4": "snaga"
+          },
+          "context": "Morate uravnotežiti poverenje i slobodu."
+        },
+        "position2": {
+          "upright": "Car preporučuje da steknete disciplinu i redovne studijske navike za poboljšanje. Uzimanje strateških koraka i sticanje autoriteta pomoći će vam da napredujete u svojoj karijeri.",
+          "reversed": "Reversirani car ukazuje na nemogućnost napretka zbog krutih pravila ili nedostatka planiranja. Morate uspostaviti uravnoteženi nalog.",
+          "keywords": {
+            "0": "disciplina",
+            "1": "narediti",
+            "2": "vlast",
+            "3": "planiranje",
+            "4": "stabilnost"
+          },
+          "context": "Za razvijanje vaše karijere potrebna je čvrsta struktura i disciplinovani pristup."
+        },
+        "position3": {
+          "upright": "Car pokazuje da figure i pravila autoriteta nisu u vašim rukama. Uslovi institucije ili sistema koji radite mogu biti nepromenljive činjenice.",
+          "reversed": "Reversirani car, opresivni vladari ili strogi pravila su faktori koje ne možete da kontrolišete.",
+          "keywords": {
+            "0": "vlast",
+            "1": "pravila",
+            "2": "sistem",
+            "3": "disciplina",
+            "4": "narediti"
+          },
+          "context": "Neka pravila i strukture vlasti u vašoj karijeri ostaće izvan vas."
+        },
+        "position4": {
+          "upright": "Car pokazuje da se disciplina i odlučnost najbolje odražavaju u njegovom radu. Dajete sve od sebe.",
+          "reversed": "Invertirani car, možda nećete dobiti punu nagradu svojih napora zbog previše stroge pravila ili nedostatak kontrole.",
+          "keywords": {
+            "0": "disciplina",
+            "1": "stabilnost",
+            "2": "stabilnost",
+            "3": "vlast",
+            "4": "performanse"
+          },
+          "context": "Vaš trenutni napor je ojačan disciplinom i nalogom."
+        },
+        "position5": {
+          "upright": "Car, možete da napravite konstruktivne promene u svom radu jačanjem discipline i narudžbe.",
+          "reversed": "Reversirani car ukazuje da je potrebno da napustite krute pravila i budete fleksibilniji.",
+          "keywords": {
+            "0": "disciplina",
+            "1": "narediti",
+            "2": "stabilnost",
+            "3": "kontrola",
+            "4": "promeniti"
+          },
+          "context": "Fleksibilnost zajedno sa disciplinom postaje važna za promenu u vašoj karijeri."
+        },
+        "position6": {
+          "upright": "Car, možda ste bili ograničeni pritiskom iz figura vlasti ili strogih pravila u prošlosti.",
+          "reversed": "Invertirani car, nedostatak discipline ili nedostatak kontrole možda su stvorili prepreke u prošlosti.",
+          "keywords": {
+            "0": "vlast",
+            "1": "pravila",
+            "2": "ugnjetavanje",
+            "3": "disciplina",
+            "4": "prošlost"
+          },
+          "context": "Problemi koje ste imali sa ovlašćenjima u prošlosti možda su ometali vašu trenutnu karijeru."
+        },
+        "position7": {
+          "upright": "Car ukazuje da će ishod vašeg putovanja u karijeri biti oblikovan stabilnošću, moći i ovlašćenjima.",
+          "reversed": "Reversirani car može biti ograničavajući, rezultat krutih pravila ili prekomerne kontrole.",
+          "keywords": {
+            "0": "stabilnost",
+            "1": "snaga",
+            "2": "vlast",
+            "3": "rukovodstvo",
+            "4": "budućnost"
+          },
+          "context": "Rezultat putovanja u karijeri biće uspostavljanje čvrste strukture i dostići snažnu poziciju."
+        }
+      },
+      "thehierophant": {
+        "position1": {
+          "upright": "Saint predstavlja tradicionalne staze i sigurne prostore. Ako vam trenutna karijera pruža strukturu i socijalno prihvatanje, možda ćete biti na pravom mestu.",
+          "reversed": "Preokrećena svetac pokazuje da živi od vladajućih pravila drugih ljudi i izgubi originalnost njegove duše. Možda se ova karijera ne uskladi sa vašim osnovnim vrednostima.",
+          "keywords": {
+            "0": "tradicija",
+            "1": "doktrina",
+            "2": "vlast",
+            "3": "raport",
+            "4": "uputstvo"
+          },
+          "context": "Da li ste odabrali ovaj put za socijalno odobrenje ili za svoje srce?"
+        },
+        "position2": {
+          "upright": "Saint preporučuje da tražite mudrost i vodiče za poboljšanje. Možete imati koristi od učitelja, mentora ili obuke.",
+          "reversed": "Okrećena svetac pokazuje da se ne treba bojati da se odreknete sopstveni put. Pridržavanje tradicionalnih obrazaca vas može ograničiti.",
+          "keywords": {
+            "0": "uputstvo",
+            "1": "učenje",
+            "2": "tradicija",
+            "3": "vlast",
+            "4": "mudrost"
+          },
+          "context": "Pratite mudrost da biste unapredili svoju karijeru, ali stvorite svoj vlastiti put."
+        },
+        "position3": {
+          "upright": "Saint, standarde koje su postavljale institucije, tradicije i figure vlasti su izvan vaše kontrole.",
+          "reversed": "Preokrećena svetac pokazuje da čak i ako dovedete u pitanje pravila, ne možete u potpunosti da promenite u potpunosti očekivanja društva.",
+          "keywords": {
+            "0": "tradicija",
+            "1": "vlast",
+            "2": "pravila",
+            "3": "društvo",
+            "4": "sistem"
+          },
+          "context": "U vašoj karijeri neke tradicionalne strukture ostaju izvan vaše kontrole."
+        },
+        "position4": {
+          "upright": "Aziz pokazuje da on koristi svoje znanje i iskustvo u svom radu. Imate snažnu sposobnost učenja i podučavanja.",
+          "reversed": "Okolišteni sveti, odbacujući autoritet ili ne prateći pravila ne mogu se potruditi da im se ne nedostaju.",
+          "keywords": {
+            "0": "informacije",
+            "1": "učenje",
+            "2": "podučavanje",
+            "3": "vlast",
+            "4": "performanse"
+          },
+          "context": "Vaše trenutne performanse postaju jače deljenjem vašeg znanja."
+        },
+        "position5": {
+          "upright": "Aziz, karijeru možete da poboljšate deljenjem svog znanja i dobijanje podrške.",
+          "reversed": "Okrećeno Sveti, trebalo bi da naučite da razmišljate inovativno, umesto da se pridržavate tradicionalnih obrazaca.",
+          "keywords": {
+            "0": "informacije",
+            "1": "podrška",
+            "2": "učenje",
+            "3": "mentor",
+            "4": "promeniti"
+          },
+          "context": "Za promenu u vašoj karijeri morate biti otvoreni i za učenje i podučavanje."
+        },
+        "position6": {
+          "upright": "Aziz, strogo pridržavanje tradicionalnih obrazaca možda će vas imati ograničiti u prošlosti.",
+          "reversed": "Okrećeno Svetište, možda ste izgubili podršku zbog odbijanja pravila prošlosti.",
+          "keywords": {
+            "0": "tradicija",
+            "1": "pravila",
+            "2": "doktrina",
+            "3": "vlast",
+            "4": "prošlost"
+          },
+          "context": "Tradicionalni pritisci u prošlosti možda su stvorile ograničenja za svoju trenutnu karijeru."
+        },
+        "position7": {
+          "upright": "Aziz pokazuje da će ishod vašeg putovanja u karijeri napredovati na tradicionalnim metodama, pouzdanoj podršci i čvrstim temeljima.",
+          "reversed": "Ograničeno Saint, odbijanje pravila ili prekomerne pobune može dovesti do nestabilnog ishoda.",
+          "keywords": {
+            "0": "tradicija",
+            "1": "mudrost",
+            "2": "podrška",
+            "3": "doktrina",
+            "4": "budućnost"
+          },
+          "context": "Rezultat će biti put ojačan pouzdanim podršcima i čvrstim učenjima."
+        }
+      },
+      "thelovers": {
+        "position1": {
+          "upright": "To znači ljubavnici, izbore i harmonija. Ako je vaša trenutna karijera kompatibilna sa srcem i umom, to je pravi izbor.",
+          "reversed": "Ukrasiocirani ljubavnici kažu da vas izbor koji vas uputi vodi u unutrašnji sukob. Možda ste izabrali taj put sa vođstvom nekog drugog.",
+          "keywords": {
+            "0": "glasati",
+            "1": "raport",
+            "2": "balans srca",
+            "3": "partnerstvo",
+            "4": "odluka"
+          },
+          "context": "Pitanje da li ste pratili svoje srce u ovom izboru u karijeri."
+        },
+        "position2": {
+          "upright": "Ljubitelji naglašavaju važnost davanja prave odluke u vašoj karijeri. Ako su vaše srce i um u harmoniji, koraci koje preduzmete premestite vas napred.",
+          "reversed": "Ljubitelji obrnuto ukazuje da će neodlučan ili pogrešan izbor otežati razvoj.",
+          "keywords": {
+            "0": "glasati",
+            "1": "raport",
+            "2": "ravnoteža",
+            "3": "partnerstvo",
+            "4": "odluka"
+          },
+          "context": "Da biste poboljšali svoju karijeru, donosite izbore koji se usklađuju vaše srce i um."
+        },
+        "position3": {
+          "upright": "Ljubitelji vas podsećaju da niste uvek pod kontrolom dinamike kolaboracija karijere i odnosa.",
+          "reversed": "Ograničeni ljubavnici kažu da nespojivost ili pogrešne izbore ponekad mogu da uzrokuju faktori izvan vas.",
+          "keywords": {
+            "0": "odnose",
+            "1": "raport",
+            "2": "glasati",
+            "3": "ravnoteža",
+            "4": "van kontrole"
+          },
+          "context": "Ne možete odrediti sve poslovne odnose i harmoniju u svojoj karijeri."
+        },
+        "position4": {
+          "upright": "Ljubitelji pokazuju da ste svoje srce stavili u svoj rad i iskreni ste u svom izboru. Dajete sve od sebe.",
+          "reversed": "Obrnuti ljubitelji, možda nećete moći da u potpunosti prebacite svoju energiju zbog neodlučnosti ili nedoslednosti.",
+          "keywords": {
+            "0": "odluka",
+            "1": "iskrenost",
+            "2": "raport",
+            "3": "trud",
+            "4": "performanse"
+          },
+          "context": "Vaš trud je ojačan vašom posvećenošću vašem radu."
+        },
+        "position5": {
+          "upright": "Ljubitelji, u vašoj karijeri možete da ojačate svoje radne odnose i pravite iskrene izbore.",
+          "reversed": "Obrnuti ljubitelji, čineći jasne izbore umesto neodlučnosti povećavaju vaše performanse.",
+          "keywords": {
+            "0": "glasati",
+            "1": "odnos",
+            "2": "raport",
+            "3": "odluka",
+            "4": "promeniti"
+          },
+          "context": "Važno je učiniti iskrenim izborima za promenu u vašoj karijeri."
+        },
+        "position6": {
+          "upright": "Ljubitelji, pogrešni izbori ostvareni u prošlosti, ili slomljeni poslovni odnosi možda su danas uticali na vaš put.",
+          "reversed": "Ljubitelji obrnuto, nespojivost ili nesigurni izbori možda su stvorili prepreke u vašoj karijeri.",
+          "keywords": {
+            "0": "glasati",
+            "1": "raport",
+            "2": "odnos",
+            "3": "nestabilnost",
+            "4": "prošlost"
+          },
+          "context": "Prošli izbori ili nespojivi odnosi ostavljaju marku na vašoj karijeri."
+        },
+        "position7": {
+          "upright": "Ljubitelji pokazuju da će ishod putovanja u karijeri oblikovati harmonične izbore i snažna partnerstva.",
+          "reversed": "Invertirani ljubavnici, putovanje se može raspasti kao rezultat neodlučno ili nespojivih izbora.",
+          "keywords": {
+            "0": "glasati",
+            "1": "raport",
+            "2": "partnerstvo",
+            "3": "odluka",
+            "4": "budućnost"
+          },
+          "context": "Rezultat će biti napredak u karijeri sa pravim izborima i harmoničnim partnerstvima."
+        }
+      },
+      "thechariot": {
+        "position1": {
+          "upright": "Koriot simbolizuje volju i odlučnost. Imate motivaciju da se snažno krećete naprijed u svojoj trenutnoj karijeri.",
+          "reversed": "Invertirani kolatira ukazuje da gubite kontrolu ili imate problema sa pronalaženjem ležajeva. Možda vas ovaj put ne vodi napred.",
+          "keywords": {
+            "0": "volja",
+            "1": "stabilnost",
+            "2": "napredak",
+            "3": "snaga",
+            "4": "fokus"
+          },
+          "context": "Da biste unapredili u svojoj karijeri, morate da razjasnite svoj smer."
+        },
+        "position2": {
+          "upright": "Charit preporučuje da krenete naprijed sa određivanjem i fokusom. Postavljanje jasnog cilja i preduzimanje snažnih koraka prema njemu donosi uspeh u vašoj karijeri.",
+          "reversed": "Ukrašeno kočije ukazuje da vas nepažnja i neorganizacija usporavaju.",
+          "keywords": {
+            "0": "stabilnost",
+            "1": "fokus",
+            "2": "snaga",
+            "3": "volja",
+            "4": "kontrola"
+          },
+          "context": "Da biste poboljšali svoju karijeru, morate postaviti jasne ciljeve i fokus."
+        },
+        "position3": {
+          "upright": "Kočija pokazuje da spoljne prepreke i okolnosti mogu da ograniče vašu brzinu. Ne možete uvek napredovati brzinom koju želite.",
+          "reversed": "Obrnuti kolač, možda ćete morati da promenite smer zbog prepreka koje ne možete da kontrolišete.",
+          "keywords": {
+            "0": "kontrola",
+            "1": "brzina",
+            "2": "prepreke",
+            "3": "volja",
+            "4": "ravnoteža"
+          },
+          "context": "Okolnosti izvan vas utiču na brzinu na kojoj napredujete u svojoj karijeri."
+        },
+        "position4": {
+          "upright": "Charit pokazuje da vas upornost i odlučnost nose napred. Radite sa svom snagom.",
+          "reversed": "Reversed Chariot sugerira da se trud može raspršiti zbog nedostatka fokusa.",
+          "keywords": {
+            "0": "rezolucija",
+            "1": "fokus",
+            "2": "volja",
+            "3": "stabilnost",
+            "4": "performanse"
+          },
+          "context": "Vaše trenutne performanse otkriveni su prenošenjem svoje volje i fokusirajte se na svoj rad."
+        },
+        "position5": {
+          "upright": "Charit, u vašoj karijeri možete da napravite snažne promene fokusiranjem na cilj i povećanje određivanja.",
+          "reversed": "Ukrao je kočiju, morate da se krećete napred sa fokusom, a ne raštrkane energije.",
+          "keywords": {
+            "0": "stabilnost",
+            "1": "rezolucija",
+            "2": "fokus",
+            "3": "volja",
+            "4": "promeniti"
+          },
+          "context": "Morate pokazati više fokusiranja i volje za promenu u vašoj karijeri."
+        },
+        "position6": {
+          "upright": "Kočiju, gubitak ležajeva ili nedostatak fokusa u prošlosti, možda vam je otežalo da danas napredujete.",
+          "reversed": "Ukrašeno kočije, nedostatak volje možda vas je usporio u prošlosti.",
+          "keywords": {
+            "0": "volja",
+            "1": "fokus",
+            "2": "kontrola",
+            "3": "pravac",
+            "4": "prošlost"
+          },
+          "context": "Nedostatak kontrole i fokusiranja u prošlosti možda je danas uticao na vašu karijeru."
+        },
+        "position7": {
+          "upright": "Kočija pokazuje da će ishod vašeg putovanja u karijeri biti pobeda kroz snagu volje, odlučnosti i smera.",
+          "reversed": "Ukrašeno kočije, nedostatak kontrole ili neorganizacije mogu dovesti do kašnjenja rezultata.",
+          "keywords": {
+            "0": "volja",
+            "1": "pobeda",
+            "2": "kontrola",
+            "3": "stabilnost",
+            "4": "budućnost"
+          },
+          "context": "Rezultat će biti pobeda jačanjem svoje volje."
+        }
+      },
+      "strength": {
+        "position1": {
+          "upright": "Snaga predstavlja unutrašnju hrabrost i strpljenje. Ako vam ova karijera pruži priliku da pokažete snagu u uravnoteženom putu, možda ćete biti na pravom mestu.",
+          "reversed": "Obrnuta snaga vam govori da vam nedostaje samopouzdanje ili se osećate pod pritiskom. Možda vas ova karijera nosi.",
+          "keywords": {
+            "0": "hrabrost",
+            "1": "poverenje",
+            "2": "strpljenje",
+            "3": "ravnoteža",
+            "4": "izdržljivost"
+          },
+          "context": "Pitanje je da li ste svoju snagu demonstrirali u uravnoteženom putu u vašoj karijeri."
+        },
+        "position2": {
+          "upright": "Preporučuje da se ponašate sa čvrstoćom, strpljenjem, samodisciplinom i unutrašnjom hrabrošću. Na ovaj način možete prevazići prepreke i učiniti svoj razvoj trajnim.",
+          "reversed": "Obrnuta snaga pokazuje da se zadržavate zbog nestrpljenja ili nedostatka samopouzdanja.",
+          "keywords": {
+            "0": "hrabrost",
+            "1": "strpljenje",
+            "2": "poverenje",
+            "3": "ravnoteža",
+            "4": "izdržljivost"
+          },
+          "context": "Da biste poboljšali svoju karijeru, morate biti strpljivi, uravnoteženi i uzimajte hrabre korake."
+        },
+        "position3": {
+          "upright": "Moć vam govori da iako imate unutrašnje strpljenja, ne možete da kontrolišete ponašanje drugih ili spoljnih pritisaka.",
+          "reversed": "Obrnute snage ukazuje da nemate kontrolu nad stavovima drugih koji vas testiraju.",
+          "keywords": {
+            "0": "strpljenje",
+            "1": "izdržljivost",
+            "2": "kontrola",
+            "3": "poverenje",
+            "4": "spoljni uticaj"
+          },
+          "context": "Ne možete promeniti stavove drugih ljudi u vašoj karijeri; Možete upravljati samo vlastitim strpljenjem."
+        },
+        "position4": {
+          "upright": "Snaga pokazuje da se strpljenje, samokontrola i unutrašnja otpornost najbolje odražavaju u vašem radu.",
+          "reversed": "Ograničena snaga, nestrpljivost ili nesigurnost mogu da devalviraju napore.",
+          "keywords": {
+            "0": "strpljenje",
+            "1": "otpornost",
+            "2": "poverenje",
+            "3": "kontrola",
+            "4": "performanse"
+          },
+          "context": "Dajete sve od sebe sa strpljenjem i samokontrolom."
+        },
+        "position5": {
+          "upright": "Možete da postavite pozitivne promene u svom radu povećavajući snagu, strpljenje i samodisciplinu.",
+          "reversed": "Okolištena snaga, prevazilaženje nesigurnosti donosi poboljšanje u vašoj karijeri.",
+          "keywords": {
+            "0": "strpljenje",
+            "1": "otpornost",
+            "2": "samodisciplina",
+            "3": "poverenje",
+            "4": "promeniti"
+          },
+          "context": "Trebali biste koristiti svoju unutrašnju snagu više za promenu u karijeri."
+        },
+        "position6": {
+          "upright": "Moć je možda ograničila karijeru u prošlosti zbog nestrpljenja ili nedostatka samopouzdanja.",
+          "reversed": "Obrnuta snaga se danas ogleda u vašim naporima kada vas strahovi zadržavaju.",
+          "keywords": {
+            "0": "strpljenje",
+            "1": "poverenje",
+            "2": "otpornost",
+            "3": "strah",
+            "4": "prošlost"
+          },
+          "context": "Prošle nesigurnosti i strahovi danas utiču na vašu karijeru."
+        },
+        "position7": {
+          "upright": "Snaga pokazuje da će ishod vašeg putovanja u karijeri biti uspešan sa strpljenjem, hrabrošću i unutrašnjim ravnotežom.",
+          "reversed": "Suprotno moć: podleže vašim strahovima može dovesti do loših rezultata.",
+          "keywords": {
+            "0": "hrabrost",
+            "1": "strpljenje",
+            "2": "ravnoteža",
+            "3": "poverenje",
+            "4": "budućnost"
+          },
+          "context": "Rezultat će biti postići uspeh koristeći svoju unutrašnju snagu strpljenje i hrabrosti."
+        }
+      },
+      "thehermit": {
+        "position1": {
+          "upright": "Saint simbolizuje mudrost koja dolazi sa unutrašnjom pretragom i usamljenosti. Možda vam trenutna karijera ne nudi unutrašnje zadovoljstvo i morate da pronađete svoj vlastiti put.",
+          "reversed": "Okrećena svetac pokazuje da je veoma introvertiran i udaljen od spoljnog sveta. Možda vas ovaj posao čini usamljenim.",
+          "keywords": {
+            "0": "mudrost",
+            "1": "okretanje prema unutra",
+            "2": "uputstvo",
+            "3": "potraga",
+            "4": "prosvetljenje"
+          },
+          "context": "Okrenite se svom unutrašnjem vodiču da biste pronašli ono što stvarno tražite na putu karijere."
+        },
+        "position2": {
+          "upright": "Saint preporučuje da nađe vaš put kroz unutrašnje istraživanje i sami. Biće važno slušati unutrašnje smernice za razvoj.",
+          "reversed": "Ograničena svetaca, ekstremna usamljenost ili introverzija mogu vas sprečiti da se krećete napred.",
+          "keywords": {
+            "0": "okretanje prema unutra",
+            "1": "mudrost",
+            "2": "uputstvo",
+            "3": "prosvetljenje",
+            "4": "istraživanje"
+          },
+          "context": "Da biste razvili svoju karijeru, prvo morate da otkrijete svoj vlastiti put."
+        },
+        "position3": {
+          "upright": "Ermis pokazuje da periodi sami ili povučeni mogu nastati kao potreba koje ne možete da kontrolišete u protoku života.",
+          "reversed": "Okrećeno sveti kaže da nam je ponekad prisilna usamljenost ili osećaj izolovan izvan vaše kontrole.",
+          "keywords": {
+            "0": "usamljenost",
+            "1": "okretanje prema unutra",
+            "2": "uputstvo",
+            "3": "petlja",
+            "4": "poteškoće"
+          },
+          "context": "Unutrašnja usamljena u vašoj karijeri može biti izvan vaše kontrole."
+        },
+        "position4": {
+          "upright": "Sveti pokazuje da se on približava svom radu sa dubokom razmišljanjem i iskustvom. Vaš trud zadovoljava mudrost.",
+          "reversed": "Invertirana svetaca, ekstremna introverzija ili usamljenost mogu da ograničavaju performanse.",
+          "keywords": {
+            "0": "mudrost",
+            "1": "iskustvo",
+            "2": "unutrašnja snaga",
+            "3": "učenje",
+            "4": "performanse"
+          },
+          "context": "Vaš trud se pojavljuje kada odražavate svoja iskustva i unutrašnju snagu u svoj rad."
+        },
+        "position5": {
+          "upright": "Ermis, misle na same i sticanje novih uvida može dovesti do promene u vašoj karijeri.",
+          "reversed": "Obrnuti sveti, otvaranje umesto da ostane previše izoliran donosi razvoj.",
+          "keywords": {
+            "0": "mudrost",
+            "1": "istraživanje",
+            "2": "unutrašnja snaga",
+            "3": "svest",
+            "4": "promeniti"
+          },
+          "context": "Za promenu u karijeri, morate da odvojite vreme da duboko razmišljate."
+        },
+        "position6": {
+          "upright": "Ermis, previše je introvertiran ili sam u prošlosti, možda je usporio njegov razvoj.",
+          "reversed": "Okolišeni Sveti, možda ste propustili prilike zbog izolacije.",
+          "keywords": {
+            "0": "usamljenost",
+            "1": "istraživanje",
+            "2": "izolacija",
+            "3": "mudrost",
+            "4": "prošlost"
+          },
+          "context": "Ekstremna usamljenost ili izolacija u prošlosti danas utiče na vašu karijeru."
+        },
+        "position7": {
+          "upright": "Svetac pokazuje da će ishod njegovog putovanja u karijeri biti mudrost, unutrašnji prosvetljenje i duboka svest.",
+          "reversed": "Reversed Hestit može da ograniči kao rezultat izolacije ili prekomerne zatvorenosti.",
+          "keywords": {
+            "0": "mudrost",
+            "1": "prosvetljenje",
+            "2": "svest",
+            "3": "usamljenost",
+            "4": "budućnost"
+          },
+          "context": "Rezultat će doći do tačke zrelosti sa mudrošću i unutrašnjim otkrićem."
+        }
+      },
+      "thewheeloffortune": {
+        "position1": {
+          "upright": "Točak sudbine predstavlja promenu i priliku. Vaš trenutni put u karijeri može se oblikovati iznenađujućim razvojem.",
+          "reversed": "Obrnuti točak sudbine ukazuje da ste zaglavili u ciklusima koje ne možete da kontrolišete. Možda vas ovaj posao stalno dovodi do istog mesta.",
+          "keywords": {
+            "0": "promeniti",
+            "1": "sudbina",
+            "2": "šansa",
+            "3": "prilika",
+            "4": "petlja"
+          },
+          "context": "Budite svesni ciklusa koji vas karijera vodi."
+        },
+        "position2": {
+          "upright": "Točak sudbine vam govori da morate iskoristiti mogućnosti prilagođavanjem promenama. Sreća može doći na put, morate biti otvoreni.",
+          "reversed": "Uključeni točak sudbine ukazuje da kada se odupirite promjeni, možda ćete propustiti prilike.",
+          "keywords": {
+            "0": "promeniti",
+            "1": "prilika",
+            "2": "raport",
+            "3": "sudbina",
+            "4": "petlja"
+          },
+          "context": "Da biste unapredili svoju karijeru, morate se fleksibilno prilagoditi promenama."
+        },
+        "position3": {
+          "upright": "Točak sudbine vam govori da ste izvan kontrole ciklusa sreće i sudbine. Neki usponi i padovi su neizbežni.",
+          "reversed": "Obrnuti točak sudbine podseća vas da se nesreće i odlaganja uvek ne mogu sprečiti.",
+          "keywords": {
+            "0": "sudbina",
+            "1": "šansa",
+            "2": "promeniti",
+            "3": "petlja",
+            "4": "van kontrole"
+          },
+          "context": "Neke promene u vašoj karijeri su prirodni ciklus sudbine i van vaše kontrole."
+        },
+        "position4": {
+          "upright": "Točak sudbine pokazuje da dajete sve od sebe kada se suočite sa mogućnostima. Dobro ocenjujete cikluse.",
+          "reversed": "Preokrećeni točak sudbine, loša sreća ili odlaganja može vam sprečiti da odražavate svoje pune performanse.",
+          "keywords": {
+            "0": "prilika",
+            "1": "petlja",
+            "2": "šansa",
+            "3": "trud",
+            "4": "performanse"
+          },
+          "context": "Dajete sve od sebe, ali neke stvari zavise od spoljnih okolnosti."
+        },
+        "position5": {
+          "upright": "Točak sudbine, možete da kreirate pozitivna kretanja u vašoj karijeri prilagođavanjem promenama.",
+          "reversed": "Obrnuti točak sudbine govori da bi vam trebalo da budete proaktivni umesto da ga ostavite na slučajnost.",
+          "keywords": {
+            "0": "petlja",
+            "1": "šansa",
+            "2": "prilika",
+            "3": "raport",
+            "4": "promeniti"
+          },
+          "context": "Za promenu u vašoj karijeri važno je ići sa protokom."
+        },
+        "position6": {
+          "upright": "Točak sudbine, previše se oslanjajući na sreću ili spoljne okolnosti u prošlosti, možda je stvorio prepreke u vašoj karijeri.",
+          "reversed": "Obrnuti točak sudbine, neuspeh u iskorištavanju mogućnosti možda je uticalo na vaš poklon.",
+          "keywords": {
+            "0": "sudbina",
+            "1": "šansa",
+            "2": "petlja",
+            "3": "prilika",
+            "4": "prošlost"
+          },
+          "context": "Ne iskorištavanje prošlih prilika utiče na vašu trenutnu karijeru."
+        },
+        "position7": {
+          "upright": "Točak sudbine pokazuje da će ishod vašeg putovanja u karijeri biti oblikovan srećom, podrškom sudbine i cikličkih uspeha.",
+          "reversed": "Obrnuti točak sudbine, ne iskorištavanje mogućnosti može dovesti do usporavanja ishoda.",
+          "keywords": {
+            "0": "sudbina",
+            "1": "šansa",
+            "2": "petlja",
+            "3": "prilika",
+            "4": "budućnost"
+          },
+          "context": "Rezultat će biti napredak jer dolaze sreće i prilike."
+        }
+      },
+      "justice": {
+        "position1": {
+          "upright": "Predstavlja pravdu, iskrenost i ravnotežu. Ako vaša trenutna karijera poravnava sa vašim vrednostima i oseća fer, to je pravi izbor.",
+          "reversed": "Obrnuta pravda kaže da postoji nepravda ili neravnoteža. Možda vas ovaj posao ne tretira pošteno.",
+          "keywords": {
+            "0": "pravda",
+            "1": "ravnoteža",
+            "2": "istina",
+            "3": "etika",
+            "4": "odgovornost"
+          },
+          "context": "Da li vam se ova karijera zaista oseća fer prema vama?"
+        },
+        "position2": {
+          "upright": "Preporučuje da krenete naprijed sa pravdom, iskrenošću i fer izborima. Pridržavanje etičkih vrednosti će dugoročno ojačati vašu karijeru.",
+          "reversed": "Obrnuti pravdu, kada niste iskreni prema sebi ili drugima, rast se usporava.",
+          "keywords": {
+            "0": "pravda",
+            "1": "iskrenost",
+            "2": "etika",
+            "3": "ravnoteža",
+            "4": "odgovornost"
+          }
+        }
+      }
+    }
+  }
+}

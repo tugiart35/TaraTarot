@@ -1,0 +1,1546 @@
+{
+  "career": {
+    "meanings": {
+      "justice": {
+        "position2": {
+          "context": "To develop your career, you must adhere to ethical values."
+        },
+        "position3": {
+          "upright": "Justice reminds you that legal processes and external decisions are not in your control. Things may not seem fair.",
+          "reversed": "Reverse Justice indicates that injustices or wrong decisions are sometimes caused by external factors that you cannot control.",
+          "keywords": {
+            "0": "justice",
+            "1": "law",
+            "2": "ethic",
+            "3": "system",
+            "4": "decision"
+          },
+          "context": "In your career, you cannot change legal processes or other people's decisions."
+        },
+        "position4": {
+          "upright": "Justice indicates that you act fairly, honestly and responsibly in your work. Your effort is clear and strong.",
+          "reversed": "Reverse Fairness, ignoring mistakes or avoiding responsibility can reduce performance.",
+          "keywords": {
+            "0": "justice",
+            "1": "honesty",
+            "2": "responsibility",
+            "3": "balance",
+            "4": "performance"
+          },
+          "context": "Your current performance is revealed by your honest and responsible approach."
+        },
+        "position5": {
+          "upright": "Justice, you can make positive changes in your career by being more fair, transparent and balanced.",
+          "reversed": "Reverse Justice, not avoiding taking responsibility, provides development.",
+          "keywords": {
+            "0": "justice",
+            "1": "honesty",
+            "2": "balance",
+            "3": "responsibility",
+            "4": "change"
+          },
+          "context": "An honest and fair approach is important for change in your career."
+        },
+        "position6": {
+          "upright": "Justice, past injustices or injustices may have left a mark on your current career.",
+          "reversed": "Reverse Justice, evasion of responsibility or wrong decisions can be obstacles from the past.",
+          "keywords": {
+            "0": "justice",
+            "1": "injustice",
+            "2": "decision",
+            "3": "responsibility",
+            "4": "past"
+          },
+          "context": "Past injustices or wrong decisions affect your career today."
+        },
+        "position7": {
+          "upright": "Fairness indicates that the outcome of the career journey will be success through honesty, balance and fair decisions.",
+          "reversed": "Reverse Fairness, wrong decisions or unfairness can negatively affect the outcome.",
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "truth",
+            "3": "responsibility",
+            "4": "future"
+          },
+          "context": "The result will be to achieve a solid future by acting fairly."
+        }
+      },
+      "thehangedman": {
+        "position1": {
+          "upright": "The Hanged Man provides a new understanding from different perspectives. Maybe you need to look at your current career in a different way.",
+          "reversed": "The Upside Down Hanged Man says that he is making unnecessary sacrifices and wasting time. This job may be giving you pause.",
+          "keywords": {
+            "0": "sacrifice",
+            "1": "waiting",
+            "2": "different view",
+            "3": "transformation",
+            "4": "surrender"
+          },
+          "context": "Is your current career moving you forward or holding you back?"
+        },
+        "position2": {
+          "upright": "The Hanged Man suggests changing your perspective. Trying different methods can improve your career.",
+          "reversed": "The Upside Down Hanged Man says that he cannot see new opportunities because of stubbornness.",
+          "keywords": {
+            "0": "opinion",
+            "1": "surrender",
+            "2": "difference",
+            "3": "experience",
+            "4": "patience"
+          },
+          "context": "To improve your career, you need to gain different perspectives."
+        },
+        "position3": {
+          "upright": "The Hanged Man shows that waiting periods and processes requiring patience are not under your control.",
+          "reversed": "The Upside Down Hanged Man says that the forced pauses that slow your progress are out of your control.",
+          "keywords": {
+            "0": "waiting",
+            "1": "patience",
+            "2": "pause",
+            "3": "surrender",
+            "4": "out of control"
+          },
+          "context": "Some waits and pauses in your career are inevitable."
+        },
+        "position4": {
+          "upright": "The Hanged Man shows the effort of your sacrifices and patient approach. You are doing your best.",
+          "reversed": "Inverted Hanged Man, unnecessary procrastination or reluctance may be limiting your performance.",
+          "keywords": {
+            "0": "sacrifice",
+            "1": "patience",
+            "2": "opinion",
+            "3": "surrender",
+            "4": "performance"
+          },
+          "context": "Your effort is reflected in your patient and self-sacrificing approach."
+        },
+        "position5": {
+          "upright": "Hanged Man, you can create positive change in your career by developing different perspectives and showing patience.",
+          "reversed": "Upside Down Hanged Man, letting go of unnecessary procrastination will move you forward.",
+          "keywords": {
+            "0": "opinion",
+            "1": "patience",
+            "2": "surrender",
+            "3": "awareness",
+            "4": "change"
+          },
+          "context": "To change your career, you need to look at things from a different perspective."
+        },
+        "position6": {
+          "upright": "The Hanged Man may have hindered his career in the past by waiting too long or putting off opportunities.",
+          "reversed": "Inverted Hanged Man, unnecessary stubbornness or submission may be an obstacle from the past.",
+          "keywords": {
+            "0": "waiting",
+            "1": "opportunity",
+            "2": "surrender",
+            "3": "stubbornness",
+            "4": "past"
+          },
+          "context": "Past delays complicate progress today."
+        },
+        "position7": {
+          "upright": "The Hanged Man shows that the outcome of your career journey will be gaining awareness by changing your perspective.",
+          "reversed": "The Reverse Hanged Man can slow down the process as a result of unnecessary resistance.",
+          "keywords": {
+            "0": "awareness",
+            "1": "opinion",
+            "2": "surrender",
+            "3": "balance",
+            "4": "future"
+          },
+          "context": "The result will be to reach a new understanding by changing your perspective."
+        }
+      },
+      "death": {
+        "position1": {
+          "upright": "Death symbolizes new beginnings following an end. Maybe your current career should end so that your true path can open.",
+          "reversed": "Reverse Death indicates that you are holding on to a process that needs to end. This job holds you back rather than transforming you.",
+          "keywords": {
+            "0": "transformation",
+            "1": "last",
+            "2": "rebirth",
+            "3": "release",
+            "4": "change"
+          },
+          "context": "Holding on to something that needs to end is holding you back from moving forward."
+        },
+        "position2": {
+          "upright": "Death indicates new beginnings after endings. To grow, you must leave behind what no longer serves you.",
+          "reversed": "Reverse Death, you can't move forward when you hold on to the old patterns.",
+          "keywords": {
+            "0": "transformation",
+            "1": "finish",
+            "2": "regeneration",
+            "3": "change",
+            "4": "liberation"
+          },
+          "context": "To improve your career, you must let go of the old and embrace the new."
+        },
+        "position3": {
+          "upright": "Death tells us that endings and closures are inevitable. Some cycles you can't change.",
+          "reversed": "Reverse Death, the natural timing of your transformation is out of your hands.",
+          "keywords": {
+            "0": "finish",
+            "1": "transformation",
+            "2": "inevitability",
+            "3": "change",
+            "4": "regeneration"
+          },
+          "context": "Some career endings are inevitable; you can't control them."
+        },
+        "position4": {
+          "upright": "Death indicates that you are taking bold steps to transform your business and directing your efforts towards renewal.",
+          "reversed": "Reverse Death: Resistance to change can reduce the effectiveness of the effort.",
+          "keywords": {
+            "0": "transformation",
+            "1": "bravery",
+            "2": "regeneration",
+            "3": "change",
+            "4": "performance"
+          },
+          "context": "Your effort emerges most powerfully when you adapt to the transformation."
+        },
+        "position5": {
+          "upright": "Death shows that you can make radical changes in your career by letting go of the old and being open to transformation.",
+          "reversed": "Reverse Death: Accepting change rather than resisting it creates progress.",
+          "keywords": {
+            "0": "transformation",
+            "1": "finish",
+            "2": "regeneration",
+            "3": "bravery",
+            "4": "change"
+          },
+          "context": "To change your career, you must dare to transform."
+        },
+        "position6": {
+          "upright": "Death, unfinished things in the past, or resistance to change may have hindered your current career.",
+          "reversed": "Reverse Death, not letting go of the past may still be holding you back.",
+          "keywords": {
+            "0": "finish",
+            "1": "transformation",
+            "2": "change",
+            "3": "resistance",
+            "4": "past"
+          },
+          "context": "Not letting go of the past and resisting transformation affects your career today."
+        },
+        "position7": {
+          "upright": "Death indicates that the outcome of your career journey will be shaped by radical transformations and new beginnings.",
+          "reversed": "Reverse Death, resisting change can result in delayed outcome.",
+          "keywords": {
+            "0": "transformation",
+            "1": "finish",
+            "2": "beginning",
+            "3": "regeneration",
+            "4": "future"
+          },
+          "context": "The result will be to let go of the old and step into the new."
+        }
+      },
+      "temperance": {
+        "position1": {
+          "upright": "It represents balance, harmony and patience. If your current career gives you peace and harmony, you are on the right track.",
+          "reversed": "Reverse Balance indicates extremes and restlessness. Maybe this job conflicts with your spiritual balance.",
+          "keywords": {
+            "0": "balance",
+            "1": "rapport",
+            "2": "patience",
+            "3": "middle way",
+            "4": "peace"
+          },
+          "context": "You need to find balance in your career."
+        },
+        "position2": {
+          "upright": "It recommends that you proceed with balance, harmony and patience. Staying away from extremes in your career will bring you stability.",
+          "reversed": "Reverse Balance indicates losing balance due to excesses.",
+          "keywords": {
+            "0": "balance",
+            "1": "rapport",
+            "2": "patience",
+            "3": "middle way",
+            "4": "stability"
+          },
+          "context": "You need to take a balanced approach to developing your career."
+        },
+        "position3": {
+          "upright": "Balance indicates that some processes will mature over time. You cannot control your speed.",
+          "reversed": "Reverse Balance says that imbalances caused by extremes sometimes come from external conditions.",
+          "keywords": {
+            "0": "balance",
+            "1": "time",
+            "2": "rapport",
+            "3": "patience",
+            "4": "natural process"
+          },
+          "context": "You can't speed up every process in your career; Some things happen over time."
+        },
+        "position4": {
+          "upright": "Balance shows that you act harmoniously and moderately in your work. Your effort is steady and deliberate.",
+          "reversed": "Reverse Balance, excess, or impatience can diminish the value of effort.",
+          "keywords": {
+            "0": "balance",
+            "1": "rapport",
+            "2": "patience",
+            "3": "stability",
+            "4": "performance"
+          },
+          "context": "You do your best with harmony and patience."
+        },
+        "position5": {
+          "upright": "You can make constructive changes in your work by approaching it in a balanced, measured and harmonious manner.",
+          "reversed": "Reverse Balance, staying away from extremes provides development.",
+          "keywords": {
+            "0": "balance",
+            "1": "rapport",
+            "2": "patience",
+            "3": "measurement",
+            "4": "change"
+          },
+          "context": "Adaptability and moderation are important for change in your career."
+        },
+        "position6": {
+          "upright": "Balance, intemperance or disharmony may have hindered his career in the past.",
+          "reversed": "Reverse Balance, excesses and impatience may have harmed your efforts today.",
+          "keywords": {
+            "0": "balance",
+            "1": "patience",
+            "2": "rapport",
+            "3": "extremism",
+            "4": "past"
+          },
+          "context": "Past excesses or disharmony are reflected in your present career."
+        },
+        "position7": {
+          "upright": "Balance indicates that the outcome of the career journey will be success with harmony, patience and moderation.",
+          "reversed": "Reverse Balance, extremes can unbalance the outcome.",
+          "keywords": {
+            "0": "balance",
+            "1": "rapport",
+            "2": "patience",
+            "3": "temperance",
+            "4": "future"
+          },
+          "context": "The result will be progress with harmonious and balanced steps."
+        }
+      },
+      "thedevil": {
+        "position1": {
+          "upright": "Satan means dependence and restriction. Your current career may be making you feel dependent.",
+          "reversed": "The Reversed Devil indicates a desire for liberation. You're about to break your chains.",
+          "keywords": {
+            "0": "dependence",
+            "1": "control",
+            "2": "Restriction",
+            "3": "passion",
+            "4": "liberation"
+          },
+          "context": "Does this career liberate you or chain you?"
+        },
+        "position2": {
+          "upright": "Satan says you need to break out of addictive patterns. You must give up habits that hinder your development.",
+          "reversed": "The Reversed Devil indicates that it is time to break your chains and break free.",
+          "keywords": {
+            "0": "dependence",
+            "1": "Restriction",
+            "2": "freedom",
+            "3": "habit",
+            "4": "control"
+          },
+          "context": "To improve your career, you must get rid of the patterns that limit you."
+        },
+        "position3": {
+          "upright": "The devil tells you that some of the addictive patterns or restrictions are outside of you. There are systemic chains.",
+          "reversed": "Reversed Devil, it may not be easy to break all the chains; Some dependencies come from external conditions.",
+          "keywords": {
+            "0": "dependence",
+            "1": "Restriction",
+            "2": "system",
+            "3": "habit",
+            "4": "out of control"
+          },
+          "context": "Some chains and limits in your career are circumstances you cannot control."
+        },
+        "position4": {
+          "upright": "The devil shows that he puts a lot of effort into his work, but sometimes pushes himself through addiction or excess.",
+          "reversed": "The Reversed Demon may indicate that you are not using your energy fully efficiently due to some habits or addictions.",
+          "keywords": {
+            "0": "dependence",
+            "1": "extremism",
+            "2": "effort",
+            "3": "passion",
+            "4": "performance"
+          },
+          "context": "Your effort is high, but sometimes it happens under patterns that limit you."
+        },
+        "position5": {
+          "upright": "Satan, getting rid of your addictions and letting go of the patterns that limit you brings powerful change in your career.",
+          "reversed": "When the Reversed Demon breaks its chains, your development accelerates.",
+          "keywords": {
+            "0": "dependence",
+            "1": "Restriction",
+            "2": "liberation",
+            "3": "bravery",
+            "4": "change"
+          },
+          "context": "To change your career, you must get rid of the bonds that restrict you."
+        },
+        "position6": {
+          "upright": "Satan, past addictions, or restrictive patterns may be affecting your career today.",
+          "reversed": "Reversed Satan, you may still be limited by not being able to break free of your chains.",
+          "keywords": {
+            "0": "dependence",
+            "1": "Restriction",
+            "2": "habit",
+            "3": "freedom",
+            "4": "past"
+          },
+          "context": "Past restrictions may have hindered his current career."
+        },
+        "position7": {
+          "upright": "The devil shows you that the outcome of your career journey may be limited if you do not get rid of addictions.",
+          "reversed": "When the Reversed Demon breaks its chains, you can become free and achieve greater success.",
+          "keywords": {
+            "0": "dependence",
+            "1": "freedom",
+            "2": "control",
+            "3": "Restriction",
+            "4": "future"
+          },
+          "context": "The result will be to be unchained and free."
+        }
+      },
+      "thetower": {
+        "position1": {
+          "upright": "The tower symbolizes sudden change and destruction. Your current career may change dramatically.",
+          "reversed": "The Inverted Tower indicates postponing destruction or ignoring crises.",
+          "keywords": {
+            "0": "demolition",
+            "1": "change",
+            "2": "crisis",
+            "3": "liberation",
+            "4": "regeneration"
+          },
+          "context": "A new road cannot be opened without demolishing old structures."
+        },
+        "position2": {
+          "upright": "The tower tells you that sudden changes may be necessary for your development. When old structures are demolished, new ones can be built.",
+          "reversed": "The Inverted Tower indicates that fear of change is holding you back.",
+          "keywords": {
+            "0": "demolition",
+            "1": "change",
+            "2": "liberation",
+            "3": "crisis",
+            "4": "regeneration"
+          },
+          "context": "To improve your career, you must turn crises into opportunities."
+        },
+        "position3": {
+          "upright": "The tower says that sudden destructions and crises are not under its control. Some changes are inevitable.",
+          "reversed": "The Inverted Tower reminds you that even if you avoid change, external factors may force you.",
+          "keywords": {
+            "0": "crisis",
+            "1": "change",
+            "2": "demolition",
+            "3": "liberation",
+            "4": "unexpected"
+          },
+          "context": "You can't always prevent crises in your career."
+        },
+        "position4": {
+          "upright": "The tower shows that he is doing his best and trying to stay afloat even in times of crisis.",
+          "reversed": "The Inverted Tower shows that effort can feel inadequate in the face of unexpected events.",
+          "keywords": {
+            "0": "crisis",
+            "1": "effort",
+            "2": "strength",
+            "3": "durability",
+            "4": "performance"
+          },
+          "context": "You show your best even in difficult times."
+        },
+        "position5": {
+          "upright": "Tower, you can make big changes in your career by demolishing and rebuilding old structures.",
+          "reversed": "Inverted Tower, accepting change instead of resisting it will move you forward.",
+          "keywords": {
+            "0": "transformation",
+            "1": "crisis",
+            "2": "regeneration",
+            "3": "opportunity",
+            "4": "change"
+          },
+          "context": "For change in your career, you must establish the new instead of the old."
+        },
+        "position6": {
+          "upright": "Kule, sudden crises or devastations you have experienced in the past may have left a permanent mark on your career.",
+          "reversed": "Inverted Tower, the effects of old traumas may still be slowing you down.",
+          "keywords": {
+            "0": "crisis",
+            "1": "trauma",
+            "2": "demolition",
+            "3": "transformation",
+            "4": "past"
+          },
+          "context": "The shocking events you experienced in the past affect your career today."
+        },
+        "position7": {
+          "upright": "The tower indicates that the outcome of your career journey will be shaped by a radical change or an unexpected breaking point.",
+          "reversed": "Inverted Tower, resisted crises may cause the outcome to be more painful.",
+          "keywords": {
+            "0": "crisis",
+            "1": "demolition",
+            "2": "transformation",
+            "3": "innovation",
+            "4": "future"
+          },
+          "context": "The result will be a restructuring after a major breakup."
+        }
+      },
+      "thestar": {
+        "position1": {
+          "upright": "The star means hope, inspiration and renewal. You have the potential to shine in your career.",
+          "reversed": "An Inverted Star indicates that you have lost hope or inspiration.",
+          "keywords": {
+            "0": "hope",
+            "1": "inspiration",
+            "2": "regeneration",
+            "3": "vision",
+            "4": "brightness"
+          },
+          "context": "Follow your light on your career path."
+        },
+        "position2": {
+          "upright": "The star recommends you act with hope, inspiration and vision. Focusing on areas that inspire you in your career will make you shine.",
+          "reversed": "The Inverted Star tells you that you cannot move forward with hopelessness and lack of motivation.",
+          "keywords": {
+            "0": "hope",
+            "1": "inspiration",
+            "2": "vision",
+            "3": "creativity",
+            "4": "future"
+          },
+          "context": "To improve your career, you must keep your inspiration alive."
+        },
+        "position3": {
+          "upright": "The star indicates that inspiration and hope are sometimes revealed by external circumstances. You can't always speed up the process.",
+          "reversed": "The Inverted Star tells you that lack of inspiration or loss of morale is not always in your hands.",
+          "keywords": {
+            "0": "hope",
+            "1": "inspiration",
+            "2": "vision",
+            "3": "morale",
+            "4": "out of control"
+          },
+          "context": "The silver lining in your career may depend on factors other than yourself."
+        },
+        "position4": {
+          "upright": "The star shows that you bring hope and inspiration to your work. Your efforts shine a positive light.",
+          "reversed": "Inverted Star, despair or loss of motivation can weaken the effectiveness of the effort.",
+          "keywords": {
+            "0": "hope",
+            "1": "inspiration",
+            "2": "positivity",
+            "3": "effort",
+            "4": "performance"
+          },
+          "context": "Your current effort is combined with inspiration and hope."
+        },
+        "position5": {
+          "upright": "Yıldız, you can make positive changes in your career by renewing your hopes and strengthening your inspiration.",
+          "reversed": "Inverted Star, instead of despair, you should keep your vision alive.",
+          "keywords": {
+            "0": "hope",
+            "1": "inspiration",
+            "2": "vision",
+            "3": "regeneration",
+            "4": "change"
+          },
+          "context": "You must keep your hope and vision alive for change in your career."
+        },
+        "position6": {
+          "upright": "Star, periods of despair or lack of inspiration may have slowed you down in the past.",
+          "reversed": "Inverted Star: Past disappointments may have limited his vision.",
+          "keywords": {
+            "0": "hope",
+            "1": "inspiration",
+            "2": "vision",
+            "3": "disappointment",
+            "4": "past"
+          },
+          "context": "Past despairs may have cast a shadow over his current career."
+        },
+        "position7": {
+          "upright": "The star indicates that the outcome of the career journey will be shaped by hope, inspiration and guiding vision.",
+          "reversed": "Inverted Star, despair or lack of inspiration may lead to late results.",
+          "keywords": {
+            "0": "hope",
+            "1": "inspiration",
+            "2": "vision",
+            "3": "awareness",
+            "4": "future"
+          },
+          "context": "The result will be moving forward into a hopeful future."
+        }
+      },
+      "themoon": {
+        "position1": {
+          "upright": "The Moon is the card of uncertainty and dreams. Your current career may not offer you clarity.",
+          "reversed": "The Inverted Moon indicates awakening from illusions. You're starting to see the truth.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "intuition",
+            "2": "illusion",
+            "3": "dream",
+            "4": "mystery"
+          },
+          "context": "You must see the difference between reality and illusion."
+        },
+        "position2": {
+          "upright": "The Moon advises you to move forward by trusting your intuition in times of uncertainty. Even if everything is not clear, your inner voice will guide you.",
+          "reversed": "The Inverted Moon indicates that fear and illusions are holding you back.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "intuition",
+            "2": "dream",
+            "3": "fear",
+            "4": "mystery"
+          },
+          "context": "To improve your career, you must trust your intuition and overcome your fears."
+        },
+        "position3": {
+          "upright": "The Moon tells us that uncertainties and illusions are inevitable. It is not possible to know the whole truth.",
+          "reversed": "The Inverted Moon indicates that fears or misperceptions can sometimes arise from external circumstances.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "illusion",
+            "2": "fear",
+            "3": "mystery",
+            "4": "out of control"
+          },
+          "context": "You cannot provide all the clarity in your career; There will always be uncertainties."
+        },
+        "position4": {
+          "upright": "The Moon shows that you use your intuition in your work but sometimes deal with uncertainties. Your effort is honest, but clarity may be lacking.",
+          "reversed": "Inverted Moon, anxieties or misperceptions may be limiting your performance.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "intuition",
+            "2": "effort",
+            "3": "performance",
+            "4": "illusion"
+          },
+          "context": "You have an effort, but uncertainties do not make it fully visible."
+        },
+        "position5": {
+          "upright": "Moon, you can make progress in your career by facing uncertainties and overcoming your fears.",
+          "reversed": "Reverse Moon, staying away from illusions is important for change.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "intuition",
+            "2": "fear",
+            "3": "awareness",
+            "4": "change"
+          },
+          "context": "For change in your career, you must face your fears."
+        },
+        "position6": {
+          "upright": "Moon, past uncertainties, fears or illusions may have created obstacles in your career.",
+          "reversed": "Reverse Moon, misdirections in the past may have slowed you down.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "fear",
+            "2": "illusion",
+            "3": "intuition",
+            "4": "past"
+          },
+          "context": "Past fears and uncertainties affect your career today."
+        },
+        "position7": {
+          "upright": "The Moon indicates that the outcome of your career journey will be overcoming uncertainties and finding direction with intuition.",
+          "reversed": "The Reverse Moon may cloud the outcome with illusions or fears.",
+          "keywords": {
+            "0": "intuition",
+            "1": "uncertainty",
+            "2": "awareness",
+            "3": "fear",
+            "4": "future"
+          },
+          "context": "The result will be finding your way through uncertainties."
+        }
+      },
+      "thesun": {
+        "position1": {
+          "upright": "The sun symbolizes success, happiness and clarity. If your career brings you joy and success, you are on the right track.",
+          "reversed": "Reverse Sun can make you feel dissatisfied or lack motivation. Maybe you are not able to reveal your true potential.",
+          "keywords": {
+            "0": "success",
+            "1": "happiness",
+            "2": "brightness",
+            "3": "openness",
+            "4": "hope"
+          },
+          "context": "Does your career bring you light and joy?"
+        },
+        "position2": {
+          "upright": "The Sun recommends that you move forward with optimism and clear goals. Success and visibility in your career awaits you.",
+          "reversed": "Reverse Sun indicates loss of motivation or lack of self-confidence.",
+          "keywords": {
+            "0": "success",
+            "1": "happiness",
+            "2": "visibility",
+            "3": "optimism",
+            "4": "sharpness"
+          },
+          "context": "To advance your career, you must be cheerful and visible."
+        },
+        "position3": {
+          "upright": "The Sun reminds us that the visibility of achievements sometimes depends on the discretion of others. Your light shines through external factors.",
+          "reversed": "Reverse Sun, your lack of motivation or decreased visibility sometimes develops outside of you.",
+          "keywords": {
+            "0": "success",
+            "1": "visibility",
+            "2": "optimism",
+            "3": "light",
+            "4": "out of control"
+          },
+          "context": "You can't always define your own light in your career; external conditions are effective."
+        },
+        "position4": {
+          "upright": "The Sun shows that you are moving forward with bright energy in your work and that you are really doing your best.",
+          "reversed": "Reverse Sun, lack of self-confidence or fatigue may not fully reflect your performance.",
+          "keywords": {
+            "0": "success",
+            "1": "confidence",
+            "2": "positivity",
+            "3": "energy",
+            "4": "performance"
+          },
+          "context": "Your effort is strong, you add your light to your work."
+        },
+        "position5": {
+          "upright": "You can make positive changes in your career with sun, positive energy, transparency and self-confidence.",
+          "reversed": "Reverse Sun increases self-confidence and contributes to performance.",
+          "keywords": {
+            "0": "positivity",
+            "1": "confidence",
+            "2": "success",
+            "3": "energy",
+            "4": "change"
+          },
+          "context": "For change in your career, you should focus more on self-confidence and positive energy."
+        },
+        "position6": {
+          "upright": "Sun, lack of confidence or lack of apparent success in the past may have hindered your career.",
+          "reversed": "The Reverse Sun may cast a shadow on the path of past pessimism.",
+          "keywords": {
+            "0": "success",
+            "1": "confidence",
+            "2": "bright",
+            "3": "positivity",
+            "4": "past"
+          },
+          "context": "Lack of self-confidence in the past may have cast a shadow over his career today."
+        },
+        "position7": {
+          "upright": "The Sun indicates that the outcome of your career journey will be success, self-confidence and a bright future.",
+          "reversed": "Reverse Sun, delayed successes or pessimism may cloud the enjoyment of the result.",
+          "keywords": {
+            "0": "success",
+            "1": "confidence",
+            "2": "bright",
+            "3": "hope",
+            "4": "future"
+          },
+          "context": "The result will be a bright and successful future."
+        }
+      },
+      "judgement": {
+        "position1": {
+          "upright": "Court means awareness and rebirth. Your current career may offer you a new direction.",
+          "reversed": "The Reversed Court indicates that you have difficulty breaking away from the past. Maybe you've become a prisoner of your old decisions.",
+          "keywords": {
+            "0": "rebirth",
+            "1": "awareness",
+            "2": "decision",
+            "3": "awakening",
+            "4": "liberation"
+          },
+          "context": "Your true career answer emerges with an inner awakening."
+        },
+        "position2": {
+          "upright": "The court recommends that you take the step of rebirth by learning from your past experiences. Let go of the past and move forward with a new vision.",
+          "reversed": "Reverse Court indicates that dwelling too much on the past is holding you back.",
+          "keywords": {
+            "0": "rebirth",
+            "1": "awareness",
+            "2": "decision",
+            "3": "liberation",
+            "4": "progress"
+          },
+          "context": "To improve your career, you must let go of the burdens of the past."
+        },
+        "position3": {
+          "upright": "The trial, the consequences of the past, and the flashbacks are realities you cannot control. Showdowns are inevitable.",
+          "reversed": "A Reversed Court indicates that the repercussions of past decisions may linger outside of you.",
+          "keywords": {
+            "0": "past",
+            "1": "decision",
+            "2": "reckoning",
+            "3": "rebirth",
+            "4": "inevitability"
+          },
+          "context": "You can't change the consequences of the past in your career."
+        },
+        "position4": {
+          "upright": "The court shows that it did its best by learning from past experiences. Your effort is conscious and powerful.",
+          "reversed": "Reversed Court, ignoring past mistakes may be limiting your performance.",
+          "keywords": {
+            "0": "lesson",
+            "1": "awareness",
+            "2": "experience",
+            "3": "effort",
+            "4": "performance"
+          },
+          "context": "Your current effort is strengthened by incorporating what you've learned from the past into your work."
+        },
+        "position5": {
+          "upright": "Court, you can change your career by learning from your past experiences.",
+          "reversed": "Reverse Court, accepting the past rather than ignoring it creates progress.",
+          "keywords": {
+            "0": "lesson",
+            "1": "awareness",
+            "2": "past",
+            "3": "rebirth",
+            "4": "change"
+          },
+          "context": "To make a change in your career, you should evaluate your past experiences carefully."
+        },
+        "position6": {
+          "upright": "Court, not learning from past mistakes or avoiding confrontations may have affected you today.",
+          "reversed": "Reversed Court, not confronting the past may be hindering your progress.",
+          "keywords": {
+            "0": "lesson",
+            "1": "confrontation",
+            "2": "past",
+            "3": "reckoning",
+            "4": "delay"
+          },
+          "context": "Not confronting the past may have hindered your current career."
+        },
+        "position7": {
+          "upright": "The court shows that the outcome of the career journey will be rebirth by learning from the past.",
+          "reversed": "Reversed Court, not confronting the past can delay the outcome.",
+          "keywords": {
+            "0": "rebirth",
+            "1": "lesson",
+            "2": "confrontation",
+            "3": "awareness",
+            "4": "future"
+          },
+          "context": "The result will be to confront the past and experience a powerful renewal."
+        }
+      },
+      "theworld": {
+        "position1": {
+          "upright": "The world is the card of completion and wholeness. If where you have reached in your career offers you satisfaction and integrity, you are on the right track.",
+          "reversed": "The Reversed Earth indicates that the cycle is not complete or you feel something is missing.",
+          "keywords": {
+            "0": "completion",
+            "1": "success",
+            "2": "integrity",
+            "3": "satisfaction",
+            "4": "loop"
+          },
+          "context": "Your real career is the path that gives you a sense of fulfillment."
+        },
+        "position2": {
+          "upright": "The world symbolizes completion and transition to new cycles. International opportunities or larger projects may advance you in your career.",
+          "reversed": "Reversed Earth shows that unfinished business slows you down.",
+          "keywords": {
+            "0": "completion",
+            "1": "success",
+            "2": "new cycle",
+            "3": "development",
+            "4": "progress"
+          },
+          "context": "To improve your career, you must finish unfinished business and start new cycles."
+        },
+        "position3": {
+          "upright": "The world shows that completion and closing of cycles occur outside of you. There are universal processes.",
+          "reversed": "The Reversed World tells you that sometimes incompleteness or delays are out of your control.",
+          "keywords": {
+            "0": "completion",
+            "1": "loop",
+            "2": "closing",
+            "3": "universal process",
+            "4": "out of control"
+          },
+          "context": "The ending of some cycles in your career is out of your control."
+        },
+        "position4": {
+          "upright": "The world shows that he is making a holistic effort in his work and is moving towards completion.",
+          "reversed": "Inverted World may prevent the performance of missing details from appearing fully.",
+          "keywords": {
+            "0": "completion",
+            "1": "success",
+            "2": "effort",
+            "3": "performance",
+            "4": "loop"
+          },
+          "context": "Your effort is moving towards holistic success."
+        },
+        "position5": {
+          "upright": "World, you can make change in your career by finishing unfinished business and preparing for new cycles.",
+          "reversed": "Inverted World, closing the gaps will be a critical step for development.",
+          "keywords": {
+            "0": "completion",
+            "1": "loop",
+            "2": "new beginning",
+            "3": "integrity",
+            "4": "change"
+          },
+          "context": "For change in your career, you must close the gaps and prepare for a new cycle."
+        },
+        "position6": {
+          "upright": "The world, unfinished projects or unfinished business in the past may be affecting your current career.",
+          "reversed": "Inverted World, incomplete processes may still be holding you back.",
+          "keywords": {
+            "0": "completion",
+            "1": "lack",
+            "2": "period",
+            "3": "loop",
+            "4": "past"
+          },
+          "context": "Unfinished business in the past hinders your current career."
+        },
+        "position7": {
+          "upright": "The Earth indicates that the outcome of the career journey will be completion, success and wholeness.",
+          "reversed": "Inverted World, incomplete processes can lead to incomplete results.",
+          "keywords": {
+            "0": "completion",
+            "1": "success",
+            "2": "integrity",
+            "3": "victory",
+            "4": "future"
+          },
+          "context": "The result will be to successfully complete the cycle and achieve wholeness."
+        }
+      },
+      "sixofcups": {
+        "position1": {
+          "upright": "The Six of Cups symbolizes happiness from the past, nostalgia and pure joy. You may have a desire to return to your childhood dreams or a direction in your career that truly brings you joy.",
+          "reversed": "The inverted Six of Cups indicates that you are too stuck in the past or that old habits are holding you back. This path may not be taking you forward.",
+          "keywords": {
+            "0": "nostalgia",
+            "1": "past",
+            "2": "happiness",
+            "3": "childhood dream",
+            "4": "pure joy"
+          },
+          "context": "Your real career is in the place that reminds you of your childhood dreams and fills your soul with joy."
+        },
+        "position2": {
+          "upright": "The Six of Cups suggests using your childhood dreams or past experiences as inspiration. This may give you direction.",
+          "reversed": "The inverted Six of Cups indicates that being stuck in the past can hold you back.",
+          "keywords": {
+            "0": "nostalgia",
+            "1": "inspiration",
+            "2": "past",
+            "3": "dream",
+            "4": "moment"
+          },
+          "context": "To improve your career, you should draw strength from your past experiences."
+        },
+        "position3": {
+          "upright": "The Six of Cups says that you cannot change the impact of past experiences and childhood dreams. These are your foundation.",
+          "reversed": "The Six of Cups reversed indicates that being stuck in the past or nostalgia can create effects outside of you.",
+          "keywords": {
+            "0": "past",
+            "1": "moment",
+            "2": "nostalgia",
+            "3": "basis",
+            "4": "out of control"
+          },
+          "context": "You can't completely change the effects of the past on your career."
+        },
+        "position4": {
+          "upright": "The Six of Cups shows that you bring sincerity and past experience to your work.",
+          "reversed": "Inverted Six of Cups, when you dwell too much on the past, your energy may not be fully reflected in the present.",
+          "keywords": {
+            "0": "sincerity",
+            "1": "experience",
+            "2": "past",
+            "3": "sharing",
+            "4": "performance"
+          },
+          "context": "Your effort is supported by sincerity and the strength you draw from your past."
+        },
+        "position5": {
+          "upright": "Six of Cups, moving forward by being inspired by past experiences but without being stuck with them, provides beneficial change in your career.",
+          "reversed": "Inverted Six of Cups, you need to get rid of nostalgia and focus on today.",
+          "keywords": {
+            "0": "past",
+            "1": "experience",
+            "2": "lesson",
+            "3": "awareness",
+            "4": "change"
+          },
+          "context": "For career change, draw inspiration from the past but focus on the future."
+        },
+        "position6": {
+          "upright": "Six of Cups, being too attached to the past or clinging to nostalgia may have hindered your career.",
+          "reversed": "Inverted Six of Cups, not letting go of your past experiences may be tying you to the present.",
+          "keywords": {
+            "0": "nostalgia",
+            "1": "past",
+            "2": "loyalty",
+            "3": "memories",
+            "4": "obstacle"
+          },
+          "context": "Past commitments may have hindered your current career."
+        },
+        "position7": {
+          "upright": "Six of Cups indicates that the outcome of the career journey will be strengthened by support or experiences from the past.",
+          "reversed": "Inverted Six of Cups, excessive attachment to the past can slow down the progress of the outcome.",
+          "keywords": {
+            "0": "past",
+            "1": "experience",
+            "2": "support",
+            "3": "opportunity",
+            "4": "future"
+          },
+          "context": "The result will be to become stronger with your past experiences."
+        }
+      },
+      "sevenofcups": {
+        "position1": {
+          "upright": "The Seven of Cups symbolizes dreams, options and confusion. There may be many paths coming your way in your career, but not all of them are realistic. You have to be careful to make the right choice.",
+          "reversed": "The inverted Seven of Cups indicates that it is time to get rid of dreams and make a clear decision. You begin to distinguish between what is real and what is not.",
+          "keywords": {
+            "0": "dreams",
+            "1": "options",
+            "2": "confusion",
+            "3": "opportunities",
+            "4": "illusion"
+          },
+          "context": "Your true career will be revealed when you choose the one that suits your heart best among multiple options."
+        },
+        "position2": {
+          "upright": "The Seven of Cups recommends that you clarify your options and take concrete steps to make your dreams come true.",
+          "reversed": "The reversed Seven of Cups indicates that dreamy expectations may distract you.",
+          "keywords": {
+            "0": "choice",
+            "1": "vision",
+            "2": "dream",
+            "3": "focus",
+            "4": "decision"
+          },
+          "context": "To improve your career, you must choose the realistic one among the options."
+        },
+        "position3": {
+          "upright": "The Seven of Cups shows that the dreams and abundance of options that come your way are not always within your control.",
+          "reversed": "The Reversed Seven of Cups tells us that confusion or misdirection sometimes arises from external circumstances.",
+          "keywords": {
+            "0": "choice",
+            "1": "dream",
+            "2": "opportunity",
+            "3": "confusion",
+            "4": "out of control"
+          },
+          "context": "You can't choose all the options that come your way in your career."
+        },
+        "position4": {
+          "upright": "The Seven of Cups shows that you strive among many dreams and options, but can sometimes fall apart.",
+          "reversed": "When the Reversed Seven of Cups becomes clear, your performance will be much stronger.",
+          "keywords": {
+            "0": "dream",
+            "1": "choice",
+            "2": "focus",
+            "3": "effort",
+            "4": "performance"
+          },
+          "context": "You have effort, but it becomes more visible when you focus."
+        },
+        "position5": {
+          "upright": "Seven Cups will help you progress in your career by making realistic choices among your dreams.",
+          "reversed": "Inverted Seven of Cups, you need to clear up confusion and focus.",
+          "keywords": {
+            "0": "vote",
+            "1": "vision",
+            "2": "focus",
+            "3": "realism",
+            "4": "change"
+          },
+          "context": "To change your career, you must turn your dreams into a realistic plan."
+        },
+        "position6": {
+          "upright": "Seven Cups may have made his career difficult in the past by dreaming too much and not being able to focus.",
+          "reversed": "The inverted Seven of Cups, confusions and wrong choices may be affecting your path today.",
+          "keywords": {
+            "0": "dream",
+            "1": "confusion",
+            "2": "vote",
+            "3": "focus",
+            "4": "past"
+          },
+          "context": "Uncertain choices in the past affect your career today."
+        },
+        "position7": {
+          "upright": "The Seven of Cups shows that the outcome of your career journey will be shaped by choosing the right option among the options.",
+          "reversed": "The inverted Seven of Cups can slow down the outcome by confusion.",
+          "keywords": {
+            "0": "vote",
+            "1": "vision",
+            "2": "dream",
+            "3": "focus",
+            "4": "future"
+          },
+          "context": "The result will be choosing the right one among your dreams."
+        }
+      },
+      "eightofcups": {
+        "position1": {
+          "upright": "The Eight of Cups symbolizes the courage to leave an unfulfilling path behind. You are ready to move on from an area of ​​your career that no longer brings you happiness.",
+          "reversed": "The reversed Eight of Cups indicates that you are staying where you need to go or are afraid to leave. This may wear you out even more.",
+          "keywords": {
+            "0": "release",
+            "1": "farewell",
+            "2": "journey",
+            "3": "dissatisfaction",
+            "4": "bravery"
+          },
+          "context": "Your true career will appear when you leave the path that no longer nourishes you and take a new path."
+        },
+        "position2": {
+          "upright": "The Eight of Cups suggests leaving a path that no longer serves you. You must boldly move towards a new goal.",
+          "reversed": "The Reversed Eight of Cups tells you that staying where you need to go can slow you down.",
+          "keywords": {
+            "0": "bravery",
+            "1": "release",
+            "2": "progress",
+            "3": "new way",
+            "4": "satisfaction"
+          },
+          "context": "To improve your career, you must let go of things that don't satisfy you."
+        },
+        "position3": {
+          "upright": "The Eight of Cups indicates that some unsatisfactory situations are inevitable. These emotional detachments are out of control.",
+          "reversed": "The Reversed Eight of Cups tells you that the timing of breakups or estrangements is out of your hands.",
+          "keywords": {
+            "0": "break",
+            "1": "dissatisfaction",
+            "2": "separation",
+            "3": "awareness",
+            "4": "out of control"
+          },
+          "context": "Some separations or endings in your career are out of your control."
+        },
+        "position4": {
+          "upright": "The Eight of Cups shows that you are doing your best by moving away from things that do not bring you satisfaction. Your courage is reflected in your performance.",
+          "reversed": "Inverted Eight of Cups, suppressing what is in your heart can make it difficult for effort to show.",
+          "keywords": {
+            "0": "bravery",
+            "1": "dissatisfaction",
+            "2": "break",
+            "3": "awareness",
+            "4": "performance"
+          },
+          "context": "Your effort is strengthened by moving away from things that don't fulfill you."
+        },
+        "position5": {
+          "upright": "The Eight of Cups, leaving behind what does not satisfy you and turning to new paths accelerates your development.",
+          "reversed": "Reversed Eight of Cups, you must learn to leave bravely instead of staying because of fears.",
+          "keywords": {
+            "0": "bravery",
+            "1": "break",
+            "2": "innovation",
+            "3": "vision",
+            "4": "change"
+          },
+          "context": "To change your career, you have to let go of things that don't benefit you."
+        },
+        "position6": {
+          "upright": "Eight of Cups, not letting go of things that did not give you satisfaction in the past may have hindered your career.",
+          "reversed": "Inverted Eight of Cups, holding on to things that need to be let go is affecting your career today.",
+          "keywords": {
+            "0": "break",
+            "1": "dissatisfaction",
+            "2": "bravery",
+            "3": "can't let go",
+            "4": "past"
+          },
+          "context": "Holding on to things in the past that you should have let go of is blocking your path."
+        },
+        "position7": {
+          "upright": "The Eight of Cups indicates that the outcome of your career journey will be moving forward, moving away from things that do not satisfy you.",
+          "reversed": "Reversed Eight of Cups, clinging to the past can slow down results.",
+          "keywords": {
+            "0": "break",
+            "1": "satisfaction",
+            "2": "progress",
+            "3": "vision",
+            "4": "future"
+          },
+          "context": "The result will be to leave behind what does not satisfy you and move forward."
+        }
+      },
+      "nineofcups": {
+        "position1": {
+          "upright": "The Nine of Cups is the card of satisfaction, happiness and abundance. If your current career truly brings you joy and satisfaction, you're on the right track.",
+          "reversed": "The reversed Nine of Cups may indicate superficial satisfaction or an unreal sense of accomplishment. Maybe you feel empty inside.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "happiness",
+            "2": "success",
+            "3": "plenty",
+            "4": "pleasure"
+          },
+          "context": "Your true career is the path that gives you inner happiness and satisfaction."
+        },
+        "position2": {
+          "upright": "The Nine of Cups recommends that you set clear wishes to achieve your goals and take steps that will bring satisfaction.",
+          "reversed": "The reversed Nine of Cups indicates that superficial gratifications may hold you back.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "wish",
+            "2": "aim",
+            "3": "happiness",
+            "4": "success"
+          },
+          "context": "To advance your career, you must set goals that provide real satisfaction."
+        },
+        "position3": {
+          "upright": "The Nine of Cups reminds us that some conditions for satisfaction and happiness depend on external factors. Not every wish you have is in your hands.",
+          "reversed": "The reversed Nine of Cups indicates that superficial satisfactions or disappointments sometimes arise from external circumstances.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "happiness",
+            "2": "wish",
+            "3": "conditions",
+            "4": "out of control"
+          },
+          "context": "You cannot always create the feeling of complete satisfaction in your career."
+        },
+        "position4": {
+          "upright": "The Nine of Cups shows that you are doing your best to achieve satisfaction and happiness in your job.",
+          "reversed": "Inverted Nine of Cups, getting caught up in superficial gratifications may not reflect your performance fully.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "happiness",
+            "2": "success",
+            "3": "effort",
+            "4": "performance"
+          },
+          "context": "Your endeavor is progressing in a way that brings you happiness and satisfaction."
+        },
+        "position5": {
+          "upright": "Nine of Cups, setting new goals while enjoying success creates beneficial change in your career.",
+          "reversed": "Inverted Nine of Cups, you should move forward without getting too carried away with the feeling of satisfaction.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "success",
+            "2": "aim",
+            "3": "progress",
+            "4": "change"
+          },
+          "context": "To change your career, you should set new goals on top of your current successes."
+        },
+        "position6": {
+          "upright": "Nine of Cups, being too caught up in gratification in the past may have slowed down his development.",
+          "reversed": "Inverted Nine of Cups, hiding behind superficial achievements may be limiting your career today.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "success",
+            "2": "comfort zone",
+            "3": "slowdown",
+            "4": "past"
+          },
+          "context": "Being too attached to your comfort zone in the past affects your career today."
+        },
+        "position7": {
+          "upright": "The Nine of Cups indicates that the outcome of the career journey will be personal satisfaction, happiness and success.",
+          "reversed": "Inverted Nine of Cups, superficial gratifications or dissatisfaction may diminish the quality of the outcome.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "success",
+            "2": "happiness",
+            "3": "peace",
+            "4": "future"
+          },
+          "context": "The result will be personal happiness and satisfaction."
+        }
+      },
+      "tenofcups": {
+        "position1": {
+          "upright": "The Ten of Cups is the card of emotional satisfaction, peace and wholeness. If your career is in harmony with other areas in your life, you are on the right track.",
+          "reversed": "The inverted Ten of Cups indicates a disrupted work-life balance or lack of harmony.",
+          "keywords": {
+            "0": "happiness",
+            "1": "rapport",
+            "2": "family",
+            "3": "balance",
+            "4": "peace"
+          },
+          "context": "Your true career is the path that is compatible with all areas of your life."
+        },
+        "position2": {
+          "upright": "Ten of Cups recommends you to balance your work and private life. A harmonious order for development will strengthen you.",
+          "reversed": "Inverted Ten of Cups, disharmony and imbalance can make career advancement difficult.",
+          "keywords": {
+            "0": "balance",
+            "1": "rapport",
+            "2": "happiness",
+            "3": "order",
+            "4": "satisfaction"
+          },
+          "context": "To develop your career, you must maintain your life balance."
+        },
+        "position3": {
+          "upright": "Ten of Cups indicates that you are not in control of some factors that affect your work-life balance. The people and conditions around you are decisive.",
+          "reversed": "The Reversed Ten of Cups reminds you that your lack of harmony sometimes develops outside of you.",
+          "keywords": {
+            "0": "rapport",
+            "1": "balance",
+            "2": "family",
+            "3": "environment",
+            "4": "out of control"
+          },
+          "context": "You cannot provide all the harmony and balance in your career; External conditions are also effective."
+        },
+        "position4": {
+          "upright": "Ten of Cups shows that you are doing your best to create harmony and peace in your work.",
+          "reversed": "Inverted Ten of Cups, discords or unrest can make effort difficult to see.",
+          "keywords": {
+            "0": "rapport",
+            "1": "peace",
+            "2": "balance",
+            "3": "effort",
+            "4": "performance"
+          },
+          "context": "Your efforts are strengthened by creating a harmonious environment."
+        },
+        "position5": {
+          "upright": "Ten of Cups, you can create more harmonious changes in your career by establishing work-life balance.",
+          "reversed": "Inverted Ten Cups will support the development of resolving unrest.",
+          "keywords": {
+            "0": "rapport",
+            "1": "balance",
+            "2": "peace",
+            "3": "satisfaction",
+            "4": "change"
+          },
+          "context": "To change your career, you must consider work-life balance."
+        },
+        "position6": {
+          "upright": "Ten of Cups, pressure from family or environmental expectations may have created limits in your career in the past.",
+          "reversed": "Reversed Ten of Cups, disharmony or family problems may have hindered your current career.",
+          "keywords": {
+            "0": "family",
+            "1": "expectation",
+            "2": "rapport",
+            "3": "oppression",
+            "4": "past"
+          },
+          "context": "Past family pressures affect your career today."
+        },
+        "position7": {
+          "upright": "Ten of Cups indicates that the outcome of the career journey will bring harmonious life balance and peace.",
+          "reversed": "The inverted Ten of Cups may overshadow the outcome of unrest or disharmony.",
+          "keywords": {
+            "0": "rapport",
+            "1": "balance",
+            "2": "peace",
+            "3": "completion",
+            "4": "future"
+          },
+          "context": "The result will be a peaceful and balanced life."
+        }
+      },
+      "pageofcups": {
+        "position1": {
+          "upright": "The Prince of Cups brings new ideas, creativity and intuitive insights. A creative start or a surprising opportunity may appear in your career.",
+          "reversed": "The Prince of Cups reversed indicates that you are acting out of immature emotions or dreamy expectations. This could lead you down an unrealistic path.",
+          "keywords": {
+            "0": "creativity",
+            "1": "inspiration",
+            "2": "intuition",
+            "3": "new opportunities",
+            "4": "imagination"
+          },
+          "context": "Your real career is where you can freely express your intuition and imagination."
+        },
+        "position2": {
+          "upright": "The Prince of Cups recommends you try your creative ideas boldly. Starting new projects can move you forward.",
+          "reversed": "The Prince of Cups reversed indicates that opportunities may be missed due to dreaminess and carelessness.",
+          "keywords": {
+            "0": "creativity",
+            "1": "inspiration",
+            "2": "attempt",
+            "3": "idea",
+            "4": "discovery"
+          },
+          "context": "To improve your career, you must put your creative ideas into practice."
+        },
+        "position3": {
+          "upright": "The Prince of Cups indicates that you are not in control of when inspiration and creative ideas arise.",
+          "reversed": "The Prince of Cups Reversed suggests that the natural cycle of disappointments or lack of inspiration develops outside of you.",
+          "keywords": {
+            "0": "inspiration",
+            "1": "idea",
+            "2": "creativity",
+            "3": "dream",
+            "4": "out of control"
+          },
+          "context": "You cannot completely determine the arrival of inspiration in your career."
+        },
+        "position4": {
+          "upright": "The Prince of Cups shows that he brings creativity and curiosity to his work. Your sincere effort stands out.",
+          "reversed": "Inverted Prince of Cups, carelessness or dreaminess may limit performance.",
+          "keywords": {
+            "0": "creativity",
+            "1": "curiosity",
+            "2": "inspiration",
+            "3": "effort",
+            "4": "performance"
+          },
+          "context": "Your efforts are evident in what you bring to your work with sincerity and curiosity."
+        },
+        "position5": {
+          "upright": "Prince of Cups: Using your imagination more and trying new ideas brings beneficial change in your career.",
+          "reversed": "Prince of Inverted Cups, you should stop dreaming and put your ideas into practice.",
+          "keywords": {
+            "0": "creativity",
+            "1": "idea",
+            "2": "inspiration",
+            "3": "attempt",
+            "4": "change"
+          },
+          "context": "To change your career, you must put your ideas into practice."
+        },
+        "position6": {
+          "upright": "The Prince of Cups may have hindered his career in the past by not putting his dreams into practice or being too dreamy.",
+          "reversed": "Prince of Cups Reversed: A lack of emotional maturity may have limited opportunities in the past.",
+          "keywords": {
+            "0": "dream",
+            "1": "APPLICATION",
+            "2": "maturity",
+            "3": "vision",
+            "4": "past"
+          },
+          "context": "Not putting your dreams into practice in the past hinders your career today."
+        },
+        "position7": {
+          "upright": "The Prince of Cups indicates that the outcome of your career journey will be shaped by new ideas and creativity.",
+          "reversed": "The Reversed Prince of Cups may delay results due to wishful thinking or lack of execution.",
+          "keywords": {
+            "0": "creativity",
+            "1": "idea",
+            "2": "dream",
+            "3": "attempt",
+            "4": "future"
+          },
+          "context": "The result will be creating new opportunities with your creativity."
+        }
+      },
+      "knightofcups": {
+        "position1": {
+          "upright": "The Knight of Cups symbolizes following your ideals and following your heart. An emotionally satisfying path may be waiting for you in your career.",
+          "reversed": "The reversed Knight of Cups indicates that you are caught up in dreaminess, escapism, or unrealistic goals.",
+          "keywords": {
+            "0": "ideals",
+            "1": "feeling",
+            "2": "creativity",
+            "3": "quest",
+            "4": "dream"
+          },
+          "context": "Your true career will find you when you follow your heart."
+        },
+        "position2": {
+          "upright": "The Knight of Cups recommends that you follow your ideals. Developing passion and emotional connection in your career will grow you.",
+          "reversed": "The Knight of Cups reversed shows that you should not get caught up in unrealistic goals.",
+          "keywords": {
+            "0": "ideal",
+            "1": "passion",
+            "2": "creativity",
+            "3": "opportunity",
+            "4": "vision"
+          },
+          "context": "To improve your career, you should focus on the goals you set your heart on."
+        },
+        "position3": {
+          "upright": "The Knight of Cups tells you that the time for idealistic opportunities or emotional overtures is not in your hands.",
+          "reversed": "The Knight of Cups reversed indicates that disappointments sometimes arise from external circumstances.",
+          "keywords": {
+            "0": "ideal",
+            "1": "opportunity",
+            "2": "vision",
+            "3": "dream",
+            "4": "out of control"
+          },
+          "context": "You can't change the timing of some offers in your career."
+        },
+        "position4": {
+          "upright": "The Knight of Cups shows that he has an idealistic approach to his work and tries to do his best.",
+          "reversed": "Reversed Knight of Cups: Excessive dreaminess or passivity can undermine the effect of effort.",
+          "keywords": {
+            "0": "idealism",
+            "1": "vision",
+            "2": "sincerity",
+            "3": "effort",
+            "4": "performance"
+          },
+          "context": "Çaban stands out with his idealistic approach."
+        },
+        "position5": {
+          "upright": "The Knight of Cups, translating his idealism into concrete projects brings powerful change in his career.",
+          "reversed": "Reversed Knight of Cups, staying away from excessive dreaminess will take you further.",
+          "keywords": {
+            "0": "idealism",
+            "1": "vision",
+            "2": "opportunity",
+            "3": "APPLICATION",
+            "4": "change"
+          },
+          "context": "To change your career, you must turn your vision into practice."
+        },
+        "position6": {
+          "upright": "The Knight of Cups may have been too idealistic in the past and not taking concrete steps, which may have made his career difficult.",
+          "reversed": "Reversed Knight of Cups, being disconnected from reality may have prevented you from moving forward in the past.",
+          "keywords": {
+            "0": "idealism",
+            "1": "vision",
+            "2": "realism",
+            "3": "opportunity",
+            "4": "past"
+          },
+          "context": "Excessive idealism in the past affects his career today."
+        },
+        "position7": {
+          "upright": "The Knight of Cups indicates that the outcome of your career journey will be progress with idealistic goals and vision.",
+          "reversed": "The Knight of Cups reversed can be debilitating as a result of detachment from reality.",
+          "keywords": {
+            "0": "vision",
+            "1": "idealism",
+            "2": "aim",
+            "3": "opportunity",
+            "4": "future"
+          },
+          "context": "The result will be to move forward with idealistic goals."
+        }
+      },
+      "queenofcups": {
+        "position1": {
+          "upright": "The Queen of Cups symbolizes empathy, intuition and emotional depth. You are in the right place in your career where you benefit and inspire others.",
+          "reversed": "The Queen of Cups reversed may indicate excessive emotionality or neglect of one's own needs.",
+          "keywords": {
+            "0": "empathy",
+            "1": "intuition",
+            "2": "feeling",
+            "3": "compassion",
+            "4": "inspiration"
+          }
+        }
+      }
+    }
+  }
+}

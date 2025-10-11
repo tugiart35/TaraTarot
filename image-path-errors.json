@@ -1,0 +1,475 @@
+[
+  {
+    "card": "the-magician",
+    "error": "imageUrl yok",
+    "current": "yok",
+    "suggestion": null
+  },
+  {
+    "card": "the-devil",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/XV-TheDevil.webp",
+    "realFile": null,
+    "suggestions": [
+      "I-Magician",
+      "V-Cups",
+      "V-Hierophant"
+    ]
+  },
+  {
+    "card": "the-tower",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/XVI-TheTower.webp",
+    "realFile": null,
+    "suggestions": [
+      "I-Magician",
+      "V-Cups",
+      "V-Hierophant"
+    ]
+  },
+  {
+    "card": "the-star",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws XVII-TheStar.webp",
+    "realFile": null,
+    "suggestions": [
+      "I-Magician",
+      "II-Cups",
+      "II-HighPriestess"
+    ]
+  },
+  {
+    "card": "the-star",
+    "error": "Yolda eksik \"/\"",
+    "current": "/cards/rws XVII-TheStar.webp",
+    "fixed": "/cards/rws/XVII-TheStar.webp"
+  },
+  {
+    "card": "the-moon",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws XVIII-TheMoon.webp",
+    "realFile": null,
+    "suggestions": [
+      "I-Magician",
+      "II-Cups",
+      "II-HighPriestess"
+    ]
+  },
+  {
+    "card": "the-moon",
+    "error": "Yolda eksik \"/\"",
+    "current": "/cards/rws XVIII-TheMoon.webp",
+    "fixed": "/cards/rws/XVIII-TheMoon.webp"
+  },
+  {
+    "card": "the-sun",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/XIX-TheSun.webp",
+    "realFile": null,
+    "suggestions": [
+      "I-Magician",
+      "IX-Cups",
+      "IX-Hermit"
+    ]
+  },
+  {
+    "card": "judgment",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/XX-Judgment.webp",
+    "realFile": null,
+    "suggestions": [
+      "X-Cups",
+      "X-Pentacles",
+      "X-Swords"
+    ]
+  },
+  {
+    "card": "the-world",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/XXI-TheWorld.webp",
+    "realFile": null,
+    "suggestions": [
+      "I-Magician",
+      "X-Cups",
+      "X-Pentacles"
+    ]
+  },
+  {
+    "card": "ace-of-wands",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Ace-of-Wands.webp",
+    "realFile": null,
+    "suggestions": [
+      "Ace-Cups",
+      "Ace-Pentacles",
+      "Ace-Swords"
+    ]
+  },
+  {
+    "card": "two-of-wands",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Two-of-Wands.webp",
+    "realFile": null,
+    "suggestions": []
+  },
+  {
+    "card": "three-of-wands",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Three-of-Wands.webp",
+    "realFile": null,
+    "suggestions": []
+  },
+  {
+    "card": "four-of-wands",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Four-of-Wands.webp",
+    "realFile": null,
+    "suggestions": []
+  },
+  {
+    "card": "five-of-wands",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Five-of-Wands.webp",
+    "realFile": null,
+    "suggestions": [
+      "I-Magician",
+      "IV-Cups",
+      "IV-Emperor"
+    ]
+  },
+  {
+    "card": "six-of-wands",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Six-of-Wands.webp",
+    "realFile": null,
+    "suggestions": [
+      "I-Magician",
+      "IX-Cups",
+      "IX-Hermit"
+    ]
+  },
+  {
+    "card": "seven-of-wands",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Seven-of-Wands.webp",
+    "realFile": null,
+    "suggestions": [
+      "V-Cups",
+      "V-Hierophant",
+      "V-Pentacles"
+    ]
+  },
+  {
+    "card": "eight-of-wands",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Eight-of-Wands.webp",
+    "realFile": null,
+    "suggestions": [
+      "I-Magician"
+    ]
+  },
+  {
+    "card": "nine-of-wands",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Nine-of-Wands.webp",
+    "realFile": null,
+    "suggestions": [
+      "I-Magician"
+    ]
+  },
+  {
+    "card": "ten-of-wands",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Ten-of-Wands.webp",
+    "realFile": null,
+    "suggestions": []
+  },
+  {
+    "card": "page-of-wands",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Page-of-Wands.webp",
+    "realFile": null,
+    "suggestions": [
+      "Page-Cups",
+      "Page-Pentacles",
+      "Page-Swords"
+    ]
+  },
+  {
+    "card": "knight-of-wands",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Knight-of-Wands.webp",
+    "realFile": null,
+    "suggestions": [
+      "I-Magician",
+      "Knight-Cups",
+      "Knight-Pentacles"
+    ]
+  },
+  {
+    "card": "ace-of-pentacles",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Ace-of-Pentacles.webp",
+    "realFile": null,
+    "suggestions": [
+      "Ace-Cups",
+      "Ace-Pentacles",
+      "Ace-Swords"
+    ]
+  },
+  {
+    "card": "two-of-pentacles",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Two-of-Pentacles.webp",
+    "realFile": null,
+    "suggestions": []
+  },
+  {
+    "card": "three-of-pentacles",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Three-of-Pentacles.webp",
+    "realFile": null,
+    "suggestions": []
+  },
+  {
+    "card": "four-of-pentacles",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Four-of-Pentacles.webp",
+    "realFile": null,
+    "suggestions": []
+  },
+  {
+    "card": "five-of-pentacles",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Five-of-Pentacles.webp",
+    "realFile": null,
+    "suggestions": [
+      "I-Magician",
+      "IV-Cups",
+      "IV-Emperor"
+    ]
+  },
+  {
+    "card": "six-of-pentacles",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Six-of-Pentacles.webp",
+    "realFile": null,
+    "suggestions": [
+      "I-Magician",
+      "IX-Cups",
+      "IX-Hermit"
+    ]
+  },
+  {
+    "card": "seven-of-pentacles",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Seven-of-Pentacles.webp",
+    "realFile": null,
+    "suggestions": [
+      "V-Cups",
+      "V-Hierophant",
+      "V-Pentacles"
+    ]
+  },
+  {
+    "card": "eight-of-pentacles",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Eight-of-Pentacles.webp",
+    "realFile": null,
+    "suggestions": [
+      "I-Magician"
+    ]
+  },
+  {
+    "card": "nine-of-pentacles",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Nine-of-Pentacles.webp",
+    "realFile": null,
+    "suggestions": [
+      "I-Magician"
+    ]
+  },
+  {
+    "card": "ten-of-pentacles",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Ten-of-Pentacles.webp",
+    "realFile": null,
+    "suggestions": []
+  },
+  {
+    "card": "page-of-pentacles",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Page-of-Pentacles.webp",
+    "realFile": null,
+    "suggestions": [
+      "Page-Cups",
+      "Page-Pentacles",
+      "Page-Swords"
+    ]
+  },
+  {
+    "card": "knight-of-pentacles",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Knight-of-Pentacles.webp",
+    "realFile": null,
+    "suggestions": [
+      "I-Magician",
+      "Knight-Cups",
+      "Knight-Pentacles"
+    ]
+  },
+  {
+    "card": "queen-of-pentacles",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Queen-of-Pentacles.webp",
+    "realFile": null,
+    "suggestions": [
+      "Queen-Cups",
+      "Queen-Pentacles",
+      "Queen-Swords"
+    ]
+  },
+  {
+    "card": "king-of-pentacles",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/King-of-Pentacles.webp",
+    "realFile": null,
+    "suggestions": [
+      "I-Magician",
+      "King-Cups",
+      "King-Pentacles"
+    ]
+  },
+  {
+    "card": "ace-of-cups",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Ace-of-Cups.webp",
+    "realFile": null,
+    "suggestions": [
+      "Ace-Cups",
+      "Ace-Pentacles",
+      "Ace-Swords"
+    ]
+  },
+  {
+    "card": "two-of-cups",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Two-of-Cups.webp",
+    "realFile": null,
+    "suggestions": []
+  },
+  {
+    "card": "three-of-cups",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Three-of-Cups.webp",
+    "realFile": null,
+    "suggestions": []
+  },
+  {
+    "card": "four-of-cups",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Four-of-Cups.webp",
+    "realFile": null,
+    "suggestions": []
+  },
+  {
+    "card": "five-of-cups",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Five-of-Cups.webp",
+    "realFile": null,
+    "suggestions": [
+      "I-Magician",
+      "IV-Cups",
+      "IV-Emperor"
+    ]
+  },
+  {
+    "card": "six-of-cups",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Six-of-Cups.webp",
+    "realFile": null,
+    "suggestions": [
+      "I-Magician",
+      "IX-Cups",
+      "IX-Hermit"
+    ]
+  },
+  {
+    "card": "seven-of-cups",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Seven-of-Cups.webp",
+    "realFile": null,
+    "suggestions": [
+      "V-Cups",
+      "V-Hierophant",
+      "V-Pentacles"
+    ]
+  },
+  {
+    "card": "eight-of-cups",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/8-of-Cups.webp",
+    "realFile": null,
+    "suggestions": []
+  },
+  {
+    "card": "nine-of-cups",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Nine-of-Cups.webp",
+    "realFile": null,
+    "suggestions": [
+      "I-Magician"
+    ]
+  },
+  {
+    "card": "ten-of-cups",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Ten-of-Cups.webp",
+    "realFile": null,
+    "suggestions": []
+  },
+  {
+    "card": "page-of-cups",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Page-of-Cups.webp",
+    "realFile": null,
+    "suggestions": [
+      "Page-Cups",
+      "Page-Pentacles",
+      "Page-Swords"
+    ]
+  },
+  {
+    "card": "knight-of-cups",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Knight-of-Cups.webp",
+    "realFile": null,
+    "suggestions": [
+      "I-Magician",
+      "Knight-Cups",
+      "Knight-Pentacles"
+    ]
+  },
+  {
+    "card": "queen-of-cups",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/Queen-of-Cups.webp",
+    "realFile": null,
+    "suggestions": [
+      "Queen-Cups",
+      "Queen-Pentacles",
+      "Queen-Swords"
+    ]
+  },
+  {
+    "card": "king-of-cups",
+    "error": "Dosya bulunamadı",
+    "current": "/cards/rws/King-of-Cups.webp",
+    "realFile": null,
+    "suggestions": [
+      "I-Magician",
+      "King-Cups",
+      "King-Pentacles"
+    ]
+  }
+]

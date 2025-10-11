@@ -1,0 +1,1406 @@
+{
+  "dashboard": {
+    "errors": {
+      "statsLoadFailed": "Could not load statistics",
+      "creditRefreshFailed": "Credit balance could not be renewed",
+      "loadError": "An error occurred while loading Dashboard components."
+    },
+    "sections": {
+      "welcome": "Welcome",
+      "statistics": "Statistics",
+      "creditPackages": "Credit Packages",
+      "profileManagement": "Profile Management",
+      "recentActivity": "Latest Activities"
+    },
+    "ariaLabel": {
+      "profileOptions": "Profile management options"
+    },
+    "creditBalanceRefreshed": "Credit balance could not be renewed",
+    "time": {
+      "day": "day",
+      "days": "day",
+      "month": "month",
+      "months": "month",
+      "year": "year",
+      "years": "year"
+    },
+    "userLevels": {
+      "master": "Expert",
+      "experienced": "Experienced",
+      "intermediate": "Middle",
+      "beginner": "Beginning",
+      "new": "New"
+    },
+    "level": "Level",
+    "creditPackages": "Credit Packages",
+    "kullanimlar": "Uses",
+    "iadeler": "Refunds",
+    "bonuslar": "Bonuses",
+    "kredi-gecmisi-yuklenirken": "An error occurred while loading credit history",
+    "bonus": "Bonus",
+    "iade": "Return",
+    "kullanim": "Use",
+    "tarih": "History",
+    "miktar": "Amount",
+    "aciklama": "Explanation",
+    "dashboard": "dashboard",
+    "busbuskimki": "Büşbüşkimki",
+    "kisisel-dashboard-sayfasi": "Personal dashboard page",
+    "personal-dashboard-page": "Personal dashboard page",
+    "organization": "organization",
+    "audience": "Audience",
+    "numeroloji-analizi": "Numerology analysis",
+    "ask-acilimi": "love expansion",
+    "kariyer-okumasi": "career reading",
+    "genel-okuma": "general reading",
+    "oncelikli-destek": "Priority support",
+    "profil-bilgileri-yuklenemedi": "Failed to load profile information",
+    "tarot-okumalariniz-icin": "Buy the credits you need for your tarot readings",
+    "kredileriniz-hemen-hesabiniza": "Your credits are added to your account immediately",
+    "buyuk-paketlerde-ekstra": "Earn extra credit on large packages",
+    "okumalarim": "My readings",
+    "tum-mistik-deneyimleriniz": "All your mystical experiences",
+    "numeroloji": "Numerology",
+    "goruntule": "View",
+    "profil-bilgilerinizi-duzenlemek": "Dashboard to edit your profile information",
+    "bildirimler": "Notifications",
+    "gizlilik": "Security",
+    "guvenlik": "Security",
+    "tarot-veya-numeroloji": "Get notified when your tarot or numerology reading is complete",
+    "kredi-bakiyeniz-dustugunde": "Get notified when your credit balance drops",
+    "aylik-numeroloji-ve": "Get your monthly numerology and tarot digest",
+    "ozel-indirimler-ve": "Be informed about special discounts and campaigns",
+    "profilinizi-diger-kullanicilar": "Let other users see your profile",
+    "okuma-gecmisinizi-diger": "Let other users see your reading history",
+    "istatistiklerinizi-diger-kullanicilar": "Let other users see your statistics",
+    "hizmet-kalitesini-artirmak": "Collect anonymous data to improve service quality",
+    "hesap-guvenliginiz-icin": "Update your password for your account security",
+    "mevcut-sifrenizi-girin": "Enter your current password",
+    "yeni-sifrenizi-girin": "Enter your new password",
+    "yeni-sifrenizi-tekrar": "Re-enter your new password",
+    "iptal": "Cancel",
+    "indir": "Download",
+    "hesabinizi-ve-tum": "Permanently delete your account and all your data",
+    "henuz-yok": "not yet",
+    "bilinmeyen": "Unknown",
+    "pazartesi": "Monday",
+    "sali": "Tuesday",
+    "carsamba": "Wednesday",
+    "persembe": "Thursday",
+    "cuma": "Friday",
+    "cumartesi": "Saturday",
+    "pazar": "Sunday",
+    "kullanici": "User",
+    "mistik-yolculugunuzda-ilerlemenizi": "Track your progress on your mystical journey",
+    "yenile": "Refresh",
+    "numerolojik-rehberliginiz-ve": "In-depth analysis of your numerological guidance and reading habits",
+    "desenler": "patterns",
+    "bu-ay": "this month",
+    "ortalama": "Average",
+    "en-uzun": "longest",
+    "aktif-seri": "active series",
+    "kredi-maliyeti": "Credit cost",
+    "premium-okuma": "premium reading",
+    "artis": "Increase",
+    "azalis": "decrease",
+    "yuksek": "High",
+    "orta": "Middle",
+    "dusuk": "Low",
+    "isim": "Name",
+    "belirtilmemis": "Unspecified",
+    "soyisim": "surname",
+    "numeroloji-hesaplamalari-icin": "Full name and surname are recommended for numerology calculations",
+    "kisilik": "Personality",
+    "olgunluk": "Maturity",
+    "henuz-okuma-yapmadiniz": "You haven't read yet",
+    "favori-diziliminiz-henuz": "Your favorite lineup has not been determined yet",
+    "gunluk-okuma-aliskanligi": "Focus on building a daily reading habit",
+    "bu-ay-daha": "You can exceed your goals by reading more this month",
+    "daha-ekonomik-okuma": "You can try more economical reading types",
+    "kredi-kullaniminiz-verimli": "Your credit usage looks efficient",
+    "memberSince": "Become a member",
+    "readings": "Readings",
+    "expert": "Expert",
+    "intermediate": "Middle",
+    "beginner": "Beginning",
+    "signOut": "Sign Out"
+  },
+  "accessibility": {
+    "goToPage": "go to page",
+    "languageOptions": "Language options",
+    "openLanguageMenu": "Open language selector menu",
+    "selectLanguage": "choose your language",
+    "skipToMain": "Skip to main content"
+  },
+  "admin": {
+    "errors": {
+      "packagePurchaseError": "An error occurred while purchasing the package. Please try again.",
+      "positionRequired": "You must add at least one position",
+      "spreadSaveError": "An error occurred while saving the lineup"
+    },
+    "success": {
+      "profileUpdated": "Profile updated successfully!"
+    }
+  },
+  "auth": {
+    "audit": {
+      "loginFailed": "Failed login attempt",
+      "loginSuccess": "Successful login",
+      "logout": "Checked out",
+      "passwordChanged": "Password has been changed",
+      "paymentMethodAdded": "Payment method added",
+      "paymentMethodRemoved": "Payment method removed",
+      "profileUpdated": "Profile updated",
+      "securityAlert": "Security warning",
+      "subscriptionCanceled": "Subscription canceled",
+      "subscriptionCreated": "Subscription created",
+      "suspiciousActivity": "Suspicious activity detected"
+    },
+    "errors": {
+      "allLanguagesRequired": "Please enter name in all languages",
+      "apiKeyCreateError": "Error occurred while creating API key",
+      "apiKeyUpdateError": "Error while updating API key",
+      "loginRequired": "Please log in",
+      "userSelectionRequired": "Please select a user"
+    },
+    "notice": {
+      "accountCreated": "Account created successfully",
+      "checkEmail": "Check your email address and confirm your membership",
+      "confirmationEmailSent": "Confirmation email sent",
+      "confirmationFailed": "Email confirmation failed",
+      "emailConfirmed": "Your email address has been confirmed! 100 credits were given as a gift.",
+      "emailVerified": "Email address verified",
+      "openEmailApp": "Open Email Application",
+      "openGmail": "Open in Gmail",
+      "openOutlook": "Open in Outlook",
+      "openYahoo": "Open in Yahoo Mail",
+      "passwordChanged": "Password changed successfully",
+      "passwordResetSent": "Password reset link sent",
+      "profileUpdated": "Profile updated"
+    },
+    "page": {
+      "ageTooYoung": "You must be at least 13 years old",
+      "ageInvalid": "Enter a valid age",
+      "backToLogin": "Return to login page",
+      "birthDate": "Date of birth",
+      "birthDateMaxAge": "Enter a valid date of birth",
+      "birthDateMinAge": "Users under 13 years of age cannot register",
+      "birthDatePlaceholder": "Date of birth",
+      "birthDateRequired": "Date of birth required",
+      "callbackFailed": "Login failed. Please try again.",
+      "cancel": "Cancel",
+      "checkingAuth": "🔍 Checking login status…",
+      "checkingEmail": "📧 Checking email…",
+      "confirmPassword": "Password Confirmation",
+      "confirmPasswordPlaceholder": "Reenter password",
+      "confirmPasswordRequired": "Password confirmation required",
+      "databaseError": "Database error occurred",
+      "email": "Email",
+      "emailInvalid": "Enter a valid email address",
+      "emailNotConfirmed": "Email address not confirmed",
+      "emailPlaceholder": "Your email address",
+      "emailRequired": "Email address required",
+      "errorOccurred": "An error occurred",
+      "facebookSignIn": "Login with Facebook",
+      "facebookSignUp": "Sign Up with Facebook",
+      "female": "Woman",
+      "firstName": "Name",
+      "forgotPassword": "I forgot my password",
+      "gender": "Gender",
+      "genderFemale": "Woman",
+      "genderMale": "Male",
+      "genderOther": "Other",
+      "genderPlaceholder": "Choose gender",
+      "genderPreferNotToSay": "I do not want to specify",
+      "genderRequired": "Gender selection required",
+      "googleSignIn": "Sign in with Google",
+      "googleSignUp": "Sign Up with Google",
+      "hasAccount": "Already have an account? Sign in",
+      "invalidCredentials": "Invalid email or password",
+      "journeyStart": "Start Your Journey",
+      "lastName": "Surname",
+      "loggingIn": "🔐 Logging in…",
+      "login": "Login",
+      "loginSubtitle": "Log in to your account",
+      "loginTitle": "Login",
+      "male": "Male",
+      "mysticalEntry": "Entrance to the Mystical World",
+      "nameMinLength": "Name must be at least 2 characters",
+      "namePlaceholder": "Name",
+      "nameRequired": "Name required",
+      "noAccount": "Don't have an account? Sign up",
+      "orContinueWith": "or continue with",
+      "other": "Other",
+      "password": "Password",
+      "passwordInvalid": "Password is invalid",
+      "passwordMinLength": "Password must be at least 6 characters",
+      "passwordMismatch": "Passwords do not match",
+      "passwordPlaceholder": "Your password",
+      "passwordRequired": "Password required",
+      "passwordsNotMatch": "Passwords do not match",
+      "passwordTooShort": "Password must be at least 6 characters",
+      "processing": "⏳ Processing…",
+      "redirecting": "Redirecting to the login page…",
+      "register": "Sign Up",
+      "registerSubtitle": "Create new account",
+      "registerTitle": "Sign Up",
+      "registering": "📝 Registration is being created…",
+      "rememberMe": "remember me",
+      "resetPassword": "Reset Password",
+      "resetPasswordEmailSent": "Password reset link has been sent to your email address",
+      "resetPasswordError": "Password reset link could not be sent",
+      "resetPasswordSubtitle": "Enter your email address and we'll send you a password reset link",
+      "resetPasswordTitle": "Password Reset",
+      "selectGender": "Choose gender",
+      "sendResetEmail": "Send Reset Email",
+      "signIn": "🔮 Login",
+      "signUp": "✨ Sign Up",
+      "successLogin": "Login successful! Redirecting…",
+      "successRegister": "Registration successful! Please check your email.",
+      "surnameMinLength": "Surname must be at least 2 characters",
+      "surnamePlaceholder": "Surname",
+      "surnameRequired": "Surname required",
+      "userAlreadyExists": "This email address is already registered",
+      "validating": "🔍 Verifying…",
+      "waiting": "⏳ Waiting…"
+    },
+    "permissions": {
+      "accessDenied": "You are not authorized to access this page",
+      "adminOnly": "This feature is only for administrators",
+      "contactAdmin": "Contact the administrator",
+      "insufficientPermissions": "You do not have sufficient permissions for this operation",
+      "loginRequired": "You must be logged in to access this page",
+      "premiumRequired": "This feature is for premium members",
+      "subscriptionRequired": "Subscription required for this feature",
+      "upgradeAccount": "Upgrade your account"
+    },
+    "pwa": {
+      "backgroundSync": "Background Sync",
+      "enableNotifications": "Enable Notifications",
+      "installButton": "Upload",
+      "installDescription": "Add the app to your home screen for faster access",
+      "installLater": "Later",
+      "installPrompt": "Add App to Home Screen",
+      "notificationDenied": "Notification permission denied",
+      "notificationPermission": "Notification permission required",
+      "offlineMessage": "You do not have an internet connection. Some features may be limited.",
+      "offlineMode": "Offline Mode",
+      "pushNotifications": "Notifications",
+      "syncWhenOnline": "It will sync when you are online"
+    },
+    "roles": {
+      "accessDenied": "You are not authorized to access this page",
+      "admin": "Executive",
+      "contactAdmin": "Contact the administrator",
+      "guest": "Guest",
+      "insufficientPermissions": "You do not have sufficient permissions for this operation",
+      "premium": "Premium Member",
+      "upgradeAccount": "Upgrade your account",
+      "user": "User"
+    },
+    "security": {
+      "accountLocked": "Your account has been temporarily locked. Please try again later.",
+      "biometricAuth": "Biometric Authentication",
+      "biometricFailed": "Biometric authentication failed",
+      "biometricNotAvailable": "Biometric authentication not available",
+      "faceIdAuth": "Login with Face ID",
+      "fingerprintAuth": "Login with Fingerprint",
+      "rateLimitExceeded": "There have been many attempts. Please try again later.",
+      "sessionExpired": "Your session has expired. Please log in again.",
+      "suspiciousActivity": "Suspicious activity has been detected. Your account has been locked for security.",
+      "twoFactorCode": "verification code",
+      "twoFactorCodeExpired": "Verification code has expired",
+      "twoFactorCodeInvalid": "Invalid verification code",
+      "twoFactorCodePlaceholder": "Enter 6-digit verification code",
+      "twoFactorCodeSent": "Verification code sent to your email address",
+      "twoFactorRequired": "Two-factor authentication required"
+    },
+    "signIn": "Login",
+    "signOut": "Sign Out"
+  },
+  "cardGroups": {
+    "cups": "trophies",
+    "majorArcana": "Major Arcana",
+    "pentacles": "talismans",
+    "swords": "swords",
+    "wands": "wands"
+  },
+  "cards": {
+    "altText": "Tarot Card",
+    "reversed": "Opposite",
+    "reversedMeaning": "Reverse Meaning:",
+    "upright": "Straight",
+    "uprightMeaning": "Denotation:",
+    "errors": {
+      "notFound": "Card Not Found",
+      "notFoundDescription": "The tarot card you were looking for was not found."
+    }
+  },
+  "career": {
+    "data": {
+      "badgeText": "CAREER",
+      "cardDirections": {
+        "reversed": "Opposite",
+        "upright": "Straight"
+      },
+      "detailedTitle": "Career Expansion - Detailed Personal Reading",
+      "interpretationTitle": "Career Expansion Commentary",
+      "readingFormats": {
+        "detailed": "voice",
+        "simple": "Simple",
+        "written": "Written"
+      },
+      "simpleInterpretation": "Simple reading - just the meter",
+      "simpleTitle": "Simple Reading",
+      "spreadName": "Career Expansion",
+      "spreadTitle": "Career Expansion"
+    },
+    "form": {
+      "birthDate": "Date of birth",
+      "clearAll": "Clear All Cards",
+      "communicationMethod": "Communication Method",
+      "concernQuestion": "What are you most worried about career-wise?",
+      "email": "Email",
+      "emailCommunication": "Email",
+      "emotionalQuestion": "What emotional obstacles do you experience when it comes to career?",
+      "firstName": "Name",
+      "lastName": "Surname",
+      "personalInfo": "Personal Information",
+      "phone": "Phone Number",
+      "placeholders": {
+        "concernQuestion": "Does my job make me happy, am I on the right track?…",
+        "email": "example@email.com",
+        "emotionalQuestion": "Fear of failure, the thought of not being good enough...",
+        "firstName": "Your name",
+        "lastName": "your surname",
+        "understandingQuestion": "A more creative job, working abroad, starting my own business..."
+      },
+      "questions": "Your Career Questions",
+      "saveAndOpen": "Save and Open Cards",
+      "saving": "Recording…",
+      "understandingQuestion": "What areas do you want to understand better in your career?",
+      "whatsappCommunication": "WhatsApp"
+    },
+    "messages": {
+      "allCardsRequired": "Comments cannot be created without selecting all cards.",
+      "configurationNotFound": "Career Expansion configuration not found. Please check the tarotSpreads.ts file.",
+      "formUnsavedWarning": "The form has been filled but not saved. Are you sure you want to quit?",
+      "interpretationGreeting": "Dear client, specially prepared analysis for your career and money question \"{question}\":",
+      "interpretationTitle": "Career Expansion",
+      "loginRequired": "You must log in to read.",
+      "readingSaveError": "An error occurred while saving the reading.",
+      "readingSavedSuccess": "Your reading has been successfully saved!",
+      "selectReadingTypeFirst": "Please select a reading type first.",
+      "simpleReadingCompleted": "Simple reading completed!"
+    },
+    "modals": {
+      "aboutSpread": "About Career Expansion",
+      "aboutSpreadText": "These 7 cards; It makes visible your current situation, strengths, obstacles and opportunities. It offers a road map that activates your inner potential—a clear and compassionate bridge from today to tomorrow.",
+      "cancel": "Cancel",
+      "cardCountText": "Total 7 cards: (1) Current Status (2) Strengths (3) Obstacles (4) Opportunities (5) Resources/Support (6) Roadmap (7) Conclusion & Recommendation.",
+      "cardCountTitle": "Number of Cards",
+      "confirm": "Yes, I Approve",
+      "continue": "Continue",
+      "creditConfirm": "Credit Approval",
+      "creditConfirmMessage": "Credit will be used for this career expansion. Are you sure you want to continue?",
+      "detailedReading": "Reading Aloud",
+      "detailedReadingText": "Take your comment as a warm voice recording. It is specially prepared for you; You can download and listen whenever you want.",
+      "infoTitle": "Career Expansion",
+      "loveAttention": "After recording the reading, I usually email your personal comment within 2–4 hours. This study is for guidance purposes only; The final choices are yours.",
+      "loveAttentionInfo": "A Kind Note",
+      "process": "Period",
+      "processing": "Processing…",
+      "redirecting": "💼 You are directed to the home page…",
+      "saveReading": "Save Reading 💼",
+      "savingReading": "Recording…",
+      "step1": "Enter your personal information",
+      "step2": "Answer career questions",
+      "step3": "Select and preview 7 cards",
+      "step4": "Save reading; get the results to your e-mail",
+      "successMessage": "Your career path has been recorded and analyzed. You can view your results from the panel.",
+      "successTitle": "Reading Saved",
+      "writtenReading": "Written Reading",
+      "writtenReadingText": "If you prefer, it will be delivered as a detailed written report; You can save it and read it again."
+    },
+    "validation": {
+      "birthDateRequired": "Date of birth is mandatory.",
+      "emailInvalid": "Please enter a valid e-mail address.",
+      "nameMinLength": "The name must be at least 3 characters.",
+      "questionMinLength": "You must answer this question in at least 10 characters.",
+      "surnameMinLength": "Surname must be at least 3 characters."
+    },
+    "meanings": {
+      "thefool": {
+        "position1": {
+          "upright": "Joker says he is on the verge of a new beginning in his career path. You can boldly step into areas that excite your heart. If your current path does not satisfy you, it may be time to move in a new direction that will nourish your freedom.",
+          "reversed": "Inverted Joker indicates that unplanned steps can bring disappointment. Maybe your current career isn't right for you, but hastily choosing a new path just for a change is risky.",
+          "keywords": {
+            "0": "new beginning",
+            "1": "bravery",
+            "2": "freedom",
+            "3": "risk",
+            "4": "adventure"
+          },
+          "context": "Your desire to find the free space your heart desires in your career path is at the forefront."
+        },
+        "position2": {
+          "upright": "Joker advises you to take a bold step towards development. Turning to new projects, different fields or methods you have never tried can give you great momentum in your career.",
+          "reversed": "Inverted Joker reminds you that steps taken without thinking can strain you. Planning a little before you take the step will empower you.",
+          "keywords": {
+            "0": "bravery",
+            "1": "experience",
+            "2": "innovation",
+            "3": "risk",
+            "4": "freedom"
+          },
+          "context": "To develop your career, you must make a bold but conscious start."
+        },
+        "position3": {
+          "upright": "Joker reminds you that the unexpected surprises you encounter on your career path and the spontaneous flow of life are not under your control. Some opportunities and risks develop outside of you.",
+          "reversed": "The reversed Joker tells you that you cannot completely escape the uncertainties that life brings you. Lack of planning can strain you.",
+          "keywords": {
+            "0": "spontaneity",
+            "1": "risk",
+            "2": "uncertainty",
+            "3": "surprise",
+            "4": "freedom"
+          },
+          "context": "You can't plan everything in your career; Surprising developments will be out of your control."
+        },
+        "position4": {
+          "upright": "Joker shows that he proceeds with his work with sincerity and curiosity. You are open to trying new things and this makes your performance unique.",
+          "reversed": "The inverted Joker indicates that you are not expressing your full energy due to carelessness or unplanned steps.",
+          "keywords": {
+            "0": "bravery",
+            "1": "originality",
+            "2": "curiosity",
+            "3": "performance",
+            "4": "freedom"
+          },
+          "context": "You are progressing with a free spirit in your current career, but your efforts will be more valuable if you are more planned."
+        },
+        "position5": {
+          "upright": "Joker, you can create change in your career by taking bold steps and trying new things. Being open to taking risks takes you forward.",
+          "reversed": "Inverted Joker, you should avoid taking rash steps. Change is beneficial when it is planned.",
+          "keywords": {
+            "0": "innovation",
+            "1": "bravery",
+            "2": "risk",
+            "3": "beginning",
+            "4": "change"
+          },
+          "context": "Bold innovation in your career will help you, but you should stay away from lack of planning."
+        },
+        "position6": {
+          "upright": "Joker: Your thoughtless or unplanned steps in the past may create uncertainties in your current career path.",
+          "reversed": "Inverted Joker, your tendency to avoid taking risks in the past may prevent you from taking advantage of opportunities today.",
+          "keywords": {
+            "0": "lack of planning",
+            "1": "risk",
+            "2": "bravery",
+            "3": "uncertainty",
+            "4": "past"
+          },
+          "context": "Uncontrolled or courageous steps in the past affect your current career path."
+        },
+        "position7": {
+          "upright": "Joker shows that the outcome of your career journey will be shaped by freedom and new beginnings. Your future will present you with exciting opportunities.",
+          "reversed": "Inverted Joker may indicate failure to fully utilize opportunities due to carelessness or lack of planning.",
+          "keywords": {
+            "0": "new beginning",
+            "1": "freedom",
+            "2": "adventure",
+            "3": "risk",
+            "4": "future"
+          },
+          "context": "The result of your career journey will be to turn a new page and discover your freedom."
+        }
+      },
+      "themagician": {
+        "position1": {
+          "upright": "The wizard indicates a period in which you can reveal your potential. Your creativity, communication power and willpower can carry you to success in your career. If your current path supports this energy, you are on the right track.",
+          "reversed": "The Reversed Magician may indicate that you are using your talents in the wrong direction or are in a job that limits your potential. In this case, your current career may be consuming you.",
+          "keywords": {
+            "0": "creativity",
+            "1": "potential",
+            "2": "communication",
+            "3": "vision",
+            "4": "strength"
+          },
+          "context": "You need to question whether you are using your own power in the right place."
+        },
+        "position2": {
+          "upright": "The wizard says that you must actively use the skills you have in your career. Making your talents more visible and strengthening your communication skills will speed up your steps.",
+          "reversed": "The Reversed Magician indicates that underestimating or misusing your abilities will set you back. To improve, you must first believe in yourself.",
+          "keywords": {
+            "0": "creativity",
+            "1": "skill",
+            "2": "communication",
+            "3": "confidence",
+            "4": "potential"
+          },
+          "context": "To develop your career, you must use the resources you have skillfully."
+        },
+        "position3": {
+          "upright": "The magician shows that the timing of opportunities coming to you is not always in your hands. The right environment sometimes depends on external factors.",
+          "reversed": "Reversed Magician, manipulations or misdirection by others are elements you cannot control.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "creativity",
+            "2": "communication",
+            "3": "timing",
+            "4": "external influence"
+          },
+          "context": "You can't always choose the moment in your career when you take the stage; conditions take effect."
+        },
+        "position4": {
+          "upright": "The magician shows that he reflects his potential into his work and uses his resources efficiently. You're really doing your best.",
+          "reversed": "Reversed Mage, you may underestimate or misuse your abilities. This causes its performance not to be fully reflected.",
+          "keywords": {
+            "0": "skill",
+            "1": "potential",
+            "2": "creativity",
+            "3": "confidence",
+            "4": "performance"
+          },
+          "context": "Your current endeavor becomes the best when you use the skills you have correctly."
+        },
+        "position5": {
+          "upright": "The magician shows that he can create change by making his skills more visible and strengthening his communication.",
+          "reversed": "Reverse Magician, you should increase your performance by focusing instead of using your energy scatteredly.",
+          "keywords": {
+            "0": "skill",
+            "1": "creativity",
+            "2": "communication",
+            "3": "focus",
+            "4": "change"
+          },
+          "context": "To contribute to your career, you must demonstrate your skills in a focused manner."
+        },
+        "position6": {
+          "upright": "Sorcerer, not using your full potential in the past may have slowed down your development today.",
+          "reversed": "Reversed Magician, past manipulation or misdirection may be limiting your current career.",
+          "keywords": {
+            "0": "potential",
+            "1": "manipulation",
+            "2": "creativity",
+            "3": "strength",
+            "4": "past"
+          },
+          "context": "Not being able to use your power fully or being misled in the past affects the present."
+        },
+        "position7": {
+          "upright": "The magician indicates that the outcome of your career journey will be to achieve success through the skillful use of your skills.",
+          "reversed": "When the Reversed Magician does not use his full potential, the result may be incomplete or misleading.",
+          "keywords": {
+            "0": "potential",
+            "1": "success",
+            "2": "creativity",
+            "3": "skill",
+            "4": "future"
+          },
+          "context": "The result will be to achieve a strong position in your career by demonstrating your creativity and skills."
+        }
+      },
+      "thehighpriestess": {
+        "position1": {
+          "upright": "The High Priestess says you should listen to your intuition. Your current career may be satisfying your mind, but if your heart whispers something else, the answer is hidden in your inner world.",
+          "reversed": "The Reversed High Priestess indicates that she suppresses her intuition and acts solely on external expectations. This path may be safe, but it may not satisfy you.",
+          "keywords": {
+            "0": "intuition",
+            "1": "wisdom",
+            "2": "inner guidance",
+            "3": "secret",
+            "4": "silence"
+          },
+          "context": "You will find your real career answer where your heart whispers."
+        },
+        "position2": {
+          "upright": "The High Priestess recommends listening to your intuition and deepening your knowledge for your growth. Education, research, or inner exploration guides you through this process.",
+          "reversed": "The Reverse High Priestess says that when you suppress your inner voice, you can go astray. Pay attention to your intuition to improve your career.",
+          "keywords": {
+            "0": "intuition",
+            "1": "information",
+            "2": "inner guidance",
+            "3": "learning",
+            "4": "wisdom"
+          },
+          "context": "To advance your career, you must proceed with both knowledge and intuition."
+        },
+        "position3": {
+          "upright": "The unseen dynamics and behind-the-scenes processes are out of your control, the High Priestess says. There are things that remain secret.",
+          "reversed": "Reverse High Priestess, you cannot determine the timing of the revelation of uncertainties and secret information.",
+          "keywords": {
+            "0": "hidden factors",
+            "1": "uncertainty",
+            "2": "intuition",
+            "3": "timing",
+            "4": "out of control"
+          },
+          "context": "It's not possible to know every fact in your career; Some things will remain hidden from you."
+        },
+        "position4": {
+          "upright": "The High Priestess shows that she uses her intuition and wisdom in her work. Your inner strength is reflected in your performance.",
+          "reversed": "When the Reversed High Priestess suppresses your intuition, you may not be able to reveal your full potential.",
+          "keywords": {
+            "0": "intuition",
+            "1": "wisdom",
+            "2": "inner strength",
+            "3": "awareness",
+            "4": "performance"
+          },
+          "context": "Your current effort gains value by bringing your wisdom and intuition to your work."
+        },
+        "position5": {
+          "upright": "High Priestess, you can make positive changes in your career by listening to your intuition and paying attention to unseen opportunities.",
+          "reversed": "Reverse High Priestess, not suppressing your inner voice and trusting your intuition in your decisions will benefit your career.",
+          "keywords": {
+            "0": "intuition",
+            "1": "wisdom",
+            "2": "awareness",
+            "3": "inner strength",
+            "4": "change"
+          },
+          "context": "You should use your intuition more to make change in your career."
+        },
+        "position6": {
+          "upright": "Mother Superior, intuitions or hidden truths that you ignored in the past may have hindered your career today.",
+          "reversed": "Reverse High Priestess, repressing your intuition may have led to poor choices in the past.",
+          "keywords": {
+            "0": "intuition",
+            "1": "information",
+            "2": "hidden facts",
+            "3": "awareness",
+            "4": "past"
+          },
+          "context": "The intuitions you suppressed in the past may have hindered your path today."
+        },
+        "position7": {
+          "upright": "The High Priestess indicates that the outcome of your career journey will be shaped by inner wisdom and deep intuition.",
+          "reversed": "When the Reversed High Priestess suppresses your intuition, the result can be uncertainty and inner dissatisfaction.",
+          "keywords": {
+            "0": "intuition",
+            "1": "wisdom",
+            "2": "depth",
+            "3": "awareness",
+            "4": "future"
+          },
+          "context": "The outcome of your career journey will be taking conscious steps by guiding your intuition."
+        }
+      },
+      "theempress": {
+        "position1": {
+          "upright": "The Empress is a symbol of creativity and abundance. If your career gives you productivity, fulfillment, and the opportunity to demonstrate your values, you're on the right track.",
+          "reversed": "The Reversed Empress may indicate that your current job is dulling your creativity or does not value you. Maybe you chose this path to meet other people's expectations.",
+          "keywords": {
+            "0": "creativity",
+            "1": "plenty",
+            "2": "productivity",
+            "3": "satisfaction",
+            "4": "feminine energy"
+          },
+          "context": "Question whether you are experiencing your creative and productive side in your career."
+        },
+        "position2": {
+          "upright": "The Empress recommends nurturing your creativity and increasing your productivity for growth. Creating new projects and expanding existing ideas strengthens your career.",
+          "reversed": "The Reversed Empress indicates that giving in to laziness or stifling your creativity will set you back.",
+          "keywords": {
+            "0": "creativity",
+            "1": "productivity",
+            "2": "plenty",
+            "3": "inspiration",
+            "4": "nutrition"
+          },
+          "context": "To develop your career, you must produce and grow creative projects."
+        },
+        "position3": {
+          "upright": "The Empress shows that natural cycles and production processes require a certain amount of time. You cannot always control the pace of development.",
+          "reversed": "The Reverse Empress reminds you that the natural flow of inspiration or creativity develops outside of you.",
+          "keywords": {
+            "0": "nature",
+            "1": "time",
+            "2": "creativity",
+            "3": "production",
+            "4": "inspiration"
+          },
+          "context": "You can't control the time it takes for things to mature in your career."
+        },
+        "position4": {
+          "upright": "The Empress shows that she brings creativity and productivity to her work. You're doing your best.",
+          "reversed": "Inverted Empress, when you restrict your productivity or stifle your inspiration, you are not using your full potential.",
+          "keywords": {
+            "0": "creativity",
+            "1": "productivity",
+            "2": "inspiration",
+            "3": "performance",
+            "4": "abundance"
+          },
+          "context": "Your current endeavor comes from bringing creativity to your work."
+        },
+        "position5": {
+          "upright": "Empress, you can make positive changes in your career by nurturing your creativity and increasing your productivity.",
+          "reversed": "Reverse Empress, instead of neglecting yourself, you should focus on things that will stimulate your inspiration.",
+          "keywords": {
+            "0": "creativity",
+            "1": "inspiration",
+            "2": "production",
+            "3": "nutrition",
+            "4": "change"
+          },
+          "context": "To change your career, you need to reveal your creative side more."
+        },
+        "position6": {
+          "upright": "The Empress may have hindered her career in the past by not being able to fully use her creativity or receive support.",
+          "reversed": "The Reversed Empress could be a lack of inspiration or blockage, an obstacle from the past.",
+          "keywords": {
+            "0": "creativity",
+            "1": "inspiration",
+            "2": "nutrition",
+            "3": "production",
+            "4": "past"
+          },
+          "context": "Lack of inspiration or support in the past affects your career today."
+        },
+        "position7": {
+          "upright": "The Empress indicates that the outcome of your career journey will be full of creativity, productivity and abundance.",
+          "reversed": "The Reversed Empress can result in a lack of inspiration or restricted productivity.",
+          "keywords": {
+            "0": "creativity",
+            "1": "abundance",
+            "2": "productivity",
+            "3": "inspiration",
+            "4": "future"
+          },
+          "context": "The result of your career journey will be to enter a creative and productive period."
+        }
+      },
+      "theemperor": {
+        "position1": {
+          "upright": "Emperor means order, authority and solidity. If your current career offers you stability, security, and clarity, this path may be right.",
+          "reversed": "The Reversed Emperor tells you that you may be stuck in oppression and strict rules. Maybe you work in a place where you lose your freedom.",
+          "keywords": {
+            "0": "authority",
+            "1": "stability",
+            "2": "rules",
+            "3": "order",
+            "4": "strength"
+          },
+          "context": "You need to balance trust and freedom."
+        },
+        "position2": {
+          "upright": "The Emperor recommends that you acquire discipline and regular study habits for improvement. Taking strategic steps and gaining authority will help you advance in your career.",
+          "reversed": "The Reversed Emperor indicates an inability to progress due to rigid rules or lack of planning. You must establish a balanced order.",
+          "keywords": {
+            "0": "discipline",
+            "1": "order",
+            "2": "authority",
+            "3": "planning",
+            "4": "stability"
+          },
+          "context": "A solid structure and disciplined approach is required to develop your career."
+        },
+        "position3": {
+          "upright": "The Emperor shows that authority figures and rules are not in your hands. The conditions of the institution or system you work in may be immutable facts.",
+          "reversed": "The Reversed Emperor, oppressive rulers or strict rules are factors you cannot control.",
+          "keywords": {
+            "0": "authority",
+            "1": "rules",
+            "2": "system",
+            "3": "discipline",
+            "4": "order"
+          },
+          "context": "Some rules and authority structures in your career will remain outside you."
+        },
+        "position4": {
+          "upright": "The Emperor shows that discipline and determination are best reflected in his work. You're doing your best.",
+          "reversed": "Inverted Emperor, you may not be getting the full reward of your efforts due to too strict rules or lack of control.",
+          "keywords": {
+            "0": "discipline",
+            "1": "stability",
+            "2": "stability",
+            "3": "authority",
+            "4": "performance"
+          },
+          "context": "Your current effort is strengthened by discipline and order."
+        },
+        "position5": {
+          "upright": "Emperor, you can make constructive changes in your work by strengthening discipline and order.",
+          "reversed": "The Reversed Emperor indicates that you need to abandon rigid rules and be more flexible.",
+          "keywords": {
+            "0": "discipline",
+            "1": "order",
+            "2": "stability",
+            "3": "control",
+            "4": "change"
+          },
+          "context": "Flexibility along with discipline becomes important for change in your career."
+        },
+        "position6": {
+          "upright": "Emperor, you may have been constrained by pressure from authority figures or strict rules in the past.",
+          "reversed": "Inverted Emperor, lack of discipline or lack of control may have created obstacles in the past.",
+          "keywords": {
+            "0": "authority",
+            "1": "rules",
+            "2": "oppression",
+            "3": "discipline",
+            "4": "past"
+          },
+          "context": "The problems you had with authority in the past may have hindered your current career."
+        },
+        "position7": {
+          "upright": "The Emperor indicates that the outcome of your career journey will be shaped by stability, power and authority.",
+          "reversed": "The Reversed Emperor can be limiting, the result of rigid rules or excessive control.",
+          "keywords": {
+            "0": "stability",
+            "1": "strength",
+            "2": "authority",
+            "3": "leadership",
+            "4": "future"
+          },
+          "context": "The result of your career journey will be to establish a solid structure and reach a strong position."
+        }
+      },
+      "thehierophant": {
+        "position1": {
+          "upright": "The saint represents traditional paths and safe spaces. If your current career provides you with structure and social acceptance, you may be in the right place.",
+          "reversed": "The Reversed Saint shows that he lives by other people's rules and loses the originality of his soul. Maybe this career doesn't align with your core values.",
+          "keywords": {
+            "0": "tradition",
+            "1": "doctrine",
+            "2": "authority",
+            "3": "rapport",
+            "4": "guidance"
+          },
+          "context": "Did you choose this path for social approval or for your own heart?"
+        },
+        "position2": {
+          "upright": "The saint recommends that you seek wisdom and guides for improvement. You may benefit from a teacher, mentor or training.",
+          "reversed": "The Reversed Saint shows that you should not be afraid to chart your own path. Sticking to traditional patterns can limit you.",
+          "keywords": {
+            "0": "guidance",
+            "1": "learning",
+            "2": "tradition",
+            "3": "authority",
+            "4": "wisdom"
+          },
+          "context": "Follow the wisdom to advance your career, but create your own path."
+        },
+        "position3": {
+          "upright": "Saint, the standards set by institutions, traditions, and authority figures are out of your control.",
+          "reversed": "The Reversed Saint shows that even if you question the rules, you cannot completely change society's expectations.",
+          "keywords": {
+            "0": "tradition",
+            "1": "authority",
+            "2": "rules",
+            "3": "society",
+            "4": "system"
+          },
+          "context": "In your career, some traditional structures remain beyond your control."
+        },
+        "position4": {
+          "upright": "Aziz shows that he uses his knowledge and experience in his work. You have a strong ability to learn and teach.",
+          "reversed": "Reversed Saint, rejecting authority or not following rules can make effort seem lacking.",
+          "keywords": {
+            "0": "information",
+            "1": "learning",
+            "2": "teaching",
+            "3": "authority",
+            "4": "performance"
+          },
+          "context": "Your current performance gets stronger by sharing your knowledge."
+        },
+        "position5": {
+          "upright": "Aziz, you can improve your career by sharing your knowledge and getting support.",
+          "reversed": "Reversed Saint, you should learn to think innovatively instead of sticking to traditional patterns.",
+          "keywords": {
+            "0": "information",
+            "1": "support",
+            "2": "learning",
+            "3": "mentor",
+            "4": "change"
+          },
+          "context": "For change in your career, you must be open to both learning and teaching."
+        },
+        "position6": {
+          "upright": "Aziz, strictly adhering to traditional patterns may have limited you in the past.",
+          "reversed": "Reversed Saint, you may have lost support because of rejecting the rules of the past.",
+          "keywords": {
+            "0": "tradition",
+            "1": "rules",
+            "2": "doctrine",
+            "3": "authority",
+            "4": "past"
+          },
+          "context": "Traditional pressures in the past may have created limits on his current career."
+        },
+        "position7": {
+          "upright": "Aziz shows that the outcome of your career journey will be progressing on traditional methods, reliable support and solid foundations.",
+          "reversed": "Reversed Saint, rejection of rules or excessive rebellion can lead to unstable outcome.",
+          "keywords": {
+            "0": "tradition",
+            "1": "wisdom",
+            "2": "support",
+            "3": "doctrine",
+            "4": "future"
+          },
+          "context": "The result will be a journey strengthened by reliable supports and solid teachings."
+        }
+      },
+      "thelovers": {
+        "position1": {
+          "upright": "It means lovers, choices and harmony. If your current career is compatible with your heart and mind, it is the right choice.",
+          "reversed": "Reversed Lovers say that the choice you make leads you into an internal conflict. Maybe you chose this path with the guidance of someone else.",
+          "keywords": {
+            "0": "vote",
+            "1": "rapport",
+            "2": "heart-mind balance",
+            "3": "partnership",
+            "4": "decision"
+          },
+          "context": "Question whether you followed your own heart in this career choice."
+        },
+        "position2": {
+          "upright": "Lovers emphasize the importance of making the right choices in your career. If your heart and mind are in harmony, the steps you take will move you forward.",
+          "reversed": "Lovers Reversed indicates that indecision or wrong choices will make development difficult.",
+          "keywords": {
+            "0": "vote",
+            "1": "rapport",
+            "2": "balance",
+            "3": "partnership",
+            "4": "decision"
+          },
+          "context": "To improve your career, make choices that align your heart and mind."
+        },
+        "position3": {
+          "upright": "Lovers reminds you that you are not always in control of the dynamics of career collaborations and relationships.",
+          "reversed": "Reversed Lovers say that incompatibility or wrong choices can sometimes be caused by factors outside of you.",
+          "keywords": {
+            "0": "relationships",
+            "1": "rapport",
+            "2": "vote",
+            "3": "balance",
+            "4": "out of control"
+          },
+          "context": "You cannot determine all business relationships and harmony in your career."
+        },
+        "position4": {
+          "upright": "Lovers show that you put your heart into your work and are sincere in your choices. You are doing your best.",
+          "reversed": "Reverse Lovers, you may not be able to fully transfer your energy due to indecision or inconsistency.",
+          "keywords": {
+            "0": "decision",
+            "1": "sincerity",
+            "2": "rapport",
+            "3": "effort",
+            "4": "performance"
+          },
+          "context": "Your effort is strengthened by your dedication to your work."
+        },
+        "position5": {
+          "upright": "Lovers, you can make positive changes in your career by strengthening your work relationships and making sincere choices.",
+          "reversed": "Reverse Lovers, making clear choices instead of indecision increases your performance.",
+          "keywords": {
+            "0": "vote",
+            "1": "relationship",
+            "2": "rapport",
+            "3": "decision",
+            "4": "change"
+          },
+          "context": "It's important to make sincere choices for change in your career."
+        },
+        "position6": {
+          "upright": "Lovers, wrong choices made in the past, or broken business relationships may have affected your path today.",
+          "reversed": "Lovers Reversed, incompatibility or uncertain choices may have created obstacles in your career.",
+          "keywords": {
+            "0": "vote",
+            "1": "rapport",
+            "2": "relationship",
+            "3": "instability",
+            "4": "past"
+          },
+          "context": "Past choices or incompatible relationships leave a mark on your career."
+        },
+        "position7": {
+          "upright": "Lovers show that the outcome of the career journey will be shaped by harmonious choices and strong partnerships.",
+          "reversed": "Inverted Lovers, the journey may fall apart as a result of indecision or incompatible choices.",
+          "keywords": {
+            "0": "vote",
+            "1": "rapport",
+            "2": "partnership",
+            "3": "decision",
+            "4": "future"
+          },
+          "context": "The result will be career advancement with the right choices and harmonious partnerships."
+        }
+      },
+      "thechariot": {
+        "position1": {
+          "upright": "The Chariot symbolizes will and determination. You have the motivation to move forward strongly in your current career.",
+          "reversed": "Inverted Chariot indicates that you are losing control or having trouble finding your bearings. Maybe this path isn't taking you forward.",
+          "keywords": {
+            "0": "will",
+            "1": "stability",
+            "2": "progress",
+            "3": "strength",
+            "4": "focus"
+          },
+          "context": "To advance in your career, you need to clarify your direction."
+        },
+        "position2": {
+          "upright": "The Chariot recommends that you move forward with determination and focus. Setting a clear goal and taking strong steps towards it brings success in your career.",
+          "reversed": "The Reversed Chariot indicates that carelessness and disorganization are slowing you down.",
+          "keywords": {
+            "0": "stability",
+            "1": "focus",
+            "2": "strength",
+            "3": "will",
+            "4": "control"
+          },
+          "context": "To improve your career, you need to set clear goals and focus."
+        },
+        "position3": {
+          "upright": "The Chariot shows that external obstacles and circumstances can limit your speed. You can't always progress at the speed you want.",
+          "reversed": "Reverse Chariot, you may have to change direction due to obstacles you cannot control.",
+          "keywords": {
+            "0": "control",
+            "1": "speed",
+            "2": "obstacles",
+            "3": "will",
+            "4": "balance"
+          },
+          "context": "Circumstances outside of you affect the speed at which you progress in your career."
+        },
+        "position4": {
+          "upright": "The Chariot shows that perseverance and determination carry you forward. You are working with all your strength.",
+          "reversed": "The Reversed Chariot suggests that effort may dissipate due to lack of focus.",
+          "keywords": {
+            "0": "resolution",
+            "1": "focus",
+            "2": "will",
+            "3": "stability",
+            "4": "performance"
+          },
+          "context": "Your current performance is revealed by transferring your willpower and focus to your work."
+        },
+        "position5": {
+          "upright": "Chariot, you can make powerful changes in your career by focusing on the goal and increasing your determination.",
+          "reversed": "Reversed Chariot, you need to move forward with focus rather than scattered energy.",
+          "keywords": {
+            "0": "stability",
+            "1": "resolution",
+            "2": "focus",
+            "3": "will",
+            "4": "change"
+          },
+          "context": "You need to show more focus and willpower for change in your career."
+        },
+        "position6": {
+          "upright": "Chariot, losing your bearings or lack of focus in the past may have made it difficult for you to progress today.",
+          "reversed": "Reversed Chariot, lack of willpower may have slowed you down in the past.",
+          "keywords": {
+            "0": "will",
+            "1": "focus",
+            "2": "control",
+            "3": "direction",
+            "4": "past"
+          },
+          "context": "Lack of control and focus in the past may have affected your career today."
+        },
+        "position7": {
+          "upright": "The Chariot indicates that the outcome of your career journey will be victory through the power of will, determination and direction.",
+          "reversed": "Reversed Chariot, lack of control or disorganization may lead to delayed results.",
+          "keywords": {
+            "0": "will",
+            "1": "victory",
+            "2": "control",
+            "3": "stability",
+            "4": "future"
+          },
+          "context": "The result will be victory by strengthening your will."
+        }
+      },
+      "strength": {
+        "position1": {
+          "upright": "Strength represents inner courage and patience. If this career gives you the opportunity to show your strength in a balanced way, you may be in the right place.",
+          "reversed": "Reverse Strength tells you that you lack self-confidence or feel under pressure. Maybe this career is wearing you out.",
+          "keywords": {
+            "0": "bravery",
+            "1": "confidence",
+            "2": "patience",
+            "3": "balance",
+            "4": "durability"
+          },
+          "context": "Question whether you have demonstrated your strength in a balanced way in your career."
+        },
+        "position2": {
+          "upright": "It recommends that you act with strength, patience, self-discipline and inner courage. In this way, you can overcome obstacles and make your development permanent.",
+          "reversed": "Reverse Strength indicates that you are holding back due to impatience or lack of self-confidence.",
+          "keywords": {
+            "0": "bravery",
+            "1": "patience",
+            "2": "confidence",
+            "3": "balance",
+            "4": "durability"
+          },
+          "context": "To improve your career, you must be patient, balanced and take courageous steps."
+        },
+        "position3": {
+          "upright": "Power tells you that even though you have inner patience, you cannot control the behavior of others or external pressures.",
+          "reversed": "Reversed Strength indicates that you have no control over the attitudes of others that test you.",
+          "keywords": {
+            "0": "patience",
+            "1": "durability",
+            "2": "control",
+            "3": "confidence",
+            "4": "external influence"
+          },
+          "context": "You can't change other people's attitudes in your career; You can only manage your own patience."
+        },
+        "position4": {
+          "upright": "Strength shows that patience, self-control and inner resilience are best reflected in your work.",
+          "reversed": "Reversed Power, impatience, or insecurity can devalue the effort.",
+          "keywords": {
+            "0": "patience",
+            "1": "resistance",
+            "2": "confidence",
+            "3": "control",
+            "4": "performance"
+          },
+          "context": "You do your best with patience and self-control."
+        },
+        "position5": {
+          "upright": "You can make positive changes in your work by increasing your strength, patience and self-discipline.",
+          "reversed": "Reversed Power, overcoming insecurities brings improvement in your career.",
+          "keywords": {
+            "0": "patience",
+            "1": "resistance",
+            "2": "self discipline",
+            "3": "confidence",
+            "4": "change"
+          },
+          "context": "You should use your inner power more for change in your career."
+        },
+        "position6": {
+          "upright": "Power may have limited his career in the past due to impatience or lack of self-confidence.",
+          "reversed": "The Reverse Power is reflected in your efforts today when fears are holding you back.",
+          "keywords": {
+            "0": "patience",
+            "1": "confidence",
+            "2": "resistance",
+            "3": "fear",
+            "4": "past"
+          },
+          "context": "Past insecurities and fears affect your career today."
+        },
+        "position7": {
+          "upright": "Power indicates that the outcome of your career journey will be success with patience, courage and inner balance.",
+          "reversed": "Opposite Power: succumbing to your fears can lead to poor results.",
+          "keywords": {
+            "0": "bravery",
+            "1": "patience",
+            "2": "balance",
+            "3": "confidence",
+            "4": "future"
+          },
+          "context": "The result will be to achieve success by using your inner strength with patience and courage."
+        }
+      },
+      "thehermit": {
+        "position1": {
+          "upright": "The saint symbolizes the wisdom that comes with inner search and loneliness. Maybe your current career doesn't offer you inner satisfaction and you need to find your own path.",
+          "reversed": "The Reversed Saint shows that he is very introverted and distant from the outside world. Maybe this job makes you lonely.",
+          "keywords": {
+            "0": "wisdom",
+            "1": "turning inward",
+            "2": "guidance",
+            "3": "quest",
+            "4": "enlightenment"
+          },
+          "context": "Turn to your inner guide to find what you are really looking for on your career path."
+        },
+        "position2": {
+          "upright": "The saint recommends finding your own path through inner exploration and alone time. It will be important to listen to inner guidance for development.",
+          "reversed": "Reversed Saint, extreme loneliness or introversion can keep you from moving forward.",
+          "keywords": {
+            "0": "turning inward",
+            "1": "wisdom",
+            "2": "guidance",
+            "3": "enlightenment",
+            "4": "research"
+          },
+          "context": "To develop your career, you must first discover your own path."
+        },
+        "position3": {
+          "upright": "Ermiş shows that periods of being alone or withdrawn may arise as a need that you cannot control in the flow of life.",
+          "reversed": "The Reversed Saint tells us that sometimes forced loneliness or feeling isolated is out of your control.",
+          "keywords": {
+            "0": "loneliness",
+            "1": "turning inward",
+            "2": "guidance",
+            "3": "loop",
+            "4": "difficulty"
+          },
+          "context": "Being lonely at times in your career may be out of your control."
+        },
+        "position4": {
+          "upright": "The saint shows that he approaches his work with deep thought and experience. Your effort meets wisdom.",
+          "reversed": "Inverted Saint, extreme introversion or loneliness may limit performance.",
+          "keywords": {
+            "0": "wisdom",
+            "1": "experience",
+            "2": "inner strength",
+            "3": "learning",
+            "4": "performance"
+          },
+          "context": "Your effort emerges when you reflect your experiences and inner strength into your work."
+        },
+        "position5": {
+          "upright": "Ermiş, thinking alone and gaining new insights can lead to change in your career.",
+          "reversed": "Inverted Saint, opening up instead of staying too isolated brings development.",
+          "keywords": {
+            "0": "wisdom",
+            "1": "research",
+            "2": "inner strength",
+            "3": "awareness",
+            "4": "change"
+          },
+          "context": "For change in your career, you need to take time to think deeply."
+        },
+        "position6": {
+          "upright": "Ermiş, being too introverted or alone in the past may have slowed down his development.",
+          "reversed": "Reversed Saint, you may have missed opportunities due to isolation.",
+          "keywords": {
+            "0": "loneliness",
+            "1": "research",
+            "2": "insulation",
+            "3": "wisdom",
+            "4": "past"
+          },
+          "context": "Extreme loneliness or isolation in the past affects your career today."
+        },
+        "position7": {
+          "upright": "The saint indicates that the outcome of the career journey will be wisdom, inner enlightenment and deep awareness.",
+          "reversed": "Reversed Hermit can be limiting as a result of isolation or excessive confinement.",
+          "keywords": {
+            "0": "wisdom",
+            "1": "enlightenment",
+            "2": "awareness",
+            "3": "loneliness",
+            "4": "future"
+          },
+          "context": "The result will be reaching a point of maturity with wisdom and inner discovery."
+        }
+      },
+      "thewheeloffortune": {
+        "position1": {
+          "upright": "The Wheel of Destiny represents change and opportunity. Your current career path may be shaped by surprising developments.",
+          "reversed": "The inverted Wheel of Destiny indicates that you are stuck in cycles that you cannot control. Maybe this job keeps bringing you to the same place.",
+          "keywords": {
+            "0": "change",
+            "1": "destiny",
+            "2": "chance",
+            "3": "opportunity",
+            "4": "loop"
+          },
+          "context": "Be aware of the cycle your career is taking you into."
+        },
+        "position2": {
+          "upright": "The Wheel of Destiny tells you that you must seize opportunities by adapting to changes. Luck may come your way, you have to be open.",
+          "reversed": "The inverted Wheel of Destiny indicates that when you resist change, you may miss opportunities.",
+          "keywords": {
+            "0": "change",
+            "1": "opportunity",
+            "2": "rapport",
+            "3": "destiny",
+            "4": "loop"
+          },
+          "context": "To advance your career, you must flexibly adapt to change."
+        },
+        "position3": {
+          "upright": "The Wheel of Destiny tells you that you are out of control of the cycles of luck and fate. Some ups and downs are inevitable.",
+          "reversed": "The inverted Wheel of Destiny reminds you that misfortunes and delays cannot always be prevented.",
+          "keywords": {
+            "0": "destiny",
+            "1": "chance",
+            "2": "change",
+            "3": "loop",
+            "4": "out of control"
+          },
+          "context": "Some changes in your career are the natural cycle of fate and are out of your control."
+        },
+        "position4": {
+          "upright": "The Wheel of Destiny shows that you are doing your best when faced with opportunities. You evaluate the cycles well.",
+          "reversed": "The reversed Wheel of Destiny, bad luck or delays may prevent you from reflecting your full performance.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "loop",
+            "2": "chance",
+            "3": "effort",
+            "4": "performance"
+          },
+          "context": "You are doing your best, but some things depend on external circumstances."
+        },
+        "position5": {
+          "upright": "Wheel of Destiny, you can create positive developments in your career by adapting to change.",
+          "reversed": "The inverted Wheel of Destiny tells you that you should be proactive instead of leaving it to chance.",
+          "keywords": {
+            "0": "loop",
+            "1": "chance",
+            "2": "opportunity",
+            "3": "rapport",
+            "4": "change"
+          },
+          "context": "For change in your career, it is important to go with the flow."
+        },
+        "position6": {
+          "upright": "Wheel of Destiny, relying too much on luck or external circumstances in the past may have created obstacles in your career.",
+          "reversed": "Inverted Wheel of Destiny, failure to take advantage of opportunities may have affected your present.",
+          "keywords": {
+            "0": "destiny",
+            "1": "chance",
+            "2": "loop",
+            "3": "opportunity",
+            "4": "past"
+          },
+          "context": "Not taking advantage of past opportunities affects your current career."
+        },
+        "position7": {
+          "upright": "The Wheel of Destiny indicates that the outcome of your career journey will be shaped by luck, the support of fate and cyclical successes.",
+          "reversed": "Inverted Wheel of Destiny, not taking advantage of opportunities can lead to slowing down the outcome.",
+          "keywords": {
+            "0": "destiny",
+            "1": "chance",
+            "2": "loop",
+            "3": "opportunity",
+            "4": "future"
+          },
+          "context": "The result will be progress as luck turns and opportunities come."
+        }
+      },
+      "justice": {
+        "position1": {
+          "upright": "It represents justice, honesty and balance. If your current career aligns with your values ​​and feels fair, it's the right choice.",
+          "reversed": "Reverse Justice says that there is injustice or imbalance. Maybe this job isn't treating you fairly.",
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "truth",
+            "3": "ethic",
+            "4": "responsibility"
+          },
+          "context": "Does this career really feel fair to you?"
+        },
+        "position2": {
+          "upright": "It recommends that you move forward with justice, honesty and fair elections. Adhering to ethical values ​​will strengthen your career in the long run.",
+          "reversed": "Reverse Justice, when you are not honest with yourself or others, your growth slows down.",
+          "keywords": {
+            "0": "justice",
+            "1": "honesty",
+            "2": "ethic",
+            "3": "balance",
+            "4": "responsibility"
+          }
+        }
+      }
+    }
+  }
+}

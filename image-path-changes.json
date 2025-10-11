@@ -1,0 +1,241 @@
+[
+  {
+    "card": "the-magician",
+    "new": "/cards/rws/I-Magician.webp"
+  },
+  {
+    "card": "the-devil",
+    "old": "/cards/rws/XV-TheDevil.webp",
+    "new": "/cards/rws/XV-Devil.webp"
+  },
+  {
+    "card": "the-tower",
+    "old": "/cards/rws/XVI-TheTower.webp",
+    "new": "/cards/rws/XVI-Tower.webp"
+  },
+  {
+    "card": "the-star",
+    "old": "/cards/rws XVII-TheStar.webp",
+    "new": "/cards/rws/XVII-Star.webp"
+  },
+  {
+    "card": "the-moon",
+    "old": "/cards/rws XVIII-TheMoon.webp",
+    "new": "/cards/rws/XVIII-Moon.webp"
+  },
+  {
+    "card": "the-sun",
+    "old": "/cards/rws/XIX-TheSun.webp",
+    "new": "/cards/rws/XIX-Sun.webp"
+  },
+  {
+    "card": "judgment",
+    "old": "/cards/rws/XX-Judgment.webp",
+    "new": "/cards/rws/XX-Judgement.webp"
+  },
+  {
+    "card": "the-world",
+    "old": "/cards/rws/XXI-TheWorld.webp",
+    "new": "/cards/rws/XXI-World.webp"
+  },
+  {
+    "card": "ace-of-wands",
+    "old": "/cards/rws/Ace-of-Wands.webp",
+    "new": "/cards/rws/Ace-Wands.webp"
+  },
+  {
+    "card": "two-of-wands",
+    "old": "/cards/rws/Two-of-Wands.webp",
+    "new": "/cards/rws/II-Wands.webp"
+  },
+  {
+    "card": "three-of-wands",
+    "old": "/cards/rws/Three-of-Wands.webp",
+    "new": "/cards/rws/III-Wands.webp"
+  },
+  {
+    "card": "four-of-wands",
+    "old": "/cards/rws/Four-of-Wands.webp",
+    "new": "/cards/rws/IV-Wands.webp"
+  },
+  {
+    "card": "five-of-wands",
+    "old": "/cards/rws/Five-of-Wands.webp",
+    "new": "/cards/rws/V-Wands.webp"
+  },
+  {
+    "card": "six-of-wands",
+    "old": "/cards/rws/Six-of-Wands.webp",
+    "new": "/cards/rws/VI-Wands.webp"
+  },
+  {
+    "card": "seven-of-wands",
+    "old": "/cards/rws/Seven-of-Wands.webp",
+    "new": "/cards/rws/VII-Wands.webp"
+  },
+  {
+    "card": "eight-of-wands",
+    "old": "/cards/rws/Eight-of-Wands.webp",
+    "new": "/cards/rws/VIII-Wands.webp"
+  },
+  {
+    "card": "nine-of-wands",
+    "old": "/cards/rws/Nine-of-Wands.webp",
+    "new": "/cards/rws/IX-Wands.webp"
+  },
+  {
+    "card": "ten-of-wands",
+    "old": "/cards/rws/Ten-of-Wands.webp",
+    "new": "/cards/rws/X-Wands.webp"
+  },
+  {
+    "card": "page-of-wands",
+    "old": "/cards/rws/Page-of-Wands.webp",
+    "new": "/cards/rws/Page-Wands.webp"
+  },
+  {
+    "card": "knight-of-wands",
+    "old": "/cards/rws/Knight-of-Wands.webp",
+    "new": "/cards/rws/Knight-Wands.webp"
+  },
+  {
+    "card": "ace-of-pentacles",
+    "old": "/cards/rws/Ace-of-Pentacles.webp",
+    "new": "/cards/rws/Ace-Pentacles.webp"
+  },
+  {
+    "card": "two-of-pentacles",
+    "old": "/cards/rws/Two-of-Pentacles.webp",
+    "new": "/cards/rws/II-Pentacles.webp"
+  },
+  {
+    "card": "three-of-pentacles",
+    "old": "/cards/rws/Three-of-Pentacles.webp",
+    "new": "/cards/rws/III-Pentacles.webp"
+  },
+  {
+    "card": "four-of-pentacles",
+    "old": "/cards/rws/Four-of-Pentacles.webp",
+    "new": "/cards/rws/IV-Pentacles.webp"
+  },
+  {
+    "card": "five-of-pentacles",
+    "old": "/cards/rws/Five-of-Pentacles.webp",
+    "new": "/cards/rws/V-Pentacles.webp"
+  },
+  {
+    "card": "six-of-pentacles",
+    "old": "/cards/rws/Six-of-Pentacles.webp",
+    "new": "/cards/rws/VI-Pentacles.webp"
+  },
+  {
+    "card": "seven-of-pentacles",
+    "old": "/cards/rws/Seven-of-Pentacles.webp",
+    "new": "/cards/rws/VII-Pentacles.webp"
+  },
+  {
+    "card": "eight-of-pentacles",
+    "old": "/cards/rws/Eight-of-Pentacles.webp",
+    "new": "/cards/rws/VIII-Pentacles.webp"
+  },
+  {
+    "card": "nine-of-pentacles",
+    "old": "/cards/rws/Nine-of-Pentacles.webp",
+    "new": "/cards/rws/IX-Pentacles.webp"
+  },
+  {
+    "card": "ten-of-pentacles",
+    "old": "/cards/rws/Ten-of-Pentacles.webp",
+    "new": "/cards/rws/X-Pentacles.webp"
+  },
+  {
+    "card": "page-of-pentacles",
+    "old": "/cards/rws/Page-of-Pentacles.webp",
+    "new": "/cards/rws/Page-Pentacles.webp"
+  },
+  {
+    "card": "knight-of-pentacles",
+    "old": "/cards/rws/Knight-of-Pentacles.webp",
+    "new": "/cards/rws/Knight-Pentacles.webp"
+  },
+  {
+    "card": "queen-of-pentacles",
+    "old": "/cards/rws/Queen-of-Pentacles.webp",
+    "new": "/cards/rws/Queen-Pentacles.webp"
+  },
+  {
+    "card": "king-of-pentacles",
+    "old": "/cards/rws/King-of-Pentacles.webp",
+    "new": "/cards/rws/King-Pentacles.webp"
+  },
+  {
+    "card": "ace-of-cups",
+    "old": "/cards/rws/Ace-of-Cups.webp",
+    "new": "/cards/rws/Ace-Cups.webp"
+  },
+  {
+    "card": "two-of-cups",
+    "old": "/cards/rws/Two-of-Cups.webp",
+    "new": "/cards/rws/II-Cups.webp"
+  },
+  {
+    "card": "three-of-cups",
+    "old": "/cards/rws/Three-of-Cups.webp",
+    "new": "/cards/rws/III-Cups.webp"
+  },
+  {
+    "card": "four-of-cups",
+    "old": "/cards/rws/Four-of-Cups.webp",
+    "new": "/cards/rws/IV-Cups.webp"
+  },
+  {
+    "card": "five-of-cups",
+    "old": "/cards/rws/Five-of-Cups.webp",
+    "new": "/cards/rws/V-Cups.webp"
+  },
+  {
+    "card": "six-of-cups",
+    "old": "/cards/rws/Six-of-Cups.webp",
+    "new": "/cards/rws/VI-Cups.webp"
+  },
+  {
+    "card": "seven-of-cups",
+    "old": "/cards/rws/Seven-of-Cups.webp",
+    "new": "/cards/rws/VII-Cups.webp"
+  },
+  {
+    "card": "eight-of-cups",
+    "old": "/cards/rws/8-of-Cups.webp",
+    "new": "/cards/rws/VIII-Cups.webp"
+  },
+  {
+    "card": "nine-of-cups",
+    "old": "/cards/rws/Nine-of-Cups.webp",
+    "new": "/cards/rws/IX-Cups.webp"
+  },
+  {
+    "card": "ten-of-cups",
+    "old": "/cards/rws/Ten-of-Cups.webp",
+    "new": "/cards/rws/X-Cups.webp"
+  },
+  {
+    "card": "page-of-cups",
+    "old": "/cards/rws/Page-of-Cups.webp",
+    "new": "/cards/rws/Page-Cups.webp"
+  },
+  {
+    "card": "knight-of-cups",
+    "old": "/cards/rws/Knight-of-Cups.webp",
+    "new": "/cards/rws/Knight-Cups.webp"
+  },
+  {
+    "card": "queen-of-cups",
+    "old": "/cards/rws/Queen-of-Cups.webp",
+    "new": "/cards/rws/Queen-Cups.webp"
+  },
+  {
+    "card": "king-of-cups",
+    "old": "/cards/rws/King-of-Cups.webp",
+    "new": "/cards/rws/King-Cups.webp"
+  }
+]

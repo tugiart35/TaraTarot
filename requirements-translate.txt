@@ -1,0 +1,7 @@
+# MarianMT Çeviri için Gerekli Kütüphaneler
+# %100 Ücretsiz - API key gerekmez
+
+transformers>=4.30.0
+torch>=2.0.0
+sentencepiece>=0.1.99
+
